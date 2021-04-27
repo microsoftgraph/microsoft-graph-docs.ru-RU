@@ -1,56 +1,56 @@
 ---
-title: Создание Едукатионсубмиссионресаурце
-description: 'Добавляет ресурс в список ресурсов. Это действие может выполнить только студент, которому назначена эта отправка. Это действие не будет выполнено, если флаг **алловстудентстоаддресаурцес** не имеет значение true. Если вызывающий объект хочет создать новый файловый ресурс, файл необходимо отправить в папку Resources, связанную с отправкой. Если файл не существует или не находится в этой папке, запрос POST завершится с ошибками. '
+title: Создание educationSubmissionResource
+description: 'Добавляет ресурс в список ресурсов. Это действие может быть сделано только студентом, которому назначено это представление. Это действие не удастся, если **флаг allowStudentsToAddResources** не будет заданной значение true. Если звонячий хочет создать новый ресурс на основе файлов, файл должен быть загружен в папку ресурсов, связанную с отправкой. Если файл не существует или не находится в этой папке, запрос POST не будет работать. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d078cfb0f5e81cd245058b3952a74cfe5dd34836
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e44b8a5b970fefebeb7ed9472531edb2991281d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007257"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043198"
 ---
-# <a name="create-educationsubmissionresource"></a><span data-ttu-id="5b70f-107">Создание Едукатионсубмиссионресаурце</span><span class="sxs-lookup"><span data-stu-id="5b70f-107">Create educationSubmissionResource</span></span>
+# <a name="create-educationsubmissionresource"></a><span data-ttu-id="173f7-107">Создание educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="173f7-107">Create educationSubmissionResource</span></span>
 
-<span data-ttu-id="5b70f-108">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b70f-108">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="173f7-108">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="173f7-108">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5b70f-109">Добавляет ресурс в список ресурсов.</span><span class="sxs-lookup"><span data-stu-id="5b70f-109">Adds a resource to the resources list.</span></span> <span data-ttu-id="5b70f-110">Это действие может выполнить только студент, которому назначена эта отправка.</span><span class="sxs-lookup"><span data-stu-id="5b70f-110">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="5b70f-111">Это действие не будет выполнено, если флаг **алловстудентстоаддресаурцес** не имеет значение true.</span><span class="sxs-lookup"><span data-stu-id="5b70f-111">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="5b70f-112">Если вызывающий объект хочет создать новый файловый ресурс, файл необходимо отправить в папку Resources, связанную с отправкой.</span><span class="sxs-lookup"><span data-stu-id="5b70f-112">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="5b70f-113">Если файл не существует или не находится в этой папке, запрос POST завершится с ошибками.</span><span class="sxs-lookup"><span data-stu-id="5b70f-113">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
+<span data-ttu-id="173f7-109">Добавляет ресурс в список ресурсов.</span><span class="sxs-lookup"><span data-stu-id="173f7-109">Adds a resource to the resources list.</span></span> <span data-ttu-id="173f7-110">Это действие может быть сделано только студентом, которому назначено это представление.</span><span class="sxs-lookup"><span data-stu-id="173f7-110">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="173f7-111">Это действие не удастся, если **флаг allowStudentsToAddResources** не будет заданной значение true.</span><span class="sxs-lookup"><span data-stu-id="173f7-111">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="173f7-112">Если звонячий хочет создать новый ресурс на основе файлов, файл должен быть загружен в папку ресурсов, связанную с отправкой.</span><span class="sxs-lookup"><span data-stu-id="173f7-112">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="173f7-113">Если файл не существует или не находится в этой папке, запрос POST не будет работать.</span><span class="sxs-lookup"><span data-stu-id="173f7-113">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="5b70f-114">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5b70f-114">Permissions</span></span>
-<span data-ttu-id="5b70f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b70f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="173f7-114">Разрешения</span><span class="sxs-lookup"><span data-stu-id="173f7-114">Permissions</span></span>
+<span data-ttu-id="173f7-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="173f7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5b70f-117">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5b70f-117">Permission type</span></span>      | <span data-ttu-id="5b70f-118">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5b70f-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="173f7-117">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="173f7-117">Permission type</span></span>      | <span data-ttu-id="173f7-118">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="173f7-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5b70f-119">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5b70f-119">Delegated (work or school account)</span></span> |  <span data-ttu-id="5b70f-120">EduAssignments. Реадвритебасик, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5b70f-120">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="5b70f-121">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5b70f-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b70f-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5b70f-122">Not supported.</span></span>  |
-|<span data-ttu-id="5b70f-123">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5b70f-123">Application</span></span> | <span data-ttu-id="5b70f-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5b70f-124">Not supported.</span></span> | 
+|<span data-ttu-id="173f7-119">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="173f7-119">Delegated (work or school account)</span></span> |  <span data-ttu-id="173f7-120">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="173f7-120">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="173f7-121">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="173f7-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="173f7-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="173f7-122">Not supported.</span></span>  |
+|<span data-ttu-id="173f7-123">Для приложений</span><span class="sxs-lookup"><span data-stu-id="173f7-123">Application</span></span> | <span data-ttu-id="173f7-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="173f7-124">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="5b70f-125">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5b70f-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="173f7-125">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="173f7-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="5b70f-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5b70f-126">Request headers</span></span>
-| <span data-ttu-id="5b70f-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="5b70f-127">Header</span></span>       | <span data-ttu-id="5b70f-128">Значение</span><span class="sxs-lookup"><span data-stu-id="5b70f-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="173f7-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="173f7-126">Request headers</span></span>
+| <span data-ttu-id="173f7-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="173f7-127">Header</span></span>       | <span data-ttu-id="173f7-128">Значение</span><span class="sxs-lookup"><span data-stu-id="173f7-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="5b70f-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5b70f-129">Authorization</span></span>  | <span data-ttu-id="5b70f-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b70f-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="5b70f-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5b70f-132">Content-Type</span></span>  | <span data-ttu-id="5b70f-133">application/json</span><span class="sxs-lookup"><span data-stu-id="5b70f-133">application/json</span></span>  |
+| <span data-ttu-id="173f7-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="173f7-129">Authorization</span></span>  | <span data-ttu-id="173f7-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="173f7-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="173f7-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="173f7-132">Content-Type</span></span>  | <span data-ttu-id="173f7-133">application/json</span><span class="sxs-lookup"><span data-stu-id="173f7-133">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="5b70f-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5b70f-134">Request body</span></span>
-<span data-ttu-id="5b70f-135">В тексте запроса добавьте представление объекта [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5b70f-135">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="173f7-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="173f7-134">Request body</span></span>
+<span data-ttu-id="173f7-135">В теле запроса поставляют представление JSON объекта [educationSubmissionResource.](../resources/educationsubmissionresource.md)</span><span class="sxs-lookup"><span data-stu-id="173f7-135">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="5b70f-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b70f-136">Response</span></span>
-<span data-ttu-id="5b70f-137">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5b70f-137">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="173f7-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="173f7-136">Response</span></span>
+<span data-ttu-id="173f7-137">В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [educationSubmissionResource](../resources/educationsubmissionresource.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="173f7-137">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5b70f-138">Пример</span><span class="sxs-lookup"><span data-stu-id="5b70f-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5b70f-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b70f-139">Request</span></span>
-<span data-ttu-id="5b70f-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5b70f-140">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="173f7-138">Пример</span><span class="sxs-lookup"><span data-stu-id="173f7-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="173f7-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="173f7-139">Request</span></span>
+<span data-ttu-id="173f7-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="173f7-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationsubmissionresource_from_educationsubmission"
@@ -90,10 +90,10 @@ Content-length: 1097
 
 ```
 
-##### <a name="response"></a><span data-ttu-id="5b70f-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b70f-141">Response</span></span>
-<span data-ttu-id="5b70f-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5b70f-142">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="173f7-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="173f7-141">Response</span></span>
+<span data-ttu-id="173f7-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="173f7-142">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="5b70f-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5b70f-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="173f7-143">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="173f7-143">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "ignored",
