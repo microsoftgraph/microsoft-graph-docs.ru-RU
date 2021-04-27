@@ -5,87 +5,87 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 6a02e149f830dffe2795b3fbb6477005797e0adc
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 43806511fb094c81e341f3529374530ebe778f9b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473243"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040275"
 ---
-# <a name="list-shared"></a><span data-ttu-id="9857c-103">Список "Общие"</span><span class="sxs-lookup"><span data-stu-id="9857c-103">List shared</span></span>
+# <a name="list-shared"></a><span data-ttu-id="d0a0e-103">Список "Общие"</span><span class="sxs-lookup"><span data-stu-id="d0a0e-103">List shared</span></span>
 
-<span data-ttu-id="9857c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9857c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d0a0e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0a0e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9857c-105">Вычисляемая информация, которая включает список документов, общих пользователю.</span><span class="sxs-lookup"><span data-stu-id="9857c-105">Calculated insight that includes the list of documents shared with a user.</span></span>
+<span data-ttu-id="d0a0e-105">Вычисляемая информация, которая включает список документов, общих пользователю.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-105">Calculated insight that includes the list of documents shared with a user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9857c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9857c-106">Permissions</span></span>
-<span data-ttu-id="9857c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9857c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d0a0e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d0a0e-106">Permissions</span></span>
+<span data-ttu-id="d0a0e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0a0e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9857c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9857c-109">Permission type</span></span>      | <span data-ttu-id="9857c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9857c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d0a0e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d0a0e-109">Permission type</span></span>      | <span data-ttu-id="d0a0e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d0a0e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9857c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9857c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9857c-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9857c-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9857c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9857c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9857c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9857c-114">Not supported.</span></span>    |
-|<span data-ttu-id="9857c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9857c-115">Application</span></span> | <span data-ttu-id="9857c-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9857c-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="d0a0e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d0a0e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d0a0e-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0a0e-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d0a0e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d0a0e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0a0e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-114">Not supported.</span></span>    |
+|<span data-ttu-id="d0a0e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d0a0e-115">Application</span></span> | <span data-ttu-id="d0a0e-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0a0e-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9857c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9857c-117">HTTP request</span></span>
-<span data-ttu-id="9857c-118">Получите список документов, общих пользователю, вписав его.</span><span class="sxs-lookup"><span data-stu-id="9857c-118">Get a list of documents shared with the signed-in user.</span></span>
+## <a name="http-request"></a><span data-ttu-id="d0a0e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d0a0e-117">HTTP request</span></span>
+<span data-ttu-id="d0a0e-118">Получите список документов, общих пользователю, вписав его.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-118">Get a list of documents shared with the signed-in user.</span></span>
 
-><span data-ttu-id="9857c-119">**Примечание.** Только пользователь может делать запросы с помощью id или основного имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="9857c-119">**Note**: Only the user can make requests using the user's id or principal name.</span></span>
+><span data-ttu-id="d0a0e-119">**Примечание.** Только пользователь может делать запросы с помощью id или основного имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-119">**Note**: Only the user can make requests using the user's id or principal name.</span></span>
 
 ```http
 GET /me/insights/shared
 GET /users/{id | userPrincipalName}/insights/shared
 ```
 
-<span data-ttu-id="9857c-120">Расширение ресурса, на который ссылается общая **информация:**</span><span class="sxs-lookup"><span data-stu-id="9857c-120">Expand the resource referenced by a **shared** insight:</span></span>
+<span data-ttu-id="d0a0e-120">Расширение ресурса, на который ссылается общая **информация:**</span><span class="sxs-lookup"><span data-stu-id="d0a0e-120">Expand the resource referenced by a **shared** insight:</span></span>
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9857c-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9857c-121">Optional query parameters</span></span>
-<span data-ttu-id="9857c-122">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9857c-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d0a0e-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d0a0e-121">Optional query parameters</span></span>
+<span data-ttu-id="d0a0e-122">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="9857c-123">Параметр запроса можно `$filter` использовать для фильтрации общих элементов.</span><span class="sxs-lookup"><span data-stu-id="9857c-123">You can use the `$filter` query parameter to filter shared items.</span></span> <span data-ttu-id="9857c-124">Например, в зависимости от **типа:**</span><span class="sxs-lookup"><span data-stu-id="9857c-124">For example, based on **type**:</span></span>
+<span data-ttu-id="d0a0e-123">Параметр запроса можно `$filter` использовать для фильтрации общих элементов.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-123">You can use the `$filter` query parameter to filter shared items.</span></span> <span data-ttu-id="d0a0e-124">Например, в зависимости от **типа:**</span><span class="sxs-lookup"><span data-stu-id="d0a0e-124">For example, based on **type**:</span></span>
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-<span data-ttu-id="9857c-125">В [resourceVisualization](../resources/insights-resourcevisualization.md)см. доступные типы и типы контейнеров, которые можно фильтровать.</span><span class="sxs-lookup"><span data-stu-id="9857c-125">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
+<span data-ttu-id="d0a0e-125">В [resourceVisualization](../resources/insights-resourcevisualization.md)см. доступные типы и типы контейнеров, которые можно фильтровать.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-125">See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).</span></span>
 
-<span data-ttu-id="9857c-126">Вы также можете получить файлы, общие для определенного пользователя.</span><span class="sxs-lookup"><span data-stu-id="9857c-126">You can also retrieve files shared by a specific user.</span></span> <span data-ttu-id="9857c-127">Например, укажите `lastshared/sharedby/address` свойство:</span><span class="sxs-lookup"><span data-stu-id="9857c-127">For example, by specifying the `lastshared/sharedby/address` property:</span></span>
+<span data-ttu-id="d0a0e-126">Вы также можете получить файлы, общие для определенного пользователя.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-126">You can also retrieve files shared by a specific user.</span></span> <span data-ttu-id="d0a0e-127">Например, укажите `lastshared/sharedby/address` свойство:</span><span class="sxs-lookup"><span data-stu-id="d0a0e-127">For example, by specifying the `lastshared/sharedby/address` property:</span></span>
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-<span data-ttu-id="9857c-128">См. [сложный тип sharingDetail.](../resources/insights-sharingdetail.md)</span><span class="sxs-lookup"><span data-stu-id="9857c-128">See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.</span></span>
+<span data-ttu-id="d0a0e-128">См. [сложный тип sharingDetail.](../resources/insights-sharingdetail.md)</span><span class="sxs-lookup"><span data-stu-id="d0a0e-128">See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="9857c-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9857c-129">Request headers</span></span>
-| <span data-ttu-id="9857c-130">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9857c-130">Header</span></span>       |  <span data-ttu-id="9857c-131">Значение</span><span class="sxs-lookup"><span data-stu-id="9857c-131">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d0a0e-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d0a0e-129">Request headers</span></span>
+| <span data-ttu-id="d0a0e-130">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d0a0e-130">Header</span></span>       |  <span data-ttu-id="d0a0e-131">Значение</span><span class="sxs-lookup"><span data-stu-id="d0a0e-131">Value</span></span>|
 |:-------------|:------|
-| <span data-ttu-id="9857c-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9857c-132">Authorization</span></span>  | <span data-ttu-id="9857c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9857c-p104">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="9857c-135">Accept</span><span class="sxs-lookup"><span data-stu-id="9857c-135">Accept</span></span>  | <span data-ttu-id="9857c-136">application/json</span><span class="sxs-lookup"><span data-stu-id="9857c-136">application/json</span></span>|
+| <span data-ttu-id="d0a0e-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d0a0e-132">Authorization</span></span>  | <span data-ttu-id="d0a0e-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-p104">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="d0a0e-135">Accept</span><span class="sxs-lookup"><span data-stu-id="d0a0e-135">Accept</span></span>  | <span data-ttu-id="d0a0e-136">application/json</span><span class="sxs-lookup"><span data-stu-id="d0a0e-136">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9857c-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9857c-137">Request body</span></span>
-<span data-ttu-id="9857c-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9857c-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d0a0e-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d0a0e-137">Request body</span></span>
+<span data-ttu-id="d0a0e-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9857c-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="9857c-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d0a0e-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0a0e-139">Response</span></span>
 
-<span data-ttu-id="9857c-140">В случае успешной работы этот метод возвращает код ответа и список общих элементов `200 OK` в тексте [](../resources/insights-shared.md) ответа.</span><span class="sxs-lookup"><span data-stu-id="9857c-140">If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights-shared.md) items in the response body.</span></span>
+<span data-ttu-id="d0a0e-140">В случае успешной работы этот метод возвращает код ответа и список общих элементов `200 OK` в тексте [](../resources/insights-shared.md) ответа.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-140">If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights-shared.md) items in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9857c-141">Пример</span><span class="sxs-lookup"><span data-stu-id="9857c-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d0a0e-141">Пример</span><span class="sxs-lookup"><span data-stu-id="d0a0e-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9857c-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="9857c-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d0a0e-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="d0a0e-142">Request</span></span>
 
-<span data-ttu-id="9857c-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9857c-143">Here is an example of the request.</span></span>
+<span data-ttu-id="d0a0e-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-143">Here is an example of the request.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared
 ```
 
-### <a name="response"></a><span data-ttu-id="9857c-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="9857c-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d0a0e-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0a0e-144">Response</span></span>
 
-<span data-ttu-id="9857c-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9857c-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d0a0e-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-145">Here is an example of the response.</span></span> <span data-ttu-id="d0a0e-146">Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d0a0e-146">Note: The response object shown here might be shortened for readability.</span></span>
 
 ```http
 HTTP/1.1 200 OK
