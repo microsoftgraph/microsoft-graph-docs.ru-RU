@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 53f8bb896800742d25e14639f2a6b8a1a91d83c6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 24e74f6f421c1d270326cfa780f8df5194de83f8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437158"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046960"
 ---
 # <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -175,8 +175,8 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -217,8 +217,8 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

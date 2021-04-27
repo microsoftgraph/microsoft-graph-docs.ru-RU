@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 64efc112f50cf28c0f73e896bec1ffa859a62024
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5813871a262475e85df93cfe82e6943f381f85b8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436878"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046855"
 ---
 # <a name="get-member-groups"></a>Вывод групп пользователя
 
@@ -28,7 +28,7 @@ ms.locfileid: "50436878"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 Используйте руководство по следующим сценариям, чтобы определить, какие типы разрешений использовать:
 - Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All для получения членства в группах для пользователя, вступив в группу.
@@ -52,12 +52,12 @@ POST /directoryObjects/{id}/getMemberGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| Значение **true** указывает, что должны быть возвращены только группы безопасности, в которых состоит объект. Значение **false** указывает, что должны быть возвращены все группы и роли каталога, участником которых является объект. **Примечание**. Вызвать функцию для пользователя можно, только если для параметра задано значение **true**. |
+|securityEnabledOnly|Логическое| Значение **true** указывает, что должны быть возвращены только группы безопасности, в которых состоит объект. Значение **false** указывает, что должны быть возвращены все группы и роли каталога, участником которых является объект. **Примечание**. Вызвать функцию для пользователя можно, только если для параметра задано значение **true**. |
 
 ## <a name="response"></a>Отклик
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e2426fdba7b41019e71cd7e4161d1d6fd2330433
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b7fc4cedfd4476860e04ee24333b064741d5d85f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473394"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045980"
 ---
 # <a name="create-customers"></a>Создание клиентов
 
@@ -95,7 +95,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 201 Created

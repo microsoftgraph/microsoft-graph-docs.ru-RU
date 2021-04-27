@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9b2c28d7b20760867592a75e910845c109841d26
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 25c54509c40076a220093b1034c545f534ed6eda
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956873"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047037"
 ---
 # <a name="list-threads"></a>Список цепочек
 
@@ -28,7 +28,7 @@ ms.locfileid: "48956873"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

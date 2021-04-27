@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7a07e4c8be19d9a6aaf20d30168ebe02f3af74bf
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0b52e42e3c610bf0f0020a2587ac7b649fc180be
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436962"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046883"
 ---
 # <a name="check-member-groups"></a>Проверка членства в группах
 
@@ -52,12 +52,12 @@ POST /directoryObjects/{id}/checkMemberGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция строк |Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
+|groupIds|Коллекция String |Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

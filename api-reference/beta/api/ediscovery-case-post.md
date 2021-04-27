@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 69a099cf250036f86e6481a818b4dbdc581c7aea
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7fa7331b9a75c9c9d787ab12804540b1e5efe31a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773734"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044727"
 ---
 # <a name="create-case"></a>Создание дела
 
@@ -97,9 +97,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

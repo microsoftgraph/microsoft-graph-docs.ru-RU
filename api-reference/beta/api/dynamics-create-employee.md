@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 79d6f242a7811570e9f4488f2f150205940a6eec
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3c3301019d958fcd1c1309c405726af24b19acfc
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473317"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045952"
 ---
 # <a name="create-employees"></a>Создание сотрудников
 
@@ -87,7 +87,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 201 Created

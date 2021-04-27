@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e263d8693b277156d96dc6668945699466979fa0
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: f542b6617d1f58d22304bd10f8bbefed2b22741a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176556"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046904"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -20,7 +20,7 @@ ms.locfileid: "50176556"
 
 Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md). 
 
-В настоящее время функции восстановления удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групп](../resources/group.md)и [ресурсов](../resources/user.md) пользователей. Вы можете полностью восстановить случайно удаленный элемент. Это не относится к группам безопасности, которые удаляются окончательно.
+В настоящее время функции восстановления удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групп](../resources/group.md)и [пользовательских](../resources/user.md) ресурсов. Вы можете полностью восстановить случайно удаленный элемент. Это не применимо к группам безопасности, которые удаляются навсегда.
 
 Удаленный элемент можно восстановить в течение 30 дней. Через 30 дней элемент удаляется без возможности восстановления.
 
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Требуется маркер &lt; &gt; *носитела*|
+| Authorization  | Требуется &lt; маркер Bearer &gt; |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -102,7 +102,7 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 ---
 
 ### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

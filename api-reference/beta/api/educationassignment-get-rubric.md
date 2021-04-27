@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 827a72185c4df930ec3ec530c9c080737ed1ceab
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: f7da2f591879c962e4c8e1b463be677ba5dabc7c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961326"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044419"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>Get educationRubric attached to educationAssignment
 
@@ -28,7 +28,7 @@ ms.locfileid: "51961326"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Для приложений                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -88,9 +88,9 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

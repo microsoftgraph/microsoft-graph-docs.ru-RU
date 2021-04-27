@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f199dece53ce5082a775787c24af88e4ced474f3
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 433ce274f281b50e1bc473e4be7722b457afcd70
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946954"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047058"
 ---
 # <a name="get-contract"></a>Получить контракт
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/contracts/{id}
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

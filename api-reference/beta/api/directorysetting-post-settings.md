@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a4dec36d0932870b7d8601223b71aa4340175c47
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ab5281a940dd1dace265d87954cc49893c4d97f5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436641"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046589"
 ---
 # <a name="create-a-directory-setting"></a>Создание параметра каталога
 
@@ -32,7 +32,7 @@ ms.locfileid: "50436641"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /groups/{id}/settings
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)  Однако имя отображения для параметра будет устанавливаться на основе имени шаблона ссылок параметров.
 
 ## <a name="response"></a>Отклик
@@ -96,7 +96,7 @@ Content-length: 222
 
 В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

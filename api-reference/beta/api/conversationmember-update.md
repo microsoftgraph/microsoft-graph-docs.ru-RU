@@ -1,28 +1,28 @@
 ---
-title: Обновление Конверсатионмембер
-description: Обновление роли Конверсатионмембер в группе или канале.
+title: Обновление conversationMember
+description: Обнови роль conversationMember в команде или канале.
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 24366fadfb863ba78b8f92ba39c25008c795e23e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0127d88adb5abaadc3698d4b1d237433e7ed9088
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956722"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047030"
 ---
-# <a name="update-conversationmember"></a>Обновление Конверсатионмембер
+# <a name="update-conversationmember"></a>Обновление conversationMember
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление роли [конверсатионмембер](../resources/conversationmember.md) в [команде](../resources/team.md).
-или [Channel](../resources/channel.md).
+Обновление роли [conversationMember](../resources/conversationmember.md) в [команде.](../resources/team.md)
+или [канал](../resources/channel.md).
 
 > [!NOTE]
-> В каналах эта операция поддерживается только для каналов с [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) `private` . Вызовы с любым другим [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) будут возвращать `400 Bad Request` ответ.
+> На каналах эта операция поддерживается только на каналах с [channelMembershipType](../resources/enums.md#channelmembershiptype-values) `private` . Вызовы с любым [другим каналомMembershipType](../resources/enums.md#channelmembershiptype-values) возвращают `400 Bad Request` ответ.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,9 +30,9 @@ ms.locfileid: "48956722"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| В teams: Теаммембер. ReadWrite. ALL<br/>В каналах: Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| В teams: Теаммембер. ReadWrite. ALL<br/>В каналах: Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Приложение| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -49,11 +49,11 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса укажи значения для обновления соответствующих полей. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|Коллекция строк|Роли этого пользователя. Должен иметь значения "Owner" или "Empty". Гостевые пользователи всегда должны иметь роль "гость" и не могут измениться. |
+|roles|Коллекция строк|Роли этого пользователя. Должно быть "владельцем" или пустым. Гостевых пользователей всегда должны иметь роль "гость" и не может измениться. |
 
 ## <a name="response"></a>Отклик
 
@@ -103,7 +103,7 @@ content-length: 26
 
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

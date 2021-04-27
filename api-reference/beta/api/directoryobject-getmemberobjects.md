@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47ad4aa86e41ace7edc9e5b5eb0351557a94a7ae
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a5f7ef92699cab5a7f39046e6ac5fe2fdab8585d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436864"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046848"
 ---
 # <a name="get-member-objects"></a>Вывод объектов членства
 
@@ -47,12 +47,12 @@ POST /directoryObjects/{id}/getMemberObjects
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| Значение **true** указывает, что должны быть возвращены только группы безопасности, в которых состоит объект. Значение **false** указывает, что должны быть возвращены все группы и роли каталога, участником которых является объект. **Примечание**. Вызвать функцию для пользователя можно, только если для параметра задано значение **true**. |
+|securityEnabledOnly|Логическое| Значение **true** указывает, что должны быть возвращены только группы безопасности, в которых состоит объект. Значение **false** указывает, что должны быть возвращены все группы и роли каталога, участником которых является объект. **Примечание**. Вызвать функцию для пользователя можно, только если для параметра задано значение **true**. |
 
 ## <a name="response"></a>Отклик
 
@@ -95,7 +95,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

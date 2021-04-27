@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8240490739863e0b3ca2832914e2dcf1673c9650
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6eeddc00a62efaa9b6432afe3d474b2f1019dfe6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436493"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046379"
 ---
 # <a name="list-domains"></a>Список доменов
 
@@ -27,7 +27,7 @@ ms.locfileid: "50436493"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
+|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ GET /domains
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept         | application/json; |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/domains
 ---
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8156edca6bc81e7d587ed034d051acf4ca698f99
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 883f23823c58b87e4969b10c96fde63be08058e9
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437026"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046911"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -32,7 +32,7 @@ ms.locfileid: "50437026"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -48,7 +48,7 @@ ms.locfileid: "50437026"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -69,7 +69,7 @@ GET /directory/deletedItems/microsoft.graph.user
 | Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 ---
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4f27b6a7b9ef437f2187cb4b522fc84f40d33670
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5f00627823d4a9cc571143c8e0e09ba297bd4902
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436577"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046540"
 ---
 # <a name="delete-domain"></a>Удаление домена
 
@@ -31,7 +31,7 @@ ms.locfileid: "50436577"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.ReadWrite.All |
+|Для приложений | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ DELETE /domains/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -89,7 +89,7 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

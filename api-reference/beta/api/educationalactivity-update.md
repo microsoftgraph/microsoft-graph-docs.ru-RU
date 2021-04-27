@@ -1,24 +1,24 @@
 ---
-title: Обновление едукатионалактивити
-description: Обновление свойств объекта Едукатионалактивити.
+title: Обновление образовательной активности
+description: Обновление свойств объекта educationalActivity.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e672c1259d888b8a8fa4f6972268216ed57d9bdc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7f59b6ef2b5bebb2369a3cbd44baaae6ca209b97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966656"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044489"
 ---
-# <a name="update-educationalactivity"></a>Обновление едукатионалактивити
+# <a name="update-educationalactivity"></a>Обновление образовательной активности
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [едукатионалактивити](../resources/educationalactivity.md) в [профиле](../resources/profile.md)пользователя.
+Обновление свойств объекта [educationalActivity](../resources/educationalactivity.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48966656"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,17 +52,17 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|комплетионмонсеар|Дата|Месяц и год, когда пользователь выполнит или выполнил действие. |
-|ендмонсеар|Дата|Месяц и год, когда пользователь завершил действие учебного заведения.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|Организация|[институтиондата](../resources/institutiondata.md)|Содержит подробные сведения о учебном заведения. |
-|Программа|[едукатионалактивитидетаил](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
-|стартмонсеар|Дата|Месяц и год, когда пользователь присвоено указанному действию.|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Date|Месяц и год, когда пользователь закончил или завершил действие. |
+|endMonthYear|Date|Месяц и год, когда пользователь завершил ссылаемую образовательную деятельность.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|учреждение|[institutionData](../resources/institutiondata.md)|Содержит сведения об изучаемом учреждении. |
+|программа|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
+|startMonthYear|Date|Месяц и год, когда пользователь начал со ссылкой на действие.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионалактивити](../resources/educationalactivity.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект educationalActivity](../resources/educationalactivity.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -116,9 +116,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

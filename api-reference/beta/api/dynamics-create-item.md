@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 27c56da8501ec8617228754327c8c2ad35f2f653
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 544155babf455cf013ca3bd2979f64ba8cb37d8c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473296"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045938"
 ---
 # <a name="create-items"></a>Создание элементов
 
@@ -81,7 +81,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 201 Created

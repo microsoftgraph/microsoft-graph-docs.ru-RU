@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dbb53baa6a5506dee9c71139f16520021f375af2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 471b2965e39c8aa43e01f7df6bae1aaf91792b2e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957007"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047065"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -47,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя папки.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
-|wellKnownName|string|Имя папки, если она является распознаваемой папкой. В настоящее время `contacts` это единственная распознанная папка контактов.|
+|wellKnownName|String|Имя папки, если папка является признанной папкой. В `contacts` настоящее время это единственная признанная папка контактов.|
 
 ## <a name="response"></a>Отклик
 
@@ -90,7 +90,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

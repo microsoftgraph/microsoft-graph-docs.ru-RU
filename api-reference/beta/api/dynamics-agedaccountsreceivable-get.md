@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 88f095439d159826aec1edebf9caf7baf2a66454
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ec1eedd4055d575eb469336bb177114c1561daee
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471371"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046172"
 ---
 # <a name="get-agedaccountsreceivable"></a>Get agedAccountsReceivable
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsRecei
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```json
 {

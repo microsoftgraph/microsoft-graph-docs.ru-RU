@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8ab916a6808422624ba511ad728100b315156be7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0d116e66256d78f4f33e8a608e063ea733e14aa1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436822"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046841"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -28,7 +28,7 @@ ms.locfileid: "50436822"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -66,7 +66,7 @@ GET /directoryRoles/delta
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ### <a name="response"></a>Отклик
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/directoryRoles/delta
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- { 
   "blockType": "response",
   "truncated": true,

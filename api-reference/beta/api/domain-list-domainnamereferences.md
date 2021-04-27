@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 505c78a9adef3efc2baae05487a46b59d97d6ca6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4e0a821420ccac7de9fb4bc055d5d9dddb11969c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436549"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046505"
 ---
 # <a name="list-domainnamereferences"></a>Список domainNameReferences
 
@@ -29,7 +29,7 @@ ms.locfileid: "50436549"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.ReadWrite.All |
+|Для приложений | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -51,7 +51,7 @@ GET /domains/{id}/domainNameReferences
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/domainNameReferences
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

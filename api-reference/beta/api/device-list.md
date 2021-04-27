@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0766814c56315c63f60ade129443d8586016e90a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3a797f7d496bbb268c259f09b9d7b800a4b1dc00
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437109"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046953"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -29,7 +29,7 @@ ms.locfileid: "50437109"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/devices
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
-> Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -170,8 +170,8 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -228,8 +228,8 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

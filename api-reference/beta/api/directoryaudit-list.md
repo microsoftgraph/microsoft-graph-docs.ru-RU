@@ -1,16 +1,16 @@
 ---
 title: Перечисление directoryAudits
-description: Описывает метод списка ресурса directoryAudit (сущности) из API Microsoft Graph (бета-версия).
+description: Описывает метод списка ресурса directoryAudit из API Microsoft Graph (бета-версия).
 localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 38e5ec2c48f6f553579b69b12c42821e459cc5b6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 92c77a811eacc6af18d48324f70392c30313f1a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130963"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046897"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130963"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, включая управление пользователями, приложениями, устройствами и группой, привилегированное управление удостоверениями (PIM), проверки доступа, условия использования, защиту идентификации, управление паролями (SSPR и сброс паролей администратора) и самостоятельное управление группой.
+Получите список журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, в том числе пользователем, приложением, управлением устройствами и группой, привилегированным управлением удостоверениями (PIM), отзывами доступа, условиями использования, защитой удостоверений, управление паролями (сброс паролей SSPR и администратора) и управление группой самообслуживаний.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Подробные сведения об использовании этих параметров см. в параметрах [запроса OData.](/graph/query_parameters)
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query_parameters)
 
 |Параметр     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ GET /auditLogs/directoryAudits
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметра
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметром
 
 |Атрибут        |Поддерживаемые операторы|
 |:----------------|:------|
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

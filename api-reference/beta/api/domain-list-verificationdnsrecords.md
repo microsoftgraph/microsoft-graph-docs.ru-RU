@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6338f9c6f61594d9485a2241da85e9add7e6efb0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 52d3232824a56eb13dd625e1cbb081c5954bd032
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436500"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046421"
 ---
 # <a name="list-verificationdnsrecords"></a>Проверка спискаDnsRecords
 
@@ -33,7 +33,7 @@ ms.locfileid: "50436500"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.Read.All, Domain.ReadWrite.All |
+|Для приложений | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ GET /domains/{id}/verificationDnsRecords
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 22f2429c165a29b757a39acc6d4f4def06e17336
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: df34248e6977752504f1f1c8f0997fbc0fa8f434
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471330"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045637"
 ---
 # <a name="get-customers"></a>Получить клиентов
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```json
 {

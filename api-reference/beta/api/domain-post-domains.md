@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d4c6e9731285f5e28829dc2bb5c77faae30775c4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 08ceebe10857d8966f7f86e5a30a5dee14189f3f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436486"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046344"
 ---
 # <a name="create-domain"></a>Создание домена
 
@@ -31,7 +31,7 @@ ms.locfileid: "50436486"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.ReadWrite.All |
+|Для приложений | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST /domains
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите представление JSON объекта [domain](../resources/domain.md).
 
 > Тело запроса содержит свойство id для нового домена. id — это единственное свойство, которое можно указать, и оно является обязательным. Значение свойства id — полное доменное имя, которое необходимо создать.
@@ -74,7 +74,7 @@ Content-length: 192
 ```
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

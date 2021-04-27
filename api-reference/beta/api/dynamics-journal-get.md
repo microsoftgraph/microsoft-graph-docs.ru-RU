@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e814dd9afe56633c15825ede842f799bd85b0700
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 6c71ad4897ef0e00f16a72edc86d46b84dacd3a0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921674"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045210"
 ---
 # <a name="get-journals"></a>Получать журналы
 
@@ -29,7 +29,7 @@ ms.locfileid: "51921674"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Financials.ReadWrite.All|
+|Для приложений|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```json
 {

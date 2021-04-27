@@ -5,12 +5,12 @@ description: Создание пакета driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8883006a6aa1daf86e4d3b8a6efac31e0ae25376
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 21312f78257fbd3c7c371e3c22e1ee03905402c1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471385"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046274"
 ---
 # <a name="create-bundle"></a>Создание пакета
 
@@ -44,7 +44,7 @@ POST /drive/bundles
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -120,7 +120,7 @@ Content-Type: application/json
 }
 ```
 
-Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 ### <a name="example-2-create-an-album"></a>Пример 2. Создание альбома
 
@@ -182,10 +182,10 @@ Content-Type: application/json
 }
 ```
 
-Объект отклика, показанный здесь, может быть сокращен для чтения. При фактическом вызове будут возвращены все свойства.
+Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 Если _@microsoft.graph.conflictBehavior_ будет переименован  и пакет с тем же именем уже существует, новое имя пакета будет обновлено, чтобы быть уникальным.
-OneDrive привносим номер в конец имени пакета.
+OneDrive будет придать номер к концу имени пакета.
 
 Например, `My Day at the Beach` будет `My Day at the Beach 1` переименовано .
 Если будет принято, то номер будет приращен еще раз, пока не будет обнаружено уникальное `My Day at the Beach 1` имя пакета.
@@ -198,7 +198,7 @@ OneDrive привносим номер в конец имени пакета.
   "description": "Create a new bundle or photo album.",
   "keywords": "create,bundle",
   "section": "documentation",
-  "tocPath": "Bundles/Create"
+  "tocPath&quot;: &quot;Bundles/Create"
 } -->
 
 

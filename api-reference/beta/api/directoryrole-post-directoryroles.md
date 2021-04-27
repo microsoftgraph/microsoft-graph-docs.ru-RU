@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aa9a2d1a5f174ada043215e7ae6ba55e81a3473a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5078af3f13fdee8f2d7603d700b19e62530f6f72
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436752"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046785"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -27,7 +27,7 @@ ms.locfileid: "50436752"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /directoryRoles
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при активации роли каталога.
@@ -93,7 +93,7 @@ Content-length: 153
 
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

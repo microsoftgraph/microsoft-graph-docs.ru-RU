@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b0a882a043652eb1b4f0e6be0290c04cf33e1e1b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7e4ff3372fa492c03f6213c2971c3c9a25050e78
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474276"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045105"
 ---
 # <a name="get-paymentterms"></a>Get paymentTerms
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```json
 {

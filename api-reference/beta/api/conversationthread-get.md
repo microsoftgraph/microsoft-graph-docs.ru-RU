@@ -1,16 +1,16 @@
 ---
 title: Получение объекта conversationThread
-description: 'Получение определенной цепочки, принадлежащей группе. Вы можете указать родительский сеанс связи и поток, или '
+description: 'Получение определенной цепочки, принадлежащей группе. Можно указать родительский разговор и поток, или, '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0a11148e2844be0bae93c86df0300b01d42322bf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59e39c13f406b5846aee59b06d22dc25b4e3996f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956666"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047023"
 ---
 # <a name="get-conversationthread"></a>Получение conversationThread
 
@@ -26,7 +26,7 @@ ms.locfileid: "48956666"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 66d6abf15008daee131b2bfe1a47e7761b5494af
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 72e580e3ad36540ae40311358bf065d67a74f59a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436892"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046862"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

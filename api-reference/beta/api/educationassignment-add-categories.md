@@ -1,31 +1,31 @@
 ---
-title: Добавление Едукатионкатегориес
-description: Добавление существующего Едукатионкатегори к этому educationAssignment
+title: Добавление educationCategories
+description: Добавление существующей системы educationCategory в это educationAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0f5a536ba1dc6390d8642f82de2d4bf131602c62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c94ffa2f11ae8fd77380fa164affdded4cfb3b2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007898"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044412"
 ---
-# <a name="add-educationcategories"></a>Добавление Едукатионкатегориес
+# <a name="add-educationcategories"></a>Добавление educationCategories
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте один или несколько существующих объектов [едукатионкатегори](../resources/educationcategory.md) в этот [educationAssignment](../resources/educationassignment.md).
+Добавьте в это [educationAssignment](../resources/educationcategory.md) один или несколько существующих объектов [educationCategory.](../resources/educationassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается.  | 
 
@@ -40,8 +40,8 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите odata.id существующих объектов [едукатионкатегори](../resources/educationcategory.md) , которые требуется добавить к этому назначению.
+## <a name="request-body"></a>Текст запроса
+В теле запроса odata.id существующего объекта [educationCategory(ы)](../resources/educationcategory.md) для добавления к этому назначению.
 
 
 ## <a name="response"></a>Отклик
@@ -64,11 +64,11 @@ Content-length: 212
 }
 
 ```
-В тексте запроса укажите odata.id существующего объекта [едукатионкатегори](../resources/educationcategory.md) , который требуется добавить к этому назначению.
+В теле запроса укажи odata.id существующего объекта [educationCategory,](../resources/educationcategory.md) чтобы добавить к этому назначению.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 
 <!-- {

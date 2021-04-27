@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d3862417cd75e2a6adb55c1c9660b8b1c2ddabc4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 08246b246bda49700e4efd7d84073a3ea1113c5c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473051"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045385"
 ---
 # <a name="get-generalledgerentries"></a>Get generalLedgerEntries
 
@@ -43,7 +43,7 @@ GET /financials/companies/{id}/generalLedgerEntries/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок       |Значение             |
 |-------------|------------------|
-|Авторизация|Носителер. Обязательно. |
+|Authorization|Носителер. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntr
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```json
 {

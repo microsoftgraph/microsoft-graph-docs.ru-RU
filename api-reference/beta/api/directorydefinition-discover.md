@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4b83168464b8f8ab563ffa549d601e35929684bb
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 0f4d5a26128c78dca1245f5b8c15f6a446e4296a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625908"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046890"
 ---
 # <a name="directorydefinition-discover"></a>directoryDefinition: откройте для себя
 
@@ -28,7 +28,7 @@ ms.locfileid: "50625908"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -88,7 +88,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

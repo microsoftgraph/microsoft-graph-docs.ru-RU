@@ -1,24 +1,24 @@
 ---
-title: Удаление Едукатионрубрик из educationAssignment
-description: Удаление Едукатионрубрик из educationAssignment
+title: Удаление educationRubric из educationAssignment
+description: Удаление образовательногоRubric из educationAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 119fe854c1bc04f850e89fcaf9dd8460b87ac95d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4eadc22c5e88243319245b90c165534bb062e404
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966615"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044440"
 ---
-# <a name="remove-educationrubric-from-educationassignment"></a>Удаление Едукатионрубрик из educationAssignment
+# <a name="remove-educationrubric-from-educationassignment"></a>Удаление educationRubric из educationAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [едукатионрубрик](../resources/educationrubric.md) из [educationAssignment](../resources/educationassignment.md).  При этом сам Rubric не удаляется.
+Удаление [educationRubric](../resources/educationrubric.md) из [educationAssignment](../resources/educationassignment.md).  Это не удаляет сам рубрику.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48966615"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -42,7 +42,7 @@ DELETE /education/classes/{id}/assignments/{id}/rubric/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -88,9 +88,9 @@ DELETE https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric/$re
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

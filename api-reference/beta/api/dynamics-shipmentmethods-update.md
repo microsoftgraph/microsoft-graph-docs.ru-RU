@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 05802c0acda91d56661838aaf0e9fef04d8ba2da
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d77f35fec4c11fade6a48981396fa52b59ba9864
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474241"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52045014"
 ---
 # <a name="update-shipmentmethods"></a>Обновление отгрузкиMethods
 
@@ -44,7 +44,7 @@ PATCH /financials/companies/{id}/shipmentMethods/{id}
 |------|-----|
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json|
-|If-Match      |Обязательно. Если этот загон запроса включен и предоставленный eTag не совпадает с текущим тегом на **пересылкеMethods,** **отправкаMethods** не будет обновляться. |
+|If-Match      |Обязательный. Если этот загон запроса включен и предоставленный eTag не совпадает с текущим тегом на **пересылкеMethods,** **отправкаMethods** не будет обновляться. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -70,7 +70,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Примечание.** Показанный здесь объект ответа может быть сокращен для читаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Показанный здесь объект ответа может быть сокращен для читаемости.
 
 ```http
 HTTP/1.1 200 OK

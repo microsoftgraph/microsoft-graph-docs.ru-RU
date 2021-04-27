@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d907b0bbb2f1cafcc3b6dfbdc03d1b9e27431847
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: f374de8c500660ed423bc7a264cb37dd9f5c690f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474136"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044853"
 ---
 # <a name="get-unitsofmeasure"></a>Get unitsOfMeasure
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{i
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```json
 {

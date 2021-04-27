@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d2b872c5c17e62f1ce340e7119c80afed1dc05a8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2e6bc21a2263829be58e836af701cdc9f76a5ce2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474157"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044916"
 ---
 # <a name="get-taxgroups"></a>Get taxGroups
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 
 Ниже приведен пример отклика. 
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```json
 {

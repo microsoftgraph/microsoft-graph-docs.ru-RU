@@ -1,17 +1,17 @@
 ---
 title: 'driveItem: восстановление'
-description: Восстановление driveItem, который был удален и в данный момент находится в корзине.
+description: Восстановление driveItem, который был удален и в настоящее время находится в корзине.
 localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 ms.date: 08/06/2019
 doc_type: apiPageType
-ms.openlocfilehash: aef61c906ff51e16d84c4f2f54444bc2343fffd1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fc1d9e1dc44af3ccbca132d8d54f1413e029f614
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963536"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52046267"
 ---
 # <a name="driveitem-restore"></a>driveItem: восстановление
 
@@ -19,7 +19,7 @@ ms.locfileid: "48963536"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Восстановление [driveItem](../resources/driveitem.md) , который был удален и в данный момент находится в корзине. **Примечание** : Эта функция в настоящее время доступна только для OneDrive персональный.
+Восстановление [driveItem,](../resources/driveitem.md) который был удален и в настоящее время находится в корзине. **ПРИМЕЧАНИЕ.** В настоящее время эта функция доступна только для OneDrive Personal.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "48963536"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite.All |
-| Для приложения                            | Files.ReadWrite.All |
+| Для приложений                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ POST /me/drive/items/{item-id}/restore
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,12 +51,12 @@ POST /me/drive/items/{item-id}/restore
 
 | Параметр     | Тип                                         | Описание |
 |:--------------|:---------------------------------------------|:------------|
-|parentReference|[ItemReference](../resources/itemreference.md)| Необязательный. Ссылка на родительский элемент, на который будет восстановлен удаленный элемент. |
+|parentReference|[ItemReference](../resources/itemreference.md)| Необязательный. Ссылка на родительский элемент, в который будет восстановлен удаленный элемент. |
 |name           |String                                        | Необязательный параметр. Новое имя восстановленного элемента. Если оно не предоставлено, будет использовано такое же имя, как в оригинале. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и восстановленный объект [driveItem](../resources/driveitem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` восстановленный [объект driveItem](../resources/driveitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -106,9 +106,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
