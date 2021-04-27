@@ -1,26 +1,26 @@
 ---
-title: Получение Организатионсеттингс
-description: Получение свойств и связей объекта Организатионсеттингс.
+title: Get organizationSettings
+description: Извлечение свойств и связей объекта organizationSettings.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d1fc6d9d8abb8e93a145536c5ae8d6678ed4b3d9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 53bf7e03d56ad949683b0c363af3d4aa017502d6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975490"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052070"
 ---
-# <a name="get-organizationsettings"></a>Получение Организатионсеттингс
+# <a name="get-organizationsettings"></a>Get organizationSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [организатионсеттингс](../resources/organizationsettings.md) , в том числе **профилекардпропертиес**.
+Извлечение свойств и связей объекта [organizationSettings,](../resources/organizationsettings.md) включая **profileCardProperties.**
 
-Эта операция не возвращает [итеминсигхтссеттингс](../resources/iteminsightssettings.md) с помощью свойства навигации **итеминсигхтс** . Вместо этого используйте [Get итеминсигхтссеттингс](iteminsightssettings-get.md) .
+Эта операция не возвращает [itemInsightsSettings](../resources/iteminsightssettings.md) через **свойство навигации itemInsights.** Вместо [этого используйте get itemInsightsSettings.](iteminsightssettings-get.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,11 +28,11 @@ ms.locfileid: "48975490"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. Read. ALL                    |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.Read.All                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
->**Примечание:** Для этой операции с делегированными разрешениями необходимо, чтобы вошедшего в систему пользователя была назначена роль администратора клиента или роль глобального администратора.
+>**Примечание:** Использование делегирования разрешений для этой операции требует от пользователя, вписаного, роли администратора клиента или глобального администратора.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [организатионсеттингс](../resources/organizationsettings.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [organizationSettings](../resources/organizationsettings.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,9 +97,9 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

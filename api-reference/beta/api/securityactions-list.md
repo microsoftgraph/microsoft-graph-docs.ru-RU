@@ -1,24 +1,24 @@
 ---
-title: Список Секуритяктионс
-description: Получение списка объектов securityAction.
+title: List securityActions
+description: Извлечение списка объектов securityAction.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 5f48f75ea88aca81dc780b2c09d139cff9fea683
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 45eac647d3bdae27109417e62440478301ebb5a0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970934"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051986"
 ---
-# <a name="list-securityactions"></a>Список Секуритяктионс
+# <a name="list-securityactions"></a>List securityActions
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [securityAction](../resources/securityaction.md) .
+Извлечение списка [объектов securityAction.](../resources/securityaction.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48970934"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Секуритяктионс. Read. ALL, Секуритяктионс. ReadWrite. ALL |
+| Приложение                            | SecurityActions.Read.All, SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /security/securityActions
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в [окне Параметры запроса OData.](/graph/query-parameters)
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -54,7 +54,7 @@ GET /security/securityActions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [securityAction](../resources/securityaction.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [securityAction](../resources/securityaction.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,10 +92,10 @@ GET https://graph.microsoft.com/beta/security/securityActions
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

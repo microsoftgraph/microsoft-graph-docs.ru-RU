@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 139416e3b21166f50e2f9fed529a7efe6b4dbd3e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b1594d031f9ff007a87243ccf0cf481022b48d89
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720678"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052588"
 ---
 # <a name="list-trendingaround"></a>Список trendingAround
 
@@ -29,7 +29,7 @@ ms.locfileid: "50720678"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All |
+|Приложение | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 ```http
@@ -60,7 +60,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

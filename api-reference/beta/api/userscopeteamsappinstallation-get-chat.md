@@ -1,16 +1,16 @@
 ---
 title: Получить чат между пользователем и teamsApp
-description: Извлечение чата по одному между указанным пользователем и приложением Teams.
+description: Извлечение чата один на один между указанным пользователем и Teams приложением.
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 975722356177a537da9d7ca53e5232747866a9b8
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: cde0931caf5509c9782e7da9fdb4691eafa4eb67
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690307"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052581"
 ---
 # <a name="get-chat-between-user-and-teamsapp"></a>Получить чат между пользователем и teamsApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "49690307"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение чата](../resources/chat.md) указанного [пользователя и](../resources/user.md) [приложения Teams.](../resources/teamsapp.md)
+[Извлечение чата](../resources/chat.md) указанного [пользователя](../resources/user.md) и [Teams приложения.](../resources/teamsapp.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,11 +54,11 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и экземпляр объекта `200 OK` [чата](../resources/chat.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и экземпляр объекта `200 OK` [чата](../resources/chat.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Пример 1. Список чаты по одному между указанным пользователем и приложением Teams
+### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Пример 1. Список чатов один на один между указанным пользователем и Teams приложением
 
 #### <a name="request"></a>Запрос
 
@@ -94,8 +94,8 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "user_chat_teamsApps",

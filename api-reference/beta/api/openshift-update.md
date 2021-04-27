@@ -1,24 +1,24 @@
 ---
-title: Обновление Опеншифт
-description: Обновление свойств объекта Опеншифт.
+title: Обновление openShift
+description: Обновление свойств объекта openShift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7c17e56fb6fe0f6eb963d30beb35dc867955cea3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37d7399883980532560a7748c8082a9ff184fe1c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976890"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052084"
 ---
-# <a name="update-openshift"></a>Обновление Опеншифт
+# <a name="update-openshift"></a>Обновление openShift
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [опеншифт](../resources/openshift.md) .
+Обновление свойств объекта [openShift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,17 +47,17 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>Текст запроса
 
-Предоставьте измененный объект [опеншифт](../resources/openshift.md) в тексте запроса для этого метода.
+Предоставление [измененного объекта openshift](../resources/openshift.md) в теле запроса для этого метода.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|драфтопеншифт|опеншифтитем|Неопубликованная открытая смена.|
-|schedulingGroupId|String| Планирование кода группы. |
-|шаредопеншифт|опеншифтитем|Опубликованная открытая смена.|
+|draftOpenShift|openShiftItem|Неопубликованная открытая смена.|
+|schedulingGroupId|String| Scheduling group id. |
+|sharedOpenShift|openShiftItem|Опубликованная открытая смена.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [опеншифт](../resources/openshift.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект openShift](../resources/openshift.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -118,9 +118,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

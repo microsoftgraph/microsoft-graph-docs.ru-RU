@@ -1,24 +1,24 @@
 ---
-title: 'Тииндикатор: Делететииндикаторсбекстерналид'
-description: Удалите несколько индикаторов системы анализа угроз (TI) в одном запросе, а не несколько запросов, а запрос содержит внешние идентификаторы, а не идентификаторы.
+title: 'tiIndicator: deleteTiIndicatorsByExternalId'
+description: Удалите несколько индикаторов разведки угроз (TI) в одном запросе вместо нескольких запросов, и запрос содержит внешние ИД вместо ID.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 76de4d49adc3e3b34a49e43516376dd8a25f1db7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a163f2c2a362cda42964733bf6639a2138dcb98c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977738"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052665"
 ---
-# <a name="tiindicator-deletetiindicatorsbyexternalid"></a>Тииндикатор: Делететииндикаторсбекстерналид
+# <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите несколько индикаторов системы анализа угроз (TI) в одном запросе вместо нескольких запросов, если запрос содержит внешние идентификаторы, а не идентификаторы.
+Удалите несколько индикаторов разведки угроз (TI) в одном запросе вместо нескольких запросов, когда запрос содержит внешние ИД, а не ID.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48977738"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,11 +50,11 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция строк| Коллекция `externalIds` объектов **тииндикатор** , которые необходимо удалить. |
+|значение|Коллекция объектов string| Коллекция `externalIds` удаленных **объектов tiIndicator.** |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200, OK` код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика. При возникновении ошибки этот метод возвращает `206 Partial Content` код отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
+В случае успешной работы этот метод возвращает код ответа и `200, OK` [объект коллекции resultInfo](../resources/resultinfo.md) в тексте ответа. При ошибке этот метод возвращает `206 Partial Content` код ответа.  Дополнительные [сведения см. в](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) "Ошибках".
 
 ## <a name="examples"></a>Примеры
 
@@ -103,10 +103,10 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
-> Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

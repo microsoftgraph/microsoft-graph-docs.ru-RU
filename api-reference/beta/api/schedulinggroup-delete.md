@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта schedulingGroup
-description: Пометка элемента Счедулингграуп как неактивного путем задания его свойства "свойство Active"
+description: Пометить группу планирования как неактивной, установив ее свойство isActive
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 793b6ed249d5eb3dfde6b3667c4bfaafe89a9fde
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fa82dc1c8c8b677a7864ed67f3eb4b66a123ba18
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972075"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052007"
 ---
 # <a name="delete-schedulinggroup"></a>Удаление объекта schedulingGroup
 
@@ -18,8 +18,8 @@ ms.locfileid: "48972075"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Помечайте [счедулингграуп](../resources/schedulinggroup.md) как неактивную, устанавливая **его свойство** GetProperty.
-Этот метод не удаляет [счедулингграуп](../resources/schedulinggroup.md) из расписания. Существующие [сменные](../resources/shift.md) экземпляры, назначенные группе планирования, не входят в группу.
+[Пометить группу планирования](../resources/schedulinggroup.md) как неактивной, установив ее **свойство isActive.**
+Этот метод не удаляет [группу планирования из](../resources/schedulinggroup.md) расписания. [Существующие](../resources/shift.md) экземпляры переноса, назначенные группе планирования, остаются частью группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,9 +27,9 @@ ms.locfileid: "48972075"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule.ReadWrite.All |
+|Приложение | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -87,9 +87,9 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

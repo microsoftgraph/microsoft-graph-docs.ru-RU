@@ -1,24 +1,24 @@
 ---
-title: Создание Опеншифт
-description: Создайте экземпляр объекта опеншифт.
+title: Создание openShift
+description: Создайте экземпляр объекта openshift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f9b02e5463c5215e67aef206d5876400ef275a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 313c5a8ecdd940d9811dab653152e04ad15c59f4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019952"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052091"
 ---
-# <a name="create-openshift"></a>Создание Опеншифт
+# <a name="create-openshift"></a>Создание openShift
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте экземпляр объекта [опеншифт](../resources/openshift.md) .
+Создание экземпляра [объекта openshift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,11 +47,11 @@ POST /teams/{id}/schedule/openShifts
 
 ## <a name="request-body"></a>Текст запроса
 
-Укажите новый объект [опеншифт](../resources/openshift.md) в тексте запроса для этого метода.
+Предокажи [новый объект openshift](../resources/openshift.md) в теле запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [опеншифт](../resources/openshift.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого `200 OK` [объекта openShift](../resources/openshift.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,9 +105,9 @@ Content-length: 244
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

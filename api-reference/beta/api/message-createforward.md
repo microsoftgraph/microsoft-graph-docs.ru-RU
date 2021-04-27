@@ -1,16 +1,16 @@
 ---
 title: 'message: createForward'
-description: 'Создание черновика переадментного сообщения с комментарием или обновлением свойств сообщения  '
+description: 'Создайте проект сообщения, чтобы включить комментарий или обновить свойства сообщений  '
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e36487e3e25e4eac30c4c05987082b26b31601f3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: dd0802fa9443067fe4db9edd53783b800d81ce8c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136733"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052175"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -18,13 +18,13 @@ ms.locfileid: "50136733"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание черновика переадментного сообщения с комментарием или обновлением свойств сообщения  
-все в одном **вызове createForward.** Затем можно отправить [черновик](../api/message-send.md) сообщения.
+Создайте проект сообщения, чтобы включить комментарий или обновить свойства сообщений  
+все в одном **вызове createForward.** Затем можно [отправить черновик](../api/message-send.md) сообщения.
 
 **Примечание**
 
-- Можно указать комментарий или свойство **body** `message` параметра. Если указать оба этих запроса, будет возвращена ошибка "HTTP 400 Bad Request".
-- Необходимо указать либо параметр, либо свойство `toRecipients` **toRecipients** `message` параметра. Если указать и то, и другое, не будет возвращена ошибка HTTP 400 Bad Request.
+- Вы можете указать комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
+- Необходимо указать параметр `toRecipients` или **свойство toRecipients** `message` параметра. Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
 |toRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей.|
-|message|[message](../resources/message.md)|Любые записаемые свойства, которые необходимо обновить в ответном сообщении.|
+|message|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
 
 ## <a name="response"></a>Отклик
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
