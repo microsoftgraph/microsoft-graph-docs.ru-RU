@@ -1,20 +1,19 @@
 ---
-ms.author: yiwenwang
 title: Используйте API поиска Майкрософт в Microsoft Graph для поиска пользовательских типов
 description: API поиска Майкрософт можно использовать для импорта внешних данных с помощью [ресурса externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) и запуска поисковых запросов по этому внешнему контенту.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: c4e0b158356d3f26d8a0f36a7d7e86faeba96649
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: db80e90bf8ec6afc8b1b4a993f5c42be66a07e3d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471840"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031398"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Используйте API поиска Майкрософт для поиска пользовательских типов, импортируемых с помощью соединителов Microsoft Graph (предварительный просмотр) 
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Используйте API поиска Майкрософт для поиска пользовательских типов, импортируемых с Graph microsoft (предварительный просмотр) 
 
-Используйте API поиска Майкрософт для поиска по контенту, который будет проиндексироваться [соединиттелями Microsoft Graph.](/microsoftsearch/connectors-overview) Содержимое импортируется либо [](/microsoftsearch/connectors-gallery) через встроенные соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, реализованные с помощью [API ingestion](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)соединителов Microsoft Graph.
+Используйте API поиска Майкрософт для поиска по контенту, который будет проиндексироваться соединиттелями [Microsoft Graph.](/microsoftsearch/connectors-overview) Содержимое импортируется либо [](/microsoftsearch/connectors-gallery) через встроенные соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, реализованные с помощью API Graph соединителов [Microsoft.](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -38,7 +37,7 @@ TODOSEARCHAPI - Bug 1653398
 
 ## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Пример 1. Извлечение элементов с помощью встроенного соединиттеля Azure SQL Azure
 
-В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было въехано с помощью встроенного соединиттеля Azure SQL Azure.
+В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было похитовено с помощью встроенного соединиттеля Azure SQL Azure.
 
 ### <a name="request"></a>Запрос
 
