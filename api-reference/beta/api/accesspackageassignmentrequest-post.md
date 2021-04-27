@@ -5,32 +5,32 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1a3d6b843db6fb0ff62a7c27e46c72dc5b81adc5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ff0f60841fe852d67e5c76268fe4e00ce277af11
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943243"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048598"
 ---
-# <a name="create-accesspackageassignmentrequest"></a><span data-ttu-id="57bd2-103">Создание accessPackageAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="57bd2-103">Create accessPackageAssignmentRequest</span></span>
+# <a name="create-accesspackageassignmentrequest"></a><span data-ttu-id="74cd1-103">Создание accessPackageAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="74cd1-103">Create accessPackageAssignmentRequest</span></span>
 
-<span data-ttu-id="57bd2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="57bd2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="74cd1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="74cd1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="57bd2-105">В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="57bd2-105">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.</span></span>  <span data-ttu-id="57bd2-106">Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.</span><span class="sxs-lookup"><span data-stu-id="57bd2-106">This operation is used to assign a user to an access package, or to remove an access package assignment.</span></span>
+<span data-ttu-id="74cd1-105">В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="74cd1-105">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.</span></span>  <span data-ttu-id="74cd1-106">Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.</span><span class="sxs-lookup"><span data-stu-id="74cd1-106">This operation is used to assign a user to an access package, or to remove an access package assignment.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="57bd2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="57bd2-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="74cd1-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="74cd1-107">Permissions</span></span>
 
-<span data-ttu-id="57bd2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57bd2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="74cd1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="74cd1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="57bd2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="57bd2-110">Permission type</span></span>                        | <span data-ttu-id="57bd2-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="57bd2-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="74cd1-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="74cd1-110">Permission type</span></span>                        | <span data-ttu-id="74cd1-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="74cd1-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="57bd2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="57bd2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="57bd2-113">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57bd2-113">EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="57bd2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="57bd2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57bd2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="57bd2-115">Not supported.</span></span> |
-| <span data-ttu-id="57bd2-116">Application</span><span class="sxs-lookup"><span data-stu-id="57bd2-116">Application</span></span>                            | <span data-ttu-id="57bd2-117">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57bd2-117">EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="74cd1-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="74cd1-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="74cd1-113">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74cd1-113">EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="74cd1-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="74cd1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74cd1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="74cd1-115">Not supported.</span></span> |
+| <span data-ttu-id="74cd1-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="74cd1-116">Application</span></span>                            | <span data-ttu-id="74cd1-117">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="74cd1-117">EntitlementManagement.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="57bd2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="57bd2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74cd1-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="74cd1-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,37 +38,37 @@ ms.locfileid: "50943243"
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="57bd2-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="57bd2-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="74cd1-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="74cd1-119">Request headers</span></span>
 
-| <span data-ttu-id="57bd2-120">Имя</span><span class="sxs-lookup"><span data-stu-id="57bd2-120">Name</span></span>          | <span data-ttu-id="57bd2-121">Описание</span><span class="sxs-lookup"><span data-stu-id="57bd2-121">Description</span></span>   |
+| <span data-ttu-id="74cd1-120">Имя</span><span class="sxs-lookup"><span data-stu-id="74cd1-120">Name</span></span>          | <span data-ttu-id="74cd1-121">Описание</span><span class="sxs-lookup"><span data-stu-id="74cd1-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="57bd2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="57bd2-122">Authorization</span></span> | <span data-ttu-id="57bd2-123">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="57bd2-123">Bearer \{token\}.</span></span> <span data-ttu-id="57bd2-124">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="57bd2-124">Required.</span></span> |
-| <span data-ttu-id="57bd2-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="57bd2-125">Content-Type</span></span>  | <span data-ttu-id="57bd2-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="57bd2-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="74cd1-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="74cd1-122">Authorization</span></span> | <span data-ttu-id="74cd1-p103">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74cd1-p103">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="74cd1-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="74cd1-125">Content-Type</span></span>  | <span data-ttu-id="74cd1-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74cd1-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="57bd2-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="57bd2-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="74cd1-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="74cd1-128">Request body</span></span>
 
-<span data-ttu-id="57bd2-129">В теле запроса поставляем представление JSON объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="57bd2-129">In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.</span></span>
+<span data-ttu-id="74cd1-129">В теле запроса поставляем представление JSON объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="74cd1-129">In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.</span></span>
 
-<span data-ttu-id="57bd2-130">Для администратора, запрашиваемого для создания назначения для пользователя, значение свойства **requestType** составляет , а свойство `AdminAdd` **accessPackageAssignment** содержит назначенного пользователя, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage.](../resources/accesspackage.md)</span><span class="sxs-lookup"><span data-stu-id="57bd2-130">For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **accessPackageAssignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).</span></span>
+<span data-ttu-id="74cd1-130">Для администратора, запрашиваемого для создания назначения для пользователя, значение свойства **requestType** составляет , а свойство `AdminAdd` **accessPackageAssignment** содержит назначенного пользователя, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage.](../resources/accesspackage.md)</span><span class="sxs-lookup"><span data-stu-id="74cd1-130">For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **accessPackageAssignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).</span></span>
 
-<span data-ttu-id="57bd2-131">Для администратора, запрашиваемого для удаления назначения, значение свойства **requestType** составляет , а свойство accessPackageAssignment содержит свойство id, определяющий удаляемую `AdminRemove`  [accessPackageAssignment.](../resources/accesspackageassignment.md) </span><span class="sxs-lookup"><span data-stu-id="57bd2-131">For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.</span></span>
+<span data-ttu-id="74cd1-131">Для администратора, запрашиваемого для удаления назначения, значение свойства **requestType** составляет , а свойство accessPackageAssignment содержит свойство id, определяющий удаляемую `AdminRemove`  [accessPackageAssignment.](../resources/accesspackageassignment.md) </span><span class="sxs-lookup"><span data-stu-id="74cd1-131">For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.</span></span>
 
-<span data-ttu-id="57bd2-132">Для пользователя, не администратора, чтобы попросить создать назначение для себя, значение свойства **requestType** является , и `UserAdd` свойство **accessPackageAssignment** содержит с ID самих пользователей, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage](../resources/accesspackage.md).</span><span class="sxs-lookup"><span data-stu-id="57bd2-132">For a non-administrator user to request to create an assignment for themselves, the value of the **requestType** property is `UserAdd`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).</span></span>  <span data-ttu-id="57bd2-133">Пользователь, делая запрос, должен уже существовать в каталоге.</span><span class="sxs-lookup"><span data-stu-id="57bd2-133">The user making the request must already exist in the directory.</span></span>
+<span data-ttu-id="74cd1-132">Для пользователя, не администратора, чтобы попросить создать назначение для себя, значение свойства **requestType** является , и `UserAdd` свойство **accessPackageAssignment** содержит с ID самих пользователей, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage](../resources/accesspackage.md).</span><span class="sxs-lookup"><span data-stu-id="74cd1-132">For a non-administrator user to request to create an assignment for themselves, the value of the **requestType** property is `UserAdd`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).</span></span>  <span data-ttu-id="74cd1-133">Пользователь, делая запрос, должен уже существовать в каталоге.</span><span class="sxs-lookup"><span data-stu-id="74cd1-133">The user making the request must already exist in the directory.</span></span>
 
-## <a name="response"></a><span data-ttu-id="57bd2-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="57bd2-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="74cd1-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="74cd1-134">Response</span></span>
 
-<span data-ttu-id="57bd2-135">В случае успешного выполнения этот метод возвращает код ответа из 200 серий и новый объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="57bd2-135">If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.</span></span>  
+<span data-ttu-id="74cd1-135">В случае успешного выполнения этот метод возвращает код ответа из 200 серий и новый объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="74cd1-135">If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.</span></span>  
 
-<span data-ttu-id="57bd2-136">Если это запрос, то впоследствии создается `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject.](../resources/accesspackagesubject.md)</span><span class="sxs-lookup"><span data-stu-id="57bd2-136">If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created.</span></span> <span data-ttu-id="57bd2-137">Вы можете найти тех, кто использует параметры запроса при [перечислении accessPackageAssignments](accesspackageassignment-list.md).</span><span class="sxs-lookup"><span data-stu-id="57bd2-137">You can locate those using the query parameters when [listing accessPackageAssignments](accesspackageassignment-list.md).</span></span>
+<span data-ttu-id="74cd1-136">Если это запрос, то впоследствии создается `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject.](../resources/accesspackagesubject.md)</span><span class="sxs-lookup"><span data-stu-id="74cd1-136">If this is an `AdminAdd` request, then subsequently an [accessPackageAssignment](../resources/accesspackageassignment.md) and, if needed, an [accessPackageSubject](../resources/accesspackagesubject.md) are also created.</span></span> <span data-ttu-id="74cd1-137">Вы можете найти тех, кто использует параметры запроса при [перечислении accessPackageAssignments](accesspackageassignment-list.md).</span><span class="sxs-lookup"><span data-stu-id="74cd1-137">You can locate those using the query parameters when [listing accessPackageAssignments](accesspackageassignment-list.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="57bd2-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="57bd2-138">Examples</span></span>
-### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a><span data-ttu-id="57bd2-139">Пример 1. Администратор запрашивает прямое назначение для пользователя</span><span class="sxs-lookup"><span data-stu-id="57bd2-139">Example 1: Admin requests a direct assignment for a user</span></span>
-#### <a name="request"></a><span data-ttu-id="57bd2-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="57bd2-140">Request</span></span>
+## <a name="examples"></a><span data-ttu-id="74cd1-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="74cd1-138">Examples</span></span>
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a><span data-ttu-id="74cd1-139">Пример 1. Администратор запрашивает прямое назначение для пользователя</span><span class="sxs-lookup"><span data-stu-id="74cd1-139">Example 1: Admin requests a direct assignment for a user</span></span>
+#### <a name="request"></a><span data-ttu-id="74cd1-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="74cd1-140">Request</span></span>
 
-<span data-ttu-id="57bd2-141">Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя.</span><span class="sxs-lookup"><span data-stu-id="57bd2-141">The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user.</span></span> <span data-ttu-id="57bd2-142">Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, значение **targetID** — это объектный ID назначенного пользователя, значение **accessPackageId** — это желаемый пакет доступа для этого пользователя, а значение **assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.</span><span class="sxs-lookup"><span data-stu-id="57bd2-142">Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.</span></span>
+<span data-ttu-id="74cd1-141">Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя.</span><span class="sxs-lookup"><span data-stu-id="74cd1-141">The following is an example of the request for a direct assignment, in which the administrator is requesting the creation of an assignment for the user.</span></span> <span data-ttu-id="74cd1-142">Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, значение **targetID** — это объектный ID назначенного пользователя, значение **accessPackageId** — это желаемый пакет доступа для этого пользователя, а значение **assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.</span><span class="sxs-lookup"><span data-stu-id="74cd1-142">Because the [accessPackageSubject](../resources/accesspackagesubject.md) might not yet exist, the value of the **targetID** is the object ID of the user being assigned, the value of the **accessPackageId** is the desired access package for that user, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.</span></span>
  
 
-# <a name="http"></a>[<span data-ttu-id="57bd2-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="57bd2-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="74cd1-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="74cd1-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_1"
@@ -87,30 +87,30 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="57bd2-144">C#</span><span class="sxs-lookup"><span data-stu-id="57bd2-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="74cd1-144">C#</span><span class="sxs-lookup"><span data-stu-id="74cd1-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="57bd2-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57bd2-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="74cd1-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="74cd1-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="57bd2-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="57bd2-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="74cd1-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="74cd1-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="57bd2-147">Java</span><span class="sxs-lookup"><span data-stu-id="57bd2-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="74cd1-147">Java</span><span class="sxs-lookup"><span data-stu-id="74cd1-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="57bd2-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="57bd2-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="74cd1-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="74cd1-148">Response</span></span>
 
-<span data-ttu-id="57bd2-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="57bd2-149">The following is an example of the response.</span></span>
+<span data-ttu-id="74cd1-149">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="74cd1-149">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="57bd2-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="57bd2-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="74cd1-150">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="74cd1-150">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -132,15 +132,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a><span data-ttu-id="57bd2-152">Пример 2. Пользователь запрашивает пакет и отвечает на вопросы для утверждения</span><span class="sxs-lookup"><span data-stu-id="57bd2-152">Example 2: User requests a package and answers questions for approval</span></span>
-#### <a name="request"></a><span data-ttu-id="57bd2-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="57bd2-153">Request</span></span>
+### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a><span data-ttu-id="74cd1-151">Пример 2. Пользователь запрашивает пакет и отвечает на вопросы для утверждения</span><span class="sxs-lookup"><span data-stu-id="74cd1-151">Example 2: User requests a package and answers questions for approval</span></span>
+#### <a name="request"></a><span data-ttu-id="74cd1-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="74cd1-152">Request</span></span>
 
-<span data-ttu-id="57bd2-154">Ниже приводится пример запроса, в котором запросчик предоставил ответы на вопросы, чтобы помочь ему принять решение.</span><span class="sxs-lookup"><span data-stu-id="57bd2-154">The following is an example of a request where the requestor provided answers to the approver to help them make their decision.</span></span>
+<span data-ttu-id="74cd1-153">Ниже приводится пример запроса, в котором запросчик предоставил ответы на вопросы, чтобы помочь ему принять решение.</span><span class="sxs-lookup"><span data-stu-id="74cd1-153">The following is an example of a request where the requestor provided answers to the approver to help them make their decision.</span></span>
  
 
 
 
-# <a name="http"></a>[<span data-ttu-id="57bd2-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="57bd2-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="74cd1-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="74cd1-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_2"
@@ -172,19 +172,19 @@ Content-type: application/json
     }]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="57bd2-156">C#</span><span class="sxs-lookup"><span data-stu-id="57bd2-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="74cd1-155">C#</span><span class="sxs-lookup"><span data-stu-id="74cd1-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="57bd2-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57bd2-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="74cd1-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="74cd1-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="57bd2-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="57bd2-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="74cd1-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="74cd1-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="57bd2-159">Java</span><span class="sxs-lookup"><span data-stu-id="57bd2-159">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="74cd1-158">Java</span><span class="sxs-lookup"><span data-stu-id="74cd1-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -195,11 +195,11 @@ Content-type: application/json
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="57bd2-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="57bd2-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="74cd1-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="74cd1-159">Response</span></span>
 
-<span data-ttu-id="57bd2-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="57bd2-161">The following is an example of the response.</span></span>
+<span data-ttu-id="74cd1-160">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="74cd1-160">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="57bd2-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="57bd2-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="74cd1-161">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="74cd1-161">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

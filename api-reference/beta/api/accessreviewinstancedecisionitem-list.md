@@ -5,57 +5,57 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1d2ec913e3ef942f76c26c86df74493819c2d790
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7674a129b118c2c9d8c3487623cf039b2ceca603
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439137"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048402"
 ---
-# <a name="list-accessreviewinstancedecisionitem"></a><span data-ttu-id="08b1b-103">List accessReviewInstanceDecisionItem</span><span class="sxs-lookup"><span data-stu-id="08b1b-103">List accessReviewInstanceDecisionItem</span></span>
+# <a name="list-accessreviewinstancedecisionitem"></a><span data-ttu-id="89686-103">List accessReviewInstanceDecisionItem</span><span class="sxs-lookup"><span data-stu-id="89686-103">List accessReviewInstanceDecisionItem</span></span>
 
-<span data-ttu-id="08b1b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="08b1b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="89686-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89686-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="08b1b-105">[Извлечение объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) для определенного [accessReviewInstance.](../resources/accessreviewinstance.md)</span><span class="sxs-lookup"><span data-stu-id="08b1b-105">Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects for a specific [accessReviewInstance](../resources/accessreviewinstance.md).</span></span> <span data-ttu-id="08b1b-106">Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.</span><span class="sxs-lookup"><span data-stu-id="08b1b-106">A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.</span></span>
+<span data-ttu-id="89686-105">[Извлечение объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) для определенного [accessReviewInstance.](../resources/accessreviewinstance.md)</span><span class="sxs-lookup"><span data-stu-id="89686-105">Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects for a specific [accessReviewInstance](../resources/accessreviewinstance.md).</span></span> <span data-ttu-id="89686-106">Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.</span><span class="sxs-lookup"><span data-stu-id="89686-106">A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="08b1b-107">Если возвращается много **accessReviewInstanceDecisionItems,** чтобы повысить эффективность и избежать периодов времени, извлеките результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе.</span><span class="sxs-lookup"><span data-stu-id="08b1b-107">If many **accessReviewInstanceDecisionItems** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request.</span></span> <span data-ttu-id="08b1b-108">Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с свойством @odata.nextLink в ответ, содержащий URL-адрес следующей страницы результатов.</span><span class="sxs-lookup"><span data-stu-id="08b1b-108">When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results.</span></span> <span data-ttu-id="08b1b-109">Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в проверке данных Microsoft Graph в вашем приложении.</span><span class="sxs-lookup"><span data-stu-id="08b1b-109">If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.</span></span>
+><span data-ttu-id="89686-107">Если возвращается много **accessReviewInstanceDecisionItems,** чтобы повысить эффективность и избежать периодов времени, извлеките результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе.</span><span class="sxs-lookup"><span data-stu-id="89686-107">If many **accessReviewInstanceDecisionItems** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request.</span></span> <span data-ttu-id="89686-108">Если набор результатов охватывает несколько страниц, корпорация Майкрософт Graph возвращает эту страницу с свойством @odata.nextLink в ответе, который содержит URL-адрес следующей страницы результатов.</span><span class="sxs-lookup"><span data-stu-id="89686-108">When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results.</span></span> <span data-ttu-id="89686-109">Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в Graph данных Microsoft в приложении.</span><span class="sxs-lookup"><span data-stu-id="89686-109">If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.</span></span>
 >
-><span data-ttu-id="08b1b-110">Если параметры запроса не предоставлены и результатов более 100, Microsoft Graph автоматически будет предоставлять результаты по 100 результатов на страницу.</span><span class="sxs-lookup"><span data-stu-id="08b1b-110">If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.</span></span>
+><span data-ttu-id="89686-110">Если параметры запроса не предоставлены и результатов более 100, microsoft Graph автоматически будет предоставлять результаты по 100 результатов на странице.</span><span class="sxs-lookup"><span data-stu-id="89686-110">If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="08b1b-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="08b1b-111">Permissions</span></span>
-<span data-ttu-id="08b1b-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="08b1b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="89686-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="89686-111">Permissions</span></span>
+<span data-ttu-id="89686-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89686-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="08b1b-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="08b1b-114">Permission type</span></span>                        | <span data-ttu-id="08b1b-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="08b1b-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="89686-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="89686-114">Permission type</span></span>                        | <span data-ttu-id="89686-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="89686-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="08b1b-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="08b1b-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="08b1b-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08b1b-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="08b1b-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="08b1b-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="08b1b-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08b1b-119">Not supported.</span></span>|
-|<span data-ttu-id="08b1b-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="08b1b-120">Application</span></span>                            | <span data-ttu-id="08b1b-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08b1b-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="89686-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="89686-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="89686-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89686-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="89686-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="89686-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="89686-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="89686-119">Not supported.</span></span>|
+|<span data-ttu-id="89686-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="89686-120">Application</span></span>                            | <span data-ttu-id="89686-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89686-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
 
- <span data-ttu-id="08b1b-122">В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа.</span><span class="sxs-lookup"><span data-stu-id="08b1b-122">The signed-in user must also be in a directory role that permits them to read an access review.</span></span>
+ <span data-ttu-id="89686-122">В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа.</span><span class="sxs-lookup"><span data-stu-id="89686-122">The signed-in user must also be in a directory role that permits them to read an access review.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="08b1b-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="08b1b-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="89686-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="89686-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/decisions
 ```
-## <a name="request-headers"></a><span data-ttu-id="08b1b-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="08b1b-124">Request headers</span></span>
-<span data-ttu-id="08b1b-125">Нет.</span><span class="sxs-lookup"><span data-stu-id="08b1b-125">None.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="89686-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="89686-124">Request headers</span></span>
+<span data-ttu-id="89686-125">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="89686-125">None.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="08b1b-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="08b1b-126">Request body</span></span>
-<span data-ttu-id="08b1b-127">Не поставляем тело запроса.</span><span class="sxs-lookup"><span data-stu-id="08b1b-127">Do not supply a request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="89686-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="89686-126">Request body</span></span>
+<span data-ttu-id="89686-127">Не поставляем тело запроса.</span><span class="sxs-lookup"><span data-stu-id="89686-127">Do not supply a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="08b1b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="08b1b-128">Response</span></span>
-<span data-ttu-id="08b1b-129">В случае успешной работы этот метод возвращает код ответа и массив `200 OK` [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="08b1b-129">If successful, this method returns a `200 OK` response code and an array of [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="89686-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="89686-128">Response</span></span>
+<span data-ttu-id="89686-129">В случае успешной работы этот метод возвращает код ответа и массив `200 OK` [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="89686-129">If successful, this method returns a `200 OK` response code and an array of [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="08b1b-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="08b1b-130">Examples</span></span>
-### <a name="request"></a><span data-ttu-id="08b1b-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="08b1b-131">Request</span></span>
-<span data-ttu-id="08b1b-132">В следующем примере показан запрос на извлечение всех решений в экземпляре обзора доступа.</span><span class="sxs-lookup"><span data-stu-id="08b1b-132">The following example shows a request to retrieve all the decisions on an instance of an access review.</span></span>
+## <a name="examples"></a><span data-ttu-id="89686-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="89686-130">Examples</span></span>
+### <a name="request"></a><span data-ttu-id="89686-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="89686-131">Request</span></span>
+<span data-ttu-id="89686-132">В следующем примере показан запрос на извлечение всех решений в экземпляре обзора доступа.</span><span class="sxs-lookup"><span data-stu-id="89686-132">The following example shows a request to retrieve all the decisions on an instance of an access review.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="08b1b-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="08b1b-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="89686-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="89686-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewInstanceDecisionItem"
@@ -63,19 +63,19 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$top=100&$skip=0
 ```
-# <a name="c"></a>[<span data-ttu-id="08b1b-134">C#</span><span class="sxs-lookup"><span data-stu-id="08b1b-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="89686-134">C#</span><span class="sxs-lookup"><span data-stu-id="89686-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="08b1b-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08b1b-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="89686-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="89686-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="08b1b-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="08b1b-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="89686-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="89686-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewinstancedecisionitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="08b1b-137">Java</span><span class="sxs-lookup"><span data-stu-id="08b1b-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="89686-137">Java</span><span class="sxs-lookup"><span data-stu-id="89686-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -84,8 +84,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
-### <a name="response"></a><span data-ttu-id="08b1b-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="08b1b-138">Response</span></span>
-><span data-ttu-id="08b1b-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="08b1b-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="89686-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="89686-138">Response</span></span>
+><span data-ttu-id="89686-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="89686-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -207,10 +207,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="08b1b-141">См. также</span><span class="sxs-lookup"><span data-stu-id="08b1b-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="89686-140">См. также</span><span class="sxs-lookup"><span data-stu-id="89686-140">See also</span></span>
 
-- [<span data-ttu-id="08b1b-142">Получить accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="08b1b-142">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
-- [<span data-ttu-id="08b1b-143">Получить accessReviewInstance</span><span class="sxs-lookup"><span data-stu-id="08b1b-143">Get accessReviewInstance</span></span>](accessreviewinstance-get.md)
+- [<span data-ttu-id="89686-141">Получить accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="89686-141">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
+- [<span data-ttu-id="89686-142">Получить accessReviewInstance</span><span class="sxs-lookup"><span data-stu-id="89686-142">Get accessReviewInstance</span></span>](accessreviewinstance-get.md)
 
 
 <!--
