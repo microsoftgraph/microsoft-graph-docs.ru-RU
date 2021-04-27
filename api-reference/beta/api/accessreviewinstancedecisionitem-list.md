@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1d2ec913e3ef942f76c26c86df74493819c2d790
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7674a129b118c2c9d8c3487623cf039b2ceca603
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439137"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048402"
 ---
 # <a name="list-accessreviewinstancedecisionitem"></a>List accessReviewInstanceDecisionItem
 
@@ -21,9 +21,9 @@ ms.locfileid: "50439137"
 [Извлечение объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) для определенного [accessReviewInstance.](../resources/accessreviewinstance.md) Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.
 
 >[!NOTE]
->Если возвращается много **accessReviewInstanceDecisionItems,** чтобы повысить эффективность и избежать периодов времени, извлеките результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе. Когда набор результатов охватывает несколько страниц, Microsoft Graph возвращает эту страницу с свойством @odata.nextLink в ответ, содержащий URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в проверке данных Microsoft Graph в вашем приложении.
+>Если возвращается много **accessReviewInstanceDecisionItems,** чтобы повысить эффективность и избежать периодов времени, извлеките результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе. Если набор результатов охватывает несколько страниц, корпорация Майкрософт Graph возвращает эту страницу с свойством @odata.nextLink в ответе, который содержит URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в Graph данных Microsoft в приложении.
 >
->Если параметры запроса не предоставлены и результатов более 100, Microsoft Graph автоматически будет предоставлять результаты по 100 результатов на страницу.
+>Если параметры запроса не предоставлены и результатов более 100, microsoft Graph автоматически будет предоставлять результаты по 100 результатов на странице.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,9 +42,9 @@ ms.locfileid: "50439137"
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/decisions
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-Нет.
+Отсутствуют.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса.
 
 ## <a name="response"></a>Отклик
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ---
 
 ### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

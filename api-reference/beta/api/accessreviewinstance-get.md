@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e8132815289848c7290b0a09ce2478665e1bbd11
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dffd394e5724a3954324432abccd15f8a9be9318
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507229"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048430"
 ---
 # <a name="get-accessreviewinstance"></a>Получить accessReviewInstance
 
@@ -39,7 +39,7 @@ ms.locfileid: "51507229"
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-Нет.
+Отсутствуют.
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

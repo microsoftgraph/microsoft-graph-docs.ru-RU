@@ -1,26 +1,26 @@
 ---
-title: Замена Тимеофф
-description: Замена существующего Тимеофф.
+title: Замена timeOff
+description: Замените существующее время.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2d572163a87c047d710d87a3f7d809dbb1199c22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d666f9834e5377e5145b2fe0feea801842cb8f5f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981435"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048976"
 ---
-# <a name="replace-timeoff"></a>Замена Тимеофф
+# <a name="replace-timeoff"></a>Замена timeOff
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Замена существующего [тимеофф](../resources/timeoff.md).
+Замените [существующий timeOff](../resources/timeoff.md).
 
-Если указанный [тимеофф](../resources/timeoff.md) не существует, этот метод возвращает значение `404 Not found` .
+Если указанного [timeOff](../resources/timeoff.md) не существует, этот метод `404 Not found` возвращается.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,11 +30,11 @@ ms.locfileid: "48981435"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule. ReadWrite. ALL *  |
+|Приложение | Schedule.ReadWrite.All*  |
 
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
+>\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [тимеофф](../resources/timeoff.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [timeOff.](../resources/timeoff.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеофф](../resources/timeoff.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -112,9 +112,9 @@ Prefer: return=representation
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

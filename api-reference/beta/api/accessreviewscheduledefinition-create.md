@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b82980e053a50b7562cf94d0a5224badfd1d2a8a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a26c081af41658cebcff1db5d1608907f5b25034
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439109"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048374"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -51,11 +51,11 @@ POST /identityGovernance/accessReviews/definitions
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
 | displayName | String | Имя серии обзоров доступа. Обязательный.|
-| descriptionForAdmins | string | Контекст обзора, предоставленного администраторам. Обязательный. |
-  descriptionForReviewers | string | Контекст обзора, предоставленного рецензентам. Обязательный. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. См.  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Обязательный.| 
+| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. Обязательный. |
+  descriptionForReviewers | String | Контекст обзора, предоставленного рецензентам. Обязательный. |
+| область | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. См.  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Обязательный.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. См. [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| параметры | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
 
 
@@ -136,7 +136,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

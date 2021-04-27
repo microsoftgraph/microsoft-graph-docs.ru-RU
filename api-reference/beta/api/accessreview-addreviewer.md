@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 86ea5525745933e40121a2906cd4a90fdb7f3179
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d453b20bfe9e1f897e87b21945b124ec7ed45d2c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439452"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048521"
 ---
 # <a name="add-accessreview-reviewer"></a>Добавление рецензента accessReview
 
@@ -40,7 +40,7 @@ POST /accessReviews/{reviewId}/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажи JSON представление ID пользователя, который будет рецензентом.
 
 В следующей таблице показаны свойства, которые можно получить при обновлении accessReview.
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

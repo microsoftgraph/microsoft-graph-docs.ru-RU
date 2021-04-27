@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 74ac3d2d9ec8857333beb94d8c5c96f1c4684c6b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a3566889236934a2b0668cecd50c8b5b860e61cb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943171"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048486"
 ---
 # <a name="list-accessreview-decisions"></a>Списки решений accessReview
 
@@ -29,7 +29,7 @@ ms.locfileid: "50943171"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
  Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

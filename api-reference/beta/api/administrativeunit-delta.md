@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b3056615a09a027911fd98c0636c6e313a2cad2c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c5cfa9588897715d12668483b115395668d18141
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438900"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048290"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: delta
 
@@ -62,9 +62,9 @@ GET /administrativeUnits/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательно.|
+| Авторизация  | Носитель &lt;токен&gt;. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/delta
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- { 
   "blockType": "response",
   "truncated": true,

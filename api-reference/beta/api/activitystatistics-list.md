@@ -1,24 +1,24 @@
 ---
-title: Список Активитистатистикс
-description: Получение коллекции объектов Активитистатистикс.
+title: List activityStatistics
+description: Получите коллекцию объектов activityStatistics.
 localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: ba1fb1fb18b3791b43d17ffeb11fadf7edd608aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 422d6b3d03129d2e1c7169f3131c46fadc457e35
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952508"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048311"
 ---
-# <a name="list-activitystatistics"></a>Список Активитистатистикс
+# <a name="list-activitystatistics"></a>List activityStatistics
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции [активитистатистикс](../resources/activitystatistics.md) для пользователя за последнюю полную неделю.
+Получите коллекцию [действийStatistics](../resources/activitystatistics.md) для пользователя за последнюю полную неделю.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,13 +41,13 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,13 +55,13 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [активитистатистикс](../resources/activitystatistics.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [activityStatistics](../resources/activitystatistics.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса статистики всех связанных действий для вошедшего пользователя.
+Ниже приводится пример запроса всей связанной статистики действий для подписанного пользователя.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -94,9 +94,9 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа со всеми связанными сведениями о действиях для пользователя. Этот отклик показывает только первый день действий недели, чтобы уменьшить его для удобочитаемости.
+Ниже приводится пример ответа со всей связанной статистикой действий для пользователя. В этом ответе показан только первый день недельных действий, чтобы сократить его для чтения.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
