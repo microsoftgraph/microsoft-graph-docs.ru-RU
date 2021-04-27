@@ -1,31 +1,31 @@
 ---
-title: Удаление Едукатионкатегори
-description: Удаление существующего Едукатионкатегори из educationAssignment
+title: Удаление educationCategory
+description: Удаление существующей системы educationCategory из этого образованияAssignment
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: edcc71fcacf96dacdd9200e48f2ddedbbcda381e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edf054ba1d7b81800a75e260c5a2357ae2d9bcba
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002536"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044188"
 ---
-# <a name="remove-educationcategory"></a>Удаление Едукатионкатегори
+# <a name="remove-educationcategory"></a>Удаление educationCategory
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [едукатионкатегори](../resources/educationcategory.md) из [educationAssignment](../resources/educationassignment.md).
+Удалите [educationCategory](../resources/educationcategory.md) из [educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается.  | 
 
@@ -61,7 +61,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 399f97fc7e93657f7c3eefb039f5a410121e7a65
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 86d9fe375222b25ade87663e64af5c51f7e92904
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470235"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043852"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -80,9 +80,9 @@ Content-length: 279
 В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

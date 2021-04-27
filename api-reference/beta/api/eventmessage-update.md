@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9a6f6fa3a63d1c1e2db29e6eb01882982a832564
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 86b0d75af2e7327ba4c89bb10c30c6a0b5f5472c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965727"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042354"
 ---
 # <a name="update-eventmessage"></a>Обновление объекта eventMessage
 
@@ -49,7 +49,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|Категории, связанные с сообщением.|
 |importance|String|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
-|isAllDay |Boolean|Указывает, продолжается ли событие за весь день. Для настройки этого свойства необходимо также настроить свойства **startDateTime** и **endDateTime** события.|
+|isAllDay |Boolean|Указывает, длится ли событие весь день. Для настройки этого свойства необходимо также настроить **свойства startDateTime** и **endDateTime** события.|
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
@@ -94,7 +94,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

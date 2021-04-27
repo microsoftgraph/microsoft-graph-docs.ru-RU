@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: efa0768fbb8cae441afc3d1fd48baa2e2a3567da
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4e76bf6cd10682717bebe9365afa14ced47d4c90
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436248"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042592"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -260,7 +260,7 @@ Prefer: odata.maxpagesize=2
 
 В ответе ниже показан _skipToken_ в _\@ загоне ответа odata.nextLink._
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. 
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "name": "event_delta_calendarview",

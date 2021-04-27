@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b2e10ec9b7ac84f85cdeb386ac99eaec47407eb2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b5147fe93122eedd164bfe9490e22c6380faa01b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951476"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043677"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -27,7 +27,7 @@ ms.locfileid: "50951476"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | EduRoster.ReadBasic |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -78,9 +78,9 @@ GET https://graph.microsoft.com/beta/education/classes
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

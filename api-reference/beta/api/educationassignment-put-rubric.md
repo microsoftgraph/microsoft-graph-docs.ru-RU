@@ -1,24 +1,24 @@
 ---
-title: Присоединение Едукатионрубрик к educationAssignment
-description: Присоединение существующего объекта Едукатионрубрик к educationAssignment.
+title: Присоединение educationRubric к educationAssignment
+description: Прикрепить существующий объект educationRubric к educationAssignment.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3d96ca954dbfb40c5c3db1f8404144337bcc0f34
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b4ab5909a9c45947fe4f1622bb4f819fc7f3e9e5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966514"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044223"
 ---
-# <a name="create-educationrubric"></a>Создание Едукатионрубрик
+# <a name="create-educationrubric"></a>Создание educationRubric
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Присоединение существующего объекта [едукатионрубрик](../resources/educationrubric.md) к [educationAssignment](../resources/educationassignment.md).
+Прикрепить существующий [объект educationRubric](../resources/educationrubric.md) к [educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48966514"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -42,11 +42,11 @@ PUT /education/classes/{id}/assignments/{id}/rubric/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса добавьте идентификатор OData существующего объекта [едукатионрубрик](../resources/educationrubric.md) .
+В теле запроса укажи ID OData существующего [объекта educationRubric.](../resources/educationrubric.md)
 
 ## <a name="response"></a>Отклик
 
@@ -93,9 +93,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

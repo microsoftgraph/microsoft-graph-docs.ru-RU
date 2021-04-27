@@ -1,31 +1,31 @@
 ---
-title: Создание Едукатионкатегори
+title: Создание educationCategory
 description: Создает новую категорию.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 555abb13f9f8910101a8b3d634c56babb6dc0f21
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ae7983dc59bdb0ce756c0eb26f29f51a2c962fa1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007618"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043838"
 ---
-# <a name="create-educationcategory"></a>Создание Едукатионкатегори
+# <a name="create-educationcategory"></a>Создание educationCategory
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает новый [едукатионкатегори](../resources/educationcategory.md) для [educationClass](../resources/educationclass.md).
+Создает новое [educationCategory](../resources/educationcategory.md) для [класса educationClass.](../resources/educationclass.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -41,12 +41,12 @@ POST /education/classes/{id}/assignmentCategories
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [едукатионкатегори](../resources/educationcategory.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляют представление JSON объекта [educationCategory.](../resources/educationcategory.md)
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [едукатионкатегори](../resources/educationcategory.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект educationCategory](../resources/educationcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -64,12 +64,12 @@ Content-length: 33
   "displayName": "Quizzes"
 }
 ```
-В тексте запроса добавьте представление объекта [едукатионкатегори](../resources/educationcategory.md) в формате JSON.
+В теле запроса поставляют представление JSON объекта [educationCategory.](../resources/educationcategory.md)
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "ignored",

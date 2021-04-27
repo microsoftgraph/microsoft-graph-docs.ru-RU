@@ -1,16 +1,16 @@
 ---
 title: Получение объекта eventMessage
-description: развернуть "параметр для **события**
+description: параметр expand on the **event**
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9463bd7b9198dc31311a8e4bacd07c5b10fbc965
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a321d0ca2332b3a76492f7a16c1201cb8f565ed5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965768"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042445"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -18,18 +18,18 @@ ms.locfileid: "48965768"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [eventMessage](../resources/eventmessage.md). Примените `$expand` параметр в свойстве навигации **события** , чтобы получить связанное [событие](../resources/event.md) в календаре участника.
+Получение свойств и связей объекта [eventMessage](../resources/eventmessage.md). Применить параметр `$expand` в свойстве **навигации** [](../resources/event.md) событий, чтобы получить связанное событие в календаре участника.
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a>Получение текста сообщения о событии в формате HTML или текстовом формате
+### <a name="get-the-event-message-body-in-html-or-text-format"></a>Получите тело сообщения события в HTML или текстовом формате
 
-Тексты сообщений о событиях могут быть в формате HTML или текстовом формате.
+Тела сообщений событий могут быть в HTML или текстовом формате.
 
-Вы можете использовать `Prefer: outlook.body-content-type` заголовок, чтобы указать нужный формат, возвращаемый в свойствах **Body** и **uniqueBody** в `GET` запросе:
+Вы можете использовать заголовка, чтобы указать нужный формат, возвращенный в теле, и `Prefer: outlook.body-content-type` **уникальные свойстваBody** в  `GET` запросе:
 
-- Укажите `Prefer: outlook.body-content-type="text"` , чтобы получить текст сообщения о событии, возвращенный в текстовом формате.
-- Укажите `Prefer: outlook.body-content-type="html"` или просто пропустите заголовок, чтобы вернуть текст сообщения события в формате HTML.
+- `Prefer: outlook.body-content-type="text"`Укажите, чтобы текстовое сообщение возвращалось в текстовом формате.
+- Укажите `Prefer: outlook.body-content-type="html"` или просто пропустите заголовок, чтобы вернуть тело сообщения событий в формате HTML.
 
-Если указан любой из этих заголовков, в ответ будет включен соответствующий `Preference-Applied` заголовок в качестве подтверждения:
+Если указать либо заглавную, ответ будет включать соответствующий `Preference-Applied` заготок в качестве подтверждения:
 
 - Чтобы получить результат выполнения запроса в текстовом формате: `Preference-Applied: outlook.body-content-type="text"`
 - Чтобы получить результат выполнения запроса в формате HTML: `Preference-Applied: outlook.body-content-type="html"`
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -235,7 +235,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. В отклике возвращаются свойства связанного события.
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

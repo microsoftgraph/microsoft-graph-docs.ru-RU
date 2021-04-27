@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7be993efd25633e6e9ba330e8da7bc1ed3e7e6b
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: a07db7b2ebda91bdbce1d27bb034c50bc8d33902
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271983"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52041535"
 ---
 # <a name="list-group-members"></a>Перечисление участников группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "50271983"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка непосредственных участников группы. В качестве членов группы могут быть пользователи, контакты, устройства, участники-службы и другие группы. Эта операция не является транзитивной.
+Получение списка непосредственных участников группы. В группе могут быть пользователи, контакты, устройства, директора службы и другие группы в качестве участников. Эта операция не является транзитивной.
 
 Если группа содержит более 100 участников, Microsoft Graph возвращает в отклике свойство `@odata.nextLink`, содержащее URL-адрес следующей страницы результатов. При наличии этого свойства продолжайте выполнять дополнительные запросы с URL-адресом `@odata.nextLink` в каждом отклике, пока не будут возвращены все результаты, как описано в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).
 
@@ -32,7 +32,7 @@ ms.locfileid: "50271983"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
-> **Примечание.** Для получения списка участников скрытой группы членства требуется разрешение Member.Read.Hidden.
+> **Примечание:** Чтобы перечислить членов скрытой группы членства, требуется разрешение Member.Read.Hidden.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
  
@@ -98,8 +98,8 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -141,7 +141,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -173,7 +173,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Пример 4. Использование $search и OData для получения членства пользователей в группах с отображаемой и отображаемой именами, которые содержат буквы Pr, включая количество возвращенных объектов
+### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Пример 4. Использование литых $search и OData для получения членства пользователей в группах с именами отображения, которые содержат буквы "Pr", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -205,8 +205,8 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -251,8 +251,8 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

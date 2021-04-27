@@ -1,26 +1,26 @@
 ---
-title: Обновление Едукатионрубрик
-description: Обновление свойств объекта Едукатионрубрик.
+title: Обновление educationRubric
+description: Обновление свойств объекта educationRubric.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 17e2ff0f96706c50095a5620b6e729ace157c0c8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e0bcea6b95b83cad3f4467e0a3687a3e2c401b56
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965990"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043481"
 ---
-# <a name="update-educationrubric"></a>Обновление Едукатионрубрик
+# <a name="update-educationrubric"></a>Обновление educationRubric
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [едукатионрубрик](../resources/educationrubric.md) .
+Обновление свойств объекта [educationRubric.](../resources/educationrubric.md)
 
-Обновление Rubric, присоединенного к назначению ( `PATCH /education/me/assignments/{id}/rubric` ), возможно только до публикации назначения, а то, что Обновлено, фактически является исходной Rubric, которая существует в `/education/users/{id}/rubrics` . После публикации назначения выполняется неизменяемая копия Rubric, которая присоединяется к определенному назначению. Этот Rubric можно получить с помощью [Get/едукатион/ме/ассигнментс/{ИД}/рубрик](educationrubric-get.md), но его невозможно обновить.
+Обновление рубрики, присоединенной к назначению ( ) возможно только до публикации назначения, и обновление фактически является исходной рубрикой, которая существует `PATCH /education/me/assignments/{id}/rubric` под `/education/users/{id}/rubrics` . После публикации назначения будет выполнена неопубликоваемая копия рубрики, прикрепленная к этому конкретному назначению. Эту рубрику можно получить с помощью [GET/education/me/assignments/{id}/rubric,](educationrubric-get.md)но ее нельзя обновить.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48965990"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -45,7 +45,7 @@ PATCH /education/me/assignments/{id}/rubric
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,15 +53,15 @@ PATCH /education/me/assignments/{id}/rubric
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|itemBody|Описание этого Rubric.|
-|displayName|String|Имя этого Rubric.|
-|снижения|едукатионассигнментградетипе|Указывает, есть ли у этого Rubric баллы.|
-|тонов|Коллекция Рубриклевел|Коллекция уровней, составляющих данный Rubric.|
-|являются|Коллекция Рубриккуалити|Коллекция качеств, составляющих этот Rubric.|
+|description|itemBody|Описание этой рубрики.|
+|displayName|String|Название этой рубрики.|
+|классификация|educationAssignmentGradeType|Имеет ли эта рубрика очки или нет.|
+|уровни|коллекция rubricLevel|Коллекция уровней, в которые состоит эта рубрика.|
+|качества|rubricQuality collection|Коллекция качеств, из которых состоит эта рубрика.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект educationRubric](../resources/educationrubric.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -104,9 +104,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

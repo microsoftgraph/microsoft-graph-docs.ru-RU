@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 02f1631c23346424c774315d9b43cac06c902b10
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d46aea166ddef92c58cabc7141246bc9dcd897ae
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776370"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042663"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Получить emailAuthenticationMethodConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "50776370"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [электронной почтыAuthenticationMethodConfiguration,](../resources/emailauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory (Azure AD).
+Ознакомьтесь с свойствами и отношениями объекта [электронной почтыAuthenticationMethodConfiguration,](../resources/emailauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory Azure AD.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -108,19 +108,19 @@ Content-Type: application/json
 Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-    "id": "Email",
-    "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "True",
-    "includeTargets":[
-        {
-          "targetType":"group",
-          "id":"all_users",
-          "isRegistrationRequired":false,
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
+      "id":"Email",
+      "state":"enabled",
+      "allowExternalIdToUseEmailOtp":"True",
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false
+         }
+      ]
+   }
 }
 ```
 

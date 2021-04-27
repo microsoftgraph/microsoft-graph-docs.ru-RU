@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 67f8aac56d781d933974d2a1b9c1c95acc035497
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 425d2072e13dbf00d8fc2e81b94cf7da58df8c57
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966175"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043733"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -27,7 +27,7 @@ ms.locfileid: "48966175"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложения | EduRoster.ReadWrite.All |
+|Для приложений | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /education/classes/{id}
 |description|String| Описание курса.|
 |displayName|String| Название курса.|
 |mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
-|classCode|String| Код класса, используемый учебным заведением.|
+|classCode|String| Код класса, используемый школой.|
 |externalId|String| Идентификатор курса из системы синхронизации. |
 |externalName|String|Название курса в системе синхронизации.|
 |externalSource|string| Способ создания этого курса. Возможные значения: `sis`, `manual`, `enum_sentinel`.|
@@ -93,9 +93,9 @@ Content-length: 224
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

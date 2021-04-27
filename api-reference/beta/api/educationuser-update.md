@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 38a3f187a934f57b9ecb910047367ccf3bf20c28
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6846ac91051897fcf455c466d5dcd58119d0131a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955148"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042669"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -53,17 +53,17 @@ PATCH /education/users/{id}
 | Свойство         | Тип               | Описание                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName      | String             | Отображаемое имя пользователя                                                                                                                            |
-| givenName        | String             | Имя                                                                                                                                      |
+| givenName;        | String             | Имя                                                                                                                                      |
 | middleName       | String             | Отчество пользователя                                                                                                                             |
 | surname          | String             | Фамилия пользователя                                                                                                                                 |
 | mail             | String             | Электронный адрес                                                                                                                                   |
-| mobilePhone;      | String             | Номер мобильного телефона пользователя                                                                                                                           |
-| externalSource   | string             | Источник для создания пользователя. Возможные значения: `sis` , `manual` , или `lms` .                                                               |
-| mailingAddress   | [physicalAddress]  | Почтовый адрес пользователя. Примечание: `type` и `postOfficeBox` не поддерживаются для `educationUser` ресурсов.                                         |
-| residenceAddress | [physicalAddress]  | Адрес проживания пользователя. Примечание: `type` и `postOfficeBox` не поддерживаются для `educationUser` ресурсов.                                     |
+| mobilePhone      | String             | Номер мобильного телефона пользователя                                                                                                                           |
+| externalSource   | string             | Источник для создания пользователя. Возможные значения: `sis`, `manual` или `lms`.                                                               |
+| mailingAddress   | [physicalAddress]  | Почтовый адрес пользователя. Примечание. `type` `postOfficeBox` и не поддерживаются для `educationUser` ресурсов.                                         |
+| residenceAddress | [physicalAddress]  | Адрес проживания пользователя. Примечание. `type` `postOfficeBox` и не поддерживаются для `educationUser` ресурсов.                                     |
 | primaryRole      | string             | Роль по умолчанию для пользователя. Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`. |
 | student          | [educationStudent] | Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.                                                                  |
-| teacher          | [educationTeacher](../resources/educationteacher.md) | Если основная роль — преподаватель, этот блок будет содержать данные, характерные для преподавателя.                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | Если основной ролью является учитель, этот блок будет содержать определенные данные учителя.                                                                  |
 
 ## <a name="response"></a>Отклик
 
@@ -118,7 +118,7 @@ Content-length: 508
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +183,7 @@ Content-length: 508
 }
 -->
 
-[PhysicalAddress]: ../resources/physicaladdress.md
+[physicaladdress]: ../resources/physicaladdress.md
 [educationstudent]: ../resources/educationstudent.md
 
 

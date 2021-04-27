@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 04f8f9e96422c262ea816a5f24796d4059b0809c
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: a0c344b1696da6a04b196af97dd83fb84f11a8b1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574161"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042963"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Начните синхронизацию после отправки файлов в educationSynchronizationProfile
 
@@ -45,7 +45,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В случае неудачи `400 Bad Request` возвращается . Ответ содержит коллекцию объектов [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) в составе тела отклика, если были найдены ошибки или предупреждения.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. В случае неудачи `400 Bad Request` возвращается . Ответ содержит коллекцию объектов [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) в составе тела отклика, если были найдены ошибки или предупреждения.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

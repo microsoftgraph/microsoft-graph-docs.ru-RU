@@ -1,24 +1,24 @@
 ---
-title: Получение administrativeUnit
-description: Получение простого каталога **administrativeUnit** , соответствующего этому **educationSchool**.
+title: Get administrativeUnit
+description: Извлечение простого **административного каталогаUnit,** соответствующего этому **educationSchool.**
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 109f5a014674ee143305469e06c6b2af60592f19
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e3e619f67839f4ed733b87bf00d11da010330518
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955617"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043446"
 ---
-# <a name="get-administrativeunit"></a>Получение administrativeUnit
+# <a name="get-administrativeunit"></a>Get administrativeUnit
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение простого каталога **administrativeUnit** , соответствующего этому **educationSchool**.
+Извлечение простого **административного каталогаUnit,** соответствующего этому **educationSchool.**
 
 >**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
 
@@ -44,7 +44,7 @@ GET /education/schools/{id}/administrativeUnit
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [administrativeUnit](../resources/administrativeunit.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -76,9 +76,9 @@ GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

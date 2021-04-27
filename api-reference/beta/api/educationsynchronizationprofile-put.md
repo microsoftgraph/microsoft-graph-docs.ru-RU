@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 27210f444228e3feb5bde98b0b048f26612f4493
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 675cf90ed375bd157f10d0268eef3b90bf3edf5b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574122"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042952"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Обновление educationSynchronizationProfile
 
@@ -104,7 +104,7 @@ Content-type: application/json
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "ignored",

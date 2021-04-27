@@ -1,24 +1,24 @@
 ---
-title: 'educationSchool: Delta'
-description: Получите новые или обновленные учебные заведения, не требующие полного прочтения всей коллекции учебных заведений.
+title: 'educationSchool: delta'
+description: Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции.
 localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7e2108faa364f15dd968a39c00afa104eef9652b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9491a958776797252eada5116b48b25a936b4111
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965936"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043467"
 ---
-# <a name="educationschool-delta"></a>educationSchool: Delta
+# <a name="educationschool-delta"></a>educationSchool: delta
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите новые или обновленные учебные заведения, не требующие полного прочтения всей коллекции учебных заведений. Дополнительные сведения: [use Query Delta Query](/graph/delta-query-overview) .
+Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции. Подробные [сведения см. в запросе Use Delta.](/graph/delta-query-overview)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48965936"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | EduRoster. ReadBasic, EduRoster. Read или EduRoster. ReadWrite              |
+| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.ReadWrite              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                           |
-| Для приложения                            | EduRoster. ReadBasic. ALL, EduRoster. Read. ALL или EduRoster. Вритеврите. ALL |
+| Для приложений                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.WriteWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,10 +50,10 @@ GET /education/schools/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [educationSchool](../resources/educationschool.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [коллекции educationSchool](../resources/educationschool.md) в тексте ответа.
 
 > [!IMPORTANT]
-> разности educationSchool не включают удаленные школы.
+> дельты educationSchool не включают удаленные школы.
 
 ## <a name="example"></a>Пример
 
@@ -94,9 +94,9 @@ GET https://graph.microsoft.com/beta/education/schools/delta
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

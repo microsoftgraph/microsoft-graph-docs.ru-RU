@@ -1,24 +1,24 @@
 ---
-title: 'educationClass: Delta'
-description: Получите новые или обновленные классы, в том числе изменения членства, без необходимости выполнять полное чтение всей коллекции классов.
+title: 'educationClass: delta'
+description: Получите новые или обновленные классы, в том числе изменения членства, без выполнения полного чтения всей коллекции классов.
 localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 415877e9bf553ce3ef3c495ac697d06478bc59be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e8b93c8ddd251bbc25efc9203417d6736e6bf62c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966341"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52044087"
 ---
-# <a name="educationclass-delta"></a>educationClass: Delta
+# <a name="educationclass-delta"></a>educationClass: delta
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите новые или обновленные классы, в том числе изменения членства, без необходимости выполнять полное чтение всей коллекции классов. Дополнительные сведения: [use Query Delta Query](/graph/delta-query-overview) .
+Получите новые или обновленные классы, в том числе изменения членства, без выполнения полного чтения всей коллекции классов. Подробные [сведения см. в запросе Use Delta.](/graph/delta-query-overview)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48966341"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | EduRoster. ReadBasic, EduRoster. Read или EduRoster. ReadWrite              |
+| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.ReadWrite              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                           |
-| Для приложения                            | EduRoster. ReadBasic. ALL, EduRoster. Read. ALL или EduRoster. Вритеврите. ALL |
+| Для приложений                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.WriteWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,10 +50,10 @@ GET /education/classes/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [educationClass](../resources/educationclass.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [коллекции educationClass](../resources/educationclass.md) в тексте ответа.
 
 > [!IMPORTANT]
-> разность educationClass не включает удаленные классы.
+> дельты educationClass не включают удаленные классы.
 
 ## <a name="example"></a>Пример
 
@@ -94,9 +94,9 @@ GET https://graph.microsoft.com/beta/education/classes/delta
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

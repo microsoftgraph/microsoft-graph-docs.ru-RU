@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f6a8dd354a93ec2a99c739585c4562e17552bb47
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 1810fe299b62a52c2b56d9fccb2f312638beff06
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574246"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52043117"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Get an educationSynchronizationProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "50574246"
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read, EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+|Для приложений| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -77,9 +77,9 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

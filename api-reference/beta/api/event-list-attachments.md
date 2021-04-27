@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f569834f3b21b287571d9560cfefbec9f36f943
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: acfcbd41c07cd9e308e6ad1d705c8590298e04f3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954837"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52042557"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -47,7 +47,7 @@ GET /groups/{id}/events/{id}/attachments
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-В частности, параметр запроса можно использовать `$expand` для включения всех вложений в события, встроенных в остальные свойства события. Пример.
+В частности, параметр запроса можно включить все вложения событий в линию с остальными свойствами `$expand` события. Например:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_beta",
