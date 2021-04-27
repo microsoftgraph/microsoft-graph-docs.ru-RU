@@ -1,36 +1,36 @@
 ---
 title: Создание объекта securityAction
-description: Создайте новый объект securityAction. "
+description: Создайте новый объект securityAction".
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: dbbb6ce1b566ec0dec977a51d02426c2c62f7117
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f1d513ca1a24a1314be48f550be1ceae81282609
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970920"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049739"
 ---
-# <a name="create-securityaction"></a><span data-ttu-id="def3d-103">Создание объекта securityAction</span><span class="sxs-lookup"><span data-stu-id="def3d-103">Create securityAction</span></span>
+# <a name="create-securityaction"></a><span data-ttu-id="21407-103">Создание объекта securityAction</span><span class="sxs-lookup"><span data-stu-id="21407-103">Create securityAction</span></span>
 
-<span data-ttu-id="def3d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="def3d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="21407-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="21407-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="def3d-105">Создайте новый объект [securityAction](../resources/securityaction.md) .</span><span class="sxs-lookup"><span data-stu-id="def3d-105">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="21407-105">Создание нового [объекта securityAction.](../resources/securityaction.md)</span><span class="sxs-lookup"><span data-stu-id="21407-105">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="def3d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="def3d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="21407-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="21407-106">Permissions</span></span>
 
-<span data-ttu-id="def3d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="def3d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="21407-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="21407-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="def3d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="def3d-109">Permission type</span></span>                        | <span data-ttu-id="def3d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="def3d-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="21407-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="21407-109">Permission type</span></span>                        | <span data-ttu-id="21407-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="21407-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="def3d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="def3d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="def3d-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="def3d-112">Not supported.</span></span> |
-| <span data-ttu-id="def3d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="def3d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="def3d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="def3d-114">Not supported.</span></span> |
-| <span data-ttu-id="def3d-115">Для приложения</span><span class="sxs-lookup"><span data-stu-id="def3d-115">Application</span></span>                            | <span data-ttu-id="def3d-116">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="def3d-116">SecurityActions.ReadWrite.All</span></span> |
+| <span data-ttu-id="21407-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="21407-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="21407-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="21407-112">Not supported.</span></span> |
+| <span data-ttu-id="21407-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="21407-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="21407-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="21407-114">Not supported.</span></span> |
+| <span data-ttu-id="21407-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="21407-115">Application</span></span>                            | <span data-ttu-id="21407-116">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="21407-116">SecurityActions.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="def3d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="def3d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="21407-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="21407-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "48970920"
 POST /security/securityActions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="def3d-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="def3d-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="21407-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="21407-118">Request headers</span></span>
 
-| <span data-ttu-id="def3d-119">Имя</span><span class="sxs-lookup"><span data-stu-id="def3d-119">Name</span></span>          | <span data-ttu-id="def3d-120">Описание</span><span class="sxs-lookup"><span data-stu-id="def3d-120">Description</span></span>   |
+| <span data-ttu-id="21407-119">Имя</span><span class="sxs-lookup"><span data-stu-id="21407-119">Name</span></span>          | <span data-ttu-id="21407-120">Описание</span><span class="sxs-lookup"><span data-stu-id="21407-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="def3d-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="def3d-121">Authorization</span></span> | <span data-ttu-id="def3d-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="def3d-122">Bearer {code}</span></span> |
+| <span data-ttu-id="21407-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="21407-121">Authorization</span></span> | <span data-ttu-id="21407-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="21407-122">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="def3d-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="def3d-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="21407-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="21407-123">Request body</span></span>
 
-<span data-ttu-id="def3d-124">В тексте запроса добавьте представление объекта [securityAction](../resources/securityaction.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="def3d-124">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="21407-124">В теле запроса поставляем представление JSON объекта [securityAction.](../resources/securityaction.md)</span><span class="sxs-lookup"><span data-stu-id="21407-124">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="def3d-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="def3d-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="21407-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="21407-125">Response</span></span>
 
-<span data-ttu-id="def3d-126">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [securityAction](../resources/securityaction.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="def3d-126">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
+<span data-ttu-id="21407-126">В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [securityAction](../resources/securityaction.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="21407-126">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="def3d-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="def3d-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="21407-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="21407-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="def3d-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="def3d-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="21407-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="21407-128">Request</span></span>
 
-<span data-ttu-id="def3d-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="def3d-129">The following is an example of the request.</span></span>
+<span data-ttu-id="21407-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="21407-129">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="def3d-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="def3d-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="21407-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="21407-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_securityaction_from_security"
@@ -83,31 +83,31 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="def3d-131">C#</span><span class="sxs-lookup"><span data-stu-id="def3d-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="21407-131">C#</span><span class="sxs-lookup"><span data-stu-id="21407-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-securityaction-from-security-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="def3d-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="def3d-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="21407-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="21407-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-securityaction-from-security-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="def3d-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="def3d-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="21407-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="21407-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-securityaction-from-security-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="def3d-134">Java</span><span class="sxs-lookup"><span data-stu-id="def3d-134">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="21407-134">Java</span><span class="sxs-lookup"><span data-stu-id="21407-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-securityaction-from-security-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="def3d-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="def3d-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="21407-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="21407-135">Response</span></span>
 
-<span data-ttu-id="def3d-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="def3d-136">The following is an example of the response.</span></span>
+<span data-ttu-id="21407-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="21407-136">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="def3d-137">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="def3d-137">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="def3d-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="def3d-138">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="21407-137">Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="21407-137">The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
