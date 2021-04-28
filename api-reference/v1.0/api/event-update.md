@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c9db9213b6245cc3a0c07c0bb590f0543055cb9
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8ff929216fa15859744a686090c522d810d3a8c3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448265"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054030"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -136,7 +136,7 @@ Content-length: 285
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

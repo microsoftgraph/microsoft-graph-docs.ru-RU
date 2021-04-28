@@ -1,23 +1,23 @@
 ---
-title: Создание Воркфорцеинтегратион
-description: Создание нового объекта Воркфорцеинтегратион.
+title: Создание рабочей силыИнтеграция
+description: Создание нового объекта workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3ec2f2629e7f64e2f7cf7ae703b88c5eb8fe43bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eee6b620bcd22e571a2b526d4a43e70fe91416a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015561"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055647"
 ---
-# <a name="create-workforceintegration"></a>Создание Воркфорцеинтегратион
+# <a name="create-workforceintegration"></a>Создание рабочей силыИнтеграция
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [воркфорцеинтегратион](../resources/workforceintegration.md) .
-Вы можете настроить, какие сущности вы хотите получать при синхронных уведомлениях об изменениях и настройке сущностей для настройки фильтрации с помощью правил WFM, в том числе запросов на замену.
+Создание нового [объекта workforceIntegration.](../resources/workforceintegration.md)
+Можно настроить, для каких сущностям необходимо получать уведомления о синхронных изменениях Shifts, и настроить фильтрацию по правилам WFM, в том числе запросам на обмен.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,11 +25,11 @@ ms.locfileid: "48015561"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,11 +48,11 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [воркфорцеинтегратион](../resources/workforceintegration.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый объект `201 Created` [workforceIntegration](../resources/workforceintegration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -106,9 +106,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -133,9 +133,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Примеры для вариантов использования объекта Воркфорцеинтегратион для фильтрации по допустимости правил WFM
+## <a name="examples-for-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Примеры использования случаев использования объекта WorkforceIntegration для фильтрации по правилам WFM
 
-### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Вариант использования: создание нового Воркфорцеинтегратион с включенной функцией Свапрекуест для фильтрации допустимости
+### <a name="use-case-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Пример использования. Создание новой рабочей силы с помощью функции SwapRequest, включенной для фильтрации прав
 
 ### <a name="request"></a>Запрос
 
@@ -177,14 +177,14 @@ HTTP/1.1 200 OK
 }
 
 ```
-Чтобы узнать, как обновить существующую воркфорцеинтегратион с Свапрекуест, включенной для фильтрации допустимости, ознакомьтесь со статьей [Update](../api/workforceintegration-update.md).
+Узнайте, как обновить существующую рабочую силу с помощью swapRequest, включенной для фильтрации прав, см. в [статью Обновление](../api/workforceintegration-update.md).
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример извлечения подходящих смен при включении Свапрекуест в Елигибилитифилтеринженабледентитиес
-Конечные точки интеграции "взаимодействие между сменами приложения" и "ресурсы" будут соответствовать существующему шаблону.
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример получения подходящих сдвигов при включении SwapRequest в eligibilityFilteringEnabledEntities
+Взаимодействие между конечными точками интеграции shifts и рабочей силой будет следовать существующему шаблону.
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, сделанного сменам конечной точки интеграции сотрудников для получения подходящих смен для запроса на замену.
+Ниже приводится пример запроса shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -200,7 +200,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа от службы интеграции сотрудников.
+Ниже приводится пример ответа службы интеграции рабочей силы.
 ```
 HTTP/1.1 200 OK
 {

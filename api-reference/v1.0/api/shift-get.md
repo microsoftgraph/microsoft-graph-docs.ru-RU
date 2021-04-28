@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be1d3e31d84db29df2e1fe159ff6ff9962d036ee
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e4754e86ecaae0c39c519362c25ba08a49a5cbfb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954805"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054415"
 ---
 # <a name="get-shift"></a>Получение смены
 
@@ -27,7 +27,7 @@ ms.locfileid: "50954805"
 |:---------------------------------------|:-------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                 |
-| Для приложений                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
+| Приложение                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -90,9 +90,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

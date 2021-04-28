@@ -1,16 +1,16 @@
 ---
 title: 'user: getMemberGroups'
-description: 'Возвращает все группы, в которых состоит пользователь. Это промежуточная проверка, в отличие от считывания '
+description: Возвращает все группы, в которых состоит пользователь. Это промежуточная проверка, в отличие от считывания
 localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8ebbbe1aeca0e20af40b19cf72ef1baa4ce0689d
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: a28a32ce1af781ea2d6eb05e18240067562c179a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870046"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055682"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -102,7 +102,7 @@ Content-length: 33
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

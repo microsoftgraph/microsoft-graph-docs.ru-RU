@@ -1,24 +1,24 @@
 ---
-title: Список присвоенных homeRealmDiscoveryPolicies
-description: Список homeRealmDiscoveryPolicies, которые назначены для основного службы.
+title: Список, присвоенный homeRealmDiscoveryPolicies
+description: Список homeRealmDiscoveryPolicies, которые назначены директору службы.
 localization_priority: Normal
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ff1e9f71145de9dde6ec0c1bccf916e9ae142a70
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 56c7e23c6bca817b5b35a3ec1646c479d20e972d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134563"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054443"
 ---
-# <a name="list-assigned-homerealmdiscoverypolicy"></a>Список присвоенных homeRealmDiscoveryPolicy
+# <a name="list-assigned-homerealmdiscoverypolicy"></a>Список, присвоенный homeRealmDiscoveryPolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Список объектов [homeRealmDiscoveryPolicy,](../resources/homerealmdiscoverypolicy.md) которые назначены [servicePrincipal.](../resources/serviceprincipal.md)
+Список [объектов homeRealmDiscoveryPolicy,](../resources/homerealmdiscoverypolicy.md) которые назначены [службеPrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "50134563"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Приложение                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /servicePrincipals/{id}/homeRealmDiscoveryPolicies
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -89,9 +89,9 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscoveryPo
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

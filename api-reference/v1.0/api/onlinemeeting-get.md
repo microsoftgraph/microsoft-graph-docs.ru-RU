@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02466f23b1ffbb7e91cfffba6c5bf5748cdc1892
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 02871c1769f545af938b24b54c2a4aaea8dffc5a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870018"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054541"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -52,7 +52,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 ```
 
 > [!NOTE]
-> - `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 > - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
 > - \* Этот сценарий поддерживает только маркер приложений и не поддерживает политику доступа к приложениям.
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 
 #### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -189,7 +189,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Пример 2. Извлечение собрания в Интернете с помощью ИД собрания
-Сведения о собраниях можно получить с помощью ИД собрания с помощью маркера пользователя или приложения. ID собрания предоставляется в объекте ответа при создании [onlineMeeting.](../resources/onlinemeeting.md) Этот параметр доступен для поддержки случаев использования, в которых известен ID собрания, например, когда приложение сначала создает онлайн-собрание с помощью API Graph, а затем извлекает сведения о собраниях позже в качестве отдельного действия.
+Сведения о собраниях можно получить с помощью ИД собрания с помощью маркера пользователя или приложения. ID собрания предоставляется в объекте ответа при создании [onlineMeeting.](../resources/onlinemeeting.md) Этот параметр доступен для поддержки использования случаев, когда ID собрания известен, например, когда приложение сначала создает собрание в Интернете с помощью Graph API, а затем извлекает сведения о собраниях позже в качестве отдельного действия.
 
 #### <a name="request"></a>Запрос
 

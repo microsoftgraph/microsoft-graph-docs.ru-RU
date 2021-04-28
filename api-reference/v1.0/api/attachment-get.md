@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2edf48aa0fc92c37f0b86e30aef566ceb687b134
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 69160b9e583cd480c09baebed58b079472b3a65b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516194"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054205"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_v1",
@@ -522,7 +522,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/A
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -561,7 +561,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Фактический текст ответа содержит необработанные байты вложенного файла, которые кратко описаны ниже.
+Ниже приведен пример отклика. Фактический текст отклика содержит необработанные байты вложенного файла, которые здесь сокращены.
 
 <!-- {
   "blockType": "ignored",

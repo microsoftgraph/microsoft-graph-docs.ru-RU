@@ -1,22 +1,22 @@
 ---
-title: Список Тимеоффреасонс
-description: Получение списка Тимеоффреасонс по расписанию.
+title: Список timeOffReasons
+description: Получите список timeOffReasons в расписании.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ca63415b62d74a1fdd837fc377eb407c2bfd41d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 840b41dbdbd5054c1b3512cfbe1084451a3d6a0c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051272"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053876"
 ---
-# <a name="list-timeoffreasons"></a>Список Тимеоффреасонс
+# <a name="list-timeoffreasons"></a>Список timeOffReasons
 
 Пространство имен: microsoft.graph
 
-Получение списка [тимеоффреасонс](../resources/timeoffreason.md) по [расписанию](../resources/schedule.md).
+Получите список [timeOffReasons в](../resources/timeoffreason.md) [расписании.](../resources/schedule.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48051272"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,12 +44,12 @@ GET /teams/{teamId}/schedule/timeOffReasons
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [timeOffReason](../resources/timeoffreason.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -89,9 +89,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffReasons
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8194b23ede8856f0237b179aa4d50a5ce0c1ebc9
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 75c2074f9c6f0278b02ff65446c0b330d5484d2d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920112"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054457"
 ---
 # <a name="searchentity-query"></a>объект поиска: запрос
 
@@ -83,9 +83,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -166,7 +166,7 @@ Content-type: application/json
 - Поиск [сообщений почты](/graph/search-concept-messages)
 - События [календаря поиска](/graph/search-concept-events)
 - Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)
-- Пользовательские [типы поиска (графовые соединители)](/graph/search-concept-custom-types) данных
+- Пользовательские [типы поиска (Graph соединители)](/graph/search-concept-custom-types) данных
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

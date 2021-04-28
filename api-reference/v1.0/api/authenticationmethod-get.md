@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 95ab608e5b1c384e4ddffc2c2e252d473f9aa2af
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 40f5a7ec777e17b1b19c7f33f354c607f53b5480
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469089"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054625"
 ---
 # <a name="get-authenticationmethod"></a>Получить проверку подлинностиMethod
 
@@ -84,9 +84,9 @@ GET https://graph.microsoft.com/v1.0/me/authentication/methods/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

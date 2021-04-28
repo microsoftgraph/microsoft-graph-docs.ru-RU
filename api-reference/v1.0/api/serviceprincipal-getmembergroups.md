@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 654bbfbdcb0b10bd2c6339a4870b403d8ac6db4f
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: a5a6d7037c860d421fc5e45b031da0321699fd18
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869871"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053834"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 
@@ -92,7 +92,7 @@ Content-length: 33
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
->Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

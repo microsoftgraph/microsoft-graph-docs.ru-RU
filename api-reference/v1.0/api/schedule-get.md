@@ -1,27 +1,27 @@
 ---
-title: Получение расписания
-description: Получение свойств и связей объекта **расписания** .
+title: Получить расписание
+description: Извлечение свойств и связей объекта **расписания.**
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4beca2a2336a88d640a7140d59b8a3b0a61a0b84
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: ec152a26d9ed7fe250334c931217726ff88e4e54
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315100"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053897"
 ---
-# <a name="get-schedule"></a>Получение расписания
+# <a name="get-schedule"></a>Получить расписание
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [расписания](../resources/schedule.md) .
+Извлечение свойств и связей объекта [расписания.](../resources/schedule.md)
 
-Процесс создания расписания соответствует [одной рекомендации API для долгосрочных операций, выполняемых на основе ресурсов (РЕЛО)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
-Когда клиенты используют [метод PUT](team-put-schedule.md), если расписание подготовлено, операция обновляет расписание; в противном случае операция запускает процесс подготовки расписания в фоновом режиме.
+Процесс создания расписания соответствует рекомендациям One API для длительных операций на основе ресурсов [(RELO).](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)
+Когда клиенты используют [метод PUT,](team-put-schedule.md)если расписание запланировали, операция обновляет расписание; в противном случае операция запускает процесс подготовки расписания в фоновом режиме.
 
-Во время подготовки расписания клиенты могут использовать метод GET для получения расписания и просмотра `provisionStatus` свойства для текущего состояния подготовки. Если не удалось выполнить подготовку, клиенты могут получить дополнительные сведения из `provisionStatusCode` Свойства.
+При расписании клиенты могут использовать метод GET, чтобы получить расписание и посмотреть свойство для текущего состояния `provisionStatus` подготовка. Если подготовка не удалась, клиенты могут получить дополнительные сведения из `provisionStatusCode` свойства.
 
 Клиенты также могут проверить конфигурацию расписания.
 
@@ -31,9 +31,9 @@ ms.locfileid: "48315100"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                    |
 |:---------------------------------------|:-------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                 |
-| Для приложений                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL                                      |
+| Приложение                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает параметры запросов OData для настройки отклика.
+Этот метод не поддерживает параметры запроса OData для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Schedule](../resources/schedule.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [расписания](../resources/schedule.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -99,9 +99,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

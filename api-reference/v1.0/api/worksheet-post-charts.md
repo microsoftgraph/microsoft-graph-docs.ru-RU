@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4f5715ca356b50be73f85d7100c3a3c9357a8242
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: af852d0f1794906af3f95c55f4e0d7e054753f94
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578313"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055626"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -86,7 +86,7 @@ Content-length: 52
 
 В теле запроса поставляем JSON-представление объекта [WorkbookChart.](../resources/chart.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

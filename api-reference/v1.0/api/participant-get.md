@@ -1,22 +1,22 @@
 ---
 title: Получение участника
-description: Получение свойств и связей объекта **участника** .
+description: Извлечение свойств и связей **объекта-участника.**
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 15a87b6cfdcfe2081e61d36a5972bc8ef9916cb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1d09c3bf78d604905a634245e45216fa94312c7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066589"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054513"
 ---
 # <a name="get-participant"></a>Получение участника
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта **участника** .
+Извлечение свойств и связей **объекта-участника.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,11 +40,11 @@ GET /communications/calls/{id}/participants/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [участника](../resources/participant.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [участника](../resources/participant.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

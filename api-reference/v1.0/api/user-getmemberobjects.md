@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 36aacb2885fb7ac3b913074a759e6ac9381063f1
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 8a140e0cde1497e864b82b54af398c285952b3ae
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870074"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055675"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -87,7 +87,7 @@ Content-length: 33
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aed0c88b667fee7464473c87e3aebaefee7d7999
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: 267da79cf32f55de94b6d23fd87125c415973f03
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771785"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054611"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -38,8 +38,8 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string | Характер данных в тексте объекта (application/json). Обязательный.  |
-| Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
+| Content-Type  | string | Характер данных в тексте объекта (application/json). Обязательный параметр.  |
+| Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

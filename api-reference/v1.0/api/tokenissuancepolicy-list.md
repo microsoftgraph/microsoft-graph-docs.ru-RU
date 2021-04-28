@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8afd4d54c7948d16dd92ad190b75e8c6599deaf7
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 693579c25c7e96ccbdfceecee44791ba23ffeefa
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448986"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054345"
 ---
 # <a name="list-tokenissuancepolicy"></a>List tokenIssuancePolicy
 
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

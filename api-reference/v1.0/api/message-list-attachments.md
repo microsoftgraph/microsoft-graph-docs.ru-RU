@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 783b81652096bb95cf505cface6a5e148c9c137c
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7a8e6c6a3586ecc030f725c96c385376daf2f4a2
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131004"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054562"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_v1",

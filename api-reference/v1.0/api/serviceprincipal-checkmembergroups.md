@@ -1,22 +1,22 @@
 ---
 title: 'servicePrincipal: checkMemberGroups'
-description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых субъект-служба является прямым или транзитивным участником.
+description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых указанный субъект-служба состоит напрямую или транзитивно.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: eef89eadb22b99d2c094f2dabf483edad014e5d2
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 81708212bc108f6902a26b8f3b2ca7c7bdd220d0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870004"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053855"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
 Пространство имен: microsoft.graph
 
-Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых [servicePrincipal](../resources/serviceprincipal.md) является прямым или транзитивным участниом.
+Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых [servicePrincipal](../resources/serviceprincipal.md) состоит напрямую или транзитивно.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -92,7 +92,7 @@ Content-length: 44
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
->Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

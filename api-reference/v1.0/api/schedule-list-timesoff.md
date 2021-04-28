@@ -1,22 +1,22 @@
 ---
-title: Список Тимесофф
-description: Получение списка Тимесофф в этом расписании.
+title: Список timesOff
+description: Получите список timesOff в этом расписании.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ac7eac13ef82da7d962e2a5306b37212870db0c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30188397b31932bdf6f1648b1fd130db233d982a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051265"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053869"
 ---
-# <a name="list-timesoff"></a>Список Тимесофф
+# <a name="list-timesoff"></a>Список timesOff
 
 Пространство имен: microsoft.graph
 
-Получение списка экземпляров [тимеофф](../resources/timeoff.md) по [расписанию](../resources/schedule.md).
+Получите список экземпляров [timeOff](../resources/timeoff.md) в [расписании.](../resources/schedule.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48051265"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ ms.locfileid: "48051265"
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$filter` [параметр запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$filter` [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -46,18 +46,18 @@ GET /teams/{teamId}/schedule/timesOff
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тимеофф](../resources/timeoff.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса, который получает все объекты **тимеофф** с общей версией и черновой версией в диапазоне от 11 марта 2019 г.
+Ниже приводится пример запроса, который получает все объекты **timeOff,** которые имеют общую версию и черновик версии в период с 11 марта по 18 марта 2019 г.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -91,9 +91,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff?$filter=sh
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

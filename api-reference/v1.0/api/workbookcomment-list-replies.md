@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: faa089c24e6e332ad6da285400ffa11be2c6b2cd
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 8760a84189e681f00a2ee7ce20aeced29a8235d1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577662"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054261"
 ---
 # <a name="list-workbookcommentreplies"></a>Список книгCommentReplies
 
@@ -87,9 +87,9 @@ GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/rep
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

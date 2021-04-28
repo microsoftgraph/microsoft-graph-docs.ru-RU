@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 538b9c5448cfe2c7cd6eae1b0d9d78825fdf10ef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f65e2f2b8509e5718146a2b99893e35e1bea6327
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433014"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054212"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -25,7 +25,7 @@ ms.locfileid: "50433014"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 > Примечание. Чтобы перечислить членов скрытого членства в административном подразделении, требуется разрешение Member.Read.Hidden.
 
@@ -57,7 +57,7 @@ GET /directory/administrativeUnits/{id}/members/$ref
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
 ```
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
  
 ```http
 HTTP/1.1 200 OK
@@ -89,7 +89,7 @@ Content-length: 100
 ```
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
  
 ```http
 HTTP/1.1 200 OK

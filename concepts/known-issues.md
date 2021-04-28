@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 07ee284f40264c76ec6156235fab651fff77cfe6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 856100b87a1e776a4983f75f4bd35158f0745cfd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777007"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054254"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -339,6 +339,10 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 В некоторых случаях свойство `tenantId` / `email` / `displayName` для отдельных участников чата может не заполняться в запросах `GET /chats/chat-id/members` или `GET /chats/chat-id/members/membership-id`.
 
 ## <a name="users"></a>Пользователи
+
+### <a name="use-the-dollar--symbol-in-the-userprincipalname"></a>Использование символа доллара ($) в userPrincipalName
+
+Microsoft Graph позволяет **userPrincipalName** начинать с символа доллара (`$`). Однако при запросе пользователей по userPrincipalName URL-адрес запроса `/users/$x@y.com` не выполняется. Это связано с тем, что этот URL-адрес запроса нарушает соглашения об URL-адресах OData, которые ожидают, что только параметры системного запроса будут иметь префикс символа `$`. В качестве обходного решения удалите косую черту (/) после `/users` и заключите **userPrincipalName** в скобки и одинарные кавычкы следующим образом: `/users('$x@y.com')`.
 
 ### <a name="no-instant-access-after-creation"></a>Нет мгновенного доступа после создания
 

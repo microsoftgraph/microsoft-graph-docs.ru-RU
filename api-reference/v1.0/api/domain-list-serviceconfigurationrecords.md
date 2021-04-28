@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 045edf23635e6bd5c692095093e2d33f954d14bd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cb04790296aa1c6e1c934c8d37db28e9d1cd7620
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441972"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054065"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Служба ListConfigurationRecords
 
@@ -29,7 +29,7 @@ ms.locfileid: "50441972"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Domain.ReadWrite.All |
+|Приложение | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationR
 ---
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

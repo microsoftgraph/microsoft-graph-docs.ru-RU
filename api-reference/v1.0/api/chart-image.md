@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c9a3eb3c23e7222a083eb6e34f5e08be44424250
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4f43a2f89a05aebb61ccc7efd60d89b4338b8914
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575702"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054597"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -49,8 +49,8 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|Int32|Нужная высота создаваемого изображения. Необязательное.|
-|width|Int32|Нужная ширина создаваемого изображения. Необязательное.|
+|height|Int32|Нужная высота создаваемого изображения. Необязательно.|
+|width|Int32|Нужная ширина создаваемого изображения. Необязательно.|
 |fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных размеров (если заданы как высота, так и ширина)."  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
@@ -69,7 +69,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true

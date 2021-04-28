@@ -1,24 +1,24 @@
 ---
-title: 'user: getMailTips'
-description: Получите сообщения о том, что один или несколько получателей доступны во вписаемом пользователю.
+title: 'пользователь: getMailTips'
+description: Получите mailTips одного или более получателей в качестве доступных для пользователя, вписав его.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05d1aa7eab7f8572a3d4eb350f47134b8756afe2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fd46d262cf7d190daa4c5f21e1c45ec1472b799f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133709"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055689"
 ---
-# <a name="user-getmailtips"></a>user: getMailTips
+# <a name="user-getmailtips"></a>пользователь: getMailTips
 
 Пространство имен: microsoft.graph
 
-Получите в качестве доступных для пользователя, выписав в качестве адресатов, соответствующие одному или более [получателям.](../resources/user.md)
+Получите mailTips одного или более получателей в качестве [](../resources/user.md)доступных для пользователя, подписав.
 
-Обратите внимание, что, вызовите действие, вы можете запросить определенные типы сообщений, которые будут возвращаться для более чем одного получателя `POST` `getMailTips` за один раз. Запрашиваемая электронная почта возвращается в [коллекции.](../resources/mailtips.md)
+Обратите внимание, что при вызове к действию можно запросить возврат определенных типов mailTips сразу для более чем одного `POST` `getMailTips` получателя. Запрашиваемая mailTips возвращается в [коллекцию mailTips.](../resources/mailtips.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,15 +48,15 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей для получения сообщений.|
-|MailTipsOptions|String|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` , , , , , , , и `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
+|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей для получения MailTips.|
+|MailTipsOptions|String|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` `customMailTip` , , , , , `deliveryRestriction` , , `externalMemberCount` и `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [mailTips](../resources/mailtips.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [mailTips](../resources/mailtips.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере для указанных получателей параметров автоматического ответа и полного состояния почтового ящика получаются сообщения о всех параметрах автоматического ответа.
+В следующем примере получается MailTips для указанных получателей, для любых параметров автоматического ответа и полного состояния почтового ящика.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

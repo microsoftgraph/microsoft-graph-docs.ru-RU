@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce71e45763ed0c1809855b180e38cf49f1bc61f4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b2776e4708c6a5a72ee2f9c612f05f5f093b196f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137230"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054296"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",

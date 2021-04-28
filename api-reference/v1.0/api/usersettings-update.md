@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d2e1cd7107065bb03e7bd9ce89208d218776fd4d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c22bc60ab37d5eb015896dc6832b0a72390d64a8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721336"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054289"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -20,7 +20,7 @@ ms.locfileid: "50721336"
 
 ### <a name="batch-request"></a>Пакетный запрос
 
-Кроме того, можно отказать нескольким пользователям в Delve и отключить их вклад в запрос на контент для всей организации.
+Кроме того, можно отключать несколько пользователей от Delve и отключить их вклад в доступ к контенту для всей организации с помощью пакетного запроса.
 Дополнительные дополнительные информации см. в серии [JSON.](/graph/json-batching)
 
 >**Важно.** Только члены группы [ролей](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) управления организацией могут обновлять несколько пользователей. 
@@ -62,13 +62,13 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логический|Установите для пользователя возможность отключения доступа делегатов к API [Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) и отключения доступа к документам в Office Delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Microsoft 365, например, рекомендуемые сайты в SharePoint Home и представление Discover в OneDrive для бизнеса показывают менее релевантные результаты. Этот параметр отражает состояние управления [в Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Логический|Установите для true отключение доступа делегатов к API [Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) и отключение доступа к документам в Office Delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Microsoft 365 , например, рекомендуемые сайты в SharePoint Home и представление Discover в OneDrive для бизнеса показывают менее релевантные результаты. Этот параметр отражает состояние управления в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 
 ##### <a name="request"></a>Запрос
 
-Вот пример запроса о том, как отключить пользователя из Delve и отключить его вклад в содержимого для всей организации.
+Вот пример запроса о том, как отключать пользователя от Delve и отключить его вклад в содержимого для всей организации.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings
@@ -82,7 +82,7 @@ Content-length: 37
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK
