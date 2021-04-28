@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 863ff034080250fc7ce4cfc5b22344fcd2374fad
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 74840c4ac794262d7e5b7cced90c535e5132aa18
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961298"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061702"
 ---
 # <a name="get-educationassignmentdefaults"></a>Get educationAssignmentDefaults
 Пространство имен: microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "51961298"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
-|Приложение| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+|Приложение*| EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+
+*Разрешения приложения в настоящее время доступны только для частных пользователей предварительного просмотра.
 
 ## <a name="http-request"></a>HTTP-запрос
 
