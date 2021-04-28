@@ -1,0 +1,68 @@
+---
+title: тип ресурса updatableAsset
+description: Представляет актив, который может получать обновления.
+author: Alice-at-Microsoft
+localization_priority: Normal
+ms.prod: w10
+doc_type: resourcePageType
+ms.openlocfilehash: 4bfdd3663c0868d22b262d398e505e0e8cb82835
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067491"
+---
+# <a name="updatableasset-resource-type"></a><span data-ttu-id="50ffa-103">тип ресурса updatableAsset</span><span class="sxs-lookup"><span data-stu-id="50ffa-103">updatableAsset resource type</span></span>
+
+<span data-ttu-id="50ffa-104">Пространство имен: microsoft.graph.windowsUpdates</span><span class="sxs-lookup"><span data-stu-id="50ffa-104">Namespace: microsoft.graph.windowsUpdates</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="50ffa-105">Представляет актив, который может получать обновления.</span><span class="sxs-lookup"><span data-stu-id="50ffa-105">Represents an asset that can receive updates.</span></span>
+
+<span data-ttu-id="50ffa-106">Все updatable assets существуют как один из следующих производных типов: [azureADDevice](../resources/windowsupdates-azureaddevice.md) и [updatableAssetGroup.](../resources/windowsupdates-updatableassetgroup.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-106">All updatable assets exist as one of the following derived types: [azureADDevice](../resources/windowsupdates-azureaddevice.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).</span></span>
+
+<span data-ttu-id="50ffa-107">Базовый тип [azureADDevice](../resources/windowsupdates-azureaddevice.md) и [updatableAssetGroup.](../resources/windowsupdates-updatableassetgroup.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-107">Base type of [azureADDevice](../resources/windowsupdates-azureaddevice.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).</span></span>
+
+<span data-ttu-id="50ffa-108">Это абстрактный тип.</span><span class="sxs-lookup"><span data-stu-id="50ffa-108">This is an abstract type.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="50ffa-109">Методы</span><span class="sxs-lookup"><span data-stu-id="50ffa-109">Methods</span></span>
+|<span data-ttu-id="50ffa-110">Метод</span><span class="sxs-lookup"><span data-stu-id="50ffa-110">Method</span></span>|<span data-ttu-id="50ffa-111">Тип возвращаемых данных</span><span class="sxs-lookup"><span data-stu-id="50ffa-111">Return type</span></span>|<span data-ttu-id="50ffa-112">Описание</span><span class="sxs-lookup"><span data-stu-id="50ffa-112">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="50ffa-113">Список ресурсов updatableAsset</span><span class="sxs-lookup"><span data-stu-id="50ffa-113">List updatableAsset resources</span></span>](../api/windowsupdates-updates-list-updatableassets.md)|<span data-ttu-id="50ffa-114">[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-114">[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection</span></span>|<span data-ttu-id="50ffa-115">Получите список объектов [updatableAsset](../resources/windowsupdates-updatableasset.md) и их свойств.</span><span class="sxs-lookup"><span data-stu-id="50ffa-115">Get a list of the [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.</span></span>|
+|[<span data-ttu-id="50ffa-116">Создание updatableAssetGroup</span><span class="sxs-lookup"><span data-stu-id="50ffa-116">Create updatableAssetGroup</span></span>](../api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md)|[<span data-ttu-id="50ffa-117">microsoft.graph.windowsUpdates.updatableAssetGroup</span><span class="sxs-lookup"><span data-stu-id="50ffa-117">microsoft.graph.windowsUpdates.updatableAssetGroup</span></span>](../resources/windowsupdates-updatableassetgroup.md)|<span data-ttu-id="50ffa-118">Создание нового [объекта updatableAssetGroup.](../resources/windowsupdates-updatableassetgroup.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-118">Create a new [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) object.</span></span>|
+|[<span data-ttu-id="50ffa-119">Get updatableAsset</span><span class="sxs-lookup"><span data-stu-id="50ffa-119">Get updatableAsset</span></span>](../api/windowsupdates-updatableasset-get.md)|[<span data-ttu-id="50ffa-120">microsoft.graph.windowsUpdates.updatableAsset</span><span class="sxs-lookup"><span data-stu-id="50ffa-120">microsoft.graph.windowsUpdates.updatableAsset</span></span>](../resources/windowsupdates-updatableasset.md)|<span data-ttu-id="50ffa-121">Ознакомьтесь с свойствами и отношениями [объекта updatableAsset.](../resources/windowsupdates-updatableasset.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-121">Read the properties and relationships of an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.</span></span>|
+|[<span data-ttu-id="50ffa-122">Удаление updatableAsset</span><span class="sxs-lookup"><span data-stu-id="50ffa-122">Delete updatableAsset</span></span>](../api/windowsupdates-updatableasset-delete.md)|<span data-ttu-id="50ffa-123">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-123">None</span></span>|<span data-ttu-id="50ffa-124">Удаление [объекта updatableAsset.](../resources/windowsupdates-updatableasset.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-124">Delete an [updatableAsset](../resources/windowsupdates-updatableasset.md) object.</span></span>|
+|[<span data-ttu-id="50ffa-125">Регистрация активов в управлении</span><span class="sxs-lookup"><span data-stu-id="50ffa-125">Enroll asset in management</span></span>](../api/windowsupdates-updatableasset-enrollassets.md)|<span data-ttu-id="50ffa-126">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-126">None</span></span>|<span data-ttu-id="50ffa-127">Регистрация [updatableAssets в](../resources/windowsupdates-updatableasset.md) управлении обновлениями службой развертывания.</span><span class="sxs-lookup"><span data-stu-id="50ffa-127">Enroll [updatableAssets](../resources/windowsupdates-updatableasset.md) in update management by the deployment service.</span></span>|
+|[<span data-ttu-id="50ffa-128">Регистрация активов в управлении (по ID)</span><span class="sxs-lookup"><span data-stu-id="50ffa-128">Enroll asset in management (by ID)</span></span>](../api/windowsupdates-updatableasset-enrollassetsbyid.md)|<span data-ttu-id="50ffa-129">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-129">None</span></span>|<span data-ttu-id="50ffa-130">Регистрация [updatableAssets](../resources/windowsupdates-updatableasset.md) того же типа в управлении обновлениями службой развертывания.</span><span class="sxs-lookup"><span data-stu-id="50ffa-130">Enroll [updatableAssets](../resources/windowsupdates-updatableasset.md) of the same type in update management by the deployment service.</span></span>|
+|[<span data-ttu-id="50ffa-131">Unenroll asset from management</span><span class="sxs-lookup"><span data-stu-id="50ffa-131">Unenroll asset from management</span></span>](../api/windowsupdates-updatableasset-unenrollassets.md)|<span data-ttu-id="50ffa-132">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-132">None</span></span>|<span data-ttu-id="50ffa-133">Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) from update management by the deployment service.</span><span class="sxs-lookup"><span data-stu-id="50ffa-133">Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) from update management by the deployment service.</span></span>|
+|[<span data-ttu-id="50ffa-134">Unenroll asset from management (by ID)</span><span class="sxs-lookup"><span data-stu-id="50ffa-134">Unenroll asset from management (by ID)</span></span>](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|<span data-ttu-id="50ffa-135">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-135">None</span></span>|<span data-ttu-id="50ffa-136">Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) того же типа из управления обновлениями службой развертывания.</span><span class="sxs-lookup"><span data-stu-id="50ffa-136">Unenroll [updatableAssets](../resources/windowsupdates-updatableasset.md) of the same type from update management by the deployment service.</span></span>|
+|[<span data-ttu-id="50ffa-137">Добавление участников в группу</span><span class="sxs-lookup"><span data-stu-id="50ffa-137">Add members to group</span></span>](../api/windowsupdates-updatableassetgroup-addmembers.md)|<span data-ttu-id="50ffa-138">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-138">None</span></span>|<span data-ttu-id="50ffa-139">Добавление участников в [updatableAssetGroup.](../resources/windowsupdates-updatableassetgroup.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-139">Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).</span></span>|
+|[<span data-ttu-id="50ffa-140">Добавление участников в группу (по ID)</span><span class="sxs-lookup"><span data-stu-id="50ffa-140">Add members to group (by ID)</span></span>](../api/windowsupdates-updatableassetgroup-addmembersbyid.md)|<span data-ttu-id="50ffa-141">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-141">None</span></span>|<span data-ttu-id="50ffa-142">Добавьте членов одного типа в [updatableAssetGroup.](../resources/windowsupdates-updatableassetgroup.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-142">Add members of the same type to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).</span></span>|
+|[<span data-ttu-id="50ffa-143">Удаление участников из группы</span><span class="sxs-lookup"><span data-stu-id="50ffa-143">Remove members from group</span></span>](../api/windowsupdates-updatableassetgroup-removemembers.md)|<span data-ttu-id="50ffa-144">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-144">None</span></span>|<span data-ttu-id="50ffa-145">Удаление участников [из updatableAssetGroup.](../resources/windowsupdates-updatableassetgroup.md)</span><span class="sxs-lookup"><span data-stu-id="50ffa-145">Remove members from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).</span></span>|
+|[<span data-ttu-id="50ffa-146">Удаление участников из группы (по ID)</span><span class="sxs-lookup"><span data-stu-id="50ffa-146">Remove members from group (by ID)</span></span>](../api/windowsupdates-updatableassetgroup-removemembersbyid.md)|<span data-ttu-id="50ffa-147">Нет</span><span class="sxs-lookup"><span data-stu-id="50ffa-147">None</span></span>|<span data-ttu-id="50ffa-148">Удалите членов одного типа из [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).</span><span class="sxs-lookup"><span data-stu-id="50ffa-148">Remove members of the same type from an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="50ffa-149">Свойства</span><span class="sxs-lookup"><span data-stu-id="50ffa-149">Properties</span></span>
+|<span data-ttu-id="50ffa-150">Свойство</span><span class="sxs-lookup"><span data-stu-id="50ffa-150">Property</span></span>|<span data-ttu-id="50ffa-151">Тип</span><span class="sxs-lookup"><span data-stu-id="50ffa-151">Type</span></span>|<span data-ttu-id="50ffa-152">Описание</span><span class="sxs-lookup"><span data-stu-id="50ffa-152">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="50ffa-153">id</span><span class="sxs-lookup"><span data-stu-id="50ffa-153">id</span></span>|<span data-ttu-id="50ffa-154">String</span><span class="sxs-lookup"><span data-stu-id="50ffa-154">String</span></span>|<span data-ttu-id="50ffa-155">Идентификатор для актива.</span><span class="sxs-lookup"><span data-stu-id="50ffa-155">An identifier for the asset.</span></span> <span data-ttu-id="50ffa-156">Ключ.</span><span class="sxs-lookup"><span data-stu-id="50ffa-156">Key.</span></span> <span data-ttu-id="50ffa-157">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="50ffa-157">Not nullable.</span></span> <span data-ttu-id="50ffa-158">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="50ffa-158">Read-only.</span></span> <span data-ttu-id="50ffa-159">Возвращается по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="50ffa-159">Returned by default.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="50ffa-160">Связи</span><span class="sxs-lookup"><span data-stu-id="50ffa-160">Relationships</span></span>
+<span data-ttu-id="50ffa-161">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="50ffa-161">None.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="50ffa-162">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="50ffa-162">JSON representation</span></span>
+<span data-ttu-id="50ffa-163">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="50ffa-163">The following is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+  "id": "String (identifier)"
+}
+```
+

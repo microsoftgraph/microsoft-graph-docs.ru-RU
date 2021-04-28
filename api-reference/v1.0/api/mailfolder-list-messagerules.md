@@ -5,50 +5,50 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 762f243145b544b8e20114578abb875160793f79
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 10eb40e502a3b1e6ac6c21cebecceab7c6277b62
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131010"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055948"
 ---
-# <a name="list-rules"></a><span data-ttu-id="c37dd-103">Перечисление правил</span><span class="sxs-lookup"><span data-stu-id="c37dd-103">List rules</span></span>
+# <a name="list-rules"></a><span data-ttu-id="e52ff-103">Перечисление правил</span><span class="sxs-lookup"><span data-stu-id="e52ff-103">List rules</span></span>
 
-<span data-ttu-id="c37dd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c37dd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e52ff-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e52ff-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c37dd-105">Получение всех объектов [messageRule](../resources/messagerule.md), определенных для папки "Входящие" пользователя.</span><span class="sxs-lookup"><span data-stu-id="c37dd-105">Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.</span></span>
+<span data-ttu-id="e52ff-105">Получение всех объектов [messageRule](../resources/messagerule.md), определенных для папки "Входящие" пользователя.</span><span class="sxs-lookup"><span data-stu-id="e52ff-105">Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c37dd-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c37dd-106">Permissions</span></span>
-<span data-ttu-id="c37dd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c37dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e52ff-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e52ff-106">Permissions</span></span>
+<span data-ttu-id="e52ff-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e52ff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c37dd-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c37dd-109">Permission type</span></span>      | <span data-ttu-id="c37dd-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c37dd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e52ff-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e52ff-109">Permission type</span></span>      | <span data-ttu-id="e52ff-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e52ff-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c37dd-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c37dd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c37dd-112">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="c37dd-112">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="c37dd-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c37dd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c37dd-114">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="c37dd-114">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="c37dd-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c37dd-115">Application</span></span> | <span data-ttu-id="c37dd-116">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="c37dd-116">MailboxSettings.Read</span></span> |
+|<span data-ttu-id="e52ff-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e52ff-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e52ff-112">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="e52ff-112">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="e52ff-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e52ff-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e52ff-114">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="e52ff-114">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="e52ff-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e52ff-115">Application</span></span> | <span data-ttu-id="e52ff-116">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="e52ff-116">MailboxSettings.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c37dd-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c37dd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e52ff-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e52ff-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/inbox/messageRules
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c37dd-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c37dd-118">Optional query parameters</span></span>
-<span data-ttu-id="c37dd-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c37dd-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="c37dd-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c37dd-120">Request headers</span></span>
-| <span data-ttu-id="c37dd-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c37dd-121">Name</span></span>       | <span data-ttu-id="c37dd-122">Тип</span><span class="sxs-lookup"><span data-stu-id="c37dd-122">Type</span></span> | <span data-ttu-id="c37dd-123">Описание</span><span class="sxs-lookup"><span data-stu-id="c37dd-123">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="e52ff-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e52ff-118">Optional query parameters</span></span>
+<span data-ttu-id="e52ff-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="e52ff-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e52ff-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e52ff-120">Request headers</span></span>
+| <span data-ttu-id="e52ff-121">Имя</span><span class="sxs-lookup"><span data-stu-id="e52ff-121">Name</span></span>       | <span data-ttu-id="e52ff-122">Тип</span><span class="sxs-lookup"><span data-stu-id="e52ff-122">Type</span></span> | <span data-ttu-id="e52ff-123">Описание</span><span class="sxs-lookup"><span data-stu-id="e52ff-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="c37dd-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c37dd-124">Authorization</span></span>  | <span data-ttu-id="c37dd-125">string</span><span class="sxs-lookup"><span data-stu-id="c37dd-125">string</span></span>  | <span data-ttu-id="c37dd-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c37dd-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e52ff-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e52ff-124">Authorization</span></span>  | <span data-ttu-id="e52ff-125">string</span><span class="sxs-lookup"><span data-stu-id="e52ff-125">string</span></span>  | <span data-ttu-id="e52ff-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e52ff-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c37dd-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c37dd-128">Request body</span></span>
-<span data-ttu-id="c37dd-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c37dd-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="c37dd-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="c37dd-130">Response</span></span>
-<span data-ttu-id="c37dd-131">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [messageRule](../resources/messagerule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="c37dd-131">If successful, this method returns a `200 OK` response code and collection of [messageRule](../resources/messagerule.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c37dd-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c37dd-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c37dd-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c37dd-133">Request</span></span>
-<span data-ttu-id="c37dd-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c37dd-134">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e52ff-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e52ff-128">Request body</span></span>
+<span data-ttu-id="e52ff-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e52ff-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="e52ff-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="e52ff-130">Response</span></span>
+<span data-ttu-id="e52ff-131">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [messageRule](../resources/messagerule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="e52ff-131">If successful, this method returns a `200 OK` response code and collection of [messageRule](../resources/messagerule.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e52ff-132">Пример</span><span class="sxs-lookup"><span data-stu-id="e52ff-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e52ff-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="e52ff-133">Request</span></span>
+<span data-ttu-id="e52ff-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e52ff-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c37dd-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="c37dd-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e52ff-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="e52ff-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["inbox"],
@@ -57,26 +57,26 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ```
-# <a name="c"></a>[<span data-ttu-id="c37dd-136">C#</span><span class="sxs-lookup"><span data-stu-id="c37dd-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e52ff-136">C#</span><span class="sxs-lookup"><span data-stu-id="e52ff-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c37dd-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c37dd-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e52ff-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e52ff-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messagerules-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c37dd-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c37dd-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e52ff-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e52ff-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messagerules-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c37dd-139">Java</span><span class="sxs-lookup"><span data-stu-id="c37dd-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e52ff-139">Java</span><span class="sxs-lookup"><span data-stu-id="e52ff-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-messagerules-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c37dd-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="c37dd-140">Response</span></span>
-<span data-ttu-id="c37dd-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c37dd-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e52ff-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="e52ff-140">Response</span></span>
+<span data-ttu-id="e52ff-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e52ff-141">Here is an example of the response.</span></span> <span data-ttu-id="e52ff-142">Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e52ff-142">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

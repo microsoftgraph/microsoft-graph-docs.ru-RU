@@ -1,28 +1,28 @@
 ---
-title: Использование API службы поиска Microsoft для сортировки результатов поиска (Предварительная версия)
-description: Результаты поиска сортируются с помощью API поиска Microsoft.
+title: Используйте API поиска Майкрософт для сортировки результатов поиска (предварительный просмотр)
+description: Вы сортировать результаты поиска с помощью API поиска Майкрософт.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 216da2d183f70545700fe4df48e4e5d7c5f33ff9
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 4f4a2c8925e910520ca3d75d98f86d713105f6ac
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597461"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067189"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a><span data-ttu-id="75108-103">"Использование API поиска Microsoft для сортировки результатов поиска (Предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="75108-103">"Use the Microsoft Search API to sort search results (preview)</span></span>
+# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a><span data-ttu-id="14617-103">Используйте API поиска Майкрософт для сортировки результатов поиска (предварительный просмотр)</span><span class="sxs-lookup"><span data-stu-id="14617-103">Use the Microsoft Search API to sort search results (preview)</span></span>
 
-<span data-ttu-id="75108-104">Для сортировки результатов поиска можно использовать API службы поиска Microsoft в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="75108-104">You can use the Microsoft Search API in Microsoft Graph to sort search results.</span></span> <span data-ttu-id="75108-105">Чтобы отсортировать результаты, укажите свойство **сортпропертиес** в объекте [сеарчрекуест](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) и определите свойство ресурса в **EntityType** , чтобы сортировать соответствия по возрастанию или убыванию.</span><span class="sxs-lookup"><span data-stu-id="75108-105">To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.</span></span>
+<span data-ttu-id="14617-104">Для сортировки результатов поиска можно использовать API поиска Майкрософт Graph Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="14617-104">You can use the Microsoft Search API in Microsoft Graph to sort search results.</span></span> <span data-ttu-id="14617-105">Чтобы сортировать результаты, укажите свойство **sortProperties** в [объекте searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) и определите свойство ресурса **в entityTypes** для сортировки совпадений по восходящему или нисходящему порядку.</span><span class="sxs-lookup"><span data-stu-id="14617-105">To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.</span></span>
 
-<span data-ttu-id="75108-106">Сортировка поддерживается только для элементов SharePoint и OneDrive.</span><span class="sxs-lookup"><span data-stu-id="75108-106">Sorting is supported only for SharePoint and OneDrive items.</span></span>
-<span data-ttu-id="75108-107">Свойство, для которого необходимо выполнить сортировку, должно *быть упорядочено в схеме* поиска.</span><span class="sxs-lookup"><span data-stu-id="75108-107">The property to be sorted on should be *Sortable* in the search schema.</span></span>
+<span data-ttu-id="14617-106">Сортировка поддерживается только для SharePoint и OneDrive элементов.</span><span class="sxs-lookup"><span data-stu-id="14617-106">Sorting is supported only for SharePoint and OneDrive items.</span></span>
+<span data-ttu-id="14617-107">Свойство, на который будет отсортироваться, должно быть *сортируемым* в схеме поиска.</span><span class="sxs-lookup"><span data-stu-id="14617-107">The property to be sorted on should be *Sortable* in the search schema.</span></span>
 
-<span data-ttu-id="75108-108">По умолчанию используется порядок сортировки по возрастанию.</span><span class="sxs-lookup"><span data-stu-id="75108-108">The default sort order is ascending.</span></span> <span data-ttu-id="75108-109">Задайте свойство **Descending** , чтобы изменить его.</span><span class="sxs-lookup"><span data-stu-id="75108-109">Set the **isDescending** property to change it.</span></span>
+<span data-ttu-id="14617-108">По умолчанию порядок сортировки возрастает.</span><span class="sxs-lookup"><span data-stu-id="14617-108">The default sort order is ascending.</span></span> <span data-ttu-id="14617-109">Установите **свойство isDescending, чтобы** изменить его.</span><span class="sxs-lookup"><span data-stu-id="14617-109">Set the **isDescending** property to change it.</span></span>
 
-## <a name="example-1-single-level-sort"></a><span data-ttu-id="75108-110">Пример 1: сортировка на один уровень</span><span class="sxs-lookup"><span data-stu-id="75108-110">Example 1: Single-level sort</span></span>
+## <a name="example-1-single-level-sort"></a><span data-ttu-id="14617-110">Пример 1. Одноуровневый сорт</span><span class="sxs-lookup"><span data-stu-id="14617-110">Example 1: Single-level sort</span></span>
 
-### <a name="request"></a><span data-ttu-id="75108-111">Запрос</span><span class="sxs-lookup"><span data-stu-id="75108-111">Request</span></span>
+### <a name="request"></a><span data-ttu-id="14617-111">Запрос</span><span class="sxs-lookup"><span data-stu-id="14617-111">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -48,7 +48,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="75108-112">Отклик</span><span class="sxs-lookup"><span data-stu-id="75108-112">Response</span></span>
+### <a name="response"></a><span data-ttu-id="14617-112">Отклик</span><span class="sxs-lookup"><span data-stu-id="14617-112">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -145,9 +145,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-multi-level-sort"></a><span data-ttu-id="75108-113">Пример 2: Многоуровневая сортировка</span><span class="sxs-lookup"><span data-stu-id="75108-113">Example 2: Multi-level sort</span></span>
+## <a name="example-2-multi-level-sort"></a><span data-ttu-id="14617-113">Пример 2. Многоуровневый сортировка</span><span class="sxs-lookup"><span data-stu-id="14617-113">Example 2: Multi-level sort</span></span>
 
-### <a name="request"></a><span data-ttu-id="75108-114">Запрос</span><span class="sxs-lookup"><span data-stu-id="75108-114">Request</span></span>
+### <a name="request"></a><span data-ttu-id="14617-114">Запрос</span><span class="sxs-lookup"><span data-stu-id="14617-114">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -179,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="75108-115">Отклик</span><span class="sxs-lookup"><span data-stu-id="75108-115">Response</span></span>
+### <a name="response"></a><span data-ttu-id="14617-115">Отклик</span><span class="sxs-lookup"><span data-stu-id="14617-115">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -314,11 +314,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="75108-116">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="75108-116">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="14617-116">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="14617-116">Known limitations</span></span>
 
-- <span data-ttu-id="75108-117">Сортировка не поддерживается для **сообщений**, **событий** и **екстерналитем**.</span><span class="sxs-lookup"><span data-stu-id="75108-117">Sort is not supported for **message**, **event**, and **externalItem**.</span></span>
-- <span data-ttu-id="75108-118">Не удается указать сортировку по релевантности в **сортпропертиес**.</span><span class="sxs-lookup"><span data-stu-id="75108-118">Sort by relevance cannot be specified in **sortProperties**.</span></span>
+- <span data-ttu-id="14617-117">Сортировка не поддерживается **для сообщений,** **событий** и **externalItem**.</span><span class="sxs-lookup"><span data-stu-id="14617-117">Sort is not supported for **message**, **event**, and **externalItem**.</span></span>
+- <span data-ttu-id="14617-118">Сортировка по релевантности не может быть указана в **sortProperties.**</span><span class="sxs-lookup"><span data-stu-id="14617-118">Sort by relevance cannot be specified in **sortProperties**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="75108-119">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="75108-119">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="14617-119">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="14617-119">Next steps</span></span>
 
-- [<span data-ttu-id="75108-120">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="75108-120">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="14617-120">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="14617-120">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
