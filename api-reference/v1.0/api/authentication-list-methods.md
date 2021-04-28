@@ -5,48 +5,48 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1cca7f87bc5eb6b0c12108b0214ab81db99f0568
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 937fabdba7863e209140019effe7c28458ab65c8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468599"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054632"
 ---
-# <a name="list-methods"></a><span data-ttu-id="9d642-103">Методы List</span><span class="sxs-lookup"><span data-stu-id="9d642-103">List methods</span></span>
+# <a name="list-methods"></a><span data-ttu-id="065d1-103">Методы List</span><span class="sxs-lookup"><span data-stu-id="065d1-103">List methods</span></span>
 
-<span data-ttu-id="9d642-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9d642-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="065d1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="065d1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9d642-105">Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md)</span><span class="sxs-lookup"><span data-stu-id="9d642-105">Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.</span></span>
+<span data-ttu-id="065d1-105">Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md)</span><span class="sxs-lookup"><span data-stu-id="065d1-105">Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.</span></span>
 
-> <span data-ttu-id="9d642-106">**Примечание:** Возвращаются только методы, поддерживаемые в v1.0.</span><span class="sxs-lookup"><span data-stu-id="9d642-106">**Note:** Only methods supported on v1.0 will be returned.</span></span>
+> <span data-ttu-id="065d1-106">**Примечание:** Возвращаются только методы, поддерживаемые в v1.0.</span><span class="sxs-lookup"><span data-stu-id="065d1-106">**Note:** Only methods supported on v1.0 will be returned.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9d642-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9d642-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="065d1-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="065d1-107">Permissions</span></span>
 
-<span data-ttu-id="9d642-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d642-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="065d1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="065d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-acting-on-self"></a><span data-ttu-id="9d642-110">Разрешения, действующие на себя</span><span class="sxs-lookup"><span data-stu-id="9d642-110">Permissions acting on self</span></span>
+### <a name="permissions-acting-on-self"></a><span data-ttu-id="065d1-110">Разрешения, действующие на себя</span><span class="sxs-lookup"><span data-stu-id="065d1-110">Permissions acting on self</span></span>
 
-|<span data-ttu-id="9d642-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9d642-111">Permission type</span></span>      | <span data-ttu-id="9d642-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9d642-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="065d1-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="065d1-111">Permission type</span></span>      | <span data-ttu-id="065d1-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="065d1-112">Permissions (from least to most privileged)</span></span>              |
 |:---------------------------------------|:-------------------------|
-| <span data-ttu-id="9d642-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9d642-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="9d642-114">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d642-114">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span></span> |
-| <span data-ttu-id="9d642-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9d642-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9d642-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9d642-116">Not supported.</span></span> |
-| <span data-ttu-id="9d642-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9d642-117">Application</span></span>                            | <span data-ttu-id="9d642-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9d642-118">Not supported.</span></span> |
+| <span data-ttu-id="065d1-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="065d1-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="065d1-114">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="065d1-114">UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite</span></span> |
+| <span data-ttu-id="065d1-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="065d1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="065d1-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="065d1-116">Not supported.</span></span> |
+| <span data-ttu-id="065d1-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="065d1-117">Application</span></span>                            | <span data-ttu-id="065d1-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="065d1-118">Not supported.</span></span> |
 
-### <a name="permissions-acting-on-other-users"></a><span data-ttu-id="9d642-119">Разрешения, действующие на других пользователей</span><span class="sxs-lookup"><span data-stu-id="9d642-119">Permissions acting on other users</span></span>
+### <a name="permissions-acting-on-other-users"></a><span data-ttu-id="065d1-119">Разрешения, действующие на других пользователей</span><span class="sxs-lookup"><span data-stu-id="065d1-119">Permissions acting on other users</span></span>
 
-|<span data-ttu-id="9d642-120">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9d642-120">Permission type</span></span>      | <span data-ttu-id="9d642-121">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9d642-121">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="065d1-120">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="065d1-120">Permission type</span></span>      | <span data-ttu-id="065d1-121">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="065d1-121">Permissions (from least to most privileged)</span></span>              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="9d642-122">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9d642-122">Delegated (work or school account)</span></span>     | <span data-ttu-id="9d642-123">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d642-123">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="9d642-124">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9d642-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9d642-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9d642-125">Not supported.</span></span> |
-| <span data-ttu-id="9d642-126">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9d642-126">Application</span></span>                            | <span data-ttu-id="9d642-127">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d642-127">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="065d1-122">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="065d1-122">Delegated (work or school account)</span></span>     | <span data-ttu-id="065d1-123">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="065d1-123">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="065d1-124">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="065d1-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="065d1-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="065d1-125">Not supported.</span></span> |
+| <span data-ttu-id="065d1-126">Для приложений</span><span class="sxs-lookup"><span data-stu-id="065d1-126">Application</span></span>                            | <span data-ttu-id="065d1-127">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="065d1-127">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
 
-<span data-ttu-id="9d642-128">Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="9d642-128">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
-* <span data-ttu-id="9d642-129">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="9d642-129">Global admin</span></span>
-* <span data-ttu-id="9d642-130">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="9d642-130">Global reader</span></span>
-* <span data-ttu-id="9d642-131">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="9d642-131">Privileged authentication admin</span></span>
-* <span data-ttu-id="9d642-132">Администратор проверки подлинности (видит только номера телефонов в масках)</span><span class="sxs-lookup"><span data-stu-id="9d642-132">Authentication admin (only sees masked phone numbers)</span></span>
+<span data-ttu-id="065d1-128">Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)</span><span class="sxs-lookup"><span data-stu-id="065d1-128">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+* <span data-ttu-id="065d1-129">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="065d1-129">Global admin</span></span>
+* <span data-ttu-id="065d1-130">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="065d1-130">Global reader</span></span>
+* <span data-ttu-id="065d1-131">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="065d1-131">Privileged authentication admin</span></span>
+* <span data-ttu-id="065d1-132">Администратор проверки подлинности (видит только номера телефонов в масках)</span><span class="sxs-lookup"><span data-stu-id="065d1-132">Authentication admin (only sees masked phone numbers)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="9d642-133">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9d642-133">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="065d1-133">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="065d1-133">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -55,40 +55,40 @@ GET /me/authentication/methods
 GET /users/{id | userPrincipalName}/authentication/methods
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9d642-134">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9d642-134">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="065d1-134">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="065d1-134">Optional query parameters</span></span>
 
-<span data-ttu-id="9d642-135">Этот метод не поддерживает необязательные параметры запроса для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9d642-135">This method does not support optional query parameters to customize the response.</span></span>
+<span data-ttu-id="065d1-135">Этот метод не поддерживает необязательные параметры запроса для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="065d1-135">This method does not support optional query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9d642-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9d642-136">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="065d1-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="065d1-136">Request headers</span></span>
 
-| <span data-ttu-id="9d642-137">Имя</span><span class="sxs-lookup"><span data-stu-id="9d642-137">Name</span></span>      |<span data-ttu-id="9d642-138">Описание</span><span class="sxs-lookup"><span data-stu-id="9d642-138">Description</span></span>|
+| <span data-ttu-id="065d1-137">Имя</span><span class="sxs-lookup"><span data-stu-id="065d1-137">Name</span></span>      |<span data-ttu-id="065d1-138">Описание</span><span class="sxs-lookup"><span data-stu-id="065d1-138">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9d642-139">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9d642-139">Authorization</span></span> | <span data-ttu-id="9d642-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9d642-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="065d1-139">Авторизация</span><span class="sxs-lookup"><span data-stu-id="065d1-139">Authorization</span></span> | <span data-ttu-id="065d1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="065d1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9d642-142">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9d642-142">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="065d1-142">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="065d1-142">Request body</span></span>
 
-<span data-ttu-id="9d642-143">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9d642-143">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="065d1-143">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="065d1-143">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9d642-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="9d642-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="065d1-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="065d1-144">Response</span></span>
 
-<span data-ttu-id="9d642-145">В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="9d642-145">If successful, this method returns a `200 OK` response code and a collection of [authenticationMethod](../resources/authenticationmethod.md) objects in the response body.</span></span>
+<span data-ttu-id="065d1-145">В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="065d1-145">If successful, this method returns a `200 OK` response code and a collection of [authenticationMethod](../resources/authenticationmethod.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9d642-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="9d642-146">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="065d1-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="065d1-146">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="9d642-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="9d642-147">Request</span></span>
+### <a name="request"></a><span data-ttu-id="065d1-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="065d1-147">Request</span></span>
 
-<span data-ttu-id="9d642-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9d642-148">The following is an example of the request.</span></span>
+<span data-ttu-id="065d1-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="065d1-148">The following is an example of the request.</span></span>
 
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/authentication/methods
 ```
 
-### <a name="response"></a><span data-ttu-id="9d642-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="9d642-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="065d1-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="065d1-149">Response</span></span>
 
-<span data-ttu-id="9d642-150">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9d642-150">The following is an example of the response.</span></span>
+<span data-ttu-id="065d1-150">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="065d1-150">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="9d642-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9d642-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="065d1-151">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="065d1-151">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

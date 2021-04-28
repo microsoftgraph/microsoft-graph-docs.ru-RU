@@ -5,37 +5,37 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2579bac8f3e9b9a3cd951ea5c533541edacb1308
-ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
+ms.openlocfilehash: eb36b9b79f6058644da8529ba353a613e97726b7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50059653"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52054002"
 ---
-# <a name="get-place"></a><span data-ttu-id="5b350-103">Получить место</span><span class="sxs-lookup"><span data-stu-id="5b350-103">Get place</span></span>
+# <a name="get-place"></a><span data-ttu-id="3457c-103">Получить место</span><span class="sxs-lookup"><span data-stu-id="3457c-103">Get place</span></span>
 
-<span data-ttu-id="5b350-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b350-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3457c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3457c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="5b350-105">Получите свойства и связи объекта [place,](../resources/place.md) указанного по его ИД или адресу электронной почты.</span><span class="sxs-lookup"><span data-stu-id="5b350-105">Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address.</span></span>
+<span data-ttu-id="3457c-105">Получите свойства и связи [объекта-места,](../resources/place.md) указанные его ID или адресом электронной почты.</span><span class="sxs-lookup"><span data-stu-id="3457c-105">Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address.</span></span>
 
-<span data-ttu-id="5b350-106">Объект **Place** может быть одним из следующих типов:</span><span class="sxs-lookup"><span data-stu-id="5b350-106">The **place** object can be one of the following types:</span></span>
+<span data-ttu-id="3457c-106">Объект **place** может быть одним из следующих типов:</span><span class="sxs-lookup"><span data-stu-id="3457c-106">The **place** object can be one of the following types:</span></span>
 
-* <span data-ttu-id="5b350-107">[Комната,](../resources/room.md) которая содержит богатые свойства, такие как адрес электронной почты для комнаты, а также доступность, емкость и поддержка устройств.</span><span class="sxs-lookup"><span data-stu-id="5b350-107">A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.</span></span>
-* <span data-ttu-id="5b350-108">Список [помещений,](../resources/roomlist.md) который включает адрес электронной почты для списка помещений и свойство навигации для получения коллекции экземпляров помещений в этом списке помещений. </span><span class="sxs-lookup"><span data-stu-id="5b350-108">A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.</span></span>
+* <span data-ttu-id="3457c-107">Комната [с](../resources/room.md) богатыми свойствами, такими как адрес электронной почты для комнаты, доступностью, емкостью и поддержкой устройств.</span><span class="sxs-lookup"><span data-stu-id="3457c-107">A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.</span></span>
+* <span data-ttu-id="3457c-108">Список [номеров,](../resources/roomlist.md) который включает адрес электронной почты для списка номеров, и свойство навигации для получения коллекции экземпляров комнат в этом списке комнат. </span><span class="sxs-lookup"><span data-stu-id="3457c-108">A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.</span></span>
 
-<span data-ttu-id="5b350-109">И **room,** и **roomList** являются производными от [объекта place.](../resources/place.md)</span><span class="sxs-lookup"><span data-stu-id="5b350-109">Both **room** and **roomList** are derived from the [place](../resources/place.md) object.</span></span>
+<span data-ttu-id="3457c-109">Как **комнаты,** так **и roomList** являются производными от [объекта place.](../resources/place.md)</span><span class="sxs-lookup"><span data-stu-id="3457c-109">Both **room** and **roomList** are derived from the [place](../resources/place.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5b350-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5b350-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3457c-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3457c-110">Permissions</span></span>
 
-<span data-ttu-id="5b350-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b350-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3457c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3457c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5b350-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5b350-113">Permission type</span></span>                        | <span data-ttu-id="5b350-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5b350-114">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3457c-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3457c-113">Permission type</span></span>                        | <span data-ttu-id="3457c-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3457c-114">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5b350-115">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5b350-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="5b350-116">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="5b350-116">Place.Read.All</span></span> |
-| <span data-ttu-id="5b350-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5b350-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b350-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="5b350-118">Not supported</span></span> |
-| <span data-ttu-id="5b350-119">Приложение</span><span class="sxs-lookup"><span data-stu-id="5b350-119">Application</span></span>                            | <span data-ttu-id="5b350-120">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="5b350-120">Place.Read.All</span></span> |
+| <span data-ttu-id="3457c-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3457c-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="3457c-116">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="3457c-116">Place.Read.All</span></span> |
+| <span data-ttu-id="3457c-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3457c-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3457c-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="3457c-118">Not supported</span></span> |
+| <span data-ttu-id="3457c-119">Приложение</span><span class="sxs-lookup"><span data-stu-id="3457c-119">Application</span></span>                            | <span data-ttu-id="3457c-120">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="3457c-120">Place.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5b350-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5b350-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3457c-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3457c-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,34 +43,34 @@ ms.locfileid: "50059653"
 GET /places/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5b350-122">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5b350-122">Optional query parameters</span></span>
-<span data-ttu-id="5b350-123">Используется `$select` для получения свойств **определенного** места.</span><span class="sxs-lookup"><span data-stu-id="5b350-123">Use `$select` to get specific **place** properties.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3457c-122">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3457c-122">Optional query parameters</span></span>
+<span data-ttu-id="3457c-123">Используйте `$select` для получения **определенных свойств** места.</span><span class="sxs-lookup"><span data-stu-id="3457c-123">Use `$select` to get specific **place** properties.</span></span>
 
-<span data-ttu-id="5b350-124">Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="5b350-124">For more information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="3457c-124">Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="3457c-124">For more information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5b350-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5b350-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3457c-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3457c-125">Request headers</span></span>
 
-| <span data-ttu-id="5b350-126">Имя</span><span class="sxs-lookup"><span data-stu-id="5b350-126">Name</span></span>          | <span data-ttu-id="5b350-127">Описание</span><span class="sxs-lookup"><span data-stu-id="5b350-127">Description</span></span>               |
+| <span data-ttu-id="3457c-126">Имя</span><span class="sxs-lookup"><span data-stu-id="3457c-126">Name</span></span>          | <span data-ttu-id="3457c-127">Описание</span><span class="sxs-lookup"><span data-stu-id="3457c-127">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="5b350-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5b350-128">Authorization</span></span> | <span data-ttu-id="5b350-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b350-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3457c-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3457c-128">Authorization</span></span> | <span data-ttu-id="3457c-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3457c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5b350-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5b350-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3457c-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3457c-131">Request body</span></span>
 
-<span data-ttu-id="5b350-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5b350-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3457c-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3457c-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5b350-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b350-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3457c-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="3457c-133">Response</span></span>
 
-<span data-ttu-id="5b350-134">В случае успеха этот метод возвращает код отклика и объект `200 OK` запрашиваемого места в тексте отклика. [](../resources/place.md)</span><span class="sxs-lookup"><span data-stu-id="5b350-134">If successful, this method returns a `200 OK` response code and the requested [place](../resources/place.md) object in the response body.</span></span>
+<span data-ttu-id="3457c-134">В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [места](../resources/place.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="3457c-134">If successful, this method returns a `200 OK` response code and the requested [place](../resources/place.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5b350-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="5b350-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3457c-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="3457c-135">Examples</span></span>
 
-### <a name="example-1-get-a-room"></a><span data-ttu-id="5b350-136">Пример 1. Получить комнату</span><span class="sxs-lookup"><span data-stu-id="5b350-136">Example 1: Get a room</span></span>
-#### <a name="request"></a><span data-ttu-id="5b350-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b350-137">Request</span></span>
+### <a name="example-1-get-a-room"></a><span data-ttu-id="3457c-136">Пример 1. Получить комнату</span><span class="sxs-lookup"><span data-stu-id="3457c-136">Example 1: Get a room</span></span>
+#### <a name="request"></a><span data-ttu-id="3457c-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="3457c-137">Request</span></span>
 
-<span data-ttu-id="5b350-138">В следующем примере **указывается ид** комнаты **для** получения ее свойств.</span><span class="sxs-lookup"><span data-stu-id="5b350-138">The following example specifies the **id** of a **room** to get its properties.</span></span>
+<span data-ttu-id="3457c-138">В следующем примере **указывается id** **комнаты для** получения ее свойств.</span><span class="sxs-lookup"><span data-stu-id="3457c-138">The following example specifies the **id** of a **room** to get its properties.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="5b350-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b350-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3457c-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="3457c-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_room"
@@ -79,30 +79,30 @@ GET /places/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
-# <a name="c"></a>[<span data-ttu-id="5b350-140">C#</span><span class="sxs-lookup"><span data-stu-id="5b350-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3457c-140">C#</span><span class="sxs-lookup"><span data-stu-id="3457c-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5b350-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b350-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3457c-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3457c-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5b350-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b350-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3457c-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3457c-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-room-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5b350-143">Java</span><span class="sxs-lookup"><span data-stu-id="5b350-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3457c-143">Java</span><span class="sxs-lookup"><span data-stu-id="3457c-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="5b350-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b350-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3457c-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="3457c-144">Response</span></span>
 
-<span data-ttu-id="5b350-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5b350-145">The following is an example of the response.</span></span>
+<span data-ttu-id="3457c-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3457c-145">The following is an example of the response.</span></span>
 
-><span data-ttu-id="5b350-146">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5b350-146">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5b350-147">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5b350-147">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="3457c-146">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="3457c-146">**Note**: The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -150,13 +150,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-room-list"></a><span data-ttu-id="5b350-148">Пример 2. Получить список помещений</span><span class="sxs-lookup"><span data-stu-id="5b350-148">Example 2: Get a room list</span></span>
-#### <a name="request"></a><span data-ttu-id="5b350-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b350-149">Request</span></span>
+### <a name="example-2-get-a-room-list"></a><span data-ttu-id="3457c-147">Пример 2. Получить список номеров</span><span class="sxs-lookup"><span data-stu-id="3457c-147">Example 2: Get a room list</span></span>
+#### <a name="request"></a><span data-ttu-id="3457c-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="3457c-148">Request</span></span>
 
-<span data-ttu-id="5b350-150">В следующем примере **указывается адрес emailAddress** объекта **roomList для** получения его свойств.</span><span class="sxs-lookup"><span data-stu-id="5b350-150">The following example specifies the **emailAddress** of a **roomList** to get its properties.</span></span>
+<span data-ttu-id="3457c-149">В следующем примере **указывается emailAddress** **списка roomList** для получения его свойств.</span><span class="sxs-lookup"><span data-stu-id="3457c-149">The following example specifies the **emailAddress** of a **roomList** to get its properties.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="5b350-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b350-151">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3457c-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="3457c-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roomlist"
@@ -165,19 +165,19 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 ```
-# <a name="c"></a>[<span data-ttu-id="5b350-152">C#</span><span class="sxs-lookup"><span data-stu-id="5b350-152">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3457c-151">C#</span><span class="sxs-lookup"><span data-stu-id="3457c-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5b350-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b350-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3457c-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3457c-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5b350-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b350-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3457c-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3457c-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5b350-155">Java</span><span class="sxs-lookup"><span data-stu-id="5b350-155">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3457c-154">Java</span><span class="sxs-lookup"><span data-stu-id="3457c-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -185,11 +185,11 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 
 
 
-#### <a name="response"></a><span data-ttu-id="5b350-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b350-156">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3457c-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="3457c-155">Response</span></span>
 
-<span data-ttu-id="5b350-157">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5b350-157">The following is an example of the response.</span></span>
+<span data-ttu-id="3457c-156">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3457c-156">The following is an example of the response.</span></span>
 
-><span data-ttu-id="5b350-158">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5b350-158">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5b350-159">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5b350-159">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="3457c-157">**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="3457c-157">**Note**: The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
