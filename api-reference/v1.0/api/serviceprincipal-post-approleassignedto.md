@@ -5,67 +5,67 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: f2aeb0c6abaad90b7da38285437da2f95d123ef3
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 3a0e1eedc97489198c7f34b5b4e3db13ebbd71cd
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468655"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050320"
 ---
-# <a name="grant-an-approleassignment-for-a-service-principal"></a><span data-ttu-id="c152c-103">Предоставление appRoleAssignment субъекту-службе</span><span class="sxs-lookup"><span data-stu-id="c152c-103">Grant an appRoleAssignment for a service principal</span></span>
+# <a name="grant-an-approleassignment-for-a-service-principal"></a><span data-ttu-id="ea1be-103">Предоставление appRoleAssignment субъекту-службе</span><span class="sxs-lookup"><span data-stu-id="ea1be-103">Grant an appRoleAssignment for a service principal</span></span>
 
-<span data-ttu-id="c152c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c152c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ea1be-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ea1be-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c152c-105">Назначение роли приложения для этого субъекта-службы пользователю, группе или субъекту-службе клиента.</span><span class="sxs-lookup"><span data-stu-id="c152c-105">Assign an app role for a resource service principal, to a user, group, or client service principal.</span></span>
+<span data-ttu-id="ea1be-105">Назначение роли приложения для этого субъекта-службы пользователю, группе или субъекту-службе клиента.</span><span class="sxs-lookup"><span data-stu-id="ea1be-105">Assign an app role for a resource service principal, to a user, group, or client service principal.</span></span>
 
-<span data-ttu-id="c152c-106">Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span><span class="sxs-lookup"><span data-stu-id="c152c-106">App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span></span> <span data-ttu-id="c152c-107">Разрешения приложений можно предоставлять непосредственно в назначениях ролей приложений, а также с помощью [интерфейса согласия](/azure/active-directory/develop/application-consent-experience).</span><span class="sxs-lookup"><span data-stu-id="c152c-107">Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).</span></span>
+<span data-ttu-id="ea1be-106">Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span><span class="sxs-lookup"><span data-stu-id="ea1be-106">App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span></span> <span data-ttu-id="ea1be-107">Разрешения приложений можно предоставлять непосредственно в назначениях ролей приложений, а также с помощью [интерфейса согласия](/azure/active-directory/develop/application-consent-experience).</span><span class="sxs-lookup"><span data-stu-id="ea1be-107">Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).</span></span>
 
-<span data-ttu-id="c152c-108">Чтобы предоставить назначение роли приложения, нужны три идентификатора:</span><span class="sxs-lookup"><span data-stu-id="c152c-108">To grant an app role assignment, you need three identifiers:</span></span>
+<span data-ttu-id="ea1be-108">Чтобы предоставить назначение роли приложения, нужны три идентификатора:</span><span class="sxs-lookup"><span data-stu-id="ea1be-108">To grant an app role assignment, you need three identifiers:</span></span>
 
-- <span data-ttu-id="c152c-109">`principalId`: `id` **пользователя**, **группы** или объекта **servicePrincipal** клиента, которому назначается роль приложения.</span><span class="sxs-lookup"><span data-stu-id="c152c-109">`principalId`: The `id` of the **user**, **group** or client **servicePrincipal** to which you are assigning the app role.</span></span>
-- <span data-ttu-id="c152c-110">`resourceId`: `id` ресурса **servicePrincipal**, определяющий роль приложения.</span><span class="sxs-lookup"><span data-stu-id="c152c-110">`resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.</span></span>
-- <span data-ttu-id="c152c-111">`appRoleId`: `id` объекта **appRole** (определенного в субъекте-службе ресурса) для назначения пользователю, группе или субъекту-службе.</span><span class="sxs-lookup"><span data-stu-id="c152c-111">`appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.</span></span>
+- <span data-ttu-id="ea1be-109">`principalId`: `id` **пользователя**, **группы** или объекта **servicePrincipal** клиента, которому назначается роль приложения.</span><span class="sxs-lookup"><span data-stu-id="ea1be-109">`principalId`: The `id` of the **user**, **group** or client **servicePrincipal** to which you are assigning the app role.</span></span>
+- <span data-ttu-id="ea1be-110">`resourceId`: `id` ресурса **servicePrincipal**, определяющий роль приложения.</span><span class="sxs-lookup"><span data-stu-id="ea1be-110">`resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.</span></span>
+- <span data-ttu-id="ea1be-111">`appRoleId`: `id` объекта **appRole** (определенного в субъекте-службе ресурса) для назначения пользователю, группе или субъекту-службе.</span><span class="sxs-lookup"><span data-stu-id="ea1be-111">`appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c152c-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c152c-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ea1be-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ea1be-112">Permissions</span></span>
 
-<span data-ttu-id="c152c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c152c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ea1be-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea1be-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c152c-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c152c-115">Permission type</span></span>      | <span data-ttu-id="c152c-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c152c-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ea1be-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ea1be-115">Permission type</span></span>      | <span data-ttu-id="ea1be-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ea1be-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c152c-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c152c-117">Delegated (work or school account)</span></span> | <span data-ttu-id="c152c-118">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c152c-118">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c152c-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c152c-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c152c-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c152c-120">Not supported.</span></span>    |
-|<span data-ttu-id="c152c-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c152c-121">Application</span></span> | <span data-ttu-id="c152c-122">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c152c-122">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="ea1be-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ea1be-117">Delegated (work or school account)</span></span> | <span data-ttu-id="ea1be-118">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ea1be-118">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ea1be-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ea1be-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea1be-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ea1be-120">Not supported.</span></span>    |
+|<span data-ttu-id="ea1be-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ea1be-121">Application</span></span> | <span data-ttu-id="ea1be-122">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea1be-122">AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c152c-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c152c-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ea1be-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ea1be-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/appRoleAssignedTo
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c152c-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c152c-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ea1be-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ea1be-124">Request headers</span></span>
 
-| <span data-ttu-id="c152c-125">Имя</span><span class="sxs-lookup"><span data-stu-id="c152c-125">Name</span></span>       | <span data-ttu-id="c152c-126">Описание</span><span class="sxs-lookup"><span data-stu-id="c152c-126">Description</span></span>|
+| <span data-ttu-id="ea1be-125">Имя</span><span class="sxs-lookup"><span data-stu-id="ea1be-125">Name</span></span>       | <span data-ttu-id="ea1be-126">Описание</span><span class="sxs-lookup"><span data-stu-id="ea1be-126">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="c152c-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c152c-127">Authorization</span></span> | <span data-ttu-id="c152c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c152c-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="c152c-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c152c-130">Content-type</span></span> | <span data-ttu-id="c152c-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c152c-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="ea1be-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ea1be-127">Authorization</span></span> | <span data-ttu-id="ea1be-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ea1be-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ea1be-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ea1be-130">Content-type</span></span> | <span data-ttu-id="ea1be-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ea1be-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c152c-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c152c-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ea1be-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ea1be-133">Request body</span></span>
 
-<span data-ttu-id="c152c-134">В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="c152c-134">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
+<span data-ttu-id="ea1be-134">В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="ea1be-134">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c152c-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c152c-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ea1be-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea1be-135">Response</span></span>
 
-<span data-ttu-id="c152c-136">В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="c152c-136">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="ea1be-136">В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="ea1be-136">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c152c-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="c152c-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ea1be-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="ea1be-137">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c152c-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="c152c-138">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ea1be-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="ea1be-138">Request</span></span>
 
-<span data-ttu-id="c152c-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c152c-139">Here is an example of the request.</span></span>
+<span data-ttu-id="ea1be-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ea1be-139">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c152c-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="c152c-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ea1be-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea1be-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_create_approleassignedto"
@@ -81,32 +81,32 @@ Content-Type: application/json
   "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c152c-141">C#</span><span class="sxs-lookup"><span data-stu-id="c152c-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ea1be-141">C#</span><span class="sxs-lookup"><span data-stu-id="ea1be-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-create-approleassignedto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c152c-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c152c-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ea1be-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea1be-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-approleassignedto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c152c-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c152c-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ea1be-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea1be-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignedto-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c152c-144">Java</span><span class="sxs-lookup"><span data-stu-id="c152c-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ea1be-144">Java</span><span class="sxs-lookup"><span data-stu-id="ea1be-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="c152c-145">В этом примере `{id}` и `{resourceId-value}` оба будут `id` субъекта-службы ресурса, а `{principalId}` будет `id` назначенного пользователя, группы или субъекта-службы клиента.</span><span class="sxs-lookup"><span data-stu-id="c152c-145">In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group, or client service principal.</span></span>
+<span data-ttu-id="ea1be-145">В этом примере `{id}` и `{resourceId-value}` оба будут `id` субъекта-службы ресурса, а `{principalId}` будет `id` назначенного пользователя, группы или субъекта-службы клиента.</span><span class="sxs-lookup"><span data-stu-id="ea1be-145">In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group, or client service principal.</span></span>
 
-### <a name="response"></a><span data-ttu-id="c152c-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="c152c-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ea1be-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea1be-146">Response</span></span>
 
-<span data-ttu-id="c152c-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c152c-147">Here is an example of the response.</span></span> 
+<span data-ttu-id="ea1be-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ea1be-147">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="c152c-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c152c-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ea1be-148">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ea1be-148">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
