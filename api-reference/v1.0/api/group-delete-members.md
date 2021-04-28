@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ea9454be485d17eb6e2b8f6ed5f615cdaabfb856
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 61bec64eaec92f277274f365092731de122a20f0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417872"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035409"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -77,8 +77,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-obj
 В запросе укажите идентификатор группы и идентификатор объекта каталога, который вы хотите удалить.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 604a05ab01312707b52274c6276ce044349f0d43
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 9261db7230c1655398f61f5f37d9f6792f79d066
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473194"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051363"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -77,7 +77,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. В нижней части страницы см. пример не усеченного ответа.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В нижней части страницы см. пример не усеченного ответа.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

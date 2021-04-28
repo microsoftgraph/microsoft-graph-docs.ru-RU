@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 14ad018efa1aee22a8f6557fdab34b7d2fc6decf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e0e6dff51e16f0582e2bbbde058f8e78f35d5c1
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009774"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051461"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -46,7 +46,7 @@ PATCH /education/classes/{id}
 |description|String| Описание курса.|
 |displayName|String| Название курса.|
 |mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
-|classCode|String| Код класса, используемый учебным заведением.|
+|classCode|String| Код класса, используемый школой.|
 |externalId|String| Идентификатор курса из системы синхронизации. |
 |externalName|String|Название курса в системе синхронизации.|
 |externalSource|string| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `enum_sentinel`.|
@@ -91,9 +91,9 @@ Content-length: 224
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

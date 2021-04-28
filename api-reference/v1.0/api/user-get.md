@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 26fad30039c4e80b99b19a5e80ef17a579f9e25d
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0f9ff0216ed09a71dd8b841ad0f87bdfc1333e02
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722141"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049403"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -37,6 +37,7 @@ ms.locfileid: "50722141"
 ```http
 GET /users/{id | userPrincipalName}
 ```
+Обратите внимание, что если **userPrincipalName** начинается с символа `$`, нужно удалить косую черту (/) после `/users` и заключить **userPrincipalName** в скобки и одиночные кавычки. Дополнительные сведения см. в списке [известных проблем](/graph/known-issues#users).
 
 Для вошедшего пользователя:
 <!-- { "blockType": "ignored" } -->

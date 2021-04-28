@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d24301e50c66360e290b67a77c9e0fb7a7b7fa95
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fe442b506122ee08897c806054f51c67fe10f105
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442609"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050670"
 ---
 # <a name="list-activitybasedtimeoutpolicies"></a>Список действийBasedTimeoutPolicies
 
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8dc0e3297f6bc1142fdf5dc8e66c9d38315705bf
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 805903a3a8b04b5f83428edea379d32a4a0fde7a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459225"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048787"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,24 +1,24 @@
 ---
-title: Замена Тимеоффреасон
-description: Замена существующего Тимеоффреасон.
+title: Замените timeOffReason
+description: Замените существующее времяOffReason.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab5f273ab260afb454882b2293463556c6a5249c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee87ff78baa7ae9b1fd5cf4428b99a167c960fc5
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970980"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050236"
 ---
-# <a name="replace-timeoffreason"></a>Замена Тимеоффреасон
+# <a name="replace-timeoffreason"></a>Замените timeOffReason
 
 Пространство имен: microsoft.graph
 
-Замена существующего [тимеоффреасон](../resources/timeoffreason.md).
+Замените [существующее времяOffReason](../resources/timeoffreason.md).
 
-Если указанный [тимеоффреасон](../resources/timeoffreason.md) не существует, этот метод возвращает значение `404 Not found` .
+Если указанного [времениOffReason](../resources/timeoffreason.md) не существует, этот метод `404 Not found` возвращается.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,11 +26,11 @@ ms.locfileid: "47970980"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [тимеоффреасон](../resources/timeoffreason.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [TimeOffReason.](../resources/timeoffreason.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект timeOffReason](../resources/timeoffreason.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -101,9 +101,9 @@ Prefer: return=representation
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

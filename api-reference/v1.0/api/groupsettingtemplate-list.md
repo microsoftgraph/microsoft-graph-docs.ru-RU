@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов groupSettingTemplate
-description: Получение списка доступных объектов Граупсеттингтемплатес.
+description: Извлечение списка доступных объектов groupSettingTemplates.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a74edc3975ac85fabeaf59c1e34b064f35e8f510
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 7aa1819bce00f2f76f1192ab82ee7ab6a84b74ad
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458376"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051412"
 ---
 # <a name="list-groupsettingtemplates"></a>Перечисление объектов groupSettingTemplate
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

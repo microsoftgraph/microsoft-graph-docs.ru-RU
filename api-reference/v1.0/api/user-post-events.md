@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 91aabfaa178f1363a425b21967bf61e1e4457567
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: 8900708ae5d22ef658ec8d5ea9dc6f9c6b798b7c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720562"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038735"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -146,7 +146,7 @@ Content-type: application/json
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -345,7 +345,7 @@ Content-length: 1390
 
 #### <a name="response"></a>Отклик
 В приведенном ниже примере ответа показано созданное событие, в котором указаны сведения о 3 местах проведения собрания. Так как используется заголовок запроса `Prefer: outlook.timezone="Pacific Standard Time"`, свойства **start** и **end** выражены в формате PST.
-Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -552,8 +552,8 @@ Content-type: application/json
 ---
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-#### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -738,7 +738,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 #### <a name="response"></a>Отклик
 Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`.
-Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_with_online_meeting",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: be7793024e9b8eb0f7ca9bec5a57d2b4ec1248db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6295e6d60d35eb434e1e5b1d91dae3fc60eda84f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448550"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050523"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -89,7 +89,7 @@ Content-type: application/json
 
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

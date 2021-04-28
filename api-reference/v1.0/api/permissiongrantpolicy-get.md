@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 47771f8ad5cac3e2abd5191ae6651509c575ef13
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9aeb3259ed414b70391793cafd8453b22d413a94
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441699"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051307"
 ---
 # <a name="get-permissiongrantpolicy"></a>Получить permissionGrantPolicy
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 Ниже приведен пример ответа. Политика имеет два набора условий, один из которых совпадает с делегированным разрешением, классифицированным для клиентских приложений, зарегистрированных в этом клиенте, и другой, который соответствует делегированию разрешений, классифицированных для приложений от проверенных издателей (независимо от того, в каком клиенте зарегистрировано `includes` `low` `low` приложение).
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 1e1f0d250d73c998371f52ad8ab26374dd85b9b6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01bad74bcd27ca68af0a1fbbf3ca6e4d25b07c55
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992848"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048857"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -73,7 +73,7 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
@@ -117,9 +117,9 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 09df2c7b980bff3725c563c1b898f465b4f354f7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3883794642723cc5b7df07ad0c1d1f67fc58aed3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135984"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051195"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -25,7 +25,7 @@ ms.locfileid: "50135984"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

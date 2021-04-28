@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 275410a9b54b0b99d2d5ef5fb68cb43ea46a636c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0a99aee41ac003872a9581bb64a18e1f0cce31db
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433049"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050649"
 ---
 # <a name="get-a-member"></a>Получение члена
 
@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ```
 
 ##### <a name="response"></a>Отклик
-Вот пример передыжки. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Вот пример передыжки. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

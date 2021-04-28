@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f4a885138815cd8b10990ca1cf9125cfe2682955
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: d65c77cbe4aab7f6434c6de488eb18a9978d1117
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720681"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052266"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -108,8 +108,8 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Получение объекта eventMessage
-description: Разверните параметр в свойстве навигации **события** , чтобы получить связанное событие в календаре участника.
+description: расширйте параметр **свойства навигации** событий, чтобы получить связанное событие в календаре участника.
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e570987ec70f90b00d58a93832cb384bf31f8929
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4dc549c39c5113e972485fab647b5c4363b6ca14
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459755"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048745"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 76880630d5faa0e09c4fa1efeb17dcf7c2c64615
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 036af1498e821ca898c12c86d1a3c509504b2aed
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136082"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035353"
 ---
 # <a name="message-move"></a>message: move
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

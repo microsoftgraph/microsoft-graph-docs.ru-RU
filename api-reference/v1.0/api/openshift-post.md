@@ -1,22 +1,22 @@
 ---
-title: Создание Опеншифт
-description: Создайте экземпляр объекта Опеншифт.
+title: Создание openShift
+description: Создание экземпляра объекта openShift.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e99f3070c372dedcad2310b55539a14e7ed9c8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6109cbc84e3eeb5f1bb6e627b985225d77f0436
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057124"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051335"
 ---
-# <a name="create-openshift"></a>Создание Опеншифт
+# <a name="create-openshift"></a>Создание openShift
 
 Пространство имен: microsoft.graph
 
-Создайте экземпляр объекта [опеншифт](../resources/openshift.md) .
+Создание экземпляра [объекта openShift.](../resources/openshift.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48057124"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,11 +47,11 @@ POST /teams/{id}/schedule/openShifts
 
 ## <a name="request-body"></a>Текст запроса
 
-Укажите новый объект [опеншифт](../resources/openshift.md) в тексте запроса для этого метода.
+Предокажи новый [объект openShift](../resources/openshift.md) в теле запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и созданный объект [опеншифт](../resources/openshift.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и созданный `200 OK` [объект openShift](../resources/openshift.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,9 +105,9 @@ Content-length: 244
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

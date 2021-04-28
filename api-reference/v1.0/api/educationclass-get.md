@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3359cbdb797fafc0a78b35cef5b66111b30c4074
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4bbbe40a291657813023596d3fd42cdfcd5c3310
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460035"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048766"
 ---
 # <a name="get-educationclass"></a>Получение educationClass
 
@@ -23,9 +23,9 @@ ms.locfileid: "48460035"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
+|Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
-|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -75,9 +75,9 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

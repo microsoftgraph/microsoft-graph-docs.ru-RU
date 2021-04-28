@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 629bf42c6d933a33008e40ab23a13a6ec08f233b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 3fd133848bf90ab211a2edab3eb383ff0342de80
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130608"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049508"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -80,7 +80,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

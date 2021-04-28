@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c0c4f0cebd430b0087f295a5ae4ecd0b92904512
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4d89497417147c219d7f54f9f544a4c873f7dc27
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719929"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051202"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ---
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

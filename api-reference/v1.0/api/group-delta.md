@@ -1,22 +1,22 @@
 ---
 title: 'group: delta'
-description: Получите только что созданные, обновленные или удаленные группы, в том числе изменения членства в группах, без необходимости выполнять полный доступ ко всей коллекции групп.
+description: Создайте новые, обновленные или удаленные группы, в том числе изменения членства в группе, без необходимости выполнять полное чтение всей коллекции групп.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 37e9c3bd57ad5235b1a03115236b0501f4431280
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: e094aaae32d8fe4ccbadd534b3d75ece56f8176e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368231"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050488"
 ---
 # <a name="group-delta"></a>group: delta
 
 Пространство имен: microsoft.graph
 
-Получите только что созданные, обновленные или удаленные группы, в том числе изменения членства в группах, без необходимости выполнять полный доступ ко всей коллекции групп. Сведения об [использовании запроса изменений](/graph/delta-query-overview) см.
+Создайте новые, обновленные или удаленные группы, в том числе изменения членства в группе, без необходимости выполнять полное чтение всей коллекции групп. Подробные [сведения см. в материале Использование запроса Delta.](/graph/delta-query-overview)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49368231"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Граупмембер. Read. ALL, Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL.  |
+|Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Граупмембер. Read. ALL, Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +56,7 @@ GET /groups/delta
 Этот метод поддерживает необязательные параметры запроса OData для настройки ответа.
 
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство *id* возвращается всегда.
-- Вы можете использовать `$select=members` для получения изменений в членстве. Вы также можете отслеживать другие изменения, такие как владение, и многое другое, выбрав любое [отношение группы](../resources/group.md#relationships) типа **directoryObject Collection**.
+- Вы можете использовать `$select=members` для получения изменений членства. Вы можете дополнительно отслеживать другие изменения, такие [](../resources/group.md#relationships) как владение и другие, выбрав любые групповые отношения коллекции **типов directoryObject.**
 - Имеется ограниченная поддержка параметра `$filter`:
   - Единственное поддерживаемое выражение `$filter` предназначено для отслеживания изменений в определенном объекте: `$filter=id+eq+{value}`. Допускается фильтрация нескольких объектов. Например, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Максимальное количество фильтруемых объектов: 50.
 
@@ -142,9 +142,9 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 >
-> Обратите внимание на присутствие свойства *Members@delta* , включающего идентификаторы объектов Member в группе.
+> Обратите внимание на наличие *members@delta,* которое включает в себя ids объектов-членов в группе.
 
 <!-- {
   "blockType": "response",
@@ -307,7 +307,7 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview).
-- [Получение добавочных изменений для групп](/graph/delta-query-groups).
+- [Получите дополнительные изменения для групп.](/graph/delta-query-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,28 +1,28 @@
 ---
-title: Получение onenoteOperation
-description: 'Получение состояния длительной операции с OneNote. Это относится к операциям, которые возвращают заголовок **operationing — Location** в ответе, например,,, `CopyNotebook` `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   '
+title: Получить onenoteOperation
+description: 'Получите состояние длительной OneNote операции. Это относится к операциям, которые возвращают заглавную головку **Operation-Location** в ответе, например `CopyNotebook` , , `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6e60b2ff4f611ed7f0f9e274d6cff951304bddcb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3bb2cdf5eca3df3484273f99f10132cb1a80491d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057208"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050404"
 ---
-# <a name="get-onenoteoperation"></a>Получение onenoteOperation
+# <a name="get-onenoteoperation"></a>Получить onenoteOperation
 
 Пространство имен: microsoft.graph
 
-Получение состояния длительной операции с OneNote. Это относится к операциям, которые возвращают заголовок **operationing — Location** в ответе, например,,, `CopyNotebook` `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   
+Получите состояние длительной OneNote операции. Это относится к операциям, которые возвращают заглавную головку **Operation-Location** в ответе, например `CopyNotebook` , , `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   
 
-Вы можете опросить конечную точку Operations – Location, пока `status` свойство не возвратит значение `completed` или `failed` . 
+Вы можете опросить конечную Operation-Location, пока свойство не вернется `status` `completed` или `failed` . 
 
-Если состояние имеет значение `completed` , `resourceLocation` свойство содержит URI конечной точки ресурса. 
+Если состояние `completed` есть, свойство `resourceLocation` содержит URI конечной точки ресурса. 
 
-Если состояние имеет значение `failed` , то ошибка и `@api.diagnostics` свойства предоставляют сведения об ошибке.
+Если состояние `failed` есть, сведения об ошибке и `@api.diagnostics` свойствах предоставляют сведения об ошибках.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,7 +55,7 @@ GET /sites/{id}/onenote/operations/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [onenoteOperation](../resources/onenoteoperation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [onenoteOperation](../resources/onenoteoperation.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

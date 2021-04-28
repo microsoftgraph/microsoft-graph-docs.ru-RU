@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 69d0edb9fe9a8b0bc1960d9e94cf92de2e76cdc3
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 882d4c697bf2f1463abed90f8dd914c5d9fb3324
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577200"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050292"
 ---
 # <a name="create-tablecolumn"></a>Создание объекта TableColumn
 
@@ -89,7 +89,7 @@ Content-length: 81
 
 В корпусе запроса поставляем представление JSON объекта [WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

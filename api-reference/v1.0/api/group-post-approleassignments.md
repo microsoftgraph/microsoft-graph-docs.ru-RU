@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: d574b638d190b1d63cc7fd859160d6ae144c9aab
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 90bd75f120266654183ec7eb502ec367b34521de
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469012"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052280"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Предоставление appRoleAssignment группе
 
@@ -107,7 +107,7 @@ Content-Type: application/json
 
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

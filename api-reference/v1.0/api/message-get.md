@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 13215ac951f9c23b80edf44fd5b57f33866ae386
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: faef3fd45e331012b642624361c9fc03e35d9a97
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136159"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035381"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_message",

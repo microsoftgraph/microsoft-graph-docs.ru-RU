@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bc9c4b0357f2b7ee083bcf37ada5b2db953ebaa0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2ca265c53fc730d30f624062bbd0751327b4cca8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50949867"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052252"
 ---
 # <a name="create-invitation"></a>Создание приглашения
 
@@ -97,7 +97,7 @@ Content-length: 551
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 9ef1bf8cd56cd603b685949a28a04e08d4ecb364
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c467a87936739a9cd30649ec5a8f2ca8f03b7260
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775250"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040142"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
@@ -22,8 +22,8 @@ ms.locfileid: "50775250"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | Agreement.Read.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)     | Agreement.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/09
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

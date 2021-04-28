@@ -5,18 +5,18 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 90e48837976afedd8b5da14febff47bb99d615ea
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: f84f7f34c92080c8d4ff55ed217ac822cef4ae48
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177083"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050306"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
 Пространство имен: microsoft.graph
 
-Получает входы пользователей Azure AD для клиента. В настоящее время в журналы входа включаются интерактивные входы, которые являются интерактивными (когда имя пользователя или пароль передается в рамках маркера авторизования), а успешные федеративные входы включаются в журналы входа.
+Получает входы пользователей Azure AD для клиента. Входы, которые являются интерактивными по своей природе (где имя пользователя/пароль передается как часть маркера auth) и успешные федеративные входы в настоящее время включены в журналы входа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,7 +37,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
 |Имя     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -45,7 +45,7 @@ GET auditLogs/signIns
 |[$top](/graph/query_parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/signIns?$top=1`|
 |[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметра
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметром
 
 |Имя атрибута |Поддерживаемые операторы|
 |:----------------|:------|
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

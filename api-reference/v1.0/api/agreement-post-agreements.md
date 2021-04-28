@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 1a3e30754a9359d26c41bad35407674c9b5c88c5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: c72ff9b7dace7847ddc65416ca3876545dd0c03b
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774976"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52040128"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -22,8 +22,8 @@ ms.locfileid: "50774976"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | Agreement.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)     | Agreement.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -34,7 +34,7 @@ POST /identityGovernance/termsOfUse/agreements
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /identityGovernance/termsOfUse/agreements
 |fileName|String|Имя файла соглашения (например, TOU.pdf).|
 |isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если язык соответствует предпочтениям клиента. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию.|
 |language|String|Язык файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
-|data|Binary|Данные, которые представляют условия использования документа PDF.|
+|data|В двоичном формате|Данные, которые представляют условия использования документа PDF.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и `201, Created` объект соглашения в тексте ответа. [](../resources/agreement.md)
@@ -104,7 +104,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

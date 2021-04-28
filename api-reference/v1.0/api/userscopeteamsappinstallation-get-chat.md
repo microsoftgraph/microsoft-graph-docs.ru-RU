@@ -1,22 +1,22 @@
 ---
-title: Get 1:1 chat between the specified user and Teams app
-description: Извлечение чата по одному между указанным пользователем и приложением Teams.
+title: Получите чат 1:1 между указанным пользователем и Teams приложением
+description: Извлечение чата один на один между указанным пользователем и Teams приложением.
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 29c13e3c58cd7285146ffc80845496540146c6d1
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: d96221ba87b9181d9f43fa2010728e178b14dcce
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706159"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051167"
 ---
-# <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>Получить один-на-один чат между указанным пользователем и приложением Teams
+# <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>Получите один-на-один чат между указанным пользователем и Teams приложением
 
 Пространство имен: microsoft.graph
 
-[Извлечение чата](../resources/chat.md) указанного [пользователя и](../resources/user.md) [приложения Teams.](../resources/teamsapp.md)
+[Извлечение чата](../resources/chat.md) указанного [пользователя](../resources/user.md) и [Teams приложения.](../resources/teamsapp.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -52,11 +52,11 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и экземпляр объекта `200 OK` [чата](../resources/chat.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и экземпляр объекта `200 OK` [чата](../resources/chat.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Пример 1. Список чаты по одному между указанным пользователем и приложением Teams
+### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Пример 1. Список чатов один на один между указанным пользователем и Teams приложением
 
 #### <a name="request"></a>Запрос
 
@@ -92,8 +92,8 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "user_chat_teamsApps",

@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 818325aa1489f365b5ae332f3e960ba898027a38
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 35f2b5bb820de626fc264c1a6766925cb598a0d8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442588"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050656"
 ---
 # <a name="remove-a-scopedrolemember"></a>Удаление scopedRoleMember
 
@@ -81,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scope
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

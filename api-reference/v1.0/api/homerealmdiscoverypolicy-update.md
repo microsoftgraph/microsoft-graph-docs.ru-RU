@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 647c1b4d21fbfed4dd29388fd4fe02a32fcb748a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7c46a8c7e46a9289bc47666b70dbf1d364d9467f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434302"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52048689"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>Обновление homerealmdiscoverypolicy
 
@@ -51,9 +51,9 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|определение|Коллекция строк| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
+|определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательно.|
+|displayName|String| Отображение имени для этой политики. Обязательный.|
 |isOrganizationDefault|Логический|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
@@ -106,9 +106,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

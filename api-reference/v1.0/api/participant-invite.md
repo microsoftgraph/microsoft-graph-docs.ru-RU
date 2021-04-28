@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 33b36c9657e4975f404696ae0451fc7f2c5c54a2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 41cfb58ace4629c47d72ef681569b14f1c893996
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945167"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049480"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
-|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 Если этот метод безудержен, этот метод возвращает код отклика и заглавную ссылку расположения с URI в `200 OK` [inviteParticipantsOperation,](../resources/inviteparticipantsoperation.md) созданный для этого запроса. 
@@ -116,7 +116,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -746,7 +746,7 @@ Content-Length: 464
 
 #### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

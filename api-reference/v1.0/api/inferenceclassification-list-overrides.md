@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: cc912b0cee9b3d361a0313e47578e6f6b26f35bf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fb6cd4c87c5ee06e0d9849bdaa13e62b616c7d3c
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136124"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051377"
 ---
 # <a name="list-overrides"></a>Список переопределений
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

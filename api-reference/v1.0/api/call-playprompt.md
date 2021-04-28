@@ -1,27 +1,27 @@
 ---
-title: 'Call: Плайпромпт'
-description: Проигрывать запрос в вызове.
+title: 'вызов: playPrompt'
+description: Воспроизведения запроса в вызове.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4759beaed98f5384deb41e982d5ce8a5ee1da396
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce89f0bbdaf665bb9f459f554a2e605324ead609
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979177"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051608"
 ---
-# <a name="call-playprompt"></a>Call: Плайпромпт
+# <a name="call-playprompt"></a>вызов: playPrompt
 
 Пространство имен: microsoft.graph
 
-Проигрывать запрос в вызове.
+Воспроизведения запроса в вызове.
 
-Дополнительные сведения об обработке операций можно найти в статье [коммсоператион](../resources/commsoperation.md)
+Дополнительные сведения об обработке операций см. в [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
-> Действие **плайпромпт** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).
+> Действие **playPrompt поддерживается** только [для](../resources/call.md) вызовов, инициированных с помощью [serviceHostedMediaConfig.](../resources/servicehostedmediaconfig.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,16 +44,16 @@ POST /communications/calls/{id}/playPrompt
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|выдан|Коллекция [медиапромпт](../resources/mediaprompt.md)| Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.|
-|Контекст|String|Уникальная строка контекста клиента. Может содержать до 256 символов.|
+|подсказки|[Коллекция MediaPrompt](../resources/mediaprompt.md)| Подсказки для игры. Максимальный поддерживаемый размер коллекции MediaPrompt — 20.|
+|clientContext|String|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект playPromptOperation](../resources/playpromptoperation.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -106,9 +106,9 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -129,7 +129,7 @@ Content-Type: application/json
 
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
+##### <a name="notification---operation-completed"></a>Уведомление — операция завершена
  
 ```http
 POST https://bot.contoso.com/api/calls

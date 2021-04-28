@@ -1,22 +1,22 @@
 ---
-title: Создание delegatedPermissionClassification
-description: Классификация разрешения путем добавления делегированияPermissionClassification к основному классу-службе API.
+title: Создание делегированияПермиссия
+description: Классифицировать разрешение, добавив делегированнуюПермиссию к директору службы API.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: c8ec9f622adcbd823df3219cea8876e8077d8977
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: adf21db353939dedd926792ddd0d3b7205e1ec2e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128710"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050313"
 ---
-# <a name="create-delegatedpermissionclassification"></a>Создание delegatedPermissionClassification
+# <a name="create-delegatedpermissionclassification"></a>Создание делегированияПермиссия
 
 Пространство имен: microsoft.graph
 
-Классификация делегированного разрешения путем добавления [делегированной](../resources/delegatedpermissionclassification.md) классификации в [servicePrincipal,](../resources/servicePrincipal.md) представляющий API.
+Классифицировать делегированное разрешение, добавив [делегированнуюПермиссификацию](../resources/delegatedpermissionclassification.md) в [службуPrincipal,](../resources/servicePrincipal.md) представляющую API.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,17 +44,17 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) в JSON.
+В теле запроса поставляют представление JSON объекта [делегированияПермиссииКлассификация.](../resources/delegatedpermissionclassification.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [делегированияПермиссииКлассификация](../resources/delegatedpermissionclassification.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В следующем примере делегированная разрешения "User.Read" классифицируется как "низкая".
+В следующем примере делегированная разрешения "User.Read" классифицируется как "низкий".
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -94,9 +94,9 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

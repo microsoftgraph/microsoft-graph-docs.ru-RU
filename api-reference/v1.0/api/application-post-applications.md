@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 4145f2af1f69b2205023a66d0fc7bc79fe373ab5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 21209eb12eaa9700fdbea45e833e207c2aa68fab
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133891"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050600"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -91,7 +91,7 @@ Content-length: 67
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

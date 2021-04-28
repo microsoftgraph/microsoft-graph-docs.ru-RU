@@ -1,22 +1,22 @@
 ---
-title: Получение Тимеофф
-description: Получение Тимеофф по ИДЕНТИФИКАТОРу.
+title: Get timeOff
+description: Получите timeOff по ID.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2c90420f46c08deda7857f7fd950ab3e1f1e71f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 562b4699d96ade55880b45fd2c4d7ced77f0d7e4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978246"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051223"
 ---
-# <a name="get-timeoff"></a>Получение Тимеофф
+# <a name="get-timeoff"></a>Get timeOff
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [тимеофф](../resources/timeoff.md) по идентификатору.
+Извлечение свойств и связей объекта [timeOff](../resources/timeoff.md) по ID.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "47978246"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает параметры запросов OData для настройки отклика.
+Этот метод не поддерживает параметры запроса OData для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,12 +48,12 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеофф](../resources/timeoff.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOffId
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

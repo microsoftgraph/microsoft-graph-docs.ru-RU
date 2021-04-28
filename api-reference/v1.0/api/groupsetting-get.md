@@ -1,22 +1,22 @@
 ---
-title: Получение параметра группы
-description: Получение свойств определенного объекта параметров группы.
+title: Получить параметр группы
+description: Извлечение свойств определенного объекта настройки группы.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 10647c9c733ae684effdb1e9be5197cfca07bc0e
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: b7e8d6839606519e3bfe772b14068184d2b1947d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460345"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051419"
 ---
-# <a name="get-a-group-setting"></a>Получение параметра группы
+# <a name="get-a-group-setting"></a>Получить параметр группы
 
 Пространство имен: microsoft.graph
 
-Получение свойств определенного объекта параметров группы.
+Извлечение свойств определенного объекта настройки группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,7 @@ ms.locfileid: "48460345"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Получение определенного параметра на уровне клиента или группы.
+Получите определенный параметр клиента или группы.
 
 ```http
 GET /groupSettings/{id}
@@ -54,7 +54,7 @@ GET /groups/{id}/settings/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [groupSetting](../resources/groupsetting.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект groupSetting](../resources/groupsetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

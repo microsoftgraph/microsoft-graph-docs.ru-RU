@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 48a93ff5828a8dcba909acf74fbfca9582d2cf95
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: d75b96bee8a9ffb21ffecf4e1c44c4c77190331a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578719"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053743"
 ---
 # <a name="get-workbookcommentreply"></a>Get workbookCommentReply
 
@@ -87,9 +87,9 @@ GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/rep
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

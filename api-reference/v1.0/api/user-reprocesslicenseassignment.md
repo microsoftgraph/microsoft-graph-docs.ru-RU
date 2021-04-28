@@ -5,18 +5,18 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e3b20fa97bddcc9d5dbab674e1a5af24a2e15f8f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 7cebc304feabb29b95f63f2929f7f8f79e544866
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720714"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050201"
 ---
 # <a name="user-reprocesslicenseassignment"></a>пользователь: reprocessLicenseAssignment
 
 Пространство имен: microsoft.graph
 
-Перепроцес всех групповых назначений лицензий для пользователя. Дополнительные информацию о лицензировании на основе групп см. в видеоролике Что такое групповое лицензирование [в Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Дополнительные сведения см. в материале [Identify and resolve license assignment problems for a group in Azure Active Directory.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)
+Перепроцес всех групповых назначений лицензий для пользователя. Дополнительные информацию о групповом лицензировании см. в этой [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Дополнительные сведения см. в материале Определение и решение проблем с назначением лицензий для [группы в Azure Active Directory.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)
 
 
 ## <a name="permissions"></a>Разрешения
@@ -83,7 +83,7 @@ POST https://graph.microsoft.com/v1.0/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 Ответ — это обновленный объект пользователя.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
