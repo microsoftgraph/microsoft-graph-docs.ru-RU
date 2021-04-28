@@ -198,6 +198,25 @@ items:
           - name: Корпоративное управление
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Обновления устройств (предварительная версия)
+            displayName: Windows updates
+            items:
+              - name: Обзор
+                href: windowsupdates-concept-overview.md
+              - name: Обновления программного обеспечения
+                href: windowsupdates-software-updates.md
+              - name: Развертывания
+                href: windowsupdates-deployments.md
+              - name: Регистрация в управлении
+                href: windowsupdates-enroll.md
+              - name: Развертывание обновления компонентов
+                href: windowsupdates-deploy-update.md
+              - name: Развертывание ускоренного обновления
+                href: windowsupdates-deploy-expedited-update.md
+              - name: Планирование развертывания
+                href: windowsupdates-schedule-deployment.md
+              - name: Управление правилами мониторинга
+                href: windowsupdates-manage-monitoring-rules.md
       - name: Образование
         items:
           - name: Общие сведения
@@ -225,7 +244,7 @@ items:
             items:
               - name: Управление доступом к ресурсам
                 href: tutorial-access-package-api.md
-              - name: Проверка доступа к группам
+              - name: Проверка доступа к ресурсам
                 items:
                   - name: Обзор API проверок доступа
                     href: accessreviews-overview.md
@@ -349,6 +368,8 @@ items:
                 href: search-concept-sort.md
               - name: Уточнение результатов поиска (предварительная версия)
                 href: search-concept-aggregation.md
+              - name: Исправление орфографии в запросе (предварительная версия)
+                href: search-concept-speller.md
           - name: Индекс (предварительная версия)
             items:
               - name: Управление подключениями
