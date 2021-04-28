@@ -1,16 +1,16 @@
 ---
-title: Список присвоенных claimsMappingPolicies
-description: Список claimsMappingPolicies, которые назначены для основного службы.
+title: Список присвоенных утвержденийMappingPolicies
+description: Список утвержденийMappingPolicies, которые назначены директору службы.
 localization_priority: Normal
 author: paulgarn
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8282d90d6df5c44432a203c46438317bd9f15515
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0f6c5d3b0b9217bef4394f9595a72980a973173e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132240"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52034908"
 ---
 # <a name="list-assigned-claimsmappingpolicy"></a>Список присвоенных утвержденийMappingPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50132240"
 
 
 
-Список объектов [claimsMappingPolicy,](../resources/claimsmappingpolicy.md) которые назначены [servicePrincipal.](../resources/serviceprincipal.md)
+Список [объектов claimsMappingPolicy,](../resources/claimsmappingpolicy.md) которые назначены [службеPrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "50132240"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /servicePrincipals/{id}/claimsMappingPolicies
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [claimsMappingPolicy](../resources/claimsmappingpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [claimsMappingPolicy](../resources/claimsmappingpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -89,9 +89,9 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/claimsMappingPolicie
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

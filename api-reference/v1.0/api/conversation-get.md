@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1a992984302e9847887813574b8783b4285315f2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: c11db4311f105e9f18311f18dfb36d6f4cd3a7e3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460623"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035668"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
@@ -22,9 +22,9 @@ ms.locfileid: "48460623"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group. ReadWrite. ALL, Group. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Group.Read.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Group.ReadWrite.All, Group.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

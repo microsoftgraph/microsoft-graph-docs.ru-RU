@@ -1,22 +1,22 @@
 ---
 title: Перечисление транзитивных участников группы
-description: Получите список членов группы. В качестве членов группы могут быть пользователи, устройства, контакты организации и другие группы. Эта операция является транзитивной и возвращает плоский список всех вложенных членов.
+description: Получите список участников группы. В составе группы могут быть пользователи, устройства, организационные контакты и другие группы. Эта операция является транзитной и возвращает плоский список всех вложенных членов.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0b428dd011937473d1c860e15b95d11e7171eb92
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 4795eea214654bf482dd053739f8415e890ff2fa
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272179"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052294"
 ---
 # <a name="list-group-transitive-members"></a>Перечисление транзитивных участников группы
 
 Пространство имен: microsoft.graph
 
-Получите список членов группы. В качестве членов группы могут быть пользователи, устройства, контакты организации и другие группы. Эта операция является транзитивной и возвращает плоский список всех вложенных членов.
+Получите список участников группы. В составе группы могут быть пользователи, устройства, организационные контакты и другие группы. Эта операция является транзитной и возвращает плоский список всех вложенных членов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50272179"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
->**Примечание.** Для получения списка участников скрытой группы членства требуется разрешение Member.Read.Hidden.
+>**Примечание:** Чтобы перечислить членов скрытой группы членства, требуется разрешение Member.Read.Hidden.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -61,7 +61,7 @@ GET /groups/{id}/transitiveMembers
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-transitive-membership-of-a-group"></a>Пример 1. Просмотр транзитивного членства в группе
+### <a name="example-1-get-the-transitive-membership-of-a-group"></a>Пример 1. Получить транзитное членство группы
 
 #### <a name="request"></a>Запрос
 
@@ -122,7 +122,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-transitive-membership"></a>Пример 2. Получить только число транзитивных членства
+### <a name="example-2-get-only-a-count-of-transitive-membership"></a>Пример 2. Получить только число транзитных членов
 
 #### <a name="request"></a>Запрос
 
@@ -140,9 +140,9 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response"
@@ -154,7 +154,7 @@ Content-type: text/plain
 
 `893`
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 3. Использование cast и $search OData для получения членства в группах с отображаемой и отображаемой именами, которые содержат буквы "tier", включая количество возвращенных объектов
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства в группах с именами отображения, которые содержат буквы "tier", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -171,9 +171,9 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -197,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4. Использование cast и $filter OData для получения членства пользователей в группах с отображаемой именем, которая начинается с "A", включая количество возвращенных объектов
+### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $filter OData для получения членства пользователя в группах с отображаемой именем, которая начинается с "A", включая количество возвращенных объектов.
 
 #### <a name="request"></a>Запрос
 
@@ -215,9 +215,9 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

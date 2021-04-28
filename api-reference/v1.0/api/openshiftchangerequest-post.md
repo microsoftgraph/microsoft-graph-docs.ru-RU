@@ -1,22 +1,22 @@
 ---
 title: Создание openShiftChangeRequest
-description: Создание экземпляра объекта openShiftChangeRequest.
+description: Создайте экземпляр объекта openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e861dc2e5da1c175f419fdf47c76a4fac3b877bd
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 475ca1ce45426cb6cc412c495874eea3e73a4ae7
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292184"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039239"
 ---
 # <a name="create-openshiftchangerequest"></a>Создание openShiftChangeRequest
 
 Пространство имен: microsoft.graph
 
-Создание экземпляра объекта [openShiftChangeRequest.](../resources/openshiftchangerequest.md)
+Создание экземпляра [объекта openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,11 +46,11 @@ POST /teams/{id}/schedule/openShiftChangeRequests
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса предостерегать представление нового объекта [openShiftChangeRequest](../resources/openshiftchangerequest.md) в JSON.
+В теле запроса предостерегать представление JSON нового [объекта openShiftChangeRequest.](../resources/openshiftchangerequest.md)
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и созданный объект `200 OK` [openShiftChangeRequest](../resources/openshiftchangerequest.md) в теле отклика.
+В случае успеха этот метод возвращает код ответа и `200 OK` созданный [объект openShiftChangeRequest](../resources/openshiftchangerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -75,9 +75,9 @@ Content-length: 244
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

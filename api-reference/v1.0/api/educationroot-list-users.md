@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 83629b65b859ea8ae4e0bd59907f85f7d0076f9f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 48253e39c70ff481eaab450e96428d4af63d523a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458845"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053148"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -23,9 +23,9 @@ ms.locfileid: "48458845"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  Не поддерживается.  |
-|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
+|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -75,9 +75,9 @@ GET https://graph.microsoft.com/v1.0/education/users
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

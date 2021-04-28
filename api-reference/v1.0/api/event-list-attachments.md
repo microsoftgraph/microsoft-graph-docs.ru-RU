@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c135e600c0e057b63700716577a47af890b5e6e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e324d67cd6e7c57d3a936a0ec6d6e9ace3ec5df0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448300"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039589"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_v1",

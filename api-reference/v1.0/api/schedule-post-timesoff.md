@@ -1,22 +1,22 @@
 ---
-title: Создание Тимеофф
-description: Создание нового Тимеофф.
+title: Создание timeOff
+description: Создание нового timeOff.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c9c4f3d95e828e1886e1cc3d474830059de1349a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14cda6031e07ecf694ce771ad3a08a014057c25e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083185"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039050"
 ---
-# <a name="create-timeoff"></a>Создание Тимеофф
+# <a name="create-timeoff"></a>Создание timeOff
 
 Пространство имен: microsoft.graph
 
-Создайте новый экземпляр [тимеофф](../resources/timeoff.md) в [расписании](../resources/schedule.md).
+Создание нового [экземпляра timeOff](../resources/timeoff.md) в расписании. [](../resources/schedule.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48083185"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule.ReadWrite.All |
+|Для приложений | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [тимеофф](../resources/timeoff.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект timeOff](../resources/timeoff.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -104,9 +104,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14913adaad256ffc29b5dc5e5086ab061bf44c54
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0d282afb127dba1222f208d0660e6ff584c22834
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128381"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052238"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50128381"
 
 Вы можете добавить вложение к существующему сообщению, добавив его в коллекцию вложений, или к сообщению, [создаваемому и отправляемому на ходу](../api/user-sendmail.md).
 
-Эта операция ограничивает размер вложения, который можно добавить, до 3 МБ.
+Эта операция ограничивает размер вложения, который можно добавить до 3 МБ.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -176,7 +176,7 @@ Content-length: 200
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_v1",

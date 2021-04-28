@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6db805374ce4783ff9d339f128efd7bc416ab161
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: d3a957e04db294cfc806e44c3ee6078cd9e54473
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761314"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039575"
 ---
 # <a name="list-group-settings"></a>Параметры группы списка
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

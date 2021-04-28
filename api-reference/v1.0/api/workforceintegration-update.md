@@ -1,18 +1,18 @@
 ---
-title: Обновление workforceIntegration
+title: Обновление рабочей силыИнтеграция
 description: Обновление свойств объекта workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 97a902f38b983105a1815250071b3ef7f8b3d7bd
-ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
+ms.openlocfilehash: 5efd624bf4a8104465e7663a41b758ec8661a2eb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49910529"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031522"
 ---
-# <a name="update-workforceintegration"></a>Обновление workforceIntegration
+# <a name="update-workforceintegration"></a>Обновление рабочей силыИнтеграция
 
 Пространство имен: microsoft.graph
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,15 +51,15 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции сотрудников.|
-|шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции сотрудников. |
-|isActive|Boolean|Указывает, активна ли в настоящее время интеграция с сотрудниками.|
-|supportedEntities|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем регистре.|
-|url|String| URL-адрес интеграции сотрудников для службы переключе вызовов из службы смены. |
+|displayName|String|Имя интеграции рабочей силы.|
+|шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции рабочей силы. |
+|isActive|Логический|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
+|supportedEntities|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
+|url|String| URL-адрес интеграции рабочей силы для вызовов из службы переноса. |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -113,9 +113,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -140,9 +140,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Примеры использования объекта WorkforceIntegration для фильтрации по правилам WFM
+## <a name="examples-use-cases-of-workforceintegration-entity-for-filtering-by-wfm-rules-eligibility"></a>Примеры Использования случаев использования объекта WorkforceIntegration для фильтрации по правилам WFM
 
-### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a>Пример использования: замените существующий WorkforceIntegration, чтобы включить SwapRequest для фильтрации правомерности
+### <a name="use-case-replace-an-existing-workforceintegration-to-enable-swaprequest-for-eligibility-filtering"></a>Пример использования. Замените существующую систему WorkforceIntegration, чтобы включить SwapRequest для фильтрации прав
 
 ### <a name="request"></a>Запрос
 
@@ -182,14 +182,14 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-Чтобы узнать, как создать новую рабочую силу с помощью SwapRequest, включенной для фильтрации правомерности, см. [создание](../api/workforceintegration-post.md).
+Чтобы узнать, как создать новую рабочую силу с помощью swapRequest, включенной для фильтрации прав, см. [в этой ссылке Create](../api/workforceintegration-post.md).
 
-## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример получения подходящих смен, когда SwapRequest включен в eligibilityFilteringEnabledEntities
-Взаимодействие между конечными точками интеграции приложения Shifts и сотрудников будет выполняться по существующему шаблону.
+## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Пример получения подходящих сдвигов при включении SwapRequest в eligibilityFilteringEnabledEntities
+Взаимодействие между конечными точками интеграции shifts и рабочей силой будет следовать существующему шаблону.
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, сделанного shifts на конечную точку интеграции персонала для получения подходящих смен для запроса на замену.
+Ниже приводится пример запроса shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -205,7 +205,7 @@ Accept-Language: en-us
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример ответа от службы интеграции сотрудников.
+Ниже приводится пример ответа службы интеграции рабочей силы.
 ```
 HTTP/1.1 200 OK
 {

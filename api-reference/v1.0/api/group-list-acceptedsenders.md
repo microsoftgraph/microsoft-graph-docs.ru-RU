@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 47e2a442b2f38d46a0b23df06556d3381ad9e10f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9874b3fd3ad12c77f27e496dbcddb860a86dca8f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070221"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052357"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 
-Пространство имен: Microsoft. Graph получение списка пользователей или групп, которые находятся в списке принятых отправителей для этой группы.
+Пространство имен: microsoft.graph Получить список пользователей или групп, которые находятся в списке принятых отправителей для этой группы.
 
 Пользователи из списка разрешенных отправителей могут отправлять записи в беседы группы (определенные в URL-адресе запроса GET). Убедитесь, что в списках разрешенных и запрещенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
 
@@ -80,8 +80,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

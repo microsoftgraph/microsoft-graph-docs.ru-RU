@@ -1,22 +1,22 @@
 ---
-title: Создание Свапшифтрекуест
-description: Создайте экземпляр объекта Свапшифтсчанжерекуест.
+title: Создание swapshiftRequest
+description: Создание экземпляра swapShiftsChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3f803e41b9a78209d400048085454dc6b1aebfe0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95d80f4539da8ffb8a083ec76567c50a2e80d3d6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045488"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038791"
 ---
-# <a name="create-swapshiftschangerequest"></a>Создание Свапшифтсчанжерекуест
+# <a name="create-swapshiftschangerequest"></a>Создание swapShiftsChangeRequest
 
 Пространство имен: microsoft.graph
 
-Создайте экземпляр объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
+Создайте экземпляр объекта [swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48045488"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) |Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,11 +50,11 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в формате JSON.
+В теле запроса предостерегать представление JSON нового [объекта swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и созданный объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и созданный `200 OK` [объект swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -80,9 +80,9 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

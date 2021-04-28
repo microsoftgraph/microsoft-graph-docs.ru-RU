@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab836089b926324b5163c12ab234f6bfc791abe8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 318f72b56c057c13cb4e3a96a969a164f97b3007
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086853"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031501"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 
@@ -95,7 +95,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

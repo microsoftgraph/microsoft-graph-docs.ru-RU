@@ -1,24 +1,24 @@
 ---
-title: Список assigned tokenLifetimePolicies
+title: Список назначенного маркераLifetimePolicies
 description: Список tokenLifetimePolicies, которые назначены приложению.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: df91b09be98e20245acf9c4f5957631868c11a13
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 68dac1d77011f0d82c9b786b64a2218a09a82535
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129704"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035934"
 ---
-# <a name="list-assigned-tokenlifetimepolicy"></a>Список assigned tokenLifetimePolicy
+# <a name="list-assigned-tokenlifetimepolicy"></a>Список назначенного tokenLifetimePolicy
 
 Пространство имен: microsoft.graph
 
 
 
-Список объектов [tokenLifetimePolicy,](../resources/tokenlifetimepolicy.md) которые назначены [приложению.](../resources/application.md)
+Список [объектов tokenLifetimePolicy,](../resources/tokenlifetimepolicy.md) которые назначены [приложению.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "50129704"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /applications/{id}/tokenLifetimePolicies
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -89,9 +89,9 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/tokenLifetimePolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

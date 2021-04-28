@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: f1e3a49218dc8a920e9a11517bd9d6d6bb9f197e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fb5e804682741c79d8ea3daeca5e6512575c16de
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956516"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039572"
 ---
 # <a name="list-threatassessmentrequests"></a>List threatAssessmentRequests
 
@@ -20,7 +20,7 @@ ms.locfileid: "50956516"
 
 * [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
-* [File](../resources/fileAssessmentRequest.md)
+* [Файл](../resources/fileAssessmentRequest.md)
 * [URL-адрес](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>Разрешения
@@ -102,9 +102,9 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

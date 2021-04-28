@@ -1,16 +1,16 @@
 ---
 title: Список публикаций
-description: 'Получение публикаций из указанной цепочки. Вы можете указать родительский сеанс связи и поток, или '
+description: 'Получение публикаций из указанной цепочки. Можно указать родительский разговор и поток, или, '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fd98c01033fac529661dce268e99199dadd9b665
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: e2e641a6524a08a328fe6cfb7b879a9b8fb5e09a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904751"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053232"
 ---
 # <a name="list-posts"></a>Список публикаций
 
@@ -25,7 +25,7 @@ ms.locfileid: "48904751"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

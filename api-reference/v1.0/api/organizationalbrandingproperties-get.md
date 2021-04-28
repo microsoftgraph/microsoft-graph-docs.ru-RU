@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aa41c0d9e8e31f1cbe7a4c4653a27168c67a1a2c
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 0eaf4bb551a1f75faa3c68252ca7ec72d7ced189
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582818"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052217"
 ---
 # <a name="get-organizationalbrandingproperties"></a>Get organizationalBrandingProperties
 
@@ -56,7 +56,7 @@ GET /organization/{id}/branding/{property name}
 ### <a name="example-1-get-the-default-branding"></a>Пример 1. Получить брендинг по умолчанию
 
 >[!NOTE]
->Если вы попробуете пример в Graph Explorer, необходимо также включить заглавную головку запроса **Accept-Language** с допустимым локальным кодом ISO-639, чтобы избежать ошибки " Значение недействительный код локального языка *en-US,en;q=0.9. Это должен быть допустимый локал ISO-639.*
+>Если вы попробуете пример в Graph Explorer, необходимо также включить заглавную головку запроса **Accept-Language** с допустимым локальным кодом ISO-639, чтобы избежать ошибки " Значение недействительный код местного значения *en-US,en;q=0.9. Это должен быть допустимый локал ISO-639.*
 
 #### <a name="request"></a>Запрос
 
@@ -93,9 +93,9 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -172,9 +172,9 @@ Accept-Language: fr
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Получение шаблона параметров группы
-description: Получение шаблона параметров группы, представляющего шаблон параметров, параметры которых могут создаваться в клиенте.
+description: Получите шаблон настройки группы, который представляет шаблон параметров, из которых могут быть созданы параметры в клиенте.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4693e6158f26899964e6bfe113625401f088f631
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 1d8bdc4168a41358d372e7214bb185694c59ff1f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458383"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039603"
 ---
 # <a name="get-a-group-setting-template"></a>Получение шаблона параметров группы
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

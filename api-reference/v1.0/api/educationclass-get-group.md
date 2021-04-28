@@ -1,22 +1,22 @@
 ---
 title: Вывод группы
-description: Получите **группу** Microsoft 365, соответствующую этой **educationClass**.
+description: Извлечение Microsoft 365 **группы,** соответствующей **данному классу educationClass.**
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8854a4a9f72aacd8dd04297da45f2343efc0bc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6439e460bcd1e32780540de4bce3f36d432c75a0
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087518"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035570"
 ---
 # <a name="get-group"></a>Вывод группы
 
 Пространство имен: microsoft.graph
 
-Получите **группу** Microsoft 365, соответствующую этой **educationClass**.
+Извлечение Microsoft 365 **группы,** соответствующей **данному классу educationClass.**
 
 >**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
 
@@ -27,7 +27,7 @@ ms.locfileid: "48087518"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All|
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -74,9 +74,9 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

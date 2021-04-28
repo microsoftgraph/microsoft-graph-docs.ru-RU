@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 467e228f42f5ab2aae3e9d4ab79815bdc582253d
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 2887284cbd5bdf644c161d790f1cd832a410dae4
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469082"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053099"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -77,8 +77,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 Укажите в запросе свойство `id` удаляемого объекта каталога после сегмента $ref.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

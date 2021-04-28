@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a25ae865219dde471e1c8d467dac2d963056f66
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fad6a3e8f804f84ffae33dcc6165095c7e1b8c3
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057626"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052308"
 ---
 # <a name="list-threads"></a>Список цепочек
 
@@ -18,7 +18,7 @@ ms.locfileid: "48057626"
 
 Получение всех цепочек группы.
 
->**Примечание:** Вы также можете [получить все потоки беседы](conversation-list-threads.md).
+>**Примечание:** Вы также [можете получить все потоки беседы](conversation-list-threads.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +43,7 @@ GET /groups/{id}/threads
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -81,8 +81,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

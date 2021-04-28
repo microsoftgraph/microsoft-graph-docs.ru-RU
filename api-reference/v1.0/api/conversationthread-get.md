@@ -1,16 +1,16 @@
 ---
 title: Получение объекта conversationThread
-description: 'Получение определенной цепочки, принадлежащей группе. Вы можете указать родительский сеанс связи и поток, или '
+description: 'Получение определенной цепочки, принадлежащей группе. Можно указать родительский разговор и поток, или, '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d31a06f81d85c586e1033f58935d641d0d18e3aa
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: da9e54b919a046e826ec892cbeaf210d9add82fb
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459652"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053239"
 ---
 # <a name="get-conversationthread"></a>Получение conversationThread
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,22 +1,22 @@
 ---
-title: Список Воркфорцеинтегратионс
-description: Получение списка объектов Воркфорцеинтегратион.
+title: Список рабочей силыИнтеграции
+description: Извлечение списка объектов workforceIntegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eb019555d012a9373b21571291687a703beb5b8e
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: d96aa5dcf131724fbd231ed7574606bd1b736d21
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848209"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52031490"
 ---
-# <a name="list-workforceintegrations"></a>Список Воркфорцеинтегратионс
+# <a name="list-workforceintegrations"></a>Список рабочей силыИнтеграции
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [воркфорцеинтегратион](../resources/workforceintegration.md) .
+Извлечение списка [объектов workforceIntegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48848209"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. Read. ALL, Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -55,7 +55,7 @@ GET /teamwork/workforceIntegrations
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [workforceIntegration](../resources/workforceintegration.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -97,9 +97,9 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

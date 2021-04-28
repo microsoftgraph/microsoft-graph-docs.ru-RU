@@ -5,20 +5,20 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0cca74df2655b8aa56e2f93fa315f30ea1598a37
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 888932c4732bca7f15a5eb61327cda9bb554b762
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315551"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52034898"
 ---
 # <a name="replace-shift"></a>Замена смены
 
 Пространство имен: microsoft.graph
 
-Замените существующую [смену](../resources/shift.md).
+Замените [существующий сдвиг.](../resources/shift.md)
 
-Если указанная [Смена](../resources/shift.md) не существует, этот метод возвращает значение `404 Not found` .
+Если указанной [смены](../resources/shift.md) не существует, этот метод `404 Not found` возвращается.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48315551"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
@@ -47,11 +47,11 @@ PATCH /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [сдвига](../resources/shift.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [переноса.](../resources/shift.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [сдвига](../resources/shift.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [переноса](../resources/shift.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -142,9 +142,9 @@ Prefer: return=representation
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

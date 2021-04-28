@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6af194afb2d341869e622644fe428246599c77fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8788b039c8f9234c9544f08cb354860fb3534116
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094819"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053092"
 ---
 # <a name="delete-conversation-thread"></a>Удаление цепочки беседы
 
-Пространство имен: Microsoft. Graph удаление объекта [Thread](../resources/conversationthread.md) .
+Пространство имен: microsoft.graph Delete a [thread](../resources/conversationthread.md) object.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -75,8 +75,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,24 +1,24 @@
 ---
-title: 'Группа: Ассигнлиценсе'
-description: Добавление и удаление лицензий для группы. Лицензии, назначенные группе, будут назначены всем пользователям в группе.
+title: 'группа: assignLicense'
+description: Добавление или удаление лицензий в группе. Лицензии, присвоенные группе, будут назначены всем пользователям в группе.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e36b6507f49444c4bd6a5433544c9f5976b4379
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: e78e9bdcd2cc0383251a7fe6fde2b38aedee2a80
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921762"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035479"
 ---
-# <a name="group-assignlicense"></a>Группа: Ассигнлиценсе
+# <a name="group-assignlicense"></a>группа: assignLicense
 
 Пространство имен: microsoft.graph
 
-Добавление и удаление лицензий для группы. Лицензии, назначенные группе, будут назначены всем пользователям в группе. Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Добавление или удаление лицензий в группе. Лицензии, присвоенные группе, будут назначены всем пользователям в группе. Дополнительные информацию о групповом лицензировании см. в этой [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
-Чтобы получить доступ к подпискам в каталоге, выполните [запрос Get субскрибедскус](../resources/subscribedsku.md).
+Чтобы получить подписки, доступные в каталоге, выполните [запрос GET subscribedSkus](../resources/subscribedsku.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,17 +45,17 @@ POST /groups/{id}/assignLicense
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить Сервицепланс, связанные с лицензией, задав свойство **дисабледпланс** для объекта [коллекция assignedlicense](../resources/assignedlicense.md) .|
-|removeLicenses|Коллекция GUID|Коллекция Скуидс, идентифицирующая лицензии, которые требуется удалить.|
+|addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить servicePlans, связанные с лицензией, установив свойство **disabledPlans** на [объекте assignedLicense.](../resources/assignedlicense.md)|
+|removeLicenses|Коллекция GUID|Коллекция skuIds, которые идентифицируют лицензии для удаления.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и целевой объект [Group](../resources/group.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект целевой группы `202 Accepted` в тексте [](../resources/group.md) ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-licenses-to-the-group"></a>Пример 1: Добавление лицензий в группу
-В следующем примере в группу добавляются лицензии.
+### <a name="example-1-add-licenses-to-the-group"></a>Пример 1. Добавление лицензий в группу
+В следующем примере добавляется лицензии в группу.
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -103,9 +103,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Отклик — обновленный объект Group.
+Ответ — это обновленный групповой объект.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,8 +126,8 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
 }
 ```
 
-### <a name="example-2-remove-licenses-from-the-group"></a>Пример 2: Удаление лицензий из группы
-В следующем примере удаляются лицензии из группы.
+### <a name="example-2-remove-licenses-from-the-group"></a>Пример 2. Удаление лицензий из группы
+В следующем примере из группы удаляются лицензии.
 
 #### <a name="request"></a>Запрос
 
@@ -168,9 +168,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Отклик — обновленный объект Group.
+Ответ — это обновленный групповой объект.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание:** Объект ответа, показанный здесь, может быть сокращен для читаемости..
 <!-- {
   "blockType": "response",
   "truncated": true,

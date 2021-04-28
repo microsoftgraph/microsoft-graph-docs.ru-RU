@@ -5,16 +5,16 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 57393b8573ca47f32af5ac756e0ad1d262e7d620
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 538a6b5fbe93365f489d12a7ebd56700542b673a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088799"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52038700"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
-Пространство имен: Microsoft. Graph возвращает список напоминаний о событиях в календаре пользователя в пределах указанного времени начала и окончания. 
+Пространство имен: microsoft.graph Возвращает список напоминаний о событиях в пользовательском календаре в указанное время начала и окончания. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T1
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

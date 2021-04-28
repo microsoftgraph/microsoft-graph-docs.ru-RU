@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0f3e976a04f33866b81926849d9ad310551c335a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4794c7b2d16f51584ff0a5e8b60c75bfe979df6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055101"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052315"
 ---
 # <a name="list-rejectedsenders"></a>Список rejectedSenders
 
-Пространство имен: Microsoft. Graph получение списка пользователей или групп, которые находятся в списке отклоненных отправителей для этой группы. 
+Пространство имен: microsoft.graph Получите список пользователей или групп, которые находятся в списке отклоненных отправителей для этой группы. 
 
 Пользователи из списка запрещенных отправителей не могут отправлять записи в беседы группы (определенные в URL-адресе запроса GET). Убедитесь, что в списках запрещенных и разрешенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
 
@@ -42,7 +42,7 @@ GET /groups/{id}/rejectedSenders
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -80,8 +80,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

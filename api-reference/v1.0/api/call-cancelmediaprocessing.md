@@ -1,24 +1,24 @@
 ---
-title: 'Call: Канцелмедиапроцессинг'
-description: Отменяет обработку мультимедиа для всех выполняющихся операций Плайпромпт или Рекордреспонсе.
+title: 'вызов: cancelMediaProcessing'
+description: Отменяет обработку мультимедиа для выполнения операций playPrompt или recordResponse.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4ba60b3008bcab8afb6136f3a9848e8ffb0dc6a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be241d8c63f8d47bf4c76a29d2ee460a727dd31d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966396"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035913"
 ---
-# <a name="call-cancelmediaprocessing"></a>Call: Канцелмедиапроцессинг
+# <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
 Пространство имен: microsoft.graph
 
-Отменяет обработку всех выполняемых операций мультимедиа.
+Отменяет обработку для любых операций мультимедиа в ходе выполнения.
 
-Операции с мультимедиа относятся к IVR операциям [плайпромпт](./call-playprompt.md) и [рекордреспонсе](./call-record.md), которые по умолчанию находятся в очереди на обработку по порядку. Метод **канцелмедиапроцессинг** отменяет любую операцию, которая находится в процессе, а также операции, помещенные в очередь. Например, этот метод можно использовать для очистки очереди операций IVR для новой операции мультимедиа. Тем не менее операция **субскрибетотоне** не будет отменена, так как она работает независимо от очереди операций.
+Операции мультимедиа относятся к операциям IVR [playPrompt](./call-playprompt.md) и [recordResponse,](./call-record.md)которые по умолчанию находятся в очереди для обработки в порядке. Метод **cancelMediaProcessing** отменяет все операции, которые находятся в процессе, а также операции, которые находятся в очереди. Например, этот метод можно использовать для очистки очереди операции IVR для новой операции мультимедиа. Однако операция **subscribeToTone** не отменяется, так как она работает независимо от очереди операции.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,11 +49,11 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 | Параметр     | Тип   | Описание         |
 | :------------ | :----- | :------------------ |
-| Контекст | String | Контекст клиента. |
+| clientContext | String | Клиентский контекст. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код HTTP-ответа и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
+В случае успешной работы этот метод возвращает код отклика HTTP и заглавную головку расположения с URI в `200 OK` [commsOperation,](../resources/commsoperation.md) созданный для этого запроса.
 
 ## <a name="example"></a>Пример
 
@@ -102,7 +102,7 @@ Content-Length: 62
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -124,7 +124,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-canceled-for-recordresponse"></a>Уведомление — операция отменена для Рекордреспонсе
+##### <a name="notification---operation-canceled-for-recordresponse"></a>Уведомление — отмена операции для recordResponse
 
 ```http
 POST https://bot.contoso.com/api/calls

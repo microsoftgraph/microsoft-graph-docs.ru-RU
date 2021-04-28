@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 198655463c227fa5f0b7b547e59c9f11b08b7571
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 87c9efd3334703f4f89eca07d13e7ecc2e9b641e
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434589"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052434"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

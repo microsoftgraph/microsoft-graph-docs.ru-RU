@@ -1,22 +1,22 @@
 ---
-title: Добавление Конверсатионмембер
-description: Добавление Конверсатионмембер к каналу.
+title: Добавление conversationMember
+description: Добавление conversationMember в канал.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 150c3003487ed4585951495b0f9e9ed9a6f38121
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 1441ee9698720cc5d5041e7fd3df7c661574077f
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848656"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52053246"
 ---
-# <a name="add-conversationmember"></a>Добавление Конверсатионмембер
+# <a name="add-conversationmember"></a>Добавление conversationMember
 
 Пространство имен: microsoft.graph
 
-Добавление [конверсатионмембер](../resources/conversationmember.md) к [каналу](../resources/channel.md).
+Добавление [conversationMember в](../resources/conversationmember.md) [канал.](../resources/channel.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48848656"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMember.ReadWrite.All |
+|Приложение| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -47,7 +47,7 @@ POST /teams/{id}/channels/{id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роли этого пользователя.|
-|user|[user](../resources/user.md)|Пользователь, добавляемый в канал.|
+|user|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -99,7 +99,7 @@ content-length: 26
 
 Ниже приведен пример отклика.
 
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

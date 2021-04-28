@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 64ce3cee24711d72ec651675e49adf2e73ac1164
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a513eb2991f9d1504d94210573f5b4f7da2b71a8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134297"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52049025"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: Перечисление владельцев
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
-> Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

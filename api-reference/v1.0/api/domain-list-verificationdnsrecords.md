@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9d2191181051c9fc74d4746de1ba61c3326b3cd3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8c2f7bfde2ec9275f4ab80e1108b610340a9729d
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448349"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039694"
 ---
 # <a name="list-verificationdnsrecords"></a>Проверка спискаDnsRecords
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecord
 
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
