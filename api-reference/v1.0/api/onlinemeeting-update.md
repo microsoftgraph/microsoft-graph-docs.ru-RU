@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 42bc40f6dc1ec6f72996ade9b0a552bc94d0a69f
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 8e6ba3e4d3a36b1d9d14ad4ab9528af98d22dbc8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51870011"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055871"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -45,7 +45,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
-> - `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -66,7 +66,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime          | DateTime                                                     | Время окончания собрания в UTC.                                                                                                                   |
 | subject              | String                                                       | Тема собрания в Интернете.                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Участники, связанные с онлайн-собранием. Это включает организатора и участников.                                            |
-| isEntryExitAnnounced | Boolean                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
+| isEntryExitAnnounced | Логический                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Указывает, какие участники могут обойти вестибюль собрания.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Указывает, кто может быть презентовщиком на собрании. Возможные значения — это все, организация, roleIsPresenter, организатор и неизвестныйFutureValue. |
 
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

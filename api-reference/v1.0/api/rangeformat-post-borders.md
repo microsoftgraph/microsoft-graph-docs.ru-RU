@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a96efc8519e8e3a2247c06234ff389c818712bd8
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 01aa529e38f5eb5868a0a8d8a620343c0d74df0a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577214"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055787"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -92,7 +92,7 @@ Content-length: 136
 
 В теле запроса поставляем JSON-представление [объекта WorkbookRangeBorder.](../resources/rangeborder.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,19 +1,19 @@
 ---
-title: Обзор API обзоров доступа для групп
-description: API обзоров доступа для групп позволяет программным образом просмотреть доступ к группам
+title: Обзор API обзоров доступа
+description: API обзоров доступа позволяет программным образом просмотреть доступ к ресурсам Azure AD.
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: a009ac515024cbd04159138434e5408536671aaf
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 92ea2d49fae37c5b4d5ae82e390f897af9ff4cde
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51922055"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067063"
 ---
-# <a name="overview-of-the-access-reviews-api-for-groups"></a>Обзор API обзоров доступа для групп
+# <a name="overview-of-the-access-reviews-api"></a>Обзор API проверок доступа
 
-API [обзоров доступа для групп](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) в Microsoft Graph позволяет программным образом просмотреть доступ к группам. К ним относятся:
+API [обзоров](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) доступа в Microsoft Graph позволяет программным образом просмотреть доступ к ресурсам Azure AD. К ним относятся:
 + Создание, чтение, обновление и удаление обзоров доступа, параметров обзора доступа и расписания.
 + Изучение прошлых обзоров доступа и решений, принятых рецензентами, в том числе действий Azure AD, принятых автоматически.
 
@@ -40,11 +40,11 @@ API обзоров доступа поддерживают как делегир
 Попробуйте следующие учебники для управления отзывами о доступе:
 
 + [Используйте API отзывов доступа для групп, чтобы просмотреть доступ к группам безопасности](tutorial-accessreviews-securitygroup.md)
-+ [Используйте API отзывов доступа для групп, чтобы просмотреть доступ ко всем группам Microsoft 365 с гостевых пользователей](tutorial-accessreviews-M365group.md)
++ [Используйте API обзоров доступа для групп, чтобы просмотреть доступ ко всем группам Microsoft 365 с гостевых пользователей](tutorial-accessreviews-M365group.md)
 
 ## <a name="see-also"></a>См. также
 
-+ [Планирование развертывания обзоров доступа к Azure Active Directory](/azure/active-directory/governance/deploy-access-reviews)
++ [Планирование Azure Active Directory проверки доступа](/azure/active-directory/governance/deploy-access-reviews)
 + [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
 + [Получение доступа от имени пользователя](/graph/auth-v2-user)
 + [Получение доступа без пользователя](/graph/auth-v2-service)

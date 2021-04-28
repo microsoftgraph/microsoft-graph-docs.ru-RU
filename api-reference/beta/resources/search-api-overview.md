@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 08baf178608287709632c44cc5e96efd02d34a7a
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 070d799c80fd9d10916d9adfb3a48a9d033883af
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883055"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067042"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -40,6 +40,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 |[Сортировка результатов поиска](#sort-search-results)| **sort** |
 |[Уточнение результатов с помощью агрегатов](#refine-results-using-aggregations)| **aggregations** |
 |[Поиск пользовательских типов, импортированных с помощью соединителей](/graph/search-concept-custom-types)| **contentSources** |
+|[Исправление орфографии в запросе](#request-spelling-correction)| **queryAlterationOptions** |
 
 ## <a name="scope-search-based-on-entity-types"></a>Поиск в области по типам объектов
 
@@ -143,6 +144,14 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Примеры использования агрегатов для улучшения и снижения объема результатов поиска см. в разделе [Уточнение результатов поиска](/graph/search-concept-aggregation).
 
+## <a name="request-spelling-correction"></a>Исправление орфографии в запросе
+
+Исправление орфографии — популярный способ обработки несоответствий между опечатками в запросе пользователя и правильными словами в содержимом. При обнаружении опечаток в исходном пользовательском запросе вы можете получить результат поиска для исходного запроса пользователя или исправленной версии запроса. Вы также можете получить сведения об исправлении опечаток в свойстве **queryAlterationResponse** объекта [searchresponse](searchresponse.md). 
+
+В теле метода [запроса](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) укажите **queryAlterationOptions** для применения с целью исправления орфографии в запросе. Описание **queryAlterationOptions** определяется в [searchAlterationOptions](./searchalterationoptions.md).
+
+Примеры использования исправлений орфографии см. в разделе [Исправление орфографии в запросе](/graph/search-concept-speller).
+
 ## <a name="error-handling"></a>Обработка ошибок
 
 API поиска возвращает отклики с ошибками, описанные в [определении объектов ошибок OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), каждый из которых представляет собой объект JSON, содержащий код и сообщение.
@@ -193,6 +202,7 @@ API поиска возвращает отклики с ошибками, опи
   - [Поиск пользовательских типов, импортированных с помощью соединителей](/graph/search-concept-custom-types)
   - [Сортировка результатов поиска](/graph/search-concept-sort)
   - [Уточнение результатов поиска](/graph/search-concept-aggregation)
+  - [Исправление орфографии в запросе](/graph/search-concept-speller)
 
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 

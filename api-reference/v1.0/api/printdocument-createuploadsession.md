@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9de1372e4c4e9bb6819c06a563eda6763a407d0e
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c72144dc8b4aa39a87b1c8785ba61e69dab16c37
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518044"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067217"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument: createUploadSession
 Пространство имен: microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "50518044"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | PrintJob.ReadWrite.All |
+| Для приложений                            | PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -85,7 +85,8 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 
 ### <a name="request"></a>Запрос
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "printdocument_createuploadsession"
 }
 -->
 ``` http

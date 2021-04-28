@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 63d936ab649a4e8842d633033a74d8958cd22bed
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1317b50520d7e80e918141b9526e5691ceddf6ac
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441783"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055878"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: дельта
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/delta
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- { 
   "blockType": "response",
   "truncated": true,

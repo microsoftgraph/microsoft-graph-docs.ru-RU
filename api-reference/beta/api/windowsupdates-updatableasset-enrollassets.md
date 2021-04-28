@@ -1,0 +1,101 @@
+---
+title: 'updatableAsset: регистрацияAssets'
+description: Регистрация ресурсов updatableAsset в управлении обновлениями службой развертывания.
+author: Alice-at-Microsoft
+localization_priority: Normal
+ms.prod: w10
+doc_type: apiPageType
+ms.openlocfilehash: 2b488eaaa70ba0b04a440aabcde0d759ad6e8d36
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067598"
+---
+# <a name="updatableasset-enrollassets"></a>updatableAsset: регистрацияAssets
+Пространство имен: microsoft.graph.windowsUpdates
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Регистрация [ресурсов updatableAsset](../resources/windowsupdates-updatableasset.md) в управлении обновлениями службой развертывания.
+
+Вы можете записать ресурс [azureADDevice](../resources/windowsupdates-azureaddevice.md) в управление обновлениями, но не зарегистрировать [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) в управлении обновлениями.
+
+Регистрация устройства Azure AD в управлении обновлениями автоматически создает объект **azureADDevice,** если он еще не существует.
+
+Вы также можете использовать метод [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid.md) для регистрации активов.
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|WindowsUpdates.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /admin/windows/updates/updatableAssets/enrollAssets
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+|Content-Type|application/json. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+В тело запроса добавьте параметры в формате JSON.
+
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
+
+|Параметр|Тип|Описание|
+|:---|:---|:---|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений для управления службой. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature` .|
+|assets|[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Список **ресурсов updatableAsset** для регистрации в управлении обновлениями службой для данного **обновленияCategory.**|
+
+## <a name="response"></a>Ответ
+
+В случае успешного выполнения это действие возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "updatableasset_enrollassets"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssets
+Content-Type: application/json
+
+{
+  "updateCategory": "String",
+  "assets": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
+      "id": "String (identifier)"
+    }
+  ]
+}
+```
+
+
+### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+```
+

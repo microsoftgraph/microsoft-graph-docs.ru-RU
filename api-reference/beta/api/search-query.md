@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 688fb39ef0c4170feb5e134e439e6b1c538ecbc6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8637e16e686ddbd87476646636a414c0c09bee34
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053484"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067182"
 ---
 # <a name="searchentity-query"></a>объект поиска: запрос
 
@@ -52,10 +52,11 @@ POST /search/query
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
 |запросы|[коллекция searchRequest](../resources/searchrequest.md)|Коллекция из одного или более запросов поиска, каждый из которых отформатирован в BLOB JSON. Каждая blob JSON содержит типы ресурсов, ожидаемых в ответе, основные источники, параметры paging, запрашиваемого поля и фактический запрос поиска. <br> Будьте в курсе [известных ограничений](../resources/search-api-overview.md#known-limitations) на поиск определенных комбинаций типов сущностей, а также сортировку или агрегирование результатов поиска. |
+|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Параметры изменения запроса, отформатированные в blob JSON, который содержит два необязательных флага для коррекции орфографии. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и объект `HTTP 200 OK` [коллекции searchResponse](../resources/searchresponse.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `HTTP 200 OK` [объект searchResponse](../resources/searchresponse.md) в тексте ответа.
  
 
 ## <a name="examples"></a>Примеры
@@ -166,6 +167,7 @@ Content-type: application/json
 - Пользовательские [типы поиска (Graph соединители)](/graph/search-concept-custom-types) данных
 - [Сортировка](/graph/search-concept-sort) результатов поиска
 - Использование [агрегаций для](/graph/search-concept-aggregations) уточнения результатов поиска
+- Включить [исправления орфографии](/graph/search-concept-speller) в результатах поиска
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

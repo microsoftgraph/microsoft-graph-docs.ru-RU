@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b83a9776e39c6bf58e2d42ebd7eaf04a30cb481
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7746fb03f6f47f81f0807cdc42e1b7af8a982cfe
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131723"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52055934"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -37,7 +37,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительская папка в URL-адресе запроса в качестве ИД папки или известного имени папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительную папку в URL-адресе запроса в качестве ИД папки или имени известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** — это единственное свойство, списамое для объекта [mailFolder.](../resources/mailfolder.md)
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** — единственное writable свойство для [объекта mailFolder.](../resources/mailfolder.md)
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика и ресурс `201 Created` [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешного использования этот метод возвращает код ответа и ресурс `201 Created` [mailFolder](../resources/mailfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -101,7 +101,7 @@ Content-length: 159
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

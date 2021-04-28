@@ -1,0 +1,107 @@
+---
+title: Записи списка
+description: Получите список ресурсов catalogEntry из каталога.
+author: Alice-at-Microsoft
+localization_priority: Normal
+ms.prod: w10
+doc_type: apiPageType
+ms.openlocfilehash: c00dafaf9c6a28f5dd5c747a747ab1d8e84419a4
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52068141"
+---
+# <a name="list-entries"></a>Записи списка
+Пространство имен: microsoft.graph.windowsUpdates
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получите список ресурсов [catalogEntry](../resources/windowsupdates-catalogentry.md) из [каталога.](../resources/windowsupdates-catalog.md)
+
+В настоящее время эта операция возвращает записи типов [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) или [qualityUpdateCatalog,](../resources/windowsupdates-qualityupdatecatalogentry.md) унаследованных от **catalogEntry.** 
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|WindowsUpdates.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /admin/windows/updates/catalog/entries
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает некоторые параметры [запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ, в том числе `$count` , , , , , и `$filter` `$orderBy` `$select` `$skip` `$top` .
+
+Чтобы использовать параметр запроса для свойства, которое не наследуется **из catalogEntry,** включайте полный тип ресурса для свойства. Например, для фильтрации свойства **версии** [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md)используйте `$filter=microsoft.graph.windowsUpdates.featureUpdateCatalogEntry/version` .
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов catalogEntry в тексте отклика.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "list_catalogentry"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
+```
+
+
+### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.catalogEntry)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+      "id": "c1dec151-c151-c1de-51c1-dec151c1dec1",
+      "displayName": "String",
+      "releaseDateTime": "String (timestamp)",
+      "deployableUntilDateTime": "String (timestamp)",
+      "version": "String"
+    },
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
+      "id": "d0c03fbb-43b9-4dff-840b-974ef227384d",
+      "displayName": "String",
+      "releaseDateTime": "String (timestamp)",
+      "deployableUntilDateTime": "String (timestamp)",
+      "isExpeditable": true,
+      "qualityUpdateClassification": "security"
+    }
+  ]
+}
+```
+

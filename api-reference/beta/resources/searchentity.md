@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Сеарчентити
-description: Объект верхнего уровня, представляющий конечную точку API Microsoft Search.
+title: Тип ресурса searchEntity
+description: Объект верхнего уровня, представляющий конечную точку API поиска Майкрософт.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: cb6d5bdd5288a3f6098f33d3432a0e4f0d7ac8bd
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d62292b3a4890589d72214a3544059eaf8af8817
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193968"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067133"
 ---
-# <a name="searchentity-resource-type"></a>Тип ресурса Сеарчентити
+# <a name="searchentity-resource-type"></a>Тип ресурса searchEntity
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект верхнего уровня, представляющий конечную точку API Microsoft Search. Он не работает как другой ресурс в Graph, но служит привязкой к действию [запроса](../api/search-query.md) . 
+Объект верхнего уровня, представляющий конечную точку API поиска Майкрософт. Он не ведет себя как любой другой ресурс в Graph, но служит якорем для [действия запроса.](../api/search-query.md) 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[query](../api/search-query.md) |Коллекция [сеарчреспонсе](searchresponse.md) | Выполняет запрос, указанный в теле запроса.  |
+|[query](../api/search-query.md) |[searchResponse](searchresponse.md) | Выполняет запрос, указанный в теле запроса.  |
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -50,7 +50,7 @@ ms.locfileid: "48193968"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Изучите действие [запроса](../api/search-query.md) .
+Ознакомьтесь [с действием запроса.](../api/search-query.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

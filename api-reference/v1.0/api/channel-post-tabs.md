@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2b48dbdf8bc9991449970e69b92b28911585800b
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 5c4a7c8c82226c18a2e509377fdea87e4fa205a6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607352"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52050572"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

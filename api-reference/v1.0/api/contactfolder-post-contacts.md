@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a1ead090f2ad376213d18ed29ed1d88b65693aad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf20b2b9388dea809214e5978737c098892812b0
+ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010124"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061870"
 ---
 # <a name="create-contact"></a>Создание контакта
 
@@ -108,7 +108,9 @@ Content-length: 210
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

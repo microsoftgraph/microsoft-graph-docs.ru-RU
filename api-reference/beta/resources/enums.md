@@ -1,16 +1,16 @@
 ---
 title: Значения Enum
-description: Значения переумерия Microsoft Graph
+description: Значения Graph microsoft
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 42ee6a9363efd868085cecb62a9a6aa5ac5600d4
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: 6004a27fa12fd7246830e463f67b43c2872a0157
+ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697209"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52067203"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -810,13 +810,20 @@ ms.locfileid: "51697209"
 |Member|
 |:---|
 |event|
-|сообщение|
+|message|
 |driveItem|
 |externalItem|
 |site|
 |список|
 |listItem|
 |drive|
+
+### <a name="searchalterationtype-values"></a>значения searchAlterationType
+
+| Member | Описание |
+|:---------------|:----------|
+|предложение|Получите результаты поиска для исходного запроса пользователя и рекомендуемые сведения об исправлении орфографии для опечаток в запросе.|
+|изменение|Получите результаты поиска для исправленного изменения запроса и сведения об исправлении орфографии для опечаток.|
 
 ### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty values
 
@@ -1304,7 +1311,7 @@ ms.locfileid: "51697209"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1520,7 +1527,7 @@ Enum для серьезности оповещений.
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группе) в определении Windows.
+Возможные значения для типов учетных записей пользователей (членство в группе) в Windows определения.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
@@ -1675,7 +1682,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|сообщение|
+|message|
 
 ### <a name="chatmessageimportance-values"></a>значения chatMessageImportance
 
@@ -1751,7 +1758,7 @@ Enum для серьезности оповещений.
 | Member       |
 |:--------------|
 |event|
-|сообщение|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -1895,7 +1902,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -1949,8 +1956,8 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | нет                  | 0     | Еще не знаю.                       |
-| mailFlowRule          | 1     | Правило транспорта Exchange.            |
-| safeSender            | 2     | Безопасный список отправитель.                   |
+| mailFlowRule          | 1     | Exchange правила транспорта.            |
+| safeSender            | 2     | Сейф отправитель.                   |
 | blockedSender         | 3     | Заблокированный список отправитель.                |
 | advancedSpamFiltering | 4      | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5      | Список разрешаемой области отправитель.           |
@@ -2164,6 +2171,6 @@ Enum для серьезности оповещений.
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что приложение Teams может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
-|groupChat |1        |Указывает, что приложение Teams может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
-|personal  |2        |Указывает, что приложение Teams может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
+|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
+|personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|

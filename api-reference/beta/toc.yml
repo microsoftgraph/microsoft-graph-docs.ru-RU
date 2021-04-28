@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1604,7 +1604,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Удаление элемента журнала
                     href: api/projectrome-delete-historyitem.md
-      - name: Запись клиентов (предварительная версия)
+      - name: Резервирование для клиентов (ознакомительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Обзор
@@ -9469,6 +9469,99 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Назначение
                     href: api/cloudpcprovisioningpolicy-assign.md
+          - name: Обновления устройств (предварительный просмотр)
+            displayName: Windows updates
+            items:
+              - name: Обновления
+                href: resources/windowsupdates-updates.md
+              - name: Каталог
+                items:
+                  - name: Каталог
+                    href: resources/windowsupdates-catalog.md
+                  - name: Запись каталога обновления функций
+                    href: resources/windowsupdates-featureupdatecatalogentry.md
+                  - name: Запись каталога обновления качества
+                    href: resources/windowsupdates-qualityupdatecatalogentry.md
+                  - name: Записи каталога списков
+                    href: api/windowsupdates-catalog-list-entries.md
+              - name: Развертывание
+                href: resources/windowsupdates-deployment.md
+                items:
+                  - name: Развертывание списков
+                    href: api/windowsupdates-updates-list-deployments.md
+                  - name: Создание развертывания
+                    href: api/windowsupdates-updates-post-deployments.md
+                  - name: Развертывание
+                    href: api/windowsupdates-deployment-get.md
+                  - name: Обновление развертывания
+                    href: api/windowsupdates-deployment-update.md
+                  - name: Удаление развертывания
+                    href: api/windowsupdates-deployment-delete.md
+                  - name: Развертываемый контент
+                    items:
+                      - name: Ссылка на ускоренное обновление качества
+                        href: resources/windowsupdates-expeditedqualityupdatereference.md
+                      - name: Справка об обновлении функций
+                        href: resources/windowsupdates-featureupdatereference.md
+                  - name: Аудитория развертывания
+                    items:
+                      - name: Аудитория развертывания
+                        href: resources/windowsupdates-deploymentaudience.md
+                      - name: Список участников
+                        href: api/windowsupdates-deploymentaudience-list-members.md
+                      - name: Исключения списка
+                        href: api/windowsupdates-deploymentaudience-list-exclusions.md
+                      - name: Обновление участников и исключений
+                        href: api/windowsupdates-deploymentaudience-updateaudience.md
+                      - name: Обновление по ID
+                        href: api/windowsupdates-deploymentaudience-updateaudiencebyid.md
+              - name: Updatable asset
+                href: resources/windowsupdates-updatableasset.md
+                items:
+                  - name: Список updatable assets
+                    href: api/windowsupdates-updates-list-updatableassets.md
+                  - name: Получить updatable asset
+                    href: api/windowsupdates-updatableasset-get.md
+                  - name: Удаление updatable asset
+                    href: api/windowsupdates-updatableasset-delete.md
+                  - name: Устройство Azure AD
+                    href: resources/windowsupdates-azureaddevice.md
+                    items:
+                      - name: Список устройств Azure AD
+                        href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
+                      - name: Получить устройство Azure AD
+                        href: api/windowsupdates-azureaddevice-get.md
+                      - name: Удаление устройства Azure AD
+                        href: api/windowsupdates-azureaddevice-delete.md
+                      - name: Регистрация в управлении обновлениями
+                        href: api/windowsupdates-updatableasset-enrollassets.md
+                      - name: Регистрация по ID
+                        href: api/windowsupdates-updatableasset-enrollassetsbyid.md
+                      - name: Unenroll from update management
+                        href: api/windowsupdates-updatableasset-unenrollassets.md
+                      - name: Unenroll by ID
+                        href: api/windowsupdates-updatableasset-unenrollassetsbyid.md
+                  - name: Updatable asset group
+                    href: resources/windowsupdates-updatableassetgroup.md
+                    items:
+                      - name: Список updatable asset groups
+                        href: api/windowsupdates-updates-list-updatableassets-updatableassetgroup.md
+                      - name: Создание updatable asset group
+                        href: api/windowsupdates-updates-post-updatableassets-updatableassetgroup.md
+                      - name: Get updatable asset group
+                        href: api/windowsupdates-updatableassetgroup-get.md
+                      - name: Удаление updatable asset group
+                        href: api/windowsupdates-updatableassetgroup-delete.md
+                      - name: Список участников
+                        href: api/windowsupdates-updatableassetgroup-list-members.md
+                      - name: Добавление участников
+                        href: api/windowsupdates-updatableassetgroup-addmembers.md
+                      - name: Добавление участников по ID
+                        href: api/windowsupdates-updatableassetgroup-addmembersbyid.md
+                      - name: Удаление участников
+                        href: api/windowsupdates-updatableassetgroup-removemembers.md
+                      - name: Удаление участников по ID
+                        href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
       - name: Образование
         items:
           - name: Общие сведения
@@ -11114,6 +11207,13 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Update
                         href: api/accessreviewinstancedecisionitem-update.md
+                  - name: Политика проверки доступа
+                    href: resources/accessreviewpolicy.md
+                    items:
+                      - name: Получение
+                        href: api/accessreviewpolicy-get.md
+                      - name: Обновление
+                        href: api/accessreviewpolicy-update.md
               - name: Отзывы доступа (устаревшие)
                 href: resources/accessreviews-root.md
                 items:
@@ -11648,7 +11748,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор
@@ -11908,7 +12008,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -12760,7 +12860,7 @@ items:
                 href: api/columndefinition-delete.md
           - name: типы контента;
             items:
-              - name: Тип контента
+              - name: Тип содержимого
                 href: resources/contentType.md
               - name: Получение
                 href: api/contenttype-get.md
