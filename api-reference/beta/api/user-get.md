@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e6caed0bcd6a8327068726a403b7531354864a25
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8a71a50714d18d4d4d8e91a4f5a7e0c0b31fe9e6
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720139"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52052637"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -38,6 +38,8 @@ ms.locfileid: "50720139"
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+Обратите внимание, что если **userPrincipalName** начинается с символа `$`, нужно удалить косую черту (/) после `/users` и заключить **userPrincipalName** в скобки и одиночные кавычки. Дополнительные сведения см. в списке [известных проблем](/graph/known-issues#users).
 
 Для вошедшего пользователя:
 <!-- { "blockType": "ignored" } -->
@@ -100,7 +102,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. 
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",
