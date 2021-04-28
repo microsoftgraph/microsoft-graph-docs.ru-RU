@@ -5,32 +5,32 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6779f7db60278cbd6df4c08007af5c0d527e80a8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3e9784557a973f38dc7a172ae0a0fec57c763292
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448907"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52033757"
 ---
-# <a name="update-tokenissuancepolicy"></a><span data-ttu-id="1d347-103">Обновление tokenIssuancePolicy</span><span class="sxs-lookup"><span data-stu-id="1d347-103">Update tokenIssuancePolicy</span></span>
+# <a name="update-tokenissuancepolicy"></a><span data-ttu-id="cbdcc-103">Обновление tokenIssuancePolicy</span><span class="sxs-lookup"><span data-stu-id="cbdcc-103">Update tokenIssuancePolicy</span></span>
 
-<span data-ttu-id="1d347-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1d347-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cbdcc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cbdcc-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="1d347-105">Обновление свойств объекта [tokenIssuancePolicy.](../resources/tokenIssuancePolicy.md)</span><span class="sxs-lookup"><span data-stu-id="1d347-105">Update the properties of a [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) object.</span></span>
+<span data-ttu-id="cbdcc-105">Обновление свойств объекта [tokenIssuancePolicy.](../resources/tokenIssuancePolicy.md)</span><span class="sxs-lookup"><span data-stu-id="cbdcc-105">Update the properties of a [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1d347-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1d347-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cbdcc-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cbdcc-106">Permissions</span></span>
 
-<span data-ttu-id="1d347-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d347-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cbdcc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbdcc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1d347-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1d347-109">Permission type</span></span>                        | <span data-ttu-id="1d347-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1d347-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="cbdcc-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cbdcc-109">Permission type</span></span>                        | <span data-ttu-id="cbdcc-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cbdcc-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="1d347-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1d347-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1d347-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="1d347-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="1d347-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1d347-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d347-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1d347-114">Not supported.</span></span> |
-| <span data-ttu-id="1d347-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1d347-115">Application</span></span>                            | <span data-ttu-id="1d347-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="1d347-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="cbdcc-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cbdcc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="cbdcc-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="cbdcc-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="cbdcc-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cbdcc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbdcc-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-114">Not supported.</span></span> |
+| <span data-ttu-id="cbdcc-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cbdcc-115">Application</span></span>                            | <span data-ttu-id="cbdcc-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="cbdcc-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1d347-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1d347-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbdcc-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cbdcc-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,36 +38,36 @@ ms.locfileid: "50448907"
 PATCH /policies/tokenIssuancePolicies/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1d347-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1d347-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cbdcc-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cbdcc-118">Request headers</span></span>
 
-| <span data-ttu-id="1d347-119">Имя</span><span class="sxs-lookup"><span data-stu-id="1d347-119">Name</span></span>       | <span data-ttu-id="1d347-120">Описание</span><span class="sxs-lookup"><span data-stu-id="1d347-120">Description</span></span>|
+| <span data-ttu-id="cbdcc-119">Имя</span><span class="sxs-lookup"><span data-stu-id="cbdcc-119">Name</span></span>       | <span data-ttu-id="cbdcc-120">Описание</span><span class="sxs-lookup"><span data-stu-id="cbdcc-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="1d347-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1d347-121">Authorization</span></span> | <span data-ttu-id="1d347-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1d347-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1d347-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1d347-124">Content-type</span></span> | <span data-ttu-id="1d347-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1d347-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="cbdcc-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cbdcc-121">Authorization</span></span> | <span data-ttu-id="cbdcc-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cbdcc-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cbdcc-124">Content-type</span></span> | <span data-ttu-id="cbdcc-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1d347-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1d347-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbdcc-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cbdcc-127">Request body</span></span>
 
-<span data-ttu-id="1d347-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="1d347-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="1d347-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="1d347-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="1d347-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="1d347-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="cbdcc-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="cbdcc-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="cbdcc-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1d347-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="1d347-131">Property</span></span>     | <span data-ttu-id="1d347-132">Тип</span><span class="sxs-lookup"><span data-stu-id="1d347-132">Type</span></span>        | <span data-ttu-id="1d347-133">Описание</span><span class="sxs-lookup"><span data-stu-id="1d347-133">Description</span></span> |
+| <span data-ttu-id="cbdcc-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="cbdcc-131">Property</span></span>     | <span data-ttu-id="cbdcc-132">Тип</span><span class="sxs-lookup"><span data-stu-id="cbdcc-132">Type</span></span>        | <span data-ttu-id="cbdcc-133">Описание</span><span class="sxs-lookup"><span data-stu-id="cbdcc-133">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1d347-134">определение</span><span class="sxs-lookup"><span data-stu-id="1d347-134">definition</span></span>|<span data-ttu-id="1d347-135">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="1d347-135">String collection</span></span>| <span data-ttu-id="1d347-136">Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.</span><span class="sxs-lookup"><span data-stu-id="1d347-136">A string collection containing a JSON string that defines the rules and settings for this policy.</span></span>  <span data-ttu-id="1d347-137">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1d347-137">Required.</span></span>|
-|<span data-ttu-id="1d347-138">description</span><span class="sxs-lookup"><span data-stu-id="1d347-138">description</span></span>|<span data-ttu-id="1d347-139">String</span><span class="sxs-lookup"><span data-stu-id="1d347-139">String</span></span>| <span data-ttu-id="1d347-140">Описание этой политики.</span><span class="sxs-lookup"><span data-stu-id="1d347-140">Description for this policy.</span></span>|
-|<span data-ttu-id="1d347-141">displayName</span><span class="sxs-lookup"><span data-stu-id="1d347-141">displayName</span></span>|<span data-ttu-id="1d347-142">String</span><span class="sxs-lookup"><span data-stu-id="1d347-142">String</span></span>| <span data-ttu-id="1d347-143">Отображение имени для этой политики.</span><span class="sxs-lookup"><span data-stu-id="1d347-143">Display name for this policy.</span></span> <span data-ttu-id="1d347-144">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="1d347-144">Required.</span></span>|
-|<span data-ttu-id="1d347-145">isOrganizationDefault</span><span class="sxs-lookup"><span data-stu-id="1d347-145">isOrganizationDefault</span></span>|<span data-ttu-id="1d347-146">Логический</span><span class="sxs-lookup"><span data-stu-id="1d347-146">Boolean</span></span>|<span data-ttu-id="1d347-147">Если заданной для true, активирует эту политику.</span><span class="sxs-lookup"><span data-stu-id="1d347-147">If set to true, activates this policy.</span></span> <span data-ttu-id="1d347-148">Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации.</span><span class="sxs-lookup"><span data-stu-id="1d347-148">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="1d347-149">Необязательный, значение по умолчанию является ложным.</span><span class="sxs-lookup"><span data-stu-id="1d347-149">Optional, default value is false.</span></span>|
+|<span data-ttu-id="cbdcc-134">определение</span><span class="sxs-lookup"><span data-stu-id="cbdcc-134">definition</span></span>|<span data-ttu-id="cbdcc-135">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="cbdcc-135">String collection</span></span>| <span data-ttu-id="cbdcc-136">Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-136">A string collection containing a JSON string that defines the rules and settings for this policy.</span></span>  <span data-ttu-id="cbdcc-137">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-137">Required.</span></span>|
+|<span data-ttu-id="cbdcc-138">description</span><span class="sxs-lookup"><span data-stu-id="cbdcc-138">description</span></span>|<span data-ttu-id="cbdcc-139">String</span><span class="sxs-lookup"><span data-stu-id="cbdcc-139">String</span></span>| <span data-ttu-id="cbdcc-140">Описание этой политики.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-140">Description for this policy.</span></span>|
+|<span data-ttu-id="cbdcc-141">displayName</span><span class="sxs-lookup"><span data-stu-id="cbdcc-141">displayName</span></span>|<span data-ttu-id="cbdcc-142">String</span><span class="sxs-lookup"><span data-stu-id="cbdcc-142">String</span></span>| <span data-ttu-id="cbdcc-143">Отображение имени для этой политики.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-143">Display name for this policy.</span></span> <span data-ttu-id="cbdcc-144">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-144">Required.</span></span>|
+|<span data-ttu-id="cbdcc-145">isOrganizationDefault</span><span class="sxs-lookup"><span data-stu-id="cbdcc-145">isOrganizationDefault</span></span>|<span data-ttu-id="cbdcc-146">Логический</span><span class="sxs-lookup"><span data-stu-id="cbdcc-146">Boolean</span></span>|<span data-ttu-id="cbdcc-147">Если заданной для true, активирует эту политику.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-147">If set to true, activates this policy.</span></span> <span data-ttu-id="cbdcc-148">Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-148">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="cbdcc-149">Необязательный, значение по умолчанию является ложным.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-149">Optional, default value is false.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1d347-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d347-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cbdcc-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="cbdcc-150">Response</span></span>
 
-<span data-ttu-id="1d347-p108">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="1d347-p108">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="cbdcc-p108">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-p108">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1d347-153">Пример</span><span class="sxs-lookup"><span data-stu-id="1d347-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cbdcc-153">Пример</span><span class="sxs-lookup"><span data-stu-id="cbdcc-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1d347-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="1d347-154">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cbdcc-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="cbdcc-154">Request</span></span>
 
-<span data-ttu-id="1d347-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1d347-155">The following is an example of the request.</span></span>
+<span data-ttu-id="cbdcc-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-155">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1d347-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="1d347-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cbdcc-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="cbdcc-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tokenissuancepolicy"
@@ -85,30 +85,30 @@ Content-type: application/json
   "isOrganizationDefault": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1d347-157">C#</span><span class="sxs-lookup"><span data-stu-id="1d347-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cbdcc-157">C#</span><span class="sxs-lookup"><span data-stu-id="cbdcc-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tokenissuancepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1d347-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1d347-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cbdcc-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cbdcc-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-tokenissuancepolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1d347-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1d347-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cbdcc-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cbdcc-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tokenissuancepolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1d347-160">Java</span><span class="sxs-lookup"><span data-stu-id="1d347-160">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cbdcc-160">Java</span><span class="sxs-lookup"><span data-stu-id="cbdcc-160">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tokenissuancepolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="1d347-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d347-161">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cbdcc-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="cbdcc-161">Response</span></span>
 
-<span data-ttu-id="1d347-162">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1d347-162">The following is an example of the response.</span></span>
+<span data-ttu-id="cbdcc-162">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-162">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="1d347-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1d347-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="cbdcc-163">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="cbdcc-163">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -5,55 +5,55 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5e7760516f248415139403cd404081839b0dbe5d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6af7e3e67186eff92449bcbbf8f5b87ebbf5a7ec
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964521"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52035927"
 ---
-# <a name="get-call"></a><span data-ttu-id="df20b-103">Получение вызова</span><span class="sxs-lookup"><span data-stu-id="df20b-103">Get call</span></span>
+# <a name="get-call"></a><span data-ttu-id="45b64-103">Получение вызова</span><span class="sxs-lookup"><span data-stu-id="45b64-103">Get call</span></span>
 
-<span data-ttu-id="df20b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="df20b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="45b64-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="45b64-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="df20b-105">Извлечение свойств и связей объекта вызова.</span><span class="sxs-lookup"><span data-stu-id="df20b-105">Retrieve the properties and relationships of a call object.</span></span>
+<span data-ttu-id="45b64-105">Извлечение свойств и связей объекта вызова.</span><span class="sxs-lookup"><span data-stu-id="45b64-105">Retrieve the properties and relationships of a call object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="df20b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="df20b-106">Permissions</span></span>
-<span data-ttu-id="df20b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="df20b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="45b64-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="45b64-106">Permissions</span></span>
+<span data-ttu-id="45b64-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="45b64-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="df20b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="df20b-109">Permission type</span></span> | <span data-ttu-id="df20b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="df20b-110">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="45b64-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="45b64-109">Permission type</span></span> | <span data-ttu-id="45b64-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="45b64-110">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="df20b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="df20b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="df20b-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df20b-112">Not Supported.</span></span>                         |
-| <span data-ttu-id="df20b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="df20b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df20b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df20b-114">Not Supported.</span></span>                         |
-| <span data-ttu-id="df20b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="df20b-115">Application</span></span>                            | <span data-ttu-id="df20b-116">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="df20b-116">None.</span></span>                                  |
+| <span data-ttu-id="45b64-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="45b64-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="45b64-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="45b64-112">Not Supported.</span></span>                         |
+| <span data-ttu-id="45b64-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="45b64-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45b64-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="45b64-114">Not Supported.</span></span>                         |
+| <span data-ttu-id="45b64-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="45b64-115">Application</span></span>                            | <span data-ttu-id="45b64-116">Нет.</span><span class="sxs-lookup"><span data-stu-id="45b64-116">None.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="df20b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="df20b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45b64-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="45b64-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/calls/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="df20b-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="df20b-118">Optional query parameters</span></span>
-<span data-ttu-id="df20b-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="df20b-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="45b64-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="45b64-118">Optional query parameters</span></span>
+<span data-ttu-id="45b64-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="45b64-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="df20b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="df20b-120">Request headers</span></span>
-| <span data-ttu-id="df20b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="df20b-121">Name</span></span>          | <span data-ttu-id="df20b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="df20b-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="45b64-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="45b64-120">Request headers</span></span>
+| <span data-ttu-id="45b64-121">Имя</span><span class="sxs-lookup"><span data-stu-id="45b64-121">Name</span></span>          | <span data-ttu-id="45b64-122">Описание</span><span class="sxs-lookup"><span data-stu-id="45b64-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="df20b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="df20b-123">Authorization</span></span> | <span data-ttu-id="df20b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="df20b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="45b64-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="45b64-123">Authorization</span></span> | <span data-ttu-id="45b64-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="45b64-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="df20b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="df20b-126">Request body</span></span>
-<span data-ttu-id="df20b-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="df20b-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="45b64-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="45b64-126">Request body</span></span>
+<span data-ttu-id="45b64-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="45b64-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="df20b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="df20b-128">Response</span></span>
-<span data-ttu-id="df20b-129">В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [вызова](../resources/call.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="df20b-129">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="45b64-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="45b64-128">Response</span></span>
+<span data-ttu-id="45b64-129">В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [вызова](../resources/call.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="45b64-129">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="df20b-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="df20b-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="45b64-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="45b64-130">Examples</span></span>
 
-### <a name="example-1-getting-a-peer-to-peer-call"></a><span data-ttu-id="df20b-131">Пример 1. Получение одноранговых вызовов</span><span class="sxs-lookup"><span data-stu-id="df20b-131">Example 1: Getting a Peer-to-Peer call</span></span>
+### <a name="example-1-getting-a-peer-to-peer-call"></a><span data-ttu-id="45b64-131">Пример 1. Получение одноранговых вызовов</span><span class="sxs-lookup"><span data-stu-id="45b64-131">Example 1: Getting a Peer-to-Peer call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="df20b-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="df20b-132">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="45b64-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="45b64-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="df20b-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="df20b-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="45b64-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="45b64-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-call-1"
@@ -62,28 +62,28 @@ GET /communications/calls/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="df20b-134">C#</span><span class="sxs-lookup"><span data-stu-id="df20b-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="45b64-134">C#</span><span class="sxs-lookup"><span data-stu-id="45b64-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="df20b-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="df20b-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="45b64-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="45b64-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="df20b-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="df20b-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="45b64-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="45b64-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="df20b-137">Java</span><span class="sxs-lookup"><span data-stu-id="df20b-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="45b64-137">Java</span><span class="sxs-lookup"><span data-stu-id="45b64-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="df20b-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="df20b-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="45b64-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="45b64-138">Response</span></span>
 
-> <span data-ttu-id="df20b-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="df20b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="45b64-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="45b64-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -154,11 +154,11 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
-### <a name="example-2-getting-a-group-call"></a><span data-ttu-id="df20b-141">Пример 2. Получение группового вызова</span><span class="sxs-lookup"><span data-stu-id="df20b-141">Example 2: Getting a group call</span></span>
+### <a name="example-2-getting-a-group-call"></a><span data-ttu-id="45b64-140">Пример 2. Получение группового вызова</span><span class="sxs-lookup"><span data-stu-id="45b64-140">Example 2: Getting a group call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="df20b-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="df20b-142">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="45b64-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="45b64-141">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="df20b-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="df20b-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="45b64-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="45b64-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-call-2"
@@ -166,26 +166,26 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
-# <a name="c"></a>[<span data-ttu-id="df20b-144">C#</span><span class="sxs-lookup"><span data-stu-id="df20b-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="45b64-143">C#</span><span class="sxs-lookup"><span data-stu-id="45b64-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="df20b-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="df20b-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="45b64-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="45b64-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="df20b-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="df20b-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="45b64-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="45b64-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="df20b-147">Java</span><span class="sxs-lookup"><span data-stu-id="df20b-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="45b64-146">Java</span><span class="sxs-lookup"><span data-stu-id="45b64-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-call-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="df20b-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="df20b-148">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="45b64-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="45b64-147">Response</span></span>
 
 <!-- {
   "blockType": "response",

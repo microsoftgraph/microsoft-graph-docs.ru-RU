@@ -5,35 +5,35 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: f1e3a49218dc8a920e9a11517bd9d6d6bb9f197e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fb5e804682741c79d8ea3daeca5e6512575c16de
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956516"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52039572"
 ---
-# <a name="list-threatassessmentrequests"></a><span data-ttu-id="b989d-103">List threatAssessmentRequests</span><span class="sxs-lookup"><span data-stu-id="b989d-103">List threatAssessmentRequests</span></span>
+# <a name="list-threatassessmentrequests"></a><span data-ttu-id="6352f-103">List threatAssessmentRequests</span><span class="sxs-lookup"><span data-stu-id="6352f-103">List threatAssessmentRequests</span></span>
 
-<span data-ttu-id="b989d-104">Извлечение списка [объектов threatAssessmentRequest.](../resources/threatassessmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="b989d-104">Retrieve a list of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects.</span></span>
+<span data-ttu-id="6352f-104">Извлечение списка [объектов threatAssessmentRequest.](../resources/threatassessmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="6352f-104">Retrieve a list of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects.</span></span>
 
-<span data-ttu-id="b989d-105">Запрос на оценку угроз может быть одним из следующих типов:</span><span class="sxs-lookup"><span data-stu-id="b989d-105">A threat assessment request can be one of the following types:</span></span>
+<span data-ttu-id="6352f-105">Запрос на оценку угроз может быть одним из следующих типов:</span><span class="sxs-lookup"><span data-stu-id="6352f-105">A threat assessment request can be one of the following types:</span></span>
 
-* [<span data-ttu-id="b989d-106">Почта</span><span class="sxs-lookup"><span data-stu-id="b989d-106">Mail</span></span>](../resources/mailAssessmentRequest.md)
-* [<span data-ttu-id="b989d-107">Файл электронной почты</span><span class="sxs-lookup"><span data-stu-id="b989d-107">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
-* [<span data-ttu-id="b989d-108">File</span><span class="sxs-lookup"><span data-stu-id="b989d-108">File</span></span>](../resources/fileAssessmentRequest.md)
-* [<span data-ttu-id="b989d-109">URL-адрес</span><span class="sxs-lookup"><span data-stu-id="b989d-109">URL</span></span>](../resources/urlAssessmentRequest.md)
+* [<span data-ttu-id="6352f-106">Почта</span><span class="sxs-lookup"><span data-stu-id="6352f-106">Mail</span></span>](../resources/mailAssessmentRequest.md)
+* [<span data-ttu-id="6352f-107">Файл электронной почты</span><span class="sxs-lookup"><span data-stu-id="6352f-107">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
+* [<span data-ttu-id="6352f-108">Файл</span><span class="sxs-lookup"><span data-stu-id="6352f-108">File</span></span>](../resources/fileAssessmentRequest.md)
+* [<span data-ttu-id="6352f-109">URL-адрес</span><span class="sxs-lookup"><span data-stu-id="6352f-109">URL</span></span>](../resources/urlAssessmentRequest.md)
 
-## <a name="permissions"></a><span data-ttu-id="b989d-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b989d-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6352f-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6352f-110">Permissions</span></span>
 
-<span data-ttu-id="b989d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b989d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6352f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6352f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b989d-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b989d-113">Permission type</span></span>                        | <span data-ttu-id="b989d-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b989d-114">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="6352f-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6352f-113">Permission type</span></span>                        | <span data-ttu-id="6352f-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6352f-114">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="b989d-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b989d-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="b989d-116">ThreatAssessment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b989d-116">ThreatAssessment.ReadWrite.All</span></span>             |
-| <span data-ttu-id="b989d-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b989d-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b989d-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b989d-118">Not supported.</span></span>                              |
-| <span data-ttu-id="b989d-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b989d-119">Application</span></span>                            | <span data-ttu-id="b989d-120">ThreatAssessment.Read.All</span><span class="sxs-lookup"><span data-stu-id="b989d-120">ThreatAssessment.Read.All</span></span>                  |
+| <span data-ttu-id="6352f-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6352f-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="6352f-116">ThreatAssessment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6352f-116">ThreatAssessment.ReadWrite.All</span></span>             |
+| <span data-ttu-id="6352f-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6352f-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6352f-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6352f-118">Not supported.</span></span>                              |
+| <span data-ttu-id="6352f-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6352f-119">Application</span></span>                            | <span data-ttu-id="6352f-120">ThreatAssessment.Read.All</span><span class="sxs-lookup"><span data-stu-id="6352f-120">ThreatAssessment.Read.All</span></span>                  |
 
-## <a name="http-request"></a><span data-ttu-id="b989d-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b989d-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6352f-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6352f-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,38 +41,38 @@ ms.locfileid: "50956516"
 GET /informationProtection/threatAssessmentRequests
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b989d-122">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b989d-122">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6352f-122">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6352f-122">Optional query parameters</span></span>
 
-<span data-ttu-id="b989d-123">Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="b989d-123">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="b989d-124">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b989d-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="6352f-123">Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="6352f-123">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="6352f-124">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="6352f-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-|<span data-ttu-id="b989d-125">Имя</span><span class="sxs-lookup"><span data-stu-id="b989d-125">Name</span></span>            |<span data-ttu-id="b989d-126">Значение</span><span class="sxs-lookup"><span data-stu-id="b989d-126">Value</span></span>    |<span data-ttu-id="b989d-127">Описание</span><span class="sxs-lookup"><span data-stu-id="b989d-127">Description</span></span>                                                                                                                                                                 |
+|<span data-ttu-id="6352f-125">Имя</span><span class="sxs-lookup"><span data-stu-id="6352f-125">Name</span></span>            |<span data-ttu-id="6352f-126">Значение</span><span class="sxs-lookup"><span data-stu-id="6352f-126">Value</span></span>    |<span data-ttu-id="6352f-127">Описание</span><span class="sxs-lookup"><span data-stu-id="6352f-127">Description</span></span>                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="b989d-128">$filter</span><span class="sxs-lookup"><span data-stu-id="b989d-128">$filter</span></span>         |<span data-ttu-id="b989d-129">string</span><span class="sxs-lookup"><span data-stu-id="b989d-129">string</span></span>   |<span data-ttu-id="b989d-130">Ограничивает ответ только теми объектами, которые содержат указанные критерии.</span><span class="sxs-lookup"><span data-stu-id="b989d-130">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
-|<span data-ttu-id="b989d-131">$orderby</span><span class="sxs-lookup"><span data-stu-id="b989d-131">$orderby</span></span>        |<span data-ttu-id="b989d-132">строка</span><span class="sxs-lookup"><span data-stu-id="b989d-132">string</span></span>   |<span data-ttu-id="b989d-133">По умолчанию объекты в ответе будут нисходящими по своему **значению createdDateTime.**</span><span class="sxs-lookup"><span data-stu-id="b989d-133">By default, the objects in the response are descending ordered by their **createdDateTime** value.</span></span>                                                                          |
-|<span data-ttu-id="b989d-134">$select</span><span class="sxs-lookup"><span data-stu-id="b989d-134">$select</span></span>         |<span data-ttu-id="b989d-135">string</span><span class="sxs-lookup"><span data-stu-id="b989d-135">string</span></span>   |<span data-ttu-id="b989d-p103">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="b989d-p103">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
-|<span data-ttu-id="b989d-138">$skipToken</span><span class="sxs-lookup"><span data-stu-id="b989d-138">$skipToken</span></span>      |<span data-ttu-id="b989d-139">string</span><span class="sxs-lookup"><span data-stu-id="b989d-139">string</span></span>   |<span data-ttu-id="b989d-140">Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.</span><span class="sxs-lookup"><span data-stu-id="b989d-140">Retrieves the next page of results from result sets that span multiple pages.</span></span>                                                                                               |
+|<span data-ttu-id="6352f-128">$filter</span><span class="sxs-lookup"><span data-stu-id="6352f-128">$filter</span></span>         |<span data-ttu-id="6352f-129">string</span><span class="sxs-lookup"><span data-stu-id="6352f-129">string</span></span>   |<span data-ttu-id="6352f-130">Ограничивает ответ только теми объектами, которые содержат указанные критерии.</span><span class="sxs-lookup"><span data-stu-id="6352f-130">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
+|<span data-ttu-id="6352f-131">$orderby</span><span class="sxs-lookup"><span data-stu-id="6352f-131">$orderby</span></span>        |<span data-ttu-id="6352f-132">строка</span><span class="sxs-lookup"><span data-stu-id="6352f-132">string</span></span>   |<span data-ttu-id="6352f-133">По умолчанию объекты в ответе будут нисходящими по своему **значению createdDateTime.**</span><span class="sxs-lookup"><span data-stu-id="6352f-133">By default, the objects in the response are descending ordered by their **createdDateTime** value.</span></span>                                                                          |
+|<span data-ttu-id="6352f-134">$select</span><span class="sxs-lookup"><span data-stu-id="6352f-134">$select</span></span>         |<span data-ttu-id="6352f-135">string</span><span class="sxs-lookup"><span data-stu-id="6352f-135">string</span></span>   |<span data-ttu-id="6352f-p103">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="6352f-p103">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
+|<span data-ttu-id="6352f-138">$skipToken</span><span class="sxs-lookup"><span data-stu-id="6352f-138">$skipToken</span></span>      |<span data-ttu-id="6352f-139">string</span><span class="sxs-lookup"><span data-stu-id="6352f-139">string</span></span>   |<span data-ttu-id="6352f-140">Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.</span><span class="sxs-lookup"><span data-stu-id="6352f-140">Retrieves the next page of results from result sets that span multiple pages.</span></span>                                                                                               |
 
-## <a name="request-headers"></a><span data-ttu-id="b989d-141">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b989d-141">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6352f-141">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6352f-141">Request headers</span></span>
 
-| <span data-ttu-id="b989d-142">Имя</span><span class="sxs-lookup"><span data-stu-id="b989d-142">Name</span></span>      |<span data-ttu-id="b989d-143">Описание</span><span class="sxs-lookup"><span data-stu-id="b989d-143">Description</span></span>|
+| <span data-ttu-id="6352f-142">Имя</span><span class="sxs-lookup"><span data-stu-id="6352f-142">Name</span></span>      |<span data-ttu-id="6352f-143">Описание</span><span class="sxs-lookup"><span data-stu-id="6352f-143">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b989d-144">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b989d-144">Authorization</span></span> | <span data-ttu-id="b989d-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b989d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6352f-144">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6352f-144">Authorization</span></span> | <span data-ttu-id="6352f-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6352f-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b989d-147">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b989d-147">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6352f-147">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6352f-147">Request body</span></span>
 
-<span data-ttu-id="b989d-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b989d-148">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="6352f-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6352f-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b989d-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="b989d-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6352f-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="6352f-149">Response</span></span>
 
-<span data-ttu-id="b989d-150">В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="b989d-150">If successful, this method returns a `200 OK` response code and a collection of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects in the response body.</span></span>
+<span data-ttu-id="6352f-150">В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [threatAssessmentRequest](../resources/threatassessmentrequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="6352f-150">If successful, this method returns a `200 OK` response code and a collection of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b989d-151">Примеры</span><span class="sxs-lookup"><span data-stu-id="b989d-151">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6352f-151">Примеры</span><span class="sxs-lookup"><span data-stu-id="6352f-151">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="b989d-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="b989d-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6352f-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="6352f-152">Request</span></span>
 
-<span data-ttu-id="b989d-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b989d-153">The following is an example of the request.</span></span>
+<span data-ttu-id="6352f-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6352f-153">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b989d-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="b989d-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6352f-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="6352f-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_threatassessmentrequests"
@@ -81,30 +81,30 @@ GET /informationProtection/threatAssessmentRequests
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentRequests
 ```
-# <a name="c"></a>[<span data-ttu-id="b989d-155">C#</span><span class="sxs-lookup"><span data-stu-id="b989d-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6352f-155">C#</span><span class="sxs-lookup"><span data-stu-id="6352f-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threatassessmentrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b989d-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b989d-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6352f-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6352f-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-threatassessmentrequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b989d-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b989d-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6352f-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6352f-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threatassessmentrequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b989d-158">Java</span><span class="sxs-lookup"><span data-stu-id="b989d-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6352f-158">Java</span><span class="sxs-lookup"><span data-stu-id="6352f-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-threatassessmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b989d-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="b989d-159">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6352f-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="6352f-159">Response</span></span>
 
-<span data-ttu-id="b989d-160">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b989d-160">The following is an example of the response.</span></span>
+<span data-ttu-id="6352f-160">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6352f-160">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b989d-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b989d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="6352f-161">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="6352f-161">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
