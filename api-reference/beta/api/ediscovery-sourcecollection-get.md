@@ -5,32 +5,32 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 10841cac03cbc006c62b3b65bf5a48414e046466
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1569492ccc7451dffbbd18788ffc41008030f4ed
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772697"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080367"
 ---
-# <a name="get-sourcecollection"></a><span data-ttu-id="4472f-103">Get sourceCollection</span><span class="sxs-lookup"><span data-stu-id="4472f-103">Get sourceCollection</span></span>
+# <a name="get-sourcecollection"></a><span data-ttu-id="cb1e4-103">Get sourceCollection</span><span class="sxs-lookup"><span data-stu-id="cb1e4-103">Get sourceCollection</span></span>
 
-<span data-ttu-id="4472f-104">Пространство имен: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="4472f-104">Namespace: microsoft.graph.ediscovery</span></span>
+<span data-ttu-id="cb1e4-104">Пространство имен: microsoft.graph.ediscovery</span><span class="sxs-lookup"><span data-stu-id="cb1e4-104">Namespace: microsoft.graph.ediscovery</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4472f-105">Ознакомьтесь с свойствами и отношениями [объекта sourceCollection.](../resources/ediscovery-sourcecollection.md)</span><span class="sxs-lookup"><span data-stu-id="4472f-105">Read the properties and relationships of a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.</span></span>
+<span data-ttu-id="cb1e4-105">Ознакомьтесь с свойствами и отношениями [объекта sourceCollection.](../resources/ediscovery-sourcecollection.md)</span><span class="sxs-lookup"><span data-stu-id="cb1e4-105">Read the properties and relationships of a [sourceCollection](../resources/ediscovery-sourcecollection.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4472f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4472f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cb1e4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cb1e4-106">Permissions</span></span>
 
-<span data-ttu-id="4472f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4472f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cb1e4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb1e4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4472f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4472f-109">Permission type</span></span>|<span data-ttu-id="4472f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4472f-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="cb1e4-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cb1e4-109">Permission type</span></span>|<span data-ttu-id="cb1e4-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cb1e4-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4472f-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4472f-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4472f-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4472f-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
-|<span data-ttu-id="4472f-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4472f-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4472f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4472f-114">Not supported.</span></span>|
-|<span data-ttu-id="4472f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4472f-115">Application</span></span>|<span data-ttu-id="4472f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4472f-116">Not supported.</span></span>|
+|<span data-ttu-id="cb1e4-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cb1e4-111">Delegated (work or school account)</span></span>|<span data-ttu-id="cb1e4-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb1e4-112">eDiscovery.Read.All, eDiscovery.ReadWrite.All</span></span>|
+|<span data-ttu-id="cb1e4-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cb1e4-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cb1e4-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-114">Not supported.</span></span>|
+|<span data-ttu-id="cb1e4-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cb1e4-115">Application</span></span>|<span data-ttu-id="cb1e4-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4472f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4472f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cb1e4-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cb1e4-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,36 +41,36 @@ ms.locfileid: "50772697"
 GET /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4472f-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="4472f-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cb1e4-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cb1e4-118">Optional query parameters</span></span>
 
-<span data-ttu-id="4472f-119">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="4472f-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="4472f-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="4472f-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="cb1e4-119">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="cb1e4-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="cb1e4-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-<span data-ttu-id="4472f-121">Используйте для расширения операций набора `$expand` обзоров, источников хранителя и последней операции статистики оценки.</span><span class="sxs-lookup"><span data-stu-id="4472f-121">Use `$expand` to expand review set operations, custodian sources, and the last estimate statistics operation.</span></span>
+<span data-ttu-id="cb1e4-121">Используйте для расширения операций набора `$expand` обзоров, источников хранителя и последней операции статистики оценки.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-121">Use `$expand` to expand review set operations, custodian sources, and the last estimate statistics operation.</span></span>
 
 ```http
 https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourcecollections/1a9b4145d8f84e39bc45a7f68c5c5119?$expand=addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4472f-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4472f-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cb1e4-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cb1e4-122">Request headers</span></span>
 
-|<span data-ttu-id="4472f-123">Имя</span><span class="sxs-lookup"><span data-stu-id="4472f-123">Name</span></span>|<span data-ttu-id="4472f-124">Описание</span><span class="sxs-lookup"><span data-stu-id="4472f-124">Description</span></span>|
+|<span data-ttu-id="cb1e4-123">Имя</span><span class="sxs-lookup"><span data-stu-id="cb1e4-123">Name</span></span>|<span data-ttu-id="cb1e4-124">Описание</span><span class="sxs-lookup"><span data-stu-id="cb1e4-124">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="4472f-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4472f-125">Authorization</span></span>|<span data-ttu-id="4472f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4472f-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="cb1e4-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cb1e4-125">Authorization</span></span>|<span data-ttu-id="cb1e4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4472f-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4472f-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cb1e4-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cb1e4-128">Request body</span></span>
 
-<span data-ttu-id="4472f-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4472f-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="cb1e4-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4472f-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="4472f-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cb1e4-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb1e4-130">Response</span></span>
 
-<span data-ttu-id="4472f-131">В случае успеха этот метод возвращает код отклика и `200 OK` [объект microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4472f-131">If successful, this method returns a `200 OK` response code and a [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) object in the response body.</span></span>
+<span data-ttu-id="cb1e4-131">В случае успеха этот метод возвращает код отклика и `200 OK` [объект microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-131">If successful, this method returns a `200 OK` response code and a [microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4472f-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="4472f-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cb1e4-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="cb1e4-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="4472f-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="4472f-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cb1e4-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb1e4-133">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4472f-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="4472f-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cb1e4-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb1e4-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sourcecollection"
@@ -80,28 +80,28 @@ https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-
 ``` http
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourcecollections/1a9b4145d8f84e39bc45a7f68c5c5119?$expand=addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation
 ```
-# <a name="c"></a>[<span data-ttu-id="4472f-135">C#</span><span class="sxs-lookup"><span data-stu-id="4472f-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cb1e4-135">C#</span><span class="sxs-lookup"><span data-stu-id="cb1e4-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-sourcecollection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4472f-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4472f-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cb1e4-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb1e4-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-sourcecollection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4472f-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4472f-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cb1e4-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb1e4-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-sourcecollection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4472f-138">Java</span><span class="sxs-lookup"><span data-stu-id="4472f-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cb1e4-138">Java</span><span class="sxs-lookup"><span data-stu-id="cb1e4-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-sourcecollection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="4472f-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="4472f-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cb1e4-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb1e4-139">Response</span></span>
 
-<span data-ttu-id="4472f-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="4472f-140">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="cb1e4-140">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="cb1e4-140">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,7 +118,7 @@ Content-Type: application/json
     "description": null,
     "lastModifiedDateTime": "2021-01-12T18:09:03.7378679Z",
     "contentQuery": "subject:'Quarterly Financials'",
-    "tenantSources": "none",
+    "dataSourceScopes": "allTenantMailboxes",
     "id": "1a9b4145d8f84e39bc45a7f68c5c5119",
     "displayName": "Quarterly Financials search",
     "createdDateTime": "2021-01-12T18:09:03.417009Z",
