@@ -5,34 +5,34 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b68afeb4a44247e16c101b961288a43e8687e0d6
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f724d9f65664855ab12ab6655771c987a693616a
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473712"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52036291"
 ---
-# <a name="list-joinedteams"></a><span data-ttu-id="3daef-103">Перечисление объектов joinedTeams</span><span class="sxs-lookup"><span data-stu-id="3daef-103">List joinedTeams</span></span>
+# <a name="list-joinedteams"></a><span data-ttu-id="8fd62-103">Перечисление объектов joinedTeams</span><span class="sxs-lookup"><span data-stu-id="8fd62-103">List joinedTeams</span></span>
 
-<span data-ttu-id="3daef-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3daef-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8fd62-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8fd62-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3daef-105">Получение [команд](../resources/team.md) в Microsoft Teams, непосредственным участником которых является пользователь.</span><span class="sxs-lookup"><span data-stu-id="3daef-105">Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.</span></span>
+<span data-ttu-id="8fd62-105">Получение [команд](../resources/team.md) в Microsoft Teams, непосредственным участником которых является пользователь.</span><span class="sxs-lookup"><span data-stu-id="8fd62-105">Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.</span></span>
  
-## <a name="permissions"></a><span data-ttu-id="3daef-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3daef-106">Permissions</span></span>
-<span data-ttu-id="3daef-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3daef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8fd62-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8fd62-106">Permissions</span></span>
+<span data-ttu-id="8fd62-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8fd62-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3daef-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3daef-109">Permission type</span></span>      | <span data-ttu-id="3daef-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3daef-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8fd62-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8fd62-109">Permission type</span></span>      | <span data-ttu-id="8fd62-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8fd62-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3daef-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3daef-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3daef-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3daef-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="3daef-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3daef-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3daef-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3daef-114">Not supported.</span></span>    |
-|<span data-ttu-id="3daef-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3daef-115">Application</span></span> | <span data-ttu-id="3daef-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3daef-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="8fd62-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8fd62-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8fd62-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8fd62-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="8fd62-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8fd62-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8fd62-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8fd62-114">Not supported.</span></span>    |
+|<span data-ttu-id="8fd62-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8fd62-115">Application</span></span> | <span data-ttu-id="8fd62-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8fd62-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="3daef-117">В настоящее время при использовании делегированных разрешений эта операция поддерживается только для пользователя "Я".</span><span class="sxs-lookup"><span data-stu-id="3daef-117">Currently, with user delegated permissions this operation only works for the 'me' user.</span></span> 
-> <span data-ttu-id="3daef-118">При использовании разрешений для приложений она поддерживается для всех пользователей путем указания определенного идентификатора пользователя. (Псевдоним "Я" не поддерживается при использовании разрешений для приложений). Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span><span class="sxs-lookup"><span data-stu-id="3daef-118">With application permissions, it works for all users by specifying  the specific user  id. ('me' alias is not supported with application permissions) For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span></span>
+> <span data-ttu-id="8fd62-117">В настоящее время при использовании делегированных разрешений эта операция поддерживается только для пользователя "Я".</span><span class="sxs-lookup"><span data-stu-id="8fd62-117">Currently, with user delegated permissions this operation only works for the 'me' user.</span></span> 
+> <span data-ttu-id="8fd62-118">При использовании разрешений для приложений она поддерживается для всех пользователей путем указания определенного идентификатора пользователя. (Псевдоним "Я" не поддерживается при использовании разрешений для приложений). Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span><span class="sxs-lookup"><span data-stu-id="8fd62-118">With application permissions, it works for all users by specifying  the specific user  id. ('me' alias is not supported with application permissions) For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="3daef-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3daef-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8fd62-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8fd62-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/joinedTeams
@@ -40,27 +40,27 @@ or
 GET /users/{id}/joinedTeams
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3daef-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3daef-120">Optional query parameters</span></span>
-<span data-ttu-id="3daef-121">[Параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="3daef-121">The [OData Query Parameters](/graph/query-parameters) are not currently supported.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="8fd62-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="8fd62-120">Optional query parameters</span></span>
+<span data-ttu-id="8fd62-121">[Параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="8fd62-121">The [OData Query Parameters](/graph/query-parameters) are not currently supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3daef-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3daef-122">Request headers</span></span>
-| <span data-ttu-id="3daef-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="3daef-123">Header</span></span>       | <span data-ttu-id="3daef-124">Значение</span><span class="sxs-lookup"><span data-stu-id="3daef-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="8fd62-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8fd62-122">Request headers</span></span>
+| <span data-ttu-id="8fd62-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8fd62-123">Header</span></span>       | <span data-ttu-id="8fd62-124">Значение</span><span class="sxs-lookup"><span data-stu-id="8fd62-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3daef-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3daef-125">Authorization</span></span>  | <span data-ttu-id="3daef-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3daef-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="3daef-128">Accept</span><span class="sxs-lookup"><span data-stu-id="3daef-128">Accept</span></span>  | <span data-ttu-id="3daef-129">application/json</span><span class="sxs-lookup"><span data-stu-id="3daef-129">application/json</span></span>|
+| <span data-ttu-id="8fd62-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8fd62-125">Authorization</span></span>  | <span data-ttu-id="8fd62-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8fd62-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8fd62-128">Accept</span><span class="sxs-lookup"><span data-stu-id="8fd62-128">Accept</span></span>  | <span data-ttu-id="8fd62-129">application/json</span><span class="sxs-lookup"><span data-stu-id="8fd62-129">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3daef-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3daef-130">Request body</span></span>
-<span data-ttu-id="3daef-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3daef-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8fd62-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8fd62-130">Request body</span></span>
+<span data-ttu-id="8fd62-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8fd62-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3daef-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="3daef-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8fd62-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="8fd62-132">Response</span></span>
 
-<span data-ttu-id="3daef-133">При успешном выполнении этот метод возвращает `200 OK`код ответа и коллекцию объектов [team](../resources/team.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="3daef-133">If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.</span></span>
+<span data-ttu-id="8fd62-133">При успешном выполнении этот метод возвращает `200 OK`код ответа и коллекцию объектов [team](../resources/team.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="8fd62-133">If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3daef-134">Пример</span><span class="sxs-lookup"><span data-stu-id="3daef-134">Example</span></span>
-### <a name="request"></a><span data-ttu-id="3daef-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="3daef-135">Request</span></span>
-<span data-ttu-id="3daef-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3daef-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8fd62-134">Пример</span><span class="sxs-lookup"><span data-stu-id="8fd62-134">Example</span></span>
+### <a name="request"></a><span data-ttu-id="8fd62-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="8fd62-135">Request</span></span>
+<span data-ttu-id="8fd62-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8fd62-136">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3daef-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="3daef-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8fd62-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="8fd62-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_joinedteams"
@@ -68,26 +68,26 @@ GET /users/{id}/joinedTeams
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/joinedTeams
 ```
-# <a name="c"></a>[<span data-ttu-id="3daef-138">C#</span><span class="sxs-lookup"><span data-stu-id="3daef-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8fd62-138">C#</span><span class="sxs-lookup"><span data-stu-id="8fd62-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-joinedteams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3daef-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3daef-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8fd62-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8fd62-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-joinedteams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3daef-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3daef-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8fd62-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8fd62-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-joinedteams-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3daef-141">Java</span><span class="sxs-lookup"><span data-stu-id="3daef-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8fd62-141">Java</span><span class="sxs-lookup"><span data-stu-id="8fd62-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-joinedteams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="3daef-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="3daef-142">Response</span></span>
-<span data-ttu-id="3daef-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3daef-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8fd62-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="8fd62-142">Response</span></span>
+<span data-ttu-id="8fd62-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8fd62-143">Here is an example of the response.</span></span> <span data-ttu-id="8fd62-144">Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8fd62-144">Note: The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,8 +107,8 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="3daef-146">См. также</span><span class="sxs-lookup"><span data-stu-id="3daef-146">See also</span></span>
-[<span data-ttu-id="3daef-147">Перечисление всех команд</span><span class="sxs-lookup"><span data-stu-id="3daef-147">List all teams</span></span>](/graph/teams-list-all-teams)
+## <a name="see-also"></a><span data-ttu-id="8fd62-145">См. также</span><span class="sxs-lookup"><span data-stu-id="8fd62-145">See also</span></span>
+[<span data-ttu-id="8fd62-146">Перечисление всех команд</span><span class="sxs-lookup"><span data-stu-id="8fd62-146">List all teams</span></span>](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
