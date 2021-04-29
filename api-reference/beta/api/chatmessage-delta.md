@@ -5,121 +5,141 @@ localization_priority: Priority
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: e24106814dac97a8585245a48a3f1641c98188d7
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: a7824399593efcfab1cc3a623a606f4546915228
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582685"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52047289"
 ---
-# <a name="chatmessage-delta"></a><span data-ttu-id="bcd5d-104">chatMessage: delta</span><span class="sxs-lookup"><span data-stu-id="bcd5d-104">chatMessage: delta</span></span>
+# <a name="chatmessage-delta"></a><span data-ttu-id="18c85-104">chatMessage: delta</span><span class="sxs-lookup"><span data-stu-id="18c85-104">chatMessage: delta</span></span>
 
-<span data-ttu-id="bcd5d-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bcd5d-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="18c85-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="18c85-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bcd5d-106">Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-106">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> <span data-ttu-id="bcd5d-107">С помощью разностного запроса можно получить новые или обновленные сообщения в канале.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-107">By using delta query, you can get new or updated messages in a channel.</span></span>
+<span data-ttu-id="18c85-106">Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="18c85-106">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> <span data-ttu-id="18c85-107">С помощью разностного запроса можно получить новые или обновленные сообщения в канале.</span><span class="sxs-lookup"><span data-stu-id="18c85-107">By using delta query, you can get new or updated messages in a channel.</span></span>
 
-> <span data-ttu-id="bcd5d-108">**Примечание.** Разностный запрос возвращает сообщения только за последние восемь месяцев.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-108">**Note:** Delta will only return messages within the last eight months.</span></span> <span data-ttu-id="bcd5d-109">Чтобы получить более ранние сообщения, можно воспользоваться методом [GET /teams/{team-id}/channels/{channel-id}/messages](channel-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-109">You can use [GET /teams/{team-id}/channels/{channel-id}/messages](channel-list-messages.md) to retrieve older messages.</span></span>
+> <span data-ttu-id="18c85-108">**Примечание.** Разностный запрос возвращает сообщения только за последние восемь месяцев.</span><span class="sxs-lookup"><span data-stu-id="18c85-108">**Note:** Delta will only return messages within the last eight months.</span></span> <span data-ttu-id="18c85-109">Чтобы получить более ранние сообщения, можно воспользоваться методом [GET /teams/{team-id}/channels/{channel-id}/messages](channel-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="18c85-109">You can use [GET /teams/{team-id}/channels/{channel-id}/messages](channel-list-messages.md) to retrieve older messages.</span></span>
 
-<span data-ttu-id="bcd5d-110">Запрос изменений поддерживает как полную синхронизацию с получением всех сообщений в определенном канале, так и добавочную синхронизацию с получением тех сообщений, которые были добавлены или изменены в канале с момента последней синхронизации.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-110">Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization.</span></span> <span data-ttu-id="bcd5d-111">Как правило, сначала выполняется полная синхронизация, а затем в представление сообщений периодически добавляются изменения.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-111">Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.</span></span>
+<span data-ttu-id="18c85-p104">Запрос изменений поддерживает как полную синхронизацию с получением всех событий в определенном представлении календаря, так и добавочную синхронизацию с получением тех событий, которые изменились в представлении календаря с момента последней синхронизации. Как правило, сначала выполняется полная синхронизация, а затем в представление календаря периодически добавляются изменения.</span><span class="sxs-lookup"><span data-stu-id="18c85-p104">Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.</span></span>
 
-<span data-ttu-id="bcd5d-112">Чтобы получить ответы на сообщение, используйте операцию [перечисления ответов на сообщение](chatmessage-list-replies.md) или [получения ответа на сообщение](chatmessage-get.md).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-112">To get the replies for a message, use the [list message replies](chatmessage-list-replies.md) or the [get message reply](chatmessage-get.md) operation.</span></span>
+<span data-ttu-id="18c85-112">Чтобы получить ответы на сообщение, используйте операцию [перечисления ответов на сообщение](chatmessage-list-replies.md) или [получения ответа на сообщение](chatmessage-get.md).</span><span class="sxs-lookup"><span data-stu-id="18c85-112">To get the replies for a message, use the [list message replies](chatmessage-list-replies.md) or the [get message reply](chatmessage-get.md) operation.</span></span>
 
-<span data-ttu-id="bcd5d-113">Запрос GET с функцией delta возвращает одно из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="bcd5d-113">A GET request with the delta function returns either:</span></span>
+<span data-ttu-id="18c85-113">Запрос GET с функцией delta возвращает одно из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="18c85-113">A GET request with the delta function returns either:</span></span>
 
-- <span data-ttu-id="bcd5d-114">ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и `skipToken`), или</span><span class="sxs-lookup"><span data-stu-id="bcd5d-114">A `nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or</span></span>
-- <span data-ttu-id="bcd5d-115">ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и `deltaToken`).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-115">A `deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).</span></span>
+- <span data-ttu-id="18c85-114">ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и `skipToken`), или</span><span class="sxs-lookup"><span data-stu-id="18c85-114">A `nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or</span></span>
+- <span data-ttu-id="18c85-115">ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и `deltaToken`).</span><span class="sxs-lookup"><span data-stu-id="18c85-115">A `deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).</span></span>
 
-<span data-ttu-id="bcd5d-116">Маркеры состояния полностью непрозрачны для клиента.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-116">State tokens are completely opaque to the client.</span></span> <span data-ttu-id="bcd5d-117">Чтобы продолжить цикл отслеживания изменений, просто скопируйте и примените URL-адрес `nextLink` или `deltaLink`, возвращенный последним запросом GET, при следующем вызове функции delta для этого представления календаря.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-117">To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view.</span></span> <span data-ttu-id="bcd5d-118">Ссылка `deltaLink` в ответе означает, что текущий цикл отслеживания изменений завершен.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-118">A `deltaLink` returned in a response signifies that the current round of change tracking is complete.</span></span> <span data-ttu-id="bcd5d-119">Вы можете сохранить и использовать URL-адрес `deltaLink` при начале работы для получения дополнительных изменений (сообщения, измененные или опубликованные после получения `deltaLink`).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-119">You can save and use the `deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `deltaLink`).</span></span>
+<span data-ttu-id="18c85-116">Маркеры состояния полностью непрозрачны для клиента.</span><span class="sxs-lookup"><span data-stu-id="18c85-116">State tokens are completely opaque to the client.</span></span> <span data-ttu-id="18c85-117">Чтобы продолжить цикл отслеживания изменений, просто скопируйте и примените URL-адрес `nextLink` или `deltaLink`, возвращенный последним запросом GET, при следующем вызове функции delta для этого представления календаря.</span><span class="sxs-lookup"><span data-stu-id="18c85-117">To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view.</span></span> <span data-ttu-id="18c85-118">Ссылка `deltaLink` в ответе означает, что текущий цикл отслеживания изменений завершен.</span><span class="sxs-lookup"><span data-stu-id="18c85-118">A `deltaLink` returned in a response signifies that the current round of change tracking is complete.</span></span> <span data-ttu-id="18c85-119">Вы можете сохранить и использовать URL-адрес `deltaLink` при начале работы для получения дополнительных изменений (сообщения, измененные или опубликованные после получения `deltaLink`).</span><span class="sxs-lookup"><span data-stu-id="18c85-119">You can save and use the `deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `deltaLink`).</span></span>
 
-<span data-ttu-id="bcd5d-120">Дополнительные сведения см. в документации по [разностному запросу](/graph/delta-query-overview).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-120">For more information, see the [delta query](/graph/delta-query-overview) documentation.</span></span>
+<span data-ttu-id="18c85-120">Дополнительные сведения см. в документации по [разностному запросу](/graph/delta-query-overview).</span><span class="sxs-lookup"><span data-stu-id="18c85-120">For more information, see the [delta query](/graph/delta-query-overview) documentation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bcd5d-121">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bcd5d-121">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="18c85-121">Разрешения</span><span class="sxs-lookup"><span data-stu-id="18c85-121">Permissions</span></span>
 
-<span data-ttu-id="bcd5d-p106">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+<span data-ttu-id="18c85-p106">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="18c85-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="bcd5d-124">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bcd5d-124">Permission Type</span></span>                        |<span data-ttu-id="bcd5d-125">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bcd5d-125">Permissions (from least to most privileged)</span></span>  |
+|<span data-ttu-id="18c85-124">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18c85-124">Permission Type</span></span>                        |<span data-ttu-id="18c85-125">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="18c85-125">Permissions (from least to most privileged)</span></span>  |
 |---------------------------------------|---------------------------------------------|
-|<span data-ttu-id="bcd5d-126">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bcd5d-126">Delegated (work or school account)</span></span>     | <span data-ttu-id="bcd5d-127">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bcd5d-127">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
-|<span data-ttu-id="bcd5d-128">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bcd5d-128">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bcd5d-129">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bcd5d-129">Not Supported</span></span>                                |
-|<span data-ttu-id="bcd5d-130">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bcd5d-130">Application</span></span>                            | <span data-ttu-id="bcd5d-131">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bcd5d-131">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="18c85-126">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18c85-126">Delegated (work or school account)</span></span>     | <span data-ttu-id="18c85-127">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18c85-127">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="18c85-128">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18c85-128">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18c85-129">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="18c85-129">Not Supported</span></span>                                |
+|<span data-ttu-id="18c85-130">Для приложений</span><span class="sxs-lookup"><span data-stu-id="18c85-130">Application</span></span>                            | <span data-ttu-id="18c85-131">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18c85-131">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="bcd5d-132">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-132">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="18c85-132">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="18c85-132">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bcd5d-133">Перед вызовом этого API с разрешениями приложения необходимо запросить доступ.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-133">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="bcd5d-134">Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-134">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="18c85-133">Перед вызовом этого API с разрешениями приложения необходимо запросить доступ.</span><span class="sxs-lookup"><span data-stu-id="18c85-133">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="18c85-134">Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="18c85-134">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="bcd5d-135">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-135">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="18c85-135">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-135">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/delta
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="bcd5d-136">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="bcd5d-136">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="18c85-136">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="18c85-136">Query parameters</span></span>
 
-<span data-ttu-id="bcd5d-137">Отслеживание изменений в сообщениях в канале — это цикл из одного или нескольких вызовов функции **delta**.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-137">Tracking changes in channel messages incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="bcd5d-138">Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-138">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="bcd5d-139">Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-139">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span>
+<span data-ttu-id="18c85-137">Отслеживание изменений в сообщениях в канале — это цикл из одного или нескольких вызовов функции **delta**.</span><span class="sxs-lookup"><span data-stu-id="18c85-137">Tracking changes in channel messages incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="18c85-138">Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**.</span><span class="sxs-lookup"><span data-stu-id="18c85-138">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="18c85-139">Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик.</span><span class="sxs-lookup"><span data-stu-id="18c85-139">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span>
 
-<span data-ttu-id="bcd5d-140">Параметры запроса нужно указать только один раз в первом запросе.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-140">You only need to specify any query parameters once upfront.</span></span>
+<span data-ttu-id="18c85-140">Параметры запроса нужно указать только один раз в первом запросе.</span><span class="sxs-lookup"><span data-stu-id="18c85-140">You only need to specify any query parameters once upfront.</span></span>
 
-<span data-ttu-id="bcd5d-141">Копируйте и применяйте URL-адрес `nextLink` или `deltaLink` из предыдущего ответа в последующих запросах, так как в нем уже содержатся закодированные параметры.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-141">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded parameters.</span></span>
+<span data-ttu-id="18c85-141">Копируйте и применяйте URL-адрес `nextLink` или `deltaLink` из предыдущего ответа в последующих запросах, так как в нем уже содержатся закодированные параметры.</span><span class="sxs-lookup"><span data-stu-id="18c85-141">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded parameters.</span></span>
 
-| <span data-ttu-id="bcd5d-142">Параметр запроса</span><span class="sxs-lookup"><span data-stu-id="bcd5d-142">Query parameter</span></span>      | <span data-ttu-id="bcd5d-143">Тип</span><span class="sxs-lookup"><span data-stu-id="bcd5d-143">Type</span></span>   |<span data-ttu-id="bcd5d-144">Описание</span><span class="sxs-lookup"><span data-stu-id="bcd5d-144">Description</span></span>|
+| <span data-ttu-id="18c85-142">Параметр запроса</span><span class="sxs-lookup"><span data-stu-id="18c85-142">Query parameter</span></span>      | <span data-ttu-id="18c85-143">Тип</span><span class="sxs-lookup"><span data-stu-id="18c85-143">Type</span></span>   |<span data-ttu-id="18c85-144">Описание</span><span class="sxs-lookup"><span data-stu-id="18c85-144">Description</span></span>|
 |:---------------|:--------|:----------|
-| `$deltatoken` | <span data-ttu-id="bcd5d-145">string</span><span class="sxs-lookup"><span data-stu-id="bcd5d-145">string</span></span> | <span data-ttu-id="bcd5d-146">Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** и указывает на завершение этого цикла отслеживания изменений.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-146">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="bcd5d-147">Сохраните URL-адрес `deltaLink` с этим маркером и примените его в первом запросе следующей итерации отслеживания изменений для этой коллекции.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-147">Save and apply the entire `deltaLink` URL including this token in the first request of the next iteration of change tracking for that collection.</span></span>|
-| `$skiptoken` | <span data-ttu-id="bcd5d-148">string</span><span class="sxs-lookup"><span data-stu-id="bcd5d-148">string</span></span> | <span data-ttu-id="bcd5d-149">Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает на то, что  остаются не отслеженные изменения.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-149">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked.</span></span> |
+| `$deltatoken` | <span data-ttu-id="18c85-145">string</span><span class="sxs-lookup"><span data-stu-id="18c85-145">string</span></span> | <span data-ttu-id="18c85-146">Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** и указывает на завершение этого цикла отслеживания изменений.</span><span class="sxs-lookup"><span data-stu-id="18c85-146">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="18c85-147">Сохраните URL-адрес `deltaLink` с этим маркером и примените его в первом запросе следующей итерации отслеживания изменений для этой коллекции.</span><span class="sxs-lookup"><span data-stu-id="18c85-147">Save and apply the entire `deltaLink` URL including this token in the first request of the next iteration of change tracking for that collection.</span></span>|
+| `$skiptoken` | <span data-ttu-id="18c85-148">string</span><span class="sxs-lookup"><span data-stu-id="18c85-148">string</span></span> | <span data-ttu-id="18c85-149">Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает на то, что  остаются не отслеженные изменения.</span><span class="sxs-lookup"><span data-stu-id="18c85-149">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked.</span></span> |
 
-### <a name="optional-odata-query-parameters"></a><span data-ttu-id="bcd5d-150">Необязательные параметры запросов OData</span><span class="sxs-lookup"><span data-stu-id="bcd5d-150">Optional OData query parameters</span></span>
+### <a name="optional-odata-query-parameters"></a><span data-ttu-id="18c85-150">Необязательные параметры запросов OData</span><span class="sxs-lookup"><span data-stu-id="18c85-150">Optional OData query parameters</span></span>
 
-<span data-ttu-id="bcd5d-151">Этим API поддерживаются указанные ниже [параметры запросов OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-151">The following [OData query parameters](/graph/query-parameters) are supported by this API:</span></span>
-- <span data-ttu-id="bcd5d-152">`$top`, указывает максимальное количество сообщений, которое нужно получить в результате вызова.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-152">`$top`, represents maximum number of messages to fetch in a call.</span></span> <span data-ttu-id="bcd5d-153">Верхний предел – **50**.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-153">The upper limit is **50**.</span></span>
-- <span data-ttu-id="bcd5d-154">`$skip`, указывает, сколько сообщений нужно пропустить в начале списка.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-154">`$skip`, represents how many messages to skip at the beginning of the list.</span></span>
-- <span data-ttu-id="bcd5d-155">`$filter` поддерживает возврат сообщений, удовлетворяющих определенным условиям.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-155">`$filter` allows returning messages that meet a certain criteria.</span></span> <span data-ttu-id="bcd5d-156">Единственное свойство, поддерживающее фильтрацию, — это `lastModifiedDateTime`, при этом поддерживается только оператор **gt**.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-156">The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported.</span></span> <span data-ttu-id="bcd5d-157">Например, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` будет получать любые сообщения, созданные или измененные после указанной даты и времени.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-157">For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.</span></span>
+<span data-ttu-id="18c85-151">Этим API поддерживаются указанные ниже [параметры запросов OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="18c85-151">The following [OData query parameters](/graph/query-parameters) are supported by this API:</span></span>
+- <span data-ttu-id="18c85-152">`$top`, указывает максимальное количество сообщений, которое нужно получить в результате вызова.</span><span class="sxs-lookup"><span data-stu-id="18c85-152">`$top`, represents maximum number of messages to fetch in a call.</span></span> <span data-ttu-id="18c85-153">Верхний предел – **50**.</span><span class="sxs-lookup"><span data-stu-id="18c85-153">The upper limit is **50**.</span></span>
+- <span data-ttu-id="18c85-154">`$skip`, указывает, сколько сообщений нужно пропустить в начале списка.</span><span class="sxs-lookup"><span data-stu-id="18c85-154">`$skip`, represents how many messages to skip at the beginning of the list.</span></span>
+- <span data-ttu-id="18c85-155">`$filter` поддерживает возврат сообщений, удовлетворяющих определенным условиям.</span><span class="sxs-lookup"><span data-stu-id="18c85-155">`$filter` allows returning messages that meet a certain criteria.</span></span> <span data-ttu-id="18c85-156">Единственное свойство, поддерживающее фильтрацию, — это `lastModifiedDateTime`, при этом поддерживается только оператор **gt**.</span><span class="sxs-lookup"><span data-stu-id="18c85-156">The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported.</span></span> <span data-ttu-id="18c85-157">Например, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` будет получать любые сообщения, созданные или измененные после указанной даты и времени.</span><span class="sxs-lookup"><span data-stu-id="18c85-157">For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bcd5d-158">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bcd5d-158">Request headers</span></span>
-| <span data-ttu-id="bcd5d-159">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bcd5d-159">Header</span></span>        | <span data-ttu-id="bcd5d-160">Значение</span><span class="sxs-lookup"><span data-stu-id="bcd5d-160">Value</span></span>                     |
+## <a name="request-headers"></a><span data-ttu-id="18c85-158">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="18c85-158">Request headers</span></span>
+| <span data-ttu-id="18c85-159">Заголовок</span><span class="sxs-lookup"><span data-stu-id="18c85-159">Header</span></span>        | <span data-ttu-id="18c85-160">Значение</span><span class="sxs-lookup"><span data-stu-id="18c85-160">Value</span></span>                     |
 |---------------|---------------------------|
-| <span data-ttu-id="bcd5d-161">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bcd5d-161">Authorization</span></span> | <span data-ttu-id="bcd5d-p112">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-p112">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="18c85-161">Авторизация</span><span class="sxs-lookup"><span data-stu-id="18c85-161">Authorization</span></span> | <span data-ttu-id="18c85-p112">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="18c85-p112">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bcd5d-164">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bcd5d-164">Request Body</span></span>
+## <a name="request-body"></a><span data-ttu-id="18c85-164">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="18c85-164">Request Body</span></span>
 
-<span data-ttu-id="bcd5d-165">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-165">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="18c85-165">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="18c85-165">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bcd5d-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="bcd5d-166">Response</span></span>
+## <a name="response"></a><span data-ttu-id="18c85-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="18c85-166">Response</span></span>
 
-<span data-ttu-id="bcd5d-167">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-167">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span> <span data-ttu-id="bcd5d-168">Отклик также содержит URL-адрес `nextLink` или `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-168">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
+<span data-ttu-id="18c85-167">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="18c85-167">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span> <span data-ttu-id="18c85-168">Отклик также содержит URL-адрес `nextLink` или `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="18c85-168">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bcd5d-169">Примеры</span><span class="sxs-lookup"><span data-stu-id="bcd5d-169">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="18c85-169">Примеры</span><span class="sxs-lookup"><span data-stu-id="18c85-169">Examples</span></span>
 
-### <a name="example-1-initial-synchronization"></a><span data-ttu-id="bcd5d-170">Пример 1: Первоначальная синхронизация</span><span class="sxs-lookup"><span data-stu-id="bcd5d-170">Example 1: Initial synchronization</span></span>
+### <a name="example-1-initial-synchronization"></a><span data-ttu-id="18c85-170">Пример 1: Первоначальная синхронизация</span><span class="sxs-lookup"><span data-stu-id="18c85-170">Example 1: Initial synchronization</span></span>
 
-<span data-ttu-id="bcd5d-171">В приведенном ниже примере показана серия из трех запросов для синхронизации сообщений в заданном канале.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-171">The following example shows a series of three requests to synchronize the messages in the given channel.</span></span> <span data-ttu-id="bcd5d-172">В канале пять сообщений.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-172">There are five messages in the channel.</span></span>
+<span data-ttu-id="18c85-171">В приведенном ниже примере показана серия из трех запросов для синхронизации сообщений в заданном канале.</span><span class="sxs-lookup"><span data-stu-id="18c85-171">The following example shows a series of three requests to synchronize the messages in the given channel.</span></span> <span data-ttu-id="18c85-172">В канале пять сообщений.</span><span class="sxs-lookup"><span data-stu-id="18c85-172">There are five messages in the channel.</span></span>
 
-- <span data-ttu-id="bcd5d-173">Шаг 1. [Исходный запрос](#initial-request) и [отклик](#initial-request-response).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-173">Step 1: [initial request](#initial-request) and [response](#initial-request-response).</span></span>
-- <span data-ttu-id="bcd5d-174">Шаг 2. [Второй запрос](#second-request) и [отклик](#second-request-response).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-174">Step 2: [second request](#second-request) and [response](#second-request-response)</span></span>
-- <span data-ttu-id="bcd5d-175">Шаг 3. [Третий запрос](#third-request) и [последний отклик](#third-request-response).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-175">Step 3: [third request](#third-request) and [final response](#third-request-response).</span></span>
+- <span data-ttu-id="18c85-173">Шаг 1. [Исходный запрос](#initial-request) и [отклик](#initial-request-response).</span><span class="sxs-lookup"><span data-stu-id="18c85-173">Step 1: [initial request](#initial-request) and [response](#initial-request-response).</span></span>
+- <span data-ttu-id="18c85-174">Шаг 2. [Второй запрос](#second-request) и [отклик](#second-request-response).</span><span class="sxs-lookup"><span data-stu-id="18c85-174">Step 2: [second request](#second-request) and [response](#second-request-response)</span></span>
+- <span data-ttu-id="18c85-175">Шаг 3. [Третий запрос](#third-request) и [последний отклик](#third-request-response).</span><span class="sxs-lookup"><span data-stu-id="18c85-175">Step 3: [third request](#third-request) and [final response](#third-request-response).</span></span>
 
-<span data-ttu-id="bcd5d-p115">В примерах показаны только некоторые свойства события. При фактическом вызове возвращается большинство свойств события.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-p115">For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.</span></span>
+<span data-ttu-id="18c85-p115">В примерах показаны только некоторые свойства события. При фактическом вызове возвращается большинство свойств события.</span><span class="sxs-lookup"><span data-stu-id="18c85-p115">For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.</span></span>
 
-<span data-ttu-id="bcd5d-178">Узнайте также, что нужно сделать [для получения дополнительных изменений](#example-2-retrieving-additional-changes).</span><span class="sxs-lookup"><span data-stu-id="bcd5d-178">See also what you'll do [to retrieve additional changes](#example-2-retrieving-additional-changes).</span></span>
+<span data-ttu-id="18c85-178">Узнайте также, что нужно сделать [для получения дополнительных изменений](#example-2-retrieving-additional-changes).</span><span class="sxs-lookup"><span data-stu-id="18c85-178">See also what you'll do [to retrieve additional changes](#example-2-retrieving-additional-changes).</span></span>
 
-#### <a name="initial-request"></a><span data-ttu-id="bcd5d-179">Исходный запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-179">Initial request</span></span>
+#### <a name="initial-request"></a><span data-ttu-id="18c85-179">Исходный запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-179">Initial request</span></span>
 
-<span data-ttu-id="bcd5d-180">В этом примере сообщения канала синхронизируются впервые, поэтому исходный запрос на синхронизацию не содержит маркер состояния.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-180">In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token.</span></span> <span data-ttu-id="bcd5d-181">В этом цикле возвращаются все события в представлении календаря.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-181">This round will return all the events in that calendar view.</span></span>
+<span data-ttu-id="18c85-p116">В этом примере сообщения канала синхронизируются впервые, поэтому исходный запрос на синхронизацию не содержит маркер состояния. В этом цикле возвращаются все события в представлении календаря.</span><span class="sxs-lookup"><span data-stu-id="18c85-p116">In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the events in that calendar view.</span></span>
 
-<span data-ttu-id="bcd5d-182">В запросе указывается необязательный заголовок запроса, odata.top, возвращающий 2 события одновременно.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-182">The request specifies the optional request header, odata.top, returning 2 events at a time.</span></span>
+<span data-ttu-id="18c85-182">В запросе указывается необязательный заголовок запроса, odata.top, возвращающий 2 события одновременно.</span><span class="sxs-lookup"><span data-stu-id="18c85-182">The request specifies the optional request header, odata.top, returning 2 events at a time.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="18c85-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="18c85-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachannel_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$top=2
 ```
+# <a name="c"></a>[<span data-ttu-id="18c85-184">C#</span><span class="sxs-lookup"><span data-stu-id="18c85-184">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="initial-request-response"></a><span data-ttu-id="bcd5d-183">Ответ на исходный запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-183">Initial request response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="18c85-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18c85-185">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="bcd5d-184">Ответ включает два сообщения и заголовок ответа `@odata.nextLink` с маркером `skipToken`.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-184">The response includes two messages and a `@odata.nextLink` response header with a `skipToken`.</span></span> <span data-ttu-id="bcd5d-185">URL-адрес `nextLink` указывает, что в канале еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-185">The `nextLink` URL indicates there are more messages in the channel to get.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="18c85-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18c85-186">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagedeltachannel-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="18c85-187">Java</span><span class="sxs-lookup"><span data-stu-id="18c85-187">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="initial-request-response"></a><span data-ttu-id="18c85-188">Ответ на исходный запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-188">Initial request response</span></span>
+
+<span data-ttu-id="18c85-189">Ответ включает два сообщения и заголовок ответа `@odata.nextLink` с маркером `skipToken`.</span><span class="sxs-lookup"><span data-stu-id="18c85-189">The response includes two messages and a `@odata.nextLink` response header with a `skipToken`.</span></span> <span data-ttu-id="18c85-190">URL-адрес `nextLink` указывает, что в канале еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="18c85-190">The `nextLink` URL indicates there are more messages in the channel to get.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -217,21 +237,41 @@ Content-type: application/json
 }
 ```
 
-#### <a name="second-request"></a><span data-ttu-id="bcd5d-186">Второй запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-186">Second request</span></span>
+#### <a name="second-request"></a><span data-ttu-id="18c85-191">Второй запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-191">Second request</span></span>
 
-<span data-ttu-id="bcd5d-187">Второй запрос указывает URL-адрес `nextLink`, полученный из предыдущего ответа.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-187">The second request specifies the `nextLink` URL returned from the previous response.</span></span> <span data-ttu-id="bcd5d-188">Обратите внимание, что в нем больше не требуется указывать те же основные параметры, что и в исходном запросе, так как маркер `skipToken` в URL-адресе `nextLink` включает их в закодированном виде.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-188">Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.</span></span>
+<span data-ttu-id="18c85-192">Второй запрос указывает URL-адрес `nextLink`, полученный из предыдущего ответа.</span><span class="sxs-lookup"><span data-stu-id="18c85-192">The second request specifies the `nextLink` URL returned from the previous response.</span></span> <span data-ttu-id="18c85-193">Обратите внимание, что в нем больше не требуется указывать те же основные параметры, что и в исходном запросе, так как маркер `skipToken` в URL-адресе `nextLink` включает их в закодированном виде.</span><span class="sxs-lookup"><span data-stu-id="18c85-193">Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="18c85-194">HTTP</span><span class="sxs-lookup"><span data-stu-id="18c85-194">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachannel_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$skiptoken=-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58
 ```
+# <a name="c"></a>[<span data-ttu-id="18c85-195">C#</span><span class="sxs-lookup"><span data-stu-id="18c85-195">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="second-request-response"></a><span data-ttu-id="bcd5d-189">Ответ на второй запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-189">Second request response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="18c85-196">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18c85-196">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="bcd5d-190">Второй ответ содержит следующие 2 сообщения в папке и заголовок ответа `@odata.nextLink` с `skipToken`, и указывает, что в канале еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-190">The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="18c85-197">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18c85-197">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagedeltachannel-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="18c85-198">Java</span><span class="sxs-lookup"><span data-stu-id="18c85-198">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="second-request-response"></a><span data-ttu-id="18c85-199">Ответ на второй запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-199">Second request response</span></span>
+
+<span data-ttu-id="18c85-200">Второй ответ содержит следующие 2 сообщения в папке и заголовок ответа `@odata.nextLink` с `skipToken`, и указывает, что в канале еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="18c85-200">The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -329,21 +369,41 @@ Content-type: application/json
 }
 ```
 
-#### <a name="third-request"></a><span data-ttu-id="bcd5d-191">Третий запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-191">Third request</span></span>
+#### <a name="third-request"></a><span data-ttu-id="18c85-201">Третий запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-201">Third request</span></span>
 
-<span data-ttu-id="bcd5d-192">Третий запрос продолжает использовать маркер `nextLink`, полученный из последнего запроса на синхронизацию.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-192">The third request continues to use the latest `nextLink` returned from the last sync request.</span></span>
+<span data-ttu-id="18c85-202">Третий запрос продолжает использовать маркер `nextLink`, полученный из последнего запроса на синхронизацию.</span><span class="sxs-lookup"><span data-stu-id="18c85-202">The third request continues to use the latest `nextLink` returned from the last sync request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="18c85-203">HTTP</span><span class="sxs-lookup"><span data-stu-id="18c85-203">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachannel_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$skiptoken=8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4
 ```
+# <a name="c"></a>[<span data-ttu-id="18c85-204">C#</span><span class="sxs-lookup"><span data-stu-id="18c85-204">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="third-request-response"></a><span data-ttu-id="bcd5d-193">Ответ на третий запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-193">Third request response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="18c85-205">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18c85-205">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="bcd5d-194">Третий ответ содержит только оставшиеся сообщения в канале и заголовок ответа `@odata.deltaLink` с `deltaToken`, что указывает на то, что все сообщения в канале считаны.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-194">The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read.</span></span> <span data-ttu-id="bcd5d-195">Сохраните и используйте URL-адрес `deltaLink` для запроса любых новых сообщений, начиная с этого момента.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-195">Save and use the `deltaLink` URL to query for any new messages starting from this point onwards.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="18c85-206">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18c85-206">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagedeltachannel-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="18c85-207">Java</span><span class="sxs-lookup"><span data-stu-id="18c85-207">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="third-request-response"></a><span data-ttu-id="18c85-208">Ответ на третий запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-208">Third request response</span></span>
+
+<span data-ttu-id="18c85-209">Третий ответ содержит только оставшиеся сообщения в канале и заголовок ответа `@odata.deltaLink` с `deltaToken`, что указывает на то, что все сообщения в канале считаны.</span><span class="sxs-lookup"><span data-stu-id="18c85-209">The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read.</span></span> <span data-ttu-id="18c85-210">Сохраните и используйте URL-адрес `deltaLink` для запроса любых новых сообщений, начиная с этого момента.</span><span class="sxs-lookup"><span data-stu-id="18c85-210">Save and use the `deltaLink` URL to query for any new messages starting from this point onwards.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -441,23 +501,43 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieving-additional-changes"></a><span data-ttu-id="bcd5d-196">Пример 2. Извлечение дополнительных изменений</span><span class="sxs-lookup"><span data-stu-id="bcd5d-196">Example 2: Retrieving additional changes</span></span>
+### <a name="example-2-retrieving-additional-changes"></a><span data-ttu-id="18c85-211">Пример 2. Извлечение дополнительных изменений</span><span class="sxs-lookup"><span data-stu-id="18c85-211">Example 2: Retrieving additional changes</span></span>
 
-<span data-ttu-id="bcd5d-197">С помощью ссылки `deltaLink` из последнего цикла прошлого запроса вы сможете получить только те сообщения, которые изменились (путем добавления или обновления) в этом канале с момента последней синхронизации.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-197">Using the `deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then.</span></span> <span data-ttu-id="bcd5d-198">При условии, что вы не хотите менять максимальный размер страницы ответа, ваш запрос будет выглядеть следующим образом:</span><span class="sxs-lookup"><span data-stu-id="bcd5d-198">Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:</span></span>
+<span data-ttu-id="18c85-212">С помощью ссылки `deltaLink` из последнего цикла прошлого запроса вы сможете получить только те сообщения, которые изменились (путем добавления или обновления) в этом канале с момента последней синхронизации.</span><span class="sxs-lookup"><span data-stu-id="18c85-212">Using the `deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then.</span></span> <span data-ttu-id="18c85-213">При условии, что вы не хотите менять максимальный размер страницы ответа, ваш запрос будет выглядеть следующим образом:</span><span class="sxs-lookup"><span data-stu-id="18c85-213">Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bcd5d-199">Запрос</span><span class="sxs-lookup"><span data-stu-id="bcd5d-199">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="18c85-214">Запрос</span><span class="sxs-lookup"><span data-stu-id="18c85-214">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="18c85-215">HTTP</span><span class="sxs-lookup"><span data-stu-id="18c85-215">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagedeltachannel_4"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/delta?$deltatoken=aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4
 ```
+# <a name="c"></a>[<span data-ttu-id="18c85-216">C#</span><span class="sxs-lookup"><span data-stu-id="18c85-216">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagedeltachannel-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="bcd5d-200">Отклик</span><span class="sxs-lookup"><span data-stu-id="bcd5d-200">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="18c85-217">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18c85-217">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagedeltachannel-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="bcd5d-p121">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bcd5d-p121">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="18c85-218">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18c85-218">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagedeltachannel-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="18c85-219">Java</span><span class="sxs-lookup"><span data-stu-id="18c85-219">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagedeltachannel-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="18c85-220">Отклик</span><span class="sxs-lookup"><span data-stu-id="18c85-220">Response</span></span>
+
+><span data-ttu-id="18c85-221">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="18c85-221">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
