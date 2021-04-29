@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 96e97475c41c983c38f3d8be5c2ec95315427c7f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 6cfe9778de629538a51a0b6942754cb2e62593d2
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773244"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080395"
 ---
 # <a name="create-unifiedgroupsource"></a>Создание unifiedGroupSource
 
@@ -26,8 +26,8 @@ ms.locfileid: "50773244"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -81,7 +81,7 @@ Content-Type: application/json
 Content-length: 219
 
 {
-  "group@odata.bind": "/groups/000044f9-47c8-4a87-bccf-291fbf006a54",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
   "includedSources":  "mailbox, site"
 }
 ```
@@ -106,7 +106,7 @@ Content-length: 219
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,16 +119,17 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "group@odata.bind": "/groups/000044f9-47c8-4a87-bccf-291fbf006a54",
-  "includedSources":  "mailbox, site",
-  "id": "14202dd90a1f4ccc84929586326c7104",
-  "displayName": "SFA Videos",
-  "createdDateTime": "2020-03-13T22:38:00.8985662Z",
-  "createdBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Megan Bowen"
-      }
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('f4c0e095-d140-4392-bfe7-4e0ae637c566')/custodians('46363131333630303541423141324436')/unifiedGroupSources/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
+    "displayName": "SFA Videos",
+    "createdDateTime": "2021-03-31T21:22:57.0108027Z",
+    "id": "33434233-3030-3739-3043-393039324633",
+    "includedSources": "mailbox,site",
+    "createdBy": {
+        "user": {
+            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
+            "displayName": null
+        }
+    }
 }
 ```

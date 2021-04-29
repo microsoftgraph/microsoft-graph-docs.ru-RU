@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f5ef3f5831e04e125bd67de070c6089cfce90ce0
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3f10d0da7498863d3cf7c507a2e52a05542f003d
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772669"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080346"
 ---
 # <a name="list-addtoreviewsetoperation"></a>Список addToReviewSetOperation
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

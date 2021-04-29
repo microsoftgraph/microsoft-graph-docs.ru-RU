@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 4fa4b8d0ccbe80ef0f65d27fa8ef648d1ea07b63
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c178565b628728fcf6124ea3058e979f8423ce90
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447359"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080479"
 ---
 # <a name="sitesource-resource-type"></a>Тип ресурса siteSource
 
@@ -36,15 +36,15 @@ ms.locfileid: "50447359"
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **сайтSource**.|
 |createdDateTime|DateTimeOffset|Дата и время **создания сайтаSource.**|
 |displayName|String|Имя отображения **сайтаSource**. Это будет имя сайта SharePoint.|
-|id|String| ID **сайтаSource**. Это не ID фактического сайта.|
+|id|String| ID **сайтаSource**. Источник сайта можно получить в любое время с помощью [сайта Get](../api/site-get.md) - https://graph.microsoft.com/v1.0/sites/{siteId}|
 
 ## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|site|[site](../resources/site.md)|Сайт SharePoint, связанный с **siteSource.**|
+|site|[site](../resources/site.md)|Сайт SharePoint, связанный **с siteSource**.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {

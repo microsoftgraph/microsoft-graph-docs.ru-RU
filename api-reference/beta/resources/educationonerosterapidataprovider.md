@@ -1,43 +1,43 @@
 ---
-title: ресурс Едукатиононеростерапидатапровидер
-description: Используется для настройки профиля синхронизации данных School при использовании API OneRoster в качестве источника входных данных.
+title: ресурс educationOneRosterApiDataProvider
+description: Используется для настройка профиля синхронизации школьных данных, когда API OneRoster используется в качестве источника ввода.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5b96322cdb408069136a46aa9c83cf363cc1b6f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c90c7132f6e51b84e987cf6bda63baacc60b8ba
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998847"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080423"
 ---
-# <a name="educationonerosterapidataprovider-resource"></a>ресурс Едукатиононеростерапидатапровидер
+# <a name="educationonerosterapidataprovider-resource"></a>ресурс educationOneRosterApiDataProvider
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для настройки профиля синхронизации данных School при использовании [API OneRoster](https://www.imsglobal.org/activity/onerosterlis) в качестве источника входных данных.
+Используется для настройка профиля синхронизации школьных данных, когда [API OneRoster](https://www.imsglobal.org/activity/onerosterlis) используется в качестве источника ввода.
 
-Производный от [едукатионсинчронизатиондатапровидер](educationsynchronizationdataprovider.md).
+Производный от [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство           | Тип                                         | Описание                                                                                           |
 | :----------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
-| коннектионурл      | String                                       | URL-адрес подключения к экземпляру OneRoster.                                                         |
-| providerName       | String                                       | Имя поставщика службы OneRoster, как определено [спецификацией OneRoster][oneroster].           |
-| счулсидс         | Коллекция String                            | Список учебных заведений [или организации][orgs] `sourcedId` для синхронизации.                                                   |
-| термидс            | Коллекция String                            | Список [учебных лекций][terms] для синхронизации.                                                       |
-| коннектионсеттингс | [едукатионсинчронизатионконнектионсеттингс] | Параметры [oauth 1,0][onerosteroauth1] или [OAuth 2,0][onerosteroauth2] для экземпляра OneRoster. |
-| настроек     | [едукатионсинчронизатионкустомизатионс])    | Необязательная настройка, применяемая к профилю синхронизации.                                  |
+| connectionUrl      | String                                       | URL-адрес подключения к экземпляру OneRoster.                                                         |
+| providerName       | String                                       | Имя поставщика услуг OneRoster, определенное спецификацией [OneRoster.][oneroster]           |
+| schoolsIds         | Коллекция String                            | Список [синхронизируются с School/Org.][orgs] `sourcedId`                                                   |
+| termIds            | Коллекция String                            | Список [академических сеансов для][terms] синхронизации.                                                       |
+| connectionSettings | [educationSynchronizationConnectionSettings] | Параметры [OAuth 1.0][onerosteroauth1] или [OAuth 2.0][onerosteroauth2] для экземпляра OneRoster. |
+| настройки     | [educationSynchronizationCustomizations]    | Необязательная настройка, которая будет применена к профилю синхронизации.                                  |
 
 > [!IMPORTANT]
-> В OneRoster для сегментирования данных используются учебные сеансы, а не один учебный год. Эта сегментация абстрактна в пользовательском интерфейсе "School Data Sync", но не является этим API. Для заполнения коллекции необходимо вызвать `/terms` конечную точку OneRoster для получения коллекции академических идентификаторов сеансов `termIds` .
+> OneRoster использует академические сеансы, а не один учебный год для сегментации данных. Эта сегментация абстрагироваться в Синхронизация сведений о школе пользовательского интерфейса, но не этот API. Чтобы заполнить коллекцию, необходимо вызвать конечную точку OneRoster, чтобы получить коллекцию академических ИД `/terms` `termIds` сеансов.
 
-[едукатионсинчронизатионконнектионсеттингс]: educationsynchronizationconnectionsettings.md
-[едукатионсинчронизатионкустомизатионс]: educationsynchronizationcustomizations.md
+[educationSynchronizationConnectionSettings]: educationsynchronizationconnectionsettings.md
+[educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 [oneroster]: https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA
 [onerosteroauth2]: educationsynchronizationoauth2clientcredentialsconnectionsettings.md
 [onerosteroauth1]: educationsynchronizationoauth1connectionsettings.md
@@ -51,7 +51,7 @@ ms.locfileid: "47998847"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider"
+  "@odata.type&quot;: &quot;microsoft.graph.educationoneRosterApiDataProvider"
 }-->
 
 ```json
@@ -62,12 +62,12 @@ ms.locfileid: "47998847"
   "schoolsIds": ["String"],
   "termIds": ["String"],
   "connectionSettings": {
-    "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
     "clientId": "String",
-    "clientSecret": "String"
+    "clientSecret&quot;: &quot;String"
   },
   "customizations": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+    "@odata.type&quot;: &quot;microsoft.graph.educationSynchronizationCustomizations"
   }
 }
 ```
@@ -81,7 +81,7 @@ ms.locfileid: "47998847"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.settings"
+      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.ediscovery.settings"
   ]
 }-->
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e0304601c76276fbcdd3db5836245ef5b592f05a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 7f565aacff1cf656f0697f5564763f40341981f7
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921865"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080682"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument: createUploadSession
 
@@ -22,6 +22,8 @@ ms.locfileid: "51921865"
 
 В рамках ответа это действие возвращает URL-адрес загрузки, который можно использовать в последующих последовательном `PUT` запросах. Для каждой операции можно указать точный диапазон отгрузки `PUT` bytes. Это позволяет возобновить передачу, если подключение к сети будет отброшено во время загрузки. 
 
+>**Примечание.** Создание сеанса загрузки с использованием разрешений приложений будет успешным только в том случае, если в связанной работе печати имеется [printTask,](../resources/printTask.md) запущенный с триггера, созданного приложением-запросом. `processing` Подробные сведения о регистрации триггера задач см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
+
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +33,7 @@ ms.locfileid: "51921865"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | PrintJob.Create, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | PrintJob.ReadWrite.All |
+| Для приложений                            | PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +44,7 @@ ms.locfileid: "51921865"
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-Создание сеанса загрузки с **помощью printerShare:** 
+Создание сеанса загрузки с **помощью printerShare** (поддерживается только с делегированными разрешениями): 
 
 <!-- { "blockType": "ignored" } -->
 ```http

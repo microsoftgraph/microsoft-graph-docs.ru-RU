@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7317ba399c284ff0f953a1e14787409f7e0e9939
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 916725283b86c59907ddd89e5441902fa0f8c756
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921964"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080178"
 ---
 # <a name="printjob-redirect"></a>printJob: перенаправление
 
@@ -19,6 +19,8 @@ ms.locfileid: "51921964"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Перенаправляйте задание печати](../resources/printjob.md) на другой [принтер.](../resources/printer.md)
+
+Перенаправление задания печати будет успешным только в том случае, если в связанной работе печати имеется [printTask,](../resources/printTask.md) запущенный с триггера, созданного приложением-запросом. `processing` 
 
 Дополнительные сведения о том, как использовать этот API для добавления поддержки печати для тяги в Universal Print, см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
@@ -31,7 +33,7 @@ ms.locfileid: "51921964"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintJob.Manage.All |
+|Для приложений| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +50,7 @@ POST /print/printers/{id}/jobs/{id}/redirect
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|destinationPrinterId|Строка|ID принтера, на который должно быть перенаправлено задание печати.|
+|destinationPrinterId|String|ID принтера, на который должно быть перенаправлено задание печати.|
 |configuration|microsoft.graph.printJobConfiguration|Обновленная конфигурация задания печати.|
 
 ## <a name="response"></a>Отклик

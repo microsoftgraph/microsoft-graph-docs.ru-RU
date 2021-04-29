@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1ef28e211e434b1806318fe4b4a52d354887bb23
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 482d60dcec4e6f169bbf6962b20deebfbc52f5d5
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776503"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080259"
 ---
 # <a name="update-sourcecollection"></a>Обновление sourceCollection
 
@@ -55,11 +55,11 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |contentQuery|String|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](/microsoft-365/compliance/keyword-queries-and-search-conditions)  Поиск можно уточнить с помощью полей в паре со значениями; например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` .|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none` `allTenantMailboxes` , , , `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` . **Примечание:** При создании коллекции исходных данных требуется один хранитель или указание данныхSourceScope.|
 |description|String|Описание **sourceCollection**.|
 |displayName|String|Имя отображения **sourceCollection**.|
-|tenantSources|microsoft.graph.ediscovery.tenantSources|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `allMailboxes`, `allSites`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 

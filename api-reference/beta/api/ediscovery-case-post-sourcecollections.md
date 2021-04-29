@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1ba26e01cd51a4819fa8947967f5865a9ec84fe3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 799601b3ca59c3522e4d023f7647bca523369659
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773797"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080318"
 ---
 # <a name="create-sourcecollection"></a>Создание sourceCollection
 
@@ -56,9 +56,9 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none` `allTenantMailboxes` , , , `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` . **Примечание:** При создании коллекции исходных данных требуется один хранитель или указание данныхSourceScope.|
 |displayName|String|Имя отображения **sourceCollection**|
 |custodianSources|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Источники хранителя, которые необходимо включить в этот поиск. URL-адрес можно получить с [сайта-хранителяSources,](../api/ediscovery-custodian-list-sitesources.md) [unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)или [userSources](../api/ediscovery-custodian-list-usersources.md) плюс ID источника. **Примечание:** При создании коллекции исходных данных требуется один хранитель или указать источник клиента. |
-|tenantSources|microsoft.graph.ediscovery.tenantSources|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `allMailboxes`, `allSites`. **Примечание:** При создании коллекции исходных данных требуется один хранитель или указать источник клиента.|
 
 ## <a name="response"></a>Отклик
 
@@ -110,7 +110,7 @@ Content-length: 272
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,7 +127,7 @@ Content-Type: application/json
     "description": null,
     "lastModifiedDateTime": "2021-01-12T18:09:03.7378679Z",
     "contentQuery": "subject:'Quarterly Financials'",
-    "tenantSources": "none",
+    "dataSourceScopes": "none",
     "id": "1a9b4145d8f84e39bc45a7f68c5c5119",
     "displayName": "Quarterly Financials search",
     "createdDateTime": "2021-01-12T18:09:03.417009Z",

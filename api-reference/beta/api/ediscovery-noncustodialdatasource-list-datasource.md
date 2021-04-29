@@ -1,24 +1,24 @@
 ---
-title: List custodianSources
-description: Получите список объектов dataSource, связанных с исходным собранием.
+title: List dataSource
+description: Получите ресурсы dataSource из свойства навигации dataSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4b03b5bc02e16b901066b3561317d7afb8777bd2
+ms.openlocfilehash: 60cec935db8e451efa6e855c56b71eb026ca4f99
 ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080307"
+ms.locfileid: "52080863"
 ---
-# <a name="list-custodiansources"></a>List custodianSources
+# <a name="list-datasource"></a>List dataSource
 
 Пространство имен: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [dataSource,](../resources/ediscovery-datasource.md) связанных с исходным собранием.
+Получите список dataSources, связанных с источником данных, не связанных с хранением.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +38,7 @@ ms.locfileid: "52080307"
 -->
 
 ``` http
-GET /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/custodianSources
+GET /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialDataSourceId}/dataSource
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -57,45 +57,25 @@ GET /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [dataSource](../resources/ediscovery-datasource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_datasource_2"
+  "name": "list_datasource"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/custodianSources
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/noncustodialDataSources/8e402dd7f3c94a3abc086e5d07db1c6d/datasource
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-datasource-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-datasource-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-datasource-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-datasource-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,14 +90,21 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.ediscovery.dataSource",
-      "id": "0fb67fc5-7fc5-0fb6-c57f-b60fc57fb60f",
-      "displayName": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/noncustodialDataSources('8e402dd7f3c94a3abc086e5d07db1c6d')/dataSource/$entity",
+        "@odata.type": "#microsoft.graph.ediscovery.userSource",
+        "displayName": "Adele Vance",
+        "createdDateTime": "2021-02-17T19:41:22.5902664Z",
+        "id": "8e402dd7f3c94a3abc086e5d07db1c6d",
+        "email": "AdeleV@contoso.com",
+        "includedSources": "mailbox",
+        "createdBy": {
+            "user": {
+                "id": "ediscovery admin",
+                "displayName": "c1db6f13-332a-4d84-b111-914383ff9fc9"
+            }
+        }
       }
-    }
   ]
+
 }
 ```

@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b95142eb0e07e832ca53969cf954b11643535108
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5d9bc15a54797c136743913cd6224cb7de1ce6e0
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038273"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080689"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -114,7 +114,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
 
 - Если вы получаете онлайн-собрание на основе ID собрания, **videoTeleconferenceId** или **joinWebUrl,** этот метод также возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
 - Если вы получаете отчет участника или запись собрания в режиме онлайн, этот метод также возвращает заготку, которая указывает URI на отчет или запись `Location` участника, соответственно.
@@ -222,7 +222,9 @@ Content-Length: 1574
     "isDialInBypassEnabled": true
   },
   "isEntryExitAnnounced": true,
-  "allowedPresenters": "everyone"
+  "allowedPresenters": "everyone",
+  "allowMeetingChat": "enabled",
+  "allowTeamworkReactions": true
 }
 ```
 >**Примечание.** если указан японский язык, в ответ будут включены перечисленные ниже данные.
@@ -268,6 +270,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
     "allowedPresenters": "everyone",
+    "allowMeetingChat": "enabled",
+    "allowTeamworkReactions": true,
     "videoTeleconferenceId": "(redacted)",
     "participants": {
         "organizer": {
@@ -327,6 +331,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
             "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
             "videoTeleconferenceId": "(redacted)",
             "participants": {
                 "organizer": {

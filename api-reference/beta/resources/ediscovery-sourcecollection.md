@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 86ecf3adb64be2b216fdc167b29c10a850e25af6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: aca8b0dcf89f00ada59b093d1164104da0885578
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447354"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080472"
 ---
 # <a name="sourcecollection-resource-type"></a>тип ресурса sourceCollection
 
@@ -18,12 +18,15 @@ ms.locfileid: "50447354"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет коллекцию электронных данных, которая обычно называется поиском. Дополнительные сведения [см. в материале Сбор данных по делу в advanced eDiscovery.](/microsoft-365/compliance/collecting-data-for-ediscovery)
+Представляет коллекцию электронных данных, которая обычно называется поиском. Дополнительные сведения см. в статье [Сбор данных для дела в Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
+|[Добавление additionalSource](../api/ediscovery-sourcecollection-post-additionalsources.md)|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Добавьте дополнительный **объект dataSource** в исходный набор.|
+|[Добавление custodianSource](../api/ediscovery-sourcecollection-post-custodiansources.md)|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Добавьте объект **dataSource хранителя в** исходный набор.|
+|[Добавление noncustodialSource](../api/ediscovery-sourcecollection-post-noncustodialsources.md)|[коллекция microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md)|Добавьте объект **noncustodialSource,** не отстойный для источника.|
 |[Список sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[коллекция microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Получите список объектов **sourceCollection** и их свойств.|
 |[Создание sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Создайте новый **объект sourceCollection.**|
 |[Get sourceCollection](../api/ediscovery-sourcecollection-get.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Ознакомьтесь с свойствами и отношениями **объекта sourceCollection.**|
@@ -31,7 +34,8 @@ ms.locfileid: "50447354"
 |[Удаление sourceCollection](../api/ediscovery-sourcecollection-delete.md)|Нет|Удаление **объекта sourceCollection.**|
 |[estimateStatistics](../api/ediscovery-sourcecollection-estimatestatistics.md)|Нет|Запустите оценку количества электронных писем и документов в коллекции исходных данных.|
 |[Список дополнительныхSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Получите список дополнительных объектов **dataSource,** связанных с исходным собранием.|
-|[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Получите список дополнительных объектов **dataSource,** связанных с исходным собранием.|
+|[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Получите список объектов **custodian dataSource,** связанных с исходным собранием.|
+|[Список noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[коллекция microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md)|Получите список объектов **noncustodialSource,** связанных с коллекцией источников, не связанных с источниками.|
 
 ## <a name="properties"></a>Свойства
 
@@ -40,19 +44,22 @@ ms.locfileid: "50447354"
 |contentQuery|String|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)  Поиск можно уточнить с помощью полей в паре со значениями; например, *subject:"Quarterly Financials" AND Date>=06/01/2016 and Date<=07/01/2016*|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **sourceCollection.**|
 |createdDateTime|DateTimeOffset|Дата и время создания **sourceCollection.**|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none` `allTenantMailboxes` , , , `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` .|
 |description|String|Описание **sourceCollection**|
 |displayName|String|Имя отображения **sourceCollection**|
 |id|String| ID для **sourceCollection**. Только для чтения. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Последний пользователь, который изменил **sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения **sourceCollection.**|
-|tenantSources|microsoft.graph.ediscovery.tenantSources|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `allMailboxes`, `allSites`.|
 
-### <a name="tenantsources-values"></a>tenantSources значения
+### <a name="datasourcescopes-values"></a>значения dataSourceScopes
 
 |Member|Описание|
 |:----|-----------|
-|allMailboxes| Включи все почтовые ящики в коллекцию. |
-|allSites| Включай все сайты в коллекцию. |
+|нет|Не укажите какие-либо области — расположения будут ссылаться отдельно.|
+|allTenantMailboxes|Включи все почтовые ящики клиента в **sourceCollection.**|
+|allTenantSites|Включи все сайты-клиенты **в sourceCollection.**|
+|allCaseCustodians|Включай все расположения хранителей в **sourceCollection.**|
+|allCaseNoncustodialDataSources|Включай в **sourceCollection** все неконтратные источники данных.|
 
 ## <a name="relationships"></a>Связи
 
@@ -62,8 +69,9 @@ ms.locfileid: "50447354"
 |addToReviewSetOperation|[microsoft.graph.ediscovery.addToReviewSetOperation](../resources/ediscovery-addtoreviewsetoperation.md)|Добавляет результаты **sourceCollection в** указанный **обзорSet**.|
 |custodianSources|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|**Источники custodian,** включенные в **sourceCollection.**|
 |lastEstimateStatisticsOperation|[microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|Последняя операция оценки, связанная с **sourceCollection.**|
+|noncustodialSources|[коллекция microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)|**noncustodialDataSource** источники, включенные в **sourceCollection**|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {
@@ -88,6 +96,6 @@ ms.locfileid: "50447354"
   },
   "lastModifiedDateTime": "String (timestamp)",
   "contentQuery": "String",
-  "tenantSources": "String"
+  "dataSourceScopes": "String"
 }
 ```
