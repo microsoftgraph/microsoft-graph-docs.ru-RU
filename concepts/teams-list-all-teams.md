@@ -4,12 +4,12 @@ description: 'Чтобы перечислить все команды '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a7e95945d6d13b65d19b168352e067d3c2382ec0
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 8bacd936f67c0ba02ba547104eb9a7983017cbe8
+ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843242"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52051153"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Перечисление всех команд в Microsoft Teams для организации
 
@@ -64,7 +64,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 Ниже приведен пример ответа. 
 
->**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```http
 HTTP/1.1 200 OK
@@ -118,9 +118,9 @@ Content-length: xxx
 GET /teams/{group-id}
 ```
 
-Ниже показан пример ответа.
+Ниже показан пример отклика.
 
->**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
