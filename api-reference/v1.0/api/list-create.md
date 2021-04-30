@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Создание списка на сайте.
 doc_type: apiPageType
-ms.openlocfilehash: f8abd6311f1b9fa98ed4a1a99cb36ac3b1a77812
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 128e772681bae4b4fcc60eefb0b224fd2a4205d1
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471697"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080437"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -27,7 +27,7 @@ ms.locfileid: "50471697"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Sites.ReadWrite.All                         |
+| Для приложений                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -126,7 +126,7 @@ Content-type: application/json
 **Примечание.** Ответ усечен для наглядности.
 При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[списке]: ../resources/list.md
+[list]: ../resources/list.md
 [site]: ../resources/site.md
 
 <!-- {

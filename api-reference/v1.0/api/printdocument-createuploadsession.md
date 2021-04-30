@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c72144dc8b4aa39a87b1c8785ba61e69dab16c37
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 164a5ca3bf6b2f53c3c5952d49f605493b4d9275
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067217"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080087"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument: createUploadSession
 Пространство имен: microsoft.graph
@@ -20,6 +20,8 @@ ms.locfileid: "52067217"
 Создайте сеанс загрузки, который позволяет приложению итеративным образом загружать диапазоны двоичного файла, связанного с документом печати.
 
 В рамках ответа это действие возвращает URL-адрес загрузки, который можно использовать в последующих последовательном `PUT` запросах. Для каждой операции можно указать точный диапазон отгрузки `PUT` bytes. Это позволяет возобновить передачу, если подключение к сети будет отброшено во время загрузки. 
+
+>**Примечание.** Создание сеанса загрузки с использованием разрешений приложений будет успешным только в том случае, если в связанной работе печати имеется [printTask,](../resources/printTask.md) запущенный с триггера, созданного приложением-запросом. `processing` Подробные сведения о регистрации триггера задач см. в материале [Extending Universal Print to support pull printing.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,7 +48,7 @@ ms.locfileid: "52067217"
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-Создание сеанса загрузки с **помощью printerShare:** 
+Создание сеанса загрузки с **помощью printerShare** (поддерживается только с делегированными разрешениями): 
 
 <!-- { "blockType": "ignored" } -->
 ```http

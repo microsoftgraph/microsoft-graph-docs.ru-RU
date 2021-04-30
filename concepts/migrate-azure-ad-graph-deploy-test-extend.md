@@ -1,15 +1,15 @@
 ---
 title: Развертывание, тестирование и расширение перенесенных приложений
-description: 'Описывает миграцию приложений Azure Active Directory (Azure AD) для использования API Microsoft Graph (REST); в этом рассмотрен шаг 3: развертывание, тестирование и расширение.'
+description: 'Описывает, как перенести Azure Active Directory приложения (Azure AD) для использования API Microsoft Graph (REST); в этом рассмотрен шаг 3: развертывание, тестирование и расширение.'
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: cdd2414652e675223b6de42a6a63de5c7e8c5c8a
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 3f8129c434ba8a2d7c9455f3dbfad216fb216399
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921926"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100109"
 ---
 # <a name="deploy-test-and-extend"></a>Развертывание, тестирование и расширение
 
@@ -30,27 +30,27 @@ ms.locfileid: "51921926"
 3.  **Изучение нового значения**
 
     Теперь, когда вы перешли на Microsoft Graph, вам никогда не было проще разблокировать множество наборов данных и функций, которые теперь находятся у вас под рукой. 
-    Microsoft Graph поддерживает множество новых наборов данных и функций Azure AD, недоступных в Azure AD Graph, в том числе: 
+    Microsoft Graph поддерживает множество новых наборов данных и функций Azure AD, недоступных в Azure AD Graph, включая: 
 
-    - [Управление группой Microsoft 365](./office365-groups-concept-overview.md)
-    - [Внешние приглашения пользователей](/graph/api/resources/invitation?view=graph-rest-1.0)
-    - Возможность восстановления [пользователей и групп Microsoft 365](/graph/api/resources/directory?view=graph-rest-1.0) после удаления
-    - [Уведомления webhook для пользователей и групп](./webhooks.md?toc=.%252fref%252ftoc.json&view=graph-rest-1.0)
+    - [Microsoft 365 группового управления](./office365-groups-concept-overview.md)
+    - [Внешние приглашения пользователей](/graph/api/resources/invitation)
+    - Возможность восстановления пользователей и [Microsoft 365 групп](/graph/api/resources/directory) после удаления
+    - [Уведомления webhook для пользователей и групп](./webhooks.md?toc=.%252fref%252ftoc.json)
     - Функции управления удостоверением, такие как:
-      - [Привилегированное управление удостоверениями](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) для повышения пользователей до привилегированных ролей только при необходимости и в течение ограниченного периода времени
-      - [Обзоры](/graph/api/resources/accessreviews-root?view=graph-rest-beta) доступа для одновентных или повторяющихся обзоров доступа для проверки прав доступа пользователя
-      - [Условия использования, позволяющие](/graph/api/resources/accessreviews-root?view=graph-rest-beta) организациям представлять информацию для юридических или нормативных требований, например уведомлений об отказе от ответственности.
+      - [Привилегированное управление удостоверениями](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) для повышения пользователей до привилегированных ролей только при необходимости и в течение ограниченного периода времени
+      - [Обзоры](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) доступа для одновентных или повторяющихся обзоров доступа для проверки прав доступа пользователя
+      - [Условия использования, позволяющие](/graph/api/resources/agreement) организациям представлять информацию для юридических или нормативных требований, например уведомлений об отказе от ответственности.
     - Функции безопасности, такие как:
-      - [События с риском для идентификации](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
-      - [Рискованные пользователи](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-    - [Клиентские библиотеки и примеры,](./index.yml) доступные на многих других платформах и языках. SDKs Microsoft Graph предоставляют обнаруживаемый интерфейс для легкого доступа к данным при прозрачной обработке приобретения маркеров, обработки повторной обработки из-за ошибок и регулирования, безопасной обработки перенаправления и сериализации моделей и десериализации.
+      - [События с риском для идентификации](/graph/api/resources/riskdetection)
+      - [Рискованные пользователи](/graph/api/resources/riskyuser)
+    - [Клиентские библиотеки и примеры,](/graph/sdks/sdks-overview) доступные на многих других платформах и языках. SDKs Graph Microsoft предоставляют обнаруживаемый интерфейс для легкого доступа к данным при прозрачной обработке приобретения маркеров, обработки повторной обработки из-за ошибок и регулирования, безопасной обработки перенаправления и сериализации моделей и десериализации.
 
-    Microsoft Graph предоставляет доступ к гораздо большему набору служб, чем только Azure Active Directory. Это шлюз [API для служб Microsoft 365 тоже](./index.yml).
+    Microsoft Graph предоставляет доступ к многим дополнительным службам, чем только Azure Active Directory. Это шлюз [API для Microsoft 365 служб.](./index.yml)
     Регулярно проверяйте новые наборы данных и возможности.  
 
-    - Посмотрите, что [можно сделать с Microsoft Graph](/graph/examples)
-    - Ознакомьтесь [с последними новостями](/graph/blogs) о Microsoft Graph и некоторыми отличными сериями обучения в блоге Microsoft Graph.
-    - В [статье changelog](/greaph/changelog) обобщаются обновления службы и документов. После этих обновлений вы сможете отслеживать новые API, введенные в /бета-версию (предварительный просмотр), и те, которые повышены до v1.0 (GA).  Эти новые API могут предоставить новые возможности для добавления дополнительных значений и новых функций в приложения.  
+    - Посмотрите, что [можно сделать с Microsoft Graph](https://developer.microsoft.com/graph/examples)
+    - Ознакомьтесь [с блогом microsoft Graph для](https://developer.microsoft.com/graph/blogs) последних новостей о microsoft Graph и некоторых отличных сериях обучения.
+    - В [статье changelog](/graph/changelog) обобщаются обновления службы и документов. После этих обновлений вы сможете отслеживать новые API, введенные в /бета-версию (предварительный просмотр), и те, которые повышены до v1.0 (GA).  Эти новые API могут предоставить новые возможности для добавления дополнительных значений и новых функций в приложения.  
 
 ## <a name="see-also"></a>См. также
 
@@ -58,13 +58,13 @@ ms.locfileid: "51921926"
 
 - Снова [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список
 - Публикация вопросов [в Microsoft Q&A](/answers/topics/microsoft-graph-applications.html) 
-- Просмотрите примеры Microsoft Graph, чтобы сравнить их с существующим кодом приложения:
+- Просмотрите Graph microsoft, чтобы сравнить и сравнить с существующим кодом приложения:
   - **Приложения, которые используют API REST:** изучить быстрые запуски и [примеры,](https://developer.microsoft.com/graph/get-started)выбрав платформу выбора и выполнить быстрый запуск или поиск соответствующего примера
   - **Приложение, которое использует клиентскую** библиотеку .NET: обзор [консоли-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Используйте [быстрые старты и примеры,](/graph/get-started) чтобы быстро ускориться.
-- Использование [клиентских библиотек и SDKs для](https://developer.microsoft.com/graph/get-started) разработки настраиваемого приложения 
-- Ознакомьтесь с концепциями и практиками [Microsoft Graph.](./overview.md)
+- Используйте [быстрые старты и примеры,](https://developer.microsoft.com/graph/get-started) чтобы быстро ускориться.
+- Использование [клиентских библиотек и SDKs для](/graph/sdks/sdks-overview) разработки настраиваемого приложения 
+- Ознакомьтесь [с Graph](./overview.md) microsoft.
 - Используйте [Graph Explorer](https://aka.ms/ge) для экспериментов с Microsoft Graph.
