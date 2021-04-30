@@ -1,18 +1,19 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 03c755e37fe270e11187886c0fe1433e972b7ecc
+ms.openlocfilehash: 20adb7553932638f1e82c9ae75a7fdb42e5a035c
 ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080452"
+ms.locfileid: "52080611"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ConversationMember conversationMember = graphClient.chats("19:b8577894a63548969c5c92bb9c80c5e1@thread.v2").members("MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzJjOGQyYjVjLTE4NDktNDA2Ni1iNTdkLWU3YTBlOWU0NGVjOA==")
+Chat chat = graphClient.chats("19:b8577894a63548969c5c92bb9c80c5e1@thread.v2")
     .buildRequest()
+    .expand("members")
     .get();
 
 ```
