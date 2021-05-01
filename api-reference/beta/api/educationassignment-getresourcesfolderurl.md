@@ -1,24 +1,25 @@
 ---
-title: 'educationAssignment: getResourcesFolderUrl'
-description: 'Эта функция возвращает URL-адрес OneDrive, куда должны быть загружены все ресурсы на основе файлов (Word, Excel и так далее).  '
+title: 'educationAssignment: getResourcesFolderUrl (deprecated)'
+description: 'Эта функция возвращает URL OneDrive, где должны быть загружены все ресурсы на основе файлов (Word, Excel и так далее).  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce5f35560a25f2a57742d93293788038e13cb179
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44c7caec25b4d96b225598041f59bfcaa3f5d3ac
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951852"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119007"
 ---
-# <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
+# <a name="educationassignment-getresourcesfolderurl-deprecated"></a>educationAssignment: getResourcesFolderUrl (deprecated)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ [!CAUTION] API getResourcesFolderUrl обесценен и прекратит возвращать данные 31 мая 2021 г. Чтобы получить эту информацию, используйте новое свойство, выставленное на `resourcesFolderUrl` [объекте educationAssignment.](../resources/educationassignment.md) 
 
-Эта функция возвращает URL-адрес OneDrive, куда должны быть загружены все ресурсы на основе файлов (Word, Excel и так далее).  
+Эта функция возвращает URL OneDrive, где должны быть загружены все ресурсы на основе файлов (Word, Excel и так далее).  
 Обратите внимание, что файлы должны быть размещены в этой папке, чтобы они были добавлены в качестве ресурсов. Только учитель в классе может определить, какие файлы загрузить. 
 
 ## <a name="permissions"></a>Разрешения
@@ -44,7 +45,7 @@ GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. В теле будет содержаться URL-адрес папки OneDrive, в который будут помещаться все ресурсы на основе файлов.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. В теле будет OneDrive URL-адрес папки, в который будут помещаться все ресурсы на основе файлов.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.

@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: fccb8c691d5398bd95cc3ebc7eca1fc3028443a5
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 550e8329374865ce22954f1d25c977f877faf415
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722162"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119021"
 ---
 # <a name="educationsubmission-resource-type"></a>тип ресурса educationSubmission
 
@@ -38,9 +38,9 @@ ms.locfileid: "50722162"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|получатель;|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Кому назначено это представление.|
-|releasedBy|[identitySet](identityset.md)|Пользователь, переместивший состояние этой отправки в освобожденный.|
-|releasedDateTime|DateTimeOffset|Момент, когда отправка была выпущена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|получатель;|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Кто этому представлению назначено.|
+|releasedBy (deprecated)|[identitySet](identityset.md)|Пользователь, переместивший состояние этой отправки в освобожденный.|
+|releasedDateTime (отстает)|DateTimeOffset|Момент, когда отправка была выпущена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |returnedBy|[identitySet](identityset.md)|Пользователь, переместивший состояние этой отправки в возвращенный.|
 |returnedDateTime|DateTimeOffset|Момент, когда отправка была возвращена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |resourcesFolderUrl|String|Папка, в которой необходимо хранить все ресурсы файла для этой отправки.|
@@ -81,9 +81,7 @@ ms.locfileid: "50722162"
     "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
     "submittedDateTime":"String (timestamp)",
     "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)",
-    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "releasedDateTime":"String (timestamp)"
+    "unsubmittedDateTime":"String (timestamp)"
 }
 ```
 

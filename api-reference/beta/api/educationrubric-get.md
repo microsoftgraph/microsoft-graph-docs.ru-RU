@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6f035cb9b31f813b788fe71e0feb4ae06d996750
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 879728279d2b57b3459284e2bcad92a1d617e7a6
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061835"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118937"
 ---
 # <a name="get-educationrubric"></a>Get educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "52061835"
 
 Извлечение свойств и связей [объекта educationRubric.](../resources/educationrubric.md)
 
-Обратите внимание, что при получении рубрики назначения (), возвращаемая является неоменяемой копией исходной рубрики, которая `GET /education/me/assignments/{id}/rubric` существует под `/education/users/{id}/rubrics` . Копия связана с этим конкретным назначением.
+Обратите внимание, что при получении рубрики назначения (), возвращаемая является неоменяемой копией исходной рубрики, которая `GET /education/classes/{id}/assignments/{id}/rubric` существует под `/education/users/{id}/rubrics` . Копия связана с этим конкретным назначением.
 
 ## <a name="permissions"></a>Разрешения
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e0bcea6b95b83cad3f4467e0a3687a3e2c401b56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 50e3d9a675a6052f6eb2f26b5ed28a3395b77063
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043481"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52119000"
 ---
 # <a name="update-educationrubric"></a>Обновление educationRubric
 
@@ -20,7 +20,7 @@ ms.locfileid: "52043481"
 
 Обновление свойств объекта [educationRubric.](../resources/educationrubric.md)
 
-Обновление рубрики, присоединенной к назначению ( ) возможно только до публикации назначения, и обновление фактически является исходной рубрикой, которая существует `PATCH /education/me/assignments/{id}/rubric` под `/education/users/{id}/rubrics` . После публикации назначения будет выполнена неопубликоваемая копия рубрики, прикрепленная к этому конкретному назначению. Эту рубрику можно получить с помощью [GET/education/me/assignments/{id}/rubric,](educationrubric-get.md)но ее нельзя обновить.
+Обновление рубрики, присоединенной к назначению ( ) возможно только до публикации назначения, и обновление фактически является исходной рубрикой, которая существует `PATCH /education/classes/{id}/assignments/{id}/rubric` под `/education/users/{id}/rubrics` . После публикации назначения будет выполнена неопубликоваемая копия рубрики, прикрепленная к этому конкретному назначению. Эту рубрику можно получить с помощью [GET/education/classes/{id}/assignments/{id}/rubric,](educationrubric-get.md)но ее нельзя обновить.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,14 +38,14 @@ ms.locfileid: "52043481"
 
 ```http
 PATCH /education/me/rubrics/{id}
-PATCH /education/me/assignments/{id}/rubric
+PATCH /education/classes/{id}/assignments/{id}/rubric
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

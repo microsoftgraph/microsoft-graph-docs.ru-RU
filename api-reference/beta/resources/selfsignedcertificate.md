@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: luleonpla
-ms.openlocfilehash: 641748720be99272569c08874d91be7b7bb56888
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 1dbb9bcb15a3e820b3676e336826a741ecbb5e9f
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469033"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118979"
 ---
 # <a name="selfsignedcertificate-resource-type"></a>тип ресурса selfSignedCertificate
 
@@ -23,17 +23,17 @@ ms.locfileid: "51469033"
 ## <a name="properties"></a>Свойства
 Свойство|Тип|Описание
 ----|--|---
-|customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа |
+|customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа. |
 | displayName | String | Удобное имя для ключа. |
-|endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
+|endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
 |keyId|Guid|Уникальный идентификатор (GUID) для ключа.|
-|startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
+|startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
 |type|String|Тип учетных данных ключей. "AsymmetricX509Cert".|
 |использование|String|Строка, описываемая цель, для которой можно использовать ключ. Например, "Проверка".|
 |key|Двоичный| Значение для учетных данных ключа. Должно быть закодированное значение base-64. |
 |отпечатки пальцев| String | Значение отпечатка пальца для ключа.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -57,7 +57,6 @@ ms.locfileid: "51469033"
     "thumbprint":"string",
     "usage": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

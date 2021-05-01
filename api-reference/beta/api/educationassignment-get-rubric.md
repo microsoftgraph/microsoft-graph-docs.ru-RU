@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0f0c6d5c70911eb29ee621e25da3faed15de0748
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: b233b0a0ef3f51d5ee208b6b79a3c87584d69bc3
+ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061709"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "52118991"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>Get educationRubric attached to educationAssignment
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -67,7 +67,7 @@ GET /education/classes/{id}/assignments/{id}/rubric
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rubric-csharp-snippets.md)]
