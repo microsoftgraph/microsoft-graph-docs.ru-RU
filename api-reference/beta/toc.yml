@@ -392,10 +392,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Обновление параметров почтового ящика
                     href: api/user-update-mailboxsettings.md
-              - name: Службы пользователей Outlook
+              - name: Outlook службы пользователей
                 expanded: true
                 items:
-                  - name: Пользователь Outlook
+                  - name: Outlook пользователя
                     href: resources/outlookuser.md
                   - name: Создание категории
                     href: api/outlookuser-post-mastercategories.md
@@ -2712,7 +2712,7 @@ items:
                         href: api/intune-apps-mobilelobapp-list.md
                       - name: Получение
                         href: api/intune-apps-mobilelobapp-get.md
-                  - name: ID продукта Office
+                  - name: Office продукта
                     href: resources/intune-apps-officeproductid.md
                   - name: Приложение из набора Office
                     href: resources/intune-apps-officesuiteapp.md
@@ -2869,7 +2869,7 @@ items:
                     href: resources/intune-apps-windowsarchitecture.md
                   - name: Тип устройства Windows
                     href: resources/intune-apps-windowsdevicetype.md
-                  - name: Microsoft edge app Windows
+                  - name: Windows microsoft edge app
                     href: resources/intune-apps-windowsmicrosoftedgeapp.md
                     items:
                       - name: Список
@@ -3304,7 +3304,7 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md
                       - name: Обновление
                         href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-update.md
-                  - name: Состояние удаления устройства автопилота Windows
+                  - name: Windows состояния удаления устройств автопилота
                     href: resources/intune-enrollment-windowsautopilotdevicedeletionstate.md
                   - name: Удостоверение устройства с Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdeviceidentity.md
@@ -4156,7 +4156,7 @@ items:
                     href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
                   - name: Параметры восстановления BitLocker
                     href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
-                  - name: Тип вращения пароля для восстановления BitLocker
+                  - name: BitLocker типа вращения пароля восстановления
                     href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
                   - name: Политика BitLocker в отношении съемных дисков
                     href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
@@ -6049,7 +6049,7 @@ items:
                         href: api/intune-deviceconfig-windows10customconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-windows10customconfiguration-update.md
-                  - name: Интерфейс конфигурации прошивки устройств Windows 10
+                  - name: Windows 10 интерфейс конфигурации прошивки устройства
                     href: resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md
                     items:
                       - name: Список
@@ -6062,7 +6062,7 @@ items:
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-update.md
-                  - name: Тип режима устройства Windows 10
+                  - name: Windows 10 типа устройства
                     href: resources/intune-deviceconfig-windows10devicemodetype.md
                   - name: Конфигурация профиля электронной почты EAS для Windows 10
                     href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
@@ -6341,7 +6341,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Параметры защиты защиты защитника Windows
+                  - name: Windows защиты от взлома защитника
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Конфигурация оптимизации доставки в Windows
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -6358,7 +6358,7 @@ items:
                         href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
                   - name: Режим оптимизации доставки в Windows
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
-                  - name: Тип киоска края Windows
+                  - name: Windows типа края киоска
                     href: resources/intune-deviceconfig-windowsedgekiosktype.md
                   - name: Сетевой профиль брандмауэра Windows
                     href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
@@ -6427,7 +6427,7 @@ items:
                         href: api/intune-deviceconfig-windowskioskconfiguration-update.md
                   - name: Классическое приложение киоска Windows
                     href: resources/intune-deviceconfig-windowskioskdesktopapp.md
-                  - name: Расписание принудительного обновления киоска Windows
+                  - name: Windows расписание принудительного обновления киоска
                     href: resources/intune-deviceconfig-windowskioskforceupdateschedule.md
                   - name: Локальная группа киоска Windows
                     href: resources/intune-deviceconfig-windowskiosklocalgroup.md
@@ -6439,7 +6439,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskprofile.md
                   - name: Отдельное приложение UWP киоска Windows
                     href: resources/intune-deviceconfig-windowskiosksingleuwpapp.md
-                  - name: Одно приложение win32 киоска Windows
+                  - name: Windows одно приложение win32
                     href: resources/intune-deviceconfig-windowskiosksinglewin32app.md
                   - name: Пользователь киоска Windows
                     href: resources/intune-deviceconfig-windowskioskuser.md
@@ -6447,7 +6447,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskuwpapp.md
                   - name: Посетитель киоска Windows
                     href: resources/intune-deviceconfig-windowskioskvisitor.md
-                  - name: Приложение win32 в киоске Windows
+                  - name: Windows киоск win32 приложение
                     href: resources/intune-deviceconfig-windowskioskwin32app.md
                   - name: Политика сетевой изоляции Windows
                     href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
@@ -7804,7 +7804,7 @@ items:
                     href: resources/intune-devices-revokeapplevpplicensesactionresult.md
                   - name: Сведения о теге области ролей
                     href: resources/intune-auditing-rolescopetaginfo.md
-                  - name: Поворот результата действия устройства bitLocker клавиш
+                  - name: Вращать BitLocker клавиши действия устройства
                     href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
                   - name: Сводка состояния базовой категории безопасности
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
@@ -8188,7 +8188,7 @@ items:
                     href: resources/intune-devices-userexperienceanalyticssettings.md
                   - name: 'Аналитика пользовательских интерфейсов, обобщенная'
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
-                  - name: Сводка аналитики пользовательских интерфейсов для устройств Windows 10
+                  - name: Сводка Windows 10 пользовательских интерфейсов
                     href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
                   - name: Аналитика пользовательских интерфейсов работает с любого устройства
                     href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
@@ -8220,11 +8220,11 @@ items:
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
                   - name: Выражение условия переменного управления
                     href: resources/intune-fencing-variablemanagementconditionexpression.md
-                  - name: Состояние развертывания автопилота Windows
+                  - name: Windows состояния развертывания автопилота
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
-                  - name: Тип регистрации автопилота Windows
+                  - name: Windows типа автопилота
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
-                  - name: Состояние продукта защитника Windows
+                  - name: Windows состояние продукта defender
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Результат действия "проверка Защитника Windows"
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
@@ -8276,7 +8276,7 @@ items:
                     href: resources/intune-devices-windowsmalwareoverview.md
                   - name: Серьезность вредоносной программы для Windows
                     href: resources/intune-devices-windowsmalwareseverity.md
-                  - name: Количество серьезности вредоносных программ Windows
+                  - name: Windows количество серьезности вредоносных программ
                     href: resources/intune-devices-windowsmalwareseveritycount.md
                   - name: Состояние вредоносной программы для Windows
                     href: resources/intune-devices-windowsmalwarestate.md
@@ -8531,7 +8531,7 @@ items:
                         href: api/intune-mam-targetedmanagedappprotection-get.md
                       - name: Действие назначения
                         href: api/intune-mam-targetedmanagedappprotection-assign.md
-                  - name: Идентификатор приложения Windows
+                  - name: Windows приложения
                     href: resources/intune-mam-windowsappidentifier.md
                   - name: Windows Information Protection
                     href: resources/intune-mam-windowsinformationprotection.md
@@ -9392,7 +9392,7 @@ items:
                         href: api/intune-shared-windowsdomainjoinconfiguration-update.md
                   - name: Настройки назначения универсального приложения Windows AppX
                     href: resources/intune-shared-windowsuniversalappxappassignmentsettings.md
-                  - name: Состояние обновления Windows
+                  - name: Windows состояние обновления
                     href: resources/intune-shared-windowsupdatestate.md
                     items:
                       - name: Список
@@ -9421,14 +9421,14 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Обновление
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
-          - name: Облачный КОМПЬЮТЕР (предварительный просмотр)
+          - name: Cloud PC (предварительный просмотр)
             items:
               - name: Виртуальная конечная точка
                 href: resources/virtualendpoint.md
                 items:
                   - name: Получить эффективные разрешения
                     href: api/virtualendpoint-geteffectivepermissions.md
-              - name: Облачный КОМПЬЮТЕР
+              - name: Cloud PC
                 href: resources/cloudpc.md
                 items:
                   - name: Список
@@ -9437,7 +9437,7 @@ items:
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-              - name: Изображение устройства облачного КОМПЬЮТЕРА
+              - name: Cloud PC устройства
                 href: resources/cloudpcdeviceimage.md
                 items:
                   - name: Список
@@ -9450,7 +9450,7 @@ items:
                     href: api/cloudpcdeviceimage-delete.md
                   - name: Получить исходные изображения
                     href: api/cloudpcdeviceimage-getsourceimages.md
-              - name: Локальное подключение облачного КОМПЬЮТЕРА
+              - name: Cloud PC локального подключения
                 href: resources/cloudpconpremisesconnection.md
                 items:
                   - name: Список
@@ -9467,7 +9467,7 @@ items:
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
                   - name: Обновление пароля домена Active Directory
                     href: api/cloudpconpremisesconnection-updateaddomainpassword.md
-              - name: Политика продюсинга облачных компьютеров
+              - name: Cloud PC политики обеспечения
                 href: resources/cloudpcprovisioningpolicy.md
                 items:
                   - name: Список
@@ -9689,7 +9689,7 @@ items:
                 href: api/educationassignment-publish.md
               - name: Перечисление сданных работ
                 href: api/educationassignment-list-submissions.md
-              - name: Получение URL-адреса папки ресурсов
+              - name: Получить URL-адрес папки ресурсов (неподготовленный)
                 href: api/educationassignment-getresourcesfolderurl.md
               - name: Присоединение рубрики к назначению
                 href: api/educationassignment-get-rubric.md
@@ -10197,9 +10197,9 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: Удаление администратора с ролью в заданной области
                     href: api/administrativeunit-delete-scopedrolemembers.md
-              - name: Ключ восстановления BitLocker (предварительный просмотр)
+              - name: BitLocker восстановления (предварительный просмотр)
                 items:
-                  - name: Ключ восстановления BitLocker
+                  - name: BitLocker восстановления
                     href: resources/bitlockerrecoverykey.md
                   - name: Список
                     href: api/bitlocker-list-recoverykeys.md
@@ -10495,7 +10495,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
                       - name: Удаление
                         href: api/microsoftauthenticatorauthenticationmethod-delete.md
-                  - name: Microsoft Authenticator Passwordless Phone Sign-In (обесценен)
+                  - name: Microsoft Authenticator Без паролей Телефон Sign-In (обесценен)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: Список
@@ -10537,9 +10537,9 @@ items:
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Add
                         href: api/authentication-post-phonemethods.md
-                      - name: Включить вход в SMS
+                      - name: Включить SMS вход
                         href: api/phoneauthenticationmethod-enablesmssignin.md
-                      - name: Отключение регистрации SMS
+                      - name: Отключение SMS регистрации
                         href: api/phoneauthenticationmethod-disablesmssignin.md
                   - name: Электронная почта
                     href: resources/emailauthenticationmethod.md
@@ -10578,7 +10578,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: Delete
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Политика проверки подлинности Майкрософт
+                  - name: Microsoft Authenticator политики
                     href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Получение
@@ -10587,7 +10587,7 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: Delete
                         href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                  - name: Политика входов в Microsoft Authenticator без паролей (неподготовлена)
+                  - name: Microsoft Authenticator Политика Телефон регистрации без паролей (неподготовлена)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Получение
@@ -10791,7 +10791,7 @@ items:
                     href: resources/socialidentityprovider.md
                   - name: Поставщик удостоверений Apple
                     href: resources/appleidentityprovider.md
-                  - name: Поставщик удостоверений OpenID Connect
+                  - name: Поставщик удостоверений Подключение OpenID
                     href: resources/openidconnectidentityprovider.md
                   - name: Список
                     href: api/identityproviderbase-list.md
@@ -10809,7 +10809,7 @@ items:
                 items:
                   - name: Тип поставщика удостоверений
                     href: resources/identityprovider.md
-                  - name: Тип поставщика удостоверений OpenID Connect
+                  - name: Тип поставщика удостоверений Подключение OpenID
                     href: resources/openidconnectprovider.md
                   - name: Список
                     href: api/identityprovider-list.md
@@ -11021,11 +11021,11 @@ items:
                     href: api/trustframeworkkeyset-generatekey.md
                   - name: Получить активный ключ
                     href: api/trustframeworkkeyset-getactivekey.md
-                  - name: Сертификат загрузки
+                  - name: Upload сертификат
                     href: api/trustframeworkkeyset-uploadcertificate.md
-                  - name: Загрузка сертификата PKCS12
+                  - name: Upload Сертификат PKCS12
                     href: api/trustframeworkkeyset-uploadpkcs12.md
-                  - name: Отправка секрета
+                  - name: Upload секрет
                     href: api/trustframeworkkeyset-uploadsecret.md
               - name: Политика Trust Framework
                 href: resources/trustframeworkpolicy.md
@@ -11170,7 +11170,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Обновление
                         href: api/identityapiconnector-update.md
-                      - name: Загрузка клиентского сертификата
+                      - name: Upload клиентского сертификата
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
@@ -12079,7 +12079,7 @@ items:
                     href: api/workposition-delete.md
               - name: Projects
                 items:
-                  - name: Участие в проекте
+                  - name: Project участие
                     href: resources/projectparticipation.md
                   - name: Список
                     href: api/profile-list-projects.md
@@ -12395,7 +12395,7 @@ items:
                     items:
                       - name: Регистрация пользователей методом проверки подлинности
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
-          - name: Отчеты об использовании Microsoft 365
+          - name: Microsoft 365 отчеты об использовании
             items:
               - name: Обзор
                 href: resources/report.md
@@ -12460,7 +12460,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Получение занятого объема хранилища
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Активации Microsoft 365
+              - name: Microsoft 365 активации
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -12469,7 +12469,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Активные пользователи Microsoft 365
+              - name: Microsoft 365 активных пользователей
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -12487,7 +12487,7 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: Получить количество пользователей платформы
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Действия групп Microsoft 365
+              - name: Microsoft 365 групп
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Получение сведений о группе
@@ -13600,7 +13600,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Task
+          - name: Задача
             href: resources/todotask.md
             items:
               - name: Перечисление задач
@@ -13634,7 +13634,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: Задачи Outlook (не рекомендуется)
             items:
-              - name: Задача Outlook (неподготовленная)
+              - name: Outlook задачи (неуставная)
                 items:
                   - name: Задача Outlook
                     href: resources/outlooktask.md
@@ -13654,7 +13654,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: Добавление вложения
                     href: api/outlooktask-post-attachments.md
-              - name: Папка задач Outlook (неподготовленная)
+              - name: Outlook задачи (обесценив)
                 items:
                   - name: Папка задач Outlook
                     href: resources/outlooktaskfolder.md
@@ -13672,7 +13672,7 @@ items:
                     href: api/outlooktaskfolder-list-tasks.md
                   - name: Создание задач в папке
                     href: api/outlooktaskfolder-post-tasks.md
-              - name: Целевая группа Outlook (неподготовленная)
+              - name: Outlook (неподготовленная)
                 items:
                   - name: Группа задач Outlook
                     href: resources/outlooktaskgroup.md
