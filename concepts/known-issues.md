@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 856100b87a1e776a4983f75f4bd35158f0745cfd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 20d9d3cb70ad1ea8a4b5647f683bbb01dcfb3e4c
+ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054254"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100067"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -184,6 +184,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * При отслеживании изменений в отношениях иногда неправильно возвращается контекст OData.
 * Расширения схемы (устаревшие) не возвращаются с оператором $select и возвращаются без него.
 * Клиенты не могут отслеживать изменения в открытых расширениях и зарегистрированных расширениях схемы.
+
+## <a name="devices-and-apps--device-updates-windows-updates"></a>Устройства и приложения | Обновления устройств (обновления Windows)
+
+### <a name="making-a-request-for-the-first-time"></a>Создание запроса в первый раз
+
+При первом вызове API обновлений Windows вы можете получить ответ`401 Unauthorized`. Эта ошибка возникает в случаях, когда в вашем клиенте еще не существует субъекта-службы приложения и требуется время на завершение подготовки. Попробуйте еще раз примерно через 24 часа.
 
 ## <a name="extensions"></a>Расширения
 

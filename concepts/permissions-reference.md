@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 848510f113767ec9e9530cf82b30dfff9e836711
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: d0b44fd3737405e4bac72dd2d9b9fbe48e0ec3d6
+ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067210"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52080584"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -107,6 +107,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 | _AccessReview.Read.All_ |   Чтение всех проверок доступа  | Позволяет приложению считывать проверки доступа от имени вошедшего пользователя. | Да | Нет |
 | _AccessReview.ReadWrite.All_ |   Управление всеми проверками доступа  | Позволяет приложению считывать и записывать проверки доступа от имени вошедшего пользователя. | Да | Нет |
 | _AccessReview.ReadWrite.Membership_ |   Управление проверками доступа для участия в группах и приложениях | Позволяет приложению считывать и записывать проверки доступа к группам и приложениям от имени выполнившего вход пользователя. | Да | Нет |
+| _Policy.ReadWrite.AccessReviews_ |   Управление всеми политиками проверки доступа  | Позволяет приложению считывать и изменять политики условного доступа в организации от имени вошедшего пользователя. | Да | Нет |
 
 
 #### <a name="application-permissions"></a>Разрешения приложений
@@ -115,11 +116,12 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Чтение всех проверок доступа | Позволяет приложению считывать проверки доступа без необходимости входа пользователя. | Да |
 | _AccessReview.ReadWrite.Membership_ | Управление проверками доступа для участия групп и приложений | Позволяет приложению управлять проверками доступа для групп и приложений без необходимости входа пользователя. | Да |
+| _Policy.ReadWrite.AccessReviews_ |   Управление всеми политиками проверки доступа  | Позволяет приложению считывать и записывать политики проверки доступа без необходимости для пользователя выполнять вход. | Да |
 
 
 ### <a name="remarks"></a>Примечания
 
-_AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite.Membership_ допустимы только для рабочих или учебных учетных записей. 
+_AccessReview.Read.All_, _AccessReview.ReadWrite.All_, _AccessReview.ReadWrite.Membership_ и _Policy.ReadWrite.AccessReviews_ допустимы только для рабочих и учебных учетных записей. 
 
 Чтобы приложение с делегированными разрешениями могло считывать проверки доступа группы или приложения, вошедший пользователь должен быть участником одной из следующих ролей администратора: "Глобальный администратор", "Администратор безопасности", "Читатель безопасности" или "Администратор пользователей". Чтобы приложение с делегированными разрешениями могло записывать проверки доступа группы или приложения, вошедший пользователь должен быть участником одной из следующих ролей администратора: "Глобальный администратор" или "Администратор пользователей".
 
@@ -1257,7 +1259,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированные разрешения
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
