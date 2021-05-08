@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: a772631a753d6f2d69402970f9a214da141f9e5f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: e81614ba6c17955e8199e5c5aae6c643d93e9068
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517337"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232041"
 ---
 # <a name="printer-resource-type"></a>тип ресурса принтера
 
@@ -30,7 +30,7 @@ ms.locfileid: "50517337"
 |:---|:---|:---|
 | [Создание](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
 | [получение](../api/printer-get.md); | [printer](printer.md) | Ознакомьтесь с свойствами и отношениями объекта принтера. |
-| [обновление](../api/printer-update.md). | [printer](printer.md) | Обновление объекта принтера. |
+| [Обновление](../api/printer-update.md) | [printer](printer.md) | Обновление объекта принтера. |
 | [удаление](../api/printer-delete.md); | Нет | Отрегистрим физический принтер из службы универсальной печати. |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Нет | Восстановление параметров по умолчанию принтера до значений, заданных производителем. |
 | [Список заданий](../api/printer-list-jobs.md) | [коллекция printJob](printjob.md) | Получите список заданий печати, которые в очереди для обработки принтером. |
@@ -56,8 +56,9 @@ ms.locfileid: "50517337"
 |location|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
 |defaults|[printerDefaults](printerdefaults.md)|Параметры печати принтера по умолчанию. Унаследованный от [printerBase](../resources/printerbase.md).|
 |capabilities|[printerCapabilities](printercapabilities.md)|Возможности принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
+|lastSeenDateTime|DateTimeOffset|Самая недавняя датаTimeOffset при взаимодействии принтера с универсальной печатью. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |jobs|[коллекция printJob](printjob.md)| Список заданий, которые в очереди для печати принтером.  Унаследованный от [printerBase](../resources/printerbase.md).|
@@ -65,7 +66,7 @@ ms.locfileid: "50517337"
 |соединители|[printConnector](printconnector.md)|Соединители, связанные с принтером.|
 |taskTriggers|[printTaskTrigger](printtasktrigger.md) collection|Список триггеров задач, связанных с принтером.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -97,7 +98,8 @@ ms.locfileid: "50517337"
   },
   "registeredDateTime": "String (timestamp)",
   "isShared": "Boolean",
-  "hasPhysicalDevice": "Boolean"
+  "hasPhysicalDevice": "Boolean",
+  "lastSeenDateTime": "String (timestamp)"
 }
 ```
 

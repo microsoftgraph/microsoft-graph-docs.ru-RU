@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f486066b150ccd0321f23f47089aab67d87e9f7e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3e100c1b86c8d299a7d74431715a6e9ef1464393
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950303"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231982"
 ---
-# <a name="statusbase-resource-type"></a>тип ресурса statusBase
+# <a name="statusbase-resource-type-deprecated"></a>тип ресурса statusBase (неподготовленный)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> API statusBase обесценилось и прекратит возвращать данные om 31 декабря 2021 г. Используйте новый [тип provisioningStatusInfo.](provisioningstatusinfo.md)
 
 Описывает состояние события сводки по подготовкам. 
 

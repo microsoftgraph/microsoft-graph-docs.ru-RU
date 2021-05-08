@@ -1,22 +1,23 @@
 ---
-title: Обновление свойств educationUser
-description: Обновление свойств объекта **educationuser**.
+title: Обновление educationUser
+description: Обновление свойств объекта educationUser.
+author: mlafleur
 localization_priority: Normal
-author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 32645e98fbb2e7da1aeec8d48eddb3c5da6822bb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f3cf8d98f3446c93e89451a2d2c262bc431328e0
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054037"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232055"
 ---
-# <a name="update-educationuser-properties"></a>Обновление свойств educationUser
+# <a name="update-educationuser"></a>Обновление educationUser
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта **educationuser**.
+Обновление свойств объекта [educationUser.](../resources/educationuser.md)
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,22 +42,36 @@ PATCH /education/users/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|displayName| String| Отображаемое имя пользователя|
-|givenName;| String | Имя |
-|middleName| String | Отчество пользователя|
-|surname| String | Фамилия пользователя|
-|mail| String| Электронный адрес|
-|mobilePhone| String | Номер мобильного телефона пользователя |
-|externalSource|string| Допустимые значения: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|string| Источник для создания пользователя.  Допустимые значения: `sis`, `manual`, `enum_sentinel`.|
-|mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Почтовый адрес пользователя.|
-|residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Адрес проживания пользователя.|
-|primaryRole|string| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Допустимые значения: `student`, `teacher`, `enum_sentinel`.|
-|student|[educationStudent](../resources/educationstudent.md)| Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| Если основной ролью является учитель, этот блок будет содержать определенные данные учителя.|
-
+| Свойство             | Тип                                                               | Описание                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| accountEnabled       | Логический                                                            | Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Это свойство обязательно указывать при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                               |
+| assignedLicenses     | Коллекция [assignedLicense](../resources/assignedlicense.md)      | Лицензии, назначенные пользователю. Значение null не допускается.                                                                                                                                                                                                                                                                                                   |
+| assignedPlans        | Коллекция [assignedPlan](../resources/assignedplan.md)            | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.                                                                                                                                                                                                                                                                                           |
+| businessPhones       | Коллекция строк                                                  | Номера телефонов пользователя. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер.                                                                                                                                                                                                                           |
+| createdBy            | [identitySet](../resources/identityset.md)                         | Объект, который создал пользователя.                                                                                                                                                                                                                                                                                                                                |
+| department           | String                                                             | Название отдела, в котором работает пользователь. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                      |
+| displayName          | String                                                             | Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.                                                                                      |
+| externalSource       | educationExternalSource                                            | Источник для создания пользователя. Возможные значения: `sis`, `manual`.                                                                                                                                                                                                                                                                                     |
+| externalSourceDetail | Строка                                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                                                                                                                                                                                                          |
+| givenName            | String                                                             | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                  |
+| mail                 | String                                                             | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.                                                                                                                                                                                                                                                    |
+| mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Почтовый адрес пользователя.                                                                                                                                                                                                                                                                                                                                       |
+| mailNickname         | String                                                             | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                      |
+| middleName           | String                                                             | Отчество пользователя.                                                                                                                                                                                                                                                                                                                                    |
+| mobilePhone          | String                                                             | Основной сотовый телефон пользователя.                                                                                                                                                                                                                                                                                                         |
+| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | Дополнительные сведения, используемые для связи пользователя AAD с его аналогом Active Directory.                                                                                                                                                                                                                                                               |
+| passwordPolicies     | String                                                             | Задает политики паролей для пользователя. Это свойство представляет собой перечисление с возможным значением DisableStrongPassword. Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение DisablePasswordExpiration. Два значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword". |
+| passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.                                                        |
+| preferredLanguage    | String                                                             | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1. Пример: "ru-RU".                                                                                                                                                                                                                                                                    |
+| primaryRole          | educationUserRole                                                  | Роль по умолчанию для пользователя. Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `none`, `unknownFutureValue`.                                                                                                                                                                                                |
+| provisionedPlans     | Коллекция [provisionedPlan](../resources/provisionedplan.md)      | Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается.                                                                                                                                                                                                                                                                                       |
+| residenceAddress     | [physicalAddress](../resources/physicaladdress.md)                 | Адрес проживания пользователя.                                                                                                                                                                                                                                                                                                                                   |
+| student              | [educationStudent](../resources/educationstudent.md)               | Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.                                                                                                                                                                                                                                                                              |
+| surname              | String                                                             | Фамилия пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                            |
+| teacher              | [educationTeacher](../resources/educationteacher.md)               | Если основной ролью является учитель, этот блок будет содержать определенные данные учителя.                                                                                                                                                                                                                                                                              |
+| usageLocation        | String                                                             | Двухбуквенный код страны (по стандарту ISO 3166). Свойство необходимо указывать для пользователей, которым будут назначены лицензии, в связи с законодательным требованием проверять доступность служб в странах или регионах. Примеры: "RU", "JP", "GB". Значение null не допускается. Поддерживает параметр $filter.                                                                                           |
+| userPrincipalName    | String                                                             | Имя участника-пользователя.                                                                                                                                                                                                                                                                                                                  |
+| userType             | String                                                             | Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.                                                                                                                                                                                                                                   |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationUser](../resources/educationuser.md) в теле отклика.
@@ -133,7 +148,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "student",
+  "primaryRole": "string",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -142,6 +157,7 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
+      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }
@@ -159,4 +175,3 @@ Content-length: 508
   "suppressions": [
   ]
 }-->
-

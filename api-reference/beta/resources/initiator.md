@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса инициатора
-description: Описывает, кто и что инициировал событие предоставления.
+description: Описывает, кто и что инициировал событие подготовка.
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 2aa8c3f365402569d7a9987d9152bae5e4e3c580
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f1085b6a9b04ef2ad3cd584ac9e0d4dc6c88f037
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130250"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232062"
 ---
 # <a name="initiator-resource-type"></a>Тип ресурса инициатора
 
@@ -18,17 +18,17 @@ ms.locfileid: "50130250"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает, кто и что инициировал событие предоставления. 
+Описывает, кто и что инициировал событие подготовка. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Имя человека или службы, которая инициировала событие предоставления.|
-|id|Строка|Уникально идентифицирует человека или службу, инициировали событие предоставления.|
-|initiatorType|Строка| Тип инициатора. Возможные значения: `user`, `app`, `system`, `unknownFutureValue`.|
+|displayName|String|Имя лица или службы, которая инициировала событие подготовка.|
+|id|String|Уникально идентифицирует человека или службу, которая инициировала событие подготовка.|
+|initiatorType|String| Тип инициатора. Возможные значения: `user`, `application`, `system`, `unknownFutureValue`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,102 +1,98 @@
 ---
 title: Тип ресурса educationSchool
 description: 'Ресурс представляет учебное заведение и используется для управления классами, преподавателями и учащимися данного учебного заведения.  '
+author: mlafleur
 localization_priority: Normal
-author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bd25283390e2683affe2e2cb636344c60a772a2e
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: b076b38e52bb8a7eb93a9eef35c866fc58e0e29a
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368168"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231859"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
 Пространство имен: microsoft.graph
 
-Ресурс представляет учебное заведение и используется для управления классами, преподавателями и учащимися данного учебного заведения.  
+Ресурс представляет учебное заведение и используется для управления классами, преподавателями и учащимися данного учебного заведения.
+
+Наследует от [educationOrganization](../resources/educationorganization.md).
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                   | Возвращаемый тип                                    | Описание                                                                                 |
-| :------------------------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [получение](../api/educationschool-get.md);                     | [educationSchool](educationschool.md)          | Считывание свойств и отношений объекта **educationSchool**.                         |
-| [Добавление класса](../api/educationschool-post-classes.md)      | [educationClass](educationclass.md)            | Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации classes.  |
-| [Перечисление классов](../api/educationschool-list-classes.md)   | Коллекция [educationClass](educationclass.md) | Получение коллекции объектов **educationClass**.                                               |
-| [Удаление класса](../api/educationschool-delete-classes.md) | [educationClass](educationclass.md)            | Удаление **educationClass** из учебного заведения через свойство навигации classes.       |
-| [Добавление пользователя](../api/educationschool-post-users.md)         | [educationUser](educationuser.md)              | Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации **users**. |
-| [Перечисление пользователей](../api/educationschool-list-users.md)       | Коллекция [educationUser](educationuser.md)   | Получение коллекции объектов **educationUser**.                                                |
-| [Удаление пользователя](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Удаление **educationUser** из учебного заведения через свойство навигации **users**.      |
-| [Обновление](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Обновление объекта **educationSchool**.                                                       |
-| [удаление](../api/educationschool-delete.md);               | Нет                                           | Удаление объекта **educationSchool**.                                                       |
+| Метод                                                     | Тип возвращаемых данных                                                   | Описание                                                                                            |
+| :--------------------------------------------------------- | :------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Перечисление educationSchools](../api/educationschool-list.md)    | Коллекция [educationSchool](../resources/educationschool.md) | Получите список объектов [educationSchool](../resources/educationschool.md) и их свойств.     |
+| [Создание educationSchool](../api/educationschool-post.md) | [educationSchool](../resources/educationschool.md)            | Создание нового [объекта educationSchool.](../resources/educationschool.md)                                |
+| [Получение educationSchool](../api/educationschool-get.md)       | [educationSchool](../resources/educationschool.md)            | Ознакомьтесь с свойствами и отношениями объекта [educationSchool.](../resources/educationschool.md) |
+| [Обновление educationSchool](../api/educationschool-update.md) | [educationSchool](../resources/educationschool.md)            | Обновление свойств объекта [educationSchool.](../resources/educationschool.md)                 |
+| [Удаление educationSchool](../api/educationschool-delete.md) | None                                                          | Удаление объекта [educationSchool](../resources/educationschool.md).                                  |
+| [delta](../api/educationschool-delta.md)                   | Коллекция [educationSchool](../resources/educationschool.md) | Получите дополнительные изменения в коллекции ресурсов.                                                    |
 
 ## <a name="properties"></a>Свойства
 
-| Свойство            | Тип                                  | Описание                                                                        |
-| :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
-| id                  | Строка                                | GUID этого учебного заведения.                                                               |
-| displayName         | Строка                                | Отображаемое имя учебного заведения.                                                        |
-| description         | Строка                                | Описание учебного заведения.                                                         |
-| status              | string                                | Только для чтения. Допустимые значения: `inactive`, `active`, `expired`, `deleteable`. |
-| externalSource      | едукатионекстерналсаурце               | Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.        |
-| principalEmail      | String                                | Адрес электронной почты директора.                                                    |
-| principalName       | String                                | Имя директора.                                                             |
-| externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                                                 |
-| highestGrade        | String                                | Самый старший класс.                                                              |
-| lowestGrade         | String                                | Самый младший класс.                                                               |
-| schoolNumber        | String                                | Номер школы.                                                                     |
-| externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                                                    |
-| phone               | String                                | Номер телефона учебного заведения.                                                            |
-| address             | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                                                             |
-| createdBy           | [identitySet](identityset.md)         | Объект, который создал учебное заведение.                                                     |
+| Свойство             | Тип                                               | Описание                                                                                                                                                          |
+| :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| address              | [physicalAddress](../resources/physicaladdress.md) | Адрес учебного заведения.                                                                                                                                               |
+| createdBy            | [identitySet](../resources/identityset.md)         | Объект, который создал учебное заведение.                                                                                                                                       |
+| description          | Строка                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
+| displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
+| externalId           | String                                             | Идентификатор учебного заведения в системе синхронизации.                                                                                                                                      |
+| externalPrincipalId  | String                                             | Идентификатор директора в системе синхронизации.                                                                                                                                   |
+| externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis`, `manual`. |
+| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
+| highestGrade         | String                                             | Самый старший класс.                                                                                                                                                |
+| id                   | Строка                                             | Идентификатор объекта. Наследуется от [сущности](../resources/entity.md).                                                                                                   |
+| lowestGrade          | String                                             | Самый младший класс.                                                                                                                                                 |
+| phone                | String                                             | Номер телефона учебного заведения.                                                                                                                                              |
+| principalEmail       | String                                             | Адрес электронной почты директора.                                                                                                                                      |
+| principalName        | String                                             | Имя директора.                                                                                                                                               |
+| schoolNumber         | String                                             | Номер школы.                                                                                                                                                       |
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип                                           | Описание                             |
-| :----------- | :--------------------------------------------- | :-------------------------------------- |
-| classes      | Коллекция [educationClass](educationclass.md) | Классы, которые обучаются в учебном заведении. Допускается значение null. |
-| users        | Коллекция [educationUser](educationuser.md)   | Пользователи в учебном заведении. Допускается значение null.          |
+| Связь       | Тип                                                        | Описание                                       |
+| :----------------- | :---------------------------------------------------------- | :------------------------------------------------ |
+| administrativeUnit | [administrativeUnit](../resources/administrativeunit.md)    | The underlying administrativeUnit for this school. |
+| classes            | Коллекция [educationClass](../resources/educationclass.md) | Классы, которые обучаются в учебном заведении. Допускается значение null.           |
+| users              | Коллекция [educationUser](../resources/educationuser.md)   | Пользователи в учебном заведении. Допускается значение null.                    |
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.educationSchool",
   "baseType": "microsoft.graph.educationOrganization",
-  "@odata.type": "microsoft.graph.educationSchool"
-}-->
+  "openType": false
+}
+-->
 
 ```json
 {
-  "id": "String",
+  "@odata.type": "#microsoft.graph.educationSchool",
+  "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "status": "String",
   "externalSource": "String",
+  "externalSourceDetail": "String",
   "principalEmail": "String",
   "principalName": "String",
   "externalPrincipalId": "String",
-  "highestGrade": "String",
   "lowestGrade": "String",
+  "highestGrade": "String",
   "schoolNumber": "String",
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalId": "String",
-  "phone": "String"
+  "phone": "String",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationSchool resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-

@@ -1,22 +1,22 @@
 ---
 title: Получение educationClass
-description: "  Администраторы групп представляют преподавателей в классе. Если вы используете делегированный маркер, пользователь увидит только курсы, участником которых является."
+description: Извлечение класса из системы
 localization_priority: Normal
-author: mmast-msft
+author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4bbbe40a291657813023596d3fd42cdfcd5c3310
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 52f24e1f3c02b955874a78cdba447b697485f4a3
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048766"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232013"
 ---
 # <a name="get-educationclass"></a>Получение educationClass
 
 Пространство имен: microsoft.graph
 
-Получение курса из системы. Курс — это универсальная группа со специальным свойством, которое указывает системе на то, что эта группа представляет собой курс. Члены группы представляют учащихся, администраторы группы — преподавателей курса. Если вы используете делегированный маркер, пользователь увидит только курсы, участником которых является.
+Получение курса из системы. Курс — это универсальная группа со специальным свойством, которое указывает системе на то, что эта группа представляет собой курс. Участники группы представляют учащихся; Администраторы групп представляют преподавателей в классе. Если вы используете делегированный маркер, пользователь увидит только курсы, участником которых является.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,16 +25,18 @@ ms.locfileid: "52048766"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Вы можете использовать `$select` для получения свойств определенной группы, включая те, которые не возвращаются по умолчанию.
+
+Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -48,34 +50,23 @@ GET /education/classes/{id}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
+При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationClass](../resources/educationclass.md) в теле отклика.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+
 <!-- {
   "blockType": "request",
   "name": "get_educationclass"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
+}
+-->
+
+```http
+GET /education/classes/{educationClassId}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+### <a name="response"></a>Отклик
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -83,38 +74,32 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationClass"
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11023",
-  "description": "English Level 2",
-  "classCode": "11023",
-  "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012",
+  "value": {
+    "@odata.type": "#microsoft.graph.educationClass",
+    "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
+    "displayName": "String",
+    "mailNickname": "String",
+    "description": "String",
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "classCode": "String",
+    "externalName": "String",
+    "externalId": "String",
+    "externalSource": "String",
+    "externalSourceDetail": "String",
+    "grade": "String",
+    "term": {
+      "@odata.type": "microsoft.graph.educationTerm"
     }
-  },
-  "displayName": "English - Language 2",
-  "externalId": "301",
-  "externalName": "English Level 1",
-  "externalSource": "School of Fine Art",
-  "mailNickname": "fineartschool.net "
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationClass",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->

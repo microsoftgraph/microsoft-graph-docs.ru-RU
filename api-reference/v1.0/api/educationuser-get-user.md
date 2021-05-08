@@ -1,18 +1,18 @@
 ---
-title: Получение пользователя
+title: Получение educationUser
 description: Получение простого каталога **user**, который соответствует этому объекту **educationUser**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1260845c6956618fc904ae9964f2dd7246fbf4b7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 728e848e07a176ad43e1ddea1edfee3218ae3764
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051433"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231887"
 ---
-# <a name="get-user"></a>Получение пользователя
+# <a name="get-educationuser"></a>Получение educationUser
 
 Пространство имен: microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "52051433"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All или User.Read|
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

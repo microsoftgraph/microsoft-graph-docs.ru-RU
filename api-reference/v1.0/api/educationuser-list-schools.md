@@ -1,18 +1,18 @@
 ---
-title: Перечисление учебных заведений
+title: Список школ educationUser
 description: Получение списка учебных заведений для этого пользователя.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ab8c15bc3aff44419c20e0cefa26b178a9c92605
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 229c1182e45e9ac72e9ef984c9943823e4292536
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053113"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231880"
 ---
-# <a name="list-schools"></a>Перечисление учебных заведений
+# <a name="list-schools-of-an-educationuser"></a>Список школ educationUser
 
 Пространство имен: microsoft.graph
 
@@ -28,14 +28,14 @@ ms.locfileid: "52053113"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/schools
-GET /education/users/{id}/schools
+GET /education/users/{educationUserId}/schools
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

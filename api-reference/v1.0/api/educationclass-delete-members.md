@@ -1,24 +1,24 @@
 ---
-title: Удаление учащегося
+title: Удаление участника из educationClass
 description: Удаляет educationUser из educationClass.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9afd89af1100b58c1df2cd0d4f6ec3c1d37a622e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e067542eec9584a74f7e163935b56ba382f87b4d
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963839"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231901"
 ---
-# <a name="remove-a-student"></a>Удаление учащегося
+# <a name="remove-member-from-educationclass"></a>Удаление участника из educationClass
 
 Пространство имен: microsoft.graph
 
 Удаляет [educationUser](../resources/educationuser.md) из [educationClass](../resources/educationclass.md).
 
->**Примечание.** Преподаватели _и_ учащиеся включены в коллекцию **members** курса. Перед вызовом этого API нужно проверить, не представляет ли удаляемый объект **educationUser** преподавателя.  Для этого необходимо получить список преподавателей путем вызова [educationclass_list_teachers](educationclass-list-teachers.md) и проверить, не возвращается ли в этом списке ИД удаляемого пользователя.
+> **Примечание.** Преподаватели _и_ учащиеся включены в коллекцию **members** курса. Перед вызовом этого API нужно проверить, не представляет ли удаляемый объект **educationUser** преподавателя. Для этого необходимо получить список преподавателей путем вызова [educationclass_list_teachers](educationclass-list-teachers.md) и проверить, не возвращается ли в этом списке ИД удаляемого пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50963839"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -97,4 +97,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -882,7 +882,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Удаление из группы агентов
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
+              - name: Соединитель
                 href: resources/connector.md
                 items:
                   - name: Список
@@ -1257,9 +1257,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1453,7 +1453,7 @@ items:
         items:
           - name: Обзор
             href: resources/complianceapioverview.md
-          - name: Обнаружение электронных данных (eDiscovery)
+          - name: Обнаружение электронных данных
             items:
               - name: Обзор
                 href: resources/ediscovery-eDiscoveryapioverview.md
@@ -9717,7 +9717,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11227,6 +11227,17 @@ items:
                         href: api/accessreviewpolicy-get.md
                       - name: Обновление
                         href: api/accessreviewpolicy-update.md
+                  - name: Определение истории просмотра доступа
+                    href: resources/accessreviewhistorydefinition.md
+                    items:
+                      - name: Получение
+                        href: api/accessreviewhistorydefinition-get.md
+                      - name: Список
+                        href: api/accessreviewhistorydefinition-list.md
+                      - name: Создание
+                        href: api/accessreviewhistorydefinition-create.md
+                      - name: Создание URI загрузки
+                        href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: Отзывы доступа (устаревшие)
                 href: resources/accessreviews-root.md
                 items:
@@ -11659,7 +11670,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -11965,7 +11976,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: адрес электронной почты;
+              - name: Адрес электронной почты
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -12256,7 +12267,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13704,7 +13715,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

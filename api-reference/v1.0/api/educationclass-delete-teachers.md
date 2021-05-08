@@ -1,22 +1,21 @@
 ---
-title: Удаление преподавателя
+title: 'Удаление преподавателя из educationClass '
 description: Удаление преподавателя для курса.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8905fec82f2db5ad9605481dee54e36b4b5fb208
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f270dbc6a27c0beadb16cedb306aa8a7b0150b59
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943553"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231894"
 ---
-# <a name="remove-teacher"></a>Удаление преподавателя
-
+# <a name="remove-teacher-from-educationclass"></a>Удаление преподавателя из educationClass
 Пространство имен: microsoft.graph
 
-Удаление преподавателя для курса.
+Удаление преподавателя из [класса educationClass](../resources/educationclass.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +24,7 @@ ms.locfileid: "50943553"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -95,4 +94,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

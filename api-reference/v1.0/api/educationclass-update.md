@@ -1,22 +1,22 @@
 ---
-title: Обновление свойств educationclass
+title: Update educationClass
 description: Обновление свойств курса.
-author: mmast-msft
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2e0e6dff51e16f0582e2bbbde058f8e78f35d5c1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5340a05df5068942c2f895c9858e2f5cd280e24a
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051461"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231964"
 ---
-# <a name="update-educationclass-properties"></a>Обновление свойств educationclass
+# <a name="update-educationclass"></a>Update educationClass
 
 Пространство имен: microsoft.graph
 
-Обновление свойств курса.
+Обновление свойств объекта [educationClass.](../resources/educationclass.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,15 +41,18 @@ PATCH /education/classes/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|description|String| Описание курса.|
-|displayName|String| Название курса.|
-|mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
-|classCode|String| Код класса, используемый школой.|
-|externalId|String| Идентификатор курса из системы синхронизации. |
-|externalName|String|Название курса в системе синхронизации.|
-|externalSource|string| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `enum_sentinel`.|
+| Свойство             | Тип                                               | Описание                                                        |
+| :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
+| displayName          | Строка                                             | Название курса.                                                 |
+| mailNickname         | String                                             | Почтовое имя для отправки почты всем участникам, если это возможно.    |
+| description          | Строка                                             | Описание курса.                                          |
+| createdBy            | [identitySet](../resources/identityset.md)         | Объект, который создал курс.                                       |
+| classCode            | String                                             | Код курса, используемый учебным заведением для идентификации курса.               |
+| externalId           | String                                             | Идентификатор курса из системы синхронизации.                           |
+| externalSource       | educationExternalSource                            | Способ создания этого курса. Возможные значения: `sis` , `manual`   |
+| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы. |
+| оценка                | String                                             | Уровень класса.                                          |
+| term                 | [educationTerm](../resources/educationterm.md)     | Срок для этого курса.                                               |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationClass](../resources/educationclass.md) в теле отклика.
@@ -102,24 +105,26 @@ Content-length: 224
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 224
+Content-Type: application/json
 
 {
-  "id": "11014",
-  "description": "World History Level 1",
-  "classCode": "301",
+  "@odata.type": "#microsoft.graph.educationClass",
+  "id": "64ef8ce5-8ce5-64ef-e58c-ef64e58cef64",
+  "displayName": "String",
+  "mailNickname": "String",
+  "description": "String",
   "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
-  "displayName": "History - World History 1",
-  "externalId": "301",
-  "externalName": "World History Level 1",
-  "externalSource": "Fabrikam High School",
-  "mailNickname": "Fabrikam"
+  "classCode": "String",
+  "externalName": "String",
+  "externalId": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String",
+  "grade": "String",
+  "term": {
+    "@odata.type": "microsoft.graph.educationTerm"
+  }
 }
 ```
 
@@ -134,4 +139,3 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
-

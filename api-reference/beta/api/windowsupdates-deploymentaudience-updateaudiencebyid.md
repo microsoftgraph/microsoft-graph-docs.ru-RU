@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 60970c5d6b02d8c9de79e206eab2360a156c5eee
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 81404ad4807f045b75b3b161ec361f06b622f78b
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068040"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240584"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience: updateAudienceById
 Пространство имен: microsoft.graph.windowsUpdates
@@ -57,11 +57,11 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|memberEntityType|String|Полный тип updatable активов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice`, `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
-|addMembers|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве участников аудитории развертывания.|
-|removeMembers|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве членов аудитории развертывания.|
-|addExclusions|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве исключений из аудитории развертывания.|
-|removeExclusions|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве исключений из аудитории развертывания.|
+|memberEntityType|Строка|Полный тип updatable активов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice`, `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
+|addMembers|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве участников аудитории развертывания.|
+|removeMembers|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве членов аудитории развертывания.|
+|addExclusions|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве исключений из аудитории развертывания.|
+|removeExclusions|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве исключений из аудитории развертывания.|
 
 
 
@@ -73,6 +73,8 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "deploymentaudience_updateaudiencebyid"
@@ -99,6 +101,24 @@ Content-length: 204
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/deploymentaudience-updateaudiencebyid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/deploymentaudience-updateaudiencebyid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/deploymentaudience-updateaudiencebyid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/deploymentaudience-updateaudiencebyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -1,16 +1,16 @@
 ---
 title: Перечисление входов
 doc_type: apiPageType
-description: Получите список входов пользователей в клиенте Azure Active Directory.
+description: Получите список входных записей пользователя в Azure Active Directory клиента.
 localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: b0662b88d8f6cca9ea8d602ee67073883f8504ef
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 868ffd2896f0bca155660b697c3ad64e0c6ec6ab
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50177034"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240561"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -18,7 +18,7 @@ ms.locfileid: "50177034"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [signIn.](../resources/signin.md) В этом списке содержатся входы пользователей для клиента Azure Active Directory. Входы, в которых имя пользователя и пароль передаются как часть маркера авторизации, а успешные федераированные входы в настоящее время включаются в журналы входа. Самые последние входы возвращаются первыми.
+Получите список [объектов signIn.](../resources/signin.md) В списке содержатся входы пользователя для Azure Active Directory клиента. Входы, в которых имя пользователя и пароль передаются в рамках маркера авторизации, и успешные федераированные входы в настоящее время включены в журналы входа. Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "50177034"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 | Для приложений | AuditLog.Read.All, Directory.Read.All | 
 
-Кроме того, приложения должны быть правильно зарегистрированы в Azure Active Directory.
+Кроме того, приложения должны быть должным образом зарегистрированы для Azure Active Directory.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,54 +40,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
-
-| Имя | Описание | Пример |
-|:---- |:----------- |:------- |
-| [$filter](/graph/query-parameters#filter-parameter)| Фильтрует результаты (строки). | `/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24` |
-| [$top](/graph/query-parameters#top-parameter) | Задает размер страницы результатов. | `/auditLogs/signIns?$top=1` |
-| [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
-
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые $filter параметра
-
-| Имя атрибута | Поддерживаемые операторы |
-|:-------------- |:------------------- |
-| id | eq |
-| userId | eq |
-| appId | eq |
-| createdDateTime | eq, le, ge |
-| userDisplayName | eq, startswith |
-| userPrincipalName | eq, startswith |
-| appDisplayName | eq, startswith |
-| authenticationRequirement |eq, startswith |
-| ipAddress | eq, startswith |
-| location/city | eq, startswith |
-| location/state | eq, startswith |
-| location/countryOrRegion | eq, startswith |
-| status/errorCode | eq |
-| initiatedBy/user/id | eq |
-| initiatedBy/user/displayName | eq |
-| initiatedBy/user/userPrincipalName | eq, startswith |
-| clientAppUsed | eq |
-| conditionalAccessStatus | eq |
-| deviceDetail/browser | eq, startswith |
-| deviceDetail/operatingSystem | eq, startswith |
-| correlationId | eq |
-| riskDetail | eq |
-| riskLevelAggregated | eq |
-| riskLevelDuringSignIn | eq |
-| riskEventTypes | eq |
-| riskEventTypes_v2 | eq, startswith |
-| riskState | eq |
-| originalRequestId | eq |
-| tokenIssuerName | eq |
-| tokenIssuerType | eq |
-| resourceDisplayName | eq |
-| resourceId | eq |
-| servicePrincipalId | eq, startswith |
-| servicePrincipalName | eq, startswith |
-| userAgent | eq, startswith |
-| alternateSignInName | eq, startswith |
+Этот метод поддерживает `$top` параметры `$skiptoken` запроса OData и OData для настройки `$filter` ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -105,7 +58,8 @@ GET auditLogs/signIns
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Пример 1. Вход пользователя с помощью MFA, запускаемого политикой условного доступа. Основная проверка подлинности — через FIDO.
+### <a name="example-1-list-all-sign-ins"></a>Пример 1. Список всех входов
+В этом примере объект ответа показывает, как пользователь подписался с помощью MFA, который был вызван политикой условного доступа, а основной метод проверки подлинности — через FIDO.
 
 #### <a name="request"></a>Запрос
 
@@ -138,8 +92,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 ---
 
 #### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -150,150 +103,126 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 211
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-    "value": [
-        {
-            "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
-            "userDisplayName": "Test contoso",
-            "userPrincipalName": "testaccount1@contoso.com",
-            "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
-            "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
-            "appDisplayName": "Graph explorer",
-            "authenticationRequirement": "multiFactorAuthentication",
-            "ipAddress": "131.107.159.37",
-            "clientAppUsed": "Browser",
-            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
-            "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
-            "conditionalAccessStatus": "notApplied",
-            "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-            "isInteractive": true,
-            "tokenIssuerName": "",
-            "tokenIssuerType": "AzureAD",
-            "processingTimeInMilliseconds": 541,
-            "riskDetail": "none",
-            "riskLevelAggregated": "none",
-            "riskLevelDuringSignIn": "none",
-            "riskState": "none",
-            "riskEventTypes": [],
-            "riskEventTypes_v2": [],
-            "resourceDisplayName": "Microsoft Graph",
-            "resourceId": "00000003-0000-0000-c000-000000000000",
-            "authenticationMethodsUsed": [],
-            "alternateSignInName": "testaccount2.contoso.com",
-            "servicePrincipalName": null,
-            "servicePrincipalId": "",
-            "mfaDetail": null,
-            "status": {
-                "errorCode": 0,
-                "failureReason": null,
-                "additionalDetails": null
-            },
-            "deviceDetail": {
-                "deviceId": "",
-                "displayName": null,
-                "operatingSystem": "Windows 10",
-                "browser": "Edge 80.0.361",
-                "isCompliant": null,
-                "isManaged": null,
-                "trustType": null
-            },
-            "location": {
-                "city": "Redmond",
-                "state": "Washington",
-                "countryOrRegion": "US",
-                "geoCoordinates": {
-                    "altitude": null,
-                    "latitude": 47.68050003051758,
-                    "longitude": -122.12094116210938
-                }
-            },
-            "appliedConditionalAccessPolicies": [
-                {
-                    "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
-                    "displayName": "SharePoint limited access for guest workers",
-                    "enforcedGrantControls": [],
-                    "enforcedSessionControls": [],
-                    "result": "notEnabled",
-                    "conditionsSatisfied": "none",
-                    "conditionsNotSatisfied": "none"
-                },
-                {
-                    "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
-                    "displayName": "Medium signin risk block",
-                    "enforcedGrantControls": [],
-                    "enforcedSessionControls": [],
-                    "result": "notEnabled",
-                    "conditionsSatisfied": "none",
-                    "conditionsNotSatisfied": "none"
-                },
-               
-            ],
-            "authenticationProcessingDetails": [],
-            "networkLocationDetails": [],
-            "authenticationDetails": [
-                    {
-              "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-              "authenticationMethod":"FIDO2",
-              "authenticationMethodDetail":"1G54395783",
-              "succeeded":true,
-              "authenticationStepResultDetail":"methodSucceeded",
-              "authenticationStepRequirement":"Primary authentication"
-            },
-            {
-              "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
-              "authenticationMethod":"Claim in access token",
-              "authenticationMethodDetail":null,
-              "succeeded":true,
-              "authenticationStepResultDetail":"methodSucceeded",
-              "authenticationStepRequirement":"MFA"
-            }
-            ],
-            "authenticationRequirementPolicies": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+  "value": [
+    {
+      "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
+      "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+      "userDisplayName": "Test contoso",
+      "userPrincipalName": "testaccount1@contoso.com",
+      "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
+      "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
+      "appDisplayName": "Graph explorer",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "ipAddress": "131.107.159.37",
+      "clientAppUsed": "Browser",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
+      "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
+      "conditionalAccessStatus": "notApplied",
+      "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
+      "isInteractive": true,
+      "tokenIssuerName": "",
+      "tokenIssuerType": "AzureAD",
+      "processingTimeInMilliseconds": 541,
+      "riskDetail": "none",
+      "riskLevelAggregated": "none",
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "riskEventTypes": [],
+      "riskEventTypes_v2": [],
+      "resourceDisplayName": "Microsoft Graph",
+      "resourceId": "00000003-0000-0000-c000-000000000000",
+      "authenticationMethodsUsed": [],
+      "alternateSignInName": "testaccount2.contoso.com",
+      "servicePrincipalName": null,
+      "servicePrincipalId": "",
+      "mfaDetail": null,
+      "status": {
+        "errorCode": 0,
+        "failureReason": null,
+        "additionalDetails": null
+      },
+      "deviceDetail": {
+        "deviceId": "",
+        "displayName": null,
+        "operatingSystem": "Windows 10",
+        "browser": "Edge 80.0.361",
+        "isCompliant": null,
+        "isManaged": null,
+        "trustType": null
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US",
+        "geoCoordinates": {
+          "altitude": null,
+          "latitude": 47.68050003051758,
+          "longitude": -122.12094116210938
         }
-    ]
+      },
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
+          "displayName": "SharePoint limited access for guest workers",
+          "enforcedGrantControls": [],
+          "enforcedSessionControls": [],
+          "result": "notEnabled",
+          "conditionsSatisfied": "none",
+          "conditionsNotSatisfied": "none"
+        },
+        {
+          "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
+          "displayName": "Medium signin risk block",
+          "enforcedGrantControls": [],
+          "enforcedSessionControls": [],
+          "result": "notEnabled",
+          "conditionsSatisfied": "none",
+          "conditionsNotSatisfied": "none"
+        },
+      ],
+      "authenticationProcessingDetails": [],
+      "networkLocationDetails": [],
+      "authenticationDetails": [
+        {
+                "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
+                "authenticationMethod":"FIDO2",
+                "authenticationMethodDetail":"1G54395783",
+                "succeeded":true,
+                "authenticationStepResultDetail":"methodSucceeded",
+                "authenticationStepRequirement":"Primary authentication"
+              },
+              {
+                "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
+                "authenticationMethod":"Claim in access token",
+                "authenticationMethodDetail":null,
+                "succeeded":true,
+                "authenticationStepResultDetail":"methodSucceeded",
+                "authenticationStepRequirement":"MFA"
+              }
+      ],
+      "authenticationRequirementPolicies": []
+    }
+  ]
 }
 ```
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Пример 2. Пользователь может в это время воймить только при первичной проверке подлинности. Основная проверка подлинности — облачный пароль.
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>Пример 2. Извлечение первых 10 входов в приложения с помощью appDisplayName, которое начинается с "Azure"
+
+В этом примере объект ответа показывает, что пользователь подписался только с помощью основного метода проверки подлинности — облачного пароля. Ответ включает свойство, содержаное URL-адрес, который можно использовать для получения `@odata.nextLink` следующих 10 результатов.
 
 #### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса.
-
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signIns
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&top=10
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signins-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signins-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signins-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -304,10 +233,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 211
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/auditLogs/signins?$filter=startsWith(appDisplayName%2c%27Azure%27)&$top=10&$skiptoken=3cff228c89605cc89b0dc753668deef4153e8644caa6d83ed1bb5f711b21cba4",
   "value": [
     {
       "id":"b01b1726-0147-425e-a7f7-21f252050400",
@@ -317,8 +246,8 @@ Content-length: 211
       "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
       "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
       "appDisplayName":"Azure Portal",
-       "authenticationRequirement": "singleFactorAuthentication",
-      "ipAddress":"207.254.19.10",
+      "authenticationRequirement": "singleFactorAuthentication",
+      "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
       "authenticationDetails": [ 
         {
@@ -341,26 +270,26 @@ Content-length: 211
       "riskLevelDuringsignIn":"none",
       "riskState":"none",
       "riskEventTypes":[],
-      "resourceDisplayName":"windows azure service management api",
+      "resourceDisplayName":"Windows Azure Service Management API",
       "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
       "status":{},
       "deviceDetail": {
         "deviceId":null,
         "displayName":null,
-        "operatingSystem":"Windows 7",
-        "browser":"Chrome 63.0.3239",
+        "operatingSystem":"Windows 10",
+        "browser":"Chrome 90.0.4430",
         "isCompliant":null,
         "isManaged":null,
         "trustType":null
       },
       "location": {
-        "city":"Lithia Springs",
-        "state":"Georgia",
-        "countryOrRegion":"US",
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US",
         "geoCoordinates": {
-          "altitude":null,
-          "latitude":33.7930908203125,
-          "longitude":-84.445358276367188
+          "altitude": null,
+          "latitude": 47.68050003051758,
+          "longitude": -122.12094116210938
         }
       },
       "appliedConditionalAccessPolicies": [

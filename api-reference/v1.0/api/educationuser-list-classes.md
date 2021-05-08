@@ -1,22 +1,22 @@
 ---
-title: Перечисление курсов
+title: Список классов educationUser
 description: 'Получение списка объектов курсов. Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах. '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: de9a7585b45246a59818b6cac18ca048b3845374
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 054c5af5483c6cd85ebbf0e7fa110bb6f4a504a9
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053120"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231272"
 ---
-# <a name="list-classes"></a>Перечисление курсов
+# <a name="list-classes-of-an-educationuser"></a>Список классов educationUser
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов курсов. Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах. 
+Получите [ресурсы educationClass,](../resources/educationclass.md) в [которые входит сотрудник educationUser.](../resources/educationuser.md)
 
 <!-- Please verify the revision to the delegated token text. -->
 
@@ -27,7 +27,10 @@ ms.locfileid: "52053120"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+
+> [!NOTE]
+> Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 2bfe519d6a5cab816bdd35da451221be58105e37
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 7004a611c3fe36e2ce2d32824a5e9b78e53e61bd
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719404"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231915"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>тип ресурса provisioningObjectSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION]
+>Свойства **действия** **и statusInfo** обесценяются. Действие **свойства** должно быть заменено **provisioningAction**. Состояние **свойстваInfo** должно быть заменено **provisioningStatusInfo**.
 
 Представляет действие, выполняемые службой подготовка Azure AD и связанными с ней свойствами. 
 
@@ -31,7 +33,7 @@ ms.locfileid: "50719404"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|action|String|Указывает имя действия или имя операции (например, Создание пользователя, добавление участника в группу). Список действий, зарегистрированных в журнале, обратитесь к списку действий Azure AD.|
+|provisioningAction|String|Указывает имя действия или имя операции. Возможные значения: `create` `update` , , , , , `delete` `stageddelete` и `disable` `other` `unknownFutureValue` . Список действий, зарегистрированных в журнале, обратитесь к списку действий Azure AD.|
 |activityDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |changeId|String|Уникальный ID этого изменения в этом цикле.|
 |cycleId|String|Уникальный ID для итерации задания.|
@@ -43,11 +45,13 @@ ms.locfileid: "50719404"
 |provisioningSteps|[provisioningStep](provisioningstep.md) collection|Сведения о каждом шаге в области подготовка.|
 |servicePrincipal|Коллекция [servicePrincipal](serviceprincipal.md)|Представляет принцип службы, используемый для обеспечения.|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Сведения о предварительном предоставлении объекта-источника.|
-|sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Сведения о исходных системах объекта, который был закамут.|
-|statusInfo|[statusBase](statusbase.md)|Сведения о состоянии подготовка.|
+|sourceSystem|[provisioningSystem](provisioningsystem.md)|Сведения о исходных системах объекта, который был закамут.|
+|provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|Сведения о состоянии подготовка.|
 |targetIdentity|[provisionedIdentity](provisionedidentity.md)|Сведения о предварительном предоставлении целевого объекта.|
-|targetSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Сведения о целевой системе объекта.|
+|targetSystem|[provisioningSystem](provisioningsystem.md)|Сведения о целевой системе объекта.|
 |tenantId|String|Уникальный ID клиента Azure AD.|
+|действие (неподготовлено)|String|Указывает имя действия или имя операции (например, Создание пользователя, добавление участника в группу). Список действий, зарегистрированных в журнале, обратитесь к списку действий Azure AD. Это не так. Вместо этого используйте provisioningAction.|
+|statusInfo (deprecated)|[statusBase](statusbase.md)|Сведения о состоянии подготовка. Это не так. Вместо этого используйте provisioningStatusInfo.|
 
 ## <a name="relationships"></a>Связи
 
@@ -69,6 +73,7 @@ ms.locfileid: "50719404"
 ```json
 {
   "action": "String",
+  "provisioningAction":  "String",
   "activityDateTime": "String (timestamp)",
   "changeId": "String",
   "cycleId": "String",
@@ -80,10 +85,10 @@ ms.locfileid: "50719404"
   "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
   "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal"}],
   "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
+  "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
   "statusInfo": {"@odata.type": "microsoft.graph.statusBase"},
   "targetIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
-  "targetSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
+  "targetSystem": {"@odata.type": "microsoft.graph.provisioningSystem"},
   "tenantId": "String"
 }
 ```

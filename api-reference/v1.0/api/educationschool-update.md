@@ -1,22 +1,22 @@
 ---
-title: Обновление свойств educationSchool
-description: Обновление свойств объекта school.
-author: mmast-msft
+title: Обновление educationSchool
+description: Обновление свойств объекта educationSchool.
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0b051e5339c2cc32cfd0dad58e21154cf8e9cca8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6c53b2b9b5934559a352378ee5316618ae69abe
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051440"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231873"
 ---
-# <a name="update-educationschool-properties"></a>Обновление свойств educationSchool
+# <a name="update-educationschool"></a>Обновление educationSchool
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта school.
+Обновление свойств объекта [educationSchool.](../resources/educationschool.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "52051440"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.ReadWrite.All                     |
+| Приложение                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,22 +44,27 @@ PATCH /education/schools/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса поставляем представление JSON объекта [educationSchool.](../resources/educationschool.md)
 
-| Свойство            | Тип                                               | Описание                        |
-| :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | Отображаемое имя школы         |
-| description         | String                                             | Описание школы          |
-| principalEmail      | String                                             | Адрес электронной почты директора     |
-| principalName       | String                                             | Имя директора              |
-| externalPrincipalId | String                                             | Идентификатор директора в системе синхронизации. |
-| highestGrade        | String                                             | Самый старший класс.              |
-| lowestGrade         | String                                             | Самый младший класс.               |
-| schoolNumber        | String                                             | Номер школы.                     |
-| externalId          | String                                             | Идентификатор учебного заведения в системе синхронизации.    |
-| phone               | String                                             | Номер телефона учебного заведения.            |
-| address             | [physicalAddress](../resources/physicaladdress.md) | Адрес учебного заведения.             |
-| createdBy           | [identitySet](../resources/identityset.md)         | Объект, который создал учебное заведение.     |
+В следующей таблице показаны свойства, необходимые при обновлении [educationSchool.](../resources/educationschool.md)
+
+| Свойство             | Тип                                               | Описание                                                                                                                                                           |
+| :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
+| description          | Строка                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
+| externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis`, `manual`. |
+| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                    |
+| principalEmail       | String                                             | Адрес электронной почты директора.                                                                                                                                       |
+| principalName        | String                                             | Имя директора.                                                                                                                                                |
+| externalPrincipalId  | String                                             | Идентификатор директора в системе синхронизации.                                                                                                                                    |
+| highestGrade         | String                                             | Самый старший класс.                                                                                                                                                 |
+| lowestGrade          | String                                             | Самый младший класс.                                                                                                                                                  |
+| schoolNumber         | String                                             | Номер школы.                                                                                                                                                        |
+| externalId           | String                                             | Идентификатор учебного заведения в системе синхронизации.                                                                                                                                       |
+| phone                | String                                             | Номер телефона учебного заведения.                                                                                                                                               |
+| fax                  | String                                             | Номер факса учебного заведения.                                                                                                                                                 |
+| createdBy            | [identitySet](../resources/identityset.md)         | Объект, который создал учебное заведение.                                                                                                                                        |
+| address              | [physicalAddress](../resources/physicaladdress.md) | Адрес учебного заведения.                                                                                                                                                |
 
 ## <a name="response"></a>Отклик
 
@@ -157,4 +162,3 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
-

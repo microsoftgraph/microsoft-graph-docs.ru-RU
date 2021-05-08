@@ -1,22 +1,25 @@
 ---
 title: Удаление educationClass
 description: Удаление класса. Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
+author: mlafleur
 localization_priority: Normal
-author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 99c342f1682018af9c7bba8026c6a73139e6425b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f3d509364168227766465ead899340b00f24f83
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028940"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52232027"
 ---
 # <a name="delete-educationclass"></a>Удаление educationClass
 
 Пространство имен: microsoft.graph
 
-Удаление класса. Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
+Удаление [образовательного класса](../resources/educationclass.md).
+
+> [!IMPORTANT]
+> Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +28,7 @@ ms.locfileid: "48028940"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +41,7 @@ DELETE /education/classes/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
@@ -97,4 +100,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

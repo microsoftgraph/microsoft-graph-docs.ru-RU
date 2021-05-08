@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 300369a97237865faa8c8bb9842352880007a1ea
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: 51a34d50801914dcc3e1e10c1813c25543880c0b
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996138"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240758"
 ---
 # <a name="update-group"></a>Update group
 
@@ -54,10 +54,10 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Логический|Значение по умолчанию: `false`. Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. **AutoSubscribeNewMembers** не может быть `true`, если в группе установлено `false` для **subscriptionEnabled**.|
 |description|String|Необязательное описание для группы.|
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. |
-|groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит объект **Unified**, эта группа является группой Microsoft 365. В противном случае она является группой безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
+|groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит **Unified,** то группа является Microsoft 365 группой; в противном случае это группа безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. |
 |mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
-|securityEnabled|Логический|Указывает, является ли группа группой безопасности, включая группы Microsoft 365. |
+|securityEnabled|Логический|Указывает, является ли группа группой безопасности, в том числе Microsoft 365 группами. |
 |visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
 
 Поскольку **ресурс группы** поддерживает [расширения,](/graph/extensibility-overview)вы можете использовать операцию для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` группы. 
@@ -95,8 +95,8 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+   "description":"description-value",
+   "displayName":"displayName-value"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -120,7 +120,7 @@ Content-length: 211
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,

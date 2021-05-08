@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d817c0aa46dde6b49debd849d8fd2ae61e06a672
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ae11d370fb0a92a03e497aec75550f5407934839
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956822"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231908"
 ---
-# <a name="statusdetails-resource-type"></a>тип ресурса statusDetails
+# <a name="statusdetails-resource-type-deprecated"></a>тип ресурса statusDetails (неподготовленный)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+>[!CAUTION] 
+> API statusDetails обесценена и прекратит возвращать данные om 31 декабря 2021 г. Используйте новый [тип provisioningStatusInfo.](provisioningstatusinfo.md)
 
 Описывает состояние события подготовка и связанные с ним ошибки. Он наследуется из [statusBase и](/graph/api/resources/statusbase) используется только при задании состояния `failure` .  
 
@@ -25,11 +27,11 @@ ms.locfileid: "50956822"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |status|statusBase|Возможные значения: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Унаследованный от statusBase.|
-|additionalDetails|Строка|Дополнительные сведения в случае ошибки.|
-|errorCategory|Строка|Классифицировать код ошибки. Возможные значения: `Failure`, `NonServiceFailure`, `Success`.|
+|additionalDetails|String|Дополнительные сведения в случае ошибки.|
+|errorCategory|String|Классифицировать код ошибки. Возможные значения: `Failure`, `NonServiceFailure`, `Success`.|
 |errorCode|String|Уникальный код ошибки, если таковое произошло. [Подробнее](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
-|reason|Строка|Суммирует состояние и описывает причины, по которым произошел этот статус.|
-|recommendedAction|Строка|Обеспечивает разрешение соответствующей ошибки.|
+|reason|String|Суммирует состояние и описывает причины, по которым произошел этот статус.|
+|recommendedAction|String|Обеспечивает разрешение соответствующей ошибки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

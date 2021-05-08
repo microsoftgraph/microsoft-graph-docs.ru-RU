@@ -1,33 +1,38 @@
 ---
-title: Тип ресурса educationOrganization
-description: Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.
-author: mmast-msft
+title: тип ресурса educationOrganization
+description: Абстрактная сущность, используемая для моделирования общности между различными типами организаций в секторе образования.
+author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b4f00fc4c44b3019dccbded1fd222aa211d78c7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b24313b6b6061449faea0ecb4880a421a2333099
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032679"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231866"
 ---
-# <a name="educationorganization-resource-type"></a>Тип ресурса educationOrganization
+# <a name="educationorganization-resource-type"></a>тип ресурса educationOrganization
 
 Пространство имен: microsoft.graph
 
-Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.
+Абстрактная сущность, используемая для моделирования общности между различными типами организаций в секторе образования.
+
+Наследует от [объекта](../resources/entity.md).
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|description|String| Описание организации.|
-|displayName|String| Отображаемое имя Организации.|
-|externalSource|едукатионекстерналсаурце| Источник, из которого была создана данная организация. Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 
-## <a name="relationships"></a>Отношения
+| Свойство             | Тип                    | Описание                                                                            |
+| :------------------- | :---------------------- | :------------------------------------------------------------------------------------- |
+| description          | Строка                  | Описание организации.                                                              |
+| displayName          | Строка                  | Имя отображения организации.                                                             |
+| externalSource       | educationExternalSource | Источник, из которых была создана эта организация. Возможные значения: `sis`, `manual`. |
+| externalSourceDetail | Строка                  | Имя внешнего источника, из которого были созданы эти ресурсы.                     |
+| id                   | Строка                  | Идентификатор объекта. Унаследованный от [сущности](../resources/entity.md)                     |
+
+## <a name="relationships"></a>Связи
+
 Отсутствуют.
-
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -35,30 +40,20 @@ ms.locfileid: "48032679"
 
 <!-- {
   "blockType": "resource",
-  "abstract": true,
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.educationOrganization",
   "baseType": "microsoft.graph.entity",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.educationOrganization"
-}-->
+  "openType": false
+}
+-->
 
 ```json
 {
-  "description": "String",
+  "@odata.type": "#microsoft.graph.educationOrganization",
+  "id": "String (identifier)",
   "displayName": "String",
-  "externalSource": "string"
+  "description": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String"
 }
-
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationOrganization resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
