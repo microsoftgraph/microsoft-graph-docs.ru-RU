@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 576319abab0894530f363059cb2f07d787f80c7c
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: adc215b32635476320913b2d14aac33ec6ccfc95
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266831"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241151"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
@@ -54,14 +54,13 @@ ms.locfileid: "52266831"
 |adJoinCheckUnknownError|Проверка активного присоединяться к домену не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
 |endpointConnectivityCheckUrlNotWhitelisted|Проверка подключения конечной точки не удалась, так как URL-адреса не находятся в списке допуска в параметрах сетевого брандмауэра. Добавьте URL-адреса в список допуска для параметров сетевого брандмауэра. Сведения [об URL-адресе см.](/azure/virtual-desktop/safe-url-list) в обязательном списке URL-адресов.|
 |endpointConnectivityCheckUnknownError|Проверка подключения конечной точки не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|aadConnectivityCheckUnknownError|Проверка подключения Azure Active Directory не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|aadConnectivityCheckUnknownError|Проверка Azure Active Directory подключения не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
 |resourceAvailabilityCheckNoSubnetIP|Проверка доступности ресурсов не удалась из-за того, что в подсети не было доступных IP-адресов. Пожалуйста, освободите некоторые или измените другую подсеть и повторно.|
 |resourceAvailabilityCheckSubscriptionDisabled|Проверка доступности ресурсов не удалось из-за отключенной подписки Azure. Пожалуйста, повторно ввяйте подписку.|
-|resourceAvailabilityCheckUnsupportedVNetRegion|Выбранный vNet не находится в поддерживаемом регионе Azure.|
 |resourceAvailabilityCheckUnknownError|Проверка доступности ресурсов не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|permissionCheckNoSubscriptionReaderRole|Руководитель службы облачных ПК не имеет разрешений на чтение в указанной подписке Azure. Обратитесь к владельцу подписки, чтобы добавить назначение ролей читателя в подписке Azure для директора службы облачных ПК.|
-|permissionCheckNoResourceGroupOwnerRole|У директора службы облачных ПК нет разрешений владельцев указанной группы ресурсов. Обратитесь к владельцу подписки, чтобы добавить назначение роли владельца в группе ресурсов для директора службы облачных ПК.|
-|permissionCheckNoVNetContributorRole|В указанной виртуальной сети у директора службы облачных ПК нет разрешений на сетевой вкладчик. Обратитесь к владельцу подписки, чтобы добавить назначение роли вкладчика сети для директора службы облачных ПК. |
+|permissionCheckNoSubscriptionReaderRole|Cloud PC службы не имеет разрешений на чтение в указанной подписке Azure. Обратитесь к владельцу подписки, чтобы добавить назначение ролей читателя в подписке Azure для Cloud PC службы.|
+|permissionCheckNoResourceGroupOwnerRole|Cloud PC не имеет разрешений владельца в указанной группе ресурсов. Обратитесь к владельцу подписки, чтобы добавить назначение роли владельца в группе ресурсов для Cloud PC службы.|
+|permissionCheckNoVNetContributorRole|Cloud PC службы не имеет разрешений на сетевой вкладчик в указанной виртуальной сети. Обратитесь к владельцу подписки, чтобы добавить назначение роли вкладчика сети для Cloud PC службы. |
 |permissionCheckUnknownError|Проверка разрешений не удалась из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
 |internalServerUnknownError|Проверка состояния не удалось из-за неизвестной ошибки внутреннего сервера. Обратитесь в службу поддержки клиентов.|
 
