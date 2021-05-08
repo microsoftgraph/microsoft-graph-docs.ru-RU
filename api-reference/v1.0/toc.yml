@@ -311,7 +311,7 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: Аналитика
             items:
-              - name: Сведения о Office Graph
+              - name: Office Graph идеи
                 href: resources/officegraphinsights.md
                 items:
                   - name: Список "Общие"
@@ -380,10 +380,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Обновление параметров почтового ящика
                     href: api/user-update-mailboxsettings.md
-              - name: Службы пользователей Outlook
+              - name: Outlook службы пользователей
                 expanded: true
                 items:
-                  - name: Пользователь Outlook
+                  - name: Outlook пользователя
                     href: resources/outlookuser.md
                   - name: Создание категории
                     href: api/outlookuser-post-mastercategories.md
@@ -3691,15 +3691,17 @@ items:
             href: resources/educationschool.md
             items:
               - name: Перечисление учебных заведений
-                href: api/educationroot-list-schools.md
+                href: api/educationschool-list.md
               - name: Создание учебного заведения
-                href: api/educationroot-post-schools.md
+                href: api/educationschool-post.md
               - name: Получение учебного заведения
                 href: api/educationschool-get.md
               - name: Обновление учебного заведения
                 href: api/educationschool-update.md
               - name: Удаление учебного заведения
                 href: api/educationschool-delete.md
+              - name: Внесение изменений в школы
+                href: api/educationschool-delta.md
               - name: Перечисление курсов
                 href: api/educationschool-list-classes.md
               - name: Создание курса
@@ -3715,18 +3717,18 @@ items:
           - name: Курсы
             href: resources/educationclass.md
             items:
-              - name: Перечисление учебных заведений
-                href: api/educationclass-list-schools.md
               - name: Перечисление курсов
-                href: api/educationroot-list-classes.md
+                href: api/educationclass-list.md
               - name: Создание курса
-                href: api/educationroot-post-classes.md
+                href: api/educationclass-post.md
               - name: Получение курса
                 href: api/educationclass-get.md
               - name: Обновление курса
                 href: api/educationclass-update.md
               - name: Удаление курса
                 href: api/educationclass-delete.md
+              - name: Внесение изменений в классы
+                href: api/educationclass-delta.md
               - name: Перечисление преподавателей
                 href: api/educationclass-list-teachers.md
               - name: Добавление преподавателя
@@ -3742,14 +3744,20 @@ items:
           - name: Пользователи
             href: resources/educationuser.md
             items:
-              - name: Перечисление учебных заведений
-                href: api/educationuser-list-schools.md
-              - name: Перечисление курсов
-                href: api/educationuser-list-classes.md
+              - name: Перечисление пользователей
+                href: api/educationuser-list.md
+              - name: Создание пользователя
+                href: api/educationuser-post.md
               - name: Получение пользователя
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
+              - name: Внесение изменений в пользователей
+                href: api/educationuser-delta.md
+              - name: Перечисление курсов
+                href: api/educationuser-list-classes.md
+              - name: Учебные классы списка
+                href: api/educationuser-list-taughtclasses.md
       - name: Расширения
         items:
           - name: Открытые расширения
@@ -4110,7 +4118,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: Delete
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Политика проверки подлинности Майкрософт
+                  - name: Microsoft Authenticator политики
                     href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Получение
@@ -4470,7 +4478,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Обновление
                         href: api/identityapiconnector-update.md
-                      - name: Загрузка клиентского сертификата
+                      - name: Upload клиентского сертификата
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
@@ -4910,7 +4918,12 @@ items:
                     href: api/signin-list.md
                   - name: Получение события входа
                     href: api/signin-get.md
-          - name: Отчеты об использовании Microsoft 365
+              - name: Подготовка
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: Подготовка списка
+                    href: api/provisioningobjectsummary-list.md
+          - name: Microsoft 365 отчеты об использовании
             items:
               - name: Обзор
                 href: resources/report.md
@@ -4963,7 +4976,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Получение занятого объема хранилища
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Активации Microsoft 365
+              - name: Microsoft 365 активации
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -4972,7 +4985,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Активные пользователи Microsoft 365
+              - name: Microsoft 365 активных пользователей
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -4981,7 +4994,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Получение количества пользователей служб
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Действия групп Microsoft 365
+              - name: Microsoft 365 групп
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Получение сведений о группе
@@ -5241,7 +5254,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -5555,7 +5568,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Отправка уведомления пользователю
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Вкладка
             href: resources/teamstab.md
             items:
               - name: Вкладка в канале
@@ -5794,7 +5807,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Task
+          - name: Задача
             href: resources/todotask.md
             items:
               - name: Перечисление задач
