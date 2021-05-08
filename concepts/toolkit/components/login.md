@@ -3,12 +3,12 @@ title: Компонент входа в Microsoft Graph Toolkit
 description: Компонент входа — это кнопка и всплывающий элемент управления, предназначенные для упрощения проверки подлинности платформы удостоверений Майкрософт.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a54dfaede64216e8a2254aedb06cf6aa41aaa295
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 3e9fc0f7960f9bd0fedb699595675479c3be0699
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660067"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266605"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Компонент входа в Microsoft Graph Toolkit
 
@@ -101,6 +101,10 @@ mgt-login {
 ## <a name="authentication"></a>Проверка подлинности
 
 В элементе управления входом используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md). 
+
+## <a name="cache"></a>Кэш
+
+Этот компонент использует [компонент Person](./person.md) для отображения пользователя и наследует всю конфигурацию кэша из него.
 
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 

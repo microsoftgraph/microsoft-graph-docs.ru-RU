@@ -3,18 +3,21 @@ title: Кэширование Microsoft Graph Toolkit
 description: В этой статье объясняется, как работает кэширование и как настроить параметры для разработчиков
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: f51b4f188fe8ec70f75a50e1d9de049459c97e14
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: cef5c06c39ebad58e6a39f094427dea6a1b1be25
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658710"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266622"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Кэширование Microsoft Graph Toolkit
 
-Microsoft Graph Toolkit поддерживает кэширование выбранных вызовов API Microsoft Graph. В настоящее время вызовы конечных точек пользователей, человека, контакта и фотографии кэшируются по умолчанию в трех хранилищах IndexedDB.
+Microsoft Graph Toolkit поддерживает кэширование выбранных вызовов API Microsoft Graph. Вызовы кэшироваться для каждого объекта, например людей, контактов, фотографий. Это позволяет одному компоненту получать данные и другие компоненты для повторного использования без вызова Microsoft Graph.
 
-Вы можете просмотреть кэш на панели разработчика. С вкладки **Приложение** в области **Хранилище** перейдите на вкладку **IndexedDB**.
+> [!TIP]
+> Дополнительные сведения о том, какие объекты кэшются каждым компонентом, см. в документации компонента.
+
+Базы данных, созданные mgt для кэшинга, префиксизются `mgt-` с . Данные для каждой сущности хранятся в отдельном хранилище объектов. Чтобы проверить кэш, используйте вкладку **Application** в панели разработчиков (средства F12) — в разделе **Хранение** нажмите на вкладку **IndexedDB.** 
 
 ![средства разработчика indexedDB](../images/indexedDBpanel.png)
 
@@ -46,6 +49,10 @@ let config = {
     invalidationPeriod: number,
     isEnabled: boolean
   },
+  response: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  }
 };
 ```
 

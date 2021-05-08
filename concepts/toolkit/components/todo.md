@@ -3,12 +3,12 @@ title: Компонент To Do в Microsoft Graph Toolkit
 description: Компонент To Do позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи To Do. Он поддерживает любые задачи в Microsoft To-Do.
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 1a00d045da55dc14da47770b0e56522590f4b5bc
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 1d2f1fd83626c1fcaaf2356605347581f247f6da
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659172"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266789"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>Компонент To Do в Microsoft Graph Toolkit
 
@@ -140,3 +140,7 @@ mgt-todo {
 ## <a name="authentication"></a>Проверка подлинности
 
 В компоненте задач используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md).
+
+## <a name="cache"></a>Кэш
+
+Компонент `mgt-todo` не кэшет данных.

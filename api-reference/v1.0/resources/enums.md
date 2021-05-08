@@ -1,16 +1,16 @@
 ---
 title: Значения Enum
-description: Значения переумерия Microsoft Graph.
+description: Значения Graph microsoft.
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: f2eeed42a528ea59a2edd1ac0d117bb82a3b2777
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: b6bffb41090b9c9beffd4e559256cb519870eeb2
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882238"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241158"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -56,7 +56,7 @@ ms.locfileid: "51882238"
 
 |Member|
 |:---|
-|user|
+|пользователь|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -350,7 +350,7 @@ ms.locfileid: "51882238"
 |Member|
 |:---|
 |signin|
-|user|
+|пользователь|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>значения riskDetectionTimingType
@@ -501,15 +501,13 @@ ms.locfileid: "51882238"
 | lightRed   | 8 
 | maxColor   | 9 
 
-
 ### <a name="educationexternalsource-values"></a>значения educationExternalSource
 
-| Member
-|:-------------------------
-| sis
-| Вручную
-| unknownFutureValue
-
+| Member             |
+| :----------------- |
+| sis                |
+| Вручную             |
+| unknownFutureValue |
 
 ### <a name="educationgender-values"></a>значения educationGender
 
@@ -549,12 +547,14 @@ ms.locfileid: "51882238"
 | нормальный
 | высокая
 
-
 ### <a name="educationuserrole-values"></a>значения educationUserRole
-| Member
-|:---------------------
-| student
-| teacher
+
+| Member             |
+| :----------------- |
+| student            |
+| teacher            |
+| нет               |
+| unknownFutureValue |
 
 ### <a name="meetingmessagetype-values"></a>значения meetingMessageType
 
@@ -677,8 +677,8 @@ ms.locfileid: "51882238"
 |:-----------------
 |NotStarted
 |Работает
-|Completed
-|Не выполнено
+|Завершено
+|Ошибка
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения onenotePatchActionType
@@ -722,7 +722,7 @@ ms.locfileid: "51882238"
 | Автоматически
 | noPreview
 | checklist
-| description
+| (описание)
 | справочник
 
 
@@ -843,7 +843,7 @@ ms.locfileid: "51882238"
 | preset12 | 12 
 | preset13 | 13
 | preset14 | 14 
-| preset15 | 15 
+| preset15 | 15
 | preset16 | 16 
 | preset17 | 17 
 | preset18 | 18 
@@ -1007,7 +1007,7 @@ Enum для серьезности оповещений.
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
-Возможные значения для типов учетных записей пользователей (членство в группе) в определении Windows.
+Возможные значения для типов учетных записей пользователей (членство в группе) в Windows определения.
 
 |Member|Member|Описание|
 |:---|:---|:---|
@@ -1167,7 +1167,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| user          | 1     | Отправка пользователя.         |
+| пользователь          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -1183,8 +1183,8 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | нет                  | 0     | Еще не знаю.                       |
-| mailFlowRule          | 1     | Правило транспорта Exchange.            |
-| safeSender            | 2     | Безопасный список отправитель.                   |
+| mailFlowRule          | 1     | Exchange правила транспорта.            |
+| safeSender            | 2     | Сейф отправитель.                   |
 | blockedSender         | 3     | Заблокированный список отправитель.                |
 | advancedSpamFiltering | 4      | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5      | Список разрешаемой области отправитель.           |
@@ -1197,7 +1197,7 @@ Enum для серьезности оповещений.
 | исходящие              | 12     | Исходящие сообщения.                      |
 | notJunk               | 13    | Разрешить из-за не нежелательной.              |
 | нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
-| unknownFutureValue    | 15     | Член-часовой.                  |
+| unknownFutureValue    | 15    | Член-часовой.                  |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>значения chatMessagePolicyViolationDlpActionType
 
@@ -1375,7 +1375,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| Строка                |
+| String                |
 | boolean               |
 | int64                 |
 | stringCollection      |
@@ -1408,3 +1408,57 @@ Enum для серьезности оповещений.
 | :-------- |
 | entityUrl |
 | текст      |
+
+
+### <a name="provisioningresult-values"></a>значения provisioningResult 
+
+|Member|
+|:---|
+|success|
+|сбой|
+|пропущено|
+|warning|
+|unknownFutureValue|
+
+### <a name="provisioningsteptype-values"></a>provisioningStepType values 
+
+|Member|
+|:---|
+|импорт|
+|scoping|
+|соответствие|
+|обработка|
+|referenceResolution|
+|экспорт|
+|unknownFutureValue|
+
+### <a name="provisioningstatuserrorcategory-values"></a>provisioningStatusErrorCategory values 
+
+|Member|
+|:---|
+|сбой|
+|nonServiceFailure|
+|success|
+|unknownFutureValue|
+
+### <a name="provisioningaction-values"></a>значения provisioningAction 
+
+|Member|
+|:---|
+|другие|
+|create|
+|delete|
+|отключение|
+|обновление|
+|stagedDelete|
+|unknownFutureValue|
+
+
+### <a name="initiatortype-values"></a>значения initiatorType 
+
+|Member|
+|:---|
+|пользователь|
+|приложение|
+|system|
+|unknownFutureValue|

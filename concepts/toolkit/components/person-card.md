@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 9acf9fd9c38128442d49d776f1f05646e2efe276
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 9c12c9e76f6c0b332a70bfbc429bc7b7845056cb
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722442"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266810"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -183,3 +183,17 @@ const neededScopes = MgtPersonCard.getScopes();
 ## <a name="authentication"></a>Проверка подлинности
 
 В элементе управления Person-Card используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md). 
+
+## <a name="cache"></a>Кэш
+
+> [!IMPORTANT]
+> Компонент `mgt-person-card` извлекает основные данные человека из родительского `mgt-person` компонента без вызова Microsoft Graph. Когда используется отдельно, он извлекает необходимые данные и `mgt-person-card` кэширует их. Данные, отображаемые в разделах карты, извлекаются отдельно и не кэшются.
+
+|Хранилище объектов|Кэшные данные|Примечания|
+|---------|-----------|-------|
+|`people`|Сведения о человеке|Используется при `personQuery` указании и его значение отличается от `me`|
+|`photos`|Фотография человека|
+|`presence`|Присутствие человека|Используется, `showPresence` когда установлено `true`|
+|`users`|Сведения о пользователях|Используется при `userId` указании или `personQuery` задан `me`|
+
+Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)

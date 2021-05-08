@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b267a347537b46a29fd2d74afc1161e026a84bcc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2877f9bca06eed962257e2c8c43c5f776d06ff76
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959102"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241144"
 ---
 # <a name="list-unifiedroleassignments"></a>Список unifiedRoleAssignments
 
@@ -28,25 +28,27 @@ ms.locfileid: "50959102"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="query-parameters"></a>Параметры запроса
 
-Эта операция требует `$filter` параметра запроса. Вы можете фильтровать свойства `roleDefinitionId` или `principalId` свойства. Свойство `roleDefinitionId` может быть как ИД объекта роли, так и объектом шаблона ролей. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Эта операция требует `$filter` параметра запроса. Вы можете фильтровать свойства `roleDefinitionId` или `principalId` свойства. Свойство `roleDefinitionId` может быть как ИД объекта роли, так и объектом шаблона ролей. Параметр `$expand` запроса также поддерживается в **основном**. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -58,7 +60,7 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-request-using-a-filter-on-role-definition-id"></a>Пример 1. Запрос на использование фильтра для определения роли
+### <a name="example-1-request-using-filter-on-role-definition-id-and-expand-principal"></a>Пример 1. Запрос $filter на ID определения ролей и расширение основного
 
 #### <a name="request"></a>Запрос
 

@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 9ac8eebfaa4d95ccd935414329ab1dd145839dd2
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 5250919404ecccea1f01042d93aaf2b9fa4fc3b3
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475060"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266845"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -218,6 +218,16 @@ MgtPerson.config.useContactApis = false;
 ## <a name="authentication"></a>Проверка подлинности
 
 Для получения требуемых данных в средстве управления используется глобальный поставщик проверки подлинности, указанный в [документации по проверке подлинности](../providers/providers.md).
+
+## <a name="cache"></a>Кэш
+
+|Хранилище объектов|Кэшные данные|Примечания|
+|---------|-----------|-------|
+|`photos`|Фотография человека|Используется, `avatarType` когда установлено и `photo` `fetchImage` установлено `true`|
+|`presence`|Присутствие человека|Используется, `showPresence` когда установлено `true`|
+|`users`|Сведения о пользователях|
+
+Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)
 
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 

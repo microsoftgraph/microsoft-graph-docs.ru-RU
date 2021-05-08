@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: luleonpla
-ms.openlocfilehash: 1dbb9bcb15a3e820b3676e336826a741ecbb5e9f
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: a32720520c804d13048babe8a779132780abc782
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52118979"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266866"
 ---
 # <a name="selfsignedcertificate-resource-type"></a>тип ресурса selfSignedCertificate
 
@@ -24,14 +24,14 @@ ms.locfileid: "52118979"
 Свойство|Тип|Описание
 ----|--|---
 |customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа. |
-| displayName | String | Удобное имя для ключа. |
+| displayName | Строка | Удобное имя для ключа. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
 |keyId|Guid|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014 г. выглядит так: "2014-01-01T00:00:00Z". |
-|type|String|Тип учетных данных ключей. "AsymmetricX509Cert".|
-|использование|String|Строка, описываемая цель, для которой можно использовать ключ. Например, "Проверка".|
+|type|Строка|Тип учетных данных ключей. "AsymmetricX509Cert".|
+|использование|Строка|Строка, описываемая цель, для которой можно использовать ключ. Например, "Проверка".|
 |key|Двоичный| Значение для учетных данных ключа. Должно быть закодированное значение base-64. |
-|отпечатки пальцев| String | Значение отпечатка пальца для ключа.|
+|отпечатки пальцев| Строка | Значение отпечатка пальца для ключа.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -47,10 +47,10 @@ ms.locfileid: "52118979"
 
 ```json
 {
-    "customKeyIdentifier": "binary",
+    "customKeyIdentifier": "string (binary)",
     "displayName": "string",
     "endDateTime": "string (timestamp)",
-    "key": "binary",
+    "key": "string (binary)",
     "keyId": "guid",
     "startDateTime": "String (timestamp)",
     "type": "string",

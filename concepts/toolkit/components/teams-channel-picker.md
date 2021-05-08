@@ -3,12 +3,12 @@ title: Компонент выбора каналов Microsoft Teams в Microso
 description: Вы можете использовать компонент mgt-teams-channel-picker, чтобы в Microsoft Graph искать каналы и команды, связанные с пользователем.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: c0b6e818f0c9c30314b5342fcfb6ef44978ec830
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 086ce7085f1802e40195fca9f54f2af460291fda
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660010"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266796"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 
@@ -83,7 +83,7 @@ mgt-teams-channel-picker {
 
 ## <a name="templates"></a>Шаблоны
 
- `mgt-teams-channel-picker` поддерживает несколько [шаблонов](../customize-components/templates.md), позволяющих заменить определенные части компонента. Чтобы указать шаблон, добавьте элемент `<template>` в компонент и присвойте параметру `data-type` одно из следующих значений.
+ Компонент `mgt-teams-channel-picker` поддерживает несколько [шаблонов](../customize-components/templates.md), позволяющих заменить его определенные части. Чтобы указать шаблон, добавьте элемент `<template>` в компонент и присвойте параметру `data-type` одно из следующих значений.
 
 | Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
@@ -113,6 +113,10 @@ mgt-teams-channel-picker {
 ## <a name="authentication"></a>Проверка подлинности
 
 В элементе управления используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md).
+
+## <a name="cache"></a>Кэш
+
+Компонент `mgt-teams-channel-picker` не кэшет данных.
 
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 

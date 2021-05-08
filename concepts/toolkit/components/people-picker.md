@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 138c87a004838ae4f1f431e1f553d75ea3a57401
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 3531c32ae4f33898b11f7d92f91115aa1cbf43a3
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516663"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266817"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -146,6 +146,15 @@ mgt-people-picker {
 
 В элементе управления используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md).
 
+## <a name="cache"></a>Кэш
+
+|Хранилище объектов|Кэшные данные|Примечания|
+|---------|-----------|-------|
+|`groups`|Список групп|Используется, `type` когда установлено `PersonType.group`|
+|`people`|List of people|Используется, `type` когда установлено `PersonType.person` или `PersonType.any`|
+|`users`|Список пользователей|Используется при `groupId` указании|
+
+Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 
 В более сложных сценариях или настраиваемых пользовательских интерфейсах этот компонент предоставляет несколько методов `protected render*` для переопределения в расширениях компонента.

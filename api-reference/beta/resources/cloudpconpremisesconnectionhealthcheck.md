@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса cloudPcOnPremisesConnectionHealthCheck
-description: Результат проверки состояния локального подключения на облачном компьютере.
+title: тип ресурса cloudPcOnPremisesConnectionHealthCheck
+description: Результат проверки состояния локального подключения облачного КОМПЬЮТЕРА.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 32b57750400e1fb71dc8cc173b364fba76cd36ec
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 576319abab0894530f363059cb2f07d787f80c7c
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033983"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266831"
 ---
-# <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Тип ресурса cloudPcOnPremisesConnectionHealthCheck
+# <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Результат проверки состояния локального подключения на облачном компьютере.
+Результат проверки состояния локального подключения облачного КОМПЬЮТЕРА.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,42 +26,44 @@ ms.locfileid: "50033983"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[RunHealthChecks cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Нет|Запустите проверки состояния [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
+|[RunHealthChecks cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Нет|Запустите проверки состояния [здоровья cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемая фамилия для этого элемента проверки состояния.|
+|displayName|Строка|Имя отображения этого элемента проверки состояния.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|Состояние элемента проверки состояния. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
-|startDateTime|DateTimeOffset|Время начала проверки состояния. Только для чтения.|
-|endDateTime|DateTimeOffset|Время окончания элемента проверки состояния. Только для чтения.|
-|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|Тип ошибки, которая произошла во время этой проверки.|
-|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
-|additionalDetails|String|Дополнительные сведения о проверке состояния или рекомендуемом действии.|
+|startDateTime|DateTimeOffset|Время начала элемента проверки состояния. Только для чтения.|
+|endDateTime|DateTimeOffset|Конечное время проверки состояния элемента. Только для чтения.|
+|errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|Тип ошибки, которая произошла во время проверки состояния.|
+|recommendedAction|Строка|Рекомендуемое действие для устранения соответствующей ошибки.|
+|additionalDetails|Строка|Дополнительные сведения о проверке состояния здоровья или рекомендуемом действии.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>значения cloudPcOnPremisesConnectionHealthCheckErrorType
 
 |Member|Описание|
 |:---|:---|
-|dnsCheckFqdnNotFound|Сбой проверки DNS, так как полное доменное имя не найдено. Повторно введите полное доменное имя.|
-|dnsCheckUnknownError|Не удалось проверить DNS из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|adJoinCheckFqdnNotFound|Сбой проверки пользования активным доменом из-за того, что не найдено полное доменное имя. Повторно введите полное доменное имя.|
-|adJoinCheckIncorrectCredentials|Сбой проверки пользования активным доменом из-за неправильных учетных данных домена. Обновите имя пользователя и пароль.|
-|adJoinCheckOrganizationalUnitNotFound|Сбой проверки присоединить активный домен из-за того, что указанное подразделение не найдено. Повторно введите подразделение.|
-|adJoinCheckOrganizationalUnitIncorrectFormat|При проверке пользования активным доменом не удалось использовать неправильный формат указанного подразделения. Пример формата: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
-|adJoinCheckUnknownError|Сбой проверки присоединить активный домен из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|endpointConnectivityCheckUrlNotWhitelisted|Не удалось проверить возможность подключения к конечной точке, так как URL-адреса не находятся в списке адресов в параметрах сетевого брандмауэра. Добавьте URL-адреса в список разрешаний для параметров сетевого брандмауэра. Сведения [об URL-адресах см.](/azure/virtual-desktop/safe-url-list) в обязательном списке URL-адресов.|
-|endpointConnectivityCheckUnknownError|Не удалось проверить возможность подключения к конечной точке из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|aadConnectivityCheckUnknownError|Не удалось проверить подключение Azure Active Directory из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|resourceAvailabilityCheckNoSubnetIP|Не удалось проверить доступность ресурсов, так как в подсети нет доступных IP-адресов. Освободите некоторые из них или измените их на другую подсеть и повторить попытку.|
-|resourceAvailabilityCheckSubscriptionDisabled|Не удалось проверить доступность ресурсов из-за отключенной подписки Azure. Please re-enable the subscription.|
-|resourceAvailabilityCheckUnknownError|Не удалось проверить доступность ресурсов из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|permissionCheckNoSubscriptionReaderRole|У директора-службы облачного ПК нет разрешений на чтение для указанной подписки Azure. Обратитесь к владельцу подписки, чтобы добавить назначение роли читателя в подписке Azure для основного компьютера-службы Cloud PC.|
-|permissionCheckNoResourceGroupOwnerRole|У директора-службы облачного ПК нет разрешений владельца для указанной группы ресурсов. Обратитесь к владельцу подписки, чтобы добавить назначение роли владельца в группу ресурсов для основного службы Cloud PC.|
-|permissionCheckNoVNetContributorRole|У участника-службы облачного ПК нет разрешений на сетевой участник в указанной виртуальной сети. Обратитесь к владельцу подписки, чтобы добавить назначение роли сетевого участника для участника-службы Cloud PC. |
-|permissionCheckUnknownError|Не удалось проверить разрешения из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
-|internalServerUnknownError|Не удалось проверить состояние системы из-за неизвестной внутренней ошибки сервера. Обратитесь в службу поддержки клиентов.|
+|dnsCheckFqdnNotFound|Проверка DNS не удалась, так как полностью квалифицированное доменное имя не было найдено. Повторно введите полное доменное имя.|
+|dnsCheckUnknownError|Проверка DNS не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|adJoinCheckFqdnNotFound|Проверка активного присоединиться к домену не удалась, так как полностью квалифицированное доменное имя не было найдено. Повторно введите полное доменное имя.|
+|adJoinCheckIncorrectCredentials|Проверка активного входа в домен не удалось, так как учетные данные домена некорректны. Пожалуйста, обнови имя пользователя и пароль.|
+|adJoinCheckOrganizationalUnitNotFound|Проверка активного присоединяться к домену не удалась, так как указанное организационное подразделение не было найдено. Повторно введите подразделение организации.|
+|adJoinCheckOrganizationalUnitIncorrectFormat|Проверка активного присоединяться к домену не удалось beccause формат указанного организационного подразделения является неправильным. Пример формата: "OU=OU1,OU=OU2,OU=OU3,DC=DC1".|
+|adJoinCheckAccessDenied|Проверка присоединений к активному домену не удалась, так как доступ отказано, когда пользователи, не администраторы которых были делегированы, пытаются присоединиться к объектам компьютера к контроллеру домена. Назначьте клиенту правильное разрешение присоединиться к объекту компьютера в домене. Необходимые разрешения: создание объектов компьютера, удаление объектов компьютера.|
+|adJoinCheckUnknownError|Проверка активного присоединяться к домену не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|endpointConnectivityCheckUrlNotWhitelisted|Проверка подключения конечной точки не удалась, так как URL-адреса не находятся в списке допуска в параметрах сетевого брандмауэра. Добавьте URL-адреса в список допуска для параметров сетевого брандмауэра. Сведения [об URL-адресе см.](/azure/virtual-desktop/safe-url-list) в обязательном списке URL-адресов.|
+|endpointConnectivityCheckUnknownError|Проверка подключения конечной точки не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|aadConnectivityCheckUnknownError|Проверка подключения Azure Active Directory не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|resourceAvailabilityCheckNoSubnetIP|Проверка доступности ресурсов не удалась из-за того, что в подсети не было доступных IP-адресов. Пожалуйста, освободите некоторые или измените другую подсеть и повторно.|
+|resourceAvailabilityCheckSubscriptionDisabled|Проверка доступности ресурсов не удалось из-за отключенной подписки Azure. Пожалуйста, повторно ввяйте подписку.|
+|resourceAvailabilityCheckUnsupportedVNetRegion|Выбранный vNet не находится в поддерживаемом регионе Azure.|
+|resourceAvailabilityCheckUnknownError|Проверка доступности ресурсов не удалось из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|permissionCheckNoSubscriptionReaderRole|Руководитель службы облачных ПК не имеет разрешений на чтение в указанной подписке Azure. Обратитесь к владельцу подписки, чтобы добавить назначение ролей читателя в подписке Azure для директора службы облачных ПК.|
+|permissionCheckNoResourceGroupOwnerRole|У директора службы облачных ПК нет разрешений владельцев указанной группы ресурсов. Обратитесь к владельцу подписки, чтобы добавить назначение роли владельца в группе ресурсов для директора службы облачных ПК.|
+|permissionCheckNoVNetContributorRole|В указанной виртуальной сети у директора службы облачных ПК нет разрешений на сетевой вкладчик. Обратитесь к владельцу подписки, чтобы добавить назначение роли вкладчика сети для директора службы облачных ПК. |
+|permissionCheckUnknownError|Проверка разрешений не удалась из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|internalServerUnknownError|Проверка состояния не удалось из-за неизвестной ошибки внутреннего сервера. Обратитесь в службу поддержки клиентов.|
 
 ## <a name="relationships"></a>Связи
 

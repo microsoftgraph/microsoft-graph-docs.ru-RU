@@ -3,12 +3,12 @@ title: Компонент People в Microsoft Graph Toolkit
 description: Вы можете использовать веб-компонент `mgt-people`, чтобы отображать группу людей или контактов с помощью фотографий и инициалов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 9e19636c6f69784984d7438d53f57bac78fc6675
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 0cdade8720112dc623e617514f31ab63151b80ff
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660060"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266852"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент People в Microsoft Graph Toolkit
 
@@ -104,6 +104,18 @@ mgt-people {
 
 В элементе управления используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md).
 
+## <a name="cache"></a>Кэш
+
+|Хранилище объектов|Кэшные данные|Примечания|
+|---------|-----------|-------|
+|`people`|Сведения о пользователях, совпадающих с запросом|Используется при `resource` указании|
+|`users`|Сведения о пользователях, совпадающих с запросом|Используется `groupId` при указании свойств или без `userIds` `peopleQueries` указанных свойств|
+|`presence`|Присутствие для указанного набора людей|Используется при `showPresence` наборе `true`|
+
+> [!NOTE]
+> По умолчанию компонент `mgt-people` использует компонент для отображения [`mgt-person`](./person.md) сведений о человеке. Компонент `mgt-person` автоматически загружает и кэшируется фотографию для каждого человека.
+
+Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 
 В более сложных сценариях или настраиваемых пользовательских интерфейсах этот компонент предоставляет несколько методов `protected render*` для переопределения в расширениях компонента.

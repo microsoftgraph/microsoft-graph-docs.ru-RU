@@ -3,12 +3,12 @@ title: Начало работы с microsoft Graph набор средств
 description: Начало работы с помощью microsoft Graph набор средств в приложении.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 3197542066d92978bf151d61a378e7f392633016
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 15d3e4721ae43146496b1a54ec12bc7906bfda5b
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961424"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266873"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Начало работы с microsoft Graph набор средств
 
@@ -18,7 +18,7 @@ ms.locfileid: "51961424"
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-Пошаговая инструкция см. в руководстве Начать работу с [модулем Microsot Graph набор средств.](/learn/modules/msgraph-toolkit-intro/) 
+Пошаговую инструкцию см. в руководстве [Get started with Microsoft Graph набор средств.](/learn/modules/msgraph-toolkit-intro/) 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Настройка клиента Microsoft 365
 Для разработки с помощью набор средств необходимо получить доступ к клиенту Microsoft 365. Если у вас его нет, вы можете получить бесплатную подписку на разработчика Microsoft 365, присоединившись к [программе разработчиков Microsoft 365.](https://developer.microsoft.com/microsoft-365/dev-program) Сведения о настройке подписки см. в материале [Настройка подписки на разработчика Microsoft 365.](/office/developer-program/microsoft-365-developer-program-get-started)

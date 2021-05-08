@@ -3,12 +3,12 @@ title: Компонент "Повестка дня" в Microsoft Graph Toolkit
 description: Веб-компонент mgt-agenda используется для представления событий в календаре пользователя или группы.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e66ffed1f10de5c4c9b9b322d9070074ec707000
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: b4c9f41f347e8a392d7d751f16f9168a4d66d1c4
+ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659550"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52266577"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Компонент "Повестка дня" в Microsoft Graph Toolkit
 
@@ -28,7 +28,7 @@ ms.locfileid: "49659550"
 
 | Атрибут | Свойство | Описание |
 | --- | --- | --- |
-| дата | date | Строка, представляющая дату начала событий, извлекаемых из Microsoft Graph. Значение должно быть в формате, который может быть проанализирован [конструктором дат](https://developer.mozilla.org/ru-RU/docs/Web/JavaScript/Reference/Global_Objects/Date). Значение не оказывает влияния, если установлен атрибут `event-query`. |
+| дата | date | Строка, представляющая дату начала событий, извлекаемых из Microsoft Graph. Значение должно быть в формате, который может быть проанализирован [конструктором дат](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). Значение не оказывает влияния, если установлен атрибут `event-query`. |
 | days | days | Количество дней, извлекаемых из Microsoft Graph (по умолчанию — 3 дня). Значение не оказывает влияния, если установлен атрибут `event-query`. |
 | show-max | showMax | Число, указывающее максимальное количество отображаемых событий. Значение по умолчанию не установлено (не ограничено). |
 | group-id | groupId | Идентификатор строки для группового календаря, используемого вместо текущего календаря вошедшего пользователя. |
@@ -154,6 +154,10 @@ mgt-agenda {
 ## <a name="authentication"></a>Проверка подлинности
 
 В элементе управления входом используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md).
+
+## <a name="cache"></a>Кэш
+
+Компонент `mgt-agenda` не кэшет данных.
 
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 

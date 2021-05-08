@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d55f1889a8134196760b133827bee2ec8c82b20e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 503d165d1d7c1a997c9e39f728a833a0dc422d68
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944423"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241088"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Get bitlockerRecoveryKey
 Пространство имен: microsoft.graph
@@ -26,11 +26,11 @@ ms.locfileid: "50944423"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
->**Примечание:** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был подписан ключ BitLocker:  
+>**Примечание:** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, которое изначально было BitLocker ключом:  
 * Глобальный администратор
 * Администратор облачных устройств
 * Администратор службы поддержки
@@ -40,7 +40,7 @@ ms.locfileid: "50944423"
 * Глобальный читатель
 
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить указанный ключ BitLocker без возврата свойства **ключа:**
+Чтобы получить указанный BitLocker, не возвращая свойство **ключа:**
 <!-- {
   "blockType": "ignored"
 }
@@ -49,7 +49,7 @@ ms.locfileid: "50944423"
 GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'
 ```
 
-Чтобы получить указанный ключ BitLocker, включая его **ключевое** свойство:
+Чтобы получить указанный BitLocker, включая его **ключевое** свойство:
 <!-- {
   "blockType": "ignored"
 }
@@ -65,7 +65,7 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательный.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательно.|
 |ocp-client-version|Версия клиентского приложения с вызовом API. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,7 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1"></a>Пример 1
-Получите ключ BitLocker, указав **ключевой id.** В этом примере свойство **ключа не** возвращается.
+Получите ключ BitLocker, указав **ключ.** В этом примере свойство **ключа не** возвращается.
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -140,8 +140,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a>Пример 2
-Получите ключ BitLocker с **свойством ключа,** указав **ключевой id.**
+### <a name="example-2"></a>Пример 2
+Получите ключ BitLocker с **свойством ключа,** указав **ключ.**
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

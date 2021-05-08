@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8e6ba3e4d3a36b1d9d14ad4ab9528af98d22dbc8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d239a98275b6ca8fb390ae646f67a82c2212c99
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055871"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241081"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -58,6 +58,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 В таблице ниже перечислены свойства, которые можно обновить. В орган запроса включаем только свойства, которые требуют обновления, за следующими исключениями:
 
 - Для настройки даты начала или окончания собрания в интернете всегда требуются свойства **startDateTime** и **endDateTime** в теле запроса.
+- **Поле** организатора **свойства участников** не может быть обновлено. Организатор собрания не может быть изменен после создания собрания.
 - Для настройки **поля** участников  свойства участников, например добавления или удаления участника собрания, всегда требуется полный список участников в теле запроса.
 
 | Свойство             | Тип                                                         | Описание                                                                                                                                    |
@@ -65,7 +66,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | startDateTime        | DateTime                                                     | Время начала собрания в UTC.                                                                                                                 |
 | endDateTime          | DateTime                                                     | Время окончания собрания в UTC.                                                                                                                   |
 | subject              | String                                                       | Тема собрания в Интернете.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Участники, связанные с онлайн-собранием. Это включает организатора и участников.                                            |
+| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников.                                            |
 | isEntryExitAnnounced | Логический                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Указывает, какие участники могут обойти вестибюль собрания.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Указывает, кто может быть презентовщиком на собрании. Возможные значения — это все, организация, roleIsPresenter, организатор и неизвестныйFutureValue. |

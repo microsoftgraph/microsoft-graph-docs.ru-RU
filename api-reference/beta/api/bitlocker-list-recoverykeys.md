@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a51ffa28290b51539dd8ccbcc95c71917b15db0d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7e4fbd5a2a4c1b76ca985cb17e5c6799cb4f41c5
+ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944391"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240975"
 ---
 # <a name="list-recoverykeys"></a>Список recoveryKeys
 Пространство имен: microsoft.graph
@@ -26,11 +26,11 @@ ms.locfileid: "50944391"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
->**Примечание.** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен был назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был отыскирован ключ восстановления BitLocker: 
+>**Примечание.** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был отсвечивался ключ восстановления BitLocker: 
 * Глобальный администратор
 * Администратор облачных устройств
 * Администратор службы поддержки
@@ -40,7 +40,7 @@ ms.locfileid: "50944391"
 * Глобальный читатель
 
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить список ключей BitLocker в клиенте:
+Чтобы получить список BitLocker ключей в клиенте:
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ ms.locfileid: "50944391"
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
-Чтобы получить список ключей BitLocker в клиенте, фильтруемом по **id устройства:**
+Чтобы получить список ключей BitLocker клиента, фильтруемого по **id устройства:**
 
 <!-- {
   "blockType": "ignored"
@@ -63,13 +63,13 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр запроса OData для фильтрации результатов с помощью id устройства, на который был недавно отсвеят `$filter` ключ.  Этот метод не поддерживает `$top` фильтр. Подробные сведения [см. в примере 2](#example-2). Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-В ответе также может содержаться страница, которую можно использовать для страницы `odata.nextLink` с помощью набора результатов. Подробные сведения см. в [материале Paging Microsoft Graph data](/graph/paging).
+В ответе также может содержаться страница, которую можно использовать для страницы `odata.nextLink` с помощью набора результатов. Подробные сведения см. [в материале Paging Microsoft Graph данных.](/graph/paging)
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательный.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Обязательно.|
 |ocp-client-version|Версия клиентского приложения с вызовом API. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,7 +82,7 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1"></a>Пример 1
-Извлечение списка ключей BitLocker в клиенте.
+Извлечение списка BitLocker ключей в клиенте.
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -151,8 +151,8 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-2"></a>Пример 2
-Извлечение списка ключей BitLocker, фильтруемого **по id устройства.**
+### <a name="example-2"></a>Пример 2
+Извлечение списка BitLocker, фильтруемого **по id устройства.**
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
