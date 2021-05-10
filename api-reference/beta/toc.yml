@@ -10441,6 +10441,72 @@ items:
                         href: api/unifiedroleassignmentmultiple-update.md
                       - name: Delete
                         href: api/unifiedroleassignmentmultiple-delete.md
+                  - name: Запрос на назначение ролей
+                    href: resources/unifiedroleassignmentschedulerequest.md
+                    items:
+                      - name: Список
+                        href: api/unifiedroleassignmentschedulerequest-list.md
+                      - name: Получение
+                        href: api/unifiedroleassignmentschedulerequest-get.md
+                      - name: Создание
+                        href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                      - name: Обновление
+                        href: api/unifiedroleassignmentschedulerequest-update.md
+                      - name: Отмена
+                        href: api/unifiedroleassignmentschedulerequest-cancel.md
+                      - name: Фильтр текущего пользователя
+                        href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                  - name: Запрос на право на роль
+                    href: resources/unifiedroleeligibilityschedulerequest.md
+                    items:
+                      - name: Список
+                        href: api/unifiedroleeligibilityschedulerequest-list.md
+                      - name: Получение
+                        href: api/unifiedroleeligibilityschedulerequest-get.md
+                      - name: Создание
+                        href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                      - name: Обновление
+                        href: api/unifiedroleeligibilityschedulerequest-update.md
+                      - name: Отмена
+                        href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                      - name: Фильтр текущего пользователя
+                        href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                  - name: Расписание назначения ролей
+                    href: resources/unifiedRoleAssignmentSchedule.md
+                    items:
+                      - name: Список
+                        href: api/unifiedroleassignmentschedule-list.md
+                      - name: Получение
+                        href: api/unifiedroleassignmentschedule-get.md
+                      - name: Фильтр текущего пользователя
+                        href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                  - name: Расписание прав на роль
+                    href: resources/unifiedRoleEligibilitySchedule.md
+                    items:
+                      - name: Список
+                        href: api/unifiedRoleEligibilitySchedule-list.md
+                      - name: Получение
+                        href: api/unifiedRoleEligibilitySchedule-get.md
+                      - name: Фильтр текущего пользователя
+                        href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
+                  - name: Экземпляр назначения ролей
+                    href: resources/unifiedRoleAssignmentScheduleInstance.md
+                    items:
+                      - name: Список
+                        href: api/unifiedRoleAssignmentScheduleInstance-list.md
+                      - name: Получение
+                        href: api/unifiedRoleAssignmentScheduleInstance-get.md
+                      - name: Фильтр текущего пользователя
+                        href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+                  - name: Экземпляр права на роль
+                    href: resources/unifiedRoleEligibilityScheduleInstance.md
+                    items:
+                      - name: Список
+                        href: api/unifiedRoleEligibilityScheduleInstance-list.md
+                      - name: Получение
+                        href: api/unifiedRoleEligibilityScheduleInstance-get.md
+                      - name: Фильтр текущего пользователя
+                        href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
           - name: Удостоверение и вход
             items:
               - name: Политика событий проверки подлинности
@@ -10960,6 +11026,33 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Удаление из исключений
                             href: api/permissiongrantpolicy-delete-excludes.md
+                  - name: Политика управления ролью
+                    href: resources/unifiedRoleManagementPolicy.md
+                    items:
+                      - name: Список
+                        href: api/unifiedrolemanagementpolicy-list.md
+                      - name: Получение
+                        href: api/unifiedrolemanagementpolicy-get.md
+                      - name: Список эффективных правил
+                        href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+                      - name: Перечисление правил
+                        href: api/unifiedrolemanagementpolicy-list-rules.md
+                  - name: Назначение политики управления ролью
+                    href: resources/unifiedRoleManagementPolicyAssignment.md
+                    items:
+                      - name: Список
+                        href: api/unifiedRoleManagementPolicyAssignment-list.md
+                      - name: Получение
+                        href: api/unifiedRoleManagementPolicyAssignment-get.md
+                  - name: Правило политики управления ролью
+                    href: resources/unifiedRoleManagementPolicyRule.md
+                    items:
+                      - name: Список
+                        href: api/unifiedRoleManagementPolicyRule-list.md
+                      - name: Получение
+                        href: api/unifiedRoleManagementPolicyRule-get.md
+                      - name: Обновление
+                        href: api/unifiedRoleManagementPolicyRule-update.md
                   - name: Политика выпуска маркеров
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -11235,7 +11328,7 @@ items:
                       - name: Список
                         href: api/accessreviewhistorydefinition-list.md
                       - name: Создание
-                        href: api/accessreviewhistorydefinition-create.md
+                        href: api/accessreviewhistorydefinition-post.md
                       - name: Создание URI загрузки
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: Отзывы доступа (устаревшие)
@@ -11346,11 +11439,15 @@ items:
                         href: api/accesspackage-update.md
                       - name: Delete
                         href: api/accesspackage-delete.md
+                      - name: Фильтр текущего пользователя
+                        href: api/accesspackage-filterbycurrentuser.md
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
                       - name: List
                         href: api/accesspackageassignment-list.md
+                      - name: Фильтр текущего пользователя
+                        href: api/accesspackageassignment-filterbycurrentuser.md
                   - name: Утверждение назначения пакета доступа
                     href: resources/approval.md
                     items:
@@ -11386,6 +11483,10 @@ items:
                         href: api/accesspackageassignmentrequest-post.md
                       - name: Получение
                         href: api/accesspackageassignmentrequest-get.md
+                      - name: Фильтр текущего пользователя
+                        href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+                      - name: '"Отмена"'
+                        href: api/accesspackageassignmentrequest-cancel.md
                   - name: Доступ к роли ресурса назначения пакета
                     href: resources/accesspackageassignmentresourcerole.md
                     items:
@@ -13003,7 +13104,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
