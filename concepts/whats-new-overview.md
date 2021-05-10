@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e5e8e8ba5c67e81abe9bf108be5f72bacfe2739f
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 4b71030b3a58b56b6a8e5a43272cabbafddc01e5
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921933"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231429"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -19,15 +19,59 @@ ms.locfileid: "51921933"
 
 ## <a name="april-2021-new-and-generally-available"></a>Апрель 2021 г.: новые и общедоступные возможности
 
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
+- Управляйте [политикой проверки подлинности](/graph/api/resources/authenticationflowspolicy) на уровне клиента для включения или отключения [самостоятельной регистрации](/graph/api/resources/selfservicesignupauthenticationflowconfiguration) внешних пользователей.
+- Администраторы могут связывать пользовательские потоки с приложениями, общий доступ к которым предоставлен внешним пользователям, и включить [самостоятельную регистрацию](/azure/active-directory/external-identities/self-service-sign-up-overview) в этих приложениях. Они могут настраивать пользовательские потоки самостоятельной регистрации и создавать персонализированные интерфейсы регистрации. После связи приложения с пользовательским потоком пользователи, переходящие в это приложение, смогут запускать поток регистрации, предоставляющий гостевую учетную запись.
+- Настройка [атрибутов потоков пользователей](/graph/api/resources/identityuserflowattribute) в клиенте Azure AD позволяет собирать информацию о пользователе во время регистрации. Кроме того, можно собрать встроенный набор атрибутов или настроить специальные атрибуты потоков пользователей для сбора информации о пользователе, не встроенном в каталог. 
+- В [пользовательском потоке Azure Active Directory](/graph/api/resources/b2xidentityuserflow) вы можете управлять стандартными языковыми параметрами и [настраивать языки и строки, отображаемые для пользователей в пользовательском потоке](/graph/api/resources/userflowlanguageconfiguration).
+- Использование [соединителя API](/graph/api/resources/identityapiconnector) в пользовательских потоках для самостоятельной регистрации Azure AD и регистрации Azure AD B2C, чтобы вызывать API на определенном шаге для воздействия на выполнение пользовательского потока.
+
 ### <a name="teamwork"></a>Командная работа
 - Определяйте канал по свойству **channelIdentity**, если [chatMessage](/graph/api/resources/chatmessage) находится в [канале](/graph/api/resources/channel).
 - Определяйте чат по свойству **chatId**, если **[chatMessage](/graph/api/resources/chatmessage)** находится в [чате](/graph/api/resources/chat).
 - Используйте связь **messages**, чтобы получить все ресурсы [chatMessage](/graph/api/resources/chatmessage) в [чате](/graph/api/resources/chat).
+- Используйте разрешения приложения, чтобы [получить](/graph/api/chat-get) свойства указанного [чата](/graph/api/resources/chat).
+- Используйте разрешения приложения, чтобы [получить указанного участника чата](/graph/api/chat-get-members) или [всех участников чата](/graph/api/chat-list-members), включенных в чат. Поскольку данные пользователей как участников чата являются конфиденциальными (кроме получения разрешений приложения), [запросите дополнительный доступ](teams-protected-apis.md) к этим операциям.
+
+### <a name="use-the-toolkit"></a>Использование Toolkit
+Впервые используете [Microsoft Graph Toolkit](/graph/toolkit/overview)? Попробуйте новую [схему обучения Toolkit](https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit/?WT.mc_id=m365-19989-cxa), используйте набор веб-компонентов и поставщиков проверки подлинности Toolkit для подключения веб-приложения к Microsoft Graph и загрузки данных из Microsoft 365.
 
 ## <a name="april-2021-new-in-preview-only"></a>Апрель 2021 г.: новые возможности только в предварительной версии
 
+### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Онлайн-собрания
+- Получите [отчет](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) о [присутствии каждого участника](/graph/api/resources/attendancerecord?view=graph-rest-beta&preserve-view=true) на запланированном онлайн-собрании с помощью свойства [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) **meetingAttendanceReport**.
+- Включите или отключите чат либо ограничьте его длительность для онлайн-собрания с помощью свойства **allowMeetingChat**.
+- Включите или отключите реакции для онлайн-собрания с помощью свойства **allowTeamworkReactions**.
+
+### <a name="compliance"></a>Соответствие требованиям
+[Получите](/graph/api/ediscovery-settings-get?view=graph-rest-beta&preserve-view=true), [обновите](/graph/api/ediscovery-settings-update?view=graph-rest-beta&preserve-view=true) или [сбросьте до значений по умолчанию](/graph/api/ediscovery-settings-resettodefault?view=graph-rest-beta&preserve-view=true) следующие [параметры](/graph/api/resources/ediscovery-settings?view=graph-rest-beta&preserve-view=true) для [дела](/graph/api/resources/ediscovery-case?view=graph-rest-beta&preserve-view=true) обнаружения электронных данных:
+- [Обнаружение дубликатов, неполных дубликатов](/microsoft-365/compliance/near-duplicate-detection-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true) и [цепочек сообщений](/microsoft-365/compliance/email-threading-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true) с помощью свойства **redundancyDetection**.
+- [Определение тем](/microsoft-365/compliance/themes-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true), являющихся преобладающими в документах набора для проверки, с помощью свойства **topicModeling**.
+- [Извлечение текста из файлов изображений путем распознавания текста (OCR)](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true#optical-character-recognition-ocr) с помощью свойства **ocr**.
+
+Эти параметры обеспечивают функциональность аналитики, [позволяющую выполнить интеллектуальный отбор данных](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide&preserve-view=true#cull-data-intelligently) в комплексном рабочем процессе [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide&preserve-view=true).
+
+### <a name="devices-and-apps--device-updates"></a>Устройства и приложения | Обновления устройств
+Появление API для службы развертывания Центра обновления Windows для бизнеса. Служба поддерживает развертывание обновлений компонентов Windows 10 и ускорение обновления системы безопасности Windows 10 на устройствах. Чтобы получить дополнительные сведения, начните с [обзора API обновлений Windows](windowsupdates-concept-overview.md).
+
+### <a name="education"></a>Образование
+- Свяжите папку с [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) для хранения всех связанных файловых ресурсов с помощью свойства **resourcesFolderUrl**.
+- Используйте прямую ссылку на [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) с помощью свойства **webUrl**.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Администраторы могут [получить](/graph/api/accessreviewpolicy-get?view=graph-rest-beta&preserve-view=true) или [обновить](/graph/api/accessreviewpolicy-update?view=graph-rest-beta&preserve-view=true) политики на уровне каталога для проверки доступа с помощью ресурса [accessReviewPolicy](/graph/api/resources/accessreviewpolicy?view=graph-rest-beta&preserve-view=true). Например, администраторы могут использовать политику проверки доступа, чтобы включить или отключить владельцев группы, проверяющих доступ в группах, которыми они владеют.
+
+### <a name="search"></a>Поиск
+[Включите варианты написания слов или исправления](search-concept-speller.md) для пользовательского запроса. Это полезно, когда пользовательский запрос содержит опечатки или когда из-за ошибок не удается получить результаты поиска.
+
 ### <a name="teamwork"></a>Командная работа
-Используйте [предоставление разрешения для определенных ресурсов](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true), чтобы перечислять приложения с доступом к указанной [группе ](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) или [чату](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
+- Используйте [предоставление разрешения для определенных ресурсов](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true), чтобы перечислять приложения с доступом к указанной [группе ](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) или [чату](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
+- [Получите](/graph/api/teamsappicon-get?view=graph-rest-beta&preserve-view=true) свойства [значка](/graph/api/resources/teamsAppIcon?view=graph-rest-beta&preserve-view=true), связанного с приложением Teams. Чтобы получить фактическое изображение значка, используйте [получение размещенного содержимого](/graph/api/teamworkhostedcontent-get?view=graph-rest-beta&preserve-view=true).
+
+### <a name="use-sdks"></a>Использование пакетов SDK
+- Попробуйте [предварительный выпуск клиентской библиотеки JavaScript для Microsoft Graph, версия 3.0.0](https://www.npmjs.com/package/@microsoft/microsoft-graph-client/v/3.0.0-Preview.1). Этот выпуск включает несколько потоков проверки подлинности, проверку подлинности на стороне сервера, отправку больших файлов Node.js Stream, отслеживание хода выполнения и многое другое. Подробности см. в [руководстве по обновлению](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/changelogs/v3-upgrade-guide.md).
+- Попробуйте новую схему обучения, чтобы [ознакомиться со сценариями Microsoft Graph для разработки JavaScript](https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios/?WT.mc_id=m365-16105-cxa).
+
 
 ## <a name="march-2021-new-and-generally-available"></a>Март 2021 г.: новые и общедоступные возможности
 
@@ -69,7 +113,7 @@ ms.locfileid: "51921933"
   - [Отправка уведомления пользователю в чате](/graph/api/chat-sendactivitynotification)
   - [Отправка уведомления пользователю в команде](/graph/api/team-sendactivitynotification)
   - [Отправка уведомления пользователю](/graph/api/userteamwork-sendactivitynotification)
-- Переносите журнал сообщений и данные пользователей из внешней системы в канал Teams, позволяя пользователям легко продолжать общение. Используйте следующие методы, поддерживающие сценарий миграции.
+- Перенесите журнал сообщений и данные пользователей из внешней системы в канал Teams, чтобы они могли беспрепятственно продолжать общение. Используйте следующие методы, поддерживающие сценарий миграции:
   - [Создание команды](/graph/api/team-post)
   - [Создание канала](/graph/api/channel-post)
   - [Создание объекта chatMessage в канале](/graph/api/channel-post-messages)
