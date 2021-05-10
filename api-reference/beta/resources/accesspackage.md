@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 98e9a22137f9f6faaa39fbbb010a32b40f8f0254
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 2d288465b04986b98de7b67fa049657b8bcf0a58
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720846"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298533"
 ---
 # <a name="accesspackage-resource-type"></a>тип ресурса accessPackage
 
@@ -18,7 +18,8 @@ ms.locfileid: "50720846"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам одним или более пользователями.  
+В [Azure AD Entitlement Management](entitlementmanagement-root.md)пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам для одного или более пользователей.  
+
 Каждый пакет доступа ссылается на единый каталог пакетов доступа и имеет ссылки на ресурсы из этого каталога с помощью областей ролей, определенных ресурсами, которые определяют доступ, который предоставляет пакет.  Пакет доступа также связывается с политиками назначения пакета доступа, каждая из которых определяет, кто может запрашивать или кому назначено назначение пакета доступа.
 
 Чтобы назначить пользователя пакету доступа, создайте [accessPackageAssignmentRequest,](../api/accesspackageassignmentrequest-post.md) который ссылается на политику назначения пакета доступа и пакета доступа.
@@ -34,20 +35,21 @@ ms.locfileid: "50720846"
 | [Удаление accessPackage](../api/accesspackage-delete.md) |Нет | Удаление **accesspackage**. |
 | [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Извлечение списка **объектов accessPackageResourceRoleScope** для этого пакета доступа. |
 | [Создание accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Нет | Создайте новый **объект accessPackageResourceRoleScope** для этого пакета доступа. |
+|[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[коллекция accessPackage](../resources/accesspackage.md)|Извлечение списка **объектов accessPackage,** фильтруемых на входе пользователя.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|catalogId|String|ID каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
+|catalogId|Строка|ID каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
 |createdBy|String|UPN пользователя или удостоверения субъекта, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|description|String|Описание пакета доступа.|
-|displayName|String|Отображение имени пакета доступа.|
+|description|Строка|Описание пакета доступа.|
+|displayName|Строка|Отображение имени пакета доступа.|
 |id|String| Только для чтения.|
-|isHidden|Boolean|Скрыт ли пакет доступа от запросителя.|
-|isRoleScopesVisible|Boolean|Указывает, видны ли области ролей.|
-|modifiedBy|String|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
+|isHidden|Логический|Скрыт ли пакет доступа от запросителя.|
+|isRoleScopesVisible|Логический|Указывает, видны ли области ролей.|
+|modifiedBy|Строка|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 
 ## <a name="relationships"></a>Связи

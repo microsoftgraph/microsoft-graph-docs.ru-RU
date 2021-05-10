@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ff0f60841fe852d67e5c76268fe4e00ce277af11
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bc9d9c244f955e2479cf79ded3bd7ee6ac4a31b7
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048598"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298378"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048598"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)создайте новый объект [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "52048598"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,9 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 Для администратора, запрашиваемого для удаления назначения, значение свойства **requestType** составляет , а свойство accessPackageAssignment содержит свойство id, определяющий удаляемую `AdminRemove`  [accessPackageAssignment.](../resources/accesspackageassignment.md) 
 
-Для пользователя, не администратора, чтобы попросить создать назначение для себя, значение свойства **requestType** является , и `UserAdd` свойство **accessPackageAssignment** содержит с ID самих пользователей, свойство `targetId` **assignmentPolicyId,** определяющий [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и **свойство accessPackageId,** определяющий [accessPackageage](../resources/accesspackage.md).  Пользователь, делая запрос, должен уже существовать в каталоге.
+Чтобы пользователь, не вступив в администратор, попросил создать свое собственное назначение для первого назначения или возобновления назначения, значение свойства **requestType** составляет `UserAdd` . Свойство **accessPackageAssignment** содержит свойство `targetId` с `id` пользователями. Свойство **assignmentPolicyId** определяет [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md) Свойство **accessPackageId** определяет [accessPackage.](../resources/accesspackage.md) Пользователь, делая запрос, должен уже существовать в каталоге.
+
+Чтобы пользователь, не вступив в администратор, запрашивал расширение своих назначений, значение свойства **requestType** `UserExtend` составляет . Свойство **accessPackageAssignment** содержит свойство `targetId` с `id` пользователями. Свойство **assignmentPolicyId** определяет [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md) Свойство **accessPackageId** определяет [accessPackage.](../resources/accesspackage.md) Пользователь, делая запрос, должен уже существовать в каталоге.
 
 ## <a name="response"></a>Отклик
 
@@ -192,9 +194,6 @@ Content-type: application/json
 
 
 
----
-
-
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
@@ -275,6 +274,67 @@ Content-type: application/json
             "isSingleLineQuestion": false
         }
     }]
+}
+```
+### <a name="example-3-request-a-package-and-provide-a-justification"></a>Пример 3. Запрос пакета и обоснование
+#### <a name="request"></a>Запрос
+
+В следующем примере показано, как запросить пакет доступа и предоставить обоснование для утвержденного.
+ 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "UserAdd",
+    "accessPackageAssignment": {
+        "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
+    },
+    "justification":"Need access to New Hire access package"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "813bbc6b-31f5-4cdf-8fed-1ba4284a1e3f",
+    "requestType": "UserAdd",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted",
+    "isValidationOnly": false,
+    "expirationDateTime": null,
+    "justification": "Requested for the new task.",
+    "answers": [],
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": null
+        }
+    }
 }
 ```
 

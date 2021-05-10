@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 6004a27fa12fd7246830e463f67b43c2872a0157
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 31c803ccc82deaacddd81a70691e6570a044b5a1
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067203"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298540"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -72,9 +72,9 @@ ms.locfileid: "52067203"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |В двоичном формате|
 |Логический|
 |DateTime|
@@ -397,7 +397,7 @@ ms.locfileid: "52067203"
 |все|
 |privilegedAdmin|
 |Администратор|
-|user|
+|пользователь|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>значения includedUserTypes 
@@ -413,7 +413,7 @@ ms.locfileid: "52067203"
 
 |Member|
 |:---|
-|user|
+|пользователь|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -698,7 +698,7 @@ ms.locfileid: "52067203"
 
 |Member|
 |:---|
-|user|
+|пользователь|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -1204,8 +1204,8 @@ ms.locfileid: "52067203"
 |:-----------------
 |NotStarted
 |Работает
-|Completed
-|Не выполнено
+|Завершено
+|Ошибка
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения onenotePatchActionType
@@ -1249,7 +1249,7 @@ ms.locfileid: "52067203"
 | Автоматически
 | noPreview
 | checklist
-| description
+| (описание)
 | справочник
 
 
@@ -1311,7 +1311,7 @@ ms.locfileid: "52067203"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1370,7 +1370,7 @@ ms.locfileid: "52067203"
 | preset12 | 12     |
 | preset13 | 13    |
 | preset14 | 14     |
-| preset15 | 15     |
+| preset15 | 15    |
 | preset16 | 16     |
 | preset17 | 17     |
 | preset18 | 18     |
@@ -1674,7 +1674,7 @@ Enum для серьезности оповещений.
 | Элемент | Значение |
 | :----- | :---- |
 | Нет   | 0     |
-| Добавление    | 1     |
+| Add    | 1     |
 | Update | 2     |
 | Delete | 4      |
 
@@ -1733,7 +1733,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |signin|
-|user|
+|пользователь|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>значения chatMessagePolicyViolationUserActionType
@@ -1902,7 +1902,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -1940,7 +1940,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| user          | 1     | Отправка пользователя.         |
+| пользователь          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -1970,7 +1970,7 @@ Enum для серьезности оповещений.
 | исходящие              | 12     | Исходящие сообщения.                      |
 | notJunk               | 13    | Разрешить из-за не нежелательной.              |
 | нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
-| unknownFutureValue    | 15     | Член-часовой.                  |
+| unknownFutureValue    | 15    | Член-часовой.                  |
 
 ### <a name="threatassessmentrequestpivotproperty-values"></a>значения threatAssessmentRequestPivotProperty
 
@@ -2031,7 +2031,7 @@ Enum для серьезности оповещений.
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
 |boolean | Столбец Да/Нет. |
-|user | столбец персоны или группы. |
+|пользователь | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
 |расположение | столбец расположения. |
@@ -2061,7 +2061,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|user|
+|пользователь|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>значения identityUserFlowAttributeDataType
@@ -2174,3 +2174,50 @@ Enum для серьезности оповещений.
 |team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
+
+### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>roleAssignmentScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|основной|
+|createdBy|
+|одобрение|
+|unknownFutureValue|
+
+### <a name="roleassignmentschedulefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|основной|
+|unknownFutureValue|
+
+### <a name="roleassignmentscheduleinstancefilterbycurrentuseroptions-values"></a>roleAssignmentScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|основной|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulerequestfilterbycurrentuseroptions-values"></a>значения roleEligibilityScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|основной|
+|createdBy|
+|одобрение|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulefilterbycurrentuseroptions-values"></a>значения roleEligibilityScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|основной|
+|unknownFutureValue|
+
+### <a name="roleeligibilityscheduleinstancefilterbycurrentuseroptions-values"></a>значения roleEligibilityScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|основной|
+|unknownFutureValue|
+

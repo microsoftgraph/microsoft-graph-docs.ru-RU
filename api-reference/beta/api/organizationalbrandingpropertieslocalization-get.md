@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f4106e3ef725e0fc8b8b36e3b04d58ecfbfd6878
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 417fc34db3d479712d031c8a4240133be143216e
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051111"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298210"
 ---
 # <a name="get-localized-organizationalbrandingproperties"></a>Get Localized organizationalBrandingProperties
 
@@ -33,7 +33,7 @@ ms.locfileid: "52051111"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}
+GET /organization/{tenant id}/branding/localizations/{locale}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

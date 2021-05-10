@@ -5,12 +5,12 @@ author: hanki-microsoft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4530eec57a15a871cd7c633dd645c7f9beae2070
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 6ba500b5f20dfb9dbf29054d0015ebe372e3753d
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759428"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298371"
 ---
 # <a name="get-accesspackageresourceenvironment"></a>Получите accessPackageResourceEnvironment
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [объект accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md) в тексте ответа.
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

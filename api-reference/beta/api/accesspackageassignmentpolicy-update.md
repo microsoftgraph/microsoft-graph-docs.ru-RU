@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5a32ed205a10035e234a540f0048867e3bee4fa4
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 32e93a6aa60793ba4fd30977d030dd2263a8c4c9
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719234"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298343"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -50,14 +50,14 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображает имя политики.|
-|description|String|Описание политики.|
-|canExtend|Boolean|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
+|displayName|Строка|Отображает имя политики.|
+|description|Строка|Описание политики.|
+|canExtend|Логический|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Кто может запросить этот пакет доступа из этой политики.|
-|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Кто должен утверждать запросы на пакет доступа в этой политике.|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Кто должен и как часто выполнять назначения пакету доступа из этой политики. Это свойство является null, если отзывы не требуются.|
+|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Кто этот пакет доступа можно запросить в этой политике.|
+|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Кто должны утверждать запросы на пакет доступа в этой политике.|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Кто должны проанализировать и как часто назначения пакета доступа из этой политики. Это свойство является null, если отзывы не требуются.|
 
 
 ## <a name="response"></a>Отклик
@@ -185,7 +185,7 @@ Content-length: 1000
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

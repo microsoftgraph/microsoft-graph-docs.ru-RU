@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 7dc9ec20ef316cd0c6e5e305d780099f61901e6f
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f4723923a6b05b13fb8076b3e69ccbf0c1295f4f
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761327"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298561"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления правами Azure AD
 
@@ -18,7 +18,7 @@ ms.locfileid: "50761327"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Управление правами Azure Active Directory (Azure AD) позволяет управлять доступом к группам, приложениям и сайтам SharePoint Online для внутренних пользователей, а также пользователей за пределами организации.
+Azure Active Directory управления правами Azure AD позволяет управлять доступом к группам, приложениям и веб-сайтам SharePoint для внутренних пользователей, а также пользователей за пределами организации.
 
 Создав пакеты доступа с ролями, которые должны иметь пользователи в этих ресурсах, и определяя политики для того, кто может запрашивать пакет доступа и как долго у них может быть назначение пакета доступа, вы можете управлять жизненным циклом доступа как для внутренних, так и для внешних пользователей.
 
@@ -36,7 +36,7 @@ ms.locfileid: "50761327"
 - [entitlementManagementSettings:](entitlementmanagementsettings.md)параметры для управления правами Azure AD для всех клиентов.
 - [утверждение:](approval.md)представляет решения, связанные с запросом пакета доступа.
 
-Учебник, в который показано, как использовать управление правами для создания пакета ресурсов, которые внутренние пользователи могут запрашивать для самообслуживки, см. в статью Создание пакета доступа с помощью [API Microsoft Graph.](/graph/tutorial-access-package-api)
+Учебник, в который показано, как использовать управление правами для создания пакета ресурсов, которые внутренние пользователи могут запрашивать самостоятельно, см. в инструкции [Create an access package using Microsoft Graph API.](/graph/tutorial-access-package-api)
 
 Обратите внимание, что функция управления правами, включая API, включена в Azure AD Premium P2. Клиент, в котором используется управление правами, должен иметь допустимую приобретенную или пробную подписку Azure AD Premium P2 или EMS E5.
 
@@ -47,12 +47,13 @@ ms.locfileid: "50761327"
 | Метод           | Тип возвращаемых данных    |Описание|
 |:---------------|:--------|:----------|
 | [получение](../api/entitlementmanagementsettings-get.md); | [entitlementManagementSettings](entitlementmanagementsettings.md) | Ознакомьтесь с свойствами объекта **entitlementManagementSettings.** |
-| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Обновление свойств объекта **entitlementManagementSettings.** |
+| [Обновление](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Обновление свойств объекта **entitlementManagementSettings.** |
 | [Пакеты доступа к спискам](../api/accesspackage-list.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка **объектов accessPackage.** |
 | [Создание accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Создайте новый **объект accessPackage.** |
 | [Получить accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Чтение свойств и связей объекта **accessPackage.** |
 | [Обновление accessPackage](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **accesspackage.** |
 | [Удаление accessPackage](../api/accesspackage-delete.md) | | Удаление **accessPackage**. |
+| [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка **объектов accessPackage,** фильтруемых на входе пользователя. |
 | [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Извлечение списка **объектов accessPackageResourceRoleScope** для пакета доступа. |
 | [Создание accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый **объект accessPackageResourceRoleScope** для пакета доступа. |
 | [Список accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection | Извлечение списка **объектов accessPackageAssignmentPolicy.** |
@@ -63,7 +64,10 @@ ms.locfileid: "50761327"
 | [Список accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка **объектов accessPackageAssignmentRequest.** |
 | [Создание accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создание нового **accessPackageAssignmentRequest**. |
 | [Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта **accessPackageAssignmentRequest.** |
+|[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Извлечение списка **объектов accessPackageAssignmentRequest,** фильтруемых на входе пользователя.|
+|[cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Отмена **объекта accessPackageAssignmentRequest,** который находится в отменяемом состоянии: `accepted` , , , `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .|
 | [Списки accessPackageAssignments](../api/accesspackageassignment-list.md) | [коллекция accessPackageAssignment](accesspackageassignment.md) | Извлечение списка **объектов accessPackageAssignment.** |
+|[FilterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[коллекция accessPackageAssignment](../resources/accesspackageassignment.md)|Извлечение списка **объектов accessPackageAssignment,** фильтруемых на входе пользователя.|
 | [Список accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [коллекция accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Извлечение списка **объектов accessPackageAssignmentResourceRole.** |
 | [Получите accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | **Извлечение объекта accessPackageAssignmentResourceRole.** |
 | [Список accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [коллекция accessPackageCatalog](accesspackagecatalog.md) | Извлечение списка **объектов accessPackageCatalogs.** |
