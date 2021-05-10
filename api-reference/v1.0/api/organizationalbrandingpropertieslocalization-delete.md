@@ -5,12 +5,12 @@ localization_priority: Normal
 author: almars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 030c689a3bfb82a2ad64875ba739059ca783b6b4
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 172f1cce5392bc4bcce227ab1eb89b176a4d20d9
+ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582797"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298683"
 ---
 # <a name="delete-localized-organizationalbrandingproperties"></a>Удаление локализованных организационных свойствBrandingProperties
 
@@ -31,7 +31,7 @@ ms.locfileid: "51582797"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /organization/{id}/branding/localizations/{locale}
+DELETE /organization/{tenant id}/branding/localizations/{locale}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
