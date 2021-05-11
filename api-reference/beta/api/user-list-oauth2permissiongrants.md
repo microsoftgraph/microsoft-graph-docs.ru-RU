@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 435d577ccf892b0cbf03a2899ec039150ae09f9f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b2bab33e8e78c7c42e7d47fd6dcf4a889579528b
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052602"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231803"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -22,6 +22,9 @@ ms.locfileid: "52052602"
 
 > [!NOTE]
 > При запросе предоставленных делегированных разрешений для пользователя будут возвращаться только предоставленные делегированные разрешения, предназначенные для данного пользователя. Делегированные разрешения, предоставленные от имени всех пользователей в организации, _не_ включаются в ответ.
+
+> [!NOTE]
+> При запросе могут происходить задержки репликации для предоставленных делегированных разрешений, которые были недавно созданы, обновлены или удалены.
 
 ## <a name="permissions"></a>Разрешения
 
