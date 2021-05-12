@@ -477,7 +477,7 @@ items:
                 href: api/chat-get.md
               - name: Списки чатов для пользователя
                 href: api/chat-list.md
-          - name: Задачи To-Do
+          - name: Задачи из списка дел
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -10541,8 +10541,11 @@ items:
                       - name: Обновление
                         href: api/authenticationflowspolicy-update.md
               - name: Методы проверки подлинности
-                href: resources/authenticationmethods-overview.md
                 items:
+                  - name: Обзор
+                    href: resources/authenticationmethods-overview.md
+                  - name: Список всех методов
+                    href: api/authentication-list-methods.md
                   - name: Ключи безопасности FIDO2
                     href: resources/fido2authenticationmethod.md
                     items:
@@ -10601,7 +10604,7 @@ items:
                         href: api/phoneauthenticationmethod-update.md
                       - name: Delete
                         href: api/phoneauthenticationmethod-delete.md
-                      - name: Add
+                      - name: Добавление
                         href: api/authentication-post-phonemethods.md
                       - name: Включить SMS вход
                         href: api/phoneauthenticationmethod-enablesmssignin.md
@@ -10618,7 +10621,7 @@ items:
                         href: api/emailauthenticationmethod-update.md
                       - name: Delete
                         href: api/emailauthenticationmethod-delete.md
-                      - name: Add
+                      - name: Добавление
                         href: api/emailauthenticationmethod-post.md
                   - name: Password
                     href: resources/passwordauthenticationmethod.md
@@ -12321,9 +12324,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Параметры
                 items:
-                  - name: Settings
+                  - name: Параметры
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -13104,7 +13107,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -13471,7 +13474,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Отправка уведомления пользователю
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Вкладка
             href: resources/teamstab.md
             items:
               - name: Вкладка в канале

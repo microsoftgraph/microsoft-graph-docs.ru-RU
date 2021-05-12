@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cf36866aa0263896a4f7d8a0a4f59146f2f934cb
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9ab808934491793b796be1c66fc87051ed6e9b29
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761481"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335627"
 ---
 # <a name="authenticationmethod-resource-type"></a>тип ресурса authenticationMethod
 
@@ -18,14 +18,16 @@ ms.locfileid: "50761481"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метод проверки подлинности, зарегистрированный пользователем. Метод [проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) — это то, что используется пользователем для проверки подлинности или иного доказательства его подлинности в системе. Некоторые примеры включают пароль, телефон (можно использовать с помощью SMS или голосового звонка), ключи безопасности FIDO2 и другие.
+Представляет метод проверки подлинности, зарегистрированный пользователем. Метод [проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) — это то, что используется пользователем для проверки подлинности или иного доказательства его подлинности в системе. Некоторые примеры включают пароль, телефон (можно использовать SMS или голосовой вызов), ключи безопасности FIDO2 и другие.
+
+> [!IMPORTANT]
+> Перечисление методов проверки подлинности пользователей возвращает только методы, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Тип возвращаемых данных | Описание |
 |:-------------|:------------|:------------|
 | [Проверка подлинности спискаМетходы](../api/authentication-list-methods.md) | [коллекция authenticationMethod](authenticationmethod.md) | Ознакомьтесь с свойствами и отношениями всех объектов проверки подлинности **пользователяMethod.** |
-| [Получить проверку подлинностиMethod](../api/authenticationmethod-get.md) | [authenticationMethod](authenticationmethod.md) | Ознакомьтесь с свойствами и отношениями объекта **authenticationMethod.** |
 
 ## <a name="properties"></a>Свойства
 
@@ -33,7 +35,7 @@ ms.locfileid: "50761481"
 |:-------------|:------------|:------------|
 |id|String| Идентификатор этого экземпляра метода проверки подлинности, зарегистрированного для этого пользователя. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

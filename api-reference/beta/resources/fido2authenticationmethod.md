@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 11c0598f19fcc5bf6f9862a2d87fa1f08acb8a2c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 87c7f5e0f9ed29e6e1f5aa7c8ec332620bcc8a0a
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945671"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335648"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>тип ресурса fido2AuthenticationMethod
 
@@ -31,10 +31,11 @@ ms.locfileid: "50945671"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор метода проверки подлинности.|
-|displayName|Строка|Отображает имя ключа, заданное пользователем.|
-|creationDateTime|DateTimeOffset|Время регистрации этого ключа пользователю.|
-|aaGuid|Строка|GUID проверки подлинности, идентификатор, который указывает тип (например, make и model) аутентиста.|
+|id|String|Идентификатор метода проверки подлинности.|
+|displayName|String|Отображает имя ключа, заданное пользователем.|
+|createdDateTime|DateTimeOffset|Время регистрации этого ключа пользователю.|
+|creationDateTime (Deprecated)|DateTimeOffset|Время регистрации этого ключа пользователю.|
+|aaGuid|String|Authenticator GuID-идентификатор attestation, который указывает тип (например, make и model) аутентиста.|
 |model|String|Назначенная производителем модель ключа безопасности FIDO2.|
 |attestationCertificates|Коллекция строк|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
 |attestationLevel|attestationLevel|Уровень проверки этого ключа безопасности FIDO2. Возможные значения: `attested`, `notAttested`, `unknownFutureValue`.|
@@ -59,6 +60,7 @@ ms.locfileid: "50945671"
   "id": "String (identifier)",
   "displayName": "String",
   "creationDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
   "model": "String",
   "attestationCertificates": [
