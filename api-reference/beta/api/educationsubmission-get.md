@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bb1fadae90301d25d9f0a299e8a17f07e65d60d4
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 6bd6ddbf839abcde4f5be928f9772e4456773954
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231415"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474808"
 ---
 # <a name="get-educationsubmission"></a>Get educationSubmission
 
@@ -29,7 +29,7 @@ ms.locfileid: "52231415"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
+|Для приложений | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,10 +78,12 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечания:** Объект отклика, показанный здесь, может быть сокращен для чтения. 
+>
+>Свойство **resourcesFolderUrl** будет, если `null` [educationSubmission: setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) еще не был вызван на этот ресурс [educationSubmission.](../resources/educationsubmission.md)
 
 <!-- {
   "blockType": "response",

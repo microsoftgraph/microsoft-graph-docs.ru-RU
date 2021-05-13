@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 45c74509b4530981d0417874f1490c3596d88898
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 35c10aceffbdf6ae3d2687e17a3e661a679013b3
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299574"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474061"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>Get unifiedRoleManagementPolicyAssignment
 Пространство имен: microsoft.graph
@@ -56,6 +56,8 @@ GET /policies/roleManagementPolicyAssignments/{unifiedRoleManagementPolicyAssign
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedrolemanagementpolicyassignment"
@@ -64,6 +66,24 @@ GET /policies/roleManagementPolicyAssignments/{unifiedRoleManagementPolicyAssign
 ``` http
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/d6e4112f-112f-d6e4-2f11-e4d62f11e4d6
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedrolemanagementpolicyassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedrolemanagementpolicyassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementpolicyassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -1,34 +1,34 @@
 ---
 title: 'authenticationMethodsRoot: usersRegisteredByMethod'
-description: Получите количество пользователей, зарегистрированных для каждого метода проверки подлинности.
+description: Получите число пользователей, зарегистрированных для каждого метода проверки подлинности.
 author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 0cf2a93756cca42f33b0bdd7ad9b994fe3b0393f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5cccef1ba35edbb3eb947cee90fb70c05ff19389
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129627"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52473474"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot: usersRegisteredByMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите количество пользователей, зарегистрированных для каждого метода проверки подлинности.
+Получите число пользователей, зарегистрированных для каждого метода проверки подлинности.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Reports.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|AuditLogs.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для доступа к API требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
+Чтобы получить доступ к API, требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
 
 * Читатель отчетов
 * Читатель сведений о безопасности
@@ -54,7 +54,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 |includedUserTypes|includedUserTypes|Тип пользователя. Возможные значения: `all`, `member`, `guest`.|
 |includedUserRoles|includedUserRoles|Тип роли пользователя. Возможные значения: `all`, `privilegedAdmin`, `admin`, `user`.|
 
-Значение состоит `privilegedAdmin` из следующих привилегированных ролей администратора:
+Это значение `privilegedAdmin` состоит из следующих привилегированных ролей администратора:
 
 * Глобальный администратор
 * Администратор безопасности
@@ -78,7 +78,7 @@ GET /reports/authenticationMethods/usersRegisteredByMethod
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает код отклика и `200 OK` [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код ответа и `200 OK` [userRegistrationMethodSummary](../resources/userregistrationmethodsummary.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

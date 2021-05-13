@@ -1,34 +1,34 @@
 ---
 title: 'authenticationMethodsRoot: usersRegisteredByFeature'
-description: Получите количество пользователей, способных выполнять многофакторную проверку подлинности, самостоятельный сброс паролей и проверку подлинности без пароля.
+description: Получите число пользователей, способных выполнять многофакторную проверку подлинности, сброс пароля самообслуживления и проверку подлинности без паролей.
 author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: c6f0976e364e2cf4b24883bef10e7f3c6e49480f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 54c1265ebed3eb8a3fe28f091d045b7bfe221b18
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129672"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474353"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot: usersRegisteredByFeature
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите количество пользователей, способных выполнять многофакторную проверку подлинности, самостоятельный сброс паролей и проверку подлинности без пароля.
+Получите число пользователей, способных выполнять многофакторную проверку подлинности, сброс пароля самообслуживления и проверку подлинности без паролей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуются разрешения ниже. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Reports.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|AuditLogs.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для доступа к API требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
+Чтобы получить доступ к API, требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
 
 * Читатель отчетов
 * Читатель сведений о безопасности
@@ -54,7 +54,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 |includedUserTypes|includedUserTypes|Тип пользователя. Возможные значения: `all`, `member`, `guest`.|
 |includedUserRoles|includedUserRoles|Тип роли пользователя. Возможные значения: `all`, `privilegedAdmin`, `admin`, `user`.|
 
-Значение состоит `privilegedAdmin` из следующих привилегированных ролей администратора:
+Это значение `privilegedAdmin` состоит из следующих привилегированных ролей администратора:
 
 * Глобальный администратор
 * Администратор безопасности
@@ -78,7 +78,7 @@ GET /reports/authenticationMethods/usersRegisteredByFeature
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает код отклика и `200 OK` [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -142,7 +142,7 @@ Content-Type: application/json
             "feature": "ssprCapable",
             "userCount": 4234
         }, {
-            "feature": "passwordlessRegistered",
+            "feature": "passwordlessCapable",
             "userCount": 323
         },
         {

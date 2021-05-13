@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a80fa4beec6996cf390b2a4d96e4a919409ca036
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: b62af36d45947d0a28e57c59d61c95a2ee8da1cc
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299634"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474733"
 ---
 # <a name="rbacapplication-rolescheduleinstances"></a>rbacApplication: roleScheduleInstances
 Пространство имен: microsoft.graph
@@ -44,10 +44,10 @@ GET /roleManagement/directory/roleScheduleInstances
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|directoryScopeId|Строка|Id объекта каталога, который представляет область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
-|appScopeId|Строка|Id конкретной области приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
-|principalId|Строка|Objectid основного, к которому относятся графики. |
-|roleDefinitionId|Строка|ID единогоRoleDefinition для назначения. Только для чтения.|
+|directoryScopeId|String|Id объекта каталога, который представляет область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
+|appScopeId|String|Id конкретной области приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
+|principalId|String|Objectid основного, к которому относятся графики. |
+|roleDefinitionId|String|ID единогоRoleDefinition для назначения. Только для чтения.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -64,6 +64,8 @@ GET /roleManagement/directory/roleScheduleInstances
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "rbacapplication_rolescheduleinstances"
@@ -72,6 +74,24 @@ GET /roleManagement/directory/roleScheduleInstances
 ``` http
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleScheduleInstances(directoryScopeId='parameterValue',appScopeId='parameterValue',principalId='parameterValue',roleDefinitionId='parameterValue')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/rbacapplication-rolescheduleinstances-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/rbacapplication-rolescheduleinstances-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/rbacapplication-rolescheduleinstances-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rbacapplication-rolescheduleinstances-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

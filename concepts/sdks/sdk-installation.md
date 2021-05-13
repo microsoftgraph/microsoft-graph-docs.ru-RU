@@ -3,12 +3,12 @@ title: Установка SDK Graph Microsoft
 description: Содержит инструкции по установке C#, Java, Javascript, Objective-C, PHP и Ruby Microsoft Graph SDKs.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 10ad5dfa5059c7504ce9653523a31c5d0c2d17d5
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 96f2df7f928ba516d4cd0278bc560983cd355893
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080514"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52475530"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Установка SDKs Graph Microsoft
 
@@ -51,6 +51,8 @@ repository {
 dependency {
     // Include the sdk as a dependency
     implementation 'com.microsoft.graph:microsoft-graph:3.+'
+    // Include Azure identity for authentication
+    implementation 'com.azure:azure-identity:1.+'
 }
 ```
 
@@ -63,6 +65,11 @@ dependency {
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
     <version>[3.3,)</version>
+</dependency>
+<dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-identity</artifactId>
+    <version>[1.2,)</version>
 </dependency>
 ```
 

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8e1dceac5e7c901cdeeba7788c6a1541fdc26867
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 1212f1e473d6f8bfe6ac06fbee0b96b12256a377
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469152"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335592"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>тип ресурса fido2AuthenticationMethod
 
@@ -22,8 +22,8 @@ ms.locfileid: "51469152"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Перечисление](../api/fido2authenticationmethod-list.md)|[коллекция fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Извлечение списка объектов fido2AuthenticationMethod пользователя и их свойств.|
-|[Получение](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethod пользователя.|
+|[Список](../api/fido2authenticationmethod-list.md)|[коллекция fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Извлечение списка объектов fido2AuthenticationMethod пользователя и их свойств.|
+|[получение](../api/fido2authenticationmethod-get.md);|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethod пользователя.|
 |[удаление](../api/fido2authenticationmethod-delete.md);|Нет|Удаляет объект fido2AuthenticationMethod пользователя.|
 
 ## <a name="properties"></a>Свойства
@@ -32,9 +32,9 @@ ms.locfileid: "51469152"
 |id|String|Идентификатор метода проверки подлинности.|
 |displayName|String|Отображает имя ключа, заданное пользователем.|
 |createdDateTime|DateTimeOffset|Время регистрации этого ключа пользователю.|
-|aaGuid|String|GUID проверки подлинности, идентификатор, который указывает тип (например, make и model) аутентиста.|
+|aaGuid|String|Authenticator GuID-идентификатор attestation, который указывает тип (например, make и model) аутентиста.|
 |model|String|Назначенная производителем модель ключа безопасности FIDO2.|
-|attestationCertificates|Коллекция String|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
+|attestationCertificates|Коллекция строк|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
 |attestationLevel|attestationLevel|Уровень проверки этого ключа безопасности FIDO2. Возможные значения: `attested` или `notAttested` .|
 
 
@@ -56,7 +56,7 @@ ms.locfileid: "51469152"
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethod",
   "id": "String (identifier)",
   "displayName": "String",
-  "creationDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "aaGuid": "String",
   "model": "String",
   "attestationCertificates": [

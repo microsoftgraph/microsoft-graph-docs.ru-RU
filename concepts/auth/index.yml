@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Обзор auth Microsoft Graph
-summary: Узнайте, как проверить подлинность и работать с разрешениями для безопасного доступа к данным через Microsoft Graph. Изучите документацию ниже, чтобы узнать о регистрации приложений, библиотеках проверки подлинности, авторизации и других частях платформы удостоверений Майкрософт, которые поддерживают разработку Microsoft Graph.
+title: Обзор Graph майкрософт
+summary: Узнайте, как проверить подлинность и работать с разрешениями на безопасный доступ к данным через Microsoft Graph. Ознакомьтесь с документацией, приведенной ниже, чтобы узнать о регистрации приложений, библиотеках проверки подлинности, авторизации и других частях платформа удостоверений Майкрософт разработки Microsoft Graph.
 metadata:
   ms.topic: landing-page
   ms.date: 05/07/2020
@@ -10,12 +10,12 @@ metadata:
   ms.workload: identity
   ms.reviewer: jawoods
   ms.custom: graphiamtop20
-  ms.openlocfilehash: 154ba4be69f0e07a5d6dec46a146a7a6a66b2c5c
-  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+  ms.openlocfilehash: e9768f21e145f55bc74f6731f2c4c9cc83ebfd07
+  ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "50240369"
+  ms.lasthandoff: 05/13/2021
+  ms.locfileid: "52474752"
 landingContent:
 - title: Начало работы
   linkLists:
@@ -25,11 +25,13 @@ landingContent:
       url: ./auth-concepts.md
     - text: Регистрация приложения
       url: ../auth-register-app-v2.md
+    - text: Выбор поставщика проверки подлинности
+      url: ../sdks/choose-authentication-providers.md
   - linkListType: video
     links:
-    - text: Microsoft Graph и регистрация приложений (7:29)
+    - text: Регистрация Graph и приложений (7:29)
       url: https://www.youtube.com/watch?v=93j0MmRruFo
-- title: Усовершенствовать приложение
+- title: Повышение эффективности приложения
   linkLists:
   - linkListType: how-to-guide
     links:

@@ -1,16 +1,16 @@
 ---
-title: Выберите поставщика проверки подлинности Microsoft Graph
+title: Выберите поставщика проверки подлинности Graph Майкрософт
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 726fbf1334a99ab6a854bd4627052d154187105c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0cdc407187ea0b5befc3704f877b1df11aeda545
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921128"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52475537"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выберите поставщика проверки подлинности Microsoft Graph в зависимости от сценария
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выберите поставщика проверки подлинности Graph Майкрософт в зависимости от сценария
 
 Поставщики проверки подлинности реализуют код, необходимый для приобретения маркера с помощью Библиотеки проверки подлинности Майкрософт (MSAL); обработка ряда потенциальных ошибок для таких случаев, как постепенное согласие, просроченные пароли и условный доступ; а затем установите заглавную головку авторизации http-запроса. В следующей таблице перечислены поставщики, которые соответствуют сценариям для различных [типов приложений.](/azure/active-directory/develop/v2-app-types)
 
@@ -26,7 +26,7 @@ ms.locfileid: "51921128"
 | | Учетные данные клиента  | Только приложение | [Поставщик учетных данных клиента](#ClientCredentialsProvider) |
 | [Настольное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
 | | Интерактивны | Делегированная потребительская/org | [Интерактивный поставщик](#InteractiveProvider) |
-| | Интегрированная Windows | Делегированная org | [Интегрированный поставщик Windows](#IntegratedWindowsProvider) |
+| | Интегрированные Windows | Делегированная org | [Интегрированный Windows поставщик](#IntegratedWindowsProvider) |
 | | Владелец ресурса  | Делегированная org | [Имя пользователя / Поставщик паролей](#UsernamePasswordProvider) |
 | | Код устройства  | Делегированная org | [Поставщик кода устройства](#DeviceCodeProvider) |
 | [Приложение Daemon](/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
@@ -38,7 +38,7 @@ ms.locfileid: "51921128"
 
 ## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>Поставщик кода авторизации
 
-Поток кода авторизации позволяет родным и веб-приложениям безопасно получать маркеры от имени пользователя. Дополнительные данные см. в записи платформы удостоверений Майкрософт и потока кода авторизации [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+Поток кода авторизации позволяет родным и веб-приложениям безопасно получать маркеры от имени пользователя. Дополнительные дополнительные платформа удостоверений Майкрософт и поток кода авторизации [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -87,17 +87,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, поддержите или откройте [запрос на функцию Microsoft Graph,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Пока недоступна. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Пока недоступна. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 ---
 
 ##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"></a>Поставщик учетных данных клиента
 
-Поток клиентских учетных данных позволяет приложениям-службам работать без взаимодействия с пользователем. Доступ основан на удостоверении приложения. Дополнительные сведения см. в веб-сайте Платформы удостоверений Майкрософт и потока учетных данных клиента [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
+Поток клиентских учетных данных позволяет приложениям-службам работать без взаимодействия с пользователем. Доступ основан на удостоверении приложения. Дополнительные сведения см. платформа удостоверений Майкрософт и поток учетных данных [клиентов OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -145,17 +145,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Пока недоступна. Пожалуйста, поддержите или откройте [запрос на функцию Microsoft Graph,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Пока недоступна. Пожалуйста, поддержите или откройте [запрос на функцию Microsoft Graph,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 ---
 
 ##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"></a>От имени поставщика
 
-Поток от имени применим, когда приложение вызывает API службы/веб-службы, который по очереди вызывает API Microsoft Graph. Узнайте больше, прочитав платформу удостоверений Майкрософт и [поток OAuth 2.0 On-Behalf-Of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+Поток от имени применим, когда ваше приложение вызывает API службы и веб-службы, который по очереди вызывает API microsoft Graph. Дополнительные дополнительные [платформа удостоверений Майкрософт и поток OAuth 2.0 On-Behalf-Of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -175,7 +175,7 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="java"></a>[Java](#tab/Java)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -187,17 +187,17 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 ---
 
 ## <a name="implicit-provider"></a><a name="ImplicitProvider"></a>Неявный поставщик
 
-Неявный поток грантов используется в браузерных приложениях. Дополнительные сведения см. в [записи платформы удостоверений Майкрософт и потока неявных грантов.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
+Неявный поток грантов используется в браузерных приложениях. Дополнительные сведения см. [в платформа удостоверений Майкрософт и неявном потоке грантов.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -249,7 +249,7 @@ const client = Client.initWithMiddleware(options);
 
 ##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"></a>Поставщик кода устройств
 
-Поток кода устройства позволяет войти на устройства с помощью другого устройства. Подробные сведения см. в материале Платформа удостоверений Майкрософт и поток кода [кода устройств OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-device-code)
+Поток кода устройства позволяет войти на устройства с помощью другого устройства. Подробные сведения [см. платформа удостоверений Майкрософт и поток кода устройства OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-device-code)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -265,7 +265,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -298,17 +298,17 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 ---
 
-##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>Интегрированный поставщик Windows
+##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>Интегрированный Windows поставщик
 
-Интегрированный поток Windows позволяет компьютерам Windows безмолвно приобретать маркер доступа при присоединении к домену. Подробные сведения см. [в материале Интегрированная проверка подлинности Windows.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)
+Интегрированный поток Windows обеспечивает возможность Windows компьютеров для бесшумного приобретения маркера доступа при присоединении к домену. Подробные сведения см. в [Windows комплексной проверки подлинности.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -349,7 +349,7 @@ IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuth
 
 ##  <a name="interactive-provider"></a><a name="InteractiveProvider"></a>Интерактивный поставщик
 
-Интерактивный поток используется мобильными приложениями (Xamarin и UWP) и настольными приложениями для вызова Microsoft Graph от имени пользователя. Подробные сведения см. [в материале Эквайринг маркеров в интерактивном режиме.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)
+Интерактивный поток используется мобильными приложениями (Xamarin и UWP) и настольными приложениями для вызова microsoft Graph от имени пользователя. Подробные сведения см. [в материале Эквайринг маркеров в интерактивном режиме.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -363,7 +363,7 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -426,7 +426,7 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"></a>Поставщик имен пользователей и паролей
 
-Поставщик имен пользователей и паролей позволяет приложению войти в пользователя с помощью имени пользователя и пароля. Используйте этот поток только в том случае, если вы не можете использовать другие потоки OAuth. Дополнительные сведения см. в веб-сайте Платформы удостоверений Майкрософт и учетных данных владельца паролей владельца ресурсов [OAuth 2.0.](/azure/active-directory/develop/v2-oauth-ropc)
+Поставщик имен пользователей и паролей позволяет приложению войти в пользователя с помощью имени пользователя и пароля. Используйте этот поток только в том случае, если вы не можете использовать другие потоки OAuth. Дополнительные сведения см. в платформа удостоверений Майкрософт и учетных данных владельца пароля ресурса [OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
@@ -449,7 +449,7 @@ User me = await graphClient.Me.Request()
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -481,15 +481,16 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Если это важно, проголосуйте за или откройте запрос на функцию [Microsoft Graph.](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
 
 ---
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
+* Примеры кода, которые показывают, как использовать платформа удостоверений Майкрософт для защиты различных типов приложений, см. в платформа удостоверений Майкрософт примерах кода [(конечная точка v2.0).](/azure/active-directory/develop/sample-v2-code)
 * Поставщикам проверки подлинности требуется идентификация клиента. Вы захотите [зарегистрировать свое приложение после](https://portal.azure.com/) того, как настроите поставщика проверки подлинности.
-* Дайте нам знать, если необходимый поток OAuth в настоящее время не поддерживается путем голосования или открытия запроса [функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+* Дайте нам знать, если необходимый поток OAuth в настоящее время не поддерживается путем голосования или открытия запроса функций [Microsoft Graph.](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)

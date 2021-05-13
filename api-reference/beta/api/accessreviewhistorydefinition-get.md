@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d5a512124bdd6496e2c86f03a39a5a2bd706b7e6
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 59a59aea65cdb26f1880c0b9876bfcdf54f30190
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232956"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52474206"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>Получить accessReviewHistoryDefinition
 
@@ -28,7 +28,7 @@ ms.locfileid: "52232956"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 Для получения определения пользователь, заверяемый в записи, также должен быть создателем связанного определения истории отзывов, членом роли глобального каталога администратора или участником роли глобального каталога чтения.
 
@@ -57,6 +57,8 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewhistorydefinition"
@@ -65,6 +67,24 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewhistorydefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreviewhistorydefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreviewhistorydefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewhistorydefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
