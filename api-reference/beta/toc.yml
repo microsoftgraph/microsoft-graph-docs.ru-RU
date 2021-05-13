@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -9750,6 +9750,8 @@ items:
                 href: api/educationsubmissionresource-delete.md
               - name: Получение сданной работы
                 href: api/educationsubmission-get.md
+              - name: Настройка папки ресурсов отправки
+                href: api/educationsubmission-setupresourcesfolder.md
               - name: Отправка работы
                 href: api/educationsubmission-submit.md
               - name: Отмена отправки работы
@@ -11876,7 +11878,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор
@@ -12136,7 +12138,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -12942,7 +12944,7 @@ items:
                 href: api/list-create.md
               - name: Список дочерних сайтов
                 href: api/site-list-subsites.md
-              - name: Разрешения
+              - name: Разрешения.
                 items:
                   - name: Разрешение
                     href: resources/permission.md
@@ -13405,7 +13407,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение
+          - name: Приложение.
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md

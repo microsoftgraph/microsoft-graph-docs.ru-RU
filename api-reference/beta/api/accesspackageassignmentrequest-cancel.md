@@ -5,30 +5,30 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5079de33f7ef3c7536baf50a876a84d5ca3711b4
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: d32f7e21bf8bf618b762f2a39b9fdd92eac102d0
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299562"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52473984"
 ---
-# <a name="accesspackageassignmentrequest-cancel"></a><span data-ttu-id="2d06d-103">accessPackageAssignmentRequest: отмена</span><span class="sxs-lookup"><span data-stu-id="2d06d-103">accessPackageAssignmentRequest: cancel</span></span>
-<span data-ttu-id="2d06d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d06d-104">Namespace: microsoft.graph</span></span>
+# <a name="accesspackageassignmentrequest-cancel"></a><span data-ttu-id="dc58b-103">accessPackageAssignmentRequest: отмена</span><span class="sxs-lookup"><span data-stu-id="dc58b-103">accessPackageAssignmentRequest: cancel</span></span>
+<span data-ttu-id="dc58b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dc58b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2d06d-105">В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)отменяйте [объекты accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) которые находятся в отменяемом состоянии: `accepted` , , , `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .</span><span class="sxs-lookup"><span data-stu-id="2d06d-105">In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.</span></span>
+<span data-ttu-id="dc58b-105">В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)отменяйте [объекты accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) которые находятся в отменяемом состоянии: `accepted` , , , `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .</span><span class="sxs-lookup"><span data-stu-id="dc58b-105">In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2d06d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2d06d-106">Permissions</span></span>
-<span data-ttu-id="2d06d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d06d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc58b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dc58b-106">Permissions</span></span>
+<span data-ttu-id="dc58b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dc58b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2d06d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2d06d-109">Permission type</span></span>|<span data-ttu-id="2d06d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2d06d-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="dc58b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dc58b-109">Permission type</span></span>|<span data-ttu-id="dc58b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dc58b-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2d06d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2d06d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="2d06d-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d06d-112">EntitlementManagement.ReadWrite.All</span></span> |
-|<span data-ttu-id="2d06d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2d06d-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2d06d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d06d-114">Not supported.</span></span>|
-|<span data-ttu-id="2d06d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2d06d-115">Application</span></span>|<span data-ttu-id="2d06d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d06d-116">Not supported.</span></span>|
+|<span data-ttu-id="dc58b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dc58b-111">Delegated (work or school account)</span></span>|<span data-ttu-id="dc58b-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc58b-112">EntitlementManagement.ReadWrite.All</span></span> |
+|<span data-ttu-id="dc58b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dc58b-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dc58b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dc58b-114">Not supported.</span></span>|
+|<span data-ttu-id="dc58b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dc58b-115">Application</span></span>|<span data-ttu-id="dc58b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dc58b-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2d06d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2d06d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc58b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dc58b-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,23 +38,25 @@ ms.locfileid: "52299562"
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{id}/cancel
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2d06d-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2d06d-118">Request headers</span></span>
-|<span data-ttu-id="2d06d-119">Имя</span><span class="sxs-lookup"><span data-stu-id="2d06d-119">Name</span></span>|<span data-ttu-id="2d06d-120">Описание</span><span class="sxs-lookup"><span data-stu-id="2d06d-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dc58b-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dc58b-118">Request headers</span></span>
+|<span data-ttu-id="dc58b-119">Имя</span><span class="sxs-lookup"><span data-stu-id="dc58b-119">Name</span></span>|<span data-ttu-id="dc58b-120">Описание</span><span class="sxs-lookup"><span data-stu-id="dc58b-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="2d06d-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2d06d-121">Authorization</span></span>|<span data-ttu-id="2d06d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2d06d-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="dc58b-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="dc58b-121">Authorization</span></span>|<span data-ttu-id="dc58b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dc58b-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2d06d-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2d06d-124">Request body</span></span>
-<span data-ttu-id="2d06d-125">В теле запроса поставляем представление JSON объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="2d06d-125">In the request body, supply a JSON representation of an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc58b-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="dc58b-124">Request body</span></span>
+<span data-ttu-id="dc58b-125">В теле запроса поставляем представление JSON объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)</span><span class="sxs-lookup"><span data-stu-id="dc58b-125">In the request body, supply a JSON representation of an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.</span></span>
 
-<span data-ttu-id="2d06d-126">Чтобы пользователь, не управляющий, отменил свой собственный запрос, запрос должен содержать **id** [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) и **запросStatus** со значением `cancelled` .</span><span class="sxs-lookup"><span data-stu-id="2d06d-126">For a non-administrator user to cancel their own request, the request must contain the **id** of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) and a **requestStatus** with a value of `cancelled`.</span></span>
+<span data-ttu-id="dc58b-126">Чтобы пользователь, не управляющий, отменил свой собственный запрос, запрос должен содержать **id** [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) и **запросStatus** со значением `cancelled` .</span><span class="sxs-lookup"><span data-stu-id="dc58b-126">For a non-administrator user to cancel their own request, the request must contain the **id** of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) and a **requestStatus** with a value of `cancelled`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2d06d-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="2d06d-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dc58b-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc58b-127">Response</span></span>
 
-<span data-ttu-id="2d06d-128">При успешном выполнении этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="2d06d-128">If successful, this method returns a `200 OK` response code.</span></span>  <span data-ttu-id="2d06d-129">Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2d06d-129">It does not return anything in the response body.</span></span>
+<span data-ttu-id="dc58b-128">При успешном выполнении этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="dc58b-128">If successful, this method returns a `200 OK` response code.</span></span>  <span data-ttu-id="dc58b-129">Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="dc58b-129">It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2d06d-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="2d06d-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="dc58b-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="dc58b-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="2d06d-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="2d06d-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dc58b-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc58b-131">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="dc58b-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="dc58b-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "accesspackageassignmentrequest_cancel"
@@ -68,10 +70,20 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
   "requestStatus":"cancelled"
 }
 ```
+# <a name="javascript"></a>[<span data-ttu-id="dc58b-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dc58b-133">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/accesspackageassignmentrequest-cancel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="dc58b-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dc58b-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/accesspackageassignmentrequest-cancel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="2d06d-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="2d06d-132">Response</span></span>
-<span data-ttu-id="2d06d-133">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="2d06d-133">The following is an example of the response.</span></span>
+
+### <a name="response"></a><span data-ttu-id="dc58b-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc58b-135">Response</span></span>
+<span data-ttu-id="dc58b-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="dc58b-136">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
