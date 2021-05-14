@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2a684d593458b2f40a6b45f7c326f45f37e1cc4a
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
+ms.openlocfilehash: cceab6a803b403560c6a72831584c99202d65618
+ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819669"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52231992"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -40,7 +40,7 @@ ms.locfileid: "48819669"
 
 ### <a name="state-tokens"></a>Маркеры состояния
 
-Ответ GET на запрос изменений всегда включает URL-адрес, указанный в заголовке `nextLink` или `deltaLink`. URL-адрес `nextLink` включает маркер _skipToken_ , а URL-адрес `deltaLink` — _deltaToken_ .
+Ответ GET на запрос изменений всегда включает URL-адрес, указанный в заголовке `nextLink` или `deltaLink`. URL-адрес `nextLink` включает маркер _skipToken_, а URL-адрес `deltaLink` — _deltaToken_.
 
 Эти маркеры непрозрачны для клиента. Вот что вам нужно знать о них:
 
@@ -48,7 +48,7 @@ ms.locfileid: "48819669"
 
 - Маркеры состояния также кодируют и включают другие параметры запроса (такие как `$select`), указанные в исходном запросе изменений. Таким образом, не обязательно повторять их в последующих запросах изменений.
 
-- Совершая запрос изменений, вы можете скопировать и применить URL-адрес `nextLink` или `deltaLink` при следующем вызове функции **delta** , не проверяя содержимое URL-адреса, в том числе маркер состояния.
+- Совершая запрос изменений, вы можете скопировать и применить URL-адрес `nextLink` или `deltaLink` при следующем вызове функции **delta**, не проверяя содержимое URL-адреса, в том числе маркер состояния.
 
 ### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -91,9 +91,9 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - Связи между пользователями и группами представлены в виде заметок к стандартному представлению ресурса. Эти заметки представлены в формате `propertyName@delta`. Они включаются в отклик на исходный разностный запрос.
 
-Удаленные экземпляры представлены только свойством **id** и объектом `@removed`. Объект `@removed` может содержать дополнительные сведения о том, почему удален экземпляр. Например, "@removed": {"reason": "changed"}.
+Удаленные экземпляры представлены только **id** и объектом `@removed`. Объект `@removed` может содержать дополнительные сведения о том, почему удален экземпляр. Например, "@removed": {"reason": "changed"}.
 
-Возможные причины @removed: *changed* или *deleted* .
+Возможные причины @removed: *changed* или *deleted*.
 
 - *changed* указывает, что элемент удален и может быть восстановлен из [deletedItems](/graph/api/resources/directory).
 
@@ -107,33 +107,33 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 Разностные запросы поддерживаются для указанных ниже ресурсов. Обратите внимание, что у некоторых ресурсов, доступных в версии 1.0, соответствующие функции **delta** по-прежнему находятся в предварительном состоянии (как указано).
 
-| **Коллекция ресурсов**                                        | **API**                                                                                                                                                                                          |
-|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Приложения                                                   | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application)                                                                                   |
-| Административные единицы (предварительная версия)                         | Функция [delta](/graph/api/administrativeunit-delta) (предварительная версия) ресурса [administrativeUnit](/graph/api/resources/administrativeunit)                                                    |
-| Сообщения чата в канале                            | Функция [delta](/graph/api/chatmessage-delta) (предварительная версия) ресурса [chatMessage](/graph/api/resources/chatmessage)                                                                                            |
-| Классы                                               | Функция [delta](/graph/api/educationclass-delta) (предварительная версия) ресурса [educationClass](/graph/api/resources/educationclass)                                                                 |
-| Объекты каталога                                     | Функция [delta](/graph/api/directoryobject-delta) (предварительная версия) ресурса [directoryObject](/graph/api/resources/directoryobject)                                                              |
-| Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0)                                     |
-| Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)                                                 |
-| Пользователи образовательных учреждений                                       | Функция [delta](/graph/api/educationuser-delta) (предварительная версия) ресурса [educationUser](/graph/api/resources/educationuser)                                                                    |
-| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0)                                                             |
-| Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                                                             |
-| Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                              |
-| Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                                                       |
-| Контакты организации                                        | функция[delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) ресурса [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0)                                              |
-| OAuth2PermissionGrants                               | Функция [delta](/graph/api/oauth2permissiongrant-delta) ресурса [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) |
-| Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                                     |
-| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)                                                       |
-| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta) (предварительная версия) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser)                                                      |
-| Учебные заведения                                               | Функция [delta](/graph/api/educationschool-delta) (предварительная версия) ресурса [educationSchool](/graph/api/resources/educationschool)                                                              |
-| Субъекты-службы                                   | Функция [delta](/graph/api/serviceprincipal-delta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal)                                                          |
-| Задачи в списке задач                                           | Функция [delta](/graph/api/todotask-delta) ресурса [todoTask](/graph/api/resources/todotask)                                                         |
-| Списки задач                                                     | Функция [delta](/graph/api/todotasklist-delta) ресурса [todoTaskList](/graph/api/resources/todotasklist)                                                         |
-| Пользователи                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0)                                                                |
+| **Коллекция ресурсов**                                        | **API**                                                                                                                                                      |
+| :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Приложения                                                   | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application)                                               |
+| Административные единицы (предварительная версия)                                 | Функция [delta](/graph/api/administrativeunit-delta) (предварительная версия) ресурса [administrativeUnit](/graph/api/resources/administrativeunit)                |
+| Сообщения чата в канале                                     | Функция [delta](/graph/api/chatmessage-delta) (предварительная версия) ресурса [chatMessage](/graph/api/resources/chatmessage)                                              |
+| Объекты каталога                                              | Функция [delta](/graph/api/directoryobject-delta) (предварительная версия) ресурса [directoryObject](/graph/api/resources/directoryobject)                         |
+| Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0) |
+| Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)             |
+| Классы образовательных учреждений                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass)                                      |
+| Пользователи образовательных учреждений                                                | Функция [delta](/graph/api/educationuser-delta) ресурса [educationUser](/graph/api/resources/educationuser)                                         |
+| Учебные заведения                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool)                                   |
+| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0)                         |
+| Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                         |
+| Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)          |
+| Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                   |
+| Контакты организации                                        | функция[delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) ресурса [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0)          |
+| OAuth2PermissionGrants                                         | Функция [delta](/graph/api/oauth2permissiongrant-delta) ресурса [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant)                 |
+| Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) |
+| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)                   |
+| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta) (предварительная версия) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser)                 |
+| Субъекты-службы                                             | Функция [delta](/graph/api/serviceprincipal-delta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal)                                |
+| Задачи в списке задач                                           | Функция [delta](/graph/api/todotask-delta) ресурса [todoTask](/graph/api/resources/todotask)                                                        |
+| Списки задач                                                     | Функция [delta](/graph/api/todotasklist-delta) ресурса [todoTaskList](/graph/api/resources/todotasklist)                                            |
+| Пользователи                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0)                            |
 
 
-> \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
+> \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для дисков будет обновлен в соответствии с запросами для других типов ресурсов. Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений на диске](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
 > \*\* Шаблон использования ресурсов Planner незначительно отличается от шаблонов использования других поддерживаемых ресурсов.  Дополнительные сведения см. в [этой статье](/graph/api/planneruser-list-delta).
 
@@ -141,7 +141,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 ### <a name="properties-stored-outside-of-the-main-data-store"></a>Свойства, хранящиеся вне основного хранилища данных
 
-Некоторые ресурсы содержат свойства, которые хранятся вне основного хранилища данных для ресурса (например, ресурс user в основном хранится в системе Azure AD, в то время как некоторые свойства, такие как **skills** , хранятся в SharePoint Online). В настоящее время эти свойства не поддерживаются как часть отслеживания изменений; изменение одного из этих свойств не приведет к отображению объекта в отклике на разностный запрос. В настоящее время только свойства, хранящиеся в главном хранилище данных, активируют изменения в разностном запросе.
+Некоторые ресурсы содержат свойства, которые хранятся вне основного хранилища данных для ресурса (например, ресурс user в основном хранится в системе Azure AD, в то время как некоторые свойства, такие как **skills**, хранятся в SharePoint Online). В настоящее время эти свойства не поддерживаются как часть отслеживания изменений; изменение одного из этих свойств не приведет к отображению объекта в отклике на разностный запрос. В настоящее время только свойства, хранящиеся в главном хранилище данных, активируют изменения в разностном запросе.
 
 Чтобы проверить, можно ли использовать свойство в разностном запросе, попробуйте выполнить обычную операцию `GET` в коллекции ресурсов и выберите интересующее вас свойство. Например, вы можете попробовать использовать свойство **skills** в коллекции пользователей.
 
@@ -174,11 +174,11 @@ Content-type: application/json
 }
 ```
 
-Это говорит о том, что свойство **skills** не поддерживается для разностного запроса в ресурсе **user** .
+Это говорит о том, что свойство **skills** не поддерживается для разностного запроса в ресурсе **user**.
 
 ### <a name="navigation-properties"></a>Свойства навигации
 
-Свойства навигации не поддерживаются. Например, вы не можете отслеживать изменения в коллекции пользователей, включающие изменения их свойства **photo** ; **photo** — это свойство навигации, которое хранится вне сущности пользователя, и внесенные в него изменения не приводят к включению объекта "пользователь" в отклик с различиями.
+Свойства навигации не поддерживаются. Например, вы не можете отслеживать изменения в коллекции пользователей, включающие изменения их свойства **photo**; **photo** — это свойство навигации, которое хранится вне сущности пользователя, и внесенные в него изменения не приводят к включению объекта "пользователь" в отклик с различиями.
 
 ### <a name="processing-delays"></a>Задержка обработки
 
@@ -194,11 +194,11 @@ Content-type: application/json
 
 ### <a name="synchronization-reset"></a>Сброс синхронизации
 
-Разностный запрос может возвращать код отклика `410 (gone)` и заголовок **Location** , содержащий URL-адрес запроса с пустым разностным маркером (аналогично исходному запросу). Это означает, что приложение требуется перезапустить с полной синхронизацией целевого клиента. Обычно это происходит, чтобы предотвратить несоответствие данных из-за внутреннего обслуживания или миграции целевого клиента.
+Разностный запрос может возвращать код отклика `410 (gone)` и заголовок **Location**, содержащий URL-адрес запроса с пустым разностным маркером (аналогично исходному запросу). Это означает, что приложение требуется перезапустить с полной синхронизацией целевого клиента. Обычно это происходит, чтобы предотвратить несоответствие данных из-за внутреннего обслуживания или миграции целевого клиента.
 
 ### <a name="token-duration"></a>Длительность маркера
 
-Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию. Для объектов каталога ( **application** , **administrativeUnit** , **directoryObject** , **directoryRole** , **group** , **orgContact** , **oauth2permissiongrant** , **servicePrincipal** и **user** ) ограничение составляет 7 дней. Для образовательных объектов ( **educationSchool** , **educationUser** и **educationClass** ) ограничение составляет 7 дней. Для объектов Outlook ( **message** , **mailFolder** , **event** , **contact** , **contactFolder** , **todoTask** и **todoTaskList** ) верхнее ограничение не фиксировано; оно зависит от размера внутреннего кэша разностного маркера. Хотя новые разностные маркеры непрерывно добавляются в кэш, после превышения емкости кэша старые разностные маркеры удаляются.
+Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию. Для объектов каталога (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal** и **user**) ограничение составляет 7 дней. Для образовательных объектов (**educationSchool**, **educationUser** и **educationClass**) ограничение составляет 7 дней. Для объектов Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask** и **todoTaskList**) верхнее ограничение не фиксировано; оно зависит от размера внутреннего кэша разностного маркера. Хотя новые разностные маркеры непрерывно добавляются в кэш, после превышения емкости кэша старые разностные маркеры удаляются.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

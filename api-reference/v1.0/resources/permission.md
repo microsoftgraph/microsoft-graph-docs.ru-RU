@@ -6,12 +6,12 @@ localization_priority: Priority
 description: Ресурс Permission содержит сведения о разрешении на совместный доступ, предоставленном для ресурса DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6bbd22afe1aad3b823c892438447a42548c68318
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 5c14371966d4620450c7d791a3ed90a38b12c61b
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239522"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335608"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса Permission
 
@@ -87,7 +87,7 @@ ms.locfileid: "50239522"
 |:------------------|:-------------------------------------------------------------------------------|
 | read            | Дает возможность считывать метаданные и содержимое элемента.            |
 | write           | Дает возможность считывать и изменять метаданные и содержимое элемента. |
-| sp.full control | В случае с SharePoint и OneDrive для бизнеса представляет роль владельца.       |
+| owner           | В случае с SharePoint и OneDrive для бизнеса представляет роль владельца.       |
 
 ## <a name="sharing-links"></a>Предоставление ссылок
 Наиболее распространенный тип разрешений — ссылки для общего доступа. Ссылки для общего доступа предоставляют уникальный URL-адрес, включающий ресурс, к которому предоставляется доступ, и маркер аутентификации, предоставляющий доступ к ресурсу. Пользователям не требуется выполнять вход для доступа к содержимому, предоставленному с помощью ссылки для общего доступа. Пользователи могут поделиться ссылкой, предоставляющей доступ к содержимому только для чтения или для чтения и записи.
@@ -106,7 +106,7 @@ ms.locfileid: "50239522"
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -124,7 +124,7 @@ ms.locfileid: "50239522"
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 ### <a name="specific-people-link"></a>Ссылка для определенных пользователей
@@ -140,13 +140,13 @@ ms.locfileid: "50239522"
     {
        "user": {
         "id": "35fij1974gb8832",
-        "displayName": "Misty Suarez"
+        "displayName&quot;: &quot;Misty Suarez"
       }
     },
     {
        "user": {
         "id": "9397721fh4hgh73",
-        "displayName": "Judith Clemons"
+        "displayName&quot;: &quot;Judith Clemons"
       }
     }
   ],
@@ -156,7 +156,7 @@ ms.locfileid: "50239522"
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl",
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
@@ -175,7 +175,7 @@ ms.locfileid: "50239522"
     "type": "view",
     "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
   },
-  "expirationDateTime": "0001-01-01T00:00:00Z"
+  "expirationDateTime&quot;: &quot;0001-01-01T00:00:00Z"
 }
 ```
 
