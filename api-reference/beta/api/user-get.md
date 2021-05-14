@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a71a50714d18d4d4d8e91a4f5a7e0c0b31fe9e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 95d0839341f158821eeb51f9aea252155462241d
+ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052637"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52335669"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -32,6 +32,8 @@ ms.locfileid: "52052637"
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 Для вызова конечной точки `/me` требуется вход пользователя и, следовательно, делегированное разрешение. Разрешения приложений не поддерживаются при использовании конечной точки `/me`.
+
+## <a name="http-request"></a>HTTP-запрос
 
 Для определенного пользователя:
 <!-- { "blockType": "ignored" } -->
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",
