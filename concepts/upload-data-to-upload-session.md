@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c51d027a0e76f24f6ec4788ae1429adcc29f2948
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: bd34071caf8d428847693be86eb7082e7f80e99c
+ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766317"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52473264"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Отправка документов с помощью API универсальной печати Microsoft Graph
 
@@ -48,7 +48,7 @@ Content-Length: 72797
 ```
 
 Здесь 0 и 72796 — это индексы начала и окончания сегмента файла, а 4533322 — размер документа.
-### <a name="http-response"></a>HTTP-ответ
+## <a name="http-response"></a>HTTP-ответ
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 
@@ -83,15 +83,16 @@ Content-Type: application/json
 
 ### <a name="remarks"></a>Примечания
 
-* При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#get-the-upload-session), чтобы получить более подробный список недостающих диапазонов.
-* В ответ на добавление заголовка авторизации при совершении вызова `PUT` может появиться сообщение об ошибке `HTTP 401 Unauthorized`. Заголовок авторизации и маркер носителя необходимо отправлять только при создании сеанса отправки. Их не следует включать при отправке данных для сеанса отправки.
+* При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. 
+  Вы можете [запросить состояние отправки](#get-the-upload-session), чтобы получить более подробный список недостающих диапазонов.
+* Включение заголовка `Authorizatio`n при вызове `PUT` может привести к ответу `HTTP 401 Unauthorized`. Заголовок авторизации и маркер носителя необходимо отправлять только при создании сеанса отправки. Их не следует включать при отправке данных для сеанса отправки.
 
 ## <a name="completing-a-file"></a>Завершение отправки файла
 
 После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created`. Текст ответа также будет включать набор свойств для связанного **printDocument**.
 
+### <a name="request"></a>Запрос
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
-
 ```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 Content-Length: 10
@@ -100,6 +101,7 @@ Content-Range: bytes 4533312-4533321/4533322
 <final bytes of the file>
 ```
 
+### <a name="response"></a>Отклик
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.printDocument", "truncated": true } -->
 
 ```http
@@ -142,6 +144,75 @@ Content-Type: application/json
   ]
 }
 ```
+## <a name="code-examples-create-upload-session-and-upload-documents"></a>Примеры кода: создание сеанса отправки и отправка документов
+ 
+# <a name="c"></a>[C#](#tab/csharp)
+
+```csharp
+
+            GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+            var properties = new PrintDocumentUploadProperties
+            {
+                DocumentName = "TestFile.pdf",
+                ContentType = "application/pdf",
+                Size = 4533322
+            };
+
+            var uploadSession = await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"].Documents["{printDocument-id}"]
+                .CreateUploadSession(properties)
+                .Request()
+                .PostAsync()
+
+            // if using Graph SDK, maxSliceSize should in multiples of 320 KiB
+            int maxSliceSize = 320 * 1024;
+            var fileUploadTask =
+                new LargeFileUploadTask<PrintDocument>(uploadSession, fileStream, maxSliceSize);
+
+            // Create a callback that is invoked after each slice is uploaded
+            IProgress<long> progress = new Progress<long>(prog =>
+            {
+                Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
+            });
+
+            // Upload the file
+
+            var uploadResult = await fileUploadTask.UploadAsync(progress);
+```
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+
+```javascript
+
+    const options = {
+      authProvider,
+    };
+    const client = Client.init(options);
+   
+   const fileName = "test.txt";
+    const file = fs.readFileSync(`./${fileName}`);
+    const stats = fs.statSync(`./${fileName}`);
+    const requestUrl ="https://graph.microsoft.com/v1.0/print/shares/{id}/jobs/{id}/documents/{id}/createuploadsession"
+    const payload = {
+        "properties": {
+            "documentName": fileName,
+            "contentType": "application/pdf",
+            "size": stats.size
+        }
+    }
+    const uploadSession = await LargeFileUploadTask.createUploadSession(client, requestUrl, payload);
+
+    const fileObject = {
+        content: file,
+        name: fileName,
+        size: stats.size
+    };
+
+    const task = new LargeFileUploadTask(client, fileObject, uploadSession);
+
+    const uploadResponse = await task.upload();
+```
+---
 
 ## <a name="cancel-the-upload-session"></a>Отмена сеанса отправки
 
