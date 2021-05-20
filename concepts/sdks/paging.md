@@ -1,6 +1,6 @@
 ---
-title: Страница через коллекцию с использованием Microsoft Graph SDKs
-description: Предоставляет инструкции по созданию Graph API с использованием microsoft Graph SDKs.
+title: Страница через коллекцию с помощью SDKs Graph Microsoft
+description: Содержит инструкции по созданию запросов Graph API Майкрософт с помощью SDKs Graph Microsoft.
 localization_priority: Normal
 author: DarrelMiller
 ms.openlocfilehash: d06a23e5c1e53042192fe3fe8b4c8e3fe13c488d
@@ -10,22 +10,22 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/20/2021
 ms.locfileid: "52579664"
 ---
-# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a><span data-ttu-id="fb8a3-103">Страница через коллекцию с использованием Microsoft Graph SDKs</span><span class="sxs-lookup"><span data-stu-id="fb8a3-103">Page through a collection using the Microsoft Graph SDKs</span></span>
+# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a><span data-ttu-id="61829-103">Страница через коллекцию с помощью SDKs Graph Microsoft</span><span class="sxs-lookup"><span data-stu-id="61829-103">Page through a collection using the Microsoft Graph SDKs</span></span>
 
-<span data-ttu-id="fb8a3-104">По причинам производительности коллекции сущностей часто делятся на страницы, и каждая страница возвращается с URL на следующую страницу.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-104">For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page.</span></span> <span data-ttu-id="fb8a3-105">Класс **PageIterator** упрощает потребление сборов страниц.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-105">The **PageIterator** class simplifies consuming of paged collections.</span></span> <span data-ttu-id="fb8a3-106">**PageIterator** обрабатывает перечисление текущей страницы и автоматическое запрос последующих страниц.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-106">**PageIterator** handles enumerating the current page and requesting subsequent pages automatically.</span></span>
+<span data-ttu-id="61829-104">По причинам производительности коллекции сущностями часто разбивают на страницы, и каждая страница возвращается с URL-адресом на следующую страницу.</span><span class="sxs-lookup"><span data-stu-id="61829-104">For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page.</span></span> <span data-ttu-id="61829-105">Класс **PageIterator** упрощает потребление страницных коллекций.</span><span class="sxs-lookup"><span data-stu-id="61829-105">The **PageIterator** class simplifies consuming of paged collections.</span></span> <span data-ttu-id="61829-106">**PageIterator** обрабатывает переописание текущей страницы и автоматически запрашивает последующие страницы.</span><span class="sxs-lookup"><span data-stu-id="61829-106">**PageIterator** handles enumerating the current page and requesting subsequent pages automatically.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fb8a3-107">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fb8a3-107">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="61829-107">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="61829-107">Request headers</span></span>
 
-<span data-ttu-id="fb8a3-108">Если вы отправляете какие-либо дополнительные заготовки запросов в ваш первоначальный запрос, эти заготовки не включены по умолчанию в последующие запросы страницы.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-108">If you send any additional request headers in your initial request, those headers are not included by default in subsequent page requests.</span></span> <span data-ttu-id="fb8a3-109">Если эти загоны должны быть отправлены по последующим запросам, вы должны установить их явно.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-109">If those headers need to be sent on subsequent requests, you must set them explicitly.</span></span>
+<span data-ttu-id="61829-108">Если вы отправляете дополнительные заглавные главы запросов в первоначальном запросе, эти заглавные по умолчанию не включаются в последующие запросы страниц.</span><span class="sxs-lookup"><span data-stu-id="61829-108">If you send any additional request headers in your initial request, those headers are not included by default in subsequent page requests.</span></span> <span data-ttu-id="61829-109">Если эти заглавные главы необходимо отправить по последующим запросам, их необходимо установить явно.</span><span class="sxs-lookup"><span data-stu-id="61829-109">If those headers need to be sent on subsequent requests, you must set them explicitly.</span></span>
 
-## <a name="iterate-over-all-the-messages"></a><span data-ttu-id="fb8a3-110">Итерировать все сообщения</span><span class="sxs-lookup"><span data-stu-id="fb8a3-110">Iterate over all the messages</span></span>
+## <a name="iterate-over-all-the-messages"></a><span data-ttu-id="61829-110">Итерировать все сообщения</span><span class="sxs-lookup"><span data-stu-id="61829-110">Iterate over all the messages</span></span>
 
-<span data-ttu-id="fb8a3-111">В следующем примере показано итерирование всех сообщений в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-111">The following example shows iterating over all the messages in a user's mailbox.</span></span>
+<span data-ttu-id="61829-111">В следующем примере показано итерирование всех сообщений в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="61829-111">The following example shows iterating over all the messages in a user's mailbox.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="fb8a3-112">Этот пример устанавливает небольшой размер страницы, `top` используя параметр для демонстрационных целей.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-112">This example sets a small page size using the `top` parameter for demonstration purposes.</span></span> <span data-ttu-id="fb8a3-113">Вы можете установить размер страницы до 999, чтобы свести к минимуму количество запросов, которые необходимы.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-113">You can set the page size up to 999 to minimize the number of requests that are necessary.</span></span>
+> <span data-ttu-id="61829-112">В этом примере устанавливается небольшой размер страницы с `top` использованием параметра для демонстрационных целей.</span><span class="sxs-lookup"><span data-stu-id="61829-112">This example sets a small page size using the `top` parameter for demonstration purposes.</span></span> <span data-ttu-id="61829-113">Можно установить размер страницы до 999, чтобы свести к минимуму количество необходимых запросов.</span><span class="sxs-lookup"><span data-stu-id="61829-113">You can set the page size up to 999 to minimize the number of requests that are necessary.</span></span>
 
-### <a name="c"></a>[<span data-ttu-id="fb8a3-114">C#</span><span class="sxs-lookup"><span data-stu-id="fb8a3-114">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="61829-114">C#</span><span class="sxs-lookup"><span data-stu-id="61829-114">C#</span></span>](#tab/csharp)
 
 ```csharp
 var messages = await graphClient.Me.Messages
@@ -63,7 +63,7 @@ var pageIterator = PageIterator<Message>
 await pageIterator.IterateAsync();
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="fb8a3-115">TypeScript</span><span class="sxs-lookup"><span data-stu-id="fb8a3-115">TypeScript</span></span>](#tab/typeScript)
+### <a name="typescript"></a>[<span data-ttu-id="61829-115">TypeScript</span><span class="sxs-lookup"><span data-stu-id="61829-115">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Makes request to fetch mails list.
@@ -97,7 +97,7 @@ let pageIterator = new PageIterator(client, response, callback, requestOptions);
 await pageIterator.iterate();
 ```
 
-### <a name="java"></a>[<span data-ttu-id="fb8a3-116">Java</span><span class="sxs-lookup"><span data-stu-id="fb8a3-116">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="61829-116">Java</span><span class="sxs-lookup"><span data-stu-id="61829-116">Java</span></span>](#tab/java)
 
 ```java
 final MessageCollectionPage messagesPage = graphClient.me().messages()
@@ -123,12 +123,12 @@ while(messagesPage != null) {
 
 ---
 
-## <a name="stopping-and-resuming-the-iteration"></a><span data-ttu-id="fb8a3-117">Остановка и возобновление итерации</span><span class="sxs-lookup"><span data-stu-id="fb8a3-117">Stopping and resuming the iteration</span></span>
+## <a name="stopping-and-resuming-the-iteration"></a><span data-ttu-id="61829-117">Остановка и повторное итерация</span><span class="sxs-lookup"><span data-stu-id="61829-117">Stopping and resuming the iteration</span></span>
 
-<span data-ttu-id="fb8a3-118">Некоторые сценарии требуют остановки процесса итерации для выполнения других действий.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-118">Some scenarios require stopping the iteration process in order to perform other actions.</span></span> <span data-ttu-id="fb8a3-119">Можно приостановить итерацию, вернувшись `false` из итерации обратного вызова.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-119">It is possible to pause the iteration by returning `false` from the iteration callback.</span></span> <span data-ttu-id="fb8a3-120">Итерация может быть возобновлена, позвонив `resume` методу на **PageIterator**.</span><span class="sxs-lookup"><span data-stu-id="fb8a3-120">Iteration can be resumed by calling the `resume` method on the **PageIterator**.</span></span>
+<span data-ttu-id="61829-118">Некоторые сценарии требуют остановки процесса итерации для выполнения других действий.</span><span class="sxs-lookup"><span data-stu-id="61829-118">Some scenarios require stopping the iteration process in order to perform other actions.</span></span> <span data-ttu-id="61829-119">Можно приостановить итерацию, возвращаясь из обратного `false` вызова итерации.</span><span class="sxs-lookup"><span data-stu-id="61829-119">It is possible to pause the iteration by returning `false` from the iteration callback.</span></span> <span data-ttu-id="61829-120">Итерация может быть возобновлена путем вызова `resume` метода на **PageIterator**.</span><span class="sxs-lookup"><span data-stu-id="61829-120">Iteration can be resumed by calling the `resume` method on the **PageIterator**.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="c"></a>[<span data-ttu-id="fb8a3-121">C#</span><span class="sxs-lookup"><span data-stu-id="fb8a3-121">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="61829-121">C#</span><span class="sxs-lookup"><span data-stu-id="61829-121">C#</span></span>](#tab/csharp)
 
 ```csharp
 int count = 0;
@@ -169,7 +169,7 @@ while (pageIterator.State != PagingState.Complete)
 }
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="fb8a3-122">TypeScript</span><span class="sxs-lookup"><span data-stu-id="fb8a3-122">TypeScript</span></span>](#tab/typeScript)
+### <a name="typescript"></a>[<span data-ttu-id="61829-122">TypeScript</span><span class="sxs-lookup"><span data-stu-id="61829-122">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 let count: number = 0;
@@ -202,7 +202,7 @@ while (!pageIterator.isComplete()) {
 }
 ```
 
-### <a name="java"></a>[<span data-ttu-id="fb8a3-123">Java</span><span class="sxs-lookup"><span data-stu-id="fb8a3-123">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="61829-123">Java</span><span class="sxs-lookup"><span data-stu-id="61829-123">Java</span></span>](#tab/java)
 
 ```java
 // not supported in java SDK
