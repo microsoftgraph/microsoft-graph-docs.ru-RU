@@ -534,6 +534,8 @@ items:
           - name: Azure AD Graph
             displayName: 'Migration, Azure AD Graph'
             items:
+              - name: Обзор
+                href: migrate-azure-ad-graph-overview.md
               - name: Контрольный список для переноса приложений
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: 1. Проверка различий
@@ -604,6 +606,8 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Набор средств для React
                 href: toolkit/get-started/mgt-react.md
+              - name: Набор средств для SPFx
+                href: toolkit/get-started/mgt-spfx.md
           - name: Создание первого приложения
             items:
               - name: Регистрация приложения Azure Active Directory
@@ -626,6 +630,8 @@ items:
                 href: toolkit/providers/providers.md
               - name: Поставщик MSAL
                 href: toolkit/providers/msal.md
+              - name: Поставщик MSAL 2
+                href: toolkit/providers/msal2.md
               - name: Поставщик SharePoint
                 href: toolkit/providers/sharepoint.md
               - name: Поставщик Microsoft Teams
@@ -658,6 +664,10 @@ items:
                 href: toolkit/components/tasks.md
               - name: Задачи To-Do
                 href: toolkit/components/todo.md
+              - name: Файл
+                href: toolkit/components/file.md
+              - name: Список файлов
+                href: toolkit/components/file-list.md
           - name: Настройка компонентов
             items:
               - name: Компоненты стиля
