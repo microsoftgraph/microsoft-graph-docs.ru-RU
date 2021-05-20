@@ -5,36 +5,38 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 04955ba6980dd94995da1610afcc1e33046e4473
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 0888aa8666f3335a42dc6686531f88fd0f3325ed
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469313"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579727"
 ---
-# <a name="accessreviewscope-resource-type"></a><span data-ttu-id="6f158-103">тип ресурса accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="6f158-103">accessReviewScope resource type</span></span>
+# <a name="accessreviewscope-resource-type"></a><span data-ttu-id="af292-103">тип ресурса accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="af292-103">accessReviewScope resource type</span></span>
 
-<span data-ttu-id="6f158-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6f158-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="af292-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="af292-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-<span data-ttu-id="6f158-105">**AccessReviewScope** определяет, какие объекты будут рассмотрены в [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="6f158-105">The **accessReviewScope** defines what entities will be reviewed in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).</span></span> <span data-ttu-id="6f158-106">Это абстрактный тип, унаследованный [accessReviewQueryScope,](accessreviewqueryscope.md) [principalResourceMembershipsScope](principalresourcemembershipsscope.md) и [accessReviewReviewerScope.](accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="6f158-106">It is an abstract type that is inherited by [accessReviewQueryScope](accessreviewqueryscope.md), [principalResourceMembershipsScope](principalresourcemembershipsscope.md) and [accessReviewReviewerScope](accessreviewreviewerscope.md).</span></span> 
+<span data-ttu-id="af292-105">**AccessReviewScope** определяет, какие объекты будут рассмотрены в [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="af292-105">The **accessReviewScope** defines what entities will be reviewed in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).</span></span> <span data-ttu-id="af292-106">Это абстрактный тип, унаследованный [accessReviewQueryScope,](accessreviewqueryscope.md) [principalResourceMembershipsScope](principalresourcemembershipsscope.md) и [accessReviewReviewerScope.](accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="af292-106">It is an abstract type that is inherited by [accessReviewQueryScope](accessreviewqueryscope.md), [principalResourceMembershipsScope](principalresourcemembershipsscope.md) and [accessReviewReviewerScope](accessreviewreviewerscope.md).</span></span> 
 
-<span data-ttu-id="6f158-107">Для `scope` свойства в [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) см. [accessReviewQueryScope](accessreviewqueryscope.md) и [principalResourceMembershipsScope.](principalresourcemembershipsscope.md)</span><span class="sxs-lookup"><span data-stu-id="6f158-107">For `scope` property on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) see [accessReviewQueryScope](accessreviewqueryscope.md) and [principalResourceMembershipsScope](principalresourcemembershipsscope.md).</span></span>
+<span data-ttu-id="af292-107">Для **свойства области** в [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) см. [accessReviewQueryScope](accessreviewqueryscope.md) и [principalResourceMembershipsScope.](principalresourcemembershipsscope.md)</span><span class="sxs-lookup"><span data-stu-id="af292-107">For **scope** property on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) see [accessReviewQueryScope](accessreviewqueryscope.md) and [principalResourceMembershipsScope](principalresourcemembershipsscope.md).</span></span>
 
-<span data-ttu-id="6f158-108">Свойства `reviewers` в [accessReviewScheduleDefinition см.](accessreviewscheduledefinition.md) [в разделах accessReviewReviewerScope](accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="6f158-108">For `reviewers` property on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) see [accessReviewReviewerScope](accessreviewreviewerscope.md)</span></span>
+<span data-ttu-id="af292-108">Для **свойства рецензентов** в [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) см. [accessReviewReviewerScope.](accessreviewreviewerscope.md)</span><span class="sxs-lookup"><span data-stu-id="af292-108">For **reviewers** property on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) see [accessReviewReviewerScope](accessreviewreviewerscope.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6f158-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="6f158-109">Properties</span></span>
-<span data-ttu-id="6f158-110">Нет</span><span class="sxs-lookup"><span data-stu-id="6f158-110">None.</span></span>
+<span data-ttu-id="af292-109">Указание типа OData в  области настоятельно рекомендуется для всех типов, но необходимо для [principalResourceMembershipsScope](principalresourcemembershipsscope.md) и [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md).</span><span class="sxs-lookup"><span data-stu-id="af292-109">Specifying the OData type in the **scope** is highly recommended for all types but required for [principalResourceMembershipsScope](principalresourcemembershipsscope.md) and [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md).</span></span>
+
+## <a name="properties"></a><span data-ttu-id="af292-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="af292-110">Properties</span></span>
+<span data-ttu-id="af292-111">Нет</span><span class="sxs-lookup"><span data-stu-id="af292-111">None.</span></span>
 
 
-## <a name="relationships"></a><span data-ttu-id="6f158-111">Связи</span><span class="sxs-lookup"><span data-stu-id="6f158-111">Relationships</span></span>
-<span data-ttu-id="6f158-112">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="6f158-112">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="af292-112">Связи</span><span class="sxs-lookup"><span data-stu-id="af292-112">Relationships</span></span>
+<span data-ttu-id="af292-113">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="af292-113">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6f158-113">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="6f158-113">JSON representation</span></span>
-<span data-ttu-id="6f158-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6f158-114">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="af292-114">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="af292-114">JSON representation</span></span>
+<span data-ttu-id="af292-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="af292-115">The following is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewScope"

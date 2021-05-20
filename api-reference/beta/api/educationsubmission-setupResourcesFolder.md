@@ -5,51 +5,52 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f4b8e78355323f0d0ffd988a3ead68de29eae0df
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: d290f47ccc1dcbfaa5aeae85ed28071e0a15399e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475413"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546891"
 ---
-# <a name="educationsubmission-setupresourcesfolder"></a><span data-ttu-id="7a877-103">educationSubmission: setUpResourcesFolder</span><span class="sxs-lookup"><span data-stu-id="7a877-103">educationSubmission: setUpResourcesFolder</span></span>
+# <a name="educationsubmission-setupresourcesfolder"></a><span data-ttu-id="1dbc3-103">educationSubmission: setUpResourcesFolder</span><span class="sxs-lookup"><span data-stu-id="1dbc3-103">educationSubmission: setUpResourcesFolder</span></span>
 
-<span data-ttu-id="7a877-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7a877-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1dbc3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1dbc3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7a877-105">Запуск создания папки SharePoint, в которой все ресурсы на основе файлов (Word, Excel и так далее) должны быть загружены для данной отправки.</span><span class="sxs-lookup"><span data-stu-id="7a877-105">Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.</span></span>
-<span data-ttu-id="7a877-106">Обратите внимание, что файлы должны быть размещены в этой папке, чтобы они были добавлены в качестве ресурсов.</span><span class="sxs-lookup"><span data-stu-id="7a877-106">Note that files must be located in this folder in order to be added as resources.</span></span> <span data-ttu-id="7a877-107">Только учащийся в классе может определить, какие файлы загрузить в данной папке ресурсов на уровне отправки.</span><span class="sxs-lookup"><span data-stu-id="7a877-107">Only a student in the class can determine what files to upload in a given submission-level resource folder.</span></span> 
+<span data-ttu-id="1dbc3-105">Запуск создания папки SharePoint, в которой все ресурсы на основе файлов (Word, Excel и так далее) должны быть загружены для данной отправки.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-105">Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7a877-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7a877-108">Permissions</span></span>
-<span data-ttu-id="7a877-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7a877-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1dbc3-106">Обратите внимание, что файлы должны быть размещены в этой папке, чтобы они были добавлены в качестве ресурсов.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-106">Note that files must be located in this folder in order to be added as resources.</span></span> <span data-ttu-id="1dbc3-107">Только учащийся в классе может определить, какие файлы загрузить в данной папке ресурсов на уровне отправки.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-107">Only a student in the class can determine what files to upload in a given submission-level resource folder.</span></span> 
 
-|<span data-ttu-id="7a877-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7a877-111">Permission type</span></span>      | <span data-ttu-id="7a877-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7a877-112">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="1dbc3-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1dbc3-108">Permissions</span></span>
+<span data-ttu-id="1dbc3-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1dbc3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="1dbc3-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1dbc3-111">Permission type</span></span>      | <span data-ttu-id="1dbc3-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1dbc3-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7a877-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7a877-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="7a877-114">EduAssignments.ReadBasic, EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="7a877-114">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
-|<span data-ttu-id="7a877-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7a877-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="7a877-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7a877-116">Not supported.</span></span>  |
-|<span data-ttu-id="7a877-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7a877-117">Application</span></span> | <span data-ttu-id="7a877-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7a877-118">Not supported.</span></span> | 
+|<span data-ttu-id="1dbc3-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1dbc3-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="1dbc3-114">EduAssignments.ReadBasic, EduAssignments.Read</span><span class="sxs-lookup"><span data-stu-id="1dbc3-114">EduAssignments.ReadBasic, EduAssignments.Read</span></span>  |
+|<span data-ttu-id="1dbc3-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1dbc3-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="1dbc3-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-116">Not supported.</span></span>  |
+|<span data-ttu-id="1dbc3-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1dbc3-117">Application</span></span> | <span data-ttu-id="1dbc3-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-118">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="7a877-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7a877-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1dbc3-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1dbc3-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFolder
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="7a877-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7a877-120">Request headers</span></span>
-| <span data-ttu-id="7a877-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7a877-121">Header</span></span>       | <span data-ttu-id="7a877-122">Значение</span><span class="sxs-lookup"><span data-stu-id="7a877-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1dbc3-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1dbc3-120">Request headers</span></span>
+| <span data-ttu-id="1dbc3-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1dbc3-121">Header</span></span>       | <span data-ttu-id="1dbc3-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1dbc3-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7a877-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7a877-123">Authorization</span></span>  | <span data-ttu-id="7a877-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7a877-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1dbc3-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1dbc3-123">Authorization</span></span>  | <span data-ttu-id="1dbc3-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7a877-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7a877-126">Request body</span></span>
-<span data-ttu-id="7a877-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7a877-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="7a877-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="7a877-128">Response</span></span>
-<span data-ttu-id="7a877-129">В случае успешного выполнения этот метод возвращает код отклика `200 Ok`.</span><span class="sxs-lookup"><span data-stu-id="7a877-129">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="7a877-130">Тело будет содержать модель отправки.</span><span class="sxs-lookup"><span data-stu-id="7a877-130">The body will contain the submission model.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1dbc3-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1dbc3-126">Request body</span></span>
+<span data-ttu-id="1dbc3-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="1dbc3-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="1dbc3-128">Response</span></span>
+<span data-ttu-id="1dbc3-129">В случае успешного выполнения этот метод возвращает код отклика `200 Ok`.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-129">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="1dbc3-130">Тело будет содержать модель отправки.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-130">The body will contain the submission model.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7a877-131">Пример</span><span class="sxs-lookup"><span data-stu-id="7a877-131">Example</span></span>
-<span data-ttu-id="7a877-132">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="7a877-132">The following example shows how to call this API.</span></span>
-### <a name="request"></a><span data-ttu-id="7a877-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="7a877-133">Request</span></span>
-<span data-ttu-id="7a877-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7a877-134">The following is an example of a request.</span></span>
+## <a name="example"></a><span data-ttu-id="1dbc3-131">Пример</span><span class="sxs-lookup"><span data-stu-id="1dbc3-131">Example</span></span>
+<span data-ttu-id="1dbc3-132">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-132">The following example shows how to call this API.</span></span>
+### <a name="request"></a><span data-ttu-id="1dbc3-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="1dbc3-133">Request</span></span>
+<span data-ttu-id="1dbc3-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-134">The following is an example of a request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -61,8 +62,8 @@ POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7a877-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="7a877-135">Response</span></span>
-<span data-ttu-id="7a877-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7a877-136">The following is an example of a response.</span></span> 
+### <a name="response"></a><span data-ttu-id="1dbc3-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="1dbc3-135">Response</span></span>
+<span data-ttu-id="1dbc3-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1dbc3-136">The following is an example of a response.</span></span> 
 
 <!-- {
   "blockType": "response",

@@ -1,37 +1,37 @@
 ---
-title: тип ресурса provisioningErrorInfo
-description: Описывает состояние события подготовка и связанные с ним ошибки.
+title: предоставление типа ресурса «ЭррорИнфо»
+description: Описывает состояние события подготовки и связанные с ним ошибки.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d22d68b7c040ea07e6aef2cc0f606bd378b3b47c
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a682e176b40d58e2dc0a794b58b8561f8948d5a5
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241559"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547157"
 ---
-# <a name="provisioningerrorinfo-resource-type"></a><span data-ttu-id="1d6cc-103">тип ресурса provisioningErrorInfo</span><span class="sxs-lookup"><span data-stu-id="1d6cc-103">provisioningErrorInfo resource type</span></span>
+# <a name="provisioningerrorinfo-resource-type"></a><span data-ttu-id="69fa6-103">предоставление типа ресурса «ЭррорИнфо»</span><span class="sxs-lookup"><span data-stu-id="69fa6-103">provisioningErrorInfo resource type</span></span>
 
-<span data-ttu-id="1d6cc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1d6cc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="69fa6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69fa6-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="1d6cc-105">Описывает состояние события подготовка и связанные с ним ошибки.</span><span class="sxs-lookup"><span data-stu-id="1d6cc-105">Describes the status of the provisioning event and the associated errors.</span></span> 
+<span data-ttu-id="69fa6-105">Описывает состояние события подготовки и связанные с ним ошибки.</span><span class="sxs-lookup"><span data-stu-id="69fa6-105">Describes the status of the provisioning event and the associated errors.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="1d6cc-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="1d6cc-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="69fa6-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="69fa6-106">Properties</span></span>
 
-| <span data-ttu-id="1d6cc-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="1d6cc-107">Property</span></span>     | <span data-ttu-id="1d6cc-108">Тип</span><span class="sxs-lookup"><span data-stu-id="1d6cc-108">Type</span></span>        | <span data-ttu-id="1d6cc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="1d6cc-109">Description</span></span> |
+| <span data-ttu-id="69fa6-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="69fa6-107">Property</span></span>     | <span data-ttu-id="69fa6-108">Тип</span><span class="sxs-lookup"><span data-stu-id="69fa6-108">Type</span></span>        | <span data-ttu-id="69fa6-109">Описание</span><span class="sxs-lookup"><span data-stu-id="69fa6-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1d6cc-110">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="1d6cc-110">additionalDetails</span></span>|<span data-ttu-id="1d6cc-111">Строка</span><span class="sxs-lookup"><span data-stu-id="1d6cc-111">String</span></span>|<span data-ttu-id="1d6cc-112">Дополнительные сведения в случае ошибки.</span><span class="sxs-lookup"><span data-stu-id="1d6cc-112">Additional details in case of error.</span></span>|
-|<span data-ttu-id="1d6cc-113">errorCategory</span><span class="sxs-lookup"><span data-stu-id="1d6cc-113">errorCategory</span></span>|<span data-ttu-id="1d6cc-114">provisioningStatusErrorCategory</span><span class="sxs-lookup"><span data-stu-id="1d6cc-114">provisioningStatusErrorCategory</span></span>|<span data-ttu-id="1d6cc-115">Классифицировать код ошибки.</span><span class="sxs-lookup"><span data-stu-id="1d6cc-115">Categorizes the error code.</span></span> <span data-ttu-id="1d6cc-116">Возможные значения `failure` : `nonServiceFailure` , `success` , `unknownFutureValue`</span><span class="sxs-lookup"><span data-stu-id="1d6cc-116">Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`</span></span>|
-|<span data-ttu-id="1d6cc-117">errorCode</span><span class="sxs-lookup"><span data-stu-id="1d6cc-117">errorCode</span></span>|<span data-ttu-id="1d6cc-118">String</span><span class="sxs-lookup"><span data-stu-id="1d6cc-118">String</span></span>|<span data-ttu-id="1d6cc-119">Уникальный код ошибки, если таковое произошло.</span><span class="sxs-lookup"><span data-stu-id="1d6cc-119">Unique error code if any occurred.</span></span> [<span data-ttu-id="1d6cc-120">Подробнее</span><span class="sxs-lookup"><span data-stu-id="1d6cc-120">Learn more</span></span>](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
-|<span data-ttu-id="1d6cc-121">reason</span><span class="sxs-lookup"><span data-stu-id="1d6cc-121">reason</span></span>|<span data-ttu-id="1d6cc-122">Строка</span><span class="sxs-lookup"><span data-stu-id="1d6cc-122">String</span></span>|<span data-ttu-id="1d6cc-123">Суммирует состояние и описывает причины, по которым произошел этот статус.</span><span class="sxs-lookup"><span data-stu-id="1d6cc-123">Summarizes the status and describes why the status happened.</span></span>|
-|<span data-ttu-id="1d6cc-124">recommendedAction</span><span class="sxs-lookup"><span data-stu-id="1d6cc-124">recommendedAction</span></span>|<span data-ttu-id="1d6cc-125">Строка</span><span class="sxs-lookup"><span data-stu-id="1d6cc-125">String</span></span>|<span data-ttu-id="1d6cc-126">Обеспечивает разрешение соответствующей ошибки.</span><span class="sxs-lookup"><span data-stu-id="1d6cc-126">Provides the resolution for the corresponding error.</span></span>|
+|<span data-ttu-id="69fa6-110">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="69fa6-110">additionalDetails</span></span>|<span data-ttu-id="69fa6-111">String</span><span class="sxs-lookup"><span data-stu-id="69fa6-111">String</span></span>|<span data-ttu-id="69fa6-112">Дополнительные сведения в случае ошибки.</span><span class="sxs-lookup"><span data-stu-id="69fa6-112">Additional details in case of error.</span></span>|
+|<span data-ttu-id="69fa6-113">ошибкаКатегория</span><span class="sxs-lookup"><span data-stu-id="69fa6-113">errorCategory</span></span>|<span data-ttu-id="69fa6-114">положениеСтатусЭррорКатегория</span><span class="sxs-lookup"><span data-stu-id="69fa6-114">provisioningStatusErrorCategory</span></span>|<span data-ttu-id="69fa6-115">Классифицирует код ошибки.</span><span class="sxs-lookup"><span data-stu-id="69fa6-115">Categorizes the error code.</span></span> <span data-ttu-id="69fa6-116">Возможные `failure` значения, `nonServiceFailure` `success` , `unknownFutureValue`</span><span class="sxs-lookup"><span data-stu-id="69fa6-116">Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`</span></span>|
+|<span data-ttu-id="69fa6-117">errorCode</span><span class="sxs-lookup"><span data-stu-id="69fa6-117">errorCode</span></span>|<span data-ttu-id="69fa6-118">String</span><span class="sxs-lookup"><span data-stu-id="69fa6-118">String</span></span>|<span data-ttu-id="69fa6-119">Уникальный код ошибки, если таковые имели место.</span><span class="sxs-lookup"><span data-stu-id="69fa6-119">Unique error code if any occurred.</span></span> [<span data-ttu-id="69fa6-120">Подробнее</span><span class="sxs-lookup"><span data-stu-id="69fa6-120">Learn more</span></span>](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|<span data-ttu-id="69fa6-121">reason</span><span class="sxs-lookup"><span data-stu-id="69fa6-121">reason</span></span>|<span data-ttu-id="69fa6-122">String</span><span class="sxs-lookup"><span data-stu-id="69fa6-122">String</span></span>|<span data-ttu-id="69fa6-123">Суммирует статус и описывает, почему статус произошел.</span><span class="sxs-lookup"><span data-stu-id="69fa6-123">Summarizes the status and describes why the status happened.</span></span>|
+|<span data-ttu-id="69fa6-124">рекомендуемая Действий</span><span class="sxs-lookup"><span data-stu-id="69fa6-124">recommendedAction</span></span>|<span data-ttu-id="69fa6-125">String</span><span class="sxs-lookup"><span data-stu-id="69fa6-125">String</span></span>|<span data-ttu-id="69fa6-126">Предоставляет разрешение для соответствующей ошибки.</span><span class="sxs-lookup"><span data-stu-id="69fa6-126">Provides the resolution for the corresponding error.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1d6cc-127">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="1d6cc-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="69fa6-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="69fa6-127">JSON representation</span></span>
 
-<span data-ttu-id="1d6cc-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1d6cc-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="69fa6-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="69fa6-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
