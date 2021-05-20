@@ -3,12 +3,12 @@ title: Локализация компонентов Microsoft Graph Toolkit
 description: Используйте LocalizationHelper для локализации компонентов Microsoft Graph Toolkit.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 3fafc71f20079f5320d07a62b06a2a18f97c5831
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: d333112e77d047151aa6b030acd0ed1cea626573
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475417"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579930"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>Локализация компонентов Microsoft Graph Toolkit
 
@@ -197,5 +197,22 @@ LocalizationHelper.strings = {
   personalInterestsSubSectionTitle: "Personal Interests",
   birthdaySubSectionTitle: "Birthday",
   currentYearSubtitle: "Current"
+}
+```
+
+### <a name="file"></a>File
+
+```ts
+'file': {
+  modifiedSubtitle: 'Modified',
+  sizeSubtitle: 'Size'
+};
+```
+
+### <a name="file-list"></a>File-List
+
+```ts
+"file-list": {
+  showMoreSubtitle: 'Show more items'
 }
 ```

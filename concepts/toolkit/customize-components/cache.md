@@ -3,21 +3,21 @@ title: Кэширование Microsoft Graph Toolkit
 description: В этой статье объясняется, как работает кэширование и как настроить параметры для разработчиков
 localization_priority: Normal
 author: adchau
-ms.openlocfilehash: cef5c06c39ebad58e6a39f094427dea6a1b1be25
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 7bb13e97cc6ef0fa77ba05afb27a065f934e1f42
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266622"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579937"
 ---
 # <a name="microsoft-graph-toolkit-caching"></a>Кэширование Microsoft Graph Toolkit
 
-Microsoft Graph Toolkit поддерживает кэширование выбранных вызовов API Microsoft Graph. Вызовы кэшироваться для каждого объекта, например людей, контактов, фотографий. Это позволяет одному компоненту получать данные и другие компоненты для повторного использования без вызова Microsoft Graph.
+Microsoft Graph Toolkit поддерживает кэширование выбранных вызовов API Microsoft Graph. Вызовы кэшироваться для каждого объекта, например людей, контактов, фотографий. Это позволяет одному компоненту извлекать данные и другие компоненты для повторного использования без вызова Microsoft Graph.
 
 > [!TIP]
 > Дополнительные сведения о том, какие объекты кэшются каждым компонентом, см. в документации компонента.
 
-Базы данных, созданные mgt для кэшинга, префиксизются `mgt-` с . Данные для каждой сущности хранятся в отдельном хранилище объектов. Чтобы проверить кэш, используйте вкладку **Application** в панели разработчиков (средства F12) — в разделе **Хранение** нажмите на вкладку **IndexedDB.** 
+Базы данных, созданные mgt для кэшинга, префиксизются `mgt-` с . Данные для каждой сущности хранятся в отдельном хранилище объектов. Чтобы проверить кэш, используйте вкладку **Application** в панели разработчиков (средства F12) — в разделе служба хранилища нажмите на вкладку **IndexedDB.**  
 
 ![средства разработчика indexedDB](../images/indexedDBpanel.png)
 
@@ -52,6 +52,14 @@ let config = {
   response: {
     invalidationPeriod: number,
     isEnabled: boolean
+  },
+  files: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  fileLists: {
+    invalidationPeriod: number,
+    isEnabled: boolean
   }
 };
 ```
@@ -70,7 +78,7 @@ CacheService.config.users.isEnabled = false;
 ```
 Отключение кэша **не** очищает кэш.
 
-Аналогичным образом можно изменить период недействительности:
+Изменение периода недействительности аналогично:
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';

@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с Angular
 description: Начало использования Microsoft Graph Toolkit в приложении Angular
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: a1c0ebc252545491dc57d8910eb283db6d227ccd
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: HT
+ms.openlocfilehash: 1390b29c94fef292433e1e422fa5c44fd480e1eb
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49664046"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579888"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Использование Microsoft Graph Toolkit с Angular
 
@@ -40,11 +40,15 @@ npm install @microsoft/mgt
 
 Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). Применяемый поставщик зависит от контекста, в котором будет использоваться ваше решение.
 
-В примере ниже показано, как добавить [поставщика MSAL](../providers/msal.md), но вы можете использовать эту модель с любыми поставщиками. Импортируйте поставщика и настройте его для инициализации при запуске приложения. Замените `<YOUR-CLIENT-ID>` на идентификатор клиента для своего приложения.
+В следующем примере показано, как добавить [поставщика MSAL 2,](../providers/msal2.md)но вы можете следовать той же модели с любым из поставщиков.
+>[!NOTE] 
+>Если вы в настоящее время используете поставщика MSAL и хотите обновить поставщика MSAL 2, выполните действия в статье [поставщика MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)
+
+Импортируйте поставщика и настройте его для инициализации при запуске приложения. Замените `<YOUR-CLIENT-ID>` на идентификатор клиента для своего приложения.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider } from '@microsoft/mgt';
+import { Providers, Msal2Provider } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',
@@ -55,7 +59,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({
+        Providers.globalProvider = new Msal2Provider({
             clientId: '<YOUR-CLIENT-ID>'
         });
     }
@@ -63,7 +67,6 @@ export class AppComponent implements OnInit {
 ```
 ### <a name="create-an-appclient-id"></a>Создание идентификатора клиента/приложения
 Чтобы получить идентификатор клиента, вам нужно [зарегистрировать свое приложение](../../auth-register-app-v2.md) в Azure AD. 
->**Примечание**. MSAL поддерживает только неявный поток для OAuth. Включите неявный поток в своем приложении на портале Azure (он не включен по умолчанию). В области **Проверка подлинности** найдите раздел **Неявное предоставление** и установите флажки **Маркеры доступа** и **Маркеры идентификаторов**.
 
 ## <a name="add-components"></a>Добавление компонентов
 
@@ -94,7 +97,7 @@ export class AppComponent implements OnInit {
 
 ```ts
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider, TemplateHelper } from '@microsoft/mgt';
+import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',
@@ -105,7 +108,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({ clientId: '<YOUR-CLIENT-ID>'})
+        Providers.globalProvider = new Msal2Provider({ clientId: '<YOUR-CLIENT-ID>'})
         TemplateHelper.setBindingSyntax('[[',']]');
     }
 }

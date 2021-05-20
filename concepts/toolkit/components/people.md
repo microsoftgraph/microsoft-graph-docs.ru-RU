@@ -3,12 +3,12 @@ title: Компонент People в Microsoft Graph Toolkit
 description: Вы можете использовать веб-компонент `mgt-people`, чтобы отображать группу людей или контактов с помощью фотографий и инициалов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0cdade8720112dc623e617514f31ab63151b80ff
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 6bed8f2c06e3c6834533b8e881016c4bc6d54bac
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266852"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52580017"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент People в Microsoft Graph Toolkit
 
@@ -37,6 +37,9 @@ ms.locfileid: "52266852"
 | people-queries | peopleQueries | При наличии массива запросов пользователей (имена, UPN, адреса электронной почты) компонент отображает этих пользователей. |
 | person-card | personCard | Перечисление для определения пользовательского действия, необходимого для активации всплывающей панели — `hover` или `click`. Значение по умолчанию: `none`. |
 | show-presence | showPresence | Логическое значение, определяющее, нужно ли отображать значок присутствия пользователя на изображении пользователя. |
+| resource | resource | Ресурс, который требуется получить из Microsoft Graph (например, `/me/people`). |
+| scopes | scopes | Необязательный массив строк, если используется свойство либо область с разделителями-запятыми, при использовании атрибута. Эти области используются компонентом (с поддерживаемым поставщиком), чтобы убедиться в том, что пользователь дал согласие на нужное разрешение. |
+| version | version | Необязательная версия API, используемая при выполнении GET-запроса. Значение по умолчанию: `v1.0`.  |
 
 
 В следующем примере задается максимальное количество людей для отображения.

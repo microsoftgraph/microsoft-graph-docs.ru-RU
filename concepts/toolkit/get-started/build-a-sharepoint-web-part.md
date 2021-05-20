@@ -1,151 +1,93 @@
 ---
-title: Создание веб-части SharePoint с помощью microsoft Graph набор средств
-description: Начало работы с использованием microsoft Graph набор средств для создания веб-части SharePoint.
+title: Создайте SharePoint веб-часть с помощью microsoft Graph набор средств
+description: Начало работы с помощью веб-Graph набор средств майкрософт для создания SharePoint веб-части.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: d07a597c69ae998c75e3d4698cb0513cff056e56
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 4c5443e05a57aade5c09d04f337c6a8bb67584c6
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659752"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579916"
 ---
-# <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Создание веб-части SharePoint с помощью microsoft Graph набор средств
+# <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Создайте SharePoint веб-часть с помощью microsoft Graph набор средств
 
-В этом разделе описывается, как использовать набор средств Microsoft Graph в клиентской [веб-части SharePoint.](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts) Начало работы состоит из следующих этапов:
+В этом разделе описывается использование компонентов Microsoft Graph набор средств в SharePoint [клиентской веб-части](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Начало работы включает в себя следующие действия:
 
 1. Настройка среды разработки и создание веб-части.
-2. Обновите TypeScript в проекте.
-3. Добавьте microsoft Graph набор средств.
-4. Добавьте поставщика SharePoint.
-5. Добавление компонентов.
-6. Настройка разрешений.
-7. Создайте и разверните веб-часть.
-8. Протестировать веб-часть.
+1. Добавьте пакет Microsoft Graph набор средств SharePoint Framework.
+1. Добавьте SharePoint поставщика.
+1. Добавление компонентов.
+1. Настройка разрешений.
+1. Развертывание пакета microsoft Graph набор средств SharePoint Framework.
+1. Сборка и развертывание веб-части.
+1. Проверьте веб-часть.
 
-## <a name="set-up-your-sharepoint-framework-development-environment-and-create-a-new-web-part"></a>Настройка среды разработки SharePoint Framework и создание новой веб-части
+## <a name="set-up-your-sharepoint-framework-development-environment-and-create-a-new-web-part"></a>Настройка среды SharePoint Framework разработки и создание новой веб-части
 
-Выполните действия, [чтобы настроить среду разработки SharePoint Framework,](/sharepoint/dev/spfx/set-up-your-development-environment) а затем [создайте новую веб-часть.](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)
+Выполните действия по [настройкам среды SharePoint Framework разработки,](/sharepoint/dev/spfx/set-up-your-development-environment) а затем [создайте новую веб-часть.](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)
 
-## <a name="update-typescript-in-your-project"></a>Обновление TypeScript в проекте
+## <a name="add-the-microsoft-graph-toolkit-sharepoint-framework-package"></a>Добавление пакета microsoft Graph набор средств SharePoint Framework
 
-Для набор средств Microsoft Graph требуется Typescript 3.x. Перед добавлением набор средств в проект убедитесь, что вы используете поддерживаемую [версию Typescript.](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x) Например, чтобы добавить Typescript 3.7, используйте следующую команду:
+Чтобы не допустить SharePoint Framework компонентов Microsoft Graph набор средств на странице, необходимо развернуть пакет Microsoft Graph набор средств SharePoint Framework для клиента и ссылаться на компоненты Microsoft Graph набор средств, которые вы используете в решении из этого пакета.
 
-```bash
-npm install @microsoft/rush-stack-compiler-3.7 --save-dev
-```
-Затем найдите файл в папке проекта, откройте файл и найдите `tsconfig.json` эту строку:
+Пакет Microsoft Graph набор средств SharePoint Framework содержит библиотеку SharePoint Framework, которая регистрирует один экземпляр компонентов Microsoft Graph набор средств в SharePoint.
 
-```json
-"extends": "./node_modules/@microsoft/rush-stack-compiler-3.3/includes/tsconfig-web.json",
-```
-Замените строку на:
-
-```json
-"extends": "./node_modules/@microsoft/rush-stack-compiler-3.7/includes/tsconfig-web.json",
-```
-
-## <a name="add-the-microsoft-graph-toolkit"></a>Добавление учетной записи Microsoft Graph набор средств
-
-Установите пакет и набор средств npm Microsoft Graph с помощью следующей команды:
+Установите пакет microsoft Graph набор средств SharePoint Framework npm с помощью следующей команды:
 
 ```bash
-npm install @microsoft/mgt
-```
-Если вы планируете поддерживать IE11 в веб-частях, вам потребуется предпринять дополнительные действия, чтобы обеспечить совместимость между браузерами:
-
-1. Установите следующие пакеты:
-```bash
-npm install -D babel-loader @babel/core @babel/preset-env webpack
-npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
+npm install @microsoft/mgt-spfx
 ```
 
-2. Добавьте следующий код в `gulpfile.js` , прямо `build.initialize(gulp)` над:
-```ts
-build.configureWebpack.mergeConfig({
-  additionalConfiguration: (generatedConfiguration) => {
-    generatedConfiguration.module.rules.push(
-      {
-        test: /\.m?js$/, use:
-        {
-          loader: "babel-loader",
-          options:
-          {
-            presets: [["@babel/preset-env",
-              {
-                targets: {
-                  "ie": "11"
-                }
-              }]]
-          }
-        }
-      }
-    );
+## <a name="add-the-sharepoint-provider"></a>Добавление SharePoint поставщика
 
-    return generatedConfiguration;
-  }
-});
-```
-3. В `src\webparts\<your-project>\<your-web-part>.ts` файле импортировать следующие полифайли перед поставщиком SharePoint на следующем шаге.
+Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). SharePoint веб-части всегда существуют в контексте проверки подлинности, так как пользователю уже пришлось войти, чтобы попасть на страницу, на которую размещена ваша веб-часть. Используйте этот контекст для инициализации [SharePoint поставщика](../providers/sharepoint.md).
+
+Сначала добавьте поставщика в веб-часть. Найдите файл в папке проекта и добавьте следующую строку в верхнюю часть файла прямо под `src\webparts\<your-project>\<your-web-part>.ts` `import` существующими утверждениями:
 
 ```ts
-import 'regenerator-runtime/runtime';
-import 'core-js/es/number';
-import 'core-js/es/math';
-import 'core-js/es/string';
-import 'core-js/es/date';
-import 'core-js/es/array';
-import 'core-js/es/regexp';
-import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
+import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
 ```
 
-## <a name="add-the-sharepoint-provider"></a>Добавление поставщика SharePoint
-
-Поставщики набор средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные узнать [см. в этой теме.](../providers/providers.md) Веб-части SharePoint всегда существуют в контексте с проверкой подлинности, так как пользователю уже пришлось войти на страницу, на которую размещена веб-часть. Используйте этот контекст для инициализации [поставщика SharePoint.](../providers/sharepoint.md)
-
-Сначала добавьте поставщика в веб-часть. Найдите файл в папке проекта и добавьте следующую строку в верхнюю часть файла `src\webparts\<your-project>\<your-web-part>.ts` под существующими `import` строками:
-
-```ts
-import { Providers, SharePointProvider } from '@microsoft/mgt';
-```
-
-Затем необходимо инициализировать поставщика с контекстом проверки подлинности в `onInit()` методе веб-части. В том же файле добавьте следующий код прямо перед `public render(): void {` строкой:
+Далее необходимо инициализировать поставщика с помощью контекста проверки подлинности в `onInit()` методе веб-части. В том же файле добавьте следующий код прямо перед `public render(): void {` строкой:
 
 ```ts
 protected async onInit() {
-    Providers.globalProvider = new SharePointProvider(this.context)
+  if (!Providers.globalProvider) {
+    Providers.globalProvider = new SharePointProvider(this.context);
+  }
 }
 ```
 
 ## <a name="add-components"></a>Добавление компонентов
 
-Теперь можно приступить к добавлению компонентов в веб-часть. Просто добавьте компоненты в HTML-код внутри метода, и компоненты будут использовать контекст SharePoint для доступа `render()` к Microsoft Graph. Например, чтобы добавить компонент [Person,](../components/person.md)код будет выглядеть так:
+Теперь можно приступить к добавлению компонентов в веб-часть. Просто добавьте компоненты в HTML внутри метода, и компоненты будут использовать контекст SharePoint для доступа к `render()` Microsoft Graph. Например, чтобы добавить компонент [Person,](../components/person.md)код будет выглядеть так:
 
 ```ts
 public render(): void {
     this.domElement.innerHTML = `
-      <mgt-person person-query="me" view="twolines"><mgt-person>
+      <mgt-person person-query="me" view="twolines"></mgt-person>
     `;
 }
 ```
 
 ## <a name="configure-permissions"></a>Настройка разрешений
 
-Чтобы вызвать Microsoft Graph из приложения SharePoint Framework, необходимо запросить необходимые разрешения в пакете решения, а администратор клиента Microsoft 365 должен утвердить запрашиваемую.
+Чтобы вызвать microsoft Graph из SharePoint Framework приложения, необходимо запросить необходимые разрешения в пакете решений, а администратору Microsoft 365 необходимо утвердить запрашиваемую разрешения.
 
-Чтобы добавить разрешения в пакет решения, найдите и откройте `config\package-solution.json` файл и установите:
+Чтобы добавить разрешения в пакет решений, найдите и откройте `config\package-solution.json` файл и установите:
 
 ```json
 "isDomainIsolated": false,
 ```
 
-Под этой строкой добавьте следующее:
+Чуть ниже этой строки добавьте следующее:
 
 ```json
 "webApiPermissionRequests":[],
 ```
 
-Определите необходимые разрешения API Microsoft Graph в зависимости от используемого компонента. На странице документации каждого компонента содержится список разрешений, необходимых компоненту. Вам потребуется добавить каждое разрешение, необходимое для `webApiPermissionRequests` . Например, если вы используете компонент "Человек" и "Повестка дня", ваши задачи `webApiPermissionRequests` могут выглядеть так:
+Определите Graph разрешения API Майкрософт в зависимости от компонентов, которые вы используете. На странице документации каждого компонента содержится список разрешений, которые необходимы компоненту. Вам потребуется добавить каждое разрешение, необходимое `webApiPermissionRequests` для . Например, если вы используете компонент Person и компонент Agenda, вы можете `webApiPermissionRequests` выглядеть так:
 
 ```json
 "webApiPermissionRequests": [
@@ -159,9 +101,19 @@ public render(): void {
   }
 ]
 ```
-## <a name="build-and-deploy-your-web-part"></a>Создание и развертывание веб-части
 
-Теперь вы создайте приложение и развернем его в SharePoint. Создайте приложение с помощью следующих команд:
+## <a name="deploy-the-microsoft-graph-toolkit-sharepoint-framework-package"></a>Развертывание пакета microsoft Graph набор средств SharePoint Framework
+
+Перед развертывание SharePoint Framework пакета для клиента необходимо развернуть пакет Microsoft Graph набор средств SharePoint Framework для клиента. Вы можете скачать пакет, соответствующий версии microsoft Graph набор средств, используемой в [](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases) проекте, из раздела Выпуски на GitHub.
+
+>[!IMPORTANT]
+>Поскольку в клиенте SharePoint Framework может быть установлена только одна версия библиотеки Graph набор средств Microsoft, прежде чем использовать microsoft Graph набор средств в решении, определите, имеет ли ваша организация или клиент уже развернута версия библиотеки SharePoint Framework и использовать ту же версию.
+
+Загрузив пакет Microsoft Graph набор средств SharePoint Framework sppkg, загрузите его в каталог SharePoint приложения. Перейдите на [страницу Дополнительные функции центра администрирования SharePoint.](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true) Выберите **Открыть** в **приложениях,** а затем нажмите **каталог приложений** и **раздать** приложения для SharePoint . Upload `.sppkg` файл и нажмите кнопку **Развертывание.**
+
+## <a name="build-and-deploy-your-web-part"></a>Сборка и развертывание веб-части
+
+Теперь вы создайте приложение и разверните его в SharePoint. Создайте приложение, запуская следующие команды:
 
 ```bash
 gulp build
@@ -169,30 +121,30 @@ gulp bundle
 gulp package-solution
 ```
 
-В `sharepoint/solution` папке будет новый `.sppkg` файл. Вам потребуется отправить этот файл в каталог приложений SharePoint Online. Перейдите на [страницу "Дополнительные функции" в Центре администрирования SharePoint.](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true) Выберите **"Открыть** в **приложениях",** затем **"Каталог приложений"** и **"Распространение приложений для SharePoint".** Загрузите `.sppkg` файл и нажмите кнопку **"Развернуть".**
+В `sharepoint/solution` папке будет новый `.sppkg` файл. Вам потребуется загрузить этот файл в SharePoint каталога приложений в Интернете. Перейдите на [страницу Дополнительные функции центра администрирования SharePoint.](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true) Выберите **Открыть** в **приложениях,** а затем нажмите **каталог приложений** и **раздать** приложения для SharePoint . Upload `.sppkg` файл и нажмите кнопку **Развертывание.**
 
-Затем необходимо утвердить разрешения от администратора.
+Далее необходимо утвердить разрешения в качестве администратора.
 
-Перейдите в **Центр администрирования SharePoint.** В области навигации слева выберите **"Расширенный",** а затем **"Доступ к API".** Должны отложенные запросы для каждого из разрешений, добавленных в `config\package-solution.json` файл. Выберите и утвердит каждое разрешение.
+Перейдите в **центр SharePoint администрирования.** В левой навигации выберите **Расширенный** и затем **API Access**. Вы должны видеть ожидающих запросов для каждого из разрешений, добавленных в `config\package-solution.json` файл. Выберите и утвердим каждое разрешение.
 
-## <a name="test-your-web-part"></a>Тестирование веб-части
+## <a name="test-your-web-part"></a>Проверка веб-части
 
-Теперь вы готовы добавить веб-часть на страницу SharePoint и протестировать ее. Для тестирования веб-частей, которые используют microsoft Graph набор средств, необходимо использовать веб-части с помощью веб-части с проверкой подлинности, так как для вызова Microsoft Graph компонентам необходим контекст проверки подлинности. Вы можете найти свою уехавную работу по адресу **https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx.**
+Теперь вы готовы добавить веб-часть на страницу SharePoint и протестировать ее. Чтобы протестировать веб-части, которые используют microsoft Graph набор средств, необходимо использовать упорядоченный контекст, чтобы вызвать microsoft Graph. Вы можете найти у себя на сайте **https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx.**
 
-Откройте файл в проекте и замените значение URL-адреса для `config\serve.json` `initialPage` вашей хост-области:
+Откройте файл в проекте и замените значение URL-адресом для `config\serve.json` `initialPage` принимающей работы:
 ```json
 "initialPage": "https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx",
 ```
-Сохраните файл и запустите следующую команду в консоли, чтобы создать и просмотреть веб-часть:
+Сохраните файл и запустите следующую команду в консоли для создания и предварительного просмотра веб-части:
 
 ```bash
 gulp serve
 ```
 
-В браузере будет автоматически открыта ваша уеханая работа. Добавьте веб-часть на страницу, и вы увидите ее с набор средств Microsoft Graph! Если команда gulp serve по-прежнему работает в консоли, вы можете продолжать вносить изменения в код, а затем просто обновлять браузер, чтобы увидеть изменения.
+В браузере автоматически откроется хост-хозяйная работа. Добавьте веб-часть на страницу, и вы увидите веб-часть с компонентами Microsoft Graph набор средств в действии! До тех пор, пока команда службы глоток продолжает работать в консоли, вы можете продолжать вносить изменения в код, а затем просто обновить браузер, чтобы увидеть изменения.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Ознакомьтесь с этим пошаговом руководстве по [построению веб-части SharePoint.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)
-- Попробуйте компоненты в игровой [области.](https://mgt.dev)
-- Задайте вопрос на [сайте Stack Overflow.](https://aka.ms/mgt-question)
-- Сообщать об ошибках или оставлять запрос на функции на [GitHub.](https://aka.ms/mgt)
+- Ознакомьтесь с этим пошаговом руководстве по SharePoint [веб-части.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/)
+- Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).
+- Задавайте вопросы на сайте [Stack Overflow](https://aka.ms/mgt-question).
+- Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).

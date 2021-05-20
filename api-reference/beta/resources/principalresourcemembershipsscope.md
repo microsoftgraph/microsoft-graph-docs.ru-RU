@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2ac3dd53223b9260c3f51c3c872d36b044e698d5
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b22c52c0bf71f1a1169d51e2e6fd3e8ac10e99d9
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469790"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579895"
 ---
 # <a name="principalresourcemembershipsscope-resource-type"></a>тип ресурса principalResourceMembershipsScope
 
@@ -19,7 +19,7 @@ ms.locfileid: "51469790"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-PrincipalResourceMembershipsScope — это тип [accessReviewScope,](accessreviewscope.md) который позволяет выбрать коллекцию основных областей и коллекцию областей ресурсов и просмотреть доступ выбранных директоров к выбранным ресурсам. См. поддерживаемые запросы, чтобы узнать, что можно выбрать. Он используется в качестве `scope` свойства [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
+PrincipalResourceMembershipsScope — это тип [accessReviewScope,](accessreviewscope.md) который позволяет выбрать коллекцию основных областей и коллекцию областей ресурсов и просмотреть доступ выбранных директоров к выбранным ресурсам. Он используется для настройки свойства **области** [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
 
 Наследует [от accessReviewScope](../resources/accessreviewscope.md).
 
@@ -29,32 +29,12 @@ PrincipalResourceMembershipsScope — это тип [accessReviewScope,](accessr
 |principalScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области, включаемые в обзор доступа.|
 |resourceScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области ресурсов, для которых будет рассмотрен доступ.|
 
-## <a name="relationships"></a>Связи
+Также необходимо указать **свойство @odata.type** со значением `#microsoft.graph.principalResourceMembershipsScope` . Дополнительные информацию о  параметрах конфигурации области с помощью **principalResourceMembershipsScope** см. в меню Настройка области определения обзора доступа с помощью [API](/graph/accessreviews-scope-concept)Microsoft Graph.
+
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
-### <a name="supported-queries-for-resourcescope"></a>Поддерживаемые запросы для resourceScope
-Запросы поддерживаются как `resourceScope` свойство. Они определяют, к каков набор доступа к ресурсам. 
-
-|Сценарий| запрос resourceScope | 
-|--|--|
-| Проверка доступа principalScopes к основной службе | /servicePrincipals/{service principal ID} |
-| Просмотр доступа principalScopes к роли каталога Azure AD | /roleManagement/directory/roleDefinitions/{role ID} |
-| Просмотр доступа principalScopes ко всем ролям каталога Azure AD | /roleManagement/directory/roleDefinitions |
-
-### <a name="supported-queries-for-principalscope"></a>Поддерживаемые запросы для principalScope
-Запросы поддерживаются как `principalScope` свойство. Они определяют набор директоров, доступ которых к связанному ресурсуScope будет рассмотрен. В связанном типе principalScope перечислены типы запросов odata, принятые в качестве principalScope.
-
-|Сценарий| запрос principalScope | Тип запроса OData | Дополнительные комментарии |
-|--|--|-- | --|
-| Просмотр доступа всех пользователей к ресурсуScope | /users |[accessReviewQueryScope](accessreviewqueryscope.md)||
-| Просмотр доступа гостевых пользователей к ресурсуScope | /users?$filter=(userType eq 'Guest') |[accessReviewQueryScope](accessreviewqueryscope.md)||
-| Просмотр доступа всех неактивных пользователей к ресурсуScope | /users |[accessReviewInactiveUsersQueryScope](accessreviewinactiveusersqueryscope.md)| Должно включать `instanceDuration` свойство|
-| Просмотр доступа неактивных пользователей гостей к ресурсуScope | /users?$filter=(userType eq 'Guest') |[accessReviewInactiveUsersQueryScope](accessreviewinactiveusersqueryscope.md)| Должно включать `instanceDuration` свойство|
-
-
-
-
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

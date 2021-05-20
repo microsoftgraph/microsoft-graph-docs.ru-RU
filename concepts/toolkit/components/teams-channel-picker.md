@@ -3,12 +3,12 @@ title: Компонент выбора каналов Microsoft Teams в Microso
 description: Вы можете использовать компонент mgt-teams-channel-picker, чтобы в Microsoft Graph искать каналы и команды, связанные с пользователем.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 086ce7085f1802e40195fca9f54f2af460291fda
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: aaa89b9fab5d9e29c35b7d2cabb0a494ca97d4b3
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266796"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579944"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 
@@ -103,12 +103,29 @@ mgt-teams-channel-picker {
 
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
-Этот компонент использует следующие API и разрешения Microsoft Graph.
+В этом компоненте по умолчанию используются следующие API Graph Microsoft и разрешения.
 
 | API                                                                                                              | Разрешение  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
+
+В версии 2.2 необходимые разрешения были обновлены до менее Teams разрешений на основе Teams. Чтобы избежать изменений, необходимо выбрать новые разрешения с помощью глобальной конфигурии.
+
+```ts
+import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
+
+MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
+```
+
+При `useTeamsBasedScopes` наборе Teams каналов будет использовать следующие `true` области. 
+
+| API                                                                                                              | Разрешение  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
+
+Это будут разрешения по умолчанию в следующем крупном обновлении.
 
 ## <a name="authentication"></a>Проверка подлинности
 

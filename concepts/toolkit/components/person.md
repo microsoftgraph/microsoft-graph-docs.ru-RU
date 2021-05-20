@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 5250919404ecccea1f01042d93aaf2b9fa4fc3b3
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 46ba7c780985e71d68fe9270f165292136f2e46b
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266845"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579951"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -50,6 +50,9 @@ ms.locfileid: "52266845"
 
   Если изображение не предоставлено, оно будет получено (при наличии).
 
+* По умолчанию компонент пользователя запрашивает только стандартный набор свойств Graph [Майкрософт.](/graph/api/user-get?&tabs=http#optional-query-parameters) Чтобы запросить дополнительные свойства, объявите их в качестве любой части `line(x)Property` . 
+
+
 ## <a name="properties"></a>Свойства
 
 Для настройки компонента можно использовать несколько свойств.
@@ -79,6 +82,7 @@ mgt-person {
   --avatar-size: 48px;
   --avatar-border: 0;
   --avatar-border-radius: 50%;
+  --avatar-cursor: default;
   
   --initials-color: white;
   --initials-background-color: magenta;
@@ -126,7 +130,7 @@ mgt-person {
 | --------- | ------------ | ----------- |
 | загрузка | Нет | Шаблон для отображения состояния загрузки компонента. |
 | no-data | Нет | Шаблон для использования, если изображения или данные не доступны. | 
-| default | пользователь: объект сведений о пользователе <br> `personImage`: URL-адрес изображения. | Шаблон по умолчанию заменяет весь компонент вашим собственным компонентом. |
+| default | пользователь: объект сведений о пользователе <br> `personImage`: URL-адрес изображения. <br> `personPresence`: Объект сведений о присутствии для человека  | Шаблон по умолчанию заменяет весь компонент вашим собственным компонентом. |
 | person-card | пользователь: объект сведений о пользователе <br> `personImage`: URL-адрес изображения. | Шаблон для обновления карточки mgt-person-card, отображаемой при наведении указателя мыши или щелчке мышью. |
 | line1 | person: объект сведений о пользователе | Шаблон для первой строки метаданных человека. |
 | line2 | person: объект сведений о пользователе | Шаблон для второй строки метаданных человека. |

@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 1ed264233e24f542a3cc0e23d664f1977cbe318f
-ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
+ms.openlocfilehash: a1eaf17b4d4b12e04c11941ab25c5e2bdfd6d57a
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101890"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579776"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Использование Microsoft Graph Toolkit с React
 
@@ -42,10 +42,10 @@ cd my-m365-app
 npm i @microsoft/mgt-react
 ```
 
-Также установите `mgt-msal-provider` и пакет NPM `mgt-element`, который содержит поставщика проверки подлинности MSAL.
+Установите и пакет npm, который содержит `mgt-msal2-provider` `mgt-element` поставщика auth MSAL 2.0.
 
 ```cmd
-npm i @microsoft/mgt-element @microsoft/mgt-msal-provider
+npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
 Подтвердите, что вы можете запустить приложение.
@@ -72,17 +72,20 @@ npm start
 
 Теперь настройте поставщика проверки подлинности, который должен использовать Microsoft Graph Toolkit. В этом случае будет использоваться MSAL, который по умолчанию подходит для создания автономных приложений. Если вы используете какие-либо точки расширения в Microsoft 365, например Teams или SharePoint, то необходимо будет выбрать [других поставщиков](../providers/providers.md).
 
+>[!NOTE] 
+>Если вы в настоящее время используете поставщика MSAL и хотите обновить поставщика MSAL 2, выполните действия в статье [поставщика MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)
+
 1. Откройте в редакторе кода файл **src/index.** и добавьте в список операций импорта следующее:
 
     ```tsx
     import { Providers } from '@microsoft/mgt-element';
-    import { MsalProvider } from '@microsoft/mgt-msal-provider';
+    import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
 1. После последнего оператора `import` инициализируйте Microsoft Graph Toolkit с помощью поставщика MSAL.
 
     ```tsx
-    Providers.globalProvider = new MsalProvider({
+    Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID'
     });
     ```
@@ -99,9 +102,9 @@ npm start
   import * as serviceWorker from './serviceWorker';
 
   import { Providers } from '@microsoft/mgt-element';
-  import { MsalProvider } from '@microsoft/mgt-msal-provider';
+  import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
   
-  Providers.globalProvider = new MsalProvider({
+  Providers.globalProvider = new Msal2Provider({
     clientId: 'REPLACE_WITH_CLIENTID'
   });
   
@@ -178,8 +181,8 @@ Microsoft Graph Toolkit не только упрощает проверку по
 1. Откройте в редакторе кода файл **src/index.tsx** и обновите код инициализации поставщика.
 
     ```tsx
-    Providers.globalProvider = new MsalProvider({
-      clientId: 'd7cb93c9-9097-4e38-8f06-7c0088ac3318',
+    Providers.globalProvider = new Msal2Provider({
+      clientId: 'REPLACE_WITH_CLIENTID',
       scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
     });
     ```
