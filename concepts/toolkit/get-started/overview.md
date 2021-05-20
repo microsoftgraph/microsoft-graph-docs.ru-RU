@@ -1,6 +1,6 @@
 ---
-title: Начало работы с Microsoft Graph набор средств
-description: Начать использовать систему Майкрософт Graph набор средств приложении.
+title: Начало работы с microsoft Graph набор средств
+description: Начало работы с помощью microsoft Graph набор средств в приложении.
 localization_priority: Normal
 author: elisenyang
 ms.openlocfilehash: e84350a7835cac7914f5238110f74b3383047e13
@@ -10,21 +10,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/20/2021
 ms.locfileid: "52579594"
 ---
-# <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Начало работы с Microsoft Graph набор средств
+# <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Начало работы с microsoft Graph набор средств
 
-Дополнительные компоненты майкрософт Graph набор средств могут быть легко добавлены в веб-приложение, SharePoint веб-часть или Microsoft Teams вкладки. Компоненты основаны на веб-стандартах и могут быть использованы как в простых проектах JavaScript, так и в популярных веб-инфраструктурах, таких как Reach, Angular, Vue.js и многое другое.
+Компоненты microsoft Graph набор средств легко можно добавить в ваше веб-приложение, SharePoint веб-часть или Microsoft Teams вкладки. Компоненты основаны на веб-стандартах и могут использоваться как в обычных проектах JavaScript, так и в популярных веб-инфраструктурах, таких как Reach, Angular, Vue.js и других.
 
-Вы можете посмотреть это короткое видео, чтобы увидеть, как быстро и легко начать работу с набор средств.
+Вы можете просмотреть это короткое видео, чтобы узнать, как быстро и легко начать работу с набор средств.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
-Для пошагового учебника [](/learn/modules/msgraph-toolkit-intro/)с Graph набор средств м. 
+Пошаговую инструкцию см. в руководстве [Get started with Microsoft Graph набор средств.](/learn/modules/msgraph-toolkit-intro/) 
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Настройка клиента Microsoft 365
-Для того, чтобы развиваться с набор средств, вам нужен доступ к Microsoft 365 арендатору. Если у вас его нет, вы можете получить бесплатную подписку Microsoft 365 разработчика, [присоединившись к Microsoft 365 developer Program.](https://developer.microsoft.com/microsoft-365/dev-program) Подробную информацию о настройке подписки можно найти в [приложении Microsoft 365 разработчика.](/office/developer-program/microsoft-365-developer-program-get-started)
+Чтобы развиваться с помощью набор средств, вам необходим доступ к Microsoft 365 клиента. Если у вас его нет, вы можете получить бесплатную подписку Microsoft 365 разработчика, присоединившись [к программе Microsoft 365 разработчика](https://developer.microsoft.com/microsoft-365/dev-program). Сведения о настройке подписки см. в материале [Настройка подписки Microsoft 365 разработчика.](/office/developer-program/microsoft-365-developer-program-get-started)
 
 ## <a name="set-up-your-development-environment"></a>Настройка среды разработки
-Для разработки с набор средств, вам понадобится текстовый редактор или IDE. Вы можете использовать редактор или IDE по вашему выбору или установить [и Visual Studio Code](https://code.visualstudio.com/download) бесплатно. Вам также понадобится современный веб-браузер, как Microsoft Edge, Google Chrome, или Firefox. Вам также понадобится LTS версия Node.js, которую вы можете установить с [nodejs.org](https://nodejs.org).
+Для разработки набор средств текстового редактора или IDE. Вы можете использовать редактор или IDE по вашему выбору или установить и [использовать Visual Studio Code](https://code.visualstudio.com/download) бесплатно. Вам также понадобится современный веб-браузер, Microsoft Edge, Google Chrome или Firefox. Вам также понадобится версия LTS Node.js, которую можно установить с [nodejs.org](https://nodejs.org).
 
 ## <a name="using-the-microsoft-graph-toolkit"></a>Использование microsoft Graph набор средств
 Используйте Microsoft Graph Toolkit в приложении, обратившись непосредственно к загрузчику (через unpkg) или установив пакет npm.
@@ -44,7 +44,7 @@ ms.locfileid: "52579594"
 ```cmd
 npm install @microsoft/mgt
 ```
-Теперь вы можете со ссылкой на все компоненты страницы, которую вы используете:
+Теперь вы можете ссылаться на все компоненты страницы, которые вы используете:
 
 ```html
 <script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
@@ -59,63 +59,63 @@ npm install @microsoft/mgt
 
 ## <a name="npm-packages"></a>Пакеты NPM
 
-Microsoft Graph набор средств состоит из нескольких пакетов NPM, что позволяет включать только код, который вам нужен для ваших приложений.
+Microsoft Graph набор средств состоит из нескольких пакетов NPM, что позволяет включать только код, необходимый для приложений.
 
-<b>@microsoft/mgt-элемент</b>
+<b>@microsoft/mgt-element</b>
 
-Это `@microsoft/mgt-element` основной пакет, содержащий только базовые классы, используемые для создания компонентов и поставщиков. Этот пакет предоставляет все необходимые классы и интерфейсы, необходимые для создания собственных компонентов и [экспорта интерфейса IProvider и класса SimpleProvider](../providers/custom.md) для создания пользовательских поставщиков.
+Основной пакет содержит только базовые классы, используемые для создания `@microsoft/mgt-element` компонентов и поставщиков. Этот пакет предоставляет все необходимые классы и интерфейсы, необходимые для создания собственных компонентов, и экспортирует [интерфейс IProvider и класс SimpleProvider](../providers/custom.md) для создания настраиваемого поставщика.
 
-<b>@microsoft/mgt-компоненты</b>
+<b>@microsoft/mgt-components</b>
 
-Пакет `@microsoft/mgt-components` содержит все веб-компоненты microsoft Graph подключенные веб-компоненты, `Person` такие как , и многое `PeoplePicker` другое. 
+Пакет содержит все подключенные Graph Майкрософт `@microsoft/mgt-components` веб-компоненты, такие как , и `Person` `PeoplePicker` более. 
 
 **Поставщики**
 
-Поставщики доступны через единый пакет и могут быть установлены по мере необходимости. Доступны следующие пакеты поставщиков:
+Поставщики доступны через один пакет и могут быть установлены по мере необходимости. Доступны следующие пакеты поставщиков:
 
 - <b>@micosoft/mgt-msal-provider</b>
 
-    [`@micosoft/mgt-msal-provider`](../providers/msal.md) содержит компонент `MsalProvider` `mgt-msal-provider` и компонент. Поставщик MSAL использует вебmsal.js для проверки подлинности в веб-приложениях и прогрессивных веб-приложениях (PWAs).
+    [`@micosoft/mgt-msal-provider`](../providers/msal.md) содержит `MsalProvider` и `mgt-msal-provider` компонент. Поставщик MSAL использует msal.js для проверки подлинности в веб-приложениях и прогрессивных веб-приложениях (PWAs).
 
-- <b>@micosoft/mgt-msal2-провайдер</b>
+- <b>@micosoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) содержит компонент `Msal2Provider` `mgt-msal2-provider` и компонент. Поставщик MSAL использует msal-браузер для аутентификации в веб-приложениях и PWAs.
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) содержит `Msal2Provider` и `mgt-msal2-provider` компонент. Поставщик MSAL использует msal-browser для проверки подлинности в веб-приложениях и PWAs.
 
--  <b>@microsoft/mgt-команд-провайдер</b>
+-  <b>@microsoft/mgt-teams-provider</b>
 
-    [`@microsoft/mgt-teams-provider`](../providers/teams.md) содержит компонент `TeamsProvider` `mgt-teams-provider` и компонент. Поставщик Microsoft Teams позволяет аутентификацию в Microsoft Teams вкладке.
+    [`@microsoft/mgt-teams-provider`](../providers/teams.md) содержит `TeamsProvider` и `mgt-teams-provider` компонент. Поставщик Microsoft Teams включает проверку подлинности в Microsoft Teams вкладке.
 
-- <b>@microsoft/mgt-sharepoint-провайдер</b>
+- <b>@microsoft/mgt-sharepoint-provider</b>
 
-    [`@microsoft/mgt-sharepoint-provider`](../providers/sharepoint.md)содержит `SharePointProvider` аутентификацию в SharePoint среде. 
+    [`@microsoft/mgt-sharepoint-provider`](../providers/sharepoint.md)содержит `SharePointProvider` для проверки подлинности в SharePoint среде. 
 
-- <b>@microsoft/mgt-прокси-провайдер</b>
+- <b>@microsoft/mgt-proxy-provider</b>
 
-    [`@microsoft/mgt-proxy-provider`](../providers/proxy.md)содержит `ProxyProvider` приложение, которое прокси-Graph звонки через службу бэкэнда. 
+    [`@microsoft/mgt-proxy-provider`](../providers/proxy.md)содержит `ProxyProvider` приложение, которое Graph через службу backend. 
 
 <b>@microsoft/mgt</b>
 
-Основной `@microsoft/mgt` пакет, который включает в себя все вышеперечисленные пакеты и реапорт их, чтобы они были доступны через один пакет, который вы можете установить. 
+Это основной пакет, который включает все вышеперечисленные пакеты и повторно экспортирует их, чтобы они были доступны с помощью одного `@microsoft/mgt` пакета, который можно установить. 
 
-<b>@microsoft/mgt-реакция</b>
+<b>@microsoft/mgt-react</b>
 
-Пакет [`@microsoft/mgt-react`](./mgt-react.md) содержит все автоматически генерируемые React компоненты и принимает зависимость от `@microsoft/mgt` пакета.
+Пакет содержит все автоматически созданные [`@microsoft/mgt-react`](./mgt-react.md) React и принимает зависимость от `@microsoft/mgt` пакета.
 
 <b>@microsoft/mgt-spfx</b>
 
-Пакет [`@microsoft/mgt-spfx`](./mgt-spfx.md) содержит библиотеку SharePoint Framework, которая требуется для использования майкрософт Graph набор средств в SharePoint Framework решениях.
+Пакет содержит библиотеку SharePoint Framework, которая необходима для использования [`@microsoft/mgt-spfx`](./mgt-spfx.md) Microsoft Graph набор средств в SharePoint Framework решениях.
 
 ## <a name="polyfills"></a>Полизаполнение
 
-Если вы используете модули ES6 из пакета npm и ориентируетесь [на браузер, такой как IE11, который](https://caniuse.com/#search=components) не поддерживает веб-компоненты на родном языке, вам нужно будет включить полифилли в свой проект, так как они не включены автоматически. Полифилы помогают заполнить недостающие возможности браузера в браузерах, которые все еще находятся в процессе обновления для поддержки стандартов Web Component. Для получения инструкций и узнать больше, [см поликлифы документации](https://www.webcomponents.org/polyfills). 
+Если вы используете модули ES6 из пакета npm и нацеливались на такой браузер, как [IE11,](https://caniuse.com/#search=components) который не поддерживает веб-компоненты, необходимо включить полифилы в проект, так как они не включаются автоматически. Полифильмы помогают заполнить недостающие возможности браузера в браузерах, которые еще находятся в процессе обновления для поддержки стандартов веб-компонентов. Дополнительные инструкции см. в документации [по полифилям.](https://www.webcomponents.org/polyfills) 
 
-Полифилы уже включены, если вы используете набор средств через скрипт mgt-loader.
+Полифильмы уже включены, если вы используете набор средств с помощью скрипта mgt-loader.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-Теперь вы готовы начать разработку с помощью Microsoft Graph набор средств! Доступны следующие руководства, которые помогут вам начать работу:
+Теперь вы готовы начать разработку с помощью microsoft Graph набор средств! Для начала работы доступны следующие руководства:
 
 - [Регистрация приложения Azure Active Directory](./add-aad-app-registration.md)
-- [Создайте веб-приложение (JavaScript)](./build-a-web-app.md) (ванильный JavaScript)
+- [Создание веб-приложения (JavaScript)](./build-a-web-app.md) (ванильный JavaScript)
 - [Создание веб-приложения (React)](./use-toolkit-with-react.md)
 - [Создание веб-приложения (Angular)](./use-toolkit-with-angular.md)
 - [Создание веб-части SharePoint](./build-a-sharepoint-web-part.md)
