@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 51fc61ce186b0346bc065ddc5dfea40158758223
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 80d415125679ddbb44a08fe75f33b115e4ba1f04
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469799"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579748"
 ---
 # <a name="accessreviewinactiveusersqueryscope-resource-type"></a>accessReviewInactiveUsersQueryScope
 
@@ -19,29 +19,21 @@ ms.locfileid: "51469799"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Тип [accessReviewQueryScope,](../resources/accessreviewqueryscope.md) который позволяет выбирать только неактивных пользователей в области обзора доступа.
+Тип [accessReviewQueryScope,](../resources/accessreviewqueryscope.md) который позволяет выбирать только неактивных пользователей в области обзора доступа. Продолжительность неактивности рассчитывается на основе последней даты регистрации пользователя с датой начала проверки доступа экземпляра, как определено в свойстве параметров [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). 
 
 Наследует [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|inactiveDuration|Duration|Определяет продолжительность периода бездействия. Неактивность основана на последнем знаке даты пользователя.|
-|Запрос|String|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
-|queryRoot|String|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
-|queryType|String|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|inactiveDuration|Длительность|Определяет продолжительность бездействия. Неактивность основана на последнем знаке даты пользователя по сравнению с датой начала проверки доступа. Если это свойство не указано, ему назначено значение по `PT0S` умолчанию.|
+|Запрос|Строка|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryRoot|Строка|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryType|Строка|Наследуется [от accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
-### <a name="supported-queries-for-accessreviewinactiveuserqueryscope-as-scope"></a>Поддерживаемые запросы для accessReviewInactiveUserQueryScope в качестве области
-Те же запросы, поддерживаемые [в accessReviewScope,](../resources/accessreviewscope.md) также поддерживаются в accessReviewInactiveUserQueryScope. Ниже приводится запрос. Они поддерживаются как `scope` свойство [в accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
+Также необходимо указать **свойство @odata.type** со значением `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Дополнительные информацию о  параметрах конфигурации области с помощью **accessReviewInactiveUsersQueryScope** см. в рубрике Настройка области определения обзора доступа с помощью [API](/graph/accessreviews-scope-concept)Microsoft Graph.
 
-|Сценарий| Запрос |
-|--|--|
-| Просмотр всех неактивных гостевых пользователей, назначенных группе | /groups/{group ID}/transitiveMembers/microsoft.graph.user/? \$ count=true&$filter=(userType eq 'Guest') |
-| Просмотр всех неактивных пользователей, заметив группу | /groups/{group ID}/transitiveMembers |
-| Просмотр всех неактивных гостевых пользователей, назначенных всем группам | ./members/microsoft.graph.user/? \$ count=true&$filter=(userType eq 'Guest') |
-
-
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

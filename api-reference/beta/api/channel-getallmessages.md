@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9d8f4ed1db42b7d5f35d12f8f612bc544ef6e4c2
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 3174401b2d25bf2c7c00f0cffca2c048af7deca6
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51610989"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546125"
 ---
 # <a name="channel-getallmessages"></a>канал: getAllMessages
 
@@ -18,11 +18,13 @@ ms.locfileid: "51610989"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [сообщений](../resources/chatmessage.md) из всех [каналов](../resources/channel.md) в [команде](../resources/team.md), включая текстовые, аудио и видео сообщения.
+Извлечение [сообщений](../resources/chatmessage.md) из всех [каналов](../resources/channel.md) в [команде](../resources/team.md), включая текстовые, аудио и видео сообщения. 
+
+Дополнительные сведения об использовании API экспорта Microsoft Teams для экспорта содержимого см. в статье [Экспорт содержимого с помощью API экспорта Microsoft Teams](/microsoftteams/export-teams-content).
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуются разрешения ниже. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуются указанные ниже разрешения. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,7 +45,7 @@ GET /teams/{team-id}/channels/getAllMessages
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике.
-Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
+Кроме того, [$filter](/graph/query-parameters#filter-parameter) поддерживается в запросе диапазона **dateTime** ресурса **lastModifiedDateTime**. Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
 
 ## <a name="request-body"></a>Текст запроса
 

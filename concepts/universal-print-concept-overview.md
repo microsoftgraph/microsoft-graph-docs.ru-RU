@@ -3,14 +3,14 @@ title: Обзор API облачной среды универсальной п�
 description: Универсальная печать — это современное решение печати, которое можно использовать в организациях для управления инфраструктурой печати через облачные службы от Майкрософт.
 author: braedenp-msft
 localization_priority: Priority
-ms.prod: universal-print
+ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b7472fc42af137c32e323815cc77cedb410392ea
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ee7d5814288af54b8b7829497409668e51e95433
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515746"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546973"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Обзор API облачной среды универсальной печати
 
@@ -96,7 +96,7 @@ API универсальной печати Microsoft Graph позволяет �
 
 ## <a name="provide-feedback"></a>Предоставление отзывов
 
-Мы будем рады узнать ваше мнение об API универсальной печати. Предоставьте свои предложения на сайте [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+Мы будем рады узнать ваше мнение об API универсальной печати. Укажите свои предложения на [форуме идей платформы для разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## <a name="see-also"></a>См. также
 

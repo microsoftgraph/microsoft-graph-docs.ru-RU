@@ -1,16 +1,16 @@
 ---
 title: 'cloudPcDeviceImage: getSourceImages'
-description: Просмотреть список всех ресурсов управляемых изображений из подписок Azure. Эти исходные изображения можно загрузить и использовать на облачных ПК.
+description: Просмотр списка всех управляемых ресурсов изображений из подписки Azure. Эти исходные изображения можно загружать и использовать на облачных ПК.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1ddd7fdef827328f6f72b52af5a992e9f0d69653
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 338f05f7ae2645c76b9ddb34a0d1af6f29beb35f
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872781"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546849"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage: getSourceImages
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872781"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [объекты cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md) Просмотреть список всех ресурсов управляемых изображений из подписок Azure Active Directory.
+Получите [объекты cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md) Просмотр списка всех управляемых ресурсов изображений из Azure Active Directory подписки.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "49872781"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает код отклика и коллекцию `200 OK` [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

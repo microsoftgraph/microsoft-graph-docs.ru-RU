@@ -5,14 +5,14 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c1e278ac26e86417432159e6a191a6bf0606813b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 9a125cbd111a4646f6f7a07ddd4a44b6aab34053
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873978"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547024"
 ---
-# <a name="list-deviceimages"></a>Список deviceImages
+# <a name="list-deviceimages"></a>Список устройствImages
 
 Пространство имен: microsoft.graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "49873978"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает и `$select` `$filter` параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметры `$filter` запроса OData и помогает настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

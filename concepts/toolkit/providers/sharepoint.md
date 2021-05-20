@@ -3,12 +3,12 @@ title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы предоставить компонентам доступ к Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 2dc020dbe02a5b3018c1bfb343b7582f8a6110e5
-ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.openlocfilehash: c052c3a5bc790b7e9e4316c4a8a8aac4d2d3d7dd
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072347"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579692"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 
@@ -22,11 +22,11 @@ ms.locfileid: "50072347"
 
 ```ts
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt';
+import {Providers, SharePointProvider} from '@microsoft/mgt-spfx';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
-    Providers.globalProvider = new SharePointProvider(this.context);
+  Providers.globalProvider = new SharePointProvider(this.context);
 }
 ```
 
@@ -34,17 +34,17 @@ protected async onInit() {
 
 ```ts
 public render(): void {
-    this.domElement.innerHTML = `
-      <mgt-agenda></mgt-agenda>
-      `;
-  }
+  this.domElement.innerHTML = `
+    <mgt-agenda></mgt-agenda>
+    `;
+}
 ```
 
->**Примечание.** Microsoft Graph Toolkit требует использования TypeScript 3.x. Убедитесь, что вы используете поддерживаемую версию TypeScript, [установив соответствующий компилятор](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
+>**Примечание:** Microsoft Graph набор средств typescript 3.7 или более новый. Убедитесь, что вы используете поддерживаемую версию TypeScript, [установив соответствующий компилятор](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 
 ## <a name="sample"></a>Пример
 
-Сведения о том, как инициализировать поставщика SharePoint, см. в руководстве по началу работы с веб-частью "Создание веб-части [SharePoint".](../get-started/build-a-sharepoint-web-part.md)
+Сведения о том, как инициализировать SharePoint поставщика, см. в руководстве [Сборка](../get-started/build-a-sharepoint-web-part.md) SharePoint веб-части.
 
 Пример готовой веб-части, в котором показано, как использовать различные компоненты в веб-частях SharePoint, см. в статье [Пример веб-части SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) в репозитории Microsoft Graph Toolkit.
 

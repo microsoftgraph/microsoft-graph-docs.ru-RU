@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 31c803ccc82deaacddd81a70691e6570a044b5a1
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: add460d4f88d80c6d318a5c8c8c6d1171fa9cf31
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298540"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547220"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -72,7 +72,7 @@ ms.locfileid: "52298540"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
 |Справочные материалы|
 |В двоичном формате|
@@ -326,7 +326,7 @@ ms.locfileid: "52298540"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -397,7 +397,7 @@ ms.locfileid: "52298540"
 |все|
 |privilegedAdmin|
 |Администратор|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>значения includedUserTypes 
@@ -413,7 +413,7 @@ ms.locfileid: "52298540"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -473,7 +473,7 @@ ms.locfileid: "52298540"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -698,7 +698,7 @@ ms.locfileid: "52298540"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -727,7 +727,7 @@ ms.locfileid: "52298540"
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |свадьба|
 |unknownFutureValue|
 
@@ -798,7 +798,7 @@ ms.locfileid: "52298540"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1249,7 +1249,7 @@ ms.locfileid: "52298540"
 | Автоматически
 | noPreview
 | checklist
-| (описание)
+| description
 | справочник
 
 
@@ -1311,7 +1311,7 @@ ms.locfileid: "52298540"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1674,7 +1674,7 @@ Enum для серьезности оповещений.
 | Элемент | Значение |
 | :----- | :---- |
 | Нет   | 0     |
-| Add    | 1     |
+| Добавление    | 1     |
 | Update | 2     |
 | Delete | 4      |
 
@@ -1733,7 +1733,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |signin|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>значения chatMessagePolicyViolationUserActionType
@@ -1908,7 +1908,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Угроза почты.            |
+| mail   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1940,7 +1940,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| user          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -2031,7 +2031,7 @@ Enum для серьезности оповещений.
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
 |boolean | Столбец Да/Нет. |
-|пользователь | столбец персоны или группы. |
+|user | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
 |расположение | столбец расположения. |
@@ -2061,7 +2061,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>значения identityUserFlowAttributeDataType
@@ -2167,11 +2167,19 @@ Enum для серьезности оповещений.
 |другие|
 |unknownFutureValue|
 
+### <a name="policyscope-values"></a>значения policyScope
+
+|Member|
+|:---|
+|нет|
+|все|
+|выбранный|
+
 ### <a name="teamsappinstallationscope-values"></a>teamsAppInstallationScope values
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|команда      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 
@@ -2220,4 +2228,3 @@ Enum для серьезности оповещений.
 |:---|
 |основной|
 |unknownFutureValue|
-

@@ -3,20 +3,20 @@ title: Тип ресурса alternativeSecurityId
 description: Только для внутреннего использования.
 localization_priority: Normal
 author: spunukol
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 82647c1bcc73444cc70febf53f8bdaf336b84ad4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 33658a93f3a495a13b2300704cb7b677dc380d84
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041696"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547634"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Тип ресурса alternativeSecurityId
 
 Пространство имен: microsoft.graph
 
-Только для внутреннего использования. В будущем этот сложный тип будет устаревшим.
+Только для внутреннего использования. Этот сложный тип будет увекать в будущем.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -37,6 +37,6 @@ ms.locfileid: "48041696"
 | Свойство         | Тип       | Описание
 |:-----------------|:-----------|:---------------------
 | type             | Int32      | Только для внутреннего использования
-| identityProvider | string     | Только для внутреннего использования
+| identityProvider | Строка     | Только для внутреннего использования
 | ключа              | Edm.Binary | Только для внутреннего использования
 

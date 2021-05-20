@@ -4,22 +4,22 @@ description: Описаны поддерживаемые наборы данны
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: dd339d15e9372440a2377d4c4182c482339e3ffa
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fd4fbac34f4b03a3802de4834f0c02045d57c4ea
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289360"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547627"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Наборы данных, регионы и приемники, поддерживаемые подключением к данным Microsoft Graph
 
 Подключение к данным Microsoft Graph поддерживает разные наборы данных, регионы данных и места хранения в Microsoft Azure. В этой статье описаны поддерживаемые наборы данных и способы доступа к схемам наборов данных, поддерживаемые регионы Microsoft 365 и Microsoft Azure, а также места хранения, используемые подключением к данным с помощью фабрики данных Azure.
 
-Чтобы запросить поддержку дополнительных наборов данных, регионов или приемников, свяжитесь с нами в [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
+Чтобы запросить поддержку дополнительных наборов данных, регионов или приемников, дайте нам знать на [форуме идей платформы разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## <a name="datasets"></a>Наборы данных
 
-В настоящий момент подключение к данным поддерживает следующие наборы данных. Чтобы просмотреть схемы для каждого набора данных, создайте новый набор данных в фабрике данных Azure и используйте для просмотра вкладку "Схема". 
+В настоящее время подключение к данным поддерживает следующие наборы данных. Чтобы просмотреть схемы для каждого набора данных, создайте новый набор данных в фабрике данных Azure и используйте для просмотра вкладку "Схема". 
 
 |Имя набора данных|Описание|
 |-------------|-----------|
@@ -28,7 +28,7 @@ ms.locfileid: "48289360"
 |BasicDataSet_v0.Message_v0|Содержит сообщение из почтового ящика каждого пользователя. Схема для этих объектов напоминает [схему сообщений Microsoft Graph](/graph/api/resources/message).| 
 |BasicDataSet_v0.SentItem_v0|Содержит сообщения, отправленные из почтового ящика каждого пользователя. Схема для этих объектов напоминает [схему сообщений Microsoft Graph](/graph/api/resources/message).| 
 |BasicDataSet_v0.User_v0|Содержит сведения о пользователе (DisplayName, UserPrincipalName и т. д.).| 
-|BasicDataSet_v0.MailboxSettings_v0|Содержит параметры почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме параметров почтового ящика Microsoft Graph](/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
+|BasicDataSet_v0.MailboxSettings_v0|Содержит параметры почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме параметров почтового ящика Microsoft Graph](/graph/api/resources/mailboxsettings).| 
 |BasicDataSet_v0.MailFolder_v0|Содержит папки почты из почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме папок почты Microsoft Graph](/graph/api/resources/mailfolder).|
 |BasicDataSet_v0.Manager_v0|Содержит сведения о пользователе для руководителя каждого пользователя. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](/graph/api/resources/user).|
 |BasicDataSet_v0.DirectReport_v0|Содержит сведения о сотрудниках, находящихся в непосредственном подчинении каждого пользователя. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](/graph/api/resources/user).|

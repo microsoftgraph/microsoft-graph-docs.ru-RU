@@ -5,20 +5,22 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d148db0712ffbfb9ca41ba1c62e13c90c852cbc6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d750145561adefd7532e23ab6cbfc9bff8efe59
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444751"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546954"
 ---
 # <a name="delete-userflowlanguageconfiguration"></a>Удаление userFlowLanguageConfiguration
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Удаляет объект [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) из потока [пользователей Azure AD B2C.](../resources/b2cidentityuserflow.md)
 
-**Примечание:** Нельзя удалять языки из потока [пользователей Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Примечание:** Нельзя удалять языки из потока [Azure Active Directory пользователя.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +35,7 @@ ms.locfileid: "50444751"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +54,7 @@ DELETE /identity/b2cUserFlows/{id}/languages/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

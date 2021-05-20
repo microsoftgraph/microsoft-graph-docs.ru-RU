@@ -3,14 +3,14 @@ title: Выберите поставщика проверки подлиннос
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 0cdc407187ea0b5befc3704f877b1df11aeda545
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 45fc7cf4c142b6fe3fc3bd97cc7556e09cd51a44
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475537"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547143"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выберите поставщика проверки подлинности Graph Майкрософт в зависимости от сценария
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выбор поставщика проверки подлинности Microsoft Graph на основе сценария
 
 Поставщики проверки подлинности реализуют код, необходимый для приобретения маркера с помощью Библиотеки проверки подлинности Майкрософт (MSAL); обработка ряда потенциальных ошибок для таких случаев, как постепенное согласие, просроченные пароли и условный доступ; а затем установите заглавную головку авторизации http-запроса. В следующей таблице перечислены поставщики, которые соответствуют сценариям для различных [типов приложений.](/azure/active-directory/develop/v2-app-types)
 
@@ -87,11 +87,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Пока недоступна. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Пока недоступна. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 ---
 
@@ -145,11 +145,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 ---
 
@@ -175,7 +175,7 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="java"></a>[Java](#tab/Java)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -187,11 +187,11 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 ---
 
@@ -265,7 +265,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -298,11 +298,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 ---
 
@@ -363,7 +363,7 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -449,7 +449,7 @@ User me = await graphClient.Me.Request()
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -481,11 +481,11 @@ final User me = graphClient.me().buildRequest().get();
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) если это важно для вас.
+Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
 
 ---
 

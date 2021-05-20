@@ -1,16 +1,16 @@
 ---
 title: Get cloudPcOnPremisesConnection
-description: Чтение свойств и связей объекта cloudPcOnPremisesConnection.
+description: Ознакомьтесь с свойствами и отношениями объекта cloudPcOnPremisesConnection.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: c1d9945b9fb5458ec5e497f8b757d07388d73f8b
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 291e6e17494bf8dcfc467b8d3c594f27d6b2e710
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158277"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546842"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>Get cloudPcOnPremisesConnection
 
@@ -18,7 +18,7 @@ ms.locfileid: "50158277"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+Ознакомьтесь с свойствами и отношениями объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "50158277"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-|Для приложений| Не поддерживается.|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметр запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,11 +58,11 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>Пример 1. Получите свойства локального подключения по умолчанию
+### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>Пример 1. Получить свойства локального подключения по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>Пример 2. Получите выбранные свойства локального подключения, включая healthCheckStatusDetails
+### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>Пример 2. Получить выбранные свойства локального подключения, включая healthCheckStatusDetails
 
 #### <a name="request"></a>Запрос
 

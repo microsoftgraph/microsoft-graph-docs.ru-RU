@@ -4,12 +4,12 @@ description: Советы, помогающие воспользоваться �
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7a4672d90b43a983efb6e1d327e184e51e8f0f39
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d9a87c629a80bc94c57e77bd0f2c0b1e7438c935
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289242"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547606"
 ---
 # <a name="tips-for-using-microsoft-graph-data-connect"></a>Советы по использованию подключения к данным Microsoft Graph
 
@@ -62,4 +62,4 @@ ms.locfileid: "48289242"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-С запросами новых функций обращайтесь на сайт [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
+Обратитесь на [форум идей платформы для разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph), чтобы запросить функции.

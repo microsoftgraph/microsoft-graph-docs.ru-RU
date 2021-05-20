@@ -1,25 +1,25 @@
 ---
-title: Страница через коллекцию с помощью пакетов SDK Microsoft Graph
-description: Содержит инструкции по созданию запросов API Microsoft Graph с помощью пакетов SDK Microsoft Graph.
+title: Страница через коллекцию с помощью SDKs Graph Microsoft
+description: Содержит инструкции по созданию запросов Graph API Майкрософт с помощью SDKs Graph Microsoft.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: ef48af29a4cc0388c405e2a42894d98ce6c98010
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 467a1114781105a0799724c8a072f19324948552
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289491"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546926"
 ---
-# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Страница через коллекцию с помощью пакетов SDK Microsoft Graph
+# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Страница через коллекцию с помощью SDKs Graph Microsoft
 
-В целях повышения производительности коллекции сущностей часто делятся на страницы, и каждая страница возвращается с URL-адресом на следующую страницу. Класс **пажеитератор** упрощает использование постраничных коллекций. **Пажеитератор** обрабатывает перечисление текущей страницы и автоматический запрос последующих страниц.
+По причинам производительности коллекции сущностями часто разбивают на страницы, и каждая страница возвращается с URL-адресом на следующую страницу. Класс **PageIterator** упрощает потребление страницных коллекций. **PageIterator** обрабатывает переописание текущей страницы и автоматически запрашивает последующие страницы.
 
-## <a name="iterate-over-all-the-messages"></a>Итерация по всем сообщениям
+## <a name="iterate-over-all-the-messages"></a>Итерировать все сообщения
 
-В приведенном ниже примере показано, как выполняется итерация по всем сообщениям в почтовом ящике пользователя.
+В следующем примере показано итерирование всех сообщений в почтовом ящике пользователя.
 
 > [!TIP]
-> В этом примере задается небольшой размер страницы с помощью `top` параметра для демонстрационных целей. Вы можете задать размер страницы до 999, чтобы свести к минимуму необходимое количество запросов.
+> В этом примере устанавливается небольшой размер страницы с `top` использованием параметра для демонстрационных целей. Можно установить размер страницы до 999, чтобы свести к минимуму количество необходимых запросов.
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -69,7 +69,7 @@ await pageIterator.iterate();
 ### <a name="java"></a>[Java](#tab/java)
 
 ```java
-IMessageCollectionPage messagesPage = graphClient.me().messages()
+final MessageCollectionPage messagesPage = graphClient.me().messages()
     .buildRequest()
     .select("Sender,Subject")
     .top(10)
@@ -77,8 +77,8 @@ IMessageCollectionPage messagesPage = graphClient.me().messages()
 
 
 while(messagesPage != null) {
-  final List<Message> messages = messagesPage.GetCurrentPage();
-  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
+  final List<Message> messages = messagesPage.getCurrentPage();
+  final MessageCollectionRequestBuilder nextPage = messagesPage.getNextPage();
   if(nextPage == null) {
     break;
   } else {
@@ -89,9 +89,9 @@ while(messagesPage != null) {
 
 ---
 
-## <a name="stopping-and-resuming-the-iteration"></a>Остановка и возобновление итерации
+## <a name="stopping-and-resuming-the-iteration"></a>Остановка и повторное итерация
 
-В некоторых сценариях требуется остановить процесс итерации, чтобы выполнить другие действия. Можно приостановить итерацию, вернувшись `false` из обратного вызова итерации. Итерацию можно возобновить, вызвав `resume` метод в **пажеитератор**.
+Некоторые сценарии требуют остановки процесса итерации для выполнения других действий. Можно приостановить итерацию, возвращаясь из обратного `false` вызова итерации. Итерация может быть возобновлена путем вызова `resume` метода на **PageIterator**.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)

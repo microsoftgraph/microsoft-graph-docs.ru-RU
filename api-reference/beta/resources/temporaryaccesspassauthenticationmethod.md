@@ -5,12 +5,12 @@ author: inbarckms
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d847e70fcbb3fae923b8ad7e130a38f2dc51715f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1d4b084bdb66215bb60990c62dbfa6682bafe0b1
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050684"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546947"
 ---
 # <a name="temporaryaccesspassauthenticationmethod-resource-type"></a>temporaryAccessPassAuthenticationMethod type
 
@@ -21,11 +21,12 @@ ms.locfileid: "52050684"
 Представляет временный пропуск доступа, зарегистрированный пользователю. Временный пропуск доступа — это ограниченный по времени пароль, который служит прочным учетным данным и позволяет использовать учетные данные без паролей.
 
 ## <a name="methods"></a>Методы
+
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Список](../api/temporaryaccesspassauthenticationmethod-list.md)|[коллекция temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Извлечение списка временных **объектовAccessPassAuthenticationMethod** и их свойств. У пользователей может быть только один метод проверки подлинности временных пропусков доступа.|
 |[Создание](../api/temporaryaccesspassauthenticationmethod-post.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Создайте временный **объектAccessPassAuthenticationMethod.**|
-|[получение](../api/temporaryaccesspassauthenticationmethod-get.md);|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Извлечение свойств объекта **temporaryAccessPassAuthenticationMethod** пользователя.||
+|[получение](../api/temporaryaccesspassauthenticationmethod-get.md);|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Извлечение свойств объекта **temporaryAccessPassAuthenticationMethod** пользователя.|
 |[удаление](../api/temporaryaccesspassauthenticationmethod-delete.md);|Нет|Удаление объекта **temporaryAccessPassAuthenticationMethod** пользователя.|
 
 ## <a name="properties"></a>Свойства

@@ -3,14 +3,14 @@ title: тип ресурса licenseDetails
 description: Содержит сведения о лицензии, назначенной пользователю.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: users
 author: jpettere
-ms.openlocfilehash: 7a00c1aa5de5684c71a1d83f00b303ada6f54056
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c74c7e229bedffd32dccdfc0a62d7164985e2f4c
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720524"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547073"
 ---
 # <a name="licensedetails-resource-type"></a>тип ресурса licenseDetails
 

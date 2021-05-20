@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса conditionalAccessApplications
-description: Представляет приложения и действия пользователей, включенные в область политики и исключенные из нее.
+title: тип ресурса conditionalAccessApplications
+description: Представляет приложения и действия пользователей, включенные и исключенные из области политики.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0a787a1c22209b502e4eed68790629e2e6e1b03b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d688b529e32390c2330cf8cb3558994c3e752a25
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137403"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547685"
 ---
-# <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса conditionalAccessApplications
+# <a name="conditionalaccessapplications-resource-type"></a>тип ресурса conditionalAccessApplications
 
 Пространство имен: microsoft.graph
 
@@ -24,9 +24,10 @@ ms.locfileid: "50137403"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| includeApplications | Коллекция объектов string | Список ИД приложений, к которых применяется политика, за исключением явно исключенных (в excludeApplications). Также может быть установлено в `All` . |
-| excludeApplications | Коллекция объектов string | Список ИД приложений, явно исключенных из политики. |
-| includeUserActions | Коллекция объектов string | Действия пользователей, которые необходимо включить. Поддерживаемые `urn:user:registersecurityinfo` значения: `urn:user:registerdevice` |
+| includeApplications | Коллекция строк | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
+| excludeApplications | Коллекция строк | Список ID приложений явно исключен из политики. |
+| includeUserActions | Коллекция строк | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
+| includeAuthenticationContextClassReferences | Коллекция строк | Ссылки на класс контекста проверки подлинности включаются. Поддерживаемые значения `c1` проходят `c25` . |
 
 ## <a name="relationships"></a>Связи
 

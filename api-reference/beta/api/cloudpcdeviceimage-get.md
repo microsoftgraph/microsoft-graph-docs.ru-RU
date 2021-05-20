@@ -1,16 +1,16 @@
 ---
 title: Get cloudPcDeviceImages
-description: Чтение свойств и связей объекта cloudPcDeviceImage.
+description: Ознакомьтесь с свойствами и отношениями объекта cloudPcDeviceImage.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: dbc5849a368e4dc8601dd84b79237db3fe37f7ee
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1db3504d2915723d950ab6f52706429cedbd4765
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872788"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546856"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Get cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872788"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей определенного [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
+Ознакомьтесь с свойствами и отношениями определенного [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "49872788"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметр запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,7 +58,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

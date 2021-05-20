@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7eee91460c623be982cb316edae1c3c2f0734b07
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 89f990ab4692ec7fd4d6ce3b94ee4c4d4846c6c4
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442994"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547213"
 ---
 # <a name="invokeuserflowlistener-resource-type"></a>тип ресурса invokeUserFlowListener
 
@@ -18,7 +18,7 @@ ms.locfileid: "50442994"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете создать [invokeUserFlowListener](../resources/invokeuserflowlistener.md) для события onSignUpStart. Это связывает приложение с потоком пользователей, который позволяет самостоятельной регистрации внешних удостоверений [для](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) приложения. После того как приложение связано с потоком пользователей, пользователи, которые идут в это приложение, смогут инициировать поток регистрации, который содержит учетную запись для гостей.
+Вы можете создать [invokeUserFlowListener](../resources/invokeuserflowlistener.md) для события onSignUpStart. Это связывает приложение с потоком пользователей, который позволяет самостоятельной регистрации внешних удостоверений [для](/azure/active-directory/external-identities/self-service-sign-up-overview) приложения. После того как приложение связано с потоком пользователей, пользователи, которые идут в это приложение, смогут инициировать поток регистрации, который содержит учетную запись для гостей.
 
 Наследуется от абстрактного базового типа [authenticationListener](../resources/authenticationlistener.md).
 

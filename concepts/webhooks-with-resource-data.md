@@ -4,12 +4,12 @@ description: Microsoft Graph использует механизм веб-пер
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 12bbbc30d3735a7af487d6266b48e736769e994b
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 4da690a646c47ef857de860d36bde17a4ee26761
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387803"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547185"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Настройка уведомлений об изменениях, включающих данные ресурсов
 
@@ -17,7 +17,7 @@ Microsoft Graph позволяет приложениям подписывать
 
 Добавление данных ресурса в уведомления об изменениях требует реализации следующей дополнительной логики, чтобы выполнить требования по доступу к данным и их безопасности. 
 
-- [Применяйте](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications) специальные уведомления жизненного цикла подписки (предварительную версию), чтобы обеспечить непрерывный поток данных. Microsoft Graph периодически отправляет уведомления жизненного цикла, требуя от приложения повторной авторизации, чтобы обеспечить отсутствие неожиданных проблем с доступом при включении данных ресурсов в уведомления об изменениях.
+- [Применяйте](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)) специальные уведомления жизненного цикла подписки (предварительную версию), чтобы обеспечить непрерывный поток данных. Microsoft Graph периодически отправляет уведомления жизненного цикла, требуя от приложения повторной авторизации, чтобы обеспечить отсутствие неожиданных проблем с доступом при включении данных ресурсов в уведомления об изменениях.
 - [Проверяйте](#validating-the-authenticity-of-notifications) подлинность уведомлений об изменениях, подтверждая что их источником является Microsoft Graph.
 - [Предоставьте](#decrypting-resource-data-from-change-notifications) открытый ключ шифрования и используйте закрытый ключ для расшифровки данных ресурсов, полученных в уведомлениях об изменениях.
 
@@ -32,7 +32,7 @@ Microsoft Graph позволяет приложениям подписывать
 
 ## <a name="supported-resources"></a>Поддерживаемые ресурсы
 
-В настоящее время ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) и [presence](/graph/api/resources/presence?view=graph-rest-beta) (предварительная версия) в Microsoft Teams поддерживают уведомления об изменениях, включающие данные ресурсов. В частности, вы можете настроить подписку, относящуюся к одному из следующих элементов:
+В настоящее время ресурсы [chatMessage](/graph/api/resources/chatmessage) и [presence](/graph/api/resources/presence) (предварительная версия) в Microsoft Teams поддерживают уведомления об изменениях, включающие данные ресурсов. В частности, вы можете настроить подписку, относящуюся к одному из следующих элементов:
 
 - Новые или измененные сообщения в определенном канале Teams: `/teams/{id}/channels/{id}/messages`
 - Новые или измененные сообщения во всех каналах Teams всей организации (клиент): `/teams/getAllMessages`
@@ -42,7 +42,7 @@ Microsoft Graph позволяет приложениям подписывать
 
 Ресурсы **chatMessage** и **presence** (предварительная версия) поддерживают включение в уведомление об изменениях всех свойств измененного экземпляра. Они не поддерживают возвращение только выбранных свойств экземпляра. 
 
-В этой статье рассматривается пример подписки на уведомления об изменениях в канале Teams. При этом каждое уведомление об изменении содержит все данные ресурсов измененного экземпляра **chatMessage**. Дополнительные сведения о подписках на основе объекта **chatMessage** см. в статье [Получение уведомлений об изменениях для сообщений чатов и каналов](teams-changenotifications-chatmessage).
+В этой статье рассматривается пример подписки на уведомления об изменениях в канале Teams. При этом каждое уведомление об изменении содержит все данные ресурсов измененного экземпляра **chatMessage**. Дополнительные сведения о подписках на основе объекта **chatMessage** см. в статье [Получение уведомлений об изменениях для сообщений чатов и каналов](teams-changenotifications-chatmessage.md).
 
 ## <a name="creating-a-subscription"></a>Создание подписки
 
@@ -363,7 +363,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
 2. Обновите существующие подписки с использованием нового ключа сертификата.
 
     - Выполняйте это в рамках регулярного возобновления подписки. 
-    - Или перечислите все подписки и укажите ключ. Используйте [операцию PATCH для подписки](/graph/api/subscription-update?view=graph-rest-1.0) и обновите свойства **encryptionCertificate** и **encryptionCertificateId**.
+    - Или перечислите все подписки и укажите ключ. Используйте [операцию PATCH для подписки](/graph/api/subscription-update) и обновите свойства **encryptionCertificate** и **encryptionCertificateId**.
 
 3. Учитывайте следующее:
     - В течение некоторого периода времени старый сертификат по-прежнему можно использовать для шифрования. Чтобы расшифровать контент, у вашего приложения должен быть доступ как к старым, так и к новым сертификатам.
@@ -580,7 +580,7 @@ decryptedPayload += decipher.final('utf8');
 ## <a name="see-also"></a>См. также
 
 - [Настройка уведомлений об изменениях в пользовательских данных](webhooks.md)
-- [Тип ресурса subscription](/graph/api/resources/subscription?view=graph-rest-beta)
-- [Получение подписки](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [Обновление подписки](/graph/api/subscription-update?view=graph-rest-1.0)
+- [Тип ресурса subscription](/graph/api/resources/subscription)
+- [Получение подписки](/graph/api/subscription-get)
+- [Создание подписки](/graph/api/subscription-post-subscriptions)
+- [Обновление подписки](/graph/api/subscription-update)

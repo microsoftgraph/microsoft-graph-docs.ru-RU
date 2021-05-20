@@ -364,7 +364,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1409,9 +1409,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -9740,7 +9740,7 @@ items:
           - name: Сданная работа
             href: resources/educationsubmission.md
             items:
-              - name: Определение ресурса сданной работы
+              - name: Список ресурсов отправки
                 href: api/educationsubmission-list-resources.md
               - name: Добавление ресурса сданной работы
                 href: api/educationsubmission-post-resources.md
@@ -10403,6 +10403,33 @@ items:
                         href: api/subscribedsku-list.md
                       - name: Вывод объекта SubscribedSku
                         href: api/subscribedsku-get.md
+              - name: Политика управления мобильностью (Предварительный просмотр)
+                href: resources/mobilitymanagementpolicy.md
+                items:
+                  - name: Список политик управления мобильными устройствами
+                    href: api/mobiledevicemanagementpolicies-list.md
+                  - name: Получение
+                    href: api/mobiledevicemanagementpolicies-get.md
+                  - name: Обновление
+                    href: api/mobiledevicemanagementpolicies-update.md
+                  - name: 'Список, включаемый в группы'
+                    href: api/mobiledevicemanagementpolicies-list-includedgroups.md
+                  - name: Добавление включенных групп
+                    href: api/mobiledevicemanagementpolicies-post-includedgroups.md
+                  - name: Удаление включенных групп
+                    href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
+                  - name: Список политик управления мобильными приложениями
+                    href: api/mobileappmanagementpolicies-list.md
+                  - name: Получение
+                    href: api/mobileappmanagementpolicies-get.md
+                  - name: Обновление
+                    href: api/mobileappmanagementpolicies-update.md
+                  - name: 'Список, включаемый в группы'
+                    href: api/mobileappmanagementpolicies-list-includedgroups.md
+                  - name: Добавление включенных групп
+                    href: api/mobileappmanagementpolicies-post-includedgroups.md
+                  - name: Удаление включенных групп
+                    href: api/mobileappmanagementpolicies-delete-includedgroups.md
               - name: Управление ролью
                 href: resources/rolemanagement.md
                 items:
@@ -10712,8 +10739,10 @@ items:
                     href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                   - name: Удалить
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: условный доступ;
+              - name: Условный доступ
                 items:
+                  - name: Условный доступ
+                    href: resources/conditionalaccessroot.md
                   - name: Политики
                     items:
                       - name: Политика условного доступа
@@ -10768,6 +10797,18 @@ items:
                                 href: api/ipnamedlocation-update.md
                               - name: Delete
                                 href: api/ipnamedlocation-delete.md
+                  - name: Ссылки на класс контекста проверки подлинности
+                    items:
+                      - name: Ссылки на класс контекста проверки подлинности
+                        href: resources/authenticationcontextclassreference.md
+                      - name: Список
+                        href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+                      - name: Создание
+                        href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+                      - name: Получение
+                        href: api/authenticationcontextclassreference-get.md
+                      - name: Обновление
+                        href: api/authenticationcontextclassreference-update.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
                 items:
@@ -11878,7 +11919,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -12138,7 +12179,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Заметки
+              - name: Примечания
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -12944,7 +12985,7 @@ items:
                 href: api/list-create.md
               - name: Список дочерних сайтов
                 href: api/site-list-subsites.md
-              - name: Разрешения.
+              - name: Разрешения
                 items:
                   - name: Разрешение
                     href: resources/permission.md
@@ -13407,7 +13448,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение.
+          - name: Приложение
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md

@@ -5,14 +5,14 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: dcdfc94b3605b701f09f559c19e8975acf73a63d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f8be8cb35add43d85b12bb3d466821ed8fd579a3
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474091"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579741"
 ---
-# <a name="azure-ad-access-reviews-legacy"></a>Обзоры доступа к Azure AD (устаревшие)
+# <a name="azure-ad-access-reviews-deprecated"></a>Обзоры доступа Azure AD (неподготовленные)
 
 Пространство имен: microsoft.graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "51474091"
 
 - Клиенты могут собирать элементы управления обзором доступа в программы, релевантные для организации, для отслеживания отзывов на соответствие требованиям или приложений, чувствительных к риску.
 
-Кроме того, клиенты могут выполнять проверку и сертификацию назначений ролей административных пользователей, которым назначены роли Azure AD, такие как роли глобального администратора или подписки Azure.  Эта возможность включена в [Azure AD Privileged Identity Management.](privilegedidentitymanagement-root.md)
+Кроме того, клиенты могут выполнять проверку и сертификацию назначений ролей административных пользователей, которым назначены роли Azure AD, такие как роли глобального администратора или подписки Azure.  Эта возможность включена в [Azure AD управление привилегированными пользователями.](privilegedidentitymanagement-root.md)
 
 Обратите внимание, что функция обзоров доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается обзор доступа, должен иметь допустимую приобретенную или пробную подписку Azure AD Premium P2 или EMS E5.
 Перед созданием обзора доступа, управления программой или программой администратор должен быть ранее на борту, чтобы подготовить ресурсы [programControlType](programcontroltype.md) и [businessFlowTemplate.](businessflowtemplate.md) Организация может получать отзывы о доступе к Azure AD или в случае отзывов доступа к ролям Azure AD или ролям подписки Azure AD PIM.
@@ -71,7 +71,7 @@ ms.locfileid: "51474091"
 
 Для управления отзывами, программами и средствами управления пользователями доступа требуются следующие роли каталога.
 
-| Целевой ресурс | Операция | Разрешения приложений | Роль требуемого каталога вызываемого пользователя |
+| Целевой ресурс | Operation | Разрешения приложений | Роль требуемого каталога вызываемого пользователя |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) роли Azure AD | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор привилегированных ролей |
 |[accessReview](accessreview.md) роли Azure AD | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор привилегированных ролей |

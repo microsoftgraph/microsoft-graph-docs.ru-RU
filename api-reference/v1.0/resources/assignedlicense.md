@@ -3,14 +3,14 @@ title: Тип ресурса assignedLicense
 description: Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта user представляет собой коллекцию объектов **assignedLicense**.
 localization_priority: Normal
 author: jpettere
-ms.prod: ''
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d6cb848506d7f78b652f3d094c7b74c4cade6543
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c5aceba073cf7962b7b1caeb9a25a1936d5d4248
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720811"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546961"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 
@@ -21,7 +21,7 @@ ms.locfileid: "50720811"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|disabledPlans|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
+|инвалидПланы|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
 |skuId|Guid|Уникальный идентификатор SKU.|
 
 ## <a name="json-representation"></a>Представление JSON

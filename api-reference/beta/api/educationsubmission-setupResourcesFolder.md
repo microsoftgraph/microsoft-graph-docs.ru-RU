@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f4b8e78355323f0d0ffd988a3ead68de29eae0df
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: d290f47ccc1dcbfaa5aeae85ed28071e0a15399e
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475413"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546891"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission: setUpResourcesFolder
 
@@ -19,6 +19,7 @@ ms.locfileid: "52475413"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Запуск создания папки SharePoint, в которой все ресурсы на основе файлов (Word, Excel и так далее) должны быть загружены для данной отправки.
+
 Обратите внимание, что файлы должны быть размещены в этой папке, чтобы они были добавлены в качестве ресурсов. Только учащийся в классе может определить, какие файлы загрузить в данной папке ресурсов на уровне отправки. 
 
 ## <a name="permissions"></a>Разрешения

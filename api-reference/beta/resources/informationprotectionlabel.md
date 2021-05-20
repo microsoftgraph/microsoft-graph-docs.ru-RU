@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 4937d428fd480c0f31a5368a76c4eede9efef851
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ee8865b4fa898a91ca79cfba29c928ed00e21ae2
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953760"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579671"
 ---
 # <a name="informationprotectionlabel-resource-type"></a>тип ресурса informationProtectionLabel
 
@@ -42,8 +42,9 @@ ms.locfileid: "50953760"
 | name        | String  | Простое имя метки.                                                                |
 | sensitivity | Int32   | Значение чувствительности метки, где более низкий уровень менее чувствителен.                              |
 | tooltip     | Строка  | Инструмент, который должен отображаться для метки в пользовательском интерфейсе.                                     |
+| родитель      | labelDetails   | Родительская метка, связанная с детской меткой. Null, если метка не имеет родительского знака.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -68,7 +69,8 @@ ms.locfileid: "50953760"
   "isActive": true,
   "name": "String",
   "sensitivity": 1024,
-  "tooltip": "String"
+  "tooltip": "String",
+  "parent": {"@odata.type": "microsoft.graph.labelDetails" }
 }
 ```
 

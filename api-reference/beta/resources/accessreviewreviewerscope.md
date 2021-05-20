@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 68f353b81b6a14292828d82929a0eeac81d67bc5
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 58abda6c89e484336b34d546edc68ebbfe432162
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469159"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579263"
 ---
 # <a name="accessreviewreviewerscope-resource-type"></a>тип ресурса accessReviewReviewerScope
 
@@ -20,28 +20,21 @@ ms.locfileid: "51469159"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-AccessReviewReviewerScope определяет, кто будет рассматривать экземпляры [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Это выражается как запрос OData, который позволяет рецензентам быть указанными как статический список пользователей (например, конкретных пользователей, владельцев групп, членов группы) или динамически (т.е. в случае, когда каждый пользователь просматривается их менеджером). Чтобы создать самообзор (когда пользователи просматривают собственный доступ), не предоставлять рецензентов при создании [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
+AccessReviewReviewerScope определяет, кто будет рассматривать экземпляры [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Это запрос OData, который позволяет рецензентам быть указанными как статический список пользователей (то есть конкретных пользователей, владельцев групп и членов группы) или динамически, в которых каждый пользователь просматривается их менеджером или владельцами групп. Чтобы создать самообзор (когда пользователи просматривают собственный доступ), не предоставлять рецензентов при создании [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
 
 Наследует [от accessReviewScope](../resources/accessreviewscope.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство | Тип | Описание |
 | :-------------------------| :---------- | :---------- |
-| Запрос | String | Запрос, определяющий, кто будет рецензентом. Примеры см. в таблице. |
-| queryType | String | Тип запроса. Примеры включают `MicrosoftGraph` и `ARM` . |
-| queryRoot | String | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство требуется только в том случае, если указан относительный запрос (например, ./manager). |
+| Запрос | Строка | Запрос, определяющий, кто будет рецензентом. Примеры см. в таблице. |
+| queryType | Строка | Тип запроса. Примеры включают `MicrosoftGraph` и `ARM` . |
+| queryRoot | Строка | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство требуется только в том случае, если указан относительный запрос, `./manager` например. Возможное значение: `decisions` . |
 
-### <a name="supported-queries-for-accessreviewreviewerscope"></a>Поддерживаемые запросы для accessReviewReviewerScope
-
-|Сценарий| Запрос | queryType | queryRoot |
-|--|--|--|--|
-| Владелец группы в качестве рецензента | /groups/{group id}/owners |MicrosoftGraph||
-| Конкретный пользователь в качестве рецензента | /users/{user id} |MicrosoftGraph||
-| Менеджер пользователя, проверяемого в качестве рецензента | ./manager | MicrosoftGraph |решения|
-| Самообсвятие | Пустой список (без рецензентов) | MicrosoftGraph  |
+Дополнительные возможности настройки для рецензентов см. в обзоре Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept)
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

@@ -1,18 +1,18 @@
 ---
-title: Список cloudPCs
+title: CloudPCs списка
 description: Список свойств и связей объектов cloudPC.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 864d772aab5c084ee1fb479ebb0179fafd3418d3
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: dd8c0aaa6b9551f041a5d90f6f3ddc777b5d1b87
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874034"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547664"
 ---
-# <a name="list-cloudpcs"></a>Список cloudPCs
+# <a name="list-cloudpcs"></a>CloudPCs списка
 
 Пространство имен: microsoft.graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "49874034"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` `$filter` параметры запроса `$count` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` и `$filter` `$count` параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPC](../resources/cloudpc.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [cloudPC](../resources/cloudpc.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

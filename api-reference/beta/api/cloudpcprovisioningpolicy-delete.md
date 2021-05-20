@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b90a8005f7d2f4e48e07cce07ba3ba525c6fd0f2
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8c423bdc23ec090b56bc096a797daeaed61bdcd0
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872739"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546821"
 ---
 # <a name="delete-cloudpcprovisioningpolicy"></a>Удаление cloudPcProvisioningPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872739"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md) Вы не можете удалить используемую политику.
+Удаление [объекта cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md) Вы не можете удалить используемую политику.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "49872739"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

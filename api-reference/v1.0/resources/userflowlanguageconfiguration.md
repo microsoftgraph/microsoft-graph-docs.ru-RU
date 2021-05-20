@@ -1,47 +1,47 @@
 ---
-title: тип ресурса userFlowLanguageConfiguration
+title: пользовательFlowLanguageКонфигурация типа ресурса
 description: Позволяет потоку пользователей поддерживать несколько языков.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a3291309537ea914587e0491f9340bb626e88a68
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 556860eb77c4707f1d180b7924ae3126958a4799
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51883310"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547206"
 ---
-# <a name="userflowlanguageconfiguration-resource-type"></a>тип ресурса userFlowLanguageConfiguration
+# <a name="userflowlanguageconfiguration-resource-type"></a>пользовательFlowLanguageКонфигурация типа ресурса
 
 Пространство имен: microsoft.graph
 
 Позволяет потоку пользователей поддерживать использование нескольких языков.
 
-Для [потоков пользователей Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/user-flow-customize-language)можно использовать только встроенные языки, предоставляемые Корпорацией Майкрософт. Потоки пользователей для поддержки Azure Active Directory, определяющие язык и строки, показанные пользователям во время поездок, настроенных с потоками пользователей.
+Для [Azure Active Directory потоков пользователей,](/azure/active-directory/external-identities/user-flow-customize-language)вы можете использовать только встроенные языки, предоставляемые корпорацией Майкрософт. Потоки пользователей для Azure Active Directory поддержки, определяющей язык и строки, показанные пользователям по мере их настройки с потоками пользователей.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Get userFlowLanguageConfiguration](../api/userflowlanguageconfiguration-get.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Ознакомьтесь с свойствами и отношениями [объекта userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Эти объекты представляют язык, доступный в потоке пользователей.|
-|[Список defaultPages](../api/userflowlanguageconfiguration-list-defaultpages.md)|[коллекция userFlowLanguagePage](../resources/userflowlanguagepage.md)|Получите ресурсы userFlowLanguagePage из свойства навигации defaultPages. Представляет путь пользователя по умолчанию в потоке пользователей.|
-|[Переопределения списка](../api/userflowlanguageconfiguration-list-overridespages.md)|[коллекция userFlowLanguagePage](../resources/userflowlanguagepage.md)|Получите ресурсы userFlowLanguagePage из свойства навигации overridesPages. Представляет настраиваемый интерфейс для пользовательского путешествия в потоке пользователей.|
+|[Получить userFlowLanguageКонфигурация](../api/userflowlanguageconfiguration-get.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Прочитайте свойства и отношения объекта [пользователяFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Эти объекты представляют собой язык, доступный в пользовательском потоке.|
+|[Список по умолчаниюВеся](../api/userflowlanguageconfiguration-list-defaultpages.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md) коллекция|Получите ресурсы userFlowLanguagePage из навигационного свойства defaultPages. Представляет путешествие пользователя по умолчанию в потоке пользователя.|
+|[Список переопределяетВит Страницы](../api/userflowlanguageconfiguration-list-overridespages.md)|[userFlowLanguagePage](../resources/userflowlanguagepage.md) коллекция|Получите ресурсы userFlowLanguagePage из свойства навигации overridesPages. Представляет собой пользовательский интерфейс для путешествия пользователя в потоке пользователя.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД.|
-|isEnabled|Boolean|Указывает, включен ли язык в потоке пользователей.|
-|displayName|Строка|Отображаемая языковая фамилия. Это свойство доступно только для чтения.|
+|id|String|Идентификатор языка. Это поле соответствует тегу Language ID [RFC 5646](https://tools.ietf.org/html/rfc5646) и должно быть задокументированным идентификатором языка.|
+|isEnabled|Boolean|Указывает, включен ли язык в потоке пользователя.|
+|displayName|String|Название языка для отображения. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|defaultPages|[коллекция userFlowLanguagePage](../resources/userflowlanguagepage.md)|Коллекция страниц с контентом по умолчанию, отображаемым в потоке пользователей для указанного языка. Эта коллекция не позволяет вносить какие-либо изменения.|
-|overridesPages|[коллекция userFlowLanguagePage](../resources/userflowlanguagepage.md)|Коллекция страниц с переопределениями сообщений для отображения в потоке пользователей для указанного языка. Эта коллекция позволяет изменять только содержимое страницы, любые другие изменения не допускаются (создание или удаление страниц).|
+|по умолчаниюВееся|[userFlowLanguagePage](../resources/userflowlanguagepage.md) коллекция|Сбор страниц с содержимым по умолчанию для отображения в пользовательском потоке для определенного языка. Эта коллекция не допускает каких-либо изменений.|
+|переопределяет Страницы|[userFlowLanguagePage](../resources/userflowlanguagepage.md) коллекция|Сбор страниц с переопределениями сообщений для отображения в пользовательском потоке для определенного языка. Эта коллекция позволяет изменять только содержимое страницы, любая другая модификация не допускается (создание или удаление страниц).|
 
 ## <a name="json-representation"></a>Представление JSON
 

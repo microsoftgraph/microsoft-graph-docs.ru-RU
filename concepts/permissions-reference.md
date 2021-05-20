@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 114c877ddcf75bb483eda039ef9c5d77d02d74f5
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 100e911aba625540dc8d421b365fdd547f2edd45
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266880"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546996"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1510,6 +1510,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 | _Policy.ReadWrite.PermissionGrant_ | Управление политиками, связанными с предоставлением согласия и разрешений | Позволяет приложению от имени вошедшего в систему пользователя управлять политиками, связанными с согласием и разрешениями, которые предоставлены приложениям. | Да | Нет |
 | _Policy.ReadWrite.TrustFramework_ | Чтение и запись политик инфраструктуры доверия в организации | Позволяет приложению считывать и записывать политики инфраструктуры доверия в организации от имени вошедшего пользователя. | Да | Нет |
 | _Policy.ReadWrite.AuthenticationMethod_ | Чтение и запись политик метода проверки подлинности в вашей организации | Позволяет приложению читать и записывать политики метода проверки подлинности от имени вошедшего пользователя. | Да | Нет |
+| _Policy.ReadWrite.MobilityManagement_ | Чтение и запись политик управления мобильными устройствами организации. | Позволяет приложению считывать и записывать политики управления мобильными устройствами от имени пользователя, выполнившего вход. Это управляет параметрами приложений по управлению мобильными устройствами (MDM) и управлению мобильными приложениями (MAM). | Да | Нет |
 
 #### <a name="application-permissions"></a>Разрешения приложений
 

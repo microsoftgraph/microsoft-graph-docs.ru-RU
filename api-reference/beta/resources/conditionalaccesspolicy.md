@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessPolicy
-description: Представляет политику условного доступа Azure Active Directory. Политики условного доступа — это настраиваемые правила, определяемые сценарием доступа.
+description: Представляет политику Azure Active Directory доступа. Политики условного доступа — это настраиваемые правила, определяемые сценарием доступа.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 578d7cfcab984922d0c98f7cc8971daf9b10a2fa
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c64d0dc0c531437f000e9c2e36d1af51ddf204d
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958817"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547178"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>тип ресурса conditionalAccessPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50958817"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику условного доступа Azure Active Directory. Политики условного доступа — это настраиваемые правила, определяемые сценарием доступа. Дополнительные сведения см. в [документации условного доступа.](/azure/active-directory/conditional-access/)
+Представляет политику Azure Active Directory доступа. Политики условного доступа — это настраиваемые правила, определяемые сценарием доступа. Дополнительные сведения см. в [документации условного доступа.](/azure/active-directory/conditional-access/)
 
 ## <a name="methods"></a>Методы
 
@@ -36,10 +36,10 @@ ms.locfileid: "50958817"
 |:-------------|:------------|:------------|
 |conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Указывает правила, которые необходимо соблюдать для применения политики. Обязательный. |
 |createdDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Readonly. |
-|description|Строка| Не используется. |
-|displayName|Строка| Указывает имя отображения объекта conditionalAccessPolicy. |
+|description|String| Не используется. |
+|displayName|String| Указывает имя отображения объекта conditionalAccessPolicy. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Указывает элементы управления грантами, которые необходимо выполнить для выполнения политики. |
-|id|Строка| Указывает идентификатор объекта conditionalAccessPolicy. Только для чтения.|
+|id|String| Указывает идентификатор объекта conditionalAccessPolicy. Только для чтения.|
 |modifiedDateTime| DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Указывает элементы управления сеансами, которые применяются после регистрации. |
 |state|conditionalAccessPolicyState| Указывает состояние объекта conditionalAccessPolicy. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательный. |
@@ -61,6 +61,7 @@ ms.locfileid: "50958817"
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
+  "baseType":"microsoft.graph.entity",
   "keyProperty": "id"
 }-->
 

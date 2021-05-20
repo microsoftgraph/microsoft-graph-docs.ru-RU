@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9a69ae380f0a2bcdcad486c3d78a89cb2023cf4f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0a7012c02132ad2ed46d82e857e8de62be1e746
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040352"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579615"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -46,7 +46,7 @@ POST /informationprotection/policy/labels/extractLabel
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| Content-Type  | Тип контента: приложение/json. Обязательный.                                                                                                                                         |
+| Content-Type  | Тип контента: приложение/json. Обязательное.                                                                                                                                         |
 | User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -175,7 +175,8 @@ Content-type: application/json
         "color": "#000000",
         "sensitivity": 13,
         "tooltip": "This information is top secret.",
-        "isActive": true
+        "isActive": true,
+        "parent" : null
     }
 }
 ```

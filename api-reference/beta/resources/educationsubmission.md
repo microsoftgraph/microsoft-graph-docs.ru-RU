@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 550e8329374865ce22954f1d25c977f877faf415
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 9450770a78b8effd1ad11717297a7e1ad7e6e874
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52119021"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547678"
 ---
 # <a name="educationsubmission-resource-type"></a>тип ресурса educationSubmission
 
@@ -18,10 +18,13 @@ ms.locfileid: "52119021"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправки принадлежат назначению. Представление представляет ресурсы, которые человек (или группа) включит для назначения, и результаты (например, оценки или отзывы), связанные с отправкой.
-Отправки создаются автоматически при публикации назначения. Отправка содержит два списка ресурсов. Ресурсы представляют рабочую зону пользователя или группы, а представленные ресурсы представляют ресурсы, которые активно были переданы учащимися.  
+Представление представляет ресурсы, которые человек (или группа) включит для назначения, и результаты (например, оценки или отзывы), связанные с отправкой.
 
->**Примечание:** Состояние только для чтения, и объект перемещается через рабочий процесс с помощью действий. 
+Отправки принадлежат назначению. Отправки создаются автоматически при публикации назначения. Отправка содержит два списка ресурсов. Ресурсы представляют рабочую зону пользователя или группы, а представленные ресурсы представляют ресурсы, которые активно были переданы учащимися.  
+
+Свойство **status** является только для чтения, а объект перемещается через рабочий процесс с помощью действий. 
+
+Если [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) не был вызван на ресурс **educationSubmission,** свойство **resourcesFolderUrl** `null` является .
 
 ## <a name="methods"></a>Методы
 
@@ -31,9 +34,10 @@ ms.locfileid: "52119021"
 |[Список ресурсов](../api/educationsubmission-list-resources.md) |[коллекция educationSubmissionResource](educationsubmissionresource.md)| Получите **коллекцию объектов educationSubmissionResource.**|
 |[Список, представленныйРесурсеи](../api/educationsubmission-list-submittedresources.md) |[коллекция educationSubmissionResource](educationsubmissionresource.md)| Получите **коллекцию объектов educationSubmissionResource.**|
 |[Результаты списка](../api/educationsubmission-list-outcomes.md) |[коллекция educationOutcome](educationoutcome.md)| Получите **коллекцию объектов educationOutcome.**|
-|[Возвращение](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Учитель использует возврат, чтобы указать, что оценки/отзывы могут быть показаны учащемуся.|
+|[возвращение](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Учитель использует возврат, чтобы указать, что оценки/отзывы могут быть показаны учащемуся.|
+|[setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Запуск создания папки SharePoint, в которой все ресурсы на основе файлов (Word, Excel и так далее) должны быть загружены для данной отправки. |
 |[Отправить](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Студент использует отправку для выполнения задания. Это скопирует ресурсы в **папку submittedResources** для классификации и обновляет состояние.|
-|[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Студент использует отгрузку, чтобы переместить состояние отправки из отправленной в рабочую. Это скопирует ресурсы в **папку workingResources** для классификации и обновляет состояние.|
+|[ото всех](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Студент использует отгрузку, чтобы переместить состояние отправки из отправленной в рабочую. Это скопирует ресурсы в **папку workingResources** для классификации и обновляет состояние.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

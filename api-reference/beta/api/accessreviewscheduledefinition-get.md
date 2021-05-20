@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 572369a17288a584550c4d4f5bdda9cbf11e90e4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2fdb5a3aed85629fb7c880f7a22229d1ae83ba62
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048360"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579650"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>Получить accessReviewScheduleDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "52048360"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "52048360"
 GET /identityGovernance/accessReviews/definitions/{review-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-Отсутствуют.
+Нет.
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -93,16 +93,7 @@ Content-type: application/json
 {
     "id": "60860cdd-fb4d-4054-91ba-f7544443baa6",
     "displayName": "Test world",
-    "createdDateTime": "2020-09-14T20:03:36.7391027Z",
-    "lastModifiedDateTime": "2020-09-14T20:04:28Z",
     "status": "InProgress",
-    "descriptionForAdmins": "",
-    "descriptionForReviewers": "",
-    "createdBy": {
-        "id": "957f1027-c0ee-460d-4444-b8828e59e0fe",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
-    },
     "scope": {
         "query": "/groups/b7a059cb-038a-4802-8fc9-b944440cf11f/transitiveMembers",
         "queryType": "MicrosoftGraph"
@@ -145,7 +136,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Создание accessReviewScheduleDefinition](accessreviewscheduledefinition-create.md)
+- [Создание accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
 - [Список accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
 - [List accessReviewInstance](accessreviewinstance-list.md)
 

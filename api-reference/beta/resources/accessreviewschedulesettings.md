@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 77ea7d8601df36525aad7a3448aa3b6f031d98d3
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b354ebfc2b5e6c8093f65c8712516421f0b1d332
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469327"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579734"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>тип ресурса accessReviewScheduleSettings
 
@@ -25,18 +25,18 @@ ms.locfileid: "51469327"
 ## <a name="properties"></a>Свойства
 | Свойство    | Тип   | Описание |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Логический | Флаг, чтобы указать, включены ли или отключены сообщения электронной почты.                |
-| reminderNotificationsEnabled|Логический  | Флаг, чтобы указать, включены ли или отключены напоминания.   |
-| justificationRequiredOnApproval|Логический | Флаг, чтобы указать, требуются ли рецензенты для обоснования своего решения. |
-| defaultDecisionEnabled|Логический | Флаг, чтобы указать, включено или отключено решение по умолчанию, если рецензенты не отвечают. |
-| defaultDecision|String | Решение, `defaultDecisionEnabled` выбранное, если включено. Может быть одним из "Утверждение", "Отказ" или "Рекомендация". |
+| mailNotificationsEnabled|Boolean | Указывает, включена ли электронная почта или отключена. Значение по умолчанию — `false`.               |
+| reminderNotificationsEnabled|Boolean  | Указывает, включены или отключены напоминания. Значение по умолчанию — `false`.  |
+| justificationRequiredOnApproval|Boolean | Указывает, требуются ли рецензенты для обоснования своего решения. Значение по умолчанию — `false`. |
+| defaultDecisionEnabled|Boolean | Указывает, включено или отключено решение по умолчанию, если рецензенты не отвечают. Значение по умолчанию — `false`. |
+| defaultDecision|Строка | Решение, `defaultDecisionEnabled` выбранное, если включено. Может быть одним из `Approve` `Deny` , или `Recommendation` . |
 | instanceDurationInDays|Int32 | Продолжительность каждого повторения обзора `accessReviewInstance` () в количестве дней. |
-| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Подробные параметры для повторения. Использование стандартного объекта повторения Outlook. Обратите внимание, что dayOfMonth не поддерживается — используйте свойство startDate на recurrenceRange, чтобы определить день начала проверки. |
-| autoApplyDecisionsEnabled|Логический | Флаг, чтобы указать, включена ли функция автоматического применения. |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Подробные параметры для повторения с помощью стандартного объекта Outlook повторения. Поддерживаются `weekly` `absoluteMonthly` только и при **повторном повтореPattern.** Используйте свойство **startDate на** **recurrenceRange,** чтобы определить день начала проверки. |
+| autoApplyDecisionsEnabled|Boolean | Указывает, применяются ли решения автоматически. Если установлено, пользователь должен применять решения вручную, как только рецензент завершит `false` обзор доступа. При наборе решения применяются автоматически после окончания срока действия экземпляра проверки доступа независимо от того, откликнулись ли `true` рецензенты. Значение по умолчанию — `false`. |
 | applyActions|[accessReviewApplyAction collection](../resources/accessreviewapplyaction.md) | Необязательное поле. Описывает действия, которые необходимо выполнить после завершения проверки. В настоящее время поддерживается два типа: `removeAccessApplyAction` (по умолчанию) и `disableAndDeleteUserApplyAction` . Поле должно быть указано только в случае `disableAndDeleteUserApplyAction` . См. [accessReviewApplyAction](accessreviewapplyaction.md). |
-| recommendationsEnabled|Логический | Флаг, чтобы указать, включены или отключены рекомендации по принятию решений. |
+| recommendationsEnabled|Boolean | Указывает, включены ли рекомендации по принятию решений или отключены. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

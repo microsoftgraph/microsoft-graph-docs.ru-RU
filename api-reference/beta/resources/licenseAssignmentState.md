@@ -3,14 +3,14 @@ title: licenseAssignmentState type
 description: 'Свойство **licenseAssignmentStates** объекта пользователя — это коллекция **лицензийAssignmentState.** Он предоставляет сведения о назначениях лицензий пользователю. Подробные сведения включают следующие сведения:  '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: users
 author: jpettere
-ms.openlocfilehash: 6362737397d8f5b5c1643557bc7c834392b520ef
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 06b469cb80e92ca09a8e1bce7a058aed1b3a570d
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720531"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547080"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState type
 

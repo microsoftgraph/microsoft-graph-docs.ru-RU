@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 476c8ebe807a097c1d78c03a9df81319dee8c7bf
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 8ddcf2554dd090c8fc173fa8209d5be5ef3b2af6
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231300"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547199"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -43,7 +43,7 @@ ms.locfileid: "52231300"
 |[Remove appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md) | Нет | Удаление назначенной роли этого субъекта-службы у пользователя, группы или субъекта-службы.|
 |**Сертификаты и секреты**| | |
 |[Добавление пароля](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Добавление стойкого пароля объекту servicePrincipal.|
-|[Добавление tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| Добавление самозаверяющего сертификата в субъект-службу. В основном используется для настройки приложений единого входа на основе SAML из [коллекции Azure AD](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list).
+|[Добавление tokenSigningCertificate](../api/serviceprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)| Добавление самозаверяющего сертификата в субъект-службу. В основном используется для настройки приложений единого входа на основе SAML из [коллекции Azure AD](/azure/active-directory/saas-apps/tutorial-list).
 |[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля из servicePrincipal.|
 |[Добавление ключа](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа объекту servicePrincipal.|
 |[Удаление ключа](../api/serviceprincipal-removekey.md)|Нет|Удаление учетных данных ключа объекта servicePrincipal.|

@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Агриментфиледата
-description: Представляет большой двоичный объект условий использования файла соглашения Azure Active Directory (Azure AD).
+title: тип ресурса agreementFileData
+description: Представляет blob из Azure Active Directory (Azure AD) терминов файла соглашения об использовании.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 7419b040945128e06c4693450626931b03b0e033
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0531cfd16c42fb7d2a050c8899eea63b8e333f41
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067456"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547564"
 ---
-# <a name="agreementfiledata-resource-type"></a>Тип ресурса Агриментфиледата
+# <a name="agreementfiledata-resource-type"></a>тип ресурса agreementFileData
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет большой двоичный объект условий использования файла соглашения Azure Active Directory (Azure AD).
+Представляет blob из Azure Active Directory (Azure AD) терминов файла соглашения об использовании.
 
 ## <a name="properties"></a>Свойства
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|data|Binary|Данные, представляющие условия использования PDF-документа. Только для чтения.|
+|data|В двоичном формате|Данные, представляющие условия использования документа PDF. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

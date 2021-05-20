@@ -5,18 +5,18 @@ author: PollyNincevic
 localization\_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 749851d32678617ab2c7b7b7d16d063686f815ce
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 527afbad1ef35e4fba9fe0360accb19ae3ae9ead
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352349"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547164"
 ---
 # <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Добавление свойств в карточку профиля с помощью API карточки профиля в Microsoft Graph (предварительная версия)
 
 На [карточке профиля](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) в Microsoft 365 находится информация о пользователях, сохраненная и управляемая вашей организацией, например **Должность** или **Местонахождение офиса**.
 
-Используйте ресурс [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta), чтобы отображать дополнительные свойства из Azure AD в карточках профилей для организации следующим образом:
+Используйте ресурс [profileCardProperty](/graph/api/resources/profilecardproperty), чтобы отображать дополнительные свойства из Azure AD в карточках профилей для организации следующим образом:
 
 * Обеспечение видимости дополнительных атрибутов
 * Добавление настраиваемых атрибутов
@@ -24,7 +24,7 @@ ms.locfileid: "49352349"
 Дополнительные свойства отображаются в разделе **Контакт** карточки профиля в Microsoft 365.
 
 > [!NOTE]
-> Для выполнения операций над ресурсом **профилекардпроперти** , использующим делегированные разрешения, необходимо, чтобы вошедшего в систему пользователя была назначена роль "Администратор клиента" или "Глобальный администратор".
+> Операции на **ресурсе profileCardProperty** с использованием делегирования разрешений требуют от пользователя, вписаного, роли администратора клиента или глобального администратора.
 
 ## <a name="make-additional-attributes-visible"></a>Обеспечение видимости дополнительных атрибутов
 
@@ -37,7 +37,7 @@ ms.locfileid: "49352349"
 * `StateOrProvince`
 * `Alias`
 
-В таблице ниже показано соответствие атрибутов Azure AD свойствам объекта [user](/graph/api/resources/user?view=graph-rest-beta) Microsoft Graph.
+В таблице ниже показано соответствие атрибутов Azure AD свойствам объекта [user](/graph/api/resources/user) Microsoft Graph.
 
 | Атрибут Azure AD | Свойство объекта user |
 | ------------------ | -------------------- |
@@ -48,14 +48,14 @@ ms.locfileid: "49352349"
 | StateOrProvince | state |
 | Alias | mailNickname |
 
-Вы можете добавить любой из этих атрибутов в карточку профиля, настроив [Параметры организации](/graph/api/resources/organizationsettings?view=graph-rest-beta) и добавив атрибут в качестве свойства **директорипропертинаме** объекта **профилекардпроперти** в Microsoft Graph. Когда вы делаете дополнительные атрибуты видимыми, вы должны использовать имена свойств в формате `en-us`. Вам не требуется добавлять локализованные значения. Дополнительные свойства будут автоматически отображаться с использованием языковых настроек, указанных пользователем в Microsoft 365.
+Любой из этих атрибутов можно добавить в карточку профиля, настроив параметры организации и добавив атрибут в качестве свойства **directoryPropertyName** **профиляCardProperty** в Microsoft Graph. [](/graph/api/resources/organizationsettings) Когда вы делаете дополнительные атрибуты видимыми, вы должны использовать имена свойств в формате `en-us`. Вам не требуется добавлять локализованные значения. Дополнительные свойства будут автоматически отображаться с использованием языковых настроек, указанных пользователем в Microsoft 365.
 
 > [!IMPORTANT]
 > При добавлении атрибута в карточку профиля его отображение занимает до 24 часов.
 
-## <a name="example"></a>Пример
+### <a name="example"></a>Пример
 
-В приведенном ниже примере отображается `Alias` атрибут карточки профиля.
+В следующем примере атрибут `Alias` отображается на карточке профиля.
 
 ``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
@@ -80,13 +80,13 @@ Content-type: application/json
 
 ## <a name="adding-custom-attributes"></a>Добавление настраиваемых атрибутов
 
-Вы можете добавлять в карточки профилей пользователей любой из 15 [настраиваемых атрибутов расширений](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) Azure AD путем настройки параметров организации и [добавления соответствующего значения в качестве profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties?view=graph-rest-beta) в Microsoft Graph. Вы можете добавить один ресурс **profileCardProperty** за один раз.
+Вы можете добавлять в карточки профилей пользователей любой из 15 [настраиваемых атрибутов расширений](/graph/api/resources/onpremisesextensionattributes) Azure AD путем настройки параметров организации и [добавления соответствующего значения в качестве profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) в Microsoft Graph. Вы можете добавить один ресурс **profileCardProperty** за один раз.
 
 Отображение внесенных изменений в карточках профилей занимают до 24 часов.
 
 Настраиваемые свойства не поддерживают поиск, и их невозможно использовать для поиска людей в различных приложениях и службах Майкрософт.
 
-В таблице ниже показано, как имена настраиваемых атрибутов расширений Azure AD соответствуют поддерживаемым значениям свойства **directoryPropertyName** ресурса [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta). В именах настраиваемых атрибутов расширений Azure AD *регистр не учитывается*:
+В таблице ниже показано, как имена настраиваемых атрибутов расширений Azure AD соответствуют поддерживаемым значениям свойства **directoryPropertyName** ресурса [profileCardProperty](/graph/api/resources/profilecardproperty). В именах настраиваемых атрибутов расширений Azure AD *регистр не учитывается*:
 
 | Настраиваемый атрибут расширения Azure AD | Значение, указываемое в качестве directoryPropertyName |
 | ----------------------------------- | ----------------------------------------- |
@@ -106,7 +106,7 @@ Content-type: application/json
 | extensionAttribute14 | customAttribute14 |
 | extensionAttribute15 | customAttribute15 |
 
-## <a name="example"></a>Пример
+### <a name="example"></a>Пример
 
 В следующем примере в карточку профиля добавляется первый настраиваемый атрибут расширения Azure AD, используемый для отображения имени **Cost center**. Для пользователей, выбравших в языковых настройках немецкий язык, отображаемым именем будет **Kostenstelle**.
 
@@ -157,7 +157,7 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Поиск идентификатора клиента Microsoft 365](/onedrive/find-your-office-365-tenant-id)
-- [Тип ресурса onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
-- [Тип ресурса user](/graph/api/resources/user?view=graph-rest-beta)
+- [Тип ресурса onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes)
+- [Тип ресурса user](/graph/api/resources/user)
 - [Песочница Graph](https://developer.microsoft.com/graph/graph-explorer)
-- [Получение ресурса profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)
+- [Получение ресурса profileCardProperty](/graph/api/profilecardproperty-get)

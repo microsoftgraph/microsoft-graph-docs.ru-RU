@@ -3,14 +3,14 @@ title: Тип ресурса extension
 description: Абстрактный тип для поддержки открытого типа openTypeExtension в OData 4-й версии.
 localization_priority: Normal
 author: keylimesoda
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 343d9cac8bcd751c7e78cbb469e08a643841579e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 413778d563abc745139936ac6ec139e7fe74893a
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018482"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547171"
 ---
 # <a name="extension-resource-type"></a>Тип ресурса extension
 
@@ -44,7 +44,7 @@ ms.locfileid: "48018482"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

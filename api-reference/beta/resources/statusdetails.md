@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: ae11d370fb0a92a03e497aec75550f5407934839
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: e3333ac030ec08722ad6bcaa58a153fc961469cf
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231908"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546909"
 ---
 # <a name="statusdetails-resource-type-deprecated"></a>тип ресурса statusDetails (неподготовленный)
 
@@ -29,7 +29,7 @@ ms.locfileid: "52231908"
 |status|statusBase|Возможные значения: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Унаследованный от statusBase.|
 |additionalDetails|String|Дополнительные сведения в случае ошибки.|
 |errorCategory|String|Классифицировать код ошибки. Возможные значения: `Failure`, `NonServiceFailure`, `Success`.|
-|errorCode|String|Уникальный код ошибки, если таковое произошло. [Подробнее](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|errorCode|String|Уникальный код ошибки, если таковое произошло. [Подробнее](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|Суммирует состояние и описывает причины, по которым произошел этот статус.|
 |recommendedAction|String|Обеспечивает разрешение соответствующей ошибки.|
 

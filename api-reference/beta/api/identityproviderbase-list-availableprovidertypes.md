@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3282ed8aff91e6fe82d62593be13efa052248abc
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0ef9e0bb23109f41854c7c12b76e144ad6110ace
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921423"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546254"
 ---
 # <a name="list-availableprovidertypes"></a>Список доступныхProviderTypes
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -126,8 +126,6 @@ Content-Type: application/json
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -162,7 +160,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

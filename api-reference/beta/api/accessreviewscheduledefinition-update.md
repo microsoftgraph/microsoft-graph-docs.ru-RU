@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a31637e41e2ef03242c8a2e26ad307f2a3d0fdc2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0fe437806ee9fdb71535c16dab8c7ff07f631f39
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048346"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579636"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Обновление accessReviewScheduleDefinition
 
@@ -31,7 +31,7 @@ ms.locfileid: "52048346"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,16 +51,16 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Имя серии обзоров доступа. |
-| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. |
-| descriptionForReviewers | String | Контекст обзора, предоставленного рецензентам. |
+| displayName | Строка | Имя серии обзоров доступа. |
+| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. |
+| descriptionForReviewers | Строка | Контекст обзора, предоставленного рецензентам. |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии обзоров доступа. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа). Свойство Reviewers является updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) | 
 
-Обратите внимание, что запрос PUT ожидает, что будет передан полный объект, в который включены все рукописные свойства, а не только обновляемые свойства.
+Запрос **PUT** предполагает, что будет передан полный объект, который включает в себя все свойства, которые можно использовать, а не только обновляемые свойства.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код `204, Accepted` ответа и не возвращает текст ответа.
+В случае успешной работы этот метод возвращает код `204 No Content` ответа и не возвращает текст ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -138,13 +138,12 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### <a name="response"></a>Отклик
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 204 No Content
 ```
 
 <!--

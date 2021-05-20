@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 51d00efc989028a1c369e211518ba24f8b9db2d5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6e2e3a3bef480c8b269a57819f32f4a00e3b08f3
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872872"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546863"
 ---
 # <a name="delete-cloudpcdeviceimage"></a>Удаление cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872872"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
+Удаление [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
@@ -29,7 +29,7 @@ ms.locfileid: "49872872"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

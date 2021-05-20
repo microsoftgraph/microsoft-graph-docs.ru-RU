@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Сеттингтемплатевалуе
-description: Представляет определение отдельного параметра шаблона, включая значение по умолчанию, если не создается экземпляр этого параметра.
+title: настройка Тип ресурсаTemplateValue
+description: Представляет индивидуальное определение параметра шаблона, включая значение по умолчанию для настройки, если параметр не мгновенно.
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c39762290577c6279a4ecb52bd832ac9c961dbdb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e53a8f07f325b023deea32e01fe217feeb35f49d
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009200"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547052"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>Тип ресурса Сеттингтемплатевалуе
+# <a name="settingtemplatevalue-resource-type"></a>настройка Тип ресурсаTemplateValue
 
 Пространство имен: microsoft.graph
 
-Представляет определение отдельного параметра шаблона, включая значение по умолчанию, если не создается экземпляр этого параметра.
+Представляет индивидуальное определение параметра шаблона, включая значение по умолчанию для настройки, если параметр не мгновенно.
 
 ### <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|Значение|String| Значение по умолчанию для параметра. |
-|description|String| Описание параметра. |
+|по умолчаниюВалю|String| Значение по умолчанию для настройки. |
+|description|String| Описание настройки. |
 |name|String| Имя параметра. |
-|type|String| Тип параметра. |
+|type|String| Тип настройки. |
 
 ### <a name="json-representation"></a>Представление JSON
 

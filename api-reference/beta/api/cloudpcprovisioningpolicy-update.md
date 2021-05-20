@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b070f24cc91562626467aa3b4645e67fffd6d13c
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 935dd01d22afd6b6ef916a328c40b4fa08d978fd
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872732"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52546401"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Обновление cloudPcProvisioningPolicy
 
@@ -30,7 +30,7 @@ ms.locfileid: "49872732"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,24 +50,24 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу представление объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в JSON.
+В теле запроса поставляем представление JSON объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 В следующей таблице показаны свойства, необходимые при создании [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемого имени для политики предоставления. |
-|description|String|Описание политики предоставления.|
-|onPremisesConnectionId|String|ИД cloudPcOnPremisesConnection. Чтобы убедиться, что облачные компьютеры имеют сетевое подключение и присоединяются к домену, выберите подключение к виртуальной сети, проверяемой службой облачных КОМПЬЮТЕРов.|
-|imageId|String|ИД образа ОС, который вы хотите получить на облачных ПК. Формат изображения типа коллекции: {publisher_offer_sku}.|
-|imageDisplayName|String|Отображаемая имя для образа ОПЕРАЦИОННОй системы, который вы provisioning.|
-|imageType|cloudPcProvisioningPolicyImageType|Тип образа ОС (настраиваемого или галереи), который необходимо настроить на облачных ПК. Возможные значения: `gallery`, `custom`.|
+|displayName|String|Имя отображения политики обеспечения. |
+|description|String|Описание политики обеспечения.|
+|onPremisesConnectionId|String|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенное службой облачных ПК.|
+|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}.|
+|imageDisplayName|String|Имя отображения образа ОС, которое вы закаповыватель.|
+|imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

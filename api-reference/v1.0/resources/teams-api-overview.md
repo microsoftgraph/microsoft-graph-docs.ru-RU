@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 12bfbb201d90a8c35a8d4d1a7a87e91cf9fb28c7
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: b6f717951dcc972542d75b4319d1a6a8e2c5fb99
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582594"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547038"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -39,7 +39,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
 
-Протестированные ограничения производительности (мощности) Microsoft Teams описаны в статье [Ограничения и спецификации для Microsoft Teams](/microsoftteams/limits-specifications-teams).
+Протестированные ограничения производительности (мощности) Microsoft Teams описаны в статье [Ограничения и спецификации для Microsoft Teams](/microsoftteams/limits-specifications-teams).
 Эти ограничения применяются при непосредственном использовании Microsoft Teams или с помощью API Microsoft Graph.
 Так как у каждой команды есть соответствующая группа, а каждая группа является объектом каталога, ограничение [количества групп](/microsoft-365/admin/create-groups/office-365-groups#group-limits) и [количества объектов каталога ("ресурсов")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) может также оказывать влияние. 
 
@@ -49,7 +49,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
-В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Команды Microsoft Teams и группы Microsoft 365 предназначены для различных требований совместной работы в группе. Почти всех групповые функции применимы к командам Microsoft Teams и группам Microsoft 365, например календарь группы, файлы, заметки, фотографии, планы и т. д. Основное различие между [командой](team.md) и группой Microsoft 365 состоит в режиме общения участников. Участники команды общаются в сохраняемом чате в контексте определенной команды. Участники группы Microsoft 365 общаются с помощью групповых бесед, то есть бесед по электронной почте, которые осуществляются в контексте группы в Outlook.
+В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Команды Microsoft Teams и группы Microsoft 365 предназначены для различных требований совместной работы в группе. Почти всех групповые функции применимы к командам Microsoft Teams и группам Microsoft 365, например календарь группы, файлы, заметки, фотографии, планы и т. д. Основное различие между [командой](team.md) и группой Microsoft 365 состоит в режиме общения участников. Участники команды общаются в сохраняемом чате в контексте определенной команды. Участники группы Microsoft 365 общаются с помощью групповых бесед, то есть бесед по электронной почте, которые осуществляются в контексте группы в Outlook.
 
 У любой группы, содержащей команду, есть свойство **resourceProvisioningOptions** со значением Team.
 
@@ -108,7 +108,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="polling-requirements"></a>Требования к опросу
 
-Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв с помощью [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
+Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв на [форуме идей платформы для разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
 
 При опросе на предмет новых сообщений необходимо определить диапазон дат, в котором поддерживается опрос. Дополнительные сведения см. в статье [Получение изменившихся данных о сообщениях в каналах](../api/chatmessage-delta.md).
 

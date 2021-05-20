@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 16382da1b71e36de93dcffb0e8ebb048c5460f5e
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 94ce76217b4e3ac12d849b064c000ed6a2664519
+ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335704"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52547115"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Настройка единого входа на основе SAML для приложения с помощью API Microsoft Graph
 
@@ -700,10 +700,10 @@ No Content - 204
 - Для AWS вы можете [включить подготовку пользователя](/azure/active-directory/app-provisioning/application-provisioning-configure-api), чтобы автоматически получать все роли из учетной записи AWS. Дополнительные сведения см. в статье [Настройка утверждения роли, выдаваемого в маркере SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 - [Настройка утверждений, выпущенных в маркерах для конкретного приложения в клиенте](/azure/active-directory/develop/active-directory-claims-mapping).
 - Вы можете использовать API applicationTemplate для создания экземпляров [приложений не из коллекции](/azure/active-directory/manage-apps/view-applications-portal). Используйте applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-- [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)
-- [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)
-- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)
+- [applicationTemplate](/graph/api/resources/applicationtemplate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [application](/graph/api/resources/application)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
+- [keyCredential](/graph/api/resources/keycredential)
+- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta&preserve-view=true)
