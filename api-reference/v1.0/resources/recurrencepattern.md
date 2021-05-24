@@ -38,12 +38,12 @@ ms.locfileid: "52547269"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|День месяца, в который происходит событие. Обязательное, если для **type** задано значение `absoluteMonthly` или `absoluteYearly`. |
-|daysOfWeek|dayOfWeek коллекция|Коллекция дней недели, в которые происходит событие. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Если для **type** задано значение `relativeMonthly` или `relativeYearly`, а **daysOfWeek** указывает несколько дней, то событие происходит в первый день, соответствующий расписанию. <br> Обязательный параметр, если для **type** задано значение `weekly`, `relativeMonthly` или `relativeYearly`.|
+|daysOfWeek|коллекция dayOfWeek|Коллекция дней недели, в которые происходит событие. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Если для **type** задано значение `relativeMonthly` или `relativeYearly`, а **daysOfWeek** указывает несколько дней, то событие происходит в первый день, соответствующий расписанию. <br> Обязательный параметр, если для **type** задано значение `weekly`, `relativeMonthly` или `relativeYearly`.|
 |firstDayOfWeek|dayOfWeek|Первый день недели. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. Значение по умолчанию: `sunday`. Обязательное, если для **type** задано значение `weekly`. |
-|index|weekIndex|Уточняется, в каком случае разрешенных дней, **указанных в дняхOfWeek** происходит событие, засчитывается из первой инстанции в месяц. Допустимые значения: `first`, `second`, `third`, `fourth`, `last`. Значение по умолчанию: `first`. Необязательное, если для **type** задано значение `relativeMonthly` или `relativeYearly`. |
+|index|weekIndex|Указывает, в какой экземпляр разрешенных дней, указанных в **daysOfWeek,** происходит событие, засчитано из первой инстанции в месяц. Допустимые значения: `first`, `second`, `third`, `fourth`, `last`. Значение по умолчанию: `first`. Необязательное, если для **type** задано значение `relativeMonthly` или `relativeYearly`. |
 |interval|Int32|Количество единиц между повторениями. Единицами могут быть дни, недели, месяцы или годы (в зависимости от значения **type**). Обязательное. |
 |month|Int32|Месяц, в который происходит событие.  Это число от 1 до 12.|
-|type|рецидивПаттернТип|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательный элемент.|
+|type|recurrencePatternType|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON
 

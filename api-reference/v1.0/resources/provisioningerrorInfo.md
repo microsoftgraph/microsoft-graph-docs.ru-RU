@@ -1,6 +1,6 @@
 ---
-title: предоставление типа ресурса «ЭррорИнфо»
-description: Описывает состояние события подготовки и связанные с ним ошибки.
+title: тип ресурса provisioningErrorInfo
+description: Описывает состояние события подготовка и связанные с ним ошибки.
 localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
@@ -12,22 +12,22 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547157"
 ---
-# <a name="provisioningerrorinfo-resource-type"></a>предоставление типа ресурса «ЭррорИнфо»
+# <a name="provisioningerrorinfo-resource-type"></a>тип ресурса provisioningErrorInfo
 
 Пространство имен: microsoft.graph
 
 
-Описывает состояние события подготовки и связанные с ним ошибки. 
+Описывает состояние события подготовка и связанные с ним ошибки. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|additionalDetails|String|Дополнительные сведения в случае ошибки.|
-|ошибкаКатегория|положениеСтатусЭррорКатегория|Классифицирует код ошибки. Возможные `failure` значения, `nonServiceFailure` `success` , `unknownFutureValue`|
-|errorCode|String|Уникальный код ошибки, если таковые имели место. [Подробнее](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
-|reason|String|Суммирует статус и описывает, почему статус произошел.|
-|рекомендуемая Действий|String|Предоставляет разрешение для соответствующей ошибки.|
+|additionalDetails|Строка|Дополнительные сведения в случае ошибки.|
+|errorCategory|provisioningStatusErrorCategory|Классифицировать код ошибки. Возможные значения `failure` : `nonServiceFailure` , `success` , `unknownFutureValue`|
+|errorCode|String|Уникальный код ошибки, если таковое произошло. [Подробнее](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|reason|Строка|Суммирует состояние и описывает причины, по которым произошел этот статус.|
+|recommendedAction|Строка|Обеспечивает разрешение соответствующей ошибки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

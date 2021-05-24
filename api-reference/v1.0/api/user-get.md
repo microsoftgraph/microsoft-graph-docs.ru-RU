@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0f9ff0216ed09a71dd8b841ad0f87bdfc1333e02
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 94ceebb51dfe1d43bea7404213ef8fdb56535701
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049403"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579783"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -69,18 +69,25 @@ GET /me
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-standard-users-request"></a>Пример 1. Обычный запрос пользователей
+### <a name="example-1-standard-users-request"></a>Пример 1. Обычный запрос пользователей
 
 По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и ответ по умолчанию. 
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_user_1"
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
 ##### <a name="response"></a>Ответ
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -166,17 +173,24 @@ Content-length: 491
 }
 ```
 
-### <a name="example-3-users-request-using-select"></a>Пример 3. Запрос пользователей с помощью оператора $select
+### <a name="example-3-users-request-using-select"></a>Пример 3. Запрос пользователей с помощью оператора $select
 
 Если вам нужен другой набор свойств, можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
 
 ##### <a name="request"></a>Запрос
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_user_2"
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
 ##### <a name="response"></a>Отклик
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

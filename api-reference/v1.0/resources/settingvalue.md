@@ -1,6 +1,6 @@
 ---
-title: настройкаВью типа ресурса
-description: Параметр, представленный парой имени/стоимости.
+title: тип ресурса settingValue
+description: Параметр, представленный парой имя/значение.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
@@ -12,18 +12,18 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547045"
 ---
-# <a name="settingvalue-resource-type"></a>настройкаВью типа ресурса
+# <a name="settingvalue-resource-type"></a>тип ресурса settingValue
 
 Пространство имен: microsoft.graph
 
-Параметр, представленный парой имени/стоимости.
+Параметр, представленный парой имя/значение.
 
 ### <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|name|String| Название настройки (определяемо [группойSettingTemplate).](groupsettingtemplate.md) |
-|value|String| Значение настройки. |
+|name|String| Имя параметра (как определено [группойSettingTemplate).](groupsettingtemplate.md) |
+|value|String| Значение параметра. |
 
 ### <a name="json-representation"></a>Представление JSON
 

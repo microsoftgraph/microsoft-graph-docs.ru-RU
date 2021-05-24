@@ -1,6 +1,6 @@
 ---
-title: licenseDetails тип ресурса
-description: Содержит информацию о лицензии, назначенной пользователю.
+title: тип ресурса licenseDetails
+description: Содержит сведения о лицензии, назначенной пользователю.
 localization_priority: Normal
 author: jpettere
 ms.prod: users
@@ -12,27 +12,27 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547192"
 ---
-# <a name="licensedetails-resource-type"></a>licenseDetails тип ресурса
+# <a name="licensedetails-resource-type"></a>тип ресурса licenseDetails
 
 Пространство имен: microsoft.graph
 
-Содержит информацию о лицензии, назначенной пользователю.
+Содержит сведения о лицензии, назначенной пользователю.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция объектов licenseDetails |Получить список объектов licenseDetails для пользователя.|
+|[Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция объектов licenseDetails |Извлечение списка объектов licenseDetails для пользователя.|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта детализации лицензии. Читать только, ключ, не сведены на нет |
-|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Информация о планах обслуживания, назначенных лицензией. Читать только, не обнуляемый |
+|id|Строка| Уникальный идентификатор объекта детализации лицензии. Только для чтения, клавиши, а не nullable |
+|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах служб, присвоенных лицензией. Только для чтения, не является недействительным |
 |skuId|Guid| Уникальный идентификатор (GUID) для службы SKU. Равно свойству skuId на связанном [объекте SubscribedSku.](subscribedsku.md) Только для чтения |
-|skuPartNumber|String| Уникальное имя дисплея SKU. Равный skuPartNumber на связанном [объекте SubscribedSku;](subscribedsku.md) например: "AAD_Premium". Только для чтения |
+|skuPartNumber|String| Уникальное имя отображения SKU. Равно skuPartNumber на связанном [объекте SubscribedSku;](subscribedsku.md) например: "AAD_Premium". Только для чтения |
 
 ## <a name="relationships"></a>Связи
 Нет

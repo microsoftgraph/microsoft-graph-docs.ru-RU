@@ -5,18 +5,18 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02871c1769f545af938b24b54c2a4aaea8dffc5a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0d4f28f950145905a06f060773e7393b3cae0cdf
+ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054541"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52579248"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей [объекта onlineMeeting.](../resources/onlinemeeting.md) Сведения о onlineMeeting можно получить с помощью [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) или [ID собрания.](#example-2-retrieve-an-online-meeting-by-meeting-id)
+Извлечение свойств и связей [объекта onlineMeeting.](../resources/onlinemeeting.md) Вы можете получить сведения о onlineMeeting с помощью [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id) собрания или [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -33,22 +33,24 @@ ms.locfileid: "52054541"
 > \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, получить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить указанный onlineMeeting с помощью ID собрания с делегированным маркером:
+Чтобы получить onlineMeeting с помощью ID собрания с делегированием и разрешением приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
-```
-
-Чтобы получить указанный onlineMeeting с помощью ИД собрания с маркером приложения:
-<!-- { "blockType": "ignored" } -->
-```http
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Чтобы получить указанный onlineMeeting с помощью **videoTeleconferenceId***:
+Чтобы получить onlineMeeting с **помощью videoTeleconferenceId с** разрешения приложения*:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+```
+
+Чтобы получить onlineMeeting с **помощью joinWebUrl** с делегированием и разрешением приложения:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
+GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
 > [!NOTE]
@@ -56,6 +58,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 > - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
 > - \* Этот сценарий поддерживает только маркер приложений и не поддерживает политику доступа к приложениям.
+> - `joinWebUrl` должен быть закодирован URL-адрес.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -76,11 +79,13 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 
 ## <a name="examples"></a>Примеры
 
+> [!NOTE]
+> Объекты ответа из следующих примеров были сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
+
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания в Интернете с помощью VideoTeleconferenceId
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,8 +123,6 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 ```
 
 #### <a name="response"></a>Отклик
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -196,7 +199,7 @@ Content-Length: 1574
 > **Примечание:** ID собрания был усечен для чтения.
 
 В следующем запросе используется маркер пользователя.
-<!-- { "blockType": "ignored" } -->
+<!-- {"blockType": "request", "name": "get-onlinemeeting-user-token"} -->
 ```http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
@@ -208,10 +211,15 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 #### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-> **Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
-```json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
@@ -244,6 +252,72 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
         "scope": "organization",
         "isDialInBypassEnabled": false
     }
+}
+```
+
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Пример 3. Извлечение собрания в Интернете с помощью JoinWebUrl
+Сведения о собраниях можно получить с помощью JoinWebUrl с помощью маркера пользователя или приложения. Этот параметр доступен для поддержки случаев использования, в которых неизвестен ИД собрания, но используется JoinWebUrl, например, когда пользователь создает собрание (например, в клиенте Microsoft Teams), а отдельному приложению необходимо получить сведения о собрании в качестве последующего действия.
+
+#### <a name="request"></a>Запрос
+
+В следующем запросе используется маркер пользователя.
+<!-- {"blockType": "request", "name": "get-onlinemeeting-joinurl-user-token"} -->
+```http
+GET https://graph.microsoft.com/v1/me/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
+```
+
+В следующем запросе используется маркер приложения.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=JoinWebUrl%20eq%20'https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522dc17674c-81d9-4adb-bfb2-8f6a442e4622%2522%257d'
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "value": [
+        {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+            "startDateTime": "2020-09-29T22:35:31.389759Z",
+            "endDateTime": "2020-09-29T23:35:31.389759Z",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "subject": null,
+            "isEntryExitAnnounced": true,
+            "allowedPresenters": "everyone",
+            "videoTeleconferenceId": "(redacted)",
+            "participants": {
+                "organizer": {
+                    "upn": "(redacted)",
+                    "role": "presenter",
+                    "identity": {
+                        "user": {
+                            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                            "displayName": null,
+                            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                            "identityProvider": "AAD"
+                        }
+                    }
+                },
+                "attendees": [],
+                "producers": [],
+                "contributors": []
+            },
+            "lobbyBypassSettings": {
+                "scope": "organization",
+                "isDialInBypassEnabled": false
+            }
+        }
+    ]
 }
 ```
 

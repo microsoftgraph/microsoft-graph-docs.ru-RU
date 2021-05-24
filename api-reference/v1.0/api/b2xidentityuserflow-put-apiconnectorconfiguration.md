@@ -1,6 +1,6 @@
 ---
-title: Обновление apiConnectorКонфигурация
-description: Включить или отключить разъем API на определенном этапе пользовательского потока путем обновления свойства apiConnectorConfiguration.
+title: Обновление apiConnectorConfiguration
+description: Включить или отключить соединители API для определенного шага в потоке пользователей, обновив свойство apiConnectorConfiguration.
 author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: identity-and-sign-in
@@ -12,11 +12,11 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52547108"
 ---
-# <a name="update-apiconnectorconfiguration"></a>Обновление apiConnectorКонфигурация
+# <a name="update-apiconnectorconfiguration"></a>Обновление apiConnectorConfiguration
 
 Пространство имен: microsoft.graph
 
-Обновление свойства [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) в [b2xIdentityUserFlow для](../resources/b2xidentityuserflow.md) включения или отключения разъема API в пользовательском потоке. Каждое отношение [apiConnectorConfiguration соответствует](../resources/userflowapiconnectorconfiguration.md) определенному шагу в пользовательском потоке, который может быть настроен для вызова разъема API. Настраиваете разъем API для определенного шага по одному, как показано ниже.
+[Обнови свойство apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) в [потоке b2xIdentityUserFlow,](../resources/b2xidentityuserflow.md) чтобы включить или отключить соединители API в потоке пользователей. Каждое отношение [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) соответствует определенному шагу в потоке пользователей, который можно настроить для вызова соединителя API. Вы настраивает соединители API для определенного шага одновременно, как показано ниже.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,14 +24,14 @@ ms.locfileid: "52547108"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
-Рабочий или школьный счет должен принадлежать к одной из следующих ролей:
+Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешней идентификации Flow пользователя
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-В органе запроса предоставьте представление JSON удостоверения `id` [ApiConnector, который](../resources/identityapiconnector.md) вы хотите использовать на определенном этапе. Чтобы отключить разъем API, значение может {} быть.
+В теле запроса уделяем JSON представление `id` [удостоверенияApiConnector,](../resources/identityapiconnector.md) который необходимо использовать для определенного шага. Чтобы отключить соединители API, значение может быть {} .
 
 ## <a name="response"></a>Отклик
 
@@ -61,7 +61,7 @@ PUT /identity/b2xUserFlows/{b2xUserFlowId}/apiConnectorConfiguration/{step}/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>Пример 1: Включить разъем API для Почтовой Федерации ВПЛ при регистрации
+### <a name="example-1-enable-api-connector-for-post-idp-federation-on-sign-up"></a>Пример 1. Включить соединители API для Федерации почтовых IDP при регистрации
 
 #### <a name="request"></a>Запрос
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 2: Включить разъем API для коллекции почтовых атрибутов при регистрации
+### <a name="example-2-enable-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 2. Включить соединители API для коллекции атрибутов post при регистрации
 
 #### <a name="request"></a>Запрос 
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 3: Отключить разъем API для коллекции почтовых атрибутов при регистрации
+### <a name="example-3-disable-an-api-connector-for-post-attribute-collection-on-sign-up"></a>Пример 3. Отключение соединители API для коллекции атрибутов post при регистрации
 
 #### <a name="request"></a>Запрос 
 
