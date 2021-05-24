@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52546961"
 ---
-# <a name="assignedlicense-resource-type"></a><span data-ttu-id="f5f75-104">Тип ресурса assignedLicense</span><span class="sxs-lookup"><span data-stu-id="f5f75-104">assignedLicense resource type</span></span>
+# <a name="assignedlicense-resource-type"></a><span data-ttu-id="15f3f-104">Тип ресурса assignedLicense</span><span class="sxs-lookup"><span data-stu-id="15f3f-104">assignedLicense resource type</span></span>
 
-<span data-ttu-id="f5f75-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f5f75-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="15f3f-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15f3f-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f5f75-p102">Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="f5f75-p102">Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
+<span data-ttu-id="15f3f-p102">Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="15f3f-p102">Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f5f75-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="f5f75-108">Properties</span></span>
-| <span data-ttu-id="f5f75-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="f5f75-109">Property</span></span>     | <span data-ttu-id="f5f75-110">Тип</span><span class="sxs-lookup"><span data-stu-id="f5f75-110">Type</span></span>   |<span data-ttu-id="f5f75-111">Описание</span><span class="sxs-lookup"><span data-stu-id="f5f75-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="15f3f-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="15f3f-108">Properties</span></span>
+| <span data-ttu-id="15f3f-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="15f3f-109">Property</span></span>     | <span data-ttu-id="15f3f-110">Тип</span><span class="sxs-lookup"><span data-stu-id="15f3f-110">Type</span></span>   |<span data-ttu-id="15f3f-111">Описание</span><span class="sxs-lookup"><span data-stu-id="15f3f-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f5f75-112">инвалидПланы</span><span class="sxs-lookup"><span data-stu-id="f5f75-112">disabledPlans</span></span>|<span data-ttu-id="f5f75-113">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="f5f75-113">Guid collection</span></span>|<span data-ttu-id="f5f75-114">Коллекция уникальных идентификаторов отключенных планов.</span><span class="sxs-lookup"><span data-stu-id="f5f75-114">A collection of the unique identifiers for plans that have been disabled.</span></span>|
-|<span data-ttu-id="f5f75-115">skuId</span><span class="sxs-lookup"><span data-stu-id="f5f75-115">skuId</span></span>|<span data-ttu-id="f5f75-116">Guid</span><span class="sxs-lookup"><span data-stu-id="f5f75-116">Guid</span></span>|<span data-ttu-id="f5f75-117">Уникальный идентификатор SKU.</span><span class="sxs-lookup"><span data-stu-id="f5f75-117">The unique identifier for the SKU.</span></span>|
+|<span data-ttu-id="15f3f-112">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="15f3f-112">disabledPlans</span></span>|<span data-ttu-id="15f3f-113">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="15f3f-113">Guid collection</span></span>|<span data-ttu-id="15f3f-114">Коллекция уникальных идентификаторов отключенных планов.</span><span class="sxs-lookup"><span data-stu-id="15f3f-114">A collection of the unique identifiers for plans that have been disabled.</span></span>|
+|<span data-ttu-id="15f3f-115">skuId</span><span class="sxs-lookup"><span data-stu-id="15f3f-115">skuId</span></span>|<span data-ttu-id="15f3f-116">Guid</span><span class="sxs-lookup"><span data-stu-id="15f3f-116">Guid</span></span>|<span data-ttu-id="15f3f-117">Уникальный идентификатор SKU.</span><span class="sxs-lookup"><span data-stu-id="15f3f-117">The unique identifier for the SKU.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f5f75-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f5f75-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="15f3f-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="15f3f-118">JSON representation</span></span>
 
-<span data-ttu-id="f5f75-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f5f75-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="15f3f-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="15f3f-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52546205"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="2ba67-103">Тип ресурса patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="2ba67-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="39a51-103">Тип ресурса patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="39a51-103">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="2ba67-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ba67-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="39a51-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="39a51-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2ba67-105">Расписание и диапазон повторения.</span><span class="sxs-lookup"><span data-stu-id="2ba67-105">The recurrence pattern and range.</span></span>
+<span data-ttu-id="39a51-105">Расписание и диапазон повторения.</span><span class="sxs-lookup"><span data-stu-id="39a51-105">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2ba67-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="2ba67-106">Properties</span></span>
-| <span data-ttu-id="2ba67-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="2ba67-107">Property</span></span>     | <span data-ttu-id="2ba67-108">Тип</span><span class="sxs-lookup"><span data-stu-id="2ba67-108">Type</span></span>   |<span data-ttu-id="2ba67-109">Описание</span><span class="sxs-lookup"><span data-stu-id="2ba67-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="39a51-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="39a51-106">Properties</span></span>
+| <span data-ttu-id="39a51-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="39a51-107">Property</span></span>     | <span data-ttu-id="39a51-108">Тип</span><span class="sxs-lookup"><span data-stu-id="39a51-108">Type</span></span>   |<span data-ttu-id="39a51-109">Описание</span><span class="sxs-lookup"><span data-stu-id="39a51-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2ba67-110">pattern</span><span class="sxs-lookup"><span data-stu-id="2ba67-110">pattern</span></span>|[<span data-ttu-id="2ba67-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="2ba67-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="2ba67-112">Частота события.</span><span class="sxs-lookup"><span data-stu-id="2ba67-112">The frequency of an event.</span></span>|
-|<span data-ttu-id="2ba67-113">range</span><span class="sxs-lookup"><span data-stu-id="2ba67-113">range</span></span>|[<span data-ttu-id="2ba67-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="2ba67-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="2ba67-115">Продолжительность события.</span><span class="sxs-lookup"><span data-stu-id="2ba67-115">The duration of an event.</span></span>|
+|<span data-ttu-id="39a51-110">pattern</span><span class="sxs-lookup"><span data-stu-id="39a51-110">pattern</span></span>|[<span data-ttu-id="39a51-111">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="39a51-111">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="39a51-112">Частота события.</span><span class="sxs-lookup"><span data-stu-id="39a51-112">The frequency of an event.</span></span>|
+|<span data-ttu-id="39a51-113">range</span><span class="sxs-lookup"><span data-stu-id="39a51-113">range</span></span>|[<span data-ttu-id="39a51-114">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="39a51-114">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="39a51-115">Продолжительность события.</span><span class="sxs-lookup"><span data-stu-id="39a51-115">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2ba67-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2ba67-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="39a51-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="39a51-116">JSON representation</span></span>
 
-<span data-ttu-id="2ba67-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2ba67-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="39a51-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="39a51-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
