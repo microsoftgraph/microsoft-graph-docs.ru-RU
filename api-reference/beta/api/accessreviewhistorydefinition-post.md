@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c0a1309ae67a2f4aa3f066deb5fe8adeec84119
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: f266276fae151bd8cc31455c4fd69eab193dd440
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474124"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629233"
 ---
 # <a name="create-accessreviewhistorydefinition"></a>Создание accessReviewHistoryDefinition
 
@@ -28,7 +28,7 @@ ms.locfileid: "52474124"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|AccessReview.ReadWrite.All|
+|Приложение|AccessReview.ReadWrite.All|
 
 В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа для получения любых данных.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -57,23 +57,28 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName | String  | Имя для сбора данных истории проверки доступа. Обязательно. |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Обязательно.  |
+|displayName | Строка  | Имя для сбора данных истории проверки доступа. Обязательный атрибут. |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Обязательный атрибут.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или до этой даты, будут включены в извлеченные данные истории. Обязательный.  |
-|scopes|коллекция microsoft.graph.accessReviewQueryScope| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательно.  |
+|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный атрибут. <br> Дополнительные возможности [см. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition.](#supported-scope-queries-for-accessreviewhistorydefinition) |
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Поддерживаемые запросы области для accessReviewHistoryDefinition
 
-Ниже приводится запросы, поддерживаемые [в accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) на основе [accessreviewqueryscope.](../resources/accessreviewqueryscope.md) Эти области диктуют, какой тип данных истории отзывов входит в загружаемый CSV-файл, который создается при создания определения.
+Свойство **областей** [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) основано на **accessReviewQueryScope**, ресурсе, который позволяет настраивать различные ресурсы в свойстве **запроса.** Эти ресурсы затем представляют область определения истории и диктуют тип данных истории отзывов, которые включаются в загружаемый CSV-файл, который создается при создания определения истории.
 
-|Сценарий| Запрос |
-|--|--|
-| Включайте каждый результат проверки для отдельных групп (исключает определения, охватываемые для всех Microsoft 365 `accessReviewScheduleDefinition` групп с гостевых пользователей) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')" |
-| Включайте каждый результат проверки в определенную группу (исключает определения, охватываемые для всех Microsoft 365 `accessReviewScheduleDefinition` групп с гостевых пользователей) | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups/{group id}') |
-| Включайте каждый результат проверки для `accessReviewScheduleDefinition` всех Microsoft 365 групп с гостевых пользователей | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, './members') |
-| `accessReviewScheduleDefinition`Включи каждый результат проверки в пакет доступа | /identityGovernance/accessReviews/definitions?$filter=contains (scope/query, 'accessPackageAssignments') |
-| `accessReviewScheduleDefinition`Включай каждый результат проверки для директоров служб, назначенных привилегированной роли | /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances') |
-| `accessReviewScheduleDefinition`Включи каждый результат проверки для reivews определенной группы | /identityGovernance/accessReviews/definitions?$filter=scope/query eq '/groups/a1382a9b-8320-4e9c-8f73-dfead37d7723/members' |
+Используйте следующий формат для свойства **запроса:**
+
+```http
+/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
+```
+
+Значение является одним из ресурсов, которые `{object}` можно настроить в **accessReviewScheduleDefinition**. Например, ниже приводится каждый результат проверки accessReviewScheduleDefinition для отдельных групп (и исключает определения, охватив все группы Microsoft 365 с гостевых пользователей).
+
+```http
+/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
+```
+
+Дополнительные поддерживаемые значения см. в $filter [параметре запроса accessReviewScheduleDefinition.](accessreviewscheduledefinition-list.md#use-the-filter-query-parameter)
 
 ## <a name="response"></a>Отклик
 

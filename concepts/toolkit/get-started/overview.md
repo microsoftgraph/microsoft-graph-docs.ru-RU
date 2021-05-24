@@ -3,12 +3,12 @@ title: Начало работы с microsoft Graph набор средств
 description: Начало работы с помощью microsoft Graph набор средств в приложении.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e84350a7835cac7914f5238110f74b3383047e13
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 68260cf83f0e9bec34d2c3b23911d04c53143e76
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579594"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629156"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Начало работы с microsoft Graph набор средств
 
@@ -104,12 +104,6 @@ Microsoft Graph набор средств состоит из нескольки
 <b>@microsoft/mgt-spfx</b>
 
 Пакет содержит библиотеку SharePoint Framework, которая необходима для использования [`@microsoft/mgt-spfx`](./mgt-spfx.md) Microsoft Graph набор средств в SharePoint Framework решениях.
-
-## <a name="polyfills"></a>Полизаполнение
-
-Если вы используете модули ES6 из пакета npm и нацеливались на такой браузер, как [IE11,](https://caniuse.com/#search=components) который не поддерживает веб-компоненты, необходимо включить полифилы в проект, так как они не включаются автоматически. Полифильмы помогают заполнить недостающие возможности браузера в браузерах, которые еще находятся в процессе обновления для поддержки стандартов веб-компонентов. Дополнительные инструкции см. в документации [по полифилям.](https://www.webcomponents.org/polyfills) 
-
-Полифильмы уже включены, если вы используете набор средств с помощью скрипта mgt-loader.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Теперь вы готовы начать разработку с помощью microsoft Graph набор средств! Для начала работы доступны следующие руководства:

@@ -5,16 +5,18 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c76d746aabab06fcc68ffcead238aaf2cc6ddb41
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7a52d1dce81bc24809d788e8d28ef869b84c4704
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442717"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629520"
 ---
 # <a name="userflowlanguagepage-resource-type"></a>тип ресурса userFlowLanguagePage
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используются языковые страницы потока пользователей, которые определяют, какие строки будут показаны пользователям во время пользовательского путешествия, настроенного с помощью пользовательских потоков. Эти языковые страницы включают как языковые переводы по умолчанию, предоставляемые Корпорацией Майкрософт, так и настраиваемые страницы, которые можно создать для настройки языковых переводов.
 
@@ -30,7 +32,7 @@ ms.locfileid: "50442717"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор страницы userFlowLanguage.|
+|id|Строка|Идентификатор страницы userFlowLanguage.|
 
 ## <a name="relationships"></a>Связи
 

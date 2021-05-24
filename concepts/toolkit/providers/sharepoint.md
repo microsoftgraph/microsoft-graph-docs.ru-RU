@@ -3,12 +3,12 @@ title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы предоставить компонентам доступ к Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: c052c3a5bc790b7e9e4316c4a8a8aac4d2d3d7dd
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: eb5e5c5935e51fe7574c41feb57700f473567707
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579692"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629128"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 
@@ -18,7 +18,7 @@ ms.locfileid: "52579692"
 
 ## <a name="get-started"></a>Начало работы
 
-Инициализируйте поставщика в методе `onInit()` веб-части.
+Инициализируйте поставщика в методе `onInit()` веб-части. В этом примере используется [ `@microsoft/mgt-spfx` пакет](../get-started/mgt-spfx.md).
 
 ```ts
 // import the providers at the top of the page
@@ -46,8 +46,6 @@ public render(): void {
 
 Сведения о том, как инициализировать SharePoint поставщика, см. в руководстве [Сборка](../get-started/build-a-sharepoint-web-part.md) SharePoint веб-части.
 
-Пример готовой веб-части, в котором показано, как использовать различные компоненты в веб-частях SharePoint, см. в статье [Пример веб-части SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) в репозитории Microsoft Graph Toolkit.
-
 ## <a name="test-in-the-workbench"></a>Тестирование на рабочем месте
 
 Если вы только начинаете работать с веб-частями SharePoint, следуйте руководству в статье [Создайте свою первую веб-часть](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
@@ -60,9 +58,3 @@ public render(): void {
 >Руководство по началу работы [Создание веб-части SharePoint](../get-started/build-a-sharepoint-web-part.md#configure-permissions) содержит пошаговые инструкции по настройке и утверждению разрешений.
 
 >**Примечание.** Если вы не знаете точно, какие разрешения следует добавить, все разрешения, необходимые для каждого компонента, указаны в документации по нему.
-
-## <a name="polyfills"></a>Полизаполнение
-
-Если вы планируете поддерживать IE11 в веб-частях SPFx, необходимо использовать полизаполнение.
-
-Дополнительные сведения см. в статье [Начало работы с Microsoft Graph Toolkit](../get-started/overview.md#polyfills).

@@ -3,12 +3,12 @@ title: Компонент списка файлов в microsoft Graph набо�
 description: Компонент списка файлов используется для отображения списка файлов, показывая их значок и имя
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 77eb93bc17d9c684ac61fc6a7dc2f263e406bba8
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: bde548e843170de6cd1234f14096339859d4b99b
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579855"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629170"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Компонент списка файлов в microsoft Graph набор средств
 
@@ -70,6 +70,11 @@ ms.locfileid: "52579855"
 ```html
 <mgt-file-list insight-type="shared"></mgt-file-list>
 ```
+
+## <a name="methods"></a>Методы
+| Метод | Описание |
+| --- | --- |
+| перезагрузка (clearCache = false) | Вызывает метод для перезагрузки компонента с потенциальными новыми данными на основе его свойств. Перед перезагрузки необходимо очистить `true` кэш. |
 
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 

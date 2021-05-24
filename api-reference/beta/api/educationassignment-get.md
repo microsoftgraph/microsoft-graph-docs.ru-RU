@@ -1,16 +1,16 @@
 ---
 title: Get educationAssignment
-description: " преподаватели могут видеть все назначения в классе."
+description: Получите свойства и связи назначения.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 28f129d1621be6a54510a8ef1dd4b48e25e2f5ff
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 665e035c55ff68b81d1e3e73c3b086843c8b16cd
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061716"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629228"
 ---
 # <a name="get-educationassignment"></a>Get educationAssignment
 
@@ -18,7 +18,9 @@ ms.locfileid: "52061716"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойства и связи назначения. Учащиеся могут видеть только назначения, которые им назначены; преподаватели и приложения с разрешениями на приложения могут видеть все назначения в классе.
+Получите свойства и связи назначения. 
+
+Учащиеся могут видеть только назначения, которые им назначены; преподаватели и приложения с разрешениями на приложения могут видеть все назначения в классе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,16 +30,14 @@ ms.locfileid: "52061716"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение* | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
-
-*Разрешения приложения в настоящее время доступны только для частных пользователей предварительного просмотра.
+|Приложение | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments/{id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -114,6 +114,7 @@ Content-length: 279
   "createdDateTime": "2014-01-01T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
   "grading": {
       "@odata.type": "microsoft.graph.educationAssignmentPointsGradeType",
       "maxPoints": 100

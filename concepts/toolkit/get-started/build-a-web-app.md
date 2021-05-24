@@ -3,12 +3,12 @@ title: Создание веб-приложения с помощью Microsoft 
 description: Знакомство с разработкой веб-приложений с помощью Microsoft Graph Toolkit
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 5eed45974428a2c6daf47d02144741d937e12c91
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: eef2bb9644fdd7da95ccce5da2b6802f4e893573
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579902"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629499"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Создание веб-приложения с помощью Microsoft Graph Toolkit
 
@@ -37,9 +37,6 @@ npm install @microsoft/mgt
 ```
 
 ---
-
-
-> **Примечание**. Если вы ориентируетесь на браузер, например IE11, который изначально не поддерживает веб-компоненты, потребуется [включить полизаполнение](./overview.md#polyfills).
 
 ## <a name="initialize-the-msal-20-provider"></a>Инициализация поставщика MSAL 2.0
 Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). Поставщик [MSAL 2.0](../providers/msal2.md) использует msal-browser для регистрации пользователей и приобретения маркеров. Этот поставщик можно инициализировать в HTML или JavaScript.

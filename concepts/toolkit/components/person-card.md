@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 9c12c9e76f6c0b332a70bfbc429bc7b7845056cb
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: de09e9156cd084bdffbe5578e90605e0cf723403
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266810"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629345"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -20,9 +20,9 @@ ms.locfileid: "52266810"
 
 В приведенном ниже примере показано использование компонента `mgt-person-card` с компонентом `mgt-person`. Наведите указатель мыши на человека, чтобы увидеть карточку контакта, а затем в редакторе кода посмотрите, как [свойства](#properties) изменить поведение компонента.
   
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
-[Открыть этот пример в mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+[Открыть этот пример в mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
 
 
 ## <a name="global-component-configuration"></a>Настройка глобального компонента
@@ -129,6 +129,14 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 ```
 
+## <a name="events"></a>События
+
+Из компонента инициируются следующие события.
+
+| Событие | Описание |
+| --- | --- |
+| `expanded` | Пользователь открыл расширенный раздел сведений карты. |
+
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
 Компонент `mgt-person-card` определяет следующие настраиваемые свойства CSS. 
@@ -187,7 +195,7 @@ const neededScopes = MgtPersonCard.getScopes();
 ## <a name="cache"></a>Кэш
 
 > [!IMPORTANT]
-> Компонент `mgt-person-card` извлекает основные данные человека из родительского `mgt-person` компонента без вызова Microsoft Graph. Когда используется отдельно, он извлекает необходимые данные и `mgt-person-card` кэширует их. Данные, отображаемые в разделах карты, извлекаются отдельно и не кэшются.
+> Компонент `mgt-person-card` извлекает основные данные человека из родительского компонента, `mgt-person` не вызывая Graph. Когда используется отдельно, он извлекает необходимые данные и `mgt-person-card` кэширует их. Данные, отображаемые в разделах карты, извлекаются отдельно и не кэшются.
 
 |Хранилище объектов|Кэшные данные|Примечания|
 |---------|-----------|-------|

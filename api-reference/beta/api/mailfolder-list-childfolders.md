@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9cf1f5cd48a07cb6e240002b8715fc546b56136d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 59d5fe5bfc52f20e38188f597616947a75b7c000
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049277"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629534"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -19,6 +19,8 @@ ms.locfileid: "52049277"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/mailFolders` вы можете получить коллекцию папок верхнего уровня и перейти к другой папке.
+
+По умолчанию эта операция не возвращает скрытые папки. Используйте параметр запроса _includeHiddenFolders,_ чтобы включить их в ответ.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,6 +34,7 @@ ms.locfileid: "52049277"
 
 ## <a name="http-request"></a>HTTP-запрос
 
+Чтобы получить все детские папки в указанной папке, за исключением скрытых:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -39,7 +42,15 @@ GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Включить _скрытые_ детские папки в ответ:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders?includeHiddenFolders=true
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Чтобы вернуть список всех childFolders, включая скрытые (их свойство **isHidden** верно), в URL-адресе запроса укажите параметр запроса как, как показано в разделе `includeHiddenFolders` `true` [HTTP-запрос.](#http-request)
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -122,7 +133,8 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 2,
       "totalItemCount": 2,
-      "wellKnownName": null
+      "wellKnownName": null,
+      "isHidden": false
     },
     {
       "id": "AAMkAGVmMDEzB",
@@ -131,7 +143,8 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 5,
       "totalItemCount": 5,
-      "wellKnownName": null
+      "wellKnownName": null,
+      "isHidden": false
     },
     {
       "id": "AAMkAGVmMDEzMA",
@@ -140,7 +153,8 @@ Content-type: application/json
       "childFolderCount": 4,
       "unreadItemCount": 0,
       "totalItemCount": 0,
-      "wellKnownName": "searchfolders"
+      "wellKnownName": "searchfolders",
+      "isHidden": false
     }
   ]
 }
@@ -208,6 +222,7 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 6,
       "totalItemCount": 6,
+      "isHidden": false,
       "wellKnownName": null,
       "isSupported": true,
       "filterQuery": "contains(subject, 'MyAnalytics')"
@@ -220,9 +235,81 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 2,
       "totalItemCount": 4,
+      "isHidden": false,
       "wellKnownName": null,
       "isSupported": true,
       "filterQuery": "contains(subject, 'ACTION REQUIRED')"
+    }
+  ]
+}
+```
+
+### <a name="example-3-include-hidden-child-folders-under-a-specified-mail-folder"></a>Пример 3. Включай скрытые детские папки в указанную папку почты
+
+В следующем примере параметр запроса используется для получения списка детских папок в указанной почтовой папке, включая `includeHiddenFolders` скрытые почтовые папки. Ответ включает папку "Clutters", которая имеет **набор isHidden** для true.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "mailfolder_get_hiddenchildfolders"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders?includeHiddenFolders=true
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "wellKnownName": null,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Clutters",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "wellKnownName": null,
+      "isHidden": true
+    },
+    {
+      "id": "AAMkAGVmMDEzMA",
+      "displayName": "Finder",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 4,
+      "unreadItemCount": 0,
+      "totalItemCount": 0,
+      "wellKnownName": "searchfolders",
+      "isHidden": false
     }
   ]
 }
