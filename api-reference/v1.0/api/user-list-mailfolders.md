@@ -5,18 +5,20 @@ author: abheek-das
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 3883794642723cc5b7df07ad0c1d1f67fc58aed3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 707daff5e3043d10c038343967fa421875132788
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051195"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629527"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
 Пространство имен: microsoft.graph
 
 Получение коллекции папок почты непосредственно в корневой папке вошедшего пользователя. Возвращаемая коллекция включает все [папки поиска почты](../resources/mailsearchfolder.md), расположенные непосредственно в корневой папке.
+
+По умолчанию эта операция не возвращает скрытые папки. Используйте параметр запроса _includeHiddenFolders_, чтобы включить их в отклик.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,12 +30,24 @@ ms.locfileid: "52051195"
 |Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Чтобы получить все папки почты в указанном почтовом ящике пользователя, за исключением скрытых:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
+
+Чтобы включить _скрытые_ папки почты в отклик:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
+```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Чтобы вернуть список всех объектов mailFolder, включая скрытые (их свойство **isHidden** имеет значение true), в URL-адресе запроса укажите параметр запроса `includeHiddenFolders` как `true`, как показано в разделе [HTTP-запрос](#http-request).
+
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -47,8 +61,13 @@ GET /users/{id | userPrincipalName}/mailFolders
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [mailFolder](../resources/mailfolder.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>Пример 1. Перечисление папок почты из почтового ящика вошедшего пользователя
+
+В этом примере в отклик включается объект **mailSearchFolder**. Папка поиска почты — это дочерняя папка в папке "Входящие" с отображаемым именем "Еженедельные дайджесты".
+
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Вот пример отклика, содержащего объект **mailSearchFolder**, который является дочерней папкой в папке "Входящие". Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -101,7 +120,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -109,7 +129,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -117,7 +138,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -125,7 +147,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -133,7 +156,20 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 70,
-            "totalItemCount": 71
+            "totalItemCount": 71,
+            "isHidden": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailSearchFolder",
+            "id": "AAMkADYRAAAZg1yTAAA=",
+            "displayName": "Weekly digests",
+            "parentFolderId": "AQMkADYAAAIBDAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 4,
+            "totalItemCount": 5,
+            "isHidden": false,
+            "isSupported": true,
+            "filterQuery": "contains(subject, 'weekly digest')"
         },
         {
             "id": "AQMkADYAAAIBGQAAAA==",
@@ -141,7 +177,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -149,7 +186,8 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -157,7 +195,62 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0
+            "totalItemCount": 0,
+            "isHidden": false
+        }
+    ]
+}
+```
+
+### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>Пример 2. Включение скрытых папок из почтового ящика вошедшего пользователя
+
+В следующем примере параметр запроса `includeHiddenFolders` используется для получения списка папок почты, включая скрытые почтовые папки. Отклик включает папку "Несрочные", параметру **isHidden** которой присвоено значение true.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_hiddenmailfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
+```
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+
+>**Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости и не включает все стандартные папки из почтового ящика пользователя.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Clutters",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": true
+        },
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Conversation History",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "isHidden": false
         }
     ]
 }
@@ -165,7 +258,8 @@ Content-length: 232
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List mailFolders",
   "keywords": "",
@@ -173,5 +267,5 @@ Content-length: 232
   "tocPath": "",
   "suppressions": [
   ]
-}-->
-
+}
+-->

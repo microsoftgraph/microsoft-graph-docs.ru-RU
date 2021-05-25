@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d2363f2bc25ddf3356215910e14b3451fccf6fcf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a1ab83dfa3e3da64935a8c3976f12ffd1faf2e3c
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130776"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629387"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
@@ -55,9 +55,11 @@ GET /me/mailFolders/drafts
 
 | Метод | Возвращаемый тип | Описание |
 |:-------|:------------|:------------|
+|[Список объектов mailFolder](../api/user-list-mailfolders.md) | Коллекция [mailFolder](mailfolder.md)|Получение всех папок почты в указанном почтовом ящике пользователя, включая все папки поиска почты.|
 |[Получение объекта mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Чтение свойств и связей объекта mailFolder.|
-|[Создание объекта MailFolder](../api/mailfolder-post-childfolders.md) |[MailFolder](mailfolder.md)| Создание объекта mailFolder в текущем объекте путем публикации в коллекции элементов childFolders.|
+|[Создание объекта mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Создание папки почты в корневой папке почтового ящика пользователя.|
 |[Вывод списка объектов childFolder](../api/mailfolder-list-childfolders.md) |Коллекция [MailFolder](mailfolder.md)| Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/MailFolders` вы можете получить коллекцию папок верхнего уровня и перейти к другой папке.|
+|[Создание объекта childFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Создание объекта mailFolder в текущем объекте путем публикации в коллекции элементов childFolder.|
 |[Создание сообщения](../api/mailfolder-post-messages.md) |[Message](message.md)| Создание сообщения в текущем элементе mailFolder путем его публикации в коллекции сообщений.|
 |[Вывод списка сообщений](../api/mailfolder-list-messages.md) |Коллекция объектов [Message](message.md)| Получение всех сообщений в почтовом ящике пользователя, вошедшего в систему, или в указанной папке почтового ящика.|
 |[Обновление](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Обновление указанного объекта mailFolder. |
@@ -78,6 +80,7 @@ GET /me/mailFolders/drafts
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
 |displayName|Строка|Отображаемое имя элемента mailFolder.|
 |id|Строка|Уникальный идентификатор элемента mailFolder.|
+|isHidden|Логический|Указывает, скрыт ли объект mailFolder. Это свойство можно установить только при создании папки. Дополнительные сведения см. в разделе [Скрытые папки почты](#hidden-mail-folders).|
 |parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
 |totalItemCount|Int32|Количество элементов в элементе mailFolder.|
 |unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|
@@ -93,7 +96,14 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 
 Папки почты в Outlook могут содержать элементы нескольких типов, например, папка "Входящие" может содержать элементы приглашений на собрания, не связанные с почтовыми элементами. Свойства `TotalItemCount` и `UnreadItemCount` включают элементы из папки почты вне зависимости от их типов.
 
-## <a name="relationships"></a>Отношения
+### <a name="hidden-mail-folders"></a>Скрытые папки почты
+Значение свойства `isHidden` по умолчанию: `false`. Вы можете задать **isHidden** только один раз при [создании объекта mailFolder](../api/user-post-mailfolders.md). Обновление свойства с помощью операции PATCH невозможно. Чтобы изменить свойство **isHidden** папки, удалите существующую папку и создайте новую с нужным значением.
+
+Скрытые папки почты поддерживают все операции, поддерживаемые обычной почтовой папкой.
+
+По умолчанию при [перечислении объектов mailFolder](../api/user-list-mailfolders.md) возвращаются только не скрытые папки почты. Чтобы включить скрытые папки почты в отклик, используйте параметр запроса `includeHiddenFolders=true`. Затем используйте свойство **isHidden**, чтобы определить, скрыта ли папка почты. 
+
+## <a name="relationships"></a>Связи
 
 | Связь | Тип | Описание |
 |:-------------|:-----|:------------|
@@ -154,6 +164,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
   "parentFolderId": "string",
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],

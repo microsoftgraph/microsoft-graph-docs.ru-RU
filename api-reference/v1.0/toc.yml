@@ -431,7 +431,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Получить чат для пользователя
                 href: api/chat-get.md
-          - name: Задачи To-Do
+          - name: Задачи из списка дел
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -1217,9 +1217,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -4147,7 +4147,7 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: Удаление
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: условный доступ;
+              - name: Условный доступ
                 items:
                   - name: Политики
                     items:
@@ -4631,22 +4631,22 @@ items:
                 href: api/mailfolder-update.md
               - name: Удаление папки почты
                 href: api/mailfolder-delete.md
-              - name: Вывод дельты папки почты
-                href: api/mailfolder-delta.md
               - name: Копирование папки с почтой
                 href: api/mailfolder-copy.md
-              - name: Перемещение папки с почтой
-                href: api/mailfolder-move.md
-              - name: Вывод списка сообщений в папке
-                href: api/mailfolder-list-messages.md
+              - name: Создание дочерней папки
+                href: api/mailfolder-post-childfolders.md
               - name: Создание сообщения в папке
                 href: api/mailfolder-post-messages.md
+              - name: Вывод дельты папки почты
+                href: api/mailfolder-delta.md
               - name: Получение дельты сообщения
                 href: api/message-delta.md
               - name: Список дочерних папок
                 href: api/mailfolder-list-childfolders.md
-              - name: Создание дочерней папки почты
-                href: api/mailfolder-post-childfolders.md
+              - name: Список сообщений в папке
+                href: api/mailfolder-list-messages.md
+              - name: Перемещение папки с почтой
+                href: api/mailfolder-move.md
           - name: Папка поиска почты
             href: resources/mailsearchfolder.md
             items:

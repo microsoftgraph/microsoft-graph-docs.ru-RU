@@ -5,18 +5,21 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d858db1fb120a29a6ebbffe1d4138498abe43e7c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a60f7166337933a3ee8897f9817c6adb148bd05c
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053771"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629401"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
 Пространство имен: microsoft.graph
 
 С помощью этого API можно создать папку почты в корневой папке почтового ящика пользователя.
+
+Если предполагается, что новая папка будет скрыта, необходимо настроить свойство **isHidden** для `true` создания.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,18 +42,19 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса объект JSON с указанными ниже параметрами. **displayName** — это единственное доступное для записи свойство объекта [MailFolder](../resources/mailfolder.md).
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** и **isHidden** являются единственными свойствами для объекта [mailFolder.](../resources/mailfolder.md)
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя новой папки.|
+|displayName|Строка|Отображаемое имя новой папки.|
+|isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [MailFolder](../resources/mailfolder.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [mailFolder](../resources/mailfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -64,7 +68,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "Clutter"
+  "displayName": "Clutter",
+  "isHidden": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -86,8 +91,10 @@ Content-length: 159
 ---
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +111,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",
+  "isHidden": true
 }
 ```
 

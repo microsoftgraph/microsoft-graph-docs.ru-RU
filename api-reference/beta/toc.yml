@@ -477,7 +477,7 @@ items:
                 href: api/chat-get.md
               - name: Списки чатов для пользователя
                 href: api/chat-list.md
-          - name: Задачи To-Do
+          - name: Задачи из списка дел
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -501,7 +501,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -9689,8 +9689,8 @@ items:
                 href: api/educationassignment-publish.md
               - name: Перечисление сданных работ
                 href: api/educationassignment-list-submissions.md
-              - name: Получить URL-адрес папки ресурсов (неподготовленный)
-                href: api/educationassignment-getresourcesfolderurl.md
+              - name: Настройка папки ресурсов назначения
+                href: api/educationassignment-setupresourcesfolder.md
               - name: Присоединение рубрики к назначению
                 href: api/educationassignment-get-rubric.md
               - name: Перечисление категорий
@@ -10161,7 +10161,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -11853,22 +11853,22 @@ items:
                 href: api/mailfolder-update.md
               - name: Удаление папки почты
                 href: api/mailfolder-delete.md
-              - name: Вывод дельты папки
-                href: api/mailfolder-delta.md
               - name: Копирование папки с почтой
                 href: api/mailfolder-copy.md
-              - name: Перемещение папки с почтой
-                href: api/mailfolder-move.md
-              - name: Вывод списка сообщений в папке
-                href: api/mailfolder-list-messages.md
+              - name: Создание дочерней папки
+                href: api/mailfolder-post-childfolders.md
               - name: Создание сообщения в папке
                 href: api/mailfolder-post-messages.md
+              - name: Вывод дельты папки
+                href: api/mailfolder-delta.md
               - name: Получение дельты сообщения
                 href: api/message-delta.md
               - name: Список дочерних папок
                 href: api/mailfolder-list-childfolders.md
-              - name: Создание дочерней папки почты
-                href: api/mailfolder-post-childfolders.md
+              - name: Список сообщений в папке
+                href: api/mailfolder-list-messages.md
+              - name: Перемещение папки с почтой
+                href: api/mailfolder-move.md
           - name: Папка поиска почты
             href: resources/mailsearchfolder.md
             items:
@@ -13099,7 +13099,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание

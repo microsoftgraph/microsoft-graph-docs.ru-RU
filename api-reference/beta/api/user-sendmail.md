@@ -1,16 +1,16 @@
 ---
 title: Отправка почты
-description: Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.
+description: Отправьте сообщение, указанное в тексте запроса, в формате JSON или MIME.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d3c8592007b98a5f5e225447a7fe163c95275c6
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5ee3bc0682f6611a06cb5e24e66b2c665a0be123
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134984"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645642"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -18,16 +18,20 @@ ms.locfileid: "50134984"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.
+Отправьте сообщение, указанное в тексте запроса, в формате JSON или MIME.
 
-В том же **вызове действия sendMail** вы можете:
+При использовании формата JSON можно включить [](../resources/mention.md) [вложение](../resources/attachment.md) и использовать упоминание, чтобы вызвать другого пользователя в новом сообщении.
 
-- Включить [вложение](../resources/attachment.md)
-- Использование упоминания [для](../resources/mention.md) вызова другого пользователя в новом сообщении
+При использовании формата MIME:
+- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Добавьте все вложения и свойства S/MIME в содержимое MIME.
+
+Этот метод сохраняет сообщение в папке **Отправленные** элементы.
+
+Кроме того, [создайте черновик сообщения для](../api/user-post-messages.md) отправки позже.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
-
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,33 +45,38 @@ ms.locfileid: "50134984"
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Имя       | Тип | Описание| 
+|:---------------|:--------|:----------
+| Authorization  | string  | Bearer {токен}. Обязательный.|
+| Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` контента MIME.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+При использовании формата JSON укажи объект JSON со следующими параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Message|[Message](../resources/message.md)|Отправляемое сообщение. Обязательный.|
 |SaveToSentItems|Boolean|Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно.|
 
-Если вы хотите использовать **упоминание** для вызова другого пользователя в новом сообщении:
-
-- Включит в текст запроса обязательное свойство **toRecipients,** свойство **упоминаний** и любые свойства сообщений, которые можно писать.
+Чтобы использовать **упоминание,** чтобы вызвать другого пользователя в новом сообщении:
+- Включай в текст запроса обязательное свойство **toRecipients,** свойство **mentions** и любые полезные свойства сообщений.
 - Для каждого упоминания в **свойстве упоминаний** необходимо указать **упомянутое** свойство.
+
+При указании тела в формате MIME укажите содержимое MIME в виде строки с кодом **base64** в теле запроса. Не включай параметры.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+
+## <a name="examples"></a>Примеры
+### <a name="example-1-send-a-new-email-using-json-format"></a>Пример 1. Отправка новой электронной почты с помощью формата JSON
 Ниже приведен пример вызова этого API.
-##### <a name="request-1"></a>Запрос 1
-Вот пример запроса на создание и отправку сообщения во время работы.
+#### <a name="request"></a>Запрос
+Вот пример запроса на создание и отправку сообщения на лету.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -122,9 +131,8 @@ Content-length: 512
 
 ---
 
-
-##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -133,9 +141,9 @@ Content-length: 512
 HTTP/1.1 202 Accepted
 ```
 
-
-##### <a name="request-2"></a>Запрос 2
-В следующем примере показано сообщение пользователя, выписав его пользователю Samantha Чтобы получить сообщение. Сообщение также содержит упоминание другого пользователя, Dana Swope.
+### <a name="example-2-send-a-message-that-includes-an--mention"></a>Пример 2. Отправка сообщения с упоминанием @
+#### <a name="request"></a>Запрос
+В следующем примере показано сообщение подписанного пользователя в Samantha Booth. В сообщении также содержится упоминание другого пользователя, Даны Swope.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,6 +177,7 @@ Content-length: 344
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-mentions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,8 +196,7 @@ Content-length: 344
 
 ---
 
-
-##### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -198,14 +206,16 @@ Content-length: 344
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-3"></a>Запрос 3
-В следующем примере создается сообщение с использованием настраиваемых заголовков сообщений Интернета и выполняется его отправка.
+### <a name="example-3-send-a-message-that-includes-custom-internet-message-headers"></a>Пример 3. Отправка сообщения с пользовательскими загонами сообщений в Интернете 
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
@@ -237,6 +247,7 @@ Content-type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -255,8 +266,7 @@ Content-type: application/json
 
 ---
 
-
-##### <a name="response-3"></a>Отклик 3
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -266,10 +276,8 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-4"></a>Запрос 4
-
-В следующем примере создается сообщение с вложением файла и отправляется сообщение.
-
+### <a name="example-4-sends-a-message-with-a-file-attachment"></a>Пример 4. Отправляет сообщение с вложением файла
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -325,9 +333,10 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-4"></a>Отклик 4
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -335,6 +344,54 @@ Content-type: application/json
 
 ```http
 HTTP/1.1 202 Accepted
+```
+### <a name="example-5-send-a-new-message-using-mime-format"></a>Пример 5. Отправка нового сообщения в формате MIME
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "message_send_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/sendMail
+Content-type: text/plain
+
+RnJvbTogQWxleCBXaWxiZXIgPEFsZXhXQGNvbnRvc28uY29tPgpUbzogTWVnYW4gQm93ZW4gPE1l
+Z2FuQkBjb250b3NvLmNvbT4KU3ViamVjdDogSW50ZXJuYWwgUmVzdW1lIFN1Ym1pc3Npb246IFNh
+bGVzIEFzc29jaWF0ZQpUaHJlYWQtVG9waWM6IEludGVybmFsIFJlc3VtZSBTdWJtaXNzaW9uOiBT
+YWxlcyBBc3NvY2lhdGUKVGhyZWFkLUluZGV4OiBjb2RlY29kZWNvZGVoZXJlaGVyZWhlcmUKRGF0
+ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
+MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
+cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
+OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
+```
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -350,5 +407,3 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
-
-

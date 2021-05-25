@@ -1,0 +1,50 @@
+### YamlMime:Tutorial
+title: Создайте первое приложение microsoft Graph data Подключение
+metadata:
+  title: Создайте первое приложение microsoft Graph data Подключение
+  description: В этом руководстве будет построено первое приложение Microsoft Graph Data Подключение для метрик электронной почты.
+  audience: Developer
+  level: Beginner
+  displayType: one-column
+  ms.date: 04/30/2021
+  author: fercobo-msft
+  ms.topic: tutorial
+  ms.custom: scenarios:getting-started, languages:ASP.NET
+  ms.openlocfilehash: 98127ccff39380f0d299a953b9b5abed61eedf75
+  ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "52645937"
+items:
+- title: Создайте первое приложение microsoft Graph data Подключение
+  durationInMinutes: 10
+  content: >
+    [!INCLUDE [](data-connect-quickstart-01.md)]
+- title: Настройка клиента Microsoft 365 и включить Microsoft Graph data Подключение
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](data-connect-quickstart-02.md)]
+- title: Настройка регистрации Azure Active Directory приложения
+  durationInMinutes: 10
+  content: >
+    [!INCLUDE [](data-connect-quickstart-03.md)]
+- title: Настройка ресурса служба хранилища Azure
+  durationInMinutes: 10
+  content: >
+    [!INCLUDE [](data-connect-quickstart-04.md)]
+- title: Настройка ресурса Фабрики данных Azure
+  durationInMinutes: 15
+  content: >
+    [!INCLUDE [](data-connect-quickstart-05.md)]
+- title: Отслеживайте запросы на согласие на данные с Microsoft 365 Центра администрирования и PowerShell
+  durationInMinutes: 5
+  content: >
+    [!INCLUDE [](data-connect-quickstart-06.md)]
+- title: Создайте ASP.NET для обработки экспортных данных
+  durationInMinutes: 25
+  content: >
+    [!INCLUDE [](data-connect-quickstart-07.md)]
+- title: Поздравляем!
+  durationInMinutes: 0
+  content: '[!INCLUDE [](data-connect-quickstart-08.md)]'

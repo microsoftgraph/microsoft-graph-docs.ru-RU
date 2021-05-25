@@ -1,22 +1,24 @@
 ---
-title: Создание объекта MailFolder
+title: Создание дочерней папки
 description: С помощью этого API можно создать дочернюю папку почты.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7746fb03f6f47f81f0807cdc42e1b7af8a982cfe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4d8d43e4bb3840fa248ab6b1f1109dc2061ff695
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055934"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629142"
 ---
-# <a name="create-mailfolder"></a>Создание объекта MailFolder
+# <a name="create-child-folder"></a>Создание дочерней папки
 
 Пространство имен: microsoft.graph
 
-С помощью этого API можно создать дочернюю папку почты.
+Используйте этот API для создания нового [почтового ящика для детей.](../resources/mailfolder.md)
+
+Если предполагается, что новая папка будет скрыта, необходимо настроить свойство **isHidden** для `true` создания.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,13 +50,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** — единственное writable свойство для [объекта mailFolder.](../resources/mailfolder.md)
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** и **isHidden** являются единственными свойствами для объекта [mailFolder.](../resources/mailfolder.md)
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|displayName|String|Отображаемое имя новой папки.|
+|displayName|Строка|Отображаемое имя новой папки.|
+|isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного использования этот метод возвращает код ответа и ресурс `201 Created` [mailFolder](../resources/mailfolder.md) в тексте ответа.
 
@@ -77,6 +80,7 @@ Content-length: 159
 
 {
   "displayName": "displayName-value",
+  "isHidden": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -119,7 +123,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "id": "id-value",
+  "isHidden": true
 }
 ```
 

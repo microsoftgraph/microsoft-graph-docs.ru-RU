@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 1c4629b8fcfca5168a1e752a984f3e77e1018dd0
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 942461cde194d187b88bdeb4b246bf42355dba81
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547671"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629457"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -29,6 +29,10 @@ ms.locfileid: "52547671"
 Общая доступность API отчетов для [отображения списка](/graph/api/provisioningobjectsummary-list) действий, выполненных службой подготовки Azure AD, и связанных с ней свойств. Предыдущая бета-версия согласована с версией API 1.0.
 
 ## <a name="may-2021-new-in-preview-only"></a>Март 2021 г.: новые возможности только в предварительной версии
+
+### <a name="education"></a>Образование
+- [Создание папки ресурсов задания](/graph/api/resources/educationAssignment-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) для отправки файлов в виде ресурсов [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). Свойство **resourcesFolderUrl** в [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) указывает на ту же папку.
+- [Создание папки ресурсов отправки](/graph/api/resources/educationSubmission-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) для отправки файлов в виде ресурсов [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true). Свойство **resourcesFolderUrl** в [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) указывает на ту же папку.
 
 ### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
 Запрос разрешений приложений с минимальными правами, `CloudPC.Read.All` или `CloudPC.ReadWrite.All`, для доступа к методам следующих ресурсов:

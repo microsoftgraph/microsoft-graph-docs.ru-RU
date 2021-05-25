@@ -1,35 +1,39 @@
 ---
 title: 'message: reply'
-description: 'Ответ отправителю сообщения, добавление комментария или изменение любых обновляемых свойств одновременно в одном вызове **reply**. '
+description: Ответ отправилю сообщения в формате JSON или MIME.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 39d03daf5a26d5617e4eca31ae7ba3799a5159c9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9e75bf3ff8eb7e0a05b94430ff4e5cbd2e99c125
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131161"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645530"
 ---
 # <a name="message-reply"></a>message: reply
 
-Пространство имен: microsoft.graph
+Пространство имен: microsoft.graph.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ответ отправителю сообщения, добавление комментария или изменение любых обновляемых свойств одновременно в одном вызове **reply**. После этого сообщение сохраняется в папке "Отправленные".
+Ответ отправилю сообщения [в](../resources/message.md) формате JSON или MIME.
 
-Кроме того, сначала можно создать [черновик](../api/message-createreply.md) ответного сообщения, включив комментарий или обновив свойства сообщения, а затем [отправить](../api/message-send.md) ответ.
+При использовании формата JSON:
+- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
+- Если исходное сообщение указывает получателя в свойстве **replyTo,** в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)отправьте ответ получателям в **replyTo,** а не получателю из **свойства.**
 
-**Примечание**
+При использовании формата MIME:
+- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
-- Можно указать комментарий или свойство **body** `message` параметра. Если указать оба этих запроса, будет возвращена ошибка "HTTP 400 Bad Request".
-- Если свойство **replyTo** указано в исходном сообщении в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)следует отправить ответ получателям в **replyTo,** а не получателю в свойстве **from.** 
+Этот метод сохраняет сообщение в папке **Отправленные** элементы.
 
+Кроме того, [создайте черновик](../api/message-createreply.md)для ответа на сообщение и [отправьте его](../api/message-send.md) позже.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,42 +42,52 @@ ms.locfileid: "50131161"
 |Для приложений | Mail.Send |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/reply
 POST /users/{id | userPrincipalName}/messages/{id}/reply
 POST /me/mailFolders/{id}/messages/{id}/reply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный |
+| Content-Type | string  | Характер данных в теле объекта. Обязательный <br/> Использование `application/json` объекта JSON и `text/plain` контента MIME |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+При использовании формата JSON включаем объект JSON со следующими параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
-|message|[message](../resources/message.md)|Любые записаемые свойства, которые необходимо обновить в ответном сообщении.|
+|message|[message](../resources/message.md) | Любые свойства, которые можно записать для обновления в ответном сообщении.|
+
+При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными сообщениями в Интернете, все закодированные в **формате base64** в тексте запроса. Этот метод использует отправитель исходного сообщения в качестве получателя.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
-В следующем примере содержится комментарий и получатель добавляется в ответное сообщение.
+Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+
+## <a name="examples"></a>Примеры
+### <a name="example-1-reply-to-a-message-in-json-format"></a>Пример 1. Ответ на сообщение в формате JSON
+В следующем примере содержится комментарий и добавляется получатель в ответное сообщение.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "message_reply_beta",
   "sampleKeys": ["AAMkADA1MTAAAAqldOAAA="]
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
 Content-Type: application/json
@@ -97,7 +111,9 @@ Content-Type: application/json
   },
   "comment": "Samantha, Randi, would you name the group please?" 
 }
+
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-reply-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,12 +135,58 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
+```
+
+### <a name="example-2-reply-to-a-message-in-mime-format"></a>Пример 2. Ответ на сообщение в формате MIME
+##### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "message_reply_mime_beta"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
+Content-Type: text/plain
+
+UmVjZWl2ZWQ6IGZyb20gY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSBieSAKY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSB3aXRoIE1pY3Jvc29mdCAKU01UUCBTZXJ2ZXIgKHZlcnNpb249VExTMV8yLCAKY2lwaGVyPVRMU19FQ0RIRV9SU0FfV0lUSF9BRVNfMjU2X0NCQ19TSEEzODRfUDI1NikgaW
+
+```
+
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -140,5 +202,3 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
-
-

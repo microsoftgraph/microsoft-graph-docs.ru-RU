@@ -1,16 +1,16 @@
 ---
 title: 'message: send'
-description: Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или
+description: Отправка существующего черновика сообщения.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 96ea8ccf3f44edb8c5b75b3e955d2381aa339d84
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ea24ae69c3888e31124df758bc22199bde1048ea
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131112"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645523"
 ---
 # <a name="message-send"></a>message: send
 
@@ -18,11 +18,16 @@ ms.locfileid: "50131112"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или пересылки. Затем сообщение сохраняется в папке "Отправленные".
+Отправка существующего черновика сообщения. 
+
+Черновик сообщения может быть новым черновиком [сообщения,](../api/user-post-messages.md)черновиком [ответа,](../api/message-createreply.md) [черновиком](../api/message-createreplyall.md)для всех ответов или [проектом вперед.](../api/message-createforward.md) 
+
+Этот метод сохраняет сообщение в папке **Отправленные** элементы.
+
+Кроме того, [отправьте новое сообщение](../api/user-sendmail.md) в одной операции.
 
 ## <a name="permissions"></a>Разрешения
-
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -47,14 +52,17 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | число | 0. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+Так как этот метод отправляет уже существующее черновик сообщения, указывать текст запроса не требуется.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+### <a name="example-1-send-an-existing-draft-message"></a>Пример 1. Отправка существующего черновика сообщения
 
 Ниже приведен пример вызова этого API.
+
 ##### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -90,6 +98,7 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 ##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -112,5 +121,3 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
-
-

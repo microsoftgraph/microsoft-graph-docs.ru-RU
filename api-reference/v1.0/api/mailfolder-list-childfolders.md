@@ -1,22 +1,25 @@
 ---
 title: Список childFolders
-description: 'Получение коллекции папок в указанной папке. Вы можете использовать короткий путь `.../me/MailFolders` для получения верхнего уровня '
+description: 'Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/MailFolders` вы можете перейти к верхнему уровню '
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9080d3ac5cc8cc027386c1bcb740f7f084689abe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c3b589db36b645884ec5218ef25b9c56949fbaf5
+ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055955"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629450"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
 Пространство имен: microsoft.graph
 
 Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/mailFolders` вы можете получить коллекцию папок верхнего уровня и перейти к другой папке.
+
+По умолчанию эта операция не возвращает скрытые папки. Используйте параметр запроса _includeHiddenFolders_, чтобы включить их в отклик.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -27,12 +30,24 @@ ms.locfileid: "52055955"
 |Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Чтобы получить все дочерние папки в указанной папке, за исключением скрытых:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
+
+Чтобы включить _скрытые_ дочерние папки в отклик:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders?includeHiddenFolders=true
+```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Чтобы вернуть список всех объектов childFolder, включая скрытые (их свойство **isHidden** имеет значение true), в URL-адресе запроса укажите параметр запроса `includeHiddenFolders` как `true`, как показано в разделе [HTTP-запрос](#http-request).
+
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -45,7 +60,13 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [mailFolder](../resources/mailfolder.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
+### <a name="example-1-list-mail-folders"></a>Пример 1. Перечисление папок почты
+
+Ниже приведен пример запроса.
+
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -76,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,12 +112,64 @@ Content-length: 232
 {
   "value": [
     {
+      "id": "id-value",
       "displayName": "displayName-value",
       "parentFolderId": "parentFolderId-value",
       "childFolderCount": 99,
       "unreadItemCount": 99,
       "totalItemCount": 99,
-      "id": "id-value"
+      "isHidden": false
+    }
+  ]
+}
+```
+### <a name="example-2-include-hidden-child-folders-under-a-specified-mail-folder"></a>Пример 2. Включение скрытых дочерних папок в указанную папку почты
+
+В следующем примере параметр запроса `includeHiddenFolders` используется для получения списка дочерних папок в указанной почтовой папке, включая скрытые почтовые папки. Отклик включает папку "Несрочные", параметру **isHidden** которой присвоено значение true.
+
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "mailfolder_get_hiddenchildfolders"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+```
+
+##### <a name="response"></a>Отклик
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+  "value": [
+    {
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Clutters",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "isHidden": true
     }
   ]
 }

@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 85ee877646569c33ba07b623fd3f246a5444c21e
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: fd3c48ca0f00d2c3c47ee2a0799d72129a5a0d4b
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579297"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645565"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -195,7 +195,7 @@ ms.locfileid: "52579297"
 | lastPasswordChangeDateTime | DateTimeOffset | Время последнего изменения своего пароля пользователем Azure AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`. |
 | licenseAssignmentStates | Коллекция [licenseAssignmentState](licenseassignmentstate.md) | Состояние назначений лицензий для пользователя. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
-| mail | String | SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com".<br>ПРИМЕЧАНИЕ. Значение свойства может содержать диакритические знаки, использование которых может привести к проблемам с доступом пользователя к другим приложениям Майкрософт.<br><br>Возвращается по умолчанию. Поддерживает `$filter` и `endsWith`. |
+| mail | String | SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Значение свойства может содержать диакритические знаки, использование которых может привести к проблемам с доступом пользователя к другим приложениям Майкрософт.<br><br> Поддерживает `$filter` и `endsWith`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса и отправки автоматических ответов на входящие сообщения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживается только для API получения пользователя (`GET /users/{id}` или `GET /me`). |
 | mailNickname | String | Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя. Максимальная длина: 64 символа.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 | mobilePhone | String | Основной сотовый телефон пользователя. <br><br>Возвращается по умолчанию. Только для чтения для пользователей, которые синхронизируются с локальным каталогом. |
