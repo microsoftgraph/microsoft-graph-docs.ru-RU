@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 942461cde194d187b88bdeb4b246bf42355dba81
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 6104775b7e5f73785f013c55f3bbc07352ec02b0
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629457"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645334"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -25,14 +25,24 @@ ms.locfileid: "52629457"
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверения и доступ | Удостоверения и вход
 Получение и обновление ролей гостевых пользователей с помощью свойства **guestUserRoleId** объекта [authorizationPolicy](/graph/api/resources/authorizationpolicy).
 
+### <a name="mail"></a>Почта
+- [Создавайте черновики и отправляйте сообщения Outlook в формате MIME](outlook-send-mime-message.md), прикрепляйте цифровые подписи S/MIME и шифруйте содержимое сообщений в S/MIME.
+- Создайте [mailFolder](/graph/api/resources/mailfolder) как [скрытую папку](/graph/api/resources/mailfolder#hidden-mail-folders), [задав свойство isHidden](/graph/api/user-post-mailfolders#example).
+
+### <a name="microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
+Попробуйте следующие новые функции в Microsoft Graph Toolkit 2.2:
+- Компоненты [Файл](/graph/toolkit/components/file) и [Список файлов](/graph/toolkit/components/file-list)
+- [Поставщик проверки подлинности MSAL 2.0](/graph/toolkit/providers/msal2)
+- [Библиотека SharePoint Framework](/graph/toolkit/get-started/mgt-spfx)
+
 ### <a name="reports--azure-ad-activity-reports"></a>Отчеты | Отчеты о действиях Azure AD
 Общая доступность API отчетов для [отображения списка](/graph/api/provisioningobjectsummary-list) действий, выполненных службой подготовки Azure AD, и связанных с ней свойств. Предыдущая бета-версия согласована с версией API 1.0.
 
 ## <a name="may-2021-new-in-preview-only"></a>Март 2021 г.: новые возможности только в предварительной версии
 
-### <a name="education"></a>Образование
-- [Создание папки ресурсов задания](/graph/api/resources/educationAssignment-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) для отправки файлов в виде ресурсов [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). Свойство **resourcesFolderUrl** в [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) указывает на ту же папку.
-- [Создание папки ресурсов отправки](/graph/api/resources/educationSubmission-SetUpResourcesFolder?view=graph-rest-beta&preserve-view=true) для отправки файлов в виде ресурсов [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true). Свойство **resourcesFolderUrl** в [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta&preserve-view=true) указывает на ту же папку.
+### <a name="connecting-external-content"></a>Подключение внешнего контента
+- При разработке соединителей учитывайте ограничения, связанные с [реализацией и работой](connecting-external-content-api-limits.md).
+- Попробуйте [API соединителей с Postman](connecting-external-content-connectors-api-postman.md).
 
 ### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
 Запрос разрешений приложений с минимальными правами, `CloudPC.Read.All` или `CloudPC.ReadWrite.All`, для доступа к методам следующих ресурсов:
@@ -42,7 +52,8 @@ ms.locfileid: "52629457"
   - Операции чтения и записи, а также метод [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) ресурса [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="education"></a>Образование
-[Настройка папки ресурсов SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) в которую должны отправляться все файловые ресурсы типа [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true), например файлы Word и Excel.
+- [Настройте папку ресурсов SharePoint](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) для загрузки и хранения всех файловых ресурсов в одном месте для [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- [Настройте папку ресурсов SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) для загрузки и хранения всех файловых ресурсов, таких как файл Word или Excel, в одном месте для [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--governance"></a>Удостоверения и доступ | Управление
 - Получите коллекцию ресурсов [accessPackageAssignment](/graph/api/resources/accessPackageAssignment?view=graph-rest-beta&preserve-view=true) путем [фильтрации по пользователю, вошедшему в систему](/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).
