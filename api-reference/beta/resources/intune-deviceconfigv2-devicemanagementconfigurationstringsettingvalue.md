@@ -1,34 +1,35 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионстрингсеттингвалуе
-description: Значение простого параметра
+title: тип ресурса deviceManagementConfigurationStringSettingValue
+description: Простое значение параметра
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 120cf1371ea345708a61f48d533986d489a68ae4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2e2374fd660fbfdcebee46ec6053d8ddc93f2010
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242387"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666704"
 ---
-# <a name="devicemanagementconfigurationstringsettingvalue-resource-type"></a>Тип ресурса Девицеманажементконфигуратионстрингсеттингвалуе
+# <a name="devicemanagementconfigurationstringsettingvalue-resource-type"></a>тип ресурса deviceManagementConfigurationStringSettingValue
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Значение простого параметра
+Простое значение параметра
 
 
-Наследуется от [девицеманажементконфигуратионсимплесеттингвалуе](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)
+Наследует [от deviceManagementConfigurationSimpleSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|значение|String|Значение параметра String.|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Настройка ссылки шаблона значений, унаследованной от [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
+|value|String|Значение параметра строки.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,6 +44,11 @@ ms.locfileid: "49242387"
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  },
   "value": "String"
 }
 ```

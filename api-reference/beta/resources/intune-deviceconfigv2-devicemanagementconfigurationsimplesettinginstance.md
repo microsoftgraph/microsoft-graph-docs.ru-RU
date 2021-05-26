@@ -1,35 +1,36 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионсимплесеттингинстанце
-description: Экземпляр простого параметра
+title: тип ресурса deviceManagementConfigurationSimpleSettingInstance
+description: Простой экземпляр параметра
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52ee180adbdd19ac95aa70159f198797d75ec302
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6c815ec0b90211ede9429abe707856af27ed79b5
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242392"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666725"
 ---
-# <a name="devicemanagementconfigurationsimplesettinginstance-resource-type"></a>Тип ресурса Девицеманажементконфигуратионсимплесеттингинстанце
+# <a name="devicemanagementconfigurationsimplesettinginstance-resource-type"></a>тип ресурса deviceManagementConfigurationSimpleSettingInstance
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Экземпляр простого параметра
+Простой экземпляр параметра
 
 
-Наследуется от [девицеманажементконфигуратионсеттингинстанце](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
+Наследует [от deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|сеттингдефинитионид|String|Параметр ID определения, наследуемый от [девицеманажементконфигуратионсеттингинстанце](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
-|симплесеттингвалуе|[девицеманажементконфигуратионсимплесеттингвалуе](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)|Значение экземпляра простого параметра|
+|settingDefinitionId|Строка|Параметр Определения Id, унаследованный от [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Настройка ссылки шаблона экземпляра, унаследованной от [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|simpleSettingValue|[deviceManagementConfigurationSimpleSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)|Простое значение экземпляра параметра|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,8 +46,17 @@ ms.locfileid: "49242392"
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
   "settingDefinitionId": "String",
+  "settingInstanceTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+    "settingInstanceTemplateId": "String"
+  },
   "simpleSettingValue": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValue",
+    "settingValueTemplateReference": {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+      "settingValueTemplateId": "String",
+      "useTemplateDefault": true
+    },
     "value": "String"
   }
 }

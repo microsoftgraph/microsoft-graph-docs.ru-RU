@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cffa6a685053194b8ff554d101fecd98f6c6456a
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 10d446532e0664c6d83d16d223c0a8e0d966aeb4
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868929"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666578"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvaluetemplate-resource-type"></a>тип ресурса deviceManagementConfigurationChoiceSettingValueTemplate
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -28,7 +28,7 @@ ms.locfileid: "51868929"
 |defaultValue|[deviceManagementConfigurationChoiceSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefaulttemplate.md)|Шаблон параметра параметра значение по умолчанию.|
 |recommendedValueDefinition|[deviceManagementConfigurationChoiceSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefinitiontemplate.md)|Рекомендуемые переопределения определения.|
 |requiredValueDefinition|[deviceManagementConfigurationChoiceSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefinitiontemplate.md)|Обязательное переопределения определения.|
-|settingValueTemplateId|String|Настройка кода шаблона значений|
+|settingValueTemplateId|Строка|Настройка кода шаблона значений|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -53,8 +53,12 @@ ms.locfileid: "51868929"
         "settingDefinitionId": "String",
         "isRequired": true,
         "simpleSettingValueTemplate": {
-          "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-          "settingValueTemplateId": "String"
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+          "settingValueTemplateId": "String",
+          "defaultValue": {
+            "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+            "constantValue": "String"
+          }
         }
       }
     ]
@@ -72,8 +76,12 @@ ms.locfileid: "51868929"
             "settingDefinitionId": "String",
             "isRequired": true,
             "simpleSettingValueTemplate": {
-              "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-              "settingValueTemplateId": "String"
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+              "settingValueTemplateId": "String",
+              "defaultValue": {
+                "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+                "constantValue": "String"
+              }
             }
           }
         ]
@@ -93,8 +101,12 @@ ms.locfileid: "51868929"
             "settingDefinitionId": "String",
             "isRequired": true,
             "simpleSettingValueTemplate": {
-              "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-              "settingValueTemplateId": "String"
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+              "settingValueTemplateId": "String",
+              "defaultValue": {
+                "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+                "constantValue": "String"
+              }
             }
           }
         ]
