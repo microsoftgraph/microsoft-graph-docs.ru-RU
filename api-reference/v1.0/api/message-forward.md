@@ -1,25 +1,37 @@
 ---
 title: 'message: forward'
-description: Пересылка сообщения. Сообщение сохраняется в папке "Отправленные".
+description: Переад. сообщение в формате JSON или MIME.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bf50b58b215eb4ec277c79d15c89e159882ee831
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a787aeaa213732dc1a527a3889fb1a37ce9ad325
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128388"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645502"
 ---
 # <a name="message-forward"></a>message: forward
 
 Пространство имен: microsoft.graph
 
-Пересылка сообщения. Сообщение сохраняется в папке "Отправленные".
+Переад. сообщение в формате JSON или MIME.
+
+При использовании формата JSON можно:
+- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
+- Укажите `toRecipients` параметр или **свойство toRecipients** `message` параметра. Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
+
+При использовании формата MIME:
+- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Добавьте все вложения и свойства S/MIME в содержимое MIME.
+
+Этот метод сохраняет сообщение в папке **Отправленные** элементы.
+
+Кроме того, [создайте черновик](../api/message-createforward.md)для отправки сообщения и [отправки](../api/message-send.md) его позже.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,24 +48,29 @@ POST /me/mailFolders/{id}/messages/{id}/forward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
+| Имя       | Тип | Описание| 
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный |
+| Content-Type | string  | Характер данных в теле объекта.  Обязательный. <br/> Используйте `application/json` для объекта JSON и `text/plain` контента MIME. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+При использовании формата JSON укажи объект JSON в теле запроса со следующими параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
 |toRecipients|Коллекция объектов [Recipient](../resources/recipient.md)|Список получателей.|
 
+При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными интернет-сообщениями ("To", "CC", "BCC", "Subject"), все закодированные в **формате base64** в тексте запроса.
+
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+
+## <a name="examples"></a>Примеры
+### <a name="example-1-forward-a-message-using-json-format"></a>Пример 1. Переоформить сообщение с помощью формата JSON
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -100,7 +117,6 @@ Content-length: 166
 
 
 ##### <a name="response"></a>Отклик
-##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -108,6 +124,46 @@ Content-length: 166
 } -->
 ```http
 HTTP/1.1 200 OK
+```
+
+### <a name="example-2-forward-a-message-using-mime-content"></a>Пример 2. Переопрепровождение сообщения с помощью контента MIME
+##### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "message_forward_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/forward
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

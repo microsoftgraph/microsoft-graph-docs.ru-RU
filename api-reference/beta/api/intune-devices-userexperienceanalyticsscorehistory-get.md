@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02fb8f7145a217b2911a420e0a8508a182f1f7ee
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5e3ea0725357697d930304cdc4f1867660acc299
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146141"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666298"
 ---
 # <a name="get-userexperienceanalyticsscorehistory"></a>Get userExperienceAnalyticsScoreHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51146141"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -68,13 +68,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSco
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 350
+Content-Length: 375
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
     "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
     "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+    "overallScore": 12,
     "startupScore": 12,
     "coreBootScore": 13,
     "coreSigninScore": 15,

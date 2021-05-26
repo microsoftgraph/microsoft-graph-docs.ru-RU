@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90dd6dfc79557ebed69c7359ff3a85d6fd042ee6
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 0c421989d170e99f2ce06aa86f5c856afdbcdcae
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862788"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665212"
 ---
 # <a name="create-devicemanagementconfigurationsettingdefinition"></a>Создание deviceManagementConfigurationSettingDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51862788"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -40,12 +40,13 @@ ms.locfileid: "51862788"
 POST /deviceManagement/reusableSettings
 POST /deviceManagement/configurationSettings
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
+POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,22 +58,22 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 |:---|:---|:---|
 |применимость|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какие параметры устройства применимы к|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа к режиму чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|keywords|Коллекция String|Маркеры для поиска параметров на|
-|infoUrls|Коллекция String|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
+|keywords|Коллекция строк|Маркеры для поиска параметров на|
+|infoUrls|Коллекция строк|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
 |возникновение|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, требуется ли параметр или нет.|
-|baseUri|String|Базовый путь CSP|
-|offsetUri|String|Смещение пути CSP из базы|
-|rootDefinitionId|String|Определение корневого параметра, если это параметр ребенка.|
-|categoryId|String|Указывает группу области, в которой параметр настроен в указанном поставщике служб конфигурации (CSP)|
+|baseUri|Строка|Базовый путь CSP|
+|offsetUri|Строка|Смещение пути CSP из базы|
+|rootDefinitionId|Строка|Определение корневого параметра, если это параметр ребенка.|
+|categoryId|Строка|Указывает группу области, в которой параметр настроен в указанном поставщике служб конфигурации (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Параметр типа, например конфигурации и соответствия требованиям. Возможные значения: `none`, `configuration`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Настройка представления типа управления в UX. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Настройка области видимости для UX. Возможные значения: `none`, `settingsCatalog`, `template`.|
 |referredSettingInformationList|[коллекция deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Список переданных сведений о параметрах.|
-|id|String|Идентификатор элемента|
-|description|String|Описание элемента|
-|helpText|String|Справка текста элемента|
+|id|Строка|Идентификатор элемента|
+|description|Строка|Описание элемента|
+|helpText|Строка|Справка текста элемента|
 |name|String|Имя элемента|
-|displayName|String|Отображение имени элемента|
+|displayName|Строка|Отображение имени элемента|
 |version|String|Версия элемента|
 
 

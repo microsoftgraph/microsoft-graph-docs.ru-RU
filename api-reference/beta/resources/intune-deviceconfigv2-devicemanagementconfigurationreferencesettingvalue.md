@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1dc92606270cf4c2febcee68905f0c8bd29ced13
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 1656b3e50094a55b4f2fe9ad422bbd54bd62bd6b
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868908"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666459"
 ---
 # <a name="devicemanagementconfigurationreferencesettingvalue-resource-type"></a>тип ресурса deviceManagementConfigurationReferenceSettingValue
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -28,8 +28,9 @@ ms.locfileid: "51868908"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|значение|String|Значение параметра строки. Унаследованный от [deviceManagementConfigurationStringSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringsettingvalue.md)|
-|примечание|String|Примечание, которое администратор может использовать для вложения определенных контекстных сведений|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Настройка ссылки шаблона значений, унаследованной от [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
+|value|String|Значение параметра строки. Унаследованный от [deviceManagementConfigurationStringSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringsettingvalue.md)|
+|примечание|Строка|Примечание, которое администратор может использовать для вложения определенных контекстных сведений|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -44,6 +45,11 @@ ms.locfileid: "51868908"
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationReferenceSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  },
   "value": "String",
   "note": "String"
 }

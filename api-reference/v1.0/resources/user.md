@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 97c5b28d846420a822a3625e983dfece52193bfb
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 055e83ebdff07f91bce62ab6acc2adcdd5bfe63a
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474759"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645551"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -167,7 +167,7 @@ ms.locfileid: "52474759"
 |lastPasswordChangeDateTime| DateTimeOffset | Время последнего изменения своего пароля пользователем Azure AD. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |licenseAssignmentStates|Коллекция [licenseAssignmentState](licenseassignmentstate.md)|Состояние назначений лицензий для пользователя. Только для чтения.|
-|mail|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com".<br>ПРИМЕЧАНИЕ. Значение свойства может содержать диакритические знаки, использование которых может привести к проблемам с доступом пользователя к другим приложениям Майкрософт. <br><br>Возвращается по умолчанию. Поддерживает `$filter` и `endsWith`.|
+|mail|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com".<br>ПРИМЕЧАНИЕ. Значение свойства может содержать диакритические знаки, использование которых может привести к проблемам с доступом пользователя к другим приложениям Майкрософт. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Значение свойства может содержать диакритические знаки, использование которых может привести к проблемам с доступом пользователя к другим приложениям Майкрософт.<br><br>Возвращается по умолчанию. Поддерживает `$filter` и `endsWith`.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживается только для API получения пользователя (`GET /users/{id}` или `GET /me`).|
 |mailNickname|String|Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Максимальная длина: 64 символа. Поддерживает `$filter`.|
 |mobilePhone|String|Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Максимальная длина: 64 символа. Возвращается по умолчанию. |

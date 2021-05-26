@@ -1,15 +1,15 @@
 ---
-title: Управление устройствами в Microsoft Intune — API Microsoft Graph
-description: Перечислены API Microsoft Graph для конечных точек Intune (REST), которые определяют управление устройствами для организации-клиента.
+title: Управление устройствами в Microsoft Intune - API Graph Microsoft
+description: Списки microsoft Graph API для конечных точек Intune (REST), которые определяют управление устройствами для организации-клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f14fe5075e18a046698bc5725ccb9bb1d2618a89
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 99dd9b1abd5353f6d8e4ca30aaac48e54bd296b7
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863943"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666277"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -19,6 +19,7 @@ ms.locfileid: "51863943"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
+- [Активация результата действия esim устройства](intune-devices-activatedeviceesimactionresult.md)
 - [Согласие администратора](intune-devices-adminconsent.md)
 - [Состояние разрешения администратора](intune-devices-adminconsentstate.md)
 - [Данные загрузки коллекции журналов приложения](intune-devices-applogcollectiondownloaddetails.md)
@@ -35,7 +36,9 @@ ms.locfileid: "51863943"
 - [Тип оператора выражения условия двоичного управления](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Результат группового действия в отношении управляемых устройств](intune-devices-bulkmanageddeviceactionresult.md)
 - [Тип корпуса](intune-devices-chassistype.md)
+- [Свойство устройства Chrome o s](intune-devices-chromeosdeviceproperty.md)
 - [Условие управления циклического геофенсинга](intune-fencing-circulargeofencemanagementcondition.md)
+- [Cloud PC подключения](intune-devices-cloudpcconnectivityissue.md)
 - [Сводка с соманганными устройствами](intune-devices-comanageddevicessummary.md)
 - [Устройство, подходящее для comanagement](intune-devices-comanagementeligibledevice.md)
 - [Сводка устройств, подходящих для comanagement](intune-devices-comanagementeligibledevicessummary.md)
@@ -177,6 +180,7 @@ ms.locfileid: "51863943"
 - [Указанное состояние работоспособности партнера по управляемым устройствам](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Удаленное действие с управляемым устройством](intune-devices-manageddeviceremoteaction.md)
 - [Управляемое состояние приложения с обобщенным устройством](intune-troubleshooting-manageddevicesummarizedappstate.md)
+- [Состояние управляемого установщика](intune-devices-managedinstallerstatus.md)
 - [Условие управления](intune-fencing-managementcondition.md)
 - [Выражение условия управления](intune-fencing-managementconditionexpression.md)
 - [Модель выражения условия управления](intune-fencing-managementconditionexpressionmodel.md)
@@ -210,7 +214,7 @@ ms.locfileid: "51863943"
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Сведения о теге области ролей](intune-auditing-rolescopetaginfo.md)
-- [Поворот результата действия устройства bitLocker клавиш](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [Вращать BitLocker клавиши действия устройства](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [Сводка состояния базовой категории безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Политика базового обеспечения безопасности](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -256,14 +260,14 @@ ms.locfileid: "51863943"
 - [История оценки результатов аналитики пользовательского опыта](intune-devices-userexperienceanalyticsscorehistory.md)
 - [Параметры аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticssettings.md)
 - [Аналитика пользовательских интерфейсов, обобщенная](intune-devices-userexperienceanalyticssummarizedby.md)
-- [Сводка аналитики пользовательских интерфейсов для устройств Windows 10](intune-devices-userexperienceanalyticswindows10devicessummary.md)
+- [Сводка Windows 10 пользовательских интерфейсов](intune-devices-userexperienceanalyticswindows10devicessummary.md)
 - [Аналитика пользовательских интерфейсов работает с любого устройства](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [Аналитика пользовательских интерфейсов работает из любой сводки устройств](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [Аналитика пользовательских интерфейсов работает из любой метрики](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
-- [Состояние развертывания автопилота Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)
-- [Тип регистрации автопилота Windows](intune-troubleshooting-windowsautopilotenrollmenttype.md)
-- [Состояние продукта защитника Windows](intune-devices-windowsdefenderproductstatus.md)
+- [Windows состояния развертывания автопилота](intune-troubleshooting-windowsautopilotdeploymentstate.md)
+- [Windows типа автопилота](intune-troubleshooting-windowsautopilotenrollmenttype.md)
+- [Windows состояние продукта defender](intune-devices-windowsdefenderproductstatus.md)
 - [Результат действия "Проверка с помощью Защитника Windows"](intune-devices-windowsdefenderscanactionresult.md)
 - [Учетная запись устройства с Windows](intune-devices-windowsdeviceaccount.md)
 - [Учетная запись AD для устройства с Windows](intune-devices-windowsdeviceadaccount.md)
@@ -278,7 +282,7 @@ ms.locfileid: "51863943"
 - [Счетчик имени вредоносной программы Windows](intune-devices-windowsmalwarenamecount.md)
 - [Описание вредоносных программ для Windows](intune-devices-windowsmalwareoverview.md)
 - [Серьезность вредоносной программы для Windows](intune-devices-windowsmalwareseverity.md)
-- [Количество серьезности вредоносных программ Windows](intune-devices-windowsmalwareseveritycount.md)
+- [Windows количество серьезности вредоносных программ](intune-devices-windowsmalwareseveritycount.md)
 - [Состояние вредоносной программы для Windows](intune-devices-windowsmalwarestate.md)
 - [Счетчик состояния вредоносной программы для Windows](intune-devices-windowsmalwarestatecount.md)
 - [Состояние угрозы вредоносных программ Windows](intune-devices-windowsmalwarethreatstate.md)

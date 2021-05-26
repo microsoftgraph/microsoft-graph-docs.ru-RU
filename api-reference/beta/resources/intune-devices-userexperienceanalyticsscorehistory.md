@@ -1,46 +1,47 @@
 ---
-title: Тип ресурса Усерекспериенцеаналитиксскорехистори
-description: Журнал оценки запуска устройств Analytics Device (взаимодействие с пользователем).
+title: тип ресурса userExperienceAnalyticsScoreHistory
+description: История оценки результатов запуска устройства для аналитики пользовательского интерфейса.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1702cb881ae85ce2d55ffbef0f8c96e93e88db3a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 667afd0bef187cbfed35c22d5f07593f9c548da3
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302721"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665597"
 ---
-# <a name="userexperienceanalyticsscorehistory-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксскорехистори
+# <a name="userexperienceanalyticsscorehistory-resource-type"></a>тип ресурса userExperienceAnalyticsScoreHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Журнал оценки запуска устройств Analytics Device (взаимодействие с пользователем).
+История оценки результатов запуска устройства для аналитики пользовательского интерфейса.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Усерекспериенцеаналитиксскорехисториес](../api/intune-devices-userexperienceanalyticsscorehistory-list.md)|Коллекция [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Список свойств и связей объектов [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md) .|
-|[Получение Усерекспериенцеаналитиксскорехистори](../api/intune-devices-userexperienceanalyticsscorehistory-get.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md) .|
-|[Создание Усерекспериенцеаналитиксскорехистори](../api/intune-devices-userexperienceanalyticsscorehistory-create.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Создание нового объекта [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md) .|
-|[Удаление Усерекспериенцеаналитиксскорехистори](../api/intune-devices-userexperienceanalyticsscorehistory-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md).|
-|[Обновление Усерекспериенцеаналитиксскорехистори](../api/intune-devices-userexperienceanalyticsscorehistory-update.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Обновление свойств объекта [усерекспериенцеаналитиксскорехистори](../resources/intune-devices-userexperienceanalyticsscorehistory.md) .|
+|[Список userExperienceAnalyticsScoreHistories](../api/intune-devices-userexperienceanalyticsscorehistory-list.md)|[коллекция userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Список свойств и связей [объектов userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|
+|[Get userExperienceAnalyticsScoreHistory](../api/intune-devices-userexperienceanalyticsscorehistory-get.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Чтение свойств и связей [объекта userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|
+|[Создание userExperienceAnalyticsScoreHistory](../api/intune-devices-userexperienceanalyticsscorehistory-create.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Создание нового [объекта userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|
+|[Удаление userExperienceAnalyticsScoreHistory](../api/intune-devices-userexperienceanalyticsscorehistory-delete.md)|Нет|Удаляет [пользователяExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md).|
+|[Обновление userExperienceAnalyticsScoreHistory](../api/intune-devices-userexperienceanalyticsscorehistory-update.md)|[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|Обновление свойств объекта [userExperienceAnalyticsScoreHistory.](../resources/intune-devices-userexperienceanalyticsscorehistory.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
-|стартупдатетиме|DateTimeOffset|Дата и время запуска устройства Analytics Device Experience.|
-|стартупскоре|Int32|Оценка запуска устройства Analytics для пользователя. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
-|коребутскоре|Int32|Оценка загрузки ядра устройств для службы аналитики взаимодействия с пользователем. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
-|коресигнинскоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
-|рекоммендедсофтварескоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
-|рестартскоре|Int32|Оценка перезапуска. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель, 0 указывает на чрезмерные перегрузки. Допустимые значения — от 0 до 9999999|
+|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|startupDateTime|DateTimeOffset|Время запуска устройства аналитики пользовательского интерфейса.|
+|overallScore|Int32|Общая оценка аналитики пользовательского опыта. Оценка будет в диапазоне 0-100, 100 является идеальным показателем. Допустимые значения: от 0 до 100|
+|startupScore|Int32|Оценка запуска устройства аналитики пользовательских интерфейсов. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
+|coreBootScore|Int32|Оценка загрузки основного загрузочного устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
+|coreSigninScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
+|recommendedSoftwareScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
+|restartScore|Int32|Оценка перезапуска. Оценка будет в диапазоне 0-100, 100 является идеальным показателем, 0 указывает на чрезмерные перезапуски. Допустимые значения от 0 до 9999999|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,6 +59,7 @@ ms.locfileid: "49302721"
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
   "id": "String (identifier)",
   "startupDateTime": "String (timestamp)",
+  "overallScore": 1024,
   "startupScore": 1024,
   "coreBootScore": 1024,
   "coreSigninScore": 1024,

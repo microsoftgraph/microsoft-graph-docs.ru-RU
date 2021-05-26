@@ -1,25 +1,37 @@
 ---
 title: 'message: replyAll'
-description: Ответ всем получателям сообщения. Затем сообщение сохраняется в папке "Отправленные".
+description: Ответьте всем получателям сообщения в формате JSON или MIME.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e6509b2d580406410b4c78742b38a2019405bd2
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 61fafb02f34d56c378046f4a2762769cf4ac91c4
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137580"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645537"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
 Пространство имен: microsoft.graph
 
-Ответ всем получателям сообщения. Затем сообщение сохраняется в папке "Отправленные".
+Ответьте всем получателям [сообщения в](../resources/message.md) формате JSON или MIME.
+
+При использовании формата JSON:
+- Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
+- Если исходное сообщение указывает получателя в свойстве **replyTo,** в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)отправьте ответ получателям в **replyTo,** а не получателю из **свойства.**
+
+При использовании формата MIME:
+- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Добавьте все вложения и свойства S/MIME в содержимое MIME.
+
+Этот метод сохраняет сообщение в папке **Отправленные** элементы.
+
+Кроме того, [создайте черновик для](../api/message-createreplyall.md) ответа на сообщение и [отправьте его](../api/message-send.md) позже.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,21 +50,26 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный |
+| Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` контента MIME. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+При использовании формата JSON укажи объект JSON в теле запроса со следующими параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Добавляемый комментарий. Может быть пустой строкой.|
 
+При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными сообщениями в Интернете, все закодированные в **формате base64** в тексте запроса. Этот метод загружает отправитель и всех получателей исходного сообщения в качестве получателей нового сообщения.
+
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+
+## <a name="examples"></a>Примеры
+### <a name="example-1-reply-all-in-json-format-to-a-message"></a>Пример 1. Ответ на сообщение в формате JSON
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -99,6 +116,45 @@ Content-length: 32
 } -->
 ```http
 HTTP/1.1 200 OK
+```
+### <a name="example-2-reply-all-in-mime-format-to-a-message"></a>Пример 2. Ответ в формате MIME на сообщение
+##### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "message_replyAll_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/replyAll
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
+```
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
+Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
+    }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec8a6c16550eb28770af9ce895f3941f3461b00a
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: b5fb8eb16af3a192c6def8088866f7891f7afa85
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869097"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665030"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywheredevice"></a>Обновление userExperienceAnalyticsWorkFromAnywhereDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51869097"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,18 +53,20 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
+|id|Строка|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
 |deviceName|String|Работа из любого имени устройства.|
 |serialNumber|String|Пользовательский интерфейс работает с любого серийного номера устройства.|
 |manufacturer|String|Пользовательский интерфейс работает с любого производителя устройства.|
 |model|String|Пользовательский интерфейс работает из любой модели устройства.|
-|владение|String|Пользовательский интерфейс работает с любого владельца устройства.|
-|managedBy|String|Пользовательский интерфейс работает из любого агента управления устройства.|
+|владение|Строка|Пользовательский интерфейс работает с любого владельца устройства.|
+|managedBy|Строка|Пользовательский интерфейс работает из любого агента управления устройства.|
 |autoPilotRegistered|Логический|Пользовательский интерфейс работает с автопилотом устройства intune.|
 |autoPilotProfileAssigned|Логический|Аналитика пользовательских интерфейсов работает из любого автопилота устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Пользовательский интерфейс работает с azureAdRegistered любого устройства.|
-|azureAdDeviceId|String|Пользовательский интерфейс работает из любого id-устройства Azure Ad.|
-|azureAdJoinType|String|Пользовательский опыт работы из любого устройства azure Ad joinType.|
+|azureAdDeviceId|Строка|Пользовательский интерфейс работает из любого id-устройства Azure Ad.|
+|azureAdJoinType|Строка|Пользовательский опыт работы из любого устройства azure Ad joinType.|
+|osDescription|String|Пользовательский интерфейс работает из любого описания ОС устройства.|
+|osVersion|String|Пользовательский интерфейс работает из любой версии ОС устройства.|
 
 
 
@@ -78,7 +80,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices/{userExperienceAnalyticsWorkFromAnywhereDeviceId}
 Content-type: application/json
-Content-length: 505
+Content-length: 585
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -92,7 +94,9 @@ Content-length: 505
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "Azure Ad Device Id value",
-  "azureAdJoinType": "Azure Ad Join Type value"
+  "azureAdJoinType": "Azure Ad Join Type value",
+  "osDescription": "Os Description value",
+  "osVersion": "Os Version value"
 }
 ```
 
@@ -101,7 +105,7 @@ Content-length: 505
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 554
+Content-Length: 634
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -116,7 +120,9 @@ Content-Length: 554
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "Azure Ad Device Id value",
-  "azureAdJoinType": "Azure Ad Join Type value"
+  "azureAdJoinType": "Azure Ad Join Type value",
+  "osDescription": "Os Description value",
+  "osVersion": "Os Version value"
 }
 ```
 

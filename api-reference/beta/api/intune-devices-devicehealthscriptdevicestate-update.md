@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2520d476265ee9745efa6a017d8de23a2bc77ad
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 9185740611f90b5a58a789d1ce1bcce888928fb0
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51609495"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665100"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>Обновление устройстваHealthScriptDeviceState
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,17 +53,18 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ состояния состояния скрипта устройства для устройства. Это свойство доступно только для чтения.|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|Состояние обнаружения из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|id|Строка|Ключ состояния состояния скрипта устройства для устройства. Это свойство доступно только для чтения.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Состояние обнаружения из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения скрипта для здоровья устройств|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период, когда ожидается выполнение сценария состояния устройства|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|preRemediationDetectionScriptOutput|String|Выход сценария обнаружения перед исправлением|
-|preRemediationDetectionScriptError|String|Ошибка из сценария обнаружения перед исправлением|
-|remediationScriptError|String|Выход ошибки сценария восстановления|
-|postRemediationDetectionScriptOutput|String|Вывод скрипта обнаружения после устранения|
-|postRemediationDetectionScriptError|String|Ошибка из сценария обнаружения после устранения|
+|preRemediationDetectionScriptOutput|Строка|Выход сценария обнаружения перед исправлением|
+|preRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения перед исправлением|
+|remediationScriptError|Строка|Выход ошибки сценария восстановления|
+|postRemediationDetectionScriptOutput|Строка|Вывод скрипта обнаружения после устранения|
+|postRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения после устранения|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправлений из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|assignmentFilterIds|Коллекция строк|Список ids фильтра назначения, используемых для оценки применимости скрипта для здоровья|
 
 
 
@@ -77,7 +78,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}
 Content-type: application/json
-Content-length: 762
+Content-length: 831
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -90,7 +91,10 @@ Content-length: 762
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 
@@ -99,7 +103,7 @@ Content-length: 762
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 811
+Content-Length: 880
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -113,7 +117,10 @@ Content-Length: 811
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 

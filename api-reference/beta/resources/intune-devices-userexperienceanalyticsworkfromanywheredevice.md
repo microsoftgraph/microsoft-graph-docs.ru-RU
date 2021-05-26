@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b00e86422989575dd6b30a967861974469aa945c
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: cef0dd74416c4fbcef83ebe10109795ba41986c1
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869121"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665590"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,18 +34,20 @@ ms.locfileid: "51869121"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
+|id|Строка|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
 |deviceName|String|Работа из любого имени устройства.|
 |serialNumber|String|Пользовательский интерфейс работает с любого серийного номера устройства.|
 |manufacturer|String|Пользовательский интерфейс работает с любого производителя устройства.|
 |model|String|Пользовательский интерфейс работает из любой модели устройства.|
-|владение|String|Пользовательский интерфейс работает с любого владельца устройства.|
-|managedBy|String|Пользовательский интерфейс работает из любого агента управления устройства.|
+|владение|Строка|Пользовательский интерфейс работает с любого владельца устройства.|
+|managedBy|Строка|Пользовательский интерфейс работает из любого агента управления устройства.|
 |autoPilotRegistered|Логический|Пользовательский интерфейс работает с автопилотом устройства intune.|
 |autoPilotProfileAssigned|Логический|Аналитика пользовательских интерфейсов работает из любого автопилота устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Пользовательский интерфейс работает с azureAdRegistered любого устройства.|
-|azureAdDeviceId|String|Пользовательский интерфейс работает из любого id-устройства Azure Ad.|
-|azureAdJoinType|String|Пользовательский опыт работы из любого устройства azure Ad joinType.|
+|azureAdDeviceId|Строка|Пользовательский интерфейс работает из любого id-устройства Azure Ad.|
+|azureAdJoinType|Строка|Пользовательский опыт работы из любого устройства azure Ad joinType.|
+|osDescription|String|Пользовательский интерфейс работает из любого описания ОС устройства.|
+|osVersion|String|Пользовательский интерфейс работает из любой версии ОС устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -72,7 +74,9 @@ ms.locfileid: "51869121"
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "String",
-  "azureAdJoinType": "String"
+  "azureAdJoinType": "String",
+  "osDescription": "String",
+  "osVersion": "String"
 }
 ```
 

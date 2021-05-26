@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b0dc569752e2620b33b2ca455e9e431c3529e7d
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5880d554bf6fb26fd113252406a466d41a266400
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146148"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666291"
 ---
 # <a name="list-userexperienceanalyticsscorehistories"></a>Список userExperienceAnalyticsScoreHistories
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51146148"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSco
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 380
+Content-Length: 407
 
 {
   "value": [
@@ -73,6 +73,7 @@ Content-Length: 380
       "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
       "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
       "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+      "overallScore": 12,
       "startupScore": 12,
       "coreBootScore": 13,
       "coreSigninScore": 15,

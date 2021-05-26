@@ -5,21 +5,18 @@ author: kenwith
 localization_priority: Priority
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 94ce76217b4e3ac12d849b064c000ed6a2664519
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 85d8d97897facb8be40fb5260de7f143a626f07e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547115"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665069"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Настройка единого входа на основе SAML для приложения с помощью API Microsoft Graph
 
 В этой статье вы узнаете, как создать и настроить единый вход на основе SAML для приложения в Azure Active Directory (Azure AD) с помощью API Microsoft Graph. Конфигурация приложения включает основные URL-адреса SAML, политику сопоставления утверждений и использование сертификата для добавления пользовательского ключа подписи. После создания приложения назначьте для него пользователя, который будет администратором. После этого вы сможете использовать URL-адрес, чтобы получить метаданные SAML AD Azure для дополнительной настройки приложения. 
 
 В этой статье в качестве примера используется шаблон приложения Azure AD AWS, но описанные здесь шаги можно применить для любого другого приложения на основе SAML, включенного в коллекцию Azure AD.
-
->[!NOTE]
->Объекты отклика и ключи, приведенные в этой статье, могут быть сокращены для удобства чтения.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -31,7 +28,7 @@ ms.locfileid: "52547115"
 
     ![Выбор разрешений Microsoft Graph](./images/application-saml-sso-configure-api/set-permissions.png)
         
-4. В списоке разрешений проокрутите и разверните **AppRoleAssignment (1)** и выберите разрешение **AppRoleAssignment.ReadWrite.All**. Прокрутите список разрешений дальше и разверните **Application (2)**, и выберите разрешение **Application.ReadWrite.All**. Перейдите к и разверните **Policy (13)** и затем выберите разрешения **Policy.Read.All** и **Policy.ReadWrite.ApplicationConfiguration**. Наконец, выделите и разверните пункт **Users (8)**, а затем выберите **User.ReadWrite.All**. 
+4. В списоке разрешений проокрутите и разверните **AppRoleAssignment (1)** и выберите разрешение **AppRoleAssignment.ReadWrite.All**. Прокрутите список разрешений дальше и разверните **Application (2)**, и выберите разрешение **Application.ReadWrite.All**. Перейдите к и разверните **Policy (13)** и затем выберите разрешения **Policy.Read.All** и **Policy.ReadWrite.ApplicationConfiguration**. Наконец, выделите и разверните пункт **Users (8)**, а затем выберите **User.ReadWrite.All**.
 
     ![Прокрутка списка и выбор разрешений approleassignment, application и policy](./images/application-saml-sso-configure-api/select-permissions.png)
 

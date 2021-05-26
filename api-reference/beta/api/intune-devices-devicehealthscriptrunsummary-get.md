@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba4ec2b2f37149cf82666d0a896bdac47482aebc
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b31b33a3d3243aee2ff600b4bf5ff7c9ffb671ae
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146274"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665534"
 ---
 # <a name="get-devicehealthscriptrunsummary"></a>Get deviceHealthScriptRunSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51146274"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 586
+Content-Length: 637
 
 {
   "value": {
@@ -78,6 +78,7 @@ Content-Length: 586
     "issueDetectedDeviceCount": 8,
     "detectionScriptErrorDeviceCount": 15,
     "detectionScriptPendingDeviceCount": 1,
+    "detectionScriptNotApplicableDeviceCount": 7,
     "issueRemediatedDeviceCount": 10,
     "remediationSkippedDeviceCount": 13,
     "issueReoccurredDeviceCount": 10,
