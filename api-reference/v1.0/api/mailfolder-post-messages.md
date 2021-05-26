@@ -1,18 +1,18 @@
 ---
-title: Создание объекта Message
-description: С помощью этого API можно создать экземпляр Message в mailfolder.
+title: Создание сообщения в почтовом ящике
+description: С помощью этого API можно создать объект Message в папке почты.
 author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a50d222830aeee573c4c7b5824ce2ccee9e9c7de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d318aac49f467b2c4740b4f6e76c479c5e051c56
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055920"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645273"
 ---
-# <a name="create-message"></a>Создание объекта Message
+# <a name="create-message-in-a-mailfolder"></a>Создание сообщения в почтовом ящике
 
 Пространство имен: microsoft.graph
 
@@ -87,7 +87,7 @@ Content-length: 248
 
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,34 +1,35 @@
 ---
-title: тип перечисления Девицеманажементконфигуратионтечнологиес
-description: Описание технологии, с помощью которой можно развертывать этот параметр
+title: тип enum deviceManagementConfigurationTechnologies
+description: Описывает, какую технологию можно развернуть с помощью этого параметра
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8541d689fc18933a98c916ed004927094e4af0f9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b0e6a6324f9157fb528fd5aeb7772f4c1e8721fe
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49337093"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666697"
 ---
-# <a name="devicemanagementconfigurationtechnologies-enum-type"></a>тип перечисления Девицеманажементконфигуратионтечнологиес
+# <a name="devicemanagementconfigurationtechnologies-enum-type"></a>тип enum deviceManagementConfigurationTechnologies
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Описание технологии, с помощью которой можно развертывать этот параметр
+Описывает, какую технологию можно развернуть с помощью этого параметра
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Параметр не может быть развернут через любой канал|
-|Корпоратив|1,1|Параметр может быть развернут через канал MDM|
-|windows10XManagement|2|Параметр можно развернуть с помощью канала Windows10XManagement|
-|конфигманажер|4 |Параметр можно развернуть с помощью канала Конфигманажер|
+|нет|0|Настройка не может быть развернута по любому каналу|
+|mdm|1|Параметр можно развернуть через канал MDM|
+|windows10XManagement|2|Параметр можно развернуть через канал Windows10XManagement|
+|configManager|4 |Параметр можно развернуть через канал ConfigManager|
+|MicrosoftSense|128|Настройка может быть развернута через канал агента SENSE|
 
 
 

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8e3abb8a558ed26b2a47467faabf30fffba2409d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d8a8a7f1cfd01ed63b54b66d888b3eb9e80d3a30
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042956"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664715"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -31,7 +31,7 @@ URL-адрес загрузки предоставляется только по
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

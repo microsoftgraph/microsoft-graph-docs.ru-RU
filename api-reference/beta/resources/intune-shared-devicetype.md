@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fce91703f252e80fd3db06d7e3fec7832e60269c
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e9b3ba15c67612038b19758df0e1f20569de2bce
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51123380"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665555"
 ---
 # <a name="devicetype-enum-type"></a>Тип enum deviceType
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51123380"
 |windowsRT|1|WindowsRT.|
 |winMO6|2|WinMO6.|
 |Nokia|3|Nokia.|
-|WindowsPhone|4 |Телефон Windows.|
+|WindowsPhone|4 |Windows телефон.|
 |mac|5 |Mac.|
 |winCE|6 |WinCE.|
 |winEmbedded|7 |WinEmbedded.|
@@ -40,18 +40,18 @@ ms.locfileid: "51123380"
 |iSocConsumer|12 |iSocConsumer.|
 |unix|13|Unix.|
 |macMDM|14 |Клиент Mac OS X с помощью встроенного агента MDM.|
-|holoLens|15 |Представление модных очки Windows 10.|
+|holoLens|15|Представление модных Windows 10 очки.|
 |surfaceHub|16 |Устройство Surface HUB.|
 |AndroidForWork|17 |Android для работы устройства.|
 |AndroidEnterprise|18 |Android корпоративное устройство.|
-|windows10x|19|Устройство Windows 10x.|
+|windows10x|19|Windows 10x устройства.|
 |androidnGMS|20|Android, не управляемое устройством Google.|
+|chromeOS|21|Cloud PC устройства.|
+|Linux|22|Устройство Linux.|
 |blackberry|100|Blackberry.|
 |ладонь|101|Палм.|
 |unknown|255|Представляет, что тип устройства неизвестен.|
-|cloudPC|257|Устройство облачного ПК.|
-
-
+|cloudPC|257|Cloud PC устройства.|
 
 
 

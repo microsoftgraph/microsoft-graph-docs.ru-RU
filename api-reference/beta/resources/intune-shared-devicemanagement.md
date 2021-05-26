@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73aa7497c6e519ca139856104a692c6f939fbf2f
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 1423a165bb66e89dbb67b40aa97c2d1dddb395b7
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866134"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665569"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -42,7 +42,7 @@ ms.locfileid: "51866134"
 - Отчётность
 - Партнеры по управлению телекоммуникационными ресурсами
 - События устранения неполадок
-- Сводки по защите информации Windows
+- Windows Сводки по защите информации
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -64,7 +64,7 @@ ms.locfileid: "51866134"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор, связанный с устройством.|
+|id|Строка|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |intuneAccountId|Guid|ID учетной записи Intune для данного клиента|
 |legacyPcManangementEnabled|Логический|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
@@ -94,7 +94,7 @@ ms.locfileid: "51866134"
 |androidForWorkEnrollmentProfiles|Коллекция [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Сущности профиля регистрации Android for Work.|
 |androidForWorkSettings|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Одноэлементная сущность параметров Android for Work.|
 |androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md);|Объект корпоративных параметров учетной записи единой учетной записи Android с управляемым управлением.|
-|AndroidManagedStoreAppConfigurationSchemas|[коллекция androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Сущностями конфигурации приложений для Android Enterprise.|
+|AndroidManagedStoreAppConfigurationSchemas|[коллекция androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Android Enterprise сущностями конфигурации приложений.|
 |**Аудит**|
 |auditEvents|Коллекция [auditEvent](../resources/intune-auditing-auditevent.md)|События аудита|
 |**Условия компании**|
@@ -142,13 +142,12 @@ ms.locfileid: "51866134"
 |userExperienceAnalyticsDeviceStartupHistory|[коллекция userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md)|История запуска устройства для аналитики пользовательских интерфейсов|
 |userExperienceAnalyticsDeviceStartupProcesses|[коллекция userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md)|Процессы запуска устройства для аналитики пользовательских интерфейсов|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|[коллекция userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md)|Производительность процесса запуска устройства для аналитики пользовательских интерфейсов|
-|**Регистрация**|
 |depOnboardingSettings|[коллекция depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Это коллекция нескольких маркеров DEP для каждого клиента.|
 |importedDeviceIdentities|[importedDeviceIdentity collection](../resources/intune-enrollment-importeddeviceidentity.md)|Идентификаторы импортируемых устройств.|
 |importedWindowsAutopilotDeviceIdentities|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Коллекция импортированных устройств Windows AutoPilot.|
-|windowsAutopilotDeploymentProfiles|[коллекция windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Профили развертывания автопилотов Windows|
-|windowsAutopilotDeviceIdentities|[коллекция windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Идентификаторы устройств автопилота Windows содержали коллекцию.|
-|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Параметры учетной записи автопилота Windows.|
+|windowsAutopilotDeploymentProfiles|[коллекция windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Windows автопилот развертывания|
+|windowsAutopilotDeviceIdentities|[коллекция windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Идентификаторы Windows автопилота содержали коллекцию.|
+|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Параметры Windows автопилота.|
 |**Встроенная SIM-карта**|
 |embeddedSIMActivationCodePools|[коллекция embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Встроенные пулы кодов активации SIM-карт, созданные этой учетной записью.|
 |**Фехтования**|
@@ -164,14 +163,14 @@ ms.locfileid: "51866134"
 |Объекты deviceEnrollmentConfiguration|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Список настроек регистрации устройств.|
 |Объекты deviceManagementPartner|Коллекция объектов [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Список партнеров по управлению устройствами, настроенных с помощью клиента.|
 |Объекты exchangeConnector|Коллекция объектов [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|Список соединителей Exchange, настроенных с помощью клиента.|
-|exchangeOnPremisesPolicies|[коллекция deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|Список политик Exchange On Premisis, настроенных клиентом.|
+|exchangeOnPremisesPolicies|[коллекция deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|Список политик Exchange Premisis, настроенных клиентом.|
 |exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|Политика, контролируемая доступом мобильных устройств к Exchange On Premises|
 |Объекты mobileThreatDefenseConnector|Коллекция объектов [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)|Список соединителей Mobile Threat Defense, настроенных с помощью клиента.|
 |**Набор политик**|
 |deviceManagementScripts|[коллекция deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|Список сценариев управления устройствами, связанных с клиентом.|
 |deviceConfigurations|Коллекция [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Список конфигураций устройств, связанных с клиентом.|
 |deviceCompliancePolicies|Коллекция [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Список политик соответствия требованиям устройств, связанных с клиентом.|
-|windowsAutopilotDeploymentProfiles|[коллекция windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Профили развертывания автопилотов Windows|
+|windowsAutopilotDeploymentProfiles|[коллекция windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Windows автопилот развертывания|
 |Объекты deviceEnrollmentConfiguration|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Список настроек регистрации устройств.|
 |**Политика доступа к ресурсам**|
 |derivedCredentials|[коллекция deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Коллекция параметров производных учетных данных, связанных с учетной записью.|

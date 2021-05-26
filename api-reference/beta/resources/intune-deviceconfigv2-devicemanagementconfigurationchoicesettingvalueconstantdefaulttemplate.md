@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b74dbf6552fda605708dbd5f197f5ee0167d2ac
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: f55e885448e7fe131a1eb4151196d5a200a8d300
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868959"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666592"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvalueconstantdefaulttemplate-resource-type"></a>deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate resource type
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -28,7 +28,7 @@ ms.locfileid: "51868959"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingDefinitionOptionId|String|Значение Constant по умолчанию|
+|settingDefinitionOptionId|Строка|Значение Constant по умолчанию|
 |children|[коллекция deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|Параметр Дети|
 
 ## <a name="relationships"></a>Связи
@@ -52,8 +52,12 @@ ms.locfileid: "51868959"
       "settingDefinitionId": "String",
       "isRequired": true,
       "simpleSettingValueTemplate": {
-        "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-        "settingValueTemplateId": "String"
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
+        "settingValueTemplateId": "String",
+        "defaultValue": {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+          "constantValue": "String"
+        }
       }
     }
   ]

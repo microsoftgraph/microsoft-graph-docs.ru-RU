@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72dd3594aee3bc9a19c7195e67201c7f54270b9b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 3d342f4703ba8dcb04b58007d26fc94ff99c8c91
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51127083"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665093"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Обновление устройстваHealthScriptRunSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51127083"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -58,6 +58,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 |issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему|
 |detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена|
 |detectionScriptPendingDeviceCount|Int32|Количество устройств, которые еще не запускают последнюю версию скрипта здоровья устройств|
+|detectionScriptNotApplicableDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не был применим|
 |issueRemediatedDeviceCount|Int32|Количество устройств, для которых сценарий восстановления смог устранить обнаруженную проблему|
 |remediationSkippedDeviceCount|Int32|Количество устройств, для которых было пропущено исправление|
 |issueReoccurredDeviceCount|Int32|Количество устройств, для которых успешно выполнен сценарий восстановления, но не удалось устранить обнаруженную проблему|
@@ -77,7 +78,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 Content-type: application/json
-Content-length: 494
+Content-length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -85,6 +86,7 @@ Content-length: 494
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
@@ -99,7 +101,7 @@ Content-length: 494
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 592
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -108,6 +110,7 @@ Content-Length: 543
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,

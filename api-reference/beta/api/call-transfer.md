@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe54dbb05313fa659e95d2a65e2a9dc74cd1bc83
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dbc7c4b07470ea0de1e4afe492a9accfc9173d1e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047611"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664015"
 ---
 # <a name="call-transfer"></a>вызов: передача
 
@@ -31,7 +31,7 @@ ms.locfileid: "52047611"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Приложение     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -437,6 +437,7 @@ Content-Type: application/json
 ### <a name="example-3-call-transfer-to-pstn-number"></a>Пример 3. Передача вызовов на номер PSTN
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+> **Примечание.** Телефон ID — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -620,6 +621,7 @@ Content-Type: application/json
 ### <a name="example-4-consultative-transfer-to-pstn-number"></a>Пример 4. Консультативный перевод на номер PSTN
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+> **Примечание.** Телефон ID — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.

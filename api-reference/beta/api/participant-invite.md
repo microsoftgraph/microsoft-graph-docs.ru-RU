@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c38bcedf3bb7c455f1cf087dc6f7091518589099
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac0436723a8e01d3476990f3d794b8fcd0e7ed9f
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049200"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666368"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Участники, которые будут приглашены.|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 Если этот метод безусысный, этот метод возвращает код отклика и заглавную ссылку Location с URI в `200 OK` [inviteParticipantsOperation,](../resources/inviteparticipantsoperation.md) созданный для этого запроса. Тело ответа содержит созданный [inviteParticipantsOperation.](../resources/inviteparticipantsoperation.md)
@@ -704,6 +704,7 @@ Content-Type: application/json
 ### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Пример 4. Приглашение одного участника PSTN на существующий групповой вызов
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
+> **Примечание.** Телефон ID — это номер телефона в формате E.164.
 
 #### <a name="request"></a>Запрос
 

@@ -1,47 +1,48 @@
 ---
-title: Тип ресурса Девицехеалсскриптрунсуммари
-description: Содержит свойства сводки по запуску сценария управления устройствами.
+title: тип ресурса deviceHealthScriptRunSummary
+description: Содержит свойства для сводки запуска скрипта управления устройствами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef09482999fdff50ebbd1bd0e0df5320aad6f206
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b1c1b31413c19436c7dceb34a2055a238fe5881a
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299361"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665233"
 ---
-# <a name="devicehealthscriptrunsummary-resource-type"></a>Тип ресурса Девицехеалсскриптрунсуммари
+# <a name="devicehealthscriptrunsummary-resource-type"></a>тип ресурса deviceHealthScriptRunSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства сводки по запуску сценария управления устройствами.
+Содержит свойства для сводки запуска скрипта управления устройствами.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Девицехеалсскриптрунсуммари](../api/intune-devices-devicehealthscriptrunsummary-get.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|Чтение свойств и связей объекта [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) .|
-|[Обновление Девицехеалсскриптрунсуммари](../api/intune-devices-devicehealthscriptrunsummary-update.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|Обновление свойств объекта [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) .|
+|[Get deviceHealthScriptRunSummary](../api/intune-devices-devicehealthscriptrunsummary-get.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|Чтение свойств и связей [объекта deviceHealthScriptRunSummary.](../resources/intune-devices-devicehealthscriptrunsummary.md)|
+|[Обновление устройстваHealthScriptRunSummary](../api/intune-devices-devicehealthscriptrunsummary-update.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|Обновление свойств объекта [deviceHealthScriptRunSummary.](../resources/intune-devices-devicehealthscriptrunsummary.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключевой объект сводки запуска сценария работоспособности устройства. Это свойство доступно только для чтения.|
-|ноиссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения не обнаружил проблему, и устройство находится в работоспособном состоянии.|
-|иссуедетектеддевицекаунт|Int32|Количество устройств, для которых обнаружена ошибка сценария обнаружения|
-|детектионскриптеррордевицекаунт|Int32|Количество устройств, на которых возникла ошибка при выполнении сценария обнаружения и который не был выполнен|
-|детектионскриптпендингдевицекаунт|Int32|Количество устройств, на которых еще не выполнялась последняя версия сценария работоспособности устройства|
-|иссуеремедиатеддевицекаунт|Int32|Количество устройств, для которых сценарий исправления мог разрешить обнаруженную проблему|
-|ремедиатионскиппеддевицекаунт|Int32|Количество устройств, для которых было пропущено исправление|
-|иссуереоккурреддевицекаунт|Int32|Количество устройств, для которых сценарий исправления успешно выполнен, но не удалось разрешить обнаруженную проблему|
-|ремедиатионскриптеррордевицекаунт|Int32|Количество устройств, для которых при выполнении сценария исправления возникла ошибка и оно не было завершено|
-|ластскриптрундатетиме|DateTimeOffset|Время последнего запуска сценария на всех устройствах|
-|иссуеремедиатедкумулативедевицекаунт|Int32|Количество устройств, которые были исправлены за последние 30 дней|
+|id|Строка|Ключ скрипта для службы службы устройств запустите объект сводки. Это свойство доступно только для чтения.|
+|noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым|
+|issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему|
+|detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена|
+|detectionScriptPendingDeviceCount|Int32|Количество устройств, которые еще не запускают последнюю версию скрипта здоровья устройств|
+|detectionScriptNotApplicableDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не был применим|
+|issueRemediatedDeviceCount|Int32|Количество устройств, для которых сценарий восстановления смог устранить обнаруженную проблему|
+|remediationSkippedDeviceCount|Int32|Количество устройств, для которых было пропущено исправление|
+|issueReoccurredDeviceCount|Int32|Количество устройств, для которых успешно выполнен сценарий восстановления, но не удалось устранить обнаруженную проблему|
+|remediationScriptErrorDeviceCount|Int32|Количество устройств, для которых при выполнении сценария восстановления произошла ошибка и не была завершена|
+|lastScriptRunDateTime|DateTimeOffset|Время последнего запуска сценария на всех устройствах|
+|issueRemediatedCumulativeDeviceCount|Int32|Количество устройств, которые были исправлены за последние 30 дней|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -62,6 +63,7 @@ ms.locfileid: "49299361"
   "issueDetectedDeviceCount": 1024,
   "detectionScriptErrorDeviceCount": 1024,
   "detectionScriptPendingDeviceCount": 1024,
+  "detectionScriptNotApplicableDeviceCount": 1024,
   "issueRemediatedDeviceCount": 1024,
   "remediationSkippedDeviceCount": 1024,
   "issueReoccurredDeviceCount": 1024,

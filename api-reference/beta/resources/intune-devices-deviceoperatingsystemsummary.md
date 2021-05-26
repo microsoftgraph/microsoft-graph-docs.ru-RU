@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de94b00a1660dc874e457d20315df2f3b0690164
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 02ab35788ac8628755e0052426c733191fbef2af
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444485"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665226"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -40,6 +40,7 @@ ms.locfileid: "50444485"
 |aospUserlessCount|Int32|Количество устройств без пользователей AOSP для Android. Допустимые значения от 0 до 2147483647|
 |aospUserAssociatedCount|Int32|Количество устройств Android, связанных с пользователем AOSP. Допустимые значения от 0 до 2147483647|
 |LinuxCount|Int32|Количество устройств ОС Linux. Допустимые значения от 0 до 2147483647|
+|chromeOSCount|Int32|Количество устройств Chrome OS. Допустимые значения от 0 до 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -68,7 +69,8 @@ ms.locfileid: "50444485"
   "configMgrDeviceCount": 1024,
   "aospUserlessCount": 1024,
   "aospUserAssociatedCount": 1024,
-  "linuxCount": 1024
+  "linuxCount": 1024,
+  "chromeOSCount": 1024
 }
 ```
 

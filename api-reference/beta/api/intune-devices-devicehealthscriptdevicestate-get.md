@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 395a160ad3ef0416e57dc43cefc98a9901dc07da
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 9ecc4321c72160f6283bb595c1b61be624ccd2c3
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130688"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52663896"
 ---
 # <a name="get-devicehealthscriptdevicestate"></a>Get deviceHealthScriptDeviceState
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51130688"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 854
+Content-Length: 929
 
 {
   "value": {
@@ -83,7 +83,10 @@ Content-Length: 854
     "remediationScriptError": "Remediation Script Error value",
     "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
     "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-    "remediationState": "skipped"
+    "remediationState": "skipped",
+    "assignmentFilterIds": [
+      "Assignment Filter Ids value"
+    ]
   }
 }
 ```

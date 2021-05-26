@@ -1,15 +1,15 @@
 ---
-title: Общие ресурсы в Microsoft Intune — API Microsoft Graph
-description: Перечислены API Microsoft Graph для конечных точек Intune (REST), которые поддерживают несколько процессов для организации-клиента.
+title: Общие ресурсы в Microsoft Intune - API Graph Microsoft
+description: Перечислены API Graph Microsoft для конечных точек Intune (REST), которые поддерживают несколько процессов для организации-клиента.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 4de0e8477d7d20894981c0d0e68956d806d926c4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 77500484aaafd5d9101e66789966b4861b61e511
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866148"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664904"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -19,9 +19,9 @@ ms.locfileid: "51866148"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Эти конечные точки используются в нескольких API Microsoft Graph для процессов Intune.  Намерения, цели и разрешения, необходимые для использования данного ресурса, зависят от конкретного рабочего процесса и контекста данного вызова.  Кроме того, некоторые методы, свойства и действия поддерживаются только для определенных процессов.
+Эти конечные точки используются в нескольких API Graph Microsoft для рабочего процесса Intune.  Намерения, цели и разрешения, необходимые для использования данного ресурса, зависят от конкретного рабочего процесса и контекста данного вызова.  Кроме того, некоторые методы, свойства и действия поддерживаются только для определенных процессов.
 
-Между рабочего процессами Intune делятся следующие ресурсы Graph:
+Между Graph intune общие ресурсы:
 
 - [Состояние действия](intune-shared-actionstate.md)
 - [Объект назначения всех устройств](intune-shared-alldevicesassignmenttarget.md)
@@ -41,14 +41,13 @@ ms.locfileid: "51866148"
 - [Объект назначения для управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Управление приложениями для устройств](intune-shared-deviceappmanagement.md)
 - [Категория устройств](intune-shared-devicecategory.md)
-- [Политика соответствия устройств требованиям](intune-shared-devicecompliancepolicy.md)
+- [Политика соответствия требованиям устройств](intune-shared-devicecompliancepolicy.md)
 - [Конфигурация устройств](intune-shared-deviceconfiguration.md)
 - [Настройка регистрации устройств](intune-shared-deviceenrollmentconfiguration.md)
 - [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Управление устройствами](intune-shared-devicemanagement.md)
 - [Параметры учетных данных для управления устройствами](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Сценарий управления устройствами](intune-shared-devicemanagementscript.md)
-- [Тип платформы устройства](intune-shared-deviceplatformtype.md)
 - [Включение](intune-shared-enablement.md)
 - [Параметры доступности регистрации](intune-shared-enrollmentavailabilityoptions.md)
 - [Состояние регистрации](intune-shared-enrollmentstate.md)
@@ -80,9 +79,8 @@ ms.locfileid: "51866148"
 - [Параметры времени установки мобильного приложения](intune-shared-mobileappinstalltimesettings.md)
 - [Устранение неполадок с мобильным приложением: событие](intune-shared-mobileapptroubleshootingevent.md)
 - [Тип владельца](intune-shared-ownertype.md)
-- [Тип платформы политики](intune-shared-policyplatformtype.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [Отчет](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)
 - [Итоговое состояние приложения](intune-shared-resultantappstate.md)
 - [Цвет RGB](intune-shared-rgbcolor.md)
@@ -104,4 +102,4 @@ ms.locfileid: "51866148"
 - [Профиль Windows AutoPilot Deployment](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Настройки назначения универсального приложения Windows AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
-- [Состояние обновления Windows](intune-shared-windowsupdatestate.md)
+- [Windows состояние обновления](intune-shared-windowsupdatestate.md)

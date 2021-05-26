@@ -1,15 +1,15 @@
 ---
-title: Конфигурация устройства в Microsoft Intune — API Microsoft Gaaph
-description: Списки API Microsoft Graph для конечных точек Intune (REST), определяемых для настройки устройств для организации-клиента.
+title: Конфигурация устройства в Microsoft Intune - API Microsoft Gaaph
+description: Списки microsoft Graph API для конечных точек Intune (REST), определяемых для настройки устройств для организации-клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c65f0bf66c057c355724d1a375ee7459804c24f6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4c9aa91adf1a8133080fd2f4ae09edee12445cc3
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444212"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666284"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -19,9 +19,9 @@ ms.locfileid: "50444212"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-С помощью рабочей нагрузки Microsoft Intune Device Configuration можно управлять настройками и функциями на всех управляемых устройствах.
+Использование рабочей нагрузки Microsoft Intune конфигурации устройств для управления настройками и функциями на всех управляемых устройствах.
 
-Для управления настройками и функциями на устройствах в Intune доступны следующие ресурсы Graph:
+Для управления настройками и функциями на устройствах Intune доступны следующие ресурсы Graph:
 
 - [Состояние соответствия требованиям настроенного администратором устройства ](intune-deviceconfig-administratorconfigureddevicecompliancestate.md)
 - [Состояние расширенного шифрования BitLocker](intune-deviceconfig-advancedbitlockerstate.md)
@@ -94,6 +94,7 @@ ms.locfileid: "50444212"
 - [Профиль сертификата PKCS Android](intune-deviceconfig-androidpkcscertificateprofile.md)
 - [Для Android требуется сложность пароля](intune-deviceconfig-androidrequiredpasswordcomplexity.md)
 - [Требуемый тип пароля для Android](intune-deviceconfig-androidrequiredpasswordtype.md)
+- [Тип оценки сети безопасности Android](intune-deviceconfig-androidsafetynetevaluationtype.md)
 - [Профиль сертификата SCEP для Android](intune-deviceconfig-androidscepcertificateprofile.md)
 - [Доверенный корневой сертификат для Android](intune-deviceconfig-androidtrustedrootcertificate.md)
 - [Источник имени пользователя Android](intune-deviceconfig-androidusernamesource.md)
@@ -118,6 +119,7 @@ ms.locfileid: "50444212"
 - [Конфигурация VPN для рабочего профиля Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Тип VPN-подключения для рабочего профиля Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Конфигурация Wi-Fi для рабочего профиля Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [Политика соответствия требованиям владельцев устройств Aosp](intune-deviceconfig-aospdeviceownercompliancepolicy.md)
 - [Конфигурация устройства владельца Aosp](intune-deviceconfig-aospdeviceownerdeviceconfiguration.md)
 - [Тип управления установкой приложения](intune-deviceconfig-appinstallcontroltype.md)
 - [Элемент списка приложений](intune-deviceconfig-applistitem.md)
@@ -140,7 +142,7 @@ ms.locfileid: "50444212"
 - [Политика BitLocker в отношении встроенных дисков](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Тип сведений для восстановления с помощью BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Параметры восстановления BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [Тип вращения пароля для восстановления BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
+- [BitLocker типа вращения пароля восстановления](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Политика BitLocker в отношении съемных дисков](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Политика BitLocker в отношении системных дисков](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Параметр синхронизации браузера](intune-deviceconfig-browsersyncsetting.md)
@@ -442,7 +444,7 @@ ms.locfileid: "50444212"
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [На предварительно зашифрованной полезной нагрузке](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
-- [Описание](intune-deviceconfig-operator.md)
+- [Operator](intune-deviceconfig-operator.md)
 - [Совершенная группа секретности вперед](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Запрос на перешифровку Pfx](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Сертификат пользователя Pfx](intune-raimportcerts-pfxusercertificate.md)
@@ -534,8 +536,8 @@ ms.locfileid: "50444212"
 - [База профилей сертификатов для Windows 10](intune-deviceconfig-windows10certificateprofilebase.md)
 - [Политика соответствия требованиям для Windows 10](intune-deviceconfig-windows10compliancepolicy.md)
 - [Специальная конфигурация для Windows 10](intune-deviceconfig-windows10customconfiguration.md)
-- [Интерфейс конфигурации прошивки устройств Windows 10](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
-- [Тип режима устройства Windows 10](intune-deviceconfig-windows10devicemodetype.md)
+- [Windows 10 интерфейс конфигурации прошивки устройства](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+- [Windows 10 типа устройства](intune-deviceconfig-windows10devicemodetype.md)
 - [Конфигурация профиля электронной почты EAS для Windows 10](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Тип выпуска Windows 10](intune-deviceconfig-windows10editiontype.md)
 - [Конфигурация Windows 10 Endpoint Protection](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
@@ -565,10 +567,10 @@ ms.locfileid: "50444212"
 - [Размер плитки на макете запуска для приложения Windows](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [База профилей сертификатов Windows ](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Конфигурация Advanced Threat Protection в Защитнике Windows](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
-- [Параметры защиты защиты защитника Windows](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
+- [Windows защиты от взлома защитника](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Конфигурация оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Режим оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
-- [Тип киоска края Windows](intune-deviceconfig-windowsedgekiosktype.md)
+- [Windows типа края киоска](intune-deviceconfig-windowsedgekiosktype.md)
 - [Сетевой профиль брандмауэра Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Правило брандмауэра Windows](intune-deviceconfig-windowsfirewallrule.md)
 - [Типы интерфейсов правила брандмауэра Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
@@ -586,17 +588,17 @@ ms.locfileid: "50444212"
 - [Пользователь Azure AD киоска Windows](intune-deviceconfig-windowskioskazureaduser.md)
 - [Конфигурация киоска Windows](intune-deviceconfig-windowskioskconfiguration.md)
 - [Классическое приложение киоска Windows](intune-deviceconfig-windowskioskdesktopapp.md)
-- [Расписание принудительного обновления киоска Windows](intune-deviceconfig-windowskioskforceupdateschedule.md)
+- [Windows расписание принудительного обновления киоска](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Локальная группа киоска Windows](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Локальный пользователь киоска Windows](intune-deviceconfig-windowskiosklocaluser.md)
 - [Несколько приложений киоска Windows](intune-deviceconfig-windowskioskmultipleapps.md)
 - [Профиль киоска Windows](intune-deviceconfig-windowskioskprofile.md)
 - [Отдельное приложение UWP киоска Windows](intune-deviceconfig-windowskiosksingleuwpapp.md)
-- [Одно приложение win32 киоска Windows](intune-deviceconfig-windowskiosksinglewin32app.md)
+- [Windows одно приложение win32](intune-deviceconfig-windowskiosksinglewin32app.md)
 - [Пользователь киоска Windows](intune-deviceconfig-windowskioskuser.md)
 - [Приложение UWP киоска Windows](intune-deviceconfig-windowskioskuwpapp.md)
 - [Посетитель киоска Windows](intune-deviceconfig-windowskioskvisitor.md)
-- [Приложение win32 в киоске Windows](intune-deviceconfig-windowskioskwin32app.md)
+- [Windows киоск win32 приложение](intune-deviceconfig-windowskioskwin32app.md)
 - [Политика сетевой изоляции Windows](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [База профилей сертификатов Windows Phone 8.1](intune-deviceconfig-windowsphone81certificateprofilebase.md)
 - [Политика соответствия для Windows Phone 8.1](intune-deviceconfig-windowsphone81compliancepolicy.md)

@@ -1,31 +1,32 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионсеттингинстанце
-description: Установка экземпляра в политике
+title: тип ресурса deviceManagementConfigurationSettingInstance
+description: Настройка экземпляра в политике
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 757b60c1e290612bbf51ac66ec42d3f27ac57cca
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 84b3b3a641fc8710bdd1b4266f15436084d01bdc
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302210"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665604"
 ---
-# <a name="devicemanagementconfigurationsettinginstance-resource-type"></a>Тип ресурса Девицеманажементконфигуратионсеттингинстанце
+# <a name="devicemanagementconfigurationsettinginstance-resource-type"></a>тип ресурса deviceManagementConfigurationSettingInstance
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Установка экземпляра в политике
+Настройка экземпляра в политике
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|сеттингдефинитионид|String|Идентификатор определения параметра|
+|settingDefinitionId|Строка|Настройка Id определения|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Настройка ссылки шаблона экземпляра|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -40,7 +41,11 @@ ms.locfileid: "49302210"
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingInstance",
-  "settingDefinitionId": "String"
+  "settingDefinitionId": "String",
+  "settingInstanceTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+    "settingInstanceTemplateId": "String"
+  }
 }
 ```
 

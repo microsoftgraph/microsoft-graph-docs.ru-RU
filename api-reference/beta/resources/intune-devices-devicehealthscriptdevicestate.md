@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3973b74215acc1aa817653cec3354f01c49cb8b5
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 9884e83a3c585285adc2332a3fc2c31794f52b65
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612072"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52664911"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>тип ресурса deviceHealthScriptDeviceState
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,17 +34,18 @@ ms.locfileid: "51612072"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ состояния состояния скрипта устройства для устройства. Это свойство доступно только для чтения.|
-|detectionState|[runState](../resources/intune-devices-runstate.md)|Состояние обнаружения из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|id|Строка|Ключ состояния состояния скрипта устройства для устройства. Это свойство доступно только для чтения.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Состояние обнаружения из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения скрипта для здоровья устройств|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период, когда ожидается выполнение сценария состояния устройства|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|preRemediationDetectionScriptOutput|String|Выход сценария обнаружения перед исправлением|
-|preRemediationDetectionScriptError|String|Ошибка из сценария обнаружения перед исправлением|
-|remediationScriptError|String|Выход ошибки сценария восстановления|
-|postRemediationDetectionScriptOutput|String|Вывод скрипта обнаружения после устранения|
-|postRemediationDetectionScriptError|String|Ошибка из сценария обнаружения после устранения|
+|preRemediationDetectionScriptOutput|Строка|Выход сценария обнаружения перед исправлением|
+|preRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения перед исправлением|
+|remediationScriptError|Строка|Выход ошибки сценария восстановления|
+|postRemediationDetectionScriptOutput|Строка|Вывод скрипта обнаружения после устранения|
+|postRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения после устранения|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправлений из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|assignmentFilterIds|Коллекция строк|Список ids фильтра назначения, используемых для оценки применимости скрипта для здоровья|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -72,7 +73,10 @@ ms.locfileid: "51612072"
   "remediationScriptError": "String",
   "postRemediationDetectionScriptOutput": "String",
   "postRemediationDetectionScriptError": "String",
-  "remediationState": "String"
+  "remediationState": "String",
+  "assignmentFilterIds": [
+    "String"
+  ]
 }
 ```
 

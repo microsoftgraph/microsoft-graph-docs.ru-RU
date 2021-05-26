@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f6bea4ac6012a2f7b6fcd9c3d57bdb8d4b46555
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: febd45d2e3682584890a7aacc18e9701bb147b9f
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867233"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52665394"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Обновление объекта iosGeneralDeviceConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51867233"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,16 +55,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |accountBlockModification|Boolean|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
 |activationLockAllowWhenSupervised|Boolean|Указывает, следует ли запретить блокировку активации, когда устройство находится в защищенном режиме.|
@@ -155,7 +155,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskModeBlockVolumeButtons|Boolean|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
 |kioskModeAllowZoomSettings|Boolean|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
 |kioskModeAppStoreUrl|String|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
-|kioskModeBuiltInAppId|String|ID для встроенных приложений, которые можно использовать для режима киоска. Используется, когда не заданы KioskModeManagedAppId и KioskModeAppStoreUrl.|
+|kioskModeBuiltInAppId|Строка|ID для встроенных приложений, которые можно использовать для режима киоска. Используется, когда не заданы KioskModeManagedAppId и KioskModeAppStoreUrl.|
 |kioskModeRequireAssistiveTouch|Boolean|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Boolean|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Boolean|Указывает, обязательно ли использовать монозвук в режиме киоска.|
@@ -212,17 +212,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить показывать результаты из Интернета при поиске полезных сведений на защищенном устройстве.|
 |voiceDialingBlocked|Boolean|Указывает, следует ли заблокировать голосовой набор.|
 |wallpaperBlockModification|Boolean|Указывает, можно ли изменять обои на защищенном устройстве (iOS 9.0 и более поздних версий).|
-|wiFiConnectOnlyToConfiguredNetworks|Boolean|Указывает, обязательно ли использовать только сети Wi-Fi из профилей конфигурации, когда устройство находится в защищенном режиме.|
+|wiFiConnectOnlyToConfiguredNetworks|Boolean|Указывает, обязательно ли использовать только сети Wi-Fi из профилей конфигурации, когда устройство находится в защищенном режиме. Доступно для устройств с версиями iOS и iPadOS 14.4 и более ранних версий. Устройства с 14.5+ должны использовать параметр "WiFiConnectToAllowedNetworksOnlyForced.|
 |classroomForceRequestPermissionToLeaveClasses|Логический|Указывает, будет ли учащийся, зарегистрированный на неугодном курсе через Класс, запрашивать разрешения у преподавателя при попытке покинуть курс (iOS 11.3 и более поздний).|
 |keychainBlockCloudSync|Логический|Указывает, заблокирована ли синхронизация ключей iCloud. Требуется контролируемое устройство для iOS 13 и более поздней.|
 |pkiBlockOTAUpdates|Логический|Указывает, заблокированы ли обновления PKI на воздухе. Настройка этого ограничения для false не отключает проверки CRL и OCSP (iOS 7.0 и более поздней).|
 |privacyForceLimitAdTracking|Логический|Указывает, ограничено ли отслеживание. (iOS 7.0 и более поздний).|
-|enterpriseBookBlockBackup|Логический|Указывает, заблокирована или не заблокирована книга предприятия.|
-|enterpriseBookBlockMetadataSync|Логический|Указывает, заблокирована ли синхронизация записей и выделений для корпоративных книг.|
+|enterpriseBookBlockBackup|Логический|Указывает, заблокирована Enterprise или нет.|
+|enterpriseBookBlockMetadataSync|Логический|Указывает, заблокирована ли Enterprise и синхронизация выделений.|
 |airPrintBlocked|Логический|Указывает, заблокирована или не заблокирована AirPrint (iOS 11.0 и более поздней).|
 |airPrintBlockCredentialsStorage|Логический|Указывает, заблокировано ли хранение имени пользователя и пароля для Airprint (iOS 11.0 и более поздней части).|
 |airPrintForceTrustedTLS|Логический|Указывает, требуются ли доверенные сертификаты для связи печати TLS (iOS 11.0 и более поздней).|
-|airPrintBlockiBeaconDiscovery|Логический|Указывает, заблокировано ли обнаружение принтеров AirPrint для iBeacon. Это предотвращает фишинговые маячки Bluetooth AirPrint для сетевого трафика (iOS 11.0 и более поздней).|
+|airPrintBlockiBeaconDiscovery|Логический|Указывает, заблокировано ли обнаружение принтеров AirPrint для iBeacon. Это предотвращает фишинговые маяки Bluetooth AirPrint для сетевого трафика (iOS 11.0 и более поздней).|
 |filesNetworkDriveAccessBlocked|Логический|Указывает, могут ли устройства получать доступ к файлам или другим ресурсам на сетевом сервере с помощью протокола Блокировка сообщений сервера (SMB). Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
 |filesUsbDriveAccessBlocked|Логический|Указывает, могут ли севики с доступом подключаться к файлам и открывать их на USB-диске. Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
 |wifiPowerOnForced|Логический|Указывает, остается ли Wi-Fi, даже если устройство находится в режиме самолета. Доступно для устройств с iOS и iPadOS версий 13.0 и более поздних версий.|
@@ -245,6 +245,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |appClipsBlocked|Логический|Не позволяет пользователю добавлять какие-либо клипы приложений и удаляет существующие клипы приложений на устройстве.|
 |applePersonalizedAdsBlocked|Логический|Ограничивает персонализированную рекламу Apple, если это так. Доступна в iOS 14 и более поздней.|
 |nfcBlocked|Boolean|Отключить NFC, чтобы предотвратить сопряжение устройств с другими устройствами с поддержкой NFC. Доступно для устройств iOS/iPadOS с 14.2 и более поздним доступом.|
+|autoUnlockBlocked|Логический|Блокирует разблокирование устройства с помощью Apple Watch. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
+|unpairedExternalBootToRecoveryAllowed|Логический|Разрешить пользователям загрузку устройств в режим восстановления с неоплаченными устройствами. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
+|onDeviceOnlyDictationForced|Логический|Отключает подключения к серверам Siri, чтобы пользователи не могли использовать Siri для диктовки текста. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Тип приложения для работы в режиме киоска. Возможные значения: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -259,7 +262,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10656
+Content-length: 10776
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -551,6 +554,9 @@ Content-length: 10656
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
   "nfcBlocked": true,
+  "autoUnlockBlocked": true,
+  "unpairedExternalBootToRecoveryAllowed": true,
+  "onDeviceOnlyDictationForced": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -560,7 +566,7 @@ Content-length: 10656
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10828
+Content-Length: 10948
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -855,6 +861,9 @@ Content-Length: 10828
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
   "nfcBlocked": true,
+  "autoUnlockBlocked": true,
+  "unpairedExternalBootToRecoveryAllowed": true,
+  "onDeviceOnlyDictationForced": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
