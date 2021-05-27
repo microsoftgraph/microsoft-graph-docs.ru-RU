@@ -3,32 +3,32 @@ title: Get unifiedRoleManagementPolicy
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleManagementPolicy.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2136258212faeaaba241e25e7743eaff9e9a6aec
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 70f4b1d5d59f5306e5b73f08b5385dc96ea8ac9c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475076"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682358"
 ---
-# <a name="get-unifiedrolemanagementpolicy"></a><span data-ttu-id="e7cc4-103">Get unifiedRoleManagementPolicy</span><span class="sxs-lookup"><span data-stu-id="e7cc4-103">Get unifiedRoleManagementPolicy</span></span>
-<span data-ttu-id="e7cc4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e7cc4-104">Namespace: microsoft.graph</span></span>
+# <a name="get-unifiedrolemanagementpolicy"></a><span data-ttu-id="24f8a-103">Get unifiedRoleManagementPolicy</span><span class="sxs-lookup"><span data-stu-id="24f8a-103">Get unifiedRoleManagementPolicy</span></span>
+<span data-ttu-id="24f8a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="24f8a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7cc4-105">Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleManagementPolicy.](../resources/unifiedrolemanagementpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="e7cc4-105">Read the properties and relationships of an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object.</span></span>
+<span data-ttu-id="24f8a-105">Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleManagementPolicy.](../resources/unifiedrolemanagementpolicy.md)</span><span class="sxs-lookup"><span data-stu-id="24f8a-105">Read the properties and relationships of an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e7cc4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e7cc4-106">Permissions</span></span>
-<span data-ttu-id="e7cc4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7cc4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="24f8a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="24f8a-106">Permissions</span></span>
+<span data-ttu-id="24f8a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="24f8a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e7cc4-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e7cc4-109">Permission type</span></span>|<span data-ttu-id="e7cc4-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e7cc4-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="24f8a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="24f8a-109">Permission type</span></span>|<span data-ttu-id="24f8a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="24f8a-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e7cc4-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e7cc4-111">Delegated (work or school account)</span></span>|<span data-ttu-id="e7cc4-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="e7cc4-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
-|<span data-ttu-id="e7cc4-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e7cc4-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e7cc4-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="e7cc4-114">Not supported</span></span>|
-|<span data-ttu-id="e7cc4-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e7cc4-115">Application</span></span>|<span data-ttu-id="e7cc4-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="e7cc4-116">PrivilegedAccess.Read.AzureAD</span></span>|
+|<span data-ttu-id="24f8a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="24f8a-111">Delegated (work or school account)</span></span>|<span data-ttu-id="24f8a-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="24f8a-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
+|<span data-ttu-id="24f8a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="24f8a-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="24f8a-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="24f8a-114">Not supported</span></span>|
+|<span data-ttu-id="24f8a-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="24f8a-115">Application</span></span>|<span data-ttu-id="24f8a-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="24f8a-116">PrivilegedAccess.Read.AzureAD</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e7cc4-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e7cc4-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="24f8a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="24f8a-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,26 +38,26 @@ ms.locfileid: "52475076"
 GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e7cc4-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e7cc4-118">Optional query parameters</span></span>
-<span data-ttu-id="e7cc4-119">Этот метод поддерживает все параметры запроса OData, чтобы помочь настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="e7cc4-119">This method supports all of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="e7cc4-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="e7cc4-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="24f8a-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="24f8a-118">Optional query parameters</span></span>
+<span data-ttu-id="24f8a-119">Этот метод поддерживает все параметры запроса OData, чтобы помочь настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="24f8a-119">This method supports all of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="24f8a-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="24f8a-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e7cc4-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e7cc4-121">Request headers</span></span>
-|<span data-ttu-id="e7cc4-122">Имя</span><span class="sxs-lookup"><span data-stu-id="e7cc4-122">Name</span></span>|<span data-ttu-id="e7cc4-123">Описание</span><span class="sxs-lookup"><span data-stu-id="e7cc4-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="24f8a-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="24f8a-121">Request headers</span></span>
+|<span data-ttu-id="24f8a-122">Имя</span><span class="sxs-lookup"><span data-stu-id="24f8a-122">Name</span></span>|<span data-ttu-id="24f8a-123">Описание</span><span class="sxs-lookup"><span data-stu-id="24f8a-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="e7cc4-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e7cc4-124">Authorization</span></span>|<span data-ttu-id="e7cc4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e7cc4-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="24f8a-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="24f8a-124">Authorization</span></span>|<span data-ttu-id="24f8a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="24f8a-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e7cc4-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e7cc4-127">Request body</span></span>
-<span data-ttu-id="e7cc4-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e7cc4-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="24f8a-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="24f8a-127">Request body</span></span>
+<span data-ttu-id="24f8a-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="24f8a-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7cc4-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="e7cc4-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="24f8a-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="24f8a-129">Response</span></span>
 
-<span data-ttu-id="e7cc4-130">В случае успешного выполнения этот метод возвращает код ответа и `200 OK` объект [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="e7cc4-130">If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="24f8a-130">В случае успешного выполнения этот метод возвращает код ответа и `200 OK` объект [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="24f8a-130">If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e7cc4-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="e7cc4-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="24f8a-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="24f8a-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e7cc4-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="e7cc4-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="24f8a-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="24f8a-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e7cc4-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="e7cc4-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="24f8a-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="24f8a-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedrolemanagementpolicy"
@@ -66,19 +66,19 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ``` http
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/f93a5c37-5c37-f93a-375c-3af9375c3af9
 ```
-# <a name="c"></a>[<span data-ttu-id="e7cc4-134">C#</span><span class="sxs-lookup"><span data-stu-id="e7cc4-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="24f8a-134">C#</span><span class="sxs-lookup"><span data-stu-id="24f8a-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e7cc4-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e7cc4-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="24f8a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="24f8a-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedrolemanagementpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e7cc4-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e7cc4-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="24f8a-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="24f8a-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedrolemanagementpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e7cc4-137">Java</span><span class="sxs-lookup"><span data-stu-id="e7cc4-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="24f8a-137">Java</span><span class="sxs-lookup"><span data-stu-id="24f8a-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,8 +86,8 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/f93a5c37-5c
 
 
 
-### <a name="response"></a><span data-ttu-id="e7cc4-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="e7cc4-138">Response</span></span>
-<span data-ttu-id="e7cc4-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e7cc4-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="24f8a-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="24f8a-138">Response</span></span>
+<span data-ttu-id="24f8a-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="24f8a-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

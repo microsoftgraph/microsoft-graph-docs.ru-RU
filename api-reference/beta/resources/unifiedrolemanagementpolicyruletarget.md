@@ -3,20 +3,20 @@ title: тип ресурса unifiedRoleManagementPolicyRuleTarget
 description: УнифицированнаяRoleManagementPolicyRuleTarget указывает цель, связанную с политикой управления ролью.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ad612355fdcb5089277541ae898ba3429fda7fc9
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: ce98c30748e3a4c524c09dc379c636fdadf57faf
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299689"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682238"
 ---
-# <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a><span data-ttu-id="7bd4f-103">тип ресурса unifiedRoleManagementPolicyRuleTarget</span><span class="sxs-lookup"><span data-stu-id="7bd4f-103">unifiedRoleManagementPolicyRuleTarget resource type</span></span>
+# <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a><span data-ttu-id="88fd2-103">тип ресурса unifiedRoleManagementPolicyRuleTarget</span><span class="sxs-lookup"><span data-stu-id="88fd2-103">unifiedRoleManagementPolicyRuleTarget resource type</span></span>
 
-<span data-ttu-id="7bd4f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7bd4f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="88fd2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88fd2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="7bd4f-105">УнифицированнаяRoleManagementPolicyRuleTarget указывает цель, связанную с политикой управления ролью.</span><span class="sxs-lookup"><span data-stu-id="7bd4f-105">A unifiedRoleManagementPolicyRuleTarget specifies the target associated with the role management policy.</span></span>
+<span data-ttu-id="88fd2-105">УнифицированнаяRoleManagementPolicyRuleTarget указывает цель, связанную с политикой управления ролью.</span><span class="sxs-lookup"><span data-stu-id="88fd2-105">A unifiedRoleManagementPolicyRuleTarget specifies the target associated with the role management policy.</span></span>
 <!--
 ## Properties
 |Property|Type|Description|
@@ -32,8 +32,8 @@ ms.locfileid: "52299689"
 |:---|:---|:---|
 |targetObjects|[directoryObject](../resources/directoryobject.md) collection|The collection of users, groups and servicePrincipals which are in scope of the policy. If not specified, all objects are in scope of the policy.|
 -->
-## <a name="json-representation"></a><span data-ttu-id="7bd4f-106">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="7bd4f-106">JSON representation</span></span>
-<span data-ttu-id="7bd4f-107">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7bd4f-107">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="88fd2-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="88fd2-106">JSON representation</span></span>
+<span data-ttu-id="88fd2-107">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="88fd2-107">The following is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"

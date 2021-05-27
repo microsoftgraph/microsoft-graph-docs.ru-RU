@@ -1,0 +1,6 @@
+<!-- markdownlint-disable MD002 MD025 MD041 -->
+
+<span data-ttu-id="f75df-101">Вы успешно завершили руководство по Graph Microsoft Core Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f75df-101">You have successfully completed the .NET Core Microsoft Graph connector tutorial.</span></span> <span data-ttu-id="f75df-102">Теперь вы создали настраиваемый соединитатель и использовали его для питания Microsoft Search.</span><span class="sxs-lookup"><span data-stu-id="f75df-102">Now you have created a custom connector and used it to power Microsoft Search.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="f75df-103">Следующие шаги</span><span class="sxs-lookup"><span data-stu-id="f75df-103">Next steps</span></span>
+<span data-ttu-id="f75df-104">Дополнительные сведения обо всех данных, к которые можно получить с помощью настраиваемой соединители, см. в обзоре Graph [microsoft.](connecting-external-content-connectors-overview.md)</span><span class="sxs-lookup"><span data-stu-id="f75df-104">To find out more about all the data you can access with your custom connector, see [Microsoft Graph connectors overview](connecting-external-content-connectors-overview.md).</span></span>
