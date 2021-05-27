@@ -1,0 +1,91 @@
+---
+title: Создание, обновление и удаление подключений в Microsoft Graph
+description: Узнайте, как создавать подключения и управлять ими с помощью Microsoft Graph.
+localization_priority: Priority
+author: mecampos
+doc_type: conceptualPageType
+ms.prod: search
+ms.openlocfilehash: 5020a8b56e6746e7c154af229113029c3f7731c0
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645991"
+---
+<!---<author of this doc: rsamai>--->
+
+# <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a><span data-ttu-id="d3f6b-103">Создание, обновление и удаление подключений в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d3f6b-103">Create, update, and delete connections in the Microsoft Graph</span></span>
+
+<span data-ttu-id="d3f6b-104">Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-104">Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.</span></span>
+
+<span data-ttu-id="d3f6b-105">Платформа подключений Microsoft Graph — это простой способ добавления внешних данных в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-105">The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph.</span></span> <span data-ttu-id="d3f6b-106">Подключение — это логический контейнер для внешних данных, которыми администратор управляет как единым целым.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-106">A connection is a logical container for your external data that an administrator can manage as a single unit.</span></span>
+
+<span data-ttu-id="d3f6b-107">После создания подключения можно добавить содержимое из любого внешнего источника данных, такого как локальный источник контента или внешний сервис SaaS.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-107">Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service.</span></span> <span data-ttu-id="d3f6b-108">Вы можете просматривать и управлять только созданными вами подключениями, и теми из них, которые были [авторизованными](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) для управления.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-108">You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage.</span></span> <span data-ttu-id="d3f6b-109">Администратор поиска может просматривать все подключения клиента и управлять ими в современной версии центра администрирования.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-109">A search admin can view and manage all the connections in the tenant from the Modern Admin Center.</span></span>
+
+<!-- markdownlint-disable MD036 -->
+<span data-ttu-id="d3f6b-110">![Образец структуры соединителей запросов в пользовательскую систему поддержки](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)</span><span class="sxs-lookup"><span data-stu-id="d3f6b-110">![Sample custom helpdesk system Tickets Connector Structure](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)</span></span>
+
+<span data-ttu-id="d3f6b-111">*Образец структуры соединителей запросов в пользовательскую систему поддержки*</span><span class="sxs-lookup"><span data-stu-id="d3f6b-111">*Sample custom helpdesk system Tickets Connector Structure*</span></span>
+
+![Представление администратора подключений, включающее пользовательский соединитель запросов](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
+
+<span data-ttu-id="d3f6b-113">*Представление администратора подключений, включающее пользовательский соединитель запросов*</span><span class="sxs-lookup"><span data-stu-id="d3f6b-113">*Admin View of Connections including the custom Tickets Connector*</span></span>
+
+<!-- markdownlint-enable MD036 -->
+
+<span data-ttu-id="d3f6b-114">Моделируйте подключения как пожелаете. Однако создание одного подключение на каждый экземпляр соединителя используется чаще всего.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-114">You can model a connection anyway you want, but creating one connection for every instance of your connector is the most common model.</span></span> <span data-ttu-id="d3f6b-115">Например, каждый раз, когда вы [настраиваете соединитель общей папки Microsoft Windows](/microsoftsearch/configure-connector), создается новое подключение.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-115">For example, each time you [set up the Microsoft Windows file share connector](/microsoftsearch/configure-connector), a new connection is created.</span></span> <span data-ttu-id="d3f6b-116">Кроме того, вы можете создать единое подключение, чтобы добавить все элементы из источника данных.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-116">You can also create a single connection to add all items from your data source.</span></span> <span data-ttu-id="d3f6b-117">Например, вы создаете единое подключение, чтобы добавить в систему своей службы поддержки все запросы и инциденты для нескольких групп.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-117">For example, creating a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.</span></span>
+
+## <a name="states-and-operations"></a><span data-ttu-id="d3f6b-118">Состояния и операции</span><span class="sxs-lookup"><span data-stu-id="d3f6b-118">States and operations</span></span>
+
+<span data-ttu-id="d3f6b-119">Подключение может находиться в одном из следующих состояний:</span><span class="sxs-lookup"><span data-stu-id="d3f6b-119">Your connection can exist in one of the following states.</span></span>
+
+| <span data-ttu-id="d3f6b-120">Состояние</span><span class="sxs-lookup"><span data-stu-id="d3f6b-120">State</span></span>             | <span data-ttu-id="d3f6b-121">Описание</span><span class="sxs-lookup"><span data-stu-id="d3f6b-121">Description</span></span>                                                                                                                                               |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="d3f6b-122">**Draft**</span><span class="sxs-lookup"><span data-stu-id="d3f6b-122">**Draft**</span></span>         | <span data-ttu-id="d3f6b-p104">Подготовлено пустое подключение. Источник данных, схема или другие параметры еще не настроены.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-p104">An empty connection is provisioned. The data source, schema, or any settings have not been configured yet.</span></span>                                                |
+| <span data-ttu-id="d3f6b-125">**Ready**</span><span class="sxs-lookup"><span data-stu-id="d3f6b-125">**Ready**</span></span>         | <span data-ttu-id="d3f6b-126">Соединение подготовлено с помощью зарегистрированной схемы и готово к использованию.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-126">The connection is provisioned with registered schema and is ready for ingestion.</span></span>                                                                          |
+| <span data-ttu-id="d3f6b-127">**Obsolete**</span><span class="sxs-lookup"><span data-stu-id="d3f6b-127">**Obsolete**</span></span>      | <span data-ttu-id="d3f6b-128">Это происходит, если зависимая функция, например API, устарела.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-128">This occurs when a dependent feature, such as an API, has been deprecated.</span></span> <span data-ttu-id="d3f6b-129">Единственное допустимое решение – удалить подключение.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-129">Deleting the connection is the only valid operation.</span></span>                           |
+| <span data-ttu-id="d3f6b-130">**LimitExceeded**</span><span class="sxs-lookup"><span data-stu-id="d3f6b-130">**LimitExceeded**</span></span> | <span data-ttu-id="d3f6b-131">Если достигнуто максимальный предел для единого подключения или квоты клиента для всех подключений, невозможно добавить дополнительные элементы, пока вы не выйдете из этого состояния.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-131">If you hit the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state.</span></span> |
+
+<span data-ttu-id="d3f6b-132">В следующей таблице указано, какие операции доступны в каждом из этих состояний.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-132">The following table specifies which operations are available in each state.</span></span>
+
+| <span data-ttu-id="d3f6b-133">Операция</span><span class="sxs-lookup"><span data-stu-id="d3f6b-133">Operation</span></span>         | <span data-ttu-id="d3f6b-134">Draft</span><span class="sxs-lookup"><span data-stu-id="d3f6b-134">Draft</span></span>              | <span data-ttu-id="d3f6b-135">Ready</span><span class="sxs-lookup"><span data-stu-id="d3f6b-135">Ready</span></span>              | <span data-ttu-id="d3f6b-136">Obsolete</span><span class="sxs-lookup"><span data-stu-id="d3f6b-136">Obsolete</span></span>           | <span data-ttu-id="d3f6b-137">LimitExceeded</span><span class="sxs-lookup"><span data-stu-id="d3f6b-137">LimitExceeded</span></span>      |
+|-------------------|--------------------|--------------------|--------------------|--------------------|
+| <span data-ttu-id="d3f6b-138">Создание подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-138">Create connection</span></span> | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| <span data-ttu-id="d3f6b-143">Чтение подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-143">Read connection</span></span>   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="d3f6b-148">Обновление подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-148">Update connection</span></span> | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| <span data-ttu-id="d3f6b-153">Удаление подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-153">Delete connection</span></span> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="d3f6b-158">Создание схемы</span><span class="sxs-lookup"><span data-stu-id="d3f6b-158">Create schema</span></span>     | :heavy_check_mark: | :x:                | :x:                | :x:                |
+| <span data-ttu-id="d3f6b-163">Чтение схемы</span><span class="sxs-lookup"><span data-stu-id="d3f6b-163">Read schema</span></span>       | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="d3f6b-168">Обновление схемы</span><span class="sxs-lookup"><span data-stu-id="d3f6b-168">Update schema</span></span>     | :x:                | :x:                | :x:                | :x:                |
+| <span data-ttu-id="d3f6b-173">Удаление схемы</span><span class="sxs-lookup"><span data-stu-id="d3f6b-173">Delete schema</span></span>     | :x:                | :x:                | :x:                | :x:                |
+| <span data-ttu-id="d3f6b-178">Создание элемента</span><span class="sxs-lookup"><span data-stu-id="d3f6b-178">Create item</span></span>       | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| <span data-ttu-id="d3f6b-183">Чтение элемента</span><span class="sxs-lookup"><span data-stu-id="d3f6b-183">Read item</span></span>         | :x:                | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| <span data-ttu-id="d3f6b-188">Обновление элемента</span><span class="sxs-lookup"><span data-stu-id="d3f6b-188">Update item</span></span>       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+| <span data-ttu-id="d3f6b-193">Удаление элемента</span><span class="sxs-lookup"><span data-stu-id="d3f6b-193">Delete item</span></span>       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
+
+<span data-ttu-id="d3f6b-198">Подключение позволяет приложению [определить схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) для индексируемых элементов, а также предоставляет службе конечную точку для добавления, обновления и удаления элементов индекса.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-198">A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) for items that will be indexed, and provides an endpoint for your service to add, update, or delete items from the index.</span></span> <span data-ttu-id="d3f6b-199">[Создание подключения](#create-a-connection) — первый шаг приложения к добавлению элементов в индекс поиска.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-199">[Creating a connection](#create-a-connection) is the first step for an application to add items to the search index.</span></span>
+
+## <a name="create-a-connection"></a><span data-ttu-id="d3f6b-200">Создание подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-200">Create a connection</span></span>
+
+<span data-ttu-id="d3f6b-201">Чтобы приложение могло добавлять элементы в индекс поиска, ему необходимо создать и настроить подключение, выполнив указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-201">Before an application can add items to the search index, it must create and configure a connection using the following steps.</span></span>
+
+- <span data-ttu-id="d3f6b-202">[Создание подключения](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) с уникальным идентификатором, отображаемым именем и описанием.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-202">[Create a connection](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) with a unique ID, display name, and description.</span></span>
+- <span data-ttu-id="d3f6b-203">[Зарегистрируйте схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true), чтобы определить поля, которые будут включены в индекс.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-203">[Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) to define the fields that will be included in the index.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="d3f6b-204">После регистрации схемы ее невозможно изменить для существующего подключения.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-204">After a schema has been registered, it cannot be changed for an existing connection.</span></span>
+
+## <a name="update-a-connection"></a><span data-ttu-id="d3f6b-205">Обновление подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-205">Update a connection</span></span>
+
+<span data-ttu-id="d3f6b-206">Вы можете изменить отображаемое имя или описание существующего подключения, [обновив подключение](/graph/api/externalconnection-update?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="d3f6b-206">You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta&preserve-view=true).</span></span>
+
+## <a name="delete-a-connection"></a><span data-ttu-id="d3f6b-207">Удаление подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-207">Delete a connection</span></span>
+
+<span data-ttu-id="d3f6b-208">Вы можете [удалить подключение](/graph/api/externalconnection-delete?view=graph-rest-beta&preserve-view=true) и удалить все элементы, индексированные через него.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-208">You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta&preserve-view=true), and remove all items that were indexed via that connection.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="d3f6b-209">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="d3f6b-209">Next steps</span></span>
+
+- [<span data-ttu-id="d3f6b-210">Регистрация схемы подключения</span><span class="sxs-lookup"><span data-stu-id="d3f6b-210">Register the connection schema</span></span>](./connecting-external-content-manage-schema.md)
+- [<span data-ttu-id="d3f6b-211">Обзор справочника API соединителей Graph</span><span class="sxs-lookup"><span data-stu-id="d3f6b-211">Review the Graph Connectors API reference</span></span>](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="d3f6b-212">Обзор соединителей Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d3f6b-212">Overview for Microsoft Graph Connectors</span></span>](/microsoftsearch/connectors-overview)
+- <span data-ttu-id="d3f6b-213">Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) с сайта GitHub.</span><span class="sxs-lookup"><span data-stu-id="d3f6b-213">Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub</span></span>

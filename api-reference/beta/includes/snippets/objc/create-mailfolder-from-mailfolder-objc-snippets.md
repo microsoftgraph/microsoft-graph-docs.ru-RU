@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a03d5ccda8c6b5142b85b4d636c260dfcaaef565
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 3f8214e38977519e7d19a2ebaa5565e678972ae9
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48614509"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52668602"
 ---
 ```objc
 
@@ -18,6 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphMailFolder *mailFolder = [[MSGraphMailFolder alloc] init];
 [mailFolder setDisplayName:@"displayName-value"];
+[mailFolder setIsHidden: true];
 
 NSError *error;
 NSData *mailFolderData = [mailFolder getSerializedDataWithError:&error];
