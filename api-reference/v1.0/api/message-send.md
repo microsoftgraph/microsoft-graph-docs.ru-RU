@@ -1,25 +1,30 @@
 ---
 title: 'message: send'
-description: Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или
+description: Отправка существующего черновика сообщения.
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb00d44a669d12a21bf2d9e5a302b6fe4b627028
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 8be54552df8acf7faa67c070e85f63f48a5c23d4
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134017"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645495"
 ---
 # <a name="message-send"></a>message: send
 
 Пространство имен: microsoft.graph
 
-Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или пересылки. Затем сообщение сохраняется в папке "Отправленные".
+Отправка существующего черновика сообщения. 
+
+Черновик сообщения может быть предназначен для [нового сообщения](../api/user-post-messages.md), [ответа](../api/message-createreply.md), [ответа всем пользователям](../api/message-createreplyall.md) или [пересылки](../api/message-createforward.md).
+
+Этот метод сохраняет сообщение в папке **Отправленные**.
+
+Другой способ — [отправка нового сообщения](../api/user-sendmail.md) за один шаг.
 
 ## <a name="permissions"></a>Разрешения
-
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -45,12 +50,15 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | число | 0. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+Так как этот метод отправляет уже существующий черновик сообщения, указывать тело запроса необязательно.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-send-an-existing-draft-message"></a>Пример 1. Отправка существующего черновика сообщения
 
 В приведенном ниже примере показано, как вызывать этот API.
 

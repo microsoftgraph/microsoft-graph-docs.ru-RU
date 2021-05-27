@@ -4,12 +4,12 @@ description: Описаны поддерживаемые наборы данны
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 949f48feec3c0120faf52d992b25cf7438dda577
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 32215efe03db92684ac41301f7679774f040cd4e
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629373"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52666739"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Наборы данных, регионы и приемники, поддерживаемые подключением к данным Microsoft Graph
 
@@ -23,19 +23,19 @@ ms.locfileid: "52629373"
 | Имя набора данных                       | Описание                                                                        | Пример |
 | ---------------------------------- | ---------------------------------------------------------------------------------- | ------ |
 | BasicDataSet_v0.CalendarView_v0    | Содержит события из представления календаря.                                        | [CalendarView_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.CalendarView_v0.json) |
-| BasicDataSet_v0.Contact_v0         | Содержит доступные сведения из адресной книги каждого пользователя.                  | Ожидается в ближайшее время!       |
+| BasicDataSet_v0.Contact_v0         | Содержит доступные сведения из адресной книги каждого пользователя.                  | [Contact_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v0.json)       |
 | BasicDataSet_v0.Contact_v1         | Содержит контактные данные из адресной книги каждого пользователя.                        | [Contact_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v1.json)       |
 | BasicDataSet_v0.DirectReport_v0    | Содержит сведения о сотрудниках, находящихся в непосредственном подчинении каждого пользователя.   | [DirectReport_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)       |
-| BasicDataSet_v0.Event_v0           | Содержит сведения из событий календаря пользователя.                            | Ожидается в ближайшее время!       |
+| BasicDataSet_v0.Event_v0           | Содержит сведения из событий календаря пользователя.                            | [Event_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)       |
 | BasicDataSet_v0.Event_v1           | Содержит события из календаря каждого пользователя.                                       | [Event_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)       |
 | BasicDataSet_v0.MailboxSettings_v0 | Содержит параметры почтового ящика каждого пользователя.                                        | [MailboxSetting_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json)       |
 | BasicDataSet_v0.MailFolder_v0      | Содержит папки почты из почтового ящика каждого пользователя.                                | [MailFolder_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)       |
 | BasicDataSet_v0.Manager_v0         | Содержит сведения о пользователе для руководителя каждого пользователя.                            | [Manager_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)       |
-| BasicDataSet_v0.Message_v0         | Содержит сообщения из почтового ящика пользователя.                                       | Ожидается в ближайшее время!       |
+| BasicDataSet_v0.Message_v0         | Содержит сообщения из почтового ящика пользователя.                                       | [Message_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v0.json)       |
 | BasicDataSet_v0.Message_v1         | Содержит сообщение из почтового ящика каждого пользователя.                                       | [Message_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v1.json)       |
-| BasicDataSet_v0.SentItem_v0        | Содержит сообщения, отправленные из почтового ящика каждого пользователя.                               | Ожидается в ближайшее время!       |
+| BasicDataSet_v0.SentItem_v0        | Содержит сообщения, отправленные из почтового ящика каждого пользователя.                               | [SentItem_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v0.json)       |
 | BasicDataSet_v0.SentItem_v1        | Содержит сообщение, отправленное из почтового ящика каждого пользователя.                                | [SentItem_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v1.json)       |
-| BasicDataSet_v0.User_v0            | Содержит сведения о пользователе (DisplayName, UserPrincipalName и другую информацию). | Ожидается в ближайшее время!       |
+| BasicDataSet_v0.User_v0            | Содержит сведения о пользователе (DisplayName, UserPrincipalName и другую информацию). | [User_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)       |
 | BasicDataSet_v0.User_v1            | Содержит сведения о пользователе.                                                         | [User_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)       |
 
 ## <a name="regions"></a>Регионы

@@ -1,27 +1,39 @@
 ---
-title: Создание объекта Message
-description: С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.
+title: Создание сообщения
+description: Создание черновика нового сообщения в формате JSON или MIME.
 localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b2776e4708c6a5a72ee2f9c612f05f5f093b196f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9d10c07c433b3d8456c574519aa497fc163dde09
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054296"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645635"
 ---
-# <a name="create-message"></a>Создание объекта Message
+# <a name="create-message"></a>Создание сообщения
 
 Пространство имен: microsoft.graph
 
-С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.
+Создание черновика нового [сообщения](../resources/message.md) в формате JSON или MIME.
 
-Создавая черновик, в тот же **POST**-запрос вы можете включить [attachment](../resources/attachment.md).
+При использовании формата JSON можно:
+- Включать [вложение](../resources/attachment.md) в **сообщение**.
+- [Обновите](../api/message-update.md) черновике позже, чтобы добавить **текст** или изменить другие свойства сообщения.
+
+При использовании формата MIME:
+- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
+- Добавьте все вложения и свойства S/MIME в содержимое MIME.
+
+По умолчанию эта операция сохраняет черновик в папке "Черновики".
+
+[Отправьте](/graph/api-reference/beta/api/message-send.md) черновик сообщения в ходе последующей операции.
+
+Или [отправьте новое сообщение](../api/user-sendmail.md) за одну операцию или создайте черновик для [пересылки](../api/message-createforward.md), [ответа](../api/message-createreply.md) и [ответа всем](../api/message-createreplyall.md) на существующее сообщение.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,13 +50,16 @@ POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Имя       | Тип | Описание|
+|:---------------|:--------|:----------|
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Length | число | 0. Обязательный. |
+| Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
-## <a name="request-body"></a>Тело запроса
-Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+При использовании формата JSON предоставьте представление JSON объекта [Message](../resources/message.md).
+
+При указании текста в формате MIME укажите содержимое MIME с применимыми заголовками сообщений Интернета ("Кому", "Копия", "Скрытая копия", "Тема"), все закодированные сообщения в формате **Base64** в тексте запроса.
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в сообщение при его создании.
 
@@ -52,8 +67,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.
 
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает `400 Bad request` и следующее сообщение об ошибке: "Недопустимая строка Base 64 для содержимого MIME".
+
+## <a name="examples"></a>Примеры
+### <a name="example-1-create-a-new-message-draft-using-json-format"></a>Пример 1. Создание черновика сообщения в формате JSON
+#### <a name="request"></a>Запрос 
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,8 +118,8 @@ Content-type: application/json
 ---
 
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
-##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+#### <a name="response"></a>Отклик 
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -162,8 +180,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
-В следующем примере добавляется пара пользовательских заголовков сообщений Интернета при создании черновика сообщения.
+### <a name="example-2-create-message-draft-that-includes-custom-message-headers"></a>Пример 2. Создание черновика сообщения, который включает настраиваемые заголовки
+#### <a name="request"></a>Запрос
+
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -218,7 +237,7 @@ Content-type: application/json
 ---
 
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
-##### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Заголовки сообщений Интернета не возвращаются по умолчанию в ответе POST. Примечание. Представленный здесь объект отклика также может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -278,6 +297,108 @@ Content-type: application/json
     ],
     "flag":{
         "flagStatus":"notFlagged"
+    }
+}
+```
+
+### <a name="example-3-create-a-new-message-draft-using-mime-format"></a>Пример 3. Создание черновика сообщения в формате MIME
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "message_create_draft_mime_v1"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
+
+```
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.message",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('0aaa0aa0-0000-0a00-a00a-0000009000a0')/messages/$entity",
+    "@odata.etag": "W/\"AAAAAAAAAAAa00AAAa0aAaAa0a0AAAaAAAAaAa0a\"",
+    "id": "AAMkADA1MTAAAAqldOAAA=",
+    "createdDateTime": "2021-04-23T18:13:44Z",
+    "lastModifiedDateTime": "2021-04-23T18:13:44Z",
+    "changeKey": "AAAAAAAAAAAA00aaaa000aaA",
+    "categories": [],
+    "receivedDateTime": "2021-04-23T18:13:44Z",
+    "sentDateTime": "2021-02-28T07:15:00Z",
+    "hasAttachments": false,
+    "internetMessageId": "<AAAAAAAAAA@AAAAAAA0001AA0000.codcod00.prod.outlook.com>",
+    "subject": "Internal Resume Submission: Sales Associate",
+    "bodyPreview": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here...",
+    "importance": "normal",
+    "parentFolderId": "LKJDSKJHkjhfakKJHFKWKKJHKJdhkjHDK==",
+    "conversationId": "SDSFSmFSDGI5LWZhYjc4fsdfsd=",
+    "conversationIndex": "Adfsdfsdfsdfw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkAGNhOWAvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi, Megan.I have an interest in the Sales Associate position. Please consider my resume, which you can access here... Regards,Alex"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Alex Wilber",
+            "address": "AlexW@contoso.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
+
+```
+
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "ErrorMimeContentInvalidBase64String",
+        "message": "Invalid base64 string for MIME content."
     }
 }
 ```

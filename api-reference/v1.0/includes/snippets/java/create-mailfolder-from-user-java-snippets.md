@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 6cb125c6acb79dad9d7f3eb66ae7c7b6d22575ae
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a7ad4cbcd53345db1d1060f89b6f2315eafd3cd7
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50984161"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52668568"
 ---
 ```java
 
@@ -13,6 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 MailFolder mailFolder = new MailFolder();
 mailFolder.displayName = "Clutter";
+mailFolder.isHidden = true;
 
 graphClient.me().mailFolders()
     .buildRequest()

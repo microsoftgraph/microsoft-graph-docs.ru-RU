@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 872fc80e86801ebdd5546bfbdf69e65f06dc0f1a
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 241b3cb5bf0135d5e9ffafc3280f37253ef38f96
+ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52476765"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52668711"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let exclusions = await client.api('/admin/windows/updates/deployments/{deploymentId}/audience/exclusions')
+let members = await client.api('/admin/windows/updates/deployments/{deploymentId}/audience/members')
     .version('beta')
     .get();
 

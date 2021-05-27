@@ -1,15 +1,15 @@
 ---
 author: nilakhan
 ms.topic: include
-ms.date: 03/02/2021
-ms.openlocfilehash: dcdde7e0b80b832a7797b7fe5dd074add55c6768
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.date: 05/17/2021
+ms.openlocfilehash: 6ed615d7585b9a72921e76a6e5727352b0558a87
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515702"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52647132"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> Корпорация Майкрософт временно предлагает использовать API облачной печати для бесплатного управления универсальной печатью. Корпорация Майкрософт в будущем предполагает взимать плату за использование некоторых или всех этих API. Корпорация Майкрософт заранее уведомит об изменении цен.
+> Корпорация Майкрософт предлагает API облачной печати для управления универсальной печатью бесплатно, и в ближайшее время не планируется взимать плату за использование этих API.

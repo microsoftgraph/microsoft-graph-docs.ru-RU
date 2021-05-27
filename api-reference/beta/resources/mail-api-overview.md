@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: b72f7997d6c60910f60b96a47792b7f6be0e35d8
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 67251a9d2121ca8d9f569051649c79f9fd71ec74
+ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472785"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52645320"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
@@ -53,6 +53,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Показ более важных сообщений | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Сортировка почты](../resources/manage-focused-inbox.md) |
 | Запрос сообщений и их получение в папке поиска  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Методы ресурса mailSearchFolder](../resources/mailsearchfolder.md#methods) |
 | Получение содержимого MIME сообщения или его вложения | [message](../resources/message.md) | [Получение содержимого MIME](/graph/outlook-get-mime-message) |
+| Отправка сообщений с содержимым MIME | [message](../resources/message.md) | [Отправка содержимого MIME](/graph/outlook-send-mime-message) |
 | Добавление, получение или удаление вложений сообщения | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Методы ресурса attachment](../resources/attachment.md#methods) |
 | Получение настроек языка и часовых поясов для пользователя | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Получение или обновление автоматического ответа, языкового стандарта, часового пояса или рабочего времени пользователя | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Получение настроек почтового ящика пользователя](../api/user-get-mailboxsettings.md), <br> [Обновление параметров почтового ящика пользователя](../api/user-update-mailboxsettings.md) |
@@ -71,6 +72,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Получение пользовательских данных приложения в виде заголовков сообщений Интернета для сообщения | [message](../resources/message.md) | Добавление пользовательских данных в коллекцию **internetMessageHeaders** сообщения. |
 | Добавление пользовательских данных приложения в сообщение с помощью расширений | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview) |
 | Доступ к пользовательским данным для редко предоставляемых свойств Outlook MAPI | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Общие сведения о расширенных свойствах Outlook](../resources/extended-properties-overview.md) |
+
 
 ## <a name="whats-new"></a>Что нового
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

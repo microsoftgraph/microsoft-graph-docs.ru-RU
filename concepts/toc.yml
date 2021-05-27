@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: Гибридные развертывания (предварительная версия)
             href: hybrid-rest-support.md
-      - name: Подключение к данным Microsoft Graph
-        href: data-connect-overview.md
       - name: Учебники
         items:
           - name: Обзор
@@ -101,6 +99,23 @@ items:
             href: application-proxy-configure-api.md
           - name: Настройка подготовки
             href: application-provisioning-configure-api.md
+      - name: Получение доступа к данным в масштабе
+        displayName: Microsoft Graph Data Connect
+        items:
+          - name: Обзор Data Connect
+            href: data-connect-concept-overview.md
+          - name: Создание первого приложения Data Connect
+            href: data-connect-quickstart.yml
+          - name: 'Наборы данных, регионы и приемники'
+            href: data-connect-datasets.md
+          - name: Политики и выставление счетов
+            href: data-connect-policies.md
+          - name: Выбор и фильтрация пользователей
+            href: data-connect-filtering.md
+          - name: Интеграция с PAM
+            href: data-connect-pam.md
+          - name: Вопросы и ответы
+            href: data-connect-faq.md
       - name: Календарь
         displayName: Outlook
         items:
@@ -150,6 +165,23 @@ items:
             href: cloud-communications-phone-number.md
       - name: Соответствие требованиям (предварительная версия)
         href: compliance-concept-overview.md
+      - name: Подключение внешнего контента (предварительная версия)
+        displayName: connectors
+        items:
+          - name: Обзор соединителей Microsoft Graph
+            href: connecting-external-content-connectors-overview.md
+          - name: Connectors API
+            href: connecting-external-content-connectors-api-overview.md
+          - name: Использование Postman
+            href: connecting-external-content-connectors-api-postman.md
+          - name: Управление подключениями
+            href: connecting-external-content-manage-connections.md
+          - name: Управление схемой
+            href: connecting-external-content-manage-schema.md
+          - name: Управление элементами
+            href: connecting-external-content-manage-items.md
+          - name: Ограничения API
+            href: connecting-external-content-api-limits.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
@@ -164,23 +196,6 @@ items:
       - name: Запись клиентов (предварительная версия)
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: Доступ к данным
-        displayName: Microsoft Graph data connect
-        items:
-          - name: Обзор подключения к данным
-            href: data-connect-concept-overview.md
-          - name: Начало работы
-            href: data-connect-get-started.md
-          - name: 'Наборы данных, регионы и приемники'
-            href: data-connect-datasets.md
-          - name: Политики и лицензирование
-            href: data-connect-policies.md
-          - name: Выбор и фильтрация пользователей
-            href: data-connect-filtering.md
-          - name: Интеграция с PAM
-            href: data-connect-pam.md
-          - name: 'Советы '
-            href: data-connect-tips.md
       - name: Устройства и приложения
         expanded: true
         items:
@@ -263,6 +278,8 @@ items:
             href: outlook-organize-messages.md
           - name: Получение содержимого MIME
             href: outlook-get-mime-message.md
+          - name: Отправка сообщения MIME
+            href: outlook-send-mime-message.md
           - name: Вложение больших файлов
             href: outlook-large-attachments.md
           - name: Получение общих сообщений
@@ -370,14 +387,6 @@ items:
                 href: search-concept-aggregation.md
               - name: Исправление орфографии в запросе (предварительная версия)
                 href: search-concept-speller.md
-          - name: Индекс (предварительная версия)
-            items:
-              - name: Управление подключениями
-                href: search-index-manage-connections.md
-              - name: Управление схемой
-                href: search-index-manage-schema.md
-              - name: Управление элементами
-                href: search-index-manage-items.md
       - name: Безопасность
         items:
           - name: Обзор
