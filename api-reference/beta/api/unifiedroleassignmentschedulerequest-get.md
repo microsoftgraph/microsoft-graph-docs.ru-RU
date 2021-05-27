@@ -3,14 +3,14 @@ title: Get unifiedRoleAssignmentScheduleRequest
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleAssignmentScheduleRequest.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 529f7af1db9fb8d37cb713d41cbe1afe5f6590c0
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: b784fb83615975e2e46e983c26f088fe08dc2c8d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475251"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680446"
 ---
 # <a name="get-unifiedroleassignmentschedulerequest"></a>Get unifiedRoleAssignmentScheduleRequest
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52475251"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

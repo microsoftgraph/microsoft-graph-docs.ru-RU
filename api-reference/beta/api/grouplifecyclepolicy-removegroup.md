@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: removeGroup'
 description: Удаляет группу из политики жизненного цикла.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3f609681f13f1e0503b3bff723f15869c7e25704
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cca6d211de7b26efc45cad4826d1070646a6f137
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001843"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681125"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -29,7 +29,7 @@ ms.locfileid: "48001843"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений |  Directory.ReadWrite.All |
+|Приложение |  Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
@@ -53,7 +53,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если из политики удаляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Если из политики удаляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
 
 ## <a name="example"></a>Пример
 

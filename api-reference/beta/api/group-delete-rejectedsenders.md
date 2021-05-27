@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта rejectedSender
-description: Удаление пользователя или группы из списка отклоненных отправителей.
-author: yyuank
+description: Удалите пользователя или группу из списка отклоненных отправителей.
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 481961a8afb7f4d07dbbc6d70d4f8feaf7bbc051
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14bdcef8d41d204e3c3ae6f3de08a3d1cc53a5ff
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965380"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681856"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 
@@ -18,7 +18,7 @@ ms.locfileid: "48965380"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пользователя или группы из списка отклоненных отправителей для указанной группы.
+Удалите пользователя или группу из списка отклоненных отправителей указанной группы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id={id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>Пример 1: Удаление пользователя из списка отклоненных отправителей группы.
+### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>Пример 1. Удаление пользователя из списка отклоненных отправителей группы.
 #### <a name="request"></a>Запрос
 
 
@@ -88,7 +88,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>Пример 2: Удаление группы из списка отклоненных отправителей группы.
+### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>Пример 2. Удаление группы из списка отклоненных отправителей группы.
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)

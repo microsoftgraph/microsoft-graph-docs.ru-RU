@@ -1,16 +1,16 @@
 ---
-title: Delete Group — API Microsoft Graph
-description: Удаление ресурса группы.
-author: yyuank
+title: Удаление группы — API Graph Microsoft
+description: Удаление группового ресурса.
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 318cd74367ec47b3d7a8b4a1abbef8556d30b496
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 62750cd92071b5a14496dc0ea6a3cecb83ca338b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965349"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681790"
 ---
 # <a name="delete-group"></a>Delete group
 
@@ -20,7 +20,7 @@ ms.locfileid: "48965349"
 
 Удаляет группу.  
 
-После удаления группы Microsoft 365 перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По истечении этого периода они удаляются без возможности восстановления.  Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).  Это относится только к группам Microsoft 365.
+При удалении Microsoft 365 группы перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По истечении этого периода они удаляются без возможности восстановления.  Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).  Это касается только Microsoft 365 групп.
 
 ## <a name="permissions"></a>Разрешения
 

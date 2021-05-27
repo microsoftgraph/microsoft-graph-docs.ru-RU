@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: conceptualPageType
-ms.openlocfilehash: f9ed7f29b3a6c2afd945383f64b539370047a446
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 35d3beecb26a5ae4455502ed0535c959cf7f502e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050691"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682133"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Обзор API политик проверки подлинности Azure AD
 
@@ -24,6 +24,7 @@ API-политики методов проверки подлинности ис
 
 * Определите типы ключей безопасности FIDO2, которые можно использовать в клиенте Azure AD.
 * Определите пользователей или группы пользователей, которым разрешено использовать ключи безопасности FIDO2 или Телефон для регистрации в Azure AD.
+* Определите пользователей или группы пользователей, которым следует напомнить о Microsoft Authenticator для MFA с помощью push-уведомлений.
 
 ## <a name="what-authentication-methods-policies-can-be-managed-in-microsoft-graph"></a>Какие политики методов проверки подлинности можно управлять в Microsoft Graph?
 
@@ -36,6 +37,11 @@ API-политики методов проверки подлинности ис
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (deprecated)|Определите пользователей, которые могут использовать Телефон для регистрации в Azure AD.|
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Определите пользователей, которые могут использовать временный пропуск доступа для входов в Azure AD.|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="policies-available-to-push-users-to-set-up-authentication-methods"></a>Политики, доступные для того, чтобы подтолкнуть пользователей к настройкам методов проверки подлинности:
+|Политика       | Описание |
+|:---------------------------|:------------|
+|[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Определите пользователей, которым следует напомнить о том, как настроить метод проверки подлинности (поддерживается только для Microsoft Authenticator).|
+
+## <a name="next-steps"></a>Следующие шаги
 
 * Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).

@@ -1,16 +1,16 @@
 ---
 title: 'group: checkMemberGroups'
 description: Проверка участия в указанном списке групп.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 49830cfd8669ea44ac386bdc394e5582e5e5e3d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c66d8710347c1c84cf75afffd52b77924a604add
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042151"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681916"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -30,7 +30,7 @@ ms.locfileid: "52042151"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложений                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -105,7 +105,7 @@ Content-length: 44
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

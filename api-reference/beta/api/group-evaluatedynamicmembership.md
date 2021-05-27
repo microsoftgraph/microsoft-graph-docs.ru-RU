@@ -1,16 +1,16 @@
 ---
 title: 'группа: оценкаDynamicMembership'
 description: Оцените, является ли пользователь или устройство членом динамической группы.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 94594d31c4e7630b91905edb244f616cac1b21ab
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: de8e44a79644bcea5e3c44b214580e16359468e2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961917"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681769"
 ---
 # <a name="group-evaluatedynamicmembership"></a>группа: оценкаDynamicMembership
 
@@ -56,7 +56,7 @@ POST /groups/evaluateDynamicMembership
 
 | Имя | Описание |
 | :--- | :---------- |
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ POST /groups/evaluateDynamicMembership
 | Параметр | Тип | Описание |
 | :-------- | :--- | :---------- |
 | memberId | Коллекция строк | memberId — это объектный id пользователя или устройства, для оценки. |
-| membershipRule | Коллекция строк | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [видеоролике Динамические правила членства для групп в Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership)|
+| membershipRule | Коллекция строк | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership)|
 
 ## <a name="response"></a>Отклик
 
@@ -118,7 +118,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",

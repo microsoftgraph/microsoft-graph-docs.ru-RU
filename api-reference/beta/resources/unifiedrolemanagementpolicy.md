@@ -3,14 +3,14 @@ title: тип ресурса unifiedRoleManagementPolicy
 description: В unifiedRoleManagementPolicy указаны различные политики, связанные с областью и определением ролей. Она получена из microsoft.graph.policyBase.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 73510f928fa4a32e92ff0a50b3439ab60dfb95f8
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 7abeb69f469b9c8b7bec37b240c739774cbd8163
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299665"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679878"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>тип ресурса unifiedRoleManagementPolicy
 
@@ -29,14 +29,14 @@ ms.locfileid: "52299665"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|Описание политики.|
-|displayName|Строка|Отображение имени политики.|
-|id|Строка|Уникальный идентификатор для политики.|
-|isOrganizationDefault|Логический|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
+|description|String|Описание политики.|
+|displayName|String|Отображение имени политики.|
+|id|String|Уникальный идентификатор для политики.|
+|isOrganizationDefault|Boolean|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|Идентификатор, который в последний раз изменил параметр роли.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметра роли.|
-|scopeId|Строка|ID области, в которой создается политика. Например, "/", groupId и т. д.|
-|scopeType|Строка|Тип области, в которой создается политика. Один из Directory, DirectoryRole, Group.|
+|scopeId|String|ID области, в которой создается политика. Например, "/", groupId и т. д.|
+|scopeType|String|Тип области, в которой создается политика. Один из Directory, DirectoryRole, Group.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -44,7 +44,7 @@ ms.locfileid: "52299665"
 |effectiveRules|[коллекция unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Список эффективных правил, таких как правило утверждения, правило истечения срока действия и т. д. оценивается на основе унаследованных ссылок. Например, Если существует широкая политика клиента по обеспечению соблюдения правила утверждения включения, эффективным правилом будет включение утверждения, даже если у полиса есть правило, чтобы отключить утверждение.|
 |правила|[коллекция unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Коллекция правил, таких как правило утверждения, правило истечения срока действия и т. д.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

@@ -3,14 +3,14 @@ title: тип ресурса unifiedRoleManagementPolicyRule
 description: В единойRoleManagementPolicyRule указывается правило, связанное с политикой управления ролью. Это абстрактно.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 420ebfca11d2873ad942782fb8e7d97e893b7185
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: aa0bc719fe4722692b1ff42861cccede7150780d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299507"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682245"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyRule
 
@@ -28,7 +28,7 @@ ms.locfileid: "52299507"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для правила.|
+|id|String|Уникальный идентификатор для правила.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила политики.|
 
 ## <a name="relationships"></a>Связи

@@ -1,16 +1,16 @@
 ---
 title: Создание параметра каталога для групп
 description: Используйте этот API для создания нового параметра каталога для группы.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4204478494dc02bb2013e95c6952f9b2bef166af
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b9a6b32b762306d716019d0c790104338bb5f3c0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041178"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681363"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Создание параметра каталога для групп
 
@@ -26,7 +26,7 @@ ms.locfileid: "52041178"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Обязательна|
+| Authorization  | Bearer <token>. Обязательный|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
@@ -84,7 +84,7 @@ Content-length: 222
 
 В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,14 +3,14 @@ title: 'unifiedRoleEligibilityScheduleRequest: отмена'
 description: Отмена единойRoleEligibilityScheduleRequest.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 325eb611042cf4627cb1a02f15fad8513ba70870
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c877c30ed016a83a9c1da8019a33467e232fc110
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474476"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680103"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: отмена
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "52474476"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 

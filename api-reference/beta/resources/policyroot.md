@@ -3,14 +3,14 @@ title: тип ресурсов policyRoot
 description: Новая привязка свойств навигации для unifiedRoleManagementPolicy и unifiedRoleManagementPolicyAssignment к policyRoot.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 85c334c52ab2bb196bcfce24610414a0843f898a
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 3827440befd26fb584addd0d6af520a6498c11dd
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299677"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680727"
 ---
 # <a name="policyroot-resource-type"></a>тип ресурсов policyRoot
 
@@ -37,7 +37,7 @@ ms.locfileid: "52299677"
 |roleManagementPolicyAssignments|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) collection|Represents the role management policy assignments.|
 -->
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

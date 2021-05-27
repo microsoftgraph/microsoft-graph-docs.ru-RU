@@ -3,14 +3,14 @@ title: Get unifiedRoleEligibilityScheduleInstance
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleEligibilityScheduleInstance.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ca4853849f60ad05d036fc22ffbf6e49c33f0490
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 479fe956165d318fe1db0986187b2f14e3746159
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474537"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679920"
 ---
 # <a name="get-unifiedroleeligibilityscheduleinstance"></a>Get unifiedRoleEligibilityScheduleInstance
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52474537"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -3,14 +3,14 @@ title: Создание unifiedRoleEligibilityScheduleRequest
 description: Создайте новый объект unifiedRoleEligibilityScheduleRequest.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1316764863bbefc19ed28882f686a2e9ac03e07f
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 802bafec30aebea3f40cdfb539be7b87c9749d32
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475219"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680117"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>Создание unifiedRoleEligibilityScheduleRequest
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52475219"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +57,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |roleDefinitionId|String|ID унифицированногоRoleDefinition для назначения. Только для чтения.|
 |directoryScopeId|String|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением.|
 |appScopeId|String|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением.|
-|isValidationOnly|Логический|Boolean, определяющая, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
+|isValidationOnly|Boolean|Boolean, определяющая, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
 |targetScheduleId|String|ID объекта расписания, прикрепленного к назначению.|
 |обоснование|String|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса назначения ролей.|

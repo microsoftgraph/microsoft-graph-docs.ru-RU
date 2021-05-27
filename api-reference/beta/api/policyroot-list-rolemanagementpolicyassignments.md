@@ -3,14 +3,14 @@ title: List roleManagementPolicyAssignments
 description: Получите ресурсы unifiedRoleManagementPolicyAssignment из свойства навигации RoleManagementPolicyAssignments.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1066137804d2c0ad96f28b5f886ccc3c0bd2f99a
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 0605b37f7aa2677369ecc841559ac446d936c1a9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474334"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680719"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>List roleManagementPolicyAssignments
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52474334"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

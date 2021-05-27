@@ -1,16 +1,16 @@
 ---
 title: Перечисление конечных точек
 description: Извлечение списка конечных объектов.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ea2517eeac7109d89563cb78989bc32c4bf7b5ba
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: be99b570d16193aa461fa8cc2d8cc3646d0e55a1
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041661"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681624"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -27,7 +27,7 @@ ms.locfileid: "52041661"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -1,16 +1,16 @@
 ---
 title: Обновление группы
 description: Обновление свойств [группового](../resources/group.md) объекта.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51a34d50801914dcc3e1e10c1813c25543880c0b
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5a006e25737abc2bc30b63e029991e8203ff47e0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240758"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681244"
 ---
 # <a name="update-group"></a>Update group
 
@@ -57,7 +57,7 @@ PATCH /groups/{id}
 |groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит **Unified,** то группа является Microsoft 365 группой; в противном случае это группа безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. |
 |mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
-|securityEnabled|Логический|Указывает, является ли группа группой безопасности, в том числе Microsoft 365 группами. |
+|securityEnabled|Boolean|Указывает, является ли группа группой безопасности, в том числе Microsoft 365 группами. |
 |visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
 
 Поскольку **ресурс группы** поддерживает [расширения,](/graph/extensibility-overview)вы можете использовать операцию для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` группы. 
@@ -120,7 +120,7 @@ Content-length: 211
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

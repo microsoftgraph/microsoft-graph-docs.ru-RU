@@ -3,14 +3,14 @@ title: Список унифицированныхRoleEligibilitySchedules
 description: Получите список объектов unifiedRoleEligibilitySchedule и их свойств.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2b1d53faf5b1f4a013b367594e897b229f3018f1
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 9d6f8fae0ea33d2163a1a3b4979ae330d7871007
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475333"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679941"
 ---
 # <a name="list-unifiedroleeligibilityschedules"></a>Список унифицированныхRoleEligibilitySchedules
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52475333"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

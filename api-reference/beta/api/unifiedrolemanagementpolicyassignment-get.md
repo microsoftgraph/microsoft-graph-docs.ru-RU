@@ -3,14 +3,14 @@ title: Get unifiedRoleManagementPolicyAssignment
 description: Ознакомьтесь с свойствами и отношениями единого объектаRoleManagementPolicyAssignment.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 35c10aceffbdf6ae3d2687e17a3e661a679013b3
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c5efdf8e2890651c8629efb27837ffb1953c1376
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474061"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682322"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>Get unifiedRoleManagementPolicyAssignment
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52474061"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

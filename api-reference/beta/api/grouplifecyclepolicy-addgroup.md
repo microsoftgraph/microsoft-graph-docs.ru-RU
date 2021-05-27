@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: addGroup'
 description: Добавляет группу к политике жизненного цикла.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fa88af236a42920a80a54933175adf1cebd821c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b35008f93cd4e7457ef83a2bc800423755157f59
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001871"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681167"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -29,7 +29,7 @@ ms.locfileid: "48001871"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
@@ -53,7 +53,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если к политике добавляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Если к политике добавляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
 
 ## <a name="example"></a>Пример
 

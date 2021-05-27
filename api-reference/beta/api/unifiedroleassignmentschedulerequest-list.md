@@ -3,14 +3,14 @@ title: Список unifiedRoleAssignmentScheduleRequests
 description: Получите список объектов unifiedRoleAssignmentScheduleRequest и их свойств.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 46dfdb8b1b23fc505fabe0f20629ff6bd48142a3
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: eb84749f882244d7aa3d85f5768a0bf487fed3b6
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474635"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680443"
 ---
 # <a name="list-unifiedroleassignmentschedulerequests"></a>Список unifiedRoleAssignmentScheduleRequests
 
@@ -28,7 +28,7 @@ ms.locfileid: "52474635"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | PrivilegedAccess.ReadWrite.AzureAD          |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | PrivilegedAccess.Read.AzureAD               |
+| Приложение                            | PrivilegedAccess.Read.AzureAD               |
 
 ## <a name="http-request"></a>HTTP-запрос
 

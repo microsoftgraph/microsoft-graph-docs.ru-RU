@@ -3,14 +3,14 @@ title: тип ресурса unifiedRoleEligibilitySchedule
 description: Представляет расписание операций назначения ролей с помощью Azure AD управление привилегированными пользователями.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1593e819b3c57ee24dae0480aadcb7f532d2fbf4
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 7b996bbe2e34d7916e85d308039e48659f2b3234
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299725"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679479"
 ---
 # <a name="unifiedroleeligibilityschedule-resource-type"></a>тип ресурса unifiedRoleEligibilitySchedule
 
@@ -32,15 +32,15 @@ ms.locfileid: "52299725"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appScopeId|Строка|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|appScopeId|String|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |createdDateTime|DateTimeOffset|Время создания расписания. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|createdUsing|Строка|ID roleEligibilityScheduleRequest, создавав это расписание. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|directoryScopeId|Строка|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|id|Строка|Уникальный идентификатор для unifiedRoleEligibilitySchedule. Key, not nullable, Read-only. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|memberType|Строка|Тип членства в правом назначении. Это может быть `Inherited` или `Direct` , или `Group` .|
+|createdUsing|String|ID roleEligibilityScheduleRequest, создавав это расписание. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|directoryScopeId|String|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|id|String|Уникальный идентификатор для unifiedRoleEligibilitySchedule. Key, not nullable, Read-only. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|memberType|String|Тип членства в правом назначении. Это может быть `Inherited` или `Direct` , или `Group` .|
 |modifiedDateTime|DateTimeOffset|При последнем обновлении расписания. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|Строка| Объект объекта, которому предоставляется право на назначение. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|roleDefinitionId|Строка|ID унифицированногоRoleDefinition, для который требуется назначение. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|principalId|String| Объект объекта, которому предоставляется право на назначение. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|roleDefinitionId|String|ID унифицированногоRoleDefinition, для который требуется назначение. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса на назначение ролей.|
 |status|String|Состояние `roleEligibilitySchedule` для . Он может включать сообщения, связанные с `Provisioned` состоянием, как , и `Revoked` `Pending Provisioning` `Pending Approval` . Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 
@@ -53,7 +53,7 @@ ms.locfileid: "52299725"
 |основной|[directoryObject](../resources/directoryobject.md)|Свойство, ссылаясь на доверенного, который получает право назначения роли через запрос. При условии, что звонители могут получать основное использование одновременно с `$expand` получением назначения подходящих ролей. Только для чтения. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Свойство, указывающее рольDefinition, для которого имеется право назначения. При условии, что вызыватели могут получать определение ролей, используя одновременно с получением назначения ролей, которое `$expand` имеет право. roleDefinition.Id будет автоматически расширена. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

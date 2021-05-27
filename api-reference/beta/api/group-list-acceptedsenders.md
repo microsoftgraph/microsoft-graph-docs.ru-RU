@@ -1,16 +1,16 @@
 ---
 title: Список acceptedSenders
 description: Получение списка пользователей или групп, включенных в список утвержденных отправителей для этой группы.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0b5271e7d559ac5326056b4a2ee63ef7cfad7de1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a60225965c0da6657a6d7476dd46499a75c19b73
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041780"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681664"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

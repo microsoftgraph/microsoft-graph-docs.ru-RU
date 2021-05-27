@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: add460d4f88d80c6d318a5c8c8c6d1171fa9cf31
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: abc86450938a979a082c9dd6792ce8fba4af17f2
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547220"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682637"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -76,7 +76,7 @@ ms.locfileid: "52547220"
 |Целое число|
 |Справочные материалы|
 |В двоичном формате|
-|Логический|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -324,7 +324,7 @@ ms.locfileid: "52547220"
 
 |Member|
 |:---|
-|email|
+|рассылка|
 |mobileSMS|
 |mobilePhone|
 |OfficePhone|
@@ -472,7 +472,7 @@ ms.locfileid: "52547220"
 
 |Member|
 |:---|
-|email|
+|рассылка|
 |mobilePhone|
 |OfficePhone|
 |securityQuestion|
@@ -578,7 +578,7 @@ ms.locfileid: "52547220"
 
 |Member|
 |:---|
-|email|
+|рассылка|
 |mobileSMS|
 |mobileCall|
 |OfficePhone|
@@ -789,7 +789,7 @@ ms.locfileid: "52547220"
 |:--------------
 | call
 | чат
-| email
+| рассылка
 | фокус
 | собрание
 
@@ -797,7 +797,7 @@ ms.locfileid: "52547220"
 
 |Member|
 |:---|
-|email|
+|рассылка|
 |mobilePhone|
 |OfficePhone|
 |securityQuestion|
@@ -1180,10 +1180,10 @@ ms.locfileid: "52547220"
 | doNotForward
 | followUp
 | fyi
-| вперед
+| forward
 | noResponseNecessary
 | read
-| ответ
+| reply
 | replyToAll
 | обзор
 
@@ -1249,7 +1249,7 @@ ms.locfileid: "52547220"
 | Автоматически
 | noPreview
 | checklist
-| description
+| (описание)
 | справочник
 
 
@@ -1592,6 +1592,15 @@ Enum для серьезности оповещений.
 |hidden|
 |unknownFutureValue|
 
+### <a name="advancedconfigstate-values"></a>расширенные значенияConfigState 
+
+|Member|
+|:---|
+|default|
+|включено|
+|отключено|
+|unknownFutureValue|
+
 ### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission values
 
 |Member|
@@ -1798,7 +1807,7 @@ Enum для серьезности оповещений.
 | Элемент  | Значение | Описание                          |
 | :------ | :---- | :----------------------------------- |
 | default | 0     | Содержимое — это тип файла или не электронной почты. |
-| email   | 1     | Содержимое — это электронная почта.                 |
+| рассылка   | 1     | Содержимое — это электронная почта.                 |
 
 ### <a name="contentstate-values"></a>значения contentState
 
@@ -1923,7 +1932,7 @@ Enum для серьезности оповещений.
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
-| спам               | 1     | Угроза нежелательной почты.       |
+| уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
 | вредоносная программа            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4      | Член-часовой. |
@@ -2179,7 +2188,7 @@ Enum для серьезности оповещений.
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|команда      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 

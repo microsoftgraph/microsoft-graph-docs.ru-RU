@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса propertyToEvaluate
+title: тип ресурса propertyToEvaluate
 description: Определяет имя и значение свойства.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0e04a2e63cb8b3112c4e68c0195c98d0fe404ebf
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0855d4f06ed7f1be59c57c2989313268638e9859
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135387"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682616"
 ---
-# <a name="propertytoevaluate-resource-type"></a>Тип ресурса propertyToEvaluate
+# <a name="propertytoevaluate-resource-type"></a>тип ресурса propertyToEvaluate
 
 Пространство имен: microsoft.graph
 
@@ -24,10 +24,10 @@ ms.locfileid: "50135387"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| propertyName | Строка | Предоставляет имя свойства. |
-| propertyValue | Строка | Предоставляет значение свойства. |
+| propertyName | String | Предоставляет имя свойства. |
+| propertyValue | String | Предоставляет значение свойства. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

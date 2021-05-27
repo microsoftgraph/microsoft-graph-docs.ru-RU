@@ -3,13 +3,13 @@ title: Перенос приложений Azure AD Graph в Microsoft Graph
 description: Описывает, как перенести приложения API Azure Active Directory (Azure AD) в API Microsoft Graph API.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 94a8eb93fc20fea677f6f221507eb2a046011d8e
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.prod: applications
+ms.openlocfilehash: 46880f0bd12fa894555e315976213866a01428e9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579850"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682091"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Перенос приложений Azure AD Graph в Microsoft Graph
 

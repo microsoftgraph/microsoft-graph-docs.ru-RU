@@ -2,15 +2,15 @@
 title: Удаление участника
 description: Используйте этот API, чтобы удалить участника из группы Microsoft 365, группы безопасности или группы  безопасности с поддержкой почты через свойство навигации членов. Вы можете удалять пользователей или другие группы.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e0ac3a56b8fb49ef446190d1751faee2899e2b31
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 81f69fc596dd8379d34e516c13d67698282f8bb0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042004"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681842"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 В запросе укажите идентификатор группы и идентификатор объекта каталога, который вы хотите удалить.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

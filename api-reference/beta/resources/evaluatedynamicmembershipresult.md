@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса evaluateDynamicMembershipResult
+title: оценка типа ресурсаDynamicMembershipResult
 description: Представляет результат оценки членства.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1df07449605f3b1d48c01b1e352100d534fc9b1d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 52621ee317183a59da418ecd35309cacc0637ae3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129508"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682644"
 ---
-# <a name="evaluatedynamicmembershipresult-resource-type"></a>Тип ресурса evaluateDynamicMembershipResult
+# <a name="evaluatedynamicmembershipresult-resource-type"></a>оценка типа ресурсаDynamicMembershipResult
 
 Пространство имен: microsoft.graph
 
@@ -24,11 +24,11 @@ ms.locfileid: "50129508"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| membershipRule | String | Если предоставлен ИД группы, значением является правило членства для группы. Если ид группы не предоставлен, значением является правило членства, предоставленное в качестве параметра. Дополнительные сведения см. в правилах [динамического членства для групп в Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership) |
+| membershipRule | String | Если предоставляется групповой ID, значением является правило членства для группы. Если групповой ID не предоставлен, значением является правило членства, которое было предоставлено в качестве параметра. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership) |
 | membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | Предоставляет подробный анализ результатов оценки членства. |
-| membershipRuleEvaluationResult | Boolean | Значением `true` является, если пользователь или устройство входит в группу. Значение также может быть, если предоставлено правило членства и пользователь или устройство проходят оценку правила; в противном `true` случае `false` . |
+| membershipRuleEvaluationResult | Boolean | Значение, `true` если пользователь или устройство является членом группы. Значение также может быть, если было предоставлено правило членства и пользователь или устройство проходит оценку `true` правила; в противном случае `false` . |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

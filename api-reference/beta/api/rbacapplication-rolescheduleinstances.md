@@ -3,14 +3,14 @@ title: 'rbacApplication: roleScheduleInstances'
 description: Извлечение обеих ролейAssignmentScheduleInstances и roleEligibilityScheduleInstances.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b62af36d45947d0a28e57c59d61c95a2ee8da1cc
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 497b29892bb510aec9763cab21ce8f06518a2eee
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474733"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679675"
 ---
 # <a name="rbacapplication-rolescheduleinstances"></a>rbacApplication: roleScheduleInstances
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52474733"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

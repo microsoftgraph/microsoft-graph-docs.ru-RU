@@ -3,14 +3,14 @@ title: тип ресурса unifiedRoleScheduleBase
 description: Базовое свойство унифицированных расписаний ролей, объединяющих унифицированные графики назначения ролей и унифицированные графики прав на роль
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 898f990ae7ffa09b3f251ce83fd71da04c2eafc6
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: ac0738d7ebc8ddc9a507b0911a3abc2016d78d33
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299503"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682221"
 ---
 # <a name="unifiedroleschedulebase-resource-type"></a>тип ресурса unifiedRoleScheduleBase
 
@@ -22,14 +22,14 @@ ms.locfileid: "52299503"
 
 | Свойство         | Тип           | Описание               |
 | :--------------- | :------------- | :------------------------ |
-| appScopeId       | Строка         | Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
+| appScopeId       | String         | Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
 | createdDateTime  | DateTimeOffset | Время создания расписания. |
-| createdUsing     | Строка         | ID ролиAssignmentScheduleRequest, создав этот график. |
-| directoryScopeId | Строка         | Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
-| id               | Строка         | Уникальный идентификатор для unifiedRoleAssignmentSchedule. Key, not nullable, Read-only. |
+| createdUsing     | String         | ID ролиAssignmentScheduleRequest, создав этот график. |
+| directoryScopeId | String         | Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
+| id               | String         | Уникальный идентификатор для unifiedRoleAssignmentSchedule. Key, not nullable, Read-only. |
 | modifiedDateTime | DateTimeOffset | При последнем обновлении расписания. |
-| principalId      | Строка         | Объект объекта, которому предоставляется назначение. |
-| roleDefinitionId | Строка         | ID унифицированногоRoleDefinition для назначения. Только для чтения. |
+| principalId      | String         | Объект объекта, которому предоставляется назначение. |
+| roleDefinitionId | String         | ID унифицированногоRoleDefinition для назначения. Только для чтения. |
 | status           | String         | Состояние `roleAssignmentSchedule` для . Он может включать сообщения, связанные с `Provisioned` состоянием, как , и `Revoked` `Pending Provisioning` `Pending Approval` . |
 
 ## <a name="relationships"></a>Связи
@@ -42,7 +42,7 @@ ms.locfileid: "52299503"
 | основной      | [directoryObject](../resources/directoryobject.md)                                 | Свойство, ссылаясь на главного, получаюного назначение ролей через запрос. При условии, что звонители могут получать основное использование одновременно с `$expand` назначением ролей. Только для чтения. |
 | roleDefinition | [unifiedRoleDefinition](../resources/unifiedroledefinition.md)                     | Свойство, указывающее рольDefinition для назначения. При условии, что вызыватели могут получать определение роли, используя одновременно `$expand` с назначением роли. roleDefinition.Id будет автоматически расширена. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

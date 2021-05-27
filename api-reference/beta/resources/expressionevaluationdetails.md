@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса expressionEvaluationDetails
+title: тип ресурса expressionEvaluationDetails
 description: Представляет сведения об выражениях, результатах и свойствах.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 01cc4aa4bd6de88541d3886efe54e5da71228448
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a2e2b2620f30234c23753ef743f14e55e29f6f91
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129494"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679902"
 ---
-# <a name="expressionevaluationdetails-resource-type"></a>Тип ресурса expressionEvaluationDetails
+# <a name="expressionevaluationdetails-resource-type"></a>тип ресурса expressionEvaluationDetails
 
 Пространство имен: microsoft.graph
 
@@ -24,12 +24,12 @@ ms.locfileid: "50129494"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| выражение | Строка | Представляет выражение, которое было оценено. |
-| expressionEvaluationDetails | Коллекция expressionEvaluationDetails | Представляет сведения об оценке выражения. |
+| выражение | String | Представляет выражение, которое было оценено. |
+| expressionEvaluationDetails | коллекция expressionEvaluationDetails | Представляет сведения об оценке выражения. |
 | expressionResult | Boolean | Представляет значение результата текущего выражения. |
-| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Определяет имя свойства и его значение. |
+| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Определяет имя свойства и значение этого свойства. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

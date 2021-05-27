@@ -2,15 +2,15 @@
 title: 'группа: assignLicense'
 description: Добавление или удаление лицензий в группе. Лицензии, присвоенные группе, будут назначены всем пользователям в группе.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a6e4732deabfe4ff54f9549b7a0b5103cfa70d12
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 29b13beb039aaf6bd6dc7b8f4ebb354732e6c01c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042165"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681944"
 ---
 # <a name="group-assignlicense"></a>группа: assignLicense
 

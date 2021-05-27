@@ -2,15 +2,15 @@
 title: тип ресурса organizationalBrandingProperties
 description: Содержит сведения о брендинге организации.
 localization_priority: Normal
-author: almars
+author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 719642a606396601c94feaa38ea1cc877c5bd6d6
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: b0e4f7993632026456f11173ce08cd9612199c74
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547136"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680866"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>тип ресурса organizationalBrandingProperties
 
@@ -34,7 +34,7 @@ ms.locfileid: "52547136"
 | [Создание](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создание организационного брендинга с помощью объекта organizationalBrandingProperties. |
 | [получение](../api/organizationalbrandingproperties-get.md); | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
 | [Обновление](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Обновление объекта organizationalBrandingProperties. |
-| [удаление](../api/organizationalbrandingproperties-delete.md); | Нет | Удаление объекта organizationalBrandingProperties. |
+| [Delete](../api/organizationalbrandingproperties-delete.md) | Нет | Удаление объекта organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Свойства
 

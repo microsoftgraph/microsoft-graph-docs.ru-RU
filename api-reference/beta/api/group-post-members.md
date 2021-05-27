@@ -2,15 +2,15 @@
 title: Добавление участника
 description: Добавьте участника в группу Microsoft 365 или группу безопасности через свойство **навигации** членов.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 188f93c82734c9ae9fe0986114e3c4e4d2bd1772
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5e7c4b6d2f4547a57783307f5da2c1ea0af88b20
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468875"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681391"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -24,8 +24,8 @@ ms.locfileid: "51468875"
 
 > [!Important]
 > + Вы можете добавлять пользователей только в группы безопасности и группы Microsoft 365, управляемые через облако.
-> + Нельзя добавлять группы безопасности в группы Microsoft 365.
-> + Нельзя добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
+> + Вы не можете добавлять группы безопасности в группы Microsoft 365.
+> + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

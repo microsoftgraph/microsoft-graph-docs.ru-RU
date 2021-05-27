@@ -1,16 +1,16 @@
 ---
 title: Перечисление фотографий
 description: Получение списка объектов profilePhoto.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d022b7529585358ea5cb595fdfa26957f1078457
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d3bdecfd318cd0413f69cbce366b1d5d46c10cd
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041472"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681531"
 ---
 # <a name="list-photos"></a>Перечисление фотографий
 
@@ -27,7 +27,7 @@ ms.locfileid: "52041472"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/photos
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

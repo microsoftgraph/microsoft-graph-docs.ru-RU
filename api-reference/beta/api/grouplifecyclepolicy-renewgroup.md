@@ -1,18 +1,18 @@
 ---
-title: 'groupLifecyclePolicy: Реневграуп'
+title: 'groupLifecyclePolicy: renewGroup'
 description: Продление срока действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 009186a210b29b541b7ee7eff8ddbbdcb397827d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: be7f1222933b5923b475d55c0b7c6b8a4bcf24aa
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953613"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681122"
 ---
-# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: Реневграуп
+# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48953613"
 
 Продление срока действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 
-> **Примечание:** При вызове конечной точки версии 1.0 используйте метод [продления группы](/graph/api/group-renew?view=graph-rest-1.0) .
+> **Примечание:** При вызове конечной точки v1.0 используйте метод [Renew group.](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "48953613"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All или Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений | Group.ReadWrite.All или Directory.ReadWrite.All |
+|Приложение | Group.ReadWrite.All или Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST /groupLifecyclePolicies/renewGroup
 
 | Параметр | Тип | Описание |
 |:---------------|:--------|:----------|
-|groupId|GUID| Идентификатор группы, которую требуется обновить. |
+|groupId|GUID| ID группы для обновления. |
 
 ## <a name="response"></a>Отклик
 

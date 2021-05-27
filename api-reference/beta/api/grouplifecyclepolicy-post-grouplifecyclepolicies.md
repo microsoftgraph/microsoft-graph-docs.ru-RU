@@ -1,16 +1,16 @@
 ---
 title: Создание groupLifecyclePolicy
 description: Создает объект groupLifecyclePolicy.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b20b5ead43a9b8acea6751ddc09d8ffc81ab94ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7ae624f4bc02c257f2b7947a10a65634580e5f1e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041087"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681132"
 ---
 # <a name="create-grouplifecyclepolicy"></a>Создание groupLifecyclePolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "52041087"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений |  Directory.ReadWrite.All |
+|Приложение |  Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -3,14 +3,14 @@ title: Список унифицированныхRoleManagementPolicies
 description: Получите список объектов unifiedRoleManagementPolicy и их свойств.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 899a81e4151f5b0169940af7c3f4fb1798738afc
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: f9fe4b45284dbd251a485e883f0cb1b60f09b860
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474801"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682336"
 ---
 # <a name="list-unifiedrolemanagementpolicies"></a>Список унифицированныхRoleManagementPolicies
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52474801"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

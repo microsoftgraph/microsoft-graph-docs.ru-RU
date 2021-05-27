@@ -3,14 +3,14 @@ title: Перечисление правил
 description: Получите ресурсы unifiedRoleManagementPolicyRule из свойства навигации правил.
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e9f61d5bd73a78b93cadcd64dc2b3b4f1363e0ff
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 4c76c126ff54c3519641d0042e497a2f0a41441e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475453"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682368"
 ---
 # <a name="list-rules"></a>Перечисление правил
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "52475453"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 

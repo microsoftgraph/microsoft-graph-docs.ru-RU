@@ -3,14 +3,14 @@ title: тип ресурса parentLabelDetails
 description: Представляет сведения метки родительской метки защиты информации.
 localization_priority: Normal
 author: tommoser
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8ba6dfcbb7f441c0026848eb59735db5fb4987ac
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 8f1ebe58c3968e0f912806eb6f339bcfd499b57a
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52580002"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679906"
 ---
 # <a name="parentlabeldetails-resource-type"></a>тип ресурса parentLabelDetails
 
@@ -25,12 +25,12 @@ ms.locfileid: "52580002"
 | Свойство    | Тип    | Описание                                                                                                  |
 | :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
 | color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если настроен.                               |
-| description | Строка  | Описание метки, определенное администратором.                                                                 |
-| id          | Строка  | Идентификатор метки — это глобальный уникальный идентификатор (GUID).                                                          |
+| description | String  | Описание метки, определенное администратором.                                                                 |
+| id          | String  | Идентификатор метки — это глобальный уникальный идентификатор (GUID).                                                          |
 | isActive    | Boolean | Указывает, активна метка или нет. Активные метки должны быть скрыты или отключены в пользовательских интерфейсах. |
 | name        | String  | Простое имя метки.                                                                             |
 | sensitivity | Int32   | Значение чувствительности метки, где более низкий уровень менее чувствителен.                                           |
-| tooltip     | Строка  | Инструмент, который должен отображаться для метки в пользовательском интерфейсе.                                      |
+| tooltip     | String  | Инструмент, который должен отображаться для метки в пользовательском интерфейсе.                                      |
 
 ## <a name="json-representation"></a>Представление JSON
 

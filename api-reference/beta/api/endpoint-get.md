@@ -4,13 +4,13 @@ description: Извлечение свойств и связей определ�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: groups
-author: yyuank
-ms.openlocfilehash: 8b5cc003787b9a389842389d3aabd7c75726c8f5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: Jordanndahl
+ms.openlocfilehash: 8c07e342c295fb4aabad9dbec017c6776284ea1e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042648"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681951"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
 
@@ -28,7 +28,7 @@ ms.locfileid: "52042648"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

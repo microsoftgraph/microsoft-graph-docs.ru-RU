@@ -1,16 +1,16 @@
 ---
 title: Удаление беседы
 description: Удаление объекта conversation.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5da2c54e86cb6d59c8220be89f05681914fd56b7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8017e9151b15e61a61945ab1200c88d0fc92d563
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042025"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681870"
 ---
 # <a name="delete-conversation"></a>Удаление беседы
 
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

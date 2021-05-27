@@ -3,14 +3,14 @@ title: 'unifiedRoleAssignmentScheduleRequest: filterByCurrentUser'
 description: Получить список объектов unifiedRoleAssignmentScheduleRequest и их свойств, отфильтрованных определенным пользователем
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9f03402cc6ebffa18ec1a5bf91df095d76f6e6a9
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: f30a2e8a7c1ac1440291d4e9e7849637c20e3be3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299785"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680278"
 ---
 # <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "52299785"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|PrivilegedAccess.ReadWrite.AzureAD|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|PrivilegedAccess.Read.AzureAD|
+|Приложение|PrivilegedAccess.Read.AzureAD|
 
 ## <a name="http-request"></a>HTTP-запрос
 
