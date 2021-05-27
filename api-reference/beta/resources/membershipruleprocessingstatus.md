@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса membershipRuleProcessingStatus
-description: Представляет текущее состояние динамической обработки группы.
+title: тип ресурса membershipRuleProcessingStatus
+description: Представляет текущее состояние динамической групповой обработки.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f59f5f89c3aad8312504c62b29a0dbd490a37ac5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7c86f044517ad7b808db69364413727c8d76f076
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128277"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680999"
 ---
-# <a name="membershipruleprocessingstatus-resource-type"></a>Тип ресурса membershipRuleProcessingStatus
+# <a name="membershipruleprocessingstatus-resource-type"></a>тип ресурса membershipRuleProcessingStatus
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние динамической обработки группы.
+Представляет текущее состояние динамической групповой обработки.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| status | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | Текущее состояние динамической обработки группы. Возможные значения: `NotStarted` , , , , и `Running` `Succeeded` `Failed` `UnknownFutureValue` .  <br><br> Обязательный элемент. Только для чтения.|
-| lastMembershipUpdated | edm. DateTime | Самая новая дата и время обновления членства в динамической группе. <br><br> Необязательно. Только для чтения.|
-| errorMessage | Строка | Подробное сообщение об ошибке, если динамическая обработка группы столкнулась с ошибкой. <br><br> Необязательно. Только для чтения.|
+| status | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | Текущее состояние динамической групповой обработки. Возможные значения: `NotStarted` `Running` , , , , `Succeeded` и `Failed` `UnknownFutureValue` .  <br><br> Обязательный атрибут. Только для чтения.|
+| lastMembershipUpdated | edm. DateTime | Последние даты и время обновления членства в динамической группе. <br><br> Необязательно. Только для чтения.|
+| errorMessage | String | Подробное сообщение об ошибке, если динамическая обработка группы столкнулась с ошибкой. <br><br> Необязательно. Только для чтения.|
 
 ### <a name="membershipruleprocessingstatusdetails-values"></a>значения membershipRuleProcessingStatusDetails
 
 | Member | Описание |
 |:-------- |:----------- |
-| NotStarted | Группа создана или обновлена и ожидает обработки.|
-| Выполняется | Обработка запущена.|
-| Succeeded | Обработка завершена. Добавочные изменения объектов обрабатываются бессрочно. |
-| Не выполнено | При обработке произошла ошибка. Подробные **сведения см. в errorMessage.** |
+| NotStarted | Группа была создана или обновлена и ожидает обработки.|
+| Работает | Началась обработка.|
+| Succeeded | Обработка завершена. Инкрементные изменения объектов обрабатываются постоянно. |
+| Ошибка | Обработка столкнулась с ошибкой. Подробные сведения см. в **странице errorMessage.** |
 | UnknownFutureValue | Поддерживает будущие значения. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -3,14 +3,14 @@ title: тип ресурса ticketInfo
 description: Объект, который представляет сведения о билетах, связанные с запросами на назначение ролей
 author: shauliu
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 584600bf017a75efb141539b6f1397920717fb76
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: a59b62ddb014dedd802af6fcde001d4791d729c3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299761"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682602"
 ---
 # <a name="ticketinfo-resource-type"></a>тип ресурса ticketInfo
 
@@ -21,8 +21,8 @@ ms.locfileid: "52299761"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ticketNumber|Строка|Метаданные номеров билетов|
-|ticketSystem|Строка|Метаданные системы билетов|
+|ticketNumber|String|Метаданные номеров билетов|
+|ticketSystem|String|Метаданные системы билетов|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
