@@ -1,16 +1,16 @@
 ---
 title: Обновление группы
 description: Обновление свойств объекта group.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e92b738ffac9d04eaa02b0130e902609d3f944a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 36b8a21589bdfd1687939eb636bf5de254d37bab
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467990"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680740"
 ---
 # <a name="update-group"></a>Update group
 
