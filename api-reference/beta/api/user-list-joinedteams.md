@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f724d9f65664855ab12ab6655771c987a693616a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c27dfb4bd270e2745d7aa2e44694fdd689136577
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036291"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696165"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -37,7 +37,7 @@ ms.locfileid: "52036291"
 ```http
 GET /me/joinedTeams
 or
-GET /users/{id}/joinedTeams
+GET /users/{id | user-principal-name}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 12b645943297d34504bb4d4586ecbd8d3e79b7c6
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 18c6ec164d21c1efab249560f3c866fab5fabeb4
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582657"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52695947"
 ---
 # <a name="chats-getallmessages"></a>чаты: getAllMessages
 
@@ -22,7 +22,7 @@ ms.locfileid: "51582657"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуются разрешения ниже. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуются указанные ниже разрешения. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ ms.locfileid: "51582657"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/chats/getAllMessages
+GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
