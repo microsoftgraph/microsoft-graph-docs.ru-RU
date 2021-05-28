@@ -1,20 +1,20 @@
 ---
 title: Создание объекта rejectedSender
 description: Добавление пользователя или группы в список объектов rejectedSender.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 421914c6b0de8af68177051226c33c737b5b47b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 57d655d450467a8efd7aa1a9d1e67184b0ab7e94
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042067"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682164"
 ---
 # <a name="create-rejectedsender"></a>Создание объекта rejectedSender
 
-Пространство имен: Microsoft. Graph Добавление нового пользователя или группы в список rejectedSender.
+Пространство имен: microsoft.graph Добавьте нового пользователя или группу в отклоненный списокSender.
 
 Укажите пользователя или группу с помощью параметра `@odata.id` в тексте запроса. Пользователи из списка запрещенных отправителей не могут отправлять записи в беседы группы (определенные в URL-адресе запроса POST). Убедитесь, что в списках запрещенных и разрешенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
 
@@ -37,7 +37,7 @@ POST /groups/{id}/rejectedSenders/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Укажите в тексте запроса идентификатор объекта user или group.
 
 ## <a name="response"></a>Отклик

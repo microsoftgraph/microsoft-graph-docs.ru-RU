@@ -2,21 +2,21 @@
 title: Создание параметра группы
 description: Создайте новый параметр на основе шаблонов, доступных в groupSettingTemplates.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2d85876b4dc024f976e6bedbc7aadd17eda5cec7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4b3d67940a8d4ba71b3377c867edf2a0a8f11c80
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054009"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679766"
 ---
 # <a name="create-a-group-setting"></a>Создание параметра группы
 
 Пространство имен: microsoft.graph
 
-Используйте этот API для создания нового параметра на основе шаблонов, доступных в [groupSettingTemplates.](../resources/groupsettingtemplate.md) Эти параметры могут быть на уровне клиента или на уровне группы. Запрос на создание должен предоставить [параметрValues](../resources/settingvalue.md) для всех параметров, определенных в шаблоне. Для параметров, определенных для группы, можно установить только параметр, регуляющий, могут ли члены группы приглашать гостевых пользователей. Это будет регулировать такое поведение после того, как будет доступна возможность добавлять гостевых пользователей в группу. Для конечных точек бета-версии используйте [directorySettingTemplates.](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta)
+Используйте этот API для создания нового параметра на основе шаблонов, доступных в [groupSettingTemplates.](../resources/groupsettingtemplate.md) Эти параметры могут быть на уровне клиента или на уровне группы. Запрос на создание должен предоставить [параметрValues](../resources/settingvalue.md) для всех параметров, определенных в шаблоне. Для параметров, определенных для группы, можно установить только параметр, регуляющий, могут ли члены группы приглашать гостевых пользователей. Это будет регулировать такое поведение после того, как будет доступна возможность добавлять гостевых пользователей в группу. Для конечных точек бета-версии используйте [directorySettingTemplates.](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "52054009"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

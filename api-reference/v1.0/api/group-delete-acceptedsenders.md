@@ -1,20 +1,20 @@
 ---
 title: Удаление объекта acceptedSender
-description: 'Удаление пользователя или группы из списка принятых отправителей. '
-author: yyuank
+description: 'Удалите пользователя или группу из списка принятых отправителей. '
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1d867f3341ac6316354afa16b713e1961867b7bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 659be516dc8ce8ae4fcf8afdd83d6373f1c4862b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023340"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679836"
 ---
 # <a name="remove-acceptedsender"></a>Удаление объекта acceptedSender
 
-Пространство имен: Microsoft. Graph удаление пользователя или группы из списка принятых отправителей. 
+Namespace: microsoft.graph Remove a user or group from the accepted-senders list. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: addGroup'
 description: Добавляет группу к политике жизненного цикла.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 991975c6a733225534ba646f8dc62007de563abe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5054a75a079dc1b1a687148baf14b6492859cc4b
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041878"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680943"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -42,7 +42,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
@@ -51,7 +51,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если к политике добавляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Если к политике добавляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
 
 ## <a name="example"></a>Пример
 

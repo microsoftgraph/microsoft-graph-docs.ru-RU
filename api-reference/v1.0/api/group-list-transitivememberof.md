@@ -1,16 +1,16 @@
 ---
 title: Перечисление group transitive memberOf
 description: Получите группы, в которые входит группа.  Эта операция является транзитной и также будет включать все группы, вложенные в эту группу. В отличие от получения пользовательских Microsoft 365, это возвращает все типы групп, а не только Microsoft 365 групп.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 448303bdc4cf158a41d376f4a2f2f0b69cad9a56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 738c100738d6eb0b4b2eb49e3b57a32c7f00bb32
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052301"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680600"
 ---
 # <a name="list-group-transitive-memberof"></a>Перечисление group transitive memberOf
 

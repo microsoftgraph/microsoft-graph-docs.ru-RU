@@ -1,16 +1,16 @@
 ---
 title: Создание беседы
 description: 'Создание беседы путем включения цепочки и записи. '
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8f722f80f08b599dddc62aa30324e799091c674f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a91b88067384962f98154448b0eadcef6a6cb44f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052273"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680586"
 ---
 # <a name="create-conversation"></a>Создание беседы
 

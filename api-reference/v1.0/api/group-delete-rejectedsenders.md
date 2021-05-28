@@ -1,20 +1,20 @@
 ---
 title: Удаление объекта rejectedSender
-description: Удаление пользователя или группы из списка отклоненных отправителей.
-author: yyuank
+description: Удалите пользователя или группу из списка отклоненных отправителей.
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0844e05da10dda1888309d90591153b443614915
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1297f53bce201c17e7ccea5d1b01a7a84066a388
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094822"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681076"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 
-Пространство имен: Microsoft. Graph удаление пользователя или группы из списка отклоненных отправителей.
+Namespace: microsoft.graph Remove a user or group from the rejected-senders list.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

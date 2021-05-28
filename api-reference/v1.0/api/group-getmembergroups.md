@@ -2,15 +2,15 @@
 title: 'group: getMemberGroups'
 description: Возвращение всех групп, в которых состоит указанная группа.
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8d549365d312dce33f6383ef364c1d22ddea068a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 49085a6d689ebaad446ec49c2d2322169a56a9f3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039582"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681993"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "52039582"
 
 Возвращает все названия групп, в которых состоит указанная группа. Эта промежуточная проверка, в отличие от считывания свойства навигации [memberOf](../api/group-list-memberof.md) (возвращаются только группы, непосредственным членом которых является данная группа).
 
-Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленных к работе в Azure AD. Максимальное количество групп, которые может вернуть каждый запрос — 2046. Обратите внимание, что компонент "Группы Microsoft 365" не может содержать группы. Следовательно, членство, относящееся к компоненту "Группы Microsoft 365", всегда непосредственное.
+Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленных к работе в Azure AD. Максимальное количество групп, которые может вернуть каждый запрос — 2046. Обратите внимание, что компонент "Группы Microsoft 365" не может содержать группы. Следовательно, членство, относящееся к компоненту "Группы Microsoft 365", всегда непосредственное.
 
 ## <a name="permissions"></a>Разрешения
 

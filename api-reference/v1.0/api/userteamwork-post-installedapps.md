@@ -5,18 +5,18 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75647e6ab8cb591fc9193648bb5d2174a9141c89
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 69994c99fa34b54d5c927dcfa3c3097694f2cc19
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659787"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696158"
 ---
 # <a name="install-app-for-user"></a>Установка приложения для пользователя
 
 Пространство имен: microsoft.graph
 
-Установите приложение [в](../resources/teamsapp.md) личной области указанного [пользователя.](../resources/user.md)
+Установите [приложение в](../resources/teamsapp.md) личной области указанного [пользователя.](../resources/user.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,14 +24,14 @@ ms.locfileid: "49659787"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Для приложений | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps
+POST /users/{user-id | user-principal-name}/teamwork/installedApps
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -43,11 +43,11 @@ POST /users/{user-id}/teamwork/installedApps
 
 ## <a name="request-body"></a>Текст запроса
 
-Тело запроса должно содержать ИД добавляемого приложения каталога.
+В теле запроса должен быть добавлен ID существующего приложения каталога.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|teamsApp|String|ИД добавляемого приложения.|
+|teamsApp|String|ID приложения для добавления.|
 
 ## <a name="response"></a>Отклик
 

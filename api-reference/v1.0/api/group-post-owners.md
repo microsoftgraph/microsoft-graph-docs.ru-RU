@@ -2,15 +2,15 @@
 title: Добавление владельца группы
 description: Добавление пользователя в качестве владельца группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 25ead575d867324d9090293f7bf26cd9feaa5296
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fc469ce2594a98e602a53cc7733f3cca902c8f86
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050467"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680565"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 

@@ -1,16 +1,16 @@
 ---
 title: Вывод события
 description: Получение объекта event.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f69c592a0739f654781d136999ab52cc9ee8bf54
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b5b2dbd9b952f1a78eea04dbfa9a82be0b4bce53
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050474"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681013"
 ---
 # <a name="get-event"></a>Вывод события
 
@@ -41,7 +41,7 @@ GET /groups/{id}/calendar/events/{id}
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательное свойство. |
+| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса

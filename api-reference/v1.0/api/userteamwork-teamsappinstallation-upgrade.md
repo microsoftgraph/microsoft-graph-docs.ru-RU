@@ -5,18 +5,18 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 48824dba3e61c245b76c557d60355fd7ed24e266
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 1d209f807b977300876000d66f211cb3ed0236f9
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658737"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696151"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: обновление
 
 Пространство имен: microsoft.graph
 
-[Обновим установку](../resources/teamsappinstallation.md) приложения в [](../resources/user.md) личной области указанного пользователя до последней версии приложения.
+Обновление [установки приложения](../resources/teamsappinstallation.md) в личном поле [](../resources/user.md) указанного пользователя до последней версии приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,14 +24,14 @@ ms.locfileid: "49658737"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Для приложений | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps/{app-installation-id}/upgrade
+POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/upgrade
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

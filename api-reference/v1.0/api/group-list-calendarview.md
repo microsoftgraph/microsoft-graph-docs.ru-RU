@@ -2,15 +2,15 @@
 title: Список calendarView
 description: Получение исключений, повторяемых или единичных экземпляров событий в представлении календаря, которое определяется заданным диапазоном времени,
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8c0eb3dc633c11e47cca189d449e46923d30a4d2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 42c1ed3d4409d0a209e44b8cb16a7f32928a4cee
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052343"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682595"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -52,7 +52,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательное свойство. |
+| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса

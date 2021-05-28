@@ -1,22 +1,22 @@
 ---
 title: 'group: renew'
-description: Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
+description: Обновление, продлевающее срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fccf59c57a160a6517479463b432d73cfd5278be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a56765eda995709be5340859c0093e5a72797eae
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053071"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680544"
 ---
 # <a name="group-renew"></a>group: renew
 
 Пространство имен: microsoft.graph
 
-Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
+Обновление, продлевающее срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 
 ## <a name="permissions"></a>Разрешения
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление транзитивных участников группы
 description: Получите список участников группы. В составе группы могут быть пользователи, устройства, организационные контакты и другие группы. Эта операция является транзитной и возвращает плоский список всех вложенных членов.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 35154e6fe6ef26588b8025febe1a57982d020b9a
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 31fd82f4d632c63e3cac52a3792053de0eea531d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100053"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682518"
 ---
 # <a name="list-group-transitive-members"></a>Перечисление транзитивных участников группы
 

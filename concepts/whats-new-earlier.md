@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: a74a4cabd593cfa26488a80399d6958d09cf9b6c
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 275d21c3bd34fc8a5049c4db8fb1e2c7521b3a81
+ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645355"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698013"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -376,7 +376,7 @@ ms.locfileid: "52645355"
 - Укажите в [политике авторизации](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true), можно ли приглашать внешних пользователей в организацию и кому это разрешено.
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Люди и рабочая аналитика | Аналитика 
-Администраторы могут просмотреть [примеры использования командлетов PowerShell](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell), чтобы настроить параметры аналитики элементов для организации.
+Администраторы могут просмотреть [примеры использования командлетов PowerShell](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-settings-via-powershell), чтобы настроить параметры аналитики элементов для организации.
 
 ### <a name="teamwork"></a>Командная работа
 - Используйте атрибут **channelCreationMode** экземпляра, чтобы указать, что создается [канал](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes) для обслуживания миграции данных. Используйте атрибут [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true), чтобы указать на завершение миграции и возможность публикации и чтения сообщений участниками.
@@ -471,7 +471,7 @@ ms.locfileid: "52645355"
 ### <a name="change-notifications"></a>Уведомления об изменениях
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
 - Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 

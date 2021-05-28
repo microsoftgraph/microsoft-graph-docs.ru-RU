@@ -1,20 +1,20 @@
 ---
 title: Создание объекта acceptedSender
 description: Добавление пользователя или группы в список объектов acceptedSender.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b3f55e75d84a00622a0bc1d9fcda4e2aa2ddf535
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61d25b199599b6a48ec4498b13898f29d8505d7e
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057537"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681986"
 ---
 # <a name="create-acceptedsender"></a>Создание объекта acceptedSender
 
-Пространство имен: Microsoft. Graph Добавление нового пользователя или группы в список acceptedSender.
+Пространство имен: microsoft.graph Добавьте нового пользователя или группу в принятый списокSender.
 
 Укажите пользователя или группу с помощью параметра `@odata.id` в тексте запроса. Пользователи из списка разрешенных отправителей могут отправлять записи в беседы группы. Убедитесь, что в списках разрешенных и запрещенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
 
@@ -37,7 +37,7 @@ POST /groups/{id}/acceptedSenders/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Укажите в тексте запроса идентификатор объекта user или group.
 
 ## <a name="response"></a>Отклик

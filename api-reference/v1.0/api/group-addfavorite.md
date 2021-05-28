@@ -2,15 +2,15 @@
 title: 'group: addFavorite'
 description: Добавление группы в список избранных групп текущего пользователя. Поддерживается только для групп Microsoft 365.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 18e9e84cd007dd8e4e48be9de449048e9caf0a5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4705fce7fa1a38b3233e855ba96443ca0b6cdd0f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971204"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679857"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
@@ -37,9 +37,9 @@ POST /groups/{id}/addFavorite
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  |
+| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательно.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

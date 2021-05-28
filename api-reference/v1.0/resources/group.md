@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса group
-description: 'Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365 или группой безопасности. '
+description: 'Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365 или группой безопасности. '
 localization_priority: Priority
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d355ed5bc108aa02a9e02dfe7f8b8daebf8b508a
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: f5ac0ec806cc926c8acc978aed7067bdb0e4fc78
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080577"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680194"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
 Пространство имен: microsoft.graph
 
-Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365 или группой безопасности.
+Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365 или группой безопасности.
 
 Наследуется от [directoryObject](directoryobject.md).
 

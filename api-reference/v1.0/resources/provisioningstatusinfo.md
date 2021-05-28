@@ -3,14 +3,14 @@ title: provisioningStatusInfo resource type
 description: Описывает состояние события сводки по подготовкам.
 localization_priority: Normal
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b2944936a17c0dae9058d164fee4749c43e667e9
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 7b6ab84ab1139d2ec5d60e7d5c668d0444e472d3
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241550"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680971"
 ---
 # <a name="provisioningstatusinfo-resource-type"></a>provisioningStatusInfo resource type
 
@@ -26,7 +26,7 @@ ms.locfileid: "52241550"
 |status|provisioningResult| Возможные значения: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 |errorInfo|[provisioningErrorInfo](provisioningErrorInfo.md)| Если состояние не успешно или пропущенные сведения об ошибке содержатся в этом.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

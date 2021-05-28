@@ -2,15 +2,15 @@
 title: 'группа: checkMemberObjects'
 description: Проверьте членство в списке групп или ролей каталога для указанного объекта группы.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7371745848085d3edb0eadbbac8b824c7823ac53
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 50761be98dba7871258223c16f5944fbbafe053c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050495"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680768"
 ---
 # <a name="group-checkmemberobjects"></a>группа: checkMemberObjects
 

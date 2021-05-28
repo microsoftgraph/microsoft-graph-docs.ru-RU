@@ -1,22 +1,22 @@
 ---
 title: Обновление параметра группы
 description: Обновление свойств для указанных объектов параметров группы.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5433504aec92d8fb96a00857ff4e27c7bfc200c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a2a504aa8c736df33ef35d3bd131b6329fd499c
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973402"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679759"
 ---
 # <a name="update-a-group-setting"></a>Обновление параметра группы
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [groupSetting](../resources/groupsetting.md) для параметров [группы](../resources/group.md) на уровне клиента или определенного параметра группы.
+Обнови свойства объекта [groupSetting](../resources/groupsetting.md) для [](../resources/group.md) параметров группы для всех клиентов или определенного группового параметра.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Authorization  | {Token}. Обязательно. |
+| Авторизация  | {token}. Обязательно. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ PATCH /groups/{id}/settings/{id}
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| values | Коллекция [settingValue](../resources/settingvalue.md) | Обновленный набор значений. Необходимо включить весь набор семейств. Невозможно обновить один набор значений. |
+| values | [settingValue](../resources/settingvalue.md) collection | Обновленный набор значений. Необходимо включить весь набор коллекций. Нельзя обновить один набор значений. |
 
 ## <a name="response"></a>Отклик
 
@@ -57,9 +57,9 @@ PATCH /groups/{id}/settings/{id}
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-a-tenant-wide-group-setting"></a>Пример 1: Обновление параметра группы на уровне клиента
+### <a name="example-1-update-a-tenant-wide-group-setting"></a>Пример 1. Обновление параметра группы для всех клиентов
 
-В этом примере `{id}` — это идентификатор объекта groupSetting на уровне клиента.
+В этом примере — идентификатор объекта groupSetting для всей группы `{id}` клиента.
 
 #### <a name="request"></a>Запрос
 
@@ -165,9 +165,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-group-setting"></a>Пример 2: обновление определенной групповой настройки
+### <a name="example-2-update-a-specific-group-setting"></a>Пример 2. Обновление определенного группового параметра
 
-В этом примере первым `{id}` в запросе является идентификатор группы, а вторым `{id}` — идентификатор объекта groupSetting.
+В этом примере первый в запросе — идентификатор группы, а второй — идентификатор объекта `{id}` `{id}` groupSetting.
 
 #### <a name="request"></a>Запрос
 

@@ -1,20 +1,20 @@
 ---
 title: Обновление цепочки беседы
 description: Обновление объекта thread.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3d4ac9ebdbbd4f6a804ac404dcc5e10c18eab355
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1216771a7955cc9460faeab420b8550150d55b84
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041976"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679871"
 ---
 # <a name="update-conversation-thread"></a>Обновление цепочки беседы
 
-Пространство имен: Microsoft. Graph обновление объекта [Thread](../resources/conversationthread.md) .
+Пространство имен: microsoft.graph Обновление объекта [потока.](../resources/conversationthread.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,7 +36,7 @@ PATCH /groups/{id}/threads/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Отклик

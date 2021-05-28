@@ -5,18 +5,18 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0dba1856ef8edfccced11b56816ed9d83d3abafd
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: d80f0e6010f1ee7961c2efdc85bf0ed6b1b8a69f
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658778"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696256"
 ---
 # <a name="uninstall-app-for-user"></a>Удаление приложения для пользователя
 
 Пространство имен: microsoft.graph
 
-Удалить приложение из [личной](../resources/teamsappinstallation.md) области указанного [пользователя.](../resources/user.md)
+Удалить приложение [из](../resources/teamsappinstallation.md) личной области указанного [пользователя.](../resources/user.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,14 +24,14 @@ ms.locfileid: "49658778"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Для приложений | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+DELETE /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

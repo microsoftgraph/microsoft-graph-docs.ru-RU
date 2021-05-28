@@ -2,15 +2,15 @@
 title: 'group: delta'
 description: Создайте новые, обновленные или удаленные группы, в том числе изменения членства в группе, без необходимости выполнять полное чтение всей коллекции групп.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e094aaae32d8fe4ccbadd534b3d75ece56f8176e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a3acfecc8f005c6468dfe681ff3410bf7a4ffbfe
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050488"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680978"
 ---
 # <a name="group-delta"></a>group: delta
 

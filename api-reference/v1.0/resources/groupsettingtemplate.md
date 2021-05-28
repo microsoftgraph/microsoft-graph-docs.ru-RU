@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса groupSettingTemplate
-description: Шаблоны параметров групп представляют системные параметры, доступные для клиента.
+title: тип ресурса groupSettingTemplate
+description: Шаблоны параметров группы представляют параметры, определяемые системой, доступные для клиента.
 localization_priority: Normal
-author: yyuank
+author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f103ae27065701951cb7a7881ebaa898d455243c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a7868538c13b1e386e7aa10dcdf3fed9c03b198f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062934"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52680873"
 ---
-# <a name="groupsettingtemplate-resource-type"></a>Тип ресурса groupSettingTemplate
+# <a name="groupsettingtemplate-resource-type"></a>тип ресурса groupSettingTemplate
 
 Пространство имен: microsoft.graph
 
-Шаблоны параметров групп представляют системные параметры, доступные для клиента. [Параметры группы](groupsetting.md) могут быть созданы на основе доступных **граупсеттингтемплатес**, а значения по умолчанию изменяются. Шаблоны параметров групп не могут быть созданы, обновлены или удалены. Эти параметры могут представлять параметры на уровне клиента или конкретные параметры группы. В настоящее время доступны только шаблоны Microsoft 365, а также параметры, например, могут ли пользователи создавать группы или приглашать гостей извне организации для становиться членами группы.
+Шаблоны параметров группы представляют параметры, определяемые системой, доступные для клиента. [Параметры группы](groupsetting.md) могут быть созданы на основе доступных **группSettingTemplates** и значений, измененных по заранее. Шаблоны параметров группы не могут быть созданы, обновлены или удалены. Эти параметры могут представлять параметры для клиента или представлять определенные параметры группы. В настоящее время только доступные шаблоны применяются к Microsoft 365 группам и включают параметры, например, могут ли пользователи создавать группы или приглашать гостей из-за пределов организации в члены группы.
 
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Получение groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Чтение определенных свойств одного из системных объектов groupSettingTemplate, определенных системой. |
-|[Список groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Коллекция groupSettingTemplate](groupsettingtemplate.md) |Перечисление всех объектов groupSettingTemplate, определенных системой.|
+|[Get groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Ознакомьтесь с определенными свойствами одного из системных объектов groupSettingTemplate. |
+|[List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Коллекция groupSettingTemplate](groupsettingtemplate.md) |Список всех системных объектов groupSettingTemplate.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |description|String| Описание шаблона. |
-|displayName|String| Отображаемое имя шаблона. |
+|displayName|String| Отображение имени шаблона. |
 |id|String| Уникальный идентификатор шаблона. Только для чтения.|
-|values|Коллекция [сеттингтемплатевалуе](settingtemplatevalue.md)| Коллекция Settingtemplatevalue, в которой перечислены набор доступных параметров, значения по умолчанию и типы, которые составляют этот шаблон. |
+|values|[settingTemplateValue](settingtemplatevalue.md) collection| Коллекция параметровTemplateValues, которые перечисляют набор доступных параметров, по умолчанию и типов, которые составляют этот шаблон. |
 
 ## <a name="relationships"></a>Связи
 

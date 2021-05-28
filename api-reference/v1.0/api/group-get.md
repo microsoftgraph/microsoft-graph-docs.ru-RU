@@ -1,16 +1,16 @@
 ---
 title: Вывод группы
 description: Получение свойств и связей объекта group.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b2b16d4cb2fdcdee34ffba82e2e1d27f604d6021
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 46c50e3ec6d3e646ff4102472687b5bacee3bb1f
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368203"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682028"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Он включает только стандартные свойства.
+Ниже приведен пример отклика. Он содержит только свойства по умолчанию.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В реальном вызове возвращаются все свойства по умолчанию.
 

@@ -5,17 +5,17 @@ author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 315c21cb42ea16fa3aa05780b99dc195a76fa4dd
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 2d6d82e251fd476dbaa0f657d887bac5fd475883
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509119"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696270"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправка уведомления о канале действий пользователю. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в материале Отправка уведомлений о [действиях Teams.](/graph/teams-send-activityfeednotifications)
+Отправка уведомления о канале действий пользователю. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в Teams [действия.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +33,7 @@ ms.locfileid: "51509119"
 }
 -->
 ``` http
-POST /users/{userId}/teamwork/sendActivityNotification
+POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,10 +50,10 @@ POST /users/{userId}/teamwork/sendActivityNotification
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
-|activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
+|activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
 |chainId|Int64|Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
-|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams покажет только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи ленты действий, соответствующие `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
+|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
 
 При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityUrl` ресурсы:
 
@@ -130,7 +130,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Пример 2. Уведомление пользователя о событии с использованием настраиваемой темы
 
-Если вы хотите связать аспект, который не представлен Microsoft Graph, или настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при использовании `topic` источника в качестве `text` .
+Если вы хотите связать аспект, который не представлен корпорацией Майкрософт Graph или настроить имя, вы можете установить источник для него и передать его в настраиваемом `topic` `text` значении. `webUrl` требуется при использовании `topic` источника в качестве `text` .
 
 #### <a name="request"></a>Запрос
 

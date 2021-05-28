@@ -1,16 +1,16 @@
 ---
 title: Удаление groupLifecyclePolicy
 description: Удаление объекта groupLifecyclePolicy.
-author: yyuank
+author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b9f51c59806109a2c5ff673177807dce6f1d0276
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e27ae1bf63006629f99df0d0868d826080c76dc0
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041892"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679829"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Удаление groupLifecyclePolicy
 
@@ -42,7 +42,7 @@ DELETE /groupLifecyclePolicies/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
