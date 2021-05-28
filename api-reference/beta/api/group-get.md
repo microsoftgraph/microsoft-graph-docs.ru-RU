@@ -1,16 +1,16 @@
 ---
 title: Вывод группы
 description: Получение свойств и связей объекта group.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8578083aecaeb34f838bcffad80be4e4c742fe2f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 344f1ed4ed71fe038dd66403c7b8732829fb8c0d
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961835"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681689"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -29,7 +29,7 @@ ms.locfileid: "50961835"
 |:--------------------|:---------------------------------------------------------|
 |Делегированное (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 >**Примечание.** В зависимости от функций группы, к которым вы пытаетесь получить доступ, разрешения могут быть ограничены. Дополнительные сведения см. в разделе [Группы](/graph/known-issues#groups) статьи [Известные проблемы с Microsoft Graph](/graph/known-issues).
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Он включает только стандартные свойства.
+Ниже приведен пример отклика. Он содержит только свойства по умолчанию.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В реальном вызове возвращаются все свойства по умолчанию.
 <!-- {

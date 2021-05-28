@@ -1,25 +1,25 @@
 ---
 title: Использование API Microsoft Graph
-description: Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После регистрации приложения и получения маркеров аутентификации для пользователя или службы можно отправлять запросы к API Microsoft Graph.
+description: Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После регистрации приложения и получения маркеров аутентификации для пользователя или службы можно отправлять запросы к API Microsoft Graph.
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5a890588fe4b379cf27360db98c4118d0e3ca7d5
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e5a70d69d872d57963f658e7ff2d9e5fa088d3e9
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288814"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52679542"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Использование API Microsoft Graph
 
-Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После [регистрации приложения](auth-register-app-v2.md) и [получения маркеров аутентификации для пользователя](auth-v2-user.md) или [службы](auth-v2-service.md) можно отправлять запросы к API Microsoft Graph.
+Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После [регистрации приложения](auth-register-app-v2.md) и [получения маркеров аутентификации для пользователя](auth-v2-user.md) или [службы](auth-v2-service.md) можно отправлять запросы к API Microsoft Graph.
 
 > **Важно!** Изменяется принцип применения политик условного доступа к Microsoft Graph. Вам необходимо обновить свои приложения, чтобы они могли обрабатывать сценарии, в которых выполняется настройка политик условного доступа. Дополнительные сведения и рекомендации см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 ## <a name="odata-namespace"></a>Пространство имен OData
 
-API Microsoft Graph определяет большую часть своих ресурсов, методов и перечислений в пространстве имен OData, `microsoft.graph`, в [метаданных Microsoft Graph](traverse-the-graph.md#microsoft-graph-api-metadata). Небольшое число наборов API определено во вложенных пространствах имен, например [API записей звонков](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta), определяющий такие ресурсы, как [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) в `microsoft.graph.callRecords`. 
+API Microsoft Graph определяет большую часть своих ресурсов, методов и перечислений в пространстве имен OData, `microsoft.graph`, в [метаданных Microsoft Graph](traverse-the-graph.md#microsoft-graph-api-metadata). Небольшое число наборов API определено во вложенных пространствах имен, например [API записей звонков](/graph/api/resources/callrecords-api-overview), определяющий такие ресурсы, как [callRecord](/graph/api/resources/callrecords-callrecord) в `microsoft.graph.callRecords`. 
 
 Если явно не указано в соответствующем разделе, предполагается, что типы, методы и перечисления являются частью пространства имен `microsoft.graph`.
 
@@ -38,14 +38,14 @@ API Microsoft Graph определяет большую часть своих р
 
 * [{Метод HTTP}](#http-methods) — метод HTTP, используемый в запросе для Microsoft Graph.
 * [{версия}](#version) — версия API Microsoft Graph, которую использует приложение.
-* [{ресурс}](#resource) — ресурс Microsoft Graph, на который вы ссылаетесь. 
+* [{ресурс}](#resource) — ресурс Microsoft Graph, на который вы ссылаетесь. 
 * [{параметры-запроса}](#query-parameters) — необязательные параметры запроса OData или метода REST для изменения ответа.
 
 После создания запроса возвращается ответ, который включает: 
 
-* Код состояния — код состояния HTTP, который указывает на результат операции. Сведения о кодах ошибок HTTP см. в разделе [Ошибки](errors.md).
-* Ответ — запрошенные данные или результат операции. Для некоторых операций ответ может быть пустым.
-* `nextLink` — если найдено много данных, чтобы пролистать их все, используйте URL-адрес, возвращенный в свойстве `@odata.nextLink`. Дополнительные сведения см. в [этой статье](paging.md).
+* Код состояния — код состояния HTTP, который указывает на результат операции. Сведения о кодах ошибок HTTP см. в разделе [Ошибки](errors.md).
+* Ответ — запрошенные данные или результат операции. Для некоторых операций ответ может быть пустым.
+* `nextLink` — если найдено много данных, чтобы пролистать их все, используйте URL-адрес, возвращенный в свойстве `@odata.nextLink`. Дополнительные сведения см. в [этой статье](paging.md).
 
 ## <a name="http-methods"></a>Методы HTTP
 
@@ -69,7 +69,7 @@ Microsoft Graph в настоящее время поддерживает две
 * `v1.0` включает общедоступные API. Используйте версию 1.0 для всех рабочих приложений.
 * `beta` содержит бета-версии API. Так как мы можем вносить в бета-версии API критические изменения, рекомендуем использовать их только для проверки разрабатываемых приложений. Не используйте бета-версии API в рабочих приложениях.
 
-Мы всегда рады отзывам о бета-версиях API. Чтобы оставить отзыв или предложить функцию, посетите нашу страницу [UserVoice](https://officespdev.uservoice.com/).
+Мы всегда рады отзывам о бета-версиях API. Чтобы оставить отзыв или запросить какие-либо функции, посетите наш [форум с идеями для платформы разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 Дополнительные сведения о версиях API см. в статье [Управление версиями и поддержка](versioning-and-support.md).
 
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 Песочница Graph — это веб-инструмент, который можно использовать для создания и тестирования запросов с помощью API Microsoft Graph. Песочница Graph доступна по адресу: `https://developer.microsoft.com/graph/graph-explorer`.
 
-Вы можете получить доступ к демонстрационным данным без входа или можете войти в свой клиент. Для создания запроса выполните следующие действия:
+Вы можете получить доступ к демонстрационным данным без входа или войти в свой клиент. Чтобы отправить запрос, выполните следующее:
 
 1. Выберите метод HTTP.
 2. Выберите версию API, которую нужно использовать.
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 Postman — это инструмент, который можно использовать для создания и тестирования запросов с помощью API Microsoft Graph. Вы можете скачать Postman по адресу: `https://www.getpostman.com/`. Чтобы взаимодействовать с Microsoft Graph в Postman, используйте коллекцию Microsoft Graph.
 
-Дополнительные сведения см. в статье [Использование Postman с API Microsoft Graph](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta).
+Дополнительные сведения см. в статье [Использование Postman с API Microsoft Graph](./use-postman.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

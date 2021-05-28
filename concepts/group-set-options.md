@@ -1,18 +1,18 @@
 ---
 title: Настройка параметров поведения и подготовки групп Microsoft 365
 description: Ресурс group в Microsoft Graph позволяет задать определенное поведение и подготовить ресурсы при создании групп Microsoft 365.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
-ms.openlocfilehash: 066ef0c65fa0b70fd89fc5dfc4cf14e047f1bc49
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 54e4622a69f33980494962882ac1aa06d07eaec5
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034151"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52682182"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>Настройка параметров поведения и подготовки групп Microsoft 365 (предварительная версия)
 
-Ресурс [group](/graph/api/resources/group?view=graph-rest-beta) в Microsoft Graph позволяет задать определенное поведение и подготовить ресурсы при создании групп Microsoft 365. В зависимости от ресурса, некоторые из них также можно подготовить при обновлении группы.
+Ресурс [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) в Microsoft Graph позволяет задать определенное поведение и подготовить ресурсы при создании групп Microsoft 365. В зависимости от ресурса, некоторые из них также можно подготовить при обновлении группы.
 
 ### <a name="configuring-and-provisioning-groups"></a>Настройка и подготовка групп
 
@@ -21,7 +21,7 @@ ms.locfileid: "50034151"
 > [!NOTE]
 > В настоящее время свойства **resourceBehaviorOptions** и **resourceProvisioningOptions** доступны только в конечной точке бета-версии Microsoft Graph. Не используйте эти свойства в рабочих приложениях, так как они могут быть изменены без предварительного уведомления.
 
-Свойство **resourceBehaviorOptions** — это набор строк, определяющих поведение групп Microsoft 365. Поведение группы можно задать только при [ее создании](/graph/api/group-post-groups?view=graph-rest-beta) (`POST`).
+Свойство **resourceBehaviorOptions** — это набор строк, определяющих поведение групп Microsoft 365. Поведение группы можно задать только при [ее создании](/graph/api/group-post-groups?view=graph-rest-beta&preserve-view=true) (`POST`).
 
 | Поддерживаемые значения для resourceBehaviorOptions   |Описание|Значение по умолчанию, если не задано иное|
 |:---------------|:--------|:-----------|
@@ -34,10 +34,10 @@ ms.locfileid: "50034151"
 
 | Поддерживаемые значения для resourceProvisioningOptions   |Описание| Значение по умолчанию, если не задано иное |
 |:---------------|:--------|:------------|
-| Teams|Подготовка этой группы в качестве команды в Microsoft Teams. Кроме того, это значение можно добавить в набор строк **resourceProvisioningOptions** при [обновлении группы](/graph/api/group-update?view=graph-rest-beta) с помощью операции `PATCH`, чтобы преобразовать существующую группу Microsoft 365 в команду.| Эта группа является стандартной группой Microsoft 365 без возможностей Teams.|
+| Teams|Подготовка этой группы как команды в Microsoft Teams. Кроме того, это значение можно добавить в набор строк **resourceProvisioningOptions** при [обновлении группы](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) с помощью операции `PATCH`, чтобы преобразовать существующую группу Microsoft 365 в команду.| Эта группа является стандартной группой Microsoft 365 без возможностей Teams.|
 
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор групп Microsoft 365 в Microsoft Graph](office365-groups-concept-overview.md)
+- [Обзор групп Microsoft 365 в Microsoft Graph](office365-groups-concept-overview.md)
 - [Обзор API Microsoft Teams](teams-concept-overview.md)

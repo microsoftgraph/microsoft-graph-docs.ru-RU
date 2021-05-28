@@ -1,16 +1,16 @@
 ---
 title: Создание группы
 description: Создание группы Microsoft 365 или группы безопасности.
-author: yyuank
+author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 871d990342807a9742ce9125c62e730fec39cd10
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 4f4cab940521f1fd68c2c6b850bc4dc4c8dd2686
+ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507954"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52681408"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -140,7 +140,7 @@ Content-length: 244
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
 
@@ -193,7 +193,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-security-group-with-an-owner-and-members"></a>Пример 2. Создание группы безопасности с владельцем и участниками
 
-В следующем примере создается группа безопасности с указанным владельцем и участниками. Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников. Позже вы можете добавить дополнительных участников с помощью API [добавления участников](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) или пакетной обработки JSON.
+В следующем примере создается группа безопасности с указанным владельцем и участниками. Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников. Позже вы можете добавить дополнительных участников с помощью API [добавления участников](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) или пакетной обработки JSON.
 
 #### <a name="request"></a>Запрос
 
@@ -329,7 +329,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Он включает только свойства по умолчанию.
+Ниже приведен пример отклика. Он содержит только свойства по умолчанию.
 
 <!-- {
   "blockType": "response",
