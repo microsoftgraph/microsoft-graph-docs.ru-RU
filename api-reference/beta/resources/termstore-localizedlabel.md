@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Локализедлабел
-description: Представляет метку термина в банке терминов.
+title: тип локализованных ресурсовLabel
+description: Представляет метку для термина в магазине терминов.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: cadad79f6e019a258842fff1be679adf6c85fb3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d7de3c9567c20659af4c863d2cf1ac248beff6b
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973612"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696312"
 ---
-# <a name="localizedlabel-resource-type"></a>Тип ресурса Локализедлабел
+# <a name="localizedlabel-resource-type"></a>тип локализованных ресурсовLabel
 
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метку [термина] в [банке]терминов.
+Представляет метку для [термина в] магазине [терминов].
 
 Определяет метки, связанные с заданным термином.
 
@@ -26,7 +26,7 @@ ms.locfileid: "47973612"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isDefault|Boolean|Указывает, является ли метка меткой по умолчанию.|
-|лангуажетаг|String|Тег ангуаже для метки.|
+|LanguageTag|String|Тег языка для метки.|
 |name|String|Имя метки.|
 
 ## <a name="relationships"></a>Связи
@@ -52,8 +52,8 @@ ms.locfileid: "47973612"
 [microsoft.graph.termStore.term]: termstore-term.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[банком]: ../resources/termstore-term.md
-[восстановлен]: ../resources/termstore-store.md
+[термин]: ../resources/termstore-term.md
+[магазин]: ../resources/termstore-store.md
 
 
 <!--
@@ -64,7 +64,7 @@ ms.locfileid: "47973612"
   "section": "documentation",
   "tocPath": "termstorelocalizedlabel",
   "tocBookmarks": {
-    "Resources/termStore.termstorelocalizedlabel": "#"
+    "Resources/termStore.termstorelocalizedlabel&quot;: &quot;#"
   },
   "suppressions": []
 }

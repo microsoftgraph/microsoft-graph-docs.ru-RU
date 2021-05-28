@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e72ea6783e37d7018fe4f6b1ff7063ff10f6b835
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 86aeafca89c7ce491923961a87673b855f088fc5
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582314"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696045"
 ---
 # <a name="list-chats"></a>Чаты списка
 
@@ -35,7 +35,7 @@ ms.locfileid: "51582314"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats
-GET /users/{user-id}/chats
+GET /users/{user-id | user-principal-name}/chats
 GET /chats
 ```
 
@@ -353,7 +353,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 > [!NOTE]
 > Идентификатор членства, возвращенный сервером, должен рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
 >
-> В дальнейшем результаты членства могут сопоставляться с пользователями различных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
+> В дальнейшем результаты участия могут сопоставляться с пользователями из разных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cde0931caf5509c9782e7da9fdb4691eafa4eb67
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c9e2744e416e2e3176bb275924890fef39986cc9
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052581"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696319"
 ---
 # <a name="get-chat-between-user-and-teamsapp"></a>Получить чат между пользователем и teamsApp
 
@@ -35,7 +35,7 @@ ms.locfileid: "52052581"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
+GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

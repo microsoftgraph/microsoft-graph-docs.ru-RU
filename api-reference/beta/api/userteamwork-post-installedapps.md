@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 37591c37f09b07baa88a47f707e0a910a0a7de40
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 9a39bc198e742f2b5b1b15cbdbf02a96a980c708
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607756"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696284"
 ---
 # <a name="install-app-for-user"></a>Установка приложения для пользователя
 
@@ -18,7 +18,7 @@ ms.locfileid: "49607756"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Установка [приложения](../resources/teamsapp.md) в личной области указанного [пользователя](../resources/user.md).
+Установите [приложение в](../resources/teamsapp.md) личной области указанного [пользователя.](../resources/user.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "49607756"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. Реадвритефорусер |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps
+POST /users/{user-id | user-principal-name}/teamwork/installedApps
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,11 +44,11 @@ POST /users/{user-id}/teamwork/installedApps
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса должен содержаться идентификатор существующего приложения каталога, который требуется добавить.
+В теле запроса должен быть добавлен ID существующего приложения каталога.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|teamsApp|String|Идентификатор добавляемого приложения.|
+|teamsApp|String|ID приложения для добавления.|
 
 ## <a name="response"></a>Отклик
 

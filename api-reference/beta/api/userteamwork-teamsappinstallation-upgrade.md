@@ -1,24 +1,24 @@
 ---
-title: 'Теамсаппинсталлатион: обновление'
+title: 'teamsAppInstallation: обновление'
 description: Обновление установки приложения в личной области пользователя
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f8ba82c47d1c573d44d91597264aa9fc21bb0e5
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 1dd9a390203658a2f7f284023a05ed0e166e5839
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607757"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696277"
 ---
-# <a name="teamsappinstallation-upgrade"></a>Теамсаппинсталлатион: обновление
+# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: обновление
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление [установки приложения](../resources/teamsappinstallation.md) в личной области указанного [пользователя](../resources/user.md) до последней версии приложения.
+Обновление [установки приложения](../resources/teamsappinstallation.md) в личном поле [](../resources/user.md) указанного пользователя до последней версии приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "49607757"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. Реадвритефорусер |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{user-id}/teamwork/installedApps/{app-installation-id}/upgrade
+POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/upgrade
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

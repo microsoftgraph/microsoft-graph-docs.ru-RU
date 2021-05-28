@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b0a865aa85e0c3a45b9aa97d4ae5af6896cae50
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 535bb735d8ff94bf560ddae8468da5b0b05a0581
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607219"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696326"
 ---
 # <a name="uninstall-app-for-user"></a>Удаление приложения для пользователя
 
@@ -18,7 +18,7 @@ ms.locfileid: "49607219"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [приложения](../resources/teamsappinstallation.md) из личной области указанного [пользователя](../resources/user.md).
+Удалить приложение [из](../resources/teamsappinstallation.md) личной области указанного [пользователя.](../resources/user.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "49607219"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. Реадвритефорусер |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+DELETE /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
