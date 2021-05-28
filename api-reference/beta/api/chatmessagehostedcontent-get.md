@@ -5,100 +5,120 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 23a62d1d25c442d4f305f3b68228712c97eff05b
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 4755bf2ddc8ff776e300e307a4fe838f27a6fe36
+ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582664"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696088"
 ---
-# <a name="get-chatmessagehostedcontent"></a><span data-ttu-id="e2839-103">Get chatMessageHostedContent</span><span class="sxs-lookup"><span data-stu-id="e2839-103">Get chatMessageHostedContent</span></span>
+# <a name="get-chatmessagehostedcontent"></a><span data-ttu-id="7b790-103">Get chatMessageHostedContent</span><span class="sxs-lookup"><span data-stu-id="7b790-103">Get chatMessageHostedContent</span></span>
 
-<span data-ttu-id="e2839-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e2839-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7b790-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7b790-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e2839-105">Извлечение свойств и связей [объекта chatMessageHostedContent.](../resources/chatmessagehostedcontent.md)</span><span class="sxs-lookup"><span data-stu-id="e2839-105">Retrieve the properties and relationships of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) object.</span></span>
+<span data-ttu-id="7b790-105">Извлечение свойств и связей [объекта chatMessageHostedContent.](../resources/chatmessagehostedcontent.md)</span><span class="sxs-lookup"><span data-stu-id="7b790-105">Retrieve the properties and relationships of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e2839-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e2839-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7b790-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7b790-106">Permissions</span></span>
 
-<span data-ttu-id="e2839-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2839-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7b790-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7b790-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-for-channel"></a><span data-ttu-id="e2839-109">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="e2839-109">Permissions for channel</span></span>
+### <a name="permissions-for-channel"></a><span data-ttu-id="7b790-109">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="7b790-109">Permissions for channel</span></span>
 
-| <span data-ttu-id="e2839-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e2839-110">Permission type</span></span>                        | <span data-ttu-id="e2839-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e2839-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7b790-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7b790-110">Permission type</span></span>                        | <span data-ttu-id="7b790-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7b790-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="e2839-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e2839-112">Delegated (work or school account)</span></span>| <span data-ttu-id="e2839-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span><span class="sxs-lookup"><span data-stu-id="e2839-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
-|<span data-ttu-id="e2839-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e2839-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e2839-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e2839-115">Not supported.</span></span>|
-|<span data-ttu-id="e2839-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e2839-116">Application</span></span>| <span data-ttu-id="e2839-117">ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2839-117">ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="7b790-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7b790-112">Delegated (work or school account)</span></span>| <span data-ttu-id="7b790-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span><span class="sxs-lookup"><span data-stu-id="7b790-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
+|<span data-ttu-id="7b790-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7b790-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7b790-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7b790-115">Not supported.</span></span>|
+|<span data-ttu-id="7b790-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7b790-116">Application</span></span>| <span data-ttu-id="7b790-117">ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7b790-117">ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-### <a name="permissions-for-chat"></a><span data-ttu-id="e2839-118">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="e2839-118">Permissions for chat</span></span>
+### <a name="permissions-for-chat"></a><span data-ttu-id="7b790-118">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="7b790-118">Permissions for chat</span></span>
 
-| <span data-ttu-id="e2839-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e2839-119">Permission type</span></span>                        | <span data-ttu-id="e2839-120">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e2839-120">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7b790-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7b790-119">Permission type</span></span>                        | <span data-ttu-id="7b790-120">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7b790-120">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="e2839-121">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e2839-121">Delegated (work or school account)</span></span>| <span data-ttu-id="e2839-122">Chat.Read, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e2839-122">Chat.Read, Chat.ReadWrite</span></span>|
-|<span data-ttu-id="e2839-123">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e2839-123">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e2839-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e2839-124">Not supported.</span></span>|
-|<span data-ttu-id="e2839-125">Для приложения</span><span class="sxs-lookup"><span data-stu-id="e2839-125">Application</span></span>| <span data-ttu-id="e2839-126">Chat.Read.All, Chat.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2839-126">Chat.Read.All, Chat.ReadWrite.All</span></span>|
+|<span data-ttu-id="7b790-121">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7b790-121">Delegated (work or school account)</span></span>| <span data-ttu-id="7b790-122">Chat.Read, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7b790-122">Chat.Read, Chat.ReadWrite</span></span>|
+|<span data-ttu-id="7b790-123">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7b790-123">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7b790-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7b790-124">Not supported.</span></span>|
+|<span data-ttu-id="7b790-125">Для приложения</span><span class="sxs-lookup"><span data-stu-id="7b790-125">Application</span></span>| <span data-ttu-id="7b790-126">Chat.Read.All, Chat.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7b790-126">Chat.Read.All, Chat.ReadWrite.All</span></span>|
 
-> <span data-ttu-id="e2839-127">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="e2839-127">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="7b790-127">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="7b790-127">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e2839-128">Перед вызовом этого API с разрешениями приложения необходимо запросить доступ.</span><span class="sxs-lookup"><span data-stu-id="e2839-128">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="e2839-129">Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="e2839-129">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="7b790-128">Перед вызовом этого API с разрешениями приложения необходимо запросить доступ.</span><span class="sxs-lookup"><span data-stu-id="7b790-128">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="7b790-129">Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="7b790-129">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e2839-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e2839-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7b790-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7b790-130">HTTP request</span></span>
 
-<span data-ttu-id="e2839-131">**Получать контент в сообщении канала**</span><span class="sxs-lookup"><span data-stu-id="e2839-131">**Get hosted content in a channel message**</span></span>
+<span data-ttu-id="7b790-131">**Получать контент в сообщении канала**</span><span class="sxs-lookup"><span data-stu-id="7b790-131">**Get hosted content in a channel message**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents/{hosted-content-id}
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/hostedContents/{hosted-content-id}
 ```
 
-<span data-ttu-id="e2839-132">**Получать контент в сообщении чата**</span><span class="sxs-lookup"><span data-stu-id="e2839-132">**Get hosted content in a chat message**</span></span>
+<span data-ttu-id="7b790-132">**Получать контент в сообщении чата**</span><span class="sxs-lookup"><span data-stu-id="7b790-132">**Get hosted content in a chat message**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
-GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}/hostedContents/{hosted-content-id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e2839-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e2839-133">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7b790-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7b790-133">Optional query parameters</span></span>
 
-<span data-ttu-id="e2839-134">Эта операция не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="e2839-134">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="7b790-134">Эта операция не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="7b790-134">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e2839-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e2839-135">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7b790-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7b790-135">Request headers</span></span>
 
-| <span data-ttu-id="e2839-136">Имя</span><span class="sxs-lookup"><span data-stu-id="e2839-136">Name</span></span>      |<span data-ttu-id="e2839-137">Описание</span><span class="sxs-lookup"><span data-stu-id="e2839-137">Description</span></span>|
+| <span data-ttu-id="7b790-136">Имя</span><span class="sxs-lookup"><span data-stu-id="7b790-136">Name</span></span>      |<span data-ttu-id="7b790-137">Описание</span><span class="sxs-lookup"><span data-stu-id="7b790-137">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e2839-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e2839-138">Authorization</span></span> | <span data-ttu-id="e2839-139">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="e2839-139">Bearer {code}</span></span> |
+| <span data-ttu-id="7b790-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7b790-138">Authorization</span></span> | <span data-ttu-id="7b790-139">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="7b790-139">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e2839-140">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e2839-140">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7b790-140">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7b790-140">Request body</span></span>
 
-<span data-ttu-id="e2839-141">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e2839-141">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7b790-141">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7b790-141">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e2839-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="e2839-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7b790-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="7b790-142">Response</span></span>
 
-<span data-ttu-id="e2839-143">В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="e2839-143">If successful, this method returns a `200 OK` response code and the requested [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) object in the response body.</span></span>
+<span data-ttu-id="7b790-143">В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="7b790-143">If successful, this method returns a `200 OK` response code and the requested [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e2839-144">Примеры</span><span class="sxs-lookup"><span data-stu-id="e2839-144">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7b790-144">Примеры</span><span class="sxs-lookup"><span data-stu-id="7b790-144">Examples</span></span>
 
-### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a><span data-ttu-id="e2839-145">Пример 1. Для получения содержимого для сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="e2839-145">Example 1: Get hosted content for message in a chat</span></span>
+### <a name="example-1-get-hosted-content-for-message-in-a-chat"></a><span data-ttu-id="7b790-145">Пример 1. Для получения содержимого для сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="7b790-145">Example 1: Get hosted content for message in a chat</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e2839-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="e2839-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7b790-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="7b790-146">Request</span></span>
 
-<span data-ttu-id="e2839-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e2839-147">The following is an example of the request.</span></span>
+<span data-ttu-id="7b790-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7b790-147">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="7b790-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="7b790-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_hostedcontentchatmessage_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv
 ```
-#### <a name="response"></a><span data-ttu-id="e2839-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="e2839-148">Response</span></span>
+# <a name="c"></a>[<span data-ttu-id="7b790-149">C#</span><span class="sxs-lookup"><span data-stu-id="7b790-149">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontentchatmessage-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="e2839-149">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e2839-149">The following is an example of the response.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="7b790-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7b790-150">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-hostedcontentchatmessage-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="e2839-150">**Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.</span><span class="sxs-lookup"><span data-stu-id="e2839-150">**Note:** `contentBytes` and `contentType` are always set to null.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="7b790-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7b790-151">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontentchatmessage-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7b790-152">Java</span><span class="sxs-lookup"><span data-stu-id="7b790-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontentchatmessage-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a><span data-ttu-id="7b790-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="7b790-153">Response</span></span>
+
+<span data-ttu-id="7b790-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="7b790-154">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="7b790-155">**Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.</span><span class="sxs-lookup"><span data-stu-id="7b790-155">**Note:** `contentBytes` and `contentType` are always set to null.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,21 +137,41 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-hosted-content-bytes-for-an-image"></a><span data-ttu-id="e2839-151">Пример 2. Получить у себя bytes контента для изображения</span><span class="sxs-lookup"><span data-stu-id="e2839-151">Example 2: Get hosted content bytes for an image</span></span>
+### <a name="example-2-get-hosted-content-bytes-for-an-image"></a><span data-ttu-id="7b790-156">Пример 2. Получить у себя bytes контента для изображения</span><span class="sxs-lookup"><span data-stu-id="7b790-156">Example 2: Get hosted content bytes for an image</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e2839-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="e2839-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7b790-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="7b790-157">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="7b790-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="7b790-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_hostedcontentchatmessage_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages/1615971548136/hostedContents/aWQ9eF8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNix0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kOS1lNTRmNjM1NWYxYmJkNGQ3ZTNmNGJhZmU4NTI5MTBmNi92aWV3cy9pbWdv/$value
 ```
+# <a name="c"></a>[<span data-ttu-id="7b790-159">C#</span><span class="sxs-lookup"><span data-stu-id="7b790-159">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontentchatmessage-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="e2839-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="e2839-153">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="7b790-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7b790-160">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-hostedcontentchatmessage-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="e2839-154">Ответ содержит bytes для размещенного контента в теле.</span><span class="sxs-lookup"><span data-stu-id="e2839-154">Response contains bytes for the hosted content in the body.</span></span> <span data-ttu-id="e2839-155">`content-type` Заглавный заглавник указывает тип содержимого, на который установлено.</span><span class="sxs-lookup"><span data-stu-id="e2839-155">`content-type` header specifies the kind of hosted content.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="7b790-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7b790-161">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontentchatmessage-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7b790-162">Java</span><span class="sxs-lookup"><span data-stu-id="7b790-162">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontentchatmessage-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="7b790-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="7b790-163">Response</span></span>
+
+<span data-ttu-id="7b790-164">Ответ содержит bytes для размещенного контента в теле.</span><span class="sxs-lookup"><span data-stu-id="7b790-164">Response contains bytes for the hosted content in the body.</span></span> <span data-ttu-id="7b790-165">`content-type` Заглавный заглавник указывает тип содержимого, на который установлено.</span><span class="sxs-lookup"><span data-stu-id="7b790-165">`content-type` header specifies the kind of hosted content.</span></span>
 
 <!-- {
   "blockType": "response",
