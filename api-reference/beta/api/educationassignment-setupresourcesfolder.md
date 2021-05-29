@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 32a69da6e1c03119c13114900c7e12563e504950
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 99b876655f5b2e5006a738d9401434015b804373
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629705"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703456"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
@@ -25,8 +25,8 @@ ms.locfileid: "52629705"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,15 +38,16 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Authorization  | Bearer `{token}`. Обязательный параметр.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+Необходимо предоставить пустой json в качестве `{}` тела запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа 200 Ok и [объект educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) в тексте запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -56,9 +57,12 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
 ```
 ---
-
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
