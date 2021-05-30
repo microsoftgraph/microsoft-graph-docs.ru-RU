@@ -1,24 +1,24 @@
 ---
-title: Удаление appRoleAssignment из основного приложения-службы
-description: Удаление appRoleAssignment из основного приложения-службы.
+title: Удаление appRoleAssignment из основной службы
+description: Удаление appRoleAssignment из основной службы.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e9371de86e49efae1ca85852abb1e02e955d22e5
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b60bd4dbd64493a54e41bef86b7c311e37a30117
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135837"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52703631"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление appRoleAssignment, предоставленного для основного приложения-службы
+# <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление appRoleAssignment, предоставленного директору службы
 
 Пространство имен: microsoft.graph
 
-Удаляет [appRoleAssignment,](../resources/approleassignment.md) предоставленное для основного приложения-службы.
+Удаляет [приложение AppRoleAssignment,](../resources/approleassignment.md) предоставленное директору службы.
 
-Роли приложений, которые назначены основным службам, также [называются разрешениями приложений.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Удаление назначения роли приложения для основного приложения-службы эквивалентно отмене предоставления разрешений только для приложений.
+Роли приложений, которые назначены директорам служб, также называются [разрешениями приложений.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) Удаление назначения роли приложения для директора службы эквивалентно отмене разрешения только для приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,11 +35,11 @@ ms.locfileid: "50135837"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
 
 > [!NOTE]
-> Рекомендуется удалять назначения ролей приложения через связь с основными службами ресурсов, а не через отношение назначенного пользователя, группы или `appRoleAssignedTo`  `appRoleAssignments` основного пользователя-службы.
+> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью отношений директора службы ресурсов, а не отношений назначенного пользователя, группы или директора `appRoleAssignedTo`  `appRoleAssignments` службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -61,38 +61,16 @@ DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
 
 Вот пример запроса на удаление назначения роли приложения.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_approleassignment"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-delete-approleassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-approleassignment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
