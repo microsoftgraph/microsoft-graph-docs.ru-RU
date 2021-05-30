@@ -11,35 +11,35 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 05/28/2021
 ms.locfileid: "52703603"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a><span data-ttu-id="3aa80-103">Используйте API поиска Майкрософт для поиска пользовательских типов, импортируемых с Graph microsoft (предварительный просмотр)</span><span class="sxs-lookup"><span data-stu-id="3aa80-103">Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors (preview)</span></span> 
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a><span data-ttu-id="42640-103">Используйте API поиска Майкрософт для поиска пользовательских типов, импортируемых с Graph microsoft (предварительный просмотр)</span><span class="sxs-lookup"><span data-stu-id="42640-103">Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors (preview)</span></span> 
 
-<span data-ttu-id="3aa80-104">Используйте API поиска Майкрософт для поиска по контенту, который будет проиндексироваться соединиттелями [Microsoft Graph.](/microsoftsearch/connectors-overview)</span><span class="sxs-lookup"><span data-stu-id="3aa80-104">Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview).</span></span> <span data-ttu-id="3aa80-105">Содержимое импортируется либо [](/microsoftsearch/connectors-gallery) через встроенные соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, реализованные с помощью API Graph соединителов [Microsoft.](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="3aa80-105">The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span></span>
+<span data-ttu-id="42640-104">Используйте API поиска Майкрософт для поиска по контенту, который будет проиндексироваться соединиттелями [Microsoft Graph.](/microsoftsearch/connectors-overview)</span><span class="sxs-lookup"><span data-stu-id="42640-104">Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview).</span></span> <span data-ttu-id="42640-105">Содержимое импортируется либо [](/microsoftsearch/connectors-gallery) через встроенные соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, реализованные с помощью API Graph соединителов [Microsoft.](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="42640-105">The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span></span>
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-<span data-ttu-id="3aa80-106">После импорта и индексации контента можно использовать API поиска для запроса контента.</span><span class="sxs-lookup"><span data-stu-id="3aa80-106">Once the content has been imported and indexed, you can use the search API to query the content.</span></span>
+<span data-ttu-id="42640-106">После импорта и индексации контента можно использовать API поиска для запроса контента.</span><span class="sxs-lookup"><span data-stu-id="42640-106">Once the content has been imported and indexed, you can use the search API to query the content.</span></span>
 
-<span data-ttu-id="3aa80-107">Чтобы найти настраиваемые типы, укажите следующие свойства в теле запроса метода [запроса:](/graph/api/search-query?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="3aa80-107">To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:</span></span>
+<span data-ttu-id="42640-107">Чтобы найти настраиваемые типы, укажите следующие свойства в теле запроса метода [запроса:](/graph/api/search-query?view=graph-rest-beta&preserve-view=true)</span><span class="sxs-lookup"><span data-stu-id="42640-107">To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:</span></span>
 
-- <span data-ttu-id="3aa80-108">Свойство **contentSources,** чтобы включить ID подключения, задаваемое во время установки соединиттеля.</span><span class="sxs-lookup"><span data-stu-id="3aa80-108">The **contentSources** property to include the connection ID that is assigned during the connector setup.</span></span> <span data-ttu-id="3aa80-109">Вы можете передать несколько ID-подключений для поиска по нескольким подключениям.</span><span class="sxs-lookup"><span data-stu-id="3aa80-109">You can pass multiple connection IDs to search across multiple connections.</span></span> <span data-ttu-id="3aa80-110">Результаты возвращаются в одном списке, ранжировали по нескольким подключениям.</span><span class="sxs-lookup"><span data-stu-id="3aa80-110">Results are returned in a single list, ranked accross the multiple connections.</span></span>
+- <span data-ttu-id="42640-108">Свойство **contentSources,** чтобы включить ID подключения, задаваемое во время установки соединиттеля.</span><span class="sxs-lookup"><span data-stu-id="42640-108">The **contentSources** property to include the connection ID that is assigned during the connector setup.</span></span> <span data-ttu-id="42640-109">Вы можете передать несколько ID-подключений для поиска по нескольким подключениям.</span><span class="sxs-lookup"><span data-stu-id="42640-109">You can pass multiple connection IDs to search across multiple connections.</span></span> <span data-ttu-id="42640-110">Результаты возвращаются в одном списке, ранжировали по нескольким подключениям.</span><span class="sxs-lookup"><span data-stu-id="42640-110">Results are returned in a single list, ranked accross the multiple connections.</span></span>
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- <span data-ttu-id="3aa80-111">Свойство **entityTypes** как `externalItem` .</span><span class="sxs-lookup"><span data-stu-id="3aa80-111">The **entityTypes** property as `externalItem`.</span></span>
+- <span data-ttu-id="42640-111">Свойство **entityTypes** как `externalItem` .</span><span class="sxs-lookup"><span data-stu-id="42640-111">The **entityTypes** property as `externalItem`.</span></span>
 
-- <span data-ttu-id="3aa80-112">Свойство **полей,** чтобы включить поля во внешний элемент для получения.</span><span class="sxs-lookup"><span data-stu-id="3aa80-112">The **fields** property to include the fields in the external item to retrieve.</span></span> <span data-ttu-id="3aa80-113">Обратите внимание, что если  в запрос не включены какие-либо поля, ответ будет содержать все поля, отмеченные в схеме данных, указанной для указанных подключений в свойстве **contentSources.** </span><span class="sxs-lookup"><span data-stu-id="3aa80-113">Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.</span></span>
+- <span data-ttu-id="42640-112">Свойство **полей,** чтобы включить поля во внешний элемент для получения.</span><span class="sxs-lookup"><span data-stu-id="42640-112">The **fields** property to include the fields in the external item to retrieve.</span></span> <span data-ttu-id="42640-113">Обратите внимание, что если  в запрос не включены какие-либо поля, ответ будет содержать все поля, отмеченные в схеме данных, указанной для указанных подключений в свойстве **contentSources.** </span><span class="sxs-lookup"><span data-stu-id="42640-113">Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.</span></span>
 
-<span data-ttu-id="3aa80-114">Кроме того, можно агрегировать результаты поиска на основе свойств [в externalItem,](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) которые числимы или типа строки, и которые должны быть уточнены в [схеме](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="3aa80-114">In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span></span> <span data-ttu-id="3aa80-115">Дополнительные сведения см. в дополнительных сведениях об уточнении результатов поиска с помощью [агрегаций.](search-concept-aggregation.md)</span><span class="sxs-lookup"><span data-stu-id="3aa80-115">For more information, see [Refine search results using aggregations](search-concept-aggregation.md).</span></span>
+<span data-ttu-id="42640-114">Кроме того, можно агрегировать результаты поиска на основе свойств [в externalItem,](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) которые числимы или типа строки, и которые должны быть уточнены в [схеме](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="42640-114">In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true).</span></span> <span data-ttu-id="42640-115">Дополнительные сведения см. в дополнительных сведениях об уточнении результатов поиска с помощью [агрегаций.](search-concept-aggregation.md)</span><span class="sxs-lookup"><span data-stu-id="42640-115">For more information, see [Refine search results using aggregations](search-concept-aggregation.md).</span></span>
 
-## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a><span data-ttu-id="3aa80-116">Пример 1. Извлечение элементов с помощью встроенного соединиттеля Azure SQL Azure</span><span class="sxs-lookup"><span data-stu-id="3aa80-116">Example 1: Retrieve items using Azure SQL built-in connector</span></span>
+## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a><span data-ttu-id="42640-116">Пример 1. Извлечение элементов с помощью встроенного соединиттеля Azure SQL Azure</span><span class="sxs-lookup"><span data-stu-id="42640-116">Example 1: Retrieve items using Azure SQL built-in connector</span></span>
 
-<span data-ttu-id="3aa80-117">В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было похитовено с помощью встроенного соединиттеля Azure SQL Azure.</span><span class="sxs-lookup"><span data-stu-id="3aa80-117">In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.</span></span>
+<span data-ttu-id="42640-117">В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было похитовено с помощью встроенного соединиттеля Azure SQL Azure.</span><span class="sxs-lookup"><span data-stu-id="42640-117">In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.</span></span>
 
-### <a name="request"></a><span data-ttu-id="3aa80-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="3aa80-118">Request</span></span>
+### <a name="request"></a><span data-ttu-id="42640-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="42640-118">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -70,7 +70,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3aa80-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="3aa80-119">Response</span></span>
+### <a name="response"></a><span data-ttu-id="42640-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="42640-119">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -123,9 +123,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-retrieve-items-using-semantic-labels"></a><span data-ttu-id="3aa80-120">Пример 2. Извлечение элементов с помощью семантических меток</span><span class="sxs-lookup"><span data-stu-id="3aa80-120">Example 2: Retrieve items using semantic labels</span></span>
+## <a name="example-2-retrieve-items-using-semantic-labels"></a><span data-ttu-id="42640-120">Пример 2. Извлечение элементов с помощью семантических меток</span><span class="sxs-lookup"><span data-stu-id="42640-120">Example 2: Retrieve items using semantic labels</span></span>
 
-### <a name="request"></a><span data-ttu-id="3aa80-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="3aa80-121">Request</span></span>
+### <a name="request"></a><span data-ttu-id="42640-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="42640-121">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3aa80-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="3aa80-122">Response</span></span>
+### <a name="response"></a><span data-ttu-id="42640-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="42640-122">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -238,8 +238,8 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="3aa80-123">Дополнительные сведения см. в [материале Назначение меток свойств.](/microsoftsearch/configure-connector#step-5-assign-property-labels)</span><span class="sxs-lookup"><span data-stu-id="3aa80-123">For more details, see [Assign property labels](/microsoftsearch/configure-connector#step-5-assign-property-labels).</span></span>
+<span data-ttu-id="42640-123">Дополнительные сведения см. в [материале Назначение меток свойств.](/microsoftsearch/configure-connector#step-5-assign-property-labels)</span><span class="sxs-lookup"><span data-stu-id="42640-123">For more details, see [Assign property labels](/microsoftsearch/configure-connector#step-5-assign-property-labels).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="3aa80-124">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="3aa80-124">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="42640-124">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="42640-124">Next steps</span></span>
 
-- [<span data-ttu-id="3aa80-125">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="3aa80-125">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="42640-125">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="42640-125">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
