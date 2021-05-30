@@ -431,7 +431,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Получить чат для пользователя
                 href: api/chat-get.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -447,7 +447,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Group
+          - name: Группа
             href: resources/group.md
             items:
               - name: Список групп
@@ -738,12 +738,15 @@ items:
                     href: api/application-removekey.md
               - name: Расширения
                 items:
-                  - name: Список
-                    href: api/application-list-extensionproperty.md
-                  - name: Создание
-                    href: api/application-post-extensionproperty.md
-                  - name: Удалить
-                    href: api/application-delete-extensionproperty.md
+                  - name: Свойство расширения
+                    href: resources/extensionproperty.md
+                    items:
+                      - name: Список
+                        href: api/application-list-extensionproperty.md
+                      - name: Создание
+                        href: api/application-post-extensionproperty.md
+                      - name: Удалить
+                        href: api/application-delete-extensionproperty.md
               - name: Владельцы
                 items:
                   - name: List
@@ -1217,9 +1220,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -5568,7 +5571,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Отправка уведомления пользователю
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Вкладка
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: Вкладка в канале

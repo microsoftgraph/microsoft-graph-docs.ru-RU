@@ -788,12 +788,15 @@ items:
                     href: api/application-removekey.md
               - name: Расширения
                 items:
-                  - name: Список расширений
-                    href: api/application-list-extensionproperty.md
-                  - name: Создание расширения
-                    href: api/application-post-extensionproperty.md
-                  - name: Удаление расширения
-                    href: api/application-delete-extensionproperty.md
+                  - name: Свойство расширения
+                    href: resources/extensionproperty.md
+                    items:
+                      - name: Список
+                        href: api/application-list-extensionproperty.md
+                      - name: Создание
+                        href: api/application-post-extensionproperty.md
+                      - name: Удалить
+                        href: api/application-delete-extensionproperty.md
               - name: Владельцы
                 items:
                   - name: Список владельцев
@@ -10248,7 +10251,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
