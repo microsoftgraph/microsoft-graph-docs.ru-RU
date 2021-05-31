@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 92d02320b102cedf1cef95f6966d97d78ad341d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e5512205b346d1005b8ce51f3ab11afa4f95a9a2
+ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051006"
+ms.lasthandoff: 05/31/2021
+ms.locfileid: "52709509"
 ---
 # <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
 
@@ -18,22 +18,34 @@ ms.locfileid: "52051006"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
+Создание нового [единого объектаRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
+
+В настоящее время поддерживаются следующие поставщики RBAC:
+- управление устройствами (Intune)
+- каталог (Azure AD) 
+
+> [!NOTE]
+> Поставщик облачных ПК RBAC в настоящее время поддерживает только [список и](rbacapplication-list-roledefinitions.md) [получать](unifiedroledefinition-get.md) операции.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference). 
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-|:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | RoleManagement.ReadWrite.Directory |
+|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Управление устройствами | DeviceManagementRBAC.ReadWrite.All | Не поддерживается. | DeviceManagementRBAC.ReadWrite.All |
+| Каталог | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Не поддерживается.| RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
+Чтобы создать определение роли для поставщика управления устройствами:
 <!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/deviceManagement/roleDefinitions
+```
 
+Чтобы создать определение роли для поставщика каталогов:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/directory/roleDefinitions
 ```
@@ -64,7 +76,7 @@ POST /roleManagement/directory/roleDefinitions
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример создания настраиваемой роли.
+Ниже приводится пример создания настраиваемой роли поставщика каталогов.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
