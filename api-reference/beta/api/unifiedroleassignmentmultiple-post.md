@@ -6,11 +6,11 @@ author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
 ms.openlocfilehash: cabca41e1935f4a17073e512ea5835d56c982643
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054744"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710493"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Создание unifiedRoleAssignmentMultiple
 
@@ -28,7 +28,7 @@ ms.locfileid: "52054744"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | DeviceManagementRBAC.ReadWrite.All |
+| Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
