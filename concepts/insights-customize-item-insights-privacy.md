@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 65545864f1aee0a7ffb53c0d1ee3f608c5eb171f
-ms.sourcegitcommit: ecf7867ef7957b847b7530089ce30e107750adac
+ms.openlocfilehash: fd636b36a6566b2612b6f87ff4fee6b1b8fcd91d
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698006"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732142"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -63,9 +63,9 @@ ms.locfileid: "52698006"
 
 По умолчанию аналитика элементов включена для всей организации. С помощью модуля PowerShell Microsoft Graph можно изменить это и отключить аналитику элементов для всех пользователей в организации. 
 > [!NOTE]
-> Для метода обновления требуются дополнительные разрешения `User.ReadWrite`. Чтобы создать сеанс Microsoft Graph с определенной обязательной областью, используйте следующую команду и предоставьте запрошенные разрешения.
+> Для метода обновления требуются дополнительные разрешения `User.ReadWrite.All`. Чтобы создать сеанс Microsoft Graph с определенной обязательной областью, используйте следующую команду и предоставьте запрошенные разрешения.
 > ```powershell
->    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+>    Connect-MgGraph -Scopes "User.Read.All","User.ReadWrite.All"
 > ```
 
 Используйте следующую команду, заменив `$TenantId` на ваш идентификатор клиента Azure Active Directory и указав для `-IsEnabledInOrganization` значение `false`.

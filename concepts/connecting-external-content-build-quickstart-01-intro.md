@@ -11,9 +11,9 @@
 
 ![Схема, показывающая Windows, приобретаемое маркером и использующее его для доступа к API соединителов Microsoft Graph.](images/connectors-images/build1.png)
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные требования
 
-* Установите Visual Studio 2019 с [SDK .NET Core 3.1](https://www.microsoft.com/net/download/core) на компьютере разработки.
+* Установите [Visual Studio 2019](https://visualstudio.microsoft.com/) с [SDK .NET Core 3.1](https://www.microsoft.com/net/download/core) на компьютере разработки.
 * Убедитесь, что у вас есть [личная учетная запись Майкрософт](https://signup.live.com/)или учетная запись для работы или школы.
 * Установите [основные инструменты Entity Framework в](/ef/core/miscellaneous/cli/dotnet) качестве глобального средства с помощью следующей команды:
 
@@ -22,4 +22,7 @@
     ```
 
 * Установите средство для обновления базы данных SQLite. Например, браузер [DB для SQLite](https://sqlitebrowser.org/).
-* Скачайте **файлApplianceParts.csv** из [](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv) репо соединиттеля поиска и добавьте его в PartsInventoryConnector.csproj.
+* Скачайте **ApplianceParts.csv** из примера репо соединиттеля [поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/PartsInventoryConnector/ApplianceParts.csv).
+
+> [!TIP]
+> Лучший способ скачивания файлов из GitHub — перейти на верхний уровень проекта. С зеленой **кнопки загрузки кода** справа выберите **Скачать ZIP**. Файл ZIP будет содержать содержимое репозитория.

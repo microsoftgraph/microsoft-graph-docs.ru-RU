@@ -1,31 +1,31 @@
 ---
-title: 'educationSubmission: Return'
-description: Это действие делает оценку и обратную связь, связанную с этой отправкой, доступной студенту.
+title: 'educationSubmission: возврат'
+description: Это действие делает оценку и отзывы, связанные с этим представлением, доступными для учащегося.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2e8d4a9cf00a9d3018c102d4798e102fe66eeee5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0ad7ba0669137644dbff212f23586389df380986
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955491"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732156"
 ---
-# <a name="educationsubmission-return"></a>educationSubmission: Return
+# <a name="educationsubmission-return"></a>educationSubmission: возврат
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это действие делает оценку и обратную связь, связанную с этой отправкой, доступной студенту. Это приведет к изменению состояния отправки с "Отправлено" на "возвращен" и указывает на то, что обратная связь передается или выполняется ступенчатое. Это действие может выполнить только преподаватель.
+Это действие делает оценку и отзывы, связанные с этим представлением, доступными для учащегося. Это изменит состояние отправки с "отправленной" на "возвращенную" и указывает на то, что обратная связь предоставлена или сделана классификация. Это действие может сделать только учитель.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite   |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -33,7 +33,6 @@ ms.locfileid: "48955491"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |

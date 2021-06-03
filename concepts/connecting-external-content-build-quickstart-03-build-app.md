@@ -10,6 +10,9 @@
 
 ![Снимок экрана раздела "Настройка нового проекта"](images/connectors-images/build7.png)
 
+> [!IMPORTANT]
+> Перед переходом на следующий шаг скопируйте ApplianceParts.csv в корневую папку проекта.
+
 ## <a name="add-nuget-packages"></a>Добавление пакетов NuGet
 
 Чтобы добавить NuGet пакеты, сначала щелкните правой кнопкой **мыши Project решение** и выберите Открыть в **терминале**.
@@ -26,6 +29,16 @@ dotnet add package Microsoft.Extensions.Configuration.UserSecrets --version 3.1.
 dotnet add package Microsoft.Graph.Beta --version 0.17.0-preview
 dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
+
+> [!TIP]
+> Если команда `add package` не справилась с этой командой, проверьте источник **пакета** проекта:
+> 1. Выберите проект в обозревателе решений.
+> 2. Перейдите в > Nuget диспетчер пакетов > диспетчер пакетов Параметры.
+> 3. Проверьте источники пакетов и убедитесь, что nuget.&#65279;в качестве источника пакета.
+>     * Имя: nuget.&#65279;org
+>     *  Источник: https&#65279;://api.nuget.org/v3/index.json
+
+<!---Used "&#65279;" to prevent auto-generated links --->
 
 ## <a name="add-azure-ad-authentication"></a>Добавление проверки подлинности с помощью Azure AD
 
@@ -321,7 +334,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     // The Microsoft Graph SDK serializes enumerations in camelCase.
     // The Microsoft Graph service currently requires the PropertyType enum
@@ -393,7 +406,7 @@ namespace PartsInventoryConnector.Graph
 
 3. Создайте новый файл в **каталоге Microsoft Graph** MicrosoftGraphHelper.cs и поместите код ниже в этом файле.
 
-Следующий код содержит методы, которые используют **MicrosoftGraphServiceClient** для создания и отправки вызовов в службу Microsoft Graph и обработки ответа.
+    Следующий код содержит методы, которые используют **MicrosoftGraphServiceClient** для создания и отправки вызовов в службу Microsoft Graph и обработки ответа.
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -403,11 +416,11 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private MicrosoftGraphServiceClient _microsoftGraphClient;
+        private class MicrosoftGraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -434,7 +447,7 @@ using Microsoft.Graph;
 using PartsInventoryConnector.Authentication;
 using PartsInventoryConnector.Console;
 using PartsInventoryConnector.Data;
-using PartsInventoryConnector.Graph;
+using PartsInventoryConnector.MicrosoftGraph;
 using PartsInventoryConnector.Models;
 using System;
 using System.Collections.Generic;
@@ -580,7 +593,7 @@ namespace PartsInventoryConnector
 
 ## <a name="create-the-connection"></a>Создание подключения
 
-1. В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**
+1. В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**
 
 ```c
 #region Connections
@@ -630,7 +643,7 @@ private static async Task CreateConnectionAsync()
 
 ## <a name="register-schema"></a>Схема регистрации
 
-1. В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**
+1. В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**
 
 ```c
 #region Schema
