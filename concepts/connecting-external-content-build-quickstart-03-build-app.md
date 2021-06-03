@@ -1,22 +1,25 @@
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
-<span data-ttu-id="db294-101">На этом этапе будет создаваться консольное приложение .NET Core.</span><span class="sxs-lookup"><span data-stu-id="db294-101">In this step, you'll create a .NET Core console app.</span></span> <span data-ttu-id="db294-102">После этого создадим новое подключение, зарегистрируйте схему и синхронизируйте элементы.</span><span class="sxs-lookup"><span data-stu-id="db294-102">After that you will create a new connection, register the schema, and sync the items.</span></span>
+<span data-ttu-id="64bcc-101">На этом этапе будет создаваться консольное приложение .NET Core.</span><span class="sxs-lookup"><span data-stu-id="64bcc-101">In this step, you'll create a .NET Core console app.</span></span> <span data-ttu-id="64bcc-102">После этого создадим новое подключение, зарегистрируйте схему и синхронизируйте элементы.</span><span class="sxs-lookup"><span data-stu-id="64bcc-102">After that you will create a new connection, register the schema, and sync the items.</span></span>
 
-## <a name="create-a-net-core-console-app"></a><span data-ttu-id="db294-103">Создание консольного приложения .NET Core</span><span class="sxs-lookup"><span data-stu-id="db294-103">Create a .NET Core console app</span></span>
+## <a name="create-a-net-core-console-app"></a><span data-ttu-id="64bcc-103">Создание консольного приложения .NET Core</span><span class="sxs-lookup"><span data-stu-id="64bcc-103">Create a .NET Core console app</span></span>
 
-1. <span data-ttu-id="db294-104">Запуск Visual Studio 2019 г. и перейдите в **файл**  >  **New**  >  **Project.**</span><span class="sxs-lookup"><span data-stu-id="db294-104">Launch Visual Studio 2019 and go to **File** > **New** > **Project**.</span></span>
-2. <span data-ttu-id="db294-105">Выберите шаблон **Консоли App (.NET Core)** и выберите **Далее**.</span><span class="sxs-lookup"><span data-stu-id="db294-105">Select the **Console App (.NET Core)** template, and select **Next**.</span></span>
-3. <span data-ttu-id="db294-106">Введите **Project** имя : "PartsInventoryConnector" и выберите почтовый ящик для **"Место** решения и проекта в том же каталоге" и выберите **Создать,** как показано на следующем изображении.</span><span class="sxs-lookup"><span data-stu-id="db294-106">Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.</span></span>
+1. <span data-ttu-id="64bcc-104">Запуск Visual Studio 2019 г. и перейдите в **файл**  >  **New**  >  **Project.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-104">Launch Visual Studio 2019 and go to **File** > **New** > **Project**.</span></span>
+2. <span data-ttu-id="64bcc-105">Выберите шаблон **Консоли App (.NET Core)** и выберите **Далее**.</span><span class="sxs-lookup"><span data-stu-id="64bcc-105">Select the **Console App (.NET Core)** template, and select **Next**.</span></span>
+3. <span data-ttu-id="64bcc-106">Введите **Project** имя : "PartsInventoryConnector" и выберите почтовый ящик для **"Место** решения и проекта в том же каталоге" и выберите **Создать,** как показано на следующем изображении.</span><span class="sxs-lookup"><span data-stu-id="64bcc-106">Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.</span></span>
 
 ![Снимок экрана раздела "Настройка нового проекта"](images/connectors-images/build7.png)
 
-## <a name="add-nuget-packages"></a><span data-ttu-id="db294-108">Добавление пакетов NuGet</span><span class="sxs-lookup"><span data-stu-id="db294-108">Add NuGet packages</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="64bcc-108">Перед переходом на следующий шаг скопируйте ApplianceParts.csv в корневую папку проекта.</span><span class="sxs-lookup"><span data-stu-id="64bcc-108">Before moving to the next step, copy the ApplianceParts.csv file to the root folder of the project.</span></span>
 
-<span data-ttu-id="db294-109">Чтобы добавить NuGet пакеты, сначала щелкните правой кнопкой **мыши Project решение** и выберите Открыть в **терминале**.</span><span class="sxs-lookup"><span data-stu-id="db294-109">To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.</span></span>
+## <a name="add-nuget-packages"></a><span data-ttu-id="64bcc-109">Добавление пакетов NuGet</span><span class="sxs-lookup"><span data-stu-id="64bcc-109">Add NuGet packages</span></span>
+
+<span data-ttu-id="64bcc-110">Чтобы добавить NuGet пакеты, сначала щелкните правой кнопкой **мыши Project решение** и выберите Открыть в **терминале**.</span><span class="sxs-lookup"><span data-stu-id="64bcc-110">To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.</span></span>
 
 ![Снимок экрана, показывающий параметр Открыть терминал](images/connectors-images/build8.png)
 
-<span data-ttu-id="db294-111">Затем запустите следующие команды CLI в командной подсказке разработчика.</span><span class="sxs-lookup"><span data-stu-id="db294-111">Next, run the following CLI commands in the developer command prompt.</span></span>
+<span data-ttu-id="64bcc-112">Затем запустите следующие команды CLI в командной подсказке разработчика.</span><span class="sxs-lookup"><span data-stu-id="64bcc-112">Next, run the following CLI commands in the developer command prompt.</span></span>
 
 ```dotnetcli
 dotnet add package CsvHelper --version 12.1.2
@@ -27,12 +30,22 @@ dotnet add package Microsoft.Graph.Beta --version 0.17.0-preview
 dotnet add package Microsoft.Identity.Client --version 4.13.0
 ```
 
-## <a name="add-azure-ad-authentication"></a><span data-ttu-id="db294-112">Добавление проверки подлинности с помощью Azure AD</span><span class="sxs-lookup"><span data-stu-id="db294-112">Add Azure AD authentication</span></span>
+> [!TIP]
+> <span data-ttu-id="64bcc-113">Если команда `add package` не справилась с этой командой, проверьте источник **пакета** проекта:</span><span class="sxs-lookup"><span data-stu-id="64bcc-113">If the `add package` command fails, check the **Package Source** of your project:</span></span>
+> 1. <span data-ttu-id="64bcc-114">Выберите проект в обозревателе решений.</span><span class="sxs-lookup"><span data-stu-id="64bcc-114">Select the project in the Solution Explorer.</span></span>
+> 2. <span data-ttu-id="64bcc-115">Перейдите в > Nuget диспетчер пакетов > диспетчер пакетов Параметры.</span><span class="sxs-lookup"><span data-stu-id="64bcc-115">Go to Tools > Nuget Package Manager > Package Manager Settings.</span></span>
+> 3. <span data-ttu-id="64bcc-116">Проверьте источники пакетов и убедитесь, что nuget.&#65279;в качестве источника пакета.</span><span class="sxs-lookup"><span data-stu-id="64bcc-116">Check the Package Sources, and make sure nuget.&#65279;org is installed as package source.</span></span>
+>     * <span data-ttu-id="64bcc-117">Имя: nuget.&#65279;org</span><span class="sxs-lookup"><span data-stu-id="64bcc-117">Name: nuget.&#65279;org</span></span>
+>     *  <span data-ttu-id="64bcc-118">Источник: https&#65279;://api.nuget.org/v3/index.json</span><span class="sxs-lookup"><span data-stu-id="64bcc-118">Source: https&#65279;://api.nuget.org/v3/index.json</span></span>
 
-<span data-ttu-id="db294-113">Эта проверка подлинности необходима для получения необходимого маркера доступа OAuth для вызова API соединителов.</span><span class="sxs-lookup"><span data-stu-id="db294-113">This authentication is required to get the necessary OAuth access token to call the connectors API.</span></span>
+<!---Used "&#65279;" to prevent auto-generated links --->
 
-1. <span data-ttu-id="db294-114">Создайте новый каталог с именем **Authentication** в **каталоге PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="db294-114">Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.</span></span>
-2. <span data-ttu-id="db294-115">Создайте новый файл в каталоге **проверки** подлинности clientCredentialAuthProvider.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="db294-115">Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:</span></span>
+## <a name="add-azure-ad-authentication"></a><span data-ttu-id="64bcc-119">Добавление проверки подлинности с помощью Azure AD</span><span class="sxs-lookup"><span data-stu-id="64bcc-119">Add Azure AD authentication</span></span>
+
+<span data-ttu-id="64bcc-120">Эта проверка подлинности необходима для получения необходимого маркера доступа OAuth для вызова API соединителов.</span><span class="sxs-lookup"><span data-stu-id="64bcc-120">This authentication is required to get the necessary OAuth access token to call the connectors API.</span></span>
+
+1. <span data-ttu-id="64bcc-121">Создайте новый каталог с именем **Authentication** в **каталоге PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-121">Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.</span></span>
+2. <span data-ttu-id="64bcc-122">Создайте новый файл в каталоге **проверки** подлинности clientCredentialAuthProvider.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="64bcc-122">Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -102,10 +115,10 @@ namespace PartsInventoryConnector.Authentication
 }
 ```
 
-## <a name="add-user-experience"></a><span data-ttu-id="db294-116">Добавление пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="db294-116">Add user experience</span></span>
+## <a name="add-user-experience"></a><span data-ttu-id="64bcc-123">Добавление пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="64bcc-123">Add user experience</span></span>
 
-1. <span data-ttu-id="db294-117">Создайте новый каталог в **каталоге PartsInventoryConnector с** именем **Консоль.**</span><span class="sxs-lookup"><span data-stu-id="db294-117">Create a new directory in the **PartsInventoryConnector** directory named **Console**.</span></span>
-2. <span data-ttu-id="db294-118">Создайте новый файл в **каталоге Консоли** с именем MenuChoice.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="db294-118">Create a new file in the **Console** directory named MenuChoice.cs and place the following code in that file:</span></span>
+1. <span data-ttu-id="64bcc-124">Создайте новый каталог в **каталоге PartsInventoryConnector с** именем **Консоль.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-124">Create a new directory in the **PartsInventoryConnector** directory named **Console**.</span></span>
+2. <span data-ttu-id="64bcc-125">Создайте новый файл в **каталоге Консоли** с именем MenuChoice.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="64bcc-125">Create a new file in the **Console** directory named MenuChoice.cs and place the following code in that file:</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -124,10 +137,10 @@ namespace PartsInventoryConnector.Console
 }
 ```
 
-## <a name="set-up-data-model"></a><span data-ttu-id="db294-119">Настройка модели данных</span><span class="sxs-lookup"><span data-stu-id="db294-119">Set up data model</span></span>
+## <a name="set-up-data-model"></a><span data-ttu-id="64bcc-126">Настройка модели данных</span><span class="sxs-lookup"><span data-stu-id="64bcc-126">Set up data model</span></span>
 
-1. <span data-ttu-id="db294-120">Создание нового каталога в **каталоге PartsInventoryConnector с** именем **Models**.</span><span class="sxs-lookup"><span data-stu-id="db294-120">Create a new directory in the **PartsInventoryConnector** directory named **Models**.</span></span>
-2. <span data-ttu-id="db294-121">Создайте новый файл в **каталоге Models** с именем AppliancePart.cs и поместите в этот файл следующий код:</span><span class="sxs-lookup"><span data-stu-id="db294-121">Create a new file in the **Models** directory named AppliancePart.cs, and place the following code in that file:</span></span>
+1. <span data-ttu-id="64bcc-127">Создание нового каталога в **каталоге PartsInventoryConnector с** именем **Models**.</span><span class="sxs-lookup"><span data-stu-id="64bcc-127">Create a new directory in the **PartsInventoryConnector** directory named **Models**.</span></span>
+2. <span data-ttu-id="64bcc-128">Создайте новый файл в **каталоге Models** с именем AppliancePart.cs и поместите в этот файл следующий код:</span><span class="sxs-lookup"><span data-stu-id="64bcc-128">Create a new file in the **Models** directory named AppliancePart.cs, and place the following code in that file:</span></span>
 
 
 ```c
@@ -176,7 +189,7 @@ namespace PartsInventoryConnector.Models
 
 
 
-3. <span data-ttu-id="db294-122">Создайте новый файл в **каталоге Models** с именем ApplianceDbContext.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="db294-122">Create a new file in the **Models** directory named ApplianceDbContext.cs, and place the following code in that file:</span></span>
+3. <span data-ttu-id="64bcc-129">Создайте новый файл в **каталоге Models** с именем ApplianceDbContext.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="64bcc-129">Create a new file in the **Models** directory named ApplianceDbContext.cs, and place the following code in that file:</span></span>
 
 ```c
 using Microsoft.Data.Sqlite;
@@ -257,8 +270,8 @@ namespace PartsInventoryConnector.Models
 }
 ```
 
-4. <span data-ttu-id="db294-123">Создание нового каталога с именем **Data** в **каталоге PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="db294-123">Create a new directory named **Data** in the **PartsInventoryConnector** directory.</span></span>
-5. <span data-ttu-id="db294-124">Создайте новый файл в **каталоге данных** CsvDataLoader.cs и поместите в этот файл следующий код:</span><span class="sxs-lookup"><span data-stu-id="db294-124">Create a new file in the **Data** directory named CsvDataLoader.cs and place the following code in that file:</span></span>
+4. <span data-ttu-id="64bcc-130">Создание нового каталога с именем **Data** в **каталоге PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-130">Create a new directory named **Data** in the **PartsInventoryConnector** directory.</span></span>
+5. <span data-ttu-id="64bcc-131">Создайте новый файл в **каталоге данных** CsvDataLoader.cs и поместите в этот файл следующий код:</span><span class="sxs-lookup"><span data-stu-id="64bcc-131">Create a new file in the **Data** directory named CsvDataLoader.cs and place the following code in that file:</span></span>
 
 ```c
 using CsvHelper;
@@ -308,10 +321,10 @@ namespace PartsInventoryConnector.Data
 }
 ```
 
-## <a name="write-the-microsoft-graph-helper-service"></a><span data-ttu-id="db294-125">Напишите службу Graph Майкрософт</span><span class="sxs-lookup"><span data-stu-id="db294-125">Write the Microsoft Graph helper service</span></span>
+## <a name="write-the-microsoft-graph-helper-service"></a><span data-ttu-id="64bcc-132">Напишите службу Graph Майкрософт</span><span class="sxs-lookup"><span data-stu-id="64bcc-132">Write the Microsoft Graph helper service</span></span>
 
-1. <span data-ttu-id="db294-126">Создайте новый каталог с именем **MicrosoftGraph** в **каталоге PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="db294-126">Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.</span></span>
-2. <span data-ttu-id="db294-127">Создайте новый файл в **каталоге MicrosoftGraph** с именем CustomSerializer.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="db294-127">Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:</span></span>
+1. <span data-ttu-id="64bcc-133">Создайте новый каталог с именем **MicrosoftGraph** в **каталоге PartsInventoryConnector.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-133">Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.</span></span>
+2. <span data-ttu-id="64bcc-134">Создайте новый файл в **каталоге MicrosoftGraph** с именем CustomSerializer.cs и поместите следующий код в этот файл:</span><span class="sxs-lookup"><span data-stu-id="64bcc-134">Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:</span></span>
 
 ```c
 using Microsoft.Graph;
@@ -321,7 +334,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     // The Microsoft Graph SDK serializes enumerations in camelCase.
     // The Microsoft Graph service currently requires the PropertyType enum
@@ -391,9 +404,9 @@ namespace PartsInventoryConnector.Graph
 }
 ```
 
-3. <span data-ttu-id="db294-128">Создайте новый файл в **каталоге Microsoft Graph** MicrosoftGraphHelper.cs и поместите код ниже в этом файле.</span><span class="sxs-lookup"><span data-stu-id="db294-128">Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.</span></span>
+3. <span data-ttu-id="64bcc-135">Создайте новый файл в **каталоге Microsoft Graph** MicrosoftGraphHelper.cs и поместите код ниже в этом файле.</span><span class="sxs-lookup"><span data-stu-id="64bcc-135">Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.</span></span>
 
-<span data-ttu-id="db294-129">Следующий код содержит методы, которые используют **MicrosoftGraphServiceClient** для создания и отправки вызовов в службу Microsoft Graph и обработки ответа.</span><span class="sxs-lookup"><span data-stu-id="db294-129">The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.</span></span>
+    <span data-ttu-id="64bcc-136">Следующий код содержит методы, которые используют **MicrosoftGraphServiceClient** для создания и отправки вызовов в службу Microsoft Graph и обработки ответа.</span><span class="sxs-lookup"><span data-stu-id="64bcc-136">The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.</span></span>
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -403,11 +416,11 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private MicrosoftGraphServiceClient _microsoftGraphClient;
+        private class MicrosoftGraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -423,9 +436,9 @@ namespace PartsInventoryConnector.Graph
 }
 ```
 
-## <a name="initialize-the-microsoft-graph-helper-service"></a><span data-ttu-id="db294-130">Инициализация службы Graph майкрософт</span><span class="sxs-lookup"><span data-stu-id="db294-130">Initialize the Microsoft Graph helper service</span></span>
+## <a name="initialize-the-microsoft-graph-helper-service"></a><span data-ttu-id="64bcc-137">Инициализация службы Graph майкрософт</span><span class="sxs-lookup"><span data-stu-id="64bcc-137">Initialize the Microsoft Graph helper service</span></span>
 
-<span data-ttu-id="db294-131">Откройте Program.cs и замените весь контент следующим кодом:</span><span class="sxs-lookup"><span data-stu-id="db294-131">Open Program.cs and replace the entire content with the following code:</span></span>
+<span data-ttu-id="64bcc-138">Откройте Program.cs и замените весь контент следующим кодом:</span><span class="sxs-lookup"><span data-stu-id="64bcc-138">Open Program.cs and replace the entire content with the following code:</span></span>
 
 ```c
 using Microsoft.EntityFrameworkCore;
@@ -434,7 +447,7 @@ using Microsoft.Graph;
 using PartsInventoryConnector.Authentication;
 using PartsInventoryConnector.Console;
 using PartsInventoryConnector.Data;
-using PartsInventoryConnector.Graph;
+using PartsInventoryConnector.MicrosoftGraph;
 using PartsInventoryConnector.Models;
 using System;
 using System.Collections.Generic;
@@ -578,9 +591,9 @@ namespace PartsInventoryConnector
 }
 ```
 
-## <a name="create-the-connection"></a><span data-ttu-id="db294-132">Создание подключения</span><span class="sxs-lookup"><span data-stu-id="db294-132">Create the connection</span></span>
+## <a name="create-the-connection"></a><span data-ttu-id="64bcc-139">Создание подключения</span><span class="sxs-lookup"><span data-stu-id="64bcc-139">Create the connection</span></span>
 
-1. <span data-ttu-id="db294-133">В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**</span><span class="sxs-lookup"><span data-stu-id="db294-133">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
+1. <span data-ttu-id="64bcc-140">В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-140">Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
 
 ```c
 #region Connections
@@ -603,7 +616,7 @@ namespace PartsInventoryConnector
 #endregion
 ```
 
-2. <span data-ttu-id="db294-134">Откройте файл Program.cs и добавьте следующий код после **основного** метода:</span><span class="sxs-lookup"><span data-stu-id="db294-134">Open the Program.cs file and add the following code after the **Main** method:</span></span>
+2. <span data-ttu-id="64bcc-141">Откройте файл Program.cs и добавьте следующий код после **основного** метода:</span><span class="sxs-lookup"><span data-stu-id="64bcc-141">Open the Program.cs file and add the following code after the **Main** method:</span></span>
 
 
 ```c
@@ -628,9 +641,9 @@ private static async Task CreateConnectionAsync()
       }
 ```
 
-## <a name="register-schema"></a><span data-ttu-id="db294-135">Схема регистрации</span><span class="sxs-lookup"><span data-stu-id="db294-135">Register schema</span></span>
+## <a name="register-schema"></a><span data-ttu-id="64bcc-142">Схема регистрации</span><span class="sxs-lookup"><span data-stu-id="64bcc-142">Register schema</span></span>
 
-1. <span data-ttu-id="db294-136">В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**</span><span class="sxs-lookup"><span data-stu-id="db294-136">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
+1. <span data-ttu-id="64bcc-143">В **MicrosoftGraph** откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **конструктора.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-143">Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.</span></span>
 
 ```c
 #region Schema
@@ -705,7 +718,7 @@ private static async Task CreateConnectionAsync()
 #endregion
 ```
 
-2. <span data-ttu-id="db294-137">Откройте файл Program.cs и добавьте следующий код после **метода Main.**</span><span class="sxs-lookup"><span data-stu-id="db294-137">Open the Program.cs file and add the following code after the **Main** method.</span></span>
+2. <span data-ttu-id="64bcc-144">Откройте файл Program.cs и добавьте следующий код после **метода Main.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-144">Open the Program.cs file and add the following code after the **Main** method.</span></span>
 
 ```c
 private static async Task RegisterSchemaAsync()
@@ -750,9 +763,9 @@ private static async Task RegisterSchemaAsync()
         }
 ```
 
-## <a name="sync-items"></a><span data-ttu-id="db294-138">Элементы синхронизации</span><span class="sxs-lookup"><span data-stu-id="db294-138">Sync items</span></span>
+## <a name="sync-items"></a><span data-ttu-id="64bcc-145">Элементы синхронизации</span><span class="sxs-lookup"><span data-stu-id="64bcc-145">Sync items</span></span>
 
-1. <span data-ttu-id="db294-139">В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **Конструктора.**</span><span class="sxs-lookup"><span data-stu-id="db294-139">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.</span></span>
+1. <span data-ttu-id="64bcc-146">В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **Конструктора.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-146">Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method.</span></span>
 
 ```c
 #region PushData   
@@ -784,7 +797,7 @@ private static async Task RegisterSchemaAsync()
         #endregion
 ```
 
-2. <span data-ttu-id="db294-140">Откройте файл Program.cs и добавьте следующий код после **метода Main.**</span><span class="sxs-lookup"><span data-stu-id="db294-140">Open the Program.cs file and add the following code after the **Main** method.</span></span>
+2. <span data-ttu-id="64bcc-147">Откройте файл Program.cs и добавьте следующий код после **метода Main.**</span><span class="sxs-lookup"><span data-stu-id="64bcc-147">Open the Program.cs file and add the following code after the **Main** method.</span></span>
 
 ```c
 private static async Task UpdateItemsFromDatabase()
