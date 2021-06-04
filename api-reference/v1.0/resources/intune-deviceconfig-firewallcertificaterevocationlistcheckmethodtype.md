@@ -1,37 +1,32 @@
 ---
-title: тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
-description: Возможные значения для Фиреваллцертификатеревокатионлистчеккмесод
+title: тип списка firewallCertificateRevocationListCheckMethodType
+description: Возможные значения брандмауэраCertificateRevocationListCheckMethod
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 969a94ed8a782989aaf9d34c00fe1f4cc82775ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 779cfe8b8576d475df62ed112709aa0c2e9b6c63
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056711"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754729"
 ---
-# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a><span data-ttu-id="54003-103">тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе</span><span class="sxs-lookup"><span data-stu-id="54003-103">firewallCertificateRevocationListCheckMethodType enum type</span></span>
+# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a><span data-ttu-id="92865-103">тип списка firewallCertificateRevocationListCheckMethodType</span><span class="sxs-lookup"><span data-stu-id="92865-103">firewallCertificateRevocationListCheckMethodType enum type</span></span>
 
-<span data-ttu-id="54003-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="54003-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="92865-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92865-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="54003-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="54003-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="92865-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="92865-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="54003-106">Возможные значения для Фиреваллцертификатеревокатионлистчеккмесод</span><span class="sxs-lookup"><span data-stu-id="54003-106">Possible values for firewallCertificateRevocationListCheckMethod</span></span>
+<span data-ttu-id="92865-106">Возможные значения брандмауэраCertificateRevocationListCheckMethod</span><span class="sxs-lookup"><span data-stu-id="92865-106">Possible values for firewallCertificateRevocationListCheckMethod</span></span>
 
-## <a name="members"></a><span data-ttu-id="54003-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="54003-107">Members</span></span>
-|<span data-ttu-id="54003-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="54003-108">Member</span></span>|<span data-ttu-id="54003-109">Значение</span><span class="sxs-lookup"><span data-stu-id="54003-109">Value</span></span>|<span data-ttu-id="54003-110">Описание</span><span class="sxs-lookup"><span data-stu-id="54003-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="92865-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="92865-107">Members</span></span>
+|<span data-ttu-id="92865-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="92865-108">Member</span></span>|<span data-ttu-id="92865-109">Значение</span><span class="sxs-lookup"><span data-stu-id="92865-109">Value</span></span>|<span data-ttu-id="92865-110">Описание</span><span class="sxs-lookup"><span data-stu-id="92865-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="54003-111">девицедефаулт</span><span class="sxs-lookup"><span data-stu-id="54003-111">deviceDefault</span></span>|<span data-ttu-id="54003-112">нуль</span><span class="sxs-lookup"><span data-stu-id="54003-112">0</span></span>|<span data-ttu-id="54003-113">Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем</span><span class="sxs-lookup"><span data-stu-id="54003-113">No value configured by Intune, do not override the user-configured device default value</span></span>|
-|<span data-ttu-id="54003-114">Нет</span><span class="sxs-lookup"><span data-stu-id="54003-114">none</span></span>|<span data-ttu-id="54003-115">1 </span><span class="sxs-lookup"><span data-stu-id="54003-115">1</span></span>|<span data-ttu-id="54003-116">Не проверять список отзыва сертификатов</span><span class="sxs-lookup"><span data-stu-id="54003-116">Do not check certificate revocation list</span></span>|
-|<span data-ttu-id="54003-117">произошл</span><span class="sxs-lookup"><span data-stu-id="54003-117">attempt</span></span>|<span data-ttu-id="54003-118">2 </span><span class="sxs-lookup"><span data-stu-id="54003-118">2</span></span>|<span data-ttu-id="54003-119">Проверка списка отзыва сертификатов и предоставление сертификата только в том случае, если сертификат подтвержден подтверждением</span><span class="sxs-lookup"><span data-stu-id="54003-119">Attempt CRL check and allow a certificate only if the certificate is confirmed by the check</span></span>|
-|<span data-ttu-id="54003-120">необходимость</span><span class="sxs-lookup"><span data-stu-id="54003-120">require</span></span>|<span data-ttu-id="54003-121">4</span><span class="sxs-lookup"><span data-stu-id="54003-121">3</span></span>|<span data-ttu-id="54003-122">Требовать успешную проверку списка отзыва сертификатов перед предоставлением сертификата</span><span class="sxs-lookup"><span data-stu-id="54003-122">Require a successful CRL check before allowing a certificate</span></span>|
-
-
-
-
-
+|<span data-ttu-id="92865-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="92865-111">deviceDefault</span></span>|<span data-ttu-id="92865-112">0</span><span class="sxs-lookup"><span data-stu-id="92865-112">0</span></span>|<span data-ttu-id="92865-113">Нет значения, настроенного Intune, не переопределять настроенное пользователем значение по умолчанию устройства</span><span class="sxs-lookup"><span data-stu-id="92865-113">No value configured by Intune, do not override the user-configured device default value</span></span>|
+|<span data-ttu-id="92865-114">нет</span><span class="sxs-lookup"><span data-stu-id="92865-114">none</span></span>|<span data-ttu-id="92865-115">1</span><span class="sxs-lookup"><span data-stu-id="92865-115">1</span></span>|<span data-ttu-id="92865-116">Не проверяйте список отзывов сертификатов</span><span class="sxs-lookup"><span data-stu-id="92865-116">Do not check certificate revocation list</span></span>|
+|<span data-ttu-id="92865-117">попытка</span><span class="sxs-lookup"><span data-stu-id="92865-117">attempt</span></span>|<span data-ttu-id="92865-118">2</span><span class="sxs-lookup"><span data-stu-id="92865-118">2</span></span>|<span data-ttu-id="92865-119">Попытка проверки CRL и разрешить сертификат только в том случае, если сертификат подтвержден проверкой</span><span class="sxs-lookup"><span data-stu-id="92865-119">Attempt CRL check and allow a certificate only if the certificate is confirmed by the check</span></span>|
+|<span data-ttu-id="92865-120">требовать</span><span class="sxs-lookup"><span data-stu-id="92865-120">require</span></span>|<span data-ttu-id="92865-121">3</span><span class="sxs-lookup"><span data-stu-id="92865-121">3</span></span>|<span data-ttu-id="92865-122">Требуется успешная проверка CRL перед разрешением сертификата</span><span class="sxs-lookup"><span data-stu-id="92865-122">Require a successful CRL check before allowing a certificate</span></span>|
 
 
 
