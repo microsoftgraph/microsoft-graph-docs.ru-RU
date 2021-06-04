@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса rolePermission
-description: Пока не задокументировано.
+description: Содержит набор ResourceActions, определяющий разрешенные и не разрешенные разрешения для каждой роли.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1def1929449f5c737bc37b30aa41a1131e1b2944
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7598e7f7a54910d706ec95741234a38a9a9ba422
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037782"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752751"
 ---
 # <a name="rolepermission-resource-type"></a>Тип ресурса rolePermission
 
@@ -18,14 +18,14 @@ ms.locfileid: "48037782"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Содержит набор ResourceActions, определяющий разрешенные и не разрешенные разрешения для каждой роли.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия|
+|resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия ресурса, каждый из которых содержит набор разрешенных и не разрешенных разрешений.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,11 +51,6 @@ ms.locfileid: "48037782"
   ]
 }
 ```
-
-
-
-
-
 
 
 

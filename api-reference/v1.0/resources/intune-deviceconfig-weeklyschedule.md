@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Виклисчедуле
+title: тип еженедельного enumSchedule
 description: Возможные значения для еженедельного расписания.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 012d6f0c00adb2b527fe477ab1226b39db93fa88
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e6bfed00f016caf944c4ce1cfd816464dc31206
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048472"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754680"
 ---
-# <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
+# <a name="weeklyschedule-enum-type"></a>тип еженедельного enumSchedule
 
 Пространство имен: microsoft.graph
 
@@ -23,20 +23,15 @@ ms.locfileid: "48048472"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|решения|1 |Решения.|
-|воскресеньям|2 |Воскресеньям.|
-|Вторник|4|Вторник.|
-|во|4 |Во.|
-|Четверг|5 |Четверг.|
-|Пятница|6 |Пятница.|
-|пятницам|7 |Пятницам.|
-|субботу|8 |Субботу.|
-
-
-
-
-
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|каждый день|1|Каждый день.|
+|воскресенье|2|Воскресенье.|
+|понедельник|3|В понедельник.|
+|вторник|4 |Во вторник.|
+|среда|5 |Среда.|
+|четверг|6 |В четверг.|
+|пятница|7 |В пятницу.|
+|суббота|8 |В субботу.|
 
 
 

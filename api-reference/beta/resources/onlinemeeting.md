@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: debc69d62f73d8fc2af1bd30bd06934de9f6ffe2
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 7204f651865328b7cfb9a03a70f6e9d80b912788
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080668"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754485"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -27,7 +27,7 @@ ms.locfileid: "52080668"
 | [Создание](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | Создание собрания в Интернете.                                                                                         |
 | [получение](../api/onlinemeeting-get.md);                                 | [onlineMeeting](onlinemeeting.md) | Ознакомьтесь с свойствами и отношениями **объекта onlineMeeting.**                                             |
 | [Обновление](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Обновление свойств объекта **onlineMeeting.** |
-| [удаление](../api/onlinemeeting-delete.md);                           | Нет                              | Удаление **объекта onlineMeeting.**                                                                             |
+| [Delete](../api/onlinemeeting-delete.md)                           | Нет.                              | Удаление **объекта onlineMeeting.**                                                                             |
 | [Создание или доступ к onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте онлайн-собрание с пользовательским внешним ИД. Если собрание уже существует, извлекай его свойства.      |
 
 ## <a name="properties"></a>Свойства
@@ -35,6 +35,8 @@ ms.locfileid: "52080668"
 | Свойство              | Тип                                          | Описание                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Указывает, кто может быть презентовщиком на собрании. Возможные значения `everyone` : , , , и `organization` `roleIsPresenter` `organizer` `unknownFutureValue` .                                                                                                    |
+| allowAttendeeToEnableCamera | Boolean | Указывает, могут ли участники включить камеру. |
+| allowAttendeeToEnableMic | Boolean | Указывает, могут ли участники включить микрофон. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Указывает режим чата собраний. |
 | allowTeamworkReactions | Boolean | Указывает, Teams для собрания включены Teams реакции. |
 | alternativeRecording  | Stream                                        | Поток контента альтернативной записи живого события. Только для чтения.                                                                                                                                                                                 |
@@ -46,14 +48,14 @@ ms.locfileid: "52080668"
 | creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                                                                                                                                                                |
 | возможности (неподготовленные)         | коллекция meetingCapabilities                             | Список возможностей собраний. Возможные значения: `questionAndAnswer` , `unknownFutureValue` .                                                                                                                                                                                 |
 | endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                                                                                                                                                                |
-| externalId            | String                                        | Внешний ID. Пользовательский ID. Необязательно.                                                                                                                                                                                                                     |
+| externalId            | String                                        | Внешний ID. Пользовательский ID. Необязательное свойство.                                                                                                                                                                                                                     |
 | id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                                                                                                                                                               |
-| isBroadcast           | Boolean                                       | Указывает, является ли это событием в прямом эфире.                                                                                                                                                                                                                   |
-| isEntryExitAnnounced  | Boolean                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                                                                                                                                      |
+| isBroadcast           | Boolean                                       | Указывает, является ли это событие в прямом эфире.                                                                                                                                                                                                                   |
+| isEntryExitAnnounced  | Boolean                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                                                                                                                                                      |
 | joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                                                                                                                                                              |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанном в заглавной странице HTTP-запроса "Accept-Language". Только для чтения                                                                                                                                       |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                                                                                                                                                                  |
-|meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | Отчет о посещаемости запланированного собрания. Только для чтения. |
+| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | Отчет о посещаемости запланированного собрания. Только для чтения. |
 | participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием. Это включает организатора и участников.                                                                                                                                                        |
 | запись             | Stream                                        | Поток контента записи живого события. Только для чтения.                                                                                                                                                                                             |
 | startDateTime         | DateTime                                      | Время начала собрания в UTC.                                                                                                                                                                                                                              |
@@ -77,7 +79,7 @@ ms.locfileid: "52080668"
 | unknownFutureValue | Неизвестное будущее значение.                                         |
 
 > [!TIP]
-> Если установлено значение **allowedPresenters,** укажите роль собрания каждого участника собрания, используя свойство role `roleIsPresenter` в [meetingParticipantInfo.](../resources/meetingparticipantinfo.md) 
+> Если установлено значение **allowedPresenters,** укажите роль собрания каждого участника собрания с помощью свойства `roleIsPresenter` [role meetingParticipantInfo.](../resources/meetingparticipantinfo.md) 
 
 ### <a name="meetingchatmode-values"></a>значения meetingChatMode
 
@@ -115,7 +117,9 @@ ms.locfileid: "52080668"
   "isBroadcast": "Boolean",
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean"
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 

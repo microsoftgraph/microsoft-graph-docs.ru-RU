@@ -1,41 +1,36 @@
 ---
-title: тип перечисления Ратингиреландмовиестипе
-description: Метки оценок фильмов в Ирландии
+title: тип enum ratingIrelandMoviesType
+description: Метки рейтинга фильмов в Ирландии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 741ec01e7da753b7ad516a6473d08fcf57506b15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d861dab09b65b6e8b1023a2a777c128c33a4292
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041325"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742799"
 ---
-# <a name="ratingirelandmoviestype-enum-type"></a>тип перечисления Ратингиреландмовиестипе
+# <a name="ratingirelandmoviestype-enum-type"></a>тип enum ratingIrelandMoviesType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки оценок фильмов в Ирландии
+Метки рейтинга фильмов в Ирландии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
-|аллблоккед|1 |Не разрешать никакие видеоролики|
-|обобщен|2 |Подходит для детей учебного заведения|
-|паренталгуиданце|4|Категория PG рекомендует родительские рекомендации|
-|agesAbove12|4 |Классификация 12A подходит для зрителей от 12 или более ранних версий|
-|agesAbove15|5 |Классификация 15A подходит для зрителей от 15 или более ранних версий|
-|agesAbove16|6 |16-Классификация подходит для зрителей от 16 или более ранних версий|
-|взрослые|7 |18 классификация, подходящая только для взрослых|
-
-
-
-
-
+|allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
+|allBlocked|1|Не разрешайте контент фильмов|
+|общие|2|Подходит для детей школьного возраста|
+|parentalGuidance|3|Классификация PG рекомендует родительские рекомендации|
+|agesAbove12|4 |Классификация 12A подходит для зрителей старше 12 лет|
+|agesAbove15|5 |Классификация 15A подходит для зрителей старше 15 лет|
+|agesAbove16|6 |Классификация 16 подходит для зрителей старше 16 лет|
+|взрослые|7 |Классификация 18, подходящая только для взрослых|
 
 
 

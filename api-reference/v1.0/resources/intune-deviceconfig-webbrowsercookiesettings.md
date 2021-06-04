@@ -1,38 +1,33 @@
 ---
-title: тип перечисления Веббровсеркукиесеттингс
-description: Параметры файлов cookie веб-браузера.
+title: тип enum webBrowserCookieSettings
+description: Cookie веб-браузера Параметры.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f34c83f9d7b97fa47302c74aa56a56f1322c3238
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c1c53faf7d88ec27ffd9acdbf48a8fd18ea2a8d3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048486"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754687"
 ---
-# <a name="webbrowsercookiesettings-enum-type"></a>тип перечисления Веббровсеркукиесеттингс
+# <a name="webbrowsercookiesettings-enum-type"></a>тип enum webBrowserCookieSettings
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры файлов cookie веб-браузера.
+Cookie веб-браузера Параметры.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|бровсердефаулт|нуль|Значение по умолчанию браузера без намерения.|
-|блоккалвайс|1 |Всегда блокируйте файлы cookie.|
-|алловкуррентвебсите|2 |Разрешить файлы cookie с текущего веб-сайта.|
-|алловфромвебситесвиситед|4|Разрешить файлы cookie со посещенных веб-сайтов.|
-|алловалвайс|4 |Всегда разрешать файлы cookie.|
-
-
-
-
-
+|browserDefault|0|Значение браузера по умолчанию, без намерения.|
+|blockAlways|1|Всегда блокируют файлы cookie.|
+|allowCurrentWebSite|2|Разрешить файлы cookie с текущего веб-сайта.|
+|allowFromWebsitesVisited|3|Разрешить файлы Cookie с посещаемых веб-сайтов.|
+|allowAlways|4 |Всегда разрешите файлы cookie.|
 
 
 

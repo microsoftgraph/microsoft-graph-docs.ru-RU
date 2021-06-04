@@ -1,37 +1,32 @@
 ---
-title: тип перечисления Виндовсстартменуапплиствисибилититипе
-description: Тип отображения списка приложений меню "Пуск".
+title: тип списка windowsStartMenuAppListVisibilityType
+description: Тип видимости списка приложений меню пуск.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5054f81f6b52fe0f5c9789f7deb26f7dbcdaa46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f27fdb1aa6b9c16715599625b7efc142d8666899
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091454"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752793"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип списка windowsStartMenuAppListVisibilityType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип отображения списка приложений меню "Пуск".
+Тип видимости списка приложений меню пуск.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
-|свертываются|1 |Свертывание списка приложений в меню "Пуск".|
-|удалить|2 |Полностью удаляет список приложений из меню "Пуск".|
-|дисаблесеттингсапп|4 |Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
-
-
-
-
-
+|userDefined|0|Определенный пользователь. Значение по умолчанию.|
+|обрушение|1|Свернуть список приложений в пусковом меню.|
+|удаление|2|Удаляет список приложений полностью из меню пуск.|
+|disableSettingsApp|4 |Отключает соответствующий toggle (Collapse или Remove) в приложении Параметры.|
 
 
 

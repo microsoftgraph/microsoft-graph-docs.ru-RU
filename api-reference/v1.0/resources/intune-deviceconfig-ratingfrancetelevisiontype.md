@@ -1,39 +1,34 @@
 ---
-title: тип перечисления Ратингфранцетелевисионтипе
-description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого во Франции
+title: тип enum ratingFranceTelevisionType
+description: Метки оценки телеконтента во Франции
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f324f0bc5af5352c10054e77d035f8cac57c4aef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 899559ae3f8eed6af898782d0f6632c7ba596723
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041388"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742771"
 ---
-# <a name="ratingfrancetelevisiontype-enum-type"></a>тип перечисления Ратингфранцетелевисионтипе
+# <a name="ratingfrancetelevisiontype-enum-type"></a>тип enum ratingFranceTelevisionType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга ТЕЛЕВИЗИОНного содержимого во Франции
+Метки оценки телеконтента во Франции
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|agesAbove10|2 |Не рекомендуется использовать классификацию-10 для детей в 10|
-|agesAbove12|4|Не рекомендуется использовать классификацию-12 для детей в масштабе от 12|
-|agesAbove16|4 |Не рекомендуется использовать классификацию-16 для детей в 16|
-|agesAbove18|5 |Не рекомендуется использовать классификацию-18 для людей в 18|
-
-
-
-
-
+|allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
+|agesAbove10|2|Классификация -10 не рекомендуется для детей в возрасте до 10 лет|
+|agesAbove12|3|Классификация -12 не рекомендуется для детей до 12 лет|
+|agesAbove16|4 |Классификация -16 не рекомендуется для детей до 16 лет|
+|agesAbove18|5 |Классификация -18 не рекомендуется для лиц в возрасте до 18 лет|
 
 
 
