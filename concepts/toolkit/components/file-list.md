@@ -3,12 +3,12 @@ title: Компонент списка файлов в microsoft Graph набо�
 description: Компонент списка файлов используется для отображения списка файлов, показывая их значок и имя
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: bde548e843170de6cd1234f14096339859d4b99b
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: cfd4543cad98864a423699e4ed6cde7dc82ee6fb
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629170"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781095"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Компонент списка файлов в microsoft Graph набор средств
 
@@ -114,12 +114,12 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Страница "Разрешения API и приложений Microsoft Graph"
 
-| Конфигурация | Разрешения | API |
+| Конфигурация | Permissions | API |
 | ------------- | ----------------- | --- |
-| По умолчанию (не предоставлены идентификаторы или запросы) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children`   |
+| По умолчанию (не предоставлены идентификаторы или запросы) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children` |
 | Предоставление `{drive-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
 | Предоставление `{group-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
-| Предоставление ТОЛЬКО `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` | 
+| Предоставление ТОЛЬКО `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` |
 | Предоставление `{site-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
 | Pprovide `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
 | Предоставление `{drive-id}` И `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
@@ -128,7 +128,7 @@ mgt-file-list {
 | Предоставление `{user-id}` И `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
 | Предоставление только `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
 | `insight-type` настроена на трендовую | Sites.Read.All | `GET /me/insights/trending` |
-| Обеспечить `{user-id or upn}` и `insight-type` установить для `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` | 
+| Обеспечить `{user-id or upn}` и `insight-type` установить для `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` установлено, что `used` | Sites.Read.All | `GET /me/insights/used` |
 | Обеспечить `{user-id or upn}` и `insight-type` установить для `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
 | `insight-type` настроено на общий доступ | Sites.Read.All | `GET /me/insights/shared` |

@@ -1,22 +1,22 @@
 ---
 title: 'servicePrincipal: removePassword'
-description: Удаление пароля из servicePrincipal
+description: Удаление пароля из службыPrincipal
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 30f66a540a7a140e6381ff4f4f556b3509a04a3b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 79b55bb4573fbe0c185461f32e4c9a99538b6754
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130538"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788026"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
 Пространство имен: microsoft.graph
 
-Удаление пароля из объекта [servicePrincipal.](../resources/serviceprincipal.md)
+Удаление пароля из [объекта servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -99,9 +99,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http

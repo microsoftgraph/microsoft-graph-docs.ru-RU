@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 6104775b7e5f73785f013c55f3bbc07352ec02b0
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 9f737e169557413e6e112592a882cef051942fbb
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645334"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781168"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -16,6 +16,12 @@ ms.locfileid: "52645334"
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
+
+## <a name="june-2021-new-in-preview-only"></a>Июнь 2021 г.: новые возможности только в предварительной версии
+
+### <a name="education"></a>Образование
+- Теперь преподаватели при публикации заданий могут выбирать поведение по умолчанию для календаря. Преподаватели могут управлять поведением календаря заданий с помощью свойства **addToCalendarAction** ресурса [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- Теперь преподаватели при публикации заданий также могут выбирать поведение по умолчанию для календаря. Преподаватели могут управлять поведением календаря заданий по умолчанию с помощью свойства **addToCalendarAction** ресурса [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="may-2021-new-and-generally-available"></a>Март 2021 г.: новые и общедоступные возможности
 

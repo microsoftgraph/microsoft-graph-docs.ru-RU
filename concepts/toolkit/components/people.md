@@ -3,12 +3,12 @@ title: Компонент People в Microsoft Graph Toolkit
 description: Вы можете использовать веб-компонент `mgt-people`, чтобы отображать группу людей или контактов с помощью фотографий и инициалов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 6bed8f2c06e3c6834533b8e881016c4bc6d54bac
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: d169c5c51c4f846031d4519ab27a053f51c15f98
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52580017"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780738"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент People в Microsoft Graph Toolkit
 
@@ -40,7 +40,6 @@ ms.locfileid: "52580017"
 | resource | resource | Ресурс, который требуется получить из Microsoft Graph (например, `/me/people`). |
 | scopes | scopes | Необязательный массив строк, если используется свойство либо область с разделителями-запятыми, при использовании атрибута. Эти области используются компонентом (с поддерживаемым поставщиком), чтобы убедиться в том, что пользователь дал согласие на нужное разрешение. |
 | version | version | Необязательная версия API, используемая при выполнении GET-запроса. Значение по умолчанию: `v1.0`.  |
-
 
 В следующем примере задается максимальное количество людей для отображения.
 
@@ -93,15 +92,16 @@ mgt-people {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Ресурс | Разрешение |
-| - | - |
-| [/me/people](/graph/api/user-list-people) | `People.Read` |
+| Конфигурация | Разрешение | API
+| --- | ---------- | ------- |
+| `groupId` set | User.Read.All, People.Read | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |
+| `peopleQueries` set | People.Read | [/me/people](/graph/api/user-list-people) |
+| `resource` set | Разрешения, указанные в `scopes` | Указанный в `resource` |
+| Конфигурация по умолчанию | People.Read | [/me/people](/graph/api/user-list-people) |
+| `showPresence` set | Presence.Read.All | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
-Когда вы используете шаблоны по умолчанию, требуются дополнительные API и разрешения. Шаблон по умолчанию для этого компонента использует компонент [mgt-person](person.md), для которого требуются следующие элементы.
-
-| Ресурс | Разрешение |
-| - | - |
-| [/users](/graph/api/user-list) | User.ReadBasic.All |
+Когда вы используете шаблоны по умолчанию, требуются дополнительные API и разрешения. Шаблон по умолчанию для этого компонента использует [компонент mgt-person.](person.md) См. документацию по списку необходимых разрешений.
 
 ## <a name="authentication"></a>Проверка подлинности
 

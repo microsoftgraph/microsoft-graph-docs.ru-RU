@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fcaed5b3c73039aeac6c1861a8b1ddcd4e5f19d8
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 39f9f1a56fca07078b4be74447de563b7b7f8d31
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629207"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780773"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -45,17 +45,17 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addedStudentAction|Строка| Управление поведением учащихся, добавленных после публикации задания.|
+|addedStudentAction|String| Управление поведением учащихся, добавленных после публикации задания.|
 |allowLateSubmissions|Логический| Можно ли отправку представлений после даты.|
 |allowStudentsToAddResourcesToSubmission|Логический| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
 |assignDateTime|DateTimeOffset| Дата публикации назначения учащимся. |
 |assignTo|educationAssignmentRecipient| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
-|displayName|Строка| Имя назначения. |
+|displayName|String| Имя назначения. |
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
 |классификация|educationAssignmentGradeType| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
-|notificationChannelUrl|Строка| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|String| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
@@ -79,7 +79,9 @@ Content-length: 279
     "contentType": "Text",
     "content": "Read chapters 1 through 3"
   },
-  "dueDateTime": "2014-02-01T00:00:00Z"
+  "dueDateTime": "2014-02-01T00:00:00Z",
+  "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -123,6 +125,7 @@ Content-length: 279
     "content": "Read chapters 1 through 3"
   },
   "closeDateTime": "2014-02-11T00:00:00Z",
+  "addToCalendarAction": "studentsAndPublisher",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
   "assignedDateTime": "2014-01-01T00:00:00Z",

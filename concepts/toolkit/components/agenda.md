@@ -3,12 +3,12 @@ title: Компонент "Повестка дня" в Microsoft Graph Toolkit
 description: Веб-компонент mgt-agenda используется для представления событий в календаре пользователя или группы.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b4c9f41f347e8a392d7d751f16f9168a4d66d1c4
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 7de172c514aea12e0f57541649b6e98ca1ded2df
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266577"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781102"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Компонент "Повестка дня" в Microsoft Graph Toolkit
 
@@ -133,23 +133,17 @@ mgt-agenda {
 | --- | --- |
 | eventClick | Пользователь щелкает или нажимает событие.|
 
-## <a name="permissions"></a>Разрешения
+## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Ресурс | Разрешение |
-| - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview) | Calendars.Read |
+| Конфигурация | Разрешение | API
+| - | - | - |
+| default | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 
 Компонент позволяет указать другой запрос Microsoft Graph для вызова (например, `/groups/{id}/calendar/calendarView`). В этом случае добавьте разрешение в конец строки, разделенной символом `|`.
 
-При использовании шаблона по умолчанию и шаблона по умолчанию `renderAttendees`, требуются дополнительные API и разрешения. Шаблон по умолчанию для этого компонента использует компонент [mgt-people](people.md) для событий с участниками, для которого требуется следующие элементы.
-
-| Ресурс | Разрешение |
-| - | - |
-| [/users](/graph/api/user-list) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-people) | People.Read |
-| [/me/calendarview](/graph/api/user-list-contacts) | Contacts.Read |
+При использовании шаблона по умолчанию и шаблона по умолчанию `renderAttendees`, требуются дополнительные API и разрешения. Шаблон по умолчанию для этого компонента использует компонент [mgt-people](people.md) для событий, в которых есть участники, и наследует все разрешения.
 
 ## <a name="authentication"></a>Проверка подлинности
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: abc86450938a979a082c9dd6792ce8fba4af17f2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 81eee8c04af0016c04ec1cca76f3f996bf41d50a
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682637"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781053"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -76,7 +76,7 @@ ms.locfileid: "52682637"
 |Целое число|
 |Справочные материалы|
 |В двоичном формате|
-|Boolean|
+|Логический|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -604,6 +604,14 @@ ms.locfileid: "52682637"
 |:---|
 |нет|
 |assignIfOpen|
+|unknownFutureValue|
+
+### <a name="educationaddtocalendaroptions-values"></a>значения educationAddToCalendarOptions
+|Member|
+|:---|
+|нет|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
 |unknownFutureValue|
 
 ### <a name="externalemailotpstate-values"></a>значения externalEmailOtpState
@@ -1142,7 +1150,7 @@ ms.locfileid: "52682637"
 | Member
 |:---------
 | текст
-| html
+| HTML
 
 
 ### <a name="locationtype-values"></a>Значения locationType
@@ -1249,7 +1257,7 @@ ms.locfileid: "52682637"
 | Автоматически
 | noPreview
 | checklist
-| (описание)
+| description
 | справочник
 
 

@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 46ba7c780985e71d68fe9270f165292136f2e46b
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 3020c652fa08c78fecd53469af0e21622f9afcff
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579951"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780997"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -209,15 +209,20 @@ MgtPerson.config.useContactApis = false;
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Ресурс | Разрешение     |
-| -| - |
-| [/me](/graph/api/user-get)                              | User.Read          |
-| [/ме/фото/$value](/graph/api/profilephoto-get)        | User.Read          |
-| [/me/people/?$search=](/graph/api/user-list-people)     | People.Read        |
-| [me/contacts\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](/graph/api/user-list-people) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get)        | Presence.Read.All |
+| Конфигурация | Разрешение | API |
+| ------------- | ---------- | --- |
+| `personDetails` установить без изображения, `fetchImage` установить , установить , `true` извлекаемого `avatarType` человека является контакт и `photo` `useContactApis` установить `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `personDetails` установить без изображения, установить , установить и лицо не является `fetchImage` `true` `avatarType` `photo` контактом или `useContactApis` установлено, чтобы `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` набор без изображения, `fetchImage` установленный `true` для , `avatarType` заданный пользователем и `photo` указанный по электронной почте | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
+| `personDetails` набор без изображения, `fetchImage` `true` `avatarType` заданный, заданный и `photo` контакт, указанный по электронной почте | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
+| `userId` set | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people) |
+| `personQuery` установлено `me` и `avatarType` установлено `photo` | User.Read | [/ме/фото/$value](/graph/api/profilephoto-get) |
+| `personQuery` установлено `me` и `avatarType` установлено что-то другое, чем `photo` | User.Read | [/me](/graph/api/user-get) |
+| `personQuery`значение, `me` заме- `useContactApis``true` | People.Read, User.ReadBasic.All, Contacts.Read | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people), [/me/contacts/ \* ](/graph/api/user-list-contacts) |
+| `personQuery`значение, `me` заме- `useContactApis``false` | People.Read, User.ReadBasic.All | [/me/people/?$search=](/graph/api/user-list-people), [/users?$search=](/graph/api/user-list-people) |
+| `showPresence` установлено `true` и `personQuery` установлено `me` | Presence.Read | [/me/presence](/graph/api/presence-get) |
+| `showPresence`установлено `true` значение, заме- `personQuery``me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
+| `personCardInteraction` значение, заме- `PersonCardInteraction.none` | См. [разрешения на карточку человека](/graph/toolkit/components/person-card#microsoft-graph-permissions) | См. [вызовы API карт персоны](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
 ## <a name="authentication"></a>Проверка подлинности
 

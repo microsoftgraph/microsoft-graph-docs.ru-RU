@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 13a7b9b387581612193e4759521daa42216b2be0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 4dd6d6d8d2c5433ca2ad133c57cae8b17af79ad5
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470332"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780822"
 ---
 # <a name="update-educationassignmentdefaults"></a>Обновление educationAssignmentDefaults
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
 |dueTime|TimeOfDay|Значение по умолчанию класса для должного поля времени. Значение по умолчанию: `23:59:00`.|
-|notificationChannelUrl|String|Канал Команд по умолчанию, в который будут отправлены уведомления. Значение по умолчанию: `null`.|
+|notificationChannelUrl|String|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
 
 
 
@@ -76,6 +76,7 @@ Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",
+  "addToCalendarAction": "studentsAndTeamOwners",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
@@ -113,6 +114,7 @@ Content-Type: application/json
 
 {
   "addedStudentAction": "assignIfOpen",
+  "addToCalendarAction": "studentsAndTeamOwners",
   "dueTime": "23:59:00",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }

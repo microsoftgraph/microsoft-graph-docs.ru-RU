@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Комплианцестатус
+title: тип из enum complianceStatus
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f21a4ba89ea195259634a2250be1d6d1f075456e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7f87218e658f042c6c02d3e227ecc4e1cbc639b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037754"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756780"
 ---
-# <a name="compliancestatus-enum-type"></a>тип перечисления Комплианцестатус
+# <a name="compliancestatus-enum-type"></a>тип из enum complianceStatus
 
 Пространство имен: microsoft.graph
 
@@ -23,19 +23,14 @@ ms.locfileid: "48037754"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Пока не задокументировано.|
-|нотаппликабле|1 |Пока не задокументировано.|
-|совместимо|2 |Пока не задокументировано.|
-|исправленных|4|Пока не задокументировано.|
-|Несоответствующих|4 |Пока не задокументировано.|
+|unknown|0|Пока не задокументировано.|
+|notApplicable|1|Пока не задокументировано.|
+|совместимый|2|Пока не задокументировано.|
+|исправлено|3|Пока не задокументировано.|
+|nonCompliant|4 |Пока не задокументировано.|
 |error|5 |Пока не задокументировано.|
-|противоречивы|6 |Пока не задокументировано.|
-|нотассигнед|7 |Пока не задокументировано.|
-
-
-
-
-
+|конфликт|6 |Пока не задокументировано.|
+|notAssigned|7 |Пока не задокументировано.|
 
 
 

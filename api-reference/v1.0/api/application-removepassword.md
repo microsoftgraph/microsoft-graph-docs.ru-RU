@@ -1,22 +1,22 @@
 ---
-title: 'application: removePassword'
+title: 'приложение: removePassword'
 description: Удаление пароля из приложения
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3a8dfe9fe72a8dae8c50e4e381d56e3f83f63150
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cfe32e9743bbae164065416adfa1873431a1bb51
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131749"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787977"
 ---
-# <a name="application-removepassword"></a>application: removePassword
+# <a name="application-removepassword"></a>приложение: removePassword
 
 Пространство имен: microsoft.graph
 
-Удалите пароль из [приложения.](../resources/application.md)
+Удаление пароля из [приложения.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,7 +55,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="examples"></a>Примеры
 
-Ниже показано, как вызвать этот API.
+В следующем примере показано, как вызвать этот API.
 
 ### <a name="request"></a>Запрос
 
@@ -99,9 +99,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http

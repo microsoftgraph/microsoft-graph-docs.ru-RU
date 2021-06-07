@@ -3,12 +3,12 @@ title: Компонент Get в Microsoft Graph Toolkit
 description: С помощью компонента Get можно создавать любые GET-запросы из Microsoft Graph непосредственно в HTML-коде.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 968259f08e08d6d34308404847b0addf9badd2ec
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 55fc5da7697523fbb08c69a2a995170be5b35a21
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266584"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781088"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Компонент Get в Microsoft Graph Toolkit
 
@@ -63,7 +63,7 @@ ms.locfileid: "52266584"
 
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
-Дополнительные сведения о разрешениях см. в [справочнике по разрешениям Microsoft Graph](../../permissions-reference.md). 
+Разрешения, необходимые этому компоненту, зависят от данных, которые вы хотите получить вместе с ним из Microsoft Graph. Дополнительные сведения о разрешениях см. в [справочнике по разрешениям Microsoft Graph](../../permissions-reference.md).
 
 ## <a name="authentication"></a>Проверка подлинности
 
@@ -75,6 +75,6 @@ ms.locfileid: "52266584"
 
 |Хранилище объектов|Кэшные данные|Примечания|
 |-----------|-----------|-------|
-|`response`|Полный ответ, полученный из Microsoft Graph для запроса, указанного в `resource` свойстве `mgt-get`|
+|`response`|Полный ответ, полученный Graph Майкрософт для запроса, указанного в `resource` свойстве`mgt-get`|
 
 Дополнительные [сведения см. в caching.](../customize-components/cache.md)

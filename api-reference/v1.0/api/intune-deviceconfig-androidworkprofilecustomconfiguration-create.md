@@ -1,33 +1,33 @@
 ---
-title: Создание Андроидворкпрофилекустомконфигуратион
-description: Создание нового объекта Андроидворкпрофилекустомконфигуратион.
+title: Создание androidWorkProfileCustomConfiguration
+description: Создайте новый объект AndroidWorkProfileCustomConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7016f6689d18a6b6b633926c93530cc40e2629d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bbf81e4004fdccbfa1dbcee9f5ea2df1b8fa8e2
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985407"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757180"
 ---
-# <a name="create-androidworkprofilecustomconfiguration"></a>Создание Андроидворкпрофилекустомконфигуратион
+# <a name="create-androidworkprofilecustomconfiguration"></a>Создание androidWorkProfileCustomConfiguration
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [андроидворкпрофилекустомконфигуратион](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) .
+Создайте новый [объект AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,10 +44,10 @@ POST /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта Андроидворкпрофилекустомконфигуратион в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса предоставляем представление JSON для объекта AndroidWorkProfileCustomConfiguration.
 
-В следующей таблице приведены свойства, необходимые при создании Андроидворкпрофилекустомконфигуратион.
+В следующей таблице показаны свойства, необходимые при создании androidWorkProfileCustomConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -62,7 +62,7 @@ POST /deviceManagement/deviceConfigurations
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [андроидворкпрофилекустомконфигуратион](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -71,7 +71,7 @@ POST /deviceManagement/deviceConfigurations
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 413
+Content-length: 387
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -80,11 +80,10 @@ Content-length: 413
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5
+      "omaUri": "Oma Uri value"
     }
   ]
 }
@@ -95,7 +94,7 @@ Content-length: 413
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 585
+Content-Length: 559
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -107,20 +106,14 @@ Content-Length: 585
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5
+      "omaUri": "Oma Uri value"
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 
