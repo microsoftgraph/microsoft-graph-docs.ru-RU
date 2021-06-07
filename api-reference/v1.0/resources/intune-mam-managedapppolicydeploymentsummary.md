@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9514dd5ed5b79b9255067b7a19dbd6f55ee16a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2198c84468585cf4dcc9bed365df4b8016fa5ef5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041304"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752338"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummary
 
@@ -36,7 +36,7 @@ ManagedAppEntity — это базовый тип для всех остальн
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,11 +67,6 @@ ManagedAppEntity — это базовый тип для всех остальн
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

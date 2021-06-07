@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 83f136a3a9c131d5a05df92df2f3c3e3d3b6c75c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6f08fcd2b7b913de9dbe8d44f07f99d646f41560
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439317"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751038"
 ---
 # <a name="remove-accessreview-reviewer"></a>Удаление рецензента accessReview
 
@@ -40,12 +40,12 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует поставлять тело запроса.
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа из 200 серий.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 

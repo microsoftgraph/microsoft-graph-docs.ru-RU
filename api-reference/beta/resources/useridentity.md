@@ -2,15 +2,15 @@
 title: тип userIdentity
 description: Представляет идентификатор пользователя Azure AD для рецензента обзора доступа.
 localization_priority: Normal
-author: jpettere
-ms.prod: users
+author: isabelleatmsft
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9379955a4356ff9c969e4813fbf9b812316aa821
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 94c0af9a5909966471594ab4c23003282f416849
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719859"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52750367"
 ---
 # <a name="useridentity-type"></a>тип userIdentity
 
@@ -25,22 +25,22 @@ ms.locfileid: "50719859"
 
 ## <a name="methods"></a>Methods
 
-Нет  При создании [accessReview](../api/accessreview-create.md)в тело запроса будут включены объекты этого типа.
+Нет.  При создании [accessReview](../api/accessreview-create.md)в тело запроса будут включены объекты этого типа.
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип | Описание|
-|:---------------|:--------|:----------|
-| `displayName` | `String` | Отображаемое имя удостоверения. Обратите внимание, что это может быть не всегда доступно или в курсе.    |
-| `id`          | `String` | Уникальный идентификатор удостоверения.  |
-| `ipAddress`| `String`| Указывает IP-адрес клиента, используемый пользователем для выполнения действия (только журнал аудита).|
-| `userPrincipalName`|`String` | Атрибут userPrincipalName пользователя. |
+| Свойство          | Тип   | Описание                                                                            |
+|:------------------|:-------|:---------------------------------------------------------------------------------------|
+| displayName       | String | Отображаемое имя удостоверения. Обратите внимание, что это может быть не всегда доступно или в курсе. |
+| id                | String | Уникальный идентификатор удостоверения. Допускается значение NULL.                                                   |
+| ipAddress         | String | Указывает IP-адрес клиента, используемый пользователем для выполнения действия (только журнал аудита). |
+| userPrincipalName | String | Атрибут userPrincipalName пользователя.                                           |
 
-## <a name="remarks"></a>Заметки
+### <a name="remarks"></a>Заметки
 
 В некоторых случаях уникальный идентификатор субъекта может быть недоступен. В таком случае для удостоверения возвращается свойство **displayName**, но в ресурсе будет отсутствовать свойство **id**.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -49,10 +49,10 @@ ms.locfileid: "50719859"
 | Метод                                                                | Возвращаемый тип                                | Описание                             |
 |:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
 | [Получите рецензенты accessReview](../api/accessreview-listreviewers.md)    | [коллекция userIdentity](useridentity.md) | Получите рецензентов accessReview.   |
-| [Добавление рецензента accessReview](../api/accessreview-addreviewer.md)       | Нет                                      | Добавление рецензента в accessReview.      |
-| [Удаление рецензента accessReview](../api/accessreview-removereviewer.md) | Нет                                      | Удаление рецензента из accessReview. |
+| [Добавление рецензента accessReview](../api/accessreview-addreviewer.md)       | Нет.                                      | Добавление рецензента в accessReview.      |
+| [Удаление рецензента accessReview](../api/accessreview-removereviewer.md) | Нет.                                      | Удаление рецензента из accessReview. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Вот представление JSON этого типа.
 

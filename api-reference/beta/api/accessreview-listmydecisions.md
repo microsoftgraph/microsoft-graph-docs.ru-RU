@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 31f065033d1980c8a1ab640294f52f893a1f02f0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a4ab7557b3425987b838335e43219fee802ef513
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048472"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751106"
 ---
 # <a name="list-my-accessreview-decisions"></a>Список решений accessReview
 
@@ -44,7 +44,7 @@ GET /accessReviews/{reviewId}/myDecisions
 Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и массив объектов `200, OK` [accessReviewDecision](../resources/accessreviewdecision.md) в теле ответа, для которых вызываемая пользователь является назначенным рецензентом.
+В случае успешной работы этот метод возвращает код отклика и массив объектов `200 OK` [accessReviewDecision](../resources/accessreviewdecision.md) в теле ответа, для которых вызываемая пользователь является назначенным рецензентом.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

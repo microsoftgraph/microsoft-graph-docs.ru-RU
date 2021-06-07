@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a3566889236934a2b0668cecd50c8b5b860e61cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 23813096fb625e9598347bde0628c7dd6f407296
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048486"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751113"
 ---
 # <a name="list-accessreview-decisions"></a>Списки решений accessReview
 
@@ -20,7 +20,7 @@ ms.locfileid: "52048486"
 
 В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) извлекаем решения объекта [accessReview.](../resources/accessreview.md)
 
-Обратите внимание, что повторяющиеся проверки доступа не будут иметь `decisions` отношения.  Вместо этого вызываемая должна перемещаться по отношениям, чтобы найти объект для текущего или последнего `instance` `accessReview` экземпляра обзора доступа.
+Обратите внимание, что повторяющиеся проверки доступа не будут иметь отношения **решений.**  Для поиска объекта [accessReview](../resources/accessreview.md) для текущего или последнего экземпляра обзора доступа вызываемой службе необходимо ориентироваться на связь экземпляра экземпляра. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ GET /accessReviews/{reviewId}/decisions
 Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и массив `200, OK` [объектов accessReviewDecision](../resources/accessreviewdecision.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и массив `200 OK` [объектов accessReviewDecision](../resources/accessreviewdecision.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -111,10 +111,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Получить accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Извлечение обзора доступа. |
 |[Список решений accessReview](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) collection|    Как рецензент, получите мои решения accessReview.|
-|[Отправка напоминания accessReview](accessreview-sendreminder.md) |       Отсутствуют.   |   Отправьте напоминание рецензентам accessReview. |
-|[Остановка accessReview](accessreview-stop.md) |        Отсутствуют.   |   Остановите accessReview. |
-|[Сброс решений accessReview](accessreview-reset.md) |        Отсутствуют.   |   Сброс решений в ходе выполнения accessReview.|
-|[Применение решений accessReview](accessreview-apply.md) |        Отсутствуют.   |   Применение решений из завершенного accessReview.|
+|[Отправка напоминания accessReview](accessreview-sendreminder.md) |       Нет.   |   Отправьте напоминание рецензентам accessReview. |
+|[Остановка accessReview](accessreview-stop.md) |        Нет.   |   Остановите accessReview. |
+|[Сброс решений accessReview](accessreview-reset.md) |        Нет.   |   Сброс решений в ходе выполнения accessReview.|
+|[Применение решений accessReview](accessreview-apply.md) |        Нет.   |   Применение решений из завершенного accessReview.|
 
 
 <!--

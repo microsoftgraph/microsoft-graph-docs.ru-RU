@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 327fe027fe0ac191edefd6474a667e0ab540f966
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4866bf1c545df9c55e29b9f9715ff4d3611f89a1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069731"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751540"
 ---
 # <a name="get-managedmobileapp"></a>Получение объекта managedMobileApp
 
@@ -23,11 +23,11 @@ ms.locfileid: "48069731"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,24 +69,20 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtection
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 261
+Content-Length: 308
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedMobileApp",
     "mobileAppIdentifier": {
-      "@odata.type": "microsoft.graph.mobileAppIdentifier"
+      "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+      "packageId": "Package Id value"
     },
     "id": "0a129715-9715-0a12-1597-120a1597120a",
     "version": "Version value"
   }
 }
 ```
-
-
-
-
-
 
 
 

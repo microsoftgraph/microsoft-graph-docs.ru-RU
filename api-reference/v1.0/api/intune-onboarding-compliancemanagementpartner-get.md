@@ -1,33 +1,33 @@
 ---
-title: Получение Комплианцеманажементпартнер
-description: Чтение свойств и связей объекта Комплианцеманажементпартнер.
+title: Получить complianceManagementPartner
+description: Чтение свойств и связей объекта complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0a65d8917cea8aa29848666b17e677b297c2b9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1bab808f9443440c673a340db877bff77b28f34c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009459"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752555"
 ---
-# <a name="get-compliancemanagementpartner"></a>Получение Комплианцеманажементпартнер
+# <a name="get-compliancemanagementpartner"></a>Получить complianceManagementPartner
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .
+Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,7 +38,7 @@ ms.locfileid: "48009459"
 GET /deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,11 +47,11 @@ GET /deviceManagement/complianceManagementPartners/{complianceManagementPartnerI
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartne
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1114
+Content-Length: 1324
 
 {
   "value": {
@@ -82,7 +82,8 @@ Content-Length: 1114
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+          "collectionId": "Collection Id value"
         }
       }
     ],
@@ -90,7 +91,8 @@ Content-Length: 1114
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+          "collectionId": "Collection Id value"
         }
       }
     ],
@@ -98,15 +100,14 @@ Content-Length: 1114
       {
         "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+          "collectionId": "Collection Id value"
         }
       }
     ]
   }
 }
 ```
-
-
 
 
 

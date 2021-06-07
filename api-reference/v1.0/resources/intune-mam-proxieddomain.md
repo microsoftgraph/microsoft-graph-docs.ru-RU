@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16995c4ffc959c5a63d322da84bdca136a2422f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25914b3cba48120e91352028bb51bcdee8edee2b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048409"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752324"
 ---
 # <a name="proxieddomain-resource-type"></a>Тип ресурса proxiedDomain
 
@@ -24,9 +24,9 @@ ms.locfileid: "48048409"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |ipAddressOrFQDN|Строка|IP-адрес или полное доменное имя|
-|proxy|Строка|IP-адрес или полное доменное имя прокси|
+|proxy|Строка|IP-адрес прокси или FQDN|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,11 +43,6 @@ ms.locfileid: "48048409"
   "proxy": "String"
 }
 ```
-
-
-
-
-
 
 
 

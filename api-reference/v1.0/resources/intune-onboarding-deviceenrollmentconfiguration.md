@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceEnrollmentConfiguration
-description: Пока не задокументировано.
+description: Базовый класс конфигурации регистрации устройств
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73f2826af52e88f27e629ef4cb25013d17d3edb5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03787eed949221af2b4cbee5ca08d107aa60c229
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072965"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752758"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "48072965"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Базовый класс конфигурации регистрации устройств
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -31,18 +31,18 @@ ms.locfileid: "48072965"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
-|displayName|Строка|Н/Д|
-|description|Строка|Н/Д|
-|priority|Int32|Н/Д|
-|createdDateTime|DateTimeOffset|Н/Д|
-|lastModifiedDateTime|DateTimeOffset|Н/Д|
-|version|Int32|Н/Д|
+|id|String|Уникальный идентификатор учетной записи|
+|displayName|String|Отображающее имя конфигурации регистрации устройства|
+|description|String|Описание конфигурации регистрации устройства|
+|priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета.|
+|createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства|
+|lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства|
+|version|Int32|Версия конфигурации регистрации устройства|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства.|
+|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список групповых назначений для профиля конфигурации устройства|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -64,11 +64,6 @@ ms.locfileid: "48072965"
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

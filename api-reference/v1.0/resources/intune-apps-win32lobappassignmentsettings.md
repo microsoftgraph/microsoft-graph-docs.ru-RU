@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса win32LobAppAssignmentSettings
-description: Содержит свойства, используемые для назначения бизнес-приложения Win32 для группы.
+title: тип ресурса win32LobAppAssignmentSettings
+description: Содержит свойства, используемые для назначения мобильного приложения Win32 LOB группе.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e84a740a45cb57417c81b5c99a892642097413b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d76e189d684999e3922b625def26d4d0cfcb6a3e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020396"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752212"
 ---
-# <a name="win32lobappassignmentsettings-resource-type"></a>Тип ресурса win32LobAppAssignmentSettings
+# <a name="win32lobappassignmentsettings-resource-type"></a>тип ресурса win32LobAppAssignmentSettings
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства, используемые для назначения бизнес-приложения Win32 для группы.
+Содержит свойства, используемые для назначения мобильного приложения Win32 LOB группе.
 
 
 Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
@@ -27,10 +27,11 @@ ms.locfileid: "48020396"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |уведомления|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|Состояние уведомления для этого назначения приложения. Возможные значения: `showAll`, `showReboot`, `hideAll`.|
-|рестартсеттингс|[win32LobAppRestartSettings](../resources/intune-apps-win32lobapprestartsettings.md)|Параметры перезагрузки, которые необходимо применить к данному назначению приложения.|
-|инсталлтимесеттингс|[mobileAppInstallTimeSettings](../resources/intune-apps-mobileappinstalltimesettings.md)|Параметры времени установки, применяемые к данному назначению приложения.|
+|restartSettings|[win32LobAppRestartSettings](../resources/intune-apps-win32lobapprestartsettings.md)|Параметры перезагрузки, которые необходимо применить для этого назначения приложения.|
+|installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-apps-mobileappinstalltimesettings.md)|Параметры времени установки, которые необходимо применить для этого назначения приложения.|
+|deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-apps-win32lobappdeliveryoptimizationpriority.md)|Приоритет оптимизации доставки для этого назначения приложения. Этот параметр не поддерживается в национальных облачных средах. Возможные значения: `notConfigured`, `foreground`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,10 +56,10 @@ ms.locfileid: "48020396"
     "useLocalTime": true,
     "startDateTime": "String (timestamp)",
     "deadlineDateTime": "String (timestamp)"
-  }
+  },
+  "deliveryOptimizationPriority": "String"
 }
 ```
-
 
 
 

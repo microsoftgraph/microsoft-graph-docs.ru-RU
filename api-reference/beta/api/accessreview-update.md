@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1b3870b4d44847d93fb2438c9f61d8ac3529433e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 817cf535c68a775c7a90a639e09120e226c46115
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048444"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751010"
 ---
 # <a name="update-accessreview"></a>Обновление accessReview
 
@@ -47,17 +47,17 @@ PATCH /accessReviews/{reviewId}
 
 В следующей таблице показаны свойства, которые можно получить при обновлении accessReview.
 
-| Свойство     | Тип        | Описание |
-|:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | Имя обзора доступа.  |
-| `startDateTime`           |`DateTimeOffset`                                                | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.   |
-| `endDateTime`             |`DateTimeOffset`                                                | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.   |
-| `description`             |`String`                                                        | Описание, чтобы показать рецензентам. |
+| Свойство      | Тип           | Описание                                                                                                |
+|:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
+| displayName   | String         | Имя обзора доступа.                                                                                    |
+| startDateTime | DateTimeOffset | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.                 |
+| endDateTime   | DateTimeOffset | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала. |
+| description   | String         | Описание, чтобы показать рецензентам.                                                                 |
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `204, Accepted` [объект accessReview](../resources/accessreview.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `204 Accepted` [объект accessReview](../resources/accessreview.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

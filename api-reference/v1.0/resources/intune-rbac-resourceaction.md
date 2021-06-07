@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса resourceAction
-description: Пока не задокументировано.
+description: Набор разрешенных и не разрешенных действий для ресурса.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 941ebf1c7a56e04acaa118bf0d0ed8594172c726
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3517a4608691b65ce33ac40b4a9d9929bd277f31
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037810"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752436"
 ---
 # <a name="resourceaction-resource-type"></a>Тип ресурса resourceAction
 
@@ -18,15 +18,15 @@ ms.locfileid: "48037810"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Набор разрешенных и не разрешенных действий для ресурса.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |allowedResourceActions|Коллекция строк|Разрешенные действия|
-|notAllowedResourceActions|Коллекция строк|Запрещенные действия|
+|notAllowedResourceActions|Коллекция строк|Не разрешенные действия.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,11 +47,6 @@ ms.locfileid: "48037810"
   ]
 }
 ```
-
-
-
-
-
 
 
 

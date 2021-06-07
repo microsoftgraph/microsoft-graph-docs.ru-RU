@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b0048cccfa9461bed2f1b25600b677512d45a47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb7cd456b3a70bff2ea9d6e1de693d14f91205b7
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967515"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751260"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Тип ресурса exclusionGroupAssignmentTarget
 
@@ -28,7 +28,7 @@ ms.locfileid: "47967515"
 |:---|:---|:---|
 |groupId|String|Идентификатор группы-объекта назначения. Наследуется от ресурса [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,11 +44,6 @@ ms.locfileid: "47967515"
   "groupId": "String"
 }
 ```
-
-
-
-
-
 
 
 

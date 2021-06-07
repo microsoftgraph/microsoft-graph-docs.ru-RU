@@ -1,30 +1,30 @@
 ---
-title: Руководство. Используйте API обзоров доступа для просмотра гостевого доступа к группам Microsoft 365
-description: Используйте API отзывов доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365
+title: Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
+description: Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: 216d6e345fcbb2919593f95b327a2b83037e4535
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: ad34932926a658d498242dd168ac7fee1d2b31a1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921106"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751141"
 ---
-# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Руководство. Используйте API обзоров доступа для просмотра гостевого доступа к группам Microsoft 365
+# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
 
-В этом руководстве вы будете использовать Graph Explorer для создания и чтения отзывов доступа, которые ориентированы на все группы Microsoft 365 с гостевых пользователей в клиенте. Для этого сначала с помощью Azure AD B2B вы сможете приглашать и создавать гостевого пользователя, также именуемого внешним удостоверением, в клиенте. Затем этот гостевой пользователь будет добавлен в группу Microsoft 365 перед созданием и чтением обзора доступа.
+В этом руководстве Graph Explorer для создания и чтения отзывов доступа, которые ориентированы на все Microsoft 365 группы с гостевых пользователей в клиенте. Для этого сначала с помощью Azure AD B2B вы сможете приглашать и создавать гостевого пользователя, также именуемого внешним удостоверением, в клиенте. Затем перед созданием и чтением обзора доступа вы добавите этого гостевых пользователей в Microsoft 365 группу.
 
 >[!NOTE]
 >Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Для завершения этого руководства необходимы следующие ресурсы и привилегии:
 
 + Рабочий клиент Azure AD с включенной лицензией Azure AD Premium P2 или EMS E5. 
 + Учетная запись в другом клиенте Azure AD или социальном удостоверении, которую можно пригласить в качестве гостевого пользователя (B2B-пользователя).
-+ Во входе [в Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) в качестве пользователя в роли глобального администратора. 
++ Вопишитесь [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) в качестве пользователя в роли глобального администратора. 
 + Следующие делегированные разрешения: `User.Invite.All` `AccessReview.ReadWrite.All` , , `Group.ReadWrite.All` `User.ReadWrite.All` .
 
 Согласие на необходимые разрешения в Graph Explorer:
@@ -40,7 +40,7 @@ ms.locfileid: "51921106"
    
    Нажмите **Согласие** и выберите **Принять**, чтобы согласиться принять разрешения. Вам не нужно предоставлять согласие от имени организации для этих разрешений.
    
-   ![Согласие на разрешения Microsoft Graph](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
+   ![Согласие на разрешения Graph Майкрософт](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png)
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions_M365.png" alt-text="Consent to the Microsoft Graph permissions":::-->
 
 ## <a name="step-1-create-a-test-user-in-your-tenant"></a>Шаг 1. Создание тестового пользователя в клиенте
@@ -110,10 +110,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a>Шаг 3. Создание новой группы Microsoft 365 и добавление гостевого пользователя
+## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a>Шаг 3. Создание Microsoft 365 группы и добавление гостевого пользователя
 
 На этом шаге:
-1. Создайте новую группу Microsoft 365 с именем **Маркетинговая кампания Feelgood.**
+1. Создайте новую Microsoft 365 с именем **маркетинговая кампания Feelgood.**
 2. Назначьте себя владельцем группы.
 3. Добавьте john@tailspintoys.com в качестве участника группы. Их доступ к группе является предметом рассмотрения вами, владельцем группы.
 
@@ -160,7 +160,7 @@ Content-type: application/json
 }
 ```
 
-Теперь у вас есть группа Microsoft 365 с гостевых пользователей.
+Теперь у вас Microsoft 365 группа с гостевых пользователей.
 
 ## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a>Шаг 4. Создание обзора доступа для всех групп Microsoft 365 с гостевых пользователей
 
@@ -169,8 +169,8 @@ Content-type: application/json
 В серии обзоров доступа используются следующие параметры:
 + Это повторяющийся обзор доступа, который пересматривается ежеквартно.
 + Владельцы групп проверяют постоянный доступ гостевых пользователей.
-+ Область обзора ограничена группами Microsoft 365 только для **гостевых** пользователей.
-+ Обозреватель резервного копирования. Это может быть пользователь с откатом или группа, которая может просмотреть доступ в случае, если у группы нет владельцев.
++ Область обзора ограничивается только Microsoft 365 только с **гостевых пользователей.** Дополнительные параметры настройки области см. в разделе [See also.](#see-also) 
++ Обозреватель резервного копирования. Это может быть пользователь с откатом или группа, которая может просмотреть доступ в случае, если у группы нет владельцев. Дополнительные возможности настройки рецензентов см. в разделе [See also.](#see-also)
 + **autoApplyDecisionsEnabled** установлено `true` для . В этом случае решения применяются автоматически, как только рецензент завершит обзор доступа или закончится продолжительность обзора доступа. Если он не включен, пользователь должен после завершения проверки применять решения вручную.
 + Применить **действие removeAccessApplyAction** для отклонить гостевых пользователей. Это удаляет членство в группе отклоненного гостя. Гостевой пользователь по-прежнему может войти в клиент.
 
@@ -318,7 +318,7 @@ Content-type: application/json
 
 ## <a name="step-5-list-instances-of-the-access-review"></a>Шаг 5. Список экземпляров обзора доступа
 
-В следующем запросе перечислены все экземпляры определения обзора доступа. Если клиент тестирования содержит другие группы Microsoft 365 с гостевых пользователей, этот запрос возвращает один экземпляр для каждой группы Microsoft 365 с гостевых пользователей в клиенте.
+В следующем запросе перечислены все экземпляры определения обзора доступа. Если клиент тестирования содержит другие группы Microsoft 365 с гостевых пользователей, этот запрос возвращает один экземпляр для каждой Microsoft 365 группы с гостевых пользователей в клиенте.
 
 ### <a name="request"></a>Запрос
 В этом вызове `c22ae540-b89a-4d24-bac0-4ef35e6591ea` замените **id** определения обзора доступа, возвращенного в шаге 4.
@@ -419,10 +419,10 @@ Content-type: application/json
 
 Удалите ресурсы, созданные для этого руководства: группу маркетинговой кампании **Feelgood,** определение расписания обзоров доступа, гостевой пользователь и тестовый пользователь.
 
-### <a name="delete-the-microsoft-365-group"></a>Удаление группы Microsoft 365
+### <a name="delete-the-microsoft-365-group"></a>Удаление Microsoft 365 группы
 
 #### <a name="request"></a>Запрос
-В этом вызове замените id маркетинговой кампании `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **Feelgood** microsoft 365. 
+В этом вызове замените id маркетинговой кампании `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **Feelgood** Microsoft 365 группы. 
 
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
@@ -480,16 +480,14 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-Поздравляем! Вы создали обзор доступа для всех гостевых пользователей в группах Microsoft 365 в клиенте и запланирование ежеквартов для оценки и аттестации доступа гостевых пользователей. Владельцы групп будут пересматривать доступ во время этих циклов, выбирая утверждение или отказ в доступе.
+Поздравляем! Вы создали обзор доступа для всех гостевых пользователей в Microsoft 365 группах в клиенте и запланирование ежеквартов для оценки и аттестации доступа гостевых пользователей. Владельцы групп будут пересматривать доступ во время этих циклов, выбирая утверждение или отказ в доступе.
 
 ## <a name="see-also"></a>См. также
 
++ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Настройка области определения обзора доступа с помощью API microsoft Graph](/graph/accessreviews-scope-concept)
++ [Назначение рецензентов определению обзора доступа с помощью API Graph Microsoft](/graph/accessreviews-reviewers-concept)
 + [Обзор обзоров доступа и требования к лицензиям](/azure/active-directory/governance/access-reviews-overview)
-+ [Сценарии лицензии Access Reviews](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
 + [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
 + [Приглашение и добавление гостевых пользователей в организацию](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Создание accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

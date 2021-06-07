@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: be46da02dae93199ae18306bba361a5036e21e3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03dd609b8bd2c1835665827fff2bd89f6e810d77
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079251"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751295"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Тип ресурса windowsInformationProtectionApp
 
@@ -23,13 +23,13 @@ ms.locfileid: "48079251"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя приложения.|
-|description|Строка|Описание приложения.|
+|displayName|String|Отображаемое имя приложения.|
+|description|String|Описание приложения.|
 |publisherName|String|Имя издателя|
 |productName|String|Название продукта.|
 |denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,11 +49,6 @@ ms.locfileid: "48079251"
   "denied": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: тип перечисления win32LobAppFileSystemOperationType
+title: тип enum win32LobAppFileSystemOperationType
 description: Содержит все поддерживаемые типы обнаружения файловой системы.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2b9cf1f09f33db71239e02e0a5e4aff6b41dcfa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20189d8adc65c2f38e5cb757df0640fff1a21618
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48096057"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752205"
 ---
-# <a name="win32lobappfilesystemoperationtype-enum-type"></a>тип перечисления win32LobAppFileSystemOperationType
+# <a name="win32lobappfilesystemoperationtype-enum-type"></a>тип enum win32LobAppFileSystemOperationType
 
 Пространство имен: microsoft.graph
 
@@ -23,13 +23,12 @@ ms.locfileid: "48096057"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен.|
-|Существует|1 |Существует ли указанный файл или папка.|
-|modifiedDate|2 |Дата последнего изменения.|
-|createdDate|4|Дата создания.|
-|version|4 |Тип значения Version.|
-|сизеинмб|5 |Тип определения размера.|
-
+|notConfigured|0|Не настроен.|
+|существует|1|Существует ли указанный файл или папка.|
+|modifiedDate|2|Последняя измененная дата.|
+|createdDate|3|Дата создания.|
+|version|4 |Тип значения версии.|
+|sizeInMB|5 |Тип обнаружения размеров.|
 
 
 

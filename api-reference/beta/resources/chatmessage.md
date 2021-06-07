@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c0026f966d84869acca52b18347495d331f230b
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 4b63cec31041f141c7807f61953beaba36845073
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697921"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751575"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -61,7 +61,7 @@ ms.locfileid: "51697921"
 |messageType|Строка|Тип сообщения чата. Возможное значение: `message` .|
 |createdDateTime|dateTimeOffset|Время создания сообщения чата.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда сообщение чата создается (начальный параметр) или изменено, в том числе при добавлении или удалении реакции. |
-|lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда были сделаны изменения в сообщении чата. Вызывает флаг "Отредактирован" в пользовательском интерфейсе Teams. Если изменение не выполнено, значение `null` .|
+|lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда были сделаны изменения в сообщении чата. Вызывает флаг "Отредактирован" Teams пользовательского интерфейса. Если изменение не выполнено, значение `null` .|
 |deletedDateTime|dateTimeOffset|Только для чтения. Timestamp, при котором сообщение чата было удалено, или null, если не удалено. |
 |subject|string| Тема сообщения чата в plaintext.|
 |body|[itemBody](itembody.md)|Представление plaintext/HTML контента сообщения чата. Представление определяется параметром contentType в тексте. Содержимое всегда находится в HTML, если в сообщении чата [содержится chatMessageMention.](chatmessagemention.md) |
@@ -75,14 +75,14 @@ ms.locfileid: "51697921"
 |chatId|Строка|Если сообщение было отправлено в чате, представляет собой удостоверение чата.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
 |webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |ответы|[chatMessage](chatmessage.md)| Ответы на указанное сообщение. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, которое было организовано Microsoft Teams, например, изображения, фрагменты кода и т.д. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, которое Microsoft Teams - например, изображения или фрагменты кода. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

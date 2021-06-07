@@ -1833,25 +1833,25 @@ items:
                   - name: Организовано на принтере
                     items:
                       - name: Получение
-                        href: api/printusagebyprinter-get.md
+                        href: api/printusagesummarybyprinter-get.md
                       - name: Список заданий архивного печати принтера
                         href: api/reports-getprinterarchivedprintjobs.md
                       - name: Список ежедневных отчетов на принтере
-                        href: api/reportroot-list-dailyprintusagebyprinter.md
+                        href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
                       - name: Список ежемесячных отчетов на принтере
-                        href: api/reportroot-list-monthlyprintusagebyprinter.md
+                        href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
                   - name: Организовано пользователем или группой
                     items:
                       - name: Получение
-                        href: api/printusagebyuser-get.md
+                        href: api/printusagesummarybyuser-get.md
                       - name: Список заданий для архивного печати пользователя
                         href: api/reports-getuserarchivedprintjobs.md
                       - name: Список заданий для архивного печати группы
                         href: api/reports-getgrouparchivedprintjobs.md
                       - name: Список ежедневных отчетов пользователя
-                        href: api/reportroot-list-dailyprintusagebyuser.md
+                        href: api/reportroot-list-dailyprintusagesummariesbyuser.md
                       - name: Список ежемесячных отчетов пользователя
-                        href: api/reportroot-list-monthlyprintusagebyuser.md
+                        href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
               - name: Служба печати
                 href: resources/printservice.md
                 items:

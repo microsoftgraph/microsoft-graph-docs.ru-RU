@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d453b20bfe9e1f897e87b21945b124ec7ed45d2c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 90c64ee1bb52c9149e16658c5b8a1cd11a97c51b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048521"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751127"
 ---
 # <a name="add-accessreview-reviewer"></a>Добавление рецензента accessReview
 
@@ -47,11 +47,11 @@ POST /accessReviews/{reviewId}/reviewers
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| `id`        | `String`   | Идентификатор пользователя.|
+| id        | String   | Идентификатор пользователя.|
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает `201, Created` код ответа.
+В случае успешной работы этот метод возвращает `201 Created` код ответа.
 
 ## <a name="example"></a>Пример
 
@@ -94,7 +94,6 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

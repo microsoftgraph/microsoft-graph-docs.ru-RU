@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4124a114a60f20f6540cdef7ba97787f980afdb0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1682c08e4fb15de6e5fc9d66d86d83c832e4c27
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094450"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752422"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -30,9 +30,9 @@ ms.locfileid: "48094450"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Администратор предоставил или импортировал название приложения.|
-|description|Строка|Описание приложения.|
+|id|String|Ключ объекта.|
+|displayName|String|Администратор предоставил или импортировал название приложения.|
+|description|String|Описание приложения.|
 |publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
@@ -43,9 +43,9 @@ ms.locfileid: "48094450"
 |owner|String|Владелец приложения.|
 |developer|String|Разработчик приложения.|
 |notes|String|Заметки для приложения.|
-|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения.|
@@ -82,11 +82,6 @@ ms.locfileid: "48094450"
   "publishingState": "String"
 }
 ```
-
-
-
-
-
 
 
 

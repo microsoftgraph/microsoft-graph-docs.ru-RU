@@ -1,36 +1,31 @@
 ---
-title: тип перечисления Ратингунитедкингдомтелевисионтипе
-description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Великобритании
+title: тип enum ratingUnitedKingdomTelevisionType
+description: Метки оценки телеконтента в Великобритании
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05560eef3d770c951052ac1a04eef71b15a50125
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: baa1567c3562b85867eeabafbf2350c4817d3e6c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978141"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751386"
 ---
-# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>тип перечисления Ратингунитедкингдомтелевисионтипе
+# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>тип enum ratingUnitedKingdomTelevisionType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Великобритании
+Метки оценки телеконтента в Великобритании
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|изучить|2 |Разрешение ТВ-содержимого с предупреждающим сообщением|
-
-
-
-
-
+|allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
+|предостережение|2|Разрешение содержимого телевизора с предупреждением|
 
 
 

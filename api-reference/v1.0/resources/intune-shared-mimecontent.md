@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6517f575944f5ee4b769dcee75ba3805630f718
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e17fd6abb6470fe46c836f7ed4b9f38362abb74d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028373"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751554"
 ---
 # <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
 
@@ -26,7 +26,7 @@ ms.locfileid: "48028373"
 |type|String|Указывает MIME-тип содержимого.|
 |value|Binary|Массив байтов содержимого.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,11 +43,6 @@ ms.locfileid: "48028373"
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

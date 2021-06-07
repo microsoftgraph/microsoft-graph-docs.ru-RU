@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 062a42cced84afc4205e4f78511a5cf058da8626
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 346966fdcb3cfc8b3c4c24e55f4a07e46c97a612
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066385"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751274"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 
@@ -24,21 +24,21 @@ ms.locfileid: "48066385"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
-|contactITName|String|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
-|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
-|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку.|
-|contactITNotes|String|Текстовые комментарии в отношении пользователя или организации, ответственных за ИТ-поддержку.|
-|privacyUrl|String|URL-адрес страницы с политикой конфиденциальности компании или организации.|
-|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
-|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
 |themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
 |showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение с логотипом на светлом фоне, которое отображается в приложениях "Корпоративный портал".|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение с логотипом на темном фоне, которое отображается в приложениях "Корпоративный портал".|
 |showNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
+|contactITName|String|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
+|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
+|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку.|
+|contactITNotes|String|Текстовые комментарии в отношении пользователя или организации, ответственных за ИТ-поддержку.|
+|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
+|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
+|privacyUrl|String|URL-адрес страницы с политикой конфиденциальности компании или организации.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,13 +52,6 @@ ms.locfileid: "48066385"
 {
   "@odata.type": "#microsoft.graph.intuneBrand",
   "displayName": "String",
-  "contactITName": "String",
-  "contactITPhoneNumber": "String",
-  "contactITEmailAddress": "String",
-  "contactITNotes": "String",
-  "privacyUrl": "String",
-  "onlineSupportSiteUrl": "String",
-  "onlineSupportSiteName": "String",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1024,
@@ -77,14 +70,16 @@ ms.locfileid: "48066385"
     "value": "binary"
   },
   "showNameNextToLogo": true,
-  "showDisplayNameNextToLogo": true
+  "showDisplayNameNextToLogo": true,
+  "contactITName": "String",
+  "contactITPhoneNumber": "String",
+  "contactITEmailAddress": "String",
+  "contactITNotes": "String",
+  "onlineSupportSiteUrl": "String",
+  "onlineSupportSiteName": "String",
+  "privacyUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

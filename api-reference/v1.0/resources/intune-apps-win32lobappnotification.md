@@ -1,32 +1,31 @@
 ---
-title: тип перечисления win32LobAppNotification
-description: Содержит значение состояния уведомления.
+title: тип enum win32LobAppNotification
+description: Содержит значение для состояния уведомлений.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b4d75c52bcc683cd978075959d79c3c819167b07
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed632865093f40c38fcfbce21614ce98fd952c6e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059564"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752163"
 ---
-# <a name="win32lobappnotification-enum-type"></a>тип перечисления win32LobAppNotification
+# <a name="win32lobappnotification-enum-type"></a>тип enum win32LobAppNotification
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит значение состояния уведомления.
+Содержит значение для состояния уведомлений.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|showAll|нуль|Показать все уведомления.|
-|шовребут|1 |Показывать уведомления о перезапуске только и отменять другие уведомления.|
-|хидеалл|2 |Скрыть все уведомления.|
-
+|showAll|0|Показать все уведомления.|
+|showReboot|1|Только показывать уведомление о перезапуске и подавлять другие уведомления.|
+|hideAll|2|Скрыть все уведомления.|
 
 
 

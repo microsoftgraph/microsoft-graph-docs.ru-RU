@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Манажедбровсертипе
+title: тип enum managedBrowserType
 description: Тип управляемого браузера
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a52bf694b30aeb18efd32c437963b73af44d97b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98768a3fe6a7f7e10814ac3391d75f0c827ce40a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967585"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751302"
 ---
-# <a name="managedbrowsertype-enum-type"></a>тип перечисления Манажедбровсертипе
+# <a name="managedbrowsertype-enum-type"></a>тип enum managedBrowserType
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,8 @@ ms.locfileid: "47967585"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроено|
-|микрософтедже|1 |Microsoft Edge|
-
+|notConfigured|0|Не настроено|
+|MicrosoftEdge|1|Microsoft Edge|
 
 
 

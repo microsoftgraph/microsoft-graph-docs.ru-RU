@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8942fc5db772b33ca50f0e71f939c9b04bb8b948
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fd1f6c25dcc4013c1abc3d39dafa63723a1e3ea0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048514"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52751120"
 ---
 # <a name="create-accessreview"></a>Создание accessReview
 
@@ -20,7 +20,7 @@ ms.locfileid: "52048514"
 
 В функции обзоров доступа Azure [AD](../resources/accessreviews-root.md) создайте новый [объект accessReview.](../resources/accessreview.md)
 
-Прежде чем сделать этот запрос, [](businessflowtemplate-list.md)звонявший должен ранее получить список шаблонов бизнес-потока, чтобы иметь значение включить `businessFlowTemplateId` в запрос.
+Прежде чем сделать этот запрос, [](businessflowtemplate-list.md)звонявший должен ранее получить список шаблонов бизнес-потока, чтобы включить в запрос значение **businessFlowTemplateId.**
 
 После этого запроса вызываемая должна [создать программуControl,](programcontrol-create.md)чтобы связать обзор доступа с программой.  
 
@@ -45,7 +45,7 @@ POST /accessReviews
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,24 +55,24 @@ POST /accessReviews
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | Имя обзора доступа.  |
-| `startDateTime`           |`DateTimeOffset`                                                | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.   |
-| `endDateTime`             |`DateTimeOffset`                                                | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.   |
-| `description`             |`String`                                                        | Описание, чтобы показать рецензентам. |
-| `businessFlowTemplateId`  |`String`                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate.](../resources/businessflowtemplate.md)  |
-| `reviewerType`            |`String`                                                        | Тип отношения рецензента к правам доступа к рассмотренного объекта, одного из `self` , `delegated` или `entityOwners` . | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | Объект, для которого создается обзор доступа, например членство в группе или назначения пользователей приложению. | 
+| displayName             |String                                                        | Имя обзора доступа.  |
+| startDateTime           |DateTimeOffset                                                | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.   |
+| endDateTime             |DateTimeOffset                                                | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.   |
+| description             |String                                                        | Описание, чтобы показать рецензентам. |
+| businessFlowTemplateId  |String                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate.](../resources/businessflowtemplate.md)  |
+| reviewerType            |String                                                        | Тип отношения рецензента к правам доступа к рассмотренного объекта, одного из `self` , `delegated` или `entityOwners` . | 
+| reviewedEntity          |[identity](../resources/identity.md)                                     | Объект, для которого создается обзор доступа, например членство в группе или назначения пользователей приложению. | 
 
 
-Если предоставленный reviewerType имеет значение, то вызываемая должна также включать свойство с коллекцией `delegated` `reviewers` [userIdentity](../resources/useridentity.md) рецензентов.
+Если **reviewerType** имеет значение, то вызывавший должен также включать свойство рецензентов с коллекцией объектов `delegated` [userIdentity,](../resources/useridentity.md) представляющих рецензентов. 
 
 Если приложение вызывает этот API без подписанного пользователя, вызываемая должна также включать свойство **createdBy,** значение для которого является [объектом userIdentity](../resources/useridentity.md) пользователя, который будет определен в качестве создателя отзыва.
 
-Кроме того, вызывающее может включать параметры, чтобы создать повторяющиеся серии обзоров или изменить поведение проверки по умолчанию. В частности, чтобы создать повторяющийся обзор, вызывающий должен включить параметры обзора `accessReviewRecurrenceSettings` доступа,
+Кроме того, вызывающее может включать **параметры,** чтобы создать повторяющиеся серии обзоров или изменить поведение проверки по умолчанию. В частности, чтобы создать повторяющийся обзор, звонящая должна включить [accessReviewRecurrenceSettings](../resources/accessreviewrecurrencesettings.md) в параметры обзора доступа,
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201, Created` [объект accessReview](../resources/accessreview.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект accessReview](../resources/accessreview.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

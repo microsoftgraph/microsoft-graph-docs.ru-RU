@@ -1,40 +1,35 @@
 ---
-title: тип перечисления Ратингиреландтелевисионтипе
-description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Ирландии
+title: тип enum ratingIrelandTelevisionType
+description: Метки оценки телеконтента в Ирландии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a39f5a80c18803e87760d00247ab6418c6dad30e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f33ad6bc2595ad5aaf365fa123064ed671fc6ff
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062745"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752100"
 ---
-# <a name="ratingirelandtelevisiontype-enum-type"></a>тип перечисления Ратингиреландтелевисионтипе
+# <a name="ratingirelandtelevisiontype-enum-type"></a>тип enum ratingIrelandTelevisionType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Ирландии
+Метки оценки телеконтента в Ирландии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|обобщен|2 |Классификация "GA" подходит для всех аудиторий|
-|children|4|Классификация CH подходит для дочерних элементов|
-|йоунгадултс|4 |Классификация я подходит для аудитории тинаже|
-|паренталсупервисион|5 |Классификация PS предлагает родителям и хранителям учитывать доступ детей к ограничениям|
-|обнаружен|6 |Классификация MA подходит для взрослых.|
-
-
-
-
-
+|allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
+|общие|2|Классификация GA подходит для всех аудиторий|
+|children|3|Классификация CH подходит для детей|
+|youngAdults|4 |Классификация YA подходит для подростковой аудитории|
+|parentalSupervision|5 |Классификация PS предлагает родителям и опекунам рассмотреть вопрос об ограничении доступа детей|
+|зрелый|6 |Классификация MA подходит для взрослых|
 
 
 
