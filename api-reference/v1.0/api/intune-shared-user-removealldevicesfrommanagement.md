@@ -1,33 +1,34 @@
 ---
-title: Перечисление объектов detectedApp
-description: Список свойств и связей объектов detectedApp.
+title: Действие removeAllDevicesFromManagement
+description: Прекращение управления всеми устройствами для этого пользователя
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aeaa63127765d6648dc38e160a8cc1fcfb5a77d1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2072d8022aa95c82dcdc6deae727c4fd7f64b7fd
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52746215"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732985"
 ---
-# <a name="list-detectedapps"></a>Перечисление объектов detectedApp
+# <a name="removealldevicesfrommanagement-action"></a>Действие removeAllDevicesFromManagement
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [detectedApp](../resources/intune-devices-detectedapp.md).
+Прекращение управления всеми устройствами для этого пользователя
 
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)| _изменяется в зависимости от контекста_ |
+| &nbsp;&nbsp;Управление устройствами | DeviceManagementManagedDevices.PriviligedOperation.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -35,7 +36,7 @@ ms.locfileid: "52746215"
 }
 -->
 ``` http
-GET /deviceManagement/detectedApps
+POST /users/{usersId}/removeAllDevicesFromManagement
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -48,36 +49,28 @@ GET /deviceManagement/detectedApps
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [detectedApp](../resources/intune-devices-detectedapp.md) в тексте отклика.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/detectedApps
+POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManagement
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 273
 
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.detectedApp",
-      "id": "caf60db6-0db6-caf6-b60d-f6cab60df6ca",
-      "displayName": "Display Name value",
-      "version": "Version value",
-      "sizeInByte": 10,
-      "deviceCount": 11
-    }
-  ]
-}
+``` http
+HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 
