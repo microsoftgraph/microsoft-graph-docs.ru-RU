@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 034ab82730afe99ef547d496d7addca1b503387d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b73d3015870f282fa7950468d996abe9269b46bb
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038219"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781046"
 ---
 # <a name="get-onpremisesagent"></a>Get onPremisesAgent
 
@@ -26,7 +26,7 @@ ms.locfileid: "52038219"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 

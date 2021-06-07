@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: de09e9156cd084bdffbe5578e90605e0cf723403
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 8497dbb3b3d9a3173cdbf8ee8ec6bfe74859868b
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629345"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780703"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -159,26 +159,20 @@ mgt-person {
 
 Дополнительные сведения см. в статье [Компоненты стиля](../customize-components/style.md).
 
-## <a name="microsoft-graph-apis-and-permissions"></a>Страница "Разрешения API и приложений Microsoft Graph"
+## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
 Этот элемент управления Person-Card использует следующие API и разрешения Microsoft Graph.
 
-| Ресурс | Разрешение | Раздел |
-| - | - | - |
-| [/me](/graph/api/user-get) | User.Read | По умолчанию |
-| [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | По умолчанию |
-| [/me/people/?$search=](/graph/api/user-list-people) | People.Read | По умолчанию |
-| [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | По умолчанию |
-| [/users/{id}](/graph/api/user-list-people) | User.ReadBasic.All | По умолчанию |
-| [/users/{id}/photo/$value](/graph/api/profilephoto-get) | User.ReadBasic.All | По умолчанию |
-| [/me/presence](/graph/api/presence-get) | Presence.Read | По умолчанию |
-| [/users/{id}/presence](/graph/api/presence-get) | Presence.Read.All | По умолчанию |
-| [/users/{id}/manager](/graph/api/user-list-manager) | User.Read.All | Организация |
-| [/users/{id}/directReports](/graph/api/user-list-directreports) | User.Read.All | Организация |
-| [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | Организация |
-| [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | Сообщения |
-| [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | Файлы |
-| [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | Профиль |
+| Конфигурация | Разрешение | API | Section |
+| --- | ---------- | ------- | --------- |
+| `personDetails` установить с `id` пользователем, но без электронной почты, или `userId` установить, или `personQuery` установить `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | По умолчанию |
+| `personQuery` значение, отличаее от `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | По умолчанию |
+| `personQuery` установлено значение, отличаее от значения `me` `config.useContactApis` `true` (по умолчанию) | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | По умолчанию |
+| `showPresence` установлено, что `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | По умолчанию |
+| `sections.organization` включено (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Организация |
+| `sections.organization.showWorksWith` set (по умолчанию) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Организация |
+| `sections.mailMessages` включено (по умолчанию) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Сообщения |
+| `sections.files` включено (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Файлы |
 
 Класс `MgtPersonCard` также предоставляет `getScopes` статический метод, возвращающий массив областей, необходимый для работы карточки контакта с учетом глобальной конфигурации карточки контакта.
 

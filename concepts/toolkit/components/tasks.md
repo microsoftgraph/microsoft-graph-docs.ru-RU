@@ -3,18 +3,18 @@ title: Компонент задач в microsoft Graph набор средст�
 description: Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Он работает с любыми задачами в Microsoft Planner.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: d07db8f1a261f1cff96175a25665f08eff615d67
-ms.sourcegitcommit: de3bc91a24d23b46bd0863487415fba8d8fce63c
+ms.openlocfilehash: 65fc01d5b2cc5db6f6236bb64b7372522c4d61be
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52266803"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780990"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Компонент задач в microsoft Graph набор средств
 
 Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи из Microsoft Planner.  
 
-Кроме того, пользователь может назначить одной или нескольким пользователям Microsoft Graph задачу. Дополнительные сведения о назначениях Microsoft Graph см. в [материале plannerAssignments.](/graph/api/resources/plannerassignments)
+Кроме того, пользователь может назначить одному или нескольким Graph Майкрософт задачу. Дополнительные сведения о назначениях microsoft Graph см. [в материале plannerAssignments.](/graph/api/resources/plannerassignments)
 
 ## <a name="example"></a>Пример
 
@@ -154,12 +154,15 @@ mgt-tasks {
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Ресурс | Разрешение |
-| - | - |
-| /me/planner/plans | Group.Read.All |
-| /planner/plans/${id} | Group.Read.All, Group.ReadWrite.All |
-| /planner/tasks | Group.ReadWrite.All |
-| /groups/${group-id}/planner/plans | Group.Read.All, Group.ReadWrite.All |
+| Конфигурация | Разрешение | API |
+| ------------- | ---------- | --- |
+| `groupId` набор `dataSource` и заме- `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `targetId` набор `dataSource` и заме- `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `targetId` установить и `dataSource` установить что-то другое, чем `TasksSource.todo` | Group.Read.All | [/planner/plans/${planId}](/graph/api/plannerplan-get?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` установлено, что `TasksSource.planner` | Group.Read.All | [/me/planner/plans](/graph/api/planneruser-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` установлено, что `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `addTask` установлено `true` и `dataSource` установлено `TasksSource.planner` | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?view=graph-rest-1.0&tabs=http) |
+| `addTask` установлено `true` и `dataSource` установлено `TasksSource.todo` | Tasks.ReadWrite | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&tabs=csharp) |
 
 Для источника данных Microsoft Planner для получения и чтения требуется разрешение Groups.Read.All. Добавление, обновление или удаление задач требует разрешения Groups.ReadWrite.All.
 

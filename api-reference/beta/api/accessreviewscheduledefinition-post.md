@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a4b7bcb9a568948e832611f15f9aefa59c32feb6
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: ba1ce2b94cef8b37da03c655ccc2a687c2557cfd
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664612"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780836"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -50,10 +50,10 @@ POST /identityGovernance/accessReviews/definitions
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | Строка | Имя серии обзоров доступа. Обязательный атрибут.|
-| descriptionForAdmins | string | Контекст обзора, предоставленного администраторам. Обязательный атрибут. |
-  descriptionForReviewers | string | Контекст обзора, предоставленного рецензентам. Обязательный атрибут. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный атрибут.| 
+| displayName | String | Имя серии обзоров доступа. Обязательный.|
+| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. Обязательный. |
+  descriptionForReviewers | Строка | Контекст обзора, предоставленного рецензентам. Обязательный. |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
@@ -262,7 +262,7 @@ Content-type: application/json
     "recurrence": {
       "pattern": {
         "type": "absoluteMonthly",
-        "dayOfMonth": "5",
+        "dayOfMonth": 5,
         "interval": 3
       },
       "range": {
@@ -340,13 +340,7 @@ Content-type: application/json
       "queryRoot": null
     }
   ],
-  "backupReviewers": [
-    {
-      "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": null
-    }
-  ],
+  "backupReviewers": [],
   "fallbackReviewers": [
     {
       "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
@@ -368,24 +362,20 @@ Content-type: application/json
         "type": "absoluteMonthly",
         "interval": 3,
         "month": 0,
-        "dayOfMonth": 0,
+        "dayOfMonth": 5,
         "daysOfWeek": [],
         "firstDayOfWeek": "sunday",
         "index": "first"
       },
       "range": {
-        "type": "numbered",
+        "type": "noEnd",
         "numberOfOccurrences": 0,
         "recurrenceTimeZone": null,
         "startDate": "2021-05-05",
-        "endDate": "9999-12-31"
+        "endDate": null
       }
     },
-    "applyActions": [
-      {
-        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-      }
-    ]
+    "applyActions": []
   }
 }
 ```

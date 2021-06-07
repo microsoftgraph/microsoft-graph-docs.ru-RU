@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f95258e83603f29990af120624ae91b6a389df74
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb9c2e87321305d8bf4716714953889e0fa1c8d7
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091539"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742687"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Тип ресурса windowsFirewallNetworkProfile
 
@@ -23,20 +23,20 @@ ms.locfileid: "48091539"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|firewallEnabled|[статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Настраивает ведущее устройство на разрешение или блокировку брандмауэра и дополнительной безопасности для профиля сети. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
-|stealthModeBlocked|Boolean|Предотвращение работы сервера в скрытом режиме. Если для Стеалсмодерекуиред и Стеалсмодеблоккед задано значение true, Стеалсмодеблоккед имеет приоритет.|
-|incomingTrafficBlocked|Boolean|Настраивает брандмауэр на блокировку всего входящего трафика независимо от других параметров политики. Если для Инкомингтраффикрекуиред и Инкомингтраффикблоккед задано значение true, Инкомингтраффикблоккед имеет приоритет.|
-|unicastResponsesToMulticastBroadcastsBlocked|Boolean|Настраивает брандмауэр для блокировки одноадресных ответов на многоадресный широковещательный трафик. Если для Уникастреспонсестомултикастброадкастсрекуиред и Уникастреспонсестомултикастброадкастсблоккед задано значение true, UnicastResponsesToMulticastBroadcastsBlocked имеет приоритет.|
-|inboundNotificationsBlocked|Boolean|Запрещает брандмауэру отображать уведомления, если приложение заблокировано для прослушивания порта. Если для Инбаунднотификатионсрекуиред и Инбаунднотификатионсблоккед задано значение true, Инбаунднотификатионсблоккед имеет приоритет.|
-|authorizedApplicationRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения авторизованных правил приложений из групповой политики с элементами из локального хранилища, а не без учета правил локального хранилища. Если для Аусоризедаппликатионрулесфромграупполицинотмержед и Аусоризедаппликатионрулесфромграупполицимержед задано значение true, AuthorizedApplicationRulesFromGroupPolicyMerged имеет приоритет.|
-|globalPortRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения глобальных правил портов из групповой политики с политиками из локального хранилища, а не без учета правил локального хранилища. Если для Глобалпортрулесфромграупполицинотмержед и Глобалпортрулесфромграупполицимержед задано значение true, GlobalPortRulesFromGroupPolicyMerged имеет приоритет.|
-|connectionSecurityRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения правил безопасности подключений из групповой политики с политиками из локального хранилища, а не без учета правил локального хранилища. Если для Коннектионсекуритирулесфромграупполицинотмержед и Коннектионсекуритирулесфромграупполицимержед задано значение true, ConnectionSecurityRulesFromGroupPolicyMerged имеет приоритет.|
-|outboundConnectionsBlocked|Boolean|Настраивает брандмауэр на блокировку всех исходящих подключений по умолчанию. Если для Аутбаундконнектионсрекуиред и Аутбаундконнектионсблоккед задано значение true, Аутбаундконнектионсблоккед имеет приоритет. Этот параметр будет применяться к выпускам Windows версии 1809 и более поздних версий.|
-|inboundConnectionsBlocked|Boolean|Настраивает брандмауэр на блокировку всех входящих подключений по умолчанию. Если для Инбаундконнектионсрекуиред и Инбаундконнектионсблоккед задано значение true, Инбаундконнектионсблоккед имеет приоритет.|
-|securedPacketExemptionAllowed|Boolean|Настраивает брандмауэр, чтобы разрешить ведущему компьютеру отвечать на нежелательный сетевой трафик этого трафика, защищенный IPSec, даже если для Стеалсмодеблоккед задано значение true. Если для Секуредпаккетексемптионблоккед и Секуредпаккетексемптионалловед задано значение true, Секуредпаккетексемптионалловед имеет приоритет.|
-|policyRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения политик правил брандмауэра из групповой политики с политиками из локального хранилища, а не без учета правил локального хранилища. Если для Полицирулесфромграупполицинотмержед и Полицирулесфромграупполицимержед задано значение true, Полицирулесфромграупполицимержед имеет приоритет.|
+|firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Настраивает хост-устройство, чтобы разрешить или заблокировать брандмауэр и усовершенствовать правоприменительных мер безопасности для сетевого профиля. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
+|stealthModeBlocked|Boolean|Запретить работе сервера в режиме стелс. Если stealthModeRequired и StealthModeBlocked являются верными, приоритет отнимает StealthModeBlocked.|
+|incomingTrafficBlocked|Boolean|Настраивает брандмауэр для блокировки всего входящего трафика независимо от других параметров политики. Если значение IncomingTrafficRequired и IncomingTrafficBlocked является верным, приоритет отнимает incomingTrafficBlocked.|
+|unicastResponsesToMulticastBroadcastsBlocked|Boolean|Настраивает брандмауэр, чтобы блокировать одноуровневые ответы на многокастный трафик передачи. Когда UnicastResponsesToMulticastBroadcastsRequired и UnicastResponsesToMulticastBroadcastsBlocked являются верными, UnicastResponsesToMulticastBroadcastsBlocked имеет приоритет.|
+|inboundNotificationsBlocked|Boolean|Предотвращает отображение брандмауэром уведомлений при блокировке приложения в порту. Если inboundNotificationsRequired и InboundNotificationsBlocked являются верными, значение InboundNotificationsBlocked имеет приоритет.|
+|authorizedApplicationRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения правил авторизованного приложения из групповой политики с правилами локального магазина вместо игнорирования правил локального магазина. Если значение AuthorizedApplicationRulesFromGroupPolicyNotMerged и AuthorizedApplicationRulesFromGroupPolicyMerged являются верными, то в приоритете authorizedApplicationRulesFromGroupPolicyMerged.|
+|globalPortRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения глобальных правил порта из групповой политики с правилами локального магазина вместо игнорирования правил локального магазина. Если globalPortRulesFromGroupPolicyNotMerged и GlobalPortRulesFromGroupPolicyMerged являются верными, приоритет отнимает GlobalPortRulesFromGroupPolicyMerged.|
+|connectionSecurityRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения правил безопасности подключения из групповой политики с правилами локального магазина вместо игнорирования правил локального магазина. Если значение ConnectionSecurityRulesFromGroupPolicyNotMerged и ConnectionSecurityRulesFromGroupPolicyMerged являются верными, приоритет отнимает ConnectionSecurityRulesFromGroupPolicyMerged.|
+|outboundConnectionsBlocked|Boolean|Настраивает брандмауэр для блокировки всех исходяющих подключений по умолчанию. Когда OutboundConnectionsRequired и OutboundConnectionsBlocked являются верными, OutboundConnectionsBlocked имеет приоритет. Этот параметр будет применен к Windows версии 1809 и выше.|
+|inboundConnectionsBlocked|Boolean|Настраивает брандмауэр для блокировки всех входящих подключений по умолчанию. Если inboundConnectionsRequired и InboundConnectionsBlocked являются верными, входящиеConnectionsBlocked имеют приоритет.|
+|securedPacketExemptionAllowed|Boolean|Настраивает брандмауэр, чтобы разрешить хост-компьютеру отвечать на нежелательный сетевой трафик этого трафика, защищенный IPSec, даже если установлено, что stealthModeBlocked является верным. Когда securedPacketExemptionBlocked и SecuredPacketExemptionAllowed являются верными, SecuredPacketExemptionAllowed имеет приоритет.|
+|policyRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения политик правил брандмауэра из групповой политики с политиками из локального магазина вместо игнорирования правил локального магазина. Если PolicyRulesFromGroupPolicyNotMerged и PolicyRulesFromGroupPolicyMerged являются верными, то PolicyRulesFromGroupPolicyMerged занимает приоритетное место.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,11 +63,6 @@ ms.locfileid: "48091539"
   "policyRulesFromGroupPolicyMerged": true
 }
 ```
-
-
-
-
-
 
 
 

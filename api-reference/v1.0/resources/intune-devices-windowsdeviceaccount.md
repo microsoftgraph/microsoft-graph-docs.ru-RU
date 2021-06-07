@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f47dfa5af749f7a5e56937b01248e12cd6557d85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28756dbb692ea13def2062653e7887f830368b2c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056592"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755002"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>Тип ресурса windowsDeviceAccount
 
@@ -25,7 +25,7 @@ ms.locfileid: "48056592"
 |:---|:---|:---|
 |password|Строка|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,11 +41,6 @@ ms.locfileid: "48056592"
   "password": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Впптокенаккаунттипе
+title: тип enum vppTokenAccountType
 description: Возможные типы маркера Apple Volume Purchase Program.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8c655bd2f05bc7da057f0c86b7fa481f05aff44
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f874512c6ec2bfa3b0b0c56dd94dc971eafdb2cc
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020568"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754939"
 ---
-# <a name="vpptokenaccounttype-enum-type"></a>тип перечисления Впптокенаккаунттипе
+# <a name="vpptokenaccounttype-enum-type"></a>тип enum vppTokenAccountType
 
 Пространство имен: microsoft.graph
 
@@ -23,13 +23,8 @@ ms.locfileid: "48020568"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|подразделения|нуль|Токен Apple Volume Purchase Program, связанный с бизнес-программой.|
-|закончен|1 |Токен Apple Volume Purchase Program, связанный с программой для образования.|
-
-
-
-
-
+|бизнес|0|Маркер apple Volume Purchase Program, связанный с бизнес-программой.|
+|образование|1|Маркер apple Volume Purchase Program, связанный с образовательной программой.|
 
 
 

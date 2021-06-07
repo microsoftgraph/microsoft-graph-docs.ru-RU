@@ -3,14 +3,14 @@ title: 'отчеты: getGroupArchivedPrintJobs'
 description: Получите список архивных заданий печати для определенной группы.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 0ff77908a5a5f2d695e39f3780d3592a3fd3eb01
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8694b1dff55b0c460386319e84584623f93b1648
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054891"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780983"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>отчеты: getGroupArchivedPrintJobs
 
@@ -59,10 +59,11 @@ GET /reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=start
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "reports-getgrouparchivedprintjobs"
+  "name": "reports-getgrouparchivedprintjobs",
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='{id}',startDateTime={timestamp},endDateTime={timestamp})
+GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(groupId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### <a name="response"></a>Отклик

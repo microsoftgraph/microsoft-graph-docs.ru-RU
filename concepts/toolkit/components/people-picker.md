@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: dd3956e39450946a381b0b90851f248d7cf07b64
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 36a8208b2425bc74922427f7ffcb4c6ec3a10788
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52580024"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780745"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -137,13 +137,13 @@ mgt-people-picker {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| API                                                                                                              | Разрешение  |
-| ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people)                    | People.Read        |
-| [/users](/graph/api/user-list)  | User.ReadBasic.All |
-| [/groups](/group-list)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
-| [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
+| Конфигурация | Разрешение | API
+| --- | ---------- | ------- |
+| `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `type` установлено `Person` или `any` | People.Read | [/me/people](/graph/api/user-list-people) |
+| `type`настройка или `Group` поиск пользователей и настройка `type` или `Group``any` | Group.Read.All | [/groups](/graph/api/group-list) |
+| `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
+| поиск пользователей и `type` настройка `Person` или `any` | People.Read, User.ReadBasic.All | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
 
 ## <a name="authentication"></a>Проверка подлинности
 
@@ -158,6 +158,7 @@ mgt-people-picker {
 |`users`|Список пользователей|Используется при `groupId` указании|
 
 Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)
+
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 
 В более сложных сценариях или настраиваемых пользовательских интерфейсах этот компонент предоставляет несколько методов `protected render*` для переопределения в расширениях компонента.

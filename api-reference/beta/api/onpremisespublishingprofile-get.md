@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 55dbe359f94cc539edcf05617967adda6612f04d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6dd4e1f3cba64236e438063b259906ea5a9ac15
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052098"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781011"
 ---
 # <a name="get-onpremisespublishingprofile"></a>Get onPremisesPublishingProfile
 
@@ -26,7 +26,7 @@ ms.locfileid: "52052098"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:--------------------------------------|:---------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -46,7 +46,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

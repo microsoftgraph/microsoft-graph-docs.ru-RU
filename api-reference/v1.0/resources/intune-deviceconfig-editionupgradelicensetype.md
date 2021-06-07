@@ -1,35 +1,30 @@
 ---
-title: тип перечисления Едитионупграделиценсетипе
-description: Тип лицензии на обновление выпуска
+title: тип enum editionUpgradeLicenseType
+description: Тип лицензии на обновление версии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 37da20642775ae71848f5f683b075f1c58db79fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b055707a491e33696291cbf86494b3f05acbd338
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056718"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754736"
 ---
-# <a name="editionupgradelicensetype-enum-type"></a>тип перечисления Едитионупграделиценсетипе
+# <a name="editionupgradelicensetype-enum-type"></a>тип enum editionUpgradeLicenseType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип лицензии на обновление выпуска
+Тип лицензии на обновление версии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|productKey|нуль|Тип ключа продукта|
-|лиценсефиле|1 |Тип файла лицензии|
-
-
-
-
-
+|productKey|0|Тип ключа продукта|
+|licenseFile|1|Тип файла лицензии|
 
 
 

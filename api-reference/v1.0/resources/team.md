@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d6ebc247ec6868cd32e2ef3790f7542d9eb546fe
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0ef07eddc0bb1f1a4b8a6739f5d8b28c6436038e
+ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682049"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52732170"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -22,7 +22,7 @@ ms.locfileid: "52682049"
 Канал представляет тему и логически обособляет обсуждение в команде.
 
 Каждая команда связана с [группой](../resources/group.md).
-У группы такой же идентификатор, как у команды. Например, /groups/{id}/team совпадает с /teams/{id}.
+У группы такой же идентификатор, как у команды. Например, `/groups/{id}/team` совпадает с `/teams/{id}`.
 Дополнительные сведения о работе с группами и участниками в командах см. в статье [Работа с Microsoft Teams при помощи REST API Microsoft Graph](teams-api-overview.md).
 
 ## <a name="methods"></a>Методы
@@ -55,10 +55,10 @@ ms.locfileid: "52682049"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |displayName|string| Имя команды. |
-|description|string| Необязательное описание для команды. Максимальная длина: 1024 символов. |
+|description|string| Необязательное описание для команды. Максимальная длина: 1024 символа. |
 |classification|string| Необязательная метка. Обычно описывает конфиденциальность данных или работы команды. Должно соответствовать одному из предварительно настроенных наборов в каталоге клиента. |
 |specialization|[teamSpecialization](teamspecialization.md)| Необязательное свойство. Указывает, предназначена ли команда для определенного варианта использования.  У каждой специализации команды есть доступ к уникальным действиям и возможностям, предназначенным для своего варианта использования. |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| Видимость группы и команды. По умолчанию значение "Общедоступно". |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| Видимость группы и команды. Значение по умолчанию — "общедоступно". |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, мемов и наклеек в команде.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.|
 |internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](/office/office-365-management-api/office-365-management-activity-api-reference). |

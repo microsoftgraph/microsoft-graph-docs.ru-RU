@@ -1,39 +1,34 @@
 ---
-title: тип перечисления Ратингфранцемовиестипе
-description: Метки оценок фильмов во Франции
+title: тип enum ratingFranceMoviesType
+description: Метки рейтинга фильмов во Франции
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 231e4eddcd2d2d623e6588987407b807712536ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: abfb291df8428ebc97d9b4db2faa95d562668d18
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041423"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754715"
 ---
-# <a name="ratingfrancemoviestype-enum-type"></a>тип перечисления Ратингфранцемовиестипе
+# <a name="ratingfrancemoviestype-enum-type"></a>тип enum ratingFranceMoviesType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки оценок фильмов во Франции
+Метки рейтинга фильмов во Франции
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
-|аллблоккед|1 |Не разрешать никакие видеоролики|
-|agesAbove10|2 |10 классификация запрещает обблокировка пленки мелкими 10|
-|agesAbove12|4|Классификация не позволяет обменять пленку небольшими уровнями в соответствии с 12|
-|agesAbove16|4 |Классификация "16" запрещает обблокировка пленки мелкими уровнями в 16|
-|agesAbove18|5 |Категория "18" запрещает отбор незначительных элементов в 18|
-
-
-
-
-
+|allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
+|allBlocked|1|Не разрешайте контент фильмов|
+|agesAbove10|2|Классификация 10 запрещает показ фильма несовершеннолетним в возрасте до 10 лет|
+|agesAbove12|3|Классификация 12 запрещает показ фильма несовершеннолетним в возрасте до 12 лет|
+|agesAbove16|4 |Классификация 16 запрещает показ фильма несовершеннолетним в возрасте до 16 лет|
+|agesAbove18|5 |Классификация 18 запрещает проверку несовершеннолетним в возрасте до 18 лет|
 
 
 

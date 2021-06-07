@@ -1,36 +1,31 @@
 ---
-title: тип перечисления Рекуиредпассвордтипе
-description: Возможные значения обязательных паролей.
+title: тип enum requiredPasswordType
+description: Возможные значения необходимых паролей.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8006f6f0ca52893e5ffec2f9134b0d6c1ce8595
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fff639109994c8e094a17af8a8a8f7665a091de4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978078"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754708"
 ---
-# <a name="requiredpasswordtype-enum-type"></a>тип перечисления Рекуиредпассвордтипе
+# <a name="requiredpasswordtype-enum-type"></a>тип enum requiredPasswordType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения обязательных паролей.
+Возможные значения необходимых паролей.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|цифрового|1 |Необходимо указать буквенно-цифровой пароль.|
-|числовых|2 |Необходим числовой пароль.|
-
-
-
-
-
+|deviceDefault|0|Значение устройства по умолчанию, без намерения.|
+|alphanumeric|1|Необходимый альфа-пароль.|
+|числовая|2|Необходимый числовой пароль.|
 
 
 

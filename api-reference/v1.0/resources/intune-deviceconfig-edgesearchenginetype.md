@@ -1,35 +1,30 @@
 ---
-title: тип перечисления Еджесеарченгинетипе
-description: Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
+title: тип enum edgeSearchEngineType
+description: Позволяет ИТ-администратору устанавливать предопределяемую поисковую движок по умолчанию для MDM-Controlled устройств
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e15fde3267960ceab7d6eebef86fb3fef8021c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a7bc2e37b10bfbbb4ff6fee32a22ad5f8e249ed
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056732"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52742904"
 ---
-# <a name="edgesearchenginetype-enum-type"></a>тип перечисления Еджесеарченгинетипе
+# <a name="edgesearchenginetype-enum-type"></a>тип enum edgeSearchEngineType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
+Позволяет ИТ-администратору устанавливать предопределяемую поисковую движок по умолчанию для MDM-Controlled устройств
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|умолчани|нуль|Использует заводские настройки пограничного сервера, чтобы назначить поисковую систему по умолчанию для рынка пользователей|
-|Bing|1 |Устанавливает Bing как поисковую систему по умолчанию|
-
-
-
-
-
+|default|0|Использует заводские параметры Edge для назначения поисковой системы по умолчанию на пользовательском рынке|
+|bing|1|Задает Bing качестве поисковой системы по умолчанию|
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Назначение рецензентов определению обзора доступа с помощью API Graph Microsoft
+title: Назначение рецензентов для проверки доступа с помощью API Graph Microsoft
 description: Узнайте, как использовать API обзоров доступа в Microsoft Graph для назначения рецензентов доступа.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f892e74f5bf7a7aa934872186208e21ede19780a
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: bc6ada083b27a39fa26174c60f7637a02ec1cd8f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579870"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754932"
 ---
-# <a name="assign-reviewers-to-your-access-review-definition-using-the-microsoft-graph-api"></a>Назначение рецензентов определению обзора доступа с помощью API Graph Microsoft
+# <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Назначение рецензентов для проверки доступа с помощью API Graph Microsoft
 
 API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) позволяет программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
 

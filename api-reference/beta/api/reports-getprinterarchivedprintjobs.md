@@ -3,14 +3,14 @@ title: 'отчеты: getPrinterArchivedPrintJobs'
 description: Получите список архивных заданий печати, которые стояли в очереди для определенного принтера.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8a0daedcc8c8b035e6e2ffba7a5a0e49e632f7ec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8c779775284a98ae5e68a6b57bb773c7a1753264
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054898"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52780976"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>отчеты: getPrinterArchivedPrintJobs
 
@@ -59,10 +59,11 @@ GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "reports-getprinterarchivedprintjobs"
+  "name": "reports-getprinterarchivedprintjobs",
+  "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',startDateTime={timestamp},endDateTime={timestamp})
+GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
 
 ##### <a name="response"></a>Отклик

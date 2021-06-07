@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5bcd46f44b60cff148de034ab8c85a62f9e73ad4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca50943efbd224383733ef90bbf5e4b88c5357a8
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056788"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755065"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>Тип ресурса edgeSearchEngineBase
 
@@ -24,7 +24,7 @@ ms.locfileid: "48056788"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -39,11 +39,6 @@ ms.locfileid: "48056788"
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
-
-
-
-
-
 
 
 
