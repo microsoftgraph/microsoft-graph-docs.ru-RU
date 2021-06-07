@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ce4d77c48280e344d279aefa8efa8c9ac609991
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2af1c27ac1097f7571aea1782cdd0dc4c99c2bb7
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063298"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52753813"
 ---
 # <a name="create-windows81generalconfiguration"></a>Создание windows81GeneralConfiguration
 
@@ -23,11 +23,11 @@ ms.locfileid: "48063298"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windows81GeneralConfiguration в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта windows81GeneralConfiguration.
@@ -69,13 +69,13 @@ POST /deviceManagement/deviceConfigurations
 |browserBlockSingleWordEntryOnIntranetSites|Boolean|Указывает, следует ли блокировать переход на сайты интрасети при вводе одного слова.|
 |browserRequireSmartScreen|Boolean|Указывает, обязательно ли использовать фильтр Smart Screen.|
 |browserEnterpriseModeSiteListLocation|String|Расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
-|browserInternetSecurityLevel|[интернетситесекуритилевел](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|Уровень интернет-безопасности. Возможные значения: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[ситесекуритилевел](../resources/intune-deviceconfig-sitesecuritylevel.md)|Уровень безопасности интрасети. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|Уровень интернет-безопасности. Возможные значения: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|Уровень безопасности интрасети. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|String|Расположение хранения отчетов.|
 |browserRequireHighSecurityForRestrictedSites|Boolean|Указывает, обязателен ли высокий уровень безопасности для опасных сайтов.|
 |browserRequireFirewall|Boolean|Указывает, обязательно ли использовать брандмауэр.|
 |browserRequireFraudWarning|Boolean|Указывает, обязательно ли предупреждение о мошенничестве.|
-|browserTrustedSitesSecurityLevel|[ситесекуритилевел](../resources/intune-deviceconfig-sitesecuritylevel.md)|Уровень безопасности надежных сайтов. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|Уровень безопасности надежных сайтов. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |cellularBlockDataRoaming|Boolean|Указывает, следует ли блокировать передачу данных в роуминге.|
 |diagnosticsBlockDataSubmission|Boolean|Указывает, следует ли заблокировать отправку диагностических данных.|
 |passwordBlockPicturePasswordAndPin|Boolean|Указывает, следует ли запретить использование графического пароля и ПИН-кода.|
@@ -84,11 +84,11 @@ POST /deviceManagement/deviceConfigurations
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время бездействия до отключения экрана (в минутах).|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить. Допустимые значения: от 0 до 24.|
-|passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек.|
 |storageRequireDeviceEncryption|Boolean|Указывает, обязательно ли шифрование данных на мобильном устройстве.|
 |updatesRequireAutomaticUpdates|Boolean|Указывает, обязательно ли автоматическое обновление.|
-|userAccountControlSettings|[виндовсусераккаунтконтролсеттингс](../resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md)|Настройки контроля учетных записей. Возможные значения: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md)|Настройки контроля учетных записей. Возможные значения: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|URL-адрес рабочей папки.|
 
 
@@ -196,11 +196,6 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
-
-
-
-
-
 
 
 

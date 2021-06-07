@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c808f6788c6132a5c81f790c60d4c05b5cd4c6eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9fd9cf40d700e6f639eff5f11f008b532241054c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066434"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755765"
 ---
 # <a name="managedappprotection-resource-type"></a>Тип ресурса managedAppProtection
 
@@ -41,22 +41,22 @@ ms.locfileid: "48066434"
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство не подключено к Интернету.|
 |periodOnlineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство подключено к Интернету.|
-|allowedInboundDataTransferSources|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Источники, из которых разрешена передача данных. Возможные значения: `allApps`, `managedApps`, `none`.|
-|allowedOutboundDataTransferDestinations|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Места, в которые разрешена передача данных. Возможные значения: `allApps`, `managedApps`, `none`.|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Источники, из которых разрешена передача данных. Возможные значения: `allApps`, `managedApps`, `none`.|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Места, в которые разрешена передача данных. Возможные значения: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Boolean|Указывает, необходимы ли для использования приложения учетные данные организации.|
-|allowedOutboundClipboardSharingLevel|[манажедаппклипбоардшаринглевел](../resources/intune-mam-managedappclipboardsharinglevel.md)|Разрешенный уровень совместного использования буфера обмена для приложений на управляемом устройстве. Возможные значения: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|Разрешенный уровень совместного использования буфера обмена для приложений на управляемом устройстве. Возможные значения: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
 |dataBackupBlocked|Boolean|Указывает, заблокировано ли резервное копирование данных управляемого приложения.|
 |deviceComplianceRequired|Boolean|Указывает, должно ли устройство соответствовать требованиям.|
-|managedBrowserToOpenLinksRequired|Boolean|Указывает, следует ли открывать Интернет-ссылки в приложении Managed Browser или какие-либо пользовательские браузеры, указанные в Кустомбровсерпротокол (для iOS) или Кустомбровсерпаккажеид/Кустомбровсердисплайнаме (для Android).|
+|managedBrowserToOpenLinksRequired|Boolean|Указывает, следует ли открывать интернет-ссылки в управляемом браузере или любом настраиваемом браузере, указанном CustomBrowserProtocol (для iOS) или CustomBrowserPackageId/CustomBrowserDisplayName (для Android)|
 |saveAsBlocked|Boolean|Указывает, могут ли пользователи сохранять копии защищенных файлов, используя пункт меню "Сохранить как".|
 |periodOfflineBeforeWipeIsEnforced|Duration|Время до удаления всех управляемых данных после отключения приложения от Интернета.|
 |pinRequired|Boolean|Указывает, требуется ли ПИН-код на уровне приложения.|
-|maximumPinRetries|Int32|Максимальное количество неудачных попыток ввода ПИН-кода перед блокированием или очисткой управляемого приложения.|
+|maximumPinRetries|Int32|Максимальное количество неправильных попыток повторить пин-код до блокировки или стирки управляемого приложения.|
 |simplePinBlocked|Boolean|Указывает, заблокирован ли простой ПИН-код.|
 |minimumPinLength|Int32|Минимальная длина ПИН-кода на уровне приложения, если для параметра PinRequired установлено значение True.|
-|pinCharacterSet|[манажедапппинчарактерсет](../resources/intune-mam-managedapppincharacterset.md)|Разрешенный набор символов ПИН-кода на уровне приложения, если для параметра PinRequired установлено значение True. Возможные значения: `numeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|Разрешенный набор символов ПИН-кода на уровне приложения, если для параметра PinRequired установлено значение True. Возможные значения: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|Время до сброса универсального ПИН-кода, если для параметра PinRequired установлено значение True.|
-|allowedDataStorageLocations|Коллекция [манажедаппдатасторажелокатион](../resources/intune-mam-managedappdatastoragelocation.md)|Разрешенные места хранения управляемых данных.|
+|allowedDataStorageLocations|[коллекция managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md)|Разрешенные места хранения управляемых данных.|
 |contactSyncBlocked|Boolean|Указывает, можно ли синхронизировать контакты с устройством пользователя.|
 |printBlocked|Boolean|Указывает, разрешена ли печать из управляемых приложений.|
 |fingerprintBlocked|Boolean|Указывает, можно ли использовать сканер отпечатков пальцев вместо ПИН-кода, если для параметра PinRequired установлено значение True.|
@@ -65,9 +65,9 @@ ms.locfileid: "48066434"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании.|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение.|
-|манажедбровсер|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах следует открывать Интернет-ссылки. Если это свойство задано, Манажедбровсертупенлинксрекуиред должно иметь значение true. Возможные значения: `notConfigured`, `microsoftEdge`.|
+|managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах (ы) необходимо открыть ссылки в Интернете. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным. Возможные значения: `notConfigured`, `microsoftEdge`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -118,7 +118,6 @@ ms.locfileid: "48066434"
   "managedBrowser": "String"
 }
 ```
-
 
 
 

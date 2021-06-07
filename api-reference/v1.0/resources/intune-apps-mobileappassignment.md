@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07a982ddac5fb1f7910f6ae5a6a4fc735a8da60b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7045299e8e7c4375449b4a4d24901970041afe50
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094423"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755128"
 ---
 # <a name="mobileappassignment-resource-type"></a>Тип ресурса mobileAppAssignment
 
@@ -32,12 +32,12 @@ ms.locfileid: "48094423"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,18 +54,14 @@ ms.locfileid: "48094423"
   "id": "String (identifier)",
   "intent": "String",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "String"
   }
 }
 ```
-
-
-
-
-
 
 
 

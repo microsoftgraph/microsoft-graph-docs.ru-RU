@@ -1,37 +1,32 @@
 ---
-title: тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
-description: Тип политики разрешений приложений для рабочего профиля Android по умолчанию.
+title: тип enum androidWorkProfileDefaultAppPermissionPolicyType
+description: Тип политики разрешений по умолчанию для android Work Profile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 82b20abd43e451519b30351aa23886551119bf4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8b358dbc5c0de9c50f442c21213afa2dedd88f3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062829"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755954"
 ---
-# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
+# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>тип enum androidWorkProfileDefaultAppPermissionPolicyType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип политики разрешений приложений для рабочего профиля Android по умолчанию.
+Тип политики разрешений по умолчанию для android Work Profile.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|Подсказка|1 |Появляется.|
-|автопредоставление|2 |Автоматическое предоставление.|
-|автозапрет|4|Автоматическое отклонение.|
-
-
-
-
-
+|deviceDefault|0|Значение устройства по умолчанию, без намерения.|
+|Подсказка|1|Подсказка.|
+|autoGrant|2|Авто грант.|
+|autoDeny|3|Автоматическое отрицание.|
 
 
 

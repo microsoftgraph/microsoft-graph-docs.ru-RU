@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7c020aa549e9e9a7c2520db6893d0cc60f65b8a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f22c1d25b45b31cf682ad95d573fe3b41534dc9
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988284"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755611"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "47988284"
 |fileDigest|Binary|Дайджест файла до шифрования.|
 |fileDigestAlgorithm|String|Алгоритм дайджеста файла.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,11 +53,6 @@ ms.locfileid: "47988284"
   "fileDigestAlgorithm": "String"
 }
 ```
-
-
-
-
-
 
 
 

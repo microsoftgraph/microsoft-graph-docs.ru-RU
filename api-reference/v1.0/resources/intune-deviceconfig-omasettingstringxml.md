@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c85dbc033264715026227be4055a0bf3130a5cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6713977ef36edc43f1d2e00cf489f9906e6bd929
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988263"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755856"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Тип ресурса omaSettingStringXml
 
@@ -32,7 +32,7 @@ ms.locfileid: "47988263"
 |fileName|String|Имя файла, связанное со свойством Value (XML).|
 |value|Двоичный|Значение (массив байтов в кодировке UTF8).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,11 +52,6 @@ ms.locfileid: "47988263"
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

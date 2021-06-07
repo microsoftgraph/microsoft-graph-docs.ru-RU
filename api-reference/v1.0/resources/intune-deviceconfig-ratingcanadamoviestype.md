@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Ратингканадамовиестипе
+title: тип enum ratingCanadaMoviesType
 description: Метки оценки фильмов в Канаде
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a7b781438381cad2f821320659329a42929ad90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f613af3da4ef93706ffa484747a0043012355c09
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041444"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755821"
 ---
-# <a name="ratingcanadamoviestype-enum-type"></a>тип перечисления Ратингканадамовиестипе
+# <a name="ratingcanadamoviestype-enum-type"></a>тип enum ratingCanadaMoviesType
 
 Пространство имен: microsoft.graph
 
@@ -23,18 +23,13 @@ ms.locfileid: "48041444"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
-|аллблоккед|1 |Не разрешать никакие видеоролики|
-|обобщен|2 |Классификация G подходит для всех возраста|
-|паренталгуиданце|4|Категория PG рекомендует родительские рекомендации|
-|agesAbove14|4 |Классификация 14A подходит для зрителей выше 14 или более ранних версий|
-|agesAbove18|5 |Классификация 18A подходит для зрителей более 18 лет и старше|
-|ограниченной|6 |Классификация R ограничена до 18 лет и старше|
-
-
-
-
-
+|allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
+|allBlocked|1|Не разрешайте контент фильмов|
+|общие|2|Классификация G подходит для всех возрастов|
+|parentalGuidance|3|Классификация PG рекомендует родительские рекомендации|
+|agesAbove14|4 |Классификация 14A подходит для зрителей старше 14 лет|
+|agesAbove18|5 |Классификация 18A подходит для зрителей старше 18 лет|
+|ограниченный|6 |Классификация R ограничена до 18 лет и старше|
 
 
 

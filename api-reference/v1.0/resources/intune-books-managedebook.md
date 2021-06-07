@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ee5bb486346e315ae00b0e54f44a9fd9b7613c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d743b425cb57a0b233ae83e5e044fd63fc85890e
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088673"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755975"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -30,9 +30,9 @@ ms.locfileid: "48088673"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя электронной книги.|
-|description|Строка|Описание.|
+|id|String|Ключ объекта.|
+|displayName|String|Имя электронной книги.|
+|description|String|Описание.|
 |publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги.|
@@ -41,7 +41,7 @@ ms.locfileid: "48088673"
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги.|
@@ -76,11 +76,6 @@ ms.locfileid: "48088673"
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

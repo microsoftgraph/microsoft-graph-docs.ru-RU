@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Комплианцеманажементпартнерассигнмент
-description: Нацеленность для группы пользователей для партнера по управлению соответствием требованиям
+title: тип ресурса complianceManagementPartnerAssignment
+description: Ориентация группы пользователей для партнера по управлению соответствием требованиям
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9bdcfd0edcdf4e93b3bf11f8d30a3cef5cc9d60
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 638a50d7c8a6f1723c841c21f06d8cb44ac65460
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072972"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755653"
 ---
-# <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса Комплианцеманажементпартнерассигнмент
+# <a name="compliancemanagementpartnerassignment-resource-type"></a>тип ресурса complianceManagementPartnerAssignment
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Нацеленность для группы пользователей для партнера по управлению соответствием требованиям
+Ориентация группы пользователей для партнера по управлению соответствием требованиям
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевой объект назначения группы.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель группового назначения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -39,11 +39,11 @@ ms.locfileid: "48072972"
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartnerAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "String"
   }
 }
 ```
-
 
 
 

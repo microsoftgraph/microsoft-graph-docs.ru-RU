@@ -1,37 +1,32 @@
 ---
-title: тип перечисления Впптокенсинкстатус
-description: Возможные состояния синхронизации, связанные с токеном Apple Volume Purchase Program.
+title: тип enum vppTokenSyncStatus
+description: Возможные состояния синхронизации, связанные с маркером программы покупки тома Apple.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ba530475e03a2aef3b34d5387fc61d500fc94585
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1468240f5d83002d21336299486bceca259a207f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025250"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755695"
 ---
-# <a name="vpptokensyncstatus-enum-type"></a>тип перечисления Впптокенсинкстатус
+# <a name="vpptokensyncstatus-enum-type"></a>тип enum vppTokenSyncStatus
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные состояния синхронизации, связанные с токеном Apple Volume Purchase Program.
+Возможные состояния синхронизации, связанные с маркером программы покупки тома Apple.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Состояние по умолчанию.|
-|inProgress|1 |Выполняется Последняя синхронизация.|
-|готовы|2 |Последняя синхронизация выполнена успешно.|
-|сбоев|4|Не удалось выполнить последнюю синхронизацию.|
-
-
-
-
-
+|нет|0|Состояние по умолчанию.|
+|inProgress|1|Последняя синхронизация в процессе.|
+|завершено|2|Последняя синхронизация выполнена успешно.|
+|не удалось|3|Последняя синхронизация не удалась.|
 
 
 

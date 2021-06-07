@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8682b272e98bb1b49731362b17c9b24bf920509e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9008d311d3178d134d6fd4aaec6066e6918009d1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088638"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755968"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Тип ресурса userInstallStateSummary
 
@@ -32,13 +32,13 @@ ms.locfileid: "48088638"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceStates|Коллекция [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Состояние установки электронной книги.|
@@ -61,11 +61,6 @@ ms.locfileid: "48088638"
   "notInstalledDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

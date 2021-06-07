@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06b72a0ae70c9720298cb23efcd6967602a47990
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 00c3bf8fc86dc1f7a69b43b438824b2a10ffb74a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048556"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755149"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -27,10 +27,11 @@ ms.locfileid: "48048556"
 |v9_0|Boolean|Версия 9.0 или выше.|
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Boolean|Версия 12,0 или более поздняя.|
-|v13_0|Boolean|Версия 13,0 или более поздняя.|
+|v12_0|Boolean|Версия 12.0 или более поздней версии.|
+|v13_0|Boolean|Версия 13.0 или более поздней версии.|
+|v14_0|Boolean|Версия 14.0 или более поздней версии.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,14 +49,10 @@ ms.locfileid: "48048556"
   "v10_0": true,
   "v11_0": true,
   "v12_0": true,
-  "v13_0": true
+  "v13_0": true,
+  "v14_0": true
 }
 ```
-
-
-
-
-
 
 
 

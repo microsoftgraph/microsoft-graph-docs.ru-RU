@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64c3dee18991b796096ff7c8c122885884a584b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 88542997e432220d23102b6b2d02372f43ac909a
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055087"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756164"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Функция downloadApplePushNotificationCertificateSigningRequest
 
@@ -23,11 +23,11 @@ ms.locfileid: "48055087"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,11 +44,11 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха эта функция возвращает `200 OK` код отклика и строку в теле отклика.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` строку в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -69,11 +69,6 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
-
-
-
-
-
 
 
 

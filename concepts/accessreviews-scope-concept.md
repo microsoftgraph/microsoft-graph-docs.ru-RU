@@ -1,18 +1,18 @@
 ---
-title: Настройка области определения обзора доступа с помощью API microsoft Graph
+title: Настройка области обзора доступа с помощью API microsoft Graph
 description: Узнайте, как использовать API обзоров доступа в Microsoft Graph для просмотра доступа к ресурсам Azure AD.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: eff1d141d5c03190df4acedf7c3ed428d4cb24cd
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: fe61a015ab88e5e3c562b8837d57b997400f8ed3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579865"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755632"
 ---
-# <a name="configure-the-scope-of-your-access-review-definition-using-the-microsoft-graph-api"></a>Настройка области определения обзора доступа с помощью API microsoft Graph
+# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью API microsoft Graph
 
 API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) позволяет программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
 

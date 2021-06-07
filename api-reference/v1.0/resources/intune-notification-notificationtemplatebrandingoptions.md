@@ -1,37 +1,32 @@
 ---
-title: тип перечисления Нотификатионтемплатебрандингоптионс
-description: Параметры фирменной символики для шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune.
+title: notificationTemplateBrandingOptions enum type
+description: Параметры брендинга шаблона сообщений. Фирменная символика определяется в консоли администрирования Intune.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cbd49d5c9f78db8413b130c8163fc3741e91aa66
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22534d5656af931a8e68ce4ff536bc5e8d256c93
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072986"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755667"
 ---
-# <a name="notificationtemplatebrandingoptions-enum-type"></a>тип перечисления Нотификатионтемплатебрандингоптионс
+# <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions enum type
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры фирменной символики для шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune.
+Параметры брендинга шаблона сообщений. Фирменная символика определяется в консоли администрирования Intune.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет фирменной символики.|
-|инклудекомпанилого|1 |Включите логотип компании.|
-|инклудекомпанинаме|2 |Включите название компании.|
-|инклудеконтактинформатион|4 |Включение контактной информации.|
-
-
-
-
-
+|нет|0|Нет брендинга.|
+|includeCompanyLogo|1|Включай логотип компании.|
+|includeCompanyName|2|Включай имя компании.|
+|includeContactInformation|4 |Включай контактные данные.|
 
 
 

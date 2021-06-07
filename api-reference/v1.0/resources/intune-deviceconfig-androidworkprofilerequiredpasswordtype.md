@@ -1,41 +1,36 @@
 ---
-title: тип перечисления Андроидворкпрофилерекуиредпассвордтипе
-description: Необходимый тип пароля для рабочего профиля Android.
+title: тип enum androidWorkProfileRequiredPasswordType
+description: Рабочий профиль Android требуется тип пароля.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c87a56e6b53654597a41742d835d7de5eaddcc2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 741a86f1ce4654fe6d5495521f055490d4c068bc
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051167"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755947"
 ---
-# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>тип перечисления Андроидворкпрофилерекуиредпассвордтипе
+# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>тип enum androidWorkProfileRequiredPasswordType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Необходимый тип пароля для рабочего профиля Android.
+Рабочий профиль Android требуется тип пароля.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|ловсекуритибиометрик|1 |Необходим пароль на основе биометрического уровня безопасности.|
-|Обязательный|2 |Обязательно.|
-|атлеастнумерик|4|Необходим по крайней мере числовой пароль.|
-|нумериккомплекс|4 |Необходим числовой сложный пароль.|
-|атлеасталфабетик|5 |По крайней мере необходимо указать по крайней мере буквенный пароль.|
-|атлеасталфанумерик|6 |Необходимо указать по крайней мере буквенно-цифровые пароли.|
-|алфанумериквиссимболс|7 |По крайней мере буквенно-цифровые символы и пароль не требуются.|
-
-
-
-
-
+|deviceDefault|0|Значение устройства по умолчанию, без намерения.|
+|lowSecurityBiometric|1|Требуется пароль с низкой безопасностью на основе биометрии.|
+|Обязательный|2|Обязательный.|
+|atLeastNumeric|3|Требуется по крайней мере числовая пароль.|
+|numericComplex|4 |Требуется числовый сложный пароль.|
+|atLeastAlphabetic|5 |Требуется по крайней мере алфавитный пароль.|
+|atLeastAlphanumeric|6 |Требуется, по крайней мере, альфа-числовая пароль.|
+|alphanumericWithSymbols|7 |По крайней мере, альфа-число с паролем символов.|
 
 
 

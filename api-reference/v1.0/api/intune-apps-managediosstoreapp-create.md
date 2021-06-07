@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f8d2748e3ea1c2b57a7e9906ae8d3bea11dcfec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bde2728f147c7a7208156fede8ccc4722d3c8db0
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997461"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754177"
 ---
 # <a name="create-managediosstoreapp"></a>Create managedIOSStoreApp
 
@@ -21,13 +21,13 @@ ms.locfileid: "47997461"
 Создание объекта [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceAppManagement/mobileApps
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта managedIOSStoreApp в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта managedIOSStoreApp.
@@ -64,8 +64,8 @@ POST /deviceAppManagement/mobileApps
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appAvailability|[манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Унаследованный от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md)|
 |bundleId|String|Идентификатор пакета приложения.|
 |appStoreUrl|String|AppStoreUrl для Apple.|
@@ -84,7 +84,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1104
+Content-length: 1124
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -119,7 +119,8 @@ Content-length: 1104
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
@@ -129,7 +130,7 @@ Content-length: 1104
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1276
+Content-Length: 1296
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -167,15 +168,11 @@ Content-Length: 1276
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
-
-
-
-
-
 
 
 

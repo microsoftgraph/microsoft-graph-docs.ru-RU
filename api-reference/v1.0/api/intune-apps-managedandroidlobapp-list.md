@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c706031566a2de7c3a14d0aaf951565e0cceee38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 662f356d5ff79f73646eb2fe32d08a972e5d0aba
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973122"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754408"
 ---
 # <a name="list-managedandroidlobapps"></a>Перечисление объектов managedAndroidLobApp
 
@@ -23,11 +23,11 @@ ms.locfileid: "47973122"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1510
+Content-Length: 1558
 
 {
   "value": [
@@ -102,7 +102,9 @@ Content-Length: 1510
         "v4_3": true,
         "v4_4": true,
         "v5_0": true,
-        "v5_1": true
+        "v5_1": true,
+        "v10_0": true,
+        "v11_0": true
       },
       "versionName": "Version Name value",
       "versionCode": "Version Code value"
@@ -110,11 +112,6 @@ Content-Length: 1510
   ]
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32186cd4c5b4321d668e350b5f03ec6e127399cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c42ea0ca8175b22d24061133a8c748f7225e2dd3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094458"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755135"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
 
@@ -28,7 +28,7 @@ ms.locfileid: "48094458"
 |:---|:---|:---|
 |useDeviceContext|Boolean|Указывает, следует ли использовать контекст работы устройства для мобильного приложения Microsoft Store для бизнеса.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,11 +44,6 @@ ms.locfileid: "48094458"
   "useDeviceContext": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6011accbde9a0670a2a780aeeea99b17e9c19237
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df60cbab44f622f4620514594202a60582a0cf76
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985113"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756150"
 ---
 # <a name="wipe-action"></a>Действие wipe
 
@@ -23,11 +23,11 @@ ms.locfileid: "47985113"
 ## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices. Привилижедоператион. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -56,6 +56,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |keepEnrollmentData|Boolean|Н/Д|
 |keepUserData|Boolean|Н/Д|
 |macOsUnlockCode|String|Пока не задокументировано.|
+|persistEsimDataPlan|Boolean|Н/Д|
 
 
 
@@ -70,12 +71,13 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 109
+Content-length: 141
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
-  "macOsUnlockCode": "Mac Os Unlock Code value"
+  "macOsUnlockCode": "Mac Os Unlock Code value",
+  "persistEsimDataPlan": true
 }
 ```
 
@@ -84,11 +86,6 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

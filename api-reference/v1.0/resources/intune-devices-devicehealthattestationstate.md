@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a4e9b7e916f33bc6c472c5c90bd440a246f7016
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89a8c990802a63bf72f36499e222321f83a0dade
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091203"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755023"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Тип ресурса deviceHealthAttestationState
 
@@ -56,7 +56,7 @@ ms.locfileid: "48091203"
 |healthStatusMismatchInfo|String|Этот атрибут отображается, когда служба DHA обнаруживает ошибку целостности данных.|
 |healthAttestationSupportedStatus|String|Этот атрибут указывает, поддерживается ли DHA для устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -103,11 +103,6 @@ ms.locfileid: "48091203"
   "healthAttestationSupportedStatus": "String"
 }
 ```
-
-
-
-
-
 
 
 

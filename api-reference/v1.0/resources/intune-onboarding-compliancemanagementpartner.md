@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Комплианцеманажементпартнер
-description: Партнер по управлению соответствием для всех платформ
+title: тип ресурсов complianceManagementPartner
+description: Партнер по управлению соответствием требованиям для всех платформ
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44bcef5d5f593ff986ec4cee36a461a3d79341fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b59ed2be941a03b91cbec91e16d822ddf73ecbe4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072979"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755639"
 ---
-# <a name="compliancemanagementpartner-resource-type"></a>Тип ресурса Комплианцеманажементпартнер
+# <a name="compliancemanagementpartner-resource-type"></a>тип ресурсов complianceManagementPartner
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Партнер по управлению соответствием для всех платформ
+Партнер по управлению соответствием требованиям для всех платформ
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Комплианцеманажементпартнерс](../api/intune-onboarding-compliancemanagementpartner-list.md)|Коллекция [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md)|Список свойств и связей объектов [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .|
-|[Получение Комплианцеманажементпартнер](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Чтение свойств и связей объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .|
-|[Создание Комплианцеманажементпартнер](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Создание нового объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .|
-|[Удаление Комплианцеманажементпартнер](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Нет|Удаляет объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md).|
-|[Обновление Комплианцеманажементпартнер](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Обновление свойств объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) .|
+|[Список complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[коллекция complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Список свойств и связей объектов [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
+|[Получить complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
+|[Создание complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Создание нового [объекта complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
+|[Удаление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Нет.|Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
+|[Обновление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Обновление свойств объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта|
-|lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
-|partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Строка|Отображаемое имя партнера|
-|макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
-|андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
-|иосонбоардед|Boolean|Партнер, подключенный к устройствам iOS.|
-|макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
-|андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|
-|иосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с iOS через партнера.|
+|id|String|Id объекта|
+|lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|displayName|String|Отображаемое имя партнера|
+|macOsOnboarded|Boolean|Партнер, на борту для устройств Mac.|
+|AndroidOnboarded|Boolean|Партнер, на борту для android-устройств.|
+|iosOnboarded|Boolean|Партнер, на борту для устройств ios.|
+|macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
+|AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
+|iosEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -68,7 +68,8 @@ ms.locfileid: "48072979"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
       }
     }
   ],
@@ -76,7 +77,8 @@ ms.locfileid: "48072979"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
       }
     }
   ],
@@ -84,13 +86,13 @@ ms.locfileid: "48072979"
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "String"
       }
     }
   ]
 }
 ```
-
 
 
 

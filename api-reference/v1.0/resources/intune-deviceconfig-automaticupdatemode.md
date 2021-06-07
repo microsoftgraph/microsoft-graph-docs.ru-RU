@@ -1,18 +1,18 @@
 ---
-title: тип перечисления свойства automaticupdatemode
+title: тип enum automaticUpdateMode
 description: Возможные значения для режима автоматического обновления.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e02f1a3ed99840382148d4f1434df667e2391739
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4cd222db425a9a8a2647f2ffbeb6056dddbe1c5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051118"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755905"
 ---
-# <a name="automaticupdatemode-enum-type"></a>тип перечисления свойства automaticupdatemode
+# <a name="automaticupdatemode-enum-type"></a>тип enum automaticUpdateMode
 
 Пространство имен: microsoft.graph
 
@@ -23,17 +23,12 @@ ms.locfileid: "48051118"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|нотифидовнлоад|1 |Уведомлять при скачивании.|
-|аутоинсталлатмаинтенанцетиме|2 |Автоматическая установка во время обслуживания.|
-|аутоинсталландребутатмаинтенанцетиме|4|Автоматическая установка и перезагрузка во время обслуживания.|
-|аутоинсталландребутатсчедуледтиме|4 |Автоматическая установка и перезагрузка в запланированное время.|
-|аутоинсталландребутвисаутендусерконтрол|5 |Автоматическая установка и перезапуск без управления конечными пользователями|
-
-
-
-
-
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|notifyDownload|1|Уведомление о загрузке.|
+|autoInstallAtMaintenanceTime|2|Автоматическая установка во время обслуживания.|
+|autoInstallAndRebootAtMaintenanceTime|3|Автоматическая установка и перезагрузка во время обслуживания.|
+|autoInstallAndRebootAtScheduledTime|4 |Автоматическая установка и перезагрузка в запланированное время.|
+|autoInstallAndRebootWithoutEndUserControl|5 |Автоматическая установка и перезапуск без управления конечным пользователем|
 
 
 

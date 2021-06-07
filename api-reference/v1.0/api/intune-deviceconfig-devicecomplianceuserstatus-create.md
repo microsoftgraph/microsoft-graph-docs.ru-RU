@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06fd176aa05c7c75084d3073c8424ffe06db835e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68bc166b3d85200fd5df08c0b2d9ddca93644f81
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985225"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756598"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Создание объекта deviceComplianceUserStatus
 
@@ -23,11 +23,11 @@ ms.locfileid: "47985225"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceComplianceUserStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceComplianceUserStatus.
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 |id|String|Ключ объекта.|
 |userDisplayName|String|Имя пользователя в объекте DevicePolicyStatus.|
 |devicesCount|Int32|Количество устройств для этого пользователя.|
-|status|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
@@ -99,11 +99,6 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

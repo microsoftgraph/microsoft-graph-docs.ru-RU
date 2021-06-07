@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08b711eb4f1d1d79e61879386a24c546b7bda8ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 342f773d48b4918693b6062aba161ce72c82d743
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018174"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756066"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Тип ресурса iosVppAppAssignmentSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "48018174"
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,11 +46,6 @@ ms.locfileid: "48018174"
   "vpnConfigurationId": "String"
 }
 ```
-
-
-
-
-
 
 
 

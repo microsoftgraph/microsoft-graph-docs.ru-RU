@@ -1,38 +1,33 @@
 ---
-title: тип перечисления Виндовсарчитектуре
-description: Содержит свойства для архитектуры Windows.
+title: тип enum windowsArchitecture
+description: Содержит свойства для Windows архитектуры.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d7e2339af550ed193894f1eb457216fc1c64c6a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69cd1a5f30157f9fa82222fa48f19e7501772ed6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032511"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755996"
 ---
-# <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
+# <a name="windowsarchitecture-enum-type"></a>тип enum windowsArchitecture
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для архитектуры Windows.
+Содержит свойства для Windows архитектуры.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Флаги не заданы.|
-|платформы|1 |Поддерживается ли тип архитектуры x86 Windows.|
-|x|2 |Поддерживается ли тип архитектуры Windows x64.|
-|руки|4 |Поддерживается ли тип архитектуры Windows ARM.|
-|определенно|8 |Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
-
-
-
-
-
+|нет|0|Нет набора флагов.|
+|x86|1|Поддерживается ли тип архитектуры Windows X86 или нет.|
+|x64|2|Поддерживается ли тип архитектуры Windows X64 или нет.|
+|arm|4 |Поддерживается ли Windows типа архитектуры Arm или нет.|
+|нейтральный|8 |Поддерживается ли Windows типа архитектуры.|
 
 
 

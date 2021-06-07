@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Мдмаусорити
+title: тип enum mdmAuthority
 description: Центр управления мобильными устройствами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b5a3d85e05a68cc166a2f197f37d2352e60f7fac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8225a76f32fb415370ca3e5f23df0f9228fd426c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066357"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755625"
 ---
-# <a name="mdmauthority-enum-type"></a>тип перечисления Мдмаусорити
+# <a name="mdmauthority-enum-type"></a>тип enum mdmAuthority
 
 Пространство имен: microsoft.graph
 
@@ -23,15 +23,10 @@ ms.locfileid: "48066357"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Unknown|
-|корпоративного|1 |Intune|
-|SCCM|2 |SCCM|
-|Office365|4|Office365|
-
-
-
-
-
+|unknown|0|Unknown|
+|intune|1|Intune|
+|sccm|2|SCCM|
+|office365|3|Office365|
 
 
 

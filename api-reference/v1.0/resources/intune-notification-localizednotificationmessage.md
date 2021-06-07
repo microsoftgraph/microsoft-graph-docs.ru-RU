@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecc7e479ccc2909b96fbcb2b9d9a12900716ea25
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 403952300d9072072b99f0dd58aa56e32ca22d69
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073000"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755716"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>Тип ресурса localizedNotificationMessage
 
@@ -32,14 +32,14 @@ ms.locfileid: "48073000"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |locale|String|Языковой стандарт, для которого предназначено сообщение.|
 |subject|String|Тема шаблона сообщения.|
 |messageTemplate|String|Содержимое шаблона сообщения.|
 |isDefault|Boolean|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте значение true для аналогичного свойства другого локализованного сообщения уведомления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,11 +61,6 @@ ms.locfileid: "48073000"
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

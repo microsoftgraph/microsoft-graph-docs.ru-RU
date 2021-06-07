@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbab98a859128ab2700888ca0671b7551d50346e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2af65c341f665fd358d03619a3cd3606723df123
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079188"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52754953"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -31,10 +31,10 @@ ms.locfileid: "48079188"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта.|
-|mobileDeviceManagementAuthority|[мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
+|id|String|GUID объекта.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,28 +52,6 @@ ms.locfileid: "48079188"
   "mobileDeviceManagementAuthority": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-
-"Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md",
-
-"Warning: Schema type organization has a different BaseType value microsoft.graph.directoryObject than the documentation .",
-
-"Warning: Schema type organization has a different OpenType value False than the documentation True.",
-
-"Warning: Resource organization has multiple declarations with mismatched OpenType declarations."
-
-  ],
-
-}
--->
-
-
-
-
-
 
 
 

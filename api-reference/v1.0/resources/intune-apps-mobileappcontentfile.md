@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4aaa960b7d4f5019b7baf6badcc2158cc7da3442
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: add63f9cea56caec2416815669a2584ca43a8ca1
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094381"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756024"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Тип ресурса mobileAppContentFile
 
@@ -36,16 +36,16 @@ ms.locfileid: "48094381"
 |:---|:---|:---|
 |azureStorageUri|String|URI службы хранилища Azure.|
 |isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
-|id|Строка|Идентификатор файла.|
+|id|String|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
 |name|String|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
 |sizeEncrypted|Int64|Размер файла после шифрования.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
 |manifest|Binary|Данные манифеста.|
-|uploadState|[мобилеаппконтентфилеуплоадстате](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -71,11 +71,6 @@ ms.locfileid: "48094381"
   "uploadState": "String"
 }
 ```
-
-
-
-
-
 
 
 

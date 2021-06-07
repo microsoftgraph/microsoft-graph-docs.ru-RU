@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31c1ea3b73e7b76e2a3a96184b9bfd09674adbce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c975ad6e903a6cea941bfc72c41d3ed378b3cfe
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048465"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755037"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 
@@ -48,7 +48,7 @@ ms.locfileid: "48048465"
 |passwordExpirationDays|Int32|Срок действия пароля (в днях).|
 |passwordMinimumLength|Int32|Минимальная длина пароля.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
-|passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых требуется запретить.|
 |requireHealthyDeviceReport|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
 |osMinimumVersion|String|Минимальная версия Windows 10.|
@@ -61,7 +61,7 @@ ms.locfileid: "48048465"
 |codeIntegrityEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
 |storageRequireEncryption|Boolean|Указывает на то, что шифрование на устройствах с Windows должно быть обязательным.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
@@ -110,11 +110,6 @@ ms.locfileid: "48048465"
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

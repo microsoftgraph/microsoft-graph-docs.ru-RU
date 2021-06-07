@@ -1,36 +1,31 @@
 ---
-title: тип перечисления Виндовшеллофорбусинесспинусаже
-description: Параметры использования ПИН-кода Windows Hello для бизнеса
+title: тип enum windowsHelloForBusinessPinUsage
+description: Windows Параметры использования контактов Hello для бизнеса
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f47979604e1693d235d3e78ade99821359cd443
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce0fbd2b8230128e8df2d684a15f553bc586ebdc
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978022"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755688"
 ---
-# <a name="windowshelloforbusinesspinusage-enum-type"></a>тип перечисления Виндовшеллофорбусинесспинусаже
+# <a name="windowshelloforbusinesspinusage-enum-type"></a>тип enum windowsHelloForBusinessPinUsage
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры использования ПИН-кода Windows Hello для бизнеса
+Windows Параметры использования контактов Hello для бизнеса
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|разрешенных|нуль|Пока не задокументировано.|
-|Обязательный|1 |Пока не задокументировано.|
-|разрешена|2 |Пока не задокументировано.|
-
-
-
-
-
+|разрешено|0|Разрешено использование определенного правила пин-кода|
+|Обязательный|1|Принудительное использование определенного правила пин-кода|
+|отостановка|2|Forbit использование определенного правила пин-кода|
 
 
 

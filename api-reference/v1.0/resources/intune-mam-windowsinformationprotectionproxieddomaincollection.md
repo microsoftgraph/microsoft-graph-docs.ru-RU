@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8df7439bec871e8b4c7ea1a8f15829b60f2fa21f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 987ae09f46c9bb2f0c6dc5481320d07ae250b01c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086534"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52755730"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Тип ресурса windowsInformationProtectionProxiedDomainCollection
 
@@ -23,10 +23,10 @@ ms.locfileid: "48086534"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя|
+|displayName|String|Отображаемое имя|
 |proxiedDomains|Коллекция объектов [proxiedDomain](../resources/intune-mam-proxieddomain.md)|Коллекция проксируемых доменов|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,11 +49,6 @@ ms.locfileid: "48086534"
   ]
 }
 ```
-
-
-
-
-
 
 
 
