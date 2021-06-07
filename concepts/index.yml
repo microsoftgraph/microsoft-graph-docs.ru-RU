@@ -1,113 +1,128 @@
 ### YamlMime:Hub
 title: Документация по Microsoft Graph
+summary: 'Узнайте, как использовать microsoft Graph для доступа к данным и аналитике в Microsoft 365, Windows 10 и Enterprise Mobility + Security. Просмотрите ссылку на API, пример кода, учебники и другие.'
 brand: m365
 metadata:
   title: Документация по Microsoft Graph
-  description: Microsoft Graph предоставляет единую модель программирования, которую можно использовать для создания приложений для организаций и потребителей, взаимодействующих с данными миллионов пользователей. Вы можете использовать REST API Microsoft Graph для доступа к данным в Azure Active Directory, службах Office 365, службах Enterprise Mobility and Security, службах Windows 10, Dynamics 365 и т. д. Ознакомьтесь с нашей документацией, чтобы узнать больше о том, как использовать API Microsoft Graph.
+  description: 'Microsoft Graph предоставляет единую модель программирования, которую можно использовать для создания приложений для организаций и потребителей, взаимодействующих с данными миллионов пользователей. Вы можете использовать REST API Microsoft Graph для доступа к данным в Azure Active Directory, службах Office 365, службах Enterprise Mobility and Security, службах Windows 10, Dynamics 365 и т. д. Ознакомьтесь с нашей документацией, чтобы узнать больше о том, как использовать API Microsoft Graph.'
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.date: 02/28/2020
+  ms.date: 05/24/2021
   featureFlags:
-  - clicktale
-  ms.openlocfilehash: a015eb68954a7c08c4cbe618cb0af4943734cfb5
-  ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
-  ms.translationtype: MT
-  ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "50239914"
+    - clicktale
 highlightedContent:
   items:
-  - title: Обзор Microsoft Graph
-    itemType: overview
-    url: ./overview.md
-  - title: Службы и компоненты
-    itemType: concept
-    url: ./overview-major-services.md
-  - title: Песочница Graph
-    itemType: deploy
-    url: https://developer.microsoft.com/graph/graph-explorer/
-  - title: Новые возможности Microsoft Graph
-    itemType: overview
-    url: ./whats-new-overview.md
-  - title: REST API Microsoft Graph версии 1.0
-    itemType: reference
-    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-  - title: Бета-версия REST API Microsoft Graph
-    itemType: reference
-    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+    - title: Что такое Microsoft Graph?
+      itemType: overview
+      url: ./overview.md
+    - title: К чему можно получить доступ через microsoft Graph?
+      itemType: concept
+      url: ./overview-major-services.md
+    - title: 'Новые и обновленные API, SDKs и средства'
+      itemType: whats-new
+      url: ./whats-new-overview.md
+    - title: Microsoft Graph REST API
+      itemType: reference
+      url: 'https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0'
 conceptualContent:
+  title: Работа с microsoft Graph
   items:
-  - title: Обзор
-    links:
-    - url: ./users-you-can-reach.md
-      itemType: concept
-      text: Пользователи, с которыми вы можете связаться
-    - url: ./data-connect-overview.md
-      itemType: concept
-      text: Подключение к данным Microsoft Graph
-    - url: https://developer.microsoft.com/graph/quick-start
-      itemType: quickstart
-      text: Примеры использования
-    - url: ./tutorials.yml
-      itemType: tutorial
-      text: Руководства
-  - title: Узнать
-    links:
-    - url: ./azuread-users-concept-overview.md
-      itemType: overview
-      text: Пользователи
-    - url: ./teams-concept-overview.md
-      itemType: overview
-      text: Командная работа
-    - url: ./onedrive-concept-overview.md
-      itemType: overview
-      text: Файлы
-    - url: ./outlook-calendar-concept-overview.md
-      itemType: overview
-      text: Календарь
-    - url: ./outlook-mail-concept-overview.md
-      itemType: overview
-      text: Почта
-    - url: ./azuread-identity-access-management-concept-overview.md
-      itemType: overview
-      text: Удостоверения и доступ
-  - title: Разработка
-    links:
-    - url: ./auth/auth-concepts.md
-      itemType: concept
-      text: Получение маркеров аутентификации
-    - url: ./use-the-api.md
-      itemType: overview
-      text: Использование API
-    - url: ./migrate-azure-ad-graph-planning-checklist.md
-      itemType: overview
-      text: Миграция
-    - url: ./sdks/sdks-overview.md
-      itemType: overview
-      text: Использование пакетов SDK
-    - url: ./toolkit/overview.md
-      itemType: overview
-      text: Использование набора средств
+    - title: Пользователи
+      links:
+        - url: ./azuread-users-concept-overview.md
+          itemType: overview
+          text: Доступ и непосредственное манипулировать ресурсами пользователей.
+    - title: Группы
+      links:
+        - url: ./office365-groups-concept-overview.md
+          itemType: overview
+          text: Включение совместной работы с пользователями и интеграции между службами.
+    - title: Microsoft Teams командной работы
+      links:
+        - url: ./teams-concept-overview.md
+          itemType: overview
+          text: Интеграция с Microsoft Teams.
+    - title: OneDrive хранения файлов
+      links:
+        - url: ./onedrive-concept-overview.md
+          itemType: overview
+          text: Работа с различными типами файлов из OneDrive.
+    - title: Outlook календаря и почты
+      links:
+        - url: ./outlook-calendar-concept-overview.md
+          itemType: overview
+          text: 'Управление календарями, такими как создание события.'
+        - url: ./outlook-mail-concept-overview.md
+          itemType: overview
+          text: Доступ и управление сообщениями и данными почты.
+    - title: Excel книги и диаграммы
+      links:
+        - url: ./excel-concept-overview.md
+          itemType: overview
+          text: Чтение и изменение Excel файлов.
+    - title: Управление идентификацией и доступом
+      links:
+        - url: ./azuread-identity-access-management-concept-overview.md
+          itemType: overview
+          text: Используйте методы Azure AD для управления доступом и проверки подлинности пользователей.
+    - title: Microsoft Graph data Подключение
+      links:
+        - url: ./data-connect-concept-overview.md
+          itemType: overview
+          text: Разработка приложений путем расширения Microsoft 365 в Azure.
+tools:
+  title: SDKs и средства
+  items:
+    - title: Пакеты SDK
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: 'https://docs.microsoft.com/graph/sdks/sdk-installation'
+    - title: Примеры использования
+      imageSrc: ./images/hub/icon02-quickstart.svg
+      url: 'https://developer.microsoft.com/graph/quick-start'
+    - title: Песочница Graph
+      imageSrc: ./images/hub/icon03-graphexplorer.svg
+      url: 'https://developer.microsoft.com/graph/graph-explorer/'
+    - title: Microsoft Graph Toolkit
+      imageSrc: ./images/hub/icon04-graphtoolkit.svg
+      url: ./toolkit/overview.md
 additionalContent:
   sections:
-  - title: Ресурсы
-    items:
-    - title: Журнал изменений
-      summary: Сведения об изменениях в версиях 1.0 и бета-версиях API Microsoft Graph.
-      url: ./changelog.md
-    - title: Известные проблемы
-      summary: Сведения об известных проблемах, связанных с Microsoft Graph
-      url: ./known-issues.md
-    - title: Поддержка
-      summary: Задайте вопрос или делайте отзыв о наших API или документы.
-      url: https://developer.microsoft.com/graph/support
-    - title: Блог Microsoft Graph
-      summary: Читайте блог, чтобы узнавать последние новости о новых API, критических изменениях и многом другом.
-      url: https://developer.microsoft.com/graph/blogs/
-    - title: Ежемесячные звонки сообщества
-      summary: Присоединяйтесь к ежемесячным звонкам или перезаписывает предыдущие записи.
-      url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
-    - title: Видео и подкасты
-      summary: Ознакомьтесь с нашими сериями видео и подкастами, чтобы узнать больше об API Microsoft Graph.
-      url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
+    - title: Руководства и ресурсы
+      items:
+        - title: Пути обучения
+          links:
+            - text: Основные Graph Microsoft
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
+            - text: Обзор сценариев Microsoft Graph для разработки JavaScript
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios'
+            - text: Разработка приложений с помощью Microsoft Graph набор средств
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
+        - title: Практическое руководство
+          links:
+            - text: Поиск контента в OneDrive и Sharepoint
+              url: 'https://docs.microsoft.com/graph/search-concept-files'
+            - text: Совместное или делегирование календаря
+              url: 'https://docs.microsoft.com/graph/outlook-share-or-delegate-calendar'
+            - text: Предложение нового времени собрания
+              url: 'https://docs.microsoft.com/graph/outlook-calendar-meeting-proposals'
+            - text: Присоединение больших файлов к сообщению или событию
+              url: 'https://docs.microsoft.com/graph/outlook-large-attachments'
+            - text: Получение содержимого MIME сообщения
+              url: 'https://docs.microsoft.com/graph/outlook-get-mime-message'
+            - text: Запланировать развертывание Windows обновления
+              url: 'https://docs.microsoft.com/graph/windowsupdates-schedule-deployment'
+        - title: Ресурсы и сообщество
+          links:
+            - text: Журнал изменений
+              url: ./changelog.md
+            - text: Известные проблемы
+              url: ./known-issues.md
+            - text: Поддержка
+              url: 'https://developer.microsoft.com/graph/support'
+            - text: Блог Microsoft Graph
+              url: 'https://developer.microsoft.com/graph/blogs/'
+            - text: Видео и подкасты
+              url: 'https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts'
+            - text: Ежемесячные вызовы сообщества
+              url: 'https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV'

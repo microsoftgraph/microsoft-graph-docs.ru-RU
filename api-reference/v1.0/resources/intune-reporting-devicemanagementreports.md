@@ -1,0 +1,71 @@
+---
+title: тип ресурса deviceManagementReports
+description: Объект Singleton, который выступает в качестве контейнера для всех функциональных возможностей отчетов.
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: resourcePageType
+ms.openlocfilehash: dc587c5d7dfacb13b1aec0cba033e5816f49a1cd
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752012"
+---
+# <a name="devicemanagementreports-resource-type"></a><span data-ttu-id="7d9ff-103">тип ресурса deviceManagementReports</span><span class="sxs-lookup"><span data-stu-id="7d9ff-103">deviceManagementReports resource type</span></span>
+
+<span data-ttu-id="7d9ff-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7d9ff-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="7d9ff-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7d9ff-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="7d9ff-106">Объект Singleton, который выступает в качестве контейнера для всех функциональных возможностей отчетов.</span><span class="sxs-lookup"><span data-stu-id="7d9ff-106">Singleton entity that acts as a container for all reports functionality.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="7d9ff-107">Методы</span><span class="sxs-lookup"><span data-stu-id="7d9ff-107">Methods</span></span>
+|<span data-ttu-id="7d9ff-108">Метод</span><span class="sxs-lookup"><span data-stu-id="7d9ff-108">Method</span></span>|<span data-ttu-id="7d9ff-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="7d9ff-109">Return Type</span></span>|<span data-ttu-id="7d9ff-110">Описание</span><span class="sxs-lookup"><span data-stu-id="7d9ff-110">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="7d9ff-111">Get deviceManagementReports</span><span class="sxs-lookup"><span data-stu-id="7d9ff-111">Get deviceManagementReports</span></span>](../api/intune-reporting-devicemanagementreports-get.md)|[<span data-ttu-id="7d9ff-112">deviceManagementReports</span><span class="sxs-lookup"><span data-stu-id="7d9ff-112">deviceManagementReports</span></span>](../resources/intune-reporting-devicemanagementreports.md)|<span data-ttu-id="7d9ff-113">Чтение свойств и связей [объекта deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)</span><span class="sxs-lookup"><span data-stu-id="7d9ff-113">Read properties and relationships of the [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) object.</span></span>|
+|[<span data-ttu-id="7d9ff-114">Обновление deviceManagementReports</span><span class="sxs-lookup"><span data-stu-id="7d9ff-114">Update deviceManagementReports</span></span>](../api/intune-reporting-devicemanagementreports-update.md)|[<span data-ttu-id="7d9ff-115">deviceManagementReports</span><span class="sxs-lookup"><span data-stu-id="7d9ff-115">deviceManagementReports</span></span>](../resources/intune-reporting-devicemanagementreports.md)|<span data-ttu-id="7d9ff-116">Обновление свойств объекта [deviceManagementReports.](../resources/intune-reporting-devicemanagementreports.md)</span><span class="sxs-lookup"><span data-stu-id="7d9ff-116">Update the properties of a [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) object.</span></span>|
+|[<span data-ttu-id="7d9ff-117">действие getDeviceNonComplianceReport</span><span class="sxs-lookup"><span data-stu-id="7d9ff-117">getDeviceNonComplianceReport action</span></span>](../api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md)|<span data-ttu-id="7d9ff-118">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-118">Stream</span></span>|<span data-ttu-id="7d9ff-119">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-119">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-120">действие getPolicyNonComplianceReport</span><span class="sxs-lookup"><span data-stu-id="7d9ff-120">getPolicyNonComplianceReport action</span></span>](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md)|<span data-ttu-id="7d9ff-121">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-121">Stream</span></span>|<span data-ttu-id="7d9ff-122">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-122">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-123">действие getPolicyNonComplianceMetadata</span><span class="sxs-lookup"><span data-stu-id="7d9ff-123">getPolicyNonComplianceMetadata action</span></span>](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md)|<span data-ttu-id="7d9ff-124">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-124">Stream</span></span>|<span data-ttu-id="7d9ff-125">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-125">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-126">getPolicyNonComplianceSummaryReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-126">getPolicyNonComplianceSummaryReport action</span></span>](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md)|<span data-ttu-id="7d9ff-127">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-127">Stream</span></span>|<span data-ttu-id="7d9ff-128">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-128">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-129">getSettingNonComplianceReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-129">getSettingNonComplianceReport action</span></span>](../api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md)|<span data-ttu-id="7d9ff-130">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-130">Stream</span></span>|<span data-ttu-id="7d9ff-131">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-131">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-132">действие getReportFilters</span><span class="sxs-lookup"><span data-stu-id="7d9ff-132">getReportFilters action</span></span>](../api/intune-reporting-devicemanagementreports-getreportfilters.md)|<span data-ttu-id="7d9ff-133">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-133">Stream</span></span>|<span data-ttu-id="7d9ff-134">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-134">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-135">getHistoricalReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-135">getHistoricalReport action</span></span>](../api/intune-reporting-devicemanagementreports-gethistoricalreport.md)|<span data-ttu-id="7d9ff-136">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-136">Stream</span></span>|<span data-ttu-id="7d9ff-137">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-137">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-138">getConfigurationPolicyNonComplianceSummaryReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-138">getConfigurationPolicyNonComplianceSummaryReport action</span></span>](../api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancesummaryreport.md)|<span data-ttu-id="7d9ff-139">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-139">Stream</span></span>|<span data-ttu-id="7d9ff-140">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-140">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-141">getConfigurationPolicyNonComplianceReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-141">getConfigurationPolicyNonComplianceReport action</span></span>](../api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancereport.md)|<span data-ttu-id="7d9ff-142">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-142">Stream</span></span>|<span data-ttu-id="7d9ff-143">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-143">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-144">getConfigurationSettingNonComplianceReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-144">getConfigurationSettingNonComplianceReport action</span></span>](../api/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport.md)|<span data-ttu-id="7d9ff-145">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-145">Stream</span></span>|<span data-ttu-id="7d9ff-146">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-146">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-147">getDeviceManagementIntentSettingsReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-147">getDeviceManagementIntentSettingsReport action</span></span>](../api/intune-reporting-devicemanagementreports-getdevicemanagementintentsettingsreport.md)|<span data-ttu-id="7d9ff-148">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-148">Stream</span></span>|<span data-ttu-id="7d9ff-149">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-149">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-150">getCompliancePolicyNonComplianceSummaryReport action</span><span class="sxs-lookup"><span data-stu-id="7d9ff-150">getCompliancePolicyNonComplianceSummaryReport action</span></span>](../api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancesummaryreport.md)|<span data-ttu-id="7d9ff-151">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-151">Stream</span></span>|<span data-ttu-id="7d9ff-152">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-152">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-153">действие getCompliancePolicyNonComplianceReport</span><span class="sxs-lookup"><span data-stu-id="7d9ff-153">getCompliancePolicyNonComplianceReport action</span></span>](../api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancereport.md)|<span data-ttu-id="7d9ff-154">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-154">Stream</span></span>|<span data-ttu-id="7d9ff-155">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-155">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-156">действие getComplianceSettingNonComplianceReport</span><span class="sxs-lookup"><span data-stu-id="7d9ff-156">getComplianceSettingNonComplianceReport action</span></span>](../api/intune-reporting-devicemanagementreports-getcompliancesettingnoncompliancereport.md)|<span data-ttu-id="7d9ff-157">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-157">Stream</span></span>|<span data-ttu-id="7d9ff-158">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-158">Not yet documented</span></span>|
+|[<span data-ttu-id="7d9ff-159">действие getCachedReport</span><span class="sxs-lookup"><span data-stu-id="7d9ff-159">getCachedReport action</span></span>](../api/intune-reporting-devicemanagementreports-getcachedreport.md)|<span data-ttu-id="7d9ff-160">Stream</span><span class="sxs-lookup"><span data-stu-id="7d9ff-160">Stream</span></span>|<span data-ttu-id="7d9ff-161">Н/Д</span><span class="sxs-lookup"><span data-stu-id="7d9ff-161">Not yet documented</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="7d9ff-162">Свойства</span><span class="sxs-lookup"><span data-stu-id="7d9ff-162">Properties</span></span>
+|<span data-ttu-id="7d9ff-163">Свойство</span><span class="sxs-lookup"><span data-stu-id="7d9ff-163">Property</span></span>|<span data-ttu-id="7d9ff-164">Тип</span><span class="sxs-lookup"><span data-stu-id="7d9ff-164">Type</span></span>|<span data-ttu-id="7d9ff-165">Описание</span><span class="sxs-lookup"><span data-stu-id="7d9ff-165">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="7d9ff-166">id</span><span class="sxs-lookup"><span data-stu-id="7d9ff-166">id</span></span>|<span data-ttu-id="7d9ff-167">String</span><span class="sxs-lookup"><span data-stu-id="7d9ff-167">String</span></span>|<span data-ttu-id="7d9ff-168">Уникальный идентификатор для этого объекта</span><span class="sxs-lookup"><span data-stu-id="7d9ff-168">Unique identifier for this entity</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="7d9ff-169">Связи</span><span class="sxs-lookup"><span data-stu-id="7d9ff-169">Relationships</span></span>
+|<span data-ttu-id="7d9ff-170">Связь</span><span class="sxs-lookup"><span data-stu-id="7d9ff-170">Relationship</span></span>|<span data-ttu-id="7d9ff-171">Тип</span><span class="sxs-lookup"><span data-stu-id="7d9ff-171">Type</span></span>|<span data-ttu-id="7d9ff-172">Описание</span><span class="sxs-lookup"><span data-stu-id="7d9ff-172">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="7d9ff-173">exportJobs</span><span class="sxs-lookup"><span data-stu-id="7d9ff-173">exportJobs</span></span>|<span data-ttu-id="7d9ff-174">[коллекция deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)</span><span class="sxs-lookup"><span data-stu-id="7d9ff-174">[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) collection</span></span>|<span data-ttu-id="7d9ff-175">Объект, представляющий задание по экспорту отчета</span><span class="sxs-lookup"><span data-stu-id="7d9ff-175">Entity representing a job to export a report</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="7d9ff-176">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7d9ff-176">JSON Representation</span></span>
+<span data-ttu-id="7d9ff-177">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7d9ff-177">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementReports"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementReports",
+  "id": "String (identifier)"
+}
+```
+
+
+
+

@@ -1,0 +1,90 @@
+---
+title: Обновление объекта deviceAppManagement
+description: Обновление свойств объекта deviceAppManagement.
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: a636e407b0fbe01f2fe6341dd09f675e1a5af6e3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52752061"
+---
+# <a name="update-deviceappmanagement"></a><span data-ttu-id="ce46d-103">Обновление объекта deviceAppManagement</span><span class="sxs-lookup"><span data-stu-id="ce46d-103">Update deviceAppManagement</span></span>
+
+<span data-ttu-id="ce46d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ce46d-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="ce46d-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ce46d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="ce46d-106">Обновление свойств объекта [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md).</span><span class="sxs-lookup"><span data-stu-id="ce46d-106">Update the properties of a [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md) object.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="ce46d-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="ce46d-107">Prerequisites</span></span>
+<span data-ttu-id="ce46d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce46d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="ce46d-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ce46d-110">Permission type</span></span>|<span data-ttu-id="ce46d-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ce46d-111">Permissions (from least to most privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="ce46d-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ce46d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ce46d-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce46d-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ce46d-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ce46d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ce46d-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce46d-115">Not supported.</span></span>|
+|<span data-ttu-id="ce46d-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="ce46d-116">Application</span></span>|<span data-ttu-id="ce46d-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce46d-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="ce46d-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ce46d-118">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceAppManagement
+```
+
+## <a name="request-headers"></a><span data-ttu-id="ce46d-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="ce46d-119">Request headers</span></span>
+|<span data-ttu-id="ce46d-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ce46d-120">Header</span></span>|<span data-ttu-id="ce46d-121">Значение</span><span class="sxs-lookup"><span data-stu-id="ce46d-121">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="ce46d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce46d-122">Authorization</span></span>|<span data-ttu-id="ce46d-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce46d-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ce46d-124">Accept</span><span class="sxs-lookup"><span data-stu-id="ce46d-124">Accept</span></span>|<span data-ttu-id="ce46d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ce46d-125">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="ce46d-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ce46d-126">Request body</span></span>
+<span data-ttu-id="ce46d-127">В тексте запроса добавьте представление объекта [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ce46d-127">In the request body, supply a JSON representation for the [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md) object.</span></span>
+
+<span data-ttu-id="ce46d-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md).</span><span class="sxs-lookup"><span data-stu-id="ce46d-128">The following table shows the properties that are required when you create the [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md).</span></span>
+
+|<span data-ttu-id="ce46d-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="ce46d-129">Property</span></span>|<span data-ttu-id="ce46d-130">Тип</span><span class="sxs-lookup"><span data-stu-id="ce46d-130">Type</span></span>|<span data-ttu-id="ce46d-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ce46d-131">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="ce46d-132">id</span><span class="sxs-lookup"><span data-stu-id="ce46d-132">id</span></span>|<span data-ttu-id="ce46d-133">String</span><span class="sxs-lookup"><span data-stu-id="ce46d-133">String</span></span>|<span data-ttu-id="ce46d-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="ce46d-134">Key of the entity.</span></span>|
+
+
+
+## <a name="response"></a><span data-ttu-id="ce46d-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce46d-135">Response</span></span>
+<span data-ttu-id="ce46d-136">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ce46d-136">If successful, this method returns a `200 OK` response code and an updated [deviceAppManagement](../resources/intune-policyset-deviceappmanagement.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="ce46d-137">Пример</span><span class="sxs-lookup"><span data-stu-id="ce46d-137">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="ce46d-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce46d-138">Request</span></span>
+<span data-ttu-id="ce46d-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ce46d-139">Here is an example of the request.</span></span>
+``` http
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement
+Content-type: application/json
+Content-length: 61
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement"
+}
+```
+
+### <a name="response"></a><span data-ttu-id="ce46d-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce46d-140">Response</span></span>
+<span data-ttu-id="ce46d-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ce46d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 110
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
+  "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
+}
+```
+
+
+
+
