@@ -172,16 +172,18 @@ items:
             href: connecting-external-content-connectors-api-overview.md
           - name: Использование Postman
             href: connecting-external-content-connectors-api-postman.md
+          - name: Создание первого настраиваемого соединителя
+            href: connecting-external-content-build-quickstart.yml
           - name: Управление подключениями
             href: connecting-external-content-manage-connections.md
           - name: Управление схемой
             href: connecting-external-content-manage-schema.md
           - name: Управление элементами
             href: connecting-external-content-manage-items.md
+          - name: Внешние группы
+            href: connecting-external-content-external-groups.md
           - name: Ограничения API
             href: connecting-external-content-api-limits.md
-          - name: Создание первого настраиваемого соединителя
-            href: connecting-external-content-build-quickstart.yml
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
