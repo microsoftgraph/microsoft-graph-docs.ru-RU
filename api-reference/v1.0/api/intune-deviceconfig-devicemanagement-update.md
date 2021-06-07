@@ -1,24 +1,24 @@
 ---
-title: Обновление объекта deviceConfigurationAssignment
-description: Обновление свойств объекта deviceConfigurationAssignment.
+title: Обновление объекта deviceManagement
+description: Обновление свойств объекта deviceManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a74c2fe13a60a1184b8cd36b6e353c59dce88ce6
+ms.openlocfilehash: 4bdd0b00249828c7ae45aff68b04a2acf900c8d4
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748378"
+ms.locfileid: "52749171"
 ---
-# <a name="update-deviceconfigurationassignment"></a>Обновление объекта deviceConfigurationAssignment
+# <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).
+Обновление свойств объекта [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ ms.locfileid: "52748378"
 }
 -->
 ``` http
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
+PATCH /deviceManagement
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -45,35 +45,39 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) в формате JSON.
+В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) в формате JSON.
 
-В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).
+В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
+|id|String|Уникальный идентификатор.|
+|settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
+|intuneAccountId|Guid|Id учетной записи Intune для данного клиента|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
+PATCH https://graph.microsoft.com/v1.0/deviceManagement
 Content-type: application/json
-Content-length: 221
+Content-length: 323
 
 {
-  "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
-  "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-    "collectionId": "Collection Id value"
-  }
+  "@odata.type": "#microsoft.graph.deviceManagement",
+  "settings": {
+    "@odata.type": "microsoft.graph.deviceManagementSettings",
+    "deviceComplianceCheckinThresholdDays": 4,
+    "isScheduledActionEnabled": true,
+    "secureByDefault": true
+  },
+  "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf"
 }
 ```
 
@@ -82,15 +86,18 @@ Content-length: 221
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 270
+Content-Length: 372
 
 {
-  "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
-  "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
-  "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-    "collectionId": "Collection Id value"
-  }
+  "@odata.type": "#microsoft.graph.deviceManagement",
+  "id": "0b283420-3420-0b28-2034-280b2034280b",
+  "settings": {
+    "@odata.type": "microsoft.graph.deviceManagementSettings",
+    "deviceComplianceCheckinThresholdDays": 4,
+    "isScheduledActionEnabled": true,
+    "secureByDefault": true
+  },
+  "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf"
 }
 ```
 

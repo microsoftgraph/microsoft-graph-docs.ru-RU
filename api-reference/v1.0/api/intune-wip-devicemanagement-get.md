@@ -1,33 +1,33 @@
 ---
-title: Get deviceCompliancePolicyAssignment
-description: Чтение свойств и связей объекта deviceCompliancePolicyAssignment.
+title: Получение deviceManagement
+description: Чтение свойств и связей объекта deviceManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77903b70b126085c58740b0ff9d97685083aa13e
+ms.openlocfilehash: 2394142ab43a5e39d822b72857cc3136fb24473d
 ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/04/2021
-ms.locfileid: "52748476"
+ms.locfileid: "52749004"
 ---
-# <a name="get-devicecompliancepolicyassignment"></a>Get deviceCompliancePolicyAssignment
+# <a name="get-devicemanagement"></a>Получение deviceManagement
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).
+Чтение свойств и связей объекта [deviceManagement](../resources/intune-wip-devicemanagement.md).
 
-## <a name="prerequisites"></a>Необходимые разрешения
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -35,7 +35,7 @@ ms.locfileid: "52748476"
 }
 -->
 ``` http
-GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+GET /deviceManagement
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,14 +51,14 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) в теле ответа.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceManagement](../resources/intune-wip-devicemanagement.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
+GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
 ### <a name="response"></a>Отклик
@@ -66,16 +66,12 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 304
+Content-Length: 130
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
-    "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
-    "target": {
-      "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-      "collectionId": "Collection Id value"
-    }
+    "@odata.type": "#microsoft.graph.deviceManagement",
+    "id": "0b283420-3420-0b28-2034-280b2034280b"
   }
 }
 ```
