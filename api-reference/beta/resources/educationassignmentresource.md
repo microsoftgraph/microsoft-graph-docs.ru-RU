@@ -1,42 +1,41 @@
 ---
-title: Тип ресурса Едукатионассигнментресаурце
-description: Объект-оболочка, в котором хранятся ресурсы, связанные с назначением. Упаковщик добавляет свойство **дистрибутефорстудентворк** и указывает на то, что этот ресурс
+title: тип ресурса educationAssignmentResource
+description: Объект оболочки, который хранит ресурсы, связанные с назначением. Оболочка добавляет свойство **distributeForStudentWork** и указывает, что этот ресурс будет
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 462433a24b8515146303505865b3d356d025d6c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a4f4e96c4b08eed4584d6357a8c903c080b2d16d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095550"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52750373"
 ---
-# <a name="educationassignmentresource-resource-type"></a>Тип ресурса Едукатионассигнментресаурце
+# <a name="educationassignmentresource-resource-type"></a>тип ресурса educationAssignmentResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект-оболочка, в котором хранятся ресурсы, связанные с назначением. Оболочка добавляет свойство **дистрибутефорстудентворк** и указывает, что этот ресурс будет скопирован в отправку учащегося.  Если объект не копируется, каждый учащийся увидит ссылку на ресурс на назначении. Учащийся не сможет обновить этот ресурс. Это выдача от преподавателя к студенту, которую не следует включать. Если ресурс распространяется, каждый учащийся получит копию этого ресурса в списке ресурсов их отправки. Каждый студент сможет изменить свою копию и отправит их для ступенчатого.
+Объект оболочки, который хранит ресурсы, связанные с назначением. Оболочка добавляет свойство **distributeForStudentWork** и указывает, что этот ресурс будет скопирован в студенческую отправку.  Если объект не копируется, каждый учащийся увидит ссылку на ресурс в задании. Студент не сможет обновить этот ресурс. Это раздатка от преподавателя ученику без включаемой информации. Если ресурс распространяется, каждый учащийся получит копию этого ресурса в списке ресурсов их отправки. Каждый студент сможет изменить свою копию и отправить ее для классификации.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Едукатионассигнментресаурце](../api/educationassignmentresource-get.md) | [едукатионассигнментресаурце](educationassignmentresource.md) |Чтение свойств и связей объекта **едукатионассигнментресаурце** .|
-|[Обновление](../api/educationassignmentresource-update.md) | [едукатионассигнментресаурце](educationassignmentresource.md) |Обновление объекта **едукатионассигнментресаурце** . |
-|[удаление](../api/educationassignmentresource-delete.md); | Нет |Удаление объекта **едукатионассигнментресаурце** . |
+|[Get educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Чтение свойств и связей объекта **educationAssignmentResource.**|
+|[Delete](../api/educationassignmentresource-delete.md) | Нет. |Удаление **объекта educationAssignmentResource.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дистрибутефорстудентворк|Boolean|Указывает, следует ли копировать этот ресурс в каждую отправку учащегося для изменения и отправки.|
-|id|Строка| ИДЕНТИФИКАТОР этого ресурса. Только для чтения.|
-|resource|[едукатионресаурце](educationresource.md)|Объект ресурса, связанный с этим назначением.|
+|distributeForStudentWork|Boolean|Указывает, следует ли скопировать этот ресурс для каждого студента для изменения и отправки.|
+|id|String| ID этого ресурса. Только для чтения.|
+|resource|[educationResource](educationresource.md)|Объект resource, связанный с этим назначением.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

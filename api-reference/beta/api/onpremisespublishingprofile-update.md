@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9ca1c8237f5869c8545482eaf3f561489a48e11c
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5e2c9f077d9c8841b1a485bff7eb43ce2fb3ae17
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547234"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781018"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Обновление наPremisesPublishingProfile
 
@@ -26,7 +26,7 @@ ms.locfileid: "52547234"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:--------------------------------------|:---------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 

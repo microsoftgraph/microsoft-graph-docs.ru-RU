@@ -1,24 +1,24 @@
 ---
-title: Удаление onPremisesAgentGroup
-description: Удаление объекта **onPremisesAgentGroup.**
+title: Удаление наPremisesAgentGroup
+description: Удаление **объекта onPremisesAgentGroup.**
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 97a778347065783a887de1fd9877af35081e44b8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 853d270edfdfe5f35c5bc0bc6ee16b784333977f
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136432"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781144"
 ---
-# <a name="delete-onpremisesagentgroup"></a>Удаление onPremisesAgentGroup
+# <a name="delete-onpremisesagentgroup"></a>Удаление наPremisesAgentGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+Удаление [объекта onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "50136432"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -42,7 +42,7 @@ DELETE ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id1}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

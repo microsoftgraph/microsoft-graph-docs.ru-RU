@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2ddc2e5f73fcc2959b33f401aced09ad90a77042
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 25eaa53f0ec7314bb39546834fbaede54e7b4267
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953660"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52783657"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Добавление educationClass к educationSchool
 
@@ -38,7 +38,7 @@ POST /education/schools/{id}/classes/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса предоставьте описание объекта [educationClass](../resources/educationclass.md) в формате JSON.
 
 
@@ -88,9 +88,7 @@ Content-length: 224
 <!-- Add the educationClass resource to the response. -->
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
