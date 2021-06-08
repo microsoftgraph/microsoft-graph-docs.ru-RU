@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса win32LobAppReturnCode
+title: тип ресурса win32LobAppReturnCode
 description: Содержит свойства кода возврата для приложения Win32
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9b64542a7c3679e31b23ee63bcdcf9713bccc92
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 117ab8bd12cf8113efcbe42aa4f2ab7174e50ac3
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036760"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759102"
 ---
-# <a name="win32lobappreturncode-resource-type"></a>Тип ресурса win32LobAppReturnCode
+# <a name="win32lobappreturncode-resource-type"></a>тип ресурса win32LobAppReturnCode
 
 Пространство имен: microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "48036760"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ретурнкоде|Int32|Возвращаемый код.|
+|returnCode|Int32|Код возврата.|
 |type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|Тип кода возврата. Возможные значения: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
 
 ## <a name="relationships"></a>Связи
@@ -43,7 +43,6 @@ ms.locfileid: "48036760"
   "type": "String"
 }
 ```
-
 
 
 

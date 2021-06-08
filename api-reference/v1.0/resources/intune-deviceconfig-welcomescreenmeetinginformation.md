@@ -1,36 +1,31 @@
 ---
-title: тип перечисления Велкомескринмитингинформатион
-description: Возможные значения для сведений о собрании на экране приветствия.
+title: welcomeScreenMeetingInformation enum type
+description: Возможные значения для приветствуемой информации о собрании экрана.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 692cc5ed7098438dfdba0003e3596fbcbe967360
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c67ded13a04f3a8e21af3465c09b44446aa24719
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048479"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758794"
 ---
-# <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
+# <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation enum type
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для сведений о собрании на экране приветствия.
+Возможные значения для приветствуемой информации о собрании экрана.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|шоворганизерандтимеонли|1 |Показывать только организатор и время.|
-|шоворганизерандтимеандсубжект|2 |Отображение организатора, времени и темы (тема скрыта для частных собраний).|
-
-
-
-
-
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|showOrganizerAndTimeOnly|1|Показать только организатора и время.|
+|showOrganizerAndTimeAndSubject|2|Организатор шоу, время и тема (тема скрыта для закрытых собраний).|
 
 
 

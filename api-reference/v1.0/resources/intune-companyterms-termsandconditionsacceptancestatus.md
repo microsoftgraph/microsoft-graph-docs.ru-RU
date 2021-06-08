@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a11a2062312f313fe915017471167cec7929644
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d3e007c260e308b3c86ae6bba95b11d362d0f40
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088617"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758934"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Тип ресурса termsAndConditionsAcceptanceStatus
 
@@ -32,11 +32,11 @@ ms.locfileid: "48088617"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |userDisplayName|String|Отображает имя пользователя, чье принятие представлено объектом.|
 |acceptedVersion|Int32|Номер последней версии условий, принятых пользователем.|
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
-|userPrincipalName|String|UserPrincipalName пользователя, который принял термин.|
+|userPrincipalName|String|UserPrincipalName пользователя, который принял этот термин.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -61,11 +61,6 @@ ms.locfileid: "48088617"
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

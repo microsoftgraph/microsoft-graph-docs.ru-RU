@@ -1,38 +1,33 @@
 ---
-title: тип перечисления Фиреваллпаккеткуеуеингмесодтипе
-description: Возможные значения для Фиреваллпаккеткуеуеингмесод
+title: брандмауэрPacketQueueingMethodType enum type
+description: Возможные значения для брандмауэраPacketQueueingMethod
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0774a8b2fa9e2240366ef7a25edf2db252dafd4d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a56e30f8b470271ea5fbb91765f7ea6814cbba14
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056704"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758857"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>тип перечисления Фиреваллпаккеткуеуеингмесодтипе
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>брандмауэрPacketQueueingMethodType enum type
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для Фиреваллпаккеткуеуеингмесод
+Возможные значения для брандмауэраPacketQueueingMethod
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|отключено|1 |Отключение очереди пакетов|
-|куеуеинбаунд|2 |Очередь входящих зашифрованных пакетов|
-|куеуеаутбаунд|4|Очередь расшифрованных исходящих пакетов для пересылки|
-|куеуебос|4 |Постановка в очередь входящих и исходящих пакетов|
-
-
-
-
-
+|deviceDefault|0|Нет значения, настроенного Intune, не переопределять настроенное пользователем значение по умолчанию устройства|
+|отключено|1|Отключение очередей пакетов|
+|queueInbound|2|Входящие в очередь зашифрованные пакеты|
+|queueOutbound|3|Расшифровка исходящие пакеты очереди для переададровки|
+|queueBoth|4 |Очередь как входящие, так и исходящие пакеты|
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: тип перечисления win32LobAppReturnCodeType
+title: тип enum win32LobAppReturnCodeType
 description: Указывает тип кода возврата.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98140c578a1c506aa064ca706c076e8a6d1f0da4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 092e2c0d3746f155dba002f57ab2b55c10a42088
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036757"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52757824"
 ---
-# <a name="win32lobappreturncodetype-enum-type"></a>тип перечисления win32LobAppReturnCodeType
+# <a name="win32lobappreturncodetype-enum-type"></a>тип enum win32LobAppReturnCodeType
 
 Пространство имен: microsoft.graph
 
@@ -23,12 +23,11 @@ ms.locfileid: "48036757"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|сбоев|нуль|Сбоев.|
-|success|1 |Выполнено.|
-|софтребут|2 |Требуется программная перезагрузка.|
-|хардребут|4|Необходима аппаратная перезагрузка.|
-|Retry|4 |Повторите попытку.|
-
+|не удалось|0|Не выполнено.|
+|success|1|Успешно.|
+|softReboot|2|Требуется мягкая перезагрузка.|
+|hardReboot|3|Требуется перезагрузка с жесткой перезагрузами.|
+|retry|4 |Повторите попытку.|
 
 
 

@@ -1,36 +1,31 @@
 ---
-title: тип перечисления Виндовсспотлигхтенаблементсеттингс
-description: Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
+title: тип enum windowsSpotlightEnablementSettings
+description: Позволяет ИТ-администратору устанавливать предопределяемую поисковую движок по умолчанию для MDM-Controlled устройств
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47158f04eece7b3df710319dd0d4b5af9ab8f8de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a415fb7fa8c2246635bffb9c924a56fff8f3923b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091441"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758780"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a>тип перечисления Виндовсспотлигхтенаблементсеттингс
+# <a name="windowsspotlightenablementsettings-enum-type"></a>тип enum windowsSpotlightEnablementSettings
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
+Позволяет ИТ-администратору устанавливать предопределяемую поисковую движок по умолчанию для MDM-Controlled устройств
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|"Прожектор" на экране блокировки не настроен|
-|отключено|1 |Отключить Windows Spotlight на экране блокировки|
-|включено|2 |Включить Windows Spotlight на экране блокировки|
-
-
-
-
-
+|notConfigured|0|Центр внимания на экране блокировки не настроен|
+|отключено|1|Отключение Windows spotlight на экране блокировки|
+|включено|2|Включить Windows spotlight на экране блокировки|
 
 
 

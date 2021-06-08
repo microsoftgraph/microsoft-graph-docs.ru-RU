@@ -1,38 +1,33 @@
 ---
-title: тип перечисления Дефендермониторфилеактивити
-description: Возможные значения для отслеживания действий с файлами.
+title: тип enum defenderMonitorFileActivity
+description: Возможные значения для мониторинга активности файлов.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51873f663167c87644e30c89ae67b1bfae4e9488
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a50ee70da2a36e8bdd773235ccd5e9b227a0d01f
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967648"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758885"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>тип перечисления Дефендермониторфилеактивити
+# <a name="defendermonitorfileactivity-enum-type"></a>тип enum defenderMonitorFileActivity
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для отслеживания действий с файлами.
+Возможные значения для мониторинга активности файлов.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|отключение|1 |Отключите мониторинг действий с файлами.|
-|монитораллфилес|2 |Отслеживайте все файлы.|
-|мониторинкомингфилесонли|4| Отслеживайте только входящие файлы.|
-|монитораутгоингфилесонли|4 |Отслеживайте только исходящие файлы.|
-
-
-
-
-
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|отключение|1|Отключение активности файлов мониторинга.|
+|monitorAllFiles|2|Отслеживайте все файлы.|
+|monitorIncomingFilesOnly|3| Отслеживайте только входящие файлы.|
+|monitorOutgoingFilesOnly|4 |Отслеживайте только исходяющие файлы.|
 
 
 

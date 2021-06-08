@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса win32LobAppRegistryRule
-description: Сложный тип для хранения данных правила реестра для бизнес-приложения Win32.
+title: тип ресурса win32LobAppRegistryRule
+description: Сложный тип для хранения данных правил реестра для приложения LOB Win32.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64343873093428849462cbdc12fc078a7a028e2d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bfa6ed9e95a86abe1d87646a7c57f953be539f69
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080123"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758983"
 ---
-# <a name="win32lobappregistryrule-resource-type"></a>Тип ресурса win32LobAppRegistryRule
+# <a name="win32lobappregistryrule-resource-type"></a>тип ресурса win32LobAppRegistryRule
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сложный тип для хранения данных правила реестра для бизнес-приложения Win32.
+Сложный тип для хранения данных правил реестра для приложения LOB Win32.
 
 
-Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
+Наследует [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий назначение правила. Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
-|check32BitOn64System|Boolean|Значение, указывающее, следует ли выполнять поиск в 32 — разрядном реестре в 64 — разрядных системах.|
-|Ключевой|Строка|Полный путь к параметру реестра, содержащему значение для обнаружения.|
-|valueName|Строка|Имя значения реестра для обнаружения.|
-|оператионтипе|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|Тип операции в реестре. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
-|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор для обнаружения в реестре. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|компарисонвалуе|Строка|Значение сравнения в реестре.|
+|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
+|check32BitOn64System|Логический|Значение, указывающее, следует ли искать 32-битный реестр в 64-битных системах.|
+|keyPath|String|Полный путь записи реестра, содержащей значение для обнаружения.|
+|valueName|String|Имя значения реестра для обнаружения.|
+|operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|Тип операции реестра. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
+|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор обнаружения реестра. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|comparisonValue|String|Значение сравнения реестра.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -56,7 +56,6 @@ ms.locfileid: "48080123"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

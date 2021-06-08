@@ -1,18 +1,18 @@
 ---
-title: тип перечисления включения
+title: тип enum enablement
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e3f1b0244cd113a96ab9af780a8e5fbcb623538
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09043709408ac25c41e8cef61157fbc7819f3d8d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066399"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52756794"
 ---
-# <a name="enablement-enum-type"></a>тип перечисления включения
+# <a name="enablement-enum-type"></a>тип enum enablement
 
 Пространство имен: microsoft.graph
 
@@ -23,14 +23,9 @@ ms.locfileid: "48066399"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Н/Д|
-|enabled|1 |Пока не задокументировано.|
-|отключено|2 |Пока не задокументировано.|
-
-
-
-
-
+|notConfigured|0|Значение устройства по умолчанию, без намерения.|
+|включено|1|Включает параметр на устройстве.|
+|отключено|2|Отключает параметр на устройстве.|
 
 
 

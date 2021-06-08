@@ -1,33 +1,33 @@
 ---
-title: Удаление Комплианцеманажементпартнер
-description: Удаляет объект Комплианцеманажементпартнер.
+title: Удаление complianceManagementPartner
+description: Удаляет complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17819fc253907b54ecddbda8f2d4324891b90e63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b95e9b8210f9a31f0314f7ee66388d935c400934
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015717"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759080"
 ---
-# <a name="delete-compliancemanagementpartner"></a>Удаление Комплианцеманажементпартнер
+# <a name="delete-compliancemanagementpartner"></a>Удаление complianceManagementPartner
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md).
+Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ DELETE /deviceManagement/complianceManagementPartners/{complianceManagementPartn
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPar
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86c65f34f1bfa2fa87f7940c206e0b4054693ea6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1bdb2193d1931b15ac6279ef96784d4b7ae6874
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083346"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758152"
 ---
 # <a name="list-windows10generalconfigurations"></a>Перечисление объектов windows10GeneralConfiguration
 
@@ -23,11 +23,11 @@ ms.locfileid: "48083346"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -118,8 +118,28 @@ Content-Length: 10959
       "cellularBlockDataWhenRoaming": true,
       "cellularBlockVpn": true,
       "cellularBlockVpnWhenRoaming": true,
+      "defenderRequireRealTimeMonitoring": true,
+      "defenderRequireBehaviorMonitoring": true,
+      "defenderRequireNetworkInspectionSystem": true,
+      "defenderScanDownloads": true,
+      "defenderScanScriptsLoadedInInternetExplorer": true,
       "defenderBlockEndUserAccess": true,
+      "defenderSignatureUpdateIntervalInHours": 6,
+      "defenderMonitorFileActivity": "disable",
       "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+      "defenderScanMaxCpu": 2,
+      "defenderScanArchiveFiles": true,
+      "defenderScanIncomingMail": true,
+      "defenderScanRemovableDrivesDuringFullScan": true,
+      "defenderScanMappedNetworkDrivesDuringFullScan": true,
+      "defenderScanNetworkFiles": true,
+      "defenderRequireCloudProtection": true,
+      "defenderCloudBlockLevel": "high",
+      "defenderPromptForSampleSubmission": "alwaysPrompt",
+      "defenderScheduledQuickScanTime": "11:58:49.3840000",
+      "defenderScanType": "disabled",
+      "defenderSystemScanSchedule": "everyday",
+      "defenderScheduledScanTime": "11:59:10.9990000",
       "defenderDetectedMalwareActions": {
         "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
         "lowSeverity": "clean",
@@ -127,35 +147,15 @@ Content-Length: 10959
         "highSeverity": "clean",
         "severeSeverity": "clean"
       },
-      "defenderSystemScanSchedule": "everyday",
-      "defenderFilesAndFoldersToExclude": [
-        "Defender Files And Folders To Exclude value"
-      ],
       "defenderFileExtensionsToExclude": [
         "Defender File Extensions To Exclude value"
       ],
-      "defenderScanMaxCpu": 2,
-      "defenderMonitorFileActivity": "disable",
+      "defenderFilesAndFoldersToExclude": [
+        "Defender Files And Folders To Exclude value"
+      ],
       "defenderProcessesToExclude": [
         "Defender Processes To Exclude value"
       ],
-      "defenderPromptForSampleSubmission": "alwaysPrompt",
-      "defenderRequireBehaviorMonitoring": true,
-      "defenderRequireCloudProtection": true,
-      "defenderRequireNetworkInspectionSystem": true,
-      "defenderRequireRealTimeMonitoring": true,
-      "defenderScanArchiveFiles": true,
-      "defenderScanDownloads": true,
-      "defenderScanNetworkFiles": true,
-      "defenderScanIncomingMail": true,
-      "defenderScanMappedNetworkDrivesDuringFullScan": true,
-      "defenderScanRemovableDrivesDuringFullScan": true,
-      "defenderScanScriptsLoadedInInternetExplorer": true,
-      "defenderSignatureUpdateIntervalInHours": 6,
-      "defenderScanType": "disabled",
-      "defenderScheduledScanTime": "11:59:10.9990000",
-      "defenderScheduledQuickScanTime": "11:58:49.3840000",
-      "defenderCloudBlockLevel": "high",
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
       "lockScreenBlockCortana": true,
@@ -305,11 +305,6 @@ Content-Length: 10959
   ]
 }
 ```
-
-
-
-
-
 
 
 

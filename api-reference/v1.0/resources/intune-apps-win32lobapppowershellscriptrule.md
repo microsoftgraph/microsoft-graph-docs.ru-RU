@@ -1,39 +1,40 @@
 ---
-title: Тип ресурса win32LobAppPowerShellScriptRule
-description: Сложный тип для хранения данных правила скрипта PowerShell для бизнес-приложения Win32.
+title: тип ресурса win32LobAppPowerShellScriptRule
+description: Сложный тип для хранения данных правила скрипта PowerShell для приложения LOB Win32.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25ca86e44b6244e592214459c4ebcfbd0f228231
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dcc9afa8f58462bda69c96990e37529667d20445
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020390"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758990"
 ---
-# <a name="win32lobapppowershellscriptrule-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptRule
+# <a name="win32lobapppowershellscriptrule-resource-type"></a>тип ресурса win32LobAppPowerShellScriptRule
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сложный тип для хранения данных правила скрипта PowerShell для бизнес-приложения Win32.
+Сложный тип для хранения данных правила скрипта PowerShell для приложения LOB Win32.
 
 
-Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
+Наследует [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий назначение правила. Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
-|displayName|String|Отображаемое имя правила. Не указывайте это значение, если правило используется для обнаружения.|
-|Свойства enforcesignaturecheck|Boolean|Значение, указывающее, применяется ли проверка подписи.|
-|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт выполняться как 32 бит.|
-|скриптконтент|String|Содержимое скрипта в кодировке Base64.|
-|оператионтипе|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|Тип операции сравнения выходных данных скрипта. Используйте NotConfigured (значение по умолчанию), если правило используется для обнаружения. Возможные значения: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
+|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
+|displayName|String|Имя отображения правила. Не укажите это значение, если правило используется для обнаружения.|
+|enforceSignatureCheck|Логический|Значение, указывающее, выполняется ли проверка подписи.|
+|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт работать как 32-битный.|
+|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Контекст выполнения сценария. Не укажите это значение, если правило используется для обнаружения. Правила обнаружения скриптов будут работать в том же контексте, что и контекст установки связанного приложения. Возможные значения: `system`, `user`.|
+|scriptContent|String|Содержимое скрипта с кодом base64.|
+|operationType|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|Тип операции сравнения вывода скрипта. Используйте NotConfigured (значение по умолчанию), если правило используется для обнаружения. Возможные значения: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор вывода скрипта. Используйте NotConfigured (значение по умолчанию), если правило используется для обнаружения. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|компарисонвалуе|String|Значение для сравнения вывода скрипта. Не указывайте значение, если правило используется для обнаружения.|
+|comparisonValue|String|Значение сравнения вывода скрипта. Не укажите значение, если правило используется для обнаружения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -52,13 +53,13 @@ ms.locfileid: "48020390"
   "displayName": "String",
   "enforceSignatureCheck": true,
   "runAs32Bit": true,
+  "runAsAccount": "String",
   "scriptContent": "String",
   "operationType": "String",
   "operator": "String",
   "comparisonValue": "String"
 }
 ```
-
 
 
 
