@@ -5,30 +5,30 @@ description: Unfollow a user's site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6d938fc0c02cfc876449edd5bf656770df9190c4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c96871d4e3ed617cbba235d8666cf9e060503ba7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475755"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786722"
 ---
-# <a name="unfollow-site"></a><span data-ttu-id="1f9ba-103">Прекращение отслеживания сайта</span><span class="sxs-lookup"><span data-stu-id="1f9ba-103">Unfollow site</span></span> 
+# <a name="unfollow-site"></a><span data-ttu-id="cdfc9-103">Прекращение отслеживания сайта</span><span class="sxs-lookup"><span data-stu-id="cdfc9-103">Unfollow site</span></span> 
 
-<span data-ttu-id="1f9ba-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1f9ba-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cdfc9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cdfc9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1f9ba-105">Unfollow a user's [site](../resources/site.md) or multiple sites.</span><span class="sxs-lookup"><span data-stu-id="1f9ba-105">Unfollow a user's [site](../resources/site.md) or multiple sites.</span></span>
+<span data-ttu-id="cdfc9-105">Unfollow a user's [site](../resources/site.md) or multiple sites.</span><span class="sxs-lookup"><span data-stu-id="cdfc9-105">Unfollow a user's [site](../resources/site.md) or multiple sites.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1f9ba-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1f9ba-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cdfc9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cdfc9-106">Permissions</span></span>
 
-<span data-ttu-id="1f9ba-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1f9ba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cdfc9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdfc9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="1f9ba-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1f9ba-109">Permission type</span></span>             | <span data-ttu-id="1f9ba-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1f9ba-110">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="cdfc9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cdfc9-109">Permission type</span></span>             | <span data-ttu-id="cdfc9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cdfc9-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="1f9ba-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1f9ba-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1f9ba-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f9ba-112">Sites.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="1f9ba-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1f9ba-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f9ba-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1f9ba-114">Not supported.</span></span>                              |
-| <span data-ttu-id="1f9ba-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1f9ba-115">Application</span></span>                            | <span data-ttu-id="1f9ba-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f9ba-116">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="cdfc9-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cdfc9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="cdfc9-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdfc9-112">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="cdfc9-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cdfc9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdfc9-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cdfc9-114">Not supported.</span></span>                              |
+| <span data-ttu-id="cdfc9-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cdfc9-115">Application</span></span>                            | <span data-ttu-id="cdfc9-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdfc9-116">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="1f9ba-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1f9ba-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdfc9-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cdfc9-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,28 +36,28 @@ ms.locfileid: "50475755"
 POST /users/{user-id}/followedSites/remove
 ```
 
-## <a name="request-body"></a><span data-ttu-id="1f9ba-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1f9ba-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdfc9-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cdfc9-118">Request body</span></span>
 
-<span data-ttu-id="1f9ba-119">В теле запроса поставляем массив объектов JSON с параметром id, указанным в таблице ниже.</span><span class="sxs-lookup"><span data-stu-id="1f9ba-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
+<span data-ttu-id="cdfc9-119">В теле запроса поставляем массив объектов JSON с параметром id, указанным в таблице ниже.</span><span class="sxs-lookup"><span data-stu-id="cdfc9-119">In the request body, supply an array of JSON objects with the id parameter mentioned in the table below.</span></span> 
 
 
-| <span data-ttu-id="1f9ba-120">Имя</span><span class="sxs-lookup"><span data-stu-id="1f9ba-120">Name</span></span>                 | <span data-ttu-id="1f9ba-121">Значение</span><span class="sxs-lookup"><span data-stu-id="1f9ba-121">Value</span></span>  | <span data-ttu-id="1f9ba-122">Описание</span><span class="sxs-lookup"><span data-stu-id="1f9ba-122">Description</span></span>                                                            |
+| <span data-ttu-id="cdfc9-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cdfc9-120">Name</span></span>                 | <span data-ttu-id="cdfc9-121">Значение</span><span class="sxs-lookup"><span data-stu-id="cdfc9-121">Value</span></span>  | <span data-ttu-id="cdfc9-122">Описание</span><span class="sxs-lookup"><span data-stu-id="cdfc9-122">Description</span></span>                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   <span data-ttu-id="1f9ba-123">id</span><span class="sxs-lookup"><span data-stu-id="1f9ba-123">id</span></span>                 | <span data-ttu-id="1f9ba-124">string</span><span class="sxs-lookup"><span data-stu-id="1f9ba-124">string</span></span> | <span data-ttu-id="1f9ba-125">[Уникальный идентификатор](../resources/site.md#id-property) элемента.</span><span class="sxs-lookup"><span data-stu-id="1f9ba-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
+|   <span data-ttu-id="cdfc9-123">id</span><span class="sxs-lookup"><span data-stu-id="cdfc9-123">id</span></span>                 | <span data-ttu-id="cdfc9-124">string</span><span class="sxs-lookup"><span data-stu-id="cdfc9-124">string</span></span> | <span data-ttu-id="cdfc9-125">[Уникальный идентификатор](../resources/site.md#id-property) элемента.</span><span class="sxs-lookup"><span data-stu-id="cdfc9-125">The [unique identifier](../resources/site.md#id-property) of the item.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1f9ba-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="1f9ba-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cdfc9-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdfc9-126">Response</span></span>
 
-* <span data-ttu-id="1f9ba-127">В случае успешного запроса этот метод возвращает код `204` состояния без контента.</span><span class="sxs-lookup"><span data-stu-id="1f9ba-127">If the request is successful, this method returns a `204` status code with no content.</span></span>  
-* <span data-ttu-id="1f9ba-128">Если ошибка произошла при отсоединиле любой из указанных сайтов, этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты не могут быть `207` unfollowed. [](/graph/errors)</span><span class="sxs-lookup"><span data-stu-id="1f9ba-128">If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.</span></span>
+* <span data-ttu-id="cdfc9-127">В случае успешного запроса этот метод возвращает код `204` состояния без контента.</span><span class="sxs-lookup"><span data-stu-id="cdfc9-127">If the request is successful, this method returns a `204` status code with no content.</span></span>  
+* <span data-ttu-id="cdfc9-128">Если ошибка произошла при отсоединиле любой из указанных сайтов, этот метод возвращает код состояния, и в тексте ответа будет содержаться массив записей, содержащих объекты ошибок и siteIds, указывающие, какие сайты не могут быть `207` unfollowed. [](/graph/errors)</span><span class="sxs-lookup"><span data-stu-id="cdfc9-128">If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f9ba-129">Пример</span><span class="sxs-lookup"><span data-stu-id="1f9ba-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cdfc9-129">Пример</span><span class="sxs-lookup"><span data-stu-id="cdfc9-129">Example</span></span>
 
-<span data-ttu-id="1f9ba-130">В следующем примере показано, как отметь несколько сайтов.</span><span class="sxs-lookup"><span data-stu-id="1f9ba-130">The following example shows how to unfollow multiple sites.</span></span>
+<span data-ttu-id="cdfc9-130">В следующем примере показано, как отметь несколько сайтов.</span><span class="sxs-lookup"><span data-stu-id="cdfc9-130">The following example shows how to unfollow multiple sites.</span></span>
 
-### <a name="request"></a><span data-ttu-id="1f9ba-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="1f9ba-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cdfc9-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="cdfc9-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1f9ba-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="1f9ba-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cdfc9-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="cdfc9-132">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -76,35 +76,35 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1f9ba-133">C#</span><span class="sxs-lookup"><span data-stu-id="1f9ba-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cdfc9-133">C#</span><span class="sxs-lookup"><span data-stu-id="cdfc9-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1f9ba-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1f9ba-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cdfc9-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cdfc9-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1f9ba-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1f9ba-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cdfc9-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cdfc9-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1f9ba-136">Java</span><span class="sxs-lookup"><span data-stu-id="1f9ba-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cdfc9-136">Java</span><span class="sxs-lookup"><span data-stu-id="cdfc9-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unfollow-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="1f9ba-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="1f9ba-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cdfc9-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdfc9-137">Response</span></span>
 
-<span data-ttu-id="1f9ba-138">В случае успешной работы возвращается следующий ответ JSON.</span><span class="sxs-lookup"><span data-stu-id="1f9ba-138">If successful, it returns the following JSON response.</span></span> 
+<span data-ttu-id="cdfc9-138">В случае успешной работы возвращается следующий ответ JSON.</span><span class="sxs-lookup"><span data-stu-id="cdfc9-138">If successful, it returns the following JSON response.</span></span> 
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<span data-ttu-id="1f9ba-139">Если произошла ошибка, она возвращает следующий ответ JSON</span><span class="sxs-lookup"><span data-stu-id="1f9ba-139">If an error occured, it returns the following JSON response</span></span> 
+<span data-ttu-id="cdfc9-139">Если произошла ошибка, она возвращает следующий ответ JSON</span><span class="sxs-lookup"><span data-stu-id="cdfc9-139">If an error occured, it returns the following JSON response</span></span> 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
