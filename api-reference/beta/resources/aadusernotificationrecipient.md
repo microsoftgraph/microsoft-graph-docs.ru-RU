@@ -1,29 +1,31 @@
 ---
-title: Тип ресурса АадусернотификатионреЦипиент
-description: Представляет получателя Azure Active Directory (Azure AD) для уведомления, отправленного в веб-канале активности Microsoft Teams.
+title: тип ресурса aadUserNotificationRecipient
+description: Представляет получателя Azure Active Directory пользователя Azure AD, отправимого в канале Microsoft Teams действий.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 118951336a031548a557f94df8b2b2068e415408
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: ec8e05a09af27ca6092da24e13a604fdd7e013f4
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377570"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813201"
 ---
-# <a name="aadusernotificationrecipient-resource-type"></a>Тип ресурса АадусернотификатионреЦипиент
+# <a name="aadusernotificationrecipient-resource-type"></a>тип ресурса aadUserNotificationRecipient
 
 Пространство имен: microsoft.graph
 
-Представляет получателя Azure Active Directory (Azure AD) для уведомления, отправленного в веб-канале активности Microsoft Teams.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Наследуется от [теамворкнотификатионреЦипиент](teamworknotificationrecipient.md).
+Представляет получателя Azure Active Directory пользователя Azure AD, отправимого в канале Microsoft Teams действий.
+
+Наследует [от teamworkNotificationRecipient](teamworknotificationrecipient.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|userId|String|Идентификатор пользователя Azure AD. Для получения этого идентификатора используйте метод [List Users](../api/user-list.md) .|
+|userId|String|Идентификатор пользователя Azure AD. Чтобы получить [этот](../api/user-list.md) ID, используйте метод пользователей списка.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

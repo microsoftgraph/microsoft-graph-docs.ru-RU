@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с Angular
 description: Начало использования Microsoft Graph Toolkit в приложении Angular
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 1390b29c94fef292433e1e422fa5c44fd480e1eb
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: b1985598985f85c0f33676fee49656324c65c7c5
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579888"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813189"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Использование Microsoft Graph Toolkit с Angular
 
@@ -17,7 +17,7 @@ ms.locfileid: "52579888"
 ## <a name="add-the-microsoft-graph-toolkit"></a>Добавление Microsoft Graph Toolkit
 
 Сначала вам нужно включить настраиваемые элементы в приложении Angular, добавив `CUSTOM_ELEMENT_SCHEMA` к `@NgModule() decorator` в `app.module.ts`. В следующем примере показано, как это сделать.
-```ts
+```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -33,7 +33,7 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 Затем добавьте Microsoft Graph Toolkit в свой проект, установив пакет npm:
-```bash
+```Command Line
 npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>Инициализация поставщика
@@ -46,7 +46,7 @@ npm install @microsoft/mgt
 
 Импортируйте поставщика и настройте его для инициализации при запуске приложения. Замените `<YOUR-CLIENT-ID>` на идентификатор клиента для своего приложения.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider } from '@microsoft/mgt';
 
@@ -95,7 +95,7 @@ export class AppComponent implements OnInit {
 
 Импортируйте `TemplateHelper` и используйте метод `.setBindingSyntax()`, чтобы настроить собственный синтаксис привязки.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
 

@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: a1eaf17b4d4b12e04c11941ab25c5e2bdfd6d57a
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 0c06566824c6da06490f83693aedd7ef40ae282b
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579776"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813074"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Использование Microsoft Graph Toolkit с React
 
@@ -26,31 +26,31 @@ Microsoft Graph Toolkit — это набор веб-компонентов, к�
 
 Создайте приложение React, выполнив следующую команду. Это создаст новое приложение React с использованием TypeScript, что поможет написать более функциональный код и избежать ошибок выполнения.
 
-```cmd
+```Command Line
 npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
 Измените рабочий каталог на только что созданное приложение.
 
-```cmd
+```Command Line
 cd my-m365-app
 ```
 
 Затем установите пакет NPM `mgt-react`, который содержит компоненты Microsoft Graph Toolkit для React.
 
-```cmd
+```Command Line
 npm i @microsoft/mgt-react
 ```
 
 Установите и пакет npm, который содержит `mgt-msal2-provider` `mgt-element` поставщика auth MSAL 2.0.
 
-```cmd
+```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
 Подтвердите, что вы можете запустить приложение.
 
-```cmd
+```Command Line
 npm start
 ```
 
@@ -77,14 +77,14 @@ npm start
 
 1. Откройте в редакторе кода файл **src/index.** и добавьте в список операций импорта следующее:
 
-    ```tsx
+    ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
     import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
 1. После последнего оператора `import` инициализируйте Microsoft Graph Toolkit с помощью поставщика MSAL.
 
-    ```tsx
+    ```TypeScript
     Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID'
     });
@@ -127,13 +127,13 @@ npm start
 
 1. Откройте в редакторе кода файл **src/App.tsx** и добавьте в список операций импорта следующее:
 
-    ```tsx
+    ```TypeScript
     import { Login } from '@microsoft/mgt-react';
     ```
 
 1. В функции `App` замените содержимое пункта `return` базовой структурой, включая компонент входа Microsoft Graph Toolkit:
 
-    ```tsx
+    ```TypeScript
     <div className="App">
       <header>
         <Login />
@@ -142,7 +142,7 @@ npm start
     ```
 
 С этими изменениями файл **src/App.tsx** будет выглядеть следующим образом.
-```tsx
+```TypeScript
 
 import { Login } from '@microsoft/mgt-react';
 import React from 'react';
@@ -180,7 +180,7 @@ Microsoft Graph Toolkit не только упрощает проверку по
 
 1. Откройте в редакторе кода файл **src/index.tsx** и обновите код инициализации поставщика.
 
-    ```tsx
+    ```TypeScript
     Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID',
       scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
@@ -197,19 +197,19 @@ Microsoft Graph Toolkit не только упрощает проверку по
 
 1. Откройте в редакторе кода файл **src/App.tsx** и дополните существующий оператор React `import`.
 
-    ```tsx
+    ```TypeScript
     import React, { useState, useEffect } from 'react';
     ```
 
 1. Импортируйте типы `Provider` и `ProviderState` из `mgt-element`, добавив их в операции импорта.
 
-    ```tsx
+    ```TypeScript
     import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
 1. Добавьте настраиваемую функцию с именем `useIsSignedIn`, которая позволяет отслеживать состояние входа пользователя в приложение.
 
-    ```tsx
+    ```TypeScript
     function useIsSignedIn(): [boolean] {
       const [isSignedIn, setIsSignedIn] = useState(false);
     
@@ -239,7 +239,7 @@ Microsoft Graph Toolkit не только упрощает проверку по
 
 1. Откройте в редакторе кода файл **src/App.tsx** и внутри функции **Приложение** добавьте следующее:
 
-    ```tsx
+    ```TypeScript
     const [isSignedIn] = useIsSignedIn();
     ```
 
@@ -247,7 +247,7 @@ Microsoft Graph Toolkit не только упрощает проверку по
 
 1. В содержимое пункта `return` добавьте `div`, а также компонент расписания Microsoft Graph Toolkit.
 
-    ```tsx
+    ```TypeScript
     <div>
       {isSignedIn &&
         <Agenda />}
@@ -256,7 +256,7 @@ Microsoft Graph Toolkit не только упрощает проверку по
 
 С этими изменениями файл **src/App.tsx** будет выглядеть следующим образом.
 
-```tsx
+```TypeScript
 import { Providers, ProviderState } from '@microsoft/mgt';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';
