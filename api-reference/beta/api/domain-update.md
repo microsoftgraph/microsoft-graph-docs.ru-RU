@@ -5,62 +5,62 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4a4b026aa4bcf9875e615a71ce38b60c76b51e2d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 820e99abbfd0c7d2de0ba71728bcf4d2d06195c7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436472"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787030"
 ---
-# <a name="update-domain"></a><span data-ttu-id="c2ad1-103">Обновление домена</span><span class="sxs-lookup"><span data-stu-id="c2ad1-103">Update domain</span></span>
+# <a name="update-domain"></a><span data-ttu-id="83da7-103">Обновление домена</span><span class="sxs-lookup"><span data-stu-id="83da7-103">Update domain</span></span>
 
-<span data-ttu-id="c2ad1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c2ad1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="83da7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="83da7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c2ad1-105">Обновление свойств объекта домена.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-105">Update the properties of domain object.</span></span>
+<span data-ttu-id="83da7-105">Обновление свойств объекта домена.</span><span class="sxs-lookup"><span data-stu-id="83da7-105">Update the properties of domain object.</span></span>
 
-> <span data-ttu-id="c2ad1-106">**Важно:** Обновить можно только проверенные домены.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-106">**Important:** Only verified domains can be updated.</span></span>
+> <span data-ttu-id="83da7-106">**Важно:** Обновить можно только проверенные домены.</span><span class="sxs-lookup"><span data-stu-id="83da7-106">**Important:** Only verified domains can be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c2ad1-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c2ad1-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="83da7-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="83da7-107">Permissions</span></span>
 
-<span data-ttu-id="c2ad1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c2ad1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="83da7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="83da7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="c2ad1-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c2ad1-110">Permission type</span></span>      | <span data-ttu-id="c2ad1-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c2ad1-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="83da7-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="83da7-110">Permission type</span></span>      | <span data-ttu-id="83da7-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="83da7-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c2ad1-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c2ad1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c2ad1-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c2ad1-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c2ad1-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c2ad1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c2ad1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-115">Not supported.</span></span>    |
-|<span data-ttu-id="c2ad1-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="c2ad1-116">Application</span></span> | <span data-ttu-id="c2ad1-117">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2ad1-117">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="83da7-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="83da7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="83da7-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="83da7-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="83da7-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="83da7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="83da7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="83da7-115">Not supported.</span></span>    |
+|<span data-ttu-id="83da7-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="83da7-116">Application</span></span> | <span data-ttu-id="83da7-117">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="83da7-117">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c2ad1-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c2ad1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="83da7-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="83da7-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
 ```
 
-> <span data-ttu-id="c2ad1-119">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="83da7-119">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="83da7-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c2ad1-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c2ad1-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="83da7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="83da7-120">Request headers</span></span>
 
-| <span data-ttu-id="c2ad1-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c2ad1-121">Name</span></span>       | <span data-ttu-id="c2ad1-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c2ad1-122">Description</span></span>|
+| <span data-ttu-id="83da7-121">Имя</span><span class="sxs-lookup"><span data-stu-id="83da7-121">Name</span></span>       | <span data-ttu-id="83da7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="83da7-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="c2ad1-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c2ad1-123">Authorization</span></span>  | <span data-ttu-id="c2ad1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c2ad1-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c2ad1-126">Content-Type</span></span>  | <span data-ttu-id="c2ad1-127">application/json</span><span class="sxs-lookup"><span data-stu-id="c2ad1-127">application/json</span></span> |
+| <span data-ttu-id="83da7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="83da7-123">Authorization</span></span>  | <span data-ttu-id="83da7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="83da7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="83da7-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="83da7-126">Content-Type</span></span>  | <span data-ttu-id="83da7-127">application/json</span><span class="sxs-lookup"><span data-stu-id="83da7-127">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c2ad1-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c2ad1-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="83da7-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="83da7-128">Request body</span></span>
 
-<span data-ttu-id="c2ad1-129">В теле запроса укажи значения для обновляемой области.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-129">In the request body, supply the values for relevant fields to be updated.</span></span> <span data-ttu-id="c2ad1-130">Существующие свойства, не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений в других значениях свойств.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-130">Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="c2ad1-131">Для лучшей производительности включаем только измененные значения.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-131">For best performance, only include changed values.</span></span>
+<span data-ttu-id="83da7-129">В теле запроса укажи значения для обновляемой области.</span><span class="sxs-lookup"><span data-stu-id="83da7-129">In the request body, supply the values for relevant fields to be updated.</span></span> <span data-ttu-id="83da7-130">Существующие свойства, не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений в других значениях свойств.</span><span class="sxs-lookup"><span data-stu-id="83da7-130">Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="83da7-131">Для лучшей производительности включаем только измененные значения.</span><span class="sxs-lookup"><span data-stu-id="83da7-131">For best performance, only include changed values.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2ad1-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="c2ad1-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="83da7-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="83da7-132">Response</span></span>
 
-<span data-ttu-id="c2ad1-133">В случае успешной работы этот метод возвращает код `204 No Content` ответа и не возвращает текст ответа.</span><span class="sxs-lookup"><span data-stu-id="c2ad1-133">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="83da7-133">В случае успешной работы этот метод возвращает код `204 No Content` ответа и не возвращает текст ответа.</span><span class="sxs-lookup"><span data-stu-id="83da7-133">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2ad1-134">Пример</span><span class="sxs-lookup"><span data-stu-id="c2ad1-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c2ad1-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="c2ad1-135">Request</span></span>
+## <a name="example"></a><span data-ttu-id="83da7-134">Пример</span><span class="sxs-lookup"><span data-stu-id="83da7-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="83da7-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="83da7-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c2ad1-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2ad1-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="83da7-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="83da7-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_domain"
@@ -77,31 +77,29 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c2ad1-137">C#</span><span class="sxs-lookup"><span data-stu-id="c2ad1-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="83da7-137">C#</span><span class="sxs-lookup"><span data-stu-id="83da7-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-domain-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c2ad1-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2ad1-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="83da7-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="83da7-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-domain-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c2ad1-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2ad1-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="83da7-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="83da7-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-domain-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="c2ad1-140">Java</span><span class="sxs-lookup"><span data-stu-id="c2ad1-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="83da7-140">Java</span><span class="sxs-lookup"><span data-stu-id="83da7-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-domain-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="c2ad1-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="c2ad1-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="83da7-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="83da7-141">Response</span></span>
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
