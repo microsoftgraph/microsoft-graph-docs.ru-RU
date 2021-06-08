@@ -5,31 +5,31 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86c65f34f1bfa2fa87f7940c206e0b4054693ea6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1bdb2193d1931b15ac6279ef96784d4b7ae6874
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083346"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52758152"
 ---
-# <a name="list-windows10generalconfigurations"></a><span data-ttu-id="e174e-103">Перечисление объектов windows10GeneralConfiguration</span><span class="sxs-lookup"><span data-stu-id="e174e-103">List windows10GeneralConfigurations</span></span>
+# <a name="list-windows10generalconfigurations"></a><span data-ttu-id="c75ef-103">Перечисление объектов windows10GeneralConfiguration</span><span class="sxs-lookup"><span data-stu-id="c75ef-103">List windows10GeneralConfigurations</span></span>
 
-<span data-ttu-id="e174e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e174e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c75ef-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c75ef-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e174e-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e174e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c75ef-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c75ef-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e174e-106">Перечисление свойств и связей объектов [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="e174e-106">List properties and relationships of the [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects.</span></span>
+<span data-ttu-id="c75ef-106">Перечисление свойств и связей объектов [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="c75ef-106">List properties and relationships of the [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e174e-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="e174e-107">Prerequisites</span></span>
-<span data-ttu-id="e174e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e174e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c75ef-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="c75ef-107">Prerequisites</span></span>
+<span data-ttu-id="c75ef-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c75ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e174e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e174e-110">Permission type</span></span>|<span data-ttu-id="e174e-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e174e-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c75ef-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c75ef-110">Permission type</span></span>|<span data-ttu-id="c75ef-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c75ef-111">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e174e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e174e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e174e-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="e174e-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="e174e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e174e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e174e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e174e-115">Not supported.</span></span>|
-|<span data-ttu-id="e174e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e174e-116">Application</span></span>|<span data-ttu-id="e174e-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e174e-117">Not supported.</span></span>|
+|<span data-ttu-id="c75ef-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c75ef-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c75ef-113">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c75ef-113">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="c75ef-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c75ef-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c75ef-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c75ef-115">Not supported.</span></span>|
+|<span data-ttu-id="c75ef-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="c75ef-116">Application</span></span>|<span data-ttu-id="c75ef-117">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c75ef-117">DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e174e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e174e-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c75ef-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c75ef-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ ms.locfileid: "48083346"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e174e-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="e174e-119">Request headers</span></span>
-|<span data-ttu-id="e174e-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e174e-120">Header</span></span>|<span data-ttu-id="e174e-121">Значение</span><span class="sxs-lookup"><span data-stu-id="e174e-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c75ef-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="c75ef-119">Request headers</span></span>
+|<span data-ttu-id="c75ef-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c75ef-120">Header</span></span>|<span data-ttu-id="c75ef-121">Значение</span><span class="sxs-lookup"><span data-stu-id="c75ef-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e174e-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e174e-122">Authorization</span></span>|<span data-ttu-id="e174e-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e174e-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e174e-124">Accept</span><span class="sxs-lookup"><span data-stu-id="e174e-124">Accept</span></span>|<span data-ttu-id="e174e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e174e-125">application/json</span></span>|
+|<span data-ttu-id="c75ef-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c75ef-122">Authorization</span></span>|<span data-ttu-id="c75ef-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c75ef-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c75ef-124">Accept</span><span class="sxs-lookup"><span data-stu-id="c75ef-124">Accept</span></span>|<span data-ttu-id="c75ef-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c75ef-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e174e-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e174e-126">Request body</span></span>
-<span data-ttu-id="e174e-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e174e-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c75ef-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c75ef-126">Request body</span></span>
+<span data-ttu-id="c75ef-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c75ef-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e174e-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="e174e-128">Response</span></span>
-<span data-ttu-id="e174e-129">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="e174e-129">If successful, this method returns a `200 OK` response code and a collection of [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c75ef-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="c75ef-128">Response</span></span>
+<span data-ttu-id="c75ef-129">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="c75ef-129">If successful, this method returns a `200 OK` response code and a collection of [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e174e-130">Пример</span><span class="sxs-lookup"><span data-stu-id="e174e-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c75ef-130">Пример</span><span class="sxs-lookup"><span data-stu-id="c75ef-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e174e-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e174e-131">Request</span></span>
-<span data-ttu-id="e174e-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e174e-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c75ef-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c75ef-131">Request</span></span>
+<span data-ttu-id="c75ef-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c75ef-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="e174e-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="e174e-133">Response</span></span>
-<span data-ttu-id="e174e-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e174e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c75ef-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="c75ef-133">Response</span></span>
+<span data-ttu-id="c75ef-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c75ef-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -118,8 +118,28 @@ Content-Length: 10959
       "cellularBlockDataWhenRoaming": true,
       "cellularBlockVpn": true,
       "cellularBlockVpnWhenRoaming": true,
+      "defenderRequireRealTimeMonitoring": true,
+      "defenderRequireBehaviorMonitoring": true,
+      "defenderRequireNetworkInspectionSystem": true,
+      "defenderScanDownloads": true,
+      "defenderScanScriptsLoadedInInternetExplorer": true,
       "defenderBlockEndUserAccess": true,
+      "defenderSignatureUpdateIntervalInHours": 6,
+      "defenderMonitorFileActivity": "disable",
       "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+      "defenderScanMaxCpu": 2,
+      "defenderScanArchiveFiles": true,
+      "defenderScanIncomingMail": true,
+      "defenderScanRemovableDrivesDuringFullScan": true,
+      "defenderScanMappedNetworkDrivesDuringFullScan": true,
+      "defenderScanNetworkFiles": true,
+      "defenderRequireCloudProtection": true,
+      "defenderCloudBlockLevel": "high",
+      "defenderPromptForSampleSubmission": "alwaysPrompt",
+      "defenderScheduledQuickScanTime": "11:58:49.3840000",
+      "defenderScanType": "disabled",
+      "defenderSystemScanSchedule": "everyday",
+      "defenderScheduledScanTime": "11:59:10.9990000",
       "defenderDetectedMalwareActions": {
         "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
         "lowSeverity": "clean",
@@ -127,35 +147,15 @@ Content-Length: 10959
         "highSeverity": "clean",
         "severeSeverity": "clean"
       },
-      "defenderSystemScanSchedule": "everyday",
-      "defenderFilesAndFoldersToExclude": [
-        "Defender Files And Folders To Exclude value"
-      ],
       "defenderFileExtensionsToExclude": [
         "Defender File Extensions To Exclude value"
       ],
-      "defenderScanMaxCpu": 2,
-      "defenderMonitorFileActivity": "disable",
+      "defenderFilesAndFoldersToExclude": [
+        "Defender Files And Folders To Exclude value"
+      ],
       "defenderProcessesToExclude": [
         "Defender Processes To Exclude value"
       ],
-      "defenderPromptForSampleSubmission": "alwaysPrompt",
-      "defenderRequireBehaviorMonitoring": true,
-      "defenderRequireCloudProtection": true,
-      "defenderRequireNetworkInspectionSystem": true,
-      "defenderRequireRealTimeMonitoring": true,
-      "defenderScanArchiveFiles": true,
-      "defenderScanDownloads": true,
-      "defenderScanNetworkFiles": true,
-      "defenderScanIncomingMail": true,
-      "defenderScanMappedNetworkDrivesDuringFullScan": true,
-      "defenderScanRemovableDrivesDuringFullScan": true,
-      "defenderScanScriptsLoadedInInternetExplorer": true,
-      "defenderSignatureUpdateIntervalInHours": 6,
-      "defenderScanType": "disabled",
-      "defenderScheduledScanTime": "11:59:10.9990000",
-      "defenderScheduledQuickScanTime": "11:58:49.3840000",
-      "defenderCloudBlockLevel": "high",
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
       "lockScreenBlockCortana": true,
@@ -305,11 +305,6 @@ Content-Length: 10959
   ]
 }
 ```
-
-
-
-
-
 
 
 
