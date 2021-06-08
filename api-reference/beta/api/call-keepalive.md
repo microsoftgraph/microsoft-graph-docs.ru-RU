@@ -1,63 +1,63 @@
 ---
-title: 'Call: keepAlive'
-description: Сделайте запрос к этому API каждые 15 – 45 минут, чтобы убедиться, что текущий вызов остается активным.
+title: 'call: keepAlive'
+description: Сделайте запрос на этот API каждые 15-45 минут, чтобы убедиться, что текущий вызов остается активным.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fdaef71a600a22a8a2a6d11709994f452f9c9430
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ecb8ea8721e6ccc737e6a5f477b274be4300d370
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959700"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786250"
 ---
-# <a name="call-keepalive"></a><span data-ttu-id="0cc6d-103">Call: keepAlive</span><span class="sxs-lookup"><span data-stu-id="0cc6d-103">call: keepAlive</span></span>
+# <a name="call-keepalive"></a><span data-ttu-id="a9cc4-103">call: keepAlive</span><span class="sxs-lookup"><span data-stu-id="a9cc4-103">call: keepAlive</span></span>
 
-<span data-ttu-id="0cc6d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0cc6d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a9cc4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a9cc4-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0cc6d-105">Сделайте запрос к этому API каждые 15 – 45 минут, чтобы убедиться, что текущий вызов остается активным.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-105">Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.</span></span> <span data-ttu-id="0cc6d-106">Вызов, не получающий этот запрос в течение 45 минут, считается неактивным и позднее завершается.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-106">A call that does not receive this request within 45 minutes is considered inactive and will subsequently end.</span></span>
+<span data-ttu-id="a9cc4-105">Сделайте запрос на этот API каждые 15-45 минут, чтобы убедиться, что текущий вызов остается активным.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-105">Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.</span></span> <span data-ttu-id="a9cc4-106">Вызов, который не получает этот запрос в течение 45 минут, считается неактивным и впоследствии завершится.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-106">A call that does not receive this request within 45 minutes is considered inactive and will subsequently end.</span></span>
 
-<span data-ttu-id="0cc6d-107">По крайней мере один успешный запрос должен быть выполнен в течение 45 минут предыдущего запроса или с начала вызова.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-107">At least one successful request must be made within 45 minutes of the previous request, or the start of the call.</span></span>
+<span data-ttu-id="a9cc4-107">По крайней мере один успешный запрос должен быть выполнен в течение 45 минут после предыдущего запроса или начала вызова.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-107">At least one successful request must be made within 45 minutes of the previous request, or the start of the call.</span></span>
 
-<span data-ttu-id="0cc6d-108">Мы рекомендуем отправлять запрос через более короткие интервалы времени (каждые 15 минут).</span><span class="sxs-lookup"><span data-stu-id="0cc6d-108">We recommend that you send a request in shorter time intervals (every 15 minutes).</span></span> <span data-ttu-id="0cc6d-109">Убедитесь, что эти запросы выполнены успешно, чтобы предотвратить истечение времени и завершения вызова.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-109">Make sure that these requests are successful to prevent the call from timing out and ending.</span></span>
+<span data-ttu-id="a9cc4-108">Рекомендуется отправлять запрос с более короткими интервалами времени (каждые 15 минут).</span><span class="sxs-lookup"><span data-stu-id="a9cc4-108">We recommend that you send a request in shorter time intervals (every 15 minutes).</span></span> <span data-ttu-id="a9cc4-109">Убедитесь, что эти запросы являются успешными, чтобы предотвратить время и завершение вызова.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-109">Make sure that these requests are successful to prevent the call from timing out and ending.</span></span>
 
-<span data-ttu-id="0cc6d-110">Попытка отправить запрос на уже завершенный вызов приведет к `404 Not-Found` ошибке.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-110">Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.</span></span> <span data-ttu-id="0cc6d-111">Ресурсы, связанные с вызовом, необходимо очистить на стороне приложения.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-111">The resources related to the call should be cleaned up on the application side.</span></span>
+<span data-ttu-id="a9cc4-110">Попытка отправить запрос на уже закончившийся вызов приведет к `404 Not-Found` ошибке.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-110">Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.</span></span> <span data-ttu-id="a9cc4-111">Ресурсы, связанные с вызовом, должны быть очищены на стороне приложения.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-111">The resources related to the call should be cleaned up on the application side.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0cc6d-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0cc6d-112">Permissions</span></span>
-<span data-ttu-id="0cc6d-113">Для вызова этого API может потребоваться одно из указанных ниже разрешений.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-113">One of the following permissions may be required to call this API.</span></span> <span data-ttu-id="0cc6d-114">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0cc6d-114">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a9cc4-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a9cc4-112">Permissions</span></span>
+<span data-ttu-id="a9cc4-113">Для вызова этого API может потребоваться одно из следующих разрешений.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-113">One of the following permissions may be required to call this API.</span></span> <span data-ttu-id="a9cc4-114">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9cc4-114">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0cc6d-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0cc6d-115">Permission type</span></span> | <span data-ttu-id="0cc6d-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0cc6d-116">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a9cc4-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a9cc4-115">Permission type</span></span> | <span data-ttu-id="a9cc4-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a9cc4-116">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="0cc6d-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0cc6d-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="0cc6d-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="0cc6d-118">Not Supported</span></span>        |
-| <span data-ttu-id="0cc6d-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0cc6d-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0cc6d-120">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="0cc6d-120">Not Supported</span></span>        |
-| <span data-ttu-id="0cc6d-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0cc6d-121">Application</span></span>     | <span data-ttu-id="0cc6d-122">Нет</span><span class="sxs-lookup"><span data-stu-id="0cc6d-122">None</span></span>                                        |
+| <span data-ttu-id="a9cc4-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a9cc4-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="a9cc4-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="a9cc4-118">Not Supported</span></span>        |
+| <span data-ttu-id="a9cc4-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a9cc4-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9cc4-120">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="a9cc4-120">Not Supported</span></span>        |
+| <span data-ttu-id="a9cc4-121">Приложение</span><span class="sxs-lookup"><span data-stu-id="a9cc4-121">Application</span></span>     | <span data-ttu-id="a9cc4-122">Нет</span><span class="sxs-lookup"><span data-stu-id="a9cc4-122">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="0cc6d-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0cc6d-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a9cc4-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a9cc4-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /communications/calls/{id}/keepAlive
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="0cc6d-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0cc6d-124">Request headers</span></span>
-| <span data-ttu-id="0cc6d-125">Имя</span><span class="sxs-lookup"><span data-stu-id="0cc6d-125">Name</span></span>          | <span data-ttu-id="0cc6d-126">Описание</span><span class="sxs-lookup"><span data-stu-id="0cc6d-126">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="a9cc4-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a9cc4-124">Request headers</span></span>
+| <span data-ttu-id="a9cc4-125">Имя</span><span class="sxs-lookup"><span data-stu-id="a9cc4-125">Name</span></span>          | <span data-ttu-id="a9cc4-126">Описание</span><span class="sxs-lookup"><span data-stu-id="a9cc4-126">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="0cc6d-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0cc6d-127">Authorization</span></span> | <span data-ttu-id="0cc6d-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a9cc4-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a9cc4-127">Authorization</span></span> | <span data-ttu-id="a9cc4-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0cc6d-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0cc6d-130">Request body</span></span>
-<span data-ttu-id="0cc6d-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a9cc4-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a9cc4-130">Request body</span></span>
+<span data-ttu-id="a9cc4-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0cc6d-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="0cc6d-132">Response</span></span>
-<span data-ttu-id="0cc6d-133">Этот метод возвращает `200 OK` код HTTP-ответа.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-133">This method returns a `200 OK` HTTP response code.</span></span>
+## <a name="response"></a><span data-ttu-id="a9cc4-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="a9cc4-132">Response</span></span>
+<span data-ttu-id="a9cc4-133">Этот метод возвращает `200 OK` код ответа HTTP.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-133">This method returns a `200 OK` HTTP response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0cc6d-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="0cc6d-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a9cc4-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="a9cc4-134">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="0cc6d-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="0cc6d-135">Request</span></span>
-<span data-ttu-id="0cc6d-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-136">The following is an example of a request.</span></span>
+### <a name="request"></a><span data-ttu-id="a9cc4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="a9cc4-135">Request</span></span>
+<span data-ttu-id="a9cc4-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-136">The following is an example of a request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0cc6d-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="0cc6d-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a9cc4-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="a9cc4-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "keep-alive"
@@ -66,32 +66,30 @@ POST /communications/calls/{id}/keepAlive
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab/keepAlive
 ```
-# <a name="c"></a>[<span data-ttu-id="0cc6d-138">C#</span><span class="sxs-lookup"><span data-stu-id="0cc6d-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a9cc4-138">C#</span><span class="sxs-lookup"><span data-stu-id="a9cc4-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/keep-alive-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0cc6d-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0cc6d-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a9cc4-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a9cc4-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/keep-alive-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0cc6d-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0cc6d-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a9cc4-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a9cc4-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/keep-alive-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0cc6d-141">Java</span><span class="sxs-lookup"><span data-stu-id="0cc6d-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a9cc4-141">Java</span><span class="sxs-lookup"><span data-stu-id="a9cc4-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/keep-alive-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="0cc6d-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="0cc6d-142">Response</span></span>
-<span data-ttu-id="0cc6d-143">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0cc6d-143">The following example shows the response.</span></span>
+### <a name="response"></a><span data-ttu-id="a9cc4-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="a9cc4-142">Response</span></span>
+<span data-ttu-id="a9cc4-143">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a9cc4-143">The following example shows the response.</span></span>
 <!-- {
   "blockType": "response",
-  "name": "keep-alive",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "name": "keep-alive"
 } -->
 ```http
 HTTP/1.1 200 OK

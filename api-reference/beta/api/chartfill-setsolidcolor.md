@@ -5,30 +5,30 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 91baf732404a8d542ba35cc5bc7ff7701b2ea67a
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 8c8d78fbd5240c82105b94c36463cf2f0566f0e7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50574612"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786199"
 ---
-# <a name="chartfill-setsolidcolor"></a><span data-ttu-id="e5d4a-103">ChartFill: setSolidColor</span><span class="sxs-lookup"><span data-stu-id="e5d4a-103">ChartFill: setSolidColor</span></span>
+# <a name="chartfill-setsolidcolor"></a><span data-ttu-id="38083-103">ChartFill: setSolidColor</span><span class="sxs-lookup"><span data-stu-id="38083-103">ChartFill: setSolidColor</span></span>
 
-<span data-ttu-id="e5d4a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e5d4a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="38083-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38083-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5d4a-105">Задает заливку одним цветом для элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-105">Sets the fill formatting of a chart element to a uniform color.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e5d4a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e5d4a-106">Permissions</span></span>
-<span data-ttu-id="e5d4a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e5d4a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="38083-105">Задает заливку одним цветом для элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="38083-105">Sets the fill formatting of a chart element to a uniform color.</span></span>
+## <a name="permissions"></a><span data-ttu-id="38083-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="38083-106">Permissions</span></span>
+<span data-ttu-id="38083-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38083-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5d4a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e5d4a-109">Permission type</span></span>      | <span data-ttu-id="e5d4a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e5d4a-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="38083-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="38083-109">Permission type</span></span>      | <span data-ttu-id="38083-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="38083-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e5d4a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e5d4a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e5d4a-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5d4a-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e5d4a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e5d4a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5d4a-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5d4a-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e5d4a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e5d4a-115">Application</span></span> | <span data-ttu-id="e5d4a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-116">Not supported.</span></span> |
+|<span data-ttu-id="38083-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="38083-111">Delegated (work or school account)</span></span> | <span data-ttu-id="38083-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="38083-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="38083-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="38083-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38083-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="38083-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="38083-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="38083-115">Application</span></span> | <span data-ttu-id="38083-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38083-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e5d4a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e5d4a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38083-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="38083-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
@@ -39,29 +39,29 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend/for
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidColor
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="e5d4a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e5d4a-118">Request headers</span></span>
-| <span data-ttu-id="e5d4a-119">Имя</span><span class="sxs-lookup"><span data-stu-id="e5d4a-119">Name</span></span>       | <span data-ttu-id="e5d4a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="e5d4a-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="38083-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="38083-118">Request headers</span></span>
+| <span data-ttu-id="38083-119">Имя</span><span class="sxs-lookup"><span data-stu-id="38083-119">Name</span></span>       | <span data-ttu-id="38083-120">Описание</span><span class="sxs-lookup"><span data-stu-id="38083-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e5d4a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e5d4a-121">Authorization</span></span>  | <span data-ttu-id="e5d4a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e5d4a-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e5d4a-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="e5d4a-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="38083-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="38083-121">Authorization</span></span>  | <span data-ttu-id="38083-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="38083-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="38083-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="38083-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="38083-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="38083-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e5d4a-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e5d4a-127">Request body</span></span>
-<span data-ttu-id="e5d4a-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="38083-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="38083-127">Request body</span></span>
+<span data-ttu-id="38083-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="38083-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e5d4a-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="e5d4a-129">Parameter</span></span>    | <span data-ttu-id="e5d4a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="e5d4a-130">Type</span></span>   |<span data-ttu-id="e5d4a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="e5d4a-131">Description</span></span>|
+| <span data-ttu-id="38083-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="38083-129">Parameter</span></span>    | <span data-ttu-id="38083-130">Тип</span><span class="sxs-lookup"><span data-stu-id="38083-130">Type</span></span>   |<span data-ttu-id="38083-131">Описание</span><span class="sxs-lookup"><span data-stu-id="38083-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e5d4a-132">color</span><span class="sxs-lookup"><span data-stu-id="e5d4a-132">color</span></span>|<span data-ttu-id="e5d4a-133">string</span><span class="sxs-lookup"><span data-stu-id="e5d4a-133">string</span></span>|<span data-ttu-id="e5d4a-134">HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).</span><span class="sxs-lookup"><span data-stu-id="e5d4a-134">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
+|<span data-ttu-id="38083-132">color</span><span class="sxs-lookup"><span data-stu-id="38083-132">color</span></span>|<span data-ttu-id="38083-133">string</span><span class="sxs-lookup"><span data-stu-id="38083-133">string</span></span>|<span data-ttu-id="38083-134">HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).</span><span class="sxs-lookup"><span data-stu-id="38083-134">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e5d4a-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5d4a-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38083-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="38083-135">Response</span></span>
 
-<span data-ttu-id="e5d4a-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="38083-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="38083-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5d4a-138">Пример</span><span class="sxs-lookup"><span data-stu-id="e5d4a-138">Example</span></span>
-<span data-ttu-id="e5d4a-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e5d4a-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5d4a-140">Request</span></span>
-<span data-ttu-id="e5d4a-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="38083-138">Пример</span><span class="sxs-lookup"><span data-stu-id="38083-138">Example</span></span>
+<span data-ttu-id="38083-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="38083-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="38083-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="38083-140">Request</span></span>
+<span data-ttu-id="38083-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="38083-141">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e5d4a-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5d4a-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="38083-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="38083-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chartfill_setsolidcolor"
@@ -75,31 +75,29 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e5d4a-143">C#</span><span class="sxs-lookup"><span data-stu-id="e5d4a-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="38083-143">C#</span><span class="sxs-lookup"><span data-stu-id="38083-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chartfill-setsolidcolor-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5d4a-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5d4a-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="38083-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="38083-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chartfill-setsolidcolor-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5d4a-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5d4a-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="38083-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38083-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chartfill-setsolidcolor-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e5d4a-146">Java</span><span class="sxs-lookup"><span data-stu-id="e5d4a-146">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="38083-146">Java</span><span class="sxs-lookup"><span data-stu-id="38083-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chartfill-setsolidcolor-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e5d4a-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5d4a-147">Response</span></span>
-<span data-ttu-id="e5d4a-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e5d4a-148">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="38083-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="38083-147">Response</span></span>
+<span data-ttu-id="38083-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="38083-148">Here is an example of the response.</span></span> 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

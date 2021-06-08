@@ -1,40 +1,35 @@
 ---
-title: тип перечисления Ратингунитедстатесмовиестипе
-description: Метки оценок фильмов в США
+title: тип enum ratingUnitedStatesMoviesType
+description: Метки рейтинга фильмов в США
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9ca65673deb3b9e6156d858f78e03aafd834da54
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d527ba513a2d3b2a7c34497eda374c900e9a0f04
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978106"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759989"
 ---
-# <a name="ratingunitedstatesmoviestype-enum-type"></a><span data-ttu-id="ab855-103">тип перечисления Ратингунитедстатесмовиестипе</span><span class="sxs-lookup"><span data-stu-id="ab855-103">ratingUnitedStatesMoviesType enum type</span></span>
+# <a name="ratingunitedstatesmoviestype-enum-type"></a><span data-ttu-id="b9204-103">тип enum ratingUnitedStatesMoviesType</span><span class="sxs-lookup"><span data-stu-id="b9204-103">ratingUnitedStatesMoviesType enum type</span></span>
 
-<span data-ttu-id="ab855-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ab855-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b9204-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b9204-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ab855-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ab855-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b9204-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b9204-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ab855-106">Метки оценок фильмов в США</span><span class="sxs-lookup"><span data-stu-id="ab855-106">Movies rating labels in United States</span></span>
+<span data-ttu-id="b9204-106">Метки рейтинга фильмов в США</span><span class="sxs-lookup"><span data-stu-id="b9204-106">Movies rating labels in United States</span></span>
 
-## <a name="members"></a><span data-ttu-id="ab855-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="ab855-107">Members</span></span>
-|<span data-ttu-id="ab855-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="ab855-108">Member</span></span>|<span data-ttu-id="ab855-109">Значение</span><span class="sxs-lookup"><span data-stu-id="ab855-109">Value</span></span>|<span data-ttu-id="ab855-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ab855-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="b9204-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="b9204-107">Members</span></span>
+|<span data-ttu-id="b9204-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="b9204-108">Member</span></span>|<span data-ttu-id="b9204-109">Значение</span><span class="sxs-lookup"><span data-stu-id="b9204-109">Value</span></span>|<span data-ttu-id="b9204-110">Описание</span><span class="sxs-lookup"><span data-stu-id="b9204-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ab855-111">аллалловед</span><span class="sxs-lookup"><span data-stu-id="ab855-111">allAllowed</span></span>|<span data-ttu-id="ab855-112">нуль</span><span class="sxs-lookup"><span data-stu-id="ab855-112">0</span></span>|<span data-ttu-id="ab855-113">Значение по умолчанию, разрешить все содержимое фильмов</span><span class="sxs-lookup"><span data-stu-id="ab855-113">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="ab855-114">аллблоккед</span><span class="sxs-lookup"><span data-stu-id="ab855-114">allBlocked</span></span>|<span data-ttu-id="ab855-115">1 </span><span class="sxs-lookup"><span data-stu-id="ab855-115">1</span></span>|<span data-ttu-id="ab855-116">Не разрешать никакие видеоролики</span><span class="sxs-lookup"><span data-stu-id="ab855-116">Do not allow any movies content</span></span>|
-|<span data-ttu-id="ab855-117">обобщен</span><span class="sxs-lookup"><span data-stu-id="ab855-117">general</span></span>|<span data-ttu-id="ab855-118">2 </span><span class="sxs-lookup"><span data-stu-id="ab855-118">2</span></span>|<span data-ttu-id="ab855-119">G, все Недопущенные сроки</span><span class="sxs-lookup"><span data-stu-id="ab855-119">G, all ages admitted</span></span>|
-|<span data-ttu-id="ab855-120">паренталгуиданце</span><span class="sxs-lookup"><span data-stu-id="ab855-120">parentalGuidance</span></span>|<span data-ttu-id="ab855-121">4</span><span class="sxs-lookup"><span data-stu-id="ab855-121">3</span></span>|<span data-ttu-id="ab855-122">PG, некоторые материалы могут не подойти для детей</span><span class="sxs-lookup"><span data-stu-id="ab855-122">PG, some material may not be suitable for children</span></span>|
-|<span data-ttu-id="ab855-123">parentalGuidance13</span><span class="sxs-lookup"><span data-stu-id="ab855-123">parentalGuidance13</span></span>|<span data-ttu-id="ab855-124">4 </span><span class="sxs-lookup"><span data-stu-id="ab855-124">4</span></span>|<span data-ttu-id="ab855-125">PG13, некоторые материалы могут быть неприемлемыми для детей 13</span><span class="sxs-lookup"><span data-stu-id="ab855-125">PG13, some material may be inappropriate for children under 13</span></span>|
-|<span data-ttu-id="ab855-126">ограниченной</span><span class="sxs-lookup"><span data-stu-id="ab855-126">restricted</span></span>|<span data-ttu-id="ab855-127">5 </span><span class="sxs-lookup"><span data-stu-id="ab855-127">5</span></span>|<span data-ttu-id="ab855-128">R для зрителей в разделе 17 требуется сопроводительный родитель или опекун взрослого</span><span class="sxs-lookup"><span data-stu-id="ab855-128">R, viewers under 17 require accompanying parent or adult guardian</span></span>|
-|<span data-ttu-id="ab855-129">взрослые</span><span class="sxs-lookup"><span data-stu-id="ab855-129">adults</span></span>|<span data-ttu-id="ab855-130">6 </span><span class="sxs-lookup"><span data-stu-id="ab855-130">6</span></span>|<span data-ttu-id="ab855-131">NC17, только для взрослых</span><span class="sxs-lookup"><span data-stu-id="ab855-131">NC17, adults only</span></span>|
-
-
-
-
-
+|<span data-ttu-id="b9204-111">allAllowed</span><span class="sxs-lookup"><span data-stu-id="b9204-111">allAllowed</span></span>|<span data-ttu-id="b9204-112">0</span><span class="sxs-lookup"><span data-stu-id="b9204-112">0</span></span>|<span data-ttu-id="b9204-113">Значение по умолчанию, разрешить все содержимое фильмов</span><span class="sxs-lookup"><span data-stu-id="b9204-113">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="b9204-114">allBlocked</span><span class="sxs-lookup"><span data-stu-id="b9204-114">allBlocked</span></span>|<span data-ttu-id="b9204-115">1</span><span class="sxs-lookup"><span data-stu-id="b9204-115">1</span></span>|<span data-ttu-id="b9204-116">Не разрешайте контент фильмов</span><span class="sxs-lookup"><span data-stu-id="b9204-116">Do not allow any movies content</span></span>|
+|<span data-ttu-id="b9204-117">общие</span><span class="sxs-lookup"><span data-stu-id="b9204-117">general</span></span>|<span data-ttu-id="b9204-118">2</span><span class="sxs-lookup"><span data-stu-id="b9204-118">2</span></span>|<span data-ttu-id="b9204-119">G, все возрасты допущены</span><span class="sxs-lookup"><span data-stu-id="b9204-119">G, all ages admitted</span></span>|
+|<span data-ttu-id="b9204-120">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="b9204-120">parentalGuidance</span></span>|<span data-ttu-id="b9204-121">3</span><span class="sxs-lookup"><span data-stu-id="b9204-121">3</span></span>|<span data-ttu-id="b9204-122">PG, некоторые материалы могут быть неподходящими для детей</span><span class="sxs-lookup"><span data-stu-id="b9204-122">PG, some material may not be suitable for children</span></span>|
+|<span data-ttu-id="b9204-123">parentalGuidance13</span><span class="sxs-lookup"><span data-stu-id="b9204-123">parentalGuidance13</span></span>|<span data-ttu-id="b9204-124">4 </span><span class="sxs-lookup"><span data-stu-id="b9204-124">4</span></span>|<span data-ttu-id="b9204-125">PG13, некоторые материалы могут быть неуместными для детей в возрасте до 13 лет</span><span class="sxs-lookup"><span data-stu-id="b9204-125">PG13, some material may be inappropriate for children under 13</span></span>|
+|<span data-ttu-id="b9204-126">ограниченный</span><span class="sxs-lookup"><span data-stu-id="b9204-126">restricted</span></span>|<span data-ttu-id="b9204-127">5 </span><span class="sxs-lookup"><span data-stu-id="b9204-127">5</span></span>|<span data-ttu-id="b9204-128">R. Для просмотра в возрасте до 17 лет требуется сопровождающий родитель или взрослый опекун</span><span class="sxs-lookup"><span data-stu-id="b9204-128">R, viewers under 17 require accompanying parent or adult guardian</span></span>|
+|<span data-ttu-id="b9204-129">взрослые</span><span class="sxs-lookup"><span data-stu-id="b9204-129">adults</span></span>|<span data-ttu-id="b9204-130">6 </span><span class="sxs-lookup"><span data-stu-id="b9204-130">6</span></span>|<span data-ttu-id="b9204-131">NC17, только для взрослых</span><span class="sxs-lookup"><span data-stu-id="b9204-131">NC17, adults only</span></span>|
 
 
 
