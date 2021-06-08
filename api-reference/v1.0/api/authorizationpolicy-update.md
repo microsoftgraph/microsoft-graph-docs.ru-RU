@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1e57436cc396b78a8697516702004c7ea4f6d666
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 76ce049fc30ae48a03e18dae92cad63f6fb80f14
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231985"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788131"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление авторизацииPolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "52231985"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.ReadWrite.Authorization|
+| Для приложений                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,14 +49,14 @@ PATCH /policies/authorizationPolicy
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. |
-|allowedToUseSSPR|Логический| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. |
-|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. |
+|allowedToUseSSPR|Boolean| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. |
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
 |allowInvitesFrom|allowInvitesFrom|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` — это параметр по умолчанию для всех облачных сред, за исключением правительства США. Дополнительные значения см. в этой [таблице.](../resources/authorizationpolicy.md#allowinvitesfrom-values) |
-|blockMsolPowerShell|Логический| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. |
+|blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. |
-|description|Строка| Описание этой политики.|
-|displayName|Строка| Отображение имени для этой политики. |
+|description|String| Описание этой политики.|
+|displayName|String| Отображение имени для этой политики. |
 |guestUserRoleId|Guid| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. В настоящее время поддерживаются следующие роли: User `a0b1b346-4d3e-4e8b-98f8-753987be4970` (), Guest User `10dae51f-b6af-4016-8d66-8c2a99b929b3` () и Restricted Guest User `2af84b1e-32c8-42b7-82bc-daa82404023b` (). |
 
 
@@ -110,9 +110,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -163,9 +161,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -218,9 +214,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -271,9 +265,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -326,9 +318,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -383,9 +373,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationpolicy"
+  "blockType": "response"
 } -->
 
 ```http
