@@ -5,12 +5,12 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f11a94aee5a81022c9b6700c3f9d5796172187cf
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d06a40b6d13ec7063af4403829a25f38da46fd87
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680831"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785923"
 ---
 # <a name="update-organizationalbrandingproperties"></a>Обновление организационных свойств
 
@@ -43,7 +43,7 @@ PUT /organization/{tenant id}/branding
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательно.  |
+| Content-Language  | Locale. Необязательное свойство.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -106,12 +106,10 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -139,12 +137,10 @@ Content-Type: image/jpeg
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -172,12 +168,10 @@ Content-Language: fr
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -227,12 +221,10 @@ Content-Language: fr
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http

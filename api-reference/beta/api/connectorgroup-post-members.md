@@ -1,16 +1,16 @@
 ---
 title: Добавление соединителя для connectorGroup
-description: Этот API используется для добавления соединителю в connectorGroup.
+description: Используйте этот API, чтобы добавить соединителю в соединителюGroup.
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 94b4f17dce85108d853cb0d3c21a4f9fc7bf573d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 83829bdcfc3c3bfafe92971c42420f2fb9cf62d8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129809"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786147"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129809"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [соединителю](../resources/connector.md) в [connectorGroup.](../resources/connectorgroup.md)
+Добавьте [соединителю](../resources/connector.md) в [соединителюGroup.](../resources/connectorgroup.md)
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,15 +37,15 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer. Обязательный параметр.|
+| Авторизация  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажете В JSON ссылку на объект [соединители.](../resources/connector.md)
+В теле запроса поставляем представление JSON ссылки на [объект соединитель.](../resources/connector.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` соединители [](../resources/connector.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [соединители](../resources/connector.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -87,9 +87,7 @@ Content-length: 104
 Ниже приведен пример ответа. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.connector"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

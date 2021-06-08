@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4c4dfec9bd857af79c3f88cbde25c4008f5645e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1c6b9f5be75719725de37edb677a6b6dfa0e545
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021128"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759912"
 ---
 # <a name="get-managedapp"></a>Get managedApp
 
@@ -23,11 +23,11 @@ ms.locfileid: "48021128"
 ## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,7 +38,7 @@ ms.locfileid: "48021128"
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,7 +47,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -94,11 +94,6 @@ Content-Length: 879
   }
 }
 ```
-
-
-
-
-
 
 
 

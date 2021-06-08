@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51c66fbcb13fb866b432f81cd24b40af0ac241e1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7aca805108b2765280a56974309574ffce2f5289
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973136"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759919"
 ---
 # <a name="create-managedandroidlobapp"></a>Create managedAndroidLobApp
 
@@ -23,11 +23,11 @@ ms.locfileid: "47973136"
 ## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceAppManagement/mobileApps
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта managedAndroidLobApp в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта managedAndroidLobApp.
@@ -64,8 +64,8 @@ POST /deviceAppManagement/mobileApps
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appAvailability|[манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Унаследованный от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
@@ -87,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1153
+Content-length: 1193
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -121,7 +121,9 @@ Content-length: 1153
     "v4_3": true,
     "v4_4": true,
     "v5_0": true,
-    "v5_1": true
+    "v5_1": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value"
@@ -133,7 +135,7 @@ Content-length: 1153
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1325
+Content-Length: 1365
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -170,17 +172,14 @@ Content-Length: 1325
     "v4_3": true,
     "v4_4": true,
     "v5_0": true,
-    "v5_1": true
+    "v5_1": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value"
 }
 ```
-
-
-
-
-
 
 
 

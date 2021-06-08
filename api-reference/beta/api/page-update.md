@@ -1,16 +1,16 @@
 ---
 title: Обновление страницы
-description: Обновление содержимого страницы OneNote.
+description: Обновление содержимого OneNote страницы.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 4f3b8d219249b578f1876b1b30df7f3c7d2487b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6f0fb24188beb64502d2ef91c389f66677465fe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004594"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785139"
 ---
 # <a name="update-page"></a>Обновление страницы
 
@@ -18,13 +18,13 @@ ms.locfileid: "48004594"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление содержимого страницы OneNote.
+Обновление содержимого OneNote страницы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.ReadWrite, Notes.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.ReadWrite    |
 |Для приложений | Notes.ReadWrite.All |
 
@@ -43,11 +43,11 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса добавьте массив объектов [патчконтенткомманд](../resources/patchcontentcommand.md) , которые представляют изменения на странице. Дополнительные сведения и примеры приведены в [статье обновление содержимого страницы OneNote](/graph/onenote-update-page).
+В теле запроса поставляем массив объектов [patchContentCommand,](../resources/patchcontentcommand.md) которые представляют изменения на странице. Дополнительные сведения и примеры см. в [OneNote update OneNote.](/graph/onenote-update-page)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -93,9 +93,7 @@ Content-length: 312
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenotePage"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

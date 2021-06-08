@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11a51900919d90f92e441b67ad97d4c2f74d624f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b544bf156e56f6d9e8ad8dac7e60ad7017f4968
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978085"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759968"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>Тип ресурса sharedPCConfiguration
 
@@ -42,7 +42,7 @@ ms.locfileid: "47978085"
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Определяет способ управления учетными записями на общем компьютере. Применяется, только если для параметра disableAccountManager установлено значение false.|
-|allowedAccounts|[шаредпкалловедаккаунттипе](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Указывает тип учетных записей, которые можно использовать на общем компьютере. Возможные значения: `guest`, `domain`.|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Указывает тип учетных записей, которые можно использовать на общем компьютере. Возможные значения: `guest`, `domain`.|
 |allowLocalStorage|Boolean|Определяет, разрешено ли на общем компьютере локальное хранилище.|
 |disableAccountManager|Boolean|Отключает диспетчер учетных записей в режиме совместного использования компьютера.|
 |disableEduPolicies|Boolean|Указывает, следует ли отключить стандартные политики среды совместного использования компьютера для образования. Для Windows 10 RS2 и более поздних версий эта политика будет применяться без установки значения True для параметра Enabled.|
@@ -59,7 +59,7 @@ ms.locfileid: "47978085"
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройств пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -101,11 +101,6 @@ ms.locfileid: "47978085"
   "maintenanceStartTime": "String (time of day)"
 }
 ```
-
-
-
-
-
 
 
 

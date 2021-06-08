@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c6bce85851096771d68e9f57266ea035669d3e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3cf5baf65dc2d3a3745374a1f9c41bb42b99995
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077795"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759408"
 ---
 # <a name="get-userinstallstatesummary"></a>Get userInstallStateSummary
 
@@ -23,11 +23,11 @@ ms.locfileid: "48077795"
 ## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,11 +79,6 @@ Content-Length: 269
   }
 }
 ```
-
-
-
-
-
 
 
 

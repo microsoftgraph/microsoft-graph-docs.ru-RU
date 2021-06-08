@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dec644f55e7a96cec6cbb1680af12097c09525bc
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 7e4ffa0b1189ebf9cf6ab3d710256ab423f5bd3f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664009"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786231"
 ---
 # <a name="call-redirect"></a>вызов: перенаправление
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/redirect
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если задано несколько целевых объектов, это симуляцный вызов. Это означает, что все целевые объекты будут одновременно звонили и подключена только первая цель, подбираемая. Мы поддерживаем до 25 целей для simulring.
-|targetDisposition|Строка|(Неуловимый) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр обесценен, мы автоматически определяем, является ли это вызовом или симулируется из числа предоставляемых целей.|
+|targetDisposition|String|(Неуловимый) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр обесценен, мы автоматически определяем, является ли это вызовом или симулируется из числа предоставляемых целей.|
 |timeout|Int32|Период времени (в секундах) для операции перенаправления. Диапазон значения времени от 15 до 90 секунд включительно. Значение времени по умолчанию — 55 секунд для одной цели и 60 секунд для нескольких целей (при условии изменения). |
 |maskCallee|Логический|Указывает, следует ли скрывать вызываемую от вызываемой. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
 |maskCaller|Логический|Указывает, следует ли скрывать вызываемую от вызываемой стороны. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
@@ -172,8 +172,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -350,8 +349,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ``` http
@@ -506,8 +504,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3817f3835ce82e15204d07adc1d7bfe85233d955
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a7bdee8183ad86306234b446813c9272137113d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094262"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760115"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 
@@ -26,7 +26,7 @@ ms.locfileid: "48094262"
 |setting|String|Параметр для отчета|
 |settingName|String|Локализованное или понятное имя параметра для отчета|
 |instanceDisplayName|String|Имя экземпляра параметра для отчета|
-|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия параметру. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
 |errorDescription|String|Описание ошибки|
 |userId|String|ИД пользователя|
@@ -63,17 +63,13 @@ ms.locfileid: "48094262"
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "currentValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 05d3f30e3061a39e3104293691448e0f4534790b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e88a3ad02556ed14cc4aa7024c3414b36fa954a1
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049613"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785132"
 ---
 # <a name="assign-a-manager"></a>Назначение руководителя
 
@@ -85,11 +85,9 @@ Content-length: xxx
 
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса androidWorkProfileCompliancePolicy
+title: тип ресурса androidWorkProfileCompliancePolicy
 description: Этот класс содержит параметры соответствия требованиям для рабочего профиля Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7c6d7d8d05d35085c1d4f268f4ba5ec45c3ba5c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c0c70336daefd5bb5cf95875f8ef64f340a9e0c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041514"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760281"
 ---
-# <a name="androidworkprofilecompliancepolicy-resource-type"></a>Тип ресурса androidWorkProfileCompliancePolicy
+# <a name="androidworkprofilecompliancepolicy-resource-type"></a>тип ресурса androidWorkProfileCompliancePolicy
 
 Пространство имен: microsoft.graph
 
@@ -26,11 +26,11 @@ ms.locfileid: "48041514"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список АндроидворкпрофилекомплианцеполиЦиес](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md)|Коллекция [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|Список свойств и связей объектов [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .|
-|[Получение androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md);|Чтение свойств и связей объекта [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .|
-|[Создание androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md);|Создание нового объекта [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .|
-|[Удаление androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md)|Нет|Удаляет объект [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md).|
-|[Обновление androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md);|Обновление свойств объекта [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .|
+|[Список androidWorkProfileCompliancePolicies](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md)|[коллекция androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|Список свойств и связей объектов [AndroidWorkProfileCompliancePolicy.](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|
+|[Get AndroidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md);|Чтение свойств и связей объекта [AndroidWorkProfileCompliancePolicy.](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|
+|[Создание androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md);|Создайте новый [объект AndroidWorkProfileCompliancePolicy.](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|
+|[Удаление AndroidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md)|Нет|Удаляет [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md).|
+|[Обновление AndroidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md);|Обновление свойств объекта [AndroidWorkProfileCompliancePolicy.](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -43,7 +43,7 @@ ms.locfileid: "48041514"
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |passwordRequired|Boolean|Указывает, что для разблокировки устройства требуется указывать пароль.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
-|passwordRequiredType|[андроидрекуиредпассвордтипе](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Тип символов в пароле. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|passwordRequiredType|[AndroidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Тип символов в пароле. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
@@ -51,7 +51,7 @@ ms.locfileid: "48041514"
 |securityDisableUsbDebugging|Boolean|Запрещает USB-отладку на устройствах с Android.|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
-|deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Устройства нельзя взламывать и рутовать.|
 |osMinimumVersion|String|Минимальная версия Android.|
 |osMaximumVersion|String|Максимальная версия Android.|
@@ -114,11 +114,6 @@ ms.locfileid: "48041514"
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
-
-
-
 
 
 

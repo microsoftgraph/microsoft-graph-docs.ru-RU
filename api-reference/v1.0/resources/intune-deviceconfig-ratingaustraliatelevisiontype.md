@@ -1,42 +1,37 @@
 ---
-title: тип перечисления Ратингаустралиателевисионтипе
-description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Австралии
+title: тип enum ratingAustraliaTelevisionType
+description: Метки оценки телеконтента в Австралии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b89b3a5281b33aeddfbdbaa2468c55229c127a1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7b1b3a820044ee7be701d6554acb501565b8a98
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041437"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760239"
 ---
-# <a name="ratingaustraliatelevisiontype-enum-type"></a>тип перечисления Ратингаустралиателевисионтипе
+# <a name="ratingaustraliatelevisiontype-enum-type"></a>тип enum ratingAustraliaTelevisionType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Австралии
+Метки оценки телеконтента в Австралии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|учебные заведения|2 |Классификация P предназначена для учебных заведений|
-|children|4|Классификация C предназначена для дочерних элементов в 14|
-|обобщен|4 |Классификация G подходит для всех возраста|
-|паренталгуиданце|5 |Классификация PG рекомендуется для зрителей|
-|обнаружен|6 |Для зрителей рекомендуется использовать классификацию M более 15|
-|agesAbove15|7 |MA15 + Classification не подходит для зрителей в течение 15|
-|agesAbove15AdultViolence|8 |AV15 + Classification не подходит для зрителей в масштабе 15, взрослого только для насилия|
-
-
-
-
-
+|allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
+|дошкольники|2|Классификация P предназначена для дошкольников|
+|children|3|Классификация C предназначена для детей до 14 лет|
+|общие|4 |Классификация G подходит для всех возрастов|
+|parentalGuidance|5 |Классификация PG рекомендуется для молодых зрителей|
+|зрелый|6 |Классификация M рекомендуется для зрителей старше 15 лет|
+|agesAbove15|7 |Классификация MA15+ не подходит для зрителей в возрасте до 15 лет|
+|agesAbove15AdultViolence|8 |Классификация AV15+ не подходит для зрителей в возрасте до 15 лет, для взрослых|
 
 
 

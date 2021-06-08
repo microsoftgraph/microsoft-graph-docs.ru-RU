@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5532d5e68dfa2adb085cad2dc5924edb61e020c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1eb39ba619dd00cd5759d5e4aeb12ba3645ec5b7
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992288"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759800"
 ---
 # <a name="update-managedioslobapp"></a>Update managedIOSLobApp
 
@@ -21,13 +21,13 @@ ms.locfileid: "47992288"
 Обновление свойств объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).
@@ -64,8 +64,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appAvailability|[манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Унаследованный от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
@@ -89,7 +89,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1307
+Content-length: 1327
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -126,7 +126,8 @@ Content-length: 1307
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
@@ -139,7 +140,7 @@ Content-length: 1307
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1479
+Content-Length: 1499
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -179,18 +180,14 @@ Content-Length: 1479
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
   "buildNumber": "Build Number value"
 }
 ```
-
-
-
-
-
 
 
 

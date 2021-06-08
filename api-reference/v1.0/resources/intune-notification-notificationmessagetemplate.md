@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05db5042b43097f0ff48f4c744e3b4bcd82f691d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ce49cd076711027c0491a4cb3281f3ff74d42c48
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072993"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760136"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Тип ресурса notificationMessageTemplate
 
@@ -33,11 +33,11 @@ ms.locfileid: "48072993"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Отображаемое имя для шаблона сообщения уведомления.|
+|displayName|String|Отображаемое имя для шаблона сообщения уведомления.|
 |defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
-|brandingOptions|[нотификатионтемплатебрандингоптионс](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -62,11 +62,6 @@ ms.locfileid: "48072993"
   "brandingOptions": "String"
 }
 ```
-
-
-
-
-
 
 
 

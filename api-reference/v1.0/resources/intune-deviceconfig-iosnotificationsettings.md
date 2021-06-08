@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e3dc929e96869475d4376c344bf08ff17ae7edd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 438b1cf075aa1e1cedafc8340b33186965691424
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074988"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760031"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Тип ресурса iosNotificationSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "48074988"
 |enabled|Boolean|Указывает, разрешены ли уведомления для этого приложения.|
 |showInNotificationCenter|Boolean|Указывает, можно ли отображать уведомления в центре уведомлений.|
 |showOnLockScreen|Boolean|Указывает, можно ли отображать уведомления на экране блокировки.|
-|alertType|[иоснотификатионалерттипе](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Определяет тип оповещения для уведомлений, связанных с этим приложением. Возможные значения: `deviceDefault`, `banner`, `modal`, `none`.|
+|alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Определяет тип оповещения для уведомлений, связанных с этим приложением. Возможные значения: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Boolean|Указывает, разрешены ли эмблемы для этого приложения.|
 |soundsEnabled|Boolean|Указывает, разрешены ли звуковые сигналы для этого приложения.|
 
@@ -57,11 +57,6 @@ ms.locfileid: "48074988"
   "soundsEnabled": true
 }
 ```
-
-
-
-
-
 
 
 

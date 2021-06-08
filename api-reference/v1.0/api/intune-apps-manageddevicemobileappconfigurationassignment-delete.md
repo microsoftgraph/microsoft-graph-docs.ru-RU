@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0776ac7b313f95541c0442c60ccc4e0489cabac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44f333ba5a7c8cbf9e5812011b99440783edfa1d
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013302"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759891"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>Удаление объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -23,11 +23,11 @@ ms.locfileid: "48013302"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,11 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5e2c9f077d9c8841b1a485bff7eb43ce2fb3ae17
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: ddfa42bcec9fde5da17f30384d2515f32e96631b
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781018"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785972"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Обновление наPremisesPublishingProfile
 
@@ -42,7 +42,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -106,9 +106,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http
@@ -140,9 +138,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http
@@ -193,9 +189,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesPublishingProfile"
+  "blockType": "response"
 } -->
 
 ```http

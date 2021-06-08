@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4193bfa0f74461f284329cbb5772deee6417a029
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: e044843992bff6f68d01c35a549a6a9b57a61417
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080283"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786007"
 ---
 # <a name="add-custodiansources"></a>Добавление custodianSources
 
@@ -106,9 +106,7 @@ Content-length: 179
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.dataSource"
+  "blockType": "response"
 }
 -->
 

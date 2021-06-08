@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9336c4ad8953ca68cc066e65f29c48090e7eef8d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f88b2823a3a3d75d23dc14142b270a9da42eab60
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070102"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759905"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -23,11 +23,11 @@ ms.locfileid: "48070102"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 293
+Content-length: 287
 
 {
   "assignments": [
@@ -74,7 +74,7 @@ Content-length: 293
       "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
       "id": "4df81c9c-1c9c-4df8-9c1c-f84d9c1cf84d",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]
@@ -86,11 +86,6 @@ Content-length: 293
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

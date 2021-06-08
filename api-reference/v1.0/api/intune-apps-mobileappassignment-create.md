@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcc30212ba47260c332117d540f277df292bf5b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e2eea5bd9caa01430daa5e85a3fe7483d4e40aa
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013281"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759744"
 ---
 # <a name="create-mobileappassignment"></a>Создание объекта mobileAppAssignment
 
@@ -23,11 +23,11 @@ ms.locfileid: "48013281"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileAppAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта mobileAppAssignment.
@@ -68,16 +68,17 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
-Content-length: 273
+Content-length: 324
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value"
   }
 }
 ```
@@ -87,25 +88,21 @@ Content-length: 273
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 322
+Content-Length: 373
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "id": "591620b7-20b7-5916-b720-1659b7201659",
   "intent": "required",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value"
   }
 }
 ```
-
-
-
-
-
 
 
 

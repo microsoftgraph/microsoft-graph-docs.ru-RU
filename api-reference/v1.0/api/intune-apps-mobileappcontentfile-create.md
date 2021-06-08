@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f7a75bac9f17795d9a8b6f2650041ccc8518cb5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c1b525eefdf6349217aaa05a94f2d21849b59a89
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087434"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759688"
 ---
 # <a name="create-mobileappcontentfile"></a>Создание объекта mobileAppContentFile
 
@@ -23,11 +23,11 @@ ms.locfileid: "48087434"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,14 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |:---|:---|:---|
 |azureStorageUri|String|URI службы хранилища Azure.|
 |isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
-|id|Строка|Идентификатор файла.|
+|id|String|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
 |name|String|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
 |sizeEncrypted|Int64|Размер файла после шифрования.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
 |manifest|Binary|Данные манифеста.|
-|uploadState|[мобилеаппконтентфилеуплоадстате](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
 
 
 
@@ -110,11 +110,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
-
-
-
-
 
 
 

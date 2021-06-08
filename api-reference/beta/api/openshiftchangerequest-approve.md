@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a6ce178eb59045d572bed00d790c2405be349e5a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 769665c9a65229d33e287fcf7660157c5aa0b425
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447917"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785958"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: утверждение
 
@@ -102,9 +102,7 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

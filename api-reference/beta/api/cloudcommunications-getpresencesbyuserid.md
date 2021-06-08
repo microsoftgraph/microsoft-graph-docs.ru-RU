@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a3c6b0fe4d223ef458aad7d9b271cfdee37e590c
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 909643577a93429a06e6569c3d6280c69ffacd1e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796534"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786175"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -35,7 +35,7 @@ ms.locfileid: "49796534"
 POST /communications/getPresencesByUserId
 ```
 
-## <a name="request-headers"></a>Заглавные запросы
+## <a name="request-headers"></a>Запрашивать заглавные
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
@@ -44,15 +44,15 @@ POST /communications/getPresencesByUserId
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажу объект JSON со следующим параметром.
+В теле запроса укажи объект JSON со следующим параметром.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|ids|Коллекция String|ИД объектов пользователя.|
+|ids|Коллекция String|ID объекта пользователя.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [присутствия](../resources/presence.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` присутствия в тексте ответа. [](../resources/presence.md)
 
 
 ## <a name="examples"></a>Примеры
@@ -94,9 +94,9 @@ Content-Type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
-> **Примечание.** Объекты ответа могут быть сокращены для учитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание:** Объекты отклика могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -109,8 +109,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
-```
-```json
+
 {
   "value": [{
       "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",

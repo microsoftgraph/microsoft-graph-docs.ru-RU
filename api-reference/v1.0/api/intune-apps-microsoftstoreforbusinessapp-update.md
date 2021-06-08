@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a6ed8bb852a7d6891527495fc93aeef1030649c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 426a613558a1b16c5cfc91749c61fcf8af4e25a2
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015990"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759849"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>Update microsoftStoreForBusinessApp
 
@@ -23,11 +23,11 @@ ms.locfileid: "48015990"
 ## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md).
@@ -64,11 +64,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |usedLicenseCount|Int32|Количество используемых лицензий на Microsoft Store для бизнеса.|
 |totalLicenseCount|Int32|Общее количество лицензий на Microsoft Store для бизнеса.|
 |productKey|String|Ключ продукта для приложения.|
-|licenseType|[микрософтсторефорбусинесслиценсетипе](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|Тип лицензии приложения. Возможные значения: `offline`, `online`.|
+|licenseType|[MicrosoftStoreForBusinessLicenseType](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|Тип лицензии приложения. Возможные значения: `offline`, `online`.|
 |packageIdentityName|String|Идентификатор пакета приложения|
 
 
@@ -144,11 +144,6 @@ Content-Length: 941
   "packageIdentityName": "Package Identity Name value"
 }
 ```
-
-
-
-
-
 
 
 

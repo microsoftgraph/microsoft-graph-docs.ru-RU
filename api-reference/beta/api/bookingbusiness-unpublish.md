@@ -1,26 +1,26 @@
 ---
-title: 'Букингбусинесс: Отмена публикации'
-description: Сделайте страницу планирования этого бизнеса недоступной для внешних клиентов.
+title: 'bookingBusiness: неопубликованный'
+description: Сделать страницу планирования этого бизнеса недоступным для внешних клиентов.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ce60406347dbf6e0d0964976929614c696fd04b7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 52886df6aebcab14bbf8b2983e21e0866d56b403
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960572"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786260"
 ---
-# <a name="bookingbusiness-unpublish"></a>Букингбусинесс: Отмена публикации
+# <a name="bookingbusiness-unpublish"></a>bookingBusiness: неопубликованный
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сделайте страницу планирования этого бизнеса недоступной для внешних клиентов.
+Сделать страницу планирования этого бизнеса недоступным для внешних клиентов.
 
-Задайте для свойства **publishs** значение false, а свойству **публикурл** — значение null.
+Установите **свойство isPublished** false, **а свойство publicUrl** — null.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ POST /bookingBusinesses/{id}/unpublish
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
+Ниже приводится пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -82,9 +82,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 82a5a1c401c3d9c1fdcd90d7d0f5bdda10d68982
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 051c7db53f9d949018583fcb2f6a1e44ce2eddb9
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773188"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786014"
 ---
 # <a name="update-custodian"></a>Хранители обновлений
 
@@ -54,7 +54,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applyHoldToSources|Boolean|Определяет, были ли приодержится источники хранителя во время создания.|
+|applyHoldToSources|Логический|Определяет, были ли приодержится источники хранителя во время создания.|
 
 ## <a name="response"></a>Ответ
 
@@ -103,9 +103,7 @@ Content-length: 254
 ### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.custodian"
+  "blockType": "response"
 }
 -->
 

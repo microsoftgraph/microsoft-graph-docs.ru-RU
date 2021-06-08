@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: aae2f89b41360bb39acd0765496814d7d4772b73
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 2201fc4deab18985b3170e1c3e90dd973789a969
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201912"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759933"
 ---
 # <a name="get-userconsentrequest"></a>Get userConsentRequest
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "51201912"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

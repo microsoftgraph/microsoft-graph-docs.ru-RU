@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: updatePasswordSingleSignOnCredentials'
-description: Обновление учетных данных единого входа с помощью пароля для пользователя или группы.
+description: Обновление учетных данных с одним входом с помощью пароля для пользователя или группы.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 154e74f3cdf7ed8b0fd690bd4b5b6c476a787d30
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b178bba8f14dc0359baea9c2178eef2cffdf14ce
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132120"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786116"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal: updatePasswordSingleSignOnCredentials
 
@@ -18,7 +18,7 @@ ms.locfileid: "50132120"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление учетных данных единого входа с помощью пароля для пользователя или группы.
+Обновление учетных данных с одним входом с помощью пароля для пользователя или группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,10 +28,10 @@ ms.locfileid: "50132120"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
+| Приложение                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> Пользователи могут создавать учетные данные для себя. Владельцы и администраторы основных служб со следующими ролями могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные узнать см. в [ролях каталога.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+> Пользователи могут создавать учетные данные для себя. Владельцы и администраторы служб со следующими ролями могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные дополнительные функции см. в [каталоге ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,8 +54,8 @@ POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|ИД пользователя или группы, к которой принадлежит этот набор учетных данных.|
-|credentials|[коллекция учетных](../resources/credential.md) данных|Список объектов учетных данных, которые определяют полный поток входа.|
+|id|String|ID пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|учетные данные|[коллекция учетных](../resources/credential.md) данных|Список объектов учетных данных, которые определяют полный вход в потоке.|
 
 ## <a name="response"></a>Отклик
 
@@ -116,9 +116,7 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e49aa085eb0cf23384bbed739235df46e5da1f72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 34137caf93bcdd3a3621842b9976e964b8f44c78
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978176"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759996"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -45,11 +45,6 @@ ms.locfileid: "47978176"
   "omaUri": "String"
 }
 ```
-
-
-
-
-
 
 
 

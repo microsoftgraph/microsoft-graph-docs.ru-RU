@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1b531f1423f97d57900731046759904a2a6be690
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9a153f3d52c5cf1d79880bb5163f3ea0d33016b2
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046932"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786028"
 ---
 # <a name="create-registereduser"></a>Создание объекта registeredUser
 
@@ -28,7 +28,7 @@ ms.locfileid: "52046932"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -86,11 +86,9 @@ Content-length: 30
 
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

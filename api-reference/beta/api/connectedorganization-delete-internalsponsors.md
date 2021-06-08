@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 35450f6b409543d7b56f27b6b682f4184b5b33b1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1b2eeb4df11235ca021b348bc1ad5f0068565dfe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437522"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786172"
 ---
 # <a name="remove-connected-organization-internal-sponsor"></a>Удаление внутреннего спонсора подключенной организации
 
@@ -39,7 +39,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connect
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -86,9 +86,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d137f9e519247c61a1b38d547c15f0eb3e68b859
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cae41ed267ea4595134247cf1ac3967ce34141a5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447910"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785937"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -46,7 +46,7 @@ PATCH /organization/{id}
 | Content-Type   | application/json |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -114,9 +114,7 @@ Content-length: 411
 
 Ниже приведен пример отклика.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organization"
+  "blockType": "response"
 } -->
 
 ```http

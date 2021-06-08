@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bd010c8832d98242f00341f8357af5bde9e78688
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dab2584a5cb71732fb62352075aae433303e24c4
+ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051118"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52781123"
 ---
 # <a name="create-onpremisesagentgroup"></a>Создание onPremisesAgentGroup
 
@@ -26,7 +26,7 @@ ms.locfileid: "52051118"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -42,7 +42,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c85178aa3dc23f51e644e55a59374a1e270aab5e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cdc8e0145a782cc9a5eb87756542e8a7c5efcfb7
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066987"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759730"
 ---
 # <a name="update-mobileappassignment"></a>Обновление объекта mobileAppAssignment
 
@@ -23,11 +23,11 @@ ms.locfileid: "48066987"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
@@ -68,16 +68,17 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 273
+Content-length: 324
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value"
   }
 }
 ```
@@ -87,25 +88,21 @@ Content-length: 273
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 322
+Content-Length: 373
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "id": "591620b7-20b7-5916-b720-1659b7201659",
   "intent": "required",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value"
   }
 }
 ```
-
-
-
-
-
 
 
 

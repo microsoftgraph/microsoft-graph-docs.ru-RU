@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6711464678dd2d71d84f72355c824ece92f8f51a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b2c393d993f52dbd501809405d4279c66011ca8
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054646"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760323"
 ---
 # <a name="managedioslobapp-resource-type"></a>Тип ресурса managedIOSLobApp
 
@@ -48,8 +48,8 @@ ms.locfileid: "48054646"
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|appAvailability|[манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Унаследованный от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
@@ -115,18 +115,14 @@ ms.locfileid: "48054646"
     "v10_0": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
   "buildNumber": "String"
 }
 ```
-
-
-
-
-
 
 
 

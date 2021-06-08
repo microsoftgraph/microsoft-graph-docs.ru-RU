@@ -1,41 +1,36 @@
 ---
-title: тип перечисления Андроидрекуиредпассвордтипе
-description: Требуемый тип пароля для Android.
+title: тип enum androidRequiredPasswordType
+description: Тип пароля, требуемого для Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4921263e1960617b8d9e013ce12a799e11d61516
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d179666a4de9256e98c704bccd9e512d4aebd0ce
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041563"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760288"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a>тип перечисления Андроидрекуиредпассвордтипе
+# <a name="androidrequiredpasswordtype-enum-type"></a>тип enum androidRequiredPasswordType
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Требуемый тип пароля для Android.
+Тип пароля, требуемого для Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|буквы|1 |Необходим алфавитный пароль.|
-|цифрового|2 |Необходимо указать буквенно-цифровой пароль.|
-|алфанумериквиссимболс|4|Требуются буквенно-цифровые символы с паролем.|
-|ловсекуритибиометрик|4 |Необходим пароль на основе биометрического уровня безопасности.|
-|числовых|5 |Необходим числовой пароль.|
-|нумериккомплекс|6 |Необходим числовой сложный пароль.|
-|любой|7 |Необходим пароль или шаблон, а любой из них приемлем.|
-
-
-
-
-
+|deviceDefault|0|Значение устройства по умолчанию, без намерения.|
+|алфавитный|1|Требуется алфавитный пароль.|
+|alphanumeric|2|Необходимый альфа-пароль.|
+|alphanumericWithSymbols|3|Альфа-число с паролем символов.|
+|lowSecurityBiometric|4 |Требуется пароль с низкой безопасностью на основе биометрии.|
+|числовая|5 |Необходимый числовой пароль.|
+|numericComplex|6 |Требуется числовый сложный пароль.|
+|любой|7 |Требуется пароль или шаблон, и любой из них является приемлемым.|
 
 
 

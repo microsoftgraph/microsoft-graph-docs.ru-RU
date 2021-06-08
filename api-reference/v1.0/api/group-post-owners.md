@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fc469ce2594a98e602a53cc7733f3cca902c8f86
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 6543311db4ee40b1b4a00292c7481bd6e834555d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680565"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786266"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 
@@ -88,9 +88,7 @@ Content-length: 30
 Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

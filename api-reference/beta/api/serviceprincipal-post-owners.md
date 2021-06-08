@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 58c994132cbda2159587f0f48ccdce59d79505cb
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fcca1742a5cb04f03a45d54b7104d46af35097c0
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134178"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786126"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: Добавление владельца
 
@@ -90,9 +90,7 @@ Content-length: 30
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

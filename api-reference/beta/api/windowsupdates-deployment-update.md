@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 68654adf5bba14c98b19acab47880008c4d18b08
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 2b5857f70136b804494825eb7cb66945d2b1a452
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241314"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785258"
 ---
 # <a name="update-deployment"></a>Обновление развертывания
 Пространство имен: microsoft.graph.windowsUpdates
@@ -26,7 +26,7 @@ ms.locfileid: "52241314"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Приложение|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -70,7 +70,7 @@ PATCH /admin/windows/updates/deployments/{deploymentId}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_1",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
@@ -149,7 +149,7 @@ Content-Type: application/json
 #### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
-  "name": "update_deployment",
+  "name": "update_deployment_2",
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->

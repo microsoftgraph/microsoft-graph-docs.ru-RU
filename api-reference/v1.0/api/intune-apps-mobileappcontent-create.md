@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 419c4e671c8a98e8cbcafdd2bda0523e373e4601
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5037d48796fc13faf407fd47ff035d4e3dd17fde
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973045"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759716"
 ---
 # <a name="create-mobileappcontent"></a>Создание объекта mobileAppContent
 
@@ -23,11 +23,11 @@ ms.locfileid: "47973045"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobile
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileAppContent в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта mobileAppContent.
@@ -86,11 +86,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
-
-
-
-
 
 
 

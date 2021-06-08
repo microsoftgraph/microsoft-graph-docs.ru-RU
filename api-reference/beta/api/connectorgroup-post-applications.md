@@ -1,24 +1,24 @@
 ---
-title: Назначение соединителиГрупп приложению
-description: Использование этого API для назначения соединителиГрупп приложению
+title: Назначение соединителиГруп приложению
+description: Используйте этот API для назначения соединителиГруп приложению
 localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1c117153bff6ee7864eb174c38014f4adc939dee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ccf3255a5d8aa7416560848a0915cdb78aa77764
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129571"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786154"
 ---
-# <a name="assign-a-connectorgroup-to-an-application"></a>Назначение соединителиГрупп приложению
+# <a name="assign-a-connectorgroup-to-an-application"></a>Назначение соединителиГруп приложению
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Назначьте соединителиГрупп](../resources/connectorgroup.md) [приложению.](../resources/application.md)
+Назначение [соединителиГруп](../resources/connectorgroup.md) [приложению.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,11 +38,11 @@ PUT /applications/{id}/connectorGroup/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer. Обязательный параметр.|
+| Авторизация  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажет представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
+В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
 
 ## <a name="response"></a>Отклик
 
@@ -89,9 +89,7 @@ Content-length: 30
 Ниже приведен пример ответа. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

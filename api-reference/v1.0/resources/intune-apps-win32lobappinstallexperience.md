@@ -1,29 +1,30 @@
 ---
-title: Тип ресурса win32LobAppInstallExperience
-description: Содержит свойства интерфейса установки приложения Win32
+title: тип ресурса win32LobAppInstallExperience
+description: Содержит свойства работы с установкой для приложения Win32
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 468afea165645c2fc6a728e5a171b1ef37e9e338
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a1f844683368d898be7a3acdc1dacbcaffa99ff
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080167"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760302"
 ---
-# <a name="win32lobappinstallexperience-resource-type"></a>Тип ресурса win32LobAppInstallExperience
+# <a name="win32lobappinstallexperience-resource-type"></a>тип ресурса win32LobAppInstallExperience
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства интерфейса установки приложения Win32
+Содержит свойства работы с установкой для приложения Win32
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицерестартбехавиор|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Поведение устройства перезапускается. Возможные значения: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
+|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Указывает тип контекста выполнения, в котором выполняется приложение. Возможные значения: `system`, `user`.|
+|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Поведение перезагрузки устройства. Возможные значения: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -38,10 +39,10 @@ ms.locfileid: "48080167"
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppInstallExperience",
+  "runAsAccount": "String",
   "deviceRestartBehavior": "String"
 }
 ```
-
 
 
 

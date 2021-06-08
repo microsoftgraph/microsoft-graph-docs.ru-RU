@@ -1,26 +1,26 @@
 ---
-title: 'Call: Логтелеконференцедевицекуалити'
+title: 'call: logTeleconferenceDeviceQuality'
 description: Запись в журнал данных о качестве устройств для видеоконференций.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d0cae26a29e6aa6cbcfcc140b079590a4ebfa4d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6cbacb3ce97ca1b9b09b12e0185757d5c8392ac
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966333"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786049"
 ---
-# <a name="call-logteleconferencedevicequality"></a>Call: Логтелеконференцедевицекуалити
+# <a name="call-logteleconferencedevicequality"></a>call: logTeleconferenceDeviceQuality
 
 Пространство имен: microsoft.graph
 
 Запись в журнал данных о качестве устройств для видеоконференций.
 
-Bot-канал видеоконференций (КВИ) представляет устройства видеоконференций (VTC) и выступает в роли фонового агента для устройства VTC в конференц-связи. Так как Кви Bot находится в центре инфраструктуры VTC и Microsoft Teams в качестве прокси-сервера VTC, у него есть два носителя. Одна из сторон является одной из сторон ленты Кви и Teams, например сервера конференц-связи Teams или клиента Teams. Остальные стороны между носителями находятся между Кви Bot и устройством VTC. 
+Бот Cloud Video Interop (CVI) представляет устройства видео телеконференции (VTC) и выступает в качестве обратного агента для устройства VTC во время конференц-связи. Так как бот CVI находится в центре VTC и Microsoft Teams в качестве прокси-сервера VTC, он имеет две области мультимедиа. Один этап мультимедиа находится между ботом CVI и Teams инфраструктурой, например сервером Teams конференции или Teams клиентом. Другой этап мультимедиа находится между CVI-ботом и устройством VTC. 
 
-Сторонние партнеры владеют VTCом, а инфраструктура Teams не может получить доступ к данным о качестве стороннего абонента.  Этот метод предназначен только для партнеров Кви для предоставления данных о качестве их качества мультимедиа.
+Сторонние партнеры владеют медиа-ногой VTC, а инфраструктура Teams не может получить доступ к качественным данным сторонного вызова.  Этот метод позволяет партнерам CVI предоставлять данные о качестве мультимедиа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
-| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Обязательно.|
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Обязательно.|
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -53,7 +53,7 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|отображения|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|Данные о качестве VTCной стороны носителя.|
+|качество|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|Качественные данные ногой мультимедиа VTC.|
 
 ## <a name="response"></a>Отклик
 
@@ -186,8 +186,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

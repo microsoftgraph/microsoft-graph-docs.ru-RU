@@ -1,31 +1,31 @@
 ---
-title: 'Букингаппоинтмент: Отмена'
-description: Отмена указанного Букингаппоинтмент в указанном букингбусинесс и отправка сообщения связанным клиентским сотрудникам и сотрудникам.
+title: 'bookingAppointment: отмена'
+description: Отмените указанное бронированиеAppointment в указанном bookingbusiness и отправьте сообщение участвующим клиентам и сотрудникам.
 localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8ee50f707970f0bab9c36b5c17dfc01454ff1ae1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4d05157faf95beaf6dab95742314472586f00063
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960991"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786276"
 ---
-# <a name="bookingappointment-cancel"></a>Букингаппоинтмент: Отмена
+# <a name="bookingappointment-cancel"></a>bookingAppointment: отмена
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмена указанного [букингаппоинтмент](../resources/bookingappointment.md) в указанном [букингбусинесс](../resources/bookingbusiness.md)и отправка сообщения связанным клиентским сотрудникам и сотрудникам.
+Отмените указанное [бронированиеAppointment](../resources/bookingappointment.md) в указанном [bookingbusiness](../resources/bookingbusiness.md)и отправьте сообщение участвующим клиентам и сотрудникам.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -45,15 +45,15 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|канцеллатионмессаже|String|Сообщение, которое должно быть подтверждено с клиентом о том, что встреча отменена.|
+|cancellationMessage|String|Сообщение об отмене встречи с клиентом.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.
 
-При попытке отменить встречу, не ексисит, этот метод возвращает значение `HTTP 404 Not found` .
+Если вы попытается отменить встречу, которая не exisit, этот метод `HTTP 404 Not found` возвращается .
 
 ## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
+Ниже приводится пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -92,9 +92,7 @@ Content-type: application/json
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No content

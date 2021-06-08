@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Скачивание содержимого основного потока (файла) ресурса DriveItem. Можно скачать только те ресурсы driveItem, у которых есть свойство file.
 doc_type: apiPageType
-ms.openlocfilehash: 212f11a6d76853e3ab3a7f0e23fd4812b260b496
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 524f9b44f0281be0b5731762b0d7654ae73984c3
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240313"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786039"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
 
@@ -88,7 +88,7 @@ GET /me/drive/items/{item-id}/content
 
 URL-адреса загрузки, прошедшие предварительную проверку подлинности, действительны только на протяжении короткого периода времени (несколько минут) и не требуют заголовка `Authorization` для загрузки.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

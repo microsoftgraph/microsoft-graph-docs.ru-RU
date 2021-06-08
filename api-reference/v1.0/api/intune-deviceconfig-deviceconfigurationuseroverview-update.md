@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 010e77ee0751118fa6eb3ed9fbca1d5b8dbeaa64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b91c8ff52a39c6810a833042f7ed5d6e78a910d6
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066875"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760624"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>Обновление объекта deviceConfigurationUserOverview
 
@@ -23,11 +23,11 @@ ms.locfileid: "48066875"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
-|notApplicableCount|Int32|Количество неприменимых пользователей|
+|notApplicableCount|Int32|Число не применимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
 |errorCount|Int32|Количество пользователей с ошибками.|
 |failedCount|Int32|Количество пользователей со сбоями.|
@@ -105,11 +105,6 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

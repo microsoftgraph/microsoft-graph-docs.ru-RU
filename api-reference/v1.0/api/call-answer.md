@@ -5,31 +5,31 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 50e2405f6fd0c093e6dc5f3ebaa48eea969d2990
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 02bde925291b580186247a23f8bc3398d5ca0c2f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563921"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786063"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
 Пространство имен: microsoft.graph
 
-Разрешить интерфейсу Bot ответить на входящий [вызов](../resources/call.md). Запрос входящего вызова может быть приглашенным из участника группы или однорангового вызова. При получении приглашения на вызов группы в уведомлении будут содержаться параметры [чатинфо](../resources/chatinfo.md) и [митингинфо](../resources/meetinginfo.md) .
+Включить бот для ответа на входящий [вызов](../resources/call.md). Входящий запрос может быть приглашением от участника группового звонка или одноранговых вызовов. Если приглашение на групповой вызов получено, уведомление будет содержать [параметры chatInfo](../resources/chatinfo.md) и [meetingInfo.](../resources/meetinginfo.md)
 
-Ожидается, что Bot отвечает, [отклоняется](./call-reject.md)или [перенаправляется](./call-redirect.md) вызов до истечения времени ожидания вызова. Текущее значение времени ожидания составляет 15 секунд для обычных сценариев и 5 секунд для сценариев записи на основе политик.
+Ожидается, что бот ответит, [отклоняет](./call-reject.md)или [перенаправляет](./call-redirect.md) вызов до времени вызова. Текущее значение расписки составляет 15 секунд для обычных сценариев и 5 секунд для сценариев записи на основе политики.
 
-## <a name="permissions"></a>Permissions
-Для ответа на одноранговый звонок не требуется никаких разрешений. Для присоединения к группе необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+## <a name="permissions"></a>Разрешения
+Для ответа на одноранговой вызов не требуется никаких разрешений. Чтобы присоединиться к групповому вызову, необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                 |
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Приложение     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
+| Для приложений     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
 
-> **Примечание:** Для вызова, использующего носитель с размещением приложений, вам также потребуется разрешение Calls. Акцессмедиа. ALL. Необходимо иметь по крайней мере одно из следующих разрешений, чтобы обеспечить `source` расшифровку уведомления о входящем вызове: Calls. акцессмедиа. ALL, Calls.Iniтиате. ALL, Calls.IniТиатеграупкалл. ALL, Calls. Жоинграупкалл. ALL, Calls. Жоинграупкалласгуест. ALL. `source`Сведения о вызывающем абоненте в уведомлении о входящем звонке. Без по крайней мере одного из этих разрешений оно `source` останется зашифрованным.
+> **Примечание:** Для вызова, использующего средства массовой информации с использованием приложений, также требуется разрешение Calls.AccessMedia.All. Для расшифровки входящих уведомлений о вызове необходимо иметь по крайней мере одно из следующих `source` разрешений: Calls.AccessMedia.All, Calls.Initiate. Все, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. Это `source` информация вызываемой в уведомлении о входящих вызовах. Без по крайней мере одного из этих разрешений будет `source` оставаться зашифрованным.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {"blockType": "ignored" } -->
@@ -48,12 +48,12 @@ POST /communications/calls/{id}/answer
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления в дальнейшем. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https` .    |
-|акцептедмодалитиес|Коллекция объектов string                         |Список принимаемых модальности. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Необходимо для ответа на вызов. |
-|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. Потребоваться                                                                                                            |
+|callbackUri       |String                                    |Позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .    |
+|acceptedModalities|Коллекция String                         |Список модальных способов для приемки. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Требуется для ответа на вызов. |
+|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. (Обязательно)                                                                                                            |
 
 ## <a name="response"></a>Отклик
-Этот метод возвращает `202 Accepted` код отклика.
+Этот метод возвращает код `202 Accepted` ответа.
 
 ## <a name="examples"></a>Примеры
 В приведенном ниже примере показано, как вызывать этот API.
@@ -83,7 +83,7 @@ Content-Length: 211
   ]
 }
 ```
-Этот большой двоичный объект является сериализованной конфигурацией для сеансов мультимедиа, которая создается из пакета SDK для Media.
+Эта blob — это сериализованная конфигурация сеансов мультимедиа, которая создается из SDK мультимедиа.
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
@@ -109,14 +109,13 @@ Content-Length: 211
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-1-answer-a-peer-to-peer-voip-call-with-service-hosted-media"></a>Пример 1: ответ одноранговый звонок VoIP с размещенными в службе носителями
+### <a name="example-1-answer-a-peer-to-peer-voip-call-with-service-hosted-media"></a>Пример 1. Ответ на вызов VoIP одноранговой службы с помощью средства массовой информации службы.
 
 ##### <a name="notification---incoming"></a>Уведомление — входящий
 
@@ -202,14 +201,13 @@ Content-Type: application/json
 ##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>Установка уведомления
+##### <a name="notification---establishing"></a>Уведомление — создание
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -239,7 +237,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Установленное уведомление
+##### <a name="notification---established"></a>Уведомление — установлено
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -269,7 +267,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-answer-voip-call-with-application-hosted-media"></a>Пример 2: ответ на звонок VOIP с размещенными в приложении носителями
+### <a name="example-2-answer-voip-call-with-application-hosted-media"></a>Пример 2. Отвечать на вызов VOIP с помощью носители, на которые было организовано приложение.
 
 ##### <a name="notification---incoming"></a>Уведомление — входящий
 
@@ -369,14 +367,13 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>Установка уведомления
+##### <a name="notification---establishing"></a>Уведомление — создание
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -406,7 +403,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Установленное уведомление
+##### <a name="notification---established"></a>Уведомление — установлено
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -436,12 +433,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-answer-a-policy-based-recording-call"></a>Пример 3: ответ на вызов записи на основе политики
+### <a name="example-3-answer-a-policy-based-recording-call"></a>Пример 3. Ответ на вызов записи на основе политики
 
-В [сценарии записи на основе политик](/microsoftteams/teams-recording-policy), прежде чем участник политики присоединяется к вызову, на Bot, связанном с политикой, будет отправлено уведомление о входящем звонке.
-Сведения о присоединении можно найти в свойстве **ботдата** . С помощью Bot можно выбрать ответ на вызов и соответствующим образом [Обновить состояние записи](call-updaterecordingstatus.md) .
+В [сценарии записи](/microsoftteams/teams-recording-policy)на основе политики перед тем, как участник политики присоединяется к вызову, боту, связанному с политикой, будет отправлено уведомление о входящих вызовах.
+Сведения о присоединиться можно найти в свойстве **botData.** Затем бот может ответить на вызов и [соответствующим образом обновить состояние](call-updaterecordingstatus.md) записи.
 
-Ниже приведен пример уведомления о входящем вызове, которое будет получено в этом случае.
+Вот пример входящих уведомлений о вызове, которые бот получит в этом случае.
 
 ```json
 {

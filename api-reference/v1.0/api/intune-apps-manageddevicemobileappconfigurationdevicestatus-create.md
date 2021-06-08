@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b2f86c35eca350c145e17317781c90800a488fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7075b3946fbad099f11bed2df109815ac6ffd82
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025994"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759877"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Создание managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -18,16 +18,16 @@ ms.locfileid: "48025994"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) .
+Создание нового [объекта managedDeviceMobileAppConfigurationDeviceStatus.](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,10 +44,10 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта managedDeviceMobileAppConfigurationDeviceStatus в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON для объекта managedDeviceMobileAppConfigurationDeviceStatus.
 
-В следующей таблице приведены свойства, необходимые при создании managedDeviceMobileAppConfigurationDeviceStatus.
+В следующей таблице показаны свойства, необходимые при создании управляемогоDeviceMobileAppConfigurationDeviceStatus.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -56,14 +56,14 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
-|status|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `201 Created` [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
@@ -105,11 +105,6 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

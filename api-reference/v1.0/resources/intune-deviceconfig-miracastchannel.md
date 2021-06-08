@@ -1,54 +1,49 @@
 ---
-title: тип перечисления Миракастчаннел
-description: Возможные значения для канала Miracast.
+title: тип enum miracastChannel
+description: Возможные значения для Miracast канала.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ed102cf6be62a6c4f5e70117eb5f1fd77e6c5c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f18380a604f9592ea142e2080dcbd6805d332b4
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003068"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760003"
 ---
-# <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
+# <a name="miracastchannel-enum-type"></a>тип enum miracastChannel
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для канала Miracast.
+Возможные значения для Miracast канала.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|one|1 |Один.|
-|two|2 |2.|
-|three|4|Трёх.|
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|one|1|Один.|
+|two|2|Два.|
+|three|3|Три.|
 |four|4 |Четыре.|
-|five|5 |Следующих.|
-|шест|6 |Шест.|
-|неделю|7 |Неделю.|
-|Основными|8 |Основными.|
-|9|9 |9.|
-|раз|10 |Раз.|
-|Eleven|11 |Eleven.|
-|сиртисикс|36|36.|
-|40|40|40.|
-|фортифаур|44|44.|
-|фортеигхт|48|48.|
-|онехундредфортинине|149|Онехундредфорти — девять.|
-|онехундредфифтисри|153|Онехундредфифти — три.|
-|онехундредфифтисевен|157|Онехундредфифти — семь.|
-|онехундредсикстйоне|161|Онехундредсиксти — один.|
-|онехундредсикстифиве|165|Онехундредсиксти — пять.|
-
-
-
-
-
+|five|5 |Пять.|
+|шесть|6 |Шесть.|
+|семь|7 |Семь.|
+|восемь|8 |Восемь.|
+|девять|9 |Девять.|
+|десять|10 |Десять.|
+|11|11|Одиннадцать.|
+|thirtySix|36|Тридцать шесть.|
+|сорок|40|Сорок.|
+|fortyFour|44|Сорок четыре.|
+|fortyEight|48|Сорок восемь.|
+|oneHundredFortyNine|149|OneHundredForty-Nine.|
+|oneHundredFiftyThree|153|OneHundredFifty-Three.|
+|oneHundredFiftySeven|157|OneHundredFifty-Seven.|
+|oneHundredSixtyOne|161|OneHundredSixty-One.|
+|oneHundredSixtyFive|165|OneHundredSixty-Five.|
 
 
 

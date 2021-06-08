@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bf03a21660a29172d1b55364bbb14d7770414f4a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: c829ead807e87c3a11289beeb5edb122cce40ac2
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721756"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786098"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -25,7 +25,7 @@ ms.locfileid: "50721756"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User.Export.All и User.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Для приложений | User.Export.All и User.Read.All |
+|Приложение | User.Export.All и User.Read.All |
 
 >**Примечание:** Экспорт может выполняться администратором компании только при делегировании разрешения.
 
@@ -45,14 +45,14 @@ POST /users/{id}/exportPersonalData
 
 | Параметр    | Тип   |Описание |
 |:---------------|:--------|:----------|
-|storageLocation|String|Это URL-адрес подписи общего доступа (SAS) к учетной записи Azure Storage, куда следует экспортировать данные.|
+|storageLocation|String|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика. Ответ содержит следующие заглавные.
 
 | Имя       | Описание |
 |:---------------|:----------|
-| Location  | URL-адрес для проверки состояния запроса. |
+| Расположение  | URL-адрес для проверки состояния запроса. |
 | Retry-After  | Период времени в секундах. Производитель запросов должен ждать этого долго после отправки запроса для проверки состояния. |
 
 
@@ -101,9 +101,7 @@ Content-length: 48
 ```
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

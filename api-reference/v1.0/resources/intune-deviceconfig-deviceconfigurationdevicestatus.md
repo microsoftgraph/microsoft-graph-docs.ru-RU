@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0109c1ec4acac0e24191b0b1599977c3e3b9aa84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b947c4bb1bbb38b2bf1a94e6baebc7e6668ce65
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066518"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760260"
 ---
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>Тип ресурса deviceConfigurationDeviceStatus
 
@@ -37,7 +37,7 @@ ms.locfileid: "48066518"
 |userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
-|status|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
@@ -65,11 +65,6 @@ ms.locfileid: "48066518"
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

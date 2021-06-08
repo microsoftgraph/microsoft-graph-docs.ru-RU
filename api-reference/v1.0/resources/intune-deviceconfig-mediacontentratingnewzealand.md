@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2860f308cb25b679ea12b2b2d978cf15dc87c40a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4fc7374d8e71714a5c66da1b2dc66aa5175c3e33
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003096"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760253"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>Тип ресурса mediaContentRatingNewZealand
 
@@ -23,8 +23,8 @@ ms.locfileid: "48003096"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|[ратингневзеаландмовиестипе](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|Рейтинг фильмов, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.|
-|tvRating|[ратингневзеаландтелевисионтипе](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|Рейтинг для телевизора, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.|
+|movieRating|[ratingNewZealandMoviesType](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|Рейтинг фильмов, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.|
+|tvRating|[ratingNewZealandTelevisionType](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|Телевизионный рейтинг, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,11 +43,6 @@ ms.locfileid: "48003096"
   "tvRating": "String"
 }
 ```
-
-
-
-
-
 
 
 

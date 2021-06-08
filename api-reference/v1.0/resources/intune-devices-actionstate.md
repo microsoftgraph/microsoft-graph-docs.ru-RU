@@ -1,18 +1,18 @@
 ---
-title: тип перечисления actionState
+title: тип enum actionState
 description: Состояние действия на устройстве
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d0544d0783109ca5f3616981c06ee330bfddea06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f805b39ac3954981c368ac79e566d3dc4fc218c
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091329"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760218"
 ---
-# <a name="actionstate-enum-type"></a>тип перечисления actionState
+# <a name="actionstate-enum-type"></a>тип enum actionState
 
 Пространство имен: microsoft.graph
 
@@ -23,18 +23,13 @@ ms.locfileid: "48091329"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Недопустимое состояние действия|
-|закончен|1 |Ожидается действие|
-|закрыт|2 |Действие отменено.|
-|ASP|4|Действие активно.|
+|нет|0|Не допустимый состояние действия|
+|ожидание|1|Действие ожидается|
+|отменено|2|Действие отменено.|
+|active|3|Действие активно.|
 |done|4 |Действие выполнено без ошибок.|
-|сбоев|5 |Не удалось выполнить действие|
+|не удалось|5 |Действие не удалось|
 |notSupported|6 |Действие не поддерживается.|
-
-
-
-
-
 
 
 

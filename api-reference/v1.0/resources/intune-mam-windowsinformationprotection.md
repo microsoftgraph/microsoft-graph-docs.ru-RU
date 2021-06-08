@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3243718e7da5cf8e93e89e7b3f0bcb0cef7c0f59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0e4a18282265b0f6c7a03ba6d395198175366e5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066420"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760204"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>Тип ресурса windowsInformationProtection
 
@@ -39,7 +39,7 @@ ms.locfileid: "48066420"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|enforcementLevel|[виндовсинформатионпротектионенфорцементлевел](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Уровень принудительного применения НЗП. Ознакомьтесь с определением перечисления для поддерживаемых значений. Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Уровень правоприменения WIP. См. определение Enum для поддерживаемых значений. Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Основной корпоративный домен.|
 |enterpriseProtectedDomainNames|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Список корпоративных доменов, которые необходимо защитить.|
 |protectionUnderLockConfigRequired|Boolean|Указывает, следует ли настроить функцию защиты с блокировкой (другое название — шифрование с ПИН-кодом).|
@@ -111,7 +111,7 @@ ms.locfileid: "48066420"
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -121,7 +121,7 @@ ms.locfileid: "48066420"
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -157,9 +157,7 @@ ms.locfileid: "48066420"
       "displayName": "String",
       "ranges": [
         {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "String",
-          "upperAddress": "String"
+          "@odata.type": "microsoft.graph.ipRange"
         }
       ]
     }
@@ -206,11 +204,6 @@ ms.locfileid: "48066420"
   "isAssigned": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 231a16f26d41ea3a5a8793d8966d1cfebb06cc28
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e69894da8a93999851eac23788f62d16b6f16b5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013204"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759737"
 ---
 # <a name="get-mobileappassignment"></a>Get mobileAppAssignment
 
@@ -23,11 +23,11 @@ ms.locfileid: "48013204"
 ## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,7 +38,7 @@ ms.locfileid: "48013204"
 GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,7 +47,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 359
+Content-Length: 412
 
 {
   "value": {
@@ -74,19 +74,15 @@ Content-Length: 359
     "id": "591620b7-20b7-5916-b720-1659b7201659",
     "intent": "required",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
     },
     "settings": {
-      "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+      "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+      "vpnConfigurationId": "Vpn Configuration Id value"
     }
   }
 }
 ```
-
-
-
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab7d45cbd34dc9c368b54241a946ec9512043280
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f973b9d6470fe3d1d734ec1a0f7b52e2f7b00c20
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063648"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759793"
 ---
 # <a name="delete-managediosstoreapp"></a>Delete managedIOSStoreApp
 
@@ -21,13 +21,13 @@ ms.locfileid: "48063648"
 Удаляет объект [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,11 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

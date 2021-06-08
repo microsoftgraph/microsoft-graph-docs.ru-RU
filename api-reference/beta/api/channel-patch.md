@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8eb387934342b030f5a7d7c50397c3accbed3e4
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 8527ae77c6198aea615aff8add5a569dc563bafa
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509034"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786217"
 ---
 # <a name="update-channel"></a>Ветвь обновлений 
 
@@ -76,9 +76,7 @@ PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e2026
 
 Ниже приведен пример отклика. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -139,9 +137,7 @@ Content-type: application/json
 Ниже приведен пример отклика. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

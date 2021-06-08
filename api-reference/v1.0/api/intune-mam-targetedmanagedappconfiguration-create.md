@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47cedcc9eb3ee6ca2157165145ed53a033019d73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b0745e3ed0ee59502508ef03f2bc1b6559312e2
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968054"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760344"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>Создание targetedManagedAppConfiguration
 
@@ -23,11 +23,11 @@ ms.locfileid: "47968054"
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта targetedManagedAppConfiguration в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта targetedManagedAppConfiguration.
@@ -118,11 +118,6 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
-
-
-
-
-
 
 
 

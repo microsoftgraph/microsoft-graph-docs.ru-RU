@@ -1,24 +1,24 @@
 ---
-title: 'Call: Чанжескриншарингроле'
-description: Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.
+title: 'вызов: changeScreenSharingRole'
+description: Разрешить приложениям обмениваться контентом экрана с участниками группового вызова.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b6620eb941ef2b3a18bb15f756263c09388df84d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2defaeb01463fbaed957990716d2870844345088
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966382"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786056"
 ---
-# <a name="call-changescreensharingrole"></a>Call: Чанжескриншарингроле
+# <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
 Пространство имен: microsoft.graph
 
-Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.
+Разрешить приложениям обмениваться контентом экрана с участниками группового вызова.
 
-> **Примечание:** Это поддерживается только для звонков групп, использующих мультимедиа, размещаемых в приложении.
+> **Примечание:** Это поддерживается только для групповых вызовов, которые используют App-Hosted Media.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,10 +46,10 @@ POST /communications/calls/{id}/changeScreenSharingRole
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|role|String|Возможные значения: "средство просмотра", "общий доступ"|
+|role|String|Возможные значения: "зритель", "sharer"|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.
+В случае успешной работы этот метод возвращает код ответа, и все участники `202 Accepted` получат обновление реестра.
 
 ## <a name="example"></a>Пример
 
@@ -95,14 +95,13 @@ Content-Length: 24
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Уведомление о подсписке, обновленный при отправке участником демонстрации экрана общего видео
-Обратите внимание на `direction: sendOnly` свойство в потоке мультимедиа.
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Уведомление — список обновляется с помощью видео отправки участниками совместного доступа к экранам
+Обратите внимание `direction: sendOnly` на свойство в потоке мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls

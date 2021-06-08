@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Виндовсупдатетипе
+title: тип enum windowsUpdateType
 description: Какие устройства филиала будут получать обновления от
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b139112db8a106dfa57c7d3ddb98e2415294914b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f49158686884d55825751a9314a50a9ab9a16d57
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091378"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759947"
 ---
-# <a name="windowsupdatetype-enum-type"></a>тип перечисления Виндовсупдатетипе
+# <a name="windowsupdatetype-enum-type"></a>тип enum windowsUpdateType
 
 Пространство имен: microsoft.graph
 
@@ -23,17 +23,12 @@ ms.locfileid: "48091378"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Разрешить пользователю устанавливать.|
-|ко|1 |Половина ежегодного канала (нацеленная). Device получает все подходящее обновление компонентов из Полугодого канала (нацелено).|
-|бусинессреадйонли|2 |Половина ежегодного канала. Устройство получает обновления компонентов из Полугодого канала.|
-|виндовсинсидербуилдфаст|4|Предварительная сборка Windows для предварительной сборки — Быстрая|
-|виндовсинсидербуилдслов|4 |Сборка для предварительной оценки Windows — низкая|
-|виндовсинсидербуилдрелеасе|5 |Выпуск сборки предварительной оценки Windows|
-
-
-
-
-
+|userDefined|0|Разрешить пользователю установить.|
+|все|1|Semi-annual Channel (Targeted). Устройство получает все применимые обновления функций из Semi-annual Channel (Targeted).|
+|businessReadyOnly|2|Полугодовой канал. Устройство получает обновления функций из Semi-annual Channel.|
+|windowsInsiderBuildFast|3|Windows Сборка инсайдеров — быстрая|
+|windowsInsiderBuildSlow|4 |Windows Сборка инсайдеров - Slow|
+|windowsInsiderBuildRelease|5 |Сборка Windows insider|
 
 
 

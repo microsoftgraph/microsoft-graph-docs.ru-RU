@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f291fbb34f5fa412fb6da172dd196c766a7327a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22c1c6e2ba205c705baabc6bc7643848f7f12686
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091399"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759954"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>Тип ресурса windowsUpdateScheduledInstall
 
@@ -26,7 +26,7 @@ ms.locfileid: "48091399"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|scheduledInstallDay|[виклисчедуле](../resources/intune-deviceconfig-weeklyschedule.md)|Запланированный день установки по неделям. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Запланированный день установки в неделю. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Время дня, на которое запланирована установка|
 
 ## <a name="relationships"></a>Связи
@@ -46,11 +46,6 @@ ms.locfileid: "48091399"
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
-
-
-
-
 
 
 

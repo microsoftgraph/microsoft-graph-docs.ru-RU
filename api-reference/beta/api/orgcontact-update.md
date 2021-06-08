@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 85b08d815b742a0b4117c7dd0ae786da979f92dc
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 26396518b40023e7a4b5666fb1d00b4effd83546
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447831"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785244"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
@@ -38,7 +38,7 @@ PATCH /contacts/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -46,12 +46,12 @@ PATCH /contacts/{id}
 |city|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|Boolean||
+|onPremisesSyncEnabled|Логический||
 |displayName|String||
-|givenName|String||
-|jobTitle|String||
+|givenName;|String||
+|jobTitle;|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|почта;|String||
+|mail|String||
 |mailNickname|String||
 |mobilePhone|String||
 |officeLocation|String||
@@ -108,9 +108,7 @@ Content-length: 222
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.orgContact"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

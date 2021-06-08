@@ -1,18 +1,18 @@
 ---
-title: 'Страница: copyToSection'
+title: 'страница: copyToSection'
 description: Копирует страницу в определенный раздел.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 521ad56d93a667e6043ca6f833cc2dfb747d69f3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 665d244248c8af3a4ce3b5b01151d3debe196d92
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964425"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785237"
 ---
-# <a name="page-copytosection"></a>Страница: copyToSection
+# <a name="page-copytosection"></a>страница: copyToSection
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48964425"
 
 Копирует страницу в определенный раздел.
 
-Для операций копирования необходимо использовать шаблон асинхронного вызова: сначала вызвать действие Copy, а затем опросить конечную точку операции, чтобы получить результат.
+Для операций с копированием следует асинхронный шаблон вызова: сначала вызываем действие Copy, а затем опылите конечную точку операции для результата.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,18 +46,18 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
+В теле запроса укажи объект JSON, содержащий параметры, необходимые для операции.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|Идентификатор сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
-|siteId|String|Идентификатор веб-сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
-|groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Microsoft 365.|
-|id|String|Обязательный. Идентификатор раздела назначения.|
+|siteCollectionId|String|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
+|siteId|String|ID веб-SharePoint для копирования. Используйте только при копировании на SharePoint сайте.|
+|groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
+|id|String|Обязательный. ID раздела назначения.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опрос конечной точки Operation-Location для [получения состояния операции копирования](onenoteoperation-get.md).
+В случае успешной работы этот метод возвращает код `202 Accepted` ответа и `Operation-Location` загот. Опрос конечной Operation-Location, [чтобы получить состояние операции копирования.](onenoteoperation-get.md)
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -101,9 +101,7 @@ Content-length: 52
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

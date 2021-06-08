@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: removePassword'
-description: Удаление пароля из servicePrincipal
+description: Удаление пароля из службыPrincipal
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: be45dacbb123c93d7670d3f01f9b7444e561300a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c1f252fba7ce753c0240b47850e79d71177705b6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134115"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786119"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: removePassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "50134115"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пароля из объекта [servicePrincipal.](../resources/serviceprincipal.md)
+Удаление пароля из [объекта servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50134115"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -89,9 +89,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http

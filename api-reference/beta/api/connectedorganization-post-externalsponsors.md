@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3f6881448e4d8454134787122319b4feb428275f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 38332f46b5215989f0739450d0efef155058b443
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437437"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786161"
 ---
 # <a name="add-connected-organization-external-sponsor"></a>Добавление внешнего спонсора подключенной организации
 
@@ -92,9 +92,7 @@ Content-length: 30
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

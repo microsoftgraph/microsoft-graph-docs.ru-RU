@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30e41727b84e7f10b82917f4dc1dd23f296cc19f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0175f6f0894df0c859f9951f43c3bb4b857a2256
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003061"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760010"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>Тип ресурса mediaContentRatingUnitedStates
 
@@ -23,8 +23,8 @@ ms.locfileid: "48003061"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|[ратингунитедстатесмовиестипе](../resources/intune-deviceconfig-ratingunitedstatesmoviestype.md)|Оценка фильмов, выбранных для США. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
-|tvRating|[ратингунитедстатестелевисионтипе](../resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md)|Рейтинг для телевизора выбран для США. Возможные значения: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
+|movieRating|[ratingUnitedStatesMoviesType](../resources/intune-deviceconfig-ratingunitedstatesmoviestype.md)|Рейтинг фильмов, выбранный для США. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
+|tvRating|[ratingUnitedStatesTelevisionType](../resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md)|Телевизионный рейтинг, выбранный для США. Возможные значения: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,11 +43,6 @@ ms.locfileid: "48003061"
   "tvRating": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosHomeScreenFolder
-description: Папка, содержащая страницы приложений на начальном экране
+description: Папка, содержащая страницы приложений и веб-клипы на домашнем экране.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e68172006eac3417bb87424cce19f0e2be9b78a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ee4d2f1119a7fb6c4318b2afd195518f4b8095b
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984441"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760073"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Тип ресурса iosHomeScreenFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "47984441"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Папка, содержащая страницы приложений на начальном экране
+Папка, содержащая страницы приложений и веб-клипы на домашнем экране.
 
 
 Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
@@ -27,7 +27,7 @@ ms.locfileid: "47984441"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков на начальном экране, которые должны относиться к типу приложения. Эта коллекция может включать до 500 элементов.|
+|pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков макета домашнего экрана, которые должны быть приложениями или веб-клипами. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,11 +58,6 @@ ms.locfileid: "47984441"
   ]
 }
 ```
-
-
-
-
-
 
 
 

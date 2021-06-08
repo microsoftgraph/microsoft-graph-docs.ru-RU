@@ -1,49 +1,44 @@
 ---
-title: тип перечисления Мобилеаппконтентфилеуплоадстате
-description: Содержит свойства для состояний запроса на отправку.
+title: тип enum mobileAppContentFileUploadState
+description: Содержит свойства для состояния запросов на отправку.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45267bb2186b7f77e6cead6dc114a7490ade4f86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e730de51156d0b8c898cc0848bbdae2d7030da5
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094353"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760316"
 ---
-# <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
+# <a name="mobileappcontentfileuploadstate-enum-type"></a>тип enum mobileAppContentFileUploadState
 
 Пространство имен: microsoft.graph
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для состояний запроса на отправку.
+Содержит свойства для состояния запросов на отправку.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|нуль|Пока не задокументировано.|
-|трансиентеррор|1 |Пока не задокументировано.|
-|error|2 |Пока не задокументировано.|
-|unknown|4|Пока не задокументировано.|
-|азуресторажеурирекуестсукцесс|100|Пока не задокументировано.|
-|азуресторажеурирекуестпендинг|101|Пока не задокументировано.|
-|азуресторажеурирекуестфаилед|102|Пока не задокументировано.|
-|азуресторажеурирекуесттимедаут|103|Пока не задокументировано.|
-|азуресторажеуриреневалсукцесс|200|Пока не задокументировано.|
-|азуресторажеуриреневалпендинг|201|Пока не задокументировано.|
-|азуресторажеуриреневалфаилед|202|Пока не задокументировано.|
-|азуресторажеуриреневалтимедаут|203|Пока не задокументировано.|
-|коммитфилесукцесс|300|Пока не задокументировано.|
-|коммитфилепендинг|301|Пока не задокументировано.|
-|коммитфилефаилед|302|Пока не задокументировано.|
-|коммитфилетимедаут|303|Пока не задокументировано.|
-
-
-
-
-
+|success|0|Пока не задокументировано.|
+|transientError|1|Пока не задокументировано.|
+|error|2|Пока не задокументировано.|
+|unknown|3|Пока не задокументировано.|
+|azureStorageUriRequestSuccess|100|Пока не задокументировано.|
+|azureStorageUriRequestPending|101|Пока не задокументировано.|
+|azureStorageUriRequestFailed|102|Пока не задокументировано.|
+|azureStorageUriRequestTimedOut|103|Пока не задокументировано.|
+|azureStorageUriRenewalSuccess|200|Пока не задокументировано.|
+|azureStorageUriRenewalPending|201|Пока не задокументировано.|
+|azureStorageUriRenewalFailed|202|Пока не задокументировано.|
+|azureStorageUriRenewalTimedOut|203|Пока не задокументировано.|
+|commitFileSuccess|300|Пока не задокументировано.|
+|commitFilePending|301|Пока не задокументировано.|
+|commitFileFailed|302|Пока не задокументировано.|
+|commitFileTimedOut|303|Пока не задокументировано.|
 
 
 

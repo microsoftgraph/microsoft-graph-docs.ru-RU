@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 863496528fdcd60d501fbc9c38e8fbb6ed1884dc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 005ac06ab2c4783f22a7eef0ddca85e771245fbc
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054660"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52784971"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -45,7 +45,7 @@ PATCH /security/alerts/{alert_id}
 | Авторизация | Bearer {код}. Обязательно. |
 | Prefer        | return=representation. Необязательный параметр.   |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. Тело должно **содержать** свойство **vendorInformation** с допустимым и `provider` `vendor` полями. В следующей таблице перечислены поля, которые можно обновить для оповещения. Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -61,7 +61,7 @@ PATCH /security/alerts/{alert_id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект оповещения `200 OK` в тексте [](../resources/alert.md) ответа.
 
@@ -126,9 +126,7 @@ Content-type: application/json
 Ниже представлен пример успешного отклика.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.alert"
+  "blockType": "response"
 } -->
 
 ```http

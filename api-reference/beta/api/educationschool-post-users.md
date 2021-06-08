@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d4033ec85da38d9378924135a9f69dc41ef59a3d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 698a2ca4ca8a330d3a22d455b66e49cb0c89bbf4
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955516"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52785970"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>Добавление educationUser в educationSchool
 
@@ -28,7 +28,7 @@ ms.locfileid: "48955516"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.ReadWrite.All                     |
+| Приложение                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -100,9 +100,7 @@ Content-length: 56
 <!-- Add the educationClass resource to the response. -->
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationUser"
+  "blockType": "response"
 } -->
 
 ```http

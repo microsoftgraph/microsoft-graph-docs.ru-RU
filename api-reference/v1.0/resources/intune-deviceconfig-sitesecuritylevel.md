@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Ситесекуритилевел
+title: тип enum siteSecurityLevel
 description: Возможные значения для уровня безопасности сайта.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 27be9b5d8365af37a32d8dd651f97f01f08465b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38a405fb4f5aa35fd0c29f91db383d86e1e93bc2
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074981"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52760232"
 ---
-# <a name="sitesecuritylevel-enum-type"></a>тип перечисления Ситесекуритилевел
+# <a name="sitesecuritylevel-enum-type"></a>тип enum siteSecurityLevel
 
 Пространство имен: microsoft.graph
 
@@ -23,17 +23,12 @@ ms.locfileid: "48074981"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|потребление|1 |Потребление.|
-|медиумлов|2 |Средняя — минимальная.|
-|medium|4|Средний.|
-|медиумхигх|4 |Умеренно высокий.|
-|высокоуровневых|5 |Высокоуровневых.|
-
-
-
-
-
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|низкий|1|Низкий.|
+|mediumLow|2|Средне-низкий.|
+|medium|3|Средний.|
+|mediumHigh|4 |Средней высоты.|
+|высокая|5 |Высокая.|
 
 
 

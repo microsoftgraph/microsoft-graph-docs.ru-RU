@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72c9537ff821ea416f60a9d8315130d303970c82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2551684b76de5f9a6f74c68f662a6c19db98b141
+ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038608"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52759863"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Обновление managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -18,16 +18,16 @@ ms.locfileid: "48038608"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) .
+Обновление свойств объекта [managedDeviceMobileAppConfigurationDeviceStatus.](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,10 +44,10 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON для объекта [managedDeviceMobileAppConfigurationDeviceStatus.](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 
-В следующей таблице приведены свойства, необходимые при создании [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md).
+В следующей таблице показаны свойства, необходимые при создании [управляемогоDeviceMobileAppConfigurationDeviceStatus.](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -56,14 +56,14 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
-|status|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [управляемый объект ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -105,11 +105,6 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 
