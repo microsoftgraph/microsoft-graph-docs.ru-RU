@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a56765eda995709be5340859c0093e5a72797eae
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 05fde82e6ae9bc3e3d7662e140605391ab08abdb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680544"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787767"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -41,7 +41,7 @@ POST /groups/{id}/renew
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -84,9 +84,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ##### <a name="response"></a>Отклик
 Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Boolean"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

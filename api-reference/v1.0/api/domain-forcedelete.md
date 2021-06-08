@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a4376961ea843c5c512d5bdf59449a7e765399f0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 50e5a418a40d9c5bedee1a007b491d15a06f3931
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441979"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787816"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
 
@@ -18,7 +18,7 @@ ms.locfileid: "50441979"
 
 Удаляет домен с помощью асинхронной длительной операции.
 
-Перед [вызовом forceDelete](domain-forcedelete.md)необходимо обновить или удалить ссылки на **Exchange** в качестве службы подготовка.
+Перед [вызовом forceDelete](domain-forcedelete.md)необходимо обновить или удалить ссылки на Exchange **в** качестве службы обеспечения.
 
 В рамках этой операции выполняются следующие действия:
 
@@ -61,7 +61,7 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -116,8 +116,7 @@ Content-length: 33
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

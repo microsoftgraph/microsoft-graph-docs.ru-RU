@@ -4,12 +4,12 @@ description: Используйте API обзоров доступа для п�
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b88c135c488b332814105dcab992e3a2a4ac465b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b3a7ee94f045eb7eb587b58fc6220c304c2b81ff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751134"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787079"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Руководство. Используйте API обзоров доступа для просмотра доступа к группам безопасности
 
@@ -20,7 +20,7 @@ ms.locfileid: "52751134"
 >[!NOTE]
 >Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые условия
 
 Для завершения этого руководства необходимы следующие ресурсы и привилегии:
 
@@ -49,7 +49,10 @@ ms.locfileid: "52751134"
 Создайте трех новых тестовых пользователей, каждый раз запуская запрос ниже, меняя свойства **displayName,** **mailNickname** и **userPrincipalName.** Запись **их id** s.
 
 ### <a name="request"></a>Запрос
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-createUser"
+}-->
 ```http
 POST /users
 Content-Type: application/json
@@ -67,6 +70,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -87,12 +95,17 @@ Content-type: application/json
 Создайте группу безопасности с именем **Building security group,** которая является целью обзоров доступа в этом руководстве. Назначьте этой группе двух владельцев групп и двух участников. Эти члены будут подвергаться проверке со стороны владельцев групп.
 
 ### <a name="request"></a>Запрос
+
 В этом вызове замените:
 + `010b2de0-0ed4-4ece-bfa2-22fff71d0497` и `b828cc0e-4240-46ed-bb25-888744487e2d` с **id** s двух владельцев группы.
   + Один из **id** s принадлежит одному из пользователей, созданных в шаге 1.
   + Другой — ваш **id**. Чтобы получить свой **id,** `GET` запустите `https://graph.microsoft.com/beta/me` .
 + `43b12b0c-ee2c-4257-96fe-505d823e06ab` и `859924d0-7115-422a-9ee8-ea8c0c014707` с **id** s из вас два члена группы. Это два других члена, созданные в шаге 1.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -116,6 +129,12 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -130,7 +149,7 @@ Content-type: application/json
 ```
 В ответе зафиксировать **id** новой группы, чтобы использовать его позже в этом учебнике.
 
-## <a name="step-3-create-an-access-review"></a>Шаг 3. Создание обзора доступа
+## <a name="step-3-create-an-access-review-for-the-security-group"></a>Шаг 3. Создание обзора доступа для группы безопасности
 
 Создайте обзор доступа для членов группы безопасности с помощью следующих параметров:
 + Это обзор самостоятельного просмотра доступа. В этом случае проверяемая пользовательская группа самостоятельно засвидетельна необходимостью доступа к группе.
@@ -138,6 +157,7 @@ Content-type: application/json
 + Область обзора ограничена членами **группы безопасности Building.**
 
 ### <a name="request"></a>Запрос
+
 В этом вызове замените следующее:
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c` с **id** группы **безопасности Здания**.
 + Область указывает, что обзор применяется для всех членов группы безопасности **здания.** Дополнительные параметры настройки области см. в разделе [See also.](#see-also)
@@ -145,6 +165,10 @@ Content-type: application/json
 
 Если не указать значение  свойства рецензентов, этот обзор доступа настраивается как самообсчет с участниками в качестве рецензентов.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -191,6 +215,11 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -245,8 +274,13 @@ Content-type: application/json
 В следующем запросе перечислены все экземпляры определения обзора доступа. Так как в шаге 3 был создан разовая проверка доступа, запрос возвращает только один экземпляр, **id** которого является таким же, как и **id определения доступа.**
 
 ### <a name="request"></a>Запрос
+
 В этом вызове `d7286a17-3a01-406a-b872-986b6b40317c` замените **id** определения обзора доступа, возвращенного в шаге 3.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
 ```
@@ -255,6 +289,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 В этом ответе **состояние экземпляра** проверки доступа в том, что `InProgress` **startDateTime** прошло, **а endDateTime** — в будущем. Если **startDateTime** будет в будущем, состояние будет `NotStarted` . С другой стороны, если **endDateTime** в прошлом, состояние будет `Completed` .
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -281,8 +321,13 @@ Content-type: application/json
 Вас интересуют решения, принятые в экземпляре обзора доступа.
 
 ### <a name="request"></a>Запрос
+
 В этом вызове `d7286a17-3a01-406a-b872-986b6b40317c` замените **id** определения обзора доступа, возвращенного в шаге 3.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances/d7286a17-3a01-406a-b872-986b6b40317c/decisions
 ```
@@ -291,6 +336,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 В следующем ответе показано решение, принятое для экземпляра обзора.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -431,13 +482,22 @@ Content-type: application/json
 ### <a name="delete-the-security-group"></a>Удаление группы безопасности
 
 #### <a name="request"></a>Запрос
+
 В этом вызове `825f1b5e-6fb2-4d9a-b393-d491101acc0c` замените **id** группы **безопасности Building.**
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
 ```
 
 #### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -449,27 +509,42 @@ Content-type: text/plain
 В этом вызове `d7286a17-3a01-406a-b872-986b6b40317c` замените **id** определения обзора доступа. Так как определение расписания проверки доступа является планом обзора доступа, удаление определения удаляет параметры, экземпляры и решения, связанные с обзором доступа.
 
 #### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c
 ```
 
 #### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### <a name="delete-the-three-test-users"></a>Удаление трех тестовых пользователей
-
-#### <a name="request"></a>Запрос
 В этом вызове `43b12b0c-ee2c-4257-96fe-505d823e06ab` замените **id** тестового пользователя. Повторите это дважды с **помощью id** s двух других пользователей, чтобы удалить их.
 
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
 ```
 
 #### <a name="response"></a>Отклик
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain

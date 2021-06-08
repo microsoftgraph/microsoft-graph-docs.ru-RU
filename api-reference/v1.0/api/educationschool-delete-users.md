@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c6bc067eed091f7fa6d04ea992517c2ec6d66391
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3dfdb0e2f0bcefefc4b4d0f6c35926cf36b08d43
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956611"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787466"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Удаление educationUser из educationSchool.
 
@@ -37,7 +37,7 @@ DELETE /education/schools/{id}/users/{userId}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 
@@ -78,9 +78,7 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{use
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

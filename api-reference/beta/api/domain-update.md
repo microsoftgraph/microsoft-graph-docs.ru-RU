@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4a4b026aa4bcf9875e615a71ce38b60c76b51e2d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 820e99abbfd0c7d2de0ba71728bcf4d2d06195c7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436472"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787030"
 ---
 # <a name="update-domain"></a>Обновление домена
 
@@ -48,7 +48,7 @@ PATCH /domains/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса укажи значения для обновляемой области. Существующие свойства, не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений в других значениях свойств. Для лучшей производительности включаем только измененные значения.
 
@@ -99,9 +99,7 @@ Content-type: application/json
 ##### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 00c4f95eb53ec565084e309b49173887b0428f39
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 53d835062f004c3f3e98c040eb207f4d22574a49
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031130"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787114"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -80,7 +80,7 @@ DELETE /subscriptions/{subscription-id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -127,9 +127,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 
 Ниже приведен пример отклика.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.subscription"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 1fad0311a688a2093e216a8b8d53405260d1fa19
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 624302e735eebf3fbbdf477636176a5e7f414bfe
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435933"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786994"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -21,7 +21,7 @@ ms.locfileid: "50435933"
 Отмена [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
@@ -62,7 +62,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -110,8 +110,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1d14d95f6e31f8784ddbe89dc6c0070b60d6854f
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 9788e4485ba5c81453aac5087661bf3ea3e98299
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781151"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787550"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Назначение onPremisesAgent onPremisesAgentGroup
 
@@ -42,7 +42,7 @@ POST /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$re
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -93,9 +93,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "blockType": "response"
 } -->
 
 ```http

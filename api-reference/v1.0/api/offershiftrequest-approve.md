@@ -1,22 +1,22 @@
 ---
-title: 'Оффершифтрекуест: утверждение'
-description: Утверждение объекта Оффершифтрекуест.
+title: 'offerShiftRequest: утверждение'
+description: Утверждение объекта offerShiftRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3b881d2d5efa166241147654f6dc3cc3c8b874a4
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 370e9399b7f4848209190fb771128a51ac820501
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313683"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788080"
 ---
-# <a name="offershiftrequest-approve"></a>Оффершифтрекуест: утверждение
+# <a name="offershiftrequest-approve"></a>offerShiftRequest: утверждение
 
 Пространство имен: microsoft.graph
 
-Утверждение объекта [оффершифтрекуест](../resources/offershiftrequest.md) .
+Утверждение [объекта offerShiftRequest.](../resources/offershiftrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "48313683"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Schedule.ReadWrite.All |
 
@@ -50,7 +50,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Пользовательское сообщение отправлено при утверждении.|
+|message|String|Настраиваемые сообщения, отправленные на утверждение.|
 
 ## <a name="response"></a>Отклик
 
@@ -103,8 +103,7 @@ Content-type: application/json
 Ниже приводится пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

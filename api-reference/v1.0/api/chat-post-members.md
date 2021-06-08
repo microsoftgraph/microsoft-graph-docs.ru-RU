@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d7b36a41982cae853db646bc28e0d5996a22913f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2bf40e04e4d25b3fb4c8f97ebd61e18893f1b17d
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950095"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787480"
 ---
 # <a name="add-member-to-a-chat"></a>Добавление участника в чат
 
@@ -101,8 +101,7 @@ content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -110,7 +109,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>Пример 2. Добавление одного участника в чат Microsoft Teams и отсутствие истории чата
+### <a name="example-2-adding-a-single-member-to-a-microsoft-teams-chat-sharing-no-chat-history"></a>Пример 2. Добавление одного члена в чат Microsoft Teams, не делясь историей чата
 
 #### <a name="request"></a>Запрос
 
@@ -160,8 +159,7 @@ Content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -169,7 +167,7 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Пример 3. Добавление одного участника в чат Microsoft Teams, общий доступ к всей истории чата
+### <a name="example-3-adding-a-single-member-to-a-microsoft-teams-chat-sharing-the-whole-history-of-the-chat"></a>Пример 3. Добавление одного члена в Microsoft Teams чат, общий доступ к всей истории чата
 
 #### <a name="request"></a>Запрос
 
@@ -220,8 +218,7 @@ content-type: application/json
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
 }
 -->
 ```http

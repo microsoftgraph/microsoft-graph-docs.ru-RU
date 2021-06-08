@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: fe4c987c86aaf9c63b7133e323b2d1ed6977da99
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 4cc38673566bdff9114e0f94e0a8e27c3d9ad2eb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469481"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787578"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -92,7 +92,7 @@ DELETE /subscriptions/{subscription-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
@@ -134,9 +134,7 @@ DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 
 Ниже приведен пример отклика.
 <!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.subscription"
+  "blockType": "response"
 } -->
 
 ```http

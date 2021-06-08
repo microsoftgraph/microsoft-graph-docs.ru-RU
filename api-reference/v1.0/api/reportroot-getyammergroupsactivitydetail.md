@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 5ea12a4673d5a51ee1d26ab4bd016360649fbce1
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ff24dcbb29559b5201ebcf099f016ebd6f166b96
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981132"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787150"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 
@@ -18,7 +18,7 @@ ms.locfileid: "49981132"
 
 Получите сведения об активности в группах Yammer.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 о](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)действиях в группах Yammer.
+> **Примечание:** Сведения о различных представлениях отчетов и именах см. в [Microsoft 365 отчетов — Yammer групп.](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -79,7 +79,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Posted Count (количество опубликованных сообщений)
 - Read Count (количество прочитанных сообщений)
 - Liked Count (количество понравившихся сообщений)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(perio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
@@ -111,7 +111,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 #### <a name="request"></a>Запрос
-Если он вызван с помощью a, областью действия отчета является `date` заданная дата.
+Если он вызван с помощью отчета, он будет областью действия `date` в заданную дату.
 
 <!--{
   "blockType": "request",
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date=
 
 Ниже приведен пример отклика.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+<!-- { "blockType": "response" } --> 
 
 ```http
 HTTP/1.1 302 Found

@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: deletePasswordSingleSignOnCredentials'
-description: Удаление учетных данных единого входа с помощью пароля для пользователя или группы.
+description: Удаление учетных данных с одним входом с помощью пароля для пользователя или группы.
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 249f5022d3a7dd9170ab35e66c1ecf0e7c0dd99e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1885fab70ab539290045242c1e43d69f214e61fb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131952"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787214"
 ---
 # <a name="serviceprincipal-deletepasswordsinglesignoncredentials"></a>servicePrincipal: deletePasswordSingleSignOnCredentials
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131952"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление учетных данных единого входа с помощью пароля для пользователя или группы.
+Удаление учетных данных с одним входом с помощью пароля для пользователя или группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,10 +28,10 @@ ms.locfileid: "50131952"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
+| Приложение                            | Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> Пользователи могут создавать учетные данные для себя. Владельцы и администраторы, в которых есть следующие роли, могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные узнать см. в [ролях каталога.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+> Пользователи могут создавать учетные данные для себя. Владельцы и администраторы служб со следующими ролями могут создавать учетные данные для любого пользователя или группы: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Дополнительные дополнительные функции см. в [каталоге ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/deletePasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|ИД пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|id|String|ID пользователя или группы, к которой принадлежит этот набор учетных данных.|
 
 ## <a name="response"></a>Отклик
 
@@ -103,9 +103,7 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

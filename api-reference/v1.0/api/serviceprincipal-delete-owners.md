@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8efe9fe28aa094959d1160b968cffc38b66bca60
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db723a3dc0cfd3890e87690a6b1c232c594c7aa8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053841"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787135"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -25,7 +25,7 @@ ms.locfileid: "52053841"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+|Для приложений | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 |:---- |:---------- |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
 
 ## <a name="response"></a>Отклик
@@ -93,9 +93,7 @@ Content-length: 30
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

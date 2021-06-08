@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 293b55f477184af7ba7596e7344bc51f4096bbe4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9e0b90e29019eea2e0b232f195017261974bed99
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963768"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788089"
 ---
 # <a name="add-a-student"></a>Добавление учащегося
 
@@ -38,7 +38,7 @@ POST /education/classes/{id}/members/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса предоставьте описание объекта [educationUser](../resources/educationuser.md) в формате JSON.
 
 
@@ -87,9 +87,7 @@ Content-length: 56
 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationUser"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

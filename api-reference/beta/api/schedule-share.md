@@ -1,26 +1,26 @@
 ---
-title: 'Расписание: общий доступ'
-description: Предоставьте общий доступ к диапазону расписания с участниками расписания.
+title: 'расписание: доля'
+description: Поделитесь диапазоном времени расписания с участниками расписания.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53b78ff1f56543f2e9488e48dee822be87d92eb4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47bd1e71b31a10b7dfb0ffc34c063d94f2e065fc
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974945"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788019"
 ---
-# <a name="schedule-share"></a>Расписание: общий доступ
+# <a name="schedule-share"></a>расписание: доля
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предоставьте общий доступ к диапазону [расписания](../resources/schedule.md) с участниками расписания.
-Сделайте коллекции элементов [SHIFT](../resources/shift.md), [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени [расписания](../resources/schedule.md) , отображаемых указанными участниками группы, включая "сотрудники" и "руководители".
-Каждый [из](../resources/shift.md)экземпляров [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в [расписании](../resources/schedule.md) поддерживает черновую и общую версии элемента. Черновая версия доступна для просмотра только руководителями, а общая версия доступна для просмотра сотрудниками и руководителями. Для каждого экземпляра [SHIFT](../resources/shift.md), [опеншифт](../resources/openshift.md) и [тимеофф](../resources/timeoff.md) в указанном диапазоне времени, действие Share обновляет общую версию из черновой версии, поэтому в дополнение к менеджерам сотрудники также могут просматривать самую актуальную информацию об элементе. Параметр **нотифитеам** указывает, какие сотрудники могут просматривать элемент.
+Поделитесь [диапазоном](../resources/schedule.md) времени расписания с участниками расписания.
+Сделайте коллекции элементов [shift,](../resources/shift.md) [openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в [](../resources/schedule.md) указанном диапазоне времени для просмотра указанными участниками группы, включая сотрудников и менеджеров.
+Каждая [](../resources/schedule.md) [смена, экземпляр openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в расписании поддерживают проектную версию и общую версию элемента. [](../resources/shift.md) Проектную версию просматривают только руководители, а общую версию просматривают сотрудники и руководители. Для [](../resources/shift.md)каждой смены, экземпляра [openshift](../resources/openshift.md) и [timeOff](../resources/timeoff.md) в указанном диапазоне времени действие share обновляет общую версию из черновиковой версии, чтобы помимо руководителей сотрудники могли просматривать наиболее актуальные сведения о элементе. Параметр **notifyTeam** далее указывает, какие сотрудники могут просматривать элемент.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "48974945"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Schedule.ReadWrite.All |
+|Приложение | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,9 +53,9 @@ POST /teams/{teamId}/schedule/share
 
 |Параметр                   |Тип           |Описание  |
 |-----------------------|-------------------|--------------|
-| нотифитеам            |`Boolean`             |Указывает, должна ли вся группа получить видимое уведомление о данном действии или только те сотрудники, которым назначена смена. Обязательный.       |
-| startDateTime         |`DateTimeOffset`   |Время начала совместного использования смен по расписанию. Обязательный элемент.   |
-| endDateTime           |`DateTimeOffset`   | Время окончания для совместного использования смены графика до.   |
+| notifyTeam            |`Boolean`             |Указывает, должна ли вся команда получать видимое уведомление об этом действии, или только сотрудникам, у которых назначена смена, которая была общей. Обязательный.       |
+| startDateTime         |`DateTimeOffset`   |Время начала обмена сменами в расписании. Обязательный элемент.   |
+| endDateTime           |`DateTimeOffset`   | Конечный период для обмена сменами в расписании до.   |
 
 ## <a name="response"></a>Отклик
 
@@ -106,9 +106,7 @@ Content-type: application/json
 Ниже приведен пример ответа. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7736c3ae73cc18436387b4d9e90813daadb19957
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: afb69ea94fb87c5ba584a61ac1682cb17c9c1e96
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681370"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786960"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 
@@ -87,12 +87,10 @@ Content-length: 30
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

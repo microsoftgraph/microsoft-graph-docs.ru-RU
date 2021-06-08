@@ -5,12 +5,12 @@ localization_priority: Priority
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 584519cde56062b687b1a10fc2f0fa16b064b557
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3a3ce01c2d507d949888ab30f1931b8e721a4fe3
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034590"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787121"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 
@@ -34,7 +34,7 @@ ms.locfileid: "52034590"
 GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика (например, $filter не поддерживается).
+Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика. Например, не поддерживается параметр $filter.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -42,7 +42,7 @@ GET /subscribedSkus
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2cdd981d4638fc80d5ed9999a37fd3c15ff085be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ed27e604d15ae7df87b9f180a378bfec480d7632
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036333"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787487"
 ---
 # <a name="get-timeoff"></a>Get timeOff
 
@@ -28,7 +28,7 @@ ms.locfileid: "52036333"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.Read.All *, Schedule.ReadWrite.All* |
+|Приложение | Schedule.Read.All *, Schedule.ReadWrite.All* |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -62,7 +62,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 

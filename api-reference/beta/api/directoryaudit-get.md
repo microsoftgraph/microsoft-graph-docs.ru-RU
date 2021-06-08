@@ -1,16 +1,16 @@
 ---
 title: Получение directoryAudit
-description: Описывает метод get ресурса directoryAudit (сущности) из API Microsoft Graph (бета-версия).
+description: Описывает метод получения ресурса directoryAudit из API Microsoft Graph (бета-версия).
 localization_priority: Normal
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8542daa3ad66c37d3f46702d19542ba3fc9bcefa
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d603045143ae379f55ed56dd1cd69be74946b1ed
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130965"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787051"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -18,7 +18,7 @@ ms.locfileid: "50130965"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите определенный элемент журнала аудита Azure Active Directory. К ним относится элемент журнала аудита, созданный различными службами в Azure Active Directory, например пользователем, приложением, управлением устройствами и группой, привилегированным управлением удостоверениями (PIM), проверками доступа, условиями использования, защитой удостоверений, управлением паролями (самостоятельный сброс паролей и сброс паролей администратора), управлением группой самообслужения и так далее.
+Получите определенный элемент журнала Azure Active Directory аудита. Это включает элемент журнала аудита, созданный различными службами в Azure Active Directory, таких как пользователь, приложение, управление устройствами и группой, привилегированное управление удостоверениями (PIM), обзоры доступа, условия использования, защита удостоверений, управление паролями (сбросы паролей самообслуживающего и администратора), управление группой самообслуживаний и так далее.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов OData для настройки ответа. Подробные сведения об использовании этих параметров см. в [параметрах запроса OData.](/graph/query_parameters)
+Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query_parameters)
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -55,7 +55,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [directoryAudit](../resources/directoryaudit.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект directoryAudit](../resources/directoryaudit.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -104,8 +104,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
-```
-```json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{

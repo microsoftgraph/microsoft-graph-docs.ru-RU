@@ -1,24 +1,24 @@
 ---
-title: Удаление Тимеоффреасон
-description: Помечайте Тимеоффреасон как неактивную, устанавливая свойство.
+title: Удаление timeOffReason
+description: Пометить timeOffReason как неактивное, задав свойство isActive.
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e23f4e9255bc1ff50e901cd366e50540be0dbe57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a53a677187373105e6a6b1cd3b884c6aa5e928e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978231"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787431"
 ---
-# <a name="delete-timeoffreason"></a>Удаление Тимеоффреасон
+# <a name="delete-timeoffreason"></a>Удаление timeOffReason
 
 Пространство имен: microsoft.graph
 
-Помечайте Тимеоффреасон как неактивную **isActive** , устанавливая свойство [timeOffReason](../resources/timeoffreason.md) . Каждая команда должна включать по крайней мере одну причину тимеофф.
+[Пометить timeOffReason](../resources/timeoffreason.md) как неактивное, задав **свойство isActive.** Каждая команда должна включать по крайней мере одну причину времени.
 
-Этот метод не удаляет указанный экземпляр [тимеоффреасон](../resources/timeoffreason.md) . экземпляры [тимеоффитем](../resources/timeoffitem.md) , которым назначена эта причина, остались назначенными по этой причине.
+Этот метод не удаляет указанный экземпляр [timeOffReason.](../resources/timeoffreason.md) [Экземпляры timeOffItem,](../resources/timeoffitem.md) которые были назначены по этой причине, остаются назначены по этой причине.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,11 +26,11 @@ ms.locfileid: "47978231"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -95,8 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffReasons/{
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

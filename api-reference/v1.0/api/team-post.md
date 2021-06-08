@@ -5,12 +5,12 @@ author: anandjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f8e20e52f103a0ee921d67e8f2987c19a94fef12
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: 18e752c01df3f1b8eafffdf75085e470a2bc70b6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996117"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787760"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -56,7 +56,7 @@ POST /teams
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-delegated-permissions"></a>Пример 1. Делегированные разрешения
+### <a name="example-1-delegated-permissions"></a>Пример 1. Делегированные разрешения
 
 Ниже приведен пример минимального запроса. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`.
 
@@ -103,8 +103,7 @@ Content-Type: application/json
 ##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "name": "create_team_post",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -114,7 +113,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### <a name="example-2-application-permissions"></a>Пример 2. Разрешения для приложения
+### <a name="example-2-application-permissions"></a>Пример 2. Разрешения для приложения
 
 Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `members`.
 
@@ -171,8 +170,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_minimal",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_minimal"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -182,7 +180,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>Пример 3. Создание команды с несколькими каналами, установленными приложениями и закрепленными вкладками с использованием делегированных разрешений
+### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>Пример 3. Создание команды с несколькими каналами, установленными приложениями и закрепленными вкладками с использованием делегированных разрешений
 
 Ниже приведен запрос с указанием полного набора полезных данных. Клиент может переопределить значения в базовом шаблоне и добавить элементы со значениями массива в пределах, допускаемых правилами проверки для объекта `specialization`.
 
@@ -290,8 +288,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "name": "create_team_post_full_payload",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_post_full_payload"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -352,8 +349,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "name": "create_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "create_team_from_group"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -363,7 +359,7 @@ Content-Location: /teams('71392b2f-1765-406e-86af-5907d9bdb2ab')
 Content-Length: 0
 ```
 
-### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a>Пример 5. Создание команды из группы с несколькими каналами, установленными приложениями и закрепленными вкладками
+### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a>Пример 5. Создание команды из группы с несколькими каналами, установленными приложениями и закрепленными вкладками
 
 Ниже указан запрос, преобразующий существующую группу с расширенными свойствами, в результате чего создается команда с несколькими каналами, установленными приложениями и закрепленными вкладками.
 
@@ -436,8 +432,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_group",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_group"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -447,9 +442,9 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a>Пример 6. Создание команды с использованием нестандартного базового типа шаблона
+### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a>Пример 6. Создание команды с использованием нестандартного базового типа шаблона
 
-Базовые типы шаблонов — это специальные шаблоны, созданные корпорацией Майкрософт для определенных отраслей. Эти базовые шаблоны зачастую содержат защищаемые приложения, недоступные в свойствах хранилища и команды, которые еще не поддерживаются по отдельности в шаблонах Microsoft Teams.
+Базовые типы шаблонов — это специальные шаблоны, созданные корпорацией Майкрософт для определенных отраслей. Эти базовые шаблоны зачастую содержат собственные приложения, недоступные в свойствах хранилища и команды, которые еще не поддерживаются по отдельности в шаблонах Microsoft Teams.
 
 Чтобы создать команду на основе нестандартного базового шаблона, потребуется изменить значение свойства `template@odata.bind` со `standard` на название этого шаблона.
 
@@ -499,8 +494,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard"
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -510,7 +504,7 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
-### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>Пример 7. Создание команды с использованием нестандартного базового типа шаблона с расширенными свойствами
+### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>Пример 7. Создание команды с использованием нестандартного базового типа шаблона с расширенными свойствами
 
 Базовые типы шаблонов могут быть расширены с помощью дополнительных свойств. Это позволяет дополнить существующий базовый шаблон дополнительными каналами, приложениями, вкладками и параметрами команды.
 
@@ -584,8 +578,7 @@ Content-Type: application/json
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "name": "convert_team_from_non_standard2",
-  "@odata.type": "microsoft.graph.team"
+  "name": "convert_team_from_non_standard2"
 }-->
 ```http
 HTTP/1.1 202 Accepted

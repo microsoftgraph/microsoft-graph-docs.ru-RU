@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 89d65455ecc1eea427c0e2186a97fbad39789884
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e2782b4756ece02695049c4327b651a1796c77c7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053547"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787392"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -44,8 +44,8 @@ PATCH /privilegedApproval/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|approvalDuration|Duration||
-|approvalState|String| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalDuration|Длительность||
+|approvalState|Строка| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset||
@@ -98,11 +98,9 @@ Content-length: 180
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.privilegedApproval"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

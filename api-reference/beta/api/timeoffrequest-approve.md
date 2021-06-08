@@ -1,24 +1,24 @@
 ---
-title: 'Тимеоффрекуест: утверждение'
-description: Утверждение объекта тимеоффрекуест. "
+title: 'timeOffRequest: утверждение'
+description: Утверждение объекта timeoffrequest".
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0c78dbe8da36c03e53431db217ea8f186f8180cb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 291a3e764ebcd84d181b5441405c4579cf798dc2
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981377"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787326"
 ---
-# <a name="timeoffrequest-approve"></a>Тимеоффрекуест: утверждение
+# <a name="timeoffrequest-approve"></a>timeOffRequest: утверждение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Утверждение [тимеоффрекуест](../resources/timeoffrequest.md).
+Утверждение [timeoffrequest](../resources/timeoffrequest.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "48981377"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения | Schedule. ReadWrite. ALL *  |
+|Приложение | Schedule.ReadWrite.All*  |
 
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
+>\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение утверждения.|
+|message|String|Настраиваемые сообщения утверждения.|
 
 ## <a name="response"></a>Отклик
 
@@ -61,7 +61,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 
 ## <a name="examples"></a>Примеры
 
-Ниже приведен пример вызова этого API.
+Ниже приводится пример вызова этого API.
 
 ### <a name="request"></a>Запрос
 
@@ -104,9 +104,7 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

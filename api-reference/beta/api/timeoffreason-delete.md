@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d0e976ce275eda442ececbff5c2553d1764e154c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 48c39c0b371a6feafb7c89868903b60c8bb4ea63
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048962"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787347"
 ---
 # <a name="delete-timeoffreason"></a>Удаление timeOffReason
 
@@ -59,7 +59,7 @@ DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -90,15 +90,13 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

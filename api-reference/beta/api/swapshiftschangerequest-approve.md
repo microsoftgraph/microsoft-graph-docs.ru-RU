@@ -1,24 +1,24 @@
 ---
-title: 'Свапшифтсчанжерекуест: утверждение'
+title: 'swapShiftsChangeRequest: утверждение'
 description: Утверждение запроса на смену замены.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56dd5e9696bc32cfa48eeaf1a19f2d228de93c38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 18bdbd6d6de9ca3bf1dd65d25ec55d64db4d7176
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982168"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787206"
 ---
-# <a name="swapshiftschangerequest-approve"></a>Свапшифтсчанжерекуест: утверждение
+# <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest: утверждение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Утверждение объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
+Утверждение [объекта swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение утверждения.|
+|message|String|Пользовательское сообщение утверждения.|
 
 ## <a name="response"></a>Отклик
 
@@ -102,9 +102,7 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

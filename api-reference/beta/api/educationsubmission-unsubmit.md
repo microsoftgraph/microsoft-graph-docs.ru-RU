@@ -1,31 +1,31 @@
 ---
-title: 'educationSubmission: unsubmit'
-description: 'Действие, которое указывает, что студенту требуется работать с отправкой назначения после его включения. Это действие может выполняться только студентом. '
+title: 'educationSubmission: ото всех'
+description: 'Действие, которое указывает на то, что студент хочет работать над отправкой назначения после его внесения. Это действие может быть принято только студентом. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 24868993badf2b0788e35f015e8ceea0ca7361d0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 23f6a2ec01dde64ec12ff8f3a378c40b1b3fd3cb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955421"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787277"
 ---
-# <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
+# <a name="educationsubmission-unsubmit"></a>educationSubmission: ото всех
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Действие, которое указывает, что студенту требуется работать с отправкой назначения после его включения. Это действие может выполняться только студентом. Это приведет к изменению состояния отправки с "Отправлено" на "работа". Во время процесса отсылки все ресурсы будут скопированы из Субмиттедресаурцес в сегмент Воркингресаурцес. Преподаватель будет искать в списке рабочие ресурсы для ступенчатого использования.
+Действие, которое указывает на то, что студент хочет работать над отправкой назначения после его внесения. Это действие может быть принято только студентом. Это изменит состояние отправки с "отправленной" на "рабочую". Во время процесса отправки все ресурсы будут скопированы из отправкиРесурса в ведро workingResources. Преподаватель будет искать список рабочих ресурсов для классификации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -33,7 +33,6 @@ ms.locfileid: "48955421"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -82,9 +81,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

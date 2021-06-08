@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 300d17e32114eece7e1af3f9ab57c8b3af370494
-ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
+ms.openlocfilehash: a1180508853e932cc212e623d0d8a2d3dcae0e54
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52732191"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787410"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -72,14 +72,14 @@ ms.locfileid: "52732191"
 |chatId|Строка|Если сообщение было отправлено в чате, представляет собой удостоверение чата.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
 |webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |ответы|[chatMessage](chatmessage.md)| Ответы на указанное сообщение. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, которое Microsoft Teams - например, изображения, фрагменты кода и т. д. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Содержимое в сообщении, которое Microsoft Teams - например, изображения или фрагменты кода. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

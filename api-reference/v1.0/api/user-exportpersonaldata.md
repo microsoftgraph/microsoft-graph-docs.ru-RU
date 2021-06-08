@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fef9b795e0cf1b3fd162afc4599ad4c245b828e9
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 56e42bbde7df9ea08405616eaab1342ac654e8eb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722351"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787725"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -25,7 +25,7 @@ ms.locfileid: "50722351"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User.Export.All, User.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Приложение | User.Export.All, User.Read.All |
+|Для приложений | User.Export.All, User.Read.All |
 
 >**Примечание:** Экспорт может выполняться администратором компании только при делегирования разрешений.
 
@@ -40,19 +40,19 @@ POST /users/{id}/exportPersonalData
 |:---------------|:----------|
 | Авторизация  | Bearer {token}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|storageLocation|String|Это URL-адрес подписи общего доступа (SAS) к учетной записи Azure Storage, куда следует экспортировать данные.|
+|storageLocation|String|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика. Ответ содержит следующие заглавные главы ответов.
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Location  | URL-адрес для проверки состояния запроса. |
+| Расположение  | URL-адрес для проверки состояния запроса. |
 | Retry-After  | Период времени в секундах. Производитель запросов должен ждать этого долго после отправки запроса для проверки состояния. |
 
 ## <a name="example"></a>Пример
@@ -100,8 +100,7 @@ Content-length: 48
 ```
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted

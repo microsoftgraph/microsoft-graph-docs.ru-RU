@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a006e25737abc2bc30b63e029991e8203ff47e0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 39e1787ba3a88a0988977cb3c34d9575f608980a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681244"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786953"
 ---
 # <a name="update-group"></a>Update group
 
@@ -57,7 +57,7 @@ PATCH /groups/{id}
 |groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит **Unified,** то группа является Microsoft 365 группой; в противном случае это группа безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. |
 |mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
-|securityEnabled|Boolean|Указывает, является ли группа группой безопасности, в том числе Microsoft 365 группами. |
+|securityEnabled|Логический|Указывает, является ли группа группой безопасности, в том числе Microsoft 365 группами. |
 |visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
 
 Поскольку **ресурс группы** поддерживает [расширения,](/graph/extensibility-overview)вы можете использовать операцию для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` группы. 
@@ -120,11 +120,9 @@ Content-length: 211
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http
@@ -179,9 +177,7 @@ Content-length: 211
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

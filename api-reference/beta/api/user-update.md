@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a1272d3c3340308be5ebdf68d6542b77f073ac4c
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 44d38281189872da3aad4382f899600c040bcbdd
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232097"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787065"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -65,14 +65,14 @@ PATCH /users/{id | userPrincipalName}
 |department|String|Название отдела, в котором работает пользователь.|
 |displayName|String|Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает `$filter` и `$orderby`.|
 |employeeId|String|Идентификатор сотрудника, назначенный пользователю организацией.|
-| employeeType | String | Захватывает тип рабочего предприятия. Например, `Employee` `Contractor` , , или `Consultant` `Vendor` . Возвращается только с помощью оператора `$select`. Поддерживает `$filter` с `eq` оператором.|
+| employeeType | String | Фиксирует тип корпоративного работника. Например, `Employee`, `Contractor`, `Consultant` или `Vendor`. Возвращается только с помощью оператора `$select`. Поддерживает `$filter` с оператором `eq`.|
 |givenName|String|Простое имя пользователя.|
 |hireDate|DateTimeOffset|Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |identities|Коллекция [objectIdentity](../resources/objectidentity.md)| Представляет удостоверения, которые можно использовать для входа в учетную запись пользователя. Удостоверение может предоставляться корпорацией Майкрософт, организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт, и привязывается к учетной записи пользователя. Любое обновление **удостоверений** заменит всю коллекцию, и необходимо предоставить идентификатор userPrincipalName **signInType** в коллекции.|
-|interests|Коллекция строк|Список интересов пользователя.|
+|interests;|Коллекция строк|Список интересов пользователя.|
 |jobTitle|String|Должность пользователя.|
 |почта;|String|SMTP-адрес пользователя, например `jeff@contoso.onmicrosoft.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. <br><br>Возвращается по умолчанию. Поддерживает `$filter`.|
-|mailNickname|String|Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя.|
+|mailNickname|String|Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя.|
 |mobilePhone|String|Основной сотовый телефон пользователя.|
 |mySite|String|URL-адрес личного сайта пользователя.|
 |officeLocation|String|Расположение офиса на месте работы пользователя.|
@@ -148,9 +148,7 @@ Content-type: application/json
 
 Ниже показан пример отклика.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -202,9 +200,7 @@ Content-type: application/json
 
 Ниже показан пример отклика.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

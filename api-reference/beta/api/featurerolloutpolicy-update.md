@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8d30e3df9d807289787f599e436427a02544c055
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 66b04005f01f9e2d56189a23ad8dae36846a67a0
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508605"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787002"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление featurerolloutpolicy
 
@@ -44,7 +44,7 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token}. Обязательна |
+| Авторизация | Bearer {token}. Обязательный |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -108,8 +108,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "response"
 } -->
 
 ```http

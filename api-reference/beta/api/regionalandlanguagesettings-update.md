@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 82f33ae2b4165586ccb4a3d55873e1e6ff6c1765
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: fb1621d05daa04a3387d728dfdfbea073cf56704
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516621"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787508"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Обновление regionalAndLanguageSettings
 
@@ -25,7 +25,7 @@ ms.locfileid: "50516621"
 
 |Тип разрешения                   |Разрешение (от наименее до самых привилегированных)     |
 |----------------------------------|---------------------------------------------- |
-|Делегированное (рабочая или учебная учетная запись)|User.ReadWrite, User.ReadWrite.All             |
+|Делегированные (рабочая или учебная учетная запись)|User.ReadWrite, User.ReadWrite.All             |
 |Делегированная (личная учетная запись)      |User.ReadWrite, User.ReadWrite.All             |
 |Приложение                       |User.ReadWrite, User.ReadWrite.All             |
 
@@ -139,11 +139,9 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "put_regionalAndLanguageSettings"
 } -->
 ```http
@@ -203,8 +201,6 @@ Content-type: application/json
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "patch_regionalAndLanguageSettings"
 } -->
 ```http

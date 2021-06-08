@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 2c4392529d64683a183002b9f0b302495f8042e5
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7a301bb12271f6b31e7fef4dac565881139de994
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435787"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787267"
 ---
 # <a name="update-governancerolesetting"></a>Обновление управленияRoleSetting
 
@@ -21,7 +21,7 @@ ms.locfileid: "50435787"
 Обновление свойств [governanceRoleSetting.](../resources/governancerolesetting.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 >**Примечание:** Этот API также требует, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
@@ -62,11 +62,11 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 | Content-Type  | application/json|
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажи значения [для governanceRuleSettings,](../resources/governancerulesetting.md) которые необходимо обновить. 
 
 | Свойство     | Тип   |Описание|
@@ -130,8 +130,7 @@ Content-length: 350
 
 ##### <a name="response"></a>Отклик
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

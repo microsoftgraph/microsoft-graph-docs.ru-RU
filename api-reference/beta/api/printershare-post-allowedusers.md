@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c3c170c05d8dfe18a228456de26c3bbce4dabc2a
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: a40a26372457faaaa18b27778235bd8de4d60ef6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765945"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787403"
 ---
 # <a name="create-alloweduser-for-printershare"></a>Создание allowedUser для принтераShare
 
@@ -85,14 +85,12 @@ Content-length: 66
 
 ---
 
-В теле запроса укажи ссылку на объект пользователя, включив URI Microsoft Graph пользователя в поле `@odata.id` тела JSON.
+В теле запроса укажи ссылку на объект пользователя, включив в поле тела JSON Graph microsoft Graph `@odata.id` пользователя.
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

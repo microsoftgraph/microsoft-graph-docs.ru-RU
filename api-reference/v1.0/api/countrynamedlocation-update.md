@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fa684d1dc42887f636217056e30e5a0807507bef
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 16c8fdbc1acd156dc2b4886f2edc68cc676fa1bf
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434680"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787473"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление countryNamedLocation
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|countriesAndRegions|Коллекция String|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
 |displayName|String|Понятное человеку имя расположения.|
-|includeUnknownCountriesAndRegions|Логический|Значение в том случае, если IP-адреса, которые не относятся к стране или региону, должны быть включены `true` в именоваемом расположении.|
+|includeUnknownCountriesAndRegions|Boolean|Значение в том случае, если IP-адреса, которые не относятся к стране или региону, должны быть включены `true` в именоваемом расположении.|
 
 ## <a name="response"></a>Отклик
 
@@ -108,9 +108,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.countryNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 216da34bb6900d246f990529c88bc398cc1cdcc7
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1851af949207a00d3fd3429723397597bd51dce5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50775080"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787185"
 ---
 # <a name="restart-synchronizationjob"></a>Перезапуск синхронизацииJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "50775080"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -97,9 +97,7 @@ Content-type: application/json
 Ниже приведен пример отклика.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

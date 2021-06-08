@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 59080cf19cf96d82f029d3ba9513cd16a042157a
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 96b089c52e8fabacd87223795a68e1b6f011db0e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435856"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786981"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление governanceRoleAssignmentRequests
 
@@ -21,7 +21,7 @@ ms.locfileid: "50435856"
 Включить администраторов для обновления своих решений `AdminApproved` (или) по `AdminDenied` [governanceRoleAssignmentRequests,](../resources/governanceroleassignmentrequest.md) которые находятся в состоянии `PendingAdminDecision` .
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 >**Примечание:** Этот API также требует, чтобы у запрашиваемого по крайней мере одно назначение роли администратора (или) на ресурсе, к который принадлежит `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest.](../resources/governanceroleassignmentrequest.md) 
 
@@ -61,9 +61,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 | Авторизация  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-|Параметры      |Тип                   |Обязательный |Описание|
+|Parameters      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |Причина, по которой администратор принял решение.|
 |решение        |String                 |✓        |Решение администратора запроса на назначение ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied` .|
@@ -119,8 +119,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 ##### <a name="response"></a>Отклик
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

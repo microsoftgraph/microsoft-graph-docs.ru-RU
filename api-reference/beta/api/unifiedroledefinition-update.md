@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47ff9ff4c40360ddb28d5d6d344ca1d7375cc119
-ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
+ms.openlocfilehash: 4102ece8a559161e5813e175d81a62a4c7ce9843
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2021
-ms.locfileid: "52709495"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787417"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -31,7 +31,7 @@ ms.locfileid: "52709495"
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference). 
 
-|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
 | Управление устройствами | DeviceManagementRBAC.ReadWrite.All | Не поддерживается. | DeviceManagementRBAC.ReadWrite.All |
 | Каталог | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Не поддерживается.| RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
@@ -133,9 +133,7 @@ Content-type: application/json
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+  "blockType": "response"
 } -->
 
 ```http

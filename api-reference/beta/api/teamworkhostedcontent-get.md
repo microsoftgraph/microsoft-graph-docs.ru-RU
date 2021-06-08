@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be9585253f695c9fae9dddf123ad2490d9765da5
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 6317cac369ad8d7bb29ed83c7e2c5ce9a0ca5f5f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921732"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788005"
 ---
 # <a name="get-teamworkhostedcontent"></a>Get teamworkHostedContent
 
@@ -22,7 +22,7 @@ ms.locfileid: "51921732"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="permissions-for-app-icon-in-app-catalog"></a>Разрешения на значок приложения в каталоге приложений
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                      |
@@ -63,7 +63,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-bytes-of-the-hosted-content-of-the-color-icon-of-a-teams-app-in-the-catalog"></a>Пример 1. Получить в каталоге биты содержимого значка цвета приложения Teams
+### <a name="example-1-get-the-bytes-of-the-hosted-content-of-the-color-icon-of-a-teams-app-in-the-catalog"></a>Пример 1. Получите в каталоге биты содержимого иконы цвета Teams приложения
 
 #### <a name="request"></a>Запрос
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 <!-- {
@@ -120,7 +120,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-bytes-of-the-hosted-content-of-the-outline-icon-of-a-teams-app-in-the-catalog"></a>Пример 2. Получить в каталоге биты содержимого иконки контура приложения Teams
+### <a name="example-2-get-the-bytes-of-the-hosted-content-of-the-outline-icon-of-a-teams-app-in-the-catalog"></a>Пример 2. Получить в каталоге биты содержимого иконки контура приложения Teams в каталоге
 
 #### <a name="request"></a>Запрос
 
@@ -161,16 +161,14 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 Ответ содержит bytes для размещенного контента в теле. `content-type` Заглавный заглавник указывает тип содержимого, на который установлено.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.teamworkHostedContent"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: image/png
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 - [Получить значки приложения Teams](teamsappicon-get.md)
 - [Список приложений в каталоге](appcatalogs-list-teamsapps.md)

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a2e6791392330b8b2d2b59a61e2e5d84098dc9d8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9495685dda154160176279e769b3bcbae7bae0e6
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447731"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787690"
 ---
 # <a name="delete-permissiongrantpolicy"></a>Удаление permissionGrantPolicy
 
@@ -44,7 +44,7 @@ DELETE /policies/permissionGrantPolicies/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -90,9 +90,7 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 ### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy"
+  "blockType": "response"
 } -->
 
 ```http

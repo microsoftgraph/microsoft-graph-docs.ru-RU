@@ -1,35 +1,35 @@
 ---
-title: 'printJob: Cancel'
+title: 'printJob: отмена'
 description: Отмена задания печати.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4c4522ef8fb19226475758986d1245c447358095
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: b2eb7c40f1f2474752b316a412dbb4c382152741
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617019"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787515"
 ---
-# <a name="printjob-cancel"></a>printJob: Cancel
+# <a name="printjob-cancel"></a>printJob: отмена
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмена задания печати. Задания печати могут быть отменены только от имени пользователя, используя делегированные разрешения.
+Отмена задания печати. Задания печати можно отменить только от имени пользователя с помощью делегирования разрешений.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям пользователь или клиент приложения должен иметь активную универсальную подписку на печать и иметь разрешение на получение доступа к [принтеру](printer-get.md) .
+Помимо следующих разрешений, пользователь или клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение, которое предоставляет [доступ к принтеру Get.](printer-get.md)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Не поддерживается. |
+|Приложение| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /print/printers/{id}/jobs/{id}/cancel
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Текст запроса должен быть пустым.
+Тело запроса должно быть пустым.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
@@ -83,9 +83,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

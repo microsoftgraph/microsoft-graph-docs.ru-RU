@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 57f844b98da47f5063ee3aaee7534b5e242ad5d0
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 1b6e11b1f4a650755d696e5bc346f4cf369324bb
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765995"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787529"
 ---
 # <a name="create-allowedgroup-for-printershare"></a>Создание allowedGroup для принтераShare
 
@@ -91,9 +91,7 @@ Content-length: 67
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

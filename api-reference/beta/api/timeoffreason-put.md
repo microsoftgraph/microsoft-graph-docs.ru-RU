@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 247b15e3d522100ee8d286fbd01d12efcaf7ad76
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8750781b88cad2dc5ef055fed9084a6b9582f5a0
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048948"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787333"
 ---
 # <a name="replace-timeoffreason"></a>Замените timeOffReason
 
@@ -61,7 +61,7 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -100,7 +100,7 @@ Prefer: return=representation
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 

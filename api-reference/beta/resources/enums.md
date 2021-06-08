@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 81eee8c04af0016c04ec1cca76f3f996bf41d50a
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 2b44da1d94f23d3155b1eafa94c49310fc2a2569
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781053"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787571"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -357,7 +357,7 @@ ms.locfileid: "52781053"
 |приложение|
 |users|
 |devicePlatform|
-|расположение|
+|расположение;|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -397,7 +397,7 @@ ms.locfileid: "52781053"
 |все|
 |privilegedAdmin|
 |Администратор|
-|user|
+|пользователь;|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>значения includedUserTypes 
@@ -413,7 +413,7 @@ ms.locfileid: "52781053"
 
 |Member|
 |:---|
-|user|
+|пользователь;|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -706,7 +706,7 @@ ms.locfileid: "52781053"
 
 |Member|
 |:---|
-|user|
+|пользователь;|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -728,7 +728,7 @@ ms.locfileid: "52781053"
 
 |Member|
 |:---|
-|расположение|
+|расположение;|
 |приложение|
 
 ### <a name="anniversarytype-values"></a>Значения anniversaryType
@@ -900,6 +900,15 @@ ms.locfileid: "52781053"
 |солнечный|
 |unknownFutureValue|
 
+### <a name="timecardstate-values"></a>значения timeCardState
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+|unknownFutureValue|
+
 ### <a name="schedulechangestate-values"></a>значения scheduleChangeState
 
 | Member
@@ -928,14 +937,29 @@ ms.locfileid: "52781053"
 
 ### <a name="workforceintegrationsupportedentities-values"></a>значения workforceIntegrationSupportedEntities
 
+|Member|
+|:---|
+|нет|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeCard|
+|timeOffReason|
+|timeOff|
+|timeOffRequest|
+
+### <a name="confirmedby-values"></a>confirmedBy values
+
 | Member
-|:----------------------------
-|нет
-|shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|:-----------------
+| нет|
+| пользователь;|
+| manager|
+| unknownFutureValue|
 
 ### <a name="timezonestandard-values"></a>значения timeZoneStandard
 
@@ -1750,7 +1774,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |signin|
-|user|
+|пользователь;|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>значения chatMessagePolicyViolationUserActionType
@@ -1957,7 +1981,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| user          | 1     | Отправка пользователя.         |
+| пользователь;          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -2048,10 +2072,10 @@ Enum для серьезности оповещений.
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
 |boolean | Столбец Да/Нет. |
-|user | столбец персоны или группы. |
+|пользователь; | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
-|расположение | столбец расположения. |
+|расположение; | столбец расположения. |
 |геолокация | столбец геолокации. |
 |term | столбец управляемых метаданных. |
 |многоступенчатый | столбец управляемых метаданных, который принимает несколько значений. |
@@ -2078,7 +2102,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|user|
+|пользователь;|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>значения identityUserFlowAttributeDataType
@@ -2196,7 +2220,7 @@ Enum для серьезности оповещений.
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|команда      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 

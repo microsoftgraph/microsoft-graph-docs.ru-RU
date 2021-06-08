@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 887163ee813ece047c2a12abfa310ee17f1204a3
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: a252669a34cfb45246f2e182a6f2d8da8b8ffeff
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983373"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787438"
 ---
 # <a name="reportroot-getyammeractivityuserdetail"></a>reportRoot: getYammerActivityUserDetail
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983373"
 
 Получение сведений о действиях в Yammer с разбивкой по пользователям.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 - Yammer Activity.](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)
+> **Примечание:** Подробные сведения о различных представлениях и именах [отчетов см. в Microsoft 365 отчеты - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(period=
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
@@ -112,7 +112,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 #### <a name="request"></a>Запрос
 
-Если этот параметр указан, областью отчета будут действия, которые произошли `date` в указанную дату.
+Если параметр задан, отчет предоставляется в область действий, которые `date` произошли в указанную дату.
 
 <!--{
   "blockType": "request",
@@ -129,9 +129,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2
 Ниже приведен пример отклика.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "response"
 } -->
 
 ```http

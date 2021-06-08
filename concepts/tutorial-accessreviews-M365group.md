@@ -4,12 +4,12 @@ description: Используйте API обзоров доступа, чтоб�
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: ad34932926a658d498242dd168ac7fee1d2b31a1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 99f09ab4f7731a75c13977319d2ae25b80304185
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751141"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787669"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
 
@@ -18,7 +18,7 @@ ms.locfileid: "52751141"
 >[!NOTE]
 >Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые условия
 
 Для завершения этого руководства необходимы следующие ресурсы и привилегии:
 
@@ -46,6 +46,10 @@ ms.locfileid: "52751141"
 ## <a name="step-1-create-a-test-user-in-your-tenant"></a>Шаг 1. Создание тестового пользователя в клиенте
 
 ### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-createUser"
+}-->
 
 ```http
 POST /users
@@ -64,6 +68,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -83,6 +92,10 @@ Content-type: application/json
 Приглашение гостевого пользователя с адресом **электронной почты john@tailspintoys.com** клиенту.
 
 ### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-inviteguest"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -97,6 +110,11 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.invitation"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -118,10 +136,15 @@ Content-type: application/json
 3. Добавьте john@tailspintoys.com в качестве участника группы. Их доступ к группе является предметом рассмотрения вами, владельцем группы.
 
 ### <a name="request"></a>Запрос
+
 В этом вызове замените:
 + `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` с **вашим id**. Чтобы получить свой **id,** `GET` запустите `https://graph.microsoft.com/beta/me` .
 + `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` с **john@tailspintoys.com**'s **id** из ответа в шаге 2.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -145,6 +168,12 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -175,11 +204,16 @@ Content-type: application/json
 + Применить **действие removeAccessApplyAction** для отклонить гостевых пользователей. Это удаляет членство в группе отклоненного гостя. Гостевой пользователь по-прежнему может войти в клиент.
 
 ### <a name="request"></a>Запрос
+
 В этом вызове замените следующее:
 
 + `c9a5aff7-9298-4d71-adab-0a222e0a05e4` с **ид пользователя,** назначенного в качестве резервного рецензента. Это **id из** ответа в шаге 1.
 + Значение **startDate с** сегодняшней датой и **значением endDate** с датой один год с даты начала. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -247,6 +281,11 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -321,15 +360,27 @@ Content-type: application/json
 В следующем запросе перечислены все экземпляры определения обзора доступа. Если клиент тестирования содержит другие группы Microsoft 365 с гостевых пользователей, этот запрос возвращает один экземпляр для каждой Microsoft 365 группы с гостевых пользователей в клиенте.
 
 ### <a name="request"></a>Запрос
+
 В этом вызове `c22ae540-b89a-4d24-bac0-4ef35e6591ea` замените **id** определения обзора доступа, возвращенного в шаге 4.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
 ### <a name="response"></a>Отклик
+
 В этом ответе область включает группу с **id** (группа маркетинговой кампании `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **Feelgood,** созданная в шаге 3), так как у нее есть гость.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -357,10 +408,15 @@ Content-type: application/json
 Получите решения, принятые в случае проверки доступа.
 
 ### <a name="request"></a>Запрос
+
 В этом вызове:
 + `c22ae540-b89a-4d24-bac0-4ef35e6591ea`Замените **id определения** обзора доступа, возвращенного в шаге 4.
 + `6392b1a7-9c25-4844-83e5-34e23c88e16a`Замените **id экземпляра** обзора доступа, возвращенного в шаге 5.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
 ```
@@ -369,6 +425,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 В следующем ответе показано решение, принятое для экземпляра обзора.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -422,14 +484,22 @@ Content-type: application/json
 ### <a name="delete-the-microsoft-365-group"></a>Удаление Microsoft 365 группы
 
 #### <a name="request"></a>Запрос
+
 В этом вызове замените id маркетинговой кампании `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` **Feelgood** Microsoft 365 группы. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
 ```
 
 #### <a name="response"></a>Отклик
-
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
@@ -440,40 +510,65 @@ Content-type: text/plain
 В этом вызове `c22ae540-b89a-4d24-bac0-4ef35e6591ea` замените **id** определения обзора доступа. Так как определение расписания проверки доступа является планом обзора доступа, удаление определения удаляет параметры, экземпляры и решения, связанные с обзором доступа.
 
 #### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
 
 #### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
+
 ### <a name="remove-the-guest-user"></a>Удаление гостевого пользователя
 
 В этом вызове `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` замените **id** гостевого пользователя john@tailspintoys.com.
 
 #### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
 ```
 
 #### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### <a name="delete-the-test-user"></a>Удаление тестового пользователя
+В этом вызове `c9a5aff7-9298-4d71-adab-0a222e0a05e4` замените **id** тестового пользователя.
 
 #### <a name="request"></a>Запрос
-В этом вызове `c9a5aff7-9298-4d71-adab-0a222e0a05e4` замените **id** тестового пользователя.
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_guestuser"
+}-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
 ```
 
 #### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -482,7 +577,7 @@ Content-type: text/plain
 
 Поздравляем! Вы создали обзор доступа для всех гостевых пользователей в Microsoft 365 группах в клиенте и запланирование ежеквартов для оценки и аттестации доступа гостевых пользователей. Владельцы групп будут пересматривать доступ во время этих циклов, выбирая утверждение или отказ в доступе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 + [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 + [Настройка области определения обзора доступа с помощью API microsoft Graph](/graph/accessreviews-scope-concept)

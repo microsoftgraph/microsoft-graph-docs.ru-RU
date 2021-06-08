@@ -1,26 +1,26 @@
 ---
-title: 'вызов: отклонено'
-description: Разрешить интерфейсу Bot отклонить входящий звонок.
+title: 'вызов: отклонить'
+description: Включить бот, чтобы отклонить входящий вызов.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bc6c91368d262972918654ea860cb8f03844c359
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1355a826ab3bfaeea3392e20a6e40c71a279ca58
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073371"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787494"
 ---
-# <a name="call-reject"></a>вызов: отклонено
+# <a name="call-reject"></a>вызов: отклонить
 
 Пространство имен: microsoft.graph
 
-Разрешить интерфейсу Bot отклонить входящий звонок. Запрос входящего вызова может быть приглашенным из участника группы или однорангового вызова. При получении приглашения на вызов группы в уведомлении будут содержаться параметры **чатинфо** и **митингинфо** .
+Включить бот, чтобы отклонить входящий вызов. Входящий запрос может быть приглашением от участника группового звонка или одноранговых вызовов. Если приглашение на групповой вызов получено, уведомление будет содержать **параметры chatInfo** и **meetingInfo.**
 
-Ожидается, что Bot отвечает или отклоняет вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.
+Ожидается, что бот ответит или отклоняет вызов до времени вызова. Текущее значение времени времени — 15 секунд.
 
-Этот API не завершает существующие вызовы, на которые уже получены ответы. Чтобы завершить вызов, используйте [Вызов delete](../api/call-delete.md) .
+Этот API не заканчивает существующие вызовы, которые уже ответили. Чтобы [закончить](../api/call-delete.md) вызов, используйте вызов удаления.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,16 +48,16 @@ POST /communications/calls/{id}/reject
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|reason|Строка|Причина отклонения. Возможные значения: `None` `Busy` и `Forbidden` |
-|callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https` .|
+|reason|String|Причина отказа. Возможные значения: `None` и `Busy``Forbidden` |
+|callbackUri|String|Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
-В следующих примерах показано, как вызывать этот API.
+В следующих примерах покажите, как вызвать этот API.
 
-### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>Пример 1: отклонение входящего вызова с причиной "занято"
+### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>Пример 1. Отклонение входящих вызовов по причине "занят"
 #### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,14 +97,13 @@ Content-Length: 24
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>Пример 2: отклонение входящего вызова с причиной "нет"
+### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>Пример 2. Отклонение входящих вызовов по причине "Нет"
 
 ##### <a name="notification---incoming"></a>Уведомление — входящий
 
@@ -197,14 +196,13 @@ Content-Length: 24
 ##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a>Уведомление удалено
+##### <a name="notification---deleted"></a>Уведомление — удалено
 
 ```http
 POST https://bot.contoso.com/api/calls

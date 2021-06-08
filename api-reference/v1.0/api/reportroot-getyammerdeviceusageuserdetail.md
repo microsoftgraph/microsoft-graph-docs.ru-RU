@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6be6b757daf9f9c752b3ce99f885aff1608f4a13
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 140d5cd4ab56d8509ebd411b99c7a08de1ac44da
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983323"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787774"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983323"
 
 Получение сведений об использовании устройств с Yammer с разбивкой по пользователям.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании устройств Yammer.](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов - Yammer устройства.](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -80,7 +80,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Used iPhone" (Используемый телефон iPhone);
 - "Used iPad" (Используемое устройство iPad);
 - "Used Others" (Другое используемое);
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(peri
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
@@ -114,7 +114,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 #### <a name="request"></a>Запрос
 
-Если этот параметр вызван, областью действия отчета является `date` использование на заданную дату.
+Если с параметром вызвано сообщение, отчет будет использовать `date` в заданную дату.
 
 <!--{
   "blockType": "request",
@@ -131,9 +131,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(date
 Ниже приведен пример отклика.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.report"
+  "blockType": "response"
 } -->
 
 ```http

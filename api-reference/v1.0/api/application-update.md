@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b5e2a6b8a5d4615f545689d21191730a589e1b35
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 027735c3bbffe4baf16e5a0f2fb94f2bfb192343
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131448"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787830"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -19,7 +19,7 @@ ms.locfileid: "50131448"
 Обновление свойств объекта [приложения.](../resources/application.md)
 
 > [!IMPORTANT]
-> Использование метода PATCH для настройки [**passwordCredential**](../resources/passwordcredential.md) не поддерживается. Используйте методы [addPassword](./application-addpassword.md) и [removePassword](./application-removepassword.md) для обновления пароля приложения.
+> Использование метода PATCH для настройки [**passwordCredential**](../resources/passwordcredential.md) не поддерживается. Чтобы обновить пароль для приложения, используйте методы [addPassword](./application-addpassword.md) и [removePassword.](./application-removepassword.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,10 +50,10 @@ PATCH /applications/{id}
 | api                     | [apiApplication](../resources/apiapplication.md)                            | Задает параметры приложения, реализующего веб-API.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | appRoles                | Коллекция [appRole](../resources/approle.md)                               | Коллекция ролей приложения, которые могут быть объявлены приложением. Эти роли могут назначаться пользователям, группам или субъектам-службам. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                |
 | displayName             | String                                                                      | Отображаемое имя приложения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| groupMembershipClaims   | String                                                                      | Настраивает утверждение **групп,** выданного пользователем или маркером доступа OAuth 2.0, которое ожидает приложение. Чтобы задать этот атрибут, используйте одно из следующих допустимых строковых значений.<ul><li>`None`</li><li>`SecurityGroup`: для групп безопасности и ролей Azure Active Directory (Azure AD)</li><li>`All` — предоставит все группы безопасности, группы рассылки и роли каталога Azure AD, членом которых является выполнивший вход пользователь</li></ul>                                                                                                                       |
+| groupMembershipClaims   | String                                                                      | Настраивает **требования групп,** выдаваемые пользователем или маркером доступа OAuth 2.0, который ожидает приложение. Чтобы задать этот атрибут, используйте одно из следующих допустимых строковых значений.<ul><li>`None`</li><li>`SecurityGroup`: Для групп безопасности и ролей Azure Active Directory (Azure AD)</li><li>`All` — предоставит все группы безопасности, группы рассылки и роли каталога Azure AD, членом которых является выполнивший вход пользователь</li></ul>                                                                                                                       |
 | identifierUris          | Коллекция String                                                           | URI, идентифицирующие приложение в клиенте Azure AD или в проверенном личном домене, если приложение является мультитенантным. Дополнительные сведения см. в разделе [Объекты приложения и субъекта-службы](/azure/active-directory/develop/app-objects-and-service-principals). Для выражений фильтра в случае многозначных свойств требуется оператор *any*. Значение null не допускается.                                                                                                                                                 |
-| info                    | [informationalUrl](../resources/informationalurl.md)                        | Основные сведения профиля приложения, такие как маркетинг, поддержка приложения, условия обслуживания и URL-адреса заявлений о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в заявлении о добавлении условий обслуживания и конфиденциальности для [зарегистрированных приложений Azure AD.](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)                                                                                                                       |
-| isFallbackPublicClient  | Boolean                                                                     | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию— это значит, что типом приложения для отката является `false` конфиденциальный клиент, например веб-приложение. Существуют определенные сценарии, в которых Azure AD не удается определить тип клиентского приложения (например, поток [ROPC,](https://tools.ietf.org/html/rfc6749#section-4.3) в котором он настроен без указания URI перенаправления). В таких случаях Azure AD интерпретирует тип приложения на основе значения этого свойства. |
+| info                    | [informationalUrl](../resources/informationalurl.md)                        | Основные сведения о профиле приложения, такие как маркетинг приложения, поддержка, условия службы и URL-адреса заявлений о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в [сообщении Add Terms of service and privacy statement for registered Azure AD apps.](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)                                                                                                                       |
+| isFallbackPublicClient  | Boolean                                                                     | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию означает, что тип приложения-отката — это `false` конфиденциальный клиент, например веб-приложение. Существуют определенные сценарии, в которых Azure AD не может определить тип клиентского приложения (например, поток [ROPC,](https://tools.ietf.org/html/rfc6749#section-4.3) где он настроен без указания URI перенаправления). В этих случаях Azure AD будет интерпретировать тип приложения в зависимости от значения этого свойства. |
 | keyCredentials          | Коллекция [keyCredential](../resources/keycredential.md)                   | Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | Основной логотип для приложения. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | optionalClaims          | optionalClaims                                                              | Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные [сведения см. в дополнительных](/azure/active-directory/develop/active-directory-optional-claims) утверждениях.                                                                                                                                                                                                                                     |
@@ -67,7 +67,7 @@ PATCH /applications/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и не возвращает ничего `204 No Content` в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и ничего не возвращает `204 No Content` в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -109,9 +109,7 @@ Content-length: 72
 ##### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

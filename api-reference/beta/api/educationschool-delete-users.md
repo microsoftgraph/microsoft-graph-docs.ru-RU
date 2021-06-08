@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2db9f99f9fa9a3ebe6209523dbf608e8ac7e2894
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b2954609e6f61b94bb71b04a53b483adabb737ce
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951424"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787072"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Удаление educationUser из educationSchool.
 
@@ -28,7 +28,7 @@ ms.locfileid: "50951424"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Application                            | EduRoster.ReadWrite.All                     |
+| Приложение                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -91,9 +91,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 Ниже приведен пример ответа. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 
 ```http

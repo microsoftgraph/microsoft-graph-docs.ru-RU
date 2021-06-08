@@ -6,19 +6,18 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: С помощью этого API вы можете получить содержимое элемента в определенном формате.
 doc_type: apiPageType
-ms.openlocfilehash: 722b90ddec082e6b415d532e81d67bfe415d68e6
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 38b87b43f137fe291be31d98d97ea9a9448e6c9a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240320"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787809"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
 Пространство имен: microsoft.graph
 
-С помощью этого API вы можете получить содержимое элемента в определенном формате.
-Не все файлы можно преобразовать в любые форматы.
+С помощью этого API вы можете получить содержимое элемента в определенном формате. Не все файлы можно преобразовать в любые форматы.
 
 Сведения о том, как скачать элемент в его исходном формате, см. в статье о [скачивании содержимого элемента](driveitem-get-content.md).
 
@@ -92,7 +91,7 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 URL-адреса, прошедшие предварительную аутентификацию, действуют только в течение небольшого периода времени (несколько минут) и не требуют заголовка `Authorization` для доступа.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

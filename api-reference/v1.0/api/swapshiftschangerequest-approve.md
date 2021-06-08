@@ -1,22 +1,22 @@
 ---
-title: 'Свапшифтсчанжерекуест: утверждение'
+title: 'swapShiftsChangeRequest: утверждение'
 description: Утверждение запроса на смену замены.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83da14797ddbb6747cf6074390dabf8a8968e419
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed0cb01e2244b8b103933bccff793c10bbdb56c7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037943"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787100"
 ---
-# <a name="swapshiftschangerequest-approve"></a>Свапшифтсчанжерекуест: утверждение
+# <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest: утверждение
 
 Пространство имен: microsoft.graph
 
-Утверждение объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
+Утверждение [объекта swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48037943"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение утверждения.|
+|message|String|Пользовательское сообщение утверждения.|
 
 ## <a name="response"></a>Отклик
 
@@ -106,8 +106,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

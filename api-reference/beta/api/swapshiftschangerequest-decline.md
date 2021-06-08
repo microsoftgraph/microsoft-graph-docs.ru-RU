@@ -1,24 +1,24 @@
 ---
-title: 'Свапшифтсчанжерекуест: отклонить'
-description: Отклонить запрос на замену.
+title: 'swapShiftsChangeRequest: снижение'
+description: Отклонение запроса на смену замены.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e3e2e0a64b06c7316e45269bfb92d2525feb10c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0e94566fa87b9cd86bad56660db979650294ce49
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976806"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787197"
 ---
-# <a name="swapshiftschangerequest-decline"></a>Свапшифтсчанжерекуест: отклонить
+# <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest: снижение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отклонить объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
+Отклонение [объекта swapShiftsChangeRequest.](../resources/swapshiftschangerequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение об отклонении.|
+|message|String|Пользовательское сообщение об отклонении.|
 
 ## <a name="response"></a>Отклик
 
@@ -102,9 +102,7 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

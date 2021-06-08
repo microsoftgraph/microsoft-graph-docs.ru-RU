@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ce507c989ee842040787c77f772d6188d9444a03
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 650cbc18aeb0dc28ef732c4065aa67d19f1a710f
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50773559"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787171"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -27,7 +27,7 @@ ms.locfileid: "50773559"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|Когда параметр будет проигнорирован, а ранее сохраненные учетные данные (если таковые есть) будут `true` `credentials` проверены. |
+|useSavedCredentials|Логический|Когда параметр будет проигнорирован, а ранее сохраненные учетные данные (если таковые есть) будут `true` `credentials` проверены. |
 |учетные данные|[синхронизацияSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) коллекция|Учетные данные для проверки. Игнорируется при `useSavedCredentials` параметре `true` .|
 
 ## <a name="response"></a>Отклик
@@ -95,9 +95,7 @@ Content-length: 218
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

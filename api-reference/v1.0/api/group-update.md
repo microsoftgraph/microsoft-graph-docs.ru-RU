@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 36b8a21589bdfd1687939eb636bf5de254d37bab
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 89ba1ec44f41abe1309355c47daeabdd6603ca25
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680740"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787564"
 ---
 # <a name="update-group"></a>Update group
 
@@ -42,7 +42,7 @@ PATCH /groups/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -56,7 +56,7 @@ PATCH /groups/{id}
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты.|
 |mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
 |securityEnabled|Логический|Указывает, является ли эта группа группой безопасности. |
-|visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
+|visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (закрытая), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
 
 > **Примечание.**
 >
@@ -122,9 +122,7 @@ Content-length: 211
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 9a3d198c225633ebeecf7de8d5c069e49c014eeb
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 2b7672d18f0af66b23489b5fb0282258d12241c8
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771430"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787781"
 ---
 # <a name="create-alloweduser-for-printershare"></a>Создание allowedUser для принтераShare
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "50771430"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -95,8 +95,7 @@ Content-length: 46
 ### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "truncated": true
 }
 -->
 ```http

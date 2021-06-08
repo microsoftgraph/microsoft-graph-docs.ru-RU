@@ -1,24 +1,24 @@
 ---
-title: 'Тимеоффрекуест: отклонить'
-description: Отклонить объект тимеоффрекуест.
+title: 'timeOffRequest: снижение'
+description: Отклонение объекта timeoffrequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9fb4432cc9cf05689ec26a6b8ebe8b0447f33ca6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0f745bea1f16680861c92fa8b4a5c18025c425da
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981363"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787321"
 ---
-# <a name="timeoffrequest-decline"></a>Тимеоффрекуест: отклонить
+# <a name="timeoffrequest-decline"></a>timeOffRequest: снижение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отклонить объект [тимеоффрекуест](../resources/timeoffrequest.md) .
+[Отклонение объекта timeoffrequest.](../resources/timeoffrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "48981363"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения | Schedule. ReadWrite. ALL *  |
+|Приложение | Schedule.ReadWrite.All*  |
 
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
+>\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type | приложение — JSON. Обязательно.|
+| Content-Type | application-json. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,7 +53,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение об отклонении.|
+|message|String|Пользовательское сообщение об отклонении.|
 
 ## <a name="response"></a>Отклик
 
@@ -61,7 +61,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 
 ## <a name="examples"></a>Примеры
 
-Ниже приведен пример вызова этого API.
+Ниже приводится пример вызова этого API.
 
 ### <a name="request"></a>Запрос
 
@@ -104,9 +104,7 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6c852ae5f49ddc928e83c08d91be7c4d1be86265
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4c93aeab74a8ef4191bd66354144e6746a5b5abf
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433854"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787585"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Удаление publishedResource из onPremisesAgentGroup
 
@@ -42,9 +42,9 @@ DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -91,9 +91,7 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "blockType": "response"
 } -->
 
 ```http

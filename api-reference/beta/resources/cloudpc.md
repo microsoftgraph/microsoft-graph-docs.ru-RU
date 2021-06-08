@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c5fc858e29abf7d649b32991d9e30ce64cc0b632
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 232ad6a8de6634f028ec59080114110c902ce184
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721616"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52787501"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
@@ -40,24 +40,27 @@ ms.locfileid: "50721616"
 |managedDeviceId|String|ID устройства Intune облачного компьютера.|
 |managedDeviceName|String|Имя устройства Intune облачного КОМПЬЮТЕРА.|
 |provisioningPolicyId|String|ID политики обеспечения облачного компьютера.|
+|provisioningPolicyName|String|Политика обеспечения, применяемая при обеспечении облачных компьютеров.|
+|onPremisesConnectionName|String|Локальное подключение, применяемого при обеспечении облачных компьютеров.|
 |servicePlanId|String|ID плана службы облачного КОМПЬЮТЕРА.|
 |servicePlanName|String|Имя плана службы облачного КОМПЬЮТЕРА.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Состояние облачного КОМПЬЮТЕРА. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Сведения о состоянии облачного КОМПЬЮТЕРА.|
 |userPrincipalName|String|Основное имя пользователя (UPN) пользователя, назначенного на облачный КОМПЬЮТЕР.|
 |lastModifiedDateTime|DateTimeOffset|Последняя измененная дата и время облачного компьютера. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|gracePeriodEndDateTime|DateTimeOffset|Дата и время окончания льготного периода и переделки/депрограммивинга. Требуется только в том случае, если состояние `inGracePeriod` . Timestamp отображается в формате ISO 8601 и Скоординированное универсальное время (UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ### <a name="cloudpcstatus-values"></a>значения cloudPcStatus
 
 |Member|Описание|
 |:---|:---|
-|notProvisioned|Облачный КОМПЬЮТЕР не был предусмотрен.|
-|подготовка|Подготовка облачного компьютера продолжается.|
-|provisioned|Облачный компьютер является предварительным и может быть доступ к конечным пользователям.|
-|обновление|В настоящее время идет процесс повторного окантовки облачного компьютера.|
-|inGracePeriod|Облачный компьютер находится в периоде отсрочки на одну неделю до его деразвения.|
-|deprovisioning|Облачный КОМПЬЮТЕР развяжен.|
-|не удалось|Операция на облачном компьютере не удалась.|
+|notProvisioned|Этот Cloud PC не был предварительно.|
+|подготовка|Cloud PC подготовка продолжается.|
+|provisioned|Подготовка Cloud PC и доступ к нему могут получить конечные пользователи.|
+|обновление|Cloud PC продолжается.|
+|inGracePeriod|Срок Cloud PC находится в периоде отсрочки за одну неделю до его деразвения.|
+|deprovisioning|The Cloud PC deprovisioning.|
+|не удалось|Операция на Cloud PC не удалась.|
 
 ## <a name="relationships"></a>Связи
 
@@ -84,10 +87,13 @@ ms.locfileid: "50721616"
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "provisioningPolicyId": "String",
+  "provisioningPolicyName": "String",
+  "onPremisesConnectionName": "String",
   "servicePlanId": "String",
   "servicePlanName": "String",
   "status": "String",
   "userPrincipalName": "String",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "gracePeriodEndDateTime": "String (timestamp)"
 }
 ```
