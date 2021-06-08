@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: efa4cca2c8413abb2a3ae65995973f4d3d5bc4db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 47f81a25fc29f6a7eb0bb79c0f4d84e37825183a
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436571"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786827"
 ---
 # <a name="domain-forcedelete"></a>домен: forceDelete
 
@@ -20,7 +20,7 @@ ms.locfileid: "50436571"
 
 Удаляет домен с помощью асинхронной операции.
 
-Перед [вызовом forceDelete](domain-forcedelete.md)необходимо обновить или удалить ссылки на **Exchange** в качестве службы подготовка.
+Перед [вызовом forceDelete](domain-forcedelete.md)необходимо обновить или удалить ссылки на Exchange **в** качестве службы обеспечения.
 
 В рамках этой операции выполняются следующие действия:
 
@@ -63,13 +63,13 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Параметр отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователю не будет разрешено войти.<br>*True* (по умолчанию) — учетные записи пользователей, переименованные в рамках этой операции, отключены.<br>*False* . Учетные записи пользователей, переименованные в рамках этой операции, не отключены. |
+|disableUserAccounts|Логический| Параметр отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователю не будет разрешено войти.<br>*True* (по умолчанию) — учетные записи пользователей, переименованные в рамках этой операции, отключены.<br>*False* . Учетные записи пользователей, переименованные в рамках этой операции, не отключены. |
 
 ## <a name="response"></a>Отклик
 
@@ -114,9 +114,7 @@ Content-length: 33
 ### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

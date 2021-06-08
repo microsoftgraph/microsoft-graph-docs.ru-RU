@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 658682377ed2539894f232df32748bd6073cd3e4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3735532ec12a1b11fad67aa6f1a19fe629324b62
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437853"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786582"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/answer
 | callbackUri         | String                                                                                                                               | Позволяет ботам предоставлять определенный URI вызова для параллельного вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` . |
 | acceptedModalities  | Коллекция строк                                                                                                                    | Список модальных способов для приемки. Возможное значение: `audio` `video` , `videoBasedScreenSharing` . Требуется для ответа на вызов.                                                                                      |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательно.                                                                                                                                                                                 |
-| participantCapacity | Целое                                                                                                                                  | Число участников, которые приложение может обрабатывать для вызова, для сценария записи на основе политики [Teams.](/MicrosoftTeams/teams-recording-policy)                                                     |
+| participantCapacity | Целое                                                                                                                                  | Число участников, которые приложение может обрабатывать для вызова, для Teams [сценарий](/MicrosoftTeams/teams-recording-policy) записи на основе политики.                                                     |
 
 ## <a name="response"></a>Отклик
 Этот метод возвращает код `202 Accepted` ответа.
@@ -113,9 +113,7 @@ Content-Length: 211
 Ниже приведен пример отклика. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -223,9 +221,7 @@ Content-Type: application/json
 
 ##### <a name="response"></a>Отклик
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -392,9 +388,7 @@ Content-Type: application/json
 ##### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d5ce888c2b4a32e175ddc69e2edc6f2df0fc0411
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 13e4117325d7a221fe2e62e4d34ddf1165d1b213
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044552"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786799"
 ---
 # <a name="update-reviewsetquery"></a>Обновление обзораSetQuery
 
@@ -103,9 +103,7 @@ Content-type: application/json
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.reviewSetQuery"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 0e6a95d2d78bd6215685f35324994afa817ce836
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6f2ad28c6e0abe194cb7a11f14b43f1567fa7878
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049732"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786741"
 ---
 # <a name="update-serviceprincipal"></a>Обновление servicePrincipal
 
@@ -113,11 +113,9 @@ Content-length: 391
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "blockType": "response"
 } -->
 
 ```http

@@ -1,26 +1,26 @@
 ---
-title: 'Call: Чанжескриншарингроле'
-description: Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.
+title: 'вызов: changeScreenSharingRole'
+description: Разрешить приложениям обмениваться контентом экрана с участниками группового вызова.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d030adbe4ccaf4d0f92e69a402b6a089d92ba211
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5239d0c2929f43d457253268d190c1ae68e87870
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959780"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786575"
 ---
-# <a name="call-changescreensharingrole"></a>Call: Чанжескриншарингроле
+# <a name="call-changescreensharingrole"></a>вызов: changeScreenSharingRole
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.
+Разрешить приложениям обмениваться контентом экрана с участниками группового вызова.
 
-> **Примечание:** Это поддерживается только для звонков групп, использующих App-Hosted мультимедиа.
+> **Примечание:** Это поддерживается только для групповых вызовов, которые используют App-Hosted Media.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "48959780"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Calls.AccessMedia.All                       |
+| Приложение                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,10 +50,10 @@ POST /communications/calls/{id}/changeScreenSharingRole
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|role|String|Возможные значения: "средство просмотра", "общий доступ"|
+|role|String|Возможные значения: "зритель", "sharer"|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.
+В случае успешной работы этот метод возвращает код ответа, и все участники `202 Accepted` получат обновление реестра.
 
 ## <a name="example"></a>Пример
 
@@ -98,15 +98,13 @@ Content-Length: 24
 Ниже приведен пример отклика. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Уведомление о подсписке, обновленный при отправке участником демонстрации экрана общего видео
-Обратите внимание на `direction: sendOnly` свойство в потоке мультимедиа.
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Уведомление — список обновляется с помощью видео отправки участниками совместного доступа к экранам
+Обратите внимание `direction: sendOnly` на свойство в потоке мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls

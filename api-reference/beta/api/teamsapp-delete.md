@@ -1,16 +1,16 @@
 ---
 title: Удаление teamsApp
-description: 'Удаление приложения Teams из каталога приложений организации (Каталог приложений клиента). '
+description: 'Удалите Teams приложения из каталога приложений организации (каталог приложений клиента). '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bbc8d0962a1b03d9b113fd81f8bb3ae49655dcb1
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 34e9e7a1f8e98eda66bf34950c9d7f0b9cac7d6e
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606813"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786701"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -20,20 +20,20 @@ ms.locfileid: "49606813"
 
 <!-- markdownlint-disable MD001 -->
 
-Удаление [приложения](../resources/teamsapp.md) из каталога приложений организации (Каталог приложений клиента). Чтобы удалить приложение, свойство **distributionMethod** для приложения должно иметь значение `organization` .
+Удаление [приложения из](../resources/teamsapp.md) каталога приложений организации (каталога приложений клиента). Чтобы удалить приложение, необходимо задать свойство **distributionMethod** для приложения `organization` .
 
-Вы также можете использовать этот API для удаления отправленного приложения из процесса проверки.
+Этот API также можно использовать для удаления отправленного приложения из процесса проверки.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 >**Примечание:** Только глобальные администраторы могут вызывать этот API. 
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированное (рабочая или учебная учетная запись) | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.|
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ ms.locfileid: "49606813"
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-Чтобы удалить приложение, которое было отправлено, но еще не утверждено:
+Удаление приложения, которое было отправлено, но не утверждено:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -62,7 +62,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 Не указывайте текст запроса для этого метода.
 
->**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./appcatalogs-list-teamsapps.md) , для ссылки на приложение, которое вы хотите удалить. Не используйте идентификатор из манифеста пакета приложения ZIP.
+>**Примечание:** Используйте ID, возвращенный из вызова опубликованных приложений [Списка,](./appcatalogs-list-teamsapps.md) для ссылки на приложение, которое вы хотите удалить. Не используйте ID из манифеста пакета почтовых приложений.
 
 ## <a name="response"></a>Отклик
 
@@ -106,9 +106,7 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http

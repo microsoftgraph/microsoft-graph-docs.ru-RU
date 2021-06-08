@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 21789c048ee18fd604e44110bea7e995c891b17f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3bee140093a74f335d9316d8785189350ae29f19
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772950"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786806"
 ---
 # <a name="update-legalhold"></a>Обновление legalHold
 
@@ -106,9 +106,7 @@ Content-length: 295
 ### <a name="response"></a>Отклик
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.legalHold"
+  "blockType": "response"
 }
 -->
 

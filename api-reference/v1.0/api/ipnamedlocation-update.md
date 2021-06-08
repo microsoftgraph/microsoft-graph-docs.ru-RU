@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6bd0c99094741b9d015ec5878afa819fe8794889
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: aaaacbda839d3296be0621b3294b85ddbe3c63b4
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051356"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786673"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление ipNamedlocation
 
@@ -51,7 +51,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|Понятное человеку имя расположения.|
 |ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC5962.|
-|isTrusted|Логический|Значение, если `true` это расположение явно доверяется.|
+|isTrusted|Boolean|Значение, если `true` это расположение явно доверяется.|
 
 ## <a name="response"></a>Отклик
 
@@ -113,9 +113,7 @@ Content-type: application/json
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ipNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

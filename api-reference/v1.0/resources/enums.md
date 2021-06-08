@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: b6bffb41090b9c9beffd4e559256cb519870eeb2
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 0905b424a69d1214c65a39873595192b38303787
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241158"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786618"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -35,7 +35,7 @@ ms.locfileid: "52241158"
 
 |Member|
 |:---|
-|расположение|
+|расположение;|
 |приложение|
 
 ### <a name="fido2restrictionenforcementtype-values"></a>значения fido2RestrictionEnforcementType
@@ -56,7 +56,7 @@ ms.locfileid: "52241158"
 
 |Member|
 |:---|
-|пользователь|
+|пользователь;|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения authenticationMethodState
@@ -350,7 +350,7 @@ ms.locfileid: "52241158"
 |Member|
 |:---|
 |signin|
-|пользователь|
+|пользователь;|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>значения riskDetectionTimingType
@@ -436,6 +436,26 @@ ms.locfileid: "52241158"
 |trafficCone|
 |пин-код|
 |солнечный|
+|unknownFutureValue|
+
+### <a name="workforceintegrationencryptionprotocol-values"></a>значения workforceIntegrationEncryptionProtocol
+
+| Member
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### <a name="workforceintegrationsupportedentities-values"></a>значения workforceIntegrationSupportedEntities
+
+|Member|
+|:---|
+|нет|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
 |unknownFutureValue|
 
 ### <a name="timezonestandard-values"></a>значения timeZoneStandard
@@ -615,7 +635,7 @@ ms.locfileid: "52241158"
 | Member
 |:---------
 | текст
-| html
+| HTML
 
 
 ### <a name="locationtype-values"></a>Значения locationType
@@ -653,10 +673,10 @@ ms.locfileid: "52241158"
 | doNotForward
 | followUp
 | fyi
-| вперед
+| forward
 | noResponseNecessary
 | read
-| ответ
+| reply
 | replyToAll
 | обзор
 
@@ -722,7 +742,7 @@ ms.locfileid: "52241158"
 | Автоматически
 | noPreview
 | checklist
-| (описание)
+| description
 | справочник
 
 
@@ -784,7 +804,7 @@ ms.locfileid: "52241158"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1135,7 +1155,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Угроза почты.            |
+| mail   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1150,7 +1170,7 @@ Enum для серьезности оповещений.
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
-| спам               | 1     | Угроза нежелательной почты.       |
+| уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
 | вредоносная программа            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4      | Член-часовой. |
@@ -1167,7 +1187,7 @@ Enum для серьезности оповещений.
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | неопределяемая     | 0     | Еще не знаю.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| пользователь;          | 1     | Отправка пользователя.         |
 | администратор | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения threatAssessmentResultType
@@ -1375,7 +1395,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| String                |
+| Строка                |
 | boolean               |
 | int64                 |
 | stringCollection      |
@@ -1458,7 +1478,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|пользователь|
+|пользователь;|
 |приложение|
 |system|
 |unknownFutureValue|

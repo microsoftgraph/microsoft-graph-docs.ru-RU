@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 769ebef6e056a9b2e345d7afad772f8893b50dda
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: ec275176c609218eabe7bf15f3a99c162930a5ed
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703498"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786631"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Список accessReviewScheduleDefinition
 
@@ -30,7 +30,7 @@ ms.locfileid: "52703498"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
  В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. См. роль [обзора доступа и проверки авторизации разрешений приложений.](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)
 
@@ -57,11 +57,11 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 
 |Значение|Описание|
 |:---     |:---       |
-|`/groups`  |Список всех accessReviewScheduleDefinition в отдельных группах (исключает определения, Microsoft 365 группы с гостевых пользователей).|
-|`/groups/{group id}`  |Список всех accessReviewScheduleDefinition в определенной группе (исключает определения, Microsoft 365 группы с гостевых пользователей).|
-|`./members`  |Список всех accessReviewScheduleDefinition, Microsoft 365 групп с гостевых пользователей.|
-|`accessPackageAssignments`  |Список всех accessReviewScheduleDefinition в пакете доступа.|
-|`roleAssignmentScheduleInstances`  |Список всех accessReviewScheduleDefinition для глав служб, присвоенных привилегированной роли.|
+|/groups  |Список всех accessReviewScheduleDefinition в отдельных группах (исключает определения, Microsoft 365 группы с гостевых пользователей).|
+|/groups/{group id}  |Список всех accessReviewScheduleDefinition в определенной группе (исключает определения, Microsoft 365 группы с гостевых пользователей).|
+|./members  |Список всех accessReviewScheduleDefinition, Microsoft 365 групп с гостевых пользователей.|
+|accessPackageAssignments  |Список всех accessReviewScheduleDefinition в пакете доступа.|
+|roleAssignmentScheduleInstances  |Список всех accessReviewScheduleDefinition для глав служб, присвоенных привилегированной роли.|
 
 Параметр `$filter` запроса не поддерживается в **accessReviewInactiveUserQueryScope** или **principalResourceMembershipScope.**
 
@@ -267,7 +267,7 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 - [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 

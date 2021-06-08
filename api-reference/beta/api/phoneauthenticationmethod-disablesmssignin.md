@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: disableSmsSignIn'
-description: Отключение sms-регистрации для мобильного телефона
+description: Отключение SMS для мобильного телефона
 localization_priority: Normal
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e4c55d5765108d7878d95712e9ea350e1b9d364
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 00141db043825d96611eaae156adb2bbf2e48503
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957475"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786476"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
 
@@ -18,13 +18,13 @@ ms.locfileid: "50957475"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отключение sms-регистрации для существующего `mobile` номера телефона. 
+Отключить SMS вход для существующего `mobile` номера телефона. 
 
->**Примечание:** Номер больше не будет доступен для регистрации SMS, что может помешать входу пользователя.
+>**Примечание:** Номер больше не будет доступен для SMS, что может помешать входу пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 
@@ -40,7 +40,7 @@ ms.locfileid: "50957475"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -111,9 +111,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 
 Ниже приведен пример ответа.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1afb8a42c0bb914655c198313cba1668ee8cda0b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1e83981246974cb785b9792b08a04866366cf2dc
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680404"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786448"
 ---
 # <a name="update-unifiedroleassignmentschedulerequest"></a>Обновление unifiedRoleAssignmentScheduleRequest
 Пространство имен: microsoft.graph
@@ -57,7 +57,7 @@ PATCH /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssig
 |roleDefinitionId|String|ID унифицированногоRoleDefinition для назначения. Только для чтения.|
 |directoryScopeId|String|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением.|
 |appScopeId|String|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением.|
-|isValidationOnly|Boolean|Boolean, определяющая, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
+|isValidationOnly|Логический|Boolean, определяющая, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
 |targetScheduleId|String|ID объекта расписания, прикрепленного к назначению.|
 |обоснование|String|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса назначения ролей.|
@@ -124,8 +124,7 @@ Content-length: 466
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
+  "truncated": true
 }
 -->
 ```http

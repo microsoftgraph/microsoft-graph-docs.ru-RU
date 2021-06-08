@@ -5,12 +5,12 @@ description: Unfollow a user's site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6d938fc0c02cfc876449edd5bf656770df9190c4
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: c96871d4e3ed617cbba235d8666cf9e060503ba7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475755"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786722"
 ---
 # <a name="unfollow-site"></a>Прекращение отслеживания сайта 
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 
 В случае успешной работы возвращается следующий ответ JSON. 
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content

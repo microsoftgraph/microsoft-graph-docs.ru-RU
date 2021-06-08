@@ -1,23 +1,23 @@
 ---
 title: Удаление объекта schedulingGroup
-description: Пометка элемента Счедулингграуп как неактивного путем задания его свойства "свойство Active"
+description: Пометить группу планирования как неактивной, установив ее свойство isActive
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fde2023fd8d345dce36e4d6bd6b9e361ff159d22
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 09d54084537636fb41aff7f5557b05e0d6d8fbe7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311926"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786311"
 ---
 # <a name="delete-schedulinggroup"></a>Удаление объекта schedulingGroup
 
 Пространство имен: microsoft.graph
 
-Помечайте [счедулингграуп](../resources/schedulinggroup.md) как неактивную, устанавливая **его свойство** GetProperty.
-Этот метод не удаляет [счедулингграуп](../resources/schedulinggroup.md) из расписания. Существующие [сменные](../resources/shift.md) экземпляры, назначенные группе планирования, не входят в группу.
+[Пометить группу планирования](../resources/schedulinggroup.md) как неактивной, установив ее **свойство isActive.**
+Этот метод не удаляет [группу планирования из](../resources/schedulinggroup.md) расписания. [Существующие](../resources/shift.md) экземпляры переноса, назначенные группе планирования, остаются частью группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "48311926"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
@@ -43,7 +43,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -92,8 +92,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

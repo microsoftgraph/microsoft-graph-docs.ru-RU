@@ -1,18 +1,18 @@
 ---
-title: 'application: removePassword'
+title: 'приложение: removePassword'
 description: Удаление пароля из приложения
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8c8865470e67418e877d130ea9143631a5398e92
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: ad8601e45044a2e2ae247d9e2de28eb2e58dc8e5
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129046"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786603"
 ---
-# <a name="application-removepassword"></a>application: removePassword
+# <a name="application-removepassword"></a>приложение: removePassword
 
 Пространство имен: microsoft.graph
 
@@ -57,7 +57,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="examples"></a>Примеры
 
-Ниже показано, как вызвать этот API.
+В следующем примере показано, как вызвать этот API.
 
 ### <a name="request"></a>Запрос
 
@@ -101,9 +101,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.passwordCredential"
+  "blockType": "response"
 } -->
 
 ```http

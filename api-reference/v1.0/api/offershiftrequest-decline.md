@@ -1,22 +1,22 @@
 ---
-title: 'Оффершифтрекуест: отклонить'
-description: Отклонить запрос на смену предложения.
+title: 'offerShiftRequest: снижение'
+description: Отклонение запроса на перенос предложения.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 54c33624d924f9f424a99ff0668f8c1f7dd9c37a
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 9cdb5fbe381008b4146d649fb862b25a3687c251
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313676"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786334"
 ---
-# <a name="offershiftrequest-decline"></a>Оффершифтрекуест: отклонить
+# <a name="offershiftrequest-decline"></a>offerShiftRequest: снижение
 
 Пространство имен: microsoft.graph
 
-Отклонить объект [оффершифтрекуест](../resources/offershiftrequest.md) .
+Отклонение [объекта offerShiftRequest.](../resources/offershiftrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +24,7 @@ ms.locfileid: "48313676"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Schedule.ReadWrite.All |
 
@@ -49,7 +49,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Настраиваемое сообщение, отправленное при отклонении.|
+|message|String|Настраиваемые сообщения, отправленные при отклонении.|
 
 ## <a name="response"></a>Отклик
 
@@ -103,8 +103,7 @@ Content-type: application/json
 Ниже приводится пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

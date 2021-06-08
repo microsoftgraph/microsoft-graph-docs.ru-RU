@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3f280b6a8798cc6ab8fc8dd383270c8e199a837d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8e1f685bc3f6db5ece36360dc50cb814751603ba
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435373"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786932"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Обновление identitySecurityDefaultsEnforcementPolicy
 
@@ -51,7 +51,7 @@ PATCH /policies/identitySecurityDefaultsEnforcementPolicy
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean|Если установлено значение true, по умолчанию безопасность Azure Active Directory включена для клиента.|
+|isEnabled|Boolean|Если установлено значение true, Azure Active Directory по умолчанию для клиента включена безопасность.|
 
 ## <a name="response"></a>Отклик
 
@@ -101,9 +101,7 @@ Content-type: application/json
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.identitySecurityDefaultsEnforcementPolicy"
+  "blockType": "response"
 } -->
 
 ```http

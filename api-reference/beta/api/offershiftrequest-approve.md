@@ -1,24 +1,24 @@
 ---
-title: 'Оффершифтрекуест: утверждение'
-description: Утверждение объекта оффершифтрекуест.
+title: 'offerShiftRequest: утверждение'
+description: Утверждение объекта offershiftrequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 323e18df4287b29531448ba168cbfc94c645fd06
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b2a3ef65cbf138547acbed15f1fbae884467bbc7
+ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981319"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52786483"
 ---
-# <a name="offershiftrequest-approve"></a>Оффершифтрекуест: утверждение
+# <a name="offershiftrequest-approve"></a>offerShiftRequest: утверждение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Утверждение объекта [оффершифтрекуест](../resources/offershiftrequest.md) .
+Утверждение [объекта offershiftrequest.](../resources/offershiftrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48981319"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Schedule.ReadWrite.All |
+| Приложение                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|message|String|Пользовательское сообщение отправлено при утверждении.|
+|message|String|Настраиваемые сообщения, отправленные на утверждение.|
 
 ## <a name="response"></a>Отклик
 
@@ -100,9 +100,7 @@ Content-type: application/json
 
 Ниже приводится пример отклика.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http
