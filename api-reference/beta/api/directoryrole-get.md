@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e14d504c17eda525a773a0098e91ce071ecf60e6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8677235934a20b1a3964779c86e427a71cd85b58
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046834"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854224"
 ---
 # <a name="get-directoryrole"></a>Получение directoryRole
 
@@ -19,6 +19,9 @@ ms.locfileid: "52046834"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение свойств объекта directoryRole.
+
+С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,29 +29,32 @@ ms.locfileid: "52046834"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}
+GET /directoryRoles/{role-objectId}
+GET /directoryRoles/roleTemplateId={role-templateId}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика (например, $filter не поддерживается).
+Этот метод **не поддерживает** параметры [запроса OData](/graph/query-parameters) для настройки ответа (например, `$filter` здесь не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryRole](../resources/directoryrole.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-the-definition-of-a-directory-role-using-role-objectid"></a>Пример 1. Определение роли каталога с помощью объекта role ObjectId
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -57,7 +63,7 @@ GET /directoryRoles/{id}
   "name": "get_directoryrole"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/{id}
+GET https://graph.microsoft.com/beta/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26cc85f1830
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-csharp-snippets.md)]
@@ -77,8 +83,8 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,13 +93,49 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 142
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryRoles/$entity",
+    "id": "fe8f10bf-c9c2-47eb-95cb-c26cc85f1830",
+    "deletedDateTime": null,
+    "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+    "displayName": "Directory Readers",
+    "roleTemplateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+}
+```
+
+
+### <a name="example-2-get-the-definition-of-a-directory-role-using-role-templateid"></a>Пример 2. Определение роли каталога с помощью шаблона roleId
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryrole_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryRole"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryRoles/$entity",
+    "id": "fe8f10bf-c9c2-47eb-95cb-c26cc85f1830",
+    "deletedDateTime": null,
+    "description": "Can read basic directory information. Commonly used to grant directory read access to applications and guests.",
+    "displayName": "Directory Readers",
+    "roleTemplateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
 

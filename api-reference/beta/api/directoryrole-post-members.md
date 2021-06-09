@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 09d1a760954a88f1201bd21e7ea0971028da2c50
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7ba6d589702034ca2463386a700560ba42d9dcaa
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787045"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854195"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -19,6 +19,9 @@ ms.locfileid: "52787045"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание нового участника роли каталога.
+
+С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,7 +34,8 @@ ms.locfileid: "52787045"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{id}/members/$ref
+POST /directoryRoles/{role-objectId}/members/$ref
+POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -85,7 +89,6 @@ Content-length: 30
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приводится пример отклика. 
 
 <!-- {
   "blockType": "response"
@@ -133,7 +136,6 @@ Content-length: 30
 
 
 #### <a name="response"></a>Отклик
-Ниже приводится пример отклика. 
 
 <!-- {
   "blockType": "response"
@@ -141,6 +143,34 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No content
 ```
+
+### <a name="example-3-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Пример 3. Добавление нового члена в роль каталога с помощью шаблона roleId
+#### <a name="request"></a>Запрос
+В этом запросе замените значение `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** для роли каталога, которую вы хотите назначить объекту пользователя или каталога. `bb165b45-151c-4cf6-9911-cd7188912848`Замените **значение id** объекта пользователя или каталога. 
+
+<!-- {
+  "blockType": "request",
+  "name": "create_directoryobject_from_directoryrole_2_templateId"
+}-->
+```http
+POST https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b/members/$ref
+Content-type: application/json
+Content-length: 30
+
+{
+    "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/bb165b45-151c-4cf6-9911-cd7188912848"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No content
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

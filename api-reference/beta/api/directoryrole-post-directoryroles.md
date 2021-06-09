@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5078af3f13fdee8f2d7603d700b19e62530f6f72
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a9cc827495345c4a08eff75a4baa53603ab29177
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046785"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854216"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -27,7 +27,7 @@ ms.locfileid: "52046785"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /directoryRoles
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при активации роли каталога.
@@ -65,12 +65,9 @@ POST /directoryRoles
 ```http
 POST https://graph.microsoft.com/beta/directoryRoles
 Content-type: application/json
-Content-length: 153
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value"
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -93,7 +90,7 @@ Content-length: 153
 
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,13 +99,14 @@ Content-length: 153
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 175
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryRoles/$entity",
+  "id": "76f84d30-2759-4c66-915d-65c6e4083fa0",
+  "deletedDateTime": null,
+  "description": "Can manage all aspects of users and groups, including resetting passwords for limited admins.",
+  "displayName": "User Administrator",
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
 

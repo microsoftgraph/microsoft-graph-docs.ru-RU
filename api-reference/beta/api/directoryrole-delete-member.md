@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2e5082488dbed8452abeecae904751ae3dff6dde
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3f23ed30b7681ec51a1763eed9d621d67a4c4f19
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436843"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854210"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -19,6 +19,8 @@ ms.locfileid: "50436843"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление элемента из объекта directoryRole.
+
+С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,7 +38,8 @@ ms.locfileid: "50436843"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,11 +56,13 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-##### <a name="request"></a>Запрос
+### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Пример 1. Удаление члена роли каталога с помощью объекта role objectId
 
-Ниже приведен пример запроса.
+#### <a name="request"></a>Запрос
+
+В этом примере замените значение id роли каталога и id-значение объекта пользователя или каталога, которое требуется отменить из роли `f8e85ed8-f66f-4058-b170-3efae8b9c6e5`  `bb165b45-151c-4cf6-9911-cd7188912848` каталога. 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -66,7 +71,7 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/directoryRoles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3efae8b9c6e5/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
@@ -87,9 +92,33 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/{id}/members/{id}/$ref
 ---
 
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
-Ниже приведен пример отклика. 
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Пример 2. Удаление члена роли каталога с помощью шаблона roleId
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса. Замените `9f06204d-73c1-4d4c-880a-6edb90606fd8` значение roleTemplateId и `bb165b45-151c-4cf6-9911-cd7188912848` **id-значением** пользователя объекта каталога.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_directoryobject_from_directoryrole_templateId"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-73c1-4d4c-880a-6edb90606fd8/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
+```
+
+
+#### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true

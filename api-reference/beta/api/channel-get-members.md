@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b87c5585c8163944e39839cc98714e27deb89929
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 5102bfd273be2e8b5f2ff0c20c63e48c0449c16f
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522176"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854182"
 ---
 # <a name="get-member-of-channel"></a>Получение участника канала
 
@@ -47,7 +47,7 @@ GET /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -104,20 +104,21 @@ Content-type: application/json
 Content-length: 201
 
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
-"@odata.type": "#microsoft.graph.aadUserConversationMember",
-"id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
-"roles": ["owner"],
-"displayName": "John Doe",
-"userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-"email": null
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+   "@odata.type":"#microsoft.graph.aadUserConversationMember",
+   "id":"ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+   "roles":[
+      "owner"
+   ],
+   "displayName":"John Doe",
+   "userId":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+   "email":null
 }
-
 ```
 
 ## <a name="see-also"></a>См. также
 
-- [Получение участника группы](team-get-members.md)
+- [Получение участника команды](team-get-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
