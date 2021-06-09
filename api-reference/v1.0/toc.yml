@@ -1087,7 +1087,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4902,7 +4902,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5173,7 +5173,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5519,7 +5519,7 @@ items:
                 href: api/site-unfollow.md
               - name: Перечисление отслеживаемых сайтов
                 href: api/sites-list-followed.md
-              - name: Permissions
+              - name: Разрешения
                 href: resources/permission.md
                 items:
                   - name: Получить разрешение сайта
@@ -5735,34 +5735,34 @@ items:
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
-              - name: Список членов
-                href: api/channel-list-members.md
-              - name: Добавление члена
+              - name: Добавление участника
                 href: api/channel-post-members.md
-              - name: Получение участника
-                href: api/channel-get-members.md
-              - name: Обновление роли участника
-                href: api/channel-update-members.md
-              - name: Удаление участника
-                href: api/channel-delete-members.md
               - name: Полная миграция для канала
                 href: api/channel-completemigration.md
-              - name: Получение папки с файлами
-                href: api/channel-get-filesfolder.md
-              - name: Перечисление сообщений в каналах
-                href: api/channel-list-messages.md
+              - name: Получение сообщения в канале
+                href: api/chatmessage-get.md
               - name: Получить дельту сообщений канала
                 href: api/chatmessage-delta.md
-              - name: Получение сообщений в каналах
-                href: api/chatmessage-get.md
-              - name: Получение ответов на сообщения
-                href: api/chatmessage-list-replies.md
+              - name: Получение папки с файлами
+                href: api/channel-get-filesfolder.md
+              - name: Получение участника
+                href: api/channel-get-members.md
               - name: Получение ответа на сообщение
                 href: api/chatmessage-get.md
-              - name: Отправка сообщения
-                href: api/channel-post-messages.md
+              - name: Перечисление сообщений в каналах
+                href: api/channel-list-messages.md
+              - name: Список участников
+                href: api/channel-list-members.md
+              - name: Получение ответов на сообщения
+                href: api/chatmessage-list-replies.md
+              - name: Удаление участника
+                href: api/channel-delete-members.md
               - name: Ответ на сообщение
                 href: api/chatmessage-post-replies.md
+              - name: Отправка сообщения
+                href: api/channel-post-messages.md
+              - name: Обновление роли участника
+                href: api/channel-update-members.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
           - name: Чат
@@ -5813,7 +5813,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение
+          - name: Приложение.
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
