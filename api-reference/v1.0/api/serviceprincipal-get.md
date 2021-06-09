@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dda33bf14ff7ab50af983236d2da8394693aa26b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 70b8802cb25cd7d731d48d5eededaaf188204155
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050341"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813043"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
@@ -41,7 +41,7 @@ GET /servicePrincipals/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -104,6 +104,7 @@ Content-type: application/json
   "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
   "appRoleAssignmentRequired":true,
   "appRoles": [],
+  "disabledByMicrosoftStatus": null,
   "displayName": "My app instance in tenant",
   "endpoints": [],
   "homepage": null,

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dfaf7209037bdbb61e2e487200be9c96b791fa92
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 273f841a4fc05d78dece7ab26f233eb28c314a88
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575856"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813029"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -39,57 +39,29 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unpro
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
-
-| Параметр    | Тип   |Описание|
-|:---------------|:--------|:----------|
-|password|string|Необязательный пароль защиты листа.|
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "worksheetprotection_unprotect"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
-Content-type: application/json
-Content-length: 34
-
-{
-  "password": "password-value"
-}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/worksheetprotection-unprotect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/worksheetprotection-unprotect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/worksheetprotection-unprotect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/worksheetprotection-unprotect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true

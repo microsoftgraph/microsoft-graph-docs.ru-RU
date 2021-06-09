@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2126d80e2ab573161280f2624034b80b41fe36b9
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 59b73642b781877a942d5e70e654955ced0a86d6
+ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766073"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52813215"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766073"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Команды](../resources/team.md) состоят из каналов, являющихся беседами с сотрудниками. Каждый канал предназначен для определенной темы, отдела или проекта. Каналы — это место, где фактически выполняется работа. В них проходят командные обсуждения с помощью текста, аудио и видео, а также выполняется обмен файлами и добавление вкладок.
+[Команды](../resources/team.md) состоят из каналов, являющихся беседами с сотрудниками. Каждый канал предназначен для определенной темы, отдела или проекта. Каналы — это место, где фактически выполняется работа. В них проходят командные обсуждения с помощью текста, аудио и видео, а также выполняется обмен файлами и добавление вкладок.
 
 ## <a name="methods"></a>Методы
 
@@ -47,7 +47,8 @@ ms.locfileid: "51766073"
 |[Получение вкладки на канале](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Получение определенной вкладки, закрепленной на канале.|
 |[Вкладка "обновление" на канале](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Обновляет свойства вкладки на канале.|
 |[Удаление вкладки из канала](../api/channel-delete-tabs.md) | Нет | Удаление (открепление) вкладки из канала.|
-
+|[Подготовка адреса электронной почты канала](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Подготовка адреса электронной почты.|
+|[Удаление адреса электронной почты канала](../api/channel-removeemail.md) | Нет | Удаление адреса электронной почты.|
 
 ## <a name="properties"></a>Свойства
 
@@ -79,7 +80,7 @@ ms.locfileid: "51766073"
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null.|
+|messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение NULL.|
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
 |members|Коллекция [conversationMember](conversationmember.md)|Коллекция записей участников, сопоставленных с каналом.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Метаданные для расположения, в котором хранятся файлы канала.|
@@ -108,7 +109,7 @@ ms.locfileid: "51766073"
   "webUrl": "string",
   "membershipType": "channelMembershipType",
   "createdDateTime": "string (timestamp)",
-  "moderationSettings": "channelModerationSettings"
+  "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
 }
 ```
 

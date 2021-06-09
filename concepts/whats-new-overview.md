@@ -17,11 +17,11 @@ ms.locfileid: "52781168"
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
 
-## <a name="june-2021-new-in-preview-only"></a>Июнь 2021 г.: новые возможности только в предварительной версии
+## <a name="june-2021-new-in-preview-only"></a>Июнь 2021 года: новые возможности только в предварительной версии
 
 ### <a name="education"></a>Образование
-- Теперь преподаватели при публикации заданий могут выбирать поведение по умолчанию для календаря. Преподаватели могут управлять поведением календаря заданий с помощью свойства **addToCalendarAction** ресурса [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
-- Теперь преподаватели при публикации заданий также могут выбирать поведение по умолчанию для календаря. Преподаватели могут управлять поведением календаря заданий по умолчанию с помощью свойства **addToCalendarAction** ресурса [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true).
+- Теперь преподаватели при публикации заданий могут выбирать действия календаря по умолчанию. Преподаватели могут управлять действиями календаря заданий с помощью свойства **addToCalendarAction** ресурса [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- Теперь преподаватели при публикации заданий также могут настраивать действия календаря по умолчанию. Преподаватели могут управлять действиями календаря заданий по умолчанию с помощью свойства **addToCalendarAction** ресурса [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="may-2021-new-and-generally-available"></a>Март 2021 г.: новые и общедоступные возможности
 
