@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f43bf932e207574d03a788e29cc884432e90919
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 758ca460786eb7e59c41762f8dfa4209b20a62b9
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645558"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870425"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -23,18 +23,18 @@ ms.locfileid: "52645558"
 При использовании формата JSON можно: 
 - Укажите комментарий или **свойство** тела `message` параметра. При указании обоих возвращается ошибка http 400 Bad Request.
 - Укажите `toRecipients` параметр или **свойство toRecipients** `message` параметра. Указание обоих или указаний не возвращает ошибку http 400 Bad Request.
-- [Обнови](../api/message-update.md) проект позже, чтобы добавить содержимое в **тело** или изменить другие свойства сообщения.
+- [Обновите](../api/message-update.md) черновике позже, чтобы добавить **текст** или изменить другие свойства сообщения.
 
 При использовании формата MIME:
-- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
 - Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
-[Отправка](../api/message-send.md) черновика сообщения в последующей операции.
+[Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Кроме того, [переадрисуем сообщение](../api/message-forward.md) в одной операции.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.|
-| Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` контента MIME.|
+| Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME.|
 
 ## <a name="request-body"></a>Текст запроса
 Чтобы отправить объект JSON, укажи следующие параметры.
@@ -65,13 +65,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |toRecipients|Коллекция [recipient](../resources/recipient.md)|Список получателей.|
 |message|[message](../resources/message.md)|Любые свойства, которые можно записать для обновления в ответном сообщении.|
 
-При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными интернет-сообщениями ("To", "CC", "BCC", "Subject"), все закодированные в **формате base64** в тексте запроса.
+При указании текста в формате MIME укажите содержимое MIME с применимыми заголовками сообщений Интернета ("Кому", "Копия", "Скрытая копия", "Тема"), все закодированные сообщения в формате **Base64** в тексте запроса.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.
 
-Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает `400 Bad request` и следующее сообщение об ошибке: "Недопустимая строка Base 64 для содержимого MIME".
 
 ## <a name="examples"></a>Примеры
 
@@ -167,8 +167,9 @@ Content-length: 272
 ### <a name="example-2-create-a-draft-message-in-mime-format-to-forward-an-existing-message"></a>Пример 2. Создание черновика сообщения в формате MIME для переададки существующего сообщения
 
 ##### <a name="request"></a>Запрос
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createForward_mime_beta"
 }-->
 
@@ -185,6 +186,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1FeGNoYW5n
 ```
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
@@ -256,7 +258,7 @@ Content-type: application/json
 
 ```
 
-Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
 
 <!-- { "blockType": "ignored" } -->
 

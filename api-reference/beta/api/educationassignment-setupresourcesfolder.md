@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 99b876655f5b2e5006a738d9401434015b804373
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: d682128fb6f50155b7748edb1b4987368e2df5b0
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703456"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870222"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
@@ -25,8 +25,8 @@ ms.locfileid: "52703456"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,7 +40,7 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 |:---------------|:--------|
 | Авторизация  | Bearer `{token}`. Обязательный параметр.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Необходимо предоставить пустой json в качестве `{}` тела запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа 200 Ok и [объект educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) в тексте запроса.
@@ -51,6 +51,8 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationassignment_setupresourcesfolder"
@@ -62,6 +64,24 @@ Content-type: application/json
 {
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-setupresourcesfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-setupresourcesfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-setupresourcesfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-setupresourcesfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 53ecf8c004b6d610b4c9bd8cb6552b2f96407cbf
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: ab81ab84a1ff70a0de7fbfb6fce33f83d0260466
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781289"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869844"
 ---
 # <a name="get-printusagebyuser"></a>Get printUsageByUser
 
@@ -23,7 +23,7 @@ ms.locfileid: "52781289"
 См. [документацию printUsageByUser](../resources/printUsageByUser.md) для описаний каждой из конечных точек.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице.
 
@@ -50,7 +50,7 @@ GET /print/reports/monthlyPrintUsageByUser/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект printUsageByUser](../resources/printUsageByUser.md) в тексте ответа.
@@ -64,23 +64,23 @@ GET /print/reports/monthlyPrintUsageByUser/{id}
   "name": "get_printUsageByUser",
   "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser/016b5565-3bbf-4067-b9ff-4d68167eb1a6
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagesummarybyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagebyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printusagesummarybyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printusagebyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-printusagesummarybyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printusagebyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-printusagesummarybyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

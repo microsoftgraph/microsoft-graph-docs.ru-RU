@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ec275176c609218eabe7bf15f3a99c162930a5ed
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: bbc014075f1dc72970ef64add9555d6067cbe0f0
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786631"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870026"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Список accessReviewScheduleDefinition
 
@@ -28,8 +28,8 @@ ms.locfileid: "52786631"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
  В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. См. роль [обзора доступа и проверки авторизации разрешений приложений.](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)
@@ -69,7 +69,7 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не поставляем тело запроса.
 
 ## <a name="response"></a>Отклик
@@ -180,6 +180,8 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на извлечение всей серии обзоров доступа для всех Microsoft 365 групп клиента.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewScheduleDefinition_allgroups"
@@ -187,6 +189,24 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewscheduledefinition-allgroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewscheduledefinition-allgroups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewscheduledefinition-allgroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-allgroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -267,7 +287,7 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 - [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 

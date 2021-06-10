@@ -5,12 +5,12 @@ author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0e03857b003033b0cf0edf87f38cfc830c3245d0
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 460e09371869fec98b24bd81dc5ab44cc8b199b8
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645621"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870390"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -21,7 +21,7 @@ ms.locfileid: "52645621"
 При использовании формата JSON вы можете включить [вложенный файл](../resources/fileattachment.md) при вызове действия **sendMail**.
 
 При использовании формата MIME:
-- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **base64** в тексте запроса.
+- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
 - Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
 Этот метод сохраняет сообщение в папке **Отправленные**.
@@ -288,7 +288,7 @@ HTTP/1.1 202 Accepted
 #### <a name="request"></a>Запрос
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_send_mime_beta"
 }-->
 
@@ -306,6 +306,7 @@ cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 
 ```
+
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6295e6d60d35eb434e1e5b1d91dae3fc60eda84f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7078b50b05f521d5940cef69565025c5fbf66f21
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050523"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854133"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -23,9 +23,9 @@ ms.locfileid: "52050523"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ POST /directoryRoles
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при активации роли каталога.
@@ -66,7 +66,7 @@ POST https://graph.microsoft.com/v1.0/directoryRoles
 Content-type: application/json
 
 {
-  "roleTemplateId": "roleTemplateId-value"
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -100,10 +100,12 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
+  "id": "76f84d30-2759-4c66-915d-65c6e4083fa0",
+  "deletedDateTime": null,
+  "description": "Can manage all aspects of users and groups, including resetting passwords for limited admins.",
+  "displayName": "User Administrator",
+  "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 ```
 

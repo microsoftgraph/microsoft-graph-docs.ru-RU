@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d8c3fbc7e726fcf3140ef45a681e2844eed21b94
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2d1b3970995db5e3d678e0e1b6daeef6a72ee40b
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645593"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870418"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -24,15 +24,15 @@ ms.locfileid: "52645593"
 - Вы можете [обновить проект](../api/message-update.md) позже, чтобы добавить содержимое ответа в **тело или** изменить другие свойства сообщения.
 
 При использовании формата MIME:
-- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
 - Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
-[Отправка](../api/message-send.md) черновика сообщения в последующей операции.
+[Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Кроме того, [ответьте всем на сообщение](../api/message-replyall.md) в одном действии.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный |
-| Content-Type | string  | Характер данных в теле объекта. <br/> Используйте `application/json` для объекта JSON и `text/plain` контента MIME. |
+| Content-Type | string  | Характер данных в теле объекта. <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса
 Этот метод не требует тела запроса. 
@@ -64,7 +64,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [Message](../resources/message.md) в тексте отклика.
 
-Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает `400 Bad request` и следующее сообщение об ошибке: "Недопустимая строка Base 64 для содержимого MIME".
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-create-a-message-draft-in-json-format-to-reply-all-to-an-existing-message"></a>Пример 1. Создание черновика сообщения в формате JSON, чтобы ответить всем на существующее сообщение
@@ -125,8 +125,9 @@ Content-length: 248
 ```
 ### <a name="example-2-create-a-message-draft-in-mime-format-to-reply-all-to-an-existing-message"></a>Пример 2. Создание черновика сообщения в формате MIME, чтобы ответить всем на существующее сообщение
 ##### <a name="request"></a>Запрос
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createreplyAll_mime_v1"
 }-->
 
@@ -136,6 +137,7 @@ Content-type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
 ```
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
@@ -206,7 +208,7 @@ Content-type: application/json
 
 ```
 
-Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
 
 <!-- { "blockType": "ignored" } -->
 

@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f88697261aae32e978e4910c8d112d55c7ceb5ab
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 61c80ea006ad0def4d9c8f58e36e44ae4caac851
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787918"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870579"
 ---
 # <a name="timecard-endbreak"></a>timeCard: endBreak
 
@@ -26,8 +26,8 @@ ms.locfileid: "52787918"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Schedule.ReadWrite.All* |
 
 >\***Важно:** При использовании разрешений приложения необходимо включить в запрос `MS-APP-ACTS-AS` заготвую.
@@ -48,7 +48,7 @@ POST /teams/{teamId}/schedule/timecards/{timeCardID}/endBreak
 | Content-Type | application/json. Обязательный.|
 | MS-APP-ACTS-AS | ID пользователя, от имени которого действует приложение. Требуется при использовании области разрешений приложения. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -66,6 +66,8 @@ POST /teams/{teamId}/schedule/timecards/{timeCardID}/endBreak
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса. 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecard-endbreak"
@@ -82,6 +84,16 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
     }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-endbreak-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timecard-endbreak-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

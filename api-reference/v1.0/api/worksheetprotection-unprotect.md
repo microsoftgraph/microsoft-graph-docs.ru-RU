@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 273f841a4fc05d78dece7ab26f233eb28c314a88
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 2839649ba773c9e56a0274183ee716c4f2d16d50
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813029"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870355"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -22,8 +22,8 @@ ms.locfileid: "52813029"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,6 +51,8 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unpro
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "worksheetprotection_unprotect"
@@ -58,6 +60,24 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/unpro
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/worksheetprotection-unprotect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/worksheetprotection-unprotect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/worksheetprotection-unprotect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/worksheetprotection-unprotect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

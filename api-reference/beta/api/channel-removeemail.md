@@ -5,12 +5,12 @@ author: anandab-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4608538cf136ba4f53a960183bc0b3f4bd7fc269
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 66efdd201217d34ba367df4ae1f30713cd939df4
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813250"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869611"
 ---
 # <a name="channel-removeemail"></a>канал: removeEmail
 
@@ -28,8 +28,8 @@ ms.locfileid: "52813250"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -52,6 +52,8 @@ POST /teams/{team-id}/channels/{channel-id}/removeEmail
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"],
@@ -61,6 +63,24 @@ POST /teams/{team-id}/channels/{channel-id}/removeEmail
 ```http
 POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/removeEmail
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-removeemail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-removeemail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-removeemail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/channel-removeemail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d10c07c433b3d8456c574519aa497fc163dde09
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 6419ec8bef225964b5797e84cce0f3ecf7609b30
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645635"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870397"
 ---
 # <a name="create-message"></a>Создание сообщения
 
@@ -33,7 +33,7 @@ ms.locfileid: "52645635"
 Или [отправьте новое сообщение](../api/user-sendmail.md) за одну операцию или создайте черновик для [пересылки](../api/message-createforward.md), [ответа](../api/message-createreply.md) и [ответа всем](../api/message-createreplyall.md) на существующее сообщение.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -304,8 +304,9 @@ Content-type: application/json
 ### <a name="example-3-create-a-new-message-draft-using-mime-format"></a>Пример 3. Создание черновика сообщения в формате MIME
 #### <a name="request"></a>Запрос
 
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_create_draft_mime_v1"
 }-->
 
@@ -316,6 +317,7 @@ Content-type: text/plain
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np...
 
 ```
+
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bc9d9c244f955e2479cf79ded3bd7ee6ac4a31b7
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: d455bde8192cfd37713d32f10e5bb8d8b908cec0
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298378"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868877"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание accessPackageAssignmentRequest
 
@@ -26,9 +26,9 @@ ms.locfileid: "52298378"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | EntitlementManagement.ReadWrite.All |
+| Делегированное (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -90,19 +90,19 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-1-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -335,6 +335,61 @@ Content-type: application/json
             "type": null
         }
     }
+}
+```
+
+### <a name="example-4-remove-an-assignment"></a>Пример 4. Удаление назначения
+
+Чтобы удалить назначения, создайте новый объект accessPackageAssignmentRequest со следующими настройками:
+
++ Значение свойства **requestType,** установленного для `AdminRemove` .
++ В свойство accessPackageAssignment включите список с идентификатором объектов accessPackageAssignment для удаления.
+
+#### <a name="request"></a>Запрос
+
+В следующем примере показано, как удалить назначение.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "AdminRemove",
+    "accessPackageAssignment":{
+     "id": "a6bb6942-3ae1-4259-9908-0133aaee9377"
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
+
+    "id": "78eaee8c-e6cf-48c9-8f99-aae44c35e379",
+    "requestType": "AdminRemove",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted"
 }
 ```
 

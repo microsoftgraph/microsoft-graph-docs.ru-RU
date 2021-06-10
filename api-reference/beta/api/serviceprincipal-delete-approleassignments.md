@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8e4f2c986723c8dab08eab88b6b80f5f72d6f76c
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 957ce2dbed2f367901a2d7f9498a4385745b2797
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703582"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870166"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление appRoleAssignment, предоставленного директору службы
 
@@ -49,7 +49,7 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -63,6 +63,8 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 
 Вот пример запроса на удаление назначения роли приложения.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_approleassignment"
@@ -71,6 +73,24 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-delete-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

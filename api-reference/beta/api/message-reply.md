@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9e75bf3ff8eb7e0a05b94430ff4e5cbd2e99c125
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: e5a9cab87389f41c795268a1d7964a7d8e987269
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645530"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870502"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -25,15 +25,15 @@ ms.locfileid: "52645530"
 - Если исходное сообщение указывает получателя в свойстве **replyTo,** в формате интернет-сообщений [(RFC 2822),](https://www.rfc-editor.org/info/rfc2822)отправьте ответ получателям в **replyTo,** а не получателю из **свойства.**
 
 При использовании формата MIME:
-- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
 - Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
-Этот метод сохраняет сообщение в папке **Отправленные** элементы.
+Этот метод сохраняет сообщение в папке **Отправленные**.
 
 Кроме того, [создайте черновик](../api/message-createreply.md)для ответа на сообщение и [отправьте его](../api/message-send.md) позже.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | Authorization  | string  | Bearer {token}. Обязательный |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный <br/> Использование `application/json` объекта JSON и `text/plain` контента MIME |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 При использовании формата JSON включаем объект JSON со следующими параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -72,7 +72,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
-Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает `400 Bad request` и следующее сообщение об ошибке: "Недопустимая строка Base 64 для содержимого MIME".
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-reply-to-a-message-in-json-format"></a>Пример 1. Ответ на сообщение в формате JSON
@@ -149,7 +149,7 @@ HTTP/1.1 202 Accepted
 ##### <a name="request"></a>Запрос
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_reply_mime_beta"
 }-->
 
@@ -173,7 +173,7 @@ UmVjZWl2ZWQ6IGZyb20gY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSBieSAKY29udG9zby5jb20g
 HTTP/1.1 202 Accepted
 ```
 
-Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
 
 <!-- { "blockType": "ignored" } -->
 

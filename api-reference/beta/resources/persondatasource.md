@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Персондатасаурце
-description: Представляет источники, из которых берутся данные пользователя, например каталог и контакты Outlook.
+title: тип ресурса personDataSource
+description: Представляет источники, из которые приходят данные пользователей, такие как Directory и Outlook Contacts.
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 87277c7f7ef255ce8e42d7efd1fbbdee88a7c860
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0bc688be65e79b28ab00387e10e3c8d10bfad733
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997961"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869549"
 ---
-# <a name="persondatasource-resource-type"></a>Тип ресурса Персондатасаурце
+# <a name="persondatasource-resource-type"></a>тип ресурса personDataSource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет источники, из которых берутся данные пользователя, например каталог и контакты Outlook.
+Представляет источники, из которые приходят данные пользователей, такие как Directory и Outlook Contacts.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -36,7 +36,6 @@ ms.locfileid: "47997961"
 {
   "type": "string"
 }
-
 ```
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

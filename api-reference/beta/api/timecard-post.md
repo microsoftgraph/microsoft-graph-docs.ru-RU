@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a190bf46d736e4486a8774a2fe4a7534d8b50ae9
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e1a03dd2139070fa06156689bf332d0e7c1a3dcb
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787902"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870096"
 ---
 # <a name="create-timecard"></a>Создание timeCard
 
@@ -26,8 +26,8 @@ ms.locfileid: "52787902"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Schedule.ReadWrite.All* |
 
 >\***Важно:** При использовании разрешений приложения необходимо включить в запрос `MS-APP-ACTS-AS` заготвую.
@@ -48,7 +48,7 @@ POST /teams/{teamId}/schedule/timecards
 | Content-Type | application/json. Обязательный.|
 | MS-APP-ACTS-AS | ID пользователя, от имени которого действует приложение. Требуется при использовании области разрешений приложения. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Предокажи новый [объект timeCard](../resources/timecard.md) в теле запроса для этого метода.
 
@@ -104,6 +104,16 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timecard-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

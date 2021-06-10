@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49530ee33fe0d3c8c6f32429de38daa47166568e
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 04a34aec3c611e5cf178910b7a8513a048fb797e
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241137"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869167"
 ---
 # <a name="list-unifiedroledefinitions"></a>Список унифицированныхRoleDefinitions
 
@@ -18,22 +18,42 @@ ms.locfileid: "52241137"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика.
+Получите список объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
+
+В настоящее время поддерживаются следующие поставщики RBAC:
+- облачный КОМПЬЮТЕР 
+- управление устройствами (Intune)
+- каталог (Azure AD) 
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference). 
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Поддерживаемый поставщик      | Делегированное (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Приложение |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Не поддерживается. | CloudPC.Read.All, CloudPC.ReadWrite.All |
+| Управление устройствами | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Не поддерживается. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Каталог | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Не поддерживается.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
 
 ## <a name="http-request"></a>HTTP-запрос
 
+Список определений ролей для поставщика облачных ПК:
 <!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/cloudPC/roleDefinitions
+```
 
+Список определений ролей для поставщика управления устройствами:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/deviceManagement/roleDefinitions
+```
+
+Список определений ролей для поставщика каталогов:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
 ```
@@ -47,7 +67,7 @@ GET /roleManagement/directory/roleDefinitions
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -55,9 +75,11 @@ GET /roleManagement/directory/roleDefinitions
 
 В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-list-role-definitions-for-a-directory-provider"></a>Пример 1. Список определений ролей для поставщика каталогов
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -65,32 +87,32 @@ GET /roleManagement/directory/roleDefinitions
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roledefinitions"
+  "name": "get_roledefinitions_directory"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -98,6 +120,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 <!-- {
   "blockType": "response",
+  "name": "get_roledefinitions_directory",
   "truncated": true,
   "@odata.type": "microsoft.graph.unifiedRoleDefinition",
   "isCollection": true
@@ -199,6 +222,130 @@ Content-type: application/json
     ]
 }
 ```
+
+### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a>Пример 2. Список определений ролей для поставщика облачных ПК
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_cloudpc"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_roledefinitions_cloudpc",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleDefinitions",
+    "value": [
+        {
+            "id": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+            "description": "Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.",
+            "displayName": "Cloud PC Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+            "version": null,
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "Microsoft.CloudPC/CloudPCs/Read",
+                        "Microsoft.CloudPC/CloudPCs/Reprovision",
+                        "Microsoft.CloudPC/DeviceImages/Create",
+                        "Microsoft.CloudPC/DeviceImages/Delete",
+                        "Microsoft.CloudPC/DeviceImages/Read",
+                        "Microsoft.CloudPC/OnPremisesConnections/Create",
+                        "Microsoft.CloudPC/OnPremisesConnections/Delete",
+                        "Microsoft.CloudPC/OnPremisesConnections/Read",
+                        "Microsoft.CloudPC/OnPremisesConnections/Update",
+                        "Microsoft.CloudPC/OnPremisesConnections/RunHealthChecks",
+                        "Microsoft.CloudPC/OnPremisesConnections/UpdateAdDomainPassword",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Assign",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Create",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Delete",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Update",
+                        "Microsoft.CloudPC/RoleAssignments/Create",
+                        "Microsoft.CloudPC/RoleAssignments/Update",
+                        "Microsoft.CloudPC/RoleAssignments/Delete",
+                        "Microsoft.CloudPC/Roles/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+            "description": "Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.",
+            "displayName": "Cloud PC Reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+            "version": null,
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "Microsoft.CloudPC/CloudPCs/Read",
+                        "Microsoft.CloudPC/DeviceImages/Read",
+                        "Microsoft.CloudPC/OnPremisesConnections/Read",
+                        "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                        "Microsoft.CloudPC/Roles/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

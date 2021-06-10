@@ -5,16 +5,18 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 69d04f6ccd5e537c97854abcb1cf2a9c24820a87
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 83f570301afe4a20aab6f77375e7a575df016d56
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575709"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870488"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса workbook
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Содержит связанные объекты книги, такие как таблицы, таблицы, диапазоны и так далее.
 
@@ -32,10 +34,10 @@ ms.locfileid: "50575709"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|names|Коллекция [workbookNamedItem](workbooknameditem.md) |Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|
+|names|Коллекция [workbookNamedItem](workbooknameditem.md) |Представляет коллекцию книг с масштабами именных элементов (именуются диапазоны и константы). Только для чтения.|
 |tables|Коллекция [workbookTable](workbooktable.md) |Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
 |worksheets|Коллекция [workbookWorksheet](workbookworksheet.md) |Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
-|workbbookApplication|[workbookApplication](workbookapplication.md) |Представляет книгу Excel, которая управляет книгой.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Представляет Excel, которая управляет книгой.|
 |operations|Коллекция [workbookOperation](workbookoperation.md)|Состояние операций книги. Получить коллекцию операций нельзя, но можно получить состояние длительной операции, если в ответе возвращается заголовок `Location`. Только для чтения. Допускается значение null.|
 
 ## <a name="functions"></a>Функции
@@ -117,10 +119,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 
 {
-"values" :  [
-        { "address": "Sheet2!A1:A5" },
-        { "address": "Sheet2!B1:B5" },
-      ] 
+   "values":[
+      {
+         "address":"Sheet2!A1:A5"
+      },
+      {
+         "address":"Sheet2!B1:B5"
+      }
+   ]
 }
 ```
 

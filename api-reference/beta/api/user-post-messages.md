@@ -1,16 +1,16 @@
 ---
 title: Создание объекта Message
-description: Создайте черновик нового сообщения в формате JSON или MIME.
+description: Создание черновика нового сообщения в формате JSON или MIME.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: acb10508eec31e39d5f631aee91dc3b85f964d3d
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 4305a14ba2726102427c4f0b4c733656be2fd03b
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645572"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868912"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -18,25 +18,25 @@ ms.locfileid: "52645572"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте черновик нового сообщения в формате JSON или MIME.
+Создание черновика нового сообщения в формате JSON или MIME.
 
 При использовании формата JSON можно:
 - Включив [вложение.](../resources/attachment.md)
 - Используйте [упоминание,](../resources/mention.md) чтобы вызвать другого пользователя в новом сообщении.
-- [Обнови](../api/message-update.md) проект позже, чтобы добавить содержимое в **тело** или изменить другие свойства сообщения.
+- [Обновите](../api/message-update.md) черновике позже, чтобы добавить **текст** или изменить другие свойства сообщения.
 
 При использовании формата MIME:
-- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
 - Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
-По умолчанию эта операция сохраняет черновик в папке Черновики.
+По умолчанию эта операция сохраняет черновик в папке "Черновики".
 
-[Отправка](/graph/api-reference/beta/api/message-send.md) черновика сообщения в последующей операции.
+[Отправьте](/graph/api-reference/beta/api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Кроме того, [отправьте новое сообщение](../api/user-sendmail.md) в одном действии или [](../api/message-createreply.md) создайте [](../api/message-createreplyall.md) черновик для отправки, [](../api/message-createforward.md)чтобы ответить или ответить всем на существующее сообщение.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -58,10 +58,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Authorization  | string  | Bearer {token}.|
 | Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Использование `application/json` объекта JSON и `text/plain` контента MIME |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 При использовании формата JSON предоформим JSON-представление объекта [сообщения.](../resources/message.md)
 
-При указании тела в формате MIME укажите содержимое MIME с применимыми заглавными интернет-сообщениями ("To", "CC", "BCC", "Subject"), все закодированные в **формате base64** в тексте запроса.
+При указании текста в формате MIME укажите содержимое MIME с применимыми заголовками сообщений Интернета ("Кому", "Копия", "Скрытая копия", "Тема"), все закодированные сообщения в формате **Base64** в тексте запроса.
 
 Чтобы использовать **упоминание,** чтобы вызвать другого пользователя в новом сообщении:
 - Включай в текст запроса обязательное свойство **toRecipients,** свойство **mentions** и любые полезные свойства сообщений.
@@ -74,7 +74,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 В случае успешной работы этот метод возвращает код ответа и `201 Created` объект [сообщения](../resources/message.md) в тексте ответа.
 
-Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает `400 Bad request` и следующее сообщение об ошибке: "Недопустимая строка Base 64 для содержимого MIME".
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-create-a-message-draft-in-json-format"></a>Пример 1. Создание черновика сообщений в формате JSON
@@ -440,7 +440,7 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_create_draft_mime_beta"
 }-->
 
@@ -457,6 +457,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRv
 ```
+
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
@@ -528,7 +529,7 @@ Content-type: application/json
 }
 ```
 
-Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
 
 <!-- { "blockType": "ignored" } -->
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8c779775284a98ae5e68a6b57bb773c7a1753264
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 7fc14042a2a37313523c413616f9298d43b05b7c
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780976"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870691"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>отчеты: getPrinterArchivedPrintJobs
 
@@ -21,7 +21,7 @@ ms.locfileid: "52780976"
 Получите список архивных заданий печати, которые стояли в очереди для определенного [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
@@ -57,14 +57,34 @@ GET /reports/getPrinterArchivedPrintJobs(printerId=printerId-value,startDateTime
 В приведенном ниже примере показано, как вызывать этот API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reports-getprinterarchivedprintjobs",
   "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='016b5565-3bbf-4067-b9ff-4d68167eb1a6',startDateTime=2021-05-24,endDateTime=2021-05-25)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reports-getprinterarchivedprintjobs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reports-getprinterarchivedprintjobs-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reports-getprinterarchivedprintjobs-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reports-getprinterarchivedprintjobs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа.

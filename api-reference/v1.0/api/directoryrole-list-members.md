@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2860e1c0d6293f13fa07df26e7b9493501ac8185
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 878c99489b2faf1c4c079958491b64366945a67c
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448557"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854245"
 ---
 # <a name="list-members-of-a-directory-role"></a>Список участников роли каталога
 
@@ -18,8 +18,7 @@ ms.locfileid: "50448557"
 
 Извлечение списка директоров, которые назначены роли каталога. 
 
-> [!Note]
-> С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,16 +26,17 @@ ms.locfileid: "50448557"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}/members
+GET /directoryRoles/{role-objectId}/members
+GET /directoryRoles/roleTemplateId={role-templateId}/members
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -45,7 +45,7 @@ GET /directoryRoles/{id}/members
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,9 +53,9 @@ GET /directoryRoles/{id}/members
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a>Пример 1. Получить членов роли каталога с помощью objectId
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-objectid"></a>Пример 1. Получить членов роли каталога с помощью объекта role ObjectId
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e495
 
 ---
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -100,19 +100,19 @@ Content-type: application/json
   "value": [
     {
       "businessPhones":["000-000-0000"],
-      "displayName":"First Last",
-      "givenName":"First",
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
       "jobTitle":null,
-      "mail":"first@example.com",
+      "mail":"AdeleV@contoso.com",
       "officeLocation":null,
       "preferredLanguage":"en-US",
-      "surname":"Last",
-      "userPrincipalName":"first@example.com"
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
     }
   ]
 }
 ```
-### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a>Пример 2. Получить членов роли каталога с помощью templateId
+### <a name="example-2-get-the-members-of-a-directory-role-using-role-templateid"></a>Пример 2. Получить членов роли каталога с помощью шаблона ролейId
 
 ##### <a name="request"></a>Запрос
 
@@ -159,14 +159,14 @@ Content-type: application/json
   "value": [
     {
       "businessPhones":["000-000-0000"],
-      "displayName":"First Last",
-      "givenName":"First",
+      "displayName":"Adele Vance",
+      "givenName":"Adele",
       "jobTitle":null,
-      "mail":"first@example.com",
+      "mail":"AdeleV@contoso.com",
       "officeLocation":null,
       "preferredLanguage":"en-US",
-      "surname":"Last",
-      "userPrincipalName":"first@example.com"
+      "surname":"Vance",
+      "userPrincipalName":"AdeleV@contoso.com"
     }
   ]
 }

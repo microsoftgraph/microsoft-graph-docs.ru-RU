@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 85d721888b3f64f77533e6c83c53c84c943ec824
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 14ae5e8c899378e76fb201856bea2929a0ba3168
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444856"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870061"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>Удаление unifiedRoleAssignmentMultiple
 
@@ -18,20 +18,33 @@ ms.locfileid: "50444856"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [объекта unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Это применимо для приложения RBAC, которое поддерживает несколько принципов и областей. Microsoft Intune — это такое приложение.
+Удаление [объекта unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) поставщика RBAC. 
+
+Это применимо для приложения RBAC, которое поддерживает несколько принципов и областей. В настоящее время поддерживаются следующие поставщики RBAC:
+- облачный КОМПЬЮТЕР 
+- управление устройствами (Intune)
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference). 
 
-| Тип разрешения | Разрешения (в порядке повышения привилегий) |
-|:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | DeviceManagementRBAC.ReadWrite.All |
+|Поддерживаемый поставщик      | Делегированное (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Приложение |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.ReadWrite.All | Не поддерживается. | CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.ReadWrite.All | Не поддерживается.| DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
+Удаление единой системыRoleAssignmentMultiple для поставщика облачных ПК:
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/cloudPC/roleAssignments/{id}
+```
+
+Удаление единой системыRoleAssignmentMultiple для поставщика Intune:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -42,7 +55,7 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 
 | Имя | Описание |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -53,6 +66,8 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
+
+### <a name="example-1-delete-a-unifiedroleassignmentmultiple-in-an-intune-provider"></a>Пример 1. Удаление единой системыRoleAssignmentMultiple в поставщике Intune
 
 ### <a name="request"></a>Запрос
 
@@ -90,6 +105,51 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-delete-a-unifiedroleassignmentmultiple-in-a-cloud-pc-provider"></a>Пример 2. Удаление единой системыRoleAssignmentMultiple в поставщике облачных ПК
+
+### <a name="request"></a>Запрос
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroleassignmentMultiple_cloudpc"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/id
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroleassignmentmultiple-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-unifiedroleassignmentmultiple-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroleassignmentmultiple-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

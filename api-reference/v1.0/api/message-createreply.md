@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 023b04f37f0320ca3a74801f9d2e92d19553a10c
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 1f9962a6432b130bfeb121bc273271cb3591e181
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645600"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868940"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -24,15 +24,15 @@ ms.locfileid: "52645600"
 - Вы можете [обновить проект](../api/message-update.md) позже, чтобы добавить содержимое ответа в **тело или** изменить другие свойства сообщения.
 
 При использовании формата MIME:
-- Предоформим соответствующие заголовки интернет-сообщений и [содержимое MIME](https://tools.ietf.org/html/rfc2045), все закодированные в [](https://tools.ietf.org/html/rfc2076) **формате base64** в тексте запроса.
+- Укажите соответствующие [заголовки сообщений Интернета](https://tools.ietf.org/html/rfc2076) и [содержимое MIME](https://tools.ietf.org/html/rfc2045), а также закодируйте их в формате **Base64** в тексте запроса.
 - Добавьте все вложения и свойства S/MIME в содержимое MIME.
 
-[Отправка](../api/message-send.md) черновика сообщения в последующей операции.
+[Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Кроме того, [ответьте на сообщение в](../api/message-reply.md) одной операции.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.|
-| Content-Type | string  | Характер данных в теле объекта. <br/> Используйте `application/json` для объекта JSON и `text/plain` контента MIME. |
+| Content-Type | string  | Характер данных в теле объекта. <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса
 Этот метод не требует тела запроса.
@@ -66,7 +66,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [Message](../resources/message.md) в тексте отклика.
 
-Если в тексте запроса содержится неправильное содержимое MIME, этот метод возвращается и следующее сообщение об ошибке: "Недействительные строки `400 Bad request` base64 для контента MIME".
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает `400 Bad request` и следующее сообщение об ошибке: "Недопустимая строка Base 64 для содержимого MIME".
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-create-a-draft-message-in-json-format-to-reply-to-an-existing-message"></a>Пример 1. Создание черновика сообщения в формате JSON для ответа на существующее сообщение.
@@ -129,8 +129,9 @@ Content-length: 248
 
 ### <a name="example-2-create-a-draft-message-in-mime-format-to-reply-to-an-existing-message"></a>Пример 2. Создание черновика сообщения в формате MIME для ответа на существующее сообщение
 ##### <a name="request"></a>Запрос
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createReply_mime_v1"
 }-->
 
@@ -215,7 +216,7 @@ Content-Type: application/json
 
 ```
 
-Если в тексте запроса содержится недооформленное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
+Если текст запроса содержит неправильно отформатированное содержимое MIME, этот метод возвращает следующее сообщение об ошибке.
 
 <!-- { "blockType": "ignored" } -->
 

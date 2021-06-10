@@ -5,12 +5,12 @@ author: anandab-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35865ff1b44fad5bc66951df571dbd5252a363df
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: b2e619970c0cdadd574a4873cb3231a88934a087
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813254"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869626"
 ---
 # <a name="channel-provisionemail"></a>канал: provisionEmail
 
@@ -30,8 +30,8 @@ Microsoft Teams автоматически не содержит адрес эл
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -55,6 +55,8 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"],
@@ -64,6 +66,24 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 ```http
 POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/provisionEmail
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/channel-provisionemail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/channel-provisionemail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/channel-provisionemail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/channel-provisionemail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

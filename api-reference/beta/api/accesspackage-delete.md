@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a5a147cd09f044cafdc7738581bb9b52b6ddf66d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 710bbd3e015af5109b95905d6db68061de1506f5
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439858"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52868870"
 ---
 # <a name="delete-accesspackage"></a>Удаление accessPackage
 
@@ -20,14 +20,17 @@ ms.locfileid: "50439858"
 
 Удаление [объекта accessPackage.](../resources/accesspackage.md)
 
+Нельзя удалить пакет доступа, если у него есть **какой-либо accessPackageAssignment.** Чтобы удалить пакет доступа, сначала запросите, если есть назначения с фильтром, чтобы указать определенный пакет доступа, например: [](accesspackageassignment-list.md) `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` . Дополнительные сведения о том, как удалить назначения, которые по-прежнему находятся в доставленных состояниях, см. в статью [Удалить назначение.](accesspackageassignmentrequest-post.md#example-4-remove-an-assignment)
+
+
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,7 +45,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackages/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

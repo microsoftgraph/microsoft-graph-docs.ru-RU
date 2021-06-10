@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4fd82a90bc237b2fe1f312f71c07ddac8a2cf45a
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: c4acc92ad0c95041b39e84f04849d2f4095eab50
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703470"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870138"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission: setUpResourcesFolder
 
@@ -27,8 +27,8 @@ ms.locfileid: "52703470"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,11 +42,11 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 |:---------------|:--------|
 | Авторизация  | Bearer `{token}`. Обязательный параметр.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставление пустого json `{}` в качестве тела запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 Ok`. Тело будет содержать модель отправки.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Тело будет содержать модель отправки.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -54,6 +54,8 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_setupresourcesfolder"
@@ -65,6 +67,24 @@ Content-type: application/json
 {
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-setupresourcesfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-setupresourcesfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-setupresourcesfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-setupresourcesfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 ### <a name="response"></a>Отклик

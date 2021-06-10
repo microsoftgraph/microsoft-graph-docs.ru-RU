@@ -5,36 +5,37 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 350a68a06c94782951163007751819c58e8113b1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ae03863fd35d7438a5fa3b9ff2ae0bfa90e41dce
+ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787641"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52854168"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
 Пространство имен: microsoft.graph
 
-С помощью этого API можно создать участника роли каталога.
+Создание нового участника роли каталога.
 
-> [!Note]
-> С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+С помощью этого API можно использовать ИД объекта и ИД шаблона **каталогаRole.** ID шаблона встроенной роли неменяем и его можно увидеть в описании роли на портале Azure. Подробные сведения см. [в материале Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{id}/members/$ref
+POST /directoryRoles/{role-objectId}/members/$ref
+POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
@@ -52,6 +53,8 @@ POST /directoryRoles/{id}/members/$ref
 
 ### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>Пример 1. Добавление нового участника в роль каталога с помощью объекта roleId
 
+В этом запросе замените значение id для роли каталога, которую вы хотите назначить пользователю `fe8f10bf-c9c2-47eb-95cb-c26cc85f1830` или объекту  каталога. `15c1a2d5-9101-44b2-83ab-885db8a647ca`Замените **значение id** объекта пользователя или каталога. 
+
 ##### <a name="request"></a>Запрос
 
 
@@ -61,11 +64,11 @@ POST /directoryRoles/{id}/members/$ref
   "name": "create_directoryobject_from_directoryrole_objectId"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/$ref
+POST https://graph.microsoft.com/v1.0/directoryRoles/fe8f10bf-c9c2-47eb-95cb-c26cc85f1830/members/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{user-id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/15c1a2d5-9101-44b2-83ab-885db8a647ca"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -100,6 +103,8 @@ Content-type: text/plain
 
 ### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Пример 2. Добавление нового участника в роль каталога с помощью шаблона ролейId
 
+В этом запросе замените значение `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** для роли каталога, которую вы хотите назначить объекту пользователя или каталога. `bb165b45-151c-4cf6-9911-cd7188912848`Замените **значение id** объекта пользователя или каталога. 
+
 ##### <a name="request"></a>Запрос
 
 
@@ -109,11 +114,11 @@ Content-type: text/plain
   "name": "create_directoryobject_from_directoryrole_templateId"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/$ref
+POST https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=88d8e3e3-8f55-4a1e-953a-9b9898b8876b/members/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{user-id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/bb165b45-151c-4cf6-9911-cd7188912848"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
