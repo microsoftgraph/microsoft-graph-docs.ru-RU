@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 59cda5b2858b46348c35705a2661d5488a3096c7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: af435dcd8ad4e5b0740248aa88b6b08e31f703f9
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664627"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871332"
 ---
 ```javascript
 
@@ -51,7 +51,7 @@ const accessReviewScheduleDefinition = {
     recurrence: {
       pattern: {
         type: 'absoluteMonthly',
-        dayOfMonth: '5',
+        dayOfMonth: 5,
         interval: 3
       },
       range: {
