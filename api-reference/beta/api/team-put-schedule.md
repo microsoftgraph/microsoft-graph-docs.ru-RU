@@ -5,40 +5,40 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 02196fab37f28a2ab8f669ff4427d7512a0f0348
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 9915162629098679263162bd7fc2f71bed43ff33
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786336"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870621"
 ---
-# <a name="create-or-replace-schedule"></a><span data-ttu-id="e17ae-103">Создание или замена расписания</span><span class="sxs-lookup"><span data-stu-id="e17ae-103">Create or replace schedule</span></span>
+# <a name="create-or-replace-schedule"></a><span data-ttu-id="9cffc-103">Создание или замена расписания</span><span class="sxs-lookup"><span data-stu-id="9cffc-103">Create or replace schedule</span></span>
 
-<span data-ttu-id="e17ae-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e17ae-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9cffc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9cffc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e17ae-105">Создание или замена объекта [расписания.](../resources/schedule.md)</span><span class="sxs-lookup"><span data-stu-id="e17ae-105">Create or replace a [schedule](../resources/schedule.md) object.</span></span>
+<span data-ttu-id="9cffc-105">Создание или замена объекта [расписания.](../resources/schedule.md)</span><span class="sxs-lookup"><span data-stu-id="9cffc-105">Create or replace a [schedule](../resources/schedule.md) object.</span></span>
 
-<span data-ttu-id="e17ae-106">Процесс создания расписания соответствует рекомендациям One API для длительных операций на основе ресурсов [(RELO).](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)</span><span class="sxs-lookup"><span data-stu-id="e17ae-106">The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).</span></span>
-<span data-ttu-id="e17ae-107">Если клиенты используют метод PUT, если расписание является предварительным, операция заменяет расписание; в противном случае операция запускает процесс подготовки расписания в фоновом режиме.</span><span class="sxs-lookup"><span data-stu-id="e17ae-107">When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.</span></span>
+<span data-ttu-id="9cffc-106">Процесс создания расписания соответствует рекомендациям One API для длительных операций на основе ресурсов [(RELO).](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)</span><span class="sxs-lookup"><span data-stu-id="9cffc-106">The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).</span></span>
+<span data-ttu-id="9cffc-107">Если клиенты используют метод PUT, если расписание является предварительным, операция заменяет расписание; в противном случае операция запускает процесс подготовки расписания в фоновом режиме.</span><span class="sxs-lookup"><span data-stu-id="9cffc-107">When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.</span></span>
 
-<span data-ttu-id="e17ae-108">При расписании клиенты могут использовать метод [GET,](schedule-get.md) чтобы получить расписание и посмотреть свойство для текущего состояния `provisionStatus` подготовка.</span><span class="sxs-lookup"><span data-stu-id="e17ae-108">During schedule provisioning, clients can use the [GET method](schedule-get.md) to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.</span></span> <span data-ttu-id="e17ae-109">Если подготовка не удалась, клиенты могут получить дополнительные сведения из `provisionStatusCode` свойства.</span><span class="sxs-lookup"><span data-stu-id="e17ae-109">If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.</span></span>
+<span data-ttu-id="9cffc-108">При расписании клиенты могут использовать метод [GET,](schedule-get.md) чтобы получить расписание и посмотреть свойство для текущего состояния `provisionStatus` подготовка.</span><span class="sxs-lookup"><span data-stu-id="9cffc-108">During schedule provisioning, clients can use the [GET method](schedule-get.md) to get the schedule and look at the `provisionStatus` property for the current state of the provisioning.</span></span> <span data-ttu-id="9cffc-109">Если подготовка не удалась, клиенты могут получить дополнительные сведения из `provisionStatusCode` свойства.</span><span class="sxs-lookup"><span data-stu-id="9cffc-109">If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.</span></span>
 
-<span data-ttu-id="e17ae-110">Клиенты также могут проверить конфигурацию расписания.</span><span class="sxs-lookup"><span data-stu-id="e17ae-110">Clients can also inspect the configuration of the schedule.</span></span>
+<span data-ttu-id="9cffc-110">Клиенты также могут проверить конфигурацию расписания.</span><span class="sxs-lookup"><span data-stu-id="9cffc-110">Clients can also inspect the configuration of the schedule.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="e17ae-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e17ae-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9cffc-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9cffc-111">Permissions</span></span>
 
-<span data-ttu-id="e17ae-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e17ae-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9cffc-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9cffc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e17ae-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e17ae-114">Permission type</span></span>      | <span data-ttu-id="e17ae-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e17ae-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9cffc-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9cffc-114">Permission type</span></span>      | <span data-ttu-id="9cffc-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9cffc-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e17ae-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e17ae-116">Delegated (work or school account)</span></span> | <span data-ttu-id="e17ae-117">Schedule.ReadWrite.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e17ae-117">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e17ae-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e17ae-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e17ae-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e17ae-119">Not supported.</span></span>    |
-|<span data-ttu-id="e17ae-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="e17ae-120">Application</span></span> | <span data-ttu-id="e17ae-121">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e17ae-121">Schedule.ReadWrite.All</span></span> |
+|<span data-ttu-id="9cffc-116">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9cffc-116">Delegated (work or school account)</span></span> | <span data-ttu-id="9cffc-117">Schedule.ReadWrite.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cffc-117">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9cffc-118">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9cffc-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cffc-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9cffc-119">Not supported.</span></span>    |
+|<span data-ttu-id="9cffc-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="9cffc-120">Application</span></span> | <span data-ttu-id="9cffc-121">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cffc-121">Schedule.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e17ae-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e17ae-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9cffc-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9cffc-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,30 +46,30 @@ ms.locfileid: "52786336"
 PUT /teams/{teamId}/schedule
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e17ae-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e17ae-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9cffc-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9cffc-123">Request headers</span></span>
 
-| <span data-ttu-id="e17ae-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e17ae-124">Header</span></span>       | <span data-ttu-id="e17ae-125">Значение</span><span class="sxs-lookup"><span data-stu-id="e17ae-125">Value</span></span> |
+| <span data-ttu-id="9cffc-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9cffc-124">Header</span></span>       | <span data-ttu-id="9cffc-125">Значение</span><span class="sxs-lookup"><span data-stu-id="9cffc-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e17ae-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e17ae-126">Authorization</span></span>  | <span data-ttu-id="e17ae-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e17ae-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e17ae-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e17ae-129">Content-Type</span></span>  | <span data-ttu-id="e17ae-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e17ae-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="9cffc-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9cffc-126">Authorization</span></span>  | <span data-ttu-id="9cffc-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9cffc-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9cffc-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9cffc-129">Content-Type</span></span>  | <span data-ttu-id="9cffc-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9cffc-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e17ae-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e17ae-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9cffc-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9cffc-132">Request body</span></span>
 
-<span data-ttu-id="e17ae-133">В теле запроса поставляем JSON-представление объекта [расписания.](../resources/schedule.md)</span><span class="sxs-lookup"><span data-stu-id="e17ae-133">In the request body, supply a JSON representation of a [schedule](../resources/schedule.md) object.</span></span>
+<span data-ttu-id="9cffc-133">В теле запроса поставляем JSON-представление объекта [расписания.](../resources/schedule.md)</span><span class="sxs-lookup"><span data-stu-id="9cffc-133">In the request body, supply a JSON representation of a [schedule](../resources/schedule.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e17ae-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="e17ae-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9cffc-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cffc-134">Response</span></span>
 
-<span data-ttu-id="e17ae-135">В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [расписания](../resources/schedule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="e17ae-135">If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.</span></span>
+<span data-ttu-id="9cffc-135">В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [расписания](../resources/schedule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="9cffc-135">If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e17ae-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="e17ae-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9cffc-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="9cffc-136">Examples</span></span>
 
-### <a name="example-1-update-a-schedule"></a><span data-ttu-id="e17ae-137">Пример 1. Обновление расписания</span><span class="sxs-lookup"><span data-stu-id="e17ae-137">Example 1: Update a schedule</span></span>
+### <a name="example-1-update-a-schedule"></a><span data-ttu-id="9cffc-137">Пример 1. Обновление расписания</span><span class="sxs-lookup"><span data-stu-id="9cffc-137">Example 1: Update a schedule</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e17ae-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="e17ae-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9cffc-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="9cffc-138">Request</span></span>
 
-<span data-ttu-id="e17ae-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e17ae-139">The following is an example of the request.</span></span>
+<span data-ttu-id="9cffc-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9cffc-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e17ae-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="e17ae-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9cffc-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="9cffc-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule"
@@ -83,28 +83,29 @@ Content-type: application/json
   "timeZone": "America/Chicago"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e17ae-141">C#</span><span class="sxs-lookup"><span data-stu-id="e17ae-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9cffc-141">C#</span><span class="sxs-lookup"><span data-stu-id="9cffc-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e17ae-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e17ae-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9cffc-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9cffc-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e17ae-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e17ae-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9cffc-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9cffc-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/team-put-schedule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e17ae-144">Java</span><span class="sxs-lookup"><span data-stu-id="e17ae-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9cffc-144">Java</span><span class="sxs-lookup"><span data-stu-id="9cffc-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/team-put-schedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
-#### <a name="response"></a><span data-ttu-id="e17ae-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="e17ae-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9cffc-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cffc-145">Response</span></span>
 
-<span data-ttu-id="e17ae-146">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e17ae-146">The following is an example of the response.</span></span> 
+<span data-ttu-id="9cffc-146">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9cffc-146">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="e17ae-147">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e17ae-147">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="9cffc-147">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="9cffc-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,15 +131,15 @@ Content-length: 401
 }
 ```
 
-### <a name="example-2-enable-location-detection-for-time-clock"></a><span data-ttu-id="e17ae-148">Пример 2. Включить обнаружение местоположения для часов времени</span><span class="sxs-lookup"><span data-stu-id="e17ae-148">Example 2: Enable location detection for time clock</span></span>
+### <a name="example-2-enable-location-detection-for-time-clock"></a><span data-ttu-id="9cffc-148">Пример 2. Включить обнаружение местоположения для часов времени</span><span class="sxs-lookup"><span data-stu-id="9cffc-148">Example 2: Enable location detection for time clock</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e17ae-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="e17ae-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9cffc-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="9cffc-149">Request</span></span>
 
-<span data-ttu-id="e17ae-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e17ae-150">The following is an example of the request.</span></span>
+<span data-ttu-id="9cffc-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9cffc-150">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "team-put-schedule"
+  "name": "team-put-schedule-2"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule
@@ -163,11 +164,11 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
 } 
 ```
 
-#### <a name="response"></a><span data-ttu-id="e17ae-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="e17ae-151">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9cffc-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cffc-151">Response</span></span>
 
-<span data-ttu-id="e17ae-152">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e17ae-152">The following is an example of the response.</span></span> 
+<span data-ttu-id="9cffc-152">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9cffc-152">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="e17ae-153">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e17ae-153">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="9cffc-153">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="9cffc-153">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

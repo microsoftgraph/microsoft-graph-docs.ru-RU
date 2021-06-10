@@ -1,0 +1,22 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 515b1c88dddeb633abaa9339f20bac1e64c23c2c
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869613"
+---
+```javascript
+
+const options = {
+    authProvider,
+};
+
+const client = Client.init(options);
+
+await client.api('/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2/removeEmail')
+    .version('beta')
+    .post();
+
+```

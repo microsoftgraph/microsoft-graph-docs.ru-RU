@@ -5,30 +5,30 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b54b95f3db35d744d400fb50a221cdfdad12890b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 8c4e737187726f45bb546ea16d09d3ce476401fa
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682922"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52869499"
 ---
-# <a name="get-authenticationmethodspolicy"></a><span data-ttu-id="3ffd9-103">Получить проверку подлинностиMethodsPolicy</span><span class="sxs-lookup"><span data-stu-id="3ffd9-103">Get authenticationMethodsPolicy</span></span>
-<span data-ttu-id="3ffd9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3ffd9-104">Namespace: microsoft.graph</span></span>
+# <a name="get-authenticationmethodspolicy"></a><span data-ttu-id="89cb1-103">Получить проверку подлинностиMethodsPolicy</span><span class="sxs-lookup"><span data-stu-id="89cb1-103">Get authenticationMethodsPolicy</span></span>
+<span data-ttu-id="89cb1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89cb1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3ffd9-105">Ознакомьтесь с свойствами и отношениями объекта [authenticationMethodsPolicy.](../resources/authenticationmethodspolicy.md)</span><span class="sxs-lookup"><span data-stu-id="3ffd9-105">Read the properties and relationships of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.</span></span>
+<span data-ttu-id="89cb1-105">Ознакомьтесь с свойствами и отношениями объекта [authenticationMethodsPolicy.](../resources/authenticationmethodspolicy.md)</span><span class="sxs-lookup"><span data-stu-id="89cb1-105">Read the properties and relationships of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3ffd9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3ffd9-106">Permissions</span></span>
-<span data-ttu-id="3ffd9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3ffd9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="89cb1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="89cb1-106">Permissions</span></span>
+<span data-ttu-id="89cb1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89cb1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3ffd9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3ffd9-109">Permission type</span></span>|<span data-ttu-id="3ffd9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3ffd9-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="89cb1-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="89cb1-109">Permission type</span></span>|<span data-ttu-id="89cb1-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="89cb1-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3ffd9-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3ffd9-111">Delegated (work or school account)</span></span>|<span data-ttu-id="3ffd9-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="3ffd9-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
-|<span data-ttu-id="3ffd9-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3ffd9-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3ffd9-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3ffd9-114">Not supported.</span></span>|
-|<span data-ttu-id="3ffd9-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3ffd9-115">Application</span></span>|<span data-ttu-id="3ffd9-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="3ffd9-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="89cb1-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="89cb1-111">Delegated (work or school account)</span></span>|<span data-ttu-id="89cb1-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="89cb1-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="89cb1-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="89cb1-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="89cb1-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="89cb1-114">Not supported.</span></span>|
+|<span data-ttu-id="89cb1-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="89cb1-115">Application</span></span>|<span data-ttu-id="89cb1-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="89cb1-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3ffd9-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3ffd9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="89cb1-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="89cb1-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,24 +38,26 @@ ms.locfileid: "52682922"
 GET /policies/authenticationMethodsPolicy
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3ffd9-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3ffd9-118">Optional query parameters</span></span>
-<span data-ttu-id="3ffd9-119">Этот метод не поддерживает параметры необязательных запросов.</span><span class="sxs-lookup"><span data-stu-id="3ffd9-119">This method does not support any optional query parameters.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="89cb1-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="89cb1-118">Optional query parameters</span></span>
+<span data-ttu-id="89cb1-119">Этот метод не поддерживает параметры необязательных запросов.</span><span class="sxs-lookup"><span data-stu-id="89cb1-119">This method does not support any optional query parameters.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3ffd9-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3ffd9-120">Request headers</span></span>
-|<span data-ttu-id="3ffd9-121">Имя</span><span class="sxs-lookup"><span data-stu-id="3ffd9-121">Name</span></span>|<span data-ttu-id="3ffd9-122">Описание</span><span class="sxs-lookup"><span data-stu-id="3ffd9-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="89cb1-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="89cb1-120">Request headers</span></span>
+|<span data-ttu-id="89cb1-121">Имя</span><span class="sxs-lookup"><span data-stu-id="89cb1-121">Name</span></span>|<span data-ttu-id="89cb1-122">Описание</span><span class="sxs-lookup"><span data-stu-id="89cb1-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="3ffd9-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3ffd9-123">Authorization</span></span>|<span data-ttu-id="3ffd9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3ffd9-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="89cb1-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="89cb1-123">Authorization</span></span>|<span data-ttu-id="89cb1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="89cb1-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3ffd9-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3ffd9-126">Request body</span></span>
-<span data-ttu-id="3ffd9-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3ffd9-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="89cb1-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="89cb1-126">Request body</span></span>
+<span data-ttu-id="89cb1-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="89cb1-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3ffd9-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ffd9-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="89cb1-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="89cb1-128">Response</span></span>
 
-<span data-ttu-id="3ffd9-129">В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="3ffd9-129">If successful, this method returns a `200 OK` response code and an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object in the response body.</span></span>
+<span data-ttu-id="89cb1-129">В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="89cb1-129">If successful, this method returns a `200 OK` response code and an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3ffd9-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="3ffd9-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="89cb1-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="89cb1-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="3ffd9-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="3ffd9-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="89cb1-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="89cb1-131">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="89cb1-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="89cb1-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_authenticationmethodspolicy"
@@ -64,10 +66,28 @@ GET /policies/authenticationMethodsPolicy
 ``` http
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 ```
+# <a name="c"></a>[<span data-ttu-id="89cb1-133">C#</span><span class="sxs-lookup"><span data-stu-id="89cb1-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethodspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="89cb1-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="89cb1-134">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationmethodspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="89cb1-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="89cb1-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-authenticationmethodspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="89cb1-136">Java</span><span class="sxs-lookup"><span data-stu-id="89cb1-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethodspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-### <a name="response"></a><span data-ttu-id="3ffd9-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ffd9-132">Response</span></span>
-<span data-ttu-id="3ffd9-133">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="3ffd9-133">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+### <a name="response"></a><span data-ttu-id="89cb1-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="89cb1-137">Response</span></span>
+<span data-ttu-id="89cb1-138">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="89cb1-138">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,34 +5,34 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1635e8c524b25b3795bf90f03449eddf259ff208
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b606388e32b79aab75a0438b6634cca78e5641b7
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787905"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870656"
 ---
-# <a name="list-timecard"></a><span data-ttu-id="6ab3c-103">Список timeCard</span><span class="sxs-lookup"><span data-stu-id="6ab3c-103">List timeCard</span></span>
+# <a name="list-timecard"></a><span data-ttu-id="c688e-103">Список timeCard</span><span class="sxs-lookup"><span data-stu-id="c688e-103">List timeCard</span></span>
 
-<span data-ttu-id="6ab3c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6ab3c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c688e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c688e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6ab3c-105">Извлечение списка [записей timeCard](../resources/timecard.md) в расписании. [](../resources/schedule.md)</span><span class="sxs-lookup"><span data-stu-id="6ab3c-105">Retrieve a list of [timeCard](../resources/timecard.md) entries in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="c688e-105">Извлечение списка [записей timeCard](../resources/timecard.md) в расписании. [](../resources/schedule.md)</span><span class="sxs-lookup"><span data-stu-id="c688e-105">Retrieve a list of [timeCard](../resources/timecard.md) entries in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6ab3c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6ab3c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c688e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c688e-106">Permissions</span></span>
 
-<span data-ttu-id="6ab3c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6ab3c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c688e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c688e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6ab3c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6ab3c-109">Permission type</span></span>      | <span data-ttu-id="6ab3c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6ab3c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c688e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c688e-109">Permission type</span></span>      | <span data-ttu-id="c688e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c688e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6ab3c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6ab3c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6ab3c-112">Schedule.Read.All, Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ab3c-112">Schedule.Read.All, Schedule.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6ab3c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6ab3c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ab3c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-114">Not supported.</span></span>    |
-|<span data-ttu-id="6ab3c-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="6ab3c-115">Application</span></span> | <span data-ttu-id="6ab3c-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="6ab3c-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
+|<span data-ttu-id="c688e-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c688e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c688e-112">Schedule.Read.All, Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c688e-112">Schedule.Read.All, Schedule.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c688e-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c688e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c688e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c688e-114">Not supported.</span></span>    |
+|<span data-ttu-id="c688e-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="c688e-115">Application</span></span> | <span data-ttu-id="c688e-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="c688e-116">Schedule.Read.All *, Schedule.ReadWrite.All*</span></span> |
 
-><span data-ttu-id="6ab3c-117">\***Важно:** При использовании разрешений приложения необходимо включить в запрос `MS-APP-ACTS-AS` заготвую.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-117">\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.</span></span>
+><span data-ttu-id="c688e-117">\***Важно:** При использовании разрешений приложения необходимо включить в запрос `MS-APP-ACTS-AS` заготвую.</span><span class="sxs-lookup"><span data-stu-id="c688e-117">\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6ab3c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6ab3c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c688e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c688e-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,45 +40,63 @@ ms.locfileid: "52787905"
 GET /teams/{teamId}/schedule/timecards
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6ab3c-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6ab3c-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c688e-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c688e-119">Optional query parameters</span></span>
 
-<span data-ttu-id="6ab3c-120">Этот метод поддерживает `$filter` параметры `$orderBy` запроса `$top` `$skipToken` OData, которые помогут настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-120">This method supports the `$filter`, `$orderBy`, `$top`, `$skipToken` OData query parameters to help customize the response.</span></span> <span data-ttu-id="6ab3c-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="6ab3c-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="c688e-120">Этот метод поддерживает `$filter` параметры `$orderBy` запроса `$top` `$skipToken` OData, которые помогут настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="c688e-120">This method supports the `$filter`, `$orderBy`, `$top`, `$skipToken` OData query parameters to help customize the response.</span></span> <span data-ttu-id="c688e-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="c688e-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6ab3c-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6ab3c-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c688e-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c688e-122">Request headers</span></span>
 
-| <span data-ttu-id="6ab3c-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6ab3c-123">Header</span></span>       | <span data-ttu-id="6ab3c-124">Значение</span><span class="sxs-lookup"><span data-stu-id="6ab3c-124">Value</span></span> |
+| <span data-ttu-id="c688e-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c688e-123">Header</span></span>       | <span data-ttu-id="c688e-124">Значение</span><span class="sxs-lookup"><span data-stu-id="c688e-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6ab3c-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6ab3c-125">Authorization</span></span>  | <span data-ttu-id="6ab3c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6ab3c-128">MS-APP-ACTS-AS</span><span class="sxs-lookup"><span data-stu-id="6ab3c-128">MS-APP-ACTS-AS</span></span> | <span data-ttu-id="6ab3c-129">ID пользователя, от имени которого действует приложение.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-129">The ID of the user on behalf of whom the app is acting.</span></span> <span data-ttu-id="6ab3c-130">Требуется при использовании области разрешений приложения.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-130">Required when you use the application permission scope.</span></span> |
+| <span data-ttu-id="c688e-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c688e-125">Authorization</span></span>  | <span data-ttu-id="c688e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c688e-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c688e-128">MS-APP-ACTS-AS</span><span class="sxs-lookup"><span data-stu-id="c688e-128">MS-APP-ACTS-AS</span></span> | <span data-ttu-id="c688e-129">ID пользователя, от имени которого действует приложение.</span><span class="sxs-lookup"><span data-stu-id="c688e-129">The ID of the user on behalf of whom the app is acting.</span></span> <span data-ttu-id="c688e-130">Требуется при использовании области разрешений приложения.</span><span class="sxs-lookup"><span data-stu-id="c688e-130">Required when you use the application permission scope.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6ab3c-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6ab3c-131">Request body</span></span>
-<span data-ttu-id="6ab3c-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c688e-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c688e-131">Request body</span></span>
+<span data-ttu-id="c688e-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c688e-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6ab3c-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="6ab3c-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c688e-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="c688e-133">Response</span></span>
 
-<span data-ttu-id="6ab3c-134">В случае успешной работы этот метод возвращает код отклика и список объектов `200 OK` [timeCard](../resources/timeCard.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-134">If successful, this method returns a `200 OK` response code and a list of [timeCard](../resources/timeCard.md) objects in the response body.</span></span>
+<span data-ttu-id="c688e-134">В случае успешной работы этот метод возвращает код отклика и список объектов `200 OK` [timeCard](../resources/timeCard.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="c688e-134">If successful, this method returns a `200 OK` response code and a list of [timeCard](../resources/timeCard.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6ab3c-135">Пример</span><span class="sxs-lookup"><span data-stu-id="6ab3c-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c688e-135">Пример</span><span class="sxs-lookup"><span data-stu-id="c688e-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6ab3c-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="6ab3c-136">Request</span></span>
-<span data-ttu-id="6ab3c-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-137">The following is an example of the request.</span></span> 
+### <a name="request"></a><span data-ttu-id="c688e-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="c688e-136">Request</span></span>
+<span data-ttu-id="c688e-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c688e-137">The following is an example of the request.</span></span> 
 
-# <a name="http"></a>[<span data-ttu-id="6ab3c-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="6ab3c-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c688e-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="c688e-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timecard-list"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards?$top=2&$filter=state eq 'clockedOut'
 
 ```
+# <a name="c"></a>[<span data-ttu-id="c688e-139">C#</span><span class="sxs-lookup"><span data-stu-id="c688e-139">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/timecard-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="6ab3c-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="6ab3c-139">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="c688e-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c688e-140">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timecard-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="6ab3c-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-140">The following is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="c688e-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c688e-141">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timecard-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="6ab3c-141">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="6ab3c-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="java"></a>[<span data-ttu-id="c688e-142">Java</span><span class="sxs-lookup"><span data-stu-id="c688e-142">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timecard-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="c688e-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="c688e-143">Response</span></span>
+
+<span data-ttu-id="c688e-144">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c688e-144">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="c688e-145">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="c688e-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
