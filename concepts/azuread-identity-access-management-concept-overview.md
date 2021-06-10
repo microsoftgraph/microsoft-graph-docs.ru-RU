@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 77114f38265e4a7ad494cc8fb743f6c55961774a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e15685f1cf561713b25dc70b87264edd36168067
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760129"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52870761"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Обзор API Azure AD для управления идентификацией и доступом
 
@@ -20,7 +20,7 @@ Azure Active Directory (Azure AD) помогает централизовать 
 
 ## <a name="why-use-the-azure-ad-apis"></a>Зачем использовать API Azure AD?
 
-Более 15 миллионов организаций используют Azure AD и при этом имеют подписки на облачные службы Майкрософт, например Microsoft 365, Microsoft Azure, Enterprise Mobility Suite или Microsoft 365.
+Более 15 миллионов организаций используют Azure AD и при этом имеют подписки на облачные службы Майкрософт, например Microsoft 365, Microsoft Azure и Enterprise Mobility Suite.
 
 С помощью Microsoft Graph корпоративные разработчики могут интегрировать службу управления удостоверениями Azure AD и другие службы для автоматизации рабочих процессов администрирования, например для адаптации сотрудников (и завершения их работы в организации), обслуживания профилей, развертывания лицензий и многого другого.
 

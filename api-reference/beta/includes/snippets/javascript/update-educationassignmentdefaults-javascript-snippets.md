@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f9b631940036d11628b7110c8084fc667b43166f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1ab4fcd1a720ff4e758c33f28db741d85fb860cc
+ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50784339"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52871607"
 ---
 ```javascript
 
@@ -17,6 +17,7 @@ const client = Client.init(options);
 
 const educationAssignmentDefaults = {
   addedStudentAction: 'assignIfOpen',
+  addToCalendarAction: 'studentsAndTeamOwners',
   notificationChannelUrl: 'https://graph.microsoft.com/beta/teams(\'id\')/channels(\'id\')'
 };
 
