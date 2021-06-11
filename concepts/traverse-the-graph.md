@@ -3,12 +3,12 @@ title: Доступ к данным и методам с помощью Microsof
 description: Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 22f396f3ceb050f0802ac77e51e5445f5f4c871c
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 49d93659c17400aba84f1ed427648965856faef2
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288491"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896657"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Доступ к данным и методам с помощью Microsoft Graph
 
@@ -19,14 +19,15 @@ ms.locfileid: "48288491"
 Документ метаданных ($metadata) публикуется в корневом каталоге службы. По указанным ниже URL-адресам можно просмотреть сервисный документ для версии 1.0 и бета-версии API Microsoft Graph.
 
 **Метаданные API Microsoft Graph 1.0**
-```
-    https://graph.microsoft.com/v1.0/$metadata
+
+```msgraph-interactive
+https://graph.microsoft.com/v1.0/$metadata
 ```
 
 **Метаданные API Microsoft Graph (бета-версия)**
 
-```
-    https://graph.microsoft.com/beta/$metadata
+```msgraph-interactive
+https://graph.microsoft.com/beta/$metadata
 ```
 
 Метаданные позволяют разобраться в модели данных Microsoft Graph, в том числе типах объектов, сложных типах и перечислениях, из которых состоят ресурсы, представленные в пакетах запросов и откликов. 
@@ -44,16 +45,16 @@ ms.locfileid: "48288491"
 
 Microsoft Graph позволяет просматривать ресурсы в клиенте с помощью HTTP-запросов `GET`. Отклик на запрос включает свойства каждого ресурса. Каждый ресурс объекта определяется по соответствующему идентификатору. ИД ресурса может быть GUID, его формат обычно зависит от типа ресурса.
 
-Например, можно получить коллекцию ресурсов [user](/graph/api/resources/user?view=graph-rest-1.0), определенных в клиенте:
+Например, можно получить коллекцию ресурсов [user](/graph/api/resources/user), определенных в клиенте:
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 При успешном выполнении запроса будет получен отклик 200 OK, который содержит полезные данные с коллекцией ресурсов **user**. Каждый объект user идентифицируется по свойству **id** и сопровождается свойствами по умолчанию. Полезные данные, показанные ниже, усечены для краткости.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -94,16 +95,16 @@ Content-type: application/json
 }
 ```
 
-Microsoft Graph позволяет также просматривать коллекции, переходя к нужному отношению, которым связаны ресурсы. Например, применяя свойство навигации **mailFolders** объекта user, вы можете запрашивать коллекцию ресурсов [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) в почтовом ящике пользователя:
+Microsoft Graph позволяет также просматривать коллекции, переходя к нужному отношению, которым связаны ресурсы. Например, применяя свойство навигации **mailFolders** объекта user, вы можете запрашивать коллекцию ресурсов [mailFolder](/graph/api/resources/mailfolder) в почтовом ящике пользователя:
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-При успешном выполнении запроса будет получен отклик 200 OK, который содержит полезные данные с коллекцией ресурсов [mailFolder](/graph/api/resources/user?view=graph-rest-1.0). Каждый объект **mailFolder** определяется по его свойству **id** и сопровождается другими свойствами. Полезные данные, показанные ниже, усечены для краткости.
+При успешном выполнении запроса будет получен отклик 200 OK, который содержит полезные данные с коллекцией ресурсов [mailFolder](/graph/api/resources/user). Каждый объект **mailFolder** определяется по его свойству **id** и сопровождается другими свойствами. Полезные данные, показанные ниже, усечены для краткости.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -147,14 +148,14 @@ Content-type: application/json
 
 В следующем примере запроса в качестве идентификатора используется значение **userPrincipalName**.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 При успешном выполнении запроса будет получен отклик 200 OK, содержащий полезные данные с представлением ресурса user, как показано ниже.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 982
@@ -176,14 +177,14 @@ content-length: 982
 ## <a name="read-specific-properties-of-a-resource"></a>Чтение определенных свойств ресурса
 Чтобы получить только биографические данные пользователя, например предоставленное им описание в разделе _Обо мне_ и набор квалификационных навыков, в предыдущий запрос можно добавить параметр [$select](query-parameters.md), как показано в следующем примере.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 169
@@ -206,14 +207,14 @@ content-length: 169
 
 Например, чтобы запросить имена элементов на диске вошедшего пользователя, можно отправить следующий HTTPS-запрос GET.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 При успешном ответе возвращаются код состояния 200 OK и полезные данные, содержащие только имена общих файлов, как показано в следующем примере.
 
-```no-highlight
+```
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
   "value": [
@@ -236,14 +237,14 @@ Authorization : Bearer {access_token}
 ## <a name="traverse-from-one-resource-to-another-via-relationship"></a>Переход от одного ресурса к другому с помощью отношения
 Руководитель состоит в отношении **directReports** со своими подчиненными. Чтобы запросить список подчиненных пользователя, можно использовать приведенный ниже HTTPS-запрос GET для перехода к целевому объекту с помощью отношения.
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 152
@@ -262,7 +263,7 @@ content-length: 152
 Аналогичным образом можно переходить к ресурсам, используя их отношения. Например, отношение user-messages позволяет перейти от пользователя Azure Active Directory (AD) к набору сообщений Outlook. В приведенном ниже примере показано, как это сделать в вызове REST API.
 
 
-```no-highlight
+```
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
 Authorization : Bearer {access_token}
 ```
@@ -271,7 +272,7 @@ Authorization : Bearer {access_token}
 При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.
 
 
-```no-highlight
+```
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 odata-version: 4.0
@@ -309,7 +310,7 @@ content-length: 147
 ## <a name="call-actions-and-functions"></a>Вызов действий и функций
 Microsoft Graph также поддерживает _действия_ и _функции_ для выполнения с ресурсами действий, отличных от простых операций CRUD (создание, чтение, обновление и удаление). Они часто имеют форму HTTPS-запросов POST, принимающих аргументы для действия или функции. Например, с помощью указанного ниже действия вошедший пользователь (`me`) может отправить сообщение электронной почты.
 
-```no-highlight
+```
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer {access_token}
 content-type: application/json
