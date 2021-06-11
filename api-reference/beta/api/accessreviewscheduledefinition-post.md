@@ -5,77 +5,77 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ba1ce2b94cef8b37da03c655ccc2a687c2557cfd
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 5246033739817a76f7e4bb142a88e45bd1559f83
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780836"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896188"
 ---
-# <a name="create-accessreviewscheduledefinition"></a><span data-ttu-id="90ec4-103">Создание accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="90ec4-103">Create accessReviewScheduleDefinition</span></span>
+# <a name="create-accessreviewscheduledefinition"></a><span data-ttu-id="8a0df-103">Создание accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="8a0df-103">Create accessReviewScheduleDefinition</span></span>
 
-<span data-ttu-id="90ec4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="90ec4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8a0df-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a0df-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="90ec4-105">Создайте новый [объект accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="90ec4-105">Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+<span data-ttu-id="8a0df-105">Создайте новый [объект accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="8a0df-105">Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="90ec4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="90ec4-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8a0df-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8a0df-106">Permissions</span></span>
 
-<span data-ttu-id="90ec4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="90ec4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8a0df-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a0df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="90ec4-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="90ec4-109">Permission type</span></span>                        | <span data-ttu-id="90ec4-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="90ec4-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8a0df-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8a0df-109">Permission type</span></span>                        | <span data-ttu-id="8a0df-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8a0df-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="90ec4-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="90ec4-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="90ec4-112">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="90ec4-112">AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="90ec4-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="90ec4-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="90ec4-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="90ec4-114">Not supported.</span></span>|
-|<span data-ttu-id="90ec4-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="90ec4-115">Application</span></span>                            | <span data-ttu-id="90ec4-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="90ec4-116">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="8a0df-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8a0df-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8a0df-112">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a0df-112">AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="8a0df-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8a0df-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8a0df-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a0df-114">Not supported.</span></span>|
+|<span data-ttu-id="8a0df-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="8a0df-115">Application</span></span>                            | <span data-ttu-id="8a0df-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a0df-116">AccessReview.ReadWrite.All</span></span> |
 
-<span data-ttu-id="90ec4-117">При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.</span><span class="sxs-lookup"><span data-stu-id="90ec4-117">The signed-in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="90ec4-118">Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)</span><span class="sxs-lookup"><span data-stu-id="90ec4-118">For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).</span></span>
+<span data-ttu-id="8a0df-117">При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.</span><span class="sxs-lookup"><span data-stu-id="8a0df-117">The signed-in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="8a0df-118">Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)</span><span class="sxs-lookup"><span data-stu-id="8a0df-118">For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-root.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="90ec4-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="90ec4-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8a0df-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a0df-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /identityGovernance/accessReviews/definitions
 ```
-## <a name="request-headers"></a><span data-ttu-id="90ec4-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="90ec4-120">Request headers</span></span>
-| <span data-ttu-id="90ec4-121">Имя</span><span class="sxs-lookup"><span data-stu-id="90ec4-121">Name</span></span>         | <span data-ttu-id="90ec4-122">Описание</span><span class="sxs-lookup"><span data-stu-id="90ec4-122">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="8a0df-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8a0df-120">Request headers</span></span>
+| <span data-ttu-id="8a0df-121">Имя</span><span class="sxs-lookup"><span data-stu-id="8a0df-121">Name</span></span>         | <span data-ttu-id="8a0df-122">Описание</span><span class="sxs-lookup"><span data-stu-id="8a0df-122">Description</span></span> |
 |:-------------|:------------|
-|<span data-ttu-id="90ec4-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="90ec4-123">Authorization</span></span>|<span data-ttu-id="90ec4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="90ec4-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="90ec4-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="90ec4-126">Content-type</span></span> | <span data-ttu-id="90ec4-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="90ec4-p104">application/json. Required.</span></span> |
+|<span data-ttu-id="8a0df-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8a0df-123">Authorization</span></span>|<span data-ttu-id="8a0df-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a0df-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="8a0df-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8a0df-126">Content-type</span></span> | <span data-ttu-id="8a0df-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a0df-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="90ec4-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="90ec4-129">Request body</span></span>
-<span data-ttu-id="90ec4-130">В теле запроса поставляем представление JSON объекта [accessReview.](../resources/accessreview.md)</span><span class="sxs-lookup"><span data-stu-id="90ec4-130">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8a0df-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8a0df-129">Request body</span></span>
+<span data-ttu-id="8a0df-130">В теле запроса поставляем представление JSON объекта [accessReview.](../resources/accessreview.md)</span><span class="sxs-lookup"><span data-stu-id="8a0df-130">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="90ec4-131">В следующей таблице показаны свойства, принятые для создания accessReview.</span><span class="sxs-lookup"><span data-stu-id="90ec4-131">The following table shows the properties accepted to create an accessReview.</span></span>
+<span data-ttu-id="8a0df-131">В следующей таблице показаны свойства, принятые для создания accessReview.</span><span class="sxs-lookup"><span data-stu-id="8a0df-131">The following table shows the properties accepted to create an accessReview.</span></span>
 
-| <span data-ttu-id="90ec4-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="90ec4-132">Property</span></span> | <span data-ttu-id="90ec4-133">Тип</span><span class="sxs-lookup"><span data-stu-id="90ec4-133">Type</span></span> | <span data-ttu-id="90ec4-134">Описание</span><span class="sxs-lookup"><span data-stu-id="90ec4-134">Description</span></span> |
+| <span data-ttu-id="8a0df-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="8a0df-132">Property</span></span> | <span data-ttu-id="8a0df-133">Тип</span><span class="sxs-lookup"><span data-stu-id="8a0df-133">Type</span></span> | <span data-ttu-id="8a0df-134">Описание</span><span class="sxs-lookup"><span data-stu-id="8a0df-134">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="90ec4-135">displayName</span><span class="sxs-lookup"><span data-stu-id="90ec4-135">displayName</span></span> | <span data-ttu-id="90ec4-136">String</span><span class="sxs-lookup"><span data-stu-id="90ec4-136">String</span></span> | <span data-ttu-id="90ec4-137">Имя серии обзоров доступа.</span><span class="sxs-lookup"><span data-stu-id="90ec4-137">Name of access review series.</span></span> <span data-ttu-id="90ec4-138">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="90ec4-138">Required.</span></span>|
-| <span data-ttu-id="90ec4-139">descriptionForAdmins</span><span class="sxs-lookup"><span data-stu-id="90ec4-139">descriptionForAdmins</span></span> | <span data-ttu-id="90ec4-140">Строка</span><span class="sxs-lookup"><span data-stu-id="90ec4-140">string</span></span> | <span data-ttu-id="90ec4-141">Контекст обзора, предоставленного администраторам.</span><span class="sxs-lookup"><span data-stu-id="90ec4-141">Context of the review provided to admins.</span></span> <span data-ttu-id="90ec4-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="90ec4-142">Required.</span></span> |
-  <span data-ttu-id="90ec4-143">descriptionForReviewers</span><span class="sxs-lookup"><span data-stu-id="90ec4-143">descriptionForReviewers</span></span> | <span data-ttu-id="90ec4-144">Строка</span><span class="sxs-lookup"><span data-stu-id="90ec4-144">string</span></span> | <span data-ttu-id="90ec4-145">Контекст обзора, предоставленного рецензентам.</span><span class="sxs-lookup"><span data-stu-id="90ec4-145">Context of the review provided to reviewers.</span></span> <span data-ttu-id="90ec4-146">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="90ec4-146">Required.</span></span> |
-| <span data-ttu-id="90ec4-147">scope</span><span class="sxs-lookup"><span data-stu-id="90ec4-147">scope</span></span> | [<span data-ttu-id="90ec4-148">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="90ec4-148">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="90ec4-149">Определяет область пользователей, рассмотренных в группе.</span><span class="sxs-lookup"><span data-stu-id="90ec4-149">Defines the scope of users reviewed in a group.</span></span> <span data-ttu-id="90ec4-150">Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="90ec4-150">See  [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span> <span data-ttu-id="90ec4-151">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="90ec4-151">Required.</span></span>| 
-| <span data-ttu-id="90ec4-152">instanceEnumerationScope</span><span class="sxs-lookup"><span data-stu-id="90ec4-152">instanceEnumerationScope</span></span> | [<span data-ttu-id="90ec4-153">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="90ec4-153">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="90ec4-154">В случае проверки всех групп определяется область, в которой будут рассмотрены группы.</span><span class="sxs-lookup"><span data-stu-id="90ec4-154">In the case of an all groups review, this determines the scope of which groups will be reviewed.</span></span> <span data-ttu-id="90ec4-155">Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="90ec4-155">See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span>| 
-| <span data-ttu-id="90ec4-156">settings</span><span class="sxs-lookup"><span data-stu-id="90ec4-156">settings</span></span> | [<span data-ttu-id="90ec4-157">accessReviewScheduleSettings</span><span class="sxs-lookup"><span data-stu-id="90ec4-157">accessReviewScheduleSettings</span></span>](../resources/accessreviewschedulesettings.md)| <span data-ttu-id="90ec4-158">Параметры для серии обзоров доступа.</span><span class="sxs-lookup"><span data-stu-id="90ec4-158">The settings for an access review series.</span></span> <span data-ttu-id="90ec4-159">Здесь определяется повторяемость.</span><span class="sxs-lookup"><span data-stu-id="90ec4-159">Recurrence is determined here.</span></span> <span data-ttu-id="90ec4-160">См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="90ec4-160">See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span></span> |
-| <span data-ttu-id="90ec4-161">рецензенты</span><span class="sxs-lookup"><span data-stu-id="90ec4-161">reviewers</span></span> | <span data-ttu-id="90ec4-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span><span class="sxs-lookup"><span data-stu-id="90ec4-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span> | <span data-ttu-id="90ec4-163">Определяет, кто такие рецензенты.</span><span class="sxs-lookup"><span data-stu-id="90ec4-163">Defines who the reviewers are.</span></span> <span data-ttu-id="90ec4-164">Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа).</span><span class="sxs-lookup"><span data-stu-id="90ec4-164">If none are specified, the review is a self-review (users reviewed review their own access).</span></span> <span data-ttu-id="90ec4-165">См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="90ec4-165">See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span></span> |
+| <span data-ttu-id="8a0df-135">displayName</span><span class="sxs-lookup"><span data-stu-id="8a0df-135">displayName</span></span> | <span data-ttu-id="8a0df-136">String</span><span class="sxs-lookup"><span data-stu-id="8a0df-136">String</span></span> | <span data-ttu-id="8a0df-137">Имя серии обзоров доступа.</span><span class="sxs-lookup"><span data-stu-id="8a0df-137">Name of access review series.</span></span> <span data-ttu-id="8a0df-138">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a0df-138">Required.</span></span>|
+| <span data-ttu-id="8a0df-139">descriptionForAdmins</span><span class="sxs-lookup"><span data-stu-id="8a0df-139">descriptionForAdmins</span></span> | <span data-ttu-id="8a0df-140">string</span><span class="sxs-lookup"><span data-stu-id="8a0df-140">string</span></span> | <span data-ttu-id="8a0df-141">Контекст обзора, предоставленного администраторам.</span><span class="sxs-lookup"><span data-stu-id="8a0df-141">Context of the review provided to admins.</span></span> <span data-ttu-id="8a0df-142">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a0df-142">Required.</span></span> |
+  <span data-ttu-id="8a0df-143">descriptionForReviewers</span><span class="sxs-lookup"><span data-stu-id="8a0df-143">descriptionForReviewers</span></span> | <span data-ttu-id="8a0df-144">string</span><span class="sxs-lookup"><span data-stu-id="8a0df-144">string</span></span> | <span data-ttu-id="8a0df-145">Контекст обзора, предоставленного рецензентам.</span><span class="sxs-lookup"><span data-stu-id="8a0df-145">Context of the review provided to reviewers.</span></span> <span data-ttu-id="8a0df-146">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a0df-146">Required.</span></span> |
+| <span data-ttu-id="8a0df-147">область</span><span class="sxs-lookup"><span data-stu-id="8a0df-147">scope</span></span> | [<span data-ttu-id="8a0df-148">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="8a0df-148">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="8a0df-149">Определяет область пользователей, рассмотренных в группе.</span><span class="sxs-lookup"><span data-stu-id="8a0df-149">Defines the scope of users reviewed in a group.</span></span> <span data-ttu-id="8a0df-150">Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="8a0df-150">See  [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span> <span data-ttu-id="8a0df-151">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a0df-151">Required.</span></span>| 
+| <span data-ttu-id="8a0df-152">instanceEnumerationScope</span><span class="sxs-lookup"><span data-stu-id="8a0df-152">instanceEnumerationScope</span></span> | [<span data-ttu-id="8a0df-153">accessReviewScope</span><span class="sxs-lookup"><span data-stu-id="8a0df-153">accessReviewScope</span></span>](../resources/accessreviewscope.md) | <span data-ttu-id="8a0df-154">В случае проверки всех групп определяется область, в которой будут рассмотрены группы.</span><span class="sxs-lookup"><span data-stu-id="8a0df-154">In the case of an all groups review, this determines the scope of which groups will be reviewed.</span></span> <span data-ttu-id="8a0df-155">Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)</span><span class="sxs-lookup"><span data-stu-id="8a0df-155">See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).</span></span>| 
+| <span data-ttu-id="8a0df-156">settings</span><span class="sxs-lookup"><span data-stu-id="8a0df-156">settings</span></span> | [<span data-ttu-id="8a0df-157">accessReviewScheduleSettings</span><span class="sxs-lookup"><span data-stu-id="8a0df-157">accessReviewScheduleSettings</span></span>](../resources/accessreviewschedulesettings.md)| <span data-ttu-id="8a0df-158">Параметры для серии обзоров доступа.</span><span class="sxs-lookup"><span data-stu-id="8a0df-158">The settings for an access review series.</span></span> <span data-ttu-id="8a0df-159">Здесь определяется повторяемость.</span><span class="sxs-lookup"><span data-stu-id="8a0df-159">Recurrence is determined here.</span></span> <span data-ttu-id="8a0df-160">См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="8a0df-160">See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md).</span></span> |
+| <span data-ttu-id="8a0df-161">рецензенты</span><span class="sxs-lookup"><span data-stu-id="8a0df-161">reviewers</span></span> | <span data-ttu-id="8a0df-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span><span class="sxs-lookup"><span data-stu-id="8a0df-162">[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection</span></span> | <span data-ttu-id="8a0df-163">Определяет, кто такие рецензенты.</span><span class="sxs-lookup"><span data-stu-id="8a0df-163">Defines who the reviewers are.</span></span> <span data-ttu-id="8a0df-164">Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа).</span><span class="sxs-lookup"><span data-stu-id="8a0df-164">If none are specified, the review is a self-review (users reviewed review their own access).</span></span> <span data-ttu-id="8a0df-165">См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="8a0df-165">See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md).</span></span> |
+| <span data-ttu-id="8a0df-166">additionalNotificationRecipients</span><span class="sxs-lookup"><span data-stu-id="8a0df-166">additionalNotificationRecipients</span></span>   |<span data-ttu-id="8a0df-167">[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection</span><span class="sxs-lookup"><span data-stu-id="8a0df-167">[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection</span></span>| <span data-ttu-id="8a0df-168">Определяет список дополнительных пользователей или членов группы, которые будут уведомлены о ходе проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="8a0df-168">Defines the list of additional users or group members to be notified of the access review progress.</span></span> |
+
+## <a name="response"></a><span data-ttu-id="8a0df-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a0df-169">Response</span></span>
+<span data-ttu-id="8a0df-170">В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="8a0df-170">If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="8a0df-171">Примеры</span><span class="sxs-lookup"><span data-stu-id="8a0df-171">Examples</span></span>
+
+### <a name="example-1-create-an-access-review-on-a-group"></a><span data-ttu-id="8a0df-172">Пример 1. Создание обзора доступа для группы</span><span class="sxs-lookup"><span data-stu-id="8a0df-172">Example 1: Create an access review on a group</span></span>
+
+<span data-ttu-id="8a0df-173">Это пример создания обзора доступа со следующими настройками:</span><span class="sxs-lookup"><span data-stu-id="8a0df-173">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="8a0df-174">В обзоре рассматриваются все члены группы, у которых есть **групповой id.** `02f3bafb-448c-487c-88c2-5fd65ce49a41`</span><span class="sxs-lookup"><span data-stu-id="8a0df-174">The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.</span></span>
++ <span data-ttu-id="8a0df-175">Конкретный пользователь, у которого есть **пользовательский ид,** `398164b1-5196-49dd-ada2-364b49f99b27` является рецензентом.</span><span class="sxs-lookup"><span data-stu-id="8a0df-175">A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.</span></span>
++ <span data-ttu-id="8a0df-176">Он повторяется еженедельно и продолжается бесконечно.</span><span class="sxs-lookup"><span data-stu-id="8a0df-176">It recurs weekly and continues indefinitely.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="8a0df-177">Запрос</span><span class="sxs-lookup"><span data-stu-id="8a0df-177">Request</span></span>
+<span data-ttu-id="8a0df-178">В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="8a0df-178">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="90ec4-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="90ec4-166">Response</span></span>
-<span data-ttu-id="90ec4-167">В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="90ec4-167">If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.</span></span>
-
-## <a name="examples"></a><span data-ttu-id="90ec4-168">Примеры</span><span class="sxs-lookup"><span data-stu-id="90ec4-168">Examples</span></span>
-
-### <a name="example-1-create-an-access-review-on-a-group"></a><span data-ttu-id="90ec4-169">Пример 1. Создание обзора доступа для группы</span><span class="sxs-lookup"><span data-stu-id="90ec4-169">Example 1: Create an access review on a group</span></span>
-
-<span data-ttu-id="90ec4-170">Это пример создания обзора доступа со следующими настройками:</span><span class="sxs-lookup"><span data-stu-id="90ec4-170">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="90ec4-171">В обзоре рассматриваются все члены группы, у которых есть **групповой id.** `02f3bafb-448c-487c-88c2-5fd65ce49a41`</span><span class="sxs-lookup"><span data-stu-id="90ec4-171">The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.</span></span>
-+ <span data-ttu-id="90ec4-172">Конкретный пользователь, у которого есть **пользовательский ид,** `398164b1-5196-49dd-ada2-364b49f99b27` является рецензентом.</span><span class="sxs-lookup"><span data-stu-id="90ec4-172">A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.</span></span>
-+ <span data-ttu-id="90ec4-173">Он повторяется еженедельно и продолжается бесконечно.</span><span class="sxs-lookup"><span data-stu-id="90ec4-173">It recurs weekly and continues indefinitely.</span></span>
-
-#### <a name="request"></a><span data-ttu-id="90ec4-174">Запрос</span><span class="sxs-lookup"><span data-stu-id="90ec4-174">Request</span></span>
-<span data-ttu-id="90ec4-175">В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="90ec4-175">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
-
-
-# <a name="http"></a>[<span data-ttu-id="90ec4-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="90ec4-176">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8a0df-179">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a0df-179">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
@@ -97,7 +97,7 @@ Content-type: application/json
       "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
       "queryType": "MicrosoftGraph"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,
@@ -119,27 +119,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="90ec4-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="90ec4-177">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8a0df-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8a0df-180">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="90ec4-178">C#</span><span class="sxs-lookup"><span data-stu-id="90ec4-178">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8a0df-181">C#</span><span class="sxs-lookup"><span data-stu-id="8a0df-181">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="90ec4-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="90ec4-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8a0df-182">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8a0df-182">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="90ec4-180">Java</span><span class="sxs-lookup"><span data-stu-id="90ec4-180">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8a0df-183">Java</span><span class="sxs-lookup"><span data-stu-id="8a0df-183">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="90ec4-181">Отклик</span><span class="sxs-lookup"><span data-stu-id="90ec4-181">Response</span></span>
-><span data-ttu-id="90ec4-182">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="90ec4-182">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="8a0df-184">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a0df-184">Response</span></span>
+><span data-ttu-id="8a0df-185">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8a0df-185">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -173,7 +173,7 @@ Content-type: application/json
       "queryType": "MicrosoftGraph",
       "queryRoot": "decisions"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,
@@ -206,18 +206,18 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a><span data-ttu-id="90ec4-183">Пример 2. Создание обзора доступа для всех групп с неактивными гостевых пользователей</span><span class="sxs-lookup"><span data-stu-id="90ec4-183">Example 2: Create an access review on all teams with inactive guest users</span></span>
+### <a name="example-2-create-an-access-review-on-all-teams-with-inactive-guest-users"></a><span data-ttu-id="8a0df-186">Пример 2. Создание обзора доступа для всех групп с неактивными гостевых пользователей</span><span class="sxs-lookup"><span data-stu-id="8a0df-186">Example 2: Create an access review on all teams with inactive guest users</span></span>
 
-<span data-ttu-id="90ec4-184">Это пример создания обзора доступа со следующими настройками:</span><span class="sxs-lookup"><span data-stu-id="90ec4-184">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="90ec4-185">В обзоре рассматриваются все группы с неактивными гостевых пользователей.</span><span class="sxs-lookup"><span data-stu-id="90ec4-185">The review reviews all teams with inactive guest users.</span></span> <span data-ttu-id="90ec4-186">Период бездействия — 30 дней с даты начала проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="90ec4-186">The period of inactivity is 30 days from the start date of the access review.</span></span>
-+ <span data-ttu-id="90ec4-187">Владельцы групп — это рецензенты и назначены рецензенты откатов.</span><span class="sxs-lookup"><span data-stu-id="90ec4-187">The group owners are the reviewers and fallback reviewers are assigned.</span></span>
-+ <span data-ttu-id="90ec4-188">Он повторяется на третий день каждого квартала и продолжается бесконечно.</span><span class="sxs-lookup"><span data-stu-id="90ec4-188">It recurs on the third day of every quarter and continues indefinitely.</span></span>
-+ <span data-ttu-id="90ec4-189">**autoApplyDecisionsEnabled** устанавливается с `true` **значением defaultDecision.** `Deny`</span><span class="sxs-lookup"><span data-stu-id="90ec4-189">**autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.</span></span>
+<span data-ttu-id="8a0df-187">Это пример создания обзора доступа со следующими настройками:</span><span class="sxs-lookup"><span data-stu-id="8a0df-187">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="8a0df-188">В обзоре рассматриваются все группы с неактивными гостевых пользователей.</span><span class="sxs-lookup"><span data-stu-id="8a0df-188">The review reviews all teams with inactive guest users.</span></span> <span data-ttu-id="8a0df-189">Период бездействия — 30 дней с даты начала проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="8a0df-189">The period of inactivity is 30 days from the start date of the access review.</span></span>
++ <span data-ttu-id="8a0df-190">Владельцы групп — это рецензенты и назначены рецензенты откатов.</span><span class="sxs-lookup"><span data-stu-id="8a0df-190">The group owners are the reviewers and fallback reviewers are assigned.</span></span>
++ <span data-ttu-id="8a0df-191">Он повторяется на третий день каждого квартала и продолжается бесконечно.</span><span class="sxs-lookup"><span data-stu-id="8a0df-191">It recurs on the third day of every quarter and continues indefinitely.</span></span>
++ <span data-ttu-id="8a0df-192">**autoApplyDecisionsEnabled** устанавливается с `true` **значением defaultDecision.** `Deny`</span><span class="sxs-lookup"><span data-stu-id="8a0df-192">**autoApplyDecisionsEnabled** is set to `true` with the **defaultDecision** set to `Deny`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="90ec4-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="90ec4-190">Request</span></span>
-<span data-ttu-id="90ec4-191">В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="90ec4-191">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
+#### <a name="request"></a><span data-ttu-id="8a0df-193">Запрос</span><span class="sxs-lookup"><span data-stu-id="8a0df-193">Request</span></span>
+<span data-ttu-id="8a0df-194">В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)</span><span class="sxs-lookup"><span data-stu-id="8a0df-194">In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="90ec4-192">HTTP</span><span class="sxs-lookup"><span data-stu-id="90ec4-192">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8a0df-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a0df-195">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_inactiveguests_M365"
@@ -276,27 +276,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="90ec4-193">C#</span><span class="sxs-lookup"><span data-stu-id="90ec4-193">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8a0df-196">C#</span><span class="sxs-lookup"><span data-stu-id="8a0df-196">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-inactiveguests-m365-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="90ec4-194">JavaScript</span><span class="sxs-lookup"><span data-stu-id="90ec4-194">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8a0df-197">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8a0df-197">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-inactiveguests-m365-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="90ec4-195">Objective-C</span><span class="sxs-lookup"><span data-stu-id="90ec4-195">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8a0df-198">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8a0df-198">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-inactiveguests-m365-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="90ec4-196">Java</span><span class="sxs-lookup"><span data-stu-id="90ec4-196">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8a0df-199">Java</span><span class="sxs-lookup"><span data-stu-id="8a0df-199">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="90ec4-197">Отклик</span><span class="sxs-lookup"><span data-stu-id="90ec4-197">Response</span></span>
-><span data-ttu-id="90ec4-198">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="90ec4-198">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="8a0df-200">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a0df-200">Response</span></span>
+><span data-ttu-id="8a0df-201">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8a0df-201">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -380,16 +380,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a><span data-ttu-id="90ec4-199">Пример 3. Создание обзора доступа всех пользователей к приложению</span><span class="sxs-lookup"><span data-stu-id="90ec4-199">Example 3: Create an access review of all users to an application</span></span>
+### <a name="example-3-create-an-access-review-of-all-users-to-an-application"></a><span data-ttu-id="8a0df-202">Пример 3. Создание обзора доступа всех пользователей к приложению</span><span class="sxs-lookup"><span data-stu-id="8a0df-202">Example 3: Create an access review of all users to an application</span></span>
 
-<span data-ttu-id="90ec4-200">Это пример создания обзора доступа со следующими настройками:</span><span class="sxs-lookup"><span data-stu-id="90ec4-200">This is an example of creating an access review with the following settings:</span></span>
-+ <span data-ttu-id="90ec4-201">В обзоре проверяется доступ пользователей к приложению.</span><span class="sxs-lookup"><span data-stu-id="90ec4-201">The review reviews user access to an application.</span></span>
-+ <span data-ttu-id="90ec4-202">Менеджеры людей — это рецензенты, а рецензенты откатов — члены группы.</span><span class="sxs-lookup"><span data-stu-id="90ec4-202">The people managers are the reviewers and fallback reviewers are the members of a group.</span></span>
-+ <span data-ttu-id="90ec4-203">Он повторяется в течение полугода и заканчивается 1 год с началаDate.</span><span class="sxs-lookup"><span data-stu-id="90ec4-203">It recurs semi-annually and ends 1 year from the startDate.</span></span>
+<span data-ttu-id="8a0df-203">Это пример создания обзора доступа со следующими настройками:</span><span class="sxs-lookup"><span data-stu-id="8a0df-203">This is an example of creating an access review with the following settings:</span></span>
++ <span data-ttu-id="8a0df-204">В обзоре проверяется доступ пользователей к приложению.</span><span class="sxs-lookup"><span data-stu-id="8a0df-204">The review reviews user access to an application.</span></span>
++ <span data-ttu-id="8a0df-205">Менеджеры людей — это рецензенты, а рецензенты откатов — члены группы.</span><span class="sxs-lookup"><span data-stu-id="8a0df-205">The people managers are the reviewers and fallback reviewers are the members of a group.</span></span>
++ <span data-ttu-id="8a0df-206">Он повторяется в течение полугода и заканчивается 1 год с началаDate.</span><span class="sxs-lookup"><span data-stu-id="8a0df-206">It recurs semi-annually and ends 1 year from the startDate.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="90ec4-204">Запрос</span><span class="sxs-lookup"><span data-stu-id="90ec4-204">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8a0df-207">Запрос</span><span class="sxs-lookup"><span data-stu-id="8a0df-207">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="90ec4-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="90ec4-205">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8a0df-208">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a0df-208">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -461,27 +461,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="90ec4-206">C#</span><span class="sxs-lookup"><span data-stu-id="90ec4-206">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8a0df-209">C#</span><span class="sxs-lookup"><span data-stu-id="8a0df-209">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-allusers-m365-aadrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="90ec4-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="90ec4-207">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8a0df-210">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8a0df-210">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="90ec4-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="90ec4-208">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8a0df-211">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8a0df-211">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-allusers-m365-aadrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="90ec4-209">Java</span><span class="sxs-lookup"><span data-stu-id="90ec4-209">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8a0df-212">Java</span><span class="sxs-lookup"><span data-stu-id="8a0df-212">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="90ec4-210">Отклик</span><span class="sxs-lookup"><span data-stu-id="90ec4-210">Response</span></span>
-><span data-ttu-id="90ec4-211">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="90ec4-211">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="8a0df-213">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a0df-213">Response</span></span>
+><span data-ttu-id="8a0df-214">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8a0df-214">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
