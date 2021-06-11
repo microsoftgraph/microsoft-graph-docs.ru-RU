@@ -1,16 +1,16 @@
 ---
 title: тип ресурса audioConferencing
 description: Представляет сведения о доступе к телефону для собрания в Интернете.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 43332de03467b4a5cf9d9cc867718ceafd8c4e82
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 5f0c9338aefa592ed030585a6b0342d03e7717d0
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080150"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896699"
 ---
 # <a name="audioconferencing-resource-type"></a>тип ресурса audioConferencing
 
@@ -36,7 +36,7 @@ ms.locfileid: "52080150"
 >- Свойства **tollFreeNumber** и **tollNumber** обесценяются. Вместо этого **используйте свойства tollFreeNumbers** **и tollNumbers.**
 >- Для обратной совместимости исходный **tollFreeNumber** добавляется в новую коллекцию **tollFreeNumbers,** а исходный **tollNumber** добавляется в новую коллекцию **tollNumbers.**
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

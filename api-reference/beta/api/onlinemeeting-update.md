@@ -1,16 +1,16 @@
 ---
 title: Обновление onlineMeeting
 description: Обновление свойств собрания в Интернете.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0781be9d2dcc289fe99aeb92f31f3e55ea273730
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 64b979f6c9c2859b441526d26ff8029eed6c4491
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241067"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896671"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -69,7 +69,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime          | DateTime                                                     | Время окончания собрания в UTC.                                                                                                                   |
 | subject              | String                                                       | Тема собрания в Интернете.                                                                                                             |
 | participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников.                                            |
-| isEntryExitAnnounced | Логический                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
+| isEntryExitAnnounced | Boolean                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Указывает, какие участники могут обойти вестибюль собрания.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Указывает, кто может быть презентовщиком на собрании. Возможные значения — это все, организация, roleIsPresenter, организатор и неизвестныйFutureValue. |
 

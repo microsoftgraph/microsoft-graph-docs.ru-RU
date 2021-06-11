@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса onlineMeeting
 description: Содержит сведения о собрании.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7204f651865328b7cfb9a03a70f6e9d80b912788
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: eb06cbe770a7f461ed28fe267e2763aa0124d57e
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754485"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896713"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -27,7 +27,7 @@ ms.locfileid: "52754485"
 | [Создание](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | Создание собрания в Интернете.                                                                                         |
 | [получение](../api/onlinemeeting-get.md);                                 | [onlineMeeting](onlinemeeting.md) | Ознакомьтесь с свойствами и отношениями **объекта onlineMeeting.**                                             |
 | [Обновление](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Обновление свойств объекта **onlineMeeting.** |
-| [Delete](../api/onlinemeeting-delete.md)                           | Нет.                              | Удаление **объекта onlineMeeting.**                                                                             |
+| [Delete](../api/onlinemeeting-delete.md)                           | Нет                              | Удаление **объекта onlineMeeting.**                                                                             |
 | [Создание или доступ к onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте онлайн-собрание с пользовательским внешним ИД. Если собрание уже существует, извлекай его свойства.      |
 
 ## <a name="properties"></a>Свойства
@@ -48,7 +48,7 @@ ms.locfileid: "52754485"
 | creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                                                                                                                                                                |
 | возможности (неподготовленные)         | коллекция meetingCapabilities                             | Список возможностей собраний. Возможные значения: `questionAndAnswer` , `unknownFutureValue` .                                                                                                                                                                                 |
 | endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                                                                                                                                                                |
-| externalId            | String                                        | Внешний ID. Пользовательский ID. Необязательное свойство.                                                                                                                                                                                                                     |
+| externalId            | String                                        | Внешний ID. Пользовательский ID. Необязательный параметр.                                                                                                                                                                                                                     |
 | id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                                                                                                                                                               |
 | isBroadcast           | Boolean                                       | Указывает, является ли это событие в прямом эфире.                                                                                                                                                                                                                   |
 | isEntryExitAnnounced  | Boolean                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                                                                                                                                                      |

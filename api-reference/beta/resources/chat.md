@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa93e28abb0f4f65938093416276de043db27d7f
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: a596cf7bc5a33cb64f61778f501604ea350ccc5a
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061807"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896664"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -47,7 +47,7 @@ ms.locfileid: "52061807"
 |[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
 |[Удалить приложение из чата](../api/chat-delete-installedapps.md) | Нет | Удалить (удалить) приложение из чата (и связанного собрания).|
 |[Гранты на получение разрешений списка](../api/chat-list-permissiongrants.md) | [коллекция resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных приложениям в этом чате.|
-| **Tabs** |||
+| **Вкладки** |||
 |[Список вкладок в чате](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Вкладки списка, закрепленные в чате (и связанное собрание).|
 |[Получить вкладку в чате](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Получите определенную вкладку, закрепленную в чате (и связанное собрание).|
 |[Добавление вкладки в чат](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Добавьте (пин-код) вкладку в чат (и связанное собрание).|
@@ -65,6 +65,7 @@ ms.locfileid: "52061807"
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group` `oneOnOne` и `meeting` .|
+|  webUrl          |   string                  |  Гиперссылка, которая будет переходить в чат в Microsoft Teams. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.     |
 
 ### <a name="chattype-values"></a>значения chatType 
 
@@ -84,7 +85,7 @@ ms.locfileid: "52061807"
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
 | permissionGrants| [коллекция resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для чата.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса в формате JSON.
 
@@ -100,7 +101,8 @@ ms.locfileid: "52061807"
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "String",
+  "webUrl": "string"
 }
 ```
 

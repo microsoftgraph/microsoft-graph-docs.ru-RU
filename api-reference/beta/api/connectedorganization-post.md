@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 00cac73ca31774a4b86a0df3db5b7c958e65e052
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 284a7e4c907fb5305eee06b124250467fc27b450
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437424"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896286"
 ---
 # <a name="create-connectedorganization"></a>Создание connectedOrganization
 
@@ -58,6 +58,8 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 |description|String|Описание подключенной организации.|
 |identitySources|[коллекция identitySource](../resources/identitysource.md)|Коллекция с одним элементом, исходный источник удостоверений в этой связанной организации.|
 |state|connectedOrganizationState|Состояние связанной организации определяет, применимы ли политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запроса. Возможные значения: `configured`, `proposed`.|
+
+Один член коллекции identitySources должен быть как типа [domainIdentitySource,](../resources/domainidentitysource.md) так и [externalDomainFederation.](../resources/externaldomainfederation.md)  Если звонящая предоставляет domainIdentitySource, вызов является успешным, и домен соответствует зарегистрированным доменам клиента Azure Active Directory, после чего созданная подключеннаяорганизация будет иметь коллекцию identitySources, содержащую одного члена типа [azureActiveDirectoryTenant.](../resources/azureactivedirectorytenant.md)
 
 ## <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса broadcastMeetingSettings
 description: Параметры, связанные с событием в прямом эфире
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f199a82ee90d6848cb68d670d49d7af1c1d2c739
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 1de814ee520d1dbf8d0ea6ba1270c6893a07d2cd
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944116"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896692"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>тип ресурса broadcastMeetingSettings
 
@@ -18,11 +18,11 @@ ms.locfileid: "51944116"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры, связанные с живым событием.
+Параметры, связанных с живым событием.
 
 > [!CAUTION]
 > Этот API не проверяет параметры событий в прямом эфире, управляемые [политикой.](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell)
-> Например, если администратор задает политику событий в прямом эфире с помощью, пользователям будет запрещено устанавливать разрешения на живые события в клиенте Teams, но он сможет создать живое событие с помощью `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` Microsoft Graph,  `everyone` установив разрешенное разрешение на .
+> Например, если администратор задает политику событий в прямом эфире с помощью, пользователям будет запрещено устанавливать разрешения на живые события в своем клиенте Teams, но он сможет создать живое событие с помощью `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` Microsoft Graph, установив разрешеноAudience  для `everyone` .
 
 ## <a name="properties"></a>Свойства
 

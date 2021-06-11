@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c322d0af4e255d9438c651d81328c887da1b19a5
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 29a01ee72c0dbfcb64572393681bb6920b65e434
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870642"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896524"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
@@ -65,6 +65,7 @@ ms.locfileid: "52870642"
 |permissionCheckNoResourceGroupOwnerRole|Cloud PC не имеет разрешений владельца в указанной группе ресурсов. Обратитесь к владельцу подписки, чтобы добавить назначение роли владельца в группе ресурсов для Cloud PC службы.|
 |permissionCheckNoVNetContributorRole|Cloud PC службы не имеет разрешений на сетевой вкладчик в указанной виртуальной сети. Обратитесь к владельцу подписки, чтобы добавить назначение роли вкладчика сети для Cloud PC службы. |
 |permissionCheckUnknownError|Проверка разрешений не удалась из-за неизвестной ошибки. Обратитесь в службу поддержки клиентов.|
+|internalServerErrorUnableToRunDscScript|Невозможно запустить сценарий DSC во время проверки состояния здоровья. Для успешного обеспечения облачного КОМПЬЮТЕРА службе необходим доступ к WinRM. Убедитесь, что ни одна групповая политика или связанная конфигурация не блокируют использование PowerShell/DSC.|
 |internalServerUnknownError|Проверка состояния не удалось из-за неизвестной ошибки внутреннего сервера. Обратитесь в службу поддержки клиентов.|
 
 ## <a name="relationships"></a>Связи

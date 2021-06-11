@@ -1,16 +1,16 @@
 ---
 title: Get onlineMeeting
 description: Извлечение свойств и связей объекта onlineMeeting.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 189be333a66291073fcb7ed78d878d2a9d0ba61a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: ba5a1a874431b2cd543ac35057c29127896e1f52
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665360"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896678"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 

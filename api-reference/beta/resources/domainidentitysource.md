@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ae616c98b2ca20ec4e5d9c7aceeba5bdeb538e81
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 2c558213b7198da65eaacdbf0ac42915f3638c56
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759666"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896174"
 ---
 # <a name="domainidentitysource-resource-type"></a>тип ресурса domainIdentitySource
 
@@ -20,6 +20,8 @@ ms.locfileid: "50759666"
 
 Используется в источниках удостоверений [подключеннойорганизации.](connectedOrganization.md) Это значение указывает на то, что этот тип определяет домен как источник удостоверений `@odata.type` `#microsoft.graph.domainIdentitySource` для связанной организации.
 
+При [](../api/connectedorganization-post.md)создании новой подключеннойорганизации, если вызывающий вызов предоставляет в коллекции identitySources домен DomainIdentitySource и домен соответствует зарегистрированным доменам клиента Azure Active Directory, то создаемая подключеннаяорганизация будет иметь коллекцию identitySources, содержащую одного члена типа [azureActiveDirectoryTenant.](azureactivedirectorytenant.md)
+
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                      | Описание |
@@ -27,7 +29,7 @@ ms.locfileid: "50759666"
 | displayName |String | Имя источника удостоверений, как правило, также доменное имя. Только для чтения. |
 | domainName |String | Доменное имя. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

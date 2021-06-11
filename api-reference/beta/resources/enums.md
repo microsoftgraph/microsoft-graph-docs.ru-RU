@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 2b44da1d94f23d3155b1eafa94c49310fc2a2569
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8831b252e587be1d5368b6a0d6e8f933a3a6174b
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787571"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896573"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -76,7 +76,7 @@ ms.locfileid: "52787571"
 |Целое число|
 |Справочные материалы|
 |В двоичном формате|
-|Логический|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -311,20 +311,12 @@ ms.locfileid: "52787571"
 |passwordlessCapable|
 |mfaCapable|
 
-### <a name="authenticatorappfeaturesettings-values"></a>значения authenticatorAppFeatureSettings 
-
-
-
-|Member|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### <a name="authmethodstype-values"></a>значения authMethodsType 
 
 |Member|
 |:---|
-|рассылка|
+|email|
 |mobileSMS|
 |mobilePhone|
 |OfficePhone|
@@ -472,7 +464,7 @@ ms.locfileid: "52787571"
 
 |Member|
 |:---|
-|рассылка|
+|email|
 |mobilePhone|
 |OfficePhone|
 |securityQuestion|
@@ -578,7 +570,7 @@ ms.locfileid: "52787571"
 
 |Member|
 |:---|
-|рассылка|
+|email|
 |mobileSMS|
 |mobileCall|
 |OfficePhone|
@@ -797,7 +789,7 @@ ms.locfileid: "52787571"
 |:--------------
 | call
 | чат
-| рассылка
+| email
 | фокус
 | собрание
 
@@ -805,7 +797,7 @@ ms.locfileid: "52787571"
 
 |Member|
 |:---|
-|рассылка|
+|email|
 |mobilePhone|
 |OfficePhone|
 |securityQuestion|
@@ -1839,7 +1831,7 @@ Enum для серьезности оповещений.
 | Элемент  | Значение | Описание                          |
 | :------ | :---- | :----------------------------------- |
 | default | 0     | Содержимое — это тип файла или не электронной почты. |
-| рассылка   | 1     | Содержимое — это электронная почта.                 |
+| email   | 1     | Содержимое — это электронная почта.                 |
 
 ### <a name="contentstate-values"></a>значения contentState
 
@@ -1949,7 +1941,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 

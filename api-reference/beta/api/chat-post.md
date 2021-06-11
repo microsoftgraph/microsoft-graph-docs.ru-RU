@@ -1,23 +1,23 @@
 ---
 title: Создание чата
-description: Создание объекта чата.
+description: Создайте новый объект чата.
 author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c14e6e186c0bcd82c6a0b7c0a99db18ba61247c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a1fc781b35a144057c2d6f3baae3c718b86a30e0
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872900"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896496"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [чата.](../resources/chat.md)
+Создайте новый [объект чата.](../resources/chat.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,24 +44,24 @@ POST /chats
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [чата](../resources/chat.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем JSON-представление объекта [чата.](../resources/chat.md)
 
 В следующей таблице перечислены свойства, необходимые для создания объекта чата.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|topic|(Необязательно) Строка|Название чата. Заголовок чата может быть предоставлен только в том случае, если чат имеет `group` тип.|
+|topic|(Необязательный) String|Название чата. Название чата может быть предоставлено только в том случае, если чат имеет `group` тип.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Указывает тип чата. Возможные значения: `group` и `oneOnOne` . |
-|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. В этом списке должен быть указан каждый пользователь, включая пользователя, инициавшего запрос на создание, который будет участвовать в чате.|
+|members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. Каждый пользователь, включая пользователя, инициавшего запрос на создание, который будет участвовать в чате, должен быть указан в этом списке.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика 201 Created и новый ресурс **чата** в тексте отклика.
+В случае успешного использования этот метод возвращает созданный код  ответа 201 и вновь созданный ресурс чата в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-one-on-one-chat"></a>Пример 1. Создание чата с одним на одном
+### <a name="example-1-create-a-one-on-one-chat"></a>Пример 1. Создание чата один на один
 
 #### <a name="request"></a>Запрос
 
@@ -129,7 +129,8 @@ Content-Type: application/json
     "topic": null,
     "createdDateTime": "2020-12-04T23:10:28.51Z",
     "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
-    "chatType": "oneOnOne"
+    "chatType": "oneOnOne",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 
@@ -207,7 +208,8 @@ Content-Type: application/json
     "topic": "Group chat title",
     "createdDateTime": "2020-12-04T23:11:16.175Z",
     "lastUpdatedDateTime": "2020-12-04T23:11:16.175Z",
-    "chatType": "group"
+    "chatType": "group",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 
