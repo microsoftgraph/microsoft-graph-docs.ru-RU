@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8fdf11ab9792609813a92aef1c42f79b0cba3b48
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 619938b8550647acfe10f648a20460fe9c7554aa
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52119014"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911951"
 ---
 # <a name="remove-educationrubric-from-educationassignment"></a>Удаление educationRubric из educationAssignment
 
@@ -18,7 +18,8 @@ ms.locfileid: "52119014"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [educationRubric](../resources/educationrubric.md) из [educationAssignment](../resources/educationassignment.md).  Это не удаляет сам рубрику.
+Удаление [educationRubric](../resources/educationrubric.md) из [educationAssignment](../resources/educationassignment.md).
+Этот метод не удаляет сам рубрику.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -59,6 +60,7 @@ DELETE /education/classes/{id}/assignments/{id}/rubric/$ref
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationrubric_from_educationassignment"
@@ -89,8 +91,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

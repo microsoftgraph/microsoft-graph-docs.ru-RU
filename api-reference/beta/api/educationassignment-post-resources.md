@@ -1,16 +1,16 @@
 ---
 title: Создание educationAssignmentResource
-description: odata.type, чтобы указать, какой тип ресурса создается. Обратите внимание, что сначала ресурсы на основе файлов должны быть загружены в ресурс **назначенийFolder.**
+description: Создание ресурса назначения образования.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8001af1c46ee374d47c9235f67080f87af74b4bc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3ca73c7b078520f5f25b0948b8a41f272ba73669
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044258"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911895"
 ---
 # <a name="create-educationassignmentresource"></a>Создание educationAssignmentResource
 

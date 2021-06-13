@@ -1,24 +1,24 @@
 ---
-title: Список educationAssignmentResources
-description: Получите все ресурсы, связанные с этим назначением.
+title: Перечисление ресурсов задания
+description: Получите все ресурсы, связанные с назначением.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b788f254972832832336d5b7b69d8b6b8ec085cd
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 6999b9795315c913cf23514e8e806701cd1591e0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061695"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911937"
 ---
-# <a name="list-educationassignmentresources"></a>Список educationAssignmentResources
+# <a name="list-assignment-resources"></a>Перечисление ресурсов задания
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите все ресурсы, связанные с этим назначением.
+Получите все ресурсы, связанные с назначением.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,9 +27,7 @@ ms.locfileid: "52061695"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение* | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
-
-*Разрешения приложения в настоящее время доступны только для частных пользователей предварительного просмотра.
+|Приложение | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

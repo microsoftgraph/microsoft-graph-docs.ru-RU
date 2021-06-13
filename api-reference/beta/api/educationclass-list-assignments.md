@@ -1,24 +1,26 @@
 ---
-title: Перечисление заданий
-description: Извлечение списка объектов назначения. Преподавателю или приложению, исполняемом с разрешениями приложений, разрешено видеть все объекты назначения для класса. Учащиеся могут видеть только назначения, которые им назначены.
+title: Назначения классов списка
+description: Извлечение списка объектов назначения.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c88d274a92b0d6b2546fa64e349620af7d7f9353
-ms.sourcegitcommit: eb67b0a619a4004c1611304f1252a382264a97f3
+ms.openlocfilehash: 4e648f9f1b40445c1c98c7b6054b67705308bdcb
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061800"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911853"
 ---
-# <a name="list-assignments"></a>Перечисление заданий
+# <a name="list-class-assignments"></a>Назначения классов списка
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов назначения. Преподавателю или приложению, исполняемом с разрешениями приложений, разрешено видеть все объекты назначения для класса. Учащиеся могут видеть только назначения, которые им назначены.
+Извлечение списка объектов назначения. 
+
+Учитель или приложение, исполняющие с разрешениями приложений, могут видеть все объекты назначения для класса. Учащиеся могут видеть только назначения, которые им назначены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +30,7 @@ ms.locfileid: "52061800"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Приложение*                           | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-
-*Разрешения приложения в настоящее время доступны только для частных пользователей предварительного просмотра.
+| Приложение                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 

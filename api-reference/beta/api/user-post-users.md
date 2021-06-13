@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0ebdf4a68247a4b6c62d5c2cf1431b903fd140a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e04afb007f70788b21253323adfb517ebab7ade6
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054716"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911363"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -50,15 +50,15 @@ POST /users
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
-В приведенной ниже таблице перечислены обязательные свойства при создании пользователя. Если вы включаете свойство **identities** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной учетной записи B2C](../resources/objectidentity.md) обязательным является только **passwordProfile**, а свойству **passwordPolicy** должно быть присвоено значение `DisablePasswordExpiration`. Для удостоверения социальных сетей ни одно свойство не является обязательным.
+В приведенной ниже таблице перечислены обязательные свойства при создании пользователя. Если вы включаете свойство **identities** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной](../resources/objectidentity.md)учетной записи B2C требуется только  **passwordProfile,** и необходимо задать **парольPolicies** `DisablePasswordExpiration` . Для удостоверения социальных сетей ни одно свойство не является обязательным.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Логический |True, если учетная запись включена; в противном случае, false.|
+|accountEnabled |Boolean |True, если учетная запись включена; в противном случае, false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя. Для клиентов Azure B2C следует задать свойство **forceChangePasswordNextSignIn** и вместо этого использовать настраиваемые политики для принудительного сброса пароля при первом `false` входе.|
 |userPrincipalName |string |Имя участника-пользователя (polzovatel@contoso.com).|
 
 Так как ресурс **user** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в экземпляр user при его создании.

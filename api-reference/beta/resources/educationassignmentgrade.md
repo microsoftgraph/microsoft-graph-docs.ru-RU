@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationAssignmentGrade
-description: " однако все типы классификации (точки, пропуск/сбой и так далее) являются подклассами этого"
+description: Представляет объект **Grade** в представлении.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 84baeb3a0e3efeee0e5f7e7f6f7d5f6d8f285f59
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 39b415fd459b832ac3a7bfb2d66daf32d584d634
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722456"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911342"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>тип ресурса educationAssignmentGrade
 
@@ -18,7 +18,9 @@ ms.locfileid: "50722456"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет объект **Grade** в представлении. Это абстрактный тип, который никогда не будет мгновенным; Однако все типы классификации (точки, пропуск/сбой и так далее) являются подклассами этого типа ресурсов. Этот объект также отслеживает, кто делает классификацию. Это используется в **свойстве submission.grade.**
+Представляет объект **Grade** в представлении. 
+
+Это абстрактный тип, который никогда не будет мгновенным; Однако все типы классификации (точки, пропуск/сбой и так далее) являются подклассами этого типа ресурсов. Этот объект также отслеживает, кто делает классификацию. Это используется в **свойстве submission.grade.**
 
 
 ## <a name="properties"></a>Свойства

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 7fe6db48038b68d7d2bfe507af60a26846962832
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b471d13836faa74ba6f77ab395e9a8ad3c87e4ad
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054877"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911874"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -59,6 +59,8 @@ ms.locfileid: "52054877"
 Дополнительные ограничения применяются к подпискам на элементы OneDrive. Ограничения применяются для создания, а также управления (получение, обновление и удаление) подписками.
 
 В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
+
+OneDrive для бизнеса и SharePoint поддержку отправки приложениям уведомлений о событиях безопасности, происходящих на **driveItem.** Чтобы подписаться на эти события, добавьте `prefer:includesecuritywebhooks` заглавную в запрос для создания подписки. После создания подписки вы будете получать уведомления при изменении разрешений на элемент. Эта заглавная запись применима к SharePoint и OneDrive для бизнеса, но не к OneDrive учетным записям.
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
@@ -161,7 +163,7 @@ Content-type: application/json
 |[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
-|[пользователи](../resources/user.md);|`users`|
+|[Пользователи](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 

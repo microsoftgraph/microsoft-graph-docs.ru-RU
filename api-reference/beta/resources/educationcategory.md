@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Едукатионкатегори
-description: Категория, которая может быть применена к назначениям.
+title: тип ресурса educationCategory
+description: Категория, которую можно применить к назначениям.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 82ad4f009ca76625c148e8a42e58385195466fbb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 18ddcd32a2ab4a8d44505adbc92445a0feeae8b6
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095543"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911321"
 ---
-# <a name="educationcategory-resource-type"></a>Тип ресурса Едукатионкатегори
+# <a name="educationcategory-resource-type"></a>тип ресурса educationCategory
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Категория, которая может быть применена к назначениям.
+Категория, которую можно применить к назначениям.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание категории](../api/educationclass-post-category.md) | [едукатионкатегори](educationcategory.md) | Создание нового **едукатионкатегори**.|
-|[Получение Едукатионкатегори](../api/educationcategory-get.md) | [едукатионкатегори](educationcategory.md) | Получение существующего **едукатионкатегори**.|
-|[Удаление категории](../api/educationcategory-delete.md) | Нет | Удаление **едукатионкатегори**.|
+|[Создание категории](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Создание нового **образованияCategory**.|
+|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Получите существующее **educationCategory**.|
+|[Удаление категории](../api/educationcategory-delete.md) | Нет | Удалить **educationCategory**.|
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка|Уникальный идентификатор для категории.|
-|displayName|Строка|Уникальный идентификатор для категории.|
+|id|String|Уникальный идентификатор для категории.|
+|displayName|String|Уникальный идентификатор для категории.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -50,8 +50,8 @@ ms.locfileid: "48095543"
 
 ```json
 {
-  "id": "String (timestamp)",
-  "displayName": "String (timestamp)",
+  "id": "String (identifier)",
+  "displayName": "String",
 }
 
 ```

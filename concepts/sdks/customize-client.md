@@ -1,18 +1,18 @@
 ---
-title: Настройка клиента службы SDK Microsoft Graph
-description: Содержит инструкции по изменению поведения клиента службы службы Microsoft Graph SDK по умолчанию.
+title: Настройка клиента службы Microsoft Graph SDK
+description: Содержит инструкции по изменению поведения клиента службы microsoft Graph SDK.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: e666a9e976455f640d29edf2d460523935e53d97
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: a2750babd35f1e3fd5f361ae43009eaa25eefe87
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836859"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911657"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Настройка клиента службы SDK Microsoft Graph
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Настройка клиента службы Microsoft Graph SDK
 
-Клиент SDK Microsoft Graph настраивает по умолчанию набор средних программ, который позволяет SDK взаимодействовать с конечными точками Microsoft Graph. Этот набор по умолчанию настраивается, что позволяет изменить поведение клиента. Например, можно вставить настраиваемый журнал или добавить обработник тестирования для имитации определенных сценариев. Вы можете добавлять и удалять компоненты middleware. Важно отметить, что порядок запуска компонентов middleware имеет важное значение.
+Клиент microsoft Graph SDK настраивает по умолчанию набор средних программ, который позволяет SDK взаимодействовать с конечными точками Microsoft Graph. Этот набор по умолчанию настраивается, что позволяет изменить поведение клиента. Например, можно вставить настраиваемый журнал или добавить обработник тестирования для имитации определенных сценариев. Вы можете добавлять и удалять компоненты middleware. Важно отметить, что порядок запуска компонентов middleware имеет важное значение.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -121,5 +121,143 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
                 .httpClient(httpClient)
                 .buildClient();
 ```
+
+---
+
+## <a name="configuring-the-http-proxy-for-the-client"></a>Настройка прокси-сервера HTTP для клиента
+
+В некоторых средах клиентские приложения должны использовать прокси-сервер HTTP, прежде чем они смогут получить доступ к общественному Интернету. В этом разделе показано, как настроить прокси-сервер microsoft Graph SDKs.
+
+<!-- markdownlint-disable MD024 -->
+## <a name="c"></a>[C#](#tab/csharp)
+
+```csharp
+// URI to proxy
+var proxyAddress = "http://localhost:8888";
+
+// Create a new System.Net.Http.HttpClientHandler with the proxy
+var handler = new HttpClientHandler
+{
+    // Create a new System.Net.WebProxy
+    // See WebProxy documentation for scenarios requiring
+    // authentication to the proxy
+    Proxy = new WebProxy(new Uri(proxyAddress))
+};
+
+// Create an options object for the credential being used
+// For example, here we're using a ClientSecretCredential so
+// we create a ClientSecretCredentialOptions object
+var options = new ClientSecretCredentialOptions
+{
+    // Create a new Azure.Core.HttpClientTransport
+    Transport = new HttpClientTransport(handler)
+};
+
+var credential = new ClientSecretCredential(
+    "YOUR_TENANT_ID",
+    "YOUR_CLIENT_ID",
+    "YOUR_CLIENT_SECRET",
+    options
+);
+
+// Create a new Microsoft.Graph.HttpProvider using the
+// proxied HttpClientHandler
+var httpProvider = new HttpProvider(handler, true);
+
+var scopes = new[] { "https://graph.microsoft.com/.default" };
+var graphClient = new GraphServiceClient(credential, scopes, httpProvider);
+```
+
+## <a name="typescript"></a>[TypeScript](#tab/typeScript)
+
+```typescript
+// Create a credential from @azure/identity package
+const credential = new ClientSecretCredential(
+  'YOUR_TENANT_ID',
+  'YOUR_CLIENT_ID',
+  'YOUR_CLIENT_SECRET',
+  {
+    proxyOptions: {
+      host: 'localhost',
+      port: 8888,
+      // If proxy requires authentication
+      //username: '',
+      //password: ''
+    },
+  }
+);
+
+// Create a Graph token credential provider
+const tokenAuthProvider = new TokenCredentialAuthenticationProvider(
+  credential,
+  {
+    scopes: [ 'https://graph.microsoft.com/.default' ]
+  });
+
+const client = MicrosoftGraph.Client.initWithMiddleware({
+  authProvider: tokenAuthProvider,
+  // Configure proxy in fetchOptions
+  fetchOptions: {
+    agent: new HttpsProxyAgent('http://localhost:8888')
+  }
+});
+```
+
+## <a name="java"></a>[Java](#tab/java)
+
+```Java
+final int proxyPort = 8080;
+final InetSocketAddress proxyInetAddress = new InetSocketAddress("proxy.ip.or.hostname", proxyPort);
+
+// The section below configures the proxy for the Azure Identity client
+// and is only needed if you rely on Azure Identity for authentication
+final ProxyOptions pOptions = new ProxyOptions(ProxyOptions.Type.HTTP, proxyInetAddress);
+final HttpClientOptions clientOptions = new HttpClientOptions();
+clientOptions.setProxyOptions(pOptions);
+final HttpClient azHttpClient = HttpClient.createDefault(clientOptions);
+
+// Or any other credential the application is using
+final ClientSecretCredential clientSecretCredential =
+    new ClientSecretCredentialBuilder()
+        .clientId(CLIENT_ID)
+        .clientSecret(CLIENT_SECRET)
+        .tenantId(TENANT_GUID)
+        // don't forget that addition to use the configured client
+        .httpClient(azHttpClient)
+        .build();
+final TokenCredentialAuthProvider authenticationProvider =
+    new TokenCredentialAuthProvider(Arrays.asList(SCOPES), clientSecretCredential);
+
+// The section below configures the proxy for the Microsoft Graph SDK client
+final Proxy proxy = new Proxy(Proxy.Type.HTTP, proxyInetAddress);
+
+// This block is only needed if the proxy requires authentication
+final Authenticator proxyAuthenticator = new Authenticator() {
+  @Override
+  public Request authenticate(Route route, Response response) throws IOException {
+    String credential = Credentials.basic("username", "password");
+    return response.request().newBuilder()
+        .header("Proxy-Authorization", credential)
+        .build();
+  }
+};
+
+final OkHttpClient graphHttpClient =
+    HttpClients.createDefault(authenticationProvider)
+        .newBuilder()
+        .proxy(proxy)
+        .proxyAuthenticator(proxyAuthenticator)
+        .build();
+
+final GraphServiceClient graphServiceClient =
+    GraphServiceClient
+        .builder()
+        .httpClient(graphHttpClient)
+        .buildClient();
+
+```
+
+> [!NOTE]
+> Дополнительные сведения о конфигурации прокси-сервера Azure Identity см. в [профиле ProxyOptions.](/java/api/com.azure.core.http.proxyoptions.proxyoptions)
 
 ---

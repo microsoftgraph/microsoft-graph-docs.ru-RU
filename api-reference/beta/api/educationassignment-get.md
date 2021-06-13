@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d170f2c87107161f920e13b1717afe2adfc721a3
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 39daae36befe6a9a3496863d82b1d15bf2e695c3
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780808"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911947"
 ---
 # <a name="get-educationassignment"></a>Get educationAssignment
 
@@ -50,11 +50,13 @@ GET /education/classes/{id}/assignments/{id}
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика и `200 OK` объект [educationAssignment](../resources/educationassignment.md) в тексте ответа.
+
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationassignment"

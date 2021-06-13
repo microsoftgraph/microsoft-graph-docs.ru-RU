@@ -1,16 +1,16 @@
 ---
 title: Создание educationAssignment
-description: 'Создает новое назначение. Только преподаватели в классе могут создать назначение. Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до тех пор, пока не будет вызвана публикация.  '
+description: Создайте новое назначение.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 86d9fe375222b25ade87663e64af5c51f7e92904
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c15bca046a08b62ff9a3d6cc75631e6a9110ef34
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043852"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911783"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -18,7 +18,9 @@ ms.locfileid: "52043852"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает новое назначение. Только преподаватели в классе могут создать назначение. Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до тех пор, пока не будет вызвана публикация.  
+Создайте новое назначение. 
+
+Только преподаватели в классе могут создать назначение. Назначения начинаются в состоянии Draft, что означает, что учащиеся не будут видеть назначение до публикации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

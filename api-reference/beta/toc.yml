@@ -1262,9 +1262,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -9809,7 +9809,7 @@ items:
               - name: Перечисление категорий
                 href: api/educationassignment-list-categories.md
               - name: Добавление категории
-                href: api/educationassignment-add-categories.md
+                href: api/educationassignment-post-categories.md
               - name: Удаление категории
                 href: api/educationassignment-remove-category.md
               - name: Прикрепить рубрику к назначению
@@ -9830,7 +9830,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -10765,7 +10765,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: Добавление
                         href: api/emailauthenticationmethod-post.md
-                  - name: Password
+                  - name: Пароль
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: Список
@@ -11937,7 +11937,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12534,7 +12534,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12756,7 +12756,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Получение количества пользователей служб
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Использование Приложений Microsoft 365
+              - name: Использование приложений Microsoft 365
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: Получение сведений о пользователе
@@ -13270,7 +13270,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -13574,7 +13574,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение.
+          - name: Приложение
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
@@ -14011,7 +14011,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

@@ -1,31 +1,31 @@
 ---
-title: Удаление Едукатионассигнментресаурце
-description: .
+title: Удаление educationAssignmentResource
+description: Удалите определенный ресурс, присоединенный к назначению.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a7f7646474f9c26557a46b46d08cf40fe3241558
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7e853534998978f89e44cbd8f657a56250c599a0
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966482"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911909"
 ---
-# <a name="delete-educationassignmentresource"></a>Удаление Едукатионассигнментресаурце
+# <a name="delete-educationassignmentresource"></a>Удаление educationAssignmentResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление ресурса из назначения. Только преподаватели в классе могут удалить ресурс. После публикации назначения для учащихся преподаватели не могут удалять ресурсы, помеченные как "Дистрибутетостудентс".
+Удалите определенный ресурс, присоединенный к назначению. Удалить ресурс могут только преподаватели в классе. После публикации задания учащимся преподаватели не могут удалять ресурсы, помеченные как "distributeToStudents".
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -52,6 +52,7 @@ DELETE /education/classes/{id}/assignments/{id}/resources/{id}
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationassignmentresource"
