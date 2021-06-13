@@ -1087,7 +1087,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4046,8 +4046,20 @@ items:
                 href: api/educationclass-list-members.md
               - name: Добавление члена
                 href: api/educationclass-post-members.md
-              - name: Удаление элемента
+              - name: Удаление члена
                 href: api/educationclass-delete-members.md
+              - name: Назначения классов списка
+                href: api/educationclass-list-assignments.md
+              - name: Создание задания
+                href: api/educationclass-post-assignment.md
+              - name: Получить параметры назначения
+                href: api/educationassignmentsettings-get.md
+              - name: Получить по умолчанию назначение
+                href: api/educationassignmentdefaults-get.md
+              - name: Перечисление категорий
+                href: api/educationclass-list-categories.md
+              - name: Создание категории
+                href: api/educationclass-post-category.md
           - name: Пользователи
             href: resources/educationuser.md
             items:
@@ -4059,12 +4071,128 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
+              - name: Get directory user
+                href: api/educationuser-get-user.md
               - name: Внесение изменений в пользователей
                 href: api/educationuser-delta.md
               - name: Перечисление курсов
                 href: api/educationuser-list-classes.md
+              - name: Рубрики списков
+                href: api/educationuser-list-rubrics.md
               - name: Учебные классы списка
                 href: api/educationuser-list-taughtclasses.md
+              - name: Создание рубрики
+                href: api/educationuser-post-rubrics.md
+          - name: Задание
+            href: resources/educationassignment.md
+            items:
+              - name: Создание задания
+                href: api/educationclass-post-assignment.md
+              - name: Получение задания
+                href: api/educationassignment-get.md
+              - name: Обновление задания
+                href: api/educationassignment-update.md
+              - name: Удаление задания
+                href: api/educationassignment-delete.md
+              - name: Настройка папки ресурсов назначения
+                href: api/educationassignment-setupresourcesfolder.md
+              - name: Публикация задания
+                href: api/educationassignment-publish.md
+              - name: Перечисление ресурсов задания
+                href: api/educationassignment-list-resources.md
+              - name: Создание ресурса задания
+                href: api/educationassignment-post-resource.md
+              - name: Получение ресурса задания
+                href: api/educationassignmentresource-get.md
+              - name: Удаление ресурса из задания
+                href: api/educationassignmentresource-delete.md
+              - name: Перечисление сданных работ
+                href: api/educationassignment-list-submissions.md
+              - name: Присоединение рубрики к назначению
+                href: api/educationassignment-get-rubric.md
+              - name: Перечисление категорий
+                href: api/educationassignment-list-categories.md
+              - name: Добавление категории
+                href: api/educationassignment-post-categories.md
+              - name: Удаление категории
+                href: api/educationassignment-remove-category.md
+              - name: Прикрепить рубрику к назначению
+                href: api/educationassignment-put-rubric.md
+              - name: Удаление рубрики из назначения
+                href: api/educationassignment-delete-rubric.md
+          - name: Параметры назначения
+            href: resources/educationassignmentsettings.md
+            items:
+              - name: Получить параметры назначения
+                href: api/educationassignmentsettings-get.md
+              - name: Обновление параметров назначения
+                href: api/educationassignmentsettings-update.md
+          - name: Назначение по умолчанию
+            href: resources/educationassignmentdefaults.md
+            items:
+              - name: Получить по умолчанию назначение
+                href: api/educationassignmentdefaults-get.md
+              - name: Обновление по умолчанию назначения
+                href: api/educationassignmentdefaults-update.md
+          - name: Категория
+            href: resources/educationcategory.md
+            items:
+              - name: Создание категории
+                href: api/educationclass-post-category.md
+              - name: Получение категории
+                href: api/educationcategory-get.md
+              - name: Удаление категории
+                href: api/educationcategory-delete.md
+          - name: Рубрики
+            href: resources/educationrubric.md
+            items:
+              - name: Создание рубрики
+                href: api/educationuser-post-rubrics.md
+              - name: Получить рубрику
+                href: api/educationrubric-get.md
+              - name: Рубрику Обновление
+                href: api/educationrubric-update.md
+              - name: Удаление рубрики
+                href: api/educationrubric-delete.md
+          - name: Сданная работа
+            href: resources/educationsubmission.md
+            items:
+              - name: Список ресурсов отправки
+                href: api/educationsubmission-list-resources.md
+              - name: Добавление ресурса сданной работы
+                href: api/educationsubmission-post-resources.md
+              - name: Получение ресурса сданной работы
+                href: api/educationsubmissionresource-get.md
+              - name: Удаление ресурса сданной работы
+                href: api/educationsubmissionresource-delete.md
+              - name: Получение сданной работы
+                href: api/educationsubmission-get.md
+              - name: Настройка папки ресурсов отправки
+                href: api/educationsubmission-setupresourcesfolder.md
+              - name: Отправка работы
+                href: api/educationsubmission-submit.md
+              - name: Отмена отправки работы
+                href: api/educationsubmission-unsubmit.md
+              - name: Перечисление отправленных ресурсов
+                href: api/educationsubmission-list-submittedresources.md
+              - name: Результаты списка
+                href: api/educationsubmission-list-outcomes.md
+              - name: Получение отправленного ресурса
+                href: api/educationsubmittedsubmissionresource-get.md
+              - name: Возврат работы
+                href: api/educationsubmission-return.md
+          - name: Outcome
+            items:
+              - name: Outcome
+                href: resources/educationoutcome.md
+              - name: Тип результатов обратной связи
+                href: resources/educationfeedbackoutcome.md
+              - name: Тип результатов points
+                href: resources/educationpointsoutcome.md
+              - name: Тип результатов Rubric
+                href: resources/educationrubricoutcome.md
+              - name: Итог обновления
+                href: api/educationoutcome-update.md
       - name: Расширения
         items:
           - name: Открытые расширения
@@ -4902,7 +5030,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5173,7 +5301,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5561,7 +5689,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -5813,7 +5941,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение.
+          - name: Приложение
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
