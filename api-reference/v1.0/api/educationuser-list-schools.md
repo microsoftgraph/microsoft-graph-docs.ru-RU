@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 229c1182e45e9ac72e9ef984c9943823e4292536
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 180309cb87e3d8678e81235309338a1817fb0b91
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231880"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912000"
 ---
 # <a name="list-schools-of-an-educationuser"></a>Список школ educationUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "52231880"
 
 Получение списка учебных заведений для этого пользователя.
 
->**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
+>**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...v1.0/education/me/schools`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,7 +48,7 @@ GET /education/users/{educationUserId}/schools
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

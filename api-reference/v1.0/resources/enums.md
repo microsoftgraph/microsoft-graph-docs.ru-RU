@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 0905b424a69d1214c65a39873595192b38303787
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1db4fbafde269d5e53799ec986ccd6c6631970ae
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786618"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911615"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -22,6 +22,7 @@ ms.locfileid: "52786618"
 |:---|
 |рецензент|
 |unknownFutureValue|
+
 ### <a name="externalemailotpstate-values"></a>значения externalEmailOtpState
 
 |Member|
@@ -29,6 +30,14 @@ ms.locfileid: "52786618"
 |default|
 |включено|
 |отключено|
+|unknownFutureValue|
+
+### <a name="educationaddedstudentaction-values"></a>значения educationAddedStudentAction
+
+|Member|
+|:---|
+|нет|
+|assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="authenticatorappcontexttype-values"></a>значения authenticatorAppContextType
@@ -1155,7 +1164,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1395,7 +1404,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| Строка                |
+| строка                |
 | boolean               |
 | int64                 |
 | stringCollection      |

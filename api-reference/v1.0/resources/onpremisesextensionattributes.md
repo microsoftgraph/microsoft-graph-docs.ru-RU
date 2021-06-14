@@ -1,24 +1,24 @@
 ---
 title: Тип ресурса onPremisesExtensionAttributes
-description: Свойство **onPremisesExtensionAttributes** объекта пользователя содержит 15 пользовательских свойств атрибута расширения. Для **пользователя onPremisesSyncEnabled** этот набор свойств освоен в локальном Active Directory и синхронизирован с Azure AD и является только для чтения. Для пользователя с облачным доступом (если **onPremisesSyncEnabled** является ложным), эти свойства можно настроить в Exchange Online. Атрибуты читают только в Microsoft Graph.
+description: Свойство **onPremisesExtensionAttributes** объекта пользователя содержит 15 пользовательских свойств атрибута расширения. Для **пользователя onPremisesSyncEnabled** этот набор свойств освоен в локальном Active Directory и синхронизирован с Azure AD и является только для чтения. Для облачного пользователя (где **onPremisesSyncEnabled** является ложным), эти свойства можно Exchange Online. Атрибуты читают только в Microsoft Graph.
 localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: f21369156e1a1337d16d64be40bd6de210bd56d2
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 3081b377a30bbf09131650517dcee61597dea597
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766107"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912049"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 
 Пространство имен: microsoft.graph
 
-Свойство **onPremisesExtensionAttributes** объекта пользователя содержит [15](user.md) пользовательских свойств атрибута расширения. Для **пользователя onPremisesSyncEnabled** источником полномочий для этого набора свойств является локальное Active Directory, синхронизированное с Azure AD и только для чтения. Для пользователя с облачным доступом (если **onPremisesSyncEnabled** является ложным), эти свойства можно настроить в Exchange Online. Атрибуты читают только в Microsoft Graph.
+Свойство **onPremisesExtensionAttributes** объекта пользователя содержит [15](user.md) пользовательских свойств атрибута расширения. Для **пользователя onPremisesSyncEnabled** источником полномочий для этого набора свойств является локальное Active Directory, синхронизированное с Azure AD и только для чтения. Для облачного пользователя (где **находится onPremisesSyncEnabled)** эти свойства можно задать при создании `false` или [обновлении.](../api/user-update.md) [](../api/user-post-users.md)
 
-> **Примечание:** Эти атрибуты расширения также известны как пользовательские атрибуты Exchange 1-15.
+> **Примечание:** Эти атрибуты расширения также известны как Exchange пользовательские атрибуты 1-15.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

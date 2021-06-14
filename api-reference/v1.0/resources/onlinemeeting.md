@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса onlineMeeting
 description: Содержит сведения о собрании.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 4e04e9f6d40be4e4ed9a432be6cc449c690790a7
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 9de25fd3f9f014627b7fcb32e4a16814e82be1e3
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869857"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896489"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -38,7 +38,7 @@ ms.locfileid: "51869857"
 | creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
 | endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                               |
 | id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
-| isEntryExitAnnounced  | Boolean                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                     |
+| isEntryExitAnnounced  | Логический                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанные в `Accept-Language` заглавной странице HTTP запроса. Только для чтения. |
 | joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                               |

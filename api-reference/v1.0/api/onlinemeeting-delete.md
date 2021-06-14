@@ -1,16 +1,16 @@
 ---
 title: Удаление onlineMeeting
 description: Удаление собрания в Интернете.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: eee39ddcaa0122f4e628f06cc8f90bac0317ddab
-ms.sourcegitcommit: 3eb37e0621540bee91f42a7c2d8457310e90f8b7
+ms.openlocfilehash: 8af5125d227c09ec2d115aabf626fc3b737d4085
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869878"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896566"
 ---
 # <a name="delete-onlinemeeting"></a>Удаление onlineMeeting
 
@@ -42,7 +42,7 @@ DELETE /me/onlineMeetings/{meetingId}
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
 > [!NOTE]
-> - `userId`— это объектный ID пользователя на портале [управления пользователями Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+> - `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,7 +50,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

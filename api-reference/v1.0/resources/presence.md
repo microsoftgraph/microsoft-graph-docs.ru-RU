@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса присутствия
 description: Содержит сведения о присутствии пользователя, включая его доступность и активность пользователей.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 6de4f4f63302bfa8e1229f60c6aad77b1abe1fd8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f155db24626420bfb43b225ee67d61ae923b048f
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962429"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896720"
 ---
 # <a name="presence-resource-type"></a>Тип ресурса присутствия
 
@@ -18,7 +18,7 @@ ms.locfileid: "50962429"
 
 Содержит сведения о присутствии пользователя, включая его доступность и активность пользователей.
 
-> **Примечание:** В настоящее время этот ресурс поддерживается только для пользователей Microsoft Teams.
+> **Примечание:** В настоящее время этот ресурс поддерживается только для Microsoft Teams пользователей.
 
 Этот ресурс поддерживает подписку на изменение [уведомлений.](/graph/webhooks)
 
@@ -34,11 +34,11 @@ ms.locfileid: "50962429"
 
 | Связь        | Тип                                                 | Описание                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  string     |  ID объекта пользователя   |
-|availability    |  Коллекция строк   |   Базовые сведения о присутствии пользователя. Возможные значения `Available` : , , , , `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` , `Offline``PresenceUnknown`  |
-|действие    |  Коллекция строк      |    Дополнительные сведения о доступности пользователя. Возможные `Available` значения: , , , , , , , , `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` .       |
+|id    |  строка     |  ID объекта пользователя   |
+|availability    |  string collection   |   Базовые сведения о присутствии пользователя. Возможные значения `Available` : , , , , `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` , `Offline``PresenceUnknown`  |
+|действие    |  string collection      |    Дополнительные сведения о доступности пользователя. Возможные `Available` значения: , , , , , , , , `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` .       |
 
->**Примечание:** Дополнительные данные о различных состояниях присутствия см. в [записи Присутствия пользователя в Teams.](/microsoftteams/presence-admins) 
+>**Примечание:** Дополнительные данные о различных состояниях присутствия см. в [Teams.](/microsoftteams/presence-admins) 
 
 ## <a name="relationships"></a>Связи
 

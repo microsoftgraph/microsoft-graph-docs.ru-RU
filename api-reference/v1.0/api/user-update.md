@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9a96286b2f50d05289663e68e5db78d3a3696580
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 456361bf711419bec46967d9478c004a1ac624ad
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787107"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52911356"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -62,16 +62,17 @@ PATCH /users/{id | userPrincipalName}
 |department|String|Название отдела, в котором работает пользователь.|
 |displayName|String|Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает `$filter` и `$orderby`.|
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. |
-| employeeType | String | Фиксирует тип корпоративного работника. Например, `Employee`, `Contractor`, `Consultant` или `Vendor`. Возвращается только с помощью оператора `$select`. Поддерживает `$filter` с оператором `eq`.|
-|givenName|String|Простое имя пользователя.|
+| employeeType | String | Фиксирует тип корпоративного работника. Например, `Employee`, `Contractor`, `Consultant` или `Vendor`. Возвращается только с помощью оператора `$select`.|
+|givenName;|String|Простое имя пользователя.|
 |hireDate|DateTimeOffset|Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |interests;|Коллекция строк|Список интересов пользователя.|
 |jobTitle|String|Должность пользователя.|
-|почта;|String|SMTP-адрес пользователя, например `jeff@contoso.onmicrosoft.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. <br><br>Поддерживает `$filter`.|
+|почта;|String|SMTP-адрес пользователя, например `jeff@contoso.onmicrosoft.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес.|
 |mailNickname|String|Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя.|
 |mobilePhone|String|Основной сотовый телефон пользователя.|
 |mySite|String|URL-адрес личного сайта пользователя.|
 |officeLocation|String|Расположение офиса на месте работы пользователя.|
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | Содержит свойства extensionAttribute 1–15 для пользователя. Обратите внимание, что отдельные атрибуты расширения нельзя выбирать и фильтровать. Для пользователей `onPremisesSyncEnabled` исходным центром управления для этого набора свойств является локальная среда, и он предназначен только для чтения. Эти атрибуты расширения также называются настраиваемыми атрибутами 1–15 Exchange.|
 |onPremisesImmutableId|String|Это свойство используется для сопоставления локальной учетной записи Active Directory с объектом пользователя Azure AD. Его необходимо указывать при создании учетной записи пользователя в Graph, если в качестве свойства **userPrincipalName** (имени участника-пользователя) используется федеративный домен. **Важно!** В этом свойстве не допускается использование символов **$** и **_**.                            |
 |otherMails|String |Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с возможным значением `DisableStrongPassword`. Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение `DisablePasswordExpiration`. Два значения можно указать одновременно. Пример: `DisablePasswordExpiration, DisableStrongPassword`.|

@@ -1,16 +1,16 @@
 ---
 title: Get onlineMeeting
 description: Извлечение свойств и связей объекта собраний в Интернете.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cd319b7434ed0313c810b1c72ebd53a784ec536f
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 468aa51cc9939c247ade3a205b91996fa6685734
+ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664994"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52896580"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -71,7 +71,7 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

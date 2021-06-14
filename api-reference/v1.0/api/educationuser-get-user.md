@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 728e848e07a176ad43e1ddea1edfee3218ae3764
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 2fb5da61a1450b25166f86a0a64baf15b1e0f559
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231887"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912063"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "52231887"
 
 Получение простого каталога **user**, который соответствует этому объекту **educationUser**.
 
->**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
+>**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...v1.0/education/me/schools`.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется сочетание разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +40,7 @@ GET /education/users/{id}/user
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в теле отклика.
