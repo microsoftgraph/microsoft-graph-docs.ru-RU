@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9f737e169557413e6e112592a882cef051942fbb
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 075b3aec5ebf315b338e0aeb4d349711dab13890
+ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781168"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52912042"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -16,6 +16,11 @@ ms.locfileid: "52781168"
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
+
+## <a name="june-2021-new-and-generally-available"></a>Июнь 2021 г.: новые и общедоступные возможности
+
+### <a name="education"></a>Образование
+API-интерфейсы для [службы заданий](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) в образовании теперь общедоступны. 
 
 ## <a name="june-2021-new-in-preview-only"></a>Июнь 2021 года: новые возможности только в предварительной версии
 
