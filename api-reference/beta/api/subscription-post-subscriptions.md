@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b471d13836faa74ba6f77ab395e9a8ad3c87e4ad
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: f87f448e4a1dfc2544eb229e16bb674ba3627e26
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911874"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941505"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -31,11 +31,14 @@ ms.locfileid: "52911874"
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
+|[каналы](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[каналы](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Не поддерживается | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All | Не поддерживается | TeamMember.Read.All |
 |[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается | Files.ReadWrite | Не поддерживается |
 |[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
@@ -47,6 +50,8 @@ ms.locfileid: "52911874"
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
+|[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -60,7 +65,7 @@ ms.locfileid: "52911874"
 
 В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
 
-OneDrive для бизнеса и SharePoint поддержку отправки приложениям уведомлений о событиях безопасности, происходящих на **driveItem.** Чтобы подписаться на эти события, добавьте `prefer:includesecuritywebhooks` заглавную в запрос для создания подписки. После создания подписки вы будете получать уведомления при изменении разрешений на элемент. Эта заглавная запись применима к SharePoint и OneDrive для бизнеса, но не к OneDrive учетным записям.
+OneDrive для бизнеса и SharePoint поддерживают отправку уведомлений приложений о событиях безопасности, которые происходят в **driveItem**. Чтобы подписаться на эти события, добавьте заголовок `prefer:includesecuritywebhooks` в запрос на создание подписки. После создания подписки вы будете получать уведомления об изменениях разрешений для элемента. Этот заголовок можно использовать в SharePoint и OneDrive для бизнеса, но не в учетных записях потребителей в OneDrive.
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 
@@ -152,8 +157,10 @@ Content-type: application/json
 | Тип ресурса | Примеры |
 |:------ |:----- |
 |[Записи звонков](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[Каналы](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Сообщение чата](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Контакты](../resources/contact.md)|`me/contacts`|
+|[ConversationMember](../resources/conversationmember.md)|`/teams/{id}/members`|
 |[Беседы](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Диски](../resources/driveitem.md)|`me/drive/root`|
 |[События](../resources/event.md)|`me/events`|
@@ -163,6 +170,7 @@ Content-type: application/json
 |[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
+|[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[Пользователи](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|

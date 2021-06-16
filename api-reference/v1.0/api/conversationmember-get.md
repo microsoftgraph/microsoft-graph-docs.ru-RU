@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 20439161d3aeb8617510a6f49dce91e2606cb331
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5b2f03bfc9375b38a4901d7f9a24e315420066ec
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039827"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941251"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -30,8 +30,6 @@ ms.locfileid: "52039827"
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
-> [!NOTE]
-> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +48,7 @@ GET /teams/{id}/channels/{id}/members/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

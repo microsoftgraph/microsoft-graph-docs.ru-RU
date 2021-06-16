@@ -4,12 +4,12 @@ description: API Microsoft Teams в Microsoft Graph, получающие дос
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 65c70c196540f18e74dfab05b4a94ecfab5fe25f
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: dd4b2a85fd0ab3b9fbceb993cfd72ef5bf19f48b
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697994"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941433"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Защищенные API в Microsoft Teams
 
@@ -29,8 +29,6 @@ API Microsoft Teams в Microsoft Graph, получающие доступ к к�
 * [Создание подписки на новые сообщения в чатах](/graph/api/subscription-post-subscriptions) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Перечисление всего размещенного содержимого](/graph/api/chatmessage-list-hostedcontents) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Получение размещенного содержимого](/graph/api/chatmessagehostedcontent-get) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Перечисление участников чата](/graph/api/conversationmember-list) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Получение участника чата](/graph/api/conversationmember-get) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 
 >[!NOTE]
 >[Отправка сообщения](/graph/api/channel-post-messages) не является защищенным API.

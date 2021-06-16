@@ -6,12 +6,12 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 226213d1361c78f592f92ddfe9b6f52c4f3defd0
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: ad1e278f31bbeb0bc079f1ad2a6345d9b260cdec
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714318"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941468"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -21,7 +21,7 @@ ms.locfileid: "49714318"
 
 Представляет элемент объекта [list][] в SharePoint.
 
-Все элементы в библиотеке документов SharePoint могут быть представлены как **ресурс listItem** или [driveItem.][]
+Все элементы в библиотеке документов SharePoint могут быть представлены как ресурс **listItem** или [driveItem][].
 
 Значения столбцов в списке доступны через словарь `fieldValueSet`.
 
@@ -40,6 +40,7 @@ ms.locfileid: "49714318"
 | [Удаление][]                     | DELETE /items/{item-id}
 | [Обновление][]                     | PATCH /items/{item-id}
 | [Обновление значений столбцов][Обновление] | PATCH /items/{item-id}/fields
+| [createLink][CreateLink]       | POST /items/{itemId}/createLink
 
 [Получение]: ../api/listitem-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
@@ -47,6 +48,7 @@ ms.locfileid: "49714318"
 [Создание]: ../api/listitem-create.md
 [Удаление]: ../api/listitem-delete.md
 [Обновление]: ../api/listitem-update.md
+[CreateLink]: ../api/listitem-createlink.md
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -56,7 +58,7 @@ ms.locfileid: "49714318"
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
+  "@odata.type&quot;: &quot;microsoft.graph.listItem"
 }-->
 
 ```json
@@ -81,7 +83,7 @@ ms.locfileid: "49714318"
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
+  "webUrl&quot;: &quot;url"
 }
 ```
 
@@ -141,7 +143,7 @@ ms.locfileid: "49714318"
   "section": "documentation",
   "tocPath": "Resources/ListItem",
   "tocBookmarks": {
-    "ListItem": "#"
+    "ListItem&quot;: &quot;#"
   },
   "suppressions": []
 }
