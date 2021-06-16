@@ -10,11 +10,11 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/15/2021
 ms.locfileid: "52941545"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="86624-103">Настройка клиента службы Microsoft Graph SDK</span><span class="sxs-lookup"><span data-stu-id="86624-103">Customize the Microsoft Graph SDK service client</span></span>
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="326e7-103">Настройка клиента службы Microsoft Graph SDK</span><span class="sxs-lookup"><span data-stu-id="326e7-103">Customize the Microsoft Graph SDK service client</span></span>
 
-<span data-ttu-id="86624-104">Клиент microsoft Graph SDK настраивает по умолчанию набор средних программ, который позволяет SDK взаимодействовать с конечными точками Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="86624-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="86624-105">Этот набор по умолчанию настраивается, что позволяет изменить поведение клиента.</span><span class="sxs-lookup"><span data-stu-id="86624-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="86624-106">Например, можно вставить настраиваемый журнал или добавить обработник тестирования для имитации определенных сценариев.</span><span class="sxs-lookup"><span data-stu-id="86624-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="86624-107">Вы можете добавлять и удалять компоненты middleware.</span><span class="sxs-lookup"><span data-stu-id="86624-107">You can add and remove middleware components.</span></span> <span data-ttu-id="86624-108">Важно отметить, что порядок запуска компонентов middleware имеет важное значение.</span><span class="sxs-lookup"><span data-stu-id="86624-108">It is important to note that the order in which middleware components run is significant.</span></span>
+<span data-ttu-id="326e7-104">Клиент microsoft Graph SDK настраивает по умолчанию набор средних программ, который позволяет SDK взаимодействовать с конечными точками Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="326e7-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="326e7-105">Этот набор по умолчанию настраивается, что позволяет изменить поведение клиента.</span><span class="sxs-lookup"><span data-stu-id="326e7-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="326e7-106">Например, можно вставить настраиваемый журнал или добавить обработник тестирования для имитации определенных сценариев.</span><span class="sxs-lookup"><span data-stu-id="326e7-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="326e7-107">Вы можете добавлять и удалять компоненты middleware.</span><span class="sxs-lookup"><span data-stu-id="326e7-107">You can add and remove middleware components.</span></span> <span data-ttu-id="326e7-108">Важно отметить, что порядок запуска компонентов middleware имеет важное значение.</span><span class="sxs-lookup"><span data-stu-id="326e7-108">It is important to note that the order in which middleware components run is significant.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="86624-109">C#</span><span class="sxs-lookup"><span data-stu-id="86624-109">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="326e7-109">C#</span><span class="sxs-lookup"><span data-stu-id="326e7-109">C#</span></span>](#tab/csharp)
 
 ```csharp
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
@@ -38,7 +38,7 @@ var messages = await customGraphClient.Me.Messages.Request()
     .GetAsync();
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="86624-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="86624-110">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="326e7-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="326e7-110">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a custom auth provider
@@ -69,7 +69,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-### <a name="simpleauthproviderts"></a><span data-ttu-id="86624-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="86624-111">SimpleAuthProvider.ts</span></span>
+### <a name="simpleauthproviderts"></a><span data-ttu-id="326e7-111">SimpleAuthProvider.ts</span><span class="sxs-lookup"><span data-stu-id="326e7-111">SimpleAuthProvider.ts</span></span>
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -87,7 +87,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-### <a name="customlogginghandlerts"></a><span data-ttu-id="86624-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="86624-112">CustomLoggingHandler.ts</span></span>
+### <a name="customlogginghandlerts"></a><span data-ttu-id="326e7-112">CustomLoggingHandler.ts</span><span class="sxs-lookup"><span data-stu-id="326e7-112">CustomLoggingHandler.ts</span></span>
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -105,7 +105,7 @@ export default class CustomLoggingHandler implements Middleware {
 }
 ```
 
-## <a name="java"></a>[<span data-ttu-id="86624-113">Java</span><span class="sxs-lookup"><span data-stu-id="86624-113">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="326e7-113">Java</span><span class="sxs-lookup"><span data-stu-id="326e7-113">Java</span></span>](#tab/java)
 
 ```java
 // you can configure any OkHttpClient option and add interceptors
@@ -124,12 +124,12 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ---
 
-## <a name="configuring-the-http-proxy-for-the-client"></a><span data-ttu-id="86624-114">Настройка прокси-сервера HTTP для клиента</span><span class="sxs-lookup"><span data-stu-id="86624-114">Configuring the HTTP proxy for the client</span></span>
+## <a name="configuring-the-http-proxy-for-the-client"></a><span data-ttu-id="326e7-114">Настройка прокси-сервера HTTP для клиента</span><span class="sxs-lookup"><span data-stu-id="326e7-114">Configuring the HTTP proxy for the client</span></span>
 
-<span data-ttu-id="86624-115">В некоторых средах клиентские приложения должны использовать прокси-сервер HTTP, прежде чем они смогут получить доступ к общественному Интернету.</span><span class="sxs-lookup"><span data-stu-id="86624-115">Some environments require client applications to use a HTTP proxy before they can access the public internet.</span></span> <span data-ttu-id="86624-116">В этом разделе показано, как настроить прокси-сервер microsoft Graph SDKs.</span><span class="sxs-lookup"><span data-stu-id="86624-116">This section shows how to configure the proxy for the Microsoft Graph SDKs.</span></span>
+<span data-ttu-id="326e7-115">В некоторых средах клиентские приложения должны использовать прокси-сервер HTTP, прежде чем они смогут получить доступ к общественному Интернету.</span><span class="sxs-lookup"><span data-stu-id="326e7-115">Some environments require client applications to use a HTTP proxy before they can access the public internet.</span></span> <span data-ttu-id="326e7-116">В этом разделе показано, как настроить прокси-сервер microsoft Graph SDKs.</span><span class="sxs-lookup"><span data-stu-id="326e7-116">This section shows how to configure the proxy for the Microsoft Graph SDKs.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-## <a name="c"></a>[<span data-ttu-id="86624-117">C#</span><span class="sxs-lookup"><span data-stu-id="86624-117">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="326e7-117">C#</span><span class="sxs-lookup"><span data-stu-id="326e7-117">C#</span></span>](#tab/csharp)
 
 ```csharp
 // URI to proxy
@@ -176,7 +176,7 @@ GraphServiceClient graphClient = new(authHandler, httpProvider);
 */
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="86624-118">TypeScript</span><span class="sxs-lookup"><span data-stu-id="86624-118">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="326e7-118">TypeScript</span><span class="sxs-lookup"><span data-stu-id="326e7-118">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a credential from @azure/identity package
@@ -211,7 +211,7 @@ const client = MicrosoftGraph.Client.initWithMiddleware({
 });
 ```
 
-## <a name="java"></a>[<span data-ttu-id="86624-119">Java</span><span class="sxs-lookup"><span data-stu-id="86624-119">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="326e7-119">Java</span><span class="sxs-lookup"><span data-stu-id="326e7-119">Java</span></span>](#tab/java)
 
 ```Java
 final int proxyPort = 8080;
@@ -266,6 +266,6 @@ final GraphServiceClient graphServiceClient =
 ```
 
 > [!NOTE]
-> <span data-ttu-id="86624-120">Дополнительные сведения о конфигурации прокси-сервера Azure Identity см. в [профиле ProxyOptions.](/java/api/com.azure.core.http.proxyoptions.proxyoptions)</span><span class="sxs-lookup"><span data-stu-id="86624-120">For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span></span>
+> <span data-ttu-id="326e7-120">Дополнительные сведения о конфигурации прокси-сервера Azure Identity см. в [профиле ProxyOptions.](/java/api/com.azure.core.http.proxyoptions.proxyoptions)</span><span class="sxs-lookup"><span data-stu-id="326e7-120">For more information about Azure Identity proxy configuration, see [ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions).</span></span>
 
 ---
