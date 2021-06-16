@@ -1,16 +1,16 @@
 ---
 title: Добавление вкладки в чат
-description: 'Добавляет (закрепление) вкладки в указанный чат. '
+description: 'Добавляет (пин-коды) вкладку в указанный чат. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dfe95846bc117285e9b75afc29af2e7315be53dc
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: f422823b8646bd695c94640b15f456e3e372e0d5
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689676"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971260"
 ---
 # <a name="add-tab-to-chat"></a>Добавление вкладки в чат
 
@@ -18,7 +18,7 @@ ms.locfileid: "49689676"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте (закрепить) [вкладку](../resources/teamstab.md) в указанный [чат.](../resources/chat.md) Соответствующее приложение уже должно быть [установлено в чате.](../api/chat-list-installedapps.md)
+Добавьте (пин-код) [вкладку](../resources/teamstab.md) в указанный [чат.](../resources/chat.md) Соответствующее приложение уже должно [быть установлено в чате.](../api/chat-list-installedapps.md)
 
 > **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет добавлена к собранию.
 
@@ -29,8 +29,9 @@ ms.locfileid: "49689676"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение                            | TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
+| Приложение                            | TeamsTab.Create.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
 
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,11 +46,11 @@ POST /chats/{chat-id}/tabs
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса содержится представление [teamsTab](../resources/teamstab.md)в JSON.
+В орган запроса включаем представление JSON [teamsTab](../resources/teamstab.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и экземпляр ресурса `201 Created` [teamsTab](../resources/teamstab.md) в тексте.
+В случае успешного использования этот метод возвращает код ответа и экземпляр ресурса `201 Created` [teamsTab](../resources/teamstab.md) в теле.
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: c47c4d7df11599a5983f5610ef3bfd29c80eee5b
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: ea456442a4fdc8936d8ff82ac8019bdf788953ab
+ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911293"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52941419"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -71,7 +71,7 @@ ms.locfileid: "52911293"
 | **driveItem** OneDrive    | 43200 минут (до 30 дней)    |
 | **Список** SharePoint    | 43200 минут (до 30 дней)    |
 | **Сообщение**, **событие**, **контакт** Outlook              | 4230 минут (до 3 дней)    |
-| **Пользователь**, **группа**, другие ресурсы каталога   | 4230 минут (до 3 дней)    |
+| **Пользователь**, **группа**, другие ресурсы каталога   | 41 760 минут (до 29 дней)    |
 | **printer** печати | 4230 минут (до 3 дней)    |
 | **printTaskDefinition** печати | 4230 минут (до 3 дней)    |
 
