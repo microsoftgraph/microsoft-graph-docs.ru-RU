@@ -505,10 +505,19 @@ items:
                 href: webhooks-with-resource-data.md
               - name: Получение уведомлений разными способами
                 href: change-notifications-delivery.md
-              - name: Получение уведомлений об изменениях для сообщений чатов или каналов
-                href: teams-changenotifications-chatmessage.md
               - name: Уведомления об изменениях облачной печати
                 href: universal-print-webhook-notifications.md
+              - name: Уведомление об изменениях в Microsoft Teams
+                displayName: Change notifications in Microsoft Teams
+                items:
+                  - name: Обзор
+                    href: change-notification-in-microsoft-teams-overview.md
+                  - name: Сообщения в чатах и каналах
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Команды и каналы
+                    href: teams-changenotifications-team-and-channel.md
+                  - name: Участники команды
+                    href: teams-changenotifications-teamMembership.md
           - name: Отслеживание изменений
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
