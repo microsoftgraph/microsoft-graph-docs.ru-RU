@@ -5,12 +5,12 @@ author: subray
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 84509aff2efaf1c528c52b9e73744d6fada0ebb6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5168994cbafcb0f8bc51af0a4bfa6c17cb7cea6b
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047303"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971351"
 ---
 # <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
@@ -29,8 +29,9 @@ ms.locfileid: "52047303"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Приложение | TeamsTab.Delete.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

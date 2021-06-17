@@ -1,18 +1,18 @@
 ---
-title: Создание клиента Microsoft Graph
+title: Создание клиентской Graph Майкрософт
 description: Описывает, как создать клиента для звонков в Microsoft Graph. Включает в себя настройка проверки подлинности и выбор суверенного облака.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: f32a779ac57d88da1ea66820a2b5a0bb30cbb89e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0256ad20b3078c081102221189a12e27432df058
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50953357"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971362"
 ---
-# <a name="create-a-microsoft-graph-client"></a>Создание клиента Microsoft Graph
+# <a name="create-a-microsoft-graph-client"></a>Создание клиентской Graph Майкрософт
 
-Клиент Microsoft Graph разработан таким образом, чтобы сделать вызовы в Microsoft Graph простыми. Можно использовать один экземпляр клиента в течение всего срока службы приложения. Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в проект, см. в [сайте Install the SDK.](sdk-installation.md)
+Клиент microsoft Graph разработан, чтобы сделать простое для звонков в Корпорацию Майкрософт Graph. Можно использовать один экземпляр клиента в течение всего срока службы приложения. Сведения о том, как добавить и установить клиентский пакет Microsoft Graph в проект, см. в сайте [Install the SDK.](sdk-installation.md)
 
 В следующих примерах кода покажите, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Различные поставщики приложений поддерживают различные клиентские сценарии. Дополнительные сведения о том, какой поставщик и какие параметры подходят для вашего сценария, см. в материале [Выберите поставщика проверки подлинности.](choose-authentication-providers.md)
 
@@ -33,16 +33,18 @@ GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-    redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
+/**
+* Create an authProvider to authenticate againt the Microsoft Graph API.
+* You can use the TokenCredentialAuthenticationProvider instance with @azure/identity library or
+* you can authentication using any MSAL auth library with a custom authentication provider.
+*/
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider,
+});
 ```
 
 # <a name="java"></a>[Java](#tab/Java)

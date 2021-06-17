@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d5355d04f573d368052be374cc0ddc57b16b1247
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 3c9ca7557be5c0458354565fb3a54388b43defc1
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786547"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971090"
 ---
 # <a name="add-member-to-a-chat"></a>Добавление участника в чат
 
@@ -26,9 +26,11 @@ ms.locfileid: "52786547"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Не поддерживается. |
+|Приложение| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 <!-- { "blockType": "ignored"} -->
 ```http

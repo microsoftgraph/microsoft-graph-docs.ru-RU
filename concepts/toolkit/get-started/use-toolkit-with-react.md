@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 0c06566824c6da06490f83693aedd7ef40ae282b
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 876d8674013f1b673208e358d7d0902cb930f638
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813074"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971442"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Использование Microsoft Graph Toolkit с React
 
@@ -237,7 +237,13 @@ Microsoft Graph Toolkit не только упрощает проверку по
 
 Теперь, когда отслеживается состояние входа пользователя в приложение, вы можете отображать календарь пользователя после входа в систему.
 
-1. Откройте в редакторе кода файл **src/App.tsx** и внутри функции **Приложение** добавьте следующее:
+1. В редакторе кода откройте **файл src/App.tsx** и раздвяйте заявление компонента `import` с **компонентом Agenda.**
+
+    ```TypeScript
+    import { Agenda, Login } from '@microsoft/mgt-react';
+    ```
+
+1. Далее в **функции App** добавьте:
 
     ```TypeScript
     const [isSignedIn] = useIsSignedIn();

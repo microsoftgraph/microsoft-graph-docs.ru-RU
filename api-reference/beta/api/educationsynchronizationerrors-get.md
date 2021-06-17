@@ -5,16 +5,18 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d652938060bd577a00f1f22c3ce8cb5d5cc8160d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6bcf581d70d3c214bc18904d73ba5a69a1321824
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043166"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971068"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Get educationSynchronizationErrors
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите ошибки, созданные во время проверки и/или при синхронизации определенного профиля синхронизации школьных данных [в](../resources/educationsynchronizationprofile.md) клиенте.
 
@@ -26,7 +28,7 @@ ms.locfileid: "52043166"
 | :------------------------------------ | :---------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)    | EduAdministration.Read, EduAdministration.ReadWrite         |
 | Делегированная (личная учетная запись Майкрософт) | Не поддерживается.                                              |
-| Для приложений                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Приложение                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
