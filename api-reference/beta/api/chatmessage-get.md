@@ -5,56 +5,56 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7bc06aafd9fcf5ed5942bd1cc58b1890fddc0d1f
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 82bd85c18d936136d24ce82ee1343d553fa6ae77
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696116"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971113"
 ---
-# <a name="get-chatmessage-in-a-channel-or-chat"></a><span data-ttu-id="cef72-103">Получение объекта chatMessage в канале или чате</span><span class="sxs-lookup"><span data-stu-id="cef72-103">Get chatMessage in a channel or chat</span></span>
+# <a name="get-chatmessage-in-a-channel-or-chat"></a><span data-ttu-id="e3fd3-103">Получение объекта chatMessage в канале или чате</span><span class="sxs-lookup"><span data-stu-id="e3fd3-103">Get chatMessage in a channel or chat</span></span>
 
-<span data-ttu-id="cef72-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cef72-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e3fd3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3fd3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cef72-105">Получение одного [сообщения](../resources/chatmessage.md) или [ответа на сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) или [чате](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="cef72-105">Retrieve a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="e3fd3-105">Получение одного [сообщения](../resources/chatmessage.md) или [ответа на сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) или [чате](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="e3fd3-105">Retrieve a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cef72-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cef72-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e3fd3-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e3fd3-106">Permissions</span></span>
 
-<span data-ttu-id="cef72-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cef72-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e3fd3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e3fd3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-for-channel"></a><span data-ttu-id="cef72-109">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="cef72-109">Permissions for channel</span></span>
+### <a name="permissions-for-channel"></a><span data-ttu-id="e3fd3-109">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="e3fd3-109">Permissions for channel</span></span>
 
-| <span data-ttu-id="cef72-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cef72-110">Permission type</span></span>                        | <span data-ttu-id="cef72-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cef72-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e3fd3-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e3fd3-110">Permission type</span></span>                        | <span data-ttu-id="e3fd3-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e3fd3-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="cef72-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cef72-112">Delegated (work or school account)</span></span>| <span data-ttu-id="cef72-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span><span class="sxs-lookup"><span data-stu-id="cef72-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
-|<span data-ttu-id="cef72-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cef72-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cef72-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cef72-115">Not supported.</span></span>|
-|<span data-ttu-id="cef72-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cef72-116">Application</span></span>| <span data-ttu-id="cef72-117">ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cef72-117">ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="e3fd3-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e3fd3-112">Delegated (work or school account)</span></span>| <span data-ttu-id="e3fd3-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span><span class="sxs-lookup"><span data-stu-id="e3fd3-113">ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
+|<span data-ttu-id="e3fd3-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e3fd3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e3fd3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-115">Not supported.</span></span>|
+|<span data-ttu-id="e3fd3-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e3fd3-116">Application</span></span>| <span data-ttu-id="e3fd3-117">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3fd3-117">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-### <a name="permissions-for-chat"></a><span data-ttu-id="cef72-118">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="cef72-118">Permissions for chat</span></span>
+### <a name="permissions-for-chat"></a><span data-ttu-id="e3fd3-118">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="e3fd3-118">Permissions for chat</span></span>
 
-| <span data-ttu-id="cef72-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cef72-119">Permission type</span></span>                        | <span data-ttu-id="cef72-120">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cef72-120">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e3fd3-119">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e3fd3-119">Permission type</span></span>                        | <span data-ttu-id="e3fd3-120">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e3fd3-120">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="cef72-121">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cef72-121">Delegated (work or school account)</span></span>| <span data-ttu-id="cef72-122">Chat.Read, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cef72-122">Chat.Read, Chat.ReadWrite</span></span>|
-|<span data-ttu-id="cef72-123">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cef72-123">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cef72-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cef72-124">Not supported.</span></span>|
-|<span data-ttu-id="cef72-125">Для приложения</span><span class="sxs-lookup"><span data-stu-id="cef72-125">Application</span></span>| <span data-ttu-id="cef72-126">Chat.Read.All, Chat.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cef72-126">Chat.Read.All, Chat.ReadWrite.All</span></span>|
+|<span data-ttu-id="e3fd3-121">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e3fd3-121">Delegated (work or school account)</span></span>| <span data-ttu-id="e3fd3-122">Chat.Read, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e3fd3-122">Chat.Read, Chat.ReadWrite</span></span>|
+|<span data-ttu-id="e3fd3-123">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e3fd3-123">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e3fd3-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-124">Not supported.</span></span>|
+|<span data-ttu-id="e3fd3-125">Приложение</span><span class="sxs-lookup"><span data-stu-id="e3fd3-125">Application</span></span>| <span data-ttu-id="e3fd3-126">ChatMessage.Read.Chat\*, Chat.Read.All, Chat.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3fd3-126">ChatMessage.Read.Chat\*, Chat.Read.All, Chat.ReadWrite.All</span></span>|
 
-> <span data-ttu-id="cef72-127">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="cef72-127">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="e3fd3-127">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="e3fd3-127">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="cef72-128">Перед вызовом этого API с разрешениями приложения необходимо запросить доступ.</span><span class="sxs-lookup"><span data-stu-id="cef72-128">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="cef72-129">Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="cef72-129">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="e3fd3-128">Перед вызовом этого API с разрешениями приложения необходимо запросить доступ.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-128">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="e3fd3-129">Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="e3fd3-129">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="cef72-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cef72-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e3fd3-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e3fd3-130">HTTP request</span></span>
 
-<span data-ttu-id="cef72-131">**Получение сообщения в канале**</span><span class="sxs-lookup"><span data-stu-id="cef72-131">**Get message in a channel**</span></span>
+<span data-ttu-id="e3fd3-131">**Получение сообщения в канале**</span><span class="sxs-lookup"><span data-stu-id="e3fd3-131">**Get message in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}
 GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
 ```
 
-<span data-ttu-id="cef72-132">**Получение сообщения в чате**</span><span class="sxs-lookup"><span data-stu-id="cef72-132">**Get message in a chat**</span></span>
+<span data-ttu-id="e3fd3-132">**Получение сообщения в чате**</span><span class="sxs-lookup"><span data-stu-id="e3fd3-132">**Get message in a chat**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}
@@ -62,29 +62,29 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 GET /me/chats/{chat-id}/messages/{message-id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="cef72-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cef72-133">Optional query parameters</span></span>
-<span data-ttu-id="cef72-134">Этот метод не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="cef72-134">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e3fd3-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e3fd3-133">Optional query parameters</span></span>
+<span data-ttu-id="e3fd3-134">Этот метод не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-134">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cef72-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cef72-135">Request headers</span></span>
-| <span data-ttu-id="cef72-136">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cef72-136">Header</span></span>       | <span data-ttu-id="cef72-137">Значение</span><span class="sxs-lookup"><span data-stu-id="cef72-137">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="e3fd3-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e3fd3-135">Request headers</span></span>
+| <span data-ttu-id="e3fd3-136">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e3fd3-136">Header</span></span>       | <span data-ttu-id="e3fd3-137">Значение</span><span class="sxs-lookup"><span data-stu-id="e3fd3-137">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="cef72-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cef72-138">Authorization</span></span>  | <span data-ttu-id="cef72-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cef72-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e3fd3-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e3fd3-138">Authorization</span></span>  | <span data-ttu-id="e3fd3-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="cef72-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cef72-141">Request body</span></span>
-<span data-ttu-id="cef72-142">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cef72-142">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e3fd3-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e3fd3-141">Request body</span></span>
+<span data-ttu-id="e3fd3-142">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-142">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cef72-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="cef72-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e3fd3-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3fd3-143">Response</span></span>
 
-<span data-ttu-id="cef72-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект [chatmessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cef72-144">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="e3fd3-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект [chatmessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-144">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cef72-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="cef72-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e3fd3-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="e3fd3-145">Examples</span></span>
 
-### <a name="example-1-get-a-message-in-a-chat"></a><span data-ttu-id="cef72-146">Пример 1. Получение сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="cef72-146">Example 1: Get a message in a chat</span></span>
-#### <a name="request"></a><span data-ttu-id="cef72-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="cef72-147">Request</span></span>
-<span data-ttu-id="cef72-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cef72-148">The following is an example of the request.</span></span>
+### <a name="example-1-get-a-message-in-a-chat"></a><span data-ttu-id="e3fd3-146">Пример 1. Получение сообщения в чате</span><span class="sxs-lookup"><span data-stu-id="e3fd3-146">Example 1: Get a message in a chat</span></span>
+#### <a name="request"></a><span data-ttu-id="e3fd3-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3fd3-147">Request</span></span>
+<span data-ttu-id="e3fd3-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-148">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cef72-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="cef72-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e3fd3-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3fd3-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_1"
@@ -92,27 +92,27 @@ GET /me/chats/{chat-id}/messages/{message-id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces/messages/1612289992105
 ```
-# <a name="c"></a>[<span data-ttu-id="cef72-150">C#</span><span class="sxs-lookup"><span data-stu-id="cef72-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e3fd3-150">C#</span><span class="sxs-lookup"><span data-stu-id="e3fd3-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cef72-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cef72-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e3fd3-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e3fd3-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cef72-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cef72-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e3fd3-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e3fd3-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cef72-153">Java</span><span class="sxs-lookup"><span data-stu-id="cef72-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e3fd3-153">Java</span><span class="sxs-lookup"><span data-stu-id="e3fd3-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cef72-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="cef72-154">Response</span></span>
-<span data-ttu-id="cef72-155">Ниже показан пример отклика. `chatId`</span><span class="sxs-lookup"><span data-stu-id="cef72-155">The following example shows the response.`chatId`</span></span> <span data-ttu-id="cef72-156">определяет [чат](../resources/chat.md), содержащий это сообщение.</span><span class="sxs-lookup"><span data-stu-id="cef72-156">identifies the [chat](../resources/chat.md) that contains this message.</span></span>
+#### <a name="response"></a><span data-ttu-id="e3fd3-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3fd3-154">Response</span></span>
+<span data-ttu-id="e3fd3-155">Ниже показан пример отклика. `chatId`</span><span class="sxs-lookup"><span data-stu-id="e3fd3-155">The following example shows the response.`chatId`</span></span> <span data-ttu-id="e3fd3-156">определяет [чат](../resources/chat.md), содержащий это сообщение.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-156">identifies the [chat](../resources/chat.md) that contains this message.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -161,12 +161,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-message-in-a-channel"></a><span data-ttu-id="cef72-157">Пример 2. Получение сообщения в канале</span><span class="sxs-lookup"><span data-stu-id="cef72-157">Example 2: Get a message in a channel</span></span>
-#### <a name="request"></a><span data-ttu-id="cef72-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="cef72-158">Request</span></span>
-<span data-ttu-id="cef72-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cef72-159">The following is an example of the request.</span></span>
+### <a name="example-2-get-a-message-in-a-channel"></a><span data-ttu-id="e3fd3-157">Пример 2. Получение сообщения в канале</span><span class="sxs-lookup"><span data-stu-id="e3fd3-157">Example 2: Get a message in a channel</span></span>
+#### <a name="request"></a><span data-ttu-id="e3fd3-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3fd3-158">Request</span></span>
+<span data-ttu-id="e3fd3-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-159">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cef72-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="cef72-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e3fd3-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3fd3-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_2"
@@ -174,27 +174,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1614618259349
 ```
-# <a name="c"></a>[<span data-ttu-id="cef72-161">C#</span><span class="sxs-lookup"><span data-stu-id="cef72-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e3fd3-161">C#</span><span class="sxs-lookup"><span data-stu-id="e3fd3-161">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cef72-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cef72-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e3fd3-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e3fd3-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cef72-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cef72-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e3fd3-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e3fd3-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cef72-164">Java</span><span class="sxs-lookup"><span data-stu-id="cef72-164">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e3fd3-164">Java</span><span class="sxs-lookup"><span data-stu-id="e3fd3-164">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cef72-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="cef72-165">Response</span></span>
-<span data-ttu-id="cef72-166">Ниже показан пример отклика. `channelIdentity`</span><span class="sxs-lookup"><span data-stu-id="cef72-166">The following example shows the response.`channelIdentity`</span></span> <span data-ttu-id="cef72-167">определяет [команду](../resources/team.md) и [канал](../resources/channel.md), содержащий это сообщение.</span><span class="sxs-lookup"><span data-stu-id="cef72-167">identifies the [team](../resources/team.md) and [channel](../resources/channel.md) that contains this message.</span></span>
+#### <a name="response"></a><span data-ttu-id="e3fd3-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3fd3-165">Response</span></span>
+<span data-ttu-id="e3fd3-166">Ниже показан пример отклика. `channelIdentity`</span><span class="sxs-lookup"><span data-stu-id="e3fd3-166">The following example shows the response.`channelIdentity`</span></span> <span data-ttu-id="e3fd3-167">определяет [команду](../resources/team.md) и [канал](../resources/channel.md), содержащий это сообщение.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-167">identifies the [team](../resources/team.md) and [channel](../resources/channel.md) that contains this message.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -246,12 +246,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-reply-to-a-message-in-a-channel"></a><span data-ttu-id="cef72-168">Пример 3. Получение ответа на сообщение в канале</span><span class="sxs-lookup"><span data-stu-id="cef72-168">Example 3: Get reply to a message in a channel</span></span>
-#### <a name="request"></a><span data-ttu-id="cef72-169">Запрос</span><span class="sxs-lookup"><span data-stu-id="cef72-169">Request</span></span>
-<span data-ttu-id="cef72-170">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cef72-170">The following is an example of the request.</span></span>
+### <a name="example-3-get-reply-to-a-message-in-a-channel"></a><span data-ttu-id="e3fd3-168">Пример 3. Получение ответа на сообщение в канале</span><span class="sxs-lookup"><span data-stu-id="e3fd3-168">Example 3: Get reply to a message in a channel</span></span>
+#### <a name="request"></a><span data-ttu-id="e3fd3-169">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3fd3-169">Request</span></span>
+<span data-ttu-id="e3fd3-170">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-170">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cef72-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="cef72-171">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e3fd3-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3fd3-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chatmessagechannel_3"
@@ -259,27 +259,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1612509044972/replies/1613671348387
 ```
-# <a name="c"></a>[<span data-ttu-id="cef72-172">C#</span><span class="sxs-lookup"><span data-stu-id="cef72-172">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e3fd3-172">C#</span><span class="sxs-lookup"><span data-stu-id="e3fd3-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cef72-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cef72-173">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e3fd3-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e3fd3-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cef72-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cef72-174">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e3fd3-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e3fd3-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cef72-175">Java</span><span class="sxs-lookup"><span data-stu-id="cef72-175">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e3fd3-175">Java</span><span class="sxs-lookup"><span data-stu-id="e3fd3-175">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cef72-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="cef72-176">Response</span></span>
-<span data-ttu-id="cef72-177">Ниже показан пример отклика. `replyToId`</span><span class="sxs-lookup"><span data-stu-id="cef72-177">The following example shows the response.`replyToId`</span></span> <span data-ttu-id="cef72-178">содержит `id` корневого сообщения.</span><span class="sxs-lookup"><span data-stu-id="cef72-178">contains the `id` of the root message.</span></span>
+#### <a name="response"></a><span data-ttu-id="e3fd3-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3fd3-176">Response</span></span>
+<span data-ttu-id="e3fd3-177">Ниже показан пример отклика. `replyToId`</span><span class="sxs-lookup"><span data-stu-id="e3fd3-177">The following example shows the response.`replyToId`</span></span> <span data-ttu-id="e3fd3-178">содержит `id` корневого сообщения.</span><span class="sxs-lookup"><span data-stu-id="e3fd3-178">contains the `id` of the root message.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -332,11 +332,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cef72-179">См. также</span><span class="sxs-lookup"><span data-stu-id="cef72-179">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e3fd3-179">См. также</span><span class="sxs-lookup"><span data-stu-id="e3fd3-179">See also</span></span>
 
-- [<span data-ttu-id="cef72-180">Список сообщений в канале</span><span class="sxs-lookup"><span data-stu-id="cef72-180">List messages in a channel</span></span>](channel-list-messages.md)
-- [<span data-ttu-id="cef72-181">Список сообщений в чате</span><span class="sxs-lookup"><span data-stu-id="cef72-181">List messages in a chat</span></span>](chat-list-messages.md)
-- [<span data-ttu-id="cef72-182">Отправка сообщения в канале или чате</span><span class="sxs-lookup"><span data-stu-id="cef72-182">Send message in a channel or a chat</span></span>](chatmessage-post.md)
+- [<span data-ttu-id="e3fd3-180">Список сообщений в канале</span><span class="sxs-lookup"><span data-stu-id="e3fd3-180">List messages in a channel</span></span>](channel-list-messages.md)
+- [<span data-ttu-id="e3fd3-181">Список сообщений в чате</span><span class="sxs-lookup"><span data-stu-id="e3fd3-181">List messages in a chat</span></span>](chat-list-messages.md)
+- [<span data-ttu-id="e3fd3-182">Отправка сообщения в канале или чате</span><span class="sxs-lookup"><span data-stu-id="e3fd3-182">Send message in a channel or a chat</span></span>](chatmessage-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
