@@ -1,16 +1,16 @@
 ---
 title: Удаление участника
 description: Используйте этот API для удаления участника (пользователя или группы) из административного подразделения.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7e5662fef16966edaf0acd8986341ae9b723a5f2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2d79d9de1f2cf93cec62678150f564381411e0d6
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438941"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992067"
 ---
 # <a name="remove-a-member"></a>Удаление участника
 
@@ -40,7 +40,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

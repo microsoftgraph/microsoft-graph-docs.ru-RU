@@ -5,12 +5,12 @@ localization_priority: Priority
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91f45f57fab749e0f9ec47937bd8b8897b55cea4
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 0acd5466ff17fca1090d491708ce231f37a31f3c
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696123"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971295"
 ---
 # <a name="list-messages-in-a-chat"></a>Список сообщений в чате
 
@@ -30,7 +30,9 @@ ms.locfileid: "52696123"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Chat.Read, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Chat.Read.All, Chat.ReadWrite.All |
+|Приложение | ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

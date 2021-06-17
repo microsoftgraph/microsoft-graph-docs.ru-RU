@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8d3aab12dcc48fc16a5d57fbc7a06f64c422c962
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7d6c89e6b143373e6e1e3822a192dd443ecf7bd9
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436269"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992302"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -122,6 +122,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-decline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-decline-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

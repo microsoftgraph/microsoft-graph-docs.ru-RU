@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7bc06aafd9fcf5ed5942bd1cc58b1890fddc0d1f
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 82bd85c18d936136d24ce82ee1343d553fa6ae77
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696116"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971113"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Получение объекта chatMessage в канале или чате
 
@@ -30,7 +30,7 @@ ms.locfileid: "52696116"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Для приложений| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 
@@ -38,7 +38,7 @@ ms.locfileid: "52696116"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Chat.Read, Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| Chat.Read.All, Chat.ReadWrite.All|
+|Приложение| ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All|
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 

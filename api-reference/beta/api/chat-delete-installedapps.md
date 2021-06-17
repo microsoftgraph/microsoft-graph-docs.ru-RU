@@ -5,12 +5,12 @@ author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 014ef8e056ca117bd1680cb5b0be0595f20d8571
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3566191d894c2e98ccdb3d91c513f1581e6d6716
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770074"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971379"
 ---
 # <a name="uninstall-app-in-a-chat"></a>Удаление приложения в чате
 
@@ -30,7 +30,9 @@ ms.locfileid: "50770074"
 |:--------------------|:---------------------------------------------------------|
 |Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Приложение | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Приложение | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 

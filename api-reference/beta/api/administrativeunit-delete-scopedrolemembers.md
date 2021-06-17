@@ -1,16 +1,16 @@
 ---
 title: Удаление scopedRoleMember
 description: Удалите члена с областью действия из администраторского подразделения.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6609c0112d268a118bc951408f21f7e8564f2690
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0974d361ce125ce9f2a337d8d73be44b2e8541d0
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048304"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992078"
 ---
 # <a name="remove-a-scopedrolemember"></a>Удаление scopedRoleMember
 
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembe
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

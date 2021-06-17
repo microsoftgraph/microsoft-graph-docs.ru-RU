@@ -1,16 +1,16 @@
 ---
 title: Добавление участника
 description: Используйте этот API для добавления участника (пользователя или группы) в административное подразделение.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5b0c706d05c368bfb47d514cbb0ad51ab44f2ab1
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 46bd9fee6ca7353132fb9bc16183093a7a5dd465
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201233"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991941"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -28,9 +28,9 @@ ms.locfileid: "51201233"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

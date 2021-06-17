@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c1f61ba3ca3d282003d191df2d7a22e44ee68a8b
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: d90baace95b3698a84ef55f74cca327ab95b5081
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854201"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52990892"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -47,7 +47,7 @@ GET /directoryRoles/roleTemplateId={role-templateId}/members
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -120,6 +120,8 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directoryrole_members_templateId"
@@ -127,6 +129,24 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-templateid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-members-templateid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-members-templateid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-members-templateid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

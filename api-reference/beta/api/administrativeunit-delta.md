@@ -2,15 +2,15 @@
 title: 'administrativeUnit: delta'
 description: Получите вновь созданные, обновленные или удаленные административные единицы без выполнения полного чтения всей коллекции ресурсов.
 localization_priority: Normal
-author: anandyadavMSFT
+author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c5cfa9588897715d12668483b115395668d18141
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c454882d4feaa5b9fb0469c848ec4026e4034ba2
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048290"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992025"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: delta
 

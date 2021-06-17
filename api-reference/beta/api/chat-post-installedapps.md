@@ -5,12 +5,12 @@ author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53a1792f1dbfb80985078c467eaec810166d23a3
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c75d92e939e6bbc8661e0d71ffd210cc88a0070a
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786186"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971050"
 ---
 # <a name="add-app-to-chat"></a>Добавление приложения в чат
 
@@ -30,7 +30,9 @@ ms.locfileid: "52786186"
 |:--------------------|:---------------------------------------------------------|
 |Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Приложение | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 

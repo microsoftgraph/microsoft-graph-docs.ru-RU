@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 042c95cab97e32c0b871f342a082e8bcf8b41c6c
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: a1737d76b09cf0eeda9ee199d07983df4b7fda7d
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696031"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971309"
 ---
 # <a name="list-members-of-a-chat"></a>Список участников чата
 
@@ -33,7 +33,9 @@ ms.locfileid: "52696031"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
+|Приложение| ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).

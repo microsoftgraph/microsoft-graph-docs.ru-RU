@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b44f6797dd5069aedba137dbed886a1121ffde08
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8515b6ebb853c65ba44ce18c401179e115605689
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047548"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971288"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -27,8 +27,9 @@ ms.locfileid: "52047548"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Приложение | File.Read.Group*, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

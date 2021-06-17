@@ -5,12 +5,12 @@ author: learafa
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b0d490139763e619a151e3152868f98c1f1b96e4
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 84bab42a808adbac01899da84010ce0c6ef05283
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941583"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992398"
 ---
 # <a name="listitem-createlink"></a>listItem: createLink
 
@@ -51,18 +51,18 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажи JSON представление параметров.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |   Свойство             |  Тип  |           Описание                        |
 | :----------------------| :----- | :--------------------------------------------|
-|type|Строка|Тип создаваемой ссылки для совместного доступа. Необязательно. |
-|scope|String|Область создаваемой ссылки. Либо `anonymous` , `organization` или `users` . Необязательно. |
-|expirationDateTime|DateTimeOffset|Строка с форматом yyyy-MM-ddTHH:mm:ssZ dateTime указывает срок действия разрешения. Необязательно. |
-|password|Строка|Пароль ссылки общего доступа, за устанавливаемой создателем. Необязательно. |
-|recipients|[коллекция driveRecipient](../resources/driverecipient.md)|Коллекция получателей, которые получат доступ к ссылке общего доступа. Необязательно. |
+|type|String|Тип создаваемой ссылки для совместного доступа. Необязательный параметр. |
+|scope|String|Область создаваемой ссылки. Либо `anonymous` , `organization` или `users` . Необязательный параметр. |
+|expirationDateTime|DateTimeOffset|Строка с форматом yyyy-MM-ddTHH:mm:ssZ dateTime указывает срок действия разрешения. Необязательный параметр. |
+|password|Строка|Пароль ссылки общего доступа, за устанавливаемой создателем. Необязательный параметр. |
+|recipients|[коллекция driveRecipient](../resources/driverecipient.md)|Коллекция получателей, которые получат доступ к ссылке общего доступа. Необязательный параметр. |
 
 ### <a name="link-types"></a>Типы ссылок
 
@@ -103,6 +103,8 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "listItem_createlink",
@@ -125,6 +127,24 @@ Content-length: 212
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/listitem-createlink-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/listitem-createlink-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/listitem-createlink-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -162,6 +182,8 @@ OneDrive для бизнеса и SharePoint поддерживают ссылк
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "listItem_createlink",
@@ -177,6 +199,24 @@ Content-Type: application/json
   "scope": "organization"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/listitem-createlink-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/listitem-createlink-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/listitem-createlink-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/listitem-createlink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

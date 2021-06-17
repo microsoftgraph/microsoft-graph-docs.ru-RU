@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ba6d589702034ca2463386a700560ba42d9dcaa
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: 8425d978a48c2ab737577d2ed40a2d098daf275b
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854195"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52990810"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -148,6 +148,8 @@ HTTP/1.1 204 No content
 #### <a name="request"></a>Запрос
 В этом запросе замените значение `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** для роли каталога, которую вы хотите назначить объекту пользователя или каталога. `bb165b45-151c-4cf6-9911-cd7188912848`Замените **значение id** объекта пользователя или каталога. 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_directoryrole_2_templateId"
@@ -161,6 +163,24 @@ Content-length: 30
     "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/bb165b45-151c-4cf6-9911-cd7188912848"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directoryrole-2-templateid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directoryrole-2-templateid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directoryrole-2-templateid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directoryrole-2-templateid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

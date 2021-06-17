@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2d5da4231039a88161bfb691034fbe2cab806f4e
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 0646058d7cf06d9847037e4682f846fa17f0d49c
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51610700"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971274"
 ---
 # <a name="list-permissiongrants-of-a-chat"></a>Список объектов permissionGrants чата
 
@@ -18,7 +18,7 @@ ms.locfileid: "51610700"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md). Это список приложений Azure AD, имеющих доступ к чату, одновременно с доступом, который имеет каждое приложение.
+Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md). Это список приложений Azure AD, имеющих доступ к чату, а также типов доступа, которыми обладает каждое приложение.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,9 @@ ms.locfileid: "51610700"
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat                                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                                                                     |
-| Приложение                            | Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+| Приложение                            | TeamsAppInstallation.Read.Chat *, Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -105,40 +107,40 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#permissionGrants",
-    "value": [
-        {
-            "id": "Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNDaGF0U2V0dGluZ3MuUmVhZFdyaXRlLkNoYXQjI0FwcGxpY2F0aW9u",
-            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
-            "resourceAppId": "00000003-0000-0000-c000-000000000000",
-            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
-            "permissionType": "Application",
-            "permission": "ChatSettings.ReadWrite.Chat"
-        },
-        {
-            "id": "Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc0FwcEluc3RhbGxhdGlvbi5SZWFkLkNoYXQjI0FwcGxpY2F0aW9u",
-            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
-            "resourceAppId": "00000003-0000-0000-c000-000000000000",
-            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
-            "permissionType": "Application",
-            "permission": "TeamsAppInstallation.Read.Chat"
-        },
-        {
-            "id": "Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc1RhYi5EZWxldGUuQ2hhdCMjQXBwbGljYXRpb24=",
-            "clientAppId": "fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
-            "resourceAppId": "00000003-0000-0000-c000-000000000000",
-            "clientId": "771b9da9-2260-41eb-a587-4d936e4aa08c",
-            "permissionType": "Application",
-            "permission": "TeamsTab.Delete.Chat"
-        },
-        {
-            "id": "ZmNmMGMzNjQtMWY1ZS00MDVjLThiN2QtNjI2YmRmOWQyZjI1IyNDaGF0U2V0dGluZ3MuUmVhZC5DaGF0IyNBcHBsaWNhdGlvbg==",
-            "clientAppId": "69024002-35ae-4574-a219-f261183580b4",
-            "resourceAppId": "00000003-0000-0000-c000-000000000000",
-            "clientId": "74c92190-dc0e-485a-81c6-fdffd4aadfd8",
-            "permissionType": "Application",
-            "permission": "ChatSettings.Read.Chat"
-        },
-    ]
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#permissionGrants",
+   "value":[
+      {
+         "id":"Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNDaGF0U2V0dGluZ3MuUmVhZFdyaXRlLkNoYXQjI0FwcGxpY2F0aW9u",
+         "clientAppId":"fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
+         "resourceAppId":"00000003-0000-0000-c000-000000000000",
+         "clientId":"771b9da9-2260-41eb-a587-4d936e4aa08c",
+         "permissionType":"Application",
+         "permission":"ChatSettings.ReadWrite.Chat"
+      },
+      {
+         "id":"Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc0FwcEluc3RhbGxhdGlvbi5SZWFkLkNoYXQjI0FwcGxpY2F0aW9u",
+         "clientAppId":"fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
+         "resourceAppId":"00000003-0000-0000-c000-000000000000",
+         "clientId":"771b9da9-2260-41eb-a587-4d936e4aa08c",
+         "permissionType":"Application",
+         "permission":"TeamsAppInstallation.Read.Chat"
+      },
+      {
+         "id":"Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNUZWFtc1RhYi5EZWxldGUuQ2hhdCMjQXBwbGljYXRpb24=",
+         "clientAppId":"fdebf36e-8b3a-4b00-99fb-2e4d1da706d6",
+         "resourceAppId":"00000003-0000-0000-c000-000000000000",
+         "clientId":"771b9da9-2260-41eb-a587-4d936e4aa08c",
+         "permissionType":"Application",
+         "permission":"TeamsTab.Delete.Chat"
+      },
+      {
+         "id":"ZmNmMGMzNjQtMWY1ZS00MDVjLThiN2QtNjI2YmRmOWQyZjI1IyNDaGF0U2V0dGluZ3MuUmVhZC5DaGF0IyNBcHBsaWNhdGlvbg==",
+         "clientAppId":"69024002-35ae-4574-a219-f261183580b4",
+         "resourceAppId":"00000003-0000-0000-c000-000000000000",
+         "clientId":"74c92190-dc0e-485a-81c6-fdffd4aadfd8",
+         "permissionType":"Application",
+         "permission":"ChatSettings.Read.Chat"
+      }
+   ]
 }
 ```

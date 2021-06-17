@@ -1,16 +1,16 @@
 ---
 title: Get administrativeUnit
 description: Извлечение свойств и связей объекта administrativeUnit.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b48867981ea38c78729e122256672488b3f194f5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3429caeb6cc8aafeeb2201445be0e7a74d416010
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048283"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992004"
 ---
 # <a name="get-administrativeunit"></a>Get administrativeUnit
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

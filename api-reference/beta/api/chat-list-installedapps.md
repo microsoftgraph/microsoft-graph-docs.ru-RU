@@ -5,12 +5,12 @@ author: subray
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1fc41102d92926e52b5703d3732a4eba02b3b06f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 5e53e1218edd2fc994fb489461f7b782bb7a10a2
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770131"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971316"
 ---
 # <a name="list-apps-in-chat"></a>Список приложений в каталоге
 
@@ -34,7 +34,9 @@ ms.locfileid: "50770131"
 |:--------------------|:---------------------------------------------------------|
 |Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Приложение | TeamsAppInstallation.Read.Chat *, Chat.Manage.Chat*, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 

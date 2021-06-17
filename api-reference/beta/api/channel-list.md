@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1297f7434c7eba8c2145ad31a8c94a7b3a3fb1e8
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: da8bfda45b92b748deda845d7202347888e72241
+ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507329"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52971307"
 ---
 # <a name="list-channels"></a>Перечисление каналов
 
@@ -41,7 +41,11 @@ GET /teams/{team-id}/channels
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $filter, $select и $expand для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
+
+### <a name="use-select-for-better-performance"></a>Использование $select для повышения производительности
+Заполнение свойств **email** и **moderationSettings** для канала является затратной операцией, снижающей производительность. Используйте `$select`, чтобы исключить свойства **email** и **moderationSettings** для повышения производительности.
+
 
 ## <a name="request-headers"></a>Заголовки запросов
 
