@@ -1,16 +1,16 @@
 ---
 title: Get a scopedRoleMember
 description: Извлечение определенного ресурса scopedRoleMembership.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 51eb720d2898273aad30ebf335402be3f0c75549
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c6e0e3de92ee350a17b1821e7c567dbaa1792f9d
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054219"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991542"
 ---
 # <a name="get-a-scopedrolemember"></a>Get a scopedRoleMember
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRo
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

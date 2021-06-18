@@ -1,16 +1,16 @@
 ---
 title: Удаление участника
 description: Используйте этот API для удаления участника (пользователя или группы) из административного подразделения.
-author: anandyadavMSFT
+author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c0af2db5358505e3510ad4cc6eaefa96bc431842
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 04783b343cd304c666ee03a8872223adef13c2c1
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442525"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52991605"
 ---
 # <a name="remove-a-member"></a>Удаление участника
 
@@ -26,7 +26,7 @@ ms.locfileid: "50442525"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit.ReadWrite.All |
+|Приложение | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

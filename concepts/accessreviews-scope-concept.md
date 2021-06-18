@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fe61a015ab88e5e3c562b8837d57b997400f8ed3
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 731ebcb9ab27baf4ea30553d4f6a598d61e37d59
+ms.sourcegitcommit: 2d0daa446c7b37ced1d214e0c6e18e2b8243bb09
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755632"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53010193"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью API microsoft Graph
 
@@ -133,7 +133,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 
 **PrincipalResourceMembershipsScope** предоставляет свойства **principalScopes** и **resourceScopes** для поддержки более адаптированных параметров конфигурации для области **accessReviewScheduleDefinition**. Это включает обзор доступа нескольких директоров или групп директоров к нескольким ресурсам.
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-an-application"></a>Пример 1. Просмотр доступа всех неактивных гостевых пользователей к приложению
+### <a name="example-1-review-access-of-all-inactive-guest-users-to-groups"></a>Пример 1. Просмотр доступа всех неактивных гостевых пользователей к группам
 
 ```http
 "scope": {
@@ -149,7 +149,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/servicePrincipals/{serviceprincipal id}",
+            "query": "/groups",
             "queryType": "MicrosoftGraph"
         }
     ]

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c03088614c32a7428355f37ec0b8f8fb5b1b49b4
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 96bf370d642890b1330bc4e7c05179005253fa1e
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941265"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52992417"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -100,6 +100,7 @@ ms.locfileid: "52941265"
 | **Другие ресурсы групп** |||
 | [Перечисление фотографий](../api/group-list-photos.md) | Коллекция объектов [profilePhoto](photo.md) | Получение коллекции фотографий профиля для группы. |
 | [Перечисление планов](../api/plannergroup-list-plans.md) | Коллекция объектов [plannerPlan](plannerplan.md) | Получение планов, принадлежащих группе. |
+| [Перечисление объектов permissionGrant](../api/group-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных приложениям для доступа к группе. |
 | **Параметры пользователя** |||
 | [addFavorite](../api/group-addfavorite.md) | Нет | Добавление группы в список избранных групп пользователя, выполнившего вход. Поддерживается только для групп Microsoft 365. |
 | [removeFavorite](../api/group-removefavorite.md) | Нет | Удаление группы из списка избранных групп вошедшего пользователя. Поддерживается только для групп Microsoft 365. |
@@ -189,7 +190,7 @@ ms.locfileid: "52941265"
 |membersWithLicenseErrors|Коллекция объектов [user](user.md)|Список участников группы с ошибками лицензий в этом групповом назначении лицензий. Только для чтения. |
 |onenote|[onenote](onenote.md)| Только для чтения.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение NULL.|
-|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|Разрешение, предоставленное группе для определенного приложения.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|Разрешения, предоставленные группе для определенного приложения.|
 |photo;|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
 |planner|[plannerGroup](plannergroup.md)| Выборочные службы Планировщика, доступные группе. Только для чтения. Допускается значение NULL. |
