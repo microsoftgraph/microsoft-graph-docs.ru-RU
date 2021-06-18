@@ -558,7 +558,7 @@ items:
                 href: api/group-list-owners.md
               - name: Перечисление фотографий
                 href: api/group-list-photos.md
-              - name: Гранты на получение разрешений списка
+              - name: Перечисление предоставленных разрешений
                 href: api/group-list-permissiongrants.md
               - name: Удаление группы без возможности восстановления
                 href: api/directory-deleteditems-delete.md
@@ -1262,9 +1262,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Категория
+          - name: Category
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -9523,9 +9523,9 @@ items:
               - name: Облачный КОМПЬЮТЕР
                 href: resources/cloudpc.md
                 items:
-                  - name: Список
+                  - name: Облачные КОМПЬЮТЕРы списка
                     href: api/virtualendpoint-list-cloudpcs.md
-                  - name: Получение
+                  - name: Получить облачный КОМПЬЮТЕР
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
@@ -9574,6 +9574,21 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Назначение
                     href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Параметр пользователя облачного ПК
+                href: resources/cloudpcusersetting.md
+                items:
+                  - name: Список
+                    href: api/virtualendpoint-list-usersettings.md
+                  - name: Получение
+                    href: api/cloudpcusersetting-get.md
+                  - name: Создание
+                    href: api/virtualendpoint-post-usersettings.md
+                  - name: Обновление
+                    href: api/cloudpcusersetting-update.md
+                  - name: Удаление
+                    href: api/cloudpcusersetting-delete.md
+                  - name: Назначение
+                    href: api/cloudpcusersetting-assign.md
               - name: Управление ролью
                 href: resources/rolemanagement.md
                 items:
@@ -9830,7 +9845,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Категория
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -11937,7 +11952,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12534,7 +12549,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13272,7 +13287,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -13430,6 +13445,8 @@ items:
                 href: api/profilephoto-update.md
               - name: Полная миграция для группы
                 href: api/team-completemigration.md
+              - name: Перечисление предоставленных разрешений
+                href: api/team-list-permissiongrants.md
           - name: Группа (команда)
             href: resources/group.md
             items:
@@ -13551,6 +13568,8 @@ items:
                 href: api/chat-post-messages.md
               - name: Общение в чате между пользователем и приложением
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: Перечисление предоставленных разрешений
+                href: api/chat-list-permissiongrants.md
           - name: Сообщение чата
             href: resources/chatmessage.md
             items:
@@ -13885,7 +13904,9 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Создание записной книжки
                 href: api/onenote-post-notebooks.md
-      - name: Задачи из списка дел
+          - name: 'Гранты разрешений, определенные для ресурсов'
+            href: resources/resourcespecificpermissiongrant.md
+      - name: Задачи To-Do
         displayName: Microsoft To Do
         items:
           - name: Обзор
@@ -14013,7 +14034,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Категория
+                  - name: Category
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

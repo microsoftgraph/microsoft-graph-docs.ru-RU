@@ -5,32 +5,32 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 57a1565cb699f4d0c1a997cbf8563c6d8e32f210
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: bb4e16297119915ab10805f078339688d0373738
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912732"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52990970"
 ---
-# <a name="update-educationrubric"></a><span data-ttu-id="4a2a1-103">Обновление educationRubric</span><span class="sxs-lookup"><span data-stu-id="4a2a1-103">Update educationRubric</span></span>
+# <a name="update-educationrubric"></a><span data-ttu-id="9803d-103">Обновление educationRubric</span><span class="sxs-lookup"><span data-stu-id="9803d-103">Update educationRubric</span></span>
 
-<span data-ttu-id="4a2a1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4a2a1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9803d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9803d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4a2a1-105">Обновление свойств объекта [educationRubric.](../resources/educationrubric.md)</span><span class="sxs-lookup"><span data-stu-id="4a2a1-105">Update the properties of an [educationRubric](../resources/educationrubric.md) object.</span></span>
+<span data-ttu-id="9803d-105">Обновление свойств объекта [educationRubric.](../resources/educationrubric.md)</span><span class="sxs-lookup"><span data-stu-id="9803d-105">Update the properties of an [educationRubric](../resources/educationrubric.md) object.</span></span>
 
-<span data-ttu-id="4a2a1-106">Обновление рубрики, присоединенной к назначению ( ) возможно только до публикации назначения, и обновление фактически является исходной рубрикой, которая существует `PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric` под `/education/users/{id}/rubrics` .</span><span class="sxs-lookup"><span data-stu-id="4a2a1-106">Updating a rubric attached to an assignment (`PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`.</span></span> <span data-ttu-id="4a2a1-107">После публикации назначения будет выполнена неопубликоваемая копия рубрики, прикрепленная к этому конкретному назначению.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-107">After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.</span></span> <span data-ttu-id="4a2a1-108">Эту рубрику можно получить с помощью [GET/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric,](educationrubric-get.md)но ее нельзя обновить.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-108">That rubric can be retrieved using [GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric](educationrubric-get.md), but it cannot be updated.</span></span>
+<span data-ttu-id="9803d-106">Обновление рубрики, присоединенной к назначению ( ) возможно только до публикации назначения, и обновление фактически является исходной рубрикой, которая существует `PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric` под `/education/users/{id}/rubrics` .</span><span class="sxs-lookup"><span data-stu-id="9803d-106">Updating a rubric attached to an assignment (`PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`.</span></span> <span data-ttu-id="9803d-107">После публикации назначения будет выполнена неопубликоваемая копия рубрики, прикрепленная к этому конкретному назначению.</span><span class="sxs-lookup"><span data-stu-id="9803d-107">After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.</span></span> <span data-ttu-id="9803d-108">Эту рубрику можно получить с помощью [GET/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric,](educationrubric-get.md)но ее нельзя обновить.</span><span class="sxs-lookup"><span data-stu-id="9803d-108">That rubric can be retrieved using [GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric](educationrubric-get.md), but it cannot be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4a2a1-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4a2a1-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9803d-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9803d-109">Permissions</span></span>
 
-<span data-ttu-id="4a2a1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4a2a1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9803d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9803d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4a2a1-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4a2a1-112">Permission type</span></span>                        | <span data-ttu-id="4a2a1-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4a2a1-113">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="9803d-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9803d-112">Permission type</span></span>                        | <span data-ttu-id="9803d-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9803d-113">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="4a2a1-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4a2a1-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="4a2a1-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a2a1-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="4a2a1-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4a2a1-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a2a1-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-117">Not supported.</span></span> |
-| <span data-ttu-id="4a2a1-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4a2a1-118">Application</span></span>                            | <span data-ttu-id="4a2a1-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-119">Not supported.</span></span> |
+| <span data-ttu-id="9803d-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9803d-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="9803d-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9803d-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="9803d-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9803d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9803d-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9803d-117">Not supported.</span></span> |
+| <span data-ttu-id="9803d-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9803d-118">Application</span></span>                            | <span data-ttu-id="9803d-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9803d-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4a2a1-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4a2a1-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9803d-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9803d-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,34 +39,36 @@ PATCH /education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d
 PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4a2a1-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4a2a1-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9803d-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9803d-121">Request headers</span></span>
 
-| <span data-ttu-id="4a2a1-122">Имя</span><span class="sxs-lookup"><span data-stu-id="4a2a1-122">Name</span></span>       | <span data-ttu-id="4a2a1-123">Описание</span><span class="sxs-lookup"><span data-stu-id="4a2a1-123">Description</span></span>|
+| <span data-ttu-id="9803d-122">Имя</span><span class="sxs-lookup"><span data-stu-id="9803d-122">Name</span></span>       | <span data-ttu-id="9803d-123">Описание</span><span class="sxs-lookup"><span data-stu-id="9803d-123">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="4a2a1-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4a2a1-124">Authorization</span></span> | <span data-ttu-id="4a2a1-125">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="4a2a1-125">Bearer {token}</span></span> |
+| <span data-ttu-id="9803d-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9803d-124">Authorization</span></span> | <span data-ttu-id="9803d-125">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="9803d-125">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4a2a1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4a2a1-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9803d-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9803d-126">Request body</span></span>
 
-<span data-ttu-id="4a2a1-127">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="4a2a1-128">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="4a2a1-129">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-129">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="9803d-127">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="9803d-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="9803d-128">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="9803d-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="9803d-129">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="9803d-129">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="4a2a1-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="4a2a1-130">Property</span></span>     | <span data-ttu-id="4a2a1-131">Тип</span><span class="sxs-lookup"><span data-stu-id="4a2a1-131">Type</span></span>        | <span data-ttu-id="4a2a1-132">Описание</span><span class="sxs-lookup"><span data-stu-id="4a2a1-132">Description</span></span> |
+| <span data-ttu-id="9803d-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="9803d-130">Property</span></span>     | <span data-ttu-id="9803d-131">Тип</span><span class="sxs-lookup"><span data-stu-id="9803d-131">Type</span></span>        | <span data-ttu-id="9803d-132">Описание</span><span class="sxs-lookup"><span data-stu-id="9803d-132">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="4a2a1-133">description</span><span class="sxs-lookup"><span data-stu-id="4a2a1-133">description</span></span>|<span data-ttu-id="4a2a1-134">itemBody</span><span class="sxs-lookup"><span data-stu-id="4a2a1-134">itemBody</span></span>|<span data-ttu-id="4a2a1-135">Описание этой рубрики.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-135">The description of this rubric.</span></span>|
-|<span data-ttu-id="4a2a1-136">displayName</span><span class="sxs-lookup"><span data-stu-id="4a2a1-136">displayName</span></span>|<span data-ttu-id="4a2a1-137">String</span><span class="sxs-lookup"><span data-stu-id="4a2a1-137">String</span></span>|<span data-ttu-id="4a2a1-138">Название этой рубрики.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-138">The name of this rubric.</span></span>|
-|<span data-ttu-id="4a2a1-139">классификация</span><span class="sxs-lookup"><span data-stu-id="4a2a1-139">grading</span></span>|<span data-ttu-id="4a2a1-140">educationAssignmentGradeType</span><span class="sxs-lookup"><span data-stu-id="4a2a1-140">educationAssignmentGradeType</span></span>|<span data-ttu-id="4a2a1-141">Имеет ли эта рубрика очки или нет.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-141">Whether this rubric has points or not.</span></span>|
-|<span data-ttu-id="4a2a1-142">уровни</span><span class="sxs-lookup"><span data-stu-id="4a2a1-142">levels</span></span>|<span data-ttu-id="4a2a1-143">коллекция rubricLevel</span><span class="sxs-lookup"><span data-stu-id="4a2a1-143">rubricLevel collection</span></span>|<span data-ttu-id="4a2a1-144">Коллекция уровней, в которые состоит эта рубрика.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-144">The collection of levels making up this rubric.</span></span>|
-|<span data-ttu-id="4a2a1-145">качества</span><span class="sxs-lookup"><span data-stu-id="4a2a1-145">qualities</span></span>|<span data-ttu-id="4a2a1-146">rubricQuality collection</span><span class="sxs-lookup"><span data-stu-id="4a2a1-146">rubricQuality collection</span></span>|<span data-ttu-id="4a2a1-147">Коллекция качеств, из которых состоит эта рубрика.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-147">The collection of qualities making up this rubric.</span></span>|
+|<span data-ttu-id="9803d-133">description</span><span class="sxs-lookup"><span data-stu-id="9803d-133">description</span></span>|<span data-ttu-id="9803d-134">itemBody</span><span class="sxs-lookup"><span data-stu-id="9803d-134">itemBody</span></span>|<span data-ttu-id="9803d-135">Описание этой рубрики.</span><span class="sxs-lookup"><span data-stu-id="9803d-135">The description of this rubric.</span></span>|
+|<span data-ttu-id="9803d-136">displayName</span><span class="sxs-lookup"><span data-stu-id="9803d-136">displayName</span></span>|<span data-ttu-id="9803d-137">String</span><span class="sxs-lookup"><span data-stu-id="9803d-137">String</span></span>|<span data-ttu-id="9803d-138">Название этой рубрики.</span><span class="sxs-lookup"><span data-stu-id="9803d-138">The name of this rubric.</span></span>|
+|<span data-ttu-id="9803d-139">классификация</span><span class="sxs-lookup"><span data-stu-id="9803d-139">grading</span></span>|<span data-ttu-id="9803d-140">educationAssignmentGradeType</span><span class="sxs-lookup"><span data-stu-id="9803d-140">educationAssignmentGradeType</span></span>|<span data-ttu-id="9803d-141">Имеет ли эта рубрика очки или нет.</span><span class="sxs-lookup"><span data-stu-id="9803d-141">Whether this rubric has points or not.</span></span>|
+|<span data-ttu-id="9803d-142">уровни</span><span class="sxs-lookup"><span data-stu-id="9803d-142">levels</span></span>|<span data-ttu-id="9803d-143">коллекция rubricLevel</span><span class="sxs-lookup"><span data-stu-id="9803d-143">rubricLevel collection</span></span>|<span data-ttu-id="9803d-144">Коллекция уровней, в которые состоит эта рубрика.</span><span class="sxs-lookup"><span data-stu-id="9803d-144">The collection of levels making up this rubric.</span></span>|
+|<span data-ttu-id="9803d-145">качества</span><span class="sxs-lookup"><span data-stu-id="9803d-145">qualities</span></span>|<span data-ttu-id="9803d-146">rubricQuality collection</span><span class="sxs-lookup"><span data-stu-id="9803d-146">rubricQuality collection</span></span>|<span data-ttu-id="9803d-147">Коллекция качеств, из которых состоит эта рубрика.</span><span class="sxs-lookup"><span data-stu-id="9803d-147">The collection of qualities making up this rubric.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4a2a1-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="4a2a1-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9803d-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="9803d-148">Response</span></span>
 
-<span data-ttu-id="4a2a1-149">В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект educationRubric](../resources/educationrubric.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-149">If successful, this method returns a `200 OK` response code and an updated [educationRubric](../resources/educationrubric.md) object in the response body.</span></span>
+<span data-ttu-id="9803d-149">В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект educationRubric](../resources/educationrubric.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="9803d-149">If successful, this method returns a `200 OK` response code and an updated [educationRubric](../resources/educationrubric.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4a2a1-150">Примеры</span><span class="sxs-lookup"><span data-stu-id="4a2a1-150">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9803d-150">Примеры</span><span class="sxs-lookup"><span data-stu-id="9803d-150">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="4a2a1-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="4a2a1-151">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9803d-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="9803d-151">Request</span></span>
 
-<span data-ttu-id="4a2a1-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-152">The following is an example of the request.</span></span>
+<span data-ttu-id="9803d-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9803d-152">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="9803d-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="9803d-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationrubric"
@@ -80,12 +82,30 @@ Content-type: application/json
   "displayName": "Example Credit Rubric after display name patch"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="9803d-154">C#</span><span class="sxs-lookup"><span data-stu-id="9803d-154">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationrubric-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="4a2a1-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="4a2a1-153">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="9803d-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9803d-155">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationrubric-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="4a2a1-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-154">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="9803d-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9803d-156">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationrubric-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="4a2a1-155">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="4a2a1-155">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="java"></a>[<span data-ttu-id="9803d-157">Java</span><span class="sxs-lookup"><span data-stu-id="9803d-157">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="9803d-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="9803d-158">Response</span></span>
+
+<span data-ttu-id="9803d-159">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9803d-159">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="9803d-160">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="9803d-160">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",

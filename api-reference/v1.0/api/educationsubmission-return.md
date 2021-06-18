@@ -5,51 +5,53 @@ author: sharad-sharma-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f7c33c7bd744984ab26efb8d922716b5bb85a654
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 8ef40b6ffe95a6e815ede6c44d4d0639be1c2524
+ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912691"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52993380"
 ---
-# <a name="educationsubmission-return"></a><span data-ttu-id="92d3a-103">educationSubmission: возврат</span><span class="sxs-lookup"><span data-stu-id="92d3a-103">educationSubmission: return</span></span>
+# <a name="educationsubmission-return"></a><span data-ttu-id="8a0d2-103">educationSubmission: возврат</span><span class="sxs-lookup"><span data-stu-id="8a0d2-103">educationSubmission: return</span></span>
 
-<span data-ttu-id="92d3a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92d3a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8a0d2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a0d2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="92d3a-105">Предоставление учащемуся оценки и отзывов, связанных с этим представлением.</span><span class="sxs-lookup"><span data-stu-id="92d3a-105">Make the grade and feedback associated with this submission available to the student.</span></span> 
+<span data-ttu-id="8a0d2-105">Предоставление учащемуся оценки и отзывов, связанных с этим представлением.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-105">Make the grade and feedback associated with this submission available to the student.</span></span> 
 
-<span data-ttu-id="92d3a-106">Это действие меняет состояние отправки с "отправленной" на "возвращенную" и указывает, что отзывы предоставлены или сделана классификация.</span><span class="sxs-lookup"><span data-stu-id="92d3a-106">This action changes the status of the submission from "submitted" to "returned" and indicates that feedback is provided or grading is done.</span></span> <span data-ttu-id="92d3a-107">Это действие может сделать только учитель.</span><span class="sxs-lookup"><span data-stu-id="92d3a-107">This action can only be done by the teacher.</span></span>
+<span data-ttu-id="8a0d2-106">Это действие меняет состояние отправки с "отправленной" на "возвращенную" и указывает, что отзывы предоставлены или сделана классификация.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-106">This action changes the status of the submission from "submitted" to "returned" and indicates that feedback is provided or grading is done.</span></span> <span data-ttu-id="8a0d2-107">Это действие может сделать только учитель.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-107">This action can only be done by the teacher.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="92d3a-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="92d3a-108">Permissions</span></span>
-<span data-ttu-id="92d3a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="92d3a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8a0d2-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8a0d2-108">Permissions</span></span>
+<span data-ttu-id="8a0d2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a0d2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="92d3a-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="92d3a-111">Permission type</span></span>      | <span data-ttu-id="92d3a-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="92d3a-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8a0d2-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8a0d2-111">Permission type</span></span>      | <span data-ttu-id="8a0d2-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8a0d2-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="92d3a-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="92d3a-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="92d3a-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="92d3a-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>   |
-|<span data-ttu-id="92d3a-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="92d3a-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="92d3a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="92d3a-116">Not supported.</span></span>  |
-|<span data-ttu-id="92d3a-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="92d3a-117">Application</span></span> | <span data-ttu-id="92d3a-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="92d3a-118">Not supported.</span></span> | 
+|<span data-ttu-id="8a0d2-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8a0d2-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="8a0d2-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8a0d2-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>   |
+|<span data-ttu-id="8a0d2-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8a0d2-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="8a0d2-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-116">Not supported.</span></span>  |
+|<span data-ttu-id="8a0d2-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8a0d2-117">Application</span></span> | <span data-ttu-id="8a0d2-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-118">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="92d3a-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="92d3a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8a0d2-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a0d2-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/return
 ```
-## <a name="request-headers"></a><span data-ttu-id="92d3a-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="92d3a-120">Request headers</span></span>
-| <span data-ttu-id="92d3a-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="92d3a-121">Header</span></span>       | <span data-ttu-id="92d3a-122">Значение</span><span class="sxs-lookup"><span data-stu-id="92d3a-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="8a0d2-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8a0d2-120">Request headers</span></span>
+| <span data-ttu-id="8a0d2-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8a0d2-121">Header</span></span>       | <span data-ttu-id="8a0d2-122">Значение</span><span class="sxs-lookup"><span data-stu-id="8a0d2-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="92d3a-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="92d3a-123">Authorization</span></span>  | <span data-ttu-id="92d3a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="92d3a-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8a0d2-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8a0d2-123">Authorization</span></span>  | <span data-ttu-id="8a0d2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="92d3a-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="92d3a-126">Request body</span></span>
-<span data-ttu-id="92d3a-127">Не поставляем тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="92d3a-127">Don't supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8a0d2-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8a0d2-126">Request body</span></span>
+<span data-ttu-id="8a0d2-127">Не поставляем тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-127">Don't supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="92d3a-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="92d3a-128">Response</span></span>
-<span data-ttu-id="92d3a-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="92d3a-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8a0d2-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a0d2-128">Response</span></span>
+<span data-ttu-id="8a0d2-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="92d3a-131">Пример</span><span class="sxs-lookup"><span data-stu-id="92d3a-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8a0d2-131">Пример</span><span class="sxs-lookup"><span data-stu-id="8a0d2-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="92d3a-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="92d3a-132">Request</span></span>
-<span data-ttu-id="92d3a-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="92d3a-133">The following is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8a0d2-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="8a0d2-132">Request</span></span>
+<span data-ttu-id="8a0d2-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-133">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="8a0d2-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a0d2-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_return"
@@ -58,9 +60,27 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions/fbe51c90-78b7-418a-b5f3-871bf8d8d21e/return
 ```
+# <a name="c"></a>[<span data-ttu-id="8a0d2-135">C#</span><span class="sxs-lookup"><span data-stu-id="8a0d2-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-return-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="92d3a-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="92d3a-134">Response</span></span>
-<span data-ttu-id="92d3a-135">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="92d3a-135">The following is an example of the response.</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="8a0d2-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8a0d2-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationsubmission-return-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="8a0d2-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8a0d2-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationsubmission-return-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="8a0d2-138">Java</span><span class="sxs-lookup"><span data-stu-id="8a0d2-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-return-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="8a0d2-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a0d2-139">Response</span></span>
+<span data-ttu-id="8a0d2-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="8a0d2-140">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
