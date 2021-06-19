@@ -4,12 +4,12 @@ description: Используйте API обзоров доступа для п�
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b3a7ee94f045eb7eb587b58fc6220c304c2b81ff
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e57fb73c119f36dd0cdb50746910463cfa336d3c
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787079"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030273"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Руководство. Используйте API обзоров доступа для просмотра доступа к группам безопасности
 
@@ -24,7 +24,7 @@ ms.locfileid: "52787079"
 
 Для завершения этого руководства необходимы следующие ресурсы и привилегии:
 
-+ Рабочий клиент Azure AD с включенной лицензией Azure AD Premium P2 или EMS E5.
++ Рабочий клиент Azure AD с включенной Azure AD Premium P2 или emS E5.
 + Войдите в [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) как пользователь в роли глобального администратора.
   + [Необязательный] Запустите новое **инкогнито** или **сеанс браузера InPrivate** или запустите сеанс в анонимном браузере. Вы войдите позже в этом руководстве.
 + Следующие делегированные разрешения: `AccessReview.ReadWrite.All` , `Group.ReadWrite.All` .
@@ -36,7 +36,7 @@ ms.locfileid: "52787079"
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 2. Прокрутите список разрешений для этих разрешений:
-   + AccessReviews (3), расширяйте и выберите **AccessReviews.ReadWrite.All**.
+   + AccessReview (3), расширяйте и выберите **AccessReview.ReadWrite.All**.
    + Группа (2), развиньте и выберите **Group.ReadWrite.All**.
   
     Выберите **Согласие** и в всплывающее  окно выберите Согласие от имени организации, а затем выберите **Accept,** чтобы принять согласие разрешений.
@@ -557,4 +557,7 @@ Content-type: text/plain
 + [Настройка области определения обзора доступа с помощью API microsoft Graph](/graph/accessreviews-scope-concept)
 + [Обзор обзоров доступа и требования к лицензиям](/azure/active-directory/governance/access-reviews-overview)
 + [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
-
++ [Ссылка на API отзывов о доступе](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Создание accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

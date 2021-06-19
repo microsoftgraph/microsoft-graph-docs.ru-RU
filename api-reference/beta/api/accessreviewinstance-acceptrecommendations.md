@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
-description: 'Позволяет принимать рекомендации по всем не рассмотренным решениям в экземпляре проверки доступа, на который они являются рецензентом. '
+description: 'Позволяет принимать рекомендации по всем решениям, которые не были рассмотрены для экземпляра проверки доступа, для которого вызываемого пользователя является рецензентом. '
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2e9505a0cf7e3b0e52d54c45ed7d85ee4e09651e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b955bc637c3f536ca5cb8a3e24ad65990296ab2e
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048437"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030756"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -18,7 +18,7 @@ ms.locfileid: "52048437"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет принимать рекомендации для всех не рассмотренных [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) на [accessReviewInstance,](../resources/accessreviewinstance.md) на который они являются рецензентом.
+Позволяет принимать рекомендации по всем объектам [accessReviewInstanceDecisionItem,](../resources/accessreviewinstancedecisionitem.md) которые не были рассмотрены для объекта [accessReviewInstance,](../resources/accessreviewinstance.md) для которого вызываемого пользователя является рецензентом. Рекомендации, если **рекомендацииEnabled** находятся `true` на [объекте accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Если рекомендации по объекту [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) нет, решение не будет записано.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,7 +36,7 @@ ms.locfileid: "52048437"
 POST /me/pendingAccessReviewInstances/{instance-id}/acceptRecommendations
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-Отсутствуют.
+Нет.
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

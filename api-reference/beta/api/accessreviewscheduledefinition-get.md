@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2fdb5a3aed85629fb7c880f7a22229d1ae83ba62
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: b29e9790fc9a6a43dd7f36b0f91fcd94b903bd60
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579650"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030455"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>Получить accessReviewScheduleDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "52579650"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -38,6 +38,10 @@ ms.locfileid: "52579650"
 ```http
 GET /identityGovernance/accessReviews/definitions/{review-id}
 ```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает `$select` параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 

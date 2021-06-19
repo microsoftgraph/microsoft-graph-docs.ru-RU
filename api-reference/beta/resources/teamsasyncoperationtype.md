@@ -1,34 +1,32 @@
 ---
-title: тип перечисления объекта teamsasyncoperationtype
-description: Типы Теамсасинкоператион. Элементы будут добавлены здесь, так как поддерживаются дополнительные асинхронные операции.
+title: тип enum teamsAsyncOperationType
+description: Типы teamsAsyncOperation. Участники будут добавлены здесь по мере поддержки дополнительных операций async.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 3056466273638ab3e7f7a05d23c53f28acd297fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5765fabd5e9b13f040c6f7b189a31223414fc0a0
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046529"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030833"
 ---
-# <a name="teamsasyncoperationtype-enum-type"></a>тип перечисления объекта teamsasyncoperationtype
+# <a name="teamsasyncoperationtype-enum-type"></a>тип enum teamsAsyncOperationType
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Типы [теамсасинкоператион](teamsasyncoperation.md). Элементы будут добавлены здесь, так как поддерживаются дополнительные асинхронные операции.
+Типы [teamsAsyncOperation](teamsasyncoperation.md). Участники будут добавлены здесь по мере поддержки дополнительных операций async.
 
 ## <a name="members"></a>Элементы
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|Недопустимый|нуль|Недопустимое значение.|
-|клонетеам|1 |Операция клонирования команды.|
-|арчиветеам|2 |Операция архивации команды.|
-|унарчиветеам|4|Операция восстановления архивной команды.|
-|креатетеам|4|Операция по созданию команды с нуля.|
-
-
-
+|Недопустимый|0|Недействительным значением.|
+|cloneTeam|1|Операция по клонированию команды.|
+|archiveTeam|2|Операция архивации группы.|
+|unarchiveTeam|3|Операция по восстановлению архивной группы.|
+|createTeam|4 |Операция по созданию команды с нуля.|
+|createChat|5 |Операция по созданию чата с нуля.|

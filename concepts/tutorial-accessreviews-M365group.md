@@ -4,12 +4,12 @@ description: Используйте API обзоров доступа, чтоб�
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: 99f09ab4f7731a75c13977319d2ae25b80304185
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 807518bd62c2b242548c65c3d68c119ec3fb0c5f
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787669"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030266"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
 
@@ -22,7 +22,7 @@ ms.locfileid: "52787669"
 
 Для завершения этого руководства необходимы следующие ресурсы и привилегии:
 
-+ Рабочий клиент Azure AD с включенной лицензией Azure AD Premium P2 или EMS E5. 
++ Рабочий клиент Azure AD с включенной Azure AD Premium P2 или emS E5. 
 + Учетная запись в другом клиенте Azure AD или социальном удостоверении, которую можно пригласить в качестве гостевого пользователя (B2B-пользователя).
 + Вопишитесь [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) в качестве пользователя в роли глобального администратора. 
 + Следующие делегированные разрешения: `User.Invite.All` `AccessReview.ReadWrite.All` , , `Group.ReadWrite.All` `User.ReadWrite.All` .
@@ -34,7 +34,7 @@ ms.locfileid: "52787669"
    <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select the Microsoft Graph permissions":::-->
 
 2. Прокрутите список разрешений для этих разрешений:
-   + AccessReviews (3), расширяйте и выберите **AccessReviews.ReadWrite.All**.
+   + AccessReview (3), расширяйте и выберите **AccessReview.ReadWrite.All**.
    + Группа (2), развиньте и выберите **Group.ReadWrite.All**.
    + Пользователь (8), расширить и затем выбрать **User.Invite.All** и **User.ReadWrite.All**.
    
@@ -577,7 +577,7 @@ Content-type: text/plain
 
 Поздравляем! Вы создали обзор доступа для всех гостевых пользователей в Microsoft 365 группах в клиенте и запланирование ежеквартов для оценки и аттестации доступа гостевых пользователей. Владельцы групп будут пересматривать доступ во время этих циклов, выбирая утверждение или отказ в доступе.
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 + [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
 + [Настройка области определения обзора доступа с помощью API microsoft Graph](/graph/accessreviews-scope-concept)
@@ -585,4 +585,7 @@ Content-type: text/plain
 + [Обзор обзоров доступа и требования к лицензиям](/azure/active-directory/governance/access-reviews-overview)
 + [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
 + [Приглашение и добавление гостевых пользователей в организацию](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-
++ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Создание accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
++ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

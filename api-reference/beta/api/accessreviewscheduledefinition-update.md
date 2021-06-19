@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0fe437806ee9fdb71535c16dab8c7ff07f631f39
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: be3b7603419d616ef9ea9e4da94fdb8942dc36f3
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579636"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030450"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Обновление accessReviewScheduleDefinition
 
@@ -31,7 +31,7 @@ ms.locfileid: "52579636"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.ReadWrite.All |
+|Приложение                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,11 +51,13 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | Строка | Имя серии обзоров доступа. |
-| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. |
-| descriptionForReviewers | Строка | Контекст обзора, предоставленного рецензентам. |
+| displayName | String | Имя серии обзоров доступа. |
+| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. |
+| descriptionForReviewers | String | Контекст обзора, предоставленного рецензентам. |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии обзоров доступа. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа). Свойство Reviewers является updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) | 
+| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Свойство **рецензентов** может быть updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
+|fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Коллекция областей рецензентов, используемых для определения списка рецензентов откатов, которые уведомлены о необходимости принятия мер, если пользователи не найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует.|
+| backupReviewers (обесценив)|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Это свойство было заменено **fallbackReviewers**. Однако указание резервных **копийReviewers** или **fallbackReviewers** автоматически заполняет те же значения для другого свойства. |
 
 Запрос **PUT** предполагает, что будет передан полный объект, который включает в себя все свойства, которые можно использовать, а не только обновляемые свойства.
 

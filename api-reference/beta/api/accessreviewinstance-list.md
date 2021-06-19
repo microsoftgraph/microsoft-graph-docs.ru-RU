@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c3896ea46ee4c853b6b3d1bfce4bfc79bb487c9a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 52844146764ffb85be50a9c8d8609b466a88ba2e
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048423"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030528"
 ---
 # <a name="list-accessreviewinstance"></a>List accessReviewInstance
 
@@ -21,9 +21,7 @@ ms.locfileid: "52048423"
 [Извлечение объектов accessReviewInstance](../resources/accessreviewinstance.md) для определенного [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Возвращается список объектов zero или more **accessReviewInstance,** включая все вложенные свойства. Возвращенные объекты не включают связанный accessReviewInstanceDecisionItems. Чтобы получить решения в экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
 
 >[!NOTE]
->Если возвращается большое количество **accessReviewInstances,** чтобы повысить эффективность и избежать периодов времени, извлекайте результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе. Если набор результатов охватывает несколько страниц, корпорация Майкрософт Graph возвращает эту страницу с свойством @odata.nextLink в ответе, который содержит URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в Graph данных Microsoft в приложении.
->
->Если параметры запроса не предоставлены и результатов более 100, microsoft Graph автоматически будет предоставлять результаты по 100 результатов на странице.
+>Размер страницы по умолчанию для этого API — 100 объектов accessReviewInstance. Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,8 +38,12 @@ ms.locfileid: "52048423"
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает `$select` `$filter` параметры запроса `$orderBy` `$skip` `$top` OData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
 ## <a name="request-headers"></a>Заголовки запросов
-Отсутствуют.
+Нет.
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса.

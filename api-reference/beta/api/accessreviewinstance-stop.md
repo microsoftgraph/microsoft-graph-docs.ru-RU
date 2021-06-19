@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0655b0acd7dbd32b0ae4aae5337422f26f9c7c96
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c59b08c3a451d54a03502b28d2f05350f38e126f
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048395"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030490"
 ---
 # <a name="stop-accessreviewinstance"></a>Остановка accessReviewInstance
 
@@ -18,7 +18,10 @@ ms.locfileid: "52048395"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Остановите активный в настоящее [время accessReviewInstance.](../resources/accessreviewinstance.md) Чтобы предотвратить повторяющиеся проверки доступа [](accessreviewscheduledefinition-update.md) от запуска будущих экземпляров, обнови его, чтобы изменить запланированную дату окончания.  После остановки проверки доступа рецензенты больше не могут вводить ввод, и можно применять решения о проверке доступа.
+Остановите активный в настоящее [время accessReviewInstance.](../resources/accessreviewinstance.md) После остановки экземпляра проверки доступа состояние экземпляра будет, рецензенты больше не могут давать входные данные, а решения о проверке доступа могут `Completed` применяться.
+
+Остановка экземпляра не влияет на будущие экземпляры. Чтобы предотвратить повторный обзор доступа при [](accessreviewscheduledefinition-update.md) запуске будущих экземпляров, обнови определение расписания, чтобы изменить запланированную дату окончания.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,7 +38,7 @@ POST /identityGovernance/accessReviews/definitions/{definition-id}/instances/{in
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-Отсутствуют.
+Нет.
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

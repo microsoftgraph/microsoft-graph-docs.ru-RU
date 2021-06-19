@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ff7170a8058be986c7af6b7c2ebd53f47b7ffb82
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d41247ebb88e4941556408fe6fbebbabc54ff8d
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433119"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030903"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
@@ -31,7 +31,7 @@ ms.locfileid: "50433119"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appliesTo|String| Например, User или Company. |
-|capabilityStatus|String| Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
+|capabilityStatus|String| Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. The capabilityStatus is `Enabled` if the **prepaidUnits** property has at least 1 unit that is **enabled,** and `LockedOut` if the customer cancelled their subscription. |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
 |id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |

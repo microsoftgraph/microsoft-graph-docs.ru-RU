@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7674a129b118c2c9d8c3487623cf039b2ceca603
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a89f6a1bc91f2449a280fe3bfcfaab918cd92e16
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048402"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030441"
 ---
 # <a name="list-accessreviewinstancedecisionitem"></a>List accessReviewInstanceDecisionItem
 
@@ -21,9 +21,7 @@ ms.locfileid: "52048402"
 [Извлечение объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) для определенного [accessReviewInstance.](../resources/accessreviewinstance.md) Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.
 
 >[!NOTE]
->Если возвращается много **accessReviewInstanceDecisionItems,** чтобы повысить эффективность и избежать периодов времени, извлеките результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе. Если набор результатов охватывает несколько страниц, корпорация Майкрософт Graph возвращает эту страницу с свойством @odata.nextLink в ответе, который содержит URL-адрес следующей страницы результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в Graph данных Microsoft в приложении.
->
->Если параметры запроса не предоставлены и результатов более 100, microsoft Graph автоматически будет предоставлять результаты по 100 результатов на странице.
+>Размер страницы по умолчанию для этого API — 100 объектов accessReviewInstanceDecisionItem. Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,8 +39,12 @@ ms.locfileid: "52048402"
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/decisions
 ```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает `$select` `$filter` параметры запроса `$orderBy` `$skip` `$top` OData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
 ## <a name="request-headers"></a>Заголовки запросов
-Отсутствуют.
+Нет.
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса.
@@ -97,17 +99,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.count": 4,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions",
+    "@odata.count": 2,
     "value": [
         {
-            "id": "77a61af9-3bef-4bbf-b00b-04734d6d5eae",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
+            "id": "e6cafba0-cbf0-4748-8868-0810c7f4cc06",
+            "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
             "reviewedDateTime": null,
             "decision": "NotReviewed",
             "justification": "",
             "appliedDateTime": null,
             "applyResult": "New",
-            "recommendation": "Deny",
+            "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+            "resourceLink": null,
+            "resource": null,
             "reviewedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
                 "displayName": "",
@@ -120,24 +126,33 @@ Content-type: application/json
             },
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "3736c87b-dc21-4290-8802-d6fef5fa3a08",
-                "userDisplayName": "Irvin Sayers",
-                "userPrincipalName": "IrvinS@M365x471116.OnMicrosoft.com"
+                "userId": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                "userDisplayName": "Diego Siciliani",
+                "userPrincipalName": "DiegoS@contoso.com"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                "displayName": "Diego Siciliani",
+                "userPrincipalName": "DiegoS@contoso.com"
             }
         },
         {
-            "id": "f30b68ef-b843-4479-86b8-0a3a2f4bb209",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
-            "reviewedDateTime": "2020-09-18T16:56:08.377Z",
-            "decision": "Approve",
-            "justification": "This employee needs access for reason X",
+            "id": "4bde8d40-9224-4aa3-936b-08d73e1baf47",
+            "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
             "appliedDateTime": null,
             "applyResult": "New",
-            "recommendation": "Deny",
+            "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/11feb738-0039-4a6c-a045-dcb91a47969a",
+            "resourceLink": null,
+            "resource": null,
             "reviewedBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "MOD Administrator"
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "userPrincipalName": ""
             },
             "appliedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
@@ -146,61 +161,15 @@ Content-type: application/json
             },
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "ecd78419-3f1e-4f07-9bd9-7c77137af4f1",
-                "userDisplayName": "Bianca Pisani",
-                "userPrincipalName": "BiancaP@M365x471116.OnMicrosoft.com"
-            }
-        },
-        {
-            "id": "037b737f-e8ca-4507-b126-5a0620ba2c18",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
-            "reviewedDateTime": "2020-09-18T16:56:28.473Z",
-            "decision": "Deny",
-            "justification": "This employee changed roles and no longer needs access",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Deny",
-            "reviewedBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "MOD Administrator"
+                "userId": "11feb738-0039-4a6c-a045-dcb91a47969a",
+                "userDisplayName": "Johanna Lorenz",
+                "userPrincipalName": "JohannaL@contoso.com"
             },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "5f16b75b-031c-4944-9691-070f03273079",
-                "userDisplayName": "Delia Dennis",
-                "userPrincipalName": "DeliaD@M365x471116.OnMicrosoft.com"
-            }
-        },
-        {
-            "id": "7032f455-10a3-4d04-bf02-66fb65d26d10",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
-            "reviewedDateTime": "2020-09-18T16:56:44.38Z",
-            "decision": "DontKnow",
-            "justification": "I do not know what this employee needs",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Deny",
-            "reviewedBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "MOD Administrator"
-            },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "4169762e-895f-4350-a13d-e5b09b1efcfa",
-                "userDisplayName": "Isaiah Langer",
-                "userPrincipalName": "IsaiahL@M365x471116.OnMicrosoft.com"
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "11feb738-0039-4a6c-a045-dcb91a47969a",
+                "displayName": "Johanna Lorenz",
+                "userPrincipalName": "JohannaL@contoso.com"
             }
         }
     ]

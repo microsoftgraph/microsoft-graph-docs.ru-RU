@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a596cf7bc5a33cb64f61778f501604ea350ccc5a
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 70f9569a609699036a5e27cdaf47faf622a572d2
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896664"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030854"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -46,13 +46,16 @@ ms.locfileid: "52896664"
 |[Добавление приложения в чате](../api/chat-post-installedapps.md) | | Добавление (установка) приложения в чате (и связанное собрание).|
 |[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
 |[Удалить приложение из чата](../api/chat-delete-installedapps.md) | Нет | Удалить (удалить) приложение из чата (и связанного собрания).|
-|[Гранты на получение разрешений списка](../api/chat-list-permissiongrants.md) | [коллекция resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных приложениям в этом чате.|
+|[Перечисление предоставленных разрешений](../api/chat-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных приложениям в этом чате.|
 | **Вкладки** |||
 |[Список вкладок в чате](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Вкладки списка, закрепленные в чате (и связанное собрание).|
 |[Получить вкладку в чате](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Получите определенную вкладку, закрепленную в чате (и связанное собрание).|
 |[Добавление вкладки в чат](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Добавьте (пин-код) вкладку в чат (и связанное собрание).|
 |[Обновление вкладки в чате](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки в чате (и связанное собрание).|
 |[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет | Удалите (открепите) вкладку из чата (и связанного собрания).|
+| **Операции** |||
+|[Список операций в чате](../api/chat-list-operations.md) | Коллекция [teamsAsyncOperation](teamsAsyncOperation.md) | Получите список операций async, запущенных или запущенных в чате.|
+|[Работа в чате](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Получите одну операцию async, которая запущена или запущена в чате.|
 
 >**Примечание:** При использовании разрешений приложений убедитесь, что вы знаете, как получить ID чата. Так как чаты с разрешениями приложений не поддерживаются, возможны не все сценарии. Можно получить ID чата с делегированными разрешениями, а также из уведомлений об изменении [для /chats/getAllMessages](../api/subscription-post-subscriptions.md) с разрешениями приложений.
 
@@ -83,7 +86,8 @@ ms.locfileid: "52896664"
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | Коллекция всех приложений в чате. Допускается значение null. |
 | members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех участников в чате. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
-| permissionGrants| [коллекция resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для чата.|
+| permissionGrants| Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для чата.|
+| operations | Коллекция [teamsAsyncOperation](teamsasyncoperation.md) | Коллекция всех операций Teams async, которые запускались или запускались в чате. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
 

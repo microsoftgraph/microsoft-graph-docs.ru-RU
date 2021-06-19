@@ -1,32 +1,32 @@
 ---
 title: 'accessReviewInstance: batchRecordDecisions'
-description: Emable reviewers to review all accessReviewInstanceDecisionItems in batches.
+description: Позволяет рецензентам просмотреть все объекты accessReviewInstanceDecisionItem пакетами.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a8bd6778d54100340b0c846230fd8b91b696f1fb
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: ab7e7e3580275aa127bbb01e34484a823d4b01bf
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507503"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030749"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Включить рецензенты для просмотра всех [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) пакетами с помощью `principalId` , или ни `resourceId` один.
+Позволяет рецензентам просмотреть все [объекты accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) пакетами с помощью **principalId,** **resourceId** или ни того, ни другго.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|AccessReviews.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|AccessReviews.ReadWrite.All|
+|Приложение|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательно.  |
+| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный.  |
 |  обоснование | String | Контекст обзора, предоставленного администраторам. Обязательно, **если justificationRequiredOnApproval** находится `True` на **accessReviewScheduleDefinition**.  |
 |principalId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **principalId.** Если они не будут предоставлены, все **principalIds** будут рассмотрены.|
 |resourceId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **resourceId.** Если они не будут предоставлены, **все resourceIds** будут рассмотрены.|
@@ -75,7 +75,6 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 ``` http
 POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisions
 Content-Type: application/json
-Content-length: 113
 
 {
   "decision": "Approve",

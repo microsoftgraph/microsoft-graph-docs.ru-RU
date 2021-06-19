@@ -1,16 +1,16 @@
 ---
 title: тип ресурса principalResourceMembershipsScope
-description: Позволяет для областей выбора просмотреть доступ выбранных директоров к выбранным ресурсам.
+description: Позволяет выбрать область обзора доступа, чтобы просмотреть доступ выбранных директоров к выбранным ресурсам.
 author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b22c52c0bf71f1a1169d51e2e6fd3e8ac10e99d9
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: d2706246089bcc6a26e2ec8ca3cd115edd18e10a
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579895"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030847"
 ---
 # <a name="principalresourcemembershipsscope-resource-type"></a>тип ресурса principalResourceMembershipsScope
 
@@ -26,12 +26,12 @@ PrincipalResourceMembershipsScope — это тип [accessReviewScope,](accessr
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|principalScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области, включаемые в обзор доступа.|
-|resourceScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области ресурсов, для которых будет рассмотрен доступ.|
+|principalScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области директоров, доступ к ресурсам которых просматривается в обзоре доступа.|
+|resourceScopes|[коллекция accessReviewScope](../resources/accessreviewscope.md)|Определяет области ресурсов, для которых просматривается доступ.|
 
 Также необходимо указать **свойство @odata.type** со значением `#microsoft.graph.principalResourceMembershipsScope` . Дополнительные информацию о  параметрах конфигурации области с помощью **principalResourceMembershipsScope** см. в меню Настройка области определения обзора доступа с помощью [API](/graph/accessreviews-scope-concept)Microsoft Graph.
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

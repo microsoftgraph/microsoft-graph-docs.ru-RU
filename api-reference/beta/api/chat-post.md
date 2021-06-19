@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1fc781b35a144057c2d6f3baae3c718b86a30e0
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 6ea5de5a32754125c5016bee536c8b8d1802a8d1
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896496"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030819"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
@@ -54,18 +54,23 @@ POST /chats
 |topic|(Необязательный) String|Название чата. Название чата может быть предоставлено только в том случае, если чат имеет `group` тип.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Указывает тип чата. Возможные значения: `group` и `oneOnOne` . |
 |members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. Каждый пользователь, включая пользователя, инициавшего запрос на создание, который будет участвовать в чате, должен быть указан в этом списке.|
+|installedApps| Коллекция [teamsApp](../resources/teamsapp.md)|Список приложений, которые необходимо установить в чате.|
+
+> **Примечание:** В настоящее время поддерживается только одна установка приложения. Если в запросе перечислены несколько установок приложений, ответ будет `Bad Request` ошибкой.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного использования этот метод возвращает созданный код  ответа 201 и вновь созданный ресурс чата в тексте отклика.
+### <a name="response-for-creating-a-one-on-one-chat-without-installed-apps"></a>Ответ на создание единого чата без установленных приложений
+В случае успешного использования этот метод возвращает код отклика и вновь созданный ресурс чата `201 Created` в тексте [](../resources/chat.md) ответа.
+
+### <a name="response-for-creating-a-one-on-one-chat-with-installed-apps"></a>Ответ на создание единого чата с установленными приложениями
+В случае успешной работы этот метод возвращает код ответа и загон расположения, содержащий ссылку на `202 Accepted` [teamsAsyncOperation.](../resources/teamsasyncoperation.md) Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat.](teamsasyncoperation-get.md#example-get-operation-on-chat)
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-a-one-on-one-chat"></a>Пример 1. Создание чата один на один
 
 #### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_oneOnOne"
@@ -91,23 +96,6 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-oneonone-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -137,8 +125,6 @@ Content-Type: application/json
 ### <a name="example-2-create-a-group-chat"></a>Пример 2. Создание группового чата
 
 #### <a name="request"></a>Запрос
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_group"
@@ -170,23 +156,6 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -213,3 +182,55 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-3-create-a-one-on-one-chat-with-installed-apps"></a>Пример 3. Создание чата один на один с установленными приложениями
+
+#### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneOnOne_with_installed_apps"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+    }
+  ],
+  "installedApps": [
+    {
+      "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4"
+    }
+  ]
+}
+```
+
+---
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
+```
+
+Инициирована операция async, и в ответе содержится загон Location, который включает ссылку на [teamsAsyncOperation.](../resources/teamsasyncoperation.md) Ссылку можно использовать для получения состояния и сведений об операции. Подробные сведения см. в [материале Get operation on chat.](teamsasyncoperation-get.md#example-get-operation-on-chat)
+
+## <a name="see-also"></a>См. также
+- [Get teamsAsyncOperation](teamsasyncoperation-get.md)
