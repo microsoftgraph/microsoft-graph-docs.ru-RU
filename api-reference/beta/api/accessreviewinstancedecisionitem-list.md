@@ -5,57 +5,59 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7674a129b118c2c9d8c3487623cf039b2ceca603
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a89f6a1bc91f2449a280fe3bfcfaab918cd92e16
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048402"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030441"
 ---
-# <a name="list-accessreviewinstancedecisionitem"></a><span data-ttu-id="89686-103">List accessReviewInstanceDecisionItem</span><span class="sxs-lookup"><span data-stu-id="89686-103">List accessReviewInstanceDecisionItem</span></span>
+# <a name="list-accessreviewinstancedecisionitem"></a><span data-ttu-id="b56e6-103">List accessReviewInstanceDecisionItem</span><span class="sxs-lookup"><span data-stu-id="b56e6-103">List accessReviewInstanceDecisionItem</span></span>
 
-<span data-ttu-id="89686-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89686-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b56e6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b56e6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="89686-105">[Извлечение объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) для определенного [accessReviewInstance.](../resources/accessreviewinstance.md)</span><span class="sxs-lookup"><span data-stu-id="89686-105">Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects for a specific [accessReviewInstance](../resources/accessreviewinstance.md).</span></span> <span data-ttu-id="89686-106">Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.</span><span class="sxs-lookup"><span data-stu-id="89686-106">A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.</span></span>
+<span data-ttu-id="b56e6-105">[Извлечение объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) для определенного [accessReviewInstance.](../resources/accessreviewinstance.md)</span><span class="sxs-lookup"><span data-stu-id="b56e6-105">Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects for a specific [accessReviewInstance](../resources/accessreviewinstance.md).</span></span> <span data-ttu-id="b56e6-106">Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.</span><span class="sxs-lookup"><span data-stu-id="b56e6-106">A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="89686-107">Если возвращается много **accessReviewInstanceDecisionItems,** чтобы повысить эффективность и избежать периодов времени, извлеките результат, заданный на страницах, включив в запрос как параметр $top запроса с размером страницы не более 100, так и параметр запроса $skip=0 в запросе.</span><span class="sxs-lookup"><span data-stu-id="89686-107">If many **accessReviewInstanceDecisionItems** are returned, to improve efficiency and avoid timeouts, retrieve the result set in pages, by including both the $top query parameter with a page size of at most 100, and the $skip=0 query parameter in the request.</span></span> <span data-ttu-id="89686-108">Если набор результатов охватывает несколько страниц, корпорация Майкрософт Graph возвращает эту страницу с свойством @odata.nextLink в ответе, который содержит URL-адрес следующей страницы результатов.</span><span class="sxs-lookup"><span data-stu-id="89686-108">When a result set spans multiple pages, Microsoft Graph returns that page with an @odata.nextLink property in the response that contains a URL to the next page of results.</span></span> <span data-ttu-id="89686-109">Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом @odata.nextLink в каждом ответе, пока не будут возвращены все результаты, как описано в Graph данных Microsoft в приложении.</span><span class="sxs-lookup"><span data-stu-id="89686-109">If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.</span></span>
->
-><span data-ttu-id="89686-110">Если параметры запроса не предоставлены и результатов более 100, microsoft Graph автоматически будет предоставлять результаты по 100 результатов на странице.</span><span class="sxs-lookup"><span data-stu-id="89686-110">If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.</span></span>
+><span data-ttu-id="b56e6-107">Размер страницы по умолчанию для этого API — 100 объектов accessReviewInstanceDecisionItem.</span><span class="sxs-lookup"><span data-stu-id="b56e6-107">The default page size for this API is 100 accessReviewInstanceDecisionItem objects.</span></span> <span data-ttu-id="b56e6-108">Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов.</span><span class="sxs-lookup"><span data-stu-id="b56e6-108">To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters.</span></span> <span data-ttu-id="b56e6-109">Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)</span><span class="sxs-lookup"><span data-stu-id="b56e6-109">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="89686-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="89686-111">Permissions</span></span>
-<span data-ttu-id="89686-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89686-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b56e6-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b56e6-110">Permissions</span></span>
+<span data-ttu-id="b56e6-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b56e6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="89686-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="89686-114">Permission type</span></span>                        | <span data-ttu-id="89686-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="89686-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b56e6-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b56e6-113">Permission type</span></span>                        | <span data-ttu-id="b56e6-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b56e6-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="89686-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="89686-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="89686-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89686-117">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
-|<span data-ttu-id="89686-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="89686-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="89686-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="89686-119">Not supported.</span></span>|
-|<span data-ttu-id="89686-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="89686-120">Application</span></span>                            | <span data-ttu-id="89686-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="89686-121">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="b56e6-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b56e6-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="b56e6-116">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b56e6-116">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span>  |
+|<span data-ttu-id="b56e6-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b56e6-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b56e6-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b56e6-118">Not supported.</span></span>|
+|<span data-ttu-id="b56e6-119">Приложение</span><span class="sxs-lookup"><span data-stu-id="b56e6-119">Application</span></span>                            | <span data-ttu-id="b56e6-120">AccessReview.Read.All, AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b56e6-120">AccessReview.Read.All, AccessReview.ReadWrite.All</span></span> |
 
- <span data-ttu-id="89686-122">В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа.</span><span class="sxs-lookup"><span data-stu-id="89686-122">The signed-in user must also be in a directory role that permits them to read an access review.</span></span>
+ <span data-ttu-id="b56e6-121">В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа.</span><span class="sxs-lookup"><span data-stu-id="b56e6-121">The signed-in user must also be in a directory role that permits them to read an access review.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="89686-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="89686-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b56e6-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b56e6-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{instance-id}/decisions
 ```
-## <a name="request-headers"></a><span data-ttu-id="89686-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="89686-124">Request headers</span></span>
-<span data-ttu-id="89686-125">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="89686-125">None.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="89686-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="89686-126">Request body</span></span>
-<span data-ttu-id="89686-127">Не поставляем тело запроса.</span><span class="sxs-lookup"><span data-stu-id="89686-127">Do not supply a request body.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b56e6-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b56e6-123">Optional query parameters</span></span>
+<span data-ttu-id="b56e6-124">Этот метод поддерживает `$select` `$filter` параметры запроса `$orderBy` `$skip` `$top` OData и OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b56e6-124">This method supports `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="b56e6-125">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b56e6-125">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="response"></a><span data-ttu-id="89686-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="89686-128">Response</span></span>
-<span data-ttu-id="89686-129">В случае успешной работы этот метод возвращает код ответа и массив `200 OK` [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="89686-129">If successful, this method returns a `200 OK` response code and an array of [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects in the response body.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b56e6-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b56e6-126">Request headers</span></span>
+<span data-ttu-id="b56e6-127">Нет.</span><span class="sxs-lookup"><span data-stu-id="b56e6-127">None.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="89686-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="89686-130">Examples</span></span>
-### <a name="request"></a><span data-ttu-id="89686-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="89686-131">Request</span></span>
-<span data-ttu-id="89686-132">В следующем примере показан запрос на извлечение всех решений в экземпляре обзора доступа.</span><span class="sxs-lookup"><span data-stu-id="89686-132">The following example shows a request to retrieve all the decisions on an instance of an access review.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b56e6-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b56e6-128">Request body</span></span>
+<span data-ttu-id="b56e6-129">Не поставляем тело запроса.</span><span class="sxs-lookup"><span data-stu-id="b56e6-129">Do not supply a request body.</span></span>
+
+## <a name="response"></a><span data-ttu-id="b56e6-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="b56e6-130">Response</span></span>
+<span data-ttu-id="b56e6-131">В случае успешной работы этот метод возвращает код ответа и массив `200 OK` [объектов accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="b56e6-131">If successful, this method returns a `200 OK` response code and an array of [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="b56e6-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="b56e6-132">Examples</span></span>
+### <a name="request"></a><span data-ttu-id="b56e6-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="b56e6-133">Request</span></span>
+<span data-ttu-id="b56e6-134">В следующем примере показан запрос на извлечение всех решений в экземпляре обзора доступа.</span><span class="sxs-lookup"><span data-stu-id="b56e6-134">The following example shows a request to retrieve all the decisions on an instance of an access review.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="89686-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="89686-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b56e6-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="b56e6-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewInstanceDecisionItem"
@@ -63,19 +65,19 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$top=100&$skip=0
 ```
-# <a name="c"></a>[<span data-ttu-id="89686-134">C#</span><span class="sxs-lookup"><span data-stu-id="89686-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b56e6-136">C#</span><span class="sxs-lookup"><span data-stu-id="b56e6-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="89686-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="89686-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b56e6-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b56e6-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="89686-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="89686-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b56e6-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b56e6-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewinstancedecisionitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="89686-137">Java</span><span class="sxs-lookup"><span data-stu-id="89686-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b56e6-139">Java</span><span class="sxs-lookup"><span data-stu-id="b56e6-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -84,8 +86,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
-### <a name="response"></a><span data-ttu-id="89686-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="89686-138">Response</span></span>
-><span data-ttu-id="89686-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="89686-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="b56e6-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="b56e6-140">Response</span></span>
+><span data-ttu-id="b56e6-141">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b56e6-141">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,17 +99,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.count": 4,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions",
+    "@odata.count": 2,
     "value": [
         {
-            "id": "77a61af9-3bef-4bbf-b00b-04734d6d5eae",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
+            "id": "e6cafba0-cbf0-4748-8868-0810c7f4cc06",
+            "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
             "reviewedDateTime": null,
             "decision": "NotReviewed",
             "justification": "",
             "appliedDateTime": null,
             "applyResult": "New",
-            "recommendation": "Deny",
+            "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+            "resourceLink": null,
+            "resource": null,
             "reviewedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
                 "displayName": "",
@@ -120,24 +126,33 @@ Content-type: application/json
             },
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "3736c87b-dc21-4290-8802-d6fef5fa3a08",
-                "userDisplayName": "Irvin Sayers",
-                "userPrincipalName": "IrvinS@M365x471116.OnMicrosoft.com"
+                "userId": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                "userDisplayName": "Diego Siciliani",
+                "userPrincipalName": "DiegoS@contoso.com"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                "displayName": "Diego Siciliani",
+                "userPrincipalName": "DiegoS@contoso.com"
             }
         },
         {
-            "id": "f30b68ef-b843-4479-86b8-0a3a2f4bb209",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
-            "reviewedDateTime": "2020-09-18T16:56:08.377Z",
-            "decision": "Approve",
-            "justification": "This employee needs access for reason X",
+            "id": "4bde8d40-9224-4aa3-936b-08d73e1baf47",
+            "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
             "appliedDateTime": null,
             "applyResult": "New",
-            "recommendation": "Deny",
+            "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/11feb738-0039-4a6c-a045-dcb91a47969a",
+            "resourceLink": null,
+            "resource": null,
             "reviewedBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "MOD Administrator"
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "userPrincipalName": ""
             },
             "appliedBy": {
                 "id": "00000000-0000-0000-0000-000000000000",
@@ -146,71 +161,25 @@ Content-type: application/json
             },
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "ecd78419-3f1e-4f07-9bd9-7c77137af4f1",
-                "userDisplayName": "Bianca Pisani",
-                "userPrincipalName": "BiancaP@M365x471116.OnMicrosoft.com"
-            }
-        },
-        {
-            "id": "037b737f-e8ca-4507-b126-5a0620ba2c18",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
-            "reviewedDateTime": "2020-09-18T16:56:28.473Z",
-            "decision": "Deny",
-            "justification": "This employee changed roles and no longer needs access",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Deny",
-            "reviewedBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "MOD Administrator"
+                "userId": "11feb738-0039-4a6c-a045-dcb91a47969a",
+                "userDisplayName": "Johanna Lorenz",
+                "userPrincipalName": "JohannaL@contoso.com"
             },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "5f16b75b-031c-4944-9691-070f03273079",
-                "userDisplayName": "Delia Dennis",
-                "userPrincipalName": "DeliaD@M365x471116.OnMicrosoft.com"
-            }
-        },
-        {
-            "id": "7032f455-10a3-4d04-bf02-66fb65d26d10",
-            "accessReviewId": "70463350-742e-4909-bfa5-bc23447bd002",
-            "reviewedDateTime": "2020-09-18T16:56:44.38Z",
-            "decision": "DontKnow",
-            "justification": "I do not know what this employee needs",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Deny",
-            "reviewedBy": {
-                "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
-                "displayName": "MOD Administrator",
-                "userPrincipalName": "MOD Administrator"
-            },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "userPrincipalName": ""
-            },
-            "target": {
-                "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
-                "userId": "4169762e-895f-4350-a13d-e5b09b1efcfa",
-                "userDisplayName": "Isaiah Langer",
-                "userPrincipalName": "IsaiahL@M365x471116.OnMicrosoft.com"
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "11feb738-0039-4a6c-a045-dcb91a47969a",
+                "displayName": "Johanna Lorenz",
+                "userPrincipalName": "JohannaL@contoso.com"
             }
         }
     ]
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="89686-140">См. также</span><span class="sxs-lookup"><span data-stu-id="89686-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b56e6-142">См. также</span><span class="sxs-lookup"><span data-stu-id="b56e6-142">See also</span></span>
 
-- [<span data-ttu-id="89686-141">Получить accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="89686-141">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
-- [<span data-ttu-id="89686-142">Получить accessReviewInstance</span><span class="sxs-lookup"><span data-stu-id="89686-142">Get accessReviewInstance</span></span>](accessreviewinstance-get.md)
+- [<span data-ttu-id="b56e6-143">Получить accessReviewScheduleDefinition</span><span class="sxs-lookup"><span data-stu-id="b56e6-143">Get accessReviewScheduleDefinition</span></span>](accessreviewscheduledefinition-get.md)
+- [<span data-ttu-id="b56e6-144">Получить accessReviewInstance</span><span class="sxs-lookup"><span data-stu-id="b56e6-144">Get accessReviewInstance</span></span>](accessreviewinstance-get.md)
 
 
 <!--

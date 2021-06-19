@@ -3,86 +3,89 @@ title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 876d8674013f1b673208e358d7d0902cb930f638
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 54bdde286933610feb637026be5a7385ab848c48
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971442"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030952"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-react"></a><span data-ttu-id="0ba55-103">Использование Microsoft Graph Toolkit с React</span><span class="sxs-lookup"><span data-stu-id="0ba55-103">Use the Microsoft Graph Toolkit with React</span></span>
+# <a name="use-the-microsoft-graph-toolkit-with-react"></a><span data-ttu-id="cbffe-103">Использование Microsoft Graph Toolkit с React</span><span class="sxs-lookup"><span data-stu-id="cbffe-103">Use the Microsoft Graph Toolkit with React</span></span>
 
-<span data-ttu-id="0ba55-104">Microsoft Graph Toolkit — это набор веб-компонентов, которые упрощают подключение к Microsoft Graph и позволяют вам сосредоточиться на своем приложении.</span><span class="sxs-lookup"><span data-stu-id="0ba55-104">Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead.</span></span> <span data-ttu-id="0ba55-105">Microsoft Graph Toolkit доступен как общий набор веб-компонентов, распространяемых через пакет NPM `@microsoft/mgt`.</span><span class="sxs-lookup"><span data-stu-id="0ba55-105">Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.</span></span>
+<span data-ttu-id="cbffe-104">Microsoft Graph Toolkit — это набор веб-компонентов, которые упрощают подключение к Microsoft Graph и позволяют вам сосредоточиться на своем приложении.</span><span class="sxs-lookup"><span data-stu-id="cbffe-104">Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead.</span></span> <span data-ttu-id="cbffe-105">Microsoft Graph Toolkit доступен как общий набор веб-компонентов, распространяемых через пакет NPM `@microsoft/mgt`.</span><span class="sxs-lookup"><span data-stu-id="cbffe-105">Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.</span></span>
 
-<span data-ttu-id="0ba55-106">Если вы создаете приложения с помощью React, вы можете использовать [пакет `@microsoft/mgt-react`](./mgt-react.md), который упаковывает веб-компоненты Microsoft Graph Toolkit в компоненты React и упрощает передачу сложных данных.</span><span class="sxs-lookup"><span data-stu-id="0ba55-106">If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.</span></span>
+<span data-ttu-id="cbffe-106">Если вы создаете приложения с помощью React, вы можете использовать [пакет `@microsoft/mgt-react`](./mgt-react.md), который упаковывает веб-компоненты Microsoft Graph Toolkit в компоненты React и упрощает передачу сложных данных.</span><span class="sxs-lookup"><span data-stu-id="cbffe-106">If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.</span></span>
 
-<span data-ttu-id="0ba55-107">В этой статье описывается пошаговый процесс использования Microsoft Graph Toolkit для создания приложения React и подключения его к Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="0ba55-107">This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365.</span></span> <span data-ttu-id="0ba55-108">После выполнения всех шагов у вас получится приложение React, которое показывает предстоящие встречи пользователя, вошедшего в систему в Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="0ba55-108">After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.</span></span>
+<span data-ttu-id="cbffe-107">В этой статье описывается пошаговый процесс использования Microsoft Graph Toolkit для создания приложения React и подключения его к Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="cbffe-107">This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365.</span></span> <span data-ttu-id="cbffe-108">После выполнения всех шагов у вас получится приложение React, которое показывает предстоящие встречи пользователя, вошедшего в систему в Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="cbffe-108">After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0ba55-109">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="0ba55-109">Prerequisites</span></span>
+> [!TIP]
+> <span data-ttu-id="cbffe-109">Вы также можете следовать этому учебнику в качестве интерактивного тура кода.</span><span class="sxs-lookup"><span data-stu-id="cbffe-109">You can also follow this tutorial as an interactive code tour.</span></span> <span data-ttu-id="cbffe-110">Сведения об этом см. в [GitHub репо с проектом starter.](https://github.com/microsoftgraph/mgt-react-codetour)</span><span class="sxs-lookup"><span data-stu-id="cbffe-110">Fore details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).</span></span>
 
-<span data-ttu-id="0ba55-110">Чтобы выполнить действия, описанные в этой статье, вам понадобится среда разработки Microsoft 365 и несколько инструментов.</span><span class="sxs-lookup"><span data-stu-id="0ba55-110">To follow the steps in this article, you'll need a Microsoft 365 development environment and a few tools.</span></span> <span data-ttu-id="0ba55-111">Дополнительные сведения см. в разделе [Приступая к работе](./overview.md).</span><span class="sxs-lookup"><span data-stu-id="0ba55-111">For details, see [getting started](./overview.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cbffe-111">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="cbffe-111">Prerequisites</span></span>
 
-## <a name="create-a-react-app"></a><span data-ttu-id="0ba55-112">Создание приложения React</span><span class="sxs-lookup"><span data-stu-id="0ba55-112">Create a React app</span></span>
+<span data-ttu-id="cbffe-112">Чтобы выполнить действия, описанные в этой статье, вам понадобится среда разработки Microsoft 365 и несколько инструментов.</span><span class="sxs-lookup"><span data-stu-id="cbffe-112">To follow the steps in this article, you'll need a Microsoft 365 development environment and a few tools.</span></span> <span data-ttu-id="cbffe-113">Дополнительные сведения см. в разделе [Приступая к работе](./overview.md).</span><span class="sxs-lookup"><span data-stu-id="cbffe-113">For details, see [getting started](./overview.md).</span></span>
 
-<span data-ttu-id="0ba55-113">Создайте приложение React, выполнив следующую команду.</span><span class="sxs-lookup"><span data-stu-id="0ba55-113">Create a new React app by running the following command.</span></span> <span data-ttu-id="0ba55-114">Это создаст новое приложение React с использованием TypeScript, что поможет написать более функциональный код и избежать ошибок выполнения.</span><span class="sxs-lookup"><span data-stu-id="0ba55-114">This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors.</span></span>
+## <a name="create-a-react-app"></a><span data-ttu-id="cbffe-114">Создание приложения React</span><span class="sxs-lookup"><span data-stu-id="cbffe-114">Create a React app</span></span>
+
+<span data-ttu-id="cbffe-115">Создайте приложение React, выполнив следующую команду.</span><span class="sxs-lookup"><span data-stu-id="cbffe-115">Create a new React app by running the following command.</span></span> <span data-ttu-id="cbffe-116">Это создаст новое приложение React с использованием TypeScript, что поможет написать более функциональный код и избежать ошибок выполнения.</span><span class="sxs-lookup"><span data-stu-id="cbffe-116">This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors.</span></span>
 
 ```Command Line
 npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
-<span data-ttu-id="0ba55-115">Измените рабочий каталог на только что созданное приложение.</span><span class="sxs-lookup"><span data-stu-id="0ba55-115">Change the working directory to the newly created app.</span></span>
+<span data-ttu-id="cbffe-117">Измените рабочий каталог на только что созданное приложение.</span><span class="sxs-lookup"><span data-stu-id="cbffe-117">Change the working directory to the newly created app.</span></span>
 
 ```Command Line
 cd my-m365-app
 ```
 
-<span data-ttu-id="0ba55-116">Затем установите пакет NPM `mgt-react`, который содержит компоненты Microsoft Graph Toolkit для React.</span><span class="sxs-lookup"><span data-stu-id="0ba55-116">Next, install the `mgt-react` npm package, which contains the Microsoft Graph Toolkit React components.</span></span>
+<span data-ttu-id="cbffe-118">Затем установите пакет NPM `mgt-react`, который содержит компоненты Microsoft Graph Toolkit для React.</span><span class="sxs-lookup"><span data-stu-id="cbffe-118">Next, install the `mgt-react` npm package, which contains the Microsoft Graph Toolkit React components.</span></span>
 
 ```Command Line
 npm i @microsoft/mgt-react
 ```
 
-<span data-ttu-id="0ba55-117">Установите и пакет npm, который содержит `mgt-msal2-provider` `mgt-element` поставщика auth MSAL 2.0.</span><span class="sxs-lookup"><span data-stu-id="0ba55-117">Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL 2.0 auth provider.</span></span>
+<span data-ttu-id="cbffe-119">Установите и пакет npm, который содержит `mgt-msal2-provider` `mgt-element` поставщика auth MSAL 2.0.</span><span class="sxs-lookup"><span data-stu-id="cbffe-119">Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL 2.0 auth provider.</span></span>
 
 ```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
-<span data-ttu-id="0ba55-118">Подтвердите, что вы можете запустить приложение.</span><span class="sxs-lookup"><span data-stu-id="0ba55-118">Confirm that you can run the app.</span></span>
+<span data-ttu-id="cbffe-120">Подтвердите, что вы можете запустить приложение.</span><span class="sxs-lookup"><span data-stu-id="cbffe-120">Confirm that you can run the app.</span></span>
 
 ```Command Line
 npm start
 ```
 
-<span data-ttu-id="0ba55-119">У вас должна быть возможность открыть приложение в браузере через `http://localhost:3000`.</span><span class="sxs-lookup"><span data-stu-id="0ba55-119">You should be able to open your app in the browser via `http://localhost:3000`.</span></span>
+<span data-ttu-id="cbffe-121">У вас должна быть возможность открыть приложение в браузере через `http://localhost:3000`.</span><span class="sxs-lookup"><span data-stu-id="cbffe-121">You should be able to open your app in the browser via `http://localhost:3000`.</span></span>
 
 [!INCLUDE [AAD with implicit flow app registration](../includes/aad-app-registration-spa.md)]
 
-## <a name="connect-react-app-to-microsoft-365"></a><span data-ttu-id="0ba55-120">Подключение приложения React к Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0ba55-120">Connect React app to Microsoft 365</span></span>
+## <a name="connect-react-app-to-microsoft-365"></a><span data-ttu-id="cbffe-122">Подключение приложения React к Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="cbffe-122">Connect React app to Microsoft 365</span></span>
 
-<span data-ttu-id="0ba55-121">Теперь, когда вы зарегистрировали свое приложение в Azure Active Directory (Azure AD), вы можете подключить приложение React к Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="0ba55-121">Now that you have registered your application with Azure Active Directory (Azure AD), you can connect the React app to Microsoft 365.</span></span> <span data-ttu-id="0ba55-122">Для начала разрешите пользователям входить в приложение при помощи учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="0ba55-122">First, allow users to sign in to the app using their Microsoft account.</span></span>
+<span data-ttu-id="cbffe-123">Теперь, когда вы зарегистрировали свое приложение в Azure Active Directory (Azure AD), вы можете подключить приложение React к Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="cbffe-123">Now that you have registered your application with Azure Active Directory (Azure AD), you can connect the React app to Microsoft 365.</span></span> <span data-ttu-id="cbffe-124">Для начала разрешите пользователям входить в приложение при помощи учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cbffe-124">First, allow users to sign in to the app using their Microsoft account.</span></span>
 
-### <a name="copy-the-azure-ad-application-registration-id"></a><span data-ttu-id="0ba55-123">Скопируйте идентификатор регистрации приложения в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="0ba55-123">Copy the Azure AD application registration ID</span></span>
+### <a name="copy-the-azure-ad-application-registration-id"></a><span data-ttu-id="cbffe-125">Скопируйте идентификатор регистрации приложения в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="cbffe-125">Copy the Azure AD application registration ID</span></span>
 
-1. <span data-ttu-id="0ba55-124">На портале Azure перейдите к регистрации приложения.</span><span class="sxs-lookup"><span data-stu-id="0ba55-124">In the Azure Portal, go to your application registration.</span></span>
-1. <span data-ttu-id="0ba55-125">Убедитесь, что вы находитесь на странице **Обзор**.</span><span class="sxs-lookup"><span data-stu-id="0ba55-125">Verify that you are on the **Overview** page.</span></span>
-1. <span data-ttu-id="0ba55-126">Скопируйте значение свойства **Идентификатор приложения (клиента)** из раздела **Основное**. </span><span class="sxs-lookup"><span data-stu-id="0ba55-126">From the **Essentials** section, copy the value of the **Application (client) ID** property</span></span>
+1. <span data-ttu-id="cbffe-126">На портале Azure перейдите к регистрации приложения.</span><span class="sxs-lookup"><span data-stu-id="cbffe-126">In the Azure Portal, go to your application registration.</span></span>
+1. <span data-ttu-id="cbffe-127">Убедитесь, что вы находитесь на странице **Обзор**.</span><span class="sxs-lookup"><span data-stu-id="cbffe-127">Verify that you are on the **Overview** page.</span></span>
+1. <span data-ttu-id="cbffe-128">Скопируйте значение свойства **Идентификатор приложения (клиента)** из раздела **Основное**. </span><span class="sxs-lookup"><span data-stu-id="cbffe-128">From the **Essentials** section, copy the value of the **Application (client) ID** property</span></span>
 
-### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a><span data-ttu-id="0ba55-127">Настройка поставщика проверки подлинности Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="0ba55-127">Configure the Microsoft Graph Toolkit authentication provider</span></span>
+### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a><span data-ttu-id="cbffe-129">Настройка поставщика проверки подлинности Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="cbffe-129">Configure the Microsoft Graph Toolkit authentication provider</span></span>
 
-<span data-ttu-id="0ba55-128">Теперь настройте поставщика проверки подлинности, который должен использовать Microsoft Graph Toolkit.</span><span class="sxs-lookup"><span data-stu-id="0ba55-128">Next, configure the authentication provider that the Microsoft Graph Toolkit should use.</span></span> <span data-ttu-id="0ba55-129">В этом случае будет использоваться MSAL, который по умолчанию подходит для создания автономных приложений.</span><span class="sxs-lookup"><span data-stu-id="0ba55-129">In this case, you'll use MSAL, which is a good default for building standalone applications.</span></span> <span data-ttu-id="0ba55-130">Если вы используете какие-либо точки расширения в Microsoft 365, например Teams или SharePoint, то необходимо будет выбрать [других поставщиков](../providers/providers.md).</span><span class="sxs-lookup"><span data-stu-id="0ba55-130">If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).</span></span>
+<span data-ttu-id="cbffe-130">Теперь настройте поставщика проверки подлинности, который должен использовать Microsoft Graph Toolkit.</span><span class="sxs-lookup"><span data-stu-id="cbffe-130">Next, configure the authentication provider that the Microsoft Graph Toolkit should use.</span></span> <span data-ttu-id="cbffe-131">В этом случае будет использоваться MSAL, который по умолчанию подходит для создания автономных приложений.</span><span class="sxs-lookup"><span data-stu-id="cbffe-131">In this case, you'll use MSAL, which is a good default for building standalone applications.</span></span> <span data-ttu-id="cbffe-132">Если вы используете какие-либо точки расширения в Microsoft 365, например Teams или SharePoint, то необходимо будет выбрать [других поставщиков](../providers/providers.md).</span><span class="sxs-lookup"><span data-stu-id="cbffe-132">If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).</span></span>
 
 >[!NOTE] 
-><span data-ttu-id="0ba55-131">Если вы в настоящее время используете поставщика MSAL и хотите обновить поставщика MSAL 2, выполните действия в статье [поставщика MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)</span><span class="sxs-lookup"><span data-stu-id="0ba55-131">If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.</span></span>
+><span data-ttu-id="cbffe-133">Если вы в настоящее время используете поставщика MSAL и хотите обновить поставщика MSAL 2, выполните действия в статье [поставщика MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)</span><span class="sxs-lookup"><span data-stu-id="cbffe-133">If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.</span></span>
 
-1. <span data-ttu-id="0ba55-132">Откройте в редакторе кода файл **src/index.**</span><span class="sxs-lookup"><span data-stu-id="0ba55-132">In the code editor, open the **src/index.**</span></span> <span data-ttu-id="0ba55-133">и добавьте в список операций импорта следующее:</span><span class="sxs-lookup"><span data-stu-id="0ba55-133">file, and to the list of imports, add:</span></span>
+1. <span data-ttu-id="cbffe-134">Откройте в редакторе кода файл **src/index.**</span><span class="sxs-lookup"><span data-stu-id="cbffe-134">In the code editor, open the **src/index.**</span></span> <span data-ttu-id="cbffe-135">и добавьте в список операций импорта следующее:</span><span class="sxs-lookup"><span data-stu-id="cbffe-135">file, and to the list of imports, add:</span></span>
 
     ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
     import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
-1. <span data-ttu-id="0ba55-134">После последнего оператора `import` инициализируйте Microsoft Graph Toolkit с помощью поставщика MSAL.</span><span class="sxs-lookup"><span data-stu-id="0ba55-134">After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.</span></span>
+1. <span data-ttu-id="cbffe-136">После последнего оператора `import` инициализируйте Microsoft Graph Toolkit с помощью поставщика MSAL.</span><span class="sxs-lookup"><span data-stu-id="cbffe-136">After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.</span></span>
 
     ```TypeScript
     Providers.globalProvider = new Msal2Provider({
@@ -90,9 +93,9 @@ npm start
     });
     ```
 
-    <span data-ttu-id="0ba55-135">Замените значение свойства `clientId` значением свойства `Application (client) ID`, которое вы ранее скопировали на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="0ba55-135">Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Azure Portal.</span></span>
+    <span data-ttu-id="cbffe-137">Замените значение свойства `clientId` значением свойства `Application (client) ID`, которое вы ранее скопировали на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="cbffe-137">Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Azure Portal.</span></span>
 
-<span data-ttu-id="0ba55-136">С этими изменениями файл **src/index.tsx** будет выглядеть следующим образом.</span><span class="sxs-lookup"><span data-stu-id="0ba55-136">With these changes, the **src/index.tsx** file will look like the following.</span></span>
+<span data-ttu-id="cbffe-138">С этими изменениями файл **src/index.tsx** будет выглядеть следующим образом.</span><span class="sxs-lookup"><span data-stu-id="cbffe-138">With these changes, the **src/index.tsx** file will look like the following.</span></span>
 
   ```tsx
   import React from 'react';
@@ -121,17 +124,17 @@ npm start
   serviceWorker.unregister();
   ```
 
-### <a name="add-the-sign-in-button"></a><span data-ttu-id="0ba55-137">Добавление кнопки входа</span><span class="sxs-lookup"><span data-stu-id="0ba55-137">Add the Sign in button</span></span>
+### <a name="add-the-sign-in-button"></a><span data-ttu-id="cbffe-139">Добавление кнопки входа</span><span class="sxs-lookup"><span data-stu-id="cbffe-139">Add the Sign in button</span></span>
 
-<span data-ttu-id="0ba55-138">Добавьте компонент Microsoft Graph Toolkit для React под названием **Вход**, отображающий кнопку **Войти**, которую пользователи смогут использовать для входа в ваше приложение со своей учетной записью Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="0ba55-138">Add the **Login** Microsoft Graph Toolkit React component, which will display the **Sign in** button people can use to sign in with their Microsoft account to your app.</span></span>
+<span data-ttu-id="cbffe-140">Добавьте компонент Microsoft Graph Toolkit для React под названием **Вход**, отображающий кнопку **Войти**, которую пользователи смогут использовать для входа в ваше приложение со своей учетной записью Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cbffe-140">Add the **Login** Microsoft Graph Toolkit React component, which will display the **Sign in** button people can use to sign in with their Microsoft account to your app.</span></span>
 
-1. <span data-ttu-id="0ba55-139">Откройте в редакторе кода файл **src/App.tsx** и добавьте в список операций импорта следующее:</span><span class="sxs-lookup"><span data-stu-id="0ba55-139">In the code editor, open the **src/App.tsx** file, and to the list of imports add:</span></span>
+1. <span data-ttu-id="cbffe-141">Откройте в редакторе кода файл **src/App.tsx** и добавьте в список операций импорта следующее:</span><span class="sxs-lookup"><span data-stu-id="cbffe-141">In the code editor, open the **src/App.tsx** file, and to the list of imports add:</span></span>
 
     ```TypeScript
     import { Login } from '@microsoft/mgt-react';
     ```
 
-1. <span data-ttu-id="0ba55-140">В функции `App` замените содержимое пункта `return` базовой структурой, включая компонент входа Microsoft Graph Toolkit:</span><span class="sxs-lookup"><span data-stu-id="0ba55-140">In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit Login component:</span></span>
+1. <span data-ttu-id="cbffe-142">В функции `App` замените содержимое пункта `return` базовой структурой, включая компонент входа Microsoft Graph Toolkit:</span><span class="sxs-lookup"><span data-stu-id="cbffe-142">In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit Login component:</span></span>
 
     ```TypeScript
     <div className="App">
@@ -141,7 +144,7 @@ npm start
     </div>
     ```
 
-<span data-ttu-id="0ba55-141">С этими изменениями файл **src/App.tsx** будет выглядеть следующим образом.</span><span class="sxs-lookup"><span data-stu-id="0ba55-141">With these changes, the **src/App.tsx** file will look like the following.</span></span>
+<span data-ttu-id="cbffe-143">С этими изменениями файл **src/App.tsx** будет выглядеть следующим образом.</span><span class="sxs-lookup"><span data-stu-id="cbffe-143">With these changes, the **src/App.tsx** file will look like the following.</span></span>
 ```TypeScript
 
 import { Login } from '@microsoft/mgt-react';
@@ -161,24 +164,24 @@ function App() {
 export default App;
 ```
 
-### <a name="test-signing-in-to-your-application"></a><span data-ttu-id="0ba55-142">Тестирование входа в приложение</span><span class="sxs-lookup"><span data-stu-id="0ba55-142">Test signing in to your application</span></span>
+### <a name="test-signing-in-to-your-application"></a><span data-ttu-id="cbffe-144">Тестирование входа в приложение</span><span class="sxs-lookup"><span data-stu-id="cbffe-144">Test signing in to your application</span></span>
 
-<span data-ttu-id="0ba55-143">Теперь вы можете входить в приложение с помощью своей учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="0ba55-143">You should now be able to sign in to your application with your Microsoft account.</span></span>
+<span data-ttu-id="cbffe-145">Теперь вы можете входить в приложение с помощью своей учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cbffe-145">You should now be able to sign in to your application with your Microsoft account.</span></span>
 
-1. <span data-ttu-id="0ba55-144">Вернитесь в браузер, в котором выполняется ваше приложение React.</span><span class="sxs-lookup"><span data-stu-id="0ba55-144">Go back to the browser where your React app is running.</span></span> <span data-ttu-id="0ba55-145">Теперь вы должны видеть кнопку **Войти**.</span><span class="sxs-lookup"><span data-stu-id="0ba55-145">You should now see a **Sign in** button.</span></span>
-1. <span data-ttu-id="0ba55-146">При нажатии кнопки **Войти** вам будет предложено войти в систему с помощью учетной записи Майкрософт. Вы можете использовать ту же учетную запись, с помощью которой заходили на портал Azure.</span><span class="sxs-lookup"><span data-stu-id="0ba55-146">When you click the **Sign in** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).</span></span>
-1. <span data-ttu-id="0ba55-147">Так как это приложение Azure AD используется впервые, вам необходимо дать согласие на его использование в вашей организации.</span><span class="sxs-lookup"><span data-stu-id="0ba55-147">Because this is the first time you're using this Azure AD application, you need to consent its use in your organization.</span></span>
-1. <span data-ttu-id="0ba55-148">После входа в систему вы будете перенаправлены в приложение React.</span><span class="sxs-lookup"><span data-stu-id="0ba55-148">After signing in, you will be redirected to your React app.</span></span> <span data-ttu-id="0ba55-149">Обратите внимание, что кнопка **Войти** изменилась и теперь показывает ваше имя пользователя ![Приложение React отображает информацию о пользователе, полученную из Microsoft 365 с помощью Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).</span><span class="sxs-lookup"><span data-stu-id="0ba55-149">Notice that the **Sign in** button changed to show your user's name ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).</span></span>
+1. <span data-ttu-id="cbffe-146">Вернитесь в браузер, в котором выполняется ваше приложение React.</span><span class="sxs-lookup"><span data-stu-id="cbffe-146">Go back to the browser where your React app is running.</span></span> <span data-ttu-id="cbffe-147">Теперь вы должны видеть кнопку **Войти**.</span><span class="sxs-lookup"><span data-stu-id="cbffe-147">You should now see a **Sign in** button.</span></span>
+1. <span data-ttu-id="cbffe-148">При нажатии кнопки **Войти** вам будет предложено войти в систему с помощью учетной записи Майкрософт. Вы можете использовать ту же учетную запись, с помощью которой заходили на портал Azure.</span><span class="sxs-lookup"><span data-stu-id="cbffe-148">When you click the **Sign in** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).</span></span>
+1. <span data-ttu-id="cbffe-149">Так как это приложение Azure AD используется впервые, вам необходимо дать согласие на его использование в вашей организации.</span><span class="sxs-lookup"><span data-stu-id="cbffe-149">Because this is the first time you're using this Azure AD application, you need to consent its use in your organization.</span></span>
+1. <span data-ttu-id="cbffe-150">После входа в систему вы будете перенаправлены в приложение React.</span><span class="sxs-lookup"><span data-stu-id="cbffe-150">After signing in, you will be redirected to your React app.</span></span> <span data-ttu-id="cbffe-151">Обратите внимание, что кнопка **Войти** изменилась и теперь показывает ваше имя пользователя ![Приложение React отображает информацию о пользователе, полученную из Microsoft 365 с помощью Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).</span><span class="sxs-lookup"><span data-stu-id="cbffe-151">Notice that the **Sign in** button changed to show your user's name ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).</span></span>
 
-## <a name="load-data-from-microsoft-365"></a><span data-ttu-id="0ba55-150">Загрузка данных из Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0ba55-150">Load data from Microsoft 365</span></span>
+## <a name="load-data-from-microsoft-365"></a><span data-ttu-id="cbffe-152">Загрузка данных из Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="cbffe-152">Load data from Microsoft 365</span></span>
 
-<span data-ttu-id="0ba55-151">Microsoft Graph Toolkit не только упрощает проверку подлинности при входе в Microsoft 365, но и загружает его данные.</span><span class="sxs-lookup"><span data-stu-id="0ba55-151">Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data.</span></span> <span data-ttu-id="0ba55-152">В этом примере будет показан календарь пользователя, вошедшего в систему.</span><span class="sxs-lookup"><span data-stu-id="0ba55-152">In this example, you'll show the signed in person's calendar.</span></span>
+<span data-ttu-id="cbffe-153">Microsoft Graph Toolkit не только упрощает проверку подлинности при входе в Microsoft 365, но и загружает его данные.</span><span class="sxs-lookup"><span data-stu-id="cbffe-153">Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data.</span></span> <span data-ttu-id="cbffe-154">В этом примере будет показан календарь пользователя, вошедшего в систему.</span><span class="sxs-lookup"><span data-stu-id="cbffe-154">In this example, you'll show the signed in person's calendar.</span></span>
 
-### <a name="specify-permissions-needed-for-your-application"></a><span data-ttu-id="0ba55-153">Определение разрешений, необходимых для вашего приложения</span><span class="sxs-lookup"><span data-stu-id="0ba55-153">Specify permissions needed for your application</span></span>
+### <a name="specify-permissions-needed-for-your-application"></a><span data-ttu-id="cbffe-155">Определение разрешений, необходимых для вашего приложения</span><span class="sxs-lookup"><span data-stu-id="cbffe-155">Specify permissions needed for your application</span></span>
 
-<span data-ttu-id="0ba55-154">Прежде чем вы сможете загружать данные из Microsoft 365, необходимо определить список областей разрешений, которые необходимы вашему приложению для получения доступа к данным пользователя.</span><span class="sxs-lookup"><span data-stu-id="0ba55-154">Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data.</span></span> <span data-ttu-id="0ba55-155">Эти области различаются в зависимости от того, какую информацию вы хотите показать.</span><span class="sxs-lookup"><span data-stu-id="0ba55-155">These scopes differ depending on what kind of information you want to show.</span></span> <span data-ttu-id="0ba55-156">В этом случае понадобится доступ к календарю пользователей, а также базовый доступ к информации о пользователях, которая также отображается в календаре.</span><span class="sxs-lookup"><span data-stu-id="0ba55-156">In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar.</span></span> <span data-ttu-id="0ba55-157">Области разрешений, необходимые для каждого API, можно найти в [документации API Microsoft Graph](/graph/api/overview).</span><span class="sxs-lookup"><span data-stu-id="0ba55-157">You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).</span></span>
+<span data-ttu-id="cbffe-156">Прежде чем вы сможете загружать данные из Microsoft 365, необходимо определить список областей разрешений, которые необходимы вашему приложению для получения доступа к данным пользователя.</span><span class="sxs-lookup"><span data-stu-id="cbffe-156">Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data.</span></span> <span data-ttu-id="cbffe-157">Эти области различаются в зависимости от того, какую информацию вы хотите показать.</span><span class="sxs-lookup"><span data-stu-id="cbffe-157">These scopes differ depending on what kind of information you want to show.</span></span> <span data-ttu-id="cbffe-158">В этом случае понадобится доступ к календарю пользователей, а также базовый доступ к информации о пользователях, которая также отображается в календаре.</span><span class="sxs-lookup"><span data-stu-id="cbffe-158">In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar.</span></span> <span data-ttu-id="cbffe-159">Области разрешений, необходимые для каждого API, можно найти в [документации API Microsoft Graph](/graph/api/overview).</span><span class="sxs-lookup"><span data-stu-id="cbffe-159">You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).</span></span>
 
-1. <span data-ttu-id="0ba55-158">Откройте в редакторе кода файл **src/index.tsx** и обновите код инициализации поставщика.</span><span class="sxs-lookup"><span data-stu-id="0ba55-158">In the code editor, open the **src/index.tsx** file, and update the provider initialization code.</span></span>
+1. <span data-ttu-id="cbffe-160">Откройте в редакторе кода файл **src/index.tsx** и обновите код инициализации поставщика.</span><span class="sxs-lookup"><span data-stu-id="cbffe-160">In the code editor, open the **src/index.tsx** file, and update the provider initialization code.</span></span>
 
     ```TypeScript
     Providers.globalProvider = new Msal2Provider({
@@ -187,27 +190,27 @@ export default App;
     });
     ```
 
-### <a name="show-users-data-after-signing-in"></a><span data-ttu-id="0ba55-159">Отображение данных пользователя после входа в систему</span><span class="sxs-lookup"><span data-stu-id="0ba55-159">Show user's data after signing in</span></span>
+### <a name="show-users-data-after-signing-in"></a><span data-ttu-id="cbffe-161">Отображение данных пользователя после входа в систему</span><span class="sxs-lookup"><span data-stu-id="cbffe-161">Show user's data after signing in</span></span>
 
-<span data-ttu-id="0ba55-160">Теперь дополните приложение, чтобы оно отображало данные из календаря пользователя.</span><span class="sxs-lookup"><span data-stu-id="0ba55-160">Next, extend the application to show data from the user's calendar.</span></span> <span data-ttu-id="0ba55-161">Доступ к этой информации можно получить только после того, как пользователь вошел в систему.</span><span class="sxs-lookup"><span data-stu-id="0ba55-161">You can access this information only after the user has signed in.</span></span> <span data-ttu-id="0ba55-162">Для этого необходимо отслеживать, находится ли пользователь в системе, и отображать данные календаря только после того, как пользователь вошел в систему с помощью своей учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="0ba55-162">To do this, you will need to track the  user's sign in state and show the calendar data after the user has signed in with their Microsoft account.</span></span>
+<span data-ttu-id="cbffe-162">Теперь дополните приложение, чтобы оно отображало данные из календаря пользователя.</span><span class="sxs-lookup"><span data-stu-id="cbffe-162">Next, extend the application to show data from the user's calendar.</span></span> <span data-ttu-id="cbffe-163">Доступ к этой информации можно получить только после того, как пользователь вошел в систему.</span><span class="sxs-lookup"><span data-stu-id="cbffe-163">You can access this information only after the user has signed in.</span></span> <span data-ttu-id="cbffe-164">Для этого необходимо отслеживать, находится ли пользователь в системе, и отображать данные календаря только после того, как пользователь вошел в систему с помощью своей учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cbffe-164">To do this, you will need to track the  user's sign in state and show the calendar data after the user has signed in with their Microsoft account.</span></span>
 
-#### <a name="track-users-sign-in-state"></a><span data-ttu-id="0ba55-163">Отслеживание состояния входа пользователя в систему</span><span class="sxs-lookup"><span data-stu-id="0ba55-163">Track user's sign in state</span></span>
+#### <a name="track-users-sign-in-state"></a><span data-ttu-id="cbffe-165">Отслеживание состояния входа пользователя в систему</span><span class="sxs-lookup"><span data-stu-id="cbffe-165">Track user's sign in state</span></span>
 
-<span data-ttu-id="0ba55-164">Для отслеживания состояния входа пользователя в приложение будет использоваться обработчики React `useState` и `useEffect` в сочетании с обработчиками событий провайдера.</span><span class="sxs-lookup"><span data-stu-id="0ba55-164">To track the user's sign in state in your application, you will use the React `useState` and `useEffect` hooks in combination with provider event handlers.</span></span>
+<span data-ttu-id="cbffe-166">Для отслеживания состояния входа пользователя в приложение будет использоваться обработчики React `useState` и `useEffect` в сочетании с обработчиками событий провайдера.</span><span class="sxs-lookup"><span data-stu-id="cbffe-166">To track the user's sign in state in your application, you will use the React `useState` and `useEffect` hooks in combination with provider event handlers.</span></span>
 
-1. <span data-ttu-id="0ba55-165">Откройте в редакторе кода файл **src/App.tsx** и дополните существующий оператор React `import`.</span><span class="sxs-lookup"><span data-stu-id="0ba55-165">In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.</span></span>
+1. <span data-ttu-id="cbffe-167">Откройте в редакторе кода файл **src/App.tsx** и дополните существующий оператор React `import`.</span><span class="sxs-lookup"><span data-stu-id="cbffe-167">In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.</span></span>
 
     ```TypeScript
     import React, { useState, useEffect } from 'react';
     ```
 
-1. <span data-ttu-id="0ba55-166">Импортируйте типы `Provider` и `ProviderState` из `mgt-element`, добавив их в операции импорта.</span><span class="sxs-lookup"><span data-stu-id="0ba55-166">Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.</span></span>
+1. <span data-ttu-id="cbffe-168">Импортируйте типы `Provider` и `ProviderState` из `mgt-element`, добавив их в операции импорта.</span><span class="sxs-lookup"><span data-stu-id="cbffe-168">Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.</span></span>
 
     ```TypeScript
     import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
-1. <span data-ttu-id="0ba55-167">Добавьте настраиваемую функцию с именем `useIsSignedIn`, которая позволяет отслеживать состояние входа пользователя в приложение.</span><span class="sxs-lookup"><span data-stu-id="0ba55-167">Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.</span></span>
+1. <span data-ttu-id="cbffe-169">Добавьте настраиваемую функцию с именем `useIsSignedIn`, которая позволяет отслеживать состояние входа пользователя в приложение.</span><span class="sxs-lookup"><span data-stu-id="cbffe-169">Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.</span></span>
 
     ```TypeScript
     function useIsSignedIn(): [boolean] {
@@ -231,27 +234,27 @@ export default App;
     }
     ```
 
-<span data-ttu-id="0ba55-168">Эта функция выполняет два действия.</span><span class="sxs-lookup"><span data-stu-id="0ba55-168">This function does two things.</span></span> <span data-ttu-id="0ba55-169">Во-первых, с помощью обработчика React `useState` она позволяет отслеживать состояние внутри компонента.</span><span class="sxs-lookup"><span data-stu-id="0ba55-169">First, using the React `useState` hook, it enables tracking state inside your component.</span></span> <span data-ttu-id="0ba55-170">При каждом изменении состояния React повторно отображает ваш компонент.</span><span class="sxs-lookup"><span data-stu-id="0ba55-170">Whenever the state changes, React will re-render your component.</span></span> <span data-ttu-id="0ba55-171">Во-вторых, с помощью обработчика React `useEffect` она продлевает жизненный цикл компонента, отслеживая изменения в поставщике Microsoft Graph Toolkit и обновляя компонент при необходимости.</span><span class="sxs-lookup"><span data-stu-id="0ba55-171">Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.</span></span>
+<span data-ttu-id="cbffe-170">Эта функция выполняет два действия.</span><span class="sxs-lookup"><span data-stu-id="cbffe-170">This function does two things.</span></span> <span data-ttu-id="cbffe-171">Во-первых, с помощью обработчика React `useState` она позволяет отслеживать состояние внутри компонента.</span><span class="sxs-lookup"><span data-stu-id="cbffe-171">First, using the React `useState` hook, it enables tracking state inside your component.</span></span> <span data-ttu-id="cbffe-172">При каждом изменении состояния React повторно отображает ваш компонент.</span><span class="sxs-lookup"><span data-stu-id="cbffe-172">Whenever the state changes, React will re-render your component.</span></span> <span data-ttu-id="cbffe-173">Во-вторых, с помощью обработчика React `useEffect` она продлевает жизненный цикл компонента, отслеживая изменения в поставщике Microsoft Graph Toolkit и обновляя компонент при необходимости.</span><span class="sxs-lookup"><span data-stu-id="cbffe-173">Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.</span></span>
 
-#### <a name="load-users-calendar-if-user-is-signed-in"></a><span data-ttu-id="0ba55-172">Загрузка календаря пользователя, вошедшего в систему</span><span class="sxs-lookup"><span data-stu-id="0ba55-172">Load user's calendar if user is signed in</span></span>
+#### <a name="load-users-calendar-if-user-is-signed-in"></a><span data-ttu-id="cbffe-174">Загрузка календаря пользователя, вошедшего в систему</span><span class="sxs-lookup"><span data-stu-id="cbffe-174">Load user's calendar if user is signed in</span></span>
 
-<span data-ttu-id="0ba55-173">Теперь, когда отслеживается состояние входа пользователя в приложение, вы можете отображать календарь пользователя после входа в систему.</span><span class="sxs-lookup"><span data-stu-id="0ba55-173">Now that you track the user's sign in state in your application, you can show their calendar after they signed in.</span></span>
+<span data-ttu-id="cbffe-175">Теперь, когда отслеживается состояние входа пользователя в приложение, вы можете отображать календарь пользователя после входа в систему.</span><span class="sxs-lookup"><span data-stu-id="cbffe-175">Now that you track the user's sign in state in your application, you can show their calendar after they signed in.</span></span>
 
-1. <span data-ttu-id="0ba55-174">В редакторе кода откройте **файл src/App.tsx** и раздвяйте заявление компонента `import` с **компонентом Agenda.**</span><span class="sxs-lookup"><span data-stu-id="0ba55-174">In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.</span></span>
+1. <span data-ttu-id="cbffe-176">В редакторе кода откройте **файл src/App.tsx** и раздвяйте заявление компонента `import` с **компонентом Agenda.**</span><span class="sxs-lookup"><span data-stu-id="cbffe-176">In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.</span></span>
 
     ```TypeScript
     import { Agenda, Login } from '@microsoft/mgt-react';
     ```
 
-1. <span data-ttu-id="0ba55-175">Далее в **функции App** добавьте:</span><span class="sxs-lookup"><span data-stu-id="0ba55-175">Next, inside the **App** function, add:</span></span>
+1. <span data-ttu-id="cbffe-177">Далее в **функции App** добавьте:</span><span class="sxs-lookup"><span data-stu-id="cbffe-177">Next, inside the **App** function, add:</span></span>
 
     ```TypeScript
     const [isSignedIn] = useIsSignedIn();
     ```
 
-    <span data-ttu-id="0ba55-176">Это определяет логическую константу `isSignedIn`, которую можно использовать для определения, выполнил ли пользователь вход в приложение.</span><span class="sxs-lookup"><span data-stu-id="0ba55-176">This defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.</span></span>
+    <span data-ttu-id="cbffe-178">Это определяет логическую константу `isSignedIn`, которую можно использовать для определения, выполнил ли пользователь вход в приложение.</span><span class="sxs-lookup"><span data-stu-id="cbffe-178">This defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.</span></span>
 
-1. <span data-ttu-id="0ba55-177">В содержимое пункта `return` добавьте `div`, а также компонент расписания Microsoft Graph Toolkit.</span><span class="sxs-lookup"><span data-stu-id="0ba55-177">Extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Agenda component.</span></span>
+1. <span data-ttu-id="cbffe-179">В содержимое пункта `return` добавьте `div`, а также компонент расписания Microsoft Graph Toolkit.</span><span class="sxs-lookup"><span data-stu-id="cbffe-179">Extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Agenda component.</span></span>
 
     ```TypeScript
     <div>
@@ -260,7 +263,7 @@ export default App;
     </div>
     ```
 
-<span data-ttu-id="0ba55-178">С этими изменениями файл **src/App.tsx** будет выглядеть следующим образом.</span><span class="sxs-lookup"><span data-stu-id="0ba55-178">With these changes, the **src/App.tsx** file should look like the following.</span></span>
+<span data-ttu-id="cbffe-180">С этими изменениями файл **src/App.tsx** будет выглядеть следующим образом.</span><span class="sxs-lookup"><span data-stu-id="cbffe-180">With these changes, the **src/App.tsx** file should look like the following.</span></span>
 
 ```TypeScript
 import { Providers, ProviderState } from '@microsoft/mgt';
@@ -307,19 +310,19 @@ function App() {
 export default App;
 ```
 
-### <a name="test-showing-users-calendar-after-they-signed-in"></a><span data-ttu-id="0ba55-179">Тестирование отображения календаря пользователя после входа в систему</span><span class="sxs-lookup"><span data-stu-id="0ba55-179">Test showing user's calendar after they signed in</span></span>
+### <a name="test-showing-users-calendar-after-they-signed-in"></a><span data-ttu-id="cbffe-181">Тестирование отображения календаря пользователя после входа в систему</span><span class="sxs-lookup"><span data-stu-id="cbffe-181">Test showing user's calendar after they signed in</span></span>
 
-<span data-ttu-id="0ba55-180">С внесением этих изменений вы должны увидеть свой календарь после входа в приложение с учетной записью Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="0ba55-180">With these changes, after signing in to your application with your Microsoft account, you should see your calendar.</span></span>
+<span data-ttu-id="cbffe-182">С внесением этих изменений вы должны увидеть свой календарь после входа в приложение с учетной записью Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cbffe-182">With these changes, after signing in to your application with your Microsoft account, you should see your calendar.</span></span>
 
-1. <span data-ttu-id="0ba55-181">Чтобы увидеть изменения, закройте браузер, откройте его снова и перейдите на `http://localhost:3000`.</span><span class="sxs-lookup"><span data-stu-id="0ba55-181">To see the changes, close the browser and open it again, and go to `http://localhost:3000`.</span></span> <span data-ttu-id="0ba55-182">Это нужно сделать, потому что вы изменили значение свойства `scopes`, которое влияет на маркер доступа, запрашиваемый из Azure AD.</span><span class="sxs-lookup"><span data-stu-id="0ba55-182">You do this because you changed the value of the `scopes` property, which affects the access token that you request from Azure AD.</span></span>
-1. <span data-ttu-id="0ba55-183">Нажмите кнопку **Войти** и войдите с помощью учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="0ba55-183">Choose the **Sign In** button and sign in using your Microsoft account.</span></span> <span data-ttu-id="0ba55-184">Обратите внимание на новые пункты списка разрешений в запросе на продолжение.</span><span class="sxs-lookup"><span data-stu-id="0ba55-184">Notice the additions to the list of permissions requested in the consent prompt.</span></span> <span data-ttu-id="0ba55-185">Они появились, так как вы включили в свойство `scope` дополнительные разрешения.</span><span class="sxs-lookup"><span data-stu-id="0ba55-185">This is because you included additional permissions in the `scope` property.</span></span>
-1. <span data-ttu-id="0ba55-186">После подтверждения согласия на использование приложения вы должны увидеть информацию о текущем пользователе и его календаре.</span><span class="sxs-lookup"><span data-stu-id="0ba55-186">After consenting to the use of the application, you should see information about the current user and their calendar.</span></span>
+1. <span data-ttu-id="cbffe-183">Чтобы увидеть изменения, закройте браузер, откройте его снова и перейдите на `http://localhost:3000`.</span><span class="sxs-lookup"><span data-stu-id="cbffe-183">To see the changes, close the browser and open it again, and go to `http://localhost:3000`.</span></span> <span data-ttu-id="cbffe-184">Это нужно сделать, потому что вы изменили значение свойства `scopes`, которое влияет на маркер доступа, запрашиваемый из Azure AD.</span><span class="sxs-lookup"><span data-stu-id="cbffe-184">You do this because you changed the value of the `scopes` property, which affects the access token that you request from Azure AD.</span></span>
+1. <span data-ttu-id="cbffe-185">Нажмите кнопку **Войти** и войдите с помощью учетной записи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cbffe-185">Choose the **Sign In** button and sign in using your Microsoft account.</span></span> <span data-ttu-id="cbffe-186">Обратите внимание на новые пункты списка разрешений в запросе на продолжение.</span><span class="sxs-lookup"><span data-stu-id="cbffe-186">Notice the additions to the list of permissions requested in the consent prompt.</span></span> <span data-ttu-id="cbffe-187">Они появились, так как вы включили в свойство `scope` дополнительные разрешения.</span><span class="sxs-lookup"><span data-stu-id="cbffe-187">This is because you included additional permissions in the `scope` property.</span></span>
+1. <span data-ttu-id="cbffe-188">После подтверждения согласия на использование приложения вы должны увидеть информацию о текущем пользователе и его календаре.</span><span class="sxs-lookup"><span data-stu-id="cbffe-188">After consenting to the use of the application, you should see information about the current user and their calendar.</span></span>
 
 ![Готовое приложение](../images/mgt-finished-app.png)
 
-## <a name="next-steps"></a><span data-ttu-id="0ba55-188">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="0ba55-188">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="cbffe-190">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="cbffe-190">Next steps</span></span>
 
-- <span data-ttu-id="0ba55-189">Узнать, [что включает Microsoft Graph Toolkit](../overview.md).</span><span class="sxs-lookup"><span data-stu-id="0ba55-189">See [what's in the Microsoft Graph Toolkit](../overview.md).</span></span>
-- <span data-ttu-id="0ba55-190">Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).</span><span class="sxs-lookup"><span data-stu-id="0ba55-190">Try out the components in the [playground](https://mgt.dev).</span></span>
-- <span data-ttu-id="0ba55-191">Задавайте вопросы на сайте [Stack Overflow](https://aka.ms/mgt-question).</span><span class="sxs-lookup"><span data-stu-id="0ba55-191">Ask a question on [Stack Overflow](https://aka.ms/mgt-question).</span></span>
-- <span data-ttu-id="0ba55-192">Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).</span><span class="sxs-lookup"><span data-stu-id="0ba55-192">Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).</span></span>
+- <span data-ttu-id="cbffe-191">Узнать, [что включает Microsoft Graph Toolkit](../overview.md).</span><span class="sxs-lookup"><span data-stu-id="cbffe-191">See [what's in the Microsoft Graph Toolkit](../overview.md).</span></span>
+- <span data-ttu-id="cbffe-192">Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).</span><span class="sxs-lookup"><span data-stu-id="cbffe-192">Try out the components in the [playground](https://mgt.dev).</span></span>
+- <span data-ttu-id="cbffe-193">Задавайте вопросы на сайте [Stack Overflow](https://aka.ms/mgt-question).</span><span class="sxs-lookup"><span data-stu-id="cbffe-193">Ask a question on [Stack Overflow](https://aka.ms/mgt-question).</span></span>
+- <span data-ttu-id="cbffe-194">Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).</span><span class="sxs-lookup"><span data-stu-id="cbffe-194">Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).</span></span>
