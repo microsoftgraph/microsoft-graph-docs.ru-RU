@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4d04333818fa57664664675feb4683465c4b63c6
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 44f07661309da100ef65cf691ccfe30261467d52
+ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941562"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53025021"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Получение уведомлений об изменениях команд и каналов с помощью Microsoft Graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "52941562"
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Team.ReadBasic.All, TeamSettings.Read.All   | бета|
+|Приложение | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All   | бета|
 
 ### <a name="example"></a>Пример
 
@@ -49,15 +49,17 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-a-particular-team"></a>Подписка на изменения в определенной команде
 
 
-Чтобы получать уведомления обо всех изменениях, связанных с определенной командой в клиенте, подпишитесь на `/teams/{id}`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+Чтобы получать уведомления обо всех изменениях, связанных с определенной командой в клиенте, подпишитесь на `/teams/{team-id}`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
 
 ### <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All | Бета |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Team.ReadBasic.All, TeamSettings.Read.All    | бета |
+|Приложение | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All    | Бета |
+
+>**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Пример
 
@@ -68,7 +70,7 @@ Content-Type: application/json
 {
   "changeType": "deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}",
+  "resource": "/teams/{team-id}",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -90,7 +92,7 @@ Content-Type: application/json
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Channel.ReadBasic.All, ChannelSettings.Read.All | бета |
+|Приложение | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | бета |
 
 ### <a name="example"></a>Пример
 
@@ -113,15 +115,17 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>Подписка на изменения в любом канале определенной команды
 
 
-Чтобы получать уведомления обо всех изменениях, связанных с любым каналом в определенной команде, подпишитесь на `/teams/{id}/channels`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+Чтобы получать уведомления обо всех изменениях, связанных с любым каналом в определенной команде, подпишитесь на `/teams/{team-id}/channels`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
 
 ### <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | Бета |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | Channel.ReadBasic.All, ChannelSettings.Read.All   | бета |
+|Для приложений | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All   | Бета |
+
+>**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Пример
 
@@ -132,7 +136,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels",
+  "resource": "/teams/{team-id}/channels",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",

@@ -5,12 +5,12 @@ author: anandab
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8f9d0a654f3105c7d365bc92f774ab66be34f35d
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 4e8d403354c16f7f11fd4c7dcf6b756f83242cda
+ms.sourcegitcommit: 39a8c6eccc07ead237dac17387cd269733a86abd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971466"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53025028"
 ---
 # <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>Получение уведомлений об изменениях участников Teams с помощью Microsoft Graph
 
@@ -18,15 +18,17 @@ ms.locfileid: "52971466"
 
 ## <a name="subscribe-to-changes-in-membership-of-a-particular-team"></a>Подписка на изменения участников определенной команды
 
-Чтобы получать уведомления об изменениях участников определенной команды, подпишитесь на `/teams/{id}/members`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+Чтобы получать уведомления об изменениях участников определенной команды, подпишитесь на `/teams/{team-id}/members`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
 
 #### <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamMember.Read.All | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись) | TeamMember.Read.All, TeamMember.ReadWrite.All | Бета |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
-|Приложение | TeamMember.Read.All   | бета |
+|Приложение | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | Бета |
+
+>**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 #### <a name="example"></a>Пример
 
@@ -37,7 +39,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/members",
+  "resource": "/teams/{team-id}/members",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
