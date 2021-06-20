@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f5ac0ec806cc926c8acc978aed7067bdb0e4fc78
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 00330f087e61a2c10bdfe602571680be532d08c3
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680194"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030805"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -129,6 +129,7 @@ ms.locfileid: "52680194"
 |hideFromAddressLists |Логический |Значение true указывает, что группа не отображается в определенных частях пользовательского интерфейса Outlook: в **адресной книге**, в списках адресов для выбора получателей сообщений и в диалоговом окне **Обзор групп** для поиска групп. В противном случае используется значение false. Значение по умолчанию — `false`. <br><br>Возвращается только с помощью оператора `$select`. Поддерживается только для API получения группы (`GET /groups/{ID}`).|
 |hideFromOutlookClients |Логический |Значение true указывает, что группа не отображается в клиентах Outlook, например Outlook для Windows и Outlook в Интернете. В противном случае используется значение false. Значение по умолчанию — `false`. <br><br>Возвращается только с помощью оператора `$select`. Поддерживается только для API получения группы (`GET /groups/{ID}`).|
 |id|String|Уникальный идентификатор группы. <br><br>Возвращается по умолчанию. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
+|isAssignableToRole|Логическое|Указывает, можно ли эту группу назначить роли Azure Active Directory.<br><br>Это свойство можно настроить только при создании группы, и оно является неизменяемым. Только глобальный администратор и администратор привилегированных ролей может настроить это свойство. Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Возвращается по умолчанию.|
 |isSubscribedByMail|Логический|Указывает, подписан ли вошедший пользователь на получение бесед по электронной почте. Значение по умолчанию — `true`. <br><br>Возвращается только с помощью оператора `$select`. Поддерживается только для API получения группы (`GET /groups/{ID}`). |
 |licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Значение по умолчанию — `false`. Только для чтения. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`.<br><br>Возвращается только с помощью оператора `$select`. Только для чтения.|
 |mail|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter`.|
@@ -208,6 +209,7 @@ ms.locfileid: "52680194"
     "events",
     "extensions",
     "groupLifecyclePolicies",
+    "isAssignableToRole",
     "memberOf",
     "members",
     "onenote",
@@ -340,6 +342,7 @@ ms.locfileid: "52680194"
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "isAssignableRole": false,
   "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,

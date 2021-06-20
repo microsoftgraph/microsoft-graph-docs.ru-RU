@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3c2f0163a6b37a556fc6db45e2daf75a8a4052a3
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 3e58f8f9bbd87d73c4072936ce69089268fd9ca6
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941527"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030889"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -55,6 +55,7 @@ POST /groups
 |:---------------|:--------|:----------|
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательно. |
 | description | строка | Описание группы. Максимальная длина: 1024 символа. Необязательно. |
+| isAssignableToRole | Логическое | Значение **true**, чтобы группу можно было назначить роли Azure AD. Только администратор привилегированных ролей и глобальный администратор может настроить значение этого свойства. Необязательно. |
 | mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
 | mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. Обязательный. |
 | securityEnabled | boolean | Значение **true** для групп безопасности, включая группы Microsoft 365. Обязательный. |
@@ -276,6 +277,86 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a>Пример 3. Создание группы, которую можно назначить роли Azure AD
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_role_enabled_group"
+}-->
+``` http
+POST https://graph.microsoft.com/v1.0/groups
+Content-Type: application/json
+
+{
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "visibility" : "Private"
+}
+```
+
+> **Примечание.** Свойства **visibility** и **groupTypes** необязательны для создания, но заполняются автоматически этими значениями. Группа, свойству **isAssignableToRole** которой присвоено значение `true`, не может относиться к типу с динамическим членством и иметь владельца. Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. Он содержит только свойства по умолчанию.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_role_enabled_group"
+} -->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+  "id": "502df398-d59c-469d-944f-34a50e60db3f",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-27T22:17:07Z",
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "expirationDateTime": null,
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mail": "operations2019@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "SMTP:operations2019@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-27T22:17:07Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": true,
+  "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+  "theme": null,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": []
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -286,5 +367,5 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+} -->
 

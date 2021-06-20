@@ -1,0 +1,74 @@
+---
+title: 'accessReviewInstance: applyDecisions'
+description: Применение решений для accessReviewInstance.
+author: isabelleatmsft
+localization_priority: Normal
+ms.prod: governance
+doc_type: apiPageType
+ms.openlocfilehash: 93cc4d2e4f5c42ebe47bed00caf227779b579df2
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030333"
+---
+# <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
+Пространство имен: microsoft.graph
+
+Применение решений о проверке к ресурсу, рассмотренном в [accessReviewInstance.](../resources/accessreviewinstance.md)
+
+Решения применяются автоматически, если **параметр autoApplyDecisionsEnabled** параметра [параметров accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) является  `true` .
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|AccessReview.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/applyDecisions
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "accessreviewinstance_applydecisions"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/e6cafba0-cbf0-4748-8868-0810c7f4cc06/instances/1234fba0-cbf0-5678-8868-0810c7f49101/applyDecisions
+```
+
+
+### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

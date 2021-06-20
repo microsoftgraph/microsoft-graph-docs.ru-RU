@@ -1,0 +1,246 @@
+---
+title: Список accessReviewScheduleDefinitions
+description: Получите список объектов accessReviewScheduleDefinition и их свойств.
+author: isabelleatmsft
+localization_priority: Normal
+ms.prod: governance
+doc_type: apiPageType
+ms.openlocfilehash: dd60a89a7aeb43c4817fa9b67bcf3886425f166a
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53031268"
+---
+# <a name="list-accessreviewscheduledefinitions"></a>Список accessReviewScheduleDefinitions
+Пространство имен: microsoft.graph
+
+Получите список объектов [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) и их свойств.
+
+>[!NOTE]
+>Размер страницы по умолчанию для этого API — 100 объектов accessReviewScheduleDefinition. Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
+
+ В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. См. роль [обзора доступа и проверки авторизации разрешений приложений.](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)
+
+## <a name="http-request"></a>HTTP-запрос
+
+Чтобы перечислить все ваши accessReviewScheduleDefinitions:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /identityGovernance/accessReviews/definitions
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает `$select` параметры `$top` запроса , `$skip` , , и `$orderBy` `$filter` OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+### <a name="use-the-filter-query-parameter"></a>Использование параметра $filter запроса
+Параметр `$filter` запроса с `contains` оператором  поддерживается в свойстве области accessReviewScheduleDefinition. Используйте следующий формат для запроса:
+
+```http
+GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
+```
+
+Значение может `{object}` быть одним из следующих:
+
+|Значение|Описание|
+|:---     |:---       |
+|`/groups`  |Список всех accessReviewScheduleDefinition в отдельных группах (исключает определения, Microsoft 365 группы с гостевых пользователей).|
+|`/groups/{group id}`  |Список всех accessReviewScheduleDefinition в определенной группе (исключает определения, Microsoft 365 группы с гостевых пользователей).|
+|`./members`  |Список всех accessReviewScheduleDefinition, Microsoft 365 групп с гостевых пользователей.|
+|`accessPackageAssignments`  |Список всех accessReviewScheduleDefinition в пакете доступа.|
+|`roleAssignmentScheduleInstances`  |Список всех accessReviewScheduleDefinition для глав служб, присвоенных привилегированной роли.|
+
+Параметр `$filter` запроса не поддерживается в **accessReviewInactiveUserQueryScope** или **principalResourceMembershipScope.**
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в тексте ответа.
+
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>Пример 1. Список первой сотни определений обзоров доступа
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "list_accessReviewScheduleDefinition"
+}-->
+```
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions?$top=100&$skip=0
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
+  "isCollection": "true"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
+            "displayName": "Access Review",
+            "scope": {
+                "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
+                "queryType": "MicrosoftGraph"
+            },
+            "instanceEnumerationScope": {
+                "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b",
+                "queryType": "MicrosoftGraph"
+            },
+            "reviewers": [
+                {
+                    "query": "./manager",
+                    "queryType": "MicrosoftGraph",
+                    "queryRoot": "decisions"
+                }
+            ],
+            "settings": {
+                "mailNotificationsEnabled": true,
+                "reminderNotificationsEnabled": true,
+                "justificationRequiredOnApproval": true,
+                "defaultDecisionEnabled": false,
+                "defaultDecision": "None",
+                "instanceDurationInDays": 0,
+                "autoApplyDecisionsEnabled": false,
+                "recommendationsEnabled": true,
+                "recurrence": {
+                    "pattern": {
+                        "type": "weekly",
+                        "interval": 1,
+                        "month": 0,
+                        "dayOfMonth": 0,
+                        "daysOfWeek": [],
+                        "firstDayOfWeek": "sunday",
+                        "index": "first"
+                    },
+                    "range": {
+                        "type": "numbered",
+                        "numberOfOccurrences": 0,
+                        "recurrenceTimeZone": null,
+                        "startDate": "2020-09-11",
+                        "endDate": "9999-12-31"
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Пример 2. Извлечение всех определений обзоров доступа для всех Microsoft 365 групп клиента
+
+#### <a name="request"></a>Запрос
+В следующем примере показан запрос на извлечение всей серии обзоров доступа для всех Microsoft 365 групп клиента.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_accessReviewScheduleDefinition_allgroups"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition",
+  "isCollection": "true"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "cc701697-762c-439a-81f5-f58d680fde76",
+            "displayName": "Review guest access across Microsoft 365 groups",
+            "status": "InProgress",
+            "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+                "queryType": "MicrosoftGraph"
+            },
+            "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+                "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true",
+                "queryType": "MicrosoftGraph"
+            },
+            "reviewers": [
+                {
+                    "query": "./manager",
+                    "queryType": "MicrosoftGraph",
+                    "queryRoot": "decisions"
+                }
+            ],
+            "settings": {
+                "mailNotificationsEnabled": true,
+                "reminderNotificationsEnabled": true,
+                "justificationRequiredOnApproval": true,
+                "defaultDecisionEnabled": true,
+                "defaultDecision": "Recommendation",
+                "instanceDurationInDays": 25,
+                "autoApplyDecisionsEnabled": true,
+                "recommendationsEnabled": true,
+                "recurrence": {
+                    "pattern": {
+                        "type": "absoluteMonthly",
+                        "interval": 3,
+                        "month": 0,
+                        "dayOfMonth": 0,
+                        "daysOfWeek": [],
+                        "firstDayOfWeek": "sunday",
+                        "index": "first"
+                    },
+                    "range": {
+                        "type": "numbered",
+                        "numberOfOccurrences": 0,
+                        "recurrenceTimeZone": null,
+                        "startDate": "2021-04-27",
+                        "endDate": "9999-12-31"
+                    }
+                },
+                "applyActions": [
+                    {
+                        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+                    }
+                ]
+            },
+            "instances@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
+            "instances": []
+        }
+    ]
+}
+
+```

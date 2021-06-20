@@ -5,12 +5,12 @@ localization_priority: Priority
 author: eketo-msft
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 4a61c570974edcfc1431af211e131c24cfec6589
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 9caae60a2eb82acd82101f3ee9c723b8c0545e39
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911650"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030959"
 ---
 # <a name="passwordprofile-resource-type"></a>Тип ресурса passwordProfile
 
@@ -22,7 +22,7 @@ ms.locfileid: "52911650"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|forceChangePasswordNextSignIn|Boolean| Значение `true` указывает, что пользователь должен изменить свой пароль при следующем входе. В противном случае используется значение `false`. |
+|forceChangePasswordNextSignIn|Boolean| Значение `true` указывает, что пользователь должен изменить свой пароль при следующем входе. В противном случае используется значение `false`. Если значение не задано, по умолчанию используется `false`. **ПРИМЕЧАНИЕ.** Для клиентов Azure B2C присвойте значение `false` и вместо этого используйте настраиваемые политики и пользовательские потоки для принудительного сброса пароля при первом входе. См. раздел [Принудительный сброс пароля при первом входе](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon).|
 |forceChangePasswordNextSignInWithMfa|Boolean| Если присвоено значение `true`, при следующем входе пользователю необходимо выполнить многофакторную проверку подлинности (MFA) перед принудительной сменой пароля. Эта совпадает с действием свойства **forceChangePasswordNextSignIn**, с той разницей, что перед изменением пароля пользователю нужно выполнить многофакторную проверку подлинности. После изменения пароля это свойство автоматически сбрасывается до значения `false`. Если значение не задано, по умолчанию используется `false`. |
 |password|Строка|Пароль пользователя. Это свойство обязательно указывать при создании пользователя. Его можно обновить, но пользователю потребуется изменить пароль при следующем входе. Пароль должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies** пользователя. По умолчанию требуется надежный пароль.|
 
