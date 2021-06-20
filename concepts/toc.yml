@@ -485,8 +485,15 @@ items:
             href: traverse-the-graph.md
           - name: Разбиение на страницы
             href: paging.md
-          - name: Использование параметров запроса
-            href: query-parameters.md
+          - name: Параметры запроса
+            displayName: OData query parameters
+            items:
+              - name: Использование параметров запроса
+                href: query-parameters.md
+              - name: Использование параметра поискового запроса
+                href: search-query-parameter.md
+              - name: Расширенные возможности запросов
+                href: aad-advanced-queries.md
           - name: Пакетная обработка
             displayName: Batch requests
             href: json-batching.md
