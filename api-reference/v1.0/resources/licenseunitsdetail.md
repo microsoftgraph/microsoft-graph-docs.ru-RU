@@ -2,28 +2,28 @@
 title: Тип ресурса licenseUnitsDetail
 description: Свойство **prepaidUnits** объекта subscribedSku относится к типу **licenseUnitsDetail**.
 localization_priority: Normal
-author: jpettere
+author: 'michaelcurnutt '
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a34b093954915fa49ed7d907e367c7e53133c14f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 523a8c65d7588a1626d085efde1beea99bdf9643
+ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722225"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53030945"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
 
 Пространство имен: microsoft.graph
 
-Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**.
+Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**. Дополнительные сведения о состояниях прогрессии подписки см. в журнале [What if my subscription expires?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:-------------|:-----|:----------|
-|enabled|Int32| Количество включенных единиц. |
-|suspended|Int32| Количество приостановленных единиц. |
-|warning|Int32| Количество единиц, которые находятся в состоянии предупреждения. |
+|enabled|Int32| Количество единиц, включенных для активной подписки службы SKU.  |
+|suspended|Int32| Количество единиц, которые приостановлены из-за отмены подписки на службу SKU. Эти блоки не могут быть назначены, но могут быть повторно активированы перед удалением. |
+|warning|Int32| Количество единиц, которые находятся в состоянии предупреждения. По истечении срока действия подписки на службу SKU у клиента есть льготный период для продления подписки до ее отмены (перенесенной в **приостановленное** состояние).  |
 
 ## <a name="json-representation"></a>Представление JSON
 
