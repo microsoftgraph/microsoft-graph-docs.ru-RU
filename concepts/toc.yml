@@ -428,8 +428,13 @@ items:
             href: teams-licenses.md
           - name: Отправка упреждающих сообщений с помощью бота
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Отправка уведомлений веб-канала активности
+          - name: Уведомления ленты новостей
             href: teams-send-activityfeednotifications.md
+            items:
+              - name: Отправка уведомлений ленты новостей
+                href: teams-send-activityfeednotifications.md
+              - name: Рекомендации
+                href: activity-feed-notifications-best-practices.md
       - name: Задачи To-Do
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -701,6 +706,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: Компоненты создания шаблонов
                 href: toolkit/customize-components/templates.md
+              - name: Обработка событий
+                href: toolkit/customize-components/events.md
               - name: Кэширование вызовов Microsoft Graph в компонентах
                 href: toolkit/customize-components/cache.md
               - name: Компоненты локализации
