@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 86671d0fce531445ac32a370d2e69ba813cc4e22
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 46d9877b8a17056aee84f1216c4f38227bdc097c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546828"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082199"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy: назначение
 
@@ -54,12 +54,9 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 В теле запроса поставляем представление JSON объекта [cloudPcProvisioningPolicyAssignment.](../resources/cloudpcprovisioningpolicyassignment.md)
 
-В следующей таблице показаны свойства, необходимые при создании [cloudPcProvisioningPolicyAssignment.](../resources/cloudpcprovisioningpolicyassignment.md)
-
-|Свойство|Тип|Описание|
+|Параметр|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID назначения политики обеспечения. Если целью является группа пользователей, то ID отображается как {policyId}_{groupId}. |
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|Цель назначения для политики обеспечения. В настоящее время единственной поддерживаемой целевой группой является группа пользователей.|
+|assignments|[коллекция cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) | Коллекция ресурсов политики обеспечения безопасности облачных КОМПЬЮТЕРов, которые будут назначены соответствующей целевой группе. В Microsoft 365 поддерживаются только группы и группы безопасности в Azure AD. |
 
 ## <a name="response"></a>Отклик
 
@@ -108,7 +105,6 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

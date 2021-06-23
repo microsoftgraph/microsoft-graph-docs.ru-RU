@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 8497dbb3b3d9a3173cdbf8ee8ec6bfe74859868b
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 23f26927935af3f3123e4f812853475cb8a0a9dc
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780703"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082043"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -137,6 +137,8 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 | --- | --- |
 | `expanded` | Пользователь открыл расширенный раздел сведений карты. |
 
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
 Компонент `mgt-person-card` определяет следующие настраиваемые свойства CSS. 
@@ -163,7 +165,7 @@ mgt-person {
 
 Этот элемент управления Person-Card использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API | Section |
+| Настройка | Разрешение | API | Section |
 | --- | ---------- | ------- | --------- |
 | `personDetails` установить с `id` пользователем, но без электронной почты, или `userId` установить, или `personQuery` установить `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | По умолчанию |
 | `personQuery` значение, отличаее от `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | По умолчанию |

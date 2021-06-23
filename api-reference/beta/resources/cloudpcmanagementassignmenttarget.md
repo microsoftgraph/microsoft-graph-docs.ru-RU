@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Клаудпкманажементассигнменттаржет
-description: Целевой объект назначения Клаудпкманажемент. Базовый тип.
+title: тип ресурса cloudPcManagementAssignmentTarget
+description: цель назначения cloudPcManagement. Базовый тип.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 9312293426789302de6c0e57792bc86fadff77f0
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: eab9b1041a78ac5b497174febe33d0db3d5ac566
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563847"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082267"
 ---
-# <a name="cloudpcmanagementassignmenttarget-resource-type"></a>Тип ресурса Клаудпкманажементассигнменттаржет
+# <a name="cloudpcmanagementassignmenttarget-resource-type"></a>тип ресурса cloudPcManagementAssignmentTarget
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,10 @@ ms.locfileid: "49563847"
 
 Базовый тип для объектов назначения.
 
-Ресурс [клаудпкманажементграупассигнменттаржет](cloudpcmanagementgroupassignmenttarget.md) . который представляет целевую группу назначения, наследуется от базового типа **клаудпкманажементассигнменттаржет**.
+Ресурс [cloudPcManagementGroupAssignmentTarget,](cloudpcmanagementgroupassignmenttarget.md) который представляет целевую группу назначения, наследует этот базовый тип.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
 ## <a name="properties"></a>Свойства
 
 Неприменимо.

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 94115e97c597bc34f03d843b8098f707ed39cd51
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: cbb542420228a4a383dea4e165323fbb6e8abb17
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761809"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082358"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>тип ресурса conditionalAccessDevices
 
@@ -24,12 +24,13 @@ ms.locfileid: "50761809"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeDevices | Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. |
-| excludeDevices | Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
-| includeDeviceStates (deprecated)| Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. |
-| excludeDeviceStates (deprecated)| Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeDevices | Коллекция объектов string | Состояния в области политики. `All` является единственным допустимым значением. Невозможно установить, если *установлено устройствоFIlter.* |
+| excludeDevices | Коллекция объектов string | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . Невозможно установить, если **установлено устройствоFIlter.** |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Фильтр, определяющий правило динамического устройства и синтаксиса, чтобы включить или исключить устройства. Фильтр может использовать свойства устройств (например, атрибуты расширения), чтобы включить или исключить их. Невозможно установить, **если задают includeDevices** или **excludeDevices.** |
+| includeDeviceStates (deprecated)| Коллекция объектов string | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeDeviceStates (deprecated)| Коллекция объектов string | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -41,7 +42,8 @@ ms.locfileid: "50761809"
   "blockType": "resource",
   "optionalProperties": [
     "includeDevices",
-    "excludeDevices"
+    "excludeDevices",
+    "deviceFilter"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -50,7 +52,8 @@ ms.locfileid: "50761809"
 ```json
 {
   "includeDevices": [ "String" ],
-  "excludeDevices": [ "String" ]
+  "excludeDevices": [ "String" ],
+  "deviceFilter": {"@odata.type": "microsoft.graph.conditionalAccessFilter"}
 }
 ```
 

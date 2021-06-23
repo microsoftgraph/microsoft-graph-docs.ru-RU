@@ -3,12 +3,12 @@ title: Компонент списка файлов в microsoft Graph набо�
 description: Компонент списка файлов используется для отображения списка файлов, показывая их значок и имя
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: cfd4543cad98864a423699e4ed6cde7dc82ee6fb
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 89f60020fb1db75ed4e79a7402b0aa0518146130
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781095"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082176"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Компонент списка файлов в microsoft Graph набор средств
 
@@ -114,7 +114,7 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Страница "Разрешения API и приложений Microsoft Graph"
 
-| Конфигурация | Permissions | API |
+| Настройка | Разрешения | API |
 | ------------- | ----------------- | --- |
 | По умолчанию (не предоставлены идентификаторы или запросы) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children` |
 | Предоставление `{drive-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
@@ -138,7 +138,9 @@ mgt-file-list {
 
 | Событие | Описание |
 | ----- | ----------- |
-| itemClick | Уволили, когда пользователь щелкнуть файл. Возвращает сведения о файле. |
+| `itemClick` | Уволили, когда пользователь щелкнуть файл. Возвращает сведения о файле. |
+
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
 ## <a name="templates"></a>Шаблоны
 

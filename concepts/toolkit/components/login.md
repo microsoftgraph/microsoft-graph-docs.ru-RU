@@ -3,12 +3,12 @@ title: Компонент входа в Microsoft Graph Toolkit
 description: Компонент входа — это кнопка и всплывающий элемент управления, предназначенные для упрощения проверки подлинности платформы удостоверений Майкрософт.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ea7df01c77900eecc415b3670db0ea2736447d8c
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 1042201492720dce92016a13bd7bbd8477ce2d2c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781081"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082155"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Компонент входа в Microsoft Graph Toolkit
 
@@ -83,6 +83,8 @@ mgt-login {
 | `logoutInitiated` | Пользователь начал выход из системы — можно отменить. |
 | `logoutCompleted` | Пользователь выполнил вход. |
 
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+
 ## <a name="templates"></a>Шаблоны
 
 Компонент `mgt-login` поддерживает несколько [шаблонов](../customize-components/templates.md), позволяющих заменить определенные части компонента. Чтобы указать шаблон, добавьте элемент `<template>` в компонент и присвойте параметру `data-type` одно из значений, указанных в следующей таблице. 
@@ -98,7 +100,7 @@ mgt-login {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API
+| Настройка | Разрешение | API
 | - | - | - |
 | default | User.Read | [/users/me/](/graph/api/user-get) |
 

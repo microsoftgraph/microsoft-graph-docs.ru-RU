@@ -3,12 +3,12 @@ title: Компонент Get в Microsoft Graph Toolkit
 description: С помощью компонента Get можно создавать любые GET-запросы из Microsoft Graph непосредственно в HTML-коде.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 55fc5da7697523fbb08c69a2a995170be5b35a21
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: fefbbf9eb944494923a25f5d2a9699b03e5c9919
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781088"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082316"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Компонент Get в Microsoft Graph Toolkit
 
@@ -40,15 +40,18 @@ ms.locfileid: "52781088"
 | Н/Д |error| Нередактируемая ошибка в Microsoft Graph, если запрос завершился неудачей. |
 
 ## <a name="methods"></a>Методы
+
 | Метод | Описание |
 | --- | --- |
 | refresh(force?:boolean) | Вызов метода для обновления данных. По умолчанию в пользовательском интерфейсе будет обновляться только в том случае, если данные изменяются. Передайте `true` для принудительного обновления компонента.  |
 
-
 ## <a name="events"></a>События
+
 | Событие | Сведения | Описание |
 | --- | --- | --- |
-| dataChange | Сведения содержат объекты `response` и `error`. | Возникает при изменении ответа или ошибки. |
+| `dataChange` | Сведения содержат объекты `response` и `error`. | Возникает при изменении ответа или ошибки. |
+
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
 ## <a name="templates"></a>Шаблоны
 

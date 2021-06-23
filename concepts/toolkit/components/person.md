@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3020c652fa08c78fecd53469af0e21622f9afcff
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 7f35b5c1a3ef764995d319e9e603489b50a1fe2c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780997"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082050"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -118,9 +118,11 @@ mgt-person {
 
 | Событие | Сведения | Описание |
 | --- | --- | --- |
-| line1clicked | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 1. |
-| line2clicked | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки2. |
-| line3clicked | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 3. |
+| `line1clicked` | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 1. |
+| `line2clicked` | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки2. |
+| `line3clicked` | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 3. |
+
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
 ## <a name="templates"></a>Шаблоны
 
@@ -209,7 +211,7 @@ MgtPerson.config.useContactApis = false;
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API |
+| Настройка | Разрешение | API |
 | ------------- | ---------- | --- |
 | `personDetails` установить без изображения, `fetchImage` установить , установить , `true` извлекаемого `avatarType` человека является контакт и `photo` `useContactApis` установить `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `personDetails` установить без изображения, установить , установить и лицо не является `fetchImage` `true` `avatarType` `photo` контактом или `useContactApis` установлено, чтобы `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |

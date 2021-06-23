@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Клаудпкпровисионингполици
-description: Представляет политику подготовки облачных ПК.
+title: тип ресурса cloudPcProvisioningPolicy
+description: Представляет политику продюсинга облачных компьютеров.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 58fa7ff74086d39d124f3d4701f5951636fd8eda
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: b1f5a447c373e64b747fc77ec93c54d8adc09c60
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563760"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082078"
 ---
-# <a name="cloudpcprovisioningpolicy-resource-type"></a>Тип ресурса Клаудпкпровисионингполици
+# <a name="cloudpcprovisioningpolicy-resource-type"></a>тип ресурса cloudPcProvisioningPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику подготовки облачных ПК.
+Представляет политику продюсинга облачных компьютеров.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,30 +26,30 @@ ms.locfileid: "49563760"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список ПровисионингполиЦиес](../api/virtualendpoint-list-provisioningpolicies.md)|Коллекция [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md)|Список свойств и связей объектов [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) .|
-|[Получение Клаудпкпровисионингполици](../api/cloudpcprovisioningpolicy-get.md)|[клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md)|Чтение свойств и связей объекта [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) .|
-|[Создание Клаудпкпровисионингполици](../api/virtualendpoint-post-provisioningpolicies.md)|[клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md)|Создание нового объекта [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) .|
-|[Обновление Клаудпкпровисионингполици](../api/cloudpcprovisioningpolicy-update.md)|[клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md)|Обновление свойств объекта [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) .|
-|[Удаление Клаудпкпровисионингполици](../api/cloudpcprovisioningpolicy-delete.md)|Нет|Удаление объекта [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) .|
-|[Назначение Клаудпкпровисионингполици](../api/cloudpcprovisioningpolicy-assign.md)|Нет |Назначьте [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) группам пользователей.|
+|[Список provisioningPolicies](../api/virtualendpoint-list-provisioningpolicies.md)|[коллекция cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Список свойств и связей объектов [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
+|[Get cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-get.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Ознакомьтесь с свойствами и отношениями объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
+|[Создание cloudPcProvisioningPolicy](../api/virtualendpoint-post-provisioningpolicies.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Создайте новый [объект cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
+|[Обновление cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-update.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Обновление свойств объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
+|[Удаление cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-delete.md)|Нет|Удаление [объекта cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
+|[Назначение cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-assign.md)|Нет |Назначение [cloudPcProvisioningPolicy группам](../resources/cloudpcprovisioningpolicy.md) пользователей.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для политики подготовки облачных ПК. Только для чтения.|
-|displayName|String|Отображаемое имя политики подготовки.|
-|description|String|Описание политики подготовки.|
-|онпремисесконнектионид|String|Идентификатор Клаудпконпремисесконнектион. Чтобы обеспечить сетевое подключение к облачным компьютерам и присоединение к домену, выберите подключение с виртуальной сетью, проверенной службой Cloud PC.|
-|имажеид|String|Идентификатор образа ОС, который вы хотите подготовить к работе на облачных компьютерах. Формат изображения для типа галереи: {publisher_offer_sku}.|
-|имажедисплайнаме|String|Отображаемое имя для образа ОС, который вы собираетесь заготовить.|
-|имажетипе|клаудпкпровисионингполициимажетипе|Тип образа ОС (настраиваемого или галереи), который необходимо подготовить к работе на облачных компьютерах. Возможные значения: `gallery`, `custom`.|
+|id|String|Уникальный идентификатор политики обеспечения облачного компьютера. Только для чтения.|
+|displayName|String|Имя отображения политики обеспечения.|
+|description|String|Описание политики обеспечения.|
+|onPremisesConnectionId|String|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенное службой облачных ПК.|
+|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}.|
+|imageDisplayName|String|Имя отображения образа ОС, которое вы закаповыватель.|
+|imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
 
 ## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [клаудпкпровисионингполициассигнмент](../resources/cloudpcprovisioningpolicyassignment.md)|Определенная коллекция назначений политик подготовки. Возвращается только на `$expand`. В этом [примере](../api/cloudpcprovisioningpolicy-get.md) показано, как получить отношение назначений. |
+|assignments|[коллекция cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md)|Определенный набор назначений политики обеспечения. Представляет набор групп Microsoft 365 и групп безопасности в Azure AD, которые имеют назначенную политику обеспечения. Возвращается только с помощью оператора `$expand`. Пример [получения](../api/cloudpcprovisioningpolicy-get.md) отношений назначений. |
 
 ## <a name="json-representation"></a>Представление JSON
 

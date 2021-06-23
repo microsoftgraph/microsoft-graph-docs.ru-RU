@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 987ecf4ee31b2ade7baf08246542b13d14a3a6da
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 66da3f668cc25807ece4a63e51dabe3f5436cf7d
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993694"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082092"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting: назначение
 
@@ -54,11 +54,9 @@ POST /deviceManagement/virtualEndpoint/userSettings/{id}/assign
 
 В корпусе запроса поставляем представление JSON объекта [cloudPcUserSettingAssignment.](../resources/cloudpcusersettingassignment.md)
 
-В следующей таблице показаны свойства, необходимые при создании [cloudPcUserSettingAssignment.](../resources/cloudpcusersettingassignment.md)
-
-|Свойство|Тип|Описание|
+|Параметр|Тип|Описание|
 |:---|:---|:---|
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|Цель назначения для политики обеспечения. В настоящее время единственной поддерживаемой целевой группой является группа пользователей.|
+|assignments|[коллекция cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) | Коллекция пользовательских облачных КОМПЬЮТЕРов, устанавливая ресурсы, которые должны быть назначены соответствующей целевой группе. В Microsoft 365 поддерживаются только группы и группы безопасности в Azure AD. |
 
 ## <a name="response"></a>Отклик
 

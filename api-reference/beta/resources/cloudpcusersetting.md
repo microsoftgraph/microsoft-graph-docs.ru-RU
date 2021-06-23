@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 324d2ba65c82b44595fff366c5d6eb25005c20ef
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 534e2b14e7df4f8b571e14e1238ad6ed03d96a67
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993744"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082169"
 ---
 # <a name="cloudpcusersetting-resource-type"></a>тип ресурса cloudPcUserSetting
 
@@ -30,22 +30,22 @@ ms.locfileid: "52993744"
 |[Создание cloudPcUserSetting](../api/virtualendpoint-post-usersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|Создание нового [объекта cloudPcUserSetting.](../resources/cloudpcusersetting.md)|
 |[Обновление cloudPcUserSetting](../api/cloudpcusersetting-update.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|Обновление свойств объекта [cloudPcUserSetting.](../resources/cloudpcusersetting.md)|
 |[Удаление cloudPcUserSetting](../api/cloudpcusersetting-delete.md)|Нет|Удаляет объект [cloudPcUserSetting.](../resources/cloudpcusersetting.md)|
-|[назначение](../api/cloudpcusersetting-assign.md)|Нет|Назначение [cloudPcUserSetting группам](../resources/cloudpcusersetting.md) пользователей.|
+|[Assign](../api/cloudpcusersetting-assign.md)|Нет|Назначение [cloudPcUserSetting группам](../resources/cloudpcusersetting.md) пользователей.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для параметров пользователя облачного КОМПЬЮТЕРА. Только для чтения.|
 |displayName|String|Имя параметра, отображаемая в пользовательском интерфейсе. |
-|localAdminEnabled|Логический|Указывает, включен ли локальный параметр администрирования. Значение по умолчанию — `false`. Чтобы включить локальный параметр администрирования, измените параметр на `true` . |
-|selfServiceEnabled|Логический|Указывает, включен ли параметр самообслуживки. Значение по умолчанию — `false`. Чтобы включить параметр самообслуживки, измените параметр на `true` . |
+|localAdminEnabled|Логический|Указывает, включен ли локальный параметр администрирования. Значение по умолчанию — `false`. Чтобы включить локальный параметр администрирования, измените параметр на `true` . Если включен локальный параметр администрирования, конечный пользователь может быть администратором устройства облачного ПК. |
+|selfServiceEnabled|Логический|Указывает, включен ли параметр самообслуживки. Значение по умолчанию — `false`. Чтобы включить параметр самообслуживки, измените параметр на `true` .Если включена опция самообслуживки, конечному пользователю разрешено выполнять некоторые операции самообслуживки, например обновление облачного компьютера через портал конечных пользователей.|
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 |createdDateTime|DateTimeOffset|Дата и время создания параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|[коллекция cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md)|Office 365 группы безопасности в Azure AD могут иметь набор параметров пользователя.|
+|assignments|[коллекция cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md)|Представляет набор групп Microsoft 365 и групп безопасности в Azure AD, которые назначены cloudPCUserSetting. Возвращается только с помощью оператора `$expand`. Например, см. [статью Get cloudPcUserSettingample](../api/cloudpcusersetting-get.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

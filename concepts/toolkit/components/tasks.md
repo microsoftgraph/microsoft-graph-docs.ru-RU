@@ -3,12 +3,12 @@ title: Компонент задач в microsoft Graph набор средст�
 description: Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Он работает с любыми задачами в Microsoft Planner.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 65fc01d5b2cc5db6f6236bb64b7372522c4d61be
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 3b3476751798dd5569218ec6acc6d09a91112fe6
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780990"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082036"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Компонент задач в microsoft Graph набор средств
 
@@ -119,12 +119,15 @@ mgt-tasks {
 ````
 
 ## <a name="events"></a>События
+
 | Событие | Сведения | Описание |
 | --- | --- | --- |
-| taskAdded | Сведения содержат соответствующий объект `task` | Возникает при создании задачи. |
-| taskChanged | Сведения содержат соответствующий объект `task` | Возникает при изменении метаданных задачи, например при пометке задачи как завершенной. |
-| taskClick | Сведения содержат соответствующий объект `task` | Возникает, когда пользователь щелкает или нажимает задачу. |
-| taskRemoved | Сведения содержат соответствующий объект `task` | Возникает, если удалена существующая задача. |
+| `taskAdded` | Сведения содержат соответствующий объект `task` | Возникает при создании задачи. |
+| `taskChanged` | Сведения содержат соответствующий объект `task` | Возникает при изменении метаданных задачи, например при пометке задачи как завершенной. |
+| `taskClick` | Сведения содержат соответствующий объект `task` | Возникает, когда пользователь щелкает или нажимает задачу. |
+| `taskRemoved` | Сведения содержат соответствующий объект `task` | Возникает, если удалена существующая задача. |
+
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
 ## <a name="templates"></a>Шаблоны
 
@@ -154,7 +157,7 @@ mgt-tasks {
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API |
+| Настройка | Разрешение | API |
 | ------------- | ---------- | --- |
 | `groupId` набор `dataSource` и заме- `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
 | `targetId` набор `dataSource` и заме- `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |

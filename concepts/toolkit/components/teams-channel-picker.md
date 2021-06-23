@@ -3,12 +3,12 @@ title: Компонент выбора каналов Microsoft Teams в Microso
 description: Вы можете использовать компонент mgt-teams-channel-picker, чтобы в Microsoft Graph искать каналы и команды, связанные с пользователем.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: aaa89b9fab5d9e29c35b7d2cabb0a494ca97d4b3
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: ad196cc17b70f42cd571bf5805e2aa4eb2cfe90e
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579944"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082029"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 
@@ -77,9 +77,12 @@ mgt-teams-channel-picker {
 ```
 
 ## <a name="events"></a>События
+
 | Событие | Сведения | Описание |
 | --- | --- | --- |
-| selectionChanged | Сведения содержат выбранный в настоящее время элемент `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Возникает, когда пользователь изменяет выбор канала. |
+| `selectionChanged` | Сведения содержат выбранный в настоящее время элемент `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Возникает, когда пользователь изменяет выбор канала. |
+
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
 ## <a name="templates"></a>Шаблоны
 

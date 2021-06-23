@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Клаудпкпровисионингполициассигнмент
-description: Назначения политик подготовки Клаудпк
+title: тип ресурса cloudPcProvisioningPolicyAssignment
+description: Назначения политики подготовка CloudPC
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 06a90efc67b483fed569a4e7029a74dac4f7f9ee
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: a96c3717b97b3f721c77b1150841f1eb51ded89f
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563718"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082246"
 ---
-# <a name="cloudpcprovisioningpolicyassignment-resource-type"></a>Тип ресурса Клаудпкпровисионингполициассигнмент
+# <a name="cloudpcprovisioningpolicyassignment-resource-type"></a>тип ресурса cloudPcProvisioningPolicyAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет определенную коллекцию назначений политик подготовки.
+Представляет определенный набор назначений политики обеспечения.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,8 +26,8 @@ ms.locfileid: "49563718"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор назначения политики подготовки. Только для чтения. Если `target` это группа пользователей, идентификатор отображается как {полициид} _ {groupId}.|
-|target|[клаудпкманажементассигнменттаржет](../resources/cloudpcmanagementassignmenttarget.md)|Цель назначения для политики подготовки. В настоящее время для этой политики поддерживается только одна цель — группа пользователей.|
+|id|String|Уникальный идентификатор для назначения политики обеспечения. Только для чтения. Если это группа пользователей, то ID отображается как `target` {policyId} \_ {groupId}.|
+|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|Цель назначения для политики обеспечения. В настоящее время единственной целью, поддерживаемой для этой политики, является группа пользователей. Подробные сведения см. [в материале cloudPcManagementGroupAssignmentTarget.](cloudpcmanagementgroupassignmenttarget.md) |
 
 ## <a name="relationships"></a>Связи
 

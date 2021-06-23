@@ -5,16 +5,39 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a26fba741bfe080ac5779c7c39c49b47a9427211
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 445569bf34eb2d826660fdd1b88143b04213836e
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060506"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082281"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="filtermode-values"></a>значения filterMode
+
+|Member|
+|:---|
+|включить|
+|исключение|
+
+### <a name="lifecycleeventtype-values"></a>значения lifecycleEventType
+
+|Member|
+|:---|
+|пропущено|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### <a name="changetype-values"></a>значения changeType
+
+|Member|
+|:---|
+|создано|
+|обновлено|
+|deleted|
 
 ### <a name="countrylookupmethodtype-values"></a>значения countryLookupMethodType
 
@@ -72,11 +95,11 @@ ms.locfileid: "53060506"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
 |Справка|
 |В двоичном формате|
-|Boolean|
+|Логический|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -92,7 +115,7 @@ ms.locfileid: "53060506"
 
 |Member|
 |:---|
-|Нет.|
+|Нет|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -1707,7 +1730,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение |
 | :----- | :---- |
-| Нет.   | 0     |
+| Нет   | 0     |
 | Добавление    | 1     |
 | Update | 2     |
 | Delete | 4      |
@@ -1934,7 +1957,7 @@ Enum для серьезности оповещений.
 
 |Элемент|Значение|
 |:---|:---|
-|Нет.|0|
+|Нет|0|
 |High (Высокий)|1|
 |Низкие|2|
 
@@ -2268,3 +2291,4 @@ Enum для серьезности оповещений.
 |Элемент| Значение | Описание               |
 |:---|:---- | :------------------------ |
 |стандартный| 0     |Тип по умолчанию для тега. Теги стандарта типа могут управляться в команде участниками, у которых есть разрешения.|
+

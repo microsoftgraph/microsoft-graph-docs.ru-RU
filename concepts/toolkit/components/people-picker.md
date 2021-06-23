@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 36a8208b2425bc74922427f7ffcb4c6ec3a10788
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: f8899a4bfdf86d07bb5efa19c269b0907ceae319
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780745"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082330"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -81,6 +81,8 @@ ms.locfileid: "52780745"
 | --- | --- |
 | `selectionChanged` | Пользователь добавил или удалил человека из списка выбранных людей.|
 
+Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
+
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
 Компонент `mgt-people-picker` определяет следующие настраиваемые свойства CSS.
@@ -137,7 +139,7 @@ mgt-people-picker {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API
+| Настройка | Разрешение | API
 | --- | ---------- | ------- |
 | `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `type` установлено `Person` или `any` | People.Read | [/me/people](/graph/api/user-list-people) |
