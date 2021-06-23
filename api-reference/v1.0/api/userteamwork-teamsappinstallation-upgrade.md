@@ -1,62 +1,62 @@
 ---
-title: 'teamsAppInstallation: обновление'
+title: 'teamsAppInstallation в личной области: обновление'
 description: Обновление установки приложения в личной области пользователя
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1d209f807b977300876000d66f211cb3ed0236f9
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 7dc29124b00f4c72ff00c00a72069b39c5a65e2a
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696151"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060538"
 ---
-# <a name="teamsappinstallation-upgrade"></a><span data-ttu-id="90704-103">teamsAppInstallation: обновление</span><span class="sxs-lookup"><span data-stu-id="90704-103">teamsAppInstallation: upgrade</span></span>
+# <a name="teamsappinstallation-in-personal-scope-upgrade"></a><span data-ttu-id="77096-103">teamsAppInstallation в личной области: обновление</span><span class="sxs-lookup"><span data-stu-id="77096-103">teamsAppInstallation in personal scope: upgrade</span></span>
 
-<span data-ttu-id="90704-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="90704-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="77096-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="77096-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="90704-105">Обновление [установки приложения](../resources/teamsappinstallation.md) в личном поле [](../resources/user.md) указанного пользователя до последней версии приложения.</span><span class="sxs-lookup"><span data-stu-id="90704-105">Upgrade an [app installation](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md) to the latest version of the app.</span></span>
+<span data-ttu-id="77096-105">Обновление [установки приложения](../resources/teamsappinstallation.md) в личном поле [](../resources/user.md) указанного пользователя до последней версии приложения.</span><span class="sxs-lookup"><span data-stu-id="77096-105">Upgrade an [app installation](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md) to the latest version of the app.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="90704-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="90704-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="77096-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="77096-106">Permissions</span></span>
 
-<span data-ttu-id="90704-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="90704-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="77096-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="77096-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="90704-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="90704-109">Permission type</span></span>      | <span data-ttu-id="90704-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="90704-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="77096-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="77096-109">Permission type</span></span>      | <span data-ttu-id="77096-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="77096-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="90704-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="90704-111">Delegated (work or school account)</span></span> | <span data-ttu-id="90704-112">TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span><span class="sxs-lookup"><span data-stu-id="90704-112">TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
-|<span data-ttu-id="90704-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="90704-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="90704-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="90704-114">Not supported.</span></span>    |
-|<span data-ttu-id="90704-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="90704-115">Application</span></span> | <span data-ttu-id="90704-116">TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span><span class="sxs-lookup"><span data-stu-id="90704-116">TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
+|<span data-ttu-id="77096-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="77096-111">Delegated (work or school account)</span></span> | <span data-ttu-id="77096-112">TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span><span class="sxs-lookup"><span data-stu-id="77096-112">TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
+|<span data-ttu-id="77096-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="77096-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77096-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="77096-114">Not supported.</span></span>    |
+|<span data-ttu-id="77096-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="77096-115">Application</span></span> | <span data-ttu-id="77096-116">TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span><span class="sxs-lookup"><span data-stu-id="77096-116">TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="90704-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="90704-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="77096-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="77096-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/upgrade
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="90704-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="90704-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="77096-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="77096-118">Request headers</span></span>
 
-| <span data-ttu-id="90704-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="90704-119">Header</span></span>       | <span data-ttu-id="90704-120">Значение</span><span class="sxs-lookup"><span data-stu-id="90704-120">Value</span></span> |
+| <span data-ttu-id="77096-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="77096-119">Header</span></span>       | <span data-ttu-id="77096-120">Значение</span><span class="sxs-lookup"><span data-stu-id="77096-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="90704-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="90704-121">Authorization</span></span>  | <span data-ttu-id="90704-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="90704-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="77096-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="77096-121">Authorization</span></span>  | <span data-ttu-id="77096-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="77096-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="90704-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="90704-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="77096-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="77096-124">Request body</span></span>
 
-<span data-ttu-id="90704-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="90704-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="77096-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="77096-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="90704-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="90704-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="77096-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="77096-126">Response</span></span>
 
-<span data-ttu-id="90704-p103">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="90704-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="77096-p103">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="77096-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="90704-129">Пример</span><span class="sxs-lookup"><span data-stu-id="90704-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="77096-129">Пример</span><span class="sxs-lookup"><span data-stu-id="77096-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="90704-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="90704-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="77096-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="77096-130">Request</span></span>
 
-<span data-ttu-id="90704-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="90704-131">The following is an example of the request.</span></span>
+<span data-ttu-id="77096-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="77096-131">The following is an example of the request.</span></span>
 
 
 
-# <a name="http"></a>[<span data-ttu-id="90704-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="90704-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="77096-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="77096-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_upgrade_teamsApp"
@@ -65,28 +65,28 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installa
 ```http
 POST /users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk/upgrade
 ```
-# <a name="c"></a>[<span data-ttu-id="90704-133">C#</span><span class="sxs-lookup"><span data-stu-id="90704-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="77096-133">C#</span><span class="sxs-lookup"><span data-stu-id="77096-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-upgrade-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="90704-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="90704-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="77096-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="77096-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-upgrade-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="90704-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="90704-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="77096-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="77096-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-upgrade-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="90704-136">Java</span><span class="sxs-lookup"><span data-stu-id="90704-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="77096-136">Java</span><span class="sxs-lookup"><span data-stu-id="77096-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-upgrade-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="90704-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="90704-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="77096-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="77096-137">Response</span></span>
 
-<span data-ttu-id="90704-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="90704-138">The following is an example of the response.</span></span>
+<span data-ttu-id="77096-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="77096-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
