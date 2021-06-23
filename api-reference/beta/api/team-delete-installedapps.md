@@ -1,16 +1,16 @@
 ---
 title: Удаление приложения из группы
-description: При этом приложение будет выгрузлено из указанной команды.
-author: clearab
+description: Uninstalls an app from the specified team.
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a03b60bf665ed4111b50392500bfe70049aadfe4
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7828241bdcf74aae2f2267cd1c3d0b6ece826ecc
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690708"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059447"
 ---
 # <a name="remove-app-from-team"></a>Удаление приложения из группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "49690708"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-При этом приложение будет выгрузлено из указанной [команды.](../resources/team.md) [](../resources/teamsappinstallation.md)
+Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team.](../resources/team.md)
 
 ## <a name="permissions"></a>Разрешения
 

@@ -1,16 +1,16 @@
 ---
 title: Список приложений в команде
 description: Извлечение списка приложений, установленных в указанной группе.
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 09f278087073b70fc66fb052c8178f1fbbc37807
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2ca5f691395e38665f57713de0af632b21049f1d
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962793"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060465"
 ---
 # <a name="list-apps-in-team"></a>Список приложений в команде
 
@@ -28,7 +28,7 @@ ms.locfileid: "50962793"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -229,7 +229,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. В примере манифест приложения Teams `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` .
+Ниже приведен пример запроса. В примере, манифест ID приложения Teams `cf1ba4c7-f94e-4d80-ba90-5594b641a8ee` является .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

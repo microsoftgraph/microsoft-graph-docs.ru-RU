@@ -1,16 +1,16 @@
 ---
 title: Установка приложения для пользователя
 description: Установка приложения в личной области указанного пользователя.
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9a39bc198e742f2b5b1b15cbdbf02a96a980c708
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: f8a5be32ba86bddf4c535bdb3fb0e9b8dba5bb37
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696284"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059425"
 ---
 # <a name="install-app-for-user"></a>Установка приложения для пользователя
 
@@ -48,7 +48,7 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|teamsApp|String|ID приложения для добавления.|
+|teamsApp|Строка|ID приложения для добавления.|
 
 ## <a name="response"></a>Отклик
 

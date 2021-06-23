@@ -1,16 +1,16 @@
 ---
 title: Добавление приложения в команду
 description: Устанавливает приложение в указанную команду.
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 93610704438fef36cabaa4d14e33e05a69a183bc
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 1c48946e507e6bc25c8dc0516b21d8abd653a20f
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690435"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060435"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
@@ -18,7 +18,7 @@ ms.locfileid: "49690435"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Установите приложение [для](../resources/teamsapp.md) указанной [команды.](../resources/team.md)
+Установите приложение [в](../resources/teamsapp.md) указанную [команду.](../resources/team.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ POST /teams/{team-id}/installedApps
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|teamsApp|String|ИД добавляемого приложения.|
+|teamsApp|Строка|ID приложения для добавления.|
 
 ## <a name="response"></a>Отклик
 

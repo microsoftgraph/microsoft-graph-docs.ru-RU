@@ -1,16 +1,16 @@
 ---
 title: Добавление участника в канал
 description: Добавление участника в канал.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a5c0e929e68aef53a2e42270078fd5a388488643
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d4276eea6e094f43b10a1c392b57ac14cd310cc1
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948392"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059931"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
@@ -28,7 +28,7 @@ ms.locfileid: "50948392"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application| ChannelMember.ReadWrite.All |
+|Приложение| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто.|
-|пользователь|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
+|пользователь;|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
 
 ## <a name="response"></a>Отклик
 

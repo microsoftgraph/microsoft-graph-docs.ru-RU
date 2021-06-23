@@ -1,16 +1,16 @@
 ---
 title: Удаление приложения для пользователя
 description: Удаление приложения из личной области указанного пользователя.
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 535bb735d8ff94bf560ddae8468da5b0b05a0581
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: e280a43ce4a79705fbb6c5816bdd8417ef05cbce
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696326"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059359"
 ---
 # <a name="uninstall-app-for-user"></a>Удаление приложения для пользователя
 

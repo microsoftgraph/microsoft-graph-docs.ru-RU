@@ -1,16 +1,16 @@
 ---
 title: Обновление conversationMember
 description: Обнови роль conversationMember в команде или канале.
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0127d88adb5abaadc3698d4b1d237433e7ed9088
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 01f477c74e46876eae38c8d8d622a1a179671a5d
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047030"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059906"
 ---
 # <a name="update-conversationmember"></a>Обновление conversationMember
 

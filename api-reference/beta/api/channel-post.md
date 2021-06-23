@@ -2,15 +2,15 @@
 title: Создание канала
 description: Создание нового канала в команде, как указано в теле запроса.
 localization_priority: Normal
-author: laujan
+author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6c9f10269f9e1181ebadc03fb6b9463598b9815
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: cca7ba2cfd6f69c6bbfda080c94c31013018657e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201129"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059928"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -26,9 +26,9 @@ ms.locfileid: "51201129"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -186,7 +186,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -239,7 +239,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
+Ниже приводится пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
 После предварительного использования этот канал можно использовать для [импорта сообщений.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 <!-- {
   "blockType": "response",

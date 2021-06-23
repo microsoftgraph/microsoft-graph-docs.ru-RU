@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bbc014075f1dc72970ef64add9555d6067cbe0f0
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: a2d29f6e1f3aa848b60351ed4972ab5b4f06cfd2
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870026"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059987"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Список accessReviewScheduleDefinition
 
@@ -28,8 +28,8 @@ ms.locfileid: "52870026"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
  В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. См. роль [обзора доступа и проверки авторизации разрешений приложений.](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)
@@ -69,7 +69,7 @@ GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microso
 ## <a name="request-headers"></a>Заголовки запросов
 Нет.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса.
 
 ## <a name="response"></a>Отклик
@@ -127,10 +127,12 @@ Content-type: application/json
             "id": "98dcebed-c7f6-46f4-bcf3-4a3fccdb3e2a",
             "displayName": "Access Review",
             "scope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
                 "queryType": "MicrosoftGraph"
             },
             "instanceEnumerationScope": {
+                "@odata.type": "#microsoft.graph.accessReviewQueryScope",
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b",
                 "queryType": "MicrosoftGraph"
             },

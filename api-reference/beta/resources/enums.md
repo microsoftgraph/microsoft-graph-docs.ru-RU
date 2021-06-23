@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d2a4b3885d00da58144d73655ae8e705608bb139
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: a26fba741bfe080ac5779c7c39c49b47a9427211
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912035"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060506"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -72,9 +72,9 @@ ms.locfileid: "52912035"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |В двоичном формате|
 |Boolean|
 |DateTime|
@@ -92,7 +92,7 @@ ms.locfileid: "52912035"
 
 |Member|
 |:---|
-|Нет|
+|Нет.|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -727,7 +727,7 @@ ms.locfileid: "52912035"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -810,7 +810,7 @@ ms.locfileid: "52912035"
 |Member|
 |:---|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalItem|
 |site|
@@ -1230,7 +1230,7 @@ ms.locfileid: "52912035"
 |NotStarted
 |Работает
 |Завершено
-|Ошибка
+|Не выполнено
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения onenotePatchActionType
@@ -1336,7 +1336,7 @@ ms.locfileid: "52912035"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1707,7 +1707,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение |
 | :----- | :---- |
-| Нет   | 0     |
+| Нет.   | 0     |
 | Добавление    | 1     |
 | Update | 2     |
 | Delete | 4      |
@@ -1716,7 +1716,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|message|
+|сообщение|
 
 ### <a name="chatmessageimportance-values"></a>значения chatMessageImportance
 
@@ -1792,7 +1792,7 @@ Enum для серьезности оповещений.
 | Member       |
 |:--------------|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -1934,7 +1934,7 @@ Enum для серьезности оповещений.
 
 |Элемент|Значение|
 |:---|:---|
-|Нет|0|
+|Нет.|0|
 |High (Высокий)|1|
 |Низкие|2|
 
@@ -1942,7 +1942,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2072,7 +2072,7 @@ Enum для серьезности оповещений.
 |геолокация | столбец геолокации. |
 |term | столбец управляемых метаданных. |
 |многоступенчатый | столбец управляемых метаданных, который принимает несколько значений. |
-|thumbnail | Столбец изображения. |
+|эскиз | Столбец изображения. |
 |approvalStatus | Столбец утверждения состояния контента. |
 |unknownFutureValue | unknownFuturevalue |
 
@@ -2213,7 +2213,7 @@ Enum для серьезности оповещений.
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|команда      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 
@@ -2262,3 +2262,9 @@ Enum для серьезности оповещений.
 |:---|
 |основной|
 |unknownFutureValue|
+
+### <a name="teamworktagtype-values"></a>значения teamworkTagType
+
+|Элемент| Значение | Описание               |
+|:---|:---- | :------------------------ |
+|стандартный| 0     |Тип по умолчанию для тега. Теги стандарта типа могут управляться в команде участниками, у которых есть разрешения.|

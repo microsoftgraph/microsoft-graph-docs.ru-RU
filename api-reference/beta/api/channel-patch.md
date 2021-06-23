@@ -1,16 +1,16 @@
 ---
 title: 'Ветвь обновлений '
 description: Обновление свойств указанного канала.
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8527ae77c6198aea615aff8add5a569dc563bafa
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 33088ea188b1ac1efa1247770b3e0a044c13764e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786217"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059936"
 ---
 # <a name="update-channel"></a>Ветвь обновлений 
 

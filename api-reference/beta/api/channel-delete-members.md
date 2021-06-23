@@ -1,16 +1,16 @@
 ---
 title: Удаление участника из канала
-description: Удаление участника из канала.
-author: laujan
+description: Удалите участника из канала.
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 524b5261f3acfb2c2ff08c87a6b6991868b34a16
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 5602b45557fa8da4a237cb113b2cb72690e31e19
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563305"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059970"
 ---
 # <a name="remove-member-from-channel"></a>Удаление участника из канала
 
@@ -18,7 +18,7 @@ ms.locfileid: "49563305"
  
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [конверсатионмембер](../resources/conversationmember.md) из [канала](../resources/channel.md). Эта операция разрешена только для каналов со значением **мембершиптипе** `private` .
+Удаление [conversationMember из](../resources/conversationmember.md) [канала](../resources/channel.md). Эта операция разрешена только для каналов со значением **membershipType** `private` .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -27,8 +27,8 @@ ms.locfileid: "49563305"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированное (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -99,7 +99,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>См. также
 
-- [Удаление участника из группы](team-delete-members.md)
+- [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

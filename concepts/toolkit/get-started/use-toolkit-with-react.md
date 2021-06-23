@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 54bdde286933610feb637026be5a7385ab848c48
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 6618599b767f5c7ebe3d0469aed012c81125738e
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030952"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060497"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Использование Microsoft Graph Toolkit с React
 
@@ -19,7 +19,7 @@ Microsoft Graph Toolkit — это набор веб-компонентов, к�
 В этой статье описывается пошаговый процесс использования Microsoft Graph Toolkit для создания приложения React и подключения его к Microsoft 365. После выполнения всех шагов у вас получится приложение React, которое показывает предстоящие встречи пользователя, вошедшего в систему в Microsoft 365.
 
 > [!TIP]
-> Вы также можете следовать этому учебнику в качестве интерактивного тура кода. Сведения об этом см. в [GitHub репо с проектом starter.](https://github.com/microsoftgraph/mgt-react-codetour)
+> Вы также можете следовать этому учебнику в качестве интерактивного тура кода. Подробные сведения см. [в GitHub репо в стартовом проекте.](https://github.com/microsoftgraph/mgt-react-codetour)
 
 ## <a name="prerequisites"></a>Предварительные условия
 
