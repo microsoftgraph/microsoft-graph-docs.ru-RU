@@ -1,63 +1,63 @@
 ---
 title: Удаление приложения из группы
-description: При этом приложение будет выгрузлено из указанной команды.
-author: clearab
+description: Uninstalls an app from the specified team.
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a03b60bf665ed4111b50392500bfe70049aadfe4
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 7828241bdcf74aae2f2267cd1c3d0b6ece826ecc
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690708"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059447"
 ---
-# <a name="remove-app-from-team"></a><span data-ttu-id="b6ae6-103">Удаление приложения из группы</span><span class="sxs-lookup"><span data-stu-id="b6ae6-103">Remove app from team</span></span>
+# <a name="remove-app-from-team"></a><span data-ttu-id="3e10b-103">Удаление приложения из группы</span><span class="sxs-lookup"><span data-stu-id="3e10b-103">Remove app from team</span></span>
 
-<span data-ttu-id="b6ae6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b6ae6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3e10b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e10b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b6ae6-105">При этом приложение будет выгрузлено из указанной [команды.](../resources/team.md) [](../resources/teamsappinstallation.md)</span><span class="sxs-lookup"><span data-stu-id="b6ae6-105">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="3e10b-105">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team.](../resources/team.md)</span><span class="sxs-lookup"><span data-stu-id="3e10b-105">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b6ae6-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b6ae6-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3e10b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3e10b-106">Permissions</span></span>
 
-<span data-ttu-id="b6ae6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b6ae6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3e10b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3e10b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b6ae6-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b6ae6-109">Permission type</span></span>      | <span data-ttu-id="b6ae6-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b6ae6-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3e10b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3e10b-109">Permission type</span></span>      | <span data-ttu-id="3e10b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3e10b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b6ae6-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b6ae6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b6ae6-112">TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6ae6-112">TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="b6ae6-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b6ae6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6ae6-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6ae6-114">Not supported.</span></span>    |
-|<span data-ttu-id="b6ae6-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="b6ae6-115">Application</span></span> | <span data-ttu-id="b6ae6-116">TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6ae6-116">TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="3e10b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3e10b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3e10b-112">TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3e10b-112">TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="3e10b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3e10b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3e10b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3e10b-114">Not supported.</span></span>    |
+|<span data-ttu-id="3e10b-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="3e10b-115">Application</span></span> | <span data-ttu-id="3e10b-116">TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3e10b-116">TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b6ae6-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b6ae6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3e10b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3e10b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{team-id}/installedApps/{app-installation-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b6ae6-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b6ae6-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3e10b-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3e10b-118">Request headers</span></span>
 
-| <span data-ttu-id="b6ae6-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b6ae6-119">Header</span></span>       | <span data-ttu-id="b6ae6-120">Значение</span><span class="sxs-lookup"><span data-stu-id="b6ae6-120">Value</span></span> |
+| <span data-ttu-id="3e10b-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="3e10b-119">Header</span></span>       | <span data-ttu-id="3e10b-120">Значение</span><span class="sxs-lookup"><span data-stu-id="3e10b-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b6ae6-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b6ae6-121">Authorization</span></span>  | <span data-ttu-id="b6ae6-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b6ae6-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3e10b-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3e10b-121">Authorization</span></span>  | <span data-ttu-id="3e10b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3e10b-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="b6ae6-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b6ae6-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3e10b-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3e10b-124">Request body</span></span>
 
-<span data-ttu-id="b6ae6-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b6ae6-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3e10b-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3e10b-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b6ae6-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6ae6-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3e10b-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="3e10b-126">Response</span></span>
 
-<span data-ttu-id="b6ae6-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="b6ae6-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3e10b-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="3e10b-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b6ae6-129">Пример</span><span class="sxs-lookup"><span data-stu-id="b6ae6-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3e10b-129">Пример</span><span class="sxs-lookup"><span data-stu-id="3e10b-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b6ae6-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="b6ae6-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3e10b-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="3e10b-130">Request</span></span>
 
-<span data-ttu-id="b6ae6-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b6ae6-131">The following is an example of the request.</span></span>
+<span data-ttu-id="3e10b-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3e10b-131">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b6ae6-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="b6ae6-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3e10b-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="3e10b-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "uninstall_teamsapp_in_team"
@@ -65,28 +65,28 @@ DELETE /teams/{team-id}/installedApps/{app-installation-id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps/NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=
 ```
-# <a name="c"></a>[<span data-ttu-id="b6ae6-133">C#</span><span class="sxs-lookup"><span data-stu-id="b6ae6-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3e10b-133">C#</span><span class="sxs-lookup"><span data-stu-id="3e10b-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/uninstall-teamsapp-in-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b6ae6-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b6ae6-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3e10b-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3e10b-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/uninstall-teamsapp-in-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b6ae6-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b6ae6-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3e10b-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3e10b-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/uninstall-teamsapp-in-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b6ae6-136">Java</span><span class="sxs-lookup"><span data-stu-id="b6ae6-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3e10b-136">Java</span><span class="sxs-lookup"><span data-stu-id="3e10b-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/uninstall-teamsapp-in-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b6ae6-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6ae6-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3e10b-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="3e10b-137">Response</span></span>
 
-<span data-ttu-id="b6ae6-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="b6ae6-138">The following is an example of the response.</span></span>
+<span data-ttu-id="3e10b-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="3e10b-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
