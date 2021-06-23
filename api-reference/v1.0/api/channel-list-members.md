@@ -1,16 +1,16 @@
 ---
 title: Список участников канала
 description: Список участников канала.
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ae11bde06a7c543aa7094e7395e8a03b6777cee1
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: dd59e40abbd24a80af11fa4bcde48ecbbe3def98
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690608"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060019"
 ---
 # <a name="list-members-of-a-channel"></a>Список участников канала
 
@@ -21,7 +21,7 @@ ms.locfileid: "49690608"
 > [!NOTE]
 > Идентификаторы членства, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
 >
-> В дальнейшем результаты членства могут сопоставляться с пользователями различных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
+> В дальнейшем результаты участия могут сопоставляться с пользователями из разных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
 ## <a name="permissions"></a>Разрешения
 

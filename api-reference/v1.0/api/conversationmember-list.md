@@ -1,16 +1,16 @@
 ---
 title: Список объектов conversationMember
 description: Получение списка участников чата или канала.
-author: clearab
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 678dca77b21375d4c28dd1f7768f9fec67da849b
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 859eadec943eb9eeb4ea70643ce60e61e007da0c
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941461"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060601"
 ---
 # <a name="list-conversationmembers"></a>Список объектов conversationMember
 
@@ -50,7 +50,7 @@ GET /chats/{id}/members
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

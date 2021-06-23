@@ -1,18 +1,18 @@
 ---
-title: 'teamsAppInstallation: обновление'
+title: 'teamsAppInstallation в личной области: обновление'
 description: Обновление установки приложения в личной области пользователя
-author: clearab
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1d209f807b977300876000d66f211cb3ed0236f9
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 7dc29124b00f4c72ff00c00a72069b39c5a65e2a
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696151"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060538"
 ---
-# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: обновление
+# <a name="teamsappinstallation-in-personal-scope-upgrade"></a>teamsAppInstallation в личной области: обновление
 
 Пространство имен: microsoft.graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "52696151"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

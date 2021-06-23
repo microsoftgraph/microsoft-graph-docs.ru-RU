@@ -1,16 +1,16 @@
 ---
 title: Обновление conversationMember
 description: Обнови роль conversationMember в команде или канале.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 974ae555623975c3a6a58aa9f75a5db8702d4f0d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 094027c7c62e6077c3eced8e713cfe16e84c3444
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048780"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060589"
 ---
 # <a name="update-conversationmember"></a>Обновление conversationMember
 
@@ -26,7 +26,7 @@ ms.locfileid: "52048780"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All |
+|Приложение| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->

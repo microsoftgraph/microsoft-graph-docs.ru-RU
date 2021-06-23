@@ -1,16 +1,16 @@
 ---
 title: Добавление conversationMember
 description: Добавление conversationMember в канал.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1441ee9698720cc5d5041e7fd3df7c661574077f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ad99b8906a5ad71b7fa77b1d19bf32e5b01757a0
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053246"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060616"
 ---
 # <a name="add-conversationmember"></a>Добавление conversationMember
 
@@ -47,7 +47,7 @@ POST /teams/{id}/channels/{id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роли этого пользователя.|
-|user|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
+|пользователь;|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
 
 ## <a name="response"></a>Отклик
 

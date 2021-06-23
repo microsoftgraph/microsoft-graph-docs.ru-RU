@@ -1,22 +1,22 @@
 ---
 title: Удаление участника из канала
-description: Удаление участника из канала.
-author: laujan
+description: Удалите участника из канала.
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cf365822b97857eb236e19a783e32cc55c249ac2
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: ae46702936fb82ac00c0744927c1d5b0b2ccc6dd
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521175"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060029"
 ---
 # <a name="remove-member-from-channel"></a>Удаление участника из канала
 
 Пространство имен: microsoft.graph
  
-Удаление [конверсатионмембер](../resources/conversationmember.md) из [канала](../resources/channel.md). Эта операция разрешена только для каналов со значением **мембершиптипе** `private` .
+Удаление [conversationMember из](../resources/conversationmember.md) [канала](../resources/channel.md). Эта операция разрешена только для каналов со значением **membershipType** `private` .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -25,8 +25,8 @@ ms.locfileid: "49521175"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированное (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -97,7 +97,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>См. также
 
-- [Удаление участника из группы](team-delete-members.md)
+- [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

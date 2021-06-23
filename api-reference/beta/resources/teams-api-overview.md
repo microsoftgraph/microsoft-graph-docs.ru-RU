@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: adaf070c491810ad2467985a3a50509b3b9f82c3
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 8eac2d77ffa5fa0f3be9a57e86fd4f490d66e583
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547599"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059529"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -33,14 +33,15 @@ Microsoft Teams — это рабочее пространство с чатам
 |[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [перенаправление](../api/call-redirect.md), [отключение звука](../api/call-mute.md), [включение звука](../api/call-unmute.md), [изменение роли при демонстрации экрана](../api/call-changescreensharingrole.md), [перечисление участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md), [ отключение звука всех участников](../api/participant-muteall.md) |
 |[schedule](../resources/schedule.md)| [Создание или замена](../api/team-put-schedule.md), [получение](../api/schedule-get.md), [предоставление общего доступа](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Создание](../api/schedule-post-schedulinggroups.md), [список](../api/schedule-list-schedulinggroups.md), [получение](../api/schedulinggroup-get.md), [замена](../api/schedulinggroup-put.md), [удаление](../api/schedulinggroup-delete.md) |
-|activityFeedNotification| [Отправить уведомление пользователю в области чата](../api/chat-sendactivitynotification.md), [Отправить уведомление пользователю в области команды](../api/team-sendactivitynotification.md), [Отправить уведомление пользователю в персональной области](../api/userteamwork-sendactivitynotification.md)|
 |[shift](../resources/shift.md)| [Создание](../api/schedule-post-shifts.md), [список](../api/schedule-list-shifts.md), [получение](../api/shift-get.md), [замена](../api/shift-put.md), [удаление](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
+|[tag](../resources/teamworkTag.md)|[Перечисление](../api/teamworkTag-list.md), [создание](../api/teamworkTag-post.md), [получение](../api/teamworkTag-get.md), [обновление](../api/teamworkTag-update.md), [удаление](../api/teamworkTag-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[Создание](../api/teamworkTagMember-list.md), [получение](../api/teamworkTagMember-get.md), [удаление](../api/teamworkTagMember-delete.md)|
 
 ## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
 
-Протестированные ограничения производительности (мощности) Microsoft Teams описаны в статье [Ограничения и спецификации для Microsoft Teams](/microsoftteams/limits-specifications-teams).
+Протестированные ограничения производительности (мощности) Microsoft Teams описаны в статье [Ограничения и спецификации для Microsoft Teams](/microsoftteams/limits-specifications-teams).
 Эти ограничения применяются при непосредственном использовании Microsoft Teams или с помощью API Microsoft Graph.
 Так как у каждой команды есть соответствующая группа, а каждая группа является объектом каталога, ограничение [количества групп](/microsoft-365/admin/create-groups/office-365-groups#group-limits) и [количества объектов каталога ("ресурсов")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) может также оказывать влияние. 
 
@@ -50,7 +51,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
-В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Команды Microsoft Teams и группы Microsoft 365 предназначены для различных требований совместной работы в группе. Почти всех групповые функции применимы к командам Microsoft Teams и группам Microsoft 365, например календарь группы, файлы, заметки, фотографии, планы и т. д. Основное различие между [командой](team.md) и группой Microsoft 365 состоит в режиме общения участников. Участники команды общаются в сохраняемом чате в контексте определенной команды. Участники группы Microsoft 365 общаются с помощью групповых бесед, то есть бесед по электронной почте, которые осуществляются в контексте группы в Outlook.
+В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Команды Microsoft Teams и группы Microsoft 365 предназначены для различных требований совместной работы в группе. Почти всех групповые функции применимы к командам Microsoft Teams и группам Microsoft 365, например календарь группы, файлы, заметки, фотографии, планы и т. д. Основное различие между [командой](team.md) и группой Microsoft 365 состоит в режиме общения участников. Участники команды общаются в сохраняемом чате в контексте определенной команды. Участники группы Microsoft 365 общаются с помощью групповых бесед, то есть бесед по электронной почте, которые осуществляются в контексте группы в Outlook.
 
 У любой группы, содержащей команду, есть свойство **resourceProvisioningOptions** со значением Team.
 
@@ -109,7 +110,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="polling-requirements"></a>Требования к опросу
 
-Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв на [форуме идей платформы для разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
+Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв на [форуме идей платформы для разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
 
 При опросе на предмет новых сообщений необходимо определить диапазон дат, в котором поддерживается опрос. Дополнительные сведения см. в статье [Получение изменившихся данных о сообщениях в каналах](../api/chatmessage-delta.md).
 

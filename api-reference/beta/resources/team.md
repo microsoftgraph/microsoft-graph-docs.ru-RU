@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 159502c1076aa9f076f0c50768405bbd64612ebc
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 1a388e5d31e3cbd3abab83203481d66491ff51a4
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991220"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060486"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -95,6 +95,7 @@ ms.locfileid: "52991220"
 |schedule|[schedule](schedule.md)| Расписание смен для команды.|
 |шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates). |
 |permissionGrants|Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для доступа к команде.|
+|tags|Коллекция [teamworkTag](../resources/teamworktag.md)|Теги, связанные с командой.|
 
 ## <a name="json-representation"></a>Представление JSON
 

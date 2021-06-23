@@ -1,16 +1,16 @@
 ---
 title: Обновление участника в канале
 description: Обновление роли участника в канале.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 04d15bf974fd2a292f7112a4e8d57aa89025565b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 69ac329608ef4b6d42c019445427f82946f1ac82
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964206"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059997"
 ---
 # <a name="update-member-in-channel"></a>Обновление участника в канале
 
@@ -26,7 +26,7 @@ ms.locfileid: "50964206"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|ChannelMember.ReadWrite.All. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|ChannelMember.ReadWrite.All. |
+|Приложение|ChannelMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->

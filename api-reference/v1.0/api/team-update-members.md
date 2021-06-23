@@ -1,16 +1,16 @@
 ---
 title: Обновление участника в команде
 description: Обнови роль участника в команде.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d4350b6409929d3b0b9116e81f8cfba785fc273
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0970bc564d23cfaadd7238f25c3afd0a487540f6
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963639"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060425"
 ---
 # <a name="update-member-in-team"></a>Обновление участника в команде
 
@@ -26,7 +26,7 @@ ms.locfileid: "50963639"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|TeamMember.ReadWrite.All. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|TeamMember.ReadWrite.All. |
+|Приложение|TeamMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->

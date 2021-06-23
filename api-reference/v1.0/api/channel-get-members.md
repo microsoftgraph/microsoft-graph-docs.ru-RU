@@ -1,16 +1,16 @@
 ---
 title: Получение участника канала
 description: Получение участника канала.
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ea606755d08c751207143408a895aad25ba32a6b
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: e6aeb2f24822995e9e2a9d9e153182842b8d99ff
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854238"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060560"
 ---
 # <a name="get-member-of-channel"></a>Получение участника канала
 
@@ -45,7 +45,7 @@ GET /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

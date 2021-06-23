@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Извлечение эскизов файла или папки
+title: Извлечение эскизов для файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 description: Получение коллекции ресурсов ThumbnailSet для ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 9746221fe0aed4b606019250bd63f65d3972ebc3
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 63ee68ade1a314a34cbb5ee778e5eccaec413a62
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293045"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059366"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -57,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.
 
-Кроме того, этот метод поддерживает искомый эскиз с исходным значением EXIF ориентации и без примененного поворота путем добавления `originalOrientation=true` параметра запроса.
+Кроме того, этот метод поддерживает ирисовку эскиза с исходным значением EXIF ориентации и без примененного поворота путем придания `originalOrientation=true` параметру запроса.
 В настоящее время этот параметр поддерживается только в OneDrive персональный.
 
 ## <a name="response"></a>Отклик
@@ -251,7 +251,7 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Служба возвращает список ресурсов DriveItem и их эскизов.
 
@@ -314,7 +314,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
-GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
+GET /me/drive/items/{item-id}/thumbnails?select=c300x400_crop
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
@@ -347,7 +347,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "0",
-      "c300x400_Crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
+      "c300x400_crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
     }
   ]
 }
@@ -360,7 +360,7 @@ Content-Type: application/json
 | Идентификатор эскиза | Разрешение             | Пропорции | Описание                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | Заключен в прямоугольник размером 300x400 | Исходные     | Создается эскиз, который помещается в прямоугольник размером 300x400 пикселей с сохранением пропорций.                                                                 |
-| c300x400_Crop        | 300x400                | Обрезанный      | Создается эскиз размером 300x400. Сначала размер изображения меняется так, чтобы оно помещалось в прямоугольник размером 300x400, а затем обрезается все, что выходит за пределы прямоугольника. |
+| c300x400_crop        | 300x400                | Обрезанный      | Создается эскиз размером 300x400. Сначала размер изображения меняется так, чтобы оно помещалось в прямоугольник размером 300x400, а затем обрезается все, что выходит за пределы прямоугольника. |
 
 **Примечание.** Размер возвращаемого эскиза в пикселях может не полностью совпадать с запрашиваемым, но его пропорции будут соответствовать запросу.
 В некоторых случаях возвращаются эскизы большего размера, если эскиз уже существует и легко масштабируется до запрашиваемого разрешения.
@@ -389,6 +389,6 @@ Content-Type: application/json
   "section": "documentation",
   "suppressions": [
   ],
-  "tocPath": "Items/Thumbnails"
+  "tocPath&quot;: &quot;Items/Thumbnails"
 } -->
 

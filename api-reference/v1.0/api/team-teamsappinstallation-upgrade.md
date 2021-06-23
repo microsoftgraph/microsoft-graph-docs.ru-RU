@@ -1,22 +1,22 @@
 ---
-title: 'teamsAppInstallation: обновление'
+title: 'teamsAppInstallation в команде: обновление'
 description: Обновление установки приложения в команде
-author: clearab
+author: akjo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1cab650a63c88762e3aa08d77c8e720b47d3751d
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 4c3df922e9fc15238bb5531fc38a935f613b1c98
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690531"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060023"
 ---
-# <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: обновление
+# <a name="teamsappinstallation-in-team-upgrade"></a>teamsAppInstallation в команде: обновление
 
 Пространство имен: microsoft.graph
 
-[Обновив установку](../resources/teamsappinstallation.md) приложения [в команде](../resources/team.md) до последней версии приложения.
+Обновление [установки приложения](../resources/teamsappinstallation.md) в [команде до](../resources/team.md) последней версии приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "49690531"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос

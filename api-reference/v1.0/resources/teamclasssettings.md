@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса Теамкласссеттингс
-description: Представляет параметры, характерные для Teams типа Class.
+title: тип ресурса teamClassSettings
+description: Представляет параметры, специфические для групп класса типа.
 localization_priority: Normal
-author: clearab
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 40b1e21933adedaf8d1c4e16aa91d69c4af17668
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49952343d6d420b77a09cca928486c22e621d408
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094045"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059974"
 ---
-# <a name="teamclasssettings-resource-type"></a>Тип ресурса Теамкласссеттингс
+# <a name="teamclasssettings-resource-type"></a>тип ресурса teamClassSettings
 
 Пространство имен: microsoft.graph
 
-Представляет свойства [команды](team.md), зависящие от класса. Доступна только в том случае, если команда представляет класс.
+Представляет свойства группы, определенные для [класса.](team.md) Доступна только в том случае, если команда представляет класс.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|нотифигуардиансабаутассигнментс|Boolean|Если задано значение `true` , разрешает отправку сообщений сводки по неделям в родительские и опекуны, если администратор клиента включил параметр глобально.|
+|notifyGuardiansAboutAssignments|Логический|Если установлено, позволяет отправлять еженедельные назначения дайджест электронных писем родителям и опекунам, при условии, что администратор клиента включил `true` параметр глобально.|
 
 ## <a name="json-representation"></a>Представление JSON
 

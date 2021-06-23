@@ -4,12 +4,12 @@ description: Microsoft Graph открывает доступ к данным и 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 669b45d3074b77f7b9a916564235b6f9d35850a9
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: abdb8320086a5ddf7d82d8ed42346779c5af35c0
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666193"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082372"
 ---
 # <a name="overview-of-microsoft-graph"></a>Обзор Microsoft Graph
 
@@ -131,7 +131,7 @@ Microsoft Graph Data Connect предоставляет новый способ 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Ознакомьтесь с [представленными сценариями](https://developer.microsoft.com/graph/examples).
+- Ознакомьтесь с некоторыми [решениями партнеров](https://developer.microsoft.com/graph/partners).
 - Опробуйте пример запроса в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Воспользуйтесь [кратким руководством](https://developer.microsoft.com/graph/quick-start), чтобы настроить готовый к работе пример приложения.
 - Найдите в оглавлении, в разделе **Обучение**, службы и функции, которые вас интересуют, и почитайте о них.

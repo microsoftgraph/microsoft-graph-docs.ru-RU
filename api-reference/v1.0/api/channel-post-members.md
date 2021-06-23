@@ -1,16 +1,16 @@
 ---
 title: Добавление участника в канал
 description: Добавление участника в канал.
-author: laujan
+author: akjo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 29268cb321dd133ba762be5ccfc625810280f3bf
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3960f1a72ff8edc9736f2efc8d6d84feea916592
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964238"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060287"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
@@ -26,7 +26,7 @@ ms.locfileid: "50964238"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMember.ReadWrite.All |
+|Приложение| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -48,7 +48,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто.|
-|пользователь|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
+|пользователь;|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -124,7 +124,6 @@ Content-length: 468
 
 #### <a name="request"></a>Запрос
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_add_member_2"
@@ -133,16 +132,6 @@ Content-length: 468
 ```http
 POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/channel-add-member-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/channel-add-member-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 

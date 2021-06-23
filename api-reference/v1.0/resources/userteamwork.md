@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userTeamwork
 description: 'Контейнер для функций Microsoft Teams, доступных пользователю. '
-author: clearab
+author: akjo
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 721830c8a4160046bb4ffd09e2812c4e0f95167d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0084504acbe576a24dac31f77e2617ed5b2c8e9
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015304"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53059356"
 ---
 # <a name="userteamwork-resource-type"></a>Тип ресурса userTeamwork
 

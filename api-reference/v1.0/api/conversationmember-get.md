@@ -1,16 +1,16 @@
 ---
 title: Получение объекта conversationMember
 description: Получение участника чата или канала.
-author: laujan
+author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5b2f03bfc9375b38a4901d7f9a24e315420066ec
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 8467e8ba0b32179da555f04cf94421bf0ea44a5d
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941251"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060609"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -48,7 +48,7 @@ GET /teams/{id}/channels/{id}/members/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

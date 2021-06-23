@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: be701ac6a435a7e9a4b016274f28dc468906cdeb
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: fff52572c62c183296b911b08d78c7d998926d3d
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031381"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060420"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -26,7 +26,7 @@ ms.locfileid: "53031381"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.ReadWrite.All |
+|Приложение                            | AccessReview.ReadWrite.All |
 
 При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -87,6 +87,7 @@ Content-type: application/json
   "descriptionForAdmins": "New scheduled access review",
   "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
@@ -147,6 +148,7 @@ Content-type: application/json
     "userPrincipalName": "admin@contoso.com"
   },
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b74444cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },

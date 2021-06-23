@@ -5,16 +5,31 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 1db4fbafde269d5e53799ec986ccd6c6631970ae
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 0e16144337b2130925ce455f5bfba9127728a0fe
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911615"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082309"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="lifecycleeventtype-values"></a>значения lifecycleEventType
+
+|Member|
+|:---|
+|пропущено|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### <a name="changetype-values"></a>значения changeType
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
 
 ### <a name="consentrequestfilterbycurrentuseroptions-values"></a>consentRequestFilterByCurrentUserOptions 
 
@@ -707,7 +722,7 @@ ms.locfileid: "52911615"
 |NotStarted
 |Работает
 |Завершено
-|Ошибка
+|Не выполнено
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения onenotePatchActionType
@@ -813,7 +828,7 @@ ms.locfileid: "52911615"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1164,7 +1179,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1404,7 +1419,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| строка                |
+| Строка                |
 | boolean               |
 | int64                 |
 | stringCollection      |

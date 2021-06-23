@@ -2,15 +2,15 @@
 title: Тип ресурса aadUserConversationMember
 description: Представляет пользователя Azure Active Directory в чате или канале.
 localization_priority: Priority
-author: clearab
+author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 798d098a8a4eeb17ca3be741ac4365617bb9ca8e
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: c7d65249e6e284efeaf0b34a4ffaf027026932d4
+ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754317"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53060278"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
@@ -44,7 +44,7 @@ ms.locfileid: "49754317"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id| String | Только для чтения. Уникальный идентификатор пользователя.|
+|id| Строка | Только для чтения. Уникальный идентификатор пользователя.|
 |displayName| String | Отображаемое имя пользователя. |
 |roles| Набор строк | Роли этого пользователя. |
 |userId| String | GUID пользователя. |

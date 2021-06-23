@@ -4,12 +4,12 @@ description: Запрос позволяет запрашивать добавл
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e6efc0d7a5c63471b257acfc9a3e2e228176cf12
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 39253f03175c9c33c6e358afc2e629a77e449a0c
+ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598250"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082064"
 ---
 # <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 
@@ -197,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-Ниже представлены некоторые примечания к приведенному выше примеру ответа.
+Ниже представлены некоторые примечания к предыдущему примеру отклика.
 
 - Если пользователь удален, элемент содержит заметку: `@removed` со значением `"reason": "changed"`.
 
