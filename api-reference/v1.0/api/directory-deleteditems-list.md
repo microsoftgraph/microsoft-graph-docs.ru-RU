@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 51e74ec0dc6eee9fa21ef7b7843f088c378cfb31
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 905b65c5d02bd27ffad17f30290c5ea36118bff3
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241074"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108917"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -24,7 +24,7 @@ ms.locfileid: "52241074"
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="for-applications"></a>Для приложений:
 
@@ -46,8 +46,8 @@ ms.locfileid: "52241074"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -56,17 +56,29 @@ ms.locfileid: "52241074"
 GET /directory/deleteditems/microsoft.graph.application
 GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
+GET /directory/deletedItems/microsoft.graph.device
 ```
 
 В настоящее время этот API поддерживает получение групп (microsoft.graph.group) и пользователей (microsoft.graph.user) из удаленных элементов. Тип является обязательной частью URI. Вызов GET/directory/deletedItems без типа не поддерживается.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$orderBy` [запроса OData](/graph/query-parameters) для настройки ответа. 
+
+### <a name="examples-using-the-orderby-odata-query-parameter"></a>Примеры использования параметра запроса $orderBy OData
+
+Параметр запроса OData поддерживается в удаленных свойствах `$orderBy` **объектовDateTime,** **displayName** и **userPrincipalName.** В **свойстве deletedDateTime** запрос требует [](/graph/aad-advanced-queries) добавления расширенных параметров запроса (заглавная строка **ConsistencyLevel** и `true` `$count=true` строка запросов).
+
+| Литой OData | Свойства, поддерживающие $orderBy | Пример |
+| :--- | :--- | :--- |
+| microsoft.graph.user | deletedDateTime, displayName, userPrincipalName | /directory/deletedItems/microsoft.graph.user?$orderBy=userPrincipalName |
+| microsoft.graph.group | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.group?$orderBy=deletedDateTime asc&$count=true |
+| microsoft.graph.application | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.application?$orderBy=displayName |
+| microsoft.graph.device | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.device?$orderBy=deletedDateTime&$count=true |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
+| Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
