@@ -1,0 +1,94 @@
+---
+title: Get userInsightsSettings
+description: Извлечение свойств объекта userInsightsSettings.
+author: simonhult
+localization_priority: Normal
+ms.prod: insights
+doc_type: apiPageType
+ms.openlocfilehash: 11796934c9ea2edd7a5c3905604671f29604f973
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53109214"
+---
+# <a name="get-userinsightssettings"></a><span data-ttu-id="16d9b-103">Get userInsightsSettings</span><span class="sxs-lookup"><span data-stu-id="16d9b-103">Get userInsightsSettings</span></span>
+
+<span data-ttu-id="16d9b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16d9b-104">Namespace: microsoft.graph</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="16d9b-105">Получите настраиваемые пользователем параметры конфиденциальности для [itemInsights](../resources/iteminsights.md) и сведения [о часах собраний.](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)</span><span class="sxs-lookup"><span data-stu-id="16d9b-105">Get the user-customizable privacy settings for [itemInsights](../resources/iteminsights.md) and [meeting hours insights](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1).</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="16d9b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="16d9b-106">Permissions</span></span>
+
+<span data-ttu-id="16d9b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16d9b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="16d9b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="16d9b-109">Permission type</span></span>      | <span data-ttu-id="16d9b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="16d9b-110">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="16d9b-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="16d9b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="16d9b-112">User.Read, User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="16d9b-112">User.Read, User.ReadWrite</span></span> |
+|<span data-ttu-id="16d9b-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="16d9b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16d9b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16d9b-114">Not supported.</span></span>    |
+|<span data-ttu-id="16d9b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="16d9b-115">Application</span></span> | <span data-ttu-id="16d9b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16d9b-116">Not supported.</span></span> |
+
+
+## <a name="http-request"></a><span data-ttu-id="16d9b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="16d9b-117">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/settings/itemInsights
+GET /user/{userId}/settings/itemInsights
+```
+
+><span data-ttu-id="16d9b-118">**Примечание:** Запросы с `userId` разрешениями User.ReadWrite.All доступны только пользователю или `userPrincipalName` пользователю.</span><span class="sxs-lookup"><span data-stu-id="16d9b-118">**Note:** Requests with a `userId` or `userPrincipalName` are only accessible by the user or by a user with the User.ReadWrite.All permissions.</span></span> <span data-ttu-id="16d9b-119">Дополнительные сведения см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16d9b-119">To learn more, see [Permissions](/graph/permissions-reference).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="16d9b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="16d9b-120">Request headers</span></span>
+
+| <span data-ttu-id="16d9b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="16d9b-121">Name</span></span>       | <span data-ttu-id="16d9b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="16d9b-122">Description</span></span>|
+|:-----------|:----------|
+| <span data-ttu-id="16d9b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="16d9b-123">Authorization</span></span>  | <span data-ttu-id="16d9b-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="16d9b-p103">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="16d9b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="16d9b-126">Request body</span></span>
+
+<span data-ttu-id="16d9b-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="16d9b-127">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="16d9b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="16d9b-128">Response</span></span>
+
+<span data-ttu-id="16d9b-129">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userInsightsSettings](../resources/userinsightssettings.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="16d9b-129">If successful, this method returns a `200 OK` response code and a [userInsightsSettings](../resources/userinsightssettings.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="16d9b-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="16d9b-130">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="16d9b-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="16d9b-131">Request</span></span>
+
+<span data-ttu-id="16d9b-132">Ниже приводится пример запроса на представление элементов пользователя и параметры времени собраний.</span><span class="sxs-lookup"><span data-stu-id="16d9b-132">The following is an example of the request to get user item insights and meeting hours insights settings.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_userInsightsSettings"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/settings/itemInsights
+```
+
+
+### <a name="response"></a><span data-ttu-id="16d9b-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="16d9b-133">Response</span></span>
+
+<span data-ttu-id="16d9b-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="16d9b-134">The following is an example of the response.</span></span> 
+> <span data-ttu-id="16d9b-135">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="16d9b-135">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userInsightsSettings",
+  "name": "get_userInsightsSettings"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "isEnabled": true
+}
+```
+
+
