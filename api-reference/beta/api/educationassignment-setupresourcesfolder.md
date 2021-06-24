@@ -5,16 +5,18 @@ localization_priority: Normal
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d682128fb6f50155b7748edb1b4987368e2df5b0
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 5ca3d7d267551bdeebb7a34a1624a4f1a4caea3f
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870222"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107622"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте SharePoint папку для отправки файлов для данного [образованияAssignment](../resources/educationassignment.md). 
 
@@ -33,14 +35,13 @@ ms.locfileid: "52870222"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer `{token}`. Обязательный параметр.  |
+| Authorization  | Bearer `{token}`. Обязательный параметр.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Необходимо предоставить пустой json в качестве `{}` тела запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа 200 Ok и [объект educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) в тексте запроса.

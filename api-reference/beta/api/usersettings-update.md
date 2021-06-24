@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ca939f59db77c8f9aab4d004f716ab2bd74623ee
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f776bd5ac5dad802a8c977cbe32842e619c74434
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052560"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107762"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -23,7 +23,7 @@ ms.locfileid: "52052560"
 
 ### <a name="batch-request"></a>Пакетный запрос
 
-Кроме того, можно отключать несколько пользователей от Delve и отключить их вклад в доступ к контенту для всей организации с помощью пакетного запроса.
+Кроме того, можно отказать нескольким пользователям в доступе Delve пакетным запросом.
 Дополнительные дополнительные информации см. в серии [JSON.](/graph/json-batching)
 
 >**Важно.** Только члены группы [ролей](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) управления организацией могут обновлять несколько пользователей. 
@@ -36,8 +36,8 @@ ms.locfileid: "52052560"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite, User.ReadWrite.All   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | User.ReadWrite, User.ReadWrite.All   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -65,7 +65,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логический|Установите для true отключение доступа делегатов к API [Trending](../resources/insights-trending.md) и отключение доступа к документам в Office Delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Microsoft 365 , например, рекомендуемые сайты в SharePoint Home и представление Discover в OneDrive для бизнеса показывают менее релевантные результаты. Этот параметр отражает состояние управления в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Логический|Настройка true для отключения доступа к документам в Office Delve для пользователя. Этот параметр отражает состояние управления в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 
@@ -85,7 +85,7 @@ Content-length: 37
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

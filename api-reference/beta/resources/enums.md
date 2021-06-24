@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 445569bf34eb2d826660fdd1b88143b04213836e
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 4bc5577cb6788467060874b4701e9d561731ac39
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082281"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107734"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -95,11 +95,11 @@ ms.locfileid: "53082281"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |В двоичном формате|
-|Логический|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -341,7 +341,7 @@ ms.locfileid: "53082281"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -488,7 +488,7 @@ ms.locfileid: "53082281"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -821,7 +821,7 @@ ms.locfileid: "53082281"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1965,7 +1965,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2284,6 +2284,73 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |основной|
+|unknownFutureValue|
+
+### <a name="posttype-values"></a>значения postType 
+
+|Member|
+|:---|
+|регулярные|
+|быстрый|
+|стратегический|
+|unknownFutureValue|
+
+### <a name="servicehealthclassificationtype-values"></a>значения serviceHealthClassificationType 
+
+|Member|
+|:---|
+|консультативный|
+|инцидент|
+|unknownFutureValue|
+
+### <a name="servicehealthorigin-values"></a>значения serviceHealthOrigin 
+
+|Member|
+|:---|
+|Microsoft|
+|thirdParty|
+|клиент|
+|unknownFutureValue|
+
+### <a name="servicehealthstatus-values"></a>значения serviceHealthStatus 
+
+|Member|
+|:---|
+|serviceOperational|
+|изучении|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|смягчение|
+|resolvedExternal|
+|подтверждено|
+|сообщается|
+|unknownFutureValue|
+
+### <a name="serviceupdatecategory-values"></a>значения serviceUpdateCategory 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### <a name="serviceupdateseverity-values"></a>значения serviceUpdateSeverity 
+
+|Member|
+|:---|
+|нормальный|
+|высокая|
+|критически важное значение|
 |unknownFutureValue|
 
 ### <a name="teamworktagtype-values"></a>значения teamworkTagType

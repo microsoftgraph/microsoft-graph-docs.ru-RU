@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: b08b1e3232998eff678ffbf7852a144f641f84e1
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 59bcc9f45b34508197494da7bc807cadbf214deb
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941531"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107755"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -40,7 +40,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
 | [conversationMember][] в Teams | Изменения членства в определенной команде:<br>`/teams/{id}/members` | Да |
 | Teams [присутствия][] | Изменения в присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения нескольких присутствий пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
-| [Команда][] Teams | Изменения для любой команды в клиенте:<br>`/teams` <br>Изменения в конкретной группе:<br>`/teams/{id}` | Да |
+| [Команда][] Teams | Изменения для любой команды в клиенте:<br>`/teams` <br>Изменения в определенной группе:<br>`/teams/{id}` | Да |
 | [todoTask][] | Изменения всех задач в определенном списке задач:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Нет |
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
 

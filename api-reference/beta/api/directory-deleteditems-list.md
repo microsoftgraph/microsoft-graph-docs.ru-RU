@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 883f23823c58b87e4969b10c96fde63be08058e9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 213860aa7a5b93247b1e98de8da2ace8528cd111
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046911"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107650"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -24,7 +24,7 @@ ms.locfileid: "52046911"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="for-applications"></a>Для приложений:
 
@@ -32,7 +32,7 @@ ms.locfileid: "52046911"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -46,9 +46,9 @@ ms.locfileid: "52046911"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Делегированное (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,18 @@ GET /directory/deletedItems/microsoft.graph.user
 В настоящее время этот API поддерживает получение типов объектов (microsoft.graph.application), групп (microsoft.graph.group) или пользователей (microsoft.graph.user) из удаленных элементов. Тип является обязательной частью URI. Вызов GET /directory/deleteditems без типа не поддерживается.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$orderBy` [запроса OData](/graph/query-parameters) для настройки ответа. 
+
+### <a name="examples-using-the-orderby-odata-query-parameter"></a>Примеры использования параметра запроса $orderBy OData
+
+Параметр запроса OData поддерживается в удаленных свойствах `$orderBy` **объектовDateTime,** **displayName** и **userPrincipalName.** В **свойстве deletedDateTime** запрос требует [](/graph/aad-advanced-queries) добавления расширенных параметров запроса (заглавная строка **ConsistencyLevel** и `true` `$count=true` строка запросов).
+
+| Литой OData | Свойства, поддерживающие $orderBy | Пример |
+| :--- | :--- | :--- |
+| microsoft.graph.user | deletedDateTime, displayName, userPrincipalName | /directory/deletedItems/microsoft.graph.user?$orderBy=userPrincipalName |
+| microsoft.graph.group | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.group?$orderBy=deletedDateTime asc&$count=true |
+| microsoft.graph.application | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.application?$orderBy=displayName |
+| microsoft.graph.device | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.device?$orderBy=deletedDateTime&$count=true |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
