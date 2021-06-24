@@ -1,16 +1,16 @@
 ---
 title: Настройка элемента конфиденциальности insights в Microsoft Graph
-description: ''
+description: Обзор настройки аналитики элементов на уровне организации
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fd636b36a6566b2612b6f87ff4fee6b1b8fcd91d
-ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
+ms.openlocfilehash: 501e051fa63d2b68952a7c346f8c21dab34f5d8e
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52732142"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108847"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -26,6 +26,8 @@ ms.locfileid: "52732142"
 ## <a name="item-insights-privacy"></a>Конфиденциальность аналитики элементов 
 
 Параметры конфиденциальности элемента insights позволяют настраивать видимость информации, получаемой из Microsoft Graph, между пользователями и другими элементами (например, документами и сайтами) в Microsoft 365. Вы можете отключить приложение Delve с помощью уже существующих элементов управления, но также использовать в дальнейшем другие полезные возможности, связанные с insights.
+
+В этой статье описывается настройка конфиденциальности аналитики элементов в организации. Сведения о настройке аналитики элементов для пользователя см. в ресурсе [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-beta&preserve-view=true). Эти параметры для пользователя доступны с помощью свойства навигации с именем **itemInsights** в ресурсе [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="background"></a>Общие сведения
 На момент первого выпуска в 2014 году, Office Graph был внутренней службой для Delve. Был представлен набор элементов управления конфиденциальностью как в Office Graph, так и в пользовательском интерфейсе Delve. С тех пор Office Graph развивался и стал более независимой и мощной частью интерфейса Microsoft 365, а также Microsoft Graph. Чтобы предложить связанную схему Microsoft Graph, компания Майкрософт представила элемент [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true), который наследует все свойства ранее существовавшего ресурса [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta&preserve-view=true), и сохранила **officeGraphInsights** для обеспечения обратной совместимости. Введение **itemInsights** также разделяет историю конфиденциальности на две независимые части.  
@@ -78,7 +80,7 @@ ms.locfileid: "52732142"
 ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>Настройка аналитики элементов с помощью API REST
-Как сказано выше, параметры конфиденциальности для аналитики элементов по умолчанию включены для всей организации. Параметры по умолчанию можно изменить двумя способами.
+Как сказано выше, параметры конфиденциальности для аналитики элементов по умолчанию включены для всей организации. Эти параметры доступны с помощью свойства навигации с именем **itemInsights** в ресурсе [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). Параметры по умолчанию можно изменить двумя способами.
 
 - Отключите аналитику элементов для всех пользователей в организации, установив для свойства **isEnabledInOrganization** ресурса [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) значение `false`. 
 - Отключите аналитику элементов для _подмножества_, назначив этих пользователей в группу Azure AD и установив для свойства **disabledForGroup** идентификатор этой группы. Подробнее о [создании групп и добавлении пользователей в качестве участников](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
@@ -99,20 +101,7 @@ ms.locfileid: "52732142"
 
 
 ## <a name="behavior-changes-in-ui-and-apis"></a>Изменение поведения в пользовательском интерфейсе и интерфейсах API
-Некоторые [тенденции](/graph/api/resources/insights-trending) или[используемые](/graph/api/resources/insights-used) insights, могут быть затронуты так, как описано ниже. Со временем масштаб и типы этих insights будут расширены. 
-
-- В карточке профиля пользователя, который отключил элемент insights, не отображаются **использованные** документы. То же ограничение распространяется на результат профиля поиска Майкрософт в Bing, где панель **Последние Файлы** становится пустой. Кроме того, уменьшается точность расшифровки аббревиатур при поиске.
-
-- Отключение элемента insights приведет к прекращению расчета и показа [предложенного время собраний](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) пользователям в их карточке профиля. 
-
-- В Delve у пользователя, который отключил элемент insights, есть скрытые документы. 
-
-- Любой пользователь, который отключили элемент insights, удаляет свою активность из аналитики всей организации. Как правило, эта аналитика предлагает специальные insights, которые могут быть полезны коллегам пользователя, начиная с Outlook, заканчивая OneDrive и SharePoint. Аналитика всегда анонимна, независимо от настроек, но когда пользователь отключает insights, его активность исключается из процесса улучшения эффективность других пользователей.
-
-- Для пользователя, который отключил элемент insights, запрос [тенденций](/graph/api/resources/insights-trending) и[используемых](/graph/api/resources/insights-used) ресурсов в Microsoft Graph API возвращается`HTTP 403 Forbidden`.
-
-- Если для пользователя, выполняющего поиск в Outlook на мобильном устройстве, включен раздел **Обнаружение**, то при отключении аналитики элементов для этого пользователя документы, находящиеся в разделе **Обнаружение** и популярные у этого пользователя, будут скрыты. В противном случае популярные документы будут рекомендоваться и отображаться на основании других действий пользователя.
-
+Полный список затронутых интерфейсов при отключении аналитики элементов см. в статье [Обзор аналитики элементов](item-insights-overview.md#disabling-item-insights). 
 
 ## <a name="transition-period"></a>Переходный период
 Чтобы настроить параметры элемента Insights, до конца 2020, Microsoft 365 будет использовать и параметры Delve, и параметры элемента insights, и применять более эффективное из них при наличии различий. Это означает, что пользователь считается отказавшимся от использования элемента insights, если он отказался или с помощью элементов управления Delve, или с помощью параметров элемента insights.

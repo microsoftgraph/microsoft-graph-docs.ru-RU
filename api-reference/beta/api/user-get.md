@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95d0839341f158821eeb51f9aea252155462241d
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 2014b20abe0cdcc37c4bca2f1341aabe425b556c
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335669"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108882"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -41,7 +41,9 @@ ms.locfileid: "52335669"
 GET /users/{id | userPrincipalName}
 ```
 
-Обратите внимание, что если **userPrincipalName** начинается с символа `$`, нужно удалить косую черту (/) после `/users` и заключить **userPrincipalName** в скобки и одиночные кавычки. Дополнительные сведения см. в списке [известных проблем](/graph/known-issues#users).
+>**Примечание.**
+> + Если **userPrincipalName** начинается с символа `$`, нужно удалить косую черту (/) после `/users` и заключить **userPrincipalName** в скобки и одиночные кавычки. Например, `/users('$AdeleVance@contoso.com')`. Дополнительные сведения см. в списке [известных проблем](/graph/known-issues#users).
+> + Чтобы запросить пользователя B2B с помощью **userPrincipalName**, закодируйте хэш-символ (#). То есть замените символ `#` на `%23`. Например, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 Для вошедшего пользователя:
 <!-- { "blockType": "ignored" } -->
