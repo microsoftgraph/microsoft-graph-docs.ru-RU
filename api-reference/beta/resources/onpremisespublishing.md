@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5b884d6f1aadb43d682cba1434ed4d31e0ae1e70
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d91eae080f46fd43e5ac9cc8d083681e12da8d12
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956927"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108812"
 ---
 # <a name="onpremisespublishing-resource-type"></a>onPremisesPublishing resource type
 
@@ -31,23 +31,22 @@ ms.locfileid: "50956927"
 | Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |alternateUrl|Строка| При настройке диспетчера трафика перед несколькими приложениями прокси-приложения app альтернативный URL-адрес, который будет указать диспетчеру трафика. |
-|applicationServerTimeout|Строка| Время, в течение времени, которое соединитатель будет ждать ответа от приложения-спинки перед закрытием подключения. Возможные значения `default` : `long` . Если установлено значение по умолчанию, время, заданное по умолчанию, имеет длину 85 секунд. Если задана длинная настройка, время отодвигаемого времени увеличивается до 180 секунд. Используйте, если серверу требуется более 85 секунд для ответа на запросы или если вы не можете получить доступ к приложению, а состояние ошибки — "Время отыскки". `long` Значение по умолчанию: `default`. |
+|applicationServerTimeout|Строка| Время, в течение времени, которое соединитатель будет ждать ответа от приложения-спинки перед закрытием подключения. Возможные значения `default` : `long` . Если установлено значение по умолчанию, время, заданное по умолчанию, имеет длину 85 секунд. Если задана длинная настройка, время отодвигаемого времени увеличивается до 180 секунд. Используйте, если серверу требуется более 85 секунд для ответа на запросы или если вы не можете получить доступ к приложению, а состояние ошибки — "Время отыскки". `long` Значение по умолчанию — `default`. |
 |applicationType|String| Указывает, является ли это приложение приложением прокси-сервера приложения. Это заранее заданной системой. Только для чтения. |
 |externalAuthenticationType|externalAuthenticationType| Сведения о параметре предварительной проверки подлинности для приложения. Предварительная проверка подлинности обеспечивает, чтобы пользователи должны пройти проверку подлинности перед доступом к приложению. Passthru не требует проверки подлинности. Возможные значения: `passthru`, `aadPreAuthentication`. |
 |externalUrl|Строка| Опубликованный внешний URL-адрес приложения. Например, https://intranet-contoso.msappproxy.net/.  |
 |internalUrl|Строка| Внутренний URL-адрес приложения. Например, https://intranet/. |
-|isHttpOnlyCookieEnabled|Boolean| Указывает, следует ли установить флаг cookie HTTPOnly в загонах ответов HTTP. Установите это значение, `true` чтобы cookie-файлы прокси-серверов приложений включали флаг HTTPOnly в заглавных главах ответов HTTP. Если используется служба удаленного рабочего стола, установите это значение false. Значение по умолчанию: `false`. |
+|isBackendCertificateValidationEnabled|Boolean| Указывает, включена ли проверка сертификата SSL для приложения. Для всех новых приложений-прокси-приложений свойство будет установлено по `true` умолчанию. Для всех существующих приложений будет установлено свойство `false` . |
+|isHttpOnlyCookieEnabled|Boolean| Указывает, следует ли установить флаг cookie HTTPOnly в загонах ответов HTTP. Установите это значение, `true` чтобы cookie-файлы прокси-серверов приложений включали флаг HTTPOnly в заглавных главах ответов HTTP. Если используется служба удаленного рабочего стола, установите это значение false. Значение по умолчанию — `false`. |
 |isOnPremPublishingEnabled|Boolean| Указывает, публикуется ли приложение в настоящее время с помощью прокси-сервера приложения или нет. Это заранее заданной системой. Только для чтения. |
-|isPersistentCookieEnabled|Boolean| Указывает, следует ли установить флаг сохраняемой файлы cookie в загонах http-ответа. Сохраняй это `false` значение. Используйте этот параметр только для приложений, которые не могут обмениваться файлами cookie между процессами. Дополнительные сведения о параметрах cookie см. в приложении Cookie для доступа к локальному приложению [в Azure Active Directory.](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings) Значение по умолчанию: `false`. |
-|isSecureCookieEnabled|Boolean| Указывает, следует ли установить флаг "Безопасное cookie" в загонах http-ответа. Установите это значение для `true` передачи файлов cookie по защищенному каналу, например зашифрованному запросу HTTPS. Значение по умолчанию: `true`.|
-|isTranslateHostHeaderEnabled|Boolean| Указывает, следует ли приложению переводить URL-адреса в загонах reponse. Храните это значение так, как если в запросе на проверку подлинности вашему приложению не требуется исходный загон `true` хост. Значение по умолчанию: `true`.|
-|isTranslateLinksInBodyEnabled|Boolean| Указывает, следует ли приложению переводить URL-адреса в теле приложения. Храните это значение как если у вас нет жестких HTML-ссылок на другие локальное приложение и не `false` используйте настраиваемые домены. Дополнительные сведения см. в [приложении Link translation with Application Proxy.](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation) Значение по умолчанию: `false`.|
+|isPersistentCookieEnabled|Boolean| Указывает, следует ли установить флаг сохраняемой файлы cookie в загонах http-ответа. Сохраняй это `false` значение. Используйте этот параметр только для приложений, которые не могут обмениваться файлами cookie между процессами. Дополнительные сведения о параметрах cookie см. в приложении Cookie для доступа к локальному приложению в [Azure Active Directory.](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings) Значение по умолчанию — `false`. |
+|isSecureCookieEnabled|Boolean| Указывает, следует ли установить флаг "Безопасное cookie" в загонах http-ответа. Установите это значение для `true` передачи файлов cookie по защищенному каналу, например зашифрованному запросу HTTPS. Значение по умолчанию — `true`.|
+|isTranslateHostHeaderEnabled|Boolean| Указывает, следует ли приложению переводить URL-адреса в загонах reponse. Храните это значение так, как если в запросе на проверку подлинности вашему приложению не требуется исходный загон `true` хост. Значение по умолчанию — `true`.|
+|isTranslateLinksInBodyEnabled|Boolean| Указывает, следует ли приложению переводить URL-адреса в теле приложения. Храните это значение как если у вас нет жестких HTML-ссылок на другие локальное приложение и не `false` используйте настраиваемые домены. Дополнительные сведения см. в [приложении Link translation with Application Proxy.](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation) Значение по умолчанию — `false`.|
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Представляет единую конфигурацию входов для локального приложения. |
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Сведения о сертификате, связанном с приложением при использовании настраиваемого домена. `null` при использовании домена по умолчанию. Только для чтения.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| Связанные учетные данные ключей для используемой настраиваемой области. |
 |verifiedCustomDomainPasswordCredential|[passwordCredential](passwordcredential.md)| Связанные учетные данные паролей для используемой настраиваемой области. |
-
-
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -69,6 +68,7 @@ ms.locfileid: "50956927"
   "externalAuthenticationType": "String",
   "externalUrl": "String",
   "internalUrl": "String",
+  "isBackendCertificationValidationEnabled": true,
   "isHttpOnlyCookieEnabled": true,
   "isOnPremPublishingEnabled": true,
   "isPersistentCookieEnabled": true,
@@ -78,7 +78,7 @@ ms.locfileid: "50956927"
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},
-  "verifiedCustomDomainPasswordCredential": {"@odata.type": "microsoft.graph.passwordCredential"}
+  "verifiedCustomDomainPasswordCredential": {"@odata.type": "microsoft.graph.passwordCredential"},
 }
 
 ```

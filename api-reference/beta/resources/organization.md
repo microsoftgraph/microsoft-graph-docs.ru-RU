@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 984fff26922d2300b94af69f3263e2beaeab82f8
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 13323ebf6560fc54c8fc22e26c4d6e97d6678d73
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703596"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108868"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -35,13 +35,16 @@ ms.locfileid: "52703596"
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |[Создание organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создайте новую организациюBrandingProperties, разместив в коллекции брендинга. |
+|[Получение фирменного стиля](../api/organizationalbrandingproperties-get.md) | Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md) | Получение коллекции объектов organizationalBrandingProperties. |
 |[Получение фирменного стиля](../api/organizationalbrandingproperties-get.md) | Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md) | Получите коллекцию объектов organizationalBrandingProperties. |
+|[activateService](../api/organization-activateservice.md) | Нет |  Активация службы для организации. |
 
-## <a name="properties"></a>Свойства 
+## <a name="properties"></a>Свойства
+
 | Свойство | Тип   | Описание |
 |:-------- |:---- |:----------- |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Коллекция планов обслуживания, сопоставленных с клиентом. Значение null не допускается. |
-| businessPhones | Коллекция String | Номер телефона организации. Несмотря на то что это коллекция строк, в качестве этого свойства можно указать только одно число. |
+| businessPhones | Коллекция String | Номера телефонов пользователя. Несмотря на то что это коллекция строк, в качестве значения этого свойства можно указать только одно число. |
 | city | String | Название города в адресе организации. |
 | country | String | Название страны или региона в адресе организации. |
 | countryLetterCode | String | Сокращенное название страны или региона для организации. |
@@ -53,7 +56,7 @@ ms.locfileid: "52703596"
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` если организация включена в Multi-Geo; `false` если организация не включена в Multi-Geo; `null` (по умолчанию). Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
 | objectType | String | Строка, которая определяет тип объекта. Для клиентов значение всегда `Company` .|
-| onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальной каталоги. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+| onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 | onPremisesSyncEnabled | Boolean | `true` если этот объект синхронизирован из локального каталога; если этот объект был первоначально синхронизирован из локального каталога, но `false` больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
 | preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1, например `en`. |
@@ -72,7 +75,7 @@ ms.locfileid: "52703596"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство Navigation для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
-|organizationalBranding|Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md)| Фирменный стиль для организации. Допускается значение null.|
+|organizationalBranding|Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md)| Корпоративный стиль организации. Допускается значение null.|
 |settings|[organisationSettings](organizationsettings.md) | Извлечение свойств и связей объекта organizationSettings. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
