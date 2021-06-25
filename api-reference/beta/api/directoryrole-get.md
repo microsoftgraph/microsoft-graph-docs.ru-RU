@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 997882a9385d9fa3c9f474b9d4fa6efc930af21f
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 905afd750bce1976a25cd5e759df4659cbcb5fe0
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991773"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118544"
 ---
 # <a name="get-directoryrole"></a>Получение directoryRole
 
@@ -29,15 +29,15 @@ ms.locfileid: "52991773"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}
-GET /directoryRoles/roleTemplateId={role-templateId}
+GET /directoryRoles/{role-id}
+GET /directoryRoles/roleTemplateId={roleTemplateId}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод **не поддерживает** параметры [запроса OData](/graph/query-parameters) для настройки ответа (например, `$filter` здесь не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,7 +53,7 @@ GET /directoryRoles/roleTemplateId={role-templateId}
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryRole](../resources/directoryrole.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-definition-of-a-directory-role-using-role-objectid"></a>Пример 1. Определение роли каталога с помощью объекта role ObjectId
+### <a name="example-1-get-the-definition-of-a-directory-role-using-role-id"></a>Пример 1. Определение роли каталога с помощью id роли
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -105,7 +105,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-get-the-definition-of-a-directory-role-using-role-templateid"></a>Пример 2. Определение роли каталога с помощью шаблона roleId
+### <a name="example-2-get-the-definition-of-a-directory-role-using-roletemplateid"></a>Пример 2. Определение роли каталога с помощью roleTemplateId
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

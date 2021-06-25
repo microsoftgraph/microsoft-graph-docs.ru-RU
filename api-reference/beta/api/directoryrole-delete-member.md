@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1743ee7027d2afd0651b4216975a8acad74e24b0
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: aec2f698c947a74f2814c4e91f350b612fa0600c
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991819"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118597"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -31,15 +31,15 @@ ms.locfileid: "52991819"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -54,7 +54,7 @@ DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -102,7 +102,7 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Пример 2. Удаление члена роли каталога с помощью шаблона roleId
+### <a name="example-2-remove-directory-role-member-using-roletemplateid"></a>Пример 2. Удаление члена роли каталога с помощью roleTemplateId
 
 #### <a name="request"></a>Запрос
 

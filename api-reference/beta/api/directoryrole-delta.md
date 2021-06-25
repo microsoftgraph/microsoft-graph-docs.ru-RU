@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0d116e66256d78f4f33e8a608e063ea733e14aa1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10a43389f9655409b4d00ecfbcece6687c66ff86
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046841"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118555"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -82,7 +82,7 @@ GET /directoryRoles/delta
 - [Примеры запросов](/graph/delta-query-users)</br>
 
 ### <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -111,8 +111,8 @@ GET https://graph.microsoft.com/beta/directoryRoles/delta
 ---
 
 
-##### <a name="response"></a>Отклик
-Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -124,14 +124,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryRoles",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/directoryRoles/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryRoles",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/directoryRoles/delta?$skiptoken=pkXMyA5aFCIMmH1Kk1XEAnf2X-fodqXKXF03gYPQknSHRxogVsxvSq_26nhos-O2-shortened",
   "value": [
-      {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+    {
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "members@delta": [
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "bb165b45-151c-4cf6-9911-cd7188912848",
+          "@removed": {
+            "reason": "deleted"
+          }
+        }
+      ]
     }
   ]
 }

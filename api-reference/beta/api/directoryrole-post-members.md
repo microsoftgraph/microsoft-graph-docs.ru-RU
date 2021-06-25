@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8425d978a48c2ab737577d2ed40a2d098daf275b
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 135640887f43952a83f93b1b4267645a228383c4
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990810"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118499"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -29,13 +29,13 @@ ms.locfileid: "52990810"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{role-objectId}/members/$ref
-POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
+POST /directoryRoles/{role-id}/members/$ref
+POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -144,7 +144,7 @@ Content-length: 30
 HTTP/1.1 204 No content
 ```
 
-### <a name="example-3-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Пример 3. Добавление нового члена в роль каталога с помощью шаблона roleId
+### <a name="example-3-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>Пример 3. Добавление нового участника в роль каталога с помощью roleTemplateId
 #### <a name="request"></a>Запрос
 В этом запросе замените значение `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** для роли каталога, которую вы хотите назначить объекту пользователя или каталога. `bb165b45-151c-4cf6-9911-cd7188912848`Замените **значение id** объекта пользователя или каталога. 
 

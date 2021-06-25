@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d90baace95b3698a84ef55f74cca327ab95b5081
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 9ae55125cf14c5636346afcd447d417f577d6c84
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990892"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118527"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -30,18 +30,18 @@ ms.locfileid: "52990892"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}/members
-GET /directoryRoles/roleTemplateId={role-templateId}/members
+GET /directoryRoles/{role-id}/members
+GET /directoryRoles/roleTemplateId={roleTemplateId}/members
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -55,7 +55,7 @@ GET /directoryRoles/roleTemplateId={role-templateId}/members
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-role-objectid"></a>Пример 1. Получить членов роли каталога с помощью объекта role ObjectId
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-id"></a>Пример 1. Получить членов роли каталога с помощью id роли
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -115,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-members-of-a-directory-role-using-role-templateid"></a>Пример 2. Получить членов роли каталога с помощью шаблона ролейId
+### <a name="example-2-get-the-members-of-a-directory-role-using-roletemplateid"></a>Пример 2. Получить членов роли каталога с помощью roleTemplateId
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

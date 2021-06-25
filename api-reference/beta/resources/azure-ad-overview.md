@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: 8cc319d05782dbbebad330b48b097c4b0757e9a9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d23dbfd8100122c95212b50fa879e63b55ac77bc
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957088"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118485"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -53,8 +53,8 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Управление разрешениями с согласия пользователей и администраторов в приложениях, установленных в клиенте. | [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) | Н/Д |
 | Управление участием в ролях для пользователей, групп и субъектов-служб в приложениях, установленных в клиенте. | [appRoleAssignment](../resources/approleassignment.md) | Н/Д |
 | **Управление клиентами партнеров** | | |
-| Получайте сведения об отношениях партнерства с клиентами. <br/><br/>**Примечание.** Это относится только к клиентам партнеров. Клиенты партнеров — это клиенты Azure AD, которые принадлежат партнерам корпорации Майкрософт, являющимся [поставщиками облачных решений Майкрософт](https://partnercenter.microsoft.com/partner/programs), участниками программы синдикации Office 365 или участниками партнерской программы Microsoft Advisor.| [contract](../resources/contract.md) | [Вызов Microsoft Graph из приложения Cloud Solution Provider](/graph/auth-cloudsolutionprovider) |
-| Управление доменами, связанными с клиентом. Действия с доменами позволяют регистраторам автоматизировать установление связей доменов для таких служб, как Microsoft 365. | [domain](../resources/domain.md); | [Добавление имени личного домена в Azure Active Directory](/azure/active-directory/active-directory-domains-add-azure-portal) |
+| Получайте сведения об отношениях партнерства с клиентами. <br/><br/>**Примечание.** Это относится только к клиентам партнеров. Клиенты партнеров — это клиенты Azure AD, которые принадлежат партнерам корпорации Майкрософт, являющимся [поставщиками облачных решений Майкрософт](https://partnercenter.microsoft.com/partner/programs), участниками программы синдикации Office 365 или участниками партнерской программы Microsoft Advisor.| [contract](../resources/contract.md) | [Вызов Microsoft Graph из приложения Cloud Solution Provider](/graph/auth-cloudsolutionprovider) |
+| Управление доменами, связанными с клиентом. Действия с доменами позволяют регистраторам автоматизировать установление связей доменов для таких служб, как Microsoft 365. | [domain](../resources/domain.md); | [Добавление имени личного домена в Azure Active Directory](/azure/active-directory/active-directory-domains-add-azure-portal) |
 | **Управление клиентами** | | |
 | Получайте информацию об организации, например адрес, контакты для уведомлений и связи по техническим вопросам, планы обслуживания, на которые она подписана, и связанные с ней домены. | [organization](../resources/organization.md) | Недоступно |
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
@@ -74,4 +74,4 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 - Изучите подробнее методы и свойства ресурсов, наиболее полезных для вашего сценария.
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/partners).

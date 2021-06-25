@@ -1,16 +1,16 @@
 ---
 title: Использование API Microsoft Bookings в Microsoft Graph
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Microsoft Bookings позволяет крупным организациям и владельцам малого бизнеса управлять резервированиями и сведениями клиентов с минимальной настройкой.
 localization_priority: Priority
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 588b7728a29e6eae3e4378da009c907b92ad32f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c21cb95d140fa41711264ec0e6c71b7828b5a709
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071873"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118660"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
@@ -102,7 +102,7 @@ Authorization: Bearer {access token}
 ## <a name="see-also"></a>См. также
 
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+- Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/partners).
 - Узнайте, как выбрать [разрешения](/graph/permissions-reference) в Microsoft Graph.
 
 

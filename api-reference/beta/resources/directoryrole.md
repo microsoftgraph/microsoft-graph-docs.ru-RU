@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 88032b4b514431924ec48f7b7d5e595ca4eb8375
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 701920b532e0c7003e624466c2d8d0614f47989f
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440468"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118702"
 ---
 # <a name="directoryrole-resource-type"></a>Тип ресурса directoryRole
 
@@ -35,7 +35,8 @@ ms.locfileid: "50440468"
 |[Добавление элемента](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| Добавление пользователя в роль каталога путем записи данных в свойство навигации members.|
 |[Список членов](../api/directoryrole-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к членам роли каталога, из свойства навигации members.|
 |[Удаление члена](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Удаление ресурса user из роли каталога.|
-|[Участники списка с областью ролей](../api/directoryrole-list-members.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Список членов этой роли каталога, которые [](administrativeunit.md)являются административными единицами, с помощью коллекции ресурсов scopedRoleMembership.|
+|[Активация directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Активация роли каталога.|
+|[Список scopeMembers](../api/directoryrole-list-scopedmembers.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Список членов этой роли каталога, которые [](administrativeunit.md)являются административными единицами, с помощью коллекции ресурсов scopedRoleMembership.|
 |[delta](../api/directoryrole-delta.md)|Коллекция объектов directoryRole| Получение добавочных изменений для ролей каталога. |
 
 ## <a name="properties"></a>Свойства
