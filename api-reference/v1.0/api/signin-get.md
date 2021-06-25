@@ -5,60 +5,72 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 007047fe0fe9364f99af31ee0447967da7618060
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 6c5e3f215409e065ce6548e59827beb8ae1eafdf
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238402"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129465"
 ---
-# <a name="get-signin"></a><span data-ttu-id="fcd0d-103">Получение объекта signIn</span><span class="sxs-lookup"><span data-stu-id="fcd0d-103">Get signIn</span></span>
+# <a name="get-signin"></a><span data-ttu-id="d2f18-103">Получение объекта signIn</span><span class="sxs-lookup"><span data-stu-id="d2f18-103">Get signIn</span></span>
 
-<span data-ttu-id="fcd0d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fcd0d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d2f18-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2f18-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="fcd0d-105">Получение определенного события входа пользователя Azure AD для клиента.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-105">Retrieve a specific Azure AD user sign-in event for your tenant.</span></span> <span data-ttu-id="fcd0d-106">Входы, которые являются интерактивными по своей природе (где имя пользователя/пароль передается как часть маркера auth) и успешные федеративные входы в настоящее время включены в журналы входа.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-106">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
+<span data-ttu-id="d2f18-105">Получение определенного события входа пользователя Azure AD для клиента.</span><span class="sxs-lookup"><span data-stu-id="d2f18-105">Retrieve a specific Azure AD user sign-in event for your tenant.</span></span> <span data-ttu-id="d2f18-106">Входы, которые являются интерактивными по своей природе (где имя пользователя/пароль передается как часть маркера auth) и успешные федеративные входы в настоящее время включены в журналы входа.</span><span class="sxs-lookup"><span data-stu-id="d2f18-106">Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fcd0d-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fcd0d-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d2f18-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d2f18-107">Permissions</span></span>
 
-<span data-ttu-id="fcd0d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="fcd0d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
+<span data-ttu-id="d2f18-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="d2f18-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).</span></span>
 
-|<span data-ttu-id="fcd0d-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fcd0d-110">Permission type</span></span>      | <span data-ttu-id="fcd0d-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fcd0d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d2f18-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d2f18-110">Permission type</span></span>      | <span data-ttu-id="d2f18-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d2f18-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fcd0d-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fcd0d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fcd0d-113">AuditLog.Read.All и Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="fcd0d-113">AuditLog.Read.All and Directory.Read.All</span></span> |
-|<span data-ttu-id="fcd0d-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fcd0d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fcd0d-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="fcd0d-115">Not supported</span></span>   |
-|<span data-ttu-id="fcd0d-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="fcd0d-116">Application</span></span> | <span data-ttu-id="fcd0d-117">AuditLog.Read.All и Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="fcd0d-117">AuditLog.Read.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="d2f18-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d2f18-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d2f18-113">AuditLog.Read.All и Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2f18-113">AuditLog.Read.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="d2f18-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d2f18-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2f18-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="d2f18-115">Not supported</span></span>   |
+|<span data-ttu-id="d2f18-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="d2f18-116">Application</span></span> | <span data-ttu-id="d2f18-117">AuditLog.Read.All и Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2f18-117">AuditLog.Read.All and Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fcd0d-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fcd0d-118">HTTP request</span></span>
+<span data-ttu-id="d2f18-118">Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.</span><span class="sxs-lookup"><span data-stu-id="d2f18-118">Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+
+<span data-ttu-id="d2f18-119">Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе.</span><span class="sxs-lookup"><span data-stu-id="d2f18-119">In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports.</span></span> <span data-ttu-id="d2f18-120">Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)</span><span class="sxs-lookup"><span data-stu-id="d2f18-120">To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):</span></span>
++ <span data-ttu-id="d2f18-121">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="d2f18-121">Global Administrator</span></span>
++ <span data-ttu-id="d2f18-122">Глобальный читатель</span><span class="sxs-lookup"><span data-stu-id="d2f18-122">Global Reader</span></span>
++ <span data-ttu-id="d2f18-123">Читатель отчетов</span><span class="sxs-lookup"><span data-stu-id="d2f18-123">Reports Reader</span></span>
++ <span data-ttu-id="d2f18-124">"Администратор безопасности"</span><span class="sxs-lookup"><span data-stu-id="d2f18-124">Security Administrator</span></span>
++ <span data-ttu-id="d2f18-125">Оператор безопасности</span><span class="sxs-lookup"><span data-stu-id="d2f18-125">Security Operator</span></span>
++ <span data-ttu-id="d2f18-126">Читатель сведений о безопасности</span><span class="sxs-lookup"><span data-stu-id="d2f18-126">Security Reader</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="d2f18-127">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d2f18-127">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fcd0d-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fcd0d-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d2f18-128">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d2f18-128">Optional query parameters</span></span>
 
-<span data-ttu-id="fcd0d-120">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-120">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="fcd0d-121">Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="fcd0d-121">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="d2f18-129">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d2f18-129">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="d2f18-130">Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).</span><span class="sxs-lookup"><span data-stu-id="d2f18-130">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fcd0d-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fcd0d-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d2f18-131">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d2f18-131">Request headers</span></span>
 
-| <span data-ttu-id="fcd0d-123">Имя</span><span class="sxs-lookup"><span data-stu-id="fcd0d-123">Name</span></span>      |<span data-ttu-id="fcd0d-124">Описание</span><span class="sxs-lookup"><span data-stu-id="fcd0d-124">Description</span></span>|
+| <span data-ttu-id="d2f18-132">Имя</span><span class="sxs-lookup"><span data-stu-id="d2f18-132">Name</span></span>      |<span data-ttu-id="d2f18-133">Описание</span><span class="sxs-lookup"><span data-stu-id="d2f18-133">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="fcd0d-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fcd0d-125">Authorization</span></span>  | <span data-ttu-id="fcd0d-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="fcd0d-126">Bearer {code}</span></span>|
+| <span data-ttu-id="d2f18-134">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d2f18-134">Authorization</span></span>  | <span data-ttu-id="d2f18-135">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="d2f18-135">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fcd0d-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fcd0d-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d2f18-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d2f18-136">Request body</span></span>
 
-<span data-ttu-id="fcd0d-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d2f18-137">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d2f18-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fcd0d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="fcd0d-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d2f18-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="d2f18-138">Response</span></span>
 
-<span data-ttu-id="fcd0d-130">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [signIn](../resources/signin.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-130">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
+<span data-ttu-id="d2f18-139">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [signIn](../resources/signin.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d2f18-139">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fcd0d-131">Пример</span><span class="sxs-lookup"><span data-stu-id="fcd0d-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d2f18-140">Пример</span><span class="sxs-lookup"><span data-stu-id="d2f18-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fcd0d-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="fcd0d-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d2f18-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="d2f18-141">Request</span></span>
 
-<span data-ttu-id="fcd0d-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-133">Here is an example of the request.</span></span>
+<span data-ttu-id="d2f18-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d2f18-142">Here is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="d2f18-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2f18-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin"
@@ -67,11 +79,29 @@ GET /auditLogs/signIns/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-ff5a759b0100
 ```
+# <a name="c"></a>[<span data-ttu-id="d2f18-144">C#</span><span class="sxs-lookup"><span data-stu-id="d2f18-144">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="fcd0d-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="fcd0d-134">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="d2f18-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2f18-145">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="fcd0d-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-135">Here is an example of the response.</span></span>
-><span data-ttu-id="fcd0d-136">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="fcd0d-136">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="d2f18-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2f18-146">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d2f18-147">Java</span><span class="sxs-lookup"><span data-stu-id="d2f18-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="d2f18-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="d2f18-148">Response</span></span>
+
+<span data-ttu-id="d2f18-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d2f18-149">Here is an example of the response.</span></span>
+><span data-ttu-id="d2f18-150">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d2f18-150">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
