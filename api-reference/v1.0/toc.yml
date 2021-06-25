@@ -312,8 +312,9 @@ items:
           - name: Аналитика
             items:
               - name: Office Graph идеи
-                href: resources/officegraphinsights.md
                 items:
+                  - name: Office Graph идеи
+                    href: resources/officegraphinsights.md
                   - name: Список "Общие"
                     href: api/insights-list-shared.md
                   - name: Список "Популярные"
@@ -431,7 +432,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Получить чат для пользователя
                 href: api/chat-get.md
-          - name: Задачи To-Do
+          - name: Задачи из списка дел
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -443,6 +444,14 @@ items:
                 href: api/todotasklist-list-tasks.md
               - name: Перечисление списков задач
                 href: api/todo-list-lists.md
+          - name: Настройки пользователя
+            items:
+              - name: Настройки пользователя
+                href: resources/usersettings.md
+              - name: Получение параметров
+                href: api/usersettings-get.md
+              - name: Обновление параметров
+                href: api/usersettings-update.md
       - name: Группы
         items:
           - name: Обзор
@@ -4309,7 +4318,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -4430,6 +4439,10 @@ items:
                     href: api/directoryrole-post-members.md
                   - name: Удаление члена
                     href: api/directoryrole-delete-member.md
+                  - name: Участники с областью списка
+                    href: api/directoryrole-list-scopedmembers.md
+                  - name: Получение дельты
+                    href: api/directoryrole-delta.md
               - name: Шаблон для ролей каталога
                 href: resources/directoryroletemplate.md
                 items:
@@ -4917,7 +4930,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
-          - name: Управление
+          - name: Система управления
             items:
               - name: Проверки доступа
                 href: resources/accessreviewsv2-root.md
@@ -5288,8 +5301,14 @@ items:
               - name: Список людей
                 href: api/user-list-people.md
           - name: Аналитика
-            href: resources/officegraphinsights.md
             items:
+              - name: Office Graph идеи
+                href: resources/officegraphinsights.md
+              - name: Shared
+                href: resources/insights-shared.md
+                items:
+                  - name: Список "Общие"
+                    href: api/insights-list-shared.md
               - name: Популярные
                 href: resources/insights-trending.md
                 items:
@@ -5300,11 +5319,6 @@ items:
                 items:
                   - name: Список "Использованные"
                     href: api/insights-list-used.md
-              - name: Shared
-                href: resources/insights-shared.md
-                items:
-                  - name: Список "Общие"
-                    href: api/insights-list-shared.md
       - name: Личные контакты.
         href: resources/contact.md
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -5743,7 +5757,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
