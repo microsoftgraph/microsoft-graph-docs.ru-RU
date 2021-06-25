@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8ee9f01bf2b7f590332abcd726e3d6d21b506125
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 5bbd66efa246a0c3bbfdabe4a083a74443486ad2
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241130"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129455"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -28,6 +28,16 @@ ms.locfileid: "52241130"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Приложение | AuditLog.Read.All и Directory.Read.All  |
 
+Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
+
+Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
++ Глобальный администратор
++ Глобальный читатель
++ Читатель отчетов
++ "Администратор безопасности"
++ Оператор безопасности
++ Читатель сведений о безопасности
+
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +45,7 @@ ms.locfileid: "52241130"
 GET auditLogs/signIns
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает `$top` параметры `$skiptoken` запроса OData и OData для настройки `$filter` ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 

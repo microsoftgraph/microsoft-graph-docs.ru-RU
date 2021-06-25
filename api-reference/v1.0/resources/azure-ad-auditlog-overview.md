@@ -5,12 +5,12 @@ localization_priority: Priority
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 28d09cfe7dcb78480e02e5a2a23893495eb6655f
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: eba6b2af8dd6437d8996ab0bc2304c99eb7b4ac1
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546212"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129448"
 ---
 # <a name="activity-reports-api-overview"></a>Обзор API отчетов об активности
 
@@ -65,7 +65,7 @@ Operation | URL-адрес
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Зарегистрируйте приложение](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal), чтобы соответствовать предварительным требованиям отчетов. 
-- Ознакомьтесь с примерами журналов [аудита](/azure/active-directory/active-directory-reporting-api-audit-samples) и [входа](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- Сведения о том, как получить журналы аудита при проверке подлинности с помощью сертификатов, см. в [руководстве по получению данных с помощью API отчетов Azure Active Directory с сертификатами](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).   
 - Изучите действия и ресурс [directoryAudit](directoryaudit.md).
 - Изучите действия и ресурс [signIn](signin.md). 
 <!--

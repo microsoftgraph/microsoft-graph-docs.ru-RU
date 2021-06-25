@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: d0cad229a4d03aa99b6c614c08019120b60bf643
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 69c9f01e9b82a9ab37c5e8d608e37afcd3f295cf
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232020"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118562"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -38,7 +38,7 @@ Microsoft Graph Security API включает указанные ниже клю
 | [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender для конечной точки](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Microsoft Defender для удостоверений](/defender-for-identity/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-|Microsoft 365 <ul><li> [По умолчанию](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Пользовательское оповещение</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|Microsoft 365 <ul><li> [По умолчанию](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Пользовательское оповещение</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure Information Protection](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">Не поддерживается в Azure Sentinel. </p> | <p align="center">&#x2713;</p> |
 > **Примечание.** К экосистеме безопасности Microsoft Graph постоянно подключаются новые поставщики. Чтобы запросить новых поставщиков или дополнительную поддержку у существующих поставщиков, [уведомите о проблеме в репозитории GitHub для Microsoft Graph Security](https://github.com/microsoftgraph/security-api-solutions/issues/new).
@@ -98,7 +98,7 @@ Microsoft Graph Security API раскрывает новые способы вз
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). В разделе **Примеры запросов** выберите элемент **Показать другие примеры** и установите категорию безопасности в положение **Вкл.**
 - Попробуйте [подписаться на получение уведомлений](/graph/webhooks) об изменениях объекта.
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/partners).
 
 ## <a name="see-also"></a>См. также
 

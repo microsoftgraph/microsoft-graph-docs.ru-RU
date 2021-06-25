@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: c268558a3b9185b06b729855c763ff3357944f27
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 87919f9abccb7b90f4c0e947aac6e63e31323082
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645586"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118576"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
@@ -81,5 +81,5 @@ API почты открывает новые способы взаимодейс
 - Узнайте больше о [методах](../resources/message.md#methods), [свойствах](../resources/message.md#properties) и [отношениях](../resources/message.md#relationships) ресурсов [message](../resources/message.md) и [mailFolder](../resources/mailfolder.md).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/partners).
 

@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c03985f37fe7ce58ccf1aec30a2b95f282d16820
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: e3a64d75b1501f5c88154d483cc10342b6b5c551
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854252"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118688"
 ---
 # <a name="get-directoryrole"></a>Получение directoryRole
 
@@ -25,17 +25,17 @@ ms.locfileid: "52854252"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}
-GET /directoryRoles/roleTemplateId={role-templateId}
+GET /directoryRoles/{role-id}
+GET /directoryRoles/roleTemplateId={roleTemplateId}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод **не поддерживает** параметры [запроса OData](/graph/query-parameters) для настройки ответа (например, `$filter` здесь не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -43,7 +43,7 @@ GET /directoryRoles/roleTemplateId={role-templateId}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -51,7 +51,7 @@ GET /directoryRoles/roleTemplateId={role-templateId}
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryRole](../resources/directoryrole.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-definition-of-a-directory-role-using-role-objectid"></a>Пример 1. Определение роли каталога с помощью объекта role ObjectId
+### <a name="example-1-get-the-definition-of-a-directory-role-using-role-id"></a>Пример 1. Определение роли каталога с помощью id роли
 #### <a name="request"></a>Запрос
 
 
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-directory-role-using-role-templateid"></a>Пример 2. Определение роли каталога с помощью шаблона roleId
+### <a name="example-2-get-the-definition-of-a-directory-role-using-roletemplateid"></a>Пример 2. Определение роли каталога с помощью roleTemplateId
 #### <a name="request"></a>Запрос
 
 

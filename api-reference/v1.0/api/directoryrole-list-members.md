@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 878c99489b2faf1c4c079958491b64366945a67c
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: 51e9a1fec22df0abf326a21f1cd7309e343fc152
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854245"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118639"
 ---
 # <a name="list-members-of-a-directory-role"></a>Список участников роли каталога
 
@@ -26,8 +26,8 @@ ms.locfileid: "52854245"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "52854245"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{role-objectId}/members
-GET /directoryRoles/roleTemplateId={role-templateId}/members
+GET /directoryRoles/{role-id}/members
+GET /directoryRoles/roleTemplateId={roleTemplateId}/members
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -53,7 +53,7 @@ GET /directoryRoles/roleTemplateId={role-templateId}/members
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-members-of-a-directory-role-using-role-objectid"></a>Пример 1. Получить членов роли каталога с помощью объекта role ObjectId
+### <a name="example-1-get-the-members-of-a-directory-role-using-role-id"></a>Пример 1. Получить членов роли каталога с помощью id роли
 
 #### <a name="request"></a>Запрос
 
@@ -112,7 +112,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-members-of-a-directory-role-using-role-templateid"></a>Пример 2. Получить членов роли каталога с помощью шаблона ролейId
+### <a name="example-2-get-the-members-of-a-directory-role-using-roletemplateid"></a>Пример 2. Получить членов роли каталога с помощью roleTemplateId
 
 ##### <a name="request"></a>Запрос
 

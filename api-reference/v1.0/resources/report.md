@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 8c9b7502c0a4d5ce4fe5dffca8a266389f6766fb
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9dabfeef47a02015c3fc229920b891d05bb9f8db
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980607"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118670"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Microsoft 365 в Microsoft Graph
 
@@ -25,10 +25,10 @@ Microsoft Graph позволяет управлять доступом к рес
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Ресурсы и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Чтобы узнать больше:
+Ресурсы и API каталога открывают новые способы взаимодействия с пользователями и контроля их работы с помощью Microsoft Graph. Чтобы узнать больше:
 
 - Изучите подробнее методы и свойства ресурсов, наиболее полезных для вашего сценария.
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/partners).
 

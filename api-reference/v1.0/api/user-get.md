@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0e3491f40381e865ecd601ef296c91238078ab15
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: b0fecfe948c59fe184e82f71e83d835cee74c7ff
+ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666669"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53107699"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -37,7 +37,10 @@ ms.locfileid: "52666669"
 ```http
 GET /users/{id | userPrincipalName}
 ```
-Обратите внимание, что если **userPrincipalName** начинается с символа `$`, нужно удалить косую черту (/) после `/users` и заключить **userPrincipalName** в скобки и одиночные кавычки. Дополнительные сведения см. в списке [известных проблем](/graph/known-issues#users).
+
+>**Примечание.**
+> + Если **userPrincipalName** начинается с символа `$`, нужно удалить косую черту (/) после `/users` и заключить **userPrincipalName** в скобки и одиночные кавычки. Например, `/users('$AdeleVance@contoso.com')`. Дополнительные сведения см. в списке [известных проблем](/graph/known-issues#users).
+> + Чтобы запросить пользователя B2B с помощью **userPrincipalName**, закодируйте хэш-символ (#). То есть замените символ `#` на `%23`. Например, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 Для вошедшего пользователя:
 <!-- { "blockType": "ignored" } -->
@@ -71,7 +74,7 @@ GET /me
 
 ### <a name="example-1-standard-users-request"></a>Пример 1. Обычный запрос пользователей
 
-По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и ответ по умолчанию. 
+По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и отклик по умолчанию. 
 
 <!-- {
   "blockType": "request",

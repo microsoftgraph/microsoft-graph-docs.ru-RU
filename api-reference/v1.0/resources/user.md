@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9e64b24e9fb5c3035ed2d6ad8385130553e1b36e
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c165c16ca5ccf0a3e80665b73f68b4bba3a2192f
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911706"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118422"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -144,9 +144,9 @@ ms.locfileid: "52911706"
 |companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени компании не должна превышать 64 символов.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`).|
 |country|String|Страна или регион, в котором находится пользователь, например `US` или `UK`. Максимальная длина: 128 символов. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
-|createdDateTime | DateTimeOffset |Дата создания объекта пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (операторы `eq`, `ne`, `NOT`, `ge`, `le` и `in`) и `$orderBy`.|
+|createdDateTime | DateTimeOffset |Дата создания объекта пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (операторы `eq`, `ne`, `NOT`, `ge`, `le` и `in`).|
 |creationType|String|Указывает, была ли учетная запись пользователя создана как обычная учебная или рабочая учетная запись (`null`), внешняя учетная запись (`Invitation`), локальная учетная запись для клиента Azure Active Directory B2C (`LocalAccount`) или с помощью самостоятельной регистрации с использованием проверки электронной почты (`EmailVerified`). Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`).|
-|deletedDateTime| DateTimeOffset | Дата и время удаления пользователя. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le` и `in`) и `$orderBy`. |
+|deletedDateTime| DateTimeOffset | Дата и время удаления пользователя. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le` и `in`) |
 |department|String|Название отдела, в котором работает пользователь. Максимальная длина: 64 символа. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (операторы `eq`, `ne`, `NOT`, `ge`, `le` и `in`).|
 |displayName|String|Отображаемое имя пользователя в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$orderBy` и `$search`.|
 | employeeHireDate | DateTimeOffset | Дата и время, когда пользователь был нанят или начнет работу в случае найма в будущем. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|

@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 42932d1d058fa7970d444376553a0ae683dc9e2e
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: e03fb736cdd1dce8ca89335d87e9bd6bc65ddc4b
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854259"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118674"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -27,8 +27,8 @@ ms.locfileid: "52854259"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -36,8 +36,8 @@ ms.locfileid: "52854259"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{role-objectId}/members/{id}/$ref
-DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,17 +46,17 @@ DELETE /directoryRoles/roleTemplateId={role-templateId}/members/{id}/$ref
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Пример 1. Удаление члена роли каталога с помощью объекта role objectId
+### <a name="example-1-remove-directory-role-member-using-role-id"></a>Пример 1. Удаление члена роли каталога с помощью role id
 
 #### <a name="request"></a>Запрос
 
@@ -91,8 +91,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 
 
 #### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -102,7 +100,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Пример 2. Удаление члена роли каталога с помощью шаблона roleId
+### <a name="example-2-remove-directory-role-member-using-roletemplateid"></a>Пример 2. Удаление члена роли каталога с помощью roleTemplateId
 
 #### <a name="request"></a>Запрос
 
@@ -137,8 +135,6 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-7
 
 
 #### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true

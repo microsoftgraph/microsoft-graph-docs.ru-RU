@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: b5654e2b010b5cacd2f5a0ddfa2d95256abb1b02
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: d862c60eb6f7e0443178a8bc40bd220799981624
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082323"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129434"
 ---
 # <a name="changenotification-resource-type"></a>Тип ресурса changeNotification
 
@@ -28,14 +28,14 @@ ms.locfileid: "53082323"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| changeType | changeType | Указывает тип изменения, которое поднимет уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательный. |
-| clientState | string | Значение свойства **clientState,** отправленного в запросе подписки (если таково). Максимальная длина: 255 символов. Клиент может проверить, пришло ли уведомление об изменении из службы, сравнивая значения свойства **clientState.** Значение свойства **clientState,** отправленного с подпиской, сравнивается со значением свойства **clientState,** полученного с каждым уведомлением об изменении. Необязательный параметр. |
-| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Предварительный просмотр) Зашифрованное содержимое, прикрепленное с уведомлением об изменении. Только если **шифрованиеCertificate** и **includeResourceData** было определено во время запроса подписки и если ресурс поддерживает его. Необязательный параметр. |
-| id | string | Уникальный ID для уведомления. Необязательный параметр. |
-| lifecycleEvent | lifecycleEventType| Тип уведомления жизненного цикла, если текущее уведомление является уведомлением жизненного цикла. Необязательный параметр. Поддерживаемые значения `missed` : `removed` , `reauthorizationRequired` . |
-| resource | string | URI ресурса, излучающего уведомление об изменении относительно `https://graph.microsoft.com` . Обязательный. |
-| resourceData | [resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательный. |
-| subscriptionExpirationDateTime | DateTimeOffset | Время окончания срока действия подписки. Обязательный. |
+| changeType | changeType | Указывает тип изменения, которое поднимет уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательно. |
+| clientState | string | Значение свойства **clientState,** отправленного в запросе подписки (если таково). Максимальная длина: 255 символов. Клиент может проверить, пришло ли уведомление об изменении из службы, сравнивая значения свойства **clientState.** Значение свойства **clientState,** отправленного с подпиской, сравнивается со значением свойства **clientState,** полученного с каждым уведомлением об изменении. Необязательно. |
+| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Предварительный просмотр) Зашифрованное содержимое, прикрепленное с уведомлением об изменении. Только если **шифрованиеCertificate** и **includeResourceData** было определено во время запроса подписки и если ресурс поддерживает его. Необязательно. |
+| id | string | Уникальный ID для уведомления. Необязательно. |
+| lifecycleEvent | lifecycleEventType| Тип уведомления жизненного цикла, если текущее уведомление является уведомлением жизненного цикла. Необязательно. Поддерживаемые значения `missed` : `subscriptionRemoved` , `reauthorizationRequired` . |
+| resource | string | URI ресурса, излучающего уведомление об изменении относительно `https://graph.microsoft.com` . Обязательно. |
+| resourceData | [resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательно. |
+| subscriptionExpirationDateTime | DateTimeOffset | Время окончания срока действия подписки. Обязательно. |
 | subscriptionId | GUID | Уникальный идентификатор подписки, которая породила уведомление. |
 | tenantId | GUID | Уникальный идентификатор клиента, из которого возникло уведомление об изменении. |
 

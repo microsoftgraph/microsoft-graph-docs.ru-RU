@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ae03863fd35d7438a5fa3b9ff2ae0bfa90e41dce
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: cfb6a722b50e16f3a0e51dbad5705409a1d96009
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854168"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118695"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -25,15 +25,15 @@ ms.locfileid: "52854168"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directoryRoles/{role-objectId}/members/$ref
-POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
+POST /directoryRoles/{role-id}/members/$ref
+POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,7 +51,7 @@ POST /directoryRoles/roleTemplateId={role-templateId}/members/$ref
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-objectid"></a>Пример 1. Добавление нового участника в роль каталога с помощью объекта roleId
+### <a name="example-1-add-a-new-member-to-a-directory-role-using-role-id"></a>Пример 1. Добавление нового участника в роль каталога с помощью role id
 
 В этом запросе замените значение id для роли каталога, которую вы хотите назначить пользователю `fe8f10bf-c9c2-47eb-95cb-c26cc85f1830` или объекту  каталога. `15c1a2d5-9101-44b2-83ab-885db8a647ca`Замените **значение id** объекта пользователя или каталога. 
 
@@ -101,7 +101,7 @@ Content-type: text/plain
 
 ```
 
-### <a name="example-2-add-a-new-member-to-a-directory-role-using-role-templateid"></a>Пример 2. Добавление нового участника в роль каталога с помощью шаблона ролейId
+### <a name="example-2-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>Пример 2. Добавление нового участника в роль каталога с помощью roleTemplateId
 
 В этом запросе замените значение `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **roleTemplateId** для роли каталога, которую вы хотите назначить объекту пользователя или каталога. `bb165b45-151c-4cf6-9911-cd7188912848`Замените **значение id** объекта пользователя или каталога. 
 

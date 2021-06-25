@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 65ebf958eb36006bd0d2ff8fb5b2cbf121253e1a
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 6f8d3e643417aedd7eaead7ccfe6aa5fb3b05405
+ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921825"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53118481"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -39,8 +39,8 @@ Microsoft Graph Security API включает указанные ниже клю
 |[Защита идентификации Azure Active Directory](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 | [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Advanced Threat Protection в Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Расширенная защита от угроз Azure](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)**_| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) _</p> | <p align="center">&#x2713;</p> |
-|Microsoft 365 <ul><li> [По умолчанию](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Пользовательское оповещение</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Расширенная защита от угроз Azure](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+|Microsoft 365 <ul><li> [По умолчанию](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Пользовательское оповещение</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure Information Protection](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">Не поддерживается в Azure Sentinel. </p> | <p align="center">&#x2713;</p> |
 > **Примечание.** К экосистеме безопасности Microsoft Graph постоянно подключаются новые поставщики. Чтобы запросить новых поставщиков или дополнительную поддержку у существующих поставщиков, [уведомите о проблеме в репозитории GitHub для Microsoft Graph Security](https://github.com/microsoftgraph/security-api-solutions/issues/new).
@@ -115,13 +115,13 @@ Microsoft Graph Security API включает указанные ниже клю
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Microsoft Graph Security API раскрывает новые способы взаимодействия с решениями для обеспечения безопасности от корпорации Майкрософт и партнеров. Чтобы приступить к работе, следуйте указанным ниже инструкциям.
+Microsoft Graph Security API раскрывает новые способы взаимодействия с решениями для обеспечения безопасности, предоставляемыми корпорацией Майкрософт и партнерами. Чтобы приступить к работе, следуйте указанным ниже инструкциям.
 
 - Подробно изучите [оповещения](alert.md), [tiIndicator](tiindicator.md) (предварительная версия), [securityAction](securityaction.md) (предварительная версия), [secureScore](securescores.md) и [secureScoreControlProfiles](securescorecontrolprofiles.md).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). В разделе **Примеры запросов** выберите элемент **Показать другие примеры** и установите категорию безопасности в положение **Вкл.**
 - Попробуйте [подписаться на получение уведомлений](/graph/webhooks) об изменениях объекта.
 
-Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/partners).
 
 ## <a name="see-also"></a>См. также
 

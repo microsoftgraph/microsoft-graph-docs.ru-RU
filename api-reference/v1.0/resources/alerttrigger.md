@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Алерттригжер
-description: Содержит сведения о свойствах, которые активируют обнаружение (свойства, существующие в объекте Alert).
+title: тип ресурса alertTrigger
+description: Содержит сведения о свойствах, которые вызвали обнаружение (свойства существуют в объекте оповещений).
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: e99bb19af970eea2b062748ed41a0d62cb3a02b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6bdee4ee550b44694a572e3611652b19c7ff574c
+ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041703"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129441"
 ---
-# <a name="alerttrigger-resource-type"></a>Тип ресурса Алерттригжер
+# <a name="alerttrigger-resource-type"></a>тип ресурса alertTrigger
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о свойствах, которые активируют обнаружение (свойства, существующие в объекте Alert).
+Содержит сведения о свойствах, которые вызвали обнаружение (свойства существуют в объекте оповещений).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|name|String|Имя свойства, служащего триггером обнаружения.|
-|type|String|Тип свойства в соотношении "ключ: значение" для интерпретации. Например, String, Boolean и т. д.|
-|value|String|Значение свойства, служащего триггером обнаружения.|
+|name|String|Имя свойства, которое служит спусковым крючком обнаружения.|
+|type|String|Тип свойства в паре key:value для интерпретации. Например, String, Boolean и т.д.|
+|value|String|Значение свойства, служащая в качестве триггера обнаружения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,7 +44,6 @@ ms.locfileid: "48041703"
   "type": "String",
   "value": "String"
 }
-
 ```
 
 ## <a name="example"></a>Пример
@@ -55,7 +54,6 @@ ms.locfileid: "48041703"
   "type": "String",
   "value": "10.154.9.40"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
