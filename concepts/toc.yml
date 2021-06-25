@@ -352,7 +352,9 @@ items:
             href: people-example.md
           - name: Настройка карточки профиля (предварительная версия)
             href: add-properties-profilecard.md
-          - name: Настройка конфиденциальности аналитики (предварительная версия)
+          - name: Обзор аналитики элементов
+            href: item-insights-overview.md
+          - name: Настройка конфиденциальности аналитики элементов (предварительная версия)
             href: insights-customize-item-insights-privacy.md
       - name: Личные контакты
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -403,6 +405,8 @@ items:
             href: information-protection-overview.md
           - name: Возможности для партнеров
             href: security-partner-overview.md
+      - name: Работоспособность служб и коммуникации (предварительная версия)
+        href: service-communications-concept-overview.md
       - name: Сайты и списки
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
