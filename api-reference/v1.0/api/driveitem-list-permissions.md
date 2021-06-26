@@ -1,43 +1,43 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Список лиц, у которых есть доступ к файлу
+title: Список, у которого есть доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-description: Список эффективных разрешений общего доступа для driveItem.
+description: Список эффективных разрешений общего доступа на driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: a89dc20289ee86933d4eee0c217f769b9fbd426e
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d1e245cdc879d79145924185026f90e3510288df
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240278"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151547"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a><span data-ttu-id="26ea5-103">Список разрешений на общий доступ к сайту driveItem</span><span class="sxs-lookup"><span data-stu-id="26ea5-103">List sharing permissions on a driveItem</span></span>
+# <a name="list-sharing-permissions-on-a-driveitem"></a><span data-ttu-id="22c1f-103">Разрешения общего доступа к списку на driveItem</span><span class="sxs-lookup"><span data-stu-id="22c1f-103">List sharing permissions on a driveItem</span></span>
 
-<span data-ttu-id="26ea5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="26ea5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="22c1f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="22c1f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="26ea5-105">Список эффективных разрешений общего доступа для [driveItem.](../resources/driveitem.md)</span><span class="sxs-lookup"><span data-stu-id="26ea5-105">List the effective sharing permissions on a [driveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="22c1f-105">Список эффективных разрешений общего доступа на [driveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="22c1f-105">List the effective sharing permissions on a [driveItem](../resources/driveitem.md).</span></span>
 
-## <a name="access-to-sharing-permissions"></a><span data-ttu-id="26ea5-106">Доступ к разрешениями совместного доступа</span><span class="sxs-lookup"><span data-stu-id="26ea5-106">Access to sharing permissions</span></span>
+## <a name="access-to-sharing-permissions"></a><span data-ttu-id="22c1f-106">Доступ к разрешениями совместного доступа</span><span class="sxs-lookup"><span data-stu-id="22c1f-106">Access to sharing permissions</span></span>
 
-<span data-ttu-id="26ea5-107">Коллекция разрешений включает потенциально конфиденциальные данные и может быть доступна не для каждого отправителя вызовов.</span><span class="sxs-lookup"><span data-stu-id="26ea5-107">The permissions collection includes potentially sensitive information and may not be available for every caller.</span></span>
+<span data-ttu-id="22c1f-107">Коллекция разрешений включает потенциально конфиденциальные данные и может быть доступна не для каждого отправителя вызовов.</span><span class="sxs-lookup"><span data-stu-id="22c1f-107">The permissions collection includes potentially sensitive information and may not be available for every caller.</span></span>
 
-* <span data-ttu-id="26ea5-108">Для владельца элемента возвращаются все разрешения совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="26ea5-108">For the owner of the item, all sharing permissions will be returned.</span></span> <span data-ttu-id="26ea5-109">Это относится и к совладельцам.</span><span class="sxs-lookup"><span data-stu-id="26ea5-109">This includes co-owners.</span></span>
-* <span data-ttu-id="26ea5-110">Если вызов отправляет не владелец, возвращаются только те разрешения, которые относятся к отправителю вызова.</span><span class="sxs-lookup"><span data-stu-id="26ea5-110">For a non-owner caller, only the sharing permissions that apply to the caller are returned.</span></span>
-* <span data-ttu-id="26ea5-111">Свойства разрешений совместного доступа, содержащие секреты (например, `shareId` и `webUrl`), возвращаются только для тех пользователей, которые могут создать такое разрешение.</span><span class="sxs-lookup"><span data-stu-id="26ea5-111">Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.</span></span>
+* <span data-ttu-id="22c1f-108">Для владельца элемента возвращаются все разрешения совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="22c1f-108">For the owner of the item, all sharing permissions will be returned.</span></span> <span data-ttu-id="22c1f-109">Это относится и к совладельцам.</span><span class="sxs-lookup"><span data-stu-id="22c1f-109">This includes co-owners.</span></span>
+* <span data-ttu-id="22c1f-110">Если вызов отправляет не владелец, возвращаются только те разрешения, которые относятся к отправителю вызова.</span><span class="sxs-lookup"><span data-stu-id="22c1f-110">For a non-owner caller, only the sharing permissions that apply to the caller are returned.</span></span>
+* <span data-ttu-id="22c1f-111">Свойства разрешений совместного доступа, содержащие секреты (например, `shareId` и `webUrl`), возвращаются только для тех пользователей, которые могут создать такое разрешение.</span><span class="sxs-lookup"><span data-stu-id="22c1f-111">Sharing permission properties that contain secrets (e.g. `shareId` and `webUrl`) are only returned for callers that are able to create the sharing permission.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="26ea5-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="26ea5-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="22c1f-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="22c1f-112">Permissions</span></span>
 
-<span data-ttu-id="26ea5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="26ea5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="22c1f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="22c1f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="26ea5-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="26ea5-115">Permission type</span></span>      | <span data-ttu-id="26ea5-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="26ea5-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="22c1f-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="22c1f-115">Permission type</span></span>      | <span data-ttu-id="22c1f-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="22c1f-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="26ea5-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="26ea5-117">Delegated (work or school account)</span></span> | <span data-ttu-id="26ea5-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26ea5-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="26ea5-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="26ea5-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="26ea5-120">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26ea5-120">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="26ea5-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="26ea5-121">Application</span></span> | <span data-ttu-id="26ea5-122">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26ea5-122">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="22c1f-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="22c1f-117">Delegated (work or school account)</span></span> | <span data-ttu-id="22c1f-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22c1f-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="22c1f-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="22c1f-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="22c1f-120">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22c1f-120">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="22c1f-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="22c1f-121">Application</span></span> | <span data-ttu-id="22c1f-122">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="22c1f-122">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="26ea5-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="26ea5-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="22c1f-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="22c1f-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -50,61 +50,59 @@ GET /sites/{siteId}/drive/items/{itemId}/permissions
 GET /users/{userId}/drive/items/{itemId}/permissions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="26ea5-124">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="26ea5-124">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="22c1f-124">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="22c1f-124">Optional query parameters</span></span>
 
-<span data-ttu-id="26ea5-125">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="26ea5-125">This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="22c1f-125">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="22c1f-125">This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="26ea5-126">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="26ea5-126">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="22c1f-126">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="22c1f-126">Optional request headers</span></span>
 
-| <span data-ttu-id="26ea5-127">Имя</span><span class="sxs-lookup"><span data-stu-id="26ea5-127">Name</span></span>          | <span data-ttu-id="26ea5-128">Тип</span><span class="sxs-lookup"><span data-stu-id="26ea5-128">Type</span></span>   | <span data-ttu-id="26ea5-129">Описание</span><span class="sxs-lookup"><span data-stu-id="26ea5-129">Description</span></span>                                                                                                                                     |
+| <span data-ttu-id="22c1f-127">Имя</span><span class="sxs-lookup"><span data-stu-id="22c1f-127">Name</span></span>          | <span data-ttu-id="22c1f-128">Тип</span><span class="sxs-lookup"><span data-stu-id="22c1f-128">Type</span></span>   | <span data-ttu-id="22c1f-129">Описание</span><span class="sxs-lookup"><span data-stu-id="22c1f-129">Description</span></span>                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="26ea5-130">if-none-match</span><span class="sxs-lookup"><span data-stu-id="26ea5-130">if-none-match</span></span> | <span data-ttu-id="26ea5-131">string</span><span class="sxs-lookup"><span data-stu-id="26ea5-131">string</span></span> | <span data-ttu-id="26ea5-132">Если указан заголовок запроса, а предоставленный тег etag совпадает с текущим тегом etag элемента, то возвращается ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="26ea5-132">If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="22c1f-130">if-none-match</span><span class="sxs-lookup"><span data-stu-id="22c1f-130">if-none-match</span></span> | <span data-ttu-id="22c1f-131">string</span><span class="sxs-lookup"><span data-stu-id="22c1f-131">string</span></span> | <span data-ttu-id="22c1f-132">Если указан заголовок запроса, а предоставленный тег etag совпадает с текущим тегом etag элемента, то возвращается ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="22c1f-132">If this request header is included and the etag provided matches the current etag on the item, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="26ea5-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="26ea5-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="22c1f-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="22c1f-133">Response</span></span>
 
-<span data-ttu-id="26ea5-134">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию ресурсов [Permission](../resources/permission.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="26ea5-134">If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.</span></span>
+<span data-ttu-id="22c1f-134">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию ресурсов [Permission](../resources/permission.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="22c1f-134">If successful, this method returns a `200 OK` response code and collection of [Permission](../resources/permission.md) resources in the response body.</span></span>
 
-<span data-ttu-id="26ea5-135">Действующие разрешения совместного доступа для элемента DriveItem можно получить из двух источников:</span><span class="sxs-lookup"><span data-stu-id="26ea5-135">Effective sharing permissions of a DriveItem can come from two sources:</span></span>
+<span data-ttu-id="22c1f-135">Действующие разрешения совместного доступа для элемента DriveItem можно получить из двух источников:</span><span class="sxs-lookup"><span data-stu-id="22c1f-135">Effective sharing permissions of a DriveItem can come from two sources:</span></span>
 
-* <span data-ttu-id="26ea5-136">разрешения совместного доступа, примененные непосредственно к самому элементу DriveItem;</span><span class="sxs-lookup"><span data-stu-id="26ea5-136">Sharing permissions applied directly on the DriveItem itself</span></span>
-* <span data-ttu-id="26ea5-137">разрешения совместного доступа, унаследованные от предков элемента DriveItem.</span><span class="sxs-lookup"><span data-stu-id="26ea5-137">Sharing permissions inherited from the DriveItem's ancestors</span></span>
+* <span data-ttu-id="22c1f-136">разрешения совместного доступа, примененные непосредственно к самому элементу DriveItem;</span><span class="sxs-lookup"><span data-stu-id="22c1f-136">Sharing permissions applied directly on the DriveItem itself</span></span>
+* <span data-ttu-id="22c1f-137">разрешения совместного доступа, унаследованные от предков элемента DriveItem.</span><span class="sxs-lookup"><span data-stu-id="22c1f-137">Sharing permissions inherited from the DriveItem's ancestors</span></span>
 
-<span data-ttu-id="26ea5-p103">Абоненты могут распознать унаследованное разрешение, проверив свойство **inheritedFrom**. Это свойство — ресурс [**itemReference**](../resources/itemreference.md), отсылающий к предшествующему элементу, от которого унаследовано разрешение.</span><span class="sxs-lookup"><span data-stu-id="26ea5-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
+<span data-ttu-id="22c1f-p103">Абоненты могут распознать унаследованное разрешение, проверив свойство **inheritedFrom**. Это свойство — ресурс [**itemReference**](../resources/itemreference.md), отсылающий к предшествующему элементу, от которого унаследовано разрешение.</span><span class="sxs-lookup"><span data-stu-id="22c1f-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
-<span data-ttu-id="26ea5-p104">Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).</span><span class="sxs-lookup"><span data-stu-id="26ea5-p104">SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).</span></span>
+## <a name="example"></a><span data-ttu-id="22c1f-140">Пример</span><span class="sxs-lookup"><span data-stu-id="22c1f-140">Example</span></span>
 
-## <a name="example"></a><span data-ttu-id="26ea5-143">Пример</span><span class="sxs-lookup"><span data-stu-id="26ea5-143">Example</span></span>
+<span data-ttu-id="22c1f-141">В этом примере показано, как получить набор разрешений для элемента в объекте drive пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="22c1f-141">This example retrieves the collection of permissions on an item in the signed in user's drive.</span></span>
 
-<span data-ttu-id="26ea5-144">В этом примере показано, как получить набор разрешений для элемента в объекте drive пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="26ea5-144">This example retrieves the collection of permissions on an item in the signed in user's drive.</span></span>
-
-# <a name="http"></a>[<span data-ttu-id="26ea5-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="26ea5-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="22c1f-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="22c1f-142">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
-# <a name="c"></a>[<span data-ttu-id="26ea5-146">C#</span><span class="sxs-lookup"><span data-stu-id="26ea5-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="22c1f-143">C#</span><span class="sxs-lookup"><span data-stu-id="22c1f-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="26ea5-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="26ea5-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="22c1f-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="22c1f-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="26ea5-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="26ea5-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="22c1f-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="22c1f-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="26ea5-149">Java</span><span class="sxs-lookup"><span data-stu-id="26ea5-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="22c1f-146">Java</span><span class="sxs-lookup"><span data-stu-id="22c1f-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-permissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="26ea5-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="26ea5-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="22c1f-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="22c1f-147">Response</span></span>
 
-<span data-ttu-id="26ea5-151">Этот пример ответа включает три разрешения. Первое разрешение представляет собой ссылку совместного доступа с разрешениями на изменение, второе — явное разрешение для пользователя с именем John, которое унаследовано от родительской папки, а третье разрешение — это ссылка совместного доступа с правами на чтение и запись, созданная приложением.</span><span class="sxs-lookup"><span data-stu-id="26ea5-151">This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.</span></span>
+<span data-ttu-id="22c1f-148">Этот пример ответа включает три разрешения. Первое разрешение представляет собой ссылку совместного доступа с разрешениями на изменение, второе — явное разрешение для пользователя с именем John, которое унаследовано от родительской папки, а третье разрешение — это ссылка совместного доступа с правами на чтение и запись, созданная приложением.</span><span class="sxs-lookup"><span data-stu-id="22c1f-148">This example response includes three permissions, the first is a sharing link with edit permissions, the second is an explicit permission for a user named John, which was inherited from a parent folder, and the third is a read-write sharing link created by an application.</span></span>
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
 
@@ -152,13 +150,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="26ea5-152">Примечания</span><span class="sxs-lookup"><span data-stu-id="26ea5-152">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="22c1f-149">Примечания</span><span class="sxs-lookup"><span data-stu-id="22c1f-149">Remarks</span></span>
 
-<span data-ttu-id="26ea5-p105">Связи между **разрешениями** ресурса DriveItem невозможно развернуть как часть запроса на [получение DriveItem](driveitem-get.md) или коллекции DriveItems. Необходимо открыть доступ непосредственно к свойству разрешений.</span><span class="sxs-lookup"><span data-stu-id="26ea5-p105">The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems. You must access the permissions property directly.</span></span>
+<span data-ttu-id="22c1f-p104">Связи между **разрешениями** ресурса DriveItem невозможно развернуть как часть запроса на [получение DriveItem](driveitem-get.md) или коллекции DriveItems. Необходимо открыть доступ непосредственно к свойству разрешений.</span><span class="sxs-lookup"><span data-stu-id="22c1f-p104">The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems. You must access the permissions property directly.</span></span>
 
-## <a name="error-responses"></a><span data-ttu-id="26ea5-155">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="26ea5-155">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="22c1f-152">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="22c1f-152">Error responses</span></span>
 
-<span data-ttu-id="26ea5-156">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="26ea5-156">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="22c1f-153">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].</span><span class="sxs-lookup"><span data-stu-id="22c1f-153">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
