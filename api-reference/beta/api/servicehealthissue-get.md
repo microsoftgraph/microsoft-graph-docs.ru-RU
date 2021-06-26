@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: a848773e047ed36cdd8aecd082aabffec7f1311b
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 2943c387085ded07745d8f781f496798a65ec3a6
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107859"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151435"
 ---
 # <a name="get-servicehealthissue"></a>Get serviceHealthIssue
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "53107859"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
-|Делегированное (личная учетная запись Майкрософт)|ServiceHealth.Read.All|
-|Приложение|ServiceHealth.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

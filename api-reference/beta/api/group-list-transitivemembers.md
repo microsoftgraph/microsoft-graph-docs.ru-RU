@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 540f7ffd80512504291240f2c4a94db5670d73c5
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 752483696ea527a760fe6c5d97bd0932cb41078c
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681486"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151484"
 ---
 # <a name="list-group-transitive-members"></a>Перечисление транзитивных участников группы
 
@@ -30,7 +30,7 @@ ms.locfileid: "52681486"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
-> **Примечание:** Чтобы перечислить членов скрытой группы членства, требуется разрешение Member.Read.Hidden.
+> **Примечание:** Чтобы перечислить членов скрытой группы членства, требуется разрешение *Member.Read.Hidden.*
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -44,7 +44,9 @@ GET /groups/{id}/transitiveMembers
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Вы можете использовать `$search` в свойствах **displayName** и **description**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+
+Чтобы отфильтровать результаты по типу OData, например или , необходимо использовать расширенные `microsoft.graph.user` `microsoft.graph.group` [параметры запроса.](/graph/aad-advanced-queries) То есть **заглавная строка ConsistencyLevel** и `eventual` `$count=true` строка запроса.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -98,7 +100,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -132,7 +134,7 @@ Content-type: application/json
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_group_transitivemembers_count"
 }-->
 
@@ -143,31 +145,88 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
 ```
 
-893
+`893`
 
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 3. Использование литых и $search OData для получения членства в группах с именами отображения, которые содержат буквы "tier", включая количество возвращенных объектов
+### <a name="example-3-use-the-microsoftgraphgroup-odata-cast-to-get-only-members-that-are-groups"></a>Пример 3. Использование литой OData microsoft.graph.group для получения только участников, которые являются группами.
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
+  "name": "get_group_transitivemembers_odataCast"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{id}/transitivemembers/microsoft.graph.group?$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.count": 2,
+  "value": [
+    {
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/4d0ef681-e88f-42a3-a2db-e6bf1e249e10/Microsoft.DirectoryServices.Group",
+      "id": "4d0ef681-e88f-42a3-a2db-e6bf1e249e10",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "description": null,
+      "displayName": "Executives",
+      "groupTypes": [],
+      "mail": "Executives@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Executives",
+    },
+    {
+      "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/directoryObjects/d9fb0c47-c783-40a1-bce1-53b52ada51fc/Microsoft.DirectoryServices.Group",
+      "id": "d9fb0c47-c783-40a1-bce1-53b52ada51fc",
+      "organizationId": "927c6607-8060-4f4a-a5f8-34964ac78d70",
+      "displayName": "Project Falcon",
+      "groupTypes": [],
+      "mail": "Falcon@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Falcon",
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $search OData для получения членства в группах с отображаемой именами, которые содержат буквы "tier", включая количество возвращенных объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
   "name": "get_tier_count"
 }-->
 ```msgraph-interactive
@@ -177,7 +236,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -202,14 +261,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4. Использование литых и $filter OData для получения членства пользователя в группах с отображаемой именем, которая начинается с "A", включая количество возвращенных объектов.
+### <a name="example-5-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 5. Использование литых и $filter OData для получения членства пользователя в группах с отображаемой именем, которая начинается с "A", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_a_count"
 }-->
 
@@ -220,7 +279,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

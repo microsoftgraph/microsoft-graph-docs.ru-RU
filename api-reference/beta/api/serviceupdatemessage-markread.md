@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 87cddaecbab5dc361f9a2601c7dd38806840406f
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 6df66f75143a719cfa1e6ff3cd507a2a73122438
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107828"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151729"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage: markRead
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "53107828"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
-|Делегированное (личная учетная запись Майкрософт)|ServiceMessageViewpoint.Write|
+|Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/markRead
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|messageIds|Набор строк|Список ID-сообщений, которые необходимо отметить как чтение.|
+|messageIds|Коллекция строк|Список ID-сообщений, которые необходимо отметить как чтение.|
 
 
 ## <a name="response"></a>Отклик

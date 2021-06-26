@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5838b8c395db539f06aad31ef7794eda2f8587ad
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 619053e68a7d5633d095223bca4ddda604f49083
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107829"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151743"
 ---
 # <a name="serviceupdatemessage-favorite"></a>serviceUpdateMessage: любимый
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "53107829"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
-|Делегированное (личная учетная запись Майкрософт)|ServiceMessageViewpoint.Write|
-|Для приложений|Не поддерживается|
+|Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/favorite
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|messageIds|Набор строк|Список ID-сообщений для сохранения в качестве избранного.|
+|messageIds|Коллекция строк|Список ID-сообщений для сохранения в качестве избранного.|
 
 ## <a name="response"></a>Отклик
 

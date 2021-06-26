@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 55c4cd8bd6a6daf84c3f269006fd8d54a4b383e0
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 9aca8752be18bad686677c4c718492ea93ccf0f4
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107834"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151456"
 ---
 # <a name="list-messages"></a>Список сообщений
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "53107834"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
-|Делегированное (личная учетная запись Майкрософт)|ServiceMessage.Read.All|
-|Приложение|ServiceMessage.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

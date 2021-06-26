@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 40507d50252fb8cbc09201bef828d9411f5cd06a
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 63a9342d7c1db2f8716d5f4e255e91630287ba1f
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109181"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151736"
 ---
 # <a name="get-serviceupdatemessage"></a>Get serviceUpdateMessage
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "53109181"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
-|Делегированное (личная учетная запись Майкрософт)|ServiceMessage.Read.All|
-|Приложение|ServiceMessage.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

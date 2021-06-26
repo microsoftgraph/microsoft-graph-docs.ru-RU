@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 9b8f3d341f94c0c2309e9c2674cfee41ddc34a9b
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 58dfdb7a260d2381b05332914fe71f9948c87e17
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067710"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151596"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Развертывание ускоренного обновления безопасности с Windows службы развертывания для бизнеса
 
@@ -160,11 +160,11 @@ Content-Type: application/json
 
 ## <a name="step-3-assign-devices-to-the-deployment-audience"></a>Шаг 3. Назначение устройств аудитории развертывания
 
-После создания развертывания можно назначить устройства аудитории [развертывания.](/graph/api/resources/windowsupdates-deploymentaudience) Устройства могут быть назначены напрямую или с помощью [updatable групп активов.](/graph/api/resources/windowsupdates-updatableassetgroup) После успешного обновления аудитории развертывания Windows update начинает предлагать обновление соответствующим устройствам в соответствии с настройками развертывания.
+После создания развертывания можно назначить устройства аудитории [развертывания.](/graph/api/resources/windowsupdates-deploymentaudience) После успешного обновления аудитории развертывания Windows update начинает предлагать обновление соответствующим устройствам в соответствии с настройками развертывания.
 
-Устройства автоматически регистрируются в службе при добавлении в собрания участников или исключениях аудитории развертывания (например, объект [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) автоматически создается, если он еще не существует).
+Устройства автоматически регистрируются в службе при добавлении в коллекции участников или исключений аудитории развертывания (то есть объект [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) автоматически создается, если он еще не существует).
 
-Ниже приведен пример добавления updatable групп активов и устройств Azure AD в качестве членов аудитории развертывания, а также исключение определенного устройства Azure AD.
+В следующем примере показано, как добавлять устройства Azure AD в качестве участников аудитории развертывания.
 
 ### <a name="request"></a>Запрос
 
@@ -175,19 +175,13 @@ Content-type: application/json
 {
     "addMembers": [
         {
-            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-            "id": "String (identifier)"
-        },
-        {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
-        }
-    ],
-    "addExclusions": [
+        },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"

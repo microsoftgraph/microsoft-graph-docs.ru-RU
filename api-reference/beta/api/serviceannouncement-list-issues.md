@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 887caf3463e64e05c9f2738bc836d2f200d4dbee
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 5f3580d769c191def7145a363a0cf00e034b9fa3
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109202"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151449"
 ---
 # <a name="list-issues"></a>Проблемы со списком
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "53109202"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
-|Делегированное (личная учетная запись Майкрософт)|ServiceHealth.Read.All|
-|Приложение|ServiceHealth.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 73de889de8b668308550ba93263940a3445cf617
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 2ea081205d26b09dbcbcae16ca89cdec094e6f1c
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109175"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151701"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage: неблагоприятный
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "53109175"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
-|Делегированное (личная учетная запись Майкрософт)|ServiceMessageViewpoint.Write|
+|Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/unfavorite
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|messageIds|Набор строк|Список ID-сообщений, которые необходимо удалить из избранного.|
+|messageIds|Коллекция строк|Список ID-сообщений, которые необходимо удалить из избранного.|
 
 ## <a name="response"></a>Отклик
 

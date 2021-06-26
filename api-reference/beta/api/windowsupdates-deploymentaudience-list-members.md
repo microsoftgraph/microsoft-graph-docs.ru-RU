@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 44e9f6f93e060b8ea091c02fa008efd2ff1ade23
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: c3d0ea20730f7d253600e433d96fd0e07e1391f5
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266901"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151757"
 ---
 # <a name="list-deployment-audience-members"></a>Участники аудитории развертывания списка
 Пространство имен: microsoft.graph.windowsUpdates
@@ -26,7 +26,7 @@ ms.locfileid: "52266901"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|WindowsUpdates.ReadWrite.All|
+|Для приложений|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ ms.locfileid: "52266901"
 GET /admin/windows/updates/deployments/{deploymentId}/audience/members
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает некоторые параметры [запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ, в том числе `$count` , , , , , и `$filter` `$orderBy` `$select` `$skip` `$top` .
 
 Чтобы использовать параметр запроса для свойства, которое не унаследовано от [updatableAsset,](../resources/windowsupdates-updatableasset.md)включайте полный тип ресурса для свойства. Например, чтобы выбрать [azureADDevice,](../resources/windowsupdates-azureaddevice.md) `errors` используйте `$select=microsoft.graph.windowsUpdates.azureADDevice/errors` .
@@ -102,10 +102,6 @@ Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-      "id": "f5ba7065-7065-f5ba-6570-baf56570baf5"
-    },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "fb95f07d-9e73-411d-99ab-7eca3a5122b1",

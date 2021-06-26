@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: Перечислите эффективные разрешения общего доступа в driveItem.
+description: Список эффективных разрешений общего доступа на driveItem.
 ms.date: 09/10/2017
-title: Список пользователей, имеющих доступ к файлу
+title: Список, у которого есть доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c1b4bbc44208d528a3576a590185cede3851cf6c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 346fb5de25021ae9672722a8a128fed224853368
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963655"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151477"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a>Список разрешений на совместное использование в driveItem
+# <a name="list-sharing-permissions-on-a-driveitem"></a>Разрешения общего доступа к списку на driveItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечислите эффективные разрешения на общий доступ к [driveItem](../resources/driveitem.md).
+Список эффективных разрешений общего доступа на [driveItem](../resources/driveitem.md).
 
 ## <a name="access-to-sharing-permissions"></a>Доступ к разрешениями совместного доступа
 
@@ -72,8 +72,6 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 * разрешения совместного доступа, унаследованные от предков элемента DriveItem.
 
 Абоненты могут распознать унаследованное разрешение, проверив свойство **inheritedFrom**. Это свойство — ресурс [**itemReference**](../resources/itemreference.md), отсылающий к предшествующему элементу, от которого унаследовано разрешение.
-
-Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## <a name="example"></a>Пример
 
@@ -161,7 +159,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
 [error-response]: /graph/errors
 

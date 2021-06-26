@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 2492a447aa26bbc3de6835a76c5876e55cac774c
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 86a10a5b8b6878faad92e48132ab9283039ee3e6
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067742"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151428"
 ---
 # <a name="enroll-in-update-management-by-the-windows-update-for-business-deployment-service"></a>Регистрация в управлении обновлениями службой Windows обновления для бизнеса
 
@@ -112,7 +112,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-Вы можете полностью оторегистрить устройство из службы, удалив объект устройства. При незарегистрированной регистрации устройство автоматически отключается от управления службой для всех категорий обновлений и удаляется из всех аудиторий развертывания и [updatableAsset](/graph/api/resources/windowsupdates-updatableasset) групп.
+Вы можете полностью оторегистрить устройство из службы, удалив объект устройства. При незарегистрированном устройстве оно автоматически отключается от управления службой для всех категорий обновлений и удаляется из каждого [развертыванияAudience](/graph/api/resources/windowsupdates-deploymentaudience) и [updatableAssetGroup.](/graph/api/resources/windowsupdates-updatableassetgroup)
 
 ### <a name="request"></a>Запрос
 

@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Получить разрешения
+title: Получение разрешения
 localization_priority: Normal
 description: В этой статье рассказывается, как возвратить действующее разрешение на общий доступ для конкретного ресурса разрешения.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a63a84a7c9d78d0a17ae3dc21d72f90c2b1e111f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 3fb5c236faa4d5b16d00cc583b7d0173cbd7d56f
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239802"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151505"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
@@ -22,8 +22,6 @@ ms.locfileid: "50239802"
 Действующие разрешения для элемента могут быть заданы непосредственно для элемента или унаследованы от его предков.
 
 Вызывающая сторона может распознать унаследованное разрешение, проверив свойство `inheritedFrom`. Это свойство представляет собой ресурс [itemReference](../resources/itemreference.md), ссылающийся на элемент, от которого унаследовано разрешение.
-
-Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +45,7 @@ GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметр запроса $select](/graph/query-parameters) для формирования отклика.
 
@@ -117,9 +115,9 @@ Content-type: application/json
 
 Разрешения с аспектом [**invitation**](../resources/sharinginvitation.md) представляют разрешения, добавленные при приглашении определенных пользователей или групп поработать с файлом.
 
-### <a name="error-responses"></a>Отклики с ошибками
+### <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
 [error-response]: /graph/errors
 

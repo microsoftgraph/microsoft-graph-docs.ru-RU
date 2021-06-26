@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0fa881364de85d315fa5a8992b2b9c4699526ef7
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 9fe68bf8c89aa47d232c4c261a19655e66737419
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109178"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151722"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage: markUnread
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "53109178"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
-|Делегированное (личная учетная запись Майкрософт)|ServiceMessageViewpoint.Write|
+|Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/markUnread
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|messageIds|Набор строк|Список ID-сообщений, которые необходимо отметить как непрочитанные.|
+|messageIds|Коллекция строк|Список ID-сообщений, которые необходимо отметить как непрочитанные.|
 
 ## <a name="response"></a>Отклик
 

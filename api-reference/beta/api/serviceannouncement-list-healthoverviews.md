@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3519620b9decc83596fbe9222eed4b9b24d84ac0
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: ef00a4e08ae8ac63e1f9a1ab76d2f5a71f9a8937
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109172"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151715"
 ---
 # <a name="list-healthoverviews"></a>Список healthOverviews
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "53109172"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
-|Делегированное (личная учетная запись Майкрософт)|ServiceHealth.Read.All|
-|Приложение|ServiceHealth.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: В этой статье рассказывается, как возвратить действующее разрешение на общий доступ для конкретного ресурса разрешения.
 ms.date: 09/10/2017
-title: Получение разрешений
+title: Получение разрешения
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: cfbe2c7f7ac87fc49bc510a6f8dbdb351a04aecc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2613eb4e260d3ead63d2619f15ca43521744aec5
+ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973020"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53151652"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
@@ -24,8 +24,6 @@ ms.locfileid: "48973020"
 Действующие разрешения для элемента могут быть заданы непосредственно для элемента или унаследованы от его предков.
 
 Вызывающая сторона может распознать унаследованное разрешение, проверив свойство `inheritedFrom`. Это свойство представляет собой ресурс [itemReference](../resources/itemreference.md), ссылающийся на элемент, от которого унаследовано разрешение.
-
-Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,7 +47,7 @@ GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметр запроса $select](/graph/query-parameters) для формирования отклика.
 
