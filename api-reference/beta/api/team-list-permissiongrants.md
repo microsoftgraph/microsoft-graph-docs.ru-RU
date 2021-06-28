@@ -5,12 +5,12 @@ author: jecha
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30439fab877a2de7152c7d85a81cdfb5aa818f1e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: ebf7c671876eb2804c45478cb56338bce98427aa
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993728"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162212"
 ---
 # <a name="list-permissiongrants-of-a-team"></a>Список объектов permissionGrant команды
 
@@ -18,7 +18,7 @@ ms.locfileid: "52993728"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [команде](../resources/team.md). Это список приложений Azure AD, имеющих доступ к команде, а также типов доступа, которыми обладает каждое приложение.
+Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [команде](../resources/team.md). В этом списке указаны приложения Azure AD с доступом к **команде**, а также соответствующий тип доступа к конкретному ресурсу, которым обладает каждое приложение.
 
 ## <a name="permissions"></a>Разрешения
 

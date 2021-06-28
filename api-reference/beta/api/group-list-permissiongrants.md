@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab1189d7c01a521af65cdb6b241b8068687e7c84
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: ee21465a044274e8583debc645f379269e531433
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944277"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162247"
 ---
 # <a name="list-permissiongrants-of-a-group"></a>Список объектов permissionGrants группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "51944277"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [группе](../resources/group.md). Это список приложений Azure AD, имеющих доступ к группе, одновременно с доступом, который имеет каждое приложение.
+Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [группе](../resources/group.md). В этом списке указаны приложения Azure AD с доступом к **группе**, а также соответствующий тип доступа к конкретному ресурсу, которым обладает каждое приложение.
 
 ## <a name="permissions"></a>Разрешения
 

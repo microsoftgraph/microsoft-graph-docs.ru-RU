@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f66f1fd083560d98cccbce1f58f9e43ef9634b37
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 258bc1132f8a8f030a148b43a4ba04b1ebbba0eb
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990842"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162240"
 ---
 # <a name="list-permissiongrants-of-a-chat"></a>Список объектов permissionGrants чата
 
@@ -18,7 +18,7 @@ ms.locfileid: "52990842"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md). Это список приложений Azure AD, имеющих доступ к чату, а также типов доступа, которыми обладает каждое приложение.
+Список всех [разрешений, предоставленных конкретному ресурсу](../resources/resourcespecificpermissiongrant.md) в [чате](../resources/chat.md). В этом списке указаны приложения Azure AD с доступом к **чату**, а также соответствующий тип доступа к конкретному ресурсу, которым обладает каждое приложение.
 
 ## <a name="permissions"></a>Разрешения
 
