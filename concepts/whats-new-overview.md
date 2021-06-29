@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 075b3aec5ebf315b338e0aeb4d349711dab13890
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 42beebafd90b752548e6be81963c8c7bc484de39
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912042"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162205"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -19,14 +19,62 @@ ms.locfileid: "52912042"
 
 ## <a name="june-2021-new-and-generally-available"></a>Июнь 2021 г.: новые и общедоступные возможности
 
+### <a name="applications"></a>Приложения
+Получение или задание состояния [application](/graph/api/resources/application) или [servicePrincipal](/graph/api/resources/serviceprincipal) с целью указать с помощью свойства **disabledByMicrosoftStatus**, отключила ли корпорация Майкрософт приложение. Среди возможных причин отключения подозрительные, оскорбительные или вредоносные действия, а также нарушение соглашения об использовании служб Майкрософт.
+
+### <a name="change-notifications"></a>Уведомления об изменениях
+Продлен максимальный срок подписки до его истечения для следующих ресурсов:
+- OneDrive [driveItem](/graph/api/resources/driveitem) и SharePoint [list](/graph/api/resources/list) с 3 до 30 дней.
+- [group](/graph/api/resources/group), [user](/graph/api/resources/user) или других ресурсов каталога — с 3 до 29 дней.
+
+### <a name="change-tracking"></a>Отслеживание изменений
+Устранено ограничение на отслеживание изменений в некорневых папках в OneDrive для бизнеса и SharePoint.
+
 ### <a name="education"></a>Образование
-API-интерфейсы для [службы заданий](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) в образовании теперь общедоступны. 
+API-интерфейсы для [службы заданий](/graph/api/resources/educationassignment) в образовании теперь общедоступны. 
+
+### <a name="identity-and-access--governance"></a>Удостоверения и доступ | Управление
+GA интерфейса API [просмотра доступа](/graph/api/resources/accessreviewsv2-root). Ознакомьтесь с [обзором](accessreviews-overview.md) и инструкциями по [просмотру доступа в группы безопасности](tutorial-accessreviews-securitygroup.md) и [доступа в группы Microsoft 365](tutorial-accessreviews-m365group.md). Обратите внимание на то, что поддержка [предыдущего API просмотра доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) прекращается, и он перестанет возвращать данные в мае 2023 г.
+
 
 ## <a name="june-2021-new-in-preview-only"></a>Июнь 2021 года: новые возможности только в предварительной версии
+
+### <a name="cloud-communications--online-meetings"></a>Облачная коммуникация | Онлайн-собрания
+Настройка управления звуком и видео в [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) посредством включения и выключения для участников собрания возможности включать свои камеры и микрофоны с помощью **allowAttendeeToEnableCamera** и **allowAttendeeToEnableMic** соответственно.
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+- [Назначение](/graph/api/cloudpcusersetting-assign?view=graph-rest-beta&preserve-view=true) и управление [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) для включения параметра локального администратора или самообслуживания для пользователя на облачном ПК. В настоящее время назначения можно осуществлять на уровне группы (пользователи, относящиеся к группе Microsoft 365 или к группе безопасности).
+- [Получение](/graph/api/cloudpc-get?view=graph-rest-beta&preserve-view=true) нескольких новых свойств [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true): имен политики подготовки и локального соединения, которое использовалось во время подготовки, а также даты и времени окончания периода отсрочки, до которого производится повторная подготовка или отмена подготовки.
+- Поддержка расширенного набора типов состояния и ошибок для [проверки работоспособности](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) или [локальной связи](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="education"></a>Образование
 - Теперь преподаватели при публикации заданий могут выбирать действия календаря по умолчанию. Преподаватели могут управлять действиями календаря заданий с помощью свойства **addToCalendarAction** ресурса [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
 - Теперь преподаватели при публикации заданий также могут настраивать действия календаря по умолчанию. Преподаватели могут управлять действиями календаря заданий по умолчанию с помощью свойства **addToCalendarAction** ресурса [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true).
+
+### <a name="groups"></a>Группы
+Разрешение назначения роли Azure AD [группе](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) при ее создании путем настройки свойства **isAssignableToRole**. Если это свойство настроено, оно обеспечивает удобное управление ролями пользователей. Вместо назначения роли каждому пользователю соответствующим пользователям разрешается присоединиться к группе, и назначение роли группе будет по умолчанию означать присвоение этой роли каждому новому пользователю в ней. 
+
+### <a name="identity-and-access--governance"></a>Удостоверения и доступ | Управление
+Настройте уведомление пользователей или участников группы о ходе выполнения [просмотра доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) с помощью свойства **additionalNotificationRecipients** [определения расписания](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверения и доступ | Удостоверения и вход
+Добавление фильтра для динамического включения и исключения устройств с использованием свойства **deviceFilter** ресурса [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true).
+
+### <a name="sites-and-lists"></a>Сайты и списки
+Создание или получение существующей ссылки [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-beta&preserve-view=true) для [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) путем вызова [createLink](/graph/api/listitem-createlink?view=graph-rest-beta&preserve-view=true).
+
+### <a name="teamwork"></a>Командная работа
+- [Получение](/graph/api/chat-get?view=graph-rest-beta&preserve-view=true) непрозрачного URL-адреса для ресурса [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) через свойство **webUrl**.
+- [Подписка на уведомления об изменениях ](/graph/webhooks?view=graph-rest-beta&preserve-view=true) ресурса [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) или [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).
+- Использование разрешений [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) с API для ресурса [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true), [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true) или [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).
+- Получение списка [выданных разрешений для конкретных ресурсов](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true) для ресурса [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), в котором указаны приложения этой команды и предоставленные этим приложениям разрешения для конкретных ресурсов.
+- [Получение](/graph/api/teamsasyncoperation-get?view=graph-rest-beta&preserve-view=true) конкретной [асинхронной операции](/graph/api/resources/teamsasyncoperation?view=graph-rest-beta&preserve-view=true) или [списка](/graph/api/chat-list-operations?view=graph-rest-beta&preserve-view=true) всех асинхронных операций, запущенных для ресурса [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
+- Можно указать [приложение Teams](/graph/api/resources/teamsapp?view=graph-rest-beta&preserve-view=true) при [создании чата](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true).
+- Использование единого действия [provisionEmail](/graph/api/channel-provisionemail?view=graph-rest-beta&preserve-view=true) для получения адреса электронной почты ресурса [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), если таковой существует, или его создания. Использование действия [removeEmail](/graph/api/channel-removeemail?view=graph-rest-beta&preserve-view=true) для удаления адреса электронной почты.
+
+### <a name="teamwork--shifts"></a>Командная работа | Смены
+- Поддержка сущностей [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true) и [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) для синхронных уведомлений об изменениях.
+- Поддержка управления ресурсами и распространенными функциями [карточки времени](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true), такими как [clock in](/graph/api/timecard-clockin?view=graph-rest-beta&preserve-view=true), [clock out](/graph/api/timecard-clockout?view=graph-rest-beta&preserve-view=true), [start break](/graph/api/timecard-startbreak?view=graph-rest-beta&preserve-view=true), [end break](/graph/api/timecard-endbreak?view=graph-rest-beta&preserve-view=true), [confirm](/graph/api/timecard-confirm?view=graph-rest-beta&preserve-view=true) и [replace](/graph/api/timecard-replace?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="may-2021-new-and-generally-available"></a>Март 2021 г.: новые и общедоступные возможности
 
@@ -62,6 +110,9 @@ API-интерфейсы для [службы заданий](/graph/api/resourc
   - Операции чтения и записи, а также метод [updateAdDomainPassword](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) ресурса [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true).
   - Операции чтения и записи, а также метод [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) ресурса [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
 
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Ежемесячные обновления Intune за сентябрь для бета-версии. Установите фильтр **Дата** в значение "июнь 2021" и выполните поиск раздела с таким заголовком.
+
 ### <a name="education"></a>Образование
 - [Настройте папку ресурсов SharePoint](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) для загрузки и хранения всех файловых ресурсов в одном месте для [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
 - [Настройте папку ресурсов SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) для загрузки и хранения всех файловых ресурсов, таких как файл Word или Excel, в одном месте для [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
@@ -76,61 +127,6 @@ API-интерфейсы для [службы заданий](/graph/api/resourc
 - Новая поддержка сериализации и десериализации JSON.
 - Удобный доступ к сведениям откликов.
 - Более удобные возможности обновления зависимостей.
-
-## <a name="april-2021-new-and-generally-available"></a>Апрель 2021 г.: новые и общедоступные возможности
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
-- Управляйте [политикой проверки подлинности](/graph/api/resources/authenticationflowspolicy) на уровне клиента для включения или отключения [самостоятельной регистрации](/graph/api/resources/selfservicesignupauthenticationflowconfiguration) внешних пользователей.
-- Администраторы могут связывать пользовательские потоки с приложениями, общий доступ к которым предоставлен внешним пользователям, и включить [самостоятельную регистрацию](/azure/active-directory/external-identities/self-service-sign-up-overview) в этих приложениях. Они могут настраивать пользовательские потоки самостоятельной регистрации и создавать персонализированные интерфейсы регистрации. После связи приложения с пользовательским потоком пользователи, переходящие в это приложение, смогут запускать поток регистрации, предоставляющий гостевую учетную запись.
-- Настройка [атрибутов потоков пользователей](/graph/api/resources/identityuserflowattribute) в клиенте Azure AD позволяет собирать информацию о пользователе во время регистрации. Кроме того, можно собрать встроенный набор атрибутов или настроить специальные атрибуты потоков пользователей для сбора информации о пользователе, не встроенном в каталог. 
-- В [пользовательском потоке Azure Active Directory](/graph/api/resources/b2xidentityuserflow) вы можете управлять стандартными языковыми параметрами и [настраивать языки и строки, отображаемые для пользователей в пользовательском потоке](/graph/api/resources/userflowlanguageconfiguration).
-- Использование [соединителя API](/graph/api/resources/identityapiconnector) в пользовательских потоках для самостоятельной регистрации Azure AD и регистрации Azure AD B2C, чтобы вызывать API на определенном шаге для воздействия на выполнение пользовательского потока.
-
-### <a name="teamwork"></a>Командная работа
-- Определяйте канал по свойству **channelIdentity**, если [chatMessage](/graph/api/resources/chatmessage) находится в [канале](/graph/api/resources/channel).
-- Определяйте чат по свойству **chatId**, если **[chatMessage](/graph/api/resources/chatmessage)** находится в [чате](/graph/api/resources/chat).
-- Используйте связь **messages**, чтобы получить все ресурсы [chatMessage](/graph/api/resources/chatmessage) в [чате](/graph/api/resources/chat).
-- Используйте разрешения приложения, чтобы [получить](/graph/api/chat-get) свойства указанного [чата](/graph/api/resources/chat).
-- Используйте разрешения приложения, чтобы [получить указанного участника чата](/graph/api/chat-get-members) или [всех участников чата](/graph/api/chat-list-members), включенных в чат. Поскольку данные пользователей как участников чата являются конфиденциальными (кроме получения разрешений приложения), [запросите дополнительный доступ](teams-protected-apis.md) к этим операциям.
-
-### <a name="use-the-toolkit"></a>Использование Toolkit
-Впервые используете [Microsoft Graph Toolkit](/graph/toolkit/overview)? Попробуйте новую [схему обучения Toolkit](/learn/paths/m365-msgraph-toolkit/?WT.mc_id=m365-19989-cxa), используйте набор веб-компонентов и поставщиков проверки подлинности Toolkit для подключения веб-приложения к Microsoft Graph и загрузки данных из Microsoft 365.
-
-## <a name="april-2021-new-in-preview-only"></a>Апрель 2021 г.: новые возможности только в предварительной версии
-
-### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Онлайн-собрания
-- Получите [отчет](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) о [присутствии каждого участника](/graph/api/resources/attendancerecord?view=graph-rest-beta&preserve-view=true) на запланированном онлайн-собрании с помощью свойства [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) **meetingAttendanceReport**.
-- Включите или отключите чат либо ограничьте его длительность для онлайн-собрания с помощью свойства **allowMeetingChat**.
-- Включите или отключите реакции для онлайн-собрания с помощью свойства **allowTeamworkReactions**.
-
-### <a name="compliance"></a>Соответствие требованиям
-[Получите](/graph/api/ediscovery-settings-get?view=graph-rest-beta&preserve-view=true), [обновите](/graph/api/ediscovery-settings-update?view=graph-rest-beta&preserve-view=true) или [сбросьте до значений по умолчанию](/graph/api/ediscovery-settings-resettodefault?view=graph-rest-beta&preserve-view=true) следующие [параметры](/graph/api/resources/ediscovery-settings?view=graph-rest-beta&preserve-view=true) для [дела](/graph/api/resources/ediscovery-case?view=graph-rest-beta&preserve-view=true) обнаружения электронных данных:
-- [Обнаружение дубликатов, неполных дубликатов](/microsoft-365/compliance/near-duplicate-detection-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true) и [цепочек сообщений](/microsoft-365/compliance/email-threading-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true) с помощью свойства **redundancyDetection**.
-- [Определение тем](/microsoft-365/compliance/themes-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true), являющихся преобладающими в документах набора для проверки, с помощью свойства **topicModeling**.
-- [Извлечение текста из файлов изображений путем распознавания текста (OCR)](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery?view=o365-worldwide&preserve-view=true#optical-character-recognition-ocr) с помощью свойства **ocr**.
-
-Эти параметры обеспечивают функциональность аналитики, [позволяющую выполнить интеллектуальный отбор данных](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide&preserve-view=true#cull-data-intelligently) в комплексном рабочем процессе [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide&preserve-view=true).
-
-### <a name="devices-and-apps--device-updates"></a>Устройства и приложения | Обновления устройств
-Появление API для службы развертывания Центра обновления Windows для бизнеса. Служба поддерживает развертывание обновлений компонентов Windows 10 и ускорение обновления системы безопасности Windows 10 на устройствах. Чтобы получить дополнительные сведения, начните с [обзора API обновлений Windows](windowsupdates-concept-overview.md).
-
-### <a name="education"></a>Образование
-- Свяжите папку с [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) для хранения всех связанных файловых ресурсов с помощью свойства **resourcesFolderUrl**.
-- Используйте прямую ссылку на [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) с помощью свойства **webUrl**.
-
-### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-Администраторы могут [получить](/graph/api/accessreviewpolicy-get?view=graph-rest-beta&preserve-view=true) или [обновить](/graph/api/accessreviewpolicy-update?view=graph-rest-beta&preserve-view=true) политики на уровне каталога для проверки доступа с помощью ресурса [accessReviewPolicy](/graph/api/resources/accessreviewpolicy?view=graph-rest-beta&preserve-view=true). Например, администраторы могут использовать политику проверки доступа, чтобы включить или отключить владельцев группы, проверяющих доступ в группах, которыми они владеют.
-
-### <a name="search"></a>Поиск
-[Включите варианты написания слов или исправления](search-concept-speller.md) для пользовательского запроса. Это полезно, когда пользовательский запрос содержит опечатки или когда из-за ошибок не удается получить результаты поиска.
-
-### <a name="teamwork"></a>Командная работа
-- Используйте [предоставление разрешения для определенных ресурсов](/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta&preserve-view=true), чтобы перечислять приложения с доступом к указанной [группе ](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) или [чату](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
-- [Получите](/graph/api/teamsappicon-get?view=graph-rest-beta&preserve-view=true) свойства [значка](/graph/api/resources/teamsAppIcon?view=graph-rest-beta&preserve-view=true), связанного с приложением Teams. Чтобы получить фактическое изображение значка, используйте [получение размещенного содержимого](/graph/api/teamworkhostedcontent-get?view=graph-rest-beta&preserve-view=true).
-
-### <a name="use-sdks"></a>Использование пакетов SDK
-- Попробуйте [предварительный выпуск клиентской библиотеки JavaScript для Microsoft Graph версии 3.0.0](https://www.npmjs.com/package/@microsoft/microsoft-graph-client/v/3.0.0-Preview.1). Этот выпуск включает несколько потоков проверки подлинности, проверку подлинности на стороне сервера, отправку больших файлов Node.js Stream, отслеживание хода выполнения и многое другое. Дополнительные сведения см. в [руководстве по обновлению](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/changelogs/v3-upgrade-guide.md).
-- Попробуйте новую схему обучения, чтобы [ознакомиться со сценариями Microsoft Graph для разработки JavaScript](/learn/paths/m365-msgraph-scenarios/?WT.mc_id=m365-16105-cxa).
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?

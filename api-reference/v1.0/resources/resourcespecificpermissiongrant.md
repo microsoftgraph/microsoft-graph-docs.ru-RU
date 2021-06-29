@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 769c4d405473ef800b92fbecb8797588cf59eb57
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 2fd6e9e09a092719f20de2c34f2120537cd00606
+ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944304"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53162198"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>тип ресурса resourceSpecificPermissionGrant
 
@@ -18,11 +18,13 @@ ms.locfileid: "51944304"
 
 РесурсSpecificPermissionGrant объявляет разрешение, предоставленное конкретному приложению AzureAD для экземпляра ресурса в Microsoft Graph.
 
+Дополнительные сведения о предоставлении приложениям согласия на доступ к конкретному экземпляру ресурса см. в примере " Согласие на [доступ к ресурсам".](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+
 ## <a name="methods"></a>Методы
 
 |  Метод                                                                   |  Возвращаемый тип                                                                     | Описание                                                  | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
-|[Список разрешений группы](../api/group-list-permissiongrants.md) | [коллекция resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных в определенной группе. |
+|[Перечисление предоставленных разрешений группы](../api/group-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, определенных для ресурсов, которые были предоставлены в определенной [группе.](group.md) |
 
 ## <a name="properties"></a>Свойства
 
@@ -30,11 +32,11 @@ ms.locfileid: "51944304"
 | :-------------- | :------------ | :------------------------------------------------------------------------------------ |
 | id              | string        | Уникальный идентификатор гранта разрешений, определяемого конкретными ресурсами. Только для чтения.           |
 | deletedDateTime | dateTimeOffset| Не используется.                                                                             |
-| clientId        | String        | ID приложения Azure AD, которое было предоставлено доступ. Только для чтения.                            |
-| clientAppId     | String        | ID директора службы приложения Azure AD, которое было предоставлено доступ. Только для чтения.   |
-| resourceAppId   | String        | ID приложения Azure AD, на который размещен ресурс. Только для чтения.                        |
-| permissionType  | String        | Тип разрешения. Возможные значения: `Application`, `Delegated`. Только для чтения. |
-| разрешение      | String        | Имя разрешения. Только для чтения.                                                |
+| clientId        | string        | ID приложения Azure AD, которое было предоставлено доступ. Только для чтения.                            |
+| clientAppId     | string        | ID директора службы приложения Azure AD, которое было предоставлено доступ. Только для чтения.   |
+| resourceAppId   | string        | ID приложения Azure AD, на который размещен ресурс. Только для чтения.                        |
+| permissionType  | string        | Тип разрешения. Возможные значения: `Application`, `Delegated`. Только для чтения. |
+| разрешение      | string        | Имя разрешения, определенного для ресурса. Только для чтения.                                                |
 
 ## <a name="json-representation"></a>Представление JSON
 
