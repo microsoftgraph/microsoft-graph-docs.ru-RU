@@ -28,6 +28,11 @@ items:
         href: /graph/paging?context=graph/api/beta
       - name: Использование параметров запроса
         href: /graph/query-parameters?context=graph/api/beta
+        items:
+          - name: Использование параметра поискового запроса
+            href: /graph/search-query-parameter?context=graph/api/beta
+          - name: Расширенные возможности запросов
+            href: /graph/aad-advanced-queries?context=graph/api/beta
       - name: Пакетная обработка
         displayName: Batch requests
         href: /graph/json-batching?context=graph/api/beta
@@ -488,7 +493,7 @@ items:
                 href: api/chat-get.md
               - name: Списки чатов для пользователя
                 href: api/chat-list.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -1271,9 +1276,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -9587,6 +9592,15 @@ items:
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Назначение
                     href: api/cloudpcprovisioningpolicy-assign.md
+              - name: Событие аудита облачных ПК
+                href: resources/cloudpcauditevent.md
+                items:
+                  - name: Список
+                    href: api/virtualendpoint-list-auditevents.md
+                  - name: Получение
+                    href: api/cloudpcauditevent-get.md
+                  - name: Получить типы действий аудита
+                    href: api/cloudpcauditevent-getauditactivitytypes.md
               - name: Параметр пользователя облачного ПК
                 href: resources/cloudpcusersetting.md
                 items:
@@ -9640,7 +9654,7 @@ items:
                     href: resources/windowsupdates-qualityupdatecatalogentry.md
                   - name: Записи каталога списков
                     href: api/windowsupdates-catalog-list-entries.md
-              - name: Развертывание
+              - name: 'развертывание, —'
                 href: resources/windowsupdates-deployment.md
                 items:
                   - name: Развертывание списков
@@ -9858,7 +9872,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -10302,7 +10316,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверение и доступ
+      - name: Удостоверения и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -10784,7 +10798,7 @@ items:
                         href: api/phoneauthenticationmethod-enablesmssignin.md
                       - name: Отключение регистрации SMS
                         href: api/phoneauthenticationmethod-disablesmssignin.md
-                  - name: Email
+                  - name: Электронная почта
                     href: resources/emailauthenticationmethod.md
                     items:
                       - name: Список
@@ -11465,7 +11479,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
-          - name: Система управления
+          - name: Управление
             items:
               - name: Проверки доступа
                 href: resources/accessreviewsv2-root.md
@@ -11981,7 +11995,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12413,7 +12427,7 @@ items:
                     href: api/projectparticipation-update.md
                   - name: Удаление
                     href: api/projectparticipation-delete.md
-              - name: Публикации
+              - name: Publications
                 items:
                   - name: Публикация элемента
                     href: resources/itempublication.md
@@ -12539,9 +12553,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Параметры
                 items:
-                  - name: Settings
+                  - name: Параметры
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -12586,7 +12600,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13120,7 +13134,7 @@ items:
                 href: api/tiindicator-deletetiindicatorsbyexternalid.md
           - name: Ошибки
             href: resources/security-error-codes.md
-      - name: Здоровье и связь служб (предварительный просмотр)
+      - name: Работоспособность служб и коммуникации (предварительная версия)
         items:
           - name: Обзор
             href: resources/service-communications-api-overview.md
@@ -13242,7 +13256,7 @@ items:
                 href: api/columndefinition-update.md
               - name: Удаление
                 href: api/columndefinition-delete.md
-          - name: типы контента;
+          - name: Типы контента
             items:
               - name: Тип содержимого
                 href: resources/contentType.md
@@ -14007,7 +14021,7 @@ items:
                 href: api/onenote-post-notebooks.md
           - name: 'Гранты разрешений, определенные для ресурсов'
             href: resources/resourcespecificpermissiongrant.md
-      - name: Задачи из списка дел
+      - name: Задачи To-Do
         displayName: Microsoft To Do
         items:
           - name: Обзор
@@ -14135,7 +14149,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

@@ -28,6 +28,11 @@ items:
         href: /graph/paging?context=graph/api/1.0
       - name: Использование параметров запроса
         href: /graph/query-parameters?context=graph/api/1.0
+        items:
+          - name: Использование параметра поискового запроса
+            href: /graph/search-query-parameter?context=graph/api/1.0
+          - name: Расширенные возможности запросов
+            href: /graph/aad-advanced-queries?context=graph/api/1.0
       - name: Пакетная обработка
         displayName: Batch requests
         href: /graph/json-batching?context=graph/api/1.0
@@ -432,7 +437,7 @@ items:
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Получить чат для пользователя
                 href: api/chat-get.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -1096,7 +1101,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4143,7 +4148,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -4318,7 +4323,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверение и доступ
+      - name: Удостоверения и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -4930,7 +4935,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Удалить
                         href: api/identityapiconnector-delete.md
-          - name: Система управления
+          - name: Управление
             items:
               - name: Проверки доступа
                 href: resources/accessreviewsv2-root.md
@@ -5097,7 +5102,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5369,7 +5374,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
