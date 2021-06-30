@@ -5,17 +5,19 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 46b653f3d69111043c41ec0a83907ce041c10a81
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e16d6aade57dfb10f4cd387d9d6719c85c2c3b79
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954133"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53209340"
 ---
 # <a name="team-sendactivitynotification"></a>команда: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправьте уведомление о канале действий в области группы. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в материале Отправка уведомлений о [действиях Teams.](/graph/teams-send-activityfeednotifications)
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Отправьте уведомление о канале действий в области группы. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в Teams [действия.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +26,7 @@ ms.locfileid: "50954133"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|TeamsActivity.Send|
+|Приложение|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,11 +52,11 @@ POST /teams/{teamId}/sendActivityNotification
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
-|activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
-|chainId|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
-|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams покажет только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи ленты действий, соответствующие `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
-|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
+|chainId|Int64|Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
+|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. См. [также aadUserNotificationRecipient,](../resources/aadusernotificationrecipient.md) [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)и [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). |
 
 При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityUrl` ресурсы:
 
@@ -63,7 +65,7 @@ POST /teams/{teamId}/sendActivityNotification
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Примечание:** URL-адрес объекта должен быть одним и тем же или детским ресурсом группы в URL-адресе. Кроме того, приложение [Teams должно](/microsoftteams/platform/overview) быть установлено в команде.
+> **Примечание:** URL-адрес объекта должен быть одним и тем же или детским ресурсом группы в URL-адресе. Кроме того, [Teams приложение должно](/microsoftteams/platform/overview) быть установлено в команде.
 
 ## <a name="response"></a>Ответ
 
@@ -209,7 +211,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Пример 3. Уведомление пользователя о событии с использованием настраиваемой темы
 
-Как повествуют в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Однако, если вы хотите связаться с аспектом, который не является частью команды или не представлен Microsoft Graph, или вы хотите настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при настройке `topic` источника `text` для .
+Как повествуют в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Однако если вы хотите связаться с аспектом, который не является частью команды или не представлен Корпорацией Майкрософт Graph, или вы хотите настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при настройке `topic` источника `text` для .
 
 #### <a name="request"></a>Запрос
 
@@ -263,6 +265,103 @@ Content-Type: application/json
 
 ---
 
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-the-team-members-about-pending-finance-approval-requests"></a>Пример 4. Уведомление членов группы о ожидающих запросах на утверждение финансирования
+
+В этом примере показано, как можно отправить уведомление о канале действий всем участникам группы. Этот пример похож на предыдущие примеры. Однако в этом случае это `recipient` [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md). Обратите `teamId` внимание, что указанный в `recipient` должен соответствовать указанному `teamId` в URL-адресе запроса.
+
+> **Примечание:** Возможность отправлять уведомления всем членам группы ограничена группами с 10 000 членов или менее. Если количество членов группы превышает 10 000, никто из членов группы не получит уведомления.
+
+#### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_4"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-5-notify-the-channel-members-about-pending-finance-approval-requests"></a>Пример 5. Уведомление участников канала о ожидающих запросах на утверждение финансирования
+
+В этом примере показано, как можно отправить уведомление о канале действий всем участникам канала. Этот пример похож на предыдущий пример. Однако в этом случае это `recipient` [каналMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). Обратите `teamId` внимание, что указанный в `recipient` должен соответствовать указанному `teamId` в URL-адресе запроса.
+
+#### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_5"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "e8bece96-d393-4b9b-b8da-69cedef1a7e7",
+        "channelId": "19:3d61a2309f094f4a9310b20f1db37520@thread.tacv2"
+    },
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
 
 #### <a name="response"></a>Отклик
 <!-- {

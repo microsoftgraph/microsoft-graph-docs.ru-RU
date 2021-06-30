@@ -5,17 +5,19 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4fd0d8a2e8b9d7d6239c2de8610415407c5f5f03
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3da2bff0c6ea8997a880c93044cc09f962825562
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948062"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53207506"
 ---
 # <a name="chat-sendactivitynotification"></a>чат: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправьте уведомление о канале действий в области чата. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в материале Отправка уведомлений о [действиях Teams.](/graph/teams-send-activityfeednotifications)
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Отправьте уведомление о канале действий в области чата. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в Teams [действия.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +26,7 @@ ms.locfileid: "50948062"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|TeamsActivity.Send|
+|Приложение|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,18 +52,18 @@ POST /chats/{chatId}/sendActivityNotification
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
-|activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
-|chainId|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
-|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams покажет только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи ленты действий, соответствующие `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
-|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
+|chainId|Int64|Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
+|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) и [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 
 При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityURL` ресурсы:
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **Примечание:** URL-адрес объекта должен быть таким же, как или детский ресурс чата в URL-адресе. Кроме того, приложение [Teams должно](/microsoftteams/platform/overview) быть установлено в чате.
+> **Примечание:** URL-адрес объекта должен быть таким же, как или детский ресурс чата в URL-адресе. Кроме того, [Teams приложение должно](/microsoftteams/platform/overview) быть установлено в чате.
 
 ## <a name="response"></a>Ответ
 
@@ -71,7 +73,7 @@ POST /chats/{chatId}/sendActivityNotification
 
 ### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Пример 1. Уведомление пользователя о задаче, созданной в чате
 
-В этом примере показано, как можно отправить уведомление о ленте действий для новой задачи, созданной в чате. Дополнительные сведения см. в [материале Отправка уведомлений о действиях Teams.](/graph/teams-send-activityfeednotifications)
+В этом примере показано, как можно отправить уведомление о ленте действий для новой задачи, созданной в чате. Дополнительные сведения см. [в Teams уведомлений об активности.](/graph/teams-send-activityfeednotifications)
 
 #### <a name="request"></a>Запрос
 
@@ -135,7 +137,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-a-approval-needed-in-a-chat-message"></a>Пример 2. Уведомление пользователя об утверждении, необходимом в сообщении чата
+### <a name="example-2-notify-a-user-about-an-approval-needed-in-a-chat-message"></a>Пример 2. Уведомление пользователя об утверждении, необходимом в сообщении чата
 
 Как и в предыдущем примере, в этом примере `entityUrl` используется `topic` для . Однако в этом случае он связывается с сообщением в чате. В сообщении может быть карточка с кнопкой утверждения.
 
@@ -257,6 +259,54 @@ Content-Type: application/json
 
 ---
 
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-4-notify-the-chat-members-about-a-task-created-in-a-chat"></a>Пример 4. Уведомление участников чата о задаче, созданной в чате.
+
+В этом примере показано, как можно отправить уведомление о канале действий всем участникам чата. Этот пример похож на предыдущие примеры. Однако в этом случае это `recipient` [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Обратите `chatId` внимание, что указанный в `recipient` должен соответствовать указанному `chatId` в URL-адресе запроса.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification_4"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+    "activityType": "taskCreated",
+    "previewText": {
+        "content": "New Task Created"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+    },
+    "templateParameters": [
+        {
+            "name": "taskId",
+            "value": "Task 12322"
+        }
+    ] 
+}
+```
 
 #### <a name="response"></a>Отклик
 <!-- {

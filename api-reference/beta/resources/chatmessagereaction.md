@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: f66b37ee9f9ae69f5f0ccb1f4a2f45f3a3522163
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 64e3e74102551a91f99120c7384a482f0b07e304
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582244"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208143"
 ---
 # <a name="chatmessagereaction-resource-type"></a>тип ресурса chatMessageReaction
 
@@ -28,7 +28,7 @@ ms.locfileid: "51582244"
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |reactionType|String|Поддерживаемые значения `like` : , , , , `angry` `sad` `laugh` `heart` `surprised` . |
-|user|[identitySet](identityset.md)|Пользователь, реагирувший на сообщение.|
+|user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|Пользователь, реагирувший на сообщение.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -47,7 +47,7 @@ ms.locfileid: "51582244"
 {
   "createdDateTime": "String (timestamp)",
   "reactionType": "String",
-  "user": {"@odata.type": "microsoft.graph.identitySet"}
+  "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }
 ```
 
