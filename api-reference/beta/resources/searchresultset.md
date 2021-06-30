@@ -5,31 +5,32 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5d17791a618f1d587520f23524da9ce19241d3b1
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ee5ac6d892b6562ca5c1053b474135f1dd745ba5
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068125"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210208"
 ---
-# <a name="searchresultset-resource-type"></a><span data-ttu-id="27507-103">тип ресурса searchResultSet</span><span class="sxs-lookup"><span data-stu-id="27507-103">searchResultSet resource type</span></span>
+# <a name="searchresultset-resource-type"></a><span data-ttu-id="7c3be-103">тип ресурса searchResultSet</span><span class="sxs-lookup"><span data-stu-id="7c3be-103">searchResultSet resource type</span></span>
 
-<span data-ttu-id="27507-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="27507-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7c3be-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7c3be-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="27507-105">Представляет результаты запроса поиска и термины, используемые для запроса.</span><span class="sxs-lookup"><span data-stu-id="27507-105">Represents results from a search query, and the terms used for the query.</span></span> 
+<span data-ttu-id="7c3be-105">Представляет результаты запроса поиска и термины, используемые для запроса.</span><span class="sxs-lookup"><span data-stu-id="7c3be-105">Represents results from a search query, and the terms used for the query.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="27507-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="27507-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7c3be-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="7c3be-106">Properties</span></span>
 
-| <span data-ttu-id="27507-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="27507-107">Property</span></span>     | <span data-ttu-id="27507-108">Тип</span><span class="sxs-lookup"><span data-stu-id="27507-108">Type</span></span>        | <span data-ttu-id="27507-109">Описание</span><span class="sxs-lookup"><span data-stu-id="27507-109">Description</span></span> |
+| <span data-ttu-id="7c3be-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="7c3be-107">Property</span></span>     | <span data-ttu-id="7c3be-108">Тип</span><span class="sxs-lookup"><span data-stu-id="7c3be-108">Type</span></span>        | <span data-ttu-id="7c3be-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7c3be-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="27507-110">hitsContainers</span><span class="sxs-lookup"><span data-stu-id="27507-110">hitsContainers</span></span>|<span data-ttu-id="27507-111">[коллекция searchHitsContainer](searchhitscontainer.md)</span><span class="sxs-lookup"><span data-stu-id="27507-111">[searchHitsContainer](searchhitscontainer.md) collection</span></span>|<span data-ttu-id="27507-112">Коллекция результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="27507-112">A collection of search results.</span></span>|
-|<span data-ttu-id="27507-113">searchTerms</span><span class="sxs-lookup"><span data-stu-id="27507-113">searchTerms</span></span>|<span data-ttu-id="27507-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="27507-114">String collection</span></span>|<span data-ttu-id="27507-115">Содержит термины поиска, отправленные в исходном запросе поиска.</span><span class="sxs-lookup"><span data-stu-id="27507-115">Contains the search terms sent in the initial search query.</span></span>|
+|<span data-ttu-id="7c3be-110">hitsContainers</span><span class="sxs-lookup"><span data-stu-id="7c3be-110">hitsContainers</span></span>|<span data-ttu-id="7c3be-111">[коллекция searchHitsContainer](searchhitscontainer.md)</span><span class="sxs-lookup"><span data-stu-id="7c3be-111">[searchHitsContainer](searchhitscontainer.md) collection</span></span>|<span data-ttu-id="7c3be-112">Коллекция результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="7c3be-112">A collection of search results.</span></span>|
+|<span data-ttu-id="7c3be-113">searchTerms</span><span class="sxs-lookup"><span data-stu-id="7c3be-113">searchTerms</span></span>|<span data-ttu-id="7c3be-114">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="7c3be-114">String collection</span></span>|<span data-ttu-id="7c3be-115">Содержит термины поиска, отправленные в исходном запросе поиска.</span><span class="sxs-lookup"><span data-stu-id="7c3be-115">Contains the search terms sent in the initial search query.</span></span>|
+|<span data-ttu-id="7c3be-116">resultTemplates</span><span class="sxs-lookup"><span data-stu-id="7c3be-116">resultTemplates</span></span>|<span data-ttu-id="7c3be-117">[коллекция resultTemplate](resultTemplate.md)</span><span class="sxs-lookup"><span data-stu-id="7c3be-117">[resultTemplate](resultTemplate.md) collection</span></span>|<span data-ttu-id="7c3be-118">Словарь resultTemplateIds и связанных с ними значений, которые включают имя и схему JSON шаблонов результатов.</span><span class="sxs-lookup"><span data-stu-id="7c3be-118">A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="27507-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="27507-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7c3be-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7c3be-119">JSON representation</span></span>
 
-<span data-ttu-id="27507-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="27507-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7c3be-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7c3be-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +44,8 @@ ms.locfileid: "52068125"
 ```json
 {
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "searchTerms": ["String"],
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 
