@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6e660db18986498ce639a1db14a284a878d57a1f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 747bacce74028d785d54ce0b8fb27303fccbbc1a
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054247"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210320"
 ---
 # <a name="searchrequest-resource-type"></a>тип ресурса searchRequest
 
@@ -27,25 +27,25 @@ BLOB JSON содержит типы ресурсов, ожидаемых в от
 > [!NOTE]
 > Будьте в курсе [известных ограничений](search-api-overview.md#known-limitations) на поиск определенных комбинаций типов сущностей, а также сортировку или агрегирование результатов поиска.
 
-
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип        | Описание |
-|:-------------|:------------|:------------|:------------|
-|aggregations|[коллекция aggregationOption](aggregationOption.md)|Указывает агрегации (также известные как переработчики), которые будут возвращены вместе с результатами поиска. Необязательное.|
-|aggregationFilters|Коллекция объектов string|Содержит один или несколько фильтров для получения результатов поиска, агрегированных и отфильтрованных до определенного значения поля. Необязательное.<br>Создайте этот фильтр на основе предварительного поиска, который агрегируется в одном поле. В ответе предварительного поиска определите строку [searchBucket,](searchBucket.md) которая фильтрует результаты до определенного значения поля, используйте строку в свойстве **aggregationFilterToken** и создайте строку фильтра агрегации в формате **"{field}: \\ "{aggregationFilterToken} \\ ""**. <br>Если необходимо предоставлять несколько значений для одного поля, используйте строки в свойстве **aggregationFilterToken** и создайте строку фильтра агрегации в формате **"{field}:or" \\ ({aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ") ".** <br>Например, поиск и агрегирование элементов диска по типу файла возвращает **searchBucket** для типа файла `docx` в ответе. Вы можете удобно использовать **aggregationFilterToken,** возвращенный для этого **searchBucket** в последующем запросе поиска и фильтрации совпадений вниз, чтобы диск элементов `docx` типа файла. [В примере 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) [и в примере 2 покажите](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) фактические запросы и ответы.|
-|contentSources|Коллекция объектов string|Содержит адресное подключение. <br>Соблюдает следующий формат: `/external/connections/connectionid` где `connectionid` определяется ConnectionId в администрировании соединители. <br> Примечание: contentSource применим только в том случае, если entityType= `externalItem` . Необязательное.|
-|enableTopResults|Логический|Это вызывает гибридную сортировку сообщений: первые 3 сообщения являются наиболее актуальными. Это свойство применимо только к entityType= `message` . Необязательное.|
-|entityTypes|Коллекция entityType| Один или несколько типов ресурсов, ожидаемых в ответе. Возможные значения: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. См. [известные ограничения](search-api-overview.md#known-limitations) для этих комбинаций двух или более типов сущности, поддерживаемых в одном запросе поиска. Обязательный.|
-|fields|Коллекция объектов string |Содержит поля, возвращаемые для каждого объекта ресурса, указанного в **entityTypes,** что позволяет настраивать поля, возвращаемые по умолчанию, в том числе дополнительные поля, такие как настраиваемые управляемые свойства из SharePoint и OneDrive, или настраиваемые поля в **externalItem** из контента, который приносят соединиттели Microsoft Graph. <br>Свойство полей может использовать семантические [метки,](https://docs.microsoft.com/microsoftsearch/configure-connector#step-5-assign-property-labels) применяемые к свойствам. Например, если свойство помечено как название, его можно получить с помощью следующего синтаксиса : label_title.<br>Необязательное.|
-|from|Int32|Указывает смещение результатов поиска. Смещение 0 возвращает самый первый результат. Необязательное.|
-|Запрос|[searchQuery](searchquery.md)|Содержит термины запроса. Обязательный.|
-|size|Int32|Размер извлекаемой страницы. Необязательное.|
-|sortProperties|[коллекция sortProperty](sortProperty.md)|Содержит упорядоченный набор полей и направлений для сортировки результатов. В коллекции может быть не более 5 свойств сортировки. Необязательное.|
-|stored_fields (обесценилось)|Коллекция объектов string |Теперь это свойство полей **заменяется.** |
+| Свойство     | Тип        | Описание             
+|:-------------|:------------|:------------
+|aggregations|[коллекция aggregationOption](aggregationOption.md)|Указывает агрегации (также известные как переработчики), которые будут возвращены вместе с результатами поиска. Необязательно.|
+|aggregationFilters|Коллекция строк|Содержит один или несколько фильтров для получения результатов поиска, агрегированных и отфильтрованных до определенного значения поля. Необязательно.<br>Создайте этот фильтр на основе предварительного поиска, который агрегируется в одном поле. В ответе предварительного поиска определите строку [searchBucket,](searchBucket.md) которая фильтрует результаты до определенного значения поля, используйте строку в свойстве **aggregationFilterToken** и создайте строку фильтра агрегации в формате **"{field}: \\ "{aggregationFilterToken} \\ ""**. <br>Если необходимо предоставлять несколько значений для одного поля, используйте строки в свойстве **aggregationFilterToken** и создайте строку фильтра агрегации в формате **"{field}:or" \\ ({aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ") ".** <br>Например, поиск и агрегирование элементов диска по типу файла возвращает **searchBucket** для типа файла `docx` в ответе. Вы можете удобно использовать **aggregationFilterToken,** возвращенный для этого **searchBucket** в последующем запросе поиска и фильтрации совпадений вниз, чтобы диск элементов `docx` типа файла. [В примере 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) [и в примере 2 покажите](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) фактические запросы и ответы.|
+|contentSources|Коллекция строк|Содержит адресное подключение. <br>Соблюдает следующий формат: `/external/connections/connectionid` где `connectionid` определяется ConnectionId в администрировании соединители. <br> Примечание: contentSource применим только в том случае, если entityType= `externalItem` . Необязательно.|
+|enableTopResults|Логический|Это вызывает гибридную сортировку сообщений: первые 3 сообщения являются наиболее актуальными. Это свойство применимо только к entityType= `message` . Необязательно.|
+|entityTypes|Коллекция entityType| Один или несколько типов ресурсов, ожидаемых в ответе. Возможные значения: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. См. [известные ограничения](search-api-overview.md#known-limitations) для этих комбинаций двух или более типов сущности, поддерживаемых в одном запросе поиска. Обязательно.|
+|fields|Коллекция строк |Содержит поля, возвращаемые для каждого объекта ресурса, указанного в **entityTypes,** что позволяет настраивать поля, возвращаемые по умолчанию, в том числе дополнительные поля, такие как настраиваемые управляемые свойства из SharePoint и OneDrive, или настраиваемые поля в **externalItem** из контента, который приносят соединиттели Microsoft Graph. <br>Свойство полей может использовать семантические [метки,](https://docs.microsoft.com/microsoftsearch/configure-connector#step-5-assign-property-labels) применяемые к свойствам. Например, если свойство помечено как название, его можно получить с помощью следующего синтаксиса : label_title.<br>Необязательно.|
+|from|Int32|Указывает смещение результатов поиска. Смещение 0 возвращает самый первый результат. Необязательно.|
+|Запрос|[searchQuery](searchquery.md)|Содержит термины запроса. Обязательно.|
+|size|Int32|Размер извлекаемой страницы. Необязательно.|
+|sortProperties|[коллекция sortProperty](sortProperty.md)|Содержит упорядоченный набор полей и направлений для сортировки результатов. В коллекции может быть не более 5 свойств сортировки. Необязательно.|
+|stored_fields (обесценилось)|Коллекция строк |Теперь это свойство полей **заменяется.** |
+|resultTemplateOptions|[коллекция resultTemplateOption](resultTemplateOption.md)|Предоставляет параметры шаблонов результатов поиска для отрисовки результатов поиска соединители.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -69,7 +69,8 @@ BLOB JSON содержит типы ресурсов, ожидаемых в от
   "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
   "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
   "aggregationFilters": ["String"],
-  "enableTopResults": true  
+  "enableTopResults": true,
+  "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}]  
 }
 ```
 
@@ -77,9 +78,10 @@ BLOB JSON содержит типы ресурсов, ожидаемых в от
 - Поиск [сообщений почты](/graph/search-concept-messages)
 - События [календаря поиска](/graph/search-concept-events)
 - Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)
-- Поиск [пользовательских типов, импортируемых с помощью соединители)](/graph/search-concept-custom-types) данных
+- Поиск [пользовательских типов, импортируемых с помощью данных соединители](/graph/search-concept-custom-types)
 - [Сортировка](/graph/search-concept-sort) результатов поиска
 - Использование [агрегаций для](/graph/search-concept-aggregations) уточнения результатов поиска
+- Использование [макета отображения](/graph/search-concept-display-layout.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

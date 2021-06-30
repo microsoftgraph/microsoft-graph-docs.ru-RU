@@ -5,12 +5,12 @@ author: jecha
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1b0451a481c51986fcf62c922fd24df0197e8fdd
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 9837cd6af69ee9af06ce2a1ab9aa59f93d0963a9
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53031528"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210310"
 ---
 # <a name="get-teamsasyncoperation"></a>Get teamsAsyncOperation
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "53031528"
 Получите указанную операцию [Teams async,](../resources/teamsasyncoperation.md) которая запущена или запущена на определенном ресурсе.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 Следующие разрешения для получения операции в чате:
 
@@ -62,6 +62,8 @@ GET /chats/{chat-id}/operations/{operation-id}
 ## <a name="example-get-operation-on-chat"></a>Пример. Получить операцию в чате
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chat_operation"
@@ -70,6 +72,24 @@ GET /chats/{chat-id}/operations/{operation-id}
 ``` http
 GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@thread.v2/operations/2432b57b-0abd-43db-aa7b-16eadd115d34-e88ae9aa-887e-4972-ac3e-bd578e38232e-cf58835e-43f0-4fc1-825e-5de55630e7e4
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-operation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-operation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-operation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 <!-- {

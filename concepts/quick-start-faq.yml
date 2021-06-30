@@ -1,0 +1,127 @@
+### YamlMime:FAQ
+metadata:
+  title: 'Краткое руководство по Microsoft Graph: вопросы и ответы'
+  description: В этой статье представлены ответы на вопросы, связанные с краткими руководствами по Microsoft Graph.
+  author: jasonjoh
+  localization_priority: Normal
+  ms.openlocfilehash: e8feaa7fbe64147e0b4ba6fe3cfa4bf6432fc0f4
+  ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 06/30/2021
+  ms.locfileid: "53211170"
+title: 'Краткое руководство по Microsoft Graph: вопросы и ответы'
+summary: >
+  В этой статье представлены ответы на вопросы, связанные с [краткими руководствами по Microsoft Graph](https://developer.microsoft.com/graph/quick-start).
+
+
+  ## <a name="general-design"></a>Общая схема
+
+
+  В примерах, содержащихся в кратких руководствах, показано, как использовать всю мощь Microsoft Graph. В этих примерах выполняется доступ к двум службам с использованием одной проверки подлинности: к учетной записи Майкрософт и Outlook. В каждом кратком руководстве используются сведения из профилей пользователей с учетными записями Майкрософт и отображаются события из их календаря.
+
+
+  В каждом кратком руководстве необходимо выполнить четыре действия:
+
+
+  - выбрать необходимую платформу;
+
+  - получить идентификатор приложения (идентификатор клиента);
+
+  - выполнить сборку кода из примера;
+
+  - войти и просмотреть события в своем календаре.
+
+
+  В итоге вы получите приложение, готовое к запуску.
+
+
+  ## <a name="prerequisites"></a>Необходимые компоненты
+
+
+  Все примеры быстрого запуска требуют доступа к личной учетной записи Майкрософт с почтовым ящиком на Outlook.com или к учетной записи Microsoft work или school с Exchange Online почтовым ящиком. Если у вас нет учетной записи Майкрософт, существует несколько вариантов получения бесплатной учетной записи:
+
+
+  - Вы можете [зарегистрироваться для новой личной учетной записи Майкрософт.](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)
+
+  - Вы можете [зарегистрироваться в программе Microsoft 365 разработчика,](https://developer.microsoft.com/office/dev-program) чтобы получить бесплатную Microsoft 365 подписку.
+sections:
+- name: Общие вопросы, касающиеся примеров из краткого руководства
+  questions:
+  - question: >
+      Можно ли получить код из краткого руководства, не выполняя скачивание на странице краткого руководства?
+    answer: >
+      Да, конечно! Каждый скачиваемый экземпляр краткого руководства основан на [учебнике по Microsoft Graph](tutorials.yml), поэтому у вас есть два других варианта для получения такого же исходного кода:
+
+
+      - Выполнить сборку кода самостоятельно, следуя пошаговым инструкциям из учебника.
+
+      - Скачать готовый проект из соответствующего репозитория GitHub и выполнить инструкции из файла сведений, чтобы настроить и запустить пример.
+
+
+      #### <a name="tutorials-and-github-repositories"></a>Учебники и репозитории GitHub
+
+
+      В таблице ниже перечислены соответствующие учебники и репозитории GitHub для каждого примера из краткого руководства.
+
+
+      | Краткое руководство | Учебник | Репозиторий GitHub |
+
+      |-------------|----------|-------------------|
+
+      | Android | [Учебник](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
+
+      | Angular | [Учебник](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
+
+      | ASP.NET MVC | [Учебник](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
+
+      | iOS Swift | [Учебник](/graph/tutorials/ios-swift) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
+
+      | iOS Objective-C | [Учебник](/graph/tutorials/ios-objectivec) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
+
+      | Node.js | [Учебник](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
+
+      | PHP | [Учебник](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
+
+      | Python | [Учебник](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
+
+      | React | [Учебник](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
+
+      | Ruby | [Учебник](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
+
+      | UWP | [Учебник](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
+
+      | Xamarin | [Учебник](/graph/tutorials/xamarin) | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
+  - question: >
+      Почему в примерах из краткого руководства нет вариантов использования расширенной проверки подлинности?
+    answer: >
+      Примеры из краткого руководства используются для ознакомления с функцией проверки подлинности и вызовов API Microsoft Graph. Дополнительные сведения о других потоках проверки подлинности см. в документации [Azure Active Directory](/azure/active-directory/develop/authentication-scenarios).
+  - question: >
+      Что делать при возникновении непредвиденной ошибки или проблемы с кратким руководством?
+    answer: >
+      Если не удается обеспечить правильную работу при использовании краткого руководства, опубликуйте проблему в соответствующем репозитории GitHub.
+- name: Известные проблемы
+  questions:
+  - question: >
+      При запуске краткого руководства ASP.NET отображается ошибка "Не удается найти часть пути [...]\Graph Tutorial\graph-tutorial\bin\roslyn\csc.exe".
+    answer: >
+      Это вызвано [проблемой с Visual Studio и компилятором Roslyn](https://github.com/dotnet/roslyn/issues/15556). Исправить эту ошибку можно одним из следующих вариантов:
+
+
+      - Выгрузка и повторная загрузка проекта в обозревателе решений
+
+      - Очистка и перестройка решения
+
+      - Обновление пакетов NuGet
+  - question: >
+      При запуске краткого руководства возникает ошибка "AADSTS50011: URL-адрес ответа, указанный в запросе, не совпадает с URL-адресами ответов, настроенными для приложения".
+    answer: >
+      Это указывает на проблему с регистрацией приложения для краткого руководства. Когда вы скачиваете краткое руководство со [страницы кратких руководств Microsoft Graph](https://developer.microsoft.com/graph/quick-start), для вас создается регистрация приложение и выполняется настройка URL-адреса ответа (другое название — URL-адрес перенаправления), совпадающего с URL-адресом по умолчанию, который используется примером проекта. Если изменить URL-адрес, нарушается соответствие регистрации приложения, и может возникнуть эта ошибка. Чтобы устранить эту ошибку, обратитесь к файлу README.md, включенному в проект краткого руководства, за инструкциями о том, как создать регистрацию приложения и настроить ее в примере кода.
+  - question: >
+      После регистрации мне говорят, что мне нужно утверждение администратора.
+    answer: >
+      После подписания в один из примеров быстрого запуска вы можете увидеть сообщение с утверждением необходимости **администратора** "XXX Учебник нуждается в разрешении на доступ к ресурсам в вашей организации, которые может предоставить только администратор. Пожалуйста, попросите администратора предоставить разрешение этому приложению, прежде чем вы сможете использовать его." Это не ошибка с образцом! Ни один из быстрых стартов не запрашивает Graph области разрешений, которые по умолчанию *требуют* согласия администратора. Администраторы клиентов могут отключить возможность согласия на Graph области разрешений для любых приложений, которые они не одобрили. В этом случае вы увидите эту ошибку.
+
+
+      Вам потребуется работать с администраторами, чтобы получить утверждение, использовать личную учетную запись Майкрософт (Outlook.com) или использовать тестовый Microsoft 365 с Exchange Online.
+additionalContent: "\n## <a name=\"didnt-find-what-you-need\"></a>Не нашли то, что искали?\n\nЕсли в этой статье вы не нашли ответ на интересующий вас вопрос касательно одного или нескольких кратких руководств, сообщите нам об этом в разделе **Отзыв** ниже."

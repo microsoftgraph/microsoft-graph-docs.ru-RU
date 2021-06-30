@@ -5,12 +5,12 @@ author: anniecolonna
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b379037f01b5d28c867de0083ec6f7a581f0ea80
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: cc943f381d796dfa4c056c342eb5563ef59d585f
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060716"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210053"
 ---
 # <a name="create-teamworktag"></a>Создание командной работы
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ POST /teams/{team-Id}/tags
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя тега. Значение не может быть больше 40 символов.|
+|displayName|String|Имя тега. Значение не может быть больше 40 символов.|
 |members| [коллекция teamworkTagMember](../resources/teamworktagmember.md) |Члены группы, добавленные в тег. Установите свойство идентификатора пользователя каждого участника. Количество участников не должно быть больше 25.|
 
 
@@ -64,6 +64,8 @@ POST /teams/{team-Id}/tags
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_teamworktag_from"
@@ -85,6 +87,24 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-teamworktag-from-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamworktag-from-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-teamworktag-from-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-teamworktag-from-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

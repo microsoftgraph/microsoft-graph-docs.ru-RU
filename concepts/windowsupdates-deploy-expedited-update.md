@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 58dfdb7a260d2381b05332914fe71f9948c87e17
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: d64cb09545d1ce664b017ba3fcbcd5989d0f2a25
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151596"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210194"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Развертывание ускоренного обновления безопасности с Windows службы развертывания для бизнеса
 
@@ -26,7 +26,7 @@ ms.locfileid: "53151596"
 * Обновление загружается и устанавливается как можно быстрее.
 * Процесс обновления переопределяет настроенные параметры политики устройства, например дни, пока устройство не будет вынуждено перезапуститься. После установки ускоренного обновления устройство возвращается в текущие параметры политики.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые компоненты
 
 * Устройства отвечают [необходимым требованиям для службы развертывания.](windowsupdates-concept-overview.md#prerequisites)
 * Устройства установили обновление, описанное в [KB4023057 .](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) Обновление для компонентов службы Windows 10 обновления (или более новых).
@@ -85,9 +85,6 @@ Content-Type: application/json
 ```
 
 ## <a name="step-2-create-a-deployment"></a>Шаг 2. Создание развертывания
-
-> [!NOTE]
-> При первом развертывании ускоренного обновления безопасности в клиенте при настройке службы для организации может возникнуть задержка на один день. Эта задержка не применяется к последующим развертываниям или развертываниям обновлений функций и будет устранена в будущем обновлении.
 
 [Развертывание](/graph/api/resources/windowsupdates-deployment) указывает содержимое для развертывания, как и когда развертывать контент и целевые устройства. Для обновления качества контент указывается с помощью целевой даты соответствия требованиям. При развертывании аудитория развертывания автоматически создается в качестве связи.
 

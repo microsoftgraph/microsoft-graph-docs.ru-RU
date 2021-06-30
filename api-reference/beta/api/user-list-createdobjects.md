@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ac6655456029d7cebc1ff8a1c81976f97aa05f34
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 231fafe0760856c59c43d954ab2adc4dd5673725
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051720"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210376"
 ---
 # <a name="list-createdobjects"></a>Перечисление createdObjects
 
@@ -18,7 +18,8 @@ ms.locfileid: "52051720"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка созданных пользователем объектов каталога.
+Получение списка созданных пользователем объектов каталога. Этот API возвращает только те объекты каталога, созданные пользователем, который не играет роли администратора; в противном случае он возвращает пустой объект.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -34,6 +35,7 @@ ms.locfileid: "52051720"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/createdObjects
+GET /me/createdObjects
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -51,8 +53,6 @@ GET /users/{id | userPrincipalName}/createdObjects
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -80,7 +80,9 @@ GET https://graph.microsoft.com/beta/me/createdObjects
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример ответа. В ответе пользователь создал группу Microsoft 365, приложение и его основной сервис.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,12 +92,42 @@ GET https://graph.microsoft.com/beta/me/createdObjects
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.group",
+      "id": "92f3d47b-86cc-4b90-953e-8ec7f83ef45f",
+      "displayName": "Contoso volunteer roster",
+      "groupTypes": [
+        "Unified"
+      ],
+      "mail": "volunteers@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "volunteers"
+    },
+    {
+      "@odata.type": "#microsoft.graph.application",
+      "id": "5847962e-c746-4707-a657-f80b5b71f429",
+      "appId": "254e989a-1b8c-4f8c-84e8-9dea78e9d283",
+      "displayName": "ConVol",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    },
+    {
+      "@odata.type": "#microsoft.graph.servicePrincipal",
+      "id": "ea6a54da-62be-4cdc-9860-3ed68a43d8f6",
+      "accountEnabled": true,
+      "appDisplayName": "ConVol",
+      "appDescription": null,
+      "appId": "254e989a-1b8c-4f8c-84e8-9dea78e9d283",
+      "displayName": "ConVol",
+      "servicePrincipalNames": [
+        "254e989a-1b8c-4f8c-84e8-9dea78e9d283"
+      ],
+      "servicePrincipalType": "Application",
+      "signInAudience": "AzureADMyOrg",
     }
   ]
 }

@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef00a4e08ae8ac63e1f9a1ab76d2f5a71f9a8937
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: d8e2905acb0989d2d47d1f3df7c71237dca083c4
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151715"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210929"
 ---
 # <a name="list-healthoverviews"></a>Список healthOverviews
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "53151715"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|ServiceHealth.Read.All|
+|Приложение|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -60,6 +60,8 @@ GET /admin/serviceAnnouncement/healthOverviews
 ### <a name="example-1-get-servicehealth-resources"></a>Пример 1. Получить ресурсы serviceHealth
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_healthoverviews"
@@ -68,6 +70,24 @@ GET /admin/serviceAnnouncement/healthOverviews
 ``` http
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-healthoverviews-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-healthoverviews-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-healthoverviews-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-healthoverviews-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -107,6 +127,8 @@ Content-Type: application/json
 ### <a name="example-2-include-navigation-property-issues"></a>Пример 2. Включаем проблемы свойств навигации
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_healthoverviews_with_issues"
@@ -116,6 +138,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews?$expand=issues
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-healthoverviews-with-issues-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-healthoverviews-with-issues-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-healthoverviews-with-issues-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-healthoverviews-with-issues-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

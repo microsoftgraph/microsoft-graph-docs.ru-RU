@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5d17791a618f1d587520f23524da9ce19241d3b1
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ee5ac6d892b6562ca5c1053b474135f1dd745ba5
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068125"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210208"
 ---
 # <a name="searchresultset-resource-type"></a>тип ресурса searchResultSet
 
@@ -25,9 +25,10 @@ ms.locfileid: "52068125"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |hitsContainers|[коллекция searchHitsContainer](searchhitscontainer.md)|Коллекция результатов поиска.|
-|searchTerms|Коллекция String|Содержит термины поиска, отправленные в исходном запросе поиска.|
+|searchTerms|Коллекция строк|Содержит термины поиска, отправленные в исходном запросе поиска.|
+|resultTemplates|[коллекция resultTemplate](resultTemplate.md)|Словарь resultTemplateIds и связанных с ними значений, которые включают имя и схему JSON шаблонов результатов.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -43,7 +44,8 @@ ms.locfileid: "52068125"
 ```json
 {
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "searchTerms": ["String"],
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 5f161d5b75e862f358d07fee2347bb3f4d18bbad
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: a422a106d1371e8e39fdfa314658b8e77d0f5a9a
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107912"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210667"
 ---
 # <a name="update-userinsightssettings"></a>Обновление userInsightsSettings
 
@@ -26,8 +26,8 @@ ms.locfileid: "53107912"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | User.ReadWrite |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 
@@ -65,6 +65,8 @@ PATCH /users/{userId}/settings/itemInsights
 
 Ниже приводится пример запроса на то, как пользователь обновляет "**isEnabled**" параметр конфиденциальности, чтобы отключить его сведения о элементе и сведения о часах собраний.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_userInsightsSettings"
@@ -78,6 +80,24 @@ Content-type: application/json
   "isEnabled": "false"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-userinsightssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-userinsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-userinsightssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-userinsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик
