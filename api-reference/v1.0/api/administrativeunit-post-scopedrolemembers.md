@@ -5,12 +5,12 @@ localization_priority: Normal
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 35cd8756f9477458d06f071d173ec5d09ace5b8b
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a7cc3042e6b1bf7432232dd4b2b57f405e279ee2
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991486"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208227"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление scopedRoleMember
 
@@ -37,6 +37,7 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляют представление JSON объекта [scopedRoleMembership.](../resources/scopedrolemembership.md)

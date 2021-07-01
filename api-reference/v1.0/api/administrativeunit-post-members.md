@@ -5,12 +5,12 @@ author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 634013e968b5fc69c2565848bf85e343f03b2f4f
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 4b744c9ebce925277d09cae0b49272c6e4d01598
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991493"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53210432"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -39,6 +39,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажи добавить пользователя, группу или `id` [directoryObject.](../resources/directoryobject.md) [](../resources/user.md) [](../resources/group.md)

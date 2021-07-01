@@ -5,12 +5,12 @@ author: DougKirschner
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2453c8fb3d151d0d2546736cc341917c4ae174a3
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 0921bc6366d34278d23701d11ddb21bf0793d219
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991479"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208213"
 ---
 # <a name="update-administrativeunit"></a>Обновление администрирования
 
@@ -38,6 +38,7 @@ PATCH /directory/administrativeUnits/{id}
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -45,7 +46,7 @@ PATCH /directory/administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|string|Описание административного подразделения.|
+|description|строка|Описание административного подразделения.|
 |displayName|string|Отображение имени административного подразделения.|
 |visibility|string|Видимость для административного подразделения. Если не установить, то по умолчанию является "общедоступным". Можно установить "HiddenMembership", которое скрывает членство от нечленов.|
 

@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Ресурс driveItem представляет файл, папку или другой элемент, хранящийся на диске.
-ms.date: 09/10/2017
-title: DriveItem
+title: driveItem
 localization_priority: Normal
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 7810850e8968a8985cc611930088c5dbec817484
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 1be483b8309944c1a323c7274efe55b04feb6c3d
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714316"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236252"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -21,7 +20,7 @@ ms.locfileid: "49714316"
 
 Ресурс **driveItem** представляет файл, папку или другой элемент, хранящийся на диске.
 
-Все объекты файловой системы в OneDrive и SharePoint возвращаются в виде ресурсов **driveItem**. Элементы в библиотеках документов SharePoint могут быть представлены как [ресурсы listItem][] или **driveItem.**
+Все объекты файловой системы в OneDrive и SharePoint возвращаются в виде ресурсов **driveItem**. Элементы в библиотеках документов SharePoint могут быть представлены как ресурсы [listItem][] или **driveItem**.
 
 Обратиться к ресурсу **driveItem** можно двумя основными способами:
 
@@ -48,7 +47,7 @@ ms.locfileid: "49714316"
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
+       "sharepointIds", "source", "media"],
        "keyProperty": "id", "openType": true } -->
 
 ```json
@@ -63,6 +62,7 @@ ms.locfileid: "49714316"
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -73,6 +73,7 @@ ms.locfileid: "49714316"
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
+  "source": { "@odata.type": "microsoft.graph.driveItemSource" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "string",
@@ -125,10 +126,11 @@ ms.locfileid: "49714316"
 | lastModifiedBy       | [identitySet][]    | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
 | location             | [geoCoordinates][] | Метаданные местоположения, если в роли элемента выступают данные о местоположении. Только для чтения.
+| мультимедиа                | [media][]          | Сведения о элементе мультимедиа (аудио или видео). Чтение и запись. Только на OneDrive для бизнеса и SharePoint.
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
-| pendingOperations    | [pendingOperations][] | Означает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения. Только для чтения.
+| pendingOperations    | [pendingOperations][] | При этом указывается, что одна или несколько операций, которые могут повлиять на состояние driveItem, находятся в ожидании завершения. Только для чтения.
 | photo;                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
 | publication          | [publicationFacet][] | Предоставляет сведения о состоянии элемента (опубликован или получен для изменения) в расположениях, поддерживающих такие действия. Это свойство не возвращается по умолчанию. Только для чтения. |
 | remoteItem           | [remoteItem][]     | Данные удаленного элемента, если элемент используется совместно на диске, но не на том, к которому получен доступ в данный момент. Только для чтения.
@@ -138,6 +140,7 @@ ms.locfileid: "49714316"
 | sharepointIds        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | size                 | Int64              | Размер элемента (в байтах). Только для чтения.
 | specialFolder        | [specialFolder][]  | Если текущий элемент также доступен как специальная папка, возвращается этот аспект. Только для чтения.
+| source               | [driveItemSource][]| Сведения об источнике элемента диска. Только для чтения. Только на OneDrive для бизнеса и SharePoint.
 | video                | [video][]          | Метаданные видео, если в роли элемента выступает видео. Только для чтения.
 | webDavUrl            | Строка             | URL-адрес элемента, совместимый с WebDAV.
 | webUrl               | String             | URL-адрес для отображения ресурса в браузере. Только для чтения.
@@ -192,12 +195,12 @@ URL-адрес будет доступен в течение короткого 
 | [Скачивание содержимого](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
 | [Скачивание файла в определенном формате][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [Удаление элемента](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Восстановление элемента](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
+| [Элемент восстановления](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [Перемещение элемента](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
 | [Копирование элемента](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Поиск элементов](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Перечисление изменений на диске](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Элемент "Следовать"](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Следуйте элементу](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
 | [Элемент unfollow](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
@@ -208,7 +211,7 @@ URL-адрес будет доступен в течение короткого 
 | [Предварительный просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
 | [Регистрация](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [Выписка](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Отозовет предоставление](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
+| [Отоимка грантов](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
 
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md
@@ -222,6 +225,7 @@ URL-адрес будет доступен в течение короткого 
 [baseItem]: baseitem.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
+[driveItemSource]: driveItemSource.md
 [driveItemVersion]: driveitemversion.md
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
@@ -237,6 +241,7 @@ URL-адрес будет доступен в течение короткого 
 [geoCoordinates]: geocoordinates.md
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
+[media]: media.md
 [package]: package.md
 [permission]: permission.md
 [pendingOperations]: pendingoperations.md
@@ -264,7 +269,7 @@ URL-адрес будет доступен в течение короткого 
   "section": "documentation",
   "tocPath": "Items",
   "tocBookmarks": {
-    "Resources/Item": "#"
+    "Resources/Item&quot;: &quot;#"
   },
   "suppressions": []
 }

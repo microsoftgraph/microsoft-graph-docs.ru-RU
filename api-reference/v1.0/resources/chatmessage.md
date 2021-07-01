@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: a1180508853e932cc212e623d0d8a2d3dcae0e54
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 957c90bea43130076b12933e3b18cea7197731ea
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787410"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208031"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -53,9 +53,9 @@ ms.locfileid: "52787410"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный id сообщения.|
 |replyToId| string | Только для чтения. Id родительского сообщения чата или корневого сообщения чата потока. (Применяется только к чатам в каналах, а не к чатам.) |
-|from|[identitySet](identityset.md)| Только для чтения. Сведения о отправителье сообщения чата.|
+|from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Только для чтения. Сведения о отправителье сообщения чата.|
 |etag| string | Только для чтения. Номер версии сообщения чата. |
-|messageType|Строка|Тип сообщения чата. Возможное значение: `message` .|
+|messageType|строка|Тип сообщения чата. Возможное значение: `message` .|
 |createdDateTime|dateTimeOffset|Время создания сообщения чата.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда сообщение чата создается (начальный параметр) или изменено, в том числе при добавлении или удалении реакции. |
 |lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда были сделаны изменения в сообщении чата. Вызывает флаг "Отредактирован" Teams пользовательского интерфейса. Если изменение не выполнено, значение `null` .|
@@ -65,11 +65,11 @@ ms.locfileid: "52787410"
 |summary|string| Сводный текст сообщения чата, который можно использовать для push-уведомлений и сводных представлений или отпадения представлений. Применяется только к сообщениям чата, а не к чатам в чате. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
 |mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностями, упомянутыми в сообщении чата. В настоящее время поддерживаются значения user, bot, team и channel.|
-|importance|string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
+|importance|строка | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
 |reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на это сообщение чата (например, Like).|
 |языковые стандарты|string|Локализовать сообщение чата, за набором клиентом. Всегда задавайте значение `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, установленные приложением для предотвращения потери данных (DLP).|
-|chatId|Строка|Если сообщение было отправлено в чате, представляет собой удостоверение чата.|
+|chatId|строка|Если сообщение было отправлено в чате, представляет собой удостоверение чата.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
 |webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
 ## <a name="relationships"></a>Связи
@@ -107,7 +107,7 @@ ms.locfileid: "52787410"
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",

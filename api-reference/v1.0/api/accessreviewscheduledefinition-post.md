@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fff52572c62c183296b911b08d78c7d998926d3d
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 0aa38fcbd99bc2618310f456fc970c5311a5dc32
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060420"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208585"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -48,10 +48,10 @@ POST /identityGovernance/accessReviews/definitions
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Имя серии обзоров доступа. Обязательный.|
-| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. Обязательный. |
-  descriptionForReviewers | Строка | Контекст обзора, предоставленного рецензентам. Обязательный. |
-| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный.| 
+| displayName | String | Имя серии обзоров доступа. Обязательно.|
+| descriptionForAdmins | строка | Контекст обзора, предоставленного администраторам. Обязательно. |
+  descriptionForReviewers | строка | Контекст обзора, предоставленного рецензентам. Обязательно. |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательно.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
@@ -71,7 +71,6 @@ POST /identityGovernance/accessReviews/definitions
 
 #### <a name="request"></a>Запрос
 В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,6 +117,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -201,6 +218,8 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 В теле запроса поставляем представление JSON объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_inactiveguests_M365"
@@ -259,6 +278,24 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-inactiveguests-m365-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-inactiveguests-m365-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-inactiveguests-m365-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -363,6 +400,7 @@ Content-type: application/json
 + Он повторяется в течение полугода и заканчивается 1 год с началаDate.
 
 #### <a name="request"></a>Запрос
+
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"

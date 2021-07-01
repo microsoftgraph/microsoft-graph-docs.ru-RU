@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Используйте специальную коллекцию для доступа к специальной папке по имени.
-ms.date: 09/10/2017
-title: Получение специальных папок
+title: Получить специальные папки
 localization_priority: Normal
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: d6c419e462cc9c038408ec165a13ce1241da1062
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 48a20da153eaf1e74d34b2ecfa3b7c30f8a794aa
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964059"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236190"
 ---
 # <a name="get-a-special-folder-by-name"></a>Получение доступа к специальной папке по ее имени
 
@@ -66,16 +65,7 @@ GET /me/drive/special/{name}
 
 
 ### <a name="special-folder-names"></a>Имена специальных папок
-
-Указанные ниже имена специальных папок доступны в OneDrive и OneDrive для бизнеса.
-
-| Имя        | Идентификатор папки    | Описание                                                              |
-|:------------|:-------------|:-------------------------------------------------------------------------|
-| Документы   | `documents`  | Папка "Документы".                                                    |
-| Фотографии      | `photos`     | Папка "Фотографии".                                                       |
-| Альбом камеры | `cameraroll` | Папка для резервных копий альбома камеры.                                           |
-| Корневая папка приложения    | `approot`    | Личная папка приложения. Обычно расположена в папке `/Apps/{Application Name}` |
-| Музыка       | `music`      | Папка "Музыка".                                                        |
+[!INCLUDE [files-special-folder-list](../includes/files-special-folder-list.md)]
 
 
 ### <a name="optional-query-parameters"></a>Необязательные параметры запросов

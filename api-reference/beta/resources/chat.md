@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 70f9569a609699036a5e27cdaf47faf622a572d2
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 50b6d517775e4ef956211882fd58baefc7f5b78d
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030854"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236178"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -44,16 +44,16 @@ ms.locfileid: "53030854"
 |[Список приложений в каталоге](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в чате (и связанном собрании).|
 |[Получить приложение в чате](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получите определенное приложение, установленное в чате (и связанное собрание).|
 |[Добавление приложения в чате](../api/chat-post-installedapps.md) | | Добавление (установка) приложения в чате (и связанное собрание).|
-|[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
-|[Удалить приложение из чата](../api/chat-delete-installedapps.md) | Нет | Удалить (удалить) приложение из чата (и связанного собрания).|
+|[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет. | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
+|[Удалить приложение из чата](../api/chat-delete-installedapps.md) | Нет. | Удалить (удалить) приложение из чата (и связанного собрания).|
 |[Перечисление предоставленных разрешений](../api/chat-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных приложениям в этом чате.|
-| **Вкладки** |||
+| **Tabs** |||
 |[Список вкладок в чате](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Вкладки списка, закрепленные в чате (и связанное собрание).|
 |[Получить вкладку в чате](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Получите определенную вкладку, закрепленную в чате (и связанное собрание).|
 |[Добавление вкладки в чат](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Добавьте (пин-код) вкладку в чат (и связанное собрание).|
 |[Обновление вкладки в чате](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки в чате (и связанное собрание).|
-|[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет | Удалите (открепите) вкладку из чата (и связанного собрания).|
-| **Операции** |||
+|[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет. | Удалите (открепите) вкладку из чата (и связанного собрания).|
+| **Operations** |||
 |[Список операций в чате](../api/chat-list-operations.md) | Коллекция [teamsAsyncOperation](teamsAsyncOperation.md) | Получите список операций async, запущенных или запущенных в чате.|
 |[Работа в чате](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Получите одну операцию async, которая запущена или запущена в чате.|
 
@@ -68,16 +68,17 @@ ms.locfileid: "53030854"
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group` `oneOnOne` и `meeting` .|
-|  webUrl          |   string                  |  Гиперссылка, которая будет переходить в чат в Microsoft Teams. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.     |
+| точки зрения|[chatViewpoint](../resources/chatviewpoint.md)|Представляет сведения о чате, например дату и время чтения последнего сообщения. Это свойство заполняется только тогда, когда запрос выполнен в делегированном контексте.|
+| webUrl| String | Гиперссылка, которая будет переходить в чат в Microsoft Teams. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
 
 ### <a name="chattype-values"></a>значения chatType 
 
 | Элемент             | Значение | Описание               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Указывает, что чат — это чат 1:1. Размер реестра фиксирован для этого типа чата; не могут быть удалены или добавлены.|
-|group               | 1     | Указывает, что чат — это групповой чат. Размер реестра (не менее двух человек) может быть обновлен для этого типа чата. Участники могут быть удалены или добавлены позже.|
-|собрание             | 2     | Указывает, что чат связан с собранием в Интернете. Этот тип чата создается только в рамках создания собрания в Интернете.|
-|unknownFutureValue  | 3     | Значение Sentinel, чтобы указать будущие значения. |
+|group               | 1      | Указывает, что чат — это групповой чат. Размер реестра (не менее двух человек) может быть обновлен для этого типа чата. Участники могут быть удалены или добавлены позже.|
+|собрание             | 2      | Указывает, что чат связан с собранием в Интернете. Этот тип чата создается только в рамках создания собрания в Интернете.|
+|unknownFutureValue  | 3      | Значение Sentinel, чтобы указать будущие значения. |
 
 ## <a name="relationships"></a>Связи
 
@@ -87,7 +88,8 @@ ms.locfileid: "53030854"
 | members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех участников в чате. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
 | permissionGrants| Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для чата.|
-| operations | Коллекция [teamsAsyncOperation](teamsasyncoperation.md) | Коллекция всех операций Teams async, которые запускались или запускались в чате. Допускается значение null. |
+| operations | Коллекция [teamsAsyncOperation](teamsasyncoperation.md) | Коллекция всех операций Teams async, которые запускались или запускались в чате. Допускается значение null. 
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Предварительный просмотр последнего сообщения, отправленного в чате. Null, если сообщения не были отправлены в чате. В настоящее время [только операция чатов](../api/chat-list.md) списка поддерживает это свойство.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -106,6 +108,9 @@ ms.locfileid: "53030854"
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "String",
+  "chatViewpoint": {
+    "@odata.type": "microsoft.graph.chatViewpoint"
+  },
   "webUrl": "string"
 }
 ```

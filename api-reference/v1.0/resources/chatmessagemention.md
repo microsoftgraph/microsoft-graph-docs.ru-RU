@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7af1260cbddfcecef21fc85ccf057c028681b061
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 2891a555666f7265050ec4e9b12f4d8f02500c4f
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582762"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53206995"
 ---
 # <a name="chatmessagemention-resource-type"></a>тип ресурса chatMessageMention
 
@@ -36,12 +36,11 @@ ms.locfileid: "51582762"
 Более полный контекст примера см. в списке [ответов на сообщения канала.](../api/chatmessage-list-replies.md#example)
 
 ## <a name="properties"></a>Свойства
-
-| Свойство| Тип|Описание|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|Int32|Индекс сущности, упоминаемой в указанном **chatMessage.** Соответствует значению {index} в соответствующем `<at id="{index}">` теге в теле сообщения.|
-|mentionText|string|Строка, используемая для представления упоминания. Например, имя отображения пользователя, имя команды.|
-|упомянутый|[identitySet](identityset.md)|Упомянутая сущность (пользователь, приложение, команда или канал).  Если это был канал или команда, @mentioned, identitySet  содержит свойство разговоров, дающий идентификатор команды/канала, и свойство **conversationIdentityType,** которое представляет команду или канал.|
+|mentionText|строка|Строка, используемая для представления упоминания. Например, имя отображения пользователя, имя команды.|
+|упомянутый|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|Объект (пользователь, приложение, команда или канал), который @mentioned.|
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,7 +56,7 @@ ms.locfileid: "51582762"
 {
   "id": 1024,
   "mentionText": "string",
-  "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
+  "mentioned": {"@odata.type": "microsoft.graph.chatMessageMentionedIdentitySet"}
  }
 ```
 
@@ -73,3 +72,5 @@ ms.locfileid: "51582762"
   "suppressions": []
 }
 -->
+
+
