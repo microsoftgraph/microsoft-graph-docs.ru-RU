@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 13e60e5000db9a3cb4ef540970564e1a52ab2871
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: af390733e61d14cc411c583fccce7399bef5a39f
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911667"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53209935"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -41,6 +41,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 |[Уточнение результатов с помощью агрегатов](#refine-results-using-aggregations)| **aggregations** |
 |[Поиск пользовательских типов, импортированных с помощью соединителей](/graph/search-concept-custom-types)| **contentSources** |
 |[Исправление орфографии в запросе](#request-spelling-correction)| **queryAlterationOptions** |
+|[Макет отображения при поиске](#search-display-layout) (предварительная версия)| **resultTemplateOptions**
 
 ## <a name="scope-search-based-on-entity-types"></a>Поиск в области по типам объектов
 
@@ -152,6 +153,14 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Примеры использования исправлений орфографии см. в разделе [Исправление орфографии в запросе](/graph/search-concept-speller).
 
+## <a name="search-display-layout"></a>Макет отображения при поиске
+
+API поиска позволяет отображать результаты поиска из [соединителей](/microsoftsearch/connectors-overview) при помощи макета отображения или шаблона результатов, настроенного ИТ-администратором для каждого соединителя. Шаблоны результатов — это [адаптивные карточки](https://adaptivecards.io/), которые являются семантически значимым сочетанием макета и данных.
+
+Чтобы получить шаблон результатов в [searchresponse](searchresponse.md), необходимо установить свойство **true** для **enableResultTemplate**, которое определяется в [resultTemplateOptions](./resulttemplateoption.md) и в [searchRequest](./searchrequest.md). Ответ включает **resultTemplateId** для каждого [ввода при поиске](./searchhit.md), который сопоставляется с одним из макетов отображения, включенных в словарь **resultTemplates**, который включается в ответ.
+
+См. примеры в статье [Использование макета отображения при поиске](/graph/search-concept-display-layout). 
+
 ## <a name="error-handling"></a>Обработка ошибок
 
 API поиска возвращает отклики с ошибками, описанные в [определении объектов ошибок OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), каждый из которых представляет собой объект JSON, содержащий код и сообщение.
@@ -204,6 +213,7 @@ API поиска возвращает отклики с ошибками, опи
   - [Сортировка результатов поиска](/graph/search-concept-sort)
   - [Уточнение результатов поиска](/graph/search-concept-aggregation)
   - [Исправление орфографии в запросе](/graph/search-concept-speller)
+  - [Использование макета отображения при поиске](/graph/search-concept-display-layout)
 
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 

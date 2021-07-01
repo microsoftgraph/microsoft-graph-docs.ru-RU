@@ -5,12 +5,12 @@ localization_priority: Priority
 author: eketo-msft
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9caae60a2eb82acd82101f3ee9c723b8c0545e39
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 0b74a273d4ccab75814c32bc8b185f15de02e6a3
+ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030959"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53208199"
 ---
 # <a name="passwordprofile-resource-type"></a>Тип ресурса passwordProfile
 
@@ -28,7 +28,7 @@ ms.locfileid: "53030959"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -57,3 +57,6 @@ ms.locfileid: "53030959"
   "tocPath": ""
 }-->
 
+## <a name="see-also"></a>См. также
+
+[Обновление passwordProfile пользователя](../api/user-update.md#example-3-update-the-passwordprofile-of-a-user-to-reset-their-password)
