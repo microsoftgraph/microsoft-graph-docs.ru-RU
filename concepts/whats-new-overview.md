@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 42beebafd90b752548e6be81963c8c7bc484de39
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: b2e5cbb811e7e606fd57a9c967c40bc3956a2c58
+ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162205"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53236215"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -55,7 +55,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 Разрешение назначения роли Azure AD [группе](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) при ее создании путем настройки свойства **isAssignableToRole**. Если это свойство настроено, оно обеспечивает удобное управление ролями пользователей. Вместо назначения роли каждому пользователю соответствующим пользователям разрешается присоединиться к группе, и назначение роли группе будет по умолчанию означать присвоение этой роли каждому новому пользователю в ней. 
 
 ### <a name="identity-and-access--governance"></a>Удостоверения и доступ | Управление
-Настройте уведомление пользователей или участников группы о ходе выполнения [просмотра доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) с помощью свойства **additionalNotificationRecipients** [определения расписания](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+Настройка уведомлений пользователей или участников группы о ходе выполнения [проверки доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) с помощью свойства **additionalNotificationRecipients** [определения расписания](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверения и доступ | Удостоверения и вход
 Добавление фильтра для динамического включения и исключения устройств с использованием свойства **deviceFilter** ресурса [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true).
@@ -111,7 +111,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
   - Операции чтения и записи, а также метод [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) ресурса [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-Ежемесячные обновления Intune за сентябрь для бета-версии. Установите фильтр **Дата** в значение "июнь 2021" и выполните поиск раздела с таким заголовком.
+Ежемесячные обновления Intune для бета-версии. Присвойте фильтру **Дата** значение "Июнь 2021 г." и найдите раздел с таким заголовком.
 
 ### <a name="education"></a>Образование
 - [Настройте папку ресурсов SharePoint](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) для загрузки и хранения всех файловых ресурсов в одном месте для [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
