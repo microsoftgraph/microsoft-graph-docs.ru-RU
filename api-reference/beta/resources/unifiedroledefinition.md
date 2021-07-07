@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e9f44d194eb2eebf961abf40d49aac302f9db4b5
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 804315ae2ae4b803088a419913ca91c11a8e51c4
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239781"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316498"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>тип ресурса unifiedRoleDefinition
 
@@ -18,7 +18,18 @@ ms.locfileid: "52239781"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-UnifiedRoleDefinition — это коллекция разрешений, перечисляет операции, которые можно выполнить, например чтение, запись и удаление.
+Представляет коллекцию разрешений с перечислением операций, таких как чтение, запись и удаление, которые могут выполняться поставщиком RBAC в рамках управления Microsoft 365 [RBAC](rolemanagement.md).
+
+В настоящее время поддерживаются следующие поставщики RBAC:
+- облачный КОМПЬЮТЕР 
+- управление устройствами (Intune)
+- каталог (Azure AD) 
+- управление правами (Azure AD)
+
+> [!NOTE]
+> Поставщики облачных ПК и управления правами RBAC в настоящее время поддерживают только [список](../api/rbacapplication-list-roledefinitions.md) и [получают](../api/unifiedroledefinition-get.md) операции.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -28,20 +39,20 @@ UnifiedRoleDefinition — это коллекция разрешений, пер
 | [Get unifiedRoleDefinition](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Ознакомьтесь с свойствами объекта unifiedRoleDefinition. |
 | [Создание unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Создайте объект unifiedRoleDefinition. |
 | [Обновление unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Обновление объекта unifiedRoleDefinition. |
-| [Удаление unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | Нет | Удаление объекта unifiedRoleDefinition. |
+| [Удаление unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | Нет. | Удаление объекта unifiedRoleDefinition. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка| Описание единогоRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. |
-|displayName|Строка| Имя отображения для unifiedRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. Обязательно.  Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
-|id|Строка| Уникальный идентификатор для единойRoleDefinition. Key, not nullable, Read-only.  Поддерживает `$filter` `eq` (только оператор). |
+|description|String| Описание единогоRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. |
+|displayName|String| Имя отображения для unifiedRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. Обязательный элемент.  Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
+|id|String| Уникальный идентификатор для единойRoleDefinition. Key, not nullable, Read-only.  Поддерживает `$filter` `eq` (только оператор). |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли unifiedRoleDefinition частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения.  Поддерживает `$filter` `eq` (только оператор).|
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, **когда isBuiltIn** является правдой. |
 |resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее `/` время поддерживается только. Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. Это скоро будет обесценилось. Присоединение области к назначению ролей** | 
-|rolePermissions|[коллекция unifiedRolePermission](unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, **когда isBuiltIn** является правдой. Обязательно. |
-|templateId|Строка| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, **когда isBuiltIn** является правдой. |
+|rolePermissions|[коллекция unifiedRolePermission](unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, **когда isBuiltIn** является правдой. Обязательный элемент. |
+|templateId|String| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, **когда isBuiltIn** является правдой. |
 |version|String| Указывает версию единойRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой.|
 
 ## <a name="relationships"></a>Связи
@@ -50,7 +61,7 @@ UnifiedRoleDefinition — это коллекция разрешений, пер
 |:---------------|:--------|:----------|
 |inheritsPermissionsFrom| [коллекция unifiedRoleDefinition](unifiedroledefinition.md)| Только для чтения набор определений ролей, которые наследует заданное определение роли. Только встроенные роли Azure AD поддерживают этот атрибут. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

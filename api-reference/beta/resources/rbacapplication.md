@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c3833d07e0fb9758cc8f4f5418f725889fd784dc
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9636f113222bbbe6a754c2977e08273d140a6086
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760927"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317198"
 ---
 # <a name="rbacapplication-resource-type"></a>Тип ресурса rbacApplication
 
@@ -18,7 +18,7 @@ ms.locfileid: "50760927"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер управления ролью для унифицированных определений ролей и назначений ролей для поставщиков Microsoft 365 RBAC. В настоящее время "каталог" является единственным поддерживаемой приложением RBAC.
+Контейнер управления ролью для унифицированных определений ролей и назначений ролей для Microsoft 365 поставщиков RBAC. В настоящее время каталог и управление правами — это единственные поддерживаемые приложения RBAC.
 
 ## <a name="methods"></a>Методы
 
@@ -33,13 +33,13 @@ ms.locfileid: "50760927"
 
 Нет
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
 
-Нет
+Нет.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

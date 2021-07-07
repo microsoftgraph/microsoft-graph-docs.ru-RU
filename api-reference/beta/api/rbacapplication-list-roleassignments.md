@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2877f9bca06eed962257e2c8c43c5f776d06ff76
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: bd7ae545174addab12ffe5afecaa83ccb7f7d06d
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241144"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317219"
 ---
 # <a name="list-unifiedroleassignments"></a>Список unifiedRoleAssignments
 
@@ -20,17 +20,23 @@ ms.locfileid: "52241144"
 
 Получите список объектов [unifiedRoleAssignment](../resources/unifiedroleassignment.md) для поставщика.
 
+В настоящее время поддерживаются следующие поставщики RBAC:
+- каталог (Azure AD)
+- управление правами (Azure AD)
+
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
+
+|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Каталог | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Не поддерживается.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+| Управление правами | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All | Не поддерживается. | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Список назначений ролей для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,6 +44,16 @@ ms.locfileid: "52241144"
 GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
 
 GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+```
+
+Список назначений ролей для поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса

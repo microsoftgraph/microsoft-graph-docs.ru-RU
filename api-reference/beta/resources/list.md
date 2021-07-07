@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9bc255a0bcddadbbf9190decc2d429eb88e91e67
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 30d26dfd3e140f302c6535cd6603a90568dbb567
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964563"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317100"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -28,7 +28,7 @@ ms.locfileid: "50964563"
 **Примечание.** В этой бета-версии разрешается только навигация по спискам. Их создание и обновление не поддерживаются.
 Однако вы можете создавать и менять [элементы списков][listItem].
 
-Все приведенные ниже примеры относятся к сайту, например `https://graph.microsoft.com/beta/sites/{site-id}`.
+Все примеры ниже относились к сайту, `https://graph.microsoft.com/beta/sites/{site-id}` например.
 
 | Стандартная задача               | Метод HTTP
 |:--------------------------|:------------------------------
@@ -41,9 +41,9 @@ ms.locfileid: "50964563"
 | [Создание элемента в списке][]      | POST /lists/{list-id}
 | [Получение последних действий][] | GET /lists/{list-id}/activities
 | [Получение канала WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
-|[Типы содержимого списка][]          | GET /lists/{list-id}/contentTypes
+|[Перечисление типов контента][]          | GET /lists/{list-id}/contentTypes
 |[Добавление копии типа контента с сайта][] | POST /lists/{list-id}/contentTypes/addCopy
-|[Список столбцов][]               | GET /lists/{list-id}/columns
+|[Перечисление столбцов][]               | GET /lists/{list-id}/columns
 |[Создание столбца][]              | POST /lists/{list-id}/columns
 
 [Получить списки на сайте]: ../api/list-list.md
@@ -55,9 +55,9 @@ ms.locfileid: "50964563"
 [Создание элемента в списке]: ../api/listitem-create.md
 [Получение последних действий]: ../api/activities-list.md
 [Получение канала WebSocket]: ../api/subscriptions-socketio.md
-[Типы содержимого списка]: ../api/list-list-contenttypes.md
+[Перечисление типов контента]: ../api/list-list-contenttypes.md
 [Добавление копии типа контента с сайта]: ../api/contenttype-addCopy.md
-[Список столбцов]: ../api/list-list-columns.md
+[Перечисление столбцов]: ../api/list-list-columns.md
 [Создание столбца]: ../api/list-post-columns.md
 ## <a name="json-representation"></a>Представление JSON
 
@@ -79,7 +79,7 @@ ms.locfileid: "50964563"
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -93,7 +93,7 @@ ms.locfileid: "50964563"
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
-  "webUrl": "url to visit the list in a browser"
+  "webUrl&quot;: &quot;url to visit the list in a browser"
 }
 ```
 
@@ -154,7 +154,7 @@ ms.locfileid: "50964563"
   "section": "documentation",
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
-    "Lists": "#"
+    "Lists&quot;: &quot;#"
   },
   "suppressions": []
 }

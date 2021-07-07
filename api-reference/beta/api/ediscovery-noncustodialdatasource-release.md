@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b8839fe08dc74fe03c2ff2f0dc09d8c14865a297
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 190845ea64a545b29c2de60028ca22746ba8b91f
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240906"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316960"
 ---
 # <a name="noncustodialdatasource-release"></a>noncustodialDataSource: release
 
@@ -38,7 +38,7 @@ ms.locfileid: "52240906"
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialDataSourceId}/Release
+POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialDataSourceId}/release
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

@@ -3,14 +3,14 @@ title: Get transitiveReports for orgContact
 description: Получите количество транзитных отчетов для организационного контакта.
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8e683e5224a3b473befea8f24c3971e5faf4a521
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 2ef9be3212ece4478e53dbbedbb0d2531e816dde
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210711"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316946"
 ---
 # <a name="get-transitivereports-for-orgcontact"></a>Get transitiveReports for orgContact
 
@@ -29,7 +29,7 @@ ms.locfileid: "53210711"
 |:--------------------|:---------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | OrgContact.Read, OrgContact.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | OrgContact.Read, OrgContact.Read.All, Directory.Read.All |
+| Для приложений | OrgContact.Read, OrgContact.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /contacts/{id}/transitiveReports/$count
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| ConsistencyLevel | необязательный. Обязательно. |
+| ConsistencyLevel | необязательный. Обязательный элемент. |
 
 ## <a name="request-body"></a>Текст запроса
 

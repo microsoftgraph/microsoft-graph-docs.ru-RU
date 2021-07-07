@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f4723923a6b05b13fb8076b3e69ccbf0c1295f4f
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 4ec0d13dd91ee55d886bcf13d0d8a0d227b2a558
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298561"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317107"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления правами Azure AD
 
@@ -36,11 +36,13 @@ Azure Active Directory управления правами Azure AD позвол
 - [entitlementManagementSettings:](entitlementmanagementsettings.md)параметры для управления правами Azure AD для всех клиентов.
 - [утверждение:](approval.md)представляет решения, связанные с запросом пакета доступа.
 
+Кроме того, назначения ролей для определенных ролей для управления правами можно управлять с помощью определений ролей управления [правами.](unifiedroledefinition.md)
+
 Учебник, в который показано, как использовать управление правами для создания пакета ресурсов, которые внутренние пользователи могут запрашивать самостоятельно, см. в инструкции [Create an access package using Microsoft Graph API.](/graph/tutorial-access-package-api)
 
-Обратите внимание, что функция управления правами, включая API, включена в Azure AD Premium P2. Клиент, в котором используется управление правами, должен иметь допустимую приобретенную или пробную подписку Azure AD Premium P2 или EMS E5.
+Обратите внимание, что функция управления правами, включая API, включена в Azure AD Premium P2. Клиент, в котором используется управление правами, должен иметь допустимую Azure AD Premium P2 или подписку emS E5.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением правами.
 
@@ -51,7 +53,7 @@ Azure Active Directory управления правами Azure AD позвол
 | [Пакеты доступа к спискам](../api/accesspackage-list.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка **объектов accessPackage.** |
 | [Создание accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Создайте новый **объект accessPackage.** |
 | [Получить accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Чтение свойств и связей объекта **accessPackage.** |
-| [Обновление accessPackage](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **accesspackage.** |
+| [Обновление accessPackage](../api/accesspackage-update.md)|Нет. | Обновление свойств объекта **accesspackage.** |
 | [Удаление accessPackage](../api/accesspackage-delete.md) | | Удаление **accessPackage**. |
 | [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка **объектов accessPackage,** фильтруемых на входе пользователя. |
 | [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Извлечение списка **объектов accessPackageResourceRoleScope** для пакета доступа. |
@@ -73,7 +75,7 @@ Azure Active Directory управления правами Azure AD позвол
 | [Список accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [коллекция accessPackageCatalog](accesspackagecatalog.md) | Извлечение списка **объектов accessPackageCatalogs.** |
 | [Создание accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Создайте новый **объект accessPackageCatalog.** |
 | [Получить accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Чтение свойств и связей объекта **accessPackageCatalog.** |
-| [Обновление accessPackageCatalog](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта **accessPackageCatalog.** |
+| [Обновление accessPackageCatalog](../api/accesspackagecatalog-update.md)|Нет. | Обновление свойств объекта **accessPackageCatalog.** |
 | [Удаление accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Удаление **accessPackageCatalog**. |
 | [Ресурсы accessPackageCatalog списка](../api/accesspackagecatalog-list-accesspackageresources.md) | [коллекция accessPackageResource](accesspackageresource.md) | Извлечение списка **объектов accessPackageResource.** |
 | [Роли ресурсов accessPackageCatalog в списке](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [коллекция accessPackageResourceRole](accesspackageresourcerole.md) | Извлечение списка **объектов accessPackageResourceRole.** |
@@ -84,17 +86,17 @@ Azure Active Directory управления правами Azure AD позвол
 | [Списки подключенныхОрганизацией](../api/connectedorganization-list.md) | [connectedOrganization](connectedorganization.md) collection | Извлечение списка **объектов connectedOrganization.** |
 | [Создание connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Создание нового **объекта connectedOrganization.** |
 | [ПодключениеОрганизация](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Чтение свойств и связей объекта **connectedOrganization.** |
-| [Обновление connectedOrganization](../api/connectedorganization-update.md) |Нет | Обновление **подключеннойорганизации.** |
-| [Удаление connectedOrganization](../api/connectedorganization-delete.md) |Нет | Удаление **подключеннойорганизации.** |
+| [Обновление connectedOrganization](../api/connectedorganization-update.md) |Нет. | Обновление **подключеннойорганизации.** |
+| [Удаление connectedOrganization](../api/connectedorganization-delete.md) |Нет. | Удаление **подключеннойорганизации.** |
 |[Список internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Извлечение списка внутренних спонсоров **connectedOrganization.** |
 |[Список externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Извлечение списка внешних спонсоров **connectedOrganization.** |
-|[Добавление internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Нет | Добавьте пользователя или группу во внутренние спонсоры **connectedOrganization.** |
-|[Добавление externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Нет | Добавьте пользователя или группу к внешним спонсорам **connectedOrganization.** |
-|[Удаление internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Нет | Удалите пользователя или группу из внутренних спонсоров **connectedOrganization.** |
+|[Добавление internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Нет. | Добавьте пользователя или группу во внутренние спонсоры **connectedOrganization.** |
+|[Добавление externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Нет. | Добавьте пользователя или группу к внешним спонсорам **connectedOrganization.** |
+|[Удаление internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Нет. | Удалите пользователя или группу из внутренних спонсоров **connectedOrganization.** |
 |[Получить утверждение](../api/approval-get.md) | [утверждение](approval.md) | Извлечение свойств объекта **утверждения.** |
 |[Утверждение спискаSteps](../api/approval-list-steps.md) | [коллекция approvalStep](approvalstep.md) | Список объектов **approvalStep,** связанных с объектом **утверждения.** |
 |[Получить утверждениеStep](../api/approvalstep-get.md) | [approvalStep](approvalstep.md) | Извлечение свойств объекта **approvalStep.** |
-|[Обновление approvalStep](../api/approvalstep-update.md) | Нет | Применить утверждение или отказ в принятии решения по **объекту approvalStep.** |
+|[Обновление approvalStep](../api/approvalstep-update.md) | Нет. | Применить утверждение или отказ в принятии решения по **объекту approvalStep.** |
 
 
 ## <a name="types"></a>Типы

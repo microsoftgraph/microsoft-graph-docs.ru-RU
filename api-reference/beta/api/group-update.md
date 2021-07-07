@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 39e1787ba3a88a0988977cb3c34d9575f608980a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 35f9243eb0aa6ecb21447fdb7550b07bf73efdb4
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786953"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316869"
 ---
 # <a name="update-group"></a>Update group
 
@@ -65,7 +65,7 @@ PATCH /groups/{id}
 
 > **Примечание.**
 >
-> - Свойства **allowExternalSenders** и **autoSubscribeNewMembers** можно изменить, указав их в отдельном запросе PATCH, не затрагивающем другие свойства, описанные в таблице выше.
+> - Чтобы обновить следующие свойства Exchange, необходимо указать их в собственном запросе PATCH, не включая другие свойства, перечисленные в таблице выше: **allowExternalSenders,** **autoSubscribeNewMembers,** **hideFromAddressLists,** **hideFromOutlookClients,** **isSubscribedByMail**, **unseenCount**.
 > - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#group).
 > - Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
 
@@ -92,11 +92,10 @@ PATCH /groups/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
-   "description":"description-value",
-   "displayName":"displayName-value"
+   "description":"Contoso Life v2.0",
+   "displayName":"Contoso Life Renewed"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

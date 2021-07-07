@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cca6d211de7b26efc45cad4826d1070646a6f137
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: e081dcbfa268999598c8cfa13b4cd1acd53ec6ee
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681125"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316673"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -29,7 +29,7 @@ ms.locfileid: "52681125"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение |  Directory.ReadWrite.All |
+|Для приложений |  Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,11 +49,11 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 | Параметр | Тип | Описание |
 |:---------------|:--------|:----------|
-|groupId|GUID| Идентификатор группы, которую нужно удалить из политики.|
+|groupId|String| Идентификатор группы, удаляемой из политики.|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Если из политики удаляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Если группа удалена из политики, в теле ответа возвращается `true` значение. В противном `false` случае в теле ответа возвращается значение.
 
 ## <a name="example"></a>Пример
 

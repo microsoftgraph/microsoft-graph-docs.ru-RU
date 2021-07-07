@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71948e099507bf081739dbef9f4e07d43f358af9
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 07b9aff276c46fbdcca56b365d11e7ac12066408
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870320"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317079"
 ---
 # <a name="get-unifiedroledefinition"></a>Get unifiedRoleDefinition
 
@@ -23,7 +23,8 @@ ms.locfileid: "52870320"
 В настоящее время поддерживаются следующие поставщики RBAC:
 - облачный КОМПЬЮТЕР 
 - управление устройствами (Intune)
-- каталог (Azure AD) 
+- directory (роли каталога Azure AD)
+- управление правами (управление правами Azure AD)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -31,11 +32,12 @@ ms.locfileid: "52870320"
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference). 
 
-|Поддерживаемый поставщик      | Делегированное (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Приложение |
+|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Не поддерживается. | CloudPC.Read.All, CloudPC.ReadWrite.All |
+| Облачный КОМПЬЮТЕР | CloudPC.Read.All, CloudPC.ReadWrite.All | Не поддерживается. | CloudPC.Read.All, CloudPC.ReadWrite.All |
 | Управление устройствами | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Не поддерживается. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 | Каталог | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Не поддерживается.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+| Управление правами | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All | Не поддерживается. | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,6 +60,13 @@ GET /roleManagement/deviceManagement/roleDefinitions/{id}
 GET /roleManagement/directory/roleDefinitions/{id}
 ```
 
+Получение определения роли для поставщика управления правами:
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions/{id}
+```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает параметры запросов OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -68,7 +77,7 @@ GET /roleManagement/directory/roleDefinitions/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -492,6 +501,53 @@ Content-type: application/json
     ]
 }
 ```
+
+## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>Пример 5. Получение определения встроенной роли поставщика управления правами
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_entitlementmanagement_role_unifiedroledefinition"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions/ba92d953-d8e0-4e39-a797-0cbedb0a89e8
+```
+
+
+#### <a name="response"></a>Отклик
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions/$entity",
+    "id": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "displayName": "Catalog creator",
+    "description": "Catalog creator",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "templateId": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+    "version": "1.0",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.entitlementManagement/AccessPackageCatalog/Create"
+            ]
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

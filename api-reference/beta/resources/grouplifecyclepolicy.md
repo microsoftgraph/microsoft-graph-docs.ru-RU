@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 6b53fbb6b4a4b7de83bf342b2036b40d1b08fcdf
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 0410eea8cfc0bd2bdf5083ca4ca9ff72eda11ba7
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682413"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317058"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -30,7 +30,7 @@ ms.locfileid: "52682413"
 |[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | None | Удаление объекта groupLifecyclePolicy. |
 |[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|None| Добавление группы в политику жизненного цикла. |
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|None| Удаление группы из политики жизненного цикла. |
-|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет| Продление срока действия группы. |
+|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет.| Продление срока действия группы. |
 
 ## <a name="properties"></a>Свойства
 
@@ -38,7 +38,7 @@ ms.locfileid: "52682413"
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
 |groupLifetimeInDays|Int32| Количество дней до истечения срока действия группы. После продления группа будет оставаться активной в течение указанного количества дней. |
-|id|GUID| Уникальный идентификатор политики. Только для чтения.|
+|id|String| Уникальный идентификатор политики. Только для чтения.|
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 
 ## <a name="relationships"></a>Связи

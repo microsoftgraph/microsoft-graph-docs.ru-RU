@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87b0f474181a8bb622eea401f7df285b9be3b665
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: aafcc34d288dcce1bcd0970802472a2e2e565e83
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051013"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317205"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание unifiedRoleAssignment
 
@@ -22,21 +22,31 @@ ms.locfileid: "52051013"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-|:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | RoleManagement.ReadWrite.Directory |
+|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Каталог | RoleManagement.ReadWrite.Directory | Не поддерживается.| RoleManagement.ReadWrite.Directory |
+| Управление правами | EntitlementManagement.ReadWrite.All | Не поддерживается. | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Создание назначения ролей для поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /roleManagement/directory/roleAssignments
 ```
+
+Создайте назначение ролей для поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/entitlementManagement/roleAssignments
+```
+
 
 ## <a name="request-headers"></a>Заголовки запросов
 

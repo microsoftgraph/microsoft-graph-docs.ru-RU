@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 865d18f0278084ecf884ead909374eeccaaace54
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 96bff141cc3f4dfb779335100a49a8fdf99edb00
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444891"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317072"
 ---
 # <a name="delete-unifiedroleassignment"></a>Удаление unifiedRoleAssignment
 
@@ -22,15 +22,16 @@ ms.locfileid: "50444891"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-|:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | RoleManagement.ReadWrite.Directory |
+|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Каталог | RoleManagement.ReadWrite.Directory | Не поддерживается.| RoleManagement.ReadWrite.Directory |
+| Управление правами | EntitlementManagement.ReadWrite.All | Не поддерживается. | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Удаление назначения ролей у поставщика каталогов:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,13 +39,22 @@ ms.locfileid: "50444891"
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
 
+Удаление назначения роли у поставщика управления правами:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
+```
+
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
