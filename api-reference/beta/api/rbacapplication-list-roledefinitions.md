@@ -5,86 +5,94 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 04a34aec3c611e5cf178910b7a8513a048fb797e
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 3b49093e1eeba4618bc36737e789a9484c5a5142
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869167"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317212"
 ---
-# <a name="list-unifiedroledefinitions"></a><span data-ttu-id="cb3b2-103">Список унифицированныхRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="cb3b2-103">List unifiedRoleDefinitions</span></span>
+# <a name="list-unifiedroledefinitions"></a><span data-ttu-id="06d96-103">Список унифицированныхRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="06d96-103">List unifiedRoleDefinitions</span></span>
 
-<span data-ttu-id="cb3b2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb3b2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="06d96-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06d96-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb3b2-105">Получите список объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-105">Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider.</span></span>
+<span data-ttu-id="06d96-105">Получите список объектов [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.</span><span class="sxs-lookup"><span data-stu-id="06d96-105">Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider.</span></span>
 
-<span data-ttu-id="cb3b2-106">В настоящее время поддерживаются следующие поставщики RBAC:</span><span class="sxs-lookup"><span data-stu-id="cb3b2-106">The following RBAC providers are currently supported:</span></span>
-- <span data-ttu-id="cb3b2-107">облачный КОМПЬЮТЕР</span><span class="sxs-lookup"><span data-stu-id="cb3b2-107">cloud PC</span></span> 
-- <span data-ttu-id="cb3b2-108">управление устройствами (Intune)</span><span class="sxs-lookup"><span data-stu-id="cb3b2-108">device management (Intune)</span></span>
-- <span data-ttu-id="cb3b2-109">каталог (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="cb3b2-109">directory (Azure AD)</span></span> 
+<span data-ttu-id="06d96-106">В настоящее время поддерживаются следующие поставщики RBAC:</span><span class="sxs-lookup"><span data-stu-id="06d96-106">The following RBAC providers are currently supported:</span></span>
+- <span data-ttu-id="06d96-107">облачный КОМПЬЮТЕР</span><span class="sxs-lookup"><span data-stu-id="06d96-107">cloud PC</span></span> 
+- <span data-ttu-id="06d96-108">управление устройствами (Intune)</span><span class="sxs-lookup"><span data-stu-id="06d96-108">device management (Intune)</span></span>
+- <span data-ttu-id="06d96-109">каталог (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="06d96-109">directory (Azure AD)</span></span> 
+- <span data-ttu-id="06d96-110">управление правами (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="06d96-110">entitlement management (Azure AD)</span></span>
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a><span data-ttu-id="cb3b2-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cb3b2-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="06d96-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="06d96-111">Permissions</span></span>
 
-<span data-ttu-id="cb3b2-111">В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-111">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="cb3b2-112">Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb3b2-112">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span> 
+<span data-ttu-id="06d96-112">В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="06d96-112">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="06d96-113">Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06d96-113">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span> 
 
-|<span data-ttu-id="cb3b2-113">Поддерживаемый поставщик</span><span class="sxs-lookup"><span data-stu-id="cb3b2-113">Supported provider</span></span>      | <span data-ttu-id="cb3b2-114">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cb3b2-114">Delegated (work or school account)</span></span>  | <span data-ttu-id="cb3b2-115">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cb3b2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb3b2-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="cb3b2-116">Application</span></span> |
+|<span data-ttu-id="06d96-114">Поддерживаемый поставщик</span><span class="sxs-lookup"><span data-stu-id="06d96-114">Supported provider</span></span>      | <span data-ttu-id="06d96-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="06d96-115">Delegated (work or school account)</span></span>  | <span data-ttu-id="06d96-116">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="06d96-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06d96-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="06d96-117">Application</span></span> |
 |:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| <span data-ttu-id="cb3b2-117">Cloud PC</span><span class="sxs-lookup"><span data-stu-id="cb3b2-117">Cloud PC</span></span> | <span data-ttu-id="cb3b2-118">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb3b2-118">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> | <span data-ttu-id="cb3b2-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-119">Not supported.</span></span> | <span data-ttu-id="cb3b2-120">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb3b2-120">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> |
-| <span data-ttu-id="cb3b2-121">Управление устройствами</span><span class="sxs-lookup"><span data-stu-id="cb3b2-121">Device management</span></span> | <span data-ttu-id="cb3b2-122">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb3b2-122">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> | <span data-ttu-id="cb3b2-123">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-123">Not supported.</span></span> | <span data-ttu-id="cb3b2-124">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb3b2-124">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> |
-| <span data-ttu-id="cb3b2-125">Каталог</span><span class="sxs-lookup"><span data-stu-id="cb3b2-125">Directory</span></span> | <span data-ttu-id="cb3b2-126">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cb3b2-126">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> | <span data-ttu-id="cb3b2-127">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-127">Not supported.</span></span>| <span data-ttu-id="cb3b2-128">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb3b2-128">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="06d96-118">Облачный КОМПЬЮТЕР</span><span class="sxs-lookup"><span data-stu-id="06d96-118">Cloud PC</span></span> | <span data-ttu-id="06d96-119">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d96-119">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> | <span data-ttu-id="06d96-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06d96-120">Not supported.</span></span> | <span data-ttu-id="06d96-121">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d96-121">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> |
+| <span data-ttu-id="06d96-122">Управление устройствами</span><span class="sxs-lookup"><span data-stu-id="06d96-122">Device management</span></span> | <span data-ttu-id="06d96-123">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d96-123">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> | <span data-ttu-id="06d96-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06d96-124">Not supported.</span></span> | <span data-ttu-id="06d96-125">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d96-125">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> |
+| <span data-ttu-id="06d96-126">Каталог</span><span class="sxs-lookup"><span data-stu-id="06d96-126">Directory</span></span> | <span data-ttu-id="06d96-127">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="06d96-127">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> | <span data-ttu-id="06d96-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06d96-128">Not supported.</span></span>| <span data-ttu-id="06d96-129">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d96-129">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="06d96-130">Управление правами</span><span class="sxs-lookup"><span data-stu-id="06d96-130">Entitlement management</span></span> | <span data-ttu-id="06d96-131">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06d96-131">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> | <span data-ttu-id="06d96-132">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06d96-132">Not supported.</span></span> | <span data-ttu-id="06d96-133">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06d96-133">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="cb3b2-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cb3b2-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="06d96-134">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="06d96-134">HTTP request</span></span>
 
-<span data-ttu-id="cb3b2-130">Список определений ролей для поставщика облачных ПК:</span><span class="sxs-lookup"><span data-stu-id="cb3b2-130">To list role definitions for a cloud PC provider:</span></span>
+<span data-ttu-id="06d96-135">Список определений ролей для поставщика облачных ПК:</span><span class="sxs-lookup"><span data-stu-id="06d96-135">To list role definitions for a cloud PC provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions
 ```
 
-<span data-ttu-id="cb3b2-131">Список определений ролей для поставщика управления устройствами:</span><span class="sxs-lookup"><span data-stu-id="cb3b2-131">To list role definitions for a device management provider:</span></span>
+<span data-ttu-id="06d96-136">Список определений ролей для поставщика управления устройствами:</span><span class="sxs-lookup"><span data-stu-id="06d96-136">To list role definitions for a device management provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions
 ```
 
-<span data-ttu-id="cb3b2-132">Список определений ролей для поставщика каталогов:</span><span class="sxs-lookup"><span data-stu-id="cb3b2-132">To list role definitions for a directory provider:</span></span>
+<span data-ttu-id="06d96-137">Список определений ролей для поставщика каталогов:</span><span class="sxs-lookup"><span data-stu-id="06d96-137">To list role definitions for a directory provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="cb3b2-133">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cb3b2-133">Optional query parameters</span></span>
-<span data-ttu-id="cb3b2-134">Этот метод поддерживает параметр `$filter` запроса `id` и `displayName` `isBuiltIn` свойства.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-134">This method supports `$filter` query parameter on `id`, `displayName`, and `isBuiltIn` properties.</span></span> <span data-ttu-id="cb3b2-135">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="cb3b2-135">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="06d96-138">Список определений ролей для поставщика управления правами:</span><span class="sxs-lookup"><span data-stu-id="06d96-138">To list role definitions for the entitlement management provider:</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions
+```
 
-## <a name="request-headers"></a><span data-ttu-id="cb3b2-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cb3b2-136">Request headers</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="06d96-139">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="06d96-139">Optional query parameters</span></span>
+<span data-ttu-id="06d96-140">Этот метод поддерживает параметр `$filter` запроса `id` и `displayName` `isBuiltIn` свойства.</span><span class="sxs-lookup"><span data-stu-id="06d96-140">This method supports `$filter` query parameter on `id`, `displayName`, and `isBuiltIn` properties.</span></span> <span data-ttu-id="06d96-141">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="06d96-141">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-| <span data-ttu-id="cb3b2-137">Имя</span><span class="sxs-lookup"><span data-stu-id="cb3b2-137">Name</span></span>      |<span data-ttu-id="cb3b2-138">Описание</span><span class="sxs-lookup"><span data-stu-id="cb3b2-138">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="06d96-142">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="06d96-142">Request headers</span></span>
+
+| <span data-ttu-id="06d96-143">Имя</span><span class="sxs-lookup"><span data-stu-id="06d96-143">Name</span></span>      |<span data-ttu-id="06d96-144">Описание</span><span class="sxs-lookup"><span data-stu-id="06d96-144">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cb3b2-139">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cb3b2-139">Authorization</span></span> | <span data-ttu-id="cb3b2-140">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="cb3b2-140">Bearer {token}</span></span> |
+| <span data-ttu-id="06d96-145">Авторизация</span><span class="sxs-lookup"><span data-stu-id="06d96-145">Authorization</span></span> | <span data-ttu-id="06d96-146">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="06d96-146">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cb3b2-141">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cb3b2-141">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="06d96-147">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="06d96-147">Request body</span></span>
 
-<span data-ttu-id="cb3b2-142">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-142">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="06d96-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="06d96-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cb3b2-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb3b2-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="06d96-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="06d96-149">Response</span></span>
 
-<span data-ttu-id="cb3b2-144">В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-144">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.</span></span>
+<span data-ttu-id="06d96-150">В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="06d96-150">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cb3b2-145">Примеры</span><span class="sxs-lookup"><span data-stu-id="cb3b2-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="06d96-151">Примеры</span><span class="sxs-lookup"><span data-stu-id="06d96-151">Examples</span></span>
 
-### <a name="example-1-list-role-definitions-for-a-directory-provider"></a><span data-ttu-id="cb3b2-146">Пример 1. Список определений ролей для поставщика каталогов</span><span class="sxs-lookup"><span data-stu-id="cb3b2-146">Example 1: List role definitions for a directory provider</span></span>
+### <a name="example-1-list-role-definitions-for-a-directory-provider"></a><span data-ttu-id="06d96-152">Пример 1. Список определений ролей для поставщика каталогов</span><span class="sxs-lookup"><span data-stu-id="06d96-152">Example 1: List role definitions for a directory provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cb3b2-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb3b2-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="06d96-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="06d96-153">Request</span></span>
 
-<span data-ttu-id="cb3b2-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-148">The following is an example of the request.</span></span>
+<span data-ttu-id="06d96-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="06d96-154">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cb3b2-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb3b2-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="06d96-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="06d96-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions_directory"
@@ -93,30 +101,30 @@ GET /roleManagement/directory/roleDefinitions
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 ```
-# <a name="c"></a>[<span data-ttu-id="cb3b2-150">C#</span><span class="sxs-lookup"><span data-stu-id="cb3b2-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="06d96-156">C#</span><span class="sxs-lookup"><span data-stu-id="06d96-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cb3b2-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb3b2-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="06d96-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="06d96-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cb3b2-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb3b2-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="06d96-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="06d96-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cb3b2-153">Java</span><span class="sxs-lookup"><span data-stu-id="cb3b2-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="06d96-159">Java</span><span class="sxs-lookup"><span data-stu-id="06d96-159">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cb3b2-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb3b2-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="06d96-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="06d96-160">Response</span></span>
 
-<span data-ttu-id="cb3b2-155">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-155">The following is an example of the response.</span></span>
+<span data-ttu-id="06d96-161">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="06d96-161">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="cb3b2-156">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-156">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="06d96-162">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="06d96-162">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -223,14 +231,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a><span data-ttu-id="cb3b2-157">Пример 2. Список определений ролей для поставщика облачных ПК</span><span class="sxs-lookup"><span data-stu-id="cb3b2-157">Example 2: List role definitions for a cloud PC provider</span></span>
+### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a><span data-ttu-id="06d96-163">Пример 2. Список определений ролей для поставщика облачных ПК</span><span class="sxs-lookup"><span data-stu-id="06d96-163">Example 2: List role definitions for a cloud PC provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cb3b2-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb3b2-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="06d96-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="06d96-164">Request</span></span>
 
-<span data-ttu-id="cb3b2-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-159">The following is an example of the request.</span></span>
+<span data-ttu-id="06d96-165">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="06d96-165">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cb3b2-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb3b2-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="06d96-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="06d96-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions_cloudpc"
@@ -239,30 +247,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 ```
-# <a name="c"></a>[<span data-ttu-id="cb3b2-161">C#</span><span class="sxs-lookup"><span data-stu-id="cb3b2-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="06d96-167">C#</span><span class="sxs-lookup"><span data-stu-id="06d96-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-cloudpc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cb3b2-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb3b2-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="06d96-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="06d96-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-cloudpc-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cb3b2-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb3b2-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="06d96-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="06d96-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-cloudpc-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cb3b2-164">Java</span><span class="sxs-lookup"><span data-stu-id="cb3b2-164">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="06d96-170">Java</span><span class="sxs-lookup"><span data-stu-id="06d96-170">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roledefinitions-cloudpc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cb3b2-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb3b2-165">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="06d96-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="06d96-171">Response</span></span>
 
-<span data-ttu-id="cb3b2-166">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-166">The following is an example of the response.</span></span>
+<span data-ttu-id="06d96-172">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="06d96-172">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="cb3b2-167">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="cb3b2-167">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="06d96-173">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="06d96-173">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -339,6 +347,78 @@ Content-type: application/json
                         "Microsoft.CloudPC/Roles/Read"
                     ],
                     "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-list-role-definitions-for-the-entitlement-management-provider"></a><span data-ttu-id="06d96-174">Пример 3. Список определений ролей для поставщика управления правами</span><span class="sxs-lookup"><span data-stu-id="06d96-174">Example 3: List role definitions for the entitlement management provider</span></span>
+
+#### <a name="request"></a><span data-ttu-id="06d96-175">Запрос</span><span class="sxs-lookup"><span data-stu-id="06d96-175">Request</span></span>
+
+<span data-ttu-id="06d96-176">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="06d96-176">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_entitlementmanagement"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDefinitions
+```
+
+#### <a name="response"></a><span data-ttu-id="06d96-177">Отклик</span><span class="sxs-lookup"><span data-stu-id="06d96-177">Response</span></span>
+
+<span data-ttu-id="06d96-178">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="06d96-178">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="06d96-179">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="06d96-179">**Note:** The response object shown here might be shortened for readability.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "name": "get_roledefinitions_entitlementmanagement",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleDefinitions",
+    "value": [
+        {
+            "id": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "displayName": "Catalog owner",
+            "description": "Catalog owner",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/allTasks"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "displayName": "Catalog reader",
+            "description": "Catalog reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/Read"
+                    ]
                 }
             ]
         }

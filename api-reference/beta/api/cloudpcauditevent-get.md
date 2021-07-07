@@ -5,34 +5,34 @@ author: ecmadao
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1848aa35f9c4b1f31159d950e946e898ff84ad1c
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 9dc44e92d4e332a2e682c25f525d72faa7a62847
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211322"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316891"
 ---
-# <a name="get-cloudpcauditevent"></a><span data-ttu-id="0ff7a-103">Get cloudPcAuditEvent</span><span class="sxs-lookup"><span data-stu-id="0ff7a-103">Get cloudPcAuditEvent</span></span>
+# <a name="get-cloudpcauditevent"></a><span data-ttu-id="f392b-103">Get cloudPcAuditEvent</span><span class="sxs-lookup"><span data-stu-id="f392b-103">Get cloudPcAuditEvent</span></span>
 
-<span data-ttu-id="0ff7a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0ff7a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f392b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f392b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0ff7a-105">Ознакомьтесь с свойствами и отношениями объекта [cloudPcAuditEvent.](../resources/cloudpcauditevent.md)</span><span class="sxs-lookup"><span data-stu-id="0ff7a-105">Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.</span></span>
+<span data-ttu-id="f392b-105">Ознакомьтесь с свойствами и отношениями объекта [cloudPcAuditEvent.](../resources/cloudpcauditevent.md)</span><span class="sxs-lookup"><span data-stu-id="f392b-105">Read the properties and relationships of a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object.</span></span>
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a><span data-ttu-id="0ff7a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0ff7a-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f392b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f392b-106">Permissions</span></span>
 
-<span data-ttu-id="0ff7a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ff7a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f392b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f392b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0ff7a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0ff7a-109">Permission type</span></span>| <span data-ttu-id="0ff7a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0ff7a-110">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="f392b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f392b-109">Permission type</span></span>| <span data-ttu-id="f392b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f392b-110">Permissions (from least to most privileged)</span></span> |
 |:---|:---|
-|<span data-ttu-id="0ff7a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0ff7a-111">Delegated (work or school account)</span></span>|<span data-ttu-id="0ff7a-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0ff7a-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>|
-|<span data-ttu-id="0ff7a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0ff7a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ff7a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ff7a-114">Not supported.</span></span>|
-|<span data-ttu-id="0ff7a-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="0ff7a-115">Application</span></span>|<span data-ttu-id="0ff7a-116">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0ff7a-116">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>|
+|<span data-ttu-id="f392b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f392b-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f392b-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f392b-112">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>|
+|<span data-ttu-id="f392b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f392b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f392b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f392b-114">Not supported.</span></span>|
+|<span data-ttu-id="f392b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f392b-115">Application</span></span>|<span data-ttu-id="f392b-116">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f392b-116">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0ff7a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0ff7a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f392b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f392b-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -43,24 +43,26 @@ ms.locfileid: "53211322"
 GET /deviceManagement/virtualEndpoint/auditEvents/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0ff7a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0ff7a-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f392b-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f392b-118">Request headers</span></span>
 
-| <span data-ttu-id="0ff7a-119">Имя</span><span class="sxs-lookup"><span data-stu-id="0ff7a-119">Name</span></span>          | <span data-ttu-id="0ff7a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="0ff7a-120">Description</span></span>               |
+| <span data-ttu-id="f392b-119">Имя</span><span class="sxs-lookup"><span data-stu-id="f392b-119">Name</span></span>          | <span data-ttu-id="f392b-120">Описание</span><span class="sxs-lookup"><span data-stu-id="f392b-120">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="0ff7a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0ff7a-121">Authorization</span></span> | <span data-ttu-id="0ff7a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0ff7a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f392b-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f392b-121">Authorization</span></span> | <span data-ttu-id="f392b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f392b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0ff7a-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0ff7a-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f392b-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f392b-124">Request body</span></span>
 
-<span data-ttu-id="0ff7a-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0ff7a-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f392b-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f392b-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0ff7a-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ff7a-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f392b-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="f392b-126">Response</span></span>
 
-<span data-ttu-id="0ff7a-127">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект cloudPcAuditEvent](../resources/cloudpcauditevent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0ff7a-127">If successful, this method returns a `200 OK` response code and a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object in the response body.</span></span>
+<span data-ttu-id="f392b-127">В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект cloudPcAuditEvent](../resources/cloudpcauditevent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f392b-127">If successful, this method returns a `200 OK` response code and a [cloudPcAuditEvent](../resources/cloudpcauditevent.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0ff7a-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="0ff7a-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f392b-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="f392b-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="0ff7a-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ff7a-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f392b-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="f392b-129">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="f392b-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="f392b-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcauditevent"
@@ -70,10 +72,28 @@ GET /deviceManagement/virtualEndpoint/auditEvents/{id}
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/auditEvents/{id}
 ```
+# <a name="c"></a>[<span data-ttu-id="f392b-131">C#</span><span class="sxs-lookup"><span data-stu-id="f392b-131">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcauditevent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="0ff7a-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ff7a-130">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="f392b-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f392b-132">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcauditevent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="0ff7a-131">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="0ff7a-131">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="f392b-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f392b-133">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpcauditevent-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="f392b-134">Java</span><span class="sxs-lookup"><span data-stu-id="f392b-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcauditevent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="f392b-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="f392b-135">Response</span></span>
+
+><span data-ttu-id="f392b-136">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f392b-136">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
