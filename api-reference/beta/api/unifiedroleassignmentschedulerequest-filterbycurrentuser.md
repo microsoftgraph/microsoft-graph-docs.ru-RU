@@ -5,31 +5,31 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f30a2e8a7c1ac1440291d4e9e7849637c20e3be3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 182ffc04a0c86838eea976c3c77496cba8a92f86
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680278"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53333977"
 ---
-# <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a><span data-ttu-id="106a6-103">unifiedRoleAssignmentScheduleRequest: filterByCurrentUser</span><span class="sxs-lookup"><span data-stu-id="106a6-103">unifiedRoleAssignmentScheduleRequest: filterByCurrentUser</span></span>
-<span data-ttu-id="106a6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="106a6-104">Namespace: microsoft.graph</span></span>
+# <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a><span data-ttu-id="65d87-103">unifiedRoleAssignmentScheduleRequest: filterByCurrentUser</span><span class="sxs-lookup"><span data-stu-id="65d87-103">unifiedRoleAssignmentScheduleRequest: filterByCurrentUser</span></span>
+<span data-ttu-id="65d87-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65d87-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-<span data-ttu-id="106a6-105">Получите список объектов [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) и их свойств, связанных с определенным основным объектом.</span><span class="sxs-lookup"><span data-stu-id="106a6-105">Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties associated with a particular principal object.</span></span>
+<span data-ttu-id="65d87-105">Получите список объектов [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) и их свойств, связанных с определенным основным объектом.</span><span class="sxs-lookup"><span data-stu-id="65d87-105">Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties associated with a particular principal object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="106a6-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="106a6-106">Permissions</span></span>
-<span data-ttu-id="106a6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="106a6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="65d87-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="65d87-106">Permissions</span></span>
+<span data-ttu-id="65d87-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65d87-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="106a6-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="106a6-109">Permission type</span></span>|<span data-ttu-id="106a6-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="106a6-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="65d87-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="65d87-109">Permission type</span></span>|<span data-ttu-id="65d87-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="65d87-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="106a6-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="106a6-111">Delegated (work or school account)</span></span>|<span data-ttu-id="106a6-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="106a6-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
-|<span data-ttu-id="106a6-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="106a6-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="106a6-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="106a6-114">Not supported</span></span>|
-|<span data-ttu-id="106a6-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="106a6-115">Application</span></span>|<span data-ttu-id="106a6-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="106a6-116">PrivilegedAccess.Read.AzureAD</span></span>|
+|<span data-ttu-id="65d87-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="65d87-111">Delegated (work or school account)</span></span>|<span data-ttu-id="65d87-112">RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="65d87-112">RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory</span></span>|
+|<span data-ttu-id="65d87-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="65d87-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="65d87-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="65d87-114">Not supported</span></span>|
+|<span data-ttu-id="65d87-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="65d87-115">Application</span></span>|<span data-ttu-id="65d87-116">RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="65d87-116">RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="106a6-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="106a6-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65d87-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="65d87-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,29 +39,29 @@ ms.locfileid: "52680278"
 GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="106a6-118">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="106a6-118">Query parameters</span></span>
-<span data-ttu-id="106a6-119">В следующей таблице показаны параметры запроса, которые можно использовать с помощью этого метода.</span><span class="sxs-lookup"><span data-stu-id="106a6-119">The following table shows the query parameters that can be used with this method.</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="65d87-118">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="65d87-118">Query parameters</span></span>
+<span data-ttu-id="65d87-119">В следующей таблице показаны параметры запроса, которые можно использовать с помощью этого метода.</span><span class="sxs-lookup"><span data-stu-id="65d87-119">The following table shows the query parameters that can be used with this method.</span></span>
 
-|<span data-ttu-id="106a6-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="106a6-120">Parameter</span></span>|<span data-ttu-id="106a6-121">Тип</span><span class="sxs-lookup"><span data-stu-id="106a6-121">Type</span></span>|<span data-ttu-id="106a6-122">Описание</span><span class="sxs-lookup"><span data-stu-id="106a6-122">Description</span></span>|
+|<span data-ttu-id="65d87-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="65d87-120">Parameter</span></span>|<span data-ttu-id="65d87-121">Тип</span><span class="sxs-lookup"><span data-stu-id="65d87-121">Type</span></span>|<span data-ttu-id="65d87-122">Описание</span><span class="sxs-lookup"><span data-stu-id="65d87-122">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="106a6-123">on</span><span class="sxs-lookup"><span data-stu-id="106a6-123">on</span></span>|<span data-ttu-id="106a6-124">RoleAssignmentScheduleRequestFilterByCurrentUserOptions</span><span class="sxs-lookup"><span data-stu-id="106a6-124">RoleAssignmentScheduleRequestFilterByCurrentUserOptions</span></span>|<span data-ttu-id="106a6-125">Id основного объекта.</span><span class="sxs-lookup"><span data-stu-id="106a6-125">Id of the principal object.</span></span>|
+|<span data-ttu-id="65d87-123">on</span><span class="sxs-lookup"><span data-stu-id="65d87-123">on</span></span>|<span data-ttu-id="65d87-124">RoleAssignmentScheduleRequestFilterByCurrentUserOptions</span><span class="sxs-lookup"><span data-stu-id="65d87-124">RoleAssignmentScheduleRequestFilterByCurrentUserOptions</span></span>|<span data-ttu-id="65d87-125">Id основного объекта.</span><span class="sxs-lookup"><span data-stu-id="65d87-125">Id of the principal object.</span></span>|
 
 
-## <a name="request-headers"></a><span data-ttu-id="106a6-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="106a6-126">Request headers</span></span>
-|<span data-ttu-id="106a6-127">Имя</span><span class="sxs-lookup"><span data-stu-id="106a6-127">Name</span></span>|<span data-ttu-id="106a6-128">Описание</span><span class="sxs-lookup"><span data-stu-id="106a6-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="65d87-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="65d87-126">Request headers</span></span>
+|<span data-ttu-id="65d87-127">Имя</span><span class="sxs-lookup"><span data-stu-id="65d87-127">Name</span></span>|<span data-ttu-id="65d87-128">Описание</span><span class="sxs-lookup"><span data-stu-id="65d87-128">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="106a6-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="106a6-129">Authorization</span></span>|<span data-ttu-id="106a6-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="106a6-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="65d87-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="65d87-129">Authorization</span></span>|<span data-ttu-id="65d87-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="65d87-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="106a6-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="106a6-132">Request body</span></span>
-<span data-ttu-id="106a6-133">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="106a6-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="65d87-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="65d87-132">Request body</span></span>
+<span data-ttu-id="65d87-133">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="65d87-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="106a6-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="106a6-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="65d87-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="65d87-134">Response</span></span>
 
-<span data-ttu-id="106a6-135">В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [унифицированную коллекциюRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="106a6-135">If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) collection in the response body.</span></span>
+<span data-ttu-id="65d87-135">В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [унифицированную коллекциюRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="65d87-135">If successful, this method returns a `200 OK` response code and a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) collection in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="106a6-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="106a6-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="65d87-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="65d87-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="106a6-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="106a6-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="65d87-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="65d87-137">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "unifiedroleassignmentschedulerequest_filterbycurrentuser"
@@ -72,8 +72,8 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentSche
 ```
 
 
-### <a name="response"></a><span data-ttu-id="106a6-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="106a6-138">Response</span></span>
-<span data-ttu-id="106a6-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="106a6-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="65d87-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="65d87-138">Response</span></span>
+<span data-ttu-id="65d87-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="65d87-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

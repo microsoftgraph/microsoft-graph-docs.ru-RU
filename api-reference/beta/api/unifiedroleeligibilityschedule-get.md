@@ -5,30 +5,30 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 22f90942b141cca787ea583debb718b8a05c41d8
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 749d8df40fbc5aa92af9f4b33fe8502863139d0d
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679948"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334523"
 ---
-# <a name="get-unifiedroleeligibilityschedule"></a><span data-ttu-id="d11f0-103">Get unifiedRoleEligibilitySchedule</span><span class="sxs-lookup"><span data-stu-id="d11f0-103">Get unifiedRoleEligibilitySchedule</span></span>
-<span data-ttu-id="d11f0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d11f0-104">Namespace: microsoft.graph</span></span>
+# <a name="get-unifiedroleeligibilityschedule"></a><span data-ttu-id="eb867-103">Get unifiedRoleEligibilitySchedule</span><span class="sxs-lookup"><span data-stu-id="eb867-103">Get unifiedRoleEligibilitySchedule</span></span>
+<span data-ttu-id="eb867-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="eb867-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d11f0-105">Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilitySchedule.](../resources/unifiedroleeligibilityschedule.md)</span><span class="sxs-lookup"><span data-stu-id="d11f0-105">Read the properties and relationships of an [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) object.</span></span>
+<span data-ttu-id="eb867-105">Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilitySchedule.](../resources/unifiedroleeligibilityschedule.md)</span><span class="sxs-lookup"><span data-stu-id="eb867-105">Read the properties and relationships of an [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d11f0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d11f0-106">Permissions</span></span>
-<span data-ttu-id="d11f0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d11f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="eb867-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="eb867-106">Permissions</span></span>
+<span data-ttu-id="eb867-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eb867-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d11f0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d11f0-109">Permission type</span></span>|<span data-ttu-id="d11f0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d11f0-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="eb867-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="eb867-109">Permission type</span></span>|<span data-ttu-id="eb867-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="eb867-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d11f0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d11f0-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d11f0-112">PrivilegedAccess.ReadWrite.AzureAD</span><span class="sxs-lookup"><span data-stu-id="d11f0-112">PrivilegedAccess.ReadWrite.AzureAD</span></span>|
-|<span data-ttu-id="d11f0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d11f0-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d11f0-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="d11f0-114">Not supported</span></span>|
-|<span data-ttu-id="d11f0-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="d11f0-115">Application</span></span>|<span data-ttu-id="d11f0-116">PrivilegedAccess.Read.AzureAD</span><span class="sxs-lookup"><span data-stu-id="d11f0-116">PrivilegedAccess.Read.AzureAD</span></span>|
+|<span data-ttu-id="eb867-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="eb867-111">Delegated (work or school account)</span></span>|<span data-ttu-id="eb867-112">RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="eb867-112">RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory</span></span> |
+|<span data-ttu-id="eb867-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="eb867-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="eb867-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="eb867-114">Not supported</span></span>|
+|<span data-ttu-id="eb867-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="eb867-115">Application</span></span>|<span data-ttu-id="eb867-116">RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="eb867-116">RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d11f0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d11f0-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eb867-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="eb867-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,26 +38,26 @@ ms.locfileid: "52679948"
 GET /roleManagement/directory/roleEligibilitySchedules/{unifiedRoleEligibilitySchedulesId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d11f0-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d11f0-118">Optional query parameters</span></span>
-<span data-ttu-id="d11f0-119">Этот метод поддерживает все параметры запроса OData, чтобы помочь настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="d11f0-119">This method supports all of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="d11f0-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d11f0-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="eb867-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="eb867-118">Optional query parameters</span></span>
+<span data-ttu-id="eb867-119">Этот метод поддерживает все параметры запроса OData, чтобы помочь настроить ответ.</span><span class="sxs-lookup"><span data-stu-id="eb867-119">This method supports all of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="eb867-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="eb867-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d11f0-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d11f0-121">Request headers</span></span>
-|<span data-ttu-id="d11f0-122">Имя</span><span class="sxs-lookup"><span data-stu-id="d11f0-122">Name</span></span>|<span data-ttu-id="d11f0-123">Описание</span><span class="sxs-lookup"><span data-stu-id="d11f0-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="eb867-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="eb867-121">Request headers</span></span>
+|<span data-ttu-id="eb867-122">Имя</span><span class="sxs-lookup"><span data-stu-id="eb867-122">Name</span></span>|<span data-ttu-id="eb867-123">Описание</span><span class="sxs-lookup"><span data-stu-id="eb867-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="d11f0-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d11f0-124">Authorization</span></span>|<span data-ttu-id="d11f0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d11f0-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="eb867-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="eb867-124">Authorization</span></span>|<span data-ttu-id="eb867-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="eb867-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d11f0-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d11f0-127">Request body</span></span>
-<span data-ttu-id="d11f0-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d11f0-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="eb867-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="eb867-127">Request body</span></span>
+<span data-ttu-id="eb867-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="eb867-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d11f0-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="d11f0-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="eb867-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="eb867-129">Response</span></span>
 
-<span data-ttu-id="d11f0-130">В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="d11f0-130">If successful, this method returns a `200 OK` response code and an [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) object in the response body.</span></span>
+<span data-ttu-id="eb867-130">В случае успешной работы этот метод возвращает код ответа и `200 OK` объект [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="eb867-130">If successful, this method returns a `200 OK` response code and an [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d11f0-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="d11f0-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="eb867-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="eb867-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="d11f0-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="d11f0-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="eb867-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="eb867-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d11f0-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="d11f0-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="eb867-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="eb867-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleeligibilityschedule"
@@ -66,19 +66,19 @@ GET /roleManagement/directory/roleEligibilitySchedules/{unifiedRoleEligibilitySc
 ``` http
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySchedules/5cfd7709-7709-5cfd-0977-fd5c0977fd5c
 ```
-# <a name="c"></a>[<span data-ttu-id="d11f0-134">C#</span><span class="sxs-lookup"><span data-stu-id="d11f0-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="eb867-134">C#</span><span class="sxs-lookup"><span data-stu-id="eb867-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d11f0-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d11f0-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="eb867-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eb867-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleeligibilityschedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d11f0-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d11f0-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="eb867-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eb867-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleeligibilityschedule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="d11f0-137">Java</span><span class="sxs-lookup"><span data-stu-id="d11f0-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="eb867-137">Java</span><span class="sxs-lookup"><span data-stu-id="eb867-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleeligibilityschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,8 +86,8 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 
-### <a name="response"></a><span data-ttu-id="d11f0-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="d11f0-138">Response</span></span>
-<span data-ttu-id="d11f0-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d11f0-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="eb867-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="eb867-138">Response</span></span>
+<span data-ttu-id="eb867-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="eb867-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

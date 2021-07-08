@@ -5,80 +5,93 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d7d387736e1b59a4afd04558433d68a17d2bedb2
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 6b1aeecdae5b36e4c10768ee37b1505aba25687b
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869970"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334502"
 ---
-# <a name="get-unifiedroleassignmentmultiple"></a><span data-ttu-id="fabbf-103">Получение unifiedRoleAssignmentMultiple</span><span class="sxs-lookup"><span data-stu-id="fabbf-103">Get unifiedRoleAssignmentMultiple</span></span>
+# <a name="get-unifiedroleassignmentmultiple"></a><span data-ttu-id="e5cef-103">Получение unifiedRoleAssignmentMultiple</span><span class="sxs-lookup"><span data-stu-id="e5cef-103">Get unifiedRoleAssignmentMultiple</span></span>
 
-<span data-ttu-id="fabbf-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fabbf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e5cef-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e5cef-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fabbf-105">Получите свойства и связи объекта [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) поставщика RBAC.</span><span class="sxs-lookup"><span data-stu-id="fabbf-105">Get the properties and relationships of a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider.</span></span> 
+<span data-ttu-id="e5cef-105">Получите свойства и связи объекта [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) поставщика RBAC.</span><span class="sxs-lookup"><span data-stu-id="e5cef-105">Get the properties and relationships of a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider.</span></span> 
 
-<span data-ttu-id="fabbf-106">В настоящее время поддерживаются следующие поставщики RBAC:</span><span class="sxs-lookup"><span data-stu-id="fabbf-106">The following RBAC providers are currently supported:</span></span>
-- <span data-ttu-id="fabbf-107">облачный КОМПЬЮТЕР</span><span class="sxs-lookup"><span data-stu-id="fabbf-107">cloud PC</span></span> 
-- <span data-ttu-id="fabbf-108">управление устройствами (Intune)</span><span class="sxs-lookup"><span data-stu-id="fabbf-108">device management (Intune)</span></span>
+<span data-ttu-id="e5cef-106">В настоящее время поддерживаются следующие поставщики RBAC:</span><span class="sxs-lookup"><span data-stu-id="e5cef-106">The following RBAC providers are currently supported:</span></span>
+- <span data-ttu-id="e5cef-107">облачный КОМПЬЮТЕР</span><span class="sxs-lookup"><span data-stu-id="e5cef-107">cloud PC</span></span> 
+- <span data-ttu-id="e5cef-108">управление устройствами (Intune)</span><span class="sxs-lookup"><span data-stu-id="e5cef-108">device management (Intune)</span></span>
 
-<span data-ttu-id="fabbf-109">Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)</span><span class="sxs-lookup"><span data-stu-id="fabbf-109">For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).</span></span>
+<span data-ttu-id="e5cef-109">Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)</span><span class="sxs-lookup"><span data-stu-id="e5cef-109">For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).</span></span>
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a><span data-ttu-id="fabbf-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fabbf-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e5cef-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e5cef-110">Permissions</span></span>
 
-<span data-ttu-id="fabbf-111">В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="fabbf-111">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="fabbf-112">Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fabbf-112">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span> 
+<span data-ttu-id="e5cef-111">В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e5cef-111">Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API.</span></span> <span data-ttu-id="e5cef-112">Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference)</span><span class="sxs-lookup"><span data-stu-id="e5cef-112">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference).</span></span> 
 
-|<span data-ttu-id="fabbf-113">Поддерживаемый поставщик</span><span class="sxs-lookup"><span data-stu-id="fabbf-113">Supported provider</span></span>      | <span data-ttu-id="fabbf-114">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fabbf-114">Delegated (work or school account)</span></span>  | <span data-ttu-id="fabbf-115">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fabbf-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fabbf-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="fabbf-116">Application</span></span> |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| <span data-ttu-id="fabbf-117">Cloud PC</span><span class="sxs-lookup"><span data-stu-id="fabbf-117">Cloud PC</span></span> | <span data-ttu-id="fabbf-118">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fabbf-118">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> | <span data-ttu-id="fabbf-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fabbf-119">Not supported.</span></span> | <span data-ttu-id="fabbf-120">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fabbf-120">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span> |
-| <span data-ttu-id="fabbf-121">Intune</span><span class="sxs-lookup"><span data-stu-id="fabbf-121">Intune</span></span> | <span data-ttu-id="fabbf-122">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fabbf-122">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> | <span data-ttu-id="fabbf-123">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fabbf-123">Not supported.</span></span>| <span data-ttu-id="fabbf-124">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fabbf-124">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> |
+### <a name="for-cloud-pc-provider"></a><span data-ttu-id="e5cef-113">Поставщик облачных ПК</span><span class="sxs-lookup"><span data-stu-id="e5cef-113">For Cloud PC provider</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="fabbf-125">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fabbf-125">HTTP request</span></span>
+|<span data-ttu-id="e5cef-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e5cef-114">Permission type</span></span>      | <span data-ttu-id="e5cef-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e5cef-115">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="e5cef-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e5cef-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="e5cef-117">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5cef-117">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>   |
+|<span data-ttu-id="e5cef-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e5cef-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5cef-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5cef-119">Not supported.</span></span>    |
+|<span data-ttu-id="e5cef-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="e5cef-120">Application</span></span> | <span data-ttu-id="e5cef-121">CloudPC.Read.All, CloudPC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5cef-121">CloudPC.Read.All, CloudPC.ReadWrite.All</span></span>  |
 
-<span data-ttu-id="fabbf-126">Чтобы получить свойства и связи единого поставщика облачных КОМПЬЮТЕРов, службу единойRoleAssignmentMultiple:</span><span class="sxs-lookup"><span data-stu-id="fabbf-126">To get the properties and relationships of a unifiedRoleAssignmentMultiple for a cloud PC provider:</span></span>
+### <a name="for-device-management-intune-provider"></a><span data-ttu-id="e5cef-122">Для поставщика управления устройствами (Intune)</span><span class="sxs-lookup"><span data-stu-id="e5cef-122">For Device management (Intune) provider</span></span>
+
+|<span data-ttu-id="e5cef-123">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e5cef-123">Permission type</span></span>      | <span data-ttu-id="e5cef-124">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e5cef-124">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="e5cef-125">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e5cef-125">Delegated (work or school account)</span></span> |  <span data-ttu-id="e5cef-126">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5cef-126">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span>   |
+|<span data-ttu-id="e5cef-127">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e5cef-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5cef-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5cef-128">Not supported.</span></span>    |
+|<span data-ttu-id="e5cef-129">Приложение</span><span class="sxs-lookup"><span data-stu-id="e5cef-129">Application</span></span> | <span data-ttu-id="e5cef-130">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5cef-130">DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All</span></span> |
+
+
+
+## <a name="http-request"></a><span data-ttu-id="e5cef-131">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e5cef-131">HTTP request</span></span>
+
+<span data-ttu-id="e5cef-132">Чтобы получить свойства и связи единого поставщика облачных КОМПЬЮТЕРов, службу единойRoleAssignmentMultiple:</span><span class="sxs-lookup"><span data-stu-id="e5cef-132">To get the properties and relationships of a unifiedRoleAssignmentMultiple for a cloud PC provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleAssignments/{id}
 ```
 
-<span data-ttu-id="fabbf-127">Для получения свойств и связей единого поставщика Intune Для поставщика Intune:</span><span class="sxs-lookup"><span data-stu-id="fabbf-127">To get the properties and relationships of a unifiedRoleAssignmentMultiple for an Intune provider:</span></span>
+<span data-ttu-id="e5cef-133">Для получения свойств и связей единого поставщика Intune Для поставщика Intune:</span><span class="sxs-lookup"><span data-stu-id="e5cef-133">To get the properties and relationships of a unifiedRoleAssignmentMultiple for an Intune provider:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleAssignments/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fabbf-128">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fabbf-128">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e5cef-134">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e5cef-134">Optional query parameters</span></span>
 
-<span data-ttu-id="fabbf-129">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fabbf-129">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="fabbf-130">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="fabbf-130">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="e5cef-135">Этот метод поддерживает параметры запросов OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="e5cef-135">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="e5cef-136">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="e5cef-136">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fabbf-131">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fabbf-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e5cef-137">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e5cef-137">Request headers</span></span>
 
-| <span data-ttu-id="fabbf-132">Имя</span><span class="sxs-lookup"><span data-stu-id="fabbf-132">Name</span></span>  | <span data-ttu-id="fabbf-133">Описание</span><span class="sxs-lookup"><span data-stu-id="fabbf-133">Description</span></span> |
+| <span data-ttu-id="e5cef-138">Имя</span><span class="sxs-lookup"><span data-stu-id="e5cef-138">Name</span></span>  | <span data-ttu-id="e5cef-139">Описание</span><span class="sxs-lookup"><span data-stu-id="e5cef-139">Description</span></span> |
 |:----- |:----------- |
-| <span data-ttu-id="fabbf-134">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fabbf-134">Authorization</span></span> | <span data-ttu-id="fabbf-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fabbf-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e5cef-140">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e5cef-140">Authorization</span></span> | <span data-ttu-id="e5cef-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e5cef-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fabbf-137">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fabbf-137">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e5cef-143">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e5cef-143">Request body</span></span>
 
-<span data-ttu-id="fabbf-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fabbf-138">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e5cef-144">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e5cef-144">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fabbf-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="fabbf-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e5cef-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5cef-145">Response</span></span>
 
-<span data-ttu-id="fabbf-140">В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="fabbf-140">If successful, this method returns a `200 OK` response code and the requested [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object in the response body.</span></span>
+<span data-ttu-id="e5cef-146">В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="e5cef-146">If successful, this method returns a `200 OK` response code and the requested [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fabbf-141">Примеры</span><span class="sxs-lookup"><span data-stu-id="fabbf-141">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e5cef-147">Примеры</span><span class="sxs-lookup"><span data-stu-id="e5cef-147">Examples</span></span>
 
-### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-an-intune-provider"></a><span data-ttu-id="fabbf-142">Пример 1. Получить роль с областью каталоговAssignmentMultiple в поставщике Intune</span><span class="sxs-lookup"><span data-stu-id="fabbf-142">Example 1: Get a directory-scoped roleAssignmentMultiple in an Intune provider</span></span>
+### <a name="example-1-get-a-directory-scoped-roleassignmentmultiple-in-an-intune-provider"></a><span data-ttu-id="e5cef-148">Пример 1. Получить роль с областью каталоговAssignmentMultiple в поставщике Intune</span><span class="sxs-lookup"><span data-stu-id="e5cef-148">Example 1: Get a directory-scoped roleAssignmentMultiple in an Intune provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fabbf-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="fabbf-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e5cef-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5cef-149">Request</span></span>
 
-<span data-ttu-id="fabbf-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fabbf-144">The following is an example of the request.</span></span>
+<span data-ttu-id="e5cef-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e5cef-150">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="fabbf-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="fabbf-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e5cef-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5cef-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignmentmultiple_1"
@@ -87,29 +100,29 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
-# <a name="c"></a>[<span data-ttu-id="fabbf-146">C#</span><span class="sxs-lookup"><span data-stu-id="fabbf-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e5cef-152">C#</span><span class="sxs-lookup"><span data-stu-id="e5cef-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fabbf-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fabbf-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e5cef-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5cef-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fabbf-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fabbf-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e5cef-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5cef-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fabbf-149">Java</span><span class="sxs-lookup"><span data-stu-id="fabbf-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e5cef-155">Java</span><span class="sxs-lookup"><span data-stu-id="e5cef-155">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignmentmultiple-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fabbf-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="fabbf-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e5cef-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5cef-156">Response</span></span>
 
-<span data-ttu-id="fabbf-151">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="fabbf-151">The following is an example of the response.</span></span>
-> <span data-ttu-id="fabbf-152">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="fabbf-152">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="e5cef-157">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e5cef-157">The following is an example of the response.</span></span>
+> <span data-ttu-id="e5cef-158">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e5cef-158">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -131,14 +144,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-roleassignmentmultiple-assigned-to-a-group-in-an-intune-provider"></a><span data-ttu-id="fabbf-153">Пример 2. Получить рольAssignmentMultiple, назначенную группе в поставщике Intune</span><span class="sxs-lookup"><span data-stu-id="fabbf-153">Example 2: Get a roleAssignmentMultiple assigned to a group in an Intune provider</span></span>
+### <a name="example-2-get-a-roleassignmentmultiple-assigned-to-a-group-in-an-intune-provider"></a><span data-ttu-id="e5cef-159">Пример 2. Получить рольAssignmentMultiple, назначенную группе в поставщике Intune</span><span class="sxs-lookup"><span data-stu-id="e5cef-159">Example 2: Get a roleAssignmentMultiple assigned to a group in an Intune provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fabbf-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="fabbf-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e5cef-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5cef-160">Request</span></span>
 
-<span data-ttu-id="fabbf-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fabbf-155">The following is an example of the request.</span></span>
+<span data-ttu-id="e5cef-161">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e5cef-161">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="fabbf-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="fabbf-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e5cef-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5cef-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignmentmultiple_2"
@@ -147,29 +160,29 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments?$filter = principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')
 ```
-# <a name="c"></a>[<span data-ttu-id="fabbf-157">C#</span><span class="sxs-lookup"><span data-stu-id="fabbf-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e5cef-163">C#</span><span class="sxs-lookup"><span data-stu-id="e5cef-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fabbf-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fabbf-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e5cef-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5cef-164">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fabbf-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fabbf-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e5cef-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5cef-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fabbf-160">Java</span><span class="sxs-lookup"><span data-stu-id="fabbf-160">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e5cef-166">Java</span><span class="sxs-lookup"><span data-stu-id="e5cef-166">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignmentmultiple-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fabbf-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="fabbf-161">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e5cef-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5cef-167">Response</span></span>
 
-<span data-ttu-id="fabbf-162">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="fabbf-162">The following is an example of the response.</span></span>
-> <span data-ttu-id="fabbf-163">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="fabbf-163">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="e5cef-168">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e5cef-168">The following is an example of the response.</span></span>
+> <span data-ttu-id="e5cef-169">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e5cef-169">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -204,14 +217,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-in-an-intune-provider-with-expand"></a><span data-ttu-id="fabbf-164">Пример 3. Получить роль с областью каталоговAssignmentMultiple в поставщике Intune с `$expand`</span><span class="sxs-lookup"><span data-stu-id="fabbf-164">Example 3: Get a directory-scoped roleAssignmentMultiple in an Intune provider with `$expand`</span></span>
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-in-an-intune-provider-with-expand"></a><span data-ttu-id="e5cef-170">Пример 3. Получить роль с областью каталоговAssignmentMultiple в поставщике Intune с `$expand`</span><span class="sxs-lookup"><span data-stu-id="e5cef-170">Example 3: Get a directory-scoped roleAssignmentMultiple in an Intune provider with `$expand`</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fabbf-165">Запрос</span><span class="sxs-lookup"><span data-stu-id="fabbf-165">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e5cef-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5cef-171">Request</span></span>
 
-<span data-ttu-id="fabbf-166">Ниже приводится пример запроса с `$expand` параметром запроса.</span><span class="sxs-lookup"><span data-stu-id="fabbf-166">The following is an example of the request with the `$expand` query parameter.</span></span>
+<span data-ttu-id="e5cef-172">Ниже приводится пример запроса с `$expand` параметром запроса.</span><span class="sxs-lookup"><span data-stu-id="e5cef-172">The following is an example of the request with the `$expand` query parameter.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="fabbf-167">HTTP</span><span class="sxs-lookup"><span data-stu-id="fabbf-167">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e5cef-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5cef-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_3"
@@ -220,29 +233,29 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principals,directoryScopes
 ```
-# <a name="c"></a>[<span data-ttu-id="fabbf-168">C#</span><span class="sxs-lookup"><span data-stu-id="fabbf-168">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e5cef-174">C#</span><span class="sxs-lookup"><span data-stu-id="e5cef-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fabbf-169">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fabbf-169">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e5cef-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5cef-175">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fabbf-170">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fabbf-170">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e5cef-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5cef-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fabbf-171">Java</span><span class="sxs-lookup"><span data-stu-id="fabbf-171">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e5cef-177">Java</span><span class="sxs-lookup"><span data-stu-id="e5cef-177">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignment-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fabbf-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="fabbf-172">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e5cef-178">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5cef-178">Response</span></span>
 
-<span data-ttu-id="fabbf-173">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="fabbf-173">The following is an example of the response.</span></span>
-> <span data-ttu-id="fabbf-174">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="fabbf-174">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="e5cef-179">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e5cef-179">The following is an example of the response.</span></span>
+> <span data-ttu-id="e5cef-180">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e5cef-180">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -299,11 +312,11 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-4-get-a-roleassignmentmultiple-in-a-cloud-pc-provider"></a><span data-ttu-id="fabbf-175">Пример 4. Получить рольAssignmentMultiple в поставщике облачных ПК</span><span class="sxs-lookup"><span data-stu-id="fabbf-175">Example 4: Get a roleAssignmentMultiple in a cloud PC provider</span></span>
+### <a name="example-4-get-a-roleassignmentmultiple-in-a-cloud-pc-provider"></a><span data-ttu-id="e5cef-181">Пример 4. Получить рольAssignmentMultiple в поставщике облачных ПК</span><span class="sxs-lookup"><span data-stu-id="e5cef-181">Example 4: Get a roleAssignmentMultiple in a cloud PC provider</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fabbf-176">Запрос</span><span class="sxs-lookup"><span data-stu-id="fabbf-176">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e5cef-182">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5cef-182">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="fabbf-177">HTTP</span><span class="sxs-lookup"><span data-stu-id="fabbf-177">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e5cef-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5cef-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignmentmultiple_1"
@@ -312,27 +325,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
 ```
-# <a name="c"></a>[<span data-ttu-id="fabbf-178">C#</span><span class="sxs-lookup"><span data-stu-id="fabbf-178">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e5cef-184">C#</span><span class="sxs-lookup"><span data-stu-id="e5cef-184">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fabbf-179">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fabbf-179">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e5cef-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5cef-185">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fabbf-180">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fabbf-180">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e5cef-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5cef-186">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fabbf-181">Java</span><span class="sxs-lookup"><span data-stu-id="fabbf-181">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e5cef-187">Java</span><span class="sxs-lookup"><span data-stu-id="e5cef-187">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignmentmultiple-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fabbf-182">Отклик</span><span class="sxs-lookup"><span data-stu-id="fabbf-182">Response</span></span>
-> <span data-ttu-id="fabbf-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fabbf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e5cef-188">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5cef-188">Response</span></span>
+> <span data-ttu-id="e5cef-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e5cef-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -361,14 +374,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-a-roleassignmentmultiple-in-a-cloud-pc-provider-with-expand"></a><span data-ttu-id="fabbf-185">Пример 5. Получить рольAssignmentMultiple в поставщике облачных ПК с `$expand`</span><span class="sxs-lookup"><span data-stu-id="fabbf-185">Example 5: Get a roleAssignmentMultiple in a cloud PC provider with `$expand`</span></span>
+### <a name="example-5-get-a-roleassignmentmultiple-in-a-cloud-pc-provider-with-expand"></a><span data-ttu-id="e5cef-191">Пример 5. Получить рольAssignmentMultiple в поставщике облачных ПК с `$expand`</span><span class="sxs-lookup"><span data-stu-id="e5cef-191">Example 5: Get a roleAssignmentMultiple in a cloud PC provider with `$expand`</span></span>
 
-#### <a name="request"></a><span data-ttu-id="fabbf-186">Запрос</span><span class="sxs-lookup"><span data-stu-id="fabbf-186">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e5cef-192">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5cef-192">Request</span></span>
 
-<span data-ttu-id="fabbf-187">Ниже приводится пример запроса с `$expand` параметром запроса.</span><span class="sxs-lookup"><span data-stu-id="fabbf-187">The following is an example of the request with the `$expand` query parameter.</span></span>
+<span data-ttu-id="e5cef-193">Ниже приводится пример запроса с `$expand` параметром запроса.</span><span class="sxs-lookup"><span data-stu-id="e5cef-193">The following is an example of the request with the `$expand` query parameter.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="fabbf-188">HTTP</span><span class="sxs-lookup"><span data-stu-id="fabbf-188">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e5cef-194">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5cef-194">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_3"
@@ -377,27 +390,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096?$expand=roleDefinition
 ```
-# <a name="c"></a>[<span data-ttu-id="fabbf-189">C#</span><span class="sxs-lookup"><span data-stu-id="fabbf-189">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e5cef-195">C#</span><span class="sxs-lookup"><span data-stu-id="e5cef-195">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fabbf-190">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fabbf-190">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e5cef-196">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5cef-196">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fabbf-191">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fabbf-191">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e5cef-197">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5cef-197">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="fabbf-192">Java</span><span class="sxs-lookup"><span data-stu-id="fabbf-192">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e5cef-198">Java</span><span class="sxs-lookup"><span data-stu-id="e5cef-198">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignment-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fabbf-193">Отклик</span><span class="sxs-lookup"><span data-stu-id="fabbf-193">Response</span></span>
-> <span data-ttu-id="fabbf-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fabbf-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e5cef-199">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5cef-199">Response</span></span>
+> <span data-ttu-id="e5cef-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e5cef-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
