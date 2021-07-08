@@ -3,12 +3,12 @@ title: Компонент "Повестка дня" в Microsoft Graph Toolkit
 description: Веб-компонент mgt-agenda используется для представления событий в календаре пользователя или группы.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 394f5dee6c8bf6f81b68d3b0b8c8cb1d73ef06ef
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: a5f11214869c8f8bdc96a88613a40e9164c8fe32
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082337"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334789"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Компонент "Повестка дня" в Microsoft Graph Toolkit
 
@@ -129,9 +129,9 @@ mgt-agenda {
 
 Из элемента управления инициируются следующие события.
 
-| Событие | Описание |
-| --- | --- |
-| `eventClick` | Пользователь щелкает или нажимает событие.|
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`eventClick` | Пользователь щелкает или нажимает событие. | Выбранное [событие](/graph/api/resources/event) | Нет | Нет | Да, с пользовательским **шаблоном** событий
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
@@ -139,7 +139,7 @@ mgt-agenda {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API
+| Конфигурация | Разрешение | API
 | - | - | - |
 | default | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 

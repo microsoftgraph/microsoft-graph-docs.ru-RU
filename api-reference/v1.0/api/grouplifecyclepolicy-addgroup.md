@@ -5,18 +5,18 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5054a75a079dc1b1a687148baf14b6492859cc4b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 07fc0bb3c1d26aedecbc49fd839fe3801c9d6651
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680943"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317002"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
 Пространство имен: microsoft.graph
 
-Добавляет группу к политике жизненного цикла.
+Добавляет определенные группы в политику жизненного цикла. Это действие ограничивает политику жизненного цикла группы набором групп только в том случае, если установлено свойство **managedGroupTypes** [groupLifecyclePolicy.](../resources/grouplifecyclepolicy.md) `Selected`
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "52680943"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,15 @@ POST /groupLifecyclePolicies/{id}/addGroup
 
 | Параметр | Тип | Описание |
 |:---------------|:--------|:----------|
-|groupId|GUID| Идентификатор группы, которую нужно добавить к политике. |
+|groupId|String| Идентификатор группы, добавляемой в политику. |
+
+Когда **установлено свойство managedGroupTypes** [groupLifecyclePolicy,](../resources/grouplifecyclepolicy.md) в список можно добавить до `Selected` 500 групп. Если вам нужно добавить более 500 групп, необходимо установить свойство **managedGroupTypes** [groupLifecyclePolicy.](../resources/grouplifecyclepolicy.md) `All`
+
+На каждый запрос можно добавить только одну группу.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Если к политике добавляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Если группа добавлена в политику, в теле ответа возвращается `true` значение. В противном `false` случае в теле ответа возвращается значение.
 
 ## <a name="example"></a>Пример
 

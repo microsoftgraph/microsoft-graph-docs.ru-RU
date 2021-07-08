@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e012b422498e7029bc6f205ff0878b9b5e9093fb
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 382c5a7ff8b75da06f1d75b06a2bb382137c275d
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680509"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334390"
 ---
 # <a name="list-unifiedroleassignmentscheduleinstances"></a>Список unifiedRoleAssignmentScheduleInstances
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "52680509"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|RoleManagement.ReadWrite.Directory|
+|Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|PrivilegedAccess.Read.AzureAD|
+|Приложение|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 

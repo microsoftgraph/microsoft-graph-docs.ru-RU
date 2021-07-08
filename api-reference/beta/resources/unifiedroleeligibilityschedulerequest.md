@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 622bce02829cc245d0cbdb859a6c56b1f88a3ea5
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5058d77a14ec009f60d5c4d6f4c8ae29b46f393b
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547129"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334446"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-resource-type"></a>тип ресурса unifiedRoleEligibilityScheduleRequest
 
@@ -30,7 +30,6 @@ ms.locfileid: "52547129"
 |[Список унифицированныхRoleEligibilityScheduleRequests](../api/unifiedroleeligibilityschedulerequest-list.md)|[коллекция unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Получите список объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) и их свойств.|
 |[Создание unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Создайте новый [объект unifiedRoleEligibilityScheduleRequest.](../resources/unifiedroleeligibilityschedulerequest.md)|
 |[Get unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-get.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Ознакомьтесь с свойствами и отношениями объекта [unifiedRoleEligibilityScheduleRequest.](../resources/unifiedroleeligibilityschedulerequest.md)|
-|[Обновление unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-update.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Обновление свойств объекта [unifiedRoleEligibilityScheduleRequest.](../resources/unifiedroleeligibilityschedulerequest.md)|
 |[filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[коллекция unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md)|Получите список объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) и их свойств, связанных с определенным пользователем.|
 |[cancel](../api/unifiedroleeligibilityschedulerequest-cancel.md)|Нет|Немедленно [отменяет унифицированнуюRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) и отмечает его для удаления в течение 30 дней|
 

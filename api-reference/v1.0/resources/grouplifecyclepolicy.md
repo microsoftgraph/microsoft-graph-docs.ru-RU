@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: da3fa558df864f3dd0683ae4aaa08234c9ebd158
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 3122c297564981e75516ea602e699d3ebe49fa50
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680098"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317226"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -35,7 +35,7 @@ ms.locfileid: "52680098"
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
 |groupLifetimeInDays|Int32| Количество дней до истечения срока действия группы. После продления группа будет оставаться активной в течение указанного количества дней. |
-|id|GUID| Уникальный идентификатор политики. Только для чтения.|
+|id|String| Уникальный идентификатор политики. Только для чтения.|
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 
 ## <a name="relationships"></a>Связи

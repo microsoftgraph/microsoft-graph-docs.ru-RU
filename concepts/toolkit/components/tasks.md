@@ -3,12 +3,12 @@ title: Компонент задач в microsoft Graph набор средст�
 description: Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Он работает с любыми задачами в Microsoft Planner.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 3b3476751798dd5569218ec6acc6d09a91112fe6
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 35191c778c957c1c9c6c316fb4755b57e6690ff2
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082036"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334740"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Компонент задач в microsoft Graph набор средств
 
@@ -120,12 +120,12 @@ mgt-tasks {
 
 ## <a name="events"></a>События
 
-| Событие | Сведения | Описание |
-| --- | --- | --- |
-| `taskAdded` | Сведения содержат соответствующий объект `task` | Возникает при создании задачи. |
-| `taskChanged` | Сведения содержат соответствующий объект `task` | Возникает при изменении метаданных задачи, например при пометке задачи как завершенной. |
-| `taskClick` | Сведения содержат соответствующий объект `task` | Возникает, когда пользователь щелкает или нажимает задачу. |
-| `taskRemoved` | Сведения содержат соответствующий объект `task` | Возникает, если удалена существующая задача. |
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`taskAdded` | Пожары при создания новой задачи | Недавно созданная задача, которая может быть [plannerTask наш](/graph/api/resources/plannertask) [outlookTask](/graph/api/resources/outlooktask) | Нет | Нет | Да
+`taskChanged` | Пожары при смене метаданных задач, например заполнение маркировки | Обновленная задача, которая может быть [планировщикомTask](/graph/api/resources/plannertask) наш [outlookTask](/graph/api/resources/outlooktask) | Нет | Нет | Нет
+`taskClick` | Пожары, когда пользователь щелкает или нажимает на задачу | `task` свойство с выбранным [планировщикомTask](/graph/api/resources/plannertask) наше [outlookTask](/graph/api/resources/outlooktask) | Нет | Нет | Нет
+`taskRemoved` | Пожары при удалении существующей задачи | `task` свойство с выбранным [планировщикомTask](/graph/api/resources/plannertask) наше [outlookTask](/graph/api/resources/outlooktask) | Нет | Нет | Нет
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
@@ -157,7 +157,7 @@ mgt-tasks {
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API |
+| Конфигурация | Разрешение | API |
 | ------------- | ---------- | --- |
 | `groupId` набор `dataSource` и заме- `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
 | `targetId` набор `dataSource` и заме- `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |

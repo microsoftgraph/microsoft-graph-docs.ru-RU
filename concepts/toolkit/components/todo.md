@@ -3,12 +3,12 @@ title: Компонент To Do в Microsoft Graph Toolkit
 description: Компонент To Do позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи To Do. Он поддерживает любые задачи в Microsoft To-Do.
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 907d6d18380debb6e08d612d5f1d5bebec6746ec
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 94bdbf1777a4ebe6c60d91c227c805c2edf53809
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082022"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334726"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>Компонент To Do в Microsoft Graph Toolkit
 
@@ -99,12 +99,9 @@ mgt-todo {
 
 Из компонента инициируются следующие события.
 
-| Событие | Сведения | Описание |
-| --- | --- | --- |
-| `taskAdded` | Сведения содержат соответствующий объект `task` | Возникает при создании задачи. |
-| `taskChanged` | Сведения содержат соответствующий объект `task` | Возникает при изменении метаданных задачи, например при пометке задачи как завершенной. |
-| `taskClick` | Сведения содержат соответствующий объект `task` | Возникает, когда пользователь щелкает или нажимает задачу. |
-| `taskRemoved` | Сведения содержат соответствующий объект `task` | Возникает, если удалена существующая задача. |
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`taskClick` | Пожары, когда пользователь щелкает или нажимает на задачу | Выбранная [задача](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/66a5bbb6591e6260e95dbc00c0d06bcbe8dcef38/packages/mgt-components/src/components/mgt-todo/graph.todo.ts#L41) | Нет | Нет | Нет
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
@@ -133,7 +130,7 @@ mgt-todo {
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API |
+| Конфигурация | Разрешение | API |
 | ------------- | ---------- | --- |
 | `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | `targetId` не установлено | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |

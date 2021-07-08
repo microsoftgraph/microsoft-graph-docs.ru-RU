@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f327c47c36bf2b26fe50eeb4b2d511f157c8006d
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: b34011e1ed208405f40e4a5a5be6af20e1f217fe
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854219"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334425"
 ---
 # <a name="list-directoryroles"></a>Перечисление объектов directoryRole
 
@@ -19,6 +19,11 @@ ms.locfileid: "52854219"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Перечисление ролей каталога, активированных в клиенте.
+
+Эта операция возвращает только роли, которые были активированы. Роль активируется, когда администратор активирует роль с помощью API [Activat directoryRole.](directoryrole-post-directoryroles.md) Не все встроенные роли изначально активируются. 
+
+При назначении роли с помощью портала Azure шаг активации роли неявно делается от имени администратора. Чтобы получить полный список ролей, доступных в Azure AD, используйте [list directoryRoleTemplates.](directoryroletemplate-list.md)
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,7 +46,7 @@ GET /directoryRoles
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

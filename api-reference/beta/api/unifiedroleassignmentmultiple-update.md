@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c13242b11ed9cfdf58c3047d40937edc483c1cd6
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 3423c216e9b0c5b6928d0473c1e7db021e1344c9
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869928"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334495"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Обновление unifiedRoleAssignmentMultiple
 
@@ -30,12 +30,24 @@ ms.locfileid: "52869928"
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference). 
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
 
-|Поддерживаемый поставщик      | Делегированное (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Приложение |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.ReadWrite.All | Не поддерживается. | CloudPC.ReadWrite.All |
-| Intune | DeviceManagementRBAC.ReadWrite.All | Не поддерживается.| DeviceManagementRBAC.ReadWrite.All |
+### <a name="for-cloud-pc-provider"></a>Поставщик облачных ПК
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  CloudPC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | CloudPC.ReadWrite.All  |
+
+### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | DeviceManagementRBAC.ReadWrite.All |
+
 
 ## <a name="http-request"></a>HTTP-запрос
 

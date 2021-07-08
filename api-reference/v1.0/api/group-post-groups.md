@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e90157f8139de8524bcf497c7aa0c9c496aceac7
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: e6af591272ea3c1631107485609b7c43fcec59cd
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209708"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53316531"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -59,7 +59,7 @@ POST /groups
 | mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
 | mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. Обязательный. |
 | securityEnabled | boolean | Значение **true** для групп безопасности, включая группы Microsoft 365. Обязательный. |
-| owners | string collection | Это свойство представляет владельцев группы на момент создания. Необязательно. |
+| owners | string collection | Это свойство представляет владельцев группы на момент создания.  Владельцы не добавляются автоматически в качестве участников группы, если они не указаны в свойстве **members**. Необязательный параметр. |
 | members | string collection | Это свойство представляет участников группы на момент создания. Необязательно. |
 |visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: `Private`, `Public`, `HiddenMembership` или пустое значение (обрабатывается как `Public`).|
 
@@ -281,7 +281,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
+Ниже приведен пример запроса. Для настройки свойства **isAssignableToRole** вызывающему пользователю должно быть назначено свойство *Directory.AccessAsUser.All*.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

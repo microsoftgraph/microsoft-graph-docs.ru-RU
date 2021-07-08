@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: f8899a4bfdf86d07bb5efa19c269b0907ceae319
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 690e117064a43a65ea125e4e0d67a12daae185ae
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082330"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334761"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -77,9 +77,9 @@ ms.locfileid: "53082330"
 
 Из компонента инициируются следующие события.
 
-| Событие | Описание |
-| --- | --- |
-| `selectionChanged` | Пользователь добавил или удалил человека из списка выбранных людей.|
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | Пользователь добавил или удалил человека из списка выбранных или выбранных людей | Массив выбранных людей, где человек может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
@@ -139,7 +139,7 @@ mgt-people-picker {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API
+| Конфигурация | Разрешение | API
 | --- | ---------- | ------- |
 | `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `type` установлено `Person` или `any` | People.Read | [/me/people](/graph/api/user-list-people) |

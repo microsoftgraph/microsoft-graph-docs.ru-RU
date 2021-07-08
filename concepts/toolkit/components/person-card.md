@@ -3,12 +3,12 @@ title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 23f26927935af3f3123e4f812853475cb8a0a9dc
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 58efcb2c1ca7ec1e366340b1dcbe199fe054c7b8
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082043"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334754"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -133,9 +133,9 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 Из компонента инициируются следующие события.
 
-| Событие | Описание |
-| --- | --- |
-| `expanded` | Пользователь открыл расширенный раздел сведений карты. |
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`expanded` | Пользователь открыл расширенный раздел сведений карты | Нет. | Нет | Да | Да, если не переопределить шаблон по умолчанию
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
@@ -165,7 +165,7 @@ mgt-person {
 
 Этот элемент управления Person-Card использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API | Section |
+| Конфигурация | Разрешение | API | Section |
 | --- | ---------- | ------- | --------- |
 | `personDetails` установить с `id` пользователем, но без электронной почты, или `userId` установить, или `personQuery` установить `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | По умолчанию |
 | `personQuery` значение, отличаее от `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | По умолчанию |
@@ -174,7 +174,7 @@ mgt-person {
 | `sections.organization` включено (по умолчанию) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Организация |
 | `sections.organization.showWorksWith` set (по умолчанию) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Организация |
 | `sections.mailMessages` включено (по умолчанию) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Сообщения |
-| `sections.files` включено (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Файлы |
+| `sections.files` включено (по умолчанию) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
 
 Класс `MgtPersonCard` также предоставляет `getScopes` статический метод, возвращающий массив областей, необходимый для работы карточки контакта с учетом глобальной конфигурации карточки контакта.
 

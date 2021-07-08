@@ -3,12 +3,12 @@ title: Компонент Get в Microsoft Graph Toolkit
 description: С помощью компонента Get можно создавать любые GET-запросы из Microsoft Graph непосредственно в HTML-коде.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: fefbbf9eb944494923a25f5d2a9699b03e5c9919
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 8ffb4da00b0d96f29747e7415878146cd80d08cf
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082316"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334775"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Компонент Get в Microsoft Graph Toolkit
 
@@ -47,9 +47,12 @@ ms.locfileid: "53082316"
 
 ## <a name="events"></a>События
 
-| Событие | Сведения | Описание |
-| --- | --- | --- |
-| `dataChange` | Сведения содержат объекты `response` и `error`. | Возникает при изменении ответа или ошибки. |
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`dataChange` | Уволено после загрузки данных компонента. | `{ response: any, error: any }`. Свойство `response` содержит ответ, полученный из Microsoft Graph. Свойство `error` содержит сведения об ошибке, если она произошла. | Нет | Нет | Да
+
+> [!TIP]
+> Дополнительные сведения о данных, возвращающихся в свойстве, см. в справке API API, используемого в свойстве `response` `resource` компонента Get.
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 

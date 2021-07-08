@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8c139df6e3c39b18a209664fad0e290002a8f9c0
+ms.openlocfilehash: 1c490ee6291c46b527bc87c281e5c998714c8e45
 ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/07/2021
-ms.locfileid: "53319492"
+ms.locfileid: "53316543"
 ---
 ```javascript
 
@@ -15,7 +15,14 @@ const options = {
 
 const client = Client.init(options);
 
-let decisions = await client.api('/identityGovernance/accessReviews/definitions/2dca8959-b716-4b4c-a93d-a535c01eb6e0/instances/8d035c9d-798d-47fa-beb4-f986a4b8126f/decisions')
-    .get();
+const user = {
+  passwordProfile: {
+    forceChangePasswordNextSignIn: false,
+    password: 'xWwvJ]6NMw+bWH-d'
+  }
+};
+
+await client.api('/users/{id}')
+    .update(user);
 
 ```

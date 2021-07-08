@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7f83ce0b5cf4565897245647a0e1f41e428b8e1d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f2e3fa1aff81051820fda4444a55d9916e99128b
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786764"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334579"
 ---
 # <a name="searchentity-query"></a>объект поиска: запрос
 
@@ -158,15 +158,16 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
+
 - Поиск [сообщений почты](/graph/search-concept-messages)
 - События [календаря поиска](/graph/search-concept-events)
+- Поисковый [запрос](/graph/search-concept-person)
 - Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)
 - Пользовательские [типы поиска (Graph соединители)](/graph/search-concept-custom-types) данных
 - [Сортировка](/graph/search-concept-sort) результатов поиска
 - Использование [агрегаций для](/graph/search-concept-aggregations) уточнения результатов поиска
 - Включить [исправления орфографии](/graph/search-concept-speller) в результатах поиска
-
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -177,5 +178,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

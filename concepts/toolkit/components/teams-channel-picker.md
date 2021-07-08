@@ -3,12 +3,12 @@ title: Компонент выбора каналов Microsoft Teams в Microso
 description: Вы можете использовать компонент mgt-teams-channel-picker, чтобы в Microsoft Graph искать каналы и команды, связанные с пользователем.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: ad196cc17b70f42cd571bf5805e2aa4eb2cfe90e
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: cd27db315de6b46c10c18e300ddb899ea042e428
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082029"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334733"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 
@@ -78,21 +78,20 @@ mgt-teams-channel-picker {
 
 ## <a name="events"></a>События
 
-| Событие | Сведения | Описание |
-| --- | --- | --- |
-| `selectionChanged` | Сведения содержат выбранный в настоящее время элемент `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Возникает, когда пользователь изменяет выбор канала. |
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | Увольнение при изменении выбора канала пользователем | Выбранный в настоящее время элемент в `{ channel: ` [качестве группы](/graph/api/resources/channel) `, team: ` [каналов](/graph/api/resources/team)`}` | Нет | Нет | Да
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
 ## <a name="templates"></a>Шаблоны
 
- Компонент `mgt-teams-channel-picker` поддерживает несколько [шаблонов](../customize-components/templates.md), позволяющих заменить его определенные части. Чтобы указать шаблон, добавьте элемент `<template>` в компонент и присвойте параметру `data-type` одно из следующих значений.
+Компонент `mgt-teams-channel-picker` поддерживает несколько [шаблонов](../customize-components/templates.md), позволяющих заменить его определенные части. Чтобы указать шаблон, добавьте элемент `<template>` в компонент и присвойте параметру `data-type` одно из следующих значений.
 
 | Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
 | загрузка | null: нет данных | Шаблон, используемый для отображения состояния средства выбора при выполнении запроса к Microsoft Graph. |
 | ошибка | null: нет данных| Шаблон, используемый в том случае, если поиск не возвращает пользователей. |
-
 
 В следующем примере показано, как использовать шаблон `error`.
 

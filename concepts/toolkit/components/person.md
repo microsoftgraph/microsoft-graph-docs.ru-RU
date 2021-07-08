@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7f35b5c1a3ef764995d319e9e603489b50a1fe2c
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: af3b3fd628303980558c4e8ab195f806927d2f5a
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082050"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334747"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -116,11 +116,11 @@ mgt-person {
 
 Из компонента инициируются следующие события.
 
-| Событие | Сведения | Описание |
-| --- | --- | --- |
-| `line1clicked` | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 1. |
-| `line2clicked` | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки2. |
-| `line3clicked` | Сведения содержат соответствующий объект `person` | Уволено при нажатии строки 3. |
+Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`line1clicked` | Увольнение при нажатии строки1 | Объект, `person` который может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
+`line2clicked` | Увольнение при нажатии строки2 | Объект, `person` который может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
+`line3clicked` | Увольнение при нажатии строки 3 | Объект, `person` который может быть Graph [пользователем,](/graph/api/resources/user) [](/graph/api/resources/person) лицом или контактом с дополнительным свойством, содержаным URL-адрес фотографии [](/graph/api/resources/contact) `personImage` пользователя | Нет | Нет | Да, если не переопределить шаблон по умолчанию
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 
@@ -211,7 +211,7 @@ MgtPerson.config.useContactApis = false;
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API |
+| Конфигурация | Разрешение | API |
 | ------------- | ---------- | --- |
 | `personDetails` установить без изображения, `fetchImage` установить , установить , `true` извлекаемого `avatarType` человека является контакт и `photo` `useContactApis` установить `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `personDetails` установить без изображения, установить , установить и лицо не является `fetchImage` `true` `avatarType` `photo` контактом или `useContactApis` установлено, чтобы `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |
