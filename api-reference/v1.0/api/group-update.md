@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 89ba1ec44f41abe1309355c47daeabdd6603ca25
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7064d412b776f33c30b87dde34d79a167aa6a636
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787564"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317093"
 ---
 # <a name="update-group"></a>Update group
 
@@ -42,7 +42,7 @@ PATCH /groups/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -60,7 +60,7 @@ PATCH /groups/{id}
 
 > **Примечание.**
 >
-> - Свойства **allowExternalSenders** и **autoSubscribeNewMembers** можно изменить, указав их в отдельном запросе PATCH, не затрагивающем другие свойства, описанные в таблице выше.
+> - Чтобы обновить следующие свойства Exchange, укажите их в собственном запросе PATCH, не включая другие свойства, перечисленные в таблице выше: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 > - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#groups).
 > - Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
 
@@ -85,17 +85,15 @@ PATCH /groups/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "description": "Library Assist",
+  "displayName": "Library Assist",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
-  "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "library-help"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

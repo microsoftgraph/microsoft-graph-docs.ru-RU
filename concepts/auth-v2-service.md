@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: cb1156ce758b55cc6087097838f183e9148f6091
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 0fba65fb040ca210b5d9a9fe82e9510b5586c4b6
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780724"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53333970"
 ---
 # <a name="get-access-without-a-user"></a>Получение доступа без пользователя
 
@@ -138,7 +138,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 | tenant        | Обязательный  | Клиент каталога, у которого требуется запрашивать разрешения. Он может быть представлен в виде GUID или в формате понятного имени.
 | client_id     | Обязательный  | Идентификатор приложения, назначенный [порталом Azure для регистрации приложений](https://go.microsoft.com/fwlink/?linkid=2083908) при регистрации приложения.
 | область         | Обязательный  | Значение, передаваемое параметру `scope` этого запроса, должно представлять собой идентификатор (URI идентификатора приложения) нужного ресурса, дополненный суффиксом `.default`. Для Microsoft Graph используется значение `https://graph.microsoft.com/.default`. Это значение сообщает конечной точке платформы удостоверений Майкрософт, что из всех разрешений приложения, которые вы настроили для своего приложения на портале регистрации приложений, следует выдать маркер для тех, которые связаны с нужным ресурсом.
-| client_secret | Обязательный  | Секрет приложения, созданный на портале регистрации приложений.
+| client_secret | Обязательный  | Секрет приложения, созданный на портале регистрации приложений. Используйте зашифрованный URL-адрес.
 | grant_type    | Обязательный  | Должно быть задано значение `client_credentials`.
 
 #### <a name="token-response"></a>Ответ с маркером

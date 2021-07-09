@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: 4079320ef785dbdb3c1367fad92cda46eab0b4fa
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 0f7c8600b8a4d8f41e6dd6e6ad4240252c004bbf
+ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239368"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53317009"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -58,7 +58,7 @@ ms.locfileid: "50239368"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.list"
+  "@odata.type&quot;: &quot;microsoft.graph.list"
 }-->
 
 ```json
@@ -71,7 +71,7 @@ ms.locfileid: "50239368"
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
+    "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -87,7 +87,7 @@ ms.locfileid: "50239368"
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "webUrl": "url to visit the list in a browser"
+  "webUrl&quot;: &quot;url to visit the list in a browser"
 }
 ```
 
@@ -115,7 +115,7 @@ ms.locfileid: "50239368"
 | **lastModifiedDateTime** | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
 | **parentReference**      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
 | **sharepointIds**        | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
-| **webUrl**               | string (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
+| **webUrl**               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ## <a name="relationships"></a>Связи
 
@@ -150,7 +150,7 @@ ms.locfileid: "50239368"
   "section": "documentation",
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
-    "Lists": "#"
+    "Lists&quot;: &quot;#"
   }
 } -->
 

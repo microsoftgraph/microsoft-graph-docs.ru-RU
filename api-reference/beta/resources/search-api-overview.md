@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: af390733e61d14cc411c583fccce7399bef5a39f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0b15c7ceb87af0fa1d7deede3e583cc75f2a898e
+ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209935"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53334019"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -58,6 +58,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint и OneDrive | Элементы списка. Учтите, что файлы и папки также возвращаются как элементы списка; **listItem** — это суперкласс **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Сайты в SharePoint.|
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Соединители Microsoft Graph| Все содержимое, размещаемое с помощью API соединителей Microsoft Graph.|
+|[person](person.md)|People.Read|Exchange Online|Личные контакты и контакты или адресуемые объекты в организации.|
 
 ## <a name="page-search-results"></a>Результаты поиска на странице
 
@@ -92,7 +93,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 ## <a name="get-selected-properties"></a>Получение выбранных свойств
 
-При поиске по типу сущности, например **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, можно включить в свойство **itfields** определенные свойства сущности, которые следует возвратить в результатах поиска. Аналогично используется [параметр $select системного запроса OData](/graph/query-parameters#select-parameter) в запросах REST. API поиска не поддерживает эти параметры запроса, так как их действие подавляется в теле запроса POST.
+При поиске по типу сущности, например **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem** или **person**, можно включить в свойство **fields** определенные свойства сущности, которые следует возвратить в результатах поиска. Аналогично используется [параметр $select системного запроса OData](/graph/query-parameters#select-parameter) в запросах REST. API поиска не поддерживает эти параметры запроса, так как их действие подавляется в теле запроса POST.
 
 Для всех этих типов сущностей указание свойства **fields** сокращает количество свойств, возвращаемых в отклике, что оптимизирует нагрузку на линию.
 
@@ -119,7 +120,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 Результаты поиска в отклике отсортированы в следующем стандартном порядке:
 
 - **message** и **event** сортируются по дате.
-- Все типы SharePoint, OneDrive и соединителей сортируются по релевантности.
+- Все типы SharePoint, OneDrive, пользователей и соединителей сортируются по релевантности.
 
 Метод [query](../api/search-query.md) позволяет задать порядок поиска, указав **sortProperties** в параметре `requests`, который представляет собой набор объектов [searchRequest](./searchrequest.md). Это дает возможность указать список из одного или нескольких сортируемых средств и порядок сортировки.
 
@@ -174,13 +175,13 @@ API поиска возвращает отклики с ошибками, опи
 - Метод **query** определяется, чтобы разрешить передачу коллекции из одного или нескольких экземпляров **searchRequest**. Однако в настоящее время служба может обрабатывать только по одному экземпляру [searchRequest](./searchrequest.md) за раз.
 
 - Ресурс [searchRequest](./searchrequest.md) поддерживает одновременную передачу объектов нескольких типов. Однако в настоящее время поддерживается только следующее сочетание для типов объектов SharePoint и OneDrive: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Любые сочетания, включающие **message**, **event**, типы SharePoint и OneDrive или **externalItem**, пока не поддерживаются.  
+Любые сочетания, включающие **message**, **event**, **person**, типы SharePoint и OneDrive или **externalItem**, пока не поддерживаются.  
 
-- Свойство **contentSource**, которое определяет используемое соединение, применимо, только если для свойства **entityType** задано значение `externalItem`.
+- Свойство **contentSource**, определяющее используемое соединение, применимо только при присвоении свойству **entityType** значения `externalItem`.
 
-- API поиска не поддерживает настраиваемую сортировку для **message**, **event** или **externalItem**.
+- API поиска не поддерживает настраиваемую сортировку для **message**, **event**, **person** или **externalItem**.
 
-- API поиска не поддерживает агрегаты для **message**, **event**, **site** или **drive**.
+- API поиска не поддерживает агрегаты для **message**, **event**, **site**, **person** или **drive**.
 
 - Пользовательские настройки поиска SharePoint, например пользовательская схема поиска или источники поиска, могут влиять на работу API Поиска (Майкрософт).
 
@@ -208,6 +209,7 @@ API поиска возвращает отклики с ошибками, опи
 - Подробнее о некоторых основных вариантах использования:
   - [Поиск сообщений Outlook](/graph/search-concept-messages)
   - [Поиск событий календаря](/graph/search-concept-events)
+  - [Поиск человека](/graph/search-concept-person)  
   - [Поиск содержимого в OneDrive и SharePoint](/graph/search-concept-files)
   - [Поиск пользовательских типов, импортированных с помощью соединителей](/graph/search-concept-custom-types)
   - [Сортировка результатов поиска](/graph/search-concept-sort)
@@ -215,7 +217,7 @@ API поиска возвращает отклики с ошибками, опи
   - [Исправление орфографии в запросе](/graph/search-concept-speller)
   - [Использование макета отображения при поиске](/graph/search-concept-display-layout)
 
-- Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+- Узнайте больше об API поиска в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 ## <a name="whats-new"></a>Новые возможности
 
