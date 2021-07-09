@@ -5,20 +5,22 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 25fa30b9904854ce027c503cf738cabd55ce5567
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 61be7d9e73d739a445a9b7dfc96e315fb6734966
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955262"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351029"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>Get userFlowLanguageConfiguration
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Ознакомьтесь с свойствами и отношениями [объекта userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Эти объекты представляют язык, доступный в потоке пользователей.
 
-**Примечание:** Чтобы получить язык, поддерживаемый для настройки, сначала необходимо включить настройку языка в потоке пользователей Azure AD B2C. Дополнительные сведения см. [в обновлении b2cIdentityUserFlow.](../api/b2cidentityuserflow-update.md) Настройка языка включена по умолчанию в [потоках пользователей Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Примечание:** Чтобы получить язык, поддерживаемый для настройки, сначала необходимо включить настройку языка в потоке пользователей Azure AD B2C. Дополнительные сведения см. [в обновлении b2cIdentityUserFlow.](../api/b2cidentityuserflow-update.md) Настройка языка включена по умолчанию в [Azure Active Directory потоках пользователей.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +35,7 @@ ms.locfileid: "50955262"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +59,7 @@ GET identity/b2xUserFlows/{id}/languages/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) в теле ответа.
 

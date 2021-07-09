@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 6e7d6876a9877a1bf8d146086e3aac3ec74ad60d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7684d3593015d7320c955e4465aacd21c62faae8
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435814"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350686"
 ---
 # <a name="list-governanceroledefinitions"></a>Управление спискамиRoleDefinitions
 
@@ -27,7 +27,7 @@ ms.locfileid: "50435814"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -35,15 +35,15 @@ ms.locfileid: "50435814"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 Помимо области разрешений этот API требует, чтобы у запросителя было как минимум одно назначение ролей на ресурсе.
 
@@ -63,7 +63,7 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [governanceRoleDefinition](../resources/governanceroledefinition.md) в тексте отклика.
 ## <a name="example"></a>Пример
 <!-- {

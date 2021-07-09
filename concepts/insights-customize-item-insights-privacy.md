@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 501e051fa63d2b68952a7c346f8c21dab34f5d8e
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: d9026a93ed8db63bec26dbbfc755b1b6a5799836
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108847"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350912"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -41,7 +41,7 @@ ms.locfileid: "53108847"
 В следующем разделе описывается использование Центра администрирования, а за ним следует раздел о командлетах PowerShell. Если вы используете API REST, пропустите следующие два раздела и сразу перейдите к разделу [Настройка аналитики элементов с помощью REST API](#configure-item-insights-using-rest-api). Дополнительные сведения см. в описании операций REST [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) или [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>Как настроить параметры аналитики элементов через Центр администрирования Майкрософт?
-Администратор с _ролью глобального администратора_ может настраивать параметры конфиденциальности аналитики элементов с помощью переключателей. Для этого в Центре администрирования Micrsofot 365 разверните раздел **Параметры**, выберите **Поиск и аналитика**, а затем в **Аналитика элементов** выберите **Изменить параметры**.
+Администратор с _ролью глобального администратора_ может настраивать параметры конфиденциальности аналитики элементов с помощью переключателей. Для этого в Центре администрирования Microsoft 365 разверните раздел **Параметры**, выберите **Поиск и аналитика**, а затем в пункте **Аналитика элементов** выберите **Изменить параметры**.
 ![изображение](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
 
 

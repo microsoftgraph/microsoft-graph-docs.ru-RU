@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aafcc34d288dcce1bcd0970802472a2e2e565e83
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: a7587bf4dea653b86b4f93632e5719bcec4aaaaa
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317205"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351113"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание unifiedRoleAssignment
 
@@ -24,10 +24,21 @@ ms.locfileid: "53317205"
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Каталог | RoleManagement.ReadWrite.Directory | Не поддерживается.| RoleManagement.ReadWrite.Directory |
-| Управление правами | EntitlementManagement.ReadWrite.All | Не поддерживается. | Не поддерживается. |
+### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | RoleManagement.ReadWrite.Directory |
+
+### <a name="for-entitlement-management-provider"></a>Поставщик прав на управление правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,13 +63,13 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
-В теле запроса поставляем представление JSON объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md) Запрос должен иметь область, определенную в Azure AD, например область, определенную приложению, например `directoryScopeId` `appScopeId` . Примерами области Azure AD являются клиенты ("/"), административные единицы или приложения. Дополнительные сведения см. [в appScope.](../resources/appscope.md)
+В теле запроса поставляем представление JSON объекта [unifiedRoleAssignment.](../resources/unifiedroleassignment.md) Запрос должен иметь область, определенную в Azure AD, например **directoryScopeId,** или область приложения, например **appScopeId.** Примерами областей Azure AD являются клиенты ("/"), административные единицы или приложения. Управление правами использует области каталога клиентов ("/") и пакетов доступа. Дополнительные сведения см. [в appScope.](../resources/appscope.md)
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика и новый объект `201 Created` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в тексте ответа.
 
@@ -200,6 +211,55 @@ Content-type: application/json
 }
 ```
 
+
+### <a name="example-3-create-a-role-assignment-at-access-package-catalog-scope"></a>Пример 3. Создание назначения ролей в области каталога пакетов доступа
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/entitlementManagement/roleAssignments/$entity",
+    "id": "f3092518-7874-462e-93e9-0cd6c11ffc52",
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -209,5 +269,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

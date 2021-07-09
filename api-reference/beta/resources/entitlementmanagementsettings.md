@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1b6138bc52e5686af94a94cfa13762b71a6242c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d34a04d0f8eb3bdff16befd43870b75d473a8d0c
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945692"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350980"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>тип ресурса entitlementManagementSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "50945692"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры, которые контролируют поведение управления правами [Azure AD.](entitlementmanagement-root.md)
+Представляет параметры, которые контролируют поведение управления правами [Azure AD.](entitlementmanagement-root.md)  Этот ресурс не включает параметр создателей каталога; чтобы просмотреть или изменить членство создателей каталога в роли, используйте [API](unifiedroleassignment.md) назначений ролей с поставщиком RBAC управления правами.
 
 ## <a name="methods"></a>Методы
 

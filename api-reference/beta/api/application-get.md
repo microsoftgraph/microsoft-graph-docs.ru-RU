@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ff05d9c0e3286c9600f086b0739ce383ecd399db
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 1fbfebb6a889ffae5ae6052cc1b774d335f9fb50
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813064"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350879"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -35,14 +35,13 @@ ms.locfileid: "52813064"
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
-
+Этот метод поддерживает [параметр запроса OData](/graph/query-parameters) `$select` для получения конкретных свойств приложения. 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

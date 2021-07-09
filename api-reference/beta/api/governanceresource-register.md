@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: fed82587a1132b6c39e6e27e09546906792486b0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 363ee47fcded93062b325f3f58df14dfa4a3c625
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435947"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350868"
 ---
 # <a name="governanceresource-register"></a>governanceResource: регистрация
 
@@ -18,7 +18,7 @@ ms.locfileid: "50435947"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Регистрация объекта [governanceResource в](../resources/governanceresource.md) привилегированном управлении удостоверениями.
+Регистрация [объекта governanceResource](../resources/governanceresource.md) в управление привилегированными пользователями.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ ms.locfileid: "50435947"
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
@@ -68,13 +68,13 @@ POST /privilegedAccess/azureResources/resources/register
 | Authorization | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 | Свойства | Тип | Описание |
 |:---------- |:---- |:----------- |
 | externalId | String | Внешний идентификатор ресурса, который будет зарегистрирован в PIM. При регистрации подписки идентификатором является идентификатор подписки, предварительно заранее задверяющий `/subscriptions/` . Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает `200 OK` ответ.
 

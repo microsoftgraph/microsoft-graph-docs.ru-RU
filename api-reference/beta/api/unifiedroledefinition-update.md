@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9e5315a58adc5c6b4447b725ee7315d390d18904
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: af8e75ca0364a269168c2c3b072c8c7ec6c087ae
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334719"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351078"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -31,18 +31,13 @@ ms.locfileid: "53334719"
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные данные, [](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) в том числе осторожность перед выбором более привилегированных разрешений, поиск следующих разрешений в ссылке [Permissions](/graph/permissions-reference). 
 
-|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Приложение |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Управление устройствами | DeviceManagementRBAC.ReadWrite.All | Не поддерживается. | DeviceManagementRBAC.ReadWrite.All |
-| Каталог | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Не поддерживается.| RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
-
 ### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | DeviceManagementRBAC.ReadWrite.All |
+|Application | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
 
@@ -50,7 +45,7 @@ ms.locfileid: "53334719"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -78,18 +73,18 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String| Описание определения роли. Только для чтения, когда isBuiltIn является правдой. |
-|displayName|String| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
-|id|String| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
+|description|Строка| Описание определения роли. Только для чтения, когда isBuiltIn является правдой. |
+|displayName|Строка| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
+|id|Строка| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли определение роли частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, когда isBuiltIn является правдой. |
 |resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее время поддерживается только "/". Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось. Прикрепить область к назначению ролей.**|
 |rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, когда isBuiltIn является правдой. Обязательный. |
-|templateId|String| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, когда isBuiltIn является правдой. |
+|templateId|Строка| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, когда isBuiltIn является правдой. |
 |inheritsPermissionsFrom| [коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Только для чтения набор определений ролей, которые наследует заданное определение роли. Только встроенные роли Azure AD поддерживают этот атрибут. |
 |version|String| Указывает версию определения роли. Только для чтения, когда isBuiltIn является правдой.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 

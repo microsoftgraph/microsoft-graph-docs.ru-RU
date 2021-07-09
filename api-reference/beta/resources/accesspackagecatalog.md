@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 87c2541179cd94472eadab692544a40a1d8b81b7
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 051657b5c8c7edb51a4c2c5c3a15bf3740052b86
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720433"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351099"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>тип ресурса accessPackageCatalog
 
@@ -18,7 +18,8 @@ ms.locfileid: "50720433"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом.  Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа.
+В [управлении правами Azure AD](entitlementmanagement-root.md)каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом. Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа. Чтобы просмотреть или изменить членство ролей в [](unifiedroleassignment.md) каталоге, используйте API назначений ролей с поставщиком управления правами RBAC.
+
 
 
 ## <a name="methods"></a>Методы
@@ -37,15 +38,15 @@ ms.locfileid: "50720433"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|catalogStatus|String|Имеет `Published` значение, если пакеты доступа доступны для управления.|
-|catalogType|String|Один `UserManaged` из или `ServiceDefault` . |
+|catalogStatus|Строка|Имеет `Published` значение, если пакеты доступа доступны для управления.|
+|catalogType|Строка|Один `UserManaged` из или `ServiceDefault` . |
 |createdBy|String|UPN пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|description|String|Описание каталога пакетов доступа.|
-|displayName|String|Отображение имени каталога пакетов доступа.|
+|description|Строка|Описание каталога пакетов доступа.|
+|displayName|Строка|Отображение имени каталога пакетов доступа.|
 |id|String| Только для чтения.|
 |isExternallyVisible|Boolean|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
-|modifiedBy|String|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
+|modifiedBy|Строка|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 
 
@@ -93,5 +94,4 @@ ms.locfileid: "50720433"
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

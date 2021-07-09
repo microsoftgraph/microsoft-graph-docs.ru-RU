@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 4883fedc71cfdcc6c50ab87b46299fdb173552a5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: babca9a53ad10d5b029fdbdd4119220d143b779a
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950874"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350924"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -56,7 +56,7 @@ ms.locfileid: "50950874"
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
@@ -89,7 +89,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | reason           | Строка                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение ролей. Для типа `UserAdd` запроса `AdminAdd` , и , это `AdminUpdate` `AdminExtend` необходимо. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код ответа и объект `201 Created` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
 
@@ -97,7 +97,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает коды ошибок, перечисленные в следующей таблице.
 
-| Код ошибки     | Сообщение об ошибке                               | Сведения       |
+| Код ошибки     | Сообщение об ошибке                               | Details       |
 |:---------------|:--------------------------------------------|:--------------|
 | 400 BadRequest | RoleNotFound                                | Предоставленное `roleDefinitionId` в теле запроса не удается найти. |
 | 400 BadRequest | ResourceIsLocked                            | Ресурс, предоставленный в теле запроса, находится в состоянии и `Locked` не может создавать запросы на назначение ролей. |
@@ -124,7 +124,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | subjectId        | Строка                                                   | Да                      | \<subjectId\> |
 | assignmentState  | Строка                                                   | Да                      | Подходящая / Активная |
 | type             | Строка                                                   | Да                      | AdminAdd |
-| reason           | Строка                                                   | зависит от параметров ролей |   |
+| reason           | Строка                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос
@@ -236,7 +236,7 @@ Content-type: application/json
 | subjectId        | Строка                                                   | Да                      | \<subjectId\> |
 | assignmentState  | Строка                                                   | Да                      | Активное |
 | type             | Строка                                                   | Да                      | UserAdd |
-| reason           | Строка                                                   | зависит от параметров ролей |   |
+| reason           | Строка                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 83e41655dd08307f50b0f21f05d9c3b9975de0b2
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fe69275c46b46406f67cecadc3cf3eb01a60d8f0
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435992"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350714"
 ---
 # <a name="get-governanceresource"></a>Get governanceResource
 
@@ -29,7 +29,7 @@ ms.locfileid: "50435992"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,15 +37,15 @@ ms.locfileid: "50435992"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 Помимо области разрешений этот API требует, чтобы у запросителя было как минимум одно назначение ролей на ресурсе.
 
@@ -65,7 +65,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект governanceResource](../resources/governanceresource.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

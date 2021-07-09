@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 624302e735eebf3fbbdf477636176a5e7f414bfe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 043eeb41f61dc08dffe5a3608bd3d8f7a2fae232
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786994"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350987"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -21,7 +21,7 @@ ms.locfileid: "52786994"
 Отмена [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
@@ -43,7 +43,7 @@ ms.locfileid: "52786994"
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
@@ -71,7 +71,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="error-codes"></a>Коды ошибок
 Этот API следует стандарту http-кодов. Кроме того, ниже показаны пользовательские коды ошибок.
 
-| Код ошибки | Сообщение об ошибке | Сведения |
+| Код ошибки | Сообщение об ошибке | Details |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | В системе не существует системы governanceRoleAssignmentRequest. |
 | 400 BadRequest | RequestCannotBeCancelled | Только запросы в состоянии `Granted` , и могут быть `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` отменены. |

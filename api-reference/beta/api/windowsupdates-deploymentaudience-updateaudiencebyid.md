@@ -5,14 +5,15 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 81404ad4807f045b75b3b161ec361f06b622f78b
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 1b948e644628eedc08fe470641b612501dfb80af
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240584"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351120"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience: updateAudienceById
+
 Пространство имен: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -25,6 +26,9 @@ ms.locfileid: "52240584"
 
 Вы также можете использовать обновление [методаAudience](windowsupdates-deploymentaudience-updateaudience.md) для обновления **deploymentAudience.**
 
+> [!NOTE]
+> Этот API имеет [известные проблемы, связанные](/Graph/known-issues#accessing-and-updating-deployment-audiences) с развертываниями, созданными через Intune.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -32,7 +36,7 @@ ms.locfileid: "52240584"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,10 +62,10 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |memberEntityType|Строка|Полный тип updatable активов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice`, `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
-|addMembers|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве участников аудитории развертывания.|
-|removeMembers|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве членов аудитории развертывания.|
-|addExclusions|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве исключений из аудитории развертывания.|
-|removeExclusions|Коллекция объектов string|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве исключений из аудитории развертывания.|
+|addMembers|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве участников аудитории развертывания.|
+|removeMembers|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве членов аудитории развертывания.|
+|addExclusions|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве исключений из аудитории развертывания.|
+|removeExclusions|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве исключений из аудитории развертывания.|
 
 
 

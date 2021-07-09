@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 7a301bb12271f6b31e7fef4dac565881139de994
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e447124ff26cb7d1cfb6010b65de1774004199cb
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787267"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350777"
 ---
 # <a name="update-governancerolesetting"></a>Обновление управленияRoleSetting
 
@@ -21,7 +21,7 @@ ms.locfileid: "52787267"
 Обновление свойств [governanceRoleSetting.](../resources/governancerolesetting.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 >**Примечание:** Этот API также требует, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
@@ -50,7 +50,7 @@ ms.locfileid: "52787267"
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
@@ -62,7 +62,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {token}|
+| Authorization  | Bearer {token}|
 | Content-Type  | application/json|
 
 
@@ -82,7 +82,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает следующие пользовательские коды ошибок.
 
-|Код ошибки     | Сообщение об ошибке         | Сведения             |
+|Код ошибки     | Сообщение об ошибке         | Details             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | В системе не существует системы [governanceRoleSetting.](../resources/governancerolesetting.md)
 | 400 BadRequest| InvalidRoleSetting    | Значения [governanceRuleSettings,](../resources/governancerulesetting.md) предоставляемые в теле запроса, не допустимы.

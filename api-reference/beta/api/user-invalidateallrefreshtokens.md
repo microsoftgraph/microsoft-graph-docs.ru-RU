@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b3bd61191cd61c143165b563e8a270af50943adc
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a13982cb924c5c9b82c3248aefc13a54ec44bb2e
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720069"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351050"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>пользователь: invalidateAllRefreshTokens
 
@@ -44,11 +44,14 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+
+>[!NOTE]
+>Этот API возвращает другой код ответа HTTP, аналогичный действию [revokeSignInSessions.](user-revokesigninsessions.md) Подробнее см. в [материале "Известная проблема".](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code) 
 
 ## <a name="example"></a>Пример
-Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,8 +81,8 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ---
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true

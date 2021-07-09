@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 96bff141cc3f4dfb779335100a49a8fdf99edb00
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 01ce2f1aa786c0f62147a370c00f6aed4d9d0bc6
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317072"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351040"
 ---
 # <a name="delete-unifiedroleassignment"></a>Удаление unifiedRoleAssignment
 
@@ -24,10 +24,21 @@ ms.locfileid: "53317072"
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-|Поддерживаемый поставщик      | Делегированные (рабочая или учебная учетная запись)  | Делегированное (личная учетная запись Майкрософт) | Для приложений |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Каталог | RoleManagement.ReadWrite.Directory | Не поддерживается.| RoleManagement.ReadWrite.Directory |
-| Управление правами | EntitlementManagement.ReadWrite.All | Не поддерживается. | Не поддерживается. |
+### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | RoleManagement.ReadWrite.Directory |
+
+### <a name="for-entitlement-management-provider"></a>Поставщик прав на управление правами
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  EntitlementManagement.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +63,7 @@ DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

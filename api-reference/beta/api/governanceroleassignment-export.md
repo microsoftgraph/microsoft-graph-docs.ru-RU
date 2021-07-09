@@ -1,16 +1,16 @@
 ---
 title: Управление экспортомRoleAssignmentRequests
-description: Извлеките коллекцию файлов governanceRoleAssignmentRequests в формате, которые можно сравнили с `application/octet-stream` файлом .csv в браузере.
+description: Извлеките коллекцию файлов governanceRoleAssignmentRequests в формате, которые можно .csv в `application/octet-stream` браузере.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 49a555a690ce23af43af4359d6894b440df7e90e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8faff2bbd4b41eda693467b55641204cb6bbaef3
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435942"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350854"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Управление экспортомRoleAssignmentRequests
 
@@ -18,7 +18,7 @@ ms.locfileid: "50435942"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлеките коллекцию [файлов governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) в формате, которые можно сравнили с `application/octet-stream` файлом .csv в браузере.
+Извлеките коллекцию [файлов governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) в формате, которые можно .csv в `application/octet-stream` браузере.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
@@ -29,7 +29,7 @@ ms.locfileid: "50435942"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,15 +37,15 @@ ms.locfileid: "50435942"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -73,17 +73,17 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код `200 OK` ответа и содержимое `application/octet-stream` типа.
 
 ## <a name="example"></a>Пример
-В этом примере сохраняется все назначения ролей в качестве файла CSV в подписке Wingtip Toys - Prod. 
+В этом примере сохраняется все назначения ролей в .csv в подписной папке Wingtip Toys — Prod. 
 
 ##### <a name="request"></a>Запрос
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/export?filter=resourceId+eq+'85dfe48a-55d3-49fc-8f36-ee14b7f6f720'
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 ```http
 HTTP/1.1 200 OK

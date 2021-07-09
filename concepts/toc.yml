@@ -391,6 +391,8 @@ items:
                 href: search-concept-aggregation.md
               - name: Исправление орфографии в запросе (предварительная версия)
                 href: search-concept-speller.md
+              - name: Поиск человека (предварительная версия)
+                href: search-concept-person.md
       - name: Безопасность
         items:
           - name: Обзор

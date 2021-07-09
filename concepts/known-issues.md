@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 1adf4a4f756be0ce4f8e338ee016bbb3d3059177
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 257d8966eabe2428072f470f290816a1c9c2e35d
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030777"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351110"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -184,6 +184,15 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * При отслеживании изменений в отношениях иногда неправильно возвращается контекст OData.
 * Расширения схемы (устаревшие) не возвращаются с оператором $select и возвращаются без него.
 * Клиенты не могут отслеживать изменения в открытых расширениях и зарегистрированных расширениях схемы.
+
+## <a name="devices-and-apps--device-updates-windows-updates"></a>Устройства и приложения | Обновления устройств (обновления Windows)
+
+### <a name="accessing-and-updating-deployment-audiences"></a>Доступ к аудиториям развертывания и их обновление
+
+Доступ к аудиториям развертывания и их обновление для ресурсов **deployment**, созданных с помощь Intune, в настоящее время не поддерживается.
+
+* [Перечисление членов аудитории развертывания](/graph/api/windowsupdates-deploymentaudience-list-members) и [перечисление исключений из аудитории развертывания](/graph/api/windowsupdates-deploymentaudience-list-exclusions) возвращает `404 Not Found`.
+* [Обновление состава и исключений из аудитории развертывания](/graph/api/windowsupdates-deploymentaudience-updateaudience) или [обновление по идентификатору](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) возвращает `202 Accepted`, но аудитория не обновляется.
 
 ## <a name="extensions"></a>Расширения
 

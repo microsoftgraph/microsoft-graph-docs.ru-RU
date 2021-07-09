@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8c7af8b03a42050b423dd4533ae28a432523a907
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: d69156b2614b17037a6eba473d00e7d333868d6c
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547494"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351071"
 ---
 # <a name="list-includedgroups"></a>Список включенGroups
 
@@ -51,7 +51,7 @@ GET /policies/mobileAppManagementPolicies/{id}/includedGroups
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию групповых `200 OK` объектов в тексте ответа. [](../resources/group.md)
 
@@ -66,7 +66,7 @@ GET /policies/mobileAppManagementPolicies/{id}/includedGroups
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/mobileAppManagementPoliciesab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
+GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
 ```
 
 ### <a name="response"></a>Отклик

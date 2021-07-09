@@ -5,14 +5,15 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: c07247f4f8ae3e53480de802a7b5fc1464114866
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 23fe655e076987ffb33591eb8aaa1600ed4a8fa4
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241278"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351127"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience: updateAudience
+
 Пространство имен: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -25,6 +26,9 @@ ms.locfileid: "52241278"
 
 Если все **объекты updatableAsset** одного типа, вы также можете использовать обновление [методаAudienceById](windowsupdates-deploymentaudience-updateaudiencebyid.md) для обновления **deploymentAudience**.
 
+> [!NOTE]
+> Этот API имеет [известные проблемы, связанные](/Graph/known-issues#accessing-and-updating-deployment-audiences) с развертываниями, созданными через Intune.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -32,7 +36,7 @@ ms.locfileid: "52241278"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
