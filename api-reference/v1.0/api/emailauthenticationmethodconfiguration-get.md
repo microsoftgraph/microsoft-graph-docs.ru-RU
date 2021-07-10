@@ -5,32 +5,32 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0e25718a817927b30410c428e5252982c7187e77
-ms.sourcegitcommit: 91d8454bfff853905e3a5e86623fcb06931507ed
+ms.openlocfilehash: 99cff366e380408c3532b53c79290fcdf03c2883
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52732198"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351316"
 ---
-# <a name="get-emailauthenticationmethodconfiguration"></a><span data-ttu-id="07cb1-103">Получить emailAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="07cb1-103">Get emailAuthenticationMethodConfiguration</span></span>
+# <a name="get-emailauthenticationmethodconfiguration"></a><span data-ttu-id="4d7ad-103">Получить emailAuthenticationMethodConfiguration</span><span class="sxs-lookup"><span data-stu-id="4d7ad-103">Get emailAuthenticationMethodConfiguration</span></span>
 
-<span data-ttu-id="07cb1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="07cb1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4d7ad-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d7ad-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="07cb1-105">Ознакомьтесь с свойствами и отношениями объекта [электронной почтыAuthenticationMethodConfiguration,](../resources/emailauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory Azure AD.</span><span class="sxs-lookup"><span data-stu-id="07cb1-105">Read the properties and relationships of an [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) object, which represents the email OTP [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
+<span data-ttu-id="4d7ad-105">Ознакомьтесь с свойствами и отношениями объекта [электронной почтыAuthenticationMethodConfiguration,](../resources/emailauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory Azure AD.</span><span class="sxs-lookup"><span data-stu-id="4d7ad-105">Read the properties and relationships of an [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) object, which represents the email OTP [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="07cb1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="07cb1-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4d7ad-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4d7ad-106">Permissions</span></span>
 
-<span data-ttu-id="07cb1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="07cb1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4d7ad-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4d7ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="07cb1-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="07cb1-109">Permission type</span></span>|<span data-ttu-id="07cb1-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="07cb1-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="4d7ad-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4d7ad-109">Permission type</span></span>|<span data-ttu-id="4d7ad-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4d7ad-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="07cb1-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="07cb1-111">Delegated (work or school account)</span></span>|<span data-ttu-id="07cb1-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="07cb1-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
-|<span data-ttu-id="07cb1-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="07cb1-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="07cb1-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="07cb1-114">Not supported.</span></span>|
-|<span data-ttu-id="07cb1-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="07cb1-115">Application</span></span>|<span data-ttu-id="07cb1-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="07cb1-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="4d7ad-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4d7ad-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4d7ad-112">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="4d7ad-112">Policy.ReadWrite.AuthenticationMethod</span></span>|
+|<span data-ttu-id="4d7ad-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4d7ad-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4d7ad-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4d7ad-114">Not supported.</span></span>|
+|<span data-ttu-id="4d7ad-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4d7ad-115">Application</span></span>|<span data-ttu-id="4d7ad-116">Policy.ReadWrite.AuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="4d7ad-116">Policy.ReadWrite.AuthenticationMethod</span></span>|
 
-<span data-ttu-id="07cb1-117">Для делегирования сценариев администратору требуется роль глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="07cb1-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="07cb1-118">Дополнительные сведения см. в [роли](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span><span class="sxs-lookup"><span data-stu-id="07cb1-118">For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
+<span data-ttu-id="4d7ad-117">Для делегирования сценариев администратору требуется роль глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="4d7ad-117">For delegated scenarios, the administrator needs the Global admin role.</span></span> <span data-ttu-id="4d7ad-118">Дополнительные сведения см. в [роли](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span><span class="sxs-lookup"><span data-stu-id="4d7ad-118">For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="07cb1-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="07cb1-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d7ad-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4d7ad-119">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,23 +41,23 @@ ms.locfileid: "52732198"
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="07cb1-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="07cb1-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4d7ad-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4d7ad-120">Request headers</span></span>
 
-|<span data-ttu-id="07cb1-121">Имя</span><span class="sxs-lookup"><span data-stu-id="07cb1-121">Name</span></span>|<span data-ttu-id="07cb1-122">Описание</span><span class="sxs-lookup"><span data-stu-id="07cb1-122">Description</span></span>|
+|<span data-ttu-id="4d7ad-121">Имя</span><span class="sxs-lookup"><span data-stu-id="4d7ad-121">Name</span></span>|<span data-ttu-id="4d7ad-122">Описание</span><span class="sxs-lookup"><span data-stu-id="4d7ad-122">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="07cb1-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="07cb1-123">Authorization</span></span>|<span data-ttu-id="07cb1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="07cb1-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="4d7ad-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4d7ad-123">Authorization</span></span>|<span data-ttu-id="4d7ad-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4d7ad-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="07cb1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="07cb1-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4d7ad-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4d7ad-126">Request body</span></span>
 
-<span data-ttu-id="07cb1-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="07cb1-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="4d7ad-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4d7ad-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="07cb1-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="07cb1-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4d7ad-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="4d7ad-128">Response</span></span>
 
-<span data-ttu-id="07cb1-129">В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="07cb1-129">If successful, this method returns a `200 OK` response code and an [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) object in the response body.</span></span>
+<span data-ttu-id="4d7ad-129">В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4d7ad-129">If successful, this method returns a `200 OK` response code and an [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="07cb1-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="07cb1-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4d7ad-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="4d7ad-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="07cb1-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="07cb1-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4d7ad-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="4d7ad-131">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_emailauthenticationmethodconfiguration"
@@ -65,12 +65,12 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 -->
 
 ```http
-GET /policies/authenticationMethodsPolicy/email
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
-### <a name="response"></a><span data-ttu-id="07cb1-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="07cb1-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4d7ad-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="4d7ad-132">Response</span></span>
 
-<span data-ttu-id="07cb1-133">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="07cb1-133">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="4d7ad-133">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="4d7ad-133">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
