@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b0fecfe948c59fe184e82f71e83d835cee74c7ff
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 8024db6c3f3263becdf7b22ca388a5c7462ce4c1
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107699"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351337"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -49,7 +49,7 @@ GET /me
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает `$select` [параметр запроса OData](/graph/query-parameters) для получения конкретных свойств пользователя, в том числе тех, которые не возвращаются по умолчанию.
 
 По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
@@ -66,7 +66,7 @@ GET /me
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа.
+При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа. Он возвращает свойства по умолчанию, если не используется `$select` для указания конкретных свойств.
 
 В случае успешной обработки запроса этот метод возвращает `202 Accepted`, но серверу требуется дополнительное время для выполнения соответствующих фоновых операций.
 

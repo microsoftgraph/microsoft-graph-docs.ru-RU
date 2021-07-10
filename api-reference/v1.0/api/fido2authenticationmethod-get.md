@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b641e1c2afdbf01a3999c50f76497ac7a1417382
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: e4b5d5602c99b4a0c637f00a9bb638d456e8a3fd
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467962"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53350994"
 ---
 # <a name="get-fido2authenticationmethod"></a>Get fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -35,7 +35,7 @@ ms.locfileid: "51467962"
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -50,8 +50,8 @@ ms.locfileid: "51467962"
 }
 -->
 ``` http
-GET /me/authentication/fido2AuthenticationMethod/{id}
-GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id}
+GET /me/authentication/fido2Methods/{id}
+GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 ### <a name="request"></a>Запрос
 
 ``` http
-GET https://graph.microsoft.com/v1.0/me/authentication/fido2AuthenticationMethod/-2_GRUg2-HYz6_1YG4YRAQ2
+GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
 
 ### <a name="response"></a>Отклик
