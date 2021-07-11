@@ -1,26 +1,24 @@
 ---
-title: Удаление Екстерналитем
-description: Удаление Екстерналитем.
+title: Удаление externalItem
+description: Удаление externalItem.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 143b2d266eeea7a7b776f3f75e8005740b4c498e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2506d03831637d27ebe3b874361f650e843f1cf4
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954593"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366809"
 ---
-# <a name="delete-externalitem"></a>Удаление Екстерналитем
+# <a name="delete-externalitem"></a>Удаление externalItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [екстерналитем](../resources/externalitem.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Удаление [externalitem](../resources/externalitem.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,8 +42,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ИД подключения | string | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
-| item-id       | string | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). |
+| connection-id | string | `id`Свойствосодержащего [externalConnection](../resources/externalconnection.md) |
+| item-id       | string | Свойство `id` [externalItem,](../resources/externalitem.md)предоставленное разработчиком. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 

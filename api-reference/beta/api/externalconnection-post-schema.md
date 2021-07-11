@@ -1,16 +1,16 @@
 ---
 title: Создание схемы
-description: Создайте схему для подключения поиска Microsoft Search.
+description: Создайте схему для Поиск (Майкрософт) подключения.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 27820a392d0a37363f447609713f86df1affef15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b6656dc04a69c75b4803df59ee9387c4ca0fa72d
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965594"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366773"
 ---
 # <a name="create-schema"></a>Создание схемы
 
@@ -18,9 +18,7 @@ ms.locfileid: "48965594"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте схему для [подключения](../resources/externalconnection.md)поиска Microsoft Search.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Создайте схему подключения [Поиск (Майкрософт).](../resources/externalconnection.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +28,7 @@ ms.locfileid: "48965594"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,26 +44,26 @@ POST /external/connections/{id}/schema
 |:----------------------|:-------------------------------------------------------------------|
 | Авторизация         | Bearer {токен}. Обязательный.                                          |
 | Content-Type          | application/json. Обязательный.                                        |
-| Предпочитать: ответ — Async | Используйте этот параметр, чтобы запрос выполнялся асинхронно. Необязательное свойство. |
+| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [схемы](../resources/schema.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [схемы.](../resources/schema.md)
 
-При регистрации настраиваемой схемы элемента `schema` объекту должно быть `baseType` присвоено свойство, которое `microsoft.graph.externalItem` должно содержать `properties` свойство. `properties`Объект должен содержать по крайней мере одно свойство (не более 64).
+При регистрации настраиваемой схемы элементов объект должен иметь свойство, к котором должно быть установлено свойство, `schema` `baseType` и должен содержать `microsoft.graph.externalItem` `properties` его. Объект должен содержать по крайней мере одно свойство, не `properties` более 64.
 
 ## <a name="response"></a>Отклик
 
-`Prefer: respond-async`Если заголовок включен в запрос, в случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и URL-адрес в `Location` заголовке ответа, который можно использовать для [получения состояния операции](../api/connectionoperation-get.md).
+Если заготка включена в запрос, этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для получения состояния `Prefer: respond-async` `202 Accepted` `Location` [операции.](../api/connectionoperation-get.md)
 
-Без `Prefer: respond-async` заголовка, включенного в запрос (при успешном выполнении) Этот метод возвращает `201 Created` код отклика и новый объект [Schema](../resources/schema.md) в тексте отклика.
+Без заголовка, включенного в запрос, в случае успешного использования этот метод возвращает код ответа и новый объект схемы в `Prefer: respond-async` `201 Created` тексте ответа. [](../resources/schema.md)
 
 > [!NOTE]
-> Создание схемы — длительный процесс, который может допустить превышение времени ожидания шлюза. Рекомендуется использовать `Prefer: respond-async` заголовок, чтобы избежать ошибок времени ожидания.
+> Создание схемы — это длительный процесс, склонный к выходу времени шлюза. Рекомендуется использовать `Prefer: respond-async` заготку, чтобы избежать ошибок в периодике.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-register-custom-schema-asynchronously"></a>Пример: асинхронная Регистрация настраиваемой схемы
+### <a name="example-register-custom-schema-asynchronously"></a>Пример. Регистрация настраиваемой схемы асинхронно
 
 #### <a name="request"></a>Запрос
 

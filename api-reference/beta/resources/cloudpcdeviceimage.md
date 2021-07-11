@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 2c38895059461f814a3ad0f8e663082972cc8663
-ms.sourcegitcommit: e96b98849cfc3aa915df63696a0b9f30c0a52cfd
+ms.openlocfilehash: 50154654835d1137db49f9f5690115c05ea7e0c1
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51654130"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53367005"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>тип ресурса cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "51654130"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ресурс изображений на облачном компьютере.
+Представляет ресурс изображения на облачном компьютере.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -31,6 +31,7 @@ ms.locfileid: "51654130"
 |[Создание cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[Удаление cloudPcDeviceImage](../api/cloudpcdeviceimage-delete.md)|Нет|Удаление [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[коллекция cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md)|Получите [объекты cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md)|
+|[Перезагрузка cloudPcDeviceImage](../api/cloudpcdeviceimage-reupload.md)|Нет|Перезагрузите [объект cloudPcDeviceImage,](../resources/cloudpcdeviceimage.md) который не удалось загрузить.|
 
 ## <a name="properties"></a>Свойства
 
@@ -41,10 +42,10 @@ ms.locfileid: "51654130"
 |displayName|String|Имя отображения изображения.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
 |osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
-|operatingSystem|String|Операционная система изображения. Например: Windows 10 Enterprise.|
+|operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
 |lastModifiedDateTime|DateTimeOffset|Данные и время последнего изменения изображения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC). Например, полночь UTC 1 января 2014 г. отображается как '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|Состояние изображения на облачном компьютере. Возможные значения: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, который указывает, почему не удалось загрузить, если применимо. Возможные значения: `internalServerError` , , и `sourceImageNotFound` `osVersionNotSupported` `sourceImageInvalid` .|
+|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, который указывает, почему не удалось загрузить, если применимо. Возможные значения: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported` и `sourceImageInvalid`.|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>значения cloudPcDeviceImageStatus
 
@@ -61,7 +62,7 @@ ms.locfileid: "51654130"
 |internalServerError|При обработке изображения произошла внутренняя ошибка сервера.|
 |sourceImageNotFound|Исходный образ недоступен или не найден.|
 |osVersionNotSupported| Версия ОС не поддерживается.|
-|sourceImageInvalid|Исходный образ не является допустимым для обеспечения windows VM с ним.|
+|sourceImageInvalid|Исходный образ не является допустимым для Windows VM с ним.|
 
 ## <a name="relationships"></a>Связи
 

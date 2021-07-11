@@ -1,26 +1,24 @@
 ---
-title: Получение подключения
-description: Получение свойств и связей объекта Екстерналконнектион.
+title: Подключение
+description: Извлечение свойств и связей externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c32f04e7f373e8955e794d5ce9e4f62a477936cd
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fbab97a4e09aef1722176f6b7e25dc52df8cbbea
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965656"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366872"
 ---
-# <a name="get-connection"></a>Получение подключения
+# <a name="get-connection"></a>Подключение
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [екстерналконнектион](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Извлечение свойств и связей [externalConnection.](../resources/externalconnection.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +28,7 @@ ms.locfileid: "48965656"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +54,7 @@ GET /external/connections/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [екстерналконнектион](../resources/externalconnection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и запрашиваемого `200 OK` [объекта externalConnection](../resources/externalconnection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

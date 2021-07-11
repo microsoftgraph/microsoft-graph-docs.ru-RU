@@ -1,26 +1,24 @@
 ---
-title: Список подключений
-description: Получение списка Екстерналконнектионс.
+title: Подключения к списку
+description: Извлечение списка externalConnections.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b70e1fc69c5897e8209633e5b5ce0f35cb7fb41a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ad7b47f18f68a4c8feb9432518f1bf66f58eaa6c
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965637"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366776"
 ---
-# <a name="list-connections"></a>Список подключений
+# <a name="list-connections"></a>Подключения к списку
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [екстерналконнектионс](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Извлечение списка [externalConnections](../resources/externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +28,7 @@ ms.locfileid: "48965637"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +54,7 @@ GET /external/connections
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [екстерналконнектион](../resources/externalconnection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов externalConnection](../resources/externalconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

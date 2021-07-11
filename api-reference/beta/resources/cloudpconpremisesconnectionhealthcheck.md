@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: b1b1010c22bed8de73b5d3fa2caf680f26091d00
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: bdc9d440b31a650f69d16a0eab0db46f5265dfb5
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351092"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366760"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
@@ -32,13 +32,13 @@ ms.locfileid: "53351092"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения этого элемента проверки состояния.|
+|displayName|String|Имя отображения этого элемента проверки состояния.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|Состояние элемента проверки состояния. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
 |startDateTime|DateTimeOffset|Время начала элемента проверки состояния. Только для чтения.|
 |endDateTime|DateTimeOffset|Конечное время проверки состояния элемента. Только для чтения.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|Тип ошибки, которая произошла во время проверки состояния.|
-|recommendedAction|Строка|Рекомендуемое действие для устранения соответствующей ошибки.|
-|additionalDetails|Строка|Дополнительные сведения о проверке состояния здоровья или рекомендуемом действии.|
+|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
+|additionalDetails|String|Дополнительные сведения о проверке состояния здоровья или рекомендуемом действии.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>значения cloudPcOnPremisesConnectionHealthCheckErrorType
 
@@ -63,6 +63,9 @@ ms.locfileid: "53351092"
 |resourceAvailabilityCheckNoSubnetIP|Предоставленная подсеть не имеет IP-адресов. Убедитесь, что подсети, предоставляемые в локальном сетевом соединении, имеют достаточные IP-адреса. Пожалуйста, расширйте текущую выбранную подсеть или выберите другую подсеть, которая будет использоваться для предварительного обеспечения.|
 |resourceAvailabilityCheckSubscriptionDisabled|Предоставленная подписка Azure отключена. Убедитесь, что подписка Azure включена и доступна для предварительной провизии.|
 |resourceAvailabilityCheckAzurePolicyViolation|Предоставленная подписка Azure не может быть найдена. Убедитесь, что подписка Azure доступна для предварительного обеспечения.|
+|resourceAvailabilityCheckSubscriptionNotFound|Доступ к предоставленной подписке Azure не предоставляется. Убедитесь, что подписка Azure доступна для предварительного обеспечения.|
+|resourceAvailabilityCheckSubscriptionTransferred|Доступ к предоставленной подписке Azure не предоставляется. Убедитесь, что подписка Azure доступна для предварительного обеспечения.|
+|resourceAvailabilityCheckGeneralSubscriptionError|Политика Azure ограничивает создание ресурсов. Убедитесь, что политика Azure не ограничивает создание ресурсов в группе подписки и/или ресурсов.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|Выбранный vNet расположен в неподтверченном регионе. Убедитесь, что выбранный vNet расположен в поддерживаемом регионе.|
 |resourceAvailabilityCheckUnknownError|Проверка доступности ресурсов для ресурсов Azure не удалось из-за неизвестной ошибки. Убедитесь, что все ресурсы Azure соответствуют необходимым требованиям.|
 |permissionCheckNoSubscriptionReaderRole|У директора службы облачных ПК нет достаточных разрешений на подписку Azure. Убедитесь, что у директора облачной службы ПК есть разрешения *reader* в подписке.|

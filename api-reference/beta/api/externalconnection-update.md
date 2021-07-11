@@ -1,16 +1,16 @@
 ---
-title: Обновление Екстерналконнектион
-description: Обновление свойств объекта Екстерналконнектион.
+title: Обновление externalConnection
+description: Обновление свойств externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7e2b6418c9dcbdc89fc7701302ddf28a780cb6d0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f6de3acfbdc71a83e087c58f11b8d93d7fbc5452
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954677"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366796"
 ---
 # <a name="update-connection"></a>Обновление подключения
 
@@ -18,9 +18,7 @@ ms.locfileid: "48954677"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [екстерналконнектион](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Обновление свойств [externalConnection](../resources/externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,9 +51,9 @@ PATCH /external/connections/{id}
 
 | Свойство      | Тип                                           | Описание |
 |:--------------|:-----------------------------------------------|:------------|
-| configuration | [configuration](../resources/configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. |
-| description   | String                                         | Описание подключения, отображаемое в центре администрирования Microsoft 365. |
-| name          | String                                         | Отображаемое имя подключения, отображаемое в центре администрирования Microsoft 365. Максимальная длина 128 символов. |
+| configuration | [configuration](../resources/configuration.md) | Указывает дополнительные ID-адреса приложений, которые разрешены для управления подключением и индексации контента в подключении. |
+| description   | String                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
+| name          | String                                         | Отображает имя подключения, отображаемого в Центр администрирования Microsoft 365. Максимальная длина 128 символов. |
 
 ## <a name="response"></a>Отклик
 

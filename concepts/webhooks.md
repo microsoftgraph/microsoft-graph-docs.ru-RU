@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 769e3f9fcb5c14731db311f049afbc7a9982c0d6
-ms.sourcegitcommit: e4461c7eb8c3d265fc1aa766125e81b58c6e1099
+ms.openlocfilehash: 5f25acf793d2b8bda00e298665ae8f9766f410b4
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52941454"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366886"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -45,6 +45,7 @@ API Microsoft Graph использует механизм веб-перехва�
 - [Список][] SharePoint
 - [callRecord][] в Teams
 - [Канал][] Teams 
+- [Чат][] Teams
 - [chatMessage][] Teams
 - [conversationMember][] в Teams
 - [Присутствие][] в Teams (предварительная версия)
@@ -112,7 +113,7 @@ API Microsoft Graph использует механизм веб-перехва�
 
 ## <a name="subscription-lifetime"></a>Время существования подписки
 
-Время существования подписок ограничено. Приложениям необходимо обновлять подписки до истечения срока их действия. В противном случае им потребуется создавать новые подписки. Список значений, представляющих собой максимально допустимый срок действия, см. в разделе [Максимальный период подписки для каждого из типов ресурсов](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
+Время существования подписок ограничено. Приложениям необходимо обновлять подписки до истечения срока их действия. В противном случае им потребуется создавать новые подписки. Список значений, представляющих собой максимально допустимый срок действия, см. в разделе [Максимальный период подписки для каждого из типов ресурсов](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
 
 Кроме того, приложение в любое время может отменить подписку, чтобы больше не получать уведомления об изменениях.
 
@@ -151,13 +152,13 @@ Content-Type: application/json
 }
 ```
 
-Необходимы свойства `changeType`, `notificationUrl`, `resource` и `expirationDateTime`. Определения и значения свойств представлены в [описании типа ресурса подписки](/graph/api/resources/subscription?view=graph-rest-1.0).
+Необходимы свойства `changeType`, `notificationUrl`, `resource` и `expirationDateTime`. Определения и значения свойств представлены в [описании типа ресурса подписки](/graph/api/resources/subscription).
 
 Свойство `resource` указывает ресурс, для которого будут отслеживаться изменения. Например, вы можете создать подписку на определенную почтовую папку: `me/mailFolders('inbox')/messages` или сделать это от имени пользователя с согласия администратора: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Хотя свойство `clientState` необязательное, рекомендуем указать его в нашем процессе обработки уведомлений об изменениях. Задание этого свойства позволит подтверждать, что полученные уведомления об изменениях поступают от службы Microsoft Graph. По этой причине значение свойства должно оставаться секретным и быть известно только приложению и службе Microsoft Graph.
 
-В случае успешного выполнения Microsoft Graph возвращает код `201 Created` и объект [подписки](/graph/api/resources/subscription?view=graph-rest-1.0) в теле отклика.
+В случае успешного выполнения Microsoft Graph возвращает код `201 Created` и объект [подписки](/graph/api/resources/subscription) в теле отклика.
 
 > **Примечание.** Любой параметр строки запроса, включенный в свойство **notificationUrl**, будет включен в HTTP-запрос POST при доставке уведомлений.
 
@@ -207,7 +208,7 @@ Content-Type: application/json
 }
 ```
 
-В случае успешного выполнения Microsoft Graph возвращает код `200 OK` и объект [подписки](/graph/api/resources/subscription?view=graph-rest-1.0) в теле отклика. Объект подписки включает новое значение `expirationDateTime`.
+В случае успешного выполнения Microsoft Graph возвращает код `200 OK` и объект [подписки](/graph/api/resources/subscription) в теле отклика. Объект подписки включает новое значение `expirationDateTime`.
 
 ### <a name="deleting-a-subscription"></a>Удаление подписки
 
@@ -295,6 +296,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 |[alert][] | Менее 3 минут | 5 минут |
 |[callRecord][] | Менее 15 минут | 60 минут |
 |[channel][] | Менее 10 секунд | 60 минут |
+|[chat][] | Менее 10 секунд | 60 минут |
 |[chatMessage][] | Менее 10 секунд | 1 минута |
 |[contact][] | Неизвестно | Неизвестно |
 |[conversation][] | Неизвестно | Неизвестно |
@@ -315,23 +317,23 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 ## <a name="see-also"></a>См. также
 
-- [Тип ресурса subscription](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Получение подписки](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- Тип ресурса [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
-- Тип ресурса [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
+- [Тип ресурса subscription](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
+- [Получение подписки](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
+- [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
+- Тип ресурса [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true)
+- Тип ресурса [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true)
 - [Руководство по уведомлениям об изменениях и отслеживанию изменений](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Уведомления жизненного цикла](./webhooks-lifecycle.md)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[group]: /graph/api/resources/group?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
-[user]: /graph/api/resources/user?view=graph-rest-1.0
-[alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact
+[conversation]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[event]: /graph/api/resources/event
+[group]: /graph/api/resources/group
+[message]: /graph/api/resources/message
+[user]: /graph/api/resources/user
+[alert]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
@@ -339,5 +341,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
+[chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team

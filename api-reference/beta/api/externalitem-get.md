@@ -1,28 +1,26 @@
 ---
-title: Получение Екстерналитем
-description: Получение Екстерналитем.
+title: Get externalItem
+description: Получите externalItem.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a504455b1f898d675474406e249e2637c12e1c69
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2c0bdc7d44e2d9fb5c317ab2eb1cbc71cca76031
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192197"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366756"
 ---
-# <a name="get-externalitem"></a>Получение Екстерналитем
+# <a name="get-externalitem"></a>Get externalItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [екстерналитем](../resources/externalitem.md) .
+Получите свойства и связи объекта [externalitem.](../resources/externalitem.md)
 
-Этот API предоставляется только в целях диагностики. Он не предназначен для использования в других целях. Повторные запросы к этому API могут привести к `429` ошибкам HTTP.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Этот API предоставляется только для диагностических целей. Она не предназначена для использования для каких-либо других целей. Повторные запросы на этот API могут привести к `429` ошибкам HTTP.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +30,7 @@ ms.locfileid: "48192197"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,12 +44,12 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ИД подключения | string | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
-| item-id       | string | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). |
+| connection-id | string | `id`Свойствосодержащего [externalConnection](../resources/externalconnection.md) |
+| item-id       | string | Свойство `id` [externalItem,](../resources/externalitem.md)предоставленное разработчиком. |
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -65,7 +63,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [екстерналитем](../resources/externalitem.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект externalItem](../resources/externalitem.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 

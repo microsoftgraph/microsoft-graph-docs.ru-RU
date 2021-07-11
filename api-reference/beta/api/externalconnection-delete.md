@@ -1,16 +1,16 @@
 ---
 title: Удаление externalConnection
-description: Удаление внешнего подключения.
+description: Удаление externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 37b46e3cd6de8a12d6a77106abbe81a8a5da090f
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: a50d9f900d0cece20a3c3088a303b41a2ba7999b
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49943614"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366900"
 ---
 # <a name="delete-externalconnection"></a>Удаление externalConnection
 
@@ -20,8 +20,6 @@ ms.locfileid: "49943614"
 
 Удаление [externalConnection](../resources/externalconnection.md).
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +28,7 @@ ms.locfileid: "49943614"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

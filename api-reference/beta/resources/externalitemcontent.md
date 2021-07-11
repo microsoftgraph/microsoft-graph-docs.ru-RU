@@ -1,33 +1,31 @@
 ---
-title: Тип ресурса externalItemContent
-description: Содержимое элемента, индексироваться через подключение Поиска (Майкрософт).
+title: тип ресурса externalItemContent
+description: Содержимое элемента, индексироваться с помощью Поиск (Майкрософт) подключения.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 66e3fccc8c072d06d2328301100d6bf3a0d50806
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 036b2e2d4081160680b7f5471bd2707ee503bc4a
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777633"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366543"
 ---
-# <a name="externalitemcontent-resource-type"></a>Тип ресурса externalItemContent
+# <a name="externalitemcontent-resource-type"></a>тип ресурса externalItemContent
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержимое [externalItem, индексироваться](externalitem.md) через подключение Поиска (Майкрософт). [](externalconnection.md)
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Содержимое [externalItem,](externalitem.md) индексироваться с помощью Поиск (Майкрософт) [подключения](externalconnection.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | значение    | String | Содержимое для externalItem. Обязательное.                                                 |
-| type     | String | Тип контента в свойстве value. Возможные значения: `text` и `html`. Обязательный. |
+| type     | String | Тип контента в свойстве значения. Возможные значения: `text` и `html`. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 

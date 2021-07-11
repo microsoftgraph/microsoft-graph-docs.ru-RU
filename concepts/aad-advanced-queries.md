@@ -4,12 +4,12 @@ description: Объекты каталога Azure AD поддерживают �
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e8a6c4a3a2d37eafeaee85f7778baa68bad97357
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 03210e9c46776c4fbc92057870737a87c7e47371
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351293"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366517"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Расширенные возможности запросов для объектов каталога Azure AD
 
@@ -36,7 +36,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
   "name": "get_users_not_enabled"
 } -->
 ```msgraph-interactive
-https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -202,4 +202,4 @@ Content-type: application/json
 
 - [Настройка откликов с помощью параметров запроса](/graph/query-parameters)
 - [Ограничения параметров запроса](known-issues.md#query-parameter-limitations)
-- [Использование параметра запроса $search для сопоставления с условием поиска](/graph/aad-advanced-queries)
+- [Использование параметра запроса $search для сопоставления с условием поиска](/graph/search-query-parameter)

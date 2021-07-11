@@ -1,16 +1,16 @@
 ---
 title: Создание подключения
-description: Используйте этот API для создания нового Екстерналконнектион.
+description: Используйте этот API для создания нового externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9f5b8381e999429fb29e718b199596d3f987a415
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cc1ae2ff41d86d741f45d25c2b53f83ab95ec069
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965721"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366914"
 ---
 # <a name="create-connection"></a>Создание подключения
 
@@ -18,9 +18,7 @@ ms.locfileid: "48965721"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [екстерналконнектион](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Создание нового [externalConnection](../resources/externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +28,7 @@ ms.locfileid: "48965721"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,11 +47,11 @@ POST /external/connections
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [екстерналконнектион](../resources/externalconnection.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [externalConnection.](../resources/externalconnection.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [екстерналконнектион](../resources/externalconnection.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` новый объект [externalConnection](../resources/externalconnection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,16 +1,16 @@
 ---
 title: Получение схемы
-description: Получение свойств схемы для объекта Екстерналконнектион.
+description: Извлечение свойств схемы для externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d27457c3aab9876bc26d95ad2e5f52a1b11bdb79
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 99b46758ac6535aa847dc2b97571c0edde3e48b9
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975353"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366998"
 ---
 # <a name="get-schema"></a>Получение схемы
 
@@ -18,9 +18,7 @@ ms.locfileid: "48975353"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств [схемы](../resources/schema.md) для объекта [екстерналконнектион](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Извлечение свойств [схемы](../resources/schema.md) для [externalConnection](../resources/externalconnection.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +28,7 @@ ms.locfileid: "48975353"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +54,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [схемы](../resources/schema.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [схемы](../resources/schema.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

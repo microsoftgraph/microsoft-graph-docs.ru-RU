@@ -1,16 +1,16 @@
 ---
 title: тип ресурса orgContact
-description: Ниже представлено описание ресурса в формате JSON.
+description: Ниже этот ресурс представлен в формате JSON.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b7c80131cb6f8c73cd441d4c19eef17896145af8
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: adcb3dd044162a7199cf23b1e625c62a9729e91f
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151442"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366466"
 ---
 # <a name="orgcontact-resource-type"></a>тип ресурса orgContact
 
@@ -31,7 +31,7 @@ ms.locfileid: "53151442"
 | [Список организационных контактов](../api/orgcontact-list.md) | [коллекция orgContact](orgcontact.md) | Список свойств организационных контактов. |
 | [Получить организационный контакт](../api/orgcontact-get.md) | [orgContact](orgcontact.md) | Чтение свойств и связей объекта orgContact. |
 | [Получение имени руководителя](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | Получите диспетчера контакта. |
-| [Get transitiveReports](../api/orgcontact-get-transitivereports.md) | Целое число | Получите количество транзитных отчетов для контакта с организацией из свойства навигации transitiveReports. |
+| [Получение transitiveReports](../api/orgcontact-get-transitivereports.md) | Целое число | Получите количество транзитных отчетов для контакта с организацией из свойства навигации transitiveReports. |
 | [Список directReports](../api/orgcontact-list-directreports.md) | Коллекция [directoryObject](directoryobject.md) | Список прямых отчетов контакта. |
 | [Список memberOf](../api/orgcontact-list-memberof.md) | Коллекция [directoryObject](directoryobject.md) | Получите коллекцию объектов memberOf. |
 | [checkMemberGroups](../api/orgcontact-checkmembergroups.md) | Коллекция строк | Проверка членства в группе. |
@@ -42,29 +42,29 @@ ms.locfileid: "53151442"
 
 | Свойство | Тип | Описание |
 | -------- | ---- | ----------- |
-| addresses | [коллекция physicalOfficeAddress](physicalofficeaddress.md) | Почтовые адреса для этого организационного контакта. Пока у контакта может быть только один физический адрес. |
-| companyName | String | Имя компании, к которую принадлежит этот организационный контакт. |
-| department | String | Имя отдела, в котором работает контакт. |
-| displayName | String | Отображение имени для этого организационного контакта. |
-| givenName | String | Имя для этого организационного контакта. |
-| id | String | Уникальный идентификатор для этого организационного контакта. |
-| jobTitle; | String | Название задания для этого организационного контакта. |
-| почта; | String | Адрес SMTP для контакта, например, "jeff@contoso.onmicrosoft.com". |
-| mailNickname | String | Псевдоним электронной почты (часть адреса электронной почты, предварительно ожидающих символ @) для этого организационного контакта. |
-| onPremisesLastSyncDateTime | DateTimeOffset | Дата и время последней синхронизации этого организационного контакта с локальной AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
-| onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Список ошибок в обеспечении синхронизации для этого организационного контакта. |
+| адреса | [коллекция physicalOfficeAddress](physicalofficeaddress.md) | Почтовые адреса для этого организационного контакта. Пока у контакта может быть только один физический адрес. |
+| companyName | String | Имя компании, к которую принадлежит этот организационный контакт. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
+| department | String | Имя отдела, в котором работает контакт. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
+| displayName | String | Отображение имени для этого организационного контакта. Поддерживает `$filter` ( `eq` `ne` , , , `NOT` , , , , и `ge` `le` `in` `startsWith` `$search` `$orderBy` .  |
+| givenName | String | Имя для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).  |
+| id | String | Уникальный идентификатор для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
+| jobTitle; | String | Название задания для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
+| почта; | String | Адрес SMTP для контакта, например, "jeff@contoso.onmicrosoft.com". Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
+| mailNickname | String | Псевдоним электронной почты (часть адреса электронной почты, предварительно ожидающих символ @) для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
+| onPremisesLastSyncDateTime | DateTimeOffset | Дата и время последней синхронизации этого организационного контакта с локальной AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`). |
+| onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Список ошибок в обеспечении синхронизации для этого организационного контакта. Поддерживает `$filter` (`eq`, `NOT`). |
 | onPremisesSyncEnabled | Логический | **верно,** если этот объект синхронизирован из локального каталога; **false,** если этот объект был первоначально синхронизирован из локального каталога, но больше не синхронизирован и теперь освоен в Exchange; **null,** если этот объект никогда не был синхронизирован из локального каталога (по умолчанию). |
-| phones | Коллекция [phone](phone.md) | Список телефонов для этого организационного контакта. Телефон могут быть мобильными, бизнес-и бизнесфаксами. Только один из каждого типа может присутствовать в коллекции. |
-| proxyAddresses | Коллекция строк | Например: SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает параметр $filter. |
-| surname | String | Фамилия для этого организационного контакта. |
+| phones | Коллекция [phone](phone.md) | Список телефонов для этого организационного контакта. Телефон могут быть мобильными, бизнес-и бизнесфаксами. Только один из каждого типа может присутствовать в коллекции. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
+| proxyAddresses | Коллекция строк | Например: SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`). |
+| surname | String | Фамилия для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`) |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип | Описание |
 | ------------ | ---- | ----------- |
-| directReports | Коллекция [directoryObject](directoryobject.md) | Прямые отчеты контакта. (Пользователи и контакты с свойством диспетчера, заданной для этого контакта.) Только для чтения. Допускается значение null. |
-| manager | [directoryObject](directoryobject.md) | Пользователь или контакт, который является менеджером этого контакта. Только для чтения. |
-| memberOf | Коллекция [directoryObject](directoryobject.md) | Группы, в которые входит этот контакт. Только для чтения. Допускается значение null. |
+| directReports | Коллекция [directoryObject](directoryobject.md) | Прямые отчеты контакта. (Пользователи и контакты с свойством диспетчера, заданной для этого контакта.) Только для чтения. Допускается значение null. Поддерживает `$expand`. |
+| manager | [directoryObject](directoryobject.md) | Пользователь или контакт, который является менеджером этого контакта. Только для чтения. Поддерживает `$expand`. |
+| memberOf | Коллекция [directoryObject](directoryobject.md) | Группы, в которые входит этот контакт. Только для чтения. Допускается значение null. Поддерживает `$expand`. |
 | transitiveReports | Коллекция [directoryObject](directoryobject.md) | Транзитные отчеты для контакта. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON

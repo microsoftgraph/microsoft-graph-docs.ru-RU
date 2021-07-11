@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 9272ebca7680456bef5f05ffe6a5258a4a184a45
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: a30b4576740147ab6456d55ee5e123b12ec411cc
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118540"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366508"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -93,11 +93,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 Например, приведенный ниже запрос возвращает коллекцию **contact** текущего пользователя, а также ряд элементов коллекции **contact** в свойстве `@odata.count`.
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
-
-[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 Параметр запроса `$count` поддерживается для таких коллекций ресурсов и их отношений, которые являются производными от [directoryObject](/graph/api/resources/directoryobject), и только в [расширенных запросах](/graph/filter-directory-objects).
 - [application](/graph/api/resources/application)
@@ -111,23 +109,20 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 Многие ресурсы Microsoft Graph возвращают как объявленные свойства ресурса, так и его связи с другими ресурсами. Эти связи также называются свойствами ссылки или навигации и могут ссылаться как на один ресурс, так и на коллекцию ресурсов. Например, папки почты, руководитель и подчиненные пользователя выводятся как связи. 
 
-Как правило, в одном запросе можно отдельно (но не одновременно) запросить или свойства ресурса, или одно из отношений. С помощью строкового параметра запроса `$expand` в результаты можно включить расширенный ресурс или коллекцию, на которые ссылается одно отношение (свойство навигации).
+Как правило, в одном запросе можно отдельно (но не одновременно) запросить или свойства ресурса, или одно из отношений. С помощью строкового параметра запроса `$expand` в результаты можно включить расширенный ресурс или коллекцию, на которые ссылается одно отношение (свойство навигации). В одном запросе можно развернуть только одно отношение.
 
 В приведенном ниже примере возвращаются сведения о корневом каталоге, а также дочерние элементы верхнего уровня на диске.
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
-[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
 Кроме того, некоторые коллекции ресурсов позволяют указывать свойства, которые должны быть возвращены в расширенных ресурсах, благодаря параметру `$select`. В следующем примере выполняется тот же запрос, что и в предыдущем, но используется оператор [`$select`](#select-parameter), с помощью которого для расширенных дочерних элементов возвращаются только свойства **id** и **name**.
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
-
-[Попробовать в песочнице Graph][expand-example]
 
 > [!NOTE]
 > Не все отношения и ресурсы поддерживают параметр запроса `$expand`. Например, можно развернуть отношения **directReports**, **manager**, and **memberOf** для пользователя, но невозможно развернуть отношения **events**, **messages** и **photo**. Не все ресурсы и отношения поддерживают использование параметра `$select` для развернутых элементов. 
@@ -140,25 +135,20 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 Также чтобы найти пользователей, чье отображаемое имя начинается с буквы J, используйте `startsWith`.
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 ```
 
-[Попробовать в песочнице Graph][filter-example]
-
 Поддержка операторов `$filter` зависит от того, какой API Microsoft Graph используется. В большинстве случаев поддерживаются следующие операторы:
 
-- равно `eq` / не равно `ne`
-- меньше `lt` / больше `gt`
-- меньше или равно `le` / больше или равно `ge`
-- и `and` / или `or`
-- в `in`
-- Отрицание `not`
-- лямбда-оператор "любой" `any`
-- лямбда-оператор "все" `all`
-- Начинается с `startsWith`
-- Оканчивается на `endsWith` (только в [расширенных запросах](/graph/aad-advanced-queries))
-- Содержит `contains`
+| Тип оператора | Оператор |
+| --- | --- |
+| Операторы равенства | <ul><li> равно `eq` </li><li> не равно `ne`</li><li> Отрицание `not`</li><li> в `in`</li></ul> |
+| Операторы отношения | <ul><li> меньше `lt` </li><li> больше `gt`</li><li> меньше или равно `le`</li><li> больше или равно `ge`</li></ul> |
+| Лямбда-операторы | <ul><li> любой `any` </li><li> все `all`</li></ul>|
+| Условные операторы | <ul><li> и `and` </li><li> или `or`</li> |
+| Функции | <ul><li> Начинается с `startsWith` </li><li> Заканчивается на `endsWith`</li><li> Содержит `contains`</li></ul>|
+
 
 > **Примечание.** Поддержка этих операторов различается для разных сущностей. Некоторые свойства поддерживают `$filter` только в [расширенных запросах](/graph/aad-advanced-queries). Дополнительные сведения см. в документации по конкретным сущностям.
 
@@ -232,11 +222,10 @@ GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'a
 
 Например, указанный ниже запрос возвращает список пользователей организации в формате JSON.
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-[Попробовать в песочнице Graph][format-example]
 
 > **Примечание.** Параметр запросов `$format` поддерживает ряд форматов (например, Atom, XML и JSON), но результаты могут не возвращаться во всех форматах.
 
@@ -246,38 +235,33 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 Например, следующий запрос возвращает список пользователей в организации, упорядоченный по отображаемому имени:
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
-[Попробовать в песочнице Graph][orderby-example]
 
 Вы также можете сортировать данные по объектам сложного типа. Приведенный ниже запрос позволяет получить сообщения и отсортировать их по полю **address** свойства **from**, принадлежащего к сложному типу **emailAddress**.
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
-[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 Чтобы отсортировать результаты по возрастанию или убыванию, добавьте `asc` или `desc` к имени поля, используя пробел для разделения, например: `?$orderby=name%20desc`. Если порядок сортировки не указан, используется порядок сортировки по умолчанию (по возрастанию).
 
 Некоторые API дают возможность упорядочивать результаты по нескольким свойствам. Например, следующий запрос позволяет упорядочить сообщения в папке "Входящие" пользователя сначала по имени отправителя по убыванию (от Я до А), а затем — по теме по возрастанию (по умолчанию).
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
-
-[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 > **Примечание.** Если указать `$filter`, сервер определит порядок сортировки результатов. Если вы одновременно используете `$orderby` и `$filter` для получения сообщений, так как сервер всегда определяет порядок сортировки результатов `$filter`, [необходимо задать свойства определенным образом](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
 
 
 В приведенном ниже примере показан запрос, отфильтрованный по свойствам **subject** и **importance**, а затем отсортированный по свойствам **subject**, **importance** и **receivedDateTime** в порядке убывания.
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Попробовать в песочнице Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
 > [!NOTE] 
 > Для объектов каталога поддерживаются параметры запросов `$orderby` и `$filter`. См. [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
@@ -292,11 +276,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 Например, при получении сообщений вошедшего пользователя можно указать, что необходимо вернуть только свойства **from** и **subject**:
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-[Попробовать в песочнице Graph][select-example]
 
 > **Важно!** Как правило, параметр `$select` рекомендуется использовать, чтобы запрос возвращал только те свойства, которые необходимы вашему приложению. Это особенно касается запросов, которые могут возвращать большой результирующий набор. Ограничение набора свойств, возвращаемых в каждой строке, позволяет уменьшить сетевую нагрузку и повысить производительность вашего приложения.
 >
@@ -306,10 +289,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 Параметр запроса `$skip` позволяет задать количество элементов, которое необходимо пропустить в начале коллекции. Например, следующий запрос возвращает события пользователя, отсортированные по дате создания, начиная с 21-го события в коллекции:
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
-[Попробовать в песочнице Graph][skip-example]
+
 
 > **Примечание.** Некоторые API Microsoft Graph, например для почты и календарей Outlook (**message**, **event** и **calendar**), используют `$skip` для разбиения по страницам. Если результаты запроса занимают несколько страниц, эти API возвращают свойство `@odata:nextLink` с URL-адресом, содержащим параметр `$skip`. Этот URL-адрес можно использовать для возврата следующей страницы результатов. [Подробнее…](./paging.md)
 >
@@ -333,11 +316,10 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 Например, следующий запрос [сообщений списка](/graph/api/user-list-messages) возвращает первые пять сообщений в почтовом ящике пользователя:
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-[Попробовать в песочнице Graph][top-example]
 
 > Заголовок **ConsistencyLevel** требуется для расширенных запросов объектов каталога. Этот заголовок по умолчанию не включен в запросы последующих страниц. Его необходимо явным образом задавать на последующих страницах.
 
@@ -368,36 +350,9 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
 [count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
-[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups?$expand=members&method=GET&version=v1.0
-[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
-[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
-[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
-[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
-[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
-[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
-[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
-[search-att-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22attachment%3Aapi-catalog%2Emd%22&method=GET&version=v1.0
-[search-bcc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22bcc%3Asamanthab%40contoso%2Ecom%22%26$select=subject,bccRecipients&method=GET&version=v1.0
-[search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0
-[search-cc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22cc%3Adanas%22%26$select=subject,ccRecipients&method=GET&version=v1.0
-[search-from-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22from%3Arandiw%22%26$select=subject,from&method=GET&version=v1.0
-[search-hasatt-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22hasAttachments=true%22&method=GET&version=v1.0
-[search-imp-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22importance%3Ahigh%22%26$select=subject,importance&method=GET&version=v1.0
-[search-kind-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22kind%3Avoicemail%22&method=GET&version=v1.0
-[search-part-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22participants%3Adanas%22&method=GET&version=v1.0
-
-[search-rcvd-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22received%3A07/23/2018%22%26$select=subject,receivedDateTime&method=GET&version=v1.0
-
-[search-rcpts-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22recipients%3Arandiw%22%26$select=subject,toRecipients,ccRecipients,bccRecipients&method=GET&version=v1.0
-[search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
-[search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
-
-[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.0
-[search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
-
-
+## <a name="see-also"></a>См. также
 
 - [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries)
-- [Ограничения параметров запросов](known-issues.md#query-parameter-limitations)
 - [Использование параметра запроса $search для сопоставления с условием поиска](/graph/search-query-parameter)
+- [Ограничения параметров запроса](known-issues.md#query-parameter-limitations)

@@ -1,35 +1,33 @@
 ---
-title: Тип ресурса ACL
-description: Запись управления доступом для элемента, индексируемого Екстерналконнектион поиска Microsoft Search.
+title: тип ресурса acl
+description: Запись элемента управления доступом для элемента, индексного Поиск (Майкрософт) externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6d390ac0fee3063bd8f0d292d14e04b2616c1d00
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4c3f3cc72c7fde56665c33561fa435e76842eb1
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193535"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366599"
 ---
-# <a name="acl-resource-type"></a>Тип ресурса ACL
+# <a name="acl-resource-type"></a>тип ресурса acl
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запись управления доступом для элемента, индексируемого [Екстерналконнектион](externalconnection.md)поиска Microsoft Search.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Запись элемента управления доступом для элемента, индексного Поиск (Майкрософт) [externalConnection.](externalconnection.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип   | Описание                                        |
 |:---------------|:-------|:---------------------------------------------------|
-| акцесстипе     | String | Доступ, назначенный удостоверению. Возможные значения: `grant`, `deny`. |
-| идентитисаурце | String | Источник удостоверения. Возможные значения: `azureActiveDirectory` или `external` .           |
-| type           | String | Тип удостоверения. Возможные значения: `user` , `group` ,, `everyone` `everyoneExceptGuests` Если идентитисаурце, `azureActiveDirectory` и только в том `group` случае, если идентитисаурце `external` . |
-| value          | String | Уникальный идентификатор удостоверения. В случае удостоверений Azure Active Directory `value` для этого параметра задается идентификатор объекта пользователя, группы или клиента для типов User, Group и Everyone (and еверйониксцептгуестс) соответственно. В случае внешних групп `value` задается идентификатор [екстерналграуп](externalgroup.md).|
+| accessType     | String | Доступ, предоставленный удостоверению. Возможные значения: `grant`, `deny`. |
+| identitySource | String | Источник удостоверений. Возможные значения: `azureActiveDirectory` или `external`.           |
+| type           | String | Тип удостоверения. Возможные значения: , , если identitySource есть и только `user` если `group` `everyone` `everyoneExceptGuests` `azureActiveDirectory` `group` identitySource `external` является . |
+| value          | String | Уникальный идентификатор удостоверения. В случае Azure Active Directory удостоверений устанавливается идентификатор объекта пользователя, группы или клиента для пользователей, групп и всех `value` (и всех пользователейExceptGuests) соответственно. В случае внешних `value` групп задают ID [externalGroup](externalgroup.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 

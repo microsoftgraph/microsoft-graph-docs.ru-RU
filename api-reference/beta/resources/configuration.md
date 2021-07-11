@@ -1,32 +1,30 @@
 ---
-title: Тип ресурса конфигурации
-description: Задает дополнительные идентификаторы приложений, которым разрешено управлять Екстерналконнектион и индексировать содержимое в Екстерналконнектион.
+title: тип ресурса конфигурации
+description: Указывает дополнительные ID-адреса приложений, которые разрешены для управления внешним подключением и индексации контента в externalConnection.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: bd267c77a9904564e8b2b7f592f207204d9396b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a82c5e9e4cbd915d5a7e11b9e162bc510628ecf
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994220"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53366781"
 ---
-# <a name="configuration-resource-type"></a>Тип ресурса конфигурации
+# <a name="configuration-resource-type"></a>тип ресурса конфигурации
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задает дополнительные идентификаторы приложений, которым разрешено управлять Екстерналконнектион и индексировать содержимое в [екстерналконнектион](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Указывает дополнительные ID-адреса приложений, которые разрешены для управления внешним подключением и индексации контента [в externalConnection.](../resources/externalconnection.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип              | Описание |
 |:---------------|:------------------|:------------|
-| аусоризедаппс | Коллекция String | Коллекция идентификаторов приложений для зарегистрированных приложений Azure Active Directory, которым разрешено управлять Екстерналконнектион и индексировать контент в Екстерналконнектион. |
+| authorizedApps | Коллекция строк | Коллекция ID-приложений для зарегистрированных Azure Active Directory приложений, которые разрешены для управления внешним подключением и индексации контента в externalConnection. |
 
 ## <a name="json-representation"></a>Представление JSON
 
