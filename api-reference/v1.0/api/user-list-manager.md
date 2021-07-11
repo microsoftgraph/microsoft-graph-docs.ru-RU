@@ -1,16 +1,16 @@
 ---
 title: Получение руководителя
-description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.
+description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный руководителем пользователя.
 localization_priority: Priority
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 151e738e2766c7bcc0fc35443a8e8c0a2cdc65ce
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: f120af7868c5a55895e4c3d700b7276d6220cd1f
+ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474097"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53351328"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -54,6 +54,7 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 > + Значение `n` параметра `$levels` может быть `max` (для возврата всех руководителей) или числом от 1 до 1000.  
 > + Если параметр `$levels` не указан, возвращается только непосредственный руководитель.  
 > + Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей. Параметр `$levels` является обязательным: `$expand=manager($levels=max;$select=id,displayName)`
+> + Чтобы выбрать свойства расширенного диспетчера, в запрос следует добавить параметр `$count=true`, а также заголовок: `ConsistencyLevel=eventual`. В примере 2 показано, как это сделать.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
