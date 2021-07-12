@@ -2,12 +2,12 @@
 author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
-ms.openlocfilehash: f2def5f5a22267146d5b3005cd2f9be82e1d0db9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f3854b06c7d4dc584a922f9c454947785b74947f
+ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50243084"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53005735"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -19,7 +19,4 @@ ms.locfileid: "50243084"
 
 > **Примечания.** 
 >
->`/teams/getAllMessages` и `/chats/getAllMessages` доступны для пользователей с [требуемыми лицензиями](https://aka.ms/teams-changenotification-licenses).
-В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на базе количества данных, доступ к которым получен через API-интерфейс.
->
->`/chats/getAllMessages` возвращает только сообщения из чатов, принадлежащих клиенту. Если цепочка чата инициирована пользователем из-за пределов клиента, она не принадлежит клиенту и для нее не создаются уведомления об изменениях.
+>`/teams/getAllMessages` и `/chats/getAllMessages` доступны для пользователей с [требуемыми лицензиями](https://aka.ms/teams-changenotification-licenses). В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества данных, доступ к которым получен через API-интерфейс.
