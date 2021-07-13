@@ -1879,7 +1879,7 @@ items:
                     href: api/print-list-services.md
                   - name: Получение
                     href: api/printservice-get.md
-                  - name: Endpoint
+                  - name: Конечная точка
                     href: resources/printserviceendpoint.md
                     items:
                       - name: Получение конечной точки
@@ -10602,6 +10602,8 @@ items:
                     href: api/mobiledevicemanagementpolicies-get.md
                   - name: Обновление
                     href: api/mobiledevicemanagementpolicies-update.md
+                  - name: Delete
+                    href: api/mobiledevicemanagementpolicies-delete.md
                   - name: 'Список, включаемый в группы'
                     href: api/mobiledevicemanagementpolicies-list-includedgroups.md
                   - name: Добавление включенных групп
@@ -10614,6 +10616,8 @@ items:
                     href: api/mobileappmanagementpolicies-get.md
                   - name: Обновление
                     href: api/mobileappmanagementpolicies-update.md
+                  - name: Delete
+                    href: api/mobileappmanagementpolicies-delete.md
                   - name: 'Список, включаемый в группы'
                     href: api/mobileappmanagementpolicies-list-includedgroups.md
                   - name: Добавление включенных групп
@@ -11374,10 +11378,16 @@ items:
                       - name: Delete
                         href: api/b2cidentityuserflow-delete.md
                       - name: Список поставщиков удостоверений
-                        href: api/b2cidentityuserflow-list-identityproviders.md
+                        href: api/b2cidentityuserflow-list-userflowidentityproviders.md
                       - name: Добавление поставщика удостоверений
-                        href: api/b2cidentityuserflow-post-identityproviders.md
+                        href: api/b2cidentityuserflow-userflowidentityproviders-update.md
                       - name: Удаление поставщика удостоверений
+                        href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
+                      - name: Поставщики удостоверений списка (неподготовленные)
+                        href: api/b2cidentityuserflow-list-identityproviders.md
+                      - name: Добавление поставщика удостоверений (неподготовленного)
+                        href: api/b2cidentityuserflow-post-identityproviders.md
+                      - name: Удаление поставщика удостоверений (неподготовлено)
                         href: api/b2cidentityuserflow-delete-identityproviders.md
                       - name: Назначения атрибутов пользователя в списке
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
@@ -11404,10 +11414,16 @@ items:
                       - name: Удаление
                         href: api/b2xidentityuserflow-delete.md
                       - name: Список поставщиков удостоверений
-                        href: api/b2xidentityuserflow-list-identityproviders.md
+                        href: api/b2xidentityuserflow-list-userflowidentityproviders.md
                       - name: Добавление поставщика удостоверений
-                        href: api/b2xidentityuserflow-post-identityproviders.md
+                        href: api/b2xidentityuserflow-userflowidentityproviders-update.md
                       - name: Удаление поставщика удостоверений
+                        href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+                      - name: Поставщики удостоверений списка (неподготовленные)
+                        href: api/b2xidentityuserflow-list-identityproviders.md
+                      - name: Добавление поставщика удостоверений (неподготовленного)
+                        href: api/b2xidentityuserflow-post-identityproviders.md
+                      - name: Удаление поставщика удостоверений (удалено)
                         href: api/b2xidentityuserflow-delete-identityproviders.md
                       - name: Назначения атрибутов пользователя в списке
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
@@ -11665,6 +11681,20 @@ items:
                         href: api/accesspackage-delete.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackage-filterbycurrentuser.md
+                      - name: Списки несовместимых пакетов доступа
+                        href: api/accesspackage-list-incompatibleaccesspackages.md
+                      - name: Добавление несовместимых пакетов доступа
+                        href: api/accesspackage-post-incompatibleaccesspackage.md
+                      - name: Удаление несовместимых пакетов доступа
+                        href: api/accesspackage-delete-incompatibleaccesspackage.md
+                      - name: 'Группы, несовместимые со списком'
+                        href: api/accesspackage-list-incompatiblegroups.md
+                      - name: Добавление несовместимой группы
+                        href: api/accesspackage-post-incompatiblegroup.md
+                      - name: Удаление несовместимой группы
+                        href: api/accesspackage-delete-incompatiblegroup.md
+                      - name: 'Пакеты доступа к спискам, несовместимые с'
+                        href: api/accesspackage-list-accesspackagesincompatiblewith.md
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
@@ -13379,7 +13409,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы

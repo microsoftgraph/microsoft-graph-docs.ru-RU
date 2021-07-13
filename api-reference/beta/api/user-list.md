@@ -5,72 +5,72 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2636830f993626cc2d220c5a09543640f8da181f
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: 09c296c88fc2b7ceab48018745b2686c08b8db21
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703547"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400987"
 ---
-# <a name="list-users"></a><span data-ttu-id="be4e9-103">Перечисление пользователей</span><span class="sxs-lookup"><span data-stu-id="be4e9-103">List users</span></span>
+# <a name="list-users"></a><span data-ttu-id="ac950-103">Перечисление пользователей</span><span class="sxs-lookup"><span data-stu-id="ac950-103">List users</span></span>
 
-<span data-ttu-id="be4e9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="be4e9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ac950-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ac950-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="be4e9-105">Получение списка объектов [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="be4e9-105">Retrieve a list of [user](../resources/user.md) objects.</span></span>
+<span data-ttu-id="ac950-105">Получение списка объектов [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="ac950-105">Retrieve a list of [user](../resources/user.md) objects.</span></span>
 
-<span data-ttu-id="be4e9-106">Эта операция по умолчанию возвращает для каждого пользователя только подмножество наиболее часто используемых свойств.</span><span class="sxs-lookup"><span data-stu-id="be4e9-106">This operation returns by default only a subset of the more commonly used properties for each user.</span></span> <span data-ttu-id="be4e9-107">Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/user.md#properties).</span><span class="sxs-lookup"><span data-stu-id="be4e9-107">These _default_ properties are noted in the [Properties](../resources/user.md#properties) section.</span></span> <span data-ttu-id="be4e9-108">Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](user-get.md) и укажите их в параметре `$select` запроса OData.</span><span class="sxs-lookup"><span data-stu-id="be4e9-108">To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option.</span></span>
+<span data-ttu-id="ac950-106">Эта операция по умолчанию возвращает для каждого пользователя только подмножество наиболее часто используемых свойств.</span><span class="sxs-lookup"><span data-stu-id="ac950-106">This operation returns by default only a subset of the more commonly used properties for each user.</span></span> <span data-ttu-id="ac950-107">Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/user.md#properties).</span><span class="sxs-lookup"><span data-stu-id="ac950-107">These _default_ properties are noted in the [Properties](../resources/user.md#properties) section.</span></span> <span data-ttu-id="ac950-108">Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](user-get.md) и укажите их в параметре `$select` запроса OData.</span><span class="sxs-lookup"><span data-stu-id="ac950-108">To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="be4e9-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="be4e9-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ac950-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ac950-109">Permissions</span></span>
 
-<span data-ttu-id="be4e9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="be4e9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ac950-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ac950-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="be4e9-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="be4e9-112">Permission type</span></span>      | <span data-ttu-id="be4e9-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="be4e9-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ac950-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ac950-112">Permission type</span></span>      | <span data-ttu-id="ac950-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ac950-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="be4e9-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="be4e9-114">Delegated (work or school account)</span></span> | <span data-ttu-id="be4e9-115">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="be4e9-115">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="be4e9-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="be4e9-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be4e9-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="be4e9-117">Not supported.</span></span>    |
-|<span data-ttu-id="be4e9-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="be4e9-118">Application</span></span> | <span data-ttu-id="be4e9-119">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be4e9-119">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="ac950-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ac950-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ac950-115">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ac950-115">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="ac950-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ac950-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ac950-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ac950-117">Not supported.</span></span>    |
+|<span data-ttu-id="ac950-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ac950-118">Application</span></span> | <span data-ttu-id="ac950-119">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ac950-119">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="be4e9-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ac950-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="be4e9-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="be4e9-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ac950-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ac950-121">Optional query parameters</span></span>
 
-<span data-ttu-id="be4e9-122">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`.</span><span class="sxs-lookup"><span data-stu-id="be4e9-122">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="be4e9-123">`$search` можно использовать в свойстве **displayName**.</span><span class="sxs-lookup"><span data-stu-id="be4e9-123">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="be4e9-124">Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`.</span><span class="sxs-lookup"><span data-stu-id="be4e9-124">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="be4e9-125">Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.</span><span class="sxs-lookup"><span data-stu-id="be4e9-125">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span> <span data-ttu-id="be4e9-126">В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.</span><span class="sxs-lookup"><span data-stu-id="be4e9-126">The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.</span></span>
+<span data-ttu-id="ac950-122">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ac950-122">This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span> <span data-ttu-id="ac950-123">Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`.</span><span class="sxs-lookup"><span data-stu-id="ac950-123">Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`.</span></span> <span data-ttu-id="ac950-124">Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-124">For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span> <span data-ttu-id="ac950-125">В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.</span><span class="sxs-lookup"><span data-stu-id="ac950-125">The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.</span></span>
 
-<span data-ttu-id="be4e9-p104">Примечание. Некоторые свойства не могут быть возвращены в пользовательском наборе. Следующие свойства поддерживаются только при [извлечении одного пользователя](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.</span><span class="sxs-lookup"><span data-stu-id="be4e9-p104">Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving a single user](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.</span></span>
+<span data-ttu-id="ac950-p104">Примечание. Некоторые свойства не могут быть возвращены в пользовательском наборе. Следующие свойства поддерживаются только при [извлечении одного пользователя](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.</span><span class="sxs-lookup"><span data-stu-id="ac950-p104">Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving a single user](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.</span></span>
 
-<span data-ttu-id="be4e9-129">Следующие свойства не поддерживаются в личных учетных записях Майкрософт и будут `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.</span><span class="sxs-lookup"><span data-stu-id="be4e9-129">The following properties are not supported in personal Microsoft accounts and will be `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.</span></span>
+<span data-ttu-id="ac950-128">Следующие свойства не поддерживаются в личных учетных записях Майкрософт и будут `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.</span><span class="sxs-lookup"><span data-stu-id="ac950-128">The following properties are not supported in personal Microsoft accounts and will be `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="be4e9-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="be4e9-130">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ac950-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ac950-129">Request headers</span></span>
 
-| <span data-ttu-id="be4e9-131">Заголовок</span><span class="sxs-lookup"><span data-stu-id="be4e9-131">Header</span></span> | <span data-ttu-id="be4e9-132">Значение</span><span class="sxs-lookup"><span data-stu-id="be4e9-132">Value</span></span> |
+| <span data-ttu-id="ac950-130">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ac950-130">Header</span></span> | <span data-ttu-id="ac950-131">Значение</span><span class="sxs-lookup"><span data-stu-id="ac950-131">Value</span></span> |
 |:------ |:----- |
-| <span data-ttu-id="be4e9-133">Авторизация</span><span class="sxs-lookup"><span data-stu-id="be4e9-133">Authorization</span></span> | <span data-ttu-id="be4e9-134">Bearer {токен} (обязательный)</span><span class="sxs-lookup"><span data-stu-id="be4e9-134">Bearer {token} (required)</span></span>  |
-| <span data-ttu-id="be4e9-135">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="be4e9-135">ConsistencyLevel</span></span> | <span data-ttu-id="be4e9-136">необязательный.</span><span class="sxs-lookup"><span data-stu-id="be4e9-136">eventual.</span></span> <span data-ttu-id="be4e9-137">Этот заголовок и `$count` требуются при использовании `$search`, применении `$filter` с параметром запроса `$orderby` или применении `$filter` с логическим оператором `endsWith`.</span><span class="sxs-lookup"><span data-stu-id="be4e9-137">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter, or `$filter` with the `endsWith` logical operator.</span></span> <span data-ttu-id="be4e9-138">В нем используется индекс, который может не соответствовать последним изменениям объекта.</span><span class="sxs-lookup"><span data-stu-id="be4e9-138">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="ac950-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ac950-132">Authorization</span></span> | <span data-ttu-id="ac950-133">Bearer {токен} (обязательный)</span><span class="sxs-lookup"><span data-stu-id="ac950-133">Bearer {token} (required)</span></span>  |
+| <span data-ttu-id="ac950-134">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="ac950-134">ConsistencyLevel</span></span> | <span data-ttu-id="ac950-135">необязательный.</span><span class="sxs-lookup"><span data-stu-id="ac950-135">eventual.</span></span> <span data-ttu-id="ac950-136">Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`.</span><span class="sxs-lookup"><span data-stu-id="ac950-136">This header and `$count` are required when using `$search`, or in specific usage of `$filter`.</span></span> <span data-ttu-id="ac950-137">Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-137">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="be4e9-139">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="be4e9-139">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ac950-138">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ac950-138">Request body</span></span>
 
-<span data-ttu-id="be4e9-140">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="be4e9-140">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ac950-139">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ac950-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="be4e9-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ac950-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-140">Response</span></span>
 
-<span data-ttu-id="be4e9-142">При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [user](../resources/user.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-142">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span>
+<span data-ttu-id="ac950-141">При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [user](../resources/user.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-141">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="be4e9-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="be4e9-143">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ac950-142">Примеры</span><span class="sxs-lookup"><span data-stu-id="ac950-142">Examples</span></span>
 
-### <a name="example-1-get-all-users"></a><span data-ttu-id="be4e9-144">Пример 1. Получение всех пользователей</span><span class="sxs-lookup"><span data-stu-id="be4e9-144">Example 1: Get all users</span></span>
+### <a name="example-1-get-all-users"></a><span data-ttu-id="ac950-143">Пример 1. Получение всех пользователей</span><span class="sxs-lookup"><span data-stu-id="ac950-143">Example 1: Get all users</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-144">Request</span></span>
 
-<span data-ttu-id="be4e9-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-146">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-145">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="be4e9-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="be4e9-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ac950-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="ac950-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -78,28 +78,28 @@ GET /users
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users
 ```
-# <a name="c"></a>[<span data-ttu-id="be4e9-148">C#</span><span class="sxs-lookup"><span data-stu-id="be4e9-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ac950-147">C#</span><span class="sxs-lookup"><span data-stu-id="ac950-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="be4e9-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="be4e9-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ac950-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac950-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="be4e9-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be4e9-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ac950-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ac950-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="be4e9-151">Java</span><span class="sxs-lookup"><span data-stu-id="be4e9-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ac950-150">Java</span><span class="sxs-lookup"><span data-stu-id="ac950-150">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="be4e9-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-151">Response</span></span>
 
-<span data-ttu-id="be4e9-153">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-153">The following is an example of the response.</span></span> 
-><span data-ttu-id="be4e9-154">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-154">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-152">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-152">The following is an example of the response.</span></span> 
+><span data-ttu-id="ac950-153">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-153">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -125,18 +125,18 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a><span data-ttu-id="be4e9-155">Пример 2. Получение учетной записи пользователя с помощью имени для входа</span><span class="sxs-lookup"><span data-stu-id="be4e9-155">Example 2: Get a user account using a sign-in name</span></span>
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a><span data-ttu-id="ac950-154">Пример 2. Получение учетной записи пользователя с помощью имени для входа</span><span class="sxs-lookup"><span data-stu-id="ac950-154">Example 2: Get a user account using a sign-in name</span></span>
 
-<span data-ttu-id="be4e9-156">Найдите учетную запись пользователя, используя имя для входа (также называемое локальной учетной записью).</span><span class="sxs-lookup"><span data-stu-id="be4e9-156">Find a user account using a sign-in name (also known as a local account).</span></span>
+<span data-ttu-id="ac950-155">Найдите учетную запись пользователя, используя имя для входа (также называемое локальной учетной записью).</span><span class="sxs-lookup"><span data-stu-id="ac950-155">Find a user account using a sign-in name (also known as a local account).</span></span>
 
 >[!NOTE]
-><span data-ttu-id="be4e9-157">При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**.</span><span class="sxs-lookup"><span data-stu-id="be4e9-157">When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.</span></span> <span data-ttu-id="be4e9-158">Значение **issuerAssignedId** должно быть адресом электронной почты учетной записи пользователя, а не именем субъекта-пользователя (UPN).</span><span class="sxs-lookup"><span data-stu-id="be4e9-158">The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN).</span></span> <span data-ttu-id="be4e9-159">Если используется UPN, результатом будет пустой список.</span><span class="sxs-lookup"><span data-stu-id="be4e9-159">If a UPN is used, the response will be an empty list.</span></span>
+><span data-ttu-id="ac950-156">При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**.</span><span class="sxs-lookup"><span data-stu-id="ac950-156">When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.</span></span> <span data-ttu-id="ac950-157">Значение **issuerAssignedId** должно быть адресом электронной почты учетной записи пользователя, а не именем субъекта-пользователя (UPN).</span><span class="sxs-lookup"><span data-stu-id="ac950-157">The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN).</span></span> <span data-ttu-id="ac950-158">Если используется UPN, результатом будет пустой список.</span><span class="sxs-lookup"><span data-stu-id="ac950-158">If a UPN is used, the response will be an empty list.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-160">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-159">Request</span></span>
 
-<span data-ttu-id="be4e9-161">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-161">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-160">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="be4e9-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="be4e9-162">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ac950-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="ac950-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
@@ -144,28 +144,28 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
-# <a name="c"></a>[<span data-ttu-id="be4e9-163">C#</span><span class="sxs-lookup"><span data-stu-id="be4e9-163">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ac950-162">C#</span><span class="sxs-lookup"><span data-stu-id="ac950-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="be4e9-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="be4e9-164">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ac950-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac950-163">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signinname-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="be4e9-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be4e9-165">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ac950-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ac950-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signinname-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="be4e9-166">Java</span><span class="sxs-lookup"><span data-stu-id="be4e9-166">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ac950-165">Java</span><span class="sxs-lookup"><span data-stu-id="ac950-165">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="be4e9-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-167">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-166">Response</span></span>
 
-<span data-ttu-id="be4e9-168">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-168">The following is an example of the response.</span></span> 
-> <span data-ttu-id="be4e9-169">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-169">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-167">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-167">The following is an example of the response.</span></span> 
+> <span data-ttu-id="ac950-168">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-168">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -186,14 +186,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-users-including-their-last-sign-in-time"></a><span data-ttu-id="be4e9-170">Пример 3. Получение пользователей с указанием времени их последнего входа в систему</span><span class="sxs-lookup"><span data-stu-id="be4e9-170">Example 3: Get users including their last sign-in time</span></span>
+### <a name="example-3-get-users-including-their-last-sign-in-time"></a><span data-ttu-id="ac950-169">Пример 3. Получение пользователей с указанием времени их последнего входа в систему</span><span class="sxs-lookup"><span data-stu-id="ac950-169">Example 3: Get users including their last sign-in time</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-171">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-170">Request</span></span>
 
-<span data-ttu-id="be4e9-p107">Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All.</span><span class="sxs-lookup"><span data-stu-id="be4e9-p107">The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.</span></span>
+<span data-ttu-id="ac950-p107">Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All.</span><span class="sxs-lookup"><span data-stu-id="ac950-p107">The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="be4e9-174">HTTP</span><span class="sxs-lookup"><span data-stu-id="be4e9-174">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ac950-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="ac950-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time"
@@ -201,28 +201,28 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName,signInActivity
 ```
-# <a name="c"></a>[<span data-ttu-id="be4e9-175">C#</span><span class="sxs-lookup"><span data-stu-id="be4e9-175">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ac950-174">C#</span><span class="sxs-lookup"><span data-stu-id="ac950-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="be4e9-176">JavaScript</span><span class="sxs-lookup"><span data-stu-id="be4e9-176">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ac950-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac950-175">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="be4e9-177">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be4e9-177">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ac950-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ac950-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="be4e9-178">Java</span><span class="sxs-lookup"><span data-stu-id="be4e9-178">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ac950-177">Java</span><span class="sxs-lookup"><span data-stu-id="ac950-177">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="be4e9-179">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-179">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-178">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-178">Response</span></span>
 
-<span data-ttu-id="be4e9-180">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-180">The following is an example of the response.</span></span> 
-> <span data-ttu-id="be4e9-181">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-181">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-179">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-179">The following is an example of the response.</span></span> 
+> <span data-ttu-id="ac950-180">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-180">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -257,13 +257,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name"></a><span data-ttu-id="be4e9-182">Пример 4. Список времени последнего входа пользователей с определенным отображаемым именем</span><span class="sxs-lookup"><span data-stu-id="be4e9-182">Example 4: List the last sign-in time of users with a specific display name</span></span>
+### <a name="example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name"></a><span data-ttu-id="ac950-181">Пример 4. Список времени последнего входа пользователей с определенным отображаемым именем</span><span class="sxs-lookup"><span data-stu-id="ac950-181">Example 4: List the last sign-in time of users with a specific display name</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-183">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-183">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-182">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-182">Request</span></span>
 
-<span data-ttu-id="be4e9-p108">Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All.</span><span class="sxs-lookup"><span data-stu-id="be4e9-p108">The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.</span></span>
+<span data-ttu-id="ac950-p108">Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All.</span><span class="sxs-lookup"><span data-stu-id="ac950-p108">The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="be4e9-186">HTTP</span><span class="sxs-lookup"><span data-stu-id="be4e9-186">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ac950-185">HTTP</span><span class="sxs-lookup"><span data-stu-id="ac950-185">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time_filter"
@@ -271,29 +271,29 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
 ```
-# <a name="c"></a>[<span data-ttu-id="be4e9-187">C#</span><span class="sxs-lookup"><span data-stu-id="be4e9-187">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ac950-186">C#</span><span class="sxs-lookup"><span data-stu-id="ac950-186">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="be4e9-188">JavaScript</span><span class="sxs-lookup"><span data-stu-id="be4e9-188">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ac950-187">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac950-187">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-filter-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="be4e9-189">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be4e9-189">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ac950-188">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ac950-188">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-filter-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="be4e9-190">Java</span><span class="sxs-lookup"><span data-stu-id="be4e9-190">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ac950-189">Java</span><span class="sxs-lookup"><span data-stu-id="ac950-189">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-filter-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="be4e9-191">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-191">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-190">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-190">Response</span></span>
 
-<span data-ttu-id="be4e9-192">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-192">The following is an example of the response.</span></span> 
-> <span data-ttu-id="be4e9-193">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-193">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-191">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-191">The following is an example of the response.</span></span> 
+> <span data-ttu-id="ac950-192">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-192">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -319,11 +319,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-list-the-last-sign-in-time-of-users-in-a-specific-time-range"></a><span data-ttu-id="be4e9-194">Пример 5: перечисление времени последнего входа пользователей в определенный временной диапазон</span><span class="sxs-lookup"><span data-stu-id="be4e9-194">Example 5: List the last sign-in time of users in a specific time range</span></span>
+### <a name="example-5-list-the-last-sign-in-time-of-users-in-a-specific-time-range"></a><span data-ttu-id="ac950-193">Пример 5: перечисление времени последнего входа пользователей в определенный временной диапазон</span><span class="sxs-lookup"><span data-stu-id="ac950-193">Example 5: List the last sign-in time of users in a specific time range</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-195">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-195">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-194">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-194">Request</span></span>
 
-<span data-ttu-id="be4e9-p109">Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All.</span><span class="sxs-lookup"><span data-stu-id="be4e9-p109">The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.</span></span>
+<span data-ttu-id="ac950-p109">Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All.</span><span class="sxs-lookup"><span data-stu-id="ac950-p109">The following is an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -333,10 +333,10 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
 ```
 
-#### <a name="response"></a><span data-ttu-id="be4e9-198">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-198">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-197">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-197">Response</span></span>
 
-<span data-ttu-id="be4e9-199">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-199">The following is an example of the response.</span></span> 
-> <span data-ttu-id="be4e9-200">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-200">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-198">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-198">The following is an example of the response.</span></span> 
+> <span data-ttu-id="ac950-199">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-199">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -371,11 +371,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-get-only-a-count-of-users"></a><span data-ttu-id="be4e9-201">Пример 6. Получение только количества пользователей</span><span class="sxs-lookup"><span data-stu-id="be4e9-201">Example 6: Get only a count of users</span></span>
+### <a name="example-6-get-only-a-count-of-users"></a><span data-ttu-id="ac950-200">Пример 6. Получение только количества пользователей</span><span class="sxs-lookup"><span data-stu-id="ac950-200">Example 6: Get only a count of users</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-202">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-201">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-201">Request</span></span>
 
-<span data-ttu-id="be4e9-203">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-203">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-202">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-202">The following is an example of the request.</span></span> <span data-ttu-id="ac950-203">Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$count`.</span><span class="sxs-lookup"><span data-stu-id="ac950-203">This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request.</span></span> <span data-ttu-id="ac950-204">Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-204">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -386,9 +386,9 @@ GET https://graph.microsoft.com/beta/users/$count
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="be4e9-204">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-204">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-205">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-205">Response</span></span>
 
-<span data-ttu-id="be4e9-205">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-205">The following is an example of the response.</span></span>
+<span data-ttu-id="ac950-206">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-206">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -403,11 +403,11 @@ Content-type: text/plain
 893
 ```
 
-### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="be4e9-206">Пример 7. Использование параметров $filter и $top для получения одного пользователя с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="be4e9-206">Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="ac950-207">Пример 7. Использование параметров $filter и $top для получения одного пользователя с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="ac950-207">Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-207">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-207">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-208">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-208">Request</span></span>
 
-<span data-ttu-id="be4e9-208">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-208">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-209">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-209">The following is an example of the request.</span></span> <span data-ttu-id="ac950-210">Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual` и строка запроса `$count=true`, так как запрос содержит параметры запроса `$orderBy` и `$filter`.</span><span class="sxs-lookup"><span data-stu-id="ac950-210">This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters.</span></span> <span data-ttu-id="ac950-211">Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-211">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -418,10 +418,10 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="be4e9-209">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-209">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-212">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-212">Response</span></span>
 
-<span data-ttu-id="be4e9-210">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-210">The following is an example of the response.</span></span>
-><span data-ttu-id="be4e9-211">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-211">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-213">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-213">The following is an example of the response.</span></span>
+><span data-ttu-id="ac950-214">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-214">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -449,14 +449,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8-use-filter-to-get-all-users-with-a-mail-that-ends-with-acontosocom-including-a-count-of-returned-objects-with-the-results-ordered-by-userprincipalname"></a><span data-ttu-id="be4e9-212">Пример 8. Использование параметра $filter для предоставления всем пользователям почты, которая заканчивается на "a@contoso.com", и в том числе количество возвращаемых объектов с результатами, отсортированными по userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="be4e9-212">Example 8: Use $filter to get all users with a mail that ends with 'a@contoso.com', including a count of returned objects, with the results ordered by userPrincipalName</span></span>
+### <a name="example-8-use-filter-to-get-all-users-with-a-mail-that-ends-with-acontosocom-including-a-count-of-returned-objects-with-the-results-ordered-by-userprincipalname"></a><span data-ttu-id="ac950-215">Пример 8. Использование параметра $filter для предоставления всем пользователям почты, которая заканчивается на "a@contoso.com", и в том числе количество возвращаемых объектов с результатами, отсортированными по userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="ac950-215">Example 8: Use $filter to get all users with a mail that ends with 'a@contoso.com', including a count of returned objects, with the results ordered by userPrincipalName</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-213">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-213">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-216">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-216">Request</span></span>
 
-<span data-ttu-id="be4e9-214">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-214">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-217">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-217">The following is an example of the request.</span></span> <span data-ttu-id="ac950-218">Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual` и строка запроса `$count=true`, так как запрос содержит параметры запроса `$orderBy` и `$filter`, а также использует оператор `endsWith`.</span><span class="sxs-lookup"><span data-stu-id="ac950-218">This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters, and also uses the `endsWith` operator.</span></span> <span data-ttu-id="ac950-219">Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-219">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="be4e9-215">HTTP</span><span class="sxs-lookup"><span data-stu-id="be4e9-215">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ac950-220">HTTP</span><span class="sxs-lookup"><span data-stu-id="ac950-220">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_a_count_endsWith"
@@ -465,30 +465,30 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/users?$filter=endswith(mail,'a@contoso.com')&$orderby=userPrincipalName&$count=true
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="be4e9-216">C#</span><span class="sxs-lookup"><span data-stu-id="be4e9-216">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ac950-221">C#</span><span class="sxs-lookup"><span data-stu-id="ac950-221">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-endswith-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="be4e9-217">JavaScript</span><span class="sxs-lookup"><span data-stu-id="be4e9-217">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ac950-222">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac950-222">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-endswith-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="be4e9-218">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be4e9-218">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ac950-223">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ac950-223">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-endswith-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="be4e9-219">Java</span><span class="sxs-lookup"><span data-stu-id="be4e9-219">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ac950-224">Java</span><span class="sxs-lookup"><span data-stu-id="ac950-224">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-endswith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="be4e9-220">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-220">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-225">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-225">Response</span></span>
 
-<span data-ttu-id="be4e9-221">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-221">The following is an example of the response.</span></span>
+<span data-ttu-id="ac950-226">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-226">The following is an example of the response.</span></span>
 
-><span data-ttu-id="be4e9-222">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-222">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="ac950-227">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-227">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -516,11 +516,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="be4e9-223">Пример 9. Использование параметра $search для получения пользователей с отображаемыми именами, содержащими буквы "wa", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="be4e9-223">Example 9: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects</span></span>
+### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="ac950-228">Пример 9. Использование параметра $search для получения пользователей с отображаемыми именами, содержащими буквы "wa", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="ac950-228">Example 9: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-224">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-224">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-229">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-229">Request</span></span>
 
-<span data-ttu-id="be4e9-225">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-225">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-230">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-230">The following is an example of the request.</span></span> <span data-ttu-id="ac950-231">Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$search`.</span><span class="sxs-lookup"><span data-stu-id="ac950-231">This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request.</span></span> <span data-ttu-id="ac950-232">Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-232">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -531,10 +531,10 @@ GET https://graph.microsoft.com/beta/users?$search="displayName:wa"&$orderby=dis
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="be4e9-226">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-226">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-233">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-233">Response</span></span>
 
-<span data-ttu-id="be4e9-227">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-227">The following is an example of the response.</span></span>
-><span data-ttu-id="be4e9-228">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-228">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-234">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-234">The following is an example of the response.</span></span>
+><span data-ttu-id="ac950-235">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-235">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -562,11 +562,11 @@ Content-type: application/json
 
 ```
 
-### <a name="example-10-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a><span data-ttu-id="be4e9-229">Пример 10. Использование параметра $search для получения пользователей с отображаемыми именами, содержащими буквы "wa" или буквы "to", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="be4e9-229">Example 10: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects</span></span>
+### <a name="example-10-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a><span data-ttu-id="ac950-236">Пример 10. Использование параметра $search для получения пользователей с отображаемыми именами, содержащими буквы "wa" или буквы "to", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="ac950-236">Example 10: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-230">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-230">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-237">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-237">Request</span></span>
 
-<span data-ttu-id="be4e9-231">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-231">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-238">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-238">The following is an example of the request.</span></span> <span data-ttu-id="ac950-239">Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$search`.</span><span class="sxs-lookup"><span data-stu-id="ac950-239">This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request.</span></span> <span data-ttu-id="ac950-240">Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-240">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -577,10 +577,10 @@ GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayN
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="be4e9-232">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-232">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-241">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-241">Response</span></span>
 
-<span data-ttu-id="be4e9-233">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-233">The following is an example of the response.</span></span> 
-> <span data-ttu-id="be4e9-234">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be4e9-234">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="ac950-242">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-242">The following is an example of the response.</span></span> 
+> <span data-ttu-id="ac950-243">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ac950-243">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -615,11 +615,11 @@ Content-type: application/json
 ```
 
 
-### <a name="example-11-use-filter-to-get-users-who-are-assigned-a-specific-license"></a><span data-ttu-id="be4e9-235">Пример 11. Использование $filter для получения пользователей, которым назначена определенная лицензия</span><span class="sxs-lookup"><span data-stu-id="be4e9-235">Example 11: Use $filter to get users who are assigned a specific license</span></span>
+### <a name="example-11-use-filter-to-get-users-who-are-assigned-a-specific-license"></a><span data-ttu-id="ac950-244">Пример 11. Использование $filter для получения пользователей, которым назначена определенная лицензия</span><span class="sxs-lookup"><span data-stu-id="ac950-244">Example 11: Use $filter to get users who are assigned a specific license</span></span>
 
-#### <a name="request"></a><span data-ttu-id="be4e9-236">Запрос</span><span class="sxs-lookup"><span data-stu-id="be4e9-236">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ac950-245">Запрос</span><span class="sxs-lookup"><span data-stu-id="ac950-245">Request</span></span>
 
-<span data-ttu-id="be4e9-237">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be4e9-237">The following is an example of the request.</span></span>
+<span data-ttu-id="ac950-246">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ac950-246">The following is an example of the request.</span></span> <span data-ttu-id="ac950-247">Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$search`.</span><span class="sxs-lookup"><span data-stu-id="ac950-247">This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request.</span></span> <span data-ttu-id="ac950-248">Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).</span><span class="sxs-lookup"><span data-stu-id="ac950-248">For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -629,9 +629,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$filter=assignedLicenses/any(u:u/skuId eq cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)
 ```
 
-#### <a name="response"></a><span data-ttu-id="be4e9-238">Отклик</span><span class="sxs-lookup"><span data-stu-id="be4e9-238">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ac950-249">Отклик</span><span class="sxs-lookup"><span data-stu-id="ac950-249">Response</span></span>
 
-<span data-ttu-id="be4e9-239">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="be4e9-239">The following is an example of the response.</span></span>
+<span data-ttu-id="ac950-250">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ac950-250">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
