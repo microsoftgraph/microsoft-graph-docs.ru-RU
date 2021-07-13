@@ -1,19 +1,19 @@
 ---
-title: Используйте API поиска Майкрософт в Microsoft Graph для поиска файлов
-description: API поиска Майкрософт можно использовать для поиска файлов, хранимых в OneDrive или SharePoint.
+title: Используйте API Поиск (Майкрософт) в Microsoft Graph для поиска файлов
+description: API Поиск (Майкрософт) для поиска файлов, хранимых в OneDrive или SharePoint.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: dc9d27255ca5306abf85462ca8e5715fe2345dac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93dca7b4c431140646ee22ae6772448e0554e35a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048654"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401339"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Используйте API поиска Майкрософт для поиска контента в OneDrive и SharePoint
+# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Используйте API Поиск (Майкрософт) для поиска контента в OneDrive и SharePoint
 
-Используйте API поиска Майкрософт для поиска контента, OneDrive или SharePoint: файлов, папок, списков, элементов списка или сайтов.
+Используйте API Поиск (Майкрософт) для поиска контента, OneDrive или SharePoint: файлов, папок, списков, элементов списка или сайтов.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
@@ -349,7 +349,7 @@ Content-type: application/json
 
 ## <a name="example-5-use-filters-in-search-queries"></a>Пример 5. Использование фильтров в поисковых запросах
 
-Вы можете использовать KQL в условиях поиска запросов для OneDrive и SharePoint. Например:
+Вы можете использовать KQL в условиях поиска запросов для OneDrive и SharePoint. Пример:
 
 - `"query": "contoso filetype:docx OR filetype:doc"` областью запроса к документам Word.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` область запроса в определенную папку на сайте.
@@ -363,7 +363,7 @@ Content-type: application/json
 
 В ответе можно указать нужные поля в  качестве части поля под свойства [объекта searchHit](/graph/api/resources/searchhit) в ответе. Это способ либо обрезать ответ по проводу, либо запрашивать некоторые конкретные свойства, которые не являются частью схемы из окна.
 
-Обратите внимание, что выбор свойств доступен только **для listItem,** так как это единственное SharePoint в Microsoft Graph, которое поддерживает настраиваемые свойства.
+Обратите внимание, что выбор свойств для настраиваемого свойства в SharePoint доступен только **для listItem,** так как это единственное SharePoint в Microsoft Graph, которое поддерживает настраиваемые свойства.
 
 Для получения настраиваемой свойства **для driveItem** вместо этого запрашивайте **listItem.**
 

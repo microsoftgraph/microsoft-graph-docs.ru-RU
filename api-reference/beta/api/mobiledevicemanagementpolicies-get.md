@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3e09179fa6ebbbbe2c168b575883192ee9ba4f93
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 56ea4fecea156469ff66d9fd1dff120c5cf3150a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547455"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401635"
 ---
 # <a name="get-mobiledevicemanagementpolicy"></a>Get mobileDeviceManagementPolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "52547455"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 |Для приложений | Не поддерживается.|
 

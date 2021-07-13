@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d69156b2614b17037a6eba473d00e7d333868d6c
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 26cbec0d2fe976045a320a80fe3a69a53fbc74f6
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351071"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401668"
 ---
 # <a name="list-includedgroups"></a>Список включенGroups
 
@@ -26,7 +26,7 @@ ms.locfileid: "53351071"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 |Для приложений | Не поддерживается.|
 
@@ -51,7 +51,7 @@ GET /policies/mobileAppManagementPolicies/{id}/includedGroups
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию групповых `200 OK` объектов в тексте ответа. [](../resources/group.md)
 

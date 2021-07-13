@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса synchronizationSecretKeyStringValuePair
-description: Представляет одно значение секрета.
+title: синхронизацияSecretKeyStringValuePair типа ресурса
+description: Представляет одно секретное значение.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: da408988c61ffa8d608fe7f36b5925107731d714
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: f954427ad24a9fea6570dbb38c3de177b3498e92
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129375"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401602"
 ---
-# <a name="synchronizationsecretkeystringvaluepair-resource-type"></a>Тип ресурса synchronizationSecretKeyStringValuePair
+# <a name="synchronizationsecretkeystringvaluepair-resource-type"></a>синхронизацияSecretKeyStringValuePair типа ресурса
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет одно значение секрета. 
+Представляет одно секретное значение. 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|Строка| Возможные значения: `None` , `UserName` , `Password` , `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `ClientSecret` `SingleSignOnType` `Sandbox` `Url` `Domain` `ConsumerKey` `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `Oauth2RefreshToken` `SyncAll` `InstanceName` `Oauth2ClientId` `Oauth2ClientSecret` `CompanyId` `UpdateKeyOnSoftDelete` `SynchronizationSchedule` `SystemOfRecord` `SandboxName` `EnforceDomain` `SyncNotificationSettings` `Server` `PerformInboundEntitlementGrants` `HardDeletesEnabled` `SyncAgentCompatibilityKey` `SyncAgentADContainer` `ValidateDomain` `TestReferences` .|
+|key|синхронизацияSecret| Возможные значения: , . `None` `UserName` `Password` `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `ClientSecret` `SingleSignOnType` `Sandbox` `Url` `Domain` `ConsumerKey` `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `Oauth2RefreshToken` `SyncAll` `InstanceName` `Oauth2ClientId` `Oauth2ClientSecret` `CompanyId` `UpdateKeyOnSoftDelete` `SynchronizationSchedule` `SystemOfRecord` `SandboxName` `EnforceDomain` `SyncNotificationSettings` `Server` `PerformInboundEntitlementGrants` `HardDeletesEnabled` `SyncAgentCompatibilityKey` `SyncAgentADContainer` `ValidateDomain` `Oauth2TokenExchangeUri` `Oauth2AuthorizationUri` `AuthenticationType` `TestReferences` `ConnectionString`|
 |value|String|Значение секрета.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

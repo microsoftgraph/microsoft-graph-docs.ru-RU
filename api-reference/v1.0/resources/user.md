@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9ca110bcbf0fceb3cf068557b155fb844f3682c4
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 0e5c2750b71cea6e6810ef1f5573591fdd81039c
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351302"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401325"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -57,7 +57,7 @@ ms.locfileid: "53351302"
 | [Список объектов contactFolder](../api/user-list-contactfolders.md)                                  | Коллекция [contactFolder](contactfolder.md)                                     | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.                                                                                                                                             |
 | **Объекты каталога**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция строк                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                                                                  |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция String                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | Коллекция String                                                                | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна.                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | Нет                                                                             | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации.                                                                                                                   |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | Коллекция String                                                                | Возвращает объекты каталогов, указанные в списке идентификаторов.                                                                                                                                                                           |
@@ -131,6 +131,9 @@ ms.locfileid: "53351302"
 
 
 ## <a name="properties"></a>Свойства
+
+> [!IMPORTANT]
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|

@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 732d6487bc73cf9cdf0f70168d00d4b0e13ce45e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 061252bb8006cbb3ce195ea656c7dbc50334f66a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208836"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401311"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph
 
@@ -40,6 +40,7 @@ API Поиска (Майкрософт) поддерживает поиск сл
 
 - Объекты [сообщений](/graph/api/resources/message) электронной почты и [события](/graph/api/resources/event) календаря Outlook
 - Файлы и папки в SharePoint и OneDrive ([driveItem](/graph/api/resources/driveitem)), [списки](/graph/api/resources/list), [listItem](/graph/api/resources/listitem) [сайты](/graph/api/resources/site) и [диски.](/graph/api/resources/drive)
+- [Пользователи](/graph/api/resources/person) в организации, наиболее релевантные для пользователя
 - Содержимое, отправляемое через платформу Graph Connectors: [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) (предварительная версия)
 
 ## <a name="api-reference"></a>Справочные материалы по API
@@ -60,10 +61,12 @@ API Поиска (Майкрософт) поддерживает поиск сл
   - [Поиск событий календаря](search-concept-events.md)
   - [Поиск содержимого в OneDrive и SharePoint](search-concept-files.md)
   - [Поиск внешнего контента](search-concept-custom-types.md) (предварительная версия)
+  - [Поиск человека](search-concept-person.md) (предварительная версия)
   - [Сортировка результатов поиска](search-concept-sort.md) (предварительная версия)
   - [Уточнение результатов поиска](search-concept-aggregation.md) (предварительная версия)
   - [Исправление орфографии в запросе](search-concept-speller.md) (предварительная версия)
   - [Макет отображения при поиске](search-concept-display-layout.md) (предварительная версия)
+ 
   
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) в GitHub.

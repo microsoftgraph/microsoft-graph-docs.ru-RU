@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffaedc45cc512b554fda3ce4dd06794fba716b16
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 484ceb349acd3c431e02c08fa82e7bfce1bec41a
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439811"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400973"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Создание accessPackageResourceRoleScope
 
@@ -18,7 +18,7 @@ ms.locfileid: "50439811"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте [новый accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) для добавления роли ресурса в пакет доступа.  Ресурс пакета доступа уже должен существовать в каталоге пакетов доступа.  Все последующие запросы на назначение пакета доступа к этому пакету доступа будут включать эту роль ресурса.  
+Создайте [новый accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) для добавления роли ресурса в пакет доступа. Ресурс пакета доступа для группы, приложения или сайта SharePoint Online уже должен существовать в каталоге пакетов доступа и **originId** для роли ресурса, извлеченной из списка ролей [ресурса.](accesspackagecatalog-list-accesspackageresourceroles.md) После добавления области роли ресурсов в пакет доступа пользователь получит эту роль ресурса с помощью любых назначений пакета текущих и будущих пакетов доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса устройте представление JSON объекта [accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Включив в объект связи с [accessPackageResourceRole](../resources/accesspackageresourcerole.md) и [accessPackageResourceScope.](../resources/accesspackageresourcescope.md)  
+В теле запроса устройте представление JSON объекта [accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Включив в объект связи с [accessPackageResourceRole](../resources/accesspackageresourcerole.md) и [accessPackageResourceScope.](../resources/accesspackageresourcescope.md)
 
 ## <a name="response"></a>Отклик
 
@@ -55,9 +55,11 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-add-group-membership-as-a-resource-role-to-an-access-package"></a>Пример 1. Добавление членства в группе в качестве роли ресурса в пакет доступа
 
-Ниже приведен пример запроса.
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.  Ресурс пакета доступа для группы уже должен быть добавлен в каталог пакетов доступа, содержащий этот пакет доступа.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -100,9 +102,9 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -126,6 +128,58 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-add-a-sharepoint-online-site-role-to-an-access-package"></a>Пример 2. Добавление роли SharePoint веб-сайта в пакет доступа
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.  Ресурс пакета доступа для сайта уже должен быть добавлен в каталог пакетов доступа, содержащий этот пакет доступа.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage2"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+    "accessPackageResourceRole": {
+        "originId": "4",
+        "originSystem": "SharePointOnline",
+        "accessPackageResource": {
+            "id": "53c71803-a0a8-4777-aecc-075de8ee3991"
+        }
+    },
+    "accessPackageResourceScope": {
+        "id": "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
+        "originId": "https://microsoft.sharepoint.com/portals/Community",
+        "originSystem": "SharePointOnline"
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+   "id": "6646a29e-da03-49f6-bcd9-dec124492de3_5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33"
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -135,5 +189,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

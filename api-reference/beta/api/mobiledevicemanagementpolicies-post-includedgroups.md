@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 70edcaff04cba6e49f5ff992899d140b8c75c6c9
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: cce0d4d98ca36506297780f424f371ca31b3e5d0
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547428"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401430"
 ---
 # <a name="add-includedgroups"></a>Добавление includedGroups
 
@@ -26,7 +26,7 @@ ms.locfileid: "52547428"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 |Для приложений | Не поддерживается.|
 

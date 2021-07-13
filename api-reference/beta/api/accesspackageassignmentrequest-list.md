@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c53f900db5f53d3e4cff2d0de17c808b9f80d3a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 193e257656abbcc13ea54099cd8d09897ffdb340
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048612"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401015"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>Список accessPackageAssignmentRequests
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить пакет доступа каждого запроса, включайте `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включайте в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .  Чтобы получить результат назначения, включайте `$expand=accessPackageAssignment` запрос.
+Этот метод поддерживает параметры `$expand` `$filter` запроса oData и OData для настройки ответа. Например, чтобы получить пакет доступа каждого запроса, включайте `$expand=accessPackage` в запрос.  Чтобы получить только запросы для определенного пакета доступа, включайте в запрос фильтр, например `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` .  Чтобы получить результат назначения, включайте `$expand=accessPackageAssignment` запрос.  Дополнительные сведения о запрашиваемом запросе `$expand=requestor` включайте в запрос.
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -131,5 +131,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

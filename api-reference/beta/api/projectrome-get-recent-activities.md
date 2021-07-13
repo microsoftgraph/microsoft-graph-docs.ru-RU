@@ -1,24 +1,24 @@
 ---
-title: Получение последних действий пользователя
-description: " Функцию. Служба будет запрашивать последние Historyitem, а затем извлекать эти связанные действия. Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**. Это означает, что действия без **historyitem** не будут включены в ответ. Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы."
+title: Получать последние действия пользователя
+description: " API. Служба запрашивает последние historyItems и затем вытягивает связанные действия. Действия будут сортироваться в соответствии с последним **lastModified** на **historyItem**. Это означает, что действия без **historyItems** не будут включены в ответ. Разрешение UserActivity.ReadWrite.CreatedByApp также применяет дополнительную фильтрацию к ответу, чтобы возвращались только действия, созданные вашим приложением. Это фильтрация на стороне сервера может привести к пустым страницам, если пользователь особенно активен, а другие приложения создали более последние действия. Чтобы получить действия приложения, используйте свойство **nextLink** для пагинации."
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 146b4d83b6fda3dc56744e1b60daf15811ed3747
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 27361d56e62e1ea255c2a0e9e3b6d3e0b45ee44e
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314974"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401507"
 ---
-# <a name="get-recent-user-activities"></a>Получение последних действий пользователя
+# <a name="get-recent-user-activities"></a>Получать последние действия пользователя
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение последних действий для определенного пользователя. Эта функция OData имеет некоторые варианты поведения по умолчанию, которые могут работать так же, как и "самый последний использованный" API. Служба будет запрашивать последние [historyitem](../resources/projectrome-historyitem.md), а затем извлекать эти связанные действия. Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**. Это означает, что действия без **historyitem** не будут включены в ответ. Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.
+Получите последние действия для данного пользователя. Эта функция OData имеет некоторые действия по умолчанию, включаемые, чтобы заставить ее работать как API "последнего времени". Служба запрашивает последние [historyItems,](../resources/projectrome-historyitem.md)а затем вытягивает связанные действия. Действия будут сортироваться в соответствии с последним **lastModified** на **historyItem**. Это означает, что действия без **historyItems** не будут включены в ответ. Разрешение UserActivity.ReadWrite.CreatedByApp также применяет дополнительную фильтрацию к ответу, чтобы возвращались только действия, созданные вашим приложением. Это фильтрация на стороне сервера может привести к пустым страницам, если пользователь особенно активен, а другие приложения создали более последние действия. Чтобы получить действия приложения, используйте свойство **nextLink** для пагинации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,15 +40,15 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые [Параметры запроса OData](/graph/query-parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
+Этот метод поддерживает некоторые [параметры запроса OData для](/graph/query-parameters) настройки ответа. Поддерживаются следующие параметры запроса:
 
-- $expand для свойства навигации **historyitem** .
-- $top, чтобы ограничить максимальное количество элементов на страницах.
-- $filter в свойстве **lastModifiedDateTime** для **действий** или **historyitem**, если она развернута.
+- $expand для свойства **навигации historyItems.**
+- $top ограничить максимальное количество элементов на страницах.
+- $filter в **свойстве lastModifiedDateTime** для  действий или **historyItems,** если они расширены.
 
-Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.
+Ниже приводится несколько примеров поддерживаемых запросов с кодией URL-адресов.
 
-```
+```http
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
 
 /me/activities/recent?$filter=lastModifiedDateTime%20lt%202018-01-16T01:03:21.347Z%20and%20lastModifiedDateTime%20gt%202018-01-03T01:03:21.347Z
@@ -64,15 +64,15 @@ GET /me/activities/recent
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте текст запроса.
+Не укажите тело запроса.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика с последними действиями пользователя для вашего приложения.
+В случае успешной работы этот метод возвращает код ответа с последними действиями пользователя `200 OK` для приложения.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -85,7 +85,7 @@ GET /me/activities/recent
 GET https://graph.microsoft.com/beta/me/activities/recent
 ```
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -100,48 +100,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
-    "value": [{
-        "@odata.type": "#microsoft.graph.activity",
-        "activitySourceHost": "https://www.contoso.com",
-        "createdDateTime": "2018-02-26T18:34:29.592Z",
-        "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
-        "id": "5347642601316252694",
-        "appActivityId": "/article?12345",
-        "visualElements": {
-            "attribution": {
-              "iconUrl": "https://www.contoso.com/icon",
-              "alternateText": "Contoso, Ltd.",
-              "addImageQuery": "false",
-              },
-            "displayText": "Contoso How-To: How to Tie a Reef Knot",
-            "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
-            "backgroundColor": "#ff0000",
-            "content": {
-              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
-              "type": "AdaptiveCard",
-              "body":
-              [{
-                  "type": "TextBlock",
-                  "text": "Contoso MainPage"
-              }]
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
+   "@odata.nextLink":"https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.activity",
+         "activitySourceHost":"https://www.contoso.com",
+         "createdDateTime":"2018-02-26T18:34:29.592Z",
+         "lastModifiedDateTime":"2018-02-26T18:34:29.607Z",
+         "id":"5347642601316252694",
+         "appActivityId":"/article?12345",
+         "visualElements":{
+            "attribution":{
+               "iconUrl":"https://www.contoso.com/icon",
+               "alternateText":"Contoso, Ltd.",
+               "addImageQuery":"false"
+            },
+            "displayText":"Contoso How-To: How to Tie a Reef Knot",
+            "description":"How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
+            "backgroundColor":"#ff0000",
+            "content":{
+               "$schema":"https://adaptivecards.io/schemas/adaptive-card.json",
+               "type":"AdaptiveCard",
+               "body":[
+                  {
+                     "type":"TextBlock",
+                     "text":"Contoso MainPage"
+                  }
+               ]
             }
-        },
-        "activationUrl": "https://www.contoso.com/article?id=12345",
-        "appDisplayName": "Contoso, Ltd.",
-        "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "https://www.contoso.com/article?id=12345",
-        "contentUrl": "https://www.contoso.com/article?id=12345",
-        "contentInfo": {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "author": "John Doe",
-            "name": "How to Tie a Reef Knot"
-        },
-        "expirationDateTime": "2018-03-28T18:34:29.607Z",
-        "status": "updated"
-    }]
+         },
+         "activationUrl":"https://www.contoso.com/article?id=12345",
+         "appDisplayName":"Contoso, Ltd.",
+         "userTimezone":"Africa/Casablanca",
+         "fallbackUrl":"https://www.contoso.com/article?id=12345",
+         "contentUrl":"https://www.contoso.com/article?id=12345",
+         "contentInfo":{
+            "@context":"https://schema.org",
+            "@type":"Article",
+            "author":"John Doe",
+            "name":"How to Tie a Reef Knot"
+         },
+         "expirationDateTime":"2018-03-28T18:34:29.607Z",
+         "status":"updated"
+      }
+   ]
 }
 ```
 

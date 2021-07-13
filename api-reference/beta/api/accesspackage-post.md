@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6f6a80316bbdf12792bb47078be7f4e3ca9b48c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ccbe9c22f04087431ba0b4ae4df53eca1ff76a04
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048647"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400959"
 ---
 # <a name="create-accesspackage"></a>Создание accessPackage
 
@@ -19,6 +19,9 @@ ms.locfileid: "52048647"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте новый [объект accessPackage.](../resources/accesspackage.md)
+
+Пакет доступа будет добавлен в существующий [accessPackageCatalog.](../resources/accesspackagecatalog.md) После создания пакета доступа можно создать [accessPackageAssignmentPolicies,](../resources/accesspackageassignmentpolicy.md) в которых указывается, как пользователи назначены пакету доступа.
+
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,11 +46,11 @@ POST /identityGovernance/entitlementManagement/accessPackages
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Носитель \{токен\}. Обязательный. |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем JSON-представление [объекта accessPackage.](../resources/accesspackage.md)
+В теле запроса поставляем представление JSON объекта [accessPackage.](../resources/accesspackage.md)
 
 ## <a name="response"></a>Отклик
 

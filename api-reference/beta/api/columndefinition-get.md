@@ -5,12 +5,12 @@ description: " Получите столбец типа сайта, списка
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 3a2e1421c92b1634ea57cbedb74c2e3244d85924
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f2e9bbca28dd0096401a2c59b92d5a26e35ee75e
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952330"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401402"
 ---
 # <a name="get-columndefinition"></a>Получить columnDefinition
 Пространство имен: microsoft.graph
@@ -32,7 +32,7 @@ ms.locfileid: "50952330"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Приложение | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 
   
 
@@ -101,7 +101,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
   
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
   
 

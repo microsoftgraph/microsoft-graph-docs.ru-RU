@@ -1,16 +1,16 @@
 ---
 title: Удаление действия
-description: Удаление существующего действия пользователя для вашего приложения.
+description: Удаление существующей активности пользователя для приложения.
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: e6a8b4d70c6066b46be28af98b2ee94a943ab766
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d30fda3d79a7afe6f370a735f6ed6e331fba714b
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968971"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401535"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
@@ -18,7 +18,7 @@ ms.locfileid: "48968971"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление существующего действия пользователя для вашего приложения.
+Удаление существующей активности пользователя для приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,15 +47,15 @@ DELETE /me/activities/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-Текст запроса отсутствует.
+Нет тела запроса.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если действие было удалено.
+В случае успешной работы этот метод возвращает код ответа, если `204 No Content` действие удалено.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -88,9 +88,9 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

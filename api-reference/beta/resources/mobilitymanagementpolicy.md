@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7f0c073d0737c634872009fffa5425ffe74f4e54
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 6c2035d96293a28f4d8289606df709fc64d9c3e7
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547513"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401545"
 ---
 # <a name="mobilitymanagementpolicy-resource-type"></a>тип ресурса mobilityManagementPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "52547513"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В Azure AD политика управления мобильностью представляет конфигурацию автоматической регистрации для приложения управления мобильностью (MDM или MAM). Эти политики применимы только к устройствам на основе Windows 10 оси и ее производных (Surface Hub, Hololens и т.д.). [Автоматическая регистрация позволяет](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) организациям автоматически регистрировать устройства в выбранное приложение управления мобильностью в рамках процесса регистрации [Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) или [Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) на Windows 10 устройствах.
+В Azure AD политика управления мобильностью представляет конфигурацию автоматической регистрации для приложения управления мобильностью (MDM или MAM). Эти политики применимы только к устройствам на основе Windows 10 оси и ее производных (Surface Hub, Hololens и т.д.). [Автоматическая регистрация позволяет](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) организациям автоматически регистрировать устройства в выбранное приложение управления мобильностью в рамках процесса регистрации [Azure AD](/azure/active-directory/devices/concept-azure-ad-join) или [Azure AD](/azure/active-directory/devices/concept-azure-ad-register) на Windows 10 устройствах.
 
 ## <a name="methods"></a>Методы
 
@@ -47,6 +47,7 @@ ms.locfileid: "52547513"
 |discoveryUrl|String|Обнаружение URL-адреса приложения для управления мобильностью.|
 |displayName|String|Отображение имени приложения управления мобильностью.|
 |id|String|Объект Id приложения управления мобильностью.|
+|isValid|Boolean|Допустима ли политика. Недействительные политики могут не обновляться и должны быть удалены.|
 |termsOfUseUrl|String|Условия использования URL-адреса приложения для управления мобильностью.|
 
 ## <a name="relationships"></a>Связи
@@ -74,6 +75,7 @@ ms.locfileid: "52547513"
   "description": "String",
   "discoveryUrl": "String",
   "displayName": "String",
+  "isValid": "Boolean",
   "termsOfUseUrl": "String"
 }
 ```

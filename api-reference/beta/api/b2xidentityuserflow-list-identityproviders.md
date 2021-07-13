@@ -1,22 +1,23 @@
 ---
-title: Список всех identityProviders в b2xIdentityUserFlow
-description: Список всех identityProviders в b2xIdentityUserFlow.
+title: Список всех identityProviders в b2xIdentityUserFlow (обесценив)
+description: Список всех identityProviders в b2xIdentityUserFlow (обесценив).
 localization_priority: Normal
 doc_type: apiPageType
-author: jkdouglas
+author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 283a294bcaf54eb1f41064c4cb5aa60e3e6f8b72
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 28265310a7dd0ff111babb89f218797ba194e03f
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625790"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400931"
 ---
-# <a name="list-all-identityproviders-in-a-b2xidentityuserflow"></a>Список всех identityProviders в b2xIdentityUserFlow
+# <a name="list-all-identityproviders-in-a-b2xidentityuserflow-deprecated"></a>Список всех identityProviders в b2xIdentityUserFlow (обесценив)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Получите поставщиков удостоверений в [объекте b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
 
@@ -33,7 +34,7 @@ ms.locfileid: "50625790"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,8 +64,6 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2xUserFlow_list_identityProviders"
@@ -74,24 +73,6 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2xuserflow-list-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2xuserflow-list-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-b2xuserflow-list-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflow-list-identityproviders-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
@@ -126,5 +107,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

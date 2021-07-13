@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2d288465b04986b98de7b67fa049657b8bcf0a58
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: faef8ab32caa9e065f264eed6a8ad862ef6f8dd0
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298533"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401500"
 ---
 # <a name="accesspackage-resource-type"></a>тип ресурса accessPackage
 
@@ -35,21 +35,28 @@ ms.locfileid: "52298533"
 | [Удаление accessPackage](../api/accesspackage-delete.md) |Нет | Удаление **accesspackage**. |
 | [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Извлечение списка **объектов accessPackageResourceRoleScope** для этого пакета доступа. |
 | [Создание accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Нет | Создайте новый **объект accessPackageResourceRoleScope** для этого пакета доступа. |
+| [Список несовместимыхAccessPackages](../api/accesspackage-list-incompatibleaccesspackages.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка несовместимых объектов **accesspackage** для этого пакета доступа. |
+| [Добавление accessPackage в несовместимыеAccessPackages](../api/accesspackage-post-incompatibleaccesspackage.md) | Нет | Добавьте ссылку, чтобы указать другой **пакет доступа** несовместим с указанным пакетом доступа. |
+| [Удаление accessPackage из несовместимыхAccessPackages](../api/accesspackage-delete-incompatibleaccesspackage.md) | Нет | Удалить ссылку, которая указывала на **несовместимость accesspackage.** |
+| [Несовместимые группы списка](../api/accesspackage-list-incompatiblegroups.md) | Коллекция [group](group.md) | Извлечение списка несовместимых **групповых** объектов для этого пакета доступа. |
+| [Добавление группы в несовместимые Группы](../api/accesspackage-post-incompatiblegroup.md) | Нет | Добавьте ссылку, чтобы указать, что членство **в группе** несовместимо с указанным пакетом доступа. |
+| [Удаление группы из несовместимых групп](../api/accesspackage-delete-incompatiblegroup.md) | Нет | Удалите ссылку, которая указывала, что членство **в** группе несовместимо.|
+| [Список accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка объектов  **accesspackage,** которые перечисляют этот пакет доступа как несовместимые. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[коллекция accessPackage](../resources/accesspackage.md)|Извлечение списка **объектов accessPackage,** фильтруемых на входе пользователя.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|catalogId|Строка|ID каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
+|catalogId|String|ID каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
 |createdBy|String|UPN пользователя или удостоверения субъекта, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|description|Строка|Описание пакета доступа.|
-|displayName|Строка|Отображение имени пакета доступа.|
+|description|String|Описание пакета доступа.|
+|displayName|String|Отображение имени пакета доступа.|
 |id|String| Только для чтения.|
 |isHidden|Логический|Скрыт ли пакет доступа от запросителя.|
-|isRoleScopesVisible|Логический|Указывает, видны ли области ролей.|
-|modifiedBy|Строка|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
+|isRoleScopesVisible|Boolean|Указывает, видны ли области ролей.|
+|modifiedBy|String|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
@@ -59,6 +66,10 @@ ms.locfileid: "52298533"
 |accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection| Только для чтения. Допускается значение null.|
 |accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Только для чтения. Допускается значение null.|
 |accessPackageResourceRoleScopes|[коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md)| Допускается значение null.|
+| incompatibleAccessPackages | [коллекция accessPackage](accesspackagecatalog.md) | Пакеты доступа, которым назначены пользователи, не могут быть назначены этому пакету доступа. |
+| accessPackagesIncompatibleWith | [коллекция accessPackage](accesspackagecatalog.md) | Пакеты доступа, несовместимые с этим пакетом. Только для чтения. |
+| incompatibleGroups | Коллекция [group](group.md) | Группы, члены которых не могут быть назначены этому пакету доступа. |
+
 
 ## <a name="json-representation"></a>Представление JSON
 

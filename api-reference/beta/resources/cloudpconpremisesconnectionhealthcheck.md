@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: bdc9d440b31a650f69d16a0eab0db46f5265dfb5
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 3b3c2b47dd09c12a07d3adeec74b93a985701e34
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366760"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53400882"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
@@ -71,6 +71,7 @@ ms.locfileid: "53366760"
 |permissionCheckNoSubscriptionReaderRole|У директора службы облачных ПК нет достаточных разрешений на подписку Azure. Убедитесь, что у директора облачной службы ПК есть разрешения *reader* в подписке.|
 |permissionCheckNoResourceGroupOwnerRole|Руководитель службы облачных ПК не имеет достаточных разрешений в группе ресурсов Azure. Убедитесь, что у директора службы облачных ПК *есть* разрешения владельца в группе ресурсов. |
 |permissionCheckNoVNetContributorRole|У директора службы облачных ПК нет достаточных разрешений в Azure vNet. Убедитесь, что в службе облачных ПК *есть* разрешения на вкладчик Сети в vNet.|
+|permissionCheckNoResourceGroupNetworkContributorRole|Руководитель службы облачных ПК не имеет достаточных разрешений в группе ресурсов Azure. Убедитесь, что в группе ресурсов у приложения есть разрешения на авторов сети.|
 |permissionCheckUnknownError|У директора службы облачных ПК нет достаточных разрешений. Убедитесь, что директору облачной службы ПК предоставлено достаточное количество разрешений Azure.|
 |internalServerErrorDeploymentCanceled|Развертывание было отменено. Повторите попытку позже. Если проблема сохраняется, обратитесь в службу поддержки.|
 |internalServerErrorAllocateResourceFailed|Выделение ресурсов не удалось. Повторите попытку позже. Если проблема сохраняется, обратитесь в службу поддержки.|

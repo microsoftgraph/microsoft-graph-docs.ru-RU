@@ -385,14 +385,16 @@ items:
                 href: search-concept-files.md
               - name: Соединители поиска
                 href: search-concept-custom-types.md
+              - name: Поиск человека (предварительная версия)
+                href: search-concept-person.md
               - name: Сортировка результатов поиска (предварительная версия)
                 href: search-concept-sort.md
               - name: Уточнение результатов поиска (предварительная версия)
                 href: search-concept-aggregation.md
               - name: Исправление орфографии в запросе (предварительная версия)
                 href: search-concept-speller.md
-              - name: Поиск человека (предварительная версия)
-                href: search-concept-person.md
+              - name: Макет отображения при поиске (предварительная версия)
+                href: search-concept-display-layout.md
       - name: Безопасность
         items:
           - name: Обзор

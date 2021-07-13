@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: jkdouglas
-ms.openlocfilehash: 733a3b242b6c81c7ef111ccc95e9fec151e6405d
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b84c9208ac6e1661e130f04642027e7304c7c459
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516439"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401640"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>Тип ресурса b2xIdentityUserFlow
 
@@ -26,18 +26,21 @@ ms.locfileid: "50516439"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление пользовательских потоков](../api/identitycontainer-list-b2xuserflows.md)|Коллекция b2xIdentityUserFlow|Получение всех пользовательских потоков самостоятельной регистрации.|
-|[Получение пользовательского потока](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Получение свойств пользовательского потока самостоятельной регистрации.|
-|[Создание пользовательского потока](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Создание пользовательского потока самостоятельной регистрации.|
-|[Удаление пользовательского потока](../api/b2xidentityuserflow-delete.md)|Нет|Удаление пользовательского потока самостоятельной регистрации.|
-|[Перечисление поставщиков удостоверений](../api/b2xidentityuserflow-list-identityproviders.md)|Коллекция объектов [identityProvider](../resources/identityProvider.md)|Получение всех поставщиков удостоверений в пользовательском потоке самостоятельной регистрации.|
-|[Добавление поставщика удостоверений](../api/b2xidentityuserflow-post-identityproviders.md)|Нет|Добавьте поставщика удостоверений в пользовательский поток самостоятельной регистрации.|
-|[Удаление поставщика удостоверений](../api/b2xidentityuserflow-delete-identityproviders.md)|Нет|Удаление поставщика удостоверений из пользовательского потока самостоятельной регистрации.|
-|[Назначения атрибутов пользователя в списке](../api/b2xidentityuserflow-list-userattributeassignments.md)|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Получение всех назначений атрибутов пользователя в пользовательском потоке самостоятельной регистрации.|
-|[Создание назначения атрибута пользователя](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Создание назначения атрибутов пользователя в пользовательском потоке самостоятельной регистрации.|
-|[Перечисление языков](../api/b2xidentityuserflow-list-languages.md)|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Получение всех языков в пользовательском потоке самостоятельной регистрации.|
-|[Получение конфигурации соединителей API для пользовательского потока](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Получение конфигурации для соединителей API, применяемых в пользовательском потоке самостоятельной регистрации. Параметр запроса $expand не поддерживается для этого метода.|
-|[Настройка соединителя API в пользовательском потоке](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|Нет| Настройка соединителя API для определенных шагов в пользовательском потоке самостоятельной регистрации путем обновления свойства [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md).|
+|[Перечисление пользовательских потоков](../api/identitycontainer-list-b2xuserflows.md)|Коллекция b2xIdentityUserFlow|Извлечение всех пользовательских потоков B2X.|
+|[Получение пользовательского потока](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Извлечение свойств пользовательского потока B2X.|
+|[Создание пользовательского потока](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Создание пользовательского потока B2X.|
+|[Удаление пользовательского потока](../api/b2xidentityuserflow-delete.md)|Нет|Удаление пользовательского потока B2X.|
+|[Перечисление поставщиков удостоверений](../api/b2xidentityuserflow-list-userflowidentityproviders.md)|Коллекция объектов [identityProvider](../resources/identityproviderbase.md)|Получение всех поставщиков удостоверений в пользовательском потоке B2X.|
+|[Добавление поставщика удостоверений](../api/b2xidentityuserflow-userflowidentityproviders-update.md)|Нет|Добавление поставщика удостоверений в пользовательский поток B2X.|
+|[Удаление поставщика удостоверений](../api/b2xidentityuserflow-delete-userflowidentityproviders.md)|Нет|Удаление поставщика удостоверений из пользовательского потока B2X.|
+|[Перечисление поставщиков удостоверений](../api/b2xidentityuserflow-list-identityproviders.md) (не рекомендуется)|Коллекция объектов [identityProvider](../resources/identityProvider.md)|Получение всех поставщиков удостоверений в пользовательском потоке B2X.|
+|[Добавление поставщика удостоверений](../api/b2xidentityuserflow-post-identityproviders.md) (не рекомендуется)|Нет|Добавление поставщика удостоверений в пользовательский поток B2X.|
+|[Удаление поставщика удостоверений](../api/b2xidentityuserflow-delete-identityproviders.md) (не рекомендуется)|Нет|Удаление поставщика удостоверений из пользовательского потока B2X.|
+|[Назначения атрибутов пользователя в списке](../api/b2xidentityuserflow-list-userattributeassignments.md)|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Извлечение всех назначений атрибутов пользователя в потоке пользователей B2X.|
+|[Создание назначения атрибута пользователя](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Создание назначения атрибута пользователя в потоке пользователей B2X.|
+|[Перечисление языков](../api/b2xidentityuserflow-list-languages.md)|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Получение всех языков в пользовательском потоке B2X.|
+|[Получение конфигурации соединителей API для пользовательского потока](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Получение конфигурации для соединителей API, применяемых в пользовательском потоке. Параметр запроса $expand не поддерживается для этого метода.|
+|[Настройка соединителя API в пользовательском потоке](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|Нет| Настройка соединителя API для определенных шагов в пользовательском потоке путем обновления свойства [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
 
@@ -52,7 +55,8 @@ ms.locfileid: "50516439"
 
 | Связь       | Тип  |Описание|
 |:---------------|:--------|:----------|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Поставщики удостоверений, включенные в пользовательский поток.|
+|userflowIdentityProviders|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Поставщики удостоверений, включенные в пользовательский поток.|
+|identityProviders (не рекомендуется)|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Поставщики удостоверений, включенные в пользовательский поток.|
 |userAttributeAssignments|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Назначения атрибутов пользователя, включенные в поток пользователей.|
 |languages|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Языки, поддерживаемые при настройке в пользовательском потоке. Настройка языка включена по умолчанию в пользовательском потоке самостоятельной регистрации. Вы не можете создавать собственные языки в пользовательских потоках самостоятельной регистрации.|
 
@@ -72,6 +76,7 @@ ms.locfileid: "50516439"
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
+    "userflowIdentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6ab10e00d20ad7bd26a6d389e74eefb361169708
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 96869955b3cec0c042c7f804d0f54c665b5e9df6
+ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547419"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53401444"
 ---
 # <a name="list-mobiledevicemanagementpolicies"></a>Список mobileDeviceManagementPolicies
 
@@ -26,7 +26,7 @@ ms.locfileid: "52547419"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 |Для приложений | Не поддерживается.|
 
@@ -43,7 +43,7 @@ GET /policies/mobileDeviceManagementPolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Пример.
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Пример:
 
 - Чтобы выбрать определенные атрибуты добавить `$select=id,displayname` .
 - Чтобы получить включенные группы для каждой политики, добавьте `$expand=includedGroups` .
