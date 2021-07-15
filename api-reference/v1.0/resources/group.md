@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 5176d58c15530883f5bdabcbbd0325846b042382
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: f9b2c51dff3d8c1d5c06ff417fa93e73edc73ac1
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366487"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430232"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -112,6 +112,10 @@ ms.locfileid: "53366487"
 | [resetUnseenCount](../api/group-resetunseencount.md) | Нет | Сброс до 0 значения unseenCount — счетчика всех записей, которые пользователь, выполнивший вход, не просматривал со времени последнего посещения. Поддерживается только для групп Microsoft 365. |
 
 ## <a name="properties"></a>Свойства
+
+> [!IMPORTANT]
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Логический| Указывает, могут ли пользователи за пределами организации отправлять сообщения в группу. Значение по умолчанию — `false`. <br><br>Возвращается только с помощью оператора `$select`. Поддерживается только для API получения группы (`GET /groups/{ID}`). |

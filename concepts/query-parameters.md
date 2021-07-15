@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a30b4576740147ab6456d55ee5e123b12ec411cc
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 2cf22e03f4134c1e4612433bf8190e89eea97bbf
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366508"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440669"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 Параметр запроса `$count` позволяет включить общее количество элементов коллекции вместе со страницей значений, возвращенных из Microsoft Graph.
 
 > [!NOTE]
-> Можно также использовать `$count` в качестве [сегмента URL-адреса](#other-odata-url-capabilities) для получения целочисленной суммы коллекции. Для ресурсов, производных от [directoryObject](/graph/api/resources/directoryobject), это возможно только в [расширенных запросах](/graph/aad-advanced-queries). См. [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+> Можно также использовать `$count` в качестве [сегмента URL-адреса](#other-odata-url-capabilities) для получения целочисленной суммы коллекции. Для ресурсов, производных от [directoryObject](/graph/api/resources/directoryobject), это возможно только в расширенных запросах. См. [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 >
 > Использование `$count` не поддерживается в клиентах Azure AD B2C.
 
@@ -103,7 +103,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 - [device](/graph/api/resources/device)
 - [group](/graph/api/resources/group)
 - [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [users](/graph/api/resources/user)
+- [user](/graph/api/resources/user)
 
 ## <a name="expand-parameter"></a>Параметр expand
 
@@ -133,7 +133,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 Параметр запроса `$filter` позволяет получить только подмножество объектов коллекции. Параметр запроса `$filter` также используется для извлечения таких отношений, как members, memberOf, transitiveMembers и transitiveMemberOf. Например, получите все группы безопасности, участником которых являетесь.
 
-Также чтобы найти пользователей, чье отображаемое имя начинается с буквы J, используйте `startsWith`.
+В следующем примере выполняется поиск пользователей, чье отображаемое имя начинается с буквы J.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
@@ -154,7 +154,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 
 ### <a name="filter-using-lambda-operators"></a>Фильтрация с помощью лямбда-операторов
 
-OData определяет операторы `any` и `all` для проверки совпадений у свойств с несколькими значениями (т. е. либо коллекции примитивов, например типа **String**, либо коллекции сущностей).
+OData определяет операторы `any` и `all` для проверки совпадений у свойств с несколькими значениями (т. е. либо коллекции примитивов, например типа String, либо коллекции сущностей).
 
 Оператор `any` итеративно применяет логическое выражение к каждому элементу коллекции и возвращает `true`, если выражение равно `true` для *любого элемента* коллекции. В противном случае этот оператор возвращает `false`. Ниже приводится синтаксис оператора `any`:
 
@@ -168,22 +168,24 @@ $filter=param/any(var:var/subparam eq 'value-to-match')
 + *subparam* требуется, когда запрос применяется к коллекции сущностей. Он представляет свойство сложного типа, значение которого мы сравниваем.
 + *value-to-match* представляет элемент коллекции, с которым мы выполняем сравнение.
 
-Например, свойство **assignedLicenses** ресурса users может содержать коллекцию объектов **assignedLicense**, сложный тип с двумя свойствами **skuId** и **disabledPlans**. Следующий запрос получает только пользователей с назначенной лицензией, которая идентифицируется по **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
+Например, свойство **imAddresses** ресурса user может содержать коллекцию простого типа String. Следующий запрос получает только пользователей, у которых свойство imAddress имеет значение `admin@contoso.com`.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
+GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
 ```
 
-Свойство **imAddresses** ресурса users может содержать коллекцию типа примитива **string**. Следующий запрос получает только пользователей, у которых свойство imAddress имеет значение `admin@contoso.com`.
+Свойство **assignedLicenses** ресурса user содержит коллекцию объектов **assignedLicense**, сложный тип с двумя свойствами **skuId** и **disabledPlans**. Следующий запрос получает только пользователей с назначенной лицензией, которая идентифицируется по **skuId** `184efa21-98c3-4e5d-95ab-d07053a96e67`.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=imAddresses/any(s:s eq 'admin@contoso.com')
+GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
 Чтобы инвертировать результат выражения внутри предложения `any`, используйте оператор `NOT`, а не `ne`. Например, следующий запрос получает только пользователей, у которых свойству **imAddress** не назначено значение `admin@contoso.com`.
+>**Примечание.** Для объектов каталога, например пользователей, операторы `NOT` и `ne` поддерживаются только в [расширенных запросах](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'admin@contoso.com')&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
+ConsistencyLevel: eventual
 ```
 
 Оператор `all` применяет логическое выражение к каждому элементу коллекции и возвращает `true`, если выражение равно `true` для *всех элементов* коллекции. В противном случае этот оператор возвращает `false`. Он не поддерживается всеми свойствами.
@@ -206,13 +208,13 @@ GET https://graph.microsoft.com/beta/users?$filter=NOT imAddresses/any(s:s eq 'a
 | Получение всех пользователей в отделах розничной торговли и продаж. | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
 | Перечисление пользователей с определенным планом обслуживания,находящимся в приостановленном состоянии. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 | Перечисление всех групп, не входящих в Microsoft 365, в организации. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true` |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 | Перечисление всех пользователей, у которых название компании не определено (т. е. не является значением `null`) или равно Microsoft. | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 | Перечисление всех пользователей, у которых название компании не определено или равно Microsoft. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20in%20(null%2C%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName in (null, 'Microsoft')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 | Используйте преобразование OData, чтобы получить транзитивное членство в группах с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов. | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 
@@ -328,7 +330,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 Некоторые запросы возвращают сообщение об ошибке, если указанный параметр запроса не поддерживается. Например, невозможно использовать `$expand` для связи `user/photo`. 
 
 ```http
-https://graph.microsoft.com/beta/me?$expand=photo
+https://graph.microsoft.com/v1.0/me?$expand=photo
 ```
 
 ```json
@@ -349,7 +351,16 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
+
 [count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
+[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups?$expand=members&method=GET&version=v1.0
+[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
+[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
+[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
+[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
+[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
+[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
+[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
 ## <a name="see-also"></a>См. также
 

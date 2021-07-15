@@ -445,7 +445,7 @@ items:
               - name: Отправка уведомлений ленты новостей
                 href: teams-send-activityfeednotifications.md
               - name: Рекомендации
-                href: activity-feed-notifications-best-practices.md
+                href: teams-activity-feed-notifications-best-practices.md
       - name: Задачи To-Do
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -530,11 +530,10 @@ items:
                 href: change-notifications-delivery.md
               - name: Уведомления об изменениях облачной печати
                 href: universal-print-webhook-notifications.md
-              - name: Уведомление об изменениях в Microsoft Teams
-                displayName: Change notifications in Microsoft Teams
+              - name: Уведомления об изменениях в Microsoft Teams
                 items:
                   - name: Обзор
-                    href: change-notification-in-microsoft-teams-overview.md
+                    href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Команды и каналы
                     href: teams-changenotifications-team-and-channel.md
                   - name: Участники команды
