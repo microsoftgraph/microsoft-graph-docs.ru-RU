@@ -5,88 +5,88 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 89edaefbdd73649be42d20b9b680c1e1acf9c2a0
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: fd5d9717705ee07fc9a18de8e27392fe6346f56e
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207779"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430216"
 ---
-# <a name="send-chatmessage-in-a-channel-or-a-chat"></a><span data-ttu-id="da203-103">Отправка chatMessage в канале или чате</span><span class="sxs-lookup"><span data-stu-id="da203-103">Send chatMessage in a channel or a chat</span></span>
+# <a name="send-chatmessage-in-a-channel-or-a-chat"></a><span data-ttu-id="4affd-103">Отправка chatMessage в канале или чате</span><span class="sxs-lookup"><span data-stu-id="4affd-103">Send chatMessage in a channel or a chat</span></span>
 
-<span data-ttu-id="da203-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da203-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4affd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4affd-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="da203-105">Отправьте новый [chatMessage в](../resources/chatmessage.md) указанном [канале](../resources/channel.md) или [в чате.](../resources/chat.md)</span><span class="sxs-lookup"><span data-stu-id="da203-105">Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
+<span data-ttu-id="4affd-105">Отправьте новый [chatMessage в](../resources/chatmessage.md) указанном [канале](../resources/channel.md) или [в чате.](../resources/chat.md)</span><span class="sxs-lookup"><span data-stu-id="4affd-105">Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).</span></span>
 
-> <span data-ttu-id="da203-106">**Примечание.** Мы не рекомендуем использовать этот API для переноса данных.</span><span class="sxs-lookup"><span data-stu-id="da203-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="da203-107">Он не имеет пропускной способности, необходимой для обычной миграции.</span><span class="sxs-lookup"><span data-stu-id="da203-107">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="4affd-106">**Примечание.** Мы не рекомендуем использовать этот API для переноса данных.</span><span class="sxs-lookup"><span data-stu-id="4affd-106">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="4affd-107">Он не имеет пропускной способности, необходимой для обычной миграции.</span><span class="sxs-lookup"><span data-stu-id="4affd-107">It does not have the throughput necessary for a typical migration.</span></span>
 
-> <span data-ttu-id="da203-108">**Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use)</span><span class="sxs-lookup"><span data-stu-id="da203-108">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="da203-109">Отправка сообщений, которые будут читаться людьми.</span><span class="sxs-lookup"><span data-stu-id="da203-109">Only send messages that people will read.</span></span>
+> <span data-ttu-id="4affd-108">**Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use)</span><span class="sxs-lookup"><span data-stu-id="4affd-108">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="4affd-109">Отправка сообщений, которые будут читаться людьми.</span><span class="sxs-lookup"><span data-stu-id="4affd-109">Only send messages that people will read.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="da203-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="da203-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4affd-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4affd-110">Permissions</span></span>
 
-<span data-ttu-id="da203-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da203-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4affd-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4affd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="permissions-for-channel"></a><span data-ttu-id="da203-113">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="da203-113">Permissions for channel</span></span>
-| <span data-ttu-id="da203-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da203-114">Permission type</span></span>                        | <span data-ttu-id="da203-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="da203-115">Permissions (from least to most privileged)</span></span> |
+### <a name="permissions-for-channel"></a><span data-ttu-id="4affd-113">Разрешения для канала</span><span class="sxs-lookup"><span data-stu-id="4affd-113">Permissions for channel</span></span>
+| <span data-ttu-id="4affd-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4affd-114">Permission type</span></span>                        | <span data-ttu-id="4affd-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4affd-115">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="da203-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da203-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="da203-117">ChannelMessage.Send</span><span class="sxs-lookup"><span data-stu-id="da203-117">ChannelMessage.Send</span></span> |
-| <span data-ttu-id="da203-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da203-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da203-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da203-119">Not supported.</span></span> |
-| <span data-ttu-id="da203-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="da203-120">Application</span></span>                            | <span data-ttu-id="da203-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da203-121">Not supported.</span></span> |
+| <span data-ttu-id="4affd-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4affd-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="4affd-117">ChannelMessage.Send</span><span class="sxs-lookup"><span data-stu-id="4affd-117">ChannelMessage.Send</span></span> |
+| <span data-ttu-id="4affd-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4affd-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4affd-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4affd-119">Not supported.</span></span> |
+| <span data-ttu-id="4affd-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4affd-120">Application</span></span>                            | <span data-ttu-id="4affd-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4affd-121">Not supported.</span></span> |
 
-### <a name="permissions-for-chat"></a><span data-ttu-id="da203-122">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="da203-122">Permissions for chat</span></span>
-| <span data-ttu-id="da203-123">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da203-123">Permission type</span></span>                        | <span data-ttu-id="da203-124">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="da203-124">Permissions (from least to most privileged)</span></span> |
+### <a name="permissions-for-chat"></a><span data-ttu-id="4affd-122">Разрешения для чата</span><span class="sxs-lookup"><span data-stu-id="4affd-122">Permissions for chat</span></span>
+| <span data-ttu-id="4affd-123">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4affd-123">Permission type</span></span>                        | <span data-ttu-id="4affd-124">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4affd-124">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="da203-125">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da203-125">Delegated (work or school account)</span></span>     | <span data-ttu-id="da203-126">ChatMessage.Send, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="da203-126">ChatMessage.Send, Chat.ReadWrite</span></span> |
-| <span data-ttu-id="da203-127">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da203-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da203-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da203-128">Not supported.</span></span> |
-| <span data-ttu-id="da203-129">Для приложений</span><span class="sxs-lookup"><span data-stu-id="da203-129">Application</span></span>                            | <span data-ttu-id="da203-130">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da203-130">Not supported.</span></span> |
+| <span data-ttu-id="4affd-125">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4affd-125">Delegated (work or school account)</span></span>     | <span data-ttu-id="4affd-126">ChatMessage.Send, Chat.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4affd-126">ChatMessage.Send, Chat.ReadWrite</span></span> |
+| <span data-ttu-id="4affd-127">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4affd-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4affd-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4affd-128">Not supported.</span></span> |
+| <span data-ttu-id="4affd-129">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4affd-129">Application</span></span>                            | <span data-ttu-id="4affd-130">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4affd-130">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="da203-131">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da203-131">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4affd-131">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-131">HTTP request</span></span>
 
-<span data-ttu-id="da203-132">**Отправка сообщения в канале**</span><span class="sxs-lookup"><span data-stu-id="da203-132">**Sending message in a channel**</span></span>
+<span data-ttu-id="4affd-132">**Отправка сообщения в канале**</span><span class="sxs-lookup"><span data-stu-id="4affd-132">**Sending message in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
-<span data-ttu-id="da203-133">**Отправка ответов в канале**</span><span class="sxs-lookup"><span data-stu-id="da203-133">**Sending replies in a channel**</span></span>
+<span data-ttu-id="4affd-133">**Отправка ответов в канале**</span><span class="sxs-lookup"><span data-stu-id="4affd-133">**Sending replies in a channel**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ```
 
-<span data-ttu-id="da203-134">**Отправка сообщения в чате**</span><span class="sxs-lookup"><span data-stu-id="da203-134">**Sending message in a chat**</span></span>
+<span data-ttu-id="4affd-134">**Отправка сообщения в чате**</span><span class="sxs-lookup"><span data-stu-id="4affd-134">**Sending message in a chat**</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /chats/{chat-id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="da203-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="da203-135">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4affd-135">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4affd-135">Request headers</span></span>
 
-| <span data-ttu-id="da203-136">Имя</span><span class="sxs-lookup"><span data-stu-id="da203-136">Name</span></span>          | <span data-ttu-id="da203-137">Описание</span><span class="sxs-lookup"><span data-stu-id="da203-137">Description</span></span>   |
+| <span data-ttu-id="4affd-136">Имя</span><span class="sxs-lookup"><span data-stu-id="4affd-136">Name</span></span>          | <span data-ttu-id="4affd-137">Описание</span><span class="sxs-lookup"><span data-stu-id="4affd-137">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="da203-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="da203-138">Authorization</span></span> | <span data-ttu-id="da203-139">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="da203-139">Bearer {code}.</span></span> <span data-ttu-id="da203-140">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="da203-140">Required.</span></span> |
-| <span data-ttu-id="da203-141">Content-Type</span><span class="sxs-lookup"><span data-stu-id="da203-141">Content-type</span></span> | <span data-ttu-id="da203-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="da203-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="4affd-138">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4affd-138">Authorization</span></span> | <span data-ttu-id="4affd-139">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="4affd-139">Bearer {code}.</span></span> <span data-ttu-id="4affd-140">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="4affd-140">Required.</span></span> |
+| <span data-ttu-id="4affd-141">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4affd-141">Content-type</span></span> | <span data-ttu-id="4affd-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4affd-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="da203-144">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="da203-144">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4affd-144">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4affd-144">Request body</span></span>
 
-<span data-ttu-id="da203-145">В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md)</span><span class="sxs-lookup"><span data-stu-id="da203-145">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="da203-146">Обязательным является только свойство body; другие свойства необязательны.</span><span class="sxs-lookup"><span data-stu-id="da203-146">Only the body property is mandatory; other properties are optional.</span></span>
-
-
-## <a name="response"></a><span data-ttu-id="da203-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="da203-147">Response</span></span>
-
-<span data-ttu-id="da203-148">В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="da203-148">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
-
-## <a name="examples"></a><span data-ttu-id="da203-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="da203-149">Examples</span></span>
-
-<span data-ttu-id="da203-150">В следующих примерах URL-адрес может использовать синтаксис [HTTP,](#http-request) описанный для отправки сообщения в [чат,](chat-post-messages.md)отправки сообщения на канал или отправки ответа на [канал.](chatmessage-post-replies.md) [](channel-post-messages.md)</span><span class="sxs-lookup"><span data-stu-id="da203-150">In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).</span></span>
-
-### <a name="example-1-send-a-hello-world-message-in-a-channel"></a><span data-ttu-id="da203-151">Пример 1. Отправка сообщения Hello World в канале</span><span class="sxs-lookup"><span data-stu-id="da203-151">Example 1: Send a Hello World message in a channel</span></span>
-
-#### <a name="request"></a><span data-ttu-id="da203-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="da203-152">Request</span></span>
-<span data-ttu-id="da203-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da203-153">The following is an example of the request.</span></span>
+<span data-ttu-id="4affd-145">В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md)</span><span class="sxs-lookup"><span data-stu-id="4affd-145">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="4affd-146">Обязательным является только свойство body; другие свойства необязательны.</span><span class="sxs-lookup"><span data-stu-id="4affd-146">Only the body property is mandatory; other properties are optional.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="da203-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="da203-154">HTTP</span></span>](#tab/http)
+## <a name="response"></a><span data-ttu-id="4affd-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-147">Response</span></span>
+
+<span data-ttu-id="4affd-148">В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-148">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="4affd-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="4affd-149">Examples</span></span>
+
+<span data-ttu-id="4affd-150">В следующих примерах URL-адрес может использовать синтаксис [HTTP,](#http-request) описанный для отправки сообщения в [чат,](chat-post-messages.md)отправки сообщения на канал или отправки ответа на [канал.](chatmessage-post-replies.md) [](channel-post-messages.md)</span><span class="sxs-lookup"><span data-stu-id="4affd-150">In the following examples, the URL can use the [HTTP syntax](#http-request) described to [send a message to a chat](chat-post-messages.md), [send a message to a channel](channel-post-messages.md), or [send reply to a channel](chatmessage-post-replies.md).</span></span>
+
+### <a name="example-1-send-a-hello-world-message-in-a-channel"></a><span data-ttu-id="4affd-151">Пример 1. Отправка сообщения Hello World в канале</span><span class="sxs-lookup"><span data-stu-id="4affd-151">Example 1: Send a Hello World message in a channel</span></span>
+
+#### <a name="request"></a><span data-ttu-id="4affd-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-152">Request</span></span>
+<span data-ttu-id="4affd-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-153">The following is an example of the request.</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="4affd-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="4affd-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_1"
@@ -101,28 +101,28 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="da203-155">C#</span><span class="sxs-lookup"><span data-stu-id="da203-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4affd-155">C#</span><span class="sxs-lookup"><span data-stu-id="4affd-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="da203-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="da203-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4affd-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4affd-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="da203-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="da203-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4affd-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4affd-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="da203-158">Java</span><span class="sxs-lookup"><span data-stu-id="da203-158">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4affd-158">Java</span><span class="sxs-lookup"><span data-stu-id="4affd-158">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="da203-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="da203-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4affd-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-159">Response</span></span>
 
-<span data-ttu-id="da203-160">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="da203-160">The following is an example of the response.</span></span>
+<span data-ttu-id="4affd-160">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-160">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -174,13 +174,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-mentions-a-user-in-a-channel-message"></a><span data-ttu-id="da203-161">Пример 2. @mentions пользователя в сообщении канала</span><span class="sxs-lookup"><span data-stu-id="da203-161">Example 2: @mentions a user in a channel message</span></span>
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a><span data-ttu-id="4affd-161">Пример 2. @mentions пользователя в сообщении канала</span><span class="sxs-lookup"><span data-stu-id="4affd-161">Example 2: @mentions a user in a channel message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="da203-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="da203-162">Request</span></span>
-<span data-ttu-id="da203-163">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da203-163">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="4affd-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-162">Request</span></span>
+<span data-ttu-id="4affd-163">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-163">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="da203-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="da203-164">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4affd-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="4affd-164">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_2"
@@ -209,28 +209,28 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="da203-165">C#</span><span class="sxs-lookup"><span data-stu-id="da203-165">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4affd-165">C#</span><span class="sxs-lookup"><span data-stu-id="4affd-165">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="da203-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="da203-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4affd-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4affd-166">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="da203-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="da203-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4affd-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4affd-167">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="da203-168">Java</span><span class="sxs-lookup"><span data-stu-id="da203-168">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4affd-168">Java</span><span class="sxs-lookup"><span data-stu-id="4affd-168">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="da203-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="da203-169">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4affd-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-169">Response</span></span>
 
-<span data-ttu-id="da203-170">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="da203-170">The following is an example of the response.</span></span>
+<span data-ttu-id="4affd-170">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-170">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -296,15 +296,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-send-message-containing-cards"></a><span data-ttu-id="da203-171">Пример 3. Отправка сообщений, содержащих карты</span><span class="sxs-lookup"><span data-stu-id="da203-171">Example 3: Send message containing cards</span></span>
+### <a name="example-3-send-message-containing-cards"></a><span data-ttu-id="4affd-171">Пример 3. Отправка сообщений, содержащих карты</span><span class="sxs-lookup"><span data-stu-id="4affd-171">Example 3: Send message containing cards</span></span>
 
-#### <a name="request"></a><span data-ttu-id="da203-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="da203-172">Request</span></span>
-<span data-ttu-id="da203-173">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da203-173">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="4affd-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-172">Request</span></span>
+<span data-ttu-id="4affd-173">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-173">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="da203-174">**Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID.</span><span class="sxs-lookup"><span data-stu-id="da203-174">**Note:** The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="da203-175">Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений._</span><span class="sxs-lookup"><span data-stu-id="da203-175">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
+> <span data-ttu-id="4affd-174">**Примечание:** ID вложения должен быть уникальным и может быть новым случайно созданным GUID.</span><span class="sxs-lookup"><span data-stu-id="4affd-174">**Note:** The attachment's ID must be unique and can be a new randomly generated GUID.</span></span> <span data-ttu-id="4affd-175">Однако, ID вложения должен быть одинаковым в элементах _тела_ и _вложений._</span><span class="sxs-lookup"><span data-stu-id="4affd-175">However, the attachment's ID must be the same in the _body_ and _attachments_ elements.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="da203-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="da203-176">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4affd-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="4affd-176">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_3"
@@ -331,28 +331,28 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="da203-177">C#</span><span class="sxs-lookup"><span data-stu-id="da203-177">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4affd-177">C#</span><span class="sxs-lookup"><span data-stu-id="4affd-177">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="da203-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="da203-178">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4affd-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4affd-178">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="da203-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="da203-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4affd-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4affd-179">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="da203-180">Java</span><span class="sxs-lookup"><span data-stu-id="da203-180">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4affd-180">Java</span><span class="sxs-lookup"><span data-stu-id="4affd-180">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="da203-181">Отклик</span><span class="sxs-lookup"><span data-stu-id="da203-181">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4affd-181">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-181">Response</span></span>
 
-<span data-ttu-id="da203-182">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="da203-182">The following is an example of the response.</span></span>
+<span data-ttu-id="4affd-182">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-182">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -412,15 +412,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-send-a-message-with-file-attachment-in-it"></a><span data-ttu-id="da203-183">Пример 4. Отправка сообщения с вложением файла в нем</span><span class="sxs-lookup"><span data-stu-id="da203-183">Example 4: Send a message with file attachment in it</span></span>
+### <a name="example-4-send-a-message-with-file-attachment-in-it"></a><span data-ttu-id="4affd-183">Пример 4. Отправка сообщения с вложением файла в нем</span><span class="sxs-lookup"><span data-stu-id="4affd-183">Example 4: Send a message with file attachment in it</span></span>
 
-#### <a name="request"></a><span data-ttu-id="da203-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="da203-184">Request</span></span>
-<span data-ttu-id="da203-185">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da203-185">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="4affd-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-184">Request</span></span>
+<span data-ttu-id="4affd-185">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-185">The following is an example of the request.</span></span>
 
-><span data-ttu-id="da203-186">**Примечание:** Файл уже должен быть в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="da203-186">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="da203-187">Чтобы найти свойства файла, получите **driveItem** для файла.</span><span class="sxs-lookup"><span data-stu-id="da203-187">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="da203-188">Например, /drives/{id}/items/{id}.</span><span class="sxs-lookup"><span data-stu-id="da203-188">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="da203-189">Ваш ИД вложения — это GUID в **eTag** **driveItem,** содержимое вложения — это **webUrl** папки driveItem плюс имя **driveItem,** а имя вложения — имя  **driveItem.** </span><span class="sxs-lookup"><span data-stu-id="da203-189">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
+><span data-ttu-id="4affd-186">**Примечание:** Файл уже должен быть в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="4affd-186">**Note:** The file must already be in SharePoint.</span></span> <span data-ttu-id="4affd-187">Чтобы найти свойства файла, получите **driveItem** для файла.</span><span class="sxs-lookup"><span data-stu-id="4affd-187">To find the file properties, GET the **driveItem** for the file.</span></span> <span data-ttu-id="4affd-188">Например, /drives/{id}/items/{id}.</span><span class="sxs-lookup"><span data-stu-id="4affd-188">For example, /drives/{id}/items/{id}.</span></span> <span data-ttu-id="4affd-189">Ваш ИД вложения — это GUID в **eTag** **driveItem,** содержимое вложения — это **webUrl** папки driveItem плюс имя **driveItem,** а имя вложения — имя  **driveItem.** </span><span class="sxs-lookup"><span data-stu-id="4affd-189">Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="da203-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="da203-190">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4affd-190">HTTP</span><span class="sxs-lookup"><span data-stu-id="4affd-190">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_4"
@@ -444,28 +444,28 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="da203-191">C#</span><span class="sxs-lookup"><span data-stu-id="da203-191">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4affd-191">C#</span><span class="sxs-lookup"><span data-stu-id="4affd-191">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="da203-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="da203-192">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4affd-192">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4affd-192">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="da203-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="da203-193">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4affd-193">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4affd-193">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="da203-194">Java</span><span class="sxs-lookup"><span data-stu-id="da203-194">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4affd-194">Java</span><span class="sxs-lookup"><span data-stu-id="4affd-194">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="da203-195">Отклик</span><span class="sxs-lookup"><span data-stu-id="da203-195">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4affd-195">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-195">Response</span></span>
 
-<span data-ttu-id="da203-196">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="da203-196">The following is an example of the response.</span></span>
+<span data-ttu-id="4affd-196">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-196">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -525,17 +525,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-send-inline-images-along-with-the-message"></a><span data-ttu-id="da203-197">Пример 5. Отправка изображений в линию вместе с сообщением</span><span class="sxs-lookup"><span data-stu-id="da203-197">Example 5: Send inline images along with the message</span></span>
+### <a name="example-5-send-inline-images-along-with-the-message"></a><span data-ttu-id="4affd-197">Пример 5. Отправка изображений в линию вместе с сообщением</span><span class="sxs-lookup"><span data-stu-id="4affd-197">Example 5: Send inline images along with the message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="da203-198">Запрос</span><span class="sxs-lookup"><span data-stu-id="da203-198">Request</span></span>
-<span data-ttu-id="da203-199">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da203-199">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="4affd-198">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-198">Request</span></span>
+<span data-ttu-id="4affd-199">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-199">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="da203-200">**Примечание:** TemporaryId **в** коллекции **hostedContents** — это случайный ID,  но он должен быть одинаковым по всему телу и элементам **hostedContents.**</span><span class="sxs-lookup"><span data-stu-id="da203-200">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements.</span></span> <span data-ttu-id="da203-201">(Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="da203-201">(Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)</span></span>
+> <span data-ttu-id="4affd-200">**Примечание:** TemporaryId **в** коллекции **hostedContents** — это случайный ID,  но он должен быть одинаковым по всему телу и элементам **hostedContents.**</span><span class="sxs-lookup"><span data-stu-id="4affd-200">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements.</span></span> <span data-ttu-id="4affd-201">(Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="4affd-201">(Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)</span></span>
 
-<span data-ttu-id="da203-202">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="da203-202">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="da203-203">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="da203-203">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
+<span data-ttu-id="4affd-202">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="4affd-202">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="4affd-203">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="4affd-203">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="da203-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="da203-204">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4affd-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="4affd-204">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_5"
@@ -558,28 +558,28 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="da203-205">C#</span><span class="sxs-lookup"><span data-stu-id="da203-205">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4affd-205">C#</span><span class="sxs-lookup"><span data-stu-id="4affd-205">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="da203-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="da203-206">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4affd-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4affd-206">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="da203-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="da203-207">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4affd-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4affd-207">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="da203-208">Java</span><span class="sxs-lookup"><span data-stu-id="da203-208">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4affd-208">Java</span><span class="sxs-lookup"><span data-stu-id="4affd-208">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="da203-209">Отклик</span><span class="sxs-lookup"><span data-stu-id="da203-209">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4affd-209">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-209">Response</span></span>
 
-<span data-ttu-id="da203-210">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="da203-210">The following is an example of the response.</span></span>
+<span data-ttu-id="4affd-210">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-210">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -627,17 +627,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-send-a-card-with-inline-images"></a><span data-ttu-id="da203-211">Пример 6. Отправка карточки с inline изображениями</span><span class="sxs-lookup"><span data-stu-id="da203-211">Example 6: Send a card with inline images</span></span>
+### <a name="example-6-send-a-card-with-inline-images"></a><span data-ttu-id="4affd-211">Пример 6. Отправка карточки с inline изображениями</span><span class="sxs-lookup"><span data-stu-id="4affd-211">Example 6: Send a card with inline images</span></span>
 
-#### <a name="request"></a><span data-ttu-id="da203-212">Запрос</span><span class="sxs-lookup"><span data-stu-id="da203-212">Request</span></span>
-<span data-ttu-id="da203-213">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da203-213">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="4affd-212">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-212">Request</span></span>
+<span data-ttu-id="4affd-213">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-213">The following is an example of the request.</span></span>
 
-> <span data-ttu-id="da203-214">**Примечание:** TemporaryId в коллекции **hostedContents** — это случайный ID, но должен быть одинаковым для контента **(в** вложениях) и элементов **hostedContents.** </span><span class="sxs-lookup"><span data-stu-id="da203-214">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements.</span></span> <span data-ttu-id="da203-215">(Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="da203-215">(Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)</span></span>
+> <span data-ttu-id="4affd-214">**Примечание:** TemporaryId в коллекции **hostedContents** — это случайный ID, но должен быть одинаковым для контента **(в** вложениях) и элементов **hostedContents.** </span><span class="sxs-lookup"><span data-stu-id="4affd-214">**Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements.</span></span> <span data-ttu-id="4affd-215">(Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value` .)</span><span class="sxs-lookup"><span data-stu-id="4affd-215">(Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)</span></span>
 
-<span data-ttu-id="da203-216">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="da203-216">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="da203-217">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="da203-217">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
+<span data-ttu-id="4affd-216">**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.</span><span class="sxs-lookup"><span data-stu-id="4affd-216">**contentBytes** must be set to binary string Base64-encoded bytes.</span></span> <span data-ttu-id="4affd-217">Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span><span class="sxs-lookup"><span data-stu-id="4affd-217">You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="da203-218">HTTP</span><span class="sxs-lookup"><span data-stu-id="da203-218">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4affd-218">HTTP</span><span class="sxs-lookup"><span data-stu-id="4affd-218">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_6"
@@ -671,26 +671,26 @@ Content-type: application/json
     }]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="da203-219">C#</span><span class="sxs-lookup"><span data-stu-id="da203-219">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4affd-219">C#</span><span class="sxs-lookup"><span data-stu-id="4affd-219">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-6-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="da203-220">JavaScript</span><span class="sxs-lookup"><span data-stu-id="da203-220">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4affd-220">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4affd-220">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-6-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="da203-221">Objective-C</span><span class="sxs-lookup"><span data-stu-id="da203-221">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4affd-221">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4affd-221">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-6-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="da203-222">Java</span><span class="sxs-lookup"><span data-stu-id="da203-222">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4affd-222">Java</span><span class="sxs-lookup"><span data-stu-id="4affd-222">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="da203-223">Отклик</span><span class="sxs-lookup"><span data-stu-id="da203-223">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4affd-223">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-223">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -751,9 +751,222 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="da203-224">См. также</span><span class="sxs-lookup"><span data-stu-id="da203-224">See also</span></span>
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a><span data-ttu-id="4affd-224">Пример 7: @mention канал в сообщении канала</span><span class="sxs-lookup"><span data-stu-id="4affd-224">Example 7 : @mention a channel in a channel message</span></span>
 
-- [<span data-ttu-id="da203-225">Ссылки на карточки</span><span class="sxs-lookup"><span data-stu-id="da203-225">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
+#### <a name="request"></a><span data-ttu-id="4affd-225">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-225">Request</span></span>
+<span data-ttu-id="4affd-226">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-226">The following is an example of the request.</span></span> <span data-ttu-id="4affd-227">Сведения о том, как получить список каналов в команде, см. в [списке каналов.](../api/channel-list.md)</span><span class="sxs-lookup"><span data-stu-id="4affd-227">For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).</span></span>
+
+> <span data-ttu-id="4affd-228">Примечание: **conversationIdentityType** должен быть задан для @mention `channel` канала.</span><span class="sxs-lookup"><span data-stu-id="4affd-228">Note: **conversationIdentityType** must be set to `channel` to @mention a channel.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_atmentionchannel"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+    },
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "General",
+            "mentioned": {
+                "conversation": {
+                    "id": "19:0b50940236084d258c97b21bd01917b0@thread.skype",
+                    "displayName": "General",
+                    "conversationIdentityType": "channel"
+                }
+            }
+        }
+    ]
+}
+```
+
+#### <a name="response"></a><span data-ttu-id="4affd-229">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-229">Response</span></span>
+
+<span data-ttu-id="4affd-230">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-230">The following is an example of the response.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('68a3e365-f7d9-4a56-b499-24332a9cc572')/channels('19%3A0b50940236084d258c97b21bd01917b0%40thread.skype')/messages/$entity",
+    "id": "1625727486746",
+    "replyToId": null,
+    "etag": "1625727486746",
+    "messageType": "message",
+    "createdDateTime": "2021-07-08T06:58:06.746Z",
+    "lastModifiedDateTime": "2021-07-08T06:58:06.746Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A0b50940236084d258c97b21bd01917b0%40thread.skype/1625727486746?groupId=68a3e365-f7d9-4a56-b499-24332a9cc572&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1625727486746&parentMessageId=1625727486746",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+    },
+    "channelIdentity": {
+        "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+        "channelId": "19:0b50940236084d258c97b21bd01917b0@thread.skype"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "General",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "19:0b50940236084d258c97b21bd01917b0@thread.skype",
+                    "displayName": "General",
+                    "conversationIdentityType": "channel"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+### <a name="example-8--mention-a-team-in-a-channel-message"></a><span data-ttu-id="4affd-231">Пример 8. @mention группы в сообщении канала</span><span class="sxs-lookup"><span data-stu-id="4affd-231">Example 8 : @mention a team in a channel message</span></span>
+
+#### <a name="request"></a><span data-ttu-id="4affd-232">Запрос</span><span class="sxs-lookup"><span data-stu-id="4affd-232">Request</span></span>
+<span data-ttu-id="4affd-233">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4affd-233">The following is an example of the request.</span></span>
+
+> <span data-ttu-id="4affd-234">Примечание. **ConversationIdentityType** должен быть задан для @mention `team` группы.</span><span class="sxs-lookup"><span data-stu-id="4affd-234">Note: **conversationIdentityType** must be set to `team` to @mention a team.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_atmentionteam"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+    },
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "GraphTesting",
+            "mentioned": {
+                "conversation": {
+                    "id": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+                    "displayName": "GraphTesting",
+                    "conversationIdentityType": "team"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+#### <a name="response"></a><span data-ttu-id="4affd-235">Отклик</span><span class="sxs-lookup"><span data-stu-id="4affd-235">Response</span></span>
+
+<span data-ttu-id="4affd-236">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4affd-236">The following is an example of the response.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('68a3e365-f7d9-4a56-b499-24332a9cc572')/channels('19%3A0b50940236084d258c97b21bd01917b0%40thread.skype')/messages/$entity",
+    "id": "1625727671938",
+    "replyToId": null,
+    "etag": "1625727671938",
+    "messageType": "message",
+    "createdDateTime": "2021-07-08T07:01:11.938Z",
+    "lastModifiedDateTime": "2021-07-08T07:01:11.938Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A0b50940236084d258c97b21bd01917b0%40thread.skype/1625727671938?groupId=68a3e365-f7d9-4a56-b499-24332a9cc572&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1625727671938&parentMessageId=1625727671938",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+    },
+    "channelIdentity": {
+        "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+        "channelId": "19:0b50940236084d258c97b21bd01917b0@thread.skype"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "GraphTesting",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+                    "displayName": "GraphTesting",
+                    "conversationIdentityType": "team"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+## <a name="see-also"></a><span data-ttu-id="4affd-237">См. также</span><span class="sxs-lookup"><span data-stu-id="4affd-237">See also</span></span>
+
+- [<span data-ttu-id="4affd-238">Справочные материалы о карточках</span><span class="sxs-lookup"><span data-stu-id="4affd-238">Cards reference</span></span>](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
