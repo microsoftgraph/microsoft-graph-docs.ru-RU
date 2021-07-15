@@ -5,12 +5,12 @@ description: Проверьте состояние публикации типа
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 150caec3be0740d82563e280e6425d0d3b827ecd
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e61d488dddc9797c3f0623a3e534f54b1bab4708
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770578"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439436"
 ---
 # <a name="contenttype-ispublished"></a>contentType: isPublished
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50770578"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | Sites.FullControl.All |
+|Приложение | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,7 +35,7 @@ ms.locfileid: "50770578"
 ```http
 GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ```
->**Примечание:** SiteId представляет веб-узел типа контента.
+>**Примечание:** _siteId_ представляет веб-узел типа контента.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -43,7 +43,7 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 |Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот вызов возвращает ответ и значение boolean, указывав состояние публикации `200 OK` типа контента.
+В случае успешной работы этот вызов возвращает ответ и значение boolean, которое указывает состояние публикации `200 OK` типа контента.
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

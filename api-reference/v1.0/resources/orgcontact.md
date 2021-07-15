@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b07e8ede2c0d2c2d67f50fcb35164ca75dbb0194
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: b63b67c50454ad7639524f22132a59398da41dbe
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366452"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430279"
 ---
 # <a name="orgcontact-resource-type"></a>тип ресурса orgContact
 
@@ -38,13 +38,16 @@ ms.locfileid: "53366452"
 
 ## <a name="properties"></a>Свойства
 
+> [!IMPORTANT]
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
 | Свойство                     | Тип                                                                     | Описание                                                                                                                                                                                                                                                                                                                        |
 |:-----------------------------|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | адреса                    | [коллекция physicalOfficeAddress](physicalofficeaddress.md)             | Почтовые адреса для этого организационного контакта. Пока у контакта может быть только один физический адрес.                                                                                                                                                                                                                            |
 | companyName                  | String                                                                   | Имя компании, к которой принадлежит этот организационный контакт.  Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                          |
 | department                   | String                                                                   | Имя отдела, в котором работает контакт.  Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                   |
-| displayName                  | String                                                                   | Отображение имени для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `$search`) и `$orderBy`.                                                                                                                                                                                   |
-| givenName                    | String                                                                   | Имя для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                                |
+| displayName                  | String                                                                   | Отображение имени для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search` и `$orderBy`.                                                                                                                                                                                   |
+| givenName;                    | String                                                                   | Имя для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                                |
 | id                           | String                                                                   | Уникальный идентификатор для этого организационного контакта.  Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`).                                                                                                                                                                                                                                  |
 | jobTitle;                     | String                                                                   | Название задания для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                                                                 |
 | mail                         | String                                                                   | Адрес SMTP для контакта, например, "jeff@contoso.onmicrosoft.com". Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).                                                                                                                                                                             |

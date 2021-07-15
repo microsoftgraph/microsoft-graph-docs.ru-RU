@@ -6,12 +6,12 @@ description: Добавление столбца в тип контента.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 7071322064d55c21123fabd5ddc80d63fa5575ac
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8231575faf7c5325247816ed8ee8e8731e7d574f
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946966"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430020"
 ---
 # <a name="create-columndefinition-for-a-content-type"></a>Создание columnDefinition для типа контента
 Пространство имен: microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "50946966"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -58,7 +58,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-
 Content-Type: application/json
 
 {
-    "sourceColumn@odata.bind": "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103",
+    "sourceColumn@odata.bind": "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 ```
 

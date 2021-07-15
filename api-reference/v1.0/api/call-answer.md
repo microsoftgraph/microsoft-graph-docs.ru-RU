@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 02bde925291b580186247a23f8bc3398d5ca0c2f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a0cf83ea366e8d2c03c8f3d28f4262bfc9616d65
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786063"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430272"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -27,7 +27,7 @@ ms.locfileid: "52786063"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Для приложений     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
+| Приложение     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
 
 > **Примечание:** Для вызова, использующего средства массовой информации с использованием приложений, также требуется разрешение Calls.AccessMedia.All. Для расшифровки входящих уведомлений о вызове необходимо иметь по крайней мере одно из следующих `source` разрешений: Calls.AccessMedia.All, Calls.Initiate. Все, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. Это `source` информация вызываемой в уведомлении о входящих вызовах. Без по крайней мере одного из этих разрешений будет `source` оставаться зашифрованным.
 
@@ -48,9 +48,10 @@ POST /communications/calls/{id}/answer
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .    |
-|acceptedModalities|Коллекция String                         |Список модальных способов для приемки. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Требуется для ответа на вызов. |
+|callbackUri       |String                                    |Позволяет ботам предоставлять определенный URI вызова для параллельного вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .    |
+|acceptedModalities|Коллекция объектов string                         |Список модальных способов для приемки. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Требуется для ответа на вызов. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. (Обязательно)                                                                                                            |
+| participantCapacity | Целое | Число участников, которые приложение может обрабатывать для вызова, для Teams [сценарий](/MicrosoftTeams/teams-recording-policy) записи на основе политики.                                                     |
 
 ## <a name="response"></a>Отклик
 Этот метод возвращает код `202 Accepted` ответа.
@@ -80,7 +81,8 @@ Content-Length: 211
   },
   "acceptedModalities": [
     "audio"
-  ]
+  ],
+  "participantCapacity": 200
 }
 ```
 Эта blob — это сериализованная конфигурация сеансов мультимедиа, которая создается из SDK мультимедиа.
@@ -437,6 +439,8 @@ Content-Type: application/json
 
 В [сценарии записи](/microsoftteams/teams-recording-policy)на основе политики перед тем, как участник политики присоединяется к вызову, боту, связанному с политикой, будет отправлено уведомление о входящих вызовах.
 Сведения о присоединиться можно найти в свойстве **botData.** Затем бот может ответить на вызов и [соответствующим образом обновить состояние](call-updaterecordingstatus.md) записи.
+
+Если указано в запросе на уведомление о записи на основе политики, последующее присоединение участника к той же группе политик будет отправлено в качестве `participantCapacity` `Answer` [участникаJoiningNotification](../resources/participantJoiningNotification.md) вместо нового уведомления о входящих вызовах, пока число участников, которые обработка текущего экземпляра вызовов не достигла указанного в `participantCapacity` номере .
 
 Вот пример входящих уведомлений о вызове, которые бот получит в этом случае.
 

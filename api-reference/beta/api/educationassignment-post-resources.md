@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3ca73c7b078520f5f25b0948b8a41f272ba73669
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: af94dc0e6e9a2c2cef30a177509bf32f50faa3ae
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911895"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439870"
 ---
 # <a name="create-educationassignmentresource"></a>Создание educationAssignmentResource
 
@@ -48,7 +48,7 @@ POST /education/classes/{id}/assignments/{id}/resources
 В случае успешного выполнения этот метод возвращает код ответа и `201 Created` объект [educationAssignmentResource](../resources/educationassignmentresource.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "ignored",
@@ -67,10 +67,9 @@ Content-length: 212
     "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
   }
 }
-
 ```
 В теле запроса поставляют представление JSON объекта [educationAssignmentResource.](../resources/educationassignmentresource.md)
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -95,7 +94,6 @@ Content-length: 229
     "@odata.type": "#microsoft.education.assignments.api.educationLinkResource"
   }
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

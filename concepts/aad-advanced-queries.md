@@ -4,18 +4,18 @@ description: Объекты каталога Azure AD поддерживают �
 author: Licantrop0
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 03210e9c46776c4fbc92057870737a87c7e47371
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: eb8b5b7b8438f900535efd6ce625059919d76952
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366517"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443202"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Расширенные возможности запросов для объектов каталога Azure AD
 
 В Azure AD постоянно добавляются новые возможности, повышается стабильность, доступность и производительность этого решения. Одновременно ведется работа и над усовершенствованием Microsoft Graph для масштабирования и эффективного доступа к данным. Одно из направлений этого усовершенствования заключается в усилении поддержки возможностей расширенных запросов для различных объектов Azure AD и их свойств. Например, добавление операторов **Not** (`NOT`), **Not equals** (`ne`) и **Ends with** (`endsWith`) к параметру запроса `$filter` в октябре 2020 г.
 
-Механизм запросов Microsoft Graph использует хранилище индексов для выполнения запросов. Чтобы добавить поддержку дополнительных возможностей запросов для некоторых свойств, индексирование этих свойств теперь происходит на отдельном сервере. Благодаря этому отдельному индексированию в Azure AD расширена поддержка и повышена производительность запросов. Тем не менее, эти расширенные возможности запросов по умолчанию недоступны. Запрашивающий должен установить для заголовка **ConsistencyLevel** значение `eventual`, *а также*, за исключением `$search`, использовать параметр запроса `$count` (в виде [сегмента URL-адреса](/graph/query-parameters#other-odata-url-capabilities) или строки запроса `$count=true`). Заголовок **ConsistencyLevel** и `$count` называются *расширенными параметрами запроса*.
+Механизм запросов Microsoft Graph использует хранилище индексов для выполнения запросов. Чтобы добавить поддержку дополнительных возможностей запросов для некоторых свойств, индексирование этих свойств теперь происходит на отдельном сервере. Благодаря этому отдельному индексированию в Azure AD расширена поддержка и повышена производительность запросов. Тем не менее, эти расширенные возможности запросов по умолчанию недоступны. Запрашивающий должен установить для заголовка **ConsistencyLevel** значение `eventual`, *а также*, за исключением `$search`, использовать параметр запроса `$count`. Заголовок **ConsistencyLevel** и `$count` называются *расширенными параметрами запроса*.
 
 Например, если нужно получить только учетные записи неактивных пользователей, можно выполнить любой из этих запросов, использующих параметр запроса `$filter`.
 
@@ -63,7 +63,7 @@ ConsistencyLevel: eventual
 | Использование `$filter` с операторами `ne` и `NOT`                           | 
   [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                     |
 | Использование `$filter` с операторами `NOT` и `startsWith`                   | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
 | Использование функции OData cast с другим параметром запроса                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 
 > [!NOTE]
@@ -115,7 +115,7 @@ https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-`$search` для ресурсов Azure AD, производных от [directoryObject](/graph/api/resources/directoryobject), работает только в расширенных запросах. Если заголовок **ConsistencyLevel** не указан, запрос возвращает ошибку.
+Для объектов каталога `$search` поддерживается только в расширенных запросах. Если заголовок **ConsistencyLevel** не указан, запрос возвращает ошибку.
 
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
@@ -138,7 +138,7 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 Если свойство или параметр запроса в URL-адресе поддерживаются только в расширенных запросах, но отсутствует заголовок **ConsistencyLevel** или строка запроса `$count=true`, то запрос возвращает ошибку.
 
 ```http
-https://graph.microsoft.com/beta/users?$filter=endsWith(mail,'@outlook.com')
+https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
 
 ```json

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 91e2bfdddb5df01e1531d68de3a6b3167ed2156d
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: b5ddbe242d130815f1f30009ac0687fd7bc62142
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366585"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53429985"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -60,6 +60,9 @@ ms.locfileid: "53366585"
 |[Удаление проверенного издателя](../api/application-unsetverifiedpublisher.md)| Нет | Удаление проверенного издателя приложения.|
 
 ## <a name="properties"></a>Свойства
+
+> [!IMPORTANT]
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|

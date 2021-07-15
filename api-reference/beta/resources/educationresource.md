@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: df2e9b0c49085503e76d56643a755e74e2f0cfaa
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f82274782f84204be288c67365288891f64fedf6
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722407"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440948"
 ---
 # <a name="educationresource-resource-type"></a>тип ресурсов educationResource
 
@@ -52,7 +52,6 @@ ms.locfileid: "50722407"
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 061252bb8006cbb3ce195ea656c7dbc50334f66a
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 3a6c02b4f70cce4ac44090f5981372096fa17bce
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401311"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443128"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph
 
@@ -36,19 +36,19 @@ API Поиска (Майкрософт) предоставляет единую 
 
 ## <a name="what-data-can-i-add-or-access-by-using-the-microsoft-search-api"></a>Какие данные можно добавить и к каким получить доступ с помощью API Поиска (Майкрософт)?
 
-API Поиска (Майкрософт) поддерживает поиск следующего контента в Microsoft Cloud:
+API Поиска (Майкрософт) поддерживает поиск следующего контента в Microsoft Cloud: 
 
-- Объекты [сообщений](/graph/api/resources/message) электронной почты и [события](/graph/api/resources/event) календаря Outlook
-- Файлы и папки в SharePoint и OneDrive ([driveItem](/graph/api/resources/driveitem)), [списки](/graph/api/resources/list), [listItem](/graph/api/resources/listitem) [сайты](/graph/api/resources/site) и [диски.](/graph/api/resources/drive)
-- [Пользователи](/graph/api/resources/person) в организации, наиболее релевантные для пользователя
-- Содержимое, отправляемое через платформу Graph Connectors: [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) (предварительная версия)
+- Ресурсы [message](/graph/api/resources/message) почты Outlook и [event](/graph/api/resources/event) календаря.
+- Файлы и папки в SharePoint и OneDrive (ресурсы [driveItem](/graph/api/resources/driveitem)), ресурсы [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site) и [drive](/graph/api/resources/drive).
+- Ресурсы [person](/graph/api/resources/person) в организации, наиболее релевантные для пользователя.
+- Содержимое, отправляемое через платформу соединителей Microsoft Graph: ресурсы [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="api-reference"></a>Справочные материалы по API
 
 Ищете справочные материалы по API для этой службы?
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-1.0)(версия 1.0)
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta)(предварительная версия)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)(версия 1.0)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)(предварительная версия)
 - [Использование API Поиска (Майкрософт) для индексирования данных](/graph/api/resources/indexing-api-overview) (предварительная версия)
 
 ## <a name="next-steps"></a>Дальнейшие действия
@@ -60,7 +60,7 @@ API Поиска (Майкрософт) поддерживает поиск сл
   - [Поиск сообщений Outlook](search-concept-messages.md)
   - [Поиск событий календаря](search-concept-events.md)
   - [Поиск содержимого в OneDrive и SharePoint](search-concept-files.md)
-  - [Поиск внешнего контента](search-concept-custom-types.md) (предварительная версия)
+  - [Поиск внешнего контента](search-concept-custom-types.md)
   - [Поиск человека](search-concept-person.md) (предварительная версия)
   - [Сортировка результатов поиска](search-concept-sort.md) (предварительная версия)
   - [Уточнение результатов поиска](search-concept-aggregation.md) (предварительная версия)

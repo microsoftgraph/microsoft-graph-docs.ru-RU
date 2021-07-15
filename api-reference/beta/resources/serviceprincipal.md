@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f645a7086759293e555e6db212cb2be0ed988eb3
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 23b8155781e1d6a32140adb403f9fd6bd446cb83
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366910"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53428817"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -84,6 +84,9 @@ ms.locfileid: "53366910"
 |[deletePasswordSingleSignOnCredentials](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md)|Нет|Удаление набора учетных данных для пользователя или группы, указанных в основном тексте.|
 
 ## <a name="properties"></a>Свойства
+
+> [!IMPORTANT]
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|

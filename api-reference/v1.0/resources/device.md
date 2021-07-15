@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f409c696bfc5e912edc9776a34c76a55e864f399
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: f79ebeee2cce60ee225383556ef89a0aa124089d
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366956"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430209"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -40,6 +40,10 @@ ms.locfileid: "53366956"
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 
 ## <a name="properties"></a>Свойства
+
+> [!IMPORTANT]
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обязательный. Значение по умолчанию: `true`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`).|
@@ -47,9 +51,9 @@ ms.locfileid: "53366956"
 |approximateLastSignInDateTime|DateTimeOffset| Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Поддерживает `$filter` `eq` `ne` (, `NOT` , `ge` , , , ) `le` и `$orderBy` . |
 |complianceExpirationDateTime|DateTimeOffset| Время, когда устройство больше не считается совместимым. Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 |deviceId|String| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
-|deviceMetadata|String| Только для внутреннего использования. Установите `null` для . |
+|deviceMetadata|String| Только для внутреннего использования. Установите значение `null`. |
 |deviceVersion|Int32| Только для внутреннего использования. |
-|displayName|String|Отображаемое имя устройства. Обязательный параметр. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `$search`) и `$orderBy`.  |
+|displayName|String|Отображаемое имя устройства. Обязательный параметр. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$search` и `$orderBy`.  |
 |id|String|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
 |isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Только для чтения. Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `NOT`).|
 |isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `NOT`). |

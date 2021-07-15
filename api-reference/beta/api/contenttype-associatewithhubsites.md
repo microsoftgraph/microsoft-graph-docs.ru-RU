@@ -5,12 +5,12 @@ description: Связать тип контента со списком узло
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: dbddfcd4f2f3fc94c9be4ebf30aeb0c8522ea855
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 89d80568ea0d0099e54d2d912bb7acb32c31f307
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947018"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53439464"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -19,7 +19,7 @@ ms.locfileid: "50947018"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Связывать [тип контента][contentType] со списком сайтов-концентраторов.
 
->**Примечание:** Эта функция ограничена для клиентов с лицензией SharePoint Syntex.
+>**Примечание:** Эта функция ограничена для клиентов, у SharePoint Syntex лицензии.
   
 
 ## <a name="permissions"></a>Разрешения  
@@ -32,7 +32,7 @@ ms.locfileid: "50947018"
 |:--------------------|:---------------------------------------------------------
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -42,7 +42,7 @@ ms.locfileid: "50947018"
 }
 -->
 ```http
-POST /sites/id/contentTypes/id/associateWithHubSites
+POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,7 +59,7 @@ POST /sites/id/contentTypes/id/associateWithHubSites
 |Параметр|Тип|Описание|
 |-|-|-|
 |hubSiteUrls| Коллекция (строка) |Список пушечных URL-адресов для узлов, на которых необходимо применять тип контента. Обязательный.|
-|propagateToExistingLists| Boolean |Если типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь `true` созданным спискам. 
+|propagateToExistingLists| Логический |Если типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь `true` созданным спискам. 
 
 ## <a name="response"></a>Ответ
 

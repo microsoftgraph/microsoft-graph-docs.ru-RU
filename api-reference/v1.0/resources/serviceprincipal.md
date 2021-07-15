@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2844ec85d6cff4c617643db1aa6330399a4f0911
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 5a1a2322ac1b6b849a9ec4181a2dd3d92e157b42
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366893"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53428829"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -76,6 +76,10 @@ ms.locfileid: "53366893"
 |[Удаление типа ресурса tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md)| Удаление типа ресурса tokenLifetimePolicy из объекта.|
 
 ## <a name="properties"></a>Свойства
+
+> [!IMPORTANT]
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
 | accountEnabled |Логический| Значение `true`, если учетная запись субъекта-службы включена. В противном случае используется значение `false`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`).|
