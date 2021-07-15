@@ -4,12 +4,12 @@ description: Microsoft Graph поддерживает параметр запр�
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c552f510eb65370cd331784c98ea7359b278a56d
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 6e158d1d631536b11799b0b638b018dbbc98ef94
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367012"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443111"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Использование параметра поискового запроса для сопоставления с условием поиска
 
@@ -37,21 +37,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 | Свойство электронных писем, по которому можно выполнять поиск                | Описание | Пример 
 |:-------------------------|:------------|:---------|
-| **attachment**           | Имена файлов, вложенных в сообщение электронной почты.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
-| **bcc**           | Поле **Скрытая копия** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **body**           | Текст сообщения электронной почты.|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | Поле **Копия** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
-| **from**           | Отправитель сообщения электронной почты, на которого указывает SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | Значение TRUE означает, что сообщение электронной почты содержит вложение, не являющееся встроенным. В противном случае задается значение FALSE. |[`me/messages?$search="hasAttachments:true"`][search-from-example]
-| **importance**           | Важность сообщения, которую отправитель может указать при отправке. Возможные значения — `low`, `medium` и `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **kind**           | Тип сообщения. Допустимые значения — `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` и `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
-| **participants**           | Такие поля сообщения электронной почты, как **От**, **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="participants:danas"`][search-part-example]
-| **received**           | Дата получения сообщения адресатом.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **recipients**           | Такие поля сообщения электронной почты, как **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
-| **sent**           | Дата отправки сообщения отправителем.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **size**           | Размер элемента в байтах.|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **subject**           | Текст в строке темы сообщения электронной почты.|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
-| **to**           | Поле **Кому** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+| **attachment**           | Имена файлов, вложенных в сообщение электронной почты.|[GET][search-att-example] `../me/messages?$search="attachment:api-catalog.md"`
+| **bcc**           | Поле **Скрытая копия** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[GET][search-bcc-example] `../me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`
+| **body**           | Текст сообщения электронной почты.|[GET][search-body-example] `../me/messages?$search="body:excitement"`
+| **cc**           | Поле **Копия** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[GET][search-cc-example] `../me/messages?$search="cc:danas"&$select=subject,ccRecipients`
+| **from**           | Отправитель сообщения электронной почты, на которого указывает SMTP-адрес, отображаемое имя или псевдоним.| [GET][search-from-example] `../me/messages?$search="from:randiw"&$select=subject,from`
+| **hasAttachment** | Значение TRUE означает, что сообщение электронной почты содержит вложение, не являющееся встроенным. В противном случае задается значение FALSE. | [GET][search-from-example] `../me/messages?$search="hasAttachments:true"`
+| **importance**           | Важность сообщения, которую отправитель может указать при отправке. Возможные значения — `low`, `medium` и `high`.|[GET][search-imp-example] `../me/messages?$search="importance:high"&$select=subject,importance`
+| **kind**           | Тип сообщения. Допустимые значения — `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` и `voicemail`.| [GET][search-kind-example] `../me/messages?$search="kind:voicemail"`
+| **participants**           | Такие поля сообщения электронной почты, как **От**, **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.| [GET][search-part-example] `../me/messages?$search="participants:danas"`
+| **received**           | Дата получения сообщения адресатом.| [GET][search-rcvd-example] `../me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`
+| **recipients**           | Такие поля сообщения электронной почты, как **Кому**, **Копия** и **Скрытая копия**, где указан SMTP-адрес, отображаемое имя или псевдоним.| [GET][search-rcpts-example] `../me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`
+| **sent**           | Дата отправки сообщения отправителем.|[GET][search-sent-example] `../me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`
+| **size**           | Размер элемента в байтах.|[GET][search-size-example] `../me/messages?$search="size:1..500000"`
+| **subject**           | Текст в строке темы сообщения электронной почты.|[GET][search-sbj-example] `../me/messages?$search="subject:has"&$select=subject`
+| **to**           | Поле **Кому** в сообщении электронной почты, где указан SMTP-адрес, отображаемое имя или псевдоним.|[GET][search-to-example]`.../me/messages?$search="to:randiw"&$select=subject,toRecipients`
 
 
 Дополнительные сведения о доступных для поиска свойствах, синтаксисе KQL, поддерживаемых операторах и подсказках для поиска вы найдете в таких статьях:
@@ -136,13 +136,13 @@ Content-type: application/json
 
 > **Примечание**. После разметки маркеры сопоставляются независимо от исходного регистра, и они сопоставляются в любом порядке.
 
-Поддержка поиска с разметкой работает только в полях **displayName** и **description**. Любое поле строкового типа можно поместить в `$search`, поля, отличные от **displayName** и **description** по умолчанию представляют собой поведение `$filter` `startswith`. Например:
+Поддержка поиска с разметкой работает только в полях **displayName** и **description**. Любое поле строкового типа можно поместить в `$search`; поля, отличные от **displayName** и **description**, по умолчанию представляют поведение `$filter` `startswith`. Например:
 
-`https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
+`https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo"`
 
 В результате будут выводиться все группы с именами типа "OneVideo". `$search` можно использовать вместе с `$filter`. Пример:
 
-`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
+`https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
 
 В результате будут выводиться все группы с включенной поддержкой почты с именами типа "OneVideo". Результаты ограничены на основе логического соединения `$filter` ("И") и всего запроса в `$search`. Искомый текст маркируется с учетом регистра, но совпадения выполняются без его учета. Например, "OneVideo" разбивается на два маркера ввода "one" и "video", но не учитывает регистр.
 
@@ -161,17 +161,14 @@ Content-type: application/json
 | Класс объекта | Описание | Пример |
 | ------------ | ----------- | ------- |
 | Пользователь | Отображаемое имя пользователя из адресной книги. | 
-  [
-  https://graph.microsoft.com/beta/users?$search="displayName:Guthr"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$search="displayName:Guthr"`  |
 | Пользователь | Отображаемое имя пользователя или электронная почта из адресной книги. | 
-  [
-  https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22%20OR%20%22mail%3AGuthr%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24search%3D%22displayName%3AGuthr%22%20OR%20%22mail%3AGuthr%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Группа | Отображаемое имя пользователя или описание из адресной книги. | 
-  [
-  https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24search%3D%22description%3AOne%22%20AND%20(%22displayName%3AVideo%22%20OR%20%22displayName%3ADrive%22)&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24search%3D%22description%3AOne%22%20AND%20(%22displayName%3AVideo%22%20OR%20%22displayName%3ADrive%22)&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive"` |
 | Группа | Отображаемое имя адресной книги в группе с поддержкой почты. | 
-  [
-  https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%20eq%20true%26%24search%3D%22displayName%3AOneVideo%22&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
+  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DmailEnabled%20eq%20true%26%24search%3D%22displayName%3AOneVideo%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+
 
 Строки ввода, указанные в `$search`, а также свойства для поиска, разделяются на части с помощью пробелов, различных регистров и типов символов (чисел и специальных символов).
 
