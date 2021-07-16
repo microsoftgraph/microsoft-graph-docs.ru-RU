@@ -382,7 +382,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -12298,7 +12298,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -12558,7 +12558,7 @@ items:
                     href: api/personname-update.md
                   - name: Удаление
                     href: api/personname-delete.md
-              - name: Заметки
+              - name: Примечания
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -13535,7 +13535,7 @@ items:
                   - name: Создание
                     href: api/termstore-group-post.md
                   - name: Получение
-                    href: api/termstore-store-get-group.md
+                    href: api/termstore-group-get.md
                   - name: Удаление
                     href: api/termstore-group-delete.md
                   - name: Список
