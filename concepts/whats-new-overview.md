@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b2e5cbb811e7e606fd57a9c967c40bc3956a2c58
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 873e6fa03fd02470eb520657573556266de6f2a7
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236215"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443209"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -16,6 +16,35 @@ ms.locfileid: "53236215"
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
+
+## <a name="july-2021-new-and-generally-available"></a>Июль 2021 г.: новые и общедоступные возможности
+
+### <a name="cloud-communications--calls"></a>Облачные коммуникации | Звонки
+Поддержка ограничения емкости для количества участников, которое приложение может обрабатывать при [ответе](/graph/api/call-answer) на [вызов](/graph/api/resources/call), в организациях, внедряющих [запись звонков на основе политики Teams](/microsoftteams/teams-recording-policy).
+
+### <a name="users"></a>Пользователи
+Позвольте пользователям [менять собственный пароль](/graph/api/user-changepassword) без роли администратора.
+
+
+## <a name="july-2021-new-in-preview-only"></a>Июль 2021 г.: новые возможности только в предварительной версии
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+Локальное подключение [проверки работоспособности ](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) может выявлять больше возможных типов ошибок проверки работоспособности.
+- Учетная запись облачного ПК не найдена в подразделении (`adJoinCheckComputerObjectAlreadyExists`).
+- Объект облачного ПК не найден в Azure AD (`azureAdDeviceSyncCheckDeviceNotFound`).
+- Превышено время ожидания с момента проверки синхронизации объекта облачного ПК с Azure AD (`azureAdDeviceSyncCheckLongSyncCircle`). 
+
+Подробные сведения и рекомендуемые действия по исправлению см. в [справочных материалах](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values).
+
+### <a name="devices-and-apps--multi-tenant-management"></a>Устройства и приложения | Управление несколькими клиентами
+Дебютный выпуск [Microsoft 365 Lighthouse API](managedtenants-concept-overview.md), который позволяет поставщикам управляемых служб удаленно управлять несколькими пользовательскими клиентами в масштабе для обеспечения соответствия требованиям и обнаружения угроз, а также обеспечивать работоспособное и безопасное состояние устройств клиента.
+
+### <a name="search"></a>Поиск
+Используйте [API Поиска (Майкрософт) для получения сведений о людях](search-concept-person.md), наиболее релевантных для пользователя. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-отношениями. 
+
+### <a name="teamwork"></a>Командная работа
+- [Подпишитесь на уведомления об изменениях в ресурсе чата](teams-changenotifications-chat.md).
+- [Подпишитесь на уведомления об изменениях пользователей в чате](teams-changenotifications-chatmembership.md), в [канале](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или в [группе](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) (например, ресурсы [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true)).
 
 ## <a name="june-2021-new-and-generally-available"></a>Июнь 2021 г.: новые и общедоступные возможности
 
@@ -75,58 +104,6 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 ### <a name="teamwork--shifts"></a>Командная работа | Смены
 - Поддержка сущностей [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true) и [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) для синхронных уведомлений об изменениях.
 - Поддержка управления ресурсами и распространенными функциями [карточки времени](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true), такими как [clock in](/graph/api/timecard-clockin?view=graph-rest-beta&preserve-view=true), [clock out](/graph/api/timecard-clockout?view=graph-rest-beta&preserve-view=true), [start break](/graph/api/timecard-startbreak?view=graph-rest-beta&preserve-view=true), [end break](/graph/api/timecard-endbreak?view=graph-rest-beta&preserve-view=true), [confirm](/graph/api/timecard-confirm?view=graph-rest-beta&preserve-view=true) и [replace](/graph/api/timecard-replace?view=graph-rest-beta&preserve-view=true).
-
-## <a name="may-2021-new-and-generally-available"></a>Март 2021 г.: новые и общедоступные возможности
-
-### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
-Узнайте, когда принтер в последний раз взаимодействовал с функцией универсальной печати, с помощью свойства **lastSeenDateTime** объекта [printer](/graph/api/resources/printer).
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверения и доступ | Удостоверения и вход
-Получение и обновление ролей гостевых пользователей с помощью свойства **guestUserRoleId** объекта [authorizationPolicy](/graph/api/resources/authorizationpolicy).
-
-### <a name="mail"></a>Почта
-- [Создавайте черновики и отправляйте сообщения Outlook в формате MIME](outlook-send-mime-message.md), прикрепляйте цифровые подписи S/MIME и шифруйте содержимое сообщений в S/MIME.
-- Создайте [mailFolder](/graph/api/resources/mailfolder) как [скрытую папку](/graph/api/resources/mailfolder#hidden-mail-folders), [задав свойство isHidden](/graph/api/user-post-mailfolders#example).
-
-### <a name="microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
-Попробуйте следующие новые функции в Microsoft Graph Toolkit 2.2:
-- Компоненты [Файл](/graph/toolkit/components/file) и [Список файлов](/graph/toolkit/components/file-list)
-- [Поставщик проверки подлинности MSAL 2.0](/graph/toolkit/providers/msal2)
-- [Библиотека SharePoint Framework](/graph/toolkit/get-started/mgt-spfx)
-
-### <a name="reports--azure-ad-activity-reports"></a>Отчеты | Отчеты о действиях Azure AD
-Общая доступность API отчетов для [отображения списка](/graph/api/provisioningobjectsummary-list) действий, выполненных службой подготовки Azure AD, и связанных с ней свойств. Предыдущая бета-версия согласована с версией API 1.0.
-
-## <a name="may-2021-new-in-preview-only"></a>Март 2021 г.: новые возможности только в предварительной версии
-
-### <a name="connecting-external-content"></a>Подключение внешнего контента
-- При разработке соединителей учитывайте ограничения, связанные с [реализацией и работой](connecting-external-content-api-limits.md).
-- Попробуйте [API соединителей с Postman](connecting-external-content-connectors-api-postman.md).
-
-### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
-Запрос разрешений приложений с минимальными правами, `CloudPC.Read.All` или `CloudPC.ReadWrite.All`, для доступа к методам следующих ресурсов:
-  - Операции чтения и записи, а также метод [reprovision](/graph/api/cloudpc-reprovision?view=graph-rest-beta&preserve-view=true) ресурса [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
-  - Операции чтения и записи, а также метод [getSourceImages](/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta&preserve-view=true) ресурса [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true).
-  - Операции чтения и записи, а также метод [updateAdDomainPassword](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) ресурса [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true).
-  - Операции чтения и записи, а также метод [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) ресурса [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
-
-### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-Ежемесячные обновления Intune для бета-версии. Присвойте фильтру **Дата** значение "Июнь 2021 г." и найдите раздел с таким заголовком.
-
-### <a name="education"></a>Образование
-- [Настройте папку ресурсов SharePoint](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) для загрузки и хранения всех файловых ресурсов в одном месте для [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
-- [Настройте папку ресурсов SharePoint](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) для загрузки и хранения всех файловых ресурсов, таких как файл Word или Excel, в одном месте для [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
-
-### <a name="identity-and-access--governance"></a>Удостоверения и доступ | Управление
-- Получите коллекцию ресурсов [accessPackageAssignment](/graph/api/resources/accessPackageAssignment?view=graph-rest-beta&preserve-view=true) путем [фильтрации по пользователю, вошедшему в систему](/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).
-- Получите коллекцию ресурсов [accessPackageAssignmentRequest](/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta&preserve-view=true) путем [фильтрации по пользователю, вошедшему в систему](/graph/api/accesspackageassignmentrequest-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).
-
-### <a name="use-sdks"></a>Использование пакетов SDK
-Попробуйте предварительную версию [пакета SDK Microsoft Graph .NET версии 4](https://www.nuget.org/packages/Microsoft.Graph/4.0.0-preview.4) и воспользуйтесь следующими улучшениями:
-- Использование одного API для проверки подлинности в клиентах Microsoft Graph и Azure .NET.
-- Новая поддержка сериализации и десериализации JSON.
-- Удобный доступ к сведениям откликов.
-- Более удобные возможности обновления зависимостей.
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?

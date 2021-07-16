@@ -1,23 +1,23 @@
 ---
-title: Получить магазин
-description: Чтение свойств и связей объекта store.
+title: Get store
+description: Ознакомьтесь с свойствами и отношениями объекта магазина.
 author: mohitpcad
 localization_priority: Normal
-ms.prod: Sharepoint
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: fb94dd40644fc1c8ad3f1727fa41b9143f2b1e13
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 71f23420196bab347cfe74068602b128eada36f4
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874419"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456487"
 ---
-# <a name="get-store"></a>Получить магазин
+# <a name="get-store"></a>Get store
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей [объекта](../resources/termstore-store.md) store.
+Ознакомьтесь с свойствами и отношениями объекта [магазина.](../resources/termstore-store.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,6 +37,7 @@ ms.locfileid: "49874419"
 
 ``` http
 GET /termStore
+GET /sites/{site-id}/termStore
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,11 +47,13 @@ GET /termStore
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `200 OK` объект [store](../resources/termstore-store.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [магазина](../resources/termstore-store.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-a-termstore"></a>Пример 1. Получить терминStore
+
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,8 +84,41 @@ GET https://graph.microsoft.com/beta/termStore
 
 
 
-### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.termStore.store"
+} -->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{  
+  "id": "dad13b4b-3b4b-dad1-4b3b-d1da4b3bd1da",
+  "defaultLanguageTag" : "en-US",
+  "languageTags" : ["en-US", "de-DE", "fr-FR"]
+}
+```
+
+### <a name="example-2-get-a-site-collection-termstore"></a>Пример 2. Получить термин коллекция сайтовStore
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_store"
+}-->
+
+``` http
+GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f/termStore
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

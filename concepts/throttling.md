@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 482b4cd4dba1c3cf7e2f726820480bd5e990df35
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 6b812bed46b7f389b0796dc2f79a54282e886dbe
+ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151512"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430202"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -170,7 +170,7 @@ Microsoft Graph позволяет получать доступ к данным
 
 ### <a name="cloud-communication-service-limits"></a>Ограничения службы облачного взаимодействия
 
-| Ресурс      | Ограничения на приложение по клиенту    |
+| Ресурс      | Ограничения для каждого приложения    |
 | -------------- | ------------ |
 | [Звонки](/graph/api/resources/call) | 10 000 звонков в месяц и 100 параллельных вызовов   |
 | [Сведения о собрании](/graph/api/resources/meetinginfo)   | 2000 собраний на пользователя каждый месяц |
