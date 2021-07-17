@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 93b7e33bd072d4e92d15125a4009d5f33477326e
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6b4abe2f9c2c0060e97560a26c22d19ed53e01b7
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439893"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466966"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Создание accessPackageResourceRoleScope
 
@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса устройте представление JSON объекта [accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Включив в объект связи с [accessPackageResourceRole](../resources/accesspackageresourcerole.md) и [accessPackageResourceScope.](../resources/accesspackageresourcescope.md)
+В теле запроса устройте представление JSON объекта [accessPackageResourceRoleScope.](../resources/accesspackageresourcerolescope.md)  Включайте в объект связи с объектом [accessPackageResourceRole,](../resources/accesspackageresourcerole.md) который можно получить из запроса на список ролей ресурсов пакета доступа ресурса ресурса в каталоге, [](accesspackagecatalog-list-accesspackageresources.md) и [объект accessPackageResourceScope,](../resources/accesspackageresourcescope.md) который можно получить из запроса на список ресурсов пакета доступа с [](accesspackagecatalog-list-accesspackageresourceroles.md) `$expand=accessPackageResourceScopes` .
 
 ## <a name="response"></a>Отклик
 
@@ -59,7 +59,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.  Ресурс пакета доступа для группы уже должен быть добавлен в каталог пакетов доступа, содержащий этот пакет доступа.
+Ниже приведен пример запроса.  До этого запроса ресурс пакета доступа для группы уже должен быть добавлен в каталог пакета доступа, содержащий `1d08498d-72a1-403f-8511-6b1f875746a0` `b31fe1f1-3651-488f-bd9a-1711887fd4ca` этот пакет доступа.  Этот ресурс можно было бы добавить в каталог, [создав запрос ресурса](accesspackageresourcerequest-post.md)пакета доступа.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

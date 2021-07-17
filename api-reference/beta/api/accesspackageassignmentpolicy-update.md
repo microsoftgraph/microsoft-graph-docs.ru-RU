@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 32e93a6aa60793ba4fd30977d030dd2263a8c4c9
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: 36de78af3061a489a2cc8027c18185d302c62ba5
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298343"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466949"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "52298343"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | EntitlementManagement.ReadWrite.All |
+|Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,8 +50,8 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображает имя политики.|
-|description|Строка|Описание политики.|
+|displayName|String|Отображает имя политики.|
+|description|String|Описание политики.|
 |canExtend|Логический|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
@@ -101,7 +101,7 @@ Content-length: 1000
         "approvalStages": [{
                 "approvalStageTimeOutInDays": 14,
                 "isApproverJustificationRequired": true,
-                "isEscalationEnabled": true,
+                "isEscalationEnabled": false,
                 "escalationTimeInMinutes": 11520,
                 "primaryApprovers": [{
                         "@odata.type": "#microsoft.graph.groupMembers",
@@ -116,9 +116,6 @@ Content-length: 1000
                 ]
             }
         ]
-    },
-    "accessReviewSettings": {
-        "isEnabled": false
     },
     "questions": [{
         "isRequired": false,

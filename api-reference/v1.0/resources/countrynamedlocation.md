@@ -1,22 +1,22 @@
 ---
 title: тип ресурса countryNamedLocation
-description: Представляет расположение Azure Active Directory с именем, определенное странами и регионами. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+description: Представляет расположение Azure Active Directory, определенное странами и регионами. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 94d9a422bf7a183fa0d780fbc0197fe4d4655b66
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 531942e5026e2fc3d4d9ed3311d9130275d5a853
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721252"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443167"
 ---
 # <a name="countrynamedlocation-resource-type"></a>тип ресурса countryNamedLocation
 
 Пространство имен: microsoft.graph
 
-Представляет расположение Azure Active Directory с именем, определенное странами и регионами. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+Представляет расположение Azure Active Directory, определенное странами и регионами. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 
 Наследует от [namedLocation](../resources/namedLocation.md)
 
@@ -34,7 +34,8 @@ ms.locfileid: "50721252"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Коллекция объектов string|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
+|countryLookupMethod|countryLookupMethodType|Определяет, какой метод используется для определения страны, в которой находится пользователь. Возможные значения: `clientIpAddress` и `authenticatorAppGps`.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |displayName|String|Понятное человеку имя расположения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
@@ -60,6 +61,7 @@ ms.locfileid: "50721252"
 ```json
 {
   "countriesAndRegions": ["String"],
+  "countryLookupMethod": "String",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
@@ -77,4 +79,3 @@ ms.locfileid: "50721252"
   "section": "documentation",
   "tocPath": ""
 }-->
-

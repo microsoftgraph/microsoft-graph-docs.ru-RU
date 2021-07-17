@@ -5,12 +5,12 @@ description: Публикация типа контента, присутств�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 2137c9fe371103d68785e67cfc815a15dba2ec54
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d69cbdabbb82612945dc6df85617e50bc2ca5b2c
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770445"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467087"
 ---
 # <a name="contenttype-publish"></a>contentType: публикация
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50770445"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Sites.FullControl.All    |
-|Для приложений | Sites.FullControl.All |
+|Приложение | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ ms.locfileid: "50770445"
 POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
 
->**Примечание:** SiteId представляет веб-узел типа контента.
+>**Примечание:** `siteId` представляет веб-узел типа контента.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|

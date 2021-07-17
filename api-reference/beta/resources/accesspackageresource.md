@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9c7b5e91c191ceaa747393e42e278bf9146bdc3a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 14bbbe23fca77f8fef06a2cb546cd0b1fdcc1949
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722204"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467115"
 ---
 # <a name="accesspackageresource-resource-type"></a>тип ресурса accessPackageResource
 
@@ -36,19 +36,19 @@ ms.locfileid: "50722204"
 |description|String|Описание ресурса.|
 |displayName|String|Отображает имя ресурса, например имя приложения, имя группы или имя сайта.|
 |id|String| Только для чтения.|
-|isPendingOnboarding|Boolean|True, если ресурс еще не доступен для назначения.|
+|isPendingOnboarding|Логический|True, если ресурс еще не доступен для назначения.|
 |OriginId|String|Уникальный идентификатор ресурса в системе происхождения. В случае группы Azure AD это идентификатор группы. |
 |originSystem|String|Тип ресурса в системе происхождения, например `SharePointOnline` , `AadApplication` или `AadGroup` .|
-|resourceType|String|Тип ресурса, например, подключенное приложение Azure AD или сайт `Application` `SharePoint Online Site` SharePoint Online.|
+|resourceType|String|Тип ресурса, например, подключенное приложение `Application` Azure AD или веб-SharePoint `SharePoint Online Site` Online.|
 |url|String|Уникальный локатор ресурсов для ресурса, например URL-адрес для подписания пользователя в приложение.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| Допускается значение null.|
-|accessPackageResourceRoles|[коллекция accessPackageResourceRole](accesspackageresourcerole.md)| Только для чтения. Допускается значение null.|
-|accessPackageResourceScopes|[коллекция accessPackageResourceScope](accesspackageresourcescope.md)| Только для чтения. Допускается значение null.|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](accesspackageresourceenvironment.md)| Допускается значение null. Поддерживает `$expand`.|
+|accessPackageResourceRoles|[коллекция accessPackageResourceRole](accesspackageresourcerole.md)| Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|accessPackageResourceScopes|[коллекция accessPackageResourceScope](accesspackageresourcescope.md)| Только для чтения. Допускается значение null. Поддерживает `$expand`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

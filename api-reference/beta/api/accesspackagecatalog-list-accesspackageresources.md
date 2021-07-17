@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: be2ad10b946574ca48b93ada1d7833262f127059
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3aaeddef635a80bb8a54d3680281b8b9edae98ae
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048563"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466952"
 ---
 # <a name="list-accesspackageresources"></a>Список accessPackageResources
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры запросов OData для настройки ответа. Например, чтобы получить области и среды пакета доступа для каждого ресурса, включайте `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment` в запрос. Чтобы получить доступные роли ресурса, включай `$expand=accessPackageResourceRoles` . Чтобы получить только ресурсы для приложений, а не групп или сайтов, включайте `$filter=resourceType eq 'Application'` запрос. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -60,7 +60,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
+Ниже приводится пример запроса с помощью фильтра для выбора ресурсов определенного типа и возврата областей ресурсов `$expand` каждого ресурса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -69,7 +69,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources?$filter=resourceType eq 'Application'&$expand=accessPackageResourceScopes
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageresources-csharp-snippets.md)]
@@ -115,11 +115,23 @@ Content-type: application/json
       "description": "Example application",
       "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
       "resourceType": "Application",
-      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e"
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "accessPackageResourceScopes": [
+         {
+            "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
+            "displayName": "Root",
+            "description": "Root Scope",
+            "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+            "originSystem": "AadApplication",
+            "isRootScope": true
+         }
+      ]
     }
   ]
 }
 ```
+
+https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/e71fafe7-9ccb-4c5a-a7b3-77ec35e83e3c/accessPackageResources
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -1,41 +1,45 @@
 ---
-title: Тип ресурса accessPackageSubject
+title: тип ресурсов accessPackageSubject
 description: В управлении правами Azure AD субъект назначения пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3f5bbd3147b27193d8a8e8a3e4bea3914719124c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0adfca021ec463029a4b35c047ac85f8ce52921b
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161784"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467066"
 ---
-# <a name="accesspackagesubject-resource-type"></a>Тип ресурса accessPackageSubject
+# <a name="accesspackagesubject-resource-type"></a>тип ресурсов accessPackageSubject
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)субъектом пакета доступа является пользователь, субъект-служба или другая сущность, которую можно настроить для запроса или получения пакета доступа.
+В управлении правами [Azure AD](entitlementmanagement-root.md)субъект пакета доступа — это пользователь, руководитель службы или другая сущность, которую можно настроить для запроса или присвоения пакета доступа.  Он может представлять запросителя из связанной организации, который еще не находится в клиенте.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображаемого имени темы.|
-|email|String|Адрес электронной почты темы.|
+|displayName|String|Отображение имени субъекта.|
+|email|String|Адрес электронной почты субъекта.|
 |id|String| Только для чтения.|
-|objectId|String|ИД объекта темы.|
-|principalName|String|Имя субъекта( если известно) темы.|
-|type|String|Тип ресурса темы.|
+|objectId|String|Идентификатор объекта субъекта. `null` если субъект еще не является пользователем в клиенте.|
+|principalName|String|Основное имя, если известно, субъекта.|
+|type|String|Тип ресурса субъекта.|
+|connectedOrganizationId|String|Идентификатор связанной организации субъекта.|
 
 ## <a name="relationships"></a>Связи
 
-Отсутствуют.
+| Связь | Тип        | Описание |
+|:-------------|:------------|:------------|
+|connectedOrganization|[connectedOrganization](connectedorganization.md)| Подключенная организация субъекта. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -68,5 +72,4 @@ ms.locfileid: "50161784"
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

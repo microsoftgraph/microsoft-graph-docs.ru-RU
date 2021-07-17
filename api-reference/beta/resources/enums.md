@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 724110fb32fc225cc9fb0617c97ce2a7b752a6b6
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: d4cac5a2b0d7b5d9c2e6a969da7e8c05c85322fb
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401563"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467136"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -146,7 +146,7 @@ ms.locfileid: "53401563"
 |Целое число|
 |Справочные материалы|
 |В двоичном формате|
-|Boolean|
+|Логический|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -2006,13 +2006,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2154,20 +2154,6 @@ Enum для серьезности оповещений.
 | предложено              | 1     | Подключенные организации, автоматически созданные системой, имеют это значение состояния. Они не включены в политики назначения с типом области `AllConfiguredConnectedOrganizationSubjects` запроса.   |
 | unknownFutureValue    | 2     | Член-часовой.                                                                                                                                                                                                 |
 
-### <a name="identitysourcetype-values"></a>значения identitySourceType
-
-|Member|
-|:---|
-|azureActiveDirectory|
-|внешние|
-
-### <a name="externalgroupmembertype-values"></a>значения externalGroupMemberType
-
-|Member|
-|:---|
-|пользователь|
-|group|
-
 ### <a name="identityuserflowattributedatatype-values"></a>значения identityUserFlowAttributeDataType
 
 | Элемент                | Значение | Описание                         |
@@ -2187,15 +2173,6 @@ Enum для серьезности оповещений.
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
 |Обязательный|3||
 | unknownFutureValue    | 4      | Член-часовой.                                                 |
-
-### <a name="connectionstate-values"></a>значения connectionState
-
-|Member|
-|:---|
-|черновик|
-|готово|
-|устаревший|
-|limitExceeded|
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType
 
@@ -2457,7 +2434,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|channel|
+|канал|
 |чат|
 |unknownFutureValue|
 

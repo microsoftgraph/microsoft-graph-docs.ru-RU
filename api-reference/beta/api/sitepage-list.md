@@ -6,12 +6,12 @@ title: Список страниц на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1c8559fdc469823b3218a8af93ccda0d10ec357b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 342e7432b000b5ee6632b55857369ad70cad77e6
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475711"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53466930"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Список страниц в списке страниц сайта
 
@@ -39,12 +39,11 @@ ms.locfileid: "50475711"
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages
-
 ```
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 <!-- 
 { 
@@ -59,7 +58,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- 
 { 

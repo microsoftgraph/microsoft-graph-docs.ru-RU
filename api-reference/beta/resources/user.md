@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: dd51efc4c446449c8f09b89df0c977f5cc7ada65
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 3fdde34ec80f1436a28a8b015f91eddff615ea44
+ms.sourcegitcommit: 73bbf84e6f5dbc8c3db8ed2c48cc5ab9ae3cff78
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401549"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456424"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -218,7 +218,7 @@ ms.locfileid: "53401549"
 | onPremisesSyncEnabled | Логический | Значение `true` указывает, что этот объект синхронизируется из локального каталога. Значение `false` указывает, что этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение `null` указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
 | onPremisesUserPrincipalName | String | Содержит локальный параметр `userPrincipalName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | Коллекция строк | Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>ПРИМЕЧАНИЕ. Значение свойства может содержать символы с диакритикой, но они могут создавать для пользователей проблемы с доступом к приложениям внутренней разработки.<br><br>Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
-| passwordPolicies | String | Задает политики паролей для пользователя. Это свойство представляет собой перечисление с возможным значением `DisableStrongPassword`. Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение `DisablePasswordExpiration`. Два значения можно указать одновременно. Пример: `DisablePasswordExpiration, DisableStrongPassword`.<br><br>Поддерживает `$filter` (`ne`, `NOT`).|
+| passwordPolicies | String | Задает политики паролей для пользователя. Это свойство представляет собой перечисление с возможным значением `DisableStrongPassword`. Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение `DisablePasswordExpiration`. Два значения можно указать одновременно. Пример: `DisablePasswordExpiration, DisableStrongPassword`. Дополнительные сведения о политиках паролей по умолчанию см. в статье [Политики паролей Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts). <br><br>Поддерживает `$filter` (`ne`, `NOT`).|
 | passwordProfile | [passwordProfile](passwordprofile.md) | Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль. **ПРИМЕЧАНИЕ.** Для клиентов Azure B2C свойству **forceChangePasswordNextSignIn** должно быть присвоено значение `false` и вместо этого должны использоваться настраиваемые политики и пользовательские потоки для принудительного сброса пароля при первом входе. См. раздел [Принудительный сброс пароля при первом входе](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon). <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`).|
 | pastProjects | Коллекция строк | Список предыдущих проектов пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
 | postalCode | String | Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код. Максимальная длина 40 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|

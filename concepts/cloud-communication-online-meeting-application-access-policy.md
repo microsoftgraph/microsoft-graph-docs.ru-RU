@@ -4,12 +4,12 @@ description: Узнайте, как настроить приложения дл
 author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: fa3771c1325f0c2a5f10b425e2eca51e9d1534ac
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 331a3873aa619c6f86fc8109fc6f572d990f9686
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896706"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467171"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Разрешить приложениям получать доступ к собраниям в Интернете от имени пользователя
 
@@ -44,6 +44,13 @@ ms.locfileid: "52896706"
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
+   ```
+5. (Необязательный) Предоставление политики для всего клиента. Это применимо к пользователям, которым не назначена политика доступа к приложениям. Подробные сведения см. в разделе [](#see-also) ссылки на раздел cmdlet.
+
+   Запустите следующий комдлет, заменив аргумент **PolicyName.**
+
+   ```powershell
+   Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Global
    ```
 
 > [!NOTE]

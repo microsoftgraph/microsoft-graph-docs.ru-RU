@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0f5c1f1e6bb9f0f204a1db7222c6b656eed77333
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 1644621bfff2d33347204256a9c76a5c17129b54
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53366606"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53440537"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -48,10 +48,10 @@ POST /identityGovernance/accessReviews/definitions
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Имя серии обзоров доступа. Обязательный.|
-| descriptionForAdmins | string | Контекст обзора, предоставленного администраторам. Обязательный. |
-  descriptionForReviewers | string | Контекст обзора, предоставленного рецензентам. Обязательный. |
-| область | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный.| 
+| displayName | String | Имя серии обзоров доступа. Обязательный элемент.|
+| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. Обязательный элемент. |
+  descriptionForReviewers | String | Контекст обзора, предоставленного рецензентам. Обязательный элемент. |
+| область | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, рассмотренных в группе. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный элемент.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscheduledefinition.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи рассмотрели обзор собственного доступа). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
@@ -401,6 +401,8 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -472,6 +474,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
