@@ -519,7 +519,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -830,7 +830,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -839,7 +839,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1023,7 +1023,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1032,7 +1032,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1041,7 +1041,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1050,7 +1050,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1434,7 +1434,7 @@ items:
                 items:
                   - name: Session
                     href: resources/callrecords-session.md
-                  - name: Перечисление
+                  - name: List
                     href: api/callrecords-session-list.md
               - name: Вызовы PSTN
                 items:
@@ -1642,7 +1642,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Удаление элемента журнала
                     href: api/projectrome-delete-historyitem.md
-      - name: Резервирование для клиентов (ознакомительная версия)
+      - name: Запись клиентов (предварительная версия)
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Обзор
@@ -9253,7 +9253,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Обновление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: Перечисление
+                      - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Удаление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -11869,7 +11869,7 @@ items:
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Перечисление
+                      - name: List
                         href: api/accesspackageassignment-list.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -12892,7 +12892,7 @@ items:
                   - name: Подробный сводка "Опираясь на стороне"
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Перечисление
+                      - name: List
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -13174,68 +13174,62 @@ items:
                 href: resources/searchresponse.md
               - name: Данные запроса
                 href: api/search-query.md
-          - name: Индекс (предварительная версия)
+          - name: Index
             items:
               - name: Обзор
                 href: resources/indexing-api-overview.md
               - name: Внешнее подключение
                 items:
                   - name: Внешнее подключение
-                    href: resources/externalconnection.md
+                    href: resources/externalconnectors-externalconnection.md
                   - name: Список внешних подключений
-                    href: api/externalconnection-list.md
-                  - name: Внешние подключения
-                    href: api/externalconnection-get.md
+                    href: api/externalconnectors-externalconnection-list.md
                   - name: Создание внешнего подключения
-                    href: api/external-post-connections.md
+                    href: api/externalconnectors-external-post-connections.md
+                  - name: Внешние подключения
+                    href: api/externalconnectors-externalconnection-get.md
                   - name: Обновление внешнего подключения
-                    href: api/externalconnection-update.md
+                    href: api/externalconnectors-externalconnection-update.md
                   - name: Удаление внешнего подключения
-                    href: api/externalconnection-delete.md
-                  - name: Создание схемы
-                    href: api/externalconnection-post-schema.md
+                    href: api/externalconnectors-externalconnection-delete.md
                   - name: Получить операцию
-                    href: api/connectionoperation-get.md
-                  - name: Создание внешнего элемента
-                    href: api/externalconnection-put-items.md
+                    href: api/externalconnectors-connectionoperation-get.md
               - name: Схема
                 items:
                   - name: Схема
-                    href: resources/schema.md
-                  - name: Получение схемы
-                    href: api/schema-get.md
+                    href: resources/externalconnectors-schema.md
                   - name: Создание схемы
-                    href: api/externalconnection-post-schema.md
+                    href: api/externalconnectors-externalconnection-post-schema.md
+                  - name: Получение схемы
+                    href: api/externalconnectors-schema-get.md
               - name: Внешний элемент
                 items:
                   - name: Внешний элемент
-                    href: resources/externalitem.md
-                  - name: Создание
-                    href: api/externalconnection-put-items.md
-                  - name: Получение
-                    href: api/externalitem-get.md
-                  - name: Обновление
-                    href: api/externalitem-update.md
-                  - name: Удаление
-                    href: api/externalitem-delete.md
+                    href: resources/externalconnectors-externalitem.md
+                  - name: Создание внешнего элемента
+                    href: api/externalconnectors-externalconnection-put-items.md
+                  - name: Получить внешний элемент
+                    href: api/externalconnectors-externalitem-get.md
+                  - name: Обновление внешнего элемента
+                    href: api/externalconnectors-externalitem-update.md
+                  - name: Удаление внешнего элемента
+                    href: api/externalconnectors-externalitem-delete.md
               - name: Внешняя группа
                 items:
                   - name: Внешняя группа
-                    href: resources/externalgroup.md
-                  - name: Создание
-                    href: api/externalconnection-post-groups.md
-                  - name: Удаление
-                    href: api/externalgroup-delete.md
-                  - name: Создание участников
-                    href: api/externalgroup-post-members.md
+                    href: resources/externalconnectors-externalgroup.md
+                  - name: Создание внешней группы
+                    href: api/externalconnectors-externalconnection-post-groups.md
+                  - name: Удаление внешней группы
+                    href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
                   - name: Внешний член группы
-                    href: resources/externalgroupmember.md
-                  - name: Создание
-                    href: api/externalgroup-post-members.md
-                  - name: Удаление
-                    href: api/externalgroupmember-delete.md
+                    href: resources/externalconnectors-externalgroupmember.md
+                  - name: Создание внешнего участника группы
+                    href: api/externalconnectors-externalgroup-post-members.md
+                  - name: Удаление внешнего члена группы
+                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Graph Security API'
         items:
@@ -13413,7 +13407,7 @@ items:
                 href: api/list-create.md
               - name: Список дочерних сайтов
                 href: api/site-list-subsites.md
-              - name: Разрешения
+              - name: Permissions
                 items:
                   - name: Разрешение
                     href: resources/permission.md
@@ -13429,7 +13423,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: Перечисление
+              - name: List
                 href: resources/list.md
               - name: Получить списки на сайте
                 href: api/list-list.md
@@ -13529,7 +13523,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -13543,7 +13537,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Перечисление
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -13580,7 +13574,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -13911,7 +13905,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Удаление участника
                 href: api/teamworktagmember-delete.md
-          - name: Приложение.
+          - name: Приложение
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
@@ -14076,7 +14070,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Перечисление
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md

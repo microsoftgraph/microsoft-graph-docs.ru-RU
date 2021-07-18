@@ -224,7 +224,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: Перечисление
+              - name: List
                 href: api/user-list-approleassignments.md
               - name: Добавить
                 href: api/user-post-approleassignments.md
@@ -267,7 +267,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Предоставление делегированных разрешений
             items:
-              - name: Перечисление
+              - name: List
                 href: api/user-list-oauth2permissiongrants.md
           - name: Объекты каталога
             href: resources/directoryobject.md
@@ -360,7 +360,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -463,7 +463,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -566,7 +566,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: Перечисление
+              - name: List
                 href: api/group-list-approleassignments.md
               - name: Добавить
                 href: api/group-post-approleassignments.md
@@ -765,7 +765,7 @@ items:
                         href: api/application-delete-extensionproperty.md
               - name: Владельцы
                 items:
-                  - name: Перечисление
+                  - name: List
                     href: api/application-list-owners.md
                   - name: Добавить
                     href: api/application-post-owners.md
@@ -778,7 +778,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -787,7 +787,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -822,7 +822,7 @@ items:
               - name: Назначение ролей приложений
                 href: resources/approleassignment.md
                 items:
-                  - name: Перечисление
+                  - name: List
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Добавить
                     href: api/serviceprincipal-post-approleassignments.md
@@ -846,7 +846,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Предоставление делегированных разрешений
                 items:
-                  - name: Перечисление
+                  - name: List
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: Классификация делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
@@ -873,7 +873,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Владельцы
                 items:
-                  - name: Перечисление
+                  - name: List
                     href: api/serviceprincipal-list-owners.md
                   - name: Добавить
                     href: api/serviceprincipal-post-owners.md
@@ -886,7 +886,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -895,7 +895,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -932,7 +932,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -941,7 +941,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Перечисление
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -4945,7 +4945,7 @@ items:
                   - name: Определение расписания просмотра доступа
                     href: resources/accessreviewscheduledefinition.md
                     items:
-                      - name: Перечисление
+                      - name: List
                         href: api/accessreviewscheduledefinition-list.md
                       - name: экземпляры списков;
                         href: api/accessreviewscheduledefinition-list-instances.md
@@ -4962,7 +4962,7 @@ items:
                   - name: Экземпляр проверки доступа
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: Перечисление
+                      - name: List
                         href: api/accessreviewinstance-list.md
                       - name: Список решений
                         href: api/accessreviewinstance-list-decisions.md
@@ -5206,7 +5206,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -5646,6 +5646,46 @@ items:
                 href: resources/searchresponse.md
               - name: Данные запроса
                 href: api/search-query.md
+          - name: Index
+            items:
+              - name: Обзор
+                href: resources/indexing-api-overview.md
+              - name: Внешнее подключение
+                items:
+                  - name: Внешнее подключение
+                    href: resources/externalconnectors-externalconnection.md
+                  - name: Список внешних подключений
+                    href: api/externalconnectors-externalconnection-list.md
+                  - name: Создание внешнего подключения
+                    href: api/externalconnectors-external-post-connections.md
+                  - name: Внешние подключения
+                    href: api/externalconnectors-externalconnection-get.md
+                  - name: Обновление внешнего подключения
+                    href: api/externalconnectors-externalconnection-update.md
+                  - name: Удаление внешнего подключения
+                    href: api/externalconnectors-externalconnection-delete.md
+                  - name: Получить операцию
+                    href: api/externalconnectors-connectionoperation-get.md
+              - name: Схема
+                items:
+                  - name: Схема
+                    href: resources/externalconnectors-schema.md
+                  - name: Создание схемы
+                    href: api/externalconnectors-schema-create.md
+                  - name: Получение схемы
+                    href: api/externalconnectors-schema-get.md
+              - name: Внешний элемент
+                items:
+                  - name: Внешний элемент
+                    href: resources/externalconnectors-externalitem.md
+                  - name: Создание внешнего элемента
+                    href: api/externalconnectors-externalitem-create.md
+                  - name: Получить внешний элемент
+                    href: api/externalconnectors-externalitem-get.md
+                  - name: Обновление внешнего элемента
+                    href: api/externalconnectors-externalitem-update.md
+                  - name: Удаление внешнего элемента
+                    href: api/externalconnectors-externalitem-delete.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
@@ -5722,7 +5762,7 @@ items:
                 href: api/site-unfollow.md
               - name: Перечисление отслеживаемых сайтов
                 href: api/sites-list-followed.md
-              - name: Разрешения
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: Получить разрешение сайта
@@ -5764,7 +5804,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -6016,7 +6056,7 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Получить контент с хост-контентом
                 href: api/chatmessagehostedcontent-get.md
-          - name: Приложение.
+          - name: Приложение
             items:
               - name: Приложение в каталоге
                 href: resources/teamsapp.md
@@ -6172,7 +6212,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Перечисление
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md
