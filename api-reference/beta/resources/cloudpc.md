@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 232ad6a8de6634f028ec59080114110c902ce184
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 57d708c870339a98cc3fff1322968642ba62f4a1
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787501"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534476"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
@@ -34,19 +34,19 @@ ms.locfileid: "52787501"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для облачного КОМПЬЮТЕРА. Только для чтения.|
-|displayName|String|Имя отображения облачного КОМПЬЮТЕРА.|
-|imageDisplayName|String|Имя изображения ОС на облачном компьютере.|
-|managedDeviceId|String|ID устройства Intune облачного компьютера.|
+|id|Строка|Уникальный идентификатор для облачного КОМПЬЮТЕРА. Только для чтения.|
+|displayName|Строка|Имя отображения облачного КОМПЬЮТЕРА.|
+|imageDisplayName|Строка|Имя изображения ОС, которое на облачном компьютере.|
+|managedDeviceId|Строка|ID устройства Intune облачного компьютера.|
 |managedDeviceName|String|Имя устройства Intune облачного КОМПЬЮТЕРА.|
-|provisioningPolicyId|String|ID политики обеспечения облачного компьютера.|
-|provisioningPolicyName|String|Политика обеспечения, применяемая при обеспечении облачных компьютеров.|
-|onPremisesConnectionName|String|Локальное подключение, применяемого при обеспечении облачных компьютеров.|
-|servicePlanId|String|ID плана службы облачного КОМПЬЮТЕРА.|
+|provisioningPolicyId|Строка|ID политики обеспечения облачного компьютера.|
+|provisioningPolicyName|Строка|Политика продюсинга, применяемая при обеспечении облачных компьютеров.|
+|onPremisesConnectionName|Строка|Локальное подключение, применяемого при обеспечении облачных компьютеров.|
+|servicePlanId|Строка|ID плана службы облачного КОМПЬЮТЕРА.|
 |servicePlanName|String|Имя плана службы облачного КОМПЬЮТЕРА.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Состояние облачного КОМПЬЮТЕРА. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Сведения о состоянии облачного КОМПЬЮТЕРА.|
-|userPrincipalName|String|Основное имя пользователя (UPN) пользователя, назначенного на облачный КОМПЬЮТЕР.|
+|userPrincipalName|String|Основное имя пользователя (UPN) пользователя, назначенного на облачный компьютер.|
 |lastModifiedDateTime|DateTimeOffset|Последняя измененная дата и время облачного компьютера. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |gracePeriodEndDateTime|DateTimeOffset|Дата и время окончания льготного периода и переделки/депрограммивинга. Требуется только в том случае, если состояние `inGracePeriod` . Timestamp отображается в формате ISO 8601 и Скоординированное универсальное время (UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
@@ -54,15 +54,15 @@ ms.locfileid: "52787501"
 
 |Member|Описание|
 |:---|:---|
-|notProvisioned|Этот Cloud PC не был предварительно.|
-|подготовка|Cloud PC подготовка продолжается.|
-|provisioned|Подготовка Cloud PC и доступ к нему могут получить конечные пользователи.|
-|обновление|Cloud PC продолжается.|
-|inGracePeriod|Срок Cloud PC находится в периоде отсрочки за одну неделю до его деразвения.|
-|deprovisioning|The Cloud PC deprovisioning.|
-|не удалось|Операция на Cloud PC не удалась.|
+|notProvisioned|Облачный КОМПЬЮТЕР не был предусмотрен.|
+|подготовка|Подготовка облачного компьютера продолжается.|
+|provisioned|Облачный компьютер является предварительным и может быть доступ к конечным пользователям.|
+|обновление|В настоящее время идет процесс повторного окантовки облачного компьютера.|
+|inGracePeriod|Облачный компьютер находится в периоде отсрочки на одну неделю до его деразвения.|
+|deprovisioning|Облачный КОМПЬЮТЕР развяжен.|
+|не удалось|Операция на облачном компьютере не удалась.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

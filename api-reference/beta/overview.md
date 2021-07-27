@@ -5,16 +5,16 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: non-product-specific
 author: angelgolfer-ms
-ms.openlocfilehash: 168be22ffe2cfa9884fc0e0e57f18c0282c86d95
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 78cfd8f03e663feffd0114d27bd1977fa49f4fdb
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49217272"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533795"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Справочник по бета-версии конечной точки Microsoft Graph
 
-В справочном содержимом этого раздела описывается бета-версия конечной точки Microsoft Graph. Конечная точка бета-версии включает API-интерфейсы, которые в настоящий момент находятся в предварительной версии и не являются общедоступными. Попробуйте эти API и оставьте отзыв через следующие каналы:
+В справочном содержимом этого раздела описывается бета-версия конечной точки Microsoft Graph. Конечная точка бета-версии включает API-интерфейсы, которые в настоящее время находятся в предварительной версии и не являются общедоступными. Попробуйте эти API и оставьте отзыв через следующие каналы:
 
 - [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) — для отзывов о предварительных версиях API-интерфейсов. Используйте тег `beta`.
 - [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-api) — для вопросов и справки по вашему коду. Используйте тег `microsoft-graph-api`.

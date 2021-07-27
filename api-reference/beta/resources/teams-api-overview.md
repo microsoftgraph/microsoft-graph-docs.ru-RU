@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 8eac2d77ffa5fa0f3be9a57e86fd4f490d66e583
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: a6911dddb813f69bca802a6e84ab4eae0a484ef9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059529"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534483"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -37,7 +37,7 @@ Microsoft Teams — это рабочее пространство с чатам
 |[timeOff](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
 |[tag](../resources/teamworkTag.md)|[Перечисление](../api/teamworkTag-list.md), [создание](../api/teamworkTag-post.md), [получение](../api/teamworkTag-get.md), [обновление](../api/teamworkTag-update.md), [удаление](../api/teamworkTag-delete.md)|
-|[tagMember](../resources/teamworkTagMember.md)|[Создание](../api/teamworkTagMember-list.md), [получение](../api/teamworkTagMember-get.md), [удаление](../api/teamworkTagMember-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[Перечисление](../api/teamworkTagMember-list.md), [создание](../api/teamworkTagMember-post.md), [получение](../api/teamworkTagMember-get.md), [удаление](../api/teamworkTagMember-delete.md)|
 
 ## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
 

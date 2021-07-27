@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 8debe063c768c66061e16fd89a2e46f6bc7b6d9b
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 358cff788e5b055f93080c20872b972aa82b1799
+ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082288"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53443219"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -23,10 +23,11 @@ ms.locfileid: "53082288"
 - Объект [chatMessage][], отправленный в командах или каналах в Microsoft Teams.
 - [Беседа][] в группе Microsoft 365.
 - Контент в иерархии корневой папки [driveItem][] в OneDrive для бизнеса либо корневой или вложенной папки [driveItem][] в личном хранилище OneDrive пользователя.
+- [Группа][] в Azure Active Directory.
 - [Список][] на [сайте][] SharePoint.
 - [Сообщение][], [событие][] или [контакт][] в Outlook.
 - Объект [printer][] (когда задание печати для принтера переходит в состояние JobFetchable — готово к извлечению для печати) и [printTaskDefinition][] универсальной печати. Дополнительные сведения см. в статье [Подписка на уведомления об изменениях из API облачной печати](/graph/universal-print-webhook-notifications).
-- [Пользователь][] или [группа][] в Azure Active Directory.
+- [Пользователь][] в Azure Active Directory.
 
 Сведения о возможных значениях пути к ресурсу для всех поддерживаемых ресурсов см. в статье [Получение уведомлений об изменениях с помощью API Microsoft Graph](webhooks.md).
 

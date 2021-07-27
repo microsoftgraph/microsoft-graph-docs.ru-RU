@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 47e136bc63cd7b95bdcf3778047eb77db58c8de0
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 2f7f8fd855ad406d5422806c1e6ef1bc6649a78b
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921388"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579227"
 ---
 # <a name="list-identityproviders"></a>Перечисление объектов identityProvider
 Пространство имен: microsoft.graph
@@ -63,11 +63,11 @@ GET /identity/identityProviders
 
 Для клиента Azure AD B2C этот метод возвращает код отклика и коллекцию `200 OK` [объектов socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) и/или [объектов appleIdentityProvider](../resources/appleidentityprovider.md) в теле ответа.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 ### <a name="example-1-list-all-identityprovider-configured-in-an-azure-ad-tenant"></a>Пример 1. Список всех **identityProvider,** настроенных в клиенте Azure AD
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 
@@ -100,8 +100,8 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ---
 
 
-### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+#### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -139,7 +139,7 @@ Content-Type: application/json
 
 ### <a name="example-2-list-all-identityprovider-configured-in-an-azure-ad-b2c-tenant"></a>Пример 2. Список всех **identityProvider,** настроенных в клиенте Azure AD B2C
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 <!-- {
@@ -152,8 +152,8 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+#### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

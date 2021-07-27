@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 7090679e0f35f182c7966fc9810b4698d090e002
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 58a33ac3215053792132adc6de3963ca4fbcd8da
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870649"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534202"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>тип ресурса cloudPcOnPremisesConnection
 
@@ -38,17 +38,17 @@ ms.locfileid: "52870649"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор локального подключения. Только для чтения.|
-|displayName|String|Имя отображения локального подключения.|
-|subscriptionId|String|ID целевой подписки Azure, связанной с клиентом.|
-|subscriptionName|String|Имя целевой подписки Azure. Только для чтения.|
-|adDomainName|String|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
-|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: admin@contoso.com.|
-|adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|organizationalUnit|String|Организационное подразделение (OU), в котором создается учетная запись компьютера. Если оставить null, используется OU, настроенный как по умолчанию (хорошо известный контейнер объектов компьютера) в домене Active Directory (OU). Необязательный параметр.|
-|resourceGroupId|String|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|String|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|String|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|id|Строка|Уникальный идентификатор локального подключения. Только для чтения.|
+|displayName|Строка|Имя отображения локального подключения.|
+|subscriptionId|Строка|ID целевой подписки Azure, связанной с клиентом.|
+|subscriptionName|Строка|Имя целевой подписки Azure. Только для чтения.|
+|adDomainName|Строка|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
+|adDomainUsername|Строка|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: admin@contoso.com.|
+|adDomainPassword|Строка|Пароль, связанный с adDomainUsername.|
+|organizationalUnit|Строка|Организационное подразделение (OU), в котором создается учетная запись компьютера. Если оставить null, используется OU, настроенный как по умолчанию (хорошо известный контейнер объектов компьютера) в домене Active Directory (OU). Необязательно.|
+|resourceGroupId|Строка|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|Строка|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|Строка|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 |healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|Состояние последней проверки состояния здоровья, которая проводится на локальном подключении. Например, если состояние "пройдено", локальное подключение прошло все проверки, запускаемые службой. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Сведения о проверках состояния подключения и соответствующих результатах. Возвращается только `$select` на . Пример, который показывает, как получить свойство **inUse,** см. в примере 2. Получить выбранные свойства локального подключения, включая [healthCheckStatusDetails.](../api/cloudpconpremisesconnection-get.md) Только для чтения.|
 |inUse|Boolean|Когда `true` используется локальное подключение. Когда `false` подключение не используется. Невозможно удалить используемую связь. Возвращается только с помощью оператора `$select`. Пример, который показывает, как получить свойство **inUse,** см. в примере 2. Получить выбранные свойства локального подключения, включая [healthCheckStatusDetails.](../api/cloudpconpremisesconnection-get.md) Только для чтения.|
@@ -64,7 +64,7 @@ ms.locfileid: "52870649"
 |warning|Проверки состояния здоровья прошли с предупреждением.|
 |unknownFutureValue|Неизвестный будущий статус (зарезервирован, не используется прямо сейчас).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

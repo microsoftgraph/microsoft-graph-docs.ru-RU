@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e3d3ab436ea461139778f672468ee312f79ec539
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c1c07c5ede666ab8a2e1df918569f0de6766125f
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051524"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579556"
 ---
 # <a name="update-conversationthread"></a>Обновление объекта conversationThread
 
@@ -29,8 +29,8 @@ ms.locfileid: "52051524"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/{id}/threads/{id}
-PATCH /groups/{id}/conversations/{id}/threads/{id}
+PATCH /groups/{group id}/threads/{thread id}
+PATCH /groups/{group id}/conversations/{conversation id}/threads/{thread id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,23 +48,21 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [conversationThread](../resources/conversationthread.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` пустой объект в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_conversationthread"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/0fbf2921-5d17-4c2b-bae4-cc581de72c13/threads/AAQkAGU3OGZjZTE2LTFlOWItNGExYi1hMGMzLTMwZWU4OGUzYjU5MQMkABAALmW2hn6Ui0_7hOBeAIFdWhAALmW2hn6Ui0_7hOBeAIFdWg==
 Content-type: application/json
-Content-length: 419
 
 {
-  "@odata.type":"#Microsoft.OutlookServices.ConversationThread",
   "isLocked": true
 }
 ```
@@ -86,43 +84,17 @@ Content-length: 419
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.conversationThread"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 419
 
-{
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "ccRecipients": [
-    {
-      "emailAddress": {
-        "name": "name-value",
-        "address": "address-value"
-      }
-    }
-  ],
-  "isLocked": true 
-}
+{}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

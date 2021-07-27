@@ -66,7 +66,7 @@ conceptualContent:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
           text: Используйте методы Azure AD для управления доступом и проверки подлинности пользователей.
-    - title: Microsoft Graph data Подключение
+    - title: Подключение к данным Microsoft Graph
       links:
         - url: ./data-connect-concept-overview.md
           itemType: overview
@@ -77,20 +77,20 @@ tools:
     - title: Пакеты SDK
       imageSrc: ./images/hub/icon01-sdk.svg
       url: 'https://docs.microsoft.com/graph/sdks/sdk-installation'
-    - title: Примеры использования
+    - title: Краткие руководства
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: 'https://developer.microsoft.com/graph/quick-start'
     - title: Песочница Graph
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
-    - title: Microsoft Graph Toolkit
+    - title: Набор средств Microsoft Graph
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
 additionalContent:
   sections:
-    - title: Руководства и ресурсы
+    - title: Учебники и ресурсы
       items:
-        - title: Пути обучения
+        - title: Обучение пути
           links:
             - text: Основные Graph Microsoft
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
@@ -100,18 +100,18 @@ additionalContent:
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
         - title: Практическое руководство
           links:
-            - text: Поиск контента в OneDrive и Sharepoint
+            - text: 'Соединители: создайте свой первый настраиваемый соединитатель'
+              url: 'https://docs.microsoft.com/en-us/graph/connecting-external-content-build-quickstart'
+            - text: 'Поиск (Майкрософт): поиск контента в OneDrive и Sharepoint'
               url: 'https://docs.microsoft.com/graph/search-concept-files'
-            - text: Совместное или делегирование календаря
-              url: 'https://docs.microsoft.com/graph/outlook-share-or-delegate-calendar'
-            - text: Предложение нового времени собрания
-              url: 'https://docs.microsoft.com/graph/outlook-calendar-meeting-proposals'
-            - text: Присоединение больших файлов к сообщению или событию
+            - text: 'Identity: Управление доступом к ресурсам'
+              url: 'https://docs.microsoft.com/en-us/graph/tutorial-access-package-api'
+            - text: 'Outlook: присоединение больших файлов к сообщению или событию'
               url: 'https://docs.microsoft.com/graph/outlook-large-attachments'
-            - text: Получение содержимого MIME сообщения
+            - text: 'Outlook: Получить контент MIME сообщения'
               url: 'https://docs.microsoft.com/graph/outlook-get-mime-message'
-            - text: Запланировать развертывание Windows обновления
-              url: 'https://docs.microsoft.com/graph/windowsupdates-schedule-deployment'
+            - text: Дополнительные учебники...
+              url: 'https://docs.microsoft.com/en-us/graph/tutorials'
         - title: Ресурсы и сообщество
           links:
             - text: Журнал изменений

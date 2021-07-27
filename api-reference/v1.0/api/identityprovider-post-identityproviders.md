@@ -2,19 +2,20 @@
 title: Создание identityProvider
 description: Создание объекта identityProvider
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1e5e0a13b0518fc734f1c2d8d1fd40fa41833f71
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fac9a583737b991e9f2b060a05eb64a893dde9cc
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434246"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533999"
 ---
-# <a name="create-identityprovider"></a>Создание identityProvider
-
+# <a name="create-identityprovider-deprecated"></a>Создание identityProvider (не рекомендуется)
 Пространство имен: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Создание объекта [identityProvider](../resources/identityprovider.md) путем указания отображаемого имени, типа identityProvider, идентификатора клиента и секрета клиента.
 
@@ -93,6 +94,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -102,6 +104,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-

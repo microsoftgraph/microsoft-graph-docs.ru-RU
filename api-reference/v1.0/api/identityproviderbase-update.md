@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: a88ba5fbac97b501b54e63e60276cb7a4026729d
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1c6742c7e7063ac860d4e834c252449d5c0954b2
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535502"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578788"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53535502"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений| IdentityProvider.ReadWrite.All|
+|Приложение| IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -60,7 +60,7 @@ PATCH /identity/identityProviders/{id}
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |clientId|String|Идентификатор клиентского приложения, полученный при регистрации приложения у поставщика удостоверений.|
-|clientSecret|String|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
+|clientSecret|String|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения `****` возвращается.|
 |displayName|String|Отображаемое имя поставщика удостоверений.|
 
 ## <a name="response"></a>Отклик
@@ -75,6 +75,8 @@ PATCH /identity/identityProviders/{id}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_socialidentityprovider"
@@ -86,10 +88,28 @@ PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.socialIdentityProvider",
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-socialidentityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-socialidentityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-socialidentityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-socialidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

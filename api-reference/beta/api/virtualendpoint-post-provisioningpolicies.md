@@ -1,16 +1,16 @@
 ---
 title: Создание cloudPcProvisioningPolicy
-description: Создайте новую политику продюсинга облачных компьютеров.
+description: Создайте новую политику продюсинга облачных КОМПЬЮТЕРов.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6c28d27cced97d2e1ab927de14d888ae15d8e902
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5b8cb78a3ef0f706ef53f983b7b1b0cb05864a86
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547613"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534062"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>Создание cloudPcProvisioningPolicy
 
@@ -58,11 +58,11 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя отображения политики обеспечения.|
-|description|String|Описание политики обеспечения.|
-|onPremisesConnectionId|String|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенное службой облачных ПК.|
-|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}.|
-|imageDisplayName|String|Имя отображения образа ОС, которое вы закаповыватель.|
+|displayName|Строка|Имя отображения политики обеспечения.|
+|description|Строка|Описание политики обеспечения.|
+|onPremisesConnectionId|Строка|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
+|imageId|Строка|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}.|
+|imageDisplayName|Строка|Имя отображения образа ОС, которое вы закаповыватель.|
 |imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
 
 ## <a name="response"></a>Отклик

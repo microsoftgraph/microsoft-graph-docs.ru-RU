@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1cca34e4f2621f2c0d74a3b32558c584a559f6d3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4ff7a059586b95085687d9ed2d36a741ef02f087
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50789169"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581457"
 ---
 ```javascript
 
@@ -17,6 +17,8 @@ const client = Client.init(options);
 
 let accessPackageAssignmentRequests = await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentRequests')
     .version('beta')
+    .filter('(requestState eq \'PendingApproval\')')
+    .expand('requestor($expand=connectedOrganization)')
     .get();
 
 ```

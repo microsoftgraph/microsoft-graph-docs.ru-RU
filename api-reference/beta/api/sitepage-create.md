@@ -2,16 +2,16 @@
 author: rahmit
 description: Создайте новый sitePage в списке страниц сайта.
 ms.date: 05/07/2018
-title: Создание новой страницы на сайте SharePoint
+title: Создание новой страницы на SharePoint сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cc9b7a997602252aa58f94178b30fa719bc9ee11
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3094f5f42a56b5666c9aa0108de1840277ea876a
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475767"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534167"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создание страницы в списке страниц сайта
 
@@ -65,7 +65,9 @@ Content-Type: application/json
     "webParts": [
         {
             "type": "rte",
-            "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            "data": {
+                "innerHTML": "<p>Here are the team's upcoming events:</p>"
+            }
         },
         {
             "type": "d1d91016-032f-456d-98a4-721247c305e8",
@@ -114,7 +116,7 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает [страницу sitePage][] в теле ответа на созданную страницу.
 
@@ -199,7 +201,7 @@ Content-type: application/json
 
 **Примечание.** Ответ усечен для наглядности. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[списке]: ../resources/list.md
+[list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md

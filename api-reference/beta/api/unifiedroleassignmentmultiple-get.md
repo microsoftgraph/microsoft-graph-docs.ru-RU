@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6b1aeecdae5b36e4c10768ee37b1505aba25687b
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 1ac14a035dc723c59534d5a3e8bb979aff8d4e39
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334502"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534076"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Получение unifiedRoleAssignmentMultiple
 
@@ -21,7 +21,7 @@ ms.locfileid: "53334502"
 Получите свойства и связи объекта [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) поставщика RBAC. 
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- облачный КОМПЬЮТЕР 
+- Облачный КОМПЬЮТЕР 
 - управление устройствами (Intune)
 
 Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)
@@ -52,7 +52,7 @@ ms.locfileid: "53334502"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы получить свойства и связи единого поставщика облачных КОМПЬЮТЕРов, службу единойRoleAssignmentMultiple:
+Для получения свойств и связей единого поставщика облачных ПК Для поставщика облачных ПК:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleAssignments/{id}
@@ -78,7 +78,7 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте ответа.
 
