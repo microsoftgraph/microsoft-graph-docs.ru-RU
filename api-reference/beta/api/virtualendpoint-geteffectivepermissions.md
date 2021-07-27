@@ -1,16 +1,16 @@
 ---
 title: 'virtualEndpoint: getEffectivePermissions'
-description: '**GetEffectivePermissions — это функция, которая получает эффективные разрешения текущего пользователя, который проходит проверку подлинности, что помогает пользовательскому интерфейсу скрывать или отключать содержимое, к которому у текущего пользователя нет доступа.**'
+description: '**GetEffectivePermissions — это функция, которая извлекает эффективные разрешения текущего пользователя, который помогает UX скрыть или отключить контент, к которому текущий пользователь не имеет доступа.**'
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 89150ac339a955db1a8d48f3da9e71c3823f9852
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: ff9eda317a29b2ceda09d1b750225a308a4db399
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874041"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534174"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
@@ -18,7 +18,7 @@ ms.locfileid: "49874041"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Просмотр эффективных разрешений для пользователя, который в настоящее время проходит проверку подлинности. GetEffectivePermissions — это функция, которая получает эффективные разрешения текущего пользователя, который проходит проверку подлинности, что помогает пользовательскому интерфейсу скрывать или отключать содержимое, к которому у текущего пользователя нет доступа.
+Просмотр эффективных разрешений пользователя, который в настоящее время проходит проверку подлинности. GetEffectivePermissions — это функция, которая извлекает эффективные разрешения текущего пользователя, который помогает UX скрыть или отключить контент, к которому текущий пользователь не имеет доступа.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -53,9 +53,9 @@ GET /deviceManagement/virtualEndpoint/getEffectivePermissions
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика. Если у пользователя есть полные разрешения, ответ будет `["*"]` .
+При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика. Если у пользователя есть полные разрешения, ответ `["*"]` будет .
 
 ## <a name="examples"></a>Примеры
 

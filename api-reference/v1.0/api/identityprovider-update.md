@@ -2,19 +2,20 @@
 title: Обновление identityProvider
 description: Обновление свойств в существующем объекте identityProvider
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bb4695068871c2c741a1f1aa699b36a688e22b6e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 191d936e71e725964f125aaa6b6ab1e8f276b957
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441839"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53580571"
 ---
-# <a name="update-identityprovider"></a>Обновление identityProvider
-
+# <a name="update-identityprovider-deprecated"></a>Обновление identityProvider (не рекомендуется)
 Пространство имен: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Обновление свойств в существующем объекте [identityProvider](../resources/identityprovider.md).
 
@@ -70,6 +71,7 @@ PATCH /identityProviders/{id}
   "blockType": "request",
   "name": "update-identityprovider"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 Content-type: application/json
@@ -119,4 +121,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

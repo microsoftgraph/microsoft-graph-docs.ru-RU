@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e15685f1cf561713b25dc70b87264edd36168067
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 6aabd013bd7a0c17a2d22f5cbbf87eb8b32286e3
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870761"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534048"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Обзор API Azure AD для управления идентификацией и доступом
 
@@ -36,7 +36,7 @@ Azure Active Directory (Azure AD) помогает централизовать 
 
 - Находить сведения в [профилях пользователей](/graph/api/resources/user) вашей организации, например имена, фотографии, электронные адреса, должности, расположение офиса и т. д., а также управлять ими.
 - Создавать [группы](/graph/api/resources/groups-overview) для проектов и групп в вашей организации. Добавлять участников в группы и удалять их из групп, чтобы управлять доступом к ресурсам. (Динамические группы могут автоматически изменять членство на основе значений свойств пользователей.)
-- Чтобы можно было управлять доступом, вы можете проверить наличие [транзитивного членства](/graph/api/user-checkmembergroups) в списке групп или получить все ресурсы указанного типа (например, пользователей или группы) из списка [идентификаторов ролевых ресурсов](/graph/api/directoryobject-getbyids).
+- Проверять наличие [транзитивного участия](/graph/api/user-checkmembergroups) в списке групп или получить все ресурсы указанного типа (например, пользователей или группы) из списка [идентификаторов ролевых ресурсов](/graph/api/directoryobject-getbyids) для управления доступом.
 
 ### <a name="manage-directory-roles"></a>Управление ролями каталогов
 

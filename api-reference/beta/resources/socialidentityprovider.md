@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 58e08852c99c97648447e7d0acf9946ea3227122
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: cfaaeada596ccdf3767950e9f9a480d2d9c8a47e
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491186"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578784"
 ---
 # <a name="socialidentityprovider-resource-type"></a>Тип ресурса socialIdentityProvider
 Пространство имен: microsoft.graph
@@ -45,7 +45,7 @@ ms.locfileid: "51491186"
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |clientId|String|Идентификатор клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Обязательно.|
-|clientSecret|String|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*". Обязательный.|
+|clientSecret|String|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает `****`. Обязательный.|
 |id|String|Идентификатор поставщика удостоверений. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md). Только для чтения.|
 |displayName|String|Отображаемое имя поставщика удостоверений. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md).|
 |identityProviderType|Строка|Возможные значения для сценария B2B: `Google`, `Facebook`. Возможные значения для сценария B2C: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`. Обязательно.|

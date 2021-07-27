@@ -5,12 +5,12 @@ author: anniecolonna
 localization_priority: Normal
 ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: 73666dd19720e6d8882bb16fd90c612097e41d10
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: b8e6d70a8249168383f2bc1b0e6d8884525855ec
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059885"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534518"
 ---
 # <a name="teamworktagmember-resource-type"></a>тип ресурса teamworkTagMember
 
@@ -23,19 +23,20 @@ ms.locfileid: "53059885"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список командной работыTagMembers](../api/teamworktagmember-list.md)|**коллекция teamworkTagMember**|Получите список участников стандартного тега в команде и их свойства.|
-|[Получить командную работуTagMember](../api/teamworktagmember-get.md)|**teamworkTagMember**|Получите свойства и отношения участника стандартного тега в команде.|
-|[Удаление командной работыTagMember](../api/teamworktagmember-delete.md)|Нет.|Удаление участника из стандартного тега в команде.|
+|[Список командной работыTagMembers](../api/teamworktagmember-list.md)|[**коллекция teamworkTagMember**](teamworktagmember.md)|Получите список участников стандартного тега в команде и их свойства.|
+|[Создание командной работыTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Создайте новый **объект teamworkTagMember.**|
+|[Получить командную работуTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Получите свойства и отношения участника стандартного тега в команде.|
+|[Удаление командной работыTagMember](../api/teamworktagmember-delete.md)|Нет|Удаление участника из стандартного тега в команде.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя отображения участника.|
-|ID|Строка|ID участника.|
+|Идентификатор|Строка|ID участника.|
 |tenantID|Строка|ID клиента, в который входит член тега.|
 |userID|Строка|Пользовательский ID участника.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

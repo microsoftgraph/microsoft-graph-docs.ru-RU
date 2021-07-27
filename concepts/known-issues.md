@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 257d8966eabe2428072f470f290816a1c9c2e35d
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: c884f16ac2128286ece218ffb110b0c74933c7a1
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351110"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53579332"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -346,6 +346,9 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="missing-properties-for-chat-members"></a>Отсутствующие свойства для участников чатов
 В некоторых случаях свойство `tenantId` / `email` / `displayName` для отдельных участников чата может не заполняться в запросах `GET /chats/chat-id/members` или `GET /chats/chat-id/members/membership-id`.
+
+### <a name="missing-properties-in-the-list-of-teams-that-a-user-has-joined"></a>Отсутствующие свойства в списке команд, к которым присоединился пользователь
+Вызов API [me/joinedTeams](/graph/api/user-list-joinedteams) возвращает только свойства **id**, **displayName** и **description** [команды](/graph/api/resources/team). Чтобы получить все свойства, воспользуйтесь операцией [Получение команды](/graph/api/team-get).
 
 ## <a name="users"></a>Пользователи
 

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9a125cbd111a4646f6f7a07ddd4a44b6aab34053
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: dd5d6ea1f3363963fdb978766d788c167437bd66
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547024"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534090"
 ---
 # <a name="list-deviceimages"></a>Список устройствImages
 
@@ -18,7 +18,7 @@ ms.locfileid: "52547024"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список свойств и связей объектов [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) (изображений ОС), загруженных на облачный компьютер.
+Список свойств и связей объектов [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) (изображений ОС), загруженных на облачный КОМПЬЮТЕР.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -57,7 +57,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
 

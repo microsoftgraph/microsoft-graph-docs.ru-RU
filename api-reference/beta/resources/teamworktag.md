@@ -5,12 +5,12 @@ author: anniecolonna
 localization_priority: Normal
 ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: fc732ce340f8ab8a3460c16900c4aff2d381744e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 677ddc348d1cd3ae152d7b777a6b29319839266c
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059891"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533901"
 ---
 # <a name="teamworktag-resource-type"></a>тип ресурса teamworkTag
 
@@ -27,14 +27,15 @@ ms.locfileid: "53059891"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список teamworkTags](../api/teamworktag-list.md)|**коллекция teamworkTag**|Получите список объектов **teamworkTag** и их свойств.|
-|[Создание командной работы](../api/teamworktag-post.md)|**teamworkTag**|Создание нового **объекта teamworkTag.**|
-|[Командная работа](../api/teamworktag-get.md)|**teamworkTag**|Ознакомьтесь с свойствами и отношениями объекта **teamworkTag.**|
-|[Обновление командной работы](../api/teamworktag-update.md)|**teamworkTag**|Обновление свойств объекта **teamworkTag.**|
-|[Удаление командной работы](../api/teamworktag-delete.md)|Нет.|Удаление **объекта teamworkTag.**|
-|[Список командной работыTagMembers](../api/teamworktagmember-list.md)|**коллекция teamworkTagMember**|Получите список участников стандартного тега в команде и их свойства.|
-|[Получить командную работуTagMember](../api/teamworktagmember-get.md)|**teamworkTagMember**|Получите свойства и отношения участника стандартного тега в команде.|
-|[Удаление командной работыTagMember](../api/teamworktagmember-delete.md)|Нет.|Удаление участника из стандартного тега в команде.|
+|[Список teamworkTags](../api/teamworktag-list.md)|[**коллекция teamworkTag**](teamworktag.md)|Получите список объектов **teamworkTag** и их свойств.|
+|[Создание командной работы](../api/teamworktag-post.md)|[**teamworkTag**](teamworktag.md)|Создание нового **объекта teamworkTag.**|
+|[Командная работа](../api/teamworktag-get.md)|[**teamworkTag**](teamworktag.md)|Ознакомьтесь с свойствами и отношениями объекта **teamworkTag.**|
+|[Обновление командной работы](../api/teamworktag-update.md)|[**teamworkTag**](teamworktag.md)|Обновление свойств объекта **teamworkTag.**|
+|[Удаление командной работы](../api/teamworktag-delete.md)|Нет|Удаление **объекта teamworkTag.**|
+|[Список командной работыTagMembers](../api/teamworktagmember-list.md)|[**коллекция teamworkTagMember**](teamworktagmember.md)|Получите список участников стандартного тега в команде и их свойства.|
+|[Создание командной работыTagMember](../api/teamworktagmember-post.md)|[**teamworkTagMember**](teamworktagmember.md)|Создайте новый **объект teamworkTagMember.**|
+|[Получить командную работуTagMember](../api/teamworktagmember-get.md)|[**teamworkTagMember**](teamworktagmember.md)|Получите свойства и отношения участника стандартного тега в команде.|
+|[Удаление командной работыTagMember](../api/teamworktagmember-delete.md)|Нет|Удаление участника из стандартного тега в команде.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -46,7 +47,7 @@ ms.locfileid: "53059891"
 |tagType|teamworkTagType|Тип тега. По умолчанию это стандарт.|
 |teamId|Строка|ID команды, в которой определен тег.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |members|[коллекция teamworkTagMember](../resources/teamworktagmember.md)|Пользователи, назначенные тегу.|

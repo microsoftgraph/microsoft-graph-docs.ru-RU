@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9883ea3666b22ddaa21de349b56e361a02d99396
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 4f01f0ad367362110366f297f6175b6943980fcf
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334607"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533311"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Создание unifiedRoleAssignmentMultiple
 
@@ -21,7 +21,7 @@ ms.locfileid: "53334607"
 Создайте [новый объект unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) для поставщика RBAC. 
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- облачный КОМПЬЮТЕР 
+- Облачный КОМПЬЮТЕР 
 - управление устройствами (Intune)
 
 Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)
@@ -77,7 +77,7 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 В теле запроса поставляем представление JSON объекта [unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Запрос должен иметь область, определенную в Azure AD, например область, определенную приложению, например `directoryScopeIds` `appScopeId` . Примерами области Azure AD являются клиенты ("/"), административные единицы или приложения. 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код ответа и новый объект `201 Created` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте ответа.
 

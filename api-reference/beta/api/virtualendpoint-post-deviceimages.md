@@ -1,16 +1,16 @@
 ---
 title: Создание cloudPcDeviceImage
-description: Upload образ оси, который можно позже использовать на облачных ПК.
+description: Upload пользовательский образ ОС, который можно позднее уладить на облачных ПК.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7da8717b9dcbf34d40de5bbcb08247d80d04514
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 3db7f2b479bb00f07dc11a64d058a59d2cc02168
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547094"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534160"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Создание cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "52547094"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Upload образ оси, который можно позже использовать на облачных ПК.
+Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Upload пользовательский образ ОС, который можно позднее уладить на облачных ПК.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -58,13 +58,13 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя отображения изображения.|
-|sourceImageResourceId|String|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|Строка|Имя отображения изображения.|
+|sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
-|osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
+|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте ответа.
 

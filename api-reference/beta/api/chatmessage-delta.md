@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: a7824399593efcfab1cc3a623a606f4546915228
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 172c90d4f80d6cd4be833b2d78e9e6084d610057
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047289"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534013"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -74,7 +74,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 Этим API поддерживаются указанные ниже [параметры запросов OData](/graph/query-parameters).
 - `$top`, указывает максимальное количество сообщений, которое нужно получить в результате вызова. Верхний предел – **50**.
 - `$skip`, указывает, сколько сообщений нужно пропустить в начале списка.
-- `$filter` поддерживает возврат сообщений, удовлетворяющих определенным условиям. Единственное свойство, поддерживающее фильтрацию, — это `lastModifiedDateTime`, при этом поддерживается только оператор **gt**. Например, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` будет получать любые сообщения, созданные или измененные после указанной даты и времени.
+- `$filter` поддерживает возврат сообщений, удовлетворяющих определенным условиям. Единственное свойство, поддерживающее фильтрацию, — это `lastModifiedDateTime`, при этом поддерживается только оператор **gt**. Например, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` будет получать любые сообщения, созданные или измененные после указанной даты и времени.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок        | Значение                     |
@@ -171,6 +171,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1606515483514?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1606515483514&parentMessageId=1606515483514",
             "policyViolation": null,
+            "eventDetail": null,
             "id": "1606515483514",
             "from": {
                 "application": null,
@@ -210,6 +211,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1606691795113?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1606691795113&parentMessageId=1606691795113",
             "policyViolation": null,
+            "eventDetail": null,
             "id": "1606691795113",
             "from": {
                 "application": null,

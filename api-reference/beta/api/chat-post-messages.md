@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 79df3a5e6d6aae74cc0f9d19cdd2abb2003c8f46
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 9b71687682111aef0c1722e5337b60178ae49d2c
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51610681"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533894"
 ---
 # <a name="send-message-in-a-chat"></a>Отправка сообщения в чате
 
@@ -52,7 +52,7 @@ POST /chats/{chat-id}/messages
 
 В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md)
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.
 
@@ -131,6 +131,7 @@ Content-type: application/json
     "webUrl": null,
     "channelIdentity": null,
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,

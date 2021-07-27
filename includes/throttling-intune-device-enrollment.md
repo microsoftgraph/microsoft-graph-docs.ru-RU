@@ -3,21 +3,21 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: b0cb0c1ba44475f1feb943fd1ecfd2f897dd26a3
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: bbeb4900dcb9218f102e11d0d53c5f1542795d7a
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598043"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53579068"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 #### <a name="intune-device-enrollment-service-limits"></a>Ограничения службы регистрации устройств Intune
 
 | Тип запроса | Ограничение на клиента для всех приложений | Ограничение на приложение по клиенту |
-| ------------ | ------- | ------- |
+| ------------ | ----------------------------- | ------------------------ |
 | POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:  
-complianceManagementPartner, deviceAppManagement, deviceCategory, deviceEnrollmentConfiguration, deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, vppToken.
+complianceManagementPartner, deviceAppManagement, deviceCategory, deviceComanagementAuthorityConfiguration, deviceEnrollmentConfiguration, deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementExchangeOnPremisesPolicy, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, sideLoadingKey, vppToken, windows10EnrollmentCompletionPageConfiguration.

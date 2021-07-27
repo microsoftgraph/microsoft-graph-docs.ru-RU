@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6b937c93e431501da3ad578135577d942c5d4b37
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: c53cc0df5c9aefb6a42b5a28d6341f37b0f3d287
+ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401354"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "53467101"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -57,7 +57,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint и OneDrive | Списки Учтите, что библиотеки документов также возвращаются как списки. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint и OneDrive | Элементы списка. Учтите, что файлы и папки также возвращаются как элементы списка; **listItem** — это суперкласс **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Сайты в SharePoint.|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Соединители Microsoft Graph| Все содержимое, размещаемое с помощью API соединителей Microsoft Graph.|
+|[externalItem](externalconnectors-externalitem.md)|ExternalItem.Read.All| Соединители Microsoft Graph| Все содержимое, размещаемое с помощью API соединителей Microsoft Graph.|
 |[person](person.md)|People.Read|Exchange Online|Личные контакты и контакты или адресуемые объекты в организации.|
 
 ## <a name="page-search-results"></a>Результаты поиска на странице
@@ -97,7 +97,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Для всех этих типов сущностей указание свойства **fields** сокращает количество свойств, возвращаемых в отклике, что оптимизирует нагрузку на линию.
 
-**listItem** и **externalItem** — единственные поддерживаемые сущности, которые позволяют настройку расширенных извлекаемых полей в схеме. Из всех других сущностей расширенные свойства невозможно извлечь путем применения API поиска. Например, если вы создали извлекаемое поле для **externalItem** в схеме поиска или у вас есть извлекаемый пользовательский столбец в **listItem**, вы можете извлечь эти свойства из результатов поиска. Чтобы извлечь расширенное свойство файла, укажите в запросе тип **listItem**.
+**listItem** и **externalItem** — единственные поддерживаемые сущности, которые позволяют настройку расширенных извлекаемых полей в схеме. Из всех других сущностей расширенные свойства невозможно извлечь путем применения API поиска. Например, если вы создали извлекаемое поле для **externalItem** в схеме поиска или у вас есть извлекаемый пользовательский столбец в **listItem**, вы можете извлечь эти свойства из результатов поиска. Чтобы получить расширенное свойство файла, укажите в запросе тип **listItem**.
 
 Если **поля**, указанные в запросе, отсутствуют в схеме или не помечены как извлекаемые, они не будут возвращены в отклике. Недопустимые поля в запросе игнорируются без уведомления.
 
@@ -142,7 +142,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Когда будет получен отклик, содержащий набор объектов [searchBucket](searchBucket.md), можно уточнить поисковый запрос, ограничив его только совпадающими элементами из одного объекта [searchBucket](searchBucket.md). Это достигается путем передачи значения **aggregationsFilterToken** в свойстве **aggregationFilters** последующего [searchRequest](./searchrequest.md).
 
-В настоящий момент агрегаты поддерживаются для любого свойства с возможностью уточнения в следующих типах SharePoint и OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) и в соединителях Microsoft Graph [externalItem](externalItem.md).
+В настоящий момент агрегаты поддерживаются для любого свойства с возможностью уточнения в следующих типах SharePoint и OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) и в соединителях Microsoft Graph [externalItem](externalconnectors-externalitem.md).
 
 Примеры использования агрегатов для улучшения и снижения объема результатов поиска см. в разделе [Уточнение результатов поиска](/graph/search-concept-aggregation).
 

@@ -1,15 +1,15 @@
 ---
 title: Обзор API устройств и приложений Intune
 description: 'Microsoft Intune помогает предприятиям управлять устройствами и приложениями в организации. С помощью API Intune в Microsoft Graph вы можете управлять устройствами и приложениями, а также настраивать Intune, используя привычные средства. '
-author: rolyon
+author: dougeby
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: a3fa7e8dcd60a5070e7f52a307d355e0e0df4d04
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 384c05e6067d7e38d4f873ed1ef4605cdf0dec09
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288352"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534146"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Обзор API устройств и приложений Intune
 
@@ -61,4 +61,4 @@ Microsoft Intune помогает предприятиям управлять у
 - Узнайте, как выполнять распространенные задачи, с помощью [примеров PowerShell для Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 - Узнайте, как [использовать REST API Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
 - Сведения о новых возможностях API Intune см. в [журнале изменений](changelog.md).
-- Изучите [примеры](https://developer.microsoft.com/graph/graph/examples) с новыми идеями о том, как использовать Microsoft Graph.
+- Изучите [ресурсы](https://developer.microsoft.com/graph/gallery/) с новыми идеями о том, как использовать Microsoft Graph.

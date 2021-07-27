@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 25383c4ef69d2b595a948dba976656219eccc970
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5aa8589c78f665a06316d293800034b6280b3517
+ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50968856"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53581142"
 ---
 ```java
 
@@ -31,7 +31,7 @@ LinkedList<ApprovalStage> approvalStagesList = new LinkedList<ApprovalStage>();
 ApprovalStage approvalStages = new ApprovalStage();
 approvalStages.approvalStageTimeOutInDays = 14;
 approvalStages.isApproverJustificationRequired = true;
-approvalStages.isEscalationEnabled = true;
+approvalStages.isEscalationEnabled = false;
 approvalStages.escalationTimeInMinutes = 11520;
 LinkedList<UserSet> primaryApproversList = new LinkedList<UserSet>();
 GroupMembers primaryApprovers = new GroupMembers();
@@ -46,9 +46,6 @@ approvalStages.primaryApprovers = primaryApproversList;
 approvalStagesList.add(approvalStages);
 requestApprovalSettings.approvalStages = approvalStagesList;
 accessPackageAssignmentPolicy.requestApprovalSettings = requestApprovalSettings;
-AssignmentReviewSettings accessReviewSettings = new AssignmentReviewSettings();
-accessReviewSettings.isEnabled = false;
-accessPackageAssignmentPolicy.accessReviewSettings = accessReviewSettings;
 LinkedList<AccessPackageQuestion> questionsList = new LinkedList<AccessPackageQuestion>();
 AccessPackageMultipleChoiceQuestion questions = new AccessPackageMultipleChoiceQuestion();
 questions.isRequired = false;
