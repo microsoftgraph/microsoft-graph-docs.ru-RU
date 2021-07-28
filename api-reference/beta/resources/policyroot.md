@@ -1,41 +1,52 @@
 ---
 title: тип ресурсов policyRoot
-description: Новая привязка свойств навигации для unifiedRoleManagementPolicy и unifiedRoleManagementPolicyAssignment к policyRoot.
+description: Тип ресурса, подвергая свойства навигации для однотонных политик.
 author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3827440befd26fb584addd0d6af520a6498c11dd
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b8d24c506934dddaa875d3cdd80808be7b918f57
+ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680727"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53547533"
 ---
 # <a name="policyroot-resource-type"></a>тип ресурсов policyRoot
 
 Пространство имен: microsoft.graph
 
-Новая привязка свойств навигации для unifiedRoleManagementPolicy и unifiedRoleManagementPolicyAssignment к policyRoot.
+Тип ресурса, подвергая свойства навигации для однотонных политик.
 
 ## <a name="methods"></a>Методы
-|Метод|Тип возвращаемых данных|Описание|
-|:---|:---|:---|
-|[List roleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)|[коллекция unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Получите ресурсы unifiedRoleManagementPolicy из свойства навигации roleManagementPolicies.|
-|[List roleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md)|[коллекция unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md)|Получите ресурсы unifiedRoleManagementPolicyAssignment из свойства навигации RoleManagementPolicyAssignments.|
+Нет
 
-<!--
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+## <a name="properties"></a>Свойства
+Нет
 
 
-## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|roleManagementPolicies|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Represents the role management policies.|
-|roleManagementPolicyAssignments|[unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) collection|Represents the role management policy assignments.|
--->
+## <a name="relationships"></a>Отношения
+| Связь                              | Тип                                                                                                      | Описание                                                                                                                                                          |
+|:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | Методы проверки подлинности и пользователи, которые могут использовать их для регистрации и выполнения многофакторной проверки подлинности (MFA) в Azure Active Directory (Azure AD). |
+| authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | Конфигурация политики для самостоятельной регистрации внешних пользователей.                                                                                   |
+| b2cAuthenticationMethodsPolicy            | [b2cAuthenticationMethodsPolicy](b2cauthenticationmethodspolicy.md)                                       | Политики Azure AD B2C, которые определяют, как конечные пользователи регистрируются через локальные учетные записи.                                                                                     |
+| activityBasedTimeoutPolicies              | [коллекция activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md)                                    | Политика, контролируемая простоем для веб-сеансов для приложений.                                                                                        |
+| authorizationPolicy                       | [коллекция authorizationPolicy](authorizationpolicy.md)                                                  | Политика, контролируемая настройками авторизации Azure AD.                                                                                                            |
+| claimsMappingPolicies                     | Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | Политики сопоставления утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Подключение для маркеров, выдаваемого конкретному приложению.                                   |
+| homeRealmDiscoveryPolicies                | Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)                                        | Политика управления поведением проверки подлинности Azure AD для федерационных пользователей.                                                                                          |
+| permissionGrantPolicies                   | Коллекция [permissionGrantPolicy](permissiongrantpolicy.md)                                              | Политика, которая указывает условия, при которых может быть предоставлено согласие.                                                                                         |
+| tokenIssuancePolicies                     | Коллекция [tokenIssuancePolicy](tokenissuancepolicy.md)                                                  | Политика, которая указывает характеристики маркеров SAML, выданных Azure AD.                                                                                     |
+| tokenLifetimePolicies                     | Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md)                                                  | Политика, контролируемая сроком службы маркера доступа JWT, маркера ID или маркера SAML 1.1/2.0, выданного Azure AD.                                                |
+| featureRolloutPolicies                    | [коллекция featureRolloutPolicy](featurerolloutpolicy.md)                                                | Политика выкатки функций, связанная с объектом каталога.                                                                                                       |
+| accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | Политика, которая содержит параметры обзора доступа на уровне каталогов.                                                                                                     |
+| adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | Политика, в которой создаются и управляются запросы на согласие для всего клиента.                                                                                  |
+| conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | Пользовательские правила, определяемые сценарием доступа.                                                                                                                     |
+| identitySecurityDefaultsEnforcementPolicy | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)                 | Политика, представляющую по умолчанию безопасность, защищающую от распространенных атак.                                                                                |
+| mobileAppManagementPolicies               | [коллекция mobilityManagementPolicy](mobilitymanagementpolicy.md)                                        | Политика, определяемая конфигурацией автоматической регистрации для приложения управления мобильностью (MDM или MAM).                                                            |
+| roleManagementPolicies                    | [коллекция unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)                     | Представляет политики управления ролью.                                                                                                                             |
+| roleManagementPolicyAssignments           | [коллекция unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) | Представляет назначения политики управления ролью.                                                                                                                   |
+
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

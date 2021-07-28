@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9626695a5ad9fce18b14c25fcca75fe394d5a816
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 33888a767e33300032ecd4f08788e04541b1f65d
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440721"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534546"
 ---
 # <a name="get-unifiedroledefinition"></a>Get unifiedRoleDefinition
 
@@ -21,7 +21,7 @@ ms.locfileid: "53440721"
 Получите свойства и связи объекта [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) поставщика RBAC. 
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- облачный КОМПЬЮТЕР 
+- Облачный КОМПЬЮТЕР 
 - управление устройствами (Intune)
 - directory (роли каталога Azure AD)
 - управление правами (управление правами Azure AD)
@@ -106,7 +106,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 

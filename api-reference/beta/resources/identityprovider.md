@@ -5,18 +5,19 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 11c793a01cd1b0027e12cd831984dc30cd04961c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 95f452483e4ff1503208c9b4bbd67ceb6129df73
+ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945664"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "53580781"
 ---
-# <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
-
+# <a name="identityprovider-resource-type-deprecated"></a>Тип ресурса identityProvider (нерекомендуемый)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Представляет поставщиков удостоверений с [внешними удостоверениями](/azure/active-directory/external-identities/) для клиента Azure Active Directory и клиента Azure AD B2C.
 
@@ -28,8 +29,7 @@ ms.locfileid: "50945664"
 
 Настройка поставщика удостоверений в клиенте Azure AD B2C позволяет пользователям регистрироваться и входить с помощью учетных записей социальных сетей или настраиваемого поставщика, поддерживающего OpenID Connect, в приложении. Например, приложение может использовать Azure AD B2C, чтобы разрешить пользователям регистрироваться в службе с помощью учетной записи Facebook или собственного поставщика удостоверений, соответствующего протоколу OIDC.
 
-
-Если это настраиваемый поставщик удостоверений OpenID Connect с `OpenIDConnect` в качестве `type`, он представляется с помощью типа ресурса [openIdConnectProvider](../resources/openidconnectprovider.md), наследуемого от типа ресурса identityProvider. 
+Если это настраиваемый поставщик удостоверений OpenID Connect с `OpenIDConnect` в качестве `type`, он представляется с помощью типа ресурса [openIdConnectProvider](../resources/openidconnectprovider.md), наследуемого от типа ресурса identityProvider.
 
 ## <a name="methods"></a>Методы
 

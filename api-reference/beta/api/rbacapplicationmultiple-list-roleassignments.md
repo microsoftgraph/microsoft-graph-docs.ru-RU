@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72c1c5f711148651b8faef38efb7d4d0d21cf432
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 0ee5cb37fab90b3a92d20b83047f8610453ee84f
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334621"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534006"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -21,7 +21,7 @@ ms.locfileid: "53334621"
 Получите список объектов [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) для поставщика RBAC.
 
 В настоящее время поддерживаются следующие поставщики RBAC:
-- облачный КОМПЬЮТЕР 
+- Облачный КОМПЬЮТЕР 
 - управление устройствами (Intune)
 
 Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)
@@ -80,7 +80,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в теле ответа.
 
@@ -101,7 +101,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments/$filter=principalId eq '9e47fc6f-2d7a-464c-944e-d3dd0de522e4'
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приводится пример ответа:
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

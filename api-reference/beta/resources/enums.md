@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d4cac5a2b0d7b5d9c2e6a969da7e8c05c85322fb
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: d628a45b99d5fe9fb0416820e34ecf296e740f79
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467136"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533908"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -124,7 +124,7 @@ ms.locfileid: "53467136"
 
 |Member|
 |:---|
-|все |
+|все|
 |Обозреватель|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -142,11 +142,11 @@ ms.locfileid: "53467136"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справочные материалы|
+|Ссылка|
 |В двоичном формате|
-|Логический|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -456,7 +456,7 @@ ms.locfileid: "53467136"
 
 |Member|
 |:---|
-|все |
+|все|
 |privilegedAdmin|
 |Администратор|
 |пользователь|
@@ -466,7 +466,7 @@ ms.locfileid: "53467136"
 
 |Member|
 |:---|
-|все |
+|все|
 |участники|
 |гость|
 |unknownFutureValue|
@@ -1041,7 +1041,7 @@ ms.locfileid: "53467136"
 | занят             | 2     |
 | oof              | 3     |
 | workingElsewhere | 4      |
-| unknown          | –1    |
+| unknown          | -1    |
 
 
 ### <a name="physicaladdresstype-values"></a>значения physicalAddressType
@@ -1069,7 +1069,7 @@ ms.locfileid: "53467136"
 |:-------------------------
 | нет
 | contactsOnly
-| все 
+| все
 
 
 ### <a name="automaticrepliesstatus-values"></a>значения automaticRepliesStatus
@@ -1085,7 +1085,7 @@ ms.locfileid: "53467136"
 
 | Элемент      | Значение |
 | :---------- | :---- |
-| Авто        | –1    |
+| Авто        | -1    |
 | lightBlue   | 0     |
 | lightGreen  | 1     |
 | lightOrange | 2     |
@@ -1112,15 +1112,17 @@ ms.locfileid: "53467136"
 
 ### <a name="educationsynchronizationstatus-values"></a>значения educationSynchronizationStatus
 
-| Элемент             | Значение |
-| :----------------- | :---- |
-| приостановлено             | 0     |
-| inProgress         | 1     |
-| success            | 2     |
-| error              | 3     |
-| validationError    | 4      |
-| карантин        | 5      |
-| unknownFutureValue | 6      |
+| Member             |
+| :----------------- |
+| приостановлено             |
+| inProgress         |
+| success            |
+| error              |
+| validationError    |
+| карантин        |
+| unknownFutureValue |
+| извлечение         |
+| проверка         |
 
 ### <a name="educationexternalsource-values"></a>значения educationExternalSource
 
@@ -1290,7 +1292,7 @@ ms.locfileid: "53467136"
 | Владелец       | 0     |
 | Участник | 1     |
 | Reader      | 2     |
-| Нет        | –1    |
+| Нет        | -1    |
 
 
 ### <a name="operationstatus-values"></a>значения operationStatus
@@ -1406,7 +1408,7 @@ ms.locfileid: "53467136"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1449,7 +1451,7 @@ ms.locfileid: "53467136"
 
 | Элемент   | Значение |
 | :------- | :---- |
-| нет     | –1    |
+| нет     | -1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
@@ -1461,7 +1463,7 @@ ms.locfileid: "53467136"
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13    |
 | preset14 | 14     |
@@ -1572,7 +1574,7 @@ Enum для типов значений реестра, определенных
 | нет              | 8      | REG_NONE тип значения реестра.                |
 | qword             | 9      | REG_QWORD тип значения реестра.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN типа значения реестра. |
-| sz                | 11     | REG_SZ тип значения реестра.                  |
+| sz                | 11    | REG_SZ тип значения реестра.                  |
 
 ### <a name="alertseverity-values"></a>значения alertSeverity
 
@@ -1613,7 +1615,7 @@ Enum для серьезности оповещений.
 
 | Элемент            | Значение | Описание                  |
 | :---------------- | :---- | :--------------------------- |
-| unknown           | –1    | Неизвестно.                     |
+| unknown           | -1    | Неизвестно.                     |
 | интерактивный       | 0     | Logon является интерактивным.        |
 | remoteInteractive | 1     | Logon — это удаленный интерактивный. |
 | сеть           | 2     | Logon — это сеть.            |
@@ -1626,14 +1628,14 @@ Enum для серьезности оповещений.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
-| unknown       | –1    | Неизвестно.                        |
+| unknown       | -1    | Неизвестно.                        |
 | стандартный      | 0     | Член группы стандартных пользователей. |
 | power         | 1     | Член группы Power Users.    |
 | администратор | 2     | Член группы Администраторы. |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>значения chatMessagePolicyViolationDlpActionType
 
-| Значение |
+| Value |
 |:-----------------|
 | нет |
 | NotifySender |
@@ -1644,7 +1646,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|все |
+|все|
 |любой|
 
 ### <a name="risklevel-values"></a>значения riskLevel
@@ -1787,6 +1789,8 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |message|
+|unknownFutureValue|
+|systemEventMessage|
 
 ### <a name="chatmessageimportance-values"></a>значения chatMessageImportance
 
@@ -1997,7 +2001,7 @@ Enum для серьезности оповещений.
 |Windows|
 |WindowsPhone|
 |macOS|
-|все |
+|все|
 |unknownFutureValue|
 
 ### <a name="priority-values"></a>значения приоритета
@@ -2006,7 +2010,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2070,7 +2074,7 @@ Enum для серьезности оповещений.
 | firstTimeSender       | 8      | Заблокировано из-за первого отправитель времени.   |
 | autoPurgeToInbox      | 9      | TimeTravel перемещает сообщение в почтовый ящик.   |
 | autoPurgeToJunk       | 10     | TimeTravel перемещает сообщение в нежелательное.    |
-| autoPurgeToDeleted    | 11     | TimeTravel перемещает сообщение на удаление. |
+| autoPurgeToDeleted    | 11    | TimeTravel перемещает сообщение на удаление. |
 | исходящие              | 12     | Исходящие сообщения.                      |
 | notJunk               | 13    | Разрешить из-за не нежелательной.              |
 | нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
@@ -2253,14 +2257,14 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |нет|
-|все |
+|все|
 |выбранный|
 
 ### <a name="teamsappinstallationscope-values"></a>teamsAppInstallationScope values
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|команда      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 
@@ -2433,7 +2437,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|team|
+|команда|
 |канал|
 |чат|
 |unknownFutureValue|
@@ -2451,3 +2455,21 @@ Enum для серьезности оповещений.
 |phoneUser|
 |unknownFutureValue|
 
+### <a name="callrecordingstatus-values"></a>значения callRecordingStatus 
+
+|Member|
+|:---|
+|success|
+|сбой|
+|начальный|
+|chunkFinished|
+|unknownFutureValue|
+
+### <a name="teamworkcalleventtype-values"></a>значения teamworkCallEventType 
+
+|Member|
+|:---|
+|call|
+|собрание|
+|screenShare|
+|unknownFutureValue|

@@ -243,6 +243,8 @@ items:
             href: education-concept-overview.md
           - name: Рубрики
             href: education-rubric-overview.md
+          - name: Отправка файлов
+            href: education-upload-resource-overview.md
       - name: Файлы
         href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
@@ -444,6 +446,8 @@ items:
                 href: teams-send-activityfeednotifications.md
               - name: Рекомендации
                 href: teams-activity-feed-notifications-best-practices.md
+          - name: Системные сообщения
+            href: system-messages.md
       - name: Задачи To-Do
         href: todo-concept-overview.md
         displayName: Microsoft To Do

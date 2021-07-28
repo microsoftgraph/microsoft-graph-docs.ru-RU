@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 50154654835d1137db49f9f5690115c05ea7e0c1
-ms.sourcegitcommit: 3873c85f53e026073addca92d31d234af244444c
+ms.openlocfilehash: 83dfce84c3a1c911d51ca7cf66d864945f3391f9
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53367005"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53533922"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>тип ресурса cloudPcDeviceImage
 
@@ -18,7 +18,7 @@ ms.locfileid: "53367005"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ресурс изображения на облачном компьютере.
+Представляет ресурс изображений на облачном компьютере.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -37,11 +37,11 @@ ms.locfileid: "53367005"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для ресурса изображений на облачном компьютере. Только для чтения.|
-|sourceImageResourceId|String|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
-|displayName|String|Имя отображения изображения.|
+|id|Строка|Уникальный идентификатор для ресурса изображений на облачном компьютере. Только для чтения.|
+|sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|Строка|Имя отображения изображения.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
-|osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
+|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
 |lastModifiedDateTime|DateTimeOffset|Данные и время последнего изменения изображения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC). Например, полночь UTC 1 января 2014 г. отображается как '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|Состояние изображения на облачном компьютере. Возможные значения: `pending`, `ready`, `failed`.|
@@ -64,7 +64,7 @@ ms.locfileid: "53367005"
 |osVersionNotSupported| Версия ОС не поддерживается.|
 |sourceImageInvalid|Исходный образ не является допустимым для Windows VM с ним.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

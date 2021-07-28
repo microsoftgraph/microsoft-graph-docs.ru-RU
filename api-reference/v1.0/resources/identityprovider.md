@@ -2,19 +2,20 @@
 title: Тип ресурса identityProvider
 description: Представляет поставщика удостоверений Azure Active Directory (Azure AD).
 localization_priority: Priority
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c03d1a47925456038ebaf24b96d93e73d844f16c
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 769310747aa83f30597d725757aadb3f8262270e
+ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51882196"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "53534490"
 ---
-# <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
-
+# <a name="identityprovider-resource-type-deprecated"></a>Тип ресурса identityProvider (нерекомендуемый)
 Пространство имен: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщиком удостоверений может быть корпорация **Майкрософт**, **Google**, **Facebook**, **Amazon**, **LinkedIn** или **Twitter**. Поставщики удостоверений в предварительной версии: **Weibo**, **QQ**, **WeChat**, **GitHub** и любой поставщик, поддерживаемый OpenID Connect. 
 
@@ -67,4 +68,3 @@ ms.locfileid: "51882196"
     "clientSecret": "String"
 }
 ```
-
