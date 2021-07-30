@@ -83,7 +83,7 @@ items:
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: Использование Postman
         href: /graph/use-postman?context=graph/api/beta
-      - name: Системные сообщения.
+      - name: Системные сообщения
         href: /graph/system-messages?context=graph/api/beta
   - name: Миграция
     expanded: false
@@ -264,7 +264,7 @@ items:
                 href: api/user-list-events.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: Контакты
             href: resources/contact.md
             items:
               - name: Создание контакта
@@ -796,7 +796,7 @@ items:
                 href: api/directory-deleteditems-delete.md
               - name: Восстановление удаленного приложения
                 href: api/directory-deleteditems-restore.md
-              - name: Сертификаты & секреты
+              - name: Сертификаты и секреты
                 items:
                   - name: Добавление пароля
                     href: api/application-addpassword.md
@@ -1432,9 +1432,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -10194,7 +10194,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Files
+      - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -10901,6 +10901,36 @@ items:
                         href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
           - name: Удостоверение и вход
             items:
+              - name: Политика метода проверки подлинности приложений (предварительный просмотр)
+                items:
+                  - name: Обзор
+                    href: resources/applicationAuthMethodPolicy.md
+                  - name: Политика управления приложениями клиента
+                    items:
+                      - name: Обзор
+                        href: resources/tenantAppManagementPolicy.md
+                      - name: Получение
+                        href: api/tenantAppManagementPolicy-get.md
+                      - name: Обновление
+                        href: api/tenantAppManagementPolicy-update.md
+                  - name: Политика управления приложениями
+                    items:
+                      - name: Обзор
+                        href: resources/appManagementPolicy.md
+                      - name: Перечисление
+                        href: api/appManagementPolicy-list.md
+                      - name: Получение
+                        href: api/appManagementPolicy-get.md
+                      - name: Создание
+                        href: api/appManagementPolicy-post.md
+                      - name: Обновление
+                        href: api/appManagementPolicy-update.md
+                      - name: Delete
+                        href: api/appManagementPolicy-delete.md
+                      - name: Create appliesTo
+                        href: api/appManagementPolicy-post-appliesTo.md
+                      - name: Список применяетсяTo
+                        href: api/appManagementPolicy-list-appliesTo.md
               - name: Политика событий проверки подлинности
                 items:
                   - name: Политика событий проверки подлинности
