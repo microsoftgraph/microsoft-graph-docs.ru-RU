@@ -5,16 +5,24 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d628a45b99d5fe9fb0416820e34ecf296e740f79
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: aeb34a1494a4cc48a5b5c44d5ccfa8f540b4505c
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533908"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660326"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="appcredentialrestrictiontype-values"></a>значения appCredentialRestrictionType
+
+|Member|
+|:-----|
+|passwordAddition|
+|passwordLifetime|
+|unknownFutureValue|
 
 ### <a name="synchronizationsecret-values"></a>синхронизацияSecret значения
 
@@ -142,11 +150,11 @@ ms.locfileid: "53533908"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Ссылка|
+|Справочные материалы|
 |В двоичном формате|
-|Boolean|
+|Логический|
 |DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -388,7 +396,7 @@ ms.locfileid: "53533908"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -535,7 +543,7 @@ ms.locfileid: "53533908"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -797,7 +805,7 @@ ms.locfileid: "53533908"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -868,7 +876,7 @@ ms.locfileid: "53533908"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1635,7 +1643,7 @@ Enum для серьезности оповещений.
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>значения chatMessagePolicyViolationDlpActionType
 
-| Value |
+| Значение |
 |:-----------------|
 | нет |
 | NotifySender |
@@ -2010,13 +2018,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2138,7 +2146,7 @@ Enum для серьезности оповещений.
 |валюта | столбец валюты. |
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
-|boolean | Столбец Да/Нет. |
+|логический | Столбец Да/Нет. |
 |пользователь | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
@@ -2163,7 +2171,7 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | строковый тип данных                    |
-| boolean               | 2     | тип данных Boolean                   |
+| логический               | 2     | тип данных Boolean                   |
 | int64                 | 3     | Тип данных Int                       |
 | stringCollection      | 4      | Тип данных коллекции строк         |
 |dateTime|5 ||

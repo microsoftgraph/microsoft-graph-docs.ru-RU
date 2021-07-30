@@ -15,7 +15,7 @@ ms.locfileid: "53579032"
 
 | Тип запроса | Ограничение на приложение для всех арендаторов | Ограничение на приложение по клиенту |
 | ------------ | ----------------------------- | ------------------------ |
-| Любой | 400000 запросов за 20 секунд | 35000 запросов за 10 секунд |
+| Любой | 400 000 запросов за 20 секунд | 35 000 запросов за 10 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:  
 educationClass, educationCourse, educationOnPremisesInfo, educationOrganization, educationRelatedContact, educationRoot, educationSchool, educationStudent, educationTeacher, educationTerm, educationUser.
