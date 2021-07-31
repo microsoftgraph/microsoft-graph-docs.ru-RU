@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: ffb91b315772d017ce039237e353df68daa47bfc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c675d79598ff4428f3384518edc74cfcb8cc050d
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952317"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665860"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>тип ресурса appliedConditionalAccessPolicy
 
@@ -26,10 +26,10 @@ ms.locfileid: "50952317"
 |:---------------|:--------|:----------|
 |условия, удовлетворяемые|conditionalAccessConditions|Относится к условиям политики условного доступа, которые удовлетворены. Возможные значения: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
 |conditionsNotSatisfied|conditionalAccessConditions|Относится к условиям политики условного доступа, которые не удовлетворены. Возможные значения: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`.|
-|enforcedGrantControls|Коллекция строк|Относится к средствам управления грантами, которые применяются в политике условного доступа (пример: "Требуется многофакторная проверка подлинности").|
-|enforcedSessionControls|Коллекция строк|Относится к средствам управления сеансами, которые применяются в политике условного доступа (пример: "Требуется принудительное управление приложениями").|
-|id|Строка|Идентификатор политики условного доступа.|
-|result|appliedConditionalAccessPolicyResult| Указывает результат срабатываемой политики ЦС. Возможные значения: , , (Политика не применяется, так как условия политики не были выполнены), (Это связано с политикой в состоянии `success` `failure` `notApplied` `notEnabled` отключена), `unknown` , , , `unknownFutureValue` `reportOnlySuccess` `reportOnlyFailure` , `reportOnlyNotApplied``reportOnlyInterrupted`|
+|enforcedGrantControls|Коллекция String|Относится к средствам управления грантами, которые применяются в политике условного доступа (пример: "Требуется многофакторная проверка подлинности").|
+|enforcedSessionControls|Коллекция String|Относится к средствам управления сеансами, которые применяются в политике условного доступа (пример: "Требуется принудительное управление приложениями").|
+|id|String|Идентификатор политики условного доступа.|
+|result|appliedConditionalAccessPolicyResult| Указывает результат срабатываемой политики ЦС. Возможные значения: , , (Политика не применяется, так как условия политики не были выполнены), (Это связано с политикой в состоянии `success` `failure` `notApplied` `notEnabled` отключена), , , , , `unknown` , `unknownFutureValue` `reportOnlySuccess` `reportOnlyFailure` `reportOnlyNotApplied` `reportOnlyInterrupted` . Обратите внимание, что для получения следующих значений в этом развиваемом переуме- `Prefer: include-unknown-enum-members` [](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `reportOnlySuccess` `reportOnlyFailure` `reportOnlyNotApplied` `reportOnlyInterrupted`|
 
 ## <a name="json-representation"></a>Представление JSON
 

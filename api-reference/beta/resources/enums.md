@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: aeb34a1494a4cc48a5b5c44d5ccfa8f540b4505c
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 3aeaa5d297ccab533f970f39dc6567873bd1bc5a
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660326"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665867"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -1797,6 +1797,8 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |message|
+|chatEvent |
+|ввод текста |
 |unknownFutureValue|
 |systemEventMessage|
 
@@ -1810,11 +1812,12 @@ Enum для серьезности оповещений.
 
 ### <a name="channelmembershiptype-values"></a>Значения channelMembershipType
 
-| Элемент             | Значение |
-| :----------------- | :---- |
-| стандартный           | 0     |
-| частный            | 1     |
-| unknownFutureValue | 2     |
+| Member             | 
+| :----------------- | 
+| стандартный           | 
+| частный            | 
+| unknownFutureValue | 
+| общие             |
 
 ### <a name="stagedfeaturename-values"></a>значения stagedFeatureName
 
@@ -2018,7 +2021,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2249,6 +2252,7 @@ Enum для серьезности оповещений.
 |:---|
 |group|
 |unknownFutureValue|
+|реестр|
 
 ### <a name="plannerplancontexttype-values"></a>значения plannerPlanContextType 
 

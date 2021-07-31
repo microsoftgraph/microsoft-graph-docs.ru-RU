@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 55636a78cd904c6992de0cf48ab333ccef8bb84a
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: ee802e9749418b9a1d2a9bbdbe3916493e5cf431
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534195"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665909"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>тип ресурса educationSynchronizationProfileStatus
 
@@ -32,14 +32,12 @@ ms.locfileid: "53534195"
 
 | Свойство                    | Тип                           | Описание                                                                                                              |
 | :-------------------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| id                          | Строка                         | Уникальный идентификатор ресурса. (только для чтения)                                                                      |
-| status                      | educationSynchronizationStatus | Состояние синхронизации. Возможные значения: `paused` `inProgress` , , , , , `success` `error` `quarantined` `validationError` , `extracting` *`validating`*. |
+| id                          | String                         | Уникальный идентификатор ресурса. (только для чтения)                                                                      |
+| status                      | educationSynchronizationStatus | Состояние синхронизации. Возможные значения: `paused` `inProgress` , , , , , , `success` `error` `validationError` `quarantined` `unknownFutureValue` `extracting` `validating` . Обратите внимание, что для получения следующих значений в этом развиваемом переуме- `Prefer: include-unknown-enum-members` [](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `extracting` `validating`|
 | lastSynchronizationDateTime | DateTimeOffset                 | Представляет время последней успешной синхронизации.                                        |
 | lastActivityDateTime | DateTimeOffset                 | Представляет время, когда последние изменения наблюдались в профиле.                                        |
 | errorCount | Целое                 | Количество ошибок при синхронизации.                                        |
-| statusMessage | Строка                 | Сообщение о состоянии для текущего этапа синхронизации профиля.                                        |
-
-Статусы "Извлечение" и "Проверка" возвращаются только для приложений, подготовленных для обработки новых участников. Выбор в этом вопросе делается путем установки заглавного загона http prefer request: `Prefer: include-unknown-enum-members` . Дополнительные новости: [эволюционируемые enums](/graph/best-practices-concept#evolvable-enums).
+| statusMessage | String                 | Сообщение о состоянии для текущего этапа синхронизации профиля.                                        |
 
 
 ## <a name="json-representation"></a>Представление JSON

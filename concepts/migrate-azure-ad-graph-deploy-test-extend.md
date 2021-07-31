@@ -4,12 +4,12 @@ description: 'Описывает, как перенести Azure Active Directo
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 3f8129c434ba8a2d7c9455f3dbfad216fb216399
-ms.sourcegitcommit: 9bc1652890fe49d7ad5e5b7177c8a682b1759b75
+ms.openlocfilehash: 5ea9944a23ffdf849d97bd116b730413cdd0100d
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100109"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665853"
 ---
 # <a name="deploy-test-and-extend"></a>Развертывание, тестирование и расширение
 
@@ -48,7 +48,7 @@ ms.locfileid: "52100109"
     Microsoft Graph предоставляет доступ к многим дополнительным службам, чем только Azure Active Directory. Это шлюз [API для Microsoft 365 служб.](./index.yml)
     Регулярно проверяйте новые наборы данных и возможности.  
 
-    - Посмотрите, что [можно сделать с Microsoft Graph](https://developer.microsoft.com/graph/examples)
+    - Взгляните на некоторые решения [партнеров.](https://developer.microsoft.com/graph/partners)
     - Ознакомьтесь [с блогом microsoft Graph для](https://developer.microsoft.com/graph/blogs) последних новостей о microsoft Graph и некоторых отличных сериях обучения.
     - В [статье changelog](/graph/changelog) обобщаются обновления службы и документов. После этих обновлений вы сможете отслеживать новые API, введенные в /бета-версию (предварительный просмотр), и те, которые повышены до v1.0 (GA).  Эти новые API могут предоставить новые возможности для добавления дополнительных значений и новых функций в приложения.  
 

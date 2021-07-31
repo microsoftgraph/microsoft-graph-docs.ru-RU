@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9239e9543b77348b4524dc76be8fee64e1b9919a
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 2db0708ada9bb57ad4f0f88da89c797ff4a4e1e2
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030840"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665902"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>тип ресурса teamsAsyncOperation
 
@@ -34,14 +34,14 @@ ms.locfileid: "53030840"
 
 | Свойство | Тип   | Описание |
 |:---------------|:--------|:----------|
-|id|string |Уникальный id операции.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Обозначает, какой тип операции описывается.|
+|id|строка |Уникальный id операции.|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Обозначает тип описываемой операции. |
 |createdDateTime|DateTimeOffset |Время создания операции.|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Состояние операции.|
 |lastActionDateTime|DateTimeOffset |Время последнего обновления операции async.|
 |attemptsCount|Int32|Количество попыток операции, прежде чем она была отмечена успешной или неудачной.|
 |targetResourceId|guid |ID объекта, созданного или измененного в результате этой операции async, как правило, [группы](../resources/team.md).|
-|targetResourceLocation|Строка|Расположение объекта, созданного или измененного в результате этой операции async. Этот URL-адрес должен рассматриваться как непрозрачная величина, а не разрезать его пути компонентов.|
+|targetResourceLocation|строка|Расположение объекта, созданного или измененного в результате этой операции async. Этот URL-адрес должен рассматриваться как непрозрачная величина, а не разрезать его пути компонентов.|
 |error|[operationError](operationerror.md)|Любая ошибка, которая вызывает сбой операции async.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,13 +57,13 @@ ms.locfileid: "53030840"
 ```json
 {
     "id": "string",
-    "operationType": "archiveTeam",
-    "createdDateTime": "2018-01-01T00:00:00.0000000Z",
-    "status": "succeeded",
-    "lastActionDateTime": "2018-01-01T00:00:00.0000000Z",
-    "attemptsCount": 1,
-    "targetResourceId": "fa4aa5a2-a75b-4769-86f4-9e2742a18fda",
-    "targetResourceLocation": "/groups('fa4aa5a2-a75b-4769-86f4-9e2742a18fda')/team",
+    "operationType": "string",
+    "createdDateTime": "string (timestamp)",
+    "status": "string",
+    "lastActionDateTime": "string (timestamp)",
+    "attemptsCount": "Integer",
+    "targetResourceId": "string",
+    "targetResourceLocation": "string",
     "error": null
 }
 ```

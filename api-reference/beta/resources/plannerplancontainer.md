@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: acb7a85683bc94795953e524ee9630d6cfc01f24
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: ea0af35bf9f82928e9da3abc90670566f3cc0869
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473887"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665771"
 ---
 # <a name="plannerplancontainer-resource-type"></a>тип ресурса plannerPlanContainer
 
@@ -31,7 +31,7 @@ ms.locfileid: "51473887"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |containerId|String|Идентификатор ресурса, который содержит план.|
-|type|plannerContainerType| Тип ресурса, который содержит план. См. предыдущую таблицу поддерживаемых типов. Возможные значения: `group`, `roster`, `unknownFutureValue`.|
+|type|plannerContainerType| Тип ресурса, который содержит план. См. предыдущую таблицу поддерживаемых типов. Возможные значения: `group`, `unknownFutureValue`, `roster`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение в `Prefer: include-unknown-enum-members` этом [развиваемом переуме.](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `roster`|
 |url|String|Полный канонический URL-адрес контейнера.|
 
 ## <a name="relationships"></a>Связи
