@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 957c90bea43130076b12933e3b18cea7197731ea
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 5575b2dd1659e730f04b038a8b6372a7d5662c10
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208031"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665891"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -55,7 +55,7 @@ ms.locfileid: "53208031"
 |replyToId| string | Только для чтения. Id родительского сообщения чата или корневого сообщения чата потока. (Применяется только к чатам в каналах, а не к чатам.) |
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Только для чтения. Сведения о отправителье сообщения чата.|
 |etag| string | Только для чтения. Номер версии сообщения чата. |
-|messageType|строка|Тип сообщения чата. Возможное значение: `message` .|
+|messageType|chatMessageType|Тип сообщения чата. Допустимые значения: `message`, `chatEvent`, `typing`, `unknownFutureValue`.|
 |createdDateTime|dateTimeOffset|Время создания сообщения чата.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда сообщение чата создается (начальный параметр) или изменено, в том числе при добавлении или удалении реакции. |
 |lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда были сделаны изменения в сообщении чата. Вызывает флаг "Отредактирован" Teams пользовательского интерфейса. Если изменение не выполнено, значение `null` .|

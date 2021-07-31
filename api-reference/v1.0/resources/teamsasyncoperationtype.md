@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 701b6402baf5b64ef0257dd1242dd2f2c8fccb16
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 1c419df1deed253092a6572236552d1a3c02783b
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030399"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665748"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>тип enum teamsAsyncOperationType
 
@@ -22,10 +22,11 @@ ms.locfileid: "53030399"
 
 ## <a name="members"></a>Элементы
 
-| Элемент | Значение| Описание |
-|:---------------|:--------|:----------|
-|Недопустимый|0|Недействительным значением.|
-|cloneTeam|1|Операция по клонированию команды.|
-|archiveTeam|2|Операция архивации группы.|
-|unarchiveTeam|3|Операция по восстановлению архивной группы.|
-|createTeam|4 |Операция по созданию команды с нуля.|
+| Member | Описание |
+|:---------------|:----------|
+|Недопустимый|Недействительным значением.|
+|cloneTeam|Операция по клонированию команды.|
+|archiveTeam|Операция архивации группы.|
+|unarchiveTeam|Операция по восстановлению архивной группы.|
+|createTeam|Операция по созданию команды с нуля.|
+|unknownFutureValue| Эволюционирующее значение sentinel. Не следует использовать. |

@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса workforceIntegration
-description: Экземпляр интеграции сотрудников со сменами.
+title: тип ресурса workforceIntegration
+description: Пример интеграции рабочей силы со сменами.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 637e18d2751ee528331771f11f41fc893770ad09
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: e8c05e82ccf92a46f9d3e511de000d2d36cd38db
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158935"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665874"
 ---
-# <a name="workforceintegration-resource-type"></a>Тип ресурса workforceIntegration
+# <a name="workforceintegration-resource-type"></a>тип ресурса workforceIntegration
 
 Пространство имен: microsoft.graph
 
-Экземпляр интеграции сотрудников со сменами.
+Пример интеграции рабочей силы со сменами.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Создание объекта **workforceIntegration.**|
+| [Создание](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Создание нового **объекта workforceIntegration.**|
 | [Список](../api/workforceintegration-list.md) | [коллекция workforceIntegration](workforceintegration.md) | Получите список объектов **workforceIntegration,** связанных с этим расписанием.|
-| [Получение](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Чтение свойств и связей объекта **workforceIntegration.** |
+| [Получение](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Ознакомьтесь с свойствами и отношениями объекта **workforceIntegration.** |
 | [Обновление](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Обновление объекта **workforceIntegration.** |
-| [удаление](../api/workforceintegration-delete.md); | Нет | Удаление объекта **workforceIntegration.** |
+| [Удаление](../api/workforceintegration-delete.md) | Нет | Удаление объекта **workforceIntegration.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции сотрудников.|
-|шифрование|[workforceIntegrationEncryption](workforceintegrationencryption.md)|Ресурс шифрования интеграции сотрудников.|
-|isActive|Логическое|Указывает, активна ли в настоящее время интеграция с сотрудниками.|
-|supportedEntities|string| Объекты Shifts, поддерживаемые для синхронных уведомлений об изменениях. Смены будут возвращать URL-адрес, предоставленный при изменениях клиентов для добавленных здесь сущностями. По умолчанию уведомления об изменениях не поддерживаются никакими сущностями. Возможные значения: `none` , , , `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences`|
-|url|String| URL-адрес интеграции сотрудников для переключеных вызовов из службы Shifts.|
+|displayName|String|Имя интеграции рабочей силы.|
+|шифрование|[workforceIntegrationEncryption](workforceintegrationencryption.md)|Ресурс шифрования интеграции рабочей силы.|
+|isActive|Логический|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
+|supportedEntities|workforceIntegrationSupportedEntities | Объекты Shifts, поддерживаемые для синхронных уведомлений об изменении. Shifts сделает вызов обратно на URL-адрес, предоставленный при изменениях клиента для добавленных здесь сущностями. По умолчанию для уведомлений об изменении не поддерживаются никакие сущностями. Возможные значения: `none`, `shift`, `swapRequest`, `userShiftPreferences`, `openshift`, `openShiftRequest`, `offerShiftRequest`, `unknownFutureValue`.|
+|url|String| URL-адрес интеграции рабочей силы для откатов из службы Shifts.|
 
 ## <a name="relationships"></a>Связи
 

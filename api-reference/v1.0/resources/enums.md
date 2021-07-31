@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 895ddba84728ebbc012a457890d43854268e7465
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 26fc51e2d8cff05a57955b437a93c1afac3f6f0b
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53443195"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665780"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -157,7 +157,7 @@ ms.locfileid: "53443195"
 |Windows|
 |WindowsPhone|
 |macOS|
-|все |
+|все|
 |unknownFutureValue|
 
 ### <a name="signinfrequencytype-values"></a>значения signinFrequencyType
@@ -200,7 +200,7 @@ ms.locfileid: "53443195"
 
 |Member|
 |:---|
-|все |
+|все|
 |Обозреватель|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -506,7 +506,7 @@ ms.locfileid: "53443195"
 | занят              | 2
 | oof               | 3
 | workingElsewhere  | 4 
-| unknown           | –1
+| unknown           | -1
 
 
 ### <a name="attendeetype-values"></a>значения attendeeType
@@ -524,7 +524,7 @@ ms.locfileid: "53443195"
 |:-------------------------
 | нет
 | contactsOnly
-| все 
+| все
 
 
 ### <a name="automaticrepliesstatus-values"></a>значения automaticRepliesStatus
@@ -540,7 +540,7 @@ ms.locfileid: "53443195"
 
 | Элемент     | Значение
 |:-----------|:----------
-| Авто       | –1
+| Авто       | -1
 | lightBlue  | 0
 | lightGreen | 1
 | lightOrange| 2
@@ -719,7 +719,7 @@ ms.locfileid: "53443195"
 | Владелец       | 0
 | Участник | 1
 | Reader      | 2
-| Нет        | –1
+| Нет        | -1
 
 
 ### <a name="operationstatus-values"></a>значения operationStatus
@@ -835,7 +835,7 @@ ms.locfileid: "53443195"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -878,7 +878,7 @@ ms.locfileid: "53443195"
 
 | Элемент   |Значение
 |:---------|:--------
-| нет     | –1
+| нет     | -1
 | preset0  | 0
 | preset1  | 1
 | preset2  | 2
@@ -890,7 +890,7 @@ ms.locfileid: "53443195"
 | preset8  | 8 
 | preset9  | 9 
 | preset10 | 10 
-| preset11 | 11 
+| preset11 | 11
 | preset12 | 12 
 | preset13 | 13
 | preset14 | 14 
@@ -1009,7 +1009,7 @@ Enum для типов значений реестра, определяемог
 |нет|8 | REG_NONE тип значения реестра.|
 |qword|9 | REG_QWORD тип значения реестра.|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN типа значения реестра.|
-|sz|11 | REG_SZ тип значения реестра.|
+|sz|11| REG_SZ тип значения реестра.|
 
 ### <a name="alertseverity-values"></a>значения alertSeverity
 
@@ -1049,7 +1049,7 @@ Enum для серьезности оповещений.
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|–1|Неизвестно.|
+|unknown|-1|Неизвестно.|
 |интерактивный|0|Logon является интерактивным.|
 |remoteInteractive|1| Logon — это удаленный интерактивный.|
 |сеть|2| Logon — это сеть.|
@@ -1062,7 +1062,7 @@ Enum для серьезности оповещений.
 
 |Member|Member|Описание|
 |:---|:---|:---|
-|unknown|–1|Неизвестно.|
+|unknown|-1|Неизвестно.|
 |стандартный|0|Член группы стандартных пользователей.|
 |power|1| Член группы Power Users.|
 |администратор|2| Член группы Администраторы.|
@@ -1186,7 +1186,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1244,11 +1244,20 @@ Enum для серьезности оповещений.
 | firstTimeSender       | 8      | Заблокировано из-за первого отправитель времени.   |
 | autoPurgeToInbox      | 9      | TimeTravel перемещает сообщение в почтовый ящик.   |
 | autoPurgeToJunk       | 10     | TimeTravel перемещает сообщение в нежелательное.    |
-| autoPurgeToDeleted    | 11     | TimeTravel перемещает сообщение на удаление. |
+| autoPurgeToDeleted    | 11    | TimeTravel перемещает сообщение на удаление. |
 | исходящие              | 12     | Исходящие сообщения.                      |
 | notJunk               | 13    | Разрешить из-за не нежелательной.              |
 | нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
 | unknownFutureValue    | 15    | Член-часовой.                  |
+
+### <a name="chatmessagetype-values"></a>значения chatMessageType
+
+| Значение |
+|:-----------------|
+| message |
+| chatEvent |
+| ввод текста |
+| unknownFutureValue |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>значения chatMessagePolicyViolationDlpActionType
 
@@ -1426,8 +1435,8 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| String                |
-| boolean               |
+| строка                |
+| логический               |
 | int64                 |
 | stringCollection      |
 | dateTime              |
@@ -1529,7 +1538,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|team|
+|команда|
 |канал|
 |чат|
 |unknownFutureValue|
