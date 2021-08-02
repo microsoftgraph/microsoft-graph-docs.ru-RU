@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5302b0f082520925149d7437d6fe1b3530b6cb56
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 94111087c0541111af903201fb6503be49a48a88
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430104"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660319"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -86,7 +86,7 @@ ms.locfileid: "53430104"
 | id | String | Уникальный идентификатор приложения. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
 | identifierUris | Коллекция String | URI, идентифицирующие приложение в клиенте Azure AD или в проверенном личном домене, если приложение является мультитенантным. Дополнительные сведения см. в разделе [Объекты приложения и субъекта-службы](/azure/active-directory/develop/app-objects-and-service-principals). Оператор `any` требуется для выражений фильтров, применяемых к многозначным свойствам. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`). |
-| isDeviceOnlyAuthSupported | Boolean | Указывает, поддерживает ли приложение проверку подлинности устройства без пользователя. Значение по умолчанию: `false`.  |
+| isDeviceOnlyAuthSupported | Логический | Указывает, поддерживает ли приложение проверку подлинности устройства без пользователя. Значение по умолчанию: `false`.  |
 | isFallbackPublicClient | Boolean | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию — `false`. Это означает, что резервный тип приложения является конфиденциальным клиентом, таким как веб-приложение. В некоторых ситуациях Azure AD не может определить тип клиентского приложения. Например, при потоке [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3), когда приложение настроено без указания URI перенаправления. В таких случаях Azure AD интерпретирует тип приложения на основе значения этого свойства.|
 | keyCredentials | Коллекция [keyCredential](keycredential.md) | Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`).|
 | logo | Stream | Основной логотип для приложения. Значение NULL не допускается. |
@@ -120,6 +120,7 @@ ms.locfileid: "53430104"
 
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
+|appManagementPolicies|Коллекция [appManagementPolicy](../resources/appManagementPolicy.md)| Параметр appManagementPolicy, примененный к этому приложению.|
 |calls           |Коллекция [call](call.md)                  |Только для чтения. Допускается значение null.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| Параметр connectorGroup, используемый приложением с прокси приложения Azure AD. Допускается значение NULL.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Только для чтения.|

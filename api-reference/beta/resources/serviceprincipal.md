@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 23b8155781e1d6a32140adb403f9fd6bd446cb83
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: cd6351c7a052c92a3e88ac33703e2cca8bfd0021
+ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53428817"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660333"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -133,6 +133,7 @@ ms.locfileid: "53428817"
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
+|appManagementPolicies|Коллекция [appManagementPolicy](../resources/appManagementPolicy.md)| Параметр appManagementPolicy, примененный к этому субъекту-службе.|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Назначение ролей приложений для приложения или службы, предоставляемых пользователям, группам и другим субъектам-службам. Поддерживает `$expand`.|
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Назначение роли приложения для другого приложения или службы, предоставляемых субъекту-службе. Поддерживает `$expand`.|
 |claimsMappingPolicies|Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)|Типы ресурсов claimsMappingPolicy, назначенные субъекту-службе. Поддерживает `$expand`.|
