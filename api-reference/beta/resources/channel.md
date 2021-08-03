@@ -5,12 +5,12 @@ author: akjo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2611f3d60d93b8f142c9d6454f8525dbe18b9721
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 84c8018283e8933f9a9ecb125e343d699159f6ab
+ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236259"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "53665734"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -60,7 +60,7 @@ ms.locfileid: "53236259"
 |isFavoriteByDefault|Логический|Указывает, должен ли канал автоматически помечаться как "Избранное" для всех участников команды. Задается только программными средствами с помощью [Создания группы](../api/team-post.md). Значение по умолчанию: `false`.|
 |email|String| Адрес электронной почты для отправки сообщений в канал. Только для чтения.|
 |webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
-|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|Тип канала. Можно настроить во время создания и нельзя изменить. Значение по умолчанию: standard.|
+|membershipType|channelMembershipType|Тип канала. Можно настроить во время создания и нельзя изменить. Допустимые значения: `standard`, `private`, `unknownFutureValue`, `shared`. Значение по умолчанию — `standard`. Обратите внимание, что требуется использоваться заголовок запроса `Prefer: include-unknown-enum-members`, чтобы получить следующее значение в этом [расширяемом перечислении](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания канала.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Настройки модерации канала, чтобы контролировать, кто может создавать новые сообщения и отвечать на сообщения в этом канале.|
 
