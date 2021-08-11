@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 3d864acfdd794bc5bcb914c460b29800c4a86291
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 54bf29579240514b5b5d224e54c6246638c703083df6ab230a44bf66a9c47c69
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223643"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>тип ресурса conditionalAccessApplications
 
@@ -22,8 +22,8 @@ ms.locfileid: "50962506"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeApplications | Коллекция строк | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
-| excludeApplications | Коллекция строк | Список ID приложений явно исключен из политики. |
+| includeApplications | Коллекция String | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
+| excludeApplications | Коллекция String | Список ID приложений явно исключен из политики. |
 | includeUserActions | Коллекция строк | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
 
 ## <a name="relationships"></a>Связи

@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса ИнвитепартиЦипантсоператион
-description: Представляет состояние длительной операции с приглашением для участников, активируемым при вызове API участника-приглашения.
+title: inviteParticipantsOperation resource type
+description: Представляет состояние длительной операции приглашения участников, вызываемой вызовом API приглашения участника.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7e729a572ceb69f59ed6cc00cd0a2e132765ed8a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9aa707a68cccb7424cb6a2eabaa455ece784730478ce2469b3e2f70c40e5297e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196980"
 ---
-# <a name="inviteparticipantsoperation-resource-type"></a>Тип ресурса ИнвитепартиЦипантсоператион
+# <a name="inviteparticipantsoperation-resource-type"></a>inviteParticipantsOperation resource type
 
 Пространство имен: microsoft.graph
 
-Представляет состояние длительной операции с приглашением для участников, активируемым при вызове API участника-приглашения.
+Представляет состояние длительной операции приглашения участников, вызываемой вызовом API приглашения участника.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | String                      | Контекст клиента.                                                                                                                               |
-| id                             | String                      | Идентификатор операции сервера. только для чтения.                                                                                              |
-| participants | Коллекция [invitationParticipantInfo](invitationParticipantInfo.md) | Участники, которые необходимо пригласить. |
+| clientContext                  | String                      | Клиентский контекст.                                                                                                                               |
+| id                             | String                      | ID операции сервера. Только для чтения.                                                                                              |
+| participants | Коллекция [invitationParticipantInfo](invitationParticipantInfo.md) | Участники, которые будут приглашать. |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                  |
 

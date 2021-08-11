@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Теамфунсеттингс
+title: тип ресурса teamFunSettings
 description: Параметры для настройки использования Giphy, мемов и наклеек в команде.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 25f49eaff6485fd0d618a91ef942bc2dccf8c8da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62e944143bc7dd6eac13c911b38872708777dd76dc6a812869d9e0b0655bc38d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129969"
 ---
-# <a name="teamfunsettings-resource-type"></a>Тип ресурса Теамфунсеттингс
+# <a name="teamfunsettings-resource-type"></a>тип ресурса teamFunSettings
 
 Пространство имен: microsoft.graph
 
 
 
-Параметры для настройки использования Giphy, мемес и наклеек в [команде](team.md).
+Параметры для настройки использования Giphy, мемов и стикеров в [команде](team.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|алловгифи|Boolean|Если задано значение true, включается использование Giphy.|
-|гификонтентратинг|String (enum)|Оценка содержимого Giphy. Возможные значения: `moderate`, `strict`.|
-|алловстиккерсандмемес|Boolean|Если задано значение true, пользователям разрешается включать наклейки и мемес.|
-|алловкустоммемес|Boolean|Если задано значение true, пользователи могут включать пользовательские мемес.|
+|allowGiphy|Логическое|Если установлено для true, включает использование Giphy.|
+|giphyContentRating|String (enum)|Оценка контента Giphy. Возможные значения: `moderate`, `strict`.|
+|allowStickersAndMemes|Логическое|Если установлено верно, позволяет пользователям включать наклейки и мемы.|
+|allowCustomMemes|Логический|Если установлено, что это так, пользователи могут включать настраиваемые мемы.|
 
 ## <a name="json-representation"></a>Представление JSON
 

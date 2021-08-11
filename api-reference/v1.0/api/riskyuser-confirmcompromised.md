@@ -5,17 +5,17 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 193baf4a8e450f0fc05812da8cb48440ebfccab1
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 743279c5bc7b79b7da3f508d9f8fc1cc89a434aaf052421915a5952f57912e84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124656"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 Пространство имен: microsoft.graph
 
->**Примечание:** API riskyUsers требует лицензии Azure AD Premium P2.
+>**Примечание:** API riskyUsers требует Azure AD Premium P2 лицензии.
 
 Подтвердим, что один или несколько [объектов riskyUser](../resources/riskyuser.md) могут быть скомпрометированы. Это действие задает высокий уровень риска целевого пользователя.
 
@@ -26,7 +26,7 @@ ms.locfileid: "50440096"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.ReadWrite.All |
+|Приложение | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /identityProtection/riskyUsers/confirmCompromised
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|userIds|Коллекция строк|Укажите рискованные пользовательские ИД, которые необходимо отклонять в теле запроса.|
+|userIds|Коллекция String|Укажите рискованные пользовательские ИД, которые необходимо отклонять в теле запроса.|
 
 
 

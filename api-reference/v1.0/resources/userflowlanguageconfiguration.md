@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 556860eb77c4707f1d180b7924ae3126958a4799
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: b40df72429bdc1b23bbb9426ae9b9f78154257491ba3c715d57c0804b226df98
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221154"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>тип ресурса userFlowLanguageConfiguration
 
@@ -32,9 +32,9 @@ ms.locfileid: "52547206"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД.|
+|id|String|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД.|
 |isEnabled|Boolean|Указывает, включен ли язык в потоке пользователей.|
-|displayName|Строка|Отображаемая языковая фамилия. Это свойство доступно только для чтения.|
+|displayName|String|Отображаемая языковая фамилия. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 

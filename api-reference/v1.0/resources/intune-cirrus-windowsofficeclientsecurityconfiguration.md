@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 704057cc96ef2de609644bdb9bcfaaab73d912c1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 5caafc10a3c65d790b09504a0c2c12236a8e803c4560bd263ae0023ec96ad879
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759571"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202404"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>тип ресурса windowsOfficeClientSecurityConfiguration
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0779afeef4d9b3944c5bd4c40b9222bf59b4fe09
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c3cf82cbccc80a810fda2cca86be3529f0ef0130f38ae7091a697b401417050f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758047"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225841"
 ---
 # <a name="create-compliancemanagementpartner"></a>Создание complianceManagementPartner
 
@@ -56,8 +56,8 @@ POST /deviceManagement/complianceManagementPartners
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Отображаемое имя партнера|
 |macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
-|AndroidOnboarded|Логический|Партнер, на борту для android-устройств.|
-|iosOnboarded|Логический|Партнер, на борту для устройств ios.|
+|AndroidOnboarded|Логическое|Партнер, на борту для android-устройств.|
+|iosOnboarded|Логическое|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
 |iosEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|

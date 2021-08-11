@@ -3,21 +3,21 @@ author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
 localization_priority: Normal
-description: Ресурс itemPreviewInfo содержит сведения о встраии предварительного просмотра ресурса driveItem.
+description: Ресурс itemPreviewInfo содержит сведения о том, как встраить предварительный просмотр driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fc7ece7ed529a714b2e1262c4e39444639caced1
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d6a3eaac24991c4c95da0dd4b4ae2640d6462f95c25b47d0fcbea6ff459962ec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130053"
 ---
-# <a name="itempreviewinfo-resource-type"></a>Тип ресурса itemPreviewInfo
+# <a name="itempreviewinfo-resource-type"></a>тип ресурса itemPreviewInfo
 
 Пространство имен: microsoft.graph
 
-Ресурс **itemPreviewInfo содержит** сведения о том, как встраить предварительный просмотр [ресурса driveItem.](driveitem.md)
+Ресурс **itemPreviewInfo содержит** сведения о том, как встраить предварительный просмотр [driveItem.](driveitem.md)
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,13 +33,13 @@ ms.locfileid: "50240572"
 
 | Имя           | Тип   | Описание
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | URL-адрес, подходящий для встраивки с помощью HTTP GET (iframes и т. д.)
-| postUrl        | string | URL-адрес, подходящий для встраивки с помощью HTTP POST (публикация формы, JS и т. д.)
-| postParameters | string | Параметры POST, которые необходимо включить при использовании postUrl
+| getUrl         | Строка | URL-адрес, подходящий для встраивки с помощью HTTP GET (iframes и т.д.)
+| postUrl        | Строка | URL-адрес, подходящий для встраивки с помощью HTTP POST (столб формы, JS и т.д.)
+| postParameters | Строка | Параметры POST, которые необходимо включить при использовании postUrl
 
-В зависимости от текущего состояния поддержки указанных параметров может быть возвращено либо getUrl, либо postUrl, либо оба этих параметра.
+Либо getUrl, postUrl, либо оба могут быть возвращены в зависимости от текущего состояния поддержки указанных параметров.
 
-postParameters — это строка в формате , и если postUrl выполняет postUrl, тип контента `application/x-www-form-urlencoded` должен быть установлен соответствующим образом. Например,
+postParameters — это строка, отформатированная как, и при выполнении POST в postUrl тип контента должен быть задат `application/x-www-form-urlencoded` соответствующим образом. Например,
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

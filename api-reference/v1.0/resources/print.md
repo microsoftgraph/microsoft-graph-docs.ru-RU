@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: db532fed1bcdeeec749d59c8297fc36d836aed78
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7ed4858a167a87be40ff31e540d402fa93a44cbd30f6ee6e67e63ed52510b9fb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129990"
 ---
 # <a name="print-resource-type"></a>тип ресурса печати
 
@@ -36,9 +36,9 @@ ms.locfileid: "50517956"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|параметры|[printSettings](../resources/printsettings.md)|Параметры для службы универсальной печати для клиента.|
+|settings|[printSettings](../resources/printsettings.md)|Параметры для службы универсальной печати для клиента.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |службы|[коллекция printService](printservice.md)|Список доступных конечных точек службы универсальной печати.|

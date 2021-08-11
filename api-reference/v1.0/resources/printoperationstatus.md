@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 787a584b32c6f34d78d14fa4d676b1be30a62c25
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 968958ef9d016b672bfe4d100cfc09f7a3b57d6c6c3ff28c36309ec6df04fe4d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154891"
 ---
 # <a name="printoperationstatus-resource-type"></a>тип ресурса printOperationStatus
 
@@ -24,16 +24,16 @@ ms.locfileid: "50517469"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |state|printOperationProcessingState|Текущее состояние обработки printOperation. Допустимые значения описаны в следующей таблице. Только для чтения.|
-|description|Строка|Описание текущего состояния обработки printOperation с читаемым человеком. Только для чтения.|
+|description|String|Описание текущего состояния обработки printOperation с читаемым человеком. Только для чтения.|
 
 ### <a name="printoperationprocessingstate-values"></a>значения printOperationProcessingState
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notStarted|0|Операция еще не началась.|
-|запуск|1 |Операция запущена.|
-|успешно|2 |Операция выполнена успешно.|
-|не удалось|3 |Сбой операции.|
+|запуск|1|Операция запущена.|
+|успешно|2|Операция выполнена успешно.|
+|не удалось|3|Сбой операции.|
 |unknownFutureValue|4 |Эволюционирующее значение sentinel. Не следует использовать.|
 
 ## <a name="json-representation"></a>Представление JSON

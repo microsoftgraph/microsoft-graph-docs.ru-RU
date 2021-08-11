@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4572f4ba1002873dae8bb34897e6b5761e32afdd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e13d8681d1830a50f5857f239e962738d452a1265f1781041d1a75a561bca6f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189543"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Тип ресурса updateWindowsDeviceAccountActionParameter
 
@@ -30,7 +30,7 @@ ms.locfileid: "52751344"
 |exchangeServer|String|Н/Д|
 |sessionInitiationProtocalAddress|String|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,39 +1,39 @@
 ---
 author: daspek
-title: Тип ресурса editAction
-description: Объект EditAction предоставляет сведения о действии, отредактируемом элементом.
+title: тип ресурса editAction
+description: Объект EditAction предоставляет сведения о действии, которое отредактировал элемент.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 5ac5c4b463bcb4c1276cc9eabf148b07b8c08be5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 59fb67f45d40f585029264a936237aa66b9009927852f3c6f886c7ca820fc38f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149970"
 ---
-# <a name="editaction-resource-type"></a>Тип ресурса editAction
+# <a name="editaction-resource-type"></a>тип ресурса editAction
 
 Пространство имен: microsoft.graph
 
-Наличие ресурса **editAction** в [**itemActivity**][activity] указывает, что действие отредактирует элемент.
+Наличие ресурса **editAction** в [**itemActivity**][activity] указывает на то, что действие редактировало элемент.
 
-**Примечание.** В настоящее время этот ресурс пуст. В будущем он может быть заполнен дополнительными свойствами.
+**Примечание.** Этот ресурс в настоящее время пуст. В будущем она может быть заполнена дополнительными свойствами.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
 ## <a name="properties"></a>Свойства
 
-Нет Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.
+Нет. Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.
 
 ## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.editAction"
+  "@type&quot;: &quot;microsoft.graph.editAction"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4ad04617e59a45cb9c0fa265759fd249243e987d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b63e4bbc84a679cee1866f67432392b02714030c2a87485606050128a5b0df02
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124544"
 ---
 # <a name="chartlineformat-resource-type"></a>Тип ресурса ChartLineFormat
 
@@ -23,8 +23,8 @@ ms.locfileid: "47988403"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartLineFormat](../api/chartlineformat-get.md) | [воркбукчартлинеформат](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
-|[Обновление](../api/chartlineformat-update.md) | [воркбукчартлинеформат](chartlineformat.md) |Обновление объекта ChartLineFormat. |
+|[Получение объекта ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
+|[Обновление](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |Обновление объекта ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|Нет|Очищает формат линий элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства

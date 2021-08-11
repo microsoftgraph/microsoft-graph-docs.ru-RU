@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b1d78ca9b693e8c129db630ed16b8f15baedbc1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b0bf0e8fb421cbec95521aa5399b9e9aeecbee81dac5e192bc84c239e113da04
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232176"
 ---
 # <a name="update-androidcustomconfiguration"></a>Update androidCustomConfiguration
 

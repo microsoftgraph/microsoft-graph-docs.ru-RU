@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 267d3bbf4065e6e2f7c270efdab31cbe02f3d090
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 16ea6dea96a33da8f7d54618517168fdf7932db40e7e8cad3d25b8f8609a92b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54199916"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Создание объекта windowsPhone81GeneralConfiguration
 

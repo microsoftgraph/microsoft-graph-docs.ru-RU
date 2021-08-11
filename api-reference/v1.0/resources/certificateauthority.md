@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса certificateAuthority
-description: Представляет сертификатный орган.
+title: тип ресурса certificateAuthority
+description: Представляет полномочия сертификата.
 localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 555243468312b9c0eb63ee1bae37d2088da8b025
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4aa2ecb3c3d16ad942458da190247f1d6f6cb87babc926c97c95605d21d5418d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235683"
 ---
-# <a name="certificateauthority-resource-type"></a>Тип ресурса certificateAuthority
+# <a name="certificateauthority-resource-type"></a>тип ресурса certificateAuthority
 
 Пространство имен: microsoft.graph
 
-Представляет сертификатный орган.
+Представляет полномочия сертификата.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|certificate|Двоичный|Обязательный элемент. Строка в коде base64, представляющая общедоступный сертификат.|
-|certificateRevocationListUrl|String|URL-адрес списка отзыва сертификатов.|
-|deltaCertificateRevocationListUrl|String|URL-адрес содержит список всех отозванных сертификатов с момента последнего создания полного списка отзыва сертификатов.|
-|isRootAuthority|Boolean|Обязательный элемент. **имеет** true, если доверенный  сертификат является корневым, false, если доверенный сертификат является промежуточным.|
-|issuer|String|Вычисляется из значения **сертификата.** Только для чтения. |
-|issuerSki|String|Идентификатор ключа субъекта сертификата, вычисляемого на **ключевых значениях сертификата.** Только для чтения.|
+|certificate|Двоичный|Обязательный элемент. Кодированная строка base64, представляющая общедоступный сертификат.|
+|certificateRevocationListUrl|String|URL-адрес списка отзыва сертификата.|
+|deltaCertificateRevocationListUrl|String|URL-адрес содержит список всех отозванных сертификатов с момента создания полного списка отзыва сертификатов.|
+|isRootAuthority|Логическое|Обязательный элемент. **верно,** если доверенный сертификат является корневым **органом,** ложным, если доверенный сертификат является промежуточным органом.|
+|эмитент|String|Эмитент сертификата, вычисляемого из **значения сертификата.** Только для чтения. |
+|issuerSki|String|Идентификатор ключа субъекта сертификата, вычисляемого из **значения сертификата.** Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

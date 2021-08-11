@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса ИнвитатионпартиЦипантинфо
-description: '**ИнвитатионпартиЦипант** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.'
+title: тип ресурса invitationParticipantInfo
+description: '**InvitationParticipant** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.'
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2425f7ebd6ac516a9100605c9ebfe47f1b87a114
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b8432cf28dd078add91b517f75bc33a71fc4e8134ecff8155c97cc0acc887c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202247"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса ИнвитатионпартиЦипантинфо
+# <a name="invitationparticipantinfo-resource-type"></a>тип ресурса invitationParticipantInfo
 
 Пространство имен: microsoft.graph
 
-Этот ресурс используется для представления объекта, приглашенного на вызов группы. 
+Этот ресурс используется для представления объекта, приглашенного на групповой вызов. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                           | Тип                          | Описание                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| хищения                           | [identitySet](identityset.md) | [Удостоверение](identityset.md) , связанное с этим приглашением.                   |
-| реплацескаллид                     | String                        | Необязательный параметр. Вызов, частью которого в данный момент является целевое удостоверение. Этот вызов будет сброшен после добавления участника. |
+| удостоверение                           | [identitySet](identityset.md) | [IdentitySet,](identityset.md) связанный с этим приглашением.                   |
+| replacesCallId                     | String                        | Необязательный параметр. Вызов, частью которого в настоящее время является тождественность целевого пользователя. Этот вызов будет отброшен после того, как будет добавлен участник. |
 
 ## <a name="json-representation"></a>Представление JSON
 

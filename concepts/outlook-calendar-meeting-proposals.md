@@ -4,12 +4,12 @@ description: В Outlook организатор собрания может ра�
 author: harini84
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a09c7bec65c69cd1f5058cae5eddc1b99a22e694
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 6beba6c1c2c19515ade8123069feed83951fa903febdcb39acabff60f678dab1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157951"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>Предложение нового времени собрания в Outlook
 

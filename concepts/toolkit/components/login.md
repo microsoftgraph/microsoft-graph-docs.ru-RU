@@ -3,12 +3,12 @@ title: Компонент входа в Microsoft Graph Toolkit
 description: Компонент входа — это кнопка и всплывающий элемент управления, предназначенные для упрощения проверки подлинности платформы удостоверений Майкрософт.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 5dd610407fde25089a9c323b6b0cfb7965d33671
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 5b4c3b01053d9011d553a57fadecf560eddf80b3d143744d40b1dab167f1f040
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202023"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Компонент входа в Microsoft Graph Toolkit
 
@@ -78,10 +78,10 @@ mgt-login {
 Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `loginInitiated` | Чтобы запустить процесс входа, пользователь нажал кнопку вход в систему. | Нет | Да | Нет | Да
-`loginCompleted` | Процесс входа был успешным, и теперь пользователь входит в | Нет. | Нет | Нет | Да
-`loginFailed` | Пользователь отменил процесс входа или не смог войти | Нет. | Нет | Нет | Да
+`loginCompleted` | Процесс входа был успешным, и теперь пользователь входит в | Нет | Нет | Нет | Да
+`loginFailed` | Пользователь отменил процесс входа или не смог войти | Нет | Нет | Нет | Да
 `logoutInitiated` | Пользователь начал выходить на сайт | Нет | Да | Нет | Да
-`logoutCompleted` | Пользователь вышел из | Нет. | Нет | Нет | Да
+`logoutCompleted` | Пользователь вышел из | Нет | Нет | Нет | Да
 
 Дополнительные сведения об обработке событий см. в [этой работе.](../customize-components/events.md)
 

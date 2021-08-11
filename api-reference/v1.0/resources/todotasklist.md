@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Тодотасклист
-description: Список в Майкрософт для этого содержит один или несколько ресурсов Тодотаск.
+title: тип ресурса todoTaskList
+description: Список в Microsoft To Do, содержащий один или несколько ресурсов todoTask.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2e55d5122da02966fa89084c44f5447edccdf631
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 7e0b51647ed53a7e1f7500f3322c840f7476218f0c99888de7c700fb36c4820e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124012"
 ---
-# <a name="todotasklist-resource-type"></a>Тип ресурса Тодотасклист
+# <a name="todotasklist-resource-type"></a>тип ресурса todoTaskList
 
 Пространство имен: microsoft.graph
 
-Список в Майкрософт для этого содержит один или несколько ресурсов [тодотаск](./todotask.md) . 
+Список в Microsoft To Do, содержащий один или несколько [ресурсов todoTask.](./todotask.md) 
 
-В этом случае есть встроенные списки задач, такие как **помеченные сообщения электронной почты** и **задачи** , которые не могут быть переименованы или удалены.  Тем не менее, вы можете создавать дополнительные списки задач.
+В To Do есть встроенные списки задач,  такие как помеченные  электронные почты и задачи, которые нельзя переименовать или удалить.  Однако можно создать дополнительные списки задач.
 
 Этот ресурс поддерживает
-* Добавление данных к настраиваемым свойствам в виде [открытых расширений](/graph/extensibility-overview)
-* Использование [запроса изменений](/graph/delta-query-overview) для отслеживания добавочных дополнений, удалений и обновлений.
+* Добавление данных в настраиваемые свойства в качестве [открытых расширений](/graph/extensibility-overview)
+* Использование [delta-запроса](/graph/delta-query-overview) для отслеживания дополнительных дополнений, удалений и обновлений.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Перечисление списков](../api/todo-list-lists.md) | Коллекция [todoTaskList](todotasklist.md) | Получение всех [тодотасклист](todotasklist.md) в почтовом ящике пользователя. |
-|[Создание Тодотасклист](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создайте [тодотасклист](todotasklist.md) в почтовом ящике пользователя. |
-|[Получение списка задач](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Чтение свойств и связей указанного [тодотасклист](todotasklist.md).|
-|[Обновление списка задач](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Обновление свойств, доступных для записи, для указанного [тодотасклист](todotasklist.md).|
-|[Удаление списка задач](../api/todotasklist-delete.md)|Нет| Удаление указанного [тодотасклист](todotasklist.md) .|
+|[Перечисление списков](../api/todo-list-lists.md) | Коллекция [todoTaskList](todotasklist.md) | Получите весь [todoTaskList](todotasklist.md) в почтовом ящике пользователя. |
+|[Создание todoTaskList](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создайте [todoTaskList](todotasklist.md) в почтовом ящике пользователя. |
+|[Получить список задач](../api/todotasklist-get.md)|[todoTaskList](todotasklist.md)|Ознакомьтесь с свойствами и отношениями указанного [todoTaskList.](todotasklist.md)|
+|[Обновление списка задач](../api/todotasklist-update.md)|[todoTaskList](todotasklist.md)| Обновим ритабельные свойства указанного [todoTaskList.](todotasklist.md)|
+|[Удаление списка задач](../api/todotasklist-delete.md)|Нет| Удаление указанного [todoTaskList](todotasklist.md) .|
 |[Перечисление задач](../api/todotasklist-list-tasks.md)|Коллекция [todoTask](todotask.md)|Получение всех ресурсов [todoTask](todotask.md) в указанном списке.|
 |[Создание задачи](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Создание [todoTask](todotask.md) в указанном списке задач.|
 
@@ -39,18 +39,18 @@ ms.locfileid: "48797309"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя списка задач.|
-|id|String| Идентификатор списка задач, уникальный в почтовом ящике пользователя. Только для чтения. Наследуется от [объекта](entity.md)|
-|Владелец|Логический| Значение true, если пользователь является владельцем данного списка задач.|
-|IsShared|Boolean| True, если список задач открыт для совместного использования с другими пользователями|
-|веллкновнлистнаме|веллкновнлистнаме| Свойство, указывающее имя списка, если заданный список представляет собой известный список. Возможные значения: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|id|String| Идентификатор списка задач, уникальный в почтовом ящике пользователя. Только для чтения. Унаследованный от [сущности](entity.md)|
+|isOwner|Логическое| True, если пользователь является владельцем данного списка задач.|
+|IsShared|Boolean| True, если список задач совместно с другими пользователями|
+|wellknownListName|wellknownListName| Свойство, указывающее имя списка, если данный список хорошо известен. Возможные значения: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
-### <a name="wellknownlistname-values"></a>значения Веллкновнлистнаме
+### <a name="wellknownlistname-values"></a>значения wellknownListName
 |Member|Описание|
 |:---|:---|
-|none| Список, созданный пользователем.|
-|дефаултлист| Встроенный список **задач** .|
-|флагжедемаилс| Встроенный список **электронной почты с пометкой** . В этом списке представлены задачи с помеченными сообщениями электронной почты.|
-|unknownFutureValue| Значение Sentinel для перечисления расширяемые. Не следует использовать.|
+|нет| Созданный пользователем список.|
+|defaultList| Встроенный список **задач.**|
+|flaggedEmails| Встроенный список **электронной почты с флагами.** Задачи из помеченных электронных почт присутствуют в этом списке.|
+|unknownFutureValue| Эволюционирующее значение sentinel. Не следует использовать.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

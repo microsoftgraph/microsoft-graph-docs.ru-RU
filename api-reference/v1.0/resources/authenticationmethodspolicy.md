@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1fa7383d4946978d20ae7b32f9fe0ebc899bd48e
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: e704d7584aad0b2309863743f58663f0c04b23ab2fee99b8c21f7e9e2b210bad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53547597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124572"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>тип ресурса authenticationMethodsPolicy
 
@@ -33,7 +33,7 @@ ms.locfileid: "53547597"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего обновления политики. Только для чтения.|
 |policyVersion|String|Версия используемой политики. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |authenticationMethodConfigurations|[коллекция authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Представляет параметры для каждого метода проверки подлинности.|

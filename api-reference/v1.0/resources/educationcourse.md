@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 347eb92cd0b36789cc7ecce1dea72af6985ea330
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: e54870ad3633f0b0170a54fad32ce8aa0baa2843466dd0f0e051caeacca54ffa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135255"
 ---
 # <a name="educationcourse-resource-type"></a>тип ресурса educationCourse
 
@@ -22,9 +22,9 @@ ms.locfileid: "52232249"
 
 | Свойство     | Тип   | Описание                               |
 | :----------- | :----- | :---------------------------------------- |
-| courseNumber | Строка | Уникальный идентификатор для курса.         |
-| description  | Строка | Описание курса.                |
-| displayName  | Строка | Имя курса.                       |
+| courseNumber | String | Уникальный идентификатор для курса.         |
+| description  | String | Описание курса.                |
+| displayName  | String | Имя курса.                       |
 | externalId   | String | ID курса из системы синхронизации. |
 | subject      | String | Тема курса.                    |
 

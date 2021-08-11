@@ -4,12 +4,12 @@ description: Узнайте, как настроить приложения дл
 author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 331a3873aa619c6f86fc8109fc6f572d990f9686
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 6856e35fa9bad4f220b10e5a8c945f91ae4a2ff6a43c65ed5fe7af34ce69ded5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467171"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235179"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Разрешить приложениям получать доступ к собраниям в Интернете от имени пользователя
 

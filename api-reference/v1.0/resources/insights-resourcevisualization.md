@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса ресурсе resourcevisualization
-description: Сложный тип, содержащий свойства аналитики.
+title: тип ресурса resourceVisualization
+description: Сложный тип, содержащий свойства Аналитика.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 93adb5c8dcef2cb7472d2f58385f8c2a779566c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8f5d97a41e28e103d6cf756bb08790deef8c1ee0fa4a44b40a363bc759cf8ae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054821"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126573"
 ---
-# <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
+# <a name="resourcevisualization-resource-type"></a>тип ресурса resourceVisualization
 
 Пространство имен: microsoft.graph
 
-Сложный тип, содержащий свойства [оффицеграфинсигхтс](officegraphinsights.md).
+Сложный тип, содержащий свойства [officeGraphInsights.](officegraphinsights.md)
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,30 +46,30 @@ ms.locfileid: "48054821"
 | Свойство              | Тип          | Описание  |
 | -------------         |---------------| -------------|
 | title                 | String        | Текст заголовка элемента.               |
-| type              | String        | Тип мультимедиа элемента. Можно использовать для фильтрации определенного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| MediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации файлов определенного типа на основе поддерживаемых типов MIME MIME для устройства IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
-| превиевимажеурл       | String        | URL-адрес, ведущая к изображению для предварительного просмотра элемента. |
-| previewText           | String        | Предварительный текст для элемента. |
-| контаинервебурл       | String        | Путь, начинающийся с папки, в которой хранится элемент. |
-| контаинердисплайнаме  | String        | Строка, описывающая место хранения элемента. Например, имя сайта SharePoint или имя пользователя, идентифицирующее владельца OneDrive, в котором хранится элемент.  |
-| контаинертипе         | String | Можно использовать для фильтрации по типу контейнера, в котором хранится файл. Например, site или Онедривебусинесс.       |
+| type              | String        | Тип мультимедиа элемента. Можно использовать для фильтрации для определенного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
+| MediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации для определенного типа файла на основе поддерживаемых типов Mime IANA Media. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
+| previewImageUrl       | String        | URL-адрес, ведущий к изображению предварительного просмотра элемента. |
+| previewText           | String        | Текст предварительного просмотра элемента. |
+| containerWebUrl       | String        | Путь, ведущий к папке, в которой хранится элемент. |
+| containerDisplayName  | String        | Строка, описываемая, где хранится элемент. Например, имя веб-SharePoint или имя пользователя, определяющие владельца OneDrive хранения элемента.  |
+| containerType         | String | Можно использовать для фильтрации по типу контейнера, в котором хранится файл. Например, Site или OneDriveBusiness.       |
 
-## <a name="type-property-values"></a>Ввод значений свойств
+## <a name="type-property-values"></a>Тип значений свойств
 -   PowerPoint
 -   Word
 -   Excel
--   ]
+-   Pdf
 -   OneNote
--   оненотепаже
+-   OneNotePage
 -   InfoPath
 -   Visio
 -   Publisher
 -   Project
--   Доступ
+-   Access
 -   Почта
--   Расширения
+-   Csv
 -   Архив
--   Компьютеров
+-   Xps
 -   "Audio" (Аудио);
 -   "Video" (Видео);
 -   Изображение
@@ -77,24 +77,24 @@ ms.locfileid: "48054821"
 -   Текст
 -   Xml
 -   Story
--   екстерналконтент
+-   ExternalContent
 -   Folder
-- SPSite
--   Другое
+- Spsite
+-   Другие
 
 Пример запроса: `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-Примечания: для `spsite` получения допустимых результатов может потребоваться выполнить сортировку по `lastUsed/lastAccessedDateTime` возрастанию.
+Примечания: Для получения допустимых результатов может потребоваться сортировка `spsite` `lastUsed/lastAccessedDateTime` по desc
 
-## <a name="containertype-property-values"></a>значения свойств Контаинертипе
-Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [оффицеграфинсигхтс](officegraphinsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
+## <a name="containertype-property-values"></a>Значения свойств containerType
+Поддерживаемые типы могут отличаться в зависимости от контейнеров, из которых [officeGraphInsights](officegraphinsights.md) возвращает файлы. Например, только понимание [sharedInsight](insights-shared.md) возвращает файлы из "DropBox", "Box" и "GDrive".
 
--   онедривебусинесс
+-   OneDriveBusiness
 -   Site
 -   Почта
--   Оставляют
+-   DropBox
 -   Box
--   гдриве
+-   GDrive
 
 Пример запроса: `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 

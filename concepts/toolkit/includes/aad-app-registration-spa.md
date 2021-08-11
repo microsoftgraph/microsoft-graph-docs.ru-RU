@@ -3,12 +3,12 @@ author: waldekmastykarz
 ms.date: 10/28/2020
 ms.prod: aad
 ms.topic: include
-ms.openlocfilehash: bac0b644559002c84979d6b592f0aad994ba8cf6
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 331bac2ff295e81831b36cda5c7bf34170ff52547a5d05073fc1dc9c4283bafa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50243122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54132961"
 ---
 ## <a name="create-an-azure-active-directory-app"></a>Создание приложения Azure Active Directory
 

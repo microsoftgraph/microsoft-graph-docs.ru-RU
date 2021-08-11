@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 2026706ec46a2408d20231add8203d2f5a622c96
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 1c7954730f42e6ac15a45c6a68de8c827dc6f0406a30066020fe578c1ee9bccd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149690"
 ---
 # <a name="printtask-resource-type"></a>тип ресурса printTask
 
@@ -26,17 +26,17 @@ ms.locfileid: "50517452"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 | [Список (от printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получите список задач, созданных на основе определенного шрифтаTaskDefinition. Список включает в себя выполнение текущих задач и недавно завершенных задач. |
-| [получение](../api/printtask-get.md); | [printTask](printtask.md) | Сведения о задаче печати. |
-| [обновление](../api/printtaskdefinition-update-task.md). | [printTask](printtask.md) | Обновляет задачу печати. |
+| [Получение](../api/printtask-get.md) | [printTask](printtask.md) | Сведения о задаче печати. |
+| [Обновление](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Обновляет задачу печати. |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор printTask. Только для чтения.|
+|id|String|Идентификатор printTask. Только для чтения.|
 |status|[printTaskStatus](printtaskstatus.md)|Текущее состояние выполнения этого printTask. **Приложение вызовов отвечает за обновление этого состояния по завершению обработки, если соответствующий printJob не был перенаправлен на другой принтер.** Невыполнение отчетов о завершении приведет к блокировке связанного задания печати от печати и в конечном итоге к их удаляемой работе. |
-|parentUrl|Строка|URL-адрес для объекта печати, который вызвал эту задачу. Например, `https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}`. Только для чтения.|
+|parentUrl|String|URL-адрес для объекта печати, который вызвал эту задачу. Например, `https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}`. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |триггер|[printTaskTrigger](printtasktrigger.md)|PrintTaskTrigger, который вызвал выполнение этой задачи. Только для чтения.|

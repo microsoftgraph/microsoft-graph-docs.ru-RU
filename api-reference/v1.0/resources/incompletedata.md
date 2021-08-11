@@ -1,30 +1,30 @@
 ---
 author: daspek
-title: Тип ресурса incompleteData
+title: тип ресурса incompleteData
 description: Аспект incompleteData указывает, что ресурс был создан с неполными данными.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 20dda8e9d1cd321a465c7a257cb5cb7bed845351
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b632148991aefd9fad09bd794e5f3e1849365af8cea5455bbef0ba628b60f221
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223580"
 ---
-# <a name="incompletedata-resource-type"></a>Тип ресурса incompleteData
+# <a name="incompletedata-resource-type"></a>тип ресурса incompleteData
 
 Пространство имен: microsoft.graph
 
-Аспект **incompleteData указывает,** что ресурс был создан с неполными данными.
-Свойства внутри могут предоставлять сведения о том, почему данные неполные.
+Аспект **incompleteData** указывает, что ресурс был создан с неполными данными.
+Свойства внутри могут предоставлять сведения о том, почему данные являются неполными.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                  | Тип           | Описание
 |:--------------------------|:---------------|:--------------------------------
 | missingDataBeforeDateTime | DateTimeOffset | Служба не имеет исходных данных до указанного времени.
-| wasThrottled              | Логическое        | Некоторые данные не были записаны из-за чрезмерной активности.
+| wasThrottled              | Логический        | Некоторые данные не были записаны из-за чрезмерной активности.
 
 ## <a name="json-representation"></a>Представление JSON
 

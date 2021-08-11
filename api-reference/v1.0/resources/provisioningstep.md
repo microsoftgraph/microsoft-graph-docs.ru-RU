@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 695f0c30e802dabb03cb30f0615ee6a59e8cc540
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 9841a70c0f3a00e3d4c163b9f814ae50c2a8221e6a33a1468d29832d5798c495
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231518"
 ---
 # <a name="provisioningstep-resource-type"></a>тип ресурса provisioningStep
 
@@ -22,13 +22,13 @@ ms.locfileid: "52241547"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Сводка о том, что произошло во время шага.|
+|description|String|Сводка о том, что произошло во время шага.|
 |подробности|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло во время шага.|
 |name|String|Имя шага.|
 |provisioningStepType|provisioningStepType| Тип шага. Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|provisioningResult| Состояние шага. Возможные значения: `success` `warning` , , ,  `failure` `skipped` `unknownFutureValue` .|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

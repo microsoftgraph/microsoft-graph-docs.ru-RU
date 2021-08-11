@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: f8562670441c756e5263511304225440ec063a9a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: ac3a433e3fa0e13beefb83a4525cb5975c9dfbe56d1c668c7bd8931982e84425
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189452"
 ---
 # <a name="notebook-resource-type"></a>тип ресурса записной книжки
 
@@ -60,7 +60,7 @@ ms.locfileid: "50721903"
 |IsShared|Boolean|Указывает, является ли записная книжка общей. Если да, ее содержимое, кроме владельца, могут видеть другие люди. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|links|[NotebookLinks](notebooklinks.md)|Ссылки для открытия записной книжки. Ссылка `oneNoteClientURL` открывает записную книжку в родном клиенте OneNote, если она установлена. Ссылка `oneNoteWebURL` открывает записную книжку в OneNote в Интернете.|
+|links|[NotebookLinks](notebooklinks.md)|Ссылки для открытия записной книжки. Ссылка `oneNoteClientURL` открывает записную книжку в OneNote, если она установлена. Ссылка `oneNoteWebURL` открывает записную книжку в OneNote в Интернете.|
 |displayName|String|Имя записной книжки.|
 |sectionGroupsUrl|String|URL-адрес `sectionGroups` свойства навигации, который возвращает все группы разделов в записной книжке. Только для чтения.|
 |sectionsUrl|String|URL-адрес `sections` свойства навигации, который возвращает все разделы в записной книжке. Только для чтения.|

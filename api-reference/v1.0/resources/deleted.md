@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Тип ресурса Deleted указывает, что элемент был удален.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3743a343b9928eda4a888cff06a3ff1b7525f9c9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 066baf9af2bb8274527df384436004c21f7c9e54004b01ee1e225ed40f81c788
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218809"
 ---
 # <a name="deleted-facet"></a>Аспект Deleted
 

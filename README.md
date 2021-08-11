@@ -8,7 +8,7 @@
 
 - Если у вас возникли вопросы или вы нашли ошибки в документации, [отправьте запрос](https://github.com/microsoftgraph/microsoft-graph-docs/issues) касательно этого репозитория.
 - Мы также рекомендуем создать вилку проекта, внести исправление и отправить запрос на вытягивание. Чтобы добавить рекомендации, см. статью [CONTRIBUTING.md](CONTRIBUTING.md).
-- Чтобы узнать о своем опыте программирования, о том, что вы хотели бы видеть в будущих версиях, примерах кода и так далее, введите свои предложения и идеи в техническом сообществе [Microsoft 365 Developer Platform Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)
+- Чтобы узнать о вашем опыте программирования, о том, что вы хотели бы видеть в будущих версиях, примерах кода и так далее, введите свои предложения и идеи в [Microsoft 365 Разработчик](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)платформы Community .
 
 ## <a name="code-of-conduct"></a>Правила поведения
 
