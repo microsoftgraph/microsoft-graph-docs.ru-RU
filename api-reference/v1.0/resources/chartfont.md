@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3862a6273e9dfca4df6bb412afcc061b057e617c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6743b12dc266ab967eb2f9693b693efcac9722a5166a02a1041974afc2b81e06
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223671"
 ---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 
@@ -23,8 +23,8 @@ ms.locfileid: "48069199"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartFont](../api/chartfont-get.md) | [воркбукчартфонт](chartfont.md) |Чтение свойств и связей объекта chartFont.|
-|[Обновление](../api/chartfont-update.md) | [воркбукчартфонт](chartfont.md)   |Обновление объекта ChartFont. |
+|[Получение объекта ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
+|[Обновление](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |Обновление объекта ChartFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

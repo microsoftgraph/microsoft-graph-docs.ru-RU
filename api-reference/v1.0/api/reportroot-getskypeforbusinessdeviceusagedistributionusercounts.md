@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 22938d202df9579842d69618114bcb2e1611daef
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: f78aafa729bcf09522cd50b1a7ebee36246f747994751b57fd9f5f22b853f9e4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218928"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49982998"
 
 Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей устройств с Windows, телефонов с Windows, телефонов с Android, iPhone и iPad.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 : используемые клиенты Skype для бизнеса.](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов — Skype для бизнеса используемых клиентов.](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -70,7 +70,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Android Phone" (Телефон с Android);
 - iPhone
 - iPad
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 
