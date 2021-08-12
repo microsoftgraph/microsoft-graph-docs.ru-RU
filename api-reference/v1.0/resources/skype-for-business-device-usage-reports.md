@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: f0e46f94141691a17c5f7636f497c3f03fef71df
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: d7b1480ccf68a31026cc20141d3749e91e50ceab821833c21d4892f0d0d0a0ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141303"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Отчеты об использовании устройств со Skype для бизнеса
 
@@ -18,7 +18,7 @@ ms.locfileid: "49980642"
 
 Отчеты об использовании устройств со Skype для бизнеса содержат сведения о типах клиентов и устройств, используемых в организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 : используемые клиенты Skype для бизнеса.](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов — Skype для бизнеса используемых клиентов.](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)
 
 ## <a name="reports"></a>Отчеты
 

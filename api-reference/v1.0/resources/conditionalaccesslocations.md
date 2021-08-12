@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса conditionalAccessLocations
-description: Представляет расположения, включенные в область политики и исключенные из нее.
+title: тип ресурса conditionalAccessLocations
+description: Представляет расположения, включенные и исключенные из области политики.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 670f07e22b2027c74a79eaca505c624c04c19621
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e2ad772d4e41e9244b126b8df4e0052d27a3a3d20ae9db7a974b4765eb0d190d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132116"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205929"
 ---
-# <a name="conditionalaccesslocations-resource-type"></a>Тип ресурса conditionalAccessLocations
+# <a name="conditionalaccesslocations-resource-type"></a>тип ресурса conditionalAccessLocations
 
 Пространство имен: microsoft.graph
 
-Представляет расположения, включенные в область политики и исключенные из нее.
+Представляет расположения, включенные и исключенные из области политики.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeLocations | Коллекция String | ИД расположения в области политики, если явно не исключены, `All` или `AllTrusted` . |
-| excludeLocations | Коллекция String | ИД расположения, исключенные из области действия политики. |
+| includeLocations | Коллекция String | Определения местоположения в области политики, если явно не исключены, `All` или `AllTrusted` . |
+| excludeLocations | Коллекция строк | ИД расположения исключены из области политики. |
 
 ## <a name="json-representation"></a>Представление JSON
 

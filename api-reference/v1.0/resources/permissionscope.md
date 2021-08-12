@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: f98e91da1ff46ef944b2de49add36f174673fad8
-ms.sourcegitcommit: aa18eb8a9965f99cc97680808abba8df46f31ba5
+ms.openlocfilehash: 7836685c65fddd2d35a2d9bc47493bf2f240e51653ef8a264ac868be83b02e80
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51638895"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196938"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
@@ -18,7 +18,7 @@ ms.locfileid: "51638895"
 
 Представляет определение [делегирования разрешения.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)
 
-Делегировать разрешения могут клиентские приложения, которым требуется маркер доступа к API, определяющий разрешения. Делегирование разрешений можно [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent)запрашивать динамически, используя параметр в запросе на авторизацию платформы удостоверений Майкрософт, или статически, через коллекцию `scopes` **requiredResourceAccess на** объекте приложения. [](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope) [](application.md)
+Делегировать разрешения могут клиентские приложения, которым требуется маркер доступа к API, определяющий разрешения. Делегирование разрешений можно [](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent)запрашивать динамически, используя параметр в запросе на авторизацию в платформа удостоверений Майкрософт или статически, через коллекцию `scopes` **requiredResourceAccess на** объекте приложения. [](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope) [](application.md)
 
 ## <a name="properties"></a>Свойства
 

@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5e15249590d858fbb57470fbb64051a7609558e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8016bd6600a2c220823a2ea53260d41c381b4b9a4b56378888c2e73e49e7116b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251689"
 ---
 # <a name="rangeview-resource-type"></a>Тип ресурсов rangeView
 
-Пространство имен: Microsoft. Graph RangeView представляет набор видимых ячеек родительского диапазона.
+Пространство имен: microsoft.graph RangeView представляет набор видимых ячеек родительского диапазона.
 
 ## <a name="methods"></a>Методы
 
@@ -27,7 +27,7 @@ ms.locfileid: "48015122"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|cellAddresses|Json|Представляет адреса ячеек
+|cellAddresses|Json|Представляет адреса ячейки
 |columnCount|Int32|Возвращает количество видимых столбцов. Только для чтения.|
 |formulas|Json|Представляет формулу в формате A1. |
 |formulasLocal|Json|Представляет формулу в формате A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула "=SUM(A1, 1.5)" превратится в "=СУММ(A1;1,5)" на русском языке.    |

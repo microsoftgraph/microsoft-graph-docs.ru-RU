@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e86f6e685f02085e4f870d59640d38f30637a483
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f7a244ae9428eee945898ba8f6f740553262fd269f692459cbf77f0151762d2f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230629"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Тип ресурса macOSCompliancePolicy
 
@@ -55,11 +55,11 @@ ms.locfileid: "52751407"
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Mac OS.|
-|firewallEnabled|Boolean|Следует ли включить брандмауэр или нет.|
-|брандмауэрBlockAllIncoming|Boolean|Соответствует параметру "Блокировка всех входящих подключений".|
-|firewallEnableStealthMode|Boolean|Соответствует режиму "Включить режим стелс".|
+|firewallEnabled|Логический|Следует ли включить брандмауэр или нет.|
+|брандмауэрBlockAllIncoming|Логическое|Соответствует параметру "Блокировка всех входящих подключений".|
+|firewallEnableStealthMode|Логическое|Соответствует режиму "Включить режим стелс".|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: RamjotSingh
-ms.openlocfilehash: c8ef68d33137b42adbec22b8231c52d05dc2eecb
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: e42eca895b00c46561673991745f9a60a1476a4f2286b0cb3b530213422620c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175331"
 ---
 # <a name="chatmessageattachment-resource-type"></a>тип ресурса chatMessageAttachment
 
@@ -24,11 +24,11 @@ ms.locfileid: "51582776"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|string| Только для чтения. Уникальный id вложения.|
-|contentType| string | Тип мультимедиа вложения контента. Он может иметь следующие значения: <br><ul><li>`reference`: Вложение — это ссылка на другой файл. Заполнять contentURL ссылкой на объект.</li><li>Любые contentTypes, поддерживаемые [](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object) объектом вложения Bot Framework</li><li>`application/vnd.microsoft.card.codesnippet`. Фрагмент кода. </li><li>`application/vnd.microsoft.card.announcement`: Заглавная ведерка объявления. </li>|
+|contentType| Строка | Тип мультимедиа вложения контента. Он может иметь следующие значения: <br><ul><li>`reference`: Вложение — это ссылка на другой файл. Заполнять contentURL ссылкой на объект.</li><li>Любые contentTypes, поддерживаемые [](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object) объектом вложения Bot Framework</li><li>`application/vnd.microsoft.card.codesnippet`. Фрагмент кода. </li><li>`application/vnd.microsoft.card.announcement`: Заглавная ведерка объявления. </li>|
 |contentUrl|string|URL-адрес для содержимого вложения. Поддерживаемые протоколы: http, https, file и data.|
-|содержимое|string|Содержимое вложения. Если вложение является [богатой картой,](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)установите свойство объекту богатой карты. Это свойство и contentUrl являются взаимоисключающими.|
+|содержимое|Строка|Содержимое вложения. Если вложение является [богатой картой,](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)установите свойство объекту богатой карты. Это свойство и contentUrl являются взаимоисключающими.|
 |name|string|Имя вложения.|
-|thumbnailUrl| string |URL-адрес изображения эскиза, который канал может использовать, если поддерживает использование альтернативной, более мелкой формы контента или contentUrl. Например, если вы установите contentType для приложения/слова и установите contentUrl к расположению документа Word, вы можете включить эскизное изображение, которое представляет документ. Канал может отображать изображение эскиза вместо документа. Когда пользователь щелкает изображение, канал откроет документ.|
+|thumbnailUrl| Строка |URL-адрес изображения эскиза, который канал может использовать, если поддерживает использование альтернативной, более мелкой формы контента или contentUrl. Например, если вы установите contentType для приложения/слова и установите contentUrl к расположению документа Word, вы можете включить эскизное изображение, которое представляет документ. Канал может отображать изображение эскиза вместо документа. Когда пользователь щелкает изображение, канал откроет документ.|
 
 ## <a name="json-representation"></a>Представление JSON
  Ниже указано представление ресурса в формате JSON.

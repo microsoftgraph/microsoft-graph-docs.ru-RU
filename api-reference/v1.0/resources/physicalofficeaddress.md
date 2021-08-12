@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса physicalOfficeAddress
-description: Представляет бизнес-адрес ресурса, например контакт или событие.
+title: тип ресурса physicalOfficeAddress
+description: Представляет бизнес-адрес такого ресурса, как контакт или событие.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6ba8e82f1ba8641a0b1966586744ffd4721b9b81
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9f632fab8d5859a72eff551bba35184face6e3869255687ad9758decf3b131d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243315"
 ---
-# <a name="physicalofficeaddress-resource-type"></a>Тип ресурса physicalOfficeAddress
+# <a name="physicalofficeaddress-resource-type"></a>тип ресурса physicalOfficeAddress
 
 Пространство имен: microsoft.graph
 
-Представляет бизнес-адрес ресурса, например контакта организации.
+Представляет бизнес-адрес такого ресурса, как организационный контакт.
 
 ## <a name="properties"></a>Свойства
 
@@ -24,7 +24,7 @@ ms.locfileid: "50135718"
 |:---------------|:--------|:----------|
 |city|String|Город.|
 |countryOrRegion|String|Страна или регион. Это строковое значение в произвольном формате, например "США".|
-|officeLocation  | String | Расположение Office, например номер здания и офиса для контакта организации.  |
+|officeLocation  | String | Office, например здание и номер офиса для организационного контакта.  |
 |postalCode|String|Почтовый индекс.|
 |state|String|Штат.|
 |street|String|Улица.|

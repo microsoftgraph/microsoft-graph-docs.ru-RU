@@ -4,12 +4,12 @@ description: 'Корпорация Майкрософт предлагает с�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: 5a60675944cb4b78baadf85a554fd2782fa6d2f6
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: 84a8efdcc8709df833c2143f2bfa448788d4f24659c800f85a697bb9bbbd4c49
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251556"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Пользователи, с которыми можно связаться при помощи Microsoft Graph
 

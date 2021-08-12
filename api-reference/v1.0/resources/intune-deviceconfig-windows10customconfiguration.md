@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7649a69acfe5aa2c21213335c87406331adc474
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 136c1d07317fa7c3552483ba4451198c7f8d34347fa41c57c73cf63a26a7834d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149914"
 ---
 # <a name="windows10customconfiguration-resource-type"></a>Тип ресурса windows10CustomConfiguration
 

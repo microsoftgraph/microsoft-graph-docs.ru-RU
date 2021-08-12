@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс defaultColumnValue в ресурсе columnDefinition указывает значение, используемое по умолчанию, для этого столбца.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 881927bdbd53936d7780fa7517b2d2428c524e78
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 27c4d687ca1ef1601a1f687aef1af5b93906405e2a533cb4f924fc91d325d26d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152770"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Тип ресурса defaultColumnValue
 
@@ -52,6 +52,6 @@ ms.locfileid: "50239641"
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/DefaultColumnValue"
+  "tocPath&quot;: &quot;Resources/DefaultColumnValue"
 } -->
 

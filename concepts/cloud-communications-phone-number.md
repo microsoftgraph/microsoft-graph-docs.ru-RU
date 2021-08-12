@@ -4,12 +4,12 @@ description: В этой статье описывается создание б
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: d6b71d2db1be951137ca33026f243dae6055c93f
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4f9215c0416001cd69d3fb4ad0728d0e858221fe1f06957e3251d0a253a7f791
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246452"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Управление номерами телефонов для ботов 
 
@@ -41,12 +41,12 @@ ms.locfileid: "50573574"
 Назначение номера телефона боту включает в себя три действия:
 
 1.  Создание экземпляра приложения.
-2.  Назначение лицензий Microsoft 365 экземпляру приложения.
+2.  Назначение Microsoft 365 лицензий экземпляру приложения.
 3.  Назначьте номер телефона экземпляру приложения (только администратору клиента).
 
 ### <a name="create-an-application-instance"></a>Создание экземпляра приложения
 
-Если он еще не установлен, администратору клиента необходимо установить [модуль Skype для бизнеса Online для](https://www.microsoft.com/download/details.aspx?id=39366) PowerShell. Администратор клиента должен войти с помощью учетных данных перед запуском cmdlet.
+Если он еще не установлен, администратору клиента необходимо установить Skype для бизнеса [online module](https://www.microsoft.com/download/details.aspx?id=39366) for PowerShell. Администратор клиента должен войти с помощью учетных данных перед запуском cmdlet.
 
 Чтобы создать новый экземпляр приложения, администратор клиента запускает следующий кодлет.
 
@@ -58,20 +58,20 @@ ms.locfileid: "50573574"
 
 Дополнительные сведения см. [в new-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
 
-### <a name="assign-microsoft-365-licenses-to-your-application-instance"></a>Назначение лицензий Microsoft 365 экземпляру приложения
+### <a name="assign-microsoft-365-licenses-to-your-application-instance"></a>Назначение Microsoft 365 лицензий экземпляру приложения
 
-Назначение виртуальной пользовательской лицензии экземпляру приложения. Подробные сведения см. в [материале Phone system virtual user license.](/microsoftteams/teams-add-on-licensing/virtual-user)
+Назначение виртуальной пользовательской лицензии экземпляру приложения. Подробные сведения [см. в Телефон лицензии виртуального пользователя](/microsoftteams/teams-add-on-licensing/virtual-user)системы.
 
-Назначение плана вызова экземпляру приложения. Подробные сведения [см. в материале Calling plans for Microsoft 365.](/microsoftteams/calling-plans-for-office-365)
+Назначение плана вызова экземпляру приложения. Подробные сведения см. [в материале Calling plans for Microsoft 365.](/microsoftteams/calling-plans-for-office-365)
 
 ### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>Назначение номера телефона экземпляру приложения (только администратору клиента)
 
-Прежде чем выполнить настройку пользователей в пределах своей организации на осуществление и прием звонков, необходимо получить телефонные номера для них. Подробные сведения см. [в материале Получение номеров телефонов для пользователей.](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users)
+Прежде чем настраивать телефоны для пользователей в вашей организации, получите для них телефонные номера. Подробные сведения см. [в материале Получение номеров телефонов для пользователей.](/microsoftteams/getting-phone-numbers-for-your-users#get-new-phone-numbers-for-your-users)
 
 Чтобы назначить номер телефона экземпляру приложения, администратор клиента:
 
-1. Войт в центр администрирования Teams в качестве администратора клиента.
-2. Переходит на **номера голосовых телефонов Центра**  >    >  **администрирования** Teams.
+1. В качестве администратора клиента Teams центр администрирования.
+2. Переходит на **Teams центра**  >  **администрирования**  >  **голосовых Телефон номера**.
 3. Назначает номер телефона службы (+11D-формат) с помощью следующего cmdlet.
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`

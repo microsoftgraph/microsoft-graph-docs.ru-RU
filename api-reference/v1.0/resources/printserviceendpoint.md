@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd339d433be593e6982b6c38818635830a2d471
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 7534e538c81c543671d996c7765125eafcad9d67cddbb13ad406d06edb8b9912
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178040"
 ---
 # <a name="printserviceendpoint-resource-type"></a>тип ресурса printServiceEndpoint
 
@@ -28,12 +28,12 @@ ms.locfileid: "50517458"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения для конечной точки с читаемым для человека.|
-|id|Строка|Уникальное имя, которое идентифицирует службу, которую предоставляет конечная точка. Возможные значения: `discovery` (Служба обнаружения), `notification` (Служба уведомлений), `ipp` (служба IPP) и `registration` (Служба регистрации). Только для чтения.|
-|uri|Строка|URI, который можно использовать для доступа к службе.|
+|displayName|String|Имя отображения для конечной точки с читаемым для человека.|
+|id|String|Уникальное имя, которое идентифицирует службу, которую предоставляет конечная точка. Возможные значения: `discovery` (Служба обнаружения), `notification` (Служба уведомлений), `ipp` (служба IPP) и `registration` (Служба регистрации). Только для чтения.|
+|uri|String|URI, который можно использовать для доступа к службе.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Плайпромптоператион
-description: Операция Плайпромпт для получения результата действия Плайпромпт.
+title: тип ресурса playPromptOperation
+description: Операция playPrompt для получения результата действия playPrompt.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 43f36c1843a8f9e92081015dd349ee48a1f768ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab75f0346bf0739a08e2608d1348ccf52030982fb0a75e0d0670f20debc362fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251852"
 ---
-# <a name="playpromptoperation-resource-type"></a>Тип ресурса Плайпромптоператион
+# <a name="playpromptoperation-resource-type"></a>тип ресурса playPromptOperation
 
 Пространство имен: microsoft.graph
 
-Операция Плайпромпт для получения результата действия Плайпромпт.
+Операция playPrompt для получения результата действия playPrompt.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип                        | Описание|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| Контекст       | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                              |
+| clientContext       | String                      | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                              |
 | id                  | String                      | Только для чтения.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |

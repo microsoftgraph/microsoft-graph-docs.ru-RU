@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a8451e594816953c76c9e4f24c53b486af2b49f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7221255379dc88082ee3ccde0d27f1b7c61f96f62e2093205ca2f02fc531beed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175905"
 ---
 # <a name="update-windowsmobilemsi"></a>Update windowsMobileMSI
 

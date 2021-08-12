@@ -5,17 +5,17 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7fb68fb65974e177e3fa55408ee1b90e59d419e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b815f5f1c75842939526a008e960444d475e5e54f9ce94abe16706c5c387851e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135052"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>тип ресурса organizationalBrandingProperties
 
 >[!NOTE]
->Добавление настраиваемой фирменой марки требует использования Azure Active Directory Premium 1, Premium 2 или базовых выпусков или Microsoft 365 лицензии. Дополнительные сведения о лицензировании и выпусках см. в документе [Sign up for Azure AD Premium.](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Версии Azure AD Premium и Basic доступны для клиентов в Китае с помощью экземпляра Azure Active Directory. В настоящее время Premium Azure AD и Basic не поддерживаются в службе Azure, выполняемой 21Vianet в Китае. Дополнительные сведения можно получить с помощью [Azure Active Directory Forum.](https://feedback.azure.com/forums/169401-azure-active-directory/)
+>Добавление настраиваемой фирменой марки требует использования Azure Active Directory Premium 1, Premium 2 или основных выпусков или Microsoft 365 лицензии. Дополнительные сведения о лицензировании и выпусках см. в [Azure AD Premium.](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD Premium и Основные выпуски доступны для клиентов в Китае с использованием всемирного экземпляра Azure Active Directory. Azure AD Premium и Basic в настоящее время не поддерживаются в службе Azure, выполняемой 21Vianet в Китае. Дополнительные сведения можно получить с помощью [Azure Active Directory Forum.](https://feedback.azure.com/forums/169401-azure-active-directory/)
 
 Содержит сведения о брендинге организации.
 
@@ -30,9 +30,9 @@ ms.locfileid: "52682319"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Создание](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создание организационного брендинга с помощью объекта organizationalBrandingProperties. |
-| [получение](../api/organizationalbrandingproperties-get.md); | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
+| [Получение](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
 | [Обновление](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Обновление объекта organizationalBrandingProperties. |
-| [Delete](../api/organizationalbrandingproperties-delete.md) | Нет | Удаление объекта organizationalBrandingProperties. |
+| [Удаление](../api/organizationalbrandingproperties-delete.md) | Нет | Удаление объекта organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Свойства
 

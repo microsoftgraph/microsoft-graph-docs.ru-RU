@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc24788a093d8f3a011fcefdf4ab45802e847020
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f5e9af31d8bddaeea5ec2edc9465f1cf0e3d47c68ff739ef7945415cc74f8024
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126538"
 ---
 # <a name="win32lobapp-resource-type"></a>тип ресурса win32LobApp
 

@@ -5,19 +5,18 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0663f9581eb34be5c26c8666887c7c3bee7cffc1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dc651ab49af9de5cb56b03932e715a22bd61c320badf15c856c2d810b10578d7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031426"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205985"
 ---
 # <a name="get-settings"></a>Получение параметров
 
 Пространство имен: microsoft.graph
 
-Чтение объекта [userSettings](../resources/usersettings.md) пользователя и организации.
-Сведения об обновлении свойств объекта [userSettings](../resources/usersettings.md) см. в статье [Обновление параметров пользователя](usersettings-update.md).
+Чтение объекта [userSettings](../resources/usersettings.md)пользователя и организации. Сведения об обновлении свойств объекта [userSettings](../resources/usersettings.md) см. в статье [Обновление параметров пользователя](usersettings-update.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -59,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/settings
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 95d80f4539da8ffb8a083ec76567c50a2e80d3d6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6133678b10930db013fc3e2a62be43b7412f98d33828cfedcc228f0ef33aa698
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038791"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238253"
 ---
 # <a name="create-swapshiftschangerequest"></a>Создание swapShiftsChangeRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "52038791"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.ReadWrite.All |
+|Приложение | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 

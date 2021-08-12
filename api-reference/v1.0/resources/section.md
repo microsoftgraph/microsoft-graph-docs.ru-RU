@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса раздела
-description: Раздел в записной книжке OneNote. Разделы могут содержать страницы.
+description: Раздел в OneNote блокноте. Разделы могут содержать страницы.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 421d910a79dd04403f09b455417d5ad97eac5691
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a64e07eb82f525caa2606afa8580d9805bcf328e378290f19baf1445253dd7fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216604"
 ---
 # <a name="section-resource-type"></a>Тип ресурса раздела
 
 Пространство имен: microsoft.graph
 
-Раздел в записной книжке OneNote. Разделы могут содержать страницы.
+Раздел в OneNote блокноте. Разделы могут содержать страницы.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -57,7 +57,7 @@ ms.locfileid: "50722016"
 |isDefault|Boolean|Указывает, является ли это разделом по умолчанию пользователя. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения раздела. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|links|[SectionLinks](sectionlinks.md)|Ссылки для открытия раздела. Ссылка открывает раздел в родном клиенте `oneNoteClientURL` OneNote, если он установлен. Ссылка `oneNoteWebURL` открывает раздел в OneNote в Интернете.|
+|links|[SectionLinks](sectionlinks.md)|Ссылки для открытия раздела. Ссылка `oneNoteClientURL` открывает раздел в родной OneNote, если он установлен. Ссылка `oneNoteWebURL` открывает раздел в OneNote в Интернете.|
 |displayName|String|Имя раздела. |
 |pagesUrl|String|Конечная точка, где можно получить сведения `pages` для всех страниц в разделе. Только для чтения.|
 |self|String|Конечная точка, где можно получить сведения о разделе. Только для чтения.|

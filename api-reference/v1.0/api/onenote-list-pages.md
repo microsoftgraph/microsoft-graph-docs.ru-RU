@@ -1,29 +1,29 @@
 ---
 title: Список страниц
-description: Получение списка объектов Page.
+description: Извлечение списка объектов страницы.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a3ad29002ed42330937bd6b64d396e403467d889
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 754a14703f02bfe5e9ef92d28ae67beb4e0365f1b5882f0074aca918fd3ea724
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218935"
 ---
 # <a name="list-pages"></a>Список страниц
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [Page](../resources/page.md) .
+Извлечение списка [объектов](../resources/page.md) страницы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Notes. Read, Notes. ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Notes.Read, Notes.ReadWrite    |
 |Для приложений | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,9 +37,9 @@ GET /sites/{id}/onenote/pages
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Запрос по умолчанию для страниц возвращает 20 первых страниц, упорядоченных по `lastModifiedTime desc` . Если запрос по умолчанию возвращает более 20 страниц, ответ содержит элемент `@odata.nextLink` , который можно использовать для страницы в наборе результатов. Максимальное количество страниц, возвращаемых для `top` запроса — 100.
+Запрос по умолчанию для страниц возвращает 20 лучших страниц, заказать `lastModifiedTime desc` по . Если запрос по умолчанию возвращает более 20 страниц, в ответе содержится ответ, который можно использовать для страницы `@odata.nextLink` через набор результатов. Максимальное число страниц, возвращаемых для `top` запроса, — 100.
 
-Ответ по умолчанию разворачивается `parentSection` и выбирает `id` Свойства раздела, `displayName` а также `self` Свойства. Допустимые `expand` значения для страниц: `parentNotebook` и `parentSection` .
+Ответ по умолчанию расширяется и выбирает свойства `parentSection` `id` и свойства `displayName` `self` раздела. `expand`Допустимые значения для страниц и `parentNotebook` `parentSection` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/pages
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Page](../resources/page.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` страницы в тексте ответа. [](../resources/page.md)
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

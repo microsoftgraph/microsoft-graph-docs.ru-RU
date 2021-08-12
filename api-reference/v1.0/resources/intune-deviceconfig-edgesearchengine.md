@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5ea2d73724400c033a3bd8e1148e04af8d390be
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 409c9a86a10e5fcd49f24da8ffa809cf2d3f4dcf6a5a4ffd14bfc7b6a3e079b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755072"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231658"
 ---
 # <a name="edgesearchengine-resource-type"></a>Тип ресурса edgeSearchEngine
 
@@ -28,7 +28,7 @@ ms.locfileid: "52755072"
 |:---|:---|:---|
 |edgeSearchEngineType|[edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md)|Позволяет ИТ-администраторам предварительно задавать поисковую систему по умолчанию для управляемых устройств. Возможные значения: `default`, `bing`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

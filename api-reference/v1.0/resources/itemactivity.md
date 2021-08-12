@@ -1,27 +1,27 @@
 ---
 author: daspek
-title: Тип ресурса itemActivity
-description: Объект itemActivity предоставляет сведения о действии, которое произошло с элементом.
+title: тип ресурса itemActivity
+description: Объект itemActivity предоставляет сведения о действии, которое произошло на элементе.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ef213dd50e5a6be8a96880ccd1a64f15f183f54b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7fd7e75a7083f864ac8fbb24eae6bee3b4a41fcbf2f020fb671304c4bbe0ddce
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192245"
 ---
-# <a name="itemactivity-resource-type"></a>Тип ресурса itemActivity
+# <a name="itemactivity-resource-type"></a>тип ресурса itemActivity
 
 Пространство имен: microsoft.graph
 
-Ресурс **itemActivity** предоставляет сведения о действиях, которые произошли в элементе или контейнере.
+Ресурс **itemActivity** предоставляет сведения о действиях, которые произошли на элементе или в контейнере.
 В настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 
-Действия, которые произошли в объекте itemActivity, подробно описаны в [свойстве itemActionSet.][]
+Действия, которые произошли в itemActivity, подробно описаны в [свойстве itemActionSet.][]
 
->**Примечание.** **ItemActivity** в настоящее время доступен только в SharePoint и OneDrive для бизнеса.
+>**Примечание.** **ItemActivity** в настоящее время доступна только на SharePoint и OneDrive для бизнеса.
 
 [itemActionSet]: itemactionset.md#properties
 
@@ -29,8 +29,8 @@ ms.locfileid: "50238689"
 
 | Свойство | Тип                    | Описание
 |:---------|:------------------------|:----------------------------------------
-| id       | string                  | Уникальный идентификатор действия. Только для чтения.
-| access   | [accessAction][]        | Был доступ к элементу.
+| id       | строка                  | Уникальный идентификатор действия. Только для чтения.
+| доступ   | [accessAction][]        | Был доступ к элементу.
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
 | activityDateTime    | DateTimeOffset | Сведения о том, когда было выполнено действие. Только для чтения.
 
@@ -54,7 +54,7 @@ ms.locfileid: "50238689"
   "optionalProperties": [ ],
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivity",
-  "@type.aka": "oneDrive.activityEntity"
+  "@type.aka&quot;: &quot;oneDrive.activityEntity"
 }-->
 
 ```json

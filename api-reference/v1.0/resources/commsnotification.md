@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Коммснотификатион
-description: Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.
+title: тип ресурса commsNotification
+description: Базовый тип уведомлений о связи, который публикуется на серверах связи для уведомления об изменениях.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2276547b99e297f1e015e12f9ed2254d3cb4632d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff7d46a6d081889897940a93d5d111ffa2956a21fc61411060cad08ed2f7d5ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252020"
 ---
-# <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
+# <a name="commsnotification-resource-type"></a>тип ресурса commsNotification
 
 Пространство имен: microsoft.graph
 
-Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.
+Базовый тип уведомлений о связи, который публикуется на серверах связи для уведомления об изменениях.
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    | Описание                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
-| Resourceurl экземпляром       | String  | URI ресурса, который был изменен.                      |
+| resourceUrl       | String  | URI измененного ресурса.                      |
 
-> **Примечание:** `resourceData` доступна в виде дополнительных данных. Это либо сущность, либо коллекция сущностей в зависимости от количества изменений, упакованных в уведомление.
+> **Примечание:** `resourceData` доступны в качестве дополнительных данных. Это объект или коллекция сущностей в зависимости от количества изменений, упакованных в уведомлении.
 
 ## <a name="json-representation"></a>Представление JSON
 

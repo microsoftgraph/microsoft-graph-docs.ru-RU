@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса genericError
+title: тип ресурса genericError
 description: Ошибка общего назначения.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: abheek-das
-ms.openlocfilehash: bb43271706ddfd46324ee871405a28bdfa868448
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 2d6d5829e3bd2e6772cd073358d98c61f471158311d9e93482997951d5dc67b0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132783"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180777"
 ---
-# <a name="genericerror-resource-type"></a>Тип ресурса genericError
+# <a name="genericerror-resource-type"></a>тип ресурса genericError
 
 Пространство имен: microsoft.graph
 

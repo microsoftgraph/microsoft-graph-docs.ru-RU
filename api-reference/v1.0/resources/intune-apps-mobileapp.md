@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1682c08e4fb15de6e5fc9d66d86d83c832e4c27
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c15f382e5106ad9ab32ac420f3e5abcf23b617cdb8eda6966b167ad03352fd0f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243506"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -45,7 +45,7 @@ ms.locfileid: "52752422"
 |notes|String|Заметки для приложения.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения.|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 76eea937b03f3eb117e6b5f870a316f268df615c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 90124b48f69dbaa053c6facd7a2bb84e5d427be0c20bdbc9017bfa8e3a800ebc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124019"
 ---
 # <a name="timeoffrequest-resource-type"></a>тип ресурса timeOffRequest
 
@@ -22,9 +22,9 @@ ms.locfileid: "50721699"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/timeoffrequest-get.md); | [timeOffRequest](timeoffrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **timeOffRequest.** |
-| [List](../api/timeoffrequest-list.md) | [коллекция timeOffRequest](timeoffrequest.md) | Получите список объектов **timeOffRequest** в этом расписании.|
-| [удаление](../api/timeoffrequest-delete.md); | Нет | Удаление **объекта timeOffRequest.** |
+| [Получение](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **timeOffRequest.** |
+| [Список](../api/timeoffrequest-list.md) | [коллекция timeOffRequest](timeoffrequest.md) | Получите список объектов **timeOffRequest** в этом расписании.|
+| [Удаление](../api/timeoffrequest-delete.md) | Нет | Удаление **объекта timeOffRequest.** |
 | [Утвердить](../api/timeoffrequest-approve.md)|Нет|Утверждение запроса на время.|
 | [Отклонение](../api/timeoffrequest-decline.md)|Нет|Отклонение запроса на время.|
 

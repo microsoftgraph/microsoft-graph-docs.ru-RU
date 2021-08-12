@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса страницы
-description: Страница в записной книжке OneNote.
+description: Страница в записной OneNote.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6adb0197b5e8fbcaa71e88f66481ca18a11bbfeb
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 77cadf00585c18a5ab0c8d87a09861c7806676fcad55beac033bc0a5a6d3b255
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180574"
 ---
 # <a name="page-resource-type"></a>Тип ресурса страницы
 
 Пространство имен: microsoft.graph
 
-Страница в записной книжке OneNote.
+Страница в записной OneNote.
 
 ## <a name="json-representation"></a>Представление JSON
 

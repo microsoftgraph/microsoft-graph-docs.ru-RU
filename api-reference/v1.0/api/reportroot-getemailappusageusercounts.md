@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 1fdf65368158ff91dd8cc1db0ffc7d82c452e3ca
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 6693d5b0468235ed0a57ff667929384542ff7c190e8a7b8ac1e183a160e6cf6c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982119"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223783"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49982119"
 
 Получение числа уникальных пользователей, которые подключались к Exchange Online с помощью приложения электронной почты.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании почтовых приложений.](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)
+> **Примечание:** Сведения о различных представлениях отчетов и именах [см. в Microsoft 365 отчетов .](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -75,7 +75,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "IMAP4 App" (Приложение с поддержкой IMAP4);
 - SMTP App (Приложение с поддержкой SMTP)
 - Report Date (Дата отчета)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

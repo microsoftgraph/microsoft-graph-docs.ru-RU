@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e1a46bc7c703db0164a1be14f216db728ef5a9f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4dd09f0d7b5e97667adb66c3f12c0f8dbab239b5e33ed342ca45f4ef604b5b33
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758787"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243422"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>Тип ресурса windows81GeneralConfiguration
 

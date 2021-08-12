@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 878f23339deacbc76e4cb9eed053a76db0ebaddd
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 025665967256909c6549af18a171a7163d96c9597356cb8e685ec49bf43b65bc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172101"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -68,14 +68,14 @@ CSV-файл содержит столбцы со следующими заго�
 - "User Principal Name" (Имя участника-пользователя);
 - Last Activity Date (Дата последнего действия);
 - Is Deleted (Удален);
-- "Deleted Date" (Дата удаления);
+- Deleted Date (дата удаления)
 - Used Web (использовал браузер);
 - Used Windows Phone (использовал телефон с Windows);
 - Used iOS (использовал iOS);
 - Used Mac (использовал Mac);
 - Used Android Phone (использовал телефон с Android);
 - Used Windows (использовал Windows);
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

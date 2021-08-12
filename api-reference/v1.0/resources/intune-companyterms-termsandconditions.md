@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1dcb37dd703b2094d8104e9860aeb44e4807d1f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4b73cd3e5081d164498aed1adf7f7b66d6859c938302eb30d292fdb2e487d901
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231729"
 ---
 # <a name="termsandconditions-resource-type"></a>Тип ресурса termsAndConditions
 

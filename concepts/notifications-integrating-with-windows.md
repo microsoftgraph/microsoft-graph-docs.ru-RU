@@ -3,12 +3,12 @@ title: Интеграция приложения UWP Windows с клиентск
 description: Интеграция приложения UWP Windows с клиентским пакетом SDK уведомления пользователей
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: cc0605a1f6c8be879452a7779dfe828ffba9fafd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 5d692ba185fed4313f0f9c8afb73f5d6d8439d254f39ea3b4ab874beec9819a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288653"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177790"
 ---
 # <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения UWP Windows с клиентским пакетом SDK для уведомления пользователей
 
@@ -64,7 +64,7 @@ ms.locfileid: "48288653"
 9. SDK выполняет обратные вызовы события, чтобы уведомить приложение после успешного получения изменений. 
 10. Логика приложения. Этот шаг фиксирует выбранное приложением действие внутри обратного вызова события. Обычно это приводит к локальным изменениям данных приложения и локальным обновлениям пользовательского интерфейса. В этом случае приложение должно локально обновить пользовательский интерфейс, чтобы отобразить изменение состояния, так как имеются обновления уведомлений. Например, если уведомление помечено как активированное, вы можете удалить соответствующее всплывающее уведомление в центре уведомлений Windows, чтобы достичь результата "обработано однажды, закрыто везде". 
 
-Дополнительные сведения об уведомлениях Microsoft Graph см. в статье  [Общие сведения об уведомлениях Microsoft Graph](notifications-concept-overview.md). Дополнительные сведения о всех действиях, требующихся для интеграции с уведомлениями Microsoft Graph, см. в [обзоре интеграции](notifications-integration-e2e-overview.md) уведомлений Microsoft Graph.
+Дополнительные сведения об уведомлениях Microsoft Graph см. в статье [Общие сведения об уведомлениях Microsoft Graph](notifications-concept-overview.md). Дополнительные сведения о всех действиях, требующихся для интеграции с уведомлениями Microsoft Graph, см. в [обзоре интеграции](notifications-integration-e2e-overview.md) уведомлений Microsoft Graph.
 
 ## <a name="adding-the-sdk-to-your-project"></a>Добавление SDK в проект
 

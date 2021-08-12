@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Медиапромпт
-description: Этот тип ресурса содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.
+title: тип ресурса mediaPrompt
+description: Этот тип ресурса содержит сведения о звуковом файле, который будет играть, и других дополнительных параметрах.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 37329364ccfcb4b70de04ebfe8344ea407ce2bc7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b69111bda37ce59305aaf126225f974c25721ceb7ed0ac34af71c1f9bf743438
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47965521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141436"
 ---
-# <a name="mediaprompt-resource-type"></a>Тип ресурса Медиапромпт
+# <a name="mediaprompt-resource-type"></a>тип ресурса mediaPrompt
 
 Пространство имен: microsoft.graph
 
-Этот тип ресурса содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.
+Этот тип ресурса содержит сведения о звуковом файле, который будет играть, и других дополнительных параметрах.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип                      | Описание                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| медиаинфо   | [медиаинфо](mediainfo.md) | Сведения о мультимедиа                                                           |
+| mediaInfo   | [mediaInfo](mediainfo.md) | Сведения о средствах массовой информации                                                           |
 
 ## <a name="json-representation"></a>Представление JSON
 

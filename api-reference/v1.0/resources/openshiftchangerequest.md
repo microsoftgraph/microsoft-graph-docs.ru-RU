@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса openShiftChangeRequest
+title: тип ресурса openShiftChangeRequest
 description: Представляет запрос на утверждение открытой смены в расписании.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b427d7914d95aaed794734bbbb39fa3eb139d06a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0a6f34e566caa2ff623eb3a66ebf8584b1adeb764dd1e7918bc34f1dbd8455a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229110"
 ---
-# <a name="openshiftchangerequest-resource-type"></a>Тип ресурса openShiftChangeRequest
+# <a name="openshiftchangerequest-resource-type"></a>тип ресурса openShiftChangeRequest
 
 Пространство имен: microsoft.graph
 
@@ -22,17 +22,17 @@ ms.locfileid: "50158683"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/openshiftchangerequest-list.md) | Коллекция [openShiftChangeRequest](openshiftchangerequest.md) | Список свойств и связей объектов **openShiftChangeRequest** в команде. |
-| [Создание](../api/openshiftchangerequest-post.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Создание экземпляра объекта **openShiftChangeRequest.** |
-| [Получение](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Чтение свойств и связей объекта **openShiftChangeRequest.** |
-|[Утвердить](../api/openshiftchangerequest-approve.md)|Нет|Утверждение запроса на изменение открытой смены.|
-|[Отклонение](../api/openshiftchangerequest-decline.md)|Нет| Отклонение запроса на изменение открытой смены.|
+| [Список](../api/openshiftchangerequest-list.md) | Коллекция [openShiftChangeRequest](openshiftchangerequest.md) | Список свойств и связей **объектов openShiftChangeRequest** в группе. |
+| [Создание](../api/openshiftchangerequest-post.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Создайте экземпляр **объекта openShiftChangeRequest.** |
+| [Получение](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Ознакомьтесь с свойствами и отношениями объекта **openShiftChangeRequest.** |
+|[Утвердить](../api/openshiftchangerequest-approve.md)|Нет|Утверждение запроса на изменение с открытой сменой.|
+|[Отклонение](../api/openshiftchangerequest-decline.md)|Нет| Отклонение запроса на изменение с открытой сменой.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|openShiftId|String| ИД для открытой смены.|
+|openShiftId|String| ID для открытой смены.|
 
 ## <a name="relationships"></a>Связи
 

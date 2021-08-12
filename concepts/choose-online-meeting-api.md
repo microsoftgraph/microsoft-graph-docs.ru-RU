@@ -3,12 +3,12 @@ title: Выбор API в Microsoft Graph для создания онлайн-в
 description: У вас есть гибкие возможности для создания будущих или сиюминутных собраний.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 838e8042d649cbf83950ccd9f3cbd227ddb60e91
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 0c306125add0cb9521df3bd7b847b61845b3969b222378eaec03561c08bbd87b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246516"
 ---
 # <a name="choose-an-api-in-microsoft-graph-to-create-and-join-online-meetings"></a>Выбор API в Microsoft Graph для создания онлайн-встреч и подключения к ним
 

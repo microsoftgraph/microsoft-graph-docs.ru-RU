@@ -1,19 +1,19 @@
 ---
-title: Используйте API поиска Майкрософт для сортировки результатов поиска (предварительный просмотр)
-description: Вы сортировать результаты поиска с помощью API поиска Майкрософт.
+title: Используйте API Поиск (Майкрософт) для сортировки результатов поиска (предварительный просмотр)
+description: Вы сортировать результаты поиска с помощью Поиск (Майкрософт) API.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 4f4a2c8925e910520ca3d75d98f86d713105f6ac
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: f0914633d1d1d080f10205f1cd387d3aa5620cad79f707508930fa146ca477dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151720"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>Используйте API поиска Майкрософт для сортировки результатов поиска (предварительный просмотр)
+# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>Используйте API Поиск (Майкрософт) для сортировки результатов поиска (предварительный просмотр)
 
-Для сортировки результатов поиска можно использовать API поиска Майкрософт Graph Microsoft Graph. Чтобы сортировать результаты, укажите свойство **sortProperties** в [объекте searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) и определите свойство ресурса **в entityTypes** для сортировки совпадений по восходящему или нисходящему порядку.
+Вы можете использовать API Поиск (Майкрософт) Microsoft Graph для сортировки результатов поиска. Чтобы сортировать результаты, укажите свойство **sortProperties** в [объекте searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) и определите свойство ресурса **в entityTypes** для сортировки совпадений по восходящему или нисходящему порядку.
 
 Сортировка поддерживается только для SharePoint и OneDrive элементов.
 Свойство, на который будет отсортироваться, должно быть *сортируемым* в схеме поиска.

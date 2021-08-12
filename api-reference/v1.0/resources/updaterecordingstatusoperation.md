@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Упдатерекордингстатусоператион
-description: Описывает формат ответа действия обновления состояния записи.
+title: тип ресурса updateRecordingStatusOperation
+description: Описывает формат ответа действия записи обновления.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 78c5e91fa966a91bc65291fa813807cdf44ee8ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c79e97e3befcbce6b324cbaf2ac822edd9de49e1871deee815a27a4c0c62c4a3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141282"
 ---
-# <a name="updaterecordingstatusoperation-resource-type"></a>Тип ресурса Упдатерекордингстатусоператион
+# <a name="updaterecordingstatusoperation-resource-type"></a>тип ресурса updateRecordingStatusOperation
 
 Пространство имен: microsoft.graph
 
-Описывает формат ответа действия обновления состояния записи.
+Описывает формат ответа действия записи обновления.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип                        | Описание|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| Контекст       | Строка                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                              |
+| clientContext       | String                      | Уникальная строка контекста клиента. Максимальное ограничение — 256 шаров.                              |
 | id                  | String                      | Только для чтения.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                                 |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |

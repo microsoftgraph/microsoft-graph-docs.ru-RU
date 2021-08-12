@@ -4,16 +4,16 @@ description: Узнайте, как устранить ошибки автори
 author: davidmu1
 localization_priority: Priority
 ms.prod: applications
-ms.openlocfilehash: ecc8929c0671cbafed4baa5fc242a9f8515c7652
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 98afbd06b1b04f2a0e046bf85dbcbecd49eedac760b702178a542f2511d9f0c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180364"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Устранение ошибок авторизации в Microsoft Graph
 
-Ошибки авторизации могут возникать в результате ряда различных неполадок, большая часть которых приводит к возникновению ошибки 403 (за некоторыми исключениями). Например, ошибки авторизации могут возникнуть в результате следующих неполадок:
+Ошибки авторизации могут возникать в результате ряда различных неполадок, наибольшая часть которых приводит к возникновению ошибки 403 (за некоторыми исключениями). Например, ошибки авторизации могут возникнуть в результате следующих неполадок:
 
 * Некорректные [потоки получения маркеров доступа](/azure/active-directory/develop/active-directory-authentication-scenarios)
 * Неправильно настроенные [области разрешений](/azure/active-directory/develop/active-directory-v2-scopes)
@@ -24,7 +24,7 @@ ms.locfileid: "51921681"
 
 Чтобы устранить распространенные ошибки авторизации, попробуйте действия, описанные для ошибки, которая больше всего похожа на вашу. Можно использовать описание для нескольких ошибок. Кроме того, можно ознакомиться с ответами, которые уже доступны в разделе «Вопросы и ответы Майкрософт», для [ошибки 401](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+401+&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user) и [ошибки 403](/answers/search.html?c=&f=&includeChildren=&q=%5bmicrosoft-graph%5d+403&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user). Если вам не удается найти решение проблемы, задайте[ новый вопрос на через раздел «Вопросы и ответы Майкрософт»](/answers/products/m365#microsoft-graph) с тегом *microsoft-graph**.
 
-**Ошибка "401 — недостаточно прав": является ли маркер допустимым?** <br>
+**Ошибка "401 — недостаточно прав": является ли маркер допустимым?** <br>
 
 Убедитесь, что приложение выводит допустимый маркер доступа к Microsoft Graph в рамках запроса. Эта ошибка часто означает, что маркер доступа отсутствует в заголовке HTTP-запроса на проверку подлинности, что он недопустим или срок его действия истек. Мы настоятельно рекомендуем использовать [Библиотеку проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-overview) для получения маркеров доступа. Кроме того, эта ошибка может возникать при попытке использовать маркер делегированного доступа, предоставленный личной учетной записи Майкрософт, для доступа к API, который поддерживает только рабочие или учебные учетные записи (учетные записи организации). 
 

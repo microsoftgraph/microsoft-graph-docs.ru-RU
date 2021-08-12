@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 83ecdf7f572a3737bfc6ef8b1a7b09b4583d8b7f
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 6dbb17b11279ab031b5c20985b0bc736cf94b238e217eede5a4f129ac3f87e79
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208869"
 ---
 # <a name="reportroot-getsharepointsiteusagepages"></a>reportRoot: getSharePointSiteUsagePages
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983155"
 
 Узнайте, сколько страниц было просмотрено на всех сайтах.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании сайтов SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов - SharePoint использования сайта.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -68,7 +68,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Site Type" (Тип сайта);
 - "Page View Count" (Количество просмотров страницы);
 - "Report Date" (Дата отчета);
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

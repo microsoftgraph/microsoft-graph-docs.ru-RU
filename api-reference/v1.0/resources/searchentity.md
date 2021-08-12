@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Сеарчентити
-description: Объект верхнего уровня, представляющий конечную точку API Microsoft Search.
+title: Тип ресурса searchEntity
+description: Объект верхнего уровня, представляющий конечную Поиск (Майкрософт) API.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 4382deb0b23d051eb7b713661c3a61035e5ceafa
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 4ef8b062b044ed08112b68c0a61c46f1147db9c751f42c7f500f269d79afea63
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163750"
 ---
-# <a name="searchentity-resource-type"></a>Тип ресурса Сеарчентити
+# <a name="searchentity-resource-type"></a>Тип ресурса searchEntity
 
 Пространство имен: microsoft.graph
 
-Объект верхнего уровня, представляющий конечную точку API Microsoft Search. Он не работает как другой ресурс в Graph, но служит привязкой к действию [запроса](../api/search-query.md) . 
+Объект верхнего уровня, представляющий конечную Поиск (Майкрософт) API. Он не ведет себя как любой другой ресурс в Graph, но служит якорем для [действия запроса.](../api/search-query.md) 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[query](../api/search-query.md) |Коллекция [сеарчреспонсе](searchresponse.md) | Выполняет запрос, указанный в теле запроса.  |
+|[query](../api/search-query.md) |[коллекция searchResponse](searchresponse.md) | Выполняет запрос, указанный в теле запроса.  |
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -48,7 +48,7 @@ ms.locfileid: "49378029"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Изучите действие [запроса](../api/search-query.md) .
+Ознакомьтесь [с действием запроса.](../api/search-query.md)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
