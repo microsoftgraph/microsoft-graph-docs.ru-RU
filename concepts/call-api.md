@@ -4,12 +4,12 @@ description: 'Для доступа к ресурсу Microsoft Graph и раб�
 localization_priority: Normal
 author: ananmishr
 ms.prod: cloud-communications
-ms.openlocfilehash: f4b302d2f880efd453f0090fed1abfdb42283d3a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: c61eaa40442ad09cd4ea76fc157416fb4c2ea85733ebafcf93e09441c0010546
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913067"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243296"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Вызов API Microsoft Graph
 

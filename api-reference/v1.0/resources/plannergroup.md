@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Планнерграуп
-description: Ресурс **планнерграуп** предоставляет доступ к ресурсам планировщика для группы. Он не содержит пригодных для использования свойств.
+title: Тип ресурсов plannerGroup
+description: Ресурс **plannerGroup** предоставляет доступ к ресурсам Planner для группы. Он не содержит никаких полезных свойств.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1c4156adb0466dc8261abb4539559e094a2dbfb6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be82fb6988c88f40bc975af28240e9a99f6f9d5c13ec7069af93c3f34b92e04c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205229"
 ---
-# <a name="plannergroup-resource-type"></a>Тип ресурса Планнерграуп
+# <a name="plannergroup-resource-type"></a>Тип ресурсов plannerGroup
 
 Пространство имен: microsoft.graph
 
-Ресурс **планнерграуп** предоставляет доступ к ресурсам планировщика для [группы](group.md). Он не содержит пригодных для использования свойств.
+Ресурс **plannerGroup** предоставляет доступ к ресурсам Planner для [группы.](group.md) Он не содержит никаких полезных свойств.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список планов](../api/plannergroup-list-plans.md) |Коллекция объектов [plannerPlan](plannerplan.md)| Получение коллекции объектов **plannerPlan** .|
+|[Список планов](../api/plannergroup-list-plans.md) |Коллекция объектов [plannerPlan](plannerplan.md)| Получите **коллекцию объектов plannerPlan.**|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор объекта **планнерграуп**|
+|id|String| Только для чтения. Идентификатор **планировщикаGroup**|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|планирует|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает [планов](plannerplan.md) , принадлежащий группе.|
+|планы|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает [планировщикПланы,](plannerplan.md) которые принадлежат группе.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

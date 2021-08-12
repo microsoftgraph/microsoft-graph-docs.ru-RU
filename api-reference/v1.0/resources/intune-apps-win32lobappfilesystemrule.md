@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0c8a45a9f3d49c671949a2b5ad3b9bd549ee8d7
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f362d0a2a48c3b30c99ee847cd7a846ea64cf14c605b0fee656e9674081a6fbf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189662"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>тип ресурса win32LobAppFileSystemRule
 
@@ -29,12 +29,12 @@ ms.locfileid: "52752401"
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
 |path|String|Путь к файлу или папке.|
 |fileOrFolderName|String|Имя файла или папки.|
-|check32BitOn64System|Boolean|Значение, указывающее, следует ли расширять переменные среды в 32-битной среде на 64-битных системах.|
+|check32BitOn64System|Логическое|Значение, указывающее, следует ли расширять переменные среды в 32-битной среде на 64-битных системах.|
 |operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|Тип операции файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|String|Значение сравнения файла или папки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

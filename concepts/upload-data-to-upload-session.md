@@ -1,16 +1,16 @@
 ---
 title: Отправка документов с помощью API универсальной печати Microsoft Graph
-description: Универсальная печать — это современное решение печати, которое можно использовать в организациях для управления инфраструктурой печати через облачные службы Майкрософт.
+description: Универсальная печать — это современное решение печати, которое можно использовать в организациях для управления инфраструктурой печати через облачные службы Майкрософт.
 author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bd34071caf8d428847693be86eb7082e7f80e99c
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c2fd6ac45d22b9c1c77b183f7a3412b7eb3dd46b3270f1d3f5a2ea5919970bf5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171968"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Отправка документов с помощью API универсальной печати Microsoft Graph
 
@@ -83,8 +83,7 @@ Content-Type: application/json
 
 ### <a name="remarks"></a>Примечания
 
-* При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. 
-  Вы можете [запросить состояние отправки](#get-the-upload-session), чтобы получить более подробный список недостающих диапазонов.
+* При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#get-the-upload-session), чтобы получить более подробный список недостающих диапазонов.
 * Включение заголовка `Authorizatio`n при вызове `PUT` может привести к ответу `HTTP 401 Unauthorized`. Заголовок авторизации и маркер носителя необходимо отправлять только при создании сеанса отправки. Их не следует включать при отправке данных для сеанса отправки.
 
 ## <a name="completing-a-file"></a>Завершение отправки файла

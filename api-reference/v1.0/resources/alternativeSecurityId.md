@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 33658a93f3a495a13b2300704cb7b677dc380d84
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: c2bdac56da724cecce33a43a360ef4cbcdcae6ffea680a35169ce9052d71eeea
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229396"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Тип ресурса alternativeSecurityId
 
@@ -37,6 +37,6 @@ ms.locfileid: "52547634"
 | Свойство         | Тип       | Описание
 |:-----------------|:-----------|:---------------------
 | type             | Int32      | Только для внутреннего использования
-| identityProvider | строка     | Только для внутреннего использования
+| identityProvider | Строка     | Только для внутреннего использования
 | ключа              | Edm.Binary | Только для внутреннего использования
 

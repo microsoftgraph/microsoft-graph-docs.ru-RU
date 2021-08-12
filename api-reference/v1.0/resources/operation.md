@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Operation
+title: Тип ресурса операции
 description: Состояние длительной операции.
 localization_priority: Normal
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 21a49f360ac18ad42ce5530a8cfcbcbea1876bc0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1aabcf259d2d185d24b07e25b79d97e928ee245fd4f11acd848bc4f4a1ed646
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180588"
 ---
-# <a name="operation-resource-type"></a>Тип ресурса Operation
+# <a name="operation-resource-type"></a>Тип ресурса операции
 
 Пространство имен: microsoft.graph
 
@@ -41,8 +41,8 @@ ms.locfileid: "48072860"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
-|ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
-|status|оператионстатус|Текущее состояние операции: `notStarted` ,, `running` `completed` , `failed` |
+|lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
+|status|operationStatus|Текущий статус операции: `notStarted` , `running` , `completed``failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

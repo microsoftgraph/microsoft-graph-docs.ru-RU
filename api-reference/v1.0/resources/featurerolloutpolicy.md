@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c655b69a588ced1777221289d41175a73c696854
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 517ee0b3b24b7bde2e651aff704b729798da64a75f3377990c87df2be84f3cec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146876"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>тип ресурса featureRolloutPolicy
 
@@ -28,8 +28,8 @@ ms.locfileid: "51944221"
 
 ### <a name="passthrough-authentication"></a>Проверка подлинности через проход
 
-* Определите сервер с Windows Server 2012 R2 или более поздней версии, на котором необходимо запустить агент [PassthroughAuthentication.](/azure/active-directory/hybrid/how-to-connect-pta)Убедитесь, что сервер соединен с доменом, может проверить подлинность выбранных пользователей с помощью Active Directory и взаимодействовать с Azure AD в исходящие порты и URL-адреса.
-* [Скачайте](https://aka.ms/getauthagent) & установите агент проверки подлинности Microsoft Azure AD Connect на сервере.
+* Определите сервер, Windows Server 2012 R2 или более поздний, где необходимо запустить агент [PassthroughAuthentication.](/azure/active-directory/hybrid/how-to-connect-pta)Убедитесь, что сервер соединен с доменом, может проверить подлинность выбранных пользователей с помощью Active Directory и взаимодействовать с Azure AD в исходящие порты и URL-адреса.
+* [Скачайте](https://aka.ms/getauthagent) & установить агент Microsoft Azure AD Подключение проверки подлинности на сервере.
 * Чтобы обеспечить высокую доступность, установите дополнительные агенты проверки подлинности на других серверах, как описано [здесь.](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
 * Убедитесь, что вы правильно настроили параметры [smart lockout.](/azure/active-directory/authentication/howto-password-smart-lockout) Это необходимо для обеспечения того, чтобы учетные записи активных каталогов пользователей не блокировалися плохими субъектами.
 
@@ -39,7 +39,7 @@ ms.locfileid: "51944221"
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-* Включении [PasswordHashSync со](/azure/active-directory/hybrid/whatis-phs)   страницы "Необязательные функции" в Azure AD Connect.
+* Включить [PasswordHashSync со](/azure/active-directory/hybrid/whatis-phs)   страницы "Необязательные функции" в Azure AD Подключение.
 
 ### <a name="emailasalternateid"></a>EmailAsAlternateId
 
@@ -65,7 +65,7 @@ ms.locfileid: "51944221"
 |displayName|String|Имя отображения для этой политики выкатки функций.|
 |функция|stagedFeatureName| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
 |id|String| Только для чтения.|
-|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|isAppliedToOrganization|Логическое|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
 |isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ### <a name="stagedfeaturename-values"></a>значения stagedFeatureName 

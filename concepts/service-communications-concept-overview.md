@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Priority
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f10aabbdbdb7028af3f16058a6137bd9da8615d6
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 58eaec75761a0062a996f60c9c59c798c8fe0ae570da300821a4bf67780c12c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208674"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Обзор доступа к сведениям о работоспособности и взаимодействии служб в Microsoft Graph
 Вы можете использовать API взаимодействия служб в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт). Фактическое состояние работоспособности и записи соответствуют службам Microsoft 365 и Dynamics 365, которые поддерживаются API-интерфейсом и подписка на которые есть у клиента.
@@ -18,7 +18,7 @@ ms.locfileid: "53109009"
 ## <a name="why-integrate-with-service-health-and-communications-data"></a>Зачем интегрировать данные о работоспособности и взаимодействии служб?
 
 ### <a name="get-service-health-and-message-center-posts-for-a-tenant"></a>Получение сведений о работоспособности служб и записей центра сообщений для клиента
-Клиенты могут получать текущие или исторические данные о работоспособности поддерживаемых служб Майкрософт. При возникновении проблем со службой Майкрософт они могут проверить ее состояние работоспособности, чтобы узнать, идентифицирована ли проблема и выполняется ли работа по ее решению, прежде чем звонить в службу поддержки или тратить время на устранение неполадок. 
+Клиенты могут просматривать актуальные или архивные данные о работоспособности поддерживаемых служб Майкрософт. При возникновении проблем со службой Майкрософт они могут проверить ее состояние работоспособности, чтобы узнать, идентифицирована ли проблема и выполняется ли работа по ее решению, прежде чем звонить в службу поддержки или тратить время на устранение неполадок. 
 
 Клиенты могут регулярно проверять записи в центре сообщений, чтобы отслеживать ожидаемые новые функции и обновления, а также другие важные объявления. Благодаря этому они могут предвидеть, как эти изменения повлияют на пользователей, и подготовить соответствующий план действий.
 
@@ -66,6 +66,9 @@ ms.locfileid: "53109009"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Попробуйте примеры запросов взаимодействия служб в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=beta).
+- Попробуйте примеры запросов взаимодействия служб в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=v1.0).
 
-- Узнайте больше об [API взаимодействия служб](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true).
+- Дополнительные сведения об [API взаимодействия служб 1.0](/graph/api/resources/service-communications-api-overview?view=graph-rest-1.0&preserve-view=true).
+
+- Дополнительные сведения о [бета-версии API взаимодействия служб](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true).
+

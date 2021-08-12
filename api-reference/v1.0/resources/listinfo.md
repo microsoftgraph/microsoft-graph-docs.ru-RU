@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Сложный тип listInfo используется для хранения дополнительных сведений о списке.
 doc_type: resourcePageType
-ms.openlocfilehash: c5d84f5fae89e6ecf433dad20a959f9846f58006
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 90d216101ba9844e1c607fcdfc92bd774add11d8258ec6dd42984b3eadb50b06
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196952"
 ---
 # <a name="listinfo-resource"></a>Ресурс listInfo
 
@@ -29,14 +29,14 @@ ms.locfileid: "50239361"
   "blockType": "resource",
   "optionalProperties": [
   ],
-  "@odata.type": "microsoft.graph.listInfo"
+  "@odata.type&quot;: &quot;microsoft.graph.listInfo"
 }-->
 
 ```json
 {
   "contentTypesEnabled": false,
   "hidden": false,
-  "template": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
+  "template&quot;: &quot;documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
 

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса workbookTableColumn
+title: тип ресурса workbookTableColumn
 description: Представляет столбец в таблице.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 85a8c4b53eb39ae440946872718447f272ef841b
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 4bf6888443ccef65cc62dc728364ab7a5228fd4c22b6e8e977702c320503264d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221126"
 ---
-# <a name="workbooktablecolumn-resource-type"></a>Тип ресурса workbookTableColumn
+# <a name="workbooktablecolumn-resource-type"></a>тип ресурса workbookTableColumn
 
 Пространство имен: microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "50033913"
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой заголовков столбца.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Получает объект диапазона, связанный со всем столбцом.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой итогов столбца.|
-|[удаление](../api/tablecolumn-delete.md);|Нет|Удаляет столбец из таблицы.|
+|[Удаление](../api/tablecolumn-delete.md)|Нет|Удаляет столбец из таблицы.|
 |[Список](../api/tablecolumn-list.md) | Коллекция [WorkbookTableColumn](workbooktablecolumn.md) |Получение коллекции объектов tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Возвращает столбец на основании его позиции в коллекции.|
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Добавляет новый столбец в таблицу.|
@@ -37,7 +37,7 @@ ms.locfileid: "50033913"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|string|Возвращает уникальный ключ, идентифицирующий столбец в таблице. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
+|id|строка|Возвращает уникальный ключ, идентифицирующий столбец в таблице. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
 |index|int|Возвращает номер индекса столбца в коллекции столбцов таблицы. Используется нулевой индекс. Только для чтения.|
 |name|string|Возвращает имя столбца таблицы.|
 |values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|

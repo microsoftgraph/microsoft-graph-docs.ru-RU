@@ -1,24 +1,24 @@
 ---
 author: daspek
-title: Тип ресурса commentAction
-description: Объект commentAction предоставляет сведения о комментарии к элементу.
+title: тип ресурса commentAction
+description: Объект commentAction предоставляет сведения о комментарии, который был сделан на элементе.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f2f3ab7f0798ee1020b107c38262a912fdae53ef
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bd146a400e83692754e1ca920dcba97339c1634f8fe81cc37374a6e37a30a872
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135283"
 ---
-# <a name="commentaction-resource-type"></a>Тип ресурса commentAction
+# <a name="commentaction-resource-type"></a>тип ресурса commentAction
 
 Пространство имен: microsoft.graph
 
-Ресурс **commentAction** предоставляет сведения о действии при [комментарии][] к элементу.
+Ресурс **commentAction** предоставляет сведения о действии [комментария, выполненного][] на элементе.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [действии]: itemactivity.md
 
@@ -37,7 +37,7 @@ ms.locfileid: "50238416"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.commentAction"
+  "@type&quot;: &quot;microsoft.graph.commentAction"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b3f3610607bfeef5f3e47a110c2491b635555494
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 0f25fd015168be97d3c737df73c11dd337191607cfca81f8fdeaca79b58398cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51883307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230412"
 ---
 # <a name="userflowlanguagepage-resource-type"></a>тип ресурса userFlowLanguagePage
 
@@ -30,7 +30,7 @@ ms.locfileid: "51883307"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор страницы userFlowLanguage.|
+|id|String|Идентификатор страницы userFlowLanguage.|
 
 ## <a name="relationships"></a>Связи
 

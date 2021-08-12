@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Фидбакктокенсет
-description: Тип Фидбакктокенсет
+title: тип ресурса feedbackTokenSet
+description: Тип feedbackTokenSet
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0e978bc25615d3fe0f4f39e0e1c5f50d3d5b2ffb
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 054b77c64f61bd100db45ce6ed83772fd6e1fd2c0d502a4e6f578058ec8f097f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205936"
 ---
-# <a name="feedbacktokenset-resource-type"></a>Тип ресурса Фидбакктокенсет
+# <a name="feedbacktokenset-resource-type"></a>тип ресурса feedbackTokenSet
 
 Пространство имен: microsoft.graph.callRecords
 
-Это _открытый тип_ , представляющий набор маркеров отзывов, предоставленных пользователем данной конечной точки для сеанса. Это набор логических свойств. Не следует полагаться на имена свойств, так как они могут изменяться в зависимости от того, какие маркеры предлагаются пользователю.
+Это _открытый тип,_ который представляет набор маркеров обратной связи, предоставляемых пользователем этой конечной точки для сеанса. Это набор свойств Boolean. Имена свойств не следует использовать, так как они могут изменяться в зависимости от того, какие маркеры предлагаются пользователю.
 
 ## <a name="properties"></a>Свойства
 
-Явные имена свойств не задокументированы, так как имена маркеров отзывов могут изменяться, поэтому это [открытый тип](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).
+Явные имена свойств не будут задокументированы, так как имена маркеров обратной связи могут изменяться, поэтому это [открытый тип.](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4)
 
 ## <a name="json-representation"></a>Представление JSON
 

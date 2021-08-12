@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 769310747aa83f30597d725757aadb3f8262270e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 87b007f65f055b94401fb4b4eb1ced4ed79104b534d3e752c2b3d7eda7ca8ac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152727"
 ---
 # <a name="identityprovider-resource-type-deprecated"></a>Тип ресурса identityProvider (нерекомендуемый)
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ ms.locfileid: "53534490"
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:--------|
-|clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Обязательно. Значение NULL не допускается.|
+|clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Обязательное. Не допускается значение NULL.|
 |clientSecret|String|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "`****`".  Обязательно. Значение null не допускается.|
 |id|String|Идентификатор поставщика удостоверений.|
 |name|String|Отображаемое имя поставщика удостоверений. Значение NULL не допускается.|

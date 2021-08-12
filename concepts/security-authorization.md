@@ -4,12 +4,12 @@ description: Данные безопасности, доступные чере�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 2814bf52b575176c95d6ae69f46008e7a56a4cd1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 3064f5f905503f4406f01dba0b34e243c443dafe81c4db8567c86e875abfd4e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233646"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Авторизация и API безопасности Microsoft Graph
 

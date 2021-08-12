@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5d5b75d3062b087848f804c0f89726c67783c540
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8957acbfa1ed8eaff40fd5799471aff67bdd77bf634f9febeef9dbc7677e6589
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196455"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Тип ресурса workbookSessionInfo
 
@@ -40,7 +40,7 @@ ms.locfileid: "48015108"
 
 | Свойство | Тип  | Описание                               |
 |:---------|:------|:------------------------------------------|
-| id  | string | Идентификатор сеанса книги. |
-| persistChanges | boolean |  Имеет значение `true` для сохраняемого сеанса. Имеет значение `false` для несохраняемого сеанса (режим просмотра) |
+| id  | строка | Идентификатор сеанса книги. |
+| persistChanges | логический |  Имеет значение `true` для сохраняемого сеанса. Имеет значение `false` для несохраняемого сеанса (режим просмотра) |
 
 

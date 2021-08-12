@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbb6c39b0c39006d523ae66d8bcefcc290b97c54
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bf79b10879afa35dc351bfde349cb0e755aff1945ffa4f5b828aa277009a8d46
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149809"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
@@ -24,7 +24,7 @@ ms.locfileid: "52754520"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

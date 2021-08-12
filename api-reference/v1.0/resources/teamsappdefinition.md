@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8a43083e1f7fb717e2d54caef4017aeae97d9392
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 9ca384f507fec1bf813fea20ffb3b0034a5e43de0d92604c81cad84b514f37b8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218403"
 ---
 # <a name="teamsappdefinition-resource-type"></a>тип ресурса teamsAppDefinition
 
@@ -22,19 +22,19 @@ ms.locfileid: "50625935"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Уникальный ID (а не ID приложения Teams). |
-| teamsAppId          | Строка   | ID из манифеста приложения Teams. |
-| publishingState| Строка|Опубликованный статус определенной версии приложения Teams. Возможные значения:</br>`submitted` — конкретная версия приложения Teams была представлена и находится на рассмотрении. </br>`published`  — Запрос на публикацию конкретной версии приложения Teams был утвержден администратором и приложение опубликовано. </br> `rejected` — Запрос на публикацию конкретной версии приложения Teams был отклонен администратором. |
+| id                  | строка   | Уникальный ID (не Teams ID приложения). |
+| teamsAppId          | Строка   | ID из манифеста Teams приложения. |
+| publishingState| Строка|Опубликованный статус определенной версии приложения Teams. Возможные значения:</br>`submitted`— конкретная версия Teams была представлена и находится на рассмотрении. </br>`published`— Запрос на публикацию конкретной версии приложения Teams утвержден администратором и приложение опубликовано. </br> `rejected`— Запрос на публикацию конкретной версии приложения Teams был отклонен администратором. |
 | displayName         | string   | Имя приложения, предоставленного разработчиком приложения. |
 | version             | Строка   | Номер версии приложения. |
 | shortDescription    | Строка   | Краткое описание приложения. |
-| description         | string   | Подробное описание приложения. |
+| description         | строка   | Подробное описание приложения. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
-|бот|[teamworkBot](teamworkbot.md) | Сведения о боте, указанном в манифесте приложения Teams. |
+|бот|[teamworkBot](teamworkbot.md) | Сведения о боте, указанном в манифесте Teams приложения. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

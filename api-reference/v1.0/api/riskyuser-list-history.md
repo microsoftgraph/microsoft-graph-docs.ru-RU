@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fb7f5d900ad66a56421db7b0cbf6161aaa0cf460
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9da2c0f309ef4cea20eac95799c04aa5fb02e1644c764d9f4885d41c30731aeb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202632"
 ---
 # <a name="list-history"></a>История списка
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "50959433"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.Read.All |
+|Приложение | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

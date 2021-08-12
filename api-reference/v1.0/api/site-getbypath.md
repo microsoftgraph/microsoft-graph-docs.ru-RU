@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Получить сайт SharePoint по пути
+title: Получить SharePoint по пути
 localization_priority: Normal
 ms.prod: sharepoint
 description: Получение свойств и отношений ресурса site.
 doc_type: apiPageType
-ms.openlocfilehash: 2b4323788a12a1107777a8176fb04b4357ee44f3
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 33f1d31188e679ffdc271604f016fe5849a9075bad9add8929ea6bd872bc4b50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292590"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155297"
 ---
 # <a name="get-a-site-resource-by-path"></a>Получение ресурса site по его пути
 
@@ -51,7 +51,7 @@ ms.locfileid: "50292590"
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Этот метод возвращает ресурс [site][] для сайта, для ссылки на который используется уникальный идентификатор.
 

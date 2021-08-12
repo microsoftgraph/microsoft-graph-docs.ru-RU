@@ -3,12 +3,12 @@ title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы предоставить компонентам доступ к Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: eb5e5c5935e51fe7574c41feb57700f473567707
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 9b0f126426b2506ad5686449088393cd1f5c15d3aefe4102996ebdad3539a62c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54194940"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 

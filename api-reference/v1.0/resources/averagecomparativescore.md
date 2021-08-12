@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Аверажекомпаративескоре
-description: Содержит различные оценки на основе разных областей.
+title: тип ресурса averageComparativeScore
+description: Содержит различные оценки, основанные на различных областях.
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bc104f3a9c19c38ef569d08d24da83d0e07d75f5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2041a366fcf37ff8a850fb8d6fd41e9c3fd6002a17916d41718588674a30a3e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147023"
 ---
-#  <a name="averagecomparativescore-resource-type"></a>Тип ресурса Аверажекомпаративескоре
+#  <a name="averagecomparativescore-resource-type"></a>тип ресурса averageComparativeScore
 
 Пространство имен: microsoft.graph
 
-Содержит различные оценки на основе различных областей (например, усреднение по отраслевым вертикали, среднее значение по размеру компании и т. д.) и категории элементов управления (идентификация, данные, устройство, приложения, инфраструктура).
+Содержит различные оценки в зависимости от различных областей (например, среднего по вертикали отрасли, среднего по размеру места в компании и так далее) и категории управления (Identity, Data, Device, Apps, Infrastructure).
 
 ## <a name="properties"></a>Свойства
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|бы|Строка|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
-|аверажескоре|Двойное с плавающей точкой|Средняя оценка в указанном базисе.|
+|основы|String|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
+|averageScore|Двойное с плавающей точкой|Средний балл в пределах указанной основы.|
 
 ## <a name="json-representation"></a>Представление JSON
 

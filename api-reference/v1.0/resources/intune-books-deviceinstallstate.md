@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da3967f7be2bac7677f350f6c8f9139c39efabe1
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f38201eeb84c73f3e4b618739ccb56a2afd00da3fcebde736cdbceeedf5119cb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126531"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Тип ресурса deviceInstallState
 
@@ -42,7 +42,7 @@ ms.locfileid: "52755114"
 |osDescription|String|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

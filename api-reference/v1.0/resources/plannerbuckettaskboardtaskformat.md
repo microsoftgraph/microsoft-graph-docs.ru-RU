@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса plannerBucketTaskBoardTaskFormat
-description: Ресурс **plannerBucketTaskBoardTaskFormat** представляет сведения, используемые для корректной визуализации задачи в представлении "сегменты" доски задач (представление, упорядоченное по задачам в сегментах, которым они назначены). Каждой задаче будет назначен один объект **plannerBucketTaskBoardTaskFormat** .
+title: тип ресурса plannerBucketTaskBoardTaskFormat
+description: Ресурс **plannerBucketTaskBoardTaskFormat** представляет сведения, используемые для правильного отрисовки задачи в представлении "Ведерки" доски задач (представление, организованное задачами в ведрах, на которые они назначены). Каждая задача будет иметь один **объект plannerBucketTaskBoardTaskFormat,** связанный с ним.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1bd9282a137640af0abc1fd590ac5a87c18ea94e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38e159858591f7e1725c455e07162f9e0f10bbd1f8fc8d8bcfe974e952c95ae6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178118"
 ---
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Тип ресурса plannerBucketTaskBoardTaskFormat
+# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>тип ресурса plannerBucketTaskBoardTaskFormat
 
 Пространство имен: microsoft.graph
 
-Ресурс **plannerBucketTaskBoardTaskFormat** представляет сведения, используемые для корректной визуализации задачи в представлении "сегменты" доски задач (представление, упорядоченное по задачам в сегментах, которым они назначены). Каждой [задаче](plannertask.md) будет назначен один объект **plannerBucketTaskBoardTaskFormat** .
+Ресурс **plannerBucketTaskBoardTaskFormat** представляет сведения, используемые для правильного отрисовки задачи в представлении "Ведерки" доски задач (представление, организованное задачами в ведрах, на которые они назначены). Каждая [задача](plannertask.md) будет иметь один **объект plannerBucketTaskBoardTaskFormat,** связанный с ним.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md); |Чтение свойств и связей объекта **plannerBucketTaskBoardTaskFormat** .|
-|[обновление](../api/plannerbuckettaskboardtaskformat-update.md). | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Обновление объекта **plannerBucketTaskBoardTaskFormat** . |
+|[Получение объекта plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md); |Чтение свойств и связей **объекта plannerBucketTaskBoardTaskFormat.**|
+|[Обновление](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Update **plannerBucketTaskBoardTaskFormat** object. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. ID ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |orderHint|String|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 
 ## <a name="relationships"></a>Связи

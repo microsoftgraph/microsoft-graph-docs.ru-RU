@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 1394ea6008d2514e091fa773db632f80d56e4b6e
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 4b7f5c244fec894feb0cb7708e5b373019b1d7e90daadf4e46b899f61ed09848
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202128"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
 
@@ -25,6 +25,6 @@ ms.locfileid: "49980950"
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getskypeforbusinessactivityuserdetail.md) | Поток      | Получите сведения о действиях пользователей в Skype для бизнеса. |
-| [Получение количества действий](../api/reportroot-getskypeforbusinessactivitycounts.md) | Поток      | Отслеживайте, как меняется количество организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
-| [Получение количества пользователей](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Поток      | Отслеживайте, как меняется количество уникальных организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
+| [Получение количества действий](../api/reportroot-getskypeforbusinessactivitycounts.md) | Stream      | Отслеживайте, как меняется количество организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
+| [Получение количества пользователей](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Stream      | Отслеживайте, как меняется количество уникальных организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
 

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса МитингпартиЦипантс
+title: тип ресурса meetingParticipants
 description: Участники собрания.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ba13a5993a4969162a1b8753e6391afa01802dff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c060a26e35d6f4ff6f8031c192947869d90547888f0ddfe90153da8cebb145c2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174936"
 ---
-# <a name="meetingparticipants-resource-type"></a>Тип ресурса МитингпартиЦипантс
+# <a name="meetingparticipants-resource-type"></a>тип ресурса meetingParticipants
 
 Пространство имен: microsoft.graph
 
@@ -22,8 +22,8 @@ ms.locfileid: "47984259"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| attendees | Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md) |  |
-| organizer | [митингпартиЦипантинфо](meetingparticipantinfo.md) |  |
+| attendees | [коллекция meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

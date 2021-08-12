@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса Шифтпреференцес
-description: Представляет доступность пользователя для назначения смен в расписании.
+title: тип ресурса shiftPreferences
+description: Представляет доступность пользователя, который должен быть назначен сдвиги в расписании.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c1f2b4acdc61fcf7889ea0b9dd1046aff112c9e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b807ba99eb811fb534276ae8ff7b4e180a3c94818fc00b5e57e111a6f75bf62
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230433"
 ---
-# <a name="shiftpreferences-resource-type"></a>Тип ресурса Шифтпреференцес
+# <a name="shiftpreferences-resource-type"></a>тип ресурса shiftPreferences
 
 Пространство имен: microsoft.graph
 
-Представляет доступность пользователя для назначения смен в [расписании](schedule.md).
+Представляет доступность пользователя, назначенного сменами в [расписании.](schedule.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/shiftpreferences-get.md); | [шифтпреференцес](shiftpreferences.md) | Чтение свойств и связей объекта **шифтпреференцес** . |
-| [обновление](../api/shiftpreferences-put.md). | [шифтпреференцес](shiftpreferences.md) | Обновление объекта **шифтпреференцес** . |
+| [Получение](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | Ознакомьтесь с свойствами и отношениями объекта **shiftPreferences.** |
+| [Обновление](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | Обновление **объекта shiftPreferences.** |
 
 ## <a name="properties"></a>Свойства
 
 |Свойство          |Тип           |Описание                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | `Edm.String` | Идентификатор объекта. |
+| id | `Edm.String` | Идентификатор сущности. |
 | @odata.etag | `Edm.String` | Ключ изменения для объекта. |
-| availability | Коллекция [шифтаваилабилити](shiftavailability.md) | Доступность пользователя для планирования работы и расписания повторения. |
-| createdDateTime | `Edm.DateTimeOffset` | Временная метка, соответствующая моменту создания объекта. |
-| lastModifiedDateTime | `Edm.DateTimeOffset` | Временная метка, соответствующая дате последнего изменения объекта. |
-| lastModifiedBy | [identitySet](identityset.md) | Идентификатор пользователя, который последним изменил объект. |
+| availability | [коллекция shiftAvailability](shiftavailability.md) | Доступность пользователя, который должен быть запланирован для работы, и его шаблон повторения. |
+| createdDateTime | `Edm.DateTimeOffset` | Timestamp, соответствующий моменту создания объекта. |
+| lastModifiedDateTime | `Edm.DateTimeOffset` | Время, соответствующее времени последнего изменения объекта. |
+| lastModifiedBy | [identitySet](identityset.md) | Удостоверение человека, который в последний раз изменил объект. |
 
 ## <a name="relationships"></a>Связи
 

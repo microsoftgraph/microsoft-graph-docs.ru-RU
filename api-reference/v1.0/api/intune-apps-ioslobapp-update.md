@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77f9689028ad50d0004670e31dda80b7a90babd5
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c2d109bfec6fad1d146029b4d2cdc9656c137b7e5cc647f8950fa665584d7163
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121943"
 ---
 # <a name="update-ioslobapp"></a>Update iosLobApp
 

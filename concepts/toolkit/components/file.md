@@ -3,12 +3,12 @@ title: Компонент файла в microsoft Graph набор средст�
 description: Компонент файла используется для отображения файла, показывая значок и имя
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 314f08d396421c3b0afe0cf049e91cca9daa03fd
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: a5e3569822d01c06d881070b56653f5bd2e2a89f2905c787699caa926c9b98b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579858"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196329"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Компонент файла в microsoft Graph набор средств
 
@@ -145,7 +145,7 @@ mgt-file {
 
 ## <a name="cache"></a>Кэш
 
-|Хранилище объектов|Кэшные данные|Примечания|
+|Хранилище объектов|Кэшные данные|Замечания|
 |---------|-----------|-------|
 |`driveFiles`|Список файлов по дисковой id|Используется при `driveId` условии|
 |`groupFiles`|Список файлов по групповому id|Используется при `groupId` условии|

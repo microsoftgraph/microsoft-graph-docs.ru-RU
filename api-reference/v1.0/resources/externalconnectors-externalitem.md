@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6c9fc66f33c2dc089bbdffe3987959d56670332a
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 74fbabcb749be4e388f3fe335b57857e76a73616885558700779ccd52c0c929e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467457"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212090"
 ---
 # <a name="externalitem-resource-type"></a>тип ресурса externalItem
 
@@ -30,7 +30,7 @@ ms.locfileid: "53467457"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. Обязательный элемент.|
-|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Простое текстовое представление содержимого элемента. Текст в этом свойстве индексироваться с полным текстом. Необязательное.|
+|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Простое текстовое представление содержимого элемента. Текст в этом свойстве индексироваться с полным текстом. Необязательно.|
 |id|String|Уникальный ID элемента, предоставленного разработчиком, в пределах элемента, содержащего [externalConnection.](externalconnectors-externalconnection.md) Должно быть альфа-числом и не более 128 символов. Обязательный элемент.|
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Пакет свойств со свойствами элемента. Свойства должны соответствовать [схеме,](externalconnectors-schema.md) определенной для [externalConnection.](externalconnectors-externalconnection.md) Обязательный.|
 

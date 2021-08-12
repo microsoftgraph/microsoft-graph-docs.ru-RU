@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 82abc2a316fc3a5d14902089802862165081fada
-ms.sourcegitcommit: 10d9f4c2cee192bd80984d48cabba63b47c54551
+ms.openlocfilehash: fe64a787247625409e0ec0343d7dfa0848d4f920452266aba57642e1bd3f12f2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53579053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196760"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -522,7 +522,8 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 
 | Тип запроса                 | Ограничение на приложение по клиенту     | Ограничение на клиента для всех приложений |
 |---------------------------|------------------------------|----------------------------|
-| Любой         | 5000 запросов в течение 10 секунд   | 15 000 запросов за 10 секунд |
+| Любой         | 500 запросов за 10 секунд   | 1000 запросов за 10 секунд
+|Любой          | 15 000 запросов за 3600 секунд|30 000 запросов за 3600 секунд|
 | GET me/задание  | 50 запросов за 10 секунд | 150 запросов за 10 секунд |  
 
 Предыдущие ограничения действуют для следующих ресурсов: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)

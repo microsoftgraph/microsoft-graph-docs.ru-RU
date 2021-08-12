@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс FolderView предоставляет или задает рекомендации для пользовательского интерфейса папки.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2af23d76083b14bf26afe2cfd9a67388870d1f8a
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4c182a938d01f5d180ca060b51e3cc76c51dc83c4ae7d6b55fe75f3b6dd5831f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178432"
 ---
 # <a name="folderview-resource-type"></a>Тип ресурса FolderView
 
@@ -43,7 +43,7 @@ ms.locfileid: "50240026"
 
 Вы можете использовать свойство _sortBy_ для управления порядком сортировки элементов в приложениях, использующих аспект **viewType**.
 
-### <a name="sortby-options"></a>Параметры sortBy
+### <a name="sortby-options"></a>параметры sortBy
 
 Для свойства **sortBy** определены указанные ниже значения.
 
@@ -58,7 +58,7 @@ ms.locfileid: "50240026"
 | `sequence`               | Для элементов используется настраиваемая последовательность, указанная пользователем.
 
 
-### <a name="sortorder-options"></a>Параметры sortOrder
+### <a name="sortorder-options"></a>параметры sortOrder
 
 Для свойства **sortOrder** определены указанные ниже значения.
 
@@ -68,7 +68,7 @@ ms.locfileid: "50240026"
 | `descending` | Элементы следует упорядочить по убыванию.
 
 
-### <a name="viewtype-options"></a>Параметры viewType
+### <a name="viewtype-options"></a>параметры viewType
 
 Для свойства **viewType** определены указанные ниже значения.
 

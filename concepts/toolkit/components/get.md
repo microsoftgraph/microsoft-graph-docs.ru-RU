@@ -3,12 +3,12 @@ title: Компонент Get в Microsoft Graph Toolkit
 description: С помощью компонента Get можно создавать любые GET-запросы из Microsoft Graph непосредственно в HTML-коде.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 8ffb4da00b0d96f29747e7415878146cd80d08cf
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: c2bae48543a4068c301adb4f5872d580414f4552070793e923980fa15c2dbcda
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189137"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Компонент Get в Microsoft Graph Toolkit
 
@@ -79,7 +79,7 @@ ms.locfileid: "53334775"
 
 Чтобы включить и настроить кэш, используйте свойства `cacheEnabled` `cacheInvalidationPeriod` и свойства. По умолчанию компонент `mgt-get` не кэшет никаких ответов.
 
-|Хранилище объектов|Кэшные данные|Примечания|
+|Хранилище объектов|Кэшные данные|Замечания|
 |-----------|-----------|-------|
 |`response`|Полный ответ, полученный Graph Майкрософт для запроса, указанного в `resource` свойстве`mgt-get`|
 

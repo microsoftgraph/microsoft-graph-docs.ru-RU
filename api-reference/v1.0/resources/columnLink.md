@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс columnLink для объекта contentType связывает ресурс columnDefinition сайта с соответствующим типом контента.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4087d97dfec976560bac7c8949d34fd962308950
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: c14edb1baf1b586e193f26df60f74d6d9b846aeae3f0eb2a4d6eb2422581313a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124523"
 ---
 # <a name="columnlink-resource-type"></a>Тип ресурса ColumnLink
 
@@ -32,7 +32,7 @@ ms.locfileid: "50240579"
 ```json
 {
   "id": "string",
-  "name": "string"
+  "name&quot;: &quot;string"
 }
 ```
 
@@ -40,14 +40,14 @@ ms.locfileid: "50240579"
 
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | string | Уникальный идентификатор столбца.
-| **name**      | string | Имя столбца в этом типе контента.
+| **id**        | строка | Уникальный идентификатор столбца.
+| **name**      | строка | Имя столбца в этом типе контента.
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnLink"
+  "tocPath&quot;: &quot;Resources/ColumnLink"
 } -->
 

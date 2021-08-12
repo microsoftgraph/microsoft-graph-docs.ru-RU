@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 690e117064a43a65ea125e4e0d67a12daae185ae
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 8c42a4dbdf6881a86794594e13ec6e799fbbd8ac556a499bef868926a7d49e56
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216297"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -153,7 +153,7 @@ mgt-people-picker {
 
 ## <a name="cache"></a>Кэш
 
-|Хранилище объектов|Кэшные данные|Примечания|
+|Хранилище объектов|Кэшные данные|Замечания|
 |---------|-----------|-------|
 |`groups`|Список групп|Используется, `type` когда установлено `PersonType.group`|
 |`people`|List of people|Используется, `type` когда установлено `PersonType.person` или `PersonType.any`|

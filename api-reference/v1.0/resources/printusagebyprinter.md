@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8c5a69d01f0b8da05a5f72f5c2c7d9bacf10ff1a
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: f41ee77c390f63d05b0b6076b21948f8bdad9d4cf3f8751be02a675db1fb967f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235340"
 ---
 # <a name="printusagebyprinter-resource-type"></a>тип ресурса printUsageByPrinter
 
@@ -25,13 +25,13 @@ ms.locfileid: "50518013"
 |:---|:---|:---|
 | [Список (ежедневно)](../api/reportroot-list-dailyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Получите список сводок об использовании ежедневной печати, сгруппив их по принтеру. |
 | [Список (ежемесячно)](../api/reportroot-list-monthlyprintusagebyprinter.md) | [printUsageByPrinter](printUsageByPrinter.md) | Получите список ежемесячных сводок использования печати, сгруппив их по принтеру. |
-| [получение](../api/printUsageByPrinter-get.md); | [printUsageByPrinter](printUsageByPrinter.md) | Ознакомьтесь с свойствами и отношениями объекта **printUsageByPrinter.** |
+| [Получение](../api/printUsageByPrinter-get.md) | [printUsageByPrinter](printUsageByPrinter.md) | Ознакомьтесь с свойствами и отношениями объекта **printUsageByPrinter.** |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID этого сводки использования.|
-|printerID|Строка|ID принтера, представленный этими статистическими данными.|
+|id|String|ID этого сводки использования.|
+|printerID|String|ID принтера, представленный этими статистическими данными.|
 |useDate|Дата|Дата, связанная с этими статистическими данными.|
 |completedBlackAndWhiteJobCount|Int64|Количество заданий черной и белой печати, завершенных принтером в связанную дату.|
 |completedColorJobCount|Int64|Количество заданий цветного печати, завершенных принтером в связанную дату.|

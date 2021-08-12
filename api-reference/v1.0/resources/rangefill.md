@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5ebd0785153b05aea7c63785ee30bc5726551b25
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c1485d3465818b9daccf039c13c21c7557206025886747110813e5b3834e6504
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159857"
 ---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
 
@@ -23,8 +23,8 @@ ms.locfileid: "48037082"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFill](../api/rangefill-get.md) | [воркбукранжефилл](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
-|[Обновление](../api/rangefill-update.md) | [воркбукранжефилл](rangefill.md)   |Обновление объекта RangeFill. |
+|[Получение объекта RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
+|[Обновление](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)   |Обновление объекта RangeFill. |
 |[Clear](../api/rangefill-clear.md)|Нет|Сбрасывает фон диапазона.|
 
 ## <a name="properties"></a>Свойства

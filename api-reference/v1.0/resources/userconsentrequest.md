@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a3ac490e4dcd7231c8b005eeb6a259e525bbf882
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 0b7c69fb636efae5bd6e1a4ca71c9ba1b2943c20346262de20017ddea3da5849
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196504"
 ---
 # <a name="userconsentrequest-resource-type"></a>тип ресурса userConsentRequest
 

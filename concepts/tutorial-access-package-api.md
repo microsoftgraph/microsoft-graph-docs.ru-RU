@@ -1,30 +1,30 @@
 ---
-title: Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Microsoft Graph
-description: Узнайте, как управлять доступом к ресурсам в управлении правами Active Directory (Azure AD) с помощью API Microsoft Graph.
+title: Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Microsoft
+description: Узнайте, как управлять доступом к ресурсам в управлении правами Active Directory (Azure AD) с помощью API Graph Microsoft.
 author: davidmu1
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b27bda23d32033205c21199d27d34dd360fa380d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 196c9b7b582c17341dfd9de46389620870b666ec6a49b6fb38bf7270b9032e1a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186856"
 ---
-# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Microsoft Graph
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Microsoft
 
-Управление доступом ко всем ресурсам, которые необходимы сотрудникам, таким как группы, приложения и сайты, является важной функцией для организаций. Вы хотите предоставить сотрудникам необходимый уровень доступа, чтобы они могли быть продуктивными, и удалить их доступ, когда он больше не нужен. [Управление правами Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) с помощью API Microsoft Graph позволяет управлять этим типом доступа.
+Управление доступом ко всем ресурсам, которые необходимы сотрудникам, таким как группы, приложения и сайты, является важной функцией для организаций. Вы хотите предоставить сотрудникам необходимый уровень доступа, чтобы они могли быть продуктивными, и удалить их доступ, когда он больше не нужен. [Azure Active Directory управления правами Azure AD](/azure/active-directory/governance/entitlement-management-overview) с помощью API microsoft Graph позволяет управлять этим типом доступа.
 
-В этом руководстве вам было предложено разработать код для создания пакета ресурсов для маркетинговой кампании, которую внутренние пользователи могут запрашивать самостоятельно. Запросы не требуют утверждения, а срок доступа пользователя истекает через 30 дней. Для этого руководства ресурсы маркетинговой кампании являются только членством в одной группе, но это может быть коллекция групп, приложений или сайтов SharePoint Online.
+В этом руководстве вам было предложено разработать код для создания пакета ресурсов для маркетинговой кампании, которую внутренние пользователи могут запрашивать самостоятельно. Запросы не требуют утверждения, а срок доступа пользователя истекает через 30 дней. В этом руководстве ресурсы маркетинговой кампании являются только членством в одной группе, но это может быть коллекция групп, приложений или веб-сайтов SharePoint Online.
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые условия
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 - Управление правами Azure AD требует определенных лицензий. Дополнительные сведения см. в [дополнительных сведениях о требованиях к лицензии.](/azure/active-directory/governance/entitlement-management-overview#license-requirements) В вашем клиенте требуются следующие лицензии:
     - Azure AD Premium P2
-    - Лицензия на корпоративную мобильность и безопасность (EMS) E5
+    - Enterprise Mobility + Security E5 (EMS)
 - В этом руководстве предполагается, что вы используете песочницу Microsoft Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Для этого руководства необходимы `User.ReadWrite.All` разрешения `Group.ReadWrite.All` , и `EntitlementManagement.ReadWrite.All` делегированная. Чтобы настроить разрешения в песочнице Microsoft Graph, выполните следующие действия.
     1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
     2. Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетную запись глобального администратора Azure AD. После успешного входа вы увидите данные учетной записи пользователя на панели слева.
@@ -69,7 +69,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -119,7 +119,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -155,7 +155,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs?$filter=(displayName eq 'General')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -226,7 +226,7 @@ Content-type: application/json
 
 ### <a name="get-catalog-resources"></a>Получить ресурсы каталога
 
-В последующих действиях в этом руководстве вам потребуется **id,** который был назначен групповому ресурсу в каталоге. Этот идентификатор, который представляет группу как ресурс в каталоге, отличается от идентификатора самой группы в Microsoft Graph. Это потому, что в каталоге могут быть ресурсы, которые не представлены в Microsoft Graph.
+В последующих действиях в этом руководстве вам потребуется **id,** который был назначен групповому ресурсу в каталоге. Этот идентификатор, который представляет группу в качестве ресурса в каталоге, отличается от идентификатора самой группы в Microsoft Graph. Это потому, что в каталоге могут быть ресурсы, которые не представлены в Microsoft Graph.
 
 В запросе укате **id** используемого каталога. Запись значения свойства **id** для ресурса каталога группы.
 
@@ -236,7 +236,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResources?$filter=(displayName eq 'Marketing resources')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -260,7 +260,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-resources-roles"></a>Получить роли ресурсов
 
-Пакет доступа назначает пользователям роли ресурса. Типичная роль группы — это роль участника. Другие ресурсы, такие как сайты и приложения SharePoint Online, могут иметь много ролей. Типичная роль группы, используемой в пакете доступа, — это роль участника. Роль участника потребуется при добавлении роли ресурса в пакет доступа позже в этом учебнике. 
+Пакет доступа назначает пользователям роли ресурса. Типичная роль группы — это роль участника. Другие ресурсы, например SharePoint сайты и приложения в Интернете, могут иметь много ролей. Типичная роль группы, используемой в пакете доступа, — это роль участника. Роль участника потребуется при добавлении роли ресурса в пакет доступа позже в этом учебнике. 
 
 В запросе используйте **id** каталога и **id** группового ресурса в каталоге, который вы записали, чтобы получить **originId** роли ресурса Member. Зафиксировать значение **свойства originId,** используемого позже в этом руководстве.
 
@@ -270,7 +270,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/cec5d6ab-c75d-47c0-9c1c-92e89f66e384/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%274a1e21c5-8a76-4578-acb1-641160e076e8%27+and+displayName+eq+%27Member%27)&$expand=accessPackageResource
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -321,7 +321,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -365,7 +365,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -422,7 +422,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -472,7 +472,7 @@ Content-type: application/json
 
 В ответе вы можете увидеть состояние Принято **и** состояние **Отправка**. Зафиксировать значение возвращаемого свойства **id,** чтобы получить состояние запроса позже.
 
-Если вы еще этого не сделали, выпишитесь из учетной записи администратора, используемой в Microsoft Graph Explorer. Вопишите в **созданную учетную запись пользователя Requestor1.** При первом входе вам будет предложено изменить пароль.
+Если вы еще этого не сделали, запишитесь из учетной записи администратора, которую вы использовали в Microsoft Graph Explorer. Вопишите в **созданную учетную запись пользователя Requestor1.** При первом входе вам будет предложено изменить пароль.
 
 #### <a name="request"></a>Запрос
 
@@ -490,7 +490,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -523,7 +523,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/a6bb6942-3ae1-4259-9908-0133aaee9377
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -550,7 +550,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -639,7 +639,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -666,7 +666,7 @@ Content-type: application/json
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/6c1f65ec-8c25-4a45-83c2-a1de2a6d0e9f
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 No Content - 204
@@ -698,7 +698,7 @@ No Content - 204
 DELETE https://graph.microsoft.com/v1.0/users/ce02eca8-752b-4ecf-ac29-aa9bccd87606
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 No Content - 204
@@ -714,7 +714,7 @@ No Content - 204
 DELETE https://graph.microsoft.com/v1.0/groups/a468eaea-ed6c-4290-98d2-a96bb1cb4209
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 No Content - 204

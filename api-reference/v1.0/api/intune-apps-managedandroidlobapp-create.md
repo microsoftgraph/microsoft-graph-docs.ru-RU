@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aca805108b2765280a56974309574ffce2f5289
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d1088f16159292ffa4ff316cb80e736e6674cbe32f12e620784a9b89bdbc604d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252587"
 ---
 # <a name="create-managedandroidlobapp"></a>Create managedAndroidLobApp
 

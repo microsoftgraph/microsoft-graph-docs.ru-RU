@@ -1,29 +1,29 @@
 ---
-title: Тип optionalClaims
+title: тип optionalClaims
 description: Объявляет необязательные утверждения, запрашиваемые приложением.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2830aef91557346d3d02249d35df41eccffa565e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 01fb75a12b27dba82066255300519cd3f830a4beeea7de77b64215170ef4f11a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180581"
 ---
-# <a name="optionalclaims-resource-type"></a>Тип ресурса optionalClaims
+# <a name="optionalclaims-resource-type"></a>необязательный Тип ресурсаClaims
 
-Пространство имен: microsoft.graph объявляет необязательные утверждения, запрашиваемые приложением. Приложение может настроить необязательные утверждения, возвращаемые в каждом из трех типов маркеров (маркера ИД, маркера доступа, маркера SAML 2), которые оно может получить от службы маркеров безопасности. Приложение может настроить другой набор необязательных утверждений, возвращаемых в каждом типе маркера. Свойство optionalClaims приложения [является](application.md) **объектом optionalClaims.**
+Пространство имен: microsoft.graph объявляет необязательные требования, запрашиваемые приложением. Приложение может настраивать необязательные утверждения, которые будут возвращены в каждом из трех типов маркеров (маркер ID, маркер доступа, маркер SAML 2), которые он может получить из службы маркеров безопасности. Приложение может настроить другой набор необязательных утверждений, которые будут возвращены в каждом типе маркера. Свойство optionalClaims приложения [—](application.md) **это объект optionalClaims.**
 
 Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные сведения см. в статье [Предоставление необязательных утверждений для приложения Azure AD](/azure/active-directory/develop/active-directory-optional-claims).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|idToken|[Коллекция optionalClaim](optionalclaim.md)| Необязательные утверждения, возвращенные в маркере JWT ID. |
-|accessToken|[Коллекция optionalClaim](optionalclaim.md)| Необязательные утверждения, возвращенные в маркере доступа JWT. |
-|saml2Token|[Коллекция optionalClaim](optionalclaim.md)| Необязательные утверждения, возвращенные в маркере SAML.|
+|idToken|[необязательная коллекцияClaim](optionalclaim.md)| Необязательные утверждения, возвращаемые в маркере ID JWT. |
+|accessToken|[необязательная коллекцияClaim](optionalclaim.md)| Необязательные утверждения, возвращаемые в маркере доступа JWT. |
+|saml2Token|[необязательная коллекцияClaim](optionalclaim.md)| Необязательные утверждения, возвращаемые в маркере SAML.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

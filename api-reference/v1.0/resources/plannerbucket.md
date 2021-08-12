@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса plannerBucket
-description: ) для задач в плане в Microsoft 365. Он находится в plannerPlan и может иметь коллекцию перечисление plannertasks.
+title: тип ресурса plannerBucket
+description: ) для задач в плане в Microsoft 365. Он содержится в планировщикеPlan и может иметь коллекцию plannerTasks.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9655f8ad57f200fcc1a080c5f210452ca9630441
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee603f0c19c32e26abd4a18a17b3055815460930a63dcad306c00f8e2ba89f84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154926"
 ---
-# <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
+# <a name="plannerbucket-resource-type"></a>тип ресурса plannerBucket
 
 Пространство имен: microsoft.graph
 
-Ресурс **plannerBucket** представляет сегмент (или "настраиваемый столбец") для задач в плане в Microsoft 365. Он находится в [plannerPlan](plannerplan.md) и может иметь коллекцию [перечисление plannertasks](plannertask.md).
+Ресурс **plannerBucket** представляет ведро (или "настраиваемый столбец") для задач в плане в Microsoft 365. Он содержится в [планировщикеPlan](plannerplan.md) и может иметь коллекцию [plannerTasks.](plannertask.md)
 
 
 
@@ -24,24 +24,24 @@ ms.locfileid: "48037516"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей объекта **plannerBucket** .|
+|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей **объекта plannerBucket.**|
 |[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[создание](../api/planner-post-buckets.md); | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
-|[обновление](../api/plannerbucket-update.md). | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
-|[удаление](../api/plannerbucket-delete.md); | Нет |Удаление объекта **plannerBucket** . |
+|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md);   | Создание нового **объекта plannerBucket.** |
+|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Объект **Update plannerBucket.** |
+|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление **объекта plannerBucket.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор сегмента. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. ID из ведра. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
-|planId|Строка|ИДЕНТИФИКАТОР плана, к которому относится сегмент.|
+|planId|Строка|Запланируйте ID, к которому принадлежит ведро.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в сегменте.|
+|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в ведре.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

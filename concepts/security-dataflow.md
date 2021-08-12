@@ -4,12 +4,12 @@ description: API безопасности Microsoft Graph объединяет �
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 47731520b9ae959212750aea4f9668d58ac85a08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 79c7733c5e22aa25dcb31dca2558f07082d03681d795aa161c208f350040f690
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230256"
 ---
 # <a name="microsoft-graph-security-api-data-flow"></a>Поток данных API безопасности Microsoft Graph
 

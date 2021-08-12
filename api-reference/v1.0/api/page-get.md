@@ -1,24 +1,24 @@
 ---
 title: Вывод страницы
-description: Получение свойств и связей объекта Page.
+description: Извлечение свойств и связей объекта страницы.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 98c15b4638ce41debc9e8dd040d77d610ad1665b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 58b77a00299656cb145f64ae83647717619ada8ff5383d2de27f3ad6c2da28ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212321"
 ---
 # <a name="get-page"></a>Вывод страницы
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [Page](../resources/page.md) .
+Извлечение свойств и связей объекта [страницы.](../resources/page.md)
 
-**Извлечение сведений о странице**
+**Получение сведений о странице**
 
 Доступ к метаданным страницы по идентификатору страницы:
 
@@ -26,24 +26,24 @@ ms.locfileid: "48402004"
 GET /me/onenote/pages/{id}
 ```
 
-**Извлечение контента страницы**
+**Получение контента страницы**
 
-Вы можете использовать `content` конечную точку страницы для получения HTML-содержимого страницы:
+Вы можете использовать конечную точку страницы для `content` получения HTML-контента страницы:
 
 ```
 GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-`includeIDs=true`Параметр запроса используется для [обновления страниц](../api/page-update.md).
+Параметр `includeIDs=true` запроса используется для [обновления страниц.](../api/page-update.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Notes. Read, Notes. ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Notes.Read, Notes.ReadWrite    |
 |Для приложений | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -55,9 +55,9 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
+Этот метод поддерживает параметры `select` `expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
-Ответ по умолчанию разворачивается `parentSection` и выбирает `id` Свойства раздела, `name` а также `self` Свойства. Допустимые `expand` значения для страниц: `parentNotebook` и `parentSection` .
+Ответ по умолчанию расширяется и выбирает свойства `parentSection` `id` и свойства `name` `self` раздела. `expand`Допустимые значения для страниц и `parentNotebook` `parentSection` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -70,7 +70,7 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Page](../resources/page.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код `200 OK` отклика и объект страницы в тексте [](../resources/page.md) ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -79,7 +79,7 @@ GET /sites/{id}/onenote/pages/{id}
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Note: объект Response, показанный здесь, усекается для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

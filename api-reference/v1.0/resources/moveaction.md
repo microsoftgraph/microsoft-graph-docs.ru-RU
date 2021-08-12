@@ -1,24 +1,24 @@
 ---
 author: daspek
-title: Тип ресурса moveAction
-description: Объект MoveAction предоставляет сведения об активности, которая переместила элемент.
+title: тип ресурса moveAction
+description: Объект MoveAction предоставляет сведения о действии, перемещаемом элементом.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2f588ecabefa1425f47d3efec6728587fb694798
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 160afbc51196c60473dc40bec7b79daab6dc39eb3f302c1a1b9689c9c25929fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189466"
 ---
-# <a name="moveaction-resource-type"></a>Тип ресурса moveAction
+# <a name="moveaction-resource-type"></a>тип ресурса moveAction
 
 Пространство имен: microsoft.graph
 
-Наличие ресурса **moveAction** в [**itemActivity**][activity] указывает на то, что действие переместил элемент.
+Наличие ресурса **moveAction** в [**itemActivity**][activity] указывает на то, что действие перемещает элемент.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
@@ -34,13 +34,13 @@ ms.locfileid: "50239340"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.moveAction"
+  "@type&quot;: &quot;microsoft.graph.moveAction"
 }-->
 
 ```json
 {
   "from": "string",
-  "to": "string"
+  "to&quot;: &quot;string"
 }
 ```
 

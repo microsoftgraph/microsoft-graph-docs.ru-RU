@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Теамстемплате
-description: Описывает объект Теамстемплате.
+title: teamsTemplate resource type
+description: Описывает объект teamsTemplate.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ba27dc19f1d6561784d26105bcf8e089c664bbf1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5adcd554c687747fb45cdfd1a40e9e37cfaad2d9107a43ebc2ceca01b5d94f3c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249127"
 ---
-# <a name="teamstemplate-resource-type"></a>Тип ресурса Теамстемплате
+# <a name="teamstemplate-resource-type"></a>teamsTemplate resource type
 
 Пространство имен: microsoft.graph
 
-Шаблон группы — это план для создания [команды](../resources/team.md) в Microsoft Teams. Шаблон определяет структуру, параметры и даже содержимое, которое должно быть подготовлено в новой команде, созданной с помощью шаблона. Корпорация Майкрософт предоставляет набор базовых шаблонов и клиентов, которые могут сохранять собственные настраиваемые шаблоны.
+Шаблон группы — это план [](../resources/team.md) создания группы в Microsoft Teams. Шаблон указывает структуру, параметры и даже содержимое, которое должно быть разработано в новой группе, созданной с помощью шаблона. Корпорация Майкрософт предоставляет набор базовых шаблонов, и клиенты могут сохранять собственные пользовательские шаблоны.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | Строка   | Уникальный идентификатор шаблона. Не может иметь значение null. |
+| id                  | String   | Уникальный идентификатор шаблона. Не может быть null. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 363ae9739205a6e96ff836a0190f066d919f5adf
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 459f82f08ac8024ff1773809cd860e3b13acd051c822bb181b2ddd1718dff377
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235087"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор API безопасности Microsoft Graph
 
@@ -46,7 +46,7 @@ ms.locfileid: "48921818"
 
 ### <a name="unlock-security-context-to-drive-investigation"></a>Разблокировка контекста безопасности для расследований
 
-Подробно изучите ресурсы, связанные с безопасностью (например, пользователей, узлы и приложения), а затем добавьте контекст организации от других поставщиков Microsoft Graph (Azure AD, Microsoft Intune, Microsoft 365), чтобы объединить контексты бизнеса и безопасности для более эффективного реагирования на угрозы.
+Подробно изучите ресурсы, связанные с безопасностью (например, пользователей, узлы и приложения), а затем добавьте контекст организации от других поставщиков Microsoft Graph (Azure AD, Microsoft Intune, Microsoft 365), чтобы объединить контексты бизнеса и безопасности для более эффективного реагирования на угрозы.
 
 ### <a name="automate-security-workflows-and-reporting"></a>Автоматизация рабочих процессов и отчетов безопасности
 
@@ -81,8 +81,8 @@ ms.locfileid: "48921818"
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-- [API безопасности в Microsoft Graph 1.0](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
-- [API безопасности в Microsoft Graph (бета-версия)](/graph/api/resources/security-api-overview?view=graph-rest-beta)
+- [API безопасности в Microsoft Graph 1.0](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- [API безопасности в Microsoft Graph (бета-версия)](/graph/api/resources/security-api-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

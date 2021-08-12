@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 409d6b96c108975c8b0aaafe5734d96b0f87505b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8ce32caea8cf06c8db5896c156e4e4a4861b94bb98f21368c6464091fd889ed9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218578"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>тип enum deviceManagementSubscriptionState
 
@@ -24,10 +24,10 @@ ms.locfileid: "52755016"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ожидание|0|Pending|
-|active|1|Активна|
+|active|1|Активное|
 |warning|2|Предупреждение|
-|отключено|3|Отключено|
-|deleted|4 |Удалена|
+|отключено|3|Disabled|
+|deleted|4 |Deleted|
 |заблокировано|5 |Заблокировано|
 |lockedOut|8 |LockedOut|
 

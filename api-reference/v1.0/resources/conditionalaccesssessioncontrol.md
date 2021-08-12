@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса conditionalAccessSessionControl
+title: тип ресурса conditionalAccessSessionControl
 description: Базовый тип управления сеансом.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: caf1065557299b863a02641928eb77079d05b5e1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5c3b3ccd1829abeba85ee12661224b2866541a08bbc5dc29cfcb27ea7fb7aac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160095"
 ---
-# <a name="conditionalaccesssessioncontrol-resource-type"></a>Тип ресурса conditionalAccessSessionControl
+# <a name="conditionalaccesssessioncontrol-resource-type"></a>тип ресурса conditionalAccessSessionControl
 
 Пространство имен: microsoft.graph
 

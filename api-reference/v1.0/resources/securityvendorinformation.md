@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Секуритивендоринформатион
-description: " поддается подпредоставлению = AppLocker)."
+title: тип ресурса securityVendorInformation
+description: " subProvider=AppLocker)."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 536ed37cfe8ba190a22ef86e190af2b171d352ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a0b0d5ece58a1db1ce929b4bc72de7e8f9c1a44fdd8ccab15aee0d2c47143dcc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983986"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216555"
 ---
-# <a name="securityvendorinformation-resource-type"></a>Тип ресурса Секуритивендоринформатион
+# <a name="securityvendorinformation-resource-type"></a>тип ресурса securityVendorInformation
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подпредоставление = AppLocker).
+Содержит сведения о поставщике, поставщике, поставщике и подпрограмме безопасности (например, поставщик=Microsoft; provider=Защитник Windows ATP; subProvider=AppLocker).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|поставщики |String|Конкретный поставщик (продукт или услуга — не компания поставщика); Например, Виндовсдефендератп.|
-|провидерверсион|String|Версия поставщика или подсистемы, если она существует, создавшего оповещение. *Required*|
-|подпредоставление|String|Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.|
-|поставщика |String|Имя поставщика оповещений (например, Microsoft, Dell, Фирие). *Required*|
+|поставщик |String|Конкретный поставщик (продукт/служба — не компания-поставщик); например, WindowsDefenderATP.|
+|providerVersion|String|Версия поставщика или подпрограммы, если она существует, которая вызвала оповещение. *Required*|
+|subProvider|String|Определенный субпровиндер (под агрегированием поставщика); например, WindowsDefenderATP.SmartScreen.|
+|поставщик |String|Имя поставщика оповещений (например, Microsoft, Dell, FireEye). *Required*|
 
 
 ## <a name="json-representation"></a>Представление JSON

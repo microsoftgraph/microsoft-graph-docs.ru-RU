@@ -5,17 +5,17 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d03d2199d11b2b9f285d8a425e01c70a6a49da35
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8abd44ce7da658d58b648ec622a06b7e33c98927f89e35971016e0bd305fcbda
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130543"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: увольнение
 Пространство имен: microsoft.graph
 
->**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
 
 Отклонять риск одного или более [объектов riskyUser.](../resources/riskyuser.md) Это действие задает целевому пользователю уровень риска ни к одному.
 
@@ -26,7 +26,7 @@ ms.locfileid: "50440089"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.ReadWrite.All |
+|Приложение | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /identityProtection/riskyUsers/dismiss
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|userIds|Коллекция строк|Укажите пользовательские интерфейсы, которые необходимо отклонять в теле запроса.|
+|userIds|Коллекция String|Укажите пользовательские интерфейсы, которые необходимо отклонять в теле запроса.|
 
 
 

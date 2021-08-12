@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса plannerTaskDetails
-description: Ресурс **plannerTaskDetails** представляет дополнительные сведения о задаче. Каждый объект Task содержит объект Details.
+title: тип ресурса plannerTaskDetails
+description: Дополнительные сведения о задаче представляет ресурс **plannerTaskDetails.** Каждый объект задачи имеет объект подробностей.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 32ea3fff1c97920a83f667282e1341926a02b5c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 852deda3e48c78b2e70968cb7e8b7ec9a11956bbf2fcab66ecc127ea653abce9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189396"
 ---
-# <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
+# <a name="plannertaskdetails-resource-type"></a>тип ресурса plannerTaskDetails
 
 Пространство имен: microsoft.graph
 
-Ресурс **plannerTaskDetails** представляет дополнительные сведения о задаче. Каждый объект [Task](plannertask.md) содержит объект Details.
+Дополнительные сведения о задаче представляет ресурс **plannerTaskDetails.** Каждый [объект](plannertask.md) задачи имеет объект подробностей.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md); |Чтение свойств и связей объекта **plannerTaskDetails** .|
-|[обновление](../api/plannertaskdetails-update.md). | [plannerTaskDetails](plannertaskdetails.md);    |Обновление объекта **plannerTaskDetails** . |
+|[Получение объекта plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md); |Чтение свойств и связей **объекта plannerTaskDetails.**|
+|[Обновление](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md);    |Объект **Update plannerTaskDetails.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
 |description|String|Описание задачи.|
-|id|String| Только для чтения. Идентификатор сведений о задаче. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
-|previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если `automatic` выбран отображаемый предварительный просмотр, то приложение просматривает задачу.|
+|id|String| Только для чтения. ID сведений о задачах. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. При `automatic` задав показанный предварительный просмотр, приложение будет просматривать задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
 ## <a name="relationships"></a>Связи

@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c0871f936b0935e6a599e79d6fb1a75f7e28f7ed
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ca4c5081521c2cbfd6e5ac4185548507f98e577ed2a590ded43d5788dde6cd9f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218424"
 ---
 # <a name="printtasktrigger-resource-type"></a>тип ресурса printTaskTrigger
 
@@ -26,12 +26,12 @@ ms.locfileid: "50518016"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 | [Список](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Получите список printTaskTriggers, связанных с определенным [принтером.](printer.md) |
-| [получение](../api/printtasktrigger-get.md); | [printTaskTrigger](printtasktrigger.md) | Получите печатьTaskTrigger, связанную с определенным [printTask.](printtask.md) |
+| [Получение](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Получите печатьTaskTrigger, связанную с определенным [printTask.](printtask.md) |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор printTaskTrigger. Только для чтения.|
+|id|String|Идентификатор printTaskTrigger. Только для чтения.|
 |event|printEvent|Событие Universal Print, которое приведет к запуску новой [печатиTask.](printtask.md) Допустимые значения описаны в следующей таблице.|
 
 ### <a name="printevent-values"></a>printEvent values
@@ -39,9 +39,9 @@ ms.locfileid: "50518016"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |jobStarted|0|Представляет событие, которое происходит при работе с новой печатью.|
-|unknownFutureValue|1 |Эволюционирующее значение sentinel. Не следует использовать.|
+|unknownFutureValue|1|Эволюционирующее значение sentinel. Не следует использовать.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |определение|[printTaskDefinition](printtaskdefinition.md)|Абстрактное определение, которое будет использоваться для создания [printTask](printtask.md) при запуске события печати. Только для чтения.|

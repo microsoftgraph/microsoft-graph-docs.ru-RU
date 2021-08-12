@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: 81589377d30b0e1e2c494ade1ba9b48d7803495e
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 499bdeb7d2dd3f3d68092a8c9b17008a5d4d1de5317f14c0e7b3b441d6cef32d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169643"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса Drive
 
@@ -77,7 +77,7 @@ ms.locfileid: "50239025"
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | Дата и время создания элемента. Только для чтения.                                                                                                                                                                                       |
-| description          | String                        | Предоставляет отображаемое для пользователя описание диска. Чтение и запись.
+| description          | String                        | Предоставляет видимое пользователю описание диска. Чтение и запись. 
 | driveType            | Строка                        | Описывает тип диска, представленного данным ресурсом. Для личных дисков OneDrive возвращается `personal`. В случае дисков OneDrive для бизнеса возвращается `business`. В случае библиотек документов SharePoint возвращается `documentLibrary`. Только для чтения. |
 | id                   | String                        | Уникальный идентификатор диска. Только для чтения.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.                                                                                                                                           |

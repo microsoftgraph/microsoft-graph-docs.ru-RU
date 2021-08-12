@@ -1,22 +1,22 @@
 ---
 title: тип ресурса identityCustomUserFlowAttribute
-description: Представляет настраиваемый атрибут потока пользователей в клиентах Azure Active Directory, который можно использовать в потоке пользователей для самостоятельной регистрации.
+description: Представляет настраиваемый атрибут потока пользователей в Azure Active Directory клиентах, который можно использовать в потоке пользователей самообслуживки.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2bb354ab8028a6d3ca96418c4b0566ea6fe195ef
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: 5fdad3bf3fabb75cfa882e2c9b78dd2f008a596e70630b5eb34b3f3aa215baff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51883370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126580"
 ---
 # <a name="identitycustomuserflowattribute-resource-type"></a>тип ресурса identityCustomUserFlowAttribute
 
 Пространство имен: microsoft.graph
 
-Представляет настраиваемый атрибут потока пользователей в клиентах Azure Active Directory, который можно использовать в потоке пользователей для самостоятельной регистрации. Эти атрибуты не могут быть изменены и являются только для чтения.
+Представляет настраиваемый атрибут потока пользователей в Azure Active Directory клиентах, который можно использовать в потоке пользователей самообслуживки. Эти атрибуты не могут быть изменены и являются только для чтения.
 
 Наследует [от identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 

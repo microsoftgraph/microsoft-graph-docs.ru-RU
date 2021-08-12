@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса ПартиЦипантендпоинт
-description: Тип ПартиЦипантендпоинт
+title: тип ресурса participantEndpoint
+description: Тип participantEndpoint
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0002659ac32eaa1c76ad6dfecefd2a1f59c070e9
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: d83690c1209d845f00dc902170eb547c567d6ec0cc654d6c9e9c3778da0fc275
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223734"
 ---
-# <a name="participantendpoint-resource-type"></a>Тип ресурса ПартиЦипантендпоинт
+# <a name="participantendpoint-resource-type"></a>тип ресурса participantEndpoint
 
 Пространство имен: microsoft.graph.callRecords
 
-Представляет конечную точку участника в вызове. Конечная точка представляет пользователя или подобную пользователю сущность. Наследуется от типа [конечной точки](callrecords-endpoint.md) .
+Представляет конечную точку участника в вызове. Конечная точка представляет объект, похожий на пользователя. Наследуется от [конечного](callrecords-endpoint.md) типа.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|userAgent|[Microsoft. Graph. Каллрекордс. userAgent](callrecords-useragent.md)|Пользователь — агент, указанный этой конечной точкой.|
-|feedback|[Microsoft. Graph. Каллрекордс. Усерфидбакк](callrecords-userfeedback.md)|Обратная связь, предоставленная пользователем данной конечной точки относительно качества сеанса.|
-|хищения|[identitySet](identityset.md)|Удостоверение, связанное с конечной точкой.|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|Пользователь-агент, о чем сообщает эта конечная точка.|
+|feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|Отзывы, предоставленные пользователем этой конечной точки, о качестве сеанса.|
+|identity|[identitySet](identityset.md)|Удостоверение, связанное с конечной точкой.|
 
 ## <a name="json-representation"></a>Представление JSON
 

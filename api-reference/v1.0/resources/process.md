@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d29a09b2d593fcf1c4a3cb5bee4230e57e9836d2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 5fa15502d380d651128f55e6854bfe3592a290d1fb413b591a3f8f2571dca19f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54222716"
 ---
 # <a name="process-resource-type"></a>тип ресурса процесса
 
@@ -22,7 +22,7 @@ ms.locfileid: "50720732"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|accountName|String|Идентификатор учетной записи пользователя (контекст учетной записи пользователя, в котором был указан процесс), например, Имя учетной записи, SID и так далее.|
+|имя учетной записи|String|Идентификатор учетной записи пользователя (контекст учетной записи пользователя, в котором был указан процесс), например, Имя учетной записи, SID и так далее.|
 |commandLine|String|Командная линия полного призыва процесса, включая все параметры.|
 |createdDateTime|DateTimeOffset|Время начала процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хеши файлов (криптографические и чувствительные к расположению).|
