@@ -4,12 +4,12 @@ description: Описывает доступные SDKs, поддерживае�
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 764bfe113c0bd66170eec1e21c2a1abddaf8b28e
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 4ed94a23159dea8b11fbae94e29777ce4f21f2d7c13e2c1755d18a4509d3f46d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174698"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Обзор Graph SDKs
 

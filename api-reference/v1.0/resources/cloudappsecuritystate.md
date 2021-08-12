@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Клаудаппсекуритистате
-description: Содержит сведения о состоянии облачного приложения (Дестинатионсервиценаме, Дестинатионсервицеип).
+title: тип ресурсов cloudAppSecurityState
+description: Содержит сведения о облачном приложении (destinationServiceName, destinationServiceIp).
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0f987f64960290c4104ed1c0746ce38591cb3ab6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9f8d3cda7fae6ae68cd43db0bfa69d6ac7016312dc4749ae640e9988168d584
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124537"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a>Тип ресурса Клаудаппсекуритистате
+# <a name="cloudappsecuritystate-resource-type"></a>тип ресурсов cloudAppSecurityState
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о состоянии облачного приложения (Дестинатионсервиценаме, Дестинатионсервицеип).
+Содержит сведения о облачном приложении (destinationServiceName, destinationServiceIp).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|дестинатионсервицеип|Строка|Конечный IP-адрес подключения к облачному приложению или службе.|
-|дестинатионсервиценаме|Строка|Имя облачного приложения или службы (например, "Salesforce", "DropBox" и т. д.).|
-|riskScore|Строка|Полученный поставщиком и вычисляемый показатель риска облачного приложения или службы. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
+|destinationServiceIp|String|IP-адрес адреса подключения к облачному приложению/службе.|
+|destinationServiceName|String|Имя облачного приложения/службы (например, "Salesforce", "DropBox" и т.д.).|
+|riskScore|String|Оценка риска, генерируемая поставщиком и рассчитанная для облачного приложения/службы. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
 
 ## <a name="json-representation"></a>Представление JSON
 

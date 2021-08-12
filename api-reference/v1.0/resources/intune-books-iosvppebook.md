@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 540b8d2277317cb18d1ac42e76da2fa80b8e243c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2809e9f61bf81a98d8b6c9db8baa53cb26b9c42365cc9948a75b9855f23582a1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180749"
 ---
 # <a name="iosvppebook-resource-type"></a>Тип ресурса iosVppEBook
 

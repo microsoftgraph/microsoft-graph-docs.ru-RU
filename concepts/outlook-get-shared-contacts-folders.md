@@ -4,12 +4,12 @@ description: Пользователи Outlook могут делиться пап
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 86533a28c0af206458b63fd19f32f01c5b68710b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 50b9e819e3d95b799b55a0b7898aec01e9870c65f9a6d848b2dfc9f5e7055bed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138302"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>Получение контактов Outlook из общей папки
 

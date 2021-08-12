@@ -4,12 +4,12 @@ description: Советы, помогающие воспользоваться �
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: dbc0b7776d769ee694d9022b1e7f5b838f014da6
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: fbb1feaa3710961991e34fa983ffe05af3dc2df8aa53fbded20532cbcd7f4cbf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141182"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Подключение к данным Microsoft Graph: часто задаваемые вопросы
 

@@ -4,12 +4,12 @@ description: 'Ежедневно людям приходится взаимод�
 localization_priority: Normal
 author: davidmu1
 ms.prod: cross-device-experiences
-ms.openlocfilehash: f520c90eda15c9e571deb34865fdf81dd4954d50
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 09714f33d9260d5af0f3268482f860d617aa67185e301656cb61e0564b9d2a74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237560"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>API ретрансляции устройств в Microsoft Graph (ознакомительная версия)
 

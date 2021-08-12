@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8636552fa99b3389f35f22e2edccc5d13cb06482
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d92a342ff1b275f0df7bc8d56cd8920466b3c5c681c65ade65d4c6736fc43b9d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211816"
 ---
 # <a name="verifieddomain-resource-type"></a>Тип ресурса verifiedDomain
 

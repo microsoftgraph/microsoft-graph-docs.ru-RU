@@ -3,16 +3,16 @@ title: Шаблоны в microsoft Graph набор средств
 description: Используйте настраиваемые шаблоны для изменения контента компонента.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 1db3f315cd89932481a0a2325eecae19592d9276
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cf8297e5e0f70ee1014c11a3ecbfc10ed5cc0e0aa1e15c7f2bb7239545c9105e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231378"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Шаблоны в microsoft Graph набор средств
 
-Большинство компонентов Microsoft Graph набор средств поддерживают использование настраиваемого шаблона для изменения содержимого компонента.
+Большинство компонентов Graph набор средств Майкрософт поддерживают использование настраиваемого шаблона для изменения содержимого компонента.
 
 Все веб-компоненты поддерживают шаблоны на основе `<template>` элемента. Например, чтобы переопредить шаблон компонента, добавьте элемент `<template>` внутри компонента.
 

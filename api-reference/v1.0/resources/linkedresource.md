@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса Линкедресаурце
-description: Представляет источник Тодотаск
+title: тип ресурса linkedResource
+description: Представляет источник todoTask
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 70303742db1dabb866585be7099cb222f8a428bd
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 8164e0436cdedee66c59fbc83b7f4fa7d594a4623c2a62bcab6d19cca4c52d28
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237630"
 ---
-# <a name="linkedresource-resource-type"></a>Тип ресурса Линкедресаурце
+# <a name="linkedresource-resource-type"></a>тип ресурса linkedResource
 
 Пространство имен: microsoft.graph
 
 
-Представляет элемент партнерского приложения, связанный с [тодотаск](./todotask.md). Примером является сообщение электронной почты, из которого была создана задача. Объект **линкедресаурце** хранит сведения об этом исходном приложении и позволяет вернуться обратно к связанному элементу. **Линкедресаурце** можно просмотреть в представлении "сведения о задаче", как показано ниже.
+Представляет элемент в партнерском приложении, связанном с [todoTask.](./todotask.md) В качестве примера можно привести сообщение электронной почты, из которой была создана задача. Объект **linkedResource хранит** сведения об этом источнике приложения и позволяет вернуться к связанному элементу. Вы можете увидеть **linkedResource в** представлении сведений о задачах, как показано.
 
-![Связанный ресурс в области сведений о задаче](/graph/images/todo-linkedresource-taskdetail.png)
+![Связанный ресурс в области сведений о задачах](/graph/images/todo-linkedresource-taskdetail.png)
 
-Некоторые объекты **линкедресаурце** не связаны ни с одним из веб-URL-адресов, в этом случае свойство **webUrl** не является обязательным. Например, связанный элемент может относиться к пользовательскому бизнес-приложению или собственному приложению платформы, например к приложению SMS на мобильном телефоне. Ниже показано, как отображается **линкедресаурце** с URL-адресом и без него.
+Некоторые **объекты linkedResource** не связаны с веб-URL-адресами, в этом случае свойство **webUrl** не требуется. Например, связанный элемент может быть из настраиваемого бизнес-приложения или приложения-платформы, например sms-приложения на мобильном телефоне. Вот как **появляется linkedResource с** URL-адресом и без него.
 
 ![Связанный ресурс с URL-адресом и без него](/graph/images/todo-linkedresource.png)
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список Линкедресаурцес](../api/todotask-list-linkedresources.md)|Коллекция [линкедресаурце](../resources/linkedresource.md)|Получение Линкедресаурцес из свойства навигации Линкедресаурцес.|
-|[Создание Линкедресаурце](../api/todotask-post-linkedresources.md)|[линкедресаурце](../resources/linkedresource.md)|Создание нового объекта Линкедресаурцес.|
-|[Получение Линкедресаурце](../api/linkedresource-get.md)|[линкедресаурце](../resources/linkedresource.md)|Чтение свойств и связей объекта [линкедресаурце](../resources/linkedresource.md) .|
-|[Обновление Линкедресаурце](../api/linkedresource-update.md)|[линкедресаурце](../resources/linkedresource.md)|Обновление свойств объекта [линкедресаурце](../resources/linkedresource.md) .|
-|[Удаление Линкедресаурце](../api/linkedresource-delete.md)|Нет|Удаляет объект [линкедресаурце](../resources/linkedresource.md) .|
+|[Список linkedResources](../api/todotask-list-linkedresources.md)|[коллекция linkedResource](../resources/linkedresource.md)|Получите linkedResources из свойства навигации linkedResources.|
+|[Создание linkedResource](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Создайте новый объект linkedResources.|
+|[Получить linkedResource](../api/linkedresource-get.md)|[linkedResource](../resources/linkedresource.md)|Ознакомьтесь с свойствами и отношениями объекта [linkedResource.](../resources/linkedresource.md)|
+|[Обновление linkedResource](../api/linkedresource-update.md)|[linkedResource](../resources/linkedresource.md)|Обновление свойств объекта [linkedResource.](../resources/linkedresource.md)|
+|[Удаление linkedResource](../api/linkedresource-delete.md)|Нет|Удаляет объект [linkedResource.](../resources/linkedresource.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicationName|String|Поле, указывающее имя приложения источника, отправляющего **линкедресаурце** .|
-|displayName|String|Поле, указывающее название **линкедресаурце** .|
-|externalId|String|Идентификатор объекта, связанного с этой задачей в сторонней системе или партнерской системе.|
-|id|String|Созданный сервером идентификатор **линкедресаурце** . Наследуется от [объекта Entity](../resources/entity.md).|
-|webUrl|String|Глубокая ссылка на **линкедресаурце** .|
+|applicationName|String|Поле, указывающее имя приложения источника, отправляющее **linkedResource.**|
+|displayName|String|Поле, указывающее название **linkedResource**.|
+|externalId|String|Id объекта, связанного с этой задачей в стороной или партнерской системе.|
+|id|String|Созданный сервером ID для **linkedResource**. Наследуется от [сущности](../resources/entity.md).|
+|webUrl|String|Глубокая ссылка на **linkedResource**.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

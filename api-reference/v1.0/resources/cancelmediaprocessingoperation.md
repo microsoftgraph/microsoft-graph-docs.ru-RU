@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Канцелмедиапроцессингоператион
-description: Этот тип ресурса используется для описания формата ответа операции отмены обработки мультимедиа.
+title: cancelMediaProcessingOperation type
+description: Этот тип ресурса используется для описания формата ответа операции обработки мультимедиа отмены.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8edbc7dcc770429fd4c1ccaf7bc3374d973cd2ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6896a7a4d08aea0c4d394bfbaef8a54bd4c789b310f0079dbbf08daac99606d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235690"
 ---
-# <a name="cancelmediaprocessingoperation-resource-type"></a>Тип ресурса Канцелмедиапроцессингоператион
+# <a name="cancelmediaprocessingoperation-resource-type"></a>Тип ресурса CancelMediaProcessingOperation
 
 Пространство имен: microsoft.graph
 
@@ -22,9 +22,9 @@ ms.locfileid: "48069220"
 
 | Свойство      | Тип                        | Описание                                                                     |
 | :------------ | :-------------------------- | :------------------------------------------------------------------------------ |
-| ко           | Boolean                     | Указывает, следует ли остановить все операции или текущие.                            |
-| Контекст | Строка                      | Контекст клиента.                                                             |
-| id            | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                             |
+| все           | Логическое                     | Указывает, следует ли останавливать все операции или ток.                            |
+| clientContext | String                      | Клиентский контекст.                                                             |
+| id            | String                      | ID операции сервера. Только для чтения.                                             |
 | resultInfo    | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                             |
 | status        | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0946f2a8d38044e6dc02bb4ae06dd83c7fa67dad
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9c176e509b97aa9896c833483a086c52253e9e4293ec98845488c8918fbf31aa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252461"
 ---
 # <a name="create-sharedpcconfiguration"></a>Create sharedPCConfiguration
 

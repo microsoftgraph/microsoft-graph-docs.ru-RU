@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс ItemReference предоставляет сведения, необходимые для обращения к ресурсу DriveItem через API.
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: dd24f0d1fc0a5f5db576f5eea89b8205ff55b2b7
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: bbd491fb47404ad0ae58f3a0e10964e90a1c710198733ac6994db15848f9b00b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141534"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
@@ -53,7 +53,7 @@ ms.locfileid: "49714258"
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
 | shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
-| siteId        | String            | Для OneDrive для бизнеса и SharePoint это свойство представляет собой ИД сайта, который содержит родительную библиотеку документов ресурса driveItem. Это значение такое же, как свойство id этого [ресурса][] сайта. Это [непрозрачной строки, которая состоит из трех идентификаторов](/graph/api/resources/site#id-property) сайта. <br>В OneDrive это свойство не заполняется.
+| siteId        | String            | Для OneDrive для бизнеса и SharePoint это свойство представляет ID сайта, который содержит родительную библиотеку документов ресурса driveItem. Это значение такое же, как и свойство id этого [ресурса][] сайта. Это [непрозрачной строки, которая состоит из трех идентификаторов](/graph/api/resources/site#id-property) сайта. <br>Для OneDrive это свойство не заполнено.
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md

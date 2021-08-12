@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Оператионеррор
-description: Описание ошибок в Теамсасинкоператион.
+title: тип ресурса operationError
+description: Описывает ошибки в teamsAsyncOperation.
 localization_priority: Normal
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 014112d78b19ee08836139dc39d8d99b8459027b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 395b10dbfd3617cfe891854897c9d99be64ad4b76bc05776b4eab77d1847a44f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223272"
 ---
-# <a name="operationerror-resource-type"></a>Тип ресурса Оператионеррор
+# <a name="operationerror-resource-type"></a>тип ресурса operationError
 
 Пространство имен: microsoft.graph
 
 
 
-Описание ошибок в [теамсасинкоператион](teamsasyncoperation.md).
+Описывает ошибки [в teamsAsyncOperation](teamsasyncoperation.md).
 
-## <a name="operationerror-properties"></a>Свойства Оператионеррор
+## <a name="operationerror-properties"></a>operationError Properties
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |code|string (только для чтения)|Код ошибки операции.|

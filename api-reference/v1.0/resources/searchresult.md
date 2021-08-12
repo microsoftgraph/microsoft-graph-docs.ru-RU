@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс SearchResult указывает, что элемент представляет собой отклик на поисковый запрос.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aac8ee9c4dea8ba7744e5c86d865b4d2f75a37d8
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 5b07e58e7ac9e568e6f1edad75be254b02dbc405fe2520f171abbf0af90365b9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240103"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180469"
 ---
 # <a name="searchresult-resource-type"></a>Тип ресурса SearchResult
 

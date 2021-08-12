@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс siteCollection предоставляет больше сведений о семействе веб-сайтов.
 doc_type: resourcePageType
-ms.openlocfilehash: 1e80ad630fd1ac823ce76c44c3b789b0986d031f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 196958674462095b8b47f82d07ac4fa7a885243b240473444c30b24014578c18
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251745"
 ---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
 
@@ -45,8 +45,8 @@ ms.locfileid: "50239438"
 | Имя свойства        | Тип     | Описание
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | строка   | Имя узла для семейства веб-сайтов. Только для чтения.
-| **dataLocationCode** | string   | Код географического региона для местоположения этого веб-сайта. Только для чтения.
-| **root**             | [root][] | Если указан, означает, что это корневое коллекцию веб-сайтов в SharePoint. Только для чтения.
+| **dataLocationCode** | Строка   | Код географического региона для того, где находится эта коллекция сайтов. Только для чтения.
+| **root**             | [root][] | При этом указывается, что это корневой набор сайтов в SharePoint. Только для чтения.
 
 [root]: root.md
 
@@ -57,6 +57,6 @@ ms.locfileid: "50239438"
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Facets/SiteCollection"
+  "tocPath&quot;: &quot;Facets/SiteCollection"
 }-->
 

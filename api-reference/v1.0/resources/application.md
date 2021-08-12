@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b5ddbe242d130815f1f30009ac0687fd7bc62142
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 26a5394b934a997456f0ceecd1d0c00d19eba6a846a773f12c74198079bdc68e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53429985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150040"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 

@@ -5,12 +5,12 @@ title: тип ресурса printDocumentUploadProperties
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-printing
-ms.openlocfilehash: e877901b842670e09cb283b40613a1185aabaafe
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: df563026b92905b075c1b26a9f22929bfe7dd6afca99963306dffc24b12982a6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149746"
 ---
 # <a name="printdocumentuploadproperties-resource-type"></a>тип ресурса printDocumentUploadProperties
 
@@ -24,10 +24,10 @@ ms.locfileid: "50517945"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |contentType|String|Тип контента документа (MIME).|
-|documentName|Строка|Имя документа.|
+|documentName|String|Имя документа.|
 |size|Int64|Размер документа в bytes.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

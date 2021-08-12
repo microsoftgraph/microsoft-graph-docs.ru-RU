@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Сеарчреспонсе
-description: Описание Сеарчреспонсе
+title: тип ресурса searchResponse
+description: Описание searchResponse
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 8582da8daf604952807e05376d98dabf16267052
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: e071126b95cf0f82143c22f4523adcad640cb7df66718858a722e9f120177edc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377780"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246565"
 ---
-# <a name="searchresponse-resource-type"></a>Тип ресурса Сеарчреспонсе
+# <a name="searchresponse-resource-type"></a>тип ресурса searchResponse
 
 Пространство имен: microsoft.graph
 
-Представляет результаты из поискового запроса и термины, используемые для запроса. 
+Представляет результаты запроса поиска и термины, используемые для запроса. 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|хитсконтаинерс|Коллекция [сеарчхитсконтаинер](searchhitscontainer.md)|Коллекция результатов поиска.|
-|searchTerms|Коллекция String|Содержит условия поиска, отправленные в исходном поисковом запросе.|
+|hitsContainers|[коллекция searchHitsContainer](searchhitscontainer.md)|Коллекция результатов поиска.|
+|searchTerms|Коллекция String|Содержит термины поиска, отправленные в исходном запросе поиска.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

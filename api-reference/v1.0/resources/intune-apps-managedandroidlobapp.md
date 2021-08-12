@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c312844ff33e33f3c2a5185d236ec1e6fc57e576
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3b95f3749798af6b6e99b5a4867d573e6cbaef83818b9f4dd6c9f8c0d50a28be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52756059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229260"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp resource type
 
@@ -59,7 +59,7 @@ ms.locfileid: "52756059"
 |versionName|String|Имя версии управляемого бизнес-приложения для Android.|
 |versionCode|String|Код версии управляемого бизнес-приложения для Android.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

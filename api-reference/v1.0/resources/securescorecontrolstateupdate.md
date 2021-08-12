@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Секурескореконтролстатеупдате
-description: Этот ресурс содержит историю состояний элементов управления, обновленных пользователем (состояния элементов управления включают значение по умолчанию, игнорируется, ThirdParty, проверено).
+title: secureScoreControlStateUpdate type
+description: Этот ресурс содержит историю состояния управления, обновляемого пользователем (состояния управления включают Default, Ignored, ThirdParty, Reviewed).
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8f57c501ed2a4a47dbba163270feca8917fcce27
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3268b5f537b8538173031b3367ff0e13d2873a906dfe01a5b6d6562070812d56
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146365"
 ---
-#  <a name="securescorecontrolstateupdate-resource-type"></a>Тип ресурса Секурескореконтролстатеупдате
+#  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate type
 
 Пространство имен: microsoft.graph
 
-Содержит историю состояний элементов управления, обновленных пользователем (состояния элементов управления включают значение по умолчанию, игнорируется, ThirdParty, проверено).
+Содержит историю состояния управления, обновляемого пользователем (состояния управления включают Default, Ignored, ThirdParty, Reviewed).
 
 ## <a name="properties"></a>Свойства
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|assignedTo|String|Назначает элемент управления пользователю, который будет выполнять действие. |
-|comment|String|Предоставляет необязательный комментарий об элементе управления. |
-|state|String|Состояние элемента управления, которое можно изменить с помощью команды PATCH (например, игнорируется, thirdParty). |
-|упдатедби|String|Идентификатор пользователя, который обновил состояние клиента. |
-|упдатеддатетиме|DateTimeOffset|Время обновления состояния элемента управления. |
+|assignedTo|String|Назначает управление пользователю, который будет принимать действие. |
+|comment|String|Предоставляет необязательный комментарий по поводу управления. |
+|state|String|Состояние управления, которое можно изменить с помощью команды PATCH (например, игнорируется, thirdParty). |
+|updatedBy|String|ID пользователя, обновившего состояние клиента. |
+|updatedDateTime|DateTimeOffset|Время обновления состояния управления. |
 
 ## <a name="json-representation"></a>Представление JSON
  Ниже указано представление ресурса в формате JSON.

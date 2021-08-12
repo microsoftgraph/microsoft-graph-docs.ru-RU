@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Воркбукаппликатион
+title: тип ресурса workbookApplication
 description: Представляет приложение Excel, которое управляет книгой.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 36626698d55fe8dc813d13d66a7fa453f8e2beae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8cb375493b018d2d6f277f2cbc7944e9d662f018e301eec551bd3b5ab648368
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251696"
 ---
-# <a name="workbookapplication-resource-type"></a>Тип ресурса Воркбукаппликатион
+# <a name="workbookapplication-resource-type"></a>тип ресурса workbookApplication
 
 Пространство имен: microsoft.graph
 
@@ -23,13 +23,13 @@ ms.locfileid: "48015164"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукаппликатион](../api/workbookapplication-get.md) | [воркбукаппликатион](workbookapplication.md) |Чтение свойств и связей объекта Воркбукаппликатион.|
+|[Get workbookApplication](../api/workbookapplication-get.md) | [workbookApplication](workbookapplication.md) |Чтение свойств и связей объекта workbookApplication.|
 |[Calculate](../api/workbookapplication-calculate.md)|Нет|Пересчитывает данные во всех открытых в текущий момент книгах Excel.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|калкулатионмоде|string|Возвращает режим вычисления, который используется в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`.|
+|calculationMode|string|Возвращает режим вычисления, который используется в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

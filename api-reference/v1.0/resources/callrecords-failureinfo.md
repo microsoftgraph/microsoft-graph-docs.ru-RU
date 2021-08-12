@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Фаилуреинфо
-description: Тип Фаилуреинфо
+title: тип ресурса failureInfo
+description: Тип failureInfo
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f32d0b29c62ac5f3fd9b022c550d9715756adca3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: cabfe56215863385a55ded34914f78fdd856a0d7f341ac4cde1220f37cab77fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160088"
 ---
-# <a name="failureinfo-resource-type"></a>Тип ресурса Фаилуреинфо
+# <a name="failureinfo-resource-type"></a>тип ресурса failureInfo
 
 Пространство имен: microsoft.graph.callRecords
 
-Представляет сведения о причине сбоя вызова или части вызова.
+Представляет сведения о том, почему не удалось вызвать или часть вызова.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|reason|String|Классификация причин сбоя вызова или части вызова.|
-|разместить|Microsoft. Graph. Каллрекордс. Фаилурестаже|Рабочая область при возникновении ошибки. Возможные значения: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
+|reason|String|Классификация причин сбой вызова или части вызова.|
+|этап|microsoft.graph.callRecords.failureStage|Этап, на который произошел сбой. Возможные значения: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

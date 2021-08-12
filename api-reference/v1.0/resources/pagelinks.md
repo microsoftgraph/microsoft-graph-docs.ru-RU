@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Пажелинкс
-description: Ссылки для открытия страницы OneNote.
+title: тип ресурса pageLinks
+description: Ссылки для открытия OneNote страницы.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 33f5aa2c5953bc9e143d08d91047919cf73599b6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c8b588a84078b1d7a8f438d54e80e093e4f85ead342297460a8d9533ee88f44e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180497"
 ---
-# <a name="pagelinks-resource-type"></a>Тип ресурса Пажелинкс
+# <a name="pagelinks-resource-type"></a>тип ресурса pageLinks
 
 Пространство имен: microsoft.graph
 
-Ссылки для открытия страницы OneNote.
+Ссылки для открытия OneNote страницы.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,7 +40,7 @@ ms.locfileid: "48094213"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Открывает страницу в собственном клиенте OneNote, если она установлена.|
+|oneNoteClientUrl|[externalLink](externallink.md)|Открывает страницу в OneNote клиенте, если она установлена.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Открывает страницу в OneNote в Интернете.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

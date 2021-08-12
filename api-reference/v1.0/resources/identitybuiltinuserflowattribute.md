@@ -1,22 +1,22 @@
 ---
 title: identityBuiltInUserFlowAttribute type
-description: Представляет встроенный атрибут потока пользователей в клиентах Azure Active Directory, который можно использовать в потоке пользователей для самостоятельной регистрации.
+description: Представляет встроенный атрибут потока пользователей в Azure Active Directory клиентах, который можно использовать в потоке пользователей самостоятельной регистрации.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c549be6035b26d6e2d7faedafb6848240a9303dc
-ms.sourcegitcommit: d033e7de12bccf92efcbe40c7b671e419a3e5b94
+ms.openlocfilehash: fe1bf972ecef5275492661562116f6ae5bcef73188c9aba87ca7146d8d144625
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51883346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126650"
 ---
 # <a name="identitybuiltinuserflowattribute-resource-type"></a>identityBuiltInUserFlowAttribute type
 
 Пространство имен: microsoft.graph
 
-Представляет встроенный атрибут потока пользователей в клиентах Azure Active Directory, который можно использовать в потоке пользователей для самостоятельной регистрации. Эти атрибуты не могут быть изменены и являются только для чтения.
+Представляет встроенный атрибут потока пользователей в Azure Active Directory клиентах, который можно использовать в потоке пользователей самостоятельной регистрации. Эти атрибуты не могут быть изменены и являются только для чтения.
 
 Наследует [от identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 

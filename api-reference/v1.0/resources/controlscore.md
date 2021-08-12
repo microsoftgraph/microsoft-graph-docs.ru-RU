@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Контролскоре
-description: Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.
+title: тип ресурса controlScore
+description: Этот ресурс содержит оценку клиента и описание для отдельного управления.
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9e4470d1ce22f5ffbf3c805adc5328398d57d9fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: be1da81848b5669f66735e4288dccd09ccc30ac0384cc66897fb0a501907f031
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202513"
 ---
-#  <a name="controlscore-resource-type"></a>Тип ресурса Контролскоре
+#  <a name="controlscore-resource-type"></a>тип ресурса controlScore
 
 Пространство имен: microsoft.graph
 
-Содержит оценку и описание клиента для отдельного элемента управления.
+Содержит оценку клиента и описание для отдельного управления.
 
 ## <a name="properties"></a>Свойства
 
 |Имя |Тип |Описание |
 |:--|:--|:--|
-|контролнаме|String|Уникальное имя элемента управления.|
-|коэффициент|Двойное с плавающей точкой|Оценка, полученная клиентом для элемента управления (она варьируется по дням, в зависимости от операций клиента в элементе управления).|
-|контролкатегори|String|Категория действий управления (идентификация, данные, устройство, приложения, инфраструктура).|
-|description|String| Описание элемента управления.|
+|controlName|String|Управление уникальным именем.|
+|оценка|Двойное с плавающей точкой|Клиент достиг показателей для управления (он меняется день ото дня в зависимости от операций клиента на контроле).|
+|controlCategory|String|Категория действия управления (Identity, Data, Device, Apps, Infrastructure).|
+|description|String| Описание управления.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса modifiedProperty
-description: Указывает все измененные свойства ресурса Azure AD, включая старые и новые значения.
+title: тип ресурса modifiedProperty
+description: Указывает все свойства измененного ресурса Azure AD, включая старые и новые значения.
 localization_priority: Normal
 author: dhanyahk
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4e34501f5011310eb7ade73d1c5d938cb58e65cc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9b1c520ac4be4e0c0957fe2b9f4f833f4065a19a2ed76ecd3166a46f7e50de6c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192210"
 ---
-# <a name="modifiedproperty-resource-type"></a>Тип ресурса modifiedProperty
+# <a name="modifiedproperty-resource-type"></a>тип ресурса modifiedProperty
 
 Пространство имен: microsoft.graph
 
-Указывает все измененные свойства ресурса Azure AD, включая старые и новые значения.
+Указывает все свойства измененного ресурса Azure AD, включая старые и новые значения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Указывает имя свойства целевого атрибута, который был изменен.|
+|displayName|String|Указывает имя свойства измененного целевого атрибута.|
 |newValue|String|Указывает обновленное значение для правильности.|
-|oldValue|String|Указывает предыдущее значение свойства (перед обновлением).|
+|oldValue|String|Указывает предыдущее значение (перед обновлением) для свойства.|
 
 ## <a name="json-representation"></a>Представление JSON
 

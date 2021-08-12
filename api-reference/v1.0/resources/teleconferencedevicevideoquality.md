@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса Телеконференцедевицевидеокуалити
-description: Представляет данные о качестве видео для видеоконференций для видеоконференций.
+title: тип ресурса teleconferenceDeviceVideoQuality
+description: Представляет данные о качестве видеоконференции устройства видео.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8f892fe059828cd7fd71ec19914b5b5db0b9e3cf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30c9c8f383a5d4b41b5c2355a5b2da910d560282aa4e450fa462313d4cb65b34
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231427"
 ---
-# <a name="teleconferencedevicevideoquality-resource-type"></a>Тип ресурса Телеконференцедевицевидеокуалити
+# <a name="teleconferencedevicevideoquality-resource-type"></a>тип ресурса teleconferenceDeviceVideoQuality
 
 Пространство имен: microsoft.graph
 
-Представляет данные о качестве видео для видеоконференций для видеоконференций.
+Представляет данные о качестве видеоконференции устройства видео.
 
 ## <a name="properties"></a>Свойства
 
-Ресурс **телеконференцедевицевидеокуалити** наследует свойства от [телеконференцедевицемедиакуалити](teleconferencedevicemediaquality.md)и включает следующие дополнительные свойства.
+Ресурс **teleconferenceDeviceVideoQuality** наследует свойства [от teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)и включает следующие дополнительные свойства.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|аверажеинбаундбитрате|Двойное с плавающей точкой|Средняя скорость потока для входящего потока в секунду.|
-|аверажеинбаундфрамерате|Двойное с плавающей точкой|Средняя частота входящего потока видеокадров в секунду.|
-|аверажеаутбаундбитрате|Двойное с плавающей точкой|Средняя скорость передачи данных по исходящему потоку в секунду.|
-|аверажеаутбаундфрамерате|Двойное с плавающей точкой|Средняя частота исходящих покадровых кадров в секунду.|
+|averageInboundBitRate|Двойное с плавающей точкой|Средняя скорость бита видеопотока входящий поток в секунду.|
+|averageInboundFrameRate|Двойное с плавающей точкой|Средняя частота кадров видеопотока в потоке в секунду.|
+|averageOutboundBitRate|Двойное с плавающей точкой|Средняя скорость потока исходящие видео в секунду.|
+|averageOutboundFrameRate|Двойное с плавающей точкой|Средняя частота кадров видеопотока исходящие потоки в секунду.|
 
 ### <a name="derived-types"></a>Производные типы
 
 | Тип                                                 | Описание                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [телеконференцедевицескриншарингкуалити](teleconferencedevicescreensharingquality.md)    | Данные о качестве общего доступа устройства для видеоконференций для видеоконференций. |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Данные качества видеоконференции устройства для обмена экранами. |
 
 ## <a name="json-representation"></a>Представление JSON
 

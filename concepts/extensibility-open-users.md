@@ -4,12 +4,12 @@ description: 'В этой статье рассматривается приме
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 81c1d77ecc2e57dec9ae18bf298d7390b71651dc
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f64269b32074909d4f03c3e060de9f00001b57e8e94ff4052e44a40221a15b14
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249071"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 В этой статье рассматривается пример использования *открытых расширений*. 
@@ -116,7 +116,7 @@ HTTP/1.1 204 No content
 DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 ```
 HTTP/1.1 204 No content
 ```

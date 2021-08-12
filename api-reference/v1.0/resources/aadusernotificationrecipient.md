@@ -1,22 +1,22 @@
 ---
 title: тип ресурса aadUserNotificationRecipient
-description: Представляет получателя пользователя Azure Active Directory (Azure AD) с уведомлением, отправленным в канале действий Microsoft Teams.
+description: Представляет получателя Azure Active Directory пользователя Azure AD, отправимого в канале Microsoft Teams действий.
 author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dadb08dad99f6c4fd6857e8e60f457ea51811de1
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: bb5d95c36fb362af6d4f66c1e18a4dcb768c1b204a4e2f70f24f5afe80545483
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51474147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230853"
 ---
 # <a name="aadusernotificationrecipient-resource-type"></a>тип ресурса aadUserNotificationRecipient
 
 Пространство имен: microsoft.graph
 
-Представляет получателя пользователя Azure Active Directory (Azure AD) с уведомлением, отправленным в канале действий Microsoft Teams.
+Представляет получателя Azure Active Directory пользователя Azure AD, отправимого в канале Microsoft Teams действий.
 
 Наследует [от teamworkNotificationRecipient](teamworknotificationrecipient.md).
 

@@ -4,12 +4,12 @@ description: Описано, как использовать подключен�
 author: fercobo-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: c29c088ac4efc7d286e8d10b92edd5bcbac373a6
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: c6975eb7a3cac5a6690ac6071b8c686de3a2c4861d7fc82ed4b4bcbbfc3796fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249078"
 ---
 # <a name="user-selection-and-filtering-capabilities-in-microsoft-graph-data-connect"></a>Возможности выбора и фильтрации пользователей, поддерживаемые подключением к данным Microsoft Graph
 

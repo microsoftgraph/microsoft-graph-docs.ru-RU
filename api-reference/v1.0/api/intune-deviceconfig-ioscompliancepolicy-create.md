@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fccf80d259562c6064a8307c601d477dfc8c3693
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bce022f06aef47e539841c685d89dd4f82231be2897b92c461cb8bb44c8428be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197389"
 ---
 # <a name="create-ioscompliancepolicy"></a>Create iosCompliancePolicy
 

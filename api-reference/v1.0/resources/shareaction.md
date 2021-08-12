@@ -1,24 +1,24 @@
 ---
 author: daspek
-title: Тип ресурса shareAction
-description: Объект shareAction предоставляет сведения о том, кому был общим элемент в действии общего доступа.
+title: тип ресурса shareAction
+description: Объект shareAction предоставляет сведения о том, кому элемент был общим в действии общего обмена.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 81292f302667123c0d22f78b655e4ef555329e52
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b9d252df884e90d7351edb9544a354d88fbc78baebcc5926686b016c38e58f37
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251780"
 ---
-# <a name="shareaction-resource-type"></a>Тип ресурса shareAction
+# <a name="shareaction-resource-type"></a>тип ресурса shareAction
 
 Пространство имен: microsoft.graph
 
-Ресурс **shareAction** предоставляет сведения о [действии, которое][activity] предоставляет общий доступ к элементу.
+Ресурс **shareAction** предоставляет сведения о [действии, которое][activity] разделяет элемент.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
@@ -35,7 +35,7 @@ ms.locfileid: "50238892"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.shareAction"
+  "@type&quot;: &quot;microsoft.graph.shareAction"
 }-->
 
 ```json

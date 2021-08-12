@@ -4,12 +4,12 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 13f0719a63cc604a8ffb9b77540e346837f1a031
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2decc60c3315ef6f324d35afce2ff10617c85e716ec7282215053c478ef729b3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225722"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -78,11 +78,11 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Пустая строка ("")                                        |
-| contentUrl | string      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопируйте URL-адрес и удалите "/Forms/AllItems.aspx" и все после этого. |
+| contentUrl | string      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопив URL-адрес и удалив "/Forms/AllItems.aspx" и все после этого. |
 | removeUrl  | строка      | NULL                                                     |
 | websiteUrl | string      | Null                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>Пример: создание настроенной вкладки библиотеки документов
+### <a name="example-create-a-configured-document-library-tab"></a>Пример: Создание настраиваемой вкладки библиотеки документов
 
 В следующем примере создается настроенная вкладка библиотеки документов.
 
@@ -103,12 +103,12 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## <a name="wiki-tabs"></a>Вкладки вики-сайта
 
 Для вкладок вики-сайта объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.wiki`.
-Вики-вкладки не поддерживают настройку с помощью Microsoft Graph.
-Обратите внимание, что настраивать не так много— на ненастроеной вкладке вики-сайта первый пользователь должен выбрать вкладку "Настройка", чтобы настроить ее. 
+Вики-вкладки не поддерживают конфигурацию с помощью Microsoft Graph.
+Обратите внимание, однако, что настраивать не так много — на неконфигурированной вкладке вики первый пользователь просто должен выбрать вкладку **Настройка,** чтобы настроить ее.
 
 ## <a name="planner-tabs"></a>Вкладки планировщика
 
-Для вкладок Планировщика это `teamsAppId` `com.microsoft.teamspace.tab.planner` . Конфигурация не поддерживается.
+Для вкладок Planner `teamsAppId` это `com.microsoft.teamspace.tab.planner` . Конфигурация не поддерживается.
 
 ## <a name="microsoft-stream-tabs"></a>Вкладки Microsoft Stream
 

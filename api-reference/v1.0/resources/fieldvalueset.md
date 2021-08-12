@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Представляет значения столбца в ресурсе listItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7986fdeb8ef3892ab149f14bc295929361d08971
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2f7fbac0b9b46c1c3c892425e2c6ed6461027a0c8fb2c2f06a37faae2b7d9da7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146883"
 ---
 # <a name="fieldvalueset-resource"></a>Ресурс fieldValueSet
 
