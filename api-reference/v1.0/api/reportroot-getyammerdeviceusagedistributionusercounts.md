@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: faf7cc6abacd14ee8740e67671ece6890862d353
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 48fd030627c065fadafe3ea98367adc3fcae39f858c27fd3dacee15172132ea1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983358"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208841"
 ---
 # <a name="reportroot-getyammerdeviceusagedistributionusercounts"></a>reportRoot: getYammerDeviceUsageDistributionUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983358"
 
 Получение сведений о количестве пользователей с разбивкой по типам устройств.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании устройств Yammer.](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов - Yammer устройства.](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -71,7 +71,7 @@ CSV-файл содержит столбцы со следующими заго�
 - iPhone
 - iPad
 - Other (другие)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

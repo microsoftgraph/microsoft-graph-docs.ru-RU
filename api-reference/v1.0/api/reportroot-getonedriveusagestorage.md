@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6508024d0f8dd9e9e56874c0c760acf8fe1b9fe4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ce91c95fc988d94cd6ebea6166efe3f9c329af747dc1985f50b7d3e6d94645ae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189956"
 ---
 # <a name="reportroot-getonedriveusagestorage"></a>reportRoot: getOneDriveUsageStorage
 
@@ -18,7 +18,7 @@ ms.locfileid: "49982686"
 
 Получение сведений о том, как меняется используемый объем хранилища в OneDrive для бизнеса.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании OneDrive для бизнеса.](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов - OneDrive для бизнеса использования.](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -68,7 +68,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Site Type" (Тип сайта);
 - "Storage Used (Byte)" (Используемый объем хранилища в байтах);
 - "Report Date" (Дата отчета);
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

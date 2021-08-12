@@ -4,12 +4,12 @@ description: Инструкции по обработке ошибок для Ex
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8589b819b2b14af073e9bfe409724473067fe054
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 30273bcc7e408f0a1e9deb465ecb7114456023e33ac685dfec54e96623401628
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225582"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Обработка ошибок для Excel API в Microsoft Graph
 

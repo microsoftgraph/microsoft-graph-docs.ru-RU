@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса workbookComment
+title: тип ресурса workbookComment
 description: Определение типа ресурса workbookComment
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 24cce9a392f9d5b9cfcdfc35e0c87ade16d760d7
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 8a81ac565e9dd65dfccfdef4eeb7eca86786eee4c225a8a1c91c4333e1c34573
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235235"
 ---
-# <a name="workbookcomment-resource-type"></a>Тип ресурса workbookComment
+# <a name="workbookcomment-resource-type"></a>тип ресурса workbookComment
 
 Пространство имен: microsoft.graph
 
@@ -22,8 +22,8 @@ ms.locfileid: "50158053"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список workbookComments](../api/workbook-list-comments.md) | [коллекция workbookComment](workbookComment.md) | Получите **коллекцию объектов workbookComment.** |
-| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Чтение свойств и связей объекта **workbookComment.** |
+| [Список книгКомменты](../api/workbook-list-comments.md) | [коллекция workbookComment](workbookComment.md) | Получите **коллекцию объектов workbookComment.** |
+| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Ознакомьтесь с свойствами и отношениями объекта **workbookComment.** |
 
 ## <a name="properties"></a>Свойства
 
@@ -37,7 +37,7 @@ ms.locfileid: "50158053"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|replies|[Коллекция workbookCommentReply](workbookcommentreply.md)| Только для чтения. Допускается значение null.|
+|ответы|[коллекция workbookCommentReply](workbookcommentreply.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

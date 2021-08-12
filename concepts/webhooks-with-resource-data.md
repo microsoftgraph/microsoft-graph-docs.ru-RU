@@ -4,12 +4,12 @@ description: Microsoft Graph использует механизм веб-пер
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 4da690a646c47ef857de860d36bde17a4ee26761
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 867d192a2516a82a7ca4fbe07b6a9628285f9c25bf89c2400862e33065a8546c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208638"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Настройка уведомлений об изменениях, включающих данные ресурсов
 
@@ -341,7 +341,7 @@ public class JwkKeyResolver extends SigningKeyResolverAdapter {
     - В качестве решения для создания и ротации сертификатов, а также безопасного управления ими используйте [Azure Key Vault](/azure/key-vault/key-vault-whatis). Убедитесь, что ключи удовлетворяют следующим условиям:
 
         - Ключ должен быть типа `RSA`
-        - Размер ключа должен находиться в диапазоне от 2048 до 4096 бит
+        - Размер ключа должен находиться в диапазоне от 2048 до 4096 бит
 
 2. Экспортируйте сертификат в формате X.509 с кодировкой base64 и **добавьте только открытый ключ**. 
 

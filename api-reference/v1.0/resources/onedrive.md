@@ -5,17 +5,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: 3931fb9a327f682765b3795adbe90c4398cb38d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1821fd27b0f0f860f21a99952989febff1df2bb591183199e8567330da05ae64
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141422"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Работа с файлами в Microsoft Graph
 
-С помощью Microsoft Graph можно создать приложение, которое подключается к файлам в OneDrive, OneDrive для бизнеса и библиотеках документов SharePoint.
-Используя Microsoft Graph, вы можете создавать различные решения для работы с файлами в Microsoft 365. Возможны варианты как для простого хранения документов пользователей, так и сложные сценарии совместного использования файлов.
+С помощью Microsoft Graph можно создать приложение, которое подключается к файлам в OneDrive, OneDrive для бизнеса и библиотеках документов SharePoint. Используя Microsoft Graph, вы можете создавать различные решения для работы с файлами в Microsoft 365. Возможны варианты как для простого хранения документов пользователей, так и сложные сценарии совместного использования файлов.
 
 В Microsoft Graph доступны два типа ресурсов для работы с файлами:
 
@@ -86,8 +85,7 @@ ms.locfileid: "48079111"
 
 ## <a name="drive-resource"></a>Ресурс Drive
 
-[Ресурс Drive](drive.md) — это объект верхнего уровня в хранилище OneDrive или библиотеке документов [SharePoint][] пользователя.
-Почти все операции с файлами начинаются с обращения к определенному ресурсу диска.
+[Ресурс Drive](drive.md) — это объект верхнего уровня в хранилище OneDrive или библиотеке документов [SharePoint][] пользователя. Почти все операции с файлами начинаются с обращения к определенному ресурсу диска.
 
 К ресурсу диска можно обратиться по уникальному идентификатору диска или с помощью диска по умолчанию для [User](user.md), [Group](group.md) или организации.
 

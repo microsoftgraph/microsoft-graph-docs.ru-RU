@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookCategory
-description: Представляет категорию, по которой пользователь может группировать такие элементы Outlook, как сообщения и события. Пользователь определяет категории в этом списке и может применить одну или несколько из этих пользовательских категорий.
+description: Представляет категорию, по которой пользователь может группировать такие элементы Outlook, как сообщения и события. Пользователь определяет категории в мастер-списке и может применять одну или несколько указанных пользователем категорий.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a2adf42417c6c5c61f5e161d3f93bd4c58fd850d
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 30bed7723cc25b668029bae494a24cbc6c4278fc4caeb6d55f039e65c68e63f9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182380"
 ---
 # <a name="outlookcategory-resource-type"></a>Тип ресурса outlookCategory
 
@@ -88,7 +88,7 @@ ms.locfileid: "50293010"
 |[Получение категории](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Получение свойств и отношений указанного объекта **outlookCategory**.|
 |[Создание](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Создание объекта **outlookCategory** в основном списке категорий пользователя.|
 |[Обновление](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Обновление перезаписываемого свойства **color** указанного объекта **outlookCategory**. |
-|[удаление](../api/outlookcategory-delete.md); | Нет |Удаление указанного объекта **outlookCategory**. |
+|[Удаление](../api/outlookcategory-delete.md) | Нет |Удаление указанного объекта **outlookCategory**. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

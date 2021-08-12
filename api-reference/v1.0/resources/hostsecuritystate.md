@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Хостсекуритистате
-description: Содержит сведения о состоянии узла (включая устройства, компьютеры и т. д.).
+title: тип ресурса hostSecurityState
+description: Содержит сведения о хосте (включая устройства, компьютеры и т. п.).
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2d8543512162398f38f9ddb74cf72f57171c58f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20de01e91abbc2e3cf568a8898b79680e73188e549ffd306abf4f7aed092b16b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184895"
 ---
-# <a name="hostsecuritystate-resource-type"></a>Тип ресурса Хостсекуритистате
+# <a name="hostsecuritystate-resource-type"></a>тип ресурса hostSecurityState
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о состоянии узла (включая устройства, компьютеры и т. д.).
+Содержит сведения о хосте (включая устройства, компьютеры и т. п.).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|полным|String|ПОЛНОЕ доменное имя узла (полное доменное имя) (например, `machine.company.com` ).|
-|исазуреааджоинед|Boolean|True, если узел подключен к доменным службам Azure Active Directory.|
-|исазуреаадрегистеред|Boolean|True, если узел зарегистрирован с регистрацией устройств Azure Active Directory (BYOD Devices — то есть, не полностью управляется предприятием).|
-|ишибридазуредомаинжоинед|Boolean|True, если узел является доменом, присоединенным к локальному домену Active Directory.|
-|нетбиоснаме|String|Имя локального узла без DNS-имени домена.|
-|совместим|String|Хост операционной системы. (Например, Windows10, MacOS, РХЕЛ и т. д.).|
-|приватеипаддресс|String|Частный (без маршрутизации) IPv4-или IPv6-адрес (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) на момент оповещения.|
-|публиЦипаддресс|String|IPv4-или IPv6-адрес общедоступной маршрутизации (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) во время оповещения.|
-|riskScore|String|Полученный поставщиком и вычисляемый показатель риска для узла.  Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
+|fqdn|String|Host FQDN (полное доменное имя) (например, `machine.company.com` ).|
+|isAzureAadJoined|Логическое|True, если хост является доменом, присоединимым к Azure Active Directory Службы домена.|
+|isAzureAadRegistered|Логическое|True, если хост зарегистрирован Azure Active Directory устройств (устройства BYOD — то есть не полностью управляемые предприятием).|
+|isHybridAzureDomainJoined|Логическое|True, если хост является доменом, присоединимым к локальному домену Active Directory.|
+|netBiosName|String|Имя локального хоста без доменного имени DNS.|
+|os|String|Операционная система host. (Например, Windows10, MacOS, RHEL и т.д.).|
+|privateIpAddress|String|Частный (не маршрутируемый) адрес IPv4 или IPv6 (см. [RFC 1918)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
+|publicIpAddress|String|Общедоступный адрес IPv4 или IPv6 (см. [RFC 1918)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
+|riskScore|String|Оценка риска, сгенерированная поставщиком и рассчитанная на хост.  Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
 
 ## <a name="json-representation"></a>Представление JSON
 

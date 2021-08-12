@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4153eb0c10d21a64c4cf13de00099b6444a45bed
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 603d5ac64a05a8880344b63ff1c5d0f2363d45b3ce2f67dbf9a0c186af083fde
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234031"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Обновление объекта defaultManagedAppProtection
 

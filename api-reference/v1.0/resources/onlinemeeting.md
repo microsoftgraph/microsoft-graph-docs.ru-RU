@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 9de25fd3f9f014627b7fcb32e4a16814e82be1e3
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 5b0d34c005e1d3ea2fa40e85176506d718be9488ddc9f737b24f9d9359406a20
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896489"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169405"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -38,7 +38,7 @@ ms.locfileid: "52896489"
 | creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
 | endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                               |
 | id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
-| isEntryExitAnnounced  | Логический                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                     |
+| isEntryExitAnnounced  | Логическое                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанные в `Accept-Language` заглавной странице HTTP запроса. Только для чтения. |
 | joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                               |

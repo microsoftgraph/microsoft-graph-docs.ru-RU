@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: f81300c0fd2f895daccb816c86cdd7151c803b2d
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7cf9310eef057bbd4bcda57273089f05a24501986c90b6bffbc072d39932cac2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121286"
 ---
 # <a name="connectionoperation-resource-type"></a>тип ресурса connectionOperation
 

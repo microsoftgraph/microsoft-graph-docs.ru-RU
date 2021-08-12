@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 083609787920d840d8576d1c2a7cd5e39945768c
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 89ba5791235810529e7cc3b2b3c4e1d817920148790f7f9934edb20432420215
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251838"
 ---
 # <a name="provisionedidentity-resource-type"></a>тип ресурса provisionedIdentity
 
@@ -24,11 +24,11 @@ ms.locfileid: "52241580"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |подробности|[detailsInfo](detailsinfo.md)|Сведения о удостоверении.|
-|displayName|Строка|Отображение имени удостоверения. |
-|id|Строка|Уникально идентифицирует удостоверение.|
-|identityType|Строка|Тип предварительного удостоверения, например "пользователь" или "группа".|
+|displayName|String|Отображение имени удостоверения. |
+|id|String|Уникально идентифицирует удостоверение.|
+|identityType|String|Тип предварительного удостоверения, например "пользователь" или "группа".|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

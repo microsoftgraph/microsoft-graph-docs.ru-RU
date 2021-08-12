@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9c7a1eabedaafca99fc908ed1dd194751a00500
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dc455366a64d37a887ae1e43edde7b95d3dc481b2d7925caa43c37756505a065
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155101"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Тип ресурса androidMinimumOperatingSystem
 
@@ -34,7 +34,7 @@ ms.locfileid: "52752289"
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

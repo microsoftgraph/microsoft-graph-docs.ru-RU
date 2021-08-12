@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b6325656dcf11a4b448506f829c3aaae88100ce6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3fc42cb04a12dbe1c8a792c4d9c6af4ad8e5ff0f68b8dd8fe2402990909db26b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178544"
 ---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
 
@@ -23,8 +23,8 @@ ms.locfileid: "48059224"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartTitle](../api/charttitle-get.md) | [воркбукчарттитле](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Обновление](../api/charttitle-update.md) | [воркбукчарттитле](charttitle.md)    |Обновление объекта ChartTitle. |
+|[Получение объекта ChartTitle](../api/charttitle-get.md) | [КнигаChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
+|[Обновление](../api/charttitle-update.md) | [КнигаChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -36,7 +36,7 @@ ms.locfileid: "48059224"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[воркбукчарттитлеформат](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

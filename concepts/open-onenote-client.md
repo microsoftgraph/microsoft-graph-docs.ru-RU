@@ -3,18 +3,18 @@ title: Открытие клиента OneNote
 description: 'Вы можете использовать свойство **links** страницы или записной книжки, чтобы открыть приложение OneNote на определенной странице или в определенной записной книжке. '
 author: Jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: d9f4ec45e79ed0526b4d02a6c3f676944384ab46
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: ada371ab457e4bd5c760770dbdc2baaea8557efeef14a5fe1ddb37c2f4c33059
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778294"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54123907"
 ---
 # <a name="open-the-onenote-client"></a>Открытие клиента OneNote
 
 Вы можете использовать свойство **links** страницы или записной книжки, чтобы открыть приложение OneNote на определенной странице или в определенной записной книжке. 
 
-Свойство **links** представляет собой объект JSON, содержащий два URL-адреса. URL-адреса будут открывать страницу или записную книжку в клиентском приложении OneNote или в OneNote в Интернете.
+Свойство **links** представляет собой объект JSON, содержащий два URL-адреса. URL-адреса откроют страницу или записную книжку в клиентском приложении OneNote или в OneNote в Интернете.
 
 ```json
 { 
@@ -36,7 +36,7 @@ ms.locfileid: "35778294"
 
 - **oneNoteWebUrl** 
 
-  - Открывает OneNote в Интернете, если браузер, используемый по умолчанию на устройстве, поддерживает его. 
+  - Открывает OneNote в Интернете, если браузер по умолчанию на устройстве поддерживает его. 
   - Использует параметр языка браузера.
 
 
@@ -96,7 +96,7 @@ API OneNote возвращает свойство **links** в HTTP-ответе
 
 <br/>
 
-После того как вы проанализируете URL-адреса, полученные в ответе, вы сможете открыть OneNote, используя указанный ниже код. Используется `oneNoteClientUrl` для открытия установленного клиента OneNote или `oneNoteWebURL` для открытия OneNote в Интернете.
+После того как вы проанализируете URL-адреса, полученные в ответе, вы сможете открыть OneNote, используя указанный ниже код. Используйте `oneNoteClientUrl` для открытия установленного OneNote или для открытия `oneNoteWebURL` OneNote в Интернете.
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -164,7 +164,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-С помощью свойств ответа ваше приложение может открыть OneNote в Интернете, как показано в следующем примере.
+Используя свойства отклика, приложение может открыть OneNote в Интернете, как показано в следующем примере.
 
 ```java 
 if (response.getResponseCode() == 201) {

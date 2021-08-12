@@ -3,12 +3,12 @@ title: Создание приложения Azure Active Directory
 description: Создание регистрации приложения Azure Active Directory для связи с Microsoft 365
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: b68281473d884309c23a72979ae07a8a9c752d2f
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 4038b1dbdd124923f949cc48c4ebda75106365d74bd97dfee87466a58c34ea28
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579923"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159668"
 ---
 # <a name="create-an-azure-active-directory-app-to-use-with-the-microsoft-graph-toolkit"></a>Создание приложения Azure Active Directory для использования с Microsoft Graph Toolkit
 

@@ -3,12 +3,12 @@ title: Интеграция приложения Android с клиентским
 description: Интеграция приложения Android с клиентским пакетом SDK уведомления пользователей
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: c56aef1befa98c2082d3476900a8e40c4034653f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 720991eb253a9f1a23ff0299997e99c9c24345439d2f85c897a0e758e346a79a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211712"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения Android с клиентским пакетом SDK для уведомления пользователей
 

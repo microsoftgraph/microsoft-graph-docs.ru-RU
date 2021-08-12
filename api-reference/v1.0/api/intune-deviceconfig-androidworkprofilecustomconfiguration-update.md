@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dec49f5a3acff7bfbb16d56fce1ca4ecd42f34e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7c3f6e0f5103acaefb2ad130dcefdc75531f57d77a030737c0064c9183832f57
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758409"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250632"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>Обновление androidWorkProfileCustomConfiguration
 

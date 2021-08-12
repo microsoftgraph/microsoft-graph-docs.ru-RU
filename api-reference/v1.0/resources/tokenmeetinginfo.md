@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Токенмитингинфо
-description: Тип Токенмитингинфо.
+title: тип ресурса tokenMeetingInfo
+description: Тип tokenMeetingInfo.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ac5e8303b0326e4c540757b7564edc55945cfc8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 269cd5589539cb63b20d61e5103a273a083882a4ffa89446e1c6629444d1b9c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159864"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса Токенмитингинфо
+# <a name="tokenmeetinginfo-resource-type"></a>тип ресурса tokenMeetingInfo
 
 Пространство имен: microsoft.graph
 
-Это сведения о маркере, с помощью которого вы можете присоединиться к существующему собранию. Это значение получается в составе уведомления о входящем вызове. 
+Это информация маркера, которая позволяет присоединиться к существующему собранию. Это получается в рамках уведомления о входящих вызовах. 
 
-В случае отключения вызова эта информация поможет повторно присоединиться к этому вызову.
+В случае отключения вызова эта информация может помочь вам снова присоединять этот вызов.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип    | Описание                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| token                        | Строка  | Маркер, используемый для присоединения к вызову.                                                 |
+| token                        | Строка  | Маркер, используемый для зова.                                                 |
 
 ## <a name="json-representation"></a>Представление JSON
 

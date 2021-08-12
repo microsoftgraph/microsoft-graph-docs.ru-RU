@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a4536607c4723a9e16d77e045e17bd151da50d36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad8cbd941b1af5a3a694be308ea2b5c0065a5e05b2f58b02c98c5e8d7bc26398
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246621"
 ---
 # <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
 
@@ -23,18 +23,18 @@ ms.locfileid: "48090930"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeBorder](../api/rangeborder-get.md) | [воркбукранжебордер](rangeborder.md) |Чтение свойств и связей объекта rangeBorder.|
-|[Обновление](../api/rangeborder-update.md) | [воркбукранжебордер](rangeborder.md) |Обновление объекта RangeBorder. |
-|[Список](../api/rangeborder-list.md) | Коллекция [воркбукранжебордер](rangeborder.md) |Получение коллекции объектов rangeBorder. |
-|[Itemat](../api/rangebordercollection-itemat.md)|[воркбукранжебордер](rangeborder.md)|Получает объект границы по индексу.|
+|[Получение объекта RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |Чтение свойств и связей объекта rangeBorder.|
+|[Обновление](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md) |Обновление объекта RangeBorder. |
+|[Список](../api/rangeborder-list.md) | [Коллекция WorkbookRangeBorder](rangeborder.md) |Получение коллекции объектов rangeBorder. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|Получает объект границы по индексу.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
-|id|string|Представляет идентификатор границы. Возможные значения:,, `EdgeTop` `EdgeBottom` ,, `EdgeLeft` `EdgeRight` `InsideVertical` , `InsideHorizontal` , `DiagonalDown` , `DiagonalUp` . Только для чтения.|
-|сидеиндекс|string|Постоянное значение, указывающее определенную сторону границы. Возможные значения:,, `EdgeTop` `EdgeBottom` ,, `EdgeLeft` `EdgeRight` `InsideVertical` , `InsideHorizontal` , `DiagonalDown` , `DiagonalUp` . Только для чтения.|
-|style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные значения:,, `None` `Continuous` ,, `Dash` `DashDot` `DashDotDot` , `Dot` , `Double` , `SlantDashDot` .|
+|id|строка|Представляет идентификатор границы. Возможные значения: `EdgeTop` `EdgeBottom` , , , , , , `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` . Только для чтения.|
+|sideIndex|string|Постоянное значение, указывающее определенную сторону границы. Возможные значения: `EdgeTop` `EdgeBottom` , , , , , , `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` . Только для чтения.|
+|style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные значения: `None` `Continuous` , , , , , , `Dash` `DashDot` `DashDotDot` `Dot` `Double` `SlantDashDot` .|
 |weight|string|Определяет толщину границы вокруг диапазона. Допустимые значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## <a name="relationships"></a>Связи

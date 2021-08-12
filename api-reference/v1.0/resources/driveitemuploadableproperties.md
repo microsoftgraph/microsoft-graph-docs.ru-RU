@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Дривеитемуплоадаблепропертиес
-description: Ресурс Дривеитемуплоадаблепропертиес представляет элемент, который отправляется при создании сеанса отправки.
+title: тип ресурса driveItemUploadableProperties
+description: Ресурс driveItemUploadableProperties представляет элемент, загружаемый при создании сеанса загрузки.
 localization_priority: Normal
 author: JeremyKelley
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: c05c69f0cf72f74913882ddbf75355dc37592584
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39a1b68f4584e6c583213a08b203f1e3d5a7a5453b8eb1ad8708c06ef953c0c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182562"
 ---
-# <a name="driveitemuploadableproperties-resource-type"></a>Тип ресурса Дривеитемуплоадаблепропертиес
+# <a name="driveitemuploadableproperties-resource-type"></a>тип ресурса driveItemUploadableProperties
 
 Пространство имен: microsoft.graph
 
-Представляет элемент, который отправляется при [создании сеанса отправки](../api/driveitem-createuploadsession.md).
+Представляет элемент, загружаемый при [создании сеанса загрузки.](../api/driveitem-createuploadsession.md)
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,8 +44,8 @@ ms.locfileid: "48032721"
 
 | Свойство     | Тип                              | Описание                                                                                         |
 |:-------------|:----------------------------------|:----------------------------------------------------------------------------------------------------|
-|**description**   |String                             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в OneDrive персональный.             |
-|**филесизе**      |Int64                              | Предоставляет ожидаемый размер файла для выполнения проверки квоты перед отправкой. Только в OneDrive персональный. |
+|**description**   |String                             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только на OneDrive Personal.             |
+|**fileSize**      |Int64                              | Предоставляет ожидаемый размер файла для выполнения проверки квоты перед отправкой. Только на OneDrive Personal. |
 |**fileSystemInfo**|[fileSystemInfo](filesysteminfo.md)| Сведения о файловой системе на клиенте. Чтение и запись.                                                      |
 |**name**          |String                             | Имя элемента (имя и расширение файла). Чтение и запись.                                          |
 

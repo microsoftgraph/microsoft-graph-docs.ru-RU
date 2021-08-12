@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityDetail'
-description: Получите сведения об активности групп Microsoft 365 по группам.
+description: Сведения о Microsoft 365 групп по группам.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 059a2b3bfb35545df66ea68015f5b68354e332e6
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9c6875bfb4cc37bb9ea65e6a51f6bf926517ec0ae3a19723983ea8f42914f83d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981741"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238330"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
 Пространство имен: microsoft.graph
 
-Получите сведения об активности групп Microsoft 365 по группам.
+Сведения о Microsoft 365 групп по группам.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 — группы Microsoft 365.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов — Microsoft 365 групп.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -85,8 +85,8 @@ CSV-файл содержит столбцы со следующими заго�
 - Exchange Mailbox Storage Used (Byte) [занято почтовыми ящиками Exchange (байт)]
 - SharePoint Total File Count (общее количество файлов SharePoint)
 - SharePoint Site Storage Used (Byte) [занято сайтами SharePoint (байт)]
-- ИД группы
-- "Report Period" (Отчетный период).
+- Group Id
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

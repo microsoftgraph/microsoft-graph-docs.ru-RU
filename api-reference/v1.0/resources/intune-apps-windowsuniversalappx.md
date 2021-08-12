@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 745b682aa36ab3948443922e7d173843629099fa
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f325561eccb26daea409568447adf067f38b28bd22b7cb1a27685ae9a47a44e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758955"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243485"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>Тип ресурса windowsUniversalAppX
 

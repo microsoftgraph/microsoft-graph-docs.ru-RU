@@ -4,12 +4,12 @@ description: Повторяющиеся события — важная сост
 author: harini84
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 67736178c0f1987b85bbf1004ed41df8110f512f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: dccb42e0e4363eee23bc675154716abde6ffa44dba7abaf64ad7720eceb0e36d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165562"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Планирование повторных встреч как повторяющихся событий в Outlook
 
@@ -193,7 +193,7 @@ ms.locfileid: "50470083"
 
 ### <a name="relative-yearly"></a>Относительное ежегодное
 
-При использовании относительного ежегодного расписания повторения событие повторяется в один и тот же день одной и той же недели определенного месяца в соответствии с указанным количеством лет между повторениями. Пример: "каждую последнюю среду ноября".
+При использовании относительного ежегодного расписания повторения событие повторяется в один и тот же день одной и той же (по счету) недели определенного месяца в соответствии с указанным количеством лет между повторениями. Пример: "каждую последнюю среду ноября".
 
 #### <a name="relevant-properties"></a>Соответствующие свойства
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f78b0cfbbf709c7b398560c80282dc9ed2985092
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4c8b8ea8cbfe49a02226ac938f06587cbb5d9288e1ab7a53c3276f96591be444
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174887"
 ---
 # <a name="rangeformat-resource-type"></a>Тип ресурса RangeFormat
 
@@ -24,8 +24,8 @@ ms.locfileid: "48037068"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта RangeFormat](../api/rangeformat-get.md) | [WorkbookRangeFormat](rangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
-|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[воркбукранжебордер](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
-|[Список границ](../api/rangeformat-list-borders.md) |Коллекция [воркбукранжебордер](rangeborder.md)| Получение коллекции объектов RangeBorder.|
+|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[WorkbookRangeBorder](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
+|[Список границ](../api/rangeformat-list-borders.md) |[Коллекция WorkbookRangeBorder](rangeborder.md)| Получение коллекции объектов RangeBorder.|
 |[Обновление](../api/rangeformat-update.md) | [WorkbookRangeFormat](rangeformat.md) |Обновление объекта RangeFormat. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Нет|Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
@@ -34,7 +34,7 @@ ms.locfileid: "48037068"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnWidth|double|Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.|
-|horizontalAlignment|string|Представляет выравнивание по горизонтали для указанного объекта. Возможные значения:,, `General` `Left` ,, `Center` `Right` `Fill` , `Justify` , `CenterAcrossSelection` , `Distributed` .|
+|horizontalAlignment|string|Представляет выравнивание по горизонтали для указанного объекта. Возможные значения: `General` `Left` , , , , , , `Center` `Right` `Fill` `Justify` `CenterAcrossSelection` `Distributed` .|
 |rowHeight|double|Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.|
 |verticalAlignment|string|Представляет выравнивание по вертикали для указанного объекта. Допустимые значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
@@ -42,10 +42,10 @@ ms.locfileid: "48037068"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|borders|Коллекция [воркбукранжебордер](rangeborder.md)|Коллекция объектов границы, которые применяются к общему выделенному диапазону. Только для чтения.|
-|fill|[воркбукранжефилл](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
-|font|[воркбукранжефонт](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
-|protection|[воркбукформатпротектион](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
+|borders|[Коллекция WorkbookRangeBorder](rangeborder.md)|Коллекция объектов границы, которые применяются к общему выделенному диапазону. Только для чтения.|
+|fill|[WorkbookRangeFill](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
+|font|[WorkbookRangeFont](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
+|protection|[WorkbookFormatProtection](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

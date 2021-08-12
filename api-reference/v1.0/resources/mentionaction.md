@@ -1,24 +1,24 @@
 ---
 author: daspek
-title: Тип ресурса mentionAction
+title: тип ресурса mentionAction
 description: Объект MentionAction предоставляет сведения о том, кто был упомянут во время действия.
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: bc876f05949beb09b3e495a8b9b0536070b352cb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdcef79492604aa5ee2afae0897361eb41dd6889229b4b41259cc3d47f72bf92
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152385"
 ---
-# <a name="mentionaction-resource-type"></a>Тип ресурса mentionAction
+# <a name="mentionaction-resource-type"></a>тип ресурса mentionAction
 
 Пространство имен: microsoft.graph
 
 Ресурс **MentionAction** предоставляет сведения о ресурсе [activity][], в котором есть упоминания пользователей.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [действии]: itemactivity.md
 
@@ -35,7 +35,7 @@ ms.locfileid: "50238388"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.mentionAction"
+  "@type&quot;: &quot;microsoft.graph.mentionAction"
 }-->
 
 ```json

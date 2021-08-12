@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc0f0f7175a5b2cfb6be8f2b09b83ad263ae6050
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: bc9039dc8ca750863f5d919e9ba6bf4cd24aa54f7db0ed89f1ef90950b3eb7d5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211978"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Тип ресурса edgeSearchEngineCustom
 

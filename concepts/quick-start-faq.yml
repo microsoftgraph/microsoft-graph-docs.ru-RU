@@ -4,12 +4,12 @@ metadata:
   description: В этой статье представлены ответы на вопросы, связанные с краткими руководствами по Microsoft Graph.
   author: jasonjoh
   localization_priority: Normal
-  ms.openlocfilehash: e8feaa7fbe64147e0b4ba6fe3cfa4bf6432fc0f4
-  ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+  ms.openlocfilehash: eacd894355f2ae9d298f797d00e14f02aa026786ad93efe39f07bbbda764c058
+  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/30/2021
-  ms.locfileid: "53211170"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "54182261"
 title: 'Краткое руководство по Microsoft Graph: вопросы и ответы'
 summary: >
   В этой статье представлены ответы на вопросы, связанные с [краткими руководствами по Microsoft Graph](https://developer.microsoft.com/graph/quick-start).
@@ -36,7 +36,7 @@ summary: >
   В итоге вы получите приложение, готовое к запуску.
 
 
-  ## <a name="prerequisites"></a>Необходимые компоненты
+  ## <a name="prerequisites"></a>Необходимые условия
 
 
   Все примеры быстрого запуска требуют доступа к личной учетной записи Майкрософт с почтовым ящиком на Outlook.com или к учетной записи Microsoft work или school с Exchange Online почтовым ящиком. Если у вас нет учетной записи Майкрософт, существует несколько вариантов получения бесплатной учетной записи:

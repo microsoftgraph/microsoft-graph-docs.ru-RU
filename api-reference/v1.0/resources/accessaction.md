@@ -1,24 +1,24 @@
 ---
 author: daspek
-title: Тип ресурса accessAction
-description: Объект accessAction предоставляет сведения о доступе к элементу.
+title: тип ресурса accessAction
+description: Объект accessAction предоставляет сведения о доступе элемента.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 22c859eec8ffeb065b6b134f4925b7612372465b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d11b385f7e5684d10ae58f6fa28811173ed39fc3cb841b94319d55ceb46a760b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230846"
 ---
-# <a name="accessaction-resource-type"></a>Тип ресурса accessAction
+# <a name="accessaction-resource-type"></a>тип ресурса accessAction
 
 Пространство имен: microsoft.graph
 
 Наличие ресурса **accessAction** в [**itemActivity**][activity] указывает на то, что действие имеет доступ к элементу.
 
->**Примечание.** В настоящее время записи действий Access доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий доступа в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
@@ -31,7 +31,7 @@ ms.locfileid: "50239074"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.accessAction"
+  "@type&quot;: &quot;microsoft.graph.accessAction"
 }-->
 
 ```json

@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Митингинфо
-description: Сведения о собрании, указанные для создания или присоединения к собранию.
+title: тип ресурса meetingInfo
+description: Сведения о собраниях, заданные для создания собрания или перейти к нему.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cb79cae4f413e3d027b8dbbcccc621ba9b3b8233
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab866ada9fa4b886cbd90cb999132ff13b48d74437f11710a43aee31ba7857fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126412"
 ---
-# <a name="meetinginfo-resource-type"></a>Тип ресурса Митингинфо
+# <a name="meetinginfo-resource-type"></a>тип ресурса meetingInfo
 
 Пространство имен: microsoft.graph
 
-Это абстрактный класс, который содержит сведения о собрании.
+Это абстрактный класс, содержащий сведения о собраниях.
  
-Чтобы присоединиться к существующему собранию, необходимо либо указать [организермитингинфо](organizermeetinginfo.md) в сочетании с [чатинфо](./chatinfo.md), либо только с [токенмитингинфо](tokenmeetinginfo.md).
+Чтобы присоединиться к существующему собранию, необходимо либо указать [организаторMeetingInfo](organizermeetinginfo.md) в сочетании с [chatInfo,](./chatinfo.md)либо [просто tokenMeetingInfo](tokenmeetinginfo.md).
 
 
 ## <a name="derived-types"></a>Производные типы
 
 | Тип                                                 | Описание                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [организермитингинфо](./organizermeetinginfo.md)    | Сведения об организаторе собрания                          |
-| [токенмитингинфо](tokenmeetinginfo.md)              | Зашифрованный маркер, содержащий сведения о собрании  |
+| [organizerMeetingInfo](./organizermeetinginfo.md)    | Сведения об организаторе собрания                          |
+| [tokenMeetingInfo](tokenmeetinginfo.md)              | Зашифрованный маркер, содержащий сведения о собрании  |
 
 ## <a name="json-representation"></a>Представление JSON
 

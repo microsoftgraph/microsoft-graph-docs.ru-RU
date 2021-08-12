@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 2158986ccae423614c8af3e54bc79a2f019102a0
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: e3f43f4ff8ebe464814e6b6c68fec7b1d7c71fd724e81ca8998bd5230e7f3f8a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180896"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -28,7 +28,7 @@ ms.locfileid: "53030316"
 Функция обзоров доступа, включая API, доступна только с действительной лицензией на покупку или пробную лицензию подписки Azure AD Premium P2 emS E5.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с обзором доступа.
 

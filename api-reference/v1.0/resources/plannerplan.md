@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: da5f4b882ad0c364d590b3db64913c170bb5a1d8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b5b27469f08caf764031030a88c35d2f976a5dd3f420cdf6221ab858f2ccd137
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243322"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
@@ -31,7 +31,7 @@ ms.locfileid: "50720685"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|id|String| Только для чтения. Идентификатор плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. Идентификатор плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |owner|String|Идентификатор [группы](group.md), которая является владельцем плана. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. После установки значения обновить это свойство невозможно.|
 |title|String|Обязательный. Название плана.|
 |createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший этот план.|

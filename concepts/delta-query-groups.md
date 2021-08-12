@@ -4,12 +4,12 @@ description: Разностный запрос позволяет запраши
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 947ffe713d02eb55d8fa2630ad31406ef84e70fc
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 4fc09f8005e72480e6b716ebdacc6a7f0242a80ef4f01f2311205e32f0c1e6c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189144"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Получение добавочных изменений для групп
 
@@ -85,7 +85,7 @@ Content-type: application/json
 }
 ```
 
->**Примечание:** свойство `members@delta` включено в первый объект группы — TestGroup1 — и содержит двух текущих членов группы. В объекте TestGroup2 отсутствует это свойство, так как в группе нет участников.
+>**Примечание.** Свойство `members@delta` включено в первый объект группы — TestGroup1 — и содержит двух текущих членов группы. В объекте TestGroup2 отсутствует это свойство, так как в группе нет участников.
 
 ## <a name="nextlink-request"></a>Запрос nextLink
 
@@ -185,7 +185,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1
 
 ## <a name="deltalink-response"></a>Отклик deltaLink
 
-Если изменений не произошло, возвращается ссылка `deltaLink` без результатов (свойство `value` остается пустым). Обязательно замените предыдущую ссылку в приложении для использования в последующих запросах.
+Если изменений не произошло, возвращается ссылка `deltaLink` без результатов (свойство `value` остается пустым). Обязательно замените предыдущую ссылку в приложении для использования в последующих запросах.
 
 ```http
 HTTP/1.1 200 OK

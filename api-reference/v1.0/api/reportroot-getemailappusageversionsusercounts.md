@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 880c0126574835e6f20a261442a499ce43dc0d0b
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b1c8f9a6458756f7fdfb5478459a69fb906cf10115a513a150b336a472ab39a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235823"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49982112"
 
 Узнайте, сколько уникальных пользователей у каждой версии Outlook для компьютера.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании почтовых приложений.](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)
+> **Примечание:** Сведения о различных представлениях отчетов и именах [см. в Microsoft 365 отчетов .](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)
 
 ## <a name="permissions"></a>Разрешения
 

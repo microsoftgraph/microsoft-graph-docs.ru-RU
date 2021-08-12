@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса informationalUrl
+title: тип ресурса informationalUrl
 description: Основные сведения о профиле приложения.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d249c150870a3a7149b92ad7aab55a84c23896dd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e0c60cdde2d636321f3777b4b41bdf11bfe1da69d3303169f4fce1a3a71b3acc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132106"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178391"
 ---
-# <a name="informationalurl-resource-type"></a>Тип ресурса informationalUrl
+# <a name="informationalurl-resource-type"></a>тип ресурса informationalUrl
 
 Пространство имен: microsoft.graph
 
@@ -22,11 +22,11 @@ ms.locfileid: "50132106"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|logoUrl|String|URL-адрес CDN для логотипа приложения, только для чтения.|
+|logoUrl|String|CDN URL-адрес логотипа приложения только для чтения.|
 |marketingUrl|String| Ссылка на страницу маркетинга приложения. Пример: https://www.contoso.com/app/marketing |
 |privacyStatementUrl|String| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
 |supportUrl|String| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
-|termsOfServiceUrl|String| Ссылка на заявление об условиях обслуживания приложения. Пример: https://www.contoso.com/app/termsofservice |
+|termsOfServiceUrl|String| Ссылка на условия службы приложения. Пример: https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

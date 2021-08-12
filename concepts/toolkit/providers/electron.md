@@ -1,18 +1,18 @@
 ---
-title: Поставщик электронных данных
-description: Поставщик MSAL для Electron использует msal-node для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph.
+title: Поставщик Electron
+description: Поставщик MSAL для Электронный использует msal-node для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph.
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: a9e391f96988f8beaf8395e872a6efa08efca8f5
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 13a81a098fb69223e8ca5e85fcbce83dd4e83c9272fb781281d8b8b0379495b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471436"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208652"
 ---
-# <a name="electron-provider"></a>Поставщик электронных данных
+# <a name="electron-provider"></a>Поставщик Electron
 
-Поставщик Электронный использует [msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) для регистрации пользователей и приобретения маркеров для использования с Microsoft Graph в приложении Electron.
+Поставщик Электронный использует [msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) для регистрации пользователей и приобретения маркеров для использования с microsoft Graph в приложении Electron.
 
 Дополнительные сведения о поставщиках проверки подлинности см. в статье [Поставщики](./providers.md).
 
@@ -68,13 +68,13 @@ ElectronAuthenticator.initialize(config);
     
 ## <a name="create-an-appclient-id"></a>Создание идентификатора клиента/приложения
 
-### <a name="add-new-application-registration-in-azure-active-directory-to-get-a-client-id"></a>Добавьте новую регистрацию приложений в Azure Active Directory, чтобы получить ID клиента
+### <a name="add-new-application-registration-in-azure-active-directory-to-get-a-client-id"></a>Добавление регистрации новых приложений в Azure Active Directory, чтобы получить ID клиента
 
-Чтобы создать приложение в Azure Active Directory, добавьте новую регистрацию приложений, а затем настройте имя приложения и перенаправляйте URI.
+Чтобы создать приложение в Azure Active Directory, добавьте новую регистрацию приложения, а затем настройте имя приложения и перенаправляйте URI.
 
 Создание приложения в Azure Active Directory:
 
-1. Перейдите на [портал Azure.](https://portal.azure.com)
+1. Перейдите на [портал Azure](https://portal.azure.com).
 1. В меню выберите **Azure Active Directory**.
 1. В меню Azure Active Directory выберите **Регистрация приложений**.
 1. В верхнем меню нажмите кнопку **Новая регистрация**.
