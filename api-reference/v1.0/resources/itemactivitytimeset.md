@@ -1,24 +1,24 @@
 ---
 author: daspek
-title: Тип ресурса itemActivityTimeSet
-description: Объект itemActionSet предоставляет сведения о действии, которое произошло с элементом.
+title: тип ресурса itemActivityTimeSet
+description: Объект itemActionSet предоставляет сведения о действии, которое произошло на элементе.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1f614c597efdb95b04c4079bd68240aa865d66dd
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1e69ac8c539dcce56f369adec3d0e634afeeece06cc0b043b48e10f681d12ad8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238675"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130081"
 ---
-# <a name="itemactivitytimeset-resource-type"></a>Тип ресурса itemActivityTimeSet
+# <a name="itemactivitytimeset-resource-type"></a>тип ресурса itemActivityTimeSet
 
 Пространство имен: microsoft.graph
 
-Ресурс **itemActivityTimeSet** предоставляет сведения [][activity] о том, когда произошло действие с элементом.
+Ресурс **itemActivityTimeSet** предоставляет сведения [][activity] о том, когда было действие элемента.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
@@ -41,7 +41,7 @@ ms.locfileid: "50238675"
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActivityTimeSet",
   "@type.aka": "oneDrive.times",
-  "@property.aka": "observedDateTime=observedTime recordedDateTime=recordedTime"
+  "@property.aka&quot;: &quot;observedDateTime=observedTime recordedDateTime=recordedTime"
 }-->
 
 ```json

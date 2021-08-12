@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Администратор Microsoft 365 может утверждать или отказывать в запросах на согласие. Это можно сделать через центр администрирования Microsoft 365 или программным образом с помощью PowerShell.
+Администратор Microsoft 365 может утверждать или отказывать в запросах на согласие. Это можно сделать через центр Microsoft 365 Admin или программным путем с помощью PowerShell.
 
 ## <a name="approve-consent-requests"></a>Утверждение запросов на согласие
 
-# <a name="microsoft-365-admin-center"></a>[Microsoft 365 Центр администрирования](#tab/Microsoft365)
+# <a name="microsoft-365-admin-center"></a>[Microsoft 365 Admin Центр](#tab/Microsoft365)
 
-1. Откройте браузер и перейдите [на Microsoft 365 Портал администрирования.](https://admin.microsoft.com)
+1. Откройте браузер и перейдите на [портал Microsoft 365 Admin.](https://admin.microsoft.com)
 
 1. Чтобы утверждать или отказывать в запросах на согласие, перейдите в [привилегированный доступ](https://portal.office.com/adminportal/home#/Settings/PrivilegedAccess).
 
@@ -14,7 +14,7 @@
 
 1. В **вызове запроса на доступ к данным** выберите кнопку **Утверждение.**
 
-    ![Снимок экрана, на котором показан запрос на доступ к данным до утверждения согласия Microsoft 365 центре администрирования.](images/data-connect-m365-approve.png)
+    ![Снимок экрана, на котором показан запрос на доступ к данным до утверждения согласия в Центр администрирования Microsoft 365.](images/data-connect-m365-approve.png)
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -43,7 +43,7 @@
         > [!IMPORTANT]
         > После завершения этого сеанса убедитесь, что вы отключались от сеанса с помощью команды `Remove-PSSession $Session` PowerShell. Exchange Online позволяет использовать только три открытых сеанса удаленной powerShell для защиты от атак с отказом в обслуживании (DoS). Если просто закрыть окно PowerShell, оно оставит подключение открытым.
 
-1. Получите список всех ожидающих запросов данных из подключение к данным Microsoft Graph, исполнив следующую PowerShell.
+1. Получите список всех ожидающих запросов данных из Подключение к данным Microsoft Graph, исполнив следующую PowerShell.
 
     ```powershell
     Get-ElevatedAccessRequest | where {$_.RequestStatus -eq 'Pending'} | select RequestorUPN, Service, Identity, RequestedAccess | fl

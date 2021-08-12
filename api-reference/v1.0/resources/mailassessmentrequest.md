@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: c6df66260673e6319f8b91bf52c7ca351adb85a7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 05d4fd304c0cb85b9ca8d2d7aa71d6bdd90128ef42ca13b0d5ed881f70330ec9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155010"
 ---
 # <a name="mailassessmentrequest-resource-type"></a>тип ресурса mailAssessmentRequest
 

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 00137618daf327793d7d60d8dadbe8ad89abc840
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: e1ae1981de295e691c2cee5e0cda320446bebe1a021efb6c1898cd3ab91158d1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468627"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175289"
 ---
 # <a name="fido2authenticationmethodconfiguration-resource-type"></a>тип ресурса fido2AuthenticationMethodConfiguration
 
@@ -24,16 +24,16 @@ ms.locfileid: "51468627"
 |:---|:---|:---|
 |[Получение](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.|
 |[Обновление](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Обновление свойств объекта fido2AuthenticationMethodConfiguration.|
-|[удаление](../api/fido2authenticationmethodconfiguration-delete.md);|Нет|Возвращает объект fido2AuthenticationMethodConfiguration к конфигурации по умолчанию.|
+|[Удаление](../api/fido2authenticationmethodconfiguration-delete.md)|Нет|Возвращает объект fido2AuthenticationMethodConfiguration к конфигурации по умолчанию.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор политики метода проверки подлинности.|
-|isAttestationEnforced|Логический|Определяет, необходимо ли применять проверку для регистрации ключей безопасности FIDO2.|
-|isSelfServiceRegistrationAllowed|Логический|Определяет, могут ли пользователи зарегистрировать новые ключи безопасности FIDO2.|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Контролирует, применяются ли ключевые ограничения для ключей безопасности FIDO2, разрешая или отменить определенные типы ключей, определенных GUID проверки подлинности (AAGUID), идентификатором, который указывает тип (например, сделать и модель) аутентиста.|
+|isAttestationEnforced|Логическое|Определяет, необходимо ли применять проверку для регистрации ключей безопасности FIDO2.|
+|isSelfServiceRegistrationAllowed|Логическое|Определяет, могут ли пользователи зарегистрировать новые ключи безопасности FIDO2.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Контролирует, применяются ли ключевые ограничения для ключей безопасности FIDO2, разрешая или отменяя определенные типы ключей в зависимости от Authenticator Attestation GUID (AAGUID), идентификатора, который указывает тип (например, make и model) аутентиста.|
 |state|authenticationMethodState|Возможные значения: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Связи

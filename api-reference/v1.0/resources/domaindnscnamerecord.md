@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2834aad1d0f46552eefbf2afba30b08f21924369
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 3b626a13af3087eb65be24d3b33958cdba3c57cd71cc402a27f8547f44e45256
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169650"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>тип ресурса domainDnsCnameRecord
 
@@ -27,7 +27,7 @@ ms.locfileid: "50761390"
 |:---------------|:--------|:----------|
 |canonicalName|String| Каноническое имя записи CNAME. Используется для настройки записи CNAME в DNS-хозяйке. |
 |id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения|
-|isOptional|Boolean| Если это не так, запись CNAME должна быть настроена клиентом в хосте DNS, чтобы Microsoft Online Services правильно работать с доменом. Не является недействительным |
+|isOptional|Логический| Если это не так, запись CNAME должна быть настроена клиентом в хосте DNS, чтобы Microsoft Online Services правильно работать с доменом. Не является недействительным |
 |label|String| Значение, используемого при настройке *псевдонима/хоста/имени* записи CNAME в хосте DNS. |
 |recordType|String| Тип записи DNS. Значение всегда *CName*. Key|
 |supportedService|String| Microsoft Online Service или функция, зависимая от этой записи CNAME.</br></br>Может быть одним из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8b05e4c130eebe3ffc23af2389feb2846ef1474e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dbb95979e30143bf1c078edebf85c1e70c06e95e7c9818ec051602d394a48331
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121300"
 ---
 # <a name="chartlegend-resource-type"></a>Тип ресурса ChartLegend
 
@@ -23,8 +23,8 @@ ms.locfileid: "48069178"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartLegend](../api/chartlegend-get.md) | [воркбукчартлеженд](chartlegend.md) |Чтение свойств и связей объекта chartLegend.|
-|[Обновление](../api/chartlegend-update.md) | [воркбукчартлеженд](chartlegend.md) |Обновление объекта ChartLegend. |
+|[Получение объекта ChartLegend](../api/chartlegend-get.md) | [КнигаChartLegend](chartlegend.md) |Чтение свойств и связей объекта chartLegend.|
+|[Обновление](../api/chartlegend-update.md) | [КнигаChartLegend](chartlegend.md) |Обновление объекта ChartLegend. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -36,7 +36,7 @@ ms.locfileid: "48069178"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[воркбукчартлежендформат](chartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
+|format|[WorkbookChartLegendFormat](chartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e82ce58786e23448458e9e1c60fad5d0c54b6388
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 1151ff7a9392ba6450651b8d5df24eed1b6a28189a25b935ec2570a0280d436b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178614"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -50,7 +50,7 @@ ms.locfileid: "50722435"
 |contentType|String|Тип MIME.|
 |id|String| Только для чтения.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`.|
-|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |name|String|Имя вложенного файла.|
 |size|Int32|Размер вложения в байтах.|
 

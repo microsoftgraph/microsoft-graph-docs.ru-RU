@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 9a8a8c78d1e165dfe0f9417c5aa052f9f0b2383b
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c63fb604db54bafd757fe82e2bc21feee005dbda5c91d9c4a7f64b0c1e607dab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149683"
 ---
 # <a name="printtaskdefinition-resource-type"></a>тип ресурса printTaskDefinition
 
@@ -30,8 +30,8 @@ ms.locfileid: "50518104"
 |:-------------|:------------|:------------|
 | [Список](../api/print-list-taskdefinitions.md) | [printTaskDefinition collection](printtaskdefinition.md) | Получите полный список отпечатковTaskDefinitions, созданных в универсальной печати. |
 | [Создание](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Создайте новый шрифтTaskDefinition. |
-| [обновление](../api/print-update-taskdefinition.md). | [printTaskDefinition](printtaskdefinition.md) | Обновление печатиTaskDefinition. |
-| [удаление](../api/print-delete-taskdefinition.md); | Нет | Удаление печатиTaskDefinition. |
+| [Обновление](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Обновление печатиTaskDefinition. |
+| [Удаление](../api/print-delete-taskdefinition.md) | Нет | Удаление печатиTaskDefinition. |
 | [Перечисление задач](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получите список задач, созданных на основе этого определения. Список включает в себя выполнение текущих задач и недавно завершенных задач. |
 | [Вывод задачи](../api/printtask-get.md) | [printTask](printtask.md) | Получает задачу, созданную на основе этого определения. |
 | [Обновление задачи](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Обновление задачи, созданной на основе этого определения. **Приложения, которые регистрируют триггеры задач, отвечают за обновление состояния задачи по завершению обработки, если соответствующий printJob не был перенаправлен на другой принтер.** Невыполнение отчетов о завершении приведет к блокировке связанного задания печати от печати и в конечном итоге к их удаляемой работе. |
@@ -39,11 +39,11 @@ ms.locfileid: "50518104"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор printTaskDefinition. Только для чтения.|
-|displayName|Строка|Имя печатиTaskDefinition.|
+|id|String|Идентификатор printTaskDefinition. Только для чтения.|
+|displayName|String|Имя печатиTaskDefinition.|
 |createdBy|[appIdentity](appidentity.md)|Приложение, создав печатьTaskDefinition. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |tasks|[printTask](printtask.md) collection|Список задач, созданных на основе этого определения. Список включает в себя выполнение текущих задач и недавно завершенных задач. Только для чтения.|

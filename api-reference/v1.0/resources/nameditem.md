@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e8877e9da96ccaf1fa8bd99eaeecd5971beb42fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c92202e5e9d1671d72acecaec50203d01c5a90eb30436df0d70cb5518763258
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237616"
 ---
 # <a name="nameditem-resource-type"></a>Тип ресурса NamedItem
 
@@ -23,10 +23,10 @@ ms.locfileid: "47967354"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem-add.md)|[воркбукнамедитем](nameditem.md)|Добавляет новое имя в определенную коллекцию.|
-|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[воркбукнамедитем](nameditem.md)|Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.|
-|[Get NamedItem](../api/nameditem-get.md) | [воркбукнамедитем](nameditem.md) |Чтение свойств и связей объекта namedItem.|
-|[Обновление](../api/nameditem-update.md) | [воркбукнамедитем](nameditem.md)   |Обновление объекта NamedItem. |
+|[Add](../api/nameditem-add.md)|[WorkbookNamedItem](nameditem.md)|Добавляет новое имя в определенную коллекцию.|
+|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[WorkbookNamedItem](nameditem.md)|Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.|
+|[Get NamedItem](../api/nameditem-get.md) | [WorkbookNamedItem](nameditem.md) |Чтение свойств и связей объекта namedItem.|
+|[Обновление](../api/nameditem-update.md) | [WorkbookNamedItem](nameditem.md)   |Обновление объекта NamedItem. |
 |[Range](../api/nameditem-range.md)|[Range](range.md)|Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.|
 |[Список](../api/nameditem-list.md) | Коллекция [WorkbookNamedItem](nameditem.md) |Получение коллекции объектов namedItem. |
 

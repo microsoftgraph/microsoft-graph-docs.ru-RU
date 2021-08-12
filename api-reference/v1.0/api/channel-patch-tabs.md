@@ -5,19 +5,19 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37edb6a3a454aa3612770746062016ea389fd9d5
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 71d3162b9abd661e0aac650477e1749d9756e6293a1b767c1b6e6aa8d253579b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131019"
 ---
 # <a name="update-tab"></a>Обновление вкладки
 
 Пространство имен: microsoft.graph
 
 
-Обновление свойств указанной [вкладки](../resources/teamstab.md). Это можно использовать для настройки контента вкладки.
+Обновление свойств указанной [вкладки.](../resources/teamstab.md) Это можно использовать для настройки содержимого вкладки.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,9 +25,9 @@ ms.locfileid: "49607424"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  TeamsTab. Реадвритефортеам, TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab. ReadWrite. Group *, TeamsTab. Реадвритефортеам. ALL, TeamsTab. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamsTab.ReadWrite.Group*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -45,7 +45,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Tab](../resources/teamstab.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [вкладки.](../resources/teamstab.md)
 
 ## <a name="response"></a>Отклик
 

@@ -4,12 +4,12 @@ description: API обзоров доступа позволяет програм
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: bedcd32f7db1c2aa7926108cfeb0588bbc354474
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b22fcf84e8303f10ad6d9f0f30cf0e508db5f103aee8430c35fb9981bcaec8c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154856"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Обзор API проверок доступа
 
@@ -42,7 +42,7 @@ API обзоров доступа поддерживают как делегир
 + [Используйте API отзывов доступа для групп, чтобы просмотреть доступ к группам безопасности](tutorial-accessreviews-securitygroup.md)
 + [Используйте API обзоров доступа для групп, чтобы просмотреть доступ ко всем группам Microsoft 365 с гостевых пользователей](tutorial-accessreviews-M365group.md)
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 + [Планирование Azure Active Directory проверки доступа](/azure/active-directory/governance/deploy-access-reviews)
 + [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)

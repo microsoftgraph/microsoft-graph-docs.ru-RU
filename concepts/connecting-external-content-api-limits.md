@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 6ab757d16a10f2291ad9bac5034e9fe7357a7188
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: f70b33d5f5fdf56786e13d4f3e00f1b5f20a2009ef947ea5be415e149eb7b839
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246411"
 ---
 # <a name="microsoft-graph-connector-api-limits"></a>Ограничения API соединителей Microsoft Graph
 

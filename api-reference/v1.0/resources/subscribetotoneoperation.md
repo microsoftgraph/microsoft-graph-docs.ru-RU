@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Субскрибетотонеоператион
-description: Описывает формат ответа на создание подписки для получения тонов DTMF.
+title: Тип ресурса SubscribeToToneOperation
+description: Описывает формат ответа при создании подписки для получения тона DTMF.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a53405f58c568d17d040dd7368f39cef6838510c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bcae95f7c711ee1853885e851b7f281e7f6597bd70ccd808722f75b67141a6be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169258"
 ---
-# <a name="subscribetotoneoperation-resource-type"></a>Тип ресурса Субскрибетотонеоператион
+# <a name="subscribetotoneoperation-resource-type"></a>Тип ресурса SubscribeToToneOperation
 
 Пространство имен: microsoft.graph
 
-Описывает формат ответа на создание подписки для получения тонов DTMF.
+Описывает формат ответа при создании подписки для получения тона DTMF.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | Строка                      | Контекст клиента.                                                                                                                               |
-| id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                             |
+| clientContext                  | String                      | Клиентский контекст.                                                                                                                               |
+| id                             | String                      | ID операции сервера. Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 
 ## <a name="relationships"></a>Связи

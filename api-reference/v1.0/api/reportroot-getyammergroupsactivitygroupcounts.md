@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 4d202c48e2a6bdfdd1a8e0ea27f0a28ba2bcba83
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b41c3f1e3f13661a6277723bdd6098f507adce9245def8332424c62ae2743be0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133042"
 ---
 # <a name="reportroot-getyammergroupsactivitygroupcounts"></a>reportRoot: getYammerGroupsActivityGroupCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49981125"
 
 Узнайте, сколько всего существовало групп и в скольких из них была активность.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 о](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)действиях в группах Yammer.
+> **Примечание:** Сведения о различных представлениях отчетов и именах см. в [Microsoft 365 отчетов — Yammer групп.](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -68,7 +68,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Total (всего)
 - Active (активные)
 - Report Date (дата отчета)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

@@ -3,15 +3,15 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: baseItem
 localization_priority: Normal
-description: Ресурс baseItem — это абстрактный ресурс, содержащий общий набор свойств, общий для нескольких других типов ресурсов.
+description: Ресурс baseItem — это абстрактный ресурс, содержащий общий набор свойств, общих между несколькими другими типами ресурсов.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 717426f29b8c466af5799871fcc12cf4cd8bdf65
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 2352eb143bb0a8042ca38096d114c92fb3f181091d505df4487dd329c1abed15
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163861"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
@@ -56,10 +56,10 @@ ms.locfileid: "50239095"
 
 | Свойство             | Тип              | Описание                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | Уникальный идентификатор диска. Только для чтения.                                         |
+| id                   | строка            | Уникальный идентификатор диска. Только для чтения.                                         |
 | createdBy            | [identitySet][]   | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.        |
 | createdDateTime      | dateTimeOffset    | Дата и время создания элемента. Только для чтения.                                             |
-| description          | String            | Предоставляет видимое пользователю описание элемента. Необязательный параметр.                             |
+| description          | String            | Предоставляет видимое пользователю описание элемента. Необязательно.                             |
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения. |
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |
@@ -89,6 +89,6 @@ ms.locfileid: "50239095"
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/BaseItem"
+  "tocPath&quot;: &quot;Resources/BaseItem"
 } -->
 

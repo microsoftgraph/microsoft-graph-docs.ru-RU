@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f0bf6c66de4a65ae7fd53c4bbe897e37c7bc8cb4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1c43777895435c22970a68545b0e305710e24a67580b3b09de10b776fc243880
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126804"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49981811"
 
 Узнайте, сколько уникальных пользователей у каждого почтового приложения.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании почтовых приложений.](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)
+> **Примечание:** Сведения о различных представлениях отчетов и именах [см. в Microsoft 365 отчетов .](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -74,7 +74,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "POP3 App" (Приложение с поддержкой POP3);
 - "IMAP4 App" (Приложение с поддержкой IMAP4);
 - "SMTP App" (Приложение с поддержкой SMTP);
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

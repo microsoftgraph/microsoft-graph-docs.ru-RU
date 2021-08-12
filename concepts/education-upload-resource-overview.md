@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: ee9e7d8e1b2e9feed1e0be9cc7b142c38cfb1db9
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 0d7c60fbb88c6c6eec9f4748f2921a800f20b99e2248d6f6c26cad188591721c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535551"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54151797"
 ---
 # <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Upload для назначений и представлений для образования с помощью API microsoft Graph
 
@@ -60,7 +60,7 @@ Binary data for the file
 ```
 
 #### <a name="response-example"></a>Пример ответа
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 ```http
 HTTP/1.1 201 Created
@@ -151,7 +151,7 @@ Content-type: application/json
 ```
 
 #### <a name="response-example"></a>Пример ответа
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 ```http
 HTTP/1.1 201 Created

@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: becb0c4eb76e7ae337d42739f064a15b7ce233ca
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b87a274288bf2119a9fd6b46d9d300634a00e0c68cdf93c93246d9b7152e13fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895519"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235135"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Отправка сообщений Outlook от другого пользователя
 
@@ -94,7 +94,7 @@ Exchange Online предусматривает [разрешения для по
 
 ## <a name="sent-items-behavior"></a>Порядок сохранения в папке "Отправленные"
 
-После отправки сообщения его можно сохранить в папке "Отправленные" фактического отправителя, в папке "Отправленные" пользователя, который значится как отправитель, или в обеих папках. Его также можно не сохранять.
+После отправки сообщения его можно сохранить в папке "Отправленные" фактического отправителя, в папке "Отправленные" пользователя, который значится как отправитель, или в обеих папках. Кроме того, его можно не сохранять.
 
 > [!NOTE]
 > Если сообщение будет отправлено с адреса, который не имеет почтового ящика (например, список рассылки), папки "Отправленные" у пользователя, значащегося в качестве отправителя, нет.
@@ -208,7 +208,7 @@ Content-Type: application/json
 Дополнительные сведения:
 
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [вариантов использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) API почты в Microsoft Graph 1.0.
+- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [вариантов использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) API почты в Microsoft Graph 1.0.
 
 <!--
 {

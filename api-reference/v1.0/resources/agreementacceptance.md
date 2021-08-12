@@ -1,22 +1,22 @@
 ---
 title: тип ресурса agreementAcceptance
-description: Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с использованием Azure Active Directory (Azure AD).
+description: Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: ac0e6d67e10e7d7b81fc1c5c21e93251f84cab0a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3e90efb1ff9e96b9e3f7b516f815201288edcd4aa9f7891af1a1320b8e0c3735
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135366"
 ---
 # <a name="agreementacceptance-resource-type"></a>тип ресурса agreementAcceptance
 
 Пространство имен: microsoft.graph
 
-Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с использованием Azure Active Directory (Azure AD).
+Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с Azure Active Directory (Azure AD).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |

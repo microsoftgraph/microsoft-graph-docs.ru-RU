@@ -1,16 +1,16 @@
 ---
 title: тип ресурса teamworkBot
-description: Бот в экосистеме Microsoft Teams.
+description: Бот в Microsoft Teams экосистеме.
 author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 99bdde9a4ff26945dd5aa040f2741fdf50c1273b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ccfbb82cace0f9bc38eeb3a5e49a185b12abc99376497bb900e0f150bc39b5c6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50476440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249106"
 ---
 # <a name="teamworkbot-resource-type"></a>тип ресурса teamworkBot
 

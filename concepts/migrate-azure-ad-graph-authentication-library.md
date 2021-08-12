@@ -1,23 +1,23 @@
 ---
 title: Просмотр изменений библиотеки проверки подлинности приложений
-description: Описывает, как обновить использование библиотеки проверки подлинности для переноса приложения из приложений API Azure Active Directory (Azure AD) в API Microsoft Graph.
+description: Описывает, как обновить использование библиотеки проверки подлинности для переноса приложения из приложений API Azure Active Directory (Azure AD) в API Microsoft Graph API.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: ef49c6a3448dd63a7c933bb40748f218d6fd2db0
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f1b502c3d72fd194b809e355f09e43154ff5a4f27569c0fc534fcbfc55f11123
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163502"
 ---
 # <a name="review-app-authentication-library-changes"></a>Просмотр изменений библиотеки проверки подлинности приложений
 
 Эта статья является *частью шага 3: просмотрите* сведения о процессе переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-Большинство приложений используют библиотеку проверки подлинности для получения и управления маркерами доступа для вызова Microsoft Graph.  Корпорация Майкрософт предлагает две библиотеки проверки подлинности:
+Большинство приложений используют библиотеку проверки подлинности для приобретения и управления маркерами доступа для вызова Microsoft Graph.  Корпорация Майкрософт предлагает две библиотеки проверки подлинности:
 
-- [Библиотека проверки подлинности Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
+- [Azure Active Directory проверки подлинности](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
 - [Библиотека проверки подлинности Майкрософт](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
 ## <a name="updating-adal"></a>Обновление ADAL
@@ -32,7 +32,7 @@ ms.locfileid: "50760688"
 
     `https://graph.microsoft.com`
 
-    После этого изменения вновь приобретенные маркеры имеют те же области, но аудитория маркеров доступа теперь — Microsoft Graph.  
+    После этого изменения вновь приобретенные маркеры имеют те же области, но аудитория маркеров доступа теперь Graph.  
 
     После обновления **resourceURL** и проверки функциональных возможностей выпустите промежуточное обновление, чтобы пользователи могли работать.
 
@@ -56,5 +56,5 @@ var scopes = new string[] { "https://graph.microsoft.com/.default" };
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте о различиях клиентской [библиотеки .NET](migrate-azure-ad-graph-client-libraries.md) между Azure AD Graph и Microsoft Graph.
+- Узнайте [о различиях](migrate-azure-ad-graph-client-libraries.md) клиентской библиотеки .NET между Azure AD Graph и Microsoft Graph.
 - Снова [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список.

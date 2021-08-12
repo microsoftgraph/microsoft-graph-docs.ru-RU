@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c0e47c6de003bdb24cea59bc0f36e76db4e68472
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f5d14ecc7a6e6f21ab784d5416c03c69284555e34d00fa6a37355a156553abec
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175436"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "50958229"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.Read.All |
+|Приложение | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

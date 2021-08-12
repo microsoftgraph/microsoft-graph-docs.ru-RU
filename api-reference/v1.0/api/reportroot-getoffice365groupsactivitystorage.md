@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3a2a588e026b820e9e103e98f5188e18cef0c14d
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 7b16306e3bc48b6d168fbc3141a7824b3393cf0c3cfdd808eb4d474755000b79
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981986"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124670"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 
@@ -18,7 +18,7 @@ ms.locfileid: "49981986"
 
 Узнайте, сколько места в хранилище занято всеми почтовыми ящиками и сайтами групп.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 — группы Microsoft 365.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов — Microsoft 365 групп.](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -68,7 +68,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Mailbox Storage Used (Byte) [занято почтовыми ящиками (байт)]
 - Site Storage Used (Byte) [занято сайтами (байт)]
 - Report Date (дата отчета)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

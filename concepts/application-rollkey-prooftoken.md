@@ -4,12 +4,12 @@ description: В рамках подтверждения запроса для м
 localization_priority: Priority
 ms.prod: applications
 author: davidmu1
-ms.openlocfilehash: c459159c780b819589b196dcc44ee0a0cf9a65af
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: dedd2c8b3439027a02f36e5a1ba1f41bfa830708da73bd1313eacaf32c739c70
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760835"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163609"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Создание маркеров подтверждения владения для смены ключей
 

@@ -4,12 +4,12 @@ description: 'Microsoft Intune помогает предприятиям упр�
 author: dougeby
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 384c05e6067d7e38d4f873ed1ef4605cdf0dec09
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 373746111008e627dc066024afa9703794e2e95ee99c048f602578b51e7a64a6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205187"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Обзор API устройств и приложений Intune
 

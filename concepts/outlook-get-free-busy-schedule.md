@@ -4,12 +4,12 @@ description: Общим сценарием на рабочем месте или
 author: tariq-sharif
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d3d8379f05d6e19505bdf3c45cca0863a685423d
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 865b67e40dbf11f9e6d4a2d8b0cf92e49353d0257c7605a8fc998d9e134e080f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317133"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157909"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Получение расписания доступности пользователей и ресурсов
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 37b1a54bf0451c283432970f6f14e01db6e94753
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 0d0862be39ca7dbaffe60b57294d407808e6c8329f9c8bd837f55b7a2bd52918
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230797"
 ---
 # <a name="educationassignment-resource-type"></a>тип ресурса educationAssignment
 
@@ -33,7 +33,7 @@ API назначения выставляются в пространстве и
 |[Обновление](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Обновление **объекта educationAssignment.** |
 |[Удаление](../api/educationassignment-delete.md) | Нет |Удаление **объекта educationAssignment.** |
 |[Публикация](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Изменение состояния объекта **educationAssignment** с черновика на опубликованный.|
-|[Настройка папки ресурсов назначения](../api/educationassignment-setupresourcesfolder.md)| строка| Создание папки SharePoint (в заранее определенном расположении) для отправки файлов в качестве ресурсов назначения|
+|[Настройка папки ресурсов назначения](../api/educationassignment-setupresourcesfolder.md)| Строка| Создание папки SharePoint (в заранее определенном расположении) для отправки файлов в качестве ресурсов назначения|
 |[Список ресурсов](../api/educationassignment-list-resources.md) |[коллекция educationAssignmentResource](educationassignmentresource.md)| Получите **коллекцию объектов educationAssignmentResource.**|
 |[Отправки списков](../api/educationassignment-list-submissions.md) |[коллекция educationSubmission](educationsubmission.md)| Получите **коллекцию объектов educationSubmission.**|
 |[Перечисление категорий](../api/educationassignment-list-categories.md) |[коллекция educationCategory](educationcategory.md)| Получите **коллекцию объектов educationCategory.**|
@@ -47,8 +47,8 @@ API назначения выставляются в пространстве и
 |:---------------|:--------|:----------|
 |id|String| Только для чтения.|
 |addedStudentAction|String|Необязательное поле для управления поведением назначения для студентов, добавленных после публикации назначения. Если не указано, значение по `none` умолчанию. В настоящее время поддерживает только два значения: `none` или `assignIfOpen` .|
-|allowLateSubmissions|Логический| Определяет, могут ли студенты отправлять их после даты. Если это свойство не указано во время создания, оно по умолчанию указывает значение true. |
-|allowStudentsToAddResourcesToSubmission|Логический| Определяет, могут ли учащиеся добавлять собственные ресурсы в отправку или изменять только ресурсы, добавленные преподавателем. |
+|allowLateSubmissions|Логическое| Определяет, могут ли студенты отправлять их после даты. Если это свойство не указано во время создания, оно по умолчанию указывает значение true. |
+|allowStudentsToAddResourcesToSubmission|Логическое| Определяет, могут ли учащиеся добавлять собственные ресурсы в отправку или изменять только ресурсы, добавленные преподавателем. |
 |assignDateTime|DateTimeOffset|Дата, когда назначение должно стать активным.  Если в будущем назначение не отображается учащемуся до этой даты.  Тип **Timestamp** представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Какие пользователи или весь класс должны получать объект отправки после публикации назначения. |
 |assignedDateTime|DateTimeOffset|Момент публикации задания для учащихся и его назначение указывается на временной шкале учащихся.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
@@ -65,12 +65,12 @@ API назначения выставляются в пространстве и
 |notificationChannelUrl|String|Необязательное поле для указания URL-адреса [канала для](channel.md) публикации уведомления о публикации назначения. Если не указано или не указано значение null, по умолчанию передается `General` каналу. Это поле применяется только к назначениям, где **значение assignTo** — [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Обновление **уведомленияChannelUrl** не допускается после публикации назначения.|
 |status|string| Состояние **назначения**.  Это значение не может быть исправлено.  Возможные значения: `draft`, `scheduled`, `published`, `assigned`.|
 |webUrl|string| URL-адрес глубокой ссылки для данного назначения.|
-|resourcesFolderUrl|строка| URL-адрес папки, в котором хранятся все ресурсы файла для этого назначения.|
+|resourcesFolderUrl|Строка| URL-адрес папки, в котором хранятся все ресурсы файла для этого назначения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|resources|[коллекция educationAssignmentResource](educationassignmentresource.md)| Изучение объектов, связанных с этим назначением.  Изменить этот список могут только преподаватели. Допускается значение null.|
+|resources|[коллекция educationAssignmentResource](educationassignmentresource.md)| Обучение объектов, связанных с этим назначением.  Изменить этот список могут только преподаватели. Допускается значение null.|
 |отправки|[коллекция educationSubmission](educationsubmission.md)| После публикации для каждого учащегося будет размещен объект отправки, представляющий его работу и оценку.  Только для чтения. Допускается значение null.|
 |categories|[коллекция educationCategory](educationcategory.md)| При наборе позволяет пользователям легко находить назначения того или иного типа.  Только для чтения. Допускается значение null.|
 |рубрики|[educationRubric](educationrubric.md)|При наборе к этому назначению прилагается рубрика классификации.|

@@ -1,21 +1,21 @@
 ---
 title: тип ресурса microsoftAuthenticatorAuthenticationMethodTarget
-description: Коллекция пользователей или групп, включенная для использования политики методов проверки подлинности Microsoft Authenticator.
+description: Коллекция пользователей или групп, включенная для Microsoft Authenticator методов проверки подлинности.
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 43c8e5a4ba92e838a64ec5f345ae82c744b53dee
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5fc1f6dfd2d28e6a0e6e4643b239ed50ba41309dce90448e373f8851040a1478
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469250"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249169"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodtarget-resource-type"></a>тип ресурса microsoftAuthenticatorAuthenticationMethodTarget
 Пространство имен: microsoft.graph
 
-Коллекция пользователей или групп, включенная для использования политики методов проверки подлинности [Microsoft Authenticator](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) в Azure AD.
+Коллекция пользователей или групп, с помощью [Microsoft Authenticator методов](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md) проверки подлинности в Azure AD.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

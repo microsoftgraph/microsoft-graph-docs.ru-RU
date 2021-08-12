@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 3abed0479d6746c1ba1c1279512317ab60445377
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 096574328a5dc5c1bb8c59020398c33396291afc97207a9f59408da9a8a45196
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202548"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>Тип ресурса builtInIdentityProvider
 Пространство имен: microsoft.graph
@@ -33,7 +33,7 @@ ms.locfileid: "53534125"
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Идентификатор поставщика удостоверений. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md). Только для чтения.|
+|id|String|Идентификатор поставщика удостоверений. Наследуется от [identityProviderBase](../resources/identityproviderbase.md). Только для чтения.|
 |displayName|String|Отображаемое имя поставщика удостоверений. Наследуется от [identityProviderBase](../resources/identityproviderbase.md).|
 |identityProviderType|String|Тип поставщика удостоверений Возможные значения для сценария B2B: `AADSignup`, `MicrosoftAccount`, `EmailOTP`. Обязательный элемент.|
 

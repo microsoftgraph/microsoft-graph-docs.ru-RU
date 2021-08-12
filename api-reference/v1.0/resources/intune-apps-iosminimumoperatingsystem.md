@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00c3bf8fc86dc1f7a69b43b438824b2a10ffb74a
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 30683c35ae92cd1172fd3a83ab8110b3b07c7afb53a33686db27911678441717
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243562"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -27,11 +27,11 @@ ms.locfileid: "52755149"
 |v9_0|Boolean|Версия 9.0 или выше.|
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Boolean|Версия 12.0 или более поздней версии.|
-|v13_0|Boolean|Версия 13.0 или более поздней версии.|
-|v14_0|Boolean|Версия 14.0 или более поздней версии.|
+|v12_0|Логический|Версия 12.0 или более поздней версии.|
+|v13_0|Логическое|Версия 13.0 или более поздней версии.|
+|v14_0|Логический|Версия 14.0 или более поздней версии.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa2581975be32cbed047d54d8abde2bbbd164936
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b60c8a684ffabb742d872b1490f8c0d2893fd1f06c5867b7a3aea73a11062ba4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180770"
 ---
 # <a name="ioslobapp-resource-type"></a>Тип ресурса iosLobApp
 
@@ -59,7 +59,7 @@ ms.locfileid: "52755163"
 |versionNumber|String|Номер версии бизнес-приложения для iOS.|
 |buildNumber|String|Номер сборки бизнес-приложения для iOS.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

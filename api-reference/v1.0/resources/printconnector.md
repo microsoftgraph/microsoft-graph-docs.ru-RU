@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: e791ca755b695fc8e4704b65aff98a9db934d901
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: c0d24ff6dca0a8866165b40f440ecc2e0d31c1f118d3d3e8a8a41dda96f6038d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205285"
 ---
 # <a name="printconnector-resource-type"></a>тип ресурса printConnector
 
@@ -31,15 +31,15 @@ ms.locfileid: "50517949"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String| Только для чтения.|
-|displayName|Строка|Имя соединитетеля.|
-|fullyQualifiedDomainName|Строка|Имя хост-имени соединители.|
+|displayName|String|Имя соединитетеля.|
+|fullyQualifiedDomainName|String|Имя хост-имени соединители.|
 |operatingSystem|String|Версия операционной системы соединитетеля.|
-|appVersion|Строка|Версия соединиттеля.|
-|location|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
+|appVersion|String|Версия соединиттеля.|
+|расположение|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
 |registeredDateTime|DateTimeOffset|DateTimeOffset при регистрации соединитетеля.|
 |registeredBy|[userIdentity](useridentity.md)|Пользователь, зарегистрировавший соединители.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

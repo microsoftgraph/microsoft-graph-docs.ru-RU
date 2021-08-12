@@ -3,12 +3,12 @@ title: Страница через коллекцию с помощью SDKs Gra
 description: Содержит инструкции по созданию запросов Graph API Майкрософт с помощью SDKs Graph Microsoft.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: d06a23e5c1e53042192fe3fe8b4c8e3fe13c488d
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: c0a291e71553f0e0c922756b4bfaa6ff86d6ae6cbbace9936eda3cad6d3124b4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174705"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Страница через коллекцию с помощью SDKs Graph Microsoft
 
@@ -16,7 +16,7 @@ ms.locfileid: "52579664"
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-Если вы отправляете дополнительные заглавные главы запросов в первоначальном запросе, эти заглавные по умолчанию не включаются в последующие запросы страниц. Если эти заглавные главы необходимо отправить по последующим запросам, их необходимо установить явно.
+Если вы отправляете дополнительные заглавные главы запросов в первоначальном запросе, эти заглавные по умолчанию не включаются в последующие запросы страниц. Если эти заголовки требуется отправлять в последующие запросы, их необходимо явно настроить.
 
 ## <a name="iterate-over-all-the-messages"></a>Итерировать все сообщения
 

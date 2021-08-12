@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 42369cd75b030ee7c46a6f270fcee548f42338a4
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: bf19b34143935f66ab835cd12a47881bc0b1b1b2aa1f960d1d35f4be3d2ed41a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238155"
 ---
 # <a name="chatmessagementionedidentityset-resource-type"></a>тип ресурса chatMessageMentionedIdentitySet
 
@@ -27,7 +27,7 @@ ms.locfileid: "53211127"
 |application|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Если присутствует, представляет приложение (например, бот) @mentioned в [сообщении.](../resources/chatmessage.md)|
 |conversation|[teamworkConversationIdentity](../resources/teamworkconversationidentity.md)|При этом представляет беседу (например, команду или канал) @mentioned в [сообщении.](../resources/chatmessage.md)|
 |device;|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Не используется, так как не поддерживается для @mention устройств.|
-|user|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Если присутствует, представляет пользователя @mentioned в [сообщении](../resources/chatmessage.md).|
+|пользователь|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Если присутствует, представляет пользователя @mentioned в [сообщении](../resources/chatmessage.md).|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

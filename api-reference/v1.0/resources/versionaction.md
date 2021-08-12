@@ -5,20 +5,20 @@ description: Объект VersionAction предоставляет сведен�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f47d90c899ea9eb011837ae3c47dd6ec7ae22f30
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bb1061e09b78a2069b1182811573564804b25d9dfe7d1f8dced0cfb55e62e5dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238990"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129885"
 ---
 # <a name="versionaction-resource-type"></a>Тип ресурса versionAction
 
 Пространство имен: microsoft.graph
 
-Наличие ресурса **versionAction** в [**itemActivity**][activity] указывает на то, что действие вызвало новую версию для создания.
+Наличие ресурса **versionAction** в [**itemActivity**][activity] указывает на то, что действие привело к создания новой версии.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
@@ -33,12 +33,12 @@ ms.locfileid: "50238990"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.versionAction"
+  "@type&quot;: &quot;microsoft.graph.versionAction"
 }-->
 
 ```json
 {
-  "newVersion": "string"
+  "newVersion&quot;: &quot;string"
 }
 ```
 

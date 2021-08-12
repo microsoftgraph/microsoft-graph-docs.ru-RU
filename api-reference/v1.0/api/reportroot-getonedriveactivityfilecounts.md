@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7f03aa980ceead767ea59f641620c212dbbfabb5
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9ace212d96cdb2352c5febf0dc103e743a873413e2b51208f5d29d3c2f2704a8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202639"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983015"
 
 Получение количества уникальных пользователей с лицензией, которые работали с файлами в любой учетной записи OneDrive.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365: действия в OneDrive для бизнеса.](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)
+> **Примечание:** Подробные сведения о различных представлениях и именах [отчетов см. в Microsoft 365 отчетов — OneDrive для бизнеса действий.](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -70,7 +70,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Shared Internally" (К чему предоставлен доступ внутренним пользователям);
 - "Shared Externally" (К чему предоставлен доступ внешним пользователям);
 - "Report Date" (Дата отчета);
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

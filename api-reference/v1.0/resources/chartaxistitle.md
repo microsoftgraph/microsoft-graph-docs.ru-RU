@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f43e780a6a574b465f293f432cb4581d645bba3c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e39d6c8ce7aa4d4523fac00591b251ed2a66b1247258f74a469f283cc21422b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135290"
 ---
 # <a name="chartaxistitle-resource-type"></a>Тип ресурса ChartAxisTitle
 
@@ -23,8 +23,8 @@ ms.locfileid: "48069206"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [воркбукчартаксиститле](chartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
-|[Обновление](../api/chartaxistitle-update.md) | [воркбукчартаксиститле](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
+|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [КнигаChartAxisTitle](chartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
+|[Обновление](../api/chartaxistitle-update.md) | [КнигаChartAxisTitle](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -35,7 +35,7 @@ ms.locfileid: "48069206"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[воркбукчартаксиститлеформат](chartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
+|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
