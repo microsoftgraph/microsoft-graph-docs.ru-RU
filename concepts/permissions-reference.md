@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a98c092294f28b32ba5fc8a747b1ff9aad1ee17a
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 905316d0b080d718ab44388613d7a6b10192e1c4
+ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580421"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53726742"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -210,7 +210,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="delegated"></a>Делегированное
+#### <a name="delegated"></a>Делегированные
 * _AppCatalog.ReadWrite.All_. [Составление списка всех приложений в каталоге](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true) (`GET /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Публикация приложения](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true) (`POST /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
@@ -1297,7 +1297,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Делегированные
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -1321,7 +1321,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 *Notifications.ReadWrite.CreatedByApp* поддерживается как для учетных записей Майкрософт, так и для рабочих или учебных рабочих записей.
 Ограничение *CreatedByApp*, связанное с этим разрешением, означает, что служба будет применять неявную фильтрацию результатов на основе удостоверения вызывающего приложения: либо идентификатора приложения учетной записи Майкрософт, либо набора идентификаторов, настроенных для идентификации кроссплатформенных приложений.
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированное
+#### <a name="delegated"></a>Делегированные
 * _Notifications.ReadWrite.CreatedByApp_. Публикация ориентированного на пользователя уведомления, которое может затем доставляться различным клиентам приложения пользователя, запущенным в других конечных точках. (POST /me/notifications/).
 
 ---
@@ -1510,7 +1510,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 |:---------- |:-------------- |:----------- |:---------------------- |
 | _PrivilegedAccess.Read.AzureAD_ |Чтение данных управления привилегированными пользователями для каталога  | Позволяет приложению считывать право доступа к API управления привилегированными пользователями для Azure AD. | Да |
 | _PrivilegedAccess.Read.AzureADGroup_ |Чтение данных управления привилегированными пользователями для групп с привилегированным доступом | Позволяет приложению считывать право доступа к API управления привилегированными пользователями для групп. | Да |
-| _PrivilegedAccess.Read.AzureADResources_ |Чтение данных управления привилегированными пользователями для ресурсов Azure | Позволяет приложению считывать право доступа к API управления привилегированными пользователями для ресурсов Azure AD. | Да |
+| _PrivilegedAccess.Read.AzureResources_ |Чтение данных управления привилегированными пользователями для ресурсов Azure | Позволяет приложению считывать право доступа к API управления привилегированными пользователями для ресурсов Azure AD. | Да |
 
 ---
 

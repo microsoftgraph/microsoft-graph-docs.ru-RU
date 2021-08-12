@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9adcc417a208a42eb075103c6f1fe17ebb00e7dd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 083f4843c859835f241822d49a7199297c38d531dd7e7245483f623e4a5b89f7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755479"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121657"
 ---
 # <a name="create-devicemanagementexportjob"></a>Создание deviceManagementExportJob
 

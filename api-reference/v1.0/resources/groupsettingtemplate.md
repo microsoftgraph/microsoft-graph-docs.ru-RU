@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a7868538c13b1e386e7aa10dcdf3fed9c03b198f
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: cee687125563e1e757448f4a807143edd1fdb02107ca70c2ccf27dec367508a5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212076"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>тип ресурса groupSettingTemplate
 

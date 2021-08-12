@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса УнмутепартиЦипантоператион
-description: Описывает формат ответа для функции "без звука".
+title: тип ресурса unmuteParticipantOperation
+description: Описывает формат ответа участника вызова, который не будет игнорировать операцию.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4a3a4428f1c7be9a840b18625b788b26751eca57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f829a71905275a338e5bb76cb6e86fd9cb425b50eb7a15b1f5bbdeaf2d1f7089
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235242"
 ---
-# <a name="unmuteparticipantoperation-resource-type"></a>Тип ресурса УнмутепартиЦипантоператион
+# <a name="unmuteparticipantoperation-resource-type"></a>тип ресурса unmuteParticipantOperation
 
 Пространство имен: microsoft.graph
 
-Описывает формат ответа для функции "без звука".
+Описывает формат ответа участника вызова, который не будет игнорировать операцию.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | Строка                      | Уникальная строка контекста клиента. Может содержать до 256 символов.                                                                               |
-| id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                            |
+| clientContext                  | String                      | Уникальная строка контекста клиента. Может иметь не более 256 символов.                                                                               |
+| id                             | String                      | ID операции сервера. Только для чтения.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                            |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 

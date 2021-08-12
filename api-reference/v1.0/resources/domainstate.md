@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9ab9a4af3109e35cd1022b4d62869ce3bb034100
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 3d2140d0b0067ec576433b442446472d0a6af80fd4152131ea79d384a8d623c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218802"
 ---
 # <a name="domainstate-resource-type"></a>тип ресурса domainState
 

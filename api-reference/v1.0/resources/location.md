@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6d49f3675362c31074fb5e9cbdf79787ceb1b5af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf5e8c85f2cb368f409c864cbd07325068d0fa4f75aedebede6eae0c5c1eb8ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246663"
 ---
 # <a name="location-resource-type"></a>Тип ресурса Location
 
@@ -32,12 +32,12 @@ ms.locfileid: "48079146"
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
-| displayName  | Строка | Имя, связанное с расположением.                       |
+| displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный электронный адрес для расположения.              |
 | locationUri | String | Необязательный URI, представляющий местоположение. |
-| locationType | locationType | Тип расположения. Возможные значения:,, `default` `conferenceRoom` ,, `homeAddress` `businessAddress` `geoCoordinates` , `streetAddress` , `hotel` , `restaurant` , `localBusiness` , `postalAddress` . Только для чтения.|
+| locationType | locationType | Тип расположения. Возможные значения: `default` `conferenceRoom` , , , , , , `homeAddress` , `businessAddress` `geoCoordinates` `streetAddress` `hotel` `restaurant` `localBusiness` `postalAddress` . Только для чтения.|
 | uniqueId | String | Только для внутреннего использования.|
-| uniqueIdType | локатионуникуеидтипе | Только для внутреннего использования. |
+| uniqueIdType | locationUniqueIdType | Только для внутреннего использования. |
 
 ## <a name="json-representation"></a>Представление JSON
 

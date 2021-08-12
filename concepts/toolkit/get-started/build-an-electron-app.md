@@ -1,18 +1,18 @@
 ---
-title: Используйте microsoft Graph набор средств с электронным
+title: Использование microsoft Graph набор средств с электронным
 description: Начало работы с помощью microsoft Graph набор средств в приложении Electron.
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: b57315e3fcc44f94cc18d3f4a93826b00a5ce4b9
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 4c415d7d99981f3bd3e10180d46a142e5f80231ed7d5222a64faaf7942a05044
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157902"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Используйте microsoft Graph набор средств с электронным
+# <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Использование microsoft Graph набор средств с электронным
 
-В этой статье описывается пошаговой процесс использования microsoft Graph набор средств для создания приложения Electron и подключения его к Microsoft 365. После выполнения действий у вас будет приложение Electron, которое отображает предстоящие встречи подписанного пользователя из Microsoft 365.
+В этой статье описывается пошаговая процедура использования microsoft Graph набор средств для создания приложения Electron и подключения его к Microsoft 365. После выполнения действий у вас будет приложение Electron, которое отображает предстоящие встречи подписанного пользователя с Microsoft 365.
 
 ## <a name="create-an-electron-app"></a>Создание приложения Electron 
 Создайте новое приложение Electron, клонив репозиторий [электронного](https://github.com/electron/electron-quick-start-typescript) быстрого запуска. Это создаст новое приложение Electron с помощью TypeScript, которое поможет вам написать более надежный код и избежать ошибок во время работы.
@@ -28,7 +28,7 @@ cd electron-quick-start-typescript
 npm install
 ```
 
-Установите пакет @microsoft/mgt-components, содержащий все веб-компоненты, связанные с Microsoft Graph.
+Установите пакет @microsoft/mgt-components, содержащий все веб-Graph Microsoft.
 
 ```cmd
 npm i @microsoft/mgt-components
@@ -50,11 +50,11 @@ npm start
 
 ### <a name="add-new-application-registration-in-azure-ad-to-get-a-client-id"></a>Добавление новой регистрации приложений в Azure AD, чтобы получить ИД клиента
 
-Чтобы создать приложение в Azure Active Directory (Azure AD), необходимо добавить новую регистрацию приложений, а затем настроить имя приложения и перенаправить URI.
+Чтобы создать приложение в Azure Active Directory (Azure AD), необходимо добавить новую регистрацию приложения, а затем настроить имя приложения и перенаправить URI.
 
 Чтобы создать приложение в Azure AD:
 
-1. Перейдите на [портал Azure.](https://portal.azure.com)
+1. Перейдите на [портал Azure](https://portal.azure.com).
 1. В меню выберите **Azure Active Directory**.
 1. В меню Azure Active Directory выберите **Регистрация приложений**.
 1. В верхнем меню нажмите кнопку **Новая регистрация**.
@@ -129,7 +129,7 @@ const mainWindow = new BrowserWindow({
  
 ### <a name="add-components-to-your-html-page"></a>Добавление компонентов на страницу HTML
  
-Добавьте некоторое содержимое в приложение. Теперь вы можете использовать компоненты наборов инструментов Microsoft Graph на странице *index.html* и показать повестку дня пользователя. Замените содержимое страницы *index.html* следующим.
+Добавьте некоторое содержимое в приложение. Теперь вы можете использовать компоненты Graph Microsoft на странице *index.html* и показать повестку дня пользователя. Замените содержимое страницы *index.html* следующим.
  
  ```html
 <!DOCTYPE html>

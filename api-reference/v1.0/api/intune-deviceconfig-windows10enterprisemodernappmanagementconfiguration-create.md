@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d24727218a61ba03302857e9a3b079a0e40d876
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4126360ff206ea59bb3c36ef6293058f5364dba4f83961c6ef48bdd441dbc400
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52760547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169951"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>Создание объекта windows10EnterpriseModernAppManagementConfiguration
 

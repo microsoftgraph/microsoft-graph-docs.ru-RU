@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 508f8c79606ef6e9e0d3778899cb04789b9defde
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e3ef8c7dee695255c7802780f786d4555adc61dae78db191010e7e88d6e3190a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138530"
 ---
 # <a name="offershiftrequest-resource-type"></a>тип ресурса offerShiftRequest
 
@@ -24,7 +24,7 @@ ms.locfileid: "50720804"
 |:-------------|:------------|:------------|
 | [Список](../api/offershiftrequest-list.md) | Коллекция [offerShiftRequest](offershiftrequest.md) | Ознакомьтесь с свойствами и отношениями всех **объектов offerShiftRequest** в команде. |
 | [Создание](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Создание экземпляра объекта **offerShiftRequest.** |
-| [получение](../api/offershiftrequest-get.md); | [offerShiftRequest](offershiftrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **offerShiftRequest.** |
+| [Получение](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **offerShiftRequest.** |
 |[Утвердить](../api/offershiftrequest-approve.md)|Нет|Утверждение **предложенияShiftRequest**. |
 |[Отклонение](../api/offershiftrequest-decline.md)|Нет|Отклонение **предложенияShiftRequest**. |
 

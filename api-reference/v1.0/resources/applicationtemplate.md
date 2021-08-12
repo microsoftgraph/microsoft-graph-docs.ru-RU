@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 1ee619c53d083a4d1ccc91e904b4158643e8ca5b
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: f9ec36c667bdf4e253b0b8bcc555e77bf7659e554a115f1f7ec39b7b22f3f8f6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155199"
 ---
 # <a name="applicationtemplate-resource-type"></a>тип ресурса applicationTemplate
 
@@ -37,7 +37,7 @@ ms.locfileid: "51836873"
 | id                         | String            | Уникальный идентификатор для приложения. Только для чтения.                                                                                                                                                                                                                                                                                                                                                                                               |
 | logoUrl                    | String            | URL-адрес для получения логотипа для этого приложения.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | publisher                  | String            | Имя издателя для этого приложения.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| supportedProvisioningTypes | Коллекция String | Список режимов подготовка, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .                                                                                                                                                                                                                                                                                                                                                   |
+| supportedProvisioningTypes | Коллекция строк | Список режимов подготовка, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .                                                                                                                                                                                                                                                                                                                                                   |
 | supportedSingleSignOnModes | Коллекция String | Список режимов единой регистрации, поддерживаемых этим приложением. Поддерживаемые значения: `oidc`, `password`, `saml` и `notSupported`.                                                                                                                                                                                                                                                                                                            |
 
 ## <a name="relationships"></a>Связи

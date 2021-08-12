@@ -1,24 +1,24 @@
 ---
 author: daspek
-title: Тип ресурса deleteAction
+title: тип ресурса deleteAction
 description: Объект deleteAction предоставляет сведения об удалении элемента.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e78b4369606b0e0e3880fc3bfd13fdec263fcb58
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: c57e9e430cb9f08ee4feca7345551a9a175c974c338d8a538c98a77b8ac5a32b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178487"
 ---
-# <a name="deleteaction-resource-type"></a>Тип ресурса deleteAction
+# <a name="deleteaction-resource-type"></a>тип ресурса deleteAction
 
 Пространство имен: microsoft.graph
 
-Наличие ресурса **deleteAction** в [**itemActivity**][activity] указывает, что действие удалило элемент.
+Наличие ресурса **deleteAction** в [**itemActivity**][activity] указывает на то, что действие удалило элемент.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
@@ -27,7 +27,7 @@ ms.locfileid: "50239634"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | Имя элемента, который был удален.
-| objectType    | string | `File` или `Folder` , в зависимости от типа удаленного элемента.
+| objectType    | Строка | `File` или `Folder` , в зависимости от типа удаленного элемента.
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -35,13 +35,13 @@ ms.locfileid: "50239634"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.deleteAction"
+  "@type&quot;: &quot;microsoft.graph.deleteAction"
 }-->
 
 ```json
 {
   "name": "string",
-  "objectType": "File | Folder"
+  "objectType&quot;: &quot;File | Folder"
 }
 ```
 

@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: a710c1c2de9a2ff127b19a083a3c90d5bfface5a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 49b5031da7ecf3ca50ea58db25d4c23c92343526db74bf771a131bfadff334e8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189249"
 ---
 # <a name="timeoffitem-resource-type"></a>тип ресурса timeOffItem
 
@@ -21,7 +21,7 @@ ms.locfileid: "50720844"
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | string                  | ID этого `timeOffReason` `timeOffItem` . Обязательный.     |
+| timeOffReasonId               | Строка                  | ID этого `timeOffReason` `timeOffItem` . Обязательный элемент.     |
 | startDateTime               | DateTimeOffset                  | Дата и время начала для ресурса `timeOffItem`. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | endDateTime               | DateTimeOffset                  | Дата и время окончания для ресурса `timeOffItem`. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | theme | scheduleEntityTheme   | Поддерживаемые цвета: белый, синий, зеленый, фиолетовый, розовый, желтый, серый, темно-синий, темно-зеленый, темно-фиолетовый, темно-розовый, темно-желтый. |

@@ -1,28 +1,28 @@
 ---
 title: тип ресурса microsoftAuthenticatorAuthenticationMethodConfiguration
-description: Представляет политику методов проверки подлинности Microsoft Authenticator.
+description: Представляет политику Microsoft Authenticator методов проверки подлинности.
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0700a6811b35123709628abc66d8e4eb6b319a03
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d4b1e3a287b92804b99049020faea1206bd429743fcf03b778da1779f75c14c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182415"
 ---
 # <a name="microsoftauthenticatorauthenticationmethodconfiguration-resource-type"></a>тип ресурса microsoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-Представляет политику методов проверки подлинности Microsoft Authenticator. Политики методов проверки подлинности определяют параметры конфигурации, а также пользователей или групп, которые могут использовать метод проверки подлинности.
+Представляет политику Microsoft Authenticator методов проверки подлинности. Политики методов проверки подлинности определяют параметры конфигурации, а также пользователей или групп, которые могут использовать метод проверки подлинности.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Получение](../api/microsoftauthenticatorauthenticationmethodconfiguration-get.md)|[MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Ознакомьтесь с свойствами и отношениями объекта MicrosoftAuthenticatorAuthenticationMethodConfiguration.|
 |[Обновление](../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md)|[MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md)|Обновление свойств объекта MicrosoftAuthenticatorAuthenticationMethodConfiguration.|
-|[удаление](../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md);|Нет|Возвращает объект MicrosoftAuthenticatorAuthenticationMethodConfiguration к конфигурации по умолчанию.|
+|[Удаление](../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md)|Нет|Возвращает объект MicrosoftAuthenticatorAuthenticationMethodConfiguration к конфигурации по умолчанию.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

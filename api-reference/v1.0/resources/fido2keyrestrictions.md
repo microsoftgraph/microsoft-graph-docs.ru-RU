@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c1781e39952bb3bf7cfb307d06ca3167ff58a2a6
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 29ec1327da2104ba14fcfb73cd4374453417f8c2c2f5cb1b10012131918f9baa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149942"
 ---
 # <a name="fido2keyrestrictions-resource-type"></a>тип ресурса fido2KeyRestrictions
 
@@ -21,9 +21,9 @@ ms.locfileid: "51469453"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|aaGuids|Коллекция String|Коллекция GUID-интерфейсов проверки подлинности. AADGUID определяет ключевые типы и производителей.|
+|aaGuids|Коллекция String|Коллекция GUID Authenticator проверки. AADGUID определяет ключевые типы и производителей.|
 |enforcementType|fido2RestrictionEnforcementType|Тип правоприменения. Возможные значения: `allow`, `block`.|
-|isEnforced|Логический|Определяет, включено ли правоприменительных ключевых элементов.|
+|isEnforced|Логическое|Определяет, включено ли правоприменительных ключевых элементов.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

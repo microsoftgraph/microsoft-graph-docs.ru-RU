@@ -1,22 +1,22 @@
 ---
-title: Создание или замена объекта historyItem
-description: Создание нового или замена существующего элемента журнала для существующего действия пользователя.
+title: Создание или замена historyItem
+description: Создайте новый элемент или замените существующий элемент истории для существующей активности пользователя.
 localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: ee46c25555e3621bd18d020bd3312bd7b1d543aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dfeb7dce28e04346e82a91feda155bc29db7013746dac44545ac7d48433d7bae
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083311"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192700"
 ---
-# <a name="create-or-replace-a-historyitem"></a>Создание или замена объекта historyItem
+# <a name="create-or-replace-a-historyitem"></a>Создание или замена historyItem
 
 Пространство имен: microsoft.graph
 
-Создание нового или замена существующего элемента журнала для существующего действия пользователя.
+Создайте новый элемент или замените существующий элемент истории для существующей активности пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,7 +37,7 @@ ms.locfileid: "48083311"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Идентификатор должен быть идентификатором GUID.
+Id должен быть GUID.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,11 +47,11 @@ PUT /me/activities/{id}/historyItems/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [historyItem](../resources/projectrome-historyitem.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [historyItem.](../resources/projectrome-historyitem.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан historyItem, или `200 OK` Если historyItem был заменен.
+В случае успешной работы этот метод возвращает код ответа, если был создан `201 Created` historyItem или заменен `200 OK` historyItem.
 
 ## <a name="example"></a>Пример
 

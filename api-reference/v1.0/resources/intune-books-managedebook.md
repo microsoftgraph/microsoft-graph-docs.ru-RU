@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d743b425cb57a0b233ae83e5e044fd63fc85890e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: b52c7a183046741e05afa6be2832dc6a32673cc62f06f542b75bae0d9e67bfbf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175226"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -41,7 +41,7 @@ ms.locfileid: "52755975"
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги.|

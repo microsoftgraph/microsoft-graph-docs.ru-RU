@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс calculatedColumn в ресурсе columnDefinition указывает, что данные столбца вычисляются на основании значений в других столбцах на сайте.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a75db3ea7a3973d57a3d09aa6cba2cb85a66ce11
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1fa095d07eb9a2625385f8d3a502bda94c664640f528a877b61e97c4b7d5aa87
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182576"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Тип ресурса calculatedColumn
 

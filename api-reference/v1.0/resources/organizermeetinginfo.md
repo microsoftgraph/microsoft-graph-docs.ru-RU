@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Организермитингинфо
+title: тип ресурса organizerMeetingInfo
 description: 'Содержит сведения об организаторе собрания. '
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d3b1f37e6ac5f33d6d59988054d5abfedf5e68e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc97e94b2657273a55798528991762e43ec98023ba3e861f51a0e03d3d27f13f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178131"
 ---
-# <a name="organizermeetinginfo-resource-type"></a>Тип ресурса Организермитингинфо
+# <a name="organizermeetinginfo-resource-type"></a>тип ресурса organizerMeetingInfo
 
 Пространство имен: microsoft.graph
 
 Содержит сведения об организаторе собрания. 
 
-Чтобы присоединиться к существующему собранию, необходимо либо указать сочетание типов ресурсов Организермитингинфо и [чатинфо](./chatinfo.md) , либо сам тип ресурса [токенмитингинфо](./tokenmeetinginfo.md) .
+Чтобы присоединиться к существующему собранию, необходимо либо предоставить сочетание типов ресурсов organismeetingInfo и [chatInfo,](./chatinfo.md) либо тип [ресурсов tokenMeetingInfo](./tokenmeetinginfo.md) сам по себе.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                          | Описание                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| organizer                    | [identitySet](identityset.md) | Удостоверение Azure Active Directory для организатора.  |
+| organizer                    | [identitySet](identityset.md) | Организатор Azure Active Directory удостоверение.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

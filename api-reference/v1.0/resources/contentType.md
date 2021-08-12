@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс contentType представляет тип контента в SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f49ce9d1c656975ee02e6c1056015f7e033d57f9
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1b307fb0b11b0608c15c46b618775dcef431815c4302a092e7e89f9cb7cb5942
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238563"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229292"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
 
@@ -55,9 +55,9 @@ ms.locfileid: "50238563"
 | **description**   | строка               | Текст с описанием элемента.
 | **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
 | **hidden**        | boolean              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
-| **id**            | string               | Уникальный идентификатор типа контента.
+| **id**            | строка               | Уникальный идентификатор типа контента.
 | **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.
-| **name**          | string               | Имя типа контента.
+| **name**          | строка               | Имя типа контента.
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.
 | **parentId**      | string               | Уникальный идентификатор типа контента.
 | **readOnly**      | boolean              | Если это свойство имеет значение `true`, вам не удастся изменить тип контента. Чтобы изменить тип контента, потребуется сначала присвоить этому свойству значение `false`.
@@ -81,6 +81,6 @@ ms.locfileid: "50238563"
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType"
+  "tocPath&quot;: &quot;Resources/ContentType"
 } -->
 

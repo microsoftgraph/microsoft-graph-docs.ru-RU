@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: e39a1c71064282f3422a3bc48e3d019a852dbb95
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: fc687460d397c4f8048607e1a1434ae48a7505d3af06590995dd2f47a08340d1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212122"
 ---
 # <a name="azure-active-directory-consent-requests"></a>Azure Active Directory запросов на согласие
 

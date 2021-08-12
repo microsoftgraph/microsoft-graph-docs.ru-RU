@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: df2435c3353bee76ad2ba875546ec505ce67a95f
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e25b614f960490f6e93e82bbcc8c07cc320235d884319f0f37a610855ef4c2e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169580"
 ---
 # <a name="windowsdevicetype-enum-type"></a>тип enum windowsDeviceType
 
@@ -27,7 +27,7 @@ ms.locfileid: "52755989"
 |настольный компьютер|1|Поддерживается ли тип Windows рабочего стола.|
 |мобильный|2|Поддерживается ли тип Windows мобильных устройств.|
 |голографический|4 |Поддерживается ли тип Windows или нет.|
-|team|8 |Поддерживается ли тип Windows team.|
+|команда|8 |Поддерживается ли тип Windows team.|
 
 
 

@@ -3,12 +3,12 @@ title: 'Microsoft Graph Toolkit: компоненты пользовательс
 description: Microsoft Graph Toolkit — это коллекция поставщиков проверки подлинности и многократно используемых, не зависящих от платформы веб-компонентов для доступа и работы в Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 3b9dd368f9fe565164f3025c1f3de81645ad22df
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 4997e58eb592ee7cbd8339a13c31389cdbab55818318c19087048bd9ff5905f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205026"
 ---
 # <a name="microsoft-graph-toolkit-ui-components-and-authentication-providers-for-microsoft-graph"></a>Microsoft Graph Toolkit: компоненты пользовательского интерфейса и поставщики проверки подлинности для Microsoft Graph 
 

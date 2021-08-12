@@ -1,22 +1,22 @@
 ---
 title: тип ресурса namedLocation
-description: Это базовый класс, который представляет расположение Azure Active Directory с именем. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+description: Это базовый класс, который представляет расположение Azure Active Directory имени. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9a454855a5f1048ddfeab89c85be25e02a26f82b
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 5083e526fcf1d9c4a6b844faa4584f7193144f0a813a53fa3e8446411e6d47f3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721910"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152364"
 ---
 # <a name="namedlocation-resource-type"></a>тип ресурса namedLocation
 
 Пространство имен: microsoft.graph
 
-Это базовый класс, который представляет расположение Azure Active Directory с именем. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+Это базовый класс, который представляет расположение Azure Active Directory имени. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 
 ## <a name="methods"></a>Методы
 

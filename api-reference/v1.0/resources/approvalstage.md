@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d6212553d9364c4352bf1d6796156a4020854bf1
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 49629542b36d7724b17406c14d925844873c8c964334c71b5eec81451376783c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469624"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147114"
 ---
 # <a name="approvalstage-resource-type"></a>Тип ресурса approvalStage
 
@@ -22,7 +22,7 @@ ms.locfileid: "51469624"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignedToMe|Логический|Указывает, назначен ли этап пользователю вызова для проверки. Только для чтения.|
+|assignedToMe|Логическое|Указывает, назначен ли этап пользователю вызова для проверки. Только для чтения.|
 |displayName|String|Метка, предоставленная создателем политики для определения стадии утверждения. Только для чтения.|
 |id|String|Идентификатор стадии, связанной с объектом утверждения. Только для чтения.|
 |обоснование|String|Обоснование, связанное с решением стадии утверждения.|

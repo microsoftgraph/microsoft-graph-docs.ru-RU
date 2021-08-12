@@ -1,20 +1,20 @@
 ---
 title: Обзор API Microsoft Teams
-description: 'Microsoft Teams — это единый центр для работы в группах и интеллектуального обмена данными. '
+description: 'Microsoft Teams — это единый центр для работы в группах и интеллектуального обмена данными. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: aa1cb7a2bedbf6ab696b6731546eb97861bfb697
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 5e3a8e6ba1110aa9183f9ab80732e6128b4c0d1ff327ab0bc13ee71aa5b26500
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218304"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
-[Microsoft Teams](https://products.office.com/microsoft-teams) — это единый центр для работы в группах и интеллектуального обмена данными. В основе Microsoft Teams лежат мощь и масштаб [Microsoft 365](https://products.office.com/) с более чем 120 млн пользователей. В нем имеются средства для совместной работы на основе чатов, собраний, звонков и корпоративные голосовые функции.
+[Microsoft Teams](https://products.office.com/microsoft-teams) — это единый центр для работы в группах и интеллектуального обмена данными. В основе Microsoft Teams лежат мощь и масштаб [Microsoft 365](https://products.office.com/) с более чем 120 млн пользователей. Microsoft Teams предоставляет средства для совместной работы на основе чатов, собраний, звонков и корпоративные голосовые функции.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]

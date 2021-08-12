@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Комплианцеинформатион
-description: Этот ресурс содержит данные соответствия требованиям, связанные с контролем безопасности по показателю.
+title: тип ресурса complianceInformation
+description: Этот ресурс содержит данные о соответствии требованиям, связанные с безопасным управлением счетами.
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 00447f134b2c54bdda92857c6c84c05e8c52b3cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 427660aa0f7227a4536a01cedcc7df818e8a499348c7be3f5be764f0764cad24
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54180875"
 ---
-#  <a name="complianceinformation-resource-type"></a>Тип ресурса Комплианцеинформатион
+#  <a name="complianceinformation-resource-type"></a>тип ресурса complianceInformation
 
 Пространство имен: microsoft.graph
 
-Содержит данные соответствия требованиям, связанные с контролем безопасного рейтинга.
+Содержит данные о соответствии требованиям, связанные с безопасным управлением счетами.
 
 ## <a name="properties"></a>Свойства
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|цертификатионнаме|String| Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171). |
-|цертификатионконтролс|Коллекция [цертификатионконтрол](certificationcontrol.md)|Коллекция элементов управления сертификацией, связанных с сертификацией|
+|certificationName|String| Имя сертификации соответствия требованиям (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
+|certificationControls|[коллекция certificationControl](certificationcontrol.md)|Коллекция элементов управления сертификацией, связанных с сертификацией|
 
 ## <a name="json-representation"></a>Представление JSON
 

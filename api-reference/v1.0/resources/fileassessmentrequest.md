@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 36ace43254e440b4777609ff31378621cffa25fd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 785947f21d3ec79c7233613990cc9ebd0e6d88be0ab8fbf9b14bcd3190e3bcf6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216940"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>тип ресурса fileAssessmentRequest
 

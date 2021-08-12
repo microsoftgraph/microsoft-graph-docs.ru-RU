@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 67e49c7cf9a23bbdfd0547e7b593c5a948359413
-ms.sourcegitcommit: 596b3d5636f3f3e042d180ea8f039f00ebd6b38a
+ms.openlocfilehash: a140f822e40f18b4430b28fab7b3aa28279acb92a50bab76fac28371b39706ff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "53665720"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192567"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 

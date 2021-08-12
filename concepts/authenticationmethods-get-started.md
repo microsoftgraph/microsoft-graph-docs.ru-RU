@@ -4,18 +4,18 @@ description: AP способов проверки подлинности в Micr
 author: mmcla
 localization_priority: Priority
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 36385345141daa8dc782b64fa154ef97c46b3091
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8750f56db54c1dd5c2ef8708ccd1f3b873c9ea0328517743b881f7502f299f89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251661"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Начало работы с API способов проверки подлинности в Microsoft Graph
 
 [Способы проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) — это способы, с помощью которых происходит проверка подлинности пользователей в Azure Active Directory (Azure AD). Способы проверки подлинности в Azure AD включают пароль и телефон (например, SMS и голосовые вызовы), которыми можно управлять в Microsoft Graph уже сегодня, и множество других, таких как ключи безопасности FIDO2 и приложение Microsoft Authenticator. Способы проверки подлинности используются в ходе основной, двухфакторной проверки подлинности, проверки подлинности повышенного уровня, а также в процессе самостоятельного сброса пароля (SSPR).
 
-Вы можете использовать API способа проверки подлинности для управления способами проверки подлинности пользователя. Например, вы можете:
+Вы можете использовать API способа проверки подлинности для управления способами проверки подлинности пользователя. Например, можно:
 
 * добавить номер телефона пользователя, который затем он может использовать для проверки подлинности с помощью SMS и голосового вызова, если применение такого способа разрешено политикой;
 * обновить или удалить номер телефона, назначенный пользователю;
@@ -260,7 +260,7 @@ GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Узнайте, как [использовать API REST для способов проверки подлинности](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).
-* Используйте Azure AD для [аутентификации](./auth/index.yml) в Microsoft Graph.
-* Интегрируйте [вход в Azure AD](https://azure.microsoft.com/develop/identity/signin/) в свое приложение или в свой веб-сайт.
-* Сведения о новых возможностях API Azure AD см. в [журнале изменений](changelog.md).
+* Используйте Azure AD для [аутентификации](./auth/index.yml) в Microsoft Graph.
+* Интегрируйте [вход в Azure AD](https://azure.microsoft.com/develop/identity/signin/) в свое приложение или в свой веб-сайт.
+* Сведения о новых возможностях API Azure AD см. в [журнале изменений](changelog.md).
 * Изучите [примеры](https://developer.microsoft.com/graph/graph/examples), чтобы получить более четкое представление об использовании Microsoft Graph.

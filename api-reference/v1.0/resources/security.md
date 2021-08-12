@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 345e3e81b86fe42d16f4110450120c9f225c22dd
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 7681472eb3f30676b35b9501ba410b660e8006710d375679254213cee239eb31
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141310"
 ---
 # <a name="security-resource-type"></a>тип ресурсов безопасности
 
@@ -32,11 +32,11 @@ ms.locfileid: "50473667"
 ## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|alerts|Коллекция [alert](alert.md)| Только для чтения. Допускается значение null.|
+|оповещения|Коллекция [alert](alert.md)| Только для чтения. Допускается значение null.|
 
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже показано представление ресурса в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

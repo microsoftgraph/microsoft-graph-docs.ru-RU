@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3e5b1b26b74938fd997cc064ee8e47d0ae8df9fc
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 79e1306e64004e4bf9057bde017d05bc10dcdd80c3c16083b0a8c679f76259c6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124663"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "49980880"
 
 Получите количество уникальных пользователей с лицензиями, которые работали с файлами, хранящимися на сайтах SharePoint.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 : действия в SharePoint.](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов — SharePoint действий.](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -70,7 +70,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Shared Internally" (К чему предоставлен доступ внутренним пользователям);
 - "Shared Externally" (К чему предоставлен доступ внешним пользователям);
 - "Report Date" (Дата отчета);
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8a30a2f5790c45aa3ff451d8daa478d883417c0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 8f1a62b8fd0706bcc5452554a587f0c4adf78eab10139363cce6dfb4393bbd3c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751176"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146463"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Тип ресурса allDevicesAssignmentTarget
 
@@ -27,7 +27,7 @@ ms.locfileid: "52751176"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

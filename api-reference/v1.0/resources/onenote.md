@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 8c81804c9ea93e6da9f0f9b7134f5b38aa4afd64
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5280edcec076a924afa5648ee6841d7659ad54da10a491dc15a4ba86fbb2640e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50961981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154954"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 

@@ -1,16 +1,16 @@
 ---
 title: Обзор API почты Outlook
-description: Outlook — это центр обмена сообщениями в Microsoft 365. Кроме того, с помощью Outlook можно управлять контактами, планировать собрания, искать информацию о пользователях в организации,
+description: Outlook — это центр обмена сообщениями в Microsoft 365. Кроме того, с помощью Outlook можно управлять контактами, планировать собрания и искать информацию о пользователях в организации.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0fcfb1a56e811d7ba63dcd1daed83122132c32bc
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 8a83a85716dead4a166d9fe52c6d8dc1102d5f949f6c2bd85fd4ea26310f051c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184385"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 

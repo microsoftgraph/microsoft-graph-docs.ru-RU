@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 1f7c45ecc82a209094748410614d6b25993e2aa7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d015175df3f4fb91d6a91dce7cf5b10714f6d1988044e9c98c81fcd5c3dd5369
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135262"
 ---
 # <a name="driveitemversion-resource-type"></a>Тип ресурса DriveItemVersion
 
@@ -43,7 +43,7 @@ ms.locfileid: "48018580"
   "blockType": "resource",
   "baseType": "microsoft.graph.baseItemVersion",
   "@odata.type": "microsoft.graph.driveItemVersion",
-  "@type.aka": "oneDrive.driveItemVersion"
+  "@type.aka&quot;: &quot;oneDrive.driveItemVersion"
 }-->
 
 ```json
@@ -61,12 +61,12 @@ ms.locfileid: "48018580"
 
 |      Имя свойства       |                         Тип                         |                               Описание                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
-| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
+| **публикация**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
 | **size**                 | Int64                                                | Указывает размер потока контента для этой версии элемента.  |
-| **content**              | Stream                                               | Поток содержимого для этой версии элемента.                        |
+| **content**              | Stream                                               | Поток контента для этой версии элемента.                        |
 
 <!-- {
   "type": "#page.annotation",

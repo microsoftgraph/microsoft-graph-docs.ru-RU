@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7c3a48d9c8e982087c5306e7c60db34c5612108
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 02931aca21953d8afc95fd14884e22e29529f5a31ed902d99f7604f438c1649f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193015"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
 

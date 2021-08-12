@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 62c48eca4f3672113c9eabbee7c420f7e2c9e4c4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c832ba7b8d16964df53d9530f5aab0113afcd00f422bd701530cd4088b06f178
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141814"
 ---
 # <a name="domain-resource-type"></a>тип ресурса домена
 
@@ -53,14 +53,14 @@ ms.locfileid: "50962464"
 |authenticationType|String| Указывает настроенный тип проверки подлинности для домена. Значение либо `Managed` или `Federated` . `Managed` указывает на облачный управляемый домен, в котором Azure AD выполняет проверку подлинности пользователей. `Federated` указывает, что проверка подлинности передается поставщику удостоверений, например локальной службе Active Directory клиента с помощью служб Федерации Active Directory. Это свойство является только для чтения и не является недействительным. |
 |availabilityStatus|String| Это свойство всегда за `null` исключением случаев, когда [используется](../api/domain-verify.md) действие проверки. Когда используется [действие](../api/domain-verify.md) проверки, **объект домена** возвращается в ответ. Свойство **availabilityStatus** объекта **домена** в ответе либо `AvailableImmediately` или `EmailVerifiedDomainTakeoverScheduled` .|
 |id|String| Полное имя домена. Ключ, неуменяемый, не nullable, уникальный. |
-|isAdminManaged|Boolean| Значение свойства в том случае, если управление записями DNS домена было делегировано `false` Microsoft 365. В противном случае значение `true` . Не является недействительным |
+|isAdminManaged|Логическое| Значение свойства в том случае, если управление записями DNS домена делегировано `false` Microsoft 365. В противном случае значение `true` . Не является недействительным |
 |isDefault|Boolean| `true` если это домен по умолчанию, используемый для создания пользователя. Существует только один домен по умолчанию для одной компании. Не является недействительным |
 |isInitial|Boolean| `true` если это начальный домен, созданный Microsoft Online Services (companyname.onmicrosoft.com). На одну компанию имеется только один начальный домен. Не является недействительным |
-|isRoot|Boolean| `true` если домен является проверенным корневым доменом. В `false` противном случае, если домен является поддоменом или непроверенным. Не является недействительным |
-|isVerified|Boolean| `true` если домен завершил проверку владения доменом. Не является недействительным |
+|isRoot|Логический| `true` если домен является проверенным корневым доменом. В `false` противном случае, если домен является поддоменом или непроверенным. Не является недействительным |
+|isVerified|Логический| `true` если домен завершил проверку владения доменом. Не является недействительным |
 |passwordNotificationWindowInDays|Int32|Указывает количество дней до получения пользователем уведомления о том, что срок действия пароля истекает. Если свойство не установлено, будет использоваться значение по умолчанию в 14 дней.|
 |passwordValidityPeriodInDays|Int32| Указывает продолжительность действия пароля перед его сменой. Если свойство не установлено, будет использоваться значение по умолчанию в 90 дней. |
-|supportedServices|Коллекция строк| Возможности, присвоенные домену. Может включать `0` или `1` более следующих значений: `Email` , , , , , , , `Sharepoint` , `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` . Значения, которые можно добавить или удалить с помощью API Graph: `Email` , `OfficeCommunicationsOnline` , `Yammer` . Не является недействительным|
+|supportedServices|Коллекция строк| Возможности, присвоенные домену. Может включать `0` или `1` более следующих значений: `Email` , , , , , , , `Sharepoint` , `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` . Значения, которые можно добавить или удалить с Graph API: `Email` `OfficeCommunicationsOnline` , `Yammer` . Не является недействительным|
 |state|[domainState](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
 ## <a name="relationships"></a>Связи

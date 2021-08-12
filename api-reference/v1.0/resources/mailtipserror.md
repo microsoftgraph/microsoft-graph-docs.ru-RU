@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса mailTipsError
+title: тип ресурса mailTipsError
 description: Ошибка, которая возникает во время действия.
 localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1dfb1953a0cbd5362e59975bfd22a1f70c826272
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: a9ae5ab9cd688eddd7a02dcdeed3d6cfaaf4b58e847c0e1855ed6465b11c8d7d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184538"
 ---
-# <a name="mailtipserror-resource-type"></a>Тип ресурса mailTipsError
+# <a name="mailtipserror-resource-type"></a>тип ресурса mailTipsError
 
 Пространство имен: microsoft.graph
 

@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Телеконференцедевицеаудиокуалити
-description: Данные о качестве звука устройства видеоконференций для видеоконференций.
+title: тип ресурса teleconferenceDeviceAudioQuality
+description: Данные качества звука устройства видеоконференции.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 898d552e8943da11e0d57b45630bf42848f01d04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac7aa441786cb337377544704af9b35d278eeeefdc15ec81019e6c6ec07be3bd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251738"
 ---
-# <a name="teleconferencedeviceaudioquality-resource-type"></a>Тип ресурса Телеконференцедевицеаудиокуалити
+# <a name="teleconferencedeviceaudioquality-resource-type"></a>тип ресурса teleconferenceDeviceAudioQuality
 
 Пространство имен: microsoft.graph
 
-Представляет данные о качестве звука устройства видеоконференций для видеоконференций.
+Представляет данные качества звука устройства видеоконференции.
 
 ## <a name="properties"></a>Свойства
 
-**телеконференцедевицеаудиокуалити** наследует все свойства ресурса [телеконференцедевицемедиакуалити](teleconferencedevicemediaquality.md) .
+**teleconferenceDeviceAudioQuality** наследует все свойства ресурса [teleconferenceDeviceMediaQuality.](teleconferencedevicemediaquality.md)
 
 ## <a name="json-representation"></a>Представление JSON
 

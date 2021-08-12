@@ -4,12 +4,12 @@ description: Перечисляет API Graph Microsoft для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: daefbf23d8aa70cdd3f81fdcb4afb69dd2590ba7
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 35fd75cd054bace77f1559670e667f40f09dd82bdfad9e52196228ae135fde95
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169503"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 

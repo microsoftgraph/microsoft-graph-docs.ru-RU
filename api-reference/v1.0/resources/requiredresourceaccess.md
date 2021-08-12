@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса requiredResourceAccess
+title: тип ресурса requiredResourceAccess
 description: Указывает набор областей разрешений OAuth 2.0 и ролей приложений.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 0ca072b679a7ec3b69c311d09aaf2000f4754f19
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 24d4e48fb6a15fabb61552d1ee2f2d884f276e6a862706b290fb97c1a2a78096
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184496"
 ---
-# <a name="requiredresourceaccess-resource-type"></a>Тип ресурса requiredResourceAccess
+# <a name="requiredresourceaccess-resource-type"></a>тип ресурса requiredResourceAccess
 
 Пространство имен: microsoft.graph
 
-Указывает набор областей разрешений OAuth 2.0 и ролей приложения в указанном ресурсе, к который приложению требуется доступ. Указанные области разрешений OAuth 2.0 могут запрашиваться клиентских приложений (с помощью коллекции **requiredResourceAccess)** при вызове приложения ресурсов. Свойство **requiredResourceAccess** объекта [приложения](application.md) — это коллекция **Re.redResourceAccess.**
+Указывает набор областей разрешений OAuth 2.0 и ролей приложений в указанном ресурсе, к который приложению требуется доступ. Указанные области разрешений OAuth 2.0 могут запрашиваться клиентские приложения (через коллекцию **requiredResourceAccess)** при вызове приложения-ресурса. Свойство **requiredResourceAccess** объекта [](application.md) приложения — это коллекция **ReqiredResourceAccess.**
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,8 +41,8 @@ ms.locfileid: "50133261"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|resourceAccess|[Коллекция resourceAccess](resourceaccess.md)|Список областей разрешений OAuth2.0 и ролей приложений, необходимых приложению для указанного ресурса.|
-|resourceAppId|String|Уникальный идентификатор ресурса, к котором приложению требуется доступ.  Он должен быть равен **appId, объявленным** в целевом приложении ресурсов.|
+|resourceAccess|[коллекция resourceAccess](resourceaccess.md)|Список областей разрешений OAuth2.0 и ролей приложений, которые приложение требует от указанного ресурса.|
+|resourceAppId|String|Уникальный идентификатор для ресурса, к который приложению требуется доступ.  Это должно быть равно **приложению, объявленным** в целевом приложении ресурса.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

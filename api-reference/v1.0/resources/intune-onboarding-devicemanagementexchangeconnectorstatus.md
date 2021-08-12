@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a96613647b732ba233e5633ebd7f0f1440997e8
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: ec4baa60b897fa70b089520bf991cd9451ffda3615188c2425d1850400531ab6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175006"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>тип enum deviceManagementExchangeConnectorStatus
 

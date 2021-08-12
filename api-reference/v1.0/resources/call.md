@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: acfcb3dc067f69e8cf7e3e3b9295a6e9e5c8396c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 8a3fb0ced8fec9c0a2dfba0127e22e79c241ec1eb611fc3c7da45148733097d0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178621"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -71,10 +71,10 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Сведения о чате. Сведения, необходимые для присоединения к собранию.                                                                                                                              |
 | direction           | callDirection                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения.                                                                                            |
 | id                  | String                                                                                                 | Идентификатор вызова. Только для чтения.                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательно.                                                                        |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательное.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании, необходимые для присоединения к собранию.                                                                                                            |
-transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | Сведения расшифровки для звонка. Только для чтения.    |
+transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | Сведения расшифровки для вызова. Только для чтения.    |
 | myParticipantId     | String                                                                                                 | Только для чтения.                                                                                                                                                                        |
 | requestedModalities | Коллекция modality                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения.                                                                                                        |
