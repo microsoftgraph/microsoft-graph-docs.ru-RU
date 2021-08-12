@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 9a397a0166ad62a503027499e9e0f5fd4f127b1e
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 0630d05e30d415ad60f4dd7ea4e7f729506e41b2cc20bded955e1593a6f56161
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518057"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138460"
 ---
 # <a name="printoperation-resource-type"></a>тип ресурса printOperation
 
@@ -28,11 +28,11 @@ ms.locfileid: "50518057"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор операции. Только для чтения.|
+|id|String|Идентификатор операции. Только для чтения.|
 |status|[printOperationStatus](printoperationstatus.md)|Состояние операции. Только для чтения.|
 |createdDateTime|DateTimeOffset|DateTimeOffset, когда была создана операция. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

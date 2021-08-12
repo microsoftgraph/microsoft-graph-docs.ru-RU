@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d76e189d684999e3922b625def26d4d0cfcb6a3e
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a21b5f49c66da3e4334941200c06275516ff4c45895f572608abb4a5d0c87b0c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52752212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169636"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>тип ресурса win32LobAppAssignmentSettings
 
@@ -31,7 +31,7 @@ ms.locfileid: "52752212"
 |installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-apps-mobileappinstalltimesettings.md)|Параметры времени установки, которые необходимо применить для этого назначения приложения.|
 |deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-apps-win32lobappdeliveryoptimizationpriority.md)|Приоритет оптимизации доставки для этого назначения приложения. Этот параметр не поддерживается в национальных облачных средах. Возможные значения: `notConfigured`, `foreground`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

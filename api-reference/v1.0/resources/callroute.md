@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Каллрауте
+title: тип ресурса callRoute
 description: Представляет тип маршрута вызова.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9ff55759e71cda0876a2ce5b0a65e47bcaf917a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82d69edb17d1a68ab3fc0f22402bd26c94c02dd3f922f0eb091cce95ce0b921f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141821"
 ---
-# <a name="callroute-resource-type"></a>Тип ресурса Каллрауте
+# <a name="callroute-resource-type"></a>тип ресурса callRoute
 
 Пространство имен: microsoft.graph
 
@@ -22,9 +22,9 @@ ms.locfileid: "48069269"
 
 | Свойство            | Тип                          | Описание                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| Наконец               | [identitySet](identityset.md) | Идентификатор, разрешенный в вызове.               |
-| Исходный текст            | [identitySet](identityset.md) | Идентификатор, который изначально использовался при вызове.           |
-| раутингтипе         | Строка                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
+| final               | [identitySet](identityset.md) | Удостоверение, которое было разрешено в вызове.               |
+| Исходный текст            | [identitySet](identityset.md) | Удостоверение, которое изначально использовалось в вызове.           |
+| routingType         | String                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

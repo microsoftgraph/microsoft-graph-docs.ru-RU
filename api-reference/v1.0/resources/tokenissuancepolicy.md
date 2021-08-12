@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 761e1d7e45f2d6a2cb11513cd3484a88a080888e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 93a21caa135ec38e87b3194e99440421e897b67955a6b34fec46641d5b841ce4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134919"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>тип ресурса tokenIssuancePolicy
 
@@ -42,9 +42,9 @@ ms.locfileid: "50444324"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
-|определение|Коллекция строк| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
+|определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательно.|
+|displayName|String| Отображение имени для этой политики. Обязательный элемент.|
 |isOrganizationDefault|Логический|Игнорируйте это свойство. Политика выдачи маркеров может применяться только к директорам служб и не может быть установлена глобально для организации.|
 
 

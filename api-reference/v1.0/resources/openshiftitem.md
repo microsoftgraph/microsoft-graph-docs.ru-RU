@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Опеншифтитем
-description: Представляет одно количество открытых смен.
+title: тип ресурса openShiftItem
+description: Представляет одно количество открытой смены.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d3e68f5cb558b67f92ed4107e8fb947cb7c300ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6c0a25ff8384b1312153cf19fa88f118aca9c9838057cba759ca60c3032a5a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152350"
 ---
-# <a name="openshiftitem-resource-type"></a>Тип ресурса Опеншифтитем
+# <a name="openshiftitem-resource-type"></a>тип ресурса openShiftItem
 
 Пространство имен: microsoft.graph
 
-Представляет одно число [опеншифт](../resources/openshift.md).
+Представляет одно количество [openShift.](../resources/openshift.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|опенслоткаунт|Int32| Количество слотов для заданной открытой смены.|
+|openSlotCount|Int32| Количество слотов для данной открытой смены.|
 
 ## <a name="json-representation"></a>Представление JSON
 

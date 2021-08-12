@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bb768938ffa2e167f13a267451041b65f39011c
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 147311668116b670bf62d0f2f0240f479b43089150d2d9df1c3e398a1de715dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205810"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>тип ресурса mobileAppInstallTimeSettings
 
@@ -23,11 +23,11 @@ ms.locfileid: "52755121"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|useLocalTime|Boolean|Следует ли использовать местное время устройства или время UTC при определении доступных и крайних сроков.|
+|useLocalTime|Логическое|Следует ли использовать местное время устройства или время UTC при определении доступных и крайних сроков.|
 |startDateTime|DateTimeOffset|Время, в которое приложение должно быть доступно для установки.|
 |deadlineDateTime|DateTimeOffset|Время установки приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

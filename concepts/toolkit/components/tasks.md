@@ -3,12 +3,12 @@ title: Компонент задач в microsoft Graph набор средст�
 description: Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Он работает с любыми задачами в Microsoft Planner.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 35191c778c957c1c9c6c316fb4755b57e6690ff2
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: c28db228e40a6661fc5cb48bb86b961ba7f6871a91987e5255212463dc3c09d6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54186883"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Компонент задач в microsoft Graph набор средств
 

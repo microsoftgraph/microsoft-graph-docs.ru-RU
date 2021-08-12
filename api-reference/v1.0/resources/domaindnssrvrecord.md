@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7755779218b7120e24cc25f6e0a5a97d4c42db5d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 2322a2425170a930dfaca30224601c01388063dd8d50203c950d1f3b9d5131ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229299"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>тип ресурса domainDnsSrvRecord
 
@@ -25,7 +25,7 @@ ms.locfileid: "50761200"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения.|
-|isOptional|Boolean| Если это неверно, запись SRV должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
+|isOptional|Логическое| Если это неверно, запись SRV должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
 |label|String| Значение, используемого при настройке *свойства* имени записи SRV в хосте DNS. |
 |nameTarget|String| Значение, используемого при настройке *целевого* свойства записи SRV в хосте DNS. |
 |порт|Int32| Значение, используемого при  настройке свойства порта записи SRV в хосте DNS. |

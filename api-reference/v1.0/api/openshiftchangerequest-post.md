@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 475ca1ce45426cb6cc412c495874eea3e73a4ae7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1a6c0bfd43cd414e0a8c5ecfb706c40436df404b0eab94c53dff18fc089305c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130634"
 ---
 # <a name="create-openshiftchangerequest"></a>Создание openShiftChangeRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "52039239"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Schedule.ReadWrite.All |
+| Приложение                            | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 

@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Апфостедмедиаконфиг
-description: Стек мультимедиа, размещенный в приложении.
+title: тип ресурса appHostedMediaConfig
+description: Стек мультимедиа, вложенный приложением.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f3d4f2eda3d3fa1a7e8fe206190d30ec79179a00
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5f40e1a29969f20046ba8f4439177b7a1b8209c2db36b14ac388b16639bbc4a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48041619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205957"
 ---
-# <a name="apphostedmediaconfig-resource-type"></a>Тип ресурса Апфостедмедиаконфиг
+# <a name="apphostedmediaconfig-resource-type"></a>тип ресурса appHostedMediaConfig
 
 Пространство имен: microsoft.graph
 
-Стек мультимедиа, размещенный в приложении.
+Стек мультимедиа, вложенный приложением.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                          | Тип    | Описание                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| характеристики                              | String  | Большой двоичный объект конфигурации мультимедиа, созданный агентом интеллектуальных носителей.    |
+| blob                              | String  | BLOB конфигурации мультимедиа, созданный агентом smart media.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 43aa45bd8880a89869f19ca6905a35f9057a5b19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a43f93ccb9c73a321d26b7fda8a37faccecaa5fb2c23ddca3c276b48b12e140
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205178"
 ---
 # <a name="range-resource-type"></a>Тип ресурса Range
 
@@ -33,9 +33,9 @@ ms.locfileid: "48037089"
 |[Entirecolumn](../api/range-entirecolumn.md)|[Range](range.md)|Возвращает объект, представляющий весь столбец диапазона.|
 |[Entirerow](../api/range-entirerow.md)|[Range](range.md)|Возвращает объект, представляющий всю строку диапазона.|
 |[Intersection](../api/range-intersection.md)|[Range](range.md)|Возвращает объект диапазона, представляющий прямоугольное пересечение заданных диапазонов.|
-|[Lastcell](../api/range-lastcell.md)|[Range](range.md)|Возвращает последнюю ячейку в диапазоне. Например, последняя ячейка диапазона B2:D5 — D5.|
-|[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|Возвращает последний столбец в диапазоне. Например, последний столбец диапазона B2:D5 — D2:D5.|
-|[Lastrow](../api/range-lastrow.md)|[Range](range.md)|Возвращает последнюю строку в диапазоне. Например, последняя строка в диапазоне "B2:D5" — "B5:D5".|
+|[Lastcell](../api/range-lastcell.md)|[Range](range.md)|Возвращает последнюю ячейку в диапазоне. Например, последняя ячейка диапазона B2:D5 — D5.|
+|[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|Возвращает последний столбец в диапазоне. Например, последний столбец диапазона B2:D5 — D2:D5.|
+|[Lastrow](../api/range-lastrow.md)|[Range](range.md)|Возвращает последнюю строку в диапазоне. Например, последняя строка в диапазоне "B2:D5" — "B5:D5".|
 |[Offsetrange](../api/range-offsetrange.md)|[Range](range.md)|Возвращает объект, представляющий диапазон, который смещен от указанного диапазона. Измерение возвращаемого диапазона будет соответствовать этому диапазону. Если результирующий диапазон выходит за пределы таблицы листа, вызывается исключение.|
 |[Row](../api/range-row.md)|[Range](range.md)|Возвращает строку из диапазона.|
 |[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Возвращает определенное количество строк над заданным диапазоном.|

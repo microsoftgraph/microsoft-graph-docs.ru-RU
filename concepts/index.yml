@@ -61,7 +61,7 @@ conceptualContent:
         - url: ./excel-concept-overview.md
           itemType: overview
           text: Чтение и изменение Excel файлов.
-    - title: Управление идентификацией и доступом
+    - title: Управление удостоверениями и доступом
       links:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
@@ -83,7 +83,7 @@ tools:
     - title: Песочница Graph
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
-    - title: Набор средств Microsoft Graph
+    - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
 additionalContent:

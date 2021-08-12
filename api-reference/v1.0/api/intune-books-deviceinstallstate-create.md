@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95822b40cb5be71994730c0c9fdf258f9af6d695
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: d09340f3a04efa89d694648aad46a3b7537f7f483f5da0f1f99e4d96ae1638b0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759415"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54144993"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 

@@ -1,18 +1,18 @@
 ---
-title: Использование REST API для OneNote
-description: Microsoft Graph позволяет вашему приложению получать авторизованный доступ к записным книжкам, разделам и страницам OneNote в личной или организационной учетной записи. Имея соответствующие разрешения приложения или делегированные разрешения, приложение может получать доступ к данным OneNote вошедшего пользователя или любого пользователя в клиенте.
+title: Использование REST API для OneNote
+description: Microsoft Graph позволяет вашему приложению получать авторизованный доступ к записным книжкам, разделам и страницам OneNote в личной или корпоративной учетной записи. Имея соответствующие делегированные разрешения или разрешения приложения, может получать доступ к данным OneNote вошедшего пользователя или любого пользователя в клиенте.
 localization_priority: Priority
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 9402cb1b5f0b8348d391d2a10f526563d20b3d0f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d9543a7192d8f4f4d6603d1ccd6df237b2ee4bf84d3f1d1882492901175ee48
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141415"
 ---
-# <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
+# <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
 
 Microsoft Graph позволяет вашему приложению получать авторизованный доступ к записным книжкам, разделам и страницам OneNote в личной или организационной учетной записи. Имея [соответствующие разрешения приложения или делегированные разрешения](/graph/permissions-reference#notes-permissions), приложение может получать доступ к данным OneNote вошедшего пользователя или любого пользователя в клиенте.
 

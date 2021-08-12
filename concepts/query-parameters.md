@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2cf22e03f4134c1e4612433bf8190e89eea97bbf
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: c5629b4993c9de793730f6fa5eeb515cb8fd333ba93c3ecc92f80b9d027e167b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236887"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 

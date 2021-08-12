@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9dfce6c0947fffd861ae1cda205c1011a7500471
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 3457894e43c1aed78d953c25ef862e08cc5c2ff1aee19ef43aa86aee8e02dc9c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754569"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205663"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 
@@ -30,7 +30,7 @@ ms.locfileid: "52754569"
 |windowsCount|Int32|Количество устройств с Windows.|
 |unknownCount|Int32|Количество неизвестных устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

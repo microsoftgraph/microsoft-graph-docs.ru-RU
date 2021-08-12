@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f7b07cb2906eb1a3d01d6c24ca5b91fec35ec7c8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c96650636e385eeddeecd9ab8c22ff2ee986108deadf973b2cfed9973134c6a2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962002"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178530"
 ---
 # <a name="datapolicyoperation-resource-type"></a>тип ресурса dataPolicyOperation
 

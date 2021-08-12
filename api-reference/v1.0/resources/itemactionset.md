@@ -1,30 +1,30 @@
 ---
 author: daspek
 title: Тип ресурса ItemActionSet
-description: Объект itemActionSet предоставляет сведения о действиях, которые произошли в рамках действия с элементом.
+description: Объект itemActionSet предоставляет сведения о действиях, которые произошли в рамках действия элемента.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 6dcc630b76adcbec3c719a43280e4b28d1d933e5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 56a6e4ed3400be921dafcfd418a5bcb98b2e6e865939a93f22d06661a8df470c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130109"
 ---
-# <a name="itemactionset-resource-type"></a>Тип ресурса itemActionSet
+# <a name="itemactionset-resource-type"></a>тип ресурса itemActionSet
 
 Пространство имен: microsoft.graph
 
-Ресурс **itemActionSet** предоставляет сведения о действиях, которые составили [действие][itemActivity] для элемента.
+Ресурс **itemActionSet** предоставляет сведения о действиях, которые составили [действие][itemActivity] на элементе.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [itemActivity]: itemactivity.md
 
 ## <a name="properties"></a>Свойства
 
-В настоящее время доступны следующие действия. Так как новые действия могут быть добавлены в будущем, убедитесь, что ваше приложение может обрабатывать **объект itemActionSet,** который включает неизвестные действия.
+В настоящее время доступны следующие действия. Поскольку в будущем могут быть добавлены новые действия, убедитесь, что ваше приложение может обрабатывать **itemActionSet,** который включает неизвестные действия.
 
 | Имя свойства | Тип              | Описание
 |:--------------|:------------------|:-----------------------------------------
@@ -57,7 +57,7 @@ ms.locfileid: "50239256"
   "optionalProperties": [ ],
   "keyProperty": "id",
   "@type": "microsoft.graph.itemActionSet",
-  "@type.aka": "oneDrive.action"
+  "@type.aka&quot;: &quot;oneDrive.action"
 }-->
 
 ```json

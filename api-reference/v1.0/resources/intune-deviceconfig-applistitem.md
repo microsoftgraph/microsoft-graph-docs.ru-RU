@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c0e880b8afebdfccab426fbe80966cc3f828a19
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 174c275ed02e1494cc43e7626b0c1df6c19bbe7f5512063a5be700599aa74eac
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205719"
 ---
 # <a name="applistitem-resource-type"></a>Тип ресурса appListItem
 
@@ -28,7 +28,7 @@ ms.locfileid: "52755926"
 |appStoreUrl|String|URL-адрес приложения в Магазине|
 |appId|String|Идентификатор приложения или его пакета|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

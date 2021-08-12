@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Медиастреам
-description: Тип Медиастреам.
+title: Тип ресурса mediaStream
+description: Тип mediaStream.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1158dfb01b9e92c5dc97f34bef3bb3661da51b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98fa09655faa6068c48c6fe2d1e340fa28ff253b99717900bed5d9f863561c1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141443"
 ---
-# <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
+# <a name="mediastream-resource-type"></a>Тип ресурса mediaStream
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о канале мультимедиа.
+Это содержит сведения о канале мультимедиа.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип    | Описание                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| direction   | String  | Направление. Возможные значения: `inactive` ,, `sendOnly` `receiveOnly` , `sendReceive` .                  |
-| label       | Строка  | Метка потока мультимедиа.                                                                                       |
-| MediaType   | Строка  | Тип мультимедиа. Возможные значения:,,, `unknown` `audio` `video` `videoBasedScreenSharing` , `data` .        |
-| сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
-| Идентификатор    | Строка  | Идентификатор источника.                                                                                                |
+| direction   | String  | Направление. Возможные значения `inactive` , `sendOnly` , `receiveOnly` `sendReceive` .                  |
+| label       | String  | Метка потока мультимедиа.                                                                                       |
+| MediaType   | String  | Тип мультимедиа. Возможное значение `unknown` , , , `audio` `video` `videoBasedScreenSharing` `data` .        |
+| serverMuted | Логическое | Если мультимедиа отключено сервером.                                                                          |
+| sourceId    | String  | Исходный код.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON
 

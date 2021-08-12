@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba82e79c16d8aeebd591f55849df74febad0073b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 4442438fd4814e17a3c21f702bf25f92bebd7583b759801ad2c641e46b0f3124
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184685"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Тип ресурса omaSettingFloatingPoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "52755877"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Single|Значение.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
