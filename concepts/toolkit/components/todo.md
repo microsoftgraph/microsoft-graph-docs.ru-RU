@@ -3,12 +3,12 @@ title: Компонент To Do в Microsoft Graph Toolkit
 description: Компонент To Do позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи To Do. Он поддерживает любые задачи в Microsoft To-Do.
 localization_priority: Normal
 author: shweaver-MSFT
-ms.openlocfilehash: 94bdbf1777a4ebe6c60d91c227c805c2edf53809
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 215315c67931c36019a4a83f1b295193ed0c7375487202c2ce58156aa64db42a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143649"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>Компонент To Do в Microsoft Graph Toolkit
 

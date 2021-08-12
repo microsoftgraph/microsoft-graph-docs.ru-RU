@@ -1,58 +1,58 @@
 ---
-title: Тип ресурса Секурескореконтролпрофиле
-description: Представляет уровень безопасности клиента для данных элемента управления. По умолчанию он возвращает все элементы управления для клиента и может явно извлекать отдельные элементы управления.
+title: secureScoreControlProfile type
+description: Представляет безопасную оценку клиента на данные управления. По умолчанию он возвращает все элементы управления для клиента и может явно тянуть отдельные элементы управления.
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c7af5b2ab614dae57ef7c18aee80133cd7a2096a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cfb05d70e098a1483827783d2e3e3755f3b9393c619133ea8a547b8d39bfe988
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184489"
 ---
-# <a name="securescorecontrolprofile-resource-type"></a>Тип ресурса Секурескореконтролпрофиле
+# <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile type
 
 Пространство имен: microsoft.graph
 
-Представляет уровень безопасности клиента для данных элемента управления. По умолчанию он возвращает все элементы управления для клиента и может явно извлекать отдельные элементы управления.
+Представляет безопасную оценку клиента на данные управления. По умолчанию он возвращает все элементы управления для клиента и может явно тянуть отдельные элементы управления.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Перечисление объектов secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Чтение свойств и метаданных объекта Секурескореконтролпрофилес.|
-|[Получение объектов secureScoreControlProfile](../api/securescorecontrolprofile-get.md) | [секурескореконтролпрофиле](securescorecontrolprofile.md) |Чтение свойств и метаданных объекта Секурескореконтролпрофилес.|
-|[Обновление секурескореконтролпрофиле](../api/securescorecontrolprofile-update.md) | [секурескореконтролпрофиле](securescorecontrolprofile.md) |Обновление объекта секурескореконтролпрофиле. |
+|[Перечисление объектов secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Чтение свойств и метаданных объекта secureScoreControlProfiles.|
+|[Получение объектов secureScoreControlProfile](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Чтение свойств и метаданных объекта secureScoreControlProfiles.|
+|[Обновление securescorecontrolprofile](../api/securescorecontrolprofile-update.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Обновление объекта securescorecontrolprofile. |
 
 
 ## <a name="properties"></a>Свойства
 
 |Имя |Тип |Описание |
 |:--|:--|:--|
-|id|String|GUID или уникальный идентификатор, созданный поставщиком. Только для чтения. Обязательный атрибут.|
-|azureTenantId|String|Строка GUID для идентификатора клиента.|
-|actionType|String|Тип действия управления (config, проверка, поведение).|
-|актионурл|String|URL-адрес, по которому можно выполнить действия с элементом управления. |
-|контролкатегори|String|Категория действий управления (идентификация, данные, устройство, приложения, инфраструктура).|
-|title|String|Название элемента управления.|
-|устаревшие|Boolean|Флаг, указывающий, является ли элемент управления амортизировано.|
-|имплементатионкост|String|Стоимость ресурсов элемента управления имплемментатинг (минимальная, средняя, высокая).|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения объекта профиля элемента управления. Тип timestamp представляет дату и время| 
-|максскоре|Двойное с плавающей точкой|максимальный достижимый показатель для элемента управления.|
-|rank|Int32|Ранжирование стека для элемента управления корпорации Майкрософт.|
-|исправления|String|Описание того, что будет исправлено элементом управления.|
-|ремедиатионимпакт|String|Описание влияния на пользователей об исправлении.|
-|service|String|Служба, которая владеет элементом управления (Exchange, SharePoint, Azure AD).|
-|угроз|Коллекция String|Список угроз, по которым элемент управления уменьшается (Аккаунтбреач, удаление, Датаексфилтратион, удаление)
-elevationOfPrivilege, МалиЦиаусинсидер, Пассвордкраккинг, Фишингорвхалинг, подмена).|
-|медленно|String|Уровень управления (ядро, Глубокая защита, расширенная)   |
-|усеримпакт|String|Пользовательское воздействие на реализацию элемента управления (минимальный, средний, высокий).   |
-|комплианцеинформатион|Коллекция [комплианцеинформатион](complianceinformation.md)|Коллекция сведений о соответствии, связанных с контролем безопасности по показателю|
-|контролстатеупдатес|Коллекция [секурескореконтролстатеупдате](securescorecontrolstateupdate.md)|Флаг, указывающий, где клиент пометил элемент управления (игнорируется, thirdParty, проверен) (поддерживает [Обновление](../api/securescorecontrolprofile-update.md)).|
-|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о продукте, поставщике, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре). Обязательно.|
+|id|String|GUID или уникальный идентификатор, созданный поставщиком. Только для чтения. Обязательный.|
+|azureTenantId|String|Строка GUID для ID клиента.|
+|actionType|String|Тип действия управления (Config, Review, Behaviour).|
+|actionUrl|String|URL-адрес, в котором можно использовать управление. |
+|controlCategory|String|Категория действия управления (Identity, Data, Device, Apps, Infrastructure).|
+|title|String|Название управления.|
+|deprecated|Логический|Флаг, чтобы указать, амортизации управления.|
+|implementationCost|String|Затраты ресурсов на неопроверяющий контроль (низкий, умеренный, высокий).|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения объекта профилей управления. Тип Timestamp представляет дату и время| 
+|maxScore|Двойное с плавающей точкой|максимальная достижимая оценка для управления.|
+|rank|Int32|Рейтинг управления стеком Майкрософт.|
+|исправление|String|Описание того, что поможет исправлению этого управления.|
+|remediationImpact|String|Описание влияния на пользователей исправлений.|
+|service|String|Служба, которая владеет управлением (Exchange, Sharepoint, Azure AD).|
+|угрозы|Коллекция String|Список угроз, которые устраняет управление (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
+elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling,spoofing).|
+|tier|String|Уровень управления (Core, Defense in Depth, Advanced.)   |
+|userImpact|String|Влияние пользователя на реализацию управления (низкий, умеренный, высокий).   |
+|complianceInformation|[коллекция complianceInformation](complianceinformation.md)|Сбор сведений о соответствии требованиям, связанных с безопасным управлением счетами|
+|controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Флаг, чтобы указать, где у клиента отмечено управление (проигнорировано, thirdParty, рассмотрено) (поддерживает [обновление).](../api/securescorecontrolprofile-update.md)|
+|vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о поставщике продукта и службы безопасности, поставщике и подпрограмме (например, vendor=Microsoft; provider=SecureScore). Обязательный.|
 
 ## <a name="relationships"></a>Связи
 

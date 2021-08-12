@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 8a1139388f5fcb17ea43cecf1cf321f490fe87c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df91bd7226426110e1c6f5ca6e1a2775676401cd3bb89b4343b1c689e423c945
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196931"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
 
@@ -45,7 +45,7 @@ ms.locfileid: "48022892"
 |postalAddresses|Коллекция [location](location.md)|Адреса человека.|
 |profession|String|Профессия человека.|
 |surname|String|Фамилия человека.|
-|userPrincipalName|String|Имя участника-пользователя человека. Имя участника-пользователя — это имя для входа, используемое в Интернете и закрепленное за человеком. Оно основано на интернет-стандарте [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). В соответствии с соглашением оно должно быть сопоставлено с именем пользователя для электронной почты. В общем случае оно должно иметь следующий формат: псевдоним@домен.|
+|userPrincipalName|String|Имя участника-пользователя человека. Имя участника-пользователя — это имя для входа, используемое в Интернете и закрепленное за человеком. Оно основано на интернет-стандарте [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). В соответствии с соглашением оно должно быть сопоставлено с именем пользователя для электронной почты. В общем случае оно должно иметь следующий формат: псевдоним@домен.|
 |websites|Коллекция [website](website.md)|Веб-сайты человека.|
 |yomiCompany|String|Название компании человека, записанное так, как оно звучит по-японски.|
 

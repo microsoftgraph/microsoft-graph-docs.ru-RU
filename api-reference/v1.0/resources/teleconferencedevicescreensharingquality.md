@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Телеконференцедевицескриншарингкуалити
-description: Представляет данные о качестве устройства для демонстрации видеоконференций с видеоконференциями.
+title: тип ресурса teleconferenceDeviceScreenSharingQuality
+description: Представляет данные качества видеоконференции устройства для обмена экранами.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4485001c076fd25b4d5ab7dd7f06f7ccab4c81a4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 626d0ba55080094a609fcf4496bae520266e1537b77a83457df0042093470bb4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169237"
 ---
-# <a name="teleconferencedevicescreensharingquality-resource-type"></a>Тип ресурса Телеконференцедевицескриншарингкуалити
+# <a name="teleconferencedevicescreensharingquality-resource-type"></a>тип ресурса teleconferenceDeviceScreenSharingQuality
 
 Пространство имен: microsoft.graph
 
-Представляет данные о качестве устройства для демонстрации видеоконференций с видеоконференциями.
+Представляет данные качества видеоконференции устройства для обмена экранами.
 
 ## <a name="properties"></a>Свойства
 
-**Телеконференцедевицескриншарингкуалити** наследует все свойства из [телеконференцедевицевидеокуалити](teleconferencedevicevideoquality.md).
+**TeleconferenceDeviceScreenSharingQuality** наследует все свойства [от teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).
 
 ## <a name="json-representation"></a>Представление JSON
 

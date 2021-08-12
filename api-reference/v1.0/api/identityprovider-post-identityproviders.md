@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fac9a583737b991e9f2b060a05eb64a893dde9cc
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: abe7e5a3fff0c677499d5c47a42cf2fbc43f26f9705f0e51dd108c1e1367e719
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219299"
 ---
 # <a name="create-identityprovider-deprecated"></a>Создание identityProvider (не рекомендуется)
 Пространство имен: microsoft.graph
@@ -54,7 +54,7 @@ POST /identityProviders
 |clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
 |clientSecret|String|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
 |name|String|Отображаемое имя поставщика удостоверений.|
-|type|String|Тип поставщика удостоверений Для сценариев B2C должно быть присвоено одно из указанных ниже значений. <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Для сценариев B2B можно использовать только Google|
+|type|String|Тип поставщика удостоверений. Для сценариев B2C должно быть присвоено одно из указанных ниже значений. <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>Для сценариев B2B можно использовать только Google|
 
 ## <a name="response"></a>Отклик
 

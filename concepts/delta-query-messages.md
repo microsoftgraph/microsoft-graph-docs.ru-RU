@@ -4,12 +4,12 @@ description: Разностный запрос позволяет запраши
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bef08802c4a917f21ffc795dcda52660f08623b8
-ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
+ms.openlocfilehash: abfbd041ccea1d6f20355cdd8c164d8cd0ac0773b73076baab56e2528675523e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819670"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235158"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Получение добавочных изменений для сообщений в папке
 
@@ -21,7 +21,7 @@ ms.locfileid: "48819670"
 
 Запрос изменений выполняется отдельно для каждой папки. Чтобы отслеживать изменения сообщений в иерархии папок, необходимо наблюдать за каждой папкой отдельно.
 
-Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta** . Исходный запрос GET во многом аналогичен [получению сообщений](/graph/api/user-list-messages?view=graph-rest-1.0), но он также содержит функцию **delta** :
+Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta**. Исходный запрос GET во многом аналогичен [получению сообщений](/graph/api/user-list-messages?view=graph-rest-1.0), но он также содержит функцию **delta**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -29,8 +29,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 Запрос GET с функцией **delta** возвращает одно из следующих значений:
 
-- ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _skipToken_ );
-- ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _deltaToken_ ).
+- ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _skipToken_);
+- ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _deltaToken_).
 
 Это маркеры являются [маркерами состояния](delta-query-overview.md#state-tokens), полностью непрозрачными для клиента. Чтобы продолжить цикл отслеживания изменений, просто скопируйте и примените URL-адрес, полученный из последнего запроса GET, при следующем вызове функции **delta** для этой папки. Ссылка `deltaLink` в ответе означает, что текущий цикл отслеживания изменений завершен. Вы можете сохранить и использовать URL-адрес `deltaLink` в начале следующего цикла.
 
@@ -82,9 +82,9 @@ since the completion of the very first round.
 
 ## <a name="example-to-synchronize-messages-in-a-folder"></a>Пример синхронизации сообщений в папке
 
-В приведенном ниже примере показаны 2 цикла синхронизации определенной папки, которая изначально содержала 5 сообщений.
+В приведенном ниже примере показаны 2 цикла синхронизации определенной папки, которая изначально содержала 5 сообщений.
 
-В первом цикле выполняется серия из 3 запросов на синхронизацию всех 5 сообщений в папке:
+В первом цикле выполняется серия из 3 запросов на синхронизацию всех 5 сообщений в папке:
 
 - [Пример исходного запроса](#sample-initial-request) и [ответ](#sample-initial-response)
 - [Пример второго запроса](#sample-second-request) и [ответ](#sample-second-response)
@@ -99,7 +99,7 @@ since the completion of the very first round.
 Первый запрос задает следующие параметры:
 
 - параметр `$select` для возврата свойств `subject`, `sender` и `isRead` для каждого сообщения в ответе;
-- [необязательный заголовок запроса](#optional-request-header) _odata.maxpagesize_ , возвращающий 2 сообщения одновременно.
+- [необязательный заголовок запроса](#optional-request-header) _odata.maxpagesize_, возвращающий 2 сообщения одновременно.
 
 <!-- {
   "blockType": "ignored",
@@ -281,7 +281,7 @@ GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages
 Prefer: odata.maxpagesize=2
 ```
 
-Ответ содержит ссылку `deltaLink`. Это означает, что теперь синхронизированы все изменения в удаленной почтовой папке. Одно сообщение было удалено, а еще одно — изменено.
+Ответ содержит ссылку `deltaLink`. Это означает, что теперь синхронизированы все изменения в удаленной почтовой папке. Одно сообщение было удалено, а еще одно — изменено.
 
 <!-- {
   "blockType": "response",

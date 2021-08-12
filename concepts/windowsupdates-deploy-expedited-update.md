@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: d64cb09545d1ce664b017ba3fcbcd5989d0f2a25
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: ea65dc16cd45d4b5da2ba5c850e97fd662b39bedd02eb9502e970d789ca98d0b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225666"
 ---
 # <a name="deploy-an-expedited-security-update-using-the-windows-update-for-business-deployment-service"></a>Развертывание ускоренного обновления безопасности с Windows службы развертывания для бизнеса
 
@@ -26,7 +26,7 @@ ms.locfileid: "53210194"
 * Обновление загружается и устанавливается как можно быстрее.
 * Процесс обновления переопределяет настроенные параметры политики устройства, например дни, пока устройство не будет вынуждено перезапуститься. После установки ускоренного обновления устройство возвращается в текущие параметры политики.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
 * Устройства отвечают [необходимым требованиям для службы развертывания.](windowsupdates-concept-overview.md#prerequisites)
 * Устройства установили обновление, описанное в [KB4023057 .](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a) Обновление для компонентов службы Windows 10 обновления (или более новых).

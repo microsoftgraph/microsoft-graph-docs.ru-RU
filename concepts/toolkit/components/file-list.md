@@ -3,12 +3,12 @@ title: Компонент списка файлов в microsoft Graph набо�
 description: Компонент списка файлов используется для отображения списка файлов, показывая их значок и имя
 localization_priority: Normal
 author: beth-panx
-ms.openlocfilehash: 816ea4b76a08d089e419aad2a126b7b39c2727b1
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 615adf1c889f3d4e86150e4ca2ba54713beb870cb074f6718376c4475b11fe71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334782"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134765"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Компонент списка файлов в microsoft Graph набор средств
 
@@ -114,7 +114,7 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Страница "Разрешения API и приложений Microsoft Graph"
 
-| Конфигурация | Разрешения | API |
+| Конфигурация | Permissions | API |
 | ------------- | ----------------- | --- |
 | По умолчанию (не предоставлены идентификаторы или запросы) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children` |
 | Предоставление `{drive-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
@@ -159,7 +159,7 @@ mgt-file-list {
 
 ## <a name="cache"></a>Кэш
 
-|Хранилище объектов|Кэшные данные|Примечания|
+|Хранилище объектов|Кэшные данные|Замечания|
 |---------|-----------|-------|
 |`fileLists`|Список списков файлов|Список кэша по умолчанию для хранения списков файлов.|
 |`insightfileLists`|Список списков файлов анализа|Используется при `insightType` условии.|

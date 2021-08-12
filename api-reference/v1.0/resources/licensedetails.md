@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 4e23dfcd15dc2b05a9d1c7356a532e6faf487662
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: ba93377f3894bf9939238825040ce1f6fd453d67e266007a9cc0b046f5210e88
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246670"
 ---
 # <a name="licensedetails-resource-type"></a>тип ресурса licenseDetails
 
@@ -29,7 +29,7 @@ ms.locfileid: "52547192"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор объекта детализации лицензии. Только для чтения, клавиши, а не nullable |
+|id|String| Уникальный идентификатор объекта детализации лицензии. Только для чтения, клавиши, а не nullable |
 |servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах служб, присвоенных лицензией. Только для чтения, не является недействительным |
 |skuId|Guid| Уникальный идентификатор (GUID) для службы SKU. Равно свойству skuId на связанном [объекте SubscribedSku.](subscribedsku.md) Только для чтения |
 |skuPartNumber|String| Уникальное имя отображения SKU. Равно skuPartNumber на связанном [объекте SubscribedSku;](subscribedsku.md) например: "AAD_Premium". Только для чтения |

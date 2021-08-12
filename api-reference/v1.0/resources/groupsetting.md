@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1e18f78f0b0d7c9e8cb9c054afd5645ae45e1c48
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 3f43baa14884fcb8843d99731e20e96f329aed2cfad2a1ba513b8e2039d8f776
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212083"
 ---
 # <a name="groupsetting-resource-type"></a>тип ресурса groupSetting
 
@@ -28,7 +28,7 @@ ms.locfileid: "52680880"
 |[Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта setting. |
 |[Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов setting. |
 |[Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта groupsetting. |
-|[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта setting. |
+|[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
 
 ## <a name="properties"></a>Свойства
 

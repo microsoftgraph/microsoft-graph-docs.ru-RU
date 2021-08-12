@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса eventMessageRequest
-description: Сообщение, представляющее приглашение на собрание.
+title: тип ресурса eventMessageRequest
+description: Сообщение, представляю которое представляет запрос на собрание.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9f28e45bb176a016a2726d6fade3cab1846311
-ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
+ms.openlocfilehash: 6098c56cdc263b8623cce2b30756c30f68dbd9ddafe59c879a5026385971a957
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243590"
 ---
-# <a name="eventmessagerequest-resource-type"></a>Тип ресурса eventMessageRequest
+# <a name="eventmessagerequest-resource-type"></a>тип ресурса eventMessageRequest
 
 Пространство имен: microsoft.graph
 
-Сообщение, представляющее приглашение на собрание в почтовом ящике приглашений.
+Сообщение, представляющие запрос на собрание в почтовом ящике приглашенного.
 
-Сущность **eventMessageRequest** является производной от [eventMessage](eventmessage.md).
+Объект **eventMessageRequest** происходит из [eventMessage.](eventmessage.md)
 
-Чтобы ответить на приглашение на собрание, сначала используйте свойство навигации **event** , чтобы получить доступ к соответствующему событию, как показано в этом [примере](../api/eventmessage-get.md#example-2). Затем [примите](../api/event-accept.md), [тентативелякцепт](../api/event-tentativelyaccept.md)или [отклоните](../api/event-decline.md) событие, связанное с **eventMessageRequest**.
+Чтобы ответить на запрос собрания, сначала используйте свойство **навигации** событий для доступа к соответствующему событию, как показано в этом [примере.](../api/eventmessage-get.md#example-2) Затем [примите](../api/event-accept.md), [предварительноAccept](../api/event-tentativelyaccept.md), или [отклонки,](../api/event-decline.md) что событие, связанное с **eventMessageRequest**.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -98,44 +98,44 @@ ms.locfileid: "48755696"
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
-|conversationIndex|Edm.Binary|Индекс беседы, к которой относится электронная почта.|
+|conversationIndex|Edm.Binary|Индекс беседы, к которой принадлежит электронная почта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
-|endDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время окончания запрошенного собрания.|
+|endDateTime|[DateTimeTimeZone](datetimetimezone.md)|Конечное время запрашиваемого собрания.|
 |from|[recipient](recipient.md)|Владелец почтового ящика, из которого отправлено сообщение. В большинстве случаев это значение совпадает со свойством **sender**, кроме сценариев предоставления общего доступа или делегирования. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
 |id|String|Только для чтения.|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Возможные значения: `Focused`, `Other`.|
-|Isdelegated для|Логический|Значение true, если ответ на приглашение на собрание доступен представителю, в противном случае — значение false. Значение по умолчанию: false.|
+|isDelegated|Логическое|True, если ответ запроса на собрание доступен делегату, ложный в противном случае. Значение по умолчанию: false.|
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
+|isOutOfDate|Логическое|Указывает, был ли этот запрос собрания устарел по более недавнему запросу.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
-|location|[Location](location.md)|Расположение запрошенного собрания.|
+|location|[Location](location.md)|Расположение запрашиваемого собрания.|
 |meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
-|превиаусенддатетиме|[DateTimeTimeZone](datetimetimezone.md)| Если в обновлении собрания изменяется время окончания собрания, это свойство указывает время окончания предыдущего собрания.|
-|превиауслокатион|[Location](location.md)| Если в процессе обновления собрания изменяется место проведения собрания, это свойство указывает предыдущее место проведения собрания.|
-|превиаусстартдатетиме|[DateTimeTimeZone](datetimetimezone.md)| Если при обновлении собрания изменяется время начала собрания, это свойство указывает время начала предыдущего собрания.|
+|previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| Если обновление собрания изменяет время окончания собрания, это свойство указывает предыдущее время окончания собрания.|
+|previousLocation|[Расположение](location.md)| Если обновление собрания изменяет расположение собрания, это свойство указывает предыдущее расположение собрания.|
+|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)| Если обновление собрания изменяет время начала собрания, это свойство указывает предыдущее время начала собрания.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
-|recurrence|[PatternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрошенного собрания.|
+|recurrence|[PatternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрашиваемого собрания.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
-|responseRequested|Логический|Задайте значение true, если отправитель хочет отправить ответ на запрошенное собрание.|
+|responseRequested|Логический|Установите для true, если отправитель хотел бы, чтобы приглашенный отправил ответ на запрашиваемую встречу.|
 |sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение совпадает со значением свойства **from**. Этому свойству можно присвоить другое значение при отправке сообщения из [общего почтового ящика](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [для общего календаря или в качестве делегата](/graph/outlook-share-delegate-calendar.md). В любом случае значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
-|startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время начала запрошенного собрания.|
+|startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время начала запрашиваемого собрания.|
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
-|type|String|Тип запрошенного собрания: `singleInstance` ,, `occurence` `exception` , `seriesMaster` .|
+|type|String|Тип запрашиваемого собрания: `singleInstance` `occurence` , , `exception` `seriesMaster` .|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
-|webLink|String|URL-адрес для открытия сообщения в Outlook в Интернете.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для ispopout задано значение 0, то браузер отобразит сообщение в области веб-Рецензирование в Outlook.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу из iFrame невозможен.|
+|webLink|String|URL-адрес для открытия сообщения в Outlook в Интернете.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook в Интернете.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу невозможно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для сообщения. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment,](fileattachment.md) [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для сообщения. Только для чтения. Допускается значение null.|
 |event|[event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
 |extensions|Коллекция объектов [extension](extension.md)| Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для eventMessage. Только для чтения. Допускается значение null.|
@@ -148,7 +148,7 @@ ms.locfileid: "48755696"
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage.|
-|[удаление](../api/eventmessage-delete.md); | Нет |Удаление объекта eventMessage.|
+|[Удаление](../api/eventmessage-delete.md) | Нет |Удаление объекта eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Копирование сообщения в папку.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
@@ -163,9 +163,9 @@ ms.locfileid: "48755696"
 |[Добавление вложения](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Вложение в сообщение о событии нового файла путем публикации в коллекции вложений.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.|
-|[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определенного по имени.|
+|[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получите открытое расширение, идентифицированное по имени.|
 |**Расширенные свойства**| | |
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем экземпляре eventMessage.   |
+|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем экземпляре eventMessage.   |
 |[Получение eventMessage с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Получение экземпляров eventMessage, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем экземпляре eventMessage.  |
 |[Получение eventMessage с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Получение eventMessage, которое содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |

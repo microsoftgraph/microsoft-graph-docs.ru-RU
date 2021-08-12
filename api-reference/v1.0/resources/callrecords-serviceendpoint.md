@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Сервицеендпоинт
-description: Тип Сервицеендпоинт
+title: тип ресурса serviceEndpoint
+description: Тип serviceEndpoint
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b650b2f105a9feb2d33327a0ceef9add18716d00
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: dc51a13e8c244c8c4564dab9cf18dc5b28a450947c0ced8889aea8d6511d39a9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54216947"
 ---
-# <a name="serviceendpoint-resource-type"></a>Тип ресурса Сервицеендпоинт
+# <a name="serviceendpoint-resource-type"></a>тип ресурса serviceEndpoint
 
 Пространство имен: microsoft.graph.callRecords
 
-Представляет конечную точку службы в вызове. Конечная точка представляет вызывающий медиа сервер или другой объект службы. Наследуется от типа [конечной точки](callrecords-endpoint.md) .
+Представляет конечную точку службы в вызове. Конечная точка представляет сервер вызываемого мультимедиа или другую сущность службы. Наследуется от [конечного](callrecords-endpoint.md) типа.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|userAgent|[Microsoft. Graph. Каллрекордс. userAgent](callrecords-useragent.md)|Пользователь — агент, указанный этой конечной точкой.|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|Пользователь-агент, о чем сообщает эта конечная точка.|
 
 ## <a name="json-representation"></a>Представление JSON
 

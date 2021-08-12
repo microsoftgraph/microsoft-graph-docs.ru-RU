@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 378056d369be75fec3654d7206927250a8914205
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 420156f407b208ea5203914206e0fb2c8acc6c0aef617a322ad84219347bff53
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130788"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 
@@ -208,7 +208,7 @@ POST /deviceManagement/deviceConfigurations
 |edgeBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна.|
 |edgeBlockSearchSuggestions|Boolean|Указывает, следует ли блокировать пользователю использование предложений поиска в адресной панели.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer. Примечание: имя этого свойства вводит в заблуждение; свойство устарело, вместо этого используйте EdgeSendIntranetTrafficToInternetExplorer.|
-|edgeSendIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer.|
+|edgeSendIntranetTrafficToInternetExplorer|Логический|Указывает, следует ли переключать трафик интрасети с Edge на Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Указывает, обязательно ли использовать фильтр Smart Screen.|
 |edgeEnterpriseModeSiteListLocation|String|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
 |edgeFirstRunUrl|String|URL-адрес, открываемый в браузере Edge при первом запуске.|
@@ -257,7 +257,7 @@ POST /deviceManagement/deviceConfigurations
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Указывает, следует ли запретить отображение диалогового окна ошибки, если SIM-карта не обнаружена.|
 |experienceBlockTaskSwitcher|Boolean|Указывает, следует ли заблокировать переключение задач на устройстве.|
 |logonBlockFastUserSwitching|Boolean|Отключает возможность быстрого переключения между учетными записями пользователей, вошедших в систему, без выхода из системы.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Требуется ли подключение устройства к сети.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Логическое|Требуется ли подключение устройства к сети.|
 
 
 

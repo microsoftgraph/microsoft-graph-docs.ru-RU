@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5de44371b295c520d33ea6c8ae04925055bd2ab0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: dcdda5d4d9a4b3e018c836ac81384f50031135ffd20f94df2508a6c1cdcadc3d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240976"
 ---
 # <a name="create-androidcustomconfiguration"></a>Создание объекта androidCustomConfiguration
 

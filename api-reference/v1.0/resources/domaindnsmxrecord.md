@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 017fe2ef132ce78a392a2f6fe83895b365002048
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 701c65651b95305305706a73beb34e5e18a4a8008d89bc24a2a27f1cd7a03f2f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141807"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>тип ресурса domainDnsMxRecord
 
@@ -25,7 +25,7 @@ ms.locfileid: "50761179"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения.|
-|isOptional|Boolean| Если это не так, запись MX должна быть настроена клиентом в хосте DNS, чтобы Microsoft Online Services правильно работать с доменом. |
+|isOptional|Логическое| Если это не так, запись MX должна быть настроена клиентом в хосте DNS, чтобы Microsoft Online Services правильно работать с доменом. |
 |label|String| Значение, используемого при настройке свойства *псевдонима/хоста/имени* записи MX в хосте DNS. |
 |mailExchange|String| Значение, используемого при настройке *ответа/назначения/значения* записи MX в хосте DNS.|
 |предпочтение|Int32| Значение, используемое при настройке свойства *Preference/Priority* записи MX в хосте DNS. |

@@ -1,22 +1,22 @@
 ---
 title: тип ресурса ipNamedLocation
-description: Представляет расположение Azure Active Directory с именем, определенное диапазонами IP. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+description: Представляет расположение Azure Active Directory, определенное диапазонами IP. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1781c10e28e2d3efc28154cd15a8c36c9b43ac21
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 930db24ef40a68bb00f5724762652dfd1d75c1702d6af61be878a04cc68f1b94
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246726"
 ---
 # <a name="ipnamedlocation-resource-type"></a>тип ресурса ipNamedLocation
 
 Пространство имен: microsoft.graph
 
-Представляет расположение Azure Active Directory с именем, определенное диапазонами IP. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+Представляет расположение Azure Active Directory, определенное диапазонами IP. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 
 Наследует от [namedLocation](../resources/namedLocation.md)
 

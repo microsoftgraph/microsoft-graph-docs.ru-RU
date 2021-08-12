@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Теаммессагингсеттингс
+title: тип ресурса teamMessagingSettings
 description: Параметры для настройки обмена сообщениями и упоминаний в команде.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5fe43e317bd0231bb8d2e87143e4230c8719ce9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9818e161e21f78a83023ead66d7b790eadd01bb2737942a383665338d0ec73c4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093996"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54129962"
 ---
-# <a name="teammessagingsettings-resource-type"></a>Тип ресурса Теаммессагингсеттингс
+# <a name="teammessagingsettings-resource-type"></a>тип ресурса teamMessagingSettings
 
 Пространство имен: microsoft.graph
 
 
 
-Параметры для настройки обмена сообщениями и упоминаний в [команде](team.md).
+Параметры настраивать сообщения и упоминания в [команде.](team.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|алловусередитмессажес|Boolean|Если задано значение true, пользователи могут редактировать сообщения.|
-|алловусерделетемессажес|Boolean|Если задано значение true, пользователи могут удалять свои сообщения.|
-|аллововнерделетемессажес|Boolean|Если задано значение true, владельцы могут удалять любые сообщения.|
-|алловтеамментионс|Boolean|Если задано значение true, @team упоминаний разрешены.|
-|алловчаннелментионс|Boolean|Если задано значение true, @channel упоминаний разрешены.|
+|allowUserEditMessages|Логический|Если установлено, что это так, пользователи могут изменять свои сообщения.|
+|allowUserDeleteMessages|Логическое|Если установлено, что это так, пользователи могут удалять свои сообщения.|
+|allowOwnerDeleteMessages|Логический|Если установлено, что это правда, владельцы могут удалить любое сообщение.|
+|allowTeamMentions|Логическое|Если установлено, @team разрешены упоминания.|
+|allowChannelMentions|Логическое|Если установлено, @channel разрешены упоминания.|
 
 ## <a name="json-representation"></a>Представление JSON
 

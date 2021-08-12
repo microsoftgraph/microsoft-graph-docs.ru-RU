@@ -1,22 +1,22 @@
 ---
-title: Начало работы с Microsoft Graph PowerShell SDK
-description: Приступить к работе с Microsoft Graph PowerShell SDK, используя его для выполнения некоторых основных задач.
+title: Начало работы с SDK Microsoft Graph PowerShell
+description: Приступить к работе с microsoft Graph PowerShell SDK, используя его для выполнения некоторых базовых задач.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 6f5ee22960f9bf33156807f9f55f49e6e4aa17b5
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 44ae296a7e4beae08e5e47561097d7011012d2f3bfbc9c45b12dcf5059bba13e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777577"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54168999"
 ---
-# <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Начало работы с Microsoft Graph PowerShell SDK
+# <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Начало работы с SDK Microsoft Graph PowerShell
 
-В этом руководстве вы будете использовать Microsoft Graph PowerShell SDK для выполнения некоторых основных задач. Если вы еще не установили [SDK,](installation.md)сделайте это перед тем, как следовать этому руководству.
+В этом руководстве вы будете использовать SDK microsoft Graph PowerShell для выполнения некоторых базовых задач. Если вы еще не установили [SDK,](installation.md)сделайте это, прежде чем следовать этому руководству.
 
 ## <a name="api-version"></a>Версия API
 
-По умолчанию SDK использует [REST API Microsoft Graph 1.0.](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) Это можно изменить с помощью `Select-MgProfile` команды.
+По умолчанию SDK использует [API Graph REST v1.0.](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) Это можно изменить с помощью `Select-MgProfile` команды.
 
 ```powershell
 Select-MgProfile -Name "beta"
@@ -24,47 +24,47 @@ Select-MgProfile -Name "beta"
 
 ## <a name="authentication"></a>Проверка подлинности
 
-SDK PowerShell поддерживает два типа проверки подлинности: делегированную проверку подлинности и доступ только для приложений. В этом руководстве вы будете использовать делегирование доступа для входа в качестве пользователя, предоставить SDK согласие на действия от вашего имени и вызвать Microsoft Graph.
+SDK PowerShell поддерживает два типа проверки подлинности: делегированную и доступ только для приложений. В этом руководстве вы будете использовать делегированную возможность входа в систему в качестве пользователя, предоставить согласие SDK для действий от вашего имени и вызвать службу Microsoft Graph.
 
-Подробные сведения об использовании доступа только для приложений для сценариев с использованием службы проверки подлинности только для приложений см. в microsoft [Graph PowerShell SDK.](app-only.md)
+Сведения об использовании доступа только для приложений для неохваченных сценариев см. в материале [Use app-only authentication with the Microsoft Graph PowerShell SDK.](app-only.md)
 
 ### <a name="determine-required-permission-scopes"></a>Определение необходимых областей разрешений
 
-Каждый API в Microsoft Graph защищен одной или более областью разрешений. Войдя в систему, пользователь должен согласиться на одну из необходимых областей для API, которые вы планируете использовать. В этом примере мы будем использовать следующие API.
+Каждый API в microsoft Graph защищен одной или более областью разрешений. Вход пользователя должен дать согласие на один из необходимых областей для API, которые вы планируете использовать. В этом примере мы будем использовать следующие API.
 
-- [Список пользователей,](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) которые могут найти ИД войдите в систему
-- [Список joinedTeams,](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) чтобы получить Teams, в который входит пользователь.
+- [Список пользователей,](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) чтобы найти пользовательский ID пользователя, вошел в систему
+- [Список joinedTeams,](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) чтобы Teams пользователь является членом.
 - [Список каналов](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) для получения каналов в команде.
-- [Отправьте сообщение](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) для отправки сообщения в канал группы.
+- [Отправка сообщения](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) для отправки сообщения на канал Team.
 
-Область разрешений включает первые два вызова, а остальные `User.Read.All` `Group.ReadWrite.All` вызовы включает область. Для этих разрешений требуется учетная запись администратора.
+Область разрешений позволит включить первые два вызова, а остальные - `User.Read.All` `Group.ReadWrite.All` область. Эти разрешения требуют учетной записи администратора.
 
-### <a name="sign-in"></a>Вход
+### <a name="sign-in"></a>Выполнение входа
 
-Используйте команду `Connect-MgGraph` для входов с требуемой областью. Вам потребуется войти с помощью учетной записи администратора, чтобы согласиться на необходимые области.
+Используйте команду `Connect-MgGraph` для входов с требуемой областью. Чтобы согласиться на необходимые области, необходимо войти в учетную запись администратора.
 
 ```powershell
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
-Команда позволяет перейти на веб-страницу, чтобы войти с помощью кода устройства. После этого команда указывает на успех `Welcome To Microsoft Graph!` сообщения. Это необходимо сделать только один раз в сеансе.
+Команда побуждает вас перейти на веб-страницу, чтобы войти в код устройства. После этого команда указывает на успех с `Welcome To Microsoft Graph!` сообщением. Это нужно делать только один раз за сеанс.
 
 > [!TIP]
-> Можно добавить дополнительные разрешения, повторив команду с `Connect-MgGraph` новыми разрешениями.
+> Дополнительные разрешения можно добавить, повторив команду `Connect-MgGraph` с помощью новых областей разрешений.
 
 ## <a name="call-microsoft-graph"></a>Вызов Microsoft Graph
 
-Теперь, когда вы вписались, вы можете начать звонить в Microsoft Graph.
+Теперь, когда вы подписаны, вы можете начать звонить в Microsoft Graph.
 
 ### <a name="get-the-signed-in-user"></a>Get the signed-in user
 
-В этом разделе вы найдете войдите пользователя и получите его ИД пользователя. Это необходимо для использования в качестве параметра для других команд, которые вы будете использовать позже. Для начала запустите следующую команду.
+В этом разделе вы найдете пользователя, вписав его, и получите его пользовательский ID. Это необходимо для использования в качестве параметра для других команд, которые будут использовать позже. Начните с запуска следующей команды.
 
 ```powershell
 Get-MgUser
 ```
 
-Это выводит список пользователей в вашей организации Microsoft 365.
+Это выводит список пользователей в вашей Microsoft 365 организации.
 
 ```powershell
 Id                                   DisplayName              Mail                                  UserPrincipalName
@@ -80,35 +80,35 @@ ce73bdb5-bf12-405e-ab85-40122fdd6eb7 Brian Johnson (TAILSPIN) BrianJ@contoso.onm
 df1347a3-7ce7-4b4d-8aab-7c65b5c907b9 Cameron White                                                  CameronW@contoso…
 ```
 
-Вы можете использовать [фильтр OData для](../query-parameters.md#filter-parameter) поиска нужного пользователя. Запустите следующую команду, заменив отображаемую именем пользователя, с которого вы `Megan Bowen` вписались.
+Вы можете использовать [фильтр OData,](../query-parameters.md#filter-parameter) чтобы помочь найти нужного пользователя. Запустите следующую команду, заменив имя пользователя, с которого `Megan Bowen` вы подписались.
 
 ```powershell
 $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
 ```
 
-Убедитесь, что все сработало, введите следующую информацию.
+Убедитесь, что сработало, введите следующее.
 
 ```powershell
 $user.DisplayName
 ```
 
-### <a name="list-the-users-joined-teams"></a>Список пользователей, которые присоединились к Teams
+### <a name="list-the-users-joined-teams"></a>Список присоединились к пользователю Teams
 
-Теперь используйте в команде в качестве параметра ИД `Get-MgUserJoinedTeam` пользователя.
+Теперь используйте ID пользователя в качестве параметра для `Get-MgUserJoinedTeam` команды.
 
 ```powershell
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Так `Get-MgUser` же, как и команда, вы предоставляете список Teams. Выберите один из пользователей, присоединив Teams, и используйте его для `DisplayName` фильтрации списка.
+Так же, `Get-MgUser` как и в команде, это дает список Teams. Выберите один из присоединяемого пользователя Teams и используйте его для `DisplayName` фильтрации списка.
 
 ```powershell
 $team = Get-MgUserJoinedTeam -UserId $user.Id -Filter "displayName eq 'Sales and Marketing'"
 ```
 
-### <a name="list-team-channels"></a>Список каналов группы
+### <a name="list-team-channels"></a>Каналы list Team
 
-Теперь используйте в команде в качестве параметра ИД команды, следуя аналогичной схеме перечисления всех каналов, а затем отфильтруя список, чтобы получить нужный `Get-MgTeamChannel` канал.
+Теперь используйте ID команды в качестве параметра для команды, следуя аналогичной схеме перечисления всех каналов, затем фильтруя список, чтобы получить нужный `Get-MgTeamChannel` канал.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
@@ -117,21 +117,21 @@ $channel = Get-MgTeamChannel -TeamId $team.Id -Filter "displayName eq 'General'"
 
 ### <a name="send-a-message"></a>Отправка сообщения
 
-Теперь, когда у вас есть ИД команды и ИД канала, вы можете опубликовать сообщение в канале. Для отправки сообщения используйте следующую команду.
+Теперь, когда у вас есть ИД команды и ИД канала, вы можете отправить сообщение на канал. Для отправки сообщения используйте следующую команду.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-Эта команда отличается от предыдущих команд, которые вы использовали. Вместо запроса данных фактически создается что-то. В Microsoft Graph это преобразуется в HTTP, и для него требуется объект `POST` в тексте этой записи. В этом случае объектом является [chatMessage.](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true) Обратите `-Body` внимание, что параметр с командой сопомечает `body` свойство `chatMessage` on. Другие свойства сослаться аналогичным образом, поэтому вы можете изменить сообщение, которое вы отправляете. Например, чтобы отправить экстренное сообщение, используйте следующую команду.
+Эта команда отличается от предыдущих команд, которые вы использовали. Вместо того чтобы просто запрашивать данные, он фактически создает что-то. В microsoft Graph это переводится как HTTP, и для этого требуется объект `POST` в теле этой должности. В этом случае объектом является [chatMessage.](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true) Обратите внимание, `-Body` что параметр командной карты для `body` свойства на `chatMessage` . Другие свойства соедаются аналогичным образом, поэтому вы можете изменить отправимые сообщения. Например, для отправки экстренного сообщения используйте следующую команду.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
 ```
 
-### <a name="sign-out"></a>Выход
+### <a name="sign-out"></a>Sign out
 
-Используйте `Disconnect-MgGraph` команду, чтобы выйти из нее.
+Чтобы `Disconnect-MgGraph` выйти из нее, используйте команду.
 
 ```powershell
 Disconnect-MgGraph
@@ -140,4 +140,4 @@ Disconnect-MgGraph
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Узнайте, как перемещаться по SDK](navigating.md)
-- [Использование проверки подлинности только для приложений с помощью Microsoft Graph PowerShell SDK](app-only.md)
+- [Использование проверки подлинности только для приложений с помощью SDK microsoft Graph PowerShell](app-only.md)

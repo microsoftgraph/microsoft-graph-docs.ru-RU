@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: d4580d2e54b1f9b913b7dab5c283e9af7391b964
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 6a82c13a4fd18c66be3b6d2c0e8753f9fefd1ab6fdc0c47ac305ef34ff6acfba
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237546"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>тип ресурса plannerExternalReferences
 
@@ -24,7 +24,7 @@ ms.locfileid: "51473397"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",

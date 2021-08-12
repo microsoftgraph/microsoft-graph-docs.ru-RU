@@ -4,20 +4,20 @@ description: Пользователи Outlook могут делиться поч
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f6c1ece4dddc8e8da25a03b76da0f8be303fe557
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 1687c6ca82c4188f4001e2cf4c472af9e39387f38746bb1e3726620f2af6859d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50474395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233660"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Получение сообщений Outlook в общей или делегированной папке
 
 Пользователи Outlook могут делиться почтовыми папками и предоставлять права на чтение, создание, изменение и удаление отдельных папок. Outlook также позволяет клиенту делегировать другому пользователю право действовать от имени клиента и получать доступ к определенным папкам или ко всему его почтовому ящику. В Outlook это называется "делегированием".
 
-Что касается программного кода, Microsoft Graph поддерживает получение сообщений из почтовых папок, доступ к которым был предоставлен другими пользователями, а также получение самих общих папок. Поддержка также применима к делегированным папкам.
+Что касается программного кода, то Microsoft Graph поддерживает получение сообщений из почтовых папок, доступ к которым был предоставлен другими пользователями, а также получение самих общих папок. Эта поддержка также применима к делегированным папкам.
 
-Допустим, Григорий предоставил Ивану доступ на чтение своей папки "Входящие". Если Иван войдет в приложение и предоставит делегированные разрешения (Mail.Read.Shared или Mail.ReadWrite.Shared), то приложение сможет получать доступ к почте и папке "Входящие" Григория, как показано ниже.
+Допустим, Григорий предоставил Ивану доступ на чтение своей папки "Входящие". Если Иван войдет в ваше приложение и предоставит делегированные разрешения (Mail.Read.Shared или Mail.ReadWrite.Shared), то приложение сможет получать доступ к почте и папке "Входящие" Григория, как показано ниже.
 
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
@@ -36,7 +36,7 @@ ms.locfileid: "50474395"
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages/{id}
 ```
 
-В случае успешного выполнения вы получите отклик HTTP 200 OK и экземпляр объекта [message](/graph/api/resources/message), указанный параметром `{id}`, из папки "Входящие" Григория.
+В случае успешного выполнения вы получите отклик HTTP 200 OK и экземпляр объекта [message](/graph/api/resources/message), указанный параметром `{id}`, из папки "Входящие" Григория.
 
 ## <a name="get-all-messages-in-the-shared-folder"></a>Получение всех сообщений из общей папки
 
@@ -47,7 +47,7 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages
 ```
 
-В случае успешного выполнения вы получите отклик HTTP 200 OK и коллекцию экземпляров объекта [message](/graph/api/resources/message) из папки "Входящие" Григория.
+В случае успешного выполнения вы получите отклик HTTP 200 OK и коллекцию экземпляров объекта [message](/graph/api/resources/message) из папки "Входящие" Григория.
 
 ## <a name="get-the-shared-folder"></a>Получение общей папки
 
@@ -58,7 +58,7 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')
 ```
 
-В случае успешного выполнения вы получите отклик HTTP 200 OK и экземпляр объекта [mailFolder](/graph/api/resources/mailfolder), представляющий папку "Входящие" Григория.
+В случае успешного выполнения вы получите отклик HTTP 200 OK и экземпляр объекта [mailFolder](/graph/api/resources/mailfolder), представляющий папку "Входящие" Григория.
 
 Такие же возможности для запросов GET будут доступны, если Григорий делегирует Ивану дополнительные права доступа к своей папке "Входящие" или всему почтовому ящику.
 
@@ -70,4 +70,4 @@ GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')
 Дополнительные сведения:
 
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview) и [варианты использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph 1.0.
+- [Использование API почты](/graph/api/resources/mail-api-overview) и [варианты использования](/graph/api/resources/mail-api-overview#common-use-cases) в Microsoft Graph 1.0.

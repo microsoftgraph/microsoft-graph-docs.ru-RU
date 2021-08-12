@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 31d872ba84df3fcdd4f246cbd32b3668d21e57d5
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 91a1d70afccf94abe1c611e696bc4349a59964e1dbb176cce0ddb8aa32dc287a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169356"
 ---
 # <a name="printercreateoperation-resource-type"></a>тип ресурса printerCreateOperation
 
@@ -30,12 +30,12 @@ ms.locfileid: "50517344"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор операции. Только для чтения.|
+|id|String|Идентификатор операции. Только для чтения.|
 |status|[printOperationStatus](printoperationstatus.md)|Состояние операции регистрации. Содержит ход операции и ее успешное завершения. Только для чтения.|
 |createdDateTime|DateTimeOffset|DateTimeOffset, когда была создана операция. Только для чтения.|
 |certificate|String|Подписанный сертификат, созданный в процессе регистрации. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |printer|[printer](printer.md)|Созданный объект принтера. Только для чтения.|

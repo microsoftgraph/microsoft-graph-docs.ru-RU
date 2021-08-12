@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Планнерчекклиститемс
-description: Ресурс **планнерчекклиститемколлектион** представляет коллекцию элементов контрольного списка в задаче. Это открытый тип. Он является частью объекта сведений о задаче. Значение в параметре "свойство-значение" является объектом Чекклиститем.
+title: тип ресурса plannerChecklistItems
+description: Ресурс **plannerChecklistItemCollection** представляет коллекцию элементов контрольного списка для задачи. Это открытый тип. Это часть объекта сведений о задачах. Значение в паре свойство-значение — это объект checklistItem.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6904d473ace51363f8cd292524456b378e6f4e86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f465adf89e9cb344013e30edccf03513f8fb96065e676ffb78d7cb8fa13f14ac
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178075"
 ---
-# <a name="plannerchecklistitems-resource-type"></a>Тип ресурса Планнерчекклиститемс
+# <a name="plannerchecklistitems-resource-type"></a>тип ресурса plannerChecklistItems
 
 Пространство имен: microsoft.graph
 
-Ресурс **планнерчекклиститемколлектион** представляет коллекцию элементов контрольного списка в задаче. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md) . Значение в параметре "свойство-значение" является объектом [чекклиститем](plannerchecklistitem.md) .
+Ресурс **plannerChecklistItemCollection** представляет коллекцию элементов контрольного списка для задачи. Это открытый тип. Это часть объекта [сведений о задачах.](plannertaskdetails.md) Значение в паре свойство-значение — это [объект checklistItem.](plannerchecklistitem.md)
 
 
 ## <a name="properties"></a>Свойства
-Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставлять **GUID** в качестве свойств, а их значения должны быть объектами [чекклиститем](plannerchecklistitem.md) . Пример показан ниже. Чтобы удалить элемент в контрольном списке, присвойте свойству значение `null` .
+Свойства открытого типа могут быть определены клиентом. В этом случае клиент должен предоставить **GUID-объекты** в качестве свойств, а их значения должны быть [объектами checklistItem.](plannerchecklistitem.md) Пример показан ниже. Чтобы удалить элемент в списке, установите значение свойства `null` .
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -45,7 +45,7 @@ ms.locfileid: "48037530"
   }
 }
 ```
-Примеры
+Пример
 
 ```json
 {

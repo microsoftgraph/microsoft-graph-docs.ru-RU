@@ -1,22 +1,22 @@
 ---
 title: тип ресурсов sectionGroup
-description: Группа разделов в записной книжке OneNote. Группы разделов могут содержать разделы и группы разделов.
+description: Группа разделов в OneNote записной книжке. Группы разделов могут содержать разделы и группы разделов.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 5968a327800c823cd5767a382d019fba39f66927
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 575aeb64fbb1f2ffe3df787311704f5fb4f262e6c71808b1d11c901fc2184d0c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54134954"
 ---
 # <a name="sectiongroup-resource-type"></a>тип ресурсов sectionGroup
 
 Пространство имен: microsoft.graph
 
-Группа разделов в записной книжке OneNote. Группы разделов могут содержать разделы и группы разделов.
+Группа разделов в OneNote записной книжке. Группы разделов могут содержать разделы и группы разделов.
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 35abee6b3028111ce4237828b58492a546ff5d4b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b5f864b03461fc21d8283245663786d618a2687f043901e7cb44d9a6df5421ee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50476453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231889"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>тип ресурса applicationServicePrincipal
 
@@ -26,7 +26,7 @@ ms.locfileid: "50476453"
 
 | Свойство         | Тип                                                 | Описание                                                     |
 | :--------------- | :--------------------------------------------------- | :-------------------------------------------------------------- |
-| application      | [application](../resources/application.md)           | Представляет приложение, зарегистрированное в Azure Active Directory. |
+| application      | [application](../resources/application.md)           | Представляет приложение, зарегистрированные в Azure Active Directory. |
 | servicePrincipal | [servicePrincipal](../resources/serviceprincipal.md) | Представляет экземпляр приложения в каталоге.        |
 
 ## <a name="relationships"></a>Связи

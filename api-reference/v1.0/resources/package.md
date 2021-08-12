@@ -3,15 +3,15 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: Пакет
 localization_priority: Normal
-description: " или коллекция элементов, которые должны рассматриваться как коллекция, а не как отдельные элементы."
+description: " или коллекция элементов, которые следует рассматривать как коллекцию, а не отдельные элементы."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e248c74add209690dbd7c3cc11d8056c5ca30dcc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 09a335605e4a7ed258f27c120b9fdb4ecb95a59a42ccbf0a52866c5338f25d99
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138495"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
 

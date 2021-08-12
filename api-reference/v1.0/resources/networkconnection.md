@@ -5,12 +5,12 @@ localization_priority: Normal
 author: chinguyen1
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5671726ead3da811c109a9a2afe01c49b665e513
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 6f386378abb67e310d3bc6ae2574470d92e48ce66ac6dda3b454f61a195e642d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223335"
 ---
 # <a name="networkconnection-resource-type"></a>тип ресурса networkConnection
 

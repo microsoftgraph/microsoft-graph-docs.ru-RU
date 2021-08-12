@@ -1,25 +1,25 @@
 ---
-title: Использование SDKs Microsoft Graph для пакетных запросов
-description: Содержит инструкции по созданию пакета запросов API с помощью SDKs Microsoft Graph.
+title: Использование SDKs Graph Майкрософт для пакетных запросов
+description: Содержит инструкции по созданию пакета запросов API с помощью SDKs Graph Microsoft.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 2f9caf9ad7f20dd2b6601501fa8c6a8fb1541bde
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: d8e44f6ed2c1fe03f81150eb8dbf07140c2da513d9a6d9c192559a56362a8e43
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146155"
 ---
-# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Использование SDKs Microsoft Graph для пакетных запросов
+# <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Использование SDKs Graph Майкрософт для пакетных запросов
 
-[Пакетирование](../json-batching.md) — это способ объединения нескольких запросов в один http-запрос. Запросы объединяются в одну полезной нагрузки JSON, которая отправляется через POST в `\$batch` конечную точку. В SDKs Microsoft Graph есть набор классов, упрощающий создание пакетных полезной нагрузки и разгрузку пакетных ответов.
+[Пакетирование](../json-batching.md) — это способ объединения нескольких запросов в один http-запрос. Запросы объединяются в одну полезной нагрузки JSON, которая отправляется через POST в `\$batch` конечную точку. В Graph SDKs есть набор классов, упрощающий создание пакетных полезной нагрузки и разгрузку пакетных ответов.
 
 > [!IMPORTANT]
-> Текущие ограничения с пакетами JSON в Microsoft Graph см. в [выпуске Known Issues.](../known-issues.md#json-batching)
+> Текущие ограничения с пакетами JSON в Microsoft Graph см. в ссылке [Known Issues.](../known-issues.md#json-batching)
 
 ## <a name="create-a-batch-request"></a>Создание пакетного запроса
 
-SDKs Microsoft Graph предоставляют три класса для работы с пакетными запросами и ответами.
+SDKs Graph Майкрософт предоставляют три класса для работы с пакетными запросами и ответами.
 
 - **BatchRequestStep** — представляет один запрос `GET /me` (например) в пакете. Это позволяет назначить уникальный идентификатор запросу и указать зависимости между запросами.
 - **BatchRequestContent** — упрощает создание полезной нагрузки пакетного запроса. Он содержит несколько **объектов BatchRequestStep.**

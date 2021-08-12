@@ -4,12 +4,12 @@ description: API Поиск (Майкрософт) для поиска файл�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 93dca7b4c431140646ee22ae6772448e0554e35a
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 321242bd694eb244f9fe688186d91e484587466e19a1c4520f96ae96f0741ec2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182268"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Используйте API Поиск (Майкрософт) для поиска контента в OneDrive и SharePoint
 
@@ -349,7 +349,7 @@ Content-type: application/json
 
 ## <a name="example-5-use-filters-in-search-queries"></a>Пример 5. Использование фильтров в поисковых запросах
 
-Вы можете использовать KQL в условиях поиска запросов для OneDrive и SharePoint. Пример:
+Вы можете использовать KQL в условиях поиска запросов для OneDrive и SharePoint. Например,
 
 - `"query": "contoso filetype:docx OR filetype:doc"` областью запроса к документам Word.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` область запроса в определенную папку на сайте.

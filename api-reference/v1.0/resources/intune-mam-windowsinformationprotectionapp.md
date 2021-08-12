@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03dd609b8bd2c1835665827fff2bd89f6e810d77
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 0e45d77ae4d1dd9191b92e1022def635a59d2deb00567b8a29259f0c7880abca
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751295"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218564"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Тип ресурса windowsInformationProtectionApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "52751295"
 |productName|String|Название продукта.|
 |denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

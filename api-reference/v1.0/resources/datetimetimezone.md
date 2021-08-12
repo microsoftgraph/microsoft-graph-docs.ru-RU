@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 7f5b728dd487f9802c65309c36694516b4e35455
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bfbd81bc08720e0974c34529502009dcff2a28b714327c09b71e3343d6042023
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018790"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124530"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 

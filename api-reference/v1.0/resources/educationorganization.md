@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b24313b6b6061449faea0ecb4880a421a2333099
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: fa6d324602ba13ebe186bc0631de991e193d945757117217aa29296ee480ef74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130354"
 ---
 # <a name="educationorganization-resource-type"></a>тип ресурса educationOrganization
 
@@ -24,11 +24,11 @@ ms.locfileid: "52231866"
 
 | Свойство             | Тип                    | Описание                                                                            |
 | :------------------- | :---------------------- | :------------------------------------------------------------------------------------- |
-| description          | Строка                  | Описание организации.                                                              |
-| displayName          | Строка                  | Имя отображения организации.                                                             |
+| description          | String                  | Описание организации.                                                              |
+| displayName          | String                  | Имя отображения организации.                                                             |
 | externalSource       | educationExternalSource | Источник, из которых была создана эта организация. Возможные значения: `sis`, `manual`. |
-| externalSourceDetail | Строка                  | Имя внешнего источника, из которого были созданы эти ресурсы.                     |
-| id                   | Строка                  | Идентификатор объекта. Унаследованный от [сущности](../resources/entity.md)                     |
+| externalSourceDetail | String                  | Имя внешнего источника, из которого были созданы эти ресурсы.                     |
+| id                   | String                  | Идентификатор объекта. Унаследованный от [сущности](../resources/entity.md)                     |
 
 ## <a name="relationships"></a>Связи
 

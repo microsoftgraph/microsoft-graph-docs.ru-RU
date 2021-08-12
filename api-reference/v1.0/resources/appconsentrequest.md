@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 32744ce01f871c82a52710502e7fdc899537cef5
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: d6fae1c3914f901c24190b5c27b184b4c90aa5e67cfdc54416ec5e6f81703361
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155227"
 ---
 # <a name="appconsentrequest-resource-type"></a>тип ресурса appConsentRequest
 
@@ -30,9 +30,9 @@ ms.locfileid: "51698015"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appDisplayName|String|Отображение имени приложения, для которого запрашивается согласие. Обязательный. Поддерживает `$filter` `eq` (только) и `$orderby` . |
-|appId|String|Идентификатор приложения. Обязательный. Поддерживает `$filter` `eq` (только) и `$orderby` . |
-|id|String|Идентификатор запроса на согласие приложения. Обязательный.|
+|appDisplayName|String|Отображение имени приложения, для которого запрашивается согласие. Обязательный элемент. Поддерживает `$filter` `eq` (только) и `$orderby` . |
+|appId|String|Идентификатор приложения. Обязательный элемент. Поддерживает `$filter` `eq` (только) и `$orderby` . |
+|id|String|Идентификатор запроса на согласие приложения. Обязательный элемент.|
 |pendingScopes|[коллекция appConsentRequestScope](../resources/appconsentrequestscope.md)|Список ожидающих утверждения областей. Обязательный.|
 
 ## <a name="relationships"></a>Связи

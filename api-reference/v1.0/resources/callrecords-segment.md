@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 886ea3661c83d6a84f9e171a11eee927920a8077
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: e01e227636f3328e4b481e59d5b4beab72c844b11cd3b4ba949fe745eb35d892
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184937"
 ---
 # <a name="segment-resource-type"></a>тип ресурсов сегмента
 
@@ -30,9 +30,9 @@ ms.locfileid: "50722246"
 |вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала этот сегмент.|
 |вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на этот сегмент.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Сведения о сбое, связанные с сегментом в случае сбоя.|
-|media|[коллекция microsoft.graph.callRecords.media](callrecords-media.md)|Носители, связанные с этим сегментом.|
-|startDateTime|DateTimeOffset|Время UTC, когда начался сегмент. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|endDateTime|DateTimeOffset|Время UTC после окончания сегмента. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|мультимедиа|[коллекция microsoft.graph.callRecords.media](callrecords-media.md)|Носители, связанные с этим сегментом.|
+|startDateTime|DateTimeOffset|Время UTC, когда начался сегмент. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Время UTC после окончания сегмента. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="relationships"></a>Связи
 

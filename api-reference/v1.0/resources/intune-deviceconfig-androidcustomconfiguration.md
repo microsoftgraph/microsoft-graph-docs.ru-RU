@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f0460a2b72b1a600788b3e106a654b06d8dadaf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7a4dac5c1c4f343d8e536aa5e581bcf053a126349c04a3a8bb6dc915667b30a9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52758913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141632"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>Тип ресурса androidCustomConfiguration
 

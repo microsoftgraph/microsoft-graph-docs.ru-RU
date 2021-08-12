@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Лиценсеассигнментстате
-description: Свойство **лиценсеассигнментстатес** объекта User — коллекция объектов **лиценсеассигнментстате** . Он предоставляет пользователю сведения о назначении лицензий пользователю.
+title: licenseAssignmentState type
+description: Свойство **licenseAssignmentStates** объекта пользователя — это коллекция объектов **licenseAssignmentState.** Он предоставляет сведения о назначениях лицензий пользователю.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b26ab4be63cbb40929dbea3f40522ee4c6b7ff70
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 64acc65a2316e017165feb6aad21c6cf788a8bed87fbb8d0479152960f6fd824
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54174999"
 ---
-# <a name="licenseassignmentstate-resource-type"></a>Тип ресурса Лиценсеассигнментстате
+# <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState type
 
 Пространство имен: microsoft.graph
 
 
-Свойство **лиценсеассигнментстатес** объекта [User](user.md) — коллекция объектов **лиценсеассигнментстате** . Он предоставляет пользователю сведения о назначении лицензий пользователю. Сведения включают следующие сведения:  
+Свойство **licenseAssignmentStates** объекта [](user.md) пользователя — это коллекция объектов **licenseAssignmentState.** Он предоставляет сведения о назначениях лицензий пользователю. Сведения включают такие сведения, как:  
 
 - Какие планы отключены для пользователя
-- Указывает, была ли лицензия назначена пользователю напрямую или унаследована от группы.
+- Была ли лицензия назначена пользователю напрямую или унаследована от группы
 - Текущее состояние назначения
-- Сведения об ошибке, если состояние назначения — ошибка 
+- Сведения об ошибках, если состояние назначения — ошибка 
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ассигнедбиграуп|Строка|Идентификатор группы, которая назначает эту лицензию. Если назначение относится к прямой назначенной лицензии, это поле будет иметь значение null. Только для чтения.|
-|дисабледпланс|Collection(String)|Планы обслуживания, которые отключены в этом назначении. Только для чтения.|
-|error|String|Ошибка при назначении лицензии. Если лицензия назначена успешно, это поле будет иметь значение null. Только для чтения. Возможные значения: `CountViolation` , `MutuallyExclusiveViolation` , `DependencyViolation` , `ProhibitedInUsageLocationViolation` , `UniquenessViolation` и `Others` . Дополнительные сведения о том, как определять и устранять ошибки назначения лицензий, можно найти [здесь](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
+|assignedByGroup|Строка|ID группы, которая назначает эту лицензию. Если назначение является прямо назначенной лицензией, это поле будет Null. Только для чтения.|
+|disabledPlans|Collection(String)|Планы служб, отключенные в этом назначении. Только для чтения.|
+|error|String|Ошибка сбоя назначения лицензии. Если лицензия назначена успешно, это поле будет Null. Только для чтения. Возможные значения: `CountViolation` , , , , , и `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` `Others` . Дополнительные сведения о том, как выявлять и устранять ошибки назначения лицензий, см. [здесь.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)|
 |skuId|String|Уникальный идентификатор SKU. Только для чтения.|
-|state|String|Указывает текущее состояние этого назначения. Только для чтения. Возможные значения: Active, Активевисеррор, Disabled и Error.|
+|state|String|Указать текущее состояние этого назначения. Только для чтения. Возможные значения: Active, ActiveWithError, Disabled и Error.|
 
 ## <a name="json-representation"></a>Представление JSON
 

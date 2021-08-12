@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 06566b30e2292d6552e5c0a79281693b97ab6350
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: c3e71186ff65490e31b711ff4c05788afd565cee5c87ea225985c3ec464aaa5d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54138467"
 ---
 # <a name="printerdefaults-resource-type"></a>тип ресурса printerDefaults
 
@@ -32,13 +32,13 @@ ms.locfileid: "51944247"
 |pagesPerSheet|Int32|Число страниц документов по умолчанию для печати на каждом листе.
 |orientation|[printOrientation](enums.md#printorientation-values)|Ориентация по умолчанию, используемая при печати документа. Допустимые значения описаны в следующей таблице.|
 |outputBin|String|Ячейка вывода по умолчанию для того, чтобы разместить завершенные отпечатки. См. возможности [принтера для](printercapabilities.md) списка поддерживаемых бункеров выходных данных.|
-|fitPdfToPage|Boolean|Параметр fitPdfToPage по умолчанию. True, чтобы поместить каждую страницу документа PDF в физический лист мультимедиа; false, чтобы принтер решил, как выкладывать впечатления.|
+|fitPdfToPage|Логический|Параметр fitPdfToPage по умолчанию. True, чтобы поместить каждую страницу документа PDF в физический лист мультимедиа; false, чтобы принтер решил, как выкладывать впечатления.|
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|Направление по умолчанию для выкладки страниц при печати нескольких страниц на листе. Допустимые значения описаны в следующей таблице.|
 |colorMode|[printColorMode](enums.md#printcolormode-values)|Цветной режим по умолчанию, который используется при печати документа. Допустимые значения описаны в следующей таблице.|
 |качество|[printQuality](enums.md#printquality-values)|Качество по умолчанию, используемая при печати документа. Допустимые значения описаны в следующей таблице.|
 |duplexMode|[printDuplexMode](enums.md#printduplexmode-values)|Двубоксовая конфигурация по умолчанию, используемая при печати документа. Допустимые значения описаны в следующей таблице.|
 |dpi|Int32|Разрешение по умолчанию в DPI, используемом при печати задания.|
-|scaling|[printScaling](enums.md#printscaling-values)|Указывает, как принтер масштабирует данные документа, чтобы соответствовать запрашиваемой мультимедиа. Допустимые значения описаны в следующей таблице.|
+|масштабирование.|[printScaling](enums.md#printscaling-values)|Указывает, как принтер масштабирует данные документа, чтобы соответствовать запрашиваемой мультимедиа. Допустимые значения описаны в следующей таблице.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

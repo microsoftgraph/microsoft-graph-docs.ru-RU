@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: fdd0cccd4be8e65718a118cbd7b0b344dc74c05c
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: ec674121a0d8785ee68b9939a10e42272924c5d1a2a1d6cd37b7a5a4c650cf26
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50518073"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218452"
 ---
 # <a name="printershare-resource-type"></a>тип ресурса printerShare
 
@@ -26,9 +26,9 @@ ms.locfileid: "50518073"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 | [Список](../api/print-list-shares.md) | [коллекция printerShare](printershare.md) | Получите список акций принтера в клиенте. |
-| [получение](../api/printershare-get.md); | [printerShare](printershare.md) | Чтение свойств и связей объекта **printerShare.** |
-| [обновление](../api/printershare-update.md). | [printerShare](printershare.md) | Обновление **объекта printerShare.** |
-| [удаление](../api/printershare-delete.md); | Нет | Размыть принтер. |
+| [Получение](../api/printershare-get.md) | [printerShare](printershare.md) | Чтение свойств и связей объекта **printerShare.** |
+| [Обновление](../api/printershare-update.md) | [printerShare](printershare.md) | Обновление **объекта printerShare.** |
+| [Удаление](../api/printershare-delete.md) | Нет | Размыть принтер. |
 | [Список заданий](../api/printershare-list-jobs.md) | [коллекция printJob](printjob.md) | Получите список заданий печати, которые стоят в очереди для обработки принтеромShare. |
 | [Создание задания](../api/printershare-post-jobs.md) | [printJob](printjob.md) | Создайте новое задание печати для принтераShare. Чтобы приступить к печати задания, используйте [start](../api/printjob-start.md). |
 | [Список allowedUsers](../api/printershare-list-allowedusers.md) | Коллекция объектов [user](user.md) | Извлечение списка пользователей, которым был предоставлен доступ для отправки заданий печати в связанную долю принтера. |
@@ -41,19 +41,19 @@ ms.locfileid: "50518073"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка| Идентификатор printerShare. Унаследованный от [printerBase](../resources/printerbase.md). Только для чтения.|
-|displayName|Строка|Имя доли принтера, которую должны отображать клиенты печати. Унаследованный от [printerBase](../resources/printerbase.md).|
+|id|String| Идентификатор printerShare. Унаследованный от [printerBase](../resources/printerbase.md). Только для чтения.|
+|displayName|String|Имя доли принтера, которую должны отображать клиенты печати. Унаследованный от [printerBase](../resources/printerbase.md).|
 |createdDateTime|DateTimeOffset|DateTimeOffset, когда была создана доля принтера. Только для чтения.|
 |manufacturer|String|Производитель сообщил на принтере, связанном с этой долей принтера. Унаследованный от [printerBase](../resources/printerbase.md). Только для чтения.|
 |model|String|Имя модели, которое сообщается на принтере, связанном с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md). Только для чтения.|
 |isAcceptingJobs|Логический|Принимает ли принтер, связанный с этой долей принтера, новые задания печати. Унаследованный от [printerBase](../resources/printerbase.md).|
 |defaults|[printerDefaults](printerdefaults.md)|Параметры печати принтера по умолчанию, связанные с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
 |capabilities|[printerCapabilities](printercapabilities.md)|Возможности принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
-|location|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
+|расположение|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
 |status|[printerStatus](printerstatus.md)|Состояние обработки, включая все ошибки, принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md). Только для чтения.|
-|allowAllUsers|Логический|Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные **свойствами allowedUsers** и **allowedGroups.**|
+|allowAllUsers|Логическое|Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные **свойствами allowedUsers** и **allowedGroups.**|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |printer|[printer](printer.md)|Принтер, с который связан этот принтер. |

@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b076b38e52bb8a7eb93a9eef35c866fc58e0e29a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 01f6bd1f7ebc77d90cb6fbdbf5d4daf22f9dda0a7bdb663516fc51933afc8ca1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54184909"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -37,14 +37,14 @@ ms.locfileid: "52231859"
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | address              | [physicalAddress](../resources/physicaladdress.md) | Адрес учебного заведения.                                                                                                                                               |
 | createdBy            | [identitySet](../resources/identityset.md)         | Объект, который создал учебное заведение.                                                                                                                                       |
-| description          | Строка                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
-| displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
+| description          | String                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
+| displayName          | String                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
 | externalId           | String                                             | Идентификатор учебного заведения в системе синхронизации.                                                                                                                                      |
 | externalPrincipalId  | String                                             | Идентификатор директора в системе синхронизации.                                                                                                                                   |
 | externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis`, `manual`. |
-| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
+| externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
 | highestGrade         | String                                             | Самый старший класс.                                                                                                                                                |
-| id                   | Строка                                             | Идентификатор объекта. Наследуется от [сущности](../resources/entity.md).                                                                                                   |
+| id                   | String                                             | Идентификатор объекта. Наследуется от [сущности](../resources/entity.md).                                                                                                   |
 | lowestGrade          | String                                             | Самый младший класс.                                                                                                                                                 |
 | phone                | String                                             | Номер телефона учебного заведения.                                                                                                                                              |
 | principalEmail       | String                                             | Адрес электронной почты директора.                                                                                                                                      |

@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса workbookCommentReply
+title: тип ресурса workbookCommentReply
 description: Определение типа ресурса workbookCommentReply
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7c47a6eb7abf8bf675dd8be35db6a96e511dbbcf
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9e71033e1665572e73dd672cd3a1e0e668b5f04ff1432f354fc27764055fa8ff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54177774"
 ---
-# <a name="workbookcommentreply-resource-type"></a>Тип ресурса workbookCommentReply
+# <a name="workbookcommentreply-resource-type"></a>тип ресурса workbookCommentReply
 
 Пространство имен: microsoft.graph
 
-Представляет ответ на комментарий Excel.
+Представляет ответ на Excel комментарий.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список workbookCommentReplies](../api/workbookcomment-list-replies.md) | [Коллекция workbookCommentReply](workbookcommentreply.md) | Получить список объектов workbookcommentreply. |
+| [Список книгCommentReplies](../api/workbookcomment-list-replies.md) | [коллекция workbookCommentReply](workbookcommentreply.md) | Извлечение списка объектов workbookcommentreply. |
 | [Get workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Чтение свойств и связей объекта workbookCommentReply. |
-| [Создание workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Создайте новую книгуCommentReply. |
+| [Создание книгиCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Создание новой книгиCommentReply. |
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b59ed2be941a03b91cbec91e16d822ddf73ecbe4
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9e3fb791b1f9e71dd2ac55ff2d528b57770982ceba917540af2c18c7c2a2bdc6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192329"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>тип ресурсов complianceManagementPartner
 
@@ -26,7 +26,7 @@ ms.locfileid: "52755639"
 |[Список complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[коллекция complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Список свойств и связей объектов [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 |[Получить complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 |[Создание complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Создание нового [объекта complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
-|[Удаление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Нет.|Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
+|[Удаление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Нет|Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
 |[Обновление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Обновление свойств объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 
 ## <a name="properties"></a>Свойства
@@ -36,14 +36,14 @@ ms.locfileid: "52755639"
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Отображаемое имя партнера|
-|macOsOnboarded|Boolean|Партнер, на борту для устройств Mac.|
-|AndroidOnboarded|Boolean|Партнер, на борту для android-устройств.|
-|iosOnboarded|Boolean|Партнер, на борту для устройств ios.|
+|macOsOnboarded|Логическое|Партнер, на борту для устройств Mac.|
+|AndroidOnboarded|Логическое|Партнер, на борту для android-устройств.|
+|iosOnboarded|Логическое|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
 |iosEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

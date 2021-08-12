@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 67795b93f99f7075b28657c32a94085968c981be
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6bd2c8dbcd6a57b9f97d810e5691cb2c705c67d2cf322a7b3d26369aa57489dd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223636"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>тип ресурса conditionalAccessSGrantControls
 
@@ -25,7 +25,7 @@ ms.locfileid: "50962492"
 | operator | String | Определяет связь элементов управления грантами. Возможные значения: `AND` , `OR` . |
 | builtInControls | коллекция conditionalAccessGrantControl | Список значений встроенных элементов управления, необходимых политике. Возможные значения: `block` , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` `unknownFutureValue` . |
 | customAuthenticationFactors | Коллекция строк | Список пользовательских ID-элементов элементов управления, необходимых политике. Дополнительные сведения см. в [специальном элементе управления.](/azure/active-directory/conditional-access/controls) |
-| termsOfUse | Коллекция строк | Список [условий использования](/graph/api/resources/agreement) ID, необходимых политике. |
+| termsOfUse | Коллекция String | Список [условий использования](/graph/api/resources/agreement) ID, необходимых политике. |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Особые соображения при использовании `passwordChange` в качестве управления
 

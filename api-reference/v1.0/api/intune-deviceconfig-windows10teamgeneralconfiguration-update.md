@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6113530629ad8cb4661bea5d97c0d232055ad8cf
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2eb7d05269438419e03d8df118fc587af49dc50dccb7f1e237542142255321c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759207"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234059"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Обновление windows10TeamGeneralConfiguration
 
