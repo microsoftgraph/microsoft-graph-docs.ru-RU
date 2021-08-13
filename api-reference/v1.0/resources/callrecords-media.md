@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса мультимедиа
+title: тип медиаресумов
 description: Тип мультимедиа
 localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2b720405e1420cdffc13655175a0575e1bf19170
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4e97d372e7c243a2cfbc4bbc8f44ec155a8addb70d624972a292ad9516824019
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252118"
 ---
-# <a name="media-resource-type"></a>Тип ресурса мультимедиа
+# <a name="media-resource-type"></a>тип медиаресумов
 
 Пространство имен: microsoft.graph.callRecords
 
-Представляет мультимедиа (звук, видео, Видеообмен на экране и т. д.), используемые при вызове.
+Представляет носители (аудио, видео, видеосвязь и т.д.), используемые в вызове.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|label|String|Способ идентификации мультимедиа во время этапа согласования мультимедиа.|
-|каллердевице|[Microsoft. Graph. Каллрекордс. Девицеинфо](callrecords-deviceinfo.md)|Сведения об устройстве, связанные с конечной точкой абонента этого носителя.|
-|каллернетворк|[Microsoft. Graph. Каллрекордс. Нетворкинфо](callrecords-networkinfo.md)|Сведения о сети, связанные с конечной точкой абонента этого носителя.|
-|каллидевице|[Microsoft. Graph. Каллрекордс. Девицеинфо](callrecords-deviceinfo.md)|Сведения об устройстве, связанные с конечной точкой вызываемого носителя.|
-|каллинетворк|[Microsoft. Graph. Каллрекордс. Нетворкинфо](callrecords-networkinfo.md)|Сведения о сети, связанные с конечной точкой вызываемого носителя.|
-|представлений|Коллекция [Microsoft. Graph. каллрекордс. медиастреам](callrecords-mediastream.md)|Сетевые потоки, связанные с этим носителем.|
+|label|String|Как были определены средства массовой информации на стадии переговоров.|
+|callerDevice|[microsoft.graph.callRecords.deviceInfo](callrecords-deviceinfo.md)|Сведения об устройстве, связанные с конечной точкой вызываемого средства массовой информации.|
+|callerNetwork|[microsoft.graph.callRecords.networkInfo](callrecords-networkinfo.md)|Сетевые сведения, связанные с конечной точкой вызываемого средства массовой информации.|
+|calleeDevice|[microsoft.graph.callRecords.deviceInfo](callrecords-deviceinfo.md)|Сведения об устройстве, связанные с конечной точкой вызова этого носитеса.|
+|calleeNetwork|[microsoft.graph.callRecords.networkInfo](callrecords-networkinfo.md)|Сетевые сведения, связанные с конечной точкой вызова этого носитела.|
+|потоки|[коллекция microsoft.graph.callRecords.mediaStream](callrecords-mediastream.md)|Сетевые потоки, связанные с этим мультимедиа.|
 
 ## <a name="json-representation"></a>Представление JSON
 

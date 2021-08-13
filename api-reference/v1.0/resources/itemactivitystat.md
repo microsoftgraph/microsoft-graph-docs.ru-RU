@@ -1,36 +1,36 @@
 ---
 author: daspek
-title: Тип ресурса itemActivityStat
-description: Объект ItemActivityStat предоставляет сведения о действиях, которые произошли с элементом.
+title: тип ресурса itemActivityStat
+description: Объект ItemActivityStat предоставляет сведения о действиях, которые произошли на элементе.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a33453fc884fc6dba7bd5b8fbcf4edc0261c11cb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 8fe252948bc717584204ec9be0c34cd23e5799d1bf382ef9aa45b28cfc21d6ca
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130088"
 ---
-# <a name="itemactivitystat-resource-type"></a>Тип ресурса itemActivityStat
+# <a name="itemactivitystat-resource-type"></a>тип ресурса itemActivityStat
 
 Пространство имен: microsoft.graph
 
-Ресурс **itemActivityStat** предоставляет сведения о действиях, которые произошли в течение интервала времени.
+Ресурс **itemActivityStat** предоставляет сведения о действиях, которые произошли в интервале времени.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство         | Тип                    | Описание
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | Указывает, что статистика за этот интервал основана на неполных данных. Только для чтения.
+| incompleteData   | [incompleteData][]      | Указывает, что статистика в этом интервале основана на неполных данных. Только для чтения.
 | isTrending       | Логическое                 | Указывает, является ли элемент "трендом". Только для чтения.
 | startDateTime    | DateTimeOffset          | Когда начинается интервал. Только для чтения.
 | endDateTime      | DateTimeOffset          | Когда интервал заканчивается. Только для чтения.
-| create           | [itemActionStat][]      | Статистика о действиях **создания** за этот интервал. Только для чтения.
-| edit             | [itemActionStat][]      | Статистика о действиях **редактирования** за этот интервал. Только для чтения.
-| delete           | [itemActionStat][]      | Статистика о действиях **удаления** за этот интервал. Только для чтения.
-| move             | [itemActionStat][]      | Статистика о действиях **перемещения** за этот интервал. Только для чтения.
-| access           | [itemActionStat][]      | Статистика о действиях **доступа** за этот интервал. Только для чтения.
+| create           | [itemActionStat][]      | Статистика создания **действий** в этом интервале. Только для чтения.
+| edit             | [itemActionStat][]      | Статистика действий **редактирования** в этом интервале. Только для чтения.
+| delete           | [itemActionStat][]      | Статистика действий **удаления в** этом интервале. Только для чтения.
+| move             | [itemActionStat][]      | Статистика действий **перемещения** в этом интервале. Только для чтения.
+| доступ           | [itemActionStat][]      | Статистика действий **доступа** в этом интервале. Только для чтения.
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -39,7 +39,7 @@ ms.locfileid: "50238682"
 
 | Имя связи | Тип                        | Описание
 |:------------------|:----------------------------|:---------------------------
-| activities        | Коллекция [itemActivity][] | Предоставляет объект **itemActivities,** представленный в **ресурсе itemActivityStat.**
+| activities        | Коллекция [itemActivity][] | Предоставляет **itemActivities,** представленные в этом **ресурсе itemActivityStat.**
 
 [itemActivity]: itemactivity.md
 

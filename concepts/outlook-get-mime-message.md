@@ -1,19 +1,19 @@
 ---
 title: Получение содержимого MIME сообщения
-description: Multipurpose Internet Mail Extensions (MIME) — это отраслевой стандарт электронной почты. Теперь вы можете использовать сегмент `$value`, чтобы получить содержимое MIME из сообщения Outlook.
+description: Multipurpose Internet Mail Extensions (MIME) — это отраслевой стандарт электронной почты. Теперь вы можете использовать сегмент `$value`, чтобы получить содержимое MIME из сообщения Outlook.
 author: abheek-das
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 48847396d14a280d5978e014bc31b10f7a77b65d
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: ff2724f5dd2f9325d53e5a7506887f944ba350e96d592be778e46b5c8e2dc67a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472267"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126055"
 ---
 # <a name="get-mime-content-of-a-message"></a>Получение содержимого MIME сообщения
 
-MIME — это отраслевой стандарт электронной почты. Многие приложения электронной почты создают сообщения в формате MIME и сохраняют их в файлах с расширением EML. 
+MIME — это отраслевой стандарт электронной почты. Многие приложения электронной почты создают сообщения в формате MIME и сохраняют их в файлах с расширением .EML. 
 
 Несмотря на то что Outlook _не сохраняет_ сообщения в формате MIME, текст сообщения Outlook в формате MIME можно получить двумя способами:
 
@@ -27,20 +27,20 @@ MIME — это отраслевой стандарт электронной п
 
 ## <a name="what-is-mime"></a>Что такое MIME?
 
-MIME — это стандарт, используемый для электронной почты в Интернете, чтобы передавать контент следующих типов по протоколу SMTP: 
+MIME — это стандарт, используемый для электронной почты в Интернете, чтобы передавать контент следующих типов по протоколу SMTP: 
 
 - сообщение в формате обычного текста;
-- сообщение с альтернативным содержимым (т. е. с обычным текстом и HTML);
+- сообщение с альтернативным содержимым (т. е. с обычным текстом и HTML);
 - ответ, в который вложено исходное сообщение;
 - текстовое сообщение с вложенными изображениями, звуковыми файлами, видео или файлами приложений;  
 - другие конструкции сообщений.
 
 Ниже представлены типичные заголовки MIME в сообщении. Дополнительные сведения см. в статье [RFC 2045](https://tools.ietf.org/html/rfc2045).
 
-- `MIME-Version` — указывает, что сообщение представлено в формате MIME.
-- `Content-Type` — указывает тип мультимедиа сообщения или его части, представленный свойствами *type* и *subtype*. Он также включает поле `boundary`, указывающее строку в виде границы MIME или границы инкапсуляции (в зависимости от расположения `Content-Type`). 
-- `Content-Disposition` — предоставляет сведения о вложении, например стиль его отображения (`inline` или `attachment`), имена файлов, а также даты создания и последнего изменения.
-- `Content-Transfer-Encoding` — указывает метод шифрования, используемый для представления двоичных данных.
+- `MIME-Version` — указывает, что сообщение представлено в формате MIME.
+- `Content-Type` — указывает тип мультимедиа сообщения или его части, представленный свойствами *type* и *subtype*. Он также включает поле `boundary`, указывающее строку в виде границы MIME или границы инкапсуляции (в зависимости от расположения `Content-Type`). 
+- `Content-Disposition` — предоставляет сведения о вложении, например стиль его отображения (`inline` или `attachment`), имена файлов, а также даты создания и последнего изменения.
+- `Content-Transfer-Encoding` — указывает метод шифрования, используемый для представления двоичных данных.
 
 ## <a name="get-mime-content-of-an-outlook-message"></a>Получение содержимого MIME сообщения Outlook
 
@@ -280,4 +280,4 @@ e.</p>
 
 - [Получение содержимого MIME вложения](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи в группе
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) в Microsoft Graph 1.0.
+- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) в Microsoft Graph 1.0.

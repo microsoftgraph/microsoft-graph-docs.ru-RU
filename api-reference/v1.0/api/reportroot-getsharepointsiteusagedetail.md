@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: d281bf5e60b7eaecba89be08be4b467a60d77b32
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 68fbdc3b93022657df6cc06ca5403617ac1c15c55498df82fd4632e4e461e294
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983183"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208876"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983183"
 
 Получите сведения об использовании сайтов SharePoint.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 об использовании сайта SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов - SharePoint использования сайта.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -69,7 +69,7 @@ URL-адреса для скачивания, для которых выполн
 CSV-файл содержит столбцы со следующими заголовками:
 
 - "Report Refresh Date" (Дата обновления отчета);
-- ИД сайта
+- Id сайта
 - "Site URL" (URL-адрес сайта);
 - "Owner Display Name" (Отображаемое имя владельца);
 - Is Deleted (удален)
@@ -82,7 +82,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Storage Allocated (Byte)" (Объем выделенного хранилища в байтах);
 - "Root Web Template" (Шаблон корневого веб-сайта);
 - Owner Principal Name (имя участника-владельца)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

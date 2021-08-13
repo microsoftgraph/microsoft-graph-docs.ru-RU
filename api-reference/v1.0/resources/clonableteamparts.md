@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Клонаблетеампартс
+title: тип enum clonableTeamParts
 description: 'Описывает, какая часть команды должна быть клонирована. '
 localization_priority: Normal
 author: nkramer
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: 5d9121d7cbaa10260b1a7a7ce180ed7c9f37a565
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 371f026b671f750ef67ec796d154fa3e399ac8967664466bdcb2bc498a11124c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252062"
 ---
-# <a name="clonableteamparts-enum-type"></a>тип перечисления Клонаблетеампартс
+# <a name="clonableteamparts-enum-type"></a>тип enum clonableTeamParts
 
 Пространство имен: microsoft.graph
 
 
 
-Описывает, какая часть [команды](../resources/team.md) должна быть клонирована.
+Описывает, какая часть [команды должна](../resources/team.md) быть клонирована.
 
 ## <a name="members"></a>Элементы
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|apps|1 |Скопируйте список установленных приложений.|
-|tabs|2 |копирует вкладки в каналах.|
-|settings|4 |Копирует все параметры в группе вместе с параметрами группы ключей.|
+|apps|1|Скопируйте список установленных приложений.|
+|tabs|2|копирует вкладки в каналах.|
+|settings|4 |Копирует все параметры в команде, а также параметры ключевых групп.|
 |channels|8 |копирует структуру канала (но не сообщения в канале).|
-|members|16 |копирует участников и владельцев группы.|
+|members|16 |копирует членов и владельцев команды.|
 

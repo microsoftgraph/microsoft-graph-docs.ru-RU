@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с Angular
 description: Начало использования Microsoft Graph Toolkit в приложении Angular
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: b1985598985f85c0f33676fee49656324c65c7c5
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 8cd4c8039111dbc5f764cd4e698cf02c9aa0e1e621982e13947cb62846e1ea52
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54159661"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Использование Microsoft Graph Toolkit с Angular
 

@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс GeoCoordinates предоставляет географические координаты и высоту расположения в соответствии с метаданными файла.
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b2c6fec5e27e3b8fe902b330b226fc498b09b138
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f5f61b07cf9c6940fdd56aa2f34f1fc70a8211decf3e34e19ff8eeac9e839da8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240012"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54175275"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса GeoCoordinates
 

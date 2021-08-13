@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: aa13befe855fab8094107cee13eae28efff3e4b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0837dae4482174bb8ccab05791c61dfb17eb6c80d6e1cdc3337cdfddb6d1636b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124026"
 ---
 # <a name="use-the-microsoft-graph-threat-assessment-api"></a>Использование API оценки угроз Microsoft Graph
 
@@ -31,7 +31,7 @@ API оценки угроз Microsoft Graph предоставляет мето�
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Ресурсы оценки угроз и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Дополнительные сведения:
+Ресурсы оценки угроз и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Подробнее:
 
 - Изучите подробнее [методы](../resources/threatassessmentrequest.md#methods), [свойства](../resources/threatassessmentrequest.md#properties) и [отношения](../resources/threatassessmentrequest.md#relationships) ресурсов [запросов на оценку угроз](../resources/threatassessmentrequest.md) и [результатов оценки угроз](../resources/threatAssessmentResult.md).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).

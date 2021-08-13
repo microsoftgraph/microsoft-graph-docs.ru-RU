@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52ace73dc7735a2e9c8fe316fc7a00a26564cdca
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7fe1219ca974ed8b3a3bfd594865b245cec2e91dcaa005305347f63bde214306
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218536"
 ---
 # <a name="rgbcolor-resource-type"></a>Тип ресурса rgbColor
 
@@ -27,7 +27,7 @@ ms.locfileid: "52754946"
 |g|Байт|Значение зеленого|
 |b|Байт|Значение синего|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

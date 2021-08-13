@@ -5,18 +5,18 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cd7784bca9b6eab1390d40286431efd658c401d3
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 9381749d42a61a8704a54434cf233dea8ad69240538de0022157656f522f1292
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54196469"
 ---
 # <a name="windowshelloforbusinessauthenticationmethod-resource-type"></a>тип ресурса windowsHelloForBusinessAuthenticationMethod
 
 Пространство имен: microsoft.graph
 
-Представление метода проверки подлинности Windows Hello для бизнеса, зарегистрированного для пользователя. Windows Hello для бизнеса — это метод проверки подлинности для устройств Windows.
+Представление метода проверки подлинности Windows Hello для бизнеса, зарегистрированного для пользователя. Windows Hello для бизнеса — это метод проверки подлинности для Windows устройств.
 
 Наследует от [проверки подлинностиMethod](../resources/authenticationmethod.md).
 
@@ -30,15 +30,15 @@ ms.locfileid: "51468956"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Дата и время регистрации этого ключа Windows Hello для бизнеса.|
-|displayName|String|Имя устройства, на котором зарегистрирована Windows Hello для бизнеса|
+|createdDateTime|DateTimeOffset|Дата и время регистрации этого Windows Hello для бизнеса.|
+|displayName|String|Имя устройства, на котором Windows Hello для бизнеса|
 |id|String|Уникальный идентификатор для этого метода проверки подлинности. Унаследованный от [проверки подлинностиMethod](../resources/authenticationmethod.md)|
-|keyStrength|authenticationMethodKeyStrength|Ключевая сила этого ключа Windows Hello для бизнеса. Возможные значения: `normal`, `weak`, `unknown`.|
+|keyStrength|authenticationMethodKeyStrength|Ключевая сила этого Windows Hello для бизнеса. Возможные значения: `normal`, `weak`, `unknown`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|device;|[device](../resources/device.md)|Зарегистрированное устройство, на котором находится этот ключ Windows Hello для бизнеса.|
+|device;|[device](../resources/device.md)|Зарегистрированное устройство, на котором Windows Hello для бизнеса.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

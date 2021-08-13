@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d4eee47b1503b8c37eb0551817725b966d492866
-ms.sourcegitcommit: 9eeb056f311044aaa40654cdb3ae5ae61f1c4d04
+ms.openlocfilehash: f4766138275b034f2fd5dc1980c9bb266b667cf4f68a2a437a2512fccac750e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52854126"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54230713"
 ---
 # <a name="identityprotectionroot-resource-type"></a>тип ресурса identityProtectionRoot
 
@@ -40,7 +40,7 @@ Get a user's risk history | [GET https://graph.microsoft.com/v1.0/identityProtec
 
 ## <a name="what-licenses-do-i-need"></a>Какие лицензии нужны?
 
-Azure AD Identity Protection — это функция премиум-класса. Чтобы получить доступ к API riskDetection(примечание: лицензии P1 или P2, лицензии Azure AD Premium P1 или P2, необходимо получить сведения об ограниченном риске. API riskyUsers доступен только для лицензий Azure AD Premium P2.
+Azure AD Identity Protection — это функция премиум-класса. Чтобы получить доступ к API riskDetection (примечание: лицензии P1 получают ограниченную информацию о рисках), вам нужна лицензия Azure AD Premium P1 или P2). API riskyUsers доступен только для Azure AD Premium P2 лицензий.
 
 ## <a name="see-also"></a>См. также
 

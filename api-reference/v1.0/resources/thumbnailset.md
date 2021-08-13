@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс ThumbnailSet представляет собой коллекцию ресурсов thumbnail с ключами.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5fe322d202b0c1b5735736ed6ca1d135839c3420
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: aa38f89fbfe5738a37842439965690f5ce8aa86c122685d37a991e2797c2ca48
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221175"
 ---
 # <a name="thumbnailset-resource-type"></a>Тип ресурса ThumbnailSet
 

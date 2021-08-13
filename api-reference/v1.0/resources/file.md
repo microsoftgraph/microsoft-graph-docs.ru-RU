@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс File — это единая структура, объединяющая элементы данных, связанные с файлами.
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c19f2afce6128c7fb29a81c6e8d8f2d1c08c7913
-ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
+ms.openlocfilehash: 57266222e9cbc2778673172b3b96a40ca4d51df466a8c90ae784d170b7e25175
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146890"
 ---
 # <a name="file-resource-type"></a>Тип ресурса file
 
@@ -19,7 +19,7 @@ ms.locfileid: "48753397"
 
 Ресурс **File** — это единая структура, объединяющая элементы данных, связанные с файлами.
 
-Если [**DriveItem**](driveitem.md) имеет аспект **File** , отличный от NULL, элемент представляет файл.
+Если [**у DriveItem**](driveitem.md) есть аспект  файла, не относячивый к нулю, элемент представляет файл.
 Помимо других свойств, у файлов есть связь **content**, которая содержит байтовый поток файла.
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1212f1e473d6f8bfe6ac06fbee0b96b12256a377
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 49e2d2c70596910494b526b3dd92e0f3ed157802a7789c68d543bc044518ceaf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335592"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152756"
 ---
 # <a name="fido2authenticationmethod-resource-type"></a>тип ресурса fido2AuthenticationMethod
 
@@ -23,8 +23,8 @@ ms.locfileid: "52335592"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Список](../api/fido2authenticationmethod-list.md)|[коллекция fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Извлечение списка объектов fido2AuthenticationMethod пользователя и их свойств.|
-|[получение](../api/fido2authenticationmethod-get.md);|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethod пользователя.|
-|[удаление](../api/fido2authenticationmethod-delete.md);|Нет|Удаляет объект fido2AuthenticationMethod пользователя.|
+|[Получение](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethod пользователя.|
+|[Удаление](../api/fido2authenticationmethod-delete.md)|Нет|Удаляет объект fido2AuthenticationMethod пользователя.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -34,7 +34,7 @@ ms.locfileid: "52335592"
 |createdDateTime|DateTimeOffset|Время регистрации этого ключа пользователю.|
 |aaGuid|String|Authenticator GuID-идентификатор attestation, который указывает тип (например, make и model) аутентиста.|
 |model|String|Назначенная производителем модель ключа безопасности FIDO2.|
-|attestationCertificates|Коллекция строк|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
+|attestationCertificates|Коллекция String|Сертификат аттестации(ы), присоединенный к этому ключу безопасности.|
 |attestationLevel|attestationLevel|Уровень проверки этого ключа безопасности FIDO2. Возможные значения: `attested` или `notAttested` .|
 
 

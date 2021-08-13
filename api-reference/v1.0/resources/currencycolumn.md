@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс currencyColumn в ресурсе columnDefinition указывает, что значения столбца представляют денежные значения.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 90d1b3456e31f618a4b194eca6d9907d3852363e
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 1bf85f969572622442df3489c6491d581d63060196be7f5629493a55ad5c2042
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197102"
 ---
 # <a name="currencycolumn-resource-type"></a>Тип ресурса currencyColumn
 

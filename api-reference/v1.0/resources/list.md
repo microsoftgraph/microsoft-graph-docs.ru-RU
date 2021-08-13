@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: 0f7c8600b8a4d8f41e6dd6e6ad4240252c004bbf
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 736c5d092587f5e6e57fc564bf9e5a22bc2efcea00c18bad4d4b5c7cba661971
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202240"
 ---
 # <a name="list-resource"></a>Ресурс List
 

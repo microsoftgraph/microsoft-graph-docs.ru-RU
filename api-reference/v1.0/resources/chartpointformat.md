@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b912033346325151cfcb75a63e0d07c8e2114a89
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 330880d00e12dc7f42128be80f02855a382ebe407478e3d24a88e823ef26137c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249323"
 ---
 # <a name="chartpointformat-resource-type"></a>Тип ресурса ChartPointFormat
 
@@ -28,7 +28,7 @@ ms.locfileid: "47988368"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[воркбукчартфилл](chartfill.md)|Представляет формат заливки диаграммы, включая сведения о форматировании фона. Только для чтения.|
+|fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки диаграммы, включая сведения о форматировании фона. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

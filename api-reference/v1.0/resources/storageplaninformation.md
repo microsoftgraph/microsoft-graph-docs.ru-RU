@@ -1,28 +1,28 @@
 ---
 author: learafa
-description: Ресурс storagePlanInformation предоставляет сведения о планах квот хранилища диска.
+description: Ресурс storagePlanInformation предоставляет сведения о планах квот на хранение диска.
 title: StoragePlanInformation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: b8b4778a4726c227bfe79ad13ecb14507b13a889
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0000275139bef3765b7be2e44c26c5e6c12c3e73d04d52b009bfad558081202c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163658"
 ---
-# <a name="storageplaninformation-resource-type"></a>Тип ресурса storagePlanInformation
+# <a name="storageplaninformation-resource-type"></a>тип ресурса storagePlanInformation
 
 Пространство имен: microsoft.graph
 
-Предоставляет сведения о планах квот хранилища диска.
+Предоставляет сведения о планах квоты на хранение диска.
 
 ## <a name="properties"></a>Свойства
 
 | Имя свойства     | Тип      | Описание                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| **упградеаваилабле**  | Boolean   | Указывает, доступны ли планы квоты для хранилища выше. Только для чтения. |
+| **upgradeAvailable**  | Логический   | Указывает, существуют ли более высокие планы квоты на хранение. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
 

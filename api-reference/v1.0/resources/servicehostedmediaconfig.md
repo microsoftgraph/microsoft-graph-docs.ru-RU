@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Сервицехостедмедиаконфиг
-description: Тип Сервицехостедмедиаконфиг.
+title: тип ресурса serviceHostedMediaConfig
+description: Тип serviceHostedMediaConfig.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d4bdea6009dae0bd06ec9ffc00d00e417e7c22d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c82a4c9496007fafcace339c85bafdd3e0fa9152dbcce703b1ddf468f04d5e71
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211828"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a>Тип ресурса Сервицехостедмедиаконфиг
+# <a name="servicehostedmediaconfig-resource-type"></a>тип ресурса serviceHostedMediaConfig
 
 Пространство имен: microsoft.graph
 
-Удаленно размещенный носитель. Это наследуется от [медиаконфиг](mediaconfig.md).
+Средства массовой информации, которые хозяйские удаленно. Это наследуется [от mediaConfig](mediaconfig.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                    | Тип                                                        | Описание                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| префетчмедиа               | Коллекция [медиаинфо](mediainfo.md)                        | Список носителей для предварительной загрузки.                   |
+| preFetchMedia               | [коллекция mediaInfo](mediainfo.md)                        | Список мультимедиа для предварительного получения.                   |
 
 
 ## <a name="json-representation"></a>Представление JSON

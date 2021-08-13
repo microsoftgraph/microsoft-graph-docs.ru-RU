@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6f096aff01104e36b25e42725c462735f024fc82
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 40a9b71dbf32aebb169b621c9defacc75c0209be8f22afb7f2063675ac0d913d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722421"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135031"
 ---
 # <a name="recentnotebook-resource-type"></a>Тип ресурса recentNotebook
 

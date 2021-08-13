@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Релатедконтакт
-description: Контактная запись, связанная с educationUser, которая предоставляет информацию для хранителя, возможностей, доктора и т. д.
+title: тип ресурсов relatedContact
+description: Запись контактов, связанная с educationUser, который предоставляет информацию для опекунов, помощников, врачей и так далее.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f1dd62a2727ec2cbd6a4044b84105d739bbf9c93
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 3a99702811601278c1d3bbe4413fec495b8ba2d6bd13b23dafd90b3ff86f7c19
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597384"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237532"
 ---
-# <a name="relatedcontact-resource-type"></a>Тип ресурса Релатедконтакт
+# <a name="relatedcontact-resource-type"></a>тип ресурсов relatedContact
 
 Пространство имен: microsoft.graph
 
-Контактная запись, связанная с [educationUser](../resources/educationuser.md) , которая предоставляет информацию для хранителя, возможностей, доктора и т. д.
+Запись контактов, связанная с [educationUser,](../resources/educationuser.md) который предоставляет информацию для опекунов, помощников, врачей и так далее.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип                  | Описание                                                                                                                               |
 | :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| id            | String                | Идентификатор контакта в Azure Active Directory.                                                                                    |
-| displayName   | String                | Имя контакта. Обязательно.                                                                                                            |
+| id            | String                | Удостоверение контакта в Azure Active Directory.                                                                                    |
+| displayName   | String                | Имя контакта. Обязательный элемент.                                                                                                            |
 | emailAddress  | String                | Основной адрес электронной почты контакта.                                                                                                     |
 | mobilePhone   | String                | Номер мобильного телефона контакта.                                                                                                       |
-| Отношение  | `contactRelationship` | Отношение к пользователю. Возможные значения:,,,,,, `parent` `relative` `aide` `doctor` `guardian` `child` `other` , `unknownFutureValue` . |
-| акцессконсент | Логический               | Указывает, было ли пользователь отправлен для доступа к данным учащихся.                                                                     |
+| Отношение  | `contactRelationship` | Отношение к пользователю. Возможные значения `parent` : , , , , , `relative` `aide` `doctor` `guardian` `child` `other` `unknownFutureValue` . |
+| accessConsent | Логическое               | Указывает, было ли получено согласие пользователя на доступ к данным учащихся.                                                                     |
 
 ## <a name="json-representation"></a>Представление JSON
 

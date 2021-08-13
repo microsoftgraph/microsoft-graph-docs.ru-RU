@@ -1,39 +1,39 @@
 ---
 author: daspek
-title: Тип ресурса createAction
+title: тип ресурса createAction
 description: Объект createAction предоставляет сведения о создании элемента.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: d722953dbef726c054136a9a7beb225a31f93241
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4869683401b1db6c9d11176abb28f92839d1fa6e85d428530ae3586c27c867ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238141"
 ---
-# <a name="createaction-resource-type"></a>Тип ресурса createAction
+# <a name="createaction-resource-type"></a>тип ресурса createAction
 
 Пространство имен: microsoft.graph
 
-Наличие ресурса **createAction** в [**itemActivity**][activity] указывает, что действие создало элемент.
+Наличие ресурса **createAction** в [**itemActivity**][activity] указывает на то, что действие создало элемент.
 
-**Примечание.** В настоящее время этот ресурс пуст. В будущем он может быть заполнен дополнительными свойствами.
+**Примечание:** Этот ресурс в настоящее время пуст. В будущем она может быть заполнена дополнительными свойствами.
 
->**Примечание.** Записи о действиях с элементами в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
+>**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 
 [activity]: itemactivity.md
 
 ## <a name="properties"></a>Свойства
 
-Нет Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.
+Нет. Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.
 
 ## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.createAction"
+  "@type&quot;: &quot;microsoft.graph.createAction"
 }-->
 
 ```json

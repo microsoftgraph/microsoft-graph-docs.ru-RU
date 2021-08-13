@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 14488ec20fd65976188583142301490314b06ccd
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 196b59b6fbe8e48643cb434d8f53c198a73c6279e1969f152e7efec9e9d97834
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225603"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Обновления программного обеспечения с помощью Windows службы развертывания для бизнеса
 
@@ -26,7 +26,7 @@ ms.locfileid: "52067716"
 
 Фактически служба развертывания в настоящее время развертывает только обновления функций и обновления качества безопасности, как это определено в каталоге.  В настоящее время служба не развертывает обновления качества без обеспечения безопасности или обновления драйвера.
 
-Дополнительные дополнительные Windows 10 обновления и обслуживание см. в кратком руководстве по [Windows в качестве службы.](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
+Дополнительные дополнительные Windows 10 обновления и обслуживание см. в кратком руководстве [по Windows как услуга.](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
 ## <a name="identifying-updates-for-deployment"></a>Определение обновлений для развертывания
 
@@ -73,7 +73,7 @@ ms.locfileid: "52067716"
 | Обновление функций Windows 10 версии 20H1 | 20H1    |
 | Обновление функций Windows 10 версии 1909 г. | 1909    |
 | Обновление функций Windows 10 версии 1903 | 1903    |
-| Обновление функций Windows 10 версии 1809 | 1809    |
+| Обновление функций для Windows 10, версия 1809 | 1809    |
 
 Как только вы определите нужную версию, назначьте ее в качестве контента развертыванию с помощью [featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) и укажите **свойство версии.**
 
