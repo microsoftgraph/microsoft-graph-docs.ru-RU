@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6c856f3dc32b3166909ededa954ba7fa0636b56
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: a2d6244e130e7c6a357b4a52970ae187049fd9fe514170ddcefbea92643a81c9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52757327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160557"
 ---
 # <a name="create-iosvppapp"></a>Create iosVppApp
 

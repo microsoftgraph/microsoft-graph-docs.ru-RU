@@ -5,18 +5,18 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8967f939bd0d61f4821375cac3ddfc9861cabe5a
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 946a1974540adf0539e85519bc75c637c1469347d411b48b686378339eb0f48a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54192574"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>тип ресурса chatMessageHostedContent
 
 Пространство имен: microsoft.graph
 
-Представляет содержимое Teams, которое было организовано в сообщении чата, например изображения или фрагменты кода.
+Представляет Teams контент, который был в сообщении чата, например изображения или фрагменты кода.
 [Вложения файлов](chatmessageattachment.md) не являются хост-контентом; они хранятся в SharePoint или OneDrive.
 
 ## <a name="methods"></a>Методы
@@ -43,7 +43,7 @@ chatMessageHostedContent происходит из [teamworkHostedContent](teamw
 
 | Имя свойства                     | Тип   | Описание
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | string | Только для записи. Представляет временный ИД для размещенного контента при отправке сообщения для ссылки на размещаемую информацию в **отправленных ресурсах chatMessage.**|
+| @microsoft.graph.temporaryId      | Строка | Только для записи. Представляет временный ИД для размещенного контента при отправке сообщения для ссылки на размещаемую информацию в **отправленных ресурсах chatMessage.**|
 
 ## <a name="relationships"></a>Связи
 

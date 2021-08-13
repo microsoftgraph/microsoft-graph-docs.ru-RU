@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0b799be314ce9f2519d7174c84f9349b09bbd5c3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 05e0caa6d38276d2d40e23c854b65ee2b0687fa1a6ed2df1147e5f74a95ee459
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54135976"
 ---
 # <a name="list-shared"></a>Список "Общие"
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK

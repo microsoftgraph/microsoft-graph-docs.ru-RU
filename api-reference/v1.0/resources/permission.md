@@ -6,12 +6,12 @@ localization_priority: Priority
 description: Ресурс Permission содержит сведения о разрешении на совместный доступ, предоставленном для ресурса DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c14371966d4620450c7d791a3ed90a38b12c61b
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 0d46c94d66339ad5329107e50a781d6f2f4e507d048707cced64dae35748e7da
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126391"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса Permission
 
@@ -19,8 +19,7 @@ ms.locfileid: "52335608"
 
 Ресурс **Permission** содержит сведения о разрешении на совместный доступ, предоставленном для ресурса [DriveItem](driveitem.md).
 
-Разрешения на совместный доступ могут иметь самые различные формы.
-Ресурс **Permission** представляет эти формы с помощью аспектов в ресурсе.
+Разрешения на совместный доступ могут иметь самые различные формы. Ресурс **Permission** представляет эти различные формы с помощью аспектов в ресурсе.
 
 ## <a name="json-representation"></a>Представление JSON
 

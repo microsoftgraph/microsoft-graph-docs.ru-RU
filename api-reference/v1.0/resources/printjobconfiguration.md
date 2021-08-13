@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: f848b9274172113404a39f13e42c003643dfdf74
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 1e13d74fb7a9ed977a380050e49c8d3f267e045299474ca622aa408d738a4562
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54223244"
 ---
 # <a name="printjobconfiguration-resource-type"></a>тип ресурса printJobConfiguration
 
@@ -39,8 +39,8 @@ ms.locfileid: "51944248"
 |finishings|[коллекция printFinishing](enums.md#printfinishing-values)|Отделочные процессы, которые необходимо использовать при печати.|
 |pagesPerSheet|Int32|Количество страниц документов для печати на каждом листе.
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|Направление для раскладывки страниц при печати нескольких страниц на один лист. Допустимые значения описаны в следующей таблице.|
-|collate|Boolean|Должен ли принтер совмессировать страницы, печатая несколько копий много страниц документа.|
-|scaling|[printScaling](enums.md#printscaling-values)|Указывает, как принтер должен масштабировать данные документа, чтобы соответствовать запрашиваемой мультимедиа. Допустимые значения описаны в следующей таблице.|
+|collate|Логическое|Должен ли принтер совмессировать страницы, печатая несколько копий много страниц документа.|
+|масштабирование.|[printScaling](enums.md#printscaling-values)|Указывает, как принтер должен масштабировать данные документа, чтобы соответствовать запрашиваемой мультимедиа. Допустимые значения описаны в следующей таблице.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

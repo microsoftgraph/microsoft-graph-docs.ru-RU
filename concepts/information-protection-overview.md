@@ -1,56 +1,56 @@
 ---
-title: Обзор меток Microsoft Information Protection
-description: Метки Microsoft Information Protection помогают организациям классифицировать, помечать и защищать данные на основе меток конфиденциальности центра безопасности и соответствия требованиям Office 365.
+title: Microsoft Information Protection метки
+description: Microsoft Information Protection помогает организациям классифицировать, маркировать и защищать данные на основе Office 365 меток безопасности и соответствия требованиям.
 author: tommoser
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 599e395d82cf74a22a9c26ceab066bdf53176e0c
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: dafa396b5c0d7a27400ddee5c6bb2965dd4abb1d83ccb5f9deef0f71283e1a02
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54237420"
 ---
-# <a name="information-protection-overview"></a>Общие сведения о защите информации
+# <a name="information-protection-overview"></a>Обзор защиты информации
 
-Microsoft Information Protection помогает организациям классифицировать, помечать и защищать данные в зависимости от их [конфиденциальности](/Office365/SecurityCompliance/sensitivity-labels). 
+Microsoft Information Protection помогает организациям классифицировать, маркировать и защищать данные на основе [конфиденциальности.](/Office365/SecurityCompliance/sensitivity-labels) 
 
-В организациях для удобства используются метки:
+Организации используют метки для оказания помощи:
 
-* Пользователи в понимании важности обрабатываемых данных.
-* Соответствие администраторы при обнаружении конфиденциальной информации. 
-* Администраторы безопасности при развертывании политик доступа к данным и защиты от потери данных на основе более обширных сведений о метках.
+* Пользователи понимают важность обрабатываемой информации.
+* Администраторы соответствия требованиям при обнаружении того, где живет конфиденциальную информацию. 
+* Администраторы безопасности при развертывании политик защиты от потери данных и доступа к данным на основе более богатых сведений об меток.
 
-## <a name="why-integrate-microsoft-information-protection"></a>Зачем нужно интегрировать защиту информации Майкрософт? 
+## <a name="why-integrate-microsoft-information-protection"></a>Зачем интегрировать Microsoft Information Protection? 
 
-### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>Интеграция с общедоступной платформой для маркировки, обслуживание миллионов пользователей и устройств
+### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>Интеграция с платформой повсеместной маркировки, обслуживающей миллионы пользователей и устройств
 
-Более миллиона организаций с десятками миллионов пользователей используют защиту информации Майкрософт для классификации, подписи и защиты данных.  В дополнение к Microsoft 365, различные службы защиты от потери данных (DLP), платформы бизнес-аналитики и программного обеспечения, а также программного обеспечения (SaaS) включают метки [защиты информации Майкрософт](https://www.microsoft.com/security/technology/information-protection) для предоставления более подробных сведений о классификации данных. 
+Более миллиона организаций с десятками миллионов пользователей используют Microsoft Information Protection для классификации, метки и защиты данных.  Помимо Microsoft 365, различные службы по предотвращению потери данных( DLP), платформы бизнес-аналитики и решения для [](https://www.microsoft.com/security/technology/information-protection) программного обеспечения как-службы (SaaS) приняли Microsoft Information Protection метки, чтобы обеспечить более богатый опыт классификации данных. 
 
-### <a name="label-information-in-line-of-business-applications"></a>Сведения о подписи в бизнес-приложениях
+### <a name="label-information-in-line-of-business-applications"></a>Сведения о метки в бизнес-приложениях
 
-Корпоративные разработчики используют Microsoft Information Protection для обозначения и защиты конфиденциальных сведений о клиентах при экспорте из бизнес-приложений, чтобы обеспечить безопасность сведений о клиентах. Подключение приложений к экосистеме Microsoft Information Protection позволяет приложениям применять, обновлять и удалять [метки конфиденциальности](/Office365/SecurityCompliance/sensitivity-labels) в своих данных приложений без дополнительных издержек при интеграции полного пакета SDK.
+Enterprise разработчики используют Microsoft Information Protection для маркировки и защиты конфиденциальной информации о клиентах при экспорте из бизнес-приложений для обеспечения безопасности сведений о клиентах. Подключение приложений к экосистеме Microsoft Information Protection позволяет приложениям применять, обновлять и [](/Office365/SecurityCompliance/sensitivity-labels) удалять метки конфиденциальности в собственных данных приложений без накладных расходов на интеграцию полного SDK.
 
-## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>Что можно делать с помощью API меток защиты информации Майкрософт в Microsoft Graph? 
+## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>Что можно сделать с API Microsoft Information Protection меток в Microsoft Graph? 
 
-### <a name="discover-labels-available-to-a-user-or-organization"></a>Обнаружение меток, доступных пользователю или Организации
+### <a name="discover-labels-available-to-a-user-or-organization"></a>Обнаружение меток, доступных пользователю или организации
 
-С помощью Microsoft Graph вы можете получить доступ к [меткам конфиденциальности](/graph/api/informationprotectionlabel?view=graph-rest-beta) , доступным для пользователя или организации. Метки применяются приложениями и службами к данным в REST или в движении, помогая пользователям и подчиненным приложениям и службам определить чувствительность обрабатываемой ими информации.
+С помощью microsoft Graph вы [](/graph/api/informationprotectionlabel?view=graph-rest-beta) можете получить доступ к метки конфиденциальности, доступные пользователю или организации. Метки применяются приложениями и службами к данным в режиме покоя или в движении, помогая пользователям и приложениям и службам ниже по течению понимать чувствительность обработки данных.
 
-### <a name="understand-how-to-apply-labels"></a>Сведения о том, как применять метки
+### <a name="understand-how-to-apply-labels"></a>Понимание применения меток
 
-Предоставляя сведения о существующей и требуемой метке конфиденциальности, API REST может сообщить приложению о [действиях](/graph/api/resources/informationprotectionaction?view=graph-rest-beta) , которые необходимо выполнить, чтобы правильно применить метку. Сюда входят такие действия, как приложение [метаданных](/graph/api/resources/metadataaction?view=graph-rest-beta) , создание [водяного знака](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) , [Защита](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)и многое другое.
+Предоставляя сведения о существующей и необходимой мете конфиденциальности, API REST [](/graph/api/resources/informationprotectionaction?view=graph-rest-beta) может разумно информировать ваше приложение о действиях, которые необходимо принять для правильного применения метки. Это включает такие действия, как приложение [метаданных,](/graph/api/resources/metadataaction?view=graph-rest-beta) генерация [водяных](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) знаков, [защита](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)и другие.
 
-### <a name="interpret-labels-applied-to-data"></a>Интерпретация меток, примененных к данным
+### <a name="interpret-labels-applied-to-data"></a>Интерпретация меток, применяемых к данным
 
-Приложения, использующие сведения, которые уже имеют атрибут [метки чувствительности](/graph/api/resources/metadataaction?view=graph-rest-beta) , могут использовать API **екстрактлабел** для разрешения метаданных метки в [метку чувствительности](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)к защите информации Майкрософт. Используйте метку, чтобы определить действия, которые должны выполняться приложением при обработке или использовании данных с подписью. 
+Приложения, потребляющие информацию, [](/graph/api/resources/metadataaction?view=graph-rest-beta) уже применяемую метаданные метки чувствительности, могут использовать API **extractLabel** для решения метаданных меток на метку Microsoft Information Protection [чувствительности.](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta) Используйте метку, чтобы определить действия, которые должно принимать приложение при обработке или потреблении помеченных данных. 
 
 ## <a name="api-reference"></a>Справочные материалы по API
 
 Ищете справочные материалы по API для этой службы?
 
-- [API Microsoft Information Protection в бета-версии Microsoft Graph](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta)
+- [Microsoft Information Protection API в бета Graph Microsoft](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Выберите и попытайтесь пометить примеровые запросы для защиты информации в [проводнике Graph](https://developer.microsoft.com/graph/graph-explorer). Выберите **Показать другие примеры** в столбце слева. Используйте меню, чтобы включить **защиту информации Майкрософт**.
+- Выберите и попробуйте пример запросов по маркировке информационной защиты [в Graph Explorer.](https://developer.microsoft.com/graph/graph-explorer) Выберите **Показать другие примеры** в столбце слева. Используйте меню, чтобы включить **Microsoft Information Protection**.

@@ -3,12 +3,12 @@ title: Поставщик MSAL 2
 description: Поставщик MSAL 2 использует msal-browser для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph
 localization_priority: Normal
 author: amrutha95
-ms.openlocfilehash: f583845f5c1929669242323501d08fa4a861197e
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: f856c900b0b8aace7a1c2248d2921b39fe0a2c44c6fc9e05c35003c0d0c53d50
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54204917"
 ---
 # <a name="msal-2--provider"></a>Поставщик MSAL 2
 
@@ -34,7 +34,7 @@ ms.locfileid: "52579847"
 
 | Атрибут    | Описание                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| client-id    | Строковая ID клиента (см. статью Создание ID приложения/клиента). Обязательное.                                                                                                                                                                                                           |
+| client-id    | Строковая ID клиента (см. статью Создание ID приложения/клиента). Обязательный элемент.                                                                                                                                                                                                           |
 | тип входа   | Переумеление между `redirect` и по умолчанию является `popup` `redirect` значением . Необязательно.                                                                                                                                                                                   |
 | scopes       | Строки с разделителями-запятыми для областей, которым пользователь должен предоставить согласие при входе. Необязательный.                                                                                                                                                                                     |
 | authority    | Строка Authority — по умолчанию является общим органом. Для однотенантного приложения используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательный. |

@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса plannerAssignedToTaskBoardTaskFormat
-description: Ресурс **plannerAssignedToTaskBoardTaskFormat** представляет сведения, используемые для корректной визуализации задачи в представлении AssignedTo доски задач (представление, упорядоченное пользователями, которым назначены задачи). Каждой задаче будет назначен один объект **plannerAssignedToTaskBoardTaskFormat** .
+title: PlannerAssignedToTaskBoardTaskFormat type
+description: Ресурс **plannerAssignedToTaskBoardTaskFormat** представляет сведения, используемые для правильного отрисовки задачи в представлении AssignedTo в совете задач (представление, организованное пользователями, которым назначены задачи). Каждая задача будет иметь один **объект plannerAssignedToTaskBoardTaskFormat,** связанный с ним.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: aca03e2a82d7fe42aa229c2f53d0c1dd066a30bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca256007f0e4b10fab53f814942736ead094555fef69b038c9680a8e08139303
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037621"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152329"
 ---
-# <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>Тип ресурса plannerAssignedToTaskBoardTaskFormat
+# <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>PlannerAssignedToTaskBoardTaskFormat type
 
 Пространство имен: microsoft.graph
 
-Ресурс **plannerAssignedToTaskBoardTaskFormat** представляет сведения, используемые для корректной визуализации задачи в представлении AssignedTo доски задач (представление, упорядоченное пользователями, которым назначены задачи). Каждой [задаче](plannertask.md) будет назначен один объект **plannerAssignedToTaskBoardTaskFormat** .
+Ресурс **plannerAssignedToTaskBoardTaskFormat** представляет сведения, используемые для правильного отрисовки задачи в представлении AssignedTo в совете задач (представление, организованное пользователями, которым назначены задачи). Каждая [задача](plannertask.md) будет иметь один **объект plannerAssignedToTaskBoardTaskFormat,** связанный с ним.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md); |Чтение свойств и связей объекта **plannerAssignedToTaskBoardTaskFormat** .|
-|[обновление](../api/plannerassignedtotaskboardtaskformat-update.md). | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md);  |Обновление объекта **plannerAssignedToTaskBoardTaskFormat** . |
+|[Получение объекта plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md); |Чтение свойств и связей **объекта plannerAssignedToTaskBoardTaskFormat.**|
+|[Обновление](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md);  |Объект **Update PlannerAssignedToTaskBoardTaskFormat.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. ID ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](plannerorderhintsbyassignee.md)|Словарь указаний, используемых для упорядочения задач в представлении AssignedTo доски задач. Ключ каждой записи — один из пользователей, которому назначена задача, а значение — указание порядка. Формат каждого значения описан [здесь](planner-order-hint-format.md).|
 |unassignedOrderHint|Строка|Указание, используемое для расположения задачи в окне "Кому назначено" доски задач, когда задача никому не назначена, или если в словаре orderHintsByAssignee нет указания order для пользователя, которому назначена задача. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 

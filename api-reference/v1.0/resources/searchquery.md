@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса searchQuery
+title: тип ресурса searchQuery
 description: searchQuery
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3745083b404a8de6f68844af9b1767ac2319059f
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 5d28f3a2a423947eaf27a5b6878607d6efac6dda3dd6d2f01907621b17177732
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378020"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149676"
 ---
-# <a name="searchquery-resource-type"></a>Тип ресурса searchQuery
+# <a name="searchquery-resource-type"></a>тип ресурса searchQuery
 
 Пространство имен: microsoft.graph
 
-Представляет поисковый запрос, содержащий поисковые термины и необязательные фильтры.
+Представляет поисковый запрос, содержащий термины поиска и необязательные фильтры.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|queryString|Строка|Поисковый запрос, содержащий условия поиска. Обязательный элемент.|
+|queryString|String|Поисковый запрос, содержащий термины поиска. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON
 

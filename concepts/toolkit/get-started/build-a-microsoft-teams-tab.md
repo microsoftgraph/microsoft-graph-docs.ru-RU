@@ -3,16 +3,16 @@ title: Создайте вкладку Microsoft Teams с помощью microso
 description: Начало создания вкладки Microsoft Teams с помощью microsoft Graph набор средств.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 7bd9d989d30b7fc4286a6ca78445ffb01a772084
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: 1751214a354de77edfdf730463320caf5d963a27c6cc47b553f20b61aaaa71d9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54143607"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Создайте вкладку Microsoft Teams с помощью microsoft Graph набор средств
 
-В этом разделе описывается, как начать использовать microsoft Graph набор средств в Microsoft Teams решении. Начало работы включает в себя следующие действия:
+В этом разделе описывается, как начать использовать microsoft Graph набор средств в Microsoft Teams решении. Начало работы с включает следующие действия:
 
 1. Создайте новое Teams с помощью настраиваемой вкладки.
 2. Добавьте microsoft Graph набор средств.

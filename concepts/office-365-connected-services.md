@@ -4,12 +4,12 @@ description: Вы можете сделать так, чтобы приложе�
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: 95fbe544edff9543d694f5fa024929fd7e241160
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 0a9dcd50126a7de5a27aadd7d47a492d2199f7b652bd5d8657e35b36b9afcef8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921667"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218326"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Вызов служб Microsoft 365 в Visual Studio 2017 с помощью API Microsoft Graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "51921667"
 
 - Скачайте [предварительную версию Visual Studio 2017](https://www.visualstudio.com/vs/preview/). Предварительную версию Visual Studio 2017 можно использовать параллельно с более ранней версией Visual Studio.
 
-- Оформите подписку на Microsoft 365. Чтобы получить бесплатную пробную версию, зарегистрируйтесь в [Программе для разработчиков Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
+- Оформите подписку на Microsoft 365. Чтобы получить бесплатную пробную версию, зарегистрируйтесь в [Программе для разработчиков Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## <a name="get-the-starter-project"></a>Получение исходного проекта
 
@@ -81,7 +81,7 @@ ms.locfileid: "51921667"
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) выполняет аутентификацию текущего пользователя и инициализирует кэш маркеров приложения.
 
-- TokenStorage\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) содержит сведения о маркере пользователя. Вы можете заменить его на собственный кэш маркеров. Дополнительные сведения см. в статье [Кэширование маркеров доступа в мультитенантном приложении](/azure/architecture/multitenant-identity/token-cache).
+- TokenStorage\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) содержит сведения о маркере пользователя. Вы можете заменить его на собственный кэш маркеров. Дополнительные сведения см. [в статье Кэширование маркеров доступа в мультитенантном приложении](/azure/architecture/multitenant-identity/token-cache).
 
 - Helpers\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) реализует локальный интерфейс IAuthProvider и получает маркер доступа. 
 

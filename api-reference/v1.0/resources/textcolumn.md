@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс textColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой текст.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 62711f2f44004e5b3d594eb472b7c018205d9e31
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 6c551ce7568cb31f92d2bf02bb328ffa77fa95d63c8aca547b2add5e5cb57469
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211815"
 ---
 # <a name="textcolumn-resource-type"></a>Тип ресурса textColumn
 
@@ -38,8 +38,8 @@ ms.locfileid: "50239276"
 
 | Имя свойства                   | Тип    | Описание
 |:--------------------------------|:--------|:---------------------------------
-| **allowMultipleLines**          | boolean | Указывает, разрешено ли отображать несколько строк текста.
-| **appendChangesToExistingText** | boolean | Указывает, что должно происходить при обновлении данного столбца: новый текст должен заменять существующий либо дополнять его.
+| **allowMultipleLines**          | логический | Указывает, разрешено ли отображать несколько строк текста.
+| **appendChangesToExistingText** | логический | Указывает, что должно происходить при обновлении данного столбца: новый текст должен заменять существующий либо дополнять его.
 | **linesForEditing**             | int32   | Размер текстового поля.
 | **maxLength**                   | int32   | Максимальное количество символов для значения.
 | **textType**                    | string  | Тип хранимого текста. Должно иметь тип `plain` или `richText`

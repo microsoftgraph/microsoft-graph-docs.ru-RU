@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 0a16985c398bb18058c11ac81d7fed3d5b468208
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: d9d31e07991f49de37eafa5b6221fe089a4c12f637f1a6f30df09d416ff8f6f7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231567"
 ---
 # <a name="provisioningserviceprincipal-resource-type"></a>тип ресурса provisioningServicePrincipal
 
@@ -23,10 +23,10 @@ ms.locfileid: "52241556"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Уникально определяет **службуPrincipal, используемую** для предварительного обеспечения.|
+|id|String|Уникально определяет **службуPrincipal, используемую** для предварительного обеспечения.|
 |name|String| Имя, определенное клиентом **для службыPrincipal.**|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

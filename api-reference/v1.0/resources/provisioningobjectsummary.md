@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: d9852745ed14cacd47389da5031cb83af306e2d0
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: b5ac64592150aa396195f08a742ff0b30687f7fd60a22b9399aa7513100e6d1a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241553"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124215"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>тип ресурса provisioningObjectSummary
 
@@ -32,12 +32,12 @@ ms.locfileid: "52241553"
 |:-------------|:------------|:------------|
 |provisioningAction|provisioningAction|Указывает имя действия или имя операции. Возможные значения: `create` `update` , , , , , `delete` `stageddelete` и `disable` `other` `unknownFutureValue` . Список действий, зарегистрированных в журнале, обратитесь к списку действий Azure AD.|
 |activityDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|changeId|Строка|Уникальный ID этого изменения в этом цикле.|
-|cycleId|Строка|Уникальный ID для итерации задания.|
+|changeId|String|Уникальный ID этого изменения в этом цикле.|
+|cycleId|String|Уникальный ID для итерации задания.|
 |durationInMilliseconds|Int32|Указывает, сколько времени потребовалось для завершения этого действия по подготовкам. Измеряется в миллисекунд.|
 |id|String| Указывает уникальный идентификатор для действия. Это GUID только для чтения.|
 |initiatedBy|[initiator](initiator.md)|Сведения о том, кто инициировал это подготовка.|
-|jobId|Строка|Уникальный ID для всего задания по подготовкам.|
+|jobId|String|Уникальный ID для всего задания по подготовкам.|
 |modifiedProperties|[измененная коллекцияProperty](modifiedproperty.md)|Сведения о каждом свойстве, которое было изменено в этом действии по обеспечению этого объекта.|
 |provisioningSteps|[provisioningStep](provisioningstep.md) collection|Сведения о каждом шаге в области подготовка.|
 |servicePrincipal|Коллекция [servicePrincipal](provisioningserviceprincipal.md)|Представляет принцип службы, используемый для обеспечения.|

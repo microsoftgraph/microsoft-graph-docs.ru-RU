@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9688d9d5b54958a33705a71bb8637923b5163ce5
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 996305683c7af96a61c8ca10cba36bef51935e38d15f37b9c5d604c44528e442
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959531"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126790"
 ---
 # <a name="list-riskdetections"></a>Список riskDetections
 Пространство имен: microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "50959531"
 Получите список объектов [riskDetection](../resources/riskdetection.md) и их свойств.
 
 >[!NOTE]
->Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.
+>Для использования API обнаружения рисков Azure AD Premium P1 или P2.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50959531"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

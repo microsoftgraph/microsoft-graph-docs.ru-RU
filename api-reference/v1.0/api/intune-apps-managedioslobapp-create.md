@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8407b6d11c237ab44efa908f7a613b7be2aad45
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: c9d09874c2a982d8cc7fc336d7c9725f631390a3125515b72e9afd5914255002
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52759814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212608"
 ---
 # <a name="create-managedioslobapp"></a>Create managedIOSLobApp
 

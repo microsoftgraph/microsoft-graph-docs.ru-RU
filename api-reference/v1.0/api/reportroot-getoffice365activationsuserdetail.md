@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserDetail'
-description: Получите сведения о пользователях, активировавших Microsoft 365.
+description: Сведения о пользователях, активировавших Microsoft 365.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 83a59693898f85dd910e4f87765427fda4c10f90
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b33ad480d37f2eb7a0708007015d21b7ecf8d981a1312c0e180877e4858adfb8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981783"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54130557"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
 Пространство имен: microsoft.graph
 
-Получите сведения о пользователях, активировавших Microsoft 365.
+Сведения о пользователях, активировавших Microsoft 365.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в отчетах [Microsoft 365 Microsoft Office активации.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
+> **Примечание:** Сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов — Microsoft Office активаций.](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -66,7 +66,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Windows 10 Mobile
 - iOS
 - Android
-- Активация на общем компьютере
+- Активация на совместном компьютере
 
 ## <a name="example"></a>Пример
 

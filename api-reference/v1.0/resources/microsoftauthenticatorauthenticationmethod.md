@@ -1,22 +1,22 @@
 ---
 title: тип ресурса microsoftAuthenticatorAuthenticationMethod
-description: Представление приложения Microsoft Authenticator, зарегистрированного для пользователя. Microsoft Authenticator — это метод проверки подлинности.
+description: Представление приложения Microsoft Authenticator, зарегистрированного на пользователя. Microsoft Authenticator является методом проверки подлинности.
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f7438ca72a4f5d4063eec0444d3b0028237083d9
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 61f263b45b8e353622f06e6912f0659e2a8e147fabe208d8ea9ea2b94f555884
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54211943"
 ---
 # <a name="microsoftauthenticatorauthenticationmethod-resource-type"></a>тип ресурса microsoftAuthenticatorAuthenticationMethod
 
 Пространство имен: microsoft.graph
 
-Представление приложения Microsoft Authenticator, зарегистрированного для пользователя. Microsoft Authenticator — это метод проверки подлинности.
+Представление приложения Microsoft Authenticator, зарегистрированного на пользователя. Microsoft Authenticator является методом проверки подлинности.
 
 Наследует от [проверки подлинностиMethod](../resources/authenticationmethod.md).
 
@@ -30,16 +30,16 @@ ms.locfileid: "51468991"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Дата и время регистрации этого приложения. Это свойство является нулевым, если устройство не зарегистрировано для без пароля.|
+|createdDateTime|DateTimeOffset|Дата и время регистрации этого приложения. Это свойство является null, если устройство не зарегистрировано для Телефон вход.|
 |displayName|String|Имя устройства, на котором зарегистрировано это приложение.|
 |id|String|Уникальный идентификатор для этого метода проверки подлинности. Унаследованный от [проверки подлинностиMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|Теги, содержащие метаданные приложений.|
-|phoneAppVersion|String|Числовая версия этого экземпляра приложения Authenticator.|
+|phoneAppVersion|String|Числовая версия этого экземпляра Authenticator приложения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|device;|[device](../resources/device.md)|Зарегистрированное устройство, на котором находится Microsoft Authenticator. Это свойство является нулевым, если устройство не зарегистрировано для без пароля.|
+|device;|[device](../resources/device.md)|Зарегистрированное устройство, на котором Microsoft Authenticator находится. Это свойство является null, если устройство не зарегистрировано для Телефон вход.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

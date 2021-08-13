@@ -1,29 +1,29 @@
 ---
 title: Тип ресурса fileHash
-description: Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).
+description: Содержит конфиденциальную информацию о хеше файла (криптографии и конфиденциальном расположении).
 localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 412308fc20c3baee63640451bb1a2c8059e71be0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98b2e9ed0ba4ca6a7af23d1fe6cf7acb278975ccf36f45983c58aeb5d721e744
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54218718"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
 Пространство имен: microsoft.graph
 
-Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).
+Содержит конфиденциальную информацию о хеше файла (криптографии и конфиденциальном расположении).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|хаштипе|fileHashType|Тип хэша файла. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|хашвалуе|String|Значение хэша файла.|
+|hashType|fileHashType|Тип hash файла. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
+|hashValue|String|Значение hash файла.|
 
 ## <a name="json-representation"></a>Представление JSON
 

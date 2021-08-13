@@ -5,12 +5,12 @@ author: psignoret
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7d7fadabdd8bc3581a2a32b70fad2b27c71c3b5c
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: d2c4bffc0de82f4bdb55186db76dc0eb0fe17ff77e3edf6cc1b0d6fddcf32d68
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54202555"
 ---
 # <a name="adminconsentrequestpolicy-resource-type"></a>тип ресурса adminConsentRequestPolicy
 
@@ -31,11 +31,11 @@ ms.locfileid: "51469672"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|isEnabled|Boolean|Указывает, включена или отключена функция запроса на согласие администратора. Обязательное.|
-|notifyReviewers|Логический|Указывает, будут ли рецензенты получать уведомления. Обязательное.|
-|remindersEnabled|Логический|Указывает, будут ли рецензенты получать сообщения напоминания. Обязательное.|
+|isEnabled|Boolean|Указывает, включена или отключена функция запроса на согласие администратора. Обязательный элемент.|
+|notifyReviewers|Логическое|Указывает, будут ли рецензенты получать уведомления. Обязательный элемент.|
+|remindersEnabled|Логический|Указывает, будут ли рецензенты получать сообщения напоминания. Обязательный элемент.|
 |requestDurationInDays|Int32|Указывает продолжительность действия запроса до его автоматического истечения, если не будет применено решение.|
-|рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Список рецензентов для согласия администратора. Обязательное.|
+|рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Список рецензентов для согласия администратора. Обязательный элемент.|
 |version|Int32|Указывает версию этой политики. Когда политика обновляется, эта версия обновляется. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

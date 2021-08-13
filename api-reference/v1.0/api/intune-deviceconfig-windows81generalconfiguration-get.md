@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7bf197363579dcf07e5c62252503f6358ccb81b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: e6b0b465971afbd601aa595de7da987fa7624df50c8495c7f7969d0cf28f15ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52753806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54225925"
 ---
 # <a name="get-windows81generalconfiguration"></a>Получение объекта windows81GeneralConfiguration
 

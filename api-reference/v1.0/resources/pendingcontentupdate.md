@@ -1,28 +1,28 @@
 ---
-title: пендингконтентупдате
-description: Ресурс Пендингконтентупдате указывает на то, что операция, которая может повлиять на двоичный контент driveItem, ожидает завершения.
+title: pendingContentUpdate
+description: Ресурс pendingContentUpdate указывает, что операция, которая может повлиять на двоичное содержимое driveItem, находится в стадии завершения.
 localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 150f94df57c653ad7a735c30dceff694d0023a2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 917a952ba9694178c17b3ef6ccb89780790528860f227a3a5f02f5cb5f44cf5e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178138"
 ---
-# <a name="pendingcontentupdate-resource-type"></a>Тип ресурса Пендингконтентупдате
+# <a name="pendingcontentupdate-resource-type"></a>тип ресурсов pendingContentUpdate
 
 Пространство имен: microsoft.graph
 
-Указывает, что операция, которая может повлиять на двоичное содержимое **driveItem** , ожидает завершения.
+Указывает, что операция, которая может повлиять на двоичное содержимое **driveItem,** находится в стадии завершения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип         | Описание |
 |:-------------|:-------------|:------------|
-|**куеуеддатетиме**|DateTimeOffset|Дата и время, когда отложенная двоичная операция была поставлена в очередь в течение времени в формате UTC. Только для чтения.|
+|**queuedDateTime**|DateTimeOffset|Дата и время ожидания двоичной операции в очереди во время UTC. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

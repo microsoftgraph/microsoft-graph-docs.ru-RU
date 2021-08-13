@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс SharePointIds — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.
 doc_type: resourcePageType
-ms.openlocfilehash: 38a186772ebdd4bf1bf0a35dc9789e96fdbd2ed2
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 12b35256d861e5fd18e633ceb26d438f1fe1f3a7b5eb3b66a3c26c8caa689ba9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54205164"
 ---
 # <a name="sharepointids-resource-type"></a>Тип ресурса SharePointIds
 
@@ -52,7 +52,7 @@ ms.locfileid: "50240089"
 | listItemUniqueId | string       | Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.
 | siteId           | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.
 | siteUrl          | string (url) | URL-адрес SharePoint для сайта, содержащего элемент.
-| tenantId         | string       | Уникальный идентификатор (GUID) для области аренды.
+| tenantId         | string       | Уникальный идентификатор (guid) для аренды.
 | webId            | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPWeb), содержащего элемент.
 
 ## <a name="remarks"></a>Заметки

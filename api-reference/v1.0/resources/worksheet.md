@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса Worksheet
-description: Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
+description: Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9b71e25cc2590d599f79c199200eb2f82da603c5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41712584a612e8f9445c7bc67c25394188d3efc8e0328683a1128bbafce26605
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54141268"
 ---
 # <a name="worksheet-resource-type"></a>Тип ресурса Worksheet
 
 Пространство имен: microsoft.graph
 
-Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
+Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
 
 
 ## <a name="methods"></a>Методы
@@ -32,7 +32,7 @@ ms.locfileid: "48015031"
 |[Update](../api/worksheet-update.md) | [WorkbookWorksheet](worksheet.md)   |Обновление объекта Worksheet. |
 |[Cell](../api/worksheet-cell.md)|[Range](range.md)|Получает объект диапазона, содержащий одну ячейку, на основе номеров строки и столбца. Ячейка может выходить за пределы родительского диапазона, если она расположена в сетке листа.|
 |[Range](../api/worksheet-range.md)|[Range](range.md)|Возвращает объект диапазона по адресу или имени.|
-|[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если лист пустой, эта функция вернет верхнюю левую ячейку.|
+|[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|Используемый диапазон — это наименьший диапазон, включающий в себя все ячейки, которые содержат значение или форматирование. Если лист пустой, эта функция вернет верхнюю левую ячейку.|
 |[Delete](../api/worksheet-delete.md)|Нет|Удаляет лист из книги.|
 |[Список](../api/worksheet-list.md) | Коллекция [WorkbookWorksheet](worksheet.md) |Получение коллекции объектов листов. |
 |[Add](../api/worksheetcollection-add.md)|[WorkbookWorksheet](worksheet.md)|Добавляет новый лист в книгу. Лист будет добавлен после существующих листов. |
@@ -50,7 +50,7 @@ ms.locfileid: "48015031"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |charts|Коллекция [WorkbookChart](chart.md)|Возвращает коллекцию диаграмм, имеющихся на листе. Только для чтения.|
-|names|Коллекция [WorkbookNamedItem](nameditem.md)|Возвращает коллекцию имен, связанных с листом. Только для чтения.|
+|names|Коллекция [WorkbookNamedItem](nameditem.md)|Возвращает коллекцию имен, связанных с листом. Только для чтения|
 |pivotTables|Коллекция [workbookPivotTable](workbookpivottable.md)| Коллекция сводных таблиц на листе. |
 |protection|[WorkbookWorksheetProtection](worksheetprotection.md)|Возвращает объект защиты листа. Только для чтения.|
 |tables|Коллекция [WorkbookTable](table.md)|Коллекция таблиц, имеющихся на листе. Только для чтения.|

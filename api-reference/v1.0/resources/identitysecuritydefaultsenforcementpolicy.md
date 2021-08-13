@@ -1,22 +1,22 @@
 ---
 title: тип ресурса identitySecurityDefaultsEnforcementPolicy
-description: Представляет политику безопасности по умолчанию Azure Active Directory. По умолчанию в безопасности содержатся преднастройные параметры безопасности, защищающие от распространенных атак.
+description: Представляет политику Azure Active Directory безопасности по умолчанию. По умолчанию в безопасности содержатся преднастройные параметры безопасности, защищающие от распространенных атак.
 localization_priority: Normal
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2609a75ad90aba9ab545e81207bc0d3ea33f0a8a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d2e3c4af8bbb7dbac35f2a28a4704010b6c6d50542d2c5de9bd1cad3cb443a90
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944845"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54238092"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>тип ресурса identitySecurityDefaultsEnforcementPolicy
 
 Пространство имен: microsoft.graph
 
-Представляет политику безопасности по умолчанию Azure Active [Directory.](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) По умолчанию в безопасности содержатся преднастройные параметры безопасности, защищающие от распространенных атак.
+Представляет политику Azure Active Directory безопасности по [умолчанию.](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) По умолчанию в безопасности содержатся преднастройные параметры безопасности, защищающие от распространенных атак.
 
 Наследует [от policyBase](../resources/policybase.md).
 
@@ -24,17 +24,17 @@ ms.locfileid: "50944845"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/identitysecuritydefaultsenforcementpolicy-get.md); | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Ознакомьтесь с свойствами **объекта identitySecurityDefaultsEnforcementPolicy.** |
+| [Получение](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Ознакомьтесь с свойствами **объекта identitySecurityDefaultsEnforcementPolicy.** |
 | [Обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Обновление **объекта identitySecurityDefaultsEnforcementPolicy.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Описание этой политики. Только для чтения.|
-|displayName|Строка|Отображение имени для этой политики. Только для чтения.|
-|id|Строка|Идентификатор для этой политики. Только для чтения.|
-|isEnabled|Boolean|Если установлено значение, по умолчанию `true` безопасность Azure Active Directory включена для клиента.|
+|description|String|Описание этой политики. Только для чтения.|
+|displayName|String|Отображение имени для этой политики. Только для чтения.|
+|id|String|Идентификатор для этой политики. Только для чтения.|
+|isEnabled|Boolean|Если установлено `true` значение , Azure Active Directory по умолчанию безопасности включен для клиента.|
 
 ## <a name="relationships"></a>Связи
 

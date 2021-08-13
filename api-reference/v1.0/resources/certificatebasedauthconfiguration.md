@@ -5,27 +5,27 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8580851fe5f2c9266659b0bf26e85a9eca07185c
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2d46c8df25b46b62a0c987042178261a8b31a3c43ff8c542c8fc1234b2ed9d21
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163847"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>тип ресурса certificateBasedAuthConfiguration
 
 Пространство имен: microsoft.graph
 
-Проверка подлинности на основе сертификатов позволяет проверить подлинность в Azure Active Directory с клиентской сертификатом на устройстве Windows, Android или iOS при подключении учетной записи Exchange Online к:
+Проверка подлинности на основе сертификатов позволяет Azure Active Directory с помощью клиентского сертификата на устройстве Windows, Android или iOS при подключении учетной записи Exchange Online к:
 
 - Мобильные приложения Майкрософт, такие как Outlook и Word
-- Exchange ActiveSync (EAS)
+- клиентам Exchange ActiveSync (EAS).
 
 Настройка этой функции исключает необходимость ввода имени пользователя и сочетания паролей в определенные почтовые и Microsoft Office приложения на мобильном устройстве.
 
-Конфигурация проверки подлинности на основе сертификатов предоставляется через коллекцию органов сертификации. Органы сертификации используются для создания цепочки доверенных сертификатов, которая позволяет клиентам быть аутентификацией в Azure Active Directory с помощью клиентского сертификата.
+Конфигурация проверки подлинности на основе сертификатов предоставляется через коллекцию органов сертификации. Органы сертификации используются для создания цепочки доверенных сертификатов, которая позволяет клиентам Azure Active Directory с клиентской сертификатом.
 
-Узнайте больше о проверке подлинности на основе [сертификатов в Azure Active Directory.](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)
+Дополнительные информацию о проверке подлинности на основе сертификатов в [Azure Active Directory.](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)
 
 ## <a name="methods"></a>Методы
 

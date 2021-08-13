@@ -5,12 +5,12 @@ localization_priority: Normal
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ed3559a0345c2ca1ca190d6ed08c1cec542837fe
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 9a9ad564db84a19a2402f34edddc85858dd37c7c00e04eea7fad79acb6d4c466
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991171"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212237"
 ---
 # <a name="administrativeunit-resource-type"></a>тип ресурса administrativeUnit
 
@@ -30,7 +30,7 @@ ms.locfileid: "52991171"
 |:---------------|:--------|:----------|
 |[Создание](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Создание нового административного подразделения.|
 |[Список](../api/administrativeunit-list.md) | [коллекция administrativeUnit](administrativeunit.md) |Список свойств всех административных объектов.|
-|[получение](../api/administrativeunit-get.md); | [administrativeUnit](administrativeunit.md) |Чтение свойств и связей определенного объекта administrativeUnit.|
+|[Получение](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Чтение свойств и связей определенного объекта administrativeUnit.|
 |[Обновление](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Обновление объекта administrativeUnit. |
 |[Удаление](../api/administrativeunit-delete.md) | Нет |Удаление объекта administrativeUnit. |
 |[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление участника (пользователя или группы).|
@@ -45,15 +45,15 @@ ms.locfileid: "52991171"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|string|Необязательное описание административного подразделения.|
+|description|строка|Необязательное описание административного подразделения.|
 |displayName|string|Отображение имени административного подразделения.|
-|id|string|Уникальный идентификатор для административного подразделения. Только для чтения.|
+|id|строка|Уникальный идентификатор для административного подразделения. Только для чтения.|
 |visibility|string|Контролирует, скрыта ли административная единица и ее члены. Можно установить `HiddenMembership` или `Public` . Если не установлено, по умолчанию поведение `Public` . При наборе только члены административного подразделения могут перечислять других членов `HiddenMembership` административного подразделения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для этого административного подразделения. Допускается значение null.|
+|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для этого административного подразделения. Допускается значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, которые являются членами этого администраторского подразделения. МЕТОДЫ HTTP: GET (участники списка), POST (добавление участников), DELETE (удаление участников).|
 |scopedRoleMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Scoped-role members of this Administrative Unit.  МЕТОДЫ HTTP: GET (список scopedRoleMemberships), POST (добавление scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 

@@ -1,17 +1,17 @@
 ---
-title: Руководство. Определение и устранение риска с помощью API Microsoft Graph
-description: Узнайте, как выявлять и устранять риски с помощью API Microsoft Graph.
+title: Руководство. Определение и исправление риска с помощью API Graph Microsoft
+description: Узнайте, как выявлять и устранять риски с помощью API Graph Microsoft.
 author: davidmu1
 localization_priority: Normal
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 85421d493e94957cc7fca5182d609b19225311e4
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 60690454c9b3b7adfc7ac256cb3e3a5ff72b6d3336404b6beefe421bb2eea8e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760955"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54221008"
 ---
-# <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Руководство. Определение и устранение рисков с помощью API Microsoft Graph
+# <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Руководство. Определение и устранение рисков с помощью API Graph Microsoft
 
 Azure AD Identity Protection предоставляет организациям представление о риске на основе удостоверений и различных способах расследования и автоматического устранения риска. API защиты удостоверений, используемые в этом руководстве, помогут определить риски и настроить рабочий процесс, чтобы подтвердить компромисс или включить исправление. Дополнительные сведения см. [в дополнительных сведениях о риске?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
@@ -19,11 +19,11 @@ Azure AD Identity Protection предоставляет организациям
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые условия
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 
-- Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.
+- Для использования API обнаружения рисков Azure AD Premium P1 или P2.
 - В этом руководстве браузер Tor используется для анонимного вход на портал Azure. Для выполнения задачи можно использовать любой анонимный браузер. Чтобы скачать браузер Tor, см. [в веб-сайте Download Tor Browser.](https://www.torproject.org/download/)
 - В этом руководстве предполагается, что вы используете песочницу Microsoft Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Чтобы настроить разрешения в песочнице Microsoft Graph, выполните следующие действия.
     1. Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
@@ -66,7 +66,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```http
 {
@@ -104,7 +104,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -194,7 +194,7 @@ Content-type: application/json
 } 
 ```
 
-#### <a name="response"></a>Ответ 
+#### <a name="response"></a>Отклик 
 
 ```
 { 
@@ -263,7 +263,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -335,7 +335,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```http
 {
@@ -408,7 +408,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 204 No Content
@@ -424,7 +424,7 @@ HTTP/1.1 204 No Content
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userDisplayName eq 'MyTestUser1'
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 {
@@ -459,7 +459,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=userD
 DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806dc
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 No Content - 204
@@ -475,7 +475,7 @@ No Content - 204
 DELETE https://graph.microsoft.com/v1.0/groups/9ad78153-b1f8-4714-adc1-1445727678a8
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 ```http
 No Content - 204

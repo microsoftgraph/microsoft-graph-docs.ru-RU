@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 034a7961cedb5fe6e73ce4ac04774e6c64596428
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 2eda23f67aa19bc15422785d149a4f8e3027ff6d54655f7a05a2c7cd484210d1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152489"
 ---
 # <a name="managedappstatus-resource-type"></a>Тип ресурса managedAppStatus
 
@@ -33,7 +33,7 @@ ms.locfileid: "52751659"
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: d8ca73a6e8acfb6ac2326b171b2b8c04fed7e039
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 4e2c8359b49e2154e3f107c97edf93fc64bd394837d5cf8ca8b1daa14446b857
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169370"
 ---
 # <a name="printdocument-resource-type"></a>тип ресурса printDocument
 
@@ -29,12 +29,12 @@ ms.locfileid: "50517948"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор документа. Только для чтения.|
-|displayName|Строка|Имя документа. Только для чтения.|
+|id|String|Идентификатор документа. Только для чтения.|
+|displayName|String|Имя документа. Только для чтения.|
 |contentType|String|Тип контента документа (MIME). Только для чтения.|
 |size|Int64|Размер документа в bytes. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
