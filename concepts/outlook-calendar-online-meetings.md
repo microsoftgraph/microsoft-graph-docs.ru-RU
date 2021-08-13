@@ -4,12 +4,12 @@ description: В организации, которая поддерживает 
 author: juforan
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 44cdb700a59054fb1e339c080d8909a14cfa8ce3
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 337cc8e89b40a40a41b336ddd178eb97a3ced8c5abe90e211fce74e779b4bca2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240577"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Включение события в виде собрания по сети в календарь Outlook 
 
@@ -268,7 +268,7 @@ Content-type: application/json
 
 ## <a name="get-information-to-join-meeting-online"></a>Сведения о присоединении к собранию по сети
 
-Участники и организаторы могут использовать свойство **isOnlineMeeting**, чтобы проверить, включено ли [событие](/graph/api/resources/event) для онлайн-участия. Они могут использовать свойство **onlineMeetingProvider** для определения поставщика собрания, а **onlineMeeting** — для получения сведений о подключении, в том числе **joinUrl**. 
+Участники и организаторы могут использовать свойство **isOnlineMeeting**, чтобы проверить, включено ли [событие](/graph/api/resources/event) для онлайн-участия. Они могут использовать свойство **onlineMeetingProvider** для определения поставщика собрания, а **onlineMeeting** — для получения сведений о подключении, в том числе **joinUrl**. 
 
 > [!IMPORTANT]
 > Чтобы получить доступ к URL-адресу и присоединиться к собранию, используйте **joinUrl**, который предоставляется через свойство **события** **onlineMeeting**. В дальнейшем не рекомендуется использовать свойство **события** **onlineMeetingUrl** (свойство **onlineMeetingUrl** устарело).
@@ -477,7 +477,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 - Сведения о взаимодействии Microsoft Teams с Microsoft 365 см. в следующих статьях:
-  - [Взаимодействие Microsoft Teams и Exchange](/microsoftteams/exchange-teams-interact)
+  - [Взаимодействие Microsoft Teams и Exchange](/microsoftteams/exchange-teams-interact)
   - [Настройка параметров сосуществования и обновления](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Выбор API в Microsoft Graph для создания собраний по сети и присоединения к ним](choose-online-meeting-api.md)
 - [Поиск времени для проведения собрания в календаре Outlook](findmeetingtimes-example.md)

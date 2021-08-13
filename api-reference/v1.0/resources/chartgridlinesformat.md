@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 84cce57c9105aa9c852579433dac9ffa73e289ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7446f47f5248a06b93652899b049532c8bb287e1f60e3f7fc87fa475e65fd3f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54252083"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Тип ресурса ChartGridlinesFormat
 
@@ -28,7 +28,7 @@ ms.locfileid: "48069192"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|line|[воркбукчартлинеформат](chartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

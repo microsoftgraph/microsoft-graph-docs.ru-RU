@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса riskUserActivity
-description: обнаружения riskUserActivity
+title: тип ресурса riskUserActivity
+description: обнаружение riskUserActivity
 author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7677832b2887bbb5dcddbeda21481da39f079669
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b76c89ad73caf3f4985c81041178f05fc3d88bebbba0327ca503f7bf0e8f374d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246614"
 ---
-# <a name="riskuseractivity-resource-type"></a>Тип ресурса riskUserActivity
+# <a name="riskuseractivity-resource-type"></a>тип ресурса riskUserActivity
 
 Пространство имен: microsoft.graph
 
-Представляет действия пользователя Azure AD с риском, определяемую защитой идентификации Azure AD.
+Представляет активность риска пользователя Azure AD, определяемую службой Azure AD Identity Protection.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|detail|riskDetail|Сведения об обнаруженной опасности. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
+|подробные|riskDetail|Сведения об обнаружении риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
 |riskEventTypes|Коллекция String|Тип обнаруженного события риска.|
 
 ## <a name="relationships"></a>Связи

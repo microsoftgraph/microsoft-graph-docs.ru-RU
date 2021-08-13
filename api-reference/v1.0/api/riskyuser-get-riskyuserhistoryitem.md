@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f3af631bc0c49d6b0ea2a71325df2b559917a2e2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a549ff8eb6890b700e3e29f6a159d078135c0739ddd7bac8e056c92cf0cc48df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54247076"
 ---
 # <a name="get-history"></a>Получить историю
 Пространство имен: microsoft.graph
@@ -18,7 +18,7 @@ ms.locfileid: "50959524"
 Ознакомьтесь с свойствами и отношениями объекта [riskyUserHistoryItem.](../resources/riskyuserhistoryitem.md)
 
 
->**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
@@ -27,7 +27,7 @@ ms.locfileid: "50959524"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
+|Приложение | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

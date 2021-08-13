@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f4d018fd01a9ad9899eefcb663b0860096567c84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b3a16f0917e4c0c02021c3d8c3fe403bea9a6ee87dff52fbb0ce799bf4a4efe0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54243625"
 ---
 # <a name="chartlegendformat-resource-type"></a>Тип ресурса ChartLegendFormat
 
@@ -28,8 +28,8 @@ ms.locfileid: "47988395"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[воркбукчартфилл](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
-|шрифт|[воркбукчартфонт](chartfont.md)|Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д., в условных обозначениях диаграммы. Только для чтения.|
+|fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
+|шрифт|[WorkbookChartFont](chartfont.md)|Представляет атрибуты шрифта (название, размер, цвет и т. д.) легенды диаграммы. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON
