@@ -1,19 +1,19 @@
 ---
-title: Используйте API поиска Майкрософт в Microsoft Graph для запроса исправлений орфографии
-description: API поиска Майкрософт можно использовать для получения предложения орфографии или изменения орфографии для поиска.
+title: Используйте API Поиск (Майкрософт) в Microsoft Graph для запроса исправлений орфографии
+description: Вы можете использовать API Поиск (Майкрософт) для получения предложения орфографии или изменения орфографии для поиска запроса.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 9d7f935f2de7e0777679266fc479b302fcfaf2a9
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 0ba5d3fa36deec56cc1cd2e0aef77c27a921f6a52d81257cf5b39ef524a394df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233653"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Используйте API поиска Майкрософт в Microsoft Graph, чтобы запросить исправление орфографии (предварительный просмотр)
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Используйте API Поиск (Майкрософт) в Microsoft Graph для запроса исправления орфографии (предварительный просмотр)
 
-API поиска Майкрософт можно использовать для запроса исправлений орфографии для обработки несоответствий между опечатками в запросах пользователей и правильными словами в содержимом. Чтобы запросить исправления орфографии, укажите следующие свойства в **свойстве requestAlterationOptions** тела запроса [метода](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) запроса:
+Вы можете использовать API Поиск (Майкрософт) для запроса исправлений орфографии для обработки несоответствий между опечатками в запросах пользователей и правильными словами в содержимом. Чтобы запросить исправления орфографии, укажите следующие свойства в **свойстве requestAlterationOptions** тела запроса [метода](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) запроса:
 
 - **enableSuggestion** для включения и отключения предложений орфографии для запроса пользователя. Вы можете передать, чтобы получить рекомендуемые сведения об исправлении орфографии для `true` опечаток в запросе пользователя.
 

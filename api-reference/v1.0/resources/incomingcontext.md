@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Инкомингконтекст
-description: Представляет контекст, связанный с входящим вызовом.
+title: тип ресурса incomingContext
+description: Представляет контекст, связанный с входящий вызов.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 02bc6117ccf8a7ab0ce0bd1905883afdf61fc542
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f7409048acb19e36446b257ed32acceff76d5783f3cf4050620de3da5e11314
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231791"
 ---
-# <a name="incomingcontext-resource-type"></a>Тип ресурса Инкомингконтекст
+# <a name="incomingcontext-resource-type"></a>тип ресурса incomingContext
 
 Пространство имен: microsoft.graph
 
-Представляет контекст, связанный с входящим вызовом.
+Представляет контекст, связанный с входящий вызов.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство              | Тип                          | Описание                                                             |
 |:----------------------|:------------------------------|:------------------------------------------------------------------------|
-| саурцепартиЦипантид   | String                        | Идентификатор участника, который инициировал входящий вызов. Только для чтения.  |
-| обсерведпартиЦипантид | String                        | Идентификатор участника, который находится под наблюдением. Только для чтения.         |
-| онбехалфоф            | [identitySet](identityset.md) | Идентификатор, который вызывается от имени пользователя.                   |
-| получатель            | [identitySet](identityset.md) | Удостоверение, которое передал вызов.                                 |
+| sourceParticipantId   | String                        | ID участника, который вызвал входящий вызов. Только для чтения.  |
+| observedParticipantId | String                        | ID участника, который находится под наблюдением. Только для чтения.         |
+| onBehalfOf            | [identitySet](identityset.md) | Удостоверение, которое происходит от имени вызова.                   |
+| переносчик            | [identitySet](identityset.md) | Удостоверение, которое передало вызов.                                 |
 
 ## <a name="json-representation"></a>Представление JSON
 

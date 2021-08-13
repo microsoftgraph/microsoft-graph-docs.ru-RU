@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Тимеранже
-description: Ресурс диапазона времени с временем начала и окончания.
+title: тип ресурса timeRange
+description: Ресурс диапазона времени со временем начала и окончания.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 64f018cb0c554ae36c9ec0b8ec0bfa655b7499f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: efd466503a2f3a8e840170c551b258310e018a0ac62f6073f4fcb1c24c2f5d85
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090762"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54189214"
 ---
-# <a name="timerange-resource-type"></a>Тип ресурса Тимеранже
+# <a name="timerange-resource-type"></a>тип ресурса timeRange
 
 Пространство имен: microsoft.graph
 
-Ресурс диапазона времени с временем начала и окончания.
+Ресурс диапазона времени со временем начала и окончания.
 
 ## <a name="properties"></a>Свойства
 

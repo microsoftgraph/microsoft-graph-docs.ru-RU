@@ -4,12 +4,12 @@ description: Описывает, как перенести приложения 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: applications
-ms.openlocfilehash: 46880f0bd12fa894555e315976213866a01428e9
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2eba88d5995d44098473ad138d65df8650cbddb350ad401f731238b8c381be2b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163519"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Перенос приложений Azure AD Graph в Microsoft Graph
 

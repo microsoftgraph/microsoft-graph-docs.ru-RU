@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3b6003df060fbb657dc3c67375f2c942ad8cff57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac4acd20c47ea54a7f4eef86b0317de79e7a689d41de6414eac7535082a7bb6e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147002"
 ---
 # <a name="chartseriesformat-resource-type"></a>Тип ресурса ChartSeriesFormat
 
@@ -28,8 +28,8 @@ ms.locfileid: "48059231"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[воркбукчартфилл](chartfill.md)|Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.|
-|line|[воркбукчартлинеформат](chartlineformat.md)|Представляет форматирование линий. Только для чтения.|
+|fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Представляет форматирование линий. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

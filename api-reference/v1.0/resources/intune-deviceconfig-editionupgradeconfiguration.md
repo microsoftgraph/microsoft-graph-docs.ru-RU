@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f69131852c0774048855ca8037312c8d91675a19
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 96551a088e9f9b848be7379ad4f6471e726245d40024c933e764c6cb6e06ed3f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52754750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251992"
 ---
 # <a name="editionupgradeconfiguration-resource-type"></a>Тип ресурса editionUpgradeConfiguration
 
@@ -46,7 +46,7 @@ ms.locfileid: "52754750"
 |license|String|Содержимое файла лицензии для обновления выпуска.|
 |productKey|String|Ключ продукта для обновления выпуска.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|

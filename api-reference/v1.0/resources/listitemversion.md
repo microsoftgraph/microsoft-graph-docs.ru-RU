@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 3d93917cab8e592a12385853d7c4051d37d3a3da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 59f7672c0569c3965bf7b473ca1584f77fc4694bd0a06dfc46374d4f7c8826ed
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54163721"
 ---
 # <a name="listitemversion-resource-type"></a>Тип ресурса listItemVersion
 
@@ -39,7 +39,7 @@ ms.locfileid: "48079153"
   "blockType": "resource",
   "baseType": "microsoft.graph.baseItemVersion",
   "@odata.type": "microsoft.graph.listItemVersion",
-  "@type.aka": "oneDrive.baseItemVersion"
+  "@type.aka&quot;: &quot;oneDrive.baseItemVersion"
 }-->
 
 ```json
@@ -56,7 +56,7 @@ ms.locfileid: "48079153"
 
 |      Имя свойства       |                         Тип                         |                               Описание                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |

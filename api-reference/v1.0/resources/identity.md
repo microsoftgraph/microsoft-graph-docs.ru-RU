@@ -6,12 +6,12 @@ localization_priority: Normal
 description: Ресурс Identity представляет удостоверение субъекта.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: db2b2d020b01dd3f112b6179a019ca3b390dca0d
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b531a4eea8566947c8166f4ab89dd355958c757eb6c768b6504b266c3595a11e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121265"
 ---
 # <a name="identity-resource-type"></a>Тип ресурса Identity
 

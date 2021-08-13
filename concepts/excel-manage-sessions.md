@@ -4,12 +4,12 @@ description: Если приложению нужно вызывать API Excel
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 488637f53ffc1298420d40e93f3f5d9fd7a0b518
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 89ff7ed3d925e9457b21da45ff08b8f1583386131709f3ed33e65f91ac402f6a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54169188"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Управление сеансами и хранением данных в Excel с помощью Microsoft Graph
 
@@ -26,11 +26,11 @@ API Excel вызываются в одном из трех режимов:
 >**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.  
 
 ## <a name="request-types"></a>Типы запросов
-Рекомендуемая [Обработка ошибок](workbook-error-handling.md) для API Excel основана на типе запроса, коде ошибки и коде состояния. Ниже приведены типы запросов.
+Рекомендуемая [обработка ошибок](workbook-error-handling.md) для Excel API основана на типе запроса, коде ошибки и коде состояния. Следующие типы запросов:
 
-- **Креатесессион Request** — используется для создания постоянного или непостоянного сеанса. В ответе на Успешный ответ идентификатор сеанса возвращается в свойстве **ID** в тексте отклика. Подробнее: [CREATE SESSION](/graph/api/workbook-createsession?view=graph-rest-1.0).
-- Запросы, выполняемые при **запросе с запросом** , которые следуют за запросом креатесессион. Обычно они содержат `workbook-session-id: {session-id}` заголовок. Исключением является запрос состояния опроса, который использует долгосрочный шаблон операции. Дополнительные сведения см. в статье [Работа с API, для выполнения которых требуется длительное время](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete).
-- **Запрос с Несеансом** используется в режиме, не поддерживающем сеансы. В этих запросах нет `workbook-session-id: {session-id}` заголовка.  
+- **CreateSession request** — используется для создания сеанса сохраняемого или нестойкого сеанса. В успешном ответе ID сеанса будет возвращен в свойстве **id** в теле ответа. Дополнительные сведения см. в [материале Create session](/graph/api/workbook-createsession?view=graph-rest-1.0).
+- **Sessionful request** - Subsequent requests that follow a CreateSession request. Обычно в них `workbook-session-id: {session-id}` содержится заглавный загот. Исключением является запрос на состояние опроса, использующий шаблон длительной операции. Подробные сведения см. в материале о работе с API, на завершение работы с помощью [API уйма времени.](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete)
+- **Запрос без сеансов** — используется в режиме Sessionless. Эти запросы не имеют `workbook-session-id: {session-id}` загона.  
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Сведения о том, как создавать и использовать сеансы, см. в [справочной статье о создании сеанса](/graph/api/workbook-createsession?view=graph-rest-1.0).

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 4aea82be5b157269c8f05e01ae59d1f916a9a581
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: bd4def5b22ba081ea0af7cfa4e0c1216486e227d74b10892ae6df5b9b19bdcee
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54121531"
 ---
 # <a name="reportroot-getsharepointactivitypages"></a>reportRoot: getSharePointActivityPages
 
@@ -18,7 +18,7 @@ ms.locfileid: "49983757"
 
 Получите количество уникальных страниц, посещенных пользователями.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 : действия в SharePoint.](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)
+> **Примечание:** Подробные сведения о различных представлениях отчетов и [именах см. в Microsoft 365 отчетов — SharePoint действий.](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -67,7 +67,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Report Refresh Date" (Дата обновления отчета);
 - Visited Page Count (количество посещенных страниц)
 - Report Date (дата отчета)
-- "Report Period" (Отчетный период).
+- Report Period (отчетный период)
 
 ## <a name="example"></a>Пример
 

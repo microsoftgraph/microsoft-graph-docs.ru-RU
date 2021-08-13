@@ -4,12 +4,12 @@ description: Все возможности, описанные в этой ст�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: b55ac1a3655f5f5bc518a8d29bfa37f43f98ba0e
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 7f54a86d254222c4b7f3f4269f57e420727cc5625e9085e8fcbab506dd943028
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54168992"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API
 

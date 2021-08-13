@@ -3,12 +3,12 @@ title: Поставщик Microsoft Teams
 description: Используйте поставщика Teams в своей вкладке Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 2d4bff6363cc87256f7ec3f9456fbd11f011b48e
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3ede17c756a5b8af009f03555041d2a1c08a1b0d8c6d0671522273aa445afbad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54208645"
 ---
 # <a name="microsoft-teams-provider"></a>Поставщик Microsoft Teams
 

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Нотебуклинкс
+title: тип ресурса notebookLinks
 description: Ссылки для открытия записной книжки OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 4600877834a27c2f70ff0dea616ee53134135f18
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68e86841a08adab548a94dea13be83faec1460601bf3ac66a5d334ca54d1622c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043838"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251894"
 ---
-# <a name="notebooklinks-resource-type"></a>Тип ресурса Нотебуклинкс
+# <a name="notebooklinks-resource-type"></a>тип ресурса notebookLinks
 
 Пространство имен: microsoft.graph
 

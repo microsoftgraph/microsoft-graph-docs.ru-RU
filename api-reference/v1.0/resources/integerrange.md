@@ -5,12 +5,12 @@ author: nilakhan
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: aee4ebfab164e6abbbecde083ba028c4c5a98723
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 6af69a7184a88d8540b45b35a58875b5d2934712fa0915bb0d1e59df2623697d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50517403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54146862"
 ---
 # <a name="integerrange-resource-type"></a>тип ресурсов integerRange
 
