@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: febd45d2e3682584890a7aacc18e9701bb147b9f
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 85a90fd74553e06f26a2915b605f7e590b54ece0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665394"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262573"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Обновление объекта iosGeneralDeviceConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,16 +55,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |accountBlockModification|Boolean|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
 |activationLockAllowWhenSupervised|Boolean|Указывает, следует ли запретить блокировку активации, когда устройство находится в защищенном режиме.|
@@ -155,7 +155,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskModeBlockVolumeButtons|Boolean|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
 |kioskModeAllowZoomSettings|Boolean|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
 |kioskModeAppStoreUrl|String|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
-|kioskModeBuiltInAppId|Строка|ID для встроенных приложений, которые можно использовать для режима киоска. Используется, когда не заданы KioskModeManagedAppId и KioskModeAppStoreUrl.|
+|kioskModeBuiltInAppId|String|ID для встроенных приложений, которые можно использовать для режима киоска. Используется, когда не заданы KioskModeManagedAppId и KioskModeAppStoreUrl.|
 |kioskModeRequireAssistiveTouch|Boolean|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Boolean|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Boolean|Указывает, обязательно ли использовать монозвук в режиме киоска.|
@@ -248,6 +248,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |autoUnlockBlocked|Логический|Блокирует разблокирование устройства с помощью Apple Watch. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
 |unpairedExternalBootToRecoveryAllowed|Логический|Разрешить пользователям загрузку устройств в режим восстановления с неоплаченными устройствами. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
 |onDeviceOnlyDictationForced|Логический|Отключает подключения к серверам Siri, чтобы пользователи не могли использовать Siri для диктовки текста. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
+|wiFiConnectToAllowedNetworksOnlyForced|Логический|Требуются устройства для Wi-Fi сетей, установленных с помощью профилей конфигурации. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Тип приложения для работы в режиме киоска. Возможные значения: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -262,7 +263,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10776
+Content-length: 10827
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -557,6 +558,7 @@ Content-length: 10776
   "autoUnlockBlocked": true,
   "unpairedExternalBootToRecoveryAllowed": true,
   "onDeviceOnlyDictationForced": true,
+  "wiFiConnectToAllowedNetworksOnlyForced": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -566,7 +568,7 @@ Content-length: 10776
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10948
+Content-Length: 10999
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -864,6 +866,7 @@ Content-Length: 10948
   "autoUnlockBlocked": true,
   "unpairedExternalBootToRecoveryAllowed": true,
   "onDeviceOnlyDictationForced": true,
+  "wiFiConnectToAllowedNetworksOnlyForced": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```

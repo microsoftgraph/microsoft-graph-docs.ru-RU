@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d37a79183c265de897a1c9f5140756a4fbdeb4f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1409de2df4cebd346cf9e69250efd0c43ba8f461
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263823"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Тип ресурса deviceComplianceSettingState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -35,7 +35,7 @@ ms.locfileid: "49288721"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Тип платформы устройства. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` ,,, `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` ,, `unknown` ,,,,,,,,,,,,,.|
+|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|Тип платформы устройства. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` . `unknown`|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра в отчете|
 |deviceId|String|ИД устройства в отчете|
@@ -45,7 +45,7 @@ ms.locfileid: "49288721"
 |userName|String|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
-|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия параметру. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
 ## <a name="relationships"></a>Связи

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b7da53c95a73329b1e694e49956bfa0d66247a1
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: c995f49577e9f58e3c2b59d6a46bf9dd55504d1fe1990ac5ff3ca9284b12c489
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173676"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -31,7 +31,7 @@ ms.locfileid: "51866428"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceCategories
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Обборка**|
-|description|String|Необязательное описание категории устройств.|
+|description|Строка|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|
 
 ## <a name="response"></a>Отклик

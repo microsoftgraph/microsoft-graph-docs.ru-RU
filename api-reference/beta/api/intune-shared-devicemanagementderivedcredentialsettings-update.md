@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f94ac3eb5328cd8723008a25fd72e30347a1ac9
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 338874b4f191a307d11cfde1102fbde0de80554b77c40d055be0407e1031f0cf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173655"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>Обновление deviceManagementDerivedCredentialSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "51867856"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -64,10 +64,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для производных учетных данных|
 |**Политика RA**|
-|helpUrl|String|URL-адрес, который будет доступен конечным пользователям по мере получения полученных учетных данных с помощью портала компании.|
-|displayName|String|Имя отображения для профиля.|
+|helpUrl|Строка|URL-адрес, доступный конечным пользователям по мере получения полученных учетных данных с помощью Корпоративный портал.|
+|displayName|Строка|Имя отображения для профиля.|
 |эмитент|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|Полученный поставщик учетных данных для использования. Возможные значения: `intercede`, `entrustDatacard`, `purebred`.|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|Методы, используемые для информирования конечному пользователю об открытом портале компании для доставки профилей Wi-Fi, VPN или электронной почты, с помощью сертификатов на устройство. Возможные значения: `none`, `companyPortal`, `email`.|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|Методы, используемые для информирования конечному пользователю Корпоративный портал для доставки профилей Wi-Fi, VPN или электронной почты, которые используют сертификаты на устройство. Возможные значения: `none`, `companyPortal`, `email`.|
 
 
 ## <a name="response"></a>Отклик

@@ -1,15 +1,15 @@
 ---
-title: Защита данных приложений компании с помощью Microsoft Intune - API Microsoft Graph
-description: Списки API Microsoft Graph для конечных точек Intune (REST), которые управляют приложениями и их политиками для организации-клиента.
+title: Защита данных приложений компании с помощью Microsoft Intune - API microsoft Graph
+description: Списки microsoft Graph API для конечных точек Intune (REST), которые управляют приложениями и их политиками для организации-клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0faa6c3b62a865c027d1ece4e5b34915f2da996b
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 3ab2c83a2aea69f91e46045e82f19eb975c56b0c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266480"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -77,6 +77,7 @@ ms.locfileid: "51863978"
 - [Результат действия "Отзыв лицензии для приложения iOS, приобретенного по программе VPP"](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Электронная книга VPP для iOS](intune-books-iosvppebook.md)
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
+- [Пара "ключ-значение"](intune-androidforwork-keyvaluepair.md)
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
 - [Дочернее бизнес-приложение для macOS](intune-apps-macoslobchildapp.md)
 - [приложение mdatp macOS](intune-apps-macosmdatpapp.md)
@@ -125,10 +126,11 @@ ms.locfileid: "51863978"
 - [Тип supersedence мобильного приложения](intune-apps-mobileappsupersedencetype.md)
 - [Отдельное мобильное приложение](intune-apps-mobilecontainedapp.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
-- [ID продукта Office](intune-apps-officeproductid.md)
+- [Office продукта](intune-apps-officeproductid.md)
 - [Приложение из набора Office](intune-apps-officesuiteapp.md)
 - [Отображаемый уровень хода установки набора Office](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Канал обновления Office](intune-apps-officeupdatechannel.md)
+- [Итоговое состояние приложения](intune-apps-resultantappstate.md)
 - [Информация об итоговом состоянии приложения](intune-apps-resultantappstatedetail.md)
 - [Сертификат подписи кода Symantec](intune-apps-symanteccodesigningcertificate.md)
 - [Состояние установки приложения пользователем](intune-apps-userappinstallstatus.md)
@@ -168,7 +170,7 @@ ms.locfileid: "51863978"
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Архитектура Windows](intune-apps-windowsarchitecture.md)
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)
-- [Microsoft edge app Windows](intune-apps-windowsmicrosoftedgeapp.md)
+- [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Информация о пакете Windows](intune-apps-windowspackageinformation.md)

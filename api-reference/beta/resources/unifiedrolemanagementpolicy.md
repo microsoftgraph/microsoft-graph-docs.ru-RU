@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7abeb69f469b9c8b7bec37b240c739774cbd8163
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 71456639325f586f36652891ab21bb2ccc4ca8454f5037f6362d39fb7b4a6898
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160718"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>тип ресурса unifiedRoleManagementPolicy
 
@@ -29,10 +29,10 @@ ms.locfileid: "52679878"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|String|Описание политики.|
+|description|Строка|Описание политики.|
 |displayName|String|Отображение имени политики.|
 |id|String|Уникальный идентификатор для политики.|
-|isOrganizationDefault|Boolean|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
+|isOrganizationDefault|Логический|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|Идентификатор, который в последний раз изменил параметр роли.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметра роли.|
 |scopeId|String|ID области, в которой создается политика. Например, "/", groupId и т. д.|

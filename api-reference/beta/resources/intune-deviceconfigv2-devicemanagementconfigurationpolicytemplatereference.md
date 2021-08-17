@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff61ac1e881ec6bb40750d9cb43d80c6722dd79e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e6ff9ea314ee7dee3e53e6c043ef4dc99083d5cc5b091d9981868ef6a33a52fb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148073"
 ---
 # <a name="devicemanagementconfigurationpolicytemplatereference-resource-type"></a>тип ресурса deviceManagementConfigurationPolicyTemplateReference
 
@@ -28,7 +28,7 @@ ms.locfileid: "52666501"
 |templateId|Строка|Шаблон id|
 |templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|Семейство шаблонов ссылаемого шаблона. Это свойство доступно только для чтения. Возможные значения: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`.|
 |templateDisplayName|Строка|Отображение имени шаблона ссылаемого шаблона. Это свойство доступно только для чтения.|
-|templateDisplayVersion|Строка|Отображение шаблона версии ссылаемого шаблона. Это свойство доступно только для чтения.|
+|templateDisplayVersion|String|Отображение шаблона версии ссылаемого шаблона. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет

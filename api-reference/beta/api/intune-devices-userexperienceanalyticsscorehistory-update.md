@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af10809804f933b9a049ae37dad4aecfa2bf0c9e
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d2beea28e8e6c5ef9165cb42058cf72733ed49ca
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666235"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264264"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>Обновление userExperienceAnalyticsScoreHistory
 
@@ -27,9 +27,9 @@ ms.locfileid: "52666235"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,6 +60,10 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 |coreBootScore|Int32|Оценка загрузки основного загрузочного устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |coreSigninScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |recommendedSoftwareScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
+|appHealthOverallScore|Int32|Общее состояние здоровья приложения для аналитики пользовательского интерфейса.|
+|startupTotalDevices|Int32|Общее число устройств для производительности запуска для аналитики пользовательских интерфейсов.|
+|recommendedSoftwareTotalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов рекомендуемого программного обеспечения.|
+|appHealthTotalDevices|Int32|Общее число устройств для здоровья приложения для аналитики пользовательского интерфейса.|
 |restartScore|Int32|Оценка перезапуска. Оценка будет в диапазоне 0-100, 100 является идеальным показателем, 0 указывает на чрезмерные перезапуски. Допустимые значения от 0 до 9999999|
 
 
@@ -74,7 +78,7 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 Content-type: application/json
-Content-length: 289
+Content-length: 422
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -84,6 +88,10 @@ Content-length: 289
   "coreBootScore": 13,
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
+  "appHealthOverallScore": 5,
+  "startupTotalDevices": 3,
+  "recommendedSoftwareTotalDevices": 15,
+  "appHealthTotalDevices": 5,
   "restartScore": 12
 }
 ```
@@ -93,7 +101,7 @@ Content-length: 289
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 338
+Content-Length: 471
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -104,6 +112,10 @@ Content-Length: 338
   "coreBootScore": 13,
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
+  "appHealthOverallScore": 5,
+  "startupTotalDevices": 3,
+  "recommendedSoftwareTotalDevices": 15,
+  "appHealthTotalDevices": 5,
   "restartScore": 12
 }
 ```

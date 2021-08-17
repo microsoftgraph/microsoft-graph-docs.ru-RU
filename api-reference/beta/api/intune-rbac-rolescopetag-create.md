@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7d02eb907ee0fbedde3240906277601eca8601e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 6c6f2ec200e4b50c6a88d7ec50d5be674345c3d221d4be41803f28b4282595a9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54136816"
 ---
 # <a name="create-rolescopetag"></a>Создание roleScopeTag
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51156669"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +54,8 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображение или дружеское имя тега Область ролей.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|String|Отображение или дружеское имя тега Область ролей.|
 |description|Строка|Описание тега Область ролей.|
 |isBuiltIn|Boolean|Описание тега Область ролей.|
 

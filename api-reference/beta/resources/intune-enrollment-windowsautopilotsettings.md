@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса windowsAutopilotSettings
-description: Ресурс windowsAutopilotSettings представляет учетную запись Windows Autopilot для синхронизации данных со службой синхронизации данных устройств с Windows.
+title: тип ресурса windowsAutopilotSettings
+description: Ресурс windowsAutopilotSettings представляет собой Windows учетную запись автопилота для синхронизации данных с Windows службой синхронизации данных устройств.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e49191d204a040327c510606c6ca8186644beb7
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 4d9ab364d05384f9329f4dcad48ee6a93173cf978c0b58c4ff81a9a3e4b66819
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172905"
 ---
-# <a name="windowsautopilotsettings-resource-type"></a>Тип ресурса windowsAutopilotSettings
+# <a name="windowsautopilotsettings-resource-type"></a>тип ресурса windowsAutopilotSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс windowsAutopilotSettings представляет учетную запись Windows Autopilot для синхронизации данных со службой синхронизации данных устройств с Windows.
+Ресурс windowsAutopilotSettings представляет собой Windows учетную запись автопилота для синхронизации данных с Windows службой синхронизации данных устройств.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Get windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Чтение свойств и связей объекта [windowsAutopilotSettings.](../resources/intune-enrollment-windowsautopilotsettings.md)|
+|[Get windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Чтение свойств и связей [объекта WindowsAutopilotSettings.](../resources/intune-enrollment-windowsautopilotsettings.md)|
 |[Обновление windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Обновление свойств объекта [windowsAutopilotSettings.](../resources/intune-enrollment-windowsautopilotsettings.md)|
-|[Действие sync](../api/intune-enrollment-windowsautopilotsettings-sync.md)|Нет|Инициирует синхронизацию всех зарегистрированных AutoPilot устройств из Магазина для бизнеса и других порталов. Если синхронизация прошла успешно, это действие возвращает код отклика "204 Без содержимого". Если синхронизация уже идет, действие возвращает код ответа на конфликт 409.  Если это действие синхронизации вызвано в течение 10 минут после предыдущей синхронизации, это действие возвращает код ответа 429 Too Many Requests.|
+|[Действие sync](../api/intune-enrollment-windowsautopilotsettings-sync.md)|Нет|Инициирует синхронизацию всех зарегистрированных устройств АвтоПилота из Магазина для бизнеса и других порталов. Если синхронизация будет успешной, это действие возвращает код ответа 204 Без контента. Если синхронизация уже продолжается, действие возвращает код ответа на конфликт 409.  Если это действие синхронизации вызвано в течение 10 минут после предыдущей синхронизации, действие возвращает код ответа 429 Too Many Requests.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|lastSyncDateTime|DateTimeOffset|Время последней даты синхронизации данных со службой DDS.|
-|lastManualSyncTriggerDateTime|DateTimeOffset|Время последней синхронизации данных со службой DDS.|
-|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройства (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
+|lastSyncDateTime|DateTimeOffset|Последнее время синхронизации данных со службой DDS.|
+|lastManualSyncTriggerDateTime|DateTimeOffset|Последнее время синхронизации данных со службой DDS.|
+|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
 
 ## <a name="relationships"></a>Связи
 Нет

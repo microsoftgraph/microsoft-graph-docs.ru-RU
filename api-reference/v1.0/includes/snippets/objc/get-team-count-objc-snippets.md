@@ -1,26 +1,27 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5d613e930f2e0740f76bbd8f1025423cb9ffd64d2eae9260008bcba93f9046bd
+ms.openlocfilehash: 47c50ac892664974173d57c07c936724940fd7ecaa26a05504bccef9dfef8e94
 ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/05/2021
-ms.locfileid: "57204242"
+ms.locfileid: "57052234"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/contacts"]]];
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/servicePrincipals?$search=%22displayName:Team%22&$count=true"]]];
 [urlRequest setHTTPMethod:@"GET"];
+[urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphOrgContact *orgContact = [[MSGraphOrgContact alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphServicePrincipal *servicePrincipal = [[MSGraphServicePrincipal alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

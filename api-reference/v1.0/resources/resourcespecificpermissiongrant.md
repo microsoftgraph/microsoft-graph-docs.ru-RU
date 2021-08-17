@@ -5,18 +5,18 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 13a8f055d61037e3d346add591adfd90c6d7a5a98942e6dbd96a021ed1c2bdef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 221576c08af5e97979d2a42e8dc0cce483e3bf35
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177998"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264159"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>тип ресурса resourceSpecificPermissionGrant
 
 Пространство имен: microsoft.graph
 
-РесурсSpecificPermissionGrant объявляет разрешение, предоставленное конкретному приложению AzureAD для экземпляра ресурса в Microsoft Graph.
+Объявляет разрешения, предоставленные конкретному приложению Azure AD для экземпляра ресурса в Microsoft Graph.
 
 Дополнительные сведения о предоставлении приложениям согласия на доступ к конкретному экземпляру ресурса см. в примере " Согласие на [доступ к ресурсам".](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
@@ -30,13 +30,13 @@ ms.locfileid: "54177998"
 
 | Свойство        | Тип          | Описание                                                                           |
 | :-------------- | :------------ | :------------------------------------------------------------------------------------ |
-| id              | строка        | Уникальный идентификатор гранта разрешений, определяемого конкретными ресурсами. Только для чтения.           |
+| id              | string        | Уникальный идентификатор гранта разрешений, определяемого конкретными ресурсами. Только для чтения.           |
 | deletedDateTime | dateTimeOffset| Не используется.                                                                             |
-| clientId        | Строка        | ID приложения Azure AD, которое было предоставлено доступ. Только для чтения.                            |
-| clientAppId     | Строка        | ID директора службы приложения Azure AD, которое было предоставлено доступ. Только для чтения.   |
-| resourceAppId   | Строка        | ID приложения Azure AD, на который размещен ресурс. Только для чтения.                        |
-| permissionType  | Строка        | Тип разрешения. Возможные значения: `Application`, `Delegated`. Только для чтения. |
-| разрешение      | Строка        | Имя разрешения, определенного для ресурса. Только для чтения.                                                |
+| clientId        | string        | ID приложения Azure AD, которое было предоставлено доступ. Только для чтения.                            |
+| clientAppId     | string        | ID директора службы приложения Azure AD, которое было предоставлено доступ. Только для чтения.   |
+| resourceAppId   | string        | ID приложения Azure AD, на который размещен ресурс. Только для чтения.                        |
+| permissionType  | string        | Тип разрешения. Возможные значения: `Application`, `Delegated`. Только для чтения. |
+| разрешение      | string        | Имя разрешения, определенного для ресурса. Только для чтения.                                                |
 
 ## <a name="json-representation"></a>Представление JSON
 

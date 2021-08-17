@@ -1,53 +1,54 @@
 ---
-title: Тип ресурса userExperienceAnalyticsResourcePerformance
-description: Сущность производительности ресурсов аналитики пользовательского интерфейса.
+title: тип ресурса userExperienceAnalyticsResourcePerformance
+description: Объект производительности ресурсов для аналитики пользовательского интерфейса.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7666c09cd2b27e6c657a71c97693f025cfcc9360
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 141b9099a583608d03cd3fde97951ac94b624934
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160969"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262622"
 ---
-# <a name="userexperienceanalyticsresourceperformance-resource-type"></a>Тип ресурса userExperienceAnalyticsResourcePerformance
+# <a name="userexperienceanalyticsresourceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsResourcePerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность производительности ресурсов аналитики пользовательского интерфейса.
+Объект производительности ресурсов для аналитики пользовательского интерфейса.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список userExperienceAnalyticsResourcePerformances](../api/intune-devices-userexperienceanalyticsresourceperformance-list.md)|[Коллекция userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Список свойств и связей [объектов userExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
-|[Get userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-get.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Чтение свойств и связей объекта [userExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
-|[Создание userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-create.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Создание объекта [userExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
-|[Удаление userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-delete.md)|Нет|Удаляет [пользователяExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
+|[Список userExperienceAnalyticsResourcePerformances](../api/intune-devices-userexperienceanalyticsresourceperformance-list.md)|[коллекция userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Список свойств и связей [объектов userExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
+|[Get userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-get.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Чтение свойств и связей [объекта userExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
+|[Создание userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-create.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Создание нового [объекта userExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
+|[Удаление userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-delete.md)|Нет|Удаляет [пользователяExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md).|
 |[Обновление userExperienceAnalyticsResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-update.md)|[userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Обновление свойств объекта [userExperienceAnalyticsResourcePerformance.](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|
-|[функция summarizeDeviceResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-summarizedeviceresourceperformance.md)|[Коллекция userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Н/Д|
+|[summarizeDeviceResourcePerformance](../api/intune-devices-userexperienceanalyticsresourceperformance-summarizedeviceresourceperformance.md)|[коллекция userExperienceAnalyticsResourcePerformance](../resources/intune-devices-userexperienceanalyticsresourceperformance.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательского интерфейса.|
-|deviceId|String|ИД устройства.|
+|id|String|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательских интерфейсов.|
+|deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
-|model|String|Модель устройства аналитики пользовательского интерфейса.|
-|deviceCount|Int64|Аналитика пользовательского интерфейса суммирует количество устройств.|
-|manufacturer|String|Изготовитель устройства аналитики пользовательского интерфейса.|
+|model|String|Модель устройства аналитики пользовательских интерфейсов.|
+|deviceCount|Int64|Аналитика пользовательских интерфейсов суммирует количество устройств.|
+|manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
 |cpuSpikeTimePercentage|Двойное с плавающей точкой|Время пика ЦП в процентах. Допустимые значения: от 0 до 100|
-|ramSpikeTimePercentage|Двойное с плавающей точкой|Время пика ОЗУ в процентах. Допустимые значения: от 0 до 100|
-|cpuSpikeTimeScore|Int32|Оценка времени пика пика ЦП устройства аналитики пользовательского интерфейса. Допустимые значения: от 0 до 100|
-|cpuSpikeTimePercentageThreshold|Двойное с плавающей точкой|Пороговое значение cpuSpikeTimeScore. Допустимые значения: от 0 до 100|
-|ramSpikeTimeScore|Int32|Показатель времени пика пика ОЗУ устройства аналитики пользовательского интерфейса. Допустимые значения: от 0 до 100|
-|ramSpikeTimePercentageThreshold|Двойное с плавающей точкой|Пороговое значение ramSpikeTimeScore. Допустимые значения: от 0 до 100|
-|deviceResourcePerformanceScore|Int32|Оценка производительности ресурсов для конкретного устройства. Допустимые значения: от 0 до 100.|
+|ramSpikeTimePercentage|Двойное с плавающей точкой|Время пика оперативной памяти в процентах. Допустимые значения: от 0 до 100|
+|cpuSpikeTimeScore|Int32|Оценка времени пика пика ЦП для пользовательского интерфейса. Допустимые значения: от 0 до 100|
+|cpuSpikeTimePercentageThreshold|Двойное с плавающей точкой|Порог cpuSpikeTimeScore. Допустимые значения: от 0 до 100|
+|ramSpikeTimeScore|Int32|Оценка времени пика пика оперативной памяти устройства аналитики пользовательского интерфейса. Допустимые значения: от 0 до 100|
+|ramSpikeTimePercentageThreshold|Двойное с плавающей точкой|Порог ramSpikeTimeScore. Допустимые значения: от 0 до 100|
+|deviceResourcePerformanceScore|Int32|Оценка производительности ресурсов определенного устройства. Допустимые значения: от 0 до 100|
+|averageSpikeTimeScore|Int32|AverageSpikeTimeScore устройства или типа модели. Допустимые значения: от 0 до 100.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -75,7 +76,8 @@ ms.locfileid: "50160969"
   "cpuSpikeTimePercentageThreshold": "4.2",
   "ramSpikeTimeScore": 1024,
   "ramSpikeTimePercentageThreshold": "4.2",
-  "deviceResourcePerformanceScore": 1024
+  "deviceResourcePerformanceScore": 1024,
+  "averageSpikeTimeScore": 1024
 }
 ```
 

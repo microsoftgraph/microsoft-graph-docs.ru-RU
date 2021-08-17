@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f4f727455c735e130eb39cf395d7f7a0ff35030
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 51bf765bf86f4202d9c47340086942347e24cb7952d73e7671e95d1e845bb250
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54191104"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание windowsFeatureUpdateProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51865364"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,8 +55,8 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |:---|:---|:---|
 |id|String|Идентификатор объекта.|
 |displayName|String|Имя отображения профиля.|
-|description|String|Описание профиля, указанного пользователем.|
-|featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|description|Строка|Описание профиля, указанного пользователем.|
+|featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|

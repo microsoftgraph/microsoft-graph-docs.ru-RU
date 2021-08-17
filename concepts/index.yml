@@ -13,7 +13,7 @@ metadata:
     - clicktale
 highlightedContent:
   items:
-    - title: Что такое Microsoft Graph?
+    - title: Что представляет собой Microsoft Graph?
       itemType: overview
       url: ./overview.md
     - title: К чему можно получить доступ через microsoft Graph?
@@ -83,7 +83,7 @@ tools:
     - title: Песочница Graph
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
-    - title: Microsoft Graph Toolkit
+    - title: Набор средств Microsoft Graph
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
 additionalContent:
@@ -120,6 +120,8 @@ additionalContent:
               url: ./known-issues.md
             - text: Поддержка
               url: 'https://developer.microsoft.com/graph/support'
+            - text: Microsoft Graph на Q&A
+              url: 'https://docs.microsoft.com/en-us/answers/products/graph'
             - text: Блог Microsoft Graph
               url: 'https://developer.microsoft.com/graph/blogs/'
             - text: Видео и подкасты

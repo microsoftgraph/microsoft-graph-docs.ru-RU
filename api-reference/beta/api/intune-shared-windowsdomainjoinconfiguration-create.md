@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55244869dd22c626d211a2b24e30e7befa28c6af
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 5d73f99dac18ee8b212955343103ab327a5273ea16da116ce317e22677993f06
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145595"
 ---
 # <a name="create-windowsdomainjoinconfiguration"></a>Создание windowsDomainJoinConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "51866981"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -60,10 +60,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |**Конфигурация устройств**|
 |activeDirectoryDomainName|String|Доменное имя Active Directory для пользования.|
-|computerNameStaticPrefix|String|Исправленная префикс, которая будет использоваться для имени компьютера.|
+|computerNameStaticPrefix|Строка|Исправленная префикс, которая будет использоваться для имени компьютера.|
 |computerNameSuffixRandomCharCount|Int32|Динамически созданные символы, используемые в качестве суффикса для имени компьютера. Допустимые значения от 3 до 14|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |organizationalUnit|String|Организационное подразделение (OU), в котором будет создана учетная запись компьютера. Если этот параметр NULL, хорошо известный контейнер объектов компьютера будет использоваться как опубликованный в домене.|
