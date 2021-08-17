@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa16bf6df1f912004cb7dd57422ea8d4bfb807ad
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 97de65da8cc4380df20a28dd358cc2dc168dd403
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665037"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262216"
 ---
 # <a name="list-userexperienceanalyticsworkfromanywheredevices"></a>Список userExperienceAnalyticsWorkFromAnywhereDevices
 
@@ -27,9 +27,9 @@ ms.locfileid: "52665037"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWor
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 727
+Content-Length: 1222
 
 {
   "value": [
@@ -84,7 +84,20 @@ Content-Length: 727
       "azureAdDeviceId": "Azure Ad Device Id value",
       "azureAdJoinType": "Azure Ad Join Type value",
       "osDescription": "Os Description value",
-      "osVersion": "Os Version value"
+      "osVersion": "Os Version value",
+      "tenantAttached": true,
+      "compliancePolicySetToIntune": true,
+      "otherWorkloadsSetToIntune": true,
+      "upgradeEligibility": "unknown",
+      "ramCheckFailed": true,
+      "storageCheckFailed": true,
+      "processorCoreCountCheckFailed": true,
+      "processorSpeedCheckFailed": true,
+      "tpmCheckFailed": true,
+      "secureBootCheckFailed": true,
+      "processorFamilyCheckFailed": true,
+      "processor64BitCheckFailed": true,
+      "osCheckFailed": true
     }
   ]
 }

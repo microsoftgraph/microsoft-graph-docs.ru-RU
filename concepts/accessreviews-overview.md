@@ -4,18 +4,20 @@ description: API обзоров доступа позволяет програм
 author: FaithOmbongi
 localization_priority: Normal
 ms.prod: governance
-ms.openlocfilehash: b22fcf84e8303f10ad6d9f0f30cf0e508db5f103aee8430c35fb9981bcaec8c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea3caf2fd375d56ce128f8ec84be71b468f40b90
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336658"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Обзор API проверок доступа
 
-API [обзоров](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) доступа в Microsoft Graph позволяет программным образом просмотреть доступ к ресурсам Azure AD. К ним относятся:
-+ Создание, чтение, обновление и удаление обзоров доступа, параметров обзора доступа и расписания.
-+ Изучение прошлых обзоров доступа и решений, принятых рецензентами, в том числе действий Azure AD, принятых автоматически.
+API [обзоров](/graph/api/resources/accessreviewsv2-root) доступа в Microsoft Graph позволяет программным образом просмотреть доступ к ресурсам Azure AD. Этот обзор помогает убедиться, что нужные люди имеют правильный доступ к нужным ресурсам в организации.
+
+С помощью API отзывов доступа можно сделать следующие действия:
++ Создание, чтение, обновление и удаление отзывов о доступе, параметров обзора доступа и расписания.
++ Изучите прошлые обзоры доступа и решения, принятые рецензентами, в том числе действия, которые Azure AD принял автоматически.
 
 ## <a name="scope-of-use"></a>Область использования
 
@@ -44,7 +46,6 @@ API обзоров доступа поддерживают как делегир
 
 ## <a name="see-also"></a>См. также
 
++ [Проверки доступа Azure AD](/graph/api/resources/accessreviewsv2-root)
 + [Планирование Azure Active Directory проверки доступа](/azure/active-directory/governance/deploy-access-reviews)
 + [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
-+ [Получение доступа от имени пользователя](/graph/auth-v2-user)
-+ [Получение доступа без пользователя](/graph/auth-v2-service)

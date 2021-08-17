@@ -1,45 +1,45 @@
 ---
-title: Тип ресурса Полицисетитем
-description: Класс, содержащий свойства, используемые для элемента "набор политик".
+title: тип ресурса policySetItem
+description: Класс, содержащий свойства, используемые для элемента PolicySet.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77438e4b0322dcb6feade0aab57c830869832e14
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 61cfca7b222c0023f1fca5103fba141d1c70b392
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287930"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262167"
 ---
-# <a name="policysetitem-resource-type"></a>Тип ресурса Полицисетитем
+# <a name="policysetitem-resource-type"></a>тип ресурса policySetItem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, содержащий свойства, используемые для элемента "набор политик".
+Класс, содержащий свойства, используемые для элемента PolicySet.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Полицисетитемс](../api/intune-policyset-policysetitem-list.md)|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Список свойств и связей объектов [полицисетитем](../resources/intune-policyset-policysetitem.md) .|
-|[Получение Полицисетитем](../api/intune-policyset-policysetitem-get.md)|[policySetItem](../resources/intune-policyset-policysetitem.md)|Чтение свойств и связей объекта [полицисетитем](../resources/intune-policyset-policysetitem.md) .|
+|[Политика listSetItems](../api/intune-policyset-policysetitem-list.md)|[коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Список свойств и связей объектов [policySetItem.](../resources/intune-policyset-policysetitem.md)|
+|[Get policySetItem](../api/intune-policyset-policysetitem-get.md)|[policySetItem](../resources/intune-policyset-policysetitem.md)|Чтение свойств и связей объекта [policySetItem.](../resources/intune-policyset-policysetitem.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ Мобилеаппполицисетитем.|
-|createdDateTime|DateTimeOffset|Время создания Полицисетитем.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетитем.|
-|пайлоадид|String|Пайлоадид Полицисетитем.|
-|itemType|String|Полицисеттипе Полицисетитем.|
-|displayName|String|DisplayName объекта Полицисетитем.|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция строк|Теги в руководстве по развертыванию|
+|id|String|Клавиша PolicySetItem.|
+|createdDateTime|DateTimeOffset|Время создания PolicySetItem.|
+|lastModifiedDateTime|DateTimeOffset|Последнее измененное время политикиSetItem.|
+|payloadId|String|PayloadId of the PolicySetItem.|
+|itemType|Строка|policySetType policySetItem.|
+|displayName|Строка|DisplayName of the PolicySetItem.|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние PolicySetItem. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если таковое произошло. Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|guidedDeploymentTags|Коллекция String|Теги управляемого развертывания|
 
 ## <a name="relationships"></a>Связи
 Нет

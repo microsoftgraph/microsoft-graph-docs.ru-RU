@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Манажедаппнотификатионрестриктион
-description: Ограничение уведомления управляемого приложения
+title: тип enum managedAppNotificationRestriction
+description: Ограничение уведомления об управляемом приложении
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f925830d1608718612755841f1fad7d41fa50874
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4ac82a983c441c4026e7b1f7b79c52a84a1a16261cfa3c478be1550c2aa23ca5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49207276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122336"
 ---
-# <a name="managedappnotificationrestriction-enum-type"></a>тип перечисления Манажедаппнотификатионрестриктион
+# <a name="managedappnotificationrestriction-enum-type"></a>тип enum managedAppNotificationRestriction
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение уведомления управляемого приложения
+Ограничение уведомления об управляемом приложении
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|разрешить|нуль|Поделитесь всеми уведомлениями.|
-|блоккорганизатионалдата|1,1|Не предоставляйте общий доступ к данным Оргнизатионал в уведомлениях.|
-|блок|2|Не предоставляйте уведомления.|
+|разрешить|0|Поделитесь всеми уведомлениями.|
+|blockOrganizationalData|1 |Не делитесь данными orgnizational в уведомлениях.|
+|block|2|Не делитесь уведомлениями.|
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8c70c89d35101e6170f27d9032759cbabadcaf556c680b14f6155a0ee66954b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1686ebac67e5f8865328e90d77607851fa6de20
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205866"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367032"
 ---
 # <a name="educationassignmentresource-resource-type"></a>тип ресурса educationAssignmentResource
 
@@ -31,8 +31,8 @@ ms.locfileid: "54205866"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Логический|Указывает, следует ли скопировать этот ресурс для каждого студента для изменения и отправки.|
-|id|String| ID этого ресурса. Только для чтения.|
+|distributeForStudentWork|Логический|Указывает, следует ли скопировать этот ресурс для каждого студента для изменения и отправки. Обязательно|
+|id|Строка| ID этого ресурса. Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект resource, связанный с этим назначением.|
 
 ## <a name="relationships"></a>Связи

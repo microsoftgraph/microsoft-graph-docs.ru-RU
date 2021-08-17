@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицетипес
+title: Тип enum deviceTypes
 description: Тип устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a408fb7d8471ab8215d357d5736234d50c8a9a0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d7fa88899d2bfe3ef24b527baad3337647d51e69299bc092d72f7a0667955c9a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283387"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124782"
 ---
-# <a name="devicetypes-enum-type"></a>тип перечисления Девицетипес
+# <a name="devicetypes-enum-type"></a>Тип enum deviceTypes
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,28 +25,28 @@ ms.locfileid: "49283387"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|системной|нуль|Системной.|
-|виндовсрт|1,1|Виндовсрт.|
+|настольный компьютер|0|Рабочий стол.|
+|windowsRT|1 |WindowsRT.|
 |winMO6|2|WinMO6.|
-|Nokia|4|Nokia.|
-|windowsPhone|4 |Windows Phone.|
-|mac|5 |OS.|
+|Nokia|3 |Nokia.|
+|WindowsPhone|4 |Windows телефон.|
+|mac|5 |Mac.|
 |winCE|6 |WinCE.|
-|винембеддед|7 |Винембеддед.|
+|winEmbedded|7 |WinEmbedded.|
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
-|iPod|10 |Иподтауч.|
-|ОС|11 |ОС.|
-|исокконсумер|12 |Исокконсумер.|
-|формате|13 |Формате.|
-|макмдм|14 |Клиент Mac OS X, использующий встроенный агент MDM.|
-|holoLens|15 |Представляет собой затейливого Windows 10 гогглес.|
-|сурфацехуб|16 |Устройство Surface HUB.|
-|андроидфорворк|17 |Android для рабочего устройства.|
-|андроидентерприсе|18 |Устройство Android Enterprise.|
-|BlackBerry|100|BlackBerry.|
-|Положите|101|Положите.|
-|unknown|255|Указывает, что тип устройства неизвестен.|
+|iPod|10 |iPodTouch.|
+|Android|11 |Android.|
+|iSocConsumer|12 |iSocConsumer.|
+|unix|13 |Unix.|
+|macMDM|14 |Клиент Mac OS X с помощью встроенного агента MDM.|
+|holoLens|15 |Представление модных Windows 10 очки.|
+|surfaceHub|16 |Устройство Surface HUB.|
+|AndroidForWork|17 |Android для работы устройства.|
+|AndroidEnterprise|18 |Android корпоративное устройство.|
+|blackberry|100|Blackberry.|
+|ладонь|101|Палм.|
+|unknown|255|Представляет, что тип устройства неизвестен.|
 
 
 

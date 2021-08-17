@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 268e9ce5a364e23551fd8140456ce245f6613ff75e878940feb467b9b5bd0de6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d820996945b0d03f3f11f1052d246f33a9a05595
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129717"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336644"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью API microsoft Graph
 
@@ -116,7 +116,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
 
-### <a name="example-7-review-of-service-principals-assigned-to-privileged-roles"></a>Пример 7. Обзор принципов служб, присвоенных привилегированным ролям 
+### <a name="example-7-review-of-all-service-principals-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Пример 7. Обзор всех директоров служб, присвоенных привилегированной роли (все активные и подходящие назначения, включенные)
 
 ```http
 "scope": {
@@ -125,12 +125,42 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
     "queryType": "MicrosoftGraph"
 }
 ```
+    
+### <a name="example-8-review-of-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Пример 8. Обзор всех пользователей, назначенных на привилегированную роль (все активные и подходящие назначения, включенные)
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleDefinitions/{role ID}",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### <a name="example-9-review-of-all-users-with-eligible-assignment-to-a-privileged-role"></a>Пример 9. Обзор всех пользователей с подходящим назначением на привилегированную роль
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleEligibilityScheduleInstances?$expand=principal&$filter=(isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+### <a name="example-10-review-of-all-users-with-active-assignment-to-a-privileged-role"></a>Пример 10. Обзор всех пользователей с активным назначением на привилегированную роль
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "/roleManagement/directory/roleAssignmentScheduleInstances?$expand=principal&$filter=(assignmentType eq 'Assigned' and isof(principal,'microsoft.graph.user') and roleDefinitionId eq '{role ID}')",
+    "queryType": "MicrosoftGraph"
+}
+```
 
 ## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a>Для настройки области используйте principalResourceMembershipsScope
 
 **PrincipalResourceMembershipsScope** предоставляет свойства **principalScopes** и **resourceScopes** для поддержки более адаптированных параметров конфигурации для области **accessReviewScheduleDefinition**. Это включает обзор доступа нескольких директоров или групп директоров к нескольким ресурсам.
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-groups"></a>Пример 1. Просмотр доступа всех неактивных гостевых пользователей к группам
+### <a name="example-1-review-access-of-all-inactive-guest-users-to-all-groups"></a>Пример 1. Просмотр доступа всех неактивных гостевых пользователей ко всем группам
 
 ```http
 "scope": {

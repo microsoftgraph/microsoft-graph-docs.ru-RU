@@ -1,43 +1,41 @@
 ---
-title: Тип ресурса Мобилеаппинтентандстате
-description: MobileApp намерения и состояние установки для конкретного устройства.
+title: тип ресурса mobileAppIntentAndState
+description: Намерение MobileApp и установка состояния для данного устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: adafc1b1544f34e17cbd55af643b42c32ea369af
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d8e5b3c8eb1e221adffcd79f65884c688067d1ba
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300348"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255942"
 ---
-# <a name="mobileappintentandstate-resource-type"></a>Тип ресурса Мобилеаппинтентандстате
+# <a name="mobileappintentandstate-resource-type"></a>тип ресурса mobileAppIntentAndState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-MobileApp намерения и состояние установки для конкретного устройства.
+Намерение MobileApp и установка состояния для данного устройства.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Мобилеаппинтентандстатес](../api/intune-troubleshooting-mobileappintentandstate-list.md)|Коллекция [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md)|Список свойств и связей объектов [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) .|
-|[Получение Мобилеаппинтентандстате](../api/intune-troubleshooting-mobileappintentandstate-get.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md);|Чтение свойств и связей объекта [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) .|
-|[Создание Мобилеаппинтентандстате](../api/intune-troubleshooting-mobileappintentandstate-create.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md);|Создание нового объекта [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) .|
-|[Удаление Мобилеаппинтентандстате](../api/intune-troubleshooting-mobileappintentandstate-delete.md)|Нет|Удаляет объект [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md).|
-|[Обновление Мобилеаппинтентандстате](../api/intune-troubleshooting-mobileappintentandstate-update.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md);|Обновление свойств объекта [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) .|
+|[Список mobileAppIntentAndStates](../api/intune-troubleshooting-mobileappintentandstate-list.md)|[коллекция mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)|Список свойств и связей объектов [mobileAppIntentAndState.](../resources/intune-troubleshooting-mobileappintentandstate.md)|
+|[Get mobileAppIntentAndState](../api/intune-troubleshooting-mobileappintentandstate-get.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md);|Чтение свойств и связей объекта [mobileAppIntentAndState.](../resources/intune-troubleshooting-mobileappintentandstate.md)|
+|[Создание mobileAppIntentAndState](../api/intune-troubleshooting-mobileappintentandstate-create.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md);|Создание нового [объекта mobileAppIntentAndState.](../resources/intune-troubleshooting-mobileappintentandstate.md)|
+|[Удаление mobileAppIntentAndState](../api/intune-troubleshooting-mobileappintentandstate-delete.md)|Нет|Удаляет [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).|
+|[Обновление mobileAppIntentAndState](../api/intune-troubleshooting-mobileappintentandstate-update.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md);|Обновление свойств объекта [mobileAppIntentAndState.](../resources/intune-troubleshooting-mobileappintentandstate.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
-|мобилеапплист|Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список целей и состояний полезных данных для клиента.|
+|mobileAppList|[коллекция mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список намерений и состояния полезной нагрузки для клиента.|
 
 ## <a name="relationships"></a>Связи
 Нет

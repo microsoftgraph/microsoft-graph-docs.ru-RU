@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8475327164c92ee0720a2236ca41294e6b8ff472
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c9eb3eba452a5da377a9bc00fd1be527aeb5aa20
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051629"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250901"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -45,7 +45,7 @@ ms.locfileid: "52051629"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Calendars.ReadWrite, Mail.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Calendars.ReadWrite, Mail.ReadWrite |
-| Для приложений                            | Calendars.ReadWrite, Mail.ReadWrite |
+| Приложение                            | Calendars.ReadWrite, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,6 +54,7 @@ ms.locfileid: "52051629"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/events/{id}/attachments/createUploadSession
 ```
 
 Создание сеанса загрузки для прикрепления файла к **сообщению:** 
@@ -61,6 +62,7 @@ POST /me/events/{id}/attachments/createUploadSession
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
+POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSession
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

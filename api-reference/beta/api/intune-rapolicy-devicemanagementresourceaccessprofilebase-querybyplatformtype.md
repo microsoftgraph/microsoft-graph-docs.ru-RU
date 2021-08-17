@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e50dfc6f8d77b3f5208f4db4dad1b0ef2f26392b
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: add2bf9ceb48da74738e98f36405e17b2d4ef27a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665401"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258056"
 ---
 # <a name="querybyplatformtype-action"></a>действие queryByPlatformType
 
@@ -43,7 +43,7 @@ POST /deviceManagement/resourceAccessProfiles/queryByPlatformType
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/resourceAccessProfiles/queryByPlatformType
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Пока не задокументировано.|
+|platformType|[policyPlatformType](../resources/intune-rapolicy-policyplatformtype.md)|Пока не задокументировано.|
 
 
 

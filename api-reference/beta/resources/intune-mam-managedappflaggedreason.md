@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Манажедаппфлагжедреасон
-description: Причина, по которой пользователю был применен флаг
+title: тип enum managedAppFlaggedReason
+description: Причина, по которой был помечен пользователь
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 08d21f78466f7f716b5d9bffcd1832e5c1a23d89
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4c433e120db3952f3d12585e097885f38f80ba68acaf6f8f0c1b3c19ba58b3db
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122343"
 ---
-# <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
+# <a name="managedappflaggedreason-enum-type"></a>тип enum managedAppFlaggedReason
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Причина, по которой пользователю был применен флаг
+Причина, по которой был помечен пользователь
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет ошибок.|
-|рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
-|андроидбутлоадерунлоккед|2|Регистрация приложения выполняется на устройстве с Android, на котором разблокирован загрузчик.|
-|андроидфакторироммодифиед|4|Регистрация приложения выполняется на устройстве с Android, на котором было изменено фабричное ПЗУ.|
+|Нет|0|Нет проблем.|
+|rootedDevice|1 |Регистрация приложения запущена на устройстве с корнем и разблокированным.|
+|AndroidBootloaderUnlocked|2|Регистрация приложения запущена на устройстве Android, на котором разблокирован загрузщик.|
+|AndroidFactoryRomModified|3 |Регистрация приложения запущена на устройстве Android, на котором изменен заводской ROM.|
 
 
 
