@@ -1,22 +1,20 @@
 ---
-title: тип перечисления Мобилеаппинтент
+title: тип enum mobileAppIntent
 description: Указывает состояние мобильного приложения на устройстве.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07c57d57217e76e67dd6e66a58f76d98eccd4eeb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 485519fdc142a472cba5db0e05df374b6426e17a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271613"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265174"
 ---
-# <a name="mobileappintent-enum-type"></a>тип перечисления Мобилеаппинтент
+# <a name="mobileappintent-enum-type"></a>тип enum mobileAppIntent
 
 Пространство имен: microsoft.graph
-
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,13 +23,13 @@ ms.locfileid: "49271613"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|доступен|нуль|Available|
-|нотаваилабле|1,1|Компонент недоступен|
-|рекуирединсталл|2|Обязательная установка|
-|рекуиредунинсталл|4|Обязательное удаление|
-|рекуиредандаваилаблеинсталл|4 |рекуиредандаваилаблеинсталл|
-|аваилаблеинсталлвисаутенроллмент|5 |аваилаблеинсталлвисаутенроллмент|
-|Отличающ|6 |Исключить|
+|доступен|0|Available|
+|notAvailable|1 |Компонент недоступен|
+|requiredInstall|2|Необходимая установка|
+|requiredUninstall|3 |Required Uninstall|
+|requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
+|availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
+|исключение|6 |Исключить|
 
 
 

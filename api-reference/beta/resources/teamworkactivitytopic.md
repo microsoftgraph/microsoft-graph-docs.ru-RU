@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Теамворкактивититопик
-description: Представляет раздел уведомления о канале активности.
+title: тип ресурса teamworkActivityTopic
+description: Представляет тему уведомления о канале действий.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a4425053cf41ebfbad139c6d0ea5fc246f0b1391
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: fe34a16382d3a2e806fd0c95fe9d09d55c3e2dbea4f3cea1e7d861f05f9af1b4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185469"
 ---
-# <a name="teamworkactivitytopic-resource-type"></a>Тип ресурса Теамворкактивититопик
+# <a name="teamworkactivitytopic-resource-type"></a>тип ресурса teamworkActivityTopic
 
 Пространство имен: microsoft.graph
 
-Представляет раздел уведомления о канале активности.
+Представляет тему уведомления о канале действий.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|source|теамворкактивититопиксаурце|Тип источника. Возможные значения: `entityUrl`, `text`. Для поддерживаемых URL-адресов Microsoft Graph используйте `entityUrl` . Для настраиваемого текста используйте `text` .|
-|value|String|Значение раздела. Если свойство **Source** имеет значение `entityUrl` , это должен быть URL-адрес Microsoft Graph. Если задано `text` значение вауле, это должно быть обычное текстовое значение.|
-|webUrl|String|Ссылка, которую пользователь щелкает при выборе уведомления. Необязательный параметр, если **источник** — это `entityUrl` обязательный **параметр** `text` .|
+|source|teamworkActivityTopicSource|Тип источника. Возможные значения: `entityUrl`, `text`. Для поддерживаемых URL Graph Microsoft, используйте `entityUrl` . Для пользовательского текста используйте `text` .|
+|value|String|Значение темы. Если значение свойства **источника** , это должен быть URL Graph `entityUrl` Microsoft. Если вейл `text` есть, это должно быть простое текстовое значение.|
+|webUrl|String|При выборе уведомления пользователь щелкает ссылку. **Необязательный,** когда `entityUrl` источник; требуется, **когда источник** `text` .|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

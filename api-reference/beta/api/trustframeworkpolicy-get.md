@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bbfa30131d2f17ab046f2ef6c1b997c8fca739b4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: a536f0a1da21b0e56ce1c7cb5a8b37fd97569769a22c99f02c6d5efafb3157c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139728"
 ---
 # <a name="get-trustframeworkpolicy"></a>Get trustFrameworkPolicy
 
@@ -49,7 +49,7 @@ GET /trustFramework/policies/{id}/$value
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Виреднетворкинтерфаце
+title: тип enum wiredNetworkInterface
 description: Тип сетевого интерфейса Apple.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 10ed3703143c679b87ef4d0eff2e3191fab43f99
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0b9530dfae28ec95d9fd91e7623f40c80eaf4daf8864d7ef51ce550d00c965f0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182961"
 ---
-# <a name="wirednetworkinterface-enum-type"></a>тип перечисления Виреднетворкинтерфаце
+# <a name="wirednetworkinterface-enum-type"></a>тип enum wiredNetworkInterface
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,13 +25,13 @@ ms.locfileid: "49226631"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|анесернет|нуль|Любой Ethernet.|
-|фирстактивисернет|1,1|Первая активная сеть Ethernet.|
-|секондактивисернет|2|Вторая активная сеть Ethernet.|
-|сирдактивисернет|4|Третья активная сеть Ethernet.|
-|фирстесернет|4 |Первая сеть Ethernet.|
-|секондесернет|5 |Вторая сеть Ethernet.|
-|сирдесернет|6 |Третья сеть Ethernet.|
+|anyEthernet|0|Любой Ethernet.|
+|firstActiveEthernet|1 |Первый активный Ethernet.|
+|secondActiveEthernet|2|Вторая активная Ethernet.|
+|thirdActiveEthernet|3 |Третий активный Ethernet.|
+|firstEthernet|4 |Первый Ethernet.|
+|secondEthernet|5 |Second Ethernet.|
+|thirdEthernet|6 |Третий Ethernet.|
 
 
 

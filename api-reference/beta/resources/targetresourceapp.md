@@ -1,20 +1,20 @@
 ---
-title: Тип ресурса Таржетресаурцеапп
-description: Указывает, что объект приложения был добавлен, обновлен или удален администраторами в рамках действия аудита. Является производным от ресурса targetResource.
+title: тип ресурса targetResourceApp
+description: Указывает объект приложения, который был добавлен, обновлен или удален администраторами в рамках аудита. Производный от ресурса targetResource.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: a34e235cb89688b003691b5c50c5012e617c16a3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a961d5136b517fbfd4b6018edf601cb9d0d6daa59feb16b038b02b9669e35fc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985645"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200315"
 ---
-# <a name="targetresourceapp-resource-type"></a>Тип ресурса Таржетресаурцеапп
+# <a name="targetresourceapp-resource-type"></a>тип ресурса targetResourceApp
 
-Пространство имен: Microsoft. Graph указывает объект приложения, который был добавлен, обновлен или удален администраторами в рамках действия аудита. Является производным от ресурса [targetResource](targetresource.md) .
+Пространство имен: microsoft.graph указывает объект приложения, который был добавлен, обновлен или удален администраторами в рамках аудита. Производный от [ресурса targetResource.](targetresource.md)
 
 
 

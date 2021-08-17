@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса Персонцертификатион
-description: Тип ресурса Персонцертификатион
+title: тип ресурса personCertification
+description: тип ресурса personCertification
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: b6f7349d5c279b00e504ca93945c5a2f3b8fbc73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 893856a5a8322cc82023572ebc2539a5ee91a112c5cc5455c9fd5ebea6bd2e89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206041"
 ---
-# <a name="personcertification-resource-type"></a>Тип ресурса Персонцертификатион
+# <a name="personcertification-resource-type"></a>тип ресурса personCertification
 
 Пространство имен: microsoft.graph
 
-Представляет сертификат или обозначение, сопоставленные с [профилем](../resources/profile.md)пользователя.
+Представляет сертификацию или обозначение, связанное с профилем [пользователя.](../resources/profile.md)
 
-Наследуется от [итемфацет](../resources/itemfacet.md).
+Наследует от [itemFacet](../resources/itemfacet.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список сертификатов](../api/profile-list-certifications.md)|Коллекция [персонцертификатион](../resources/personcertification.md)|Получите ресурсы Персонцертификатион в свойстве навигации сертификации.|
-|[Создание Персонцертификатион](../api/profile-post-certifications.md)|[персонцертификатион](../resources/personcertification.md)|Создание нового объекта Персонцертификатион.|
-|[Получение Персонцертификатион](../api/personCertification-get.md)|[персонцертификатион](../resources/personcertification.md)|Чтение свойств и связей объекта [персонцертификатион](../resources/personcertification.md) .|
-|[Обновление Персонцертификатион](../api/personCertification-update.md)|[персонцертификатион](../resources/personcertification.md)|Обновление свойств объекта [персонцертификатион](../resources/personcertification.md) .|
-|[Удаление Персонцертификатион](../api/personCertification-delete.md)|Нет|Удаляет объект [персонцертификатион](../resources/personcertification.md) .|
+|[Сертификации списков](../api/profile-list-certifications.md)|[коллекция personCertification](../resources/personcertification.md)|Получите ресурсы personCertification из свойства навигации сертификации.|
+|[Создание personCertification](../api/profile-post-certifications.md)|[personCertification](../resources/personcertification.md)|Создайте новый объект personCertification.|
+|[Get personCertification](../api/personCertification-get.md)|[personCertification](../resources/personcertification.md)|Ознакомьтесь с свойствами и отношениями [объекта personCertification.](../resources/personcertification.md)|
+|[Обновление personCertification](../api/personCertification-update.md)|[personCertification](../resources/personcertification.md)|Обновление свойств объекта [personCertification.](../resources/personcertification.md)|
+|[Удаление personCertification](../api/personCertification-delete.md)|Нет|Удаляет объект [personCertification.](../resources/personcertification.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|цертификатионид  |String      |Справочный идентификатор для сертификации. |
-|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|description      |String      |Описание сертификата.                   |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |String      |Справочный идентификатор для сертификации. |
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создав объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|description      |Строка      |Описание сертификации.                   |
 |displayName      |String      |Название сертификата.                         |
-|endDate          |Date        |Дата истечения срока действия сертификата.            |
-|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|иссуеддате       |Дата        |Дата выдачи сертификата.         |
-|иссуингаусорити |String      |Центр сертификации, который предоставил сертификат.          |
-|иссуингкомпани   |String      |Компания, которой назначена эта сертификация.          |
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|startDate        |Date        |Дата, когда сертификация стала действительна.       |
+|endDate          |Date        |Дата истечения срока сертификации.            |
+|id|Строка|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|issuedDate       |Дата        |Дата выдачи сертификата.         |
+|issuingAuthority |Строка      |Орган, который предоставил сертификацию.          |
+|issuingCompany   |Строка      |Компания, которая предоставила сертификацию.          |
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которые в последний раз изменили объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|startDate        |Date        |Дата, когда сертификация стала допустимой.       |
 |thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
-|webUrl           |String      |URL-адрес, ссылающийся на сертификат.                  |
+|webUrl           |String      |URL-адрес, ссылающийся на сертификацию.                  |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

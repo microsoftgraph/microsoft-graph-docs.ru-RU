@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Макосфиреваллаппликатион
+title: тип ресурса macOSFirewallApplication
 description: Представляет приложение в списке приложений брандмауэра macOS
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd6aed2dcb1f6a593109f3d7c3f6ab012caf3937
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cb798f6d55fc06ba9c86386da5fd29582d3ecba8f34f2ce263ff3e04f316d836
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54198264"
 ---
-# <a name="macosfirewallapplication-resource-type"></a>Тип ресурса Макосфиреваллаппликатион
+# <a name="macosfirewallapplication-resource-type"></a>тип ресурса macOSFirewallApplication
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49279894"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|bundleId|String|Свойства bundleid приложения.|
-|алловсинкомингконнектионс|Boolean|Разрешены ли входящие подключения.|
+|bundleId|String|BundleId приложения.|
+|allowsIncomingConnections|Логический|Разрешены ли входящие подключения.|
 
 ## <a name="relationships"></a>Связи
 Нет

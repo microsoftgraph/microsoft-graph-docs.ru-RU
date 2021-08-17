@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Мобилесреатпартнертенантстате
+title: тип enum mobileThreatPartnerTenantState
 description: Состояние партнера этого клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f59b6f589ba1f654a31ac7d3f0eb6a0f50f7334d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 47604faa0cb5417c527c3fad559d7d9e3244249f1e0d74055f11c869abf014e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145161"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a>тип перечисления Мобилесреатпартнертенантстате
+# <a name="mobilethreatpartnertenantstate-enum-type"></a>тип enum mobileThreatPartnerTenantState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,10 +25,10 @@ ms.locfileid: "49272159"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|выходе|нуль|Партнер недоступен.|
-|доступен|1,1|Партнер доступен.|
+|недоступно|0|Партнер недоступен.|
+|доступен|1 |Партнер доступен.|
 |включено|2|Партнер включен.|
-|не отвечает|4|Партнер не отвечает.|
+|unresponsive|3 |Партнер не подавляю.|
 
 
 

@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Иосвебконтентфилтераутофилтер
-description: Представляет тип параметра фильтра веб-содержимого iOS, который включает функцию автоматического фильтра iOS и предоставляет дополнительные возможности управления доступом по URL-адресу. При создании без значений свойств устройство iOS включит автоматический фильтр независимо.
+title: тип ресурса iosWebContentFilterAutoFilter
+description: Представляет тип параметра фильтра веб-контента iOS, который включает функцию автоматического фильтра iOS и позволяет дополнительно управлять доступом к URL-адресу. При построении без значений свойств устройство iOS включит автоматический фильтр независимо.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1c294ae84da91c6c61bb195fb79ea25c33134ac
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9d09b964b02b5bc329fca67662d9a46a69c67740732d068c7bd918e4b37aff3a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49215872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206657"
 ---
-# <a name="ioswebcontentfilterautofilter-resource-type"></a>Тип ресурса Иосвебконтентфилтераутофилтер
+# <a name="ioswebcontentfilterautofilter-resource-type"></a>тип ресурса iosWebContentFilterAutoFilter
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет тип параметра фильтра веб-содержимого iOS, который включает функцию автоматического фильтра iOS и предоставляет дополнительные возможности управления доступом по URL-адресу. При создании без значений свойств устройство iOS включит автоматический фильтр независимо.
+Представляет тип параметра фильтра веб-контента iOS, который включает функцию автоматического фильтра iOS и позволяет дополнительно управлять доступом к URL-адресу. При построении без значений свойств устройство iOS включит автоматический фильтр независимо.
 
 
-Наследуется от [иосвебконтентфилтербасе](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
+Наследует [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедурлс|Коллекция строк|Дополнительные URL-адреса, разрешенные для Access|
-|блоккедурлс|Коллекция строк|Дополнительные URL-адреса, заблокированные для Access|
+|allowedUrls|Коллекция String|Дополнительные URL-адреса, разрешенные для доступа|
+|blockedUrls|Коллекция String|Дополнительные URL-адреса, заблокированные для доступа|
 
 ## <a name="relationships"></a>Связи
 Нет

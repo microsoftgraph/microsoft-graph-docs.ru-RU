@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1c8783615645461d3dc7bafdb403e52c94cf4bebd3f7e8cc5d6bbd3d1aec0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f5f1beb5918833703fbbff48ba991b850bcd1ceb
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195613"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266907"
 ---
 # <a name="serviceannouncementbase-resource-type"></a>тип ресурса serviceAnnouncementBase
 
@@ -21,17 +21,17 @@ ms.locfileid: "54195613"
 Наследует от [объекта](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
-Нет.
+Отсутствуют.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|подробности|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о событии службы. Это свойство не поддерживает фильтры.|
+|details|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о событии службы. Это свойство не поддерживает фильтры.|
 |endDateTime|DateTimeOffset|Конечное время события службы.|
 |id|String|Id события службы.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время события службы.|
 |startDateTime|DateTimeOffset|Время начала события службы.|
-|title|String|Название события службы.|
+|title|Строка|Название события службы.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

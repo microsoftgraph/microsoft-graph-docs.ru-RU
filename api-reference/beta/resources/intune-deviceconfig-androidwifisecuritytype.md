@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Андроидвифисекурититипе
-description: Wi-Fi типов безопасности для Android.
+title: тип enum androidWiFiSecurityType
+description: Wi-Fi типы безопасности для Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 78f910f7b93d33fcd86ad658e38ad2fa923c7835
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f37f29c12e7b37ebdfe932ff1968f795ae5dd8976e404d49b08576fe5ef990ba
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54142073"
 ---
-# <a name="androidwifisecuritytype-enum-type"></a>тип перечисления Андроидвифисекурититипе
+# <a name="androidwifisecuritytype-enum-type"></a>тип enum androidWiFiSecurityType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Wi-Fi типов безопасности для Android.
+Wi-Fi типы безопасности для Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|окно|нуль|Открыть (без проверки подлинности).|
-|впаентерприсе|1,1|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
-|wpa2Enterprise|2|WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
+|open|0|Open (Без проверки подлинности).|
+|wpaEnterprise|1 |WPA-Enterprise. Для настройки корпоративных параметров необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
+|wpa2Enterprise|2|WPA2-Enterprise. Для настройки корпоративных параметров необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
 
 
 

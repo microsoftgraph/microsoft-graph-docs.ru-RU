@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Иосваллпапердисплайлокатион
-description: Тип перечисления для отображения спецификатора расположения для фонового рисунка.
+title: тип enum iosWallpaperDisplayLocation
+description: Тип enum для уточнения расположения отображения обоев.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a55bbe9f8a9211933ee45202d2ba2e88a8ca9cb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: aa48817d457dc82079a9091d4b4510c7b6bc233c88ef43f1b3c107da6d8602f7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185889"
 ---
-# <a name="ioswallpaperdisplaylocation-enum-type"></a>тип перечисления Иосваллпапердисплайлокатион
+# <a name="ioswallpaperdisplaylocation-enum-type"></a>тип enum iosWallpaperDisplayLocation
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип перечисления для отображения спецификатора расположения для фонового рисунка.
+Тип enum для уточнения расположения отображения обоев.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Для отображения фонового рисунка не указано расположение.|
-|Событий|1,1|Настроенное изображение рабочего стола отображается на экране блокировки.|
-|хомескрин|2|Настроенное изображение для фонового рисунка отображается на экране "Домашняя страница" (список значков).|
-|локкандхомескринс|4|Настроенное изображение рабочего стола отображается на экране блокировки и на начальном экране.|
+|notConfigured|0|Нет расположения, указанного для отображения обоев.|
+|lockScreen|1 |На экране Блокировки отображается настроенное изображение обоев.|
+|homeScreen|2|Настроенное изображение обоев отображается на экране Home (список значков).|
+|lockAndHomeScreens|3 |Настроенное изображение обоев отображается на экране блокировки и домашнем экране.|
 
 
 

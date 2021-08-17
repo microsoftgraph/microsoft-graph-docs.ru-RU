@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Кредентиалсинглесигнонекстенсион
-description: Представляет один профиль расширения Sign-On для типа учетных данных.
+title: тип ресурса credentialSingleSignOnExtension
+description: Представляет профиль единого Sign-On типа учетных данных.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 323cfc745b7990493c0d8681a75ad7a19e27ca17
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5a90f6c3027a25c58204adf3ab5b5dbb32e4be6464896f28834f0eb9001e1d51
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203136"
 ---
-# <a name="credentialsinglesignonextension-resource-type"></a>Тип ресурса Кредентиалсинглесигнонекстенсион
+# <a name="credentialsinglesignonextension-resource-type"></a>тип ресурса credentialSingleSignOnExtension
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет один профиль расширения Sign-On для типа учетных данных.
+Представляет профиль единого Sign-On типа учетных данных.
 
 
-Наследуется от [синглесигнонекстенсион](../resources/intune-deviceconfig-singlesignonextension.md)
+Наследует [от singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|екстенсионидентифиер|String|Получает или задает идентификатор пакета расширения приложения, выполняющего единый вход для указанных URL-адресов.|
-|теамидентифиер|String|Получает или задает идентификатор группы расширения приложения, выполняющего единый вход для указанных URL-адресов.|
-|домена|Коллекция строк|Получает или задает список имен узлов или доменов, для которых расширение приложения выполняет единый вход.|
-|область|String|Получает или задает имя области для этого профиля, заданное с учетом регистра.|
-|построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
+|extensionIdentifier|Строка|Получает или задает пакетный ID расширения приложения, который выполняет SSO для указанных URL-адресов.|
+|teamIdentifier|Строка|Получает или задает командный ID расширения приложения, которое выполняет SSO для указанных URL-адресов.|
+|домены|Коллекция String|Получает или задает список хостов или доменных имен, для которых расширение приложения выполняет SSO.|
+|realm|String|Получает или задает имя области, чувствительной к делу, для этого профиля.|
+|конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет

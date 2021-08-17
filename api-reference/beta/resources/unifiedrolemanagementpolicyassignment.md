@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0b51d9c088a9d6da4e1a3a671dd578e07ed22691
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1d35d2937e0636803a82d5b47bc2db165b677baf04936de46d11bc4ff87b00f9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682623"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145133"
 ---
 # <a name="unifiedrolemanagementpolicyassignment-resource-type"></a>тип ресурса unifiedRoleManagementPolicyAssignment
 
@@ -25,11 +25,11 @@ ms.locfileid: "52682623"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для назначения политики.|
+|id|Строка|Уникальный идентификатор для назначения политики.|
 |policyId|String|ID политики.|
-|roleDefinitionId|String|ID определения роли, в котором применяется политика. Если не указано, политика применяется ко всем ролям.|
-|scopeId|String|ID области, в которой назначена политика. Например, "/", groupId и т. д.|
-|scopeType|String|Тип области, в которой назначена политика. Один из Directory, DirectoryRole, Group.|
+|roleDefinitionId|Строка|ID определения роли, в котором применяется политика. Если не указано, политика применяется ко всем ролям.|
+|scopeId|Строка|ID области, в которой назначена политика. Например, "/", groupId и т. д.|
+|scopeType|Строка|Тип области, в которой назначена политика. Один из Directory, DirectoryRole, Group.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

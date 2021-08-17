@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Кустомсубжекталтернативенаме
-description: Определение альтернативного имени настраиваемой темы
+title: тип ресурса customSubjectAlternativeName
+description: Определение настраиваемого альтернативного имени субъекта
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 461689c439d31a6c34a4e91ff758eba2c8d98b61
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 798c02446e7a3efbd5750fa914c4d14442114ef14b6713d25c0ee1559bbb30fa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150473"
 ---
-# <a name="customsubjectalternativename-resource-type"></a>Тип ресурса Кустомсубжекталтернативенаме
+# <a name="customsubjectalternativename-resource-type"></a>тип ресурса customSubjectAlternativeName
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определение альтернативного имени настраиваемой темы
+Определение настраиваемого альтернативного имени субъекта
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|сантипе|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Настраиваемый тип SAN. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
-|name|String|Настраиваемое имя сети хранения данных|
+|sanType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Настраиваемый тип SAN. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
+|name|String|Пользовательское имя SAN|
 
 ## <a name="relationships"></a>Связи
 Нет
