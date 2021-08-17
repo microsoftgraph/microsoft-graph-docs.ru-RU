@@ -1,22 +1,20 @@
 ---
-title: тип перечисления Виндовсаутопилотенроллменттипе
+title: тип enum windowsAutopilotEnrollmentType
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a63890ac287f4ca195f5696b0922b52e0f833cec
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4e2c5eac9235da32cfef718985bb67cd8f967627
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266055"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58250908"
 ---
-# <a name="windowsautopilotenrollmenttype-enum-type"></a>тип перечисления Виндовсаутопилотенроллменттипе
+# <a name="windowsautopilotenrollmenttype-enum-type"></a>тип enum windowsAutopilotEnrollmentType
 
 Пространство имен: microsoft.graph
-
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,15 +23,15 @@ ms.locfileid: "49266055"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Пока не задокументировано.|
-|азуреаджоинедвисаутопилотпрофиле|1,1|Пока не задокументировано.|
-|оффлинедомаинжоинед|2|Пока не задокументировано.|
-|азуреаджоинедусингдевицеаусвисаутопилотпрофиле|4|Пока не задокументировано.|
-|азуреаджоинедусингдевицеаусвисаутаутопилотпрофиле|4 |Пока не задокументировано.|
-|азуреаджоинедвисоффлинеаутопилотпрофиле|5 |Пока не задокументировано.|
-|азуреаджоинедвисвхитеглове|6 |Пока не задокументировано.|
-|оффлинедомаинжоинедвисвхитеглове|7 |Пока не задокументировано.|
-|оффлинедомаинжоинедвисоффлинеаутопилотпрофиле|8 |Пока не задокументировано.|
+|unknown|0|Пока не задокументировано.|
+|azureADJoinedWithAutopilotProfile|1 |Пока не задокументировано.|
+|offlineDomainJoined|2|Пока не задокументировано.|
+|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3 |Пока не задокументировано.|
+|azureADJoinedUsingDeviceAuthWithoutAutopilotProfile|4 |Пока не задокументировано.|
+|azureADJoinedWithOfflineAutopilotProfile|5 |Пока не задокументировано.|
+|azureADJoinedWithWhiteGlove|6 |Пока не задокументировано.|
+|offlineDomainJoinedWithWhiteGlove|7 |Пока не задокументировано.|
+|offlineDomainJoinedWithOfflineAutopilotProfile|8 |Пока не задокументировано.|
 
 
 

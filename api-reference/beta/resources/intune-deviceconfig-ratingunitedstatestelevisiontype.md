@@ -1,38 +1,38 @@
 ---
-title: тип перечисления Ратингунитедстатестелевисионтипе
-description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Соединенных Штатах
+title: тип enum ratingUnitedStatesTelevisionType
+description: Метки оценки телеконтента в США
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2d28d608f93e861690b858a92f196ece025beb2c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b5a29bdfedc8de62581e24c0fdeb1950e83a16a54de3a7b6992a966ad4ab4ad4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49198229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133350"
 ---
-# <a name="ratingunitedstatestelevisiontype-enum-type"></a>тип перечисления Ратингунитедстатестелевисионтипе
+# <a name="ratingunitedstatestelevisiontype-enum-type"></a>тип enum ratingUnitedStatesTelevisionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Соединенных Штатах
+Метки оценки телеконтента в США
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1,1|Не разрешать показ контента|
-|чилдреналл|2|ТВ-Y, все дочерние элементы|
-|childrenAbove7|4|ТВ-Y7, детей от 7 лет и выше|
-|обобщен|4 |Телевидение (TV-G), пригодный для всех лет|
-|паренталгуиданце|5 |TV-PG, родительский совет|
-|childrenAbove14|6 |TV-14, детей от 14 лет и выше|
-|взрослые|7 |Только для передачи телепередач-мА|
+|allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
+|allBlocked|1 |Не разрешайте контент тв-шоу|
+|childrenAll|2|TV-Y, все дети|
+|childrenAbove7|3 |TV-Y7, дети в возрасте 7 лет и старше|
+|общие|4 |TV-G, подходит для всех возрастов|
+|parentalGuidance|5 |TV-PG, родительское руководство|
+|childrenAbove14|6 |TV-14, дети в возрасте 14 лет и старше|
+|взрослые|7 |TV-MA, только для взрослых|
 
 
 

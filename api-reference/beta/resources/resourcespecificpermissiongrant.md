@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f100d5658b2ecdc07daf928594180b0ce6129594
-ms.sourcegitcommit: b5fbb1a715e3479bdd095ef00deb0c932eafc328
+ms.openlocfilehash: 108420e3c575f6a1ede395b64fbef0314fdcface
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53162226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264656"
 ---
 # <a name="resourcespecificpermissiongrant-resource-type"></a>тип ресурса resourceSpecificPermissionGrant
 
@@ -18,7 +18,7 @@ ms.locfileid: "53162226"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-РесурсSpecificPermissionGrant объявляет разрешение, предоставленное конкретному приложению AzureAD для экземпляра ресурса в Microsoft Graph.
+Объявляет разрешения, предоставленные конкретному приложению Azure AD для экземпляра ресурса в Microsoft Graph.
 
 Дополнительные сведения о предоставлении приложениям согласия на доступ к конкретному экземпляру ресурса см. в примере " Согласие на [доступ к ресурсам".](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
@@ -27,7 +27,7 @@ ms.locfileid: "53162226"
 |  Метод                                                                   |  Возвращаемый тип                                                                     | Описание                                                  | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
 |[Список предоставленных разрешений чата](../api/chat-list-permissiongrants.md)   | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, определенных для ресурсов, которые были предоставлены в определенном [чате.](chat.md)  |
-|[Список предоставленных разрешений группы](../api/group-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, определенных для ресурсов, которые были предоставлены в определенной [группе.](group.md) |
+|[Перечисление предоставленных разрешений группы](../api/group-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, определенных для ресурсов, которые были предоставлены в определенной [группе.](group.md) |
 |[Перечисление предоставленных разрешений команды](../api/team-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, определенных для ресурсов, которые были предоставлены в определенной [группе.](team.md) |
 
 ## <a name="properties"></a>Свойства

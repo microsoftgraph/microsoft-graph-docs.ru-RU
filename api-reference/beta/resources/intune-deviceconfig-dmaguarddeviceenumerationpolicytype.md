@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Дмагуарддевицеенумератионполицитипе
-description: Возможные значения параметра Дмагуарддевицеенумератионполици.
+title: dmaGuardDeviceEnumerationPolicyType enum type
+description: Возможные значения DmaGuardDeviceEnumerationPolicy.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d04a83e732f0a97dc33462e80e635e59dd50989
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f6899594f226c7d5515d79464d9c80e7a90a2f84c40196804e2015fb832369f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124761"
 ---
-# <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>тип перечисления Дмагуарддевицеенумератионполицитипе
+# <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>dmaGuardDeviceEnumerationPolicyType enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения параметра Дмагуарддевицеенумератионполици.
+Возможные значения DmaGuardDeviceEnumerationPolicy.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение по умолчанию. Устройства с перераспределением DMA несовместимые драйверы будут перечисляться только после того, как пользователь разблокирует экран.|
-|блоккалл|1,1|Устройства с пересопоставлением DMA несовместимые драйверы никогда не будут иметь разрешения на запуск и выполнение DMA в любое время.|
-|allowAll|2|Все внешние устройства с поддержкой прямого доступа к памяти PCIe будут перечисляться в любое время.|
+|deviceDefault|0|Значение по умолчанию. Устройства с dmapping несовместимыми драйверами будут перенацелены только после того, как пользователь откроет экран.|
+|blockAll|1 |Устройства с dmapping несовместимыми драйверами никогда не будут разрешены к запуску и выполнению DMA в любое время.|
+|allowAll|2|Все внешние устройства PCIe, способные к ДМА, будут в любое время переумещены.|
 
 
 

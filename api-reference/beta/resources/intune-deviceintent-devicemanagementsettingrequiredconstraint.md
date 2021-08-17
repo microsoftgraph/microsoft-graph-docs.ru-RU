@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Девицеманажементсеттингрекуиредконстраинт
-description: Ограничение, которое применяет определенный обязательный параметр, отличный от NULL/undefine/пустая строка/не настроен
+title: тип ресурса deviceManagementSettingRequiredConstraint
+description: Ограничение, которое применяет определенный обязательный параметр, который не является null/undefined/empty string/not configured
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 732e266bcc111c0e07a110a6abc7171798d7d885
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 76311e8cc6dbc9f3d6401d675fc7c6e3eb765e434e474cff03bbb0d9df0f714c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267937"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54127007"
 ---
-# <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингрекуиредконстраинт
+# <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>тип ресурса deviceManagementSettingRequiredConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение, которое применяет определенный обязательный параметр, отличный от NULL/undefine/пустая строка/не настроен
+Ограничение, которое применяет определенный обязательный параметр, который не является null/undefined/empty string/not configured
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|нотконфигуредвалуе|String|Список значений, которые не настроены для параметра|
+|notConfiguredValue|Строка|Список значений, которые не настроены для параметра|
 
 ## <a name="relationships"></a>Связи
 Нет
