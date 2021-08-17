@@ -1,22 +1,22 @@
 ---
-title: Тип enum advancedBitLockerState
+title: расширенный тип enumBitLockerState
 description: Состояние Advanced BitLocker
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8ad93a61e03e923ef1c74121574ee5f4e9a94d36
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 777f2c3b5d530694eb1a5bad6f4b51be445592ad88109661866a1a77bbe20300
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54179174"
 ---
-# <a name="advancedbitlockerstate-enum-type"></a>Тип enum advancedBitLockerState
+# <a name="advancedbitlockerstate-enum-type"></a>расширенный тип enumBitLockerState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,23 +25,23 @@ ms.locfileid: "50153601"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|0|Advanced BitLocker State Success|
-|noUserConsent|1 |Пользователь не предоставил согласие на шифрование|
-|osVolumeUnprotected|2 |Обнаружен незащищаемый том ОС|
+|success|0|Расширенный успех состояния BitLocker|
+|noUserConsent|1 |Пользователь никогда не давал согласия на шифрование|
+|osVolumeUnprotected|2|Обнаружен незащищаемый том ОС|
 |osVolumeTpmRequired|4 |TPM не используется для защиты тома ОС, но требуется политикой|
-|osVolumeTpmOnlyRequired|8 |Защита TPM не используется только для тома ОС, но требуется политикой|
-|osVolumeTpmPinRequired|16 |Защита TPM+PIN-кодов не используется для тома ОС, но требуется политикой|
-|osVolumeTpmStartupKeyRequired|32|TPM+Защита ключа запуска не используется для тома ОС, но требуется политикой|
-|osVolumeTpmPinStartupKeyRequired|64|TPM+ПИН-код и ключ запуска не используются для тома ОС, но требуются политикой|
+|osVolumeTpmOnlyRequired|8 |Защита TPM только не используется для объема ОС, но требуется политикой|
+|osVolumeTpmPinRequired|16 |Защита TPM+PIN не используется для объема ОС, но требуется политикой|
+|osVolumeTpmStartupKeyRequired|32|Защита ключа TPM+Startup, не используемая для объема ОС, но требуется политикой|
+|osVolumeTpmPinStartupKeyRequired|64|Ключ TPM+PIN+Startup, не используемый для объема ОС, но требуется политикой|
 |osVolumeEncryptionMethodMismatch|128|Метод шифрования тома ОС отличается от метода, установленного политикой|
-|recoveryKeyBackupFailed|256|Сбой резервного копирования ключа восстановления|
-|fixedDriveNotEncrypted|512|Фиксированный диск не зашифрован|
-|fixedDriveEncryptionMethodMismatch|1024|Метод шифрования фиксированного диска отличается от метода шифрования, установленного политикой|
-|loggedOnUserNonAdmin|2048|Во время входа пользователь не является администратором. Для этого требуется, чтобы для политики AllowStandardUserEncryption было установлено 1|
+|recoveryKeyBackupFailed|256|Резервное копирование ключа восстановления не удалось|
+|fixedDriveNotEncrypted|512|Фиксированный диск не шифруется|
+|fixedDriveEncryptionMethodMismatch|1024|Метод шифрования фиксированного диска отличается от метода, установленного политикой|
+|loggedOnUserNonAdmin|2048|Вход в систему пользователя не является администратором. Для этого требуется политика AllowStandardUserEncryption, установленная до 1|
 |windowsRecoveryEnvironmentNotConfigured|4096|WinRE не настроен|
-|tpmNotAvailable|8192|TPM не доступен для BitLocker. Это означает, что TPM отсутствует, или переопределение недоступного реестра TPM задано или ОС хоста находится на переносимом диске или на диске с возможностью переноса.|
-|tpmNotReady|16384|TPM не готов для BitLocker|
-|networkError|32768|Сеть недоступна. Это необходимо для резервного копирования ключа восстановления. Это сообщается для устройств с шифрованием диска|
+|tpmNotAvailable|8192|TPM не доступен для BitLocker. Это означает, что TPM отсутствует, или переопределение недоступного реестра TPM задано или осмий хост находится на портативном/римском диске.|
+|tpmNotReady|16384|TPM не готова для BitLocker|
+|networkError|32768|Сеть недоступна. Это необходимо для резервного копирования ключа восстановления. Это сообщается для устройств, способных шифрование диска|
 
 
 

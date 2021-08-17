@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a4f4e96c4b08eed4584d6357a8c903c080b2d16d
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 89cc776f932a4b9c0559c130e8c1bdf583eaca1e
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52750373"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58366640"
 ---
 # <a name="educationassignmentresource-resource-type"></a>тип ресурса educationAssignmentResource
 
@@ -26,16 +26,16 @@ ms.locfileid: "52750373"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Get educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Чтение свойств и связей объекта **educationAssignmentResource.**|
-|[Delete](../api/educationassignmentresource-delete.md) | Нет. |Удаление **объекта educationAssignmentResource.** |
+|[Удаление](../api/educationassignmentresource-delete.md) | Нет |Удаление **объекта educationAssignmentResource.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Указывает, следует ли скопировать этот ресурс для каждого студента для изменения и отправки.|
-|id|String| ID этого ресурса. Только для чтения.|
+|distributeForStudentWork|Логический|Указывает, следует ли скопировать этот ресурс для каждого студента для изменения и отправки. Обязательно|
+|id|Строка| ID этого ресурса. Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект resource, связанный с этим назначением.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 

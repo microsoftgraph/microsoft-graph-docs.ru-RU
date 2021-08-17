@@ -1,44 +1,46 @@
 ---
-title: Тип ресурса Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс
-description: Объект производительности устройства аналитики взаимодействия с пользователем содержит сведения о производительности устройств.
+title: тип ресурса userExperienceAnalyticsAppHealthDevicePerformanceDetails
+description: Объект аналитики производительности устройства пользовательского интерфейса содержит сведения о производительности устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3394523c13cc5e2ffa8530ef0474bf2bcffd5089
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e732dc90d24205ca5d94fad310eca3e5b6f23e31
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208504"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256068"
 ---
-# <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс
+# <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Объект производительности устройства аналитики взаимодействия с пользователем содержит сведения о производительности устройств.
+Объект аналитики производительности устройства пользовательского интерфейса содержит сведения о производительности устройства.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилсес](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md)|Коллекция [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Список свойств и связей объектов [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) .|
-|[Получение Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) .|
-|[Создание Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-create.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Создание нового объекта [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) .|
-|[Удаление Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md).|
-|[Обновление Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-update.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Обновление свойств объекта [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) .|
+|[Список userExperienceAnalyticsAppHealthDevicePerformanceDetailses](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md)|[коллекция userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Список свойств и связей [объектов userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|
+|[Get userExperienceAnalyticsAppHealthDevicePerformanceDetails](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Чтение свойств и связей [объекта userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|
+|[Создание userExperienceAnalyticsAppHealthDevicePerformanceDetails](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-create.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Создание нового [объекта userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|
+|[Удаление userExperienceAnalyticsAppHealthDevicePerformanceDetails](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-delete.md)|Нет|Удаляет [пользователяExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md).|
+|[Обновление userExperienceAnalyticsAppHealthDevicePerformanceDetails](../api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-update.md)|[userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|Обновление свойств объекта [userExperienceAnalyticsAppHealthDevicePerformanceDetails.](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
-|eventDateTime|DateTimeOffset|Время возникновения события.|
-|eventType|String|Тип события.|
-|appDisplayName|String|Понятное имя приложения, для которого произошло событие.|
-|deviceId|String|Идентификатор устройства.|
+|id|String|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
+|eventDateTime|DateTimeOffset|Время события.|
+|eventType|Строка|Тип события.|
+|appDisplayName|String|Удобное имя приложения, для которого произошло событие.|
+|appPublisher|String|Издатель приложения.|
+|appVersion|Строка|Версия приложения.|
+|deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -59,6 +61,8 @@ ms.locfileid: "49208504"
   "eventDateTime": "String (timestamp)",
   "eventType": "String",
   "appDisplayName": "String",
+  "appPublisher": "String",
+  "appVersion": "String",
   "deviceId": "String",
   "deviceDisplayName": "String"
 }

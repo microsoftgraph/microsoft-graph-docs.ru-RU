@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e3f79c9143fa3b65ba204c5bb5b7b7d8ff1806ff
+ms.openlocfilehash: 50b5e34cb755c41c55c877c4a6a42b551a970ed3
 ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58369163"
+ms.locfileid: "58262523"
 ---
 ```javascript
 
@@ -15,13 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const identityProviderBase = {
-  '@odata.type': '#microsoft.graph.socialIdentityProvider',
-  clientSecret: '1111111111111'
+const appManagementPolicy = {
+ '@odata.id':'https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}'
 };
 
-await client.api('/identity/identityProviders/Amazon-OAUTH')
+await client.api('/applications/{id}/appManagementPolicies/$ref')
     .version('beta')
-    .update(identityProviderBase);
+    .post(appManagementPolicy);
 
 ```

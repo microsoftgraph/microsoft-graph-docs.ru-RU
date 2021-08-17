@@ -1,22 +1,20 @@
 ---
-title: Тип ресурса Девицеманажементтраублешутинжеррордетаилс
+title: тип ресурса deviceManagementTroubleshootingErrorDetails
 description: Объект, содержащий подробные сведения об ошибке и ее исправлении.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e28d47e9ab8752c733a32bb96f2685bfd90bd6d3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c67de7db6a74c327e765e13a6440c7ec6bf3a1ce
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49255338"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248160"
 ---
-# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррордетаилс
+# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>тип ресурса deviceManagementTroubleshootingErrorDetails
 
 Пространство имен: microsoft.graph
-
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -26,10 +24,10 @@ ms.locfileid: "49255338"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |контекст|String|Пока не задокументировано.|
-|Failure|String|Пока не задокументировано.|
-|фаилуредетаилс|String|Подробное описание того, что пошло не так.|
-|исправления|String|Подробное описание этой проблемы.|
-|resources|Коллекция [девицеманажементтраублешутинжеррорресаурце](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Ссылки на полезную документацию об этой ошибке.|
+|сбой|String|Пока не задокументировано.|
+|failureDetails|Строка|Подробное описание того, что пошло не так.|
+|исправление|Строка|Подробное описание устранения этой проблемы.|
+|resources|[коллекция deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Ссылки на полезную документацию об этом сбое.|
 
 ## <a name="relationships"></a>Связи
 Нет

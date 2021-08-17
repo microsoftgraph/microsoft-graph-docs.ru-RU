@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365ActivationsUserCounts
+title: тип ресурса office365ActivationsUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: a6b97aa8b74ad51158c151e9d3723ea5d1ef191b
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: de01adee754940bd43be258b4454b7c68c0e4f8254581486d59a34f9a1f06478
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980754"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139146"
 ---
-# <a name="office365activationsusercounts-resource-type"></a>Тип ресурса office365ActivationsUserCounts
+# <a name="office365activationsusercounts-resource-type"></a>тип ресурса office365ActivationsUserCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,11 +20,11 @@ ms.locfileid: "49980754"
 
 | Свойство                 | Тип   | Описание                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate        | Дата   | Последняя дата содержимого.          |
-| productType              | String | Тип продукта, такой как "Microsoft 365 профессиональныйplus" или "Project Client". |
-| assigned                 | Int64  | Количество пользователей, которые были назначены лицензии на продукт. |
-| activated                | Int64  | Количество пользователей, активировавших продукт. |
-| sharedComputerActivation | Int64  | Количество пользователей, которые использовали продукт на общем компьютере. |
+| reportRefreshDate        | Дата   | Последняя дата контента.          |
+| productType              | Строка | Тип продукта, например "Microsoft 365 ProPlus" или "Project клиент". |
+| назначено                 | Int64  | Количество пользователей назначено для лицензии на продукт. |
+| активирована                | Int64  | Количество пользователей, активировавших продукт. |
+| sharedComputerActivation | Int64  | Число пользователей, которые использовали продукт на совместном компьютере. |
 
 ## <a name="json-representation"></a>Представление JSON
 

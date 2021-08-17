@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3469747ec3e4fd210b5dc660b3d9e210f594faa0f2c0423b284d307d2e2dbc5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d8fe3878485b56b284d3e27c496fa34a8f74e8f4
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262426"
 ---
 # <a name="create-detectedapp"></a>Создание объекта detectedApp
 
@@ -25,9 +25,9 @@ ms.locfileid: "54138768"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/detectedApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /deviceManagement/detectedApps
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
-|displayName|String|Имя обнаруженного приложения. Только для чтения|
+|displayName|Строка|Имя обнаруженного приложения. Только для чтения|
 |version|String|Версия обнаруженного приложения. Только для чтения|
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|

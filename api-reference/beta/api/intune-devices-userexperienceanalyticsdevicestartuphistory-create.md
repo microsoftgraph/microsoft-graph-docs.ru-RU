@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ba56bf1f1463b3f079522ee86d3ae33f1a5b82a
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d67d267e0ef1d572562e009c0cb30f4dd5bb81e6
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51154142"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266249"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>Создание userExperienceAnalyticsDeviceStartupHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51154142"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,11 +64,11 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |coreLoginTimeInMs|Int32|Время входа основного устройства для аналитики пользовательского интерфейса в миллисекунд.|
 |responsiveDesktopTimeInMs|Int32|Аналитика пользовательского интерфейса реагирует на время рабочего стола в миллисекунд.|
 |totalLoginTimeInMs|Int32|Общее время входа устройства аналитики пользовательского интерфейса в миллисекунд.|
-|isFirstLogin|Boolean|Устройство аналитики пользовательского интерфейса сначала входит в систему.|
-|isFeatureUpdate|Boolean|Запись загрузки устройства для аналитики пользовательского интерфейса — это обновление функций.|
+|isFirstLogin|Логический|Устройство аналитики пользовательского интерфейса сначала входит в систему.|
+|isFeatureUpdate|Логический|Запись загрузки устройства для аналитики пользовательского интерфейса — это обновление функций.|
 |operatingSystemVersion|String|Версия операционной системы записи операционной системы для аналитики пользовательского интерфейса устройства.|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезапуска ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
-|restartStopCode|Строка|Код остановки перезапуска ОС. Здесь показан код проверки ошибок, который можно использовать для проверки причины синего экрана.|
+|restartStopCode|String|Код остановки перезапуска ОС. Здесь показан код проверки ошибок, который можно использовать для проверки причины синего экрана.|
 |restartFaultBucket|Строка|Ковш перезапуска неисправности ОС. Ведро неисправностей используется для поиска дополнительных сведений о сбое системы.|
 
 

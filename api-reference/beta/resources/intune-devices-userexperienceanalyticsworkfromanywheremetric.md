@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2249fed75b77b55fc42b4768c9ad097738b4e44e
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 507b6766c8da2b2c332553faea8afc0f5d7434adb535619e04c30264e78fa6cf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868887"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122469"
 ---
 # <a name="userexperienceanalyticsworkfromanywheremetric-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereMetric
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,7 +34,7 @@ ms.locfileid: "51868887"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор аналитики пользовательских интерфейсов работает из любой метрики.|
+|id|Строка|Уникальный идентификатор аналитики пользовательских интерфейсов работает из любой метрики.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

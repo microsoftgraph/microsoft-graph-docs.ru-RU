@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7bbd7d35373caaaf9a463955fa3de09025839e38
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 736725bf74dbb946796c5319b4dac4fb2d899812
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51130765"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257848"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>Обновление deviceComplianceScriptRunSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51130765"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,10 +54,10 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Клавиша скрипта соответствия устройству запускать сводную сущность. Это свойство доступно только для чтения.|
-|noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым. Допустимые значения -2147483648 до 2147483647|
-|issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему. Допустимые значения -2147483648 до 2147483647|
-|detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена. Допустимые значения -2147483648 до 2147483647|
-|detectionScriptPendingDeviceCount|Int32|Количество устройств, которые еще не запускают последнюю версию сценария соответствия требованиям. Допустимые значения -2147483648 до 2147483647|
+|noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым. Допустимые значения 2147483648 2147483647|
+|issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему. Допустимые значения 2147483648 2147483647|
+|detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена. Допустимые значения 2147483648 2147483647|
+|detectionScriptPendingDeviceCount|Int32|Количество устройств, которые еще не запускают последнюю версию сценария соответствия требованиям. Допустимые значения 2147483648 2147483647|
 |lastScriptRunDateTime|DateTimeOffset|Время последнего запуска сценария на всех устройствах|
 
 

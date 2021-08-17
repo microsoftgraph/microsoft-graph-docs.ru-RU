@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 954fecc246ebac1d6d8a2ffa144fa7c47b369b64
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 8743eb084c2ab8ffaa8e94e2978e3c293a500a66
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862962"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266445"
 ---
 # <a name="create-windowsphone81appx"></a>Создание windowsPhone81AppX
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51862962"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,8 +54,8 @@ POST /deviceAppManagement/mobileApps
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -76,13 +76,13 @@ POST /deviceAppManagement/mobileApps
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md);|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |identityName|String|Имя удостоверения.|
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|String|Идентификатор продукта phone.|
-|phonePublisherId|String|ID издателя телефонов.|
+|phoneProductIdentifier|Строка|Идентификатор Телефон продукта.|
+|phonePublisherId|String|ID Телефон Publisher.|
 |identityVersion|String|Версия удостоверения.|
 
 
@@ -97,7 +97,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1639
+Content-length: 1662
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppX",
@@ -144,7 +144,8 @@ Content-length: 1639
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -157,7 +158,7 @@ Content-length: 1639
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1811
+Content-Length: 1834
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppX",
@@ -207,7 +208,8 @@ Content-Length: 1811
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",

@@ -1,34 +1,34 @@
 ---
 title: тип ресурса windowsPackageInformation
-description: Содержит свойства для сведений о пакете для бизнес-приложения Windows.
+description: Содержит свойства для сведений о пакете для Windows бизнес-приложения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b2474fe5458c7a8c8fcc54d354f46ec7386952e
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 62e408154f601f98fec33435e8b4728f3d135526
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866309"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253504"
 ---
 # <a name="windowspackageinformation-resource-type"></a>тип ресурса windowsPackageInformation
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для сведений о пакете для бизнес-приложения Windows.
+Содержит свойства для сведений о пакете для Windows бизнес-приложения.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, для которой это приложение может работать. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|String|Имя отображения.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md);|Архитектура Windows, для которой может работать это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|displayName|Строка|Имя отображения.|
 |identityName|String|Имя удостоверения.|
-|identityPublisher|String|Издатель удостоверений.|
+|identityPublisher|Строка|Удостоверение Publisher.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |identityVersion|String|Версия удостоверения.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
@@ -65,7 +65,8 @@ ms.locfileid: "51866309"
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   }
 }
 ```

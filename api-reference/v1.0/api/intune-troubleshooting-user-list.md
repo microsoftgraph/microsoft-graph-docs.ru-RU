@@ -1,35 +1,33 @@
 ---
-title: Удаление androidWorkProfileWiFiConfiguration
-description: Удаляет androidWorkProfileWiFiConfiguration.
+title: Перечисление пользователей
+description: Список свойств и связей объектов user.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77030940f42e1d2f3dde2da6d72965ecfaf5e67b86bad89ed74bfdbc271d40cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 455175da4ae011b34ab77277b81bcfe946a16920
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125657"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263158"
 ---
-# <a name="delete-androidworkprofilewificonfiguration"></a>Удаление androidWorkProfileWiFiConfiguration
+# <a name="list-users"></a>Перечисление пользователей
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md).
+Список свойств и связей объектов [user](../resources/intune-troubleshooting-user.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,9 +35,7 @@ ms.locfileid: "54125657"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /users
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -52,20 +48,31 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [user](../resources/intune-troubleshooting-user.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/v1/users
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 136
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.user",
+      "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+    }
+  ]
+}
 ```
 
 

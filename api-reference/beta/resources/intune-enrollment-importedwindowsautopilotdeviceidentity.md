@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f9b390b2e742418c39015ef44c5a2443b8b977b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 414c8acbd1866175c4150e83aa3a3441ba00d53ecd0a1c6d0935cb520cc10cf6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51141395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213081"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,16 +34,16 @@ ms.locfileid: "51141395"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|groupTag|Строка|Групповой тег устройства автопилота Windows.|
+|id|String|GUID объекта|
+|groupTag|Строка|Тег группы устройства Windows автопилота.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|importId|Строка|Импорт Id устройства автопилота Windows.|
+|importId|String|Импорт Id устройства Windows автопилота.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|assignedUserPrincipalName|Строка|UPN пользователя, на которое будет назначено устройство|
+|assignedUserPrincipalName|String|UPN пользователя, на которое будет назначено устройство|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

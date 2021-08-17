@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c5a1856adb4616d7c79fbfd76f414ef643ba6df
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 05b0e262097581fc0f49d218b97ecbbf5db36de423f547c53d096ad68094ee3b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133189"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>тип ресурса windowsAutopilotDeviceIdentity
 
@@ -38,7 +38,7 @@ ms.locfileid: "52664666"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства Windows автопилота. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей Windows автопилота.|
@@ -50,11 +50,11 @@ ms.locfileid: "52664666"
 |model|String|Имя модели устройства Windows автопилота.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации intune устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows автопилота.|
-|addressableUserName|Строка|Адресное имя пользователя.|
+|addressableUserName|String|Адресное имя пользователя.|
 |userPrincipalName|String|Имя главного пользователя.|
 |resourceName|String|Имя ресурса.|
 |skuNumber|Строка|Номер SKU|
-|systemFamily|Строка|Семейство system|
+|systemFamily|String|Семейство system|
 |azureActiveDirectoryDeviceId|Строка|AAD Device ID - to be deprecated|
 |azureAdDeviceId|Строка|ID устройства AAD|
 |managedDeviceId|Строка|Управляемый ID устройства|

@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e41a59ee25ef3d00b72c279c9e47308cbae6735a
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: b2afb5bd4f88afe85168687e33c6971d5390ed1d76c297189222c16f5dbdfeb6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212845"
 ---
 # <a name="unifiedrolemanagementpolicyexpirationrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyExpirationRule
 
@@ -24,7 +24,7 @@ ms.locfileid: "52680677"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|isExpirationRequired|Boolean|Указывает, требуется ли истечение срока действия для получения права или назначения.|
+|isExpirationRequired|Логический|Указывает, требуется ли истечение срока действия для получения права или назначения.|
 |maximumDuration|Длительность|Максимальная продолжительность, разрешенная для получения права или назначения, которая не является постоянной.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 

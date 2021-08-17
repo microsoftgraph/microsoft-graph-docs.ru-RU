@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd1931354ef212fced101d508bbb4c1bf5a5145d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: e30276e5161600f4e456740e7e9d9838bea0ecb8
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868803"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262244"
 ---
 # <a name="update-userexperienceanalyticsdevicescores"></a>Обновление userExperienceAnalyticsDeviceScores
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51868803"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,14 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnaly
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства аналитики пользовательских интерфейсов.|
+|id|Строка|Уникальный идентификатор устройства аналитики пользовательских интерфейсов.|
 |deviceName|String|Имя устройства аналитики пользовательского интерфейса.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
 |endpointAnalyticsScore|Двойное с плавающей точкой|Оценка устройства аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |appReliabilityScore|Двойное с плавающей точкой|Оценка надежности приложения приложения для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние здоровья устройства аналитики пользовательского интерфейса. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -73,7 +74,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnaly
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceScores/{userExperienceAnalyticsDeviceScoresId}
 Content-type: application/json
-Content-length: 325
+Content-length: 364
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -82,7 +83,8 @@ Content-length: 325
   "manufacturer": "Manufacturer value",
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
-  "appReliabilityScore": 6.333333333333333
+  "appReliabilityScore": 6.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -91,7 +93,7 @@ Content-length: 325
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 413
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceScores",
@@ -101,7 +103,8 @@ Content-Length: 374
   "manufacturer": "Manufacturer value",
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
-  "appReliabilityScore": 6.333333333333333
+  "appReliabilityScore": 6.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 

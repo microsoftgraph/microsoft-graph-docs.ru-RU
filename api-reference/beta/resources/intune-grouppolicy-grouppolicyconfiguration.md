@@ -1,53 +1,53 @@
 ---
-title: Тип ресурса Граупполициконфигуратион
-description: Объект конфигурации групповой политики содержит настроенные значения для одного или нескольких определений групповой политики.
+title: тип ресурса groupPolicyConfiguration
+description: Объект конфигурации групповой политики содержит настроенные значения для одного или более определений групповой политики.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4fce57585c0dee4f73719870da7d07a2d710cd5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 01d62b9c8b777ae4ae2d27e2977e49dd1b5bde487fdf5f3ede45661c3bf20208
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139364"
 ---
-# <a name="grouppolicyconfiguration-resource-type"></a>Тип ресурса Граупполициконфигуратион
+# <a name="grouppolicyconfiguration-resource-type"></a>тип ресурса groupPolicyConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Объект конфигурации групповой политики содержит настроенные значения для одного или нескольких определений групповой политики.
+Объект конфигурации групповой политики содержит настроенные значения для одного или более определений групповой политики.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Граупполициконфигуратионс](../api/intune-grouppolicy-grouppolicyconfiguration-list.md)|Коллекция [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Список свойств и связей объектов [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .|
-|[Получение Граупполициконфигуратион](../api/intune-grouppolicy-grouppolicyconfiguration-get.md)|[граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Чтение свойств и связей объекта [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .|
-|[Создание Граупполициконфигуратион](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Создание нового объекта [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .|
-|[Удаление Граупполициконфигуратион](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|Нет|Удаляет объект [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md).|
-|[Обновление Граупполициконфигуратион](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Обновление свойств объекта [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .|
-|[Действие assign](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|Коллекция [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Пока не задокументировано.|
-|[действие Упдатедефинитионвалуес](../api/intune-grouppolicy-grouppolicyconfiguration-updatedefinitionvalues.md)|Нет|Н/Д|
+|[List groupPolicyConfigurations](../api/intune-grouppolicy-grouppolicyconfiguration-list.md)|[коллекция groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Список свойств и связей объектов [groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
+|[Get groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-get.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Чтение свойств и связей объекта [groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
+|[Создание groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Создайте новый [объект groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
+|[Удаление groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|Нет|Удаляет [группуPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
+|[Update groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Обновление свойств объекта [groupPolicyConfiguration.](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|
+|[Действие assign](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[коллекция groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Пока не задокументировано.|
+|[updateDefinitionValues action](../api/intune-grouppolicy-grouppolicyconfiguration-updatedefinitionvalues.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|String|Предоставленное пользователем имя объекта ресурса.|
-|description|String|Предоставленное пользователем описание объекта ресурса.|
-|roleScopeTagIds|Коллекция строк|Список тегов области для конфигурации.|
+|displayName|String|Пользователь предоставил имя объекта ресурса.|
+|description|String|Пользователь предоставил описание объекта ресурса.|
+|roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|дефинитионвалуес|Коллекция [граупполицидефинитионвалуе](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Список включенных или отключенных значений определений групповой политики для конфигурации.|
-|assignments|Коллекция [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Список назначений групп для конфигурации.|
+|definitionValues|[коллекция groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Список значений определения групповой политики включенной или отключенной для конфигурации.|
+|assignments|[коллекция groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Список групповых назначений для конфигурации.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

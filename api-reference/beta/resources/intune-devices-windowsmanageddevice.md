@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d5d637822616b8d56107e13ffa4e4280a766979
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 4ab4358b66e2ca3dc37a4ea64d45ef3af525e25a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665583"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261161"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>тип ресурса windowsManagedDevice
 
@@ -37,7 +37,7 @@ Windows устройства, управляемые или предварите
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|id|String|Уникальный идентификатор для устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userId|String|Уникальный идентификатор для пользователя, связанного с устройством. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceName|String|Имя устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Подробные сведения для устройства.  Включает такие сведения, как пространство для хранения, производитель, серийный номер и т.д. Это свойство только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -50,17 +50,17 @@ Windows устройства, управляемые или предварите
 |lastSyncDateTime|DateTimeOffset|Дата и время последней успешной синхронизации устройства с Intune. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Тип шасси устройства. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Операционная система устройства. Windows, iOS и т. д. Это свойство только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Платформа устройства. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` , `unknown` `cloudPC` , .|
+|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|Платформа устройства. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` , `unknown` `cloudPC` , .|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Состояние соответствия устройства требованиям. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|Указывает, является ли устройство взломанным или рутованным. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Это свойство только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `eas` `mdm` , , , , , `easMdm` , `intuneClient` , `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp` .|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Это свойство только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `eas` `mdm` , , , , , `easMdm` , `intuneClient` , `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp` .|
 |osVersion|String|Версия операционной системы устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivated|Boolean|Указывает, активировано ли устройство в Exchange ActiveSync. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easDeviceId|String|Идентификатор устройства в Exchange ActiveSync. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Время активации устройства в Exchange ActivationSync. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |aadRegistered|Boolean|Указывает, зарегистрировано ли устройство в Azure Active Directory. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |azureADRegistered|Boolean|Указывает, зарегистрировано ли устройство в Azure Active Directory. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Тип регистрации устройства. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown` `userEnrollment` , , , , , `deviceEnrollmentManager` , , `appleBulkWithUser` , `appleBulkWithoutUser` `windowsAzureADJoin` `windowsBulkUserless` `windowsAutoEnrollment` `windowsBulkAzureDomainJoin` `windowsCoManagement` `windowsAzureADJoinUsingDeviceAuth` `appleUserEnrollment` `appleUserEnrollmentWithServiceAccount` `azureAdJoinUsingAzureVmExtension` `androidEnterpriseDedicatedDevice` `androidEnterpriseFullyManaged` `androidEnterpriseCorporateWorkProfile` .|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Тип регистрации устройства. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown` `userEnrollment` , , , , , `deviceEnrollmentManager` , , `appleBulkWithUser` , `appleBulkWithoutUser` `windowsAzureADJoin` `windowsBulkUserless` `windowsAutoEnrollment` `windowsBulkAzureDomainJoin` `windowsCoManagement` `windowsAzureADJoinUsingDeviceAuth` `appleUserEnrollment` `appleUserEnrollmentWithServiceAccount` `azureAdJoinUsingAzureVmExtension` `androidEnterpriseDedicatedDevice` `androidEnterpriseFullyManaged` `androidEnterpriseCorporateWorkProfile` .|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Указывает, включен или отключен режим Lost. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Код, позволяющий обойти блокировку активации на устройстве. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |emailAddress|String|Электронная почта (ы) для пользователя, связанного с устройством. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -100,15 +100,15 @@ Windows устройства, управляемые или предварите
 |autopilotEnrolled|Логический|Отчеты о регистрации управляемого устройства с помощью автопилотирования. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |requireUserEnrollmentApproval|Логический|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты о сроках действия сертификата управления устройствами. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|iccid|Строка|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|iccid|String|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|Строка|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра устройства. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра устройства. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Количество исправленных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Заметки на устройстве, созданном ИТ-администратором, унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Состояние здоровья клиента диспетчера конфигурации, допустимо только для устройств, управляемых агентом MDM/ConfigMgr, унаследованных от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Сведения о клиенте диспетчера конфигурации, действительные только для устройств, управляемых, управляемых дуэлями или трехуправленных агентом ConfigMgr, унаследованных от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|ethernetMacAddress|Строка|Mac Ethernet. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|ethernetMacAddress|String|Mac Ethernet. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |physicalMemoryInBytes|Int64|Общая память в bytes. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Архитектура процессора. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 |specificationVersion|Строка|Версия спецификации. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -117,6 +117,7 @@ Windows устройства, управляемые или предварите
 |skuNumber|Int32|Номер sku устройства см. также: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Функции управления устройствами, унаследованные [от managedDevice.](../resources/intune-devices-manageddevice.md) Возможные значения: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[коллекция chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md)|Список свойств устройства ChromeOS. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|enrollmentProfileName|Строка|Имя профиля регистрации, назначенного устройству. Значение по умолчанию — это пустая строка, указывающая, что профиль регистрации не был засмеян. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -335,7 +336,8 @@ Windows устройства, управляемые или предварите
       "valueType": "String",
       "updatable": true
     }
-  ]
+  ],
+  "enrollmentProfileName": "String"
 }
 ```
 
