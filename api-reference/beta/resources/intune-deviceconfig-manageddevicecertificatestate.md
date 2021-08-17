@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 02595eddaa897d415dd7fc992207793420e1102d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 3de7ae382512c177ffadd009bfe9a94872189f3d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255588"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>тип ресурса managedDeviceCertificateState
 
@@ -34,8 +34,8 @@ ms.locfileid: "52665016"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
+|id|String|Ключ объекта.|
+|devicePlatform|[devicePlatformType](../resources/intune-deviceconfig-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|Использование ключей. Возможные значения: `keyEncipherment`, `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Единицы периода действия. Возможные значения: `days`, `months`, `years`.|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Состояние выдачи. Возможные значения: `unknown` `challengeIssued` , , `challengeIssueFailed` `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` , `enrollmentSucceeded` `enrollmentNotNeeded` `revoked` `removedFromCollection` `renewVerified` `installFailed` `installed` `deleteFailed` `deleted` `renewalRequested` `requested` .|
@@ -43,7 +43,7 @@ ms.locfileid: "52665016"
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имен субъекта. Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Тема альтернативного формата имен. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзови статус. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|Строка|Имя отображения профиля сертификата|
+|certificateProfileDisplayName|String|Имя отображения профиля сертификата|
 |deviceDisplayName|String|Имя отображения устройства|
 |userDisplayName|String|Отображаемое имя пользователя|
 |certificateExpirationDateTime|DateTimeOffset|Дата истечения срока действия сертификата|
@@ -55,8 +55,8 @@ ms.locfileid: "52665016"
 |certificateKeyLength|Int32|Длина ключа|
 |certificateEnhancedKeyUsage|Строка|Расширенное использование ключа|
 |certificateValidityPeriod|Int32|Срок действия|
-|certificateSubjectNameFormatString|Строка|Строка формата subject name для пользовательских форматов имен субъекта|
-|certificateSubjectAlternativeNameFormatString|Строка|Строка альтернативного формата имен для настраиваемого формата|
+|certificateSubjectNameFormatString|String|Строка формата subject name для пользовательских форматов имен субъекта|
+|certificateSubjectAlternativeNameFormatString|String|Строка альтернативного формата имен для настраиваемого формата|
 |certificateIssuanceDateTime|DateTimeOffset|Дата выпуска|
 |certificateErrorCode|Int32|Код ошибки|
 

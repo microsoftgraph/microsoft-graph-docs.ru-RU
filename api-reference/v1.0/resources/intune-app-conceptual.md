@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 34a7b756ba02773b63410d03325cd420035303305493e1e40fae832bd77ac5e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d9c33c540aa764566fc90fab1fa4ca4e2c6d9eb
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184811"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262153"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Управление приложениями с помощью Microsoft Intune
 
@@ -72,13 +72,6 @@ ms.locfileid: "54184811"
 - [Параметры времени установки мобильного приложения](intune-apps-mobileappinstalltimesettings.md)
 - [Состояние публикации мобильного приложения](intune-apps-mobileapppublishingstate.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
-- [Состояние проверки клиента Office](intune-cirrus-officeclientcheckinstatus.md)
-- [Конфигурация клиента Office](intune-cirrus-officeclientconfiguration.md)
-- [Назначение конфигурации клиента Office](intune-cirrus-officeclientconfigurationassignment.md)
-- [Конфигурация Office](intune-cirrus-officeconfiguration.md)
-- [Цель назначения конфигурации клиента Office](intune-cirrus-officeconfigurationassignmenttarget.md)
-- [Цель назначения конфигурации группы клиента Office](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
-- [Сводка проверки пользователя Office](intune-cirrus-officeusercheckinsummary.md)
 - [Тип учетной записи, от имени которой запускается приложение](intune-apps-runasaccounttype.md)
 - [Сводка по состояниям установки для пользователей](intune-books-userinstallstatesummary.md)
 - [Тип лицензирования VPP](intune-apps-vpplicensingtype.md)
@@ -108,6 +101,4 @@ ms.locfileid: "54184811"
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
-- [Windows конфигурации клиентского офиса](intune-cirrus-windowsofficeclientconfiguration.md)
-- [Windows конфигурации безопасности клиента office](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows Universal AppX](intune-apps-windowsuniversalappx.md)

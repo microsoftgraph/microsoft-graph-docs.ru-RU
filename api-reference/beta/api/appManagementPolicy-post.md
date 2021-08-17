@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 362e85ddd5ceb9727aabf398509a852282c3ef4a
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 9553accf83925e1ab33c36f353a7ca74da6ad623
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660472"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262411"
 ---
 # <a name="create-appmanagementpolicy"></a>Создание appManagementPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "53660472"
 | :------------------------------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                             |
-| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,6 +63,8 @@ POST /policies/appManagementPolicies
 - Блокирует создание новых паролей для приложений и директоров служб после 2019-10-19 в 10:37 по времени UTC.
 - Ограничивает секреты паролей для приложений и главных служб, созданных после 2019-10-19 в 10:37 по времени UTC, менее чем за 20 дней.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_appManagementPolicy"
@@ -92,6 +94,24 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-appmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-appmanagementpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

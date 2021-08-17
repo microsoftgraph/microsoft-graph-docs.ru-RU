@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Кустомупдатетимевиндов
+title: тип ресурса customUpdateTimeWindow
 description: Настраиваемое окно времени обновления
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f46490aff53eea8e8e6436b85d2f11fd0ac086f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7e436738cd7a8bf8d022307a85f597eb63467622f205d0bbdbee2c5de5c79ad4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122658"
 ---
-# <a name="customupdatetimewindow-resource-type"></a>Тип ресурса Кустомупдатетимевиндов
+# <a name="customupdatetimewindow-resource-type"></a>тип ресурса customUpdateTimeWindow
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,10 +25,10 @@ ms.locfileid: "49256715"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|стартдай|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|День начала периода времени. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|енддай|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|День окончания периода времени. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|startTime|TimeOfDay|Время начала периода времени|
-|endTime|TimeOfDay|Время окончания периода времени|
+|startDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Начало дня окне времени. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|endDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Конец дня окне времени. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|startTime|TimeOfDay|Время начала окне времени|
+|endTime|TimeOfDay|Время окончания окне времени|
 
 ## <a name="relationships"></a>Связи
 Нет

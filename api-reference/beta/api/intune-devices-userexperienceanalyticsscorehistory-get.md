@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e3ea0725357697d930304cdc4f1867660acc299
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 805c29955905cd1ee29ddb36d86ed0e245fb320b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265251"
 ---
 # <a name="get-userexperienceanalyticsscorehistory"></a>Get userExperienceAnalyticsScoreHistory
 
@@ -27,9 +27,9 @@ ms.locfileid: "52666298"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyti
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSco
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 375
+Content-Length: 516
 
 {
   "value": {
@@ -80,6 +80,10 @@ Content-Length: 375
     "coreBootScore": 13,
     "coreSigninScore": 15,
     "recommendedSoftwareScore": 8,
+    "appHealthOverallScore": 5,
+    "startupTotalDevices": 3,
+    "recommendedSoftwareTotalDevices": 15,
+    "appHealthTotalDevices": 5,
     "restartScore": 12
   }
 }

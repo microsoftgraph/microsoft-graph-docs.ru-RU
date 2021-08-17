@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cec89856c7900a1d544f45f581466a79c3cd682
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 1444868cb63d0b48d2ed1f92b6cbfdf10ec02c6e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134139"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263235"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Создание объекта deviceManagementTroubleshootingEvent
 
 Пространство имен: microsoft.graph
-
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +25,8 @@ ms.locfileid: "51134139"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +41,7 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +51,12 @@ POST /deviceManagement/troubleshootingEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |correlationId|String|Идентификатор, используемый для трассировки сбоя в службе.|
 |устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении.|
 |eventName|Строка|Имя события, соответствующее событию устранения неполадок. Это необязательный поле|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок|
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок|
 
 
 
@@ -70,7 +68,7 @@ POST /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 852
 

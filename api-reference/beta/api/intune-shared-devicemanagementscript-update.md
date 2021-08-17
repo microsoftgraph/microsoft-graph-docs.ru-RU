@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f68184a74714ee8ce74af3f25019123fe69d0891
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: c2d41cb3b152aecaf59564267d89c51b281a2a5a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52662937"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256780"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -47,7 +47,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,8 +57,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценария управления устройствами.|
-|displayName|Строка|Имя сценария управления устройствами.|
+|id|String|Уникальный идентификатор для сценария управления устройствами.|
+|displayName|String|Имя сценария управления устройствами.|
 |description|Строка|Необязательное описание сценария управления устройствами.|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
@@ -66,7 +66,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
 |runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
 
 
@@ -110,6 +110,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

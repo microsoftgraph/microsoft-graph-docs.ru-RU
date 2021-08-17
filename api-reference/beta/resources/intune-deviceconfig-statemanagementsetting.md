@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Статеманажементсеттинг
+title: тип enum stateManagementSetting
 description: Параметр управления состоянием.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ad203cc13f4f0efa4334fae334bb4412bb01644
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 27ef432990bb453fdb421a99dd69339cb9f32d2ad18a801ee94c66c4f92951ea
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54127070"
 ---
-# <a name="statemanagementsetting-enum-type"></a>тип перечисления Статеманажементсеттинг
+# <a name="statemanagementsetting-enum-type"></a>тип enum stateManagementSetting
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,9 +25,9 @@ ms.locfileid: "49276534"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен.|
-|заблокированных|1,1|Заблокированных.|
-|разрешенных|2|Разрешенных.|
+|notConfigured|0|Не настроен.|
+|заблокировано|1 |Заблокировано.|
+|разрешено|2|Разрешено.|
 
 
 

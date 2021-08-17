@@ -1,22 +1,22 @@
 ---
 title: тип ресурса mobileAppTroubleshootingEvent
-description: Описывает ресурс mobileAppTroubleshootingEvent API Microsoft Graph для Intune, который поддерживает несколько процессов.
+description: Описывает ресурс mobileAppTroubleshootingEvent API microsoft Graph intune, который поддерживает несколько процессов.
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 387e21597c806e7aedf814128f809305999b19a6
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 3614a0562c6c57b43f12396bb1661df04678ead2
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864958"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266921"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>тип ресурса mobileAppTroubleshootingEvent
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,13 +34,13 @@ ms.locfileid: "51864958"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID для объекта.|
+|id|Строка|UUID для объекта.|
 |**Устранение неполадок**|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строк и пар значений строк, которые предоставляют дополнительные сведения о событии устранения неполадок, унаследованных от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md)|Набор пар строк и пар значений строк, которые предоставляют дополнительные сведения о событии устранения неполадок, унаследованных от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |applicationId|String|Идентификатор приложения Intune.|
 |correlationId|String|ID, используемый для отслеживания сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательна|
+|eventName|Строка|Имя события, соответствующее событию устранения неполадок. При необходимости|
 |история|[коллекция mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент истории устранения неполадок для мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|

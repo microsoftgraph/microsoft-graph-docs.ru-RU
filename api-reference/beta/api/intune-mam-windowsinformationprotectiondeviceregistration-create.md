@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a752cb3262d4ca8899660e0de50b637315680ab
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c6ff3461af66448223f2f2ec28ff158d9504ddd111a5a7a5dcab8d8001986e31
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158887"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54131663"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Создание windowsInformationProtectionDeviceRegistration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51158887"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userId|String|UserId, связанный с этой записью регистрации устройства.|
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации устройства.|
 |deviceName|String|Имя устройства.|
-|deviceType|String|Тип устройства, например, windows laptop VS Windows phone.|
-|deviceMacAddress|Строка|Адрес Mac устройства.|
+|deviceType|String|Тип устройства, например, Windows ноутбук vs Windows телефон.|
+|deviceMacAddress|String|Адрес Mac устройства.|
 |lastCheckInDateTime|DateTimeOffset|Время последней проверки устройства.|
 
 

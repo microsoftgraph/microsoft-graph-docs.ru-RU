@@ -1,35 +1,33 @@
 ---
-title: Тип ресурса Мобилеапптраублешутингдевицечеккинхистори
-description: Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+title: тип ресурса mobileAppTroubleshootingDeviceCheckinHistory
+description: Элемент history, содержащийся в событии устранения неполадок мобильных приложений.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89794800d46f91221d6232f5219e57e5eb7db2c5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 287ecdb7fc3957eaa312dd8c3e5a4b77ac3e69d0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287573"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258028"
 ---
-# <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингдевицечеккинхистори
+# <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>тип ресурса mobileAppTroubleshootingDeviceCheckinHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+Элемент history, содержащийся в событии устранения неполадок мобильных приложений.
 
 
-Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
+Наследует [от mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|occurrenceDateTime|DateTimeOffset|Время, когда произошел элемент истории. Унаследованный от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Унаследованный от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 
 ## <a name="relationships"></a>Связи
 Нет

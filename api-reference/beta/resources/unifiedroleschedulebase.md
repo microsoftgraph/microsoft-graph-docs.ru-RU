@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ac0738d7ebc8ddc9a507b0911a3abc2016d78d33
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 86338096720a54322a418a98a88c8b4edc26297ae20583064a2a2aaf434e976d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122112"
 ---
 # <a name="unifiedroleschedulebase-resource-type"></a>тип ресурса unifiedRoleScheduleBase
 
@@ -22,14 +22,14 @@ ms.locfileid: "52682221"
 
 | Свойство         | Тип           | Описание               |
 | :--------------- | :------------- | :------------------------ |
-| appScopeId       | String         | Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
+| appScopeId       | Строка         | Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
 | createdDateTime  | DateTimeOffset | Время создания расписания. |
-| createdUsing     | String         | ID ролиAssignmentScheduleRequest, создав этот график. |
+| createdUsing     | Строка         | ID ролиAssignmentScheduleRequest, создав этот график. |
 | directoryScopeId | String         | Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
 | id               | String         | Уникальный идентификатор для unifiedRoleAssignmentSchedule. Key, not nullable, Read-only. |
 | modifiedDateTime | DateTimeOffset | При последнем обновлении расписания. |
-| principalId      | String         | Объект объекта, которому предоставляется назначение. |
-| roleDefinitionId | String         | ID унифицированногоRoleDefinition для назначения. Только для чтения. |
+| principalId      | Строка         | Объект объекта, которому предоставляется назначение. |
+| roleDefinitionId | Строка         | ID унифицированногоRoleDefinition для назначения. Только для чтения. |
 | status           | String         | Состояние `roleAssignmentSchedule` для . Он может включать сообщения, связанные с `Provisioned` состоянием, как , и `Revoked` `Pending Provisioning` `Pending Approval` . |
 
 ## <a name="relationships"></a>Связи

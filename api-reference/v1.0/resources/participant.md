@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0e4da220f260ff6f130ac3f632ea2496d9bb24b7e5b12530d16afed2b42e94ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3bada1be911bda02e49229a20793289b61934f74
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152343"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367144"
 ---
 # <a name="participant-resource-type"></a>тип ресурса участника
 
@@ -23,7 +23,7 @@ ms.locfileid: "54152343"
 | Метод                                                 | Возвращаемый тип                                                 | Описание                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
 | [Участник списка](../api/participant-get.md)          | [participant](participant.md)                               | Извлечение списка **объектов-участников** вызова. |
-| [Получение участника](../api/participant-get.md)           | [participant](participant.md)                               | Чтение свойств **объекта-участника.** |
+| [Получение участника](../api/participant-get.md)           | [участник](participant.md)                               | Чтение свойств **объекта-участника.** |
 | [Удаление участника](../api/participant-delete.md)         | Нет   | Удаление участника вызова.                  |
 | [Приглашение](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Приглашайте участника на вызов.              |
 | [Отключение звука участника](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Отключить участника вызова.                  |
@@ -34,9 +34,10 @@ ms.locfileid: "54152343"
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | ID участника.                                          |
 | info                 | [participantInfo](participantinfo.md)    | Сведения о участнике.                          |
-| isInLobby            | Логическое                                  | `true` если участник находится в вестибюле.                          |
-| isMuted              | Логическое                                  | `true` если участник отключен (клиент или сервер отключен).    |
+| isInLobby            | Логический                                  | `true` если участник находится в вестибюле.                          |
+| isMuted              | Логический                                  | `true` если участник отключен (клиент или сервер отключен).    |
 | mediaStreams         | [коллекция mediaStream](mediastream.md) | Список потоков мультимедиа.                                   |
+| метаданные             | Строка                                   | BLOB данных, предоставляемых участником реестра.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
 ## <a name="relationships"></a>Связи
@@ -59,7 +60,9 @@ ms.locfileid: "54152343"
   "info": {"@odata.type": "#microsoft.graph.participantInfo"},
   "isInLobby": true,
   "isMuted": true,
-  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ]
+  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
+  "metadata": "String",
+  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
 }
 ```
 

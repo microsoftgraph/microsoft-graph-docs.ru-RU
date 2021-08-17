@@ -1,16 +1,16 @@
 ---
 title: Создание mobileAppTroubleshootingEvent
-description: Описывает метод Create mobileAppTroubleshootingEvent API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
+description: Описывает метод Create mobileAppTroubleshootingEvent a Microsoft Graph API для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a42e9446892e247c47a073ce00f09102b773fb7f
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 03dbdd9da4f6306d7cbe790e8ac0a59d630c7be3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867002"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260399"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Создание mobileAppTroubleshootingEvent
 
@@ -31,7 +31,7 @@ ms.locfileid: "51867002"
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -60,11 +60,11 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |:---|:---|:---|
 |id|String|GUID объекта|
 |**Устранение неполадок**|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок.|
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок.|
 |applicationId|String|Идентификатор приложения Intune.|
 |correlationId|String|ID, используемый для отслеживания сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательно.|
+|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Необязательное свойство.|
 |история|[коллекция mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент истории устранения неполадок для мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |

@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5b0d34c005e1d3ea2fa40e85176506d718be9488ddc9f737b24f9d9359406a20
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c0930a48d0586a5b6c8b128e1f25102e20bf773
+ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169405"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "58350991"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -33,29 +33,45 @@ ms.locfileid: "54169405"
 | Свойство              | Тип                                          | Описание                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения перечислены в следующей таблице.                          |
+| allowAttendeeToEnableCamera     | Логический                       | Указывает, могут ли участники включить камеру.                          |
+| allowAttendeeToEnableMic     | Логический                       | Указывает, могут ли участники включить микрофон.                          |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Указывает режим чата собраний. |
+| allowTeamworkReactions | Логический | Указывает, Teams для собрания включены ли Teams реакции. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения.                                                   |
 | chatInfo              | [chatInfo](chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                                                  |
 | creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
 | endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                               |
 | id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
-| isEntryExitAnnounced  | Логическое                                       | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                     |
+| isEntryExitAnnounced  | Логический                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанные в `Accept-Language` заглавной странице HTTP запроса. Только для чтения. |
-| joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
+| joinWebUrl            | Строка                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием.  Это включает организатора и участников.                       |
 | startDateTime         | DateTime                                      | Время начала собрания в UTC.                                                                                             |
 | subject               | String                                        | Тема собрания в Интернете.                                                                                         |
-| videoTeleconferenceId | String                                        | ID видеоконференции. Только для чтения.                                                                                  |
+| videoTeleconferenceId | Строка                                        | ID видеоконференции. Только для чтения.                                                                                  |
 
 ### <a name="onlinemeetingpresenters-values"></a>значения onlineMeetingPresenters
 
 | Значение              | Описание                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | все           | Каждый — это презентер (это параметр по умолчанию).             |
-| organization;       | Каждый в организации организатора — это презентер.          |
+| organization       | Каждый в организации организатора — это презентер.          |
 | roleIsPresenter    | Только участники, роль которых является презентатором, являются участниками. |
 | organizer          | Только организатор — это презентер.                           |
 | unknownFutureValue | Unknow future value.                                          |
+
+> [!NOTE]
+> Если установлено значение **allowedPresenters,** укажите роль собрания каждого участника собрания с помощью свойства `roleIsPresenter` [role meetingParticipantInfo.](../resources/meetingparticipantinfo.md) 
+
+### <a name="meetingchatmode-values"></a>значения meetingChatMode
+
+| Значение              | Описание                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| enabled            | Включен чат собраний.                                               |
+| отключено           | Чат собраний отключен.                                              |
+| ограниченный            | Чат собрания включен, но только на время собрания. |
+| unknownFutureValue | Неизвестное будущее значение.                                                  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -80,7 +96,11 @@ ms.locfileid: "54169405"
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String"
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 

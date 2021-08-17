@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 116dc79a5c7c7f34d6cf2b168d9012c0dbf488b8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ce6fbe5b379966d4a806a6acda4990c09c0f4a66
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51150600"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260990"
 ---
 # <a name="update-devicecompliancescript"></a>Обновление deviceComplianceScript
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51150600"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,17 +53,17 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценария соответствия требованиям к устройству|
+|id|String|Уникальный идентификатор для сценария соответствия требованиям к устройству|
 |publisher|String|Имя издателя сценариев соответствия требованиям устройств|
 |version|String|Версия сценария соответствия требованиям устройства|
-|displayName|Строка|Имя сценария соответствия требованиям устройства|
+|displayName|String|Имя сценария соответствия требованиям устройства|
 |description|Строка|Описание сценария соответствия требованиям устройства|
-|detectionScriptContent|Binary|Все содержимое сценария powershell обнаружения|
+|detectionScriptContent|В двоичном формате|Все содержимое сценария powershell обнаружения|
 |createdDateTime|DateTimeOffset|Время создания сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта|
-|runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
+|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта|
+|runAs32Bit|Логический|Указать, должен ли сценарий PowerShell работать как 32-битный|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для сценария соответствия требованиям к устройству|
 
 

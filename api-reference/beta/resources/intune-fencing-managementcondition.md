@@ -1,50 +1,50 @@
 ---
-title: Тип ресурса Манажементкондитион
-description: Условия управления — это события, которые могут динамически запускаться, например, с географическими ограждениями, временными ограждениями и сетевыми ограждениями.
+title: тип ресурса managementCondition
+description: Условия управления — это события, которые можно запускать динамически, такие как гео-заборы, заборы времени и сетевые заборы.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52cb6a93270ecdbe74c16b6a96e1386f01c3b27e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d048e3f977fd8881e18325ee17dffb15a5c20377
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299067"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58259176"
 ---
-# <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
+# <a name="managementcondition-resource-type"></a>тип ресурса managementCondition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Условия управления — это события, которые могут динамически запускаться, например, с географическими ограждениями, временными ограждениями и сетевыми ограждениями.
+Условия управления — это события, которые можно запускать динамически, такие как гео-заборы, заборы времени и сетевые заборы.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Манажементкондитионс](../api/intune-fencing-managementcondition-list.md)|Коллекция [манажементкондитион](../resources/intune-fencing-managementcondition.md)|Список свойств и связей объектов [манажементкондитион](../resources/intune-fencing-managementcondition.md) .|
-|[Получение Манажементкондитион](../api/intune-fencing-managementcondition-get.md)|[манажементкондитион](../resources/intune-fencing-managementcondition.md)|Чтение свойств и связей объекта [манажементкондитион](../resources/intune-fencing-managementcondition.md) .|
-|[Функция Жетманажементкондитионсфорплатформ](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|Коллекция [манажементкондитион](../resources/intune-fencing-managementcondition.md)|Н/Д|
+|[Управление спискамиКондиции](../api/intune-fencing-managementcondition-list.md)|[коллекция managementCondition](../resources/intune-fencing-managementcondition.md)|Список свойств и связей [объектов managementCondition.](../resources/intune-fencing-managementcondition.md)|
+|[Get managementCondition](../api/intune-fencing-managementcondition-get.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)|Чтение свойств и связей [объекта managementCondition.](../resources/intune-fencing-managementcondition.md)|
+|[функция getManagementConditionsForPlatform](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[коллекция managementCondition](../resources/intune-fencing-managementcondition.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
-|uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления.|
-|displayName|String|Имя условия управления, определенное администратором.|
-|description|String|Описание условия управления, заданное администратором.|
-|createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы.|
+|id|String|Уникальный идентификатор для состояния управления. Созданное в системе значение, назначенное при его создания.|
+|uniqueName|Строка|Уникальное имя для состояния управления. Используется в выражениях условий управления.|
+|displayName|String|Администратор определил имя условия управления.|
+|description|String|Администратор определил описание условия управления.|
+|createdDateTime|DateTimeOffset|Время создания условия управления. Сгенерированная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы.|
-|eTag|String|Тег ETag условия управления. Обновленная сторона службы.|
-|аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления.|
+|eTag|String|ETag состояния управления. Обновленная сторона службы.|
+|applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого условия управления.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления.|
+|managementConditionStatements|[коллекция managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Утверждения условий управления, связанные с состоянием управления.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

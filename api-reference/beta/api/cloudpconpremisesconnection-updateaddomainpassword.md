@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6a7420574c8dc1a4231f9854a10b76b7291b3ad4
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9298b09db0d3016f8bbc117fdf9adfe56b7ac94e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546835"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262976"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Пространство имен: microsoft.graph
@@ -53,7 +53,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|adDomainPassword|String|Пароль, связанный с adDomainUsername|
+|adDomainPassword|Строка|Пароль, связанный с **adDomainUsername**.|
 
 
 

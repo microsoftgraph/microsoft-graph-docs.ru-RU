@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Priority
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 58eaec75761a0062a996f60c9c59c798c8fe0ae570da300821a4bf67780c12c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db7005e9bfddd141a429c2d85320f9e1dd1d3666
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208674"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255172"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Обзор доступа к сведениям о работоспособности и взаимодействии служб в Microsoft Graph
 Вы можете использовать API взаимодействия служб в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт). Фактическое состояние работоспособности и записи соответствуют службам Microsoft 365 и Dynamics 365, которые поддерживаются API-интерфейсом и подписка на которые есть у клиента.

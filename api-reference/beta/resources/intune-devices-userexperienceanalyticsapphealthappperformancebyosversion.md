@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион
-description: Сущность производительности приложения аналитики "взаимодействие с пользователем" содержит сведения о производительности приложения по версии ОС.
+title: тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
+description: Объект производительности приложения для аналитики пользовательского интерфейса содержит сведения о производительности приложения в версии ОС.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72b5af3251592471cd1c4e72f6f745fca0fb36b3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 04c2d807a24b09b91778a6696c1aba75e5dc0bc2
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208565"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263942"
 ---
-# <a name="userexperienceanalyticsapphealthappperformancebyosversion-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион
+# <a name="userexperienceanalyticsapphealthappperformancebyosversion-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность производительности приложения аналитики "взаимодействие с пользователем" содержит сведения о производительности приложения по версии ОС.
+Объект производительности приложения для аналитики пользовательского интерфейса содержит сведения о производительности приложения в версии ОС.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсионс](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md)|Коллекция [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Список свойств и связей объектов [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) .|
-|[Получение Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md)|[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) .|
-|[Создание Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-create.md)|[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Создание нового объекта [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) .|
-|[Удаление Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md).|
-|[Обновление Усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-update.md)|[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Обновление свойств объекта [усерекспериенцеаналитиксапфеалсаппперформанцебйосверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md) .|
+|[Список пользователейExperienceAnalyticsAppHealthAppPerformanceByOSVersions](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md)|[коллекция userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Список свойств и связей [объектов userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|
+|[Get userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md)|[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Чтение свойств и связей [объекта userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|
+|[Создание userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-create.md)|[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Создание нового [объекта userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|
+|[Удаление userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-delete.md)|Нет|Удаляет [пользователяExperienceAnalyticsAppHealthAppPerformanceByOSVersion.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|
+|[Обновление userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-update.md)|[userExperienceAnalyticsAppHealthAppPerformanceByOSVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|Обновление свойств объекта [userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности "версия приложения аналитики взаимодействия с пользователем".|
-|osVersion|String|Версия операционной системы приложения.|
-|осбуилднумбер|String|Номер сборки ОС приложения.|
-|активедевицекаунт|Int32|Количество устройств, в которых приложение было активно. Допустимые значения: от 2147483648 до 2147483647|
+|id|String|Уникальный идентификатор объекта производительности версии версии пользовательского интерфейса для аналитики приложений.|
+|osVersion|String|Версия ос приложения.|
+|osBuildNumber|Строка|Число сборки ос приложения.|
+|activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения 2147483648 2147483647|
 |appName|String|Имя приложения.|
-|appDisplayName|String|Понятное имя приложения.|
-|апппублишер|String|Издатель приложения.|
-|аппусажедуратион|Int32|Общее время использования приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
-|аппкрашкаунт|Int32|Число сбоев для приложения. Допустимые значения: от 2147483648 до 2147483647|
-|меантиметофаилуреинминутес|Int32|Среднее время до сбоя приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
+|appDisplayName|String|Удобное имя приложения.|
+|appPublisher|Строка|Издатель приложения.|
+|appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения 2147483648 2147483647|
+|appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
+|meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения 2147483648 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет
