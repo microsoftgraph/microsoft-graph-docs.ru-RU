@@ -1,22 +1,22 @@
 ---
-title: тип перечисления dataType
+title: тип enum dataType
 description: Типы данных для правил.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ea325aa9b8564998e2724638940664a3b59f9ace
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: db80ab4f9c261c6495f2ac699b5b2da0a311a47451fdb969c9fdd41f39d028e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256682"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165793"
 ---
-# <a name="datatype-enum-type"></a>тип перечисления dataType
+# <a name="datatype-enum-type"></a>тип enum dataType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,21 +25,21 @@ ms.locfileid: "49256682"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Тип данных None.|
-|логический|1,1|Тип данных Boolean.|
-|переменной|2|Тип данных Int64.|
-|double|4|Тип данных Double.|
-|string|4 |Тип данных String.|
+|Нет|0|Нет типа данных.|
+|boolean|1 |Тип данных Boolean.|
+|int64|2|Тип данных Int64.|
+|double|3 |Двойной тип данных.|
+|строка|4 |Тип строки данных.|
 |dateTime|5 |Тип данных DateTime.|
-|version|6 |Тип данных Version.|
-|основе|7 |Тип данных Base64.|
-|язык|8 |Тип данных XML.|
-|булеанаррай|9 |Тип данных логического массива.|
+|version|6 |Тип данных версии.|
+|base64|7 |Тип данных Base64.|
+|xml|8 |Тип данных Xml.|
+|booleanArray|9 |Тип данных массива Boolean.|
 |int64Array|10 |Тип данных массива Int64.|
-|даублеаррай|11 |Тип данных double array.|
-|стрингаррай|12 |Тип данных массива строк.|
-|датетимеаррай|13 |Тип данных массива DateTime.|
-|версионаррай|14 |Тип данных "массив версий".|
+|doubleArray|11 |Тип данных с двойным массивом.|
+|stringArray|12 |Тип данных массива строк.|
+|dateTimeArray|13 |Тип данных массива DateTime.|
+|versionArray|14 |Тип данных массива версий.|
 
 
 

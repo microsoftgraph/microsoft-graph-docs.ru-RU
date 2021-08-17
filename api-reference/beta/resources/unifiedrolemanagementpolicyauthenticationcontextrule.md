@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5e3db8812b58b8276ab2fdd977e110f30a874c9b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d12f3ed100179198d66fe780c9aee6dd93039012edfc105ac58001d24f6e3d77
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155892"
 ---
 # <a name="unifiedrolemanagementpolicyauthenticationcontextrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyAuthenticationContextRule
 
@@ -23,8 +23,8 @@ ms.locfileid: "52680698"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|claimValue|String|Значение утверждения контекста проверки подлинности.|
-|id|String|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|claimValue|Строка|Значение утверждения контекста проверки подлинности.|
+|id|Строка|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |isEnabled|Boolean|Указывает, включен ли параметр.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 

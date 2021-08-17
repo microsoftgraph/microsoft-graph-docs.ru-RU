@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0910406f564f86decf211285ed472f57792267c5
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: addedd9da934696c2cafc16e46ef2e2879b996ba2fcfb5629d72eec8227dd142
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54210724"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Update groupPolicyDefinitionFile
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51158894"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,14 +55,14 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Локализованное удобное имя файла ADMX.|
+|displayName|String|Локализованное удобное имя файла ADMX.|
 |description|Строка|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
 |languageCodes|Коллекция String|Поддерживаемые языковые коды для файла ADMX.|
-|targetPrefix|Строка|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|targetPrefix|String|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |targetNamespace|Строка|Указывает URI, используемую для определения пространства имен в файле ADMX.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|изменение|Строка|Версия изменения, связанная с файлом.|
-|id|Строка|Ключ объекта.|
+|изменение|String|Версия изменения, связанная с файлом.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 

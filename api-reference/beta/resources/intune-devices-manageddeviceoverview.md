@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6ec4b67826e5fab4155abb84f3286e412fbb5c6
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 5131f6a371db46079a7afdcb4c2bc887a6f9d42c2bac13bcaf6d977f0a491560
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52662860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156179"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
@@ -31,7 +31,7 @@ ms.locfileid: "52662860"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сводки.|
+|id|String|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|

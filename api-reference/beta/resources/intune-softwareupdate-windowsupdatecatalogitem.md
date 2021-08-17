@@ -1,26 +1,26 @@
 ---
 title: тип ресурса windowsUpdateCatalogItem
-description: Сущность элемента каталога обновления Windows
+description: Windows объект элемента каталога
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6faffa482a2fc79e653eedf8a70a041f264d7d49
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a5c02bc7678b2487dda1ae61e07fc7d59de2cb829a026c0f8b3a385e3a68e383
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165646"
 ---
 # <a name="windowsupdatecatalogitem-resource-type"></a>тип ресурса windowsUpdateCatalogItem
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность элемента каталога обновления Windows
+Windows объект элемента каталога
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -32,7 +32,7 @@ ms.locfileid: "51863613"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID элемента каталога.|
-|displayName|String|Имя отображения элемента каталога.|
+|displayName|Строка|Имя отображения элемента каталога.|
 |releaseDateTime|DateTimeOffset|Дата выпуска элемента каталога|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата элемента каталога|
 

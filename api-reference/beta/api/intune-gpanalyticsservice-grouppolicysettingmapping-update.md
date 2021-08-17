@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82575a97badaba93f179c841502727e07ebff0af
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: f73f00d1d323a3bc48824aaada4591f6f2cb01d6790c3e0fa850eaf7b8fab35a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51149830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54157019"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Update groupPolicySettingMapping
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51149830"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |parentId|Строка|Родительский Id параметра групповой политики.|
 |childIdList|Коллекция String|Список детских ид параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
@@ -62,18 +62,18 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |settingDisplayName|Строка|Отображение имени этого параметра групповой политики.|
 |settingDisplayValue|Строка|Отображение значения этого параметра групповой политики.|
 |settingDisplayValueType|Строка|Тип отображения значения этого параметра групповой политики.|
-|settingValueDisplayUnits|Строка|Отображаемая единица этого значения групповой политики|
+|settingValueDisplayUnits|String|Отображаемая единица этого значения групповой политики|
 |settingCategory|Строка|Категория, в которая находится параметр групповой политики.|
 |mdmCspName|Строка|CSP назовет эту групповую политику, устанавливая карты.|
 |mdmSettingUri|Строка|MDM CSP URI этой групповой политики, устанавливая карты.|
 |mdmMinimumOSVersion|Int32|Минимальная версия ОС, поддерживаемая этим параметром mdm.|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (безопасность или admx) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|isMdmSupported|Boolean|Указывает, поддерживает ли параметр Intune или нет.|
+|isMdmSupported|Логический|Указывает, поддерживает ли параметр Intune или нет.|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в Mdm или нет. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область настройки. Возможные значения: `unknown`, `device`, `user`.|
 |intuneSettingUriList|Коллекция String|Список URL-адресов intune Setting this group policy setting maps to|
 |intuneSettingDefinitionId|Строка|Id определения параметра Intune|
-|admxSettingDefinitionId|Строка|Admx Group Policy Id|
+|admxSettingDefinitionId|String|Admx Group Policy Id|
 
 
 

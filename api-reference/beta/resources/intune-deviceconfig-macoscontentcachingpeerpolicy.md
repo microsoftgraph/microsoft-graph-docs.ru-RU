@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Макосконтенткачингпирполици
-description: Определяет, с каким содержимым будут кэшироваться другие кэши контента.
+title: тип enum macOSContentCachingPeerPolicy
+description: Определяет, с какой кэшей контента будут вглядывался другие кэши контента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7305c42098782d9e69e734037fb08d3238c7b4a9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b89b7043ca64f106ec1d3bbded041ae15461195c916db0d31cf32dd848d42e40
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54181197"
 ---
-# <a name="macoscontentcachingpeerpolicy-enum-type"></a>тип перечисления Макосконтенткачингпирполици
+# <a name="macoscontentcachingpeerpolicy-enum-type"></a>тип enum macOSContentCachingPeerPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определяет, с каким содержимым будут кэшироваться другие кэши контента.
+Определяет, с какой кэшей контента будут вглядывался другие кэши контента.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|По умолчанию используется значение Peer в локальной сети.|
-|пирсинлокалнетворк|1,1|Кэш контента будет одноранговать только с кэшами в непосредственной локальной сети.|
-|пирсвиссамепублиЦипаддресс|2|Кэш контента будет иметь одноранговый узел с кэшами, которые используют один общий IP-адрес.|
-|пирсинкустомлокалнетворкс|4|Кэши контента будут использовать Контенткачингпирфилтерранжес и Контенткачингпирлистенранжес для определения кэшей, с которыми осуществляется одноранговая связь.|
+|notConfigured|0|По умолчанию для одноранговых пользователей в локальной сети.|
+|peersInLocalNetwork|1 |Кэши контента будут одноранговых только с кэшами в их непосредственной локальной сети.|
+|peersWithSamePublicIpAddress|2|Кэши контента будут одноранговых только с кэшами, которые имеют один и тот же общедоступный IP-адрес.|
+|peersInCustomLocalNetworks|3 |Кэши контента будут использовать contentCachingPeerFilterRanges и contentCachingPeerListenRanges, чтобы определить, с какой кэшой можно совмегать.|
 
 
 

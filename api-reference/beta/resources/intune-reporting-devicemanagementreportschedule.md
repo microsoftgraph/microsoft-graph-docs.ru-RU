@@ -1,51 +1,51 @@
 ---
-title: Тип ресурса Девицеманажементрепортсчедуле
-description: Сущность, представляющая расписание доставки отчетов
+title: тип ресурса deviceManagementReportSchedule
+description: Объект, представляющий расписание доставки отчетов
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 121940d6bad85ed63589ae62254e667d7fd81c0e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7725d7f36ca66e546cb98250091ef7ef08eae9dd6eba2f6ef846eca4ab1ce251
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209786"
 ---
-# <a name="devicemanagementreportschedule-resource-type"></a>Тип ресурса Девицеманажементрепортсчедуле
+# <a name="devicemanagementreportschedule-resource-type"></a>тип ресурса deviceManagementReportSchedule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность, представляющая расписание доставки отчетов
+Объект, представляющий расписание доставки отчетов
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Девицеманажементрепортсчедулес](../api/intune-reporting-devicemanagementreportschedule-list.md)|Коллекция [девицеманажементрепортсчедуле](../resources/intune-reporting-devicemanagementreportschedule.md)|Список свойств и связей объектов [девицеманажементрепортсчедуле](../resources/intune-reporting-devicemanagementreportschedule.md) .|
-|[Получение Девицеманажементрепортсчедуле](../api/intune-reporting-devicemanagementreportschedule-get.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Чтение свойств и связей объекта [девицеманажементрепортсчедуле](../resources/intune-reporting-devicemanagementreportschedule.md) .|
-|[Создание Девицеманажементрепортсчедуле](../api/intune-reporting-devicemanagementreportschedule-create.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Создание нового объекта [девицеманажементрепортсчедуле](../resources/intune-reporting-devicemanagementreportschedule.md) .|
-|[Удаление Девицеманажементрепортсчедуле](../api/intune-reporting-devicemanagementreportschedule-delete.md)|Нет|Удаляет объект [девицеманажементрепортсчедуле](../resources/intune-reporting-devicemanagementreportschedule.md).|
-|[Обновление Девицеманажементрепортсчедуле](../api/intune-reporting-devicemanagementreportschedule-update.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Обновление свойств объекта [девицеманажементрепортсчедуле](../resources/intune-reporting-devicemanagementreportschedule.md) .|
+|[Список deviceManagementReportSchedules](../api/intune-reporting-devicemanagementreportschedule-list.md)|[коллекция deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Список свойств и связей [объектов deviceManagementReportSchedule.](../resources/intune-reporting-devicemanagementreportschedule.md)|
+|[Get deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-get.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Чтение свойств и связей [объекта deviceManagementReportSchedule.](../resources/intune-reporting-devicemanagementreportschedule.md)|
+|[Создание deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-create.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Создание нового [объекта deviceManagementReportSchedule.](../resources/intune-reporting-devicemanagementreportschedule.md)|
+|[Удаление deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-delete.md)|Нет|Удаляет [устройствоManagementReportSchedule.](../resources/intune-reporting-devicemanagementreportschedule.md)|
+|[Обновление deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-update.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Обновление свойств объекта [deviceManagementReportSchedule.](../resources/intune-reporting-devicemanagementreportschedule.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
-|репортсчедуленаме|String|Имя расписания|
-|subject|String|Тема запланированных отчетов, которые доставляются|
-|письма|Коллекция строк|Сообщения электронной почты, на которые доставляются запланированные отчеты|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
-|startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
+|id|String|Уникальный идентификатор для этого объекта|
+|reportScheduleName|Строка|Имя расписания|
+|subject|String|Тема запланированных отчетов, которые будут доставлены|
+|электронные письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Частота доставки отчетов по расписанию. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
+|startDateTime|DateTimeOffset|Время начала доставки запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
-|userId|String|Идентификатор пользователя, создавшего отчет|
-|репортнаме|String|Имя отчета|
-|filter|String|Фильтры, примененные к отчету|
-|select|Коллекция строк|Столбцы, выбранные из отчета|
-|orderBy|Коллекция строк|Упорядочение столбцов в отчете|
+|userId|String|Id пользователя, создавшего отчет|
+|reportName|Строка|Имя отчета|
+|filter|String|Фильтры, применяемые в отчете|
+|select|Коллекция String|Столбцы, выбранные из отчета|
+|orderBy|Коллекция String|Порядок столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 ## <a name="relationships"></a>Связи

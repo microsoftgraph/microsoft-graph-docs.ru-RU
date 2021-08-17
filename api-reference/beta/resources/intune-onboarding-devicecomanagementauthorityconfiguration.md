@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Девицекоманажементаусоритиконфигуратион
-description: Конфигурация страницы центра Co-Management Windows 10
+title: тип ресурса deviceComanagementAuthorityConfiguration
+description: Windows 10 Co-Management конфигурация страницы управления
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c287911666880bf0d6e45dc348c36a33198aee93
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 43ecd556917e65800594fff36ddc2d22a0f92530df45436a6913398c4e823dcf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49337109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147912"
 ---
-# <a name="devicecomanagementauthorityconfiguration-resource-type"></a>Тип ресурса Девицекоманажементаусоритиконфигуратион
+# <a name="devicecomanagementauthorityconfiguration-resource-type"></a>тип ресурса deviceComanagementAuthorityConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Конфигурация страницы центра Co-Management Windows 10
+Windows 10 Co-Management конфигурация страницы управления
 
 
 Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)
@@ -28,31 +28,31 @@ ms.locfileid: "49337109"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Девицекоманажементаусоритиконфигуратионс](../api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md)|Коллекция [девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Список свойств и связей объектов [девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) .|
-|[Получение Девицекоманажементаусоритиконфигуратион](../api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md)|[девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Чтение свойств и связей объекта [девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) .|
-|[Создание Девицекоманажементаусоритиконфигуратион](../api/intune-onboarding-devicecomanagementauthorityconfiguration-create.md)|[девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Создание нового объекта [девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) .|
-|[Удаление Девицекоманажементаусоритиконфигуратион](../api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md)|Нет|Удаляет объект [девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md).|
-|[Обновление Девицекоманажементаусоритиконфигуратион](../api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md)|[девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Обновление свойств объекта [девицекоманажементаусоритиконфигуратион](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md) .|
+|[Список устройствComanagementAuthorityConfigurations](../api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md)|[коллекция deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Список свойств и связей [объектов deviceComanagementAuthorityConfiguration.](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|
+|[Get deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Чтение свойств и связей [объекта deviceComanagementAuthorityConfiguration.](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|
+|[Создание deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-create.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Создание нового [объекта deviceComanagementAuthorityConfiguration.](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|
+|[Удаление deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md)|Нет|Удаляет [устройствоComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md).|
+|[Обновление deviceComanagementAuthorityConfiguration](../api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md)|[deviceComanagementAuthorityConfiguration](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|Обновление свойств объекта [deviceComanagementAuthorityConfiguration.](../resources/intune-onboarding-devicecomanagementauthorityconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|String|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|String|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Коллекция строк|Необязательные теги области применения роли для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|манажеддевицеаусорити|Int32|Конфигурация центра управления Манажеддевицеаусорити|
-|инсталлконфигуратионманажеражент|Boolean|Конфигурация центра управления Инсталлконфигуратионманажеражент|
-|конфигуратионманажераженткоммандлинеаргумент|String|Конфигурация центра управления Конфигуратионманажераженткоммандлинеаргумент|
+|id|String|Уникальный идентификатор учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|Отображающее имя конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|Строка|Описание конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|version|Int32|Версия конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Коллекция String|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|managedDeviceAuthority|Int32|Конфигурация Управления CoManagement ManagedDeviceAuthority|
+|installConfigurationManagerAgent|Логический|Конфигурация Управления CoManagement InstallConfigurationManagerAgent|
+|configurationManagerAgentCommandLineArgument|String|Конфигурация CoManagement Authority ConfigurationManagerAgentCommandLineArgument|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список групповых назначений для профиля конфигурации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
