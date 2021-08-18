@@ -1,18 +1,18 @@
 ---
-title: тип ресурса deviceManagementConfigurationSimpleSettingValueTemplate
-description: Шаблон простого параметра значения
+title: Тип ресурса keyValuePair
+description: Пара "ключ-значение" для хранения пользовательских настроек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53a27960fdbcfcac8ce2995b2240c29e36576601fc67f3e746c54b86a9fcdf60
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4b86c1cbfcee4519d93bdfa704bc5d283343342c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150451"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265601"
 ---
-# <a name="devicemanagementconfigurationsimplesettingvaluetemplate-resource-type"></a>тип ресурса deviceManagementConfigurationSimpleSettingValueTemplate
+# <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,13 @@ ms.locfileid: "54150451"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Шаблон простого параметра значения
+Пара "ключ-значение" для хранения пользовательских настроек
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingValueTemplateId|String|Настройка кода шаблона значений|
+|name|String|Имя для этой пары "ключ-значение"|
+|value|String|Значение для этой пары "ключ-значение"|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -34,13 +35,14 @@ ms.locfileid: "54150451"
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate"
+  "@odata.type": "microsoft.graph.keyValuePair"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingValueTemplate",
-  "settingValueTemplateId": "String"
+  "@odata.type": "#microsoft.graph.keyValuePair",
+  "name": "String",
+  "value": "String"
 }
 ```
 

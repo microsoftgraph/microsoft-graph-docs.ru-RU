@@ -1,35 +1,35 @@
 ---
-title: тип перечисления Еджекиоскмодерестриктионтипе
-description: Укажите, как параметры Microsoft Edge будут ограничены в зависимости от режима киоска.
+title: тип enum edgeKioskModeRestrictionType
+description: Укажите, Microsoft Edge параметры ограничены в режиме киоска.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a5fecf749b7aacef1c9eb0c465889f37e080ddb3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 34c87657e6add9011a1533383a3d549c4e609be6f921435fe7c622a1bc207a9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145413"
 ---
-# <a name="edgekioskmoderestrictiontype-enum-type"></a>тип перечисления Еджекиоскмодерестриктионтипе
+# <a name="edgekioskmoderestrictiontype-enum-type"></a>тип enum edgeKioskModeRestrictionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Укажите, как параметры Microsoft Edge будут ограничены в зависимости от режима киоска.
+Укажите, Microsoft Edge параметры ограничены в режиме киоска.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроено (не ограничено).|
-|дигиталсигнаже|1,1|Интерактивная и цифровая подпись в режиме одного приложения.|
-|нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
-|публикбровсингсинглеапп|4|Общедоступный обзор в режиме одного приложения.|
-|публикбровсингмултиапп|4 |Общедоступный обзор (InPrivate) в режиме нескольких приложений.|
+|notConfigured|0|Не настроено (неограниченно).|
+|digitalSignage|1 |Интерактивные и цифровые вывески в режиме одного приложения.|
+|normalMode|2|Нормальный режим (полная версия Microsoft Edge).|
+|publicBrowsingSingleApp|3 |Общедоступный просмотр в режиме одного приложения.|
+|publicBrowsingMultiApp|4 |Общедоступный просмотр (inPrivate) в режиме multi-app.|
 
 
 

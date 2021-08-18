@@ -1,37 +1,37 @@
 ---
-title: тип перечисления Ратингжерманителевисионтипе
-description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Германии
+title: тип enum ratingGermanyTelevisionType
+description: Метки оценки телеконтента в Германии
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 91d976f12e7b3756d80c24c6915137aabe6588d4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9fb67c3887887bb96f992d5828d9a569a4414778973191f9044db8ea8f7d1925
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54215127"
 ---
-# <a name="ratinggermanytelevisiontype-enum-type"></a>тип перечисления Ратингжерманителевисионтипе
+# <a name="ratinggermanytelevisiontype-enum-type"></a>тип enum ratingGermanyTelevisionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Германии
+Метки оценки телеконтента в Германии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1,1|Не разрешать показ контента|
-|обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
-|agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
-|agesAbove12|4 |AB 12 Жахрен, от 12 лет до 12 лет|
-|agesAbove16|5 |AB 16 Жахрен, от 16 лет до 16 лет|
-|взрослые|6 |Только для Жахрен, только для взрослых|
+|allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
+|allBlocked|1 |Не разрешайте контент тв-шоу|
+|общие|2|Ab 0 Jahren без ограничений по возрасту|
+|agesAbove6|3 |Ab 6 Jahren, 6 лет и старше|
+|agesAbove12|4 |Ab 12 Jahren, 12 лет и старше|
+|agesAbove16|5 |Ab 16 Jahren, 16 лет и старше|
+|взрослые|6 |Ab 18 Jahren, только для взрослых|
 
 
 

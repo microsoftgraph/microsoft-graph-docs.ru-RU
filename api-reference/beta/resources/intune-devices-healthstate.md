@@ -1,33 +1,33 @@
 ---
-title: тип перечисления healthState
-description: Указывает состояние работоспособности приложения управления Windows.
+title: тип enum healthState
+description: Указывает состояние здоровья приложения Windows управления.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b567e2e4df463d42ae3bbc433099cd14ba0c1bc6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 22b7558221eb9fac2bc8a2584c1cacdbbdb8bc258e6824916d86373fb77a838d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209089"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148038"
 ---
-# <a name="healthstate-enum-type"></a>тип перечисления healthState
+# <a name="healthstate-enum-type"></a>тип enum healthState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Указывает состояние работоспособности приложения управления Windows.
+Указывает состояние здоровья приложения Windows управления.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Неизвестное состояние.|
-|рабочее|1,1|Работоспособное состояние.|
-|неисправности|2|Неработоспособное состояние.|
+|unknown|0|Неизвестное состояние.|
+|здоровый|1 |Состояние здоровое.|
+|нездоровый|2|Нездоровое состояние.|
 
 
 

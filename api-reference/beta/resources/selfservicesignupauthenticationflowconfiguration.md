@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 93b99ffc6698da60a995bdd8da8f97855dd04b1c
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f194c626fceab840f2312200cd824cdbbf63c913345410a6274778d3475bb97b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761067"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212922"
 ---
 # <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>selfServiceSignUpAuthenticationFlowConfiguration resource type
 
@@ -22,7 +22,7 @@ ms.locfileid: "50761067"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:-------|:---|:----------|
-|isEnabled|Boolean|Указывает, включена или выключена ли самостоятельная регистрация. Значение по умолчанию — `false`. Это свойство не является ключевым. Обязательный. |
+|isEnabled|Boolean|Указывает, включена или выключена ли самостоятельная регистрация. Значение по умолчанию — `false`. Это свойство не является ключевым. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

@@ -1,35 +1,33 @@
 ---
-title: Удаление mobileAppInstallStatus
-description: Удаляет mobileAppInstallStatus.
+title: Обновление пользователя
+description: Обновление свойств объекта пользователя.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfc9fc7c1b6585b40bd479b2d060de0f1ec4cd71eb80a0e757240bc8e623c64c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 90a66e139dfc3e6b0c2d6f37db8c8bf42bf80eb1
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265213"
 ---
-# <a name="delete-mobileappinstallstatus"></a>Удаление mobileAppInstallStatus
+# <a name="update-user"></a>Обновление пользователя
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).
+Обновление свойств объекта [user](../resources/intune-troubleshooting-user.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,8 +35,7 @@ ms.locfileid: "54146015"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/deviceStatuses/{mobileAppInstallStatusId}
+PATCH /users/{usersId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -48,23 +45,44 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstal
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В теле запроса добавьте представление объекта [user](../resources/intune-troubleshooting-user.md) в формате JSON.
+
+В приведенной ниже таблице указаны свойства, необходимые при создании объекта [user](../resources/intune-troubleshooting-user.md).
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|Строка|Уникальный идентификатор для пользователя.|
+
+
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [user](../resources/intune-troubleshooting-user.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
+PATCH https://graph.microsoft.com/v1/users/{usersId}
+Content-type: application/json
+Content-length: 46
+
+{
+  "@odata.type": "#microsoft.graph.user"
+}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 95
+
+{
+  "@odata.type": "#microsoft.graph.user",
+  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+}
 ```
 
 

@@ -1,77 +1,77 @@
 ---
-title: Тип ресурса Интунебрандингпрофиле
-description: Эта сущность содержит данные, которые используются при настройке внешнего вида уровня клиента для приложений корпоративного портала и веб-портала конечных пользователей.
+title: тип ресурса intuneBrandingProfile
+description: Эта сущность содержит данные, используемые при настройке внешнего вида Корпоративный портал приложений, а также веб-портала конечного пользователя.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c47ba76846586ffdf355f433538288267347bc0b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 15fbf2802b078214c0c78e11576364ee074560645f471122d56bda2cccfc7dc8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49258608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209779"
 ---
-# <a name="intunebrandingprofile-resource-type"></a>Тип ресурса Интунебрандингпрофиле
+# <a name="intunebrandingprofile-resource-type"></a>тип ресурса intuneBrandingProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Эта сущность содержит данные, которые используются при настройке внешнего вида уровня клиента для приложений корпоративного портала и веб-портала конечных пользователей.
+Эта сущность содержит данные, используемые при настройке внешнего вида Корпоративный портал приложений, а также веб-портала конечного пользователя.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Интунебрандингпрофилес](../api/intune-wip-intunebrandingprofile-list.md)|Коллекция [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md)|Список свойств и связей объектов [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
-|[Получение Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Чтение свойств и связей объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
-|[Создание Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Создание нового объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
-|[Удаление Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-delete.md)|Нет|Удаляет объект [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md).|
-|[Обновление Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Обновление свойств объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
+|[Список intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[коллекция intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Список свойств и связей объектов [intuneBrandingProfile.](../resources/intune-wip-intunebrandingprofile.md)|
+|[Получить intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Чтение свойств и связей [объекта intuneBrandingProfile.](../resources/intune-wip-intunebrandingprofile.md)|
+|[Создание intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Создайте новый [объект intuneBrandingProfile.](../resources/intune-wip-intunebrandingprofile.md)|
+|[Удаление intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|Нет|Удаляет [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
+|[Обновление intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Обновление свойств объекта [intuneBrandingProfile.](../resources/intune-wip-intunebrandingprofile.md)|
 |[Действие assign](../api/intune-wip-intunebrandingprofile-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ профиля|
-|имя_профиля|String|Имя профиля|
-|профиледескриптион|String|Описание профиля|
-|исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
-|createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
-|displayName|String|Название компании или организации, которое отображается для конечных пользователей|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и на веб-портале|
-|showLogo|Boolean|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
-|showDisplayNameNextToLogo|Boolean|Логическое значение, указывающее, будет ли отображаться отображаемое имя, предоставленное администратором, рядом с изображением логотипа.|
-|семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть светлый фон позади логотипа|
-|ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
-|contactITName|String|Имя пользователя или организации, ответственных за ИТ-поддержку|
-|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
-|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
-|contactITNotes|String|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
-|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
-|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
-|privacyUrl|String|URL-адрес политики конфиденциальности компании или Организации|
-|кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора нет доступа к устройству.|
-|кустомкансипривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
-|кустомкантсипривацимессаже|String|Текстовые комментарии относительно того, что у администратора нет доступа к устройству.|
-|исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
-|исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
-|компанипорталблоккедактионс|Коллекция [компанипорталблоккедактион](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в соответствии с типом владения платформой и устройствами.|
-|шовазуреадентерприсеаппс|Boolean|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
-|шовоффицевебаппс|Boolean|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
-|сенддевицеовнершипчанжепушнотификатион|Boolean|Логическое значение, указывающее, отправляются ли пользователям push-уведомления, если их тип собственности изменяется от персонального к корпоративному.|
-|енроллментаваилабилити|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый процесс регистрации устройства, отображаемый для конечного пользователя. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|дисаблеклиенттелеметри|Boolean|Применяется к телеметрии, отправляемой со всех клиентов в службу Intune. Если этот параметр отключен, все предупреждения об устранении неполадок и неполадки в клиенте отключаются, и параметры телеметрии отображаются как неактивные или скрытые для пользователя устройства.|
-|roleScopeTagIds|Коллекция строк|Список тегов области, назначенных профилю фирменной символики|
+|имя профиля|Строка|Имя профиля|
+|profileDescription|Строка|Описание профиля|
+|isDefaultProfile|Логический|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
+|createdDateTime|DateTimeOffset|Время создания BrandingProfile|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile|
+|displayName|String|Имя компании или организации, отображаемая конечным пользователям|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в Корпоративный портал приложениях и веб-портале|
+|showLogo|Boolean|Boolean, который представляет, показаны ли изображения логотипа, предоставленные администратором, или нет.|
+|showDisplayNameNextToLogo|Boolean|Boolean, который представляет, будет ли отображаться имя дисплея, предоставленное администратором, рядом с изображением логотипа или нет.|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемого в Корпоративный портал приложениях с фоном цвета темы за логотипом|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемого в Корпоративный портал приложениях со светлым фоном за логотипом|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемый образ, отображаемый на Корпоративный портал странице Корпоративный портал приложений|
+|contactITName|String|Имя лица или организации, ответственной за ИТ-поддержку|
+|contactITPhoneNumber|String|Телефон человека или организации, ответственной за ИТ-поддержку|
+|contactITEmailAddress|String|Адрес электронной почты лица или организации, ответственной за ИТ-поддержку|
+|contactITNotes|String|Текстовые комментарии в отношении лица или организации, ответственной за ИТ-поддержку|
+|onlineSupportSiteUrl|String|URL-адрес сайта it-справки компании/организации|
+|onlineSupportSiteName|String|Отображение имени сайта it-справки компании/организации|
+|privacyUrl|String|URL-адрес политики конфиденциальности компании и организации|
+|customPrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customCanSeePrivacyMessage|Строка|Текстовые комментарии относительно доступа администратора к устройству|
+|customCantSeePrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
+|isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
+|companyPortalBlockedActions|[коллекция companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в зависимости от типов владения платформой и устройствами.|
+|showAzureADEnterpriseApps|Логический|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
+|showOfficeWebApps|Логический|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
+|sendDeviceOwnershipChangePushNotification|Логический|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый поток регистрации устройств, отображаемый конечному пользователю. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|отключениеClientTelemetry|Логический|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
+|roleScopeTagIds|Коллекция String|Список тегов области, присвоенных профилю брендинга|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md)|Список назначений групп для профиля фирменной символики|
+|assignments|[коллекция intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|Список групповых назначений для профиля брендинга|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

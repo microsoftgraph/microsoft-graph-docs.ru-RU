@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Виндовшеллофорбусинесспинусаже
-description: Параметры использования ПИН-кода Windows Hello для бизнеса
+title: тип enum windowsHelloForBusinessPinUsage
+description: Windows Hello для бизнеса параметры использования пин-кодов
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8db2018d00404b5645a64ee4ad81bb4693ff8bed
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0368106c2f2a1cf4034bc7559085a2804931152655acb3ad7bf5eeb8ceb2c156
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161110"
 ---
-# <a name="windowshelloforbusinesspinusage-enum-type"></a>тип перечисления Виндовшеллофорбусинесспинусаже
+# <a name="windowshelloforbusinesspinusage-enum-type"></a>тип enum windowsHelloForBusinessPinUsage
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры использования ПИН-кода Windows Hello для бизнеса
+Windows Hello для бизнеса параметры использования пин-кодов
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|разрешенных|нуль|Использование определенного правила ПИН-кода разрешено|
-|Обязательный|1,1|Принудительное использование определенного правила ПИН-кодов|
-|разрешена|2|Форбит использование определенного правила ПИН-кодов|
+|разрешено|0|Разрешено использование определенного правила пин-кода|
+|обязательно|1 |Принудительное использование определенного правила пин-кода|
+|отостановка|2|Forbit использование определенного правила пин-кода|
 
 
 

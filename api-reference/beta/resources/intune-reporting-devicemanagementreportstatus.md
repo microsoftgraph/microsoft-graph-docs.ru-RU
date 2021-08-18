@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицеманажементрепортстатус
+title: тип enum deviceManagementReportStatus
 description: Возможные состояния, связанные с созданным отчетом
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eb85ade317129c1bae790dff43b42d5c839d45d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c786a67a28674313f7a205d43e9f9caf8e7d9cce9894af480fdc70f5b94cf29f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54217164"
 ---
-# <a name="devicemanagementreportstatus-enum-type"></a>тип перечисления Девицеманажементрепортстатус
+# <a name="devicemanagementreportstatus-enum-type"></a>тип enum deviceManagementReportStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49287678"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Состояние создания отчета неизвестно|
-|notStarted|1,1|Создание отчета не начато|
-|inProgress|2|Идет создание отчета|
-|готовы|4|Создание отчета завершено|
-|сбоев|4 |Не удалось создать отчет|
+|unknown|0|Состояние генерации отчетов неизвестно|
+|notStarted|1 |Генерация отчетов не началась|
+|inProgress|2|Продолжается генерация отчетов|
+|завершено|3 |Завершено поколение отчетов|
+|не удалось|4 |Сбой генерации отчетов|
 
 
 

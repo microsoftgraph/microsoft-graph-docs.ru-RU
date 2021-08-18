@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса publicError
+title: тип ресурса publicError
 description: Представляет общую ошибку и ее сведения.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: AkJo
-ms.openlocfilehash: 65a75b6eb2756b92f9da6386390fae3b254f818b
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 605999722a36952420a126b8ab80ad183c500bbfce5dfa0c671cdaed6c2e06e6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145140"
 ---
-# <a name="publicerror-resource-type"></a>Тип ресурса publicError
+# <a name="publicerror-resource-type"></a>тип ресурса publicError
 
 Пространство имен: microsoft.graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "49660088"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |code|string| Представляет код ошибки.
-|details|[Коллекция publicErrorDetail](publicerrordetail.md)|Сведения об ошибке.|
+|details|[коллекция publicErrorDetail](publicerrordetail.md)|Сведения об ошибке.|
 |innerError|[publicInnerError](publicinnererror.md)|Сведения о внутренней ошибке.|
 |message|string| Не локализованное сообщение для разработчика.
 |target|String|Целевое значение ошибки.|

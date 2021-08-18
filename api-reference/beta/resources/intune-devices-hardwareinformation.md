@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e17df5baad3df0237218f314cdb1c5ee99f03c6
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a1d8a94e44663bd6070d9b6f9d50a3fed7db9e22d12dcb70bc1cf9400f5342a0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148059"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса hardwareInformation
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,29 +34,29 @@ ms.locfileid: "51868178"
 |model|String|Модель устройства|
 |phoneNumber|String|Номер телефона устройства|
 |subscriberCarrier|String|Оператор абонента устройства|
-|cellularTechnology|String|Клеточная технология устройства|
-|wifiMac|String|Mac-адрес WiFi устройства|
-|operatingSystemLanguage|String|Язык операционной системы устройства|
+|cellularTechnology|Строка|Клеточная технология устройства|
+|wifiMac|Строка|Mac-адрес WiFi устройства|
+|operatingSystemLanguage|Строка|Язык операционной системы устройства|
 |isSupervised|Boolean|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|batterySerialNumber|String|Серийный номер текущего аккумулятора устройства|
+|batterySerialNumber|Строка|Серийный номер текущего аккумулятора устройства|
 |batteryHealthPercentage|Int32|Процент состояния текущего аккумулятора устройства. Допустимые значения: от 0 до 100|
 |batteryChargeCycles|Int32|Количество циклов заряда текущего аккумулятора устройства прошло. Допустимые значения от 0 до 2147483647|
-|isSharedDevice|Логический|Общий iPad|
+|isSharedDevice|Логический|Общие iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) collection|Все пользователи на совместном устройстве Apple|
-|tpmSpecificationVersion|String|Строка, которая указывает версию спецификации.|
-|operatingSystemEdition|String|Строка, заданная в выпуске ОС.|
-|deviceFullQualifiedDomainName|String|Возвращает полностью квалифицированное доменное имя устройства (если таково). Если устройство не присоединилось к домену, оно возвращает пустую строку. |
+|tpmSpecificationVersion|Строка|Строка, которая указывает версию спецификации.|
+|operatingSystemEdition|Строка|Строка, заданная в выпуске ОС.|
+|deviceFullQualifiedDomainName|Строка|Возвращает полностью квалифицированное доменное имя устройства (если таково). Если устройство не присоединилось к домену, оно возвращает пустую строку. |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требований к оборудованию безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние охраны учетных данных местного управления системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
-|osBuildNumber|String|Номер сборки операционной системы на устройстве Android|
-|operatingSystemProductType|Int32|Int, который указывает продукт Операционной системы Windows. Дополнительные сведения здесь https://go.microsoft.com/fwlink/?linkid=2126950 . Допустимые значения от 0 до 2147483647|
+|osBuildNumber|Строка|Номер сборки операционной системы на устройстве Android|
+|operatingSystemProductType|Int32|Int, который указывает Windows productType операционной системы. Дополнительные сведения здесь https://go.microsoft.com/fwlink/?linkid=2126950 . Допустимые значения от 0 до 2147483647|
 |ipAddressV4|String|IPAddressV4|
-|subnetAddress|String|SubnetAddress|
-|esimIdentifier|String|идентификатор eSIM|
-|systemManagementBIOSVersion|String|Версия BIOS, как сообщает SMBIOS|
-|tpmManufacturer|String|Идентифицирующие сведения, уникальные имена производителя TPM|
+|subnetAddress|Строка|SubnetAddress|
+|esimIdentifier|Строка|идентификатор eSIM|
+|systemManagementBIOSVersion|Строка|Версия BIOS, как сообщает SMBIOS|
+|tpmManufacturer|Строка|Идентифицирующие сведения, уникальные имена производителя TPM|
 |tpmVersion|String|Версия TPM, указанная производителем|
 
 ## <a name="relationships"></a>Связи

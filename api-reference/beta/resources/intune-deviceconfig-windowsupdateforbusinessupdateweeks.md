@@ -1,36 +1,36 @@
 ---
-title: тип перечисления Виндовсупдатефорбусинессупдатевикс
-description: Установка обновления запланирована на недели месяца
+title: тип enum windowsUpdateForBusinessUpdateWeeks
+description: Запланирована установка обновления в течение нескольких недель месяца
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1dff62e0e8bab9c1baa50467e5a6b483bc4fb5ce
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d2c114deb41087e45e435353e051ee7f55bad0fcfa6c7579953728dcc7749fe7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219971"
 ---
-# <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>тип перечисления Виндовсупдатефорбусинессупдатевикс
+# <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>тип enum windowsUpdateForBusinessUpdateWeeks
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Установка обновления запланирована на недели месяца
+Запланирована установка обновления в течение нескольких недель месяца
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Разрешить пользователю устанавливать.|
-|фирствик|1,1|Установка обновления запланирована на первую неделю месяца|
-|секондвик|2|Запланирована установка обновления на вторую неделю месяца|
-|сирдвик|4 |Установка обновления запланирована на третью неделю месяца|
-|фаурсвик|8 |Установка обновления запланирована на четвертую неделю месяца|
-|еверивик|15 |Запланирована установка обновлений на каждую неделю месяца|
+|userDefined|0|Разрешить пользователю установить.|
+|firstWeek|1 |Запланирована установка обновления в первую неделю месяца|
+|secondWeek|2|Запланирована установка обновления на вторую неделю месяца|
+|thirdWeek|4 |Запланирована установка обновления на третью неделю месяца|
+|fourthWeek|8 |Запланирована установка обновления на четвертую неделю месяца|
+|everyWeek|15 |Запланирована установка обновления на каждую неделю месяца|
 
 
 

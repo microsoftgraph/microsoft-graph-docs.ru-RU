@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Еджехомебуттонопенскустомурл
-description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
+title: тип ресурса edgeHomeButtonOpensCustomURL
+description: Показать кнопку "Домой"; Нажатие кнопки home загружает определенный URL-адрес.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdf8771dec9bd27a74f3a3e0f60d2106733d5c8c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3e61160451a7e3c5d72c1cb389cbbf78aa5bd760cd127ab2435b088cb8f32b32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54209919"
 ---
-# <a name="edgehomebuttonopenscustomurl-resource-type"></a>Тип ресурса Еджехомебуттонопенскустомурл
+# <a name="edgehomebuttonopenscustomurl-resource-type"></a>тип ресурса edgeHomeButtonOpensCustomURL
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
+Показать кнопку "Домой"; Нажатие кнопки home загружает определенный URL-адрес.
 
 
-Наследуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Наследует от [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|хомебуттонкустомурл|String|Заданный URL-адрес для загрузки.|
+|homeButtonCustomURL|Строка|Определенный URL-адрес для загрузки.|
 
 ## <a name="relationships"></a>Связи
 Нет

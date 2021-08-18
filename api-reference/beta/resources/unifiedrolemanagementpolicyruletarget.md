@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 59c8dc5c769ee276a6a6c2e3f6cdf1fa2b2d6612
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b8b474102e0605fda38db7b0ef39b1105097ba8d5d4b7f376ec3db83e1c07541
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145098"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>тип ресурса unifiedRoleManagementPolicyRuleTarget
 
@@ -22,7 +22,7 @@ ms.locfileid: "53579651"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|вызываемая|String|Вызываемая цель правила политики. Допустимые значения: `None` `Admin` , `EndUser` .|
+|вызываемая|Строка|Вызываемая цель правила политики. Допустимые значения: `None` `Admin` , `EndUser` .|
 |enforcedSettings|Коллекция String|Список параметров, которые применяются и не могут быть переопределены в детских сферах. Используйте `All` для всех параметров.|
 |inheritableSettings|Коллекция String|Список параметров, которые могут наследоваться по детским сферам. Используйте `All` для всех параметров.|
 |уровень|String|Уровень целевого показателя правила политики. Допустимые значения: `Eligibility` , `Assignment` .    |
