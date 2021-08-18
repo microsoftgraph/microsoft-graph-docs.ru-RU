@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса complianceManagementPartner
+title: тип ресурсов complianceManagementPartner
 description: Партнер по управлению соответствием требованиям для всех платформ
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f406dc4f2c90f7aeb54bfd6356fd85a57554739f
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: e4acb774a6478f2d3bfd27c582c245ecea605d092896ef89b3a746a32e67db9a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235991"
 ---
-# <a name="compliancemanagementpartner-resource-type"></a>Тип ресурса complianceManagementPartner
+# <a name="compliancemanagementpartner-resource-type"></a>тип ресурсов complianceManagementPartner
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,27 +25,27 @@ ms.locfileid: "50157556"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список участников complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-list.md)|[Коллекция complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Список свойств и связей объектов [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
-|[Get complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
-|[Создание complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Создание объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
-|[Удаление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Нет|Удаляет [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
+|[Список complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[коллекция complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Список свойств и связей объектов [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
+|[Получить complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
+|[Создание complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Создание нового [объекта complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
+|[Удаление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Нет|Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
 |[Обновление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Обновление свойств объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ИД сущности|
-|lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin onboarded to the compliance management partner|
+|id|String|Id объекта|
+|lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|String|Отображаемое имя партнера|
-|macOsOnboarded|Boolean|Партнер для устройств Mac.|
-|windowsOnboarded|Boolean|Партнер, в который вошел для устройств с Windows.|
-|androidOnboarded|Boolean|Партнер, вошел в платформу для устройств с Android.|
-|iosOnboarded|Boolean|Партнер, в который вошел для устройств с ios.|
-|macOsEnrollmentAssignments|[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
-|windowsEnrollmentAssignments|[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства с Windows через партнера.|
-|androidEnrollmentAssignments|[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
-|iosEnrollmentAssignments|[Коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|
+|displayName|Строка|Отображаемое имя партнера|
+|macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
+|WindowsOnboarded|Логический|Партнер, на борту Windows устройств.|
+|AndroidOnboarded|Логический|Партнер, на борту для android-устройств.|
+|iosOnboarded|Логический|Партнер, на борту для устройств ios.|
+|macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
+|windowsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые Windows устройства через партнера.|
+|AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
+|iosEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|
 
 ## <a name="relationships"></a>Связи
 Нет

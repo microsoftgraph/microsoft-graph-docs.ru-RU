@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионинтежерсеттингвалуедефинитион
+title: тип ресурса deviceManagementConfigurationIntegerSettingValueDefinition
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4c2fdb6b26b67b6c61dcbba295933d0c3797500
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 034bc027a9508eb0a55520630179c06eb5155a69f7c25821c0341b30822b3edf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236201"
 ---
-# <a name="devicemanagementconfigurationintegersettingvaluedefinition-resource-type"></a>Тип ресурса Девицеманажементконфигуратионинтежерсеттингвалуедефинитион
+# <a name="devicemanagementconfigurationintegersettingvaluedefinition-resource-type"></a>тип ресурса deviceManagementConfigurationIntegerSettingValueDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Пока не задокументировано.
 
 
-Наследуется от [девицеманажементконфигуратионсеттингвалуедефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition.md)
+Наследует [от deviceManagementConfigurationSettingValueDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|максимумвалуе|Int64|Максимально допустимое значение целого числа|
-|минимумвалуе|Int64|Минимальное допустимое значение целого числа|
+|maximumValue|Int64|Максимально допустимые значения integer|
+|minimumValue|Int64|Минимально допустимые значения integer|
 
 ## <a name="relationships"></a>Связи
 Нет

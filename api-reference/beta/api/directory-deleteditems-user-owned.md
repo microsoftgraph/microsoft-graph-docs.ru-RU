@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 31a85be8a5c6b1dc09889ea77cf619060f702789
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0820b4187524f29b488852241944528712fc4f5e90a951605f75c51a520601f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165464"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Список удаленных элементов, которые принадлежат пользователю
 
@@ -44,14 +44,14 @@ POST /directory/deletedItems/getUserOwnedObjects
 | ------------- | ------------------------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Орган запроса требует следующих параметров:
 
 | Параметр    | Тип |Описание|
 |:---------------|:--------|:----------|
 |userId|String|ID владельца.|
-|type|String|Тип объектов, которые необходимо возвращать; `group` в настоящее время является единственным поддерживаемым значением.|
+|type|Строка|Тип объектов, которые необходимо возвращать; `group` в настоящее время является единственным поддерживаемым значением.|
 
 
 ## <a name="response"></a>Отклик

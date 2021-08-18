@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2aee8b02e3baf150cf760116c9c993ce37a353c6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d395b6a41cf9debfb931537a1f64c0fc0efe20d5e411a4b6ba6a30b78adc18af
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236960"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Тип ресурса softwareUpdateStatusSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -32,7 +32,7 @@ ms.locfileid: "49276604"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя политики.|
+|displayName|Строка|Имя политики.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
 |remediatedDeviceCount|Int32|Количество исправленных устройств.|

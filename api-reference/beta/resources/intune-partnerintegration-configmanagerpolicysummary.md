@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Конфигманажерполицисуммари
-description: Сводка по политике Конфигманажер.
+title: тип ресурса configManagerPolicySummary
+description: Сводка политики ConfigManager.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c63e85448b70abc76f4df0021c4f5516e778ebe0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c14e64fb528d5b62ce172d6dc4e85704422ea1f5a74ef0f012b8e0d48b6f6cb8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224483"
 ---
-# <a name="configmanagerpolicysummary-resource-type"></a>Тип ресурса Конфигманажерполицисуммари
+# <a name="configmanagerpolicysummary-resource-type"></a>тип ресурса configManagerPolicySummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сводка по политике Конфигманажер.
+Сводка политики ConfigManager.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|таржетеддевицекаунт|Int32|Количество устройств, для которых предназначена политика.|
-|compliantDeviceCount|Int32|Количество устройств, которые оцениваются в соответствии с политикой.|
-|nonCompliantDeviceCount|Int32|Количество устройств, которые оцениваются не в соответствии с политикой.|
-|failedDeviceCount|Int32|Количество устройств, которые не удалось оценить с помощью политики.|
-|пендингдевицекаунт|Int32|Количество устройств, которые подтвердили политику, но ожидают оценки.|
-|енфорцеддевицекаунт|Int32|Количество устройств, исправленных политикой.|
+|targetedDeviceCount|Int32|Количество устройств, на которые ориентирована политика.|
+|compliantDeviceCount|Int32|Количество устройств, которые оцениваются как совместимые с политикой.|
+|nonCompliantDeviceCount|Int32|Количество устройств, несовершенных политикой.|
+|failedDeviceCount|Int32|Количество устройств, которые не были оценены политикой.|
+|pendingDeviceCount|Int32|Количество устройств, которые признали политику, но находятся в ожидании оценки.|
+|enforcedDeviceCount|Int32|Количество устройств, исправленных политикой.|
 
 ## <a name="relationships"></a>Связи
 Нет

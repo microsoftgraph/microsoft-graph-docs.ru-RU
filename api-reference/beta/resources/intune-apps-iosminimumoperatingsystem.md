@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9038d3cf058e8c9930b5f083709f3a5ed286300a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 0e7504cb4b4ff666bf7d40bdbfaf457fb6b812f9a3b3ee9f4e6e53cd0c63eeb8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54165898"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,9 +29,9 @@ ms.locfileid: "50154448"
 |v9_0|Boolean|Версия 9.0 или выше.|
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Boolean|Версия 12.0 или более поздней.|
-|v13_0|Boolean|Версия 13.0 или более поздней.|
-|v14_0|Boolean|Версия 14.0 или более поздней.|
+|v12_0|Логический|Версия 12.0 или более поздней версии.|
+|v13_0|Логический|Версия 13.0 или более поздней версии.|
+|v14_0|Логический|Версия 14.0 или более поздней версии.|
 
 ## <a name="relationships"></a>Связи
 Нет

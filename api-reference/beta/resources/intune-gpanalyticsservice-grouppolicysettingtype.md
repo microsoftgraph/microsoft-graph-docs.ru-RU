@@ -1,37 +1,37 @@
 ---
-title: тип перечисления Граупполицисеттингтипе
-description: Тип параметра групповой политики.
+title: тип enum groupPolicySettingType
+description: Настройка типа групповой политики.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b85309c3406b169fa02c6753e1d986f8205a18fa
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ce04708aa2648f97a3bb5a1c72781898c7c89fae6f3cd2579a9d3ca416ff5d3f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236061"
 ---
-# <a name="grouppolicysettingtype-enum-type"></a>тип перечисления Граупполицисеттингтипе
+# <a name="grouppolicysettingtype-enum-type"></a>тип enum groupPolicySettingType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип параметра групповой политики.
+Настройка типа групповой политики.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Граупполицисеттингтипе Unknown|
-|policy|1,1|Тип параметра политики|
-|финансового|2|Тип параметра учетной записи|
-|секуритйоптионс|4|Тип параметра Секуритйоптионс|
-|усерригхтсассигнмент|4 |Тип параметра Усерригхтсассигнмент|
-|аудитсеттинг|5 |Тип параметра Аудитсеттинг|
-|виндовсфиреваллсеттингс|6 |Тип параметра Виндовсфиреваллсеттингс|
+|unknown|0|GroupPolicySettingType неизвестна|
+|policy|1 |Тип параметра политики|
+|учетная запись|2|Тип параметра учетной записи|
+|securityOptions|3 |Тип параметра SecurityOptions|
+|userRightsAssignment|4 |Тип параметра UserRightsAssignment|
+|auditSetting|5 |Тип параметра AuditSetting|
+|WindowsFirewallSettings|6 |Тип параметра WindowsFirewallSettings|
 
 
 

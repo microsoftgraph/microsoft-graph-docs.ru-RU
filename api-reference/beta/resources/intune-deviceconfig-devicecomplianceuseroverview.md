@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3300c25309da3eb6e1d5d0a95842ae457398bf6f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cc895294ea94951ea79d8105dab43af2c781b08e4b7002ebde59e567d6928329
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234787"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Тип ресурса deviceComplianceUserOverview
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -33,7 +33,7 @@ ms.locfileid: "49269338"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
-|notApplicableCount|Int32|Количество неприменимых пользователей|
+|notApplicableCount|Int32|Число не применимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
 |errorCount|Int32|Количество пользователей с ошибками.|
 |failedCount|Int32|Количество пользователей со сбоями.|

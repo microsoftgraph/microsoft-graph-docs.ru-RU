@@ -1,16 +1,16 @@
 ---
 title: Get mobileAppTroubleshootingEvent
-description: Описывает метод Get mobileAppTroubleshootingEvent API Microsoft Graph для Intune, который поддерживает несколько процессов.
+description: Описывает метод Get mobileAppTroubleshootingEvent a Microsoft Graph API для Intune, который поддерживает несколько процессов.
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e74e1e979ab501f45a9a3e93fe9a64bdb30320d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: af024d0e17ed0bad7be4776edab392909520b7bd55464af627bfc2ecf9444b58
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226709"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>Get mobileAppTroubleshootingEvent
 
@@ -31,7 +31,7 @@ ms.locfileid: "51863740"
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 

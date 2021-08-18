@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Конфигуратионманажерактионтипе
-description: Тип действия в клиенте Configuration Manager
+title: тип enum configurationManagerActionType
+description: Тип действия клиента Configuration Manager
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f82606d9483daabf77daf6f243e1eb1ef2163273
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d95783f25c49c9e06474e088e32c9b4c2c3628f199ac16d6e6f99daf29192b57
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236124"
 ---
-# <a name="configurationmanageractiontype-enum-type"></a>тип перечисления Конфигуратионманажерактионтипе
+# <a name="configurationmanageractiontype-enum-type"></a>тип enum configurationManagerActionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип действия в клиенте Configuration Manager
+Тип действия клиента Configuration Manager
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|рефрешмачинеполици|нуль|Обновление политики компьютера в клиенте Configuration Manager|
-|рефрешусерполици|1,1|Обновление политики пользователя в клиенте Configuration Manager|
-|вакеупклиент|2|Пробуждение клиента Configuration Manager|
-|аппевалуатион|4|Оценка политики применения в клиенте Configuration Manager|
+|refreshMachinePolicy|0|Политика обновления компьютера в клиенте Configuration Manager|
+|refreshUserPolicy|1 |Обновление политики пользователей в клиенте Configuration Manager|
+|wakeUpClient|2|Разбудить клиента Configuration Manager|
+|appEvaluation|3 |Политика приложения для оценки клиента Configuration Manager|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 831e02372a365a3a6600f5efb7e4f8722a85eb59
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 1c3477ccafc20b2a952083ca99d6eeb289bf2b209ce09804d7d67c50883a188e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865371"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164421"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData
 
@@ -31,7 +31,7 @@ ms.locfileid: "51865371"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос

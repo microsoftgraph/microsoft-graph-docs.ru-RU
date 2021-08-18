@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a45d6ff11476ec50f3c672455bceab8f4f5ffca5
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4a595cdea02af9a0dcd0127f2d6a06c3e7f0da1ef303cbe02ada9badd9b0d9b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226632"
 ---
 # <a name="update-reportroot"></a>Обновление объекта reportRoot
 
@@ -30,7 +30,7 @@ ms.locfileid: "51866204"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -56,7 +56,7 @@ PATCH /reports
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта.|
+|id|Строка|Уникальный идентификатор для этого объекта.|
 
 
 

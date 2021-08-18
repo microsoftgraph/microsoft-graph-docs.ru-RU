@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 09c296c88fc2b7ceab48018745b2686c08b8db21
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: e6ac3d292d221a46e222f4ff97741bfe5c5856df
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53400987"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384191"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/users
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -164,7 +164,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -221,7 +221,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -241,16 +241,20 @@ Content-type: application/json
       "displayName": "Adele Vance",
       "userPrincipalName": "AdeleV@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2017-09-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+        "lastSignInDateTime": "2021-06-17T16:41:33Z",
+        "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
+        "lastNonInteractiveSignInDateTime": "0001-01-01T00:00:00Z",
+        "lastNonInteractiveSignInRequestId": ""
       }
     },
     {
       "displayName": "Alex Wilber",
       "userPrincipalName": "AlexW@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2017-07-29T02:16:18Z",
-        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+        "lastSignInDateTime": "2021-07-29T15:53:27Z",
+        "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
+        "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
       }
     }
   ]
@@ -292,7 +296,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -311,8 +315,10 @@ Content-type: application/json
     {
       "displayName": "Eric Solomon",
       "signInActivity": {
-        "lastSignInDateTime": "2017-09-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+        "lastSignInDateTime": "2021-07-29T15:53:27Z",
+        "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
+        "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
       }
     }
   ]
@@ -330,12 +336,12 @@ Content-type: application/json
   "name": "get_signin_last_time_range"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
+GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2021-07-21T00:00:00Z
 ```
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -349,22 +355,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z",
+  "@odata.context": "https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2021-07-21T00:00:00Z",
   "value": [
     {
       "displayName": "Adele Vance",
       "userPrincipalName": "AdeleV@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2019-05-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+        "lastSignInDateTime": "2021-06-17T16:41:33Z",
+        "lastSignInRequestId": "d4d31c40-4c36-4775-ad59-7d1e6a171f00",
+        "lastNonInteractiveSignInDateTime": "0001-01-01T00:00:00Z",
+        "lastNonInteractiveSignInRequestId": ""
       }
     },
     {
       "displayName": "Alex Wilber",
       "userPrincipalName": "AlexW@contoso.com",
       "signInActivity": {
-        "lastSignInDateTime": "2019-04-29T02:16:18Z",
-        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+        "lastSignInDateTime": "2021-07-29T15:53:27Z",
+        "lastSignInRequestId": "f3149ee1-e347-4181-b45b-99a1f82b1c00",
+        "lastNonInteractiveSignInDateTime": "2021-07-29T17:53:42Z",
+        "lastNonInteractiveSignInRequestId": "868efa6a-b2e9-40e9-9b1c-0aaea5b50200"
       }
     }
   ]
@@ -420,7 +430,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -486,7 +496,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -533,7 +543,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -579,7 +589,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

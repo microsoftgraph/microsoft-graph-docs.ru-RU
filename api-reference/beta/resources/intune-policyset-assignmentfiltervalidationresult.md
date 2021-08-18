@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса assignmentFilterValidationResult
-description: Представляет результат проверки API.
+title: тип ресурса assignmentFilterValidationResult
+description: Представляет результат API проверки.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a540bdec4265c544f565e560b6858755d0076178
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: d9c2fc0569e54f9ec5d8e6ae203659b2d023cd9c98348678c00b3e3e8f57e923
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226254"
 ---
-# <a name="assignmentfiltervalidationresult-resource-type"></a>Тип ресурса assignmentFilterValidationResult
+# <a name="assignmentfiltervalidationresult-resource-type"></a>тип ресурса assignmentFilterValidationResult
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет результат проверки API.
+Представляет результат API проверки.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|isValidRule|Boolean|Индикатор допустимым или недопустимым правилом.|
+|isValidRule|Логический|Индикатор для допустимой или недействительной нормы.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Граупполицитипе
-description: Тип файла или определения групповой политики.
+title: тип enum groupPolicyType
+description: Тип файла групповой политики или определения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1241cb3bad75b8daa1c4fe944a361d7cb710fd23
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 45e0d66dd9bdb456089f316508af1916d321a2f4908c8571b17077a0e4975db2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239226"
 ---
-# <a name="grouppolicytype-enum-type"></a>тип перечисления Граупполицитипе
+# <a name="grouppolicytype-enum-type"></a>тип enum groupPolicyType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип файла или определения групповой политики.
+Тип файла групповой политики или определения.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|адмксбаккед|нуль|Административные шаблоны групповой политики, встроенные в поставщика службы настройки политик (CSP).|
-|адмксинжестед|1,1|Административные шаблоны групповой политики, установленные с помощью поставщика службы настройки политик (CSP).|
+|admxBacked|0|Административные шаблоны групповой политики встроены в поставщика служб конфигурации политики (CSP).|
+|admxIngested|1 |Административные шаблоны групповой политики, установленные с помощью поставщика служб конфигурации политики (CSP).|
 
 
 

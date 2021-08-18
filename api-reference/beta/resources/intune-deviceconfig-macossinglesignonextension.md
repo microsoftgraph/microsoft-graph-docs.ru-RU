@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Макоссинглесигнонекстенсион
-description: Абстрактный базовый класс для всех типов расширения единого входа, относящихся к macOS.
+title: тип ресурса macOSSingleSignOnExtension
+description: Абстрактный базовый класс для всех типов расширения с одним входом в macOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d83ff3e2eab60f1e4b44004c4d60e96865a1b18
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 31c6fa22291a321604214725877fbd6d230a1af542c3638e264c107cb029fe0b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294138"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239492"
 ---
-# <a name="macossinglesignonextension-resource-type"></a>Тип ресурса Макоссинглесигнонекстенсион
+# <a name="macossinglesignonextension-resource-type"></a>тип ресурса macOSSingleSignOnExtension
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Абстрактный базовый класс для всех типов расширения единого входа, относящихся к macOS.
+Абстрактный базовый класс для всех типов расширения с одним входом в macOS.
 
 
-Наследуется от [синглесигнонекстенсион](../resources/intune-deviceconfig-singlesignonextension.md)
+Наследует [от singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
