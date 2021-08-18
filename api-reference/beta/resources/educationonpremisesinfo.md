@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Едукатиононпремисесинфо
-description: Дополнительные сведения, используемые для сопоставления локальной учетной записи пользователя Active Directory с их объектом пользователя Azure AD.
+title: тип ресурса educationOnPremisesInfo
+description: Дополнительные сведения, используемые для связываия локальной учетной записи пользователя Active Directory с объектом пользователя Azure AD.
 author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ff575398f3829c5d2adbe92799f5b9dca953aa4e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6e16db3b73faa0affad9586fb310a367d02d46ea78bfe66d52f90dc162f3c88
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253252"
 ---
-# <a name="educationonpremisesinfo-resource-type"></a>Тип ресурса Едукатиононпремисесинфо
+# <a name="educationonpremisesinfo-resource-type"></a>тип ресурса educationOnPremisesInfo
 
 Пространство имен: microsoft.graph
 
-Дополнительные сведения, используемые для сопоставления локальной учетной записи пользователя Active Directory с их объектом пользователя Azure AD.
+Дополнительные сведения, используемые для связываия локальной учетной записи пользователя Active Directory с объектом пользователя Azure AD.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип   | Описание                                               |
 | :---------- | :----- | :-------------------------------------------------------- |
-| Значения свойств ImmutableId | String | Уникальный идентификатор объекта пользователя в Active Directory. |
+| immutableId | Строка | Уникальный идентификатор объекта пользователя в Active Directory. |
 
 ## <a name="json-representation"></a>Представление JSON
 

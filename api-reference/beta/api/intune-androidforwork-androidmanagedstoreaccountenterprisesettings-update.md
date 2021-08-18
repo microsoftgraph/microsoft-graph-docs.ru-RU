@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc7a1cd9291ca0fad18dedd905b484536fbe2fb0
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5d31ff5cce7abbf7a15105d5613725d17cbee23c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51141136"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262370"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Обновление androidManagedStoreAccountEnterpriseSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51141136"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,13 +58,14 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[AndroidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Результат синхронизации последнего приложения. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
 |ownerUserPrincipalName|String|UPN владельца, создавшего предприятие|
-|ownerOrganizationName|String|Имя организации, используемая при взявке Android Enterprise|
+|ownerOrganizationName|String|Имя организации, используемая при вовсю Enterprise|
 |lastModifiedDateTime|DateTimeOffset|Время последней модификации для корпоративных параметров Android|
-|enrollmentTarget|[AndroidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает, какие пользователи могут записать устройства в управление устройствами Android Enterprise. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
+|enrollmentTarget|[AndroidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает, какие пользователи могут записать устройства в управление Enterprise устройств. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|deviceOwnerManagementEnabled|Boolean|Указывает, работает ли эта учетная запись для управления владельцем android-устройств с помощью CloudDPC.|
+|deviceOwnerManagementEnabled|Логический|Указывает, работает ли эта учетная запись для управления владельцем android-устройств с помощью CloudDPC.|
 |companyCodes|[коллекция androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Логический|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
+|managedGooglePlayInitialScopeTagIds|Коллекция String|Начальные теги области для приложений MGP|
 
 
 
@@ -78,7 +79,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccountEnterpriseSettings
 Content-type: application/json
-Content-length: 897
+Content-length: 1002
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
@@ -104,7 +105,10 @@ Content-length: 897
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
+  "managedGooglePlayInitialScopeTagIds": [
+    "Managed Google Play Initial Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -113,7 +117,7 @@ Content-length: 897
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1010
+Content-Length: 1115
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
@@ -141,7 +145,10 @@ Content-Length: 1010
       }
     }
   ],
-  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true,
+  "managedGooglePlayInitialScopeTagIds": [
+    "Managed Google Play Initial Scope Tag Ids value"
+  ]
 }
 ```
 

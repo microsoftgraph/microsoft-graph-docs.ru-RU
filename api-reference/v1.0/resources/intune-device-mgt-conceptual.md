@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: f091e20a056d6145fde5ecf98d5133926a1b9c1e6405cc0b5ab64cffeb8134c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94d8444f9f131adc74f6d521ea50dbe59fd57817
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230685"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264327"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "54230685"
 - [Обнаруженное приложение](intune-devices-detectedapp.md)
 - [Результат действия над устройством](intune-devices-deviceactionresult.md)
 - [Категория устройств](intune-devices-devicecategory.md)
-- [Тип регистрации устройства](intune-devices-deviceenrollmenttype.md)
+- [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
 - [Состояние подтверждения работоспособности устройства](intune-devices-devicehealthattestationstate.md)

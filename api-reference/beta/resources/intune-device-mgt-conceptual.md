@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 99dd9b1abd5353f6d8e4ca30aaac48e54bd296b7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 97d5a44d72db940197e53f5c713f7a4734011c75
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666277"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265412"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -22,6 +22,7 @@ ms.locfileid: "52666277"
 - [Активация результата действия esim устройства](intune-devices-activatedeviceesimactionresult.md)
 - [Согласие администратора](intune-devices-adminconsent.md)
 - [Состояние разрешения администратора](intune-devices-adminconsentstate.md)
+- [Разрешенные действия удаленной помощи](intune-remoteassistance-allowedremoteassistanceactions.md)
 - [Данные загрузки коллекции журналов приложения](intune-devices-applogcollectiondownloaddetails.md)
 - [Запрос коллекции журналов приложения](intune-devices-applogcollectionrequest.md)
 - [Алгоритм расшифровку журнала приложения](intune-devices-applogdecryptionalgorithm.md)
@@ -38,7 +39,7 @@ ms.locfileid: "52666277"
 - [Тип корпуса](intune-devices-chassistype.md)
 - [Свойство устройства Chrome o s](intune-devices-chromeosdeviceproperty.md)
 - [Условие управления циклического геофенсинга](intune-fencing-circulargeofencemanagementcondition.md)
-- [Cloud PC подключения](intune-devices-cloudpcconnectivityissue.md)
+- [Проблема подключения к облачному компьютеру](intune-devices-cloudpcconnectivityissue.md)
 - [Сводка с соманганными устройствами](intune-devices-comanageddevicessummary.md)
 - [Устройство, подходящее для comanagement](intune-devices-comanagementeligibledevice.md)
 - [Сводка устройств, подходящих для comanagement](intune-devices-comanagementeligibledevicessummary.md)
@@ -62,6 +63,8 @@ ms.locfileid: "52666277"
 - [Сценарий настраиваемой оболочки атрибутов устройства](intune-devices-devicecustomattributeshellscript.md)
 - [Тип настраиваемого атрибута устройства](intune-devices-devicecustomattributevaluetype.md)
 - [Причина сбоя регистрации устройства](intune-troubleshooting-deviceenrollmentfailurereason.md)
+- [Тип регистрации устройства](intune-devices-deviceenrollmenttype.md)
+- [Тип регистрации устройства](intune-devices-deviceenrollmenttype.md)
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
 - [Состояние защиты учетных данных для местного системного центра в Device Guard](intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)
@@ -149,9 +152,12 @@ ms.locfileid: "52666277"
 - [Событие устранения проблем с управлением устройствами](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Тип значения намерения управления устройствами](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [Сводка по операционной системе устройства](intune-devices-deviceoperatingsystemsummary.md)
+- [Тип платформы устройства](intune-fencing-deviceplatformtype.md)
 - [Обзор защиты устройств](intune-devices-deviceprotectionoverview.md)
 - [Состояние регистрации устройства](intune-devices-deviceregistrationstate.md)
 - [Сценарий оболочки устройства](intune-devices-deviceshellscript.md)
+- [Тип устройства](intune-devices-devicetype.md)
+- [Тип устройства](intune-devices-devicetype.md)
 - [Тип диска](intune-devices-disktype.md)
 - [Код активации внедрения SIM-карты](intune-esim-embeddedsimactivationcode.md)
 - [Пул кода активации внедрения SIM-карты](intune-esim-embeddedsimactivationcodepool.md)
@@ -165,6 +171,7 @@ ms.locfileid: "52666277"
 - [Значение Insight в два раза](intune-devices-insightvaluedouble.md)
 - [Инсайт значения int](intune-devices-insightvalueint.md)
 - [Тип join](intune-devices-jointype.md)
+- [Пара "ключ-значение"](intune-troubleshooting-keyvaluepair.md)
 - [Локализованное сообщение уведомления](intune-notification-localizednotificationmessage.md)
 - [Результат действия "Поиск устройства"](intune-devices-locatedeviceactionresult.md)
 - [Условие управления расположением](intune-fencing-locationmanagementcondition.md)
@@ -181,6 +188,7 @@ ms.locfileid: "52666277"
 - [Удаленное действие с управляемым устройством](intune-devices-manageddeviceremoteaction.md)
 - [Управляемое состояние приложения с обобщенным устройством](intune-troubleshooting-manageddevicesummarizedappstate.md)
 - [Состояние управляемого установщика](intune-devices-managedinstallerstatus.md)
+- [Тип агента управления](intune-devices-managementagenttype.md)
 - [Условие управления](intune-fencing-managementcondition.md)
 - [Выражение условия управления](intune-fencing-managementconditionexpression.md)
 - [Модель выражения условия управления](intune-fencing-managementconditionexpressionmodel.md)
@@ -203,18 +211,25 @@ ms.locfileid: "52666277"
 - [Условие управления сетью](intune-fencing-networkmanagementcondition.md)
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
+- [Право на обновление операционной системы](intune-devices-operatingsystemupgradeeligibility.md)
 - [Счетчик версии ОС](intune-devices-osversioncount.md)
 - [Тип платформы](intune-esim-platformtype.md)
+- [Тип платформы политики](intune-deviceintent-policyplatformtype.md)
 - [Состояние исправлений](intune-devices-remediationstate.md)
 - [Удаленное действие](intune-devices-remoteaction.md)
 - [Аудит удаленных действий](intune-devices-remoteactionaudit.md)
 - [Состояние подключения удаленного помощника](intune-remoteassistance-remoteassistanceonboardingstatus.md)
 - [Партнерская служба удаленного помощника](intune-remoteassistance-remoteassistancepartner.md)
+- [Параметры удаленной помощи](intune-remoteassistance-remoteassistancesettings.md)
+- [Состояние удаленной помощи](intune-remoteassistance-remoteassistancestate.md)
 - [Результат действия "Удаленная блокировка"](intune-devices-remotelockactionresult.md)
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
+- [Итоговое состояние приложения](intune-troubleshooting-resultantappstate.md)
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Сведения о теге области ролей](intune-auditing-rolescopetaginfo.md)
-- [Вращать BitLocker клавиши действия устройства](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [Поворот результата действия устройства bitLocker клавиш](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
+- [Состояние выполнения](intune-devices-runstate.md)
+- [Состояние выполнения](intune-devices-runstate.md)
 - [Сводка состояния базовой категории безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Политика базового обеспечения безопасности](intune-deviceintent-securitybaselinecontributingpolicy.md)
@@ -228,6 +243,8 @@ ms.locfileid: "52666277"
 - [Тип оператора выражения условия унарного управления](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Производительность приложения работоспособности приложения для аналитики пользовательского интерфейса по версии приложения](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
+- [Пользовательский опыт аналитики работоспособности приложения приложения с помощью сведений о версии приложения](intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md)
+- [Производительность приложения для аналитики пользовательского интерфейса по id версии приложения](intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md)
 - [Производительность приложения приложения для приложения o s для аналитики пользовательского интерфейса](intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)
 - [Производительность приложения-приложения для приложения для аналитики пользовательского интерфейса](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
 - [Производительность модели работоспособности устройства работоспособности приложения для аналитики пользовательского интерфейса](intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)
@@ -237,6 +254,7 @@ ms.locfileid: "52666277"
 - [Сводка устройств автопилота для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsautopilotdevicessummary.md)
 - [Базовый базовый уровень аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsbaseline.md)
 - [Категория аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticscategory.md)
+- [Сводка облачных устройств удостоверений для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)
 - [Сводка устройств облачного управления с аналитикой пользовательских интерфейсов](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
 - [Производительность устройства аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsdeviceperformance.md)
 - [Оценки устройств аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsdevicescores.md)
@@ -263,6 +281,7 @@ ms.locfileid: "52666277"
 - [Сводка Windows 10 пользовательских интерфейсов](intune-devices-userexperienceanalyticswindows10devicessummary.md)
 - [Аналитика пользовательских интерфейсов работает с любого устройства](intune-devices-userexperienceanalyticsworkfromanywheredevice.md)
 - [Аналитика пользовательских интерфейсов работает из любой сводки устройств](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
+- [Аналитика пользовательских интерфейсов работает из любой метрики готовности оборудования](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [Аналитика пользовательских интерфейсов работает из любой метрики](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows состояния развертывания автопилота](intune-troubleshooting-windowsautopilotdeploymentstate.md)

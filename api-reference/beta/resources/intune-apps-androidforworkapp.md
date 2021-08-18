@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Андроидфорворкапп
-description: Содержит свойства и унаследованные свойства для приложений Android для работы (АФВ).
+title: тип ресурсов AndroidForWorkApp
+description: Содержит свойства и унаследованные свойства для приложений для Android для работы (AFW).
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d1791fb7889cad33908c0e530ae9e1802dc3bb1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: faeb3cc7f9539e659f2f5b3a73bce12c055204fb23b6cc772b3a56eafe84c156
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54233023"
 ---
-# <a name="androidforworkapp-resource-type"></a>Тип ресурса Андроидфорворкапп
+# <a name="androidforworkapp-resource-type"></a>тип ресурсов AndroidForWorkApp
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства и унаследованные свойства для приложений Android для работы (АФВ).
+Содержит свойства и унаследованные свойства для приложений для Android для работы (AFW).
 
 
 Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).
@@ -28,17 +28,17 @@ ms.locfileid: "49274400"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Андроидфорворкаппс](../api/intune-apps-androidforworkapp-list.md)|Коллекция [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md)|Список свойств и связей объектов [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
-|[Получение Андроидфорворкапп](../api/intune-apps-androidforworkapp-get.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Чтение свойств и связей объекта [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
-|[Создание Андроидфорворкапп](../api/intune-apps-androidforworkapp-create.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Создание нового объекта [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
-|[Удаление Андроидфорворкапп](../api/intune-apps-androidforworkapp-delete.md)|Нет|Удаляет объект [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md).|
-|[Обновление Андроидфорворкапп](../api/intune-apps-androidforworkapp-update.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Обновление свойств объекта [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
+|[Список androidForWorkApps](../api/intune-apps-androidforworkapp-list.md)|[коллекция AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md)|Список свойств и связей объектов [AndroidForWorkApp.](../resources/intune-apps-androidforworkapp.md)|
+|[Получить AndroidForWorkApp](../api/intune-apps-androidforworkapp-get.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Чтение свойств и связей объекта [AndroidForWorkApp.](../resources/intune-apps-androidforworkapp.md)|
+|[Создание AndroidForWorkApp](../api/intune-apps-androidforworkapp-create.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Создайте новый [объект AndroidForWorkApp.](../resources/intune-apps-androidforworkapp.md)|
+|[Удаление AndroidForWorkApp](../api/intune-apps-androidforworkapp-delete.md)|Нет|Удаляет [androidForWorkApp](../resources/intune-apps-androidforworkapp.md).|
+|[Обновление AndroidForWorkApp](../api/intune-apps-androidforworkapp-update.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Обновление свойств объекта [AndroidForWorkApp.](../resources/intune-apps-androidforworkapp.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -50,18 +50,18 @@ ms.locfileid: "49274400"
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|uploadState|Int32|Состояние отправки. Возможные значения: 0 – `Not Ready` , 1 – `Ready` , 2 `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|uploadState|Int32|Состояние загрузки. Возможные значения: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|Значение, указывающее, назначено ли приложению по крайней мере одна группа. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список ids тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|dependentAppCount|Int32|Общее число зависимостей, которые имеет детское приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|supersedingAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|supersededAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно вымежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |packageId|String|Идентификатор пакета.|
 |appIdentifier|String|Имя удостоверения.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
-|appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
+|appStoreUrl|String|URL-адрес приложения Play for Work Store.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -69,9 +69,9 @@ ms.locfileid: "49274400"
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Набор прямых отношений для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|deviceStatuses|[коллекция mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояния установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|userStatuses|[коллекция userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Список состояния установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|отношения|[коллекция mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Набор прямых связей для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e878a43325dcad36f615f8eefc41e74f6a85fd3
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 69953655c507550ebc4ffe731880f2530272059e7c2a5f50a08e3c5b2aa654df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54231322"
 ---
 # <a name="update-microsofttunnelserver"></a>Обновление microsoftTunnelServer
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51864860"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|MicrosoftTunnelGateway.ReadWrite.All|
+|Приложение|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelServer|
-|displayName|String|Имя отображения MicrosoftTunnelServer|
+|displayName|Строка|Имя отображения MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние здоровья MicrosoftTunnelServer. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|При последней регистрации в MicrosoftTunnelServer|
 

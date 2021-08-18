@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса Девицелогколлектионреспонсе
-description: Сущность запроса для сбора журналов Windows.
+title: тип ресурса deviceLogCollectionResponse
+description: Windows Объект запроса коллекции журналов.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8cde943ccfd4befad2a14f607350a9989e1e42d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fa4bffe14538618e1338b87f107148422086931e1761e171eff999eaac070626
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244738"
 ---
-# <a name="devicelogcollectionresponse-resource-type"></a>Тип ресурса Девицелогколлектионреспонсе
+# <a name="devicelogcollectionresponse-resource-type"></a>тип ресурса deviceLogCollectionResponse
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность запроса для сбора журналов Windows.
+Windows Объект запроса коллекции журналов.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Девицелогколлектионреспонсес](../api/intune-devices-devicelogcollectionresponse-list.md)|Коллекция [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md)|Список свойств и связей объектов [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
-|[Получение Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-get.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Чтение свойств и связей объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
-|[Создание Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-create.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Создание нового объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
-|[Удаление Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-delete.md)|Нет|Удаляет объект [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md).|
-|[Обновление Девицелогколлектионреспонсе](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Обновление свойств объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) .|
+|[List deviceLogCollectionResponses](../api/intune-devices-devicelogcollectionresponse-list.md)|[коллекция deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Список свойств и связей [объектов deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
+|[Get deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-get.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Чтение свойств и связей [объекта deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
+|[Создание deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-create.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Создайте новый [объект deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
+|[Удаление deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-delete.md)|Нет|Удаляет [устройствоLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md).|
+|[Обновление deviceLogCollectionResponse](../api/intune-devices-devicelogcollectionresponse-update.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Обновление свойств объекта [deviceLogCollectionResponse.](../resources/intune-devices-devicelogcollectionresponse.md)|
 |[Действие createDownloadUrl](../api/intune-devices-devicelogcollectionresponse-createdownloadurl.md)|String|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
-|status|String|Состояние запроса на сбор журналов|
-|манажеддевицеид|Guid|Идентификатор устройства|
-|errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
-|рекуестеддатетимеутк|DateTimeOffset|Дата и время запроса|
-|рецеиведдатетимеутк|DateTimeOffset|Дата и время получения запроса|
-|Свойства initiatedbyuserprincipalname|String|Имя участника-пользователя, который инициировал запрос.|
-|експиратиондатетимеутк|DateTimeOffset|Дата и время истечения срока действия журналов|
-|size|Двойное с плавающей точкой|Размер журналов. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
+|status|String|Состояние запроса на коллекцию журналов|
+|managedDeviceId|Guid|Id устройства|
+|errorCode|Int64|Код ошибки, если таковое есть. Допустимые значения -9.2237203685478E+18 до 9.22337203685478E+18|
+|requestedDateTimeUTC|DateTimeOffset|DateTime запроса|
+|receivedDateTimeUTC|DateTimeOffset|DateTime, в который был получен запрос|
+|initiatedByUserPrincipalName|Строка|UpN для тех, кто инициировал запрос|
+|expirationDateTimeUTC|DateTimeOffset|DateTime истечения срока действия журналов|
+|size|Двойное с плавающей точкой|Размер журналов. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 ## <a name="relationships"></a>Связи
 Нет

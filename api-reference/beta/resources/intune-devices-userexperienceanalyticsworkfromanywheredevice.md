@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cef0dd74416c4fbcef83ebe10109795ba41986c1
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0f9f5e5f6bc8ff43a3bac407858c1d41ff06f27d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665590"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255580"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -34,20 +34,33 @@ ms.locfileid: "52665590"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
+|id|String|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
 |deviceName|String|Работа из любого имени устройства.|
 |serialNumber|String|Пользовательский интерфейс работает с любого серийного номера устройства.|
 |manufacturer|String|Пользовательский интерфейс работает с любого производителя устройства.|
 |model|String|Пользовательский интерфейс работает из любой модели устройства.|
-|владение|Строка|Пользовательский интерфейс работает с любого владельца устройства.|
+|владение|String|Пользовательский интерфейс работает с любого владельца устройства.|
 |managedBy|Строка|Пользовательский интерфейс работает из любого агента управления устройства.|
 |autoPilotRegistered|Логический|Пользовательский интерфейс работает с автопилотом устройства intune.|
 |autoPilotProfileAssigned|Логический|Аналитика пользовательских интерфейсов работает из любого автопилота устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Пользовательский интерфейс работает с azureAdRegistered любого устройства.|
 |azureAdDeviceId|Строка|Пользовательский интерфейс работает из любого id-устройства Azure Ad.|
-|azureAdJoinType|Строка|Пользовательский опыт работы из любого устройства azure Ad joinType.|
+|azureAdJoinType|String|Пользовательский опыт работы из любого устройства azure Ad joinType.|
 |osDescription|String|Пользовательский интерфейс работает из любого описания ОС устройства.|
 |osVersion|String|Пользовательский интерфейс работает из любой версии ОС устройства.|
+|tenantAttached|Логический|Пользовательский интерфейс работает с любого клиента устройстваAttached.|
+|compliancePolicySetToIntune|Логический|Пользовательский интерфейс работает из любой точки устройства compliancePolicySetToIntune.|
+|otherWorkloadsSetToIntune|Логический|Пользовательский интерфейс работает из любого другого устройстваWorkloadsSetToIntune.|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|Пользовательский опыт работы из любой точки windows обновить состояние приемлемости устройства. Возможные значения: `upgraded`, `unknown`, `notCapable`, `capable`.|
+|ramCheckFailed|Логический|Является ли работа аналитики пользовательского интерфейса из любой точки проверки оборудования оперативной памяти устройства неудачной для устройства для обновления до последней версии windows|
+|storageCheckFailed|Логический|Пользовательский опыт работы с любого устройства, Является ли проверка оборудования хранения не удалось для устройства для обновления до последней версии windows.|
+|processorCoreCountCheckFailed|Логический|Работа пользовательского интерфейса с любого устройства— проверка подсчета ядра процессора не удалось для устройства, чтобы обновиться до последней версии windows.|
+|processorSpeedCheckFailed|Логический|Пользовательский опыт работы с любого устройства, Является ли проверка скорости оборудования процессора не удалось для устройства для обновления до последней версии windows.|
+|tpmCheckFailed|Логический|Работа пользовательского интерфейса с любого устройства — это проверка аппаратного модуля доверенных платформ (TPM) для устройства до последней версии обновления до windows.|
+|secureBootCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является безопасной проверки оборудования загрузки не удалось для устройства для обновления до последней версии windows.|
+|processorFamilyCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является проверка семейства оборудования процессора не удалось для устройства для обновления до последней версии windows.|
+|processor64BitCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка архитектуры процессорного оборудования 64-битной не удалось для устройства, чтобы обновить до последней версии windows.|
+|osCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка ОС не удалось для устройства для обновления до последней версии windows.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -76,7 +89,20 @@ ms.locfileid: "52665590"
   "azureAdDeviceId": "String",
   "azureAdJoinType": "String",
   "osDescription": "String",
-  "osVersion": "String"
+  "osVersion": "String",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "String",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true
 }
 ```
 

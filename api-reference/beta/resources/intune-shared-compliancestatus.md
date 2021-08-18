@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Комплианцестатус
+title: тип из enum complianceStatus
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8a1f151b23752ea42a696513dad56a147117fb0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ed0f456d5ce6e4d157a4300237498146a226a78407ea849fdc58fc86b639f35a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49258964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234696"
 ---
-# <a name="compliancestatus-enum-type"></a>тип перечисления Комплианцестатус
+# <a name="compliancestatus-enum-type"></a>тип из enum complianceStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,14 +25,14 @@ ms.locfileid: "49258964"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Пока не задокументировано.|
-|нотаппликабле|1,1|Пока не задокументировано.|
-|совместимо|2|Пока не задокументировано.|
-|исправленных|4|Пока не задокументировано.|
-|Несоответствующих|4 |Пока не задокументировано.|
+|unknown|0|Пока не задокументировано.|
+|notApplicable|1 |Пока не задокументировано.|
+|совместимый|2|Пока не задокументировано.|
+|исправлено|3 |Пока не задокументировано.|
+|nonCompliant|4 |Пока не задокументировано.|
 |error|5 |Пока не задокументировано.|
-|противоречивы|6 |Пока не задокументировано.|
-|нотассигнед|7 |Пока не задокументировано.|
+|конфликт|6 |Пока не задокументировано.|
+|notAssigned|7 |Пока не задокументировано.|
 
 
 

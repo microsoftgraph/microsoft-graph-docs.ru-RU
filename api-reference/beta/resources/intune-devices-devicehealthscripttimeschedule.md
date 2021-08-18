@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Девицехеалсскрипттимесчедуле
-description: Базовый тип расписания работоспособности устройства для сценария работоспособности.
+title: тип ресурса deviceHealthScriptTimeSchedule
+description: Базовый тип расписания скрипта для скрипта для здоровья устройств.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 362bc9d449c3854fa98272758546a871333162a8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d9f13ec9c3913cadbfb99b37416e24903bb823e2b551a26b1ba27f9933e609c7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232589"
 ---
-# <a name="devicehealthscripttimeschedule-resource-type"></a>Тип ресурса Девицехеалсскрипттимесчедуле
+# <a name="devicehealthscripttimeschedule-resource-type"></a>тип ресурса deviceHealthScriptTimeSchedule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Базовый тип расписания работоспособности устройства для сценария работоспособности.
+Базовый тип расписания скрипта для скрипта для здоровья устройств.
 
 
-Наследуется от [девицехеалсскриптрунсчедуле](../resources/intune-devices-devicehealthscriptrunschedule.md)
+Наследует от [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|interval|Int32|Значение x каждого x часа для ежечасного расписания, каждые x дней для ежедневного расписания, каждые x недель для еженедельного расписания, каждые x месяцев для ежемесячного расписания. Допустимые значения — от 1 до 23, наследуемые от [девицехеалсскриптрунсчедуле](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|усеутк|Boolean|Укажите время в формате UTC или местное время клиента.|
-|time|TimeOfDay|При планировании запуска сценария. Эта коллекция может содержать не более 20 элементов.|
+|interval|Int32|X значение каждые х часов для почасового расписания, каждые х дней для ежедневного расписания, каждые х недель для еженедельного расписания, каждые х месяцев для ежемесячного расписания. Допустимые значения от 1 до 23, унаследованные от [устройстваHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
+|useUtc|Логический|Указать, является ли время Utc или клиент локальным.|
+|time|TimeOfDay|В какое время планируется запустить сценарий. Эта коллекция может содержать не более 20 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет
