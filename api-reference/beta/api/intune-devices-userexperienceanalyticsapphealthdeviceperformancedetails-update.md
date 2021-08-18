@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d4a922aa2d6101667024dff7fa458f43fb82f25
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d9b10b7acc32fa8b5bf510e2771a7738717e5744
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51136015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255411"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Обновление userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51136015"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,12 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
 |eventDateTime|DateTimeOffset|Время события.|
 |eventType|Строка|Тип события.|
 |appDisplayName|String|Удобное имя приложения, для которого произошло событие.|
+|appPublisher|Строка|Издатель приложения.|
+|appVersion|String|Версия приложения.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
@@ -72,13 +74,15 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails/{userExperienceAnalyticsAppHealthDevicePerformanceDetailsId}
 Content-type: application/json
-Content-length: 325
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -89,7 +93,7 @@ Content-length: 325
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 454
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
@@ -97,6 +101,8 @@ Content-Length: 374
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "eventType": "Event Type value",
   "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appVersion": "App Version value",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }

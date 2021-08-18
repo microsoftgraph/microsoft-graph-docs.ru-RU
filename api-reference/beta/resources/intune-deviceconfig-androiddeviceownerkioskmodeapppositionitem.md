@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса androidDeviceOwnerKioskModeAppPositionItem
-description: Элемент в списке позиций приложения, который задает порядок элементов на управляемом домашнем экране
+title: тип ресурса androidDeviceOwnerKioskModeAppPositionItem
+description: Элемент в списке позиций приложений, который задает порядок элементов на управляемом домашнем экране
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 788b7ac612fd025bb778c387be2051769de66ccb
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: e4e658e4289f2d08dbb8552bd3496db6d80a9161d5d065d88a11691061340d29
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160625"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245116"
 ---
-# <a name="androiddeviceownerkioskmodeapppositionitem-resource-type"></a>Тип ресурса androidDeviceOwnerKioskModeAppPositionItem
+# <a name="androiddeviceownerkioskmodeapppositionitem-resource-type"></a>тип ресурса androidDeviceOwnerKioskModeAppPositionItem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Элемент в списке позиций приложения, который задает порядок элементов на управляемом домашнем экране
+Элемент в списке позиций приложений, который задает порядок элементов на управляемом домашнем экране
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|position|Int32|Положение элемента в сетке. Допустимые значения: от 0 до 999 999 999|
-|item|[androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)|Устроимый элемент|
+|position|Int32|Расположение элемента в сетке. Допустимые значения от 0 до 9999999|
+|item|[androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)|Пункт, который нужно расположить|
 
 ## <a name="relationships"></a>Связи
 Нет

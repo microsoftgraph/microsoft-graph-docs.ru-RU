@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3245d4a22a84ab0dea72146f7724cfdd83a88c9b
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: c8befb67a265066cd645cd2f4d45e193e0574be3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51125284"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253532"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>Создание устройстваAndAppManagementAssignmentFilter
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51125284"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceManagement/assignmentFilters
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,13 @@ POST /deviceManagement/assignmentFilters
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ фильтра назначения.|
+|id|String|Ключ фильтра назначения.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначения.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время фильтра назначения.|
-|displayName|Строка|DisplayName фильтра назначения.|
+|displayName|String|DisplayName фильтра назначения.|
 |description|Строка|Описание фильтра назначения.|
-|платформа|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правило|Строка|Определение правила фильтра назначения.|
+|платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|правило|String|Определение правила фильтра назначения.|
 |roleScopeTags|Коллекция String|RoleScopeTags фильтра назначения.|
 
 

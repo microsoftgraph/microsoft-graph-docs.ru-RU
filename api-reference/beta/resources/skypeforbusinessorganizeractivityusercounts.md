@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Скипефорбусинессорганизерактивитюсеркаунтс
+title: тип ресурса skypeForBusinessOrganizerActivityUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: c88ee5faa6236ffe7802db9bf7ede38d8a7bdb36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d1ae94e2a664f0db162c9b0838bb538b54c73c52339ac9215322e2faf7a7d4d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54170288"
 ---
-# <a name="skypeforbusinessorganizeractivityusercounts-resource-type"></a>Тип ресурса Скипефорбусинессорганизерактивитюсеркаунтс
+# <a name="skypeforbusinessorganizeractivityusercounts-resource-type"></a>тип ресурса skypeForBusinessOrganizerActivityUserCounts
 
 Пространство имен: microsoft.graph
 
@@ -21,16 +21,16 @@ ms.locfileid: "48063935"
 | Свойство           | Тип   |
 | :----------------- | :----- |
 | im                 | Int64  |
-| Audiovideohttp         | Int64  |
-| аппшаринг         | Int64  |
+| audioVideo         | Int64  |
+| appSharing         | Int64  |
 | web                | Int64  |
 | dialInOut3rdParty  | Int64  |
-| диалинаутмикрософт | Int64  |
-| репортрефрешдате  | Дата   |
+| dialInOutMicrosoft | Int64  |
+| reportRefreshDate  | Дата   |
 | reportDate         | Дата   |
-| репортпериод       | String |
+| reportPeriod       | Строка |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

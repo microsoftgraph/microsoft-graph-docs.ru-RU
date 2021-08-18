@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a500c5f1510a28638e58be0ef32d328cc598776
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 9a8c51bc95de38ddfebc394b50cfdf3dcd12fe74
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135833"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263865"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51135833"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,27 +53,27 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для объекта защиты от устройства. Это id устройства|
-|malwareProtectionEnabled|Boolean|Включено или не включено вредоносное ПО|
+|id|String|Уникальный идентификатор для объекта защиты от устройства. Это id устройства|
+|malwareProtectionEnabled|Логический|Включено или не включено вредоносное ПО|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или ожидающих перезагрузки и т.д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Boolean|Включена защита в режиме реального времени или нет?|
-|networkInspectionSystemEnabled|Boolean|Включена или нет включена система сетевого контроля?|
-|quickScanOverdue|Boolean|Быстрое сканирование просрочено или нет?|
-|fullScanOverdue|Boolean|Полная просроченная проверка или нет?|
-|signatureUpdateOverdue|Boolean|Подпись устарела или нет?|
-|rebootRequired|Boolean|Перезагрузка требуется или нет?|
-|fullScanRequired|Boolean|Полное сканирование требуется или нет?|
+|realTimeProtectionEnabled|Логический|Включена защита в режиме реального времени или нет?|
+|networkInspectionSystemEnabled|Логический|Включена или нет включена система сетевого контроля?|
+|quickScanOverdue|Логический|Быстрое сканирование просрочено или нет?|
+|fullScanOverdue|Логический|Полная просроченная проверка или нет?|
+|signatureUpdateOverdue|Логический|Подпись устарела или нет?|
+|rebootRequired|Логический|Перезагрузка требуется или нет?|
+|fullScanRequired|Логический|Полное сканирование требуется или нет?|
 |engineVersion|Строка|Версия двигателя защиты конечной точки|
-|signatureVersion|Строка|Текущая версия определений вредоносных программ|
+|signatureVersion|String|Текущая версия определений вредоносных программ|
 |antiMalwareVersion|Строка|Текущая версия антивирусных программ|
 |lastQuickScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
 |lastFullScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
 |lastQuickScanSignatureVersion|Строка|Последняя версия подписи быстрого сканирования|
-|lastFullScanSignatureVersion|Строка|Последняя версия подписи полного сканирования|
+|lastFullScanSignatureVersion|String|Последняя версия подписи полного сканирования|
 |lastReportedDateTime|DateTimeOffset|Время последнего состояния состояния устройства|
-|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта Защитник Windows антивируса. Возможные значения: `noStatus` `serviceNotRunning` , `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` . `windowsSModeSignaturesInUseOnNonWin10SInstall`|
-|isVirtualMachine|Boolean|Указывает, является ли устройство виртуальной машиной.|
-|tamperProtectionEnabled|Boolean|Указывает, включена ли Защитник Windows защита от взлома.|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта антивирусная программа . Возможные значения: `noStatus` `serviceNotRunning` , `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` . `windowsSModeSignaturesInUseOnNonWin10SInstall`|
+|isVirtualMachine|Логический|Указывает, является ли устройство виртуальной машиной.|
+|tamperProtectionEnabled|Логический|Указывает, включена ли Защитник Windows защита от взлома.|
 
 
 

@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 localization_priority: Normal
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 70b0dbf8822c46c06cb6ade17e7b0e80c211c60a
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ab13ec1222b9d92a0dde46327ab80acd3f81a6e1273da839820510286dd1a0cc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203290"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Значения Graph Windows обновлений Майкрософт
 
@@ -18,7 +18,7 @@ ms.locfileid: "52068136"
 
 ### <a name="azureaddeviceregistrationerrorreason-values"></a>azureADDeviceRegistrationErrorReason 
 
-|Member|
+|Элемент|
 |:---|
 |invalidGlobalDeviceId|
 |invalidAzureADDeviceId|
@@ -27,7 +27,7 @@ ms.locfileid: "52068136"
 
 ### <a name="deploymentstatereasonvalue-values"></a>значения deploymentStateReasonValue 
 
-|Member|
+|Элемент|
 |:---|
 |scheduledByOfferWindow|
 |offeringByRequest|
@@ -36,7 +36,7 @@ ms.locfileid: "52068136"
 
 ### <a name="deploymentstatevalue-values"></a>значения deploymentStateValue 
 
-|Member|
+|Элемент|
 |:---|
 |scheduled|
 |предложение|
@@ -46,27 +46,27 @@ ms.locfileid: "52068136"
 
 ### <a name="equivalentcontentoption-values"></a>эквивалентные значенияContentOption 
 
-|Member|
+|Элемент|
 |:---|
-|нет|
+|Нет|
 |latestSecurity|
 
 ### <a name="monitoringaction-values"></a>значения monitoringAction 
 
-|Member|
+|Элемент|
 |:---|
 |alertError|
 |pauseDeployment|
 
 ### <a name="monitoringsignal-values"></a>monitoringSignal values 
 
-|Member|
+|Элемент|
 |:---|
 |откат|
 
 ### <a name="qualityupdateclassification-values"></a>значения qualityUpdateClassification 
 
-|Member|
+|Элемент|
 |:---|
 |все|
 |безопасность|
@@ -74,15 +74,15 @@ ms.locfileid: "52068136"
 
 ### <a name="requesteddeploymentstatevalue-values"></a>requestedDeploymentStateValue values 
 
-|Member|
+|Элемент|
 |:---|
-|нет|
+|Нет|
 |приостановлено|
 |архив|
 
 ### <a name="updatecategory-values"></a>updateCategory values 
 
-|Member|
+|Элемент|
 |:---|
 |функция|
 |качество|

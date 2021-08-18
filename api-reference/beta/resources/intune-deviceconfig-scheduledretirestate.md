@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Счедуледретирестате
-description: 'Отмена или подтверждение запланированного снятия с учета '
+title: тип enum scheduledRetireState
+description: 'Отмена или подтверждение запланированной отмены '
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fdb4f745f8eeee059326135319f50277a9cf3721
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7cd5ef1f5aa4c6e83ba9299569e2012f4bdd1abca0609d7a2ca22e20299ccd9b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54198215"
 ---
-# <a name="scheduledretirestate-enum-type"></a>тип перечисления Счедуледретирестате
+# <a name="scheduledretirestate-enum-type"></a>тип enum scheduledRetireState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Отмена или подтверждение запланированного снятия с учета 
+Отмена или подтверждение запланированной отмены 
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|канцелретире|нуль|Отмена снятия с учета.|
-|комфирмретире|1,1|Отказаться от этих устройств.|
+|cancelRetire|0|Отмена отмены.|
+|comfirmRetire|1 |Отойдут от этих устройств.|
 
 
 

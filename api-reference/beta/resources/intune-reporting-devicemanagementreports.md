@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b91f2d8112c903b10f94268b3f885425b5b25a6c
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: e4497a6ba13884be186130d0a46db0b061629e30519ced83611dcc201d74dcc7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51869193"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249715"
 ---
 # <a name="devicemanagementreports-resource-type"></a>тип ресурса deviceManagementReports
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -46,7 +46,7 @@ ms.locfileid: "51869193"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
+|id|Строка|Уникальный идентификатор для этого объекта|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 53ec8c6046c9682c0bdea607a942cb673671d0b3
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 451d1abc82be09f37933dce7bbacdfc4931252d3
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231646"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384368"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Работа с API отчета об использовании методов проверки подлинности
 
@@ -27,13 +27,13 @@ ms.locfileid: "52231646"
 - Коэффициенты сбоя каждого метода проверки подлинности 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуются разрешения ниже. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуются указанные ниже разрешения. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Reports.Read.All<br>AuditLogs.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|Reports.Read.All, AuditLog.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Reports.Read.All<br>AuditLogs.Read.All|
+|Приложение|Reports.Read.All, AuditLog.Read.All|
 
 Чтобы получить доступ к API, требуется одна [из](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) следующих ролей:
 
@@ -45,13 +45,13 @@ ms.locfileid: "52231646"
 
 ## <a name="licenses"></a>Лицензии
 
-Для доступа к использованию и Premium P1 или P2 требуется лицензия Azure AD. Сведения о лицензировании Azure AD с многофакторной проверкой подлинности и [сбросом](https://azure.microsoft.com/pricing/details/active-directory/)пароля самообслуживления (SSPR) можно найти на сайте Azure Active Directory цен.
+Для доступа к использованию и сведениям требуется лицензия Azure AD Premium P1 или P2. Сведения о лицензировании Azure AD с многофакторной проверкой подлинности и [сбросом](https://azure.microsoft.com/pricing/details/active-directory/)пароля самообслуживления (SSPR) можно найти на сайте Azure Active Directory цен.
 
 ## <a name="common-requests"></a>Общие запросы
 
 В следующей таблице перечислены некоторые распространенные запросы, которые можно использовать с помощью этого API.
 
-| Operation | Попробовать в песочнице Graph | Описание |
+| Операция | Попробовать в песочнице Graph | Описание |
 | --------- | --- | ----------- |
 | [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta&preserve-view=true) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Получите число пользователей, зарегистрированных для сброса пароля самообслуживки и MFA. |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Получите число пользователей, использующих сброс пароля самообслуживки. |

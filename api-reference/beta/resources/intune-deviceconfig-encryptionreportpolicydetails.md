@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Енкриптионрепортполицидетаилс
+title: тип ресурса encryptionReportPolicyDetails
 description: Сведения о политике для отчета о шифровании
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 874af3d0bf98cbfc5884a4f3387eb8d55323acaf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 84a5f10542db3f2677cda68923eebf1bc2fb4008bfb0ee6a2669fd8be33f6951
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241968"
 ---
-# <a name="encryptionreportpolicydetails-resource-type"></a>Тип ресурса Енкриптионрепортполицидетаилс
+# <a name="encryptionreportpolicydetails-resource-type"></a>тип ресурса encryptionReportPolicyDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49294580"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|полициид|String|Идентификатор политики для отчета о шифровании|
-|policyName|String|Имя политики для отчета о шифровании|
+|policyId|String|Код политики для отчета о шифровании|
+|policyName|Строка|Имя политики для отчета о шифровании|
 
 ## <a name="relationships"></a>Связи
 Нет

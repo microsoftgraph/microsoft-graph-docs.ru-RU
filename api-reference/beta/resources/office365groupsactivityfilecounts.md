@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365GroupsActivityFileCounts
+title: тип ресурса office365GroupsActivityFileCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 1f4f26e141dc25e1e5e249ad116bc9a988274f18
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: f05cf16e1b2e0273aaa62241bbeac3b0d872bf87605e2c852ac2ab28e25f9526
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981503"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160865"
 ---
-# <a name="office365groupsactivityfilecounts-resource-type"></a>Тип ресурса office365GroupsActivityFileCounts
+# <a name="office365groupsactivityfilecounts-resource-type"></a>тип ресурса office365GroupsActivityFileCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,11 +20,11 @@ ms.locfileid: "49981503"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | Дата   | Последняя дата содержимого.          |
-| total             | Int64  | Общее количество файлов в библиотеке документов SharePoint группы. |
-| active            | Int64  | Количество файлов, которые просматривались, редактируются, совместно или синхронизированы в библиотеке документов SharePoint группы. |
-| reportDate        | Дата   | Дата, когда на сайте SharePoint группы было активно несколько файлов. |
-| reportPeriod      | String | Количество дней в отчете.    |
+| reportRefreshDate | Дата   | Последняя дата контента.          |
+| total             | Int64  | Общее число файлов в библиотеке SharePoint группы. |
+| active            | Int64  | Количество файлов, которые просматривались, редактировали, делились или синхронизировались в библиотеке документов SharePoint группы. |
+| reportDate        | Дата   | Дата активных действий нескольких файлов на веб-сайте SharePoint группы. |
+| reportPeriod      | Строка | Количество дней, которые охватывает отчет.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Девицеманажементсеттингрежексконстраинт
-description: Ограничение, в соответствии с которым параметр соответствует заданному шаблону регулярного выражения
+title: тип ресурса deviceManagementSettingRegexConstraint
+description: Ограничение, принудительное выполнение параметров, совпадающих с заданным шаблоном RegEx
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11d06b2af4273166b3d6cf93a36a76fecc7ec548
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 00607d37eda6490c5769c9566f583d7c231da33fa0b7781c072fdb619947fcc0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267931"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251297"
 ---
-# <a name="devicemanagementsettingregexconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингрежексконстраинт
+# <a name="devicemanagementsettingregexconstraint-resource-type"></a>тип ресурса deviceManagementSettingRegexConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение, в соответствии с которым параметр соответствует заданному шаблону регулярного выражения
+Ограничение, принудительное выполнение параметров, совпадающих с заданным шаблоном RegEx
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|выражений|String|Шаблон регулярного выражения, с которым выполняется сравнение|
+|regex|String|Шаблон RegEx, который соответствует|
 
 ## <a name="relationships"></a>Связи
 Нет
