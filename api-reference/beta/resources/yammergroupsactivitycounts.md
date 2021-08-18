@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса yammerGroupsActivityCounts
+title: тип ресурса yammerGroupsActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 1b7a4cd14f7fb4d9d2d06f8c37d5ed0ffe0e7e37
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 613570e32b9cb8eee3d7dc1341cb9cb20bc530768022586717486d19dc355539
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219558"
 ---
-# <a name="yammergroupsactivitycounts-resource-type"></a>Тип ресурса yammerGroupsActivityCounts
+# <a name="yammergroupsactivitycounts-resource-type"></a>тип ресурса yammerGroupsActivityCounts
 
 Пространство имен: microsoft.graph
 
@@ -21,11 +21,11 @@ ms.locfileid: "49982350"
 | Свойство          | Тип   |
 | :---------------- | :----- |
 | reportRefreshDate | Дата   |
-| liked             | Int64  |
-| posted            | Int64  |
+| понравились             | Int64  |
+| опубликовано            | Int64  |
 | read              | Int64  |
 | reportDate        | Дата   |
-| reportPeriod      | String |
+| reportPeriod      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 

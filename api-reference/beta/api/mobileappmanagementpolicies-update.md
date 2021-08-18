@@ -5,12 +5,12 @@ author: ravennMSFT
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fe577a8c27b7c32e320416da74a4fa34fabb3339
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 06e52397e879148ca9a30ec840e507ab7dff3aaddd8366e1fccde3ecdd7ec40a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57270396"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>Обновление mobileAppManagementPolicy
 
@@ -58,8 +58,8 @@ PATCH /policies/mobileAppManagementPolicies/{id}
 |:---|:---|:---|
 |appliesTo|policyScope|Определяет группы, к которые применяется этот параметр политики. Возможные значения: `none` , `all` , `selected` **Важно: не** может использоваться при `selected` указании этого свойства. Используйте [includedGroups для](../api/mobileappmanagementpolicies-post-includedgroups.md) добавления определенных групп.|
 |complianceUrl|String|URL-адрес соответствия приложению управления мобильностью|
-|discoveryUrl|String|Обнаружение URL-адреса приложения для управления мобильностью|
-|termsOfUseUrl|String|Условия использования URL-адреса приложения для управления мобильностью|
+|discoveryUrl|Строка|Обнаружение URL-адреса приложения для управления мобильностью|
+|termsOfUseUrl|Строка|Условия использования URL-адреса приложения для управления мобильностью|
 
 ## <a name="response"></a>Отклик
 

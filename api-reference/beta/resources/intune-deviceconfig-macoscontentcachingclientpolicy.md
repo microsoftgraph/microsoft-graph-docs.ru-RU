@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Макосконтенткачингклиентполици
+title: тип enum macOSContentCachingClientPolicy
 description: Определяет, какие клиенты будут обслуживать кэш контента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8b2baeb66173b8e09f46bd570aa799ca9d2845e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 88030eec0996f0a5f2c80717a5b422495562a66e4e7133f0c3fc1665f1636855
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54124733"
 ---
-# <a name="macoscontentcachingclientpolicy-enum-type"></a>тип перечисления Макосконтенткачингклиентполици
+# <a name="macoscontentcachingclientpolicy-enum-type"></a>тип enum macOSContentCachingClientPolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49268785"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|По умолчанию используется значение Clients в локальной сети.|
-|клиентсинлокалнетворк|1,1|Кэши контента будут предоставлять контент только для устройств в непосредственных локальных сетях.|
-|клиентсвиссамепублиЦипаддресс|2|Кэши контента будут предоставлять контент для устройств, использующих один общий IP-адрес.|
-|клиентсинкустомлокалнетворкс|4|Кэши контента будут предоставлять контент для устройств в Контенткачингклиентлистенранжес.|
-|клиентсинкустомлокалнетворксвисфаллбакк|4 |Кэши контента будут предоставлять контент для устройств в Контенткачингклиентлистенранжес, Контенткачингпирлистенранжес и Контенткачингпарентс.|
+|notConfigured|0|По умолчанию для клиентов в локальной сети.|
+|clientsInLocalNetwork|1 |Кэши контента будут предоставлять контент устройствам только в непосредственной локальной сети.|
+|clientsWithSamePublicIpAddress|2|Кэши контента будут предоставлять контент устройствам с одинаковым общедоступным IP-адресом.|
+|clientsInCustomLocalNetworks|3 |Кэши контента будут предоставлять контент устройствам в contentCachingClientListenRanges.|
+|customersInCustomLocalNetworksWithFallback|4 |Кэши контента будут предоставлять контент устройствам в contentCachingClientListenRanges, contentCachingPeerListenRanges и contentCachingParents.|
 
 
 

@@ -1,32 +1,30 @@
 ---
-title: Тип ресурса Мобилеапптраублешутингхисторитем
-description: Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+title: тип ресурса mobileAppTroubleshootingHistoryItem
+description: Элемент history, содержащийся в событии устранения неполадок мобильных приложений.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d017c6b1bba7552bc2524f21cf5c102254b4dfcc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: eca7ddacef439b6542619f10ad65a3bfceb2c507
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271480"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266914"
 ---
-# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>Тип ресурса Мобилеапптраублешутингхисторитем
+# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>тип ресурса mobileAppTroubleshootingHistoryItem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+Элемент history, содержащийся в событии устранения неполадок мобильных приложений.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала.|
-|траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении.|
+|occurrenceDateTime|DateTimeOffset|Время, когда произошел элемент истории.|
+|устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении.|
 
 ## <a name="relationships"></a>Связи
 Нет

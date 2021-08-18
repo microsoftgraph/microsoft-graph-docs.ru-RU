@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83bbca5bfb965a477e0603bb28f80ceb273a4ce8
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: de9aed6255bfeb3cbd3bbd56a1da05900a7e6a27d0d655e0819091185686703d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226639"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>функция managedDeviceEnrollmentAbandonmentSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "51865406"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос

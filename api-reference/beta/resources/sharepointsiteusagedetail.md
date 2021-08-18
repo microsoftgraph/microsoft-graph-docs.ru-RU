@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса sharePointSiteUsageDetail
+title: тип ресурса sharePointSiteUsageDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: f8f06cf9fcf1dfc01af3e98c01a79a86426e19ee
-ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
+ms.openlocfilehash: d52d7675521c297ee602102847ddb3fa653d3d8af3efba64f3a71d783d83a708
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50115222"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176178"
 ---
-# <a name="sharepointsiteusagedetail-resource-type"></a>Тип ресурса sharePointSiteUsageDetail
+# <a name="sharepointsiteusagedetail-resource-type"></a>тип ресурса sharePointSiteUsageDetail
 
 Пространство имен: microsoft.graph
 
@@ -24,12 +24,12 @@ ms.locfileid: "50115222"
 | siteId                  | Guid  |
 | siteUrl                 | Строка  |
 | ownerDisplayName        | Строка  |
-| ownerPrincipalName      | Строка  |
-| isDeleted               | Boolean |
+| ownerPrincipalName      | String  |
+| isDeleted               | Логический |
 | lastActivityDate        | Дата    |
 | SiteSensitivityLabelId  | Строка  |
-| ExternalSharing         | Boolean |
-| UnmanagedDevicePolicy   | Строка  |
+| ExternalSharing         | Логический |
+| UnmanagedDevicePolicy   | String  |
 | GeoLocation             | Строка  |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
@@ -41,10 +41,10 @@ ms.locfileid: "50115222"
 | SecureLinkForMemberCount| Int64   |
 | storageUsedInBytes      | Int64   |
 | storageAllocatedInBytes | Int64   |
-| rootWebTemplate         | Строка  |
-| reportPeriod            | Строка  |
+| rootWebTemplate         | String  |
+| reportPeriod            | String  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

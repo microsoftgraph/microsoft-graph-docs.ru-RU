@@ -4,12 +4,12 @@ description: У приложений, подписывающихся на уве
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 0f0fd13d70089ddbb378b1baf97c01e1240bb36366680bc009d3f6d6a9f7b952
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 29b769e9f3a5020f272152e86436f419206029b9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159654"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264635"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>Уменьшение количества пропущенных уведомлений о подписках и изменениях
 
@@ -50,6 +50,7 @@ Microsoft Graph также отправляет другое уведомлен�
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",

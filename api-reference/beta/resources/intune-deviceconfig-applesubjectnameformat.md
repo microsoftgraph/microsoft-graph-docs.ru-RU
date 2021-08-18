@@ -1,36 +1,36 @@
 ---
-title: тип перечисления Апплесубжектнамеформат
-description: Параметры формата имени субъекта для устройств Apple.
+title: тип enum appleSubjectNameFormat
+description: Параметры формата subject Name для устройств Apple.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 592eb36f53a136c6c892d5edb408bf18702d6f26
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2e353e49135ee734e2a4f78506eb59d6ebbd6f756048dde8d7552572058c42c3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156361"
 ---
-# <a name="applesubjectnameformat-enum-type"></a>тип перечисления Апплесубжектнамеформат
+# <a name="applesubjectnameformat-enum-type"></a>тип enum appleSubjectNameFormat
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры формата имени субъекта для устройств Apple.
+Параметры формата subject Name для устройств Apple.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|коммоннаме|нуль|Общее имя.|
-|коммоннамеасемаил|1,1|Общее имя как электронная почта.|
-|собственный|2|Настраиваемый формат имени субъекта.|
-|коммоннамеинклудинжемаил|4|Общее имя, включая электронную почту.|
-|коммоннамеасимеи|5 |Общее имя в виде IMEI.|
-|коммоннамеассериалнумбер|6 |Общее имя в виде порядкового номера.|
+|commonName|0|Общее имя.|
+|commonNameAsEmail|1 |Общее имя в качестве электронной почты.|
+|настраиваемый|2|Настраиваемый формат имени субъекта.|
+|commonNameIncludingEmail|3 |Общее имя, включая электронную почту.|
+|commonNameAsIMEI|5 |Общее имя как IMEI.|
+|commonNameAsSerialNumber|6 |Общее имя как серийный номер.|
 
 
 

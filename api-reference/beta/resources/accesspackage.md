@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: faef8ab32caa9e065f264eed6a8ad862ef6f8dd0
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 95bf04ace23b6340fcef3c0945fad1bd221e8a12
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401500"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256158"
 ---
 # <a name="accesspackage-resource-type"></a>тип ресурса accessPackage
 
@@ -43,20 +43,21 @@ ms.locfileid: "53401500"
 | [Удаление группы из несовместимых групп](../api/accesspackage-delete-incompatiblegroup.md) | Нет | Удалите ссылку, которая указывала, что членство **в** группе несовместимо.|
 | [Список accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка объектов  **accesspackage,** которые перечисляют этот пакет доступа как несовместимые. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[коллекция accessPackage](../resources/accesspackage.md)|Извлечение списка **объектов accessPackage,** фильтруемых на входе пользователя.|
+| [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) | [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection | Извлечение списка **объектов accessPackageAssignmentRequestRequirement** с требованиями запроса. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|catalogId|String|ID каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
+|catalogId|Строка|ID каталога пакетов доступа, ссылаясь на этот пакет доступа. Только для чтения.|
 |createdBy|String|UPN пользователя или удостоверения субъекта, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|description|String|Описание пакета доступа.|
+|description|Строка|Описание пакета доступа.|
 |displayName|String|Отображение имени пакета доступа.|
 |id|String| Только для чтения.|
 |isHidden|Логический|Скрыт ли пакет доступа от запросителя.|
-|isRoleScopesVisible|Boolean|Указывает, видны ли области ролей.|
-|modifiedBy|String|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
+|isRoleScopesVisible|Логический|Указывает, видны ли области ролей.|
+|modifiedBy|Строка|UpN пользователя, который в последний раз изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
@@ -65,7 +66,7 @@ ms.locfileid: "53401500"
 |:-------------|:------------|:------------|
 |accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection| Только для чтения. Допускается значение null.|
 |accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Только для чтения. Допускается значение null.|
-|accessPackageResourceRoleScopes|[коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md)| Допускается значение null.|
+|accessPackageResourceRoleScopes|[коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md)| Допускает значение null.|
 | incompatibleAccessPackages | [коллекция accessPackage](accesspackagecatalog.md) | Пакеты доступа, которым назначены пользователи, не могут быть назначены этому пакету доступа. |
 | accessPackagesIncompatibleWith | [коллекция accessPackage](accesspackagecatalog.md) | Пакеты доступа, несовместимые с этим пакетом. Только для чтения. |
 | incompatibleGroups | Коллекция [group](group.md) | Группы, члены которых не могут быть назначены этому пакету доступа. |

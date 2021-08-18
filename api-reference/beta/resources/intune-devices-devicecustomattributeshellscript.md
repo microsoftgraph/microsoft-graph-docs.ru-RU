@@ -1,60 +1,60 @@
 ---
-title: Тип ресурса Девицекустоматтрибутешеллскрипт
-description: Представляет скрипт настраиваемого атрибута для macOS.
+title: тип ресурса deviceCustomAttributeShellScript
+description: Представляет настраиваемый скрипт атрибута для macOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71c7630daa03c695284bf225e56c69c2d6172b0b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 32d1e032e8bc781a9f7ab1d433e1c8b757097ca6494c68094addde0812898376
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239408"
 ---
-# <a name="devicecustomattributeshellscript-resource-type"></a>Тип ресурса Девицекустоматтрибутешеллскрипт
+# <a name="devicecustomattributeshellscript-resource-type"></a>тип ресурса deviceCustomAttributeShellScript
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет скрипт настраиваемого атрибута для macOS.
+Представляет настраиваемый скрипт атрибута для macOS.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Девицекустоматтрибутешеллскриптс](../api/intune-devices-devicecustomattributeshellscript-list.md)|Коллекция [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md)|Список свойств и связей объектов [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
-|[Получение Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-get.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Чтение свойств и связей объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
-|[Создание Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-create.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Создание нового объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
-|[Удаление Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-delete.md)|Нет|Удаляет объект [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md).|
-|[Обновление Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-update.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Обновление свойств объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
+|[Список устройствCustomAttributeShellScripts](../api/intune-devices-devicecustomattributeshellscript-list.md)|[коллекция deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Список свойств и связей объектов [deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
+|[Get deviceCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-get.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Чтение свойств и связей [объекта deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
+|[Создание устройстваCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-create.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Создайте новый [объект deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
+|[Удаление устройстваCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-delete.md)|Нет|Удаляет [устройствоCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md).|
+|[Обновление устройстваCustomAttributeShellScript](../api/intune-devices-devicecustomattributeshellscript-update.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Обновление свойств объекта [deviceCustomAttributeShellScript.](../resources/intune-devices-devicecustomattributeshellscript.md)|
 |[Действие assign](../api/intune-devices-devicecustomattributeshellscript-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для объекта настраиваемого атрибута.|
-|кустоматтрибутенаме|String|Имя настраиваемого атрибута.|
-|кустоматтрибутетипе|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
-|displayName|String|Имя скрипта управления устройствами.|
-|description|String|Необязательное описание скрипта управления устройствами.|
-|скриптконтент|Binary|Содержимое скрипта.|
+|id|String|Уникальный идентификатор для настраиваемого объекта атрибута.|
+|customAttributeName|Строка|Имя настраиваемого атрибута.|
+|customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
+|displayName|String|Имя сценария управления устройствами.|
+|description|Строка|Необязательное описание сценария управления устройствами.|
+|scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|fileName|String|Имя файла скрипта.|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|Коллекция [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Список назначений групп для сценария управления устройствами.|
-|assignments|Коллекция [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md)|Список назначений групп для сценария управления устройствами.|
-|Свойства навигации runsummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Сводка по запуску для сценария управления устройствами.|
-|deviceRunStates|Коллекция [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Список состояний запуска для этого сценария на всех устройствах.|
-|userRunStates|Коллекция [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md)|Список состояний запуска этого сценария для всех пользователей.|
+|groupAssignments|[коллекция deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Список групповых назначений для сценария управления устройствами.|
+|assignments|[коллекция deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Список групповых назначений для сценария управления устройствами.|
+|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Запустите сводку для сценария управления устройствами.|
+|deviceRunStates|[коллекция deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Список состояния запуска для этого скрипта на всех устройствах.|
+|userRunStates|[коллекция deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Список состояния запуска для этого скрипта для всех пользователей.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

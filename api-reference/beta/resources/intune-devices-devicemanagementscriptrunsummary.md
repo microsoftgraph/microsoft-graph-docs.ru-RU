@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Девицеманажементскриптрунсуммари
-description: Содержит свойства сводки по запуску сценария управления устройствами.
+title: тип ресурса deviceManagementScriptRunSummary
+description: Содержит свойства для сводки запуска скрипта управления устройствами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3854cf7730326e1b291863416d09915ccf7b4d2a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bb868e87f9d3a8c090a4e3b5e3a11706ea0a29a470fda80595172453493c854d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150320"
 ---
-# <a name="devicemanagementscriptrunsummary-resource-type"></a>Тип ресурса Девицеманажементскриптрунсуммари
+# <a name="devicemanagementscriptrunsummary-resource-type"></a>тип ресурса deviceManagementScriptRunSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства сводки по запуску сценария управления устройствами.
+Содержит свойства для сводки запуска скрипта управления устройствами.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Девицеманажементскриптрунсуммари](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Чтение свойств и связей объекта [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) .|
-|[Обновление Девицеманажементскриптрунсуммари](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Обновление свойств объекта [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) .|
+|[Get deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Чтение свойств и связей [объекта deviceManagementScriptRunSummary.](../resources/intune-devices-devicemanagementscriptrunsummary.md)|
+|[Обновление deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Обновление свойств объекта [deviceManagementScriptRunSummary.](../resources/intune-devices-devicemanagementscriptrunsummary.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Key объекта сводки запуска сценария управления устройствами. Это свойство доступно только для чтения.|
-|сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
-|errorDeviceCount|Int32|Количество устройств с ошибками.|
-|сукцессусеркаунт|Int32|Число пользователей Success.|
-|errorUserCount|Int32|Количество пользователей с ошибками.|
+|id|String|Клавиша скрипта управления устройствами запустит объект сводки. Это свойство доступно только для чтения.|
+|successDeviceCount|Int32|Количество устройств успешности.|
+|errorDeviceCount|Int32|Количество устройств ошибки.|
+|successUserCount|Int32|Количество пользователей успешности.|
+|errorUserCount|Int32|Количество пользователей ошибки.|
 
 ## <a name="relationships"></a>Связи
 Нет

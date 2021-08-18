@@ -1,26 +1,27 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f77b4bf86310c2f70072a2182da2cbdf82f5b2ba4e31e8b27d44c5bf9cb72d63
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
-ms.translationtype: MT
+ms.openlocfilehash: 1e77d41a6869429c2bc07f68c03aa02ef3406e74
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57363415"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384142"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/a17025d0-62a8-4450-9e6e-db31d8c8feb8/assignments/1fdf61ee-c129-4960-9b7c-8df159aa64b0/categories"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search=%22displayName:Pr%22&$select=displayName,id"]]];
 [urlRequest setHTTPMethod:@"GET"];
+[urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
         MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-        MSGraphEducationCategory *educationCategory = [[MSGraphEducationCategory alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+        MSGraphUser *user = [[MSGraphUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

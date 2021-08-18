@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d2e4df0188a7803c6574032edf36b7541693a71
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ee16f39ad19c4cee4439ca56b226670eacb4f480b7022342eb6f78fff1a874c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51129526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54194401"
 ---
 # <a name="create-windows10compliancepolicy"></a>Создание windows10CompliancePolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51129526"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -79,18 +79,18 @@ POST /deviceManagement/deviceCompliancePolicies
 |secureBootEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (безопасная загрузка включена).|
 |codeIntegrityEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
-|activeFirewallRequired|Boolean|Требуется активное брандмауэр на устройствах Windows.|
-|defenderEnabled|Boolean|Требуется Защитник Windows антивирусных программ на устройствах Windows.|
-|defenderVersion|Строка|Требуется Защитник Windows минимальной версии antimalware на устройствах Windows.|
-|signatureOutOfDate|Boolean|Требуется Защитник Windows подписи для антивирусных программ, чтобы быть в курсе на устройствах Windows.|
-|rtpEnabled|Boolean|Требуется Защитник Windows защиты Real-Time на устройствах Windows.|
-|antivirusRequired|Boolean|Требуется, чтобы любое антивирусное решение, зарегистрированное в Центре декурсии Windows, было в центре мониторинга (например, Symantec, Защитник Windows).|
-|antiSpywareRequired|Boolean|Требуется, чтобы любое решение AntiSpyware, зарегистрированное в Центре декурсии Windows, было в центре мониторинга и мониторинга (например, Symantec, Защитник Windows).|
-|validOperatingSystemBuildRanges|[коллекция operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Допустимые диапазоны сборки операционной системы на устройствах Windows. Эта коллекция может содержать не более 10 000 элементов.|
+|activeFirewallRequired|Логический|Требуется активное брандмауэр на Windows устройствах.|
+|defenderEnabled|Логический|Требуется Защитник Windows на Windows устройствах.|
+|defenderVersion|String|Требуется Защитник Windows минимальной версии antimalware на Windows устройствах.|
+|signatureOutOfDate|Логический|Требуется Защитник Windows подписи для антивирусных программ, чтобы они были в курсе Windows устройствах.|
+|rtpEnabled|Логический|Требуется Защитник Windows защиты Real-Time на Windows устройствах.|
+|antivirusRequired|Логический|Требуется, чтобы любое антивирусное решение, зарегистрированное в центре Windows decurity, было в центре мониторинга (например, Symantec, Защитник Windows).|
+|antiSpywareRequired|Логический|Требуется, чтобы любое решение AntiSpyware, зарегистрированное в центре Windows decurity, было в центре мониторинга и мониторинга (например, Symantec, Защитник Windows).|
+|validOperatingSystemBuildRanges|[коллекция operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Допустимые диапазоны сборки операционной системы на Windows устройствах. Эта коллекция может содержать не более 10 000 элементов.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Требуется минимальный уровень риска для защиты от угроз устройства, чтобы сообщить о несоблюдении. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Boolean|Необходимо учитывать состояние соответствия ТРЕБОВАНИЯМ SCCM для состояния соответствия intune.|
-|tpmRequired|Boolean|Требуется присутствовать доверенный модуль платформы (TPM).|
+|configurationManagerComplianceRequired|Логический|Необходимо учитывать состояние соответствия ТРЕБОВАНИЯМ SCCM для состояния соответствия intune.|
+|tpmRequired|Логический|Требуется присутствовать доверенный модуль платформы (TPM).|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Пока не задокументировано.|
 
 

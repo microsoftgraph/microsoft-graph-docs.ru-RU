@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Лостмодестате
-description: Состояние режима потери данных, указывающий, включен ли режим потерянных или отключенных
+title: тип enum lostModeState
+description: Состояние потерянного режима, указывающее, включен ли потерянный режим или отключен
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 85179868781317f84c4872b087662773d22d35f4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c75a1d0a3777d57718466e8f24477347dde440db86550b97cfd848ef53f65e8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206328"
 ---
-# <a name="lostmodestate-enum-type"></a>тип перечисления Лостмодестате
+# <a name="lostmodestate-enum-type"></a>тип enum lostModeState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние режима потери данных, указывающий, включен ли режим потерянных или отключенных
+Состояние потерянного режима, указывающее, включен ли потерянный режим или отключен
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|отключено|нуль|Отключенный режим отключен.|
-|включено|1,1|Включен режим "потеряно".|
+|отключено|0|Потерянный режим отключен.|
+|включено|1 |Потерянный режим включен.|
 
 
 

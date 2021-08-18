@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e1466e9a24ba3cd4021ed7d8aa59897af017354
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: fc8444ac4dea7f196bc2da4effd66b6da92cb0b9fa7d5eac704f07a5a650fee4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54188017"
 ---
 # <a name="update-devicemanagementreportschedule"></a>Обновление deviceManagementReportSchedule
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51134377"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта|
+|id|String|Уникальный идентификатор для этого объекта|
 |reportScheduleName|Строка|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые будут доставлены|
 |электронные письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Id пользователя, создавшего отчет|
 |reportName|Строка|Имя отчета|
-|filter|Строка|Фильтры, применяемые в отчете|
+|filter|String|Фильтры, применяемые в отчете|
 |select|Коллекция String|Столбцы, выбранные из отчета|
 |orderBy|Коллекция String|Порядок столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|

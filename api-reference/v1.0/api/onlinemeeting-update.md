@@ -1,16 +1,16 @@
 ---
 title: Обновление onlineMeeting
 description: Обновление свойств собрания в Интернете.
-author: jsandoval-msft
+author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6d239a98275b6ca8fb390ae646f67a82c2212c99
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 0912e44d402b77fb09266376e8430c76d10265e1
+ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241081"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "58350998"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -55,21 +55,31 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В таблице ниже перечислены свойства, которые можно обновить. В орган запроса включаем только свойства, которые требуют обновления, за следующими исключениями:
+В следующей таблице перечислены свойства, которые можно обновить. В орган запроса включаем только свойства, которые требуют обновления, за следующими исключениями:
 
 - Для настройки даты начала или окончания собрания в интернете всегда требуются свойства **startDateTime** и **endDateTime** в теле запроса.
-- **Поле** организатора **свойства участников** не может быть обновлено. Организатор собрания не может быть изменен после создания собрания.
+- Поле **организатора** **свойства участников** не может быть обновлено. Организатор собрания не может быть изменен после создания собрания.
 - Для настройки **поля** участников  свойства участников, например добавления или удаления участника собрания, всегда требуется полный список участников в теле запроса.
 
-| Свойство             | Тип                                                         | Описание                                                                                                                                    |
-|----------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| startDateTime        | DateTime                                                     | Время начала собрания в UTC.                                                                                                                 |
-| endDateTime          | DateTime                                                     | Время окончания собрания в UTC.                                                                                                                   |
-| subject              | String                                                       | Тема собрания в Интернете.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников.                                            |
-| isEntryExitAnnounced | Логический                                                      | Следует ли объявлять о том, когда звонители присоединяются или уходят.                                                                                         |
-| lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Указывает, какие участники могут обойти вестибюль собрания.                                                                                     |
-| allowedPresenters    | onlineMeetingPresenters                                      | Указывает, кто может быть презентовщиком на собрании. Возможные значения — это все, организация, roleIsPresenter, организатор и неизвестныйFutureValue. |
+Последний столбец указывает, будет ли обновление этого свойства вступает в силу для выполнения собрания.
+
+
+| Свойство                    | Тип                                                       | Описание                                                                         | Применяется к на ходу собраний?    |
+|-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
+| startDateTime               | DateTime                                                   | Время начала собрания в UTC.                                                      | Нет                           |
+| endDateTime                 | DateTime                                                   | Время окончания собрания в UTC.                                                        | Нет                           |
+| subject                     | String                                                     | Тема собрания в Интернете.                                                  | Нет                           |
+| participants                | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников. | Нет                           |
+| isEntryExitAnnounced        | Логический                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
+| lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                          | Да                          |
+| allowedPresenters           | onlineMeetingPresenters                                    | Указывает, кто может быть презентовщиком на собрании.                                      | Да, за исключением случаев, когда значение `roleIsPresenter` |
+| allowAttendeeToEnableCamera | Логический                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
+| allowAttendeeToEnableMic    | Логический                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
+| allowMeetingChat            | meetingChatMode                                            | Указывает режим чата собраний.                                                 | Да                          |
+| allowTeamworkReactions      | Логический                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
+
+> [!NOTE]
+> Список возможных значений для **allowedPresenters** и **allowMeetingChat** см. [в onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
@@ -80,7 +90,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 #### <a name="request"></a>Запрос
 
-> **Примечание:** ID собрания был усечен для чтения.
+> **Примечание:** Для читаемости был сокращен ID собрания.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -170,7 +180,7 @@ Content-Type: application/json
 ```
 
 #### <a name="example-2-update-the-lobbybypasssettings"></a>Пример 2. Обновление lobbyBypassSettings
-> **Примечание:** ID собрания был усечен для чтения.
+> **Примечание:** Для читаемости был сокращен ID собрания.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

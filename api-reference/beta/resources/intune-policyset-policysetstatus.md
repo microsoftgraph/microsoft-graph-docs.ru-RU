@@ -1,36 +1,36 @@
 ---
-title: тип перечисления Полицисетстатус
-description: Перечисление, указывающее состояние набора политик.
+title: тип enum policySetStatus
+description: В этом переустановлении указывается состояние PolicySet.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ffadd40f791971fa0225a893959e4224c51070f5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a31849f4984edbabdda45e319df9a8cba5005cb76302f8b68dc414ef7a59b651
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287909"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150187"
 ---
-# <a name="policysetstatus-enum-type"></a>тип перечисления Полицисетстатус
+# <a name="policysetstatus-enum-type"></a>тип enum policySetStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Перечисление, указывающее состояние набора политик.
+В этом переустановлении указывается состояние PolicySet.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Значение по умолчанию.|
-|нарушение|1,1|Все элементы набора политик теперь проверяют соответствующие параметры рабочих нагрузок.|
-|партиалсукцесс|2|POST завершен для всех элементов с политиками, но существуют ошибки.|
-|success|4|Все элементы с развернутыми политиками. Не означает, что развертывание завершено успешно. |
-|error|4 |Обработка подполитики завершена с ошибками.|
-|нотассигнед|5 |Policy/Полицисетитем не назначено ни одной группе.|
+|unknown|0|Значение по умолчанию.|
+|проверка|1 |Все элементы PolicySet теперь являются проверкой для соответствующих параметров рабочих нагрузок.|
+|partialSuccess|2|После завершения процесса для всех элементов PolicySet, но есть сбои.|
+|success|3 |Развертываются все элементы PolicySet. Это не значит, что все развертывание успешно. |
+|error|4 |Обработка PolicySet полностью провалилась.|
+|notAssigned|5 |PolicySet/PolicySetItem не назначена ни одной группе.|
 
 
 
