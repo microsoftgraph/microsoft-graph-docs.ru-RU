@@ -5,12 +5,12 @@ author: shauliu
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bf3ef8e25026c72aab36a9c2fb6241f5bef950da
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: a2f7c5e777a406fab0ff9c95e3e8c98d3697c624e32c18f917f71ae370d2e015
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226100"
 ---
 # <a name="unifiedrolemanagementpolicyenablementrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyEnablementRule
 
@@ -23,8 +23,8 @@ ms.locfileid: "52680684"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enabledRules|Коллекция строк|Правила, которые включены. Допустимые значения : MultifactorAuthentication, Justification, Ticketing.|
-|id|String|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|enabledRules|Коллекция String|Правила, которые включены. Допустимые значения : MultifactorAuthentication, Justification, Ticketing.|
+|id|Строка|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>Связи

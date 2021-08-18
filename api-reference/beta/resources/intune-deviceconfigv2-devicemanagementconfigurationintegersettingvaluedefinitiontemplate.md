@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 488c71fd7f242604a2bcd8bbdcc2ca7f526bd4d7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: a7fa81700aa71a076da45b7703f1f638987a4f1b9aa107409bf8fb4934b90d1d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52667088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182912"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefinitiontemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefinitionTemplate type
 
@@ -25,8 +25,8 @@ ms.locfileid: "52667088"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|minValue|Int32|Параметр "Integer", устанавливая минимальное значение. Допустимые значения -2147483648 до 2147483647|
-|maxValue|Int32|Параметр "Integer", устанавливая максимальное значение. Допустимые значения -2147483648 до 2147483647|
+|minValue|Int32|Параметр "Integer", устанавливая минимальное значение. Допустимые значения 2147483648 2147483647|
+|maxValue|Int32|Параметр "Integer", устанавливая максимальное значение. Допустимые значения 2147483648 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a328938975b67ebce005f3cee05fb753f051ad49
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 65de2d32ef56117c410909468302c4e841c760c4
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253483"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>тип ресурса restrictedAppsViolation
 
@@ -34,14 +34,14 @@ ms.locfileid: "52665513"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта. Составлено из accountId, deviceId, policyId и userId|
+|id|String|Уникальный идентификатор объекта. Составлено из accountId, deviceId, policyId и userId|
 |userId|String|Уникальный идентификатор пользователя должен быть Guid|
 |userName|String|Имя пользователя|
 |managedDeviceId|Строка|Уникальный идентификатор управляемого устройства должен быть Guid|
 |deviceName|String|Имя устройства|
-|deviceConfigurationId|Строка|Уникальный идентификатор конфигурации устройства должен быть Guid|
+|deviceConfigurationId|String|Уникальный идентификатор конфигурации устройства должен быть Guid|
 |DeviceConfigurationName|Строка|Имя профиля конфигурации устройства|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[коллекция managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
 

@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Граупполициуплоадедлангуажефиле
-description: Сущность представляет XML-файл ADML (язык административного шаблона), переданный администратором.
+title: тип ресурса groupPolicyUploadedLanguageFile
+description: Объект представляет XML-файл ADML (язык административных шаблонов), загруженный администратором.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf5bef8faadac012df13a8a31cfaac3a5dc94ed2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c77b9f6fab6bbd1127aff4abc0176a9298f6e6a2955f69a2781c9f22f63069f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122364"
 ---
-# <a name="grouppolicyuploadedlanguagefile-resource-type"></a>Тип ресурса Граупполициуплоадедлангуажефиле
+# <a name="grouppolicyuploadedlanguagefile-resource-type"></a>тип ресурса groupPolicyUploadedLanguageFile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность представляет XML-файл ADML (язык административного шаблона), переданный администратором.
+Объект представляет XML-файл ADML (язык административных шаблонов), загруженный администратором.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|fileName|String|Имя файла загруженного файла ADML.|
-|лангуажекоде|String|Код языка загруженного файла ADML.|
-|содержимое|Binary|Содержимое отправленного файла ADML.|
-|id|String|Ключ объекта.|
+|fileName|String|Имя файла загруженного ADML-файла.|
+|languageCode|Строка|Языковой код загруженного ADML-файла.|
+|содержимое|В двоичном формате|Содержимое загруженного ADML-файла.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи

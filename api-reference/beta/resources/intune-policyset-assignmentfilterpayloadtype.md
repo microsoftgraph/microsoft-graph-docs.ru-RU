@@ -1,18 +1,18 @@
 ---
-title: тип enum vpnProviderType
-description: Тип поставщика для VPN-приложения.
+title: тип enum assignmentFilterPayloadType
+description: Представляет тип полезной нагрузки НазначениеFilter, назначенное.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af9951628865c2a743a0f2b3ea04aafeac2438e76373f9b652e4921eab2708e0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea8a670fdf17ff4c301dd0ef0914431a56ca45d0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224777"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265577"
 ---
-# <a name="vpnprovidertype-enum-type"></a>тип enum vpnProviderType
+# <a name="assignmentfilterpayloadtype-enum-type"></a>тип enum assignmentFilterPayloadType
 
 Пространство имен: microsoft.graph
 
@@ -20,14 +20,13 @@ ms.locfileid: "54224777"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип поставщика для VPN-приложения.
+Представляет тип полезной нагрузки НазначениеFilter, назначенное.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Tunnel трафик явно не настроен.|
-|appProxy|1 |Tunnel трафика на уровне приложения.|
-|packetTunnel|2|Tunnel трафик на уровне IP.|
+|notSet|0|NotSet|
+|enrollmentRestrictions|1 |EnrollmentRestrictions|
 
 
 

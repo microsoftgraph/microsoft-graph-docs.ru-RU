@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Шарепоинтситеусажепажес
+title: тип ресурса sharePointSiteUsagePages
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: ec38c4a2136a2c80261073e49ddd3a07ebfa8614
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a1378bbe4ebaf1809aa641b22cde439f50d830b016b7cc393842f21cecbe029
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246088"
 ---
-# <a name="sharepointsiteusagepages-resource-type"></a>Тип ресурса Шарепоинтситеусажепажес
+# <a name="sharepointsiteusagepages-resource-type"></a>тип ресурса sharePointSiteUsagePages
 
 Пространство имен: microsoft.graph
 
@@ -20,11 +20,11 @@ ms.locfileid: "47997692"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| ситетипе          | String |
-| пажевиевкаунт     | Int64  |
+| reportRefreshDate | Дата   |
+| siteType          | Строка |
+| pageViewCount     | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 
