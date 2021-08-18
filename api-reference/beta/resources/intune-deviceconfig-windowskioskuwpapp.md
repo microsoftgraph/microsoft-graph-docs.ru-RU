@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса Виндовскиоскувпапп
+title: тип ресурса windowsKioskUWPApp
 description: Базовый класс для типа приложений
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea16bca82ff7b0fd63e1c459d41967548139ae14
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 98eb1dff676499dc589b0d707a2d81590c2e98e885598d867ef1db3badac3126
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253049"
 ---
-# <a name="windowskioskuwpapp-resource-type"></a>Тип ресурса Виндовскиоскувпапп
+# <a name="windowskioskuwpapp-resource-type"></a>тип ресурса windowsKioskUWPApp
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Базовый класс для типа приложений
 
 
-Наследуется от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)
+Наследуется [от windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Представляет понятное имя приложения, наследуемого от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|Тип|[виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, наследуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|Автозапуск|Boolean|Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|Модели|String|Это единственный идентификатор пользовательской модели приложения (AUMID), который будет доступен для запуска в режиме киоска|
-|appId|String|Это указывает на приложение Intune, которое будет нацелено на те же назначения, что и настройка киоска|
-|контаинедаппид|String|Это указывает на автономное приложение из приложения Intune|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для макета старта, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|String|Представляет удобное имя приложения, унаследованной от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
+|autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appUserModelId|Строка|Это единственный ID модели пользователя приложения (AUMID), который будет доступен для запуска использования в режиме киоска|
+|appId|String|Это ссылается на приложение Intune, которое будет ориентировано на те же назначения, что и конфигурация киоска|
+|containedAppId|Строка|Это ссылается на содержалось приложение из приложения Intune|
 
 ## <a name="relationships"></a>Связи
 Нет

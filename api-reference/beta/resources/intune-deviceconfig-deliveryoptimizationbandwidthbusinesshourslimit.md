@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Деливерйоптимизатионбандвидсбусинесшаурслимит
-description: Тип часов и процентного отношения для полосы пропускания
+title: тип ресурса deliveryOptimizationBandwidthBusinessHoursLimit
+description: Тип бизнес-часов и процентов пропускной способности
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a21a81ebc18616b9d072ba9bba39ec4a1e1ee7db
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 60e78ee837702a1a131ee0abba46029186f4dfcfe4eab777eca4e5377defdb60
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122665"
 ---
-# <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсбусинесшаурслимит
+# <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>тип ресурса deliveryOptimizationBandwidthBusinessHoursLimit
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип часов и процентного отношения для полосы пропускания
+Тип бизнес-часов и процентов пропускной способности
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|бандвидсбегинбусинесшаурс|Int32|Указывает начало рабочего времени в 24-часовом формате (0-23). Допустимые значения — от 0 до 23.|
-|бандвидсендбусинесшаурс|Int32|Задает время окончания рабочего дня в 24-часовом формате (0-23). Допустимые значения — от 0 до 23.|
-|бандвидсперцентажедурингбусинесшаурс|Int32|Указывает процент пропускной способности для ограничения в рабочее время (0-100). Допустимые значения: от 0 до 100|
-|бандвидсперцентажеаутсидебусинесшаурс|Int32|Указывает процент пропускной способности, ограничивающий рабочие часы (0-100). Допустимые значения: от 0 до 100.|
+|bandwidthBeginBusinessHours|Int32|Указывает начало часов работы с помощью 24-часовой стрелки (0-23). Допустимые значения от 0 до 23|
+|bandwidthEndBusinessHours|Int32|Указывает конец часов работы с помощью 24-часовой стрелки (0-23). Допустимые значения от 0 до 23|
+|bandwidthPercentageDuringBusinessHours|Int32|Указывает процент пропускной способности для ограничения в часы работы (0-100). Допустимые значения: от 0 до 100|
+|bandwidthPercentageOutsideBusinessHours|Int32|Указывает процент пропускной способности, чтобы ограничить время работы outsidse (0-100). Допустимые значения: от 0 до 100.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Андроиддевицеовнеренроллментпрофилетипе
-description: Типы профилей регистрации владельца устройств Android.
+title: тип enum androidDeviceOwnerEnrollmentProfileType
+description: Типы профилей для владельцев устройств Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9721977a71fe7bf52bc0d45d54921829050cb7b7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e328642f3879a5610ce0ffeff8a47d97e2dd4890940e4e1f3d65a3029edfadaa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199954"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153190"
 ---
-# <a name="androiddeviceownerenrollmentprofiletype-enum-type"></a>тип перечисления Андроиддевицеовнеренроллментпрофилетипе
+# <a name="androiddeviceownerenrollmentprofiletype-enum-type"></a>тип enum androidDeviceOwnerEnrollmentProfileType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Типы профилей регистрации владельца устройств Android.
+Типы профилей для владельцев устройств Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|дедикатеддевице|1,1|Выделенное устройство.|
-|фуллиманажед|2|Полностью управляемый.|
+|notConfigured|0|Не настроен; это значение игнорируется.|
+|dedicatedDevice|1 |Выделенное устройство.|
+|fullyManaged|2|Полностью управляемый.|
 
 
 

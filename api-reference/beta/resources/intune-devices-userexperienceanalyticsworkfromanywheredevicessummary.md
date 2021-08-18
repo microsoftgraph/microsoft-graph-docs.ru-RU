@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6448bbc89ebe8357fa14a375f82fb73938f6634
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 80e8cf9265df96f7b4540070982bf730679a5301
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146800"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264530"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,10 @@ ms.locfileid: "51146800"
 |:---|:---|:---|
 |autopilotDevicesSummary|[userExperienceAnalyticsAutopilotDevicesSummary](../resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md)|Значение работы из любого сводки устройств автопилота.|
 |cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|Пользовательский интерфейс работает в любом месте сводки устройств облачного управления.|
-|windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|Аналитика пользовательских интерфейсов работает из любого сводки устройств Windows 10.|
+|windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|Аналитика пользовательских интерфейсов работает из любой Windows 10 устройств.|
+|cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|Аналитика пользовательских интерфейсов работает из любой сводки устройств облачной идентификации.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +57,10 @@ ms.locfileid: "51146800"
   "windows10DevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsWindows10DevicesSummary",
     "unsupportedOSversionDeviceCount": 1024
+  },
+  "cloudIdentityDevicesSummary": {
+    "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
+    "deviceWithoutCloudIdentityCount": 1024
   }
 }
 ```

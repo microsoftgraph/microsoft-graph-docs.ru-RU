@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4469d5df6acd7f2ee3ad3e542742d656e72f7a4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 6a0abe081c116afeaf0188188430112e92c896861382be25ade215ef51962c68
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863291"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153049"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>тип ресурсов importedAppleDeviceIdentity
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -37,14 +37,14 @@ ms.locfileid: "51863291"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |serialNumber|String|Серийный номер устройства|
-|requestedEnrollmentProfileId|String|Администратор ID профиля регистрации намерен примениться к устройству во время следующей регистрации|
+|requestedEnrollmentProfileId|Строка|Администратор ID профиля регистрации намерен примениться к устройству во время следующей регистрации|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль времени регистрации был назначен устройству|
 |isSupervised|Boolean|Указывает, контролируется ли устройство Apple. Дополнительные сведения можно получить по: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |isDeleted|Логический|Указывает, удалено ли устройство из Apple Business Manager|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
 |lastContactedDateTime|DateTimeOffset|Время последней контактной даты устройства|
-|description|String|Описание устройства|
+|description|Строка|Описание устройства|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |платформа|[платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5fb8eb16af3a192c6def8088866f7891f7afa85
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 097f229ff724ad1501c18a6a09d7ac077563b6c5
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58257763"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywheredevice"></a>Обновление userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "52665030"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
+|id|String|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
 |deviceName|String|Работа из любого имени устройства.|
 |serialNumber|String|Пользовательский интерфейс работает с любого серийного номера устройства.|
 |manufacturer|String|Пользовательский интерфейс работает с любого производителя устройства.|
 |model|String|Пользовательский интерфейс работает из любой модели устройства.|
-|владение|Строка|Пользовательский интерфейс работает с любого владельца устройства.|
+|владение|String|Пользовательский интерфейс работает с любого владельца устройства.|
 |managedBy|Строка|Пользовательский интерфейс работает из любого агента управления устройства.|
 |autoPilotRegistered|Логический|Пользовательский интерфейс работает с автопилотом устройства intune.|
 |autoPilotProfileAssigned|Логический|Аналитика пользовательских интерфейсов работает из любого автопилота устройства intuneProfileAssigned.|
@@ -67,6 +67,19 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 |azureAdJoinType|Строка|Пользовательский опыт работы из любого устройства azure Ad joinType.|
 |osDescription|String|Пользовательский интерфейс работает из любого описания ОС устройства.|
 |osVersion|String|Пользовательский интерфейс работает из любой версии ОС устройства.|
+|tenantAttached|Логический|Пользовательский интерфейс работает с любого клиента устройстваAttached.|
+|compliancePolicySetToIntune|Логический|Пользовательский интерфейс работает из любой точки устройства compliancePolicySetToIntune.|
+|otherWorkloadsSetToIntune|Логический|Пользовательский интерфейс работает из любого другого устройстваWorkloadsSetToIntune.|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|Пользовательский опыт работы из любой точки windows обновить состояние приемлемости устройства. Возможные значения: `upgraded`, `unknown`, `notCapable`, `capable`.|
+|ramCheckFailed|Логический|Является ли работа аналитики пользовательского интерфейса из любой точки проверки оборудования оперативной памяти устройства неудачной для устройства для обновления до последней версии windows|
+|storageCheckFailed|Логический|Пользовательский опыт работы с любого устройства, Является ли проверка оборудования хранения не удалось для устройства для обновления до последней версии windows.|
+|processorCoreCountCheckFailed|Логический|Работа пользовательского интерфейса с любого устройства— проверка подсчета ядра процессора не удалось для устройства, чтобы обновиться до последней версии windows.|
+|processorSpeedCheckFailed|Логический|Пользовательский опыт работы с любого устройства, Является ли проверка скорости оборудования процессора не удалось для устройства для обновления до последней версии windows.|
+|tpmCheckFailed|Логический|Работа пользовательского интерфейса с любого устройства — это проверка аппаратного модуля доверенных платформ (TPM) для устройства до последней версии обновления до windows.|
+|secureBootCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является безопасной проверки оборудования загрузки не удалось для устройства для обновления до последней версии windows.|
+|processorFamilyCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является проверка семейства оборудования процессора не удалось для устройства для обновления до последней версии windows.|
+|processor64BitCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка архитектуры процессорного оборудования 64-битной не удалось для устройства, чтобы обновить до последней версии windows.|
+|osCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка ОС не удалось для устройства для обновления до последней версии windows.|
 
 
 
@@ -80,7 +93,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices/{userExperienceAnalyticsWorkFromAnywhereDeviceId}
 Content-type: application/json
-Content-length: 585
+Content-length: 1028
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -96,7 +109,20 @@ Content-length: 585
   "azureAdDeviceId": "Azure Ad Device Id value",
   "azureAdJoinType": "Azure Ad Join Type value",
   "osDescription": "Os Description value",
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "unknown",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true
 }
 ```
 
@@ -105,7 +131,7 @@ Content-length: 585
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 634
+Content-Length: 1077
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -122,7 +148,20 @@ Content-Length: 634
   "azureAdDeviceId": "Azure Ad Device Id value",
   "azureAdJoinType": "Azure Ad Join Type value",
   "osDescription": "Os Description value",
-  "osVersion": "Os Version value"
+  "osVersion": "Os Version value",
+  "tenantAttached": true,
+  "compliancePolicySetToIntune": true,
+  "otherWorkloadsSetToIntune": true,
+  "upgradeEligibility": "unknown",
+  "ramCheckFailed": true,
+  "storageCheckFailed": true,
+  "processorCoreCountCheckFailed": true,
+  "processorSpeedCheckFailed": true,
+  "tpmCheckFailed": true,
+  "secureBootCheckFailed": true,
+  "processorFamilyCheckFailed": true,
+  "processor64BitCheckFailed": true,
+  "osCheckFailed": true
 }
 ```
 

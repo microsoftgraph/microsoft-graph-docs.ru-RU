@@ -1,22 +1,22 @@
 ---
-title: тип перечисления win32LobAppFileSystemDetectionType
+title: тип enum win32LobAppFileSystemDetectionType
 description: Содержит все поддерживаемые типы обнаружения файловой системы.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cd1d56aeaf51e2396043295ca81b915c0a9d8223
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3d63d39c31853141c9e03584d0b39be5beea7042191413502a185976809688f5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274133"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229558"
 ---
-# <a name="win32lobappfilesystemdetectiontype-enum-type"></a>тип перечисления win32LobAppFileSystemDetectionType
+# <a name="win32lobappfilesystemdetectiontype-enum-type"></a>тип enum win32LobAppFileSystemDetectionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,13 +25,13 @@ ms.locfileid: "49274133"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен.|
-|Существует|1,1|Существует ли указанный файл или папка.|
-|modifiedDate|2|Дата последнего изменения.|
-|createdDate|4|Дата создания.|
-|version|4 |Тип значения Version.|
-|сизеинмб|5 |Тип определения размера.|
-|доеснотексист|6 |Указанный файл или папка не существует.|
+|notConfigured|0|Не настроен.|
+|существует|1 |Существует ли указанный файл или папка.|
+|modifiedDate|2|Последняя измененная дата.|
+|createdDate|3 |Дата создания.|
+|version|4 |Тип значения версии.|
+|sizeInMB|5 |Тип обнаружения размеров.|
+|doesNotExist|6 |Указанного файла или папки не существует.|
 
 
 

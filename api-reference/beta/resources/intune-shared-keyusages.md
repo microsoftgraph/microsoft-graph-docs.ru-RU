@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Кэйусажес
-description: Параметры использования ключа.
+title: тип enum keyUsages
+description: Параметры использования ключей.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7110c20b3cc6533b5abef0f437d8e37d1efbe8be
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f6fc5940f679e215c207ff4388b3212420b5f86cde0dfab9149032616c61f574
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161005"
 ---
-# <a name="keyusages-enum-type"></a>тип перечисления Кэйусажес
+# <a name="keyusages-enum-type"></a>тип enum keyUsages
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры использования ключа.
+Параметры использования ключей.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|кэйенЦифермент|1,1|Использование шифрования ключей.|
-|дигиталсигнатуре|2|Использование цифровой подписи.|
+|keyEncipherment|1 |Использование расшифровки ключей.|
+|digitalSignature|2|Использование цифровой подписи.|
 
 
 

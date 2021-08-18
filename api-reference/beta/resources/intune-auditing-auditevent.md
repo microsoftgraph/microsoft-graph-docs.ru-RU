@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 432d61b4c8d23c013f4920094f9cba5fab6a078d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 36f3894967ffacfa0027192d876f5f56e4e836fe7d59cd6a1fb66b9a7f7b2057
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240017"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -37,7 +37,7 @@ ms.locfileid: "49295546"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Отображаемое имя события.|
+|displayName|Строка|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|

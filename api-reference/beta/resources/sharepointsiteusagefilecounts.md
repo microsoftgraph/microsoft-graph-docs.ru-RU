@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Шарепоинтситеусажефилекаунтс
+title: тип ресурса sharePointSiteUsageFileCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: bdaef1780321b4a60c2bcf82629f30a2925620e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5c42d91509508ec4b149a55aab1d2b37016701684b2da0e411e47c333d12a4df
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997762"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246084"
 ---
-# <a name="sharepointsiteusagefilecounts-resource-type"></a>Тип ресурса Шарепоинтситеусажефилекаунтс
+# <a name="sharepointsiteusagefilecounts-resource-type"></a>тип ресурса sharePointSiteUsageFileCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,12 @@ ms.locfileid: "47997762"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| ситетипе          | String |
+| reportRefreshDate | Дата   |
+| siteType          | Строка |
 | total             | Int64  |
-| ASP            | Int64  |
+| active            | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

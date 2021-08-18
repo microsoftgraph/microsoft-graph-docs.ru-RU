@@ -1,40 +1,40 @@
 ---
-title: Тип enum androidWorkProfileVpnConnectionType
-description: Тип VPN-подключения для профиля работы Android.
+title: тип enum androidWorkProfileVpnConnectionType
+description: Тип VPN-подключения профилей Android Work.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 95f93b3ff5802472afc40b10f43b2d4d999cb158
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 65a8373338cea6fe31bf5b1a2056c9baebb3dd94dd85a68a1508a07f1fb718b3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242996"
 ---
-# <a name="androidworkprofilevpnconnectiontype-enum-type"></a>Тип enum androidWorkProfileVpnConnectionType
+# <a name="androidworkprofilevpnconnectiontype-enum-type"></a>тип enum androidWorkProfileVpnConnectionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип VPN-подключения для профиля работы Android.
+Тип VPN-подключения профилей Android Work.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1 |Pulse Secure.|
-|f5EdgeClient|2 |F5 Edge Client.|
-|dellSonicWallMobileConnect|3 |Dell SonicWALL Mobile Connection.|
-|checkPointCapsuleVpn|4 |Check Point Vpn Vpn.|
+|f5EdgeClient|2|Клиент F5 Edge.|
+|dellSonicWallMobileConnect|3 |Мобильное подключение Dell SonicWALL.|
+|checkPointCapsuleVpn|4 |Check Point Capsule VPN.|
 |citrix|5 |Citrix|
 |paloAltoGlobalProtect|6 |Palo Alto Networks GlobalProtect.|
 |microsoftTunnel|7 |Microsoft Tunnel.|
-|netMotionMobility|8 |NetMotion Mobility.|
-|microsoftProtect|9 |Защита (Майкрософт).|
+|netMotionMobility|8 |Мобильность NetMotion.|
+|MicrosoftProtect|9 |Microsoft Protect.|
 
 
 

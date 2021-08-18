@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23e7bc30a9b5410e6f33e96d628654e1f9f69ebc
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4f377601fa0003bd1e33ddfa9aed428dd5e6dd8fc4e7b2e842197eb07a24f8ad
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51131325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54149088"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>Обновление macOSEndpointProtectionConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51131325"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,33 +55,33 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметр System и Privacy, который определяет, какие приложения для скачивания можно запускать на macOS-устройстве. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|gatekeeperBlockOverride|Boolean|Если задана истина, переопределения пользователя для Gatekeeper будут отключены.|
-|firewallEnabled|Boolean|Следует ли включить брандмауэр или нет.|
-|брандмауэрBlockAllIncoming|Boolean|Соответствует параметру "Блокировка всех входящих подключений".|
-|firewallEnableStealthMode|Boolean|Соответствует режиму "Включить режим стелс".|
+|gatekeeperBlockOverride|Логический|Если задана истина, переопределения пользователя для Gatekeeper будут отключены.|
+|firewallEnabled|Логический|Следует ли включить брандмауэр или нет.|
+|брандмауэрBlockAllIncoming|Логический|Соответствует параметру "Блокировка всех входящих подключений".|
+|firewallEnableStealthMode|Логический|Соответствует режиму "Включить режим стелс".|
 |брандмауэрАпплиляции|[коллекция macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)|Список приложений с настройками брандмауэра. Параметры брандмауэра для приложений, не входящего в этот список, определяются пользователем. Эта коллекция может содержать не более 500 элементов.|
-|fileVaultEnabled|Boolean|Следует ли включить FileVault или нет.|
+|fileVaultEnabled|Логический|Следует ли включить FileVault или нет.|
 |fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|Требуется, если включен FileVault, определяет тип(ы) ключа восстановления для использования. . Возможные значения: `notConfigured`, `institutionalRecoveryKey`, `personalRecoveryKey`.|
-|fileVaultInstitutionalRecoveryKeyCertificate|Binary|Необходимый, если выбранный тип ключа восстановления (s) включает InstitutionalRecoveryKey. Кодированный файл сертификата DER, используемый для задавания институционального ключа восстановления.|
-|fileVaultInstitutionalRecoveryKeyCertificateFileName|Строка|Имя файла сертификата ключа восстановления, отображаемого в пользовательском интерфейсе. (*.der).|
-|fileVaultPersonalRecoveryKeyHelpMessage|Строка|Необходимый, если выбранный тип ключа восстановления (s) включает PersonalRecoveryKey. Короткое сообщение, отображаемая пользователю, которое объясняет, как он может получить свой личный ключ восстановления.|
-|fileVaultAllowDeferralUntilSignOut|Boolean|Необязательно. Если установлена истина, пользователь может отложить включение FileVault до тех пор, пока они не выпишутся.|
+|fileVaultInstitutionalRecoveryKeyCertificate|В двоичном формате|Необходимый, если выбранный тип ключа восстановления (s) включает InstitutionalRecoveryKey. Кодированный файл сертификата DER, используемый для задавания институционального ключа восстановления.|
+|fileVaultInstitutionalRecoveryKeyCertificateFileName|String|Имя файла сертификата ключа восстановления, отображаемого в пользовательском интерфейсе. (*.der).|
+|fileVaultPersonalRecoveryKeyHelpMessage|String|Необходимый, если выбранный тип ключа восстановления (s) включает PersonalRecoveryKey. Короткое сообщение, отображаемая пользователю, которое объясняет, как он может получить свой личный ключ восстановления.|
+|fileVaultAllowDeferralUntilSignOut|Boolean|Необязательное свойство. Если установлена истина, пользователь может отложить включение FileVault до тех пор, пока они не выпишутся.|
 |fileVaultNumberOfTimesUserCanIgnore|Int32|Необязательный. При использовании параметра Defer это максимальное количество раз, когда пользователь может игнорировать подсказки, чтобы включить FileVault, прежде чем fileVault потребуется для пользователя, чтобы войти. Если установлено до -1, всегда будет предложено включить FileVault до включения FileVault, хотя это позволит пользователю обойти включение FileVault. Настройка этого параметра до 0 отключит функцию.|
-|fileVaultDisablePromptAtSignOut|Boolean|Необязательно. При использовании параметра Defer, если задается true, пользователю не предложено включить FileVault при входе.|
+|fileVaultDisablePromptAtSignOut|Boolean|Необязательное свойство. При использовании параметра Defer, если задается true, пользователю не предложено включить FileVault при входе.|
 |fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Необязательный. Если выбранный тип ключа восстановления (s) включает PersonalRecoveryKey, частота вращения этого ключа в месяцах.|
-|fileVaultHidePersonalRecoveryKey|Boolean|Необязательно. Скрытый личный ключ восстановления не появляется на экране пользователя во время шифрования FileVault, что снижает риск его оказаться в неправильных руках.|
+|fileVaultHidePersonalRecoveryKey|Boolean|Необязательный. Скрытый личный ключ восстановления не появляется на экране пользователя во время шифрования FileVault, что снижает риск его оказаться в неправильных руках.|
 |advancedThreatProtectionRealTime|[включить](../resources/intune-shared-enablement.md)|Определяет, следует ли включить защиту в режиме реального времени для microsoft Defender Advanced Threat Protection на macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |advancedThreatProtectionCloudDelivered|[включить](../resources/intune-shared-enablement.md)|Определяет, следует ли включить облачную защиту для microsoft Defender Advanced Threat Protection на macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |advancedThreatProtectionAutomaticSampleSubmission|[включить](../resources/intune-shared-enablement.md)|Определяет, следует ли включить автоматическую отправку образца файла для microsoft Defender Advanced Threat Protection на macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|

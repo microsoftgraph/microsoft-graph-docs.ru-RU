@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80d2638a6e51c56968e5bcbaab42a616fed33a58
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 52801d49d11d25817317a88368d9db9318678068
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51145959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263249"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Список depIOSEnrollmentProfiles
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51145959"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2414
+Content-Length: 2662
 
 {
   "value": [
@@ -125,7 +125,12 @@ Content-Length: 2414
       "passCodeDisabled": true,
       "zoomDisabled": true,
       "restoreCompletedScreenDisabled": true,
-      "updateCompleteScreenDisabled": true
+      "updateCompleteScreenDisabled": true,
+      "forceTemporarySession": true,
+      "temporarySessionTimeoutInSeconds": 0,
+      "userSessionTimeoutInSeconds": 11,
+      "passcodeLockGracePeriodInSeconds": 0,
+      "carrierActivationUrl": "https://example.com/carrierActivationUrl/"
     }
   ]
 }

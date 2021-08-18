@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
-description: Сводка по состоянию Advanced Threat Protection в Защитнике Windows по всей учетной записи.
+title: расширенный тип ресурсаThreatProtectionOnboardingStateSummary
+description: Windows защиты от угрозы, внося сводку состояния в учетную запись.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef0f2e8884e68a317f29870320ad82f5179e55f7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ae6a1341d99f1c5a686963e4aaa11018b32400a41e845409df76d4a861f5f7b9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232932"
 ---
-# <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
+# <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>расширенный тип ресурсаThreatProtectionOnboardingStateSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сводка по состоянию Advanced Threat Protection в Защитнике Windows по всей учетной записи.
+Windows защиты от угрозы, внося сводку состояния в учетную запись.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Адванцедсреатпротектиононбоардингстатесуммари](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|Чтение свойств и связей объекта [адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) .|
-|[Обновление Адванцедсреатпротектиононбоардингстатесуммари](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|Обновление свойств объекта [адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) .|
+|[Get advancedThreatProtectionOnboardingStateSummary](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|Чтение свойств и связей объекта [advancedThreatProtectionOnboardingStateSummary.](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|
+|[Обновление advancedThreatProtectionOnboardingStateSummary](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|Обновление свойств объекта [advancedThreatProtectionOnboardingStateSummary.](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор.|
+|id|Строка|Уникальный идентификатор.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -39,12 +39,12 @@ ms.locfileid: "49216859"
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств.|
-|нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
+|notAssignedDeviceCount|Int32|Количество не назначенных устройств|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|адванцедсреатпротектиононбоардингдевицесеттингстатес|Коллекция [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Н/Д|
+|advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) collection|Н/Д|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

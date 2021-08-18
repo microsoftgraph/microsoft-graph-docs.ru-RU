@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01dd1df7e273e9ef2bbd6fabb9a0ea0203e5347f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4b73edbbaf73c93b6df3c90a3b42b51a80350467298980069cdf16d4da04e585
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295539"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240024"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -33,9 +33,9 @@ ms.locfileid: "49295539"
 |servicePrincipalName|String|Имя субъекта-службы (SPN).|
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
-|усерролескопетагс|Коллекция [ролескопетагинфо](../resources/intune-auditing-rolescopetaginfo.md)|Список тегов области пользователя при выполнении аудита.|
-|ремотетенантид|String|Идентификатор удаленного клиента|
-|ремотеусерид|String|Идентификатор удаленного пользователя|
+|userRoleScopeTags|[Коллекция roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Список тегов области пользователей при выполнении аудита.|
+|remoteTenantId|String|Удаленный ID клиента|
+|remoteUserId|Строка|Удаленный пользовательский id|
 
 ## <a name="relationships"></a>Связи
 Нет

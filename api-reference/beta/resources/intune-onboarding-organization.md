@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30dbbb5b7a86b39acceabc2ebf8df74caafca9c9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f3efa96c0223aba1aba5cc1377074c490647358c65f315dd382fdfdc338fc67f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172808"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,8 +34,8 @@ ms.locfileid: "49259545"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта.|
-|mobileDeviceManagementAuthority|[мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
-|цертификатеконнекторсеттинг|[цертификатеконнекторсеттинг](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединителя сертификатов.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
+|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединиттеля сертификата.|
 
 ## <a name="relationships"></a>Связи
 Нет

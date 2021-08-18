@@ -1,33 +1,33 @@
 ---
-title: Тип enum deviceAndAppManagementAssignmentFilterType
-description: Представляет тип фильтра назначений.
+title: тип enum deviceAndAppManagementAssignmentFilterType
+description: Представляет тип фильтра назначения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a2b9f9e2f01cb4ca7d5a0f1a1d51d00e985369c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2910a835168a8caa0a965b025cbed2422b7a14e7d48f4bb2a692a5fd7ba7b064
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50155862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193547"
 ---
-# <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>Тип enum deviceAndAppManagementAssignmentFilterType
+# <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>тип enum deviceAndAppManagementAssignmentFilterType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет тип фильтра назначений.
+Представляет тип фильтра назначения.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Значение по умолчанию. Не следует использовать.|
-|include|1 |Указывает, что в фильтре соответствие правил будет предлагать устройствам полезной нагрузки.|
-|exclude|2 |Указывает, что при фильтрации правила не будут предлагаться полезной нагрузки на устройства.|
+|включить|1 |Указывает в фильтре, соответствие правил будет предлагать полезной нагрузки на устройствах.|
+|исключение|2|Указывает вне фильтра, соответствие правил не будет предлагать полезной нагрузки на устройствах.|
 
 
 

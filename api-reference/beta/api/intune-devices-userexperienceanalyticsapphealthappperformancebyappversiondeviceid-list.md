@@ -1,18 +1,18 @@
 ---
-title: Список userExperienceAnalyticsImpactingProcesses
-description: Список свойств и связей объектов userExperienceAnalyticsImpactingProcess.
+title: Список пользователейExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceIds
+description: Список свойств и связей объектов userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a09652c8c844bed1a394ead09596916650362dc
+ms.openlocfilehash: 89578bca8efbc7e8678b98975071a80bf56c1f51
 ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261210"
+ms.locfileid: "58263714"
 ---
-# <a name="list-userexperienceanalyticsimpactingprocesses"></a>Список userExperienceAnalyticsImpactingProcesses
+# <a name="list-userexperienceanalyticsapphealthappperformancebyappversiondeviceids"></a>Список пользователейExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceIds
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58261210"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов userExperienceAnalyticsImpactingProcess.](../resources/intune-devices-userexperienceanalyticsimpactingprocess.md)
+Список свойств и связей [объектов userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "58261210"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsImpactingProcess
+GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,14 +50,14 @@ GET /deviceManagement/userExperienceAnalyticsImpactingProcess
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userExperienceAnalyticsImpactingProcess](../resources/intune-devices-userexperienceanalyticsimpactingprocess.md) в тексте ответа.
+В случае успеха этот метод возвращает код ответа и коллекцию объектов `200 OK` [userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondeviceid.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsImpactingProcess
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDeviceId
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,19 +65,21 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsImp
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 414
+Content-Length: 561
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.userExperienceAnalyticsImpactingProcess",
-      "id": "faefd665-d665-faef-65d6-effa65d6effa",
+      "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId",
+      "id": "2dad85e9-85e9-2dad-e985-ad2de985ad2d",
       "deviceId": "Device Id value",
-      "category": "Category value",
-      "processName": "Process Name value",
-      "description": "Description value",
-      "publisher": "Publisher value",
-      "impactValue": 3.6666666666666665
+      "deviceDisplayName": "Device Display Name value",
+      "processedDateTime": "2017-01-01T00:03:22.2339319-08:00",
+      "appName": "App Name value",
+      "appDisplayName": "App Display Name value",
+      "appPublisher": "App Publisher value",
+      "appVersion": "App Version value",
+      "appCrashCount": 13
     }
   ]
 }

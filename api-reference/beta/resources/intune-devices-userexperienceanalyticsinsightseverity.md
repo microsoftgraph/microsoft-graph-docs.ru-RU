@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Усерекспериенцеаналитиксинсигхтсеверити
+title: тип enum userExperienceAnalyticsInsightSeverity
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a14bb3dd8af7504051b80985cf2af5e6cad3e23b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: be03acd12a9ae06cce57d6be232df79f04f78fba700f4f156b3d7a2811f579ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213139"
 ---
-# <a name="userexperienceanalyticsinsightseverity-enum-type"></a>тип перечисления Усерекспериенцеаналитиксинсигхтсеверити
+# <a name="userexperienceanalyticsinsightseverity-enum-type"></a>тип enum userExperienceAnalyticsInsightSeverity
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,10 +25,10 @@ ms.locfileid: "49208242"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Пока не задокументировано.|
-|справоч|1,1|Пока не задокументировано.|
+|Нет|0|Пока не задокументировано.|
+|информационная|1 |Пока не задокументировано.|
 |warning|2|Пока не задокументировано.|
-|error|4|Пока не задокументировано.|
+|error|3 |Пока не задокументировано.|
 
 
 

@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Микрософтсторефорбусинесслиценсетипе
+title: тип enum microsoftStoreForBusinessLicenseType
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43418942857aa6dc3a909c5cd4575cd705f682c3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 52b475ac629863d55d4b16287249f212c9f477d39176209a8549c461c615dc23
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49281140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240094"
 ---
-# <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>тип перечисления Микрософтсторефорбусинесслиценсетипе
+# <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>тип enum microsoftStoreForBusinessLicenseType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49281140"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|содержание|нуль|Пока не задокументировано.|
-|Онлайн|1,1|Пока не задокументировано.|
+|автономный режим|0|Пока не задокументировано.|
+|Онлайн|1 |Пока не задокументировано.|
 
 
 

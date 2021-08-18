@@ -1,18 +1,18 @@
 ---
-title: Политика конфигурации управления устройствами назначает действие
+title: Действие assign
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c92091d06a7ad872e4e8853bd85521be61a4adb9
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 31772c6e9589f2cf6e8ad6824177d89128be379e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666136"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263774"
 ---
-# <a name="device-management-configuration-policy-assign-action"></a>Политика конфигурации управления устройствами назначает действие
+# <a name="assign-action"></a>Действие назначения
 
 Пространство имен: microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "52666136"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,7 +69,7 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assign
 
 Content-type: application/json
-Content-length: 524
+Content-length: 593
 
 {
   "assignments": [
@@ -81,7 +81,9 @@ Content-length: 524
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
@@ -92,7 +94,7 @@ Content-length: 524
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 587
 
 {
   "value": [
@@ -104,7 +106,9 @@ Content-Length: 518
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
         "collectionId": "Collection Id value"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }

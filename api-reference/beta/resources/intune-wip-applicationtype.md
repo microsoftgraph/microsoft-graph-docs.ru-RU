@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Аппликатионтипе
-description: Возможные типы приложений
+title: тип enum applicationType
+description: Возможные типы приложения
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f40812ec670cb463cf6bf13075bfdbc03d886018
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7cefdf5e3c5f7e223c26ede4efa335335543b022d2ffd2e5e8e011e164e410c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178719"
 ---
-# <a name="applicationtype-enum-type"></a>тип перечисления Аппликатионтипе
+# <a name="applicationtype-enum-type"></a>тип enum applicationType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные типы приложений
+Возможные типы приложения
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Гринвич|1,1|Универсальное приложение Windows|
-|системной|2|Классическое приложение Windows|
+|универсальный|1 |Универсальное приложение Windows|
+|настольный компьютер|2|Приложение для настольных компьютеров Windows|
 
 
 
