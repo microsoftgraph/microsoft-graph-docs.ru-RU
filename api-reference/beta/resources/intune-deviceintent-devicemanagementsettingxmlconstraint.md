@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Девицеманажементсеттингксмлконстраинт
-description: Ограничение, обеспечивающее применение параметра, — это XML-файл с правильным форматом
+title: тип ресурса deviceManagementSettingXmlConstraint
+description: Ограничение, принудение к установке, хорошо сформировано XML
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ad2c069b198971d7bf99f98e50c5c89b5733e10
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9de3c015470c8425bd076ee39655ed10a6085829a5d6d1ea54a55f893c4925bc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185791"
 ---
-# <a name="devicemanagementsettingxmlconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингксмлконстраинт
+# <a name="devicemanagementsettingxmlconstraint-resource-type"></a>тип ресурса deviceManagementSettingXmlConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение, обеспечивающее применение параметра, — это XML-файл с правильным форматом
+Ограничение, принудение к установке, хорошо сформировано XML
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

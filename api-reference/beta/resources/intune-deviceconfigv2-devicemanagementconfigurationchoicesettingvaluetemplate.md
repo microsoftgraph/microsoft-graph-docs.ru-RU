@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10d446532e0664c6d83d16d223c0a8e0d966aeb4
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d934f6c8c4e00f6254e20b255b9935e0fff5004d91279b00dd947ef0e3af9c9d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666578"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153057"
 ---
 # <a name="devicemanagementconfigurationchoicesettingvaluetemplate-resource-type"></a>тип ресурса deviceManagementConfigurationChoiceSettingValueTemplate
 
@@ -28,7 +28,7 @@ ms.locfileid: "52666578"
 |defaultValue|[deviceManagementConfigurationChoiceSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefaulttemplate.md)|Шаблон параметра параметра значение по умолчанию.|
 |recommendedValueDefinition|[deviceManagementConfigurationChoiceSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefinitiontemplate.md)|Рекомендуемые переопределения определения.|
 |requiredValueDefinition|[deviceManagementConfigurationChoiceSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluedefinitiontemplate.md)|Обязательное переопределения определения.|
-|settingValueTemplateId|Строка|Настройка кода шаблона значений|
+|settingValueTemplateId|String|Настройка кода шаблона значений|
 
 ## <a name="relationships"></a>Связи
 Нет

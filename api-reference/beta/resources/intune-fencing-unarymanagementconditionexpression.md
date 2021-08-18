@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Унариманажементкондитионекспрессион
-description: Выражение условия управления, вычисляемое с использованием унарной операции.
+title: тип ресурса unaryManagementConditionExpression
+description: Выражение состояния управления, которое оценивается с помощью безоценной операции.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcede3b729f22c7bf12342285bfc2cbf654e2068
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2a3aa2c001c08e3d315e65fd0d7911d4f557c3becab7a4a9be4a2826c2313375
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54152994"
 ---
-# <a name="unarymanagementconditionexpression-resource-type"></a>Тип ресурса Унариманажементкондитионекспрессион
+# <a name="unarymanagementconditionexpression-resource-type"></a>тип ресурса unaryManagementConditionExpression
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Выражение условия управления, вычисляемое с использованием унарной операции.
+Выражение состояния управления, которое оценивается с помощью безоценной операции.
 
 
-Наследуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)
+Наследует от [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|operator|[унариманажементкондитионекспрессионоператортипе](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|Оператор, используемый в оценке унарной операции. Возможные значения: `not` .|
-|начинается|[манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Операнд унарной операции.|
+|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|Оператор, используемый при оценке безоценной операции. Возможные значения: `not` .|
+|operand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Операнд операции без операции.|
 
 ## <a name="relationships"></a>Связи
 Нет
