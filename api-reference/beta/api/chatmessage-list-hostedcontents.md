@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 79e020bb53c995ac1afe2d53dc4b0b367d42a201
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 5ff56f4181211eff40f2d1a808245e6707eb1573
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971108"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384177"
 ---
 # <a name="list-hostedcontents"></a>Список hostedContents
 
@@ -26,9 +26,9 @@ ms.locfileid: "52971108"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Для приложений| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 
@@ -36,9 +36,9 @@ ms.locfileid: "52971108"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Chat.Read, Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All|
+|Приложение| ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All|
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание.** Разрешения _ChannelMessage.Read.Group_ и _ChatMessage.Read.Chat_ используют разрешение на использование [ресурсов.]( https://aka.ms/teams-rsc)
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 
@@ -183,7 +183,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 
@@ -251,7 +251,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 

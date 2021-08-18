@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74a0396c4627a8c7f4e496df78964de0ff2965cd
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4271cf24080835c7a2cfa411c164020865c98e53b47f3dbb9250fbc6cea54a5a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213839"
 ---
 # <a name="update-microsofttunnelsite"></a>Обновление microsoftTunnelSite
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -29,7 +29,7 @@ ms.locfileid: "51863831"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|MicrosoftTunnelGateway.ReadWrite.All|
+|Приложение|MicrosoftTunnelGateway.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,8 +55,8 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelSite|
 |displayName|String|Имя отображения MicrosoftTunnelSite|
-|description|String|Описание MicrosoftTunnelSite|
-|publicAddress|String|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|description|Строка|Описание MicrosoftTunnelSite|
+|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 

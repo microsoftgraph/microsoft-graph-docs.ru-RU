@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса deviceComplianceScriptRuleError
+title: тип ресурса deviceComplianceScriptRuleError
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8306b2afc8f3b82440d8524759ff3f89bca4663d
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 30b828904ed3cdd63fa1495e010126bb5b20e4e76b7cdc22cb9221f80d81ce77
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161313"
 ---
-# <a name="devicecompliancescriptruleerror-resource-type"></a>Тип ресурса deviceComplianceScriptRuleError
+# <a name="devicecompliancescriptruleerror-resource-type"></a>тип ресурса deviceComplianceScriptRuleError
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Пока не задокументировано.
 
 
-Наследуется [от deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)
+Наследует от [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|code|[code](../resources/intune-deviceconfig-code.md)|Код ошибки. Наследуется [от deviceComplianceScriptError.](../resources/intune-deviceconfig-devicecompliancescripterror.md) Возможные значения: `none` , , , `jsonFileInvalid` `jsonFileMissing` `jsonFileTooLarge` `rulesMissing` `duplicateRules` `tooManyRulesSpecified` `operatorMissing` `operatorNotSupported` `datatypeMissing` `datatypeNotSupported` `operatorDataTypeCombinationNotSupported` `moreInfoUriMissing` , , , `moreInfoUriInvalid` `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` `remediationStringsMissing` .|
-|deviceComplianceScriptRulesValidationError|[deviceComplianceScriptRulesValidationError](../resources/intune-deviceconfig-devicecompliancescriptrulesvalidationerror.md)|Код ошибки. Наследуется [от deviceComplianceScriptError.](../resources/intune-deviceconfig-devicecompliancescripterror.md) Возможные значения: `none` , , , `jsonFileInvalid` `jsonFileMissing` `jsonFileTooLarge` `rulesMissing` `duplicateRules` `tooManyRulesSpecified` `operatorMissing` `operatorNotSupported` `datatypeMissing` `datatypeNotSupported` `operatorDataTypeCombinationNotSupported` `moreInfoUriMissing` , , , `moreInfoUriInvalid` `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` `remediationStringsMissing` .|
-|message|String|Сообщение об ошибке. Наследуется [от deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)|
-|settingName|String|Установка имени правила с ошибкой.|
+|code|[code](../resources/intune-deviceconfig-code.md)|Код ошибки. Наследуется [от deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Возможные значения: `none` `jsonFileInvalid` , `jsonFileMissing` `jsonFileTooLarge` `rulesMissing` `duplicateRules` `tooManyRulesSpecified` `operatorMissing` `operatorNotSupported` `datatypeMissing` `datatypeNotSupported` `operatorDataTypeCombinationNotSupported` `moreInfoUriMissing` `moreInfoUriInvalid` `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` . `remediationStringsMissing`|
+|deviceComplianceScriptRulesValidationError|[deviceComplianceScriptRulesValidationError](../resources/intune-deviceconfig-devicecompliancescriptrulesvalidationerror.md)|Код ошибки. Наследуется [от deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Возможные значения: `none` `jsonFileInvalid` , `jsonFileMissing` `jsonFileTooLarge` `rulesMissing` `duplicateRules` `tooManyRulesSpecified` `operatorMissing` `operatorNotSupported` `datatypeMissing` `datatypeNotSupported` `operatorDataTypeCombinationNotSupported` `moreInfoUriMissing` `moreInfoUriInvalid` `moreInfoUriTooLarge` `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` . `remediationStringsMissing`|
+|message|String|Сообщение об ошибке. Унаследованный от [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)|
+|settingName|String|Настройка имени правила с ошибкой.|
 
 ## <a name="relationships"></a>Связи
 Нет

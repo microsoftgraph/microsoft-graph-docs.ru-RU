@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2c5d841094b203bb9860e76d7afcaafb63f0c5b
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 12394a2335968bfe06ea3ce5e35161c1c100615893cd1597a1249e1151d7e756
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867310"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219761"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -39,13 +39,13 @@ ms.locfileid: "51867310"
 |microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Время последней завершенной синхронизации приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Время последней успешной синхронизации приложений из Microsoft Store для бизнеса с учетной записью.|
-|MicrosoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|Сведения о портале конечных пользователей используются для синхронизации приложений из Microsoft Store для бизнеса на портал компании Intune. Существует три варианта выбора из "Только портала компании", "Портал компании и частный \[ магазин", "Только частный \] магазин". Возможные значения: `none`, `companyPortal`, `privateStore`.|
+|MicrosoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|Сведения о портале конечных пользователей используются для синхронизации приложений с Microsoft Store для бизнеса до Корпоративный портал Intune. Существует три варианта выбора из "Только портала компании", "Портал компании и частный \[ магазин", "Только частный \] магазин". Возможные значения: `none`, `companyPortal`, `privateStore`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Приложения**|
-|enterpriseCodeSigningCertificates|[коллекция enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Сертификат подписи корпоративного кода Windows.|
+|enterpriseCodeSigningCertificates|[коллекция enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Сертификат Windows Enterprise кода.|
 |iosLobAppProvisioningConfigurations|[коллекция iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|Конфигурации подготовка приложений IOS Lob.|
 |mobileAppCategories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Категории мобильных приложений|
 |mobileAppConfigurations|Коллекция [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|Конфигурации мобильных приложений для управляемых устройств.|
@@ -55,7 +55,7 @@ ms.locfileid: "51867310"
 |managedEBooks|Коллекция [managedEBook](../resources/intune-books-managedebook.md)|Управляемая электронная книга.|
 |managedEBookCategories|[коллекция managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Категории мобильных книг.|
 |**Управление устройствами**|
-|windowsManagementApp|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Приложение управления Windows.|
+|windowsManagementApp|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Windows управления приложением.|
 |**Управление мобильным приложением (MAM)**|
 |androidManagedAppProtections|Коллекция [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Политики управляемых приложений для Android.|
 |defaultManagedAppProtections|Коллекция [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|Политики управляемых приложений по умолчанию.|

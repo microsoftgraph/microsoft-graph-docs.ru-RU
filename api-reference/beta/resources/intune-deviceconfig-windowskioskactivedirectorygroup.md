@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Виндовскиоскактиведиректориграуп
-description: Класс, используемый для определения группы каталогов Azure для конфигурации киоска
+title: тип ресурса windowsKioskActiveDirectoryGroup
+description: Класс, используемый для определения группы Azure Directory для конфигурации киоска
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9975317c49562efbae19c290ca0aa34792be28d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: fb152b6c47e1c0fa4a87e503f6e9c1ec591c3054da9446d11c52be1fe194fef0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232645"
 ---
-# <a name="windowskioskactivedirectorygroup-resource-type"></a>Тип ресурса Виндовскиоскактиведиректориграуп
+# <a name="windowskioskactivedirectorygroup-resource-type"></a>тип ресурса windowsKioskActiveDirectoryGroup
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, используемый для определения группы каталогов Azure для конфигурации киоска
+Класс, используемый для определения группы Azure Directory для конфигурации киоска
 
 
-Наследуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
+Наследуется [от windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|String|Имя группы Active Directory, которая будет заблокирована для этой конфигурации киоска|
+|groupName|String|Имя группы AD, которая будет заблокирована в этой конфигурации киоска|
 
 ## <a name="relationships"></a>Связи
 Нет

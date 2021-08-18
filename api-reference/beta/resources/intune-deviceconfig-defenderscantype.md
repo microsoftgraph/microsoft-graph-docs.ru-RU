@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Дефендерскантипе
-description: Возможные значения для типа "сканирование системы".
+title: тип enum defenderScanType
+description: Возможные значения для типа сканирования системы.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e020a4639b7076d9901fd12dfb2a4eb81651095c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e4d81184b9ec18b781a7c89c9b8da3b5672fd8eb4de1bbaf0085521445edd4c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227500"
 ---
-# <a name="defenderscantype-enum-type"></a>тип перечисления Дефендерскантипе
+# <a name="defenderscantype-enum-type"></a>тип enum defenderScanType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для типа "сканирование системы".
+Возможные значения для типа сканирования системы.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|отключено|1,1|Сканирование системы отключено.|
-|Quick|2|Быстрая проверка системы.|
-|полный|4|Полное сканирование системы.|
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|отключено|1 |Отключено сканирование системы.|
+|быстрый|2|Быстрое сканирование системы.|
+|полный|3 |Полное сканирование системы.|
 
 
 

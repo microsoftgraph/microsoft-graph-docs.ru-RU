@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Андроиддевицеовнеркиоскмодескринориентатион
-description: Ориентация на домашнюю страницу в режиме киоска владельца устройства Android.
+title: тип enum androidDeviceOwnerKioskModeScreenOrientation
+description: Режим киоска владельцев устройств Android управляется ориентацией на домашний экран.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bf34de6c6305996470f08e025175dcf50b710d73
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 897bae36d4b119e43986b91d42ffbf88a8c560d89d51d2af31216d15e74636f4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213265"
 ---
-# <a name="androiddeviceownerkioskmodescreenorientation-enum-type"></a>тип перечисления Андроиддевицеовнеркиоскмодескринориентатион
+# <a name="androiddeviceownerkioskmodescreenorientation-enum-type"></a>тип enum androidDeviceOwnerKioskModeScreenOrientation
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ориентация на домашнюю страницу в режиме киоска владельца устройства Android.
+Режим киоска владельцев устройств Android управляется ориентацией на домашний экран.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|ориентацию|1,1|Книжная ориентация.|
-|вдоль|2|Альбомная ориентация.|
-|Автоповорот|4|Автоматический поворот между книжной и альбомной ориентацией.|
+|notConfigured|0|Не настроен; это значение игнорируется.|
+|портрет|1 |Ориентация на портрет.|
+|ландшафт|2|Ориентация на ландшафт.|
+|autoRotate|3 |Автоматические повороты между портретными и ландшафтными ориентациями.|
 
 
 

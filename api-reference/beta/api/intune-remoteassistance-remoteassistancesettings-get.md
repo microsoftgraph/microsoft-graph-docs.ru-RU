@@ -1,18 +1,18 @@
 ---
-title: Список pfxUserCertificates
-description: Список свойств и связей объектов pfxUserCertificate.
+title: Get remoteAssistanceSettings
+description: Чтение свойств и связей объекта remoteAssistanceSettings.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4591f541549a9eeb949fabaa5ef3c342e2daea5a8d8c3d020ed448c33d7e10c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9566280b205b11dddb750df269310d2bf4e6467c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213769"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265564"
 ---
-# <a name="list-pfxusercertificates"></a>Список pfxUserCertificates
+# <a name="get-remoteassistancesettings"></a>Get remoteAssistanceSettings
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "54213769"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [pfxUserCertificate.](../resources/intune-raimportcerts-pfxusercertificate.md)
+Чтение свойств и связей объекта [remoteAssistanceSettings.](../resources/intune-remoteassistance-remoteassistancesettings.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,10 +37,13 @@ ms.locfileid: "54213769"
 }
 -->
 ``` http
-GET /pfxUserCertificates
+GET /deviceManagement/remoteAssistanceSettings
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -50,14 +53,14 @@ GET /pfxUserCertificates
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код ответа и коллекцию объектов `200 OK` [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект remoteAssistanceSettings](../resources/intune-remoteassistance-remoteassistancesettings.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/pfxUserCertificates
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistanceSettings
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,31 +68,15 @@ GET https://graph.microsoft.com/beta/pfxUserCertificates
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 894
+Content-Length: 227
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.pfxUserCertificate",
-      "tenantId": "f9882bcd-2bcd-f988-cd2b-88f9cd2b88f9",
-      "userId": "a991071c-071c-a991-1c07-91a91c0791a9",
-      "thumbprint": "Thumbprint value",
-      "userUpn": "User Upn value",
-      "encryptedPfxBlob": "Encrypted Pfx Blob value",
-      "encryptedPfxPassword": "Encrypted Pfx Password value",
-      "certStartDate": "2017-01-01T00:01:48.7697664-08:00",
-      "certExpirationDate": "2016-12-31T23:56:39.3841403-08:00",
-      "providerName": "Provider Name value",
-      "encryptionKeyName": "Encryption Key Name value",
-      "paddingScheme": 13,
-      "status": 6,
-      "intendedPurpose": 15,
-      "createdTime": "2017-01-01T00:03:18.9597073-08:00",
-      "isDeleted": true,
-      "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-      "eTag": "ETag value"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
+    "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
+    "remoteAssistanceState": "disabled",
+    "allowSessionsToUnenrolledDevices": true
+  }
 }
 ```
 
