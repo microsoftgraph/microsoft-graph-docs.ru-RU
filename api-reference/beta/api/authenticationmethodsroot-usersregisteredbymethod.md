@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5cccef1ba35edbb3eb947cee90fb70c05ff19389
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 71c6274cb2e898a5047dcdaf71dadd6aac1012c0
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52473474"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384354"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbymethod"></a>authenticationMethodsRoot: usersRegisteredByMethod
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "52473474"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|AuditLogs.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|AuditLog.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 

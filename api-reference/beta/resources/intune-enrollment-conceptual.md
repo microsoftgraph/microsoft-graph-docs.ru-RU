@@ -1,15 +1,15 @@
 ---
-title: Регистрация корпоративных устройств с помощью Intune - API Microsoft Graph
-description: Перечислены API Microsoft Graph для конечных точек Intune (REST), которые регистрировать устройства для организации-клиента.
+title: Регистрация корпоративных устройств с помощью Intune - Microsoft Graph API
+description: Перечисляет API Graph Microsoft для конечных точек Intune (REST), которые регистрировать устройства для организации-клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a85db8c4397659789feafa395195a39542928f01
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 96d63820a4846f9db5345ace8629c299ab6eb755
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51131955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261147"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -29,13 +29,13 @@ ms.locfileid: "51131955"
 - [Пользователь Apple инициировал регистрацию профиля](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
 - [Тип регистрации, инициированный пользователем Apple](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Профиль Windows AutoPilot Deployment для Azure AD](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
-- [Удаленное состояние устройства автопилота Windows](intune-enrollment-deletedwindowsautopilotdevicestate.md)
 - [Базовые профиль регистрации DEP](intune-enrollment-depenrollmentbaseprofile.md)
 - [Профиль регистрации DEP](intune-enrollment-depenrollmentprofile.md)
 - [Профиль регистрации iOS DEP](intune-enrollment-depiosenrollmentprofile.md)
 - [Профиль регистрации macOS DEP](intune-enrollment-depmacosenrollmentprofile.md)
 - [Параметр подключения DEP](intune-enrollment-deponboardingsetting.md)
 - [Тип маркера DEP](intune-enrollment-deptokentype.md)
+- [Тип платформы устройства](intune-enrollment-deviceplatformtype.md)
 - [Источник обнаружения](intune-enrollment-discoverysource.md)
 - [Профиль регистрации](intune-enrollment-enrollmentprofile.md)
 - [Импортированное удостоверение устройства Apple](intune-enrollment-importedappledeviceidentity.md)
@@ -53,7 +53,6 @@ ms.locfileid: "51131955"
 - [Платформа](intune-enrollment-platform.md)
 - [Рекомендуемый предел регистрации](intune-enrollment-suggestedenrollmentlimit.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
-- [Состояние удаления устройства автопилота Windows](intune-enrollment-windowsautopilotdevicedeletionstate.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Тип устройства с Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Полное состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)

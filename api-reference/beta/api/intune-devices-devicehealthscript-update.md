@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a3eb34d13008c4dcf572f3418928215ea435761
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b97e0a4494b9892b457cadbeb8d560c3a17bdd76
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51146281"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262559"
 ---
 # <a name="update-devicehealthscript"></a>Обновление устройстваHealthScript
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51146281"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,21 +53,21 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для скрипта здоровья устройств|
+|id|String|Уникальный идентификатор для скрипта здоровья устройств|
 |publisher|String|Имя издателя скриптов для здоровья устройств|
 |version|String|Версия сценария состояния устройства|
-|displayName|Строка|Имя сценария состояния устройства|
+|displayName|String|Имя сценария состояния устройства|
 |description|Строка|Описание сценария состояния устройства|
-|detectionScriptContent|Binary|Все содержимое сценария powershell обнаружения|
-|remediationScriptContent|Binary|Все содержимое сценария powershell исправлений|
+|detectionScriptContent|В двоичном формате|Все содержимое сценария powershell обнаружения|
+|remediationScriptContent|В двоичном формате|Все содержимое сценария powershell исправлений|
 |createdDateTime|DateTimeOffset|Время создания скрипта здоровья устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения скрипта здоровья устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта|
-|runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
+|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта|
+|runAs32Bit|Логический|Указать, должен ли сценарий PowerShell работать как 32-битный|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для скрипта здоровья устройств|
-|isGlobalScript|Boolean|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
-|highestAvailableVersion|Строка|Самая доступная версия для сценария Microsoft Proprietary|
+|isGlobalScript|Логический|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
+|highestAvailableVersion|String|Самая доступная версия для сценария Microsoft Proprietary|
 |detectionScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType DetectionScriptParameters.|
 |remediationScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType RemediationScriptParameters.|
 
