@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Бинариманажементкондитионекспрессион
-description: Выражение условия управления, вычисляемое с помощью бинарной операции.
+title: тип ресурса binaryManagementConditionExpression
+description: Выражение состояния управления, которое оценивается с помощью двоичной операции.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7f8efa0bba16a9567258449e42b5d3e8ed28dab
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cfc716edcce00e9c777f79796f6c9c792038153eccaccf91d40d62af49fcb28c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197935"
 ---
-# <a name="binarymanagementconditionexpression-resource-type"></a>Тип ресурса Бинариманажементкондитионекспрессион
+# <a name="binarymanagementconditionexpression-resource-type"></a>тип ресурса binaryManagementConditionExpression
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Выражение условия управления, вычисляемое с помощью бинарной операции.
+Выражение состояния управления, которое оценивается с помощью двоичной операции.
 
 
-Наследуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)
+Наследует от [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|operator|[бинариманажементкондитионекспрессионоператортипе](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|Оператор, используемый для оценки бинарной операции. Возможные значения: `or`, `and`.|
-|фирстоперанд|[манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Первый операнд бинарной операции.|
-|секондоперанд|[манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Второй операнд бинарной операции.|
+|operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|Оператор, используемый при оценке двоичной операции. Возможные значения: `or`, `and`.|
+|firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Первый операнд двоичной операции.|
+|secondOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Второй операнд двоичной операции.|
 
 ## <a name="relationships"></a>Связи
 Нет

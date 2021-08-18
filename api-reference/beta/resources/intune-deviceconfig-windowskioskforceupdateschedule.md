@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Виндовскиоскфорцеупдатесчедуле
-description: Расписание принудительного обновления Windows 10 для устройств киоска.
+title: тип ресурса windowsKioskForceUpdateSchedule
+description: Windows 10 расписания принудительного обновления для устройств Киоска.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3dd2e5872a60884050cd7a32408288955e94f92
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 18b6938740db45281ef06529b8b98546fa1f2d169313a3c263a7d616140ea081
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226337"
 ---
-# <a name="windowskioskforceupdateschedule-resource-type"></a>Тип ресурса Виндовскиоскфорцеупдатесчедуле
+# <a name="windowskioskforceupdateschedule-resource-type"></a>тип ресурса windowsKioskForceUpdateSchedule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Расписание принудительного обновления Windows 10 для устройств киоска.
+Windows 10 расписания принудительного обновления для устройств Киоска.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Время начала принудительного перезапуска.|
+|startDateTime|DateTimeOffset|Время начала перезапуска силы.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |dayofWeek|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|День недели. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|dayofMonth|Int32|День месяца. Допустимые значения — от 1 до 31.|
-|руниммедиателифафтерстартдатетиме|Boolean|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
+|dayofMonth|Int32|День месяца. Допустимые значения от 1 до 31|
+|runImmediatelyIfAfterStartDateTime|Логический|Если верно, выполняет задачу немедленно, если StartDateTime находится в прошлом, то в другом случае выполняется при следующем повторе.|
 
 ## <a name="relationships"></a>Связи
 Нет

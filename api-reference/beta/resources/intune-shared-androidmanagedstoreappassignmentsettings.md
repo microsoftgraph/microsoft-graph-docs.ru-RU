@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Андроидманажедстореаппассигнментсеттингс
-description: Содержит свойства, используемые при назначении мобильного приложения с управляемым хранилищем Android группе.
+title: тип ресурса androidManagedStoreAssignmentSettings
+description: Содержит свойства, используемые для назначения мобильного приложения Android Managed Store группе.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 040530a9f14499b964f47c6bd3f2456521b5f742
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3571ac519277739d54bd8a379ff7af2474b95b514a8135cf4857624d7a5baeb5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54217129"
 ---
-# <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>Тип ресурса Андроидманажедстореаппассигнментсеттингс
+# <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>тип ресурса androidManagedStoreAssignmentSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства, используемые при назначении мобильного приложения с управляемым хранилищем Android группе.
+Содержит свойства, используемые для назначения мобильного приложения Android Managed Store группе.
 
 
 Наследуется от [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
@@ -28,7 +28,7 @@ ms.locfileid: "49259125"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|андроидманажедстореапптраккидс|Коллекция строк|Идентификаторы отслеживания, которые необходимо включить для этого назначения приложения.|
+|AndroidManagedStoreAppTrackIds|Коллекция String|ID дорожки, чтобы включить для этого назначения приложения.|
 
 ## <a name="relationships"></a>Связи
 Нет

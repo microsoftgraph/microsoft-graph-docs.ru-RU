@@ -1,18 +1,18 @@
 ---
-title: Delete mobileAppAssignment
-description: Удаляет объект mobileAppAssignment.
+title: Список полезной нагрузкиCompatibleAssignmentFilters
+description: Список свойств и связей объектов payloadCompatibleAssignmentFilter.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1238211f7de67ac4b9894ac187995088c2b56e8742b86093cd1ba0684fe10410
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9719d4e0601388740a744474fc142db1b124778c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263582"
 ---
-# <a name="delete-mobileappassignment"></a>Delete mobileAppAssignment
+# <a name="list-payloadcompatibleassignmentfilters"></a>Список полезной нагрузкиCompatibleAssignmentFilters
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "54159450"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md).
+Список свойств и связей объектов [payloadCompatibleAssignmentFilter.](../resources/intune-policyset-payloadcompatibleassignmentfilter.md)
 
-## <a name="prerequisites"></a>Необходимые разрешения
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "54159450"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
+GET /deviceManagement/assignmentFilters
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,20 +50,41 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssig
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/assignmentFilters
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 566
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.payloadCompatibleAssignmentFilter",
+      "id": "6d189738-9738-6d18-3897-186d3897186d",
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "platform": "androidForWork",
+      "rule": "Rule value",
+      "roleScopeTags": [
+        "Role Scope Tags value"
+      ],
+      "payloadType": "enrollmentRestrictions"
+    }
+  ]
+}
 ```
 
 

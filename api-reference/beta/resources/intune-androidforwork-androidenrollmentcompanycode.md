@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Андроиденроллменткомпаникоде
-description: Класс для хранения специализированных регистрационных данных, используемых для регистрации через API управления Android для Google, таких как маркер, URL-адрес и содержимое QR-кода
+title: тип ресурса androidEnrollmentCompanyCode
+description: Класс для хранения специальных данных регистрации, используемых для регистрации с помощью API управления Android в Google, таких как содержимое кода Token, URL и QR.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 986c298abfc9e86c32c57cb5cdaa9c31ee159791
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6803a04883d90d3550b98582522e74465251d96f803896d55e62afff5ad9f58a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49282260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173333"
 ---
-# <a name="androidenrollmentcompanycode-resource-type"></a>Тип ресурса Андроиденроллменткомпаникоде
+# <a name="androidenrollmentcompanycode-resource-type"></a>тип ресурса androidEnrollmentCompanyCode
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс для хранения специализированных регистрационных данных, используемых для регистрации через API управления Android для Google, таких как маркер, URL-адрес и содержимое QR-кода
+Класс для хранения специальных данных регистрации, используемых для регистрации с помощью API управления Android в Google, таких как содержимое кода Token, URL и QR.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|енроллменттокен|String|Маркер регистрации, используемый пользователем для регистрации своего устройства.|
+|enrollmentToken|String|Маркер регистрации, используемый пользователем для регистрации устройства.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
-|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный QR код для маркера.|
+|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный код QR для маркера.|
 
 ## <a name="relationships"></a>Связи
 Нет

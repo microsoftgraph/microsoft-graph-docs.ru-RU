@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Деливерйоптимизатионрестриктпирселектионбйоптионс
-description: Значения, с помощью которых можно ограничить выбор однорангового узла.
+title: deliveryOptimizationRestrictPeerSelectionByOptions enum type
+description: Значения, ограничивающие одноранговой выбор.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 903fa9f29aa98a63df50fa80614a2243d4396563
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 95d36f1630fe88332b88ef668bfdfce406ff9491927924e04cdb0870d9a9a6de
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283695"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227486"
 ---
-# <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>тип перечисления Деливерйоптимизатионрестриктпирселектионбйоптионс
+# <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>deliveryOptimizationRestrictPeerSelectionByOptions enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Значения, с помощью которых можно ограничить выбор однорангового узла.
+Значения, ограничивающие одноранговой выбор.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен.|
-|Сети|1,1|Маска подсети.|
+|notConfigured|0|Не настроен.|
+|subnetMask|1 |Маска подсети.|
 
 
 

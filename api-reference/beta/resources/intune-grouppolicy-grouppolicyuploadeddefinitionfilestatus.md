@@ -1,37 +1,37 @@
 ---
-title: тип перечисления Граупполициуплоадеддефинитионфилестатус
-description: Тип групповой политики передал состояние файла определения.
+title: groupPolicyUploadedDefinitionFileStatus enum type
+description: Тип групповой политики, загруженный в файл определения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6afafd9f6e35d248b69c3b7ddbb24c20e60d0eeb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d1bb2975f718ed3bfdaa7ea9fb62d38850ec48d5861ed4ef934c989f7acac424
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133168"
 ---
-# <a name="grouppolicyuploadeddefinitionfilestatus-enum-type"></a>тип перечисления Граупполициуплоадеддефинитионфилестатус
+# <a name="grouppolicyuploadeddefinitionfilestatus-enum-type"></a>groupPolicyUploadedDefinitionFileStatus enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип групповой политики передал состояние файла определения.
+Тип групповой политики, загруженный в файл определения.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Групповая политика загружена файл определения Недопустимый статус отправки.|
-|уплоадинпрогресс|1,1|Групповая политика перегрузила файл определения, выполняется отправка.|
-|доступен|2|Групповая политика загрузила доступный файл определения.|
-|ей|4|Групповая политика загрузила файл определения, назначенный политике.|
-|ремовалинпрогресс|4 |Групповая политика перегрузила файл определения, который выполняется удаление.|
-|уплоадфаилед|5 |Групповая политика загружена не удалось отправить файл определения.|
-|ремовалфаилед|6 |Групповая политика перезагружена. не удалось удалить файл определения.|
+|Нет|0|Group Policy uploaded definition file invalid upload status.|
+|uploadInProgress|1 |Group Policy uploaded definition file upload in progress.|
+|доступен|2|Файл определения, загруженный групповой политикой, доступен.|
+|назначено|3 |Файл определения групповой политики, загруженный в политику.|
+|removalInProgress|4 |Group Policy uploaded definition file removal in progress.|
+|uploadFailed|5 |Отправка файла определения групповой политики не удалась.|
+|removalFailed|6 |Удаление файлов определения групповой политики не удалось.|
 
 
 

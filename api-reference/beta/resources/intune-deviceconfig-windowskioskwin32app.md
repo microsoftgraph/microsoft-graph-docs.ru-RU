@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7b0dd1a5afb5dcad27bd0b2656f29336be3332d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: cb0d9a7a14456740872c9eac193522e8113dc5c91acea4c44e235a1c3e0449ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50446717"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164267"
 ---
 # <a name="windowskioskwin32app-resource-type"></a>тип ресурса windowsKioskWin32App
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,9 +31,9 @@ KioskModeApp v4 для поддержки приложений Win32
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для макета старта, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет удобное имя приложения, унаследованной от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLaunch|Boolean|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|classicAppPath|String|Это классическийapppath, используемый приложением v4 Win32 в режиме киоска|
-|edgeNoFirstRun|Boolean|Edge first run flag for Edge kiosk mode|
+|autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|classicAppPath|Строка|Это классическийapppath, используемый приложением v4 Win32 в режиме киоска|
+|edgeNoFirstRun|Логический|Edge first run flag for Edge kiosk mode|
 |edgeKioskIdleTimeoutMinutes|Int32|Время ожидания в киоске Edge в минутах для режима киоска Edge. Допустимые значения от 0 до 1440|
 |edgeKioskType|[windowsEdgeKioskType](../resources/intune-deviceconfig-windowsedgekiosktype.md)|Тип edge-киоска для режима киоска Edge. Возможные значения: `publicBrowsing`, `fullScreen`.|
 |edgeKiosk|String|Edge kiosk (URL) для режима киоска Edge|

@@ -1,36 +1,36 @@
 ---
-title: тип перечисления Вифисекурититипе
-description: Wi-Fi типов безопасности.
+title: тип enum wiFiSecurityType
+description: Wi-Fi типы безопасности.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 112612969027be87805b77c5743e1a8d0561c03b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b24b05396a5b436d2c029cfe3991ccbab8cfbce665088d2f67ca62629f7d85c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49215339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251416"
 ---
-# <a name="wifisecuritytype-enum-type"></a>тип перечисления Вифисекурититипе
+# <a name="wifisecuritytype-enum-type"></a>тип enum wiFiSecurityType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Wi-Fi типов безопасности.
+Wi-Fi типы безопасности.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|окно|нуль|Открыть (без проверки подлинности).|
-|впаперсонал|1,1|WPA – личное.|
-|впаентерприсе|2|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип IOSEnterpriseWifiConfiguration.|
-|WEP|4|WEP-шифрование.|
-|wpa2Personal|4 |WPA2 — личное.|
-|wpa2Enterprise|5 |WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип Виндовсвифиентерприсиапконфигуратион.|
+|open|0|Open (Без проверки подлинности).|
+|wpaPersonal|1 |WPA-Personal.|
+|wpaEnterprise|2|WPA-Enterprise. Для настройки корпоративных параметров необходимо использовать тип IOSEnterpriseWifiConfiguration.|
+|wep|3 |Шифрование WEP.|
+|wpa2Personal|4 |WPA2-Personal.|
+|wpa2Enterprise|5 |WPA2-Enterprise. Для настройки корпоративных параметров необходимо использовать тип WindowsWifiEnterpriseEAPConfiguration.|
 
 
 

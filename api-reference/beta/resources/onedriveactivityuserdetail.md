@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Онедривеактивитюсердетаил
+title: тип ресурса oneDriveActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 24f6b9da0fb4e4a141872bd00b423b799b880aa6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e2c2a0155d0bd571dad12ba94efaf080343d984560feefd9aa354241b4c61e9d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229404"
 ---
-# <a name="onedriveactivityuserdetail-resource-type"></a>Тип ресурса Онедривеактивитюсердетаил
+# <a name="onedriveactivityuserdetail-resource-type"></a>тип ресурса oneDriveActivityUserDetail
 
 Пространство имен: microsoft.graph
 
@@ -20,17 +20,17 @@ ms.locfileid: "48048865"
 
 | Свойство                  | Тип              |
 | :------------------------ | :---------------- |
-| репортрефрешдате         | Дата              |
+| reportRefreshDate         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Boolean           |
-| делетеддате               | Дата              |
-| ластактивитидате          | Дата              |
-| виеведоредитедфилекаунт   | Int64             |
-| синцедфилекаунт           | Int64             |
-| шарединтерналлифилекаунт | Int64             |
-| шаредекстерналлифилекаунт | Int64             |
-| ассигнедпродуктс          | Коллекция String |
-| репортпериод              | Строка            |
+| isDeleted                 | Логический           |
+| deletedDate               | Дата              |
+| lastActivityDate          | Дата              |
+| viewedOrEditedFileCount   | Int64             |
+| syncedFileCount           | Int64             |
+| sharedInternallyFileCount | Int64             |
+| sharedExternallyFileCount | Int64             |
+| assignedProducts          | Коллекция String |
+| reportPeriod              | Строка            |
 
 ## <a name="json-representation"></a>Представление JSON
 

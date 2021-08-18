@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате
+title: тип enum deviceGuardVirtualizationBasedSecurityHardwareRequirementState
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 657aa19fc075c293a11716d6deb4d7d88b5470ff
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 202488135ada97650cc7484bb390ee7b969ea16ae6b82a6caa50c137551d8d4e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54246180"
 ---
-# <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате
+# <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>тип enum deviceGuardVirtualizationBasedSecurityHardwareRequirementState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49293026"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|мисардваререкуирементс|нуль|Система соответствует требованиям к конфигурации оборудования|
-|секуребутрекуиред|1,1|Необходима безопасная загрузка|
-|дмапротектионрекуиред|2|Необходима защита DMA|
-|хипервнотсуппортедфоргуествм|4 |HyperV не поддерживается для гостевой виртуальной машины|
-|хипервнотаваилабле|8 |Функция HyperV недоступна|
+|meetHardwareRequirements|0|Система отвечает требованиям конфигурации оборудования|
+|secureBootRequired|1 |Требуемая защита загрузки|
+|dmaProtectionRequired|2|Требуется защита от DMA|
+|hyperVNotSupportedForGuestVM|4 |HyperV не поддерживается для гостевого VM|
+|hyperVNotAvailable|8 |Функция HyperV недоступна|
 
 
 
