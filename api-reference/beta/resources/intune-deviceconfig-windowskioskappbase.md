@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Виндовскиоскаппбасе
+title: тип ресурса windowsKioskAppBase
 description: Базовый класс для типа приложений
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c4a0d1afa615cf2b1e77c67061f9a88e40b2b72
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f184f1533f6dc5de3b0cd5f334e0b58f802570e83e1703774544c1a45470f51a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156319"
 ---
-# <a name="windowskioskappbase-resource-type"></a>Тип ресурса Виндовскиоскаппбасе
+# <a name="windowskioskappbase-resource-type"></a>тип ресурса windowsKioskAppBase
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,10 +25,10 @@ ms.locfileid: "49293607"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета. Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Представляет понятное имя приложения.|
-|Тип|[виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения. Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|Автозапуск|Boolean|Разрешение автоматического запуска приложения в полноэкранном режиме с поддержкой нескольких приложений|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начала макета. Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|String|Представляет удобное имя приложения|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения. Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
+|autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями|
 
 ## <a name="relationships"></a>Связи
 Нет

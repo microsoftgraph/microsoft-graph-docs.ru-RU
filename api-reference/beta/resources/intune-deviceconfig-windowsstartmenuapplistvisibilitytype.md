@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Виндовсстартменуапплиствисибилититипе
-description: Тип отображения списка приложений меню "Пуск".
+title: тип списка windowsStartMenuAppListVisibilityType
+description: Тип видимости списка приложений меню пуск.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c9110b09e5d7bbfc7f63e2db95d998639625c45b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e75cae7b54406e60fcefb6189446ed67e05537d39829ed9850dcd633e47935e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164238"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип списка windowsStartMenuAppListVisibilityType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип отображения списка приложений меню "Пуск".
+Тип видимости списка приложений меню пуск.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
-|свертываются|1,1|Свертывание списка приложений в меню "Пуск".|
-|удалить|2|Полностью удаляет список приложений из меню "Пуск".|
-|дисаблесеттингсапп|4 |Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
+|userDefined|0|Определенный пользователь. Значение по умолчанию.|
+|обрушение|1 |Свернуть список приложений в пусковом меню.|
+|удаление|2|Удаляет список приложений полностью из меню пуск.|
+|disableSettingsApp|4 |Отключает соответствующий toggle (Collapse или Remove) в приложении Параметры.|
 
 
 

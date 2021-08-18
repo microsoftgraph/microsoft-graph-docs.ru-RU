@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d27825f33e3afa65ad7b89b24c940e9a8a29634e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9537b8ce7d677d6430a8690916996f3e80f2dd9c
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952809"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263809"
 ---
 # <a name="invitation-resource-type"></a>Тип ресурса invitation
 
@@ -43,10 +43,10 @@ ms.locfileid: "50952809"
 |invitedUserDisplayName|String|Отображаемое имя приглашаемого пользователя.|
 |invitedUserEmailAddress|String|Адрес электронной почты приглашаемого пользователя. Обязательный атрибут. В адресе электронной почты запрещено использовать следующие специальные символы:<br><ul><li>Тильда (~)</li><li>Восклицательный знак (`!`)</li><li>Знак "собаки" (`@`)</li><li>Решетка (`#`)</li><li>Знак доллара (`$`)</li><li>Процент (`%`)</li><li>Диакритический знак (`^`)</li><li>Амперсанд (`&`)</li><li>Звездочка (`*`)</li><li>Круглые скобки (`( )`)</li><li>Дефис (`-`)</li><li>Знак "плюс" (`+`)</li><li>Знак равенства (`=`)</li><li>Квадратные скобки (`[ ]`)</li><li>Фигурные скобки (`{ }`)</li><li>Обратная косая черта (`\`)</li><li>Косая черта (`/`)</li><li>Вертикальная черта (`|`)</li><li>Точка с запятой (`;`)</li><li>Двоеточие (`:`)</li><li>Кавычки (`"`)</li><li>Угловые скобки (`< >`)</li><li>Вопросительный знак (`?`)</li><li>Запятая (`,`)</li></ul><br>Однако применяются следующие исключения:<br><ul><li>Точка (`.`) и дефис (`-`) разрешены в любом месте имени пользователя, кроме его начала и конца.</li><li>Знак подчеркивания (`_`) может находиться в любом месте имени пользователя, в том числе в начале и в конце имени.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
-|sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: false.|
+|sendInvitationMessage|Boolean|Указывает, следует ли отправлять электронное письмо приглашенной пользователю. Значение по умолчанию: `false`.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
-|inviteRedeemUrl|Строка|URL-адрес для активации приглашения. Только для чтения.|
-|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. По умолчанию это `Guest` . Вы можете пригласить, `Member` как администратора компании. |
+|inviteRedeemUrl|String|URL-адрес для активации приглашения. Только для чтения.|
+|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. По умолчанию это значение равно `Guest`. Вы можете пригласить, `Member` как администратора компании. |
 |status|String|Состояние приглашения. Возможные значения: `PendingAcceptance` `Completed` , , `InProgress` и `Error`|
 
 ## <a name="relationships"></a>Связи

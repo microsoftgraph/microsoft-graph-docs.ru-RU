@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14610b5bc87a1da11492decb122ee85b065b0c10
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: fb269ed4d4b047b060e5bd6b5685293069d9cc8fce8a11fcced9b711456a083c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153036"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>тип ресурса deviceManagementConfigurationCategory
 
@@ -34,8 +34,8 @@ ms.locfileid: "52665086"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор элемента|
-|description|Строка|Описание элемента|
+|id|String|Идентификатор элемента|
+|description|String|Описание элемента|
 |helpText|Строка|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|Строка|Отображение имени элемента|
@@ -43,8 +43,8 @@ ms.locfileid: "52665086"
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`.|
 |parentCategoryId|Строка|Родительский id категории.|
-|rootCategoryId|Строка|Корневой id категории.|
-|childCategoryIds|Коллекция строк|Список детских ids этой категории.|
+|rootCategoryId|String|Корневой id категории.|
+|childCategoryIds|Коллекция String|Список детских ids этой категории.|
 
 ## <a name="relationships"></a>Связи
 Нет

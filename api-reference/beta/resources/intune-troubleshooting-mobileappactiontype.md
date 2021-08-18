@@ -1,22 +1,20 @@
 ---
-title: тип перечисления Мобилеаппактионтипе
+title: тип enum mobileAppActionType
 description: Определяет типы действий для приложения Intune.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 593ad1f28c6c151484aa3780ae1758af9c055a5f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 56c1ebf3a893509c8edc632b0294970e0ec67fa7
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264061"
 ---
-# <a name="mobileappactiontype-enum-type"></a>тип перечисления Мобилеаппактионтипе
+# <a name="mobileappactiontype-enum-type"></a>тип enum mobileAppActionType
 
 Пространство имен: microsoft.graph
-
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +23,11 @@ ms.locfileid: "49222216"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Неизвестный результат.|
-|инсталлкоммандсент|1,1|Была отправлена команда установки приложения.|
-|устанавлива|4|Приложение установлено.|
-|удалить|4 |Приложение удалено.|
-|усеррекуестединсталл|5 |Установка запрошена пользователем|
+|unknown|0|Неизвестный результат.|
+|installCommandSent|1 |Команда установки приложения была отправлена.|
+|установлено|3 |Установлено приложение.|
+|uninstalled|4 |Приложение неустановлено.|
+|userRequestedInstall|5 |Запрашиваемая пользователем установка|
 
 
 

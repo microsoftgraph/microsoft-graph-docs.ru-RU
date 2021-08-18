@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Усерекспериенцеаналитиксинсигхт
-description: Аналитика пользовательского интерфейса является рекомендацией для усовершенствования оценки анализа взаимодействия с пользователем.
+title: тип ресурса userExperienceAnalyticsInsight
+description: Анализ пользовательских интерфейсов — это рекомендация по улучшению показателей аналитики пользовательских интерфейсов.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d624863a07309b3962122fb93a1ebbaea895a44b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 091ac9a6513dc97c80560009b219a5c57d3da14a2808fac1477607f98d5aae47
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213125"
 ---
-# <a name="userexperienceanalyticsinsight-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксинсигхт
+# <a name="userexperienceanalyticsinsight-resource-type"></a>тип ресурса userExperienceAnalyticsInsight
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Аналитика пользовательского интерфейса является рекомендацией для усовершенствования оценки анализа взаимодействия с пользователем.
+Анализ пользовательских интерфейсов — это рекомендация по улучшению показателей аналитики пользовательских интерфейсов.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|усерекспериенцеаналитиксметриЦид|String|Уникальный идентификатор аналитического интерфейса пользователя.|
-|инсигхтид|String|Уникальный идентификатор аналитического интерфейса пользователя.|
-|values|Коллекция [усерекспериенцеаналитиксинсигхтвалуе](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|Значение аналитического интерфейса пользователя.|
-|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|Значение аналитического интерфейса пользователя. Возможные значения: `none`, `informational`, `warning`, `error`.|
+|userExperienceAnalyticsMetricId|Строка|Уникальный идентификатор аналитики пользовательского интерфейса.|
+|insightId|Строка|Уникальный идентификатор аналитики пользовательского интерфейса.|
+|values|[коллекция userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|Значение аналитики пользовательского интерфейса.|
+|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|Значение аналитики пользовательского интерфейса. Возможные значения: `none`, `informational`, `warning`, `error`.|
 
 ## <a name="relationships"></a>Связи
 Нет

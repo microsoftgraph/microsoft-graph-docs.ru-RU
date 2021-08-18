@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1c1b31413c19436c7dceb34a2055a238fe5881a
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d1bf94f10b164e13600989b6fed982f6426a505a9f952ff67a1aa97dc4843da5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156200"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>тип ресурса deviceHealthScriptRunSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "52665233"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ скрипта для службы службы устройств запустите объект сводки. Это свойство доступно только для чтения.|
+|id|String|Ключ скрипта для службы службы устройств запустите объект сводки. Это свойство доступно только для чтения.|
 |noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым|
 |issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему|
 |detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена|

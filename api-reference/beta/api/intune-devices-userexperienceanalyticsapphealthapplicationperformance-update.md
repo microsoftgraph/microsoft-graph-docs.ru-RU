@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99ffe6141c124e8de8ecd1a6a7fdf362b9cf6ff9
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 12b93a614a73a1d7acfa01e8b3f6f076c3a48f48
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51158103"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266039"
 ---
 # <a name="update-userexperienceanalyticsapphealthapplicationperformance"></a>Обновление userExperienceAnalyticsAppHealthApplicationPerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51158103"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,18 +53,18 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
-|appHangCount|Int32|Количество зависает для приложения. Допустимые значения -2147483648 до 2147483647|
+|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|appHangCount|Int32|Количество зависает для приложения. Допустимые значения 2147483648 2147483647|
 |appHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |appHealthStatus|Строка|Общее состояние здоровья приложения.|
 |allOrgsHealthScore|Двойное с плавающей точкой|Медиана оценка состояния здоровья приложения во всех организациях. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения -2147483648 до 2147483647|
+|activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения 2147483648 2147483647|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|Строка|Издатель приложения.|
-|appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения -2147483648 до 2147483647|
-|appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения -2147483648 до 2147483647|
-|meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения -2147483648 до 2147483647|
+|appPublisher|String|Издатель приложения.|
+|appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения 2147483648 2147483647|
+|appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
+|meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения 2147483648 2147483647|
 
 
 

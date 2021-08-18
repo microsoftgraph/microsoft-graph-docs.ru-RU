@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fcc26a7bf0ea8f9cb6565a4bf01bed8ff55b5dcb
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4b606226e62e7eccfc65bb3c19fd359fff4a2c7161506404aa6eed09c481e2f8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51864965"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54214917"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -39,8 +39,8 @@ ms.locfileid: "51864965"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Администратор предоставил или импортировал название приложения.|
+|id|Строка|Ключ объекта.|
+|displayName|Строка|Администратор предоставил или импортировал название приложения.|
 |description|String|Описание приложения.|
 |publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|

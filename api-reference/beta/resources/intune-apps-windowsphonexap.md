@@ -1,26 +1,26 @@
 ---
 title: тип ресурса windowsPhoneXAP
-description: Содержит свойства и унаследованные свойства для бизнес-приложений Windows Phone XAP Line of Business.
+description: Содержит свойства и унаследованные свойства для Windows Phone XAP Line Of Business apps.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f4cbf245049ac5605207642337fe34570451b63
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 625bb7e6c5fd41505dc16bfa14915b92c4bd99d1
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264698"
 ---
 # <a name="windowsphonexap-resource-type"></a>тип ресурса windowsPhoneXAP
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства и унаследованные свойства для бизнес-приложений Windows Phone XAP Line of Business.
+Содержит свойства и унаследованные свойства для Windows Phone XAP Line Of Business apps.
 
 
 Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
@@ -38,7 +38,7 @@ ms.locfileid: "51863964"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -61,7 +61,7 @@ ms.locfileid: "51863964"
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
-|productIdentifier|String|Идентификатор продукта.|
+|productIdentifier|Строка|Идентификатор продукта.|
 |identityVersion|String|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи
@@ -128,7 +128,8 @@ ms.locfileid: "51863964"
     "v10_1903": true,
     "v10_1909": true,
     "v10_2004": true,
-    "v10_2H20": true
+    "v10_2H20": true,
+    "v10_21H1": true
   },
   "productIdentifier": "String",
   "identityVersion": "String"

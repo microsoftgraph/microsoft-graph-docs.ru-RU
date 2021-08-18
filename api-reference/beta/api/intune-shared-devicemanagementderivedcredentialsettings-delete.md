@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 063957b79c72bf0fea685e0f4f00997179a79a62
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 52570fa102bbada8cabefb30a5e35a9dfaef5b8a4a9bcd3dbaaf22f9bd905853
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153813"
 ---
 # <a name="delete-devicemanagementderivedcredentialsettings"></a>Удаление deviceManagementDerivedCredentialSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -30,7 +30,7 @@ ms.locfileid: "51867506"
 |Делегированные (рабочая или учебная учетная запись)||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
