@@ -1,35 +1,35 @@
 ---
-title: тип перечисления Дефендерпромптфорсамплесубмиссион
-description: Возможные значения для подтверждения пользователя при отправке образцов.
+title: тип enum defenderPromptForSampleSubmission
+description: Возможные значения для запроса пользователя на отправку образцов.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 37d585e11a539724e57a99d63673f076bc5f4f11
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b2c791bcd6a566e872ff7bc2fa41199e86981e138e88f4acef86b8d5e402dad3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256430"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227549"
 ---
-# <a name="defenderpromptforsamplesubmission-enum-type"></a>тип перечисления Дефендерпромптфорсамплесубмиссион
+# <a name="defenderpromptforsamplesubmission-enum-type"></a>тип enum defenderPromptForSampleSubmission
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для подтверждения пользователя при отправке образцов.
+Возможные значения для запроса пользователя на отправку образцов.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|алвайспромпт|1,1|Всегда запрашивать.|
-|промптбефоресендингперсоналдата|2|Автоматически отправлять безопасные примеры.|
-|неверсенддата|4|Никогда не отправлять данные.|
-|сендаллдатависаутпромптинг|4 |Отправлять все данные без выдачи запросов.|
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|alwaysPrompt|1 |Всегда подсказывай.|
+|promptBeforeSendingPersonalData|2|Отправка безопасных образцов автоматически.|
+|neverSendData|3 |Никогда не отправлять данные.|
+|sendAllDataWithoutPrompting|4 |Отправка всех данных без запроса.|
 
 
 

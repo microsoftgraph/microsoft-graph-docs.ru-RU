@@ -1,35 +1,35 @@
 ---
-title: Тип enum appleVpnConnectionType
-description: Тип VPN-подключения Apple.
+title: тип enum appleVpnConnectionType
+description: Тип подключения к VPN Apple.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8ce68a0c9fda0bde6dec8035fb788c55920775f
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: c8a4eb4d765957a56fd99e476837e59516076a9cf2a47007e3790387815ccdab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158739"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190642"
 ---
-# <a name="applevpnconnectiontype-enum-type"></a>Тип enum appleVpnConnectionType
+# <a name="applevpnconnectiontype-enum-type"></a>тип enum appleVpnConnectionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип VPN-подключения Apple.
+Тип подключения к VPN Apple.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1 |Pulse Secure.|
-|f5EdgeClient|2 |F5 Edge Client.|
-|dellSonicWallMobileConnect|3 |Dell SonicWALL Mobile Connection.|
-|checkPointCapsuleVpn|4 |Check Point Vpn Vpn.|
+|f5EdgeClient|2|Клиент F5 Edge.|
+|dellSonicWallMobileConnect|3 |Мобильное подключение Dell SonicWALL.|
+|checkPointCapsuleVpn|4 |Check Point Capsule VPN.|
 |customVpn|5 |Настраиваемый VPN.|
 |ciscoIPSec|6 |Cisco (IPSec).|
 |citrix|7 |Citrix.|
@@ -42,8 +42,8 @@ ms.locfileid: "50158739"
 |ikEv2|14 |IKEv2.|
 |alwaysOn|15 |AlwaysOn.|
 |microsoftTunnel|16 |Microsoft Tunnel.|
-|netMotionMobility|17 |NetMotion Mobility.|
-|microsoftProtect|18 |Защита (Майкрософт).|
+|netMotionMobility|17 |Мобильность NetMotion.|
+|MicrosoftProtect|18 |Microsoft Protect.|
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8166c5215ab83a8f756a13234bad9bf9121fdbd4
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: c6104a142c76439bd3ad8ba9eaa2863bf2067b5e8096f278e5c1fad59367bf32
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51868031"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54147968"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>тип ресурса userExperienceAnalyticsNotAutopilotReadyDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -39,11 +39,11 @@ ms.locfileid: "51868031"
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
 |model|String|Модель устройства intune.|
-|managedBy|String|Устройство intune управляется.|
+|managedBy|Строка|Устройство intune управляется.|
 |autoPilotRegistered|Логический|Автопилотрегистер устройства intune.|
 |autoPilotProfileAssigned|Логический|Автопилот Устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Устройство intune azureAdRegistered.|
-|azureAdJoinType|String|Azure Ad ad для устройства intune присоединяется кType.|
+|azureAdJoinType|Строка|Azure Ad ad для устройства intune присоединяется кType.|
 
 ## <a name="relationships"></a>Связи
 Нет

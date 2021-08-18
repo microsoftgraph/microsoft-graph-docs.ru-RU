@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e121543f821620271ed0eb2731b4b9406b5c25f5
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 4cb4f8606cc027794c96e75da46a248772e1e0a84bd5b185d0d9c9fe0e603606
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51139407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171695"
 ---
 # <a name="update-officesuiteapp"></a>Обновление officeSuiteApp
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51139407"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -75,18 +75,18 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |dependentAppCount|Int32|Общее число зависимостей, которые имеет детское приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |supersedingAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |supersededAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно вымежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|autoAcceptEula|Boolean|Значение, которое необходимо автоматически принимать EULA на устройстве enduser.|
+|autoAcceptEula|Логический|Значение, которое необходимо автоматически принимать EULA на устройстве enduser.|
 |productIds|[коллекция officeProductId](../resources/intune-apps-officeproductid.md)|Ids продукта, которые представляют SKU Пакета Office365. Возможные значения: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство, которое представляет приложения, исключенные из выбранного Id продукта Office365.|
-|useSharedComputerActivation|Boolean|Свойство, которое представляет, используется ли активация общего компьютера не для пакета приложений Office365.|
+|useSharedComputerActivation|Логический|Свойство, которое представляет, используется ли активация общего компьютера не для пакета приложений Office365.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Свойство, представляюное канал обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`, `monthlyEnterprise`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версии пакета приложений Office365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |localesToInstall|Коллекция String|Свойство, которое будет представлять локальные органы, установленные при установке приложений из Office365. Он использует стандартный RFC 6033. Ref: https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Чтобы указать уровень отображения пользовательского интерфейса установки установки на устройстве. Возможные значения: `none`, `full`.|
-|shouldUninstallOlderVersionsOfOffice|Boolean|Свойство, определяющее, следует ли удалить существующие MSI Office, если набор приложений Office365 развернут на устройстве или нет.|
+|shouldUninstallOlderVersionsOfOffice|Логический|Свойство, определяющее, следует ли удалить существующие Office MSI, если набор приложений Office365 развернут на устройстве или нет.|
 |targetVersion|Строка|Свойство, которое должно представлять конкретную целевую версию пакета приложений Office365, которая должна быть развернута на устройствах.|
 |updateVersion|Строка|Свойство, которое представляет версию обновления, в которой конкретная целевая версия доступна для пакета приложений Office365.|
-|officeConfigurationXml|Binary|Свойство, которое представляет XML-файл конфигурации, который может быть указан для Приложений Office ProPlus. Имеет приоритет над всеми другими свойствами. В настоящее время для создания приложения будет использоваться XML-файл конфигурации.|
+|officeConfigurationXml|В двоичном формате|Свойство, которое представляет XML-файл конфигурации, который может быть указан для Office ProPlus Apps. Имеет приоритет над всеми другими свойствами. В настоящее время для создания приложения будет использоваться XML-файл конфигурации.|
 
 
 

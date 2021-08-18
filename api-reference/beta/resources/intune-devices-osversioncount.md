@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Осверсионкаунт
-description: Количество устройств с вредоносной программой для каждой версии ОС
+title: тип ресурса osVersionCount
+description: Количество устройств с вредоносными программами для каждой версии ОС
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6408ee1cef68ade4ccb1c8b90f91ca99a5b75bf4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c142829c41e518a61cd37300163a51751c281ce14a052b54e8bbeb9a2204f85e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49230900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54185700"
 ---
-# <a name="osversioncount-resource-type"></a>Тип ресурса Осверсионкаунт
+# <a name="osversioncount-resource-type"></a>тип ресурса osVersionCount
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Количество устройств с вредоносной программой для каждой версии ОС
+Количество устройств с вредоносными программами для каждой версии ОС
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |osVersion|String|Версия ОС|
-|deviceCount|Int32|Количество устройств с вредоносной программой для версии ОС|
-|lastUpdateDateTime|DateTimeOffset|Метка времени последнего обновления числа устройств в формате UTC|
+|deviceCount|Int32|Количество устройств с вредоносными программами для версии ОС|
+|lastUpdateDateTime|DateTimeOffset|Время последнего обновления для подсчета устройств в UTC|
 
 ## <a name="relationships"></a>Связи
 Нет

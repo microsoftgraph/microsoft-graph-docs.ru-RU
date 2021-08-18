@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Микрософтеджечаннел
-description: Перечисление, указывающее каналы для приложений Microsoft Edge.
+title: тип enum microsoftEdgeChannel
+description: В переумене указаны каналы для Microsoft Edge приложений.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c682bca649407c18f5c1d84fc1cb26e06c0b60f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 612baf108177abbea7f8dc43b7da5bd4b6ace5a0f8a257a332418a87131b222e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49281238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203241"
 ---
-# <a name="microsoftedgechannel-enum-type"></a>тип перечисления Микрософтеджечаннел
+# <a name="microsoftedgechannel-enum-type"></a>тип enum microsoftEdgeChannel
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Перечисление, указывающее каналы для приложений Microsoft Edge.
+В переумене указаны каналы для Microsoft Edge приложений.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|цикл|нуль|Пока не задокументировано.|
-|Бета|1,1|Пока не задокументировано.|
-|строг|2|Пока не задокументировано.|
+|dev|0|Пока не задокументировано.|
+|Бета|1 |Пока не задокументировано.|
+|стабильный|2|Пока не задокументировано.|
 
 
 

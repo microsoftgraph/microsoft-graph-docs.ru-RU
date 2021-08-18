@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
-description: Профиль производных учетных данных Android Кобо.
+title: тип ресурса androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
+description: Android COBO Производный профиль учетных данных.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2140adc8c790878aae6bf62769b8ec1b949d8495
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3a3a127a1506b1352e113d8f65572b67022689473f191f733ae26ed99cf09fc1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54173314"
 ---
-# <a name="androiddeviceownerderivedcredentialauthenticationconfiguration-resource-type"></a>Тип ресурса Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион
+# <a name="androiddeviceownerderivedcredentialauthenticationconfiguration-resource-type"></a>тип ресурса androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Профиль производных учетных данных Android Кобо.
+Android COBO Производный профиль учетных данных.
 
 
 Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
@@ -28,38 +28,38 @@ ms.locfileid: "49216593"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Андроиддевицеовнердериведкредентиалаусентикатионконфигуратионс](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-list.md)|Коллекция [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Список свойств и связей объектов [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) .|
-|[Получение Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-get.md)|[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Чтение свойств и связей объекта [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) .|
-|[Создание Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-create.md)|[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Создание нового объекта [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) .|
-|[Удаление Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-delete.md)|Нет|Удаляет объект [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md).|
-|[Обновление Андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md)|[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Обновление свойств объекта [андроиддевицеовнердериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) .|
+|[Список androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-list.md)|[коллекция androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Список свойств и связей [объектов AndroidDeviceOwnerDerivedCredentialAuthenticationConfiguration.](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|
+|[Get androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-get.md)|[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Чтение свойств и связей [объекта AndroidDeviceOwnerDerivedCredentialAuthenticationConfiguration.](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|
+|[Создание androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-create.md)|[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Создайте [новый объект androidDeviceOwnerDerivedCredentialAuthenticationConfiguration.](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|
+|[Удаление androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-delete.md)|Нет|Удаляет [androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md).|
+|[Обновление androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md)|[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|Обновление свойств объекта [AndroidDeviceOwnerDerivedCredentialAuthenticationConfiguration.](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройств пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|дериведкредентиалсеттингс|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Параметры уровня клиента для производных учетных данных, которые необходимо использовать для проверки подлинности.|
+|derivedCredentialSettings|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Параметры уровня клиента для производных учетных данных, которые будут использоваться для проверки подлинности.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

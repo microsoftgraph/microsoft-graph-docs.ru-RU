@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Девицехеалсскриптремедиатионхистори
-description: Количество устройств, исправленных сценарием работоспособности устройства на указанную дату в последний момент времени изменения.
+title: тип ресурса deviceHealthScriptRemediationHistory
+description: Количество устройств, исправленных скриптом здоровья устройств в заданную дату с последним изменением времени.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04fcc7748897c581ed5fd7a944e7f4f9605d4f8a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 96840d696fdf85bced2b3f356f4322c5f912180dc10fddb2d983853e108f77ab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49259972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148045"
 ---
-# <a name="devicehealthscriptremediationhistory-resource-type"></a>Тип ресурса Девицехеалсскриптремедиатионхистори
+# <a name="devicehealthscriptremediationhistory-resource-type"></a>тип ресурса deviceHealthScriptRemediationHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Количество устройств, исправленных сценарием работоспособности устройства на указанную дату в последний момент времени изменения.
+Количество устройств, исправленных скриптом здоровья устройств в заданную дату с последним изменением времени.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|Дата, на которую рассчитывается журнал результатов для хеалсскрипт.|
-|хисторидата|Коллекция [девицехеалсскриптремедиатионхисторидата](../resources/intune-devices-devicehealthscriptremediationhistorydata.md)|Количество устройств, исправленных сценарием работоспособности устройства на указанную дату.|
+|lastModifiedDateTime|DateTimeOffset|Дата, на которую рассчитывается история результатов для медицинского призыва.|
+|historyData|[коллекция deviceHealthScriptRemediationHistoryData](../resources/intune-devices-devicehealthscriptremediationhistorydata.md)|Количество устройств, исправленных скриптом состояния устройства в заданную дату.|
 
 ## <a name="relationships"></a>Связи
 Нет

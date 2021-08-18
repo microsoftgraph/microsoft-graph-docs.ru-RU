@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d64f6793aa4cd59027488e6223c74de281f79b3
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 61a6b2ea7195b0bd5b4bba33c1829062f5b586ef2c917aa339f2792d1b2e4a8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172934"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>Тип ресурса deviceManagementScriptAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -35,7 +35,7 @@ ms.locfileid: "51611939"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|Id группы Azure Active Directory, на который мы нацелены сценарий.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Id группы Azure Active Directory, на который мы нацелим сценарий.|
 
 ## <a name="relationships"></a>Связи
 Нет
