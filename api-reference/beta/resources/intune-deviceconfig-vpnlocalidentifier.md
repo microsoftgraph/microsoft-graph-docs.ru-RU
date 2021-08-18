@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Впнлокалидентифиер
+title: тип enum vpnLocalIdentifier
 description: Тип локального идентификатора VPN
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05c002346437e5c06ab82c2cc6904475dbe00a4b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a572cf80a25f7c30881446467ddbe95ee31a89c140bbaf0652fca45e4cd91fa4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251423"
 ---
-# <a name="vpnlocalidentifier-enum-type"></a>тип перечисления Впнлокалидентифиер
+# <a name="vpnlocalidentifier-enum-type"></a>тип enum vpnLocalIdentifier
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,9 +25,9 @@ ms.locfileid: "49299634"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицефкдн|нуль|Полное доменное имя устройства|
-|пусто|1,1|переменная Empty|
-|клиентцертификатесубжектнаме|2|Имя субъекта сертификата клиента|
+|deviceFQDN|0|Полное доменное имя устройства|
+|пусто|1 |переменная Empty|
+|clientCertificateSubjectName|2|Имя субъекта сертификата клиента|
 
 
 

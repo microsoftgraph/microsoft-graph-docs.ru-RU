@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
-description: Возможные значения для Фиреваллпрешаредкэйенкодингмесод
+title: брандмауэрPreSharedKeyEncodingMethodType
+description: Возможные значения брандмауэраPreSharedKeyEncodingMethod
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 79fcb89a8165cbea6d2132eda256c742231fd129
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5349bce7fa0b2285fe88b8715aeb336800971c8b5f5ab764e7d47a0b5600b07b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239583"
 ---
-# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
+# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>брандмауэрPreSharedKeyEncodingMethodType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для Фиреваллпрешаредкэйенкодингмесод
+Возможные значения брандмауэраPreSharedKeyEncodingMethod
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|Нет|1,1|Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
-|utF8|2|Кодирование общего ключа с помощью UTF – 8|
+|deviceDefault|0|Нет значения, настроенного Intune, не переопределять настроенное пользователем значение по умолчанию устройства|
+|Нет|1 |Предустанавливаемая клавиша не закодирована. Вместо этого он хранится в широкоформатном формате|
+|utF8|2|Кодирование предшарного ключа с помощью UTF-8|
 
 
 

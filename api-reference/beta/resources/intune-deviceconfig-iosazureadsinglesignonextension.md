@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Иосазуреадсинглесигнонекстенсион
-description: Представляет один Sign-Onный профиль расширения Azure AD для устройств с iOS.
+title: тип ресурса iosAzureAdSingleSignOnExtension
+description: Представляет профиль одноместного Sign-On Azure AD для устройств с iOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12bfdea3ee6c5b07d8a94f82d4344b2d679f627e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a2decb099afae983af7c8bf1e8e0d47a90a4d35aaeaa2b76dd69c2a6e2f3d59f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242932"
 ---
-# <a name="iosazureadsinglesignonextension-resource-type"></a>Тип ресурса Иосазуреадсинглесигнонекстенсион
+# <a name="iosazureadsinglesignonextension-resource-type"></a>тип ресурса iosAzureAdSingleSignOnExtension
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет один Sign-Onный профиль расширения Azure AD для устройств с iOS.
+Представляет профиль одноместного Sign-On Azure AD для устройств с iOS.
 
 
-Наследуется от [иоссинглесигнонекстенсион](../resources/intune-deviceconfig-iossinglesignonextension.md)
+Наследует [от iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|енаблешареддевицемоде|Boolean|Включает или отключает режим общего устройства.|
-|бундлеидакцессконтроллист|Коллекция строк|Необязательный список дополнительных идентификаторов пакетов, которые могут использовать расширение AAD для единого входа.|
-|построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
+|enableSharedDeviceMode|Логический|Включает или отключает общий режим устройства.|
+|bundleIdAccessControlList|Коллекция String|Необязательный список дополнительных ИД пакетов, разрешенных для использования расширения AAD для одного входного знака.|
+|конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет

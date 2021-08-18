@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9a5fe31e10ea1ad7bf4ae2ba89aa1d70bd60982
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 35377d06eb35b2c3b11f9bc25f4c39a10410345693a2eb2c7a45255eef017411
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51865994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213720"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>функция getAssignedRoleIdsForLoggedInUser
 
@@ -29,7 +29,7 @@ ms.locfileid: "51865994"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

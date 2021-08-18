@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Впнтраффикруле
+title: тип ресурса vpnTrafficRule
 description: Определение правила трафика VPN.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79bb70575ad6351a443776637ff07ef139aaafb8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c13aadd9f5db8b56cef169bc3a6ef0d6d0900287c65c1000b926b533269f8489
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276303"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253126"
 ---
-# <a name="vpntrafficrule-resource-type"></a>Тип ресурса Впнтраффикруле
+# <a name="vpntrafficrule-resource-type"></a>тип ресурса vpnTrafficRule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,16 +25,16 @@ ms.locfileid: "49276303"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Расширением.|
-|QP|Int32|Протоколы (0-255). Допустимые значения — от 0 до 255|
-|локалпортранжес|Коллекция [нумберранже](../resources/intune-deviceconfig-numberrange.md)|Локальный диапазон портов можно задать только в том случае, если протокол имеет значение TCP или UDP (6 или 17). Эта коллекция может содержать не более 500 элементов.|
-|ремотепортранжес|Коллекция [нумберранже](../resources/intune-deviceconfig-numberrange.md)|Диапазон удаленных портов можно задать только в том случае, если протокол имеет значение TCP или UDP (6 или 17). Эта коллекция может содержать не более 500 элементов.|
-|локаладдрессранжес|Коллекция [iPv4Range](../resources/intune-shared-ipv4range.md)|Диапазон локальных адресов. Эта коллекция может содержать не более 500 элементов.|
-|ремотеаддрессранжес|Коллекция [iPv4Range](../resources/intune-shared-ipv4range.md)|Диапазон удаленных адресов. Эта коллекция может содержать не более 500 элементов.|
-|appId|String|Идентификатор приложения, если это правило трафика вызывается приложением.|
-|Тип|[впнтраффикрулеапптипе](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Тип приложения, если это правило трафика вызывается приложением. Возможные значения: `none`, `desktop`, `universal`.|
-|раутингполицитипе|[впнтраффикрулераутингполицитипе](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Когда приложение запускается, указывает, следует ли включить раздельное туннелирование по этому маршруту. Возможные значения: `none`, `splitTunnel`, `forceTunnel`.|
-|страх|String|Утверждения, связанные с этим правилом трафика.|
+|name|String|Имя.|
+|протоколы|Int32|Протоколы (0-255). Допустимые значения от 0 до 255|
+|localPortRanges|[коллекция numberRange](../resources/intune-deviceconfig-numberrange.md)|Диапазон локальных портов можно установить только в том случае, если протокол TCP или UDP (6 или 17). Эта коллекция может содержать не более 500 элементов.|
+|remotePortRanges|[коллекция numberRange](../resources/intune-deviceconfig-numberrange.md)|Диапазон удаленных портов можно установить только в том случае, если протокол TCP или UDP (6 или 17). Эта коллекция может содержать не более 500 элементов.|
+|localAddressRanges|[коллекция iPv4Range](../resources/intune-shared-ipv4range.md)|Локальный диапазон адресов. Эта коллекция может содержать не более 500 элементов.|
+|remoteAddressRanges|[коллекция iPv4Range](../resources/intune-shared-ipv4range.md)|Диапазон удаленных адресов. Эта коллекция может содержать не более 500 элементов.|
+|appId|String|Идентификатор приложения, если это правило трафика запускается приложением.|
+|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Тип приложения, если это правило трафика запускается приложением. Возможные значения: `none`, `desktop`, `universal`.|
+|routingPolicyType|[VPNTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|При запуске приложения указывает, следует ли включить раздельный туннель по этому маршруту. Возможные значения: `none`, `splitTunnel`, `forceTunnel`.|
+|утверждения|Строка|Утверждения, связанные с этим правилом трафика.|
 
 ## <a name="relationships"></a>Связи
 Нет

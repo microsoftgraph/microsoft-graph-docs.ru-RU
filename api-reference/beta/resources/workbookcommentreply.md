@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса workbookCommentReply
+title: тип ресурса workbookCommentReply
 description: Определение типа ресурса workbookCommentReply
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dc25b02005e0f419fbb878005006f155f1f99e72
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 9c72ee5a84a0bf365eb6884901c2128e5b23c531109349eeb15e7d519cb15e8d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159432"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249687"
 ---
-# <a name="workbookcommentreply-resource-type"></a>Тип ресурса workbookCommentReply
+# <a name="workbookcommentreply-resource-type"></a>тип ресурса workbookCommentReply
 
 Пространство имен: microsoft.graph
 
@@ -22,16 +22,16 @@ ms.locfileid: "50159432"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список workbookCommentReplies](../api/workbookcomment-list-replies.md) | [Коллекция workbookCommentReply](workbookcommentreply.md) | Получить список объектов workbookcommentreply. |
+| [Список книгCommentReplies](../api/workbookcomment-list-replies.md) | [коллекция workbookCommentReply](workbookcommentreply.md) | Извлечение списка объектов workbookcommentreply. |
 | [Get workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Чтение свойств и связей объекта workbookCommentReply. |
-| [Создание workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Создайте новую книгуCommentReply. |
+| [Создание книгиCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Создание новой книгиCommentReply. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|content|String|Содержимое ответного комментария.|
-|contentType|String|Указывает тип ответного комментария.|
+|content|String|Содержимое ответимого комментария.|
+|contentType|String|Указывает тип для ответа на комментарий.|
 |id|String|Представляет идентификатор примечания. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

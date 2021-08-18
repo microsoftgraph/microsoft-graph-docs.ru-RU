@@ -1,18 +1,18 @@
 ---
-title: Действие completeSignup
+title: действие moveDevicesToOU
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09172daecda72634a5f078a217677921cecb43fc9ff1cddcd1808e37cdf0208d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bace04cb13ae740b8b2a621bfa4199b74a45e6b4
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227199"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265556"
 ---
-# <a name="completesignup-action"></a>Действие completeSignup
+# <a name="movedevicestoou-action"></a>действие moveDevicesToOU
 
 Пространство имен: microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "54227199"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|**TODO: Определение областей AppOnly **|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,10 @@ ms.locfileid: "54227199"
 }
 -->
 ``` http
-POST /deviceManagement/androidForWorkSettings/completeSignup
+POST /deviceManagement/managedDevices/moveDevicesToOU
+POST /deviceManagement/comanagedDevices/moveDevicesToOU
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/moveDevicesToOU
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/moveDevicesToOU
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -53,7 +56,8 @@ POST /deviceManagement/androidForWorkSettings/completeSignup
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enterpriseToken|String|Пока не задокументировано.|
+|deviceIds|Коллекция объектов Guid|Пока не задокументировано.|
+|organizationalUnitPath|String|Пока не задокументировано.|
 
 
 
@@ -65,13 +69,16 @@ POST /deviceManagement/androidForWorkSettings/completeSignup
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/completeSignup
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/moveDevicesToOU
 
 Content-type: application/json
-Content-length: 51
+Content-length: 134
 
 {
-  "enterpriseToken": "Enterprise Token value"
+  "deviceIds": [
+    "fb450a76-0a76-fb45-760a-45fb760a45fb"
+  ],
+  "organizationalUnitPath": "Organizational Unit Path value"
 }
 ```
 

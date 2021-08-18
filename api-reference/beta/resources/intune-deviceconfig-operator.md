@@ -1,55 +1,55 @@
 ---
-title: тип перечисления оператора
-description: Оператор для правил.
+title: тип enum оператора
+description: Оператор правил.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 99718c56c818bd0d3cc750f092a116337256a0fb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0b93f1618f8a8eb951e7a4ef01645af907965411cb2a7273b97bf007680d4a4f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49223117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232764"
 ---
-# <a name="operator-enum-type"></a>тип перечисления оператора
+# <a name="operator-enum-type"></a>тип enum оператора
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Оператор для правил.
+Оператор правил.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Оператор None.|
-|и|1,1|Оператор and.|
-|или|2|Оператор OR.|
-|значения сумм|4|Оператору Equals.|
-|нотекуалс|4 |Оператор Нотекуалс.|
+|Нет|0|Нет оператора.|
+|и|1 |И оператор.|
+|или|2|Или оператор.|
+|isEquals|3 |Оператор IsEquals.|
+|notEquals|4 |Оператор NotEquals.|
 |greaterThan|5 |Оператор GreaterThan.|
-|лесссан|6 |Оператор Лесссан.|
-|взаимодействие|7 |Оператор Between.|
-|нотбетвин|8 |Оператор Нотбетвин.|
-|греатерекуалс|9 |Оператор Греатерекуалс.|
-|лессекуалс|10 |Оператор Лессекуалс.|
-|дайтимебетвин|11 |Оператор Дайтимебетвин.|
-|beginsWith|12 |Оператор BeginsWith.|
-|нотбегинсвис|13 |Оператор Нотбегинсвис.|
+|lessThan|6 |Оператор LessThan.|
+|между|7 |Между оператором.|
+|notBetween|8 |Оператор NotBetween.|
+|greaterEquals|9 |Оператор GreaterEquals.|
+|lessEquals|10 |Оператор LessEquals.|
+|dayTimeBetween|11 |Оператор DayTimeBetween.|
+|beginsWith|12 |BeginsWith operator.|
+|notBeginsWith|13 |Оператор NotBeginsWith.|
 |endsWith|14 |Оператор EndsWith.|
-|нотендсвис|15 |Оператор Нотендсвис.|
-|contains|16 |Оператор Contains.|
-|Несодержит|17 |Оператор Несодержит.|
-|аллоф|18 |Оператор Аллоф.|
-|онеоф|19|Оператор Онеоф.|
-|нонеоф|двадцать|Оператор Нонеоф.|
-|сетекуалс|21|Оператор Сетекуалс.|
-|ордередсетекуалс|22|Оператор Ордередсетекуалс.|
-|субсетоф|23|Оператор Субсетоф.|
-|ексклудесалл|открыт|Оператор Ексклудесалл.|
+|notEndsWith|15 |Оператор NotEndsWith.|
+|contains|16 |Содержит оператора.|
+|notContains|17 |Оператор NotContains.|
+|allOf|18 |Оператор AllOf.|
+|oneOf|19|Оператор OneOf.|
+|noneOf|20|Оператор NoneOf.|
+|setEquals|21|Оператор SetEquals.|
+|orderedSetEquals|22|Оператор OrderedSetEquals.|
+|subsetOf|23|Оператор SubsetOf.|
+|excludesAll|24|ExcludesAll operator.|
 
 
 

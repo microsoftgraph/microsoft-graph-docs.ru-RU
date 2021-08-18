@@ -1,59 +1,60 @@
 ---
-title: Тип ресурса Усерекспериенцеаналитиксдевицеперформанце
-description: Объект производительности устройства аналитики взаимодействия с пользователем содержит сведения о быстродействии при загрузке устройства.
+title: тип ресурса userExperienceAnalyticsDevicePerformance
+description: Объект пользовательской аналитики производительности устройств содержит сведения о производительности загрузки устройств.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 817fb08cf3efeb107741c8428d721ab10e28c75c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 763e123689a0ea7149f164dd8a79341664bb20a3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208431"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264824"
 ---
-# <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицеперформанце
+# <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsDevicePerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Объект производительности устройства аналитики взаимодействия с пользователем содержит сведения о быстродействии при загрузке устройства.
+Объект пользовательской аналитики производительности устройств содержит сведения о производительности загрузки устройств.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Усерекспериенцеаналитиксдевицеперформанцес](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Список свойств и связей объектов [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
-|[Получение Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
-|[Создание Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-create.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Создание нового объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
-|[Удаление Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md).|
-|[Обновление Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-update.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Обновление свойств объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
-|[Функция Суммаризедевицеперформанцедевицес](../api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md)|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Н/Д|
+|[Список userExperienceAnalyticsDevicePerformances](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|[коллекция userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Список свойств и связей [объектов userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|
+|[Get userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Чтение свойств и связей [объекта userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|
+|[Создание userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-create.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Создание нового [объекта userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|
+|[Удаление userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-delete.md)|Нет|Удаляет [пользователяExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md).|
+|[Обновление userExperienceAnalyticsDevicePerformance](../api/intune-devices-userexperienceanalyticsdeviceperformance-update.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Обновление свойств объекта [userExperienceAnalyticsDevicePerformance.](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|
+|[summarizeDevicePerformanceDevices function](../api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md)|[коллекция userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
-|deviceName|String|Имя устройства службы аналитики взаимодействия с пользователем.|
-|model|String|Модель устройства аналитики взаимодействия с пользователем.|
-|manufacturer|String|Производитель устройства аналитики взаимодействия с пользователем.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска устройства анализа взаимодействия с пользователем. Возможные значения: `unkown`, `hdd`, `ssd`.|
-|operatingSystemVersion|String|Версия операционной системы устройства аналитики взаимодействия с пользователем.|
-|бутскоре|Int32|Оценка загрузки устройства Analytics User Experience.|
-|коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
-|граупполицибуттимеинмс|Int32|Время загрузки групповой политики устройства Analytics для пользователя (в миллисекундах).|
-|хеалсстатус|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние работоспособности устройства аналитики взаимодействия с пользователем. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
-|логинскоре|Int32|Оценка имени для входа на устройство аналитики взаимодействия с пользователем.|
-|корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
-|deviceCount|Int64|Число устройств для аналитики взаимодействия с пользователем.|
-|респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
-|блуескринкаунт|Int32|Число синих экранов за последние 14 дней. Допустимые значения — от 0 до 9999999|
-|restartCount|Int32|Количество перезапусков за последние 14 дней. Допустимые значения — от 0 до 9999999|
-|аверажеблуескринс|Двойное с плавающей точкой|Среднее (среднее) количество синих экранов на устройство за последние 14 дней. Допустимые значения — от 0 до 9999999|
-|аверажерестартс|Двойное с плавающей точкой|Средняя (среднее) Количество перезапусков на устройство за последние 14 дней. Допустимые значения — от 0 до 9999999|
+|id|String|Уникальный идентификатор устройства загрузки загрузочного устройства для аналитики пользовательского интерфейса.|
+|deviceName|String|Имя устройства аналитики пользовательского интерфейса.|
+|model|String|Модель устройства аналитики пользовательских интерфейсов.|
+|manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска для аналитики пользовательского интерфейса устройства. Возможные значения: `unkown`, `hdd`, `ssd`.|
+|operatingSystemVersion|String|Версия операционной системы для аналитики пользовательского интерфейса устройства.|
+|bootScore|Int32|Оценка загрузки устройства для аналитики пользовательского интерфейса.|
+|coreBootTimeInMs|Int32|Основное время загрузки устройства для аналитики пользовательского интерфейса в миллисекунд.|
+|groupPolicyBootTimeInMs|Int32|Время загрузки групповой политики устройств для пользовательского интерфейса в миллисекунд.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние здоровья устройства аналитики пользовательского интерфейса. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|loginScore|Int32|Оценка входа устройства аналитики пользовательского интерфейса.|
+|coreLoginTimeInMs|Int32|Время входа основного устройства для аналитики пользовательского интерфейса в миллисекунд.|
+|groupPolicyLoginTimeInMs|Int32|Время входа в группу политик пользовательского интерфейса для аналитики устройств в миллисекунд.|
+|deviceCount|Int64|Аналитика пользовательских интерфейсов суммирует количество устройств.|
+|responsiveDesktopTimeInMs|Int32|Аналитика пользовательского интерфейса реагирует на время рабочего стола в миллисекунд.|
+|blueScreenCount|Int32|Количество синих экранов за последние 14 дней. Допустимые значения от 0 до 9999999|
+|restartCount|Int32|Количество перезапусков за последние 14 дней. Допустимые значения от 0 до 9999999|
+|averageBlueScreens|Двойное с плавающей точкой|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|averageRestarts|Двойное с плавающей точкой|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -87,7 +88,8 @@ ms.locfileid: "49208431"
   "blueScreenCount": 1024,
   "restartCount": 1024,
   "averageBlueScreens": "4.2",
-  "averageRestarts": "4.2"
+  "averageRestarts": "4.2",
+  "startupPerformanceScore": "4.2"
 }
 ```
 

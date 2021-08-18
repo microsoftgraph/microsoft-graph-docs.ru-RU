@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Кэйстрингвалуепаир
-description: Значение типа "ключ — значение" со строковым ключом и строковым значением.
+title: тип ресурса keyStringValuePair
+description: Пара значения ключа со строкой и строковая.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5492724d400c52638706c24df9826bf8725e00f2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 66a4cdfab16f77f5066986b1a9ad2d961b5641b665fadc2b37f3f8d2fc4510b7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203003"
 ---
-# <a name="keystringvaluepair-resource-type"></a>Тип ресурса Кэйстрингвалуепаир
+# <a name="keystringvaluepair-resource-type"></a>тип ресурса keyStringValuePair
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Значение типа "ключ — значение" со строковым ключом и строковым значением.
+Пара значения ключа со строкой и строковая.
 
 
-Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)
+Наследует [от keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|key|String|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
-|value|String|Строковое значение для параметра "ключ — значение".|
+|key|Строка|Клавиша строки пары ключ-значение. Унаследованный от [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|value|String|Строковая величина пары ключ-значение.|
 
 ## <a name="relationships"></a>Связи
 Нет

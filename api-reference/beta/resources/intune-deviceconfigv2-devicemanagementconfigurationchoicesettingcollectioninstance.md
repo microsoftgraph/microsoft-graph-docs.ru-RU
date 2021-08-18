@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e17bbf0fe32816ef2f1147d1f82ddbe0692edad
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: fae352340d61f3e638917eaf50553aa3cef26b7a2964c80657406e300620578f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242666"
 ---
 # <a name="devicemanagementconfigurationchoicesettingcollectioninstance-resource-type"></a>тип ресурса deviceManagementConfigurationChoiceSettingCollectionInstance
 

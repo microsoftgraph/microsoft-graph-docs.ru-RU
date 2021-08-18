@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратиондепендентон
+title: тип ресурса deviceManagementConfigurationDependentOn
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67e4f4b542fa5d295a7abcd92665325b49349069
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1f6d139c90ba4a34a56183605955c2d536d0ae28b81c98649ddb314bec7a307f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253686"
 ---
-# <a name="devicemanagementconfigurationdependenton-resource-type"></a>Тип ресурса Девицеманажементконфигуратиондепендентон
+# <a name="devicemanagementconfigurationdependenton-resource-type"></a>тип ресурса deviceManagementConfigurationDependentOn
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49242259"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|депендентон|String|Идентификатор параметра родительского или родительского параметров, зависящий от|
-|парентсеттингид|String|Идентификатор параметра parent или Parent ID, зависящий от|
+|dependentOn|String|Идентификатор родительского параметра и параметра родительского параметра, зависящих от|
+|parentSettingId|Строка|Идентификатор родительского или родительского идентификатора параметров, зависящих от|
 
 ## <a name="relationships"></a>Связи
 Нет

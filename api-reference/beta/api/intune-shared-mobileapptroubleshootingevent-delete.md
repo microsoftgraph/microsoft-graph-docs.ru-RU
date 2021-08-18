@@ -1,16 +1,16 @@
 ---
 title: Удаление mobileAppTroubleshootingEvent
-description: Описывает метод Delete mobileAppTroubleshootingEvent API Microsoft Graph для Intune, который поддерживает несколько процессов.
+description: Описывает метод Delete mobileAppTroubleshootingEvent API microsoft Graph intune, который поддерживает несколько процессов.
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b44012db5d7a22aa2d1ec10371e26a48731c7df1
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 07835dc8ac092519c942b8a548860d7cc7a7271813e9ac213681a7829bb04715
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226729"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>Удаление mobileAppTroubleshootingEvent
 
@@ -31,7 +31,7 @@ ms.locfileid: "51863761"
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
