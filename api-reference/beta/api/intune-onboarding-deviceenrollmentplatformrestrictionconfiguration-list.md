@@ -1,18 +1,18 @@
 ---
-title: Get windows10XCertificateProfile
-description: Чтение свойств и связей объекта Windows10XCertificateProfile.
+title: Список устройствEnrollmentPlatformRestrictionConfigurations
+description: Список свойств и связей объектов deviceEnrollmentPlatformRestrictionConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 451468090f471154c2ba30080293e65f273a427cff470251a335a96058639f05
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d06b9b69a1185933e1dc79b955a99aaabef094d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193932"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58259318"
 ---
-# <a name="get-windows10xcertificateprofile"></a>Get windows10XCertificateProfile
+# <a name="list-deviceenrollmentplatformrestrictionconfigurations"></a>Список устройствEnrollmentPlatformRestrictionConfigurations
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "54193932"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта Windows10XCertificateProfile.](../resources/intune-rapolicy-windows10xcertificateprofile.md)
+Список свойств и связей [объектов deviceEnrollmentPlatformRestrictionConfiguration.](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,13 +37,10 @@ ms.locfileid: "54193932"
 }
 -->
 ``` http
-GET /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
+GET /deviceManagement/deviceEnrollmentConfigurations
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,14 +50,14 @@ GET /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProf
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект Windows10XCertificateProfile](../resources/intune-rapolicy-windows10xcertificateprofile.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceEnrollmentPlatformRestrictionConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,21 +65,38 @@ GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{de
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 440
+Content-Length: 1021
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.windows10XCertificateProfile",
-    "id": "a11174a1-74a1-a111-a174-11a1a17411a1",
-    "version": 7,
-    "displayName": "Display Name value",
-    "description": "Description value",
-    "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "roleScopeTagIds": [
-      "Role Scope Tag Ids value"
-    ]
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionConfiguration",
+      "id": "dedce9f4-e9f4-dedc-f4e9-dcdef4e9dcde",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "priority": 8,
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "version": 7,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "platformRestriction": {
+        "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+        "platformBlocked": true,
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
+        ]
+      },
+      "platformType": "ios"
+    }
+  ]
 }
 ```
 

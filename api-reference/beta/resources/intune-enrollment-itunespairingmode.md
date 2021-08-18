@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Итунеспаирингмоде
+title: тип enum iTunesPairingMode
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 70574f804d245e440ce6b97aed4a77e6bde32f78
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 703ed161facc48abd6abd3cffd467a780a43a883b7f68415db4c2f6f34efe2d5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49197900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178992"
 ---
-# <a name="itunespairingmode-enum-type"></a>тип перечисления Итунеспаирингмоде
+# <a name="itunespairingmode-enum-type"></a>тип enum iTunesPairingMode
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,9 +25,9 @@ ms.locfileid: "49197900"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Использование|нуль|Связывание запрещено|
-|разрешить|1,1|Связывание разрешено|
-|рекуиресцертификате|2|Сертификат, необходимый для связывания с iTunes|
+|disallow|0|Сопряжение не допускается|
+|разрешить|1 |Разрешено сопряжение|
+|requiresCertificate|2|Сертификат, необходимый для сопряжения с iTunes|
 
 
 

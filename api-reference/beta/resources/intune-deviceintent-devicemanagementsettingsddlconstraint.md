@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Девицеманажементсеттингсддлконстраинт
-description: Ограничение на применение этого параметра — это SDDL с правильным форматом
+title: тип ресурса deviceManagementSettingSddlConstraint
+description: Принудительное применение параметра является хорошо сформированным SDDL
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06019aa344eba506fe4829a8b737728bed3b0847
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 14eb36fec9160c89a0ee2dc1e38d8cd882d051b1892347b18e5fdac169f2abab
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54127000"
 ---
-# <a name="devicemanagementsettingsddlconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингсддлконстраинт
+# <a name="devicemanagementsettingsddlconstraint-resource-type"></a>тип ресурса deviceManagementSettingSddlConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение на применение этого параметра — это SDDL с правильным форматом
+Принудительное применение параметра является хорошо сформированным SDDL
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

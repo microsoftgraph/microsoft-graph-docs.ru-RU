@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Девицеманажементдомаинжоинконнекторстате
-description: Состояние запроса ОДЖ.
+title: тип enum deviceManagementDomainJoinConnectorState
+description: В запросе ODJ говорится.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 58b0a3a9e590913d0415062d6737fc6d9c33c451
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8eeea6cccfb7e917b9f6f47ac918f233dd36cd9bdf8b4a0d28fbddf88b9561d5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222760"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54122274"
 ---
-# <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>тип перечисления Девицеманажементдомаинжоинконнекторстате
+# <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>тип enum deviceManagementDomainJoinConnectorState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние запроса ОДЖ.
+В запросе ODJ говорится.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|ASP|нуль|Соединитель активно проверяет связь с Intune.|
-|error|1,1|Нет сердца-червей от последнего часа до 1 часа.|
-|отсутств|2|От соединителя за последние 5 дней нет сердца-червей.|
+|active|0|Соединитель активно pinging Intune.|
+|error|1 |В течение последнего часа из соединитетеля не будет биться сердце.|
+|неактивно|2|За последние 5 дней из соединитетеля не будет биться сердце.|
 
 
 

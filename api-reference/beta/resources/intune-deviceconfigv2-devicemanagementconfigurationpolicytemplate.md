@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d592459eeee437b3911344a0bb5f5a0a5833a1f2
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e891f9784e6306b69650672b8e4e18ed4f6a7d294d84916451a1a9553ba7d30e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52667082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182905"
 ---
 # <a name="devicemanagementconfigurationpolicytemplate-resource-type"></a>тип ресурса deviceManagementConfigurationPolicyTemplate
 
@@ -34,10 +34,10 @@ ms.locfileid: "52667082"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ документа шаблона, состоящего из BaseId и Version. Автоматически созданный.|
-|baseId|Строка|Идентификатор базы шаблонов|
+|id|String|Ключ документа шаблона, состоящего из BaseId и Version. Автоматически созданный.|
+|baseId|String|Идентификатор базы шаблонов|
 |version|Int32|Версия шаблона. Допустимые значения от 1 до 2147483647. Это свойство доступно только для чтения.|
-|displayName|Строка|Имя отображения шаблона|
+|displayName|String|Имя отображения шаблона|
 |description|Строка|Описание шаблона|
 |displayVersion|Строка|Описание версии шаблона|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Указать текущее состояние жизненного цикла шаблона. Возможные значения: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|

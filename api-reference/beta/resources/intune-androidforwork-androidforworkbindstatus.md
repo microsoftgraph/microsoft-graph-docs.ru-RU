@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Андроидфорворкбиндстатус
-description: Состояние BIND клиента с помощью API Google EMM
+title: тип enum androidForWorkBindStatus
+description: Привязка состояния клиента с API EMM Google
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3039d852ee2bcc2680da2b13e56b513190dca113
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 717222c957690606cedea1a3a9e092a7cd4db0bd0afcc9104342171e609e9334
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49282099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54183305"
 ---
-# <a name="androidforworkbindstatus-enum-type"></a>тип перечисления Андроидфорворкбиндстатус
+# <a name="androidforworkbindstatus-enum-type"></a>тип enum androidForWorkBindStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние BIND клиента с помощью API Google EMM
+Привязка состояния клиента с API EMM Google
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нотбаунд|нуль|Пока не задокументировано.|
-|свободного|1,1|Пока не задокументировано.|
-|баундандвалидатед|2|Пока не задокументировано.|
-|Отмена привязки|4|Пока не задокументировано.|
+|notBound|0|Пока не задокументировано.|
+|связанный|1 |Пока не задокументировано.|
+|boundAndValidated|2|Пока не задокументировано.|
+|разбинтовка|3 |Пока не задокументировано.|
 
 
 

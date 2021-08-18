@@ -1,37 +1,35 @@
 ---
-title: Тип ресурса Мобилеапптраублешутингаппполицикреатионхистори
-description: Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+title: тип ресурса mobileAppTroubleshootingAppPolicyCreationHistory
+description: Элемент history, содержащийся в событии устранения неполадок мобильных приложений.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb8ef3d71e9e8d80486836f1657df8afc3bc293c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d3b3cefea47e18fb33658dd026a6f23323f3c924
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222173"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253139"
 ---
-# <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппполицикреатионхистори
+# <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>тип ресурса mobileAppTroubleshootingAppPolicyCreationHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+Элемент history, содержащийся в событии устранения неполадок мобильных приложений.
 
 
-Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
+Наследует [от mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
+|occurrenceDateTime|DateTimeOffset|Время, когда произошел элемент истории. Унаследованный от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Унаследованный от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|runState|[runState](../resources/intune-troubleshooting-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|errorCode|String|Код ошибки для сбоя пуст, если нет сбоя.|
 
 ## <a name="relationships"></a>Связи
 Нет

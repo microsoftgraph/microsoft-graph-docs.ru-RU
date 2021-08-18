@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Скипефорбусинессактивитикаунтс
+title: тип ресурса skypeForBusinessActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 40166a752f66968f207802ce68936ccd569822f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a95d184ae4b21ee6cdd21ab8cf567e5835d1fdf3e6e09162dc48baaf0f5c1b1b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54136235"
 ---
-# <a name="skypeforbusinessactivitycounts-resource-type"></a>Тип ресурса Скипефорбусинессактивитикаунтс
+# <a name="skypeforbusinessactivitycounts-resource-type"></a>тип ресурса skypeForBusinessActivityCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,12 @@ ms.locfileid: "47997573"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| пиртопир        | Int64  |
-| распределяют         | Int64  |
-| участвовал      | Int64  |
-| репортрефрешдате | Дата   |
+| peerToPeer        | Int64  |
+| организовано         | Int64  |
+| участие      | Int64  |
+| reportRefreshDate | Дата   |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 
