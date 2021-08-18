@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Андроидманажедстореаппконфигуратион
-description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильного приложения Android Enterprise.
+title: тип ресурса androidManagedStoreAppConfiguration
+description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильных приложений Enterprise Android.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f89bd01897f7891bb32dac928686e02110aaa889
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a5aeead1d8687d0de247c5b1f23adc3439b6bd15c035efc0d3ba1f76bbfc2fe8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161432"
 ---
-# <a name="androidmanagedstoreappconfiguration-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратион
+# <a name="androidmanagedstoreappconfiguration-resource-type"></a>тип ресурса androidManagedStoreAppConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства, унаследованные свойства и действия для конфигураций мобильного приложения Android Enterprise.
+Содержит свойства, унаследованные свойства и действия для конфигураций мобильных приложений Enterprise Android.
 
 
 Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)
@@ -28,34 +28,34 @@ ms.locfileid: "49261239"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Андроидманажедстореаппконфигуратионс](../api/intune-apps-androidmanagedstoreappconfiguration-list.md)|Коллекция [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Список свойств и связей объектов [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
-|[Получение Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Чтение свойств и связей объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
-|[Создание Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Создание нового объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
-|[Удаление Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|Нет|Удаляет объект [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md).|
-|[Обновление Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Обновление свойств объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
+|[Список androidManagedStoreConfigurations](../api/intune-apps-androidmanagedstoreappconfiguration-list.md)|[коллекция androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Список свойств и связей [объектов AndroidManagedStoreAppConfiguration.](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|
+|[Get AndroidManagedStoreAppConfiguration](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Чтение свойств и связей [объекта AndroidManagedStoreAppConfiguration.](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|
+|[Создание androidManagedStoreAppConfiguration](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Создайте новый [объект AndroidManagedStoreAppConfiguration.](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|
+|[Удаление androidManagedStoreAppConfiguration](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|Нет|Удаляет [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).|
+|[Обновление androidManagedStoreAppConfiguration](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Обновление свойств объекта [AndroidManagedStoreAppConfiguration.](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|id|Строка|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|Коллекция String|приложение-обработчик Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этой сущности конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|String|Администратор предоставил описание конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|description|Строка|Администратор предоставил описание конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |displayName|String|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|packageId|String|Идентификатор пакета конфигурации корпоративных приложений Android.|
-|пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
-|пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
-|аппсуппортсоемконфиг|Boolean|Указывает, является ли Аппконфиг политикой Оемконфиг.|
-|профилеаппликабилити|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Применимость профиля предприятия Android (Андроидворкпрофиле, Девицеовнер или Default (применяется к обоим). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
+|packageId|String|ID Enterprise конфигурации приложения.|
+|payloadJson|Строка|Android Enterprise конфигурации приложения JSON полезной нагрузки.|
+|permissionActions|[коллекция androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Список разрешений на приложения Для Android и соответствующих действий разрешений.|
+|appSupportsOemConfig|Логический|Является ли этот AppConfig политикой OEMConfig.|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Применимость Enterprise профилей (AndroidWorkProfile, DeviceOwner или по умолчанию (применяется к обоим)). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md)|Список заданий группы для настройки приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
-|deviceStatuses|Коллекция [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)|Список ManagedDeviceMobileAppConfigurationDeviceStatus. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|deviceStatuses|[коллекция managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)|Список ManagedDeviceMobileAppConfigurationDeviceStatus. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |userStatuses|Коллекция [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md)|Список объектов ManagedDeviceMobileAppConfigurationUserStatus. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |deviceStatusSummary|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md)|Общие сведения о состоянии устройства, связанном с настройкой приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |userStatusSummary|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md)|Общие сведения о состоянии пользователя, связанном с настройкой приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|

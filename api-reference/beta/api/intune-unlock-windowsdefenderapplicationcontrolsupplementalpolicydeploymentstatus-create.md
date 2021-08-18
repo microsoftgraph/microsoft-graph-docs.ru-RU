@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8015cf75440757f5926838694a8cec7a5ea81dcb
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: ae000ea64ff06d9b6991b2169435b6a69479e59ccf2b106f6437b2f3bb73b65b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207252"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Создание windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51133936"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|ID устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата последней синхронизации.|
-|osVersion|String|Windows OS Version.|
-|osDescription|String|Описание версии ОС Windows.|
+|osVersion|String|Windows ВЕРСИЯ ОС.|
+|osDescription|String|Windows Описание версии ОС.|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|Состояние развертывания политики. Возможные значения: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|String|Имя пользователя этого устройства.|
 |userPrincipalName|String|Имя главного пользователя.|
-|policyVersion|Строка|Человеческая читаемая версия дополнительной политики WindowsDefenderApplicationControl.|
+|policyVersion|String|Человеческая читаемая версия дополнительной политики WindowsDefenderApplicationControl.|
 
 
 

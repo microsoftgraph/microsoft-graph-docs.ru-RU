@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34689850bfb6c7989adb0c919a2a1187829842c0
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: b7ec42e3d30d9c750f7ee8cdf86005ea891fb32770feb1db168600dfe2a067e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54154366"
 ---
 # <a name="list-androidforworkcompliancepolicies"></a>Список androidForWorkCompliancePolicies
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

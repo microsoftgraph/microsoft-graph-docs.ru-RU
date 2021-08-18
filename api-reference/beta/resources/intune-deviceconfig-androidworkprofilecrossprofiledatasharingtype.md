@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
-description: Тип совместного использования данных профилей рабочих профилей для Android.
+title: тип enum androidWorkProfileCrossProfileDataSharingType
+description: Тип совместного доступа к данным профилей профилей android work.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: edaa3efb5b9aa9430fbdbdcc1a229fab5852974a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7b665d758cf686626928c884c73a04f38ca136dbd79285a55cb0dc2797c8752c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153176"
 ---
-# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
+# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>тип enum androidWorkProfileCrossProfileDataSharingType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип совместного использования данных профилей рабочих профилей для Android.
+Тип совместного доступа к данным профилей профилей android work.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|превентани|1,1|Запретите общий доступ.|
-|алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
-|Ограничения|4|Нет ограничений на общий доступ.|
+|deviceDefault|0|Значение устройства по умолчанию, без намерения.|
+|preventAny|1 |Предотвращение любого общего доступа.|
+|allowPersonalToWork|2|Разрешить запрос на обмен данными из личного профиля в рабочий профиль.|
+|noRestrictions|3 |Нет ограничений для общего доступа.|
 
 
 

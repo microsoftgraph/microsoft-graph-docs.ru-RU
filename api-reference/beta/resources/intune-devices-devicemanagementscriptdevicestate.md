@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90b9eaff6f291205acc559101e8ff4f64a33c8c8
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: 0b1b4dd5a247bb94fefd4063f70cd219c27fd1e55169350db35474caf6b94ac1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51611932"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150362"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>тип ресурса deviceManagementScriptDeviceState
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,8 +34,8 @@ ms.locfileid: "51611932"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния скрипта устройства управления устройствами. Это свойство доступно только для чтения.|
-|runState|[runState](../resources/intune-devices-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|id|Строка|Ключ объекта состояния скрипта устройства управления устройствами. Это свойство доступно только для чтения.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |resultMessage|String|Сведения о выходе выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний раз, когда выполняется скрипт управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному исполнению сценария управления устройствами.|

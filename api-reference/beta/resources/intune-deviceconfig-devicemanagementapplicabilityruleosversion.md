@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Девицеманажементаппликабилитирулеосверсион
+title: тип ресурса deviceManagementApplicabilityRuleOsVersion
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99476ad2b42caf10d64f26ccd5725655ae8cac34
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1f5dcb07caf8a9a92835b4019515fbc3cb90f24ef6d3aca94d2ed0cdaaa9f317
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283471"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242946"
 ---
-# <a name="devicemanagementapplicabilityruleosversion-resource-type"></a>Тип ресурса Девицеманажементаппликабилитирулеосверсион
+# <a name="devicemanagementapplicabilityruleosversion-resource-type"></a>тип ресурса deviceManagementApplicabilityRuleOsVersion
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49283471"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|миносверсион|String|Минимальная версия ОС для правила применимости.|
-|максосверсион|String|Максимальная версия ОС для правила применимости.|
+|minOSVersion|String|Min OS version for Applicability Rule.|
+|maxOSVersion|Строка|Версия Max OS для правила применимости.|
 |name|String|Имя объекта.|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Тип правила применимости. Возможные значения: `include`, `exclude`.|
 

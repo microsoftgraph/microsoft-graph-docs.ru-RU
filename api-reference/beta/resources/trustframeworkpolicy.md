@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a8bb9fc598613d48ac6b9bb34aa02d24872e6300
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: d51cbda73ca41d58795ef09c23cc1e644e59f60e8d0833f692ebcfb396489e98
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442742"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241221"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>тип ресурса trustFrameworkPolicy
 
@@ -18,14 +18,14 @@ ms.locfileid: "50442742"
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-Представляет политику [Trust Framework](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) (также называемую [настраиваемой](/azure/active-directory-b2c/active-directory-b2c-overview-custom)политикой) в Azure Active [Directory B2C.](/azure/active-directory-b2c/active-directory-b2c-overview) Политика Trust Framework обеспечивает полный контроль над поездками пользователей. Используйте его для:
+Представляет политику [Trust Framework](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) (также называемую [настраиваемой](/azure/active-directory-b2c/active-directory-b2c-overview-custom)политикой) в Azure Active Directory [B2C](/azure/active-directory-b2c/active-directory-b2c-overview). Политика Trust Framework обеспечивает полный контроль над поездками пользователей. Используйте его для:
 
 * Полностью настроить опытом регистрации и регистрации.
-* Federate к любому поставщику удостоверений SAML, Open ID Connect или поставщику удостоверений OAuth2.
+* Federate для любого поставщика удостоверений SAML, Open ID Подключение или поставщика удостоверений OAuth2.
 * Интеграция с другими системами или хранилищами данных пользователей путем вызова конечных точек REST.
 * Преобразование утверждений и настройка маркеров, выдающихся в приложение-участник.
 
-Дополнительные сведения см. в [пользовательских политиках в Azure Active Directory B2C.](/azure/active-directory-b2c/active-directory-b2c-overview-custom)
+Дополнительные сведения см. в [пользовательской политике в Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom).
 
 ## <a name="methods"></a>Методы
 

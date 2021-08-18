@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Девицеманажементсеттингпрофилеконстраинт
-description: Ограничение на применение заданной метаданных профиля
+title: тип ресурса deviceManagementSettingProfileConstraint
+description: Ограничение, принудительное выполнение заданных метаданных профиля
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 917483556c71853856ff8b70973167b2c749a3a8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 63a69dc9e750f3d6107e5e9dbffad137e9c6ab77663d15f22ab9215e1ffb2998
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150439"
 ---
-# <a name="devicemanagementsettingprofileconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингпрофилеконстраинт
+# <a name="devicemanagementsettingprofileconstraint-resource-type"></a>тип ресурса deviceManagementSettingProfileConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение на применение заданной метаданных профиля
+Ограничение, принудительное выполнение заданных метаданных профиля
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|source|String|Источник объекта|
-|types|Коллекция объектов string|Коллекция типов, которые несет данный объект|
+|source|Строка|Источник сущности|
+|types|Коллекция объектов string|Коллекция типов, которые несет эта сущность|
 
 ## <a name="relationships"></a>Связи
 Нет

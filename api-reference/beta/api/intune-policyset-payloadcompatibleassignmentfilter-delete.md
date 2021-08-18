@@ -1,18 +1,18 @@
 ---
-title: Удаление windowsAutopilotDeploymentProfileAssignment
-description: Удаляет windowsAutopilotDeploymentProfileAssignment.
+title: Удаление полезной нагрузкиCompatibleAssignmentFilter
+description: Удаляет полезноеloadCompatibleAssignmentFilter.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e1f2a69cb264d8b8dae72cb5760e52a3cb123b756a55ac6b2ecd16a0288e44c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 719f58e9aad7e27101cf63cb999fb07cf61baed0
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177109"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263720"
 ---
-# <a name="delete-windowsautopilotdeploymentprofileassignment"></a>Удаление windowsAutopilotDeploymentProfileAssignment
+# <a name="delete-payloadcompatibleassignmentfilter"></a>Удаление полезной нагрузкиCompatibleAssignmentFilter
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "54177109"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).
+Удаляет [полезноеloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "54177109"
 }
 -->
 ``` http
-DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
+DELETE /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -57,7 +57,7 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterId}
 ```
 
 ### <a name="response"></a>Отклик

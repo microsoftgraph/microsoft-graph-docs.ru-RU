@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5004a7b5d7ee1c38e559c41a86155cd89506af3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e8a16f01ae9ad794cd10a3f9b3d281262e408f077bfdbaa65d4fe164a0f3cfd3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49281014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227654"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Тип ресурса mobileAppContentFile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -38,16 +38,16 @@ ms.locfileid: "49281014"
 |:---|:---|:---|
 |azureStorageUri|String|URI службы хранилища Azure.|
 |isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
-|id|String|Идентификатор файла.|
+|id|Строка|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
 |name|String|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
 |sizeEncrypted|Int64|Размер файла после шифрования.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
 |manifest|Binary|Данные манифеста.|
-|uploadState|[мобилеаппконтентфилеуплоадстате](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|исфрамеворкфиле|Boolean|Значение, указывающее, является ли файл файлом платформы.|
-|Dependency|Boolean|Является ли файл содержимого зависимостью от основного файла содержимого.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|isFrameworkFile|Логический|Значение, указывающее, является ли файл файлом фреймворка.|
+|isDependency|Логический|Является ли контент-файл зависимостью для основного файла контента.|
 
 ## <a name="relationships"></a>Связи
 Нет

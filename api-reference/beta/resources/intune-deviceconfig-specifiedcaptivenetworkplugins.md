@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса СпеЦифиедкаптивенетворкплугинс
-description: Задает все сетевые подключаемые модули, разрешенные во время VPN-подключения IKEv2 AlwaysOn.
+title: указанный тип ресурсаCaptiveNetworkPlugins
+description: Указывает все плагины сети Captive, разрешенные во время VPN-подключения IKEv2 AlwaysOn
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 107c700a35e24cf47b9af2642523ed9b1c735d26
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5b162b0aa3da966cb7a55b23163d2a3bf51dc9e466b4a95fcdfe324b32a1bc94
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276597"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236943"
 ---
-# <a name="specifiedcaptivenetworkplugins-resource-type"></a>Тип ресурса СпеЦифиедкаптивенетворкплугинс
+# <a name="specifiedcaptivenetworkplugins-resource-type"></a>указанный тип ресурсаCaptiveNetworkPlugins
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Задает все сетевые подключаемые модули, разрешенные во время VPN-подключения IKEv2 AlwaysOn.
+Указывает все плагины сети Captive, разрешенные во время VPN-подключения IKEv2 AlwaysOn
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедбундлеидентифиерс|Коллекция строк|Адрес сервера IKEv2. Должно быть полным доменным именем, Усерфкдн, сетевым адресом или ASN1DN|
+|allowedBundleIdentifiers|Коллекция String|Адрес сервера IKEv2. Должен быть FQDN, UserFQDN, сетевой адрес или ASN1DN|
 
 ## <a name="relationships"></a>Связи
 Нет

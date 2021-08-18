@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Чанжеуефисеттингспермиссион
-description: Определяет уровень разрешений, назначенный пользователям, чтобы включить их изменение параметров UEFI
+title: тип enum changeUefiSettingsPermission
+description: Определяет уровень разрешений, предоставленный пользователям для изменения параметров Uefi
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ec24a90178cf8a5144b923f082e5a7da6a7a7f71
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 94594279c139468fc9017c2caca9a1d7d2757f784cf54e16feb443a350fd3b0e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213153"
 ---
-# <a name="changeuefisettingspermission-enum-type"></a>тип перечисления Чанжеуефисеттингспермиссион
+# <a name="changeuefisettingspermission-enum-type"></a>тип enum changeUefiSettingsPermission
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определяет уровень разрешений, назначенный пользователям, чтобы включить их изменение параметров UEFI
+Определяет уровень разрешений, предоставленный пользователям для изменения параметров Uefi
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нотконфигуредонли|нуль|Значение по умолчанию для устройства, без намерения.|
-|Нет|1,1|Запретить изменение разрешения для параметра UEFI|
+|notConfiguredOnly|0|Значение устройства по умолчанию, без намерения.|
+|Нет|1 |Предотвращение изменения разрешения на установку UEFI|
 
 
 

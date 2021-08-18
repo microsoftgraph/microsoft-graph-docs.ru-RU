@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 221f3d592254c5eb5e052ad5a69604cd3ddf6955
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d9139d11d35ab76bfcec96e0b0b04f8a947873e826ecb4678ff5d82b1333352d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666641"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248448"
 ---
 # <a name="devicemanagementreusablepolicysetting-resource-type"></a>тип ресурса deviceManagementReusablePolicySetting
 
@@ -35,10 +35,10 @@ Graph модели для повторного параметров
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|система, генерируемая многоярусным и настраиваемым id.|
-|displayName|Строка|имя отображения для повторного параметров, предоставленное пользователем.|
+|id|String|система, генерируемая многоярусным и настраиваемым id.|
+|displayName|String|имя отображения для повторного параметров, предоставленное пользователем.|
 |description|Строка|повторное описание параметра, предоставленное пользователем.|
-|settingDefinitionId|Строка|параметр определения, связанный с этим многопользоваемым параметром.|
+|settingDefinitionId|String|параметр определения, связанный с этим многопользоваемым параметром.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|экземпляр конфигурации повторного параметров|
 |createdDateTime|DateTimeOffset|дата и время создания параметров повторного параметров. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|дата и время последнего изменения параметра повторного параметров. Это свойство доступно только для чтения.|

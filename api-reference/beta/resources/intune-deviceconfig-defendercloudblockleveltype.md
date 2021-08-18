@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Дефендерклаудблокклевелтипе
+title: тип enum defenderCloudBlockLevelType
 description: Возможные значения уровня облачного блока
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7760fa978f6b25eb9a0a176b237d2595cc682e9c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 807dccf28eb0c3de713f36dafcfc753405f069cceb45ff3351278f59e8ef8bc3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256661"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226429"
 ---
-# <a name="defendercloudblockleveltype-enum-type"></a>тип перечисления Дефендерклаудблокклевелтипе
+# <a name="defendercloudblockleveltype-enum-type"></a>тип enum defenderCloudBlockLevelType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,10 +25,10 @@ ms.locfileid: "49256661"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Значение по умолчанию, используемый по умолчанию уровень блокировки антивирусной программы "Защитник Windows" и обеспечивает строгое обнаружение без увеличения риска обнаружения законных файлов|
-|высокоуровневых|1,1|High — применение надежного уровня обнаружения.|
-|хигхплус|2|Высокая + использование высокого уровня и применение мер защиты|
-|зеротолеранце|4|Нулевое отклонение блокирует все неизвестные исполняемые файлы|
+|notConfigured|0|Значение по умолчанию, использует уровень антивирусная программа по умолчанию и обеспечивает сильное обнаружение без увеличения риска обнаружения законных файлов|
+|высокая|1 |High применяет высокий уровень обнаружения.|
+|highPlus|2|High + использует высокий уровень и применяет меры защиты от добавления|
+|zeroTolerance|3 |Нулевая толерантность блокирует все неизвестные исполняемые|
 
 
 

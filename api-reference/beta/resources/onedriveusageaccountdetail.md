@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Онедривеусажеаккаунтдетаил
+title: тип ресурса oneDriveUsageAccountDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 6e355e1f71d493b30ffb2fe41816208dfe4816e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 210728ee77bb013a4894156aef79d35248e7d2f32eed129baf8905655f192f5a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54155976"
 ---
-# <a name="onedriveusageaccountdetail-resource-type"></a>Тип ресурса Онедривеусажеаккаунтдетаил
+# <a name="onedriveusageaccountdetail-resource-type"></a>тип ресурса oneDriveUsageAccountDetail
 
 Пространство имен: microsoft.graph
 
@@ -20,17 +20,17 @@ ms.locfileid: "48039288"
 
 | Свойство                | Тип    |
 | :---------------------- | :------ |
-| репортрефрешдате       | Дата    |
-| siteUrl                 | String  |
-| овнердисплайнаме        | String  |
-| овнерпринЦипалнаме      | String  |
-| isDeleted               | Boolean |
-| ластактивитидате        | Дата    |
-| филекаунт               | Int64   |
-| активефилекаунт         | Int64   |
-| сторажеусединбитес      | Int64   |
-| сторажеаллокатединбитес | Int64   |
-| репортпериод            | String  |
+| reportRefreshDate       | Дата    |
+| siteUrl                 | Строка  |
+| ownerDisplayName        | Строка  |
+| ownerPrincipalName      | Строка  |
+| isDeleted               | Логический |
+| lastActivityDate        | Дата    |
+| fileCount               | Int64   |
+| activeFileCount         | Int64   |
+| storageUsedInBytes      | Int64   |
+| storageAllocatedInBytes | Int64   |
+| reportPeriod            | Строка  |
 
 ## <a name="json-representation"></a>Представление JSON
 

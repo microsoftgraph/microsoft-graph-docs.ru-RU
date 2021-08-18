@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a5198792f852a30591e8212b76bf627a63f99f7
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 8730552065934747ec2c00312d8009a003ea5980c71730cbd083bfe7c090e725
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51134979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166276"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Создание windows10EnrollmentCompletionPageConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51134979"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,24 +53,24 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Строка|Отображающее имя конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|id|String|Уникальный идентификатор учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|Отображающее имя конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |description|Строка|Описание конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|Коллекция String|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Показать пользователю или скрыть ход установки|
-|blockDeviceSetupRetryByUser|Boolean|Разрешить пользователю повторно повторить установку при сбое установки|
-|allowDeviceResetOnInstallFailure|Boolean|Разрешить или заблокировать сброс устройства при сбое установки|
-|allowLogCollectionOnInstallFailure|Boolean|Разрешить или заблокировать коллекцию журналов при сбое установки|
+|showInstallationProgress|Логический|Показать пользователю или скрыть ход установки|
+|blockDeviceSetupRetryByUser|Логический|Разрешить пользователю повторно повторить установку при сбое установки|
+|allowDeviceResetOnInstallFailure|Логический|Разрешить или заблокировать сброс устройства при сбое установки|
+|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать коллекцию журналов при сбое установки|
 |customErrorMessage|Строка|Настройка настраиваемой ошибки для демонстрации при сбое установки|
 |installProgressTimeoutInMinutes|Int32|Установите время выполнения установки за несколько минут|
-|allowDeviceUseOnInstallFailure|Boolean|Разрешить пользователю продолжить использование устройства при сбое установки|
+|allowDeviceUseOnInstallFailure|Логический|Разрешить пользователю продолжить использование устройства при сбое установки|
 |selectedMobileAppIds|Коллекция String|Выбранные приложения для отслеживания состояния установки|
-|trackInstallProgressForAutopilotOnly|Boolean|Только показать ход установки для сценариев регистрации автопилота|
-|disableUserStatusTrackingAfterFirstUser|Boolean|Только показать ход установки для первого регистрации после пользователя|
+|trackInstallProgressForAutopilotOnly|Логический|Только показать ход установки для сценариев регистрации автопилота|
+|disableUserStatusTrackingAfterFirstUser|Логический|Только показать ход установки для первого регистрации после пользователя|
 
 
 

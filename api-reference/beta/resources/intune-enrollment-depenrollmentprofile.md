@@ -1,73 +1,73 @@
 ---
-title: Тип ресурса depEnrollmentProfile
-description: Ресурс depEnrollmentProfile представляет профиль регистрации программы регистрации устройств Apple (DEP). Этот тип профиля должен быть назначен серийным номерам Apple DEP, прежде чем соответствующие устройства смогут регистрироваться с помощью функции DEP.
+title: тип ресурса depEnrollmentProfile
+description: Ресурс depEnrollmentProfile представляет профиль программы регистрации устройств Apple (DEP). Этот тип профиля должен быть назначен серийным номерам DeP Apple, прежде чем соответствующие устройства смогут зарегистрироваться с помощью DEP.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ad989e47d6afd6faf5a8473cfaa216c0598c7f8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3fdeb2396bede85784ad911fff6217d872c553e94cd48c81fb54e7aa96405fbc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49207374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248384"
 ---
-# <a name="depenrollmentprofile-resource-type"></a>Тип ресурса depEnrollmentProfile
+# <a name="depenrollmentprofile-resource-type"></a>тип ресурса depEnrollmentProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс depEnrollmentProfile представляет профиль регистрации программы регистрации устройств Apple (DEP). Этот тип профиля должен быть назначен серийным номерам Apple DEP, прежде чем соответствующие устройства смогут регистрироваться с помощью функции DEP.
+Ресурс depEnrollmentProfile представляет профиль программы регистрации устройств Apple (DEP). Этот тип профиля должен быть назначен серийным номерам DeP Apple, прежде чем соответствующие устройства смогут зарегистрироваться с помощью DEP.
 
 
-Наследуется от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)
+Наследует [от enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Депенроллментпрофилес](../api/intune-enrollment-depenrollmentprofile-list.md)|Коллекция [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|Список свойств и связей объектов [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .|
-|[Получение depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-get.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md);|Чтение свойств и связей объекта [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .|
-|[Создание depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-create.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md);|Создание нового объекта [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .|
-|[Удаление depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-delete.md)|Нет|Удаляет объект [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md).|
-|[Обновление depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-update.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md);|Обновление свойств объекта [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .|
+|[Список depEnrollmentProfiles](../api/intune-enrollment-depenrollmentprofile-list.md)|[коллекция depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|Список свойств и связей объектов [depEnrollmentProfile.](../resources/intune-enrollment-depenrollmentprofile.md)|
+|[Получить depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-get.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md);|Чтение свойств и связей объекта [depEnrollmentProfile.](../resources/intune-enrollment-depenrollmentprofile.md)|
+|[Создание depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-create.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md);|Создайте новый [объект depEnrollmentProfile.](../resources/intune-enrollment-depenrollmentprofile.md)|
+|[Удаление depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-delete.md)|Нет|Удаляет [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md).|
+|[Обновление depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-update.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md);|Обновление свойств объекта [depEnrollmentProfile.](../resources/intune-enrollment-depenrollmentprofile.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта, наследуемого от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|String|Имя профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|String|Описание профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователей, унаследованных от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации, унаследованный от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала. Наследуется от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке, наследуемых от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|isDefault|Boolean|Указывает, является ли этот профиль профилем по умолчанию|
-|супервиседмодинаблед|Boolean|Защищенный режим, true для включения, false в противном случае. https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intuneДополнительную информацию можно узнать в статье.|
-|суппортдепартмент|String|Сведения о отделе поддержки|
-|пасскодедисаблед|Boolean|Указывает, отключена ли область настройки секретного кода|
-|Обязательный|Boolean|Указывает, является ли профиль обязательной|
-|локатиондисаблед|Boolean|Указывает, отключена ли область настройки службы расположения|
-|суппортфоненумбер|String|Номер телефона службы поддержки|
-|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
-|профилеремовалдисаблед|Boolean|Указывает, отключен ли параметр удаления профиля|
-|манажементцертификатес|Коллекция [манажементцертификатевиссумбпринт](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Сертификаты управления для конфигуратора Apple|
-|рестореблоккед|Boolean|Указывает, заблокирована ли область настроек восстановления|
-|ресторефромандроиддисаблед|Boolean|Указывает, отключено ли восстановление из Android|
-|апплеиддисаблед|Boolean|Указывает, отключена ли область настройки Apple ID|
-|термсандкондитионсдисаблед|Boolean|Указывает, отключена ли область установки "условия и условия"|
-|таучиддисаблед|Boolean|Указывает, отключена ли панель настройки сенсорного экрана|
-|апплепайдисаблед|Boolean|Указывает, отключена ли область настройки оплаты Apple|
-|зумдисаблед|Boolean|Указывает, отключена ли область настройки масштабирования|
-|сиридисаблед|Boolean|Указывает, отключена ли область настройки Siri|
-|диагностиксдисаблед|Boolean|Указывает, отключена ли область настройки диагностики|
-|макосрегистратиондисаблед|Boolean|Указывает, отключена ли регистрация Mac OS|
-|макосфилеваултдисаблед|Boolean|Указывает, отключено ли хранилище файлов Mac OS|
-|аваитдевицеконфигуредконфирматион|Boolean|Указывает, должно ли устройство ждать настройки подтверждения.|
-|Свойства sharedipadmaximumusercount|Int32|Указывает максимальное количество пользователей, которые могут использовать общий iPad. Относится только к общему режиму iPad.|
-|Enablesharedipad к|Boolean|Указывает, следует ли зарегистрировать устройство в режиме, позволяющем использовать сценарии с несколькими пользователями. Применяется только в общих iPad.|
+|id|String|GUID для объекта Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|Строка|Имя профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|Описание профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Логический|Указывает, требует ли профиль проверки подлинности пользователя, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для использования для регистрации, унаследованной [от enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал. Унаследованный от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Логический|Указывает, Корпоративный портал требуется на устройствах, зарегистрированных помощником установки, унаследованных от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|isDefault|Boolean|Указывает, является ли это профилем по умолчанию|
+|supervisedModeEnabled|Логический|Режим Под контролем, True, чтобы включить, ложные в противном случае. Дополнительные https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune сведения см. в дополнительных сведениях.|
+|supportDepartment|String|Сведения отдела поддержки|
+|passCodeDisabled|Логический|Указывает отключение области установки passcode|
+|isMandatory|Логический|Указывает, является ли профиль обязательным|
+|locationDisabled|Логический|Указывает, отключена ли панорама установки службы расположения|
+|supportPhoneNumber|Строка|Номер телефона поддержки|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим сопряжения iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
+|profileRemovalDisabled|Логический|Указывает, отключен ли параметр удаления профиля|
+|managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Сертификаты управления для Apple Configurator|
+|restoreBlocked|Логический|Указывает, заблокирована ли настройка области восстановления|
+|restoreFromAndroidDisabled|Логический|Указывает, отключено ли восстановление с Android|
+|appleIdDisabled|Логический|Указывает, отключена ли области установки apple id|
+|termsAndConditionsDisabled|Логический|Указывает, отключено ли области установки "Условия и условия"|
+|touchIdDisabled|Логический|Указывает, отключена ли настройка сенсорного id|
+|applePayDisabled|Логический|Указывает, отключена ли система установки apple pay|
+|zoomDisabled|Логический|Указывает, отключена ли панорама настройки масштабирования|
+|siriDisabled|Логический|Указывает, отключено ли области настройки siri|
+|diagnosticsDisabled|Логический|Указывает отключение области настройки диагностики|
+|macOSRegistrationDisabled|Логический|Указывает, отключена ли регистрация ОС Mac|
+|macOSFileVaultDisabled|Логический|Указывает, отключено ли хранилище файлов ОС Mac|
+|awaitDeviceConfiguredConfirmation|Логический|Указывает, нужно ли устройству ждать настроенного подтверждения|
+|sharedIPadMaximumUserCount|Int32|Это указывает максимальное число пользователей, которые могут использовать общие iPad. Применимо только в iPad режиме.|
+|enableSharedIPad|Логический|Это указывает, должно ли устройство быть зарегистрированным в режиме, который включает несколько сценариев пользователей. Применимо только в общих iPads.|
 
 ## <a name="relationships"></a>Связи
 Нет

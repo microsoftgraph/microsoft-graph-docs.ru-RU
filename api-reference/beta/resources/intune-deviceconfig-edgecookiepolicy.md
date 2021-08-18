@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Еджекукиеполици
-description: Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.
+title: тип enum edgeCookiePolicy
+description: Возможные значения, чтобы указать, какие файлы cookie разрешены в Microsoft Edge.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 814a783e032e6108f02aaad036312f110423d8a7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e677a667b4670fd41cb24a4cde3efcf3b93b365c3968b34b880d69a01422e4a4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54234752"
 ---
-# <a name="edgecookiepolicy-enum-type"></a>тип перечисления Еджекукиеполици
+# <a name="edgecookiepolicy-enum-type"></a>тип enum edgeCookiePolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.
+Возможные значения, чтобы указать, какие файлы cookie разрешены в Microsoft Edge.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Разрешить пользователю устанавливать.|
-|разрешить|1,1|Разрешить.|
-|блокксирдпарти|2|Блокировать только сторонние файлы cookie.|
-|блоккалл|4|Блокировать все файлы cookie.|
+|userDefined|0|Разрешить пользователю установить.|
+|разрешить|1 |Разрешить.|
+|blockThirdParty|2|Блокировка только сторонних файлов cookie.|
+|blockAll|3 |Заблокировать все файлы cookie.|
 
 
 

@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионстрингсеттингвалуедефинитион
-description: Ограничения строк
+title: тип ресурса deviceManagementConfigurationStringSettingValueDefinition
+description: Ограничения строки
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03a96252cffabddd2acb613ff365fd16951fd55c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 764afcb12275259d250aed2e5732fdf6ca998b4bf7ed17d2b3d939b3c4160412
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242384"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239450"
 ---
-# <a name="devicemanagementconfigurationstringsettingvaluedefinition-resource-type"></a>Тип ресурса Девицеманажементконфигуратионстрингсеттингвалуедефинитион
+# <a name="devicemanagementconfigurationstringsettingvaluedefinition-resource-type"></a>тип ресурса deviceManagementConfigurationStringSettingValueDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничения строк
+Ограничения строки
 
 
-Наследуется от [девицеманажементконфигуратионсеттингвалуедефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition.md)
+Наследует [от deviceManagementConfigurationSettingValueDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|format|[девицеманажементконфигуратионстрингформат](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat.md)|Предварительно определенный формат строки. Возможные значения: `none` , `email` ,,,,, `guid` `ip` `base64` `url` `version` ,,, `xml` `date` `time` , `binary` , `regEx` , `json` , `dateTime` , `surfaceHub` .|
-|инпутвалидатионсчема|String|Регулярное выражение или любая схема XML или JSON, которой должна быть соотнесена входная строка|
-|максимумленгс|Int64|Максимальная длина строки. Допустимые значения — от 0 до 87516|
-|минимумленгс|Int64|Минимальная длина строки. Допустимые значения — от 0 до 87516|
-|Secret|Boolean|Указывает, нужно ли считать параметр секретом. Параметры, помеченные как "Да", будут зашифрованы на транспорте и будут отображаться в виде звездочек, когда они представлены в пользовательском интерфейсе.|
+|format|[deviceManagementConfigurationStringFormat](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat.md)|Заранее определенный формат строки. Возможные значения: `none` `email` , , , , , `guid` , `ip` , `base64` `url` `version` `xml` `date` , `time` `binary` `regEx` `json` `dateTime` `surfaceHub` , .|
+|inputValidationSchema|String|Регулярное выражение или схема xml или json, которая должна соответствовать строке ввода|
+|maximumLength|Int64|Максимальная длина строки. Допустимые значения от 0 до 87516|
+|minimumLength|Int64|Минимальная длина строки. Допустимые значения от 0 до 87516|
+|isSecret|Логический|Указывает, нужно ли относиться к параметру как к секрету. Параметры пометка да будет зашифрована в транзите и в покое и будет отображаться в виде звездочек при их представлении в UX.|
 
 ## <a name="relationships"></a>Связи
 Нет

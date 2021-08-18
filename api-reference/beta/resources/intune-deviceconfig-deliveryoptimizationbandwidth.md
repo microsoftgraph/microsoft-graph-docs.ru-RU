@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Деливерйоптимизатионбандвидс
+title: тип ресурса deliveryOptimizationBandwidth
 description: Типы ограничений пропускной способности
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 948255599f3cd5895dc552f13c46a67ce2bf3fde
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6131fd7b0ba7958b5fc674f1735dd35814d8ec0dad362ec17d4d1aee88482710
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156347"
 ---
-# <a name="deliveryoptimizationbandwidth-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидс
+# <a name="deliveryoptimizationbandwidth-resource-type"></a>тип ресурса deliveryOptimizationBandwidth
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
