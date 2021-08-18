@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Девицеманажементсеттингинтежерконстраинт
-description: Ограничение, ограничивающее диапазон допустимых значений для параметра целого числа
+title: тип ресурса deviceManagementSettingIntegerConstraint
+description: Ограничение, принудительное применение допустимого диапазона значений для параметра integer
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f04745c70a61f71a6d0ba90dc680adaaba35fee4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4dc8cd94183b1e42d1614b43cdc0bbf7584e61f0d711012992936aa50c53dcbb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182821"
 ---
-# <a name="devicemanagementsettingintegerconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингинтежерконстраинт
+# <a name="devicemanagementsettingintegerconstraint-resource-type"></a>тип ресурса deviceManagementSettingIntegerConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение, ограничивающее диапазон допустимых значений для параметра целого числа
+Ограничение, принудительное применение допустимого диапазона значений для параметра integer
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|минимумвалуе|Int32|Минимально допустимое значение|
-|максимумвалуе|Int32|Максимальное разрешенное значение|
+|minimumValue|Int32|Минимальное разрешенное значение|
+|maximumValue|Int32|Максимально разрешенное значение|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cdd4cb3814900f41f7cb7ee5ede407af61e9c4d7
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: d13626996917160bdb2b9cb60b67750fe6a89f2f
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781067"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255595"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>тип ресурса educationAssignmentDefaults
 
@@ -30,9 +30,9 @@ ms.locfileid: "52781067"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`.|
-|addToCalendarAction| educationAddToCalendarOptions|Необязательное поле для управления asfor добавлением назначений в календари учащихся и преподавателей при публикации задания. Возможные значения: `studentsAndPublisher`, `studentsAndTeamOwners`, `none`. Значение по умолчанию — `none`.|
+|addToCalendarAction| educationAddToCalendarOptions|Необязательное поле для управления добавлением назначений в календари учащихся и преподавателей при публикации. Возможные значения: `studentsAndPublisher` и `studentsAndTeamOwners` . |
 |dueTime|TimeOfDay|Значение по умолчанию класса для должного поля времени. Значение по умолчанию — `23:59:00`.|
-|notificationChannelUrl|String|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
+|notificationChannelUrl|Строка|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

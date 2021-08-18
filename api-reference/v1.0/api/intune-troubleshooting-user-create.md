@@ -1,35 +1,33 @@
 ---
-title: Удаление объекта deviceManagementExchangeConnector
-description: Удаляет объект deviceManagementExchangeConnector.
+title: Создание пользователя
+description: Создание объекта user.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7705a6cb63223cb1c5e10fd93c6c62c64f5b6963866f5c81c039aa9e98fca03e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c58c3893a0ba41efcc9252a5ff9ad5934279ec9e
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258844"
 ---
-# <a name="delete-devicemanagementexchangeconnector"></a>Удаление объекта deviceManagementExchangeConnector
+# <a name="create-user"></a>Создание пользователя
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).
+Создание объекта [user](../resources/intune-troubleshooting-user.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +35,7 @@ ms.locfileid: "54136907"
 }
 -->
 ``` http
-DELETE /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
+POST /users
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,23 +45,44 @@ DELETE /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В теле запроса добавьте представление объекта user в формате JSON.
+
+В приведенной ниже таблице указаны свойства, необходимые при создании объекта user.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|Строка|Уникальный идентификатор для пользователя.|
+
+
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [user](../resources/intune-troubleshooting-user.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
+POST https://graph.microsoft.com/v1/users
+Content-type: application/json
+Content-length: 46
+
+{
+  "@odata.type": "#microsoft.graph.user"
+}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 95
+
+{
+  "@odata.type": "#microsoft.graph.user",
+  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+}
 ```
 
 

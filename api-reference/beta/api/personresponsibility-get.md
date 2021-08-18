@@ -1,21 +1,21 @@
 ---
 title: Get personResponsibility
-description: Чтение свойств и связей объекта personResponsibility.
+description: Ознакомьтесь с свойствами и отношениями объекта personResponsibility.
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 244313cd23c3a5635d75d3af7242df138ce253a5
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 5834635391c979d0cac69ed3628ff25eaf864fd33c2ca4e7c4cc06282e0146c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292709"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54133574"
 ---
 # <a name="get-personresponsibility"></a>Get personResponsibility
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [personResponsibility](../resources/personresponsibility.md) в профиле [пользователя.](../resources/profile.md)
+Ознакомьтесь с свойствами и отношениями [объекта personResponsibility](../resources/personresponsibility.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "50292709"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,19 +40,19 @@ GET /users/{id | userPrincipalName}/responsibilities/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметр `$select` запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятой. Для оптимальной производительности выберите только подмножество необходимых свойств.
+Этот метод поддерживает параметр `$select` запроса. Укажите список свойств, которые необходимо включить в ответ, разделив их запятой. Для оптимальной производительности выберите только подмножество необходимых свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [personResponsibility](../resources/personresponsibility.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект personResponsibility](../resources/personresponsibility.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

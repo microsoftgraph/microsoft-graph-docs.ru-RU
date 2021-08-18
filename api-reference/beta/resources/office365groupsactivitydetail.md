@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365GroupsActivityDetail
+title: тип ресурса office365GroupsActivityDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: fe2df5614525f27b294bed93be7f3f9cd8170b30
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 5bc9446637d566a163b2a76b3177d7e9deff974a02116aec6b32078d900dec31
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139125"
 ---
-# <a name="office365groupsactivitydetail-resource-type"></a>Тип ресурса office365GroupsActivityDetail
+# <a name="office365groupsactivitydetail-resource-type"></a>тип ресурса office365GroupsActivityDetail
 
 Пространство имен: microsoft.graph
 
@@ -20,25 +20,25 @@ ms.locfileid: "49981510"
 
 | Свойство                          | Тип    | Описание                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
-| groupId                           | String  | ИД группы.          |
-| reportRefreshDate                 | Дата    | Последняя дата содержимого.          |
-| groupDisplayName                  | String  | Отображаемого имени группы.           |
-| isDeleted                         | Boolean | Был ли этот пользователь удален или удален с помягким образом. |
-| ownerPrincipalName                | String  | Имя владельца группы.          |
-| lastActivityDate                  | Дата    | Дата последнего действия для следующих сценариев: почтовый ящик группы получил сообщение электронной почты; просматриваются, редактируются, совместно или синхронизируются файлы в библиотеке документов SharePoint; просматривались пользователем страницы SharePoint; пользователи опубликовали, прочитали или понравились сообщения в группах Yammer. |
-| groupType                         | String  | Тип группы. Возможные значения: **Public или** **Private**. |
+| groupId                           | String  | ID группы.          |
+| reportRefreshDate                 | Дата    | Последняя дата контента.          |
+| groupDisplayName                  | Строка  | Отображает имя группы.           |
+| isDeleted                         | Логический | Был ли этот пользователь удален или удален. |
+| ownerPrincipalName                | Строка  | Имя основного владельца группы.          |
+| lastActivityDate                  | Дата    | Последняя дата действий для следующих сценариев: почтовый ящик группы получил электронную почту; просмотр, редактирование, общий доступ или синхронизацию файлов в SharePoint документа; просмотр страниц SharePoint пользователя; сообщений, которые пользователи вывешив, прочитав или понравились в Yammer группах. |
+| groupType                         | String  | Тип группы. Возможные значения: **общедоступные или** **частные.** |
 | memberCount                       | Int64   | Количество членов группы.                  |
 | externalMemberCount               | Int64   | Количество внешних членов группы.         |
 | exchangeReceivedEmailCount        | Int64   | Количество сообщений электронной почты, полученных почтовым ящиком группы. |
-| sharePointActiveFileCount         | Int64   | Количество активных файлов на сайте группы SharePoint. |
-| yammerPostedMessageCount          | Int64   | Количество сообщений, которые были опубликованы в группах Yammer. |
-| yammerReadMessageCount            | Int64   | Количество сообщений, прочитано в группах Yammer. |
-| yammerАedMessageCount           | Int64   | Количество сообщений, которые нравится в группах Yammer. |
+| sharePointActiveFileCount         | Int64   | Количество активных файлов на сайте SharePoint Group. |
+| yammerPostedMessageCount          | Int64   | Количество сообщений, которые были размещены в Yammer группах. |
+| yammerReadMessageCount            | Int64   | Количество сообщений, читаемых в Yammer группах. |
+| yammerLikedMessageCount           | Int64   | Количество сообщений, которые нравятся в Yammer группах. |
 | exchangeMailboxTotalItemCount     | Int64   | Количество элементов в почтовом ящике группы. |
-| exchangeMailboxStorageUsedInBytes | Int64   | Хранилище, используемого почтовым ящиком группы.   |
-| sharePointTotalFileCount          | Int64   | Общее количество файлов на сайте группы SharePoint. |
-| sharePointSiteStorageUsedInBytes  | Int64   | Хранилище, используемого сайтом группы SharePoint. |
-| reportPeriod                      | String  | Количество дней в отчете.    |
+| exchangeMailboxStorageUsedInBytes | Int64   | Хранилище, используемого для группового почтового ящика.   |
+| sharePointTotalFileCount          | Int64   | Общее количество файлов на сайте SharePoint Group. |
+| sharePointSiteStorageUsedInBytes  | Int64   | Хранилище, используемого SharePoint Group. |
+| reportPeriod                      | Строка  | Количество дней, которые охватывает отчет.    |
 
 ## <a name="json-representation"></a>Представление JSON
 
