@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Скипефорбусинессдевицеусажеусеркаунтс
+title: тип ресурса skypeForBusinessDeviceUsageUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: e568e2bc396c5b7299441f8f8c513afcdada5c16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0663e2b56018412ee578c285974a61aa1da685c3906ccdc7d8ec34b822810cdd
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241312"
 ---
-# <a name="skypeforbusinessdeviceusageusercounts-resource-type"></a>Тип ресурса Скипефорбусинессдевицеусажеусеркаунтс
+# <a name="skypeforbusinessdeviceusageusercounts-resource-type"></a>тип ресурса skypeForBusinessDeviceUsageUserCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,14 +20,14 @@ ms.locfileid: "47997538"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| под           | Int64  |
-| windowsPhone      | Int64  |
-| андроидфоне      | Int64  |
+| reportRefreshDate | Дата   |
+| Windows           | Int64  |
+| WindowsPhone      | Int64  |
+| AndroidPhone      | Int64  |
 | iPhone            | Int64  |
 | iPad              | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

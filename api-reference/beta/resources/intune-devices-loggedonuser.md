@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Логжедонусер
-description: Вошедший в систему пользователь
+title: тип ресурса loggedOnUser
+description: Вход в систему пользователя
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 994946d9dcd7abf3f2f57df652321a61dd71dd47
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 528180642b3c851b9fb1b98567d44ef1ff6958816f7eb122b4526257c2f7a790
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249939"
 ---
-# <a name="loggedonuser-resource-type"></a>Тип ресурса Логжедонусер
+# <a name="loggedonuser-resource-type"></a>тип ресурса loggedOnUser
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Вошедший в систему пользователь
+Вход в систему пользователя
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|userId|String|Идентификатор пользователя|
-|ластлогондатетиме|DateTimeOffset|Дата и время, когда пользователь входит в систему|
+|userId|String|Пользовательский id|
+|lastLogOnDateTime|DateTimeOffset|Время даты входа пользователя в систему|
 
 ## <a name="relationships"></a>Связи
 Нет

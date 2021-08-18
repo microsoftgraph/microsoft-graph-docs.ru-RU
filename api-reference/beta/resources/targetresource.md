@@ -1,16 +1,16 @@
 ---
-title: тип сложного типа ресурсов targetResource — API Microsoft Graph
-description: Определяет сложный тип API microsoft Graph, который поддерживает деятельность организации (клиента) по отчету о журнале аудита.
+title: тип комплекса ресурсов targetResource — API Graph Microsoft
+description: Определяет тип API Graph API для объекта targetResource, который поддерживает деятельность организации аудита (клиента) журналов аудита.
 author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 12030bdb5c51e41e821218e3db67c4878a90c53d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: afcb3ecec2df719393fbadd033b6f1c85af447c9ea901356a71480bc17a67a74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954960"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244248"
 ---
 # <a name="targetresource-resource-type"></a>тип ресурса targetResource
 

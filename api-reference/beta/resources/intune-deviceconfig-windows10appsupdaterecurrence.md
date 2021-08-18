@@ -1,34 +1,34 @@
 ---
-title: тип перечисления windows10AppsUpdateRecurrence
-description: Возможные значения для обновления приложения при повторении Windows10.
+title: тип enum windows10AppsUpdateRecurrence
+description: Возможные значения для обновления приложения в Windows10.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af9d003f3b1d6bbe23a51e019000b97c42860b5f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e348109d18e885b1ab4148608cf8cc062f5c971234f2eb227bed312e1947cd10
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236243"
 ---
-# <a name="windows10appsupdaterecurrence-enum-type"></a>тип перечисления windows10AppsUpdateRecurrence
+# <a name="windows10appsupdaterecurrence-enum-type"></a>тип enum windows10AppsUpdateRecurrence
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для обновления приложения при повторении Windows10.
+Возможные значения для обновления приложения в Windows10.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Значение по умолчанию указывает один экземпляр.|
-|ежедневно|1,1|Daily (Ежедневный).|
-|Табель|2|Weekly (Еженедельный).|
-|ежемесячно|4|Ежемесячно.|
+|Нет|0|Значение по умолчанию указывает одно событие.|
+|ежедневно|1 |Ежедневно.|
+|еженедельно|2|Еженедельно.|
+|ежемесячно|3 |Ежемесячно.|
 
 
 

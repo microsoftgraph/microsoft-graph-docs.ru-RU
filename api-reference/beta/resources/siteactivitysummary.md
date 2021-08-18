@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Ситеактивитисуммари
+title: тип ресурса siteActivitySummary
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: ce2d4806dd8c2e8367bf5a9c075fab84e3c17900
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8b9777c55e7a88b01f49bbaf8c522886b9b7900568735b6aada75cab0b781e9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985694"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248308"
 ---
-# <a name="siteactivitysummary-resource-type"></a>Тип ресурса Ситеактивитисуммари
+# <a name="siteactivitysummary-resource-type"></a>тип ресурса siteActivitySummary
 
 Пространство имен: microsoft.graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "47985694"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| виеведоредитед    | Int64  |
-| синхронизирован            | Int64  |
-| шарединтерналли  | Int64  |
-| шаредекстерналли  | Int64  |
+| reportRefreshDate | Дата   |
+| viewedOrEdited    | Int64  |
+| синхронизация            | Int64  |
+| sharedInternally  | Int64  |
+| sharedExternally  | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,37 +1,37 @@
 ---
-title: тип перечисления Виндовсделиверйоптимизатионмоде
-description: Режим оптимизации доставки для распределения одноранговой сети
+title: тип enum windowsDeliveryOptimizationMode
+description: Режим оптимизации доставки для одноранговой рассылки
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c24689f5690d3bd6d507c1ebb4fae36d010ee26d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6597b76ea76bdfad24f431d98643a487a6fe54256dce20e3afaf6f681b710ea1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227409"
 ---
-# <a name="windowsdeliveryoptimizationmode-enum-type"></a>тип перечисления Виндовсделиверйоптимизатионмоде
+# <a name="windowsdeliveryoptimizationmode-enum-type"></a>тип enum windowsDeliveryOptimizationMode
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Режим оптимизации доставки для распределения одноранговой сети
+Режим оптимизации доставки для одноранговой рассылки
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Разрешить пользователю устанавливать.|
-|httpOnly|1,1|Только HTTP, без пиринга|
-|хттпвиспирингнат|2|Операционная система по умолчанию — HTTP, смешанная с одноранговым устройством с одним транслятором сетевых адресов|
-|хттпвиспирингприватеграуп|4|HTTP-смешение с одноранговым элементом в частной группе|
-|хттпвисинтернетпиринг|4 |HTTP-смешение с подключением к Интернету|
-|симпледовнлоад|99|Простой режим загрузки без пиринга|
-|бипассмоде|100|Режим обхода. Не используйте оптимизацию доставки и не используйте BITS|
+|userDefined|0|Разрешить пользователю установить.|
+|httpOnly|1 |ТОЛЬКО HTTP, без одноранговых|
+|httpWithPeeringNat|2|По умолчанию ОС — http blended with peering behind the same network address translator|
+|httpWithPeeringPrivateGroup|3 |HTTP, смешанный с вглядывом в частную группу|
+|httpWithInternetPeering|4 |HTTP, смешанный с интернет-пирингом|
+|simpleDownload|99|Простой режим загрузки без вглядывок|
+|bypassMode|100|Режим обхода. Не используйте оптимизацию доставки и вместо этого используйте BITS|
 
 
 

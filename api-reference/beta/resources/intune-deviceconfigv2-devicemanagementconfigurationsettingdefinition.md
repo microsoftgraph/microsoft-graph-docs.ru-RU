@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9300238704838eab7e82bbf039507c69dff3611
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: bdde828660f092cd0c2a4af1a01bb7deac27c524a93afde7cdb35d1511fb3333
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227388"
 ---
 # <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>тип ресурса deviceManagementConfigurationSettingDefinition
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -39,9 +39,9 @@ ms.locfileid: "51863669"
 |keywords|Коллекция String|Маркеры для поиска параметров на|
 |infoUrls|Коллекция String|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
 |возникновение|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, требуется ли параметр или нет.|
-|baseUri|String|Базовый путь CSP|
-|offsetUri|String|Смещение пути CSP из базы|
-|rootDefinitionId|String|Определение корневого параметра, если это параметр ребенка.|
+|baseUri|Строка|Базовый путь CSP|
+|offsetUri|Строка|Смещение пути CSP из базы|
+|rootDefinitionId|Строка|Определение корневого параметра, если это параметр ребенка.|
 |categoryId|String|Указывает группу области, в которой параметр настроен в указанном поставщике служб конфигурации (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Параметр типа, например конфигурации и соответствия требованиям. Возможные значения: `none`, `configuration`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Настройка представления типа управления в UX. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
@@ -49,7 +49,7 @@ ms.locfileid: "51863669"
 |referredSettingInformationList|[коллекция deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Список переданных сведений о параметрах.|
 |id|String|Идентификатор элемента|
 |description|String|Описание элемента|
-|helpText|String|Справка текста элемента|
+|helpText|Строка|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|String|Отображение имени элемента|
 |version|String|Версия элемента|
