@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса workbookOperation
-description: Представляет состояние длительных операций с книгой.
+title: тип ресурса workbookOperation
+description: Представляет состояние длительных операций с книгами.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 04dc2afc707c4a991f9bb638102bb7180f9b1fab
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 373183806b6c23e494aeb8a76f0b156ac5cac62ac064b7f78f66c9650968df4b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50154231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54200266"
 ---
-# <a name="workbookoperation-resource-type"></a>Тип ресурса workbookOperation
+# <a name="workbookoperation-resource-type"></a>тип ресурса workbookOperation
 
-Представляет состояние длительной операции с книгой.
+Представляет состояние длительной операции книг.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Извлечение состояния объекта **workbookOperation.** |
+| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Извлечение состояния **объекта workbookOperation.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| ИД операции. Только для чтения.|
+|id|String| ID операции. Только для чтения.|
 |status|String| Текущее состояние операции. Возможные значения: `notStarted`, `running`, `succeeded`, `failed`.|
-|error|[workbookOperationError](workbookoperationerror.md)| Ошибка, возвращенная операцией.|
-|resourceLocation|String| URI ресурса для результата.|
+|error|[workbookOperationError](workbookoperationerror.md)| Ошибка, возвращаемая операцией.|
+|resourceLocation|Строка| Ресурс URI для результата.|
 
 ## <a name="relationships"></a>Связи
 

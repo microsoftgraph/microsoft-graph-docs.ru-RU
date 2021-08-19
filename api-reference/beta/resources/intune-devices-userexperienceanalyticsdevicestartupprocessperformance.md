@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцессперформанце
-description: Производительность процесса запуска устройства Analytics.
+title: тип ресурса userExperienceAnalyticsDeviceStartupProcessPerformance
+description: Производительность процесса запуска устройства для аналитики пользовательского интерфейса.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 925ed80b6d978488361409226c5a4263af8d97bf
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5440621cde8327b969141aa8dd0960508df94ba65a78ab19c8613e6b08d4edb3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249862"
 ---
-# <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцессперформанце
+# <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceStartupProcessPerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Производительность процесса запуска устройства Analytics.
+Производительность процесса запуска устройства для аналитики пользовательского интерфейса.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Усерекспериенцеаналитиксдевицестартуппроцессперформанцес](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-list.md)|Коллекция [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Список свойств и связей объектов [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) .|
-|[Получение Усерекспериенцеаналитиксдевицестартуппроцессперформанце](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-get.md)|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) .|
-|[Создание Усерекспериенцеаналитиксдевицестартуппроцессперформанце](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-create.md)|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Создание нового объекта [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) .|
-|[Удаление Усерекспериенцеаналитиксдевицестартуппроцессперформанце](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md).|
-|[Обновление Усерекспериенцеаналитиксдевицестартуппроцессперформанце](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-update.md)|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Обновление свойств объекта [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) .|
+|[Список пользователейExperienceAnalyticsDeviceStartupProcessPerformances](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-list.md)|[коллекция userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Список свойств и связей [объектов userExperienceAnalyticsDeviceStartupProcessPerformance.](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|
+|[Get userExperienceAnalyticsDeviceStartupProcessPerformance](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-get.md)|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Чтение свойств и связей [объекта userExperienceAnalyticsDeviceStartupProcessPerformance.](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|
+|[Создание userExperienceAnalyticsDeviceStartupProcessPerformance](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-create.md)|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Создание нового [объекта userExperienceAnalyticsDeviceStartupProcessPerformance.](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|
+|[Удаление userExperienceAnalyticsDeviceStartupProcessPerformance](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-delete.md)|Нет|Удаляет [пользователяExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md).|
+|[Обновление userExperienceAnalyticsDeviceStartupProcessPerformance](../api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-update.md)|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Обновление свойств объекта [userExperienceAnalyticsDeviceStartupProcessPerformance.](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
-|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
-|productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
-|publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
-|deviceCount|Int64|Сводка по процессу запуска при запуске устройства с пользовательским интерфейсом.|
-|медианимпактинмс|Int32|Поведение при запуске устройства Analytics для пользователя в течение среднего влияния в миллисекундах.|
-|тоталимпактинмс|Int32|Общее влияние на процесс запуска пользователя при запуске устройства Analytics (в миллисекундах).|
+|id|String|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
+|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
+|publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
+|deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|
+|medianImpactInMs|Int32|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
+|totalImpactInMs|Int32|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
 
 ## <a name="relationships"></a>Связи
 Нет

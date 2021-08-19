@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Оффицесуитеинсталлпрогрессдисплайлевел
-description: Перечисление, указывающее уровень отображения пользовательского интерфейса установки хода установки на устройстве.
+title: тип enum officeSuiteInstallProgressDisplayLevel
+description: Enum, указывающее уровень отображения пользовательского интерфейса установки установки на устройстве.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aba04c5b521342159923274a02d02305c02b01a1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 76f6106dc98ff1dc04cdb752a04aa1f60881bc36f881e5f97412a95002c3f431
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49200262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250072"
 ---
-# <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>тип перечисления Оффицесуитеинсталлпрогрессдисплайлевел
+# <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>тип enum officeSuiteInstallProgressDisplayLevel
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Перечисление, указывающее уровень отображения пользовательского интерфейса установки хода установки на устройстве.
+Enum, указывающее уровень отображения пользовательского интерфейса установки установки на устройстве.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Пока не задокументировано.|
-|полный|1,1|Пока не задокументировано.|
+|Нет|0|Пока не задокументировано.|
+|полный|1 |Пока не задокументировано.|
 
 
 

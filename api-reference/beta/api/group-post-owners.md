@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: afb69ea94fb87c5ba584a61ac1682cb17c9c1e96
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 660c3a900c0ef36884a16e8007fba6dc72723c18
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786960"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396746"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 
@@ -87,7 +87,7 @@ Content-length: 30
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
@@ -95,6 +95,11 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>См. также
+- [Добавление участника в команду](team-post-members.md)
+- [Обновление роли участника в команде](team-update-members.md)
+- [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

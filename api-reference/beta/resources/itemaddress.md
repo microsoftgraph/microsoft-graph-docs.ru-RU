@@ -1,50 +1,50 @@
 ---
-title: Тип ресурса Итемаддресс
-description: Тип ресурса Итемаддресс
+title: тип ресурса itemAddress
+description: тип ресурса itemAddress
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ca6848b6b5ac60d419e56914a59e2470d5970ed9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e11ab6a69e377144a53c298e1c8ad99d496557769be5d799dd0afa2beb38ea7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167886"
 ---
-# <a name="itemaddress-resource-type"></a>Тип ресурса Итемаддресс
+# <a name="itemaddress-resource-type"></a>тип ресурса itemAddress
 
 Пространство имен: microsoft.graph
 
-Представляет физический адрес и сведения о расположении, в котором находится адрес.
+Представляет физический адрес и сведения о расположении, где найден адрес.
 
-Наследуется от [итемфацет](../resources/itemfacet.md).
+Наследует от [itemFacet](../resources/itemfacet.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список адресов](../api/profile-list-addresses.md)|Коллекция [итемаддресс](../resources/itemaddress.md)|Получение ресурсов Итемаддресс из свойства навигации Addresses.|
-|[Создание Итемаддресс](../api/profile-post-addresses.md)|[итемаддресс](../resources/itemaddress.md)|Создание нового объекта Итемаддресс.|
-|[Получение Итемаддресс](../api/itemaddress-get.md)|[итемаддресс](../resources/itemaddress.md)|Чтение свойств и связей объекта [итемаддресс](../resources/itemaddress.md) .|
-|[Обновление Итемаддресс](../api/itemaddress-update.md)|[итемаддресс](../resources/itemaddress.md)|Обновление свойств объекта [итемаддресс](../resources/itemaddress.md) .|
-|[Удаление Итемаддресс](../api/itemaddress-delete.md)|Нет|Удаляет объект [итемаддресс](../resources/itemaddress.md) .|
+|[Адреса списков](../api/profile-list-addresses.md)|[коллекция itemAddress](../resources/itemaddress.md)|Получите ресурсы itemAddress из свойства навигации адресов.|
+|[Создание itemAddress](../api/profile-post-addresses.md)|[itemAddress](../resources/itemaddress.md)|Создание нового объекта itemAddress.|
+|[Get itemAddress](../api/itemaddress-get.md)|[itemAddress](../resources/itemaddress.md)|Ознакомьтесь с свойствами и отношениями [объекта itemAddress.](../resources/itemaddress.md)|
+|[Обновление itemAddress](../api/itemaddress-update.md)|[itemAddress](../resources/itemaddress.md)|Обновление свойств объекта [itemAddress.](../resources/itemaddress.md)|
+|[Удаление itemAddress](../api/itemaddress-delete.md)|Нет|Удаляет объект [itemAddress.](../resources/itemaddress.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|описаны|[physicalAddress](../resources/physicaladdress.md)|Сведения о самом адресе.|
-|displayName|String|Понятное имя, назначенное пользователю для этого адреса. |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|Геокоординаты адреса.|
-|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создав объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|подробные|[physicalAddress](../resources/physicaladdress.md)|Сведения о самом адресе.|
+|displayName|Строка|Удобное имя, назначенное пользователю по этому адресу. |
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|Геокоординирует адрес.|
+|id|String|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которые в последний раз изменили объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

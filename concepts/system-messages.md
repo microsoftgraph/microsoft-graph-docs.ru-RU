@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0bbb162f4b81abc84b847ed174fb1072313e89c1b626484c1fb2c72bc721e105
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6bcda1a589da647944f88734bc70bed0abea68a1
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235060"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397049"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>Получение системных сообщений для Microsoft Teams с помощью API Microsoft Graph
 
@@ -759,6 +759,7 @@ Microsoft Graph предоставляет системные сообщения
   "reactions": [],
   "eventDetail": {
     "@odata.type": "#microsoft.graph.membersAddedEventMessageDetail",
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
     "members": [{
         "id": "06a5b888-ad96-455e-88ef-c059ec4e4cf0",
         "displayName": null,

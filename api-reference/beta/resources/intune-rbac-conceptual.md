@@ -1,15 +1,15 @@
 ---
 title: Управление доступом на основе ролей в Microsoft Intune
-description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), которые определяют управление доступом на основе ролей (RBAC) для организации клиента и управляют им.
+description: Перечислены Graph API Microsoft для конечных точек Intune (REST), которые определяют и управляют управлением управлением доступом на основе ролей (RBAC) для организации-клиента.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: a95c71613755cd9853cca4a56d4cd36caf0d7df7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ad014fe19bf427ccb4c4d8c60f2145ef96b1c1a860d419d991d75b759ea3ee6d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54126895"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Управление доступом на основе ролей в Microsoft Intune
 
@@ -26,15 +26,13 @@ ms.locfileid: "48084424"
 - [Данные назначенной роли для управления устройствами и приложениями](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Назначение роли управления устройствами и приложениями](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Определение роли управления устройствами и приложениями](intune-rbac-deviceandappmanagementroledefinition.md)
-- [Несколько приложений RBAC](intune-rbac-rbacapplicationmultiple.md)
+- [Несколько приложений Rbac](intune-rbac-rbacapplicationmultiple.md)
 - [Действие ресурса](intune-rbac-resourceaction.md)
 - [Операция ресурса](intune-rbac-resourceoperation.md)
 - [Назначение ролей](intune-rbac-roleassignment.md)
 - [Тип области назначения ролей](intune-rbac-roleassignmentscopetype.md)
 - [Определение ролей](intune-rbac-roledefinition.md)
-- [Управление ролями](intune-rbac-rolemanagement.md)
+- [Управление ролью](intune-rbac-rolemanagement.md)
 - [Разрешение роли](intune-rbac-rolepermission.md)
 - [Тег области роли](intune-rbac-rolescopetag.md)
-- [Автоматическое назначение тега области применения роли](intune-rbac-rolescopetagautoassignment.md)
-
-
+- [Автоматическое назначение тега области ролей](intune-rbac-rolescopetagautoassignment.md)

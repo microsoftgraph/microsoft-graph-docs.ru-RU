@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 5926d13f8971d891d48eb09205162f502999faed
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 4a10c7011c8b28460c8908b210792e5e2619753e
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384473"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336651"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "58384473"
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 Ежемесячные обновления Intune за сентябрь для версии 1.0. Установите фильтр **Дата** в значение "август 2021" и найдите раздел с таким заголовком.
 
-### <a name="devices-and-apps--service-health-and-communications"></a>Устройства и приложения | Работоспособность и взаимодействие служб
+### <a name="devices-and-apps--service-health-and-communications"></a>Устройства и приложения |Работоспособность и взаимодействие служб
 Общедоступная версия [API взаимодействия служб](service-communications-concept-overview.md) в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт).
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
