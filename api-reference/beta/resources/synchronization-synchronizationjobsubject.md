@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса synchronizationJobSubject
-description: Представляет объекты, которые будут быть представлены во время предоставления по требованию.
+title: тип ресурса синхронизацииJobSubject
+description: Представляет объекты, которые будут представлены во время предварительной провизии по запросу.
 author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c9e6d83ed7024556954740e89edcc18f7b56ba04
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c7dea31898cb0bfb521367042401be7c583c60c2868d4805682c9d0e707fc898
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226114"
 ---
-# <a name="synchronizationjobsubject-resource-type"></a>Тип ресурса synchronizationJobSubject
+# <a name="synchronizationjobsubject-resource-type"></a>тип ресурса синхронизацииJobSubject
 
 Пространство имен: microsoft.graph
 
-Представляет объекты, которые будут быть представлены во время предоставления по требованию.
+Представляет объекты, которые будут представлены во время предварительной провизии по запросу.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|objectId|String|Идентификатор объекта, к которому применяется synchronizationJob.|
-|objectTypeName|Строка|Тип объекта, к которому применяется synchronizationJob.|
+|objectId|String|Идентификатор объекта, к которому должна применяться синхронизацияJob.|
+|objectTypeName|Строка|Тип объекта, к которому должна применяться синхронизацияJob.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

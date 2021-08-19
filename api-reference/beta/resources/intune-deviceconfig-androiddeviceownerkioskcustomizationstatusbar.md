@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Андроиддевицеовнеркиосккустомизатионстатусбар
-description: Перечисление, представляющее возможные значения для навигации по системе настройки киоска.
+title: тип enum androidDeviceOwnerKioskCustomizationStatusBar
+description: Enum, представляющий возможные значения для навигации системы настройки киоска.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98eec7bcbce3093a05a8745629ca2793b72542d0
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5b2be432c6bfc722e6d98a1baa044b1adc996798604526c8fce9ec0d01c6a2ba
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49337116"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242061"
 ---
-# <a name="androiddeviceownerkioskcustomizationstatusbar-enum-type"></a>тип перечисления Андроиддевицеовнеркиосккустомизатионстатусбар
+# <a name="androiddeviceownerkioskcustomizationstatusbar-enum-type"></a>тип enum androidDeviceOwnerKioskCustomizationStatusBar
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Перечисление, представляющее возможные значения для навигации по системе настройки киоска.
+Enum, представляющий возможные значения для навигации системы настройки киоска.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен; Это значение по умолчанию равно STATUS_BAR_UNSPECIFIED.|
-|нотификатионсандсистеминфоенаблед|1,1|Сведения о системе и уведомления отображаются в строке состояния в режиме киоска.|
-|системинфунли|2|В строке состояния в режиме киоска отображается только информация о системе.|
+|notConfigured|0|Не настроен; это значение по умолчанию STATUS_BAR_UNSPECIFIED.|
+|notificationsAndSystemInfoEnabled|1 |Сведения о системе и уведомления показаны на панели состояния в режиме киоска.|
+|systemInfoOnly|2|На панели состояния в режиме киоска отображается только системная информация.|
 
 
 

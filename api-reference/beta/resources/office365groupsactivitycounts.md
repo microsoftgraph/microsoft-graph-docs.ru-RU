@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365GroupsActivityCounts
+title: тип ресурса office365GroupsActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: a212028e4ba9d38ea38e99c835d89fe1fe7d850b
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 28ac5ad72a9e0b7e32336b397c0df114abf6fc9b88368f983dd84413ca4fe96e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226142"
 ---
-# <a name="office365groupsactivitycounts-resource-type"></a>Тип ресурса office365GroupsActivityCounts
+# <a name="office365groupsactivitycounts-resource-type"></a>тип ресурса office365GroupsActivityCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "49980698"
 
 | Свойство               | Тип   | Описание                              |
 | :--------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate      | Дата   | Последняя дата содержимого.          |
-| exchangeEmailsReceived | Int64  | Количество сообщений электронной почты, полученных почтовыми ящиками группы. |
-| yammerMessagesPosted   | Int64  | Количество сообщений, которые были опубликованы в группах Yammer. |
-| yammerMessagesRead     | Int64  | Количество сообщений, прочитано в группах Yammer. |
-| yammerMessagesИмбл    | Int64  | Количество сообщений, которые нравится в группах Yammer. |
-| reportDate             | Дата   | Дата отправки, чтения или отправки сообщений в почтовом ящике группы в группе Yammer |
-| reportPeriod           | String | Количество дней в отчете.    |
+| reportRefreshDate      | Дата   | Последняя дата контента.          |
+| exchangeEmailsReceived | Int64  | Количество сообщений электронной почты, полученных почтовыми ящиками Группы. |
+| yammerMessagesPosted   | Int64  | Количество сообщений, которые были размещены в Yammer группах. |
+| yammerMessagesRead     | Int64  | Количество сообщений, читаемых в Yammer группах. |
+| yammerMessagesLiked    | Int64  | Количество сообщений, которые нравятся в Yammer группах. |
+| reportDate             | Дата   | Дата отправки нескольких электронных писем в групповой почтовый ящик или публикации нескольких сообщений в группе Yammer. |
+| reportPeriod           | Строка | Количество дней, которые охватывает отчет.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

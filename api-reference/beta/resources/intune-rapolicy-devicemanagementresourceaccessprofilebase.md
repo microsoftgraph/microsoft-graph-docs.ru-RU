@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 21557e5dcca7a00d90ca7fc1e83e57e27b2b02d8
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: d29e101ac696718f9b8a53f508d4f0fa4dd06c41ebf2441649a2b161f2d7c0eb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52662853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182681"
 ---
 # <a name="devicemanagementresourceaccessprofilebase-resource-type"></a>тип ресурса deviceManagementResourceAccessProfileBase
 
@@ -33,13 +33,13 @@ ms.locfileid: "52662853"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор профиля|
+|id|String|Идентификатор профиля|
 |version|Int32|Версия профиля|
-|displayName|Строка|Имя отображения профиля|
+|displayName|String|Имя отображения профиля|
 |description|Строка|Описание профиля|
 |creationDateTime|DateTimeOffset|Создан профиль DateTime|
 |lastModifiedDateTime|DateTimeOffset|Последний изменен профиль DateTime|
-|roleScopeTagIds|Коллекция строк|Теги области|
+|roleScopeTagIds|Коллекция String|Теги области|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

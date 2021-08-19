@@ -1,35 +1,33 @@
 ---
-title: Получение объекта deviceConfigurationDeviceStateSummary
-description: Чтение свойств и связей объекта deviceConfigurationDeviceStateSummary.
+title: Get enrollmentTroubleshootingEvent
+description: Чтение свойств и связей объекта enrollmentTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa029039bedd1c04640fe47cd772bc4639a991715e839bd7a5c7a361d0d16fc9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1762b0aea8a1d64e409b019c1bcc2b2bad31be42
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214406"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265821"
 ---
-# <a name="get-deviceconfigurationdevicestatesummary"></a>Получение объекта deviceConfigurationDeviceStateSummary
+# <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md).
+Чтение свойств и связей объекта [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +35,7 @@ ms.locfileid: "54214406"
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurationDeviceStateSummaries
+GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,14 +51,14 @@ GET /deviceManagement/deviceConfigurationDeviceStateSummaries
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationDeviceStateSummaries
+GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,19 +66,22 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationDeviceS
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 376
+Content-Length: 601
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
-    "id": "5db26f5a-6f5a-5db2-5a6f-b25d5a6fb25d",
-    "unknownDeviceCount": 2,
-    "notApplicableDeviceCount": 8,
-    "compliantDeviceCount": 4,
-    "remediatedDeviceCount": 5,
-    "nonCompliantDeviceCount": 7,
-    "errorDeviceCount": 0,
-    "conflictDeviceCount": 3
+    "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
+    "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
+    "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
+    "correlationId": "Correlation Id value",
+    "managedDeviceIdentifier": "Managed Device Identifier value",
+    "operatingSystem": "Operating System value",
+    "osVersion": "Os Version value",
+    "userId": "User Id value",
+    "deviceId": "Device Id value",
+    "enrollmentType": "userEnrollment",
+    "failureCategory": "authentication",
+    "failureReason": "Failure Reason value"
   }
 }
 ```

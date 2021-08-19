@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9f30d01e586b213686cce5125f20b70b0e0461de
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ed2b59e5e20977f6be54a7967cd1cfd94cea7699
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263844"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396720"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>тип ресурса accessPackageAssignmentRequest
 
@@ -39,20 +39,20 @@ ms.locfileid: "58263844"
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |id|String| Только для чтения.|
 |isValidationOnly|Логический|True, если запрос не обрабатывается для назначения.|
-|обоснование|Строка|Предоставлено обоснование запроса.|
-|requestState|Строка|Один `PendingApproval` из `Canceled` , , , , ,  `Denied` или `Delivering` `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` . Только для чтения.|
-|requestStatus|Строка|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
+|обоснование|String|Предоставлено обоснование запроса.|
+|requestState|String|Один `PendingApproval` из `Canceled` , , , , ,  `Denied` или `Delivering` `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` . Только для чтения.|
+|requestStatus|String|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
 |requestType|String|Один `UserAdd` из `UserRemove` , , или `AdminAdd` `AdminRemove` `SystemRemove` . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove` . Только для чтения.|
 |schedule|[requestSchedule](requestschedule.md)| Диапазон дат, которые должен быть назначен запросчику. Только для чтения.|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Для requestType или , это назначение пакета `UserAdd` `AdminAdd` доступа, запрашиваемого для создания.  Для requestType или , это свойство существующего `UserRemove` `AdminRemove` `SystemRemove` `id` назначения, которые будут удалены.|
 |ответы|[коллекция accessPackageAnswer](accesspackageanswer.md)|Ответы, предоставленные запрашивателем для [доступа кPackageQuestions,](accesspackagequestion.md) заданные им во время запроса.|
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|Пакет доступа, связанный с accessPackageAssignmentRequest. Пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам для одного или более пользователей. Только для чтения. Допускает значение null.|
-|запросчик|[accessPackageSubject](accesspackagesubject.md)| Субъекту, который запрашивал или, если прямое назначение, было назначено. Только для чтения. Допускается значение null.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Пакет доступа, связанный с accessPackageAssignmentRequest. Пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам для одного или более пользователей. Только для чтения. Допускается значение null. <br/><br/> Поддерживает `$expand`.|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Для **requestType** или , это назначение пакета `UserAdd` `AdminAdd` доступа, запрашиваемого для создания.  Для **requestType** или , это свойство существующего `UserRemove` `AdminRemove` `SystemRemove` `id` назначения, которые будут удалены.  <br/><br/> Поддерживает `$expand`.|
+|запросчик|[accessPackageSubject](accesspackagesubject.md)| Субъекту, который запрашивал или, если прямое назначение, было назначено. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
 
 
 ## <a name="json-representation"></a>Представление JSON

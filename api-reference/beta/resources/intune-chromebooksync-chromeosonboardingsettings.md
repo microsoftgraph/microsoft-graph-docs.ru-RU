@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 442ea58414febe146745892844f8667c8fd799a3
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 53b42eae58cbd68f4663290cd5d565e8fdf44c27bab676835054dcbc919a8935
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52667192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206790"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>тип ресурса chromeOSOnboardingSettings
 
@@ -35,7 +35,7 @@ ms.locfileid: "52667192"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id ChromebookTenant|
+|id|String|Id ChromebookTenant|
 |ownerUserPrincipalName|String|OwnerUserPrincipalName ChromebookTenant|
 |onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus ChromebookTenant. Возможные значения: `unknown`, `inprogress`, `onboarded`, `failed`.|
 |lastModifiedDateTime|DateTimeOffset|LastModifiedDateTime ChromebookTenant|

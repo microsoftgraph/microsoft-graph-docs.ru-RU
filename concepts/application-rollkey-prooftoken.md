@@ -4,12 +4,12 @@ description: В рамках подтверждения запроса для м
 localization_priority: Priority
 ms.prod: applications
 author: davidmu1
-ms.openlocfilehash: dedd2c8b3439027a02f36e5a1ba1f41bfa830708da73bd1313eacaf32c739c70
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4b98f0820941879f3994b0a18ccbc1c2d8c7dac
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163609"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384410"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Создание маркеров подтверждения владения для смены ключей
 
@@ -76,3 +76,5 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
     }
 }
 ```
+
+> **Примечание.** Подтверждение можно создать с помощью других средств, например PowerShell или подписи с использованием Azure KeyVault. Важно отметить, что символ заполнения "=" не должен включаться в полезные данные и заголовок JWT. В противном случае возвращается ошибка **Authentication_MissingOrMalformed**.

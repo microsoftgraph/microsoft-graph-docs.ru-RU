@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfb3fa9ba4e5599f0666f50bf30d7e555c67f8d6
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: a6107273f5b66292ea72a7ace330e7e755a7a0c19fad415451b9001b3329194f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54213776"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -32,7 +32,7 @@ ms.locfileid: "51863410"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -75,7 +75,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация**|
-|description|String|Необязательное описание категории устройств.|
+|description|Строка|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|
 
 ## <a name="response"></a>Отклик

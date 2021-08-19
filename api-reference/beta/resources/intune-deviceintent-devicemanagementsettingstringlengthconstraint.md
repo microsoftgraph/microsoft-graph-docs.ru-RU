@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Девицеманажементсеттингстрингленгсконстраинт
-description: Ограничение, ограничивающее заданный диапазон длины строки
+title: тип ресурса deviceManagementSettingStringLengthConstraint
+description: Ограничение, применив заданный диапазон длины строки
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b1837c127fa66ee638423c185065031094e7986
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4348ac61cd132e3ee361dd3ecc374d56d5bc177ca25521ab485b61718d00c439
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49209586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172997"
 ---
-# <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингстрингленгсконстраинт
+# <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>тип ресурса deviceManagementSettingStringLengthConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение, ограничивающее заданный диапазон длины строки
+Ограничение, применив заданный диапазон длины строки
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|минимумленгс|Int32|Минимальная разрешенная длина строки|
-|максимумленгс|Int32|Максимально допустимая длина строки|
+|minimumLength|Int32|Минимальная разрешенная длина строки|
+|maximumLength|Int32|Максимальная разрешенная длина строки|
 
 ## <a name="relationships"></a>Связи
 Нет

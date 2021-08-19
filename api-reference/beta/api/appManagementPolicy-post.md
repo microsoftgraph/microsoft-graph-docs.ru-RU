@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9553accf83925e1ab33c36f353a7ca74da6ad623
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 30b46570c29ed86e645865a4cb10660c2a752a63
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262411"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396762"
 ---
 # <a name="create-appmanagementpolicy"></a>Создание appManagementPolicy
 
@@ -61,7 +61,7 @@ POST /policies/appManagementPolicies
 
 - Включает политику.
 - Блокирует создание новых паролей для приложений и директоров служб после 2019-10-19 в 10:37 по времени UTC.
-- Ограничивает секреты паролей для приложений и главных служб, созданных после 2019-10-19 в 10:37 по времени UTC, менее чем за 20 дней.
+- Ограничивает секреты паролей для приложений и главных служб, созданных после 2019-10-19 в 10:37 по времени UTC, менее чем за 4 дня, 12 часов, 30 минут и 5 секунд.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

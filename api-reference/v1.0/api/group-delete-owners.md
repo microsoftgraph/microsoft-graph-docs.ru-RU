@@ -1,22 +1,24 @@
 ---
-title: Удаление владельца
+title: Удаление владельца группы
 description: Используйте этот API, чтобы удалить владельца из группы Microsoft 365, группы безопасности или группы безопасности с поддержкой почты через свойство навигации владельцев.
 localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cdb2cbf9ace99ad83defd4c110001e39e9cc8335
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 856a671b39dbce621eb193a55a39292c50acb177
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783626"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396986"
 ---
-# <a name="remove-owner"></a>Удаление владельца
+# <a name="remove-group-owner"></a>Удаление владельца группы
 
 Пространство имен: microsoft.graph
 
 Используйте этот API, чтобы удалить владельца из группы Microsoft 365, группы безопасности или группы безопасности с поддержкой почты через свойство навигации владельцев. После того как владельцы назначены группе, последний владелец группы не может быть удален. 
+
+> **Примечание:** Проблемы, с которыми сталкиваются при удалении владельца группы, связанной с [группой,](/graph/api/resources/team.md)см. [в ссылке Known Issues.](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +40,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -77,7 +79,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 Укажите в запросе свойство `id` удаляемого объекта каталога после сегмента $ref.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
@@ -85,6 +87,11 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>См. также
+- [Добавление участника в команду](team-post-members.md)
+- [Обновление роли участника в команде](team-update-members.md)
+- [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

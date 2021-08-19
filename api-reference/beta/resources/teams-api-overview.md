@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: a6911dddb813f69bca802a6e84ab4eae0a484ef9
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: fb3c4e58afcf8f2fd8909b956e78b1118f4bb529
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534483"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396734"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -70,43 +70,12 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="membership-changes-in-microsoft-teams"></a>Изменение состава участников в Microsoft Teams
 
-Чтобы добавить участников и владельцев в команду, измените состав участников [группы](../resources/group.md) с таким же идентификатором.
-
 | Вариант использования      | Глагол      | URL-адрес |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Добавление участника](../api/group-post-members.md)    | POST      | /groups/{id}/members/$ref  |
-| [Удаление участника](../api/group-delete-members.md)   | DELETE    | /groups/{id}/members/{userId}/$ref |
-| [Добавление владельца](../api/group-post-owners.md)     | POST       | /groups/{id}/owners/$ref |
-| [Удаление владельца](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{userId}/$ref |
-| [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{id} |
-
-При добавлении владельца также рекомендуется добавить этого пользователя в качестве участника.
-Если владелец группы не является ее участником, изменения состава владельцев и участников могут сразу не отображаться в Microsoft Teams.
-Кроме того, разные приложения и API обрабатывают их по-разному.
-Например, Microsoft Teams отображает команды, в которых пользователь является участником или владельцем, а командлеты PowerShell Microsoft Teams и API /me/joinedTeams отображают только команды, в которых пользователь является участником.
-Чтобы избежать путаницы, добавьте всех владельцев в список участников.
-
-Известная проблема: если вызвать запрос DELETE /groups/{id}/owners, пользователь также удаляется из списка /groups/{id}/members. Чтобы устранить эту проблему, рекомендуется удалить пользователя из владельцев и участников, подождать 10 секунд и снова добавить его к участникам.
-
-При добавлении и удалении участников и владельцев, не применяйте фигурные скобки {} вокруг идентификатора.
-
-| Скорость | Синтаксис |
-| ------ | ----- |
-| Быстро | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref |
-| Медленно | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref |
-
-Аналогичным образом, если параметр `userId` в URL-адресе или полезных данных выражается как имя участника-пользователя (UPN), а не как идентификатор GUID, производительность будет ниже.
-
-| Скорость | Синтаксис |
-| ------ | ----- |
-| Быстро | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| Медленно | alexeyorekhov@example.com |
-
-При выборе медленного пути, если текущий участник или владелец команды вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения отразятся в течение часа.
-Если ни один из таких пользователей не вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения не отразятся, пока не пройдет час после входа одного из них.
-
-> [!Note]
-> Гости клиента всегда обрабатываются с помощью медленного пути.
+| [Добавление участника](../api/team-post-members.md) | POST      | /teams/{team-id}/members  |
+| [Удаление участника](../api/team-delete-members.md)    | DELETE    | /teams/{team-id}/members/{membership-id} |
+| [Обновление роли участника](../api/team-update-members.md) | PATCH | /teams/{team-id}/members/{membership-id} |
+| [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{team-id} |
 
 ## <a name="polling-requirements"></a>Требования к опросу
 
