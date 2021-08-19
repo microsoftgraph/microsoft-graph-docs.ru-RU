@@ -1,15 +1,15 @@
 ---
-title: 'Управление затратами на телекоммуникации в Microsoft Intune : API Microsoft Graph'
-description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), связанных с управлением затратами на телекоммуникации для организации клиента.
+title: Управление расходами телекома в Microsoft Intune - API Graph Microsoft
+description: Перечислены API Graph Microsoft для конечных точек Intune (REST), связанных с управлением телекоммуникационными расходами для организации-клиента.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 471bd6315c35b713bb022cc9872f96ac70fcd050
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 2d73056b6ccc9b3732fd5c9ece7c1715b3486fec0b34a274349dc338eaa11ec3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50159474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54170323"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Управление затратами на телекоммуникации в Microsoft Intune
 

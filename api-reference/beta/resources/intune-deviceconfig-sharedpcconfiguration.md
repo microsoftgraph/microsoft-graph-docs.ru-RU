@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4e4a8806a19f9fd0563f05b8d2a75b359f7e0c6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 34cb7ebc30cf6d920e93ac59a798a7c8c545dd756f55a0f26bc0bbe76406e8ff
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49276681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232757"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>Тип ресурса sharedPCConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -39,41 +39,41 @@ ms.locfileid: "49276681"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Определяет способ управления учетными записями на общем компьютере. Применяется, только если для параметра disableAccountManager установлено значение false.|
-|allowedAccounts|[шаредпкалловедаккаунттипе](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Указывает тип учетных записей, которые можно использовать на общем компьютере. Возможные значения: `notConfigured`, `guest`, `domain`.|
-|localStorage|[Включение](../resources/intune-shared-enablement.md)|Определяет, разрешено ли на общем компьютере локальное хранилище. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Указывает тип учетных записей, которые можно использовать на общем компьютере. Возможные значения: `notConfigured`, `guest`, `domain`.|
+|localStorage|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли на общем компьютере локальное хранилище. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |allowLocalStorage|Boolean|Определяет, разрешено ли на общем компьютере локальное хранилище.|
-|сетаккаунтманажер|[Включение](../resources/intune-shared-enablement.md)|Отключает диспетчер учетных записей в режиме совместного использования компьютера. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|setAccountManager|[включить](../resources/intune-shared-enablement.md)|Отключает диспетчер учетных записей в режиме совместного использования компьютера. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |disableAccountManager|Boolean|Отключает диспетчер учетных записей в режиме совместного использования компьютера.|
-|сетедуполиЦиес|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли включать и отключать/не настраивать общие политики среды по умолчанию для образовательных учреждений. Для Windows 10 RS2 и более поздних версий эта политика будет применяться без установки значения True для параметра Enabled. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|setEduPolicies|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли включить/отключить или не настроить общие политики среды образования для ПК по умолчанию. Для Windows 10 RS2 и более поздних версий эта политика будет применяться без установки значения True для параметра Enabled. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |disableEduPolicies|Boolean|Указывает, следует ли отключить стандартные политики среды совместного использования компьютера для образования. Для Windows 10 RS2 и более поздних версий эта политика будет применяться без установки значения True для параметра Enabled.|
-|сетповерполиЦиес|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли включать или отключать политики управления питанием общих ПК по умолчанию. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|setPowerPolicies|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли включить или отключить общие политики питания ПК по умолчанию. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |disablePowerPolicies|Boolean|Указывает, следует ли отключить стандартные политики электропитания для общего компьютера.|
-|сигнинонресуме|[Включение](../resources/intune-shared-enablement.md)|Задает требование для входа в систему при выходе устройства из спящего режима. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|signInOnResume|[включить](../resources/intune-shared-enablement.md)|Указывает требование для входов в любое время, когда устройство просыпается из режима сна. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |disableSignInOnResume|Boolean|Отключает обязательный вход в систему при выходе устройства из спящего режима.|
 |enabled|Boolean|Включает режим общего компьютера и применяет политики совместного использования ПК.|
 |idleTimeBeforeSleepInSeconds|Int32|Определяет длительность (в секундах) пребывания устройства в режиме бездействия перед переходом в спящий режим. Если задать значение 0, переход в спящий режим отключается.|
 |kioskAppDisplayName|String|Задает текст для учетной записи, который отображается на экране входа в систему и используется для запуска приложения, определяемого с помощью свойства SetKioskAppUserModelId. Применяется, только если задано свойство KioskAppUserModelId.|
 |kioskAppUserModelId|String|Определяет идентификатор пользовательской модели для приложения, используемого с ограниченным доступом.|
 |maintenanceStartTime|TimeOfDay|Указывает ежедневное время начала обслуживания.|
-|фастфирстсигнин|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли автоматически подключать новые учетные записи Azure AD, не являющиеся администраторами, к предварительно настроенным локальным учетным записям кандидатов. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|fastFirstSignIn|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли автоматически подключать новые учетные записи Azure AD без администрирования к заранее настроенным локальным учетным записям кандидата. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройств пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|

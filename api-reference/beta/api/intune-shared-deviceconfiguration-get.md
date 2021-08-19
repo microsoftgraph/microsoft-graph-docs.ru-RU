@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d218722f01726d0a11c13154b2ae8aca36b164fc
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 5c8f7766eeaeeb56160d68ae31f3e9d1782a7a8435ac774ed33692f02095294a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226751"
 ---
 # <a name="get-deviceconfiguration"></a>Get deviceConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,7 +31,7 @@ ms.locfileid: "51866413"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения||
+|Приложение||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 

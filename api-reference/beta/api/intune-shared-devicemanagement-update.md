@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80f5fc4065d8db2f0bbb7659f244a14c9ef9331d
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: c108b5972cdb7ccfdbfd88e64f6929ea2807db958d93bdc084761471910f448c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228025"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -47,12 +47,12 @@ ms.locfileid: "51867527"
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Управление расходами телекома** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-| Для приложения ||
+| Приложение ||
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -69,7 +69,7 @@ ms.locfileid: "51867527"
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Обновление программного обеспечения** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Управление расходами телекома** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
@@ -100,7 +100,7 @@ PATCH /deviceManagement
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для устройства.|
 |**Конфигурация устройств**|
-|intuneAccountId|GUID|ID учетной записи Intune для данного клиента|
+|intuneAccountId|Идентификатор GUID|ID учетной записи Intune для данного клиента|
 |legacyPcManangementEnabled|Логический|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
 |maximumDepTokens|Int32|Максимальное количество маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|

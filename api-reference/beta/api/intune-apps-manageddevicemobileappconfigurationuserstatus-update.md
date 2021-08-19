@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ef878eb9816576e55c16074e8983c9d7895e961
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: e29050943ff321e14db87ea61a5e4b88041740a4a355eb2c8f2e370f5974bd41
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51140107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54228802"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Обновление объекта managedDeviceMobileAppConfigurationUserStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51140107"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userDisplayName|String|Имя пользователя в объекте DevicePolicyStatus.|
 |devicesCount|Int32|Количество устройств для этого пользователя.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия требованиям для отчета о политике. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|

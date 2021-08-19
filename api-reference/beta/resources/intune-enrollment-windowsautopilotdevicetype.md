@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Виндовсаутопилотдевицетипе
+title: тип enum windowsAutopilotDeviceType
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4cdc4731f094fde15839f83eae887cd46f3c38a4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9b1d205e212490ec19bda84581e66dca5e2dece3b169a52508d5c20130883205
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49197802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227346"
 ---
-# <a name="windowsautopilotdevicetype-enum-type"></a>тип перечисления Виндовсаутопилотдевицетипе
+# <a name="windowsautopilotdevicetype-enum-type"></a>тип enum windowsAutopilotDeviceType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49197802"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|виндовспк|нуль|Windows PC|
-|surfaceHub2|1,1|Surface Hub 2|
+|WindowsPc|0|Windows PC|
+|surfaceHub2|1 |Surface Hub 2|
 |holoLens|2|HoloLens|
 
 

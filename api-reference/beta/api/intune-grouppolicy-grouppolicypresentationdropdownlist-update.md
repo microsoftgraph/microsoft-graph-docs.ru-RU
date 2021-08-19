@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42bbf30c40f8597804817a35ed32eb3859868e36
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 5231083b162a88ad6b13d0abea5ab093bd4b80e75cda7dd09a9398564c8ee568
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54171149"
 ---
 # <a name="update-grouppolicypresentationdropdownlist"></a>Обновление groupPolicyPresentationDropdownList
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51135420"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,12 +54,12 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|подпись|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Локализованное значение строки, определяющие выбор списка элементов по умолчанию.|
 |items|[коллекция groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Представляет набор локализованных имен отображения и связанных с ними значений.|
-|Обязательный|Boolean|Требование ввести значение в поле параметра. Значение по умолчанию  false.|
+|обязательно|Логический|Требование ввести значение в поле параметра. Значение по умолчанию  false.|
 
 
 
