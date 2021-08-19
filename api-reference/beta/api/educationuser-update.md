@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6846ac91051897fcf455c466d5dcd58119d0131a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2cf940f4327d32082b95deb0658a316ac4e2ecac9c0fc03285c018ceecbd3bdf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57207933"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -28,7 +28,7 @@ ms.locfileid: "52042669"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.ReadWrite.All                     |
+| Приложение                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,11 +52,11 @@ PATCH /education/users/{id}
 
 | Свойство         | Тип               | Описание                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String             | Отображаемое имя пользователя                                                                                                                            |
-| givenName;        | String             | Имя                                                                                                                                      |
+| displayName      | Строка             | Отображаемое имя пользователя                                                                                                                            |
+| givenName        | String             | Имя                                                                                                                                      |
 | middleName       | String             | Отчество пользователя                                                                                                                             |
 | surname          | String             | Фамилия пользователя                                                                                                                                 |
-| mail             | String             | Электронный адрес                                                                                                                                   |
+| почта;             | String             | Электронный адрес                                                                                                                                   |
 | mobilePhone      | String             | Номер мобильного телефона пользователя                                                                                                                           |
 | externalSource   | string             | Источник для создания пользователя. Возможные значения: `sis`, `manual` или `lms`.                                                               |
 | mailingAddress   | [physicalAddress]  | Почтовый адрес пользователя. Примечание. `type` `postOfficeBox` и не поддерживаются для `educationUser` ресурсов.                                         |
@@ -118,7 +118,7 @@ Content-length: 508
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

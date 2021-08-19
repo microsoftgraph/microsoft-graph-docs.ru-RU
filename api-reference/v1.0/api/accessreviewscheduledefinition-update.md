@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6f3c39f6111ad910d2551da7e03cdf6e03597b3d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 72fcf71b4b0e78006ad30b2091b6906342e18edf
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208399"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384056"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Обновление accessReviewScheduleDefinition
 Пространство имен: microsoft.graph
@@ -52,10 +52,10 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
 | displayName | String | Имя серии обзоров доступа. |
-| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. |
-| descriptionForReviewers | String | Контекст обзора, предоставленного рецензентам. |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии обзоров доступа. См. [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
-| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Свойство **рецензентов** может быть updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
+| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. |
+| descriptionForReviewers | Строка | Контекст обзора, предоставленного рецензентам. |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии обзоров доступа. См. [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Свойство **рецензентов** может быть updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См. [accessReviewReviewerScope.](../resources/accessreviewreviewerscope.md) |
 |fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Коллекция областей рецензентов, используемых для определения списка рецензентов откатов, которые уведомлены о необходимости принятия мер, если пользователи не найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует.|
 
 Запрос **PUT** предполагает, что будет передан полный объект, который включает в себя все свойства, которые можно использовать, а не только обновляемые свойства.
@@ -67,7 +67,9 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 Это пример обновления displayName существующей серии обзоров доступа.
 
 ### <a name="request"></a>Запрос
+
 В теле запроса поставляют представление JSON о новых свойствах [объекта accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,6 +80,7 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 -->
 ``` http
 PUT https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04444aa6
+Content-type: application/json
 
 {
   "id": "60860cdd-fb4d-4054-91ba-f75e04444aa6",
@@ -132,7 +135,6 @@ PUT https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 ### <a name="response"></a>Отклик

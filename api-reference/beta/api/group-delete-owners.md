@@ -1,24 +1,26 @@
 ---
-title: Удаление владельца
+title: Удаление владельца группы
 description: Используйте этот API, чтобы удалить владельца из группы Microsoft 365, группы безопасности или группы безопасности с поддержкой почты через свойство навигации владельцев.
 localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f42a3e80743e6a65f96e1ead1f0f9f96785ffd8d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 702dc5c7ca5db7a107c2e1b69d02124278c778d7
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787256"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384452"
 ---
-# <a name="remove-owner"></a>Удаление владельца
+# <a name="remove-group-owner"></a>Удаление владельца группы
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот API, чтобы удалить владельца из группы Microsoft 365, группы безопасности или группы безопасности с поддержкой почты через свойство навигации владельцев. Когда владельцам назначена группа, последний владелец группы не может быть удален.
+
+> **Примечание:** Когда этот API называется, пользователь также удаляется из списка /groups/{id}/members. Чтобы обойти это, удалите пользователя как у владельцев, так и у участников, затем подождите 10 секунд, а затем добавьте их обратно в члены. См. [известные проблемы](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

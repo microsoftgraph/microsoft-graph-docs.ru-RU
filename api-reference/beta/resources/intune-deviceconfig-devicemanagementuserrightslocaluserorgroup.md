@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Девицеманажементусерригхтслокалусерорграуп
-description: Представляет сведения для локального пользователя или группы, которые используются для настройки прав пользователя.
+title: тип ресурса deviceManagementUserRightsLocalUserOrGroup
+description: Представляет сведения для локального пользователя или группы, используемые для настройки прав пользователей.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d288e1f8936c7f1246b0e66eebeaefc910dadc00
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3fe52f8a0a6460f3cac12bf535526ab73d4e58340d31339b2c78baea728964ca
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148227"
 ---
-# <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Тип ресурса Девицеманажементусерригхтслокалусерорграуп
+# <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>тип ресурса deviceManagementUserRightsLocalUserOrGroup
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет сведения для локального пользователя или группы, которые используются для настройки прав пользователя.
+Представляет сведения для локального пользователя или группы, используемые для настройки прав пользователей.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя локального пользователя или группы.|
-|description|String|Описание локального пользователя или группы администратором.|
-|securityIdentifier|String|Идентификатор безопасности этого локального пользователя или группы (например, * S-1-5-32-544).|
+|name|String|Имя этого локального пользователя или группы.|
+|description|Строка|Описание администратором этого локального пользователя или группы.|
+|securityIdentifier|String|Идентификатор безопасности этого локального пользователя или группы (например, S-1-5-32-544).|
 
 ## <a name="relationships"></a>Связи
 Нет

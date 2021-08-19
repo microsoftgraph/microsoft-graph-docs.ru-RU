@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5a2eb41fe80a2e84f2fbe60ad3876f9840a8beed
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 75858e0266c687df254f6c52f9d55b6cd10aa681
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129238"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58262377"
 ---
 # <a name="delete-application"></a>Удаление приложения
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129238"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет приложение.
+Удаляет приложение. При удалении приложения перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней. По истечении этого периода они удаляются без возможности восстановления.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

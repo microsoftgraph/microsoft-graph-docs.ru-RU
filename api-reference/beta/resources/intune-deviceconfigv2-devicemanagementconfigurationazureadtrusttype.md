@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Девицеманажементконфигуратионазуреадтрусттипе
-description: Обязательный тип доверия AAD
+title: тип enum deviceManagementConfigurationAzureAdTrustType
+description: Необходимый тип доверия AAD
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c7ceebd258b0e0127cb7b18f2150127de353835e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8e1ad171e3abc0f1f9258ef6caf1d548304ac69cf93105305a3fb1e4c89f3ef1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139476"
 ---
-# <a name="devicemanagementconfigurationazureadtrusttype-enum-type"></a>тип перечисления Девицеманажементконфигуратионазуреадтрусттипе
+# <a name="devicemanagementconfigurationazureadtrusttype-enum-type"></a>тип enum deviceManagementConfigurationAzureAdTrustType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обязательный тип доверия AAD
+Необходимый тип доверия AAD
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Не указан тип доверия AAD|
-|азуреаджоинед|1,1|Тип доверия с присоединением AAD|
-|аддворкаккаунт|2|аддворкаккаунт|
-|мдмонли|4 |Только MDM|
+|Нет|0|Тип доверия AAD не указан|
+|azureAdJoined|1 |Тип доверия, вступив в AAD|
+|addWorkAccount|2|AddWorkAccount|
+|mdmOnly|4 |Только MDM|
 
 
 

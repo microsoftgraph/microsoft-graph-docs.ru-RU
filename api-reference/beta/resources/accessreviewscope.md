@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 84b427cdd05aa35fdacb6b80d6ac96c901eef318
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 21f21d3a3d7ca4d369493c6c5028185bdbdb0e20
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030924"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367291"
 ---
 # <a name="accessreviewscope-resource-type"></a>тип ресурса accessReviewScope
 
@@ -20,7 +20,7 @@ ms.locfileid: "53030924"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-**AccessReviewScope** определяет, какие объекты будут рассмотрены в [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Это абстрактный тип, унаследованный [accessReviewQueryScope,](accessreviewqueryscope.md) [principalResourceMembershipsScope](principalresourcemembershipsscope.md) и [accessReviewReviewerScope.](accessreviewreviewerscope.md) 
+**AccessReviewScope** определяет, какие объекты рассматриваются в [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Это абстрактный тип, унаследованный [accessReviewQueryScope,](accessreviewqueryscope.md) [principalResourceMembershipsScope](principalresourcemembershipsscope.md)и [accessReviewReviewerScope.](accessreviewreviewerscope.md) 
 
 Для **свойства области** в [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) см. [accessReviewQueryScope](accessreviewqueryscope.md) и [principalResourceMembershipsScope.](principalresourcemembershipsscope.md)
 

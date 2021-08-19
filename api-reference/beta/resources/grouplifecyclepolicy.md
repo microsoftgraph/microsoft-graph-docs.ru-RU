@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0410eea8cfc0bd2bdf5083ca4ca9ff72eda11ba7
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 4cd6b11989d21fea0095fec9099bdc3cc7dc3a66
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256096"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -30,7 +30,7 @@ ms.locfileid: "53317058"
 |[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | None | Удаление объекта groupLifecyclePolicy. |
 |[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|None| Добавление группы в политику жизненного цикла. |
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|None| Удаление группы из политики жизненного цикла. |
-|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет.| Продление срока действия группы. |
+|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет| Продление срока действия группы. |
 
 ## <a name="properties"></a>Свойства
 
@@ -38,7 +38,7 @@ ms.locfileid: "53317058"
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
 |groupLifetimeInDays|Int32| Количество дней до истечения срока действия группы. После продления группа будет оставаться активной в течение указанного количества дней. |
-|id|String| Уникальный идентификатор политики. Только для чтения.|
+|id|Строка| Уникальный идентификатор политики. Только для чтения.|
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 
 ## <a name="relationships"></a>Связи
@@ -64,7 +64,6 @@ ms.locfileid: "53317058"
   "id": "Guid (identifier)",
   "managedGroupTypes": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

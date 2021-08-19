@@ -5,17 +5,17 @@ author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: add05d086580d5ed76b4195de98d28187e3ad30d
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: dc50e9ca132b295f000a707a9fc3280bef2bb6e6eb564aca0ae69020b1d2a498
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57372081"
 ---
 # <a name="team-sendactivitynotification"></a>команда: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправьте уведомление о канале действий в области группы. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в материале Отправка уведомлений о [действиях Teams.](/graph/teams-send-activityfeednotifications)
+Отправьте уведомление о канале действий в области группы. Дополнительные сведения об отправке уведомлений и требованиях к этому см. в Teams [действия.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "51507573"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|TeamsActivity.Send|
+|Приложение|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,10 +50,10 @@ POST /teams/{teamId}/sendActivityNotification
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
-|activityType|String|Тип действия. Это должно быть объявлено в [манифесте приложения Teams.](/microsoftteams/platform/overview)|
-|chainId|Int64|Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
-|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams покажет только первые 150 символов.|
-|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблонов, определенных в записи ленты действий, соответствующие `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
+|activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
+|chainId|Int64|Необязательное свойство. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
 |получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
 При настройке значения свойства темы для следующих ресурсов `source` поддерживаются следующие  `entityUrl` ресурсы:
@@ -63,7 +63,7 @@ POST /teams/{teamId}/sendActivityNotification
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Примечание:** URL-адрес объекта должен быть одним и тем же или детским ресурсом группы в URL-адресе. Кроме того, приложение [Teams должно](/microsoftteams/platform/overview) быть установлено в команде.
+> **Примечание:** URL-адрес объекта должен быть одним и тем же или детским ресурсом группы в URL-адресе. Кроме того, [Teams приложение должно](/microsoftteams/platform/overview) быть установлено в команде.
 
 ## <a name="response"></a>Ответ
 
@@ -194,7 +194,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Пример 3. Уведомление пользователя о событии с использованием настраиваемой темы
 
-Как повествуют в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Однако, если вы хотите связаться с аспектом, который не является частью команды или не представлен Microsoft Graph, или вы хотите настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при настройке `topic` источника `text` для .
+Как повествуют в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Однако если вы хотите связаться с аспектом, который не является частью команды или не представлен Корпорацией Майкрософт Graph, или вы хотите настроить имя, вы можете установить источник и передать в настраиваемом значении для `topic` `text` него. `webUrl` требуется при настройке `topic` источника `text` для .
 
 #### <a name="request"></a>Запрос
 <!-- {
