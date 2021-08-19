@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Андроиддевицеовнеркиосккустомизатионсистемнавигатион
-description: Перечисление, представляющее возможные значения для навигации по системе настройки киоска.
+title: тип enum androidDeviceOwnerKioskCustomizationSystemNavigation
+description: Enum, представляющий возможные значения для навигации системы настройки киоска.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bb8a4cc6e34a4fe37828bd2f62dcb3fe66e2a55f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 212a074fb733fe77c0430882a8519bd4bebc065f07039256568e8a5f0d853ede
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49337113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242039"
 ---
-# <a name="androiddeviceownerkioskcustomizationsystemnavigation-enum-type"></a>тип перечисления Андроиддевицеовнеркиосккустомизатионсистемнавигатион
+# <a name="androiddeviceownerkioskcustomizationsystemnavigation-enum-type"></a>тип enum androidDeviceOwnerKioskCustomizationSystemNavigation
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Перечисление, представляющее возможные значения для навигации по системе настройки киоска.
+Enum, представляющий возможные значения для навигации системы настройки киоска.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен; Это значение по умолчанию равно NAVIGATION_DISABLED.|
-|навигатионенаблед|1,1|Включены кнопки "домой" и "Обзор".|
-|хомебуттононли|2| Включена только кнопка "домой".|
+|notConfigured|0|Не настроен; это значение по умолчанию NAVIGATION_DISABLED.|
+|navigationEnabled|1 |Включены кнопки "Главная" и "Обзор".|
+|homeButtonOnly|2| Включена только домашняя кнопка.|
 
 
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d7b48dfc2fa1af09d4dc9f69c7e1851069d40459
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 742c5752e4f5b692ec4905290fad280c6dc3fe05
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316953"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258882"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -140,7 +140,7 @@ Content-length: 244
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -281,7 +281,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.  Для настройки свойства **isAssignableToRole** вызывающему пользователю должно быть назначено свойство *Directory.AccessAsUser.All*.
+Ниже приведен пример запроса.  Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

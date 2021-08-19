@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c541e1d922ea3e83ce14f05dc034bd9b42bb2f32931ab5cf8c1aa6fad99f9530
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
-ms.translationtype: HT
+ms.openlocfilehash: 5f362b695d1b4e5e7d15b64c0f5710a9810b943c
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57395713"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384526"
 ---
 ```java
 
@@ -13,11 +13,12 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+requestOptions.add(new QueryOption("$search", "displayName:Pr"));
 
-UserCollectionPage users = graphClient.users()
+UserCollectionPage user = graphClient.groups("{id}").members().microsoft.graph.user()
     .buildRequest( requestOptions )
-    .filter("endswith(mail,'a@contoso.com')")
-    .orderBy("userPrincipalName")
+    .select("displayName,id")
+    .orderBy("displayName")
     .get();
 
 ```

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1d9acdcb2f98713de5be40333ddc627678fa3fa9
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: 9e1f7852f18a0b29c7946f661f34703fee7ce2a7
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660519"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396951"
 ---
 # <a name="get-tenantappmanagementpolicy"></a>Get tenantAppManagementPolicy
 
@@ -28,14 +28,14 @@ ms.locfileid: "53660519"
 | :------------------------------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                             |
-| Для приложений                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /policies/tenantAppManagementPolicy
+GET /policies/defaultAppManagementPolicy
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,7 +50,7 @@ GET /policies/tenantAppManagementPolicy
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код ответа и запрашиваемого объекта `200 OK` [defaultAppManagementPolicy](../resources/tenantAppManagementPolicy.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -64,7 +64,7 @@ GET /policies/tenantAppManagementPolicy
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/tenantAppManagementPolicy
+GET https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 ```
 
 ### <a name="response"></a>Отклик
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy/$entity",
     "@odata.id": "https://graph.microsoft.com/v2/927c6607-8060-4f4a-a5f8-34964ac78d70/defaultAppManagementPolicy/00000000-0000-0000-0000-000000000000",
     "id": "00000000-0000-0000-0000-000000000000",
     "displayName": "Default app management tenant policy",

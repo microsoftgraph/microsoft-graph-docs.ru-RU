@@ -1,60 +1,60 @@
 ---
-title: Тип ресурса Граупполицисеттингмаппинг
-description: Параметр групповой политики для сопоставления MDM/Intune.
+title: тип ресурса groupPolicySettingMapping
+description: Параметр Групповой политики для сопоставления MDM/Intune.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db235993f9ddb87c11407136676608ab8d1c1992
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b11df9995c69c7237146876c95764e59326b3851c0d94ea082ca408913e9428d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49298654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161138"
 ---
-# <a name="grouppolicysettingmapping-resource-type"></a>Тип ресурса Граупполицисеттингмаппинг
+# <a name="grouppolicysettingmapping-resource-type"></a>тип ресурса groupPolicySettingMapping
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметр групповой политики для сопоставления MDM/Intune.
+Параметр Групповой политики для сопоставления MDM/Intune.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Граупполицисеттингмаппингс](../api/intune-gpanalyticsservice-grouppolicysettingmapping-list.md)|Коллекция [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Список свойств и связей объектов [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .|
-|[Получение Граупполицисеттингмаппинг](../api/intune-gpanalyticsservice-grouppolicysettingmapping-get.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Чтение свойств и связей объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .|
-|[Создание Граупполицисеттингмаппинг](../api/intune-gpanalyticsservice-grouppolicysettingmapping-create.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Создание нового объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .|
-|[Удаление Граупполицисеттингмаппинг](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|Нет|Удаляет объект [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md).|
-|[Обновление Граупполицисеттингмаппинг](../api/intune-gpanalyticsservice-grouppolicysettingmapping-update.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Обновление свойств объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .|
+|[List groupPolicySettingMappings](../api/intune-gpanalyticsservice-grouppolicysettingmapping-list.md)|[коллекция groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Список свойств и связей объектов [groupPolicySettingMapping.](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|
+|[Get groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-get.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Чтение свойств и связей объекта [groupPolicySettingMapping.](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|
+|[Создание groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-create.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Создайте новый [объект groupPolicySettingMapping.](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|
+|[Удаление groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-delete.md)|Нет|Удаляет [группуPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md).|
+|[Update groupPolicySettingMapping](../api/intune-gpanalyticsservice-grouppolicysettingmapping-update.md)|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Обновление свойств объекта [groupPolicySettingMapping.](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|parentId|String|Родительский идентификатор параметра групповой политики.|
-|чилдидлист|Коллекция строк|Список дочерних идентификаторов параметра групповой политики.|
+|parentId|Строка|Родительский Id параметра групповой политики.|
+|childIdList|Коллекция String|Список детских ид параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
-|settingValue|String|Значение этого параметра групповой политики.|
-|сеттингвалуетипе|String|Тип значения этого параметра групповой политики.|
-|сеттингдисплайнаме|String|Отображаемое имя этого параметра групповой политики.|
-|сеттингдисплайвалуе|String|Отображаемое значение этого параметра групповой политики.|
-|сеттингдисплайвалуетипе|String|Отображаемый тип значения этого параметра групповой политики.|
-|сеттингвалуедисплайунитс|String|Отображаемые единицы значения параметра групповой политики|
-|сеттингкатегори|String|Категория, в которой находится параметр групповой политики.|
-|мдмкспнаме|String|Имя CSP, которое сопоставляется параметру групповой политики.|
-|мдмсеттингури|String|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
-|мдмминимумосверсион|Int32|Минимальная версия ОС, поддерживаемая параметром MDM.|
-|сеттингтипе|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (Security или ADMX) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|исмдмсуппортед|Boolean|Указывает, поддерживается ли Intune или нет|
-|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
-|сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
-|интунесеттингурилист|Коллекция строк|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
-|интунесеттингдефинитионид|String|Идентификатор определения параметра Intune|
-|адмкссеттингдефинитионид|String|Идентификатор групповой политики ADMX|
+|settingValue|Строка|Значение этого параметра групповой политики.|
+|settingValueType|Строка|Тип значения этого параметра групповой политики.|
+|settingDisplayName|Строка|Отображение имени этого параметра групповой политики.|
+|settingDisplayValue|Строка|Отображение значения этого параметра групповой политики.|
+|settingDisplayValueType|Строка|Тип отображения значения этого параметра групповой политики.|
+|settingValueDisplayUnits|String|Отображаемая единица этого значения групповой политики|
+|settingCategory|Строка|Категория, в которая находится параметр групповой политики.|
+|mdmCspName|String|CSP назовет эту групповую политику, устанавливая карты.|
+|mdmSettingUri|Строка|MDM CSP URI этой групповой политики, устанавливая карты.|
+|mdmMinimumOSVersion|Int32|Минимальная версия ОС, поддерживаемая этим параметром mdm.|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (безопасность или admx) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
+|isMdmSupported|Логический|Указывает, поддерживает ли параметр Intune или нет.|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в Mdm или нет. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
+|settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область настройки. Возможные значения: `unknown`, `device`, `user`.|
+|intuneSettingUriList|Коллекция String|Список URL-адресов intune Setting this group policy setting maps to|
+|intuneSettingDefinitionId|Строка|Id определения параметра Intune|
+|admxSettingDefinitionId|Строка|Admx Group Policy Id|
 
 ## <a name="relationships"></a>Связи
 Нет

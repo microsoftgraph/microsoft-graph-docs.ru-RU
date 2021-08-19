@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса expeditedWindowsQualityUpdateSettings
-description: Сложный тип для хранения параметров автоматического обновления качества, таких как дата и дни выпуска до принудительной перезагрузки.
+title: ускоренный тип ресурсаWindowsQualityUpdateSettings
+description: Сложный тип для хранения параметров ускоренного обновления качества, таких как дата выпуска и дни до принудительной перезагрузки.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 700b86d15737c75cbf10679ea6e944726d667431
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 8537f7bf9736d5d6e2a7015d3d1f11af7f7be0710698e964465d41311543e3f6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50160610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193533"
 ---
-# <a name="expeditedwindowsqualityupdatesettings-resource-type"></a>Тип ресурса expeditedWindowsQualityUpdateSettings
+# <a name="expeditedwindowsqualityupdatesettings-resource-type"></a>ускоренный тип ресурсаWindowsQualityUpdateSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сложный тип для хранения параметров автоматического обновления качества, таких как дата выпуска и дни до принудительной перезагрузки.
+Сложный тип для хранения параметров ускоренного обновления качества, таких как дата выпуска и дни до принудительной перезагрузки.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|qualityUpdateRelease|String|Дата выпуска для определения обновления качества.|
-|daysUntilForcedReboot|Int32|Количество дней после установки, в течение чего произойдет принудительный перезагруза.|
+|qualityUpdateRelease|Строка|Дата выпуска для определения обновления качества.|
+|daysUntilForcedReboot|Int32|Количество дней после установки, которые принудительные перезагрузки произойдет.|
 
 ## <a name="relationships"></a>Связи
 Нет

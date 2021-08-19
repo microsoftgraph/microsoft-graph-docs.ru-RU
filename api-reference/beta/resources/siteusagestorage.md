@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Ситеусажестораже
+title: тип ресурса siteUsageStorage
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 84b46861196e8893655fc5abc69ad1d4809cfd03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e00e260bfcab2992ecf892ec66b0d39884a31d477c84b0b6c46d3e004b274485
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167781"
 ---
-# <a name="siteusagestorage-resource-type"></a>Тип ресурса Ситеусажестораже
+# <a name="siteusagestorage-resource-type"></a>тип ресурса siteUsageStorage
 
 Пространство имен: microsoft.graph
 
@@ -20,11 +20,11 @@ ms.locfileid: "48033515"
 
 | Свойство           | Тип   |
 | :----------------- | :----- |
-| репортрефрешдате  | Дата   |
-| ситетипе           | String |
-| сторажеусединбитес | Int64  |
+| reportRefreshDate  | Дата   |
+| siteType           | Строка |
+| storageUsedInBytes | Int64  |
 | reportDate         | Дата   |
-| репортпериод       | String |
+| reportPeriod       | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

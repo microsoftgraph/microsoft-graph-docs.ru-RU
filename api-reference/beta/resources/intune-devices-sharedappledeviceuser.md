@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Шаредаппледевицеусер
+title: тип ресурса sharedAppleDeviceUser
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd33eccfbc1c3e396d65f63a6f435690186b53f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4fccc98427d8745f16213d6c0ce3383558e0d63cc9c86bfd908ec18c139c7304
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49208795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54172927"
 ---
-# <a name="sharedappledeviceuser-resource-type"></a>Тип ресурса Шаредаппледевицеусер
+# <a name="sharedappledeviceuser-resource-type"></a>тип ресурса sharedAppleDeviceUser
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -26,9 +26,9 @@ ms.locfileid: "49208795"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userPrincipalName|String|Имя пользователя|
-|дататосинк|Boolean|Данные для синхронизации|
-|Квота|Int64|Квота данных|
-|Используется|Int64|Квота данных|
+|dataToSync|Логический|Синхронизация данных|
+|dataQuota|Int64|Квота данных|
+|DataUsed|Int64|Квота данных|
 
 ## <a name="relationships"></a>Связи
 Нет

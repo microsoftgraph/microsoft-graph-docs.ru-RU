@@ -1,20 +1,20 @@
 ---
-title: Тип ресурса Воркбукоператионеррор
-description: Представляет ошибку при выполнении неудачной операции с книгой.
+title: тип ресурса workbookOperationError
+description: Представляет ошибку при сбойной операции книги.
 localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 42e8eea86222c360d9b08e70b7d6fded2a12afb4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9c5e3fa689cc830bf1041c240bf135de2fbab116ef876871a086fe66595b3e89
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241116"
 ---
-# <a name="workbookoperationerror-resource-type"></a>Тип ресурса Воркбукоператионеррор
+# <a name="workbookoperationerror-resource-type"></a>тип ресурса workbookOperationError
 
-Представляет ошибку при выполнении неудачной операции с книгой.
+Представляет ошибку при сбойной операции книги.
 
 ## <a name="properties"></a>Свойства
 
