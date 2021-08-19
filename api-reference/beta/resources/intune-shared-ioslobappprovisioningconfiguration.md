@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 357eabcf6a6102ddcdbd3de4d0cb7afb96de8462
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 408737f3c0194546009364eef7513295d3905289938e7cd3c88551ecf590cc81
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206090"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>тип ресурса iosLobAppProvisioningConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -38,13 +38,13 @@ ms.locfileid: "51866120"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |expirationDateTime|DateTimeOffset|Необязательный срок действия профиля.|
 |payloadFileName|String|Имя файла полезной нагрузки (*.mobileprovision) | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта конфигурации конфигурации приложения iOS LOB.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|String|Указанное администратором описание конфигурации устройства.|
+|description|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|

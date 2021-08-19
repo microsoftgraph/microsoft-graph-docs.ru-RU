@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d79700a8f042a4053457dea663fb13c35b9bea8
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: e865c8c9467519874b9333572f6be70b0223c8a5
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256172"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>Обновление microsoftTunnelConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51866197"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|MicrosoftTunnelGateway.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,15 +56,15 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelConfiguration|
 |displayName|String|Имя отображения MicrosoftTunnelConfiguration|
-|description|String|Описание MicrosoftTunnelConfiguration|
-|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|description|Строка|Описание MicrosoftTunnelConfiguration|
+|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
 |dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
 |defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
 |routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
 |routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
 |splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
-|advancedSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
+|advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 

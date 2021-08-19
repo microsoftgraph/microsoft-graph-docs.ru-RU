@@ -1,15 +1,15 @@
 ---
-title: Встроенные управляемые устройства с помощью API Intune-Microsoft Graph
-description: Перечисление API Microsoft Graph для конечных точек Intune (REST), используемых для встроенных устройств (Настройка и инициализация) для организации клиента.
+title: На борту управляемых устройств с intune — API Graph Microsoft
+description: Перечислены API Graph Microsoft для конечных точек Intune (REST), используемый для бортовых (настраивать и инициализировать) устройств для организации-клиента.
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 5788b1d7a13f0be84b0368dfa73e7932f4820d9d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f420420e5e82109e12628f5c2a585e27aee506c9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266552"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256993"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 
@@ -24,12 +24,13 @@ ms.locfileid: "49266552"
 Для управления регистрацией в Intune используются перечисленные ниже ресурсы Graph.
 
 - [Параметр соединителя сертификатов](intune-onboarding-certificateconnectorsetting.md)
-- [Партнер по управлению соответствием](intune-onboarding-compliancemanagementpartner.md)
-- [Назначение партнера по управлению соответствием](intune-onboarding-compliancemanagementpartnerassignment.md)
+- [Партнер по управлению соответствием требованиям](intune-onboarding-compliancemanagementpartner.md)
+- [Назначение партнера по управлению соответствием требованиям](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Данные об управлении устройствами и приложениями](intune-onboarding-deviceandappmanagementdata.md)
-- [Конфигурация центра управления мобильными устройствами](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [Конфигурация полномочий по совместному устройству](intune-onboarding-devicecomanagementauthorityconfiguration.md)
 - [Настройка ограничения регистрации устройств](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Ограничение платформы для регистрации устройств](intune-onboarding-deviceenrollmentplatformrestriction.md)
+- [Конфигурация ограничения платформы регистрации устройств](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
 - [Настройка ограничений для платформы регистрации устройств](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [Настройка регистрации устройств в Windows Hello для бизнеса](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
 - [Уровень доступа к Exchange для управления устройствами](intune-onboarding-devicemanagementexchangeaccesslevel.md)
@@ -45,7 +46,9 @@ ms.locfileid: "49266552"
 - [Тип партнерского приложения для управления устройствами](intune-onboarding-devicemanagementpartnerapptype.md)
 - [Назначение партнера по управлению устройствами](intune-onboarding-devicemanagementpartnerassignment.md)
 - [Состояние клиента партнера по управлению устройствами](intune-onboarding-devicemanagementpartnertenantstate.md)
+- [Тип платформы устройства](intune-onboarding-deviceplatformtype.md)
 - [Назначение конфигураций регистрации](intune-onboarding-enrollmentconfigurationassignment.md)
+- [Тип платформы ограничения регистрации](intune-onboarding-enrollmentrestrictionplatformtype.md)
 - [Торговая марка Intune](intune-onboarding-intunebrand.md)
 - [Центр MDM](intune-onboarding-mdmauthority.md)
 - [Опции выбора портала Microsoft store для бизнеса](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8570f0b5c2b0059d0ad991d637592e081327e452
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 2b72d4ffa282e28e8bd65db1589b084cc47241770a1be1dae2110de312155314
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52667100"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244871"
 ---
 # <a name="devicemanagementconfigurationintegersettingvalueconstantdefaulttemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate resource type
 
@@ -28,7 +28,7 @@ ms.locfileid: "52667100"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|constantValue|Int32|Значение Constant по умолчанию. Допустимые значения -2147483648 до 2147483647|
+|constantValue|Int32|Значение Constant по умолчанию. Допустимые значения 2147483648 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Сугжестеденроллментлимит
-description: Ресурс Сугжестеденроллментлимит представляет Рекомендуемое предельное значение регистрации при наличии типа регистрации.
+title: тип ресурса suggestedEnrollmentLimit
+description: Предлагаемый ресурсEnrollmentLimit представляет рекомендуемый лимит регистрации при учете типа регистрации.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 880fb5d77c7fa16a23349918973a33ba0952e07a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7595aa2ab614a7c9abb0ac9c76c4b05fda1288eea7b11c24b2b1932a1265a321
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197942"
 ---
-# <a name="suggestedenrollmentlimit-resource-type"></a>Тип ресурса Сугжестеденроллментлимит
+# <a name="suggestedenrollmentlimit-resource-type"></a>тип ресурса suggestedEnrollmentLimit
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс Сугжестеденроллментлимит представляет Рекомендуемое предельное значение регистрации при наличии типа регистрации.
+Предлагаемый ресурсEnrollmentLimit представляет рекомендуемый лимит регистрации при учете типа регистрации.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|сугжестеддаилилимит|Int32|Предполагаемое количество заявок в течение дня|
+|suggestedDailyLimit|Int32|Рекомендуемый лимит регистрации в течение дня|
 
 ## <a name="relationships"></a>Связи
 Нет

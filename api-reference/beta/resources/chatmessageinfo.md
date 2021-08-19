@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dc03ee6743aa8115f5a231b3766cc2d6c3d5537b
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 289bce30b970edd46f0ad29fdbaa24fd6428c93d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236318"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397042"
 ---
 # <a name="chatmessageinfo-resource-type"></a>тип ресурса chatMessageInfo
 
@@ -26,8 +26,10 @@ ms.locfileid: "53236318"
 |body|[itemBody](../resources/itembody.md)|Тело [chatMessage](../resources/chatmessage.md). Это будет по-прежнему содержать маркеры для @mentions и вложений, даже если объект не возвращает @mentions и вложения.|
 |createdDateTime|DateTimeOffset|Объект времени даты, представляющий время создания сообщения.|
 |from|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Сведения о отправителье сообщения.|
-|id|String|ID [chatMessage](../resources/chatmessage.md).|
+|id|Строка|ID [chatMessage](../resources/chatmessage.md).|
 |isDeleted|Логический|Если `true` установлено, исходное сообщение удалено.|
+|messageType|chatMessageType|Тип сообщения чата. Допустимые значения: `message`, `unknownFutureValue`, `systemEventMessage`.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Только для чтения.  При этом представлены сведения о событии, произошедшем в чате, канале или группе, например, добавлены участники и так далее. Для сообщений событий будет установлено свойство **messageType** `systemEventMessage` .|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -53,7 +55,11 @@ ms.locfileid: "53236318"
     "@odata.type": "microsoft.graph.chatMessageFromIdentitySet"
   },
   "createdDateTime": "String (timestamp)",
-  "isDeleted": "Boolean"
+  "isDeleted": "Boolean",
+  "messageType": "String",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

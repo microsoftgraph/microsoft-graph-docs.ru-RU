@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 1e7e90b90ad92ca62327ad9c356fa1d870c7ecbd
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7734283f513bd50d9f0187a24ec41e30ebadb38d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208294"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396965"
 ---
 # <a name="presence-setpresence"></a>присутствие: setPresence
 
@@ -36,7 +36,7 @@ ms.locfileid: "53208294"
 
 Срок действия сеанса присутствия настраивается с помощью `expirationDuration` параметра. По истечении срока действия сеанса он становится `Offline` .
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 Для вызова API требуется следующее разрешение. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
@@ -63,9 +63,9 @@ POST /users/{userId}/presence/setPresence
 | Параметр          | Тип     | Описание                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
 | sessionId          | строка   | ID сеанса присутствия приложения.                                                          |
-| availability       | строка   | Сведения о базовом присутствии.                                                                         |
+| availability       | string   | Сведения о базовом присутствии.                                                                         |
 | действие           | строка   | Дополнительные сведения о доступности.                                                          |
-| expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности. |
+| expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.</p>Если это не предусмотрено, по умолчанию будет применяться 5-минутный срок действия. |
 
 > [!IMPORTANT]
 >

@@ -5,14 +5,14 @@ localization_priority: Normal
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fcc9c011b4c23c088f887184891781af2f9f8338
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: d8cee8bc1de16eb9412f68d2ba464a8b71067c6c
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991359"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367046"
 ---
-# <a name="update-educationoutcome"></a>Обновление системы образования
+# <a name="update-educationoutcome"></a>Обновление educationOutcome
 
 Пространство имен: microsoft.graph
 
@@ -40,21 +40,53 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляют только значения полей, которые необходимо обновить.
 
 Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Объект educationOutcome будет одним из следующих производных типов: **educationPointsOutcome,** **educationFeedbackOutcome** или **educationRubricOutcome.** Поставляем конкретные свойства, соответствующие типу исправленного результата.
+Объект **educationOutcome** будет одним из следующих производных типов: **educationPointsOutcome,** **educationFeedbackOutcome** или **educationRubricOutcome.** Поставляем конкретные свойства, соответствующие типу результатов, которые вы обновляете.
 
-Все производные типы результатов имеют обычное и "опубликованное" свойство, соответствующее этому типу результатов; например, **точки** и **опубликованныеPoints,** **отзывы** и **опубликованныеFeedback**. Не обновляйте свойство "опубликовано"; это для внутреннего использования. Например, чтобы назначить точки **в educationPointsOutcome,** обновите свойство точек, но не обновляйте **опубликованные Точки**. 
+Все производные типы результатов имеют обычное и "опубликованное" свойство, соответствующее этому типу результатов; например, **точки** и **опубликованныеPoints,** **отзывы** и **опубликованныеFeedback**. Не обновляйте свойство "опубликовано"; это для внутреннего использования. Например, чтобы назначить точки **в educationPointsOutcome,** обновите свойство точки, но не обновляйте **опубликованные Точки**. 
 
 ## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект educationOutcome](../resources/educationoutcome.md) в тексте ответа.
+
+Если **pointsGradeType** и **точки** обновляются до отрицательного или бесконечного значения, метод возвращает `400` сообщение об ошибке.
+
+```http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "invalidGrading",
+            "message": "Points must be less than 9999999 when using PointsGradeType."
+        }
+    }
+}
+```
+
+Если указан недействительный ИД результатов, `404 Not Found` возвращается ошибка.
+
+```http
+HTTP/1.1 404 Not Found
+Content-type: application/json
+
+{
+    "error": {
+        "code": "20241",
+        "message": "Entity not found. Outcome id: 05d0f76c-1dfa-4442-926c-1b094828b505"
+    }
+}
+```
 
 ## <a name="examples"></a>Примеры
 
@@ -62,7 +94,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на обновление результатов обратной связи.
+В следующем примере показан запрос на обновление результатов обратной связи.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -106,7 +138,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -143,11 +175,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-points-outcome"></a>Пример 2. Обновление результатов баллов
+### <a name="example-2-update-a-points-outcome"></a>Пример 2. Обновление результатов точек
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на обновление результатов точек.
+В следующем примере показан запрос на обновление результатов точек.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -189,7 +221,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -223,11 +255,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-update-a-rubric-outcome"></a>Пример 3. Обновление итога рубрики
+### <a name="example-3-update-a-rubric-outcome"></a>Пример 3. Обновление результатов рубрики
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на обновление результатов рубрики.
+В следующем примере показан запрос на обновление результатов рубрики.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -291,7 +323,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

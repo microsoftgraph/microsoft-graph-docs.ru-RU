@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6e650333ef84bf3dcc1f32688366b3760c0f622c66ddf26ab7393bfe85e453c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca4b27993d88224555b9417af54f65cc5a70643d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255768"
 ---
 # <a name="servicehealthissue-resource-type"></a>тип ресурса serviceHealthIssue
 
@@ -18,7 +18,7 @@ ms.locfileid: "54177308"
 
 Представляет проблему со здоровьем службы в службе.
 
-Проблема со здоровьем службы может быть инцидентом службы или консультацией по обслуживанию. Например,
+Проблема со здоровьем службы может быть инцидентом службы или консультацией по обслуживанию. Например:
 
 * Инцидент службы: "Exchange службы почтовых ящиков не существует".
 * Рекомендации по обслуживанию: "Пользователи могут испытывать задержки в приеме сообщений электронной почты".
@@ -35,13 +35,13 @@ ms.locfileid: "54177308"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |classification|serviceHealthClassificationType|Тип проблемы со здоровьем службы. Возможные значения: `advisory`, `incident`, `unknownFutureValue`.|
-|подробности|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о проблеме со здоровьем службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|details|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о проблеме со здоровьем службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|Время окончания проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|функция|String|Имя функции проблемы службы.|
-|featureGroup|String|Имя группы функций проблемы службы.|
+|функция|Строка|Имя функции проблемы службы.|
+|featureGroup|Строка|Имя группы функций проблемы службы.|
 |id|String|Id проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|impactDescription|String|Описание влияния проблемы службы.|
-|isResolved|Логическое|Указывает, устранена ли проблема.|
+|impactDescription|Строка|Описание влияния проблемы службы.|
+|isResolved|Логический|Указывает, устранена ли проблема.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время проблемы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |происхождение|serviceHealthOrigin|Указывает происхождение проблемы службы. Возможные значения: `microsoft`, `thirdParty`, `customer`, `unknownFutureValue`.|
 |posts|[Collection(serviceHealthIssuePost)](../resources/servicehealthissuepost.md)|Коллекция исторических сообщений для проблемы службы.|

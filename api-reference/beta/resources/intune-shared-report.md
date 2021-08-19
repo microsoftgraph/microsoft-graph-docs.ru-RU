@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса report
-description: Описывает ресурс отчета API Microsoft Graph для Intune, который поддерживает несколько процессов.
+description: Описывает ресурс отчета API Microsoft Graph intune, который поддерживает несколько процессов.
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1a21995e763b1de27645e39badd120f86bb81fc
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 4adeb91bc4015585485c78fdaab04c24ad9e95d553d1792944392b8643915326
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51866666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160998"
 ---
 # <a name="report-resource-type"></a>Тип ресурса report
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 

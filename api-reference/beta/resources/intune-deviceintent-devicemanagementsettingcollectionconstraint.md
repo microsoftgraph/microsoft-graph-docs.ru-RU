@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Девицеманажементсеттингколлектионконстраинт
-description: Ограничение, которое устанавливает максимальное количество элементов в коллекции
+title: тип ресурса deviceManagementSettingCollectionConstraint
+description: Ограничение, которое обеспечивает максимальное количество элементов коллекции
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e97c49beae1efdb63f5a18ff7e70402e6b5c13d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 45d2ea304187697da21425d3c485f0ffa5671f2d68a4bd3453e12d92da142b86
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156214"
 ---
-# <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингколлектионконстраинт
+# <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>тип ресурса deviceManagementSettingCollectionConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение, которое устанавливает максимальное количество элементов в коллекции
+Ограничение, которое обеспечивает максимальное количество элементов коллекции
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|минимумленгс|Int32|Минимальное число элементов в коллекции|
-|максимумленгс|Int32|Максимальное число элементов в коллекции|
+|minimumLength|Int32|Минимальное количество элементов в коллекции|
+|maximumLength|Int32|Максимальное количество элементов в коллекции|
 
 ## <a name="relationships"></a>Связи
 Нет

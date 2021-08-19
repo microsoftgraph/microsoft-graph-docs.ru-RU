@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c11750bbffe64315c6263a26d7dbab333f42b7cf
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 31affa96ab07fa5fd15dd19fd7877f0bc10af228
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109238"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260854"
 ---
 # <a name="servicehealth-resource-type"></a>тип ресурса serviceHealth
 
@@ -18,7 +18,7 @@ ms.locfileid: "53109238"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения о состоянии здоровья службы.
+Представляет сведения о состоянии здоровья службы, подписанной клиентом.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
@@ -29,10 +29,10 @@ ms.locfileid: "53109238"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|ID службы.|
-|service|String|Имя службы.|
+|service|String|Имя службы. Используйте операцию [healthOverviews списка,](../api/serviceannouncement-list-healthoverviews.md) чтобы получить точные имена строк для служб, подписываемых клиентом.|
 |status|serviceHealthStatus|Покажите состояние состояния службы overral. Возможные значения: `serviceOperational` `investigating` , , , , `restoringService` , `verifyingService` , `serviceRestored` `postIncidentReviewPublished` `serviceDegradation` , `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` `reported` `unknownFutureValue` .|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |проблемы|[Collection(serviceHealthIssue)](../resources/servicehealthissue.md)|В службе произошел набор проблем с подробными сведениями по каждой проблеме.|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c3856862b0706c4eb30340d76c35275eb797e68
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 65576f8ca2af81fcd65c018a4f449146f057c45d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256428"
 ---
 # <a name="update-devicemanagementconfigurationpolicytemplate"></a>Обновление deviceManagementConfigurationPolicyTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "52665882"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ документа шаблона, состоящего из BaseId и Version. Автоматически созданный.|
-|baseId|Строка|Идентификатор базы шаблонов|
+|id|String|Ключ документа шаблона, состоящего из BaseId и Version. Автоматически созданный.|
+|baseId|String|Идентификатор базы шаблонов|
 |version|Int32|Версия шаблона. Допустимые значения от 1 до 2147483647. Это свойство доступно только для чтения.|
-|displayName|Строка|Имя отображения шаблона|
+|displayName|String|Имя отображения шаблона|
 |description|Строка|Описание шаблона|
 |displayVersion|Строка|Описание версии шаблона|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Указать текущее состояние жизненного цикла шаблона. Возможные значения: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|

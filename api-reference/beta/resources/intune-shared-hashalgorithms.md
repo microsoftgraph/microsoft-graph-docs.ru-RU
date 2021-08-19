@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Хашалгорисмс
-description: Параметры алгоритма хеширования.
+title: тип hashAlgorithms enum
+description: Параметры алгоритма hash.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8e693d91894dbf56228d19e60b8a17746b3d549
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b481811abb43678e1402b99e3cf4c6b2163df371af3581e510928b6dd07221c5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54195108"
 ---
-# <a name="hashalgorithms-enum-type"></a>тип перечисления Хашалгорисмс
+# <a name="hashalgorithms-enum-type"></a>тип hashAlgorithms enum
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры алгоритма хеширования.
+Параметры алгоритма hash.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|хэшем|1,1|Хэш-алгоритм SHA-1.|
-|sha2|2|Хэш-алгоритм SHA-2.|
+|sha1|1 |Алгоритм hash SHA-1.|
+|sha2|2|Алгоритм hash SHA-2.|
 
 
 

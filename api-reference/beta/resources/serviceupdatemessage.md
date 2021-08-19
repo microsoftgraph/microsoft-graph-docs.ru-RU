@@ -5,12 +5,12 @@ author: payiAzure
 localization_priority: Normal
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e8bea9b3c44f99d5be0d87b01d47db4505873681
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 7b595f3d0224af0b4e9efd73a9c7e8cd3bffa0b2
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264649"
 ---
 # <a name="serviceupdatemessage-resource-type"></a>тип ресурса serviceUpdateMessage
 
@@ -28,12 +28,12 @@ ms.locfileid: "53109226"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Извлечение свойств и связей объекта [serviceUpdateMessage.](../resources/serviceupdatemessage.md) |
-|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s в качестве чтения для подписанного пользователя. |
-|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s как непрочитанные для подписанного пользователя. |
-|[архив](../api/serviceupdatemessage-archive.md)|Boolean|Архивировать список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
-|[unarchive](../api/serviceupdatemessage-unarchive.md)|Boolean|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
-|[избранное](../api/serviceupdatemessage-favorite.md)|Boolean|Измените состояние списка [serviceUpdateMessage](../resources/serviceupdatemessage.md)s на избранное для подписанного пользователя.|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Удалите любимый статус [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
+|[markRead](../api/serviceupdatemessage-markread.md)|Логический|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s в качестве чтения для подписанного пользователя. |
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Логический|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s как непрочитанные для подписанного пользователя. |
+|[архив](../api/serviceupdatemessage-archive.md)|Логический|Архивировать список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
+|[unarchive](../api/serviceupdatemessage-unarchive.md)|Логический|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
+|[избранное](../api/serviceupdatemessage-favorite.md)|Логический|Измените состояние списка [serviceUpdateMessage](../resources/serviceupdatemessage.md)s на избранное для подписанного пользователя.|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Логический|Удалите любимый статус [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -41,19 +41,19 @@ ms.locfileid: "53109226"
 |actionRequiredByDateTime|DateTimeOffset|Ожидаемый крайний срок действия для сообщения.|
 |body|[itemBody](../resources/itembody.md)|Тип контента и содержимое тела сообщения службы.|
 |category|serviceUpdateCategory|Категория сообщений службы. Возможные значения: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
-|подробности|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о сообщении службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|details|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о сообщении службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|Конечное время сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|id|Строка|Id сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|isMajorChange|Boolean|Указывает, описывает ли сообщение крупное обновление для службы.|
+|id|String|Id сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|isMajorChange|Логический|Указывает, описывает ли сообщение крупное обновление для службы.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |службы|Коллекция (строка)|Затронутые службы сообщением службы.|
 |severity|serviceUpdateSeverity|Серьезность сообщения службы. Возможные значения: `normal`, `high`, `critical`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|Время начала сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |tags|Коллекция (строка)|Коллекция тегов для сообщения службы.|
-|title|Строка|Название сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Представляет данные точек представления пользователей сообщения службы.|
+|title|String|Название сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
+|viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Представляет данные точек представления пользователей сообщения службы. Эти данные включают состояние сообщения, например, имеет ли пользователь архив, чтение или помеченное сообщение как любимое. Это свойство является null при доступе с разрешениями приложений.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

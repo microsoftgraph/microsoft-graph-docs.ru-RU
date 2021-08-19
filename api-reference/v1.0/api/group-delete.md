@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a81560df24820aaa79a9fb7d4adebcc7e4d89ecb
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: df785b21fd7a6261d13c4f65ba207bb3ec6564d7
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680957"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266788"
 ---
 # <a name="delete-group"></a>Delete group
 
@@ -18,8 +18,7 @@ ms.locfileid: "52680957"
 
 Удаление группы.  
 
-При удалении Microsoft 365 группы перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По истечении этого периода они удаляются без возможности восстановления.  Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).  Это касается только Microsoft 365 групп.
-
+При удалении Microsoft 365 группы перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  После этого они будут удалены навсегда. Это не применимо к группам безопасности и группам рассылки, которые удаляются немедленно. Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

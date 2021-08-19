@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Еджехомебуттонопенсневтаб
-description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает новую страницу вкладки.
+title: тип ресурса edgeHomeButtonOpensNewTab
+description: Показать кнопку "Домой"; Нажатие кнопки home загружает страницу Новая вкладка.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c84ab2e242fce18b5fbb706af6e6beb2dd59f98
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c7f0c6b496f6ca1e15cba0a91378aa25943567d49f6389caaa42f869b713b207
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54229495"
 ---
-# <a name="edgehomebuttonopensnewtab-resource-type"></a>Тип ресурса Еджехомебуттонопенсневтаб
+# <a name="edgehomebuttonopensnewtab-resource-type"></a>тип ресурса edgeHomeButtonOpensNewTab
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Отображение кнопки "домой"; Нажатие кнопки "домой" загружает новую страницу вкладки.
+Показать кнопку "Домой"; Нажатие кнопки home загружает страницу Новая вкладка.
 
 
-Наследуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Наследует от [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

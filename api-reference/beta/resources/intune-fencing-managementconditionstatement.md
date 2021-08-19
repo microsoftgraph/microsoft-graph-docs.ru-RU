@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса Манажементкондитионстатемент
-description: Оператор условия управления — это группа условий управления, которые позволяют включать и отключать конфигурации устройств и приложений при выполнении всех включенных условий управления.
+title: тип ресурса managementConditionStatement
+description: Заявление об условиях управления — это группа условий управления, которые позволяют/отключать конфигурации устройств и приложений при условии, что все условия управления выполнены.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9404f6a192b3ea78b2268083625923c107bd3204
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bb0864749fd04fe6ba9979dd31e0a0adaf15854b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49197816"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256018"
 ---
-# <a name="managementconditionstatement-resource-type"></a>Тип ресурса Манажементкондитионстатемент
+# <a name="managementconditionstatement-resource-type"></a>тип ресурса managementConditionStatement
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Оператор условия управления — это группа условий управления, которые позволяют включать и отключать конфигурации устройств и приложений при выполнении всех включенных условий управления.
+Заявление об условиях управления — это группа условий управления, которые позволяют/отключать конфигурации устройств и приложений при условии, что все условия управления выполнены.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Манажементкондитионстатементс](../api/intune-fencing-managementconditionstatement-list.md)|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Список свойств и связей объектов [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) .|
-|[Получение Манажементкондитионстатемент](../api/intune-fencing-managementconditionstatement-get.md)|[манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Чтение свойств и связей объекта [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) .|
-|[Создание Манажементкондитионстатемент](../api/intune-fencing-managementconditionstatement-create.md)|[манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Создание нового объекта [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) .|
-|[Удаление Манажементкондитионстатемент](../api/intune-fencing-managementconditionstatement-delete.md)|Нет|Удаляет объект [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md).|
-|[Обновление Манажементкондитионстатемент](../api/intune-fencing-managementconditionstatement-update.md)|[манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Обновление свойств объекта [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) .|
-|[Функция Жетманажементкондитионстатементекспрессионстринг](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[манажементкондитионекспрессионстринг](../resources/intune-fencing-managementconditionexpressionstring.md)|Пока не задокументировано.|
-|[Функция Жетманажементкондитионстатементсфорплатформ](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Н/Д|
+|[Управление спискамиConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|[коллекция managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Список свойств и связей объектов [managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
+|[Get managementConditionStatement](../api/intune-fencing-managementconditionstatement-get.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Чтение свойств и связей [объекта managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
+|[Создание managementConditionStatement](../api/intune-fencing-managementconditionstatement-create.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Создание нового [объекта managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
+|[Удаление управленияConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|Нет|Удаляет [управлениеConditionStatement](../resources/intune-fencing-managementconditionstatement.md).|
+|[Update managementConditionStatement](../api/intune-fencing-managementconditionstatement-update.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Обновление свойств объекта [managementConditionStatement.](../resources/intune-fencing-managementconditionstatement.md)|
+|[функция getManagementConditionStatementExpressionString](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[managementConditionExpressionString](../resources/intune-fencing-managementconditionexpressionstring.md)|Пока не задокументировано.|
+|[функция getManagementConditionStatementsForPlatform](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[коллекция managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
-|displayName|String|Имя, определенное администратором оператора условия управления.|
-|description|String|Заданное администратором описание оператора условия управления.|
-|createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
-|modifiedDateTime|DateTimeOffset|Время последнего изменения оператора условия управления. Обновленная сторона службы.|
-|выражение|[манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используемое для оценки активации или деактивации оператора условия управления.|
-|eTag|String|Тег ETag оператора условия управления. Обновленная сторона службы.|
-|аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого оператора условия управления.
-Это рассчитывается на основе условий управления, связанных с оператором условия управления, и поиском пересечения соответствующих платформ.|
+|id|String|Уникальный идентификатор для утверждения условий управления. Созданное в системе значение, назначенное при его создания.|
+|displayName|String|Администратор определил имя заявления об условиях управления.|
+|description|Строка|Администратор определил описание инструкции по состоянию управления.|
+|createdDateTime|DateTimeOffset|Время создания заявления об условиях управления. Сгенерированная сторона службы.|
+|modifiedDateTime|DateTimeOffset|Время последнего изменения состояния управления. Обновленная сторона службы.|
+|выражение|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Выражение заявления об условиях управления, используемое для оценки активации или отключения заявления об условиях управления.|
+|eTag|String|ETag заявления об условиях управления. Обновленная сторона службы.|
+|applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого утверждения условий управления.
+Это рассчитывается из поиска условий управления, связанных с утверждением условий управления и поиска пересечения применимых платформ.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|манажементкондитионс|Коллекция [манажементкондитион](../resources/intune-fencing-managementcondition.md)|Условия управления, связанные с оператором условия управления.|
+|managementConditions|[коллекция managementCondition](../resources/intune-fencing-managementcondition.md)|Условия управления, связанные с утверждением условий управления.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

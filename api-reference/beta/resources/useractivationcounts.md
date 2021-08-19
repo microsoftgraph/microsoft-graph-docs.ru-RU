@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Normal
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 48adb73bac65ddced88aea3edb18deae7653f5b3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 9e1783822daf9ead4ba130161976c2f65f4c74a2f8b0f8a828981b14e64bcdf9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54212831"
 ---
 # <a name="useractivationcounts-resource-type"></a>тип ресурса userActivationCounts
 
@@ -20,14 +20,14 @@ ms.locfileid: "50761795"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | String | Тип продукта, например "Microsoft 365 ProPlus" или "Project Client". |
+| productType       | Строка | Тип продукта, например "Microsoft 365 ProPlus" или "Project клиент". |
 | lastActivatedDate | Дата   | Дата последней активации.       |
-| Windows           | Int64  | Активация рассчитывается на Windows. Этот номер включает каждую активацию на любом компьютере Windows. |
+| Windows           | Int64  | Активация рассчитывается на Windows. Этот номер включает каждую активацию на любом Windows компьютере. |
 | mac               | Int64  | Активация рассчитывается на ОС Mac.          |
-| windows10Mobile   | Int64  | Активация рассчитывается на windows 10 mobile. |
+| windows10Mobile   | Int64  | Активация рассчитывается на Windows 10 мобильном телефоне. |
 | ios               | Int64  | Активация рассчитывается на iOS.             |
 | Android           | Int64  | Активация рассчитывается на устройстве Android.  |
-| activatedOnSharedComputer   | Boolean | True, если пользователь использовал продукт на общем компьютере раньше. |
+| activatedOnSharedComputer   | Логический | True, если пользователь использовал продукт на общем компьютере раньше. |
 
 ## <a name="json-representation"></a>Представление JSON
 

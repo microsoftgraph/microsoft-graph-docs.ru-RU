@@ -1,35 +1,35 @@
 ---
-title: тип перечисления Нотификатионтемплатебрандингоптионс
-description: Параметры фирменной символики для шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune.
+title: notificationTemplateBrandingOptions enum type
+description: Параметры брендинга шаблона сообщений. Фирменная символика определяется в консоли администрирования Intune.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d20782272bb5cd7b89d27c5070ff9cc1df178570
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 736187e0170b86ce5bda8e7cb4988e94874ca7121077c880f840b6d4fba4a058
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222781"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244563"
 ---
-# <a name="notificationtemplatebrandingoptions-enum-type"></a>тип перечисления Нотификатионтемплатебрандингоптионс
+# <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры фирменной символики для шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune.
+Параметры брендинга шаблона сообщений. Фирменная символика определяется в консоли администрирования Intune.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет фирменной символики.|
-|инклудекомпанилого|1,1|Включите логотип компании.|
-|инклудекомпанинаме|2|Включите название компании.|
-|инклудеконтактинформатион|4 |Включение контактной информации.|
-|инклудекомпанипорталлинк|8 |Включение ссылки на корпоративный портал.|
+|Нет|0|Нет брендинга.|
+|includeCompanyLogo|1 |Включай логотип компании.|
+|includeCompanyName|2|Включай имя компании.|
+|includeContactInformation|4 |Включай контактные данные.|
+|includeCompanyPortalLink|8 |Включай Корпоративный портал ссылку.|
 
 
 

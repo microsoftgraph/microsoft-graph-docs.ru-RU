@@ -237,6 +237,9 @@ items:
           - name: Управление несколькими клиентами (предварительная версия)
             displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
+          - name: Работоспособность и взаимодействие служб
+            display name: service communications API
+            href: service-communications-concept-overview.md
       - name: Образование
         items:
           - name: Общие сведения
@@ -412,8 +415,6 @@ items:
             href: information-protection-overview.md
           - name: Возможности для партнеров
             href: security-partner-overview.md
-      - name: Работоспособность служб и коммуникации (предварительная версия)
-        href: service-communications-concept-overview.md
       - name: Сайты и списки
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
@@ -612,6 +613,8 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: '4. Развертывание, тестирование и расширение'
                 href: migrate-azure-ad-graph-deploy-test-extend.md
+              - name: Вопросы и ответы о миграции
+                href: migrate-azure-ad-graph-faq.md
       - name: Использование пакетов SDK
         items:
           - name: Обзор
