@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Кэйсторажепровидероптион
-description: Параметры импорта поставщика хранилища ключей (KSP).
+title: тип enum keyStorageProviderOption
+description: Параметры импорта служба хранилища поставщика (KSP).
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d0a0fca9dd77a4c83022d875350f12a3e56e18d6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7bfd89c8e74264aca79af72325d6b5b4a96b23a3a3fadd44b32c94f3fa95cc58
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219754"
 ---
-# <a name="keystorageprovideroption-enum-type"></a>тип перечисления Кэйсторажепровидероптион
+# <a name="keystorageprovideroption-enum-type"></a>тип enum keyStorageProviderOption
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры импорта поставщика хранилища ключей (KSP).
+Параметры импорта служба хранилища поставщика (KSP).
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|усетпмкспосервисеусесофтварексп|нуль|Импорт в KSP доверенного платформенного модуля (TPM), если он присутствует, в противном случае импортировать в KSP программного обеспечения.|
-|усетпмкспосервисефаил|1,1|Импорт в KSP доверенного платформенного модуля (TPM), если он присутствует, в противном случае произойдет ошибка.|
-|усепасспортфорворккспосервисефаил|2|Импорт в паспорт для Works KSP, если он доступен, в противном случае произойдет ошибка.|
-|усесофтварексп|4|Импорт в KSP программного обеспечения.|
+|useTpmKspOtherwiseUseSoftwareKsp|0|Импортировать в доверенный модуль платформы (TPM) KSP, если он присутствует, в противном случае импортировать в программное обеспечение KSP.|
+|useTpmKspOtherwiseFail|1 |Импорт в доверенный модуль платформы (TPM) KSP, если он присутствует, в противном случае не удается.|
+|usePassportForWorkKspOtherwiseFail|2|Импорт в Passport для работы KSP при наличии, в противном случае сбой.|
+|useSoftwareKsp|3 |Импорт в программное обеспечение KSP.|
 
 
 

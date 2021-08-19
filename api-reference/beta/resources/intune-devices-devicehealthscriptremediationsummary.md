@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Девицехеалсскриптремедиатионсуммари
-description: Количество развернутых сценариев работоспособности устройств и количество устройств, которые были исправлены в сценариях.
+title: тип ресурса deviceHealthScriptRemediationSummary
+description: Количество развернутых скриптов для здоровья устройств и количество устройств, исправленных скриптами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7dd3a1b1ab22c2ac834150d1e1ad09938ed27550
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3843bf13e7129f4025b1c520f49900aa5f5c8ffe379aca22f3d69eff17412403
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299431"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251276"
 ---
-# <a name="devicehealthscriptremediationsummary-resource-type"></a>Тип ресурса Девицехеалсскриптремедиатионсуммари
+# <a name="devicehealthscriptremediationsummary-resource-type"></a>тип ресурса deviceHealthScriptRemediationSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Количество развернутых сценариев работоспособности устройств и количество устройств, которые были исправлены в сценариях.
+Количество развернутых скриптов для здоровья устройств и количество устройств, исправленных скриптами.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|скрипткаунт|Int32|Количество развернутых сценариев работоспособности устройств.|
-|remediatedDeviceCount|Int32|Количество устройств, исправленных сценариями работоспособности устройства.|
+|scriptCount|Int32|Количество развернутых скриптов для здоровья устройств.|
+|remediatedDeviceCount|Int32|Количество устройств, исправленных скриптами для здоровья устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет

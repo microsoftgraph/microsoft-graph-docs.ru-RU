@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Мобилеаппинсталлтимесеттингс
-description: Содержит свойства, используемые для определения времени предоставления приложения устройствам и для установки приложения на устройствах.
+title: тип ресурса mobileAppInstallTimeSettings
+description: Содержит свойства, используемые для определения того, когда предлагать приложение устройствам и когда устанавливать приложение на устройствах.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8aec3852f68813d6d42acbec73f76c6e32f9ab92
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4b22ae3e5e9b94527417f671d0c6ca3a3545fee6e6819ef31743d0be410129e2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251129"
 ---
-# <a name="mobileappinstalltimesettings-resource-type"></a>Тип ресурса Мобилеаппинсталлтимесеттингс
+# <a name="mobileappinstalltimesettings-resource-type"></a>тип ресурса mobileAppInstallTimeSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства, используемые для определения времени предоставления приложения устройствам и для установки приложения на устройствах.
+Содержит свойства, используемые для определения того, когда предлагать приложение устройствам и когда устанавливать приложение на устройствах.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|уселокалтиме|Boolean|Следует ли использовать время локального устройства или время в формате UTC при определении доступных и крайних сроков.|
-|startDateTime|DateTimeOffset|Время, когда приложение должно быть доступно для установки.|
-|деадлинедатетиме|DateTimeOffset|Время установки приложения.|
+|useLocalTime|Логический|Следует ли использовать местное время устройства или время UTC при определении доступных и крайних сроков.|
+|startDateTime|DateTimeOffset|Время, в которое приложение должно быть доступно для установки.|
+|deadlineDateTime|DateTimeOffset|Время установки приложения.|
 
 ## <a name="relationships"></a>Связи
 Нет
