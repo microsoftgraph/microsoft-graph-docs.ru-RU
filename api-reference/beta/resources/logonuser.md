@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 9986aaa7cb5fbf5f8687c43de019b234a4a971d8
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 20a5f4ab827a09fd6254f3cbe8a590eb20fd76223eb8f24445fbe3b52a5f3ea5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193484"
 ---
 # <a name="logonuser-resource-type"></a>тип ресурса logonUser
 
@@ -22,13 +22,13 @@ ms.locfileid: "50720496"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|accountDomain|String|Домен учетной записи пользователя, используемый для логона.|
-|accountName|String|Имя учетной записи учетной записи пользователя, используемой для логона.|
-|accountType|String|Тип учетной записи пользователя по определению Windows. Возможные значения: `unknown`, `standard`, `power`, `administrator`.|
+|accountDomain|Строка|Домен учетной записи пользователя, используемый для логона.|
+|имя учетной записи|Строка|Имя учетной записи учетной записи пользователя, используемой для логона.|
+|accountType|Строка|Тип учетной записи пользователя, Windows определение. Возможные значения: `unknown`, `standard`, `power`, `administrator`.|
 |firstSeenDateTime|DateTimeOffset|DateTime, в котором произошел самый ранний логотип этой учетной записи пользователя (период, определяемый поставщиком). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |lastSeenDateTime|DateTimeOffset|DateTime, в котором произошел последний логотип этой учетной записи пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |logonId|String|ID логотипа пользователя.|
-|logonTypes|Коллекция объектов string|Коллекция типов логотипов, наблюдаемых для входа в систему пользователя с первого до последнего вида. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|logonTypes|Коллекция String|Коллекция типов логотипов, наблюдаемых для входа в систему пользователя с первого до последнего вида. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

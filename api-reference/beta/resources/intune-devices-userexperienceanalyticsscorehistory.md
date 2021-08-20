@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 667afd0bef187cbfed35c22d5f07593f9c548da3
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0e11177183c15e0413b9cd173956884766eaa2af
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52665597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264677"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>тип ресурса userExperienceAnalyticsScoreHistory
 
@@ -34,13 +34,17 @@ ms.locfileid: "52665597"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
 |startupDateTime|DateTimeOffset|Время запуска устройства аналитики пользовательского интерфейса.|
 |overallScore|Int32|Общая оценка аналитики пользовательского опыта. Оценка будет в диапазоне 0-100, 100 является идеальным показателем. Допустимые значения: от 0 до 100|
 |startupScore|Int32|Оценка запуска устройства аналитики пользовательских интерфейсов. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |coreBootScore|Int32|Оценка загрузки основного загрузочного устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |coreSigninScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |recommendedSoftwareScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
+|appHealthOverallScore|Int32|Общее состояние здоровья приложения для аналитики пользовательского интерфейса.|
+|startupTotalDevices|Int32|Общее число устройств для производительности запуска для аналитики пользовательских интерфейсов.|
+|recommendedSoftwareTotalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов рекомендуемого программного обеспечения.|
+|appHealthTotalDevices|Int32|Общее число устройств для здоровья приложения для аналитики пользовательского интерфейса.|
 |restartScore|Int32|Оценка перезапуска. Оценка будет в диапазоне 0-100, 100 является идеальным показателем, 0 указывает на чрезмерные перезапуски. Допустимые значения от 0 до 9999999|
 
 ## <a name="relationships"></a>Связи
@@ -64,6 +68,10 @@ ms.locfileid: "52665597"
   "coreBootScore": 1024,
   "coreSigninScore": 1024,
   "recommendedSoftwareScore": 1024,
+  "appHealthOverallScore": 1024,
+  "startupTotalDevices": 1024,
+  "recommendedSoftwareTotalDevices": 1024,
+  "appHealthTotalDevices": 1024,
   "restartScore": 1024
 }
 ```

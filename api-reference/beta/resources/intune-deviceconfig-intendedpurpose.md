@@ -1,22 +1,22 @@
 ---
-title: тип перечисления intendedPurpose
+title: intendedPurpose enum type
 description: Параметры импорта PFX.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 82e78f25e15e76e0da44540791ffb5d0ef4cb82a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 876dd523889d510703c01fc8982b4d5a981f74e168ac49ca7b0f119e77fa6d96
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251549"
 ---
-# <a name="intendedpurpose-enum-type"></a>тип перечисления intendedPurpose
+# <a name="intendedpurpose-enum-type"></a>intendedPurpose enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49273727"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|неназначенных|1,1|Неназначенных|
-|смиминкриптион|2|смиминкриптион|
-|смимесигнинг|4|смимесигнинг|
-|виртуального|4 |VPN|
-|подключений|5 |Подключений|
+|без присвоения|1 |Unassigned|
+|smimeEncryption|2|SmimeEncryption|
+|smimeSigning|3 |SmimeSigning|
+|VPN|4 |VPN|
+|Wi-Fi|5 |Wi-Fi|
 
 
 

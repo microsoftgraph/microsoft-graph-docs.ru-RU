@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Девицехеалсскриптинтежерпараметер
-description: Свойства целого параметра скрипта.
+title: тип ресурса deviceHealthScriptIntegerParameter
+description: Свойства параметра скрипта Integer.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ebc614c93e88d01503c0219200598148c7b84cc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: abac591b623af6283a830b427ae98e7c178376ef41e620b29d06ba24dbe16892
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49226491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253651"
 ---
-# <a name="devicehealthscriptintegerparameter-resource-type"></a>Тип ресурса Девицехеалсскриптинтежерпараметер
+# <a name="devicehealthscriptintegerparameter-resource-type"></a>тип ресурса deviceHealthScriptIntegerParameter
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Свойства целого параметра скрипта.
+Свойства параметра скрипта Integer.
 
 
-Наследуется от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)
+Наследует от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя параметра, унаследованного от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|String|Описание параметра, унаследованного от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
-|isRequired|Boolean|Является ли параметр должен наследоваться от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
-|апплидефаултвалуевхеннотассигнед|Boolean|Применяется ли значение DefaultValue при отсутствии назначенного наследования от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
-|Значение|Int32|Значение по умолчанию параметра Integer. Допустимые значения: от 2147483648 до 2147483647|
+|name|String|Имя парама, унаследованной от [устройстваHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|Строка|Описание парама, унаследованной от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|isRequired|Boolean|Требуется ли перенаследование парама с [устройстваHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|applyDefaultValueWhenNotAssigned|Логический|Применение defaultValue при не назначении унаследованных от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|defaultValue|Int32|Значение по умолчанию параметра Integer. Допустимые значения 2147483648 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет

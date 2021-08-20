@@ -5,12 +5,12 @@ author: namkedia
 localization_priority: Priority
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1863c6bf6f28e0e8ae8a3d1133330337a7420c0a
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 31ec191527509c015ab201c1464509fce64e549fd5475a377efbff0808973a74
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239681"
 ---
 # <a name="claimsmapping-resource-type"></a>Тип ресурса claimsMapping
 
@@ -22,8 +22,8 @@ ms.locfileid: "50761844"
 |Свойство|Тип|Описание|
 |:-------|:---|:----------|
 |userId|String|Утверждение, предоставляющее уникальный идентификатор для вошедшего пользователя. Это обязательное свойство.|
-|displayName|String|Утверждение, предоставляющее отображаемое или полное имя для пользователя. Это обязательное свойство.|
-|givenName;|String|Утверждение, предоставляющее имя пользователя.|
+|displayName|Строка|Утверждение, предоставляющее отображаемое или полное имя для пользователя. Это обязательное свойство.|
+|givenName|String|Утверждение, предоставляющее имя пользователя.|
 |surname|String|Утверждение, предоставляющее фамилию пользователя.|
 |email|String|Утверждение, предоставляющее электронный адрес пользователя.|
 

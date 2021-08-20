@@ -5,12 +5,12 @@ localization_priority: Normal
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 38d63cf4422332502d0595b3e00fed2f305c02c6
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 14862bc07762419ea2d12e715cfc6b19b31395e649cb1cb8b913baeb0e3fb217
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57051523"
 ---
 # <a name="get-authenticationcontextclassreference"></a>Проверка подлинностиContextClassReference
 
@@ -45,7 +45,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 

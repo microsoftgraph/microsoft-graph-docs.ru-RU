@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a484745aae11ba967f3077bf674c9bc8dd8c6db
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: b7887e72981a5a94eff98374becc81d81cafa2b23727c379b612d1d8995710b1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51148745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54166290"
 ---
 # <a name="create-sideloadingkey"></a>Создание sideLoadingKey
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51148745"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,9 +53,9 @@ POST /deviceAppManagement/sideLoadingKeys
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный ID side Loading Key.|
+|id|String|Уникальный ID side Loading Key.|
 |value|String|Ключевое значение side Loading — это значение 5x5, разделенное hiphens.|
-|displayName|Строка|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
+|displayName|String|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
 |description|Строка|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
 |totalActivation|Int32|Полная активация клавиши боковой загрузки, отображаемая администраторам ITPro.|
 |lastUpdatedDateTime|Строка|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|

@@ -4,12 +4,12 @@ description: Перечислены API Graph Microsoft для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 77500484aaafd5d9101e66789966b4861b61e511
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 9ef71ce51e86d2582935a5f647a0a7ad07b70e73
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664904"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264082"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -44,7 +44,6 @@ ms.locfileid: "52664904"
 - [Политика соответствия требованиям устройств](intune-shared-devicecompliancepolicy.md)
 - [Конфигурация устройств](intune-shared-deviceconfiguration.md)
 - [Настройка регистрации устройств](intune-shared-deviceenrollmentconfiguration.md)
-- [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Управление устройствами](intune-shared-devicemanagement.md)
 - [Параметры учетных данных для управления устройствами](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Сценарий управления устройствами](intune-shared-devicemanagementscript.md)
@@ -67,7 +66,6 @@ ms.locfileid: "52664904"
 - [Размер ключа](intune-shared-keysize.md)
 - [Параметр поставщика хранилища ключей](intune-shared-keystorageprovideroption.md)
 - [Использование ключей](intune-shared-keyusages.md)
-- [Пара "ключ-значение"](intune-shared-keyvaluepair.md)
 - [Параметры назначения приложений macOS LOB](intune-shared-macoslobappassignmentsettings.md)
 - [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-shared-macosvppappassignmentsettings.md)
 - [Тип владельца управляемого устройства](intune-shared-manageddeviceownertype.md)
@@ -80,12 +78,10 @@ ms.locfileid: "52664904"
 - [Устранение неполадок с мобильным приложением: событие](intune-shared-mobileapptroubleshootingevent.md)
 - [Тип владельца](intune-shared-ownertype.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
-- [Отчет](intune-shared-report.md)
+- [Report](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)
-- [Итоговое состояние приложения](intune-shared-resultantappstate.md)
 - [Цвет RGB](intune-shared-rgbcolor.md)
 - [Тип учетной записи, от имени которой запускается приложение](intune-shared-runasaccounttype.md)
-- [Состояние выполнения](intune-shared-runstate.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [Настройка типа источника](intune-shared-settingsourcetype.md)
 - [Тип альтернативного имени субъекта](intune-shared-subjectalternativenametype.md)

@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Девицехеалсскриптрунонцесчедуле
-description: Сценарий работоспособности устройства запускается один раз по расписанию.
+title: тип ресурса deviceHealthScriptRunOnceSchedule
+description: Сценарий состояния устройства запустится один раз.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 230d9592b66f85457b20343a48d8024a9b4afe87
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 324b8c0ced6c2e10da4dfd0a60c6d4c4aa26d2140176cd85f35527769daadf39
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206370"
 ---
-# <a name="devicehealthscriptrunonceschedule-resource-type"></a>Тип ресурса Девицехеалсскриптрунонцесчедуле
+# <a name="devicehealthscriptrunonceschedule-resource-type"></a>тип ресурса deviceHealthScriptRunOnceSchedule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сценарий работоспособности устройства запускается один раз по расписанию.
+Сценарий состояния устройства запустится один раз.
 
 
-Наследуется от [девицехеалсскрипттимесчедуле](../resources/intune-devices-devicehealthscripttimeschedule.md)
+Наследует [от deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|interval|Int32|Значение x каждого x часа для ежечасного расписания, каждые x дней для ежедневного расписания, каждые x недель для еженедельного расписания, каждые x месяцев для ежемесячного расписания. Допустимые значения — от 1 до 23, наследуемые от [девицехеалсскриптрунсчедуле](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|усеутк|Boolean|Укажите время в формате UTC или местное время клиента. Наследуется от [девицехеалсскрипттимесчедуле](../resources/intune-devices-devicehealthscripttimeschedule.md)|
-|time|TimeOfDay|При планировании запуска сценария. Эта коллекция может содержать не более 20 элементов. Наследуется от [девицехеалсскрипттимесчедуле](../resources/intune-devices-devicehealthscripttimeschedule.md)|
-|date|Date|Дата запланированного запуска сценария. Эта коллекция может содержать не более 20 элементов.|
+|interval|Int32|X значение каждые х часов для почасового расписания, каждые х дней для ежедневного расписания, каждые х недель для еженедельного расписания, каждые х месяцев для ежемесячного расписания. Допустимые значения от 1 до 23, унаследованные от [устройстваHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
+|useUtc|Логический|Указать, является ли время Utc или клиент локальным. Унаследованный от [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
+|time|TimeOfDay|В какое время планируется запустить сценарий. Эта коллекция может содержать не более 20 элементов. Унаследованный от [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
+|date|Date|Дата запуска сценария. Эта коллекция может содержать не более 20 элементов.|
 
 ## <a name="relationships"></a>Связи
 Нет

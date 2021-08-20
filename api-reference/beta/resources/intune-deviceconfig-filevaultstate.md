@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Филеваултстате
-description: Состояние Филеваулт
+title: тип enum fileVaultState
+description: Состояние FileVault
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a9aa7c0b11a155597911f64882f5b6d424a2b129
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9e77c0005dc7dd7cab430fa628cc034919e9fce9cbc3f9171c4bee3846c7c12a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250001"
 ---
-# <a name="filevaultstate-enum-type"></a>тип перечисления Филеваултстате
+# <a name="filevaultstate-enum-type"></a>тип enum fileVaultState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние Филеваулт
+Состояние FileVault
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|нуль|Успешное состояние Филеваулт|
-|дривинкриптедбюсер|1,1|Филеваулт был включен пользователем и не управляется политикой|
-|усердеферреденкриптион|2|Политика Филеваулт успешно установлена, но пользователь не начал шифрование|
-|ескровнотенаблед|4 |Филеваулт не включен параметр "депонирование ключей восстановления"|
+|success|0|Успех состояния FileVault|
+|driveEncryptedByUser|1 |FileVault включен пользователем и не управляется политикой|
+|userDeferredEncryption|2|Политика FileVault успешно установлена, но пользователь еще не начал шифрование|
+|escrowNotEnabled|4 |Escrow ключа восстановления FileVault не включен|
 
 
 
