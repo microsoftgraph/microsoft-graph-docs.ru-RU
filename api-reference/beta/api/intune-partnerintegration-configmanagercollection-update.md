@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 719aa441ecf295b2a6008e097bfd2cf40e691cd8
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 77cb3e92f17133eb5577f26141c98b306a0569a1c475cd6be7779c2801837398
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51152462"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54181561"
 ---
 # <a name="update-configmanagercollection"></a>Обновление configManagerCollection
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51152462"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configManagerCollections/{configManagerCollectionId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,11 +53,11 @@ PATCH /deviceManagement/configManagerCollections/{configManagerCollectionId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ для коллекции ConfigManager.|
+|id|String|Ключ для коллекции ConfigManager.|
 |displayName|Строка|The DisplayName.|
 |collectionIdentifier|Строка|Идентификатор коллекции в SCCM.|
 |hierarchyName|Строка|Имя иерархии.|
-|hierarchyIdentifier|Строка|Идентификатор иерархии.|
+|hierarchyIdentifier|String|Идентификатор иерархии.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения.|
 

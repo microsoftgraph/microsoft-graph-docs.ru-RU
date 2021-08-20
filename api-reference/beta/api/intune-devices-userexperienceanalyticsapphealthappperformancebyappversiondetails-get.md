@@ -1,18 +1,18 @@
 ---
-title: summarizeDeviceRegressionPerformance function
-description: Пока не задокументировано.
+title: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
+description: Чтение свойств и связей объекта userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44d46f1bc1208a7b2f9f89cc3d7c25b6997617ff
+ms.openlocfilehash: dd5dfa06780f52f6b53184633bd8bc0e2ebf7318
 ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248238"
+ms.locfileid: "58267046"
 ---
-# <a name="summarizedeviceregressionperformance-function"></a>summarizeDeviceRegressionPerformance function
+# <a name="get-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "58248238"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано.
+Чтение свойств и связей [объекта userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails.](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
@@ -37,34 +37,30 @@ ms.locfileid: "58248238"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsRegressionSummary/summarizeDeviceRegressionPerformance
+GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails/{userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId}
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
-В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
+Не указывайте текст запроса для этого метода.
 
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-|summarizeBy|[userExperienceAnalyticsSummarizedBy](../resources/intune-devices-userexperienceanalyticssummarizedby.md)|Пока не задокументировано.|
-
-
-
-## <a name="response"></a>Ответ
-В случае успешной данной функции возвращается код отклика и `200 OK` [userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) в тексте ответа.
+## <a name="response"></a>Отклик
+В случае успеха этот метод возвращает код ответа и `200 OK` [объект userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/summarizeDeviceRegressionPerformance(summarizeBy='parameterValue')
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails/{userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -72,12 +68,20 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsReg
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 154
+Content-Length: 472
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.userExperienceAnalyticsRegressionSummary",
-    "id": "41683327-3327-4168-2733-684127336841"
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails",
+    "id": "1505e3e6-e3e6-1505-e6e3-0515e6e30515",
+    "deviceCountWithCrashes": 6,
+    "isMostUsedVersion": true,
+    "isLatestUsedVersion": true,
+    "appName": "App Name value",
+    "appDisplayName": "App Display Name value",
+    "appPublisher": "App Publisher value",
+    "appVersion": "App Version value",
+    "appCrashCount": 13
   }
 }
 ```

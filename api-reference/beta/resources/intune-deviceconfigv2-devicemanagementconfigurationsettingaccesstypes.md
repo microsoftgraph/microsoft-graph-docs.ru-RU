@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицеманажементконфигуратионсеттингакцесстипес
+title: тип enum deviceManagementConfigurationSettingAccessTypes
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 80d4fe099e65d8a23db59c7e026fb4df133d54df
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c5c2aded956a058799a0ee0a08539e2d5542fb59a4b0bdded9ab81f5d0902013
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242216"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54150452"
 ---
-# <a name="devicemanagementconfigurationsettingaccesstypes-enum-type"></a>тип перечисления Девицеманажементконфигуратионсеттингакцесстипес
+# <a name="devicemanagementconfigurationsettingaccesstypes-enum-type"></a>тип enum deviceManagementConfigurationSettingAccessTypes
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,13 +25,13 @@ ms.locfileid: "49242216"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Пока не задокументировано.|
-|надстройки|1,1|Пока не задокументировано.|
-|экземпляра|2|Пока не задокументировано.|
+|Нет|0|Пока не задокументировано.|
+|добавление|1 |Пока не задокументировано.|
+|копирование|2|Пока не задокументировано.|
 |delete|4 |Пока не задокументировано.|
 |Получить|8 |Пока не задокументировано.|
 |replace|16 |Пока не задокументировано.|
-|выполнены|32|Пока не задокументировано.|
+|выполнение|32|Пока не задокументировано.|
 
 
 

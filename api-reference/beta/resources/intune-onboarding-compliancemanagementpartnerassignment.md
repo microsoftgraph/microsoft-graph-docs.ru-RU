@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса complianceManagementPartnerAssignment
-description: Целевая группа пользователей для партнера по управлению соответствием требованиям
+title: тип ресурса complianceManagementPartnerAssignment
+description: Ориентация группы пользователей для партнера по управлению соответствием требованиям
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e46e4e6a5e073e3087267329880cf0f36bb79c4a
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: b9934055c42bc9489d698b3c40eea4d9587d8b37a7d05faca797724d739dc870
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235984"
 ---
-# <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса complianceManagementPartnerAssignment
+# <a name="compliancemanagementpartnerassignment-resource-type"></a>тип ресурса complianceManagementPartnerAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Целевая группа пользователей для партнера по управлению соответствием требованиям
+Ориентация группы пользователей для партнера по управлению соответствием требованиям
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевой объект назначения группы.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель группового назначения.|
 
 ## <a name="relationships"></a>Связи
 Нет

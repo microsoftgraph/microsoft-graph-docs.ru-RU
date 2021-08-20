@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 549da8696f6291057adb075e8371ad9d1c0a0443
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0ff611ddb2c9b371e8dbddb7200e6c1a10266483ec49f41cc63c187db991c3fe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49266419"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253440"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -31,9 +31,9 @@ ms.locfileid: "49266419"
 |[Удалить VPP токен](../api/intune-onboarding-vpptoken-delete.md)|Отсутствует|Удаляет [VPP токен](../resources/intune-onboarding-vpptoken.md).|
 |[Обновить VPP токен](../api/intune-onboarding-vpptoken-update.md)|[VPP токен](../resources/intune-onboarding-vpptoken.md)|Обновление свойств объекта [VPP токен](../resources/intune-onboarding-vpptoken.md).|
 |[Действие syncLicenses](../api/intune-onboarding-vpptoken-synclicenses.md)|[VPP токен](../resources/intune-onboarding-vpptoken.md)|Синхронизирует лицензии, связанные с конкретным appleVolumePurchaseProgramToken|
-|[Действие revokeLicenses](../api/intune-onboarding-vpptoken-revokelicenses.md)|Нет|Отзыв лицензий, связанных с определенным appleVolumePurchaseProgramToken|
-|[Функция Жетлиценсесфорапп](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|Коллекция [впптокенлиценсесуммари](../resources/intune-onboarding-vpptokenlicensesummary.md)|Пока не задокументировано.|
-|[действие Синклиценсекаунтс](../api/intune-onboarding-vpptoken-synclicensecounts.md)|Нет|Н/Д|
+|[Действие revokeLicenses](../api/intune-onboarding-vpptoken-revokelicenses.md)|Нет|Отзыва лицензий, связанных с определенным appleVolumePurchaseProgramToken|
+|[функция getLicensesForApp](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|[коллекция vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md)|Пока не задокументировано.|
+|[действие syncLicenseCounts](../api/intune-onboarding-vpptoken-synclicensecounts.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -46,16 +46,16 @@ ms.locfileid: "49266419"
 |lastSyncDateTime|DateTimeOffset|Последнее выполнение синхронизации приложения при помощи службы Apple Volume Purchase Program с использованием токена Apple Volume Purchase Program.|
 |токен|Строка|Строка токена Apple Volume Purchase Program; загрузка выполнена из Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения, связанного с токеном Apple Volume Purchase Program.|
-|состояние|[впптокенстате](../resources/intune-onboarding-vpptokenstate.md)|Текущее состояние токена Apple Volume Purchase Program. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`, `duplicateLocationId`.|
-|токенактионресултс|Коллекция [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|Коллекция состояний действий, выполняемых с помощью маркера Apple Volume Purchase Program.|
-|lastSyncStatus|[впптокенсинкстатус](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
+|состояние|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Текущее состояние токена Apple Volume Purchase Program. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`, `duplicateLocationId`.|
+|tokenActionResults|[коллекция vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|Коллекция статусов действий, выполняемых в маркере программы покупки тома Apple.|
+|lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
-|displayName|String|Понятное имя маркера, указанного администратором.|
-|локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
-|клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
-|roleScopeTagIds|Коллекция строк|Идентификаторы тегов области ролей, назначенных этой сущности.|
+|dataSharingConsentGranted|Логический|Согласие на обмен данными с программой покупки тома Apple.|
+|displayName|String|Администратор указал имя, удобное для маркеров.|
+|locationName|String|Расположение маркера, возвращенного из VPP Apple.|
+|claimTokenManagementFromExternalMdm|Логический|Согласие администратора на разрешение требовать управления маркерами из внешнего MDM.|
+|roleScopeTagIds|Коллекция String|ID-теги области ролей, присвоенные этому объекту.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Виндовсаутопилотпрофилеассигнментдетаиледстатус
+title: тип enum windowsAutopilotProfileAssignmentDetailedStatus
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7902904e20dd16f6c6b8adebe633934814ca8ca1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d671239505b431123da2b67f01b06f244f81866d4594a0bbaedde34391554109
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54139399"
 ---
-# <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>тип перечисления Виндовсаутопилотпрофилеассигнментдетаиледстатус
+# <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>тип enum windowsAutopilotProfileAssignmentDetailedStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49256129"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет подробного отчета о состоянии назначения|
-|хардваререкуирементснотмет|1,1|Требования к оборудованию не выполнены. Это может произойти, если устройство с автоматическим развертыванием автоматически пилотного профиля назначено устройству без доверенного платформенного модуля 2,0.|
-|сурфацехубпрофиленотсуппортед|2|Это может произойти, если для устройства, не Сурфацехуб, назначен профиль автопилота Сурфацехуб.|
-|хололенспрофиленотсуппортед|4|Это может произойти, если для устройства, которое не является HoloLens, назначен профиль автопилота HoloLens.|
-|виндовспкпрофиленотсуппортед|4 |Это может произойти, если для устройства, не Виндовспк, назначен профиль автопилота Виндовспк.|
+|Нет|0|Подробный статус назначения не|
+|hardwareRequirementsNotMet|1 |Требования к оборудованию не выполнены. Это может произойти, если на устройстве без TPM 2.0 будет назначен саморазверяющийся профиль АвтоПилота.|
+|surfaceHubProfileNotSupported|2|Это может произойти, если профиль автопилота SurfaceHub назначен устройству, которое не SurfaceHub.|
+|holoLensProfileNotSupported|3 |Это может произойти, HoloLens профиль автопилота назначен устройству, которое не HoloLens.|
+|windowsPcProfileNotSupported|4 |Это может произойти, если профиль автопилота WindowsPc назначен устройству, которое не является WindowsPc.|
 
 
 

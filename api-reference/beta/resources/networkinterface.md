@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Нетворкинтерфаце
-description: Представляет сетевую карту (NIC), связанную с этим узлом.
+title: тип ресурса networkInterface
+description: Представляет карточку сетевого интерфейса (NIC), связанную с этим хостом.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: d7b712c50d8cc19951f583cb8c9af7e185dba7ad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ba1efe14cfd4bce099960406ae31392c10529ba862c388e379ef234c786d6be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224259"
 ---
-# <a name="networkinterface-resource-type"></a>Тип ресурса Нетворкинтерфаце
+# <a name="networkinterface-resource-type"></a>тип ресурса networkInterface
 
 Пространство имен: microsoft.graph
 
-Представляет сетевую карту (NIC), связанную с этим узлом.
+Представляет карточку сетевого интерфейса (NIC), связанную с этим хостом.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|String|Описание сетевого адаптера (например, Ethernet-адаптера, подключения по локальной сети для адаптера беспроводной сети * < # > и т. д.).|
-|ipV4Address|String|Последний IPv4-адрес, связанный с этим сетевым адаптером.|
-|ipV6Address|String|Последний открытый (с нестандартным) IPv6-адрес, связанный с этим сетевым адаптером.|
-|localIpV6Address|String|IPv6-адрес последней локальной локальной связи или локального сайта, связанный с этим сетевым адаптером.|
-|macAddress|String|MAC-адрес сетевого адаптера на этом узле.|
+|description|Строка|Описание NIC (например, адаптер Ethernet, беспроводный адаптер локального подключения локальной сети *<#> и т.д.).|
+|ipV4Address|Строка|Последний адрес IPv4, связанный с этим NIC.|
+|ipV6Address|Строка|Последний общедоступный (глобальный) адрес IPv6, связанный с этим NIC.|
+|localIpV6Address|Строка|Последний локальный (локализованный или локальный сайт) адрес IPv6, связанный с этим NIC.|
+|macAddress|String|MAC-адрес NIC на этом хосте.|
 
 ## <a name="json-representation"></a>Представление JSON
 

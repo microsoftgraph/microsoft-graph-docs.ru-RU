@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: b6f717951dcc972542d75b4319d1a6a8e2c5fb99
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 764b659d16c197fca4d4398ca7b73ad4fad4e59f
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547038"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384494"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -68,23 +68,12 @@ Microsoft Teams — это рабочее пространство с чатам
 
 ## <a name="membership-changes-in-microsoft-teams"></a>Изменение состава участников в Microsoft Teams
 
-Чтобы добавить участников и владельцев в команду, измените состав участников [группы](../resources/group.md) с таким же идентификатором.
-
 | Вариант использования      | Глагол      | URL-адрес |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Добавление участника](../api/group-post-members.md)    | POST      | /groups/{id}/members/$ref  |
-| [Удаление участника](../api/group-delete-members.md)   | DELETE    | /groups/{id}/members/{userId}/$ref |
-| [Добавление владельца](../api/group-post-owners.md)     | POST       | /groups/{id}/owners/$ref |
-| [Удаление владельца](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{userId}/$ref |
+| [Добавление участника](../api/team-post-members.md) | POST      | /teams/{id}/members  |
+| [Удаление участника](../api/team-delete-members.md)    | DELETE    | /teams/{id}/members/{userId} |
+| [Обновление роли участника](../api/team-update-members.md) | PATCH | /teams/{id}/members/{userId} |
 | [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{id} |
-
-При добавлении владельца также рекомендуется добавить этого пользователя в качестве участника.
-Если владелец группы не является ее участником, изменения состава владельцев и участников могут сразу не отображаться в Microsoft Teams.
-Кроме того, разные приложения и API обрабатывают их по-разному.
-Например, Microsoft Teams отображает команды, в которых пользователь является участником или владельцем, а командлеты PowerShell Microsoft Teams и API /me/joinedTeams отображают только команды, в которых пользователь является участником.
-Чтобы избежать путаницы, добавьте всех владельцев в список участников.
-
-Известная проблема: если вызвать запрос DELETE /groups/{id}/owners, пользователь также удаляется из списка /groups/{id}/members. Чтобы устранить эту проблему, рекомендуется удалить пользователя из владельцев и участников, подождать 10 секунд и снова добавить его к участникам.
 
 При добавлении и удалении участников и владельцев, не применяйте фигурные скобки {} вокруг идентификатора.
 

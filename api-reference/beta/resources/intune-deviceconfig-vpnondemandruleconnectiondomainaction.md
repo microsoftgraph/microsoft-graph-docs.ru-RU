@@ -1,32 +1,32 @@
 ---
-title: тип перечисления Впнондемандрулеконнектиондомаинактион
-description: Действие домена подключения к VPN-запросу с правилом.
+title: тип enum vpnOnDemandRuleConnectionDomainAction
+description: Действие домена подключения к правилу VPN по требованию.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6059cbebb2421368ac4d1c7f42c7e4935ffe05b5
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0faf90bc29c0e1f673e950549d58e4faef204af2e27ef96e9aca72efb711c2e8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248503"
 ---
-# <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>тип перечисления Впнондемандрулеконнектиондомаинактион
+# <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>тип enum vpnOnDemandRuleConnectionDomainAction
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Действие домена подключения к VPN-запросу с правилом.
+Действие домена подключения к правилу VPN по требованию.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|коннектифнидед|нуль|При необходимости подключаться.|
-|неверконнект|1,1|Никогда не подключаться.|
+|connectIfNeeded|0|Подключение при необходимости.|
+|neverConnect|1 |Никогда не подключайтесь.|
 
 
 

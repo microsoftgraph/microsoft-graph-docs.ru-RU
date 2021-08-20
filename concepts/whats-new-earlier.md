@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 4240678b35a4a309c5d3d53bed7b2955c16cb84e
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 1a4f37f025beb5f84bb822940d8bbbb8c870caeb
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336865"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384445"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -1060,7 +1060,7 @@ GA функции, которая позволяет организаторам 
 Обновления Intune за [март](changelog.md#march-2020).
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Используйте разрешение `Auditlogs.Read.All` для списка [действий входа](/graph/api/resources/signinactivity?view=graph-rest-beta&preserve-view=true) [пользователя](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true).
+- Используйте разрешение `AuditLog.Read.All` для списка [действий входа](/graph/api/resources/signinactivity?view=graph-rest-beta&preserve-view=true) [пользователя](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true).
 - Используйте разрешение на уровне приложения `PrivilegedAccess.Read.AzureResources` для [управления привилегированными удостоверениями (PIM) ресурсов Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta&preserve-view=true), чтобы настроить рабочий процесс доступа «точно в срок» для ролей инфраструктуры Azure на уровне группы управления, подписки, группы ресурсов или ресурса.
 - Используйте объект [identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta&preserve-view=true), чтобы [получить](/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-beta&preserve-view=true) или [обновить](/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-beta&preserve-view=true) предварительно настроенные параметры безопасности по умолчанию, которые защищают организации от распространенных атак.
 - Используйте сегмент `identity` при вызове API условного доступа. Например, чтобы [получить](/graph/api/conditionalaccesspolicy-get?view=graph-rest-beta&preserve-view=true) [политику условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true): `GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}`.
