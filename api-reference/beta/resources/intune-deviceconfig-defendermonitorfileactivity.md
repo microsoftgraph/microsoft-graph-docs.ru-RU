@@ -1,35 +1,35 @@
 ---
-title: тип перечисления Дефендермониторфилеактивити
-description: Возможные значения для отслеживания действий с файлами.
+title: тип enum defenderMonitorFileActivity
+description: Возможные значения для мониторинга активности файлов.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 61a8c80f0e3c01c213e1dacb625b58f854756673
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 41f3bd868a5bbd814a23dd89149eb7300c41c3cce31c362c1f360a7eca1de7fa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49256521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54190621"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>тип перечисления Дефендермониторфилеактивити
+# <a name="defendermonitorfileactivity-enum-type"></a>тип enum defenderMonitorFileActivity
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для отслеживания действий с файлами.
+Возможные значения для мониторинга активности файлов.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|отключение|1,1|Отключите мониторинг действий с файлами.|
-|монитораллфилес|2|Отслеживайте все файлы.|
-|мониторинкомингфилесонли|4| Отслеживайте только входящие файлы.|
-|монитораутгоингфилесонли|4 |Отслеживайте только исходящие файлы.|
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|отключение|1 |Отключение активности файлов мониторинга.|
+|monitorAllFiles|2|Отслеживайте все файлы.|
+|monitorIncomingFilesOnly|3 | Отслеживайте только входящие файлы.|
+|monitorOutgoingFilesOnly|4 |Отслеживайте только исходяющие файлы.|
 
 
 

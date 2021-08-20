@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Конфигуратионманажерклиентинформатион
-description: Данные клиента Configuration Manager, синхронизированные из SCCM
+title: тип ресурса configurationManagerClientInformation
+description: Сведения о клиентах Configuration Manager, синхронизированные из SCCM
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 769f6a5172b7a84e9e75a2d7a8f701e195135823
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 59c76431ab5812bce62a417297339ee46c59691e80d2f84035cc801ed70f8af6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54145378"
 ---
-# <a name="configurationmanagerclientinformation-resource-type"></a>Тип ресурса Конфигуратионманажерклиентинформатион
+# <a name="configurationmanagerclientinformation-resource-type"></a>тип ресурса configurationManagerClientInformation
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Данные клиента Configuration Manager, синхронизированные из SCCM
+Сведения о клиентах Configuration Manager, синхронизированные из SCCM
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|клиентидентифиер|String|Идентификатор клиента Configuration Manager из SCCM|
-|Блокировка|Boolean|Состояние блокировки клиента Configuration Manager из SCCM|
+|clientIdentifier|Строка|Id клиента диспетчера конфигурации из SCCM|
+|isBlocked|Логический|Клиент диспетчера конфигурации, заблокированный в SCCM|
 
 ## <a name="relationships"></a>Связи
 Нет

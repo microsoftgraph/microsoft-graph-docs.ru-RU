@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 480be2d3dfa7287b4da5c707536a95e8d8ffb316
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ddf34ecfdae50a9c5c9740ef130294af9ce224b9ad8a54a9af4a9b3a98762e9f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206314"
 ---
 # <a name="userexperienceanalyticsmetrichistory-resource-type"></a>тип ресурса userExperienceAnalyticsMetricHistory
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -34,10 +34,10 @@ ms.locfileid: "50444478"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор метрики аналитики пользовательского опыта.|
+|id|Строка|Уникальный идентификатор метрики аналитики пользовательского опыта.|
 |deviceId|String|ID устройства аналитики пользовательского интерфейса.|
 |metricDateTime|DateTimeOffset|Время даты даты аналитики пользовательского интерфейса.|
-|metricType|String|Тип метрики аналитики пользовательского опыта.|
+|metricType|Строка|Тип метрики аналитики пользовательского опыта.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

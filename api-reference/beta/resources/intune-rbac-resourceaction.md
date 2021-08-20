@@ -1,32 +1,32 @@
 ---
 title: Тип ресурса resourceAction
-description: Набор разрешенных и запрещенных действий для ресурса.
+description: Набор разрешенных и не разрешенных действий для ресурса.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb74a1117fcb21666d004fbd4340cd645326e154
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 843d2b3ecdc79706c9ecfabf04da9ee5bce50e7e5791025b823f015b4cf8f3d9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49271984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54161033"
 ---
 # <a name="resourceaction-resource-type"></a>Тип ресурса resourceAction
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Набор разрешенных и запрещенных действий для ресурса.
+Набор разрешенных и не разрешенных действий для ресурса.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |allowedResourceActions|Коллекция строк|Разрешенные действия|
-|notAllowedResourceActions|Коллекция строк|Действия не разрешены.|
+|notAllowedResourceActions|Коллекция строк|Не разрешенные действия.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса win32LobAppRestartSettings
-description: Содержит свойства, описывающие повторную координацию после установки приложения.
+title: тип ресурса win32LobAppRestartSettings
+description: Содержит свойства, описывающие координацию перезапуска после установки приложения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31f9fefd725f59c9884e3fe4442a7154aaed4529
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 83347e7f483999e38084c2f831d00f6936e048b78db831d6339edf0a6488803a
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49255639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54160971"
 ---
-# <a name="win32lobapprestartsettings-resource-type"></a>Тип ресурса win32LobAppRestartSettings
+# <a name="win32lobapprestartsettings-resource-type"></a>тип ресурса win32LobAppRestartSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства, описывающие повторную координацию после установки приложения.
+Содержит свойства, описывающие координацию перезапуска после установки приложения.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|грацепериодинминутес|Int32|Время ожидания перед перезапуском устройства после установки приложения (в минутах).|
-|каунтдовндисплайбефоререстартинминутес|Int32|Время (в минутах) до того, как время перезапуска отображает диалоговое окно обратного отсчета для ожидающих перезапусков.|
-|рестартнотификатионснузедуратионинминутес|Int32|Количество минут, в течение которых будет отложиться диалоговое окно уведомления о перезапуске при нажатии кнопки "проложить".|
+|gracePeriodInMinutes|Int32|Количество минут, которые необходимо подождать перед перезапуском устройства после установки приложения.|
+|countdownDisplayBeforeRestartInMinutes|Int32|Количество минут до начала перезагрузки, чтобы отобразить диалоговое окно обратного отсчета для ожидающих перезапусков.|
+|restartNotificationSnoozeDurationInMinutes|Int32|Количество минут, за которые нужно отсмеять диалоговое окно уведомления о перезапуске при выборе кнопки snooze.|
 
 ## <a name="relationships"></a>Связи
 Нет

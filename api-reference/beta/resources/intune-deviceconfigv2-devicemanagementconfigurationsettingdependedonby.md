@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионсеттингдепендедонби
+title: тип ресурса deviceManagementConfigurationSettingDependedOnBy
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3d9b6bde7217460867ab7e9b77853fcb366e38c
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8a82dc6f1c690ba745d29c042b7eb428adaf1c8dfd3339dfbadff45fd66588e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49242184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227395"
 ---
-# <a name="devicemanagementconfigurationsettingdependedonby-resource-type"></a>Тип ресурса Девицеманажементконфигуратионсеттингдепендедонби
+# <a name="devicemanagementconfigurationsettingdependedonby-resource-type"></a>тип ресурса deviceManagementConfigurationSettingDependedOnBy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49242184"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|депендедонби|String|Идентификатор параметра дочернего объекта, зависящий от текущего параметра|
-|Обязательный|Boolean|Значение, определяющее, является ли параметр дочернего элемента обязательным в зависимости от выбора родительского параметра|
+|dependedOnBy|Строка|Идентификатор параметра ребенка, который зависит от текущего параметра|
+|Обязательный|Логический|Значение, определяее, требуется ли параметр ребенка на основе выбора родительского параметра|
 
 ## <a name="relationships"></a>Связи
 Нет

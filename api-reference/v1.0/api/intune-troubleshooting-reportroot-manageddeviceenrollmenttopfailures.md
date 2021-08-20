@@ -1,35 +1,33 @@
 ---
-title: Удаление iosVpnConfiguration
-description: Удаляет iosVpnConfiguration.
+title: функция managedDeviceEnrollmentTopFailures
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3783845fa4c0547e3d4bb13987f8837cadd7680827f6f126c16d2a89b3ca5ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ead67d56dec66afc5e3afed5e7039012d5cb019d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125545"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263167"
 ---
-# <a name="delete-iosvpnconfiguration"></a>Удаление iosVpnConfiguration
+# <a name="manageddeviceenrollmenttopfailures-function"></a>функция managedDeviceEnrollmentTopFailures
 
 Пространство имен: microsoft.graph
 
-> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
-
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md).
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,9 +35,7 @@ ms.locfileid: "54125545"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /reports/managedDeviceEnrollmentTopFailures
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -49,23 +45,39 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|period|String|Пока не задокументировано.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-troubleshooting-report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentTopFailures(period='parameterValue')
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 136
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.report",
+    "content": "Y29udGVudCBJbnR1bmUgRG9jIFNhbXBsZSAxNTYxOTcwNjY1"
+  }
+}
 ```
 
 

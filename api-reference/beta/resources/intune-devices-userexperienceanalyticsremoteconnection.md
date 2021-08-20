@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 119ccfa1e59f48d8ecfdf9fc0f1e8df95c7e1db0
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4cd3bdad6f80a72dadd1cb89a3ec9462a6c0f696
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447615"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58253448"
 ---
 # <a name="userexperienceanalyticsremoteconnection-resource-type"></a>тип ресурса userExperienceAnalyticsRemoteConnection
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -39,14 +39,16 @@ ms.locfileid: "50447615"
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
-|virtualNetwork|String|Виртуальная сеть аналитики пользовательских интерфейсов.|
+|virtualNetwork|Строка|Виртуальная сеть аналитики пользовательских интерфейсов.|
+|manufacturer|String|Производитель аналитики пользовательских интерфейсов.|
 |deviceCount|Int32|Количество удаленных подключений. Допустимые значения от 0 до 2147483647|
 |cloudPcRoundTripTime|Двойное с плавающей точкой|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
 |cloudPcSignInTime|Двойное с плавающей точкой|Вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
 |remoteSignInTime|Двойное с плавающей точкой|Удаленный вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
 |coreBootTime|Двойное с плавающей точкой|Основное время загрузки устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
 |coreSignInTime|Двойное с плавающей точкой|Основной знак во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|cloudPcFailurePercentage|Двойное с плавающей точкой|Вход в процент отказа облачного устройства PC. Допустимые значения: от 0 до 100.|
+|cloudPcFailurePercentage|Двойное с плавающей точкой|Вход в процент отказа облачного устройства PC. Допустимые значения: от 0 до 100|
+|userPrincipalName|String|Пользователь с опытом аналитики userPrincipalName.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -67,13 +69,15 @@ ms.locfileid: "50447615"
   "deviceName": "String",
   "model": "String",
   "virtualNetwork": "String",
+  "manufacturer": "String",
   "deviceCount": 1024,
   "cloudPcRoundTripTime": "4.2",
   "cloudPcSignInTime": "4.2",
   "remoteSignInTime": "4.2",
   "coreBootTime": "4.2",
   "coreSignInTime": "4.2",
-  "cloudPcFailurePercentage": "4.2"
+  "cloudPcFailurePercentage": "4.2",
+  "userPrincipalName": "String"
 }
 ```
 

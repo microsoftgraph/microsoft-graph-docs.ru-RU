@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Хаспайлоадлинкресултитем
-description: Класс, содержащий результат действия Хаспайлоадлинкс.
+title: hasPayloadLinkResultItem type
+description: Класс, содержащий результат действия HasPayloadLinks.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c6cc5e2f51265f062b6556438a177e4842e04e1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f96999c5a144a736a0ac8070d725245b59e8ed1c9c67e2c1301fded9cc7742a2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49222480"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54235963"
 ---
-# <a name="haspayloadlinkresultitem-resource-type"></a>Тип ресурса Хаспайлоадлинкресултитем
+# <a name="haspayloadlinkresultitem-resource-type"></a>hasPayloadLinkResultItem type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, содержащий результат действия Хаспайлоадлинкс.
+Класс, содержащий результат действия HasPayloadLinks.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|пайлоадид|String|Ключ полезных данных в формате GUID.|
-|хаслинк|Boolean|Указывает, содержит ли полезная нагрузка какую бы то ни было ссылку.|
-|error|String|Сведения об исключении указывают на успешность проверки этого элемента. Пустая строка без ошибки.|
-|sources|Коллекция [девицеандаппманажементассигнментсаурце](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Причина, по которой получена ссылка.|
+|payloadId|Строка|Ключ полезной нагрузки в формате Guid.|
+|hasLink|Логический|Указать, есть ли у полезной нагрузки ссылки или нет.|
+|error|Строка|Сведения об исключении указывают, была ли проверка этого элемента успешной или нет. Пустая строка без ошибок.|
+|sources|[коллекция deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Причина, по которой происходит ссылка.|
 
 ## <a name="relationships"></a>Связи
 Нет
