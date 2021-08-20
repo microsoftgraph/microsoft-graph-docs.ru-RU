@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса yammerActivityUserDetail
+title: тип ресурса yammerActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 749076f407b49ff4fd408a095312ac49ea008bc1
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 5f257632052959b189fb216419ac83211190f2e19c536a924f2d03a318589ab0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249694"
 ---
-# <a name="yammeractivityuserdetail-resource-type"></a>Тип ресурса yammerActivityUserDetail
+# <a name="yammeractivityuserdetail-resource-type"></a>тип ресурса yammerActivityUserDetail
 
 Пространство имен: microsoft.graph
 
@@ -22,8 +22,8 @@ ms.locfileid: "49982399"
 | :---------------- | :---------------- |
 | reportRefreshDate | Дата              |
 | userPrincipalName | String            |
-| displayName       | String            |
-| userState         | String            |
+| displayName       | Строка            |
+| userState         | Строка            |
 | stateChangeDate   | Дата              |
 | lastActivityDate  | Дата              |
 | postedCount       | Int64             |

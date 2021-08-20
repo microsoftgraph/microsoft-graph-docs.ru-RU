@@ -1,36 +1,36 @@
 ---
-title: тип перечисления Androidforworkvpnconnectiontype.
-description: Тип VPN-подключения Android для работы.
+title: тип enum androidForWorkVpnConnectionType
+description: Тип vpn-подключения Android for Work.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e72cfdba354d0ecfbda9f01ee56801c3809dc8ac
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0dc2fda5bcdfbd512b6d493dae1ccdd441004f8a07bef4b976c29b3049ea7dfe
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236425"
 ---
-# <a name="androidforworkvpnconnectiontype-enum-type"></a>тип перечисления Androidforworkvpnconnectiontype.
+# <a name="androidforworkvpnconnectiontype-enum-type"></a>тип enum androidForWorkVpnConnectionType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип VPN-подключения Android для работы.
+Тип vpn-подключения Android for Work.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Цискоаниконнект|нуль|Cisco Аниконнект.|
-|пулсесекуре|1,1|Безопасный импульс.|
-|f5EdgeClient|2|Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
-|чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
-|клиентов|5 |Клиентов|
+|ciscoAnyConnect|0|Cisco AnyConnect.|
+|pulseSecure|1 |Pulse Secure.|
+|f5EdgeClient|2|Клиент F5 Edge.|
+|dellSonicWallMobileConnect|3 |Мобильное подключение Dell SonicWALL.|
+|checkPointCapsuleVpn|4 |Check Point Capsule VPN.|
+|citrix|5 |Citrix|
 
 
 

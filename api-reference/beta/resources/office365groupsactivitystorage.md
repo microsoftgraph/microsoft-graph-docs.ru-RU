@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365GroupsActivityStorage
+title: тип ресурса office365GroupsActivityStorage
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac9ca260e4723f7c4aeca8e15f837d4cd57b7c4
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 1c0f62b2f8551e0e1931bf65d8ee592a3dc72373e1a6f41d37b167a3bdcef38b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176332"
 ---
-# <a name="office365groupsactivitystorage-resource-type"></a>Тип ресурса office365GroupsActivityStorage
+# <a name="office365groupsactivitystorage-resource-type"></a>тип ресурса office365GroupsActivityStorage
 
 Пространство имен: microsoft.graph
 
@@ -20,11 +20,11 @@ ms.locfileid: "49982182"
 
 | Свойство                  | Тип   | Описание                              |
 | :------------------------ | :----- | ---------------------------------------- |
-| reportRefreshDate         | Дата   | Последняя дата содержимого.          |
-| mailboxStorageUsedInBytes | Int64  | Хранилище, используемого в почтовом ящике группы.       |
-| siteStorageUsedInBytes    | Int64  | Хранилище, используемого в библиотеке документов SharePoint. |
-| reportDate                | Дата   | Моментальный снимок используемого хранилища Exchange и SharePoint. |
-| reportPeriod              | String | Количество дней в отчете.    |
+| reportRefreshDate         | Дата   | Последняя дата контента.          |
+| mailboxStorageUsedInBytes | Int64  | Хранилище, используемого в групповом почтовом ящике.       |
+| siteStorageUsedInBytes    | Int64  | Хранилище, используемого в SharePoint библиотеке документов. |
+| reportDate                | Дата   | Дата снимка для Exchange и SharePoint используемого хранилища. |
+| reportPeriod              | String | Количество дней, которые охватывает отчет.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

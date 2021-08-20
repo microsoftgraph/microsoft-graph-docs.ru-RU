@@ -1,22 +1,22 @@
 ---
-title: Тип enum userExperienceAnalyticsOperatingSystemRestartCategory
+title: тип enum userExperienceAnalyticsOperatingSystemRestartCategory
 description: Категория перезапуска операционной системы
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d298545fae20b123440b86a475b713686ae65ea4
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 964eef47e0c2287063ea1c2d0619a39998beea595c58c871abc2c31fd689473b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50156814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197963"
 ---
-# <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>Тип enum userExperienceAnalyticsOperatingSystemRestartCategory
+# <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>тип enum userExperienceAnalyticsOperatingSystemRestartCategory
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,13 +27,13 @@ ms.locfileid: "50156814"
 |:---|:---|:---|
 |unknown|0|Неизвестно|
 |restartWithUpdate|1 |Перезапуск с обновлением|
-|restartWithoutUpdate|2 |Перезапуск без обновления|
+|restartWithoutUpdate|2|Перезапуск без обновления|
 |blueScreen|3 |Перезапуск синего экрана|
 |shutdownWithUpdate|4 |Завершение работы с обновлением|
-|shutdownWithoutUpdate|5 |Завершение работы без обновления|
-|longPowerButtonPress|6 |Длинное нажатие кнопки питания|
+|shutdownWithoutUpdate|5 |Отключение без обновления|
+|longPowerButtonPress|6 |Длительное нажатие кнопки питания|
 |bootError|7 |Ошибка загрузки|
-|update|8 |Update|
+|обновление|8 |Update|
 
 
 

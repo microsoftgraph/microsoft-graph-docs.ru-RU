@@ -3,53 +3,74 @@ title: Выберите поставщика проверки подлиннос
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 13775e15660f6a3d355553514325c268d3f7f89af404918968d63c9b9b858a15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff898f69c2d23575e3b7c64ced22899839c11504
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236880"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264047"
 ---
+<!-- markdownlint-disable MD001 MD024 MD025 -->
+
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выбор поставщика проверки подлинности Microsoft Graph на основе сценария
 
 Поставщики проверки подлинности реализуют код, необходимый для приобретения маркера с помощью Библиотеки проверки подлинности Майкрософт (MSAL); обработка ряда потенциальных ошибок для таких случаев, как постепенное согласие, просроченные пароли и условный доступ; а затем установите заглавную головку авторизации http-запроса. В следующей таблице перечислены поставщики, которые соответствуют сценариям для различных [типов приложений.](/azure/active-directory/develop/v2-app-types)
 
-|Сценарий | Flow/Grant | Аудитория | Поставщик|
-|--|--|--|--|
-| [Приложение для одной страницы](/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
-| | Неявный поток | Делегированная потребительская/org |[Неявный поставщик](#ImplicitProvider) |
-| [Веб-приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | | | |
-| | Authorization Code | Делегированная потребительская/org | [Поставщик кода авторизации](#AuthCodeProvider) |
-| | Учетные данные клиента  | Только приложение | [Поставщик учетных данных клиента](#ClientCredentialsProvider) |
-| [Веб-API, который вызывает веб-API](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | | | |
-| | От имени | Делегированная потребительская/org | [От имени поставщика](#OnBehalfOfProvider) |
-| | Учетные данные клиента  | Только приложение | [Поставщик учетных данных клиента](#ClientCredentialsProvider) |
-| [Настольное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
-| | Интерактивны | Делегированная потребительская/org | [Интерактивный поставщик](#InteractiveProvider) |
-| | Интегрированные Windows | Делегированная org | [Интегрированный Windows поставщик](#IntegratedWindowsProvider) |
-| | Владелец ресурса  | Делегированная org | [Имя пользователя / Поставщик паролей](#UsernamePasswordProvider) |
-| | Код устройства  | Делегированная org | [Поставщик кода устройства](#DeviceCodeProvider) |
-| [Приложение Daemon](/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
-| | Учетные данные клиента  | Только приложение | [Поставщик учетных данных клиента](#ClientCredentialsProvider) |
-| [Мобильное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
-| | Интерактивны | Делегированная потребительская/org | [Интерактивный поставщик](#InteractiveProvider) |
+| Сценарий                                                                                               | Flow/Grant         | Аудитория               | Поставщик |
+|--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
+| [Приложение для одной страницы](/azure/active-directory/develop/scenario-spa-acquire-token)                          |                    |                        |     |
+|                                                                                                        | Неявный поток           | Делегированная потребительская/org | [Неявный поставщик](#implicit-provider) |
+| [Веб-приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
+|                                                                                                        | Authorization Code | Делегированная потребительская/org | [Поставщик кода авторизации](#authorization-code-provider) |
+|                                                                                                        | Учетные данные клиента | Только приложение               | [Поставщик учетных данных клиента](#client-credentials-provider) |
+| [Веб-API, который вызывает веб-API](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) |                    |                        |     |
+|                                                                                                        | От имени       | Делегированная потребительская/org | [От имени поставщика](#on-behalf-of-provider) |
+|                                                                                                        | Учетные данные клиента | Только приложение               | [Поставщик учетных данных клиента](#client-credentials-provider) |
+| [Настольное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
+|                                                                                                        | Интерактивны        | Делегированная потребительская/org | [Интерактивный поставщик](#interactive-provider) |
+|                                                                                                        | Интегрированные Windows | Делегированная org          | [Интегрированный Windows поставщик](#integrated-windows-provider) |
+|                                                                                                        | Владелец ресурса     | Делегированная org          | [Поставщик имен пользователей и паролей](#usernamepassword-provider) |
+|                                                                                                        | Код устройства        | Делегированная org          | [Поставщик кода устройств](#device-code-provider) |
+| [Приложение Daemon](/azure/active-directory/develop/scenario-daemon-acquire-token)                            |                    |                        |     |
+|                                                                                                        | Учетные данные клиента | Только приложение               | [Поставщик учетных данных клиента](#client-credentials-provider) |
+| [Мобильное приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-mobile-acquire-token)        |                    |                        |     |
+|                                                                                                        | Интерактивны        | Делегированная потребительская/org | [Интерактивный поставщик](#interactive-provider) |
 
-> Примечание. Разработчикам Java и Android необходимо добавить библиотеку [azure-identity,](/java/api/overview/azure/identity-readme?view=azure-java-stable) чтобы получить доступ к различным типам учетных данных.
+> [!NOTE]
+> Разработчикам Java и Android необходимо добавить библиотеку [azure-identity,](/java/api/overview/azure/identity-readme) чтобы получить доступ к различным типам учетных данных. Разработчикам .NET необходимо добавить пакет [Azure.Identity,](/dotnet/api/azure.identity) чтобы получить доступ к различным типам учетных данных.
 
-## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>Поставщик кода авторизации
+## <a name="authorization-code-provider"></a>Поставщик кода авторизации
 
 Поток кода авторизации позволяет родным и веб-приложениям безопасно получать маркеры от имени пользователя. Дополнительные дополнительные платформа удостоверений Майкрософт и поток кода авторизации [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
-IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
-    .Create(clientId)
-    .WithRedirectUri(redirectUri)
-    .WithClientSecret(clientSecret) // or .WithCertificate(certificate)
-    .Build();
+var scopes = new[] { "User.Read" };
 
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Values from app registration
+var clientId = "YOUR_CLIENT_ID";
+var clientSecret = "YOUR_CLIENT_SECRET";
+
+// For authorization code flow, the user signs into the Microsoft
+// identity platform, and the browser is redirected back to your app
+// with an authorization code in the query parameters
+var authorizationCode = "AUTH_CODE_FROM_REDIRECT";
+
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+// https://docs.microsoft.com/dotnet/api/azure.identity.authorizationcodecredential
+var authCodeCredential = new AuthorizationCodeCredential(
+    tenantId, clientId, clientSecret, authorizationCode, options);
+
+var graphClient = new GraphServiceClient(authCodeCredential, scopes);
 ```
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
@@ -95,20 +116,60 @@ final User me = graphClient.me().buildRequest().get();
 
 ---
 
-##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"></a>Поставщик учетных данных клиента
+## <a name="client-credentials-provider"></a>Поставщик учетных данных клиента
 
 Поток клиентских учетных данных позволяет приложениям-службам работать без взаимодействия с пользователем. Доступ основан на удостоверении приложения. Дополнительные сведения см. платформа удостоверений Майкрософт и поток учетных данных [клиентов OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
-```csharp
-IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
-    .Create(clientId)
-    .WithTenantId(tenantID)
-    .WithClientSecret(clientSecret)
-    .Build();
+### <a name="using-a-client-secret"></a>Использование секрета клиента
 
-ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
+```csharp
+var scopes = new[] { "User.Read.All" };
+
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Values from app registration
+var clientId = "YOUR_CLIENT_ID";
+var clientSecret = "YOUR_CLIENT_SECRET";
+
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+// https://docs.microsoft.com/dotnet/api/azure.identity.clientsecretcredential
+var clientSecretCredential = new ClientSecretCredential(
+    tenantId, clientId, clientSecret, options);
+
+var graphClient = new GraphServiceClient(clientSecretCredential, scopes);
+```
+
+### <a name="using-a-client-certificate"></a>С использованием сертификата клиента
+
+```csharp
+var scopes = new[] { "User.Read" };
+
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Values from app registration
+var clientId = "YOUR_CLIENT_ID";
+var clientCertificate = new X509Certificate2("MyCertificate.pfx");
+
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+// https://docs.microsoft.com/dotnet/api/azure.identity.clientcertificatecredential
+var clientCertCredential = new ClientCertificateCredential(
+    tenantId, clientId, clientCertificate, options);
+
+var graphClient = new GraphServiceClient(clientCertCredential, scopes);
 ```
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
@@ -153,20 +214,53 @@ final User me = graphClient.me().buildRequest().get();
 
 ---
 
-##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"></a>От имени поставщика
+## <a name="on-behalf-of-provider"></a>От имени поставщика
 
 Поток от имени применим, когда ваше приложение вызывает API службы и веб-службы, который по очереди вызывает API microsoft Graph. Дополнительные дополнительные [платформа удостоверений Майкрософт и поток OAuth 2.0 On-Behalf-Of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
+Пакет не поддерживает поток от имени по версии `Azure.Identity` 1.4.0. Вместо этого создайте настраиваемый поставщик проверки подлинности с помощью MSAL.
+
 ```csharp
-IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+var scopes = new[] { "User.Read" };
+
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Values from app registration
+var clientId = "YOUR_CLIENT_ID";
+var clientSecret = "YOUR_CLIENT_SECRET";
+
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+// This is the incoming token to exchange using on-behalf-of flow
+var oboToken = "JWT_TOKEN_TO_EXCHANGE";
+
+var cca = ConfidentialClientApplicationBuilder
     .Create(clientId)
-    .WithRedirectUri(redirectUri)
+    .WithTenantId(tenantId)
     .WithClientSecret(clientSecret)
     .Build();
 
-OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientApplication, scopes);
+// DelegateAuthenticationProvider is a simple auth provider implementation
+// that allows you to define an async function to retrieve a token
+// Alternatively, you can create a class that implements IAuthenticationProvider
+// for more complex scenarios
+var authProvider = new DelegateAuthenticationProvider(async (request) => {
+    // Use Microsoft.Identity.Client to retrieve token
+    var assertion = new UserAssertion(oboToken);
+    var result = await cca.AcquireTokenOnBehalfOf(scopes, assertion).ExecuteAsync();
+
+    request.Headers.Authorization =
+        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", result.AccessToken);
+});
+
+var graphClient = new GraphServiceClient(authProvider);
 ```
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
@@ -195,7 +289,7 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 ---
 
-## <a name="implicit-provider"></a><a name="ImplicitProvider"></a>Неявный поставщик
+## <a name="implicit-provider"></a>Неявный поставщик
 
 Неявный поток грантов используется в браузерных приложениях. Дополнительные сведения см. [в платформа удостоверений Майкрософт и неявном потоке грантов.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
 
@@ -210,7 +304,7 @@ const clientId = "your_client_id"; // Client Id of the registered application
 const callback = (errorDesc, token, error, tokenType) => {};
 // An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
 const options = {
-    redirectUri: "Your redirect URI",
+  redirectUri: "Your redirect URI",
 };
 const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
@@ -219,7 +313,7 @@ const userAgentApplication = new Msal.UserAgentApplication(clientId, undefined, 
 const authProvider = new MicrosoftGraph.ImplicitMSALAuthenticationProvider(userAgentApplication, graphScopes);
 
 const options = {
-    authProvider, // An instance created from previous step
+  authProvider, // An instance created from previous step
 };
 const Client = MicrosoftGraph.Client;
 const client = Client.initWithMiddleware(options);
@@ -247,20 +341,40 @@ const client = Client.initWithMiddleware(options);
 
 ---
 
-##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"></a>Поставщик кода устройств
+## <a name="device-code-provider"></a>Поставщик кода устройств
 
 Поток кода устройства позволяет войти на устройства с помощью другого устройства. Подробные сведения [см. платформа удостоверений Майкрософт и поток кода устройства OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-device-code)
 
 # <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .Build();
+var scopes = new[] { "User.Read" };
 
-Func<DeviceCodeResult, Task> deviceCodeReadyCallback = async dcr => await Console.Out.WriteLineAsync(dcr.Message);
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
 
-DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, scopes, deviceCodeReadyCallback);
+// Value from app registration
+var clientId = "YOUR_CLIENT_ID";
+
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+// Callback function that receives the user prompt
+// Prompt contains the generated device code that use must
+// enter during the auth process in the browser
+Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
+    Console.WriteLine(code.Message);
+    return Task.FromResult(0);
+};
+
+// https://docs.microsoft.com/dotnet/api/azure.identity.devicecodecredential
+var deviceCodeCredential = new DeviceCodeCredential(
+    callback, tenantId, clientId, options);
+
+var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
 ```
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
@@ -306,19 +420,42 @@ final User me = graphClient.me().buildRequest().get();
 
 ---
 
-##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>Интегрированный Windows поставщик
+## <a name="integrated-windows-provider"></a>Интегрированный Windows поставщик
 
 Интегрированный поток Windows обеспечивает возможность Windows компьютеров для бесшумного приобретения маркера доступа при присоединении к домену. Подробные сведения см. в [Windows комплексной проверки подлинности.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication)
 
 # <a name="c"></a>[C#](#tab/CS)
 
-```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .WithTenantId(tenantID)
-            .Build();
+В `Azure.Identity` данный момент пакет не поддерживает Windows проверку подлинности. Вместо этого создайте настраиваемый поставщик проверки подлинности с помощью MSAL.
 
-IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(publicClientApplication, scopes);
+```csharp
+var scopes = new[] { "User.Read" };
+
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Value from app registration
+var clientId = "YOUR_CLIENT_ID";
+
+var pca = PublicClientApplicationBuilder
+    .Create(clientId)
+    .WithTenantId(tenantId)
+    .Build();
+
+// DelegateAuthenticationProvider is a simple auth provider implementation
+// that allows you to define an async function to retrieve a token
+// Alternatively, you can create a class that implements IAuthenticationProvider
+// for more complex scenarios
+var authProvider = new DelegateAuthenticationProvider(async (request) => {
+    // Use Microsoft.Identity.Client to retrieve token
+    var result = await pca.AcquireTokenByIntegratedWindowsAuth(scopes).ExecuteAsync();
+
+    request.Headers.Authorization =
+        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", result.AccessToken);
+});
+
+var graphClient = new GraphServiceClient(authProvider);
 ```
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
@@ -347,18 +484,36 @@ IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuth
 
 ---
 
-##  <a name="interactive-provider"></a><a name="InteractiveProvider"></a>Интерактивный поставщик
+## <a name="interactive-provider"></a>Интерактивный поставщик
 
 Интерактивный поток используется мобильными приложениями (Xamarin и UWP) и настольными приложениями для вызова microsoft Graph от имени пользователя. Подробные сведения см. [в материале Эквайринг маркеров в интерактивном режиме.](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)
 
 # <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .Build();
+var scopes = new[] { "User.Read" };
 
-InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(publicClientApplication, scopes);
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
+
+// Value from app registration
+var clientId = "YOUR_CLIENT_ID";
+
+var options = new InteractiveBrowserCredentialOptions
+{
+    TenantId = tenantId,
+    ClientId = clientId,
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud,
+    // MUST be http://localhost or http://localhost:PORT
+    // See https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/System-Browser-on-.Net-Core
+    RedirectUri = new Uri("http://localhost"),
+};
+
+// https://docs.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
+var interactiveCredential = new InteractiveBrowserCredential(options);
+
+var graphClient = new GraphServiceClient(interactiveCredential, scopes);
 ```
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
@@ -424,27 +579,34 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ---
 
-##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"></a>Поставщик имен пользователей и паролей
+## <a name="usernamepassword-provider"></a>Поставщик имен пользователей и паролей
 
 Поставщик имен пользователей и паролей позволяет приложению войти в пользователя с помощью имени пользователя и пароля. Используйте этот поток только в том случае, если вы не можете использовать другие потоки OAuth. Дополнительные сведения см. в платформа удостоверений Майкрософт и учетных данных владельца пароля ресурса [OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
-
-
 
 # <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
-            .Create(clientId)
-            .WithTenantId(tenantID)
-            .Build();
+var scopes = new[] { "User.Read" };
 
-UsernamePasswordProvider authProvider = new UsernamePasswordProvider(publicClientApplication, scopes);
+// Multi-tenant apps can use "common",
+// single-tenant apps must use the tenant ID from the Azure portal
+var tenantId = "common";
 
-GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+// Value from app registration
+var clientId = "YOUR_CLIENT_ID";
 
-User me = await graphClient.Me.Request()
-                .WithUsernamePassword(email, password)
-                .GetAsync();
+var options = new TokenCredentialOptions
+{
+    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
+};
+
+var userName = "adelev@contoso.com";
+var password = "P@ssword1!";
+
+var userNamePasswordCredential = new UsernamePasswordCredential(
+    userName, password, tenantId, clientId, options);
+
+var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
 ```
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)

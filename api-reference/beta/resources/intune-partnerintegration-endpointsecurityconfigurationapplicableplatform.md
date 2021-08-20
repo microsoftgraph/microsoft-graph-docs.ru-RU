@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Ендпоинтсекуритиконфигуратионаппликаблеплатформ
-description: Необходимая платформа для настройки безопасности конечной точки.
+title: тип enum endpointSecurityConfigurationApplicablePlatform
+description: Применимая платформа конфигурации безопасности конечной точки.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57a7500cf9c597f02861040756139df4f90e28ce
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e8524127f5a1fe202781b222694b07af2c17b80dedf0e49a5b8f4c1ade92b2a2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242498"
 ---
-# <a name="endpointsecurityconfigurationapplicableplatform-enum-type"></a>тип перечисления Ендпоинтсекуритиконфигуратионаппликаблеплатформ
+# <a name="endpointsecurityconfigurationapplicableplatform-enum-type"></a>тип enum endpointSecurityConfigurationApplicablePlatform
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Необходимая платформа для настройки безопасности конечной точки.
+Применимая платформа конфигурации безопасности конечной точки.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Найден.|
-|macOS|1,1|MacOS.|
-|windows10AndLater|2|Windows 10 и более поздних версий.|
-|windows10AndWindowsServer|4|Windows 10 и Windows Server.|
+|unknown|0|Неизвестно.|
+|macOS|1 |MacOS.|
+|windows10AndLater|2|Windows 10 и более поздней.|
+|windows10AndWindowsServer|3 |Windows 10 и Windows Server.|
 
 
 

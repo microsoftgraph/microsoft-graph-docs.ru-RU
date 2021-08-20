@@ -1,18 +1,18 @@
 ---
-title: Get deviceManagementScriptGroupAssignment
-description: Чтение свойств и связей объекта deviceManagementScriptGroupAssignment.
+title: Get deviceManagementReports
+description: Чтение свойств и связей объекта deviceManagementReports.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8edc415b718c71e8ed9f82af573c2c515851fdc
+ms.openlocfilehash: a35c237bea27119c68a3d658fb8161e38c206d36
 ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256388"
+ms.locfileid: "58255315"
 ---
-# <a name="get-devicemanagementscriptgroupassignment"></a>Get deviceManagementScriptGroupAssignment
+# <a name="get-devicemanagementreports"></a>Get deviceManagementReports
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58256388"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта deviceManagementScriptGroupAssignment.](../resources/intune-devices-devicemanagementscriptgroupassignment.md)
+Чтение свойств и связей [объекта deviceManagementReports.](../resources/intune-grouppolicy-devicemanagementreports.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,9 +37,7 @@ ms.locfileid: "58256388"
 }
 -->
 ``` http
-GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
-GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
+GET /deviceManagement/reports
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -55,14 +53,14 @@ GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeSh
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/reports
 ```
 
 ### <a name="response"></a>Отклик
@@ -70,13 +68,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 198
+Content-Length: 137
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementScriptGroupAssignment",
-    "id": "ecd2357d-357d-ecd2-7d35-d2ec7d35d2ec",
-    "targetGroupId": "Target Group Id value"
+    "@odata.type": "#microsoft.graph.deviceManagementReports",
+    "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
   }
 }
 ```

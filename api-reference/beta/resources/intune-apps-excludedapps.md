@@ -1,45 +1,45 @@
 ---
-title: Тип ресурса Excludedapps к объекту
-description: Содержит свойства исключенных приложений Office365.
+title: тип ресурса excludedApps
+description: Содержит свойства для исключенных приложений Office365.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4a481d52b06c59d9d79df439b41152600af989
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 45051f7526ba6d7740144e42001db28eb0443c877c4363479dcdd1a476de8bd4
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54153337"
 ---
-# <a name="excludedapps-resource-type"></a>Тип ресурса Excludedapps к объекту
+# <a name="excludedapps-resource-type"></a>тип ресурса excludedApps
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства исключенных приложений Office365.
+Содержит свойства для исключенных приложений Office365.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|обращения|Boolean|Значение, если доступ к MS Office должен быть исключен или нет.|
-|Bing|Boolean|Значение, если Microsoft Search по умолчанию следует исключить.|
-|невозможно|Boolean|Значение, заданное в поле IF MS Office Excel, не должно быть исключено.|
-|тень|Boolean|Значение, которое должно быть исключено, если MS Office OneDrive для бизнеса — Groove.|
-|infoPath|Boolean|Значение, если MS Office InfoPath следует исключить.|
-|Lync|Boolean|Значение, если MS Office Skype для бизнеса — не следует исключать.|
-|oneDrive|Boolean|Значение, которое должно быть исключено, если MS Office OneDrive должен быть исключен.|
-|Microsoft|Boolean|Значение, если MS Office OneNote должен быть исключен или нет.|
-|outlook|Boolean|Значение, если MS Office Outlook следует исключить из проверки.|
-|powerPoint|Boolean|Значение, если MS Office PowerPoint следует исключить из проверки.|
-|publisher|Boolean|Значение, если MS Office Publisher должен быть исключен или нет.|
-|шарепоинтдесигнер|Boolean|Значение для параметра if MS Office Шарепоинтдесигнер должно быть исключено или нет.|
-|Teams|Boolean|Значение, которое должно быть исключено, если MS Office Teams должен быть исключен.|
-|Visio|Boolean|Значение, заданное для if MS Office Visio, должно быть исключено.|
-|текстовых|Boolean|Значение, заданное для if MS Office Word, должно быть исключено.|
+|доступ|Логический|Значение, если ms Office доступ должен быть исключен или нет.|
+|bing|Логический|Значение, если Поиск (Майкрософт) по умолчанию, должно быть исключено или нет.|
+|Excel|Логический|Значение, если ms Office Excel следует исключить или нет.|
+|groove|Логический|Значение, если ms Office OneDrive для бизнеса - Groove, должно быть исключено или нет.|
+|infoPath|Логический|Значение, если ms Office InfoPath, должно быть исключено или нет.|
+|lync|Логический|Значение для если ms Office Skype для бизнеса - Lync следует исключить или нет.|
+|oneDrive|Логический|Значение для того, следует Office OneDrive ms или нет.|
+|oneNote|Логический|Значение для того, следует Office OneNote ms или нет.|
+|outlook|Логический|Значение для того, следует Office Outlook ms или нет.|
+|powerPoint|Логический|Значение для того, следует Office PowerPoint ms или нет.|
+|publisher|Логический|Значение, если ms Office Publisher следует исключить или нет.|
+|sharePointDesigner|Логический|Значение, если ms Office SharePointDesigner, должно быть исключено или нет.|
+|teams|Логический|Значение, если ms Office Teams следует исключить или нет.|
+|visio|Логический|Значение, если ms Office Visio, должно быть исключено или нет.|
+|слово|Логический|Значение, если ms Office Word, должно быть исключено или нет.|
 
 ## <a name="relationships"></a>Связи
 Нет
