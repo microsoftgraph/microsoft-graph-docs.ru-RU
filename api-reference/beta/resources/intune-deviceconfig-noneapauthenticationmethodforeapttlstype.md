@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Нонеапаусентикатионмесодфореапттлстипе
-description: Методы, отличные от EAP, для проверки подлинности.
+title: nonEapAuthenticationMethodForEapTtlsType enum type
+description: Методы проверки подлинности без EAP.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5d8c4d8c5ed69315c3a4a9a05214d76fbe2b5095
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4dd67c3670bc24c3bc2df4bae4d5e0184b3c3ab69e2565e180a444394de06f35
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49273230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251451"
 ---
-# <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>тип перечисления Нонеапаусентикатионмесодфореапттлстипе
+# <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>nonEapAuthenticationMethodForEapTtlsType enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Методы, отличные от EAP, для проверки подлинности.
+Методы проверки подлинности без EAP.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|уненкриптедпассворд|нуль|Незашифрованный пароль (PAP).|
-|чалленжехандшакеаусентикатионпротокол|1,1|Протокол проверки подлинности подтверждения связи (CHAP).|
-|микрософтчап|2| Microsoft CHAP (MS-CHAP).|
-|микрософтчапверсионтво|4|Microsoft CHAP версии 2 (MS-CHAP v2).|
+|unencryptedPassword|0|Незашифрованный пароль (PAP).|
+|challengeHandshakeAuthenticationProtocol|1 |Challenge Handshake Authentication Protocol (CHAP).|
+|MicrosoftChap|2| Microsoft CHAP (MS-CHAP).|
+|microsoftChapVersionTwo|3 |Microsoft CHAP Version 2 (MS-CHAP v2).|
 
 
 

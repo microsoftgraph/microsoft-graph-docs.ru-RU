@@ -5,12 +5,12 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f0841bb6a15bcb8b03819e95540c4c40d99fa57d
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c92ec9149514ca719b5431aedccd8e30883bb4fd648c9e6a4e944ee2e6315083
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57431170"
 ---
 # <a name="list-educationclasses"></a>Перечисление educationClasses
 
@@ -18,7 +18,7 @@ ms.locfileid: "52474971"
 
 Получите список объектов [educationClass](../resources/educationclass.md) и их свойств.
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ ms.locfileid: "52474971"
 GET /education/classes
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в следующем примере:
 

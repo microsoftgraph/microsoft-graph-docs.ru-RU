@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Девицеманажементсеттингкомпарисон
-description: Объект, представляющий результат сравнения параметров
+title: тип ресурса deviceManagementSettingComparison
+description: Объект, представляющий результат сравнения параметра
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b10acc16cfb877a616dee9744daa5f0cc54b45b6
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 28ca971dbfa41c9237ed9f6ff33579d5e9f4eeb5f2b32dbf0ffd3b0eca191424
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156207"
 ---
-# <a name="devicemanagementsettingcomparison-resource-type"></a>Тип ресурса Девицеманажементсеттингкомпарисон
+# <a name="devicemanagementsettingcomparison-resource-type"></a>тип ресурса deviceManagementSettingComparison
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Объект, представляющий результат сравнения параметров
+Объект, представляющий результат сравнения параметра
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор параметра|
-|displayName|String|Отображаемое имя параметра|
-|дефинитионид|String|Идентификатор определения параметра для этого экземпляра.|
-|куррентвалуежсон|String|Значение параметра шаблона (или) в формате JSON для текущего способа (или)|
-|неввалуежсон|String|Представление нового значения параметра шаблона в формате JSON|
-|компарисонресулт|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|Результат сравнения. Возможные значения: `unknown`, `equal`, `notEqual`, `added`, `removed`.|
+|id|String|Параметр ID|
+|displayName|Строка|Имя отображения параметра|
+|definitionId|Строка|ID определения параметра для этого экземпляра|
+|currentValueJson|String|Представление JSON значения текущего параметра шаблона намерения (или)|
+|newValueJson|String|Представление JSON значения нового параметра шаблона|
+|comparisonResult|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|Настройка результата сравнения. Возможные значения: `unknown`, `equal`, `notEqual`, `added`, `removed`.|
 
 ## <a name="relationships"></a>Связи
 Нет

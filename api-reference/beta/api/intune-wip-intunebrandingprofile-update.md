@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 190a53a273c2ed919d767bd6098a03e135a4effc
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: a066bcb055101b639833f1f81ecca61d57b6acbd716631db67389c7453b5996d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51133817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54207245"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление intuneBrandingProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +27,8 @@ ms.locfileid: "51133817"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,37 +53,37 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ профиля|
+|id|String|Ключ профиля|
 |имя профиля|Строка|Имя профиля|
 |profileDescription|Строка|Описание профиля|
-|isDefaultProfile|Boolean|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
+|isDefaultProfile|Логический|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания BrandingProfile|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile|
 |displayName|Строка|Имя компании или организации, отображаемая конечным пользователям|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и веб-портале|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в Корпоративный портал приложениях и веб-портале|
 |showLogo|Boolean|Boolean, который представляет, показаны ли изображения логотипа, предоставленные администратором, или нет.|
 |showDisplayNameNextToLogo|Boolean|Boolean, который представляет, будет ли отображаться имя дисплея, предоставленное администратором, рядом с изображением логотипа или нет.|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемого в приложениях портала компании, которые имеют фон цвета темы за логотипом|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемого в приложениях портала компании, которые имеют светлый фон за логотипом|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемые изображения, отображаемые на странице посадки приложений портала компании|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемого в Корпоративный портал приложениях с фоном цвета темы за логотипом|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемого в Корпоративный портал приложениях со светлым фоном за логотипом|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемый образ, отображаемый на Корпоративный портал странице Корпоративный портал приложений|
 |contactITName|String|Имя лица или организации, ответственной за ИТ-поддержку|
-|contactITPhoneNumber|String|Номер телефона лица или организации, ответственной за ИТ-поддержку|
+|contactITPhoneNumber|String|Телефон человека или организации, ответственной за ИТ-поддержку|
 |contactITEmailAddress|String|Адрес электронной почты лица или организации, ответственной за ИТ-поддержку|
 |contactITNotes|String|Текстовые комментарии в отношении лица или организации, ответственной за ИТ-поддержку|
 |onlineSupportSiteUrl|String|URL-адрес сайта it-справки компании/организации|
 |onlineSupportSiteName|String|Отображение имени сайта it-справки компании/организации|
 |privacyUrl|String|URL-адрес политики конфиденциальности компании и организации|
 |customPrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
-|customCanSeePrivacyMessage|Строка|Текстовые комментарии относительно доступа администратора к устройству|
+|customCanSeePrivacyMessage|String|Текстовые комментарии относительно доступа администратора к устройству|
 |customCantSeePrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
-|isRemoveDeviceDisabled|Boolean|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
-|isFactoryResetDisabled|Boolean|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
+|isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
+|isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
 |companyPortalBlockedActions|[коллекция companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в зависимости от типов владения платформой и устройствами.|
-|showAzureADEnterpriseApps|Boolean|Boolean, который указывает, будут ли корпоративные приложения AzureAD показаны на портале компании|
-|showOfficeWebApps|Boolean|Boolean, который указывает, будут ли веб-приложения Office показаны на портале компании|
-|sendDeviceOwnershipChangePushNotification|Boolean|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
+|showAzureADEnterpriseApps|Логический|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
+|showOfficeWebApps|Логический|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
+|sendDeviceOwnershipChangePushNotification|Логический|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый поток регистрации устройств, отображаемый конечному пользователю. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|отключениеClientTelemetry|Boolean|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
+|отключениеClientTelemetry|Логический|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
 |roleScopeTagIds|Коллекция String|Список тегов области, присвоенных профилю брендинга|
 
 

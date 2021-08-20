@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса androidVpnConfiguration
-description: Укажет конфигурации в этом профиле, чтобы устройство Android подключилось к нужной конечной точке VPN. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, вы можете сделать VPN-подключение удобным для конечного пользователя.
+title: тип ресурса androidVpnConfiguration
+description: Предоставляя конфигурации в этом профиле, вы можете поручить устройству Android подключиться к нужной конечной точке VPN. Указав метод проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, можно сделать подключение VPN бесшовным для конечного пользователя.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e2396890f1f0a25ea59e72342b2f1f79efede62
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 16e42d4bd1dda47c2f56eec882db149e2800dcf5
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50161560"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266704"
 ---
-# <a name="androidvpnconfiguration-resource-type"></a>Тип ресурса androidVpnConfiguration
+# <a name="androidvpnconfiguration-resource-type"></a>тип ресурса androidVpnConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Предоставив конфигурации в этом профиле, вы можете предоставить устройству Android указание подключиться к нужной конечной точке VPN. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, вы можете сделать VPN-подключение удобным для конечного пользователя.
+Предоставляя конфигурации в этом профиле, вы можете поручить устройству Android подключиться к нужной конечной точке VPN. Указав метод проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, можно сделать подключение VPN бесшовным для конечного пользователя.
 
 
 Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
@@ -28,10 +28,10 @@ ms.locfileid: "50161560"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список androidVpnConfigurations](../api/intune-deviceconfig-androidvpnconfiguration-list.md)|[Коллекция androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Список свойств и связей объектов [androidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
-|[Get androidVpnConfiguration](../api/intune-deviceconfig-androidvpnconfiguration-get.md)|[androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Чтение свойств и связей объекта [androidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
-|[Создание androidVpnConfiguration](../api/intune-deviceconfig-androidvpnconfiguration-create.md)|[androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Создание объекта [androidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
-|[Удаление androidVpnConfiguration](../api/intune-deviceconfig-androidvpnconfiguration-delete.md)|Нет|Удаляет [androidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
+|[Список androidVpnConfigurations](../api/intune-deviceconfig-androidvpnconfiguration-list.md)|[коллекция androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Список свойств и связей [объектов androidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
+|[Get androidVpnConfiguration](../api/intune-deviceconfig-androidvpnconfiguration-get.md)|[androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Чтение свойств и связей [объекта AndroidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
+|[Создание androidVpnConfiguration](../api/intune-deviceconfig-androidvpnconfiguration-create.md)|[androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Создайте новый [объект androidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
+|[Удаление androidVpnConfiguration](../api/intune-deviceconfig-androidvpnconfiguration-delete.md)|Нет|Удаляет [androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md).|
 |[Обновление androidVpnConfiguration](../api/intune-deviceconfig-androidvpnconfiguration-update.md)|[androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Обновление свойств объекта [androidVpnConfiguration.](../resources/intune-deviceconfig-androidvpnconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
@@ -39,36 +39,36 @@ ms.locfileid: "50161560"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли конфигурация устройства назначение тегов области. Назначение свойству ScopeTags не допускается, если это значение имеет значение false, а сущности не будут видны пользователям с заданной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и их можно устранить путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпуска ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|connectionName|String|Имя подключения, отображаемая для пользователя.|
+|connectionName|Строка|Имя подключения, отображаемая пользователю.|
 |connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Тип подключения. Возможные значения: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`, `netMotionMobility`, `microsoftProtect`.|
-|role|String|Роль, если для типа подключения установлено значение Pulse Secure.|
-|realm|String|Область, когда для типа подключения установлено безопасное пульса.|
-|серверы|[Коллекция vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи имеют доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов.|
-|fingerprint|String|Отпечаток пальца — это строка, которая будет использоваться для проверки того, что VPN-сервер может быть доверенным, что применимо только в том случае, если типом подключения является VPN Check Point Vpn.|
-|customData|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Пользовательские данные, если для типа подключения установлено citrix. Эта коллекция может содержать не более 25 элементов.|
-|customKeyValueData|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пользовательские данные, если для типа подключения установлено citrix. Эта коллекция может содержать не более 25 элементов.|
+|role|String|Роль при наборе типа подключения к Pulse Secure.|
+|realm|Строка|Realm, когда тип подключения за установлен в Pulse Secure.|
+|серверы|[коллекция vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получить доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов.|
+|отпечаток пальца|Строка|Отпечатки пальцев — это строка, которая будет использоваться для проверки доверия к VPN-серверу, которая применяется только в том случае, если тип подключения — VPN Check Point Capsule.|
+|customData|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Настраиваемые данные при наборе типа подключения к Citrix. Эта коллекция может содержать не более 25 элементов.|
+|customKeyValueData|Коллекция [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|Настраиваемые данные при наборе типа подключения к Citrix. Эта коллекция может содержать не более 25 элементов.|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|[Коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства по пользователю. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|identityCertificate|[androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|Сертификат удостоверения для проверки подлинности клиента, если методом проверки подлинности является сертификат.|
+|identityCertificate|[AndroidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|Сертификат удостоверений для проверки подлинности клиента, когда метод проверки подлинности является сертификатом.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

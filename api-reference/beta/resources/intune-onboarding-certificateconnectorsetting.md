@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Цертификатеконнекторсеттинг
-description: Параметры соединителя сертификатов.
+title: тип ресурса certificateConnectorSetting
+description: Параметры соединитетеля сертификата.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b69643b20d02b23d70c6f3425a4b2422c69ee86
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 31b8ec7fcfe95e459e6454635b7b5e0a37c16cdec45eba5515a24165ad5ad80d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206251"
 ---
-# <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса Цертификатеконнекторсеттинг
+# <a name="certificateconnectorsetting-resource-type"></a>тип ресурса certificateConnectorSetting
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры соединителя сертификатов.
+Параметры соединитетеля сертификата.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|status|Int32|Состояние соединителя сертификатов|
-|цертекспиритиме|DateTimeOffset|Время истечения срока действия сертификата|
-|енроллментеррор|String|Ошибка регистрации соединителя сертификатов|
-|ластконнекторконнектионтиме|DateTimeOffset|Время последнего подключения к соединителю сертификата|
-|коннекторверсион|String|Версия соединителя сертификатов|
-|ластуплоадверсион|Int64|Версия последнего отправленного соединителя сертификатов|
+|status|Int32|Состояние соединиттеля сертификата|
+|certExpiryTime|DateTimeOffset|Срок действия сертификата|
+|enrollmentError|Строка|Ошибка регистрации соединители сертификата|
+|lastConnectorConnectionTime|DateTimeOffset|Последний раз подключение соединиттеля сертификата|
+|connectorVersion|Строка|Версия соединиттеля сертификата|
+|lastUploadVersion|Int64|Версия последнего загруженного соединиттеля сертификата|
 
 ## <a name="relationships"></a>Связи
 Нет

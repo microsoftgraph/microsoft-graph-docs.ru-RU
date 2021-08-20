@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицегуардвиртуализатионбаседсекуритистате
+title: тип enum deviceGuardVirtualizationBasedSecurityState
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45b063d195bd5c8fe0487521d26b38997e7c36b1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f93df3d0fea2423738a7063f79932128de0711de2b358587d0b92392c7da8a69
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54182814"
 ---
-# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритистате
+# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип enum deviceGuardVirtualizationBasedSecurityState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,13 +25,13 @@ ms.locfileid: "49293019"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|запускается|нуль|Выполняется|
-|ребутрекуиред|1,1|Обязательный корень|
-|require64BitArchitecture|2|необходима разрядная архитектура 64|
-|нотлиценсед|4|Не лицензировано|
+|запуск|0|Работает|
+|rebootRequired|1 |Root required|
+|require64BitArchitecture|2|Требуется 64-битная архитектура|
+|notLicensed|3 |Не лицензировано|
 |notConfigured|4 |Не настроено|
-|доеснотмисардваререкуирементс|5 |Система не соответствует требованиям к оборудованию|
-|остальные|42|Остальные. Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.|
+|doesNotMeetHardwareRequirements|5 |Система не соответствует требованиям к оборудованию|
+|другие|42|Другое. Журналы событий в microsoft-Windows DeviceGuard имеют дополнительные сведения.|
 
 
 

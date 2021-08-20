@@ -1,33 +1,33 @@
 ---
-title: тип перечисления keySize
-description: Параметры размера ключа.
+title: тип keySize enum
+description: Параметры размера ключей.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a3314e0c6ee3f5f7367bcea3e01637077510df05
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d6eaefd9a1481c2f44d7dd81fc9306857cbb62c5d88a1362f98ab9222032442d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239086"
 ---
-# <a name="keysize-enum-type"></a>тип перечисления keySize
+# <a name="keysize-enum-type"></a>тип keySize enum
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры размера ключа.
+Параметры размера ключей.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|size1024|нуль|1024 бит.|
-|size2048|1,1|2048 бит.|
-|size4096|2|4096 бит.|
+|size1024|0|1024 Bits.|
+|size2048|1 |2048 Bits.|
+|size4096|2|4096 битов.|
 
 
 

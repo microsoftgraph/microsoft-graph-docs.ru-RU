@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Андроиддевицеовнерглобалпроксидирект
-description: Глобальный прокси-сервер владельца устройств Android Direct.
+title: тип ресурса androidDeviceOwnerGlobalProxyDirect
+description: Глобальный прокси-сервер владельца Android Device Direct.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcbeac4a53a2cf07be562213f6202b7caa46f390
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: d918330ae428a6dace9fab31fc576cc199725369c25cd2866b3d00381b696b82
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232918"
 ---
-# <a name="androiddeviceownerglobalproxydirect-resource-type"></a>Тип ресурса Андроиддевицеовнерглобалпроксидирект
+# <a name="androiddeviceownerglobalproxydirect-resource-type"></a>тип ресурса androidDeviceOwnerGlobalProxyDirect
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Глобальный прокси-сервер владельца устройств Android Direct.
+Глобальный прокси-сервер владельца Android Device Direct.
 
 
-Наследуется от [андроиддевицеовнерглобалпрокси](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)
+Наследует [от androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|host|String|Имя узла|
-|порта|Int32|Порт|
-|ексклудедхостс|Коллекция строк|Исключенные узлы|
+|host|String|Имя хоста|
+|порт|Int32|Порт|
+|excludedHosts|Коллекция String|Исключенные хосты|
 
 ## <a name="relationships"></a>Связи
 Нет

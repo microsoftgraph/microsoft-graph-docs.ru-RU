@@ -4,12 +4,12 @@ description: 'Создание группы, включающей команду
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 454466aff5a83cd9593c2a87a0c933c8ec7b0a4650d757c6754369f03eea0f4b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e8175cf44c97609a24227881f22866c0bb1aeea2
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246376"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260788"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Создание команд и управление участниками с помощью Microsoft Graph
 
@@ -69,13 +69,13 @@ ms.locfileid: "54246376"
 
 3. Добавьте всех участников (и гостей, если это необходимо) в группу с помощью операции [добавления участника](/graph/api/group-post-members?view=graph-rest-1.0), если это не сделано на шаге 1. При добавлении нескольких участников добавьте 1-секундную задержку после каждой операции добавления. 
 
-4. После успешного создания группы, что может занять до 15 минут после выполнения шага 1, создайте команду Microsoft Teams с помощью операции [создания команды из группы](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group). Если вы столкнулись с ошибкой, процесс создания группы, возможно, не завершен. Попробуйте подождать несколько минут. 
+4. После успешного создания группы, что может занять до 15 минут после выполнения шага 1, создайте команду Microsoft Teams с помощью операции [создания команды из группы](/graph/api/team-post?view=graph-rest-1.0#example-4-create-a-team-from-group). Если вы столкнулись с ошибкой, процесс создания группы, возможно, не завершен. Попробуйте подождать несколько минут. 
 
     ```http
-    POST https://graph.microsoft.com/beta/teams
+    POST https://graph.microsoft.com/v1.0/teams
     Content-Type: application/json
     {
-      "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+      "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
       "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
     }
     ```

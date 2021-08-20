@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: cc6d66a4361f760b702844991e6fdc3f590c4007
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8095ea20d6c7dcef94e9f9cf2e42fca6087c58d8
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265976"
 ---
 # <a name="keycredential-resource-type"></a>тип ресурса keyCredential
 
@@ -23,14 +23,15 @@ ms.locfileid: "50721490"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|Binary| Настраиваемый идентификатор ключа |
-| displayName | String | Удобное имя для ключа. Необязательное. |
+|customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа |
+| displayName | Строка | Удобное имя для ключа. Необязательный. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|keyId|Guid|Уникальный идентификатор (GUID) для ключа.|
-|startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|type|String|Тип учетных данных ключей; например, "Симметричный".|
-|использование|String|Строка, описываемая цель, для которой можно использовать ключ; например, "Проверка".|
 |key|Двоичный| Значение для учетных данных ключа. Должно быть базовым значением 64. |
+|keyId|Guid|Уникальный идентификатор для ключа.|
+|startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|type|String|Тип учетных данных ключей; например, `Symmetric` .|
+|использование|String|Строка, описываемая цель, для которой можно использовать ключ; например, `Verify` .|
+
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,14 +47,15 @@ ms.locfileid: "50721490"
 
 ```json
 {
-  "customKeyIdentifier": "binary",
+  "@odata.type": "#microsoft.graph.keyCredential",
+  "customKeyIdentifier": "Binary",
   "displayName": "String",
   "endDateTime": "String (timestamp)",
-  "keyId": "guid",
+  "key": "Binary",
+  "keyId": "Guid",
   "startDateTime": "String (timestamp)",
-  "type": "string",
-  "usage": "string",
-  "key": "binary"
+  "type": "String",
+  "usage": "String"
 }
 
 ```

@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Секуреассессментаккаунттипе
-description: Тип учетных записей, разрешенных для Windows10SecureAssessment Конфигуратионаккаунт.
+title: secureAssessmentAccountType enum type
+description: Тип учетных записей, разрешенных для Windows10SecureAssessment ConfigurationAccount.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: da9695d549b9abcdec4cb5fc4c32fd699fd1ddb4
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 567de1b1d67cfb730ee5797e9c8b79f2ffe51d046dccfb8118bbcbc69ae1a6e1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49293859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54183045"
 ---
-# <a name="secureassessmentaccounttype-enum-type"></a>тип перечисления Секуреассессментаккаунттипе
+# <a name="secureassessmentaccounttype-enum-type"></a>secureAssessmentAccountType enum type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип учетных записей, разрешенных для Windows10SecureAssessment Конфигуратионаккаунт.
+Тип учетных записей, разрешенных для Windows10SecureAssessment ConfigurationAccount.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|азуреадаккаунт|нуль|Указывает учетную запись Azure AD в формате AzureAD\username@tenant.com.|
-|домаинаккаунт|1,1|Указывает учетную запись домена в формате домен \ пользователь или user@domain.com.|
-|локалаккаунт|2|Указывает локальную учетную запись в формате имени пользователя.|
-|локалгуестаккаунт|4|Указывает локальную гостевую учетную запись в формате имени теста.|
+|azureADAccount|0|Указывает учетную запись Azure AD в формате AzureAD\username@tenant.com.|
+|domainAccount|1 |Указывает учетную запись домена в формате domain\user или user@domain.com.|
+|localAccount|2|Указывает локализованную учетную запись в формате имени пользователя.|
+|localGuestAccount|3 |Указывает локализованную учетную запись гостей в формате тестового имени.|
 
 
 

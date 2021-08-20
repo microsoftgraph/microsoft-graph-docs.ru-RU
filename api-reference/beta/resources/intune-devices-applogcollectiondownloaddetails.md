@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Апплогколлектиондовнлоаддетаилс
+title: тип ресурса appLogCollectionDownloadDetails
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ced02355c4d1b0d57761c7374e46bb41d7a35558
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: c12fd9bca34a75fcac447517682186d3b8bc2c54dade7ba938154f9d4f75cb76
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54215099"
 ---
-# <a name="applogcollectiondownloaddetails-resource-type"></a>Тип ресурса Апплогколлектиондовнлоаддетаилс
+# <a name="applogcollectiondownloaddetails-resource-type"></a>тип ресурса appLogCollectionDownloadDetails
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,9 +25,9 @@ ms.locfileid: "49260070"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|довнлоадурл|String|Скачать URL-адрес SAS для завершенного Апплогуплоадрекуест|
-|декриптионкэй|String|Декриптионкэй как строка|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|Декриптионалгорисм для контента. Возможные значения: `aes256` .|
+|downloadUrl|Строка|Скачайте URL-адрес SAS для завершения AppLogUploadRequest|
+|decryptionKey|Строка|РасшифровкаKey как строка|
+|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|РасшифровкаAlgorithm для контента. Возможные значения: `aes256` .|
 
 ## <a name="relationships"></a>Связи
 Нет

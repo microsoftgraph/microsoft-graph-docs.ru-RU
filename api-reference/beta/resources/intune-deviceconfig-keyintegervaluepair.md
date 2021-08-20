@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса Кэйинтежервалуепаир
-description: Значение типа "ключ — значение" с ключом строки и целым значением.
+title: тип ресурса keyIntegerValuePair
+description: Пара значений ключа с ключом строки и компонентным значением.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8cdc38003e1c16c91b1ff734e74e1c7bd6fee18
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0acd0301b50f588197e4eeb40b55ded85d6e26150972ef6d40ecc85c7605b096
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49269177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203038"
 ---
-# <a name="keyintegervaluepair-resource-type"></a>Тип ресурса Кэйинтежервалуепаир
+# <a name="keyintegervaluepair-resource-type"></a>тип ресурса keyIntegerValuePair
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Значение типа "ключ — значение" с ключом строки и целым значением.
+Пара значений ключа с ключом строки и компонентным значением.
 
 
-Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)
+Наследует [от keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|key|String|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
-|value|Int32|Целочисленное значение для параметра "ключ — значение".|
+|key|Строка|Клавиша строки пары ключ-значение. Унаследованный от [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|value|Int32|Integer value of the key-value pair.|
 
 ## <a name="relationships"></a>Связи
 Нет

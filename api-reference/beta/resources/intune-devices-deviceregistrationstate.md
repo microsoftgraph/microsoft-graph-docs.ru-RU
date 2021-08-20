@@ -1,37 +1,37 @@
 ---
-title: тип перечисления deviceRegistrationState
-description: Состояние регистрации устройства.
+title: тип enum deviceRegistrationState
+description: Состояние регистрации устройств.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: facd74e3ef2b2d4b6296e9b56fb99f6a2ed14fed
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7197e541b46cc3f63340ee804f126a14d862283c616a1baf980c81725e6b5a87
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197984"
 ---
-# <a name="deviceregistrationstate-enum-type"></a>тип перечисления deviceRegistrationState
+# <a name="deviceregistrationstate-enum-type"></a>тип enum deviceRegistrationState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние регистрации устройства.
+Состояние регистрации устройств.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нотрегистеред|нуль|Устройство не зарегистрировано.|
-|охраняем|2|Устройство зарегистрировано.|
-|отозван|4|Устройство заблокировано, очищено или снято.|
-|кэйконфликт|4 |У устройства есть конфликт ключей.|
-|аппровалпендинг|5 |Устройство ожидает утверждения.|
-|цертификатересет|6 |Сертификат устройства сброшен.|
-|нотрегистередпендинженроллмент|7 |Устройство не зарегистрировано и находится в состоянии ожидания регистрации.|
+|notRegistered|0|Устройство не зарегистрировано.|
+|зарегистрирована|2|Устройство зарегистрировано.|
+|отменено|3 |Устройство было заблокировано, вытерто или отошедо.|
+|keyConflict|4 |У устройства есть ключевой конфликт.|
+|approvalPending|5 |Устройство находится на стадии утверждения.|
+|certificateReset|6 |Сертификат устройства был сброшен.|
+|notRegisteredPendingEnrollment|7 |Устройство не регистрируется и не ожидает регистрации.|
 |unknown|8 |Состояние регистрации устройства неизвестно.|
 
 

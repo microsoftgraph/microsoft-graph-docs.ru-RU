@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Мобилеконтаинедапп
-description: Абстрактный класс, представляющий вложенное приложение в mobileApp, работающее в виде пакета.
+title: тип ресурса mobileContainedApp
+description: Абстрактный класс, представляю содержащийся в приложении mobileApp, действующий в качестве пакета.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25078817c1add941a256ceb5f9f92cfd6b4426d7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 47dc0c867487c4043f148d8f3469288b7c0dc5d4d119a1eda412f99ad983c1c6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274168"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54156466"
 ---
-# <a name="mobilecontainedapp-resource-type"></a>Тип ресурса Мобилеконтаинедапп
+# <a name="mobilecontainedapp-resource-type"></a>тип ресурса mobileContainedApp
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Абстрактный класс, представляющий вложенное приложение в mobileApp, работающее в виде пакета.
+Абстрактный класс, представляю содержащийся в приложении mobileApp, действующий в качестве пакета.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Мобилеконтаинедаппс](../api/intune-apps-mobilecontainedapp-list.md)|Коллекция [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|Список свойств и связей объектов [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md) .|
-|[Получение Мобилеконтаинедапп](../api/intune-apps-mobilecontainedapp-get.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md);|Чтение свойств и связей объекта [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md) .|
+|[Список mobileContainedApps](../api/intune-apps-mobilecontainedapp-list.md)|[коллекция mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|Список свойств и связей объектов [mobileContainedApp.](../resources/intune-apps-mobilecontainedapp.md)|
+|[Get mobileContainedApp](../api/intune-apps-mobilecontainedapp-get.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md);|Чтение свойств и связей объекта [mobileContainedApp.](../resources/intune-apps-mobilecontainedapp.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

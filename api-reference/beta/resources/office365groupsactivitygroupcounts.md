@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365GroupsActivityGroupCounts
+title: тип ресурса office365GroupsActivityGroupCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: ad2610f5cbd3aae56651a0a5651e4ee4319b3bb2
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: b7f38f2279e7cd575972d13ea411d972349131a4fe3a9943c4e5efa03365ffa2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49981496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54178712"
 ---
-# <a name="office365groupsactivitygroupcounts-resource-type"></a>Тип ресурса office365GroupsActivityGroupCounts
+# <a name="office365groupsactivitygroupcounts-resource-type"></a>тип ресурса office365GroupsActivityGroupCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,11 +20,11 @@ ms.locfileid: "49981496"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | Дата   | Последняя дата содержимого.          |
-| total             | Int64  | Общее количество групп.              |
-| active            | Int64  | Количество активных групп. Группа считается активной при любом из следующих действий: почтовый ящик группы, полученный по электронной почте; просматриваются, редактируются, совместно или синхронизируются файлы в библиотеке документов SharePoint; просматривались пользователем страницы SharePoint; пользователи опубликовали, прочитали или понравились сообщения в группах Yammer. |
-| reportDate        | Дата   | Дата, когда было активно несколько групп. |
-| reportPeriod      | String | Количество дней в отчете.    |
+| reportRefreshDate | Дата   | Последняя дата контента.          |
+| total             | Int64  | Общее число групп.              |
+| active            | Int64  | Количество активных групп. Группа считается активной, если произошло следующее: почтовый ящик группы получил электронную почту; просмотр, редактирование, общий доступ или синхронизацию файлов в SharePoint документа; просмотр страниц SharePoint пользователя; сообщений, которые пользователи вывешив, прочитав или понравились в Yammer группах. |
+| reportDate        | Дата   | Дата активных действий ряда групп. |
+| reportPeriod      | Строка | Количество дней, которые охватывает отчет.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

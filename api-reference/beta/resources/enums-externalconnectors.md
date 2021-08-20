@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: search
 ms.author: emzho
 author: emzho
-ms.openlocfilehash: d302ed49bea5c7d69f77d68dfcad13d32fc9b57b
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 31a7025c1459964e483196f419fdba448a608fa3a7ce6f77e47eb635dcc7224f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54203346"
 ---
 # <a name="external-connectors-enum-values"></a>Внешние соединители, которые окружались значениями
 
@@ -19,7 +19,7 @@ ms.locfileid: "53467847"
 
 ### <a name="accesstype-values"></a>значения accessType
 
-| Member
+| Элемент
 |:--------------
 | грант
 | запретить
@@ -27,9 +27,9 @@ ms.locfileid: "53467847"
 
 ### <a name="acltype-values"></a>значения aclType
 
-| Member
+| Элемент
 |:--------------
-| пользователь
+| user
 | group
 | все
 | everyoneExceptGuests
@@ -39,7 +39,7 @@ ms.locfileid: "53467847"
 
 ### <a name="connectionoperationstatus-values"></a>значения connectionOperationStatus
 
-| Member
+| Элемент
 |:--------------
 | неустановленные
 | inprogress
@@ -50,7 +50,7 @@ ms.locfileid: "53467847"
 
 ### <a name="connectionstate-values"></a>значения connectionState
 
-|Member
+|Элемент
 |:--------------
 | черновик
 | готово
@@ -61,16 +61,16 @@ ms.locfileid: "53467847"
 
 ### <a name="externalgroupmembertype-values"></a>значения externalGroupMemberType
 
-| Member
+| Элемент
 |:--------------
-| пользователь
+| user
 | group
 | unknownFutureValue
 
 
 ### <a name="externalitemcontenttype-values"></a>значения externalItemContentType
 
-| Member
+| Элемент
 |:--------------
 | текст
 | HTML
@@ -78,7 +78,7 @@ ms.locfileid: "53467847"
 
 ### <a name="identitysourcetype-values"></a>значения identitySourceType
 
-| Member
+| Элемент
 |:--------------
 | azureActiveDirectory
 | внешние
@@ -86,7 +86,7 @@ ms.locfileid: "53467847"
 
 ### <a name="label-values"></a>Значения меток
 
-| Member
+| Элемент
 |:--------------
 | title
 | url
@@ -105,9 +105,9 @@ ms.locfileid: "53467847"
 
 ### <a name="propertytype-values"></a>значения propertyType
 
-| Member
+| Элемент
 |:--------------
-| String
+| string
 | int64
 | double
 | dateTime

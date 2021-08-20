@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 491b891b1acb5a2a8d158158aa911d7e1a9be93b
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 98796103ae77fc587db0fc177b072b6f6f1426ae
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52663910"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264376"
 ---
 # <a name="create-restrictedappsviolation"></a>Создание restrictedAppsViolation
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,14 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта. Составлено из accountId, deviceId, policyId и userId|
+|id|String|Уникальный идентификатор объекта. Составлено из accountId, deviceId, policyId и userId|
 |userId|String|Уникальный идентификатор пользователя должен быть Guid|
 |userName|String|Имя пользователя|
-|managedDeviceId|Строка|Уникальный идентификатор управляемого устройства должен быть Guid|
+|managedDeviceId|String|Уникальный идентификатор управляемого устройства должен быть Guid|
 |deviceName|String|Имя устройства|
 |deviceConfigurationId|Строка|Уникальный идентификатор конфигурации устройства должен быть Guid|
 |DeviceConfigurationName|Строка|Имя профиля конфигурации устройства|
-|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[коллекция managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
 

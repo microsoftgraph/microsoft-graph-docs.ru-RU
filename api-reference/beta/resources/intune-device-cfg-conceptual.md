@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4c9aa91adf1a8133080fd2f4ae09edee12445cc3
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: e1b193f4abb338f3ecb18d848fcd8435f77743b6
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666284"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58265419"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -126,6 +126,7 @@ ms.locfileid: "52666284"
 - [Тип списка приложений](intune-deviceconfig-applisttype.md)
 - [Тип управления для приложения AppLocker](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Элемент списка приложений Apple](intune-deviceconfig-appleapplistitem.md)
+- [Канал развертывания Apple](intune-deviceconfig-appledeploymentchannel.md)
 - [База конфигураций функций для устройств Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 - [База конфигурации быстрой проверки Apple](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Формат имени субъекта Apple](intune-deviceconfig-applesubjectnameformat.md)
@@ -142,7 +143,7 @@ ms.locfileid: "52666284"
 - [Политика BitLocker в отношении встроенных дисков](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Тип сведений для восстановления с помощью BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Параметры восстановления BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [BitLocker типа вращения пароля восстановления](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
+- [Тип вращения пароля для восстановления BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Политика BitLocker в отношении съемных дисков](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Политика BitLocker в отношении системных дисков](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Параметр синхронизации браузера](intune-deviceconfig-browsersyncsetting.md)
@@ -223,10 +224,13 @@ ms.locfileid: "52666284"
 - [Версия ос правила управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [Тип правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [Орган сертификации управления устройствами](intune-deviceconfig-devicemanagementcertificationauthority.md)
+- [Отчеты службы управления устройствами](intune-grouppolicy-devicemanagementreports.md)
 - [Параметры управления устройствами](intune-deviceconfig-devicemanagementsettings.md)
 - [Локальный пользователь или группа для прав пользователя для управления устройством](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Параметры прав пользователя для управления устройства](intune-deviceconfig-devicemanagementuserrightssetting.md)
+- [Тип платформы устройства](intune-deviceconfig-deviceplatformtype.md)
 - [Уровень защиты устройства от угроз](intune-deviceconfig-devicethreatprotectionlevel.md)
+- [Тип устройства](intune-deviceconfig-devicetype.md)
 - [Типы устройств](intune-deviceconfig-devicetypes.md)
 - [Режим отправки диагностических данных](intune-deviceconfig-diagnosticdatasubmissionmode.md)
 - [Группа Diffie hellman](intune-deviceconfig-diffiehellmangroup.md)
@@ -356,6 +360,8 @@ ms.locfileid: "52666284"
 - [Пара значений ключевой строки](intune-deviceconfig-keystringvaluepair.md)
 - [Пара значений для ключей](intune-deviceconfig-keytypedvaluepair.md)
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
+- [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
+- [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав администратора](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Локальные параметры безопасности: разрешенный тип пользователя для форматирования и извлечения съемных носителей](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -415,6 +421,7 @@ ms.locfileid: "52666284"
 - [Состояние шифрования управляемого устройства](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Состояние настройки конфигурации мобильного приложения управляемого устройства](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [Сообщение из отчета для управляемого устройства](intune-deviceconfig-manageddevicereportedapp.md)
+- [Тип агента управления](intune-deviceconfig-managementagenttype.md)
 - [Рейтинг мультимедийного содержимого для Австралии](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Оценка мультимедийного содержимого для Канады](intune-deviceconfig-mediacontentratingcanada.md)
 - [Оценка мультимедийного содержимого для Франции](intune-deviceconfig-mediacontentratingfrance.md)
@@ -448,6 +455,7 @@ ms.locfileid: "52666284"
 - [Совершенная группа секретности вперед](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Запрос на перешифровку Pfx](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Сертификат пользователя Pfx](intune-raimportcerts-pfxusercertificate.md)
+- [Тип платформы политики](intune-deviceconfig-policyplatformtype.md)
 - [Тип действия power](intune-deviceconfig-poweractiontype.md)
 - [Предварительные версии функций](intune-deviceconfig-prereleasefeatures.md)
 - [Тип рейтинга приложений](intune-deviceconfig-ratingappstype.md)

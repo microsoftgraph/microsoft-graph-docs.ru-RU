@@ -1,36 +1,36 @@
 ---
-title: тип перечисления Виндовсарчитектуре
-description: Содержит свойства для архитектуры Windows.
+title: тип enum windowsArchitecture
+description: Содержит свойства для Windows архитектуры.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 868f778e443c2bca2ca1c4c48191c7f0274c9834
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 89016b320f0c29b0cda7aa1cae0ad2ded39c825c0471134ac1806abc982de840
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284479"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232988"
 ---
-# <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
+# <a name="windowsarchitecture-enum-type"></a>тип enum windowsArchitecture
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для архитектуры Windows.
+Содержит свойства для Windows архитектуры.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Флаги не заданы.|
-|платформы|1,1|Поддерживается ли тип архитектуры x86 Windows.|
-|x|2|Поддерживается ли тип архитектуры Windows x64.|
-|руки|4 |Поддерживается ли тип архитектуры Windows ARM.|
-|определенно|8 |Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
-|arm64|16 |Поддерживается ли тип архитектуры Windows Arm64.|
+|Нет|0|Нет набора флагов.|
+|x86|1 |Поддерживается ли тип архитектуры Windows X86 или нет.|
+|x64|2|Поддерживается ли тип архитектуры Windows X64 или нет.|
+|arm|4 |Поддерживается ли Windows типа архитектуры Arm или нет.|
+|нейтральный|8 |Поддерживается ли Windows типа архитектуры.|
+|arm64|16 |Поддерживается ли тип Windows Arm64 или нет.|
 
 
 

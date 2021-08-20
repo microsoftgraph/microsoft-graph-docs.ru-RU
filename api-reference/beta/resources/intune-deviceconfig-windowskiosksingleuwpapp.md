@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Виндовскиосксинглеувпапп
-description: Класс, используемый для определения сведений о приложении UWP для конфигурации киоска
+title: тип ресурса windowsKioskSingleUWPApp
+description: Класс, используемый для идентификации информации приложения UWP для конфигурации киоска
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 957670eec5e73f56dff2518936e98d0dfb0fbc33
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1d00a15ee6933e56d00a1b6b6746fbb1a46c20355d1f2e9c3ada81f3fe1d4a47
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242750"
 ---
-# <a name="windowskiosksingleuwpapp-resource-type"></a>Тип ресурса Виндовскиосксинглеувпапп
+# <a name="windowskiosksingleuwpapp-resource-type"></a>тип ресурса windowsKioskSingleUWPApp
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, используемый для определения сведений о приложении UWP для конфигурации киоска
+Класс, используемый для идентификации информации приложения UWP для конфигурации киоска
 
 
-Наследуется от [виндовскиоскаппконфигуратион](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
+Наследует [от windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|увпапп|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);|Это единственный идентификатор пользовательской модели приложения (AUMID), который будет доступен для запуска в режиме киоска|
+|uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);|Это единственный ID модели пользователя приложения (AUMID), который будет доступен для запуска использования в режиме киоска|
 
 ## <a name="relationships"></a>Связи
 Нет

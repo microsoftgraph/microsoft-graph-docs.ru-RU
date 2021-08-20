@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Девицеманажементсубскриптионстате
+title: тип enum deviceManagementSubscriptionState
 description: Состояние подписки на управление мобильными устройствами для клиента.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5553253d66798f259faa98af1f2f33bc3c6b174f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1704ffc3bb96f78225a5c23754493163d851dbeefdb44941a81786f669601eaa
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49267546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206349"
 ---
-# <a name="devicemanagementsubscriptionstate-enum-type"></a>тип перечисления Девицеманажементсубскриптионстате
+# <a name="devicemanagementsubscriptionstate-enum-type"></a>тип enum deviceManagementSubscriptionState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,13 +25,13 @@ ms.locfileid: "49267546"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|закончен|нуль|Pending|
-|ASP|1,1|Активное|
+|ожидание|0|Pending|
+|active|1 |Активные|
 |warning|2|Предупреждение|
-|отключено|4|Отключено|
+|отключено|3 |Отключено|
 |deleted|4 |Deleted|
-|заблокированных|5 |Заблокировано|
-|Блокировка|8 |Блокировка|
+|заблокировано|5 |Заблокировано|
+|lockedOut|8 |LockedOut|
 
 
 
