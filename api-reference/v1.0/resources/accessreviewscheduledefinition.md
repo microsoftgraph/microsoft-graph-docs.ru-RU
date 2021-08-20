@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9e2ee2d4296855d7f8fdf5ccd5a46252d7a3a7c70bdff83199c6aed51a7667e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1b2f0f63b428be48ac04734568ecbba00320ba7
+ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121426"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58367060"
 ---
 # <a name="accessreviewscheduledefinition-resource-type"></a>тип ресурса accessReviewScheduleDefinition
 
@@ -28,22 +28,22 @@ AccessReviewScheduleDefinition содержит список [объектов a
 |[Список accessReviewScheduleDefinitions](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition collection](accessreviewscheduledefinition.md) | Списки всех accessReviewScheduleDefinition. Не включает связанные объекты accessReviewInstance в результаты. |
 |[Получить accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Получите accessReviewScheduleDefinition с указанным **id**. Не включает связанные объекты accessReviewInstance в результаты. |
 |[Создание accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-post.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создание нового accessReviewScheduleDefinition. |
-|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление accessReviewScheduleDefinition с указанным **id**. |
-|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств accessReviewScheduleDefinition с указанным **id**. |
+|[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Отсутствуют. | Удаление accessReviewScheduleDefinition с указанным **id**. |
+|[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Отсутствуют. | Обновление свойств accessReviewScheduleDefinition с указанным **id**. |
 |[filterByCurrentUser](../api/accessreviewscheduledefinition-filterbycurrentuser.md)|[accessReviewScheduleDefinition collection](../resources/accessreviewscheduledefinition.md)|Извлекает все определения, для которых вызываемая пользователь является рецензентом в одном или более экземплярах.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 | id | String | Уникальный идентификатор обзора доступа, назначенного функцией. Поддерживает `$select`. Только для чтения.|
-| displayName | String   | Имя серии обзоров доступа. Поддерживает `$select` и `$orderBy`. Требуется при создании. |
+| displayName | Строка   | Имя серии обзоров доступа. Поддерживает `$select` и `$orderBy`. Требуется при создании. |
 | createdDateTime  |DateTimeOffset  | Timestamp, когда была создана серия обзоров доступа. Поддерживает `$select` и `$orderBy`. Только для чтения. |
 | lastModifiedDateTime | DateTimeOffset   | Timestamp, когда в последний раз была изменена серия обзоров доступа. Поддерживает `$select`. Только для чтения.|
 | status  |String   | Это поле только для чтения указывает состояние обзора доступа. Типичные состояния `Initializing` включают , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` .  <br>Поддерживает `$select` и `$orderby` `$filter` `eq` (только). Только для чтения. |
-| descriptionForAdmins  |Строка  |  Описание, предоставленное создателями обзора, чтобы предоставить администраторам дополнительный контекст обзора. Поддерживает `$select`. |
-| descriptionForReviewers |Строка | Описание, предоставленное создателями обзора, чтобы предоставить рецензентам дополнительный контекст обзора. Рецензенты увидят это описание в отправленной им электронной почте с запросом на отзыв. Поддерживает `$select`. |
+| descriptionForAdmins  |string  |  Описание, предоставленное создателями обзора, чтобы предоставить администраторам дополнительный контекст обзора. Поддерживает `$select`. |
+| descriptionForReviewers |string | Описание, предоставленное создателями обзора, чтобы предоставить рецензентам дополнительный контекст обзора. Рецензенты увидят это описание в отправленной им электронной почте с запросом на отзыв. Поддерживает `$select`. |
 | createdBy  |[userIdentity](../resources/useridentity.md)  | Пользователь, создавший этот обзор. Только для чтения. |
-| scope  |[accessReviewScope](../resources/accessreviewscope.md)  | Определяет область ресурсов, которые необходимо просмотреть. Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) Требуется при создании. Поддерживает `$select` и `$filter` `contains` (только). Примеры параметров настройки области см. в примере [Configure the scope of your access review definition using the Microsoft Graph API.](/graph/accessreviews-scope-concept) |
+| scope  |[accessReviewScope](../resources/accessreviewscope.md)  |  Определяет объекты, доступ к которым просматривается.  Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) Требуется при создании. Поддерживает `$select` и `$filter` `contains` (только). Примеры параметров настройки области см. в примере [Configure the scope of your access review definition using the Microsoft Graph API.](/graph/accessreviews-scope-concept) |
 | instanceEnumerationScope|[accessReviewScope](../resources/accessreviewscope.md)  | Это свойство необходимо при проверке доступа гостевых пользователей ко всем группам Microsoft 365 и определяет, какие Microsoft 365 проверяются. Каждая группа станет уникальным **accessReviewInstance** из серии обзоров доступа.  Для поддерживаемых областей [см. в поле accessReviewScope.](accessreviewscope.md) Поддерживает `$select`. Примеры вариантов настройки instanceEnumerationScope см. в примере Настройка области определения обзора доступа с помощью [API Microsoft Graph Microsoft.](/graph/accessreviews-scope-concept) | 
 | settings  |[accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа см. ниже определение типа. Поддерживает `$select`. Требуется при создании. |
 | рецензенты   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Эта коллекция областей обзора доступа используется для определения тех, кто является рецензентами. Свойство рецензентов может быть updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. Требуется при создании. Поддерживает `$select`. Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept) |

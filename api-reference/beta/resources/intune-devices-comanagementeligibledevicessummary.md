@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Команажементелигибледевицессуммари
+title: тип ресурса comanagementEligibleDevicesSummary
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c7244bd594e38a8f129aa81389b159caff6b928
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 14585d673c1f101c7204bffe4f1d2f3ede632c88d8c6c88a3218b3be4bb67e6e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54179034"
 ---
-# <a name="comanagementeligibledevicessummary-resource-type"></a>Тип ресурса Команажементелигибледевицессуммари
+# <a name="comanagementeligibledevicessummary-resource-type"></a>тип ресурса comanagementEligibleDevicesSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49214640"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|команажедкаунт|Int32|Количество устройств, уже Co-Managed|
-|елигиблекаунт|Int32|Количество устройств, полностью доступных для Co-Management|
-|елигиблебутнотазуреаджоинедкаунт|Int32|Количество устройств, подходящих для Co-Management, но еще не присоединенных к Azure Active Directory|
-|нидсосупдатекаунт|Int32|Количество устройств, которые будут доступны Co-Management после обновления ОС|
-|инелигиблекаунт|Int32|Количество устройств, доступных для Co-Management|
+|comanagedCount|Int32|Количество устройств, уже Co-Managed|
+|eligibleCount|Int32|Количество устройств, полностью подходящих для Co-Management|
+|eligibleButNotAzureAdJoinedCount|Int32|Количество устройств, имеющих право на Co-Management, но еще не присоединились к Azure Active Directory|
+|needsOsUpdateCount|Int32|Количество устройств, которые будут иметь право на Co-Management после обновления ОС|
+|ineligibleCount|Int32|Количество устройств, не допустимых для Co-Management|
 
 ## <a name="relationships"></a>Связи
 Нет

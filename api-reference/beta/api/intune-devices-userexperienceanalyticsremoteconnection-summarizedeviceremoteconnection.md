@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 549fe94a33d8572f40eb93d3443663760bea4e6e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 57624469db1917cd60eecb00b39a8b81c3f5b90b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51157823"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58248251"
 ---
 # <a name="summarizedeviceremoteconnection-function"></a>summarizeDeviceRemoteConnection
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51157823"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsRemoteConnection/summarizeDeviceRem
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRem
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 613
+Content-Length: 715
 
 {
   "value": [
@@ -83,13 +83,15 @@ Content-Length: 613
       "deviceName": "Device Name value",
       "model": "Model value",
       "virtualNetwork": "Virtual Network value",
+      "manufacturer": "Manufacturer value",
       "deviceCount": 11,
       "cloudPcRoundTripTime": 6.666666666666667,
       "cloudPcSignInTime": 5.666666666666667,
       "remoteSignInTime": 5.333333333333333,
       "coreBootTime": 4.0,
       "coreSignInTime": 4.666666666666667,
-      "cloudPcFailurePercentage": 8.0
+      "cloudPcFailurePercentage": 8.0,
+      "userPrincipalName": "User Principal Name value"
     }
   ]
 }

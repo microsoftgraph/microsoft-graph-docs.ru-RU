@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Впнтраффикрулеапптипе
-description: Указывает тип приложения, с которым связано правило трафика VPN.
+title: тип enum vpnTrafficRuleAppType
+description: Указывает тип приложения, с которое связано правило трафика VPN.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21e8cc9b567ff6c742b85df5e4abeab97d91747f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2580a868e14c6ebb632c750eeb7523c1ae804a72d25881e69c6de4a7b278219c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49215613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54187674"
 ---
-# <a name="vpntrafficruleapptype-enum-type"></a>тип перечисления Впнтраффикрулеапптипе
+# <a name="vpntrafficruleapptype-enum-type"></a>тип enum vpnTrafficRuleAppType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Указывает тип приложения, с которым связано правило трафика VPN.
+Указывает тип приложения, с которое связано правило трафика VPN.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Правило трафика не связано с приложением.|
-|системной|1,1|Правило трафика связано с классическим приложением.|
-|Гринвич|2|Правило трафика связано с универсальным приложением.|
+|Нет|0|Правило трафика не связано с приложением.|
+|настольный компьютер|1 |Правило трафика связано с настольным приложением.|
+|универсальный|2|Правило трафика связано с универсальным приложением.|
 
 
 

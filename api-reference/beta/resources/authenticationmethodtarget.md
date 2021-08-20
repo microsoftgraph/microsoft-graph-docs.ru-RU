@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса authenticationMethodTarget
-description: Коллекция пользователей или групп, которые могут использовать метод проверки подлинности в рамках политики методов проверки подлинности.
+title: тип ресурса authenticationMethodTarget
+description: Коллекция пользователей или групп, включенная для использования метода проверки подлинности в рамках политики метода проверки подлинности.
 author: mmcla
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 19f8fb774ad0a60fa74d2c27655ee1174e0989af
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 25f983d9f2f98474189bc286b4e13c9de897cc3a
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135452"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336700"
 ---
-# <a name="authenticationmethodtarget-resource-type"></a>Тип ресурса authenticationMethodTarget
+# <a name="authenticationmethodtarget-resource-type"></a>тип ресурса authenticationMethodTarget
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Коллекция пользователей или групп, которые могут использовать метод проверки подлинности в рамках политики методов проверки подлинности в Azure AD.
+Коллекция пользователей или групп, включенная для использования метода проверки подлинности в рамках политики метода проверки подлинности в Azure AD. Наследует от [объекта](entity.md).
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ИД объекта пользователя или группы Azure AD.|
-|isRegistrationRequired|Boolean|Определяет, принудительно ли зарегистрирует метод проверки подлинности для пользователя.|
-|targetType|authenticationMethodTargetType|Возможные значения: `user`, `group`.|
-|useForSignIn|Boolean|Определяет, можно ли использовать метод проверки подлинности для входов в Azure AD.|
+|id|String|Идентификатор объекта пользователя или группы Azure AD.|
+|isRegistrationRequired|Логический|Определяет, принудит ли пользователь зарегистрировать метод проверки подлинности.|
+|targetType|authenticationMethodTargetType| Возможные значения: `user` , `group` и `unknownFutureValue` .|
+|useForSignIn|Логический|Определяет, можно ли использовать метод проверки подлинности для входов в Azure AD.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

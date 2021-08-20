@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1f1c759cade945fb8dad05d82ae30c9044074e5f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a72e4e5f1eb694a48a2341cb2963eabd059f5e5b
+ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051573"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58336693"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Создание certificateBasedAuthConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "52051573"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений    | Organization.ReadWrite.All |
+| Приложение    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -71,7 +71,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration/$ref
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration/$ref
+POST https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration
 Content-type: application/json
 
 {
@@ -105,7 +105,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -5,18 +5,18 @@ author: sureshja
 localization_priority: Normal
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: da60fd5c6a3a97a3924fc45448c00f9665748752
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bb1d2b596f9bf64a8ad055834747a3cefb3f00c9
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131784"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58260847"
 ---
 # <a name="delete-application"></a>Удаление приложения
 
 Пространство имен: microsoft.graph
 
-Удаление [объекта](../resources/application.md) приложения.
+Удаление объекта [приложения.](../resources/application.md) При удалении приложения перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней. По истечении этого периода они удаляются без возможности восстановления.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +25,7 @@ ms.locfileid: "50131784"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
