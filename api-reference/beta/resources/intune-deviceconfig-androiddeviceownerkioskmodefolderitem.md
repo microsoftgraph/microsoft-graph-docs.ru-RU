@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса androidDeviceOwnerKioskModeFolderItem
+title: тип ресурса androidDeviceOwnerKioskModeFolderItem
 description: Представляет элемент, который можно добавить в папку владельца устройства Android (приложение или веб-ссылку)
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e596ed69a8b1e9ea3e17eaecad518198bbd1fef4
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ef565f28ac4bd01b2b15407dc607116a340f8277dd03e2c5ad67b622bed42cd3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50162570"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242047"
 ---
-# <a name="androiddeviceownerkioskmodefolderitem-resource-type"></a>Тип ресурса androidDeviceOwnerKioskModeFolderItem
+# <a name="androiddeviceownerkioskmodefolderitem-resource-type"></a>тип ресурса androidDeviceOwnerKioskModeFolderItem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Представляет элемент, который можно добавить в папку владельца устройства Android (приложение или веб-ссылку)
 
 
-Наследуется [от androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)
+Наследует [от androidDeviceOwnerKioskModeHomeScreenItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

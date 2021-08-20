@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Девицеманажементсеттингаппконстраинт
-description: Ограничение, включающее параметр, содержит только доступные типы приложений.
+title: тип ресурса deviceManagementSettingAppConstraint
+description: Принудительное применение параметра содержит только типы приложений vaild.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 891b07ff24bb43696ba45de418194295446a98f3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f17221fae4db9d2aa0638d3cefc8a983b030abc81ade6817d386e36a297ee8c1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251304"
 ---
-# <a name="devicemanagementsettingappconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингаппконстраинт
+# <a name="devicemanagementsettingappconstraint-resource-type"></a>тип ресурса deviceManagementSettingAppConstraint
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ограничение, включающее параметр, содержит только доступные типы приложений.
+Принудительное применение параметра содержит только типы приложений vaild.
 
 
-Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследует [от deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|суппортедтипес|Коллекция строк|Допустимые типы приложений, которые необходимо разрешить для этого параметра|
+|supportedTypes|Коллекция String|Допустимые типы приложений для этого параметра|
 
 ## <a name="relationships"></a>Связи
 Нет

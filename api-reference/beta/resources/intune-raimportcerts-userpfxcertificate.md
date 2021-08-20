@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса Усерпфксцертификате
-description: Объект, инкапсулирующий все сведения, необходимые для сертификатов пользователя PFX.
+title: тип ресурса userPFXCertificate
+description: Объект, инкапсулирует всю информацию, необходимую для сертификатов PFX пользователя.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d893d27a46036b2eb7bc9aa59960b8182aef478
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 9873d6e5a17e356ce166a90107bbf74cf8a341411fa8e741d3b989f684e967bc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242428"
 ---
-# <a name="userpfxcertificate-resource-type"></a>Тип ресурса Усерпфксцертификате
+# <a name="userpfxcertificate-resource-type"></a>тип ресурса userPFXCertificate
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Объект, инкапсулирующий все сведения, необходимые для сертификатов пользователя PFX.
+Объект, инкапсулирует всю информацию, необходимую для сертификатов PFX пользователя.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Усерпфксцертификатес](../api/intune-raimportcerts-userpfxcertificate-list.md)|Коллекция [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md)|Список свойств и связей объектов [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) .|
-|[Получение Усерпфксцертификате](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Чтение свойств и связей объекта [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) .|
-|[Создание Усерпфксцертификате](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Создание нового объекта [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) .|
-|[Удаление Усерпфксцертификате](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Нет|Удаляет объект [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md).|
-|[Обновление Усерпфксцертификате](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Обновление свойств объекта [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) .|
+|[Список пользователейPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[коллекция userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Список свойств и связей [объектов userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
+|[Get userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Чтение свойств и связей [объекта userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
+|[Создание userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Создайте новый [объект userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
+|[Удаление userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|Нет|Удаляет [пользователяPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).|
+|[Обновление userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|Обновление свойств объекта [userPFXCertificate.](../resources/intune-raimportcerts-userpfxcertificate.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
-|startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
-|expirationDateTime|DateTimeOffset|Дата и время действия сертификата.|
-|providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
-|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
-|паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
-|енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
-|createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|
+|отпечатки пальцев|Строка|Отпечатки sha-1 сертификата PFX.|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Предназначение сертификата с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|userPrincipalName|String|Имя пользователя сертификата PFX.|
+|startDateTime|DateTimeOffset|Дата начала действия сертификата.|
+|expirationDateTime|DateTimeOffset|Срок действия сертификата.|
+|providerName|String|Поставщик криптографии, используемый для шифрования этого blob.|
+|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком при шифровании и расшифровке. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|зашифрованныйPfxBlob|В двоичном формате|Зашифрованный BLOB PFX.|
+|зашифрованныйPfxPassword|String|Зашифрованный пароль PFX.|
+|createdDateTime|DateTimeOffset|Дата и время импорта этого сертификата PFX.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого сертификата PFX.|
 
 ## <a name="relationships"></a>Связи
 Нет

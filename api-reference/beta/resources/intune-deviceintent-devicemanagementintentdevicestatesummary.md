@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Девицеманажементинтентдевицестатесуммари
-description: Сущность, представляющая сводную информацию о состоянии устройства для намерения
+title: тип ресурса deviceManagementIntentDeviceStateSummary
+description: Сущность, представляюая сводку состояния устройства для намерения
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b0b8fda6e7c61d3782374450dc884e2853d9e141
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: dc72ec4b87e8248cdd33e5b3aaabe6c3d0c77963b855655ddf4656e8aa3b2881
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54232603"
 ---
-# <a name="devicemanagementintentdevicestatesummary-resource-type"></a>Тип ресурса Девицеманажементинтентдевицестатесуммари
+# <a name="devicemanagementintentdevicestatesummary-resource-type"></a>тип ресурса deviceManagementIntentDeviceStateSummary
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность, представляющая сводную информацию о состоянии устройства для намерения
+Сущность, представляюая сводку состояния устройства для намерения
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Девицеманажементинтентдевицестатесуммари](../api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md)|[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|Чтение свойств и связей объекта [девицеманажементинтентдевицестатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) .|
-|[Обновление Девицеманажементинтентдевицестатесуммари](../api/intune-deviceintent-devicemanagementintentdevicestatesummary-update.md)|[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|Обновление свойств объекта [девицеманажементинтентдевицестатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md) .|
+|[Get deviceManagementIntentDeviceStateSummary](../api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md)|[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|Чтение свойств и связей [объекта deviceManagementIntentDeviceStateSummary.](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|
+|[Обновление deviceManagementIntentDeviceStateSummary](../api/intune-deviceintent-devicemanagementintentdevicestatesummary-update.md)|[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|Обновление свойств объекта [deviceManagementIntentDeviceStateSummary.](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор|
-|conflictCount|Int32|Количество конфликтующих устройств|
+|id|String|The ID|
+|conflictCount|Int32|Количество устройств в конфликте|
 |errorCount|Int32|Количество устройств с ошибками.|
 |failedCount|Int32|Число устройств со сбоями.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
-|Свойства notapplicableplatformcount|Int32|Количество неприменимых устройств из-за несовпадения платформы и политики|
+|notApplicablePlatformCount|Int32|Количество не применимых устройств из-за несоответствия платформы и политики|
 |successCount|Int32|Количество успешных устройств.|
 
 ## <a name="relationships"></a>Связи

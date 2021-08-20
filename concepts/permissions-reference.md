@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3e3cbb68dfa9bfcff5b04f27de0823c76bf89ccf
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 25017432241bd73b17efddb7399b5df5c3221e33
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397056"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384487"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -96,24 +96,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 }
 ```
 
-## <a name="retriving-permission-ids"></a>Получение ИД разрешений
-
-Если вам нужно настроить разрешения с помощью Azure CLI, PowerShell или инфраструктуры в качестве платформы кода, может потребоваться идентификатор разрешения, которое вы хотите использовать вместо имени. Чтобы получить идентификатор, можно использовать Azure CLI, запустив `az ad sp list`. Однако при этом создается очень длинный список, и найти нужное разрешение может быть непросто. Если вы уже знаете имя нужного разрешения, можно выполнить следующую команду с помощью Azure CLI:
-
-```bash
-az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
-```
-
-Ответ должен быть похож на следующий пример, который содержит описание, идентификатор, отображаемое имя и имя разрешения:
-
-```json
-{
-  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
-  "adminConsentDisplayName": "Read all groups",
-  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
-  "value": "Group.Read.All"
-}
-```
+---
 
 ## <a name="access-reviews-permissions"></a>Разрешения проверок доступа
 

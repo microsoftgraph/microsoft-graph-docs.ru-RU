@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Ендпоинтсекуритиконфигуратионпрофилетипе
+title: тип enum endpointSecurityConfigurationProfileType
 description: Тип профиля политики безопасности конечной точки.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1543584c1b839eedb0c346758f77a906ac41b752
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0941b4cc3d73fdaef7c1f404a2b35f9826787867f4f3b4d19eabb868c27e80a1
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49301076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54241542"
 ---
-# <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>тип перечисления Ендпоинтсекуритиконфигуратионпрофилетипе
+# <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>тип enum endpointSecurityConfigurationProfileType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,21 +25,21 @@ ms.locfileid: "49301076"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Найден.|
-|такую|1,1|Такую.|
-|виндовссекурити|2|Безопасность Windows.|
-|Средство|4|Средство.|
-|филеваулт|4 |Филеваулт.|
-|брандмауэра|5 |Брандмауэра.|
-|фиреваллрулес|6 |Правила брандмауэра.|
-|ендпоинтдетектионандреспонсе|7 |Выявление конечных точек и реагирование на них.|
-|девицеконтрол|8 |Элемент управления устройством.|
-|аппандбровсерисолатион|9 |Изоляция приложений и браузеров.|
-|експлоитпротектион|10 |Защита от эксплойтов.|
-|Защита от|11 |Защита веб-сайта.|
-|аппликатионконтрол|12 |Управление приложениями.|
-|аттакксурфацередуктионрулес|13 |Правила уменьшения уязвимой зоны.|
-|аккаунтпротектион|14 |Защита учетной записи.|
+|unknown|0|Неизвестно.|
+|антивирусная программа|1 |Антивирус.|
+|WindowsSecurity|2|Безопасность Windows.|
+|bitLocker|3 |BitLocker.|
+|fileVault|4 |FileVault.|
+|брандмауэр|5 |Брандмауэр.|
+|firewallRules|6 |Правила брандмауэра.|
+|endpointDetectionAndResponse|7 |Выявление конечных точек и реагирование на них.|
+|deviceControl|8 |Управление устройствами.|
+|appAndBrowserIsolation|9 |Изоляция приложения и браузера.|
+|exploitProtection|10 |Защита от эксплойтов.|
+|webProtection|11 |Веб-защита.|
+|applicationControl|12 |Управление приложениями.|
+|attackSurfaceReductionRules|13 |Правила уменьшения поверхности атаки.|
+|accountProtection|14 |Защита учетной записи.|
 
 
 

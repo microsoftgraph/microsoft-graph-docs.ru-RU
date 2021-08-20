@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 764b659d16c197fca4d4398ca7b73ad4fad4e59f
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: f672d9462f6b1df8589747d9dbeb0254098aa70d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384494"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397014"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -70,30 +70,10 @@ Microsoft Teams — это рабочее пространство с чатам
 
 | Вариант использования      | Глагол      | URL-адрес |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Добавление участника](../api/team-post-members.md) | POST      | /teams/{id}/members  |
-| [Удаление участника](../api/team-delete-members.md)    | DELETE    | /teams/{id}/members/{userId} |
-| [Обновление роли участника](../api/team-update-members.md) | PATCH | /teams/{id}/members/{userId} |
-| [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{id} |
-
-При добавлении и удалении участников и владельцев, не применяйте фигурные скобки {} вокруг идентификатора.
-
-| Скорость | Синтаксис |
-| ------ | ----- |
-| Быстро | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref` |
-| Медленно | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
-
-Аналогичным образом, если параметр `userId` в URL-адресе или полезных данных выражается как имя участника-пользователя (UPN), а не как идентификатор GUID, производительность будет ниже.
-
-| Скорость | Синтаксис |
-| ------ | ----- |
-| Быстро | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| Медленно | alexeyorekhov@example.com |
-
-При выборе медленного пути, если текущий участник или владелец команды вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения отразятся в течение часа.
-Если ни один из таких пользователей не вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения не отразятся, пока не пройдет час после входа одного из них.
-
-> [!Note]
-> Гости клиента всегда обрабатываются с помощью медленного пути.
+| [Добавление участника](../api/team-post-members.md) | POST      | /teams/{team-id}/members  |
+| [Удаление участника](../api/team-delete-members.md)    | DELETE    | /teams/{team-id}/members/{membership-id} |
+| [Обновление роли участника](../api/team-update-members.md) | PATCH | /teams/{team-id}/members/{membership-id} |
+| [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{team-id} |
 
 ## <a name="polling-requirements"></a>Требования к опросу
 

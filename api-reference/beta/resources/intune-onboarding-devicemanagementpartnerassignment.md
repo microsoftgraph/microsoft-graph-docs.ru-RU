@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса deviceManagementPartnerAssignment
-description: Целевая группа пользователей для партнера по управлению устройствами
+title: тип ресурса deviceManagementPartnerAssignment
+description: Ориентация группы пользователей для партнера по управлению устройствами
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0cda49b654313ec4d69e810033ae681b8ac2645
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: ee082d4d760944d8b2d3ca7fcee9a0f9c4585bda4aa53a94b9f88f8c62778e8b
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50157542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224518"
 ---
-# <a name="devicemanagementpartnerassignment-resource-type"></a>Тип ресурса deviceManagementPartnerAssignment
+# <a name="devicemanagementpartnerassignment-resource-type"></a>тип ресурса deviceManagementPartnerAssignment
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в бета-версии могут изменяться; использование в производственной области не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Целевая группа пользователей для партнера по управлению устройствами
+Ориентация группы пользователей для партнера по управлению устройствами
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

@@ -1,18 +1,18 @@
 ---
-title: Get iosUpdateDeviceStatus
-description: Чтение свойств и связей объекта iosUpdateDeviceStatus.
+title: getGroupPolicySettingsDeviceSettingsReport action
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9aaeeb73b008ede75fd12de3242726e0bf9930fd4fcf97a39be5b49f6af158b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6707eb2c21e784bc152dd1c03b5259091d2f12da
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58263705"
 ---
-# <a name="get-iosupdatedevicestatus"></a>Get iosUpdateDeviceStatus
+# <a name="getgrouppolicysettingsdevicesettingsreport-action"></a>getGroupPolicySettingsDeviceSettingsReport action
 
 Пространство имен: microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "54143095"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md).
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые разрешения
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
@@ -37,30 +37,64 @@ ms.locfileid: "54143095"
 }
 -->
 ``` http
-GET /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
+POST /deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) в теле ответа.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|name|String|Пока не задокументировано.|
+|select|Коллекция строк|Н/Д|
+|search|String|Пока не задокументировано.|
+|groupBy|Коллекция строк|Н/Д|
+|orderBy|Коллекция строк|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|sessionId|String|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getGroupPolicySettingsDeviceSettingsReport
+
+Content-type: application/json
+Content-length: 278
+
+{
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
+}
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,25 +102,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/iosUpdateStatuses/{iosUpda
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 666
+Content-Length: 115
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.iosUpdateDeviceStatus",
-    "id": "63a79499-9499-63a7-9994-a7639994a763",
-    "installStatus": "available",
-    "osVersion": "Os Version value",
-    "deviceId": "Device Id value",
-    "userId": "User Id value",
-    "deviceDisplayName": "Device Display Name value",
-    "userName": "User Name value",
-    "deviceModel": "Device Model value",
-    "platform": 8,
-    "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00",
-    "status": "notApplicable",
-    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
-    "userPrincipalName": "User Principal Name value"
-  }
+  "value": "Z2V0R3JvdXBQb2xpY3lTZXR0aW5nc0RldmljZVNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDYzMDIzNDI3MQ=="
 }
 ```
 

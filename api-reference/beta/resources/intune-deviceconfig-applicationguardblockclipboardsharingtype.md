@@ -1,35 +1,35 @@
 ---
-title: тип перечисления Аппликатионгуардблоккклипбоардшарингтипе
-description: Возможные значения для Аппликатионгуардблоккклипбоардшарингтипе
+title: тип enum applicationGuardBlockClipboardSharingType
+description: Возможные значения для приложенияGuardBlockClipboardSharingType
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 91c2bceba0d4ffda030266d0f5617ce18ab29f68
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b15be85ff8ec8067ce8495f69f811526ccd3fa8fca69b09f03a558bff4bf3229
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49216383"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226478"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>тип перечисления Аппликатионгуардблоккклипбоардшарингтипе
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>тип enum applicationGuardBlockClipboardSharingType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для Аппликатионгуардблоккклипбоардшарингтипе
+Возможные значения для приложенияGuardBlockClipboardSharingType
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Not Configured|
-|блоккбос|1,1|Блокировка буфера обмена для совместного использования данных из узла в контейнер и из контейнера в узел|
-|блоккхосттоконтаинер|2|Блокировка буфера обмена для предоставления общего доступа к данным из узла в контейнер|
-|блоккконтаинертохост|4|Блокировка буфера обмена для предоставления общего доступа к данным из контейнера в узел|
-|блоккноне|4 |Блокировка буфера обмена для совместного использования данных без размещения в контейнере и из контейнера в узел|
+|notConfigured|0|Not Configured|
+|blockBoth|1 |Блокировка буфера обмена данными как от хоста до контейнера, так и от контейнера к хосту|
+|blockHostToContainer|2|Блокировка буфера обмена данными с хост-контейнера|
+|blockContainerToHost|3 |Блокировка буфера обмена данными из контейнера в хост|
+|blockNone|4 |Блокировка буфера обмена данными ни от хоста до контейнера, ни от контейнера к хосту|
 
 
 

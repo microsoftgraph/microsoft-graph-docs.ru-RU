@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Виклисчедуле
+title: тип еженедельного enumSchedule
 description: Возможные значения для еженедельного расписания.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c572cd16f1a327f14c7b888d8af24bee579fb30
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 88f56550b0696383c5f20cedaf6d15b4b1d96d0d175eedac917be79cd2c1c88f
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49215550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54251442"
 ---
-# <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
+# <a name="weeklyschedule-enum-type"></a>тип еженедельного enumSchedule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,16 +25,16 @@ ms.locfileid: "49215550"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|решения|1,1|Решения.|
-|воскресеньям|2|Воскресеньям.|
-|Вторник|4|Вторник.|
-|во|4 |Во.|
-|Четверг|5 |Четверг.|
-|Пятница|6 |Пятница.|
-|пятницам|7 |Пятницам.|
-|субботу|8 |Субботу.|
-|носчедуледскан|9 |Без запланированного сканирования|
+|userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
+|каждый день|1 |Каждый день.|
+|воскресенье|2|Воскресенье.|
+|понедельник|3 |В понедельник.|
+|вторник|4 |Во вторник.|
+|среда|5 |Среда.|
+|четверг|6 |В четверг.|
+|пятница|7 |В пятницу.|
+|суббота|8 |В субботу.|
+|noScheduledScan|9 |Отсутствие плановой проверки|
 
 
 

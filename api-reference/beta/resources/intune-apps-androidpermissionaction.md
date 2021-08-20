@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Андроидпермиссионактион
-description: Сопоставление разрешений приложения Android и действия, выполняемого Android, должны выполняться при запросе этого разрешения.
+title: тип ресурса androidPermissionAction
+description: Сопоставление между разрешением приложения Android и действием, которое должен принимать Android при запросе этого разрешения.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76090d450332b0c5656ee122a7338180fa692811
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: a1d686d85cb4bbe7979a6e3bcdac453c0f9ebfedd017ed61829dbbf24d5e61f6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242124"
 ---
-# <a name="androidpermissionaction-resource-type"></a>Тип ресурса Андроидпермиссионактион
+# <a name="androidpermissionaction-resource-type"></a>тип ресурса androidPermissionAction
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сопоставление разрешений приложения Android и действия, выполняемого Android, должны выполняться при запросе этого разрешения.
+Сопоставление между разрешением приложения Android и действием, которое должен принимать Android при запросе этого разрешения.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|права|String|Строка разрешений Android, определенная в официальной документации по Android.  Пример: "android.permission.READ_CONTACTS".|
-|action|[андроидпермиссионактионтипе](../resources/intune-apps-androidpermissionactiontype.md)|Тип действия разрешений Android. Возможные значения: `prompt`, `autoGrant`, `autoDeny`.|
+|разрешение|Строка|Строка разрешений на Android, определяемая в официальной документации на Android.  Пример "android.permission.READ_CONTACTS".|
+|action|[AndroidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Тип действия разрешения Android. Возможные значения: `prompt`, `autoGrant`, `autoDeny`.|
 
 ## <a name="relationships"></a>Связи
 Нет

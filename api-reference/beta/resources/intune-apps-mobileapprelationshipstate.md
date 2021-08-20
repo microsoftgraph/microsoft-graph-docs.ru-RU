@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса Мобилеаппрелатионшипстате
-description: Описывает сведения о состоянии установки дочернего приложения в контексте имени участника-пользователя и идентификатора устройства.
+title: тип ресурса mobileAppRelationshipState
+description: Описывает сведения о состоянии установки детского приложения в контексте upN и id устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62c4b0684f7e72b2dbba6ed840e7b5d8785d0dc9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b3f5930a33b464b33e2d81af78b13a216e03311b
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49261113"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58266949"
 ---
-# <a name="mobileapprelationshipstate-resource-type"></a>Тип ресурса Мобилеаппрелатионшипстате
+# <a name="mobileapprelationshipstate-resource-type"></a>тип ресурса mobileAppRelationshipState
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Описывает сведения о состоянии установки дочернего приложения в контексте имени участника-пользователя и идентификатора устройства.
+Описывает сведения о состоянии установки детского приложения в контексте upN и id устройства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|саурцеидс|Коллекция строк|Коллекция идентификаторов исходного приложения для мобильных устройств.|
-|targetId|String|Идентификатор связанного конечного приложения.|
-|таржетдисплайнаме|String|Отображаемое имя связанного конечного приложения.|
-|deviceId|String|Соответствующий идентификатор устройства.|
-|installState|[ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения конечного приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|инсталлстатедетаил|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Сведения о состоянии установки приложения. Возможные значения:,,,,,,,,,,,,,,,,,, `noAdditionalDetails` `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` , `seeUninstallErrorCode` , `pendingReboot` , `installingDependencies` `contentDownloaded` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` `processorArchitectureNotApplicable` ,,,,,,,,,,,,,,,,,.|
-|errorCode|Int32|Код ошибки для установки или удаления сбоев конечного приложения.|
-|таржетластсинкдатетиме|DateTimeOffset|Время последней синхронизации конечного приложения.|
+|sourceIds|Коллекция String|Коллекция исходных ids мобильного приложения.|
+|targetId|String|ID связанного целевого приложения.|
+|targetDisplayName|Строка|Имя отображения связанного целевого приложения.|
+|deviceId|String|Соответствующий id устройства.|
+|installState|[resultantAppState](../resources/intune-apps-resultantappstate.md)|Состояние установки приложения целевого приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Деталь состояния установки приложения. Возможные значения: `noAdditionalDetails` `dependencyFailedToInstall` , `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `contentDownloaded` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` , `minimumDiskSpaceNotMet` `processorArchitectureNotApplicable` , .|
+|errorCode|Int32|Код ошибки для установки или сбои в целевом приложении.|
+|targetLastSyncDateTime|DateTimeOffset|Последнее время синхронизации целевого приложения.|
 
 ## <a name="relationships"></a>Связи
 Нет
