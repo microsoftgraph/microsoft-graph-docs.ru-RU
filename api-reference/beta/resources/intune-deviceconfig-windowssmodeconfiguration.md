@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Виндовссмодеконфигуратион
-description: Возможные варианты настройки S режима разблокировки
+title: тип enum windowsSModeConfiguration
+description: Возможные параметры настройки разблокировки режима S
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ff0a38f51f4ff4e33d2f6df4e8955c34b34192de
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 7da7e5534965b42885091f5e551668e171112fdc6c6ef178099faf951fdda30d
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164253"
 ---
-# <a name="windowssmodeconfiguration-enum-type"></a>тип перечисления Виндовссмодеконфигуратион
+# <a name="windowssmodeconfiguration-enum-type"></a>тип enum windowsSModeConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные варианты настройки S режима разблокировки
+Возможные параметры настройки разблокировки режима S
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Ограничение|нуль|Этот параметр удалит все ограничения для режима разблокировки S — значение по умолчанию|
-|блок|1,1|Этот параметр блокирует возможность пользователя разблокировать устройство в режиме S|
-|блокиру|2|Этот параметр позволяет разблокировать устройство в режиме S|
+|noRestriction|0|Этот параметр снимет все ограничения для разблокировки режима S по умолчанию|
+|block|1 |Этот параметр заблокирует пользователя, чтобы разблокировать устройство из режима S|
+|разблокировка|2|Этот параметр разблокирует устройство из режима S|
 
 
 

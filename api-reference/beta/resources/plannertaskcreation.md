@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса plannerTaskCreation
-description: Содержит сведения об источнике plannerTask.
+title: тип ресурса plannerTaskCreation
+description: Содержит сведения о происхождении планировщикаTask.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e8a2a4bf3aae5f23a04c7ecb8ad043631f946b20
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 738067895a60b79684ef3f0356f59e777363d8140bc2734d2b38bf036c0feb84
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226121"
 ---
-# <a name="plannertaskcreation-resource-type"></a>Тип ресурса plannerTaskCreation
+# <a name="plannertaskcreation-resource-type"></a>тип ресурса plannerTaskCreation
 
 Пространство имен: microsoft.graph
 
-Содержит сведения об источнике [plannerTask.](plannerTask.md) У этого ресурса будут либо все его свойства, либо только одно свойство будет иметь значение, которое указывает, что задача была создана процессом, `null` описанным этим свойством. Все свойства `null` указывают, что эта задача не была создана специализированным процессом. Приложениям не нужно знать источник задачи, чтобы иметь возможность работать с ней; Однако некоторые приложения могут использовать дополнительные сведения для предоставления определенных функций, которые могут быть доступны для выполнения этих задач. Дополнительные дополнительные ресурсы см. в документации.
+Содержит сведения о происхождении [планировщикаTask](plannerTask.md). Этот ресурс будет иметь все его свойства, заданной, или точно одно свойство будет иметь значение, которое указывает, что задача была создана процессом, описанным `null` этим свойством. Все свойства указывают на то, что эта `null` задача не была создана специализированным процессом. Приложениям не нужно знать происхождение задачи, чтобы иметь возможность работать с ней; однако некоторые приложения могут использовать дополнительные сведения для предоставления определенных сведений об этих задачах. Дополнительные дополнительные возможности см. в документации по конкретным ресурсам.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|Сведения о процессе публикации, который создал эту задачу. `null` указывает, что задача не была создана процессом публикации.|
+|teamsPublicationInfo|[plannerTeamsPublicationInfo](../resources/plannerteamspublicationinfo.md)|Сведения о процессе публикации, создав эту задачу. `null` значение указывает, что задача не была создана в процессе публикации.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

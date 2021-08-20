@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29c58d1a3783a6e47351a1bb62c632ad3ca824e9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: af9c123db8e5bbb4102399f3a849977ae255d1ec
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958439"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255904"
 ---
 # <a name="remove-member-from-chat"></a>Удаление участника из чата
 Пространство имен: microsoft.graph
@@ -22,8 +22,8 @@ ms.locfileid: "50958439"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение| ChatMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос

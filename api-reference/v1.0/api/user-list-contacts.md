@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1d5d12fc90bd713ec4df1f96d69a9bf0c74e880b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 97dedbe141ea362fdef13a5f8dcdc4376b70b02e
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050222"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397126"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -71,7 +71,6 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -112,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Андроиддевицеовнерглобалпрокси
-description: Глобальный прокси-сервер владельца устройства Android.
+title: тип ресурса androidDeviceOwnerGlobalProxy
+description: Глобальный прокси владельца android-устройств.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8fcc2d3b3adb68b8c01ad529fc7181f928c4466
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4c1fcad2ba0006cedf44a4ad3bd7c04fbbf2571781fcca65ac531b09713b6fc8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49303526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245137"
 ---
-# <a name="androiddeviceownerglobalproxy-resource-type"></a>Тип ресурса Андроиддевицеовнерглобалпрокси
+# <a name="androiddeviceownerglobalproxy-resource-type"></a>тип ресурса androidDeviceOwnerGlobalProxy
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Глобальный прокси-сервер владельца устройства Android.
+Глобальный прокси владельца android-устройств.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

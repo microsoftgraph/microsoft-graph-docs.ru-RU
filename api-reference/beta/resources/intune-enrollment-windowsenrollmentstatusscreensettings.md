@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса Виндовсенроллментстатусскринсеттингс
-description: Настройка экрана состояния регистрации
+title: тип ресурса windowsEnrollmentStatusScreenSettings
+description: Параметр состояния регистрации
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0028f432708946ee983316d7702225e05bc5d6d7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 0f483d4217506aa440df1108c968ba4df83f8fc7f55433e193d4c07388a70ce2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164218"
 ---
-# <a name="windowsenrollmentstatusscreensettings-resource-type"></a>Тип ресурса Виндовсенроллментстатусскринсеттингс
+# <a name="windowsenrollmentstatusscreensettings-resource-type"></a>тип ресурса windowsEnrollmentStatusScreenSettings
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Настройка экрана состояния регистрации
+Параметр состояния регистрации
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|хидеинсталлатионпрогресс|Boolean|Отображение или скрытие хода установки для пользователя|
-|алловдевицеусебефорепрофилеандаппинсталлкомплете|Boolean|Разрешить или запретить пользователю использовать устройство до завершения установки профилей и приложений|
-|блоккдевицесетупретрибюсер|Boolean|Разрешить пользователю повторно выполнить установку при сбое установки|
-|алловлогколлектиононинсталлфаилуре|Boolean|Разрешение или блокировка сбора журналов при сбое установки|
-|кустомеррормессаже|String|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
-|инсталлпрогресстимеаутинминутес|Int32|Задать время ожидания установки (в минутах)|
-|алловдевицеусеонинсталлфаилуре|Boolean|Разрешить пользователю продолжать использовать устройство при сбое установки|
+|hideInstallationProgress|Логический|Показать пользователю или скрыть ход установки|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Логический|Разрешить или заблокировать использование устройства перед завершением установки профиля и приложения|
+|blockDeviceSetupRetryByUser|Логический|Разрешить пользователю повторно повторить установку при сбое установки|
+|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать коллекцию журналов при сбое установки|
+|customErrorMessage|String|Настройка настраиваемой ошибки для демонстрации при сбое установки|
+|installProgressTimeoutInMinutes|Int32|Установите время выполнения установки за несколько минут|
+|allowDeviceUseOnInstallFailure|Логический|Разрешить пользователю продолжить использование устройства при сбое установки|
 
 ## <a name="relationships"></a>Связи
 Нет

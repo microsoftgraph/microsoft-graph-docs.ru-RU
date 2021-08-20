@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Ролескопетагинфо
-description: Класс, содержащий свойства объекта тега области применения роли.
+title: Тип ресурса roleScopeTagInfo
+description: Класс, содержащий свойства объекта Тег области ролей.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a661c7e2dae97ccdc947604c197bb1a3c683146d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 31e57b1b3f8550e0ac58d31eca0745f48330dadd57e428b59cdfb356e0b95865
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49295420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224889"
 ---
-# <a name="rolescopetaginfo-resource-type"></a>Тип ресурса Ролескопетагинфо
+# <a name="rolescopetaginfo-resource-type"></a>Тип ресурса roleScopeTagInfo
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, содержащий свойства объекта тега области применения роли.
+Класс, содержащий свойства объекта Тег области ролей.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя тега области.|
-|ролескопетагид|String|Идентификатор тега Scope.|
+|displayName|Строка|Имя отображения тегов области.|
+|roleScopeTagId|Строка|ID тега области.|
 
 ## <a name="relationships"></a>Связи
 Нет

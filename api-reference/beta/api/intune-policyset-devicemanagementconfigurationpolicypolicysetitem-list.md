@@ -1,18 +1,18 @@
 ---
-title: Список pfxRecryptionRequests
-description: Список свойств и связей объектов pfxRecryptionRequest.
+title: List deviceManagementConfigurationPolicyPolicySetItems
+description: Список свойств и связей объектов deviceManagementConfigurationPolicyPolicySetItem.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: faa39227496f977d9db51aff5cbc5608c7e8285c53bfaf8e405cdfd659d466bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c6aaf0ddea4a6f4b65dcaecc0ac307bd3d5a3e3
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176941"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58267037"
 ---
-# <a name="list-pfxrecryptionrequests"></a>Список pfxRecryptionRequests
+# <a name="list-devicemanagementconfigurationpolicypolicysetitems"></a>List deviceManagementConfigurationPolicyPolicySetItems
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "54176941"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [pfxRecryptionRequest.](../resources/intune-raimportcerts-pfxrecryptionrequest.md)
+Список свойств и связей объектов [deviceManagementConfigurationPolicyPolicySetItem.](../resources/intune-policyset-devicemanagementconfigurationpolicypolicysetitem.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "54176941"
 }
 -->
 ``` http
-GET /pfxRecryptionRequests
+GET /deviceAppManagement/policySets/{policySetId}/items
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,14 +50,14 @@ GET /pfxRecryptionRequests
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [deviceManagementConfigurationPolicyPolicySetItem](../resources/intune-policyset-devicemanagementconfigurationpolicypolicysetitem.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/pfxRecryptionRequests
+GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,24 +65,23 @@ GET https://graph.microsoft.com/beta/pfxRecryptionRequests
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 659
+Content-Length: 583
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.pfxRecryptionRequest",
-      "tenantId": "f9882bcd-2bcd-f988-cd2b-88f9cd2b88f9",
-      "userId": "a991071c-071c-a991-1c07-91a91c0791a9",
-      "deviceId": "6de0af45-af45-6de0-45af-e06d45afe06d",
-      "profileId": "6389d896-d896-6389-96d8-896396d88963",
-      "thumbprint": "Thumbprint value",
-      "deviceKeyThumbprint": "Device Key Thumbprint value",
-      "status": 6,
-      "sourceType": 10,
-      "createdTime": "2017-01-01T00:03:18.9597073-08:00",
-      "lastModifiedTime": "2017-01-01T00:03:18.5958204-08:00",
-      "isDeleted": true,
-      "eTag": "ETag value"
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyPolicySetItem",
+      "id": "feba655d-655d-feba-5d65-bafe5d65bafe",
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "payloadId": "Payload Id value",
+      "itemType": "Item Type value",
+      "displayName": "Display Name value",
+      "status": "validating",
+      "errorCode": "unauthorized",
+      "guidedDeploymentTags": [
+        "Guided Deployment Tags value"
+      ]
     }
   ]
 }
