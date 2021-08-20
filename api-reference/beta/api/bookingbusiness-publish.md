@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d60a88324cd86cd599fc9986dfa3b6d1a4f737ea
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cdec9a82ce4da292c1e3a71a0af581766fdf95b8
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786589"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409083"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: публикация
 
@@ -35,7 +35,6 @@ ms.locfileid: "52786589"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/publish
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
