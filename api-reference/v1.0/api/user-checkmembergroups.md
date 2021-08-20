@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7a4bf9b8487ffe5b4785b8729ea6a6307b3a80d2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 35ea75115595c0ee0cf6c2f57be5507ccd950d87
+ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682224"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "58409020"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -29,6 +29,8 @@ ms.locfileid: "52682224"
 | Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                     |
 | Для приложений                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Примечание.** Чтобы перечислить скрытых участников группы, требуется разрешение Member.Read.Hidden.
 
 ## <a name="http-request"></a>HTTP-запрос
 
