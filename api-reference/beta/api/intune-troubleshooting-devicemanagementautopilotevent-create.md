@@ -5,18 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce61e72124fc58b710d17d246827e65edf133b38
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 2e6909690f7289d5c91d171d520efd6d7f75d3c8
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51156032"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58258042"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>Создание deviceManagementAutopilotEvent
 
 Пространство имен: microsoft.graph
-
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,8 +25,8 @@ ms.locfileid: "51156032"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +41,7 @@ POST /deviceManagement/autopilotEvents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,28 +51,28 @@ POST /deviceManagement/autopilotEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |deviceId|String|ID устройства, связанный с объектом|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |deviceRegisteredDateTime|DateTimeOffset|Дата регистрации устройства.|
 |enrollmentStartDateTime|DateTimeOffset|Дата начала регистрации устройства.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|deviceSerialNumber|Строка|Серийный номер устройства.|
+|deviceSerialNumber|String|Серийный номер устройства.|
 |managedDeviceName|String|Имя управляемого устройства.|
 |userPrincipalName|String|Имя пользователя, используемая для регистрации устройства.|
-|windowsAutopilotDeploymentProfileDisplayName|Строка|Имя профиля автопилота.|
+|windowsAutopilotDeploymentProfileDisplayName|String|Имя профиля автопилота.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации, как "Регистрация", "Сбой". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|Строка|Имя профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
 |windows10EnrollmentCompletionPageConfigurationId|Строка|ID профиля страницы состояния регистрации|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, такое как Success, Failure, InProgress, SuccessWithTimeout. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа установки устройства состояния страницы регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа настройки учетной записи страницы состояния регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |osVersion|String|Версия операционной системы устройства.|
-|deploymentDuration|Duration|Продолжительность развертывания автопилота, включая регистрацию.|
-|deploymentTotalDuration|Duration|Общая продолжительность развертывания от регистрации до экрана Desktop.|
-|devicePreparationDuration|Duration|Время, затраченное на регистрацию устройств.|
-|deviceSetupDuration|Duration|Время, проведенное в устройстве ESP.|
-|accountSetupDuration|Duration|Время, затраченное в пользовательском ESP.|
+|deploymentDuration|Длительность|Продолжительность развертывания автопилота, включая регистрацию.|
+|deploymentTotalDuration|Длительность|Общая продолжительность развертывания от регистрации до экрана Desktop.|
+|devicePreparationDuration|Длительность|Время, затраченное на регистрацию устройств.|
+|deviceSetupDuration|Длительность|Время, проведенное в устройстве ESP.|
+|accountSetupDuration|Длительность|Время, затраченное в пользовательском ESP.|
 |deploymentStartDateTime|DateTimeOffset|Время начала развертывания.|
 |deploymentEndDateTime|DateTimeOffset|Время окончания развертывания.|
 |targetedAppCount|Int32|Количество целевых приложений.|
@@ -91,7 +89,7 @@ POST /deviceManagement/autopilotEvents
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents
+POST https://graph.microsoft.com/v1/deviceManagement/autopilotEvents
 Content-type: application/json
 Content-length: 1545
 

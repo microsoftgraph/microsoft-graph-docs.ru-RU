@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5950e65c02301bbd6379b0860d418692ed2f0721
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1dc4e226f0d2ecfa64a7803542c77901c925c02d
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786967"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58396825"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 В запросе укажите идентификатор группы и идентификатор объекта каталога, который вы хотите удалить.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
@@ -87,6 +87,11 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>См. также
+- [Добавление участника в команду](team-post-members.md)
+- [Обновление роли участника в команде](team-update-members.md)
+- [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
