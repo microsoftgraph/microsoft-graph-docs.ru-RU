@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Девицеманажементаппликабилитирулеоседитион
+title: тип ресурса deviceManagementApplicabilityRuleOsEdition
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cff458e69d0394ce3e74f2faab29bec9cfe2ea50
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 044c43dce614c27a3ff408dfa67692bee638614af86bbd5aadeef58faa3da737
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283501"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54242953"
 ---
-# <a name="devicemanagementapplicabilityruleosedition-resource-type"></a>Тип ресурса Девицеманажементаппликабилитирулеоседитион
+# <a name="devicemanagementapplicabilityruleosedition-resource-type"></a>тип ресурса deviceManagementApplicabilityRuleOsEdition
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,7 +25,7 @@ ms.locfileid: "49283501"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|оседитионтипес|Коллекция [windows10EditionType](../resources/intune-deviceconfig-windows10editiontype.md)|Тип выпуска ОС для правила применимости.|
+|osEditionTypes|[коллекция windows10EditionType](../resources/intune-deviceconfig-windows10editiontype.md)|Тип издания правила применимости ОС.|
 |name|String|Имя объекта.|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Тип правила применимости. Возможные значения: `include`, `exclude`.|
 

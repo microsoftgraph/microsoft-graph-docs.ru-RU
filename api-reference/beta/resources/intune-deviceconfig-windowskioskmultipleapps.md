@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса windowsKioskMultipleApps
-description: Класс, используемый для определения конфигурации приложения с многорежимным режимом для конфигурации киоска
+title: тип ресурса windowsKioskMultipleApps
+description: Класс, используемый для определения конфигурации приложения MultiMode для конфигурации киоска
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc30f875ff43b7e1b7336754cce5986f9fa702c1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: e7be767a72b68eeff6cf85aa46051222d81d18fe13430d473db96332e1ec57a5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49231530"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54164302"
 ---
-# <a name="windowskioskmultipleapps-resource-type"></a>Тип ресурса windowsKioskMultipleApps
+# <a name="windowskioskmultipleapps-resource-type"></a>тип ресурса windowsKioskMultipleApps
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, используемый для определения конфигурации приложения с многорежимным режимом для конфигурации киоска
+Класс, используемый для определения конфигурации приложения MultiMode для конфигурации киоска
 
 
-Наследуется от [виндовскиоскаппконфигуратион](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
+Наследует [от windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|apps|Коллекция [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|Это единственные приложения Магазина Windows, которые будут доступны для запуска из меню "Пуск". Эта коллекция может содержать не более 128 элементов.|
-|шовтаскбар|Boolean|Этот параметр позволяет администратору указать, отображается ли панель задач.|
-|алловакцесстодовнлоадсфолдер|Boolean|Этот параметр разрешает доступ к папке "загрузки" в проводнике.|
-|дисалловдесктопаппс|Boolean|Этот параметр указывает, что классические приложения разрешены. Значение по умолчанию — true.|
-|startMenuLayoutXml|Binary|Позволяет администраторам переопределять макет запуска по умолчанию и запрещает пользователю изменять его. Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML должен быть в двоичном формате.|
+|apps|[коллекция windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Это единственные Windows store Apps, которые будут доступны для запуска из меню . Эта коллекция может содержать не более 128 элементов.|
+|showTaskBar|Логический|Этот параметр позволяет администратору указать, отображается ли панели задач или нет.|
+|allowAccessToDownloadsFolder|Логический|Этот параметр позволяет получить доступ к папке Downloads в проводнике файлов.|
+|disallowDesktopApps|Логический|Этот параметр указывает, что настольные приложения разрешены. По умолчанию значение true.|
+|startMenuLayoutXml|Binary|Позволяет администраторам переопределять макет Start по умолчанию и не позволяет пользователю изменять его. Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML должен быть в двоичном формате.|
 
 ## <a name="relationships"></a>Связи
 Нет

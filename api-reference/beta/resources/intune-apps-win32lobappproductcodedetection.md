@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса win32LobAppProductCodeDetection
-description: Содержит код продукта и свойства версии для обнаружения приложения Win32
+title: тип ресурса win32LobAppProductCodeDetection
+description: Содержит код продукта и свойства версий для обнаружения приложения Win32
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: baceeb2cbc3ddfe28e81871159fb24db96accd64
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4f778b181b4965ece80beddad430648df467826de4cc5a613fbb2206a8c1523c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49280867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54148339"
 ---
-# <a name="win32lobappproductcodedetection-resource-type"></a>Тип ресурса win32LobAppProductCodeDetection
+# <a name="win32lobappproductcodedetection-resource-type"></a>тип ресурса win32LobAppProductCodeDetection
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит код продукта и свойства версии для обнаружения приложения Win32
+Содержит код продукта и свойства версий для обнаружения приложения Win32
 
 
-Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
+Наследует [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|productCode|String|Код продукта для бизнес-приложения Win32 (LoB).|
-|продуктверсионоператор|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для определения версии продукта. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|productVersion|String|Версия приложения, на котором установлен продукт Win32 бизнес (LoB).|
+|productCode|String|Код продукта приложения Win32 Line of Business (LoB).|
+|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения версии продукта. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|productVersion|String|Версия продукта приложения Win32 Line of Business (LoB).|
 
 ## <a name="relationships"></a>Связи
 Нет

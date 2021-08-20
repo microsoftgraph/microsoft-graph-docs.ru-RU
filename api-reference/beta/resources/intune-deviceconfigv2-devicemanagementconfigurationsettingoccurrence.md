@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Девицеманажементконфигуратионсеттингоккурренце
+title: тип ресурса deviceManagementConfigurationSettingOccurrence
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b8a93c75f011dba9816ee84a9ef8bf5cd05d275
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 21ff7940e6e657d965b27823f0480b8247bae013767b51eaabb737a6d21ed844
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302207"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244836"
 ---
-# <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>Тип ресурса Девицеманажементконфигуратионсеттингоккурренце
+# <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>тип ресурса deviceManagementConfigurationSettingOccurrence
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49302207"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|миндевицеоккурренце|Int32|Параметр минимальной настройки можно задать для устройства. Миндевицеоккурренце 0 означает, что параметр является необязательным|
-|максдевицеоккурренце|Int32|Параметр максимальных значений времени можно задать для устройства. |
+|minDeviceOccurrence|Int32|Минимальный параметр времени можно установить на устройстве. Параметр MinDeviceOccurrence 0 означает необязательный|
+|maxDeviceOccurrence|Int32|Максимальный параметр времени можно установить на устройстве. |
 
 ## <a name="relationships"></a>Связи
 Нет

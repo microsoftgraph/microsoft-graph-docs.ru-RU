@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Булкманажеддевицеактионресулт
+title: bulkManagedDeviceActionResult resource type
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae016986f8c3216156a4855f06aa77929e6acefc
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 782dd5d411f65a0dd465612e7f0bd8eaacfb60a7862500ad9d8c81f00305f04c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49299505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244822"
 ---
-# <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
+# <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult resource type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,10 +25,10 @@ ms.locfileid: "49299505"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|сукцессфулдевицеидс|Коллекция строк|Успешное выполнение устройств|
-|фаиледдевицеидс|Коллекция строк|Неисправные устройства|
-|нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
-|нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
+|successfulDeviceIds|Коллекция String|Успешные устройства|
+|failedDeviceIds|Коллекция String|Сбой устройств|
+|notFoundDeviceIds|Коллекция String|Не найденные устройства|
+|notSupportedDeviceIds|Коллекция String|Не поддерживаемые устройства|
 
 ## <a name="relationships"></a>Связи
 Нет

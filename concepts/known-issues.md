@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 2e4fe37e6a00337f36fea053b462e5b3a9e1a72f
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: e6ef743a04d7b3edce53ef1a13d59b7f090c0c05
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384431"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397077"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -263,7 +263,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Удаление владельца группы также удаляет пользователя как участника группы
 
-Если вызвать запрос [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md), пользователь также удаляется из списка /groups/{id}/members. Чтобы устранить эту проблему, удалите пользователя из владельцев и участников, подождать 10 секунд и снова добавить его к участникам.
+Если вызвать запрос [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) для группы, связанной с [командой](/graph/api/resources/team.md), пользователь также удаляется из списка /groups/{id}/members. Чтобы устранить эту проблему, удалите пользователя из владельцев и участников, подождать 10 секунд и снова добавить его к участникам.
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>Удостоверение и доступ | API приложений и субъектов-служб
 

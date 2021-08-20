@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ec191064f0dd14cac67279a6802bc57849e4a740c1e1248cba8234e95ce32c96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ec7c42f49e0bed71abf1911b73dbb40d3cdd67a
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58255775"
 ---
 # <a name="keycredential-resource-type"></a>тип ресурса keyCredential
 
@@ -22,7 +22,7 @@ ms.locfileid: "54196959"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа |
-| displayName | String | Удобное имя для ключа. Необязательно. |
+| displayName | Строка | Удобное имя для ключа. Необязательный. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |key|Двоичный| Необработанные данные сертификата в массиве byte, преобразованных в строку Base64; например, `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
 |keyId|Guid|Уникальный идентификатор (GUID) для ключа.|

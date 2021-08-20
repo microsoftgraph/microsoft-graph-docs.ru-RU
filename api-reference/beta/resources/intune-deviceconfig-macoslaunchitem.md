@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Макослаунчитем
+title: тип ресурса macOSLaunchItem
 description: Представляет приложение в списке элементов запуска macOS
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8834b43e6d4f09e95701b700c3fa11224347291
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f432d3ea12a8338c343bce61dcc7a6b2d71ebbef2de70b912d0fb3870fc9d904
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49294307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244990"
 ---
-# <a name="macoslaunchitem-resource-type"></a>Тип ресурса Макослаунчитем
+# <a name="macoslaunchitem-resource-type"></a>тип ресурса macOSLaunchItem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49294307"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|path|String|Путь к запускаемому элементу.|
-|скрытых|Boolean|Указывает, следует ли скрыть элемент в списке "пользователи и группы".|
+|path|String|Путь к элементу запуска.|
+|скрыть|Логический|Следует ли скрывать элемент из списка пользователей и групп.|
 
 ## <a name="relationships"></a>Связи
 Нет

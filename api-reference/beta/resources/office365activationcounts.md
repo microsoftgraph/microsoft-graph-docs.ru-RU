@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365ActivationCounts
+title: тип ресурса office365ActivationCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac3b6bb14b347f4ab273bbf65ce767f1ae6e1a2
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 39e679da134120377f17dab520c332dc54aab328ef924b65212f5145279a8402
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983205"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54176325"
 ---
-# <a name="office365activationcounts-resource-type"></a>Тип ресурса office365ActivationCounts
+# <a name="office365activationcounts-resource-type"></a>тип ресурса office365ActivationCounts
 
 Пространство имен: microsoft.graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "49983205"
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | Дата   | Последняя дата содержимого.          |
-| productType       | String | Тип продукта, например "Microsoft 365 профессиональныйplus" или "Project Client". |
-| windows           | Int64  | Количество активаций в Windows. Это число включает каждую активацию на любом компьютере с Windows. |
-| mac               | Int64  | Количество активаций для Mac OS.          |
-| android           | Int64  | Количество активаций на устройстве с Android.  |
-| ios               | Int64  | Количество активаций для iOS.             |
-| windows10Mobile   | Int64  | Количество активаций в Windows 10 Mobile. |
+| reportRefreshDate | Дата   | Последняя дата контента.          |
+| productType       | Строка | Тип продукта, например "Microsoft 365 ProPlus" или "Project клиент". |
+| Windows           | Int64  | Активация рассчитывается на Windows. Этот номер включает каждую активацию на любом Windows компьютере. |
+| mac               | Int64  | Активация рассчитывается на ОС Mac.          |
+| Android           | Int64  | Активация рассчитывается на устройстве Android.  |
+| ios               | Int64  | Активация рассчитывается на iOS.             |
+| windows10Mobile   | Int64  | Активация рассчитывается на Windows 10 мобильном телефоне. |
 
 ## <a name="json-representation"></a>Представление JSON
 

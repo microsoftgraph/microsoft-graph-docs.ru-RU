@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса Рбакаппликатионмултипле
+title: Тип ресурса rbacApplicationMultiple
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa95fc7062e31e3348326cd3d2cabe332d9e9f7b
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 4fc6253053d42793a017bb222a20000d75ee8b9182f5c11be529efa2876322d3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49272019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54248293"
 ---
-# <a name="rbacapplicationmultiple-resource-type"></a>Тип ресурса Рбакаппликатионмултипле
+# <a name="rbacapplicationmultiple-resource-type"></a>Тип ресурса rbacApplicationMultiple
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,8 +25,8 @@ ms.locfileid: "49272019"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Рбакаппликатионмултипле](../api/intune-rbac-rbacapplicationmultiple-get.md)|[рбакаппликатионмултипле](../resources/intune-rbac-rbacapplicationmultiple.md)|Чтение свойств и связей объекта [рбакаппликатионмултипле](../resources/intune-rbac-rbacapplicationmultiple.md) .|
-|[Обновление Рбакаппликатионмултипле](../api/intune-rbac-rbacapplicationmultiple-update.md)|[рбакаппликатионмултипле](../resources/intune-rbac-rbacapplicationmultiple.md)|Обновление свойств объекта [рбакаппликатионмултипле](../resources/intune-rbac-rbacapplicationmultiple.md) .|
+|[Get rbacApplicationMultiple](../api/intune-rbac-rbacapplicationmultiple-get.md)|[rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md)|Чтение свойств и связей объекта [rbacApplicationMultiple.](../resources/intune-rbac-rbacapplicationmultiple.md)|
+|[Обновление rbacApplicationMultiple](../api/intune-rbac-rbacapplicationmultiple-update.md)|[rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md)|Обновление свойств объекта [rbacApplicationMultiple.](../resources/intune-rbac-rbacapplicationmultiple.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
