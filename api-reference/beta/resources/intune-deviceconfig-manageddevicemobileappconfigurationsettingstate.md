@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса Манажеддевицемобилеаппконфигуратионсеттингстате
-description: Состояние параметров конфигурации мобильных приложений для управляемых устройств для данного устройства.
+title: managedDeviceMobileAppConfigurationSettingState resource type
+description: Состояние настройки конфигурации мобильного приложения для управляемого устройства для данного устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9e74a4fb9b6739d5051e37af4c15c48ede6bda1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 630bd156f41d8abaabe66cfb54203d51d50ff127d95a2ce4794ebd0e2a6bdcaf
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54236285"
 ---
-# <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>Тип ресурса Манажеддевицемобилеаппконфигуратионсеттингстате
+# <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>managedDeviceMobileAppConfigurationSettingState resource type
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние параметров конфигурации мобильных приложений для управляемых устройств для данного устройства.
+Состояние настройки конфигурации мобильного приложения для управляемого устройства для данного устройства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -28,7 +28,7 @@ ms.locfileid: "49302840"
 |setting|String|Параметр для отчета|
 |settingName|String|Локализованное или понятное имя параметра для отчета|
 |instanceDisplayName|String|Имя экземпляра параметра для отчета|
-|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия параметру. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
 |errorDescription|String|Описание ошибки|
 |userId|String|ИД пользователя|
@@ -37,7 +37,7 @@ ms.locfileid: "49302840"
 |userPrincipalName|String|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
-|сеттингинстанцеид|String|сеттингинстанцеид|
+|settingInstanceId|Строка|SettingInstanceId|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5ca79e7870893e9748ea93222e96ade36649e6e
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: d9bef5fe65d8896d9c478027a261b512c6b67a99
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51135917"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58261367"
 ---
 # <a name="update-userexperienceanalyticsresourceperformance"></a>Обновление userExperienceAnalyticsResourcePerformance
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -27,9 +27,9 @@ ms.locfileid: "51135917"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperien
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,6 +66,7 @@ PATCH /deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperien
 |ramSpikeTimeScore|Int32|Оценка времени пика пика оперативной памяти устройства аналитики пользовательского интерфейса. Допустимые значения: от 0 до 100|
 |ramSpikeTimePercentageThreshold|Двойное с плавающей точкой|Порог ramSpikeTimeScore. Допустимые значения: от 0 до 100|
 |deviceResourcePerformanceScore|Int32|Оценка производительности ресурсов определенного устройства. Допустимые значения: от 0 до 100|
+|averageSpikeTimeScore|Int32|AverageSpikeTimeScore устройства или типа модели. Допустимые значения: от 0 до 100|
 
 
 
@@ -79,7 +80,7 @@ PATCH /deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperien
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperienceAnalyticsResourcePerformanceId}
 Content-type: application/json
-Content-length: 553
+Content-length: 584
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -94,7 +95,8 @@ Content-length: 553
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14
+  "deviceResourcePerformanceScore": 14,
+  "averageSpikeTimeScore": 5
 }
 ```
 
@@ -103,7 +105,7 @@ Content-length: 553
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 602
+Content-Length: 633
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsResourcePerformance",
@@ -119,7 +121,8 @@ Content-Length: 602
   "cpuSpikeTimePercentageThreshold": 10.333333333333334,
   "ramSpikeTimeScore": 1,
   "ramSpikeTimePercentageThreshold": 10.333333333333334,
-  "deviceResourcePerformanceScore": 14
+  "deviceResourcePerformanceScore": 14,
+  "averageSpikeTimeScore": 5
 }
 ```
 

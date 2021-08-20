@@ -1,33 +1,33 @@
 ---
-title: тип перечисления Нетворксинглесигнонтипе
-description: Wi-Fi параметров типа единого входа в сеть.
+title: тип enum networkSingleSignOnType
+description: Wi-Fi Сетевой единый знак по типу Параметры.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21fee1e773bec4e4e651f222a9f949b557638631
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2b3aabd6cd16c6b7a1e3771a7b8c8c721d9eb1a2b582962908a32a53bcf9c6c6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54215134"
 ---
-# <a name="networksinglesignontype-enum-type"></a>тип перечисления Нетворксинглесигнонтипе
+# <a name="networksinglesignontype-enum-type"></a>тип enum networkSingleSignOnType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Wi-Fi параметров типа единого входа в сеть.
+Wi-Fi Сетевой единый знак по типу Параметры.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|отключено|нуль|Отключено|
-|Предварительный вход|1,1|Предварительный вход|
-|Вход в систему|2|После входа|
+|отключено|0|Отключено|
+|prelogon|1 |Pre-Logon|
+|postlogon|2|Post-Logon|
 
 
 

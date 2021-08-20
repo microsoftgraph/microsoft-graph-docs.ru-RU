@@ -5,12 +5,12 @@ author: michaelrm97
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1b01606a7ac6d0384257436ca9d98c4c06dceeb4
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 71834c591fb0b415dd7e6b3e841afa9ea42b967472144f2ca5a77e56f3550441
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57323815"
 ---
 # <a name="delete-mobileappmanagementpolicy"></a>Удаление mobileAppManagementPolicy
 

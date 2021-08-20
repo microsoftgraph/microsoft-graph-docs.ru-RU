@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса МакосассоЦиатеддомаинситем
-description: Сопоставление идентификаторов приложений со связанными доменами.
+title: тип ресурса macOSAssociatedDomainsItem
+description: Сопоставление идентификаторов приложений с связанными доменами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b14cc5fe7c13bbcdde94733c41caf2b68c0451e
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ff607e0eb88a53aa53500b278e7cbf90da49a34fa4033a3907f24818c3618ddc
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49268939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54183129"
 ---
-# <a name="macosassociateddomainsitem-resource-type"></a>Тип ресурса МакосассоЦиатеддомаинситем
+# <a name="macosassociateddomainsitem-resource-type"></a>тип ресурса macOSAssociatedDomainsItem
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сопоставление идентификаторов приложений со связанными доменами.
+Сопоставление идентификаторов приложений с связанными доменами.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicationIdentifier|String|Идентификатор приложения, с которым связываются домены.|
-|домена|Коллекция строк|Список подсвязываемых доменов.|
-|директдовнлоадсенаблед|Boolean|Определяет, будут ли данные загружаться напрямую или с помощью сети CDN.|
+|applicationIdentifier|Строка|Идентификатор приложения для связывать домены с.|
+|домены|Коллекция String|Список доменов, которые можно связать.|
+|directDownloadsEnabled|Логический|Определяет, следует ли загружать данные напрямую или через CDN.|
 
 ## <a name="relationships"></a>Связи
 Нет
