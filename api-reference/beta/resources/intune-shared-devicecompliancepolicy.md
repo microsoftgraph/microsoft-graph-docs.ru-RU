@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46aa0a0136bbc2ad00fdf70d4ab9a8d3bc6ef7f1
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: 02e4e9c3c292bbc37d00b0cd2ce22828fb342a65af7fc661528bdbecb427a801
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51867296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224427"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -37,10 +37,10 @@ ms.locfileid: "51867296"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|String|Указанное администратором описание конфигурации устройства.|
+|description|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|

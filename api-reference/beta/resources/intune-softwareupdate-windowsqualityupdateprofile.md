@@ -1,26 +1,26 @@
 ---
 title: тип ресурса windowsQualityUpdateProfile
-description: Профиль обновления качества Windows
+description: Windows Профиль обновления качества
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a2a81f8031968189e7afb9b5f5412a9f55420f5
-ms.sourcegitcommit: f592c9ff96ceeb40caa67fcfe90fe6c8525cb7d2
+ms.openlocfilehash: 090f22169255049482cd561ef509fb6d7aba8f8deca5699873e2c14e0f200e43
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51141388"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54224315"
 ---
 # <a name="windowsqualityupdateprofile-resource-type"></a>тип ресурса windowsQualityUpdateProfile
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Профиль обновления качества Windows
+Windows Профиль обновления качества
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -35,17 +35,17 @@ ms.locfileid: "51141388"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID политики Intune.|
-|displayName|Строка|Имя отображения для профиля.|
+|id|String|ID политики Intune.|
+|displayName|String|Имя отображения для профиля.|
 |description|Строка|Описание профиля, указанного пользователем.|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Параметры ускоренного обновления.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления качества.|
 |releaseDateDisplayName|Строка|Содружественная дата выпуска для отображения для выпуска обновления качества|
-|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|[коллекция windowsQualityUpdateProfileAssignment](../resources/intune-softwareupdate-windowsqualityupdateprofileassignment.md)|Список групповых назначений профиля.|
