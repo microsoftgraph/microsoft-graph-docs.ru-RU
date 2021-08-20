@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Девицеконфигуратионтаржетедусеранддевице
-description: Сводка по конфликтам для набора политик конфигурации устройств.
+title: тип ресурса deviceConfigurationTargetedUserAndDevice
+description: Сводка конфликтов для набора политик конфигурации устройств.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c722cf1a21e46ec6066efc1e836793d77ce8e8b7
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 671cbd9e5c6cf9448b86f8ce3f1bd852b794ca492e55b9c0edcbde8a01e0a3c0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199394"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227479"
 ---
-# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Тип ресурса Девицеконфигуратионтаржетедусеранддевице
+# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>тип ресурса deviceConfigurationTargetedUserAndDevice
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сводка по конфликтам для набора политик конфигурации устройств.
+Сводка конфликтов для набора политик конфигурации устройств.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceId|String|Идентификатор устройства в возврате.|
-|deviceName|String|Имя устройства в возврате.|
-|userId|String|Идентификатор пользователя в возврате.|
-|userDisplayName|String|Отображаемое имя пользователя в репозитории|
-|userPrincipalName|String|Имя участника-пользователя в возврате.|
-|ластчеккиндатетиме|DateTimeOffset|Время последнего возврата для этой связи пользователя и устройства.|
+|deviceId|String|Id устройства в проверке.|
+|deviceName|String|Имя устройства в проверке.|
+|userId|String|ID пользователя в проверке.|
+|userDisplayName|String|Отображаемая фамилия пользователя в чеке|
+|userPrincipalName|String|UpN пользователя в проверке.|
+|lastCheckinDateTime|DateTimeOffset|Последнее время проверки для этой пары пользователей и устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет
