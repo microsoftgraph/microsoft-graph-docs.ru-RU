@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса Персонаннотатион
-description: Тип ресурса Персонаннотатион
+title: тип ресурса personAnnotation
+description: тип ресурса personAnnotation
 author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 403df171498bcde62d113ce2a2f2a27cf3987285
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49e7945b1ba07d7daedbd197b826148921f2f0227dd71b5780413a3b67b6c6be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54197851"
 ---
-# <a name="personannotation-resource-type"></a>Тип ресурса Персонаннотатион
+# <a name="personannotation-resource-type"></a>тип ресурса personAnnotation
 
 Пространство имен: microsoft.graph
 
-Предоставляет сведения в примечаниях, которые пользователь связал с собственными службами в различных службах и совместно используется совместно с другими пользователями.
+Предоставляет сведения в заметках, которые пользователь связал с собой в различных службах и поделился с другими.
 
-Наследуется от [итемфацет](../resources/itemfacet.md).
+Наследует от [itemFacet](../resources/itemfacet.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список заметок](../api/profile-list-notes.md)|Коллекция [персонаннотатион](../resources/personannotation.md)|Получение ресурсов Персонаннотатион из свойства навигации Notes.|
-|[Создание Персонаннотатион](../api/profile-post-notes.md)|[персонаннотатион](../resources/personannotation.md)|Создание нового объекта Персонаннотатион.|
-|[Получение Персонаннотатион](../api/personannotation-get.md)|[персонаннотатион](../resources/personannotation.md)|Чтение свойств и связей объекта [персонаннотатион](../resources/personannotation.md) .|
-|[Обновление Персонаннотатион](../api/personannotation-update.md)|[персонаннотатион](../resources/personannotation.md)|Обновление свойств объекта [персонаннотатион](../resources/personannotation.md) .|
-|[Удаление Персонаннотатион](../api/personannotation-delete.md)|Нет|Удаляет объект [персонаннотатион](../resources/personannotation.md) .|
+|[Заметки списка](../api/profile-list-notes.md)|[коллекция personAnnotation](../resources/personannotation.md)|Получите ресурсы personAnnotation из свойства навигации примечаний.|
+|[Создание personAnnotation](../api/profile-post-notes.md)|[personAnnotation](../resources/personannotation.md)|Создание нового объекта personAnnotation.|
+|[Get personAnnotation](../api/personannotation-get.md)|[personAnnotation](../resources/personannotation.md)|Ознакомьтесь с свойствами и отношениями [объекта personAnnotation.](../resources/personannotation.md)|
+|[Обновление personAnnotation](../api/personannotation-update.md)|[personAnnotation](../resources/personannotation.md)|Обновление свойств объекта [personAnnotation.](../resources/personannotation.md)|
+|[Удаление personAnnotation](../api/personannotation-delete.md)|Нет|Удаляет объект [personAnnotation.](../resources/personannotation.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|описаны|[itemBody](../resources/itembody.md)|Содержит подробные сведения о самом заметке.|
-|displayName|String|Содержит понятное имя для заметки.|
-|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создав объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|подробные|[itemBody](../resources/itembody.md)|Содержит сведения о самой заметке.|
+|displayName|Строка|Содержит удобное имя для заметки.|
+|id|String|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которые в последний раз изменили объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

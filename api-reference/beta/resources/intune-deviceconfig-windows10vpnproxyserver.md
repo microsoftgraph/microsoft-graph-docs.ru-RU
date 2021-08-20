@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса windows10VpnProxyServer
-description: VPN-прокси-сервер.
+title: тип ресурса windows10VpnProxyServer
+description: VPN Прокси-сервер.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 684fe0ec823ca43d2a7784555678beddb43dbff1
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: f4c3d98660ffdf28b291fc4e5547f572a5ba907b2c2c9712623cbba718807a63
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49279397"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54219978"
 ---
-# <a name="windows10vpnproxyserver-resource-type"></a>Тип ресурса windows10VpnProxyServer
+# <a name="windows10vpnproxyserver-resource-type"></a>тип ресурса windows10VpnProxyServer
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-VPN-прокси-сервер.
+VPN Прокси-сервер.
 
 
-Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)
+Наследуется [от vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|address|String|Address. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|порта|Int32|Порта. Допустимые значения — от 0 до 65535, наследуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|бипасспроксисерверфорлокаладдресс|Boolean|Обход прокси-сервера для локального адреса.|
+|automaticConfigurationScriptUrl|Строка|URL-адрес сценария автоматической конфигурации прокси. Унаследованный от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|address|String|Адрес. Унаследованный от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|порт|Int32|Порт. Допустимые значения от 0 до 65535, унаследованные от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|bypassProxyServerForLocalAddress|Логический|Обход прокси-сервера для локального адреса.|
 
 ## <a name="relationships"></a>Связи
 Нет

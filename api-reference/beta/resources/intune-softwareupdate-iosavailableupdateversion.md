@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса Иосаваилаблеупдатеверсион
-description: сведения о доступных версиях обновлений iOS
+title: тип ресурса iosAvailableUpdateVersion
+description: Сведения о версии обновления в iOS
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3997ce86c780713849d0e0e4773457ff665b0e0d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 3174d0405785d31547f5b85bbd21d48598b9837783b97d0dd782b639ff43e7c8
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49255604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54193512"
 ---
-# <a name="iosavailableupdateversion-resource-type"></a>Тип ресурса Иосаваилаблеупдатеверсион
+# <a name="iosavailableupdateversion-resource-type"></a>тип ресурса iosAvailableUpdateVersion
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-сведения о доступных версиях обновлений iOS
+Сведения о версии обновления в iOS
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |productVersion|String|Версия обновления.|
-|постингдатетиме|DateTimeOffset|Дата разноски обновления.|
-|expirationDateTime|DateTimeOffset|Дата окончания срока действия обновления.|
-|суппортеддевицес|Коллекция строк|Список поддерживаемых устройств для обновления.|
+|postingDateTime|DateTimeOffset|Дата публикации обновления.|
+|expirationDateTime|DateTimeOffset|Срок действия обновления.|
+|supportedDevices|Коллекция String|Список поддерживаемых устройств для обновления.|
 
 ## <a name="relationships"></a>Связи
 Нет

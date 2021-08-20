@@ -5,12 +5,12 @@ title: тип ресурса driveItemSource
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a403f570ac550b62f9c0e7fa0c3c2fa9758e1772
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 98076060791424e7f84a4bee32c12a3eca1238003b413d0b0c53ce18c97a21d2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236321"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206916"
 ---
 # <a name="driveitemsource-resource-type"></a>тип ресурса driveItemSource
 
@@ -23,7 +23,7 @@ ms.locfileid: "53236321"
 | Свойство                 | Тип                       | Описание                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
 | **application**          | driveItemSourceApplication | Значение переумерия, которое указывает на источник приложения, в котором был создан файл.              |
-| **externalId**           | строка                     | Внешний идентификатор элемента диска из источника.                                      |
+| **externalId**           | string                     | Внешний идентификатор элемента диска из источника.                                      |
 
 ### <a name="driveitemsourceapplication-values"></a>значения driveItemSourceApplication
 

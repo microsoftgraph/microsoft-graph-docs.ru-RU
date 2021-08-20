@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса win32LobAppFileSystemRule
-description: Сложный тип для хранения данных правила для файлов или папок для бизнес-приложения Win32.
+title: тип ресурса win32LobAppFileSystemRule
+description: Сложный тип для хранения данных правил файлов или папок для приложения LOB Win32.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e45db436201b339f075f35d3865c8d0c84f1ea6d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bcc304ee18138aaa570fc0b008f6de6c02e0ce144938b46411b05153490ef8b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49274035"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54240059"
 ---
-# <a name="win32lobappfilesystemrule-resource-type"></a>Тип ресурса win32LobAppFileSystemRule
+# <a name="win32lobappfilesystemrule-resource-type"></a>тип ресурса win32LobAppFileSystemRule
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сложный тип для хранения данных правила для файлов или папок для бизнес-приложения Win32.
+Сложный тип для хранения данных правил файлов или папок для приложения LOB Win32.
 
 
-Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
+Наследует [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий назначение правила. Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
-|path|String|Путь к файлу или папке для поиска.|
-|филеорфолдернаме|String|Имя файла или папки для поиска.|
-|check32BitOn64System|Boolean|Значение, указывающее, следует ли развертывать переменные среды в 32 – разрядном контексте в 64 – разрядных системах.|
-|оператионтипе|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|Тип операции файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
-|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор для обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|компарисонвалуе|String|Значение сравнения файлов или папок.|
+|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
+|path|String|Путь к файлу или папке.|
+|fileOrFolderName|String|Имя файла или папки.|
+|check32BitOn64System|Логический|Значение, указывающее, следует ли расширять переменные среды в 32-битной среде на 64-битных системах.|
+|operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|Тип операции файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
+|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|comparisonValue|Строка|Значение сравнения файла или папки.|
 
 ## <a name="relationships"></a>Связи
 Нет

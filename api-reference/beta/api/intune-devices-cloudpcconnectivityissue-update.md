@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d94f7c2409bb4a0a2b09dab066d25c54f8319b87
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 8e6f8fcb86eaab3bf38f8cda9712b29f554f1a00
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264761"
 ---
 # <a name="update-cloudpcconnectivityissue"></a>Обновление cloudPCConnectivityIssue
 
@@ -27,9 +27,9 @@ ms.locfileid: "52666014"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/cloudPCConnectivityIssues/{cloudPCConnectivityIssueId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,13 @@ PATCH /deviceManagement/cloudPCConnectivityIssues/{cloudPCConnectivityIssueId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
 |deviceId|String|Устройство Intune устройства, с которое связано подключение.|
 |errorCode|String|Код ошибки проблемы подключения.|
 |errorDateTime|DateTimeOffset|Время начала подключения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC).|
 |userId|String|Уникальный id пользователя, который инициализирует подключение.|
 |errorDescription|String|Подробное описание того, что пошло не так.|
-|recommendedAction|Строка|Рекомендуемое действие для устранения соответствующей ошибки.|
+|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
 
 
 

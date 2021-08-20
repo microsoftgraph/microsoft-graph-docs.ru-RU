@@ -5,16 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ecb8ea8721e6ccc737e6a5f477b274be4300d370
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ccc7d77d824252902e70c50c6c2cd7447616b603
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264313"
 ---
 # <a name="call-keepalive"></a>call: keepAlive
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сделайте запрос на этот API каждые 15-45 минут, чтобы убедиться, что текущий вызов остается активным. Вызов, который не получает этот запрос в течение 45 минут, считается неактивным и впоследствии завершится.
 

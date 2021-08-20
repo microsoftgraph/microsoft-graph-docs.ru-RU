@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса Еджехомебуттонлоадсстартпаже
-description: Отображение кнопки "домой"; При нажатии кнопки "домой" загружается Начальная страница — это также значение по умолчанию.
+title: тип ресурса edgeHomeButtonLoadsStartPage
+description: Показать кнопку "Домой"; Нажатие кнопки "Домой" загружает страницу "Начните" - это также значение по умолчанию.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 322dcdeef9d686466de9de02c8da124cda029f67
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 8a7b3d13573aabba4203a56bf99c4e3c4771e080ec6b217ee095c901a57e5613
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49199107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54206692"
 ---
-# <a name="edgehomebuttonloadsstartpage-resource-type"></a>Тип ресурса Еджехомебуттонлоадсстартпаже
+# <a name="edgehomebuttonloadsstartpage-resource-type"></a>тип ресурса edgeHomeButtonLoadsStartPage
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Отображение кнопки "домой"; При нажатии кнопки "домой" загружается Начальная страница — это также значение по умолчанию.
+Показать кнопку "Домой"; Нажатие кнопки "Домой" загружает страницу "Начните" - это также значение по умолчанию.
 
 
-Наследуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Наследует от [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

@@ -5,12 +5,12 @@ author: madansr7
 localization_priority: Normal
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d6ba4879df1c511e723f46d9fc9687c6ed802424
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: e5177fe5bc69a3f083619823146c605152498d71
+ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660524"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58397112"
 ---
 # <a name="tenantappmanagementpolicy-resource-type"></a>тип ресурса tenantAppManagementPolicy
 
@@ -33,9 +33,9 @@ ms.locfileid: "53660524"
 
 | Свойство                     | Тип                                                                     | Описание                                                           |
 | :--------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| id                           | String                                                                   | Идентификатор политики по умолчанию.                                        |
+| id                           | Строка                                                                   | Идентификатор политики по умолчанию.                                        |
 | displayName                  | String                                                                   | Отображение имени политики по умолчанию. Унаследованный от [policyBase](policybase.md).                                |
-| description                  | String                                                                   | Описание политики по умолчанию. Унаследованный от [policyBase](policybase.md).                                |
+| description                  | Строка                                                                   | Описание политики по умолчанию. Унаследованный от [policyBase](policybase.md).                                |
 | isEnabled                    | Boolean                                                                  | Обозначает, включена ли политика. Значение по умолчанию — `false`.                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Ограничения, которые применяются по умолчанию для всех объектов приложений в клиенте.               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Ограничения, которые применяются по умолчанию для всех основных объектов службы в клиенте. |
@@ -59,7 +59,7 @@ ms.locfileid: "53660524"
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/tenantAppManagementPolicy",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/defaultAppManagementPolicy",
   "id": "string (identifier)",
   "description": "string",
   "displayName": "string",
