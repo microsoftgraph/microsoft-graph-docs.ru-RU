@@ -1,22 +1,22 @@
 ---
-title: тип перечисления Конфигуратионманажерактионделиверистатус
+title: тип enum configurationManagerActionDeliveryStatus
 description: Состояние доставки действия устройства Configuration Manager
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bbe36a6f7e346467d35bf997817241d7f30ef6df
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: cda8bbb7f52898ddd042b8cba88b204907bfe9edff006510a61b6b36c7db66eb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239415"
 ---
-# <a name="configurationmanageractiondeliverystatus-enum-type"></a>тип перечисления Конфигуратионманажерактионделиверистатус
+# <a name="configurationmanageractiondeliverystatus-enum-type"></a>тип enum configurationManagerActionDeliveryStatus
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -25,11 +25,11 @@ ms.locfileid: "49214632"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Ожидание для доставки действия в Конфигуратионманажер|
-|пендингделивери|1,1|Ожидание для доставки действия в Конфигуратионманажер|
-|деливередтоконнекторсервице|2|Действие отправляется в службу соединителя Конфигуратионманажер (Cloud)|
-|фаиледтоделивертоконнекторсервице|4|Не удалось отправить действие службе соединителя Конфигуратионманажер (Cloud)|
-|деливередтунпремисессервер|4 |Действие доставляется на локальный сервер Конфигуратионманажер|
+|unknown|0|Ожидание доставки действия в ConfigurationManager|
+|pendingDelivery|1 |Ожидание доставки действия в ConfigurationManager|
+|deliveredToConnectorService|2|Действие отправляется в службу Connector ConfigurationManager (облако)|
+|failedToDeliverToConnectorService|3 |Не удалось отправить действие в службу Connector ConfigurationManager (облако)|
+|deliveredToOnPremisesServer|4 |Действие доставляется на сервер ConfigurationManager на предварительном сервере|
 
 
 

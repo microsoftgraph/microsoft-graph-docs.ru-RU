@@ -1,26 +1,26 @@
 ---
 title: тип ресурса windows10DeviceFirmwareConfigurationInterface
-description: 'Свойства графа для интерфейса конфигурации прошивки устройств '
+description: 'Graph для интерфейса конфигурации прошивки устройств '
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6728bccb34cc7143afc35430ae4ad727ce23a142
-ms.sourcegitcommit: ed45b5ce0583dfa4d12f7cb0b3ac0c5aeb2318d4
+ms.openlocfilehash: f2a06ab71a7f328010d7e68a156e25ac09fe8274d359efd2928c0c3565e25111
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51863922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54253056"
 ---
 # <a name="windows10devicefirmwareconfigurationinterface-resource-type"></a>тип ресурса windows10DeviceFirmwareConfigurationInterface
 
 Пространство имен: microsoft.graph
 
-> **Важно:** API Microsoft Graph в /бета-версии могут изменяться; использование продукции не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Свойства графа для интерфейса конфигурации прошивки устройств 
+Graph для интерфейса конфигурации прошивки устройств 
 
 
 Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
@@ -46,7 +46,7 @@ ms.locfileid: "51863922"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |changeUefiSettingsPermission|[changeUefiSettingsPermission](../resources/intune-deviceconfig-changeuefisettingspermission.md)|Определяет уровень разрешений, предоставленный пользователям для изменения параметров UEFI. Возможные значения: `notConfiguredOnly`, `none`.|
 |виртуализацияOfCpuAndIO|[включить](../resources/intune-shared-enablement.md)|Определяет, включена ли виртуализация ЦП и IO. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
@@ -55,7 +55,7 @@ ms.locfileid: "51863922"
 |радио|[включить](../resources/intune-shared-enablement.md)|Определяет, включены ли встроенные радиостанции, например WIFI, NFC, Bluetooth. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |bootFromExternalMedia|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю загрузиться из внешних мультимедиа. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |bootFromBuiltInNetworkAdapters|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешена ли пользователю загрузка из встроенных сетевых адаптеров. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|WindowsPlatformBinaryTable|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить двоичную таблицу Windows Platform. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|WindowsPlatformBinaryTable|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить двоичную таблицу Windows платформы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |simultaneousMultiThreading|[включить](../resources/intune-shared-enablement.md)|Определяет, разрешено ли пользователю включить одновременную многотекустойку. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Связи

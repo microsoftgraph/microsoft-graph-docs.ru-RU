@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 670cdbfe2133e6137fc660d7428d9d899d05afe8
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: b43440be1be87f4ff7846d21b5e7d98039829021
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58256552"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -91,7 +91,7 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например `Member` и `Guest`.          |
 
 > [!NOTE] 
-> Следующие свойства не могут быть обновлены с помощью контекста только для приложений: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
+> Следующие свойства невозможно обновить с помощью контекста только для приложений: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
 
 ## <a name="response"></a>Отклик
 

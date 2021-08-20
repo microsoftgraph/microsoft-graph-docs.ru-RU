@@ -1,48 +1,48 @@
 ---
-title: Тип ресурса Девицеманажементкачедрепортконфигуратион
-description: Сущность, представляющая конфигурацию кэшированного отчета
+title: тип ресурса deviceManagementCachedReportConfiguration
+description: Объект, представляющий конфигурацию кэшного отчета
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3868abec69ca877d614c2e611aff8d469ada8a6f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2a19a0fc2d8362f1bdc7d6b919f0e4770f5203c38ee91003ff8e72a440714bb0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49307131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249750"
 ---
-# <a name="devicemanagementcachedreportconfiguration-resource-type"></a>Тип ресурса Девицеманажементкачедрепортконфигуратион
+# <a name="devicemanagementcachedreportconfiguration-resource-type"></a>тип ресурса deviceManagementCachedReportConfiguration
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность, представляющая конфигурацию кэшированного отчета
+Объект, представляющий конфигурацию кэшного отчета
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Девицеманажементкачедрепортконфигуратионс](../api/intune-reporting-devicemanagementcachedreportconfiguration-list.md)|Коллекция [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Список свойств и связей объектов [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .|
-|[Получение Девицеманажементкачедрепортконфигуратион](../api/intune-reporting-devicemanagementcachedreportconfiguration-get.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Чтение свойств и связей объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .|
-|[Создание Девицеманажементкачедрепортконфигуратион](../api/intune-reporting-devicemanagementcachedreportconfiguration-create.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Создание нового объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .|
-|[Удаление Девицеманажементкачедрепортконфигуратион](../api/intune-reporting-devicemanagementcachedreportconfiguration-delete.md)|Нет|Удаляет объект [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).|
-|[Обновление Девицеманажементкачедрепортконфигуратион](../api/intune-reporting-devicemanagementcachedreportconfiguration-update.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Обновление свойств объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .|
+|[Список deviceManagementCachedReportConfigurations](../api/intune-reporting-devicemanagementcachedreportconfiguration-list.md)|[коллекция deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Список свойств и связей [объектов deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
+|[Get deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-get.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Чтение свойств и связей [объекта deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
+|[Создание deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-create.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Создание нового [объекта deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
+|[Удаление deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-delete.md)|Нет|Удаляет [устройствоManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).|
+|[Обновление deviceManagementCachedReportConfiguration](../api/intune-reporting-devicemanagementcachedreportconfiguration-update.md)|[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Обновление свойств объекта [deviceManagementCachedReportConfiguration.](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
-|репортнаме|String|Имя отчета|
-|filter|String|Фильтры, применяемые при создании отчета.|
-|select|Коллекция строк|Столбцы, выбранные из отчета|
-|orderBy|Коллекция строк|Упорядочение столбцов в отчете|
-|метаданных|String|Управляемые вызывающими метаданными метаданные, связанные с отчетом|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшированного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|ластрефрешдатетиме|DateTimeOffset|Время последнего обновления кэшированного отчета|
-|expirationDateTime|DateTimeOffset|Время истечения срока действия кэшированного отчета|
+|id|String|Уникальный идентификатор для этого объекта|
+|reportName|Строка|Имя отчета|
+|filter|Строка|Фильтры, применяемые при создании отчета.|
+|select|Коллекция String|Столбцы, выбранные из отчета|
+|orderBy|Коллекция String|Порядок столбцов в отчете|
+|метаданные|String|Метаданные, управляемые вызывателями, связанные с отчетом|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|lastRefreshDateTime|DateTimeOffset|Время последнего обновления кэшного отчета|
+|expirationDateTime|DateTimeOffset|Время истечения срока действия кэш-отчета|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Шарепоинтактивитипажес
+title: тип ресурса sharePointActivityPages
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 8ff278672e6d56618b599cfc6efa68f080e2545d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b21d9d82f531a6e4f0c842702e92c94cffabf568bcaf5fe7a18156d17a840b6
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54167788"
 ---
-# <a name="sharepointactivitypages-resource-type"></a>Тип ресурса Шарепоинтактивитипажес
+# <a name="sharepointactivitypages-resource-type"></a>тип ресурса sharePointActivityPages
 
 Пространство имен: microsoft.graph
 
@@ -20,10 +20,10 @@ ms.locfileid: "47973654"
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| репортрефрешдате | Дата   |
-| виситедпажекаунт  | Int64  |
+| reportRefreshDate | Дата   |
+| visitedPageCount  | Int64  |
 | reportDate        | Дата   |
-| репортпериод      | String |
+| reportPeriod      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 

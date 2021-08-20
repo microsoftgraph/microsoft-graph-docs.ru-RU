@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса office365ActivationsUserDetail
+title: тип ресурса office365ActivationsUserDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: f1bb61fa4b740c212918ee8e4794ce79ffabafe7
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: adbefd4a160ba00e9478abebec5932f97464328a633bb26719eaed4818bf3f22
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980747"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54239030"
 ---
-# <a name="office365activationsuserdetail-resource-type"></a>Тип ресурса office365ActivationsUserDetail
+# <a name="office365activationsuserdetail-resource-type"></a>тип ресурса office365ActivationsUserDetail
 
 Пространство имен: microsoft.graph
 
@@ -20,10 +20,10 @@ ms.locfileid: "49980747"
 
 | Свойство             | Тип                                     | Описание                              |
 | :------------------- | :--------------------------------------- | ---------------------------------------- |
-| reportRefreshDate    | Дата                                     | Последняя дата содержимого.          |
+| reportRefreshDate    | Дата                                     | Последняя дата контента.          |
 | userPrincipalName    | String                                   | Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. |
 | displayName          | String                                   | Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. |
-| userActivationCounts | [Коллекция userActivationCounts](../resources/useractivationcounts.md) | Последняя активация продукта пользователя учитывается на всех платформах для всех типов продуктов. |
+| userActivationCounts | [коллекция userActivationCounts](../resources/useractivationcounts.md) | Последняя активация продукта пользователя рассчитывается на всех платформах для всех типов продуктов. |
 
 ## <a name="json-representation"></a>Представление JSON
 

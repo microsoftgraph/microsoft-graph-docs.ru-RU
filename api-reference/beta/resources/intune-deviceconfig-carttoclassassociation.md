@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса КарттоклассассоЦиатион
-description: КарттоклассассоЦиатион для связывания корзин устройств с аудиториями.
+title: тип ресурса cartToClassAssociation
+description: CartToClassAssociation для связывания тележек устройств с классами.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16026ff5a89dc43aabb92dc64f0f95524f8fafef
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 133c59057c4c5d59eb16af808e69ec4b8ae385bba91a3fa01f05857a1dabbf44
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49260490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226436"
 ---
-# <a name="carttoclassassociation-resource-type"></a>Тип ресурса КарттоклассассоЦиатион
+# <a name="carttoclassassociation-resource-type"></a>тип ресурса cartToClassAssociation
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-КарттоклассассоЦиатион для связывания корзин устройств с аудиториями.
+CartToClassAssociation для связывания тележек устройств с классами.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список свойства carttoclassassociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|Коллекция [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md)|Список свойств и связей объектов [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .|
-|[Получение КарттоклассассоЦиатион](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Чтение свойств и связей объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .|
-|[Создание КарттоклассассоЦиатион](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Создание нового объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .|
-|[Удаление КарттоклассассоЦиатион](../api/intune-deviceconfig-carttoclassassociation-delete.md)|Нет|Удаляет объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md).|
-|[Обновление КарттоклассассоЦиатион](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Обновление свойств объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .|
+|[Списки cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[коллекция cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Список свойств и связей объектов [cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
+|[Get cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Чтение свойств и связей объекта [cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
+|[Создание cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Создайте новый [объект cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
+|[Удаление cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md)|Нет|Удаляет [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).|
+|[Обновление cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Обновление свойств объекта [cartToClassAssociation.](../resources/intune-deviceconfig-carttoclassassociation.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -37,11 +37,11 @@ ms.locfileid: "49260490"
 |id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|version|Int32|Версия КарттоклассассоЦиатион.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
-|description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|version|Int32|Версия CartToClassAssociation.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|description|String|Администратор предоставил описание CartToClassAssociation.|
+|deviceCartIds|Коллекция String|Идентификаторы тележек устройств, связанных с классами.|
+|classroomIds|Коллекция String|Идентификаторы классов, связанных с тележками устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса Микрософттуннелсервер
-description: Сущность, представляющая один сервер туннеля (Майкрософт)
+title: тип ресурсов microsoftTunnelServer
+description: Объект, Microsoft Tunnel представляю
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed9968e5f1d0f4c530d09d0ff8950ad6864b90c2
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: ad8186090c30267890e2e1240111edd1a8de5a6eb5c52e452fe9570d32dc319c
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49302023"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54227262"
 ---
-# <a name="microsofttunnelserver-resource-type"></a>Тип ресурса Микрософттуннелсервер
+# <a name="microsofttunnelserver-resource-type"></a>тип ресурсов microsoftTunnelServer
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность, представляющая один сервер туннеля (Майкрософт)
+Объект, Microsoft Tunnel представляю
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Микрософттуннелсерверс](../api/intune-mstunnel-microsofttunnelserver-list.md)|Коллекция [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md)|Список свойств и связей объектов [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md) .|
-|[Получение Микрософттуннелсервер](../api/intune-mstunnel-microsofttunnelserver-get.md)|[микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md)|Чтение свойств и связей объекта [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md) .|
-|[Создание Микрософттуннелсервер](../api/intune-mstunnel-microsofttunnelserver-create.md)|[микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md)|Создание нового объекта [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md) .|
-|[Удаление Микрософттуннелсервер](../api/intune-mstunnel-microsofttunnelserver-delete.md)|Нет|Удаляет объект [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md).|
-|[Обновление Микрософттуннелсервер](../api/intune-mstunnel-microsofttunnelserver-update.md)|[микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md)|Обновление свойств объекта [микрософттуннелсервер](../resources/intune-mstunnel-microsofttunnelserver.md) .|
+|[Список microsoftTunnelServers](../api/intune-mstunnel-microsofttunnelserver-list.md)|[коллекция microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Список свойств и связей объектов [microsoftTunnelServer.](../resources/intune-mstunnel-microsofttunnelserver.md)|
+|[Получите microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-get.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Чтение свойств и связей объекта [microsoftTunnelServer.](../resources/intune-mstunnel-microsofttunnelserver.md)|
+|[Создание microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-create.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Создание нового [объекта microsoftTunnelServer.](../resources/intune-mstunnel-microsofttunnelserver.md)|
+|[Удаление microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-delete.md)|Нет|Удаляет [microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md).|
+|[Обновление microsoftTunnelServer](../api/intune-mstunnel-microsofttunnelserver-update.md)|[microsoftTunnelServer](../resources/intune-mstunnel-microsofttunnelserver.md)|Обновление свойств объекта [microsoftTunnelServer.](../resources/intune-mstunnel-microsofttunnelserver.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор Микрософттуннелсервер|
-|displayName|String|Отображаемое имя Микрософттуннелсервер|
-|туннелсерверхеалсстатус|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние работоспособности Микрософттуннелсервер. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
-|ластчеккиндатетиме|DateTimeOffset|При последнем возвращенном Микрософттуннелсервер|
+|id|String|Id MicrosoftTunnelServer|
+|displayName|Строка|Имя отображения MicrosoftTunnelServer|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние здоровья MicrosoftTunnelServer. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
+|lastCheckinDateTime|DateTimeOffset|При последней регистрации в MicrosoftTunnelServer|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса yammerDeviceUsageUserCounts
+title: тип ресурса yammerDeviceUsageUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 9780d75ee75d45675c21ad639fccdf4edd32a949
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 9f5bee5edf3dbde4d889af6ecd607d3323a7c1eabc9c92a5443e174d34646bf9
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54249673"
 ---
-# <a name="yammerdeviceusageusercounts-resource-type"></a>Тип ресурса yammerDeviceUsageUserCounts
+# <a name="yammerdeviceusageusercounts-resource-type"></a>тип ресурса yammerDeviceUsageUserCounts
 
 Пространство имен: microsoft.graph
 
@@ -22,13 +22,13 @@ ms.locfileid: "49982364"
 | :---------------- | :----- |
 | reportRefreshDate | Дата   |
 | web               | Int32  |
-| windowsPhone      | Int32  |
-| androidPhone      | Int32  |
+| WindowsPhone      | Int32  |
+| AndroidPhone      | Int32  |
 | iPhone            | Int32  |
 | iPad              | Int32  |
-| other             | Int32  |
+| другие             | Int32  |
 | reportDate        | Дата   |
-| reportPeriod      | String |
+| reportPeriod      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 

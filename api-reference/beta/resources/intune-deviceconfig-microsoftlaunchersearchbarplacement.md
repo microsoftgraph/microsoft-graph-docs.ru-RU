@@ -1,34 +1,34 @@
 ---
-title: тип перечисления Микрософтлаунчерсеарчбарплацемент
-description: Выбор размещения панели поиска Microsoft Launcher.
+title: тип enum microsoftLauncherSearchBarPlacement
+description: Microsoft Launcher Выбор размещения панели поиска.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bcd91648a61b4275840744cdfaeb107d106483a3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: b748be6659e4b4db915b26972c1fbff24076af8709bfebd1e030dd25e5bdcdfb
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49283184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54244983"
 ---
-# <a name="microsoftlaunchersearchbarplacement-enum-type"></a>тип перечисления Микрософтлаунчерсеарчбарплацемент
+# <a name="microsoftlaunchersearchbarplacement-enum-type"></a>тип enum microsoftLauncherSearchBarPlacement
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Выбор размещения панели поиска Microsoft Launcher.
+Microsoft Launcher Выбор размещения панели поиска.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|top|1,1|Указывает, что панель поиска будет отображаться в верхней части устройства.|
-|bottom|2|Указывает, что панель поиска будет отображаться в нижней части устройства.|
-|скрытых|4|Указывает, что панель поиска будет скрыта на устройстве.|
+|notConfigured|0|Не настроен; это значение игнорируется.|
+|top|1 |Указывает, что панели поиска будут отображаться в верхней части устройства.|
+|bottom|2|Указывает, что строка поиска будет отображаться в нижней части устройства.|
+|скрыть|3 |Указывает, что панели поиска будут скрыты на устройстве.|
 
 
 

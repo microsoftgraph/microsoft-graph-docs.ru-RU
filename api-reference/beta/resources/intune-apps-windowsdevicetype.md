@@ -1,35 +1,35 @@
 ---
-title: тип перечисления не к windowsdevicetype
-description: Содержит свойства для типа устройства Windows.
+title: тип enum windowsDeviceType
+description: Содержит свойства для Windows типа устройства.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 154e9a9f3de6d133b6a4a2fcb39fa5a73a59c720
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 6218fec26704f392935996d828de82d44de1481790d16ca055a60195c7b67f65
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54250058"
 ---
-# <a name="windowsdevicetype-enum-type"></a>тип перечисления не к windowsdevicetype
+# <a name="windowsdevicetype-enum-type"></a>тип enum windowsDeviceType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для типа устройства Windows.
+Содержит свойства для Windows типа устройства.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Флаги не заданы.|
-|системной|1,1|Поддерживается ли тип устройства Windows для настольных ПК.|
-|мобильный|2|Поддерживается ли тип мобильного устройства Windows.|
-|holographic|4 |Поддерживается ли тип устройства с Windows Holographic.|
-|team|8 |Поддерживается ли тип устройства группы Windows.|
+|Нет|0|Нет набора флагов.|
+|настольный компьютер|1 |Поддерживается ли тип Windows рабочего стола.|
+|мобильный|2|Поддерживается ли тип Windows мобильных устройств.|
+|голографический|4 |Поддерживается ли тип Windows или нет.|
+|команда|8 |Поддерживается ли тип Windows team.|
 
 
 
