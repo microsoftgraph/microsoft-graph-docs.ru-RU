@@ -1,35 +1,35 @@
 ---
-title: тип перечисления Деливерйоптимизатионграупидоптионстипе
-description: Возможные значения параметра Деливерйоптимизатионграупидоптионстипе.
+title: тип enum deliveryOptimizationGroupIdOptionsType
+description: Возможные значения для параметра DeliveryOptimizationGroupIdOptionsType.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 420350ed8324aece5f83486e322724458d5a4851
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 1fef9840a12bf398632dd050a0b9b25721055b822bf6d7e7a3f558fc1ae98ee7
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49288735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54245067"
 ---
-# <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>тип перечисления Деливерйоптимизатионграупидоптионстипе
+# <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>тип enum deliveryOptimizationGroupIdOptionsType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения параметра Деливерйоптимизатионграупидоптионстипе.
+Возможные значения для параметра DeliveryOptimizationGroupIdOptionsType.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроен.|
-|adSite|1,1|Сайт Active Directory.|
-|аусентикатеддомаинсид|2|SID домена с проверкой подлинности.|
-|дхкпусероптион|4|Параметр пользователя DHCP.|
-|днссуффикс|4 |DNS-суффикс.|
+|notConfigured|0|Не настроен.|
+|adSite|1 |Сайт Active Directory.|
+|authenticatedDomainSid|2|Проверка подлинности sid домена.|
+|dhcpUserOption|3 |Параметр пользователя DHCP.|
+|dnsSuffix|4 |Суффикс DNS.|
 
 
 

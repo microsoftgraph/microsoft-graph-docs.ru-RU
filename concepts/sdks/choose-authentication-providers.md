@@ -3,12 +3,12 @@ title: Выберите поставщика проверки подлиннос
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: ff898f69c2d23575e3b7c64ced22899839c11504
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 35717b83c5df9a56351200e4f762c85459854929
+ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264047"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58384536"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -18,8 +18,8 @@ ms.locfileid: "58264047"
 
 | Сценарий                                                                                               | Flow/Grant         | Аудитория               | Поставщик |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
-| [Приложение для одной страницы](/azure/active-directory/develop/scenario-spa-acquire-token)                          |                    |                        |     |
-|                                                                                                        | Неявный поток           | Делегированная потребительская/org | [Неявный поставщик](#implicit-provider) |
+| [Приложение для одной страницы](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Authorization Code |                        |     |
+|                                                                                                        | с помощью PKCE          | Делегированная потребительская/org | [Поставщик кода авторизации](#authorization-code-provider) |
 | [Веб-приложение, которое вызывает веб-API](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
 |                                                                                                        | Authorization Code | Делегированная потребительская/org | [Поставщик кода авторизации](#authorization-code-provider) |
 |                                                                                                        | Учетные данные клиента | Только приложение               | [Поставщик учетных данных клиента](#client-credentials-provider) |
@@ -75,7 +75,55 @@ var graphClient = new GraphServiceClient(authCodeCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Код авторизации, учетные данные клиентов и потоки OAuth от имени требуют, чтобы вы реализовали настраиваемого поставщика проверки подлинности в это время. Дополнительные сведения см. в [специальном поставщике проверки подлинности.](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md)
+### <a name="using-azuremsal-browser-for--browser-applications"></a>Использование @azure/msal-browser для браузерных приложений
+
+```javascript
+
+const {
+    PublicClientApplication,
+    InteractionType,
+    AccountInfo
+} = require("@azure/msal-browser");
+
+const {
+    AuthCodeMSALBrowserAuthenticationProvider,
+    AuthCodeMSALBrowserAuthenticationProviderOptions
+} = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
+
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+    account: account, // the AccountInfo instance to acquire the token for.
+    interactionType: InteractionType.PopUp, // msal-browser InteractionType
+    scopes: ["user.read", "mail.send"] // example of the scopes to be passed
+}
+
+// Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
+const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+```
+
+### <a name="using-azureidentity-for-server-side-applications"></a>Использование @azure/identity для серверных приложений
+
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    AuthorizationCodeCredential
+} = require("@azure/identity");
+
+const credential = new AuthorizationCodeCredential(
+    "<YOUR_TENANT_ID>",
+    "<YOUR_CLIENT_ID>",
+    "<AUTH_CODE_FROM_QUERY_PARAMETERS>",
+    "<REDIRECT_URL>"
+);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -174,7 +222,28 @@ var graphClient = new GraphServiceClient(clientCertCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Код авторизации, учетные данные клиентов и потоки OAuth от имени требуют, чтобы вы реализовали настраиваемого поставщика проверки подлинности в это время. Дополнительные сведения см. в [специальном поставщике проверки подлинности.](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md)
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    ClientSecretCredential
+} = require("@azure/identity");
+
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -265,7 +334,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Код авторизации, учетные данные клиентов и потоки OAuth от имени требуют, чтобы вы реализовали настраиваемого поставщика проверки подлинности в это время. Дополнительные сведения читайте в [публикации "Использование](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) поставщика настраиваемой проверки подлинности".
+Потоки OAuth от имени OAuth требуют реализации настраиваемого поставщика проверки подлинности в это время. Дополнительные сведения читайте в [публикации "Использование](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) поставщика настраиваемой проверки подлинности".
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -291,55 +360,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 ## <a name="implicit-provider"></a>Неявный поставщик
 
-Неявный поток грантов используется в браузерных приложениях. Дополнительные сведения см. [в платформа удостоверений Майкрософт и неявном потоке грантов.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
-
-# <a name="c"></a>[C#](#tab/CS)
-
-Неприменимо.
-
-# <a name="javascript"></a>[Javascript](#tab/Javascript)
-
-```javascript
-const clientId = "your_client_id"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-  redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
-
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new Msal.UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MicrosoftGraph.ImplicitMSALAuthenticationProvider(userAgentApplication, graphScopes);
-
-const options = {
-  authProvider, // An instance created from previous step
-};
-const Client = MicrosoftGraph.Client;
-const client = Client.initWithMiddleware(options);
-```
-
-# <a name="java"></a>[Java](#tab/Java)
-
-Неприменимо.
-
-# <a name="android"></a>[Android](#tab/Android)
-
-Неприменимо.
-
-# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
-
-Неприменимо.
-
-# <a name="php"></a>[PHP](#tab/PHP)
-
-Неприменимо.
-
-# <a name="ruby"></a>[Ruby](#tab/Ruby)
-
-Неприменимо.
-
----
+Неявный поток проверки подлинности не рекомендуется из-за [его недостатков.](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6) Теперь общедоступные клиенты, такие как родные приложения и приложения JavaScript, должны использовать поток кода авторизации с расширением PKCE. [Справка](https://oauth.net/2/grant-types/implicit/).
 
 ## <a name="device-code-provider"></a>Поставщик кода устройств
 
@@ -379,7 +400,28 @@ var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
+```javascript
+const {
+    Client
+} = require("@microsoft/microsoft-graph-client");
+const {
+    TokenCredentialAuthenticationProvider
+} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
+const {
+    DeviceCodeCredential
+} = require("@azure/identity");
+
+const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, {
+    scopes: [scopes]
+});
+
+const client = Client.initWithMiddleware({
+    debugLogging: true,
+    authProvider
+    // Use the authProvider object to create the class.
+});
+```
 
 # <a name="java"></a>[Java](#tab/Java)
 

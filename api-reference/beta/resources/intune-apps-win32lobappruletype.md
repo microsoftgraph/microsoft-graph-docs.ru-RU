@@ -1,32 +1,32 @@
 ---
-title: тип перечисления win32LobAppRuleType
-description: Содержит типы правил для бизнес-приложений Win32.
+title: тип enum win32LobAppRuleType
+description: Содержит типы правил для приложений LOB Win32.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1eeaf3e42003f46ede657fd836dea88725a73c3
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 2c3b6dcced85325068f3d25e54b8edf64c9f9617e5edaaf6581f2c8ac4ffb5be
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49284556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54210059"
 ---
-# <a name="win32lobappruletype-enum-type"></a>тип перечисления win32LobAppRuleType
+# <a name="win32lobappruletype-enum-type"></a>тип enum win32LobAppRuleType
 
 Пространство имен: microsoft.graph
 
-> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+> **Важно:** Microsoft Graph API в /бета-версии могут изменяться; использование продукции не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит типы правил для бизнес-приложений Win32.
+Содержит типы правил для приложений LOB Win32.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|проверку|нуль|Правило обнаружения.|
-|обязательно|1,1|Правило требования.|
+|обнаружение|0|Правило обнаружения.|
+|требование|1 |Правило требования.|
 
 
 

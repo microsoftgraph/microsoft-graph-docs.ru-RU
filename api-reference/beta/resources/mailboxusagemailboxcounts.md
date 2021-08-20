@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса mailboxUsageMailboxCounts
+title: тип ресурса mailboxUsageMailboxCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7034e1f68eb1b119e0b4549e18500993a10cff04
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 42b03143c5036c72e4935036079de8ff13b55783f0184a6b3848bf5d2383930e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49983554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54226174"
 ---
-# <a name="mailboxusagemailboxcounts-resource-type"></a>Тип ресурса mailboxUsageMailboxCounts
+# <a name="mailboxusagemailboxcounts-resource-type"></a>тип ресурса mailboxUsageMailboxCounts
 
 Пространство имен: microsoft.graph
 
@@ -24,7 +24,7 @@ ms.locfileid: "49983554"
 | total             | Int64  |
 | active            | Int64  |
 | reportDate        | Дата   |
-| reportPeriod      | String |
+| reportPeriod      | Строка |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ author: isabelleatmsft
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 502bb1d376ca7534bcf967acfa5030e44540f86c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4560882d117bde86da96a0d0d887fc7e2960b13d
+ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788138"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58264369"
 ---
 # <a name="accessreviewinstancedecisionitemresource-resource-type"></a>accessReviewInstanceDecisionItemResource type
 
@@ -19,14 +19,14 @@ ms.locfileid: "52788138"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Каждый элемент решения в обзоре доступа представляет доступ директора к ресурсу. accessReviewInstanceDecisionItemResource представляет ресурс, связанный с элементом решения.
+Каждый элемент решения в обзоре доступа представляет доступ к ресурсу, который определен объектом accessReviewInstanceDecisionItemResource. accessReviewInstanceDecisionItemResource — это открытый тип, который позволяет передавать другие свойства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображение имени ресурса|
+|displayName|Строка|Отображение имени ресурса|
 |id|String|ИД ресурса|
-|type|String|Тип ресурса. Типы включают: `Group` , , , , `ServicePrincipal` `DirectoryRole` `AzureRole` `AccessPackageAssignmentPolicy` .|
+|type|Строка|Тип ресурса. Типы включают: `Group` , , , , `ServicePrincipal` `DirectoryRole` `AzureRole` `AccessPackageAssignmentPolicy` .|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -35,7 +35,8 @@ ms.locfileid: "52788138"
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource",
+  "openType": true
 }
 -->
 ``` json
