@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sbounouh
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8365ff5f42d85698965fe0d63d70c719a037f530
-ms.sourcegitcommit: 2006bf01c60793ac6ab1e25fa0526ec5d33c6334
+ms.openlocfilehash: 07990837a8774f512371fc5b09c400826321abd9
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51961375"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454075"
 ---
 # <a name="approval-resource-type"></a>Тип ресурса утверждения
 
@@ -21,6 +21,8 @@ ms.locfileid: "51961375"
 В [Azure AD Entitlement Management](entitlementmanagement-root.md)объект утверждения решений, связанных с `accessPackageAssignmentRequest` . Запрос на один шаг может иметь один шаг, связанный с ним, на который могут действовать одобрители. Кроме того, многоэтапный запрос может иметь несколько действий, связанных с ним, на которые могут действовать одобрители. Однако в многоэтапных утверждениях показаны как ожидающих, так и ранее завершенных действий.
 
 В [userConsentRequests](../resources/userconsentrequest.md)объект утверждения решений, связанных с запросом.
+
+В [управлении ролью](../resources/rolemanagement.md)принимаются решения об утверждении или отказе в назначении ролей.
 
 ## <a name="methods"></a>Методы
 
@@ -47,6 +49,7 @@ ms.locfileid: "51961375"
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.approval",
+  "baseType": "microsoft.graph.entity",
 }
 -->
 ``` json

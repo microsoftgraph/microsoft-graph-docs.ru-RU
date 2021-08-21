@@ -1,16 +1,16 @@
 ---
 title: Перечисление правил
 description: Получите ресурсы unifiedRoleManagementPolicyRule из свойства навигации правил.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 87c0877bd9f1bc9fbc77deb371f0ece6c4d496849b0d3d7d23a5fb0f0c424051
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a06d336b2ed8b657b0eb21095f67d9ee9ca7da8c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57201846"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453900"
 ---
 # <a name="list-rules"></a>Перечисление правил
 Пространство имен: microsoft.graph

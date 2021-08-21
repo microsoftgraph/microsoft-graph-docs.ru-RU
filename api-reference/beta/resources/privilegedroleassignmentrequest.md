@@ -4,13 +4,13 @@ description: Представляет запрос на операции наз�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: b6e7a9c4a761b699ffe4128a62fd69a75a0662df
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: shauliu1
+ms.openlocfilehash: 59144fd6008e081eb6de29c94626fe5fb2c57af6
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722271"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454131"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>тип ресурса privilegedRoleAssignmentRequest
 
@@ -27,7 +27,7 @@ ms.locfileid: "50722271"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 |[Список](../api/privilegedroleassignmentrequest-list.md) | [коллекция privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Список запросов на назначение ролей.|
-|[Создание](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Создайте запрос для управления жизненным циклом существующего или нового назначения ролей.|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Создайте запрос для управления жизненным циклом существующего или нового назначения ролей.|
 |[Отмена](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена ожидающих запросов на назначение ролей.|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |Получите запрос на назначение ролей для текущего requstor.|
 

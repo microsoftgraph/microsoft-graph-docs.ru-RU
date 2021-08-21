@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 95e6fc4e9e4f2f96dbeadec87b78872753ce9960
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b6b3bc02be107c6432cc1b7a09578f73a6588b26
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255518"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453669"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -57,7 +57,7 @@ POST /groups
 | description | строка | Описание группы. Максимальная длина: 1024 символа. Необязательно. |
 | isAssignableToRole | Логическое | Значение **true**, чтобы группу можно было назначить роли Azure AD. Только администратор привилегированных ролей и глобальный администратор может настроить значение этого свойства. Необязательно. |
 | mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
-| mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. Обязательный. |
+| mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE `. Обязательный. |
 | securityEnabled | boolean | Значение **true** для групп безопасности, включая группы Microsoft 365. Обязательный. |
 | owners | string collection | Это свойство представляет владельцев группы на момент создания.  Владельцы не добавляются автоматически в качестве участников группы, если они не указаны в свойстве **members**. Необязательный параметр. |
 | members | string collection | Это свойство представляет участников группы на момент создания. Необязательно. |
@@ -135,7 +135,7 @@ Content-length: 244
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

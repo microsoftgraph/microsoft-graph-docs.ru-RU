@@ -4,13 +4,13 @@ description: Извлеките коллекцию файлов governanceRoleAs
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 8faff2bbd4b41eda693467b55641204cb6bbaef3
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: badd8b3658698d1c413d2316eecf8230f04b45d3
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350854"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453858"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Управление экспортомRoleAssignmentRequests
 
@@ -29,7 +29,7 @@ ms.locfileid: "53350854"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +37,7 @@ ms.locfileid: "53350854"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -45,7 +45,7 @@ ms.locfileid: "53350854"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -73,7 +73,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код `200 OK` ответа и содержимое `application/octet-stream` типа.
 
 ## <a name="example"></a>Пример
@@ -83,7 +83,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/export?filter=resourceId+eq+'85dfe48a-55d3-49fc-8f36-ee14b7f6f720'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 ```http
 HTTP/1.1 200 OK

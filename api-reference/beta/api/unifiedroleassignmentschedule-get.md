@@ -1,16 +1,16 @@
 ---
 title: Get unifiedRoleAssignmentSchedule
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleAssignmentSchedule.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9efffbff7bab2c7bf012c6d6fc7dbc77e923688f
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 38a4303bc7492b1cb8966a439fde98334917a6ec
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440257"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452472"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>Get unifiedRoleAssignmentSchedule
 Пространство имен: microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает все параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -64,7 +64,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/b1477448-2cc6-4ceb-93b4-54a202a89413
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules/226faf5f-61b4-40bb-8726-52e48ec914de
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentschedule-csharp-snippets.md)]
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,21 +101,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "principalId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "roleDefinitionId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "directoryScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "appScopeId": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdUsing": "dce468b2-68b2-dce4-b268-e4dcb268e4dc",
-    "createdDateTime": "2020-09-09T21:35:27.91Z",
-    "modifiedDateTime": "2020-09-09T21:35:27.91Z",
-    "status": "Provisioned",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "assignmentType": "Eligible",
-    "memberType": "direct"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentSchedules/$entity",
+  "id": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "principalId": "7532aaf7-0740-41d2-a79b-4a035f122a66",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "createdUsing": "226faf5f-61b4-40bb-8726-52e48ec914de",
+  "createdDateTime": "2021-07-27T09:42:40.087Z",
+  "modifiedDateTime": null,
+  "status": "Provisioned",
+  "assignmentType": "Assigned",
+  "memberType": "Direct",
+  "scheduleInfo": {
+    "startDateTime": "2021-07-27T09:42:40.087Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   }
 }
 ```

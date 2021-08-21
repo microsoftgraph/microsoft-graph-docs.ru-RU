@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyRule
 description: В единойRoleManagementPolicyRule указывается правило, связанное с политикой управления ролью. Это абстрактно.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: aef8e501789dac56a1b5ae9bd400d605252ff293de84ec16bfb2f5e7cb4a464b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99dc73128cbaadce2bbd61d8f704ce20e2a60d69
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187520"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453879"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyRule
 

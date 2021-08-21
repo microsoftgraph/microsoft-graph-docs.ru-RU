@@ -1,21 +1,21 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: отмена'
 description: Отмена единойRoleEligibilityScheduleRequest.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 39c7129513cbc5815dad48841f6284ae307aed0c
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f0b8821ffe4136965fe57856eb7d74fb814795f6
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334684"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452829"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: отмена
 Пространство имен: microsoft.graph
 
-Немедленно отмените [унифицированныйRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) и заключите автоматическое удаление отмененного запроса через 30 дней.
+Немедленно отмените [унифицированныйRoleEligibilityScheduleRequest,](../resources/unifiedroleeligibilityschedulerequest.md) который находится в состоянии, и через 30 дней система автоматически удаляет `Granted` отмененный запрос. После вызова этого  действия состояние отмененного унифицированногоRoleEligibilityScheduleRequest изменяется на `Revoked` .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,7 +46,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`. Попытка отменить запрос, который не отменяется, например, объект unifiedRoleEligibilityScheduleRequest, состояние которого или , возвращает код  `Provisioned` `Failed` `400 Bad Request` ошибки.
 
 ## <a name="examples"></a>Примеры
 
@@ -59,7 +59,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/532bef1f-c677-4564-aa6f-811444a4f018/cancel
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityschedulerequest-cancel-csharp-snippets.md)]
@@ -82,7 +82,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

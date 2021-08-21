@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyApprovalRule
 description: Единое правило утверждения, связанное с политикой управления ролью, указывает правило unifiedRoleManagementPolicyApprovalRule. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f319771da1e7df6a931794d837ab37cfaaa62d7c5b2623cbafecf9c74f49615e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e2c28045bb0e5882d8ee9d8c000d0e6b8a48657a
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193288"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453823"
 ---
 # <a name="unifiedrolemanagementpolicyapprovalrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyApprovalRule
 

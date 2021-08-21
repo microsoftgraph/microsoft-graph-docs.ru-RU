@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов governanceResource
-description: Представляет ресурсы, которыми может управлять привилегированное управление удостоверениями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т.д.
+description: Представляет ресурсы, которыми может управлять управление привилегированными пользователями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т. д.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: e0cf42593a35103996217d1ce18bd9938b48a185
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 6704a6e582a1ba91cf9f37ab93ad324b527530da
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443119"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453627"
 ---
 # <a name="governanceresource-resource-type"></a>тип ресурсов governanceResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "50443119"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ресурсы, которыми может управлять привилегированное управление удостоверениями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т.д.
+Представляет ресурсы, которыми может управлять управление привилегированными пользователями (PIM). Для ресурсов Azure это может быть подписка, группа ресурсов и такие ресурсы, как виртуальная машина, SQL базы данных и т. д.
 
 
 ## <a name="methods"></a>Методы
@@ -27,7 +27,7 @@ ms.locfileid: "50443119"
 |:---------------|:--------|:----------|
 |[Список](../api/governanceresource-list.md) | [коллекция governanceResource](../resources/governanceresource.md)|Перечислить коллекцию ресурсов, к которые имеет доступ запросчик.|
 |[получение](../api/governanceresource-get.md); | [governanceResource](../resources/governanceresource.md) |Чтение свойств и связей объекта ресурсов, указанного в id.|
-|[Зарегистрировать](../api/governanceresource-register.md) | |Зарегистрируйте неуправленную подписку или группу управления Azure в службу PIM. |
+|[Регистрация](../api/governanceresource-register.md) | |Зарегистрируйте неуправленную подписку или группу управления Azure в службу PIM. |
 
 `POST`Нет, `PUT` `PATCH` `DELETE` поддерживаются в `roleDefinitions` наборе сущности на данный момент.
 
@@ -43,7 +43,7 @@ ms.locfileid: "50443119"
 |registeredRoot|String      |ExternalId корневой области ресурса, зарегистрированной в PIM. Корневой областью могут быть родительские, бабушки и дедушки или более высокие ресурсы предка.|
 |roleAssignmentCount|Int32      |Необязательный. Количество назначений ролей для данного ресурса. Чтобы получить свойство, используйте его в `$select=roleAssignmentCount` запросе.|
 |roleDefinitionCount|Int32      |Необязательный. Количество определений ролей для данного ресурса. Чтобы получить свойство, используйте его в `$select=roleDefinitionCount` запросе.|
-|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательное. Он представляет состояние доступа запросителя к ресурсу. Чтобы получить свойство, используйте его в `$select=permissions` запросе.|
+|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательно. Он представляет состояние доступа запросителя к ресурсу. Чтобы получить свойство, используйте его в `$select=permissions` запросе.|
 
 ## <a name="relationships"></a>Связи
 | Связь   | Тип                                         |Описание|

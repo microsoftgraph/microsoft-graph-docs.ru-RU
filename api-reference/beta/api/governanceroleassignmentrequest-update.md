@@ -4,13 +4,13 @@ description: Включить администраторов для обновл
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: ef30468664dd64dc09d9cfb352d514a395368698
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: d81bad403fbac4789c5cf5083c5eb8c85a815bf1
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350889"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453935"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление governanceRoleAssignmentRequests
 
@@ -65,11 +65,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |Строка                 |✓        |Причина, по которой администратор принял решение.|
-|решение        |Строка                 |✓        |Решение администратора запроса на назначение ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied` .|
+|reason        |String                 |✓        |Причина, по которой администратор принял решение.|
+|решение        |String                 |✓        |Решение администратора запроса на назначение ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied` .|
 |schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение ролей. Для состояния `AdminApproved` требуется.|
-|assignmentState      |Строка|         | Состояние назначения и значения могут быть `Eligible` или `Active` . Для принятия `AdminApproved` решения требуется. |
-### <a name="response"></a>Ответ
+|assignmentState      |String|         | Состояние назначения и значения могут быть `Eligible` или `Active` . Для принятия `AdminApproved` решения требуется. |
+### <a name="response"></a>Отклик
 Этот метод может применяться только к запросам, которые находятся в состоянии `PendingAdminDecision` .
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.

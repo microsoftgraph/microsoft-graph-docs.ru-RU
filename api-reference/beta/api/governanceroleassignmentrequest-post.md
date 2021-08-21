@@ -4,13 +4,13 @@ description: Создайте запрос на назначение ролей 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: babca9a53ad10d5b029fdbdd4119220d143b779a
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: a43803b69cfe382fd93bf30af345a659633b9af8
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350924"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453781"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "53350924"
 
 Создайте запрос на назначение ролей для представления операции, необходимой для назначения ролей. В следующей таблице перечислены операции.
 
-| Operation                                   | Type        |
+| Операция                                   | Тип        |
 |:--------------------------------------------|:------------|
 | Назначение роли                    | AdminAdd    |
 | Активация назначения подходящих ролей        | UserAdd     |
@@ -81,15 +81,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | Идентификатор ресурса. Обязательный. |
-| roleDefinitionId | Строка                                                   | ID определения роли. Обязательный. |
-| subjectId        | Строка                                                   | ID субъекта. Обязательный. |
-| assignmentState  | Строка                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
-| type             | Строка                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательный. |
-| reason           | Строка                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
+| resourceId       | String                                                   | Идентификатор ресурса. Обязательно. |
+| roleDefinitionId | String                                                   | ID определения роли. Обязательный. |
+| subjectId        | String                                                   | ID субъекта. Обязательно. |
+| assignmentState  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
+| type             | String                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательный. |
+| reason           | String                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение ролей. Для типа `UserAdd` запроса `AdminAdd` , и , это `AdminUpdate` `AdminExtend` необходимо. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа и объект `201 Created` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте ответа.
 
@@ -97,7 +97,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает коды ошибок, перечисленные в следующей таблице.
 
-| Код ошибки     | Сообщение об ошибке                               | Details       |
+| Код ошибки     | Сообщение об ошибке                               | Сведения       |
 |:---------------|:--------------------------------------------|:--------------|
 | 400 BadRequest | RoleNotFound                                | Предоставленное `roleDefinitionId` в теле запроса не удается найти. |
 | 400 BadRequest | ResourceIsLocked                            | Ресурс, предоставленный в теле запроса, находится в состоянии и `Locked` не может создавать запросы на назначение ролей. |
@@ -117,14 +117,14 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
  >**Примечание:** В дополнение к разрешению в этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
-| Свойство         | Тип                                                     | Обязательный                 | Значение |
+| Свойство         | Тип                                                     | Обязательное                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                      | Подходящая / Активная |
-| type             | Строка                                                   | Да                      | AdminAdd |
-| reason           | Строка                                                   | зависит от роли Параметры |   |
+| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да                      | \<subjectId\> |
+| assignmentState  | String                                                   | Да                      | Подходящая / Активная |
+| type             | String                                                   | Да                      | AdminAdd |
+| reason           | String                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос
@@ -229,14 +229,14 @@ Content-type: application/json
 
 В этом примере пользователь nawu@contoso.com активирует допустимую роль чтения биллинга.
 
-| Свойство         | Тип                                                     | Обязательный                 | Значение |
+| Свойство         | Тип                                                     | Обязательное                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                      | Активное |
-| type             | Строка                                                   | Да                      | UserAdd |
-| reason           | Строка                                                   | зависит от роли Параметры |   |
+| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да                      | \<subjectId\> |
+| assignmentState  | String                                                   | Да                      | Активные |
+| type             | String                                                   | Да                      | UserAdd |
+| reason           | String                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос
@@ -352,14 +352,14 @@ Content-type: application/json
 
 В этом примере пользователь nawu@contoso.com активную роль чтения биллинга.
 
-| Свойство         | Тип                                                     | Обязательный | Значение |
+| Свойство         | Тип                                                     | Обязательное | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да      | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да      | Активное |
-| type             | Строка                                                   | Да      | UserRemove |
-| reason           | Строка                                                   | Нет       |   |
+| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да      | \<subjectId\> |
+| assignmentState  | String                                                   | Да      | Активные |
+| type             | String                                                   | Да      | UserRemove |
+| reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -442,14 +442,14 @@ Content-type: application/json
 
  >**Примечание:** В дополнение к разрешению в этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
-| Свойство         | Тип                                                     | Обязательный | Значение |
+| Свойство         | Тип                                                     | Обязательное | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да      | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да      | Подходящая / Активная |
-| type             | Строка                                                   | Да      | AdminRemove |
-| reason           | Строка                                                   | Нет       |   |
+| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да      | \<subjectId\> |
+| assignmentState  | String                                                   | Да      | Подходящая / Активная |
+| type             | String                                                   | Да      | AdminRemove |
+| reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -530,14 +530,14 @@ Content-type: application/json
 
  >**Примечание:** В дополнение к разрешению в этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
-| Свойство         | Тип                                                     | Обязательный                | Значение |
+| Свойство         | Тип                                                     | Обязательное                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да                     | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да                     | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                     | Подходящая / Активная |
-| type             | Строка                                                   | Да                     | AdminUpdate |
-| reason           | Строка                                                   | зависит от ролиSettings |   |
+| roleDefinitionId | String                                                   | Да                     | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да                     | \<subjectId\> |
+| assignmentState  | String                                                   | Да                     | Подходящая / Активная |
+| type             | String                                                   | Да                     | AdminUpdate |
+| reason           | String                                                   | зависит от ролиSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос
@@ -641,14 +641,14 @@ Content-type: application/json
 
  >**Примечание:** В дополнение к разрешению в этом примере требуется, чтобы у запрашиваемой стороны было по крайней мере одно назначение роли администратора `Active` `owner` `user access administrator` (или) на ресурсе.
 
-| Свойство         | Тип                                                     | Обязательный                | Значение |
+| Свойство         | Тип                                                     | Обязательное                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| roleDefinitionId | Строка                                                   | Да                     | \<roleDefinitionId\> |
-| subjectId        | Строка                                                   | Да                     | \<subjectId\> |
-| assignmentState  | Строка                                                   | Да                     | Подходящая / Активная |
-| type             | Строка                                                   | Да                     | AdminExtend |
-| reason           | Строка                                                   | зависит от ролиSettings |   |
+| roleDefinitionId | String                                                   | Да                     | \<roleDefinitionId\> |
+| subjectId        | String                                                   | Да                     | \<subjectId\> |
+| assignmentState  | String                                                   | Да                     | Подходящая / Активная |
+| type             | String                                                   | Да                     | AdminExtend |
+| reason           | String                                                   | зависит от ролиSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос

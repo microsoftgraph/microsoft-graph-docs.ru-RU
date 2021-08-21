@@ -1,23 +1,23 @@
 ---
 title: Создание unifiedRoleAssignmentScheduleRequest
 description: Создайте новый объект unifiedRoleAssignmentScheduleRequest.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a487a8cba0d5f14906eafea5fe0844d419709853
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: e73b14197a6bd0c26cdb8889c1f01139794f3a50
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334348"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453564"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Создание unifiedRoleAssignmentScheduleRequest
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект unifiedRoleAssignmentScheduleRequest.](../resources/unifiedroleassignmentschedulerequest.md)
+Создайте новый [объект unifiedRoleAssignmentScheduleRequest.](../resources/unifiedroleassignmentschedulerequest.md) Эта операция позволяет администраторам и пользователям добавлять, удалять, расширять или продлевать назначения. Чтобы выполнить этот запрос, вызываемого пользователя необходимо применять многофакторную проверку подлинности (MFA) и запускать запрос в сеансе, в котором он был опровержение для MFA. См. в документе Включить многофакторную проверку подлинности Azure AD для обеспечения безопасности событий [регистрации.](/azure/active-directory/authentication/howto-mfa-userstates)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,12 +52,12 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
-|action|String|Представление типа операции при назначении ролей. Значение может быть <ul><li>`AdminAdd`: Администраторы назначают пользователям и группам роли;</li><li>`UserAdd`: Пользователи активируют подходящие назначения;</li><li> `AdminUpdate`: Администраторы изменяют существующие назначения ролей</li><li>`AdminRemove`: Администраторы удаляют пользователей и группы из ролей;<li>`UserRemove`: Пользователи деактивируют активные назначения;<li>`UserExtend`: Пользователи просят продлить срок действия назначений;</li><li>`AdminExtend`. Администраторы расширяют назначения по истечении срока действия.</li><li>`UserRenew`: Пользователи просят продлить срок действия назначений;</li><li>`AdminRenew`. Администраторы расширяют назначения по истечении срока действия.</li></ul>|
-|principalId|String|Объект объекта, которому предоставляется назначение.|
-|roleDefinitionId|String|ID унифицированногоRoleDefinition для назначения. Только для чтения.|
-|directoryScopeId|String|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением.|
-|appScopeId|String|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением.|
-|isValidationOnly|Логический|Boolean, определяющая, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
+|action|String|Представляет тип операции при назначении ролей. Возможные значения: <ul><li>`AdminAssign`: Чтобы администраторы назначали роли пользователям или группам.</li><li>`AdminRemove`: Чтобы администраторы удаляли пользователей или группы из ролей.</li><li> `AdminUpdate`: Чтобы администраторы изменили существующие назначения ролей.</li><li>`AdminExtend`: Чтобы администраторы продлили назначения по истечении срока действия.</li><li>`AdminRenew`. Чтобы администраторы возобновляли истекаемы назначения.</li><li>`SelfActivate`: Чтобы пользователи активировали свои назначения.</li><li>`SelfDeactivate`: Чтобы пользователи отключались от активных назначений.</li><li>`SelfExtend`. Чтобы пользователи просили продлить срок действия назначений.</li><li>`SelfRenew`: Чтобы пользователи запрашивали продление истеканий назначений.</li></ul>
+|principalId|String|Идентификатор основного, которому предоставляется назначение.|
+|roleDefinitionId|String|Идентификатор унифицированногоRoleDefinition для назначения. Только для чтения.|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
+|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
+|isValidationOnly|Логический|Указывает, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
 |targetScheduleId|String|ID объекта расписания, прикрепленного к назначению.|
 |обоснование|String|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса назначения ролей.|
@@ -67,9 +67,15 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 
 В случае успешного выполнения этот метод возвращает код ответа и `201 Created` объект [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) в тексте ответа.
 
+Когда вызываемого пользователя не вызывалось для многофакторной проверки подлинности во время записи в сеансе, запрос с действием SelfActivate сбой и возвращает код `400 Bad request` ответа.
+
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-admin-assigning-a-directory-role-to-a-principal"></a>Пример 1. Назначение администратором роли каталога директору
+
+#### <a name="request"></a>Запрос
+
+В следующем запросе администратор создает запрос, чтобы назначить роль, определенную главной, `fdd7a751-b60b-444a-984c-02652fe8fa1c` идентифицированной **по id.** `07706ff1-46c7-4847-ae33-3003830675a1` Область их роли — это все объекты каталога в клиенте, а назначение является постоянным, то есть не истекает.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,23 +86,18 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 ``` http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
 Content-Type: application/json
-Content-length: 510
 
 {
-  "@odata.type": "#Microsoft.Identity.Governance.Common.Data.ExternalModels.V1.unifiedRoleAssignmentScheduleRequest",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
+  "action": "AdminAssign",
+  "justification": "Assign User Admin to IT Helpdesk (User) group",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+    "startDateTime": "2021-07-01T00:00:00Z",
+    "expiration": {
+      "type": "NoExpiration"
+    }
   }
 }
 ```
@@ -120,8 +121,10 @@ Content-length: 510
 
 
 
-### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,21 +136,131 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "c13ee236-e236-c13e-36e2-3ec136e23ec1",
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+  "id": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "status": "Provisioned",
+  "createdDateTime": "2021-07-27T09:18:40.2029365Z",
+  "completedDateTime": "2021-07-27T09:18:42.7811184Z",
+  "approvalId": null,
+  "customData": null,
+  "action": "AdminAssign",
+  "principalId": "07706ff1-46c7-4847-ae33-3003830675a1",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "isValidationOnly": false,
+  "targetScheduleId": "b5a22921-656a-4429-9c4e-59a5f576614d",
+  "justification": "Assign User Admin to IT Helpdesk (User) group",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": null,
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+    }
+  },
   "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
+    "startDateTime": "2021-07-27T09:18:42.7811184Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "noExpiration",
+      "endDateTime": null,
+      "duration": null
+    }
   },
   "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
+    "ticketNumber": null,
+    "ticketSystem": null
   }
 }
 ```
 
+### <a name="example-2-user-activating-their-eligible-role"></a>Пример 2. Активация пользователем допустимой роли
+
+#### <a name="request"></a>Запрос
+
+В следующем запросе пользователь, идентифицированный **principalId,** активирует `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` свою собственную роль, определенную `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3` . Область их роли — все объекты каталога в клиенте, а назначение — пять часов. Чтобы выполнить этот запрос, вызываемого пользователя необходимо применять многофакторную проверку подлинности (MFA) и запускать запрос в сеансе, в котором он был опровержение для MFA.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_SelfActivate"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
+Content-Type: application/json
+
+{
+    "action": "SelfActivate",
+    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+    "directoryScopeId": "/",
+    "justification": "Need to update app roles for selected apps.",
+    "scheduleInfo": {
+        "startDateTime": "2021-08-17T17:40:00.000Z",
+        "expiration": {
+            "type": "AfterDuration",
+            "duration": "PT5H"
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": "CONTOSO:Normal-67890",
+        "ticketSystem": "MS Project"
+    }
+}
+```
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+    "id": "163daf73-8746-4996-87de-ab71dc624bf9",
+    "status": "Granted",
+    "createdDateTime": "2021-08-17T17:39:36.7040696Z",
+    "completedDateTime": "2021-08-17T17:40:00Z",
+    "approvalId": null,
+    "customData": null,
+    "action": "SelfActivate",
+    "principalId": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
+    "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "isValidationOnly": false,
+    "targetScheduleId": "163daf73-8746-4996-87de-ab71dc624bf9",
+    "justification": "Need to update app roles for selected apps.",
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "displayName": null,
+            "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f"
+        }
+    },
+    "scheduleInfo": {
+        "startDateTime": "2021-08-17T17:40:00Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "afterDuration",
+            "endDateTime": null,
+            "duration": "PT5H"
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": "CONTOSO:Normal-67890",
+        "ticketSystem": "MS Project"
+    }
+}
+```

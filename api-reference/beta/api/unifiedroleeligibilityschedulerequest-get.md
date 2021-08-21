@@ -1,16 +1,16 @@
 ---
 title: Get unifiedRoleEligibilityScheduleRequest
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleEligibilityScheduleRequest.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7f1321f36a4670adff4ed6474fd1dd71ccf9e5f4
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 7d24198d9d0e71e1663e18acacade9e04443c405
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334670"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453921"
 ---
 # <a name="get-unifiedroleeligibilityschedulerequest"></a>Get unifiedRoleEligibilityScheduleRequest
 Пространство имен: microsoft.graph
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligib
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -64,7 +64,7 @@ GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligib
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/26bc6813-5457-4302-a482-afafd4e2962a
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleeligibilityschedulerequest-csharp-snippets.md)]
@@ -87,7 +87,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,22 +101,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "a2e242a0-42a0-a2e2-a042-e2a2a042e2a2",
-    "action": "String",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "isValidationOnly": "Boolean",
-    "targetScheduleId": "String",
-    "justification": "String",
-    "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "ticketInfo": {
-      "@odata.type": "microsoft.graph.ticketInfo"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+  "id": "26bc6813-5457-4302-a482-afafd4e2962a",
+  "status": "Provisioned",
+  "createdDateTime": "2021-07-26T18:15:33.08Z",
+  "completedDateTime": "2021-07-26T18:15:33.127Z",
+  "approvalId": null,
+  "customData": null,
+  "action": "AdminAssign",
+  "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+  "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+  "directoryScopeId": "/",
+  "appScopeId": null,
+  "isValidationOnly": false,
+  "targetScheduleId": "26bc6813-5457-4302-a482-afafd4e2962a",
+  "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": null,
+      "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
     }
+  },
+  "scheduleInfo": {
+    "startDateTime": "2021-07-26T18:15:33.1266138Z",
+    "recurrence": null,
+    "expiration": {
+      "type": "afterDateTime",
+      "endDateTime": "2022-06-30T00:00:00Z",
+      "duration": null
+    }
+  },
+  "ticketInfo": {
+    "ticketNumber": null,
+    "ticketSystem": null
   }
 }
 ```

@@ -4,13 +4,13 @@ description: Интерфейсы API службы Azure AD Privileged Identity 
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 31f19ab4c6dbb79c5bbf60c045b3367e2d819ee9
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+author: shauliu1
+ms.openlocfilehash: 1905a3fc8f7948c4e34e7e6b6c59b1c7a699f4f4
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546079"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453976"
 ---
 # <a name="privileged-identity-management"></a>Управление привилегированными пользователями
 

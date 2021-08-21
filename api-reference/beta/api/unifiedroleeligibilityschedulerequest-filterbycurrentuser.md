@@ -1,23 +1,26 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: filterByCurrentUser'
 description: Получите список объектов unifiedRoleEligibilityScheduleRequest и их свойств, отфильтрованных определенным пользователем
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8ad251e390eae9f328b425c1083f189d5c6989a5
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 48af31c035ec32e4e8f77100004db1ea47411ddf
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334677"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453802"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) и их свойств, связанных с определенным основным объектом.
+Получите список объектов [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) и их свойств, связанных с подписанным в настоящее время основным объектом. 
+
+> [!NOTE]
+> Этот метод не извлекает объекты для групп, которые в настоящее время подписаны пользователем, и которые имеют право назначения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +38,7 @@ ms.locfileid: "53334677"
 }
 -->
 ``` http
-GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser
+GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -44,7 +47,11 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|ID основного объекта|
+|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Фильтр для запроса объектов, для которых основным является текущий пользователь. Разрешено значение `principal` . Обязательно. Не извлекает назначения для групп, в которые входит этот пользователь.|
+
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -68,12 +75,14 @@ GET /roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUse
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilityScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,22 +94,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(unifiedRoleEligibilityScheduleRequest)",
   "value": [
     {
-      "id": "String (identifier)",
-      "action": "String",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "isValidationOnly": "Boolean",
-      "targetScheduleId": "String",
-      "justification": "String",
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleEligibilityScheduleRequests/$entity",
+      "id": "26bc6813-5457-4302-a482-afafd4e2962a",
+      "status": "Provisioned",
+      "createdDateTime": "2021-07-26T18:15:30.7671793Z",
+      "completedDateTime": "2021-07-26T18:15:33.1266138Z",
+      "approvalId": null,
+      "customData": null,
+      "action": "AdminAssign",
+      "principalId": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
+      "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "directoryScopeId": "/",
+      "appScopeId": null,
+      "isValidationOnly": false,
+      "targetScheduleId": "26bc6813-5457-4302-a482-afafd4e2962a",
+      "justification": "Assign User Admin eligibility to IT Helpdesk (User) group",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": null,
+          "id": "fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+        }
+      },
       "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2021-07-26T18:15:33.1266138Z",
+        "recurrence": null,
+        "expiration": {
+          "type": "afterDateTime",
+          "endDateTime": "2022-06-30T00:00:00Z",
+          "duration": null
+        }
       },
       "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
       }
     }
   ]

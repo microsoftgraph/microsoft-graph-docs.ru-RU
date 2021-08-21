@@ -1,16 +1,16 @@
 ---
 title: тип ресурса privilegedOperationEvent
-description: Представляет событие аудита, которое создается привилегированным управлением удостоверениями для операций ролей, таких как администратор управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
+description: Представляет событие аудита, которое создается управление привилегированными пользователями для операций ролей, например администратор управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: b8a2a67d86a647ca42b6ecd86c5dad5025ede0de
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: shauliu1
+ms.openlocfilehash: af317a8fa1257b9ba9e6bb4c80dc4291337b4d8c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962583"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454096"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>тип ресурса privilegedOperationEvent
 
@@ -18,7 +18,7 @@ ms.locfileid: "50962583"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет событие аудита, которое создается привилегированным управлением удостоверениями для операций ролей, таких как администратор управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
+Представляет событие аудита, которое создается управление привилегированными пользователями для операций ролей, например администратор управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
 
 
 ## <a name="methods"></a>Методы
@@ -36,7 +36,7 @@ ms.locfileid: "50962583"
 |id|string|Уникальный идентификатор для privilegedOperationEvent. Только для чтения.|
 |referenceKey|string|Номер билета incident/Request во время активации роли. Значение представлено только в том случае, если номер билета предоставляется во время активации роли.|
 |referenceSystem|string|Система билетов incident/Request, предоставляемая во время активации tole. Значение представлено только в том случае, если система билетов предоставляется во время активации роли.|
-|requestType|Строка|Тип операции запроса. Значение requestType может быть: `Assign` (назначение ролей), (активация роли), (удаление назначения ролей), (отключение роли), (сканирование оповещений о безопасности), (устранение проблемы оповещения о безопасности), (просмотрите обзор доступа), (создайте обзор доступа) (обновите обзор `Activate` `Unassign` `Deactivate` `ScanAlertsNow` `DismissAlert` `FixAlertItem`  `AccessReview_Review` `AccessReview_Create` `AccessReview_Update` доступа), `AccessReview_Delete` (удалите обзор доступа).|
+|requestType|String|Тип операции запроса. Значение requestType может быть: `Assign` (назначение ролей), (активация роли), (удаление назначения ролей), (отключение роли), (сканирование оповещений о безопасности), (устранение проблемы оповещения о безопасности), (просмотрите обзор доступа), (создайте обзор доступа) (обновите обзор `Activate` `Unassign` `Deactivate` `ScanAlertsNow` `DismissAlert` `FixAlertItem`  `AccessReview_Review` `AccessReview_Create` `AccessReview_Update` доступа), `AccessReview_Delete` (удалите обзор доступа).|
 |requestorId|string|Пользовательский id запросителя, который инициирует операцию.|
 |requestorName|string|Имя пользователя запросителя, который инициирует операцию.|
 |roleId|string|ID роли, связанной с операцией.|

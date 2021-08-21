@@ -4,13 +4,13 @@ description: Удаление privilegedRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: a28842b23825db7b010e2d597d592f1fd5ec5db2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: ecaa47dbcf2d626437ad4c7e7730aa571db163bf
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055241"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454054"
 ---
 # <a name="delete-privilegedroleassignment"></a>Удаление privilegedRoleAssignment
 
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

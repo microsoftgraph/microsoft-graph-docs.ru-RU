@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleAssignmentSchedule
 description: Представляет расписание операций по активному назначению ролей через Azure AD управление привилегированными пользователями.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f89a6e1c7fecac535c8f0a50d7888aa65c7d94cc
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 8e528fe7fd6508d8cc5c3eac23f1796731c50d5f
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682280"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453214"
 ---
 # <a name="unifiedroleassignmentschedule-resource-type"></a>тип ресурса unifiedRoleAssignmentSchedule
 
@@ -18,7 +18,9 @@ ms.locfileid: "52682280"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет расписание назначения активной роли через Azure AD управление привилегированными пользователями. A `roleAssignmentSchedule` создается `roleAssignmentScheduleRequest` и используется для мгновенного создания `roleAssignmentInstance` . Мы поддерживаем список и получаем операции для получения расписания для просмотра текущих и будущих назначений.
+Представляет расписание назначения активной роли через Azure AD управление привилегированными пользователями. **УнифицированнаяRoleAssignmentSchedule** создается единой [службойRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) и используется для мгновенного создания [единой системыRoleAssignmentScheduleInstance.](unifiedroleassignmentscheduleinstance.md) Этот ресурс поддерживает список и извлекает операции для получения расписания для просмотра текущих и будущих назначений.
+
+Наследует [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
@@ -30,18 +32,18 @@ ms.locfileid: "52682280"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appScopeId|String|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |assignmentType|String|Тип назначения. Это может быть `Assigned` или `Activated` .|
 |createdDateTime|DateTimeOffset|Время создания расписания. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |createdUsing|String|ID ролиAssignmentScheduleRequest, создав этот график. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|directoryScopeId|String|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |id|String|Уникальный идентификатор для unifiedRoleAssignmentSchedule. Key, not nullable, Read-only. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
 |memberType|String|Тип членства назначения. Это может быть `Inherited` или `Direct` , или `Group` .|
 |modifiedDateTime|DateTimeOffset|При последнем обновлении расписания. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|principalId|String| Объект объекта, которому предоставляется назначение. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
-|roleDefinitionId|String|ID унифицированногоRoleDefinition для назначения. Только для чтения. Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|principalId|String| Объект объекта, которому предоставляется назначение. Может быть группой или пользователем. Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md). <br> Поддерживает `$filter` (`eq`).|
+|roleDefinitionId|String|ID унифицированногоRoleDefinition для назначения. Только для чтения. Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md). <br> Поддерживает `$filter` (`eq`).|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса назначения ролей.|
-|status|String|Состояние `roleAssignmentSchedule` для . Он может включать сообщения, связанные с `Provisioned` состоянием, как , и `Revoked` `Pending Provisioning` `Pending Approval` . Унаследованный от [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)|
+|status|String|Состояние `roleAssignmentSchedule` для . Он может включать сообщения, связанные с `Provisioned` состоянием, как , и `Revoked` `Pending Provisioning` `Pending Approval` . Наследуется [от unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).<br> Поддерживает `$filter` (`eq`).|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

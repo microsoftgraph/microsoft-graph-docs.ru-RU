@@ -4,13 +4,13 @@ description: Извлечение списка объектов privilegedRoleAs
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: f1be6a9860daf1b29567b28a43e44a51433a2e1d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 55962741c22a89f126ad064294ce036d5b1905cc
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055269"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454250"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,13 +4,13 @@ description: Извлечение свойств и связей объекта 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: c51cf8c0629e5244c4cd9a06eaf9c85afe443d53
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 10e0a94630fac29a2edd410b18d6bbbf1413d3e2
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049858"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452864"
 ---
 # <a name="get-privilegedapproval"></a>Получение privilegedApproval
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/privilegedApproval/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

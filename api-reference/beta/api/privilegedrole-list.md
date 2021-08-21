@@ -4,13 +4,13 @@ description: Извлечение списка объектов privilegedRole.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: e785505a3b6a86b82a1631422e0e8861e68551d0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: f42ed124e5c55923c81ee3269a0e377d6b4e62c4
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055262"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453676"
 ---
 # <a name="list-privilegedroles"></a>Список привилегированныхролей
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

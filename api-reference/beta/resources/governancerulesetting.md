@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса governanceRuleSetting
-description: Представляет правила, из которого состоят параметры роли.
+title: тип ресурсов governanceRuleSetting
+description: Представляет правила, из которого состоят параметры ролей.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: b55ddfea8f46f9d064b4a032a804c2c5f4847d1a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: shauliu1
+ms.openlocfilehash: 956d3b3c17182285d1ba74552a3b0bfdd5c717fa
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132694"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454047"
 ---
-# <a name="governancerulesetting-resource-type"></a>Тип ресурса governanceRuleSetting
+# <a name="governancerulesetting-resource-type"></a>тип ресурсов governanceRuleSetting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет правила, из которого состоят параметры роли.
+Представляет правила, из которого состоят параметры ролей.
 
 
 ## <a name="properties"></a>Свойства
 |Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|Строка        |ИД правила. Например, ``ExpirationRule`` и ``MfaRule`` .|
-|setting       |String        |Параметры правила. Значением является строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|ruleIdentifier|String        |Id правила. Например, ``ExpirationRule`` и ``MfaRule`` .|
+|setting       |String        |Параметры правила. Это значение — строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -4,13 +4,13 @@ description: Представляет параметры привилегиро�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: a1f20455ffcc818aa1b1edf784d6990d68b7556b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: shauliu1
+ms.openlocfilehash: b954dbc0dc72028d60861c5c07820302f3cbe19d
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962570"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454124"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>тип ресурса privilegedRoleSettings
 
@@ -40,7 +40,7 @@ ms.locfileid: "50962570"
 |notificationToUserOnElevation|boolean|`true` при отправке уведомления конечному пользователю при активации роли. `false` если не отправлять уведомления при активации роли.|
 |ticketingInfoOnElevation|boolean|`true` если при активации роли требуется информация о билетах. `false` если сведения о билетах не требуются при активации роли.|
 |approvalOnElevation|boolean|`true` если требуется утверждение при активации роли. `false` если утверждение не требуется при активации роли.|
-|approverIds| Коллекция строк |Список ids утверждения, если требуется утверждение для активации.|
+|approverIds| string collection |Список ids утверждения, если требуется утверждение для активации.|
 
 ## <a name="relationships"></a>Связи
 Нет

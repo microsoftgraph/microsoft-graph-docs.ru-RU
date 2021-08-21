@@ -1,46 +1,46 @@
 ---
-title: Тип ресурса privilegedAccess
-description: " например, `privilegedAccess/azureResources` представляет PIM, управляющее привилегированным доступом к ресурсам Azure."
+title: тип ресурса privilegedAccess
+description: " например, представляет собой управление привилегированным доступом PIM к ресурсам `privilegedAccess/azureResources` Azure."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 8a144ba13974a728b4e89fc661f34f20e8157689
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: shauliu1
+ms.openlocfilehash: 0ada5d88ea0404577869aea9a1f1453c1d77fc3f
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136621"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453975"
 ---
-# <a name="privilegedaccess-resource-type"></a>Тип ресурса privilegedAccess
+# <a name="privilegedaccess-resource-type"></a>тип ресурса privilegedAccess
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет группу функций, предоставляемых службой Privileged Identity Management (PIM). Разные экземпляры представляют различных поставщиков, управляемых `privilegedAccess` PIM; например, представляет PIM, управляющую привилегированным доступом `privilegedAccess/azureResources` к ресурсам Azure.
+Представляет группу функциональных возможностей, предоставляемых службой управление привилегированными пользователями (PIM). Различные экземпляры представляют различных поставщиков, управляемых `privilegedAccess` PIM; например, представляет PIM, управляющую привилегированным доступом `privilegedAccess/azureResources` к ресурсам Azure.
 
 
-`privilegedAccess` в настоящее время находится только для чтения. Нет, не поддерживаются операции или `POST` операции для `PUT` набора `PATCH` `DELETE` `privilegedAccess` суностей.
+`privilegedAccess` только для чтения на данный момент. Нет `POST` , или операции `PUT` `PATCH` `DELETE` поддерживаются в `privilegedAccess` наборе сущности.
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----------|:----------|:----------|
-|id         |Строка     |ИД поставщика, управляемого PIM.|
-|displayName|Строка     |Отображаемого имени поставщика, управляемого PIM.|
+|id         |String     |ID поставщика, управляемого PIM.|
+|displayName|String     |Отображает имя поставщика, управляемого PIM.|
 
 
 ## <a name="relationships"></a>Связи
 | Связь   | Тип                                         |Описание|
 |:---------------|:---------------------------------------------|:----------|
 |resources       |[коллекция governanceResource](../resources/governanceresource.md)            |Коллекция ресурсов для поставщика.|
-|roleAssignments |[Коллекция governanceRoleAssignment](../resources/governanceroleassignment.md)|Коллекция назначений ролей для поставщика.|
-|roleDefinitions |[Коллекция governanceRoleDefinition](../resources/governanceroledefinition.md)|Коллекция отозванных ролей для поставщика.|
-|roleAssignmentRequests |[Коллекция governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Коллекция запросов на назначение ролей для поставщика.|
-|roleSettings |[Коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Коллекция параметров роли для поставщика.|
+|roleAssignments |[коллекция governanceRoleAssignment](../resources/governanceroleassignment.md)|Коллекция назначений ролей для поставщика.|
+|roleDefinitions |[коллекция governanceRoleDefinition](../resources/governanceroledefinition.md)|Коллекция порочаций ролей для поставщика.|
+|roleAssignmentRequests |[коллекция governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Коллекция запросов на назначение ролей для поставщика.|
+|roleSettings |[коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Коллекция параметров ролей для поставщика.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

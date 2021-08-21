@@ -1,16 +1,16 @@
 ---
 title: 'rbacApplication: roleSchedules'
 description: Извлечение обеих ролейAssignmentSchedules и roleEligibilitySchedules.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 415d7a5565ff4f35b55f003726d24cfe589b472e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 3e098692d1c34b0b1eee077554e7620ace9a31f8
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680138"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453991"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication: roleSchedules
 Пространство имен: microsoft.graph
@@ -43,10 +43,10 @@ GET /roleManagement/directory/roleSchedules
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|directoryScopeId|String|Id объекта каталога, который представляет область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
-|appScopeId|String|Id конкретной области приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
-|principalId|String|Objectid основного, к которому относятся графики. |
-|roleDefinitionId|String|ID единогоRoleDefinition для назначения. Только для чтения.|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
+|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц. |
+|principalId|String| Идентификатор основного, которому предоставляется назначение. Может быть группой или пользователем. |
+|roleDefinitionId|String|Идентификатор единойRoleDefinition для назначения. Только для чтения.|
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,7 +59,7 @@ GET /roleManagement/directory/roleSchedules
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -95,7 +95,9 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleSchedules(dire
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

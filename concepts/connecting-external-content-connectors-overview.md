@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: a14435329e99dba4c9ec6710c36f91a05655d0e711deab3994e58d18e853253b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bac47cfcc766b5174a2cf39ac7c1c26cdebfce9
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151823"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453592"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Соединители Microsoft Graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "54151823"
 
 ## <a name="build-your-own-custom-connector"></a>Создание собственного пользовательского соединителя
 
-Более 100 доступных в настоящее время соединителей корпорации Майкрософт и ее партнеров позволяют подключиться к популярным службам Майкрософт и сторонних разработчиков. Среди примеров существующих соединителей службы Azure, Box, ServiceNow, SalesForce, службы Google, MediaWiki и множество других.
+Более 100 доступных в настоящее время соединителей корпорации Майкрософт и ее партнеров позволяют подключиться к популярным службам Майкрософт и сторонних разработчиков. К примерам существующих соединителей относятся службы Azure, Box, ServiceNow, Salesforce, службы Google, MediaWiki и т. д.
 
 Дополнительная информация о существующих соединителях Microsoft Graph представлена в [коллекции соединителей Microsoft Graph](/microsoftsearch/connectors-gallery).
 

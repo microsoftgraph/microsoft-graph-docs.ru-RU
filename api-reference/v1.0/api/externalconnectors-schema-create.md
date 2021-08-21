@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6f271195136a3a469de871e3f17fec5e485ff86c
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: e1b928041e7891127a5e1de4fa46c5906815dd90
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580720"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454243"
 ---
 # <a name="create-schema"></a>Создание схемы
 Пространство имен: microsoft.graph.externalConnectors
@@ -43,12 +43,7 @@ POST /external/connections/{id}/schema
 
 ## <a name="response"></a>Отклик
 
-Если заготка включена в запрос, этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для получения состояния `Prefer: respond-async` `202 Accepted` `Location` [операции.](../api/externalconnectors-connectionoperation-get.md)
-
-Без заголовка, включенного в запрос, в случае успешного использования этот метод возвращает код ответа и новый объект схемы в `Prefer: respond-async` `201 Created` тексте ответа. [](../resources/externalconnectors-schema.md)
-
-> [!NOTE]
-> Создание схемы — это длительный процесс, склонный к выходу времени шлюза. Рекомендуется использовать `Prefer: respond-async` заготку, чтобы избежать ошибок в периодике.
+В случае успешного использования этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для `202 Accepted` `Location` получения состояния [операции.](../api/externalconnectors-connectionoperation-get.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -68,7 +63,6 @@ POST /external/connections/{id}/schema
 ```http
 POST https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 Content-type: application/json
-Prefer: respond-async
 
 {
   "baseType": "microsoft.graph.externalItem",
