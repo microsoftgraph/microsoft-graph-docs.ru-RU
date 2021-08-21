@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleEligibilityScheduleInstance
 description: Представляет экземпляр расписания для соответствующих операций назначения ролей через Azure AD управление привилегированными пользователями.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 024f00486898f6af0955fe2ecda93fdb024758d3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bf4e689e4379f34a0196506bcdecafa991b6d38c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682126"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453788"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-resource-type"></a>тип ресурса unifiedRoleEligibilityScheduleInstance
 
@@ -18,7 +18,7 @@ ms.locfileid: "52682126"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет экземпляр для назначения подходящих ролей через Azure AD управление привилегированными пользователями. A создается и представляет фактическое назначение роли, созданное `roleEligibilityInstance` `roleEligibilitySchedule` управление привилегированными пользователями. Мы поддерживаем список и получаем операции на roleEligibilityInstance для просмотра текущих и будущих назначений.
+Представляет экземпляр для назначения подходящих ролей через Azure AD управление привилегированными пользователями. **УнифицированнаяRoleEligibilityScheduleInstance** создается [унифицированнойRoleEligibilitySchedule](unifiedroleeligibilityschedule.md) и представляет фактическое назначение подходящих ролей, созданное управление привилегированными пользователями. Этот ресурс поддерживает операции List и Get для просмотра текущих и будущих назначений.
 
 Наследует [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 
@@ -32,15 +32,15 @@ ms.locfileid: "52682126"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|appScopeId|String|Id конкретной области приложения, когда область назначения является конкретной. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте "/" для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|directoryScopeId|String|Id объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. Унаследованный от [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|endDateTime|DateTimeOffset|Время истечения срока действия ролиEligibilityScheduleInstance|
-|id|String|Уникальный идентификатор для roleEligibilityScheduleInstance. Key, not nullable, Read-only.Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
+|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|endDateTime|DateTimeOffset|Время истечения срока действия функции RoleEligibilityScheduleInstance.|
+|id|String|Уникальный идентификатор для roleEligibilityScheduleInstance. Key, not nullable, Read-only.Inherited from [unifiedRoleScheduleInstanceBase.](../resources/unifiedrolescheduleinstancebase.md)|
 |memberType|String|Тип членства назначения. Это может быть `Inherited` или `Direct` , или `Group` .|
-|principalId|String|Объект объекта, которому предоставляется назначение. Унаследованный от [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|roleDefinitionId|String|ID унифицированногоRoleDefinition для назначения. Только для чтения. Унаследованный от [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md)|
-|roleEligibilityScheduleId|String|ID родительской ролиEligibilitySchedule для этого экземпляра|
-|startDateTime|DateTimeOffset|Время запуска roleEligibilityScheduleInstance|
+|principalId|String|Идентификатор основного, которому предоставляется назначение. Может быть группой или пользователем. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
+|roleDefinitionId|String|Идентификатор унифицированногоRoleDefinition для назначения. Только для чтения. Наследуется [от unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).<br> Поддерживает `$filter` (`eq`).|
+|roleEligibilityScheduleId|String|Идентификатор родительской ролиEligibilitySchedule для этого экземпляра.|
+|startDateTime|DateTimeOffset|Время запуска roleEligibilityScheduleInstance.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

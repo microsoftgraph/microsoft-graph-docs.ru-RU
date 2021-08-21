@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса governanceRoleAssignmentRequestStatus
+title: тип ресурса governanceRoleAssignmentRequestStatus
 description: Представляет состояние governanceRoleAssignmentRequest.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 99fc5ef72c40a5eff30a5e33ed89316e56c26962
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: shauliu1
+ms.openlocfilehash: 80994db594c2f0e45dfe36a5fbf32260266a0536
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128612"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453543"
 ---
-# <a name="governanceroleassignmentrequeststatus-resource-type"></a>Тип ресурса governanceRoleAssignmentRequestStatus
+# <a name="governanceroleassignmentrequeststatus-resource-type"></a>тип ресурса governanceRoleAssignmentRequestStatus
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет состояние [governanceRoleAssignmentRequest.](../resources/governanceroleassignmentrequest.md)
+Представляет состояние [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 
 ## <a name="properties"></a>Свойства
 Свойство       | Тип |Описание|
 |:----|:-------------|:-----|
-|status |String| Состояние запроса на назначение роли. Значение может быть `InProgress` или `Closed` .|
-|subStatus |Строка| Под состояние запроса на назначение роли. Значения: , `Accepted` `PendingEvaluation` , `Granted` , , , `Denied` , , , , , , `PendingProvisioning` , , , , , `Provisioned` , , `PendingRevocation` `Revoked` и `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` .|
-|statusDetails       |Коллекция [keyValue](../resources/keyvalue.md)| Сведения о состоянии запроса на назначение роли. Он представляет результаты оценки различных правил. |
+|status |String| Состояние запроса на назначение ролей. Значение может быть `InProgress` или `Closed` .|
+|subStatus |String| Состояние подгруппы запроса назначения ролей. Значения могут быть `Accepted` `PendingEvaluation` , , , , , `Granted` , , , , , , `Denied` `PendingProvisioning` , , `Provisioned` `PendingRevocation` и `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` .|
+|statusDetails       |Коллекция [keyValue](../resources/keyvalue.md)| Сведения о состоянии запроса на назначение ролей. Он представляет результаты оценки различных правил. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

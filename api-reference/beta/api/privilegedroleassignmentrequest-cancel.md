@@ -4,13 +4,13 @@ description: Отмена привилегированногоRoleAssignmentRequ
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 9ff689e661b98e2a84f998cc301e20ddb0f53424
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: shauliu1
+ms.openlocfilehash: dac7c1395b1a3cb46dc5158d7dced235b2583c6a
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720575"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452878"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Отмена privilegedRoleAssignmentRequest
 
@@ -45,7 +45,7 @@ POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Он возвращает [привилегированныеRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в ответном органе.
+При успешном выполнении этот метод возвращает код отклика `200 Ok`. Он возвращает [привилегированныеRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в ответном органе.
 
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает пользовательские коды ошибок, перечисленные в следующей таблице.

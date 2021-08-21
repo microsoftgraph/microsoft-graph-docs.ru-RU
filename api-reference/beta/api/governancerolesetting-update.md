@@ -4,13 +4,13 @@ description: Обновление свойств governanceRoleSetting.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: e447124ff26cb7d1cfb6010b65de1774004199cb
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: 63a6baa579c4c3de8d15538737db7b1ceef2ab8c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350777"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452479"
 ---
 # <a name="update-governancerolesetting"></a>Обновление управленияRoleSetting
 
@@ -62,7 +62,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 | Content-Type  | application/json|
 
 
@@ -82,7 +82,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает следующие пользовательские коды ошибок.
 
-|Код ошибки     | Сообщение об ошибке         | Details             |
+|Код ошибки     | Сообщение об ошибке         | Сведения             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | В системе не существует системы [governanceRoleSetting.](../resources/governancerolesetting.md)
 | 400 BadRequest| InvalidRoleSetting    | Значения [governanceRuleSettings,](../resources/governancerulesetting.md) предоставляемые в теле запроса, не допустимы.

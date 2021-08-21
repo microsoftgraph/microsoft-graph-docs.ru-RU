@@ -4,13 +4,13 @@ description: Используйте этот API для создания нов�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 3b85324bc8468f0fd6c3c5963ab417ba8c6a9acb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 5e99d06616d3ddfa08119a6fed352b4ba7b274a1
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055290"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453557"
 ---
 # <a name="create-privilegedapproval"></a>Создание privilegedApproval
 
@@ -91,7 +91,7 @@ Content-length: 180
 
 В теле запроса поставляем представление JSON объекта [privilegedApproval.](../resources/privilegedapproval.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

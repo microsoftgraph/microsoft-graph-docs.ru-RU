@@ -5,12 +5,12 @@ author: mkhribech
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ba5a1a874431b2cd543ac35057c29127896e1f52
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 97a87a592651fd963f979ebb14078b02a6cfe88d
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896678"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452885"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -113,7 +113,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
 
 - Если вы получаете онлайн-собрание на основе ID собрания, **videoTeleconferenceId** или **joinWebUrl,** этот метод также возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
 - Если вы получаете отчет участника или запись собрания в режиме онлайн, этот метод также возвращает заготку, которая указывает URI на отчет или запись `Location` участника, соответственно.

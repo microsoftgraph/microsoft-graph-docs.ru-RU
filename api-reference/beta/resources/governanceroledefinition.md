@@ -4,13 +4,13 @@ description: Представляет определения ролей. Для 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: dd4a9fc90d3c12669464a5e9b931b968d4526640
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 4f0144f4d26c8440b4e2bdc0965e88310a4f9145
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443057"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453725"
 ---
 # <a name="governanceroledefinition-resource-type"></a>тип ресурса governanceRoleDefinition
 

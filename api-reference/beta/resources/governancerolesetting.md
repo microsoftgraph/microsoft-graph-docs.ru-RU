@@ -4,13 +4,13 @@ description: Представляет набор конфигураций для
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: cdc2889624dd9b23920c5cd04ed2c41344cb951c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+author: shauliu1
+ms.openlocfilehash: 84226a44df2561dbd30bfec7987a0ce625340e27
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722288"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453550"
 ---
 # <a name="governancerolesetting-resource-type"></a>тип ресурса governanceRoleSetting
 
@@ -26,7 +26,7 @@ ms.locfileid: "50722288"
 |:---------------|:--------|:--------|
 |[Список](../api/governancerolesetting-list.md) | [коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Список параметров ролей на ресурсе.|
 |[получение](../api/governancerolesetting-get.md); |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойств и связей параметра ролей.|
-|[Обновление](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
+|[обновление](../api/governancerolesetting-update.md). | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
 
 ## <a name="properties"></a>Свойства
 |Свойство               |Тип                                      |Описание|

@@ -4,13 +4,13 @@ description: Сделайте назначение роли постоянным
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: a66834f5937b8dea55391553536670ff06ae83c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+author: shauliu1
+ms.openlocfilehash: 20f78bd0f01c214a6f7c5fea40df4ac7042b141c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037377"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454152"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
@@ -49,7 +49,7 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |reason|string|Необязательно. Причина для этого вызова.|
-|ticketNumber|string|Необязательно. Номер билета, связанный с этим действием.|
+|ticketNumber|string|Необязательный параметр. Номер билета, связанный с этим действием.|
 |ticketSystem|string|Необязательно. Система билетов.|
 
 ## <a name="response"></a>Отклик
@@ -97,7 +97,7 @@ Content-length: 110
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

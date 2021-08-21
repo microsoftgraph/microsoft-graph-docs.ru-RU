@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: Ресурс Identity является коллекцией с ключом для ресурсов Identity.
-ms.date: 09/10/2017
+description: Ресурс identitySet — это набор ключей для ресурсов удостоверений.
 title: IdentitySet
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 60fdb901ecd74f3826604d139cad71d9d0844221
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: users
+ms.openlocfilehash: 50f6b45c3121f770019d9b5be7e0492242711e1c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966766"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453718"
 ---
-# <a name="identityset-resource-type"></a>Тип ресурса Identity
+# <a name="identityset-resource-type"></a>Тип ресурса identitySet
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **Identity** является коллекцией с ключом для ресурсов [Identity](identity.md) .
+Ресурс **identitySet** — это набор ключей для ресурсов [удостоверений.](identity.md)
 
 Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
 
@@ -62,15 +61,15 @@ ms.locfileid: "47966766"
 | Свойство    | Тип                    | Описание                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Identity](identity.md) | Необязательный. Приложение, связанное с данным действием.  |
-| conversation| [Identity](identity.md) | Необязательный. Группа или канал, связанные с этим действием.       |
-| конверсатионидентититипе| [Identity](identity.md) | Необязательный. Указывает, идентифицирует ли свойство **беседы** группу или канал.|
+| conversation| [Identity](identity.md) | Необязательный. Команда или канал, связанный с этим действием.       |
+| conversationIdentityType| [Identity](identity.md) | Необязательный. Указывает, определяет ли свойство **беседы** команду или канал.|
 | Устройство      | [Identity](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
-| phone       | [identity](identity.md) | Необязательный параметр. Номер телефона, связанный с этим действием. |
+| phone       | [identity](identity.md) | Необязательно. Номер телефона, связанный с этим действием. |
 | user        | [Identity](identity.md) | Необязательный. Пользователь, связанный с данным действием.         |
 
 ## <a name="remarks"></a>Заметки 
 
-Ознакомьтесь со статьей [вызов](call.md) для использования ресурсов **удостоверений** .
+См. в этой ленте [Call](call.md) for use of **identitySet** resources.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

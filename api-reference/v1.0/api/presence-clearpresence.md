@@ -5,24 +5,22 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 02140f99accf36bfac156996e83bd75de2bb3b19
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 50139466774cbecd0ef1fe87addfb7bd4d2886a2
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397094"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453837"
 ---
 # <a name="presence-clearpresence"></a>присутствие: clearPresence
 
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Очистить сеанс присутствия приложения для пользователя. Если это единственный сеанс присутствия пользователя, его присутствие изменится на `Offline/Offline` .
 
 Сведения о сеансах присутствия см. в материале [presence: setPresence.](presence-setpresence.md#presence-sessions)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова API требуется следующее разрешение. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
@@ -49,7 +47,7 @@ POST /users/{userId}/presence/clearPresence
 
 | Параметр | Тип   | Описание                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | строка | ID сеанса присутствия приложения. |
+| sessionId | string | ID сеанса присутствия приложения. |
 
 
 > [!IMPORTANT]
@@ -57,7 +55,7 @@ POST /users/{userId}/presence/clearPresence
 > Предоставление ID приложения, как `sessionId` и в запросе.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 Если сеанс присутствия не существует, этот метод возвращает код `404 NotFound` ответа.
 

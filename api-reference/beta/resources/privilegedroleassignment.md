@@ -4,13 +4,13 @@ description: 'Представляет привилегированное наз
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 55b37c195777659b172e668d4e02b60de4f78c0d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 5589f15c06cd91dca7f23a88cb3140bdc8c0e36c
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440166"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454082"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>тип ресурса privilegedRoleAssignment
 

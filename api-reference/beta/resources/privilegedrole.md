@@ -4,13 +4,13 @@ description: 'Представляет роль администратора Azu
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 4eca2f1a3d9de4fa7f625cd6b559b5a0c9c03916
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+author: shauliu1
+ms.openlocfilehash: 5784a28ec18c0ed02540321d92ee2bab386dc760
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444016"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58452416"
 ---
 # <a name="privilegedrole-resource-type"></a>тип ресурса privilegedRole
 
@@ -41,7 +41,7 @@ ms.locfileid: "50444016"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignments|Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)| Назначения для этой роли. Только для чтения. Допускается значение null.|
-|параметры|[privilegedRoleSettings](privilegedrolesettings.md)| Параметры для этой роли. Только для чтения. Допускается значение null.|
+|settings|[privilegedRoleSettings](privilegedrolesettings.md)| Параметры для этой роли. Только для чтения. Допускается значение null.|
 |summary|[privilegedRoleSummary](privilegedrolesummary.md)| Сводная информация для этой роли. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса governancePermission
-description: 'Представляет разрешение на доступ, которое имеется у governanceSubject к определенному governanceResource.  '
+title: тип ресурса governancePermission
+description: 'Представляет разрешение доступа, которое у governanceSubject имеется для определенного governanceResource.  '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: f316a863ecba9ed546b9ba4045e57ada87e97ab9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+author: shauliu1
+ms.openlocfilehash: c094050f32b020c204d645dfc0c398ad5bfa5d20
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128847"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453732"
 ---
-# <a name="governancepermission-resource-type"></a>Тип ресурса governancePermission
+# <a name="governancepermission-resource-type"></a>тип ресурса governancePermission
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет разрешение на доступ, которое [имеется у governanceSubject](../resources/governancesubject.md) к определенному [governanceResource.](../resources/governanceresource.md)
+Представляет разрешение доступа, которое [у governanceSubject](../resources/governancesubject.md) имеется для определенного [governanceResource.](../resources/governanceresource.md)
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accessLevel|Строка|Уровень доступа. Допустимые значения: ``None`` , , , и ``UserRead`` ``AdminRead`` ``AdminReadWrite`` .|
-|isActive|Boolean|Указать, есть ли у запрашивателя назначение активной роли для уровня доступа.|
-|isEligible|Boolean|Указать, есть ли у запрашивателя право на назначение роли для уровня доступа.|
+|accessLevel|String|Уровень доступа. Допустимые значения: ``None`` ``UserRead`` , , и ``AdminRead`` ``AdminReadWrite`` .|
+|isActive|Логический|Указать, есть ли у запрашивателя какие-либо активные назначения ролей для уровня доступа.|
+|isEligible|Логический|Указать, имеется ли у запросителя любое назначение ролей для уровня доступа.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

@@ -4,13 +4,13 @@ description: Регистрация объекта governanceResource в PIM.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 363ee47fcded93062b325f3f58df14dfa4a3c625
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+author: shauliu1
+ms.openlocfilehash: 05ab764e1cb4876889cc4627d1f94048990f61ff
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350868"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453865"
 ---
 # <a name="governanceresource-register"></a>governanceResource: регистрация
 
@@ -65,7 +65,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 | Имя | Описание |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -74,7 +74,7 @@ POST /privilegedAccess/azureResources/resources/register
 |:---------- |:---- |:----------- |
 | externalId | String | Внешний идентификатор ресурса, который будет зарегистрирован в PIM. При регистрации подписки идентификатором является идентификатор подписки, предварительно заранее задверяющий `/subscriptions/` . Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает `200 OK` ответ.
 

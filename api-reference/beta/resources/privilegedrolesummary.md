@@ -4,13 +4,13 @@ description: Сводка статистики для определенной �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu
-ms.openlocfilehash: 962cd1b830542c5b17c5f742af357d5855b81886
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+author: shauliu1
+ms.openlocfilehash: 1390804ca0d88eaee823e20ecb226c31609822e1
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962563"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454110"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>тип ресурса privilegedRoleSummary
 

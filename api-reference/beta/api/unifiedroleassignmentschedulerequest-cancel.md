@@ -1,23 +1,23 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: отмена'
 description: Отмена единой системыRoleAssignmentScheduleRequest.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f9a74d0b9d341074c3ad68eb1fdad7c77b2baa43
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 4770603d5b0cc57830f089a42351608a0c75bbca
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334376"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58453774"
 ---
 # <a name="unifiedroleassignmentschedulerequest-cancel"></a>unifiedRoleAssignmentScheduleRequest: отмена
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Немедленно [отмените унифицированныйRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) и задайте системе автоматическое удаление отмененного запроса через 30 дней.
+Немедленно отмените [объект unifiedRoleAssignmentScheduleRequest,](../resources/unifiedroleassignmentschedulerequest.md) который находится в состоянии, и через 30 дней система автоматически удалит `Granted` отмененный запрос. После вызова этого действия **состояние** отмененного unifiedRoleAssignmentScheduleRequest изменяется на `Canceled` .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssign
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`. Попытка отменить запрос, который не отменяется, например, объект unifiedRoleAssignmentScheduleRequest, состояние которого или , возвращает код  `Provisioned` `Failed` `400 Bad Request` ошибки.
 
 ## <a name="examples"></a>Примеры
 
@@ -61,7 +61,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssign
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestsId}/cancel
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/15fec3d4-64b1-4b03-beb7-f1ba6dddf6cc/cancel
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleassignmentschedulerequest-cancel-csharp-snippets.md)]
@@ -84,7 +84,6 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSch
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

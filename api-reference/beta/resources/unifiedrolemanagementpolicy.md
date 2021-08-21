@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicy
 description: В unifiedRoleManagementPolicy указаны различные политики, связанные с областью и определением ролей. Она получена из microsoft.graph.policyBase.
-author: shauliu
+author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 71456639325f586f36652891ab21bb2ccc4ca8454f5037f6362d39fb7b4a6898
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4bfab06814bd9a443ad15f81e1cb96dcba475b3f
+ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160718"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58454215"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>тип ресурса unifiedRoleManagementPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "54160718"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|Описание политики.|
+|description|String|Описание политики.|
 |displayName|String|Отображение имени политики.|
 |id|String|Уникальный идентификатор для политики.|
 |isOrganizationDefault|Логический|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
