@@ -65,7 +65,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
