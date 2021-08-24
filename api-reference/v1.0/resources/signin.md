@@ -5,18 +5,20 @@ author: besiler
 localization_priority: Normal
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 90a6b1441a5f5cd4c0f83130f30d26983ac6aa05c2b1bc0551ec757d5de5b25c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e674e95ba5eaa4ea6aaa5cd1005372e22de480f0
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124208"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490611"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 
 Пространство имен: microsoft.graph
 
-Сведения о действии пользователя и приложения для регистрации клиента (каталог). Необходимо иметь лицензию Azure AD Premium P1 или P2 для загрузки журналов входа с помощью API microsoft Graph.
+Сведения о действии пользователя и приложения для регистрации клиента (каталог). Необходимо иметь лицензию Azure AD Premium P1 или P2 для загрузки журналов входа с помощью API microsoft Graph. 
+
+Доступность журналов входа регулируется политиками хранения данных [Azure AD.](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 ## <a name="methods"></a>Методы
 
@@ -40,11 +42,11 @@ ms.locfileid: "54124208"
 |ipAddress|String|IP-адрес клиента, используемого для входов. Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
 |isInteractive|Boolean|Указывает, является ли вход интерактивным или нет.|
 |location|[signInLocation](signinlocation.md)|Предоставляет код города, состояния и страны, в котором возникла входная подпись. Поддерживает (и только операторов) в свойствах `$filter` `eq` `startsWith` **city,** **state** и **countryOrRegion.**|
-|resourceDisplayName|String|Имя ресурса, в который подписан пользователь. Поддерживает `$filter` `eq` (только оператор).|
+|resourceDisplayName|Строка|Имя ресурса, в который подписан пользователь. Поддерживает `$filter` `eq` (только оператор).|
 |resourceId|String|ID ресурса, в который подписан пользователь. Поддерживает `$filter` `eq` (только оператор).|
 |riskDetail|riskDetail|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись.  Поддерживает `$filter` `eq` (только оператор).<br>**Примечание:** Сведения об этом свойстве требуют Azure AD Premium P2 лицензии. Другие лицензии возвращают значение `hidden` .|
 |riskEventTypes|коллекция riskEventType|Типы событий риска, связанные с входом. Допустимые значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` и `unknownFutureValue`. Поддерживает `$filter` `eq` (только оператор).|
-|riskEventTypes_v2|Коллекция строк|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` , , , , , , , , `anonymizedIPAddress` или `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
+|riskEventTypes_v2|Коллекция объектов string|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` , , , , , , , , `anonymizedIPAddress` или `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
 |riskLevelAggregated|riskLevel|Совокупный уровень риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. Поддерживает `$filter` `eq` (только оператор). <br> **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskLevelDuringSignIn|riskLevel|Уровень риска при входе. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD.  Поддерживает `$filter` `eq` (только оператор). <br>**Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskState|riskState|Отчеты о состоянии рискованного пользователя, входе или событии риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. Поддерживает `$filter` `eq` (только оператор).|

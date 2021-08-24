@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c90fc6b3c30991583765d960173636580c7258e3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: a27a6fec2d7d25410afd54b3f1028ebb320bcd84
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679752"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490086"
 ---
 # <a name="get-a-group-setting-template"></a>Получение шаблона параметров группы
 
@@ -50,35 +50,17 @@ GET /groupSettingTemplates/{id}
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [groupSettingTemplate](../resources/groupsettingtemplate.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groupsettingtemplate"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
+GET https://graph.microsoft.com/v1.0/groupSettingTemplates/08d542b9-071f-4e16-94b0-74abb372e3d9
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettingtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettingtemplate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettingtemplate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettingtemplate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -89,34 +71,21 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1341
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettingTemplates/$entity",
-    "id": "62375ab9-6b52-47ed-826b-58e47e0e304b",
-    "deletedDateTime": null,
-    "displayName": "Group.Unified",
-    "description": "Setting templates define the different settings that can be used for the associated ObjectSettings. This template defines settings that can be used for Unified Groups.",
-    "values": [
-        {
-            "name": "CustomBlockedWordsList",
-            "type": "System.String",
-            "defaultValue": "",
-            "description": "A comma-delimited list of blocked words for Unified Group displayName and mailNickName."
-        },
-        {
-            "name": "EnableMSStandardBlockedWords",
-            "type": "System.Boolean",
-            "defaultValue": "false",
-            "description": "A flag indicating whether or not to enable the Microsoft Standard list of blocked words for Unified Group displayName and mailNickName."
-        },
-        {
-            "name": "ClassificationDescriptions",
-            "type": "System.String",
-            "defaultValue": "",
-            "description": "A comma-delimited list of structured strings describing the classification values in the ClassificationList. The structure of the string is: Value: Description"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettingTemplates/$entity",
+  "id": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "deletedDateTime": null,
+  "displayName": "Group.Unified.Guest",
+  "description": "Settings for a specific Unified Group",
+  "values": [
+    {
+      "name": "AllowToAddGuests",
+      "type": "System.Boolean",
+      "defaultValue": "true",
+      "description": "Flag indicating if guests are allowed in a specific Unified Group."
+    }
+  ]
 }
 ```
 

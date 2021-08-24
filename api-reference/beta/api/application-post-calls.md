@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 16c76c5a42e4ec49023fe4f7a4310cb7482433e1
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e9aa683f0cce2bc108f4d4429908a7fc87fb0cd1
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971093"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490135"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -18,7 +18,7 @@ ms.locfileid: "52971093"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [вызова](../resources/call.md) позволяет боту создать новый исходяющий одноранговой или групповой вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать вызываемого бота](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и пройти список разрешений, необходимых, как упоминалось ниже.
+Создание [вызова](../resources/call.md) позволяет боту создать новый исходяющий одноранговой или групповой вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать вызываемого бота](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и пройти список необходимых разрешений.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,11 @@ ms.locfileid: "52971093"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Приложение                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. Все, Calls.InitiateGroupCalls.All |
+| Приложение                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. Все, Calls.InitiateGroupCalls.All |
 
-> **Примечание:** Для вызова в средствах массовой информации с использованием приложений требуется разрешение Calls.AccessMedia.All в дополнение к одному из перечисленных разрешений.
+> **Примечания:** Для вызова с носители, на которые есть приложения, помимо одного из перечисленных разрешений, требуется разрешение Calls.AccessMedia.All или Calls.AccessMedia.Chat*.
+>
+> Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.]( https://aka.ms/teams-rsc)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -270,7 +272,7 @@ Content-Type: application/json
 > **Примечание.** В этом примере Calls.Initiate. Все разрешения и разрешения Calls.AccessMedia.All.
 
 ##### <a name="request"></a>Запрос
-В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере средства массовой информации локализованы приложением. Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
+В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере средства массовой информации локализованы приложением. Значения маркера авторизации, URL-адреса, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -341,7 +343,7 @@ Content-Type: application/json
 
 `<Media Session Configuration>` — это конфигурация сеанса сеанса мультимедиа, которая содержит сведения о сеансах стека мультимедиа. Конкретные сведения о аудио, видео, сведения о Ssession VBSS должны быть переданы здесь.
 
-Пример blob сеанса сеанса аудио мультимедиа показан ниже
+Ниже приводится пример blob сеанса сеанса аудио мультимедиа.
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
@@ -560,7 +562,7 @@ Content-Type: application/json
 Эти сведения можно получить из [API Get Online Meetings.](../api/onlinemeeting-get.md)
 
 Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены вместе с сведениями, полученными из API Get  [Online Meetings,](../api/onlinemeeting-get.md) фактическими значениями для работы в примере.
-> **Примечание:** В этом примере требуется `Calls.JoinGroupCalls.All` разрешение.
+> **Примечание:** В этом примере `Calls.JoinGroupCalls.All` необходимо разрешение или `Calls.JoinGroupCalls.Chat` [разрешение, определенное для ресурсов.](https://aka.ms/teams-rsc)
 
 ##### <a name="request"></a>Запрос
 
@@ -908,7 +910,9 @@ Content-Type: application/json
 >**Примечание:** Для сценариев присоединиться к собраниям, кроме уведомлений состояния вызовов, мы получаем уведомления реестра.
 
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Пример 6. Присоединяйтесь к запланированной встрече с средствами массовой информации, на которые было организовано приложение
-Чтобы присоединиться к собранию с ведущими средствами массовой информации приложения, обновить медиафайл с [appHostedMediaConfig,](../resources/apphostedmediaconfig.md) как показано ниже, в приведенном выше примере.
+Чтобы присоединиться к собранию с помощью носители приложения, обновим конфигурацию мультимедиа с [помощью appHostedMediaConfig,](../resources/apphostedmediaconfig.md) как показано в следующем примере.
+
+>**Примечание:** В этом примере `Calls.AccessMedia.All` необходимо разрешение или `Calls.AccessMedia.Chat` [разрешение, определенное для ресурсов.](https://aka.ms/teams-rsc)
 
 <!-- {
   "blockType": "example",

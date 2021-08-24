@@ -3,12 +3,12 @@ title: Поставщик прокси
 description: Поставщик прокси позволяет использовать собственную проверку подлинности на стороне сервера с помощью microsoft Graph набор средств.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e7484110e506c0326634e43ce658e2912d75656ea07cc349ad94b557f6e09809
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ce4a1def59a6bfa5dc8031f7ae1bcfd93c593ab
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204934"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490394"
 ---
 # <a name="proxy-provider"></a>Поставщик прокси
 
@@ -61,7 +61,7 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
     header: 'value',
     header2: 'value2'
   };
-);
+});
 ```
 
 Это полезно, когда необходимо передать маркеры или другие заготки в спину.

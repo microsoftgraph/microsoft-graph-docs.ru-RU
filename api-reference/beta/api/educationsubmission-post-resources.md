@@ -1,16 +1,16 @@
 ---
 title: Создание educationSubmissionResource
-description: 'Добавляет ресурс в список ресурсов. Это действие может быть сделано только студентом, которому назначено это представление. Это действие не удастся, если **флаг allowStudentsToAddResources** не будет заданной значение true. Если звонячий хочет создать новый ресурс на основе файлов, файл должен быть загружен в папку ресурсов, связанную с отправкой. Если файл не существует или не находится в этой папке, запрос POST не будет работать. '
+description: Добавьте ресурс в список ресурсов отправки.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 24363b7158ccfad72db22158d25298fdb75d040d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: c5162f5d179b6ef5aae0ce0c73692e6011ed50d3
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664773"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490520"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание educationSubmissionResource
 
@@ -18,7 +18,13 @@ ms.locfileid: "52664773"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавляет ресурс в список ресурсов. Это действие может быть сделано только студентом, которому назначено это представление. Это действие не удастся, если **флаг allowStudentsToAddResources** не будет заданной значение true. Если звонячий хочет создать новый ресурс на основе файлов, файл должен быть загружен в папку ресурсов, связанную с отправкой. Если файл не существует или не находится в этой папке, запрос POST не будет работать. 
+Добавьте ресурс в список ресурсов отправки.
+
+Выполнить эту операцию может только студент, назначенный для отправки.
+
+Операция не будет успешной, если флаг **allowStudentsToAddResources** не `true` установлен. 
+
+Если звонячий хочет создать новый ресурс на основе файлов, загрузите файл в папку ресурсов, связанную с отправкой. Если файл не существует или не находится в этой папке, запрос POST не будет работать. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,62 +48,42 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON объекта [educationSubmissionResource.](../resources/educationsubmissionresource.md)
+В теле запроса поставляем представление JSON ресурса. Поддерживаемые [типы: educationExcelResource,](../resources/educationexcelresource.md) [educationFileResource,](../resources/educationfileresource.md) [educationLinkResource,](../resources/educationlinkresource.md) [educationPowerPointResource](../resources/educationpowerpointresource.md) и [educationWordResource.](../resources/educationwordresource.md)
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [educationSubmissionResource](../resources/educationsubmissionresource.md) в тексте ответа.
+В случае успешного использования этот метод возвращает код ответа и объект в соответствии с типом ресурса `201 Created` в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_educationsubmissionresource_from_educationsubmission"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources
+POST https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/3c77de7f-539b-49e1-9c96-1274f2f0ee3b/submissions/4af73d2b-6b9c-493f-0688-979087bed39b/resources
 Content-type: application/json
 Content-length: 1097
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6"
-  },
-  "@odata.type": "microsoft.graph.educationResource"
+    "resource": {
+        "@odata.type": "microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
+    }
 }
 ```
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionResource"
+  "@odata.type": "microsoft.graph.educationWordResource"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -105,31 +91,32 @@ Content-type: application/json
 Content-length: 1152
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6",
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('3c77de7f-539b-49e1-9c96-1274f2f0ee3b')/submissions('4af73d2b-6b9c-493f-0688-979087bed39b')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "d835503f-fd00-4840-b69c-7230d10e18b8",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationWordResource",
+        "displayName": "Report.docx",
+        "createdDateTime": "2021-08-04T00:23:08.6269586Z",
+        "lastModifiedDateTime": "2021-08-04T00:23:08.6269586Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
 }
 ```
 

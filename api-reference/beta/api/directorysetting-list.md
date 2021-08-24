@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 740c2c82ba718ed9b99dd1bff229fbabbaf4482c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 879c016de32c6893fc12674ce1af6a3f5253d542
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046603"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490464"
 ---
 # <a name="list-directory-settings"></a>Параметры каталога списков
 
@@ -34,12 +34,14 @@ ms.locfileid: "52046603"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 Список параметров клиента или группы
+
 ```http
 GET /settings
 GET /groups/{id}/settings
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -52,8 +54,10 @@ GET /groups/{id}/settings
 ## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов directorySetting](../resources/directorysetting.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,7 +87,8 @@ GET https://graph.microsoft.com/beta/settings
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,18 +98,70 @@ GET https://graph.microsoft.com/beta/settings
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings",
   "value": [
     {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "settingTemplateId": "settingTemplateId-value",
+      "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
+      "displayName": "Group.Unified",
+      "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
         {
-          "name": "name-value",
-          "value": "value-value"
+          "name": "EnableMIPLabels",
+          "value": "true"
+        },
+        {
+          "name": "CustomBlockedWordsList",
+          "value": ""
+        },
+        {
+          "name": "EnableMSStandardBlockedWords",
+          "value": "true"
+        },
+        {
+          "name": "ClassificationDescriptions",
+          "value": ""
+        },
+        {
+          "name": "DefaultClassification",
+          "value": ""
+        },
+        {
+          "name": "PrefixSuffixNamingRequirement",
+          "value": "[Contoso-][GroupName]"
+        },
+        {
+          "name": "AllowGuestsToBeGroupOwner",
+          "value": "false"
+        },
+        {
+          "name": "AllowGuestsToAccessGroups",
+          "value": "true"
+        },
+        {
+          "name": "GuestUsageGuidelinesUrl",
+          "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+          "name": "GroupCreationAllowedGroupId",
+          "value": ""
+        },
+        {
+          "name": "AllowToAddGuests",
+          "value": "true"
+        },
+        {
+          "name": "UsageGuidelinesUrl",
+          "value": ""
+        },
+        {
+          "name": "ClassificationList",
+          "value": ""
+        },
+        {
+          "name": "EnableGroupCreation",
+          "value": "true"
         }
       ]
     }

@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: removeKey'
-description: Удаление учетных данных ключа из servicePrincipal
+description: Удаление учетных данных ключа из службыPrincipal
 localization_priority: Normal
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f82140ff1710d9da7c646d2b84f1d83ac4a66150
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fbc1e214a9e11d20fbf10a84728d71e5954127a4
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134150"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490478"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal: removeKey
 
@@ -18,23 +18,20 @@ ms.locfileid: "50134150"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление учетных данных ключа из [servicePrincipal.](../resources/serviceprincipal.md) Этот метод вместе с [addKey](serviceprincipal-addkey.md) может использоваться servicePrincipal для автоматизации перетаскивания ключей окончания срока действия.
+Удаление учетных данных ключей [из службыPrincipal.](../resources/serviceprincipal.md) Этот метод вместе с [addKey](serviceprincipal-addkey.md) можно использовать службойPrincipal для автоматизации проката истекающих ключей.
 
 > [!NOTE]
-> [Операции создания servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных ключей для любого servicePrincipal с контекстом пользователя или без него.
+> [Создание службыPrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных для любой службыPrincipal с контекстом пользователя или без него.
 
-В рамках проверки запроса для этого метода перед выполнением действия проверяется подтверждение на владение существующим ключом.
+В рамках проверки запроса для этого метода проверяется доказательство на наличие существующего ключа перед выполнением действия.
 
 ## <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Нет.  |
+|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Нет.    |
-|Приложение | Нет. |
-
-> [!NOTE]
-> ServicePrincipal не нуждается в специальном разрешении для переката собственных ключей.
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,12 +50,12 @@ POST /serviceprincipals/{id}/removeKey
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажив следующие необходимые свойства.
+В теле запроса укажи следующие необходимые свойства.
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
 | keyId     | GUID | Уникальный идентификатор пароля.|
-| proof | Строка | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer должен быть __ид__  servicePrincipal, который делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
+| доказательство | Строка | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов службыPrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Эмитент должен быть __id__  службыPrincipal, которая делает вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода,](/graph/application-rollkey-prooftoken) который можно использовать для создания этого доказательства маркера владения.|
 
 ## <a name="response"></a>Отклик
 

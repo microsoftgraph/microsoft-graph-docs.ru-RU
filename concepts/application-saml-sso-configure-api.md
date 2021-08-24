@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: dc6a440174c7fd878100bb3e3d2ee2ead7c75f38
-ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
+ms.openlocfilehash: 0973dcbfadd4992beef9da71fe419c414366d4f1
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58409013"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490576"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Настройка единого входа на основе SAML для приложения с помощью API Microsoft Graph
 
@@ -340,7 +340,7 @@ HTTP/1.1 204
 #### <a name="request"></a>Запрос
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a9be408a-6c31-4141-8cea-52fcd4a61be8
+PATCH https://graph.microsoft.com/v1.0/serviceprincipals/a750f6cf-2319-464a-bcc3-456926736a91
 Content-type: serviceprincipals/json
 
 {

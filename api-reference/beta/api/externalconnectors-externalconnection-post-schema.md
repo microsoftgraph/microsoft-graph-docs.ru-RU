@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b89fdd9ec7785639526f02344c8b4c7bc43335b1
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 495c7ab0ec6ab06db785344de965f2a1a049cb3d
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467696"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490597"
 ---
 # <a name="create-schema"></a>Создание схемы
 
@@ -44,7 +44,7 @@ POST /external/connections/{id}/schema
 |:----------------------|:-------------------------------------------------------------------|
 | Авторизация         | Bearer {токен}. Обязательный.                                          |
 | Content-Type          | application/json. Обязательный.                                        |
-| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательный параметр. |
+| Предпочитаете: respond-async | Используйте это, чтобы вызвать асинхронное выполнение запроса. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,12 +54,7 @@ POST /external/connections/{id}/schema
 
 ## <a name="response"></a>Отклик
 
-Если заготка включена в запрос, этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для получения состояния `Prefer: respond-async` `202 Accepted` `Location` [операции.](../api/externalconnectors-connectionoperation-get.md)
-
-Без заголовка, включенного в запрос, в случае успешного использования этот метод возвращает код ответа и новый объект схемы в `Prefer: respond-async` `201 Created` тексте ответа. [](../resources/externalconnectors-schema.md)
-
-> [!NOTE]
-> Создание схемы — это длительный процесс, склонный к выходу времени шлюза. Рекомендуется использовать `Prefer: respond-async` заготку, чтобы избежать ошибок в периодике.
+В случае успешного использования этот метод возвращает код ответа и URL-адрес в загонах ответа, которые можно использовать для `202 Accepted` `Location` получения состояния [операции.](../api/externalconnectors-connectionoperation-get.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -79,7 +74,6 @@ POST /external/connections/{id}/schema
 ```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
-Prefer: respond-async
 
 {
   "baseType": "microsoft.graph.externalItem",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 416f91448a8bba9852f68bb5587818555ee4ca78
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 23ed7c866662f344a2f0034d87bba2bfc858f25f
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048969"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490625"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает [параметры запроса OData,](/graph//query-parameters) чтобы помочь настроить ответ `$filter` (не поддерживается).
+Этот метод не поддерживает `$select` параметр [запроса OData](/graph//query-parameters) для настройки ответа `$filter` (не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,23 +97,23 @@ Content-length: 547
 {
   "value": [
     {
-      "capabilityStatus": "capabilityStatus-value",
-      "consumedUnits": 99,
+      "capabilityStatus": "Enabled",
+      "consumedUnits": 20,
       "prepaidUnits": {
-        "enabled": 99,
-        "suspended": 99,
-        "warning": 99
+        "enabled": 20,
+        "suspended": 0,
+        "warning": 0
       },
       "servicePlans": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+          "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+          "servicePlanName": "EXCHANGE_S_FOUNDATION",
+          "provisioningStatus": "Success",
+          "appliesTo": "Company"
         }
       ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value"
+      "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+      "skuPartNumber": "EMSPREMIUM"
     }
   ]
 }

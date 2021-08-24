@@ -5,18 +5,20 @@ localization_priority: Normal
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5bbd66efa246a0c3bbfdabe4a083a74443486ad2
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 15581f8b14979c89b7ec913e5d24ee3fb591345d
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129455"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490429"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
 Пространство имен: microsoft.graph
 
-Получает входы пользователей Azure AD для клиента. Входы, которые являются интерактивными по своей природе (где имя пользователя/пароль передается как часть маркера auth) и успешные федеративные входы в настоящее время включены в журналы входа. Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми.
+Получает входы пользователей Azure AD для клиента. Входы, которые являются интерактивными по своей природе (где имя пользователя/пароль передается как часть маркера auth) и успешные федеративные входы в настоящее время включены в журналы входа. 
+
+Максимальный и по умолчанию размер страницы — 1000 объектов, и по умолчанию самые последние входы возвращаются первыми. Доступны только события, произошедшие в течение периода хранения Azure Active Directory [](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) по умолчанию (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +36,7 @@ ms.locfileid: "53129455"
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
-+ "Администратор безопасности"
++ Администратор безопасности
 + Оператор безопасности
 + Читатель сведений о безопасности
 
@@ -45,7 +47,7 @@ ms.locfileid: "53129455"
 GET auditLogs/signIns
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает `$top` параметры `$skiptoken` запроса OData и OData для настройки `$filter` ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
