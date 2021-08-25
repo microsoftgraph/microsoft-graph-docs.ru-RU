@@ -1,25 +1,34 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7e17ce417bc2a8a06ae409cfeab336753a6e056c
+ms.openlocfilehash: c53b34263b43de02c326854b4c3541d062392252
 ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514072"
+ms.locfileid: "58514051"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/getMemberGroups"]]];
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setPresence"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-BOOL securityEnabledOnly = NO;
-payloadDictionary[@"securityEnabledOnly"] = securityEnabledOnly;
+NSString *sessionId = @"22553876-f5ab-4529-bffb-cfe50aa89f87";
+payloadDictionary[@"sessionId"] = sessionId;
+
+NSString *availability = @"Available";
+payloadDictionary[@"availability"] = availability;
+
+NSString *activity = @"Available";
+payloadDictionary[@"activity"] = activity;
+
+NSString *expirationDuration = @"PT1H";
+payloadDictionary[@"expirationDuration"] = expirationDuration;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

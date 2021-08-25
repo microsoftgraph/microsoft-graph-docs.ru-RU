@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e76bf6cd10682717bebe9365afa14ced47d4c90
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 235a8447245df1766e76751e79c74bb1072615ae
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042592"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513596"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -22,7 +22,7 @@ ms.locfileid: "52042592"
 
 Вы можете получить определенные типы этих дополнительных изменений в событиях во всех календарях почтового ящика или в определенном календаре или в коллекции событий **calendarView** (диапазон событий, определенных датами начала и окончания) календаря. Календарь может быть календарем по умолчанию или другим указанным календарем пользователя. В случае получения дополнительных изменений **в calendarView** календарь также может быть групповым.
 
-Вызов  функции дельты похож на запрос или запрос указанного календаря, за исключением того, что, надлежащим образом применяя маркеры состояния в одном или несколько из этих вызовов, можно запрашивать дополнительные изменения событий в этом `GET /events` календаре. `GET /calendarview` [](/graph/delta-query-overview#state-tokens) Это позволяет поддерживать и синхронизировать локальный магазин событий в указанном календаре, не извлекая все события календаря с сервера каждый раз.
+Как правило, синхронизация событий в календаре или **calendarView** в локальном магазине влечет за собой несколько вызовов функций **дельты.** Первоначальный вызов — это полная синхронизация, и каждый последующий вызов дельты в том же раунде получает дополнительные изменения (добавления, удаления или обновления).  Это позволяет поддерживать и синхронизировать локальный магазин событий в указанном календаре, не извлекая все события календаря с сервера каждый раз.
 
 В следующей таблице перечислены различия между функцией **дельты** событий и функцией дельты в **calendarView** в календаре. 
 
@@ -143,7 +143,11 @@ URL-адрес запроса, возвращенный в успешном от
 | $deltatoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** для этого же представления календаря и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этого представления календаря.|
 | $skiptoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает на то, что в представлении календаря остаются не отслеженные изменения. |
 
-Не поддерживает `$expand` `$filter` , , , и `$orderby` `$select` `$search` .
+### <a name="odata-query-parameters"></a>Параметры запросов OData
+- Ожидайте **вызова** функции delta в **calendarView,** чтобы вернуть те же свойства, которые обычно получают из `GET /calendarview` запроса. Вы не можете `$select` использовать для получения только подмножество этих свойств.
+
+- Функция **delta** не поддерживает следующие параметры запроса для событий в пользовательском календаре или событий **в calendarView:** `$expand` , , , , и `$filter` `$orderby` `$search` `$select` . 
+
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -163,6 +167,12 @@ URL-адрес запроса, возвращенный в успешном от
 В случае успешной работы этот метод возвращает код отклика и коллекцию событий `200 OK` в тексте [](../resources/event.md) ответа.
 
 Ожидайте получения всех свойств, которые обычно получаются из `GET /calendarview` запроса. 
+
+В раунде вызовов функций **дельты,** связанных диапазоном  дат **calendarView,** вы можете найти вызов delta, возвращающий два типа событий по `@removed` `deleted` причине: 
+- События, которые находятся в диапазоне дат и удалены с момента предыдущего **вызова дельты.**
+- События, которые _находятся за_ пределами диапазона дат и которые были добавлены, удалены или обновлены с момента предыдущего **вызова дельты.**
+
+Фильтрация событий в `@removed` диапазоне дат, требуемом сценарием.
 
 ## <a name="examples"></a>Примеры
 
@@ -238,20 +248,6 @@ GET https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarview
 
 Prefer: odata.maxpagesize=2
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-calendarview-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 
