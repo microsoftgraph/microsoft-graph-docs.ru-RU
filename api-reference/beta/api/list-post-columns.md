@@ -1,23 +1,23 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: Создание columnDefinition в списке
+title: Создание columnDefinition
 description: Создание столбца списка.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: c2f49b6b5ec25e6c2941e94d06c8b0b242a98447
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c82f506d09fff9dc89e8ed73e6102a128119ed6
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50965165"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513022"
 ---
-# <a name="create-columndefinition-for-a-list"></a>Создание columnDefinition для списка
+# <a name="create-columndefinition"></a>Создание columnDefinition 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Создание столбца для [списка][list] by specifying a [columnDefinition][columnDefinition] .
+Создание столбца для [списка][list] with a request that specifies a [columnDefinition][columnDefinition] .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "50965165"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -46,7 +46,7 @@ POST /sites/{site-id}/lists/{list-id}/columns
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект columnDefinition][] в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект columnDefinition][] в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -96,7 +96,6 @@ Content-type: application/json
     "maxLength": 255
   }
 }
-
 ```
 
   

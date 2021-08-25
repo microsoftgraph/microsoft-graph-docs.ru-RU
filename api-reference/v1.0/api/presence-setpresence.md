@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 836299dc7a85c9096edc5b8af336dbfb84bd46c6
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 71ee6d63f2dfc8664705412c0bc257959094040e
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453956"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514035"
 ---
 # <a name="presence-setpresence"></a>присутствие: setPresence
 
@@ -60,9 +60,9 @@ POST /users/{userId}/presence/setPresence
 
 | Параметр          | Тип     | Описание                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | string   | ID сеанса присутствия приложения.                                                          |
-| availability       | string   | Сведения о базовом присутствии.                                                                         |
-| действие           | string   | Дополнительные сведения о доступности.                                                          |
+| sessionId          | Строка   | ID сеанса присутствия приложения.                                                          |
+| availability       | Строка   | Сведения о базовом присутствии.                                                                         |
+| действие           | Строка   | Дополнительные сведения о доступности.                                                          |
 | expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.</p>Если это не предусмотрено, по умолчанию будет применяться 5-минутный срок действия. |
 
 > [!IMPORTANT]
@@ -87,6 +87,8 @@ POST /users/{userId}/presence/setPresence
 ### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "set-presence"
@@ -103,6 +105,24 @@ Content-Type: application/json
   "expirationDuration": "PT1H"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/set-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/set-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/set-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 250c01172e44d8ea5f3cdea94a9ac61a89a11c1b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 027cf5616588593244c011c7dba5a0c3efb4514d
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761411"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513722"
 ---
 # <a name="expirationpattern-resource-type"></a>тип ресурса expirationPattern
 
@@ -24,8 +24,8 @@ ms.locfileid: "50761411"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|duration|Duration|Желаемая продолжительность доступа запрашиваемого запроса. Если указан в запросе, endDateTime не должен присутствовать.|
+|endDateTime|DateTimeOffset|Время даты и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|duration|Длительность|Запрашиваемая продолжительность доступа, представленная в формате ISO 8601 для длительности. Например, PT3H — это три часа.  Если указано в запросе, **endDateTime** не должен присутствовать и свойство **типа** должно быть задано `afterDuration` .|
 |type|expirationPatternType|Желаемый тип шаблона истечения срока действия запрашиваемого запроса.|
 
 ### <a name="expirationpatterntype-values"></a>значения expirationPatternType
@@ -33,9 +33,9 @@ ms.locfileid: "50761411"
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
 |notSpecified|0|Срок действия не указан.|
-|noExpiration|1|Запросчик не хотел, чтобы срок действия доступа истек.|
+|noExpiration|1 |Запросчик не хотел, чтобы срок действия доступа истек.|
 |afterDateTime|2 |Срок доступа истекает после указанной даты и времени.|
-|afterDuration|3 |Срок доступа истекает после указанной продолжительности, относительно предоставленного доступа.|
+|afterDuration|3 |Срок доступа истекает после указанной продолжительности, относительно предоставленного доступа. Требуется при **указании** свойства продолжительности.|
 
 ## <a name="json-representation"></a>Представление JSON
 

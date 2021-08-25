@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f8dbdea32b2ef77004ec03d6e320e1cb8edd953dbd678731d985ac0fbd46ba14
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 16c06ac9d890791e99aadefff51828a2ff7cf409
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57271013"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514380"
 ---
 # <a name="list-posts"></a>Список публикаций
 
@@ -35,7 +35,7 @@ GET /groups/{groupId}/conversations/{conversationId}/threads/{threadId}/posts
 
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа. `$expand` также поддерживается расширение определенных отношений, и только одно отношение может быть расширено в одном запросе.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|

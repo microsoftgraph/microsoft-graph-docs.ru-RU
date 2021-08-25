@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a140f822e40f18b4430b28fab7b3aa28279acb92a50bab76fac28371b39706ff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b87bf7e4f2ad3ff8f23f65ee0990da45ca590f89
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192567"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513008"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 
@@ -28,7 +28,7 @@ conversationThread — это коллекция экземпляров [post](p
 |[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
 |[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
 |[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
-|[Удаление](../api/conversationthread-delete.md) | Нет |Удаление объекта conversationThread. |
+|[удаление](../api/conversationthread-delete.md); | Нет. |Удаление объекта conversationThread. |
 |[Ответ](../api/conversationthread-reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
 |[Список сущностей Post](../api/conversationthread-list-posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
 
@@ -36,8 +36,8 @@ conversationThread — это коллекция экземпляров [post](p
 | Свойство              | Тип                                 | Описание                                                                                                                                                                                      |
 |:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                    | String                               | Только для чтения. <br/><br/>Возвращается по умолчанию.                                                                                                                                                                                      |
-| toRecipients          | Коллекция [recipient](recipient.md) | Получатели в поле "Кому" для цепочки. <br/><br/>Возвращается только с помощью оператора $select.                                                                                                                                                              |
-| ccRecipients          | Коллекция [recipient](recipient.md) | Получатели в поле "Копия" для цепочки. <br/><br/>Возвращается только с помощью оператора $select.                                                                                                                                                               |
+| toRecipients          | Коллекция [recipient](recipient.md) | Получатели в поле "Кому" для цепочки. <br/><br/>Возвращается только с помощью оператора `$select`.                                                                                                                                                              |
+| ccRecipients          | Коллекция [recipient](recipient.md) | Получатели в поле "Копия" для цепочки. <br/><br/>Возвращается только с помощью оператора `$select`.                                                                                                                                                               |
 | topic                 | String                               | Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить. <br/><br/>Возвращается по умолчанию.                                                                              |
 | hasAttachments        | Boolean                              | Указывает, содержит ли какая-либо запись в этой цепочке хотя бы одно вложение. <br/><br/>Возвращается по умолчанию.                                                                                                              |
 | lastDeliveredDateTime | DateTimeOffset                       | Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.<br/><br/>Возвращается по умолчанию. |

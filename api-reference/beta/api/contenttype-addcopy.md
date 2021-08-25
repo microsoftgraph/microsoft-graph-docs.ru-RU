@@ -5,12 +5,12 @@ description: Добавьте копию типа контента сайта в
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f388799e409a5f2037182bb3bc331a6a6adbc45f
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bb096cc0ad43641709e26559ee86e7fe9ad9f9db
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947032"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514611"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Пространство имен: microsoft.graph
@@ -30,7 +30,7 @@ ms.locfileid: "50947032"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -56,7 +56,7 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|contentType| string | Канонический URL-адрес типа контента сайта, который будет скопирован в список. Обязательный.|
+|contentType| Строка | Канонический URL-адрес типа контента сайта, который будет скопирован в список. Обязательный.|
 
 ## <a name="response"></a>Отклик
 
@@ -73,7 +73,7 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/lists/{list-id}/contentTypes/addCopy
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 Content-Type: application/json
 
 {

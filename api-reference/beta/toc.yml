@@ -13605,7 +13605,7 @@ items:
                 href: api/sitepage-delete.md
               - name: Публикация
                 href: api/sitepage-publish.md
-          - name: Таксономия (предварительный просмотр)
+          - name: Таксономия
             displayname: Taxonomy API
             items:
               - name: Магазин
@@ -13666,7 +13666,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы

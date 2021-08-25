@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 41d29fe72dcc76e0e45e8133d4b4ecf2d5f56863ae946bc5cf0dd25759a4badd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1af505f7c55ef46c855d92170679195bb390474
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169363"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513197"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 
@@ -42,7 +42,7 @@ ms.locfileid: "54169363"
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |**Расширенные свойства**| | |
-|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Создание одного или нескольких расширенных свойств с одним значением в новой или существующей публикации.   |
+|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Создание одного или нескольких расширенных свойств с одним значением в новой или существующей публикации.   |
 |[Получение публикации с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Получение публикаций, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новой или существующей публикации.  |
 |[Получение публикации с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Получение публикации, которая содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
@@ -67,9 +67,9 @@ ms.locfileid: "54169363"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [Attachment](attachment.md)| Только для чтения. Допускается значение null.|
-|extensions|Коллекция [Extension](extension.md)|Коллекция открытых расширений, определенных для столба. Только для чтения. Допускается значение null.|
-|inReplyTo|[post](post.md)| Только для чтения.|
+|attachments|Коллекция [Attachment](attachment.md)| Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|extensions|Коллекция [Extension](extension.md)|Коллекция открытых расширений, определенных для столба. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|inReplyTo|[post](post.md)| Только для чтения. Поддерживает `$expand`.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для публикации. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для публикации. Только для чтения. Допускается значение null.|
 

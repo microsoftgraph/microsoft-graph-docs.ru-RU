@@ -5,12 +5,12 @@ author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e73b14197a6bd0c26cdb8889c1f01139794f3a50
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 85c013c4515b90a400d3ecf986ff5c475783b045
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453564"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513561"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Создание unifiedRoleAssignmentScheduleRequest
 Пространство имен: microsoft.graph
@@ -51,12 +51,12 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
+|id|Строка|Уникальный идентификатор для unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
 |action|String|Представляет тип операции при назначении ролей. Возможные значения: <ul><li>`AdminAssign`: Чтобы администраторы назначали роли пользователям или группам.</li><li>`AdminRemove`: Чтобы администраторы удаляли пользователей или группы из ролей.</li><li> `AdminUpdate`: Чтобы администраторы изменили существующие назначения ролей.</li><li>`AdminExtend`: Чтобы администраторы продлили назначения по истечении срока действия.</li><li>`AdminRenew`. Чтобы администраторы возобновляли истекаемы назначения.</li><li>`SelfActivate`: Чтобы пользователи активировали свои назначения.</li><li>`SelfDeactivate`: Чтобы пользователи отключались от активных назначений.</li><li>`SelfExtend`. Чтобы пользователи просили продлить срок действия назначений.</li><li>`SelfRenew`: Чтобы пользователи запрашивали продление истеканий назначений.</li></ul>
 |principalId|String|Идентификатор основного, которому предоставляется назначение.|
-|roleDefinitionId|String|Идентификатор унифицированногоRoleDefinition для назначения. Только для чтения.|
-|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
-|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
+|roleDefinitionId|Строка|Идентификатор унифицированногоRoleDefinition для назначения. Только для чтения.|
+|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
+|appScopeId|Строка|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
 |isValidationOnly|Логический|Указывает, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
 |targetScheduleId|String|ID объекта расписания, прикрепленного к назначению.|
 |обоснование|String|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
@@ -181,6 +181,8 @@ Content-Type: application/json
 
 В следующем запросе пользователь, идентифицированный **principalId,** активирует `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` свою собственную роль, определенную `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3` . Область их роли — все объекты каталога в клиенте, а назначение — пять часов. Чтобы выполнить этот запрос, вызываемого пользователя необходимо применять многофакторную проверку подлинности (MFA) и запускать запрос в сеансе, в котором он был опровержение для MFA.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_SelfActivate"
@@ -209,11 +211,29 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

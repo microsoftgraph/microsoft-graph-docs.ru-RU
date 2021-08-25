@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31142bb2277f32aec1556d20e0915b97e621645a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a15beb00f10c23e7de09b20ebd3f5063bb07e6ab
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956822"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514513"
 ---
 # <a name="create-thread"></a>Создание цепочки беседы
 
@@ -44,14 +44,14 @@ POST /groups/{id}/conversations/{id}/threads
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажите описание объекта [ConversationThread](../resources/conversationthread.md) в формате JSON.
+В теле запроса поставляем JSON-представление объекта [conversationThread.](../resources/conversationthread.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `201 Created` и объект [ConversationThread](../resources/conversationthread.md) в теле отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект conversationThread](../resources/conversationthread.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -60,17 +60,19 @@ POST /groups/{id}/conversations/{id}/threads
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/beta/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads
 Content-type: application/json
 
 {
-  "topic": "topic-value",
-  "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      }
-  }]
+    "topic": "Take your wellness days and rest",
+    "posts": [
+        {
+            "body": {
+                "contentType": "html",
+                "content": "Waiting for the summer holidays."
+            }
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -92,9 +94,11 @@ Content-type: application/json
 ---
 
 В теле запроса укажите описание объекта [conversationThread](../resources/conversationthread.md) в формате JSON.
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `201 Created` и `id` новой цепочки в теле отклика. Ниже приведен пример отклика.
+В случае успеха этот метод возвратит код отклика `201 Created` и `id` новой цепочки в теле отклика.
+
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,10 +107,10 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 346
 
 {
-  "id": "thread-id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY%3D')/threads/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAMgNmxDXX0UO0DI-I807i0hAAMgNmxDXX0UO0DI-I807i0g=="
 }
 ```
 

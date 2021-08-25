@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ca1d572b420d5810b49aca9e72402936bb6fc5e9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 57e5bfc1fdd8d2b5ff90d23570110bce4ca6b93f
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50804940"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514652"
 ---
 ```csharp
 
@@ -13,14 +13,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var groupSetting = new GroupSetting
 {
-    DisplayName = "GroupSettings",
-    TemplateId = "08d542b9-071f-4e16-94b0-74abb372e3d9",
     Values = new List<SettingValue>()
     {
         new SettingValue
         {
             Name = "AllowToAddGuests",
-            Value = "false"
+            Value = "true"
         }
     }
 };

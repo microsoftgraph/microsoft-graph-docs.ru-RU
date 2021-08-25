@@ -5869,7 +5869,7 @@ items:
                 href: api/listitem-list.md
               - name: Создание списка
                 href: api/list-create.md
-          - name: Объекты ListItem
+          - name: Элементы списка
             href: resources/listitem.md
             items:
               - name: Получение элемента
@@ -5884,12 +5884,68 @@ items:
                 href: api/listitem-list-versions.md
               - name: Получение аналитических данных об элементе
                 href: api/itemanalytics-get.md
+          - name: Таксономия
+            displayname: Taxonomy API
+            items:
+              - name: Магазин
+                href: resources/termstore-store.md
+                items:
+                  - name: Получение
+                    href: api/termstore-store-get.md
+                  - name: Обновление
+                    href: api/termstore-store-update.md
+              - name: Group
+                href: resources/termstore-group.md
+                items:
+                  - name: Перечисление
+                    href: api/termstore-list-groups.md
+                  - name: Создание
+                    href: api/termstore-group-post.md
+                  - name: Получение
+                    href: api/termstore-group-get.md
+                  - name: Удаление
+                    href: api/termstore-group-delete.md
+              - name: Set
+                href: resources/termstore-set.md
+                items:
+                  - name: Перечисление
+                    href: api/termstore-group-list-sets.md
+                  - name: Список дочерних элементов
+                    href: api/termstore-term-list-children.md
+                  - name: Создание
+                    href: api/termstore-set-post.md
+                  - name: Получение
+                    href: api/termstore-set-get.md
+                  - name: Обновление
+                    href: api/termstore-set-update.md
+                  - name: Delete
+                    href: api/termstore-set-delete.md
+              - name: Термин
+                href: resources/termstore-term.md
+                items:
+                  - name: Список дочерних элементов
+                    href: api/termstore-term-list-children.md
+                  - name: Создание
+                    href: api/termstore-term-post.md
+                  - name: Получение
+                    href: api/termstore-term-get.md
+                  - name: Обновление
+                    href: api/termstore-term-update.md
+                  - name: Delete
+                    href: api/termstore-term-delete.md
+              - name: Relation
+                href: resources/termstore-relation.md
+                items:
+                  - name: Перечисление
+                    href: api/termStore-term-list-relations.md
+                  - name: Создание
+                    href: api/termStore-relation-post.md
       - name: Задачи и планы
         displayName: Planner
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана

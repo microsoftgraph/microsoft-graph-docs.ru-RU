@@ -3,14 +3,14 @@ title: Тип ресурса responseStatus
 description: Состояние ответа к приглашению на собрание.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: outlook
 author: harini84
-ms.openlocfilehash: 0ee9c70baa5cdea45868feb1517623081f2b62b2
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: f7559f90f1bef35601136e944d57bfec4951cdbf
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50718473"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514086"
 ---
 # <a name="responsestatus-resource-type"></a>Тип ресурса responseStatus
 
@@ -18,13 +18,15 @@ ms.locfileid: "50718473"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Состояние ответа к приглашению на собрание.
+Состояние ответа участника или организатора для запроса собрания.
+
+Вы можете получить статус ответа участника или организатора через [](event.md) **свойство responseStatus** события или свойство состояния  [участника.](attendee.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип           | Описание |
 |:---------|:---------------|:------------|
-| response | String         | Тип ответа. Возможные значения: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | String         | Тип ответа. Возможные значения: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Чтобы различать и : например, если участник Алекс не ответил на запрос собрания, получение статуса ответа Алекса для этого события в календаре `none` `notResponded` Алекс `notResponded` возвращается . Получение ответа Алекса из календаря любого другого участника или возврата `none` организатора. Возвращается и ответ организатора на событие в календаре `none` любого. 
 | time     | DateTimeOffset | Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.
 
 ## <a name="json-representation"></a>Представление JSON

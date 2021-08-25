@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7406bdc29d71903451d97fcaf4beee41994089ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ce55211e33108adaedc64206829617a908ca25e4
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956898"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514534"
 ---
 # <a name="delete-conversation"></a>Удаление беседы
 
@@ -46,7 +46,7 @@ DELETE /groups/{id}/conversations/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,8 +75,8 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,23 +1,23 @@
 ---
 title: Удаление группы
-description: Удаление объекта группы.
+description: Удаление объекта группы в магазине терминов.
 author: mohitpcad
 localization_priority: Normal
-ms.prod: Sharepoint
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 08379c962f5361b010559bc81c3ecb273589d54f
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4d76c86859c119f5811ad85bd1b44047220a1598
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873838"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514387"
 ---
-# <a name="delete-groups"></a>Удаление групп
+# <a name="delete-group"></a>Delete group
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [группы](../resources/termstore-group.md) в хранилище [терминов.]
+Удаление [группового](../resources/termstore-group.md) объекта в магазине [терминов.]
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -97,7 +97,7 @@ HTTP/1.1 204 No Content
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
 [microsoft.graph.termStore.store]: ../resources/termstore-store.md
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
-[store]: ../resources/termstore-store.md
+[магазин]: ../resources/termstore-store.md
 
 <!--
 {

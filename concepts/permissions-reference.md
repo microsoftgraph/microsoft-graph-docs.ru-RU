@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 25017432241bd73b17efddb7399b5df5c3221e33
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 7679ab0e74f77961e975ae1d46877cde79a7890b
+ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384487"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58490569"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -96,7 +96,24 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 }
 ```
 
----
+## <a name="retriving-permission-ids"></a>Получение ИД разрешений
+
+Если вам нужно настроить разрешения с помощью Azure CLI, PowerShell или инфраструктуры в качестве платформы кода, может потребоваться идентификатор разрешения, которое вы хотите использовать вместо имени. Чтобы получить идентификатор, можно использовать Azure CLI, запустив `az ad sp list`. Однако при этом создается очень длинный список, и найти нужное разрешение может быть непросто. Если вы уже знаете имя нужного разрешения, можно выполнить следующую команду с помощью Azure CLI:
+
+```bash
+az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
+```
+
+Ответ должен быть похож на следующий пример, который содержит описание, идентификатор, отображаемое имя и имя разрешения:
+
+```json
+{
+  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
+  "adminConsentDisplayName": "Read all groups",
+  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+  "value": "Group.Read.All"
+}
+```
 
 ## <a name="access-reviews-permissions"></a>Разрешения проверок доступа
 
@@ -545,6 +562,8 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _TeamsTab.ReadWrite.Chat_        | Управление вкладками чата.                                      | Позволяет приложению управлять вкладками чата без необходимости входа пользователя. |Нет | Нет |
 | _TeamsAppInstallation.Read.Chat_ | Чтение приложений, установленных в чате.                   | Позволяет приложению считывать приложения Teams, установленные в чате, а также разрешения, предоставленные каждому приложению, без необходимости входа пользователя.  |Нет | Нет |
 | _OnlineMeeting.ReadBasic.Chat_   | Чтение основных свойств собрания, связанного с чатом. | Позволяет приложению считывать основные свойства (например, имя, расписание, организатора и ссылку для присоединения) собрания, связанного с чатом, без необходимости входа пользователя. |Нет | Нет |
+| _Calls.AccessMedia.Chat_         | Доступ к мультимедийным потокам в звонках, связанных с этим чатом или собранием.                                    | Позволяет приложению получать доступ к мультимедийным потокам в звонках, связанных с этим чатом или собранием, без необходимости входа пользователя. |Нет | Нет |
+| _Calls.JoinGroupCalls.Chat_         | Присоединение к звонкам, связанным с этим чатом или собранием.                                    | Позволяет приложению присоединяться к звонкам, связанным с этим чатом или собранием, без необходимости входа пользователя. |Нет | Нет |
 
 >[!NOTE]
 > В настоящее время эти разрешения поддерживаются только в бета-версии Microsoft Graph.
@@ -1287,7 +1306,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote | Позволяет приложению считывать и редактировать все записные книжки OneNote в организации, а также предоставлять к ним доступ в случаях, когда вход пользователя не предусмотрен.| Да |
 
 
-### <a name="remarks"></a>Заметки
+### <a name="remarks"></a>Примечания
 Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
@@ -1297,7 +1316,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Делегированные разрешения
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).

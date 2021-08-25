@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a5e191e5cfb99b9ebad18af1ba7d530d79fa6e69
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: fae58c5673a31c3f4a39519e2744b85bf7360dc6
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681412"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513932"
 ---
 # <a name="create-conversation"></a>Создание беседы
 
@@ -52,7 +52,7 @@ POST /groups/{id}/conversations
 Отклик включает идентификаторы для новой беседы и цепочки. Вы можете их использовать в операции [перечисления записей](conversationthread-list-posts.md) для получения новой записи.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 
@@ -108,8 +108,8 @@ Content-type: application/json
 ---
 
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -121,14 +121,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-  "id":"AAQkADPxBgqECsrFDTuM=",
-  "threads@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADPxBgqECsrFDTuM%3D')/threads",
-  "threads":[
-    {
-      "id":"AAQkADUNO4xAAMbGA93Sw-EGCoQKysUNO4w=="
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQALW_4yZl5X5HqtIFyIQHmJs=",
+    "threads@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQALW_4yZl5X5HqtIFyIQHmJs%3D')/threads",
+    "threads": [
+        {
+            "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAtb7jJmXlfkeq0gXIhAeYmxAAtb7jJmXlfkeq0gXIhAeYmw=="
+        }
+    ]
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1317b50520d7e80e918141b9526e5691ceddf6ac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d8abc221be2e66bd82ece75eae6ee9615113a159
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055878"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513939"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: дельта
 
@@ -27,7 +27,7 @@ ms.locfileid: "52055878"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|oauth2permissiongrant | Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

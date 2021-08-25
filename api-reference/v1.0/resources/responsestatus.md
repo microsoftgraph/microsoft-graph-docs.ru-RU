@@ -3,26 +3,28 @@ title: Тип ресурса responseStatus
 description: Состояние ответа к приглашению на собрание.
 localization_priority: Normal
 author: harini84
-ms.prod: ''
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 93d464e054663ebeae53ff9f6c1e082ca660608635ee99d74cb4a9592f1981ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89334764afa8a94c13c8c48111eb279e970b30cb
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169314"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514555"
 ---
 # <a name="responsestatus-resource-type"></a>Тип ресурса responseStatus
 
 Пространство имен: microsoft.graph
 
-Состояние ответа к приглашению на собрание.
+Состояние ответа участника или организатора для запроса собрания.
+
+Вы можете получить статус ответа участника или организатора через [](event.md) **свойство responseStatus** события или свойство состояния  [участника.](attendee.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип           | Описание |
 |:---------|:---------------|:------------|
-| response | responseType   | Тип ответа. Допустимые значения: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | responseType   | Тип ответа. Возможные значения: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Чтобы различать и : например, если участник Алекс не ответил на запрос собрания, получение статуса ответа Алекса для этого события в календаре `none` `notResponded` Алекс `notResponded` возвращается . Получение ответа Алекса из календаря любого другого участника или возврата `none` организатора. Возвращается и ответ организатора на событие в календаре `none` любого. 
 | time     | DateTimeOffset | Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.
 
 ## <a name="json-representation"></a>Представление JSON

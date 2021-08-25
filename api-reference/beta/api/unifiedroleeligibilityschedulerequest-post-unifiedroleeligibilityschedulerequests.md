@@ -5,12 +5,12 @@ author: shauliu1
 localization_priority: Normal
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bf99b3df56889eb236a48f844134215e82084489
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 65106f971c11284a90ec508c6170af473f3398ff
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453571"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513996"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>Создание unifiedRoleEligibilityScheduleRequest
 Пространство имен: microsoft.graph
@@ -51,11 +51,11 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|action|String|Представляет тип операции по назначению права на роль. Возможные значения: <ul><li>`AdminAdd`. Чтобы администраторы назначали права на роль пользователям или группам в роли.</li><li>`AdminExtend`: Чтобы администраторы продлили назначения по истечении срока действия.</li><li>`AdminUpdate`: Чтобы администраторы изменили существующие назначения ролей.</li><li>`AdminRenew`. Чтобы администраторы возобновляли истекаемы назначения.</li><li>`AdminRemove`: Чтобы администраторы удаляли пользователей или группы из подходящих ролей.</li><li>`UserAdd`: Чтобы пользователи активировали соответствующие назначения.</li><li>`UserExtend`: Чтобы пользователи просили продлить срок действия соответствующих назначений.</li><li>`UserRemove`. Чтобы пользователи отключались от активных назначений.</li><li>`UserRenew`. Чтобы пользователи просили продлить срок действия своих назначений, имеющих право на срок действия.</li></ul>|
-|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область действия определенными объектами каталогов, например административными единицами или всеми пользователями.|
-|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения.|
+|action|Строка|Представляет тип операции по назначению права на роль. Возможные значения: <ul><li>`AdminAdd`. Чтобы администраторы назначали права на роль пользователям или группам в роли.</li><li>`AdminExtend`: Чтобы администраторы продлили назначения по истечении срока действия.</li><li>`AdminUpdate`: Чтобы администраторы изменили существующие назначения ролей.</li><li>`AdminRenew`. Чтобы администраторы возобновляли истекаемы назначения.</li><li>`AdminRemove`: Чтобы администраторы удаляли пользователей или группы из подходящих ролей.</li><li>`UserAdd`: Чтобы пользователи активировали соответствующие назначения.</li><li>`UserExtend`: Чтобы пользователи просили продлить срок действия соответствующих назначений.</li><li>`UserRemove`. Чтобы пользователи отключались от активных назначений.</li><li>`UserRenew`. Чтобы пользователи просили продлить срок действия своих назначений, имеющих право на срок действия.</li></ul>|
+|appScopeId|Строка|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область действия определенными объектами каталогов, например административными единицами или всеми пользователями.|
+|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения.|
 |isValidationOnly|Логический|Boolean, определяющая, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
-|обоснование|String|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
+|обоснование|Строка|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
 |principalId|String|Идентификатор основного, которому предоставляется назначение. Например, пользователь или группа. Для групп они должны назначаться ролям, то есть **isAssignableToRole** свойства группы, задаваемого `true` .|
 |roleDefinitionId|String|Идентификатор унифицированногоRoleDefinition для назначения. Только для чтения.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса назначения ролей.|
@@ -181,6 +181,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleeligibilityschedulerequest_from_unifiedroleeligibilityschedulerequests_AdminRemove"
@@ -205,12 +207,30 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Запрос возвращает объект ответа, который отображает состояние ранее подходящих изменений назначения как `Revoked` . Директор больше не будет видеть свою ранее подходящую роль.
+Ниже приведен пример ответа. Запрос возвращает объект ответа, который отображает состояние ранее подходящих изменений назначения как `Revoked` . Директор больше не будет видеть свою ранее подходящую роль.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 54b856543279b93795077485f418af1a258e845275a0b4c0809cc18856617cc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b15d4fd7d3ed1688fd27fed7a101fb0d9aed37ba
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163819"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513610"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
@@ -27,17 +27,17 @@ ms.locfileid: "54163819"
 |[Перечисление бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
 |[Создание](../api/group-post-conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
 |[Получение беседы](../api/conversation-get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
-|[Удаление](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
+|[удаление](../api/conversation-delete.md); | Нет |Удаление объекта conversation. |
 |[Список цепочек беседы](../api/conversation-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
 |[Создание цепочки беседы](../api/conversation-post-threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|Указывает, содержит ли какая-либо запись в этой беседе хотя бы одно вложение.|
-|id|String|Уникальный идентификатор беседы. Только для чтения.|
-|lastDeliveredDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|preview|String|Краткая сводка из текста последней записи в этой беседе.|
+|hasAttachments|Boolean|Указывает, содержит ли какая-либо запись в этой беседе хотя бы одно вложение. Поддерживает `$filter` `eq` (, `ne` ) и `$search` .|
+|id|Строка|Уникальный идентификатор беседы. Только для чтения.|
+|lastDeliveredDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|preview|String|Краткая сводка из тела последней публикации в этом разговоре. Поддерживает `$filter` (`eq`, `ne`, `le`, `ge`).|
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
 |uniqueSenders|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 

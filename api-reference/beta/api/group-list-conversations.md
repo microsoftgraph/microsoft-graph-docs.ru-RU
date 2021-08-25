@@ -5,12 +5,12 @@ author: Jordanndahl
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1b65696102c912ea093220b6dd3c41f8fb4104f3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 3be3dadf17ea818cde26d277dd54fe52dd5874de
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681629"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514443"
 ---
 # <a name="list-conversations"></a>Список бесед
 
@@ -36,7 +36,7 @@ GET /groups/{id}/conversations
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` и `$filter` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -50,7 +50,7 @@ GET /groups/{id}/conversations
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [conversation](../resources/conversation.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,8 +80,8 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations
 ---
 
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -92,21 +92,21 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
-  "value": [
-    {
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
-      "uniqueSenders": [
-        "uniqueSenders-value"
-      ],
-      "preview": "preview-value",
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f448435d-3ca7-4073-8152-a1fd73c0fd09')/conversations",
+    "value": [
+        {
+            "id": "AAQkAGFhZDhkNGI1LTliZmEtNGEzMi04NTkzLWZjMWExZDkyMWEyZgAQAH4o7SknOTNKqAqMhqJHtUM=",
+            "topic": "The new All Company group is ready",
+            "hasAttachments": false,
+            "lastDeliveredDateTime": "2021-08-02T10:34:00Z",
+            "uniqueSenders": [
+                "All Company"
+            ],
+            "preview": "Welcome to the All Company group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Share filesView, edit, and share all group files, including email attachments.Connect your"
+        }
+    ]
 }
 ```
 

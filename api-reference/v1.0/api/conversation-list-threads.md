@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 80dceb9cc85d9a9e17761ab8197d94df7b675161
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 75ac17f5bcda79207d74e74340e4aaa4128a5227
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035661"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58513708"
 ---
 # <a name="list-threads"></a>Список цепочек
 
@@ -27,7 +27,7 @@ ms.locfileid: "52035661"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ ms.locfileid: "52035661"
 GET /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа, например, для получения свойств **toRecipients** и **ccRecipients.**
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -48,7 +48,7 @@ GET /groups/{id}/conversations/{id}/threads
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [conversationThread](../resources/conversationthread.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -57,7 +57,7 @@ GET /groups/{id}/conversations/{id}/threads
   "name": "get_threads"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
+GET https://graph.microsoft.com/v1.0/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=/threads
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threads-csharp-snippets.md)]
@@ -77,8 +77,9 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,35 +89,22 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 536
 
 {
-  "value": [
-    {
-      "toRecipients": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY%3D')/threads",
+    "value": [
         {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
+            "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAEo88nrzZqkiJXVQWWPtfFhAAEo88nrzZqkiJXVQWWPtfFg==",
+            "topic": "The new Ask HR group is ready",
+            "hasAttachments": false,
+            "lastDeliveredDateTime": "2021-08-02T11:42:38Z",
+            "uniqueSenders": [
+                "Ask HR"
+            ],
+            "preview": "Welcome to the Ask HR group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Add to the team siteStart sharing and collaborating on content in SharePoint.Share filesView,",
+            "isLocked": false
         }
-      ],
-      "topic": "topic-value",
-      "hasAttachments": true,
-      "lastDeliveredDateTime": "datetime-value",
-      "uniqueSenders": [
-        "uniqueSenders-value"
-      ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "name-value",
-            "address": "address-value"
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
 ```
 

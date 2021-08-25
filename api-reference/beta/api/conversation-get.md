@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 937ad1e434f01716fbbd6c5634fbd60716f2a2c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c4e05a6fd1a2b8296ffbab01ca64d5ee8c061249
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047044"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514527"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
@@ -35,7 +35,7 @@ GET /groups/{id}/conversations/{id}
 
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -48,7 +48,7 @@ GET /groups/{id}/conversations/{id}
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [conversation](../resources/conversation.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -57,7 +57,7 @@ GET /groups/{id}/conversations/{id}
   "name": "get_conversation"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
+GET https://graph.microsoft.com/beta/groups/4d81ce71-486c-41e9-afc5-e41bf2d0722a/conversations/AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-csharp-snippets.md)]
@@ -77,8 +77,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,17 +88,17 @@ GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations/$entity",
+    "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQABKPPJ682apIiV1UFlj7XxY=",
+    "topic": "The new Ask HR group is ready",
+    "hasAttachments": false,
+    "lastDeliveredDateTime": "2021-08-02T11:42:38Z",
+    "uniqueSenders": [
+        "Ask HR"
+    ],
+    "preview": "Welcome to the Ask HR group.Use the group to share ideas, files, and important dates.Start a conversationRead group conversations or start your own.Add to the team siteStart sharing and collaborating on content in SharePoint.Share filesView,"
 }
 ```
 

@@ -5,12 +5,12 @@ description: Связать тип контента со списком узло
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 89d80568ea0d0099e54d2d912bb7acb32c31f307
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6380461e25b7573eee617e167736e51a7fd28bef
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439464"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514541"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -58,8 +58,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|hubSiteUrls| Коллекция (строка) |Список пушечных URL-адресов для узлов, на которых необходимо применять тип контента. Обязательный.|
-|propagateToExistingLists| Логический |Если типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь `true` созданным спискам. 
+|hubSiteUrls| Коллекция (строка) |Список пушечных URL-адресов для узлов, на которых необходимо применять тип контента. Обязательно.|
+|propagateToExistingLists| Boolean |Если типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь `true` созданным спискам. 
 
 ## <a name="response"></a>Ответ
 
@@ -76,7 +76,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/id/contentTypes/id/associateWithHubSites
+POST https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 Content-Type: application/json
 
 {
