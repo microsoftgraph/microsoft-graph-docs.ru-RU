@@ -5,12 +5,12 @@ author: jpettere
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: b2dc8daa71e538729178e7a2647a9888b9c99c45
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: d568586cf65679aa66fb05a20a8efe863bc24960
+ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726725"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58514373"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -57,7 +57,7 @@ ms.locfileid: "53726725"
 | [Список объектов contactFolder](../api/user-list-contactfolders.md)                                  | Коллекция [contactFolder](contactfolder.md)                                     | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.                                                                                                                                             |
 | **Объекты каталога**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция String                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                                                                  |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция строк                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | Коллекция String                                                                | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна.                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | Нет                                                                             | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации.                                                                                                                   |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | Коллекция String                                                                | Возвращает объекты каталогов, указанные в списке идентификаторов.                                                                                                                                                                           |
@@ -149,7 +149,7 @@ ms.locfileid: "53726725"
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`).|
 |country|String|Страна или регион, в котором находится пользователь, например `US` или `UK`. Максимальная длина: 128 символов. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |createdDateTime | DateTimeOffset |Дата создания объекта пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (операторы `eq`, `ne`, `NOT`, `ge`, `le` и `in`).|
-|creationType|String|Указывает, была ли учетная запись пользователя создана как обычная учебная или рабочая учетная запись (`null`), внешняя учетная запись (`Invitation`), локальная учетная запись для клиента Azure Active Directory B2C (`LocalAccount`) или с помощью самостоятельной регистрации с использованием проверки электронной почты (`EmailVerified`). Только для чтения. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`).|
+| creationType | Строка | Указывает, была ли учетная запись пользователя создана с помощью одного из следующих методов: <br/> <ul><li>В качестве обычной учебной или рабочей учетной записи (`null`). <li>Как внешняя учетная запись (`Invitation`). <li>В качестве локальной учетной записи для клиента Azure Active Directory B2C (`LocalAccount`). <li>Через самообслуживаемую регистрацию внутренним пользователем с помощью проверки электронной почты (`EmailVerified`). <li>Через самообслуживаемую регистрацию внешним пользователем, регистрирующимся по ссылке, которая является частью пользовательского потока (`SelfServiceSignUp`).</ul> <br>Только для чтения.<br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`). |
 |deletedDateTime| DateTimeOffset | Дата и время удаления пользователя. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le` и `in`) |
 |department|String|Название отдела, в котором работает пользователь. Максимальная длина: 64 символа. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (операторы `eq`, `ne`, `NOT`, `ge`, `le` и `in`).|
 |displayName|String|Отображаемое имя пользователя в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$orderBy` и `$search`.|
