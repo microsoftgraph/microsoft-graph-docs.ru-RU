@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b495503cf01ce13e5f5d44d371b824a1eedfccb5
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 47d121a9f1f5a6b16103c35eb87e2658dada02df
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50760850"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531364"
 ---
 # <a name="policybase-resource-type"></a>Тип ресурса policyBase
 
@@ -18,7 +18,7 @@ ms.locfileid: "50760850"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет абстрактный базовый тип для типов политик, от которые можно наследовать.
+Представляет абстрактный базовый тип для типов политик, от которые можно наследовать. Наследуется от [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Методы
 
@@ -28,11 +28,11 @@ ms.locfileid: "50760850"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Уникальный идентификатор для этой политики. Только для чтения.|
+|id|String| Уникальный идентификатор для этой политики. Только для чтения. Наследуется от [directoryObject](directoryobject.md).|
 |description|String| Описание этой политики.|
 |displayName|String| Отображение имени для этой политики. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

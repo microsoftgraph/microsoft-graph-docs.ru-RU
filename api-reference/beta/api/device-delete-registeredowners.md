@@ -5,12 +5,12 @@ localization_priority: Normal
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 094c7aa46102d10cd61267b0056654d3e463a335
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 23ebfb4a1dd66e4f0fce0f4905672905e3d63208
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437242"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531273"
 ---
 # <a name="delete-registeredowner"></a>Удаление registeredOwner
 
@@ -26,9 +26,9 @@ ms.locfileid: "50437242"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Не поддерживается. |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,7 +43,7 @@ DELETE /devices/{id}/registeredOwners/{id}/$ref
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

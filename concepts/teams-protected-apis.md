@@ -4,12 +4,12 @@ description: API Microsoft Teams в Microsoft Graph, получающие дос
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 393fcba98a893c9de7b2453281516aa1f1a41065aa2b9a3e106db4dad81937e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 72332c41c62762a3812c65a2cdfa89327b3ff55d
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192203"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531230"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Защищенные API в Microsoft Teams
 
@@ -36,3 +36,4 @@ API Microsoft Teams в Microsoft Graph, получающие доступ к к�
 Чтобы запросить доступ к этим защищенным API, заполните следующую [форму запроса](https://aka.ms/teamsgraph/requestaccess). Мы проверяем запросы доступа каждую среду и развертываем утверждения каждую пятницу, кроме недель, на которые приходятся основные праздничные каникулы в США. Отправки в эти недели обрабатываются в следующую непраздничную неделю. 
 
 Если вы хотите предоставить информацию в дополнение к форме, обратитесь по адресу [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com).
+Включайте ИД приложения во всю переписку.

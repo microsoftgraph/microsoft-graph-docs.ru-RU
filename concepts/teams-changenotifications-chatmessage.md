@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 967b1bef18bd977481ae8a7542f8848281f5f227daeb41f888d1ad1cc80e3820
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: abca79a34bd5c5d45cf57db663f658fa759c5458
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531237"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 

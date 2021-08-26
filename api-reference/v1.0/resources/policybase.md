@@ -5,18 +5,18 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 80d8b6c030ec609c731d45a141ace028aed96909dc685ae26ecd9bb7591d6a5d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2918543536f62627f7c2a742009c3d67012353b4
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211859"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531224"
 ---
 # <a name="policybase-resource-type"></a>Тип ресурса policyBase
 
 Пространство имен: microsoft.graph
 
-Представляет абстрактный базовый тип для типов политик, от которые можно наследовать.
+Представляет абстрактный базовый тип для типов политик, от которые можно наследовать. Наследуется от [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Методы
 
@@ -26,7 +26,7 @@ ms.locfileid: "54211859"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Уникальный идентификатор для этой политики. Только для чтения.|
+|id|String| Уникальный идентификатор для этой политики. Только для чтения. Наследуется от [directoryObject](directoryobject.md).|
 |description|String| Описание этой политики.|
 |displayName|String| Отображение имени для этой политики. |
 

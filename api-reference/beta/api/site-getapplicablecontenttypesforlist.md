@@ -5,12 +5,12 @@ description: Получите типы контента сайта, которы
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8609c15eef73090864f9908aadfb3ffcaf13a2fd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 1f12207271ee292031da7e69f534300188514f6d
+ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958981"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58531350"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>сайт: getApplicableContentTypesForList
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "50958981"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -36,6 +36,15 @@ ms.locfileid: "50958981"
 ```http
 GET /sites/{siteId}/getApplicableContentTypesForList
 ```
+
+## <a name="function-parameters"></a>Параметры функции
+В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
+
+|Параметр|Тип|Описание|
+|-|-|-|
+|listId| String | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательный. |
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -49,14 +58,6 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-
-## <a name="function-parameters"></a>Параметры функции
-В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
-В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
-
-|Параметр|Тип|Описание|
-|-|-|-|
-|listId| Строка | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
