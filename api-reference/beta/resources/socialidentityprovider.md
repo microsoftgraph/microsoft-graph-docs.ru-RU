@@ -5,21 +5,21 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: cfaaeada596ccdf3767950e9f9a480d2d9c8a47e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: b5b763c2ee6c7a53bb271a456951a800afa5c1e0
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578784"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667978"
 ---
 # <a name="socialidentityprovider-resource-type"></a>Тип ресурса socialIdentityProvider
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет поставщиков удостоверений социальных сетей с [внешними удостоверениями](/azure/active-directory/external-identities/) для клиента Azure Active Directory и клиента Azure AD B2C.
+Представляет поставщиков социальных удостоверений с [внешними удостоверениями](/azure/active-directory/external-identities/) как для клиентов Azure Active Directory (Azure AD), так и для клиентов Azure AD B2C.
 
-Этот тип наследуется от [identityProviderBase](../resources/identityproviderbase.md).
+Наследуется от [identityProviderBase](../resources/identityproviderbase.md).
 
 Для сценариев Azure AD B2B в клиенте Azure AD типом поставщика удостоверений может быть Google или Facebook.
 
@@ -33,12 +33,12 @@ ms.locfileid: "53578784"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список](../api/identityproviderbase-list.md)|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Получение всех поставщиков удостоверений, настроенных в клиенте, включая поставщиков удостоверений социальных сетей.|
-|[Создание](../api/identityproviderbase-post-identityproviders.md)|socialidentityprovider |Создание поставщика удостоверений.|
-|[Получение](../api/identityproviderbase-get.md) |socialidentityprovider |Получение свойств поставщика удостоверений социальных сетей.|
-|[Обновление](../api/identityproviderbase-update.md)|Нет|Обновление поставщика удостоверений социальных сетей.|
-|[Удаление](../api/identityproviderbase-delete.md)|Нет|Удаление поставщика удостоверений социальных сетей.|
-|[Перечисление доступных типов поставщиков](../api/identityproviderbase-list-availableprovidertypes.md)|Коллекция String|Получение всех типов поставщиков удостоверений, доступных в клиенте.|
+|[Список](../api/identitycontainer-list-identityproviders.md)|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Извлечение всех поставщиков удостоверений, настроенных в клиенте, включая типы объектов [socialIdentityProvider](../resources/socialidentityprovider.md). Не существует способа извлечь только поставщиков социальных удостоверений в клиенте.|
+|[Создание](../api/identitycontainer-post-identityproviders.md)|socialidentityprovider |Создайте новый объект [socialIdentityProvider.](../resources/socialidentityprovider.md)|
+|[Получение](../api/identityproviderbase-get.md) |socialidentityprovider |Извлечение свойств объекта [socialIdentityProvider](../resources/socialidentityprovider.md).|
+|[Обновление](../api/identityproviderbase-update.md)|Нет|Обновление объекта [socialIdentityProvider](../resources/socialidentityprovider.md).|
+|[удаление](../api/identityproviderbase-delete.md);|Нет|Удаление объекта [socialIdentityProvider](../resources/socialidentityprovider.md).|
+|[Перечисление доступных типов поставщиков](../api/identityproviderbase-availableprovidertypes.md)|Коллекция String|Получение всех типов поставщиков удостоверений, доступных в клиенте.|
 
 ## <a name="properties"></a>Свойства
 
@@ -46,13 +46,13 @@ ms.locfileid: "53578784"
 |:---------------|:--------|:----------|
 |clientId|String|Идентификатор клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Обязательно.|
 |clientSecret|String|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает `****`. Обязательный.|
-|id|String|Идентификатор поставщика удостоверений. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md). Только для чтения.|
-|displayName|String|Отображаемое имя поставщика удостоверений. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md).|
+|id|String|Идентификатор поставщика удостоверений. Наследуется от [identityProviderBase](../resources/identityproviderbase.md). Только для чтения.|
+|displayName|String|Отображаемое имя поставщика удостоверений. Наследуется от [identityProviderBase](../resources/identityproviderbase.md).|
 |identityProviderType|Строка|Возможные значения для сценария B2B: `Google`, `Facebook`. Возможные значения для сценария B2C: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`. Обязательно.|
 
 ### <a name="where-to-get-the-client-identifier-and-secret"></a>Где взять идентификатор и секрет клиента
 
-Для каждого поставщика удостоверений существует процесс создания регистрации приложения. Например, пользователи создают регистрацию приложения с помощью Facebook на сайте [developers.facebook.com](https://developers.facebook.com/). Итоговый идентификатор и секрет клиента можно передать для [создания identityProvider](../api/identityproviderbase-post-identityproviders.md). После этого каждый объект пользователя в каталоге можно объединить с любым поставщиком удостоверений клиента для проверки подлинности. Это позволяет пользователям входить путем ввода учетных данных на странице входа поставщика удостоверений. Маркер от поставщика удостоверений проверяется с помощью Azure AD перед выпуском клиентом маркера для приложения.
+Для каждого поставщика удостоверений существует процесс создания регистрации приложения. Например, пользователи создают регистрацию приложения с помощью Facebook на сайте [developers.facebook.com](https://developers.facebook.com/). Итоговый идентификатор и секрет клиента можно передать для [создания identityProvider](../api/identitycontainer-post-identityproviders.md). После этого каждый объект пользователя в каталоге можно объединить с любым поставщиком удостоверений клиента для проверки подлинности. Это позволяет пользователям входить путем ввода учетных данных на странице входа поставщика удостоверений. Маркер от поставщика удостоверений проверяется с помощью Azure AD перед выпуском клиентом маркера для приложения.
 
 ## <a name="json-representation"></a>Представление JSON
 
