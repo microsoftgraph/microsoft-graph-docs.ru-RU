@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: faf94d76e6f90568835b89e054991b51781c7e0a
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 8947beb25170965e96a6cf12a91066d22b60e398
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579609"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667761"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -124,7 +124,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -156,7 +156,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -233,7 +232,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -264,7 +263,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -356,7 +354,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -387,7 +385,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -470,7 +467,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -501,7 +498,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -585,7 +581,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -617,7 +613,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -729,7 +724,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -817,7 +811,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -944,7 +938,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

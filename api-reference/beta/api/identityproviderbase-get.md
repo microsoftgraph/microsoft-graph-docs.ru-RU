@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 98aa1b5a97fd1a05749b6baed25e5c6720a9af49
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 0dfa62dd5fdf09ac79400fad90c943f8cab7c716
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579248"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667915"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 
@@ -18,9 +18,9 @@ ms.locfileid: "53579248"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связей [socialIdentityProvider](../resources/socialidentityprovider.md) или [builtinIdentityProvider](../resources/builtinidentityprovider.md) в Azure AD.
+Получите свойства и связи указанного поставщика удостоверений, настроенные в клиенте.
 
-Для Azure AD B2C он может получать свойства и связи [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или [appleIdentityProvider.](../resources/appleidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно получить [socialIdentityProvider](../resources/socialidentityprovider.md) или [ресурс builtinIdentityProvider](../resources/builtinidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может получить [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)или [ресурс appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "53579248"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -60,7 +60,7 @@ GET /identity/identityProviders/{id}
 
 В случае успеха этот метод возвращает код отклика и представление JSON для `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) или [builtinIdentityProvider](../resources/builtinidentityprovider.md) в тексте ответа для клиента Azure AD.
 
-Для клиента Azure AD B2C этот метод возвращает код отклика и представление JSON для `200 OK` [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или [объекта appleIdentityProvider](../resources/appleidentityprovider.md) в тексте ответа.
+Для клиента Azure AD B2C этот метод возвращает код отклика и представление JSON для `200 OK` [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)или [объекта appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -69,7 +69,6 @@ GET /identity/identityProviders/{id}
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,6 +80,7 @@ GET /identity/identityProviders/{id}
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-socialidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,10 +99,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -129,7 +129,6 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -140,6 +139,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-builtinidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -158,10 +158,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -186,7 +186,6 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -197,6 +196,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm-4470de58-86c2-4a3f-a22c-63c9366cd000
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-openidconnectidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -215,10 +215,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-test-icm
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -256,7 +256,6 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -267,6 +266,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applemanagedidentityprovider-from-identityproviderbase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -285,10 +285,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OI
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

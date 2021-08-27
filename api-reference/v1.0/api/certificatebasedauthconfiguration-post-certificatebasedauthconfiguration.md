@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a72e4e5f1eb694a48a2341cb2963eabd059f5e5b
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: 061b8ec1fa3e0ef9fefbc326854bdb4030b27393
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336693"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667768"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Создание certificateBasedAuthConfiguration
 
@@ -29,14 +29,14 @@ ms.locfileid: "58336693"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение    | Organization.ReadWrite.All |
+| Для приложений    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /organization/{id}/certificateBasedAuthConfiguration/$ref
+POST /organization/{id}/certificateBasedAuthConfiguration
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

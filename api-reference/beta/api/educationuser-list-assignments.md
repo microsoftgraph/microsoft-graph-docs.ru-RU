@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2d92a6f32a3b986f9fb0e3b24b6537897f23ca2c
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 9a3946db621f67460ffc712b61419d5abe437197
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911769"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667789"
 ---
 # <a name="list-assignments-of-a-user"></a>Список назначений пользователя
 
@@ -35,10 +35,10 @@ ms.locfileid: "52911769"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/users/{id}/assignments
+GET /education/me/assignments
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

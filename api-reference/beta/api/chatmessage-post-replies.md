@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 62fba97d4c9599a85c93857a74d5acdf35d89b49
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: ac0417b34a6adad584ef584dd1ba02fa81e06cdd
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533978"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667600"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>Отправка ответов на сообщение в канале
 
@@ -52,7 +52,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса поставляем представление JSON объекта [сообщения.](../resources/chatmessage.md) Обязательным является только свойство body, другие свойства необязательны.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает `201 Created` код ответа с [созданным](../resources/chatmessage.md) сообщением.
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,7 +134,6 @@ Content-type: application/json
     "from": {
         "application": null,
         "device": null,
-        "conversation": null,
         "user": {
             "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
             "displayName": "Robin Kline",
@@ -235,7 +234,6 @@ HTTP/1.1 200 OK
    "from":{
       "application":null,
       "device":null,
-      "conversation":null,
       "user":{
          "id":"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
          "displayName":"Joh Doe",

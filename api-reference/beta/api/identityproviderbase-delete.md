@@ -5,21 +5,21 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: d78aff8a604f42b7efbc1f87269a87acbb29656c
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 683bb831fae6340f8f9be399d83224a5d3fbed0f
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508829"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667936"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD.
+Удаление ресурса поставщика удостоверений, указанного идентификатором в запросе. 
 
-В Azure AD B2C удалите [объект socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или [объект appleIdentityProvider.](../resources/appleidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно удалить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может удалить [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)или [ресурс appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "51508829"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityProvider.ReadWrite.All|
+|Для приложений|IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -96,7 +96,7 @@ DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

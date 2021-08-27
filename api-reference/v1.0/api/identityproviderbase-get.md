@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 749407b572a4357de5f5ee9b8cdbf0f2f6eb2ac3
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 82e8707d2179486aeeaf7f5fdede9b99d83169a5
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535518"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667943"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей [socialIdentityProvider](../resources/socialidentityprovider.md) или [builtinIdentityProvider](../resources/builtinidentityprovider.md) в Azure AD.
+Получите свойства и связи указанного поставщика удостоверений в клиенте.
 
-Для Azure AD B2C он может получать свойства и связи [socialIdentityProvider.](../resources/socialidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно получить [socialIdentityProvider](../resources/socialidentityprovider.md) или [ресурс builtinIdentityProvider](../resources/builtinidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может получить [ресурс socialIdentityProvider.](../resources/socialidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -67,6 +67,7 @@ GET /identity/identityProviders/{id}
 
 Ниже приведен пример запроса.
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_socialidentityprovider_from_identityproviderbase"
@@ -77,9 +78,27 @@ GET /identity/identityProviders/{id}
 GET https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 ```
 
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-socialidentityprovider-from-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-socialidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-socialidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-socialidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -107,6 +126,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_builtinidentityprovider_from_identityproviderbase"
@@ -117,9 +137,27 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/identity/identityProviders/MSASignup-OAUTH
 ```
 
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-builtinidentityprovider-from-identityproviderbase-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-builtinidentityprovider-from-identityproviderbase-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-builtinidentityprovider-from-identityproviderbase-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-builtinidentityprovider-from-identityproviderbase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

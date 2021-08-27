@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: acd8109877f497162a8ecbddb309e3e34ab5b34c
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: e0025c84064b32ae55393a1e81b38e6336069728
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534126"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667873"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 Пространство имен: microsoft.graph
 
-Удаление объекта [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD.
+Удаление ресурса поставщика удостоверений, указанного идентификатором в запросе. 
 
-В Azure AD B2C удалите [объект socialIdentityProvider.](../resources/socialidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно удалить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может удалить [ресурс socialIdentityProvider.](../resources/socialidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -63,6 +63,8 @@ DELETE /identity/identityProviders/{id}
 
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
@@ -72,6 +74,24 @@ DELETE /identity/identityProviders/{id}
 ``` http
 DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 <!-- {

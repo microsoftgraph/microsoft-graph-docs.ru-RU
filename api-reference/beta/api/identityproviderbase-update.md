@@ -5,21 +5,21 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3cf9970299a5f12c0a440013ea6e3d09e684ac78dc7579e495670c7fbc7f364f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 77afe4e676f582a4a47e284f05f7f1ea509aa9d2
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57053323"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667551"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD.
+Обновление свойств указанного поставщика удостоверений, настроенных в клиенте.
 
-В Azure AD B2C обновим свойства [объекта socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или [объекта appleIdentityProvider.](../resources/appleidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно обновить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция может обновить [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)или [ресурс appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "57053323"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityProvider.ReadWrite.All|
+|Для приложений| IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -55,7 +55,7 @@ PATCH /identity/identityProviders/{id}
 
 В теле запроса укажи объект JSON одним или более свойствами, которые необходимо обновить для объекта [socialIdentityProvider](../resources/socialidentityprovider.md) в клиенте Azure AD.
 
-В Azure AD B2C предоставить объекту JSON одно или несколько свойств, которые необходимо обновить для [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или [объекта appleIdentityProvider.](../resources/appleidentityprovider.md)
+В Azure AD B2C предоставить объекту JSON одно или несколько свойств, которые необходимо обновить для объекта [socialIdentityProvider,](../resources/socialidentityprovider.md) [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md)или [объекта appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ### <a name="socialidentityprovider-object"></a>объект socialIdentityProvider
 
@@ -74,9 +74,9 @@ PATCH /identity/identityProviders/{id}
 |displayName|String|Отображаемое имя поставщика удостоверений.|
 |domainHint|String|Подсказку домена можно использовать для перехода непосредственно на вход на страницу указанного поставщика удостоверений вместо того, чтобы пользователь вошел в список доступных поставщиков удостоверений.|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|После того как поставщик OIDC отправляет маркер ID обратно в Azure AD, Azure AD должна иметь возможность составить карту утверждений от полученного маркера к утверждениям, которые Azure AD распознает и использует. Этот сложный тип захватывает это сопоставление.|
-|metadataUrl|Строка|URL-адрес документа метаданных поставщика удостоверений OpenID Подключение. Каждый поставщик Подключение OpenID описывает документ метаданных, содержащий большую часть сведений, необходимых для выполнения входных данных. К ним относятся такие сведения, как URL-адреса для использования и расположение общедоступных ключей подписи службы. Документ openID Подключение метаданных всегда находится в конечной точке, которая заканчивается `.well-known/openid-configuration` . Указайте URL-адрес метаданных для поставщика удостоверений OpenID Подключение, который вы добавляете.|
+|metadataUrl|String|URL-адрес документа метаданных поставщика удостоверений OpenID Подключение. Каждый поставщик Подключение OpenID описывает документ метаданных, содержащий большую часть сведений, необходимых для выполнения входных данных. К ним относятся такие сведения, как URL-адреса для использования и расположение общедоступных ключей подписи службы. Документ openID Подключение метаданных всегда находится в конечной точке, которая заканчивается `.well-known/openid-configuration` . Указайте URL-адрес метаданных для поставщика удостоверений OpenID Подключение, который вы добавляете.|
 |responseMode|String|Режим ответа определяет метод, используемый для отправки данных из пользовательского поставщика удостоверений в Azure AD B2C. Возможные значения: `form_post` , `query` .|
-|responseType|Строка|Тип ответа описывает тип сведений, отосланных во время первоначального вызова authorization_endpoint поставщика пользовательских удостоверений. Возможные значения: `code` `id_token` , `token` .|
+|responseType|String|Тип ответа описывает тип сведений, отосланных во время первоначального вызова authorization_endpoint поставщика пользовательских удостоверений. Возможные значения: `code` `id_token` , `token` .|
 |scope|String|Область определяет сведения и разрешения, которые вы хотите получить от настраиваемого поставщика удостоверений.|
 
 ### <a name="applemanagedidentityprovider-object"></a>объект appleManagedIdentityProvider
@@ -85,13 +85,13 @@ PATCH /identity/identityProviders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя поставщика удостоверений.|
 |developerId|Строка|Идентификатор разработчика Apple.|
-|serviceId|Строка|Идентификатор разработчика Apple.|
-|keyId|Строка|Идентификатор Ключа Apple.|
+|serviceId|Строка|Идентификатор службы Apple.|
+|keyId|Строка|Идентификатор ключа Apple.|
 |certificateData|Строка|Данные сертификата, являющиеся длинной строкой текста из сертификата. Могут иметь значение NULL.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
@@ -167,7 +167,6 @@ HTTP/1.1 204 No Content
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7
 Content-type: application/json
-Content-length: 41
 
 {
   "responseType": "id_token"
@@ -222,7 +221,6 @@ HTTP/1.1 204 No Content
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
 Content-type: application/json
-Content-length: 41
 
 {
   "displayName": "Apple"

@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3940284509b9fd31e082179d84276edd45c9324b90110fe3552b83e4c6bf2a90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ad9230e1c6a9f9ba9e4b46451a95c529674b6d2
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57363855"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667908"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD.
+Обновление свойств указанного поставщика удостоверений в клиенте.
 
-В Azure AD B2C обновим свойства [объекта socialIdentityProvider.](../resources/socialidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно обновить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция может обновить ресурс [socialIdentityProvider.](../resources/socialidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "57363855"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityProvider.ReadWrite.All|
+|Для приложений| IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -65,7 +65,7 @@ PATCH /identity/identityProviders/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 

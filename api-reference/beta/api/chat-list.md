@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7f28dcc5584f2a53201871d22b54b18aace4c55a
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: e43128b7299f20ee06b1ffc2d33c77d2122adb0d
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396979"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667411"
 ---
 # <a name="list-chats"></a>Чаты списка
 
@@ -39,9 +39,9 @@ GET /users/{user-id | user-principal-name}/chats
 GET /chats
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Этот метод поддерживает параметры запросов (только для свойств участников) и `$expand`  `$filter` [OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает `$expand`  параметры запросов (свойства members и **lastMessagePreview)** и `$filter` [OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /chats
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-list-all-the-chats"></a>Пример 1. Список всех чатов
+### <a name="example-1-list-all-chats"></a>Пример 1. Список всех чатов
 
 #### <a name="request"></a>Запрос
 
@@ -150,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-chats-along-with-the-members-of-each-chat"></a>Пример 2. Список всех чатов вместе с участниками каждого чата
+### <a name="example-2-list-all-chats-along-with-the-members-of-each-chat"></a>Пример 2. Список всех чатов вместе с участниками каждого чата
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
@@ -189,9 +189,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 Ниже приведен пример отклика. 
 
 > [!NOTE]
-> Идентификаторы участия, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
->
-> Результаты членства могут соединимся с пользователями из разных клиентов, как указано в ответе, в будущем. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
+> Идентификаторы участия, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться разработать или сделать какие-либо предположения об этих ИД ресурсов.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -508,7 +506,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-list-all-the-chats-that-have-a-member-with-a-specific-display-name"></a>Пример 4. Список всех чатов, в которые входит член с определенным именем отображения
+### <a name="example-4-list-all-chats-that-have-a-member-with-a-specific-display-name"></a>Пример 4. Список всех чатов, в которые входит член с определенным именем отображения
 
 #### <a name="request"></a>Запрос
 
