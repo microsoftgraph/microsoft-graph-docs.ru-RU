@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: c5b45b142cb90eb1b7f2e43f719a2e9e9650d6b2a9917ca79c514e60a8f6fb1d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cfc36459c1809311b3f40bf965d8c04f94ba9564
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134926"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667481"
 ---
 # <a name="socialidentityprovider-resource-type"></a>Тип ресурса socialIdentityProvider
 Пространство имен: microsoft.graph
@@ -31,12 +31,12 @@ ms.locfileid: "54134926"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список](../api/identityproviderbase-list.md)|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Получение всех поставщиков удостоверений, настроенных в клиенте, включая поставщиков удостоверений социальных сетей.|
-|[Создание](../api/identityproviderbase-post-identityproviders.md)|socialidentityprovider |Создание поставщика удостоверений.|
-|[Получение](../api/identityproviderbase-get.md) |socialidentityprovider |Получение свойств поставщика удостоверений социальных сетей.|
-|[Обновление](../api/identityproviderbase-update.md)|Нет|Обновление поставщика удостоверений социальных сетей.|
-|[Удаление](../api/identityproviderbase-delete.md)|Нет|Удаление поставщика удостоверений социальных сетей.|
-|[Перечисление доступных типов поставщиков](../api/identityproviderbase-list-availableprovidertypes.md)|Коллекция String|Получение всех типов поставщиков удостоверений, доступных в клиенте.|
+|[Список](../api/identitycontainer-list-identityproviders.md)|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Извлечение всех поставщиков удостоверений, настроенных в клиенте, включая типы объектов [socialidentityprovider](../resources/socialidentityprovider.md). Не существует способа извлечь только поставщиков удостоверений социальных сетей в клиенте.|
+|[Создание](../api/identitycontainer-post-identityproviders.md)|[socialidentityprovider](../resources/socialidentityprovider.md) |Создание нового объекта [socialidentityprovider](../resources/socialidentityprovider.md).|
+|[Получение](../api/identityproviderbase-get.md) |[socialidentityprovider](../resources/socialidentityprovider.md) |Извлечение свойств объекта [socialidentityprovider](../resources/socialidentityprovider.md).|
+|[Обновление](../api/identityproviderbase-update.md)|Нет|Обновление объекта [socialidentityprovider](../resources/socialidentityprovider.md).|
+|[Удаление](../api/identityproviderbase-delete.md)|Нет|Удаление объекта [socialidentityprovider](../resources/socialidentityprovider.md).|
+|[Перечисление доступных типов поставщиков](../api/identityproviderbase-availableprovidertypes.md)|Коллекция String|Получение всех типов поставщиков удостоверений, доступных в клиенте.|
 
 ## <a name="properties"></a>Свойства
 
@@ -44,13 +44,13 @@ ms.locfileid: "54134926"
 |:---------------|:--------|:----------|
 |clientId|String|Идентификатор для клиента приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Обязательно.|
 |clientSecret|String|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает `****`. Обязательный.|
-|id|String|Идентификатор поставщика удостоверений. Унаследовано от [identityProviderBase](../resources/identityproviderbase.md). Только для чтения.|
+|id|String|Идентификатор поставщика удостоверений. Наследуется от [identityProviderBase](../resources/identityproviderbase.md). Только для чтения.|
 |displayName|String|Отображаемое имя поставщика удостоверений. Наследуется от [identityProviderBase](../resources/identityproviderbase.md).|
 |identityProviderType|Строка|Возможные значения для сценария B2B: `Google`, `Facebook`. Возможные значения для сценария B2C: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`. Обязательно.|
 
 ### <a name="where-to-get-the-client-identifier-and-secret"></a>Где взять идентификатор и секрет клиента
 
-Для каждого поставщика удостоверений существует процесс создания регистрации приложения. Например, пользователи создают регистрацию приложения с помощью Facebook на сайте [developers.facebook.com](https://developers.facebook.com/). Итоговый идентификатор и секрет клиента можно передать для [создания identityProvider](../api/identityproviderbase-post-identityproviders.md). После этого каждый объект пользователя в каталоге можно объединить с любым поставщиком удостоверений клиента для проверки подлинности. Это позволяет пользователям входить путем ввода учетных данных на странице входа поставщика удостоверений. Маркер от поставщика удостоверений проверяется с помощью Azure AD перед выпуском клиентом маркера для приложения.
+Для каждого поставщика удостоверений существует процесс создания регистрации приложения. Например, пользователи создают регистрацию приложения с помощью Facebook на сайте [developers.facebook.com](https://developers.facebook.com/). Итоговый идентификатор и секрет клиента можно передать для [создания identityProvider](../api/identitycontainer-post-identityproviders.md). После этого каждый объект пользователя в каталоге можно объединить с любым поставщиком удостоверений клиента для проверки подлинности. Это позволяет пользователям входить путем ввода учетных данных на странице входа поставщика удостоверений. Маркер от поставщика удостоверений проверяется с помощью Azure AD перед выпуском клиентом маркера для приложения.
 
 ## <a name="json-representation"></a>Представление JSON
 
