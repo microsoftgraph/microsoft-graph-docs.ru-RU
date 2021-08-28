@@ -5,25 +5,25 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 1a3d26697c26b803bcbac9141d7ff011575f91f7
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 2171e1dde60f6c97d6c4eb243d61c896329a1b2c
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51491209"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667565"
 ---
 # <a name="identityproviderbase-resource-type"></a>Тип ресурса identityProviderBase
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет поставщиков удостоверений с [внешними удостоверениями](/azure/active-directory/external-identities/) для клиента Azure Active Directory и клиента Azure AD B2C.
+Представляет поставщиков удостоверений с [внешними удостоверениями](/azure/active-directory/external-identities/) как для клиентов Azure Active Directory (Azure AD), так и для клиентов Azure AD B2C.
 
-Для сценариев Azure AD B2B в каталоге Azure AD поставщиком удостоверений может быть [socialIdentityProvider](../resources/socialidentityprovider.md) или [builtinIdentityProvider](../resources/builtinidentityprovider.md), наследуемый от типа ресурса identityProviderBase.
+Для сценариев Azure AD B2B в каталоге Azure AD поставщиком удостоверений может быть [socialIdentityProvider](../resources/socialidentityprovider.md) или [builtinIdentityProvider](../resources/builtinidentityprovider.md). Оба наследуются от типа ресурса identityProviderBase.
 
 Настройка поставщика удостоверений в каталоге Azure AD позволяет применять новые гостевые сценарии Azure AD B2B. Например, в организации есть ресурсы в Microsoft 365, которыми нужно поделиться с пользователем Gmail. Для проверки подлинности и доступа к документам пользователь Gmail использует данные учетной записи Google.
 
-В каталоге Azure AD B2C типом поставщика удостоверений может быть [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или [appleIdentityProvider](../resources/appleidentityprovider.md), наследуемый от типа ресурса identityProviderBase.
+В каталоге Azure AD B2C типом поставщика удостоверений может быть [socialIdentityProviders](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md), наследуемые от типа ресурса identityProviderBase.
 
 Настройка поставщика удостоверений в каталоге Azure AD B2C позволяет пользователям регистрироваться и входить в приложение с помощью учетных записей социальных сетей или настраиваемого поставщика, поддерживающего OpenID Connect. Например, приложение может использовать Azure AD B2C, чтобы разрешить пользователям регистрироваться в службе с помощью учетной записи Facebook или собственного поставщика удостоверений, соответствующего протоколу OIDC.
 
@@ -31,8 +31,12 @@ ms.locfileid: "51491209"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список](../api/identityproviderbase-list.md)|Коллекция identityProviderBase|Получение всех поставщиков удостоверений, настроенных в клиенте.|
-|[Перечисление доступных типов поставщиков](../api/identityproviderbase-list-availableprovidertypes.md)|Коллекция String|Получение всех типов поставщиков удостоверений, доступных в клиенте.|
+|[Список](../api/identitycontainer-list-identityproviders.md)|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Получение всех поставщиков удостоверений, настроенных в клиенте.|
+|[Создание](../api/identitycontainer-post-identityproviders.md)| [socialidentityprovider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) |Создайте новый объект одного из следующих типов: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD или Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
+|[Получение](../api/identityproviderbase-get.md); |[socialidentityprovider](../resources/socialidentityprovider.md), [builtInIdentityProvider](../resources/builtinidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) или  [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md)| Извлеките свойства одного из следующих типов объектов: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD или Azure AD B2C) <li> [builtInIdentityProvider](../resources/builtinidentityprovider.md) (Azure AD или Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
+|[Обновление](../api/identityproviderbase-update.md)|Нет|Обновите один из следующих типов объектов: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD или Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) </li></ul>|
+|[удаление](../api/identityproviderbase-delete.md);|Нет|Удалите один из следующих типов объектов: <br/><ul><li> [socialidentityprovider](../resources/socialidentityprovider.md) (Azure AD или Azure AD B2C) <li> [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md) (Azure AD B2C) <li> [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) (Azure AD B2C) (Azure AD B2C)|
+|[Перечисление доступных типов поставщиков](../api/identityproviderbase-availableprovidertypes.md)|Коллекция String|Извлечение всех поддерживаемых типов поставщиков удостоверений в клиенте.|
 
 ## <a name="properties"></a>Свойства
 

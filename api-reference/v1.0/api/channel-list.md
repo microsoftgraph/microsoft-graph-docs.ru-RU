@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 967a8cbfc1a3ec909b3fb7e5e36c7c3e7f00730a
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 1beea91409ab807a41f3e53d6609d90bf79b282dbf7fb3b9b6ce1bb6a95653e5
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57203728"
 ---
 # <a name="list-channels"></a>Перечисление каналов
 
@@ -161,7 +161,7 @@ GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
