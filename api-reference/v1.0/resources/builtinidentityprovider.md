@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 096574328a5dc5c1bb8c59020398c33396291afc97207a9f59408da9a8a45196
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4f09680a34c90cd060433f111492abbdb2c0730f
+ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202548"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58667404"
 ---
 # <a name="builtinidentityprovider-resource-type"></a>Тип ресурса builtInIdentityProvider
 Пространство имен: microsoft.graph
@@ -25,9 +25,9 @@ ms.locfileid: "54202548"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список](../api/identityproviderbase-list.md)|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Получение всех поставщиков удостоверений, настроенных в клиенте, включая встроенных поставщиков удостоверений.|
+|[Список](../api/identitycontainer-list-identityproviders.md)|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Получение всех поставщиков удостоверений, настроенных в клиенте, включая встроенных поставщиков удостоверений. Невозможно получить только встроенных поставщиков удостоверений в клиенте.|
 |[Получение](../api/identityproviderbase-get.md) |builtInIdentityProvider|Получение свойств встроенного поставщика удостоверений.|
-|[Перечисление доступных типов поставщиков](../api/identityproviderbase-list-availableprovidertypes.md)|Коллекция String|Получение всех типов поставщиков удостоверений, доступных в клиенте.|
+|[Перечисление доступных типов поставщиков](../api/identityproviderbase-availableprovidertypes.md)|Коллекция String|Получение всех типов поставщиков удостоверений, доступных в клиенте.|
 
 ## <a name="properties"></a>Свойства
 
