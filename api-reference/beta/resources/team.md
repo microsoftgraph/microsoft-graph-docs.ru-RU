@@ -2,15 +2,15 @@
 title: Тип ресурса team
 description: 'Команда в Microsoft Teams — это коллекция каналов. '
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a388e5d31e3cbd3abab83203481d66491ff51a4
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 7769fd62e04010b0ba36a325f64a62363570aa78
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060486"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695303"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -89,9 +89,9 @@ ms.locfileid: "53060486"
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
 |members|Коллекция [conversationMember](../resources/conversationmember.md)|Участники и владельцы команды.|
 |owners|[user](user.md)| Список владельцев команды. В настоящее время при создании группы с использованием разрешений для приложения необходимо указать только одного владельца. При использовании делегированных разрешений нельзя указать владельца (владельцем является текущий пользователь). Владельца необходимо указать в виде ИД объекта (GUID), а не имени участника-пользователя (UPN). |
-|operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. | 
+|operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. |
 |photo;|[profilePhoto](../resources/profilephoto.md)|Фотография команды|
-|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| Общий канал для команды. | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| Общий канал для команды. |
 |schedule|[schedule](schedule.md)| Расписание смен для команды.|
 |шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates). |
 |permissionGrants|Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Коллекция разрешений, предоставленных приложениям для доступа к команде.|

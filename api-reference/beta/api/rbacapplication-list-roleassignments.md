@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5c58ce5123bf7ea3bb29af5b5e67fb5e259d6c75
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 78ab7566d88feb7d3633f56713c3f3696533f3f4
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351064"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695198"
 ---
 # <a name="list-unifiedroleassignments"></a>Список unifiedRoleAssignments
 
@@ -35,7 +35,7 @@ ms.locfileid: "53351064"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ### <a name="for-entitlement-management-provider"></a>Поставщик прав на управление правами
 
@@ -66,6 +66,8 @@ GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{role
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
 
 GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/accessPackageCatalog/{catalog id}'
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
@@ -76,13 +78,13 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinition
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleAssignment](../resources/unifiedroleassignment.md) в теле ответа.
 
@@ -125,7 +127,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

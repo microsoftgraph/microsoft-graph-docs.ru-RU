@@ -1,16 +1,16 @@
 ---
 title: Перечисление servicePrincipals
 description: Получение списка объектов servicePrincipal.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b9cc41f77d73b66ea47d498f53277d43e6204eb8dbfe1eec71c8fa37c1fa8137
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1941f96a8085886cd576f3ac6f31ffe728d7281
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57202786"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696955"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -189,7 +189,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

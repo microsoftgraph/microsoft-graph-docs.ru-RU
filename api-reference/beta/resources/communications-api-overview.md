@@ -4,13 +4,13 @@ description: API коммуникаций в Microsoft Graph добавляет 
 author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
-localization_priority: Priority
-ms.openlocfilehash: e1b3b99424d71e419c742a8d02a59bc291cffc87
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.localizationpriority: high
+ms.openlocfilehash: 5bc4fe185c5940ec67431f4b0372554ff10c9f83
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033939"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696220"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Работа с API коммуникаций в Microsoft Graph
 

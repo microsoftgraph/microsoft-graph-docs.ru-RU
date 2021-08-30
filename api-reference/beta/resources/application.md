@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса application
 description: Представляет приложение.
-localization_priority: Priority
+ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 94111087c0541111af903201fb6503be49a48a88
-ms.sourcegitcommit: b711aed8acc18512cf6591f4108ed5ddf05b649d
+ms.openlocfilehash: b8453f3d8f46510648a67fde7181f3bb99e04832
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660319"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695142"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 

@@ -1,16 +1,16 @@
 ---
 title: Обзор API отчетов об активности
 description: Используйте API отчетов об активности в Microsoft Graph для получения доступа к отчетам Azure Active Directory, чтобы отслеживать действия пользователей в клиенте.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access-reports
 author: besiler
-ms.openlocfilehash: 78afd6477988a546c7c0e2b8db34f8933423107f
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: c718e6dbe95d1aaf4b891470d07e714d4e0a9ee7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129476"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695135"
 ---
 # <a name="activity-reports-api-overview"></a>Обзор API отчетов об активности
 
@@ -26,7 +26,7 @@ Azure Active Directory (Azure AD) отслеживает действия пол
 
 Azure AD предоставляет три типа отчетов об активности:
 
-- Аудиты каталога 
+- Аудиты каталога
 - Входы
 - Подготовка
 
@@ -76,8 +76,8 @@ Operation | URL-адрес
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Зарегистрируйте приложение](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal), чтобы соответствовать предварительным требованиям отчетов. 
-- Сведения о том, как получить журналы аудита при проверке подлинности с помощью сертификатов, см. в [руководстве по получению данных с помощью API отчетов Azure Active Directory с сертификатами](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).  
+- [Зарегистрируйте приложение](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal), чтобы соответствовать предварительным требованиям отчетов.
+- Сведения о том, как получить журналы аудита при проверке подлинности с помощью сертификатов, см. в [руководстве по получению данных с помощью API отчетов Azure Active Directory с сертификатами](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).
 - Изучите действия и ресурс [directoryAudit](directoryaudit.md).
-- Изучите действия и ресурс [signIn](signin.md). 
+- Изучите действия и ресурс [signIn](signin.md).
 - Изучите ресурс [provisioningObjectSummary](provisioningobjectsummary.md).

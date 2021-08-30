@@ -2,15 +2,15 @@
 title: Список участников группы
 description: Получение conversationMembers группы.
 author: AkJo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b3c08e79e1c3b3b60cad33357aff101c4f1fee3b
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f6473637010db4b973f6ddb0de480f792cd891ea
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874202"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696437"
 ---
 # <a name="list-members-of-team"></a>Список участников группы
 Пространство имен: microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49874202"
 > [!NOTE]
 > Идентификаторы членства, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
 >
-> В дальнейшем результаты членства могут сопоставляться с пользователями различных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
+> В дальнейшем результаты участия могут сопоставляться с пользователями из разных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

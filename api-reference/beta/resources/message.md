@@ -2,15 +2,15 @@
 title: Тип ресурса message
 description: Сообщение в папке почтового ящика.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a74d4fb6411c1684528b6b36315782bb52373b19
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: bc50692d26d58d9cb7bbf2e0e9a01496fc111b1f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960413"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696304"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -138,10 +138,10 @@ ms.locfileid: "50960413"
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [Attachment](attachment.md)|Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
-|extensions|Коллекция [Extension](extension.md)| Коллекция открытых расширений, определенных для сообщения. Допускается значение null.|
+|extensions|Коллекция [Extension](extension.md)| Коллекция открытых расширений, определенных для сообщения. Допускается значение NULL.|
 |mentions|Коллекция [mention](mention.md) | Коллекция упоминаний в сообщении, упорядоченных по свойству **createdDateTime** от новых к старым. По умолчанию запрос `GET` /messages не возвращает это свойство, если к свойству не применен параметр `$expand`.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для календаря. Только для чтения. Допускает значение NULL.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для календаря. Только для чтения. Допускается значение NULL.|
 
 ## <a name="methods"></a>Методы
 

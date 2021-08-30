@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса b2cAuthenticationMethodsPolicy
 description: Представляет метод проверки подлинности локальной учетной записи, зарегистрированный для пользователя, настроенного в клиенте Azure Active Directory (Azure AD) B2C.
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: e6b49f389e59b3f314414e2766a5e8fe9e3a9a6c
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: e960e3809122d70ed52369d47f6985e82dd4f70a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996103"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694876"
 ---
 # <a name="b2cauthenticationmethodspolicy-resource-type"></a>Тип ресурса b2cAuthenticationMethodsPolicy
 

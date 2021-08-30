@@ -2,15 +2,15 @@
 title: Получение команды
 description: Получение свойств и связей указанной команды.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37f1c88426e8b4f30f7f67715b0da0c0526d2ef1
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: e088d7cebf93c05ec32b196fd0d69491621b98d8
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507450"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695478"
 ---
 # <a name="get-team"></a>Получение команды
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -106,18 +106,18 @@ Content-length: 401
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,

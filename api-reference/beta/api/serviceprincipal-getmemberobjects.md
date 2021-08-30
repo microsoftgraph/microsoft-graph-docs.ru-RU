@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
 description: Получение списка групп и ролей каталога, в которых участвует субъект-служба.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e379af3615f8cc178a7bef8571e4582dbf4ca0da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d519fdac9378dfd167585ea8b809cf914057c6f5
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051923"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695408"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
@@ -18,7 +18,7 @@ ms.locfileid: "52051923"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка групп и ролей каталога, в которых участвует [servicePrincipal](../resources/serviceprincipal.md).  Это транзитивная проверка.
+Получение списка групп и ролей каталога, в которых участвует [servicePrincipal](../resources/serviceprincipal.md). Это транзитивная проверка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -92,7 +92,7 @@ Content-length: 33
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 >Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

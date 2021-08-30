@@ -1,16 +1,16 @@
 ---
 title: 'user: findRooms'
 description: 'Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. '
-localization_priority: Priority
+ms.localizationpriority: high
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9007795bfb04f8484be61d13a5da17602df80337
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ea94eb6bb0928532b8b32866299ac1fd449e9e8d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052644"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695359"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
@@ -18,9 +18,10 @@ ms.locfileid: "52052644"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объектов [emailAddress](../resources/emailaddress.md), представляющих все помещения для собраний в клиенте пользователя или определенном списке помещений. 
+Получение объектов [emailAddress](../resources/emailaddress.md), представляющих все помещения для собраний в клиенте пользователя или определенном списке помещений.
 
-Клиенты могут упорядочивать помещения для собраний в списках помещений. В этом API каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md). Можно [получить все списки помещений](user-findroomlists.md) в клиенте, получить все помещения в клиенте или получить все помещения в определенном списке помещений. Можно получить до 100 первых помещений в клиенте.
+Клиенты могут упорядочивать помещения для собраний в списках помещений. В этом API каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md).
+Можно [получить все списки помещений](user-findroomlists.md) в клиенте, получить все помещения в клиенте или получить все помещения в определенном списке помещений. Можно получить до 100 первых помещений в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/me/findRooms
 
 
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -162,7 +163,7 @@ Content-type: application/json
   "name": "user_get_rooms_from_specific_list"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
+GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-rooms-from-specific-list-csharp-snippets.md)]
@@ -184,7 +185,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 
 
 ##### <a name="response-2"></a>Отклик 2
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

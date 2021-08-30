@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: getMemberGroups'
-description: Список групп, в которых участвует субъект-служба.  Это транзитивная проверка.
-localization_priority: Priority
+description: Получение списка групп и ролей каталога, в которых участвует субъект-служба. Это транзитивная проверка.
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 44db9218f2435af6f694a660d6d80e5bfa207dfa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 026ad1d597e42c4062536cc1b1a18f3c267b524e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051930"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696869"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 
@@ -92,7 +92,7 @@ Content-length: 33
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 >Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 128396676462bcf2231f566b7a9830d58ddbc2c8
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 4bd53a81d0efb6e36945cd18d395b7662adb4c74
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467697"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697396"
 ---
 # <a name="create-externalgroup"></a>Создание externalGroup
 
@@ -28,7 +28,7 @@ ms.locfileid: "53467697"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionId}/groups
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON объекта [externalGroup.](../resources/externalconnectors-externalgroup.md)
+В теле запроса поставляем представление JSON объекта **externalGroup.**
 
-В следующей таблице показаны свойства, необходимые при создании [externalGroup.](../resources/externalconnectors-externalgroup.md)
+При создании externalGroup можно указать следующие **свойства.**
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | String | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. |
-| displayName | String | Дружеское имя внешней группы. Необязательное.                                                                      |
+| displayName | String | Дружеское имя внешней группы. Необязательный параметр.                                                                      |
 | description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект externalGroup](../resources/externalconnectors-externalgroup.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` **объект externalGroup** в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

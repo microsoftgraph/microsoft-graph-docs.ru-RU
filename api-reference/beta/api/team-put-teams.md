@@ -2,15 +2,15 @@
 title: Создание команды из группы
 description: Создание новой команды из группы.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a4009c5fc6d9a421cfd5ffdae8c7ab4cc31d393
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ea033d0b0fc4b2041f4bbf4910d009c540d4527
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054772"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695275"
 ---
 # <a name="create-team-from-group"></a>Создание команды из группы
 
@@ -25,7 +25,8 @@ ms.locfileid: "52054772"
 
 Чтобы создать команду, в группе должен быть хотя бы один владелец.
 
-Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. В качестве рекомендуемого шаблона следует повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
+Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации.
+В качестве рекомендуемого шаблона следует повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -77,7 +78,7 @@ PUT /groups/{id}/team
 PUT https://graph.microsoft.com/beta/groups/{id}/team
 Content-type: application/json
 
-{  
+{
   "memberSettings": {
     "allowCreateUpdateChannels": true
   },
@@ -115,7 +116,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -135,18 +136,18 @@ Content-length: 401
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,

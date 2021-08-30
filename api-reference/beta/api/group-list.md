@@ -1,16 +1,16 @@
 ---
 title: Список групп
 description: Список всех групп, доступных в организации, в том числе групп Microsoft 365.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 89eee306f2153186d7aaf52f9fc796f2bba24c45
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: e604475c8c722e9a57c960fcdf60db2685c19f1b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430083"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695429"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -18,7 +18,7 @@ ms.locfileid: "53430083"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех групп в организации, в том числе групп Microsoft 365. 
+Список всех групп в организации, в том числе групп Microsoft 365.
 
 Эта операция по умолчанию возвращает для каждой группы только подмножество наиболее часто используемых свойств. Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре `$select` запроса OData. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.
 
@@ -185,7 +185,7 @@ Content-type: application/json
          "renewedDateTime":"2018-11-19T20:29:40Z",
          "resourceBehaviorOptions":[
          ],
-         "resourceProvisioningOptions":[ 
+         "resourceProvisioningOptions":[
          ],
          "securityEnabled":false,
          "theme":null,
@@ -292,7 +292,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -1,25 +1,25 @@
 ---
 title: Использование API Microsoft Bookings в Microsoft Graph
 description: Microsoft Bookings позволяет крупным организациям и владельцам малого бизнеса управлять резервированиями и сведениями клиентов с минимальной настройкой.
-localization_priority: Priority
+ms.localizationpriority: high
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: c21cb95d140fa41711264ec0e6c71b7828b5a709
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 622feed07a5387301be148c926088add62946f25
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118660"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694862"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Microsoft Bookings позволяет крупным организациям и владельцам малого бизнеса управлять резервированиями и сведениями клиентов с минимальной настройкой. Владелец бизнеса можно создать одну или несколько компаний, каждая из которых предлагает набор услуг. Владелец может настроить сотрудников и указать услуги, оказываемые каждым из них. Клиент может зарезервировать встречу для определенной услуги в этой компании в сетевом или мобильном приложении. Приложение Bookings обеспечивает обновление времени встречи для компании, сотрудников и соответствующих клиентов.
 
 На программном уровне объект [bookingBusiness](bookingbusiness.md) в API Bookings включает указанные ниже объекты:
- 
+
 - один или несколько объектов [bookingStaffMember](bookingstaffmember.md);
 - один или несколько объектов [bookingService](bookingservice.md);
 - набор экземпляров [bookingAppointment](bookingappointment.md);
@@ -29,7 +29,7 @@ Microsoft Bookings позволяет крупным организациям и
 
 Выполните указанные ниже действия перед первым резервированием встреч клиента с компанией. Убедитесь, что предоставлены подходящие [маркеры доступа](/graph/auth-overview) для соответствующих операций.
 
-1. Убедитесь, что у компании есть подписка на [Microsoft 365 бизнес премиум](https://products.office.com/ru-RU/business/office-365-business-premium).
+1. Убедитесь, что у компании есть подписка на [Microsoft 365 бизнес премиум](https://products.office.com/en-us/business/office-365-business-premium).
 2. Создайте новый объект **bookingBusiness**, отправив операцию POST в набор объектов. Как минимум, следует указать имя новой компании, отображаемое для клиентов:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
 ```
 
-## <a name="common-use-cases"></a>Основные варианты использования 
+## <a name="common-use-cases"></a>Основные варианты использования
 
 В таблице ниже перечислены распространенные операции для бизнеса в API Bookings.
 

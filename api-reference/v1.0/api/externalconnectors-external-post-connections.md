@@ -5,12 +5,12 @@ author: mecampos
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b07d2d193bb758f4368016e1673634fd441b99f2
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 47603c008f94cdf27227e3ae5e6419283d3e3424
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580118"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697473"
 ---
 # <a name="create-externalconnection"></a>Создание externalConnection
 Пространство имен: microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "53580118"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy|
+|Для приложений| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,14 +47,14 @@ POST /external/connections
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [externalConnection.](../resources/externalconnectors-externalconnection.md)
 
-В следующей таблице показаны свойства, необходимые при создании [externalConnection.](../resources/externalconnectors-externalconnection.md)
+При создании [externalConnection](../resources/externalconnectors-externalconnection.md)можно указать следующие свойства.
 
-|Свойство|Тип|Обязательно (Y/N) |Описание|
-|:---|:---|:---|:---|
-|id|String|Да|ID подключения|
-|name|String|Да|Имя подключения|
-|description|String|Да|Описание подключения|
-|configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|Нет|Конфигурации подключения|
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|ID подключения. Обязательно.|
+|name|String|Имя подключения. Обязательный.|
+|description|String|Описание подключения. Обязательно.|
+|configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|Конфигурации подключения. Необязательный параметр.|
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: e5163a50c6c16e9e2d2c6e315e3a701af6da0f88cdc555dcd6b31494ef4e98f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4a68680c62fd97229190bac921a22246e01b79f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130375"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695296"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Тип ресурса directory (удаленные элементы)
 
@@ -19,6 +19,8 @@ ms.locfileid: "54130375"
 Представляет удаленный элемент в каталоге. После удаления элемент добавляется в "контейнер" удаленных элементов. Удаленные элементы можно восстановить в течение 30 дней. Через 30 дней элементы удаляются без возможности восстановления.
 
 В настоящее время функции удаленных элементов поддерживаются только для [приложений,](application.md) [групповых и](group.md) [пользовательских](user.md) ресурсов.
+
+Наследует от [объекта](entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -30,13 +32,24 @@ ms.locfileid: "54130375"
 |[Окончательное удаление элемента](../api/directory-deleteditems-delete.md) | None | Окончательно удаляет элемент. |
 |[Список удаленных элементов, которые принадлежат пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Списки элементов каталогов, которые принадлежат пользователю. |
 
+
+## <a name="properties"></a>Свойства
+
+| Свойство   | Тип |Описание|
+|:---------------|:--------|:----------|
+|id|String| Уникальный идентификатор объекта; например, `12345678-9abc-def0-1234-56789abcde` . Ключ. Значение null не допускается. Только для чтения. Наследуется от [сущности](entity.md).|
+
+
 ## <a name="relationships"></a>Связи
+
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
+|administrativeUnits|[коллекция administrativeUnit](administrativeunit.md)| Концептуальный контейнер для объектов каталога пользователей и групп.|
 |deletedItems|Коллекция [directoryObject](directoryobject.md)| Недавно удаленные элементы. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

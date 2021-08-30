@@ -2,15 +2,15 @@
 title: Использование REST API Планировщика
 description: API Планировщика в Microsoft Graph можно использовать для создания задач и назначения их пользователям в группе Microsoft 365.
 author: TarkanSevilmis
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 8b2001915b5c63817c6826c0a0b175b0bb70ff82
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 18c8f9a7bb418c849a5ac2255f8931ff3ec84a50
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882775"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695338"
 ---
 # <a name="use-the-planner-rest-api"></a>Использование REST API Планировщика
 
@@ -69,7 +69,7 @@ GET /planner/plans/{plan-id}/tasks
 | Доска со столбцами для хода выполнения задачи (доска задач "Ход выполнения") | Объект [progressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)     |
 | Доска с настраиваемыми столбцами задач (доска задач "Сегменты"):                              | Объект [bucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)         |
 
-Настраиваемые столбцы на доске задач "Сегменты" представлены объектами [bucket](plannerbucket.md), а их порядок — свойством `orderHint` объекта.
+Настраиваемые столбцы на доске задач "Сегменты" представлены объектами [bucket](plannerbucket.md), а их порядок — свойством `orderHint` объекта.
 
 Принципы упорядочивания описаны в статье [Использование указаний по упорядочиванию в Планировщике](planner-order-hint-format.md).
 

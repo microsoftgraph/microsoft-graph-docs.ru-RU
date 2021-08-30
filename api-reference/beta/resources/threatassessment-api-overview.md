@@ -1,16 +1,16 @@
 ---
 title: Использование API оценки угроз Microsoft Graph
 description: Microsoft Graph позволяет приложению получить авторизованный доступ к данным оценки угроз организации.
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: f8a0c4b903e6cf4e582b697ea679e2bb4ed500fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a0704d4e601bfe7c8750c376fdbd4c20b9888f5
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094906"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695611"
 ---
 # <a name="use-the-microsoft-graph-threat-assessment-api"></a>Использование API оценки угроз Microsoft Graph
 
@@ -35,7 +35,7 @@ API оценки угроз Microsoft Graph предоставляет мето�
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Ресурсы оценки угроз и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Дополнительные сведения:
+Ресурсы оценки угроз и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Подробнее:
 
 - Изучите подробнее [методы](../resources/threatassessmentrequest.md#methods), [свойства](../resources/threatassessmentrequest.md#properties) и [отношения](../resources/threatassessmentrequest.md#relationships) ресурсов [запросов на оценку угроз](../resources/threatassessmentrequest.md) и [результатов оценки угроз](../resources/threatAssessmentResult.md).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).

@@ -1,16 +1,16 @@
 ---
 title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств **profilePhoto**).
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 8d8202fdba2dc645dc42d69fb77413b58a35e60d
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 690720e1c2de153a7b56aab30a1212f4b530a468
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790666"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695415"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -83,7 +83,7 @@ GET /groups/{id}/photos/{size}
 
 |**Параметр**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
-|size  |String  | Размер фотографии. Поддерживаемые размеры фотографий в формате HD для Microsoft 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory. |
+|size  |String  | Размер фотографии. Поддерживаемые размеры фотографий в формате HD для Microsoft 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -120,7 +120,7 @@ Content-Type: image/jpg
 ##### <a name="response"></a>Отклик
 Содержит двоичные данные запрошенной фотографии. Код HTTP-отклика: 200.
 
-### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>Пример 2. Получение фотографии 48 x 48 для вошедшего пользователя
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>Пример 2. Получение фотографии 48 x 48 для вошедшего пользователя
 
 ##### <a name="request"></a>Запрос
 <!-- {
@@ -133,7 +133,7 @@ Content-Type: image/jpg
 ```
 
 ##### <a name="response"></a>Отклик
-Содержит двоичные данные запрошенной фотографии 48 x 48. Код HTTP-отклика: 200.
+Содержит двоичные данные запрошенной фотографии размером 48x48. Код HTTP-отклика: 200.
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>Пример 3. Получение метаданных фотографии вошедшего пользователя
 

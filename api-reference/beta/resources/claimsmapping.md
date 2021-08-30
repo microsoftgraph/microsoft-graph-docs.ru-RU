@@ -2,15 +2,15 @@
 title: Тип ресурса claimsMapping
 description: Сопоставление утверждений от маркера с утверждениями, которые распознает и использует Azure Active Directory B2C.
 author: namkedia
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 31ec191527509c015ab201c1464509fce64e549fd5475a377efbff0808973a74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3862cf564ce5df1924972e75dfb22a3ba0756429
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239681"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696213"
 ---
 # <a name="claimsmapping-resource-type"></a>Тип ресурса claimsMapping
 

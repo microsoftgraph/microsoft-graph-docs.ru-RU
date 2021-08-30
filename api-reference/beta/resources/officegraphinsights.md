@@ -2,15 +2,15 @@
 title: Тип ресурса officeGraphInsights
 description: Представляет базовый тип для itemInsights. officeGraphInsights предназначен для обратной совместимости с более ранними версиями API аналитики. Используйте только itemInsights при получении доступа к API аналитики.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: f10d12a0014b38fbe954f957987e585dafa63a2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 308d35e19eaf1ac5454b33b030d2e9c0a7f7a416
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092330"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695919"
 ---
 # <a name="officegraphinsights-resource-type"></a>Тип ресурса officeGraphInsights
 

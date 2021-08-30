@@ -2,15 +2,15 @@
 title: Получение пользователя
 description: Получение свойств и связей объекта user.
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b522637b70989203a7fd33fd865ae9c0bdc9c60a
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 8e853d2c4b43eaf91e38f3add191f9f2663dd50d
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351162"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695492"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости. 
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,16 @@
 ---
 title: Получение b2cAuthenticationMethodsPolicy
 description: Чтение свойств объекта b2cAuthenticationMethodsPolicy.
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b21a24b27a8efd337da59acc7efa03b6b2e36a2
-ms.sourcegitcommit: 92f545d2d9af13ac7aff9932eb265f136d089f79
+ms.openlocfilehash: d652b3064a901bb3e8f3ef8767cc02f891e69bce
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "51996131"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694925"
 ---
 # <a name="get-b2cauthenticationmethodspolicy"></a>Получение b2cAuthenticationMethodsPolicy
 

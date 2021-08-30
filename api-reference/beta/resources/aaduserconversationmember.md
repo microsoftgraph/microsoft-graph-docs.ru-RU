@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса aadUserConversationMember
 description: Представляет пользователя Azure Active Directory в чате или канале.
-localization_priority: Priority
+ms.localizationpriority: high
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c7d65249e6e284efeaf0b34a4ffaf027026932d4
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: cdc2f8e18284abab8633aa5666a24f41169b0cab
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060278"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694642"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
@@ -36,15 +36,15 @@ ms.locfileid: "53060278"
 |[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для канала с типом членства `private`.|
 |[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
 |[Перечисление участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников чата.|
-|[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление участника в чат.| 
+|[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление участника в чат.|
 |[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение участника чата.|
-|[Удаление участника чата](../api/chat-delete-members.md) | Нет | Удаление участника из чата.| 
+|[Удаление участника чата](../api/chat-delete-members.md) | Нет | Удаление участника из чата.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id| Строка | Только для чтения. Уникальный идентификатор пользователя.|
+|id| String | Только для чтения. Уникальный идентификатор пользователя.|
 |displayName| String | Отображаемое имя пользователя. |
 |roles| Набор строк | Роли этого пользователя. |
 |userId| String | GUID пользователя. |

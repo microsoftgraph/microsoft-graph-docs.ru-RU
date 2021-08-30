@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: Добавление владельца'
 description: Добавление владельца для субъекта-службы.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: fcca1742a5cb04f03a45d54b7104d46af35097c0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 92e41f80c2ec7f31e44948229dbcfc60592f3a7a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786126"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696444"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: Добавление владельца
 

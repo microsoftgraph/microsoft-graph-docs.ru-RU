@@ -2,15 +2,15 @@
 title: Тип ресурса schedulingGroup
 description: Логическая группа участников расписания (как правило, по роли).
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c20fd79c9539ed2502960a63cb5b1de154c9693a
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b28baf7b75fc19ef2156bf5edd69ea60d0cbd03c
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721476"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695590"
 ---
 # <a name="schedulinggroup-resource-type"></a>Тип ресурса schedulingGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50721476"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Логическая группа участников [расписания](schedule.md) (как правило, по роли). 
+Логическая группа участников [расписания](schedule.md) (как правило, по роли).
 
 ## <a name="methods"></a>Методы
 
@@ -34,11 +34,11 @@ ms.locfileid: "50721476"
 |Имя          |Тип           |Описание                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            | `string`      |Идентификатор объекта `schedulingGroup`.|
-| displayName   | `string`      | Отображаемое имя объекта `schedulingGroup`. Обязательный. |
-| isActive          |`bool`      | Указывает, можно ли использовать объект `schedulingGroup` при создании новых сущностей или обновлении существующих. Обязательный. |
-| userIds       | `collection(string)`    |  Список идентификаторов пользователей, являющихся участниками группы `schedulingGroup`. Обязательный. |
-| createdDateTime       |`DateTimeOffset`        |Метка времени создания объекта `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
-| lastModifiedDateTime      |`DateTimeOffset`        |Метка времени последнего обновления объекта `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
+| displayName   | `string`      | Отображаемое имя объекта `schedulingGroup`. Обязательное. |
+| isActive          |`bool`      | Указывает, можно ли использовать объект `schedulingGroup` при создании новых сущностей или обновлении существующих. Обязательное. |
+| userIds       | `collection(string)`    |  Список ИД пользователей, являющихся участниками `schedulingGroup`. Обязательное. |
+| createdDateTime       |`DateTimeOffset`        |Время создания группы `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime      |`DateTimeOffset`        |Время последнего обновления группы `schedulingGroup`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md) |Учетная запись, которая последней обновила этот объект `schedulingGroup`.|
 
 ## <a name="json-representation"></a>Представление в формате JSON

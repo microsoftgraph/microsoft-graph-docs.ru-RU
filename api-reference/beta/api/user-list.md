@@ -2,15 +2,15 @@
 title: Перечисление пользователей
 description: Получение списка объектов user.
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 49a15a745a5950fc7d62859ed359c8731eaf793a
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: af0a24ad68f95b923b1c810a245b99d1b646a2af
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667887"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696920"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/users
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -120,7 +120,7 @@ Content-type: application/json
       "mail":"'contoso1@gmail.com",
       "mailNickname":"contoso1_gmail.com#EXT#",
       "otherMails":["contoso1@gmail.com"],
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "proxyAddresses":["SMTP:contoso1@gmail.com"],
       "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -166,7 +166,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -223,7 +223,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -298,7 +298,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -343,7 +343,7 @@ GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateT
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -591,7 +591,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -619,7 +619,7 @@ Content-type: application/json
       "displayName":"contoso1",
       "mail":"'contoso1@gmail.com",
       "mailNickname":"contoso1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "proxyAddresses":["SMTP:contoso1@gmail.com"],
       "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
