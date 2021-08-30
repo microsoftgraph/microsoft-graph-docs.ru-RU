@@ -2,15 +2,15 @@
 title: Удаление участника из группы
 description: Удаление conversationMember из группы.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 97e6b940abd02e409531f9872393583320f88eba
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 4db06bea36d5a4698397b57fc4946357b3357212
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873012"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696430"
 ---
 # <a name="remove-member-from-team"></a>Удаление участника из группы
 Пространство имен: microsoft.graph

@@ -2,15 +2,15 @@
 title: Список приложений
 description: Получение списка приложений в организации.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a2fa946e906336aaf7b7c20560056b9d08b93852c5e01255482d0bfb63d83d27
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2311687881cd8f74e875f9d6c4fde3f6bcf69ed
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57138435"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695086"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -22,7 +22,7 @@ ms.locfileid: "57138435"
 
 > [!NOTE]
 > При вызове этого API с использованием маркеров, выпущенных для личной учетной записи Майкрософт, возвращаются приложения, принадлежащие личной учетной записи Майкрософт. Для личных учетных записей Майкрософт не существует понятия организаций. Чтобы составить список приложений, принадлежащих определенным личным учетным записям Майкрософт, для этого API помимо Application.Read.All или Application.ReadWrite.All требуется разрешение User.Read.
- 
+
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -257,7 +257,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

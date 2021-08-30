@@ -1,16 +1,16 @@
 ---
 title: Перечисление oauth2PermissionGrants
 description: Извлечение списка объектов oAuth2PermissionGrant, представляющих предоставленные делегированные разрешения.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: b2bab33e8e78c7c42e7d47fd6dcf4a889579528b
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 7d8e82d444c77643fd777abc558777965373cb40
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231803"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696353"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

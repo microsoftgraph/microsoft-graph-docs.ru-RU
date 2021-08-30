@@ -2,15 +2,15 @@
 title: Тип ресурса outlookTask
 description: 'Элемент Outlook, который может отслеживать рабочий элемент. '
 author: mashriv
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1cf1958dc4d07c9bf2b322e6a4b576ce4a8191f6
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f4cf54ad1420cd18ac8d7665ba8bdf02f4bc0dc2
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956857"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695268"
 ---
 # <a name="outlooktask-resource-type-deprecated"></a>Тип ресурса outlookTask (нерекомендуемый)
 
@@ -85,8 +85,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md) и [referenceAttachment](referenceattachment.md) для задачи.  Только для чтения. Допускается значение null.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция расширенных свойств с несколькими значениями, определенных для задачи. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенных свойств с одним значением, определенных для задачи. Только для чтения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция расширенных свойств с несколькими значениями, определенных для задачи. Только для чтения. Допускается значение NULL.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенных свойств с одним значением, определенных для задачи. Только для чтения. Допускается значение NULL.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

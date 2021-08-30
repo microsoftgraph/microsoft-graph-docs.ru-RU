@@ -2,15 +2,15 @@
 title: Список участников чата
 description: Получение списка участников чата.
 author: bhartono
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1737d76b09cf0eeda9ee199d07983df4b7fda7d
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 31071020f2be44e64fa976b1ac5c7df51404c6f3
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971309"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695625"
 ---
 # <a name="list-members-of-a-chat"></a>Список участников чата
 

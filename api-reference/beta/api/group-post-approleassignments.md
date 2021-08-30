@@ -1,16 +1,16 @@
 ---
 title: Предоставление appRoleAssignment группе
 description: Предоставление назначения роли приложения группе.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 89fbcd89f637c98bed4355712fc9acb0d8fb4749
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ebcc3a4b1c7a956e2a34e610823c4410a277fde7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041297"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696283"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Предоставление appRoleAssignment группе
 
@@ -107,7 +107,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

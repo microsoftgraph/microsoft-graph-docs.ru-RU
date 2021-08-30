@@ -2,15 +2,15 @@
 title: Перечисление объектов joinedTeams
 description: Получение команд в Microsoft Teams, непосредственным участником которых является пользователь.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0f340b92dc0da0cdceedb3cd5b6a15019e0ab386
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 1723c7652c8027da039aec4a13f8f6c46c8629c4
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580928"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694656"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -19,7 +19,7 @@ ms.locfileid: "53580928"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение [команд](../resources/team.md) в Microsoft Teams, непосредственным участником которых является пользователь.
- 
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

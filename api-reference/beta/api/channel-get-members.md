@@ -2,15 +2,15 @@
 title: Получение участника канала
 description: Получение участника канала.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1e1b1e8e7ee0053663c24a68eacc72704b08e2e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 10a5af8099bcc899ecdde53f473a0602d99f1ef1
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059951"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695898"
 ---
 # <a name="get-member-of-channel"></a>Получение участника канала
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/
 
 Ниже приведен пример отклика.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

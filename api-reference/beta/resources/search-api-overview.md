@@ -1,16 +1,16 @@
 ---
 title: Использование API Поиска (Майкрософт) для запросов данных
 description: С помощью API поиска приложения могут искать данные Microsoft 365 в контексте пользователя, прошедшего проверку подлинности.
-localization_priority: Priority
+ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c53cc0df5c9aefb6a42b5a28d6341f37b0f3d287
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5f7453dd5c08f282baa7667ad5793c9223e586d0
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467101"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695450"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -71,7 +71,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 При поиске объекта **event** или **message** учитывайте указанные ниже ограничения.
 
 - Значение **from** должно начинаться с нуля для запроса первой страницы. В противном случае запрос возвращает ошибку HTTP 400 `Bad request`.
-- Максимальное количество результатов на странице (**size**) составляет 25 для **message** и **event**.. 
+- Максимальное количество результатов на странице (**size**) составляет 25 для **message** и **event**..
 
 Для SharePoint и OneDrive ограничений нет. Рекомендуемый размер страницы — 200. Чем больше размер страницы, тем, как правило, больше задержка.
 
@@ -148,7 +148,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 ## <a name="request-spelling-correction"></a>Исправление орфографии в запросе
 
-Исправление орфографии — популярный способ обработки несоответствий между опечатками в запросе пользователя и правильными словами в содержимом. При обнаружении опечаток в исходном пользовательском запросе вы можете получить результат поиска для исходного запроса пользователя или исправленной версии запроса. Вы также можете получить сведения об исправлении опечаток в свойстве **queryAlterationResponse** объекта [searchresponse](searchresponse.md). 
+Исправление орфографии — популярный способ обработки несоответствий между опечатками в запросе пользователя и правильными словами в содержимом. При обнаружении опечаток в исходном пользовательском запросе вы можете получить результат поиска для исходного запроса пользователя или исправленной версии запроса. Вы также можете получить сведения об исправлении опечаток в свойстве **queryAlterationResponse** объекта [searchresponse](searchresponse.md).
 
 В теле метода [запроса](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) укажите **queryAlterationOptions** для применения с целью исправления орфографии в запросе. Описание **queryAlterationOptions** определяется в [searchAlterationOptions](./searchalterationoptions.md).
 
@@ -160,7 +160,7 @@ API поиска позволяет отображать результаты п
 
 Чтобы получить шаблон результатов в [searchresponse](searchresponse.md), необходимо установить свойство **true** для **enableResultTemplate**, которое определяется в [resultTemplateOptions](./resulttemplateoption.md) и в [searchRequest](./searchrequest.md). Ответ включает **resultTemplateId** для каждого [ввода при поиске](./searchhit.md), который сопоставляется с одним из макетов отображения, включенных в словарь **resultTemplates**, который включается в ответ.
 
-См. примеры в статье [Использование макета отображения при поиске](/graph/search-concept-display-layout). 
+См. примеры в статье [Использование макета отображения при поиске](/graph/search-concept-display-layout).
 
 ## <a name="error-handling"></a>Обработка ошибок
 
@@ -175,7 +175,7 @@ API поиска возвращает отклики с ошибками, опи
 - Метод **query** определяется, чтобы разрешить передачу коллекции из одного или нескольких экземпляров **searchRequest**. Однако в настоящее время служба может обрабатывать только по одному экземпляру [searchRequest](./searchrequest.md) за раз.
 
 - Ресурс [searchRequest](./searchrequest.md) поддерживает одновременную передачу объектов нескольких типов. Однако в настоящее время поддерживается только следующее сочетание для типов объектов SharePoint и OneDrive: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Любые сочетания, включающие **message**, **event**, **person**, типы SharePoint и OneDrive или **externalItem**, пока не поддерживаются.  
+Любые сочетания, включающие **message**, **event**, **person**, типы SharePoint и OneDrive или **externalItem**, пока не поддерживаются.
 
 - Свойство **contentSource**, определяющее используемое соединение, применимо только при присвоении свойству **entityType** значения `externalItem`.
 
@@ -209,7 +209,7 @@ API поиска возвращает отклики с ошибками, опи
 - Подробнее о некоторых основных вариантах использования:
   - [Поиск сообщений Outlook](/graph/search-concept-messages)
   - [Поиск событий календаря](/graph/search-concept-events)
-  - [Поиск человека](/graph/search-concept-person)  
+  - [Поиск человека](/graph/search-concept-person)
   - [Поиск содержимого в OneDrive и SharePoint](/graph/search-concept-files)
   - [Поиск пользовательских типов, импортированных с помощью соединителей](/graph/search-concept-custom-types)
   - [Сортировка результатов поиска](/graph/search-concept-sort)

@@ -2,15 +2,15 @@
 title: Тип ресурса event
 description: Событие в календаре.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c98a99efcb4f00165376943cac7ad9923c70c092
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 372de4192c0cf4687fa37a128bc68d9eeb77711c
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721882"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696906"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -75,7 +75,7 @@ ms.locfileid: "50721882"
   "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,  
+  "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
@@ -117,29 +117,29 @@ ms.locfileid: "50721882"
 |cancelledOccurrences|Коллекция String|Содержит значения свойства **occurrenceId** отмененных экземпляров в повторяющемся ряду, если событие является основным в этом ряду. Отмененные экземпляры в повторяющемся ряду называются cancelledOccurences.<br><br>Возвращается только для $select в операции [Get](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |categories|Коллекция String|Категории, связанные с событием. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события. По умолчанию время завершения указано в формате UTC.|
 |exceptionOccurrences|Коллекция String|Содержит значения свойства **id** экземпляров событий, которые являются исключениями в повторяющемся ряду.<br>Исключения могут отличаться от других вхождений в повторяющемся ряду, таких как тема, время начала или окончания и участники. Исключения не включают отмененные вхождения.<br><br>Возвращается только для $select и $expand в операции [GET](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |hideAttendees|Boolean|Если присвоено значение `true`, каждый участник видит только себя в приглашении на собрание и списке собрания **Отслеживание**. Значение по умолчанию: false.|
 |id|String| Уникальный идентификатор события. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
 |importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
-|isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если значение равно true, то независимо от того, один или несколько дней длится событие, время его начала и окончания должно быть установлено на полночь в одном и том же часовом поясе.|
+|isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если присвоено значение true, независимо от длительности события (один или несколько дней) время его начала и окончания должно быть установлено на полночь в одном часовом поясе.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
 |isDraft|Логический|Присвоено значение true, если пользователь обновил собрание в Outlook, но не отправил обновления участникам. Присвоено значение false, если все изменения отправлены или событие является встречей без участников.|
 |isOnlineMeeting|Логический| `True`, если событие содержит информацию о собрании по сети (т. е. **onlineMeeting** указывает на ресурс [onlineMeetingInfo](onlinemeetinginfo.md)), в противном случае — `false`. Значение по умолчанию — `false` (**onlineMeeting** — `null`). Необязательное свойство. <br> После настройки **isOnlineMeeting** на `true` Microsoft Graph инициализирует **onlineMeeting**. Outlook будет игнорировать любые последующие изменения **isOnlineMeeting**, и собрание останется доступным по сети. |
 |isOrganizer|Boolean|Присвоено значение true, если владелец календаря (указанный свойством **owner** объекта [calendar](calendar.md)) является организатором события (определятся свойством **organizer** объекта **event**). Это также применимо, если делегат организовал событие от имени владельца.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
-|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |location|[Location](location.md)|Место проведения события.|
 |locations|Коллекция [Location](location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
 |occurrenceId|String|Идентификатор вхождения в повторяющемся ряду событий. Значение NULL, если событие не является частью повторяющегося ряда.<br><br>Формат значения свойства — OID.{seriesMasterId-value}.{occurrence-start-date}. Часовым поясом для {occurrence-start-date} является свойство recurrenceTimeZone, определенное для соответствующего [recurrenceRange](recurrencerange.md).<br><br>Это свойство может определять вхождение в повторяющемся ряду, в том числе измененное или отмененное. Это свойство можно использовать для выполнения всех операций, которые поддерживаются вхождениями в повторяющемся ряду.|
-|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Сведения, необходимые участнику, чтобы присоединиться к собранию по сети. Значение по умолчанию — null. Только для чтения. <br>После настройки свойств **isOnlineMeeting** и **onlineMeetingProvider** для разрешения собрания по сети Microsoft Graph инициализирует **onlineMeeting**. После завершения настройки собрание останется доступным по сети, и вы не сможете изменить свойства **isOnlineMeeting**, **onlineMeetingProvider** и **onlneMeeting**.|
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Сведения, необходимые участнику, чтобы присоединиться к собранию по сети. Значение по умолчанию — NULL. Только для чтения. <br>После настройки свойств **isOnlineMeeting** и **onlineMeetingProvider** для разрешения собрания по сети Microsoft Graph инициализирует **onlineMeeting**. После завершения настройки собрание останется доступным по сети, и вы не сможете изменить свойства **isOnlineMeeting**, **onlineMeetingProvider** и **onlneMeeting**.|
 |onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. По умолчанию **onlineMeetingProvider** — `unknown`. Возможные значения: `unknown`, `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательное свойство. <br> После настройки **onlineMeetingProvider** Microsoft Graph инициализирует **onlineMeeting**. После этого вы не сможете изменить **onlineMeetingProvider** и собрание останется доступным по сети. |
-|onlineMeetingUrl|String|URL-адрес для собрания по сети. Свойство будет задано только в том случае, если организатор определяет в Outlook, что событие является собранием по сети, например в Skype. Только для чтения.<br>Чтобы получить доступ к URL-адресу и присоединиться к собранию по сети, воспользуйтесь **joinUrl**, который предоставляется через свойство **event**, **onlineMeeting**. В дальнейшем использовать свойство **onlineMeetingUrl** не рекомендуется. |
+|onlineMeetingUrl|String|URL-адрес собрания. Свойство будет задано только в том случае, если организатор определяет в Outlook, что событие является собранием по сети, например в Skype. Только для чтения.<br>Чтобы получить доступ к URL-адресу и присоединиться к собранию по сети, воспользуйтесь **joinUrl**, который предоставляется через свойство **event**, **onlineMeeting**. В дальнейшем использовать свойство **onlineMeetingUrl** не рекомендуется. |
 |organizer|[Recipient](recipient.md)|Организатор события.|
-|originalEndTimeZone|String|Часовой пояс завершения, указанный при создании события. Значение `tzone://Microsoft/Custom` указывает, что традиционный часовой пояс был задан в классическом приложении Outlook.|
-|originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|originalEndTimeZone|String|Часовой пояс завершения события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
+|originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |originalStartTimeZone|String|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Расписание повторения события.|
 |reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
@@ -162,7 +162,7 @@ ms.locfileid: "50721882"
 >
 > * Для учетных записей Майкрософт: `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> Чтобы открыть событие в текущей версии Outlook в Интернете, преобразуйте URL-адрес в один из следующих форматов и используйте этот URL-адрес для открытия события: 
+> Чтобы открыть событие в текущей версии Outlook в Интернете, преобразуйте URL-адрес в один из следующих форматов и используйте этот URL-адрес для открытия события:
 >
 > * Для рабочих или учебных учетных записей: `https://outlook.office365.com/calendar/item/{event-id}`
 >

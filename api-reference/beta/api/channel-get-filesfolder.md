@@ -2,15 +2,15 @@
 title: Получение filesFolder
 description: Получение пути навигации filesFolder канала.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8515b6ebb853c65ba44ce18c401179e115605689
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: e2d9c90a5acc5e852f269eb450f5380e402705f8
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971288"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695877"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "52971288"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получайте метаданные для расположения, где хранятся файлы [канала](../resources/channel.md). 
+Получайте метаданные для расположения, где хранятся файлы [канала](../resources/channel.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

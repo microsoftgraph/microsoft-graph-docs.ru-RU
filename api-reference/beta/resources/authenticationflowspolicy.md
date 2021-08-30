@@ -2,15 +2,15 @@
 title: Тип ресурса authenticationFlowsPolicy
 description: 'Представляет конфигурацию политики для интерфейса самостоятельной регистрации на уровне клиента, которая позволяет внешним пользователям запрашивать утверждение регистрации. '
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cc7f6261e4db4b908d6ab3e0ab3c41504ce8462b
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 195f317785d9a0a3ee85c6bb58872d4c47cc8483
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232111"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696332"
 ---
 # <a name="authenticationflowspolicy-resource-type"></a>Тип ресурса authenticationFlowsPolicy
 

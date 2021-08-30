@@ -1,16 +1,16 @@
 ---
 title: Индексирование данных с помощью API Поиска (Майкрософт)
 description: Используйте Microsoft Graph для индексирования пользовательских элементов в службе поиска Microsoft.
-localization_priority: Priority
+ms.localizationpriority: high
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 37e98b3cebd75f08a4193c312994af7c697a0bab
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 4189913b9923601a12edb658da3b5dcda3a80fbc
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467108"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696899"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Индексирование данных с помощью API Поиска (Майкрософт)
 
@@ -54,7 +54,7 @@ ms.locfileid: "53467108"
 
 - См. статью [Обзор API Поиска (Майкрософт)](/graph/search-concept-overview).
 - Разверните методы, свойства и отношения ресурсов [externalConnection](externalconnectors-externalconnection.md), [схемы](externalconnectors-schema.md) и [externalItem](externalconnectors-externalitem.md).
-- Ознакомьтесь с [коллекцией Postman Microsoft Graph](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([подробнее](https://developer.microsoft.com/ru-RU/graph/blogs/postman-collections))
+- Ознакомьтесь с [коллекцией Postman Microsoft Graph](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([подробнее](https://developer.microsoft.com/en-us/graph/blogs/postman-collections))
 - Ознакомьтесь с [примером соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) на сайте GitHub.
 
 

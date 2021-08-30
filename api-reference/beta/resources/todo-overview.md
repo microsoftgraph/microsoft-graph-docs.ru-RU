@@ -2,15 +2,15 @@
 title: Использование API Microsoft To Do
 description: API Microsoft Graph можно использовать для создания приложения, подключающегося к задачам в Microsoft To Do.
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 76dc89caeb0a39d9dd0f40c1bcf046ffe9fe3f9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc1e872fa5a75775c436a02afa5f8ee28e68040f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973533"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696381"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Использование API Microsoft To Do
 
@@ -23,7 +23,7 @@ ms.locfileid: "47973533"
 * Управляйте задачами To Do в пользовательском бизнес-приложении.
 
 В настоящее время этот API поддерживает только разрешения, делегированные вошедшим пользователем.
- 
+
 Прежде чем приступить к работе с API To Do, ознакомьтесь с ресурсами и их связью между собой.
 
 ![Объекты API To Do](/graph/images/todo-api-entities.png)
@@ -52,7 +52,7 @@ GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedRe
 
 ## <a name="track-changes-using-delta-query"></a>Отслеживание изменений с помощью разностного запроса
 
-Для повышения производительности вы можете использовать локальный кэш объектов и периодически синхронизировать локальный кэш с сервером, используя [разностный запрос](/graph/delta-query-overview). 
+Для повышения производительности вы можете использовать локальный кэш объектов и периодически синхронизировать локальный кэш с сервером, используя [разностный запрос](/graph/delta-query-overview).
 
 Разностный запрос поддерживают следующие ресурсы API To Do:
 * Коллекция [todoTask](./todotask.md) в списке задач

@@ -2,15 +2,15 @@
 title: Вывод группы
 description: Получение свойств и связей объекта group.
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 344f1ed4ed71fe038dd66403c7b8732829fb8c0d
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: e6e3154078356e57a2fd644668f786e17a300133
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681689"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695485"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "52681689"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [group](../resources/group.md). 
+Получение свойств и связей объекта [group](../resources/group.md).
 
 Это действие по умолчанию возвращает только часть всех доступных свойств, как указано в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, укажите их в параметре запроса OData `$select`. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`. Так как ресурс **group** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` вы можете также получить настраиваемые свойства и данные расширения в экземпляре **group**.
 
@@ -60,7 +60,7 @@ GET /groups/{id}
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса GET. 
+Ниже приведен пример запроса GET.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Он содержит только свойства по умолчанию.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В реальном вызове возвращаются все свойства по умолчанию.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове возвращаются все свойства, используемые по умолчанию.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -145,7 +145,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса GET. 
+Ниже приведен пример запроса GET.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

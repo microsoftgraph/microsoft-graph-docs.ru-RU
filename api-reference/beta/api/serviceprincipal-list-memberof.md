@@ -1,16 +1,16 @@
 ---
 title: Перечисление servicePrincipal memberOf
 description: Получение групп и ролей каталога, непосредственным участником которых является этот субъект-служба. Эта операция не является транзитивной.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d9d2b8b6292da0344d17efd437e77d637554894c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2caac4cf5c4c9fce8384cf0e1d797e83e30bba7a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036585"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695947"
 ---
 # <a name="list-serviceprincipal-memberof"></a>Перечисление servicePrincipal memberOf
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -199,7 +199,7 @@ Content-type: text/plain
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video" 
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=”displayName:Video"
 ConsistencyLevel: eventual
 ```
 

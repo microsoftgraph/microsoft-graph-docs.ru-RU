@@ -1,16 +1,16 @@
 ---
 title: Перечисление servicePrincipal transitive memberOf
 description: Список групп и ролей каталога, участником которых является этот субъект-служба.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 4964718856420220e3a57a62fb52aafe3cdc2aa2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8597f020c4977ed293213fd58ca59f705f6be07c
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049018"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695401"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Перечисление servicePrincipal transitive memberOf
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

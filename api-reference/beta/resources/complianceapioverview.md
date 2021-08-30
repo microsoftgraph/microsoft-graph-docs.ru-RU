@@ -1,16 +1,16 @@
 ---
 title: Использование API соответствия требованиям Microsoft Graph
 description: API соответствия требованиям Microsoft Graph обеспечивает единый интерфейс и схему интеграции с решениями соответствия требованиям от корпорации Майкрософт и партнеров экосистемы. Это помогает клиентам упростить операции по обеспечению соответствия требованиям для улучшения управления и отслеживания данных, защиты информации, минимизации внутренних рисков, проведения юридических и внутренних расследований, а также соблюдения юридических или нормативных стандартов.
-localization_priority: Priority
+ms.localizationpriority: high
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 0ce320e924904c3d895aa4da24fc0940289ed417
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3d568ce92ffe960b2bf3d8993ec41071396dd470
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440523"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58694747"
 ---
 # <a name="use-the-microsoft-graph-compliance-api"></a>Использование API соответствия требованиям Microsoft Graph
 

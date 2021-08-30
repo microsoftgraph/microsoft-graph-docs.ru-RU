@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса calendar
 description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для пользователя или стандартный календарь для группы Microsoft 365.
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5f49ec29fa6fadd7c8c39be2e3319f3822067f43
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 9c2067a358ea1641b48b81fa4b792654a31072c5
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507681"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696227"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -50,8 +50,8 @@ ms.locfileid: "51507681"
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|Коллекция onlineMeetingProviderType| Представляет поставщиков служб собраний по сети, которых можно использовать для создания собраний в этом календаре. Возможные значения: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |calendarGroupId|Строка|Объект [calendarGroup](calendargroup.md) для создания календаря. Если пользователь не указал группу для календаря явным образом, это свойство будет иметь значение NULL.|
-|canEdit |Boolean |Значение `true`, если пользователь может вносить изменения в календарь, в противном случае — значение `false`. Это свойство имеет значение `true` для пользователя, создавшего календарь. Это свойство также имеет значение `true` для пользователей, которые совместно используют календарь и имеют доступ на запись через клиент Outlook или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|
-|canShare |Boolean |Значение `true`, если у пользователя есть разрешение на совместное использование календаря, в противном случае — значение `false`. Только пользователь, создавший календарь, может предоставлять общий доступ к нему. Только для чтения.|
+|canEdit |Boolean |Значение `true`, если пользователь может вносить изменения в календарь, в противном случае — значение `false`. Это свойство имеет значение `true` для пользователя, создавшего календарь. Это свойство также имеет значение `true` для пользователей, которые совместно используют календарь и имеют доступ на запись через клиент Outlook или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|
+|canShare |Boolean |Значение `true`, если у пользователя есть разрешение на совместное использование календаря, в противном случае — значение `false`. Только пользователь, создавший календарь, может предоставлять общий доступ к нему. Только для чтения.|
 |canViewPrivateItems |Boolean |Значение `true`, если пользователь может читать элементы календаря, которые были помечены как частные, в противном случае — значение `false`. Это свойство задается через клиент Outlook или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|
 |changeKey|String|Указывает версию объекта calendar. При каждом изменении календаря также меняется значение changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
 |color|calendarColor|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Возможные значения: `auto`, `lightBlue`, `lightGreen`, `lightOrange`, `lightGray`, `lightYellow`, `lightTeal`, `lightPink`, `lightBrown`, `lightRed`, `maxColor`. |

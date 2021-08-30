@@ -2,15 +2,15 @@
 title: Список участников канала
 description: Список участников канала.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e42992cfc8c0c1368e822860cf42aac7987a881b
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 52a42cbe0e1de58eef619c6d555b9180c7d7e761
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059946"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695506"
 ---
 # <a name="list-members-of-channel"></a>Список участников канала
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 Ниже приведен пример отклика.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

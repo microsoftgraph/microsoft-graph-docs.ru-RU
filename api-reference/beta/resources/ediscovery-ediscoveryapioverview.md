@@ -1,16 +1,16 @@
 ---
 title: Использование API обнаружения электронных данных Microsoft Graph
 description: API обнаружения электронных данных Microsoft 365 предоставляют организациям функции для автоматизации повторяющихся задач и интеграции с существующими средствами обнаружения электронных данных для создания повторяющихся рабочих процессов, которые могут требоваться отраслевыми нормами. Вы можете использовать API обнаружения электронных данных для юридических целей.
-localization_priority: Priority
+ms.localizationpriority: high
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: conceptualPageType
-ms.openlocfilehash: d11f1b8f5a36fe4108fa47801f8031fb10dcac9f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 239704caecba229e66959276effa77091965efa1
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447375"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696402"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>Использование API обнаружения электронных данных Microsoft Graph
 

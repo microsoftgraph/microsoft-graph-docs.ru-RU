@@ -1,35 +1,92 @@
 ---
 author: daspek
-ms.date: 09/12/2017
-title: ContentType
-localization_priority: Normal
 description: Ресурс contentType представляет тип контента в SharePoint.
-ms.prod: ''
+title: тип ресурса contentType
+localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 1b307fb0b11b0608c15c46b618775dcef431815c4302a092e7e89f9cb7cb5942
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.prod: sites-and-lists
+ms.openlocfilehash: 0db41f1a3a3c8a413afcf12c7176109a1b08c9fe
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229292"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695100"
 ---
-# <a name="contenttype-resource-type"></a>Тип ресурса contentType
+# <a name="contenttype-resource-type"></a>тип ресурса contentType
 
 Пространство имен: microsoft.graph
 
-Ресурс **contentType** представляет _тип контента_ в SharePoint.
+
+Представляет тип контента в SharePoint.
 Типы контента позволяют определить набор столбцов, которые должны присутствовать на каждом [**listItem**][listItem] в [**списке.**][list]
 
-[list]: list.md
-[listItem]: listitem.md
+## <a name="methods"></a>Методы
+|Метод|Тип возвращаемых данных|Описание|
+|:---|:---|:---|
+|[Список contentTypes на сайте](../api/site-list-contenttypes.md)|[коллекция contentType](../resources/contenttype.md)|Получите список объектов [contentType](../resources/contenttype.md) и их свойств на [сайте.](../resources/site.md)|
+|[Список contentTypes в списке](../api/list-list-contenttypes.md)|[коллекция contentType](../resources/contenttype.md)|Получите список объектов [contentType](../resources/contenttype.md) и их свойств в [списке.](../resources/list.md)|
+|[Создание contentType для сайта](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|Создание нового [объекта contentType](../resources/contenttype.md) на [сайте.](../resources/site.md)|
+|[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Ознакомьтесь с свойствами и отношениями объекта [contentType.](../resources/contenttype.md)|
+|[Обновление contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Обновление свойств объекта [contentType.](../resources/contenttype.md)|
+|[Удаление contentType](../api/contenttype-delete.md)|Нет|Удаляет объект [contentType.](../resources/contenttype.md)|
+|[isPublished](../api/contenttype-ispublished.md)|Логический| Проверка [публикации contentType.](../resources/contenttype.md)|
+|[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Публикация [контентаType](../resources/contenttype.md).|
+|[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
+|[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Добавьте копию [contentType](../resources/contenttype.md) с [сайта в](../resources/site.md) [список](../resources/list.md).|
+|[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Связывает [контентType](../resources/contenttype.md) со списком сайтов-концентраторов.|
+|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Скопируйте файл в расположение контента по умолчанию в [contentType.](../resources/contenttype.md)|
+|[Список столбцов](../api/contenttype-list-columns.md)|[коллекция columnDefinition](../resources/columnDefinition.md)|Получите коллекцию столбцов, представленных в [качестве ресурсов columnDefinition,](../resources/columnDefinition.md) в **contentType.**|
+|[Создание столбца](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Добавление столбца к **типу контента** на сайте или в списке.|
 
-## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже показано представление ресурса **contentType** в формате JSON.
-<!-- {
-  "blockType": "resource",
- "baseType": "microsoft.graph.entity",
- "@odata.type": "microsoft.graph.contentType" } -->
+## <a name="properties"></a>Свойства
+
+| Имя свойства     | Тип                 | Описание|
+|:------------------|:---------------------|:----------------------------------|
+| **description**   | строка               | Текст с описанием элемента.|
+| **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.|
+| **hidden**        | Boolean              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.|
+| **id**            | string               | Уникальный идентификатор типа контента.|
+| **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.|
+| **name**          | string               | Имя типа контента.|
+| **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.|
+| **parentId**      | string               | Уникальный идентификатор типа контента.|
+| **readOnly**      | Логический              | Если , тип контента не может быть изменен, если это `true` значение не `false` установлено.|
+| **sealed**        | Логический              | Если тип контента не может быть изменен пользователями или с помощью `true` отжимаемой операции. Только администраторы семейств веб-сайтов могут блокировать или разблокировать типы контента.|
+| **isBuiltIn**            | Логический| Указывает, является ли тип контента встроенным типом контента. |
+| **documentSet**       | [documentSet][]      | [Метаданные набора](/sharepoint/governance/document-set-planning#about-document-sets) документов.|
+| **documentTemplate**  | [documentSetContent][] | Метаданные шаблона документов. Чтобы убедиться, что документы имеют согласованное содержимое на сайте и его подмышках, можно связать шаблон Word, Excel или PowerPoint с типом контента сайта.|
+| **associatedHubsUrls**       | Коллекция (строка) | Список канонических URL-адресов для сайтов-концентраторов, с которыми связан этот тип контента. Это будет содержать все сайты-концентраторы, на которых этот тип контента находится в очереди для принудительного или уже принудительного. Применение типа контента означает, что тип контента будет применяться к спискам на принудительном сайте.|
+| **propagateChanges**   | Логический              | Если какие-либо изменения, внесенные в тип контента, будут нажаты на унаследованные типы контента и списки, которые `true` реализуют тип контента.|
+
+
+
+## <a name="relationships"></a>Связи
+
+| Имя свойства   | Тип                      | Описание|
+|:----------------|:--------------------------|:-------------------------------|
+| **база**   | [contentType][]  | Родительский contentType, из которого получен этот тип контента. |
+| **columnLinks** | Коллекция [columnLink][] | Коллекция столбцов, необходимых для этого типа контента.|
+| **baseTypes**   | Collection([contentType][])     | Коллекция типов контента, которые являются предками этого типа контента.|
+| **columnPositions**       | Collection([columnDefinition][]) | Сведения о порядке столбца в типе контента.|
+| **columns**     | Collection([columnDefinition][])  | Коллекция определений столбцов для этого contentType.|
+
+Дополнительные сведения см. в статье [Общие сведения о типах контента и их публикации][contentTypeIntro].
+
+[columnLink]: columnlink.md
+[contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
+[itemReference]: itemreference.md
+[contentTypeOrder]: contenttypeorder.md
+[columnDefinition]: columnDefinition.md
+[contentType]: contentType.md
+[documentSet]: documentSet.md
+[documentSetContent]: documentSetContent.md
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже приводится представление JSON ресурса **contentType.**
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
 ```json
 {
@@ -43,44 +100,30 @@ ms.locfileid: "54229292"
   "parentId": "string",
   "readOnly": false,
   "sealed": false,
-
-  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }]
+  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }],
+  "base": { "@type": "microsoft.graph.contentType" },
+  "columnPositions" : [{ "@type": "microsoft.graph.columnDefinition" }],
+  "isBuiltIn" : false,
+  "documentSet" : { "@type": "microsoft.graph.documentSet" },
+  "documentTemplate" : { "@type": "microsoft.graph.documentSetContent" },
+  "associatedHubsUrls" : ["string"],
+  "propagateChanges" : false,
+  "baseTypes" : [{ "@type": "microsoft.graph.contentType" }],
+  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }]
 }
 ```
 
-## <a name="properties"></a>Свойства
-
-| Имя свойства     | Тип                 | Описание
-|:------------------|:---------------------|:----------------------------------
-| **description**   | строка               | Текст с описанием элемента.
-| **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
-| **hidden**        | boolean              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
-| **id**            | строка               | Уникальный идентификатор типа контента.
-| **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.
-| **name**          | строка               | Имя типа контента.
-| **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.
-| **parentId**      | string               | Уникальный идентификатор типа контента.
-| **readOnly**      | boolean              | Если это свойство имеет значение `true`, вам не удастся изменить тип контента. Чтобы изменить тип контента, потребуется сначала присвоить этому свойству значение `false`.
-| **sealed**        | boolean              | Если это свойство имеет значение `true`, пользователям не удастся изменить тип контента. Кроме того, вам не удастся изменить тип контента с помощью операции сдвига вниз. Только администраторы семейств веб-сайтов могут блокировать или разблокировать типы контента.
-
-## <a name="relationships"></a>Связи
-
-| Имя свойства   | Тип                      | Описание
-|:----------------|:--------------------------|:-------------------------------
-| **columnLinks** | Коллекция [columnLink][] | Коллекция столбцов, необходимых для этого типа контента
-
-Дополнительные сведения см. в статье [Общие сведения о типах контента и их публикации][contentTypeIntro].
-
-[columnLink]: columnlink.md
-[contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
-[itemReference]: itemreference.md
-[contentTypeOrder]: contenttypeorder.md
-
-<!-- {
+[list]: list.md
+[listItem]: listitem.md
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath&quot;: &quot;Resources/ContentType"
-} -->
+  "tocPath": "Resources/ContentType",
+  "suppressions": []
+}
+-->
+
 

@@ -2,15 +2,15 @@
 title: Тип ресурса itemInsights
 description: Связи между пользователем и элементами, такими как документы в OneDrive для бизнеса, вычисляемые с использованием передовых методов анализа и машинного обучения. К примеру, вы можете определить документы OneDrive для бизнеса, пользующиеся популярностью у пользователей.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 36b0d8957beae9f8748c0e388a0aca2134731f73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 602cb58130f801e129bc334163cd7dabcc0d0b1b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089345"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696983"
 ---
 # <a name="iteminsights-resource-type"></a>Тип ресурса itemInsights
 

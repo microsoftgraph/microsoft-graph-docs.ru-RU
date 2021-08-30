@@ -1,16 +1,16 @@
 ---
 title: Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 description: Microsoft Graph обеспечивает доступ к полезным данным о пользователях, их профиле, документах, с которыми они взаимодействуют, их рабочих привычках, а также поддерживает социальные жесты в социальном контексте пользователя.
-localization_priority: Priority
+ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 11015af6ad1d75b6668052933d3dbbd5289c1731
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17b0c03659e53685ff0644100f31dc7bd20df4d4
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033526"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695254"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
@@ -30,9 +30,9 @@ Microsoft Graph обеспечивает доступ к полезным дан
 
 Функция: профиль (предварительная версия)
 
-Люди, которые хотят получить контекстные сведения о других сотрудниках организации, обычно просматривают профиль или карточку соответствующего пользователя. 
+Люди, которые хотят получить контекстные сведения о других сотрудниках организации, обычно просматривают профиль или карточку соответствующего пользователя.
 
-Ресурс [profile](../resources/profile.md) является богатым источником информации о пользователях в клиенте, который предоставляет удобный механизм хранения и получения информации о людях. 
+Ресурс [profile](../resources/profile.md) является богатым источником информации о пользователях в клиенте, который предоставляет удобный механизм хранения и получения информации о людях.
 
 ## <a name="personalize-people-experiences-within-your-organization"></a>Персонализация пользовательского интерфейса в организации
 

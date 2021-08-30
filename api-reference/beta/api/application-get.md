@@ -2,15 +2,15 @@
 title: Получение объекта application
 description: Получение свойств и связей объекта application.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1fbfebb6a889ffae5ae6052cc1b774d335f9fb50
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 1c4b5d524074d687672f3ba7df651e236318d603
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350879"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695093"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -35,7 +35,7 @@ ms.locfileid: "53350879"
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметр запроса OData](/graph/query-parameters) `$select` для получения конкретных свойств приложения. 
+Этот метод поддерживает [параметр запроса OData](/graph/query-parameters) `$select` для получения конкретных свойств приложения.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
 |:---------------|:---------------------------|
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/applications/{id}
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

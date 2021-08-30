@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса identityProvider
 description: Представляет поставщиков удостоверений в клиенте Azure Active Directory и клиенте Azure AD B2C.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: 95f452483e4ff1503208c9b4bbd67ceb6129df73
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: a04c5fcf709da10a1b7b1c37d4d81097e656bc4a
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "53580781"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695310"
 ---
 # <a name="identityprovider-resource-type-deprecated"></a>Тип ресурса identityProvider (нерекомендуемый)
 Пространство имен: microsoft.graph
@@ -46,7 +46,7 @@ ms.locfileid: "53580781"
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|clientId|String|Идентификатор клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Это поле обязательно для заполнения.  Обязательно. Значение NULL не допускается.|
+|clientId|String|Идентификатор клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Это обязательное поле. Не допускается значение NULL.|
 |clientSecret|Строка|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает `****`. Это поле обязательно для заполнения. Обязательно. Значение null не допускается.|
 |id|String|Идентификатор поставщика удостоверений.|
 |name|String|Отображаемое имя поставщика удостоверений. Значение NULL не допускается.|
