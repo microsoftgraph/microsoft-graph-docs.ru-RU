@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс site предоставляет метаданные и связи для сайта SharePoint.
 ms.date: 09/10/2017
 title: Site
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: a8cab7859c68224acc734a88f941a952ca82798b
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 7959908fb0bfe74cb4cbf1ba242988e3ecbf5848
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51472116"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696199"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -81,7 +81,7 @@ ms.locfileid: "51472116"
 | **displayName**          | string             | Полное название сайта. Только для чтения.
 | **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
 | **name**                 | string             | Имя или название элемента.
-| **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
+| **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
 | **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
@@ -91,7 +91,7 @@ ms.locfileid: "51472116"
 * имя узла семейства веб-сайтов (contoso.sharepoint.com);
 * уникальный идентификатор семейства веб-сайтов (GUID);
 * уникальный идентификатор сайта (GUID).
-  
+
 Идентификатор `root` всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.
 
 * `/sites/root`. Корневой сайт клиента.

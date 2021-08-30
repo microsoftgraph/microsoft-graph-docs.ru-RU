@@ -2,15 +2,15 @@
 title: Тип ресурса call
 description: Ресурс **call** создается при наличии входящего вызова приложения или при создании приложением нового исходящего вызова с помощью запроса `POST` в `app/calls`.
 author: ananmishr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba11a95c5e62ec0d4edbabcdf82631ab967e82a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c98483bd92db368b997692b1856ce6a475c15d37
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955051"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695133"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -81,12 +81,12 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Сведения о чате. Обязательные сведения для сценариев собраний.                                                                                                                                |
 | direction           | callDirection                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения.                                                                                            |
 | id                  | String                                                                                                 | Идентификатор вызова. Только для чтения.                                                                                                                                                                        |
-| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | Контекст, связанный с входящим звонком. Только для чтения. Создается сервером.                                                                                                                                |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательные сведения для создания одноранговых вызовов или присоединения к собраниям.                                                                        |
+| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | Контекст, связанный с входящим вызовом. Только для чтения. Создается сервером.                                                                                                                                |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Конфигурация мультимедиа. Обязательные сведения для создания одноранговых вызовов или присоединения к собраниям.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Содержит возможности собрания. Только для чтения.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании. Обязательные сведения для сценариев собраний.                                                                                                              |
-|transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | Сведения расшифровки для звонка. Только для чтения.                           |
+|transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | Сведения расшифровки для вызова. Только для чтения.                           |
 myParticipantId     | String                                                                                                   | Только для чтения.                                                                                                                                                                        |
 | requestedModalities | Коллекция modality                                                                                      | Список запрошенных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения.                                                                                                        |

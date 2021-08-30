@@ -2,15 +2,15 @@
 title: Получение объекта chatMessage в канале или чате
 description: Получение одного сообщения (без ответов) в канале или чате.
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 978f43be63f740278051310c3c78d0b4bed5a637
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 87ea2fe4e47ed8355469351c47eb6a53320ec76e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384438"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695891"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Получение объекта chatMessage в канале или чате
 

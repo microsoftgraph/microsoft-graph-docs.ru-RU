@@ -2,15 +2,15 @@
 title: Добавление приложения в чат
 description: Установка приложения для чата.
 author: subray
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c75d92e939e6bbc8661e0d71ffd210cc88a0070a
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 995c5d0394963793c0d8146cb374e5145678a44b
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971050"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695289"
 ---
 # <a name="add-app-to-chat"></a>Добавление приложения в чат
 
@@ -36,8 +36,8 @@ ms.locfileid: "52971050"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { 
-"blockType": "ignored" 
+<!-- {
+"blockType": "ignored"
 } -->
 
 ```http

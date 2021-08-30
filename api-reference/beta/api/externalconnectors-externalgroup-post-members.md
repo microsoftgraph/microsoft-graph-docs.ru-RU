@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3120c6aa7744aeedebf8fa6b4eb1a696b21e6e37
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 2267ec63073d964b9cd162ff5331a8e7df99cec9
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467678"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697480"
 ---
 # <a name="create-externalgroupmember"></a>Создание externalGroupMember
 
@@ -28,7 +28,7 @@ ms.locfileid: "53467678"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса поставляем представление JSON внешнего [объектаGroupMember.](../resources/externalconnectors-externalgroupmember.md)
+В теле запроса поставляем представление JSON внешнего **объектаGroupMember.**
 
-В следующей таблице показаны свойства, необходимые при создании [externalGroupMember.](../resources/externalconnectors-externalgroupmember.md)
+При создании **externalGroupMember** можно указать следующие свойства.
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | Уникальный `id` член. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп.                                    |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: или когда identitySource является и только `user` `group` `azureActiveDirectory` `group` тогда, когда identitySource `external` является . |
-| identitySource | microsoft.graph.externalConnectors.identitySourceType      | Источник удостоверений, к которой принадлежит член. Возможные значения: `azureActiveDirectory`, `external`.                                                                                         |
+| id             | String                  | Уникальный `id` член. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп. Обязательное.                                   |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: или когда identitySource является и только `user` `group` `azureActiveDirectory` `group` тогда, когда identitySource `external` является . Обязательно. |
+| identitySource | microsoft.graph.externalConnectors.identitySourceType      | Источник удостоверений, к которой принадлежит член. Возможные значения: `azureActiveDirectory`, `external`. Обязательный.                                                                                       |
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `201 Created` [внешний объектGroupMember](../resources/externalconnectors-externalgroupmember.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` **внешний объектGroupMember** в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

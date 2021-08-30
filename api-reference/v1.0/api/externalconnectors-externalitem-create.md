@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2a98ac339ba704212b1123278223e09960b2b7e2
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7f337f21ec4a6c8069b598e756f1b3ff5327814e
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579922"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697459"
 ---
 # <a name="create-externalitem"></a>Создание externalItem
 
@@ -25,7 +25,7 @@ ms.locfileid: "53579922"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+|Для приложений| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,14 +46,14 @@ POST /connections/{connectionsId}/items
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляют представление JSON объекта [externalItem.](../resources/externalconnectors-externalitem.md)
 
-В следующей таблице показаны свойства, необходимые при создании [externalItem.](../resources/externalconnectors-externalitem.md)
+При создании [externalItem](../resources/externalconnectors-externalitem.md)можно указать следующие свойства.
 
-|Свойство|Тип| Обязательно (Y/N) | Описание|
-|:---|:---|:---|:---|
-|id|String|Да|ID элемента|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Да|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601.|
-|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Нет|Внешний контент элемента|
-|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Да|Список управления доступом|
+|Свойство|Тип| Описание|
+|:---|:---|:---|
+|id|String|ID элемента. Обязательно.|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601. Обязательно.|
+|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Внешний контент элемента. Необязательный параметр.|
+|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Список управления доступом. Обязательно.|
 
 Свойства на объекте должны использовать указанные типы в полезной `externalItem` нагрузке в следующих сценариях:
 
@@ -79,7 +79,7 @@ POST /connections/{connectionsId}/items
 
 ## <a name="response"></a>Отклик 
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="examples"></a>Примеры
 

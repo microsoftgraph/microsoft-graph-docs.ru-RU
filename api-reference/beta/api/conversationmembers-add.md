@@ -3,14 +3,14 @@ title: 'conversationMember: add'
 description: Массовое добавление участников в команду.
 author: nkramer
 doc_type: apiPageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2af435ac7dd430a0d006df609991f0c0a83b02ca
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 803c8b4fe792531be087b1ae02ee00cfa7ed526f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689711"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696990"
 ---
 # <a name="conversationmember-add"></a>conversationMember: add
 
@@ -24,7 +24,7 @@ ms.locfileid: "49689711"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий) | 
+|Тип разрешения      | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:--------------------------|
 | Делегированные (рабочая или учебная учетная запись) | TeamMember.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 Ниже приведен отклик.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -201,7 +201,7 @@ Content-Type: application/json
 
 Ниже приведен отклик.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

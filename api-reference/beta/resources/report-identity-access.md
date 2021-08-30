@@ -1,16 +1,16 @@
 ---
 title: Обзор API отчетов об удостоверениях и доступе
 description: Обращайтесь к отчетам об удостоверениях и доступе, чтобы получить сведения о том, как пользователи в вашей организации используют приложения в клиенте Azure Active Directory.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-access-reports
 author: besiler
 doc_type: conceptualPageType
-ms.openlocfilehash: 567bfdfd848c2a7f1df19b8aad76a68774a6bf0e
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: bcaef9dcad8d86f162f1a7e7a40f006c1d6d8ac7
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129373"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696255"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>Обзор API отчетов об удостоверениях и доступе
 
@@ -44,7 +44,7 @@ Microsoft Graph позволяет управлять доступом к рес
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Ресурсы и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Чтобы узнать больше:
+Ресурсы и API каталога открывают новые способы взаимодействия с пользователями и контроля их работы с помощью Microsoft Graph. Чтобы узнать больше:
 
 - Изучите подробнее методы и свойства ресурсов, наиболее полезных для вашего сценария.
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).

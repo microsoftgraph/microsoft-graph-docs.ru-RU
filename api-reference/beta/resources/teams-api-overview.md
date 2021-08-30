@@ -1,16 +1,16 @@
 ---
 title: Работа с Microsoft Teams при помощи API Microsoft Graph
 description: Microsoft Teams — это рабочее пространство с чатами в Microsoft 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика и многому другому.
-localization_priority: Priority
+ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: ccbdfc647ed1e4cea4ab6f28ef1460802bc39066
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 9185b153ade883a729877abe328faf651c9c001f
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384424"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695912"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -43,7 +43,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 Протестированные ограничения производительности (мощности) Microsoft Teams описаны в статье [Ограничения и спецификации для Microsoft Teams](/microsoftteams/limits-specifications-teams).
 Эти ограничения применяются при непосредственном использовании Microsoft Teams или с помощью API Microsoft Graph.
-Так как у каждой команды есть соответствующая группа, а каждая группа является объектом каталога, ограничение [количества групп](/microsoft-365/admin/create-groups/office-365-groups#group-limits) и [количества объектов каталога ("ресурсов")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) может также оказывать влияние. 
+Так как у каждой команды есть соответствующая группа, а каждая группа является объектом каталога, ограничение [количества групп](/microsoft-365/admin/create-groups/office-365-groups#group-limits) и [количества объектов каталога ("ресурсов")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) может также оказывать влияние.
 
 Файлы в каналах хранятся в SharePoint; при этом применяются [ограничения SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
@@ -72,38 +72,22 @@ Microsoft Teams — это рабочее пространство с чатам
 
 | Вариант использования      | Глагол      | URL-адрес |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Добавление участника](../api/team-post-members.md) | POST      | /teams/{id}/members  |
-| [Удаление участника](../api/team-delete-members.md)    | DELETE    | /teams/{id}/members/{userId} |
-| [Обновление роли участника](../api/team-update-members.md) | PATCH | /teams/{id}/members/{userId} |
-| [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{id} |
-
-При добавлении и удалении участников и владельцев, не применяйте фигурные скобки {} вокруг идентификатора.
-
-| Скорость | Синтаксис |
-| ------ | ----- |
-| Быстро | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref |
-| Медленно | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref |
-
-Аналогичным образом, если параметр `userId` в URL-адресе или полезных данных выражается как имя участника-пользователя (UPN), а не как идентификатор GUID, производительность будет ниже.
-
-| Скорость | Синтаксис |
-| ------ | ----- |
-| Быстро | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| Медленно | alexeyorekhov@example.com |
-
-При выборе медленного пути, если текущий участник или владелец команды вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения отразятся в течение часа.
-Если ни один из таких пользователей не вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения не отразятся, пока не пройдет час после входа одного из них.
-
-> [!Note]
-> Гости клиента всегда обрабатываются с помощью медленного пути.
+| [Добавление участника](../api/team-post-members.md) | POST      | /teams/{team-id}/members  |
+| [Удаление участника](../api/team-delete-members.md)    | DELETE    | /teams/{team-id}/members/{membership-id} |
+| [Обновление роли участника](../api/team-update-members.md) | PATCH | /teams/{team-id}/members/{membership-id} |
+| [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{team-id} |
 
 ## <a name="polling-requirements"></a>Требования к опросу
 
-Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв на [форуме идей платформы для разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
+Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день.
+([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики).
+Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв на [форуме идей платформы для разработчиков Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 При опросе на предмет новых сообщений необходимо определить диапазон дат, в котором поддерживается опрос. Дополнительные сведения см. в статье [Получение изменившихся данных о сообщениях в каналах](../api/chatmessage-delta.md).
 
-При опросе для ресурса раз за разом выполняется операция GET, чтобы проверить, не изменился ли он. Операцию GET разрешается выполнять на одном и том же ресурсе несколько раз в день, пока не проводится опрос. Например, хорошо выполнять операцию GET на /me/joinedTeams каждый раз, когда пользователь посещает или обновляет вашу веб-страницу, но было бы неправильно выполнять GET на /me/joinedTeams в цикле каждые 30 секунд, чтобы обновлять эту веб-страницу.
+При опросе для ресурса раз за разом выполняется операция GET, чтобы проверить, не изменился ли он.
+Операцию GET разрешается выполнять на одном и том же ресурсе несколько раз в день, пока не проводится опрос.
+Например, хорошо выполнять операцию GET на /me/joinedTeams каждый раз, когда пользователь посещает или обновляет вашу веб-страницу, но было бы неправильно выполнять GET на /me/joinedTeams в цикле каждые 30 секунд, чтобы обновлять эту веб-страницу.
 
 Если приложения не удовлетворяют требованиям опроса, это будет рассматриваться как нарушение [условий использования API Майкрософт](/legal/microsoft-apis/terms-of-use). Такое нарушение может привести к дополнительному [регулированию](/graph/throttling), а также приостановке или прекращению использования API Майкрософт.
 

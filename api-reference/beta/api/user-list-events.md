@@ -1,16 +1,16 @@
 ---
 title: Перечисление событий
 description: 'Получение списка объектов event из стандартного календаря пользователя или '
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 726fa26ce41571050c94c74165a2898ca767b8d3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e3d7e995cc825529c94349a9878d431f2aba1d6e
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433567"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58696360"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -30,7 +30,7 @@ ms.locfileid: "50433567"
 
 ### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
 
-Для всех операций GET, которые возвращают события, можно использовать заголовок `Prefer: outlook.timezone`, чтобы задать часовой пояс для указанного в отклике времени начала и завершения события. 
+Для всех операций GET, которые возвращают события, можно использовать заголовок `Prefer: outlook.timezone`, чтобы задать часовой пояс для указанного в отклике времени начала и завершения события.
 
 Например, заголовок `Prefer: outlook.timezone` задает в отклике время начала и завершения согласно североамериканскому восточному времени.
 ```http
@@ -71,10 +71,10 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательное свойство. |
+| Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в отклике. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -84,10 +84,10 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ##### <a name="request-1"></a>Запрос 1
 В первом примере возвращаются все события пользователя. В нем указывается:
 
-- Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
+- Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени.
 - Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.
 
-В запросе не определен никакой заголовок `Prefer: outlook.body-content-type`, чтобы указать конкретный формат для текста возвращаемого события. 
+В запросе не определен никакой заголовок `Prefer: outlook.body-content-type`, чтобы указать конкретный формат для текста возвращаемого события.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -212,7 +212,7 @@ Content-length: 1932
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
-Prefer: outlook.body-content-type="text" 
+Prefer: outlook.body-content-type="text"
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-in-text-csharp-snippets.md)]
@@ -233,7 +233,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 ##### <a name="response-2"></a>Отклик 2
-Ниже приведен пример отклика. Свойство **body** возвращается в текстовом формате. 
+Ниже приведен пример отклика. Свойство **body** возвращается в текстовом формате.
 
 <!-- {
   "blockType": "response",

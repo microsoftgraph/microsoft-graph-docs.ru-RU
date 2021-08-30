@@ -2,15 +2,15 @@
 title: Обновление serviceprincipal
 description: Обновление свойств объекта serviceprincipal.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 6f2ad28c6e0abe194cb7a11f14b43f1567fa7878
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c00d84d496fdd65fd071679641eb99360ed46bed
+ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786741"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58695933"
 ---
 # <a name="update-serviceprincipal"></a>Обновление servicePrincipal
 

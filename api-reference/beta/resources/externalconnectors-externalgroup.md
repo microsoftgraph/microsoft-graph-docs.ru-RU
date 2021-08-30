@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов externalGroup
-description: Представляет внешнюю группу, используемую для набора разрешений на externalItems, добавленных в подключение Microsoft Graph.
+description: Представляет группу, не Azure Active Directory.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3f0c6adbd47d1823b82e19d3fb9a352e26391da9
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5fbfcb8b462b490b33519f04268c505871613a24
+ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467827"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58697389"
 ---
 # <a name="externalgroup-resource-type"></a>тип ресурсов externalGroup
 
@@ -18,7 +18,13 @@ ms.locfileid: "53467827"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет внешнюю группу. Внешние группы (наряду Azure Active Directory пользователями и группами) используются для набора разрешений **на externalItems,** добавленных в подключение Microsoft Graph. Используйте **externalGroups** для представления Azure Active Directory групп или групп-подобных конструкций (например, бизнес-подразделений, Teams и son on), которые определяют разрешение на контент в внешнем источнике данных.
+Пространство имен: microsoft.graph.externalConnectors
+
+Представляет группу, не Azure Active Directory.
+
+Внешние группы определяют разрешения на контент в внешнем источнике данных. Эти внешние группы можно использовать в записях [на acl](../resources/externalconnectors-externalitem.md) [externalItem](../resources/externalconnectors-externalitem.md).
+
+Примерами внешних групп являются бизнес-подразделения и группы работы.
 
 ## <a name="methods"></a>Методы
 
@@ -26,15 +32,15 @@ ms.locfileid: "53467827"
 |:---|:---|:---|
 |[Создание externalGroup](../api/externalconnectors-externalconnection-post-groups.md)|[microsoft.graph.externalConnectors.externalGroup](../resources/externalconnectors-externalgroup.md)|Создайте новый **объект externalGroup.**|
 |[Удаление externalGroup](../api/externalconnectors-externalgroup-delete.md)|Нет|Удаление **объекта externalGroup.**|
-|[Создание участников](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md)|Создание нового **внешнего объектаGroupMember.**|
+|[Создание члена](../api/externalconnectors-externalgroup-post-members.md)|[microsoft.graph.externalConnectors.externalGroupMember](../resources/externalconnectors-externalgroupmember.md)|Создание нового **внешнего объектаGroupMember.**|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. |
-| displayName | String | Дружеское имя внешней группы. Необязательное.                                                                       |
-| description | String | Описание внешней группы. Необязательное.                                                                         
+| id          | Строка | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. |
+| displayName | Строка | Дружеское имя внешней группы. Необязательный параметр.                                                                       |
+| description | Строка | Описание внешней группы. Необязательный параметр.                                                                         
 
 ## <a name="relationships"></a>Связи
 
