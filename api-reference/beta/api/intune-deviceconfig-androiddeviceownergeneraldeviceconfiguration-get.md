@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99a6774f8e5c4e1bd4735a9f293893eafecca7c99791a7b600b5d6acbc8b47f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e143048bfffee9ef10cace0e25d73c2f26253212
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216022"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803695"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Get androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54216022"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7876
+Content-Length: 8848
 
 {
   "value": {
@@ -106,6 +106,15 @@ Content-Length: 7876
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "azureAdSharedDeviceDataClearApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "accountsBlockModification": true,
     "appsAllowInstallFromUnknownSources": true,
     "appsAutoUpdatePolicy": "userChoice",
@@ -204,6 +213,15 @@ Content-Length: 7876
         }
       }
     ],
+    "kioskModeManagedHomeScreenAutoSignout": true,
+    "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
+    "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
+    "kioskModeManagedHomeScreenPinComplexity": "simple",
+    "kioskModeManagedHomeScreenPinRequired": true,
+    "kioskModeManagedHomeScreenPinRequiredToResume": true,
+    "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
+    "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
+    "kioskModeManagedHomeScreenSignInEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -227,6 +245,7 @@ Content-Length: 7876
     "safeBootBlocked": true,
     "screenCaptureBlocked": true,
     "securityAllowDebuggingFeatures": true,
+    "securityDeveloperSettingsEnabled": true,
     "securityRequireVerifyApps": true,
     "statusBarBlocked": true,
     "stayOnModes": [
@@ -263,7 +282,6 @@ Content-Length: 7876
   }
 }
 ```
-
 
 
 

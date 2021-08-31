@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2481570ea536c734be46f51bdaa3d9a893263188b6c99677925d61ad329af092
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bc115882461351f28a954f35be7267fca3c1c1b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150425"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791841"
 ---
 # <a name="compliancestate-enum-type"></a>тип из переумыка complianceState
 
@@ -26,13 +26,12 @@ ms.locfileid: "54150425"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестно.|
-|совместимый|1 |Совместимый.|
+|совместимый|1|Совместимый.|
 |нескомплиентные|2|Устройство не соответствует требованиям и блокируется из корпоративных ресурсов.|
-|конфликт|3 |Конфликт с другими правилами.|
+|конфликт|3|Конфликт с другими правилами.|
 |error|4 |Ошибка|
 |inGracePeriod|254|Устройство не соответствует требованиям, но по-прежнему имеет доступ к корпоративным ресурсам|
 |configManager|255|Управление менеджером Config|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 724b6d0deb2fff796c5f7d43d961a014eadc84c2659e47392def0e803c172b5f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 828117ad95c9e1de2815046d6877f5378528f788
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145399"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804528"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>тип ресурса iosSingleSignOnSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "54145399"
 |allowedUrls|Коллекция String|Список URL-адресов HTTP, которые необходимо соединять для использования этого входа. С помощью iOS 9.0 или более поздней системы можно использовать символы под диктовки.|
 |displayName|Строка|Отображение имени параметров входа, показанных на приемном устройстве.|
 |kerberosPrincipalName|Строка|Основное имя Kerberos. Если не предоставлено, пользователю будет предложено одно во время установки профиля.|
-|kerberosRealm|String|Имя области Kerberos. Деликатный.|
+|kerberosRealm|Строка|Имя области Kerberos. Деликатный.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -61,7 +61,6 @@ ms.locfileid: "54145399"
   "kerberosRealm": "String"
 }
 ```
-
 
 
 

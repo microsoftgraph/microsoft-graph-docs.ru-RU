@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d66195a0dc9e4834c1351f87faa3ba85f97f9679
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 36a8dd7bf567ecdbca27d6e7c5bab1248e6dc732
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263788"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797102"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Перечисление объектов macOSGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58263788"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5418
+Content-Length: 5649
 
 {
   "value": [
@@ -202,12 +202,15 @@ Content-Length: 5418
       "addingGameCenterFriendsBlocked": true,
       "gameCenterBlocked": true,
       "multiplayerGamingBlocked": true,
-      "wallpaperModificationBlocked": true
+      "wallpaperModificationBlocked": true,
+      "eraseContentAndSettingsBlocked": true,
+      "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
+      "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
+      "softwareUpdateNonOSDeferredInstallDelayInDays": 13
     }
   ]
 }
 ```
-
 
 
 

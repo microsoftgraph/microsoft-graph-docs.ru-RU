@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ae25975b22853a2f958cbb3a5e4c15fe3d7749904780bbcd2c387ffc4ceea446
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f85534fa2e8c55ce5b6a32306a00ea7afa30d568
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183073"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805740"
 ---
 # <a name="ratingappstype-enum-type"></a>тип enum ratingAppsType
 
@@ -26,12 +26,11 @@ ms.locfileid: "54183073"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимое приложений|
-|allBlocked|1 |Не разрешайте содержимое приложений|
+|allBlocked|1|Не разрешайте содержимое приложений|
 |agesAbove4|2|4+, 4 и более лет|
-|agesAbove9|3 |9+, 9 лет и старше|
+|agesAbove9|3|9+, 9 лет и старше|
 |agesAbove12|4 |12+, 12 лет и старше |
 |agesAbove17|5 |17+, 17 лет и старше|
-
 
 
 

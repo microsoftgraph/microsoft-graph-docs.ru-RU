@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67290bfb7939eff57202fe0afa802a21f2f04cc757904a91fc198d9c84c17937
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b5255b5ab7e4480100babb812d6be83cc7fca90
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203220"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797319"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>тип ресурсов microsoftStoreForBusinessContainedApp
 
@@ -37,8 +37,8 @@ ms.locfileid: "54203220"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Унаследованный от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|ID модели пользователя приложения, содержатого приложения MicrosoftStoreForBusinessApp.|
+|id|Строка|Ключ объекта. Унаследованный от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Строка|ID модели пользователя приложения, содержатого приложения MicrosoftStoreForBusinessApp.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +58,6 @@ ms.locfileid: "54203220"
   "appUserModelId": "String"
 }
 ```
-
 
 
 

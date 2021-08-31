@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b606226e62e7eccfc65bb3c19fd359fff4a2c7161506404aa6eed09c481e2f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 993b79f8b9ff18c5ecb46b22adf5ccfc8da8f113
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214917"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806000"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -41,7 +41,7 @@ ms.locfileid: "54214917"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Администратор предоставил или импортировал название приложения.|
-|description|String|Описание приложения.|
+|description|Строка|Описание приложения.|
 |publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
@@ -106,7 +106,6 @@ ms.locfileid: "54214917"
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

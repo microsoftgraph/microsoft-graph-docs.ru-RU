@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61cfca7b222c0023f1fca5103fba141d1c70b392
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9570eac23c7ba0bdd186f4e0da3902b71ec2d413
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262167"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803225"
 ---
 # <a name="policysetitem-resource-type"></a>тип ресурса policySetItem
 
@@ -31,11 +31,11 @@ ms.locfileid: "58262167"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша PolicySetItem.|
+|id|Строка|Клавиша PolicySetItem.|
 |createdDateTime|DateTimeOffset|Время создания PolicySetItem.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время политикиSetItem.|
-|payloadId|String|PayloadId of the PolicySetItem.|
-|itemType|Строка|policySetType policySetItem.|
+|payloadId|Строка|PayloadId of the PolicySetItem.|
+|itemType|String|policySetType policySetItem.|
 |displayName|Строка|DisplayName of the PolicySetItem.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние PolicySetItem. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если таковое произошло. Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
@@ -68,7 +68,6 @@ ms.locfileid: "58262167"
   ]
 }
 ```
-
 
 
 

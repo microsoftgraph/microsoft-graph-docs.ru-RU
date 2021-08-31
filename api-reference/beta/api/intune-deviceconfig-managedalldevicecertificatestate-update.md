@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63987b6a63ff1514cd72b225e55762375e732bad3f3bb0444b672331a33b866c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 402e244045b7ed0a05c45bc21293b050d65080b9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132223"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804759"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>Обновление managedAllDeviceCertificateState
 
@@ -29,7 +29,7 @@ ms.locfileid: "54132223"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{m
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,15 +53,15 @@ PATCH /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{m
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзови статус. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|Время последнего изменения состояния отвода|
-|managedDeviceDisplayName|String|Имя отображения устройства|
+|managedDeviceDisplayName|Строка|Имя отображения устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |certificateExpirationDateTime|DateTimeOffset|Дата истечения срока действия сертификата|
 |certificateIssuerName|Строка|Издатель|
 |certificateThumbprint|Строка|Thumbprint|
-|certificateSerialNumber|String|Серийный номер|
+|certificateSerialNumber|Строка|Серийный номер|
 |certificateSubjectName|Строка|Имя субъекта сертификата|
 |certificateKeyUsages|Int32|Использование ключей|
 |certificateExtendedKeyUsages|Строка|Расширенное использование ключей|
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ef21f26b259676e774ff009eb8432d4384129fd5977bddf23daf47760742a03
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25bf816c93d48030cf1937669293f4cadf8e1c5f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142066"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797551"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>тип enum defenderPotentiallyUnwantedAppAction
 
@@ -26,9 +26,8 @@ ms.locfileid: "54142066"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Защита PUA отключена. Defender не будет защищаться от потенциально нежелательных приложений.|
-|block|1 |Защита PUA находится в ок. Обнаруженные элементы заблокированы. Они будут показываться в истории вместе с другими угрозами.|
+|block|1|Защита PUA находится в ок. Обнаруженные элементы заблокированы. Они будут показываться в истории вместе с другими угрозами.|
 |аудит|2|Режим аудита. Defender обнаруживает потенциально нежелательные приложения, но не принимает никаких действий. Вы можете просмотреть сведения о приложениях, которые защитник принял бы против, ища события, созданные Defender в обозревателе событий.|
-
 
 
 
