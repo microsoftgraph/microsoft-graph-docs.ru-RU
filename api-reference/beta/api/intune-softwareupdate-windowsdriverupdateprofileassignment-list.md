@@ -1,18 +1,18 @@
 ---
-title: Delete detectedApp
-description: Удаляет объект detectedApp.
+title: Список windowsDriverUpdateProfileAssignments
+description: Список свойств и связей объектов WindowsDriverUpdateProfileAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47ed0a6cbecdbdc94555de10dc765c4fe957a88f
+ms.openlocfilehash: 587a0c31d6df1cf42b488ab41ba93f4317c30430
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796749"
+ms.locfileid: "58795366"
 ---
-# <a name="delete-detectedapp"></a>Delete detectedApp
+# <a name="list-windowsdriverupdateprofileassignments"></a>Список windowsDriverUpdateProfileAssignments
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58796749"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [detectedApp](../resources/intune-devices-detectedapp.md).
+Список свойств и связей [объектов WindowsDriverUpdateProfileAssignment.](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md)
 
-## <a name="prerequisites"></a>Необходимые разрешения
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,8 +37,7 @@ ms.locfileid: "58796749"
 }
 -->
 ``` http
-DELETE /deviceManagement/detectedApps/{detectedAppId}
-DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}
+GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -51,20 +50,36 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию `200 OK` [объектов windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/detectedApps/{detectedAppId}
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 453
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsDriverUpdateProfileAssignment",
+      "id": "951663d5-63d5-9516-d563-1695d5631695",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
+      }
+    }
+  ]
+}
 ```
 
 

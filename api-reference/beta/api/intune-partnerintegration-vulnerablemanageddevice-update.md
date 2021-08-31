@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbf91c74761c5fc60bffbf5c6c6c6f4410a2ad2d984ffc1af6cd02dccf800839
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b2ab8e4ab9069cd1286ccc5a6474d7290203675
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203941"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795314"
 ---
 # <a name="update-vulnerablemanageddevice"></a>Обновление vulnerableManagedDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "54203941"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ сущности и ID устройства AAD.|
-|managedDeviceId|Строка|ID управляемого устройства Intune.|
+|managedDeviceId|String|ID управляемого устройства Intune.|
 |displayName|Строка|Имя устройства.|
 |lastSyncDateTime|DateTimeOffset|Последняя дата синхронизации.|
 
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

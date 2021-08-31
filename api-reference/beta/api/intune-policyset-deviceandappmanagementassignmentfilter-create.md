@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8befb67a265066cd645cd2f4d45e193e0574be3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: adda34daf6052442aa37b4fc036c3f9712156c10
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253532"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802833"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>Создание устройстваAndAppManagementAssignmentFilter
 
@@ -29,7 +29,7 @@ ms.locfileid: "58253532"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/assignmentFilters
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,13 @@ POST /deviceManagement/assignmentFilters
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ фильтра назначения.|
+|id|Строка|Ключ фильтра назначения.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначения.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время фильтра назначения.|
-|displayName|String|DisplayName фильтра назначения.|
+|displayName|Строка|DisplayName фильтра назначения.|
 |description|Строка|Описание фильтра назначения.|
 |платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правило|String|Определение правила фильтра назначения.|
+|правило|Строка|Определение правила фильтра назначения.|
 |roleScopeTags|Коллекция String|RoleScopeTags фильтра назначения.|
 
 
@@ -109,7 +109,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 

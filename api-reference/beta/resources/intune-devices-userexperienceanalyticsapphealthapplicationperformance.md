@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d633432157440d38f4ad335a12019b86a15a47a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c81eef2fbab97c2ba2ed6a6a290fcfd790a7eb65
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264537"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788467"
 ---
 # <a name="userexperienceanalyticsapphealthapplicationperformance-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -34,7 +34,7 @@ ms.locfileid: "58264537"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |appHangCount|Int32|Количество зависает для приложения. Допустимые значения 2147483648 2147483647|
 |appHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |appHealthStatus|Строка|Общее состояние здоровья приложения.|
@@ -75,7 +75,6 @@ ms.locfileid: "58264537"
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

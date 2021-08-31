@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb152b6c47e1c0fa4a87e503f6e9c1ec591c3054da9446d11c52be1fe194fef0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9869b581370d349725428c6a92adee04b9513e4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232645"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803001"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>тип ресурса windowsKioskActiveDirectoryGroup
 
@@ -28,7 +28,7 @@ ms.locfileid: "54232645"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|String|Имя группы AD, которая будет заблокирована в этой конфигурации киоска|
+|groupName|Строка|Имя группы AD, которая будет заблокирована в этой конфигурации киоска|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,7 +46,6 @@ ms.locfileid: "54232645"
   "groupName": "String"
 }
 ```
-
 
 
 

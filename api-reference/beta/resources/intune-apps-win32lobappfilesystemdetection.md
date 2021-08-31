@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1448a08261dd4140f5882f68bb8c40b4a97fe593651ddc61f9b904f918070266
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2019ed6f54ea5a9924665fa5b7ee746b7fb8a866
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156459"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797305"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>тип ресурса win32LobAppFileSystemDetection
 
@@ -56,7 +56,6 @@ ms.locfileid: "54156459"
   "detectionValue": "String"
 }
 ```
-
 
 
 

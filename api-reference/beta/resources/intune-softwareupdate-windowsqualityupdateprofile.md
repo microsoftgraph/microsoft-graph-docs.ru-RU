@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 090f22169255049482cd561ef509fb6d7aba8f8deca5699873e2c14e0f200e43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 247b382ec9d12c621591a9efcd1a6904005a7f3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224315"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797474"
 ---
 # <a name="windowsqualityupdateprofile-resource-type"></a>тип ресурса windowsQualityUpdateProfile
 
@@ -35,15 +35,15 @@ Windows Профиль обновления качества
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID политики Intune.|
-|displayName|String|Имя отображения для профиля.|
+|id|Строка|ID политики Intune.|
+|displayName|Строка|Имя отображения для профиля.|
 |description|Строка|Описание профиля, указанного пользователем.|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Параметры ускоренного обновления.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления качества.|
 |releaseDateDisplayName|Строка|Содружественная дата выпуска для отображения для выпуска обновления качества|
-|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -78,7 +78,6 @@ Windows Профиль обновления качества
   "deployableContentDisplayName": "String"
 }
 ```
-
 
 
 

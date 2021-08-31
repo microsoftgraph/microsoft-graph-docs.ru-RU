@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5cd8230391f904e3a16218ec213ea8111158b4e9234fd47ec6878b8d3461b3b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08f74129ffa947be2b1a2c655cbfc10bc8bc875f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227353"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796203"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>тип ресурса windowsManagementAppHealthState
 
@@ -34,12 +34,12 @@ Windows объекта состояния состояния здоровья п
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор состояния Windows приложения управления. Это свойство доступно только для чтения.|
+|id|Строка|Уникальный идентификатор состояния Windows приложения управления. Это свойство доступно только для чтения.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows состояния здоровья приложения управления. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|Строка|Windows установленной версии приложения управления.|
 |lastCheckInDateTime|DateTimeOffset|Windows последнего времени регистрации приложения управления.|
 |deviceName|String|Имя устройства, на котором Windows установлено приложение управления.|
-|deviceOSVersion|String|Windows 10 ВЕРСИЯ ОС устройства, на котором Windows установлено приложение управления.|
+|deviceOSVersion|Строка|Windows 10 ВЕРСИЯ ОС устройства, на котором Windows установлено приложение управления.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -63,7 +63,6 @@ Windows объекта состояния состояния здоровья п
   "deviceOSVersion": "String"
 }
 ```
-
 
 
 

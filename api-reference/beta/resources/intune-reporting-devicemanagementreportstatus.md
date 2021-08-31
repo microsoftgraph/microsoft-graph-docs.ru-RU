@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c786a67a28674313f7a205d43e9f9caf8e7d9cce9894af480fdc70f5b94cf29f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f04c12b53c1aedb46d904131125e9dadd229faa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217164"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803456"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>тип enum deviceManagementReportStatus
 
@@ -26,11 +26,10 @@ ms.locfileid: "54217164"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние генерации отчетов неизвестно|
-|notStarted|1 |Генерация отчетов не началась|
+|notStarted|1|Генерация отчетов не началась|
 |inProgress|2|Продолжается генерация отчетов|
-|завершено|3 |Завершено поколение отчетов|
+|завершено|3|Завершено поколение отчетов|
 |не удалось|4 |Сбой генерации отчетов|
-
 
 
 

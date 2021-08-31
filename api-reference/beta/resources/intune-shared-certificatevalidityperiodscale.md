@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a0990e23b41f8d5eaa5e77731e134e067f1de2d58b9fb49a0ddbf3b36e6b5734
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8600723c7eef41a62fe0c90a3ffe63289ec4dc69
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217080"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795117"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>тип enum certificateValidityPeriodScale
 
@@ -26,9 +26,8 @@ ms.locfileid: "54217080"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |days|0|Дни.|
-|месяцев|1 |Месяцы.|
+|месяцев|1|Месяцы.|
 |лет|2|Годы.|
-
 
 
 

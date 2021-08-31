@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f8c700bbe8f280d9953112ab2fcec67d6f7cb8d826eb67fbf54064b1fa58a13
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40154047a8eb0bd316d4c6704adf6f4eb407c26a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231035"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778054"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>Тип ресурса deviceConfigurationDeviceOverview
 
@@ -31,7 +31,7 @@ ms.locfileid: "54231035"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |notApplicablePlatformCount|Int32|Количество не применимых устройств из-за несоответствия платформы и политики|
@@ -68,7 +68,6 @@ ms.locfileid: "54231035"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

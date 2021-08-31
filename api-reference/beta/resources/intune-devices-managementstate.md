@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1475ac4dc29462b31df57ae54daf4ecb658487133ad5b0fe2cc5884e8effdc5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 814395189273adfe7a977ddb2d85e6ed8714aa64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249876"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796588"
 ---
 # <a name="managementstate-enum-type"></a>тип переуправления managementState
 
@@ -26,9 +26,9 @@ ms.locfileid: "54249876"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |управляемый|0|Устройство находится под управлением|
-|retirePending|1 |На устройстве и в процессе отгрузки из управления возникает команда по отставку|
+|retirePending|1|На устройстве и в процессе отгрузки из управления возникает команда по отставку|
 |retireFailed|2|На устройстве сбой команды по отставку|
-|wipePending|3 |Команда wipe происходит на устройстве и в процессе отгрузки из управления|
+|wipePending|3|Команда wipe происходит на устройстве и в процессе отгрузки из управления|
 |wipeFailed|4 |Команда Wipe сбой на устройстве|
 |нездоровый|5 |Устройство является нездоровым.|
 |deletePending|6 |На устройстве возникает команда удаления |
@@ -37,7 +37,6 @@ ms.locfileid: "54249876"
 |wipeCanceled|9 |Команда wipe для этого устройства отменена|
 |retireCanceled|10 |Команда отмены для этого устройства отменена|
 |обнаружено|11 |Устройство обнаружено, но не полностью зарегистрировано.|
-
 
 
 
