@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b98dee94642102bc067efd9b6d8c228d329b406a32ed7c6a8742099f0a60934a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0286d1ac8790cff207ff754d49cd6d3ee51986de
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206230"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806595"
 ---
 # <a name="unmanageddevice-resource-type"></a>тип ресурса unmanagedDevice
 
@@ -30,10 +30,10 @@ ms.locfileid: "54206230"
 |ipAddress|String|IP-адрес.|
 |deviceName|String|Имя устройства.|
 |macAddress|Строка|MAC-адрес.|
-|domain|String|Домен.|
+|domain|Строка|Домен.|
 |manufacturer|String|Производитель.|
 |model|String|Модель.|
-|location|String|Расположение.|
+|location|Строка|Расположение.|
 |lastLoggedOnUser|Строка|Последний вход на пользователя.|
 |lastSeenDateTime|DateTimeOffset|Последний раз видели дату и время.|
 
@@ -63,7 +63,6 @@ ms.locfileid: "54206230"
   "lastSeenDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

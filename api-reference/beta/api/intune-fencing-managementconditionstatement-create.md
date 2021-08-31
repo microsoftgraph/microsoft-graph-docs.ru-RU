@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef29c201e23c9c857a2cf2a5d5952a94b71ee0e5
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 81474c497f0e1015f6f882e08524dfe4eed5cc5c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263970"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804675"
 ---
 # <a name="create-managementconditionstatement"></a>Создание managementConditionStatement
 
@@ -29,7 +29,7 @@ ms.locfileid: "58263970"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +54,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для утверждения условий управления. Созданное в системе значение, назначенное при его создания.|
-|displayName|String|Администратор определил имя заявления об условиях управления.|
+|id|Строка|Уникальный идентификатор для утверждения условий управления. Созданное в системе значение, назначенное при его создания.|
+|displayName|Строка|Администратор определил имя заявления об условиях управления.|
 |description|Строка|Администратор определил описание инструкции по состоянию управления.|
 |createdDateTime|DateTimeOffset|Время создания заявления об условиях управления. Сгенерированная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния управления. Обновленная сторона службы.|
@@ -117,7 +117,6 @@ Content-Length: 526
   ]
 }
 ```
-
 
 
 

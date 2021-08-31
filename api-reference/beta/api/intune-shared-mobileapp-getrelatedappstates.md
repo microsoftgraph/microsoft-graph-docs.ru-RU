@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46510de849065ff02aea4c875fac1c8f35c11200f74fb8d93a5477cab9cbc234
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83493b43e5ebb6eaa17c6bc105ff43de3a4771e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179496"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792262"
 ---
 # <a name="getrelatedappstates-function"></a>функция getRelatedAppStates
 
@@ -30,7 +30,7 @@ ms.locfileid: "54179496"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Приложения)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 | &nbsp;&nbsp; **Приложения)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,7 +97,6 @@ Content-Length: 481
   ]
 }
 ```
-
 
 
 

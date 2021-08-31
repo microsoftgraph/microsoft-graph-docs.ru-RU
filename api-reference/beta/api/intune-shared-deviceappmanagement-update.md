@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae0eb6d5d9d270e1edde93baaa397d88b8e043dcc622908cb8fcede72ffd1080
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e6c794a00777a857e585c11b06e725bc369aaf24
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176920"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794148"
 ---
 # <a name="update-deviceappmanagement"></a>Обновление объекта deviceAppManagement
 
@@ -30,7 +30,7 @@ ms.locfileid: "54176920"
 | &nbsp;&nbsp; **Приложения,** **книги,** **onboarding,** **интеграция партнеров** или **набор политик** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | |
+| Application | |
 | &nbsp;&nbsp; **Приложения,** **книги,** **onboarding,** **интеграция партнеров** или **набор политик** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 
@@ -46,7 +46,7 @@ PATCH /deviceAppManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,7 +97,6 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
-
 
 
 

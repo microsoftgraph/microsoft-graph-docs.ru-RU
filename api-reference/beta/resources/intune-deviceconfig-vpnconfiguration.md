@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 791636dec53a1aa0c7f4a90b0cbd3fcbbc7fcc78306d7695148439aed6357cb1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3d91e181dedb66f68f6791312da21f72792f68c7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173179"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58808855"
 ---
 # <a name="vpnconfiguration-resource-type"></a>тип ресурса vpnConfiguration
 
@@ -46,9 +46,9 @@ ms.locfileid: "54173179"
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
-|connectionName|String|Имя подключения, отображаемая пользователю.|
+|connectionName|Строка|Имя подключения, отображаемая пользователю.|
 |role|Строка|Роль при наборе типа подключения к Pulse Secure.|
-|realm|Строка|Realm, когда тип подключения за установлен в Pulse Secure.|
+|realm|String|Realm, когда тип подключения за установлен в Pulse Secure.|
 |серверы|[коллекция vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получить доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
@@ -118,7 +118,6 @@ ms.locfileid: "54173179"
   ]
 }
 ```
-
 
 
 

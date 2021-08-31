@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ca71ec0000639a9613ea85bf99b691bd4de1d348aca1ccffd13d91bd3914b07
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c55eb63c5eee5b0d5488824b35fca0f9d90405d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166332"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804626"
 ---
 # <a name="create-microsofttunnelsite"></a>Создание microsoftTunnelSite
 
@@ -27,9 +27,9 @@ ms.locfileid: "54166332"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|MicrosoftTunnelGateway.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelSites
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,16 @@ POST /deviceManagement/microsoftTunnelSites
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id MicrosoftTunnelSite|
-|displayName|String|Имя отображения MicrosoftTunnelSite|
+|id|Строка|Id MicrosoftTunnelSite|
+|displayName|Строка|Имя отображения MicrosoftTunnelSite|
 |description|Строка|Описание MicrosoftTunnelSite|
 |publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|upgradeWindowUtcOffsetInMinutes|Int32|Зона времени сайта, представленная в качестве минутного смещения от UTC|
+|upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
+|upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
+|upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
+|upgradeAvailable|Логический|True, если доступно обновление|
+|internalNetworkProbeUrl|Строка|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
@@ -71,13 +77,19 @@ POST /deviceManagement/microsoftTunnelSites
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites
 Content-type: application/json
-Content-length: 246
+Content-length: 524
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
   "displayName": "Display Name value",
   "description": "Description value",
   "publicAddress": "Public Address value",
+  "upgradeWindowUtcOffsetInMinutes": 15,
+  "upgradeWindowStartTime": "12:01:27.3030000",
+  "upgradeWindowEndTime": "11:57:17.9830000",
+  "upgradeAutomatically": true,
+  "upgradeAvailable": true,
+  "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -89,7 +101,7 @@ Content-length: 246
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 295
+Content-Length: 573
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -97,12 +109,17 @@ Content-Length: 295
   "displayName": "Display Name value",
   "description": "Description value",
   "publicAddress": "Public Address value",
+  "upgradeWindowUtcOffsetInMinutes": 15,
+  "upgradeWindowStartTime": "12:01:27.3030000",
+  "upgradeWindowEndTime": "11:57:17.9830000",
+  "upgradeAutomatically": true,
+  "upgradeAvailable": true,
+  "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
 }
 ```
-
 
 
 

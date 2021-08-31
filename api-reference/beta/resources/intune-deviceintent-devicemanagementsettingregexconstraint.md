@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00607d37eda6490c5769c9566f583d7c231da33fa0b7781c072fdb619947fcc0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ee141de5e36e16ee490ee1c9e46f78182ab50224
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251297"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801488"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>тип ресурса deviceManagementSettingRegexConstraint
 
@@ -28,7 +28,7 @@ ms.locfileid: "54251297"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|regex|String|Шаблон RegEx, который соответствует|
+|regex|Строка|Шаблон RegEx, который соответствует|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,7 +46,6 @@ ms.locfileid: "54251297"
   "regex": "String"
 }
 ```
-
 
 
 

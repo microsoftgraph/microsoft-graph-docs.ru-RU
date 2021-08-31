@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e324ea1143a56b4a5309fc953723c76faa1b8f3023237e7648059229221f6fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e50a950819198766d5e6d0a1372010d69ebfa39
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185777"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793840"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип enum deviceManagementTemplateType
 
@@ -26,18 +26,17 @@ ms.locfileid: "54185777"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |securityBaseline|0|Шаблон базового плана безопасности|
-|specializedDevices|1 |Шаблон специализированных устройств|
+|specializedDevices|1|Шаблон специализированных устройств|
 |advancedThreatProtectionSecurityBaseline|2|Базовый шаблон advanced Threat Protection|
-|deviceConfiguration|3 |Шаблон конфигурации устройства|
+|deviceConfiguration|3|Шаблон конфигурации устройства|
 |настраиваемый|4 |Настраиваемый шаблон администрирования|
 |securityTemplate|5 |Шаблоны, содержащие конкретные параметры, ориентированные на безопасность|
 |MicrosoftEdgeSecurityBaseline|6 |Microsoft Edge базового шаблона безопасности|
 |MicrosoftOffice365ProPlusSecurityBaseline|7 |Microsoft Office 365 профессиональный плюс базового шаблона безопасности|
 |deviceCompliance|8 |Шаблон соответствия требованиям устройств|
 |deviceConfigurationForOffice365|9 |Конфигурация устройства для Microsoft Office 365 параметров|
-|cloudPC|10 |Базовый шаблон безопасности облачного КОМПЬЮТЕРА|
+|cloudPC|10 |Windows 365 базовый шаблон безопасности|
 |firewallSharedSettings|11 |Шаблоны общих объектов брандмауэра для параметров ссылок|
-
 
 
 

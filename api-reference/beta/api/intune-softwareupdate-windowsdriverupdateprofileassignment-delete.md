@@ -1,18 +1,18 @@
 ---
-title: Обновление deviceManagementReports
-description: Обновление свойств объекта deviceManagementReports.
+title: Удаление windowsDriverUpdateProfileAssignment
+description: Удаляет windowsDriverUpdateProfileAssignment.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c36373146214b88dc2992be13df754a34e39d5cb
+ms.openlocfilehash: 008933aaf310777ff04f570ef864be3f63fbf67b
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806798"
+ms.locfileid: "58806654"
 ---
-# <a name="update-devicemanagementreports"></a>Обновление deviceManagementReports
+# <a name="delete-windowsdriverupdateprofileassignment"></a>Удаление windowsDriverUpdateProfileAssignment
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58806798"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [deviceManagementReports.](../resources/intune-grouppolicy-devicemanagementreports.md)
+Удаляет [windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "58806798"
 }
 -->
 ``` http
-PATCH /deviceManagement/reports
+DELETE /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments/{windowsDriverUpdateProfileAssignmentId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,44 +47,23 @@ PATCH /deviceManagement/reports
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта deviceManagementReports.](../resources/intune-grouppolicy-devicemanagementreports.md)
-
-В следующей таблице показаны свойства, необходимые при создании [устройстваManagementReports.](../resources/intune-grouppolicy-devicemanagementreports.md)
-
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
-
-
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект deviceManagementReports](../resources/intune-grouppolicy-devicemanagementreports.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/reports
-Content-type: application/json
-Content-length: 65
-
-{
-  "@odata.type": "#microsoft.graph.deviceManagementReports"
-}
+DELETE https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/assignments/{windowsDriverUpdateProfileAssignmentId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 114
-
-{
-  "@odata.type": "#microsoft.graph.deviceManagementReports",
-  "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
-}
+HTTP/1.1 204 No Content
 ```
 
 

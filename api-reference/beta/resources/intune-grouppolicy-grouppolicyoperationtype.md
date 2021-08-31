@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 573d4a492c20eb191661d00cdd2df4337a0e6703de96c696b931eefc4c18f91f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2b73da848fbee1561f48abd620b4d668e0aeaa5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227311"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791819"
 ---
 # <a name="grouppolicyoperationtype-enum-type"></a>тип enum groupPolicyOperationType
 
@@ -26,13 +26,12 @@ ms.locfileid: "54227311"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Тип операции Group Policy недействительный.|
-|загрузка|1 |Тип операции загрузки групповой политики.|
+|загрузка|1|Тип операции загрузки групповой политики.|
 |uploadNewVersion|2|Групповая политика загружает новый тип операции версии.|
-|addLanguageFiles|3 |Группа Политика добавляет новый тип операции файлов языка (ADML).|
+|addLanguageFiles|3|Группа Политика добавляет новый тип операции файлов языка (ADML).|
 |removeLanguageFiles|4 |Группа Политика удаления типа операции языковых (ADML) файлов.|
 |updateLanguageFiles|5 |Тип действия файлов языка обновления групповой политики (ADML).|
 |удаление|6 |Групповая политика удаляет тип операции с загруженными файлами.|
-
 
 
 

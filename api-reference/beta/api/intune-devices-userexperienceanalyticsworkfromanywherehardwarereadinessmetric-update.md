@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 473c01d8c59912bc88880aaff42fe105b35ba234
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: afcb59af44a72f4643567b741737aa8ced4aa844
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265672"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805523"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>Обновление userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "58265672"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereHardwareReadiness
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereHardwareReadiness
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта метрики готовности оборудования для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта метрики готовности оборудования для аналитики пользовательского интерфейса.|
 |totalDeviceCount|Int32|Общее количество устройств в организации. Допустимые значения 2147483648 2147483647|
 |upgradeEligibleDeviceCount|Int32|Количество устройств в организации, имеющих право на обновление Windows. Допустимые значения 2147483648 2147483647|
 |ramCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка оборудования оперативной памяти не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
@@ -119,7 +119,6 @@ Content-Length: 675
   "osCheckFailedPercentage": 7.666666666666667
 }
 ```
-
 
 
 

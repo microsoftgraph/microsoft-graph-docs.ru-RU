@@ -1,18 +1,18 @@
 ---
-title: тип ресурса assignmentFilterState
-description: Представляет результат API GetState.
+title: тип ресурса metricTimeSeriesDataPoint
+description: Точка данных серии "Метрики"
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 030af2c672bf6cd5035a8ac530c824f565adcf53
+ms.openlocfilehash: 4939450d7cc4a8a42d804a3ccbceb4bfc9fdb297
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794702"
+ms.locfileid: "58800107"
 ---
-# <a name="assignmentfilterstate-resource-type"></a>тип ресурса assignmentFilterState
+# <a name="metrictimeseriesdatapoint-resource-type"></a>тип ресурса metricTimeSeriesDataPoint
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,13 @@ ms.locfileid: "58794702"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет результат API GetState.
+Точка данных серии "Метрики"
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enabled|Boolean|Индикатор включения или отключения AssignmentFilter.|
+|dateTime|DateTimeOffset|Время точки данных метрических рядов времени|
+|значение|Int64|Значение точки данных метрических рядов времени|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -34,13 +35,14 @@ ms.locfileid: "58794702"
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.assignmentFilterState"
+  "@odata.type": "microsoft.graph.metricTimeSeriesDataPoint"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.assignmentFilterState",
-  "enabled": true
+  "@odata.type": "#microsoft.graph.metricTimeSeriesDataPoint",
+  "dateTime": "String (timestamp)",
+  "value": 1024
 }
 ```
 

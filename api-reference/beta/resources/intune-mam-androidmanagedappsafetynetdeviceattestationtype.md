@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cd8140bacc4a76b63ec4e09fe3a6ded4f535a9fe9eee59b2b6f790f2803005fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63b8967bdfa480f4ba8d285517e91838347b82d6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197928"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783878"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>тип enum androidManagedAppSafetyNetDeviceAttestationType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54197928"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|без набора требований|
-|basicIntegrity|1 |требуется, чтобы устройство Android прошело проверку целостности SafetyNet Basic Integrity|
+|basicIntegrity|1|требуется, чтобы устройство Android прошело проверку целостности SafetyNet Basic Integrity|
 |basicIntegrityAndDeviceCertification|2|требует, чтобы android-устройство проходит проверки целостности и сертификации устройств SafetyNet|
-
 
 
 
