@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 03564d53acf549fe5d9a2485b61e404402c9c78a3a0b1f9e3c46d9767a89bb0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aba26f81a64c294e0f7d76ffa827a05bb95c2549
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206699"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786013"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>тип enum defenderSecurityCenterNotificationsFromAppType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54206699"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Not Configured|
-|blockNoncriticalNotifications|1 |Блокировка некритных уведомлений|
+|blockNoncriticalNotifications|1|Блокировка некритных уведомлений|
 |blockAllNotifications|2|Блокировка всех уведомлений|
-
 
 
 

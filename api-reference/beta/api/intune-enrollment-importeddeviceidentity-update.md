@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc42e589e5a9e7ee8badc0749c4f811bdbe1dbbddb8a35659b446e05e5353afa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4360e3e307ca311a10b8cfb683c621422dcf18ac
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168432"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58809674"
 ---
 # <a name="update-importeddeviceidentity"></a>Обновление importedDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "54168432"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +53,8 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор импортируемого удостоверения устройства|
-|importedDeviceIdentifier|Строка|Идентификатор импортируемого устройства|
+|id|Строка|Идентификатор импортируемого удостоверения устройства|
+|importedDeviceIdentifier|String|Идентификатор импортируемого устройства|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортируемого удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последнее изменение dateTime описания|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
@@ -108,7 +108,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

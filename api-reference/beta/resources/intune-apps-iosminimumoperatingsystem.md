@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e7504cb4b4ff666bf7d40bdbfaf457fb6b812f9a3b3ee9f4e6e53cd0c63eeb8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 27c53fb4ce2e502d30a9521b4709d19654c9f231
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165898"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807330"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -55,7 +55,6 @@ ms.locfileid: "54165898"
   "v14_0": true
 }
 ```
-
 
 
 

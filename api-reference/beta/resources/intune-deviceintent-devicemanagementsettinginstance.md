@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffebf2d3c9fd5df67e705d80dd0fe412ba32f32b13ddff672cbdcd47a1b43442
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5f4f2e9d6f3aa80da158cfae6e4f9863334e8491
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179055"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800389"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>тип ресурса deviceManagementSettingInstance
 
@@ -31,7 +31,7 @@ ms.locfileid: "54179055"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID экземпляра параметра|
+|id|Строка|ID экземпляра параметра|
 |definitionId|Строка|ID определения параметра для этого экземпляра|
 |valueJson|Строка|Представление значения JSON|
 
@@ -54,7 +54,6 @@ ms.locfileid: "54179055"
   "valueJson": "String"
 }
 ```
-
 
 
 

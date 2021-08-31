@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 62fe3b2182983c7be5f2a43f62a719d37821bfa26cb36d8c06374831a978ff8c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9b35e5d202c7d290cba2cc47c228563c7e478a8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250051"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800760"
 ---
 # <a name="androiddeviceownerplaystoremode-enum-type"></a>тип enum androidDeviceOwnerPlayStoreMode
 
@@ -26,9 +26,8 @@ ms.locfileid: "54250051"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Not Configured|
-|allowList|1 |Доступны только приложения, которые находятся в политике, и любое приложение, не вписающееся в политику, будет автоматически отключаться с устройства.|
+|allowList|1|Доступны только приложения, которые находятся в политике, и любое приложение, не вписающееся в политику, будет автоматически отключаться с устройства.|
 |blockList|2|Все приложения доступны, и любое приложение, которое не должно быть на устройстве, должно быть явно помечено как "ЗАБЛОКИРОВАНо" в политике приложений.|
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 338874b4f191a307d11cfde1102fbde0de80554b77c40d055be0407e1031f0cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9aabab7ce588ed10b0372fa667434fb46073222
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173655"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786413"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>Обновление deviceManagementDerivedCredentialSettings
 
@@ -31,7 +31,7 @@ ms.locfileid: "54173655"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,12 +62,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для производных учетных данных|
+|id|Строка|Уникальный идентификатор для производных учетных данных|
 |**Политика RA**|
 |helpUrl|Строка|URL-адрес, доступный конечным пользователям по мере получения полученных учетных данных с помощью Корпоративный портал.|
 |displayName|Строка|Имя отображения для профиля.|
-|эмитент|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|Полученный поставщик учетных данных для использования. Возможные значения: `intercede`, `entrustDatacard`, `purebred`.|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|Методы, используемые для информирования конечному пользователю Корпоративный портал для доставки профилей Wi-Fi, VPN или электронной почты, которые используют сертификаты на устройство. Возможные значения: `none`, `companyPortal`, `email`.|
+|эмитент|[deviceManagementDerivedCredentialIssuer](../resources/intune-shared-devicemanagementderivedcredentialissuer.md)|Полученный поставщик учетных данных для использования. Возможные значения: `intercede`, `entrustDatacard`, `purebred`.|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md)|Методы, используемые для информирования конечному пользователю Корпоративный портал для доставки профилей Wi-Fi, VPN или электронной почты, которые используют сертификаты на устройство. Возможные значения: `none`, `companyPortal`, `email`.|
 
 
 ## <a name="response"></a>Отклик
@@ -99,7 +99,6 @@ Content-Length: 132
   "id": "bc650741-0741-bc65-4107-65bc410765bc"
 }
 ```
-
 
 
 

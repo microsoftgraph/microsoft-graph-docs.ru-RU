@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4eb11bf8ca718818e516c5129417ef25cf2d5965a8aa92e4353134682a7d5bd5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec03cf7cdfca440b6f204cb6dbf7bc0e2bea0346
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139307"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789230"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>тип enum deviceManagementPartnerAppType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54139307"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Тип приложения-партнера неизвестен.|
-|singleTenantApp|1 |Partner App — это один клиент в AAD.|
+|singleTenantApp|1|Partner App — это один клиент в AAD.|
 |multiTenantApp|2|Партнер app — это клиент Multi в AAD.|
-
 
 
 

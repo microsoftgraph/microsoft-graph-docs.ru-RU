@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d579da383a793fd94ac53291f05e7ebcf3c1430dcadf97eb9374560a94fc61b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d797f7bf6e7dd706bf2f1605bfea769279ed8900
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211123"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815836"
 ---
 # <a name="create-macossoftwareupdateaccountsummary"></a>Создание macOSSoftwareUpdateAccountSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54211123"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|displayName|String|Имя отчета|
 |deviceId|String|ID устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceName|String|Имя устройства.|
@@ -116,7 +116,6 @@ Content-Length: 502
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

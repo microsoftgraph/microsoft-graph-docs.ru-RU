@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1fc9935fbca2fb0d710047e129fa4ce74758cad1cd026d527505329131f63f87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2bad15794fae5f5db3c34e7d8193771fe6d05886
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148010"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817385"
 ---
 # <a name="manageddevicemanagementfeatures-enum-type"></a>managedDeviceManagementFeatures enum type
 
@@ -26,8 +26,7 @@ ms.locfileid: "54148010"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Неизвестные функции управления устройствами.|
-|MicrosoftManagedDesktop|1 |Компьютеры, управляемые Майкрософт|
-
+|MicrosoftManagedDesktop|1|Компьютеры, управляемые Майкрософт|
 
 
 

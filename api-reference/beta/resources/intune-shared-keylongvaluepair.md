@@ -1,18 +1,18 @@
 ---
-title: тип ресурса deviceManagementConfigurationSettingOccurrence
-description: Пока не задокументировано.
+title: тип ресурса keyLongValuePair
+description: Пара ключевых длинных значений
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d339ba6fce600c578ce4aa180a509ec685ca2216
+ms.openlocfilehash: 7d0e2f624dcaffa9706f241814e5185a1bcb6341
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816916"
+ms.locfileid: "58786724"
 ---
-# <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>тип ресурса deviceManagementConfigurationSettingOccurrence
+# <a name="keylongvaluepair-resource-type"></a>тип ресурса keyLongValuePair
 
 Пространство имен: microsoft.graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "58816916"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пара ключевых длинных значений
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|minDeviceOccurrence|Int32|Минимальный параметр времени можно установить на устройстве. Параметр MinDeviceOccurrence 0 означает необязательный|
-|maxDeviceOccurrence|Int32|Максимальный параметр времени можно установить на устройстве. |
+|name|String|Имя этой пары длинного значения ключа|
+|значение|Int64|Значение для этой пары длинных значений ключа|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -35,14 +35,14 @@ ms.locfileid: "58816916"
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingOccurrence"
+  "@odata.type": "microsoft.graph.keyLongValuePair"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingOccurrence",
-  "minDeviceOccurrence": 1024,
-  "maxDeviceOccurrence": 1024
+  "@odata.type": "#microsoft.graph.keyLongValuePair",
+  "name": "String",
+  "value": 1024
 }
 ```
 

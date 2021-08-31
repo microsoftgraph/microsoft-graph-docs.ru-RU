@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 584efcd6e320a95dc6e62f59b112d1041535f054
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: ef54819a90c2a37bc864d5fc9a7dbd7323536bca
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697174"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794120"
 ---
 # <a name="pstncalllogrow-resource-type"></a>тип ресурсов pstnCallLogRow
 
@@ -20,32 +20,38 @@ ms.locfileid: "51697174"
 
 Представляет строку данных в журнале вызовов для общедоступных телефонных сетей коммутатора (PSTN). Каждая строка сопомна одному вызову.
 
+## <a name="methods"></a>Методы
+
+| Метод       | Возвращаемый тип | Описание |
+|:-------------|:------------|:------------|
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [коллекция microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) | Список **объектов pstnCallLogRow** в записи вызовов. |
+
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|callDurationSource|pstnCallDurationSource|Источник данных о продолжительности вызова. Если при вызове используется сторонний оператор связи через программу "Подключение оператора", оператор может предоставить собственные данные о продолжительности вызова. В этом случае значение свойства `operator` . В противном случае значение `microsoft` .|
-|calleeNumber|String|Номер, набраный [в формате E.164.](https://en.wikipedia.org/wiki/E.164)|
-|callerNumber|String|Номер, который получил вызов для входящие вызовы или номер, набраный для исходящие вызовы. Формат E.164.|
-|callId|String|Идентификатор вызова. Не гарантируется уникальность.|
-|callType|String|Был ли вызов исходящие или входящие вызовы PSTN и тип вызова, например вызов, размещенный пользователем или аудиоконференции.|
+|callDurationSource|microsoft.graph.callRecords.pstnCallDurationSource|Источник данных о продолжительности вызова. Если при вызове используется сторонний оператор связи через программу операторов Подключение, оператор может предоставить собственные данные о продолжительности вызова. В этом случае значение свойства `operator` . В противном случае значение `microsoft` .|
+|calleeNumber|Строка|Номер, набраный [в формате E.164.](https://en.wikipedia.org/wiki/E.164)|
+|callerNumber|Строка|Номер, который получил вызов для входящие вызовы или номер, набраный для исходящие вызовы. Формат E.164.|
+|callId|Строка|Идентификатор вызова. Не гарантируется уникальность.|
+|callType|Строка|Был ли вызов исходящие или входящие вызовы PSTN и тип вызова, например вызов, размещенный пользователем или аудиоконференции.|
 |заряд|Двойное с плавающей точкой|Сумма денег или стоимость звонка, который взимается с вашей учетной записи.|
-|conferenceId|String|ID аудиоконференции.|
+|conferenceId|Строка|ID аудиоконференции.|
 |connectionCharge|Двойное с плавающей точкой|Цена платы за подключение.|
-|валюта|String|Тип валюты, используемой для расчета стоимости вызова[(ISO 4217).](https://en.wikipedia.org/wiki/ISO_4217)|
-|destinationContext|String|Был ли вызов внутренним (в пределах страны или региона) или международным (за пределами страны или региона) в зависимости от расположения пользователя.|
-|destinationName|String|Страна или регион, набрана.|
+|валюта|Строка|Тип валюты, используемой для расчета стоимости вызова[(ISO 4217).](https://en.wikipedia.org/wiki/ISO_4217)|
+|destinationContext|Строка|Был ли вызов внутренним (в пределах страны или региона) или международным (за пределами страны или региона) в зависимости от расположения пользователя.|
+|destinationName|Строка|Страна или регион, набрана.|
 |duration|Int32|Сколько времени вызов был подключен, в секундах.|
 |endDateTime|DateTimeOffset|Время окончания вызова.|
-|id|String|Уникальный идентификатор вызовов. GUID.|
+|id|Строка|Уникальный идентификатор вызовов. GUID.|
 |inventoryType|String|Тип номера телефона пользователя, например служба бесплатного номера.|
-|licenseCapability|String|Лицензия, используемая для вызова.|
-|operator|String|Оператор связи, предоставлял службы PSTN для этого вызова. Это может быть Корпорация Майкрософт или сторонний оператор через [программу подключения оператора.](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398)|
+|licenseCapability|Строка|Лицензия, используемая для вызова.|
+|operator|Строка|Оператор связи, предоставлял службы PSTN для этого вызова. Это может быть Корпорация Майкрософт или сторонний оператор через программу [операторов Подключение.](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398)|
 |startDateTime|DateTimeOffset|Время начала вызова.|
 |tenantCountryCode|String|Код страны клиента [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |useCountryCode|String|Код страны пользователя [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Отображаемое имя пользователя.|
-|userId|String|Вызов ID пользователя в Графе. GUID. Эта и другие сведения о пользователях будут null/empty для типов вызовов ботов (ucap_in, ucap_out).|
+|userId|String|Вызов ID пользователя в Graph. GUID. Эта и другие сведения о пользователях будут null/empty для типов вызовов ботов (ucap_in, ucap_out).|
 |userPrincipalName|String|UserPrincipalName (имя регистрации) в Azure Active Directory. Это обычно то же самое, что и SIP-адрес пользователя, и может быть таким же, как и адрес электронной почты пользователя.|
 
 ## <a name="relationships"></a>Связи
@@ -57,7 +63,7 @@ ms.locfileid: "51697174"
 Ниже указано представление ресурса в формате JSON.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecords.pstnCallLogRow",
   "keyProperty": "id"
 }

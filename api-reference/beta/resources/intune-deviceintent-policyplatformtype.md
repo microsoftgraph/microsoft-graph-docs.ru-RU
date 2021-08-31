@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3316405626d2bef9ced62599d43f339301309fa
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 833676593363e6493dc70853c654d5bb14e1a7fb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58267052"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786322"
 ---
 # <a name="policyplatformtype-enum-type"></a>тип enum policyPlatformType
 
@@ -26,16 +26,15 @@ ms.locfileid: "58267052"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Android|0|Android.|
-|AndroidForWork|1 |AndroidForWork.|
+|AndroidForWork|1|AndroidForWork.|
 |iOS|2|iOS.|
-|macOS|3 |MacOS.|
+|macOS|3|MacOS.|
 |windowsPhone81|4 |WindowsPhone 8.1.|
 |windows81AndLater|5 |Windows 8.1 и более поздней|
 |windows10AndLater|6 |Windows 10 и более поздней.|
 |AndroidWorkProfile|7 |AndroidWorkProfile.|
 |windows10XProfile|8 |Windows10XProfile.|
 |все|100|Все платформы.|
-
 
 
 

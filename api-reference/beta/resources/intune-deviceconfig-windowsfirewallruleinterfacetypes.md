@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3704c3acc5e1775b58df2c1df0aaf186aa93b03afdf51bc21988bcc901cfc5aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 395a6aed6e6fad1e7dac5c33c7da0b69d0055528
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236229"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58808862"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>тип enum windowsFirewallRuleInterfaceTypes
 
@@ -26,10 +26,9 @@ ms.locfileid: "54236229"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Нет набора флагов.|
-|remoteAccess|1 |Тип интерфейса удаленного доступа.|
+|remoteAccess|1|Тип интерфейса удаленного доступа.|
 |беспроводная связь|2|Тип беспроводного интерфейса.|
 |lan|4 |Тип интерфейса LAN.|
-
 
 
 

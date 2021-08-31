@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b22ae3e5e9b94527417f671d0c6ca3a3545fee6e6819ef31743d0be410129e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de3077e2ee6e79207b4ed8a267d8c3ca02bd6454
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251129"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792549"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>тип ресурса mobileAppInstallTimeSettings
 
@@ -47,7 +47,6 @@ ms.locfileid: "54251129"
   "deadlineDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

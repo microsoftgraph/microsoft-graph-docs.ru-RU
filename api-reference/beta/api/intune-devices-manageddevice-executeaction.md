@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6226b660973f5c9851ea4539ea773b3ef7032ed97aa6065d866b0233bf006a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8841858ce3f50588149eccd6b5213b8d952ea127
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158939"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789083"
 ---
 # <a name="executeaction-action"></a>Действие executeAction
 
@@ -29,7 +29,7 @@ ms.locfileid: "54158939"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,6 +63,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |notificationTitle|String|Пока не задокументировано.|
 |notificationBody|String|Пока не задокументировано.|
 |deviceName|String|Пока не задокументировано.|
+|carrierUrl|String|Пока не задокументировано.|
+|deprovisionReason|String|Пока не задокументировано.|
+|organizationalUnitPath|String|Пока не задокументировано.|
 
 
 
@@ -77,7 +80,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 274
+Content-length: 441
 
 {
   "actionName": "delete",
@@ -88,7 +91,10 @@ Content-length: 274
   ],
   "notificationTitle": "Notification Title value",
   "notificationBody": "Notification Body value",
-  "deviceName": "Device Name value"
+  "deviceName": "Device Name value",
+  "carrierUrl": "https://example.com/carrierUrl/",
+  "deprovisionReason": "Deprovision Reason value",
+  "organizationalUnitPath": "Organizational Unit Path value"
 }
 ```
 
@@ -117,7 +123,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

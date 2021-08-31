@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75ef406d33064211379b1d34680677922b946717a70cb4f8692a5976a81add44
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3cf9aeba26e65523f36d438211effd3b6c2c5819
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196186"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817301"
 ---
 # <a name="update-macoslobapp"></a>Обновление macOSLobApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "54196186"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,8 +56,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -101,7 +101,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1722
+Content-length: 1742
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -143,7 +143,8 @@ Content-length: 1722
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -170,7 +171,7 @@ Content-length: 1722
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1894
+Content-Length: 1914
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -215,7 +216,8 @@ Content-Length: 1894
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -236,7 +238,6 @@ Content-Length: 1894
   "installAsManaged": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae59954fbdc06b559827650934e6bb0526fa9dca
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4162c32303bf71d8b9fd1b0911497d8ffffb91cf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248247"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786784"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Создание windowsManagementAppHealthState
 
@@ -27,9 +27,9 @@ ms.locfileid: "58248247"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |installedVersion|Строка|Windows установленной версии приложения управления.|
 |lastCheckInDateTime|DateTimeOffset|Windows последнего времени регистрации приложения управления.|
 |deviceName|String|Имя устройства, на котором Windows установлено приложение управления.|
-|deviceOSVersion|String|Windows 10 ВЕРСИЯ ОС устройства, на котором Windows установлено приложение управления.|
+|deviceOSVersion|Строка|Windows 10 ВЕРСИЯ ОС устройства, на котором Windows установлено приложение управления.|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
 
 
 

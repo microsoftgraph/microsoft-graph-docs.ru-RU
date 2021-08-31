@@ -4,12 +4,12 @@ description: Перечислены API Graph Microsoft для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 9ef71ce51e86d2582935a5f647a0a7ad07b70e73
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 672672edd0955070c4df6a4a90c78c5c5b7329ce
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264082"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816438"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -63,6 +63,7 @@ ms.locfileid: "58264082"
 - [Диапазон IP-адресов](intune-shared-iprange.md)
 - [Диапазон IPv4-адресов](intune-shared-ipv4range.md)
 - [Диапазон IPv6-адресов](intune-shared-ipv6range.md)
+- [Пара ключевых длинных значений](intune-shared-keylongvaluepair.md)
 - [Размер ключа](intune-shared-keysize.md)
 - [Параметр поставщика хранилища ключей](intune-shared-keystorageprovideroption.md)
 - [Использование ключей](intune-shared-keyusages.md)
