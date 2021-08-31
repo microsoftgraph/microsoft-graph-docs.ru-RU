@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f73f00d1d323a3bc48824aaada4591f6f2cb01d6790c3e0fa850eaf7b8fab35a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0d39b83ee7f1225e5b5df7411896ab4405ba383e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157019"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800851"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Update groupPolicySettingMapping
 
@@ -29,7 +29,7 @@ ms.locfileid: "54157019"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |parentId|Строка|Родительский Id параметра групповой политики.|
 |childIdList|Коллекция String|Список детских ид параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
@@ -62,10 +62,10 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |settingDisplayName|Строка|Отображение имени этого параметра групповой политики.|
 |settingDisplayValue|Строка|Отображение значения этого параметра групповой политики.|
 |settingDisplayValueType|Строка|Тип отображения значения этого параметра групповой политики.|
-|settingValueDisplayUnits|String|Отображаемая единица этого значения групповой политики|
+|settingValueDisplayUnits|Строка|Отображаемая единица этого значения групповой политики|
 |settingCategory|Строка|Категория, в которая находится параметр групповой политики.|
 |mdmCspName|Строка|CSP назовет эту групповую политику, устанавливая карты.|
-|mdmSettingUri|Строка|MDM CSP URI этой групповой политики, устанавливая карты.|
+|mdmSettingUri|String|MDM CSP URI этой групповой политики, устанавливая карты.|
 |mdmMinimumOSVersion|Int32|Минимальная версия ОС, поддерживаемая этим параметром mdm.|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (безопасность или admx) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
 |isMdmSupported|Логический|Указывает, поддерживает ли параметр Intune или нет.|
@@ -73,7 +73,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область настройки. Возможные значения: `unknown`, `device`, `user`.|
 |intuneSettingUriList|Коллекция String|Список URL-адресов intune Setting this group policy setting maps to|
 |intuneSettingDefinitionId|Строка|Id определения параметра Intune|
-|admxSettingDefinitionId|String|Admx Group Policy Id|
+|admxSettingDefinitionId|Строка|Admx Group Policy Id|
 
 
 
@@ -154,7 +154,6 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
-
 
 
 

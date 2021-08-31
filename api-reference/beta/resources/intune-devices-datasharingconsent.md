@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 455a062e028059747e833e2deac3cd99b791f6be9ba95f6359b24de35205a826
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06d712ffa94b4308c7234b45ffba5d0ab6c05423
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215071"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791132"
 ---
 # <a name="datasharingconsent-resource-type"></a>тип ресурса dataSharingConsent
 
@@ -40,7 +40,7 @@ ms.locfileid: "54215071"
 |termsUrl|Строка|TermsUrl для согласия на обмен данными|
 |granted|Логический|Предоставлено состояние для согласия на обмен данными|
 |grantDateTime|DateTimeOffset|Для этой учетной записи было предоставлено согласие на время|
-|grantedByUpn|Строка|Upn пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUpn|String|Upn пользователя, который предоставил согласие для этой учетной записи|
 |grantedByUserId|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 ## <a name="relationships"></a>Связи
@@ -66,7 +66,6 @@ ms.locfileid: "54215071"
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

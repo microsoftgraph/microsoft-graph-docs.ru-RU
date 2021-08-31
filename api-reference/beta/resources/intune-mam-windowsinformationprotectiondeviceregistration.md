@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68c8ed0f9c4b214d95d286db00a4732587ce188fa548219181048b4ea13705c3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9cb3be503f401675ba286961e89f027b36219b8a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248279"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796848"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>тип ресурса windowsInformationProtectionDeviceRegistration
 
@@ -35,7 +35,7 @@ ms.locfileid: "54248279"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userId|String|UserId, связанный с этой записью регистрации устройства.|
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации устройства.|
 |deviceName|String|Имя устройства.|
@@ -66,7 +66,6 @@ ms.locfileid: "54248279"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

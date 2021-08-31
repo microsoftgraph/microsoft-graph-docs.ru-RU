@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e276223beb26c0fac00c69fe62e5b1810b2c9b9f0c2e9388b6099ff3e1e9f4a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 133a6b5605f7a8efe880eb71d3354ba59623152b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253546"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785705"
 ---
 # <a name="unsupportedgrouppolicyextension-resource-type"></a>тип ресурса unsupportedGroupPolicyExtension
 
@@ -34,11 +34,11 @@ ms.locfileid: "54253546"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Настройка области неподтверченного расширения. Возможные значения: `unknown`, `device`, `user`.|
-|namespaceUrl|String|Url-адрес пространства имен неподтверченного расширения.|
-|extensionType|String|ExtensionType неподтверченного расширения.|
-|nodeName|String|Имя узла неподтверченного расширения.|
+|namespaceUrl|Строка|Url-адрес пространства имен неподтверченного расширения.|
+|extensionType|Строка|ExtensionType неподтверченного расширения.|
+|nodeName|Строка|Имя узла неподтверченного расширения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -61,7 +61,6 @@ ms.locfileid: "54253546"
   "nodeName": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06c6b9d9ee62fcfe63f609086cdd05a70819d60f49f9b26f6dc7af90651d46c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45107731d63cbd86691d15043cce8d296820b4e3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54162097"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783087"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Создание deviceManagementSettingDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "54162097"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,15 +56,15 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID определения параметра|
+|id|Строка|ID определения параметра|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|String|Имя отображения параметра|
-|isTopLevel|Логический|Если параметр верхнего уровня, его можно настроить без необходимости завернутой в коллекцию или сложный параметр|
+|displayName|Строка|Имя отображения параметра|
+|isTopLevel|Boolean|Если параметр верхнего уровня, его можно настроить без необходимости завернутой в коллекцию или сложный параметр|
 |description|Строка|Описание параметра|
-|placeholderText|String|Текст placeholder в качестве примера допустимого ввода|
-|documentationUrl|Строка|URL-адрес для настройки документации|
-|headerTitle|Строка|заголовок параметра представляет категорию/раздел параметра/параметров|
-|headerSubtitle|String|субтитры заголовок параметра для получения дополнительных сведений о категории/разделе|
+|placeholderText|Строка|Текст placeholder в качестве примера допустимого ввода|
+|documentationUrl|String|URL-адрес для настройки документации|
+|headerTitle|String|заголовок параметра представляет категорию/раздел параметра/параметров|
+|headerSubtitle|Строка|субтитры заголовок параметра для получения дополнительных сведений о категории/разделе|
 |keywords|Коллекция String|Ключевые слова, связанные с параметром|
 |ограничения|[коллекция deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависимости|[коллекция deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей от других параметров|
@@ -166,7 +166,6 @@ Content-Length: 1063
   ]
 }
 ```
-
 
 
 

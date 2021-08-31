@@ -1,18 +1,18 @@
 ---
-title: Get iosVppAppAssignedDeviceLicense
-description: Чтение свойств и связей объекта iosVppAppAssignedDeviceLicense.
+title: Get userExperienceAnalyticsModelScores
+description: Чтение свойств и связей объекта userExperienceAnalyticsModelScores.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3fa217f3279c05ecfa69ce5151c7df460f9877d
+ms.openlocfilehash: b6357270d048040fdbc1668b7cf4c8faaec52abc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786581"
+ms.locfileid: "58796565"
 ---
-# <a name="get-iosvppappassigneddevicelicense"></a>Get iosVppAppAssignedDeviceLicense
+# <a name="get-userexperienceanalyticsmodelscores"></a>Get userExperienceAnalyticsModelScores
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58786581"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [iosVppAppAssignedDeviceLicense.](../resources/intune-apps-iosvppappassigneddevicelicense.md)
+Чтение свойств и связей [объекта userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58786581"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses/{iosVppAppAssignedLicenseId}
+GET /deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,14 +53,14 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект iosVppAppAssignedDeviceLicense](../resources/intune-apps-iosvppappassigneddevicelicense.md) в тексте ответа.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses/{iosVppAppAssignedLicenseId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,18 +68,19 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 411
+Content-Length: 437
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.iosVppAppAssignedDeviceLicense",
-    "id": "bed943d0-43d0-bed9-d043-d9bed043d9be",
-    "userEmailAddress": "User Email Address value",
-    "userId": "User Id value",
-    "userName": "User Name value",
-    "userPrincipalName": "User Principal Name value",
-    "managedDeviceId": "Managed Device Id value",
-    "deviceName": "Device Name value"
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
+    "id": "f2c0f69c-f69c-f2c0-9cf6-c0f29cf6c0f2",
+    "model": "Model value",
+    "manufacturer": "Manufacturer value",
+    "modelDeviceCount": 0,
+    "endpointAnalyticsScore": 7.333333333333333,
+    "startupPerformanceScore": 7.666666666666667,
+    "appReliabilityScore": 6.333333333333333,
+    "healthStatus": "insufficientData"
   }
 }
 ```

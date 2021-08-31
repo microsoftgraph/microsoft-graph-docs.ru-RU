@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc32cd6b661b7f89453da1c6ddf3b3320686907fd14c3777d9ab663160b7eae6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 036f3ed99dd9af00c5e663f5236817d041785f30
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173319"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789708"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>тип ресурса macOsVppAppAssignedLicense
 
@@ -61,7 +61,6 @@ ms.locfileid: "54173319"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

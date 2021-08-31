@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79cf249cf4d0bc5ccbc9b4fbb0ab2683815b153872db978f6d965eb2e8fb731b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b69b9639c4ec591e2a21dfe1e83bb004f856a993
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127021"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784809"
 ---
 # <a name="devicemanagementconfigurationsettinginstancetemplatereference-resource-type"></a>тип ресурса deviceManagementConfigurationSettingInstanceTemplateReference
 
@@ -25,7 +25,7 @@ ms.locfileid: "54127021"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingInstanceTemplateId|String|Настройка кода шаблона экземпляра|
+|settingInstanceTemplateId|Строка|Настройка кода шаблона экземпляра|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,7 +43,6 @@ ms.locfileid: "54127021"
   "settingInstanceTemplateId": "String"
 }
 ```
-
 
 
 

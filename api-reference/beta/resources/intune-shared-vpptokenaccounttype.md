@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 24adb90edde89a95e996acdcf7bc93cbcc5b4a2630fdd71ae6401b0bdcfe4237
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d2a2c50f10920e0bdda944cef12927dafa79d48
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224364"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790096"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>тип enum vppTokenAccountType
 
@@ -26,8 +26,7 @@ ms.locfileid: "54224364"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |бизнес|0|Маркер apple Volume Purchase Program, связанный с бизнес-программой.|
-|образование|1 |Маркер apple Volume Purchase Program, связанный с образовательной программой.|
-
+|образование|1|Маркер apple Volume Purchase Program, связанный с образовательной программой.|
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Получить windowsPhone81StoreApp
-description: Чтение свойств и связей объекта WindowsPhone81StoreApp.
-author: dougeby
+title: Получить windowsOfficeClientSecurityConfiguration
+description: Получите определенный объект политики безопасности windowsOfficeClientSecurityConfiguration.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 438e4c5e674989262c880ba69675730c9c12a11f
+ms.openlocfilehash: ffcc157914895c063e1da088fbd56a83ad355e39
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793727"
+ms.locfileid: "58790512"
 ---
-# <a name="get-windowsphone81storeapp"></a>Получить windowsPhone81StoreApp
+# <a name="get-windowsofficeclientsecurityconfiguration"></a>Получить windowsOfficeClientSecurityConfiguration
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58793727"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [WindowsPhone81StoreApp.](../resources/intune-apps-windowsphone81storeapp.md)
+Получите определенный объект [политики безопасности windowsOfficeClientSecurityConfiguration.](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,9 +37,7 @@ ms.locfileid: "58793727"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -55,14 +53,14 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WindowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{key}
 ```
 
 ### <a name="response"></a>Отклик
@@ -70,38 +68,38 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1079
+Content-Length: 1152
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
-    "id": "f68ce6a1-e6a1-f68c-a1e6-8cf6a1e68cf6",
-    "displayName": "Display Name value",
+    "@odata.type": "#microsoft.graph.windowsOfficeClientSecurityConfiguration",
+    "id": "f90ca1a5-a1a5-f90c-a5a1-0cf9a5a10cf9",
+    "userPreferencePayload": "<Unknown Primitive Type Edm.Stream>",
+    "policyPayload": "<Unknown Primitive Type Edm.Stream>",
     "description": "Description value",
-    "publisher": "Publisher value",
-    "largeIcon": {
-      "@odata.type": "microsoft.graph.mimeContent",
-      "type": "Type value",
-      "value": "dmFsdWU="
+    "displayName": "Display Name value",
+    "priority": 8,
+    "userCheckinSummary": {
+      "@odata.type": "microsoft.graph.officeUserCheckinSummary",
+      "succeededUserCount": 2,
+      "failedUserCount": 15
     },
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "isFeatured": true,
-    "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "informationUrl": "https://example.com/informationUrl/",
-    "owner": "Owner value",
-    "developer": "Developer value",
-    "notes": "Notes value",
-    "uploadState": 11,
-    "publishingState": "processing",
-    "isAssigned": true,
-    "roleScopeTagIds": [
-      "Role Scope Tag Ids value"
-    ],
-    "dependentAppCount": 1,
-    "supersedingAppCount": 3,
-    "supersededAppCount": 2,
-    "appStoreUrl": "https://example.com/appStoreUrl/"
+    "checkinStatuses": [
+      {
+        "@odata.type": "microsoft.graph.officeClientCheckinStatus",
+        "userPrincipalName": "User Principal Name value",
+        "deviceName": "Device Name value",
+        "devicePlatform": "Device Platform value",
+        "devicePlatformVersion": "Device Platform Version value",
+        "wasSuccessful": true,
+        "userId": "User Id value",
+        "checkinDateTime": "2016-12-31T23:56:33.9571764-08:00",
+        "errorMessage": "Error Message value",
+        "appliedPolicies": [
+          "Applied Policies value"
+        ]
+      }
+    ]
   }
 }
 ```

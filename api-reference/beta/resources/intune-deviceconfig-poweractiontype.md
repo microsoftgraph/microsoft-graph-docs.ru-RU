@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4fe6ddd5dfa8c1083b9c617bc9e4d664b2c6f816572a3f01881142d92516aa4f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3dc0cc616307c3a2d703179c71837a7eac781f17
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232743"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791517"
 ---
 # <a name="poweractiontype-enum-type"></a>тип enum powerActionType
 
@@ -26,11 +26,10 @@ ms.locfileid: "54232743"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроено|
-|noAction|1 |Нет действий|
+|noAction|1|Нет действий|
 |сон|2|Поместить устройство в состояние сна|
-|hibernate|3 |Поместить устройство в состояние hibernate|
+|hibernate|3|Поместить устройство в состояние hibernate|
 |отключение|4 |Устройство отключения|
-
 
 
 

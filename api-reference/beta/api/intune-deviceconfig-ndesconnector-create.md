@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fdbde9cf1d77a75c1217410e2cb2aa33e36f0ec8996dd26acfc6837fb55e2911
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe4015956606d528638ccee8c85dbb3236f12096
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228578"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799917"
 ---
 # <a name="create-ndesconnector"></a>Создание ndesConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "54228578"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ POST /deviceManagement/ndesConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ соединиттеля NDES.|
+|id|Строка|Ключ соединиттеля NDES.|
 |lastConnectionDateTime|DateTimeOffset|Последнее время подключения для соединитетеля Ndes|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединитетеля Ndes. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|Строка|Дружеское имя соединиттеля Ndes.|
+|displayName|String|Дружеское имя соединиттеля Ndes.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 
