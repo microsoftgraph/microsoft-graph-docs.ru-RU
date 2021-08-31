@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4eeb1be1f2fb2e5614398cbe5863ea70df4a33eec8776f54b795018f4bb2da4e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 79d5f2b13412a04d4ce36b8db987b0314c4def74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253735"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759591"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>тип enum windowsFirewallRuleNetworkProfileTypes
 
@@ -26,10 +26,9 @@ ms.locfileid: "54253735"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Нет набора флагов.|
-|domain|1 |Профиль для сетей, подключенных к доменам.|
+|domain|1|Профиль для сетей, подключенных к доменам.|
 |частный|2|Профиль для частных сетей.|
 |public|4 |Профиль для общедоступных сетей.|
-
 
 
 

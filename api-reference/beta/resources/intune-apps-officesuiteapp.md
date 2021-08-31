@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d169739b2b7ec6567e1bc1201ef5129e07a98cf33abf53386601aec471f73f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 905dd84366253b8f346efd42118711a118c61580
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226506"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815171"
 ---
 # <a name="officesuiteapp-resource-type"></a>тип ресурса officeSuiteApp
 
@@ -63,7 +63,7 @@ ms.locfileid: "54226506"
 |useSharedComputerActivation|Логический|Свойство, которое представляет, используется ли активация общего компьютера не для пакета приложений Office365.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Свойство, представляюное канал обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`, `monthlyEnterprise`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версии пакета приложений Office365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|localesToInstall|Коллекция String|Свойство, которое будет представлять локальные органы, установленные при установке приложений из Office365. Он использует стандартный RFC 6033. Ref: https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
+|localesToInstall|Коллекция String|Свойство, которое будет представлять локальные органы, установленные при установке приложений из Office365. Он использует стандартный RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Чтобы указать уровень отображения пользовательского интерфейса установки установки на устройстве. Возможные значения: `none`, `full`.|
 |shouldUninstallOlderVersionsOfOffice|Логический|Свойство, определяющее, следует ли удалить существующие Office MSI, если набор приложений Office365 развернут на устройстве или нет.|
 |targetVersion|Строка|Свойство, которое должно представлять конкретную целевую версию пакета приложений Office365, которая должна быть развернута на устройствах.|
@@ -152,7 +152,6 @@ ms.locfileid: "54226506"
   "officeConfigurationXml": "binary"
 }
 ```
-
 
 
 

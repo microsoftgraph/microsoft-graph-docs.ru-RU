@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e33d2771ef10e90e3ed1e8f6aa645c08d814e3cfa8bed6835cff469e6d3c166
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 840848e1b3cd7a77360de55e3d4be5a4a3513561
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148654"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795335"
 ---
 # <a name="wipe-action"></a>Действие wipe
 
@@ -29,7 +29,7 @@ ms.locfileid: "54148654"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{windo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProt
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

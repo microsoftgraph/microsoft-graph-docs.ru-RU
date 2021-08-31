@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e69ce442ef3249710b28764cf8b44cebaa3c49e266ea8cae74dacf0cdda9740
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5667c2172f6cd633dd688ce104704c4f997449f8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244899"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795201"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>тип ресурса windowsPrivacyDataAccessControlItem
 
@@ -37,7 +37,7 @@ ms.locfileid: "54244899"
 |id|String|Ключ WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Это указывает уровень доступа к категории данных конфиденциальности, которой будет предоставлено указанное приложение. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Это указывает на категорию данных конфиденциальности, к которой будет применяться определенный контроль доступа. Возможные значения: `notConfigured` `accountInfo` , , , , , `appsRunInBackground` , , , `calendar` `callHistory` , , `camera` `contacts` `diagnosticsInfo` `email` , `location` `messaging` `microphone` `motion` `notifications` `phone` `radios` `tasks` `syncWithDevices` `trustedDevices` .|
-|appPackageFamilyName|String|Имя семейства пакета приложения Windows. При наборе уровень доступа применяется к указанному приложению.|
+|appPackageFamilyName|Строка|Имя семейства пакета приложения Windows. При наборе уровень доступа применяется к указанному приложению.|
 |appDisplayName|String|Имя семейства пакета приложения Windows. При наборе уровень доступа применяется к указанному приложению.|
 
 ## <a name="relationships"></a>Связи
@@ -61,7 +61,6 @@ ms.locfileid: "54244899"
   "appDisplayName": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0e3750a6bfaec140231d680560ad63c89f2f1de759378a5d3748571a701edcd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 465abb5a003817f596eb70067b8ac6b5a28e94e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219873"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759437"
 ---
 # <a name="devicemanagementintent-resource-type"></a>тип ресурса deviceManagementIntent
 
@@ -40,11 +40,11 @@ ms.locfileid: "54219873"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID намерения|
-|displayName|String|Имя отображения, заданное пользователю|
+|displayName|Строка|Имя отображения, заданное пользователю|
 |description|Строка|Описание пользователя|
 |isAssigned|Boolean|Означает, назначены ли намерения пользователям|
 |lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
-|templateId|Строка|ID шаблона, который был создан из (если таково)|
+|templateId|String|ID шаблона, который был создан из (если таково)|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 ## <a name="relationships"></a>Связи
@@ -81,7 +81,6 @@ ms.locfileid: "54219873"
   ]
 }
 ```
-
 
 
 

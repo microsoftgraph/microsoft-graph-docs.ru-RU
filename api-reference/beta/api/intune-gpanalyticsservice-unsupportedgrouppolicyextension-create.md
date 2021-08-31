@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5357eaf4f6f55881373121522754159c877c5e66364899b9997e852d69f585a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ea39cfba314c1f6b68f9b09f3e1418de978cae5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191335"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802595"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>Создание неподтвердимойGroupPolicyExtension
 
@@ -29,7 +29,7 @@ ms.locfileid: "54191335"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,9 +53,9 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Настройка области неподтверченного расширения. Возможные значения: `unknown`, `device`, `user`.|
-|namespaceUrl|String|Url-адрес пространства имен неподтверченного расширения.|
+|namespaceUrl|Строка|Url-адрес пространства имен неподтверченного расширения.|
 |extensionType|Строка|ExtensionType неподтверченного расширения.|
 |nodeName|Строка|Имя узла неподтверченного расширения.|
 
@@ -98,7 +98,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 

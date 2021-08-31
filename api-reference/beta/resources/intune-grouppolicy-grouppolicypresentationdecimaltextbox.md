@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79610e0abc3a359b2d2e7efc0c052efbf71fe1510cc1114ab57a196994c86614
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 79ef120bf7845d95e5cbc1aa8c465a38fc3f4ee2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161145"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802959"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>тип ресурса groupPolicyPresentationDecimalTextBox
 
@@ -37,13 +37,13 @@ ms.locfileid: "54161145"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|подпись|String|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|подпись|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Int64|Неподписаный полный ящик, который указывает начальное значение десятичной текстовой коробки. Значение по умолчанию равно 1.|
 |spin|Логический|Если верно, создайте управление спином; в противном случае создайте текстовое поле для числовой записи. Значение по умолчанию: true.|
 |spinStep|Int64|Неподписавая часть, указывляемая на приращение изменений для управления спином. Значение по умолчанию равно 1.|
-|обязательно|Логический|Требование ввести значение в поле параметра. Значение по умолчанию  false.|
+|обязательно|Boolean|Требование ввести значение в поле параметра. Значение по умолчанию  false.|
 |minValue|Int64|Неподписаный пустяк, который указывает минимально допустимые значения. Значение по умолчанию равно 0.|
 |maxValue|Int64|Неподписаный пустяк, который указывает максимально допустимые значения. Значение по умолчанию — 9999.|
 
@@ -74,7 +74,6 @@ ms.locfileid: "54161145"
   "maxValue": 1024
 }
 ```
-
 
 
 

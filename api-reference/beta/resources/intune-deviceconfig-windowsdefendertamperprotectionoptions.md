@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d333024d25a311540d606ed2220f1214275fdcc6b775fcb46ae619142ad8b0ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a4bdb9fadbc0e238fa39f58669180533934dfd7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226352"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801502"
 ---
 # <a name="windowsdefendertamperprotectionoptions-enum-type"></a>тип enum windowsDefenderTamperProtectionOptions
 
@@ -26,9 +26,8 @@ ms.locfileid: "54226352"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Not Configured|
-|включить|1 |Включить защиту от взлома защитника Windows|
+|включить|1|Включить защиту от взлома защитника Windows|
 |отключение|2|Отключение защиты от взлома защитника Windows|
-
 
 
 

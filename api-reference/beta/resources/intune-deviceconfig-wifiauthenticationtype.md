@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a79e0855677e7bd9013cdd8751b570686178bc4c0125bb687f24dd8c9fee48c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 30892543dfb90ae49738fcfd90efeda51a02ee55
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241711"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794830"
 ---
 # <a name="wifiauthenticationtype-enum-type"></a>тип enum wifiAuthenticationType
 
@@ -26,11 +26,10 @@ Wi-Fi тип проверки подлинности Параметры.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Нет|
-|user|1 |Проверка подлинности пользователя|
+|пользователь|1|Проверка подлинности пользователя|
 |машина|2|Проверка подлинности машины|
-|machineOrUser|3 |Проверка подлинности компьютера или пользователя|
+|machineOrUser|3|Проверка подлинности компьютера или пользователя|
 |гость|4 |Проверка подлинности гостей|
-
 
 
 

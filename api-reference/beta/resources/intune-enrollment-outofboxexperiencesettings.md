@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed86fd6c8d267aa6f12beb5404b9f7a398fb8f4192ad659580dde8c4734443cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 229564ad320b2d2a2dfce92f1979d23ca12acda6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239281"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787570"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>тип ресурса outOfBoxExperienceSettings
 
@@ -53,7 +53,6 @@ ms.locfileid: "54239281"
   "hideEscapeLink": true
 }
 ```
-
 
 
 

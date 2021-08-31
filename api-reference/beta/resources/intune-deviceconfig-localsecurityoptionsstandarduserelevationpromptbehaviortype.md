@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b2a3a966db8fe7ac099013f588fd1204e5f509922c5282c6a3b25dd31c32eaac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4e3ec79881d531081d099d587a65a12f7968888
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183164"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802511"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType enum type
 
@@ -26,10 +26,9 @@ ms.locfileid: "54183164"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Not Configured|
-|automaticallyDenyElevationRequests|1 |Автоматически отключать запросы на повышение|
+|automaticallyDenyElevationRequests|1|Автоматически отключать запросы на повышение|
 |promptForCredentialsOnTheSecureDesktop|2|Запрос на учетные данные на безопасном рабочем столе|
-|promptForCredentials|3 |Запрос на учетные данные|
-
+|promptForCredentials|3|Запрос на учетные данные|
 
 
 

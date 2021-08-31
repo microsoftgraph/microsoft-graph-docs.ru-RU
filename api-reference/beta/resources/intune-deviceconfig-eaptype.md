@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bfdfb466f7efd736b261db94212541b7168fa95f6b5a7b09b90f5996e6a6ec1a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9eb4a6832b36803732fdc2bf01a5c4ef164e2f09
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145427"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795230"
 ---
 # <a name="eaptype-enum-type"></a>тип enum eapType
 
@@ -25,13 +25,12 @@ ms.locfileid: "54145427"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|eapTls|13 |EAP-Transport уровня безопасности (EAP-TLS).|
+|eapTls|13|EAP-Transport уровня безопасности (EAP-TLS).|
 |скачок|17 |Облегченный протокол достоверной проверки подлинности (LEAP).|
 |eapSim|18 |EAP для модуля удостоверения абонента GSM (EAP-SIM).|
 |eapTtls|21|EAP-Tunneled безопасности транспортного слоя (EAP-TTLS).|
 |peap|25|Защищенный протокол достоверной проверки подлинности (PEAP).|
 |eapFast|43|EAP-Flexible проверки подлинности с помощью безопасного туннеля (EAP-FAST).|
-
 
 
 

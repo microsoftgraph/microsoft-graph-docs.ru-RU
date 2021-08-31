@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d2c114deb41087e45e435353e051ee7f55bad0fcfa6c7579953728dcc7749fe7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8bc04f9070cf74900979ea60d882d6bdebaf4e2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219971"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795853"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>тип enum windowsUpdateForBusinessUpdateWeeks
 
@@ -26,12 +26,11 @@ ms.locfileid: "54219971"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Разрешить пользователю установить.|
-|firstWeek|1 |Запланирована установка обновления в первую неделю месяца|
+|firstWeek|1|Запланирована установка обновления в первую неделю месяца|
 |secondWeek|2|Запланирована установка обновления на вторую неделю месяца|
 |thirdWeek|4 |Запланирована установка обновления на третью неделю месяца|
 |fourthWeek|8 |Запланирована установка обновления на четвертую неделю месяца|
 |everyWeek|15 |Запланирована установка обновления на каждую неделю месяца|
-
 
 
 

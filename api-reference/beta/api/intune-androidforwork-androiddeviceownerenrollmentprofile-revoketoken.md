@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86b5513931dc6eb02587ec6274b61f29db18f4d19ffd3f0c1ccd248269c2c6dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 312a81214c94de535d08a70ee576ec12f82eea5b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54140911"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801769"
 ---
 # <a name="revoketoken-action"></a>Действие revokeToken
 
@@ -29,7 +29,7 @@ ms.locfileid: "54140911"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollm
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Действие extendFeatureUpdatesPause
-description: Приостановка обновления функций для Windows для бизнес-кольца.
+title: Get deviceManagementReports
+description: Чтение свойств и связей объекта deviceManagementReports.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfd93b84c9cb94dc6a1adf37f63ac3abadc41ff8
+ms.openlocfilehash: ac543428e152fc10bb6a95c9a4966ffab4c7fc48
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787444"
+ms.locfileid: "58801918"
 ---
-# <a name="extendfeatureupdatespause-action"></a>Действие extendFeatureUpdatesPause
+# <a name="get-devicemanagementreports"></a>Get deviceManagementReports
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58787444"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Приостановка обновления функций для Windows для бизнес-кольца.
+Чтение свойств и связей [объекта deviceManagementReports.](../resources/intune-remoteassistance-devicemanagementreports.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,12 +37,13 @@ ms.locfileid: "58787444"
 }
 -->
 ``` http
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/extendFeatureUpdatesPause
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration/extendFeatureUpdatesPause
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}/extendFeatureUpdatesPause
+GET /deviceManagement/reports
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
@@ -52,20 +53,29 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementReports](../resources/intune-remoteassistance-devicemanagementreports.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/extendFeatureUpdatesPause
+GET https://graph.microsoft.com/beta/deviceManagement/reports
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 137
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.deviceManagementReports",
+    "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
+  }
+}
 ```
 
 

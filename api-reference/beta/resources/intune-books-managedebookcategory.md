@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b877365fb12bf1baede2248b4f52ba6109643d841adfb239d358aaefc4d1fed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6b228c410565fe18d9f3b124e7fc176380d9c2b6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213279"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794865"
 ---
 # <a name="managedebookcategory-resource-type"></a>тип ресурсов managedEBookCategory
 
@@ -57,7 +57,6 @@ ms.locfileid: "54213279"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

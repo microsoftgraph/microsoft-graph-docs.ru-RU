@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 939f701dd936c1533daeb95f57f99932ea94f7cd
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 243fd6d317f5fe081feb8193cdfec7df9f2ec720
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263642"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795846"
 ---
 # <a name="devicemanagementreports-resource-type"></a>тип ресурса deviceManagementReports
 
@@ -32,7 +32,7 @@ ms.locfileid: "58263642"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
+|id|Строка|Уникальный идентификатор для этого объекта|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -51,7 +51,6 @@ ms.locfileid: "58263642"
   "id": "String (identifier)"
 }
 ```
-
 
 
 
