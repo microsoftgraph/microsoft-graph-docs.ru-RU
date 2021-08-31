@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aeb8bac3259f1db68025f81c6af300cfeacae569b65a56dc4fa49de06327973a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dec891d78593fcbea6226666b4780704e83a2c7c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173032"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815941"
 ---
 # <a name="devicemanagementcomparisonresult-enum-type"></a>тип enum deviceManagementComparisonResult
 
@@ -26,11 +26,10 @@ ms.locfileid: "54173032"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Сравнение неизвестных параметров|
-|равная|1 |Значения параметров равны|
+|равная|1|Значения параметров равны|
 |notEqual|2|Значения параметров не равны|
-|Добавлено|3 |Добавлен параметр|
+|Добавлено|3|Добавлен параметр|
 |Удалено|4 |Параметр удаляется|
-
 
 
 

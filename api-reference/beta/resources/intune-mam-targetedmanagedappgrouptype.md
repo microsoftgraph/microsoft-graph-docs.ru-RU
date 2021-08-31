@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 018a7d373d37016f72cbb16f9d7e8f4602dc00b6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 716a9e646c6e0b320869998d30f2995c65d60636
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58267076"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817322"
 ---
 # <a name="targetedmanagedappgrouptype-enum-type"></a>тип enum targetedManagedAppGroupType
 
@@ -26,10 +26,9 @@ ms.locfileid: "58267076"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |selectedPublicApps|0|Нацелить коллекцию приложений, выбранных администратором вручную.|
-|allCoreMicrosoftApps|1 |Целевой набор основных приложений Майкрософт (Office, Edge и т.д.).|
+|allCoreMicrosoftApps|1|Целевой набор основных приложений Майкрософт (Office, Edge и т.д.).|
 |allMicrosoftApps|2|Нацелить все приложения с Microsoft в качестве издателя.|
 |allApps|4 |Нацелить все приложения с доступным назначением.|
-
 
 
 

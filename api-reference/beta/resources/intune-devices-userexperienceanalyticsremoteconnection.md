@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd3bdad6f80a72dadd1cb89a3ec9462a6c0f696
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7e9717b2865ff0e0a4126cc7f010925e8ff43360
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253448"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820879"
 ---
 # <a name="userexperienceanalyticsremoteconnection-resource-type"></a>тип ресурса userExperienceAnalyticsRemoteConnection
 
@@ -39,7 +39,7 @@ ms.locfileid: "58253448"
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
-|virtualNetwork|Строка|Виртуальная сеть аналитики пользовательских интерфейсов.|
+|virtualNetwork|String|Виртуальная сеть аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель аналитики пользовательских интерфейсов.|
 |deviceCount|Int32|Количество удаленных подключений. Допустимые значения от 0 до 2147483647|
 |cloudPcRoundTripTime|Двойное с плавающей точкой|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
@@ -80,7 +80,6 @@ ms.locfileid: "58253448"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

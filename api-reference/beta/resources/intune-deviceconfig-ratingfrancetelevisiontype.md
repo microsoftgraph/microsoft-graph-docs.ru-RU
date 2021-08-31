@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f03f5382cac02ccf1a7513ec85f2444aae8702c2910247a81de8b0799c0256f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20ec73ae3c1820f58ec749d279665a6103717155
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198243"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817098"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>тип enum ratingFranceTelevisionType
 
@@ -26,12 +26,11 @@ ms.locfileid: "54198243"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
-|allBlocked|1 |Не разрешайте контент тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
 |agesAbove10|2|Классификация -10 не рекомендуется для детей в возрасте до 10 лет|
-|agesAbove12|3 |Классификация -12 не рекомендуется для детей до 12 лет|
+|agesAbove12|3|Классификация -12 не рекомендуется для детей до 12 лет|
 |agesAbove16|4 |Классификация -16 не рекомендуется для детей до 16 лет|
 |agesAbove18|5 |Классификация -18 не рекомендуется для лиц в возрасте до 18 лет|
-
 
 
 

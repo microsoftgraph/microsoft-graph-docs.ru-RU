@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17a5854c2579a039012b31950cce8660f6031a8c3048e437ffc52e94f6a18f23
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0525b8ab93b19e75336085468fa8d82f40320944
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122413"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820865"
 ---
 # <a name="windowsdefenderproductstatus-enum-type"></a>тип enum windowsDefenderProductStatus
 
@@ -26,7 +26,7 @@ ms.locfileid: "54122413"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |noStatus|0|Отсутствие состояния|
-|serviceNotRunning|1 |Не запущенная служба|
+|serviceNotRunning|1|Не запущенная служба|
 |serviceStartedWithoutMalwareProtection|2|Служба началась без какого-либо двигателя защиты от вредоносных программ|
 |pendingFullScanDueToThreatAction|4 |Ожидание полного сканирования из-за действия угрозы|
 |pendingRebootDueToThreatAction|8 |Ожидание перезагрузки из-за действия угрозы|
@@ -51,7 +51,6 @@ ms.locfileid: "54122413"
 |platformAboutToBeOutdated|4194304|Платформа вот-вот устареет|
 |signatureOrPlatformEndOfLifeIsPastOrIsImpending|8388608|Подпись или окончание жизни платформы прошло или надвигается|
 |windowsSModeSignaturesInUseOnNonWin10SInstall|16777216|Windows Сигнатуры SMode, которые по-прежнему используются при установке non-Win10S|
-
 
 
 

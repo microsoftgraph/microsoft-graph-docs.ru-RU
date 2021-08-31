@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 514caa91cdf788575c7326e7ac2d27a54362891cdb86c96d6e736c4600245b80
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 14f68bfa31c41b96e2a2dd160fa732d2c38e9b2f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183157"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810653"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>тип ресурса macOSAppleEventReceiver
 
@@ -25,8 +25,8 @@ ms.locfileid: "54183157"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|codeRequirement|String|Требование кода для приложения или двоичного приложения, которое получает событие Apple.|
-|идентификатор|String|Набор ID пути приложения или файла процесса или исполняемого, который получает событие Apple.|
+|codeRequirement|Строка|Требование кода для приложения или двоичного приложения, которое получает событие Apple.|
+|идентификатор|Строка|Набор ID пути приложения или файла процесса или исполняемого, который получает событие Apple.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Используйте ID пакета для приложения или пути для процесса или исполняемого, который получает событие Apple. Возможные значения: `bundleID`, `path`.|
 |разрешено|Логический|Разрешить или заблокировать это приложение от получения событий Apple.|
 
@@ -49,7 +49,6 @@ ms.locfileid: "54183157"
   "allowed": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e60132c693ca600f9cf599896b1bdb0bd070e17cc1c82c2964d8e2b731dbd74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15059006e2eae19482f9544bbdf7f732c5729d4a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171002"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791314"
 ---
 # <a name="get-microsofttunnelserver"></a>Получите microsoftTunnelServer
 
@@ -27,9 +27,9 @@ ms.locfileid: "54171002"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunn
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{micr
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 286
+Content-Length: 394
 
 {
   "value": {
@@ -76,11 +76,12 @@ Content-Length: 286
     "id": "b5cf0aee-0aee-b5cf-ee0a-cfb5ee0acfb5",
     "displayName": "Display Name value",
     "tunnelServerHealthStatus": "healthy",
-    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+    "agentImageDigest": "Agent Image Digest value",
+    "serverImageDigest": "Server Image Digest value"
   }
 }
 ```
-
 
 
 

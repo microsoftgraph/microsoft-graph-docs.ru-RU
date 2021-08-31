@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a82dc6f1c690ba745d29c042b7eb428adaf1c8dfd3339dfbadff45fd66588e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db277b1879ae70b27fa86fbb74fb6a72630f95c0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227395"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806938"
 ---
 # <a name="devicemanagementconfigurationsettingdependedonby-resource-type"></a>тип ресурса deviceManagementConfigurationSettingDependedOnBy
 
@@ -26,7 +26,7 @@ ms.locfileid: "54227395"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |dependedOnBy|Строка|Идентификатор параметра ребенка, который зависит от текущего параметра|
-|Обязательный|Логический|Значение, определяее, требуется ли параметр ребенка на основе выбора родительского параметра|
+|обязательно|Логический|Значение, определяее, требуется ли параметр ребенка на основе выбора родительского параметра|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +45,6 @@ ms.locfileid: "54227395"
   "required": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 48dc105c75bbfe16663716ec43a7e63c5d38a99c57b9e90f6c6baf46db3f8c91
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1701bb38964b901e4240e1d69f077838b1d88e48
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249946"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818977"
 ---
 # <a name="globaldevicehealthscriptstate-enum-type"></a>тип enum globalDeviceHealthScriptState
 
@@ -26,9 +26,8 @@ ms.locfileid: "54249946"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Глобальные скрипты для здоровья устройств не настроены|
-|ожидание|1 |Глобальные скрипты для здоровья устройств настроены, но не полностью включены|
+|ожидание|1|Глобальные скрипты для здоровья устройств настроены, но не полностью включены|
 |включено|2|Глобальные скрипты для здоровья устройств включены и готовы к использованию|
-
 
 
 

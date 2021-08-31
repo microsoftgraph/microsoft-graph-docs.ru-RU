@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e648d4bd5d5b255f05f57c284cff87d5dd7725120377fafd3c92d415193ecee2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec2a86ae86f7c7dd4e8e8edef4b0715f52bb2744
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178964"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818043"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>Тип ресурса androidMobileAppIdentifier
 
@@ -46,7 +46,6 @@ ms.locfileid: "54178964"
   "packageId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de1d50865f5b98b3e95dd0448d013e0f4c9c3e1c2ed284a94d43ac58cdef89fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c14cc0a2d049969bddfa4e4bb50cf6c5ef8792d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216142"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818515"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Создание enterpriseCodeSigningCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "54216142"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,8 +58,8 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние сертификата, предварительное или не предварительное. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение subject для сертификата.|
-|issuerName|Строка|Имя эмитента для сертификата.|
-|эмитент|Строка|Значение Issuer для сертификата.|
+|issuerName|String|Имя эмитента для сертификата.|
+|эмитент|String|Значение Issuer для сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Время даты отправки сертификата CodeSigning.|
 
@@ -110,7 +110,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

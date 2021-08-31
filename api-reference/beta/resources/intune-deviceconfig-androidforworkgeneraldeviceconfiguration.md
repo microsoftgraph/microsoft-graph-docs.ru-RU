@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 188d260597cd698c2adc261c5a5e79dfb01e93dd411f5fd352ada8aa96c3d350
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 887174859b685810263da51fd46040ef90380477
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156368"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790929"
 ---
 # <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>тип ресурса androidForWorkGeneralDeviceConfiguration
 
@@ -37,7 +37,7 @@ ms.locfileid: "54156368"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -45,7 +45,7 @@ ms.locfileid: "54156368"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |passwordBlockFaceUnlock|Логический|Указывает, следует ли блокировать разблокирование лица.|
@@ -71,7 +71,7 @@ ms.locfileid: "54156368"
 |workProfilePasswordBlockFaceUnlock|Логический|Указывает, следует ли блокировать разблокировку лица для профиля работы.|
 |workProfilePasswordBlockFingerprintUnlock|Логический|Указывает, следует ли блокировать разблокировку отпечатков пальцев для профиля работы.|
 |workProfilePasswordBlockIrisUnlock|Логический|Указывает, следует ли блокировать разблокировку радужной оболочки радужной оболочки для профиля работы.|
-|workProfilePasswordBlockTrustAgents|Логический|Указывает, следует ли блокировать Smart Lock и другие агенты доверия для профиля работы.|
+|workProfilePasswordBlockTrustAgents|Boolean|Указывает, следует ли блокировать Smart Lock и другие агенты доверия для профиля работы.|
 |workProfilePasswordExpirationDays|Int32|Количество дней до истечения срока действия пароля профиля работы. Допустимые значения: от 1 до 365.|
 |workProfilePasswordMinimumLength|Int32|Минимальная длина пароля профиля работы. Допустимые значения: от 4 до 16.|
 |workProfilePasswordMinNumericCharacters|Int32|Минимум # числимые символы, необходимые в пароле профиля работы. Допустимые значения от 1 до 10|
@@ -86,7 +86,7 @@ ms.locfileid: "54156368"
 |workProfilePasswordRequiredType|[AndroidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Тип необходимого пароля профиля работы. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Логический|Пароль требуется или не требуется для профиля работы|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
-|vpnAlwaysOnPackageIdentifier|String|Включить режим блокировки для всегда на VPN.|
+|vpnAlwaysOnPackageIdentifier|Строка|Включить режим блокировки для всегда на VPN.|
 |VPNEnableAlwaysOnLockdownMode|Логический|Включить режим блокировки для всегда на VPN.|
 |workProfileAllowWidgets|Логический|Разрешить виджеты из приложений профиля работы.|
 |workProfileBlockPersonalAppInstallsFromUnknownSources|Логический|Предотвращение установок приложений из неизвестных источников в личном профиле.|
@@ -188,7 +188,6 @@ ms.locfileid: "54156368"
   "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
-
 
 
 

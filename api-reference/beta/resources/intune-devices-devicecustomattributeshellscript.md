@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32d1e032e8bc781a9f7ab1d433e1c8b757097ca6494c68094addde0812898376
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 549a2a01384271e97ba22c301b1a4397752386d5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239408"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791496"
 ---
 # <a name="devicecustomattributeshellscript-resource-type"></a>тип ресурса deviceCustomAttributeShellScript
 
@@ -36,10 +36,10 @@ ms.locfileid: "54239408"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для настраиваемого объекта атрибута.|
-|customAttributeName|Строка|Имя настраиваемого атрибута.|
+|customAttributeName|String|Имя настраиваемого атрибута.|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
 |displayName|String|Имя сценария управления устройствами.|
-|description|Строка|Необязательное описание сценария управления устройствами.|
+|description|String|Необязательное описание сценария управления устройствами.|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
@@ -82,7 +82,6 @@ ms.locfileid: "54239408"
   ]
 }
 ```
-
 
 
 

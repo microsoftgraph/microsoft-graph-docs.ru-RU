@@ -1,18 +1,18 @@
 ---
-title: Get deviceManagementDomainJoinConnector
-description: Чтение свойств и связей объекта deviceManagementDomainJoinConnector.
+title: Удаление сертификатаConnectorDetails
+description: Удаляет сертификатConnectorDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dce66ef9a4795798924f910a9c17ffda918b434
+ms.openlocfilehash: 5364c2898122e16a1ff0d83c017a84c6cd9404d5
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790222"
+ms.locfileid: "58816345"
 ---
-# <a name="get-devicemanagementdomainjoinconnector"></a>Get deviceManagementDomainJoinConnector
+# <a name="delete-certificateconnectordetails"></a>Удаление сертификатаConnectorDetails
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58790222"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта deviceManagementDomainJoinConnector.](../resources/intune-odj-devicemanagementdomainjoinconnector.md)
+Удаляет [сертификатConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,13 +37,10 @@ ms.locfileid: "58790222"
 }
 -->
 ``` http
-GET /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorId}
+DELETE /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
@@ -53,33 +50,20 @@ GET /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorI
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 315
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementDomainJoinConnector",
-    "id": "77296cf7-6cf7-7729-f76c-2977f76c2977",
-    "displayName": "Display Name value",
-    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
-    "state": "error",
-    "version": "Version value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 

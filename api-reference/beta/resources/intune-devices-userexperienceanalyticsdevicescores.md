@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 324bc83c19588fdfa76fd084145a6d3d8ac025c8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ce4dc2ceeb02622c30a8aadde9bd9c45826dc9f1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256723"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816503"
 ---
 # <a name="userexperienceanalyticsdevicescores-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceScores
 
@@ -41,6 +41,7 @@ ms.locfileid: "58256723"
 |endpointAnalyticsScore|Двойное с плавающей точкой|Оценка устройства аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |appReliabilityScore|Двойное с плавающей точкой|Оценка надежности приложения приложения для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|workFromAnywhereScore|Двойное с плавающей точкой|Устройство аналитики пользовательских интерфейсов работает с любого балла. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние здоровья устройства аналитики пользовательского интерфейса. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Связи
@@ -64,10 +65,10 @@ ms.locfileid: "58256723"
   "endpointAnalyticsScore": "4.2",
   "startupPerformanceScore": "4.2",
   "appReliabilityScore": "4.2",
+  "workFromAnywhereScore": "4.2",
   "healthStatus": "String"
 }
 ```
-
 
 
 

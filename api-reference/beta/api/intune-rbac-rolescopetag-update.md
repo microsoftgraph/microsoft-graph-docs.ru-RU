@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f81a84c323bf0b025b77047e9d1781a4fe9b926994d4200eab933b3962adaf4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 88ad2c1b120d0a09c28e5be3648391a1dcbc4379
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136795"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813918"
 ---
 # <a name="update-rolescopetag"></a>Update roleScopeTag
 
@@ -29,7 +29,7 @@ ms.locfileid: "54136795"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,10 +54,10 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
 |displayName|String|Отображение или дружеское имя тега Область ролей.|
 |description|Строка|Описание тега Область ролей.|
-|isBuiltIn|Boolean|Описание тега Область ролей.|
+|isBuiltIn|Boolean|Описание тега Область ролей. Это свойство доступно только для чтения.|
 
 
 
@@ -96,7 +96,6 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: действие hasPayloadLinks
+title: getRemoteAssistanceMonitorAvgSessionTimeReport action
 description: Пока не задокументировано.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 763cc1fd8ea9bed4f27fcfdbdf840fec8e0bf47b
+ms.openlocfilehash: a2c697647b69cb285e8d76f54afc8be0ddd453cc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789370"
+ms.locfileid: "58821965"
 ---
-# <a name="haspayloadlinks-action"></a>действие hasPayloadLinks
+# <a name="getremoteassistancemonitoravgsessiontimereport-action"></a>getRemoteAssistanceMonitorAvgSessionTimeReport action
 
 Пространство имен: microsoft.graph
 
@@ -25,13 +25,11 @@ ms.locfileid: "58789370"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
-| &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -39,7 +37,7 @@ ms.locfileid: "58789370"
 }
 -->
 ``` http
-POST /deviceManagement/deviceEnrollmentConfigurations/hasPayloadLinks
+POST /deviceManagement/reports/getRemoteAssistanceMonitorAvgSessionTimeReport
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -55,27 +53,47 @@ POST /deviceManagement/deviceEnrollmentConfigurations/hasPayloadLinks
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|payloadIds|Коллекция строк|Н/Д|
+|name|String|Пока не задокументировано.|
+|select|Коллекция строк|Н/Д|
+|search|String|Пока не задокументировано.|
+|groupBy|Коллекция строк|Н/Д|
+|orderBy|Коллекция строк|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|sessionId|String|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия возвращается код ответа и `200 OK` [коллекция hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) в тексте ответа.
+В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/hasPayloadLinks
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceMonitorAvgSessionTimeReport
 
 Content-type: application/json
-Content-length: 53
+Content-length: 278
 
 {
-  "payloadIds": [
-    "Payload Ids value"
-  ]
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
@@ -84,25 +102,12 @@ Content-length: 53
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 249
+Content-Length: 123
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.hasPayloadLinkResultItem",
-      "payloadId": "Payload Id value",
-      "hasLink": true,
-      "error": "Error value",
-      "sources": [
-        "policySets"
-      ]
-    }
-  ]
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZU1vbml0b3JBdmdTZXNzaW9uVGltZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtMTUzNDAwMDU5OQ=="
 }
 ```
-
-
-
 
 
 

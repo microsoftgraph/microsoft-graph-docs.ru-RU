@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45547bff3feca7985d7ea0b9f110ac9adcdaa56f8567a16f6f73dbcfaa2b2826
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5ec0fc151305cb2f88240ff76de34c2039925f1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161159"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790124"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>тип enum unaryManagementConditionExpressionOperatorType
 
@@ -27,7 +27,6 @@ ms.locfileid: "54161159"
 |:---|:---|:---|
 |
 not|0|Отменяет оценку операнда.|
-
 
 
 
