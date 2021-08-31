@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db2495ba27530f32372f9b1cc43a800407d01cbe414132a38a591ba7d9bfb3ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 570d068e64c9ffd9d6a45a0708e2f77b3f2d28cd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132342"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795734"
 ---
 # <a name="delete-macossoftwareupdatecategorysummary"></a>Удаление macOSSoftwareUpdateCategorySummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54132342"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdat
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/macOSSoftwareUpdateAcco
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

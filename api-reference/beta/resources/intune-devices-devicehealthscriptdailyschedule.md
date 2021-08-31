@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92c65e8434a709fc5270cb1f5193d9341efca1e1e32131d76d339a80f4e52e28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0e84b59510a50510abfd07e5eafd09b652c4aeb0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244745"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58771003"
 ---
 # <a name="devicehealthscriptdailyschedule-resource-type"></a>тип ресурса deviceHealthScriptDailySchedule
 
@@ -50,7 +50,6 @@ ms.locfileid: "54244745"
   "time": "String (time of day)"
 }
 ```
-
 
 
 

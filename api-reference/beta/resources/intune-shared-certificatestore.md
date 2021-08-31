@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8267dba8714e8c262043b357b24aed6bead236bc718134682b1ed9a057a6b369
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c29b302fda79f6fc1a0914efe72613188fcbc04
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217094"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795124"
 ---
 # <a name="certificatestore-enum-type"></a>Тип переумывания certificateStore
 
@@ -25,9 +25,8 @@ ms.locfileid: "54217094"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|user|1 |Пока не задокументировано.|
+|пользователь|1|Пока не задокументировано.|
 |машина|2|Пока не задокументировано.|
-
 
 
 

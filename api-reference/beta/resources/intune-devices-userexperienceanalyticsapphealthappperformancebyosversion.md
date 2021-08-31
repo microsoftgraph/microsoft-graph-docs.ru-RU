@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04c2d807a24b09b91778a6696c1aba75e5dc0bc2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bbd3a4c570d3904430b2cd1c4a45755d2f7b9077
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263942"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788439"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyosversion-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -34,13 +34,13 @@ ms.locfileid: "58263942"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности версии версии пользовательского интерфейса для аналитики приложений.|
+|id|Строка|Уникальный идентификатор объекта производительности версии версии пользовательского интерфейса для аналитики приложений.|
 |osVersion|String|Версия ос приложения.|
 |osBuildNumber|Строка|Число сборки ос приложения.|
 |activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения 2147483648 2147483647|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|Строка|Издатель приложения.|
+|appPublisher|String|Издатель приложения.|
 |appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения 2147483648 2147483647|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения 2147483648 2147483647|
@@ -71,7 +71,6 @@ ms.locfileid: "58263942"
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

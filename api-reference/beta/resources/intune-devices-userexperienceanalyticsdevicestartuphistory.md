@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3b435caf5cd8bb3c514eeb602f2397a6e93322754bb4313536ffb33ace5f727
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ffc994a7f6be02a361ea21422bfefccf31352aa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244717"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797249"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceStartupHistory
 
@@ -34,7 +34,7 @@ ms.locfileid: "54244717"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор истории запуска устройства аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор истории запуска устройства аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства аналитики пользовательского интерфейса.|
 |startTime|DateTimeOffset|Время запуска загрузки устройства для аналитики пользовательского интерфейса.|
 |coreBootTimeInMs|Int32|Основное время загрузки устройства для аналитики пользовательского интерфейса в миллисекунд.|
@@ -49,7 +49,7 @@ ms.locfileid: "54244717"
 |isFeatureUpdate|Логический|Запись загрузки устройства для аналитики пользовательского интерфейса — это обновление функций.|
 |operatingSystemVersion|String|Версия операционной системы записи операционной системы для аналитики пользовательского интерфейса устройства.|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезапуска ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
-|restartStopCode|String|Код остановки перезапуска ОС. Здесь показан код проверки ошибок, который можно использовать для проверки причины синего экрана.|
+|restartStopCode|Строка|Код остановки перезапуска ОС. Здесь показан код проверки ошибок, который можно использовать для проверки причины синего экрана.|
 |restartFaultBucket|Строка|Ковш перезапуска неисправности ОС. Ведро неисправностей используется для поиска дополнительных сведений о сбое системы.|
 
 ## <a name="relationships"></a>Связи
@@ -85,7 +85,6 @@ ms.locfileid: "54244717"
   "restartFaultBucket": "String"
 }
 ```
-
 
 
 

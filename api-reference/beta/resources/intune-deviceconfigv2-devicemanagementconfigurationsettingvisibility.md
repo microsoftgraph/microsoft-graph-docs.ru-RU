@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cf83b55dff198fb549b61679b7fcc8c0413d2617c3a7b4d34f9ae4867c7d4deb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f974bfaeffacb688f1f822661e8ed902bea7fa97
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164232"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788964"
 ---
 # <a name="devicemanagementconfigurationsettingvisibility-enum-type"></a>тип enum deviceManagementConfigurationSettingVisibility
 
@@ -26,9 +26,8 @@ ms.locfileid: "54164232"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Не отображается|
-|settingsCatalog|1 |Видимый для настройки каталога UX|
+|settingsCatalog|1|Видимый для настройки каталога UX|
 |шаблон|2|Видимый для шаблона|
-
 
 
 

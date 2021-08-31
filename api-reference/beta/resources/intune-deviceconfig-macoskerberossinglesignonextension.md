@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c21bdffd5b955ab11e42e67e4fe783b14c371fb855b2d479d9baf9dd702dc1c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 393b1af339e8ea8c3fd5ac0902e4ab1401676aea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122644"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789659"
 ---
 # <a name="macoskerberossinglesignonextension-resource-type"></a>тип ресурса macOSKerberosSingleSignOnExtension
 
@@ -92,7 +92,6 @@ ms.locfileid: "54122644"
   "passwordChangeUrl": "String"
 }
 ```
-
 
 
 

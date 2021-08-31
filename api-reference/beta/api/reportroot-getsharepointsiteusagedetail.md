@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b58d90ef3be8a723190909ee960f659de6f6c58b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7274d0b8425115afcfa7a7a18fd2ea2044e01e48
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049067"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804591"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -49,7 +49,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
 | date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 30 дней, значение {date_value} должно быть датой из этого диапазона. |
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
@@ -94,7 +94,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Storage Allocated (Byte)" (Объем выделенного хранилища в байтах);
 - "Root Web Template" (Шаблон корневого веб-сайта);
 - Owner Principal Name (имя участника-владельца)
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ### <a name="json"></a>JSON
 
@@ -171,7 +171,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -197,18 +197,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
-      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
-      "ExternalSharing": false,
-      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
-      "GeoLocation": "GeoLocation-value",
+      "siteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "externalSharing": false,
+      "unmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "geoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
-      "AnonymousLinkCount": 5,
-      "CompanyLinkCount": 8,
-      "SecureLinkForGuestCount": 13,
-      "SecureLinkForMemberCount": 11,
+      "anonymousLinkCount": 5,
+      "companyLinkCount": 8,
+      "secureLinkForGuestCount": 13,
+      "secureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 

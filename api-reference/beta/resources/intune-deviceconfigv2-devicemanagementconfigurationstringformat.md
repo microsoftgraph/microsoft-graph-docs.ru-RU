@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2e9c6521cfaf2d4f544cedd79f1a84565743ad7792b47e7fb5398f1f117a705
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24f5d2ee06234c0c4fa844242924a04e7133bf43
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182877"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789314"
 ---
 # <a name="devicemanagementconfigurationstringformat-enum-type"></a>тип enum deviceManagementConfigurationStringFormat
 
@@ -26,9 +26,9 @@ ms.locfileid: "54182877"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Пока не задокументировано.|
-|email|1 |Пока не задокументировано.|
+|email|1|Пока не задокументировано.|
 |guid|2|Пока не задокументировано.|
-|IP|3 |Пока не задокументировано.|
+|IP|3|Пока не задокументировано.|
 |base64|4 |Пока не задокументировано.|
 |url|5 |Н/Д|
 |version|6 |Пока не задокументировано.|
@@ -38,9 +38,8 @@ ms.locfileid: "54182877"
 |двоичный|10 |Пока не задокументировано.|
 |regEx|11 |Пока не задокументировано.|
 |json|12 |Пока не задокументировано.|
-|dateTime|13 |Пока не задокументировано.|
+|dateTime|13|Пока не задокументировано.|
 |surfaceHub|14 |Пока не задокументировано.|
-
 
 
 

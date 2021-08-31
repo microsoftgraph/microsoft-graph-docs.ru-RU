@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: addedd9da934696c2cafc16e46ef2e2879b996ba2fcfb5629d72eec8227dd142
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a98bc2553feb2ab71be42eb9e3009cb8cf2f780
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210724"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804101"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Update groupPolicyDefinitionFile
 
@@ -29,7 +29,7 @@ ms.locfileid: "54210724"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,14 +55,14 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Локализованное удобное имя файла ADMX.|
+|displayName|Строка|Локализованное удобное имя файла ADMX.|
 |description|Строка|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
 |languageCodes|Коллекция String|Поддерживаемые языковые коды для файла ADMX.|
-|targetPrefix|String|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|targetPrefix|Строка|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |targetNamespace|Строка|Указывает URI, используемую для определения пространства имен в файле ADMX.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|изменение|String|Версия изменения, связанная с файлом.|
-|id|String|Ключ объекта.|
+|изменение|Строка|Версия изменения, связанная с файлом.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
@@ -115,7 +115,6 @@ Content-Length: 471
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
