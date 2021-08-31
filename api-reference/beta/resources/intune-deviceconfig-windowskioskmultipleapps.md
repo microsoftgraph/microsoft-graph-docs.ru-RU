@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7be767a72b68eeff6cf85aa46051222d81d18fe13430d473db96332e1ec57a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 678943374b2db49513ca0739f75cead5565ce99c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164302"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800410"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>тип ресурса windowsKioskMultipleApps
 
@@ -65,7 +65,6 @@ ms.locfileid: "54164302"
   "startMenuLayoutXml": "binary"
 }
 ```
-
 
 
 

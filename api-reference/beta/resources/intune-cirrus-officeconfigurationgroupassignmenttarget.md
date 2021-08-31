@@ -1,18 +1,18 @@
 ---
-title: тип ресурса assignmentFilterValidationResult
-description: Представляет результат API проверки.
-author: dougeby
+title: тип ресурса officeConfigurationGroupAssignmentTarget
+description: Office клиентской конфигурации целевого назначения группы AAD.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9612d33c1e838eb5effaea555d8453b8acf6c1fe
+ms.openlocfilehash: 997fb37d69083d05543c8acfe0c5741a6ccf3461
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807246"
+ms.locfileid: "58785579"
 ---
-# <a name="assignmentfiltervalidationresult-resource-type"></a>тип ресурса assignmentFilterValidationResult
+# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>тип ресурса officeConfigurationGroupAssignmentTarget
 
 Пространство имен: microsoft.graph
 
@@ -20,12 +20,14 @@ ms.locfileid: "58807246"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет результат API проверки.
+Office клиентской конфигурации целевого назначения группы AAD.
+
+Наследует [от officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|isValidRule|Логический|Индикатор для допустимой или недействительной нормы.|
+|groupId|String|Id группы AAD, на который ориентирована конфигурация устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -34,13 +36,14 @@ ms.locfileid: "58807246"
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.assignmentFilterValidationResult"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeConfigurationGroupAssignmentTarget"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.assignmentFilterValidationResult",
-  "isValidRule": true
+  "@odata.type": "#microsoft.graph.officeConfigurationGroupAssignmentTarget",
+  "groupId": "String"
 }
 ```
 

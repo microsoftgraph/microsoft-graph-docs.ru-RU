@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34d30e9b2a892d8675c247259b18c2bbf4978a58b41cd843a891ac625b5073ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 196bb6cc8e2ddef1301d9ce8eefabc4feda4da41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242791"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793339"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>тип enum ratingUnitedStatesMoviesType
 
@@ -26,13 +26,12 @@ ms.locfileid: "54242791"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
-|allBlocked|1 |Не разрешайте контент фильмов|
+|allBlocked|1|Не разрешайте контент фильмов|
 |общие|2|G, все возрасты допущены|
-|parentalGuidance|3 |PG, некоторые материалы могут быть неподходящими для детей|
+|parentalGuidance|3|PG, некоторые материалы могут быть неподходящими для детей|
 |parentalGuidance13|4 |PG13, некоторые материалы могут быть неуместными для детей в возрасте до 13 лет|
 |ограниченный|5 |R. Для просмотра в возрасте до 17 лет требуется сопровождающий родитель или взрослый опекун|
 |взрослые|6 |NC17, только для взрослых|
-
 
 
 

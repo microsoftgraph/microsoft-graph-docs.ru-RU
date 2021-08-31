@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 528ce2a0a903bffebae9aaa2e0e7e4c0903d7aed90d10e9cb9ce09bc5f6f26ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 651815aea6e64b4fa53f0a4d22127050c5f3b488
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178824"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792570"
 ---
 # <a name="sideloadingkey-resource-type"></a>тип ресурса sideLoadingKey
 
@@ -34,10 +34,10 @@ ms.locfileid: "54178824"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный ID side Loading Key.|
+|id|Строка|Уникальный ID side Loading Key.|
 |value|String|Ключевое значение side Loading — это значение 5x5, разделенное hiphens.|
 |displayName|Строка|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
-|description|String|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
+|description|Строка|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
 |totalActivation|Int32|Полная активация клавиши боковой загрузки, отображаемая администраторам ITPro.|
 |lastUpdatedDateTime|Строка|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|
 
@@ -63,7 +63,6 @@ ms.locfileid: "54178824"
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 

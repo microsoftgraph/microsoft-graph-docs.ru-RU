@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 028a382186aac6ad75e52618417d77a5443877a7
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e21069bc59ff62e95160fb33cf3aef0b9f06edc5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257881"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786805"
 ---
 # <a name="create-devicemanagementtemplate"></a>Создание deviceManagementTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58257881"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +54,8 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID шаблона|
-|displayName|String|Имя отображения шаблона|
+|id|Строка|ID шаблона|
+|displayName|Строка|Имя отображения шаблона|
 |description|Строка|Описание шаблона|
 |versionInfo|Строка|Сведения о версии шаблона|
 |isDeprecated|Логический|Шаблон обесценив или нет. Намерения не могут быть созданы из шаблона с законтятой расшифровкой.|
@@ -114,7 +114,6 @@ Content-Length: 454
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
-
 
 
 

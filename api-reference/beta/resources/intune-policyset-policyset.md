@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b7cc3321cd8369c7e17f93e35eeb26207b59f509f975546f204ce51cf1f948f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edac97723f19b494adcb38ed87b68695c31bd367
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253420"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793290"
 ---
 # <a name="policyset-resource-type"></a>Тип ресурса policySet
 
@@ -39,7 +39,7 @@ ms.locfileid: "54253420"
 |id|String|Клавиша PolicySet.|
 |createdDateTime|DateTimeOffset|Время создания PolicySet.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время в PolicySet.|
-|displayName|String|DisplayName of the PolicySet.|
+|displayName|Строка|DisplayName of the PolicySet.|
 |description|Строка|Описание PolicySet.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Проверка/присвоение состояния PolicySet. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если таковое произошло. Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
@@ -50,7 +50,7 @@ ms.locfileid: "54253420"
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|[коллекция policySetAssignment](../resources/intune-policyset-policysetassignment.md)|Назначения PolicySet.|
-|items|[коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Элементы PolicySet с максимальным количеством 100.|
+|элементы|[коллекция policySetItem](../resources/intune-policyset-policysetitem.md)|Элементы PolicySet с максимальным количеством 100.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -78,7 +78,6 @@ ms.locfileid: "54253420"
   ]
 }
 ```
-
 
 
 

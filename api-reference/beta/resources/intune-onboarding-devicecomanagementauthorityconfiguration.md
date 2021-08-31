@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43ecd556917e65800594fff36ddc2d22a0f92530df45436a6913398c4e823dcf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3314c33a80aaf4c922e22a88b3536f0012cfe95
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147912"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793798"
 ---
 # <a name="devicecomanagementauthorityconfiguration-resource-type"></a>тип ресурса deviceComanagementAuthorityConfiguration
 
@@ -46,8 +46,8 @@ Windows 10 Co-Management конфигурация страницы управл�
 |version|Int32|Версия конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|Коллекция String|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |managedDeviceAuthority|Int32|Конфигурация Управления CoManagement ManagedDeviceAuthority|
-|installConfigurationManagerAgent|Логический|Конфигурация Управления CoManagement InstallConfigurationManagerAgent|
-|configurationManagerAgentCommandLineArgument|String|Конфигурация CoManagement Authority ConfigurationManagerAgentCommandLineArgument|
+|installConfigurationManagerAgent|Boolean|Конфигурация Управления CoManagement InstallConfigurationManagerAgent|
+|configurationManagerAgentCommandLineArgument|Строка|Конфигурация CoManagement Authority ConfigurationManagerAgentCommandLineArgument|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -80,7 +80,6 @@ Windows 10 Co-Management конфигурация страницы управл�
   "configurationManagerAgentCommandLineArgument": "String"
 }
 ```
-
 
 
 

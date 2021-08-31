@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a3833f2ee3ae94807af402b1109954b8785ab5a826ee0762ea0a4f0e1208af3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 961f43556622fd92cb990777155c8ab3debcb7df
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226247"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786616"
 ---
 # <a name="configmanagercollection-resource-type"></a>тип ресурса configManagerCollection
 
@@ -35,10 +35,10 @@ ConfigManager определяет коллекцию устройств или 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ для коллекции ConfigManager.|
+|id|Строка|Ключ для коллекции ConfigManager.|
 |displayName|Строка|The DisplayName.|
 |collectionIdentifier|Строка|Идентификатор коллекции в SCCM.|
-|hierarchyName|String|Имя иерархии.|
+|hierarchyName|Строка|Имя иерархии.|
 |hierarchyIdentifier|Строка|Идентификатор иерархии.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения.|
@@ -66,7 +66,6 @@ ConfigManager определяет коллекцию устройств или 
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

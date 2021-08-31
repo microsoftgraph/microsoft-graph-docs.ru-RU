@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b4ea67e95bb8e836f84db9011562d04b7e07bfd553c1e1dfd49c85439265888
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 219e2d27823924e086d7cecde0925e3f162f13d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241725"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801117"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>тип enum ratingNewZealandMoviesType
 
@@ -26,9 +26,9 @@ ms.locfileid: "54241725"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимое фильмов|
-|allBlocked|1 |Не разрешайте контент фильмов|
+|allBlocked|1|Не разрешайте контент фильмов|
 |общие|2|Подходит для общей аудитории|
-|parentalGuidance|3 |Классификация PG рекомендует родительское руководство|
+|parentalGuidance|3|Классификация PG рекомендует родительское руководство|
 |зрелый|4 |Классификация M подходит для зрелой аудитории|
 |agesAbove13|5 |Классификация R13 ограничена для лиц от 13 лет и старше|
 |agesAbove15|6 |Классификация R15 ограничена для лиц от 15 лет и старше|
@@ -36,7 +36,6 @@ ms.locfileid: "54241725"
 |agesAbove18|8 |Классификация R18 ограничена для лиц от 18 лет и старше|
 |ограниченный|9 |Классификация R ограничена определенной аудиторией|
 |agesAbove16Restricted|10 |Классификация RP16 требует от зрителей младше 16 лет в сопровождении родителя или взрослого|
-
 
 
 

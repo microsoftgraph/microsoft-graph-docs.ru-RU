@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d9e903f37f746788a7f1a511b699579fb158850396de04681cc9f6253043577e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 543b14f669154f54b30bd60a2bcf3579e51816d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242529"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800001"
 ---
 # <a name="managedappdevicethreatlevel-enum-type"></a>управляемый тип enum managedAppDeviceThreatLevel
 
@@ -26,11 +26,10 @@ ms.locfileid: "54242529"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Значение, не настроено|
-|обеспечено|1 |Устройство не должно иметь угрозы|
+|обеспечено|1|Устройство не должно иметь угрозы|
 |низкий|2|Устройство должно иметь низкую угрозу.|
-|medium|3 |Устройство должно иметь не более средней угрозы.|
+|medium|3|Устройство должно иметь не более средней угрозы.|
 |высокая|4 |Устройство должно иметь не более чем высокую угрозу|
-
 
 
 
