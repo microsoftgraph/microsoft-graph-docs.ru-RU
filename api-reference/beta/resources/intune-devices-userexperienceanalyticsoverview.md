@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88c3b9867a3c9cedb7f48772a5bf4f76c89eef1a79d933c07df60462a199303c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1baf9b438496abfa9fd02ee4365db2f74705732
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226268"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58770351"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>тип ресурса userExperienceAnalyticsOverview
 
@@ -31,7 +31,7 @@ ms.locfileid: "54226268"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
+|id|Строка|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
 |overallScore|Int32|Общая оценка аналитики пользовательского опыта.|
 |deviceBootPerformanceOverallScore|Int32|Общая оценка производительности загрузки устройства для аналитики пользовательского интерфейса.|
 |bestPracticesOverallScore|Int32|Анализ пользовательских интерфейсов позволяет опытом работы с общим показателем.|
@@ -89,7 +89,6 @@ ms.locfileid: "54226268"
   "resourcePerformanceHealthState": "String"
 }
 ```
-
 
 
 

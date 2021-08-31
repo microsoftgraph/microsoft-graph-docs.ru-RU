@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7eebfdcef7a3da9558ce51eeac88d58c2a79c692
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 83bd4f0fd4da0f54687dbb1fb378b19e280614f9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263678"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769448"
 ---
 # <a name="remoteassistancesettings-resource-type"></a>тип ресурса remoteAssistanceSettings
 
@@ -31,7 +31,7 @@ ms.locfileid: "58263678"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор параметров удаленной помощи|
+|id|Строка|Идентификатор параметров удаленной помощи|
 |remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|Текущее состояние удаленной помощи для учетной записи. Возможные значения: неКонфигурационные, отключенные, включенные. Этот параметр настраивается администратором. Параметры удаленной помощи, которые еще не настроены администратором, имеют состояние notConfigured. Возвращается по умолчанию. Возможные значения: `notConfigured`, `disabled`, `enabled`.|
 |allowSessionsToUnenrolledDevices|Логический| Указывает, разрешены ли сеансы для незавершенных устройств для учетной записи. Этот параметр настраивается администратором. Значение по умолчанию является ложным.|
 
@@ -54,7 +54,6 @@ ms.locfileid: "58263678"
   "allowSessionsToUnenrolledDevices": true
 }
 ```
-
 
 
 

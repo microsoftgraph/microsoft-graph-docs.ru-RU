@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36f3894967ffacfa0027192d876f5f56e4e836fe7d59cd6a1fb66b9a7f7b2057
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a64dd9d3889373c97930740a7e510e187cb3606
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240017"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783969"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -36,8 +36,8 @@ ms.locfileid: "54240017"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|Строка|Отображаемое имя события.|
+|id|Строка|Ключ объекта.|
+|displayName|String|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|
@@ -113,7 +113,6 @@ ms.locfileid: "54240017"
   "category": "String"
 }
 ```
-
 
 
 

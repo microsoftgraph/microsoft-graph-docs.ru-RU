@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8492388f29841e4c3d1b3a3d6d45c74f8a43825
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 564f4b94168f193ab8d6dbb27c0fd98a25d5edbc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264278"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783724"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Создание deviceManagementScriptUserState
 
@@ -27,9 +27,9 @@ ms.locfileid: "58264278"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ пользовательского состояния скрипта управления устройствами. Это свойство доступно только для чтения.|
+|id|Строка|Ключ пользовательского состояния скрипта управления устройствами. Это свойство доступно только для чтения.|
 |successDeviceCount|Int32|Количество устройств успешности для определенного пользователя.|
 |errorDeviceCount|Int32|Количество устройств ошибки для определенного пользователя.|
 |userPrincipalName|String|Имя принципа пользователя конкретного пользователя.|
@@ -97,7 +97,6 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

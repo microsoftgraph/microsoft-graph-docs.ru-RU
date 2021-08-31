@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6ff3461af66448223f2f2ec28ff158d9504ddd111a5a7a5dcab8d8001986e31
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea007cee7a6ce90c36602b31262cbccfc4107dbc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131663"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784305"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Создание windowsInformationProtectionDeviceRegistration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54131663"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userId|String|UserId, связанный с этой записью регистрации устройства.|
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например, Windows ноутбук vs Windows телефон.|
-|deviceMacAddress|String|Адрес Mac устройства.|
+|deviceMacAddress|Строка|Адрес Mac устройства.|
 |lastCheckInDateTime|DateTimeOffset|Время последней проверки устройства.|
 
 
@@ -104,7 +104,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbcc5c5a1b273c1a6db5ef4177045d23ad7534dc5db2c90d28741e45385a5001
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2878d128394c207decf1074a78f9e45f6c2d4fe2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172913"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786293"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Тип ресурса iosMobileAppIdentifier
 
@@ -46,7 +46,6 @@ ms.locfileid: "54172913"
   "bundleId": "String"
 }
 ```
-
 
 
 

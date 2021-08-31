@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 11ca5cf3e734a2d707547e3d50e0bc91d9b16e99b3d76ac302156fa4f5c6d810
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eef9aa85790b211024beb5fa9bcc7be2e9a5ad24
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165842"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784522"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>тип enum win32LobAppRegistryDetectionType
 
@@ -26,12 +26,11 @@ ms.locfileid: "54165842"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен.|
-|существует|1 |Указанный ключ реестра или значение существует.|
+|существует|1|Указанный ключ реестра или значение существует.|
 |doesNotExist|2|Указанного ключа или значения реестра не существует.|
-|string|3 |Тип значения строки.|
+|string|3|Тип значения строки.|
 |integer|4 |Тип значения Integer.|
 |version|5 |Тип значения версии.|
-
 
 
 

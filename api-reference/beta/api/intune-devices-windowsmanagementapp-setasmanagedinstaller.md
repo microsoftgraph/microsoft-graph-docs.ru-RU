@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53f8ca1f89f49bad540f0fb90b5093c39b9b88f354b4e7ceb8473b404483474c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66572337c11c695d78e9fe8e4afd0e5b9ed83a69
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191440"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783360"
 ---
 # <a name="setasmanagedinstaller-action"></a>действие setAsManagedInstaller
 
@@ -27,9 +27,9 @@ ms.locfileid: "54191440"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|**TODO: Определение областей **|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|**TODO: Определение областей AppOnly **|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsManagementApp/setAsManagedInstaller
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/s
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

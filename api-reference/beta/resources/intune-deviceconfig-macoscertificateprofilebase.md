@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc4219b8ac68d939f1e1f2b333f43cb576ae15b9ba7968542733d95bfd2f4788
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5df1633b6a0b1bdeb88c61c8f52d54baca9fc3a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148220"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783577"
 ---
 # <a name="macoscertificateprofilebase-resource-type"></a>тип ресурса macOSCertificateProfileBase
 
@@ -111,7 +111,6 @@ ms.locfileid: "54148220"
   "certificateValidityPeriodScale": "String"
 }
 ```
-
 
 
 

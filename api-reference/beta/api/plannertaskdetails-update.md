@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f7b610f2ba142346de4bbcdf65acc80409b1045f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5538b143e41e36b6e12e23dca2e3ea279ed26a64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049970"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787906"
 ---
 # <a name="update-plannertaskdetails"></a>Обновление объекта plannertaskdetails
 
@@ -45,7 +45,7 @@ PATCH /planner/tasks/{id}/details
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
-|description|String|Описание задачи.|
+|description|Строка|Описание задачи.|
 |previewType|string|Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
@@ -80,7 +80,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
       "previewPriority": " !",
       "type": "Other"
     },
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer":{
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer":{
       "@odata.type": "microsoft.graph.plannerExternalReference",
       "previewPriority": "  !!",
     },
@@ -111,7 +111,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,7 +126,7 @@ Content-length: 1793
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
   "previewType": "automatic",
   "references": {
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer": {
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {
       "@odata.type": "#microsoft.graph.plannerExternalReference",
       "alias": "Graph Explorer",
       "type": "Other",

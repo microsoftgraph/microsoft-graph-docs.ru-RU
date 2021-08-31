@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddf34ecfdae50a9c5c9740ef130294af9ce224b9ad8a54a9af4a9b3a98762e9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a62e2dbcfe55154ee5d264498bceaf37ef48a9d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206314"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782947"
 ---
 # <a name="userexperienceanalyticsmetrichistory-resource-type"></a>тип ресурса userExperienceAnalyticsMetricHistory
 
@@ -61,7 +61,6 @@ ms.locfileid: "54206314"
   "metricType": "String"
 }
 ```
-
 
 
 

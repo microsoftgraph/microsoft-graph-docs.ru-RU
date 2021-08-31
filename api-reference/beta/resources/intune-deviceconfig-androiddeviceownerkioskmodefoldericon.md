@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b8a089e0cfb56257006f71ce25b514f840868c2f3795b8651692184e69eb87a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60ade3e1bd18e78fd14fe49933eacd9fd7f49437
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245109"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787043"
 ---
 # <a name="androiddeviceownerkioskmodefoldericon-enum-type"></a>тип enum androidDeviceOwnerKioskModeFolderIcon
 
@@ -26,11 +26,10 @@ ms.locfileid: "54245109"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен; это значение игнорируется.|
-|darkSquare|1 |Значок папки отображается как темный квадрат.|
+|darkSquare|1|Значок папки отображается как темный квадрат.|
 |darkCircle|2|Значок папки отображается как темный круг.|
-|lightSquare|3 |Значок папки отображается как светлый квадрат.|
+|lightSquare|3|Значок папки отображается как светлый квадрат.|
 |lightCircle|4 |Значок папки отображается как светлый круг.|
-
 
 
 

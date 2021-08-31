@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07acfbad5baf0cb68118472ea32d667c7f2868dac490665e61726fd5a6e4bf75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68c900ce67f5eff6e7f9f5d9f3078f92fe60686d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242568"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787843"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>тип ресурса embeddedSIMActivationCode
 
@@ -27,9 +27,9 @@ ms.locfileid: "54242568"
 |:---|:---|:---|
 |интегрированныйCircuitCardIdentifier|Строка|Идентификатор интегрированной схемной карты (ICCID) для встроенного кода активации SIM-карты, как это предусмотрено мобильным оператором.
 Вход должен соответствовать следующему регулярному выражению: "^ \[ 0-9 \] {19} \[ 0-9 \] ?$".|
-|matchingIdentifier|String|MatchingIdentifier (MatchingID), как указано в разделе Технические спецификации GSMA Association SGP.22 RSP 4.1.
+|matchingIdentifier|Строка|MatchingIdentifier (MatchingID), как указано в разделе Технические спецификации GSMA Association SGP.22 RSP 4.1.
 Вход должен соответствовать следующему регулярному выражению: "^ \[ a-zA-Z0-9 \- \] *$".|
-|smdpPlusServerAddress|String|Полное доменное имя сервера SM-DP+, указанное в технической спецификации GSM Association SPG .22 RSP.
+|smdpPlusServerAddress|Строка|Полное доменное имя сервера SM-DP+, указанное в технической спецификации GSM Association SPG .22 RSP.
 Вход должен соответствовать следующему регулярному выражению: '^( \[ a-zA-Z0-9 \] +(-a-zA-Z0-9 \[ \] +)* \. )+ \[ a-zA-Z \] {2,} $'.|
 
 ## <a name="relationships"></a>Связи
@@ -50,7 +50,6 @@ ms.locfileid: "54242568"
   "smdpPlusServerAddress": "String"
 }
 ```
-
 
 
 

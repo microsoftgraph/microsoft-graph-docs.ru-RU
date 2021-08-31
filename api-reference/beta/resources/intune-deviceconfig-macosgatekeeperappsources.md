@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1fdf2aa4009c9dedb49d046e7f912c0d23cc85eee92f784fa19f7398b725bc2d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cdac450a214f0c7ab3faec38bed049460b293ca7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141982"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783479"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>тип enum macOSGatekeeperAppSources
 
@@ -26,10 +26,9 @@ ms.locfileid: "54141982"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Значение устройства по умолчанию, без намерения.|
-|macAppStore|1 |Запускать можно только приложения из Mac AppStore.|
+|macAppStore|1|Запускать можно только приложения из Mac AppStore.|
 |macAppStoreAndIdentifiedDevelopers|2|Запускать можно только приложения из Mac AppStore и идентифицированных разработчиков.|
-|в любом месте|3 |Приложения из любой точки можно запускать.|
-
+|в любом месте|3|Приложения из любой точки можно запускать.|
 
 
 

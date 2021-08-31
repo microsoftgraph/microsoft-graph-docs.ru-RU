@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 399fe4e6e55809b9bbda108711dca3cc3a623fd76d56a766c156fe6fe120222f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a45767f8da04ffa612fc5ca99ffe825c2d4e954f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239156"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769476"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>тип enum vppTokenSyncStatus
 
@@ -26,10 +26,9 @@ ms.locfileid: "54239156"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Состояние по умолчанию.|
-|inProgress|1 |Последняя синхронизация в процессе.|
+|inProgress|1|Последняя синхронизация в процессе.|
 |завершено|2|Последняя синхронизация выполнена успешно.|
-|не удалось|3 |Последняя синхронизация не удалась.|
-
+|не удалось|3|Последняя синхронизация не удалась.|
 
 
 

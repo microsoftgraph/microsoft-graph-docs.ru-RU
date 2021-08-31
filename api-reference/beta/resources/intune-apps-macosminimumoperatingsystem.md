@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdf19f7f3f21f6aadbdafa8e8b9a36f6af867fca15001a1c4091dfc5a1a9047c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 718af8c04e604cb136537b6f0e1763c9d3a4ae53
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170533"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786399"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>тип ресурса macOSMinimumOperatingSystem
 
@@ -32,9 +32,10 @@ ms.locfileid: "54170533"
 |v10_11|Логический|Mac OS 10.11 или более поздней.|
 |v10_12|Логический|Mac OS 10.12 или более поздней.|
 |v10_13|Логический|Mac OS 10.13 или более поздней.|
-|v10_14|Логический|Mac OS 10.14 или более поздней.|
+|v10_14|Boolean|Mac OS 10.14 или более поздней.|
 |v10_15|Логический|Mac OS 10.15 или более поздней.|
 |v11_0|Boolean|Mac OS 11.0 или более поздней.|
+|v12_0|Логический|Mac OS 12.0 или более поздней.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,10 +59,10 @@ ms.locfileid: "54170533"
   "v10_13": true,
   "v10_14": true,
   "v10_15": true,
-  "v11_0": true
+  "v11_0": true,
+  "v12_0": true
 }
 ```
-
 
 
 

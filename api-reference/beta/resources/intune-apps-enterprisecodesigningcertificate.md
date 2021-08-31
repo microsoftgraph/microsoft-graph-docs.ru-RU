@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acb0e7e9c7e0abd81d03e70bffa7aa97153f970d48dd5247d1214fc761a063e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf469c4d1aa86a3acbc5dba823b671c93146258d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153330"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783003"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>тип ресурса enterpriseCodeSigningCertificate
 
@@ -34,7 +34,7 @@ ms.locfileid: "54153330"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |содержимое|В двоичном формате|Сертификат Windows Enterprise Code-Signing в формате необработанных данных.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние сертификата, предварительное или не предварительное. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
@@ -69,7 +69,6 @@ ms.locfileid: "54153330"
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

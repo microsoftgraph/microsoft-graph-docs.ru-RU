@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 594417da4102653e4d7c1e4d7653c84967cb83431935585874761c7e6d6da599
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06581f0c59bc5c0b41f4b21a546425c4d032fc18
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164309"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759514"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>тип ресурса windowsIdentityProtectionConfiguration
 
@@ -37,7 +37,7 @@ ms.locfileid: "54164309"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -45,11 +45,11 @@ ms.locfileid: "54164309"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|useSecurityKeyForSignin|Логический|Значение Boolean, используемее для Windows Hello ключа безопасности в качестве учетных данных с логотипом.|
-|enhancedAntiSpoofingForFacialFeaturesEnabled|Логический|Значение Boolean, используемого для обеспечения расширенного анти-спуфинга для распознавания лицевых функций Windows Hello проверки подлинности.|
+|useSecurityKeyForSignin|Boolean|Значение Boolean, используемее для Windows Hello ключа безопасности в качестве учетных данных с логотипом.|
+|enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|Значение Boolean, используемого для обеспечения расширенного анти-спуфинга для распознавания лицевых функций Windows Hello проверки подлинности.|
 |pinMinimumLength|Int32|Значение Integer, которое задает минимальное количество символов, необходимых для Windows Hello для бизнес-ПИН-кода. Допустимые значения : от 4 до 127 включительно и меньше или меньше значения, установленного для максимального ПИН-кода. Допустимые значения от 4 до 127|
 |pinMaximumLength|Int32|Значение Integer, которое задает максимальное количество символов, разрешенных для пин-кода работы. Допустимые значения от 4 до 127 включительно и больше или равны значению, за набором для минимального ПИН-кода. Допустимые значения от 4 до 127|
 |pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Это значение настраивает использование символов верхнего регистра в пин-Windows Hello для бизнеса. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
@@ -132,7 +132,6 @@ ms.locfileid: "54164309"
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

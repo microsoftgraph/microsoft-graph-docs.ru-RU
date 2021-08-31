@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b03d1e13b02d4956c634932e8dee1e58818b25eb17c3ac585257b0209fa69fc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aac1b49d6c2fab449fda91bdb5a339099950530e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241557"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786946"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>тип ресурса windowsInformationProtectionWipeAction
 
@@ -34,10 +34,10 @@ ms.locfileid: "54241557"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|String|Объект UserId, на который нацелено это действие стирки.|
-|targetedDeviceRegistrationId|String|Объект DeviceRegistrationId, нацеленный этим действием на стирку.|
+|targetedUserId|Строка|Объект UserId, на который нацелено это действие стирки.|
+|targetedDeviceRegistrationId|Строка|Объект DeviceRegistrationId, нацеленный этим действием на стирку.|
 |targetedDeviceName|Строка|Целевое имя устройства.|
 |targetedDeviceMacAddress|Строка|Адрес Mac целевого устройства.|
 |lastCheckInDateTime|DateTimeOffset|Время последней проверки устройства, на которое было нацелено это действие стирки.|
@@ -65,7 +65,6 @@ ms.locfileid: "54241557"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

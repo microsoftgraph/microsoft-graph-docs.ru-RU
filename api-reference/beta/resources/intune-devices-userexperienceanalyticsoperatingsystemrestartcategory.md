@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 964eef47e0c2287063ea1c2d0619a39998beea595c58c871abc2c31fd689473b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b68f119a463ad2e2cae5f5907e54188814f7ed3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197963"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783213"
 ---
 # <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>тип enum userExperienceAnalyticsOperatingSystemRestartCategory
 
@@ -25,16 +25,15 @@ ms.locfileid: "54197963"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Неизвестно|
-|restartWithUpdate|1 |Перезапуск с обновлением|
+|unknown|0|Unknown|
+|restartWithUpdate|1|Перезапуск с обновлением|
 |restartWithoutUpdate|2|Перезапуск без обновления|
-|blueScreen|3 |Перезапуск синего экрана|
+|blueScreen|3|Перезапуск синего экрана|
 |shutdownWithUpdate|4 |Завершение работы с обновлением|
 |shutdownWithoutUpdate|5 |Отключение без обновления|
 |longPowerButtonPress|6 |Длительное нажатие кнопки питания|
 |bootError|7 |Ошибка загрузки|
 |обновление|8 |Update|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 72a799efe0f6a910c8ddaba1390432579ace6e4bce86d99ff171d82fdf18349c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8fe71b72d1a20110787b98887c2ddeb13535cf09
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250016"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785180"
 ---
 # <a name="devicecompliancescriptrulesvalidationerror-enum-type"></a>тип enum deviceComplianceScriptRulesValidationError
 
@@ -26,9 +26,9 @@ ms.locfileid: "54250016"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Нет ошибки.|
-|jsonFileInvalid|1 |Ошибка Json file недействительна.|
+|jsonFileInvalid|1|Ошибка Json file недействительна.|
 |jsonFileMissing|2|Ошибка файла Json.|
-|jsonFileTooLarge|3 |Json file too large error.|
+|jsonFileTooLarge|3|Json file too large error.|
 |rulesMissing|4 |Правила отсутствуют ошибки.|
 |duplicateRules|5 |Ошибка дублирования правил.|
 |tooManyRulesSpecified|6 |Слишком много правил, заданных ошибки.|
@@ -38,7 +38,7 @@ ms.locfileid: "54250016"
 |datatypeNotSupported|10 |Тип данных, не поддерживаемый ошибкой.|
 |operatorDataTypeCombinationNotSupported|11 |Сочетание типа данных оператора не поддерживает ошибку.|
 |moreInfoUriMissing|12 |Дополнительные сведения об ошибке urlmissing.|
-|moreInfoUriInvalid|13 |Дополнительные сведения о недействительной ошибке URL-адреса.|
+|moreInfoUriInvalid|13|Дополнительные сведения о недействительной ошибке URL-адреса.|
 |moreInfoUriTooLarge|14 |Дополнительные сведения о большой ошибке ltoo.|
 |descriptionMissing|15 |Описание ошибки.|
 |descriptionInvalid|16 |Описание недействительной ошибки.|
@@ -57,7 +57,6 @@ ms.locfileid: "54250016"
 |unrecognizedLocale|29|Неузнаваемая ошибка локализовать.|
 |unknown|30|Неизвестная ошибка.|
 |remediationStringsMissing|31|Строки восстановления отсутствуют ошибки.|
-
 
 
 

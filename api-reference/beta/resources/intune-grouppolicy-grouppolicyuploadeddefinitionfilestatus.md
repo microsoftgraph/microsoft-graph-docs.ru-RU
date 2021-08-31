@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d1bb2975f718ed3bfdaa7ea9fb62d38850ec48d5861ed4ef934c989f7acac424
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 49a0bde51eb726b72c1978d5323f9c6699895d80
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133168"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784781"
 ---
 # <a name="grouppolicyuploadeddefinitionfilestatus-enum-type"></a>groupPolicyUploadedDefinitionFileStatus enum type
 
@@ -26,13 +26,12 @@ ms.locfileid: "54133168"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Group Policy uploaded definition file invalid upload status.|
-|uploadInProgress|1 |Group Policy uploaded definition file upload in progress.|
+|uploadInProgress|1|Group Policy uploaded definition file upload in progress.|
 |доступен|2|Файл определения, загруженный групповой политикой, доступен.|
-|назначено|3 |Файл определения групповой политики, загруженный в политику.|
+|назначено|3|Файл определения групповой политики, загруженный в политику.|
 |removalInProgress|4 |Group Policy uploaded definition file removal in progress.|
 |uploadFailed|5 |Отправка файла определения групповой политики не удалась.|
 |removalFailed|6 |Удаление файлов определения групповой политики не удалось.|
-
 
 
 

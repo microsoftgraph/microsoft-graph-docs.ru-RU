@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 109d585d451bf1cda22530f4e91c2b75414b74f83e4eb3921735ad7ae2fe6e26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d9c52e56badf0161a7a20b441c743f42e8b83c33
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244752"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784466"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>тип ресурса deviceHealthScriptAssignment
 
@@ -34,9 +34,9 @@ ms.locfileid: "54244752"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения скрипта для скрипта устройства. Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта назначения скрипта для скрипта устройства. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, на которые мы нацелим сценарий|
-|runRemediationScript|Логический|Определите, нужно ли запускать только сценарий обнаружения или запускать сценарий обнаружения и сценарий восстановления.|
+|runRemediationScript|Boolean|Определите, нужно ли запускать только сценарий обнаружения или запускать сценарий обнаружения и сценарий восстановления.|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Расписание запуска скрипта для целевой группы|
 
 ## <a name="relationships"></a>Связи
@@ -69,7 +69,6 @@ ms.locfileid: "54244752"
   }
 }
 ```
-
 
 
 
