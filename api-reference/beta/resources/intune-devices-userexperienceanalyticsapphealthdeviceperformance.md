@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1197f69ee9b4279332c73a83e841306593280b03
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 59df08aa5f6cf4b70a6c667d4bd951bc7430ebd4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266193"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58770478"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -34,7 +34,7 @@ ms.locfileid: "58266193"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
 |deviceModel|String|Имя модели устройства.|
 |deviceManufacturer|Строка|Имя производителя устройства.|
 |appCrashCount|Int32|Количество сбоей приложения для устройства. Допустимые значения 2147483648 2147483647|
@@ -75,7 +75,6 @@ ms.locfileid: "58266193"
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51bf765bf86f4202d9c47340086942347e24cb7952d73e7671e95d1e845bb250
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23060e6f6fa7f15023f6aa14f11cc785f00c5af1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191104"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792248"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание windowsFeatureUpdateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "54191104"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,14 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
-|displayName|String|Имя отображения профиля.|
+|id|Строка|Идентификатор объекта.|
+|displayName|Строка|Имя отображения профиля.|
 |description|Строка|Описание профиля, указанного пользователем.|
 |featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
-|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
 
@@ -112,7 +112,6 @@ Content-Length: 577
   "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
 }
 ```
-
 
 
 

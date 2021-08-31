@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cf3f1bb4d02493b2310766b6462aaa3f0e668f2934384db7b3d8fef46a9c08b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1328f4d14fd36ea782e1381dabb1eeabcc1e308a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54125832"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791770"
 ---
 # <a name="get-macoslobapp"></a>Получить macOSLobApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "54125832"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2035
+Content-Length: 2057
 
 {
   "value": {
@@ -116,7 +116,8 @@ Content-Length: 2035
       "v10_13": true,
       "v10_14": true,
       "v10_15": true,
-      "v11_0": true
+      "v11_0": true,
+      "v12_0": true
     },
     "buildNumber": "Build Number value",
     "versionNumber": "Version Number value",
@@ -138,7 +139,6 @@ Content-Length: 2035
   }
 }
 ```
-
 
 
 

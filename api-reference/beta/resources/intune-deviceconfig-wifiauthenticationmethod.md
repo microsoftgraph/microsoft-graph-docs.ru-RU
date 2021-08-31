@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dafdc4acf97eba6344bca82173f981e8eb5e8cdae98f0ae2e367ae347d9e5ee7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4906a94305b26f0b76ed843d6c967e50ac647173
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241718"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794837"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>тип enum wiFiAuthenticationMethod
 
@@ -26,9 +26,8 @@ Wi-Fi проверки подлинности.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |certificate|0|Используйте сертификат удостоверения для проверки подлинности.|
-|usernameAndPassword|1 |Используйте имя пользователя и пароль для проверки подлинности.|
+|usernameAndPassword|1|Используйте имя пользователя и пароль для проверки подлинности.|
 |derivedCredential|2|Использование производных учетных данных для проверки подлинности.|
-
 
 
 

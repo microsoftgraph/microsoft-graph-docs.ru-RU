@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c086d0b34e1a58c13468e85e9b0030381b0e8ace66076440d834dbf770a1931a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5fa4ee09c3e931766fe3f76131841e0d69bdc65d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253021"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793847"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>тип enum windowsPrivacyDataAccessLevel
 
@@ -26,10 +26,9 @@ ms.locfileid: "54253021"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Уровень доступа не указан, намерения не указаны. Устройство может вести себя как в UserInControl или ForceAllow. Это может зависеть от доступных данных конфиденциальности, Windows версий и других факторов.|
-|forceAllow|1 |Приложениям будет разрешен доступ к указанным данным конфиденциальности.|
+|forceAllow|1|Приложениям будет разрешен доступ к указанным данным конфиденциальности.|
 |forceDeny|2|Приложениям будет отказано в доступе к указанным данным конфиденциальности.|
-|userInControl|3 |Пользователям будет предложено, когда приложения попытаются получить доступ к указанным данным конфиденциальности.|
-
+|userInControl|3|Пользователям будет предложено, когда приложения попытаются получить доступ к указанным данным конфиденциальности.|
 
 
 

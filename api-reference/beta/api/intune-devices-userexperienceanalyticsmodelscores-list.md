@@ -1,18 +1,18 @@
 ---
-title: Удаление androidForWorkCompliancePolicy
-description: Удаляет androidForWorkCompliancePolicy.
+title: Список userExperienceAnalyticsModelScoreses
+description: Список свойств и связей объектов userExperienceAnalyticsModelScores.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9286595e5fb025a830b59d9c6f03ee68c0b7fde5
+ms.openlocfilehash: 982b5595c71e5e550c47a238042bdf066faf4431
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798358"
+ms.locfileid: "58796532"
 ---
-# <a name="delete-androidforworkcompliancepolicy"></a>Удаление androidForWorkCompliancePolicy
+# <a name="list-userexperienceanalyticsmodelscoreses"></a>Список userExperienceAnalyticsModelScoreses
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58798358"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md).
+Список свойств и связей [объектов userExperienceAnalyticsModelScores.](../resources/intune-devices-userexperienceanalyticsmodelscores.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58798358"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+GET /deviceManagement/userExperienceAnalyticsModelScores
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,20 +50,38 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsModelScores
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 469
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
+      "id": "f2c0f69c-f69c-f2c0-9cf6-c0f29cf6c0f2",
+      "model": "Model value",
+      "manufacturer": "Manufacturer value",
+      "modelDeviceCount": 0,
+      "endpointAnalyticsScore": 7.333333333333333,
+      "startupPerformanceScore": 7.666666666666667,
+      "appReliabilityScore": 6.333333333333333,
+      "healthStatus": "insufficientData"
+    }
+  ]
+}
 ```
 
 

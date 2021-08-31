@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aa48817d457dc82079a9091d4b4510c7b6bc233c88ef43f1b3c107da6d8602f7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8a403f28e711c86b6a196386e8109cc3d58077da
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185889"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759654"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>тип enum iosWallpaperDisplayLocation
 
@@ -26,10 +26,9 @@ ms.locfileid: "54185889"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Нет расположения, указанного для отображения обоев.|
-|lockScreen|1 |На экране Блокировки отображается настроенное изображение обоев.|
+|lockScreen|1|На экране Блокировки отображается настроенное изображение обоев.|
 |homeScreen|2|Настроенное изображение обоев отображается на экране Home (список значков).|
-|lockAndHomeScreens|3 |Настроенное изображение обоев отображается на экране блокировки и домашнем экране.|
-
+|lockAndHomeScreens|3|Настроенное изображение обоев отображается на экране блокировки и домашнем экране.|
 
 
 

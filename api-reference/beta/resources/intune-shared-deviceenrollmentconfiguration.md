@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6714713e86bb42fb2a78d0fde53269b82513af1cb693d840b788d6bb77c717d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f4095db44b1b32c3c1adb5792dab99167909c41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241515"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792556"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -70,7 +70,6 @@ ms.locfileid: "54241515"
   "version": 1024
 }
 ```
-
 
 
 

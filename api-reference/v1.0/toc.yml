@@ -453,7 +453,7 @@ items:
                 href: api/chat-get.md
               - name: Списки чатов для пользователя
                 href: api/chat-list.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -1256,6 +1256,18 @@ items:
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
+              - name: Вызовы PSTN
+                items:
+                  - name: Строка журнала PSTN
+                    href: resources/callrecords-pstncalllogrow.md
+                  - name: Список вызовов PSTN
+                    href: api/callrecords-callrecord-getpstncalls.md
+              - name: Прямые маршрутные вызовы
+                items:
+                  - name: Строка журнала прямой маршрутики
+                    href: resources/callrecords-directroutinglogrow.md
+                  - name: Список звонков прямой маршрутики
+                    href: api/callrecords-callrecord-getdirectroutingcalls.md
           - name: Собрания по сети
             items:
               - name: Собрание по сети
@@ -4300,7 +4312,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Files
+      - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -4388,7 +4400,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -6568,7 +6580,7 @@ items:
             items:
               - name: Список для группы
                 href: api/group-list-permissiongrants.md
-      - name: Задачи из списка дел
+      - name: Задачи To-Do
         displayName: Microsoft To Do
         items:
           - name: Обзор

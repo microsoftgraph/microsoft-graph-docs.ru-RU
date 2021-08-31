@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4089b98b4cccb3eb4fda1ea181dbc311e24081247ba3932c46f3ed7c63be57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc1a97c16cf3d5ca132d2c78233c6627a1fae2a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164197"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791812"
 ---
 # <a name="grouppolicyuploadedcategory-resource-type"></a>тип ресурса groupPolicyUploadedCategory
 
@@ -37,9 +37,9 @@ ms.locfileid: "54164197"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Строковой id имени отображения категории, унаследованной от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|displayName|String|Строковой id имени отображения категории, унаследованной от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |isRoot|Логический|Определяет, является ли категория корневой категорией, унаследованной от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
-|id|Строка|Ключ объекта. Унаследованный от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|id|String|Ключ объекта. Унаследованный от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
 ## <a name="relationships"></a>Связи
@@ -67,7 +67,6 @@ ms.locfileid: "54164197"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

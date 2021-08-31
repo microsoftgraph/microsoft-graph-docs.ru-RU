@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 877e710d00405f3b9a592cd7eb2501d25495d0a61237ea5acc62f6cb9e4f38d8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9fa1627951488c543c697cc5b9948963aa502998
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185686"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798106"
 ---
 # <a name="userexperienceanalyticssettings-resource-type"></a>тип ресурса userExperienceAnalyticsSettings
 
@@ -43,7 +43,6 @@ ms.locfileid: "54185686"
   "configurationManagerDataConnectorConfigured": true
 }
 ```
-
 
 
 

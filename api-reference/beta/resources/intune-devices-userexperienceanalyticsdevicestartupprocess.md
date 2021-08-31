@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f79e36f7eabf1d39aab7563b21cc5b2da5bffe5240b70d1f371ca26c4b8e6cf5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f41ad7b11904fdabc34182efd977e86698bf4855
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224602"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794436"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceStartupProcess
 
@@ -34,9 +34,9 @@ ms.locfileid: "54224602"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
 |managedDeviceId|Строка|ID устройства аналитики пользовательского интерфейса.|
-|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
 |productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
 |publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
 |startupImpactInMs|Int32|Влияние процесса запуска устройства для аналитики пользовательских интерфейсов в миллисекунд.|
@@ -63,7 +63,6 @@ ms.locfileid: "54224602"
   "startupImpactInMs": 1024
 }
 ```
-
 
 
 
