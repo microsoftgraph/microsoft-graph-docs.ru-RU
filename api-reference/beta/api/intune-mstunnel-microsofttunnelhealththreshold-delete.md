@@ -1,18 +1,18 @@
 ---
-title: Список deviceManagementConfigurationCategories
-description: Список свойств и связей объектов deviceManagementConfigurationCategory.
+title: Удаление microsoftTunnelHealthThreshold
+description: Удаляет microsoftTunnelHealthThreshold.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a3c55ce3d955f4260eae704f91985b17e15aef0
+ms.openlocfilehash: e5342b241edaf2d9ad02e6f65ac898918a3a7905
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792367"
+ms.locfileid: "58792148"
 ---
-# <a name="list-devicemanagementconfigurationcategories"></a>Список deviceManagementConfigurationCategories
+# <a name="delete-microsofttunnelhealththreshold"></a>Удаление microsoftTunnelHealthThreshold
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58792367"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов deviceManagementConfigurationCategory.](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md)
+Удаляет [microsoftTunnelHealthThreshold](../resources/intune-mstunnel-microsofttunnelhealththreshold.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58792367"
 }
 -->
 ``` http
-GET /deviceManagement/configurationCategories
+DELETE /deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthThresholdId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,43 +50,20 @@ GET /deviceManagement/configurationCategories
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories
+DELETE https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthThresholdId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 603
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
-      "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
-      "description": "Description value",
-      "helpText": "Help Text value",
-      "name": "Name value",
-      "displayName": "Display Name value",
-      "platforms": "macOS",
-      "technologies": "mdm",
-      "settingUsage": "configuration",
-      "parentCategoryId": "Parent Category Id value",
-      "rootCategoryId": "Root Category Id value",
-      "childCategoryIds": [
-        "Child Category Ids value"
-      ]
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

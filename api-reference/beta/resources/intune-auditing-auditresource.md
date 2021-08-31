@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71e261495a115d4aff6b2cfcd41103ff8f5a178f9a0747d60fbdcdfed8e4585c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ba8caec013be6e4cdf209ba701ebcfd9553d7f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229551"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791918"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 
@@ -25,7 +25,7 @@ ms.locfileid: "54229551"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |modifiedProperties|Коллекция [auditProperty](../resources/intune-auditing-auditproperty.md)|Список измененных свойств.|
 |type|Строка|Тип ресурса аудита.|
 |resourceId|String|ИД ресурса аудита.|
@@ -56,7 +56,6 @@ ms.locfileid: "54229551"
   "resourceId": "String"
 }
 ```
-
 
 
 

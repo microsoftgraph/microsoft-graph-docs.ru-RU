@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b11df9995c69c7237146876c95764e59326b3851c0d94ea082ca408913e9428d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 29050a8df830110e264339089b04ce92db4391cb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161138"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791834"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>тип ресурса groupPolicySettingMapping
 
@@ -34,7 +34,7 @@ ms.locfileid: "54161138"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |parentId|Строка|Родительский Id параметра групповой политики.|
 |childIdList|Коллекция String|Список детских ид параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
@@ -43,9 +43,9 @@ ms.locfileid: "54161138"
 |settingDisplayName|Строка|Отображение имени этого параметра групповой политики.|
 |settingDisplayValue|Строка|Отображение значения этого параметра групповой политики.|
 |settingDisplayValueType|Строка|Тип отображения значения этого параметра групповой политики.|
-|settingValueDisplayUnits|String|Отображаемая единица этого значения групповой политики|
+|settingValueDisplayUnits|Строка|Отображаемая единица этого значения групповой политики|
 |settingCategory|Строка|Категория, в которая находится параметр групповой политики.|
-|mdmCspName|String|CSP назовет эту групповую политику, устанавливая карты.|
+|mdmCspName|Строка|CSP назовет эту групповую политику, устанавливая карты.|
 |mdmSettingUri|Строка|MDM CSP URI этой групповой политики, устанавливая карты.|
 |mdmMinimumOSVersion|Int32|Минимальная версия ОС, поддерживаемая этим параметром mdm.|
 |settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (безопасность или admx) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
@@ -97,7 +97,6 @@ ms.locfileid: "54161138"
   "admxSettingDefinitionId": "String"
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Get groupPolicyPresentationCheckBox
-description: Чтение свойств и связей объекта groupPolicyPresentationCheckBox.
-author: dougeby
+title: Получить windowsOfficeClientConfiguration
+description: Получите определенный объект политики безопасности windowsOfficeClientConfiguration.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03fdb72ce6ea2a0c7dace66b5f15f10eef437701
+ms.openlocfilehash: 853b2cb3f4032a10c6970cd32cf77d9a147b7a8d
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792290"
+ms.locfileid: "58792168"
 ---
-# <a name="get-grouppolicypresentationcheckbox"></a>Get groupPolicyPresentationCheckBox
+# <a name="get-windowsofficeclientconfiguration"></a>Получить windowsOfficeClientConfiguration
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58792290"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [groupPolicyPresentationCheckBox.](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md)
+Получите определенный объект политики безопасности [windowsOfficeClientConfiguration.](../resources/intune-cirrus-windowsofficeclientconfiguration.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,8 +37,7 @@ ms.locfileid: "58792290"
 }
 -->
 ``` http
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation
-GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations/{groupPolicyPresentationId}
+GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,14 +53,14 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект GroupPolicyPresentationCheckBox](../resources/intune-grouppolicy-grouppolicypresentationcheckbox.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation
+GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{key}
 ```
 
 ### <a name="response"></a>Отклик
@@ -69,15 +68,38 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 269
+Content-Length: 1144
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.groupPolicyPresentationCheckBox",
-    "label": "Label value",
-    "id": "7748190f-190f-7748-0f19-48770f194877",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "defaultChecked": true
+    "@odata.type": "#microsoft.graph.windowsOfficeClientConfiguration",
+    "id": "13a5ac73-ac73-13a5-73ac-a51373aca513",
+    "userPreferencePayload": "<Unknown Primitive Type Edm.Stream>",
+    "policyPayload": "<Unknown Primitive Type Edm.Stream>",
+    "description": "Description value",
+    "displayName": "Display Name value",
+    "priority": 8,
+    "userCheckinSummary": {
+      "@odata.type": "microsoft.graph.officeUserCheckinSummary",
+      "succeededUserCount": 2,
+      "failedUserCount": 15
+    },
+    "checkinStatuses": [
+      {
+        "@odata.type": "microsoft.graph.officeClientCheckinStatus",
+        "userPrincipalName": "User Principal Name value",
+        "deviceName": "Device Name value",
+        "devicePlatform": "Device Platform value",
+        "devicePlatformVersion": "Device Platform Version value",
+        "wasSuccessful": true,
+        "userId": "User Id value",
+        "checkinDateTime": "2016-12-31T23:56:33.9571764-08:00",
+        "errorMessage": "Error Message value",
+        "appliedPolicies": [
+          "Applied Policies value"
+        ]
+      }
+    ]
   }
 }
 ```

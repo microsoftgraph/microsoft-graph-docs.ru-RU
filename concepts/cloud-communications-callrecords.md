@@ -4,18 +4,18 @@ description: Записи вызовов дают представление о 
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: e87437c97a7591c3a053a244f1e5fefe2963ede088ff81370aa9cfadaaf42ef3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81ba052abf90caeb89be38f7e7a5e3a1d3af5814
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151881"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791791"
 ---
 # <a name="call-records-overview"></a>Обзор записей вызовов
 
 Записи звонков содержат сведения об использовании и диагностике, касающиеся звонков и собраний по сети в вашей организации при применении Microsoft Teams или Skype для бизнеса. Данные об использовании и диагностике можно использовать для создания настраиваемой отчетности для бизнеса для отслеживания принятия или устранения проблем с качеством вызовов.
 
-Организации могут подписываться на изменения записей вызовов с помощью возможности подписки на веб-Graph microsoft Graph, что позволяет им создавать отчеты в режиме реального времени из данных или оповещать о некоторых сценариях, таких как экстренные вызовы. [](/graph/api/resources/webhooks?view=graph-rest-1.0)
+Организации могут подписываться на изменения записей вызовов с помощью возможности подписки на веб-Graph microsoft Graph, что позволяет им создавать отчеты в режиме реального времени из данных или оповещать о некоторых сценариях, таких как экстренные вызовы. [](/graph/api/resources/webhooks.md)
 
 > **Важно:** Используйте усмотрение при предоставлении разрешений CallRecords.Read.All приложениям. Записи вызовов могут предоставлять сведения о работе вашего бизнеса и, следовательно, могут быть мишенью для злоумышленников. Предоставляйте это разрешение только приложениям, которым вы доверяете в плане соблюдения ваших требований к защите данных.
 
@@ -25,11 +25,11 @@ ms.locfileid: "54151881"
 
 ## <a name="look-up-a-call-record-by-its-call-id"></a>Посмотрите запись вызова по его ID вызова
 
-Приложения могут получить запись [вызова по](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) его ID. Этот ID можно определить из уведомления веб-сайта или извлечь из административных средств.
+Приложения могут получить запись [вызова по](/graph/api/resources/callrecords-callrecord.md) его ID. Этот ID можно определить из уведомления веб-сайта или извлечь из административных средств.
 
 ## <a name="get-call-record-reports"></a>Получать отчеты о записи вызовов
 
-Организации, Microsoft Teams для подключения к открытой телефонной сети (PSTN), как правило, хотят отслеживать это использование, чтобы понять связанные с этим затраты. Функции [getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) и [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) [](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) возвращают проекцию данных записи вызовов в табулярном формате.
+Организации, Microsoft Teams для подключения к открытой телефонной сети (PSTN), как правило, хотят отслеживать это использование, чтобы понять связанные с этим затраты. Функции [getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) и [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls) [](/graph/api/resources/callrecords-callrecord) возвращают проекцию данных записи вызовов в табулярном формате.
 
 ## <a name="see-also"></a>См. также
 

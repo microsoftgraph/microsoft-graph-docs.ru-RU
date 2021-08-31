@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3841d57ace3b7ad57b4c2085fb3dcf803232003dc4eee95cae23f262d3b31d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ae6b61de1d0f4dd3913d1cdb64a217fe081f038
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217591"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792325"
 ---
 # <a name="create-appleenrollmentprofileassignment"></a>Создание appleEnrollmentProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "54217591"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,7 +99,6 @@ Content-Length: 440
   }
 }
 ```
-
 
 
 

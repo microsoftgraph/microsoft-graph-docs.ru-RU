@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62e408154f601f98fec33435e8b4728f3d135526
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8070f21ed0ab197ff5c4df273753220747521dc5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253504"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58752037"
 ---
 # <a name="windowspackageinformation-resource-type"></a>тип ресурса windowsPackageInformation
 
@@ -25,7 +25,7 @@ ms.locfileid: "58253504"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md);|Архитектура Windows, для которой может работать это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, для которой может работать это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |displayName|Строка|Имя отображения.|
 |identityName|String|Имя удостоверения.|
 |identityPublisher|Строка|Удостоверение Publisher.|
@@ -70,7 +70,6 @@ ms.locfileid: "58253504"
   }
 }
 ```
-
 
 
 

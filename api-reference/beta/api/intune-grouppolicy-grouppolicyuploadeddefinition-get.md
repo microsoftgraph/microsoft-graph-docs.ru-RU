@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be103e3b899955fbad61b3a7542666f2e5bf1663
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 64d145b99b61c75b78b7ec3ce9b18b9f7501ce53
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259498"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791953"
 ---
 # <a name="get-grouppolicyuploadeddefinition"></a>Get groupPolicyUploadedDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58259498"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{gr
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 582
+Content-Length: 698
 
 {
   "value": {
@@ -87,13 +87,14 @@ Content-Length: 582
     "policyType": "admxIngested",
     "hasRelatedDefinitions": true,
     "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+    "minDeviceCspVersion": "Min Device Csp Version value",
+    "minUserCspVersion": "Min User Csp Version value",
     "version": "Version value",
     "id": "a5f83119-3119-a5f8-1931-f8a51931f8a5",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
-
 
 
 
