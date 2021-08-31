@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6263c9b3d9e7a74ca8e31dc0c49de0994817a6a51332cb8c1c5bcfefadca0f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2dfe10147be3e0b39d6b8a37f0a8f3a081f3aac
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165709"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783507"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>тип ресурса macOSEndpointProtectionConfiguration
 
@@ -45,8 +45,8 @@ ms.locfileid: "54165709"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметр System и Privacy, который определяет, какие приложения для скачивания можно запускать на macOS-устройстве. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
 |gatekeeperBlockOverride|Логический|Если задана истина, переопределения пользователя для Gatekeeper будут отключены.|
@@ -59,9 +59,9 @@ ms.locfileid: "54165709"
 |fileVaultInstitutionalRecoveryKeyCertificate|В двоичном формате|Необходимый, если выбранный тип ключа восстановления (s) включает InstitutionalRecoveryKey. Кодированный файл сертификата DER, используемый для задавания институционального ключа восстановления.|
 |fileVaultInstitutionalRecoveryKeyCertificateFileName|Строка|Имя файла сертификата ключа восстановления, отображаемого в пользовательском интерфейсе. (*.der).|
 |fileVaultPersonalRecoveryKeyHelpMessage|Строка|Необходимый, если выбранный тип ключа восстановления (s) включает PersonalRecoveryKey. Короткое сообщение, отображаемая пользователю, которое объясняет, как он может получить свой личный ключ восстановления.|
-|fileVaultAllowDeferralUntilSignOut|Boolean|Необязательный. Если установлена истина, пользователь может отложить включение FileVault до тех пор, пока они не выпишутся.|
+|fileVaultAllowDeferralUntilSignOut|Boolean|Необязательное свойство. Если установлена истина, пользователь может отложить включение FileVault до тех пор, пока они не выпишутся.|
 |fileVaultNumberOfTimesUserCanIgnore|Int32|Необязательный. При использовании параметра Defer это максимальное количество раз, когда пользователь может игнорировать подсказки, чтобы включить FileVault, прежде чем fileVault потребуется для пользователя, чтобы войти. Если установлено до -1, всегда будет предложено включить FileVault до включения FileVault, хотя это позволит пользователю обойти включение FileVault. Настройка этого параметра до 0 отключит функцию.|
-|fileVaultDisablePromptAtSignOut|Boolean|Необязательный. При использовании параметра Defer, если задается true, пользователю не предложено включить FileVault при входе.|
+|fileVaultDisablePromptAtSignOut|Boolean|Необязательное свойство. При использовании параметра Defer, если задается true, пользователю не предложено включить FileVault при входе.|
 |fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Необязательный. Если выбранный тип ключа восстановления (s) включает PersonalRecoveryKey, частота вращения этого ключа в месяцах.|
 |fileVaultHidePersonalRecoveryKey|Boolean|Необязательное свойство. Скрытый личный ключ восстановления не появляется на экране пользователя во время шифрования FileVault, что снижает риск его оказаться в неправильных руках.|
 |advancedThreatProtectionRealTime|[включить](../resources/intune-shared-enablement.md)|Определяет, следует ли включить защиту в режиме реального времени для microsoft Defender Advanced Threat Protection на macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
@@ -166,7 +166,6 @@ ms.locfileid: "54165709"
   ]
 }
 ```
-
 
 
 

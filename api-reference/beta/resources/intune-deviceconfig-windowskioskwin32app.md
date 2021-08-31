@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb0d9a7a14456740872c9eac193522e8113dc5c91acea4c44e235a1c3e0449ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8cd69ca7399e83e4a262ab017327de22cb3ba26
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164267"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805396"
 ---
 # <a name="windowskioskwin32app-resource-type"></a>тип ресурса windowsKioskWin32App
 
@@ -36,7 +36,7 @@ KioskModeApp v4 для поддержки приложений Win32
 |edgeNoFirstRun|Логический|Edge first run flag for Edge kiosk mode|
 |edgeKioskIdleTimeoutMinutes|Int32|Время ожидания в киоске Edge в минутах для режима киоска Edge. Допустимые значения от 0 до 1440|
 |edgeKioskType|[windowsEdgeKioskType](../resources/intune-deviceconfig-windowsedgekiosktype.md)|Тип edge-киоска для режима киоска Edge. Возможные значения: `publicBrowsing`, `fullScreen`.|
-|edgeKiosk|String|Edge kiosk (URL) для режима киоска Edge|
+|edgeKiosk|Строка|Edge kiosk (URL) для режима киоска Edge|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -62,7 +62,6 @@ KioskModeApp v4 для поддержки приложений Win32
   "edgeKiosk": "String"
 }
 ```
-
 
 
 

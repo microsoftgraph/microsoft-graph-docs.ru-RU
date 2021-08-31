@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e1b193f4abb338f3ecb18d848fcd8435f77743b6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3535decf70b34650d6ff3e381949e9fd01d60f23
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265419"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798127"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -148,6 +148,8 @@ ms.locfileid: "58265419"
 - [Политика BitLocker в отношении системных дисков](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Параметр синхронизации браузера](intune-deviceconfig-browsersyncsetting.md)
 - [Сопоставление корзин с классами](intune-deviceconfig-carttoclassassociation.md)
+- [Сведения о соединители сертификата](intune-raimportcerts-certificateconnectordetails.md)
+- [Значение метрики состояния соединиттеля сертификата](intune-raimportcerts-certificateconnectorhealthmetricvalue.md)
 - [Состояние выдачи сертификата](intune-deviceconfig-certificateissuancestates.md)
 - [Статус отзыва сертификатов](intune-deviceconfig-certificaterevocationstatus.md)
 - [Изменение разрешения uefi параметров](intune-deviceconfig-changeuefisettingspermission.md)
@@ -362,6 +364,7 @@ ms.locfileid: "58265419"
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
 - [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
 - [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
+- [Режим киоска управляемый ПИН-код домашнего экрана](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав администратора](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
 - [Локальные параметры безопасности: разрешенный тип пользователя для форматирования и извлечения съемных носителей](intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)
@@ -500,6 +503,7 @@ ms.locfileid: "58265419"
 - [Указанные сетевые плагины в неволе](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [Параметры управления состоянием](intune-deviceconfig-statemanagementsetting.md)
 - [Формат имени субъекта](intune-deviceconfig-subjectnameformat.md)
+- [Параметр серии времени](intune-raimportcerts-timeseriesparameter.md)
 - [Неподдерживаемая конфигурация устройства](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [Сведения о неподдерживаемой конфигурации устройства](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
 - [Классификация обновления](intune-deviceconfig-updateclassification.md)

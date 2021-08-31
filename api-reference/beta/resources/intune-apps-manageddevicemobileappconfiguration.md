@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d01ffe226ec89dc04d8554e2b59ba7f84bb6bcf2eda800bbd0fdb4a42753054e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8e7ba28b10823b6cbd1417e456984b5e13141c41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170526"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806119"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Тип ресурса managedDeviceMobileAppConfiguration
 
@@ -38,7 +38,7 @@ ms.locfileid: "54170526"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -75,7 +75,6 @@ ms.locfileid: "54170526"
   "version": 1024
 }
 ```
-
 
 
 

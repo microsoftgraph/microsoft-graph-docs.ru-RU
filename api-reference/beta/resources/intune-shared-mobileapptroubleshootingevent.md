@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3614a0562c6c57b43f12396bb1661df04678ead2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4e0e155f3c6e1fb28ee4b426b8b38031bb1e7faf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266921"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782912"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>тип ресурса mobileAppTroubleshootingEvent
 
@@ -36,11 +36,11 @@ ms.locfileid: "58266921"
 |:---|:---|:---|
 |id|Строка|UUID для объекта.|
 |**Устранение неполадок**|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md)|Набор пар строк и пар значений строк, которые предоставляют дополнительные сведения о событии устранения неполадок, унаследованных от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строк и пар значений строк, которые предоставляют дополнительные сведения о событии устранения неполадок, унаследованных от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |applicationId|String|Идентификатор приложения Intune.|
 |correlationId|String|ID, используемый для отслеживания сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. При необходимости|
+|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Необязательно|
 |история|[коллекция mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент истории устранения неполадок для мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |устранение неполадокErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
@@ -100,7 +100,6 @@ ms.locfileid: "58266921"
   ]
 }
 ```
-
 
 
 

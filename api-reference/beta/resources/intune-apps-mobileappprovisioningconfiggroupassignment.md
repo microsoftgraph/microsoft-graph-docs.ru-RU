@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f22a74fc4d47e6cfea15d6a3e4a3f75c44ad52a30fcd702316cc61ef4bd3222f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5232a4236960a923a58123ce94f48daaf2b3173
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250079"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798436"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>тип ресурса mobileAppProvisioningConfigGroupAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "54250079"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|targetGroupId|String|ID группы AAD, в которой ориентирована конфигурация подготовка приложений.|
+|targetGroupId|Строка|ID группы AAD, в которой ориентирована конфигурация подготовка приложений.|
 |id|Строка|Ключ объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -55,7 +55,6 @@ ms.locfileid: "54250079"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

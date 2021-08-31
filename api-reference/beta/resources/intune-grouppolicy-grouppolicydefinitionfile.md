@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fdaebc34d3923588a29c9282f37a547af15080cee6963ce2d177629cf01d51a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 887c1b3b8b744e45b265fedff2bd2b5fd767fe4b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244612"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796196"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>тип ресурса groupPolicyDefinitionFile
 
@@ -31,14 +31,14 @@ ms.locfileid: "54244612"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Локализованное удобное имя файла ADMX.|
-|description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
+|displayName|Строка|Локализованное удобное имя файла ADMX.|
+|description|Строка|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
 |languageCodes|Коллекция String|Поддерживаемые языковые коды для файла ADMX.|
-|targetPrefix|String|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|targetPrefix|Строка|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |targetNamespace|Строка|Указывает URI, используемую для определения пространства имен в файле ADMX.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |изменение|Строка|Версия изменения, связанная с файлом.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -70,7 +70,6 @@ ms.locfileid: "54244612"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

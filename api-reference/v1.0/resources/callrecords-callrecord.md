@@ -5,12 +5,12 @@ localization_priority: Normal
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bf1fb4b96cb063f41cb1f2590d5e389472efb18038110bd107269d66faeff44b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06628ea11e47eb1935ccb9145ac1685d936f897c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178551"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798092"
 ---
 # <a name="callrecord-resource-type"></a>тип ресурса callRecord
 
@@ -23,13 +23,16 @@ ms.locfileid: "54178551"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Получение callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Чтение свойств и связей объекта callRecord. |
+| [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [коллекция microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) | Список **объектов pstnCallLogRow** в записи вызовов. |
+| [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [коллекция microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md)| Список **объектов directRoutingLogRow** для записи вызовов. |
+
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|Время UTC, когда последний пользователь покинул вызов. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|id|String|Уникальный идентификатор для записи вызовов. Только для чтения.|
+|id|Строка|Уникальный идентификатор для записи вызовов. Только для чтения.|
 |joinWebUrl|String|Собрание URL-адреса, связанного с вызовом. Может быть недоступным для типа записи вызовов peerToPeer.|
 |lastModifiedDateTime|DateTimeOffset|Время UTC при создания записи вызовов. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |модальности|Коллекция modality|Список всех способов, используемых в вызове. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|

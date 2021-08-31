@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 350c3c9feeb15f41a157bf6511b87f04367d2ac905844d3adebc56094997a1ac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1537d8929f1d7ccc562072ca195c74a1f1167e08
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224448"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783836"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>тип enum androidEnterpriseAlwaysOnVpnPackageType
 
@@ -26,12 +26,11 @@ ms.locfileid: "54224448"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен; это значение игнорируется.|
-|настраиваемый|1 |Настраиваемые имена пакетов, ITPro может предоставить имя пакета клиента VPN, который они хотят использовать.|
+|настраиваемый|1|Настраиваемые имена пакетов, ITPro может предоставить имя пакета клиента VPN, который они хотят использовать.|
 |ciscoAnyConnect|2|Cisco AnyConnect.|
-|f5Access|3 |Доступ к F5.|
+|f5Access|3|Доступ к F5.|
 |paloAltoNetworksGlobalProtect|4 |Palo Alto Networks GlobalProtect.|
 |pulseSecure|5 |Pulse Secure.|
-
 
 
 

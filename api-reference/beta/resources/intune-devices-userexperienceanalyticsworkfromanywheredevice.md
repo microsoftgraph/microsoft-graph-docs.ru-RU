@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f9f5e5f6bc8ff43a3bac407858c1d41ff06f27d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: bd7db7eadfb9f14128c4bbfbbb69f69f881a1cec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255580"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783934"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevice-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -34,13 +34,13 @@ ms.locfileid: "58255580"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
+|id|Строка|Уникальный идентификатор аналитики пользовательских интерфейсов работает с любого устройства.|
 |deviceName|String|Работа из любого имени устройства.|
 |serialNumber|String|Пользовательский интерфейс работает с любого серийного номера устройства.|
 |manufacturer|String|Пользовательский интерфейс работает с любого производителя устройства.|
 |model|String|Пользовательский интерфейс работает из любой модели устройства.|
 |владение|String|Пользовательский интерфейс работает с любого владельца устройства.|
-|managedBy|Строка|Пользовательский интерфейс работает из любого агента управления устройства.|
+|managedBy|String|Пользовательский интерфейс работает из любого агента управления устройства.|
 |autoPilotRegistered|Логический|Пользовательский интерфейс работает с автопилотом устройства intune.|
 |autoPilotProfileAssigned|Логический|Аналитика пользовательских интерфейсов работает из любого автопилота устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Пользовательский интерфейс работает с azureAdRegistered любого устройства.|
@@ -48,7 +48,7 @@ ms.locfileid: "58255580"
 |azureAdJoinType|String|Пользовательский опыт работы из любого устройства azure Ad joinType.|
 |osDescription|String|Пользовательский интерфейс работает из любого описания ОС устройства.|
 |osVersion|String|Пользовательский интерфейс работает из любой версии ОС устройства.|
-|tenantAttached|Логический|Пользовательский интерфейс работает с любого клиента устройстваAttached.|
+|tenantAttached|Boolean|Пользовательский интерфейс работает с любого клиента устройстваAttached.|
 |compliancePolicySetToIntune|Логический|Пользовательский интерфейс работает из любой точки устройства compliancePolicySetToIntune.|
 |otherWorkloadsSetToIntune|Логический|Пользовательский интерфейс работает из любого другого устройстваWorkloadsSetToIntune.|
 |upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|Пользовательский опыт работы из любой точки windows обновить состояние приемлемости устройства. Возможные значения: `upgraded`, `unknown`, `notCapable`, `capable`.|
@@ -61,6 +61,11 @@ ms.locfileid: "58255580"
 |processorFamilyCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является проверка семейства оборудования процессора не удалось для устройства для обновления до последней версии windows.|
 |processor64BitCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка архитектуры процессорного оборудования 64-битной не удалось для устройства, чтобы обновить до последней версии windows.|
 |osCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка ОС не удалось для устройства для обновления до последней версии windows.|
+|WindowsScore|Двойное с плавающей точкой|Пользовательский интерфейс работает из любой точки на счет windows устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|cloudManagementScore|Двойное с плавающей точкой|Пользовательский интерфейс работает из любой точки за оценку облачного управления устройствами. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|cloudIdentityScore|Двойное с плавающей точкой|Пользовательский опыт работы из любой точки за счет облачного удостоверения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|cloudProvisioningScore|Двойное с плавающей точкой|Пользовательский интерфейс работает из любой точки на счет облачного обеспечения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Пользовательский интерфейс работает из любой точки на состояние здоровья устройства. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -102,10 +107,14 @@ ms.locfileid: "58255580"
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": "4.2",
+  "cloudManagementScore": "4.2",
+  "cloudIdentityScore": "4.2",
+  "cloudProvisioningScore": "4.2",
+  "healthStatus": "String"
 }
 ```
-
 
 
 

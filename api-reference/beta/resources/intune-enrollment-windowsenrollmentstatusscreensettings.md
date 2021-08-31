@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f483d4217506aa440df1108c968ba4df83f8fc7f55433e193d4c07388a70ce2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 98de649856d89d0dfaa484a3abcf816463241743
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164218"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797242"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>тип ресурса windowsEnrollmentStatusScreenSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "54164218"
 |allowDeviceUseBeforeProfileAndAppInstallComplete|Логический|Разрешить или заблокировать использование устройства перед завершением установки профиля и приложения|
 |blockDeviceSetupRetryByUser|Логический|Разрешить пользователю повторно повторить установку при сбое установки|
 |allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать коллекцию журналов при сбое установки|
-|customErrorMessage|String|Настройка настраиваемой ошибки для демонстрации при сбое установки|
+|customErrorMessage|Строка|Настройка настраиваемой ошибки для демонстрации при сбое установки|
 |installProgressTimeoutInMinutes|Int32|Установите время выполнения установки за несколько минут|
 |allowDeviceUseOnInstallFailure|Логический|Разрешить пользователю продолжить использование устройства при сбое установки|
 
@@ -55,7 +55,6 @@ ms.locfileid: "54164218"
   "allowDeviceUseOnInstallFailure": true
 }
 ```
-
 
 
 

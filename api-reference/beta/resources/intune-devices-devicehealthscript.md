@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7981e6bd1202b67406c723d3e27981c3b0415471917b69679e21f5db3e6a1b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a8dd615f783be39f02949d9535bcefdda5d2b64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248427"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799460"
 ---
 # <a name="devicehealthscript-resource-type"></a>тип ресурса deviceHealthScript
 
@@ -31,7 +31,7 @@ Intune предоставит клиенту возможность запуск
 |[Удаление deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|Нет|Удаляет [устройствоHealthScript](../resources/intune-devices-devicehealthscript.md).|
 |[Обновление устройстваHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Обновление свойств объекта [deviceHealthScript.](../resources/intune-devices-devicehealthscript.md)|
 |[Действие assign](../api/intune-devices-devicehealthscript-assign.md)|Нет|Н/Д|
-|[updateGlobalScript action](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Обновление скрипта здоровья несвободных устройств|
+|[updateGlobalScript action](../api/intune-devices-devicehealthscript-updateglobalscript.md)|Строка|Обновление скрипта здоровья несвободных устройств|
 |[getGlobalScriptHighestAvailableVersion action](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|Строка|Обновление скрипта здоровья несвободных устройств|
 |[включить действиеGlobalScripts](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Нет|Н/Д|
 |[areGlobalScriptsAvailable function](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Пока не задокументировано.|
@@ -44,18 +44,18 @@ Intune предоставит клиенту возможность запуск
 |id|String|Уникальный идентификатор для скрипта здоровья устройств|
 |publisher|String|Имя издателя скриптов для здоровья устройств|
 |version|String|Версия сценария состояния устройства|
-|displayName|Строка|Имя сценария состояния устройства|
-|description|String|Описание сценария состояния устройства|
+|displayName|String|Имя сценария состояния устройства|
+|description|Строка|Описание сценария состояния устройства|
 |detectionScriptContent|В двоичном формате|Все содержимое сценария powershell обнаружения|
 |remediationScriptContent|В двоичном формате|Все содержимое сценария powershell исправлений|
 |createdDateTime|DateTimeOffset|Время создания скрипта здоровья устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения скрипта здоровья устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указать, должен ли сценарий PowerShell работать как 32-битный|
+|runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для скрипта здоровья устройств|
 |isGlobalScript|Логический|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
-|highestAvailableVersion|Строка|Самая доступная версия для сценария Microsoft Proprietary|
+|highestAvailableVersion|String|Самая доступная версия для сценария Microsoft Proprietary|
 |detectionScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType DetectionScriptParameters.|
 |remediationScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType RemediationScriptParameters.|
 
@@ -116,7 +116,6 @@ Intune предоставит клиенту возможность запуск
   ]
 }
 ```
-
 
 
 

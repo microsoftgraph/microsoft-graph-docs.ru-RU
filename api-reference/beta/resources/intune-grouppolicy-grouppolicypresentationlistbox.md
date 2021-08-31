@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7bce1b09ea88394f7522b3469db2382ebd1eabb5af68f050ab61b7dae68a4b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9c5e121d08bb9cf362f75810dd014c5edb476af
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145259"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801467"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>тип ресурса groupPolicyPresentationListBox
 
@@ -38,7 +38,7 @@ ms.locfileid: "54145259"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |подпись|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Логический|Если этот параметр указан верно, пользователь должен указать значение подкайки реестра и имя подкайки реестра. В поле списка показаны два столбца: один для имени и один для данных. Значение по умолчанию  false.|
 |valuePrefix|String|Н/Д|
@@ -66,7 +66,6 @@ ms.locfileid: "54145259"
   "valuePrefix": "String"
 }
 ```
-
 
 
 
