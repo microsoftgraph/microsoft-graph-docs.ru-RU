@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8e6e92c18d23d9358c3be7efe53a09f695879d6028990e1c64dd2bf70c789dc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a94aef0f0a7b8f9bf323cae5a61b80aa972eb4ef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150348"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801790"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>тип ресурса deviceManagementScriptGroupAssignment
 
@@ -34,8 +34,8 @@ ms.locfileid: "54150348"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
-|targetGroupId|String|Id группы Azure Active Directory, на который мы нацелим сценарий.|
+|id|Строка|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|targetGroupId|Строка|Id группы Azure Active Directory, на который мы нацелим сценарий.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -55,7 +55,6 @@ ms.locfileid: "54150348"
   "targetGroupId": "String"
 }
 ```
-
 
 
 

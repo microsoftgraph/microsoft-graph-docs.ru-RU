@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 678714fe7a04ac86d5fc424b83b7df6f729230ae
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b3632c3e9982a1f9ca37b6af931491ecac4e0974
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254077"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789076"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Создание userExperienceAnalyticsDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "58254077"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства загрузки загрузочного устройства для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор устройства загрузки загрузочного устройства для аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства аналитики пользовательского интерфейса.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
@@ -73,6 +73,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |averageBlueScreens|Двойное с плавающей точкой|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
 |averageRestarts|Двойное с плавающей точкой|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
 |startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelStartupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
 
@@ -86,7 +87,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 684
+Content-length: 739
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -108,7 +109,8 @@ Content-length: 684
   "restartCount": 12,
   "averageBlueScreens": 6.0,
   "averageRestarts": 5.0,
-  "startupPerformanceScore": 7.666666666666667
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
 
@@ -117,7 +119,7 @@ Content-length: 684
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 733
+Content-Length: 788
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -140,10 +142,10 @@ Content-Length: 733
   "restartCount": 12,
   "averageBlueScreens": 6.0,
   "averageRestarts": 5.0,
-  "startupPerformanceScore": 7.666666666666667
+  "startupPerformanceScore": 7.666666666666667,
+  "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
-
 
 
 

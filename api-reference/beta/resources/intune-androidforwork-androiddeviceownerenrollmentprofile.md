@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86852501d55cd8f38e9164b406d7a4a68b9bb9cdfcbd8055ba08ec78d42a6338
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d94b751d5d7ef9ea8a72351bac45b40ecc3135e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206839"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788719"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>тип ресурса androidDeviceOwnerEnrollmentProfile
 
@@ -89,7 +89,6 @@ ms.locfileid: "54206839"
   ]
 }
 ```
-
 
 
 

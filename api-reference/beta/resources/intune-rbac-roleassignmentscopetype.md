@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75033203a5a3cf8f345ba9aa62e068a62242674c671c7accba3c21805d1ea988
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3de3f4852b25228e35aa5834fe8e984c6de953bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133105"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802945"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>Тип enum roleAssignmentScopeType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54133105"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |resourceScope|0|Разрешить назначения указанным ResourceScopes.|
-|allDevices|1 |Разрешить назначения всем устройствам Intune.|
+|allDevices|1|Разрешить назначения всем устройствам Intune.|
 |allLicensedUsers|2|Разрешить назначения всем лицензированным пользователям Intune.|
-|allDevicesAndLicensedUsers|3 |Разрешить назначения всем устройствам Intune и лицензированным пользователям.|
-
+|allDevicesAndLicensedUsers|3|Разрешить назначения всем устройствам Intune и лицензированным пользователям.|
 
 
 

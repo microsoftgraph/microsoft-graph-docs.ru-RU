@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ac82a983c441c4026e7b1f7b79c52a84a1a16261cfa3c478be1550c2aa23ca5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d5b90778763809f58ee8fef5ad29c59d4fbc1fd1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122336"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58757946"
 ---
 # <a name="managedappnotificationrestriction-enum-type"></a>тип enum managedAppNotificationRestriction
 
@@ -26,9 +26,8 @@ ms.locfileid: "54122336"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |разрешить|0|Поделитесь всеми уведомлениями.|
-|blockOrganizationalData|1 |Не делитесь данными orgnizational в уведомлениях.|
+|blockOrganizationalData|1|Не делитесь данными orgnizational в уведомлениях.|
 |block|2|Не делитесь уведомлениями.|
-
 
 
 

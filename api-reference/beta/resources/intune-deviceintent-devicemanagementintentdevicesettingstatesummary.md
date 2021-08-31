@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 274e94d73b43257ede5ebecc74dd772c8b2be9f6c70adcee4a35b1ca4954bf2a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37b16fe8e6095b1ab957e30b00b870560f33ae26
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145392"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803520"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>тип ресурса deviceManagementIntentDeviceSettingStateSummary
 
@@ -34,7 +34,7 @@ ms.locfileid: "54145392"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|The ID|
+|id|Строка|The ID|
 |settingName|String|Имя параметра|
 |compliantCount|Int32|Количество устройств, соответствующих требованиям.|
 |conflictCount|Int32|Количество устройств в конфликте|
@@ -67,7 +67,6 @@ ms.locfileid: "54145392"
   "remediatedCount": 1024
 }
 ```
-
 
 
 

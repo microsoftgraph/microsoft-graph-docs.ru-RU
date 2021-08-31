@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1b17382277e5bad323bbaf54ca191b6ae22b6935c9d921f8ca86bc172f44d65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6bab7f12749d0467ac6435be23ee7a49dac89af6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173102"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802490"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Тип ресурса windowsFirewallNetworkProfile
 
@@ -32,7 +32,7 @@ ms.locfileid: "54173102"
 |incomingTrafficBlocked|Boolean|Настраивает брандмауэр для блокировки всего входящего трафика независимо от других параметров политики. Если значение IncomingTrafficRequired и IncomingTrafficBlocked является верным, приоритет отнимает incomingTrafficBlocked.|
 |unicastResponsesToMulticastBroadcastsRequired|Логический|Настраивает брандмауэр, чтобы разрешить одноуровневые ответы на многокастный трафик трансляции. Когда UnicastResponsesToMulticastBroadcastsRequired и UnicastResponsesToMulticastBroadcastsBlocked являются верными, UnicastResponsesToMulticastBroadcastsBlocked имеет приоритет.|
 |unicastResponsesToMulticastBroadcastsBlocked|Boolean|Настраивает брандмауэр, чтобы блокировать одноуровневые ответы на многокастный трафик передачи. Когда UnicastResponsesToMulticastBroadcastsRequired и UnicastResponsesToMulticastBroadcastsBlocked являются верными, UnicastResponsesToMulticastBroadcastsBlocked имеет приоритет.|
-|inboundNotificationsRequired|Логический|Позволяет брандмауэру отображать уведомления, если приложение заблокировано для прослушивания в порту. Если inboundNotificationsRequired и InboundNotificationsBlocked являются верными, значение InboundNotificationsBlocked имеет приоритет.|
+|inboundNotificationsRequired|Boolean|Позволяет брандмауэру отображать уведомления, если приложение заблокировано для прослушивания в порту. Если inboundNotificationsRequired и InboundNotificationsBlocked являются верными, значение InboundNotificationsBlocked имеет приоритет.|
 |inboundNotificationsBlocked|Boolean|Предотвращает отображение брандмауэром уведомлений при блокировке приложения в порту. Если inboundNotificationsRequired и InboundNotificationsBlocked являются верными, значение InboundNotificationsBlocked имеет приоритет.|
 |authorizedApplicationRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения правил авторизованного приложения из групповой политики с правилами локального магазина вместо игнорирования правил локального магазина. Если значение AuthorizedApplicationRulesFromGroupPolicyNotMerged и AuthorizedApplicationRulesFromGroupPolicyMerged являются верными, то в приоритете authorizedApplicationRulesFromGroupPolicyMerged.|
 |authorizedApplicationRulesFromGroupPolicyNotMerged|Логический|Настраивает брандмауэр, чтобы предотвратить объединение правил авторизованного приложения из групповой политики с политиками из локального магазина, а не игнорировать правила локального магазина. Если значение AuthorizedApplicationRulesFromGroupPolicyNotMerged и AuthorizedApplicationRulesFromGroupPolicyMerged являются верными, то в приоритете authorizedApplicationRulesFromGroupPolicyMerged.|
@@ -45,7 +45,7 @@ ms.locfileid: "54173102"
 |inboundConnectionsRequired|Логический|Настраивает брандмауэр, чтобы разрешить все входящие подключения по умолчанию. Если inboundConnectionsRequired и InboundConnectionsBlocked являются верными, входящиеConnectionsBlocked имеют приоритет.|
 |inboundConnectionsBlocked|Boolean|Настраивает брандмауэр для блокировки всех входящих подключений по умолчанию. Если inboundConnectionsRequired и InboundConnectionsBlocked являются верными, входящиеConnectionsBlocked имеют приоритет.|
 |securedPacketExemptionAllowed|Boolean|Настраивает брандмауэр, чтобы разрешить хост-компьютеру отвечать на нежелательный сетевой трафик этого трафика, защищенный IPSec, даже если установлено, что stealthModeBlocked является верным. Когда securedPacketExemptionBlocked и SecuredPacketExemptionAllowed являются верными, SecuredPacketExemptionAllowed имеет приоритет.|
-|securedPacketExemptionBlocked|Логический|Настраивает брандмауэр, чтобы заблокировать хост-компьютер, чтобы реагировать на нежелательный сетевой трафик этого трафика, защищенный IPSec, даже если задана истина stealthModeBlocked. Когда securedPacketExemptionBlocked и SecuredPacketExemptionAllowed являются верными, SecuredPacketExemptionAllowed имеет приоритет.|
+|securedPacketExemptionBlocked|Boolean|Настраивает брандмауэр, чтобы заблокировать хост-компьютер, чтобы реагировать на нежелательный сетевой трафик этого трафика, защищенный IPSec, даже если задана истина stealthModeBlocked. Когда securedPacketExemptionBlocked и SecuredPacketExemptionAllowed являются верными, SecuredPacketExemptionAllowed имеет приоритет.|
 |policyRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения политик правил брандмауэра из групповой политики с политиками из локального магазина вместо игнорирования правил локального магазина. Если PolicyRulesFromGroupPolicyNotMerged и PolicyRulesFromGroupPolicyMerged являются верными, то PolicyRulesFromGroupPolicyMerged занимает приоритетное место.|
 |policyRulesFromGroupPolicyNotMerged|Логический|Настраивает брандмауэр, чтобы исключить объединение политик правил брандмауэра из групповой политики с политиками из локального магазина, а не игнорировать правила локального магазина. Если PolicyRulesFromGroupPolicyNotMerged и PolicyRulesFromGroupPolicyMerged являются верными, то PolicyRulesFromGroupPolicyMerged занимает приоритетное место.|
 
@@ -87,7 +87,6 @@ ms.locfileid: "54173102"
   "policyRulesFromGroupPolicyNotMerged": true
 }
 ```
-
 
 
 

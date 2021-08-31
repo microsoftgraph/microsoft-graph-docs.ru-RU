@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db744fc2b5888881cef52962fbe259354a47f62142afa8ed7d8bd2ae0a5a349c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f919182e6b1aa37d4f0fd9420630cef8a585321e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139448"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788957"
 ---
 # <a name="devicemanagementtemplatesettingcategory-resource-type"></a>тип ресурса deviceManagementTemplateSettingCategory
 
@@ -38,7 +38,7 @@ ms.locfileid: "54139448"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|ID категории, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|displayName|Строка|Имя категории, унаследованные от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|displayName|String|Имя категории, унаследованные от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |hasRequiredSetting|Логический|Категория содержит обязательный параметр верхнего уровня, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## <a name="relationships"></a>Связи
@@ -63,7 +63,6 @@ ms.locfileid: "54139448"
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

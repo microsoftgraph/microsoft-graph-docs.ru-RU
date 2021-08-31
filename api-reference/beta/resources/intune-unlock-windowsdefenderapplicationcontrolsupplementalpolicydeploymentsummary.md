@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 572788f0da665bfe717769b68fb3a06bfdb9b5b1db89c28dc192c7502acad2bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c419c0f797d1642f58184bd0f4cf425eab7b009c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181064"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803421"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-resource-type"></a>тип ресурса windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "54181064"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deployedDeviceCount|Int32|Количество устройств, успешно развернутых в этой дополнительной политике WindowsDefenderApplicationControl.|
 |failedDeviceCount|Int32|Количество устройств, которые не развернули эту дополнительную политику WindowsDefenderApplicationControl.|
 
@@ -54,7 +54,6 @@ ms.locfileid: "54181064"
   "failedDeviceCount": 1024
 }
 ```
-
 
 
 

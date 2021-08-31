@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b696638dbf3c7cdc00b1d47de782de53f92949078dc31d50d96decca9f6d236b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 18c881a18fd39c4775fab6ea4883a2de1de11901
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233079"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801881"
 ---
 # <a name="androidforworksettings-resource-type"></a>Тип ресурса androidForWorkSettings
 
@@ -35,7 +35,7 @@ ms.locfileid: "54233079"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор параметров Android for Work|
+|id|Строка|Идентификатор параметров Android for Work|
 |bindStatus|[AndroidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Связать состояние клиента с API EMM Google. Возможные значения: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[AndroidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Результат синхронизации последнего приложения. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -74,7 +74,6 @@ ms.locfileid: "54233079"
   "deviceOwnerManagementEnabled": true
 }
 ```
-
 
 
 

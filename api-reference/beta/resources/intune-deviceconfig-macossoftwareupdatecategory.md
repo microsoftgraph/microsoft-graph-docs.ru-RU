@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9cbe68055a28aa4a5fa69df5ebd47bbee2a2150804ff97adc9061707142ffd6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bd6c8cd61a084aceed597538f6a51bd6e098787
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148206"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801832"
 ---
 # <a name="macossoftwareupdatecategory-enum-type"></a>тип enum macOSSoftwareUpdateCategory
 
@@ -26,10 +26,9 @@ ms.locfileid: "54148206"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |критически важное значение|0|Критическое обновление|
-|configurationDataFile|1 |Обновление файла данных конфигурации|
+|configurationDataFile|1|Обновление файла данных конфигурации|
 |прошивка|2|Обновление прошивки|
-|другие|3 |Все другие типы обновлений|
-
+|другие|3|Все другие типы обновлений|
 
 
 

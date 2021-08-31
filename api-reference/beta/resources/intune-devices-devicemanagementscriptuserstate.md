@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac1ada80cac67de4c2461d4c747e0fe059ea6ef126e11f73d28a940141764578
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ce60e5369fd93cd6721b56d15906203aee804f8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145322"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802987"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>тип ресурса deviceManagementScriptUserState
 
@@ -61,7 +61,6 @@ ms.locfileid: "54145322"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

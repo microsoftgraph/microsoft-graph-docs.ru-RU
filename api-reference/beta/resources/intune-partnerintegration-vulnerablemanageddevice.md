@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1f37b36b6912033dd3eb086287d5d0ab1f58cf35ed89bab97b5581e10143069
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0859608857a903424ef6a112cf96adb9585045a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239135"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795152"
 ---
 # <a name="vulnerablemanageddevice-resource-type"></a>vulnerableManagedDevice resource type
 
@@ -34,7 +34,7 @@ ms.locfileid: "54239135"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности и ID устройства AAD.|
+|id|Строка|Ключ сущности и ID устройства AAD.|
 |managedDeviceId|Строка|ID управляемого устройства Intune.|
 |displayName|Строка|Имя устройства.|
 |lastSyncDateTime|DateTimeOffset|Последняя дата синхронизации.|
@@ -59,7 +59,6 @@ ms.locfileid: "54239135"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

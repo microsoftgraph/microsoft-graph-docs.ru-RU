@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f03fdfbf4448779462a0be01cbda1494147b3d3ea0fb15b6db3706989b21ee3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b1298a1a47c9697754710c0a376cc006d422340f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233058"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58753360"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>тип enum androidManagedStoreAccountAppSyncStatus
 
@@ -26,12 +26,11 @@ ms.locfileid: "54233058"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|0|Пока не задокументировано.|
-|credentialsNotValid|1 |Пока не задокументировано.|
+|credentialsNotValid|1|Пока не задокументировано.|
 |AndroidForWorkApiError|2|Пока не задокументировано.|
-|managementServiceError|3 |Пока не задокументировано.|
+|managementServiceError|3|Пока не задокументировано.|
 |unknownError|4 |Пока не задокументировано.|
 |Нет|5 |Пока не задокументировано.|
-
 
 
 

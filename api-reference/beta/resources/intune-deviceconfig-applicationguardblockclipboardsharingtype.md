@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b15be85ff8ec8067ce8495f69f811526ccd3fa8fca69b09f03a558bff4bf3229
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 879d61352702e0eb7a6b3b77b462ed9c24e0fd7d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226478"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805761"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>тип enum applicationGuardBlockClipboardSharingType
 
@@ -26,11 +26,10 @@ ms.locfileid: "54226478"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Not Configured|
-|blockBoth|1 |Блокировка буфера обмена данными как от хоста до контейнера, так и от контейнера к хосту|
+|blockBoth|1|Блокировка буфера обмена данными как от хоста до контейнера, так и от контейнера к хосту|
 |blockHostToContainer|2|Блокировка буфера обмена данными с хост-контейнера|
-|blockContainerToHost|3 |Блокировка буфера обмена данными из контейнера в хост|
+|blockContainerToHost|3|Блокировка буфера обмена данными из контейнера в хост|
 |blockNone|4 |Блокировка буфера обмена данными ни от хоста до контейнера, ни от контейнера к хосту|
-
 
 
 

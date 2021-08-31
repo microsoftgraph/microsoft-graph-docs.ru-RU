@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cda003cc61eb35acec367e99ae9cbdbabf293a52c60cd22ab2dedc368f4c6df9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f76cf7f153947b00dceba1cb093f84c3209b56e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54217192"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806259"
 ---
 # <a name="devicemanagementcertificationauthority-enum-type"></a>тип enum deviceManagementCertificationAuthority
 
@@ -26,9 +26,8 @@ ms.locfileid: "54217192"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен.|
-|Microsoft|1 |Тип Службы сертификации Майкрософт.|
+|Microsoft|1|Тип Службы сертификации Майкрософт.|
 |digiCert|2|Тип сертификации DigiCert.|
-
 
 
 

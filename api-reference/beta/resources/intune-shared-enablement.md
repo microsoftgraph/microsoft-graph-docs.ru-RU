@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 71b3e3566e7b459f24bdec10af022f4b4a0c9dae39010200d018d4c2291e78ae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b0b91f1e426ebdb7ebe52c0e16a3d8b083dfdb7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206139"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795559"
 ---
 # <a name="enablement-enum-type"></a>тип enum enablement
 
@@ -26,9 +26,8 @@ ms.locfileid: "54206139"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Значение устройства по умолчанию, без намерения.|
-|включено|1 |Включает параметр на устройстве.|
+|включено|1|Включает параметр на устройстве.|
 |отключено|2|Отключает параметр на устройстве.|
-
 
 
 
