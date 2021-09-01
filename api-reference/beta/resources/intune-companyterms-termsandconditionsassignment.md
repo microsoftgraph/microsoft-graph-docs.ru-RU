@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 31a913cc81fb2cb96f674f1b9e2ff8e2529211387aa8f5ea7e1b00922e92cb14
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9817a3aa75f6c6fbac95ce046d06d13801c182a1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153267"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789806"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>Тип ресурса termsAndConditionsAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "54153267"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
+|id|Строка|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 ## <a name="relationships"></a>Связи
@@ -60,7 +60,6 @@ ms.locfileid: "54153267"
   }
 }
 ```
-
 
 
 

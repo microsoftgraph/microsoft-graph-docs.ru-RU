@@ -1,18 +1,18 @@
 ---
-title: Действие assign
+title: getDeviceManagementIntentPerSettingContributingProfiles action
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39c605233eb9282a5d458e4635b2d77fdb51402c
+ms.openlocfilehash: 30d24028d2df49b9dbf3d6f5e6f4feb8f1aab21b
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790236"
+ms.locfileid: "58819047"
 ---
-# <a name="assign-action"></a>Действие назначения
+# <a name="getdevicemanagementintentpersettingcontributingprofiles-action"></a>getDeviceManagementIntentPerSettingContributingProfiles action
 
 Пространство имен: microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "58790236"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,9 +37,7 @@ ms.locfileid: "58790236"
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /deviceManagement/reports/getDeviceManagementIntentPerSettingContributingProfiles
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -55,45 +53,60 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Пока не задокументировано.|
+|name|String|Пока не задокументировано.|
+|select|Коллекция строк|Н/Д|
+|search|String|Пока не задокументировано.|
+|groupBy|Коллекция строк|Н/Д|
+|orderBy|Коллекция строк|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|sessionId|String|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
+В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getDeviceManagementIntentPerSettingContributingProfiles
 
 Content-type: application/json
-Content-length: 582
+Content-length: 278
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      },
-      "source": "policySets",
-      "sourceId": "Source Id value"
-    }
-  ]
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 131
+
+{
+  "value": "Z2V0RGV2aWNlTWFuYWdlbWVudEludGVudFBlclNldHRpbmdDb250cmlidXRpbmdQcm9maWxlcyBJbnR1bmUgRG9jIFNhbXBsZSA4OTc0NTYyMg=="
+}
 ```
 
 

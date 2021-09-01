@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b53e938714be38bdb1f316204b144aa6cac82788a55dc6659903937e153ef247
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eca58845501409da0f9d5200c5127accf43800ed
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188696"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815017"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Создание deviceConfigurationConflictSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54188696"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
-|id|Строка|ID для этого набора конфликтующих политик. Этот id — это ids всех политик в ConflictingDeviceConfigurations в лексикографическом порядке, разделенных подчеркиваниями.|
+|id|String|ID для этого набора конфликтующих политик. Этот id — это ids всех политик в ConflictingDeviceConfigurations в лексикографическом порядке, разделенных подчеркиваниями.|
 |contributingSettings|Коллекция String|Набор параметров в конфликте с заданными политиками|
 |deviceCheckinsImpacted|Int32|Количество проверок, на которое влияют конфликтующие политики и параметры|
 
@@ -113,7 +113,6 @@ Content-Length: 447
   "deviceCheckinsImpacted": 6
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d52b297586a9feccc1464e965782f9830fc07ac3f8e7b5635ede7983802454b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00ea3880b4349ac4534e47bcb7a55e0eb95ceac0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215092"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789921"
 ---
 # <a name="devicemanagementconfigurationcontroltype-enum-type"></a>тип enum deviceManagementConfigurationControlType
 
@@ -26,13 +26,12 @@ ms.locfileid: "54215092"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |default|0|Не переопределяйте значение по умолчанию|
-|DropDown|1 |Отображение выбора при отсеве|
+|DropDown|1|Отображение выбора при отсеве|
 |smallTextBox|2|Отображение ввода текста в небольшом текстовом вводе|
-|largeTextBox|3 |Отображение ввода текста в большом текстовом вводе|
+|largeTextBox|3|Отображение ввода текста в большом текстовом вводе|
 |переключатель|4 |Разрешить управление типом управления|
 |multiheaderGrid|5 |Разрешить тип управления многоголовой сеткой|
 |contextPane|6 |Разрешить тип управления области контекста|
-
 
 
 

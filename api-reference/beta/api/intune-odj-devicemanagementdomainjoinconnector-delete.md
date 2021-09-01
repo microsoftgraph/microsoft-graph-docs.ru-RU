@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f661c2e93b2271ff9f3c17a17fb1a0575179291ee1d9dce7a7057b56f2ddb716
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f31ddad6909ffbdde390ad40f7f11af92e2c388a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225092"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790229"
 ---
 # <a name="delete-devicemanagementdomainjoinconnector"></a>Удаление deviceManagementDomainJoinConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "54225092"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnect
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

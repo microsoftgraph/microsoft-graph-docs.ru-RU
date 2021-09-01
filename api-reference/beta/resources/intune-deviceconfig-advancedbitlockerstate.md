@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 777f2c3b5d530694eb1a5bad6f4b51be445592ad88109661866a1a77bbe20300
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5bffc66ff77c74986b51a48f5c8f10ca05eb2406
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179174"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816573"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>расширенный тип enumBitLockerState
 
@@ -26,7 +26,7 @@ ms.locfileid: "54179174"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|0|Расширенный успех состояния BitLocker|
-|noUserConsent|1 |Пользователь никогда не давал согласия на шифрование|
+|noUserConsent|1|Пользователь никогда не давал согласия на шифрование|
 |osVolumeUnprotected|2|Обнаружен незащищаемый том ОС|
 |osVolumeTpmRequired|4 |TPM не используется для защиты тома ОС, но требуется политикой|
 |osVolumeTpmOnlyRequired|8 |Защита TPM только не используется для объема ОС, но требуется политикой|
@@ -42,7 +42,6 @@ ms.locfileid: "54179174"
 |tpmNotAvailable|8192|TPM не доступен для BitLocker. Это означает, что TPM отсутствует, или переопределение недоступного реестра TPM задано или осмий хост находится на портативном/римском диске.|
 |tpmNotReady|16384|TPM не готова для BitLocker|
 |networkError|32768|Сеть недоступна. Это необходимо для резервного копирования ключа восстановления. Это сообщается для устройств, способных шифрование диска|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6597b76ea76bdfad24f431d98643a487a6fe54256dce20e3afaf6f681b710ea1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83f5b5e4a3db00a4ef1459ff35aa0f438a118157
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227409"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818107"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>тип enum windowsDeliveryOptimizationMode
 
@@ -26,13 +26,12 @@ ms.locfileid: "54227409"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Разрешить пользователю установить.|
-|httpOnly|1 |ТОЛЬКО HTTP, без одноранговых|
+|httpOnly|1|ТОЛЬКО HTTP, без одноранговых|
 |httpWithPeeringNat|2|По умолчанию ОС — http blended with peering behind the same network address translator|
-|httpWithPeeringPrivateGroup|3 |HTTP, смешанный с вглядывом в частную группу|
+|httpWithPeeringPrivateGroup|3|HTTP, смешанный с вглядывом в частную группу|
 |httpWithInternetPeering|4 |HTTP, смешанный с интернет-пирингом|
 |simpleDownload|99|Простой режим загрузки без вглядывок|
 |bypassMode|100|Режим обхода. Не используйте оптимизацию доставки и вместо этого используйте BITS|
-
 
 
 

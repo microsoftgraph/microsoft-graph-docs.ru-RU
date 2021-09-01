@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0861fa964ea6ae73a5a9e03ae23c2195a09a1d19d9341cb864bce82ee57801b4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5e4d507a50fce730e21d22af4d7428be6b5b694
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182737"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802721"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>тип enum deviceManagementDerivedCredentialIssuer
 
@@ -26,10 +26,9 @@ ms.locfileid: "54182737"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |intercede|0|Intercede|
-|entrustDatacard|1 |Entrust|
+|entrustDatacard|1|Entrust|
 |purebred|2|Purebred|
-|xTec|3 |XTec|
-
+|xTec|3|XTec|
 
 
 

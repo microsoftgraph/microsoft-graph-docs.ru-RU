@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51df8a5d7887dc6d6703e72f0567ed8cfb56ea6118546215397c5fb8111335fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b48da33145c94bf696b8068b330d2d35c743bdda
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173193"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785747"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>тип enum ratingJapanTelevisionType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54173193"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
-|allBlocked|1 |Не разрешайте контент тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
 |explicitAllowed|2|Все телевизионные контенты явно разрешены|
-
 
 
 

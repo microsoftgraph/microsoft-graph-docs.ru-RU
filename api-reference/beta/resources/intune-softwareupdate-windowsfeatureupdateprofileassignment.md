@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e4666992b4391abb4c94ce5d14d2d22194a332891a87c636054f1dd949c5c18
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b85aad78cda12df1cdc9eb7b1613c26b5caf53be
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241480"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816895"
 ---
 # <a name="windowsfeatureupdateprofileassignment-resource-type"></a>тип ресурса windowsFeatureUpdateProfileAssignment
 
@@ -59,7 +59,6 @@ ms.locfileid: "54241480"
   }
 }
 ```
-
 
 
 

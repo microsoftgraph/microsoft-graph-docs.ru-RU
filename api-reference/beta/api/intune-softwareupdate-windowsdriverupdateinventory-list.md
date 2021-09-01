@@ -1,18 +1,18 @@
 ---
-title: функция getComanagementEligibleDevicesSummary
-description: Пока не задокументировано.
+title: Список windowsDriverUpdateInventories
+description: Список свойств и связей объектов WindowsDriverUpdateInventory.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3e7e8e3fa2583aea3381615df04d8f2d65d7e03
+ms.openlocfilehash: 8da1556b2b38084fc1a9095a417d4277ab1b8d5a
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816643"
+ms.locfileid: "58819046"
 ---
-# <a name="getcomanagementeligibledevicessummary-function"></a>функция getComanagementEligibleDevicesSummary
+# <a name="list-windowsdriverupdateinventories"></a>Список windowsDriverUpdateInventories
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58816643"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано.
+Список свойств и связей [объектов WindowsDriverUpdateInventory.](../resources/intune-softwareupdate-windowsdriverupdateinventory.md)
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58816643"
 }
 -->
 ``` http
-GET /deviceManagement/getComanagementEligibleDevicesSummary
+GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,14 +50,14 @@ GET /deviceManagement/getComanagementEligibleDevicesSummary
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения данной функции возвращается код ответа и `200 OK` [comanagementEligibleDevicesSummary](../resources/intune-devices-comanagementeligibledevicessummary.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [WindowsDriverUpdateInventory](../resources/intune-softwareupdate-windowsdriverupdateinventory.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/getComanagementEligibleDevicesSummary
+GET https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,17 +65,24 @@ GET https://graph.microsoft.com/beta/deviceManagement/getComanagementEligibleDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 251
+Content-Length: 551
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.comanagementEligibleDevicesSummary",
-    "comanagedCount": 14,
-    "eligibleCount": 13,
-    "eligibleButNotAzureAdJoinedCount": 0,
-    "needsOsUpdateCount": 2,
-    "ineligibleCount": 15
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsDriverUpdateInventory",
+      "id": "3b14b403-b403-3b14-03b4-143b03b4143b",
+      "name": "Name value",
+      "version": "Version value",
+      "manufacturer": "Manufacturer value",
+      "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+      "driverClass": "Driver Class value",
+      "applicableDeviceCount": 5,
+      "approvalStatus": "declined",
+      "category": "previouslyApproved",
+      "deployDateTime": "2017-01-01T00:01:14.7822152-08:00"
+    }
+  ]
 }
 ```
 

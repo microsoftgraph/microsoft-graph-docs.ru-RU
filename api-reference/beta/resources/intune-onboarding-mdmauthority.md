@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3ba94d2162cf82dfc00740da3481d5ac338f607c2f7b71629f3fd8e93a8e524a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 94c117bd86e7aaa84b75ea002f31346e6dfc42bf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139286"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815507"
 ---
 # <a name="mdmauthority-enum-type"></a>тип enum mdmAuthority
 
@@ -25,11 +25,10 @@ ms.locfileid: "54139286"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Неизвестно|
-|intune|1 |Intune|
+|unknown|0|Unknown|
+|intune|1|Intune|
 |sccm|2|SCCM|
-|office365|3 |Office365|
-
+|office365|3|Office365|
 
 
 

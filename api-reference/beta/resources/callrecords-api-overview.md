@@ -5,12 +5,12 @@ author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 ms.localizationpriority: high
-ms.openlocfilehash: dafb08c19ad84a23b5954687c4f18ff091cfc3ab
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 8514bb4f422db85e87064f56679c764945e72761
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695464"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800774"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Работа с API записей звонков в Microsoft Graph
 
@@ -27,8 +27,8 @@ API записи звонков задается в подпространств
 | [callRecord](callrecords-callrecord.md) | [Получение callRecord](../api/callrecords-callrecord-get.md) |
 | [session](callrecords-session.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Перечисление сеансов](../api/callrecords-session-list.md) |
 | [segment](callrecords-segment.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Перечисление сеансов](../api/callrecords-session-list.md) |
-| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[Получение pstnCallLogRow](../api/callrecords-callrecord-getpstncalls.md) |
-| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [Получение directRoutingLogRow](../api/callrecords-callrecord-getdirectroutingcalls.md)|
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## <a name="call-record-structure"></a>Структура записи звонка
 
@@ -44,6 +44,6 @@ API записи звонков задается в подпространств
 
 ## <a name="see-also"></a>См. также
 
-- [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-beta)
+- [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true)
 
 

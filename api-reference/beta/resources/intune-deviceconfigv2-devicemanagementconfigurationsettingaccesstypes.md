@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c5c2aded956a058799a0ee0a08539e2d5542fb59a4b0bdded9ab81f5d0902013
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea2bed9cb102e6859a4ea2f3eb47b247b2f81d74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150452"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816536"
 ---
 # <a name="devicemanagementconfigurationsettingaccesstypes-enum-type"></a>тип enum deviceManagementConfigurationSettingAccessTypes
 
@@ -26,13 +26,12 @@ ms.locfileid: "54150452"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Пока не задокументировано.|
-|добавление|1 |Пока не задокументировано.|
-|копирование|2|Пока не задокументировано.|
+|добавление|1|Пока не задокументировано.|
+|copy|2|Пока не задокументировано.|
 |delete|4 |Пока не задокументировано.|
 |Получить|8 |Пока не задокументировано.|
 |replace|16 |Пока не задокументировано.|
 |выполнение|32|Пока не задокументировано.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bfe09dd13a3f82d2c4d58e0b4d6ca4be9ce96c2481acb052af864fa96136ee3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f73f0de4ce12332f204f3742a94918d92ee8c712
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131537"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802553"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>Обновление deviceManagementCachedReportConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54131537"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCach
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,11 +54,11 @@ PATCH /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCach
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для этого объекта|
-|reportName|String|Имя отчета|
+|reportName|Строка|Имя отчета|
 |filter|Строка|Фильтры, применяемые при создании отчета.|
 |select|Коллекция String|Столбцы, выбранные из отчета|
 |orderBy|Коллекция String|Порядок столбцов в отчете|
-|метаданные|String|Метаданные, управляемые вызывателями, связанные с отчетом|
+|метаданные|Строка|Метаданные, управляемые вызывателями, связанные с отчетом|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Время последнего обновления кэшного отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия кэш-отчета|
@@ -118,7 +118,6 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

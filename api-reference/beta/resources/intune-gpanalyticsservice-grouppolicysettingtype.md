@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce04708aa2648f97a3bb5a1c72781898c7c89fae6f3cd2579a9d3ca416ff5d3f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 569dfa626a636e0a0a7838025d22259e71341a96
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236061"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785117"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>тип enum groupPolicySettingType
 
@@ -26,13 +26,12 @@ ms.locfileid: "54236061"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|GroupPolicySettingType неизвестна|
-|policy|1 |Тип параметра политики|
+|policy|1|Тип параметра политики|
 |учетная запись|2|Тип параметра учетной записи|
-|securityOptions|3 |Тип параметра SecurityOptions|
+|securityOptions|3|Тип параметра SecurityOptions|
 |userRightsAssignment|4 |Тип параметра UserRightsAssignment|
 |auditSetting|5 |Тип параметра AuditSetting|
 |WindowsFirewallSettings|6 |Тип параметра WindowsFirewallSettings|
-
 
 
 

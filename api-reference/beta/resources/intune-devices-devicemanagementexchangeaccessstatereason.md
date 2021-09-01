@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ad09fe55138e194a08565413af909110092ccdd82b9e3cdafe7612b2e33c324
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c8ae17748009108c299039fde33f9b9d79a9737
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150355"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806217"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>тип enum deviceManagementExchangeAccessStateReason
 
@@ -26,9 +26,9 @@ ms.locfileid: "54150355"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Причина состояния доступа, обнаруженная в Exchange|
-|unknown|1 |Причина состояния неизвестного доступа|
+|unknown|1|Причина состояния неизвестного доступа|
 |exchangeGlobalRule|2|Состояние доступа, Exchange глобальное правило|
-|exchangeIndividualRule|3 |Состояние доступа, определяемая Exchange индивидуальным правилом|
+|exchangeIndividualRule|3|Состояние доступа, определяемая Exchange индивидуальным правилом|
 |exchangeDeviceRule|4 |Состояние доступа, определяющееся Exchange устройства|
 |exchangeUpgrade|5 |Состояние доступа из-за Exchange обновления|
 |exchangeMailboxPolicy|6 |Состояние доступа, определяемого политикой Exchange почтовых ящиков|
@@ -37,11 +37,10 @@ ms.locfileid: "54150355"
 |notCompliant|9 |Доступ к состояниям, отозванным из-за проблемы соответствия требованиям|
 |notEnrolled|10 |Доступ к состояниям, отозванным из-за проблемы управления|
 |unknownLocation|12 |Состояние доступа из-за неизвестного расположения|
-|mfaRequired|13 |Состояние доступа из-за проблемы с MFA|
+|mfaRequired|13|Состояние доступа из-за проблемы с MFA|
 |azureADBlockDueToAccessPolicy|14 |Состояние доступа отозвано политикой доступа AAD|
 |compromisedPassword|15 |Состояние доступа отозвано с помощью скомпрометированного пароля|
 |deviceNotKnownWithManagedApp|16 |Доступ к состояниям, отозванным из-за проблемы управляемого приложения|
-
 
 
 

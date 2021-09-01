@@ -1,18 +1,18 @@
 ---
-title: Намерение управления устройствами назначить действие
+title: Действие assign
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18d0a44b2f5baa2f5a753524a9688b3eef60dba05174f6a8cd6ce08607a23b1f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6d5989cce98133c495831a2e512dd2bf2bc9d0dc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145854"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802630"
 ---
-# <a name="device-management-intent-assign-action"></a>Намерение управления устройствами назначить действие
+# <a name="assign-action"></a>Действие назначения
 
 Пространство имен: microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "54145854"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assign
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,7 +91,6 @@ Content-length: 511
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

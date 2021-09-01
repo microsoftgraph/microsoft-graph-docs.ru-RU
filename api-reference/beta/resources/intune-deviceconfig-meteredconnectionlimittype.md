@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07448d05dfd13258934f9e69e78a8a6f6d81c273c70160f648f5069d3b5a90b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bdcf918042c22cced461430e55870bcad7aab04a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181127"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821678"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>тип enum meteredConnectionLimitType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54181127"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unrestricted|0|Неограниченное|
-|исправлено|1 |ИСПРАВЛЕНО|
+|исправлено|1|ИСПРАВЛЕНО|
 |переменная|2|Переменная|
-
 
 
 

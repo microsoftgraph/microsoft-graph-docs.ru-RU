@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 307e48b50abfd7108b38abe97552fc7964ac2bc80dfc4a46f470501dc7b11f29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dc16b8e3bb0825cb0d98accd770989c40caaf255
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241661"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816923"
 ---
 # <a name="devicemanagementconfigurationsettinggroupinstance-resource-type"></a>тип ресурса deviceManagementConfigurationSettingGroupInstance
 
@@ -28,7 +28,7 @@ ms.locfileid: "54241661"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingDefinitionId|Строка|Параметр Определения Id, унаследованный от [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|Параметр Определения Id, унаследованный от [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplatereference.md)|Настройка ссылки шаблона экземпляра, унаследованной от [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 
 ## <a name="relationships"></a>Связи
@@ -51,7 +51,6 @@ ms.locfileid: "54241661"
   }
 }
 ```
-
 
 
 

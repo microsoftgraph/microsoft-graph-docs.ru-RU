@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11e2c4df20585d47ce1f1f19fd0d9f934b022d127b2167961e171f325509caa2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ffd90cab42c73898167e29c99255713b77877e5b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207679"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815689"
 ---
 # <a name="create-devicemanagementresourceaccessprofileassignment"></a>Создание deviceManagementResourceAccessProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "54207679"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessPro
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для назначений|
+|id|String|Уникальный идентификатор для назначений|
 |intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|Назначение для профиля доступа к ресурсам. Возможные значения: `apply`, `remove`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля доступа к ресурсам.|
 |sourceId|String|Идентификатор источника назначения.|
@@ -105,7 +105,6 @@ Content-Length: 512
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

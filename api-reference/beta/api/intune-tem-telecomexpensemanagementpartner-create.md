@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 844f381b2ff630cf346785c3b73b9313073b00c3dd61d469573edfc2cd365094
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecd1f6097c4404c90335c36f8ab36c26725638e0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173634"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799840"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Создание telecomExpenseManagementPartner
 
@@ -29,7 +29,7 @@ ms.locfileid: "54173634"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор партнера TEM.|
+|id|Строка|Уникальный идентификатор партнера TEM.|
 |displayName|Строка|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
@@ -101,7 +101,6 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

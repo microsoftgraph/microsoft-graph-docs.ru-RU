@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9ab364d05384f9329f4dcad48ee6a93173cf978c0b58c4ff81a9a3e4b66819
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 624da686f5c1676cb223a5bb685f36805ac316cc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172905"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818788"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>тип ресурса windowsAutopilotSettings
 
@@ -57,7 +57,6 @@ ms.locfileid: "54172905"
   "syncStatus": "String"
 }
 ```
-
 
 
 

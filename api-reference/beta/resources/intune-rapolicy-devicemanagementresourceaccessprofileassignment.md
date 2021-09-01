@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f488b5680328562c2c90b06fcebc5104955f6b65eb65d68e7ecff284546efef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 608e63b6b41ef6cc8f6a0f9b45d3aec2d00316a6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182709"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806588"
 ---
 # <a name="devicemanagementresourceaccessprofileassignment-resource-type"></a>тип ресурса deviceManagementResourceAccessProfileAssignment
 
@@ -34,10 +34,10 @@ ms.locfileid: "54182709"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для назначений|
+|id|Строка|Уникальный идентификатор для назначений|
 |intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|Назначение для профиля доступа к ресурсам. Возможные значения: `apply`, `remove`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля доступа к ресурсам.|
-|sourceId|Строка|Идентификатор источника назначения.|
+|sourceId|String|Идентификатор источника назначения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -64,7 +64,6 @@ ms.locfileid: "54182709"
   "sourceId": "String"
 }
 ```
-
 
 
 

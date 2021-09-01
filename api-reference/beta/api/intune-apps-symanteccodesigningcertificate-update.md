@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f884923fb5d61c0a97adf167db7fe05a4b6b6c7db80fe95a0dce18031fc5ad1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31cecc26dcb6e90fa4e9b5958dfada5e7b31ad8f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177536"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802938"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "54177536"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,14 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |содержимое|В двоичном формате|Сертификат Windows Symantec Code-Signing в формате необработанных данных.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние Cert Provisioned или not Provisioned. Возможные значения: `notProvisioned`, `provisioned`.|
 |password|Строка|Пароль, необходимый для файла .pfx.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение Subject для сертификата.|
 |issuerName|Строка|Имя эмитента для сертификата.|
-|эмитент|String|Значение Issuer для сертификата.|
+|эмитент|Строка|Значение Issuer для сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Тип cert CodeSigning как Symantec Cert.|
 
@@ -113,7 +113,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

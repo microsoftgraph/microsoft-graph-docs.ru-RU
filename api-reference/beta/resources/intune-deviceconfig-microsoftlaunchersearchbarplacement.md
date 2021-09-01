@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b748be6659e4b4db915b26972c1fbff24076af8709bfebd1e030dd25e5bdcdfb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b7a7fae08a6c5b34b947edf757fd0dcf4864c51
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244983"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810654"
 ---
 # <a name="microsoftlaunchersearchbarplacement-enum-type"></a>тип enum microsoftLauncherSearchBarPlacement
 
@@ -26,10 +26,9 @@ Microsoft Launcher Выбор размещения панели поиска.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен; это значение игнорируется.|
-|top|1 |Указывает, что панели поиска будут отображаться в верхней части устройства.|
+|top|1|Указывает, что панели поиска будут отображаться в верхней части устройства.|
 |bottom|2|Указывает, что строка поиска будет отображаться в нижней части устройства.|
-|скрыть|3 |Указывает, что панели поиска будут скрыты на устройстве.|
-
+|скрыть|3|Указывает, что панели поиска будут скрыты на устройстве.|
 
 
 

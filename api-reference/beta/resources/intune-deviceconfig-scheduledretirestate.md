@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7cd5ef1f5aa4c6e83ba9299569e2012f4bdd1abca0609d7a2ca22e20299ccd9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96aeb054aab275766a86daa0a8782555ae6e5da0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198215"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806945"
 ---
 # <a name="scheduledretirestate-enum-type"></a>тип enum scheduledRetireState
 
@@ -26,8 +26,7 @@ ms.locfileid: "54198215"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |cancelRetire|0|Отмена отмены.|
-|comfirmRetire|1 |Отойдут от этих устройств.|
-
+|comfirmRetire|1|Отойдут от этих устройств.|
 
 
 

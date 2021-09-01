@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b38f720076d56605f31525dc4cb83a328ec977b37b064ffef7bb9d221444bcc6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 059000a40c2d1cd1cade2a668f09c9fdaf30ee17
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185861"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58812391"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>тип enum lanManagerAuthenticationLevel
 
@@ -26,12 +26,11 @@ ms.locfileid: "54185861"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |lmAndNltm|0|Отправка ответов & NTLM|
-|lmNtlmAndNtlmV2|1 |Отправить службу & NTLM-use NTLMv2 в случае переговоров|
+|lmNtlmAndNtlmV2|1|Отправить службу & NTLM-use NTLMv2 в случае переговоров|
 |lmAndNtlmOnly|2|Отправка только ответов & NTLM|
-|lmAndNtlmV2|3 |Отправка ответов & NTLMv2|
+|lmAndNtlmV2|3|Отправка ответов & NTLMv2|
 |lmNtlmV2AndNotLm|4 |Отправьте ответы & NTLMv2. Отказ от LM|
 |lmNtlmV2AndNotLmOrNtm|5 |Отправьте ответы & NTLMv2. Отказ от LM & NTLM|
-
 
 
 
