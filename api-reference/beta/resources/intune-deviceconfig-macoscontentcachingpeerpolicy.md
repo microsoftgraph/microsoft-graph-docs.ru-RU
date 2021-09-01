@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b89b7043ca64f106ec1d3bbded041ae15461195c916db0d31cf32dd848d42e40
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 22adc6cd2df6dad85875deb190f40c305776a991
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181197"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783549"
 ---
 # <a name="macoscontentcachingpeerpolicy-enum-type"></a>тип enum macOSContentCachingPeerPolicy
 
@@ -26,10 +26,9 @@ ms.locfileid: "54181197"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|По умолчанию для одноранговых пользователей в локальной сети.|
-|peersInLocalNetwork|1 |Кэши контента будут одноранговых только с кэшами в их непосредственной локальной сети.|
+|peersInLocalNetwork|1|Кэши контента будут одноранговых только с кэшами в их непосредственной локальной сети.|
 |peersWithSamePublicIpAddress|2|Кэши контента будут одноранговых только с кэшами, которые имеют один и тот же общедоступный IP-адрес.|
-|peersInCustomLocalNetworks|3 |Кэши контента будут использовать contentCachingPeerFilterRanges и contentCachingPeerListenRanges, чтобы определить, с какой кэшой можно совмегать.|
-
+|peersInCustomLocalNetworks|3|Кэши контента будут использовать contentCachingPeerFilterRanges и contentCachingPeerListenRanges, чтобы определить, с какой кэшой можно совмегать.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: efaaa1c2ac380fc3802426fc771f4bdfed7c6b99
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0f44c1ed07957e75200543e1487386acc642e4c5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259336"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788446"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversiondeviceid-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -34,7 +34,7 @@ ms.locfileid: "58259336"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 |processedDateTime|DateTimeOffset|Дата и время последнего вычисления статистики.|
@@ -69,7 +69,6 @@ ms.locfileid: "58259336"
   "appCrashCount": 1024
 }
 ```
-
 
 
 

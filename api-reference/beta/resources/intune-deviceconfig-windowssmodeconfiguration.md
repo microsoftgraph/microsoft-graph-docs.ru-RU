@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7da7e5534965b42885091f5e551668e171112fdc6c6ef178099faf951fdda30d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0a650246725b478d980ca0fe46063838142032e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164253"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816545"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>тип enum windowsSModeConfiguration
 
@@ -26,9 +26,8 @@ ms.locfileid: "54164253"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |noRestriction|0|Этот параметр снимет все ограничения для разблокировки режима S по умолчанию|
-|block|1 |Этот параметр заблокирует пользователя, чтобы разблокировать устройство из режима S|
+|block|1|Этот параметр заблокирует пользователя, чтобы разблокировать устройство из режима S|
 |разблокировка|2|Этот параметр разблокирует устройство из режима S|
-
 
 
 

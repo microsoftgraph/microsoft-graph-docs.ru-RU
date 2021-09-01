@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c6eae8f29e13191da1c2cd448971240d4f5a5c293def0fba7c3c8a1f2ac4337b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f3ef3f068a6994ee4ffcc48cbf583a38e3ef1bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227556"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801538"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>тип enum defenderProtectionType
 
@@ -26,11 +26,10 @@ ms.locfileid: "54227556"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение устройства по умолчанию, без намерения.|
-|включить|1 |Блок функциональных возможностей.|
+|включить|1|Блок функциональных возможностей.|
 |auditMode|2|Разрешить функции, но создавать журналы.|
 |предупреждение|6 |Предупреждение конечному пользователю с возможностью обхода блокировки из правила уменьшения поверхности атаки.|
 |notConfigured|99|Не настроен.|
-
 
 
 

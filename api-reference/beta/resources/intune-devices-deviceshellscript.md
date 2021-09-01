@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd418ec2a00949575152d6c999346d40f13752d2ca3cc2da29122eed29f39851
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1615cf8e8292f39c13bfd019e71803dd86303c2c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239373"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785124"
 ---
 # <a name="deviceshellscript-resource-type"></a>Тип ресурса deviceShellScript
 
@@ -37,9 +37,9 @@ Intune предоставит клиенту возможность запуск
 |:---|:---|:---|
 |executionFrequency|Длительность|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
 |retryCount|Int32|Количество случаев повторного и повторного и повторного повторного и повторного списания сценария|
-|blockExecutionNotifications|Логический|Не уведомляет пользователя о выполнении сценария|
+|blockExecutionNotifications|Boolean|Не уведомляет пользователя о выполнении сценария|
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
-|displayName|String|Имя сценария управления устройствами.|
+|displayName|Строка|Имя сценария управления устройствами.|
 |description|Строка|Необязательное описание сценария управления устройствами.|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
@@ -84,7 +84,6 @@ Intune предоставит клиенту возможность запуск
   ]
 }
 ```
-
 
 
 

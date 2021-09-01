@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d26159cb0cc578232c3c01e30afc963570cd85546a516e058fa31aa7edbc6557
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c528321798aef2512dcc4144d58d372944b5dfee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236502"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794471"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>тип enum androidDeviceOwnerBatteryPluggedMode
 
@@ -26,10 +26,9 @@ ms.locfileid: "54236502"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен; это значение игнорируется.|
-|ac|1 |Источник питания — это зарядное устройство переменного тока.|
+|ac|1|Источник питания — это зарядное устройство переменного тока.|
 |usb|2|Источник питания — это USB-порт.|
-|беспроводная связь|3 |Источник питания беспроводный.|
-
+|беспроводная связь|3|Источник питания беспроводный.|
 
 
 

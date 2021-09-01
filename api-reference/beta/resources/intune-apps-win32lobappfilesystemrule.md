@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bcc304ee18138aaa570fc0b008f6de6c02e0ce144938b46411b05153490ef8b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f04af0ddb3ec005dc69a560c89f22e865ceeb23b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240059"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787633"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>тип ресурса win32LobAppFileSystemRule
 
@@ -30,7 +30,7 @@ ms.locfileid: "54240059"
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
 |path|String|Путь к файлу или папке.|
-|fileOrFolderName|String|Имя файла или папки.|
+|fileOrFolderName|Строка|Имя файла или папки.|
 |check32BitOn64System|Логический|Значение, указывающее, следует ли расширять переменные среды в 32-битной среде на 64-битных системах.|
 |operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|Тип операции файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
@@ -58,7 +58,6 @@ ms.locfileid: "54240059"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

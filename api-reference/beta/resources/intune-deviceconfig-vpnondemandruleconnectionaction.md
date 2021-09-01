@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6eb0646d2b09bbd3fe8fb9182bb6cbace77471d66f2b815286620a69291d1dff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9232175b8de49672b9bb958bacda811fe3f4baf4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131173"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818114"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>тип enum vpnOnDemandRuleConnectionAction
 
@@ -26,10 +26,9 @@ ms.locfileid: "54131173"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |connect|0|Подключение.|
-|evaluateConnection|1 |Оценка подключения.|
+|evaluateConnection|1|Оценка подключения.|
 |игнорировать|2|Игнорируйте.|
-|disconnect|3 |Отключение.|
-
+|disconnect|3|Отключение.|
 
 
 

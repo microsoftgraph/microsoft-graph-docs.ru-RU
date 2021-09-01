@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 922cf16d16dff79c60001fc6d0966e088e44836dc517e20ee09f9429428804d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e8db201eedc008f6dff25b9713c2aa462f3085d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209975"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788691"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>тип enum autoRestartNotificationDismissalMethod
 
@@ -26,9 +26,8 @@ ms.locfileid: "54209975"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроено|
-|Автоматически|1 |Автоматическое увольнение|
-|user|2|Увольнение пользователей|
-
+|Автоматически|1|Автоматическое увольнение|
+|пользователь|2|Увольнение пользователей|
 
 
 

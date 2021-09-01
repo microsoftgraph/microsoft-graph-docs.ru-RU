@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 304b9603491e5dc70969d8b46baefe380ebb2173df2e2ac8faf4086ba596f26d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01776713839b75cffe13eca6c6cb9feedf5ad50b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148052"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816510"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип enum deviceManagementExchangeAccessState
 
@@ -26,11 +26,10 @@ ms.locfileid: "54148052"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Состояние доступа, обнаруженного в Exchange|
-|unknown|1 |Состояние доступа устройства к Exchange неизвестно|
+|unknown|1|Состояние доступа устройства к Exchange неизвестно|
 |разрешено|2|Устройство имеет доступ к Exchange|
-|заблокировано|3 |Устройство заблокировано в Exchange|
+|заблокировано|3|Устройство заблокировано в Exchange|
 |карантин|4 |Устройство находится на карантине в Exchange|
-
 
 
 

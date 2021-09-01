@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c71ddecdce69d701c9060f2f8bff12f1adedec5876265104189fe4b733308159
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf39707f420628ee029ae11e1ae4f48904807179
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166528"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787437"
 ---
 # <a name="update-devicemanagementintent"></a>Обновление deviceManagementIntent
 
@@ -29,7 +29,7 @@ ms.locfileid: "54166528"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID намерения|
-|displayName|String|Имя отображения, заданное пользователю|
+|id|Строка|ID намерения|
+|displayName|Строка|Имя отображения, заданное пользователю|
 |description|Строка|Описание пользователя|
 |isAssigned|Boolean|Означает, назначены ли намерения пользователям|
 |lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
-|templateId|String|ID шаблона, который был создан из (если таково)|
+|templateId|Строка|ID шаблона, который был создан из (если таково)|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

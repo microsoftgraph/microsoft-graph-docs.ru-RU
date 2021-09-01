@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de026e42f21b29327620f3170fa4d3e8117af01342b0e494bafa949efb1c8261
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ac94541351c417b8f6ec3d49cc66898557ab3cf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178866"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817651"
 ---
 # <a name="microsofttunnelsite-resource-type"></a>тип ресурса microsoftTunnelSite
 
@@ -30,14 +30,21 @@ ms.locfileid: "54178866"
 |[Создание microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-create.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Создайте новый [объект microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)|
 |[Удаление microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-delete.md)|Нет|Удаляет [microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)|
 |[Обновление microsoftTunnelSite](../api/intune-mstunnel-microsofttunnelsite-update.md)|[microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md)|Обновление свойств объекта [microsoftTunnelSite.](../resources/intune-mstunnel-microsofttunnelsite.md)|
+|[requestUpgrade action](../api/intune-mstunnel-microsofttunnelsite-requestupgrade.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelSite|
 |displayName|String|Имя отображения MicrosoftTunnelSite|
-|description|Строка|Описание MicrosoftTunnelSite|
-|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|description|String|Описание MicrosoftTunnelSite|
+|publicAddress|String|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|upgradeWindowUtcOffsetInMinutes|Int32|Зона времени сайта, представленная в качестве минутного смещения от UTC|
+|upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
+|upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
+|upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
+|upgradeAvailable|Логический|True, если доступно обновление|
+|internalNetworkProbeUrl|String|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 ## <a name="relationships"></a>Связи
@@ -61,12 +68,17 @@ ms.locfileid: "54178866"
   "displayName": "String",
   "description": "String",
   "publicAddress": "String",
+  "upgradeWindowUtcOffsetInMinutes": 1024,
+  "upgradeWindowStartTime": "String (time of day)",
+  "upgradeWindowEndTime": "String (time of day)",
+  "upgradeAutomatically": true,
+  "upgradeAvailable": true,
+  "internalNetworkProbeUrl": "String",
   "roleScopeTagIds": [
     "String"
   ]
 }
 ```
-
 
 
 

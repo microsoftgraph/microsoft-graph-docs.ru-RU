@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ea22d5d847f41902a19b5d0f98873d77e17b18cbae61b8e61eac629be29de19
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6a31d7c757abc8021fc08831f0e4bbdf9b6c5a8d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174201"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796042"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54174201"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -63,7 +63,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |taskManagerBlockEndTask|Логический|Укажите, могут ли не администраторы использовать диспетчер задач для выполнения задач.|
 |energySaverOnBatteryThresholdPercentage|Int32|Этот параметр позволяет указать уровень заряда батареи, на котором включен энергосберека. Во время работы с аккумулятором энергосберека автоматически включена на указанном уровне заряда батареи (и ниже). Допустимый диапазон ввода (0-100). Допустимые значения: от 0 до 100|
@@ -112,7 +112,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |securityBlockAzureADJoinedDevicesAutoEncryption|Логический|Укажите, следует ли разрешить автоматическое шифрование устройства во время OOBE, когда к устройству присоединяется Azure AD (только на рабочем столе).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
-|systemTelemetryProxyServer|Строка|Получает или задает полностью квалифицированное доменное имя (FQDN) или IP-адрес прокси-сервера для переадпорта запросов подключенных пользователей и телеметрии.|
+|systemTelemetryProxyServer|String|Получает или задает полностью квалифицированное доменное имя (FQDN) или IP-адрес прокси-сервера для переадпорта запросов подключенных пользователей и телеметрии.|
 |edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Указывает, какой тип данных телеметрии (ни один, ни интрасети, ни интернет) отправляется в Microsoft 365 Analytics. Возможные значения: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Управляет доступом пользователя к рабочему пространству с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Управляет доступом пользователя к рабочему пространству с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
@@ -153,10 +153,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeBlockPrinting|Логический|Настройте Edge, чтобы разрешить или заблокировать печать.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Получите или задано значение, которое указывает, следует ли устанавливать планку избранного, которая всегда будет видна или скрыта на любой странице. Возможные значения: `notConfigured`, `hide`, `show`.|
 |edgeBlockSavingHistory|Логический|Настройте Edge, чтобы сохранить историю просмотра или никогда не сохранять историю просмотра.|
-|edgeBlockFullScreenMode|Логический|Разрешить или запретить edge вводить полный режим экрана.|
-|edgeBlockWebContentOnewTabPage|Логический|Настройка загрузки пустой страницы в Edge вместо новой страницы вкладки по умолчанию и предотвращение ее изменения пользователями.|
+|edgeBlockFullScreenMode|Boolean|Разрешить или запретить edge вводить полный режим экрана.|
+|edgeBlockWebContentOnewTabPage|Boolean|Настройка загрузки пустой страницы в Edge вместо новой страницы вкладки по умолчанию и предотвращение ее изменения пользователями.|
 |edgeBlockTabPreloading|Логический|Настройка предварительной загрузки страницы вкладок Edge в Windows запуске.|
-|edgeBlockPrelaunch|Логический|Определите, Microsoft Edge ли Windows запуске.|
+|edgeBlockPrelaunch|Boolean|Определите, Microsoft Edge ли Windows запуске.|
 |edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Управление сообщением, отображаемой edge перед переходом на Internet Explorer. Возможные значения: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
 |edgePreventCertificateErrorOverride|Логический|Разрешить или запретить пользователям переопределять ошибки сертификата.|
 |edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Управляет ограничением Microsoft Edge параметров в зависимости от режима настройки киоска. Возможные значения: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
@@ -1085,7 +1085,6 @@ Content-Length: 15181
   "configureTimeZone": "Configure Time Zone value"
 }
 ```
-
 
 
 

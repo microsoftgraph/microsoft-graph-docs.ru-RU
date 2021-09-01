@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3cf9a0c16063c0f2fcd359598a677fa59ad042f49472077be354bc40854ed75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edf1acc4839c8bead5cf2b24477c26b9ccd1087b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249869"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787274"
 ---
 # <a name="remoteactionaudit-resource-type"></a>тип ресурса remoteActionAudit
 
@@ -34,7 +34,7 @@ ms.locfileid: "54249869"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Report Id.|
+|id|Строка|Report Id.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[deprecated \] Please use InitiatedByUserPrincipalName instead.|
 |initiatedByUserPrincipalName|Строка|Пользователь, который инициировал действие устройства, формат upN.|
@@ -71,7 +71,6 @@ ms.locfileid: "54249869"
   "managedDeviceId": "String"
 }
 ```
-
 
 
 

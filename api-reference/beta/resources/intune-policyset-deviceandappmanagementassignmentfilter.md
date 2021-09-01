@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 135594e3dd1ea54b6ca61b0724a31537519258c9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a21edb65043744659b6797470fd19bf475625076
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266830"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796841"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>тип ресурса deviceAndAppManagementAssignmentFilter
 
@@ -39,11 +39,11 @@ ms.locfileid: "58266830"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ фильтра назначения.|
+|id|Строка|Ключ фильтра назначения.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначения.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время фильтра назначения.|
 |displayName|Строка|DisplayName фильтра назначения.|
-|description|String|Описание фильтра назначения.|
+|description|Строка|Описание фильтра назначения.|
 |платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |правило|Строка|Определение правила фильтра назначения.|
 |roleScopeTags|Коллекция String|RoleScopeTags фильтра назначения.|
@@ -74,7 +74,6 @@ ms.locfileid: "58266830"
   ]
 }
 ```
-
 
 
 

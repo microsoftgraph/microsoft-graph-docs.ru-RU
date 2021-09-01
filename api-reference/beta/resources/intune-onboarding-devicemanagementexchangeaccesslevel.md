@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d2273b46a9e1d12dcff044c630dfcef14ef69f46513aae93f0c427e5d3cca789
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b5bd8f059a5ef348cf1773d0163ba4b812538146
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242531"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803232"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>тип enum deviceManagementExchangeAccessLevel
 
@@ -26,10 +26,9 @@ ms.locfileid: "54242531"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|В Exchange не было настроено Exchange.|
-|разрешить|1 |Разрешить доступ устройства к Exchange.|
+|разрешить|1|Разрешить доступ устройства к Exchange.|
 |block|2|Блокировка доступа к устройству Exchange.|
-|карантин|3 |Карантин устройства в Exchange.|
-
+|карантин|3|Карантин устройства в Exchange.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9001213490d1a504d3c4096a31cbecfa3fabe13b1e4e3a4e2c1994735ca2831e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4657cbd3ff5ea358a6cfca315b32ff87e0f5b5e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133308"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816277"
 ---
 # <a name="devicemanagementconfigurationoptiondefinition-resource-type"></a>тип ресурса deviceManagementConfigurationOptionDefinition
 
@@ -29,8 +29,8 @@ ms.locfileid: "54133308"
 |dependentOn|[коллекция deviceManagementConfigurationDependentOn](../resources/intune-deviceconfigv2-devicemanagementconfigurationdependenton.md)|Список зависимых параметров для этого параметра|
 |dependedOnBy|[коллекция deviceManagementConfigurationSettingDependedOnBy](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdependedonby.md)|Список Параметры, зависят от этого параметра|
 |itemId|String|Идентификатор параметра|
-|description|Строка|Описание параметра|
-|helpText|Строка|Справка по тексту параметра|
+|description|String|Описание параметра|
+|helpText|String|Справка по тексту параметра|
 |name|String|Имя параметра|
 |displayName|String|Удобное имя параметра|
 
@@ -282,7 +282,6 @@ ms.locfileid: "54133308"
   "displayName": "String"
 }
 ```
-
 
 
 

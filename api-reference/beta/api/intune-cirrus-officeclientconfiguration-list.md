@@ -1,18 +1,18 @@
 ---
-title: Список userExperienceAnalyticsImpactingProcesses
-description: Список свойств и связей объектов userExperienceAnalyticsImpactingProcess.
-author: dougeby
+title: Список officeClientConfigurations
+description: Получите все политики.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65fc00f90556a1c312f95fb2ac78405230dfee29
+ms.openlocfilehash: f233efc4ce351595695ffba20d77fd491855a5e5
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803372"
+ms.locfileid: "58786156"
 ---
-# <a name="list-userexperienceanalyticsimpactingprocesses"></a>Список userExperienceAnalyticsImpactingProcesses
+# <a name="list-officeclientconfigurations"></a>Список officeClientConfigurations
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58803372"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов userExperienceAnalyticsImpactingProcess.](../resources/intune-devices-userexperienceanalyticsimpactingprocess.md)
+Получите все политики.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58803372"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsImpactingProcess
+GET /officeConfiguration/clientConfigurations
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,14 +50,14 @@ GET /deviceManagement/userExperienceAnalyticsImpactingProcess
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userExperienceAnalyticsImpactingProcess](../resources/intune-devices-userexperienceanalyticsimpactingprocess.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsImpactingProcess
+GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,19 +65,39 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsImp
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 414
+Content-Length: 1207
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.userExperienceAnalyticsImpactingProcess",
-      "id": "faefd665-d665-faef-65d6-effa65d6effa",
-      "deviceId": "Device Id value",
-      "category": "Category value",
-      "processName": "Process Name value",
+      "@odata.type": "#microsoft.graph.officeClientConfiguration",
+      "id": "362ce0f0-e0f0-362c-f0e0-2c36f0e02c36",
+      "userPreferencePayload": "<Unknown Primitive Type Edm.Stream>",
+      "policyPayload": "<Unknown Primitive Type Edm.Stream>",
       "description": "Description value",
-      "publisher": "Publisher value",
-      "impactValue": 3.6666666666666665
+      "displayName": "Display Name value",
+      "priority": 8,
+      "userCheckinSummary": {
+        "@odata.type": "microsoft.graph.officeUserCheckinSummary",
+        "succeededUserCount": 2,
+        "failedUserCount": 15
+      },
+      "checkinStatuses": [
+        {
+          "@odata.type": "microsoft.graph.officeClientCheckinStatus",
+          "userPrincipalName": "User Principal Name value",
+          "deviceName": "Device Name value",
+          "devicePlatform": "Device Platform value",
+          "devicePlatformVersion": "Device Platform Version value",
+          "wasSuccessful": true,
+          "userId": "User Id value",
+          "checkinDateTime": "2016-12-31T23:56:33.9571764-08:00",
+          "errorMessage": "Error Message value",
+          "appliedPolicies": [
+            "Applied Policies value"
+          ]
+        }
+      ]
     }
   ]
 }

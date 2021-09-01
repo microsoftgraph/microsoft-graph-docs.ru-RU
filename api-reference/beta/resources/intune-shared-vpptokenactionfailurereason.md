@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 920b28aed62eac3b603773e5024d4d8ed5d3f9beff453e4b9f185d6d7f103e8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e1654bd7f616e56c970fde7f8c2864fdae3d784
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133084"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787218"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>тип enum vppTokenActionFailureReason
 
@@ -25,12 +25,11 @@ ms.locfileid: "54133084"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Отсутствуют.|
-|appleFailure|1 |В службе Apple произошла ошибка.|
+|Нет|0|Нет|
+|appleFailure|1|В службе Apple произошла ошибка.|
 |internalError|2|Произошла внутренняя ошибка.|
-|expiredVppToken|3 |Ошибка произошла из-за истечения срока действия маркера программы покупки тома Apple.|
+|expiredVppToken|3|Ошибка произошла из-за истечения срока действия маркера программы покупки тома Apple.|
 |expiredApplePushNotificationCertificate|4 |Ошибка произошла из-за истечения срока действия сертификата push-уведомления программы apple Volume Purchase.|
-
 
 
 
