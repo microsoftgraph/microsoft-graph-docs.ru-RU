@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e47152888dc97f9d7cd810fde9e0769203af2ee6b788b90f931a047159e6177d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cbc2af6ee43284fc037088c6ef0b0e8219cbfe53
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211018"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817252"
 ---
 # <a name="create-devicemanagementintent"></a>Создание deviceManagementIntent
 
@@ -29,7 +29,7 @@ ms.locfileid: "54211018"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/intents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ POST /deviceManagement/intents
 |:---|:---|:---|
 |id|String|ID намерения|
 |displayName|String|Имя отображения, заданное пользователю|
-|description|Строка|Описание пользователя|
+|description|String|Описание пользователя|
 |isAssigned|Boolean|Означает, назначены ли намерения пользователям|
 |lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
 |templateId|String|ID шаблона, который был создан из (если таково)|
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

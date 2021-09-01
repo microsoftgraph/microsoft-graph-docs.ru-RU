@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 922340e7fa07a1f404db31a1e4b612082c88ed96eb711442c767638d8d76fe7b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d8583093dc8f7d0df6b188770130ec0e83326c9b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244521"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802714"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>тип enum deviceManagementDerivedCredentialNotificationType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54244521"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Нет|
-|companyPortal|1 |Корпоративный портал|
+|companyPortal|1|Корпоративный портал|
 |email|2|Электронная почта|
-
 
 
 

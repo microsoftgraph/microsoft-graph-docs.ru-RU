@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fcec553d1b6d381022de27200532815841666435ca57923f40c0fdddd38b9138
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 805bb359f9e5031516802042f37c1f7d095d5916
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191230"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814051"
 ---
 # <a name="delete-windowsautopilotdeploymentprofilepolicysetitem"></a>Удаление windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "54191230"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

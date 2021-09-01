@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc45fc66865c95067da56c807271ce74ad9fad652b63e1b7351b6973453b6d0e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f66fb79813b2210319b4bb217a1a72c4b3ac45ef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164393"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800781"
 ---
 # <a name="delete-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Удаление windowsDefenderApplicationControlSupplementalPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "54164393"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplication
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPoli
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

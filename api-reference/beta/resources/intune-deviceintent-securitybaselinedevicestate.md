@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da4dcad2cd0f8956f43e4322b166495576432d751324b642e867c06df1cb76a4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99dae7127ff0074fd660ed90bf0467fc8e6f5986
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224679"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805733"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>тип ресурсов securityBaselineDeviceState
 
@@ -34,7 +34,7 @@ ms.locfileid: "54224679"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сущности|
+|id|Строка|Уникальный идентификатор сущности|
 |managedDeviceId|Строка|ID устройства Intune|
 |deviceDisplayName|String|Отображение имени устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
@@ -63,7 +63,6 @@ ms.locfileid: "54224679"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

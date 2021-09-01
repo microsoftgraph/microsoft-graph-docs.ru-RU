@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fec26dda4751bdd80f7ad0cfa7ee9618430d7c26468b7d4689e9e4f7c77765c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8f3439f53269bc6126d098016805dd541ad4ad58
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213174"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797298"
 ---
 # <a name="certificateissuancestates-enum-type"></a>тип переопечатки certificateIssuanceStates
 
@@ -26,9 +26,9 @@ ms.locfileid: "54213174"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Пока не задокументировано.|
-|challengeIssued|1 |Пока не задокументировано.|
+|challengeIssued|1|Пока не задокументировано.|
 |challengeIssueFailed|2|Пока не задокументировано.|
-|requestCreationFailed|3 |Пока не задокументировано.|
+|requestCreationFailed|3|Пока не задокументировано.|
 |requestSubmitFailed|4 |Пока не задокументировано.|
 |challengeValidationSucceeded|5 |Пока не задокументировано.|
 |challengeValidationFailed|6 |Пока не задокументировано.|
@@ -38,7 +38,7 @@ ms.locfileid: "54213174"
 |responseProcessingFailed|10 |Пока не задокументировано.|
 |responsePending|11 |Пока не задокументировано.|
 |enrollmentSucceeded|12 |Пока не задокументировано.|
-|enrollmentNotNeeded|13 |Пока не задокументировано.|
+|enrollmentNotNeeded|13|Пока не задокументировано.|
 |отменено|14 |Пока не задокументировано.|
 |removedFromCollection|15 |Пока не задокументировано.|
 |renewVerified|16 |Пока не задокументировано.|
@@ -48,7 +48,6 @@ ms.locfileid: "54213174"
 |deleted|20|Пока не задокументировано.|
 |renewalRequested|21|Пока не задокументировано.|
 |запрашивается|22|Пока не задокументировано.|
-
 
 
 

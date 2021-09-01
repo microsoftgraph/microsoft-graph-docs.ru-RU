@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f86c8bc179aa3eee24b2624349014860c0c85134e4be8535a2ba7e03553284ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a4e95187e05778cff963c0efc1f006abd0988de2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226422"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801166"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -35,12 +35,12 @@ ms.locfileid: "54226422"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|ruleName|String|Имя правила, к которому применяется это запланированное действие.|
+|ruleName|String|Имя правила, к которому применяется это запланированное действие. В настоящее время запланированные действия создаются для политики, а не для каждого правила, поэтому значение RuleName всегда задалось значению PasswordRequired по умолчанию.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|scheduledActionConfigurations|Коллекция [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|Список конфигураций запланированных действий для этой политики соответствия требованиям.|
+|scheduledActionConfigurations|Коллекция [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|Список конфигураций запланированных действий для этой политики соответствия требованиям. Политика соответствия требованиям должна иметь одно и только одно запланированное действие блока.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -57,7 +57,6 @@ ms.locfileid: "54226422"
   "ruleName": "String"
 }
 ```
-
 
 
 

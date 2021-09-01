@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db1be6fa30f6fb89121c742ad483ff8a7fd50e4596c4264997c76a1f5365b016
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 978182491e4f9eafe73dada1c2c83c86c56d3397
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182898"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807281"
 ---
 # <a name="devicemanagementconfigurationsettingapplicability-resource-type"></a>тип ресурса deviceManagementConfigurationSettingApplicability
 
@@ -28,7 +28,7 @@ ms.locfileid: "54182898"
 |description|Строка|описание параметра|
 |платформа|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Параметр платформы можно применить. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|Режим устройства, на который можно применить параметр. Возможные значения: `none`, `kiosk`.|
-|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Какие технологические каналы этот параметр можно развернуть. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`.|
+|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Какие технологические каналы этот параметр можно развернуть. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -49,7 +49,6 @@ ms.locfileid: "54182898"
   "technologies": "String"
 }
 ```
-
 
 
 

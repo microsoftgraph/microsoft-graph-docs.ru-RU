@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cd407578aba7e9f30d0620641e23239f98a84e41cb609f17514f16610252556
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 36a8917383bff365250d644a8bf57795bd7e3ef2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142549"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816608"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -30,7 +30,7 @@ ms.locfileid: "54142549"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -104,7 +104,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

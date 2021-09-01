@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c1fcad2ba0006cedf44a4ad3bd7c04fbbf2571781fcca65ac531b09713b6fc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5678e664fbc578ec7f07d2abbbd6bb5a466a09ed
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245137"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816755"
 ---
 # <a name="androiddeviceownerglobalproxy-resource-type"></a>тип ресурса androidDeviceOwnerGlobalProxy
 
@@ -41,7 +41,6 @@ ms.locfileid: "54245137"
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGlobalProxy"
 }
 ```
-
 
 
 

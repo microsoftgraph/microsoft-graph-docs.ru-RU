@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b5082a4c0150aff002fbe29c09ea35cc337f50207b22d82c615360c9e28ea122
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45720943bd4050b0a72ad0a6cdb13356adb7e8f5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127112"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806959"
 ---
 # <a name="macossoftwareupdatestate-enum-type"></a>тип enum macOSSoftwareUpdateState
 
@@ -40,7 +40,6 @@ ms.locfileid: "54127112"
 |installInsufficientPower|2005|Не хватает мощности для установки обновления|
 |installFailed|2006|Установка не удалось по неустановленной причине|
 |commandFailed|2007|Команда обновления расписания не справилась с работой по неустановленной причине|
-
 
 
 

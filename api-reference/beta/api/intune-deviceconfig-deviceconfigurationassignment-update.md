@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69bd67bc4a15ba44752f721e1b1c2186cd7279ac81d9d39c4e21a8e150ab5f46
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af3da7d6ed06fe04099b9ca4ffcde3f8a4bae7d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165030"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784382"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Обновление объекта deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "54165030"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, прямой или пакетной или политикиSet. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
-|sourceId|Строка|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|sourceId|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
 
 
 
@@ -114,7 +114,6 @@ Content-Length: 498
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

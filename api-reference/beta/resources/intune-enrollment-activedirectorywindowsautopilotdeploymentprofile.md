@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c97b1e89bb915e833c8853af6f5e732e172a2a3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 29e18578a7859d0a19df2fd9835d250fed43c047
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256025"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806931"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>тип ресурса activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -37,8 +37,8 @@ Windows Autopilot Deployment Профиль
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ профиля, унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|displayName|String|Имя профиля, наследуемого [из windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|id|Строка|Ключ профиля, унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|displayName|Строка|Имя профиля, наследуемого [из windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |description|Строка|Описание профиля, наследуемого [из windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |language|String|Язык, настроенный на устройстве, наследуемом [из windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |createdDateTime|DateTimeOffset|Время создания профилей, унаследованных от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
@@ -50,7 +50,7 @@ Windows Autopilot Deployment Профиль
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства AutoPilot, к который применим этот профиль. Наследуется [от windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md). Возможные значения: `windowsPc`, `surfaceHub2`, `holoLens`.|
 |enableWhiteGlove|Логический|Включить белую перчатку автопилота для профиля. Унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |roleScopeTagIds|Коллекция String|Теги области для профиля. Унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|managementServiceAppId|String|ID приложения управления AzureAD, используемый во время обнаружения регистрации на основе клиентских устройств, унаследованных из [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|managementServiceAppId|Строка|ID приложения управления AzureAD, используемый во время обнаружения регистрации на основе клиентских устройств, унаследованных из [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |hybridAzureADJoinSkipConnectivityCheck|Логический|Поток подключения гибридного Azure AD автопилота будет продолжаться, даже если он не устанавливает подключение контроллера домена во время OOBE.|
 
 ## <a name="relationships"></a>Связи
@@ -107,7 +107,6 @@ Windows Autopilot Deployment Профиль
   "hybridAzureADJoinSkipConnectivityCheck": true
 }
 ```
-
 
 
 

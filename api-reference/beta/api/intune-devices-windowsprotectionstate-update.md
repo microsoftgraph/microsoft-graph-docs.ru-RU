@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a8c51bc95de38ddfebc394b50cfdf3dcd12fe74
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a1ae6ae8ee171ab40ff988ceb54e13b172f197a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263865"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58814835"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
@@ -27,9 +27,9 @@ ms.locfileid: "58263865"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,23 +53,23 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для объекта защиты от устройства. Это id устройства|
+|id|Строка|Уникальный идентификатор для объекта защиты от устройства. Это id устройства|
 |malwareProtectionEnabled|Логический|Включено или не включено вредоносное ПО|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или ожидающих перезагрузки и т.д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Логический|Включена защита в режиме реального времени или нет?|
-|networkInspectionSystemEnabled|Логический|Включена или нет включена система сетевого контроля?|
+|networkInspectionSystemEnabled|Boolean|Включена или нет включена система сетевого контроля?|
 |quickScanOverdue|Логический|Быстрое сканирование просрочено или нет?|
-|fullScanOverdue|Логический|Полная просроченная проверка или нет?|
+|fullScanOverdue|Boolean|Полная просроченная проверка или нет?|
 |signatureUpdateOverdue|Логический|Подпись устарела или нет?|
-|rebootRequired|Логический|Перезагрузка требуется или нет?|
+|rebootRequired|Boolean|Перезагрузка требуется или нет?|
 |fullScanRequired|Логический|Полное сканирование требуется или нет?|
 |engineVersion|Строка|Версия двигателя защиты конечной точки|
-|signatureVersion|String|Текущая версия определений вредоносных программ|
+|signatureVersion|Строка|Текущая версия определений вредоносных программ|
 |antiMalwareVersion|Строка|Текущая версия антивирусных программ|
 |lastQuickScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
 |lastFullScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
 |lastQuickScanSignatureVersion|Строка|Последняя версия подписи быстрого сканирования|
-|lastFullScanSignatureVersion|String|Последняя версия подписи полного сканирования|
+|lastFullScanSignatureVersion|Строка|Последняя версия подписи полного сканирования|
 |lastReportedDateTime|DateTimeOffset|Время последнего состояния состояния устройства|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта антивирусная программа . Возможные значения: `noStatus` `serviceNotRunning` , `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` . `windowsSModeSignaturesInUseOnNonWin10SInstall`|
 |isVirtualMachine|Логический|Указывает, является ли устройство виртуальной машиной.|
@@ -146,7 +146,6 @@ Content-Length: 1020
   "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

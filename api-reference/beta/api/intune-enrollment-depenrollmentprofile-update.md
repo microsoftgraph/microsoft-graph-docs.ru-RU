@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ecaf1107ebdb9f5fb39a54fb058fd55375a2deb261ad3afc0110155245e040f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 02f6492c69be28b35836d761a1cd75badc9d89fa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181645"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782884"
 ---
 # <a name="update-depenrollmentprofile"></a>Обновление depEnrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "54181645"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,24 +53,24 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID для объекта Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|id|Строка|GUID для объекта Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|String|Имя профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |description|Строка|Описание профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Логический|Указывает, требует ли профиль проверки подлинности пользователя, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean|Указывает, требует ли профиль проверки подлинности пользователя, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для использования для регистрации, унаследованной [от enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал. Унаследованный от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал. Унаследованный от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Логический|Указывает, Корпоративный портал требуется на устройствах, зарегистрированных помощником установки, унаследованных от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Указывает, является ли это профилем по умолчанию|
 |supervisedModeEnabled|Логический|Режим Под контролем, True, чтобы включить, ложные в противном случае. Дополнительные https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune сведения см. в дополнительных сведениях.|
 |supportDepartment|String|Сведения отдела поддержки|
-|passCodeDisabled|Логический|Указывает отключение области установки passcode|
+|passCodeDisabled|Boolean|Указывает отключение области установки passcode|
 |isMandatory|Логический|Указывает, является ли профиль обязательным|
-|locationDisabled|Логический|Указывает, отключена ли панорама установки службы расположения|
+|locationDisabled|Boolean|Указывает, отключена ли панорама установки службы расположения|
 |supportPhoneNumber|Строка|Номер телефона поддержки|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим сопряжения iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
-|profileRemovalDisabled|Логический|Указывает, отключен ли параметр удаления профиля|
+|profileRemovalDisabled|Boolean|Указывает, отключен ли параметр удаления профиля|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Сертификаты управления для Apple Configurator|
-|restoreBlocked|Логический|Указывает, заблокирована ли настройка области восстановления|
+|restoreBlocked|Boolean|Указывает, заблокирована ли настройка области восстановления|
 |restoreFromAndroidDisabled|Логический|Указывает, отключено ли восстановление с Android|
 |appleIdDisabled|Логический|Указывает, отключена ли области установки apple id|
 |termsAndConditionsDisabled|Логический|Указывает, отключено ли области установки "Условия и условия"|
@@ -188,7 +188,6 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
-
 
 
 

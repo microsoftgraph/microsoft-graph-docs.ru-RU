@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d83cd5b856849f3efd12d0bcc32d9da8ee217d16
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3a6871d0168324a01e7d9a8ef39b8164e453ff2e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259307"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805712"
 ---
 # <a name="operatingsystemupgradeeligibility-enum-type"></a>тип enum operatingSystemUpgradeEligibility
 
@@ -26,10 +26,9 @@ ms.locfileid: "58259307"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |обновлено|0|Устройство обновляется до последней версии windows|
-|unknown|1 |Недостаточно данных, доступных для вычисления пригодности устройства для обновления Windows|
+|unknown|1|Недостаточно данных, доступных для вычисления пригодности устройства для обновления Windows|
 |notCapable|2|Устройство не способно к обновлению Windows|
-|способный|3 |Устройство способно к обновлению Windows|
-
+|способный|3|Устройство способно к обновлению Windows|
 
 
 

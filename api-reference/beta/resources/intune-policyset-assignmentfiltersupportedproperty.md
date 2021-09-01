@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed8ec505d314207a57fe3b743357e4217255db0d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b8b8a5bc422c2d663d74ea7dc93b7353f10e65d3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265636"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786609"
 ---
 # <a name="assignmentfiltersupportedproperty-resource-type"></a>тип ресурса assignmentFilterSupportedProperty
 
@@ -28,7 +28,7 @@ ms.locfileid: "58265636"
 |dataType|String|Тип данных указанного свойства.|
 |isCollection|Логический|Указывает, является ли свойство типом коллекции или нет.|
 |name|String|Имя свойства.|
-|propertyRegexConstraint|String|Строка Regex для проверки значения свойства.|
+|propertyRegexConstraint|Строка|Строка Regex для проверки значения свойства.|
 |supportedOperators|[коллекция assignmentFilterOperator](../resources/intune-policyset-assignmentfilteroperator.md)|Список всех поддерживаемых операторов в этом свойстве.|
 |supportedValues|Коллекция String|Список всех поддерживаемых значений для этого правильного, пустого, если все поддерживается.|
 
@@ -57,7 +57,6 @@ ms.locfileid: "58265636"
   ]
 }
 ```
-
 
 
 

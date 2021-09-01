@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8f6accd388862f29efbb9721c6dfbd7c65c47c855b940bb5bb5ae2a7e2c292e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cce3fd916973bcc397c936cbb7c24f6abcec29aa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203122"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818282"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>Тип ресурса deviceConfigurationSettingState
 
@@ -37,7 +37,7 @@ ms.locfileid: "54203122"
 |userPrincipalName|String|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
-|settingInstanceId|Строка|SettingInstanceId|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -74,7 +74,6 @@ ms.locfileid: "54203122"
   "settingInstanceId": "String"
 }
 ```
-
 
 
 

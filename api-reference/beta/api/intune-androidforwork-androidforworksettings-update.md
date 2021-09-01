@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5f40646e20c9269e099ae632d196f746e538e68b7a41b6eeeb398b4e7b9477d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cee986c4e16fe88b768489cf791344310822114f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184265"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816727"
 ---
 # <a name="update-androidforworksettings"></a>Update androidForWorkSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "54184265"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/androidForWorkSettings
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/androidForWorkSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор параметров Android for Work|
+|id|String|Идентификатор параметров Android for Work|
 |bindStatus|[AndroidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Связать состояние клиента с API EMM Google. Возможные значения: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[AndroidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Результат синхронизации последнего приложения. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -116,7 +116,6 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
-
 
 
 

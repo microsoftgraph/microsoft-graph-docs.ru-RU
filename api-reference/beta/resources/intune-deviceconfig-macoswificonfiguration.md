@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70a6ecc7dab3c1a4e02dd784754b58ddd460c3c8f62860a01a34a1ab7f57f2d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b0684ac3642fb11c2baffd59b2227112c0cbddd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242848"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820732"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>тип ресурса macOSWiFiConfiguration
 
@@ -46,17 +46,17 @@ ms.locfileid: "54242848"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|networkName|Строка|Имя сети|
-|ssid|Строка|Это имя сети Wi-Fi, которая транслируется на все устройства.|
+|networkName|String|Имя сети|
+|ssid|String|Это имя сети Wi-Fi, которая транслируется на все устройства.|
 |connectAutomatically|Логический|Подключение автоматически, когда эта сеть находится в диапазоне. Настройка этого параметра будет пропускать запрос пользователя и автоматически подключать устройство к Wi-Fi сети.|
 |connectWhenNetworkNameIsHidden|Логический|Подключение, когда сеть не передает свое имя (SSID). Если задана истина, этот профиль заставляет устройство подключаться к сети, которая не передает SSID на все устройства.|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, Wi-Fi конечная точка использует тип безопасности на основе EAP. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси для Wi-Fi подключения. Возможные значения: `none`, `manual`, `automatic`.|
-|proxyManualAddress|Строка|IP-адрес или DNS-имя прокси-сервера при выборе ручной конфигурации.|
+|proxyManualAddress|String|IP-адрес или DNS-имя прокси-сервера при выборе ручной конфигурации.|
 |proxyManualPort|Int32|Порт прокси-сервера при выборе ручной конфигурации.|
-|proxyAutomaticConfigurationUrl|Строка|URL-адрес сценария автоматической конфигурации прокси-сервера при выборе автоматической конфигурации. Этот URL-адрес обычно является расположением файла PAC (Proxy Auto Configuration).|
+|proxyAutomaticConfigurationUrl|String|URL-адрес сценария автоматической конфигурации прокси-сервера при выборе автоматической конфигурации. Этот URL-адрес обычно является расположением файла PAC (Proxy Auto Configuration).|
 |preSharedKey|String|Это предварительный общий ключ для сети персональных Wi-Fi WPA.|
 
 ## <a name="relationships"></a>Связи
@@ -124,7 +124,6 @@ ms.locfileid: "54242848"
   "preSharedKey": "String"
 }
 ```
-
 
 
 

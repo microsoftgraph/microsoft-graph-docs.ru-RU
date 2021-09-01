@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58b549e640704aa3ca33119f081c170bf62b2476
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2f5ced205eeedb58d7767190d33de382f59d497b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262983"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797593"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,6 +60,7 @@ POST /deviceManagement/deviceManagementScripts
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
 |description|Строка|Необязательное описание сценария управления устройствами.|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
@@ -110,9 +111,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -125,7 +123,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

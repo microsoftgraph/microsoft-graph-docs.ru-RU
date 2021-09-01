@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01d62b9c8b777ae4ae2d27e2977e49dd1b5bde487fdf5f3ede45661c3bf20208
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 699facf5b5e91a41a15105b2a59e00e95433f5ed
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139364"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800368"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>тип ресурса groupPolicyConfiguration
 
@@ -37,8 +37,8 @@ ms.locfileid: "54139364"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|String|Пользователь предоставил имя объекта ресурса.|
-|description|String|Пользователь предоставил описание объекта ресурса.|
+|displayName|Строка|Пользователь предоставил имя объекта ресурса.|
+|description|Строка|Пользователь предоставил описание объекта ресурса.|
 |roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -70,7 +70,6 @@ ms.locfileid: "54139364"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

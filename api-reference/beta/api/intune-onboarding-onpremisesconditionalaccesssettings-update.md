@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a735ef07de6a14846334b72a417883254ec5de80c91b16b60722e6a30e23c142
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d2bf2fcf64b2a19c083f0ad7b1ce915697db70d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142661"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800830"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Обновление объекта onPremisesConditionalAccessSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "54142661"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -107,7 +107,6 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
-
 
 
 

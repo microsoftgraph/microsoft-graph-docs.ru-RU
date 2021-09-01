@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6463fcbcb021814597ae4c62e669c29eacd73710fd23425cccfad7cb436fcf33
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0dec3a79c88b499e11ecc46c8ab538206f28813c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203892"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800795"
 ---
 # <a name="delete-pfxusercertificate"></a>Удаление pfxUserCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "54203892"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /pfxUserCertificates/{pfxUserCertificatesId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/pfxUserCertificates/{pfxUserCertificates
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

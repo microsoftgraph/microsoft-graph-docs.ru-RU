@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f4bfd87ea48319667ce203c741828fe1868af1cc5ed0f7f2700a9f80ca18525
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0b16018cb9eca2fa574713d12f1e5e66d7530ee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156074"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786602"
 ---
 # <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>тип enum deviceManagementExportJobLocalizationType
 
@@ -26,8 +26,7 @@ ms.locfileid: "54156074"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |локализованоValuesAsAdditionalColumn|0|Настраивает задание экспорта, чтобы выставить локализованные значения в качестве дополнительного столбца|
-|replaceLocalizableValues|1 |Настраивает задание экспорта для замены переизменяемых значений на их локализованные значения|
-
+|replaceLocalizableValues|1|Настраивает задание экспорта для замены переизменяемых значений на их локализованные значения|
 
 
 

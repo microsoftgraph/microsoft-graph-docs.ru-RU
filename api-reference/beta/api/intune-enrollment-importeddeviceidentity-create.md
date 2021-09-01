@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a2d4f27ed6cf1a877e9052ee70f92fca66a07820481c168d85cd259f3677cd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 309d2912fdd6be95ed9007500f32b957be465352
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148794"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801657"
 ---
 # <a name="create-importeddeviceidentity"></a>Создание importedDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "54148794"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/importedDeviceIdentities
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор импортируемого удостоверения устройства|
+|id|Строка|Идентификатор импортируемого удостоверения устройства|
 |importedDeviceIdentifier|Строка|Идентификатор импортируемого устройства|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортируемого удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последнее изменение dateTime описания|
@@ -108,7 +108,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

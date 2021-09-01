@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5a194a027f3e35667d576718b78c8b0bab38b14544090c4c356340bab9f9203
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6af82ea27ab243c4a6e0f0132a96ba21bc11bae
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145203"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816473"
 ---
 # <a name="managedmobileapp-resource-type"></a>Тип ресурса managedMobileApp
 
@@ -35,7 +35,7 @@ ms.locfileid: "54145203"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -60,7 +60,6 @@ ms.locfileid: "54145203"
   "version": "String"
 }
 ```
-
 
 
 

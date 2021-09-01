@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7937bc8aa343ddfdeb70644ca6ab3302942483030ffc7294771ae0bbe09ed2a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66dc542abcb41d9677b1f697ebfd10c42cdaf3d0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159492"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804479"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>Действие createGooglePlayWebToken
 
@@ -29,7 +29,7 @@ ms.locfileid: "54159492"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +86,6 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
-
 
 
 
