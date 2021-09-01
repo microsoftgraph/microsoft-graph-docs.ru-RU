@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d880307e03868b230b15a04ede470d46a2ed65d574ef445a329a17ce0e124b1c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b62ac78b981527ae60b69a2496f86c85eefaa59d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181575"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817147"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
@@ -29,7 +29,7 @@ ms.locfileid: "54181575"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,8 +67,8 @@ POST /deviceAppManagement/vppTokens
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
 |dataSharingConsentGranted|Логический|Согласие на обмен данными с программой покупки тома Apple.|
-|displayName|Строка|Администратор указал имя, удобное для маркеров.|
-|locationName|Строка|Расположение маркера, возвращенного из VPP Apple.|
+|displayName|String|Администратор указал имя, удобное для маркеров.|
+|locationName|String|Расположение маркера, возвращенного из VPP Apple.|
 |claimTokenManagementFromExternalMdm|Логический|Согласие администратора на разрешение требовать управления маркерами из внешнего MDM.|
 |roleScopeTagIds|Коллекция String|ID-теги области ролей, присвоенные этому объекту.|
 
@@ -156,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

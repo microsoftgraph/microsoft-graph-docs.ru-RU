@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90c73968b17926bc786c8772196cf5f391cbcc67b330a81ea2370e6e4bf2e21f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4ea40cd23325b826913bb53f14191c39b189a162
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181204"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801131"
 ---
 # <a name="kerberossinglesignonextension-resource-type"></a>тип ресурса kerberosSingleSignOnExtension
 
@@ -92,7 +92,6 @@ ms.locfileid: "54181204"
   "passwordChangeUrl": "String"
 }
 ```
-
 
 
 

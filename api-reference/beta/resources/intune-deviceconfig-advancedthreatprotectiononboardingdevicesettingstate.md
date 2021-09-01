@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 859e99543c40f3485872ac966bb96c6604dc0c4b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9569a285bd418143985f1c4f8649f1a00f16caaf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266942"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818823"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>расширенный тип ресурсовThreatProtectionOnboardingDeviceSettingState
 
@@ -77,7 +77,6 @@ ms.locfileid: "58266942"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

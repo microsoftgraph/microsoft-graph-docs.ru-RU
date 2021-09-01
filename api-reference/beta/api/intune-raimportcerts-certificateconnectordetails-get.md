@@ -1,18 +1,18 @@
 ---
-title: Get iosVppAppAssignedLicense
-description: Чтение свойств и связей объекта iosVppAppAssignedLicense.
+title: Получить сертификатConnectorDetails
+description: Чтение свойств и связей объекта certificateConnectorDetails.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 370db1294bcdf5d4bf9075f19ccd11307bfc3b6c
+ms.openlocfilehash: 86e6d6c2b6d5a14e45275638690001b11c4fc6fa
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785075"
+ms.locfileid: "58783676"
 ---
-# <a name="get-iosvppappassignedlicense"></a>Get iosVppAppAssignedLicense
+# <a name="get-certificateconnectordetails"></a>Получить сертификатConnectorDetails
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58785075"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [iosVppAppAssignedLicense.](../resources/intune-apps-iosvppappassignedlicense.md)
+Чтение свойств и связей объекта [certificateConnectorDetails.](../resources/intune-raimportcerts-certificateconnectordetails.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58785075"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses/{iosVppAppAssignedLicenseId}
+GET /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,14 +53,14 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект certificateConnectorDetails](../resources/intune-raimportcerts-certificateconnectordetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses/{iosVppAppAssignedLicenseId}
+GET https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,16 +68,16 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 314
+Content-Length: 358
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.iosVppAppAssignedLicense",
-    "id": "090a8d2e-8d2e-090a-2e8d-0a092e8d0a09",
-    "userEmailAddress": "User Email Address value",
-    "userId": "User Id value",
-    "userName": "User Name value",
-    "userPrincipalName": "User Principal Name value"
+    "@odata.type": "#microsoft.graph.certificateConnectorDetails",
+    "id": "104d7361-7361-104d-6173-4d1061734d10",
+    "connectorName": "Connector Name value",
+    "machineName": "Machine Name value",
+    "enrollmentDateTime": "2016-12-31T23:57:59.3726057-08:00",
+    "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
   }
 }
 ```

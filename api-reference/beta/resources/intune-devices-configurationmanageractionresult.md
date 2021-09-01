@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2667c615d838661808346d231989e780f541cbdbac3c88895325bb817619c504
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 28e7715b9fbb3422d01044453216602f95c1e7ee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236117"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801096"
 ---
 # <a name="configurationmanageractionresult-resource-type"></a>тип ресурса configurationManagerActionResult
 
@@ -56,7 +56,6 @@ ms.locfileid: "54236117"
   "errorCode": 1024
 }
 ```
-
 
 
 

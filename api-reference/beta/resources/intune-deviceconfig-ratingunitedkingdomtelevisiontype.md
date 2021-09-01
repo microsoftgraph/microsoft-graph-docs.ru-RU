@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f699ee019e689b1cc62e3b4f3624ead6e97913370a9e2afad81886e2be24a3a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca3c9592cc61ad7bcea4248621865c3c71c31dfb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242799"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807295"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>тип enum ratingUnitedKingdomTelevisionType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54242799"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
-|allBlocked|1 |Не разрешайте контент тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
 |предостережение|2|Разрешение содержимого телевизора с предупреждением|
-
 
 
 

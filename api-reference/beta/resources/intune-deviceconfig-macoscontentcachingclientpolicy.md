@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 88030eec0996f0a5f2c80717a5b422495562a66e4e7133f0c3fc1665f1636855
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0fe2a16b27f244a318b6a6fd77f3828df2c77b14
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124733"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783563"
 ---
 # <a name="macoscontentcachingclientpolicy-enum-type"></a>тип enum macOSContentCachingClientPolicy
 
@@ -26,11 +26,10 @@ ms.locfileid: "54124733"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|По умолчанию для клиентов в локальной сети.|
-|clientsInLocalNetwork|1 |Кэши контента будут предоставлять контент устройствам только в непосредственной локальной сети.|
+|clientsInLocalNetwork|1|Кэши контента будут предоставлять контент устройствам только в непосредственной локальной сети.|
 |clientsWithSamePublicIpAddress|2|Кэши контента будут предоставлять контент устройствам с одинаковым общедоступным IP-адресом.|
-|clientsInCustomLocalNetworks|3 |Кэши контента будут предоставлять контент устройствам в contentCachingClientListenRanges.|
+|clientsInCustomLocalNetworks|3|Кэши контента будут предоставлять контент устройствам в contentCachingClientListenRanges.|
 |customersInCustomLocalNetworksWithFallback|4 |Кэши контента будут предоставлять контент устройствам в contentCachingClientListenRanges, contentCachingPeerListenRanges и contentCachingParents.|
-
 
 
 

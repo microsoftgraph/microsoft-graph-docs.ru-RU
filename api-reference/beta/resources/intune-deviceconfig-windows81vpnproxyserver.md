@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3b818e68b76d74297dd820114e1e445050cd3481bf5d9cc5b86bb30c7df6e72
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b2c70ce97a73ccef8ccdba62ea1e63590f758a7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248489"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783472"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>тип ресурса windows81VpnProxyServer
 
@@ -31,7 +31,7 @@ VPN Прокси-сервер.
 |automaticConfigurationScriptUrl|Строка|URL-адрес сценария автоматической конфигурации прокси. Унаследованный от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|Адрес. Унаследованный от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |порт|Int32|Порт. Допустимые значения от 0 до 65535, унаследованные от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|Логический|Автоматически обнаруживать параметры прокси.|
+|automaticallyDetectProxySettings|Boolean|Автоматически обнаруживать параметры прокси.|
 |bypassProxyServerForLocalAddress|Логический|Обход прокси-сервера для локального адреса.|
 
 ## <a name="relationships"></a>Связи
@@ -54,7 +54,6 @@ VPN Прокси-сервер.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

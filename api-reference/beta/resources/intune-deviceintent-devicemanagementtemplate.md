@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b119ddbfb175b8cd80cd2174e0ffbf5f724e1fe
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e830e4d879b3cf3a096e9919ad75c0e3966dc21e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262636"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819012"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>тип ресурса deviceManagementTemplate
 
@@ -39,8 +39,8 @@ ms.locfileid: "58262636"
 |:---|:---|:---|
 |id|String|ID шаблона|
 |displayName|String|Имя отображения шаблона|
-|description|Строка|Описание шаблона|
-|versionInfo|Строка|Сведения о версии шаблона|
+|description|String|Описание шаблона|
+|versionInfo|String|Сведения о версии шаблона|
 |isDeprecated|Логический|Шаблон обесценив или нет. Намерения не могут быть созданы из шаблона с законтятой расшифровкой.|
 |intentCount|Int32|Количество намерений, созданных из этого шаблона.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`, `firewallSharedSettings`.|
@@ -78,7 +78,6 @@ ms.locfileid: "58262636"
   "publishedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

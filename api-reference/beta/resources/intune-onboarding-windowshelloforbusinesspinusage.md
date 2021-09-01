@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0368106c2f2a1cf4034bc7559085a2804931152655acb3ad7bf5eeb8ceb2c156
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fe917addb2bf9bfa52b74c24e59f5cdba49a472
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161110"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785103"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>тип enum windowsHelloForBusinessPinUsage
 
@@ -26,9 +26,8 @@ Windows Hello для бизнеса параметры использовани�
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |разрешено|0|Разрешено использование определенного правила пин-кода|
-|обязательно|1 |Принудительное использование определенного правила пин-кода|
+|обязательно|1|Принудительное использование определенного правила пин-кода|
 |отостановка|2|Forbit использование определенного правила пин-кода|
-
 
 
 

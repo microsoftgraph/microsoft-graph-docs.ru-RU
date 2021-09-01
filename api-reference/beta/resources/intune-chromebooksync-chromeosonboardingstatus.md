@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fa8b85fc3e9354a0b2b75551c1ffd56427981fc6afe9a9d9ebc684ff75b1873b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a24c26bdf6bca60b673b992134d8d16318e9ae22
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229544"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819229"
 ---
 # <a name="chromeosonboardingstatus-enum-type"></a>тип enum chromeOSOnboardingStatus
 
@@ -25,11 +25,10 @@ ms.locfileid: "54229544"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Неизвестно|
-|inprogress|1 |В процессе выполнения|
+|unknown|0|Unknown|
+|inprogress|1|В процессе выполнения|
 |onboarded|2|Onboarded|
-|не удалось|3 |Не выполнено|
-
+|не удалось|3|Не выполнено|
 
 
 

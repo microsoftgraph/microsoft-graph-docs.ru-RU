@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f70163997f92e0b5822d95f11c8589643be185709013bc75b72a65a202ca1136
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5f0513640fa50def7c08aa7d4980713c47e4652c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195332"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807344"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Создание windowsDefenderApplicationControlSupplementalPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "54195332"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +53,8 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ для дополнительной политики WindowsDefenderApplicationControl.|
-|displayName|String|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
+|id|Строка|Ключ для дополнительной политики WindowsDefenderApplicationControl.|
+|displayName|Строка|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
 |description|Строка|Описание дополнительной политики WindowsDefenderApplicationControl.|
 |содержимое|В двоичном формате|Контент дополнительной политики WindowsDefenderApplicationControl в формате byte array.|
 |contentFileName|Строка|Имя файла дополнительного контента политики WindowsDefenderApplicationControl.|
@@ -113,7 +113,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

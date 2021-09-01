@@ -1,16 +1,16 @@
 ---
 title: 'callRecord: getDirectRoutingCalls'
-description: Получите журнал прямых вызовов маршрутов.
+description: Получите журнал прямых вызовов маршрутизов.
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5dd389ddba5e3f081b850e2303833b47b832e7d7
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 85d6b54f0cde797757f5e8711c1ae058a668dd95
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872921"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786917"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 
@@ -18,7 +18,7 @@ ms.locfileid: "49872921"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите журнал прямых вызовов маршрутизирования в качестве коллекции [записей directRoutingLogRow.](../resources/callrecords-directroutinglogrow.md)
+Получите журнал прямых маршрутизировок в качестве коллекции записей [directRoutingLogRow.](../resources/callrecords-directroutinglogrow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "49872921"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | CallRecords.Read.All |
+| Application                            | CallRecord-PstnCalls.Read.All, CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,16 +59,18 @@ GET /communications/callRecords/getDirectRoutingCalls
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает код отклика и коллекцию записей `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) в тексте отклика.
+В случае успешной работы эта функция возвращает код отклика и коллекцию записей `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) в тексте ответа.
   
-Если в диапазоне дат содержится более 1000 записей, тело также содержит URL-адрес для запроса следующей страницы `@odata.NextLink` записей вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. в [разгонах данных Microsoft Graph в приложении.](/graph/paging)
+Если в диапазоне дат более 1000 записей, тело также включает URL-адрес для запроса следующей страницы записей `@odata.NextLink` вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. [в Graph microsoft Graph в приложении.](/graph/paging)
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
+
+В следующем примере показано, как получить коллекцию записей для прямых вызовов маршрутов, которые произошли в указанном диапазоне дат. Ответ включает в себя список записей в этом первом ответе и получения записей за пределами первых `"@odata.count": 1000` `@odata.NextLink` 1000. Для читаемости в ответе показана только коллекция из 1 записи. Предположим, что в этом диапазоне дат более 1000 вызовов.
 
 ### <a name="request"></a>Запрос
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "callrecord_getdirectroutingcalls"
 }
 -->
@@ -81,7 +83,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "isCollection": true
@@ -107,8 +109,8 @@ HTTP/1.1 200 OK
             "duration": 5,
             "callType": "ByotIn",
             "successfulCall": true,
-            "callerNumber": "+12345678**_",
-            "calleeNumber": "+01234567_*_",
+            "callerNumber": "+12345678***",
+            "calleeNumber": "+01234567***",
             "mediaPathLocation": "USWE",
             "signalingLocation": "EUNO",
             "finalSipCode": 0,
@@ -123,6 +125,6 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>См. также
 
-_ [Отчет об использовании прямой маршрутки Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) в Центре администрирования Microsoft Teams
-* [Панель мониторинга состояния для прямой маршрутки](/MicrosoftTeams/direct-routing-health-dashboard) в Центре администрирования Microsoft Teams
-* [Отчет о вызовах STN в Microsoft Graph](callrecords-callrecord-getpstncalls.md)
+* [Microsoft Teams отчет об использовании маршрутов](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) в центре Microsoft Teams администрирования.
+* [Панель мониторинга состояния здоровья для прямой маршрутивки](/MicrosoftTeams/direct-routing-health-dashboard) в центре администрирования Microsoft Teams области.
+* [Отчет о вызове PSTN в Microsoft Graph](callrecords-callrecord-getpstncalls.md).

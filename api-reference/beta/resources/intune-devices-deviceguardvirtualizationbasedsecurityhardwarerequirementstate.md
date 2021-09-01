@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 202488135ada97650cc7484bb390ee7b969ea16ae6b82a6caa50c137551d8d4e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc5706537f37e7dce797cc95224f41a4a3ce8885
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246180"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807267"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>тип enum deviceGuardVirtualizationBasedSecurityHardwareRequirementState
 
@@ -26,11 +26,10 @@ ms.locfileid: "54246180"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |meetHardwareRequirements|0|Система отвечает требованиям конфигурации оборудования|
-|secureBootRequired|1 |Требуемая защита загрузки|
+|secureBootRequired|1|Требуемая защита загрузки|
 |dmaProtectionRequired|2|Требуется защита от DMA|
 |hyperVNotSupportedForGuestVM|4 |HyperV не поддерживается для гостевого VM|
 |hyperVNotAvailable|8 |Функция HyperV недоступна|
-
 
 
 
