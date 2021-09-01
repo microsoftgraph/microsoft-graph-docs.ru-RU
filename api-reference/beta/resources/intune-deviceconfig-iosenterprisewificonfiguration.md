@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ea0f6db2c1edc19fa34ad7d7f5ba9c4e9350201c01e9e068ed806b1929ec85f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 096b01bb23c1b12b9f421087a7f3a56c3efb3c66
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122630"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821951"
 ---
 # <a name="iosenterprisewificonfiguration-resource-type"></a>тип ресурса iosEnterpriseWiFiConfiguration
 
@@ -46,17 +46,17 @@ ms.locfileid: "54122630"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |networkName|String|Имя сети, унаследованные от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
-|ssid|Строка|Это имя сети Wi-Fi, которая транслируется на все устройства. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|ssid|String|Это имя сети Wi-Fi, которая транслируется на все устройства. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |connectAutomatically|Логический|Подключение автоматически, когда эта сеть находится в диапазоне. Настройка этого параметра будет пропускать запрос пользователя и автоматически подключать устройство к Wi-Fi сети. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |connectWhenNetworkNameIsHidden|Логический|Подключение, когда сеть не передает свое имя (SSID). Если задана истина, этот профиль заставляет устройство подключаться к сети, которая не передает SSID на все устройства. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, Wi-Fi конечная точка использует тип безопасности на основе EAP. Наследуется [от iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md). Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси для этого Wi-Fi, унаследованный от [iosWiFiConfiguration.](../resources/intune-deviceconfig-ioswificonfiguration.md) Возможные значения: `none`, `manual`, `automatic`.|
 |proxyManualAddress|String|IP-адрес или DNS-имя прокси-сервера при выборе ручной конфигурации. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |proxyManualPort|Int32|Порт прокси-сервера при выборе ручной конфигурации. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|Строка|URL-адрес сценария автоматической конфигурации прокси-сервера при выборе автоматической конфигурации. Этот URL-адрес обычно является расположением файла PAC (Proxy Auto Configuration). Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|String|URL-адрес сценария автоматической конфигурации прокси-сервера при выборе автоматической конфигурации. Этот URL-адрес обычно является расположением файла PAC (Proxy Auto Configuration). Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |отключениеMacAddressRandomization|Логический|Если установлено истинное, устройства, подключающиеся с помощью этого Wi-Fi профиля, должны представить Wi-Fi mac-адрес, а не случайный MAC-адрес. Применяется к iOS 14 и более поздней. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |preSharedKey|String|Это предварительный общий ключ для сети персональных Wi-Fi WPA. Унаследованный от [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication Protocol (EAP). Указывает тип протокола EAP на конечной точке Wi-Fi (маршрутизатор). Возможные значения: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
@@ -66,7 +66,7 @@ ms.locfileid: "54122630"
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Метод без EAP для проверки подлинности, если тип EAP — EAP-TTLS, а проверка подлинности — имя пользователя и пароль. Возможные значения: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Включить конфиденциальность удостоверений (внешний идентификатор), когда тип EAP настроен на EAP - TTLS, EAP - FAST или PEAP. Это свойство маскирует имена пользователей с вводимым текстом. Например, если используется "анонимный", каждый пользователь, который Wi-Fi с этим подключением, используя свое реальное имя пользователя, отображается как "анонимный".|
 |usernameFormatString|String|Строка формата username, используемая для создания имени пользователя для подключения к Wi-Fi|
-|passwordFormatString|Строка|Строка формата пароля, используемая для создания пароля для подключения к Wi-Fi|
+|passwordFormatString|String|Строка формата пароля, используемая для создания пароля для подключения к Wi-Fi|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -147,7 +147,6 @@ ms.locfileid: "54122630"
   "passwordFormatString": "String"
 }
 ```
-
 
 
 

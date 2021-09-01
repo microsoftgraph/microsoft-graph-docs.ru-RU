@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: beed45e61bab69617d46191fa69bd7b43663651574584b2c8e8ea4cf537ba7b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8e2f1e413521967ef2fd23a3146facfbdbb6fc7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182827"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790145"
 ---
 # <a name="comanagementeligibletype-enum-type"></a>тип enum comanagementEligibleType
 
@@ -25,12 +25,11 @@ ms.locfileid: "54182827"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|comanaged|1 |Пока не задокументировано.|
+|comanaged|1|Пока не задокументировано.|
 |подходящую|2|Пока не задокументировано.|
-|eligibleButNotAzureAdJoined|3 |Пока не задокументировано.|
+|eligibleButNotAzureAdJoined|3|Пока не задокументировано.|
 |needsOsUpdate|4 |Пока не задокументировано.|
 |неугомонные|5 |Пока не задокументировано.|
-
 
 
 

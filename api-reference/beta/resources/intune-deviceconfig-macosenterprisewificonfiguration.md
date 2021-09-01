@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3a0f30e1f22eabcab40ea3d0af040b9f8be71debd043a322e2ecb1ecc1444fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5b0e7d34710a6a118731a985522c8f0aee63030
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127119"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785173"
 ---
 # <a name="macosenterprisewificonfiguration-resource-type"></a>тип ресурса macOSEnterpriseWiFiConfiguration
 
@@ -37,7 +37,7 @@ MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise конфигурации.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -45,18 +45,18 @@ MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise конфигурации.
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |networkName|Строка|Имя сети, унаследованные от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
-|ssid|String|Это имя сети Wi-Fi, которая транслируется на все устройства. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|ssid|Строка|Это имя сети Wi-Fi, которая транслируется на все устройства. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |connectAutomatically|Логический|Подключение автоматически, когда эта сеть находится в диапазоне. Настройка этого параметра будет пропускать запрос пользователя и автоматически подключать устройство к Wi-Fi сети. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |connectWhenNetworkNameIsHidden|Логический|Подключение, когда сеть не передает свое имя (SSID). Если задана истина, этот профиль заставляет устройство подключаться к сети, которая не передает SSID на все устройства. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, Wi-Fi конечная точка использует тип безопасности на основе EAP. Унаследовано от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md). Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси для этого Wi-Fi, унаследованный от [macOSWiFiConfiguration.](../resources/intune-deviceconfig-macoswificonfiguration.md) Возможные значения: `none`, `manual`, `automatic`.|
-|proxyManualAddress|String|IP-адрес или DNS-имя прокси-сервера при выборе ручной конфигурации. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|proxyManualAddress|Строка|IP-адрес или DNS-имя прокси-сервера при выборе ручной конфигурации. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |proxyManualPort|Int32|Порт прокси-сервера при выборе ручной конфигурации. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|String|URL-адрес сценария автоматической конфигурации прокси-сервера при выборе автоматической конфигурации. Этот URL-адрес обычно является расположением файла PAC (Proxy Auto Configuration). Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|Строка|URL-адрес сценария автоматической конфигурации прокси-сервера при выборе автоматической конфигурации. Этот URL-адрес обычно является расположением файла PAC (Proxy Auto Configuration). Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |preSharedKey|Строка|Это предварительный общий ключ для сети персональных Wi-Fi WPA. Унаследованный от [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication Protocol (EAP). Указывает тип протокола EAP на конечной точке Wi-Fi (маршрутизатор). Возможные значения: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
 |eapFastConfiguration|[eapFastConfiguration](../resources/intune-deviceconfig-eapfastconfiguration.md)|Вариант конфигурации FAST EAP-FAST является выбранным типом EAP. Возможные значения: `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision`, `useProtectedAccessCredentialAndProvisionAnonymously`.|
@@ -141,7 +141,6 @@ MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise конфигурации.
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ccda337f1a237654978407d5ff99da20f01e2e841a273c0d8bd0142b2234fff0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a11b6b513ba91722c189f2b11b1401e46da393de
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191370"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785866"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>Удаление встроенных элементовSIMDeviceState
 
@@ -29,7 +29,7 @@ ms.locfileid: "54191370"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

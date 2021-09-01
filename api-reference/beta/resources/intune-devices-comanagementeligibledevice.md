@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20246ef4318d4b5509c99c470849410430b52879
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 647554e93a790787d7acc4eb05a6e0bca5afe6d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264831"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806637"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>тип ресурса comanagementEligibleDevice
 
@@ -34,7 +34,7 @@ ms.locfileid: "58264831"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный ID для устройства|
+|id|Строка|Уникальный ID для устройства|
 |deviceName|String|DeviceName|
 |deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` , `unknown` `cloudPC` , .|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
@@ -50,7 +50,7 @@ ms.locfileid: "58264831"
 |osDescription|String|OSDescription|
 |entitySource|Int32|EntitySource|
 |userId|String|ИД пользователя|
-|upn|Строка|Имя участника-пользователя|
+|upn|Строка|UPN|
 |userEmail|String|Электронный адрес пользователя|
 |userName|String|Имя пользователя|
 |status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
@@ -91,7 +91,6 @@ ms.locfileid: "58264831"
   "status": "String"
 }
 ```
-
 
 
 

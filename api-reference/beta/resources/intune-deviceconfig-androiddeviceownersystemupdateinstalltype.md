@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 13b983ca2c017646108d6076ebcc3a92652165c0de28691c6390875443f6df04
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6fcbdc7768dcc2ffeccc9396aabe4d48b317f0c3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190656"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785425"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>тип enum androidDeviceOwnerSystemUpdateInstallType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54190656"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Поведение по умолчанию устройства, которое обычно побуждает пользователя принимать обновления системы.|
-|откладывать|1 |Отложить автоматическую установку обновлений до 30 дней.|
+|откладывать|1|Отложить автоматическую установку обновлений до 30 дней.|
 |окно|2|Установка автоматически в окне ежедневного обслуживания.|
-|Автоматически|3 |Автоматически установите обновления как можно скорее.|
-
+|Автоматически|3|Автоматически установите обновления как можно скорее.|
 
 
 

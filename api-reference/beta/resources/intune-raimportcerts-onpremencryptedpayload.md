@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36fac869b01804105397e45e2840bf7eb0bf38e3b0b968bc49efa8a89ddeaf10
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c441744a5e69db28c80241f149c9f3d6d69272b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164134"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805298"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>onPremEncryptedPayload resource type
 
@@ -83,7 +83,6 @@ ms.locfileid: "54164134"
   "isDeleted": true
 }
 ```
-
 
 
 

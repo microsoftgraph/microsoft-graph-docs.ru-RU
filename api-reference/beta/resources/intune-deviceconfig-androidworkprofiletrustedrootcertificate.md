@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b59556f63d0960cb9f62bee0e34291054bf1e99b38191b817c83458405d79d4c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 463b1bda03ee481217d9266a57f339b3849f2bcb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241960"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790439"
 ---
 # <a name="androidworkprofiletrustedrootcertificate-resource-type"></a>тип ресурса androidWorkProfileTrustedRootCertificate
 
@@ -37,7 +37,7 @@ ms.locfileid: "54241960"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -49,7 +49,7 @@ ms.locfileid: "54241960"
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |trustedRootCertificate|В двоичном формате|Надежный корневой сертификат|
-|certFileName|String|Имя файла для отображения в пользовательском интерфейсе.|
+|certFileName|Строка|Имя файла для отображения в пользовательском интерфейсе.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -108,7 +108,6 @@ ms.locfileid: "54241960"
   "certFileName": "String"
 }
 ```
-
 
 
 

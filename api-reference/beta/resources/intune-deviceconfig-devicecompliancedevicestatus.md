@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34fee125b5b7842cc836035e99b135126fc33a073cec094d86136961d1322021
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 241f1cd27569a214493e70adb591018d0f9d08d4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209940"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790670"
 ---
 # <a name="devicecompliancedevicestatus-resource-type"></a>Тип ресурса deviceComplianceDeviceStatus
 
@@ -34,7 +34,7 @@ ms.locfileid: "54209940"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
 |userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
@@ -69,7 +69,6 @@ ms.locfileid: "54209940"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

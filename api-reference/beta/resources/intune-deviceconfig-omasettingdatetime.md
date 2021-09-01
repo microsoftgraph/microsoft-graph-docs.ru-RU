@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c373b006cac927e58cb7b366ba574d827a042215adeb995ce2a68bc1ce8209d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1efe2ae812842d0c0bd3c0e3d7c28c1931a3ff95
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187688"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790901"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Тип ресурса omaSettingDateTime
 
@@ -29,7 +29,7 @@ ms.locfileid: "54187688"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |secretReferenceValueId|Строка|ReferenceId для поисков секрета для расшифровки. Это свойство доступно только для чтения. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |isEncrypted|Boolean|Указывает, зашифровано ли поле значений. Это свойство доступно только для чтения. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
@@ -56,7 +56,6 @@ ms.locfileid: "54187688"
   "value": "String (timestamp)"
 }
 ```
-
 
 
 

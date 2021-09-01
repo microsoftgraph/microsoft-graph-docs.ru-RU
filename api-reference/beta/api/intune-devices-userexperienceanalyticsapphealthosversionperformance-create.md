@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49c2651ddfd8dc14df4547fce34f1b42c279b3af
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2ff6935b08976d162bc8f69ff71e1c43d0c0ea07
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264586"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818634"
 ---
 # <a name="create-userexperienceanalyticsapphealthosversionperformance"></a>Создание userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "58264586"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,13 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности версии оси для пользовательского интерфейса аналитики оси.|
+|id|String|Уникальный идентификатор объекта производительности версии оси для пользовательского интерфейса аналитики оси.|
 |osVersion|String|Версия ОС, установленная на устройстве.|
-|osBuildNumber|Строка|Номер сборки ОС, установленный на устройстве.|
+|osBuildNumber|String|Номер сборки ОС, установленный на устройстве.|
 |activeDeviceCount|Int32|Количество активных устройств для версии ОС. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для версии ОС в минутах. Допустимые значения 2147483648 2147483647|
 |osVersionAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения в версии ОС. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|osVersionAppHealthStatus|Строка|Общее состояние состояния здоровья приложения в версии ОС.|
+|osVersionAppHealthStatus|String|Общее состояние состояния здоровья приложения в версии ОС.|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
-
 
 
 

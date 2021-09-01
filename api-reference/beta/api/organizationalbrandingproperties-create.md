@@ -5,12 +5,12 @@ localization_priority: Normal
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d74061ce6f323818ee77789db59def46048fa7f7
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2f114207595ce601bd39d5d213d66afe75488eea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679654"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820767"
 ---
 # <a name="create-organizationalbrandingproperties"></a>Создание organizationalBrandingProperties
 
@@ -52,7 +52,7 @@ PATCH /organization/{tenant id}/branding
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательно.  |
+| Content-Language  | Locale. Необязательное свойство.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -115,7 +115,7 @@ Content-Language: en-US
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -132,15 +132,15 @@ Content-Language: en-US
     "backgroundColor":"#FFFF33",
     "backgroundImage@odata.mediaContentType":"image/*",
     "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
-    "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/backgroundImage",
+    "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/backgroundImage",
     "bannerLogo@odata.mediaContentType":"image/*",
     "bannerLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
-    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/bannerLogo",
+    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/bannerLogo",
     "id": "und",
     "signInPageText":"Welcome",
     "squareLogo@odata.mediaContentType":"image/*",
     "squareLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
-    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/squareLogo",
+    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/squareLogo",
     "usernameHintText":"hint"
 }
 ```

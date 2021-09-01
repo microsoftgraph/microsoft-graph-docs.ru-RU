@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d246dcafdbe4ac0cf7159bbd22e1bf7ff34b527043ebe813fc30467f01f902ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db669195fd6d94d9df8525c042b513f2e4e9ba6f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54201022"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58813904"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Создание windowsDefenderApplicationControlSupplementalPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "54201022"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,7 +97,6 @@ Content-Length: 417
   }
 }
 ```
-
 
 
 

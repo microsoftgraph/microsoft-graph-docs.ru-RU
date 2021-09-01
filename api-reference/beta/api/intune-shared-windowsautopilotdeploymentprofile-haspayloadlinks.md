@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8088f2af7da5e864c1fde83827e65475959de7303cd5b6e61823c627db8458f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9474e76cb381705f496a7ea4f5bd18bad40a4a8d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187975"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821748"
 ---
 # <a name="haspayloadlinks-action"></a>действие hasPayloadLinks
 
@@ -30,7 +30,7 @@ ms.locfileid: "54187975"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles/hasPayloadLinks
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -100,7 +100,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

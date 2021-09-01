@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79aa609f4902f518a492adfeea2bbc4a050c6cd5
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 133cef46fdd3519f6de20d4d4061171958adcdac
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263242"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785299"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Создание microsoftTunnelConfiguration
 
@@ -27,9 +27,9 @@ ms.locfileid: "58263242"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ POST /deviceManagement/microsoftTunnelConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id MicrosoftTunnelConfiguration|
-|displayName|String|Имя отображения MicrosoftTunnelConfiguration|
+|id|Строка|Id MicrosoftTunnelConfiguration|
+|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
 |description|Строка|Описание MicrosoftTunnelConfiguration|
 |сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
 |dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
-|defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
 |routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
 |routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
 |splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
@@ -154,7 +154,6 @@ Content-Length: 797
   ]
 }
 ```
-
 
 
 

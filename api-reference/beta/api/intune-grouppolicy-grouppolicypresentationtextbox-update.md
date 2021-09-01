@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46947303f6542dee20825f5c195b3a5edd1ce2b2271c30487a26ece80c0faad8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65cb87a10f13316b1bea244ceae841b2915b2645
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166346"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815794"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>Обновление groupPolicyPresentationTextBox
 
@@ -29,7 +29,7 @@ ms.locfileid: "54166346"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,10 +55,10 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |подпись|String|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Строка|Локализованная строка по умолчанию, отображаемая в текстовом окне. По умолчанию это значение пусто.|
-|Обязательный|Логический|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
+|defaultValue|String|Локализованная строка по умолчанию, отображаемая в текстовом окне. По умолчанию это значение пусто.|
+|обязательно|Логический|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
 |maxLength|Int64|Неподписаный целый ряд, который указывает максимальное количество текстовых символов. Значение по умолчанию — 1023.|
 
 
@@ -101,7 +101,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

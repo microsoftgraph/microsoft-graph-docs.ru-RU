@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9833d2c9053abd1cba881f73b3516e2c6df74564
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3008e35287ce5a5d8db1cecba25ff25692f7469b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261017"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785334"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>Создание deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "58261017"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/reusablePolicySettings
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +53,8 @@ POST /deviceManagement/reusablePolicySettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|система, генерируемая многоярусным и настраиваемым id.|
-|displayName|String|имя отображения для повторного параметров, предоставленное пользователем.|
+|id|Строка|система, генерируемая многоярусным и настраиваемым id.|
+|displayName|Строка|имя отображения для повторного параметров, предоставленное пользователем.|
 |description|Строка|повторное описание параметра, предоставленное пользователем.|
 |settingDefinitionId|Строка|параметр определения, связанный с этим многопользоваемым параметром.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|экземпляр конфигурации повторного параметров|
@@ -536,7 +536,6 @@ Content-Length: 16500
   "referencingConfigurationPolicyCount": 3
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e30226ff54278dcdcd2d98257ffd5383418455c5ac077e024cdcf63f1bddb9a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99279d9a8578976b54e173cca7fed07d10ae03c5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206594"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783535"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>тип ресурса macOSCredentialSingleSignOnExtension
 
@@ -31,7 +31,7 @@ ms.locfileid: "54206594"
 |extensionIdentifier|Строка|Получает или задает пакетный ID расширения приложения, который выполняет SSO для указанных URL-адресов.|
 |teamIdentifier|Строка|Получает или задает командный ID расширения приложения, которое выполняет SSO для указанных URL-адресов.|
 |домены|Коллекция String|Получает или задает список хостов или доменных имен, для которых расширение приложения выполняет SSO.|
-|realm|String|Получает или задает имя области, чувствительной к делу, для этого профиля.|
+|realm|Строка|Получает или задает имя области, чувствительной к делу, для этого профиля.|
 |конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
@@ -62,7 +62,6 @@ ms.locfileid: "54206594"
   ]
 }
 ```
-
 
 
 

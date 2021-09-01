@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ead732e65cf3119f974f2fa6b29da14cc3dd180b1211dcba1a5dd1db90cc71eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c34a3d9a9b5d0b4078256fdd16e8f0a9ae833c6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251409"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821657"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>тип ресурса windowsFirewallRule
 
@@ -25,11 +25,11 @@ ms.locfileid: "54251409"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя правила. Не нужно быть уникальным.|
-|description|Строка|Описание правила.|
-|packageFamilyName|Строка|Семейство пакетов приложения Microsoft Store, на которое влияет правило брандмауэра.|
-|filePath|Строка|Полный путь файла приложения, на которое влияет правило брандмауэра.|
-|serviceName|Строка|Имя, используемая в случаях, когда служба, а не приложение отправляет или получает трафик.|
+|displayName|String|Отображаемое имя правила. Не нужно быть уникальным.|
+|description|String|Описание правила.|
+|packageFamilyName|String|Семейство пакетов приложения Microsoft Store, на которое влияет правило брандмауэра.|
+|filePath|String|Полный путь файла приложения, на которое влияет правило брандмауэра.|
+|serviceName|String|Имя, используемая в случаях, когда служба, а не приложение отправляет или получает трафик.|
 |протокол|Int32|Номер 0-255, представляющий протокол IP (TCP = 6, UDP = 17). Если не указано, по умолчанию — все. Допустимые значения от 0 до 255|
 |localPortRanges|Коллекция String|Список локальных диапазонов портов. Например, "100-120", "200", "300-320". Если не указано, по умолчанию — все.|
 |remotePortRanges|Коллекция String|Список диапазонов удаленных портов. Например, "100-120", "200", "300-320". Если не указано, по умолчанию — все.|
@@ -81,7 +81,6 @@ ms.locfileid: "54251409"
   "localUserAuthorizations": "String"
 }
 ```
-
 
 
 

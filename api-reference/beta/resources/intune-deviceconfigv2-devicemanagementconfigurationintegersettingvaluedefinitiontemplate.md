@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7fa81700aa71a076da45b7703f1f638987a4f1b9aa107409bf8fb4934b90d1d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6aa5571402ccddf6cf5524e2e2486caffcc550c7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182912"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820725"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefinitiontemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefinitionTemplate type
 
@@ -45,7 +45,6 @@ ms.locfileid: "54182912"
   "maxValue": 1024
 }
 ```
-
 
 
 

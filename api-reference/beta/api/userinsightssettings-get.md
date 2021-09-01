@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d3d9f370318f74f3c25b8737de4cecc7dbb37d6d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: b68aacd69a705743aa37ea85ba9d421c6f9d46d2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210359"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804892"
 ---
 # <a name="get-userinsightssettings"></a>Get userInsightsSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "53210359"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите настраиваемые пользователем параметры конфиденциальности для [itemInsights](../resources/iteminsights.md) и сведения [о часах собраний.](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)
+Получите настраиваемые пользователем параметры конфиденциальности для [itemInsights](../resources/iteminsights.md) и сведения [о часах собраний.](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/me/settings/itemInsights
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ad26d82265a14681f7e5e85a92490becc82448816fd6c378565ff6eab21dde51
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9b5207a232eac160880d0bbf9b0151aaa353dc0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248497"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821671"
 ---
 # <a name="microsoftlauncherdockpresence-enum-type"></a>тип enum microsoftLauncherDockPresence
 
@@ -26,10 +26,9 @@ Microsoft Launcher Выбор присутствия док-станции.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен; это значение игнорируется.|
-|показать|1 |Указывает, что док устройства будет отображаться на устройстве.|
+|показать|1|Указывает, что док устройства будет отображаться на устройстве.|
 |скрыть|2|Указывает, что док устройства будет скрыт на устройстве, но пользователь может получить доступ к док-станции, перетаскив обработник в нижней части экрана.|
-|отключено|3 |Указывает, что стыковка устройства будет отключена на устройстве.|
-
+|отключено|3|Указывает, что стыковка устройства будет отключена на устройстве.|
 
 
 

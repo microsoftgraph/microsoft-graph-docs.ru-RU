@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7cc2ec827c10f77f79ee64f29d4f76783da473574f326df0abbbd0d6aa9dd73
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d90d732bef78017cd0f52e3b0f5b981e38a0e66b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203927"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805480"
 ---
 # <a name="delete-deviceandappmanagementassignmentfilter"></a>Удаление устройстваAndAppManagementAssignmentFilter
 
@@ -29,7 +29,7 @@ ms.locfileid: "54203927"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilt
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/assignmentFilters/{devi
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

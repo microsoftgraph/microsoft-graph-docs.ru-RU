@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4fccc98427d8745f16213d6c0ce3383558e0d63cc9c86bfd908ec18c139c7304
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aa16980bf6afa67f1b1e852d06a79f0aa1ff64b6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172927"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810297"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>тип ресурса sharedAppleDeviceUser
 
@@ -49,7 +49,6 @@ ms.locfileid: "54172927"
   "dataUsed": 1024
 }
 ```
-
 
 
 

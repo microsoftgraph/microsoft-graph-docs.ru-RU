@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af30f98789faa830bfead41d0519f76fcf8cba4dffb5db9e8ad9ae65eb8c5e7e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9a9fa8531bea6d90d081567c9d295517b519ab2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226373"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819726"
 ---
 # <a name="updateclassification-enum-type"></a>тип enum updateClassification
 
@@ -26,10 +26,9 @@ ms.locfileid: "54226373"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
-|recommendedAndImportant|1 |Рекомендуется и важно.|
+|recommendedAndImportant|1|Рекомендуется и важно.|
 |важно|2|Важно.|
-|Нет|3 |Нет.|
-
+|Нет|3|Нет.|
 
 
 

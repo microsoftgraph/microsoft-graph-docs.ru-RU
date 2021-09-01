@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc075575a1fa12aa3b075414a9a59b7f8c1f3849db3f6ebf4a5d53bf5076474c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c27156496198e71bb4f762e6953b95882609145c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123052"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783024"
 ---
 # <a name="delete-pfxrecryptionrequest"></a>Удаление pfxRecryptionRequest
 
@@ -29,7 +29,7 @@ ms.locfileid: "54123052"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /pfxRecryptionRequests/{pfxRecryptionRequestsId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/pfxRecryptionRequests/{pfxRecryptionRequ
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

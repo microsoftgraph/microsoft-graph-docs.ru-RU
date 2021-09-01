@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75644edcd41b181475586d5f4c36c10cb3f363396f79684e8895460089d9354f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aefc8c776afd72950598c2939b37dd8ad61b32d5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216079"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819362"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
 
@@ -29,7 +29,7 @@ ms.locfileid: "54216079"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|String|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|description|Строка|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|description|String|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
@@ -154,7 +154,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

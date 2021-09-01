@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9ebfa7253ae6f30a6f3fb27add96e20b69a2733558091bc6926f040d1c0e83b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b14947aa1dbc66ba5299a5d5d9fe8a64022f68e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134031"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820297"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>Обновление managedDeviceEncryptionState
 
@@ -29,7 +29,7 @@ ms.locfileid: "54134031"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionSt
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ PATCH /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionSt
 |userPrincipalName|String|Имя пользователя|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Платформа устройства. Возможные значения: `desktop` `windowsRT` , , , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` .|
 |osVersion|String|Версия операционной системы устройства|
-|tpmSpecificationVersion|Строка|Версия TPM устройства|
+|tpmSpecificationVersion|String|Версия TPM устройства|
 |deviceName|String|Имя устройства|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|Состояние готовности шифрования. Возможные значения: `notReady`, `ready`.|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Состояние шифрования устройств. Возможные значения: `notEncrypted`, `encrypted`.|
@@ -131,7 +131,6 @@ Content-Length: 753
   ]
 }
 ```
-
 
 
 

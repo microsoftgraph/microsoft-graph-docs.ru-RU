@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f9a822c18bbd72e774ad86a549c513603e33403748b9a7e211f00fd3d7db558d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fea929440532a41c0af85d537e5f103a98b130fe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241676"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58810381"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>тип enum windowsVpnConnectionType
 
@@ -26,10 +26,9 @@ Windows Тип подключения к VPN.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |pulseSecure|0|Pulse Secure.|
-|f5EdgeClient|1 |Клиент F5 Edge.|
+|f5EdgeClient|1|Клиент F5 Edge.|
 |dellSonicWallMobileConnect|2|Мобильное подключение Dell SonicWALL.|
-|checkPointCapsuleVpn|3 |Check Point Capsule VPN.|
-
+|checkPointCapsuleVpn|3|Check Point Capsule VPN.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f60b11fe836b7dfb9ddc6d72a48e6c9d57a348c462ea815433e5d8c575359bae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b7629e5025d12fb6696f3e95c3ead21ee41f0504
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164589"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821979"
 ---
 # <a name="list-microsofttunnelserverlogcollectionresponses"></a>Список microsoftTunnelServerLogCollectionResponses
 
@@ -27,9 +27,9 @@ ms.locfileid: "54164589"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/microsoftTunnelServerLogCollectionResponses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelServerLogCo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 350
+Content-Length: 513
 
 {
   "value": [
@@ -75,12 +75,14 @@ Content-Length: 350
       "status": "completed",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
       "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-      "sizeInBytes": 11
+      "sizeInBytes": 11,
+      "serverId": "Server Id value",
+      "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+      "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
     }
   ]
 }
 ```
-
 
 
 
