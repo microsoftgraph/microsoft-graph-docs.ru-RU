@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b73edbbaf73c93b6df3c90a3b42b51a80350467298980069cdf16d4da04e585
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b94cfecfa00378832c58ef048454eb9cbf98edb4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240024"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784865"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
@@ -25,7 +25,7 @@ ms.locfileid: "54240024"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|String|Тип субъекта.|
+|type|Строка|Тип субъекта.|
 |userPermissions|Коллекция строк|Список разрешений пользователей во время аудита.|
 |applicationId|String|ИД приложения AAD.|
 |applicationDisplayName|String|Имя приложения.|
@@ -34,7 +34,7 @@ ms.locfileid: "54240024"
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
 |userRoleScopeTags|[Коллекция roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Список тегов области пользователей при выполнении аудита.|
-|remoteTenantId|String|Удаленный ID клиента|
+|remoteTenantId|Строка|Удаленный ID клиента|
 |remoteUserId|Строка|Удаленный пользовательский id|
 
 ## <a name="relationships"></a>Связи
@@ -71,7 +71,6 @@ ms.locfileid: "54240024"
   "remoteUserId": "String"
 }
 ```
-
 
 
 

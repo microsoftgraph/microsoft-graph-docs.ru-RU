@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2e3a1c26b134d30d76e62d314ac67e6fbe7992517da7e8975e0be28bec3fcb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb5dc9a6d759e6f8a72097777b87d80a5dd33f5c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172892"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799791"
 ---
 # <a name="enrollmentprofile-resource-type"></a>тип ресурса enrollmentProfile
 
@@ -37,12 +37,12 @@ ms.locfileid: "54172892"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |displayName|Строка|Имя профиля|
-|description|String|Описание профиля|
-|requiresUserAuthentication|Логический|Указывает, требует ли профиль проверки подлинности пользователя|
+|description|Строка|Описание профиля|
+|requiresUserAuthentication|Boolean|Указывает, требует ли профиль проверки подлинности пользователя|
 |configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для регистрации|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал.|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал.|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Логический|Указывает, что Корпоративный портал требуется на устройствах, зарегистрированных помощником установки|
 
 ## <a name="relationships"></a>Связи
@@ -68,7 +68,6 @@ ms.locfileid: "54172892"
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

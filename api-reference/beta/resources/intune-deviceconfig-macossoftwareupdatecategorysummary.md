@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee34d404b1322e23c336d4f60e3d31420d1d64f38d9dbb087ecef425fbebb965
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17f9c532d3f5297bdf239324fd637b18ac1b7138
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164344"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790908"
 ---
 # <a name="macossoftwareupdatecategorysummary-resource-type"></a>тип ресурса macOSSoftwareUpdateCategorySummary
 
@@ -71,7 +71,6 @@ ms.locfileid: "54164344"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

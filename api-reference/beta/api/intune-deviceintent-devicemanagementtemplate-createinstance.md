@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94ed9044034fb581d1b057c9741ce2a0aa25550d9e583b1306e14f4ca93d80da
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c1b997fa18512757c0cfbaee1d5bf4cc2fd52c03
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157300"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784627"
 ---
 # <a name="createinstance-action"></a>Действие createInstance
 
@@ -29,7 +29,7 @@ ms.locfileid: "54157300"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Н/Д|
-|description|String|Пока не задокументировано.|
+|description|Строка|Пока не задокументировано.|
 |settingsDelta|[коллекция deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Пока не задокументировано.|
 |roleScopeTagIds|Коллекция строк|Н/Д|
 
@@ -113,7 +113,6 @@ Content-Length: 418
   }
 }
 ```
-
 
 
 

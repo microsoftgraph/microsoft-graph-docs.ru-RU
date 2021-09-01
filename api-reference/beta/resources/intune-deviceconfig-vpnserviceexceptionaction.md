@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: baf1fa3bf6edcb3358c8ae56d2572365702c41273a04bd578c2c98af5e68d0ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 851292848633b17600228869e305b4504223dc96
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139602"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783948"
 ---
 # <a name="vpnserviceexceptionaction-enum-type"></a>тип enum vpnServiceExceptionAction
 
@@ -26,9 +26,8 @@ ms.locfileid: "54139602"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |forceTrafficViaVPN|0|Чтобы весь трафик из этой службы прошел через VPN|
-|allowTrafficOutside|1 |Разрешить службу за пределами VPN|
+|allowTrafficOutside|1|Разрешить службу за пределами VPN|
 |dropTraffic|2|Падение всего трафика из службы|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6803a04883d90d3550b98582522e74465251d96f803896d55e62afff5ad9f58a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e6e15d4720b9f29e9b548004127760a2ba3b0135
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173333"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799833"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>тип ресурса androidEnrollmentCompanyCode
 
@@ -25,7 +25,7 @@ ms.locfileid: "54173333"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enrollmentToken|String|Маркер регистрации, используемый пользователем для регистрации устройства.|
+|enrollmentToken|Строка|Маркер регистрации, используемый пользователем для регистрации устройства.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный код QR для маркера.|
 
@@ -51,7 +51,6 @@ ms.locfileid: "54173333"
   }
 }
 ```
-
 
 
 

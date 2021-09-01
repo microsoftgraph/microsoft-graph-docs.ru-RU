@@ -1,18 +1,18 @@
 ---
-title: действие getCompliancePolicyNonComplianceReport
+title: getRemoteAssistanceSessionsReport action
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e12d27728a6f9db5dd622657554a60bfbea6765
+ms.openlocfilehash: fe30d9b5d1bc2f1d4e5c7aa86d03fb5154425f50
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785446"
+ms.locfileid: "58797785"
 ---
-# <a name="getcompliancepolicynoncompliancereport-action"></a>действие getCompliancePolicyNonComplianceReport
+# <a name="getremoteassistancesessionsreport-action"></a>getRemoteAssistanceSessionsReport action
 
 Пространство имен: microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "58785446"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58785446"
 }
 -->
 ``` http
-POST /deviceManagement/reports/getCompliancePolicyNonComplianceReport
+POST /deviceManagement/reports/getRemoteAssistanceSessionsReport
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -73,7 +73,7 @@ POST /deviceManagement/reports/getCompliancePolicyNonComplianceReport
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/reports/getCompliancePolicyNonComplianceReport
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceSessionsReport
 
 Content-type: application/json
 Content-length: 278
@@ -102,10 +102,10 @@ Content-length: 278
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 111
+Content-Length: 103
 
 {
-  "value": "Z2V0Q29tcGxpYW5jZVBvbGljeU5vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgMTA0ODU4MDU5OQ=="
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZVNlc3Npb25zUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0xNzcyMDEwMDQ1"
 }
 ```
 

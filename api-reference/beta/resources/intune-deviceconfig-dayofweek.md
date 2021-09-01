@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ead1692bb05f9808bd9033f7c56c587770407ece704d9871ef1ffe0e2e0b3975
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3cd62d82c401eef7eb50dc2385f72a0a0eb8d9b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248924"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802525"
 ---
 # <a name="dayofweek-enum-type"></a>тип enum dayOfWeek
 
@@ -26,13 +26,12 @@ ms.locfileid: "54248924"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |воскресенье|0|Воскресенье.|
-|понедельник|1 |В понедельник.|
+|понедельник|1|В понедельник.|
 |вторник|2|Во вторник.|
-|среда|3 |Среда.|
+|среда|3|Среда.|
 |четверг|4 |В четверг.|
 |пятница|5 |В пятницу.|
 |суббота|6 |В субботу.|
-
 
 
 

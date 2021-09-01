@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22ed53ee0ebd63d9a49da4a37fdbfd05487f0c0be7f33fb3b057da82214e77b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fe90734826416aca89065c47568ce9e68d085753
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161257"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794408"
 ---
 # <a name="userexperienceanalyticsimpactingprocess-resource-type"></a>тип ресурса userExperienceAnalyticsImpactingProcess
 
@@ -34,11 +34,11 @@ ms.locfileid: "54161257"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта аналитики пользовательского интерфейса, который оказывает влияние на процесс.|
+|id|Строка|Уникальный идентификатор объекта аналитики пользовательского интерфейса, который оказывает влияние на процесс.|
 |deviceId|String|Уникальный идентификатор влияемого устройства.|
 |category|String|Категория воздействия процесса.|
 |processName|Строка|Имя процесса.|
-|description|String|Описание процесса.|
+|description|Строка|Описание процесса.|
 |publisher|String|Издатель процесса.|
 |impactValue|Двойное с плавающей точкой|Значение влияния процесса. Допустимые значения от 0 до 1.79769313486232E+308|
 
@@ -65,7 +65,6 @@ ms.locfileid: "54161257"
   "impactValue": "4.2"
 }
 ```
-
 
 
 

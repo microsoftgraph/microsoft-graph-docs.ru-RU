@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b397840142face36af52b501a56d15f81b37fc6d54d720081dbf3474724b838
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc20c8f23a05a872f7dcd3ebf00d8e496bf31b24
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239884"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807309"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>тип ресурса bitLockerRecoveryOptions
 
@@ -55,7 +55,6 @@ ms.locfileid: "54239884"
   "enableBitLockerAfterRecoveryInformationToStore": true
 }
 ```
-
 
 
 

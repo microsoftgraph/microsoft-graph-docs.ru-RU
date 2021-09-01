@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e157ecf4ecc6593e7c88ee60f2b6284e1e8376cde8f8f9ce2ba0cd92b07d681
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c153ce5f0efde38f92684c688019e531d8c0a2b4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219740"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783178"
 ---
 # <a name="roledefinition-resource-type"></a>Тип ресурса roleDefinition
 
@@ -34,8 +34,8 @@ ms.locfileid: "54219740"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображаемое имя определения роли.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|Строка|Отображаемое имя определения роли.|
 |description|Строка|Описание определения роли.|
 |permissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |rolePermissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
@@ -107,7 +107,6 @@ ms.locfileid: "54219740"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17a32097dcbc7f678823cb3fdb076166bf1f5353aa581bfa69f7de16565b0726
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8ef128d422e27ff747fda91eea6ee3ef046e963
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181057"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805684"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicystatuses-enum-type"></a>тип enum windowsDefenderApplicationControlSupplementalPolicyStatuses
 
@@ -26,11 +26,10 @@ ms.locfileid: "54181057"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние дополнительной политики WindowsDefenderApplicationControl неизвестно.|
-|success|1 |Действует дополнительная политика WindowsDefenderApplicationControl.|
+|success|1|Действует дополнительная политика WindowsDefenderApplicationControl.|
 |tokenError|2|Дополнительная политика WindowsDefenderApplicationControl является структурно нормальной, но при авторизации маркера существует ошибка.|
-|notAuthorizedByToken|3 |Маркер не разрешает эту дополнительную политику WindowsDefenderApplicationControl.|
+|notAuthorizedByToken|3|Маркер не разрешает эту дополнительную политику WindowsDefenderApplicationControl.|
 |policyNotFound|4 |Дополнительная политика WindowsDefenderApplicationControl не найдена.|
-
 
 
 

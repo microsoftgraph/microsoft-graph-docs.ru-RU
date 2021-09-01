@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45051f7526ba6d7740144e42001db28eb0443c877c4363479dcdd1a476de8bd4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ac91ac42018c5fc687a0b89d7496c1fdc15c97d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153337"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783598"
 ---
 # <a name="excludedapps-resource-type"></a>тип ресурса excludedApps
 
@@ -30,16 +30,16 @@ ms.locfileid: "54153337"
 |Excel|Логический|Значение, если ms Office Excel следует исключить или нет.|
 |groove|Логический|Значение, если ms Office OneDrive для бизнеса - Groove, должно быть исключено или нет.|
 |infoPath|Логический|Значение, если ms Office InfoPath, должно быть исключено или нет.|
-|lync|Логический|Значение для если ms Office Skype для бизнеса - Lync следует исключить или нет.|
-|oneDrive|Логический|Значение для того, следует Office OneDrive ms или нет.|
+|lync|Boolean|Значение для если ms Office Skype для бизнеса - Lync следует исключить или нет.|
+|oneDrive|Boolean|Значение для того, следует Office OneDrive ms или нет.|
 |oneNote|Логический|Значение для того, следует Office OneNote ms или нет.|
-|outlook|Логический|Значение для того, следует Office Outlook ms или нет.|
+|outlook|Boolean|Значение для того, следует Office Outlook ms или нет.|
 |powerPoint|Логический|Значение для того, следует Office PowerPoint ms или нет.|
-|publisher|Логический|Значение, если ms Office Publisher следует исключить или нет.|
+|publisher|Boolean|Значение, если ms Office Publisher следует исключить или нет.|
 |sharePointDesigner|Логический|Значение, если ms Office SharePointDesigner, должно быть исключено или нет.|
-|teams|Логический|Значение, если ms Office Teams следует исключить или нет.|
+|teams|Boolean|Значение, если ms Office Teams следует исключить или нет.|
 |visio|Логический|Значение, если ms Office Visio, должно быть исключено или нет.|
-|слово|Логический|Значение, если ms Office Word, должно быть исключено или нет.|
+|слово|Boolean|Значение, если ms Office Word, должно быть исключено или нет.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -71,7 +71,6 @@ ms.locfileid: "54153337"
   "word": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70e0e31ea7451952800830aa7ef259a19592cd0a12d5919a8df85340904ee53a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b232a2848a66dfc242f83da39667e9b891f852f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172976"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784480"
 ---
 # <a name="cloudpcconnectivityissue-resource-type"></a>тип ресурса cloudPCConnectivityIssue
 
@@ -34,13 +34,13 @@ ms.locfileid: "54172976"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
 |deviceId|String|Устройство Intune устройства, с которое связано подключение.|
 |errorCode|String|Код ошибки проблемы подключения.|
 |errorDateTime|DateTimeOffset|Время начала подключения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC).|
 |userId|String|Уникальный id пользователя, который инициализирует подключение.|
 |errorDescription|String|Подробное описание того, что пошло не так.|
-|recommendedAction|Строка|Рекомендуемое действие для устранения соответствующей ошибки.|
+|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -65,7 +65,6 @@ ms.locfileid: "54172976"
   "recommendedAction": "String"
 }
 ```
-
 
 
 

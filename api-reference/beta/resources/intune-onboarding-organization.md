@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3efa96c0223aba1aba5cc1377074c490647358c65f315dd382fdfdc338fc67f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8fed9594b0f9b34e3ddc48935335ab249f7539b5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172808"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805705"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -33,7 +33,7 @@ ms.locfileid: "54172808"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта.|
+|id|Строка|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединиттеля сертификата.|
 
@@ -64,7 +64,6 @@ ms.locfileid: "54172808"
   }
 }
 ```
-
 
 
 

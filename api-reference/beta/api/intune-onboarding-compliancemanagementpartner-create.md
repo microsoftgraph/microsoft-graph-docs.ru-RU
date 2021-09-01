@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d69f52c8b40158851cb239f327d93cf66e563d64b6d3b2cb9b72076e401f5b96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c5a684ca15daf70808d48ed4a57d4614abdb282
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54194023"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799565"
 ---
 # <a name="create-compliancemanagementpartner"></a>Создание complianceManagementPartner
 
@@ -29,7 +29,7 @@ ms.locfileid: "54194023"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/complianceManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,13 @@ POST /deviceManagement/complianceManagementPartners
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id объекта|
+|id|Строка|Id объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Строка|Отображаемое имя партнера|
-|macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
+|macOsOnboarded|Boolean|Партнер, на борту для устройств Mac.|
 |WindowsOnboarded|Логический|Партнер, на борту Windows устройств.|
-|AndroidOnboarded|Логический|Партнер, на борту для android-устройств.|
+|AndroidOnboarded|Boolean|Партнер, на борту для android-устройств.|
 |iosOnboarded|Логический|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |windowsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые Windows устройства через партнера.|
@@ -199,7 +199,6 @@ Content-Length: 2265
   ]
 }
 ```
-
 
 
 

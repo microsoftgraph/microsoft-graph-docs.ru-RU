@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8907515bacdf558d392d847fedee2b59eec551976c04bd1be71821537787c2f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 88d69e52049eb1dd90eeb6657e3403369ff4a14f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139237"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806014"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>тип ресурса deviceAndAppManagementAssignedRoleDetails
 
@@ -25,8 +25,8 @@ ms.locfileid: "54139237"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleDefinitionIds|Коллекция String|Определения ролей для specifc Role Definitions, назначенного пользователю.|
-|roleAssignmentIds|Коллекция String|ID-данные назначения ролей для specifc Role Assignments, назначенного пользователю.|
+|roleDefinitionIds|Коллекция String|Определения ролей для specifc Role Definitions, назначенного пользователю. Это свойство доступно только для чтения.|
+|roleAssignmentIds|Коллекция String|ID-данные назначения ролей для specifc Role Assignments, назначенного пользователю. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -49,7 +49,6 @@ ms.locfileid: "54139237"
   ]
 }
 ```
-
 
 
 
