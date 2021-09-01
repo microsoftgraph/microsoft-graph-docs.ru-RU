@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fdfc530c8379de1b9426680e23567481ddf60e639905a9ee350e8ed153798002
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 79372c0adf5189f28a1cc93dbd40117e6ebe46cb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236488"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795258"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>тип enum androidForWorkCrossProfileDataSharingType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54236488"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение устройства по умолчанию, без намерения.|
-|preventAny|1 |Предотвращение любого общего доступа.|
+|preventAny|1|Предотвращение любого общего доступа.|
 |allowPersonalToWork|2|Разрешить запрос на обмен данными из личного профиля в рабочий профиль.|
-|noRestrictions|3 |Нет ограничений для общего доступа.|
-
+|noRestrictions|3|Нет ограничений для общего доступа.|
 
 
 

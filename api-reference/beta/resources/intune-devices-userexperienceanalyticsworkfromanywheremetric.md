@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 507b6766c8da2b2c332553faea8afc0f5d7434adb535619e04c30264e78fa6cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e685382812cbe81c35c18f7baf8f6e1ce5efceb4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122469"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795180"
 ---
 # <a name="userexperienceanalyticsworkfromanywheremetric-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -55,7 +55,6 @@ ms.locfileid: "54122469"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

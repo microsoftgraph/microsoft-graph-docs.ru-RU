@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8bf20224470da6d1040befc03ff5eb2ead3db0a0c96a4071ebea34111f922966
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7b6bc0cb68b28d154d7674246dd305e451623239
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248392"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821103"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>тип enum managedAppClipboardSharingLevel
 
@@ -26,10 +26,9 @@ ms.locfileid: "54248392"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allApps|0|Разрешено совместное использование между всеми приложениями, управляемыми или не управляемыми|
-|managedAppsWithPasteIn|1 |Разрешен общий доступ между всеми управляемыми приложениями с включенной вклейки|
+|managedAppsWithPasteIn|1|Разрешен общий доступ между всеми управляемыми приложениями с включенной вклейки|
 |managedApps|2|Разрешен общий доступ между всеми управляемыми приложениями|
-|заблокировано|3 |Совместное использование между приложениями отключено|
-
+|заблокировано|3|Совместное использование между приложениями отключено|
 
 
 

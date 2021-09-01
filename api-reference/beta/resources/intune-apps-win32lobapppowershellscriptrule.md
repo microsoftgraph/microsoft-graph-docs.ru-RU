@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac477071846a8a787599915b5261577b2daeda95c0962fb58e4e9f66ffdfe501
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c9239349a92a307a9047318ad9aa109d41a3cf57
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131229"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789977"
 ---
 # <a name="win32lobapppowershellscriptrule-resource-type"></a>тип ресурса win32LobAppPowerShellScriptRule
 
@@ -33,7 +33,7 @@ ms.locfileid: "54131229"
 |enforceSignatureCheck|Логический|Значение, указывающее, выполняется ли проверка подписи.|
 |runAs32Bit|Логический|Значение, указывающее, должен ли скрипт работать как 32-битный.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Контекст выполнения сценария. Не укажите это значение, если правило используется для обнаружения. Правила обнаружения скриптов будут работать в том же контексте, что и контекст установки связанного приложения. Возможные значения: `system`, `user`.|
-|scriptContent|String|Содержимое скрипта с кодом base64.|
+|scriptContent|Строка|Содержимое скрипта с кодом base64.|
 |operationType|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|Тип операции сравнения вывода скрипта. Используйте NotConfigured (значение по умолчанию), если правило используется для обнаружения. Возможные значения: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор вывода скрипта. Используйте NotConfigured (значение по умолчанию), если правило используется для обнаружения. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|Строка|Значение сравнения вывода скрипта. Не укажите значение, если правило используется для обнаружения.|
@@ -62,7 +62,6 @@ ms.locfileid: "54131229"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93ff15f1daff9423c7cae677c24767898eb9900d6ff8c92a56c7171a7ba2723a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a40d788a632ab9d746dba774388e9ab9df4323d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227689"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820550"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>тип ресурса iosVppAppAssignedLicense
 
@@ -35,7 +35,7 @@ ms.locfileid: "54227689"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|userEmailAddress|Строка|Адрес электронной почты пользователя.|
+|userEmailAddress|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|String|Имя участника-пользователя.|
@@ -61,7 +61,6 @@ ms.locfileid: "54227689"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

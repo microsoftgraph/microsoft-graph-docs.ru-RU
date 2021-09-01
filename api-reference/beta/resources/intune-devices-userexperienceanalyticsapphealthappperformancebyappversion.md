@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 687af3800acd2cc55db7f559cce457447c5ed1b7
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ccb78ad49628bb58dc19f623d7e63642e5836233
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256075"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788460"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversion-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -34,7 +34,7 @@ ms.locfileid: "58256075"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |appVersion|Строка|Версия приложения.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
@@ -67,7 +67,6 @@ ms.locfileid: "58256075"
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c12fd9bca34a75fcac447517682186d3b8bc2c54dade7ba938154f9d4f75cb76
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8eed8a9d458f9640a2580571ba59dea9b08a78e6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215099"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821124"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>тип ресурса appLogCollectionDownloadDetails
 
@@ -25,8 +25,8 @@ ms.locfileid: "54215099"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|downloadUrl|Строка|Скачайте URL-адрес SAS для завершения AppLogUploadRequest|
-|decryptionKey|Строка|РасшифровкаKey как строка|
+|downloadUrl|String|Скачайте URL-адрес SAS для завершения AppLogUploadRequest|
+|decryptionKey|String|РасшифровкаKey как строка|
 |appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|РасшифровкаAlgorithm для контента. Возможные значения: `aes256` .|
 
 ## <a name="relationships"></a>Связи
@@ -47,7 +47,6 @@ ms.locfileid: "54215099"
   "appLogDecryptionAlgorithm": "String"
 }
 ```
-
 
 
 

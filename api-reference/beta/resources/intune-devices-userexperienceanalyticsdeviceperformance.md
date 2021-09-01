@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 763e123689a0ea7149f164dd8a79341664bb20a3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 1cef96408d71093d530f122ff67e9353e91339e5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264824"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818065"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsDevicePerformance
 
@@ -55,6 +55,7 @@ ms.locfileid: "58264824"
 |averageBlueScreens|Двойное с плавающей точкой|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
 |averageRestarts|Двойное с плавающей точкой|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
 |startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelStartupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -89,10 +90,10 @@ ms.locfileid: "58264824"
   "restartCount": 1024,
   "averageBlueScreens": "4.2",
   "averageRestarts": "4.2",
-  "startupPerformanceScore": "4.2"
+  "startupPerformanceScore": "4.2",
+  "modelStartupPerformanceScore": "4.2"
 }
 ```
-
 
 
 

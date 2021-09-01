@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb0864749fd04fe6ba9979dd31e0a0adaf15854b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 367739eb54144b29fc0d109174f2d89108418d0b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256018"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58769483"
 ---
 # <a name="managementconditionstatement-resource-type"></a>тип ресурса managementConditionStatement
 
@@ -37,7 +37,7 @@ ms.locfileid: "58256018"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для утверждения условий управления. Созданное в системе значение, назначенное при его создания.|
-|displayName|String|Администратор определил имя заявления об условиях управления.|
+|displayName|Строка|Администратор определил имя заявления об условиях управления.|
 |description|Строка|Администратор определил описание инструкции по состоянию управления.|
 |createdDateTime|DateTimeOffset|Время создания заявления об условиях управления. Сгенерированная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния управления. Обновленная сторона службы.|
@@ -77,7 +77,6 @@ ms.locfileid: "58256018"
   ]
 }
 ```
-
 
 
 

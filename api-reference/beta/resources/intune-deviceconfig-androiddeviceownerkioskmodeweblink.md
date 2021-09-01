@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93e045762474c98204e022b7ea3329ee344e16c95986415a6e6410737c82c6a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef7974e316ce78db63f999aa63c87a230b4456cd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236495"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820501"
 ---
 # <a name="androiddeviceownerkioskmodeweblink-resource-type"></a>тип ресурса androidDeviceOwnerKioskModeWeblink
 
@@ -29,7 +29,7 @@ ms.locfileid: "54236495"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |подпись|String|Отображение имени веб-ссылки|
-|link|Строка|Ссылка для веб-ссылки|
+|link|String|Ссылка для веб-ссылки|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -48,7 +48,6 @@ ms.locfileid: "54236495"
   "link": "String"
 }
 ```
-
 
 
 
