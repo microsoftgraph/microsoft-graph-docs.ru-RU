@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28ca971dbfa41c9237ed9f6ff33579d5e9f4eeb5f2b32dbf0ffd3b0eca191424
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0794e5ceadb46bf46bec11d96304c3f5c368766b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156207"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817091"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>тип ресурса deviceManagementSettingComparison
 
@@ -26,8 +26,8 @@ ms.locfileid: "54156207"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Параметр ID|
-|displayName|Строка|Имя отображения параметра|
-|definitionId|Строка|ID определения параметра для этого экземпляра|
+|displayName|String|Имя отображения параметра|
+|definitionId|String|ID определения параметра для этого экземпляра|
 |currentValueJson|String|Представление JSON значения текущего параметра шаблона намерения (или)|
 |newValueJson|String|Представление JSON значения нового параметра шаблона|
 |comparisonResult|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|Настройка результата сравнения. Возможные значения: `unknown`, `equal`, `notEqual`, `added`, `removed`.|
@@ -53,7 +53,6 @@ ms.locfileid: "54156207"
   "comparisonResult": "String"
 }
 ```
-
 
 
 

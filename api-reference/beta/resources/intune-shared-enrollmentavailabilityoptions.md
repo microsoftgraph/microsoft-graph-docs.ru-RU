@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9412dc838190c01c0d336c810ab96f4af74e0aac9a011d979188923749a59db5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59be26e8dc76048a9c8e71c47eff834df9805155
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206132"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787794"
 ---
 # <a name="enrollmentavailabilityoptions-enum-type"></a>тип enum enrollmentAvailabilityOptions
 
@@ -26,9 +26,8 @@ ms.locfileid: "54206132"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |availableWithPrompts|0|Поток регистрации устройств показан конечному пользователю с управляемыми запросами на регистрацию|
-|availableWithoutPrompts|1 |Поток регистрации устройств доступен конечному пользователю без управляемых подсказок регистрации|
+|availableWithoutPrompts|1|Поток регистрации устройств доступен конечному пользователю без управляемых подсказок регистрации|
 |недоступно|2|Поток регистрации устройств недоступен для enduser|
-
 
 
 

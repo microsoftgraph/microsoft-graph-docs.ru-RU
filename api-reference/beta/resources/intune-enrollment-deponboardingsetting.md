@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac9e8c7909d817544141a8a409d434c31d229ded5392376f51266b0532e221ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff9302af392e260dce9e24a54aba386687928d31
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251248"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801082"
 ---
 # <a name="deponboardingsetting-resource-type"></a>тип ресурса depOnboardingSetting
 
@@ -30,7 +30,7 @@ DepOnboardingSetting представляет экземпляр службы De
 |[Создание depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Создайте [новый объект depOnboardingSetting.](../resources/intune-enrollment-deponboardingsetting.md)|
 |[Удаление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Нет|Удаляет [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Обновление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Обновление свойств объекта [depOnboardingSetting.](../resources/intune-enrollment-deponboardingsetting.md)|
-|[функция getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Получите общедоступный ключ для шифрования маркера программы регистрации устройств Apple|
+|[функция getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|Строка|Получите общедоступный ключ для шифрования маркера программы регистрации устройств Apple|
 |[generateEncryptionPublicKey action](../api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md)|Строка|Создание общедоступных ключей для шифрования маркера программы регистрации устройств Apple|
 |[Действие uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Нет|Загрузка нового маркера программы регистрации устройств|
 |[Действие syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Нет|Синхронизация между программой регистрации устройств Apple и Intune|
@@ -50,7 +50,7 @@ DepOnboardingSetting представляет экземпляр службы De
 |shareTokenWithSchoolDataSyncService|Логический|Включено ли совместное использование маркеров Dep с Синхронизация сведений о школе службой.|
 |lastSyncErrorCode|Int32|Код ошибки, сообщаемой Apple во время последней синхронизации dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип маркера Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String|Friendly Name for Dep Token|
+|tokenName|Строка|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Получает синхронизированное количество устройств|
 |dataSharingConsentGranted|Логический|Согласие, предоставленное для обмена данными с службой Apple Dep|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
@@ -91,7 +91,6 @@ DepOnboardingSetting представляет экземпляр службы De
   ]
 }
 ```
-
 
 
 

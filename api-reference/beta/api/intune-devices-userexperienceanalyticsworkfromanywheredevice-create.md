@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0031a5596d660bab7a10aca9f47d3172a0f4b23
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: daa0b1dfbf27ebe852638c5e599ac5d9215bb4ea
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263263"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817231"
 ---
 # <a name="create-userexperienceanalyticsworkfromanywheredevice"></a>Создание userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "58263263"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,12 +59,12 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 |manufacturer|String|Пользовательский интерфейс работает с любого производителя устройства.|
 |model|String|Пользовательский интерфейс работает из любой модели устройства.|
 |владение|String|Пользовательский интерфейс работает с любого владельца устройства.|
-|managedBy|Строка|Пользовательский интерфейс работает из любого агента управления устройства.|
-|autoPilotRegistered|Логический|Пользовательский интерфейс работает с автопилотом устройства intune.|
+|managedBy|String|Пользовательский интерфейс работает из любого агента управления устройства.|
+|autoPilotRegistered|Boolean|Пользовательский интерфейс работает с автопилотом устройства intune.|
 |autoPilotProfileAssigned|Логический|Аналитика пользовательских интерфейсов работает из любого автопилота устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Пользовательский интерфейс работает с azureAdRegistered любого устройства.|
-|azureAdDeviceId|Строка|Пользовательский интерфейс работает из любого id-устройства Azure Ad.|
-|azureAdJoinType|Строка|Пользовательский опыт работы из любого устройства azure Ad joinType.|
+|azureAdDeviceId|String|Пользовательский интерфейс работает из любого id-устройства Azure Ad.|
+|azureAdJoinType|String|Пользовательский опыт работы из любого устройства azure Ad joinType.|
 |osDescription|String|Пользовательский интерфейс работает из любого описания ОС устройства.|
 |osVersion|String|Пользовательский интерфейс работает из любой версии ОС устройства.|
 |tenantAttached|Логический|Пользовательский интерфейс работает с любого клиента устройстваAttached.|
@@ -74,12 +74,17 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 |ramCheckFailed|Логический|Является ли работа аналитики пользовательского интерфейса из любой точки проверки оборудования оперативной памяти устройства неудачной для устройства для обновления до последней версии windows|
 |storageCheckFailed|Логический|Пользовательский опыт работы с любого устройства, Является ли проверка оборудования хранения не удалось для устройства для обновления до последней версии windows.|
 |processorCoreCountCheckFailed|Логический|Работа пользовательского интерфейса с любого устройства— проверка подсчета ядра процессора не удалось для устройства, чтобы обновиться до последней версии windows.|
-|processorSpeedCheckFailed|Логический|Пользовательский опыт работы с любого устройства, Является ли проверка скорости оборудования процессора не удалось для устройства для обновления до последней версии windows.|
+|processorSpeedCheckFailed|Boolean|Пользовательский опыт работы с любого устройства, Является ли проверка скорости оборудования процессора не удалось для устройства для обновления до последней версии windows.|
 |tpmCheckFailed|Логический|Работа пользовательского интерфейса с любого устройства — это проверка аппаратного модуля доверенных платформ (TPM) для устройства до последней версии обновления до windows.|
 |secureBootCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является безопасной проверки оборудования загрузки не удалось для устройства для обновления до последней версии windows.|
 |processorFamilyCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является проверка семейства оборудования процессора не удалось для устройства для обновления до последней версии windows.|
 |processor64BitCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка архитектуры процессорного оборудования 64-битной не удалось для устройства, чтобы обновить до последней версии windows.|
 |osCheckFailed|Логический|Пользовательский опыт работы с любого устройства, является ли проверка ОС не удалось для устройства для обновления до последней версии windows.|
+|WindowsScore|Двойное с плавающей точкой|Пользовательский интерфейс работает из любой точки на счет windows устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|cloudManagementScore|Двойное с плавающей точкой|Пользовательский интерфейс работает из любой точки за оценку облачного управления устройствами. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|cloudIdentityScore|Двойное с плавающей точкой|Пользовательский опыт работы из любой точки за счет облачного удостоверения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|cloudProvisioningScore|Двойное с плавающей точкой|Пользовательский интерфейс работает из любой точки на счет облачного обеспечения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Пользовательский интерфейс работает из любой точки на состояние здоровья устройства. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -93,7 +98,7 @@ POST /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExper
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices
 Content-type: application/json
-Content-length: 1028
+Content-length: 1215
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -122,7 +127,12 @@ Content-length: 1028
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -131,7 +141,7 @@ Content-length: 1028
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1077
+Content-Length: 1264
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -161,10 +171,14 @@ Content-Length: 1077
   "secureBootCheckFailed": true,
   "processorFamilyCheckFailed": true,
   "processor64BitCheckFailed": true,
-  "osCheckFailed": true
+  "osCheckFailed": true,
+  "windowsScore": 4.0,
+  "cloudManagementScore": 6.666666666666667,
+  "cloudIdentityScore": 6.0,
+  "cloudProvisioningScore": 7.333333333333333,
+  "healthStatus": "insufficientData"
 }
 ```
-
 
 
 

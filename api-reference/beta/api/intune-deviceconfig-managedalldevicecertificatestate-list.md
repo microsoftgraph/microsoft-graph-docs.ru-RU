@@ -2,15 +2,15 @@
 title: Список managedAllDeviceCertificateStates
 description: Список свойств и связей объектов managedAllDeviceCertificateState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5791cdac26ca65272d0de35e3e865456ee5959f2152cb09e2a0154550213756a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa60510e5dd73af4482a969e64cb07153c610e05
+ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134093"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58850195"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>Список managedAllDeviceCertificateStates
 
@@ -29,7 +29,7 @@ ms.locfileid: "54134093"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -88,7 +88,6 @@ Content-Length: 958
   ]
 }
 ```
-
 
 
 

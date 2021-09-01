@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a5d43040b2c76a03ab4a04fc55dfc77a00085676e1cccd56eb044616962f5ff8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 312e7444fd6e02c84f56e21e8255c0981f50401b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231028"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58808869"
 ---
 # <a name="devicecompliancescriptruloperator-enum-type"></a>тип enum deviceComplianceScriptRulOperator
 
@@ -26,9 +26,9 @@ ms.locfileid: "54231028"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Нет оператора.|
-|и|1 |И оператор.|
+|и|1|И оператор.|
 |или|2|Или оператор.|
-|isEquals|3 |Оператор IsEquals.|
+|isEquals|3|Оператор IsEquals.|
 |notEquals|4 |Оператор NotEquals.|
 |greaterThan|5 |Оператор GreaterThan.|
 |lessThan|6 |Оператор LessThan.|
@@ -38,7 +38,7 @@ ms.locfileid: "54231028"
 |lessEquals|10 |Оператор LessEquals.|
 |dayTimeBetween|11 |Оператор DayTimeBetween.|
 |beginsWith|12 |BeginsWith operator.|
-|notBeginsWith|13 |Оператор NotBeginsWith.|
+|notBeginsWith|13|Оператор NotBeginsWith.|
 |endsWith|14 |Оператор EndsWith.|
 |notEndsWith|15 |Оператор NotEndsWith.|
 |contains|16 |Содержит оператора.|
@@ -50,7 +50,6 @@ ms.locfileid: "54231028"
 |orderedSetEquals|22|Оператор OrderedSetEquals.|
 |subsetOf|23|Оператор SubsetOf.|
 |excludesAll|24|ExcludesAll operator.|
-
 
 
 

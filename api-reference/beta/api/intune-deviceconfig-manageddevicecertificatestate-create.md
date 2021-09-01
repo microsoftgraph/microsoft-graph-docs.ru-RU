@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41f075ccd1da4a9c081b29f260c2985cefc5a624
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 782efd30ca4f1f6836bdbe6a3ea07fcc10c636a0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263074"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821040"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Создание managedDeviceCertificateState
 
@@ -29,7 +29,7 @@ ms.locfileid: "58263074"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -90,13 +90,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Изменение состояния последнего сертификата|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Изменение состояния последнего сертификата|
 |certificateIssuer|String|Издатель|
-|certificateThumbprint|Строка|Thumbprint|
-|certificateSerialNumber|Строка|Серийный номер|
+|certificateThumbprint|String|Thumbprint|
+|certificateSerialNumber|String|Серийный номер|
 |certificateKeyLength|Int32|Длина ключа|
-|certificateEnhancedKeyUsage|Строка|Расширенное использование ключа|
+|certificateEnhancedKeyUsage|String|Расширенное использование ключа|
 |certificateValidityPeriod|Int32|Срок действия|
 |certificateSubjectNameFormatString|String|Строка формата subject name для пользовательских форматов имен субъекта|
-|certificateSubjectAlternativeNameFormatString|Строка|Строка альтернативного формата имен для настраиваемого формата|
+|certificateSubjectAlternativeNameFormatString|String|Строка альтернативного формата имен для настраиваемого формата|
 |certificateIssuanceDateTime|DateTimeOffset|Дата выпуска|
 |certificateErrorCode|Int32|Код ошибки|
 
@@ -179,7 +179,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
 
 
 

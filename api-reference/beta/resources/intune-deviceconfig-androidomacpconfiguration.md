@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b40085218c50d850f1a47ccd1f810445d4e01747c36fc38c6d264a3d58655f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 21a8b5641f9c6d5efdcbdbc9bbb8358dea4675d5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239982"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792605"
 ---
 # <a name="androidomacpconfiguration-resource-type"></a>тип ресурса androidOmaCpConfiguration
 
@@ -46,7 +46,7 @@ ms.locfileid: "54239982"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |configurationXml|В двоичном формате|Конфигурация XML, которая будет применена к устройству. При считывании она предоставляет строку-задатку, так как исходные данные шифруются и хранятся.|
 
@@ -106,7 +106,6 @@ ms.locfileid: "54239982"
   "configurationXml": "binary"
 }
 ```
-
 
 
 

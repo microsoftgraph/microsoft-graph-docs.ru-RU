@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d4e0844b592f842a7a0f412a7ff77f7fbe8df4f319ec8ab91f537727661fa7d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 16204557d18024d40336b0f73a401141bf48c01a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242890"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791524"
 ---
 # <a name="macossoftwareupdatedelaypolicy-enum-type"></a>тип enum macOSSoftwareUpdateDelayPolicy
 
@@ -26,9 +26,10 @@ ms.locfileid: "54242890"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Задержки обновления программного обеспечения не будут применяться.|
-|delayOSUpdateVisibility|1 |Принудительное затягивание обновлений программного обеспечения ОС.|
+|delayOSUpdateVisibility|1|Принудительное затягивание обновлений программного обеспечения ОС.|
 |delayAppUpdateVisibility|2|Задержки усилий для обновлений программного обеспечения приложений.|
-
+|unknownFutureValue|4 |Член Sentinel для случаев, когда клиент не может обрабатывать новые значения в переуме.|
+|delayMajorOsUpdateVisibility|8 |Форс-мажорные задержки для основных обновлений программного обеспечения ОС.|
 
 
 

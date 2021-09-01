@@ -2,15 +2,15 @@
 title: Получить macOSEndpointProtectionConfiguration
 description: Чтение свойств и связей объекта macOSEndpointProtectionConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af2851ed8738a5c65d99a00f70e13ec994a44f4d985164a6303ff64887dd4082
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 35118ae90a168d73a57af5ee164042b9706aef7c
+ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54128029"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58850217"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>Получить macOSEndpointProtectionConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54128029"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -147,7 +147,6 @@ Content-Length: 3117
   }
 }
 ```
-
 
 
 

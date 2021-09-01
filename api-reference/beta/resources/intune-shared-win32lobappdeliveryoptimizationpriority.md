@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 02131e8a48ea813743cb79dc78cc10f8281a322a0c50350e18af9ffcbbe3e2db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52b75aef83379fe06eae3b019e903a6326a59c2b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160976"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786924"
 ---
 # <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a>тип enum win32LobAppDeliveryOptimizationPriority
 
@@ -26,8 +26,7 @@ ms.locfileid: "54160976"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроенный или фоновый приоритет оптимизации доставки.|
-|переднем плане|1 |Приоритет оптимизации доставки на переднем плане.|
-
+|переднем плане|1|Приоритет оптимизации доставки на переднем плане.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc55258ce11e3196126097b9442aeb53b43184a9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 074f8c3901f07b05652526e81a1006f01c83fd88
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262293"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819993"
 ---
 # <a name="update-datasharingconsent"></a>Обновление dataSharingConsent
 
@@ -27,9 +27,9 @@ ms.locfileid: "58262293"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,13 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID согласия для общего доступа к данным|
-|serviceDisplayName|Строка|Имя отображения потока работы службы|
-|termsUrl|Строка|TermsUrl для согласия на обмен данными|
+|id|String|ID согласия для общего доступа к данным|
+|serviceDisplayName|String|Имя отображения потока работы службы|
+|termsUrl|String|TermsUrl для согласия на обмен данными|
 |granted|Логический|Предоставлено состояние для согласия на обмен данными|
 |grantDateTime|DateTimeOffset|Для этой учетной записи было предоставлено согласие на время|
-|grantedByUpn|Строка|Upn пользователя, который предоставил согласие для этой учетной записи|
-|grantedByUserId|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUpn|String|Upn пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUserId|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

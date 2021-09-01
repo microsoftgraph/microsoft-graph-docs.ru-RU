@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d82a41997d6205c8ba527728b3b8d84517528710377e0ff79e0ffccc9b031900
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7817f095108c9b337d3c450150ffa7f5dc839921
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239184"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791097"
 ---
 # <a name="microsofttunnellogcollectionstatus-enum-type"></a>тип enum microsoftTunnelLogCollectionStatus
 
@@ -26,9 +26,8 @@ ms.locfileid: "54239184"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ожидание|0|Коллекция журналов находится в процессе выполнения|
-|завершено|1 |Коллекция журналов завершена|
+|завершено|1|Коллекция журналов завершена|
 |не удалось|2|Сбой коллекции журналов|
-
 
 
 

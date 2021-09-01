@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc73bb0fa9e2da4f4cad4427ab773e8af623460df615baa90646f318bc4ce92f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d5d8e0ccfdf23a16c4fa713cb75a30299bb4e269
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158084"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800340"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>тип ресурса windowsDefenderApplicationControlSupplementalPolicy
 
@@ -76,7 +76,6 @@ ms.locfileid: "54158084"
   ]
 }
 ```
-
 
 
 
