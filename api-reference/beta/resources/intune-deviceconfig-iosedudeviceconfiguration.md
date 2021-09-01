@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c647d4848c2542566035f96c57a64dee46039f7b179290815a32f0cfb7bdc93d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6ff803443834dd850cce91c3cdab64cc05050c6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153134"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804535"
 ---
 # <a name="iosedudeviceconfiguration-resource-type"></a>тип ресурса iosEduDeviceConfiguration
 
@@ -46,7 +46,7 @@ ms.locfileid: "54153134"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |teacherCertificateSettings|[iosEduCertificateSettings](../resources/intune-deviceconfig-ioseducertificatesettings.md);|Сертификаты Trusted Root и PFX для teacher|
 |studentCertificateSettings|[iosEduCertificateSettings](../resources/intune-deviceconfig-ioseducertificatesettings.md);|Сертификаты Trusted Root и PFX для студента|
@@ -140,7 +140,6 @@ ms.locfileid: "54153134"
   }
 }
 ```
-
 
 
 

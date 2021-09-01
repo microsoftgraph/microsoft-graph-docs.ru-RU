@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34dcbb381b9271222f52fdbf3b042d318e58e80fbf460075999397246c402027
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 969ffdb3905a0feb1a636a38daf8bcae95630b4c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236089"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807260"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>тип ресурса windowsManagementApp
 
@@ -33,7 +33,7 @@ Windows управления приложением.
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для приложения Windows управления|
-|availableVersion|String|Windows доступной версии приложения для управления.|
+|availableVersion|Строка|Windows доступной версии приложения для управления.|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Состояние управляемого установщика. Возможные значения: `disabled`, `enabled`.|
 |managedInstallerConfiguredDateTime|Строка|Настроено время даты управляемого установщика|
 
@@ -59,7 +59,6 @@ Windows управления приложением.
   "managedInstallerConfiguredDateTime": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b75c9ae8d755b74eb16049570382c123315e606fc26b00f3d9badb8f91c7f37
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce308e77d81ba13897fe6412316d1d46db63eadf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158498"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791244"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание intuneBrandingProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "54158498"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/intuneBrandingProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ профиля|
+|id|Строка|Ключ профиля|
 |имя профиля|Строка|Имя профиля|
 |profileDescription|Строка|Описание профиля|
 |isDefaultProfile|Логический|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
@@ -74,7 +74,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |onlineSupportSiteName|String|Отображение имени сайта it-справки компании/организации|
 |privacyUrl|String|URL-адрес политики конфиденциальности компании и организации|
 |customPrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
-|customCanSeePrivacyMessage|String|Текстовые комментарии относительно доступа администратора к устройству|
+|customCanSeePrivacyMessage|Строка|Текстовые комментарии относительно доступа администратора к устройству|
 |customCantSeePrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
 |isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
 |isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
@@ -229,7 +229,6 @@ Content-Length: 2147
   ]
 }
 ```
-
 
 
 

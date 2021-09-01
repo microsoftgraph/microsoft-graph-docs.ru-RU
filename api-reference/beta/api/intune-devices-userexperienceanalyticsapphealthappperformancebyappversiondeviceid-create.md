@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf3fc86212cc0c00f7152fee82ccc67912f2fe46
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: daeda1972a1f8980107d6bb2b83b3eb13abe8aaf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259384"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58780301"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>Создание userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -27,9 +27,9 @@ ms.locfileid: "58259384"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 |processedDateTime|DateTimeOffset|Дата и время последнего вычисления статистики.|
@@ -110,7 +110,6 @@ Content-Length: 488
   "appCrashCount": 13
 }
 ```
-
 
 
 

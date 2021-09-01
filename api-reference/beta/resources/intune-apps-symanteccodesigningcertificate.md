@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f38ad98215c83b37631c4ca2c842aecce5213fcea727f496256aaf0ac9c24aef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 817911afa2d18a0c0dc50a1f98afbbe412f7aba9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227640"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784004"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>тип ресурса symantecCodeSigningCertificate
 
@@ -31,14 +31,14 @@ ms.locfileid: "54227640"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |содержимое|В двоичном формате|Сертификат Windows Symantec Code-Signing в формате необработанных данных.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние Cert Provisioned или not Provisioned. Возможные значения: `notProvisioned`, `provisioned`.|
 |password|Строка|Пароль, необходимый для файла .pfx.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение Subject для сертификата.|
 |issuerName|Строка|Имя эмитента для сертификата.|
-|эмитент|Строка|Значение Issuer для сертификата.|
+|эмитент|String|Значение Issuer для сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Тип cert CodeSigning как Symantec Cert.|
 
@@ -68,7 +68,6 @@ ms.locfileid: "54227640"
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

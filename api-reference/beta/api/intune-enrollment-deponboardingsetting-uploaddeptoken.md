@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19d600860893b180f7638fc2c2566c45387664afe0b681b1e85713d2c1e62ecc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ebe053bef7325a9c761d773eb1c99a62ba5c99c0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148808"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803120"
 ---
 # <a name="uploaddeptoken-action"></a>Действие uploadDepToken
 
@@ -29,7 +29,7 @@ ms.locfileid: "54148808"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,7 +82,6 @@ Content-length: 69
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

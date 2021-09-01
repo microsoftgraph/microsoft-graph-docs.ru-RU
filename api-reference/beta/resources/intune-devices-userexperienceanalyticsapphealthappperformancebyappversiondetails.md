@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d47b63e775eb19419b696f921482001d08574046
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 50962e78755687535c1c696488de13dc19cdc489
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263666"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788453"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversiondetails-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -34,10 +34,10 @@ ms.locfileid: "58263666"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |deviceCountWithCrashes|Int32|Общее число устройств, которые сообщили об одном или нескольких сбоях приложения для этого приложения и версии. Допустимые значения 2147483648 2147483647|
 |isMostUsedVersion|Логический|Является ли версия приложения наиболее используемой версией для этого приложения.|
-|isLatestUsedVersion|Логический|Является ли версия приложения последней версией для используемого приложения.|
+|isLatestUsedVersion|Boolean|Является ли версия приложения последней версией для используемого приложения.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
 |appPublisher|Строка|Издатель приложения.|
@@ -69,7 +69,6 @@ ms.locfileid: "58263666"
   "appCrashCount": 1024
 }
 ```
-
 
 
 

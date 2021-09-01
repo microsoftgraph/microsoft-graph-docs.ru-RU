@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e507209c930bc3d010c76764fe923329387b76d3b83edfdb62fe041cc7aa973
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0863ab8b47e1a820a52c04f46fc7d4bcd737744e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161404"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782996"
 ---
 # <a name="mobileappsupersedencetype-enum-type"></a>тип enum mobileAppSupersedenceType
 
@@ -26,8 +26,7 @@ ms.locfileid: "54161404"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |обновление|0|Указывает, что детское приложение должно обновляться внутренней логикой родительского приложения.|
-|replace|1 |Указывает, что перед установкой родительского приложения необходимо отстраить детское приложение.|
-
+|replace|1|Указывает, что перед установкой родительского приложения необходимо отстраить детское приложение.|
 
 
 

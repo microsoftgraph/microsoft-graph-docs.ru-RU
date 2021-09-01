@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7bc41aeae74217c6236f2acfc805dedb5dee8b867af776dc037bc0c49965185d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 402e6a673a1bb4e811dad72c17159e8793dfbe74
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239093"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803442"
 ---
 # <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>тип enum deviceManagementScheduledReportRecurrence
 
@@ -26,10 +26,9 @@ ms.locfileid: "54239093"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Значение по умолчанию указывает одно событие|
-|ежедневно|1 |Ежедневное|
-|еженедельно|2|Еженедельное|
-|ежемесячно|3 |Ежемесячно|
-
+|ежедневно|1|Ежедневно|
+|еженедельно|2|Еженедельно|
+|ежемесячно|3|Ежемесячно|
 
 
 

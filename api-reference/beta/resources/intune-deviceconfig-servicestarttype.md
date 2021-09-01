@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2d5eb9aa96bc5c12af35dd6799eb5cddb104b0e96715226b6fbe219f7eb28616
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e18b6e00c664a78a665d21a994eeb5a186e2146
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176500"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791869"
 ---
 # <a name="servicestarttype-enum-type"></a>тип enum serviceStartType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54176500"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Вручную|0|Тип запуска ручной службы (по умолчанию)|
-|Автоматически|1 |Тип запуска автоматической службы|
+|Автоматически|1|Тип запуска автоматической службы|
 |отключено|2|Отключен тип запуска службы|
-
 
 
 

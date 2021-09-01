@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7c05c44c0e133c7247ef9b0d663ad2e6273fd178c04922083bfe8cc231bb938
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a7cf6905e76208a68c1a3e960acde8d77185da43
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154625"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793756"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Обновление iosVppAppAssignedLicense
 
@@ -29,7 +29,7 @@ ms.locfileid: "54154625"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userEmailAddress|Строка|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
@@ -98,7 +98,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

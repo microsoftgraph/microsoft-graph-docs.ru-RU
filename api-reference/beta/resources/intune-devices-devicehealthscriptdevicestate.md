@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e80f47a2daa68bffb8d90c536bf066ad0b1a303d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: dfdf8398f9551a68a450d053060959f92463779c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256082"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793826"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>тип ресурса deviceHealthScriptDeviceState
 
@@ -39,8 +39,8 @@ ms.locfileid: "58256082"
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения скрипта для здоровья устройств|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период, когда ожидается выполнение сценария состояния устройства|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|preRemediationDetectionScriptOutput|String|Выход сценария обнаружения перед исправлением|
-|preRemediationDetectionScriptError|String|Ошибка из сценария обнаружения перед исправлением|
+|preRemediationDetectionScriptOutput|Строка|Выход сценария обнаружения перед исправлением|
+|preRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения перед исправлением|
 |remediationScriptError|Строка|Выход ошибки сценария восстановления|
 |postRemediationDetectionScriptOutput|Строка|Вывод скрипта обнаружения после устранения|
 |postRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения после устранения|
@@ -79,7 +79,6 @@ ms.locfileid: "58256082"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8167b6cb20c49354de6fc0a803787d487d7407124904b7df0aee6f8a5137d3ea
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1cbed323f6414c6556fc09543d6eab0e0a6f86e1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235011"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783332"
 ---
 # <a name="getpolicysummary-function"></a>функция getPolicySummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54235011"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/configManagerCollections/getPolicySummary
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +86,6 @@ Content-Length: 276
   }
 }
 ```
-
 
 
 

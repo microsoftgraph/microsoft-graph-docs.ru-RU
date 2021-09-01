@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f958fdd07d3eb5127efa2f6cbf8d19fa74494932a8a09b5ba6e3f77da4b8c74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 352670f7f3df06504773f1e35d2f113b16896090
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195430"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785278"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Обновление windows10EnrollmentCompletionPageConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54195430"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,14 +62,14 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |version|Int32|Версия конфигурации регистрации устройства, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|Коллекция String|Необязательные теги области ролей для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |showInstallationProgress|Логический|Показать пользователю или скрыть ход установки|
-|blockDeviceSetupRetryByUser|Логический|Разрешить пользователю повторно повторить установку при сбое установки|
+|blockDeviceSetupRetryByUser|Boolean|Разрешить пользователю повторно повторить установку при сбое установки|
 |allowDeviceResetOnInstallFailure|Логический|Разрешить или заблокировать сброс устройства при сбое установки|
-|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать коллекцию журналов при сбое установки|
+|allowLogCollectionOnInstallFailure|Boolean|Разрешить или заблокировать коллекцию журналов при сбое установки|
 |customErrorMessage|Строка|Настройка настраиваемой ошибки для демонстрации при сбое установки|
 |installProgressTimeoutInMinutes|Int32|Установите время выполнения установки за несколько минут|
 |allowDeviceUseOnInstallFailure|Логический|Разрешить пользователю продолжить использование устройства при сбое установки|
 |selectedMobileAppIds|Коллекция String|Выбранные приложения для отслеживания состояния установки|
-|trackInstallProgressForAutopilotOnly|Логический|Только показать ход установки для сценариев регистрации автопилота|
+|trackInstallProgressForAutopilotOnly|Boolean|Только показать ход установки для сценариев регистрации автопилота|
 |disableUserStatusTrackingAfterFirstUser|Логический|Только показать ход установки для первого регистрации после пользователя|
 
 
@@ -143,7 +143,6 @@ Content-Length: 918
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
 
 
 

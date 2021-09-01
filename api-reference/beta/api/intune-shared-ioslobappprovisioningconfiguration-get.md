@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c0a232c13a15944524e8461456b2bf75e58530aae820c97ac12e22e21919698
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d7ea4b1b007b9fb8f5363f8f7a46eaad34c4459
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210507"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784529"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Get iosLobAppProvisioningConfiguration
 
@@ -31,7 +31,7 @@ ms.locfileid: "54210507"
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -92,7 +92,6 @@ Content-Length: 592
   }
 }
 ```
-
 
 
 

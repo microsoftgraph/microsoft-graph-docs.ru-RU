@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 638d620235a28a4303ceee8a9450cea7197a3d7b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9bf1ca4bb8da722ac8bf371317b9544a8d70ce0c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260875"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797642"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>Создание networkIPv6ConfigurationManagementCondition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58260875"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,8 +62,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag состояния управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md). Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|ipV6Prefix|String|Подсеть IPv6, к которая должна быть подключена. например, 2001:db8::/32|
-|ipV6Gateway|String|Адрес шлюза IPv6. например, 2001:db8::1|
+|ipV6Prefix|Строка|Подсеть IPv6, к которая должна быть подключена. например, 2001:db8::/32|
+|ipV6Gateway|Строка|Адрес шлюза IPv6. например, 2001:db8::1|
 |ipV6DNSServerList|Коллекция String|DNS-серверы IPv6, настроенные для адаптеров.|
 |dnsSuffixList|Коллекция String|Допустимые Суффиксы DNS для текущей сети. например, seattle.contoso.com|
 
@@ -130,7 +130,6 @@ Content-Length: 651
   ]
 }
 ```
-
 
 
 

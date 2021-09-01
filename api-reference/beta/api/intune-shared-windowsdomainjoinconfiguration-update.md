@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 052ff2d2488bc99ed18b10fb2565a98d848c35335eb90b9a605e40bf5067917a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c97788655e26a9a681cea4d296f09ef6e07caa09
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198551"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799292"
 ---
 # <a name="update-windowsdomainjoinconfiguration"></a>Обновление windowsDomainJoinConfiguration
 
@@ -30,7 +30,7 @@ ms.locfileid: "54198551"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All|
 
@@ -59,7 +59,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -71,8 +71,8 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |**Конфигурация устройств**|
-|activeDirectoryDomainName|String|Доменное имя Active Directory для пользования.|
-|computerNameStaticPrefix|String|Исправленная префикс, которая будет использоваться для имени компьютера.|
+|activeDirectoryDomainName|Строка|Доменное имя Active Directory для пользования.|
+|computerNameStaticPrefix|Строка|Исправленная префикс, которая будет использоваться для имени компьютера.|
 |computerNameSuffixRandomCharCount|Int32|Динамически созданные символы, используемые в качестве суффикса для имени компьютера. Допустимые значения от 3 до 14|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -129,7 +129,6 @@ Content-Length: 521
   "activeDirectoryDomainName": "Active Directory Domain Name value"
 }
 ```
-
 
 
 

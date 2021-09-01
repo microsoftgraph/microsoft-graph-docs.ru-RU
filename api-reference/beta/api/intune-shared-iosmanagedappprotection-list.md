@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f2aca477f132d4f2c06fab9c9fa4fad141d871253dffa5dc7a4b61e69a4c007
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65750a08372ffb738d7a6a89314574f34c9954cf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231161"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58762286"
 ---
 # <a name="list-iosmanagedappprotections"></a>Перечисление объектов iosManagedAppProtection
 
@@ -31,7 +31,7 @@ ms.locfileid: "54231161"
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/iosManagedAppProtections
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -143,7 +143,6 @@ Content-Length: 3088
   ]
 }
 ```
-
 
 
 

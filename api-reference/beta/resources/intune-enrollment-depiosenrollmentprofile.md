@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7822246f3843688a87d613b168c881586f58ded0
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a9b500eac7d6a1e4d0dcc5346dee191d36ff1f8f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265391"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783920"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>тип ресурса depIOSEnrollmentProfile
 
@@ -38,26 +38,26 @@ ms.locfileid: "58265391"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID для объекта Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|Строка|Имя профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|String|Описание профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|String|Имя профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|Строка|Описание профиля, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Логический|Указывает, требует ли профиль проверки подлинности пользователя, унаследованной от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для использования для регистрации, унаследованной [от enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|URL-адрес конечной точки конфигурации для использования для регистрации, унаследованной [от enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал. Унаследованный от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Логический|Указывает, Корпоративный портал требуется на устройствах, зарегистрированных помощником установки, унаследованных от [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Указывает, является ли это профилем по умолчанию, унаследованной от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Логический|Режим Под контролем, True, чтобы включить, ложные в противном случае. Дополнительные https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune сведения см. в дополнительных сведениях. Унаследованный от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Логический|Режим Под контролем, True, чтобы включить, ложные в противном случае. Дополнительные https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune сведения см. в дополнительных сведениях. Унаследованный от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Сведения отдела поддержки, унаследованные от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Логический|Указывает, является ли профиль обязательным, унаследованный от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|locationDisabled|Логический|Указывает, отключено ли области установки службы расположения из [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|locationDisabled|Boolean|Указывает, отключено ли области установки службы расположения из [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportPhoneNumber|Строка|Номер телефона поддержки, унаследованный от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |profileRemovalDisabled|Логический|Указывает, отключен ли параметр удаления профиля, унаследованный от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|restoreBlocked|Логический|Указывает, заблокирована ли настройка области восстановления, наследуемая [от depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|restoreBlocked|Boolean|Указывает, заблокирована ли настройка области восстановления, наследуемая [от depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |appleIdDisabled|Логический|Указывает, отключена ли система установки apple id Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|termsAndConditionsDisabled|Логический|Указывает, отключено ли области установки "Условия и условия", унаследованные от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|termsAndConditionsDisabled|Boolean|Указывает, отключено ли области установки "Условия и условия", унаследованные от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |touchIdDisabled|Логический|Указывает, отключена ли для настройки сенсорного id наследуемая из [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |applePayDisabled|Логический|Указывает, отключена ли система установки apple pay inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |siriDisabled|Логический|Указывает, отключена ли настройка siri из [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|diagnosticsDisabled|Логический|Указывает, отключено ли области настройки диагностики, унаследованные от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|diagnosticsDisabled|Boolean|Указывает, отключено ли области настройки диагностики, унаследованные от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Логический|Указывает, отключен ли экран настройки displaytone, унаследованный от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |privacyPaneDisabled|Логический|Указывает, отключен ли экран конфиденциальности, унаследованный от [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |screenTimeScreenDisabled|Логический|Указывает, отключена ли установка расстановки времени на экране, наследуемая [из depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -69,17 +69,17 @@ ms.locfileid: "58265391"
 |awaitDeviceConfiguredConfirmation|Логический|Указывает, нужно ли устройству ждать настроенного подтверждения|
 |sharedIPadMaximumUserCount|Int32|Это указывает максимальное число пользователей, которые могут использовать общие iPad. Применимо только в iPad режиме.|
 |enableSharedIPad|Логический|Это указывает, должно ли устройство быть зарегистрированным в режиме, который включает несколько сценариев пользователей. Применимо только в общих iPads.|
-|companyPortalVppTokenId|String|Если установлено, указывается, какой маркер Vpp следует использовать для развертывания Корпоративный портал w/device licensing. Для этого свойства необходимо установить "enableAuthenticationViaCompanyPortal".|
+|companyPortalVppTokenId|Строка|Если установлено, указывается, какой маркер Vpp следует использовать для развертывания Корпоративный портал w/device licensing. Для этого свойства необходимо установить "enableAuthenticationViaCompanyPortal".|
 |enableSingleAppEnrollmentMode|Логический|Сообщает устройству включить режим одного приложения и применить блокировку приложения во время регистрации. Значение по умолчанию: false. Для этого свойства необходимо установить "enableAuthenticationViaCompanyPortal" и "companyPortalVppTokenId".|
 |homeButtonScreenDisabled|Логический|Указывает, отключен ли экран чувствительности домашней кнопки|
 |iMessageAndFaceTimeScreenDisabled|Логический|Указывает, отключен ли экран iMessage и FaceTime|
-|onBoardingScreenDisabled|Логический|Указывает, отключен ли экран установки бортовой установки|
+|onBoardingScreenDisabled|Boolean|Указывает, отключен ли экран установки бортовой установки|
 |simSetupScreenDisabled|Логический|Указывает, отключен ли экран SIMSetup|
-|softwareUpdateScreenDisabled|Логический|Указывает, отключен ли экран обязательного обновления sofware|
+|softwareUpdateScreenDisabled|Boolean|Указывает, отключен ли экран обязательного обновления sofware|
 |watchMigrationScreenDisabled|Логический|Указывает, отключен ли экран переноса часов|
-|appearanceScreenDisabled|Логический|Указывает, отключен ли экран Apperance|
+|appearanceScreenDisabled|Boolean|Указывает, отключен ли экран Apperance|
 |expressLanguageScreenDisabled|Логический|Указывает, отключен ли экран express Language|
-|preferredLanguageScreenDisabled|Логический|Указывает, отключен ли предпочтительный языковой экран|
+|preferredLanguageScreenDisabled|Boolean|Указывает, отключен ли предпочтительный языковой экран|
 |deviceToDeviceMigrationDisabled|Логический|Указывает, отключена ли миграция устройства на устройство|
 |welcomeScreenDisabled|Логический|Указывает, отключен ли экран Weclome|
 |passCodeDisabled|Логический|Указывает отключение области установки passcode|
@@ -168,7 +168,6 @@ ms.locfileid: "58265391"
   "carrierActivationUrl": "String"
 }
 ```
-
 
 
 

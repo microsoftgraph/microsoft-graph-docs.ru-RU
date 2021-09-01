@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab936e47c27a96badd37f215412e17b6eab65968d5d442cb578aa292d266df0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ead882c17c4e37f3535b0a022a1d5914461749e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207434"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794127"
 ---
 # <a name="create-windowsupdatestate"></a>Создание windowsUpdateState
 
@@ -31,7 +31,7 @@ ms.locfileid: "54207434"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,12 +57,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Это Id объекта.|
+|id|Строка|Это Id объекта.|
 |deviceId|String|ID устройства.|
 |userId|String|ID пользователя.|
 |deviceDisplayName|String|Имя отображения устройства.|
 |userPrincipalName|String|Имя основного пользователя.|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|Строка|Версия обновления качества устройства.|
 |featureUpdateVersion|Строка|Текущая версия обновления функций устройства.|
 |lastScanDateTime|DateTimeOffset|Время даты успешного Windows агента обновления.|
@@ -117,7 +117,6 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

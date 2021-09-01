@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 20cbe41937ae926a1c3910b41e3041976b1d4c02c1293463d2cda2704b39f5dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 935de9c6edc9836cdbd0f5af4640a289003d6769
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54143719"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819369"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -54,7 +54,7 @@ GET /reports/getMailboxUsageDetail(period='{period_value}')
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                |
-| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код ответа `304 Not Modified`. Необязательное. |
+| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательное. |
 
 ## <a name="response"></a>Отклик
 
@@ -78,7 +78,9 @@ CSV-файл содержит столбцы со следующими заго�
 - Prohibit Send/Receive Quota (Byte) [объем, при котором блокируются отправка и получение (байт)]
 - Deleted Item Count (количество удаленных элементов)
 - Deleted Item Size (Byte) [размер удаленных элементов (байт)]
-- Report Period (отчетный период)
+- Deleted Item Size (Byte) [размер удаленных элементов (байт)]
+- Has Archive (Имеет архив)
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 

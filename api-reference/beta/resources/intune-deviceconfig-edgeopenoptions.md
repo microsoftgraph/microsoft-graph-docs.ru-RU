@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c1285f4858c3574389005d6a856d42d4824a0be9dd4d4a4e5cf12412277245d8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 814ca5cf10266e98f22cbd71722f4dfb5d8ddf13
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161306"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804864"
 ---
 # <a name="edgeopenoptions-enum-type"></a>тип enum edgeOpenOptions
 
@@ -26,11 +26,10 @@ ms.locfileid: "54161306"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен.|
-|startPage|1 |StartPage.|
+|startPage|1|StartPage.|
 |newTabPage|2|NewTabPage.|
-|previousPages|3 |PreviousPages.|
+|previousPages|3|PreviousPages.|
 |specificPages|4 |SpecificPages.|
-
 
 
 

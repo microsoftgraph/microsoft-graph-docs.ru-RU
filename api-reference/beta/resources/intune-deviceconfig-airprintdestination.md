@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b27634d80693677516f77fe26429c01e40c2612ed18dff8f3f25c43674ed3ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 978bbd3d5f7cb8527cb2079d20a48bf4fb678126
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224833"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783591"
 ---
 # <a name="airprintdestination-resource-type"></a>тип ресурса airPrintDestination
 
@@ -49,7 +49,6 @@ ms.locfileid: "54224833"
   "forceTls": true
 }
 ```
-
 
 
 

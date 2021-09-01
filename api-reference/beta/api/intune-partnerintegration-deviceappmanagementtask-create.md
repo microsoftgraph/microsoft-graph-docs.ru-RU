@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9487d4581b5d4c44240b6c54a837ee34e9cc1d064f7d7e30516e9fc596f9e82f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf98ca829ed6a870ca4ec561e5e42264102e6371
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123071"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783325"
 ---
 # <a name="create-deviceappmanagementtask"></a>Создание deviceAppManagementTask
 
@@ -29,7 +29,7 @@ ms.locfileid: "54123071"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/deviceAppManagementTasks
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,13 +54,13 @@ POST /deviceAppManagement/deviceAppManagementTasks
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ сущности.|
-|displayName|String|Имя.|
+|displayName|Строка|Имя.|
 |description|Строка|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Срок действия.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
-|creator|String|Адрес электронной почты создателя.|
+|creator|Строка|Адрес электронной почты создателя.|
 |creatorNotes|Строка|Заметки от создателя.|
 |assignedTo|String|Имя или электронная почта администратора этой задачи назначены.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
@@ -115,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

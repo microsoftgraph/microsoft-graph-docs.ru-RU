@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e771bc99a2348f461c1306ee870c635fd4718f044980b2c77b1d70fac2cc027
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4479fc5937650554b5ae741729273681a24b91d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203990"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791300"
 ---
 # <a name="create-devicemanagementpartner"></a>Создание объекта deviceManagementPartner
 
@@ -29,7 +29,7 @@ ms.locfileid: "54203990"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceManagementPartners
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id объекта|
+|id|Строка|Id объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип приложения-партнера. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
@@ -139,7 +139,6 @@ Content-Length: 1189
   ]
 }
 ```
-
 
 
 

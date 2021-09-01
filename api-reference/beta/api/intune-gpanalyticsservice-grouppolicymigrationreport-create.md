@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fc126fc802f027933bb4078d02345195a9534a2f73cba00ac01db09a7fe17e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83e7186cfed8314a015d4ef080b9f9e6e8f5e0c6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123197"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793451"
 ---
 # <a name="create-grouppolicymigrationreport"></a>Создание groupPolicyMigrationReport
 
@@ -29,7 +29,7 @@ ms.locfileid: "54123197"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
 |displayName|Строка|Имя объекта групповой политики из контента GPO Xml|
 |ouDistinguishedName|Строка|Отличительное имя OU.|
@@ -120,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

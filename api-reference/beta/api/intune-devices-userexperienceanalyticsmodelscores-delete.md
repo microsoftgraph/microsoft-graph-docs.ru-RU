@@ -1,18 +1,18 @@
 ---
-title: Список deviceManagementResourceAccessProfileBases
-description: Список свойств и связей объектов deviceManagementResourceAccessProfileBase.
+title: Удаление userExperienceAnalyticsModelScores
+description: Удаляет пользователяExperienceAnalyticsModelScores.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef79a1a4c3f932c456d8b7b239ce6b4e4ee199fa
+ms.openlocfilehash: 525e893f4c79548bdf4c9eefea3e82d444e47514
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805803"
+ms.locfileid: "58796564"
 ---
-# <a name="list-devicemanagementresourceaccessprofilebases"></a>Список deviceManagementResourceAccessProfileBases
+# <a name="delete-userexperienceanalyticsmodelscores"></a>Удаление userExperienceAnalyticsModelScores
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58805803"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов deviceManagementResourceAccessProfileBase.](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)
+Удаляет [пользователяExperienceAnalyticsModelScores](../resources/intune-devices-userexperienceanalyticsmodelscores.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58805803"
 }
 -->
 ``` http
-GET /deviceManagement/resourceAccessProfiles
+DELETE /deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,39 +50,20 @@ GET /deviceManagement/resourceAccessProfiles
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles
+DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 487
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileBase",
-      "id": "f442dd4a-dd4a-f442-4add-42f44add42f4",
-      "version": 7,
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ]
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 360441d81db0aef60e2c119ef10d6ac24bb8d090
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 18f60cb398dd554096e5258b7ee4d21bb16911f7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266263"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804927"
 ---
 # <a name="update-devicecustomattributeshellscript"></a>Обновление устройстваCustomAttributeShellScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "58266263"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для настраиваемого объекта атрибута.|
-|customAttributeName|Строка|Имя настраиваемого атрибута.|
+|id|Строка|Уникальный идентификатор для настраиваемого объекта атрибута.|
+|customAttributeName|String|Имя настраиваемого атрибута.|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
-|displayName|String|Имя сценария управления устройствами.|
+|displayName|Строка|Имя сценария управления устройствами.|
 |description|Строка|Необязательное описание сценария управления устройствами.|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
@@ -118,7 +118,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

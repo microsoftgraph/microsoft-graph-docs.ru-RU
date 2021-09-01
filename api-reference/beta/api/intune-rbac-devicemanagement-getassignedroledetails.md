@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e208ecb96d8c78b48266097a1826c1bf96998a3863bc95eb7324b8445f29169d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f55462b1b5f1dbbffa94399a8b1f11abd200443c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173753"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58762293"
 ---
 # <a name="getassignedroledetails-function"></a>функция getAssignedRoleDetails
 
@@ -29,7 +29,7 @@ ms.locfileid: "54173753"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/getAssignedRoleDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,7 +79,6 @@ Content-Length: 245
   }
 }
 ```
-
 
 
 

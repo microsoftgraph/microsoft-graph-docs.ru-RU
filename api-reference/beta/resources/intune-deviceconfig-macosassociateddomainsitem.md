@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff607e0eb88a53aa53500b278e7cbf90da49a34fa4033a3907f24818c3618ddc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2658a02a4881e793879a68bc6d1822d9a9b2a0a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183129"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819145"
 ---
 # <a name="macosassociateddomainsitem-resource-type"></a>тип ресурса macOSAssociatedDomainsItem
 
@@ -25,7 +25,7 @@ ms.locfileid: "54183129"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicationIdentifier|Строка|Идентификатор приложения для связывать домены с.|
+|applicationIdentifier|String|Идентификатор приложения для связывать домены с.|
 |домены|Коллекция String|Список доменов, которые можно связать.|
 |directDownloadsEnabled|Логический|Определяет, следует ли загружать данные напрямую или через CDN.|
 
@@ -49,7 +49,6 @@ ms.locfileid: "54183129"
   "directDownloadsEnabled": true
 }
 ```
-
 
 
 

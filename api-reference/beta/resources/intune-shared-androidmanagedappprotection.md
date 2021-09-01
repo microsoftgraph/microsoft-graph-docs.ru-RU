@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5da2266d8334b62e801b03869566da9cb5b9732
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7ac64d71b3d1d1092a0a23eb000cf74c0771dabf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265969"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58751946"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Тип ресурса androidManagedAppProtection
 
@@ -39,9 +39,9 @@ ms.locfileid: "58265969"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -87,8 +87,8 @@ ms.locfileid: "58265969"
 |deployedAppCount|Int32|Количество приложений, к которым применена текущая политика.|
 |minimumRequiredPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, необходимый для безопасного доступа к приложению.|
 |minimumWarningPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, рекомендуемый для безопасного доступа к приложению.|
-|exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Пакеты приложений в этом списке будут освобождены от политики и смогут получать данные из управляемых приложений.|
-|minimumWipePatchVersion|String|Уровень исправлений для безопасности Android меньше указанного значения или равного ему, стирает управляемое приложение и связанные с ним данные компании.|
+|exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пакеты приложений в этом списке будут освобождены от политики и смогут получать данные из управляемых приложений.|
+|minimumWipePatchVersion|Строка|Уровень исправлений для безопасности Android меньше указанного значения или равного ему, стирает управляемое приложение и связанные с ним данные компании.|
 |allowedAndroidDeviceManufacturers|Строка|Семиколон разделенный список производителей устройств разрешено, как строка, для управляемого приложения для работы.|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения, блок или вытирать, если указанному производителю устройств не разрешено. Возможные значения: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Определяет требование проверки безопасности устройства Android для управляемого приложения для работы. Возможные значения: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
@@ -193,7 +193,6 @@ ms.locfileid: "58265969"
   "minimumWipeCompanyPortalVersion": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: db80ab4f9c261c6495f2ac699b5b2da0a311a47451fdb969c9fdd41f39d028e6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 11647abeae11186c8bbaa6748b6711c749e9fc01
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165793"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795893"
 ---
 # <a name="datatype-enum-type"></a>тип enum dataType
 
@@ -26,10 +26,10 @@ ms.locfileid: "54165793"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Нет типа данных.|
-|boolean|1 |Тип данных Boolean.|
+|boolean|1|Тип данных Boolean.|
 |int64|2|Тип данных Int64.|
-|double|3 |Двойной тип данных.|
-|строка|4 |Тип строки данных.|
+|double|3|Двойной тип данных.|
+|string|4 |Тип строки данных.|
 |dateTime|5 |Тип данных DateTime.|
 |version|6 |Тип данных версии.|
 |base64|7 |Тип данных Base64.|
@@ -38,9 +38,8 @@ ms.locfileid: "54165793"
 |int64Array|10 |Тип данных массива Int64.|
 |doubleArray|11 |Тип данных с двойным массивом.|
 |stringArray|12 |Тип данных массива строк.|
-|dateTimeArray|13 |Тип данных массива DateTime.|
+|dateTimeArray|13|Тип данных массива DateTime.|
 |versionArray|14 |Тип данных массива версий.|
-
 
 
 

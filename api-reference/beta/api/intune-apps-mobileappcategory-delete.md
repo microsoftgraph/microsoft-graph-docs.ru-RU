@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e96465e2799cb753d32b9897ce64d9d3b205c5a6d51e259a0e6d4a806ee5e5b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 557b853ab663514a5b610fb1d6cffa7bf5e77af6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54188962"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791069"
 ---
 # <a name="delete-mobileappcategory"></a>Delete mobileAppCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "54188962"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCatego
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

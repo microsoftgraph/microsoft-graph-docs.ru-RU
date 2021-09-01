@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd59932b455af96a96389947e0b4178c7c2d77bcbb81062f54b7080054ee61d3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4bf6120a827a1fc01c12ea99b0b7572092c62f9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154534"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804815"
 ---
 # <a name="list-mobilelobapps"></a>Перечисление объектов mobileLobApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "54154534"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -104,7 +104,6 @@ Content-Length: 1206
   ]
 }
 ```
-
 
 
 

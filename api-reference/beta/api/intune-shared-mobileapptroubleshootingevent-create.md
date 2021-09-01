@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03dbdd9da4f6306d7cbe790e8ac0a59d630c7be3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 00ebe1796c9293df0048b2f6ff408576c52d03ec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260399"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788523"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Создание mobileAppTroubleshootingEvent
 
@@ -31,7 +31,7 @@ ms.locfileid: "58260399"
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 |&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -48,7 +48,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,9 +58,9 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |**Устранение неполадок**|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-troubleshooting-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок.|
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар значений ключа строки и строк, которые предоставляют дополнительные сведения о событии устранения неполадок.|
 |applicationId|String|Идентификатор приложения Intune.|
 |correlationId|String|ID, используемый для отслеживания сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
@@ -99,7 +99,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

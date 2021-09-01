@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 834c6a86fac3f6962648badb4d1a71505c6267b8c32b1638d5f3d93a2830014d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a3319960f8f15f06816eaa6a5ec2879352255c41
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172920"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793311"
 ---
 # <a name="grouppolicypresentationtextbox-resource-type"></a>тип ресурса groupPolicyPresentationTextBox
 
@@ -37,11 +37,11 @@ ms.locfileid: "54172920"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|подпись|String|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|подпись|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Строка|Локализованная строка по умолчанию, отображаемая в текстовом окне. По умолчанию это значение пусто.|
-|Обязательный|Логический|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
+|обязательно|Boolean|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
 |maxLength|Int64|Неподписаный целый ряд, который указывает максимальное количество текстовых символов. Значение по умолчанию — 1023.|
 
 ## <a name="relationships"></a>Связи
@@ -68,7 +68,6 @@ ms.locfileid: "54172920"
   "maxLength": 1024
 }
 ```
-
 
 
 

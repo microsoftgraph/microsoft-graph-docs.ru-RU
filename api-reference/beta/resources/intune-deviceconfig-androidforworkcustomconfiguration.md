@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6153eb2ac556b7565d392c96d7a7a3dc9db785ffa066024e9bb99f643c5d8b2d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 974d3c52f22257f8703ece886d63599d5a97f9b2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229530"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793353"
 ---
 # <a name="androidforworkcustomconfiguration-resource-type"></a>тип ресурса androidForWorkCustomConfiguration
 
@@ -46,7 +46,7 @@ ms.locfileid: "54229530"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |omaSettings|Коллекция [omaSetting](../resources/intune-deviceconfig-omasetting.md)|Параметры OMA. Эта коллекция может содержать не более 500 элементов.|
 
@@ -115,7 +115,6 @@ ms.locfileid: "54229530"
   ]
 }
 ```
-
 
 
 

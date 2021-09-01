@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d631f4bfbfd9fd8a5842da41ee02087be10cd337bf540dc07bf4fb8cc54f8c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5ee0e7234fcf8920c140bcb0bbeb63109932e561
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54220335"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803113"
 ---
 # <a name="create-grouppolicypresentationlistbox"></a>Создание groupPolicyPresentationListBox
 
@@ -29,7 +29,7 @@ ms.locfileid: "54220335"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,7 +97,6 @@ Content-Length: 278
   "valuePrefix": "Value Prefix value"
 }
 ```
-
 
 
 
