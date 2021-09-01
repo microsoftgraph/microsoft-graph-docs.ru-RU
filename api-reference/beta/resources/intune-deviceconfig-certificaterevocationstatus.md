@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e10816d1f61d514a1b2fd0c8a7f6c6815980628d86a7c694a05010e887cbfd8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f6e7635a8893559d4f86f60210aba3b9f08d68b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226443"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58778747"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>тип enum certificateRevocationStatus
 
@@ -26,11 +26,10 @@ ms.locfileid: "54226443"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Не отменяется.|
-|ожидание|1 |Отзыв ожидается.|
+|ожидание|1|Отзыв ожидается.|
 |выдан|2|Выдана команда отзыва.|
-|не удалось|3 |Отзыв не удалось.|
+|не удалось|3|Отзыв не удалось.|
 |отменено|4 |Отменено.|
-
 
 
 

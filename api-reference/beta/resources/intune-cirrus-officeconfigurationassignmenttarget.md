@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса keyValuePair
-description: Пара "ключ-значение" для хранения пользовательских настроек
-author: dougeby
+title: тип ресурса officeConfigurationAssignmentTarget
+description: Office Цель назначения конфигурации клиента.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc609905c5163dd53c3dff58249a15ccd20304e5
+ms.openlocfilehash: 18da69fbbf6eb19a1ab7791195b2c74a4d14c2ac
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793542"
+ms.locfileid: "58813665"
 ---
-# <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
+# <a name="officeconfigurationassignmenttarget-resource-type"></a>тип ресурса officeConfigurationAssignmentTarget
 
 Пространство имен: microsoft.graph
 
@@ -20,13 +20,11 @@ ms.locfileid: "58793542"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пара "ключ-значение" для хранения пользовательских настроек
+Office Цель назначения конфигурации клиента.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя для этой пары "ключ-значение"|
-|value|String|Значение для этой пары "ключ-значение"|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -35,14 +33,13 @@ ms.locfileid: "58793542"
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.keyValuePair"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.keyValuePair",
-  "name": "String",
-  "value": "String"
+  "@odata.type": "#microsoft.graph.officeConfigurationAssignmentTarget"
 }
 ```
 

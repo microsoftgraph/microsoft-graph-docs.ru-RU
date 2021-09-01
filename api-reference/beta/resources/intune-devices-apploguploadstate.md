@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 927f374f8db566749b240473ab5e2a27197455104b9735a54e8810248d447067
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d085351577a5ca7b21c8a42faff0e7aecde54dfe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193659"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790152"
 ---
 # <a name="apploguploadstate-enum-type"></a>тип enum appLogUploadState
 
@@ -26,9 +26,8 @@ AppLogUploadStatus
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ожидание|0|Запрос ожидает обработки или обработки|
-|завершено|1 |Запрос заполнен файлом, загруженным в BLOB Azure для скачивания.|
+|завершено|1|Запрос заполнен файлом, загруженным в BLOB Azure для скачивания.|
 |не удалось|2|Запрос готовой обработки и состояние ошибки.|
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Удаление iosLobAppProvisioningConfiguration
-description: Удаляет iosLobAppProvisioningConfiguration.
-author: rolyon
+title: requestUpgrade action
+description: Пока не задокументировано.
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eac52c23061e63c6d301ae8d0533ce50693b4b24
+ms.openlocfilehash: a924d46a09f20152d2a666fb688785b0ee9190ab
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794499"
+ms.locfileid: "58789294"
 ---
-# <a name="delete-ioslobappprovisioningconfiguration"></a>Удаление iosLobAppProvisioningConfiguration
+# <a name="requestupgrade-action"></a>requestUpgrade action
 
 Пространство имен: microsoft.graph
 
@@ -20,20 +20,16 @@ ms.locfileid: "58794499"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md).
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
-| &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +37,7 @@ ms.locfileid: "58794499"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}
+POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/requestUpgrade
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -54,14 +50,14 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/requestUpgrade
 ```
 
 ### <a name="response"></a>Отклик
@@ -69,9 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 

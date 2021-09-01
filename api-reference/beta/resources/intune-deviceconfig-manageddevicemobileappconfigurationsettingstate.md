@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 630bd156f41d8abaabe66cfb54203d51d50ff127d95a2ce4794ebd0e2a6bdcaf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d40de92661ac13f3c499678fc78177e3d33ac9d6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236285"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807302"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>managedDeviceMobileAppConfigurationSettingState resource type
 
@@ -74,7 +74,6 @@ ms.locfileid: "54236285"
   "settingInstanceId": "String"
 }
 ```
-
 
 
 

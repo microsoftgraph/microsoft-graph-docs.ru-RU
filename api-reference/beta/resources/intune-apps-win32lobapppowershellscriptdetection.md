@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc21506b28f66ad481d44c55214801ec060197889a5b64e6d8f68f0bf7ea9829
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de13f32fcf4c45c89154fe25b96909193c10522e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253159"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804878"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -50,7 +50,6 @@ ms.locfileid: "54253159"
   "scriptContent": "String"
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: действие getCachedReport
+title: createServerLogCollectionRequest action
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3655b2409ab398ed3c5921c094a302cd0d44aa16
+ms.openlocfilehash: 57e396bd2d8edb0cd231a069eff8c42ef642b217
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790474"
+ms.locfileid: "58805370"
 ---
-# <a name="getcachedreport-action"></a>действие getCachedReport
+# <a name="createserverlogcollectionrequest-action"></a>createServerLogCollectionRequest action
 
 Пространство имен: microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "58790474"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58790474"
 }
 -->
 ``` http
-POST /deviceManagement/reports/getCachedReport
+POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/createServerLogCollectionRequest
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -53,43 +53,27 @@ POST /deviceManagement/reports/getCachedReport
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
-|select|Коллекция строк|Н/Д|
-|search|String|Пока не задокументировано.|
-|groupBy|Коллекция строк|Н/Д|
-|orderBy|Коллекция строк|Н/Д|
-|skip|Int32|Пока не задокументировано.|
-|top|Int32|Пока не задокументировано.|
+|startDateTime|DateTimeOffset|Пока не задокументировано.|
+|endDateTime|DateTimeOffset|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
+В случае успеха это действие возвращает код отклика и `200 OK` [microsoftTunnelServerLogCollectionResponse в](../resources/intune-mstunnel-microsofttunnelserverlogcollectionresponse.md) тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/reports/getCachedReport
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/createServerLogCollectionRequest
 
 Content-type: application/json
-Content-length: 209
+Content-length: 115
 
 {
-  "id": "Id value",
-  "select": [
-    "Select value"
-  ],
-  "search": "Search value",
-  "groupBy": [
-    "Group By value"
-  ],
-  "orderBy": [
-    "Order By value"
-  ],
-  "skip": 4,
-  "top": 3
+  "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+  "endDateTime": "2017-01-01T00:03:30.9241974-08:00"
 }
 ```
 
@@ -98,10 +82,20 @@ Content-length: 209
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 79
+Content-Length: 481
 
 {
-  "value": "Z2V0Q2FjaGVkUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDc5MjIxODQ3OA=="
+  "value": {
+    "@odata.type": "#microsoft.graph.microsoftTunnelServerLogCollectionResponse",
+    "id": "05dcc2e9-c2e9-05dc-e9c2-dc05e9c2dc05",
+    "status": "completed",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
+    "sizeInBytes": 11,
+    "serverId": "Server Id value",
+    "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+    "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
+  }
 }
 ```
 

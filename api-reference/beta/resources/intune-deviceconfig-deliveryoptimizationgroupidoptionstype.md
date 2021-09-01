@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1fef9840a12bf398632dd050a0b9b25721055b822bf6d7e7a3f558fc1ae98ee7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 19aa27d8dd020ff77b4f745a16df6bac6f3c084f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245067"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793896"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>тип enum deliveryOptimizationGroupIdOptionsType
 
@@ -26,11 +26,10 @@ ms.locfileid: "54245067"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен.|
-|adSite|1 |Сайт Active Directory.|
+|adSite|1|Сайт Active Directory.|
 |authenticatedDomainSid|2|Проверка подлинности sid домена.|
-|dhcpUserOption|3 |Параметр пользователя DHCP.|
+|dhcpUserOption|3|Параметр пользователя DHCP.|
 |dnsSuffix|4 |Суффикс DNS.|
-
 
 
 

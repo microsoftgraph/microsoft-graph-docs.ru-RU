@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57d63d1f8010f4959e83d591306393c6a228a11c0ac030663c185bc7cf2b6119
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 05bfb1daa6c1aa1cdad2f53f3447f709ca9aff18
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165814"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789687"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип enum win32LobAppReturnCodeType
 
@@ -25,12 +25,11 @@ ms.locfileid: "54165814"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|не удалось|0|Не выполнено.|
-|success|1 |Успешно.|
+|не удалось|0|Не удалось.|
+|success|1|Успешно.|
 |softReboot|2|Требуется мягкая перезагрузка.|
-|hardReboot|3 |Требуется перезагрузка с жесткой перезагрузами.|
+|hardReboot|3|Требуется перезагрузка с жесткой перезагрузами.|
 |retry|4 |Повторите попытку.|
-
 
 
 

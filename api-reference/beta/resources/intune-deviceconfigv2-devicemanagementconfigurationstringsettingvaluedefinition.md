@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 764afcb12275259d250aed2e5732fdf6ca998b4bf7ed17d2b3d939b3c4160412
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9731c46e9ae80f346bef29d951f4e430d76743f3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239450"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815080"
 ---
 # <a name="devicemanagementconfigurationstringsettingvaluedefinition-resource-type"></a>тип ресурса deviceManagementConfigurationStringSettingValueDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "54239450"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |format|[deviceManagementConfigurationStringFormat](../resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat.md)|Заранее определенный формат строки. Возможные значения: `none` `email` , , , , , `guid` , `ip` , `base64` `url` `version` `xml` `date` , `time` `binary` `regEx` `json` `dateTime` `surfaceHub` , .|
-|inputValidationSchema|String|Регулярное выражение или схема xml или json, которая должна соответствовать строке ввода|
+|inputValidationSchema|Строка|Регулярное выражение или схема xml или json, которая должна соответствовать строке ввода|
 |maximumLength|Int64|Максимальная длина строки. Допустимые значения от 0 до 87516|
 |minimumLength|Int64|Минимальная длина строки. Допустимые значения от 0 до 87516|
 |isSecret|Логический|Указывает, нужно ли относиться к параметру как к секрету. Параметры пометка да будет зашифрована в транзите и в покое и будет отображаться в виде звездочек при их представлении в UX.|
@@ -54,7 +54,6 @@ ms.locfileid: "54239450"
   "isSecret": true
 }
 ```
-
 
 
 

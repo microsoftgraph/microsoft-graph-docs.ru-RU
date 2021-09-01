@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01acfd4848732213e6fc4121209684dc021f1450a5223e6b7f17d9f9b62b1483
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e7a7c52faf85a807027b3f73076680ed3d1609a9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181071"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782891"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-resource-type"></a>тип ресурса windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -43,7 +43,7 @@ ms.locfileid: "54181071"
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|Состояние развертывания политики. Возможные значения: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|String|Имя пользователя этого устройства.|
 |userPrincipalName|String|Имя главного пользователя.|
-|policyVersion|String|Человеческая читаемая версия дополнительной политики WindowsDefenderApplicationControl.|
+|policyVersion|Строка|Человеческая читаемая версия дополнительной политики WindowsDefenderApplicationControl.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -73,7 +73,6 @@ ms.locfileid: "54181071"
   "policyVersion": "String"
 }
 ```
-
 
 
 
