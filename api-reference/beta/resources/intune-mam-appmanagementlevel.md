@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 26c460c3362776d5fee785d179da1816c9413b0fe52c1011268c586247b3820c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ad8c1763ba5ec4d049e72da755fce5f6715c0f15
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145252"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806616"
 ---
 # <a name="appmanagementlevel-enum-type"></a>тип enum appManagementLevel
 
@@ -26,10 +26,9 @@ ms.locfileid: "54145252"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |неустановленные|0|Не определено.|
-|неуменимый|1 |Неувядаемая|
+|неуменимый|1|Неувядаемая|
 |mdm|2|MDM|
 |AndroidEnterprise|4 |Android Enterprise|
-
 
 
 

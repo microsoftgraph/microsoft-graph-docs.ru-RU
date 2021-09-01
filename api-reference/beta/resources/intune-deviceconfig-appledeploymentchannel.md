@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d682dd9e524c6ad2a3ed3d4a35dbc6aaf9e64ca
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c8de58704a4c577a5ed0bc3ddbd430c02ec89567
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263540"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793346"
 ---
 # <a name="appledeploymentchannel-enum-type"></a>тип enum appleDeploymentChannel
 
@@ -26,8 +26,7 @@ ms.locfileid: "58263540"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceChannel|0|Отправка полезной нагрузки по каналу Device.|
-|userChannel|1 |Отправка полезной нагрузки по пользовательскому каналу.|
-
+|userChannel|1|Отправка полезной нагрузки по пользовательскому каналу.|
 
 
 

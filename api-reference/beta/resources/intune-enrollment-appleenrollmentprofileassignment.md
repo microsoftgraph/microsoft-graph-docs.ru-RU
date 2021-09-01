@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1a065a16c2a7e30a66cff31355fc37bd4b1316f4deb230297d58ad2fd53378
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: add921ec2126c5789f7f96cc5a94f79693a9b03c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219831"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805032"
 ---
 # <a name="appleenrollmentprofileassignment-resource-type"></a>тип ресурса appleEnrollmentProfileAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "54219831"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для пользователя Apple, инициированного профилем развертывания.|
 
 ## <a name="relationships"></a>Связи
@@ -60,7 +60,6 @@ ms.locfileid: "54219831"
   }
 }
 ```
-
 
 
 

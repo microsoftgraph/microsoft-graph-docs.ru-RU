@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 806fe79d71cd482a4e5f9d6d32ad8424c26ba78f74a618dc041fc170ed686255
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c57d74c9f8e3b100c9bc088bd917a17f0f718b27
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242505"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791454"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>тип enum deviceManagementExchangeAccessRuleType
 
@@ -26,8 +26,7 @@ ms.locfileid: "54242505"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |семейство|0|Семейство устройств|
-|model|1 |Конкретная модель устройства|
-
+|model|1|Конкретная модель устройства|
 
 
 

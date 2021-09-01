@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5b0c16a99a66acb502bdc65b3ccfc7f0e4a984d328e1b46ec30982ef714a271
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd683b76a2641e9b3df6b7caee3e98fece063a3f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252930"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796224"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>тип ресурса deviceManagementIntentUserState
 
@@ -34,7 +34,7 @@ ms.locfileid: "54252930"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|The ID|
+|id|Строка|The ID|
 |userPrincipalName|String|Основное имя пользователя, которое сообщается на устройстве|
 |userName|String|Имя пользователя, которое сообщается на устройстве|
 |deviceCount|Int32|Количество устройств, принадлежащих пользователю для намерения|
@@ -63,7 +63,6 @@ ms.locfileid: "54252930"
   "state": "String"
 }
 ```
-
 
 
 

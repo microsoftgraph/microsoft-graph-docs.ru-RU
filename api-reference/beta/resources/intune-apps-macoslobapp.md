@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd11ce13e39d2c2caf9ee3a910186c7fd9d3e5d00310a9dcd05ecf48931f5ffc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ba9bae6e18b154a38830dbe0f4d452ed43633a0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131299"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804045"
 ---
 # <a name="macoslobapp-resource-type"></a>тип ресурса macOSLobApp
 
@@ -37,9 +37,9 @@ ms.locfileid: "54131299"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -134,7 +134,8 @@ ms.locfileid: "54131299"
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "String",
   "versionNumber": "String",
@@ -155,7 +156,6 @@ ms.locfileid: "54131299"
   "installAsManaged": true
 }
 ```
-
 
 
 

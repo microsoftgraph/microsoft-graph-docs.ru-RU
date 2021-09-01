@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6899594f226c7d5515d79464d9c80e7a90a2f84c40196804e2015fb832369f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a13e7e50696d834440aa02bb16be7b0fcf00db61
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124761"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798415"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>dmaGuardDeviceEnumerationPolicyType enum type
 
@@ -26,9 +26,8 @@ ms.locfileid: "54124761"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение по умолчанию. Устройства с dmapping несовместимыми драйверами будут перенацелены только после того, как пользователь откроет экран.|
-|blockAll|1 |Устройства с dmapping несовместимыми драйверами никогда не будут разрешены к запуску и выполнению DMA в любое время.|
+|blockAll|1|Устройства с dmapping несовместимыми драйверами никогда не будут разрешены к запуску и выполнению DMA в любое время.|
 |allowAll|2|Все внешние устройства PCIe, способные к ДМА, будут в любое время переумещены.|
-
 
 
 

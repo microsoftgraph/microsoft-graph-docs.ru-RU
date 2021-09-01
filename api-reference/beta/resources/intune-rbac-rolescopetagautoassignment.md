@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d833971305509aeb9b9c049c8617dd924eb36b82cf43b6934f1975832d46974a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 84bcaccc1206bb71e74e197bc7932a7a12ff6361
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54161019"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806007"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>Тип ресурса roleScopeTagAutoAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "54161019"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель автоматического назначения для определенного тега области ролей.|
 
 ## <a name="relationships"></a>Связи
@@ -60,7 +60,6 @@ ms.locfileid: "54161019"
   }
 }
 ```
-
 
 
 

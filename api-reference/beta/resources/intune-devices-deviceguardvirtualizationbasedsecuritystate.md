@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f93df3d0fea2423738a7063f79932128de0711de2b358587d0b92392c7da8a69
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f8a2871189630206c8ef5d83c510fbdd96a61132
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182814"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793563"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип enum deviceGuardVirtualizationBasedSecurityState
 
@@ -26,13 +26,12 @@ ms.locfileid: "54182814"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |запуск|0|Работает|
-|rebootRequired|1 |Root required|
+|rebootRequired|1|Root required|
 |require64BitArchitecture|2|Требуется 64-битная архитектура|
-|notLicensed|3 |Не лицензировано|
+|notLicensed|3|Не лицензировано|
 |notConfigured|4 |Не настроено|
 |doesNotMeetHardwareRequirements|5 |Система не соответствует требованиям к оборудованию|
 |другие|42|Другое. Журналы событий в microsoft-Windows DeviceGuard имеют дополнительные сведения.|
-
 
 
 

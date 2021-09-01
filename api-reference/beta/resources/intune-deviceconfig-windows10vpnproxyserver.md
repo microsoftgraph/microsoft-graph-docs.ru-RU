@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4c3d98660ffdf28b291fc4e5547f572a5ba907b2c2c9712623cbba718807a63
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b60102b1139bc1c869082016afb1436bcf061b94
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219978"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785740"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>тип ресурса windows10VpnProxyServer
 
@@ -52,7 +52,6 @@ VPN Прокси-сервер.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d172c48dd715c45a20840aac1444bc2d757c7ed7b083cc50ac72e69bad95a772
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dde892c03e1978784cd558f122d7a14663344f5d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166752"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798036"
 ---
 # <a name="list-carttoclassassociations"></a>Списки cartToClassAssociations
 
@@ -43,7 +43,7 @@ GET /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -87,7 +87,6 @@ Content-Length: 528
   ]
 }
 ```
-
 
 
 

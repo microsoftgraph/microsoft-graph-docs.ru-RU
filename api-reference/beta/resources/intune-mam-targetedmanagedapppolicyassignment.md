@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1fa965c071737805b41005c6753a46617134db8da1b17e7fbde13c339270edd7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 955740966e9d4b4d0bf1f6abc1dd34be629a47e0
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253469"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803989"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>Тип ресурса targetedManagedAppPolicyAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "54253469"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id|
+|id|Строка|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор для развертывания в группе или приложении|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, используемого для развертывания в группу, прямую или пакетную группу/policySet. Возможные значения: `direct`, `policySets`.|
 |sourceId|Строка|Идентификатор ресурса, используемой для развертывания в группе|
@@ -63,7 +63,6 @@ ms.locfileid: "54253469"
   "sourceId": "String"
 }
 ```
-
 
 
 

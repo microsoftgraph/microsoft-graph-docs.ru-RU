@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cabd0dd0ebecf57dff6188a8e4a543c2a1d5a2ac914474349b8d76ad5ea764e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0456f29a9a1b7b347a58595a06139692ce99f78
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180196"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796827"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>Действие setAndroidDeviceOwnerFullyManagedEnrollmentState
 
@@ -29,7 +29,7 @@ ms.locfileid: "54180196"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/setAndroidDe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -80,7 +80,6 @@ Content-length: 23
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

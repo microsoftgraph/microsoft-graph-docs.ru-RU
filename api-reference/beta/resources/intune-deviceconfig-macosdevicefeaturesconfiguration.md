@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79d0d928e673a08262ade7ae64a1039891fd2ce1
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 43fdffefba2163e71076f0846d748e81b1efee31
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260266"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783514"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Тип ресурса macOSDeviceFeaturesConfiguration
 
@@ -26,7 +26,6 @@ ms.locfileid: "58260266"
 Наследуется от [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 
 ## <a name="methods"></a>Методы
-
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список объектов macOSDeviceFeaturesConfigurations](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md)|Коллекция [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md)|Список свойств и связей объектов [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md).|
@@ -36,10 +35,9 @@ ms.locfileid: "58260266"
 |[Обновление объекта macOSDeviceFeaturesConfiguration](../api/intune-deviceconfig-macosdevicefeaturesconfiguration-update.md)|[macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md)|Обновление свойств объекта [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
-
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -47,7 +45,7 @@ ms.locfileid: "58260266"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |airPrintDestinations|[коллекция airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Массив принтеров AirPrint, которые всегда должны быть показаны. Эта коллекция может содержать не более 500 элементов. Унаследованный от [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
@@ -68,7 +66,7 @@ ms.locfileid: "58260266"
 |restartDisabledWhileLoggedIn|Логический|Будет ли элемент меню Перезапуска в окне входа отключен во время входа пользователя.|
 |powerOffDisabledWhileLoggedIn|Логический|Будет ли отключен элемент меню Power Off в окне входа во время входа пользователя.|
 |logOutDisabledWhileLoggedIn|Логический|Будет ли отключен элемент меню Log Out в окне входа во время входа пользователя.|
-|screenLockDisableImmediate|Логический|Следует ли отключить функции немедленной блокировки экрана.|
+|screenLockDisableImmediate|Boolean|Следует ли отключить функции немедленной блокировки экрана.|
 |associatedDomains|Коллекция [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|DEPRECATED: вместо этого используйте appAssociatedDomains. Получает или задает список, который сопополагает приложения с связанными доменами. Ключ должен соответствовать ID приложения, а значение должно быть строкой в виде "service:domain", где домен является полнокровным имям хост-сайта (например, webcredentials:example.com). Эта коллекция может содержать не более 500 элементов.|
 |appAssociatedDomains|[коллекция macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md)|Получает или задает список, который сопополагает приложения с связанными доменами. Идентификаторы приложений должны быть уникальными. Эта коллекция может содержать не более 500 элементов.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает один профиль расширения для входов. Неуловимый: вместо этого используйте MacOSSingleSignOnExtension.|
@@ -76,7 +74,7 @@ ms.locfileid: "58260266"
 |contentCachingEnabled|Логический|Включает кэшинг контента и предотвращает его отключение пользователем.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Определяет, какой тип контента разрешен кэшировали службой кэшинга контента Apple. Возможные значения: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
 |contentCachingMaxSizeBytes|Int32|Максимальное количество bytes дискового пространства, которое будет использоваться для кэша контента. Значение 0 (по умолчанию) указывает на неограниченное пространство диска. |
-|contentCachingDataPath|String|Путь к каталогу, используемый для хранения кэшного контента. Значение должно быть (или заканчивается) /Library/Application Support/Apple/AssetCache/Data|
+|contentCachingDataPath|Строка|Путь к каталогу, используемый для хранения кэшного контента. Значение должно быть (или заканчивается) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Логический|Отключение общего доступа к Интернету.|
 |contentCachingForceConnectionSharing|Логический|Заставляет совместное использование подключения к Интернету. contentCachingDisableConnectionSharing переопределяет этот параметр.|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Определяет метод, с помощью которого серверы кэшинга контента будут прослушивать клиентов. Возможные значения: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
@@ -94,7 +92,6 @@ ms.locfileid: "58260266"
 |contentCachingPort|Int32|Задает порт, используемый для кэшинга контента. Если значение 0, будет выбран случайный доступный порт. Допустимые значения от 0 до 65535|
 
 ## <a name="relationships"></a>Связи
-
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -291,7 +288,6 @@ ms.locfileid: "58260266"
   "contentCachingPort": 1024
 }
 ```
-
 
 
 

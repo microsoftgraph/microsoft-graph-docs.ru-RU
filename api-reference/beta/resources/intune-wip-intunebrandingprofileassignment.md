@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d97eda1fc92ca5979f1712821d5fbc30229a23db0943860b0386a7d1d212d48e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f974c936e8b5c3ad39abfdaaf37a5a3e69bee150
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209765"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797467"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>тип ресурса intuneBrandingProfileAssignment
 
@@ -60,7 +60,6 @@ ms.locfileid: "54209765"
   }
 }
 ```
-
 
 
 

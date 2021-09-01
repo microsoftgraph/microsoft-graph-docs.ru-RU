@@ -1,18 +1,18 @@
 ---
-title: Удаление windowsMicrosoftEdgeApp
-description: Удаляет windowsMicrosoftEdgeApp.
+title: действие getHealthMetrics
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8da6137fde7d3ea3bc34d09c7403be9b8e90b028
+ms.openlocfilehash: ecdace5a02477346ccd0e4643241e7dd2dd4598a
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804801"
+ms.locfileid: "58785584"
 ---
-# <a name="delete-windowsmicrosoftedgeapp"></a>Удаление windowsMicrosoftEdgeApp
+# <a name="gethealthmetrics-action"></a>действие getHealthMetrics
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58804801"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет [windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md).
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,9 +37,7 @@ ms.locfileid: "58804801"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/getHealthMetrics
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -49,23 +47,52 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|metricNames|Коллекция строк|Н/Д|
+
+
+
+## <a name="response"></a>Ответ
+В случае успеха это действие возвращает код отклика и `200 OK` [коллекцию keyLongValuePair](../resources/intune-shared-keylongvaluepair.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}/getHealthMetrics
+
+Content-type: application/json
+Content-length: 55
+
+{
+  "metricNames": [
+    "Metric Names value"
+  ]
+}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 142
+
+{
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.keyLongValuePair",
+      "name": "Name value",
+      "value": 5
+    }
+  ]
+}
 ```
 
 

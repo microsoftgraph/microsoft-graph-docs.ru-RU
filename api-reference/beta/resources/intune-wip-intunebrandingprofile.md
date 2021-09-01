@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15fbf2802b078214c0c78e11576364ee074560645f471122d56bda2cccfc7dc8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c156ced8cd69864412e299b90173dfead4279c07
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209779"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792542"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>тип ресурса intuneBrandingProfile
 
@@ -35,7 +35,7 @@ ms.locfileid: "54209779"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ профиля|
+|id|Строка|Ключ профиля|
 |имя профиля|Строка|Имя профиля|
 |profileDescription|Строка|Описание профиля|
 |isDefaultProfile|Логический|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
@@ -55,7 +55,7 @@ ms.locfileid: "54209779"
 |onlineSupportSiteUrl|String|URL-адрес сайта it-справки компании/организации|
 |onlineSupportSiteName|String|Отображение имени сайта it-справки компании/организации|
 |privacyUrl|String|URL-адрес политики конфиденциальности компании и организации|
-|customPrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customPrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
 |customCanSeePrivacyMessage|Строка|Текстовые комментарии относительно доступа администратора к устройству|
 |customCantSeePrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
 |isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
@@ -144,7 +144,6 @@ ms.locfileid: "54209779"
   ]
 }
 ```
-
 
 
 

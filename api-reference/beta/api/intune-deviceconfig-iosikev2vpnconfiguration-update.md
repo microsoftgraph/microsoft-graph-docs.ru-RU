@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b87a1327da04cab5e3aeb38c794da8d126c58fb5
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 056849134f5fc76a57433ac25da8d58937bfb8dd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256478"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785593"
 ---
 # <a name="update-iosikev2vpnconfiguration"></a>Обновление iosikEv2VpnConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58256478"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -69,8 +69,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |connectionName|Строка|Имя подключения, отображаемая пользователю. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Тип подключения. Наследуется [от appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Возможные значения: `ciscoAnyConnect` `pulseSecure` , , , , , `f5EdgeClient` , , , `dellSonicWallMobileConnect` `checkPointCapsuleVpn` , , `customVpn` `ciscoIPSec` `citrix` `ciscoAnyConnectV2` , `paloAltoGlobalProtect` `zscalerPrivateAccess` `f5Access2018` `citrixSso` `paloAltoGlobalProtectV2` `ikEv2` `alwaysOn` `microsoftTunnel` `netMotionMobility` `microsoftProtect` .|
 |loginGroupOrDomain|String|Группа входа или домен при наборе типа подключения к мобильному подключению Dell SonicWALL. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|role|Строка|Роль при наборе типа подключения к Pulse Secure. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|realm|Строка|Realm, когда тип подключения за установлен в Pulse Secure. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|role|String|Роль при наборе типа подключения к Pulse Secure. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|realm|String|Realm, когда тип подключения за установлен в Pulse Secure. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |server|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)|VPN Server в сети. Убедитесь, что конечные пользователи могут получить доступ к этому расположению сети. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |идентификатор|Строка|Идентификатор, предоставляемый поставщиком VPN при наборе типа подключения к настраиваемой VPN. Например: Cisco AnyConnect использует идентификатор формы com.cisco.anyconnect.applevpn.plugin, унаследованный от [appleVpnConfiguration.](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |customData|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Настраиваемые данные при наборе типа подключения к настраиваемой VPN. Используйте это поле, чтобы включить функции, не поддерживаемые Intune, но доступные в vpn-решении. Обратитесь к поставщику VPN, чтобы узнать, как добавить эти пары ключей и значений. Эта коллекция может содержать не более 25 элементов. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
@@ -88,12 +88,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |disconnectOnIdleTimerInSeconds|Int32|Время в секундах, необходимое для ожидания перед отключением подключения по запросу. Допустимые значения от 0 до 65535, унаследованные от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Прокси-сервер. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Логический|Opt-In совместное использование Id устройства сторонним vpn-клиентам для использования во время проверки контроля доступа к сети. Унаследованный от [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|userDomain|String|Zscaler только. Введите статический домен для предварительного заполнения поля входа в приложение Zscaler. Если этот домен останется пустым, вместо него Azure Active Directory домен пользователя. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
+|userDomain|Строка|Zscaler только. Введите статический домен для предварительного заполнения поля входа в приложение Zscaler. Если этот домен останется пустым, вместо него Azure Active Directory домен пользователя. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |strictEnforcement|Логический|Zscaler только. Блокирует сетевой трафик до тех пор, пока пользователь не впишется в приложение Zscaler. "True" означает, что трафик заблокирован. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |cloudName|Строка|Zscaler только. Облако Zscaler, которому назначен пользователь. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |excludeList|Коллекция String|Zscaler только. Список сетевых адресов, которые не отправляются через облако Zscaler. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |targetedMobileApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Целевые мобильные приложения. Эта коллекция может содержать не более 500 элементов. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
-|microsoftTunnelSiteId|String|Microsoft Tunnel сайта. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
+|microsoftTunnelSiteId|Строка|Microsoft Tunnel сайта. Унаследованный от [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
 |childSecurityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|Параметры ассоциации безопасности детей|
 |clientAuthenticationType|[vpnClientAuthenticationType](../resources/intune-deviceconfig-vpnclientauthenticationtype.md)|Тип проверки подлинности клиента, который будет использовать VPN-клиент. Возможные значения: `userAuthentication`, `deviceAuthentication`.|
 |deadPeerDetectionRate|[vpnDeadPeerDetectionRate](../resources/intune-deviceconfig-vpndeadpeerdetectionrate.md)|Определите, как часто проверять, активна ли одноранговая связь. . Возможные значения: `medium`, `none`, `low`, `high`.|
@@ -104,16 +104,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |enablePerfectForwardSecrecy|Логический|Включить совершенную секретность вперед (PFS).|
 |enableUseInternalSubnetAttributes|Логический|Включить использование атрибутов внутренней подсети.|
 |localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|Метод идентификации клиента, который пытается подключиться с помощью VPN. . Возможные значения: `deviceFQDN`, `empty`, `clientCertificateSubjectName`.|
-|remoteIdentifier|String|Адрес сервера IKEv2. Должен быть FQDN, UserFQDN, сетевой адрес или ASN1DN|
+|remoteIdentifier|Строка|Адрес сервера IKEv2. Должен быть FQDN, UserFQDN, сетевой адрес или ASN1DN|
 |securityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|Параметры ассоциации безопасности|
 |serverCertificateCommonName|Строка|Общее имя сертификата сервера IKEv2, используемого в проверке подлинности сервера|
-|serverCertificateIssuerCommonName|String|Общее имя эмитента сертификата IKEv2 Server, используемого в проверке подлинности|
+|serverCertificateIssuerCommonName|Строка|Общее имя эмитента сертификата IKEv2 Server, используемого в проверке подлинности|
 |serverCertificateType|[vpnServerCertificateType](../resources/intune-deviceconfig-vpnservercertificatetype.md)|Тип сертификата, который VPN-сервер представит VPN-клиенту для проверки подлинности. Возможные значения: `rsa`, `ecdsa256`, `ecdsa384`, `ecdsa521`.|
 |sharedSecret|Строка|Используется при выборе общей секретной проверки подлинности|
-|tlsMaximumVersion|String|Максимальная версия TLS, используемая для проверки подлинности EAP-TLS|
-|tlsMinimumVersion|String|Минимальная версия TLS, используемая для проверки подлинности EAP-TLS|
+|tlsMaximumVersion|Строка|Максимальная версия TLS, используемая для проверки подлинности EAP-TLS|
+|tlsMinimumVersion|Строка|Минимальная версия TLS, используемая для проверки подлинности EAP-TLS|
 |allowDefaultSecurityAssociationParameters|Логический|Позволяет использовать параметры ассоциации безопасности, устанавливая все параметры по умолчанию устройства, если явно не указано.|
-|allowDefaultChildSecurityAssociationParameters|Логический|Позволяет использовать параметры ассоциации детской безопасности, устанавливая все параметры по умолчанию устройства, если явно не указано.|
+|allowDefaultChildSecurityAssociationParameters|Boolean|Позволяет использовать параметры ассоциации детской безопасности, устанавливая все параметры по умолчанию устройства, если явно не указано.|
 |alwaysOnConfiguration|[appleVpnAlwaysOnConfiguration](../resources/intune-deviceconfig-applevpnalwaysonconfiguration.md)|Конфигурация AlwaysOn|
 |enableAlwaysOnConfiguration|Логический|Определяет, включен ли always на VPN|
 |mtuSizeInBytes|Int32|Максимальный блок передачи. Допустимые значения от 1280 до 1400|
@@ -477,7 +477,6 @@ Content-Length: 5734
   "mtuSizeInBytes": 14
 }
 ```
-
 
 
 

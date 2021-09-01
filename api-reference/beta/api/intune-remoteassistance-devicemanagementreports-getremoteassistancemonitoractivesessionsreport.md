@@ -1,18 +1,18 @@
 ---
-title: Перечисление объектов termsAndConditionsAcceptanceStatus
-description: Список свойств и связей объектов termsAndConditionsAcceptanceStatus.
+title: getRemoteAssistanceMonitorActiveSessionsReport
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07fa88d422b11922982b54a2985cdc5bdd300c0f
+ms.openlocfilehash: 1b2d09abf2ac1d89922e7d4826026091a5246541
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786532"
+ms.locfileid: "58789290"
 ---
-# <a name="list-termsandconditionsacceptancestatuses"></a>Перечисление объектов termsAndConditionsAcceptanceStatus
+# <a name="getremoteassistancemonitoractivesessionsreport-action"></a>getRemoteAssistanceMonitorActiveSessionsReport
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58786532"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).
+Пока не задокументировано.
 
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "58786532"
 }
 -->
 ``` http
-GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
+POST /deviceManagement/reports/getRemoteAssistanceMonitorActiveSessionsReport
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,17 +47,54 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) в тексте отклика.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|name|String|Пока не задокументировано.|
+|select|Коллекция строк|Н/Д|
+|search|String|Пока не задокументировано.|
+|groupBy|Коллекция строк|Н/Д|
+|orderBy|Коллекция строк|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|sessionId|String|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceMonitorActiveSessionsReport
+
+Content-type: application/json
+Content-length: 278
+
+{
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
+}
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,19 +102,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsA
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 370
+Content-Length: 119
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
-      "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
-      "userDisplayName": "User Display Name value",
-      "acceptedVersion": 15,
-      "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
-      "userPrincipalName": "User Principal Name value"
-    }
-  ]
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZU1vbml0b3JBY3RpdmVTZXNzaW9uc1JlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSA3Mjc0MTA5OTE="
 }
 ```
 

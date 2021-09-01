@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ce89a76ee3c4a312eeca85975ce4b4416102fe18c27d1b376db5bb64431ec15
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3329b4e7f3412d62acafdb6a82b5838c9dd93f02
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206706"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785418"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -33,7 +33,7 @@ ms.locfileid: "54206706"
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Поставщик производных учетных данных для использования для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|Строка|URI самообслуживаемого поставщика учетных данных.|
 |androidDeviceAdministratorEnrollmentEnabled|Логический|Свойство, определяющее, включена ли регистрация администратора устройства Android для этой учетной записи.|
-|ignoreDevicesForUnsupportedSettingsEnabled|Логический|Свойство для определения того, следует ли игнорировать неподтверченные параметры соответствия определенным моделям устройств.|
+|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|Свойство для определения того, следует ли игнорировать неподтверченные параметры соответствия определенным моделям устройств.|
 |enableLogCollection|Логический|Определяет, должна ли функция коллекции журналов быть доступной для использования.|
 
 ## <a name="relationships"></a>Связи
@@ -61,7 +61,6 @@ ms.locfileid: "54206706"
   "enableLogCollection": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f4a3e9ff920171d3bb7a214c90d360ed66f58886241099e83df224825647d86
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a29db7b4be79c3c24a27feddff296f2c70c0f2d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190684"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796897"
 ---
 # <a name="installstate-enum-type"></a>тип installState enum
 
@@ -26,12 +26,11 @@ ms.locfileid: "54190684"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notApplicable|0|Не применимо.|
-|установлено|1 |Установлено.|
-|не удалось|2|Не выполнено.|
-|notInstalled|3 |Не установлено.|
+|установлено|1|Установлено.|
+|не удалось|2|Не удалось.|
+|notInstalled|3|Не установлено.|
 |uninstallFailed|4 |Uninstall Failed.|
 |unknown|5 |Неизвестно.|
-
 
 
 

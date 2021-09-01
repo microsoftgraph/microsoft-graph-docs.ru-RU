@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd7ece23b5127ea7849c4346d0a992e785af00130a2a2a4d08e7abd5ae757971
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 61431a290c9e084e4b009bf63282d71334f0b297
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146141"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58785670"
 ---
 # <a name="syncapps-action"></a>Действие syncApps
 
@@ -29,7 +29,7 @@ ms.locfileid: "54146141"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/syncApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccoun
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

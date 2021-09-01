@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2decb099afae983af7c8bf1e8e0d47a90a4d35aaeaa2b76dd69c2a6e2f3d59f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4182c369b81b0fbf1c66550a671e9c74c88936f2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242932"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796869"
 ---
 # <a name="iosazureadsinglesignonextension-resource-type"></a>тип ресурса iosAzureAdSingleSignOnExtension
 
@@ -57,7 +57,6 @@ ms.locfileid: "54242932"
   ]
 }
 ```
-
 
 
 

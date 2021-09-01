@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0915f61edd6ba8566fef42dab26a489333605506419d4adb7db058abf1bea8d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7a57dc5a1c7702cd4e0d2623ac2b0d54571a5d3a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232778"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798113"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>тип ресурса operatingSystemVersionRange
 
@@ -27,7 +27,7 @@ ms.locfileid: "54232778"
 |:---|:---|:---|
 |description|Строка|Описание этого диапазона (например, допустимые сборки 1702)|
 |lowestVersion|Строка|Самая низкая инклюзивная версия этого диапазона.|
-|highestVersion|String|Самая высокая инклюзивная версия этого диапазона.|
+|highestVersion|Строка|Самая высокая инклюзивная версия этого диапазона.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -47,7 +47,6 @@ ms.locfileid: "54232778"
   "highestVersion": "String"
 }
 ```
-
 
 
 

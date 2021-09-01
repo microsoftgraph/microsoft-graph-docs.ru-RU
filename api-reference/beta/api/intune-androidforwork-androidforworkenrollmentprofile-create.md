@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62389fb52837706f74ad54ab7f112d9eb17429635ef165d4219e3bae09fb90b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed9de9cab1ed75a61c5a34f832e14e91ebb6360d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208484"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784172"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Create androidForWorkEnrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "54208484"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |:---|:---|:---|
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
 |id|Строка|Уникальный GUID профиля регистрации.|
-|displayName|String|Отображаемое имя для профиля регистрации.|
+|displayName|Строка|Отображаемое имя для профиля регистрации.|
 |description|Строка|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
@@ -122,7 +122,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

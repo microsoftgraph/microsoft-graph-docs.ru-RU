@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a16f7634f0951649ae0a670c48e5598dbbf3c14d0fa1c06751e9d313ffe51f17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ee7f52df72be0f014bd3b6ad8c08264b20477b2d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206174"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790110"
 ---
 # <a name="devicemanagementscript-resource-type"></a>тип ресурса deviceManagementScript
 
@@ -45,7 +45,7 @@ Intune предоставит клиенту возможность запуск
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта.|
+|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
 |runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
@@ -86,7 +86,6 @@ Intune предоставит клиенту возможность запуск
   "runAs32Bit": true
 }
 ```
-
 
 
 
