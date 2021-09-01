@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eccba100b33e902bc7704a6f0fa3ff080b74b4aa8288b8d848b0eb0d229c43d3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ada2e640ead1e9e0cfd121e78ecf08cc93978ee9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232785"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804542"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>тип списка firewallCertificateRevocationListCheckMethodType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54232785"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Нет значения, настроенного Intune, не переопределять настроенное пользователем значение по умолчанию устройства|
-|Нет|1 |Не проверяйте список отзывов сертификатов|
+|Нет|1|Не проверяйте список отзывов сертификатов|
 |попытка|2|Попытка проверки CRL и разрешить сертификат только в том случае, если сертификат подтвержден проверкой|
-|требовать|3 |Требуется успешная проверка CRL перед разрешением сертификата|
-
+|требовать|3|Требуется успешная проверка CRL перед разрешением сертификата|
 
 
 

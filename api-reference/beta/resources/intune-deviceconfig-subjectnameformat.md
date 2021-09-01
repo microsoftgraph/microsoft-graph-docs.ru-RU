@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5795a34cbe5767d058a699348e6109c14c3289730458ef17e7903b0ec202bf3a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 02378a4963f99cb21d331f739ce727d25ccce8ff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248511"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795545"
 ---
 # <a name="subjectnameformat-enum-type"></a>тип enum subjectNameFormat
 
@@ -26,15 +26,14 @@ ms.locfileid: "54248511"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |commonName|0|Общее имя.|
-|commonNameIncludingEmail|1 |Общее имя, включая электронную почту.|
+|commonNameIncludingEmail|1|Общее имя, включая электронную почту.|
 |commonNameAsEmail|2|Общее имя в качестве электронной почты.|
-|настраиваемый|3 |Настраиваемый формат имени субъекта.|
+|настраиваемый|3|Настраиваемый формат имени субъекта.|
 |commonNameAsIMEI|5 |Общее имя как IMEI.|
 |commonNameAsSerialNumber|6 |Общее имя как серийный номер.|
 |commonNameAsAadDeviceId|7 |Общее имя как серийный номер.|
 |commonNameAsIntuneDeviceId|8 |Общее имя как серийный номер.|
 |commonNameAsDurableDeviceId|9 |Общее имя как серийный номер.|
-
 
 
 

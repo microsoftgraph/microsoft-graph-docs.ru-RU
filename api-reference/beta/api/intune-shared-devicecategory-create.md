@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c995f49577e9f58e3c2b59d6a46bf9dd55504d1fe1990ac5ff3ca9284b12c489
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 388461d6d7fdd230e83b1db149346c05012f6ffa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173676"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816116"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -31,7 +31,7 @@ ms.locfileid: "54173676"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceCategories
 
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceCategories
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Обборка**|
-|description|Строка|Необязательное описание категории устройств.|
+|description|String|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|
 
 ## <a name="response"></a>Отклик
@@ -101,7 +101,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

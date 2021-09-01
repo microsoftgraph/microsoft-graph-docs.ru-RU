@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 198627b7abaef0698b85eaf2e762dbf6c92ab0ac0eceb7c62ec965812d385f98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 073bfa785c65778cd083031086c3cd4f647cdf06
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54242069"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821790"
 ---
 # <a name="officeupdatechannel-enum-type"></a>тип enum officeUpdateChannel
 
@@ -26,12 +26,11 @@ Enum для указания канала обновлений Office365.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Пока не задокументировано.|
-|текущий|1 |Пока не задокументировано.|
+|текущий|1|Пока не задокументировано.|
 |отложенный|2|Пока не задокументировано.|
-|firstReleaseCurrent|3 |Пока не задокументировано.|
+|firstReleaseCurrent|3|Пока не задокументировано.|
 |firstReleaseDeferred|4 |Пока не задокументировано.|
 |monthlyEnterprise|5 |Пока не задокументировано.|
-
 
 
 

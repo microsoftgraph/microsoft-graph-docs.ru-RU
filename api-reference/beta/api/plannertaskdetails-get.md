@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: eb1318bbb28884c5d9e95b97274c4cae836ef322
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 79fbad68ba2e4cf8d3a00766e9ff24e0dc7bf946
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049977"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816123"
 ---
 # <a name="get-plannertaskdetails"></a>Получение объекта plannerTaskDetails
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +94,7 @@ Content-length: 1036
   "description": "Task details properties:\nchecklist:Sub items\nreferences:Related links",
   "previewType": "automatic",
   "references": {
-    "https%3A//developer%2Emicrosoft%2Ecom/en-us/graph/graph-explorer": {
+    "https%3A//developer%2Emicrosoft%2Ecom/graph/graph-explorer": {
       "@odata.type": "#microsoft.graph.plannerExternalReference",
       "alias": "Graph Explorer",
       "type": "Other",

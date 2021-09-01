@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84a655096625ee9faed4448d5e24043eddcdb964a33115b58668507596737ade
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eae8145ccb53da62fcbe979fb2caf07421b97b4b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54140001"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803344"
 ---
 # <a name="wipeandblockmanagedapps-action"></a>wipeAndBlockManagedApps action
 
@@ -29,7 +29,7 @@ ms.locfileid: "54140001"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /users/{usersId}/wipeAndBlockManagedApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/wipeAndBlockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

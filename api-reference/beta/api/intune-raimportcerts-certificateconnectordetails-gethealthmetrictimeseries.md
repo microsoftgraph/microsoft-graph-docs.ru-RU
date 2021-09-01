@@ -1,18 +1,18 @@
 ---
-title: Список пользователейExperienceAnalyticsDeviceStartupProcesses
-description: Список свойств и связей объектов userExperienceAnalyticsDeviceStartupProcess.
+title: действие getHealthMetricTimeSeries
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bc57005ff6675ee76a1aa31be1873a02d93105e
+ms.openlocfilehash: 1c694c47be08e9ab2fda8268fa0ac2e4682508cc
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797032"
+ms.locfileid: "58814023"
 ---
-# <a name="list-userexperienceanalyticsdevicestartupprocesses"></a>Список пользователейExperienceAnalyticsDeviceStartupProcesses
+# <a name="gethealthmetrictimeseries-action"></a>действие getHealthMetricTimeSeries
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58797032"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей [объектов userExperienceAnalyticsDeviceStartupProcess.](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58797032"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
+POST /deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,17 +47,37 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
 
-## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) в тексте ответа.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|timeSeries|[timeSeriesParameter](../resources/intune-raimportcerts-timeseriesparameter.md)|Пока не задокументировано.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успеха это действие возвращает код ответа и `200 OK` [коллекцию certificateConnectorHealthMetricValue](../resources/intune-raimportcerts-certificateconnectorhealthmetricvalue.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetricTimeSeries
+
+Content-type: application/json
+Content-length: 242
+
+{
+  "timeSeries": {
+    "@odata.type": "microsoft.graph.timeSeriesParameter",
+    "metricName": "Metric Name value",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "endDateTime": "2017-01-01T00:03:30.9241974-08:00"
+  }
+}
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,18 +85,15 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 386
+Content-Length: 225
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcess",
-      "id": "03b451e6-51e6-03b4-e651-b403e651b403",
-      "managedDeviceId": "Managed Device Id value",
-      "processName": "Process Name value",
-      "productName": "Product Name value",
-      "publisher": "Publisher value",
-      "startupImpactInMs": 1
+      "@odata.type": "microsoft.graph.certificateConnectorHealthMetricValue",
+      "dateTime": "2016-12-31T23:59:57.0735821-08:00",
+      "successCount": 12,
+      "failureCount": 12
     }
   ]
 }

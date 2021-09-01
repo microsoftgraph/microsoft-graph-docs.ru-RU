@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe377a20b83ade145e1cdf4587cd3304fd06ae3f9406c9d0097b3f1fdc048bd3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5cf94c4d25c7e84343019d2671b1c8561b955be8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145651"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816305"
 ---
 # <a name="delete-onpremencryptedpayload"></a>Удаление наPremEncryptedPayload
 
@@ -29,7 +29,7 @@ ms.locfileid: "54145651"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/onPremEncryptedPayloads/{onPremEncrypted
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

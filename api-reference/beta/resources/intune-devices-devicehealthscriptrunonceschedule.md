@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 324b8c0ced6c2e10da4dfd0a60c6d4c4aa26d2140176cd85f35527769daadf39
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c51150e9299a44495c517e8f78a4e67de3ce47c1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206370"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802476"
 ---
 # <a name="devicehealthscriptrunonceschedule-resource-type"></a>тип ресурса deviceHealthScriptRunOnceSchedule
 
@@ -52,7 +52,6 @@ ms.locfileid: "54206370"
   "date": "String (Date)"
 }
 ```
-
 
 
 

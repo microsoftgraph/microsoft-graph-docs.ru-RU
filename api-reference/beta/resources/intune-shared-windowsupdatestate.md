@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 648e8bb9348f8b1bea78e8c06113555d350891bea0265faa768ad8fa0dc76fc2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c0f4e986483f5c4dce849295406ebad3cec721c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193540"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803751"
 ---
 # <a name="windowsupdatestate-resource-type"></a>тип ресурса windowsUpdateState
 
@@ -34,14 +34,14 @@ ms.locfileid: "54193540"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Это Id объекта.|
+|id|Строка|Это Id объекта.|
 |deviceId|String|ID устройства.|
 |userId|String|ID пользователя.|
 |deviceDisplayName|String|Имя отображения устройства.|
 |userPrincipalName|String|Имя основного пользователя.|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|String|Версия обновления качества устройства.|
-|featureUpdateVersion|String|Текущая версия обновления функций устройства.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|qualityUpdateVersion|Строка|Версия обновления качества устройства.|
+|featureUpdateVersion|Строка|Текущая версия обновления функций устройства.|
 |lastScanDateTime|DateTimeOffset|Время даты успешного Windows агента обновления.|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда устройство синхронизируется с Microsoft Intune.|
 
@@ -71,7 +71,6 @@ ms.locfileid: "54193540"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

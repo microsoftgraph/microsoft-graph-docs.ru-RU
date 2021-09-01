@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50a60272b50bf85006e3cdb13fa00abf4208ed4c70dc16ad58b21d6b5fda00cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6495d80c548f3847dd7ac88adcb3f92b14c04409
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241541"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807644"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
 
@@ -35,12 +35,12 @@ ms.locfileid: "54241541"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|Строка|Категория ресурсов, к которой относится эта операция.|
+|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|resource|String|Категория ресурсов, к которой относится эта операция. Это свойство доступно только для чтения.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Логический|Определяет, проверяется ли разрешение для областей, определенных для назначения ролей.|
+|enabledForScopeValidation|Логический|Определяет, проверяется ли разрешение для областей, определенных для назначения ролей. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -64,7 +64,6 @@ ms.locfileid: "54241541"
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

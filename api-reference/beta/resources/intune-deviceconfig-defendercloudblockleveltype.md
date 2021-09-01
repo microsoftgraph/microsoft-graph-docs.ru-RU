@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 807dccf28eb0c3de713f36dafcfc753405f069cceb45ff3351278f59e8ef8bc3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d5f3133f21d9da39cd3cd7bd6bb34f693b85889d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226429"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805754"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>тип enum defenderCloudBlockLevelType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54226429"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Значение по умолчанию, использует уровень антивирусная программа по умолчанию и обеспечивает сильное обнаружение без увеличения риска обнаружения законных файлов|
-|высокая|1 |High применяет высокий уровень обнаружения.|
+|высокая|1|High применяет высокий уровень обнаружения.|
 |highPlus|2|High + использует высокий уровень и применяет меры защиты от добавления|
-|zeroTolerance|3 |Нулевая толерантность блокирует все неизвестные исполняемые|
-
+|zeroTolerance|3|Нулевая толерантность блокирует все неизвестные исполняемые|
 
 
 

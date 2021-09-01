@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ee4e47c17095c6731a57c2de56f5769e9e8df2d40d67d2bc0b40aa3f4d1a0d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 67a33c9d4cb1791e5d5de870805738dcd58f9cd5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176493"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805417"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -26,9 +26,9 @@ ms.locfileid: "54176493"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображаемое имя.|
-|description|String|Описание.|
+|description|Строка|Описание.|
 |omaUri|String|OMA.|
-|secretReferenceValueId|String|ReferenceId для поисков секрета для расшифровки. Это свойство доступно только для чтения.|
+|secretReferenceValueId|Строка|ReferenceId для поисков секрета для расшифровки. Это свойство доступно только для чтения.|
 |isEncrypted|Boolean|Указывает, зашифровано ли поле значений. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
@@ -51,7 +51,6 @@ ms.locfileid: "54176493"
   "isEncrypted": true
 }
 ```
-
 
 
 

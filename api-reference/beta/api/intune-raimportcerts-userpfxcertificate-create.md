@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b05e4ca7a62626425bb2f07e02e602ecd758d3f4b0775bf9da826f53ef93540f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8470bf0f648e68521d162c9846ec7075185f9bc7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170862"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794900"
 ---
 # <a name="create-userpfxcertificate"></a>Создание userPFXCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "54170862"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,14 @@ POST /deviceManagement/userPfxCertificates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сертификата PFX.|
-|отпечатки пальцев|String|Отпечатки sha-1 сертификата PFX.|
+|id|Строка|Уникальный идентификатор для сертификата PFX.|
+|отпечатки пальцев|Строка|Отпечатки sha-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Предназначение сертификата с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |providerName|Строка|Поставщик криптографии, используемый для шифрования этого blob.|
-|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
+|keyName|Строка|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком при шифровании и расшифровке. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |зашифрованныйPfxBlob|В двоичном формате|Зашифрованный BLOB PFX.|
 |зашифрованныйPfxPassword|Строка|Зашифрованный пароль PFX.|
@@ -120,7 +120,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

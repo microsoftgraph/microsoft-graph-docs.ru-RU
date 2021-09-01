@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a157111db947e9e7c186c30be6cc63a709b82922
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f1593d4f25a3da7f631c69e105dc8652453e01f6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263618"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815045"
 ---
 # <a name="managementagenttype-enum-type"></a>тип enum managementAgentType
 
@@ -25,9 +25,9 @@ ms.locfileid: "58263618"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|eas|1 |Устройство управляется Exchange сервером.|
+|eas|1|Устройство управляется Exchange сервером.|
 |mdm|2|Устройство управляется intune MDM.|
-|easMdm|3 |Устройство управляется как сервером Exchange, так и MDM Intune.|
+|easMdm|3|Устройство управляется как сервером Exchange, так и MDM Intune.|
 |intuneClient|4 |Клиент Intune управляется.|
 |easIntuneClient|5 |Устройство является двойным управляемым клиентом EAS и Intune.|
 |configurationManagerClient|8 |Устройство управляется диспетчером конфигурации.|
@@ -39,7 +39,6 @@ ms.locfileid: "58263618"
 |Microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 через Intune.|
 |msSense|1024|Пока не задокументировано.|
 |intuneAosp|2048|Это устройство управляется устройствами MDM intune для AOSP (Android Open Source Project)|
-
 
 
 

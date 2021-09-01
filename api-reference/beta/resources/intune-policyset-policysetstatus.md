@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a31849f4984edbabdda45e319df9a8cba5005cb76302f8b68dc414ef7a59b651
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 384eb054757e2a71ff15b4af45d91cc940416adb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150187"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58757904"
 ---
 # <a name="policysetstatus-enum-type"></a>тип enum policySetStatus
 
@@ -26,12 +26,11 @@ ms.locfileid: "54150187"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Значение по умолчанию.|
-|проверка|1 |Все элементы PolicySet теперь являются проверкой для соответствующих параметров рабочих нагрузок.|
+|проверка|1|Все элементы PolicySet теперь являются проверкой для соответствующих параметров рабочих нагрузок.|
 |partialSuccess|2|После завершения процесса для всех элементов PolicySet, но есть сбои.|
-|success|3 |Развертываются все элементы PolicySet. Это не значит, что все развертывание успешно. |
+|success|3|Развертываются все элементы PolicySet. Это не значит, что все развертывание успешно. |
 |error|4 |Обработка PolicySet полностью провалилась.|
 |notAssigned|5 |PolicySet/PolicySetItem не назначена ни одной группе.|
-
 
 
 

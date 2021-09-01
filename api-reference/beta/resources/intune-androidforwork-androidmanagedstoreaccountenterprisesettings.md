@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32de0a3f713393c829e56b07a70080d5bc5611ee
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e55fd9dd68fcc0673b591e45c1ff4c240d752031
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263837"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806987"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>тип ресурса androidManagedStoreAccountEnterpriseSettings
 
@@ -49,7 +49,7 @@ Enterprise для учетной записи управляемого мага�
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
 |deviceOwnerManagementEnabled|Логический|Указывает, работает ли эта учетная запись для управления владельцем android-устройств с помощью CloudDPC.|
 |companyCodes|[коллекция androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|Логический|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
 |managedGooglePlayInitialScopeTagIds|Коллекция String|Начальные теги области для приложений MGP|
 
 ## <a name="relationships"></a>Связи
@@ -96,7 +96,6 @@ Enterprise для учетной записи управляемого мага�
   ]
 }
 ```
-
 
 
 
