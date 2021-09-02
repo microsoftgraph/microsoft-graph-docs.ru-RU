@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3698f7f47400d3a3d62f29f67a7b8b33cd8c1231dfdf41a0d5179151dbfc5c65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 055f9f63f7e42673ef34150f9addec50b3c5d0bd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54207791"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804633"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Создание windowsInformationProtectionWipeAction
 
@@ -29,7 +29,7 @@ ms.locfileid: "54207791"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,10 +55,10 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|String|Объект UserId, на который нацелено это действие стирки.|
-|targetedDeviceRegistrationId|Строка|Объект DeviceRegistrationId, нацеленный этим действием на стирку.|
-|targetedDeviceName|String|Целевое имя устройства.|
-|targetedDeviceMacAddress|String|Адрес Mac целевого устройства.|
+|targetedUserId|Строка|Объект UserId, на который нацелено это действие стирки.|
+|targetedDeviceRegistrationId|String|Объект DeviceRegistrationId, нацеленный этим действием на стирку.|
+|targetedDeviceName|Строка|Целевое имя устройства.|
+|targetedDeviceMacAddress|Строка|Адрес Mac целевого устройства.|
 |lastCheckInDateTime|DateTimeOffset|Время последней проверки устройства, на которое было нацелено это действие стирки.|
 
 
@@ -104,7 +104,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

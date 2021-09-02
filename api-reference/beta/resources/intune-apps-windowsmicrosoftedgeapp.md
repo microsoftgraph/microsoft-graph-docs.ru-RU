@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed5f1de096cb0bc25eebe587f69488ed7e1d9d5d24c499d73c39b66af5cd0433
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf1b0e61776f37b46771c197c32925f23c010990
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210045"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804318"
 ---
 # <a name="windowsmicrosoftedgeapp-resource-type"></a>тип ресурса windowsMicrosoftEdgeApp
 
@@ -38,8 +38,8 @@ ms.locfileid: "54210045"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -58,7 +58,7 @@ ms.locfileid: "54210045"
 |supersedingAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |supersededAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно вымежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |канал|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|Канал для установки на целевых устройствах. Возможные значения: `dev`, `beta`, `stable`.|
-|displayLanguageLocale|String|Языковой язык, который можно использовать, когда приложение Edge отображает текст пользователю.|
+|displayLanguageLocale|Строка|Языковой язык, который можно использовать, когда приложение Edge отображает текст пользователю.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -111,7 +111,6 @@ ms.locfileid: "54210045"
   "displayLanguageLocale": "String"
 }
 ```
-
 
 
 

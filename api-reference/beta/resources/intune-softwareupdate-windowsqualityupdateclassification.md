@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1a15e7a1dac94252d14f318589db8a3d3f8805612c1f3de8cdfc19c10146b33a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 28ba933528f4d96c05ee3abb80fb93e56f31e762
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170365"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787204"
 ---
 # <a name="windowsqualityupdateclassification-enum-type"></a>тип enum windowsQualityUpdateClassification
 
@@ -26,9 +26,8 @@ Windows классификации обновлений качества
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |все|0|Весь тип обновления|
-|безопасность|1 |Тип обновления только для безопасности|
+|безопасность|1|Тип обновления только для безопасности|
 |nonSecurity|2|Тип обновления только для небезопасности|
-
 
 
 

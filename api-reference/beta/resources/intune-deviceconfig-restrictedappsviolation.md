@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65de2d32ef56117c410909468302c4e841c760c4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5c86b8e166b10aabb03356f3f51c61d3ddb38a9e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253483"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804514"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>тип ресурса restrictedAppsViolation
 
@@ -34,12 +34,12 @@ ms.locfileid: "58253483"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта. Составлено из accountId, deviceId, policyId и userId|
+|id|Строка|Уникальный идентификатор объекта. Составлено из accountId, deviceId, policyId и userId|
 |userId|String|Уникальный идентификатор пользователя должен быть Guid|
 |userName|String|Имя пользователя|
 |managedDeviceId|Строка|Уникальный идентификатор управляемого устройства должен быть Guid|
 |deviceName|String|Имя устройства|
-|deviceConfigurationId|String|Уникальный идентификатор конфигурации устройства должен быть Guid|
+|deviceConfigurationId|Строка|Уникальный идентификатор конфигурации устройства должен быть Guid|
 |DeviceConfigurationName|Строка|Имя профиля конфигурации устройства|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
@@ -76,7 +76,6 @@ ms.locfileid: "58253483"
   ]
 }
 ```
-
 
 
 

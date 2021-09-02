@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6aaee359687ff302e89912131af3490696072e225a5b54be134653c44769d34
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d315a4ddee6d59c8fc951e6787e97492799431b3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227493"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804297"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>тип enum defenderSecurityCenterITContactDisplayType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54227493"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Not Configured|
-|displayInAppAndInNotifications|1 |Отображение в приложении и уведомлениях|
+|displayInAppAndInNotifications|1|Отображение в приложении и уведомлениях|
 |displayOnlyInApp|2|Отображение только в приложении|
-|displayOnlyInNotifications|3 |Отображение только в уведомлениях|
-
+|displayOnlyInNotifications|3|Отображение только в уведомлениях|
 
 
 

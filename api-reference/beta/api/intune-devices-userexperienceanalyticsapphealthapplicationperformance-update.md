@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12b93a614a73a1d7acfa01e8b3f6f076c3a48f48
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6e7ffdbc14225e956e065f2c74089022be5e0f0d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266039"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797067"
 ---
 # <a name="update-userexperienceanalyticsapphealthapplicationperformance"></a>Обновление userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "58266039"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |appHangCount|Int32|Количество зависает для приложения. Допустимые значения 2147483648 2147483647|
 |appHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |appHealthStatus|Строка|Общее состояние здоровья приложения.|
@@ -61,7 +61,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{
 |activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения 2147483648 2147483647|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|String|Издатель приложения.|
+|appPublisher|Строка|Издатель приложения.|
 |appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения 2147483648 2147483647|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения 2147483648 2147483647|
@@ -119,7 +119,6 @@ Content-Length: 522
   "meanTimeToFailureInMinutes": 10
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7e741d1d7b5de0a9ea43a84273ff1cf6629d016bcf3a4139babc4c227a28b4b5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac0a3e2fa8c113339afb2f255efe088f97d51602
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227577"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783262"
 ---
 # <a name="androidsafetynetevaluationtype-enum-type"></a>тип enum androidSafetyNetEvaluationType
 
@@ -26,8 +26,7 @@ Enum, представляющий типы аттестации Android SafetyN
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |основные|0|Значение по умолчанию. Использовались типичные измерения и справочные данные.|
-|hardwareBacked|1 |Использовались функции безопасности с аппаратным обеспечением (например, проверки ключей).|
-
+|hardwareBacked|1|Использовались функции безопасности с аппаратным обеспечением (например, проверки ключей).|
 
 
 

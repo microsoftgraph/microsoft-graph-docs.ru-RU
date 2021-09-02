@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e95a6f1183ecb942f5606f6db31b1b3577a6a77d1397ab7f5ed22341fa04c259
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 426b9220a6fe6c0c2abf32b7776f5d7164327cee
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186655"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818479"
 ---
 # <a name="create-officesuiteapp"></a>Создание officeSuiteApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "54186655"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +54,8 @@ POST /deviceAppManagement/mobileApps
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -82,8 +82,8 @@ POST /deviceAppManagement/mobileApps
 |localesToInstall|Коллекция String|Свойство, которое будет представлять локальные органы, установленные при установке приложений из Office365. Он использует стандартный RFC 6033. Ref: https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Чтобы указать уровень отображения пользовательского интерфейса установки установки на устройстве. Возможные значения: `none`, `full`.|
 |shouldUninstallOlderVersionsOfOffice|Логический|Свойство, определяющее, следует ли удалить существующие Office MSI, если набор приложений Office365 развернут на устройстве или нет.|
-|targetVersion|Строка|Свойство, которое должно представлять конкретную целевую версию пакета приложений Office365, которая должна быть развернута на устройствах.|
-|updateVersion|Строка|Свойство, которое представляет версию обновления, в которой конкретная целевая версия доступна для пакета приложений Office365.|
+|targetVersion|String|Свойство, которое должно представлять конкретную целевую версию пакета приложений Office365, которая должна быть развернута на устройствах.|
+|updateVersion|String|Свойство, которое представляет версию обновления, в которой конкретная целевая версия доступна для пакета приложений Office365.|
 |officeConfigurationXml|В двоичном формате|Свойство, которое представляет XML-файл конфигурации, который может быть указан для Office ProPlus Apps. Имеет приоритет над всеми другими свойствами. В настоящее время для создания приложения будет использоваться XML-файл конфигурации.|
 
 
@@ -231,7 +231,6 @@ Content-Length: 1847
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

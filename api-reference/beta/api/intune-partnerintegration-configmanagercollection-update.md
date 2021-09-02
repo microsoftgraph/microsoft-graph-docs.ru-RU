@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77cb3e92f17133eb5577f26141c98b306a0569a1c475cd6be7779c2801837398
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 903d52c0263cddb4af4f77c13da97e605124c1af
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181561"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783038"
 ---
 # <a name="update-configmanagercollection"></a>Обновление configManagerCollection
 
@@ -29,7 +29,7 @@ ms.locfileid: "54181561"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configManagerCollections/{configManagerCollectionId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,11 +53,11 @@ PATCH /deviceManagement/configManagerCollections/{configManagerCollectionId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ для коллекции ConfigManager.|
-|displayName|Строка|The DisplayName.|
+|id|Строка|Ключ для коллекции ConfigManager.|
+|displayName|String|The DisplayName.|
 |collectionIdentifier|Строка|Идентификатор коллекции в SCCM.|
 |hierarchyName|Строка|Имя иерархии.|
-|hierarchyIdentifier|String|Идентификатор иерархии.|
+|hierarchyIdentifier|Строка|Идентификатор иерархии.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения.|
 
@@ -102,7 +102,6 @@ Content-Length: 435
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

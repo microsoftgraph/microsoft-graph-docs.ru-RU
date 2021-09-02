@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a90071a574c981eb532db5dd7f8588503f5817ad13315bc903d02eafe53b6106
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2374d8b29ceb2619fc4512c03bd509716cb28c7b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239457"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58782961"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>тип enum ratingAustraliaTelevisionType
 
@@ -26,15 +26,14 @@ ms.locfileid: "54239457"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
-|allBlocked|1 |Не разрешайте контент тв-шоу|
+|allBlocked|1|Не разрешайте контент тв-шоу|
 |дошкольники|2|Классификация P предназначена для дошкольников|
-|children|3 |Классификация C предназначена для детей до 14 лет|
+|children|3|Классификация C предназначена для детей до 14 лет|
 |общие|4 |Классификация G подходит для всех возрастов|
 |parentalGuidance|5 |Классификация PG рекомендуется для молодых зрителей|
 |зрелый|6 |Классификация M рекомендуется для зрителей старше 15 лет|
 |agesAbove15|7 |Классификация MA15+ не подходит для зрителей в возрасте до 15 лет|
 |agesAbove15AdultViolence|8 |Классификация AV15+ не подходит для зрителей в возрасте до 15 лет, для взрослых|
-
 
 
 

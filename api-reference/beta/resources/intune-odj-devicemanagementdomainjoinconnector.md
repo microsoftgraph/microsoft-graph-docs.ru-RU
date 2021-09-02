@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 801cafddad4cdd89d4cbd669e0cecf678c0b79c8432604bb5bf201b3c240ab08
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f99f8dc17e292ca01a614cf1201cab8d0f918cd4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164176"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783864"
 ---
 # <a name="devicemanagementdomainjoinconnector-resource-type"></a>тип ресурса deviceManagementDomainJoinConnector
 
@@ -34,7 +34,7 @@ ms.locfileid: "54164176"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для представления соединитетеля.|
+|id|Строка|Уникальный идентификатор для представления соединитетеля.|
 |displayName|Строка|Имя отображения соединитетеля.|
 |lastConnectionDateTime|DateTimeOffset|Последний раз соединитель связывался с Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединитетеля. Возможные значения: `active`, `error`, `inactive`.|
@@ -61,7 +61,6 @@ ms.locfileid: "54164176"
   "version": "String"
 }
 ```
-
 
 
 

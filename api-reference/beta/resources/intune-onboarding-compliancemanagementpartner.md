@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4acb774a6478f2d3bfd27c582c245ecea605d092896ef89b3a746a32e67db9a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40383df26775e880f45b5f79013c945fe091c87a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235991"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801460"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>тип ресурсов complianceManagementPartner
 
@@ -34,7 +34,7 @@ ms.locfileid: "54235991"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id объекта|
+|id|Строка|Id объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Строка|Отображаемое имя партнера|
@@ -115,7 +115,6 @@ ms.locfileid: "54235991"
   ]
 }
 ```
-
 
 
 

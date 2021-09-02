@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e328642f3879a5610ce0ffeff8a47d97e2dd4890940e4e1f3d65a3029edfadaa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8a614d34eefc8a26a3b8c769a5f3a82b7e3bfe98
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153190"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818310"
 ---
 # <a name="androiddeviceownerenrollmentprofiletype-enum-type"></a>тип enum androidDeviceOwnerEnrollmentProfileType
 
@@ -26,9 +26,8 @@ ms.locfileid: "54153190"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен; это значение игнорируется.|
-|dedicatedDevice|1 |Выделенное устройство.|
+|dedicatedDevice|1|Выделенное устройство.|
 |fullyManaged|2|Полностью управляемый.|
-
 
 
 

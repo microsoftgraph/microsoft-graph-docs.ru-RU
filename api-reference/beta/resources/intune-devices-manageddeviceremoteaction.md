@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57e202bc257160902f32cf99393e9d20caf47c05
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: a8da1d5d85ce5e3c5444b41a1f655672bf799647
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253462"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788943"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип enum managedDeviceRemoteAction
 
@@ -26,9 +26,9 @@ ms.locfileid: "58253462"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |уходить на пенсию|0|Пока не задокументировано.|
-|delete|1 |Пока не задокументировано.|
+|delete|1|Пока не задокументировано.|
 |fullScan|2|Пока не задокументировано.|
-|quickScan|3 |Пока не задокументировано.|
+|quickScan|3|Пока не задокументировано.|
 |signatureUpdate|4 |Пока не задокументировано.|
 |wipe|5 |Пока не задокументировано.|
 |customTextNotification|6 |Пока не задокументировано.|
@@ -38,8 +38,9 @@ ms.locfileid: "58253462"
 |deprovision|10 |Имя действия deprovision.|
 |отключение|11 |Имя действия отключения.|
 |reenable|12 |Имя повторного действия.|
-|moveDeviceToOrganizationalUnit|13 |Имя действия moveDevicesToOU.|
-
+|moveDeviceToOrganizationalUnit|13|Имя действия moveDevicesToOU.|
+|activateDeviceEsim|14 |Имя действия для активации eSIM на устройстве.|
+|collectDiagnostics|15 |Имя действия collectDiagnostics.|
 
 
 

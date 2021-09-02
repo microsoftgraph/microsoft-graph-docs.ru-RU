@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b95e11eb50e9d11e01db0b12d6bad2356b526e30
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 150728d7c3a9a442c83dd444b58fc8b3d0256105
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257909"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783115"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Create macOSGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58257909"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -63,7 +63,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
@@ -92,18 +92,18 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |iCloudBlockMail|Логический|Указывает, следует ли блокировать iCloud при синхронизации почты.|
 |iCloudBlockAddressBook|Логический|Указывает, следует ли блокировать iCloud при синхронизации контактов.|
 |iCloudBlockCalendar|Логический|Указывает, следует ли блокировать iCloud от синхронизации календарей.|
-|iCloudBlockReminders|Логический|Указывает, следует ли блокировать iCloud при синхронизации напоминаний.|
+|iCloudBlockReminders|Boolean|Указывает, следует ли блокировать iCloud при синхронизации напоминаний.|
 |iCloudBlockBookmarks|Логический|Указывает, следует ли блокировать iCloud при синхронизации закладок.|
-|iCloudBlockNotes|Логический|Указывает, следует ли блокировать iCloud при синхронизации заметок.|
+|iCloudBlockNotes|Boolean|Указывает, следует ли блокировать iCloud при синхронизации заметок.|
 |airDropBlocked|Boolean|Указывает, разрешить или не разрешить AirDrop.|
-|passwordBlockModification|Логический|Указывает, следует ли разрешить изменение пароля.|
+|passwordBlockModification|Boolean|Указывает, следует ли разрешить изменение пароля.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|passwordBlockAutoFill|Логический|Указывает, следует ли блокировать функцию AutoFill Passwords.|
+|passwordBlockAutoFill|Boolean|Указывает, следует ли блокировать функцию AutoFill Passwords.|
 |passwordBlockProximityRequests|Логический|Указывает, следует ли блокировать запрашивающие пароли с близлежащих устройств.|
-|passwordBlockAirDropSharing|Логический|Указывает, следует ли блокировать совместное использование паролей с помощью функции паролей AirDrop.|
+|passwordBlockAirDropSharing|Boolean|Указывает, следует ли блокировать совместное использование паролей с помощью функции паролей AirDrop.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Задает время, за которое будет отламывно обновление программного обеспечения для контролируемого устройства. Допустимые значения: от 0 до 90.|
-|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Определяет, откладывать ли обновления ОС и/или приложений для macOS. Возможные значения: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`.|
-|contentCachingBlocked|Логический|Указывает, следует ли разрешить кэшинг контента.|
+|updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Определяет, откладывать ли обновления ОС и/или приложений для macOS. Возможные значения: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`, `unknownFutureValue`, `delayMajorOsUpdateVisibility`.|
+|contentCachingBlocked|Boolean|Указывает, следует ли разрешить кэшинг контента.|
 |iCloudBlockPhotoLibrary|Boolean|Указывает, следует ли заблокировать медиатеку iCloud.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Указывает, следует ли разрешить удаленное наблюдение экрана в приложении Classroom. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
@@ -115,8 +115,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |privacyAccessControls|[коллекция macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)|Список элементов управления политиками конфиденциальности. Эта коллекция может содержать не более 10 000 элементов.|
 |addingGameCenterFriendsBlocked|Логический|Да, не позволяет пользователям добавлять друзей в Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
 |gameCenterBlocked|Boolean|Да, отключает центр игры, и значок Центра игры удаляется с домашнего экрана. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|multiplayerGamingBlocked|Логический|Да, предотвращает многопользовательские игры при использовании Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|wallpaperModificationBlocked|Логический|Да, не позволяет изменить обои. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
+|multiplayerGamingBlocked|Логический|TRUE предотвращает многопользовательские игры при использовании Game Center. FALSE позволяет многопользовательские игры при использовании Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
+|wallpaperModificationBlocked|Boolean|TRUE не позволяет изменить обои. FALSE позволяет изменить обои. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
+|eraseContentAndSettingsBlocked|Логический|TRUE отключает параметр сброса на контролируемых устройствах. FALSE включает параметр сброса на контролируемых устройствах. Доступно для устройств с macOS-версиями 12.0 и более поздней версии.|
+|softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости основных обновлений программного обеспечения ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
+|softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости незначительных обновлений программного обеспечения ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
+|softwareUpdateNonOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости обновлений программного обеспечения без ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
 
 
 
@@ -130,7 +134,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4685
+Content-length: 4900
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -261,7 +265,11 @@ Content-length: 4685
   "addingGameCenterFriendsBlocked": true,
   "gameCenterBlocked": true,
   "multiplayerGamingBlocked": true,
-  "wallpaperModificationBlocked": true
+  "wallpaperModificationBlocked": true,
+  "eraseContentAndSettingsBlocked": true,
+  "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
 }
 ```
 
@@ -270,7 +278,7 @@ Content-length: 4685
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4857
+Content-Length: 5072
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -404,10 +412,13 @@ Content-Length: 4857
   "addingGameCenterFriendsBlocked": true,
   "gameCenterBlocked": true,
   "multiplayerGamingBlocked": true,
-  "wallpaperModificationBlocked": true
+  "wallpaperModificationBlocked": true,
+  "eraseContentAndSettingsBlocked": true,
+  "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
+  "softwareUpdateNonOSDeferredInstallDelayInDays": 13
 }
 ```
-
 
 
 

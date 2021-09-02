@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c88252d700c577d92695fc0657d44306d8f51d34225ffa2b26d523e4bed8594
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea9a9b63a30e0de8ad8fadf167cdbb51ce5df6a5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252993"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803513"
 ---
 # <a name="devicemanagementintentsettingcategory-resource-type"></a>тип ресурса deviceManagementIntentSettingCategory
 
@@ -63,7 +63,6 @@ ms.locfileid: "54252993"
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

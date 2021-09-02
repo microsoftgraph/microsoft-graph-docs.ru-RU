@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d3bc9b0862dd376b393019838980ce9c82c7df3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 38ef6bde17bb005b9e08c9ba957ff6c4ee0a4fd5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58267068"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803260"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>тип enum deviceEnrollmentType
 
@@ -26,9 +26,9 @@ ms.locfileid: "58267068"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Значение по умолчанию, тип регистрации не был собран.|
-|userEnrollment|1 |Регистрация по инициативе пользователя через канал BYOD.|
+|userEnrollment|1|Регистрация по инициативе пользователя через канал BYOD.|
 |deviceEnrollmentManager|2|Регистрация пользователей с учетной записью диспетчера регистрации устройств.|
-|appleBulkWithUser|3 |Массовое зачисление Apple с проблемой пользователя. (DEP, настраиваемый Apple)|
+|appleBulkWithUser|3|Массовое зачисление Apple с проблемой пользователя. (DEP, настраиваемый Apple)|
 |appleBulkWithoutUser|4 |Массовое зачисление Apple без проблем пользователя. (DEP, Apple Configurator, Mobile Config)|
 |windowsAzureADJoin|5 |Windows 10 Присоединиться к Azure AD.|
 |windowsBulkUserless|6 |Windows 10 Массовая регистрация через ICD с сертификатом.|
@@ -42,7 +42,6 @@ ms.locfileid: "58267068"
 |AndroidEnterpriseDedicatedDevice|15 |Выделенное устройство Enterprise Android|
 |AndroidEnterpriseFullyManaged|16 |Полностью управляемый Enterprise Android|
 |AndroidEnterpriseCorporateWorkProfile|17 |Профиль корпоративной Enterprise Android|
-
 
 
 

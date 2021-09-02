@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb269ed4d4b047b060e5bd6b5685293069d9cc8fce8a11fcced9b711456a083c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 60850512e44de514892fcd998962e7a37197d343
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153036"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784830"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>тип ресурса deviceManagementConfigurationCategory
 
@@ -34,16 +34,16 @@ ms.locfileid: "54153036"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор элемента|
-|description|String|Описание элемента|
+|id|Строка|Идентификатор элемента|
+|description|Строка|Описание элемента|
 |helpText|Строка|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|Строка|Отображение имени элемента|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
-|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`.|
+|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`.|
 |parentCategoryId|Строка|Родительский id категории.|
-|rootCategoryId|String|Корневой id категории.|
+|rootCategoryId|Строка|Корневой id категории.|
 |childCategoryIds|Коллекция String|Список детских ids этой категории.|
 
 ## <a name="relationships"></a>Связи
@@ -75,7 +75,6 @@ ms.locfileid: "54153036"
   ]
 }
 ```
-
 
 
 

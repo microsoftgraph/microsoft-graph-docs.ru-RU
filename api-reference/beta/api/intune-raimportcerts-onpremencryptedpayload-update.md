@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50b46e6dcaf4c7d2e3a3d6aa6a7a1b7ea9616dfb287998ed6906bc683e1ffa75
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dcd5f593cbfcf6f46ec2fe7f6065332ed8577379
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231210"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799868"
 ---
 # <a name="update-onpremencryptedpayload"></a>Обновление onPremEncryptedPayload
 
@@ -29,7 +29,7 @@ ms.locfileid: "54231210"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -132,7 +132,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d08290f5c14aa1c87538521304ee294f4a3e7a723c94aae16ba3d3b2d7f36c42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a679b9e7a2d6dd9f468a85270968de218d0a3cd2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54181113"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58784235"
 ---
 # <a name="miracastchannel-enum-type"></a>тип enum miracastChannel
 
@@ -26,9 +26,9 @@ ms.locfileid: "54181113"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
-|one|1 |Один.|
+|one|1|Один.|
 |two|2|Два.|
-|three|3 |Три.|
+|three|3|Три.|
 |four|4 |Четыре.|
 |five|5 |Пять.|
 |шесть|6 |Шесть.|
@@ -46,7 +46,6 @@ ms.locfileid: "54181113"
 |oneHundredFiftySeven|157|OneHundredFifty-Seven.|
 |oneHundredSixtyOne|161|OneHundredSixty-One.|
 |oneHundredSixtyFive|165|OneHundredSixty-Five.|
-
 
 
 

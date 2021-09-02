@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6084528f40184370dc9d5c1f481e4099c8129d637a2976b135ef17a7a7ada384
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a3f7426134ecf4a5fec3f71cdc33654df292b30
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198334"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759668"
 ---
 # <a name="iosnotificationpreviewvisibility-enum-type"></a>тип enum iosNotificationPreviewVisibility
 
@@ -26,10 +26,9 @@ ms.locfileid: "54198334"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Параметры предварительного просмотра уведомлений не будут перезаписаны.|
-|alwaysShow|1 |Всегда показывать предварительные просмотры уведомлений.|
+|alwaysShow|1|Всегда показывать предварительные просмотры уведомлений.|
 |hideWhenLocked|2|Просмотр уведомлений будет показываться только при разблокирование устройства.|
-|neverShow|3 |Никогда не показывать предварительные просмотры уведомлений.|
-
+|neverShow|3|Никогда не показывать предварительные просмотры уведомлений.|
 
 
 

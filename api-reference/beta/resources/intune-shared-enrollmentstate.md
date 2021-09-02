@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0817bb82e098d1fab93da3381c81faafc03b4cf0810e602934924305e0971edf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b58391b7942bfdc32af6fce25a5e23b7a5f5bccc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206111"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787787"
 ---
 # <a name="enrollmentstate-enum-type"></a>тип enum enrollmentState
 
@@ -26,12 +26,11 @@ ms.locfileid: "54206111"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние регистрации устройства неизвестно|
-|зарегистрированный|1 |Устройство зачислилось.|
+|зарегистрированный|1|Устройство зачислилось.|
 |pendingReset|2|Зарегистрирован, но он зарегистрирован через профиль регистрации, а зарегистрированный профиль отличается от назначенного профиля.|
-|не удалось|3 |Не зарегистрирован, и есть запись сбоя регистрации.|
+|не удалось|3|Не зарегистрирован, и есть запись сбоя регистрации.|
 |notContacted|4 |Устройство импортируется, но не регистрируется.|
 |заблокировано|5 |Устройство зарегистрировано как без пользователя, но не может двигаться к регистрации пользователей, так как приложение не удалось установить.|
-
 
 
 

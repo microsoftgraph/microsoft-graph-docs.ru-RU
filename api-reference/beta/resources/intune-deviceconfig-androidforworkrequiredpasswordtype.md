@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3356f1c082e7cd914554b06d0b6caf6070a480aaf9b2e882102a049505ed089e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56d2009f246c6c1511225c5c6b3b7c952471ce8c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224798"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798120"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>тип enum androidForWorkRequiredPasswordType
 
@@ -26,14 +26,13 @@ ms.locfileid: "54224798"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |deviceDefault|0|Значение устройства по умолчанию, без намерения.|
-|lowSecurityBiometric|1 |Требуется пароль с низкой безопасностью на основе биометрии.|
-|Обязательный|2|Обязательный.|
-|atLeastNumeric|3 |Требуется по крайней мере числовая пароль.|
+|lowSecurityBiometric|1|Требуется пароль с низкой безопасностью на основе биометрии.|
+|обязательно|2|Обязательно.|
+|atLeastNumeric|3|Требуется по крайней мере числовая пароль.|
 |numericComplex|4 |Требуется числовый сложный пароль.|
 |atLeastAlphabetic|5 |Требуется по крайней мере алфавитный пароль.|
 |atLeastAlphanumeric|6 |Требуется, по крайней мере, альфа-числовая пароль.|
 |alphanumericWithSymbols|7 |По крайней мере, альфа-число с паролем символов.|
-
 
 
 

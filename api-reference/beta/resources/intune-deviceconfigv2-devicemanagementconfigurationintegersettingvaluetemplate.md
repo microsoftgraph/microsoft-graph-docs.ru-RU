@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aef276ca064ba2c0cccacffe47ca77c4ada9ad2498305cbe661cee57dc851ee1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d1600fe2c4e14df083b5983d6fb42a439fc32bd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156228"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818520"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluetemplate-resource-type"></a>тип ресурса deviceManagementConfigurationIntegerSettingValueTemplate
 
@@ -28,7 +28,7 @@ ms.locfileid: "54156228"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingValueTemplateId|Строка|Настройка кода шаблона значений, унаследованный от [deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|
+|settingValueTemplateId|String|Настройка кода шаблона значений, унаследованный от [deviceManagementConfigurationSimpleSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvaluetemplate.md)|
 |defaultValue|[deviceManagementConfigurationIntegerSettingValueDefaultTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvaluedefaulttemplate.md)|Integer Setting Value Default Template.|
 |recommendedValueDefinition|[deviceManagementConfigurationIntegerSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvaluedefinitiontemplate.md)|Рекомендуемое определение значения.|
 |requiredValueDefinition|[deviceManagementConfigurationIntegerSettingValueDefinitionTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvaluedefinitiontemplate.md)|Обязательное определение значения.|
@@ -63,7 +63,6 @@ ms.locfileid: "54156228"
   }
 }
 ```
-
 
 
 

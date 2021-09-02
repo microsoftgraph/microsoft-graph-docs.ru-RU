@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0941b4cc3d73fdaef7c1f404a2b35f9826787867f4f3b4d19eabb868c27e80a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7c2086885e02aeed8df1e0c8bc9f5cadafb56c26
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241542"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787822"
 ---
 # <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>тип enum endpointSecurityConfigurationProfileType
 
@@ -26,9 +26,9 @@ ms.locfileid: "54241542"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестно.|
-|антивирусная программа|1 |Антивирус.|
+|антивирусная программа|1|Антивирус.|
 |WindowsSecurity|2|Безопасность Windows.|
-|bitLocker|3 |BitLocker.|
+|bitLocker|3|BitLocker.|
 |fileVault|4 |FileVault.|
 |брандмауэр|5 |Брандмауэр.|
 |firewallRules|6 |Правила брандмауэра.|
@@ -38,9 +38,8 @@ ms.locfileid: "54241542"
 |exploitProtection|10 |Защита от эксплойтов.|
 |webProtection|11 |Веб-защита.|
 |applicationControl|12 |Управление приложениями.|
-|attackSurfaceReductionRules|13 |Правила уменьшения поверхности атаки.|
+|attackSurfaceReductionRules|13|Правила уменьшения поверхности атаки.|
 |accountProtection|14 |Защита учетной записи.|
-
 
 
 

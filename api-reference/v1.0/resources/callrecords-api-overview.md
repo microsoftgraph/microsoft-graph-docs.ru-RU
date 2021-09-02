@@ -5,12 +5,12 @@ author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 561a7c9d3a3a8c4538fad392d6408def024a44b73206c5832a2bf8581e888a9e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6af5d297c7a04b8c28321fed4cc106d2981ac0e4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178523"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799446"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Работа с API записей звонков в Microsoft Graph
 
@@ -25,6 +25,8 @@ API записи звонков задается в подпространств
 | [callRecord](callrecords-callrecord.md) | [Получение callRecord](../api/callrecords-callrecord-get.md) |
 | [session](callrecords-session.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Перечисление сеансов](../api/callrecords-session-list.md) |
 | [segment](callrecords-segment.md) | [Получение callRecord](../api/callrecords-callrecord-get.md)<br />[Перечисление сеансов](../api/callrecords-session-list.md) |
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## <a name="call-record-structure"></a>Структура записи звонка
 
@@ -40,5 +42,5 @@ API записи звонков задается в подпространств
 
 ## <a name="see-also"></a>См. также
 
-- [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-1.0)
+- [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)
 

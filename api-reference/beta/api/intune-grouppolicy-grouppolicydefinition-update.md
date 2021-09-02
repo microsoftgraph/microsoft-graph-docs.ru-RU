@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 090f90e2f8b8c781bb4d6e9de3cab106f7120da6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: dca978af3e29d381af9f09a0c16ff9585854108a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248156"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804115"
 ---
 # <a name="update-grouppolicydefinition"></a>Update groupPolicyDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58248156"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,12 +61,14 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которые можно применить политику. Возможные значения: `user`, `machine`.|
 |displayName|Строка|Имя локализованной политики.|
-|explainText|String|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто.|
-|categoryPath|String|Путь к локализованным полным категориям для политики.|
+|explainText|Строка|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто.|
+|categoryPath|Строка|Путь к локализованным полным категориям для политики.|
 |supportedOn|Строка|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |hasRelatedDefinitions|Логический|Означает, есть ли связанные определения с этим определением или нет.|
 |groupPolicyCategoryId|Guid|ID категории родительской категории|
+|minDeviceCspVersion|String|Минимальная требуемая версия CSP для конфигурации устройства в этом определении|
+|minUserCspVersion|String|Минимальная требуемая версия CSP для конфигурации пользователя в этом определении|
 |version|String|Настройка версии определения|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -83,7 +85,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 Content-type: application/json
-Content-length: 418
+Content-length: 530
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -95,6 +97,8 @@ Content-length: 418
   "policyType": "admxIngested",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "minDeviceCspVersion": "Min Device Csp Version value",
+  "minUserCspVersion": "Min User Csp Version value",
   "version": "Version value"
 }
 ```
@@ -104,7 +108,7 @@ Content-length: 418
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 531
+Content-Length: 643
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -116,12 +120,13 @@ Content-Length: 531
   "policyType": "admxIngested",
   "hasRelatedDefinitions": true,
   "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
+  "minDeviceCspVersion": "Min Device Csp Version value",
+  "minUserCspVersion": "Min User Csp Version value",
   "version": "Version value",
   "id": "f9607947-7947-f960-4779-60f9477960f9",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

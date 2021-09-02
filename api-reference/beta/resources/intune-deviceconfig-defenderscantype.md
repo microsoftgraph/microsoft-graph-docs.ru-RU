@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e4d81184b9ec18b781a7c89c9b8da3b5672fd8eb4de1bbaf0085521445edd4c5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6848efa274df78c834915c05e7b929934e4734e8
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227500"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801524"
 ---
 # <a name="defenderscantype-enum-type"></a>тип enum defenderScanType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54227500"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
-|отключено|1 |Отключено сканирование системы.|
+|отключено|1|Отключено сканирование системы.|
 |быстрый|2|Быстрое сканирование системы.|
-|полный|3 |Полное сканирование системы.|
-
+|полный|3|Полное сканирование системы.|
 
 
 

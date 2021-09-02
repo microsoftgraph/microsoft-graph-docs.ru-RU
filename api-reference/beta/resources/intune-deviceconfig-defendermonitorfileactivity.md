@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 41f3bd868a5bbd814a23dd89149eb7300c41c3cce31c362c1f360a7eca1de7fa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb3d16f9ff70de4e7457b31a5a48307e9fa48fdb
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54190621"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58759689"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>тип enum defenderMonitorFileActivity
 
@@ -26,11 +26,10 @@ ms.locfileid: "54190621"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
-|отключение|1 |Отключение активности файлов мониторинга.|
+|отключение|1|Отключение активности файлов мониторинга.|
 |monitorAllFiles|2|Отслеживайте все файлы.|
-|monitorIncomingFilesOnly|3 | Отслеживайте только входящие файлы.|
+|monitorIncomingFilesOnly|3| Отслеживайте только входящие файлы.|
 |monitorOutgoingFilesOnly|4 |Отслеживайте только исходяющие файлы.|
-
 
 
 

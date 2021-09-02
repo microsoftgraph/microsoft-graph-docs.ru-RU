@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a9b78e085efe0e268c92a4017a45038915409dc4282ad4069ad5aa25db294a6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac19b84734ce49ee8a55b3b50b0a7ca92b70f515
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153148"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799530"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>тип enum deviceComplianceActionType
 
@@ -26,14 +26,13 @@ Scheduled Action Type Enum
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |noAction|0|Нет действий|
-|уведомление|1 |Отправка уведомления|
+|уведомление|1|Отправка уведомления|
 |block|2|Блокировка устройства в AAD|
-|уходить на пенсию|3 |Отставку устройства|
+|уходить на пенсию|3|Отставку устройства|
 |wipe|4 |Протрите устройство|
 |removeResourceAccessProfiles|5 |Удаление профилей доступа к ресурсам с устройства|
 |pushNotification|9 |Отправка push-уведомления на устройство|
 |remoteLock|10 |Удаленно заблокировать устройство|
-
 
 
 
