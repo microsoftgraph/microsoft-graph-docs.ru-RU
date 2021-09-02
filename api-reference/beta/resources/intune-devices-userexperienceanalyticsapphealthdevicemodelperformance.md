@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b554ff9ecf59de0486ffb9fc38b360e30ee968b8b6018d60f6b2fcd0590594b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: acc48d4f29b7030ae9c8e49fb5ea17be3d995601
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239282"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790131"
 ---
 # <a name="userexperienceanalyticsapphealthdevicemodelperformance-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -34,7 +34,7 @@ ms.locfileid: "54239282"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности модели пользовательского интерфейса для аналитики устройств.|
+|id|Строка|Уникальный идентификатор объекта производительности модели пользовательского интерфейса для аналитики устройств.|
 |deviceModel|String|Имя модели устройства.|
 |deviceManufacturer|Строка|Имя производителя устройства.|
 |activeDeviceCount|Int32|Количество активных устройств для модели. Допустимые значения 2147483648 2147483647|
@@ -65,7 +65,6 @@ ms.locfileid: "54239282"
   "modelAppHealthStatus": "String"
 }
 ```
-
 
 
 

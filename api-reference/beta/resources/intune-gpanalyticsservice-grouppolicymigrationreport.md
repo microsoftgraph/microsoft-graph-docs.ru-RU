@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 915128e19ab9583dedcc66e61a37378713d5f12abc08f95151bb05a7b7bff04a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c093dd3987a16ec0cb69a861c2614a55caf4e9f7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145266"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817357"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>тип ресурса groupPolicyMigrationReport
 
@@ -35,9 +35,9 @@ ms.locfileid: "54145266"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
-|displayName|Строка|Имя объекта групповой политики из контента GPO Xml|
+|displayName|String|Имя объекта групповой политики из контента GPO Xml|
 |ouDistinguishedName|String|Отличительное имя OU.|
 |createdDateTime|DateTimeOffset|Дата и время создания GroupPolicyMigrationReport.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyMigrationReport.|
@@ -81,7 +81,6 @@ ms.locfileid: "54145266"
   "supportedSettingsPercent": 1024
 }
 ```
-
 
 
 

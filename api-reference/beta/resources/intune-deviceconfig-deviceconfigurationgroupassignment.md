@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd2bc078ed2b3d6fc55b77d82c01422a8febf34df25632cbb91dd1c66f070522
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a379e082f8ad77b16357aaddaeb2ed05c3089547
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122671"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803295"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>тип ресурса deviceConfigurationGroupAssignment
 
@@ -35,8 +35,8 @@ ms.locfileid: "54122671"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|targetGroupId|Строка|Id группы AAD, на который ориентирована конфигурация устройства.|
-|excludeGroup|Логический|Указывает, следует ли исключить эту группу. По умолчанию, которые следует включить в группу|
+|targetGroupId|String|Id группы AAD, на который ориентирована конфигурация устройства.|
+|excludeGroup|Boolean|Указывает, следует ли исключить эту группу. По умолчанию, которые следует включить в группу|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -59,7 +59,6 @@ ms.locfileid: "54122671"
   "excludeGroup": true
 }
 ```
-
 
 
 

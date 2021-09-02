@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3069196046834915aef4c193d695625e124684cf7347fc2c0f2a2b0347292b2c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 40ebc4a9fae68b47bc4558a17d97390fb00d577f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136319"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803008"
 ---
 # <a name="iosredirectsinglesignonextension-resource-type"></a>тип ресурса iosRedirectSingleSignOnExtension
 
@@ -59,7 +59,6 @@ ms.locfileid: "54136319"
   ]
 }
 ```
-
 
 
 

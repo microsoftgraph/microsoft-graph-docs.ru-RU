@@ -5,12 +5,12 @@ author: eddie-lee-msft
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc50e9ca132b295f000a707a9fc3280bef2bb6e6eb564aca0ae69020b1d2a498
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be51a4094a0da78fa4382e568a333f492c57caf9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57372081"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818970"
 ---
 # <a name="team-sendactivitynotification"></a>команда: sendActivityNotification
 Пространство имен: microsoft.graph
@@ -24,7 +24,9 @@ ms.locfileid: "57372081"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamsActivity.Send|
+|Application|TeamsActivity.Send.Group*, TeamsActivity.Send|
+
+>**Примечание:** Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.](https://aka.ms/teams-rsc)
 
 ## <a name="http-request"></a>HTTP-запрос
 

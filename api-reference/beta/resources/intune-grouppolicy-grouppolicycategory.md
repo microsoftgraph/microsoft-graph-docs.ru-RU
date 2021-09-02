@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ef4f3f8fa0c8304a1cd0b6383a25340765200916b4d5ec4a48bbbe6d8a8c858
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f26e83fef905525bc9218d850dcb8ef416430233
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182758"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802455"
 ---
 # <a name="grouppolicycategory-resource-type"></a>тип ресурса groupPolicyCategory
 
@@ -33,7 +33,7 @@ ms.locfileid: "54182758"
 |:---|:---|:---|
 |displayName|Строка|Строковой id имени отображения категории|
 |isRoot|Логический|Определяет, является ли категория корневой.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -61,7 +61,6 @@ ms.locfileid: "54182758"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

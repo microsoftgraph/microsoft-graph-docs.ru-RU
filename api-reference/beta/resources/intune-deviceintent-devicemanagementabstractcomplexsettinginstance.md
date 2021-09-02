@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdfa70c1d96c6ab1f6eb175d9e955dac1ce1fd8dcbe88704913585ee66bc768c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 64e869f4cbb369a5446d255f4659fb4a3a620130
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219915"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797523"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>тип ресурса deviceManagementAbstractComplexSettingInstance
 
@@ -38,7 +38,7 @@ ms.locfileid: "54219915"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID экземпляра параметра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|definitionId|Строка|ID определения параметра для этого экземпляра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|definitionId|String|ID определения параметра для этого экземпляра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |valueJson|String|Представление JSON значения, унаследованной от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |implementationId|Строка|ID определения для выбранной реализации этого сложного параметра|
 
@@ -64,7 +64,6 @@ ms.locfileid: "54219915"
   "implementationId": "String"
 }
 ```
-
 
 
 

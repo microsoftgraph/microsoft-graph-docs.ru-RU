@@ -1,18 +1,18 @@
 ---
-title: Перечисление объектов deviceEnrollmentWindowsHelloForBusinessConfiguration
-description: Список свойств и связей объектов deviceEnrollmentWindowsHelloForBusinessConfiguration.
+title: getRemoteAssistanceMonitorTotalSessionsReport
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 825a968e65241496a1e993dec75ecda1efd2aebb
+ms.openlocfilehash: e0d68b9aa4010019dcff07c0191231f94958ade9
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794513"
+ms.locfileid: "58797788"
 ---
-# <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Перечисление объектов deviceEnrollmentWindowsHelloForBusinessConfiguration
+# <a name="getremoteassistancemonitortotalsessionsreport-action"></a>getRemoteAssistanceMonitorTotalSessionsReport
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58794513"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md).
+Пока не задокументировано.
 
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "58794513"
 }
 -->
 ``` http
-GET /deviceManagement/deviceEnrollmentConfigurations
+POST /deviceManagement/reports/getRemoteAssistanceMonitorTotalSessionsReport
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,17 +47,54 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md) в теле отклика.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|name|String|Пока не задокументировано.|
+|select|Коллекция строк|Н/Д|
+|search|String|Пока не задокументировано.|
+|groupBy|Коллекция строк|Н/Д|
+|orderBy|Коллекция строк|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|sessionId|String|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успешного действия это действие возвращает код `200 OK` отклика и поток в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
+POST https://graph.microsoft.com/beta/deviceManagement/reports/getRemoteAssistanceMonitorTotalSessionsReport
+
+Content-type: application/json
+Content-length: 278
+
+{
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
+}
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,37 +102,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1030
+Content-Length: 119
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
-      "id": "3068e0cd-e0cd-3068-cde0-6830cde06830",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "priority": 8,
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "version": 7,
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ],
-      "pinMinimumLength": 0,
-      "pinMaximumLength": 0,
-      "pinUppercaseCharactersUsage": "required",
-      "pinLowercaseCharactersUsage": "required",
-      "pinSpecialCharactersUsage": "required",
-      "state": "enabled",
-      "securityDeviceRequired": true,
-      "unlockWithBiometricsEnabled": true,
-      "remotePassportEnabled": true,
-      "pinPreviousBlockCount": 5,
-      "pinExpirationInDays": 3,
-      "enhancedBiometricsState": "enabled",
-      "securityKeyForSignIn": "enabled"
-    }
-  ]
+  "value": "Z2V0UmVtb3RlQXNzaXN0YW5jZU1vbml0b3JUb3RhbFNlc3Npb25zUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDIwNDgyNjQ4ODE="
 }
 ```
 

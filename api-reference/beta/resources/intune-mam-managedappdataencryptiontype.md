@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d36cabacda74f33a5057257b5890f9496a9f64e28d2e36e808bbac8c17d9c24d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e106d3bdc6e5309e9d28897f4f4c749e034fe610
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145231"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800016"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>тип enum managedAppDataEncryptionType
 
@@ -26,10 +26,9 @@ ms.locfileid: "54145231"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |useDeviceSettings|0|Данные приложения шифруются в зависимости от параметров по умолчанию на устройстве.|
-|afterDeviceRestart|1 |Данные приложения шифруются при перезапуске устройства.|
+|afterDeviceRestart|1|Данные приложения шифруются при перезапуске устройства.|
 |whenDeviceLockedExceptOpenFiles|2|Данные приложения, связанные с этой политикой, шифруются при блокировке устройства, за исключением открытых файлов.|
-|whenDeviceLocked|3 |Данные приложения, связанные с этой политикой, шифруются при блокировке устройства|
-
+|whenDeviceLocked|3|Данные приложения, связанные с этой политикой, шифруются при блокировке устройства|
 
 
 

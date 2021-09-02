@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6335c98549a76fbf0baf13613738251770edeca9
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: c79aefd7178ceeddfc1e5f3c062f011a78e11339
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316938"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789884"
 ---
 # <a name="chat-sendactivitynotification"></a>чат: sendActivityNotification
 Пространство имен: microsoft.graph
@@ -26,7 +26,9 @@ ms.locfileid: "53316938"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|TeamsActivity.Send|
+|Application|TeamsActivity.Send.Chat*, TeamsActivity.Send|
+
+>**Примечание:** Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.](https://aka.ms/teams-rsc)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +55,7 @@ POST /chats/{chatId}/sendActivityNotification
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
 |activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
-|chainId|Int64|Необязательно. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|chainId|Int64|Необязательное свойство. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
 |previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
 |templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
 |получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. См. [также aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) и [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |

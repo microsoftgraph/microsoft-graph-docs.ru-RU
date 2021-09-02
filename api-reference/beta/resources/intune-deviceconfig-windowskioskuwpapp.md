@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98eb1dff676499dc589b0d707a2d81590c2e98e885598d867ef1db3badac3126
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f33a7800e055ec885cf03a467b1216b310fa6e7
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253049"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797537"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>тип ресурса windowsKioskUWPApp
 
@@ -58,7 +58,6 @@ ms.locfileid: "54253049"
   "containedAppId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44c83d125eaf7d29afe81948c187b142b8b23babd298bf11bb4f98a5952bb0d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6af178603f33bb851e33c9fcbdc6ed8d444a63cd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54133322"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805410"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>тип ресурса windowsKioskDesktopApp
 
@@ -33,7 +33,7 @@ ms.locfileid: "54133322"
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
 |autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Определение пути настольного приложения|
-|desktopApplicationId|String|Определение DesktopApplicationID приложения|
+|desktopApplicationId|Строка|Определение DesktopApplicationID приложения|
 |desktopApplicationLinkPath|Строка|Определение DesktopApplicationLinkPath приложения|
 
 ## <a name="relationships"></a>Связи
@@ -58,7 +58,6 @@ ms.locfileid: "54133322"
   "desktopApplicationLinkPath": "String"
 }
 ```
-
 
 
 

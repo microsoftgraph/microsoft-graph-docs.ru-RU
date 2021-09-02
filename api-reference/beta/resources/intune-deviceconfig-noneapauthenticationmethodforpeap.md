@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bdc4c75b2f1da1c616ae2d28409837e73b405a8df31c5e7a64196c86d1c97df7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc224c1c2d9bb305fc6212e761975be9862b1947
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241760"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803534"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap enum type
 
@@ -25,9 +25,8 @@ ms.locfileid: "54241760"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Отсутствуют.|
-|microsoftChapVersionTwo|1 |Microsoft CHAP Version 2 (MS-CHAP v2).|
-
+|Нет|0|Нет|
+|microsoftChapVersionTwo|1|Microsoft CHAP Version 2 (MS-CHAP v2).|
 
 
 

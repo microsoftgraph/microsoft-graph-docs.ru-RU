@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3f55949a77d36aeaf6deefba1440e9b2b31e6b2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 088c139a302f07ef4ec954d8401b4e6c77775255
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263256"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790530"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление WindowsManagementApp
 
@@ -27,9 +27,9 @@ ms.locfileid: "58263256"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 |id|Строка|Уникальный идентификатор для приложения Windows управления|
 |availableVersion|Строка|Windows доступной версии приложения для управления.|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Состояние управляемого установщика. Возможные значения: `disabled`, `enabled`.|
-|managedInstallerConfiguredDateTime|String|Настроено время даты управляемого установщика|
+|managedInstallerConfiguredDateTime|Строка|Настроено время даты управляемого установщика|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 284
   "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
 }
 ```
-
 
 
 

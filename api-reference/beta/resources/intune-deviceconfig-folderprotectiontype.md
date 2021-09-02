@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e0a368486f7fa8e1d869e7cc870fdfdca34c75a96eca216008b27ea36ed0eaa0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b194668d0620c4eab23e1372f2f490f3aa8516bd
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203115"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58797910"
 ---
 # <a name="folderprotectiontype-enum-type"></a>тип enum folderProtectionType
 
@@ -26,11 +26,10 @@ ms.locfileid: "54203115"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение устройства по умолчанию, без намерения.|
-|включить|1 |Блок функциональных возможностей.|
+|включить|1|Блок функциональных возможностей.|
 |auditMode|2|Разрешить функции, но создавать журналы.|
-|blockDiskModification|3 |Блокировка ненарушаемого приложения от записи до секторов дисков.|
+|blockDiskModification|3|Блокировка ненарушаемого приложения от записи до секторов дисков.|
 |auditDiskModification|4 |Создание журналов, когда ненарушимые приложения записывают в дисковые сектора.|
-
 
 
 

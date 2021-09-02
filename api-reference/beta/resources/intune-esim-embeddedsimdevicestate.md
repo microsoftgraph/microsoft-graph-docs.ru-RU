@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a4d3fdfcd6f6a6c222c8b2a58e95d4755b3a6e41f11158e65dc3e5fbd9b56db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0654c71369d9682887d36f02e6cddf1eb9772e0f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122385"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789907"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>тип ресурса embeddedSIMDeviceState
 
@@ -34,15 +34,15 @@ ms.locfileid: "54122385"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для состояния встроенного sim-устройства. Созданное в системе значение, назначенное при его создания.|
+|id|Строка|Уникальный идентификатор для состояния встроенного sim-устройства. Созданное в системе значение, назначенное при его создания.|
 |createdDateTime|DateTimeOffset|Время создания состояния встроенного sim-устройства. Сгенерированная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния встроенного SIM-устройства. Обновленная сторона службы.|
 |lastSyncDateTime|DateTimeOffset|Время последней регистрации встроенного sim-устройства. Обновленная сторона службы.|
-|universalIntegratedCircuitCardIdentifier|String|Идентификатор универсальной интегрированной схемной карты (UICCID), определяющий оборудование, на которое будет развернут профиль.|
+|universalIntegratedCircuitCardIdentifier|Строка|Идентификатор универсальной интегрированной схемной карты (UICCID), определяющий оборудование, на которое будет развернут профиль.|
 |deviceName|String|Имя устройства, на которое была предусмотрена подписка, например DESKTOP-JOE|
 |userName|String|Имя пользователя, для которого была предусмотрена подписка, например joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|Строка|Строковое описание состояния подготовка.|
+|stateDetails|String|Строковое описание состояния подготовка.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -69,7 +69,6 @@ ms.locfileid: "54122385"
   "stateDetails": "String"
 }
 ```
-
 
 
 

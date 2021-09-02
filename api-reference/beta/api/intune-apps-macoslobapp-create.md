@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f0c4316ebe0af5dc0c68e2376c082a61f93e9d7e33025b59881299366c94612
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb68fee325bc2bf61c2bfedf2e5ba6e475f551b5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167067"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801033"
 ---
 # <a name="create-macoslobapp"></a>Создание macOSLobApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "54167067"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -85,7 +85,7 @@ POST /deviceAppManagement/mobileApps
 |md5HashChunkSize|Int32|Размер куска для hash MD5|
 |md5Hash|Коллекция String|Коды hash MD5|
 |ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск установленного приложения по его версии. Установите это для приложений macOS Line of Business (LoB), которые используют функцию самостоятельного обновления.|
-|installAsManaged|Логический|A boolean to control whether the app will be installed as managed (requires macOS 11.0 and other PKG restrictions).|
+|installAsManaged|Boolean|A boolean to control whether the app will be installed as managed (requires macOS 11.0 and other PKG restrictions).|
 
 
 
@@ -99,7 +99,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1722
+Content-length: 1742
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -141,7 +141,8 @@ Content-length: 1722
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -168,7 +169,7 @@ Content-length: 1722
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1894
+Content-Length: 1914
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -213,7 +214,8 @@ Content-Length: 1894
     "v10_13": true,
     "v10_14": true,
     "v10_15": true,
-    "v11_0": true
+    "v11_0": true,
+    "v12_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -234,7 +236,6 @@ Content-Length: 1894
   "installAsManaged": true
 }
 ```
-
 
 
 
