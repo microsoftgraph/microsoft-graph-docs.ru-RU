@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88b82fe497653e5c2ee0f2d796773b00dbe66cc5163fe5ebdf62a422322e23e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e3c29d21784032e970d083ab4ee0300f57332a2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126930"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791503"
 ---
 # <a name="devicecompliancescript-resource-type"></a>тип ресурса deviceComplianceScript
 
@@ -35,10 +35,10 @@ Intune предоставит клиенту возможность запуск
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сценария соответствия требованиям к устройству|
+|id|Строка|Уникальный идентификатор для сценария соответствия требованиям к устройству|
 |publisher|String|Имя издателя сценариев соответствия требованиям устройств|
 |version|String|Версия сценария соответствия требованиям устройства|
-|displayName|String|Имя сценария соответствия требованиям устройства|
+|displayName|Строка|Имя сценария соответствия требованиям устройства|
 |description|Строка|Описание сценария соответствия требованиям устройства|
 |detectionScriptContent|В двоичном формате|Все содержимое сценария powershell обнаружения|
 |createdDateTime|DateTimeOffset|Время создания сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
@@ -82,7 +82,6 @@ Intune предоставит клиенту возможность запуск
   ]
 }
 ```
-
 
 
 

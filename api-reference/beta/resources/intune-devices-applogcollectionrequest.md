@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c3265251ff2d216061d78e0b3bb4bafd6a3db9158f5e3eefecfc81528789eb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd6c56f04570a42809b1168090be8f8f6609ebfe
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54215078"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790159"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>тип ресурса appLogCollectionRequest
 
@@ -35,7 +35,7 @@ ms.locfileid: "54215078"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
+|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Состояние загрузки журнала. Возможные значения: `pending`, `completed`, `failed`.|
 |errorMessage|Строка|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
 |customLogFolders|Коллекция String|Список папок журнала. |
@@ -64,7 +64,6 @@ ms.locfileid: "54215078"
   "completedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

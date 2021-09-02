@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6603dc8b69816762e903bbab51f467684b8888a4
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 64e28c3747c8e1000a69f58bd7e4a27f144ebd84
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265181"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790628"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>тип ресурса microsoftTunnelConfiguration
 
@@ -34,12 +34,12 @@ ms.locfileid: "58265181"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id MicrosoftTunnelConfiguration|
+|id|Строка|Id MicrosoftTunnelConfiguration|
 |displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
-|description|String|Описание MicrosoftTunnelConfiguration|
-|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|description|Строка|Описание MicrosoftTunnelConfiguration|
+|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
 |dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
-|defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
 |routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
 |routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
 |splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
@@ -93,7 +93,6 @@ ms.locfileid: "58265181"
   ]
 }
 ```
-
 
 
 

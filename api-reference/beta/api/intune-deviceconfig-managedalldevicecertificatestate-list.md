@@ -2,15 +2,15 @@
 title: Список managedAllDeviceCertificateStates
 description: Список свойств и связей объектов managedAllDeviceCertificateState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa60510e5dd73af4482a969e64cb07153c610e05
-ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
+ms.openlocfilehash: 4d3a558fbf3fc3c97563077f17d4ae99c65110bc
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58850195"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790775"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>Список managedAllDeviceCertificateStates
 
@@ -29,7 +29,7 @@ ms.locfileid: "58850195"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

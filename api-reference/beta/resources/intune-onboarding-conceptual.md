@@ -4,12 +4,12 @@ description: Перечислены API Graph Microsoft для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: f420420e5e82109e12628f5c2a585e27aee506c9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f71757ef2d59b1e188079d02a3ad86a44c208cfa
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256993"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786300"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 

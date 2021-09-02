@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c935c1f69e843940a9e4aa29199dbfd9b5a02aa3528f7612c72055ab3f2efbc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d79bf933623e94d48013d3259326fdd45a9115bf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185798"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806238"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>тип enum deviceManagementConfigurationTechnologies
 
@@ -26,11 +26,11 @@ ms.locfileid: "54185798"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Настройка не может быть развернута по любому каналу|
-|mdm|1 |Параметр можно развернуть через канал MDM|
+|mdm|1|Параметр можно развернуть через канал MDM|
 |windows10XManagement|2|Параметр можно развернуть через канал Windows10XManagement|
 |configManager|4 |Параметр можно развернуть через канал ConfigManager|
 |MicrosoftSense|128|Настройка может быть развернута через канал агента SENSE|
-
+|exchangeOnline|256|Параметр можно развернуть через канал Exchange Online агента|
 
 
 

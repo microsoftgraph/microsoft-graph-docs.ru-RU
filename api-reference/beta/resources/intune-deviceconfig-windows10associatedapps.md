@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59c32f54f2ba098c3115e6ccac99fd537f11da533ce8098e54d76de78bbda151
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ee35da8d8a03cc52ddcf4e6764ba1aee0a59a2c3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127056"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819698"
 ---
 # <a name="windows10associatedapps-resource-type"></a>тип ресурса windows10AssociatedApps
 
@@ -45,7 +45,6 @@ Windows 10 Связанное определение приложения.
   "identifier": "String"
 }
 ```
-
 
 
 

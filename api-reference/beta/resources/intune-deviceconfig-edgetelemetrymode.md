@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 16efa834cf2a3a8089cd2975cb4f1c539f5114941fc307e3fe8da61dc6e390ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6348746877f20bfab2ce019e37e9a014182235e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142052"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805747"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>тип enum edgeTelemetryMode
 
@@ -26,10 +26,9 @@ ms.locfileid: "54142052"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|По умолчанию — данные телеметрии не собираются и не отправляются|
-|интрасеть|1 |Разрешить отправку только истории интрасети: только отправлять данные истории просмотра для сайтов интрасети|
+|интрасеть|1|Разрешить отправку только истории интрасети: только отправлять данные истории просмотра для сайтов интрасети|
 |Интернет|2|Разрешить отправку только истории Интернета: отправлять только данные истории просмотра для веб-сайтов|
-|intranetAndInternet|3 |Разрешить отправку и интрасети, и истории Интернета: отправка данных истории просмотра для интрасети и сайтов в Интернете|
-
+|intranetAndInternet|3|Разрешить отправку и интрасети, и истории Интернета: отправка данных истории просмотра для интрасети и сайтов в Интернете|
 
 
 

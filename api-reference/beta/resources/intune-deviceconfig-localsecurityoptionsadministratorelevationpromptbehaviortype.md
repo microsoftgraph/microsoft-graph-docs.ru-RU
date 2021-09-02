@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8e0b338fd8fec863185dce90e9de8d1b849310977c6a7e5f6ee0cfe070ef2d0e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d25c61fe8ffc07de97332da9579abd3fdc433b7f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185847"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819166"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType enum type
 
@@ -26,13 +26,12 @@ ms.locfileid: "54185847"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Not Configured|
-|elevateWithoutPrompting|1 |Повышение без запроса.|
+|elevateWithoutPrompting|1|Повышение без запроса.|
 |promptForCredentialsOnTheSecureDesktop|2|Запрос на учетные данные на безопасном рабочем столе|
-|promptForConsentOnTheSecureDesktop|3 |Запрос на согласие на безопасном рабочем столе|
+|promptForConsentOnTheSecureDesktop|3|Запрос на согласие на безопасном рабочем столе|
 |promptForCredentials|4 |Запрос на учетные данные|
 |promptForConsent|5 |Запрос на согласие|
 |promptForConsentForNonWindowsBinaries|6 |Запрос на согласие для Windows разных Windows|
-
 
 
 

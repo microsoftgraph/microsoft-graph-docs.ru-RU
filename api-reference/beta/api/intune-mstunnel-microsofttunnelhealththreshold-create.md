@@ -1,18 +1,18 @@
 ---
-title: Создание appVulnerabilityManagedDevice
-description: Создайте новый объект appVulnerabilityManagedDevice.
+title: Создание microsoftTunnelHealthThreshold
+description: Создайте новый объект microsoftTunnelHealthThreshold.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85ca0b894dcdcd1245d7e712ec32d4087fe18c59
+ms.openlocfilehash: 691a1445839f929d6aa46412fbdea4dcbf5580fa
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786770"
+ms.locfileid: "58820798"
 ---
-# <a name="create-appvulnerabilitymanageddevice"></a>Создание appVulnerabilityManagedDevice
+# <a name="create-microsofttunnelhealththreshold"></a>Создание microsoftTunnelHealthThreshold
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58786770"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте [новый объект appVulnerabilityManagedDevice.](../resources/intune-partnerintegration-appvulnerabilitymanageddevice.md)
+Создайте новый [объект microsoftTunnelHealthThreshold.](../resources/intune-mstunnel-microsofttunnelhealththreshold.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "58786770"
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.management.services.api.appVulnerabilityManagedDevice not found
+POST /deviceManagement/microsoftTunnelHealthThresholds
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,36 +47,38 @@ POST ** Collection URI for microsoft.management.services.api.appVulnerabilityMan
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для объекта appVulnerabilityManagedDevice.
+В теле запроса подарйте представление JSON для объекта microsoftTunnelHealthThreshold.
 
-В следующей таблице показаны свойства, необходимые при создании appVulnerabilityManagedDevice.
+В следующей таблице показаны свойства, необходимые при создании microsoftTunnelHealthThreshold.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности и ID устройства AAD.|
-|managedDeviceId|String|ID управляемого устройства Intune.|
-|displayName|Строка|Имя устройства.|
-|lastSyncDateTime|DateTimeOffset|Дата создания.|
+|id|String|Имя метрик|
+|healthyThreshold|Int64|Пороговое значение для здоровья|
+|unhealthyThreshold|Int64|Порог для неработоспособного|
+|defaultHealthyThreshold|Int64|Пороговое значение по умолчанию для того, чтобы быть здоровым|
+|defaultUnhealthyThreshold|Int64|Пороговое значение по умолчанию для неработоспособного|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного использования этот метод возвращает код отклика и `201 Created` [объект appVulnerabilityManagedDevice](../resources/intune-partnerintegration-appvulnerabilitymanageddevice.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект microsoftTunnelHealthThreshold](../resources/intune-mstunnel-microsofttunnelhealththreshold.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.management.services.api.appVulnerabilityManagedDevice not found
+POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelHealthThresholds
 Content-type: application/json
-Content-length: 220
+Content-length: 194
 
 {
-  "@odata.type": "#microsoft.graph.appVulnerabilityManagedDevice",
-  "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  "@odata.type": "#microsoft.graph.microsoftTunnelHealthThreshold",
+  "healthyThreshold": 0,
+  "unhealthyThreshold": 2,
+  "defaultHealthyThreshold": 7,
+  "defaultUnhealthyThreshold": 9
 }
 ```
 
@@ -85,14 +87,15 @@ Content-length: 220
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 269
+Content-Length: 243
 
 {
-  "@odata.type": "#microsoft.graph.appVulnerabilityManagedDevice",
-  "id": "36e5c001-c001-36e5-01c0-e53601c0e536",
-  "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  "@odata.type": "#microsoft.graph.microsoftTunnelHealthThreshold",
+  "id": "419c526e-526e-419c-6e52-9c416e529c41",
+  "healthyThreshold": 0,
+  "unhealthyThreshold": 2,
+  "defaultHealthyThreshold": 7,
+  "defaultUnhealthyThreshold": 9
 }
 ```
 

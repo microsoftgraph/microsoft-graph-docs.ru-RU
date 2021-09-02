@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d46322641bbbfdc9150c3dfc0fa3598e9413f9cbee4559ccba80b7325107028a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 341ef1dbf790cfe4ac1398dd7a49488d0fc31399
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241942"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58771115"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>тип ресурса iosEasEmailProfileConfiguration
 
@@ -45,13 +45,13 @@ ms.locfileid: "54241942"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Атрибут username, который выбирается из AAD и вводится в этот профиль перед установкой на устройстве. Наследуется [от easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
 |usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md);|Имя поля AAD, которое будет использоваться для получения имени пользователя для профиля электронной почты. Наследуется [от easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md);|Атрибут UserDomainname, который выбирается из AAD и вводится в этот профиль перед установкой на устройстве. Наследуется [от easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `fullDomainName`, `netBiosDomainName`.|
-|customDomainName|String|Настраиваемая ценность доменного имени, используемая при создании профиля электронной почты перед установкой на устройстве. Унаследовано от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
+|customDomainName|Строка|Настраиваемая ценность доменного имени, используемая при создании профиля электронной почты перед установкой на устройстве. Унаследовано от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |имя учетной записи|Строка|Имя учетной записи.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Метод проверки подлинности для этого профиля электронной почты. Возможные значения: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |blockMovingMessagesToOtherEmailAccounts|Логический|Указывает, следует ли блокировать перемещение сообщений на другие учетные записи электронной почты.|
@@ -65,13 +65,13 @@ ms.locfileid: "54241942"
 |requireSmime|Логический|Указывает, следует ли использовать сертификат S/MIME.|
 |smimeEnablePerMessageSwitch|Логический|Указывает, следует ли разрешить незашифрованные сообщения электронной почты.|
 |smimeEncryptByDefaultEnabled|Логический|Если установлено значение true S/MIME- шифрование включено по умолчанию.|
-|smimeSigningEnabled|Логический|Если для этой учетной записи включено правильное подписание S/MIME|
+|smimeSigningEnabled|Boolean|Если для этой учетной записи включено правильное подписание S/MIME|
 |smimeSigningUserOverrideEnabled|Логический|Если установлено, что это так, пользователь может отключить вход или отключение подписи S/MIME.|
-|smimeEncryptByDefaultUserOverrideEnabled|Логический|Если установлено значение true, пользователь может настроить шифрование по умолчанию.|
+|smimeEncryptByDefaultUserOverrideEnabled|Boolean|Если установлено значение true, пользователь может настроить шифрование по умолчанию.|
 |smimeSigningCertificateUserOverrideEnabled|Логический|Если установлено, что это так, пользователь может выбрать идентификатор подписи.|
-|smimeEncryptionCertificateUserOverrideEnabled|Логический|Если установлено верно, пользователь может выбрать идентификатор шифрования S/MIME. |
+|smimeEncryptionCertificateUserOverrideEnabled|Boolean|Если установлено верно, пользователь может выбрать идентификатор шифрования S/MIME. |
 |requireSsl|Логический|Указывает, следует ли использовать SSL.|
-|useOAuth|Логический|Указывает, следует ли подключению использовать OAuth для проверки подлинности.|
+|useOAuth|Boolean|Указывает, следует ли подключению использовать OAuth для проверки подлинности.|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Подписание типа сертификата для этого профиля электронной почты. Возможные значения: `none`, `certificate`, `derivedCredential`.|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Тип сертификата шифрования для этого профиля электронной почты. Возможные значения: `none`, `certificate`, `derivedCredential`.|
 |perAppVPNProfileId|Строка|ID профиля политики VPN Per-App для доступа к электронным письмам от родного клиента почты|
@@ -162,7 +162,6 @@ ms.locfileid: "54241942"
   "perAppVPNProfileId": "String"
 }
 ```
-
 
 
 

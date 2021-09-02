@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc71a3a44ba5ace20065acd8403dc2f61d5f2b6804a05ef43397771622e9a555
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0013fcf2974325ed78428d6d816b04515d012c03
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232729"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816552"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions enum type
 
@@ -26,8 +26,7 @@ ms.locfileid: "54232729"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроено — wlidsvc Start будет настроен на SERVICE_DEMAND_START.|
-|отключено|1 |Отключено — wlidsvc Start будет установлено SERVICE_DISABLED.|
-
+|отключено|1|Отключено — wlidsvc Start будет установлено SERVICE_DISABLED.|
 
 
 

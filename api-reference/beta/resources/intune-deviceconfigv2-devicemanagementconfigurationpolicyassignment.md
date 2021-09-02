@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b5b7feec442991265c358fbfbd7e7ae2dbd2754
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 848e1829f22128d11893f13ed02d299381ff3676
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265013"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792584"
 ---
 # <a name="devicemanagementconfigurationpolicyassignment-resource-type"></a>тип ресурса deviceManagementConfigurationPolicyAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "58265013"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для DeviceManagementConfigurationPolicy.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для политики соответствия требованиям устройств, прямой или пакетной или политикиSet. Возможные значения: `direct`, `policySets`.|
 |sourceId|String|Идентификатор источника назначения.|
@@ -64,7 +64,6 @@ ms.locfileid: "58265013"
   "sourceId": "String"
 }
 ```
-
 
 
 

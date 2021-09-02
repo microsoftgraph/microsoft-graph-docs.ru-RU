@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99e6bb826ab085d41abea49895c8515077d1ee4aa5b42038e83e9a389efe0c46
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73732a3b4edbd39011056dd287a3b9d59b34bc8f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239436"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820704"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -38,9 +38,9 @@ ms.locfileid: "54239436"
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateUploadStatus|Строка|Состояние загрузки сертификата.|
-|certificateUploadFailureReason|Строка|Причина сбой загрузки сертификата.|
-|certificateSerialNumber|Строка|Серийный номер сертификата. Это свойство доступно только для чтения.|
+|certificateUploadStatus|String|Состояние загрузки сертификата.|
+|certificateUploadFailureReason|String|Причина сбой загрузки сертификата.|
+|certificateSerialNumber|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
@@ -68,7 +68,6 @@ ms.locfileid: "54239436"
   "certificate": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9092b35287b1da40c92c1df7f5f157ee02cab8f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: aa7a4fdd18b1b14c881972bca25d287176564915
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259331"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806210"
 ---
 # <a name="userexperienceanalyticsworkfromanywherehardwarereadinessmetric-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -31,7 +31,7 @@ ms.locfileid: "58259331"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта метрики готовности оборудования для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта метрики готовности оборудования для аналитики пользовательского интерфейса.|
 |totalDeviceCount|Int32|Общее количество устройств в организации. Допустимые значения 2147483648 2147483647|
 |upgradeEligibleDeviceCount|Int32|Количество устройств в организации, имеющих право на обновление Windows. Допустимые значения 2147483648 2147483647|
 |ramCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка оборудования оперативной памяти не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
@@ -72,7 +72,6 @@ ms.locfileid: "58259331"
   "osCheckFailedPercentage": "4.2"
 }
 ```
-
 
 
 

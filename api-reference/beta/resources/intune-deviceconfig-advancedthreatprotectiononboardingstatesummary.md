@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae6a1341d99f1c5a686963e4aaa11018b32400a41e845409df76d4a861f5f7b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 411e26ba140a8dfad49230fcfcc9a1a947326bd5
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232932"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820942"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>расширенный тип ресурсаThreatProtectionOnboardingStateSummary
 
@@ -31,7 +31,7 @@ Windows защиты от угрозы, внося сводку состояни
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор.|
+|id|String|Уникальный идентификатор.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -68,7 +68,6 @@ Windows защиты от угрозы, внося сводку состояни
   "notAssignedDeviceCount": 1024
 }
 ```
-
 
 
 

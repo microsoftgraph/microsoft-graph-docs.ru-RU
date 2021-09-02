@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fca9d52b09bdb19f85aa6fa06c166195263af39fbf143e956207f7a5e0a7b30
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 83d1789f02c8cc961bd4d1c784ad70f47c6b7f85
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226345"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789935"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod enum type
 
@@ -26,11 +26,10 @@ ms.locfileid: "54226345"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |certificate|0|Проверка подлинности с помощью сертификата.|
-|usernameAndPassword|1 |Используйте имя пользователя и пароль для проверки подлинности.|
+|usernameAndPassword|1|Используйте имя пользователя и пароль для проверки подлинности.|
 |sharedSecret|2|Использование общего секрета для проверки подлинности.  Действительна только для iOS IKEv2.|
-|derivedCredential|3 |Использование производных учетных данных для проверки подлинности.|
+|derivedCredential|3|Использование производных учетных данных для проверки подлинности.|
 |azureAD|4 |Используйте Azure AD для проверки подлинности.|
-
 
 
 

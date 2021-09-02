@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 123008ac6f43471b3bd1465d9e45428835f78ec6920cf25bfc27cb6eacd0abcd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 65d538e1d8e26ee88a1ed05d8f0565eedd881071
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193715"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807665"
 ---
 # <a name="devicemanagementconfigurationdevicemode-enum-type"></a>тип enum deviceManagementConfigurationDeviceMode
 
@@ -26,8 +26,7 @@ ms.locfileid: "54193715"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Режим устройства не указан|
-|киоск|1 |Устройство должно быть в режиме киоска для применения этого параметра|
-
+|киоск|1|Устройство должно быть в режиме киоска для применения этого параметра|
 
 
 

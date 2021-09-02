@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08464b146223b6fba11596bebb070e8c9b2a7359644dba31039c9daa976fee89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca037ceae79a79bf7e25a8d5d8315651e8dd9c75
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54198187"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786343"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>тип ресурса windows81WifiImportConfiguration
 
@@ -46,10 +46,10 @@ Windows 8.1+ Wi-Fi импортной конфигурации. Настройк
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |payloadFileName|String|Имя файла полезной нагрузки (*.xml).|
-|имя профиля|String|Имя профиля, отображаемая в пользовательском интерфейсе.|
+|имя профиля|Строка|Имя профиля, отображаемая в пользовательском интерфейсе.|
 |payload|Binary|Полезные данные (массив byte, кодируемый UTF8). Это XML-файл, сохраненный на устройстве, с помощью Wi-Fi конечной точки.|
 
 ## <a name="relationships"></a>Связи
@@ -110,7 +110,6 @@ Windows 8.1+ Wi-Fi импортной конфигурации. Настройк
   "payload": "binary"
 }
 ```
-
 
 
 

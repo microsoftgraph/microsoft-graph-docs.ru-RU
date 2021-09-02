@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 4a10c7011c8b28460c8908b210792e5e2619753e
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: ea4df31ae070991725b3e2dcbe75cc9e428082b1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336651"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786265"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "58336651"
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
 Ежемесячные обновления Intune за сентябрь для версии 1.0. Установите фильтр **Дата** в значение "август 2021" и найдите раздел с таким заголовком.
 
-### <a name="devices-and-apps--service-health-and-communications"></a>Устройства и приложения |Работоспособность и взаимодействие служб
+### <a name="devices-and-apps--service-health-and-communications"></a>Устройства и приложения | Работоспособность и взаимодействие служб
 Общедоступная версия [API взаимодействия служб](service-communications-concept-overview.md) в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт).
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
@@ -41,7 +41,8 @@ ms.locfileid: "58336651"
 - Получите или задайте длительность бездействия, на основе которого будут настраиваться рекомендации, в разделе [параметров расписания проверки доступа](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true), используя свойство **recommendationLookBackDuration**.
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
-Организации могут использовать [политики для применения рекомендованных методик для приложений, использующих методы проверки подлинности приложений](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true). Такие политики могут применяться к [приложениям и субъектам-службам](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) или [всем приложениям и субъектам-службам в клиенте](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true).
+- Организации могут использовать [политики для применения рекомендованных методик для приложений, использующих методы проверки подлинности приложений](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true). Такие политики могут применяться к [приложениям и субъектам-службам](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) или [всем приложениям и субъектам-службам в клиенте](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true).
+- Поддержка страниц в свойстве навигации **appRoleAssignments** для [пользователей](/api/user-list-approleassignments?view=graph-rest-beta&preserve-view=true), [групп](/api/group-list-approleassignments?view=graph-rest-beta&preserve-view=true) и [субъектов-служб](/api/serviceprincipal-list-approleassignments?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="july-2021-new-and-generally-available"></a>Июль 2021 г.: новые и общедоступные возможности
 

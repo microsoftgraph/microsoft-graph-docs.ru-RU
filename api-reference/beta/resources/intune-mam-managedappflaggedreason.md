@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c433e120db3952f3d12585e097885f38f80ba68acaf6f8f0c1b3c19ba58b3db
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 239ca0dfadd159466f9a81649b9a196f0deea332
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54122343"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58817049"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип enum managedAppFlaggedReason
 
@@ -26,10 +26,9 @@ ms.locfileid: "54122343"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Нет проблем.|
-|rootedDevice|1 |Регистрация приложения запущена на устройстве с корнем и разблокированным.|
+|rootedDevice|1|Регистрация приложения запущена на устройстве с корнем и разблокированным.|
 |AndroidBootloaderUnlocked|2|Регистрация приложения запущена на устройстве Android, на котором разблокирован загрузщик.|
-|AndroidFactoryRomModified|3 |Регистрация приложения запущена на устройстве Android, на котором изменен заводской ROM.|
-
+|AndroidFactoryRomModified|3|Регистрация приложения запущена на устройстве Android, на котором изменен заводской ROM.|
 
 
 

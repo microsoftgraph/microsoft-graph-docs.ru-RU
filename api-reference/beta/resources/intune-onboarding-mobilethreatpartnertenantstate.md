@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47604faa0cb5417c527c3fad559d7d9e3244249f1e0d74055f11c869abf014e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecf8bff7888a48b52e64bf87438b3b98ee636f64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145161"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789900"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>тип enum mobileThreatPartnerTenantState
 
@@ -26,10 +26,9 @@ ms.locfileid: "54145161"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |недоступно|0|Партнер недоступен.|
-|доступен|1 |Партнер доступен.|
+|доступен|1|Партнер доступен.|
 |включено|2|Партнер включен.|
-|unresponsive|3 |Партнер не подавляю.|
-
+|unresponsive|3|Партнер не подавляю.|
 
 
 

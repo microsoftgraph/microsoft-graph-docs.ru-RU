@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ab80ab2f3e811435107fbbc8e1395b16f5c5340c39b4b68a138316d91ecc30b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1a3aa7050342d370f8bc5b575303b2f036a71d9
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131194"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820466"
 ---
 # <a name="automaticupdatemode-enum-type"></a>тип enum automaticUpdateMode
 
@@ -26,13 +26,12 @@ ms.locfileid: "54131194"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
-|notifyDownload|1 |Уведомление о загрузке.|
+|notifyDownload|1|Уведомление о загрузке.|
 |autoInstallAtMaintenanceTime|2|Автоматическая установка во время обслуживания.|
-|autoInstallAndRebootAtMaintenanceTime|3 |Автоматическая установка и перезагрузка во время обслуживания.|
+|autoInstallAndRebootAtMaintenanceTime|3|Автоматическая установка и перезагрузка во время обслуживания.|
 |autoInstallAndRebootAtScheduledTime|4 |Автоматическая установка и перезагрузка в запланированное время.|
 |autoInstallAndRebootWithoutEndUserControl|5 |Автоматическая установка и перезапуск без управления конечным пользователем|
 |windowsDefault|6 |Сброс значения Windows по умолчанию.|
-
 
 
 
