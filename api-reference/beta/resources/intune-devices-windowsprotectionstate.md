@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6098b7b9a675de6930701c9e6dba950cd6383e5f73596b074aee5cd32af0c7cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 640198171fd9b83c6522a8c8b07b84fa186657ab
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219845"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803239"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>тип ресурса windowsProtectionState
 
@@ -34,13 +34,13 @@ ms.locfileid: "54219845"
 |id|Строка|Уникальный идентификатор для объекта защиты от устройства. Это id устройства|
 |malwareProtectionEnabled|Логический|Включено или не включено вредоносное ПО|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или ожидающих перезагрузки и т.д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Логический|Включена защита в режиме реального времени или нет?|
+|realTimeProtectionEnabled|Boolean|Включена защита в режиме реального времени или нет?|
 |networkInspectionSystemEnabled|Логический|Включена или нет включена система сетевого контроля?|
 |quickScanOverdue|Логический|Быстрое сканирование просрочено или нет?|
 |fullScanOverdue|Логический|Полная просроченная проверка или нет?|
-|signatureUpdateOverdue|Логический|Подпись устарела или нет?|
+|signatureUpdateOverdue|Boolean|Подпись устарела или нет?|
 |rebootRequired|Логический|Перезагрузка требуется или нет?|
-|fullScanRequired|Логический|Полное сканирование требуется или нет?|
+|fullScanRequired|Boolean|Полное сканирование требуется или нет?|
 |engineVersion|Строка|Версия двигателя защиты конечной точки|
 |signatureVersion|Строка|Текущая версия определений вредоносных программ|
 |antiMalwareVersion|Строка|Текущая версия антивирусных программ|
@@ -50,7 +50,7 @@ ms.locfileid: "54219845"
 |lastFullScanSignatureVersion|Строка|Последняя версия подписи полного сканирования|
 |lastReportedDateTime|DateTimeOffset|Время последнего состояния состояния устройства|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта антивирусная программа . Возможные значения: `noStatus` `serviceNotRunning` , `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` . `windowsSModeSignaturesInUseOnNonWin10SInstall`|
-|isVirtualMachine|Логический|Указывает, является ли устройство виртуальной машиной.|
+|isVirtualMachine|Boolean|Указывает, является ли устройство виртуальной машиной.|
 |tamperProtectionEnabled|Логический|Указывает, включена ли Защитник Windows защита от взлома.|
 
 ## <a name="relationships"></a>Связи
@@ -92,7 +92,6 @@ ms.locfileid: "54219845"
   "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa4bffe14538618e1338b87f107148422086931e1761e171eff999eaac070626
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf550298b3c7b74ccc2e4a0af38718b9f5be500a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244738"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815052"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>тип ресурса deviceLogCollectionResponse
 
@@ -35,7 +35,7 @@ Windows Объект запроса коллекции журналов.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на коллекцию журналов|
 |managedDeviceId|Guid|Id устройства|
 |errorCode|Int64|Код ошибки, если таковое есть. Допустимые значения -9.2237203685478E+18 до 9.22337203685478E+18|
@@ -70,7 +70,6 @@ Windows Объект запроса коллекции журналов.
   "size": "4.2"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4df02ea0668d52c8ff553c8ab4c61849e923fc00a80a71264517651ed4c3ad9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ce7fcb8a0f219cda0b6aa2797855376a81b7095
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152987"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800024"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>тип ресурса groupPolicyPresentationValueMultiText
 
@@ -67,7 +67,6 @@ ms.locfileid: "54152987"
   ]
 }
 ```
-
 
 
 

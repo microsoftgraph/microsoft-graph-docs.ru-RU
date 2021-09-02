@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a6560696ccce4360c33fce65bb83b8a78d25f92b022677761cf2a51fa0fde56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a9183bc6dbe81155f174bd11a1b5e7c1a25859cf
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126922"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58794422"
 ---
 # <a name="userexperienceanalyticsdevicewithoutcloudidentity-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -57,7 +57,6 @@ ms.locfileid: "54126922"
   "azureAdDeviceId": "String"
 }
 ```
-
 
 
 

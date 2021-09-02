@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81baddb6a9f851aa3399f7353d0decea5ef6fbbf0d0c547da149c153141b5394
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5175d7487aafb9a7e3480e8f4ca263c298b340e3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178838"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820206"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Тип ресурса onPremisesConditionalAccessSettings
 
@@ -62,7 +62,6 @@ ms.locfileid: "54178838"
   "overrideDefaultRule": true
 }
 ```
-
 
 
 

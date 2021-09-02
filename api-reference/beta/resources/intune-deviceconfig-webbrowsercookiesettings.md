@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9acdcda1ff29f0f5274d762856a5047cbfe2cba32d3f633b00acdee40098ab6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 643717c53b194a238a955416610764a1f478c422
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54148185"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783941"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>тип enum webBrowserCookieSettings
 
@@ -26,11 +26,10 @@ Cookie веб-браузера Параметры.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |browserDefault|0|Значение браузера по умолчанию, без намерения.|
-|blockAlways|1 |Всегда блокируют файлы cookie.|
+|blockAlways|1|Всегда блокируют файлы cookie.|
 |allowCurrentWebSite|2|Разрешить файлы cookie с текущего веб-сайта.|
-|allowFromWebsitesVisited|3 |Разрешить файлы Cookie с посещаемых веб-сайтов.|
+|allowFromWebsitesVisited|3|Разрешить файлы Cookie с посещаемых веб-сайтов.|
 |allowAlways|4 |Всегда разрешите файлы cookie.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4327eabe30e6902694a7081787bdfe887b6d4c31
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9fc087d72f6b2e5198ea42141be9914510175e1e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256716"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793528"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>тип ресурса windowsFeatureUpdateProfile
 
@@ -35,14 +35,14 @@ Windows Профиль обновления функций
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
-|displayName|String|Имя отображения профиля.|
+|id|Строка|Идентификатор объекта.|
+|displayName|Строка|Имя отображения профиля.|
 |description|Строка|Описание профиля, указанного пользователем.|
 |featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
-|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
 ## <a name="relationships"></a>Связи
@@ -74,7 +74,6 @@ Windows Профиль обновления функций
   "endOfSupportDate": "String (timestamp)"
 }
 ```
-
 
 
 

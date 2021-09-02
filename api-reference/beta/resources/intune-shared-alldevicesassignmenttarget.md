@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53ad8c9ab351cf2c7e1d3bb04e8dce3640db94113b82833ccd67cbfb87dfaed8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc54d0db56506a28f42e133570db955b7e570886
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156060"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783843"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Тип ресурса allDevicesAssignmentTarget
 
@@ -48,7 +48,6 @@ ms.locfileid: "54156060"
   "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
-
 
 
 

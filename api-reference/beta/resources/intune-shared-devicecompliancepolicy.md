@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 02e4e9c3c292bbc37d00b0cd2ce22828fb342a65af7fc661528bdbecb427a801
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b929d340fcd6ec7f2a0878420fa3453ad2b3b6d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224427"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58792563"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
@@ -42,7 +42,7 @@ ms.locfileid: "54224427"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -79,7 +79,6 @@ ms.locfileid: "54224427"
   "version": 1024
 }
 ```
-
 
 
 

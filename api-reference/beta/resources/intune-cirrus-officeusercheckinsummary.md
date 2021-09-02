@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса iPv4Range
-description: Определение диапазона IPv4.
-author: dougeby
+title: тип ресурса officeUserCheckinSummary
+description: Объект, описывая статистику регистрации клиента.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b306920a8b298bc5a4b8c51f07803963fa2c209c
+ms.openlocfilehash: ef96a9a1c65ded0b5befcfe8441021dda44c8d38
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790103"
+ms.locfileid: "58785576"
 ---
-# <a name="ipv4range-resource-type"></a>Тип ресурса iPv4Range
+# <a name="officeusercheckinsummary-resource-type"></a>тип ресурса officeUserCheckinSummary
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,13 @@ ms.locfileid: "58790103"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определение диапазона IPv4.
-
-
-Наследуется от ресурса [ipRange](../resources/intune-shared-iprange.md)
+Объект, описывая статистику регистрации клиента.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lowerAddress|String|Нижний адрес.|
-|upperAddress|String|Верхний адрес.|
+|succeededUserCount|Int32|Общие успешные проверки пользователей за последние 3 месяца.|
+|failedUserCount|Int32|Итого неудавшейся проверки пользователей за последние 3 месяца.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -38,14 +35,15 @@ ms.locfileid: "58790103"
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.iPv4Range"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.officeUserCheckinSummary"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.iPv4Range",
-  "lowerAddress": "String",
-  "upperAddress": "String"
+  "@odata.type": "#microsoft.graph.officeUserCheckinSummary",
+  "succeededUserCount": 1024,
+  "failedUserCount": 1024
 }
 ```
 

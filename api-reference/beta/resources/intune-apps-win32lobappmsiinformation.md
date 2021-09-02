@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d115b746161bf91702a80ff2a69e6da0cfe4b37636286ef431f5905295e29f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99357d35a95df626d305ce234f115cd41d6f1005
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131271"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58783997"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>тип ресурса win32LobAppMsiInformation
 
@@ -55,7 +55,6 @@ ms.locfileid: "54131271"
   "publisher": "String"
 }
 ```
-
 
 
 

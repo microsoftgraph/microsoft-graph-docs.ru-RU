@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f3262e10bd482d9f1411542283504df766cf11e3cc89b988174c574e6a34b25
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 583fe94787b6cf420254835f11016dd2f03a651c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232694"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796231"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>тип enum siteSecurityLevel
 
@@ -26,12 +26,11 @@ ms.locfileid: "54232694"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
-|низкий|1 |Низкий.|
+|низкий|1|Низкий.|
 |mediumLow|2|Средне-низкий.|
-|medium|3 |Средний.|
+|medium|3|Средний.|
 |mediumHigh|4 |Средней высоты.|
 |высокая|5 |Высокая.|
-
 
 
 

@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3ab2c83a2aea69f91e46045e82f19eb975c56b0c
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 91855eb83eee7a1c541ec5cf3ab82f3946a13d44
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266480"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790194"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -126,10 +126,17 @@ ms.locfileid: "58266480"
 - [Тип supersedence мобильного приложения](intune-apps-mobileappsupersedencetype.md)
 - [Отдельное мобильное приложение](intune-apps-mobilecontainedapp.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
+- [Состояние проверки клиента Office](intune-cirrus-officeclientcheckinstatus.md)
+- [Конфигурация клиента Office](intune-cirrus-officeclientconfiguration.md)
+- [Назначение конфигурации клиента Office](intune-cirrus-officeclientconfigurationassignment.md)
+- [Конфигурация Office](intune-cirrus-officeconfiguration.md)
+- [Цель назначения конфигурации клиента Office](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Цель назначения конфигурации группы клиента Office](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office продукта](intune-apps-officeproductid.md)
 - [Приложение из набора Office](intune-apps-officesuiteapp.md)
 - [Отображаемый уровень хода установки набора Office](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Канал обновления Office](intune-apps-officeupdatechannel.md)
+- [Сводка проверки пользователя Office](intune-cirrus-officeusercheckinsummary.md)
 - [Итоговое состояние приложения](intune-apps-resultantappstate.md)
 - [Информация об итоговом состоянии приложения](intune-apps-resultantappstatedetail.md)
 - [Сертификат подписи кода Symantec](intune-apps-symanteccodesigningcertificate.md)
@@ -173,6 +180,8 @@ ms.locfileid: "58266480"
 - [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Windows конфигурации клиентского офиса](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows конфигурации безопасности клиента office](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Информация о пакете Windows](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [AppX-пакет Windows Phone 8.1](intune-apps-windowsphone81appxbundle.md)

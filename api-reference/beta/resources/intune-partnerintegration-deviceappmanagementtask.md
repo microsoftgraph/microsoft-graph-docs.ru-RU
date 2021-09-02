@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c539c1c2ee284641e7f63f0113ebc35f5ea866f3087339cf436f5f783c830be2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a84e0f0cff73990e955b6f46df2595ebe5771d3b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164169"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58799994"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>тип ресурса deviceAppManagementTask
 
@@ -36,13 +36,13 @@ ms.locfileid: "54164169"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ сущности.|
-|displayName|Строка|Имя.|
-|description|String|Описание.|
+|displayName|String|Имя.|
+|description|Строка|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Срок действия.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
-|creator|String|Адрес электронной почты создателя.|
+|creator|Строка|Адрес электронной почты создателя.|
 |creatorNotes|Строка|Заметки от создателя.|
 |assignedTo|String|Имя или электронная почта администратора этой задачи назначены.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
@@ -74,7 +74,6 @@ ms.locfileid: "54164169"
   "status": "String"
 }
 ```
-
 
 
 

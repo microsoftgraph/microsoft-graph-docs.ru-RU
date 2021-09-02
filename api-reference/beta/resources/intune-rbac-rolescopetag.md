@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5cf9cb5bf75654b48c4cace4905bc22da66798ffc2419f34730dbe3ef9e51b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d121f48aec77684a8f770f7c5a65e23456459b91
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249792"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58790117"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса roleScopeTag
 
@@ -37,10 +37,10 @@ ms.locfileid: "54249792"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображение или дружеское имя тега Область ролей.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
+|displayName|Строка|Отображение или дружеское имя тега Область ролей.|
 |description|Строка|Описание тега Область ролей.|
-|isBuiltIn|Boolean|Описание тега Область ролей.|
+|isBuiltIn|Boolean|Описание тега Область ролей. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -64,7 +64,6 @@ ms.locfileid: "54249792"
   "isBuiltIn": true
 }
 ```
-
 
 
 

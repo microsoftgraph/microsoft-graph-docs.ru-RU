@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 882d81125ba8313440854b3bca376061bc76ce4c022f90be023d4edd7e8da759
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fd77a1c968374be8d9f9c0fe43ecb2765326ba12
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200497"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795503"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions enum type
 
@@ -26,9 +26,8 @@ ms.locfileid: "54200497"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Этот параметр не доступен для учетной записи|
-|companyPortal|1 |Корпоративный портал Intune только.|
+|companyPortal|1|Корпоративный портал Intune только.|
 |privateStore|2|Только частный магазин MSFB.|
-
 
 
 

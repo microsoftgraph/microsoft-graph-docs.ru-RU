@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8045b70b9d02aab7eee0b0769d85607e97561f9e00b8fd64044511af5af30e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 987d977c817044c987012e019207f8603ca5c387
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193778"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58791196"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType enum type
 
@@ -26,11 +26,10 @@ ms.locfileid: "54193778"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен поставщик производных учетных данных.|
-|entrustDataCard|1 |Доверяй.|
+|entrustDataCard|1|Доверяй.|
 |purebred|2|Purebred — Агентство информационных систем обороны.|
-|xTec|3 |Xtec — AuthentX.|
+|xTec|3|Xtec — AuthentX.|
 |intercede|4 |Intercede.|
-
 
 
 

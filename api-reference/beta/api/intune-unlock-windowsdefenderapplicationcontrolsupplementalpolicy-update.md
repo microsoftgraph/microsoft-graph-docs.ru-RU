@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66fb0f0e84dbb6785d21871991e9690030f7f9c3e6453f894c3ef4a9645756b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2aec5b211388fe563d5dc8f59cfafa28c86a3a82
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186099"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793049"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Обновление windowsDefenderApplicationControlSupplementalPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "54186099"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,10 +55,10 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ для дополнительной политики WindowsDefenderApplicationControl.|
-|displayName|String|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
+|displayName|Строка|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
 |description|Строка|Описание дополнительной политики WindowsDefenderApplicationControl.|
 |содержимое|В двоичном формате|Контент дополнительной политики WindowsDefenderApplicationControl в формате byte array.|
-|contentFileName|Строка|Имя файла дополнительного контента политики WindowsDefenderApplicationControl.|
+|contentFileName|String|Имя файла дополнительного контента политики WindowsDefenderApplicationControl.|
 |version|String|Версия дополнительной политики WindowsDefenderApplicationControl.|
 |creationDateTime|DateTimeOffset|Дата и время отправки дополнительной политики WindowsDefenderApplicationControl.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики дополнительных приложений WindowsDefenderApplicationControl.|
@@ -114,7 +114,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

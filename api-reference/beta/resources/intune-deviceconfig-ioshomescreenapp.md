@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: adc5e0fbda8234a5044ce72508573494a660c819abb760cc23ab0da757b6b5e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f15a902849b56f371adfad7fbea6cde4797ebef
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54142038"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58789328"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Тип ресурса iosHomeScreenApp
 
@@ -50,7 +50,6 @@ ms.locfileid: "54142038"
   "isWebClip": true
 }
 ```
-
 
 
 
