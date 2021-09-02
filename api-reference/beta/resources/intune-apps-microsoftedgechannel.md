@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 612baf108177abbea7f8dc43b7da5bd4b6ace5a0f8a257a332418a87131b222e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69caa93aab9f5e2dacac5494f2f7f32535d3f6ec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203241"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816587"
 ---
 # <a name="microsoftedgechannel-enum-type"></a>тип enum microsoftEdgeChannel
 
@@ -26,9 +26,8 @@ ms.locfileid: "54203241"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |dev|0|Пока не задокументировано.|
-|Бета|1 |Пока не задокументировано.|
+|Бета|1|Пока не задокументировано.|
 |стабильный|2|Пока не задокументировано.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e83996d92b5e60fa2fc5f7f67232c8f2d5081540d78d3ac57a3d7181816cfa2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd7b396a848e6f3f6f8e515499b1ad01a6b28a8b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54139616"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806245"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Тип ресурса windows10GeneralConfiguration
 
@@ -37,7 +37,7 @@ ms.locfileid: "54139616"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -45,7 +45,7 @@ ms.locfileid: "54139616"
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |taskManagerBlockEndTask|Логический|Укажите, могут ли не администраторы использовать диспетчер задач для выполнения задач.|
@@ -79,7 +79,7 @@ ms.locfileid: "54139616"
 |messagingBlockMMS|Логический|Указывает, следует ли блокировать функции отправки и получения MMS на устройстве.|
 |messagingBlockRichCommunicationServices|Логический|Указывает, следует ли блокировать RCS отправку и получение функций на устройстве.|
 |printerNames|Коллекция String|Автоматическое предоставление принтеров на основе их имен (имен сетевых хостов).|
-|printerDefaultName|String|Имя (имя сетевого хоста) установленного принтера.|
+|printerDefaultName|Строка|Имя (имя сетевого хоста) установленного принтера.|
 |printerBlockAddition|Логический|Предотвращение установки пользователями дополнительных принтеров из параметров принтеров.|
 |searchBlockDiacritics|Boolean|Указывает, можно ли использовать диакритические знаки в поиске.|
 |searchDisableAutoLanguageDetection|Boolean|Указывает, следует ли использовать автоматическое определение языка при индексировании контента и свойств.|
@@ -95,7 +95,7 @@ ms.locfileid: "54139616"
 |securityBlockAzureADJoinedDevicesAutoEncryption|Логический|Укажите, следует ли разрешить автоматическое шифрование устройства во время OOBE, когда к устройству присоединяется Azure AD (только на рабочем столе).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
-|systemTelemetryProxyServer|Строка|Получает или задает полностью квалифицированное доменное имя (FQDN) или IP-адрес прокси-сервера для переадпорта запросов подключенных пользователей и телеметрии.|
+|systemTelemetryProxyServer|String|Получает или задает полностью квалифицированное доменное имя (FQDN) или IP-адрес прокси-сервера для переадпорта запросов подключенных пользователей и телеметрии.|
 |edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Указывает, какой тип данных телеметрии (ни один, ни интрасети, ни интернет) отправляется в Microsoft 365 Analytics. Возможные значения: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Управляет доступом пользователя к рабочему пространству с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Управляет доступом пользователя к рабочему пространству с рабочего стола и сверху экрана блокировки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
@@ -127,7 +127,7 @@ ms.locfileid: "54139616"
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Указывает, следует ли включить синхронизацию избранного между Internet Explorer и Microsoft Edge. Браузеры обмениваются данными о добавлении, удалении и изменении избранных элементов, а также их порядка.|
 |edgeFavoritesListLocation|Строка|Расположение списка избранного для обеспечения. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
 |edgeBlockEditFavorites|Логический|Указывает, следует ли блокировать пользователю внесение изменений в избранное.|
-|edgeNewTabPageURL|String|Укажите страницу, открываемую при создания новых вкладок.|
+|edgeNewTabPageURL|Строка|Укажите страницу, открываемую при создания новых вкладок.|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Вызывает кнопку Главная, чтобы скрыть, загрузить страницу Начните по умолчанию, загрузить новую страницу вкладки или настраиваемый URL-адрес|
 |edgeHomeButtonConfigurationEnabled|Логический|Включить конфигурацию кнопки Home.|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Укажите, какие страницы открыты в начале. Возможные значения: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
@@ -136,10 +136,10 @@ ms.locfileid: "54139616"
 |edgeBlockPrinting|Логический|Настройте Edge, чтобы разрешить или заблокировать печать.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Получите или задано значение, которое указывает, следует ли устанавливать планку избранного, которая всегда будет видна или скрыта на любой странице. Возможные значения: `notConfigured`, `hide`, `show`.|
 |edgeBlockSavingHistory|Логический|Настройте Edge, чтобы сохранить историю просмотра или никогда не сохранять историю просмотра.|
-|edgeBlockFullScreenMode|Логический|Разрешить или запретить edge вводить полный режим экрана.|
-|edgeBlockWebContentOnewTabPage|Логический|Настройка загрузки пустой страницы в Edge вместо новой страницы вкладки по умолчанию и предотвращение ее изменения пользователями.|
+|edgeBlockFullScreenMode|Boolean|Разрешить или запретить edge вводить полный режим экрана.|
+|edgeBlockWebContentOnewTabPage|Boolean|Настройка загрузки пустой страницы в Edge вместо новой страницы вкладки по умолчанию и предотвращение ее изменения пользователями.|
 |edgeBlockTabPreloading|Логический|Настройка предварительной загрузки страницы вкладок Edge в Windows запуске.|
-|edgeBlockPrelaunch|Логический|Определите, Microsoft Edge ли Windows запуске.|
+|edgeBlockPrelaunch|Boolean|Определите, Microsoft Edge ли Windows запуске.|
 |edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Управление сообщением, отображаемой edge перед переходом на Internet Explorer. Возможные значения: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
 |edgePreventCertificateErrorOverride|Логический|Разрешить или запретить пользователям переопределять ошибки сертификата.|
 |edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Управляет ограничением Microsoft Edge параметров в зависимости от режима настройки киоска. Возможные значения: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
@@ -711,7 +711,6 @@ ms.locfileid: "54139616"
   "configureTimeZone": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 57f29fdef863671c36f8b9e063c99a370e1173d1
-ms.sourcegitcommit: fdd69d362d1debc7b08e78269d59b531f9dfdaae
+ms.openlocfilehash: c70491399b564ef2d3daa8df33932f4728f87681
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697195"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786910"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -28,7 +28,7 @@ ms.locfileid: "51697195"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | CallRecords.Read.All |
+| Application                            | CallRecord-PstnCalls.Read.All, CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -64,14 +64,16 @@ GET /communications/callRecords/getPstnCalls
 
 В случае успешной работы эта функция возвращает код ответа и коллекцию записей `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) в тексте ответа.
   
-Если в диапазоне дат более 1000 записей, тело также включает URL-адрес для запроса следующей страницы записей `@odata.NextLink` вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. в дополнительных сведениях [о сборе данных Microsoft Graph в приложении.](/graph/paging)
+Если в диапазоне дат более 1000 записей, тело также включает URL-адрес для запроса следующей страницы записей `@odata.NextLink` вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. [в Graph microsoft Graph в приложении.](/graph/paging)
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
+
+В следующем примере показано, как получить коллекцию записей для вызовов PSTN, которые произошли в указанном диапазоне дат. Ответ включает в себя список записей в этом первом ответе и получения записей за пределами первых `"@odata.count": 1000` `@odata.NextLink` 1000. Для читаемости в ответе показана только коллекция из 1 записи. Предположим, что в этом диапазоне дат более 1000 вызовов.
 
 ### <a name="request"></a>Запрос
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "callrecord_getpstncalls"
 }
 -->
@@ -84,7 +86,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.callRecords.pstnCallLogRow)"
 }
@@ -127,5 +129,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>См. также
 
-* [Отчет об использовании microsoft Teams PSTN](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
-* [Отчет о прямой маршрутике в Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)
+* [Microsoft Teams отчет об использовании PSTN](/microsoftteams/teams-analytics-and-reports/pstn-usage-report).
+* [Отчет о прямой маршрутике в Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md).

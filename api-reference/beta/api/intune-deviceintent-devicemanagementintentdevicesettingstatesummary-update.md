@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc3c107e5eea25c33229f3455ff28281d9ffdb4f49425db7447c41d1f1b39cf5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec13f68ff86ed2787e74b8612b73600265cc6f03
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54191587"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58818662"
 ---
 # <a name="update-devicemanagementintentdevicesettingstatesummary"></a>Обновление deviceManagementIntentDeviceSettingStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54191587"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|The ID|
+|id|String|The ID|
 |settingName|String|Имя параметра|
 |compliantCount|Int32|Количество устройств, соответствующих требованиям.|
 |conflictCount|Int32|Количество устройств в конфликте|
@@ -107,7 +107,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

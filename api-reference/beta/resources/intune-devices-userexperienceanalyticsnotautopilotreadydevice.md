@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6104a142c76439bd3ad8ba9eaa2863bf2067b5e8096f278e5c1fad59367bf32
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e85b13e540547111e2aea513f7fe595f7ece7404
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147968"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804276"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>тип ресурса userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -34,7 +34,7 @@ ms.locfileid: "54147968"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства intune.|
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
@@ -71,7 +71,6 @@ ms.locfileid: "54147968"
   "azureAdJoinType": "String"
 }
 ```
-
 
 
 

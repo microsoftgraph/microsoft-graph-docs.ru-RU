@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53b42eae58cbd68f4663290cd5d565e8fdf44c27bab676835054dcbc919a8935
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3729f383c8df383c6ad28c90b32129edf307562c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206790"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787626"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>тип ресурса chromeOSOnboardingSettings
 
@@ -62,7 +62,6 @@ ms.locfileid: "54206790"
   "lastDirectorySyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 359cb2a8318e032d4f0a81fe564168c795bf0b7ad5c15d9ab2fbacd4f8c13428
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0e03efcfdc49f41ee52c401ff7a70a8734cb3a3c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147926"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821096"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 
@@ -33,7 +33,7 @@ ms.locfileid: "54147926"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики.|
-|description|Строка|Описание политики.|
+|description|String|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
@@ -65,7 +65,6 @@ ms.locfileid: "54147926"
   "version": "String"
 }
 ```
-
 
 
 

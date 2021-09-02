@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69953655c507550ebc4ffe731880f2530272059e7c2a5f50a08e3c5b2aa654df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d80b6e95570ce359b3f82cebe101f161e9076b91
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231322"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787078"
 ---
 # <a name="update-microsofttunnelserver"></a>Обновление microsoftTunnelServer
 
@@ -27,9 +27,9 @@ ms.locfileid: "54231322"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|MicrosoftTunnelGateway.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,12 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id MicrosoftTunnelServer|
+|id|Строка|Id MicrosoftTunnelServer|
 |displayName|Строка|Имя отображения MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние здоровья MicrosoftTunnelServer. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|При последней регистрации в MicrosoftTunnelServer|
+|agentImageDigest|Строка|Дайджест текущего образа агента, запущенного на этом сервере |
+|serverImageDigest|Строка|Дайджест текущего изображения сервера, запущенного на этом сервере |
 
 
 
@@ -70,13 +72,15 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers/{microsoftTunnelServerId}
 Content-type: application/json
-Content-length: 208
+Content-length: 312
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
   "displayName": "Display Name value",
   "tunnelServerHealthStatus": "healthy",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+  "agentImageDigest": "Agent Image Digest value",
+  "serverImageDigest": "Server Image Digest value"
 }
 ```
 
@@ -85,17 +89,18 @@ Content-length: 208
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 257
+Content-Length: 361
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelServer",
   "id": "b5cf0aee-0aee-b5cf-ee0a-cfb5ee0acfb5",
   "displayName": "Display Name value",
   "tunnelServerHealthStatus": "healthy",
-  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
+  "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00",
+  "agentImageDigest": "Agent Image Digest value",
+  "serverImageDigest": "Server Image Digest value"
 }
 ```
-
 
 
 

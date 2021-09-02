@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e20ab4bdcc5c8ca10e1b61970d2fcd5101a13ddc06cbf784576c5e39cead8c8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed387c590b519984e0da4bb28862d8086612a612
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206188"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58805011"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>тип ресурса deviceManagementDerivedCredentialSettings
 
@@ -39,7 +39,7 @@ ms.locfileid: "54206188"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для производных учетных данных|
+|id|Строка|Уникальный идентификатор для производных учетных данных|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +58,6 @@ ms.locfileid: "54206188"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

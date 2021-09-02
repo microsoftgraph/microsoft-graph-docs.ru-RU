@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7725d7f36ca66e546cb98250091ef7ef08eae9dd6eba2f6ef846eca4ab1ce251
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ed97e1cebfec55a6ec9420ab818f208873daa2a
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209786"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58800347"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>тип ресурса deviceManagementReportSchedule
 
@@ -34,7 +34,7 @@ ms.locfileid: "54209786"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта|
+|id|Строка|Уникальный идентификатор для этого объекта|
 |reportScheduleName|Строка|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые будут доставлены|
 |электронные письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
@@ -43,7 +43,7 @@ ms.locfileid: "54209786"
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Id пользователя, создавшего отчет|
 |reportName|Строка|Имя отчета|
-|filter|String|Фильтры, применяемые в отчете|
+|filter|Строка|Фильтры, применяемые в отчете|
 |select|Коллекция String|Столбцы, выбранные из отчета|
 |orderBy|Коллекция String|Порядок столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
@@ -83,7 +83,6 @@ ms.locfileid: "54209786"
   "format": "String"
 }
 ```
-
 
 
 

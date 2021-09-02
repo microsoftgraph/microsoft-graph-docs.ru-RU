@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52570fa102bbada8cabefb30a5e35a9dfaef5b8a4a9bcd3dbaaf22f9bd905853
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cd151b3e792eefbafff9b3eb3b2489f296dffb4b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54153813"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803716"
 ---
 # <a name="delete-devicemanagementderivedcredentialsettings"></a>Удаление deviceManagementDerivedCredentialSettings
 
@@ -30,7 +30,7 @@ ms.locfileid: "54153813"
 |Делегированные (рабочая или учебная учетная запись)||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ DELETE /deviceManagement/derivedCredentials/{deviceManagementDerivedCredentialSe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/derivedCredentials/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

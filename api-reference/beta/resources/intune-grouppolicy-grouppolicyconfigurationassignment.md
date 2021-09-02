@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ba827367bd32d676f56b3665e84f802e040686d083cfb7dc28aa937bdf3403c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5eb13ad3c1fb92d9f70e69a6fe432533d4f0c3d
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172899"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58804269"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>тип ресурса groupPolicyConfigurationAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "54172899"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Тип групп был ориентирован на конфигурацию групповой политики.|
 
@@ -62,7 +62,6 @@ ms.locfileid: "54172899"
   }
 }
 ```
-
 
 
 
