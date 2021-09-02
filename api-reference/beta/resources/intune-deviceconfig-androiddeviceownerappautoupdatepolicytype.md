@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 80eb0a433b21584e1335c04276cc837ce22598ebf38e886acecdeaea54741145
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc427cb78e3a008f1fb2cc856217648bbb670015
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236516"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58779202"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>тип enum androidDeviceOwnerAppAutoUpdatePolicyType
 
@@ -26,11 +26,10 @@ ms.locfileid: "54236516"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен; это значение игнорируется.|
-|userChoice|1 |Пользователь может управлять автоматическими обновлениями.|
+|userChoice|1|Пользователь может управлять автоматическими обновлениями.|
 |никогда|2|Приложения никогда не обновляются автоматически.|
-|wiFiOnly|3 |Приложения обновляются автоматически только Wi-Fi.|
+|wiFiOnly|3|Приложения обновляются автоматически только Wi-Fi.|
 |всегда|4 |Приложения обновляются автоматически в любое время. Могут применяться сборы за данные.|
-
 
 
 

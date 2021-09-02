@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71bfbf09f9fcb8de63956855ec3c13fed60a2d604d1a3b1601c1b2f6007e8867
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4bcf5b6331777600bb847dc2aad4a921c2745702
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54131180"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815101"
 ---
 # <a name="vpnondemandrule-resource-type"></a>тип ресурса vpnOnDemandRule
 
@@ -31,7 +31,7 @@ ms.locfileid: "54131180"
 |action|[VPNOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Действие. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |domainAction|[VPNOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (применимо только при оценке подключения Action). Возможные значения: `connectIfNeeded`, `neverConnect`.|
 |домены|Коллекция String|Домены (применимы только при оценке подключения Action).|
-|probeRequiredUrl|String|Url-адрес Probe Required (применим только при оценке подключения Action и подключения DomainAction).|
+|probeRequiredUrl|Строка|Url-адрес Probe Required (применим только при оценке подключения Action и подключения DomainAction).|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -61,7 +61,6 @@ ms.locfileid: "54131180"
   "probeRequiredUrl": "String"
 }
 ```
-
 
 
 

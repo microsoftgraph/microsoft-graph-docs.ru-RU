@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c4b7f6344444a339644b3eef9717b25372962fa1ceb8ba770b80214b97c56c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1dbcb41d30bec09335316503fbc8f93f6264c34
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185672"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803492"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>тип ресурсов importedDeviceIdentity
 
@@ -37,7 +37,7 @@ ms.locfileid: "54185672"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор импортируемого удостоверения устройства|
-|importedDeviceIdentifier|Строка|Идентификатор импортируемого устройства|
+|importedDeviceIdentifier|String|Идентификатор импортируемого устройства|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортируемого удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Последнее изменение dateTime описания|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
@@ -71,7 +71,6 @@ ms.locfileid: "54185672"
   "platform": "String"
 }
 ```
-
 
 
 

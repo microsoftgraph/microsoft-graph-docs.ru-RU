@@ -1,18 +1,18 @@
 ---
-title: Перечисление объектов managedAppPolicy
-description: Список свойств и связей объектов managedAppPolicy.
-author: dougeby
+title: Удаление windowsOfficeClientSecurityConfiguration
+description: Удаляет политику безопасности windowsOfficeClientSecurityConfiguration.
 localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93c79a2f390c46502434baf4b458c948afc7574c
+ms.openlocfilehash: 06f8dd4fea9767b9c8b9ec44d48d946a72ba965e
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803099"
+ms.locfileid: "58801912"
 ---
-# <a name="list-managedapppolicies"></a>Перечисление объектов managedAppPolicy
+# <a name="delete-windowsofficeclientsecurityconfiguration"></a>Удаление windowsOfficeClientSecurityConfiguration
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "58803099"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).
+Удаляет [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)политики безопасности.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,9 +37,7 @@ ms.locfileid: "58803099"
 }
 -->
 ``` http
-GET /deviceAppManagement/managedAppPolicies
-GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies
-GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies
+DELETE /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -52,39 +50,20 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
+DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{key}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 475
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.managedAppPolicy",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ],
-      "id": "3c7b9675-9675-3c7b-7596-7b3c75967b3c",
-      "version": "Version value"
-    }
-  ]
-}
 ```
 
 

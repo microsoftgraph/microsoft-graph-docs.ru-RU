@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb1b0d6ed92eb3b42713f586b030a87a6f0c4dea9e3cd43ce96ac383541c14b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5d9d7e4c6feee116f6fff6989903b5abe953b71e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54239149"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802441"
 ---
 # <a name="deviceappmanagementtaskpriority-enum-type"></a>тип enum deviceAppManagementTaskPriority
 
@@ -26,9 +26,8 @@ ms.locfileid: "54239149"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|0|Без набора приоритетов.|
-|высокая|1 |Высокий приоритет.|
+|высокая|1|Высокий приоритет.|
 |низкий|2|Низкий приоритет.|
-
 
 
 

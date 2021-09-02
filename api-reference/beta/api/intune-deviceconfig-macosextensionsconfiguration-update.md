@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82531f862d6ef5ec6d96600be380ecf202ff5fdda21ad6ce0882a0cdea657675
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e59f76b941aba6233a7048721a33072e1a4c4d3c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179958"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788067"
 ---
 # <a name="update-macosextensionsconfiguration"></a>Обновление macOSExtensionsConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54179958"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,12 +64,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |kernelExtensionOverridesAllowed|Логический|Если установлено, что это так, пользователи могут утверждать дополнительные расширения ядра, явно не разрешенные профилями конфигураций.|
 |kernelExtensionAllowedTeamIdentifiers|Коллекция String|Все расширения ядра, действительно подписанные идентификаторами группы в этом списке, будут разрешены для загрузки.|
 |kernelExtensionsAllowed|[коллекция macOSKernelExtension](../resources/intune-deviceconfig-macoskernelextension.md)|Список расширений ядра, которые можно загрузить. . Эта коллекция может содержать не более 500 элементов.|
-|systemExtensionsBlockOverride|Логический|Получает или задает, разрешить ли пользователю утверждать дополнительные расширения системы, явно не разрешенные профилями конфигурации.|
+|systemExtensionsBlockOverride|Boolean|Получает или задает, разрешить ли пользователю утверждать дополнительные расширения системы, явно не разрешенные профилями конфигурации.|
 |systemExtensionsAllowedTeamIdentifiers|Коллекция String|Получает или задает список разрешенных идентификаторов группы. Любое расширение системы, подписанное с любым из указанных идентификаторов группы, будет утверждено.|
 |systemExtensionsAllowed|[коллекция macOSSystemExtension](../resources/intune-deviceconfig-macossystemextension.md)|Получает или задает список разрешенных расширений системы macOS. Эта коллекция может содержать не более 500 элементов.|
 |systemExtensionsAllowedTypes|[коллекция macOSSystemExtensionTypeMapping](../resources/intune-deviceconfig-macossystemextensiontypemapping.md)|Получает или задает список разрешенных типов расширения системы macOS. Эта коллекция может содержать не более 500 элементов.|
@@ -221,7 +221,6 @@ Content-Length: 2137
   ]
 }
 ```
-
 
 
 

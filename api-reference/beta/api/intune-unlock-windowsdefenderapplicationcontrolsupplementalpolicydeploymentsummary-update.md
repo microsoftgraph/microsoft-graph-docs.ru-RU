@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e369ca04672de3abb97f7b55f38069ac722aef28754daba98d9294cbb209f84d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d3522d8e9131dee1d41d6b1b8c84f02659fbf5b
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226555"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58795902"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>Обновление windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54226555"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deployedDeviceCount|Int32|Количество устройств, успешно развернутых в этой дополнительной политике WindowsDefenderApplicationControl.|
 |failedDeviceCount|Int32|Количество устройств, которые не развернули эту дополнительную политику WindowsDefenderApplicationControl.|
 
@@ -92,7 +92,6 @@ Content-Length: 215
   "failedDeviceCount": 1
 }
 ```
-
 
 
 

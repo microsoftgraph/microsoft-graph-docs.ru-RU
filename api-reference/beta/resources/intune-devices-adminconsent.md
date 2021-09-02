@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d56646299766427a4598ab1073064bfa8ea86a3c405df17b59bb52866b47e75a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dcf849e8c44e68bb4b76417748dbe795e0dd5852
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54227367"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58816517"
 ---
 # <a name="adminconsent-resource-type"></a>тип ресурса adminConsent
 
@@ -45,7 +45,6 @@ ms.locfileid: "54227367"
   "shareUserExperienceAnalyticsData": "String"
 }
 ```
-
 
 
 

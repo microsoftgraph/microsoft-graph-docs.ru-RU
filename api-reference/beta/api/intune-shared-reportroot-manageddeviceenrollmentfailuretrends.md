@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03d8229218497a7634ff45eb1c018f7d9ae2529d40d4b546b647922408a4a6cc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8137ccd0df7649463751f97b212c1ff53fa0cf12
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226646"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58788509"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>функция managedDeviceEnrollmentFailureTrends
 
@@ -29,7 +29,7 @@ ms.locfileid: "54226646"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Application||
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -74,7 +74,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79718ef48d5a9ab88d8bd441fa0871e3dcff5dbcd7f86910a908f2dbc443276d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0afe1b3bbc06d634759e98aa6f04765177fb2126
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54156081"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58806924"
 ---
 # <a name="roleassignment-resource-type"></a>Тип ресурса roleAssignment
 
@@ -34,8 +34,8 @@ ms.locfileid: "54156081"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображаемое или понятное имя назначения роли.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|Строка|Отображаемое или понятное имя назначения роли.|
 |description|Строка|Описание назначения роли.|
 |scopeMembers|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 |scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md);|Указывает тип области назначения ролей. По умолчанию тип "ResourceScope" позволяет назначение ResourceScopes. Для "AllDevices", "AllLicensedUsers" и "AllDevicesAndLicensedUsers" свойство ResourceScopes следует оставить пустым. Возможные значения: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
@@ -69,7 +69,6 @@ ms.locfileid: "54156081"
   ]
 }
 ```
-
 
 
 

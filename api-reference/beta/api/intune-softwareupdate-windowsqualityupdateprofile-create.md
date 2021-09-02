@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fd6a4e988384112ef957bf38b52dcd4827547b9c3b5765c9dbaae052f5dbe61
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: acce3e463cc82a8704c94d3e5299b523d97eac1e
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145588"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820949"
 ---
 # <a name="create-windowsqualityupdateprofile"></a>Создание windowsQualityUpdateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "54145588"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsQualityUpdateProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,13 +55,13 @@ POST /deviceManagement/windowsQualityUpdateProfiles
 |:---|:---|:---|
 |id|String|ID политики Intune.|
 |displayName|String|Имя отображения для профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
+|description|String|Описание профиля, указанного пользователем.|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Параметры ускоренного обновления.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления качества.|
 |releaseDateDisplayName|String|Содружественная дата выпуска для отображения для выпуска обновления качества|
-|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 
 
 
@@ -120,7 +120,6 @@ Content-Length: 730
   "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
-
 
 
 

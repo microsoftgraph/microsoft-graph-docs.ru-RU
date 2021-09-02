@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f4b323c351c5e544ef4c2f5c2e9df9d877919cb
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6d852f5d2bcb4397c14adc0a98f1e8b23c161d76
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261154"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820858"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>тип ресурса appleUserInitiatedEnrollmentProfile
 
@@ -39,7 +39,7 @@ ms.locfileid: "58261154"
 |availableEnrollmentTypeOptions|[коллекция appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Список доступных параметров типа регистрации|
 |id|String|GUID объекта|
 |displayName|String|Имя профиля|
-|description|Строка|Описание профиля|
+|description|String|Описание профиля|
 |priority|Int32|Приоритет, 0 — самый высокий|
 |платформа|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |createdDateTime|DateTimeOffset|Время создания профиля|
@@ -78,7 +78,6 @@ ms.locfileid: "58261154"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

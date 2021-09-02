@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7df3d131b8fa932b3cee492736ef33034deb405264f2e4429af8965656a4f22b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a933d23410a828609bbb8e14466bd112657afda6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54179160"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58802812"
 ---
 # <a name="iosvppappassigneduserlicense-resource-type"></a>тип ресурса iosVppAppAssignedUserLicense
 
@@ -38,7 +38,7 @@ ms.locfileid: "54179160"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Унаследованный от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|String|Адрес электронной почты пользователя. Унаследованный от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|Строка|Адрес электронной почты пользователя. Унаследованный от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|Идентификатор пользователя. Унаследованный от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|Имя пользователя. Унаследованный от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userPrincipalName|String|Имя участника-пользователя. Унаследованный от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
@@ -64,7 +64,6 @@ ms.locfileid: "54179160"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

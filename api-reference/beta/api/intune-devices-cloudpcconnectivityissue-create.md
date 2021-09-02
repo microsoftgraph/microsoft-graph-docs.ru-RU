@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f4040dd8c78859c9e977b8a650940ebc178d240
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4b5fae204dc8969dd1cb1507102b33353742bdf4
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264922"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801306"
 ---
 # <a name="create-cloudpcconnectivityissue"></a>Создание cloudPCConnectivityIssue
 
@@ -27,9 +27,9 @@ ms.locfileid: "58264922"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/cloudPCConnectivityIssues
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,13 @@ POST /deviceManagement/cloudPCConnectivityIssues
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
 |deviceId|String|Устройство Intune устройства, с которое связано подключение.|
 |errorCode|String|Код ошибки проблемы подключения.|
 |errorDateTime|DateTimeOffset|Время начала подключения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC).|
 |userId|String|Уникальный id пользователя, который инициализирует подключение.|
 |errorDescription|String|Подробное описание того, что пошло не так.|
-|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
+|recommendedAction|Строка|Рекомендуемое действие для устранения соответствующей ошибки.|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 374
   "recommendedAction": "Recommended Action value"
 }
 ```
-
 
 
 

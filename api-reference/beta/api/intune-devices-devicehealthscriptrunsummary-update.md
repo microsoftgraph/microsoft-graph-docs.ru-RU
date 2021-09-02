@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b539c22669f4168bd40acacbea2cfdeaaad2115
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: fedb694c2142f9826aa4da43616c84a716ad387c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263753"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819979"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Обновление устройстваHealthScriptRunSummary
 
@@ -27,9 +27,9 @@ ms.locfileid: "58263753"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ скрипта для службы службы устройств запустите объект сводки. Это свойство доступно только для чтения.|
+|id|String|Ключ скрипта для службы службы устройств запустите объект сводки. Это свойство доступно только для чтения.|
 |noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым|
 |issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему|
 |detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена|
@@ -119,7 +119,6 @@ Content-Length: 592
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

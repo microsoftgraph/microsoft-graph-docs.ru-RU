@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a914b132eb01589d90788910349c261faf4b4c8e086908519470427d255317ca
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 36fed1e15acd0f3e8a2524ab01dc8e7fd3d80e21
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160886"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58787211"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>тип ресурса windowsAutopilotDeploymentProfile
 
@@ -41,10 +41,10 @@ Windows Autopilot Deployment Профиль
 |lastModifiedDateTime|DateTimeOffset|Последнее изменение профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Параметр "Вне параметров работы с полем"|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Параметр состояния регистрации|
-|extractHardwareHash|Логический|HardwareHash Extraction для профиля|
-|deviceNameTemplate|Строка|Шаблон, используемый для имени устройства АвтоПилот. Это может быть пользовательский текст, который также может содержать либо серийный номер устройства, либо случайный генерируемый номер. Общая длина текста, генерируемого шаблоном, может быть не более 15 символов.|
+|extractHardwareHash|Boolean|HardwareHash Extraction для профиля|
+|deviceNameTemplate|String|Шаблон, используемый для имени устройства АвтоПилот. Это может быть пользовательский текст, который также может содержать либо серийный номер устройства, либо случайный генерируемый номер. Общая длина текста, генерируемого шаблоном, может быть не более 15 символов.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства AutoPilot, к который применим этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
-|enableWhiteGlove|Логический|Включить белую перчатку автопилота для профиля.|
+|enableWhiteGlove|Boolean|Включить белую перчатку автопилота для профиля.|
 |roleScopeTagIds|Коллекция String|Теги области для профиля.|
 
 ## <a name="relationships"></a>Связи
@@ -99,7 +99,6 @@ Windows Autopilot Deployment Профиль
   ]
 }
 ```
-
 
 
 

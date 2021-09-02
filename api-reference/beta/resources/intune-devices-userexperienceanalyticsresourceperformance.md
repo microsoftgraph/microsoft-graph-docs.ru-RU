@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 141b9099a583608d03cd3fde97951ac94b624934
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 9d2434ef45b0032b9d606dae7715213844c06e50
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262622"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58786973"
 ---
 # <a name="userexperienceanalyticsresourceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsResourcePerformance
 
@@ -80,7 +80,6 @@ ms.locfileid: "58262622"
   "averageSpikeTimeScore": 1024
 }
 ```
-
 
 
 

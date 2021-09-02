@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7dd7f9ccaea77af6ff465029c9592cba82b205d7816c0863f5de81778a484865
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 513c2bebc8e4b400fbc069df61afeed56ee3b4b2
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224938"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58807351"
 ---
 # <a name="update-windowsqualityupdateprofileassignment"></a>Обновление windowsQualityUpdateProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "54224938"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор сущности|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, назначенная профилем обновления функций.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, на которую назначен профиль обновления качества.|
 
 
 
@@ -97,7 +97,6 @@ Content-Length: 393
   }
 }
 ```
-
 
 
 

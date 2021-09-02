@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 779035fb8911eafd6583804cc21e98152b8fd81d93625f73d398aacb5aacec0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c63a7c9a0fba7a0d015d3770feba24084bd5bda1
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145329"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58803267"
 ---
 # <a name="devicecompliancescriptrunsummary-resource-type"></a>тип ресурса deviceComplianceScriptRunSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "54145329"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша скрипта соответствия устройству запускать сводную сущность. Это свойство доступно только для чтения.|
+|id|Строка|Клавиша скрипта соответствия устройству запускать сводную сущность. Это свойство доступно только для чтения.|
 |noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым. Допустимые значения 2147483648 2147483647|
 |issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему. Допустимые значения 2147483648 2147483647|
 |detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена. Допустимые значения 2147483648 2147483647|
@@ -60,7 +60,6 @@ ms.locfileid: "54145329"
   "lastScriptRunDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

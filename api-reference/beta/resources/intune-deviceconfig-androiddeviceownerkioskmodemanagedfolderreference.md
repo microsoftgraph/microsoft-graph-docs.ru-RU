@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 93cd963d2754e56928eae8e8a450b9f3e40aa177e0ea2cd1d3b991586a070195
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bcdb62a5c8ebf740b9c9f0060289af0ebded8ff3
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54173242"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58819222"
 ---
 # <a name="androiddeviceownerkioskmodemanagedfolderreference-resource-type"></a>тип ресурса androidDeviceOwnerKioskModeManagedFolderReference
 
@@ -29,7 +29,7 @@ ms.locfileid: "54173242"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |folderName|String|Имя папки|
-|folderIdentifier|Строка|Уникальный идентификатор для папки|
+|folderIdentifier|String|Уникальный идентификатор для папки|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -48,7 +48,6 @@ ms.locfileid: "54173242"
   "folderIdentifier": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66091da281afb1594184cb6672b90d200fd94ebaf343a8fe8f75be0031756165
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1f9dd1dfb994eb2007bda62546b24908a5852ff
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54183893"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821019"
 ---
 # <a name="create-securitybaselinedevicestate"></a>Создание securityBaselineDeviceState
 
@@ -29,7 +29,7 @@ ms.locfileid: "54183893"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор сущности|
-|managedDeviceId|Строка|ID устройства Intune|
+|managedDeviceId|String|ID устройства Intune|
 |deviceDisplayName|String|Отображение имени устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия базовым требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
@@ -101,7 +101,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

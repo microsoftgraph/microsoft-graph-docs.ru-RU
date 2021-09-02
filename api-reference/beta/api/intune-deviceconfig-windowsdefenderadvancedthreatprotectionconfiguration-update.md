@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61273e458c144d98458c00deb4cbdd6b8b2c627d129bb736861c7c7f3026a594
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8984dd3f6c9a3ef8cdbc1e98043a9c2753cb8c6c
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54127854"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58796014"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Обновление объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "54127854"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -66,13 +66,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|advancedThreatProtectionOnboardingBlob|Строка|Защитник Windows AdvancedThreatProtection Onboarding Blob.|
-|advancedThreatProtectionOnboardingFilename|String|Имя файла, из которого был получен AdvancedThreatProtectionOnboardingBlob.|
+|advancedThreatProtectionOnboardingBlob|String|Защитник Windows AdvancedThreatProtection Onboarding Blob.|
+|advancedThreatProtectionOnboardingFilename|Строка|Имя файла, из которого был получен AdvancedThreatProtectionOnboardingBlob.|
 |advancedThreatProtectionAutoPopulateOnboardingBlob|Логический|Автоматическое заполнение бортового BLOB программным путем из службы advanced Threat Protection|
 |allowSampleSharing|Boolean|Правило "Разрешить общий доступ к выборкам" службы Advanced Threat Protection в Защитнике Windows|
 |enableExpeditedTelemetryReporting|Boolean|Увеличение частоты создания отчетов о телеметрии службой Advanced Threat Protection в Защитнике Windows.|
 |advancedThreatProtectionOffboardingBlob|Строка|Защитник Windows AdvancedThreatProtection Offboarding Blob.|
-|advancedThreatProtectionOffboardingFilename|String|Имя файла, из которого был получен AdvancedThreatProtectionOffboardingBlob.|
+|advancedThreatProtectionOffboardingFilename|Строка|Имя файла, из которого был получен AdvancedThreatProtectionOffboardingBlob.|
 
 
 
@@ -177,7 +177,6 @@ Content-Length: 1775
   "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
-
 
 
 

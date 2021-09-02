@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de07dfba3b6b8e37da95bdb7c13cc09f94b820deb55360c5156e82ab2321309e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f634d1571a63c25a23c28af50ad5804073eb3536
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229509"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58793598"
 ---
 # <a name="appleexpeditedcheckinconfigurationbase-resource-type"></a>тип ресурса appleExpeditedCheckinConfigurationBase
 
@@ -43,7 +43,7 @@ ms.locfileid: "54229509"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |enableExpeditedCheckin|Логический|Получает или задает, следует ли включить ускоренную регистрацию устройства.|
 
@@ -103,7 +103,6 @@ ms.locfileid: "54229509"
   "enableExpeditedCheckin": true
 }
 ```
-
 
 
 

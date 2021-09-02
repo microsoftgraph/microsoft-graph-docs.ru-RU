@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33309683e473fcb0ae9a83e960bdd6df6009cb587f69153c1f0dad861363be0a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca461a70bdf7f41842e893dc48ca70a6ee428fa6
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182107"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58801762"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>Удаление iosLobAppProvisioningConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "54182107"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

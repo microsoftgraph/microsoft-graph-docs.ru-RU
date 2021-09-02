@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9ac4b4940cdb3122804a4c4d42164e440c783035a91602afcd126542860af35
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a85fd300a3204b20838a57c13b8cfc5e0818d64
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195388"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58798499"
 ---
 # <a name="delete-vulnerablemanageddevice"></a>Удаление vulnerableManagedDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "54195388"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE ** Entity URI for microsoft.management.services.api.vulnerableManagedDevi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.management.se
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

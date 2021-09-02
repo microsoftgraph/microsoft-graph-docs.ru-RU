@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e393f995f07c695ec6d01b36b46dc486fc062f1f2c7f0dd7a7636f5796c4a372
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25f4838145c47ef23ce2ee50300452fbf0e9333f
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224336"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58821909"
 ---
 # <a name="windowsqualityupdatecatalogitem-resource-type"></a>тип ресурса windowsQualityUpdateCatalogItem
 
@@ -38,7 +38,7 @@ Windows объект элемента каталога
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
-|displayName|Строка|Имя отображения элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|displayName|String|Имя отображения элемента каталога. Унаследованный от [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|Дата выпуска элемента каталога, наследуемого [из windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата для элемента каталога, наследуемого [из windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |kbArticleId|String|ID статьи базы знаний|
@@ -68,7 +68,6 @@ Windows объект элемента каталога
   "isExpeditable": true
 }
 ```
-
 
 
 

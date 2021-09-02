@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75f7543082da4bae9c569c6bdf92d2afe65bca18287782e3c31443daa268194a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7a4eb26403fd502e7ba847ed094c5e32eb19f0ec
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145749"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58815241"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>Update groupPolicyPresentationComboBox
 
@@ -29,7 +29,7 @@ ms.locfileid: "54145749"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Строка|Локализованная строка по умолчанию, отображаемая в поле комбо. По умолчанию это значение пусто.|
 |предложения|Коллекция String|Локализованные строки, перечисленные в выпадаемом списке комбо-окна. По умолчанию это значение пусто.|
-|обязательно|Логический|Указывает, должно ли значение быть задано для параметра. Значение по умолчанию  false.|
+|обязательно|Boolean|Указывает, должно ли значение быть задано для параметра. Значение по умолчанию  false.|
 |maxLength|Int64|Неподписаный целый ряд, который указывает максимальное количество текстовых символов для параметра. Значение по умолчанию — 1023.|
 
 
@@ -108,7 +108,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
 
 
 

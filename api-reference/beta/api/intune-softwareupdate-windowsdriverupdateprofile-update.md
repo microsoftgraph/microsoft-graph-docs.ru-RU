@@ -1,18 +1,18 @@
 ---
-title: Обновление windowsQualityUpdateProfile
-description: Обновление свойств объекта windowsQualityUpdateProfile.
+title: Обновление windowsDriverUpdateProfile
+description: Обновление свойств объекта WindowsDriverUpdateProfile.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17b6bb04dacdac63809ac3d66ead29531c7eae0b
+ms.openlocfilehash: cb9f89e1c90e746bda4650bc29d779f2583cbf28
 ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818830"
+ms.locfileid: "58816337"
 ---
-# <a name="update-windowsqualityupdateprofile"></a>Обновление windowsQualityUpdateProfile
+# <a name="update-windowsdriverupdateprofile"></a>Обновление windowsDriverUpdateProfile
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58818830"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [windowsQualityUpdateProfile.](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)
+Обновление свойств объекта [WindowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,7 +37,7 @@ ms.locfileid: "58818830"
 }
 -->
 ``` http
-PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileId}
+PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,50 +47,48 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON для [объекта WindowsQualityUpdateProfile.](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)
+В корпусе запроса поставляем представление JSON для [объекта WindowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
 
-В следующей таблице показаны свойства, необходимые при создании [windowsQualityUpdateProfile.](../resources/intune-softwareupdate-windowsqualityupdateprofile.md)
+В следующей таблице показаны свойства, необходимые при создании [windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID политики Intune.|
+|id|Строка|ID политики Intune.|
 |displayName|String|Имя отображения для профиля.|
-|description|String|Описание профиля, указанного пользователем.|
-|expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Параметры ускоренного обновления.|
+|description|Строка|Описание профиля, указанного пользователем.|
+|approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Тип утверждения профиля обновления драйвера. Например, ручное или автоматическое утверждение. Возможные значения: `manual`, `automatic`.|
+|deviceReporting|Int32|Количество устройств, сообщив об этом профиле|
+|newUpdates|Int32|Количество новых обновлений драйвера, доступных для этого профиля.|
+|deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления качества.|
-|releaseDateDisplayName|String|Содружественная дата выпуска для отображения для выпуска обновления качества|
-|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsQualityUpdateProfile](../resources/intune-softwareupdate-windowsqualityupdateprofile.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 Content-type: application/json
-Content-length: 558
+Content-length: 322
 
 {
-  "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
+  "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
   "displayName": "Display Name value",
   "description": "Description value",
-  "expeditedUpdateSettings": {
-    "@odata.type": "microsoft.graph.expeditedWindowsQualityUpdateSettings",
-    "qualityUpdateRelease": "Quality Update Release value",
-    "daysUntilForcedReboot": 5
-  },
+  "approvalType": "automatic",
+  "deviceReporting": 15,
+  "newUpdates": 10,
+  "deploymentDeferralInDays": 8,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "releaseDateDisplayName": "Release Date Display Name value",
-  "deployableContentDisplayName": "Deployable Content Display Name value"
+  ]
 }
 ```
 
@@ -99,25 +97,22 @@ Content-length: 558
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 730
+Content-Length: 494
 
 {
-  "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
-  "id": "76fc7b65-7b65-76fc-657b-fc76657bfc76",
+  "@odata.type": "#microsoft.graph.windowsDriverUpdateProfile",
+  "id": "55bcc52a-c52a-55bc-2ac5-bc552ac5bc55",
   "displayName": "Display Name value",
   "description": "Description value",
-  "expeditedUpdateSettings": {
-    "@odata.type": "microsoft.graph.expeditedWindowsQualityUpdateSettings",
-    "qualityUpdateRelease": "Quality Update Release value",
-    "daysUntilForcedReboot": 5
-  },
+  "approvalType": "automatic",
+  "deviceReporting": 15,
+  "newUpdates": 10,
+  "deploymentDeferralInDays": 8,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "releaseDateDisplayName": "Release Date Display Name value",
-  "deployableContentDisplayName": "Deployable Content Display Name value"
+  ]
 }
 ```
 

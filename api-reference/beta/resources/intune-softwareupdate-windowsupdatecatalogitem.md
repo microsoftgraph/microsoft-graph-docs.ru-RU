@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5c02bc7678b2487dda1ae61e07fc7d59de2cb829a026c0f8b3a385e3a68e383
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c964c3ad3d0ec949cb2ab1eeed7aebe835e8939
+ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165646"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58820417"
 ---
 # <a name="windowsupdatecatalogitem-resource-type"></a>тип ресурса windowsUpdateCatalogItem
 
@@ -32,7 +32,7 @@ Windows объект элемента каталога
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID элемента каталога.|
-|displayName|Строка|Имя отображения элемента каталога.|
+|displayName|String|Имя отображения элемента каталога.|
 |releaseDateTime|DateTimeOffset|Дата выпуска элемента каталога|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата элемента каталога|
 
@@ -56,7 +56,6 @@ Windows объект элемента каталога
   "endOfSupportDate": "String (timestamp)"
 }
 ```
-
 
 
 
