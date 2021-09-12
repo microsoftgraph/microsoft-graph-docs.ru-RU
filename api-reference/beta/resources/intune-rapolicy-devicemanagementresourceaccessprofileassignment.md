@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementResourceAccessProfileAssignment
 description: Объект, описывая параметры уровня клиента для производных учетных данных
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 608e63b6b41ef6cc8f6a0f9b45d3aec2d00316a6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d82707c92b50db63f11f006a6bacbe6b3c6c486d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008904"
 ---
 # <a name="devicemanagementresourceaccessprofileassignment-resource-type"></a>тип ресурса deviceManagementResourceAccessProfileAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "58806588"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для назначений|
+|id|String|Уникальный идентификатор для назначений|
 |intent|[deviceManagementResourceAccessProfileIntent](../resources/intune-rapolicy-devicemanagementresourceaccessprofileintent.md)|Назначение для профиля доступа к ресурсам. Возможные значения: `apply`, `remove`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля доступа к ресурсам.|
 |sourceId|String|Идентификатор источника назначения.|

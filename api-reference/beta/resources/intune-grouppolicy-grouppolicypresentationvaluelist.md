@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyPresentationValueList
 description: Объект представляет коллекцию имен и пар значений презентации полей списка в определении политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3fa885eb713a4e734399a2e51124e9b747783cf7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9b32fe9029256c72acce96b9d39b9c96c40caab7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009002"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>тип ресурса groupPolicyPresentationValueList
 
@@ -39,7 +39,7 @@ ms.locfileid: "58797875"
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|String|Ключ объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |values|Коллекция [keyValuePair](../resources/intune-grouppolicy-keyvaluepair.md)|Список пар для связанной презентации.|
 
 ## <a name="relationships"></a>Связи

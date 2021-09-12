@@ -2,15 +2,15 @@
 title: Обновление enrollmentProfile
 description: Обновление свойств объекта enrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2223495f9be4ad67124cc576e0ee93501a00bd6e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6550856e07b0f883a5ea8ad02cae4de13eb8d45c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009772"
 ---
 # <a name="update-enrollmentprofile"></a>Обновление enrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58794949"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,9 +57,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |displayName|Строка|Имя профиля|
 |description|Строка|Описание профиля|
 |requiresUserAuthentication|Логический|Указывает, требует ли профиль проверки подлинности пользователя|
-|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для регистрации|
+|configurationEndpointUrl|String|URL-адрес конечной точки конфигурации для регистрации|
 |enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Логический|Указывает, что Корпоративный портал требуется на устройствах, зарегистрированных помощником установки|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Указывает, что Корпоративный портал требуется на устройствах, зарегистрированных помощником установки|
 
 
 

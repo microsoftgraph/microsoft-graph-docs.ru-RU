@@ -2,15 +2,15 @@
 title: Добавление владельца
 description: Добавьте владельца в приложение.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5640b2488ccabc24f512e823924b7be0e3df7342
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 77e34f2b5deb4245a893bbee42120a8f506155d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008393"
 ---
 # <a name="add-owner"></a>Добавление владельца
 
@@ -40,7 +40,7 @@ POST /applications/{id}/owners/$ref
 |:---- |:---------- |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
 
 ## <a name="response"></a>Отклик
@@ -88,7 +88,7 @@ Content-length: 30
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

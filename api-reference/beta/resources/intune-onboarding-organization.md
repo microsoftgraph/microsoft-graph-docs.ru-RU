@@ -2,15 +2,15 @@
 title: Тип ресурса organization
 description: Ресурс organization представляет экземпляр глобальных параметров и ресурсов, которые действуют и готовятся в работе на уровне клиента.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8fed9594b0f9b34e3ddc48935335ab249f7539b5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8192ee23215a788f3ca1977382e836000b86692c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017186"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -33,7 +33,7 @@ ms.locfileid: "58805705"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта.|
+|id|String|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединиттеля сертификата.|
 

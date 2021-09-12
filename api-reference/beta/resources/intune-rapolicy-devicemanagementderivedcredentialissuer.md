@@ -2,15 +2,15 @@
 title: тип enum deviceManagementDerivedCredentialIssuer
 description: Поддерживаемые значения для производных эмитентов учетных данных.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a5e4d507a50fce730e21d22af4d7428be6b5b694
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f8e322c43c6d1dad17dc50beaea14f6d52563b1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008932"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>тип enum deviceManagementDerivedCredentialIssuer
 

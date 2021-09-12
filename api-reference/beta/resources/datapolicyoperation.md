@@ -1,16 +1,16 @@
 ---
 title: тип ресурса dataPolicyOperation
 description: Представляет собой операцию по отправке политики данных. Он содержит необходимые сведения для отслеживания состояния операции. Например, администратор компании может отправить запрос на операцию политики данных для экспорта данных компании сотрудника, а затем отслеживать этот запрос.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 7ba0c3dc3bab79023a530a075f0640c2aba58751030363c1f537c7ef033a5870
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da8cb60f670f7f01e0d3a7da725da5c2b90583d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017620"
 ---
 # <a name="datapolicyoperation-resource-type"></a>тип ресурса dataPolicyOperation
 

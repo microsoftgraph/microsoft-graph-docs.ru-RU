@@ -2,15 +2,15 @@
 title: Обновление windows10VpnConfiguration
 description: Обновление свойств объекта Windows10VpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa050ca7a331e7374ea61bde7d1ff0c714de78ea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44f3e38a5e749c9e47b38b476fc217654d734bbd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818402"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009975"
 ---
 # <a name="update-windows10vpnconfiguration"></a>Обновление windows10VpnConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +63,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |connectionName|String|Имя подключения, отображаемая пользователю. Унаследованный от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
@@ -77,11 +77,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |enableDnsRegistration|Логический|Включить регистрацию IP-адресов с помощью внутреннего DNS.|
 |dnsSuffixes|Коллекция String|Укажите суффиксы DNS, чтобы добавить их в список поиска DNS, чтобы правильно маршрутизировать короткие имена.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
-|rememberUserCredentials|Логический|Помните учетные данные пользователей.|
+|rememberUserCredentials|Boolean|Помните учетные данные пользователей.|
 |enableConditionalAccess|Логический|Включить условный доступ.|
-|enableSingleSignOnWithAlternateCertificate|Логический|Включить один вход (SSO) с помощью альтернативного сертификата.|
+|enableSingleSignOnWithAlternateCertificate|Boolean|Включить один вход (SSO) с помощью альтернативного сертификата.|
 |singleSignOnEku|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Использование расширенного ключа с одним входом (EKU).|
-|singleSignOnIssuerHash|String|Hash одного входного эмитента.|
+|singleSignOnIssuerHash|Строка|Hash одного входного эмитента.|
 |eapXml|В двоичном формате|XML-протокол экстратензивной проверки подлинности (EAP). (массив байтов в кодировке UTF8).|
 |proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Прокси-сервер.|
 |associatedApps|[коллекция windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)|Связанные приложения. Эта коллекция может содержать не более 10 000 элементов.|

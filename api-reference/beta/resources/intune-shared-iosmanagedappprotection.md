@@ -2,15 +2,15 @@
 title: Тип ресурса iosManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве iOS
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a472cefb137dbc4704146f120f980cebd9cd316
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 195f917edc341ebdf9d87447b44757c758c3ea5f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017130"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Тип ресурса iosManagedAppProtection
 
@@ -40,7 +40,7 @@ ms.locfileid: "58788158"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -73,7 +73,7 @@ ms.locfileid: "58788158"
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWipeOsVersion|Строка|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|Строка|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|String|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, когда устройство либо коренится, либо jailbroken, если устройствоComplianceRequired настроено на верность. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, основываясь на максимальном количестве попыток повторного повторного действия пин-кода. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Длительность|Времяпрепровия в минутах для пин-кода приложения, а не биометрического пароля, наследуемого из [управляемогоAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -90,9 +90,9 @@ ms.locfileid: "58788158"
 |allowedIosDeviceModels|Строка|Семиколон разделенный список моделей устройств, разрешенных в качестве строки, для управляемого приложения для работы.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения, блок или стирка, если указанная модель устройства не разрешена. Возможные значения: `block`, `wipe`, `warn`.|
 |filterOpenInToOnlyManagedApps|Логический|Определяет, поддерживается ли операция с открытыми файлами из управляемого приложения в выбранные расположения файлов. Этот параметр применяется только в том случае, если для AllowedOutboundDataTransferDestinations задан параметр ManagedApps и DisableProtectionOfManagedOutboundOpenInData, заданный false.|
-|disableProtectionOfManagedOutboundOpenInData|Логический|Отключение защиты данных, переданных другим приложениям с помощью параметра IOS OpenIn. Этот параметр может быть true только в том случае, если для allowedOutboundDataTransferDestinations установлено управлениеApps.|
-|protectInboundDataFromUnknownSources|Boolean|Защита входящих данных из неизвестного источника. Этот параметр может быть true только в том случае, если значение AllowedInboundDataTransferSources задано для AllApps.|
-|customBrowserProtocol|Строка|Пользовательский протокол браузера для открытия веб-ссылок на iOS.|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|Отключение защиты данных, переданных другим приложениям с помощью параметра IOS OpenIn. Этот параметр может быть true только в том случае, если для allowedOutboundDataTransferDestinations установлено управлениеApps.|
+|protectInboundDataFromUnknownSources|Логический|Защита входящих данных из неизвестного источника. Этот параметр может быть true только в том случае, если значение AllowedInboundDataTransferSources задано для AllApps.|
+|customBrowserProtocol|String|Пользовательский протокол браузера для открытия веб-ссылок на iOS.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

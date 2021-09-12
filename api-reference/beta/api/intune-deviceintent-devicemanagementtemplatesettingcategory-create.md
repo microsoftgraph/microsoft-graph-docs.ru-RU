@@ -2,15 +2,15 @@
 title: Создание deviceManagementTemplateSettingCategory
 description: Создайте новый объект deviceManagementTemplateSettingCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3b653f2978c768027d67f58d87b3555d9626beb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4f47ef8525d8c95b6849e22e4d8cd686dc099fbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009828"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>Создание deviceManagementTemplateSettingCategory
 
@@ -43,7 +43,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID категории, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|Строка|ID категории, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|Имя категории, унаследованные от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |hasRequiredSetting|Логический|Категория содержит обязательный параметр верхнего уровня, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 

@@ -92,7 +92,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Обзор
-            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
+            href: /graph/migrate-azure-ad-graph-overview
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
           - name: 1. Проверка различий
@@ -163,44 +163,88 @@ items:
         items:
           - name: Обзор
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
+          - name: /graph/toolkit для React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
+          - name: /graph/toolkit для SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
+      - name: Создание первого приложения
+        items:
+          - name: Регистрация приложения Azure AD
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
           - name: Создание веб-приложения (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Создание веб-приложения (React)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+          - name: Создание веб-приложения (Angular)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
           - name: Создание веб-части SharePoint
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
-          - name: Создание вкладки Microsoft Teams
+          - name: Создание вкладки Teams
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
-          - name: Использование набора средств с помощью React
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
-          - name: Использование набора средств с помощью Angular
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
+          - name: Создание вкладки Teams с помощью SSO
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/beta
+          - name: Создание приложения Electron
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/beta
+      - name: Поставщики
+        items:
+          - name: Использование поставщиков
+            href: /graph/toolkit/providers/providers?context=graph/api/beta
+          - name: Поставщик MSAL
+            href: /graph/toolkit/providers/msal?context=graph/api/beta
+          - name: Поставщик MSAL2
+            href: /graph/toolkit/providers/msal2?context=graph/api/beta
+          - name: Поставщик SharePoint
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
+          - name: Teams поставщика
+            href: /graph/toolkit/providers/teams?context=graph/api/beta
+          - name: Teams Поставщик MSAL2
+            href: /graph/toolkit/providers/teams-msal2?context=graph/api/beta
+          - name: Поставщик Electron
+            href: /graph/toolkit/providers/electron?context=graph/api/beta
+          - name: Поставщик прокси
+            href: /graph/toolkit/providers/proxy?context=graph/api/beta
+          - name: Настраиваемый поставщик
+            href: /graph/toolkit/providers/custom?context=graph/api/beta
       - name: Компоненты
         items:
           - name: Вход
             href: /graph/toolkit/components/login?context=graph/api/beta
+          - name: Получение
+            href: /graph/toolkit/components/get?context=graph/api/beta
           - name: Пользователь
             href: /graph/toolkit/components/person?context=graph/api/beta
           - name: Люди
             href: /graph/toolkit/components/people?context=graph/api/beta
-          - name: Повестка
+          - name: Карточка контакта
+            href: /graph/toolkit/components/person-card?context=graph/api/beta
+          - name: Выбор людей
+            href: /graph/toolkit/components/people-picker?context=graph/api/beta
+          - name: Средство выбора каналов Teams
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/beta
+          - name: Повестка дня
             href: /graph/toolkit/components/agenda?context=graph/api/beta
-          - name: Задачи
+          - name: Задачи Планировщика
             href: /graph/toolkit/components/tasks?context=graph/api/beta
-      - name: Поставщики
+          - name: Задачи To-Do
+            href: /graph/toolkit/components/todo?context=graph/api/beta
+          - name: Файл
+            href: /graph/toolkit/components/file?context=graph/api/beta
+          - name: Список файлов
+            href: /graph/toolkit/components/file-list?context=graph/api/beta
+      - name: Настройка компонентов
         items:
-          - name: Использование поставщиков
-            href: /graph/toolkit/providers?context=graph/api/beta
-          - name: Поставщик MSAL
-            href: /graph/toolkit/providers/msal?context=graph/api/beta
-          - name: Поставщик SharePoint
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
-          - name: Поставщик Microsoft Teams
-            href: /graph/toolkit/providers/teams?context=graph/api/beta
-          - name: Настраиваемый поставщик
-            href: /graph/toolkit/providers/custom?context=graph/api/beta
-      - name: Компоненты стиля
-        href: /graph/toolkit/style?context=graph/api/beta
-      - name: Компоненты создания шаблонов
-        href: /graph/toolkit/templates?context=graph/api/beta
+          - name: Компоненты стиля
+            href: /graph/toolkit/customize-components/style?context=graph/api/beta
+          - name: Компоненты создания шаблонов
+            href: /graph/toolkit/customize-components/templates?context=graph/api/beta
+          - name: Обработка событий
+            href: /graph/toolkit/customize-components/events?context=graph/api/beta
+          - name: Кэширование вызовов Microsoft Graph в компонентах
+            href: /graph/toolkit/customize-components/cache?context=graph/api/beta
+          - name: Компоненты локализации
+            href: /graph/toolkit/customize-components/localization?context=graph/api/beta
+          - name: Поддержка направления текста справа налево
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/beta
   - name: Ресурсы
     items:
       - name: Рекомендации
@@ -1413,6 +1457,10 @@ items:
                     href: api/participant-muteall.md
                   - name: Приглашение участников
                     href: api/participant-invite.md
+                  - name: Начало удержания музыки
+                    href: api/participant-startholdmusic.md
+                  - name: Остановка удержания музыки
+                    href: api/participant-stopholdmusic.md
               - name: Изменение роль совместного использования экрана
                 href: api/call-changescreensharingrole.md
               - name: Unmute application
@@ -1563,6 +1611,21 @@ items:
                     href: api/ediscovery-case-post-reviewsets.md
                   - name: Получение
                     href: api/ediscovery-reviewset-get.md
+              - name: Запрос набора для проверки
+                href: resources/ediscovery-reviewsetquery.md
+                items:
+                  - name: Список
+                    href: api/ediscovery-reviewsetquery-list.md
+                  - name: Создание
+                    href: api/ediscovery-reviewsetquery-post.md
+                  - name: Получение
+                    href: api/ediscovery-reviewsetquery-get.md
+                  - name: Обновление
+                    href: api/ediscovery-reviewsetquery-update.md
+                  - name: Delete
+                    href: api/ediscovery-reviewsetquery-delete.md
+                  - name: Применение тегов
+                    href: api/ediscovery-reviewsetquery-applytags.md
               - name: Исходная коллекция
                 href: resources/ediscovery-sourcecollection.md
                 items:
@@ -1607,21 +1670,6 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Теги списка как иерархия
                     href: api/ediscovery-tag-ashierarchy.md
-              - name: Запрос набора для проверки
-                href: resources/ediscovery-reviewsetquery.md
-                items:
-                  - name: Список
-                    href: api/ediscovery-reviewsetquery-list.md
-                  - name: Создание
-                    href: api/ediscovery-reviewsetquery-post.md
-                  - name: Получение
-                    href: api/ediscovery-reviewsetquery-get.md
-                  - name: Обновление
-                    href: api/ediscovery-reviewsetquery-update.md
-                  - name: Delete
-                    href: api/ediscovery-reviewsetquery-delete.md
-                  - name: Применение тегов
-                    href: api/ediscovery-reviewsetquery-applytags.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
@@ -9624,6 +9672,14 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Конечный период льготы
                     href: api/cloudpc-endgraceperiod.md
+                  - name: Удаленное действие reprovision
+                    href: api/manageddevice-reprovisioncloudpc.md
+                  - name: Массовое удаленное перепроизводство
+                    href: api/manageddevice-bulkreprovisioncloudpc.md
+                  - name: Повторное удаленное действие
+                    href: api/manageddevice-resizecloudpc.md
+                  - name: Получить удаленные результаты действий
+                    href: api/manageddevice-getcloudpcremoteactionresults.md
               - name: Изображение устройства облачного КОМПЬЮТЕРА
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -11079,6 +11135,15 @@ items:
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
                       - name: Удаление
                         href: api/microsoftauthenticatorauthenticationmethod-delete.md
+                  - name: Маркер КЛЯТВЫ программного обеспечения
+                    href: resources/softwareOathAuthenticationMethod.md
+                    items:
+                      - name: Список
+                        href: api/authentication-list-softwareoathmethods.md
+                      - name: Получение
+                        href: api/softwareOathAuthenticationMethod-get.md
+                      - name: Удаление
+                        href: api/softwareOathAuthenticationMethod-delete.md
                   - name: Microsoft Authenticator Без паролей Телефон Sign-In (обесценен)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
@@ -12144,7 +12209,7 @@ items:
                 items:
                   - name: Управление привилегированными пользователями
                     href: resources/privilegedidentitymanagement-root.md
-                  - name: Azure AD
+                  - name: Azure AD (неподготовленная))
                     items:
                       - name: Azure AD
                         href: resources/privilegedidentitymanagement-directory.md
@@ -12653,7 +12718,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: адрес электронной почты;
+              - name: Адрес электронной почты
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -13684,7 +13749,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -14140,7 +14205,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Сдвиги
+          - name: Смены
             items:
               - name: Shift
                 href: resources/shift.md

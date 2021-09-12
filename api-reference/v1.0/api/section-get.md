@@ -1,22 +1,22 @@
 ---
 title: Получение раздела
-description: Получение свойств и связей объекта Оненотесектион.
-localization_priority: Normal
+description: Извлечение свойств и связей объекта onenoteSection.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 87ff9efd1aceaa9f238e2cb861dd93d00fcf1bb6
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: bea36752a66dcb460d46e5fa22c9854c3350257f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458922"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015751"
 ---
 # <a name="get-section"></a>Получение раздела
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [оненотесектион](../resources/section.md) .
+Извлечение свойств и связей [объекта onenoteSection.](../resources/section.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,9 +35,9 @@ GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
+Этот метод поддерживает параметры `select` `expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
-Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `displayName` свойства, и `self` . Допустимые `expand` значения для разделов — `parentNotebook` и `parentSectionGroup` .
+Запрос по умолчанию расширяется и выбирает его свойства и `parentNotebook` `id` `displayName` `self` свойства. `expand`Допустимые значения для разделов и `parentNotebook` `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -50,7 +50,7 @@ GET /sites/{id}/onenote/sections/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оненотесектион](../resources/section.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [onenoteSection](../resources/section.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

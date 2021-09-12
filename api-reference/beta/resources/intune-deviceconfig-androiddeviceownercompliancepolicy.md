@@ -2,15 +2,15 @@
 title: тип ресурса androidDeviceOwnerCompliancePolicy
 description: В этом разделе описаны объявленные методы, свойства и связи, открытые ресурсом AndroidDeviceOwnerCompliancePolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ba401b12789628fdc52b28de804531f2b6a18c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d19d656e3fe6ff553fcbc4b66256232b00d5a990
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017543"
 ---
 # <a name="androiddeviceownercompliancepolicy-resource-type"></a>тип ресурса androidDeviceOwnerCompliancePolicy
 
@@ -38,7 +38,7 @@ ms.locfileid: "58785768"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -65,7 +65,7 @@ ms.locfileid: "58785768"
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordPreviousPasswordCountToBlock|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
 |storageRequireEncryption|Boolean|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
-|securityRequireIntuneAppIntegrity|Логический|Если задаваем параметр true, проверяет, что приложение Intune, установленное на полностью управляемых, выделенных или корпоративных устройствах, зарегистрированных в Android Enterprise, — это приложение, предоставленное Корпорацией Майкрософт из управляемого магазина Google Playstore. Если проверка не выполняется, устройство будет отчитаться о несоблюдении.|
+|securityRequireIntuneAppIntegrity|Boolean|Если задаваем параметр true, проверяет, что приложение Intune, установленное на полностью управляемых, выделенных или корпоративных устройствах, зарегистрированных в Android Enterprise, — это приложение, предоставленное Корпорацией Майкрософт из управляемого магазина Google Playstore. Если проверка не выполняется, устройство будет отчитаться о несоблюдении.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

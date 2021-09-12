@@ -2,15 +2,15 @@
 title: тип ресурса AndroidManagedStoreApp
 description: Содержит свойства и унаследованные свойства для управляемых приложений Магазина Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc47e549e8c4915d09d5fd2b9609f29b92bf6130
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a89baa34cd7a76ae20949856efc7b0a22e2872b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017613"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>тип ресурса AndroidManagedStoreApp
 
@@ -63,7 +63,7 @@ ms.locfileid: "58803821"
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |appStoreUrl|String|URL-адрес приложения Play for Work Store.|
 |isPrivate|Логический|Указывает, доступно ли приложение только пользователям данного предприятия.|
-|isSystemApp|Логический|Указывает, является ли приложение предустановленным системным приложением.|
+|isSystemApp|Boolean|Указывает, является ли приложение предустановленным системным приложением.|
 |appTracks|[коллекция AndroidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|Отслеживает, которые видны этому предприятию.|
 |supportsOemConfig|Логический|Поддерживает ли это приложение политику OEMConfig.|
 

@@ -1,16 +1,16 @@
 ---
 title: 'group: getMemberObjects'
 description: Верни все группы, в которые входит эта группа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cccccb39a1fe5ea39b75f93c6a6d59611acb2567
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 3d918a5905c19932067a550592ccaaccc349d948
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008288"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -86,7 +86,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

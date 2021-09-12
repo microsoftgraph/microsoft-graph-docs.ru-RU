@@ -2,15 +2,15 @@
 title: тип ресурса записной книжки
 description: Блокнот OneNote.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: ac3a433e3fa0e13beefb83a4525cb5975c9dfbe56d1c668c7bd8931982e84425
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c79092f0e9032f87553468556ea45d7119426d28
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006957"
 ---
 # <a name="notebook-resource-type"></a>тип ресурса записной книжки
 
@@ -62,9 +62,9 @@ ms.locfileid: "54189452"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |links|[NotebookLinks](notebooklinks.md)|Ссылки для открытия записной книжки. Ссылка `oneNoteClientURL` открывает записную книжку в OneNote, если она установлена. Ссылка `oneNoteWebURL` открывает записную книжку в OneNote в Интернете.|
 |displayName|String|Имя записной книжки.|
-|sectionGroupsUrl|String|URL-адрес `sectionGroups` свойства навигации, который возвращает все группы разделов в записной книжке. Только для чтения.|
-|sectionsUrl|String|URL-адрес `sections` свойства навигации, который возвращает все разделы в записной книжке. Только для чтения.|
-|self|String|Конечная точка, где можно получить сведения о записной книжке. Только для чтения.|
+|sectionGroupsUrl|Строка|URL-адрес `sectionGroups` свойства навигации, который возвращает все группы разделов в записной книжке. Только для чтения.|
+|sectionsUrl|Строка|URL-адрес `sections` свойства навигации, который возвращает все разделы в записной книжке. Только для чтения.|
+|self|Строка|Конечная точка, где можно получить сведения о записной книжке. Только для чтения.|
 |userRole|onenoteUserRole|Возможные значения: `Owner`, `Contributor`, `Reader`, `None`. Владелец представляет доступ к записной книжке на уровне владельца. Автор представляет доступ к записной книжке для чтения и записи. Reader представляет доступ только для чтения к записной книжке. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

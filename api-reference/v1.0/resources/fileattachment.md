@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileAttachment
 description: 'Файл (например, текстовый файл или документ Word), вложенный в сведения о событии, сообщение или запись. **contentBytes** '
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ba313838a7481e436019abd224397a9f138be591072c4b369a1ad572e72ed857
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e90553500e44ff20d13de2b56c64b1ac94d7222
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007238"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 

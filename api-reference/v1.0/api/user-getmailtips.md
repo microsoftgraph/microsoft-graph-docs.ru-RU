@@ -2,15 +2,15 @@
 title: 'пользователь: getMailTips'
 description: Получите mailTips одного или более получателей в качестве доступных для пользователя, вписав его.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fd46d262cf7d190daa4c5f21e1c45ec1472b799f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5ed59c2e92799ff22226683fc3a1edc02373f50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007477"
 ---
 # <a name="user-getmailtips"></a>пользователь: getMailTips
 
@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей для получения MailTips.|
-|MailTipsOptions|String|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` `customMailTip` , , , , , `deliveryRestriction` , , `externalMemberCount` и `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
+|MailTipsOptions|Строка|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` `customMailTip` , , , , , `deliveryRestriction` , , `externalMemberCount` и `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
 
 ## <a name="response"></a>Отклик
 
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

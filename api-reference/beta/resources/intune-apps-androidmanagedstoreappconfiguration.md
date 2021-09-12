@@ -2,15 +2,15 @@
 title: тип ресурса androidManagedStoreAppConfiguration
 description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильных приложений Enterprise Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 901f861a9e9f4ff7b31f3e2bfbe52f913f330d20
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 29198fda699f53f5d0d87ed13e7d7a4330150999
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017599"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>тип ресурса androidManagedStoreAppConfiguration
 
@@ -43,12 +43,12 @@ ms.locfileid: "58805081"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |description|Строка|Администратор предоставил описание конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|displayName|String|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|ID Enterprise конфигурации приложения.|
-|payloadJson|Строка|Android Enterprise конфигурации приложения JSON полезной нагрузки.|
+|payloadJson|String|Android Enterprise конфигурации приложения JSON полезной нагрузки.|
 |permissionActions|[коллекция androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Список разрешений на приложения Для Android и соответствующих действий разрешений.|
-|appSupportsOemConfig|Логический|Является ли этот AppConfig политикой OEMConfig.|
+|appSupportsOemConfig|Boolean|Является ли этот AppConfig политикой OEMConfig.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Применимость Enterprise профилей (AndroidWorkProfile, DeviceOwner или по умолчанию (применяется к обоим)). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 ## <a name="relationships"></a>Связи

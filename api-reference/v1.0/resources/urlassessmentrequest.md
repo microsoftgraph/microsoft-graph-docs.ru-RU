@@ -1,16 +1,16 @@
 ---
 title: тип ресурса urlAssessmentRequest
 description: Используется для создания и получения оценки угрозы URL-адреса.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: baae2d46096efd6c6efeefeac02a4e38a9eeb6b289345ce2036a4b9b7fbd76c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54e72417fd6a33a67741d22b547e3c32453a6ca9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006909"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>тип ресурса urlAssessmentRequest
 

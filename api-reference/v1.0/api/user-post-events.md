@@ -1,16 +1,16 @@
 ---
 title: Создание события
 description: Создайте событие в календаре пользователя по умолчанию или указанном календаре.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 8900708ae5d22ef658ec8d5ea9dc6f9c6b798b7c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 320ddb3c2d3dbf5f25f185ed2565f2dce057be34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007482"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -553,7 +553,7 @@ Content-type: application/json
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",

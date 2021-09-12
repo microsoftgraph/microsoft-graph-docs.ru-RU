@@ -1,16 +1,16 @@
 ---
 title: Список объектов appRoleAssignment, предоставленных для группы
 description: Получение списка appRoleAssignment, предоставленного группе.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 90c8b025b739722b927e9b2f0ac63d6bca51294e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bae4944978f6b65ab74ff7c8f0cb39144d1d6f2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008292"
 ---
 # <a name="list-approleassignments-granted-to-a-group"></a>Список объектов appRoleAssignment, предоставленных для группы
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/groups/7679d9a4-2323-44cd-b5c2-673ec88d8b12
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

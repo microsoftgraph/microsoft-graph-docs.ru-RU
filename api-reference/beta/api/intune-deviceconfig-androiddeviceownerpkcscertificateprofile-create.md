@@ -2,15 +2,15 @@
 title: Создание androidDeviceOwnerPkcsCertificateProfile
 description: Создайте новый объект androidDeviceOwnerPkcsCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cac2626e1934b101eb9dd6f2dc2b9e3ba35367bf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 50c6f53aa043facfff0175d541603fed8b5409e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805228"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59012327"
 ---
 # <a name="create-androiddeviceownerpkcscertificateprofile"></a>Создание androidDeviceOwnerPkcsCertificateProfile
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,10 +72,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |extendedKeyUsages|[расширенная коллекцияKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Параметры расширенного использования ключей (EKU). Эта коллекция может содержать не более 500 элементов. Унаследованный от [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Тип альтернативного имени субъекта сертификата. Унаследованный от [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md). Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |certificationAuthority|Строка|Сертификационный орган PKCS|
-|certificationAuthorityName|Строка|Имя органа сертификации PKCS|
+|certificationAuthorityName|String|Имя органа сертификации PKCS|
 |certificationAuthorityType|[deviceManagementCertificationAuthority](../resources/intune-deviceconfig-devicemanagementcertificationauthority.md)|Тип органа сертификации. Возможные значения: `notConfigured`, `microsoft`, `digiCert`.|
 |certificateTemplateName|Строка|Имя шаблона шаблона сертификата PKCS|
-|subjectAlternativeNameFormatString|Строка|Настраиваемая строка, определяемая атрибутом AAD.|
+|subjectAlternativeNameFormatString|String|Настраиваемая строка, определяемая атрибутом AAD.|
 |subjectNameFormatString|Строка|Настраиваемый формат для использования с SubjectNameFormat = Custom. Пример: CN={{EmailAddress},E={EmailAddress}},OU=Enterprise Users,O=Contoso Corporation, L=Redmond,ST=WA,C=US|
 |certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Сертификат целевого магазина. Возможные значения: `user`, `machine`.|
 |customSubjectAlternativeNames|[коллекция customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)|Настраиваемые альтернативные имена субъектов Параметры. Эта коллекция может содержать не более 500 элементов.|

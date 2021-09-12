@@ -2,15 +2,15 @@
 title: Создание windowsKioskConfiguration
 description: Создайте новый объект WindowsKioskConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d494712fce8bda25d389d79d140990dfb429a2e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 766bd4aac646262e40652e8f8ce0bc09f6a8ef85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009961"
 ---
 # <a name="create-windowskioskconfiguration"></a>Создание windowsKioskConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,19 +57,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |kioskProfiles|[коллекция windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)|Этот параметр политики позволяет определить список профилей киоска для конфигурации киоска. Эта коллекция может содержать не более 3 элементов.|
-|kioskBrowserDefaultUrl|String|Укажите URL-адрес по умолчанию, в который браузер должен перейти при запуске.|
+|kioskBrowserDefaultUrl|Строка|Укажите URL-адрес по умолчанию, в который браузер должен перейти при запуске.|
 |kioskBrowserEnableHomeButton|Boolean|Включить домашняя кнопка браузера киоска. По умолчанию кнопка home отключена.|
 |kioskBrowserEnableNavigationButtons|Логический|Включить кнопки навигации браузера киоска (вперед/назад). По умолчанию отключены кнопки навигации.|
-|kioskBrowserEnableEndSessionButton|Логический|Включить кнопку окончания сеанса браузера киоска. По умолчанию отключена кнопка окончания сеанса.|
+|kioskBrowserEnableEndSessionButton|Boolean|Включить кнопку окончания сеанса браузера киоска. По умолчанию отключена кнопка окончания сеанса.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Укажите количество минут ожидания сеанса, пока браузер киоска не перезапустится в свежем состоянии.  Допустимые значения : 1-1440. Допустимые значения от 1 до 1440|
 |kioskBrowserBlockedURLs|Коллекция String|Укажите URL-адреса, в которые браузеры киосков не должны переходить|
 |kioskBrowserBlockedUrlExceptions|Коллекция String|Укажите URL-адреса, в которые браузеру киоска разрешено перемещаться|

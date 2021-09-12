@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e4a31d13a9e167d433011df1a9c84b49d74c6e16
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 7d8dbde01a03dedc777d92a5eea270bb2715f5180eb24b62bf85bef9d6b6a9c2
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57250607"
 ---
 ```csharp
 
@@ -45,6 +45,7 @@ var @event = new Event
             Type = AttendeeType.Required
         }
     },
+    AllowNewTimeProposals = true,
     IsOnlineMeeting = true,
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };

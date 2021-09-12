@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: efad9213b2b56e41188ac63e0e54ea21541d41b8
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: ba5c11fe355b8d2017926b27cc3da2b1371d35f9d4894b7af9940159a1819520
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57206659"
 ---
 ```objc
 
@@ -43,6 +43,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
+[event setAllowNewTimeProposals: true];
 [event setIsOnlineMeeting: true];
 [event setOnlineMeetingProvider: [MSGraphOnlineMeetingProviderType teamsForBusiness]];
 

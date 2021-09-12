@@ -1,22 +1,22 @@
 ---
 title: Перечисление объектов secureScores
-description: Получение списка объектов Секурескоре.
+description: Извлечение списка объектов secureScore.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3eea4465c7cbaa767ff03684515431adbdb560a6
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 2798461f3d234e07f1a8dc391a95dc2f08a9fedd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007462"
 ---
 # <a name="list-securescores"></a>Перечисление объектов secureScores
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [секурескоре](../resources/securescore.md) .
+Извлечение списка [объектов secureScore.](../resources/securescore.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -59,7 +59,7 @@ GET /security/secureScores?$filter={property} eq '{property-value}'
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескорес** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` **secureScores** в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSharePointActivityUserDetail'
 description: Получите сведения об активности пользователей в SharePoint.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 9118a1eed70b404601c80e93c91cac87d72499e1a7081110ab7d24e6e4f55f57
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2958ebac91a31f64ea5cf4ebd5d4b9a8d4b538c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015821"
 ---
 # <a name="reportroot-getsharepointactivityuserdetail"></a>reportRoot: getSharePointActivityUserDetail
 
@@ -48,7 +48,7 @@ GET /reports/getSharePointActivityUserDetail(date={date_value})
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
 | date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 30 дней, значение {date_value} должно быть датой из этого диапазона. |
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
@@ -58,7 +58,7 @@ GET /reports/getSharePointActivityUserDetail(date={date_value})
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                |
-| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
+| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательное. |
 
 ## <a name="response"></a>Отклик
 

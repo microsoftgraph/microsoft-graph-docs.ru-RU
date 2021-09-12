@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта plannerplandetails
 description: Обновление свойств объекта **plannerplandetails**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 6951aadd4b16a6b84315c3925d87c126c47d803e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 582b3021833e6b78ef6f1ae3b4435c04b6466a9c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007777"
 ---
 # <a name="update-plannerplandetails"></a>Обновление объекта plannerplandetails
 
@@ -34,7 +34,7 @@ PATCH /planner/plans/{id}/details
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | If-Match  | Последнее известное значение ETag обновляемого объекта plannerPlanDetails. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,7 +97,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

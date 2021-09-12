@@ -1,16 +1,16 @@
 ---
 title: тип ресурса defaultUserRolePermissions
 description: Содержит определенные настраиваемые разрешения роли пользователя по умолчанию.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c55f24fc0733a0cd20e88a080f83fcda8314aa3bad3dcc18122aaf2eea7ada13
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e102061864c39fcba9354fce916cf57c43a88b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007231"
 ---
 # <a name="defaultuserrolepermissions-resource-type"></a>тип ресурса defaultUserRolePermissions
 
@@ -20,8 +20,8 @@ ms.locfileid: "54178495"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| allowedToCreateApps | Логическое | Указывает, может ли пользователь по умолчанию создавать приложения. |  
-| allowedToCreateSecurityGroups | Логическое | Указывает, может ли роль пользователя по умолчанию создавать группы безопасности. |  
+| allowedToCreateApps | Логический | Указывает, может ли пользователь по умолчанию создавать приложения. |  
+| allowedToCreateSecurityGroups | Boolean | Указывает, может ли роль пользователя по умолчанию создавать группы безопасности. |  
 | allowedToReadOtherUsers | Логический | Указывает, может ли пользователь по умолчанию читать другие пользователи. |
 |permissionGrantPoliciesAssigned|Коллекция String|Указывает, разрешено ли согласие пользователя на приложения и разрешено ли оно, какое разрешение на предоставление согласия и какая политика согласия приложения (permissionGrantPolicy) регулирует разрешение для пользователей на предоставление согласия. Значение должно быть в формате , где находится id встроенной или настраиваемой политики согласия `managePermissionGrantsForSelf.{id}` `{id}` [приложения.](/azure/active-directory/manage-apps/manage-app-consent-policies)  Пустой список указывает, что согласие пользователя на приложения отключено. |
 

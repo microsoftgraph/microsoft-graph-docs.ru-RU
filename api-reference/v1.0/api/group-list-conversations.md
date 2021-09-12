@@ -2,15 +2,15 @@
 title: Список бесед
 description: Получение списка бесед в этой группе.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 74fae7508848e3adcaba5130d84e2de7298b425f
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: ed4fe291d3cc25260cbb3aed604c742c8da8b773
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008253"
 ---
 # <a name="list-conversations"></a>Список бесед
 
@@ -25,7 +25,7 @@ ms.locfileid: "58513806"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -2,15 +2,15 @@
 title: Создание windows10VpnConfiguration
 description: Создайте новый объект Windows10VpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df161b0dfd46bfd0a7a92cccd22879efab2fd598
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e15360de3ba41b39b7cc122a301f305884d260e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59010045"
 ---
 # <a name="create-windows10vpnconfiguration"></a>Создание windows10VpnConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|connectionName|Строка|Имя подключения, отображаемая пользователю. Унаследованный от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|connectionName|String|Имя подключения, отображаемая пользователю. Унаследованный от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |серверы|[коллекция vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получить доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов. Унаследованный от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |customXml|В двоичном формате|Настраиваемые XML-команды, настраиваемые vpn-подключением. (массив byte, закодированный UTF8) Унаследованный от [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Тип целевого профиля. Возможные значения: `user`, `device`, `autoPilotDevice`.|
@@ -76,16 +76,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |enableDnsRegistration|Логический|Включить регистрацию IP-адресов с помощью внутреннего DNS.|
 |dnsSuffixes|Коллекция String|Укажите суффиксы DNS, чтобы добавить их в список поиска DNS, чтобы правильно маршрутизировать короткие имена.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
-|rememberUserCredentials|Логический|Помните учетные данные пользователей.|
+|rememberUserCredentials|Boolean|Помните учетные данные пользователей.|
 |enableConditionalAccess|Логический|Включить условный доступ.|
-|enableSingleSignOnWithAlternateCertificate|Логический|Включить один вход (SSO) с помощью альтернативного сертификата.|
+|enableSingleSignOnWithAlternateCertificate|Boolean|Включить один вход (SSO) с помощью альтернативного сертификата.|
 |singleSignOnEku|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Использование расширенного ключа с одним входом (EKU).|
 |singleSignOnIssuerHash|Строка|Hash одного входного эмитента.|
 |eapXml|В двоичном формате|XML-протокол экстратензивной проверки подлинности (EAP). (массив байтов в кодировке UTF8).|
 |proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Прокси-сервер.|
 |associatedApps|[коллекция windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)|Связанные приложения. Эта коллекция может содержать не более 10 000 элементов.|
 |onlyAssociatedAppsCanUseConnection|Логический|Только связанные приложения могут использовать подключение (VPN для каждого приложения).|
-|windowsInformationProtectionDomain|Строка|Windows Домен Защиты информации (WIP) для связи с этим подключением.|
+|windowsInformationProtectionDomain|String|Windows Домен Защиты информации (WIP) для связи с этим подключением.|
 |trafficRules|[коллекция vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md)|Правила дорожного движения. Эта коллекция может содержать не более 1000 элементов.|
 |маршруты|[коллекция vpnRoute](../resources/intune-deviceconfig-vpnroute.md)|Маршруты (необязательные для сторонних поставщиков). Эта коллекция может содержать не более 1000 элементов.|
 |dnsRules|[коллекция vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md)|Правила DNS. Эта коллекция может содержать не более 1000 элементов.|

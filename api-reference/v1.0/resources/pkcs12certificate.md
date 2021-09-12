@@ -2,15 +2,15 @@
 title: тип ресурса pkcs12Certificate
 description: Представляет конфигурацию для загрузки pkcs12Certificate.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 273a1810a11e87c1981f7db2570e1773349435e981f9199b22017a35ced5b6e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e86cd05fa2ee1b1646e7e402b738f90fd8ccaba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006951"
 ---
 # <a name="pkcs12certificate-resource-type"></a>тип ресурса pkcs12Certificate
 
@@ -24,8 +24,8 @@ ms.locfileid: "54159830"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|pkcs12Value|String| Представляет отправленное содержимое pfx. Значение должно быть кодированной версией базового-64 фактического контента сертификата. Обязательный элемент.|
-|password|Строка| Пароль для файла pfx. Обязательный элемент. Если пароль не используется, необходимо предоставить значение `""` .|
+|pkcs12Value|Строка| Представляет отправленное содержимое pfx. Значение должно быть кодированной версией базового-64 фактического контента сертификата. Обязательный.|
+|password|Строка| Пароль для файла pfx. Обязательное. Если пароль не используется, необходимо предоставить значение `""` .|
 
 ## <a name="json-representation"></a>Представление JSON
 

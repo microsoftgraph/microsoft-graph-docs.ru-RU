@@ -2,15 +2,15 @@
 title: тип enum win32LobAppReturnCodeType
 description: Указывает тип кода возврата.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05bfb1daa6c1aa1cdad2f53f3447f709ca9aff18
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0b86ec18ab3989d27040a54841100182433cce3b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009212"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип enum win32LobAppReturnCodeType
 

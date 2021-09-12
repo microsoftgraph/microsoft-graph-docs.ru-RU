@@ -2,15 +2,15 @@
 title: Список доменов
 description: Извлечение списка объектов домена.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bf2289438ae0c11be4d7bbf5e6d4bb4d7e1250ec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ebbdc9738d99095537689c6fb9b943ab29ed15b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054058"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008426"
 ---
 # <a name="list-domains"></a>Список доменов
 
@@ -23,9 +23,9 @@ ms.locfileid: "52054058"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
+|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -2,15 +2,15 @@
 title: Служба ListConfigurationRecords
 description: Извлекает список объектов domainDnsRecord, необходимых для обеспечения служб для домена.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cb04790296aa1c6e1c934c8d37db28e9d1cd7620
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 842196efb1581203b27f8347364f804be44afb73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008428"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Служба ListConfigurationRecords
 
@@ -27,14 +27,14 @@ ms.locfileid: "52054065"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.Read.All, Domain.ReadWrite.All |
+|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/contoso.com/serviceConfigurationRecords
+GET /domains/{id}/serviceConfigurationRecords
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

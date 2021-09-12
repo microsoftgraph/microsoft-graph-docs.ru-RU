@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementIntentUserState
 description: Сущность, представляюая состояние пользователя для намерения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd683b76a2641e9b3df6b7caee3e98fece063a3f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4eb108729302eab007eed5b04b2ea8fc584ce284
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009058"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>тип ресурса deviceManagementIntentUserState
 

@@ -2,15 +2,15 @@
 title: тип enum deviceManagementAutopilotPolicyComplianceStatus
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6552606389905bc1e44bad6d7f8ca3689a6e2120
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8654e846eafed1c08863c71a4c44a0068c98e489
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017123"
 ---
 # <a name="devicemanagementautopilotpolicycompliancestatus-enum-type"></a>тип enum deviceManagementAutopilotPolicyComplianceStatus
 
@@ -24,9 +24,9 @@ ms.locfileid: "58255985"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Пока не задокументировано.|
-|совместимый|1 |Пока не задокументировано.|
+|совместимый|1|Пока не задокументировано.|
 |установлено|2|Пока не задокументировано.|
-|notCompliant|3 |Пока не задокументировано.|
+|notCompliant|3|Пока не задокументировано.|
 |notInstalled|4 |Пока не задокументировано.|
 |error|5 |Пока не задокументировано.|
 

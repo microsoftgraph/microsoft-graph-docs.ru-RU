@@ -1,16 +1,16 @@
 ---
 title: тип ресурса networkConnection
 description: Содержит сведения о сетевом подключении, связанном с оповещением.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: chinguyen1
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 6f386378abb67e310d3bc6ae2574470d92e48ce66ac6dda3b454f61a195e642d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: edddb2f14458a0c4afd60465c687f618937f43e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006916"
 ---
 # <a name="networkconnection-resource-type"></a>тип ресурса networkConnection
 
@@ -23,25 +23,25 @@ ms.locfileid: "54223335"
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |applicationName|String|Имя приложения, управляющего сетевым подключением (например, Facebook или SMTP).|
-|destinationAddress|String|IP-адрес назначения (сетевого подключения).|
-|destinationLocation|String|Расположение (сопоставление IP-адресов), связанное с назначением сетевого подключения.|
+|destinationAddress|Строка|IP-адрес назначения (сетевого подключения).|
+|destinationLocation|Строка|Расположение (сопоставление IP-адресов), связанное с назначением сетевого подключения.|
 |destinationDomain|String|Часть домена назначения URL-адреса. (например, "www.contoso.com").|
-|destinationPort|String|Порт назначения (сетевого подключения).|
-|destinationUrl|String|Строка URL-адрес/строка URI сетевого подключения без учета параметров. (например, www.contoso.com/products/default.html')|
+|destinationPort|Строка|Порт назначения (сетевого подключения).|
+|destinationUrl|Строка|Строка URL-адрес/строка URI сетевого подключения без учета параметров. (например, www.contoso.com/products/default.html')|
 |direction|connectionDirection|Направление сетевого подключения. Возможные значения: `unknown`, `inbound`, `outbound`.|
 |domainRegisteredDateTime|DateTimeOffset|Дата регистрации домена назначения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|localDnsName|String|Локальное разрешение имен DNS, как оно отображается в локальном DNS-кэше хоста (например, в случае, если файл "хост" был подделан).|
-|natDestinationAddress|String|IP-адрес назначения перевода сетевого адреса.|
-|natDestinationPort|String|Порт назначения перевода сетевых адресов.|
-|natSourceAddress|String|IP-адрес источника перевода сетевого адреса.|
-|natSourcePort|String|Порт источника перевода сетевых адресов.|
+|localDnsName|Строка|Локальное разрешение имен DNS, как оно отображается в локальном DNS-кэше хоста (например, в случае, если файл "хост" был подделан).|
+|natDestinationAddress|Строка|IP-адрес назначения перевода сетевого адреса.|
+|natDestinationPort|Строка|Порт назначения перевода сетевых адресов.|
+|natSourceAddress|Строка|IP-адрес источника перевода сетевого адреса.|
+|natSourcePort|Строка|Порт источника перевода сетевых адресов.|
 |протокол|[securityNetworkProtocol](securitynetworkprotocol.md)|Сетевой протокол. Возможные значения: `unknown` `ip` , , `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` , `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` .|
-|riskScore|String|Оценка риска сетевого подключения поставщика сгенерирована и рассчитана. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
-|sourceAddress|String|IP-адрес источника (то есть происхождения) (сетевого подключения).|
-|sourceLocation|String|Расположение (по сопоставлению IP-адресов), связанное с источником сетевого подключения.|
-|sourcePort|String|Ip-порт source (то есть происхождение) (сетевого подключения).|
+|riskScore|Строка|Оценка риска сетевого подключения поставщика сгенерирована и рассчитана. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
+|sourceAddress|Строка|IP-адрес источника (то есть происхождения) (сетевого подключения).|
+|sourceLocation|Строка|Расположение (по сопоставлению IP-адресов), связанное с источником сетевого подключения.|
+|sourcePort|Строка|Ip-порт source (то есть происхождение) (сетевого подключения).|
 |status|connectionStatus|Состояние сетевого подключения. Возможные значения: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
-|urlParameters|String|Параметры (суффикс) URL-адреса назначения.|
+|urlParameters|Строка|Параметры (суффикс) URL-адреса назначения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

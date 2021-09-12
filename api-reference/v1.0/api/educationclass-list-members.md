@@ -1,16 +1,16 @@
 ---
 title: Список участников образовательного класса
 description: Получает преподавателей и учащихся для курса. Обратите внимание на то, что если используется делегированный маркер, участников могут видеть только другие участники курса.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: eadc2f00fee83f3663ab983118f92ce84f8cc607
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 90a38dd2b1beda22e18d0671b787cac3e666fe07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232094"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008414"
 ---
 # <a name="list-members-of-an-educationclass"></a>Список участников образовательного класса
 
@@ -25,7 +25,7 @@ ms.locfileid: "52232094"
 | :------------------------------------- | :------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                                                 |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                       |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden |
 
 > [!NOTE]
 > Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах.
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -2,15 +2,15 @@
 title: тип ресурса macOSSoftwareUpdateAccountSummary
 description: Сводный отчет об обновлении учетной записи для устройства и пользователя по программному обеспечению MacOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2e5218f5c1473ce01106ec8044c9c55d15d867f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 467ee509de4b8cdd147328fd20686060d1a8b7d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009094"
 ---
 # <a name="macossoftwareupdateaccountsummary-resource-type"></a>тип ресурса macOSSoftwareUpdateAccountSummary
 
@@ -35,7 +35,7 @@ ms.locfileid: "58785166"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|displayName|String|Имя отчета|
 |deviceId|String|ID устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceName|String|Имя устройства.|

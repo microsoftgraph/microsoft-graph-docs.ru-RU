@@ -2,15 +2,15 @@
 title: Тип ресурса resourceOperation
 description: Описывает ресурс resourceOperation (сущность) API microsoft Graph (REST), который поддерживает процессы intune, связанные с управлением доступом на основе ролей (RBAC).
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6495d80c548f3847dd7ac88adcb3f92b14c04409
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 437c97f6af9ef68233054e547ca95ac08e062039
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017158"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
 
@@ -36,7 +36,7 @@ ms.locfileid: "58807644"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|String|Категория ресурсов, к которой относится эта операция. Это свойство доступно только для чтения.|
+|resource|Строка|Категория ресурсов, к которой относится эта операция. Это свойство доступно только для чтения.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|

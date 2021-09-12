@@ -2,15 +2,15 @@
 title: Получение primaryChannel
 description: Получение свойства навигации команды, разрешающего доступ к стандартному каналу "Общий".
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d29107dc8739ad64a35ff675ef685aa9e7ea9215
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d1245bb70f2f92278bc3a3c2d5db4decb5d9b739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007468"
 ---
 # <a name="get-primarychannel"></a>Получение primaryChannel
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/primaryChannel
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

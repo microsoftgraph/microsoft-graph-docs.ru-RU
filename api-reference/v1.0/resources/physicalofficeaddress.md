@@ -1,16 +1,16 @@
 ---
 title: тип ресурса physicalOfficeAddress
 description: Представляет бизнес-адрес такого ресурса, как контакт или событие.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9f632fab8d5859a72eff551bba35184face6e3869255687ad9758decf3b131d6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c53f93facc887d223cdaa8fe84f5dfc53f0fa102
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59006930"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>тип ресурса physicalOfficeAddress
 

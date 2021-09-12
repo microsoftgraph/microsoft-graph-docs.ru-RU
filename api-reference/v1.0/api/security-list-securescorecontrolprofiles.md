@@ -1,22 +1,22 @@
 ---
 title: Перечисление объектов secureScoreControlProfiles
-description: Получение свойств и связей объекта Секурескореконтролпрофилес.
+description: Извлечение свойств и связей объекта secureScoreControlProfiles.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b0b2fea39c8fb4a9bdcb8bc3d16a3273ac8eb8ef
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 3631c62883cfc12e963c77969f771235e241febd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007490"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Перечисление объектов secureScoreControlProfiles
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [секурескореконтролпрофилес](../resources/securescorecontrolprofile.md) .
+Извлечение свойств и связей [объекта secureScoreControlProfiles.](../resources/securescorecontrolprofile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -59,7 +59,7 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескореконтролпрофилес** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` **secureScoreControlProfiles** в теле ответа.
 
 ## <a name="example"></a>Пример
 

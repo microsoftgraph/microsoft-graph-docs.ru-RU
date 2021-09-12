@@ -1,16 +1,16 @@
 ---
 title: тип ресурса hostSecurityState
 description: Содержит сведения о хосте (включая устройства, компьютеры и т. п.).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 20de01e91abbc2e3cf568a8898b79680e73188e549ffd306abf4f7aed092b16b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3513342aaadb2eaf80a787b26988ff2a638813ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184895"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007210"
 ---
 # <a name="hostsecuritystate-resource-type"></a>тип ресурса hostSecurityState
 
@@ -22,15 +22,15 @@ ms.locfileid: "54184895"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|fqdn|String|Host FQDN (полное доменное имя) (например, `machine.company.com` ).|
-|isAzureAadJoined|Логическое|True, если хост является доменом, присоединимым к Azure Active Directory Службы домена.|
-|isAzureAadRegistered|Логическое|True, если хост зарегистрирован Azure Active Directory устройств (устройства BYOD — то есть не полностью управляемые предприятием).|
-|isHybridAzureDomainJoined|Логическое|True, если хост является доменом, присоединимым к локальному домену Active Directory.|
-|netBiosName|String|Имя локального хоста без доменного имени DNS.|
+|fqdn|Строка|Host FQDN (полное доменное имя) (например, `machine.company.com` ).|
+|isAzureAadJoined|Логический|True, если хост является доменом, присоединимым к Azure Active Directory Службы домена.|
+|isAzureAadRegistered|Логический|True, если хост зарегистрирован Azure Active Directory устройств (устройства BYOD — то есть не полностью управляемые предприятием).|
+|isHybridAzureDomainJoined|Логический|True, если хост является доменом, присоединимым к локальному домену Active Directory.|
+|netBiosName|Строка|Имя локального хоста без доменного имени DNS.|
 |os|String|Операционная система host. (Например, Windows10, MacOS, RHEL и т.д.).|
-|privateIpAddress|String|Частный (не маршрутируемый) адрес IPv4 или IPv6 (см. [RFC 1918)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
-|publicIpAddress|String|Общедоступный адрес IPv4 или IPv6 (см. [RFC 1918)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
-|riskScore|String|Оценка риска, сгенерированная поставщиком и рассчитанная на хост.  Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
+|privateIpAddress|Строка|Частный (не маршрутируемый) адрес IPv4 или IPv6 (см. [RFC 1918)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
+|publicIpAddress|Строка|Общедоступный адрес IPv4 или IPv6 (см. [RFC 1918)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
+|riskScore|Строка|Оценка риска, сгенерированная поставщиком и рассчитанная на хост.  Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
 
 ## <a name="json-representation"></a>Представление JSON
 

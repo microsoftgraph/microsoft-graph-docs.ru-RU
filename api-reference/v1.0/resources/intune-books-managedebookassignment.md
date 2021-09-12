@@ -2,15 +2,15 @@
 title: Тип ресурса managedEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8c3eac1dc144e1baf38f1c9abe74b19e0491bb7c36e8aeee764eceaadd73e2c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0c35cfb4de6cac85eb0601f23ad48216796ecc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007098"
 ---
 # <a name="managedebookassignment-resource-type"></a>Тип ресурса managedEBookAssignment
 

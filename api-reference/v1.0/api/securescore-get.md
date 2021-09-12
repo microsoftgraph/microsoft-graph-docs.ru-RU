@@ -1,22 +1,22 @@
 ---
 title: Получение объектов secureScore
-description: Получение свойств и связей объекта Секурескоре.
+description: Извлечение свойств и связей объекта secureScore.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 95cff85f94e8f7df96773ee727a0b2097f78d4cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f9f0b7dd1c008959b0124c86dd4559f01db233a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007539"
 ---
 # <a name="get-securescore"></a>Получение объектов secureScore
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [секурескоре](../resources/securescore.md) .
+Извлечение свойств и связей [объекта secureScore.](../resources/securescore.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,13 +42,13 @@ GET /security/secureScores/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескоре** в тексте отклика. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
+В случае успешной работы этот метод возвращает код ответа и `200 OK` **объект secureScore** в тексте ответа. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 

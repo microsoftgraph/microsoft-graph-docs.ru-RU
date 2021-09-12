@@ -1,16 +1,16 @@
 ---
 title: Вывод объекта SubscribedSku
 description: Получение определенной коммерческой подписки, приобретенной организацией.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0493d8ccf201739d1d59d06933a75d27d5b0c08d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 214d3ad6c92c0af0bcc7842f91bd1d228ae6bbd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050299"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015737"
 ---
 # <a name="get-subscribedsku"></a>Вывод объекта SubscribedSku
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

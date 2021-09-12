@@ -2,15 +2,15 @@
 title: Создание windowsManagedDevice
 description: Создайте новый объект WindowsManagedDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66d010a253ba5723e77a7a7ecfafc9032cf270ec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3efd196d7574c275953e900092e81922a9180f2a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59009793"
 ---
 # <a name="create-windowsmanageddevice"></a>Создание windowsManagedDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "58799348"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,12 +56,12 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|id|Строка|Уникальный идентификатор для устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userId|String|Уникальный идентификатор для пользователя, связанного с устройством. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceName|String|Имя устройства. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Подробные сведения для устройства.  Включает такие сведения, как пространство для хранения, производитель, серийный номер и т.д. Это свойство только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Владение устройством. Может быть "company" или "personal" Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `company`, `personal`.|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md).|Владение устройством. Может быть "company" или "personal" Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `company`, `personal`.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Владение устройством. Может быть "company" или "personal" Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `company`, `personal`.|
 |deviceActionResults|Коллекция [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Список объектов deviceActionResult сложного типа.
  Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|Состояние управления устройством. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
@@ -120,14 +120,14 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |requireUserEnrollmentApproval|Логический|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты о сроках действия сертификата управления устройствами. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|Строка|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|udid|Строка|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|udid|String|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра устройства. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Количество исправленных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Заметки на устройстве, созданном ИТ-администратором, унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Состояние здоровья клиента диспетчера конфигурации, допустимо только для устройств, управляемых агентом MDM/ConfigMgr, унаследованных от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Сведения о клиенте диспетчера конфигурации, действительные только для устройств, управляемых, управляемых дуэлями или трехуправленных агентом ConfigMgr, унаследованных от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|ethernetMacAddress|Строка|Mac Ethernet. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|ethernetMacAddress|String|Mac Ethernet. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |physicalMemoryInBytes|Int64|Общая память в bytes. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Архитектура процессора. Это свойство доступно только для чтения. Унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 |specificationVersion|Строка|Версия спецификации. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -136,7 +136,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |skuNumber|Int32|Номер sku устройства. См. также: [функция GetProductInfo (sysinfoapi.h).](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo) Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Функции управления устройствами, унаследованные [от managedDevice.](../resources/intune-devices-manageddevice.md) Возможные значения: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[коллекция chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md)|Список свойств устройства ChromeOS. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|enrollmentProfileName|Строка|Имя профиля регистрации, назначенного устройству. Значение по умолчанию — это пустая строка, указывающая, что профиль регистрации не был засмеян. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|enrollmentProfileName|String|Имя профиля регистрации, назначенного устройству. Значение по умолчанию — это пустая строка, указывающая, что профиль регистрации не был засмеян. Это свойство доступно только для чтения. Унаследованный от [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 
 

@@ -2,15 +2,15 @@
 title: Создание telecomExpenseManagementPartner
 description: Создание объекта telecomExpenseManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ecd1f6097c4404c90335c36f8ab36c26725638e0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 098a7adf8c51204a2b8ff3d1eb3cfc89f1342699
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017662"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Создание telecomExpenseManagementPartner
 
@@ -29,7 +29,7 @@ ms.locfileid: "58799840"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор партнера TEM.|
-|displayName|Строка|Отображаемое имя партнера TEM.|
+|displayName|String|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
 |enabled|Boolean|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|

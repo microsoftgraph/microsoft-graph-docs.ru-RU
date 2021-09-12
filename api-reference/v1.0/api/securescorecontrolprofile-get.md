@@ -1,22 +1,22 @@
 ---
 title: Получение объектов secureScoreControlProfile
-description: Получение свойств и связей объекта Секурескореконтролпрофиле.
+description: Извлечение свойств и связей объекта secureScoreControlProfile.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 78fc101ee08aec939ec8eb97240fccb5149a1a66
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 722380b389c0fc93da42d99063e4b63d4966ff86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48601649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007532"
 ---
 # <a name="get-securescorecontrolprofile"></a>Получение объектов secureScoreControlProfile
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [секурескореконтролпрофиле](../resources/securescorecontrolprofile.md) .
+Извлечение свойств и связей объекта [securescorecontrolprofile.](../resources/securescorecontrolprofile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,13 +42,13 @@ GET /security/securescorecontrolprofiles/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескореконтролпрофиле** в тексте отклика. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` **secureScoreControlProfile** в тексте ответа. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 

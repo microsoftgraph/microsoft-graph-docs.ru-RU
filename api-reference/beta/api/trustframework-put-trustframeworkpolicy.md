@@ -1,16 +1,16 @@
 ---
 title: Обновление trustFrameworkPolicy
 description: 'Эта операция обновляет существующий объект trustFrameworkPolicy, или если его не существует, она создает его. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b20d580ac7f5e273e66b1fdd152e7e607907b4df91276e8e76a5da697f9085c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c4bb54baa2db274e973a7eb931c8cfe5826f0af6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54166017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017627"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание trustFrameworkPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "54166017"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Policy.ReadWrite.TrustFramework|
+|Для приложений|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 

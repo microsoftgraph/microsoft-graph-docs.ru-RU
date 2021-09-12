@@ -1,16 +1,16 @@
 ---
 title: 'приложение: unsetVerifiedPublisher'
 description: Удаление проверенного издателя приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1680befcf64ec78c5548d59a4a3458f184b62952
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 5511d586f4f239a229b71c45c968561595d7e09b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579669"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008405"
 ---
 # <a name="application-unsetverifiedpublisher"></a>приложение: unsetVerifiedPublisher
 
@@ -24,7 +24,7 @@ Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set 
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение | Не поддерживается |
+|Для приложений | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 

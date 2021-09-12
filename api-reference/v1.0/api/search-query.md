@@ -1,16 +1,16 @@
 ---
 title: 'объект поиска: запрос'
 description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d0772bd56de7548c4fd9c6d4fb9912e0e0da397564793f1269c9f574a4eaed09
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3eead1fc16f99aebf81b0053d90cef06d05bde6d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121524"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015765"
 ---
 # <a name="searchentity-query"></a>объект поиска: запрос
 
@@ -83,7 +83,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -162,7 +162,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 - Поиск [сообщений почты](/graph/search-concept-messages)
 - События [календаря поиска](/graph/search-concept-events)
 - Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)

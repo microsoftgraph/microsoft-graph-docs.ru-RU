@@ -2,15 +2,15 @@
 title: Получить shiftPreferences
 description: Получите параметр shift preference by ID.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a4ee1518048931d605acfb4dd96908285fc44b9b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: edd09d141514a2c9418a6abecd46c34f96c86719
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52034856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015744"
 ---
 # <a name="get-shiftpreferences"></a>Получить shiftPreferences
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

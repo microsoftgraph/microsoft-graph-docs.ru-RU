@@ -2,15 +2,15 @@
 title: Обновление объектов secureScoreControlProfile
 description: Обновление редактируемого объекта secureScoreControlProfile в рамках любого интегрированного решения для изменения различных свойств, таких как назначеноTo или tenantNote.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a429e08171c90b1e8c3307eaf1696c6f3016bbda
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 50a30fa3f817d93b60bdbca686a8e19e85150a27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007525"
 ---
 # <a name="update-securescorecontrolprofile"></a>Обновление объектов secureScoreControlProfile
 
@@ -43,7 +43,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Авторизация  | Bearer {код}. Обязательно.|
 |Prefer | return=representation. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. Тело должно **содержать** свойство `vendorInformation` с допустимым и `provider` `vendor` полями. В следующей таблице перечислены поля, которые можно обновить для **secureScoreControlProfile.** Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -57,7 +57,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) в теле ответа.
 

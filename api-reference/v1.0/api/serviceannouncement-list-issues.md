@@ -2,15 +2,15 @@
 title: Проблемы со списком
 description: Извлекать ресурсы serviceHealthIssue из свойства навигации проблем.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2e5b1de15792a1608d104dd2d4ae1d2aa4733759
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3bbb69bca8faabd2f31b74a74186544974a803d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260824"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007454"
 ---
 # <a name="list-issues"></a>Проблемы со списком
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "58260824"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|ServiceHealth.Read.All|
+|Для приложений|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

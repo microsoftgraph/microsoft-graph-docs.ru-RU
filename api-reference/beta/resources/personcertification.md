@@ -1,16 +1,16 @@
 ---
 title: тип ресурса personCertification
 description: тип ресурса personCertification
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 893856a5a8322cc82023572ebc2539a5ee91a112c5cc5455c9fd5ebea6bd2e89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce360bd663549e7dc5fb0b9d9f1ccbce28f8dc15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017102"
 ---
 # <a name="personcertification-resource-type"></a>тип ресурса personCertification
 
@@ -32,14 +32,14 @@ ms.locfileid: "54206041"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |certificationId  |String      |Справочный идентификатор для сертификации. |
 |createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создав объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |description      |Строка      |Описание сертификации.                   |
-|displayName      |String      |Название сертификата.                         |
+|displayName      |Строка      |Название сертификата.                         |
 |endDate          |Date        |Дата истечения срока сертификации.            |
-|id|Строка|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
+|id|String|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Дата        |Дата выдачи сертификата.         |
 |issuingAuthority |Строка      |Орган, который предоставил сертификацию.          |
@@ -48,7 +48,7 @@ ms.locfileid: "54206041"
 |lastModifiedDateTime|DateTimeOffset|Предоставляет dateTimeOffset для создания объекта. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |startDate        |Date        |Дата, когда сертификация стала допустимой.       |
-|thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
+|thumbnailUrl     |Строка      |URL-адрес, ссылающийся на эскиз сертификата.   |
 |webUrl           |String      |URL-адрес, ссылающийся на сертификацию.                  |
 
 ## <a name="relationships"></a>Связи
