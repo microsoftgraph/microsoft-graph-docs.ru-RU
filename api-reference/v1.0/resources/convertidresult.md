@@ -1,16 +1,16 @@
 ---
 title: тип ресурса convertIdResult
 description: Результат преобразования формата ID, выполняемого функцией translateExchangeIds.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: ec94f586f0f8233f1b56965f4dea4640360b63eb43f9d1fae69988ae61d401e2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e2bb28e7ee4d889fec24152de27e37399e8acfa1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053156"
 ---
 # <a name="convertidresult-resource-type"></a>тип ресурса convertIdResult
 
@@ -26,7 +26,7 @@ ms.locfileid: "54155164"
 | targetId | String | Преобразованный идентификатор. Это значение не присутствует, если преобразование не удалось. |
 | errorDetails | [genericError](genericerror.md) | Объект ошибки, указывающий причину сбоя преобразования. Это значение не присутствует, если преобразование удалось. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

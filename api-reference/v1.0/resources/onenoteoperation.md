@@ -2,15 +2,15 @@
 title: тип ресурса onenoteOperation
 description: Состояние некоторых длительных OneNote операций.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: dd7d6cfc797416d0cc8922dac8305617bc46c4c8d26e0e138551a0f855cadcbb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ef25b94bb02ffaf721e7861eecacdd37c4c85e9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146449"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118042"
 ---
 # <a name="onenoteoperation-resource-type"></a>тип ресурса onenoteOperation
 
@@ -47,14 +47,14 @@ ms.locfileid: "54146449"
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
 |error|[onenoteOperationError](onenoteoperationerror.md)|Ошибка, возвращаемая операцией.|
-|id|строка|ID операции. Только для чтения.|
+|id|string|ID операции. Только для чтения.|
 |lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
-|resourceId|Строка|ID ресурса.|
-|resourceLocation|Строка|URI ресурса для объекта. Например, ресурс URI для скопированной страницы или раздела. |
+|resourceId|string|ID ресурса.|
+|resourceLocation|string|URI ресурса для объекта. Например, ресурс URI для скопированной страницы или раздела. |
 |status|operationStatus|Текущий статус операции: `NotStarted` `Running` , , `Completed` `Failed` . |
-|percentComplete|Строка|Если операция по-прежнему находится в состоянии, операция будет `running` завершена в процентах.|
+|percentComplete|string|Если операция по-прежнему находится в состоянии, операция будет `running` завершена в процентах.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

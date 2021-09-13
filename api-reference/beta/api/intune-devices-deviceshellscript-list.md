@@ -2,15 +2,15 @@
 title: Список устройствShellScripts
 description: Список свойств и связей объектов deviceShellScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71aac8450166254759582a386d41696997217756
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dda2d8d643116ce4fec00220962d27e85e2eff1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065465"
 ---
 # <a name="list-deviceshellscripts"></a>Список устройствShellScripts
 

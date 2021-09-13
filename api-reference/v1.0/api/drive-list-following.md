@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Список элементов, за которыми подписан пользователь, вошедшего в систему.
+description: Список элементов, за которыми последовало подписанное пользователем.
 title: Список отслеживаемых элементов
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1c24795cb1682472c66a57a09dabadb2104d5e72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9aee1e510e1e477c3e37d6f662fa3da1901965cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063470"
 ---
 # <a name="list-followed-items"></a>Список отслеживаемых элементов
 
 Пространство имен: microsoft.graph
 
-Список [элементов](../resources/driveitem.md) , за которыми подписан пользователь, вошедшего в систему.
+Список [элементов,](../resources/driveitem.md) за которыми последовало подписанное пользователем.
 Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.
 
 ## <a name="permissions"></a>Разрешения
@@ -59,7 +59,7 @@ GET /me/drive/following
 
 ## <a name="response"></a>Отклик
 
-Этот метод возвращает коллекцию ресурсов [driveItem](../resources/driveitem.md) для элементов, которые подписаны владельцем диска.
+Этот метод возвращает коллекцию [ресурсов driveItem](../resources/driveitem.md) для элементов, за которыми следует владелец диска.
 Если не будет найдено ни одного элемента, то будет возвращена пустая коллекция.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->

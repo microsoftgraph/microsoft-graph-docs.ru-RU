@@ -2,15 +2,15 @@
 title: тип ресурса roleManagement
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b454eb4e5ce477273f9a4fd7f0d373240502c02d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a6f6ffb06c3f73b5d2d998600e1bb1b856c90d17
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063701"
 ---
 # <a name="rolemanagement-resource-type"></a>тип ресурса roleManagement
 
@@ -33,7 +33,7 @@ ms.locfileid: "58787232"
 |:---|:---|:---|
 |id|Строка|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceManagement|[rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md)|RbacApplication для управления устройствами|

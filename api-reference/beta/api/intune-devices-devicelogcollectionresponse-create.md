@@ -2,15 +2,15 @@
 title: Создание deviceLogCollectionResponse
 description: Создайте новый объект deviceLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4144f0ef0005b6e6e4d9522163617d7c67ae5b79
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bdde6664335c7449a60200b89d966a7f97094f6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065493"
 ---
 # <a name="create-devicelogcollectionresponse"></a>Создание deviceLogCollectionResponse
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792255"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на коллекцию журналов|
 |managedDeviceId|Guid|Id устройства|
 |errorCode|Int64|Код ошибки, если таковое есть. Допустимые значения -9.2237203685478E+18 до 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|DateTime запроса|
 |receivedDateTimeUTC|DateTimeOffset|DateTime, в который был получен запрос|
-|initiatedByUserPrincipalName|Строка|UpN для тех, кто инициировал запрос|
+|initiatedByUserPrincipalName|String|UpN для тех, кто инициировал запрос|
 |expirationDateTimeUTC|DateTimeOffset|DateTime истечения срока действия журналов|
 |size|Двойное с плавающей точкой|Размер журналов. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 

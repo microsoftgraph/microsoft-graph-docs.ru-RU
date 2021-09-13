@@ -2,15 +2,15 @@
 title: Тип ресурса enrollmentConfigurationAssignment
 description: Назначение конфигурации регистрации
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8eb9140ca610c7ecd07e1d1b351da6ba8e0be393
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1f09d4df65d55dabadfd5395efbd7eb72e052eb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787836"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063722"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Тип ресурса enrollmentConfigurationAssignment
 
@@ -34,12 +34,12 @@ ms.locfileid: "58787836"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ назначения конфигурации регистрации|
+|id|String|Ключ назначения конфигурации регистрации|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Представляет назначение управляемым устройствам в клиенте|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, используемого для развертывания в группу, прямую или policySet. Возможные значения: `direct`, `policySets`.|
-|sourceId|Строка|Идентификатор ресурса, используемой для развертывания в группе|
+|sourceId|String|Идентификатор ресурса, используемой для развертывания в группе|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

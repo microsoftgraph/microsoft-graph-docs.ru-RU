@@ -2,15 +2,15 @@
 title: Получение windows81CompliancePolicy
 description: Чтение свойств и связей объекта windows81CompliancePolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01e58fce79ff6a43ded8b6acb16fd35abac613bf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8796165e4bddfeb1125fc95ba0bb7a240e1461f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065703"
 ---
 # <a name="get-windows81compliancepolicy"></a>Получение windows81CompliancePolicy
 

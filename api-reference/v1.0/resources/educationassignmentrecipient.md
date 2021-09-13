@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationAssignmentRecipient
 description: Тип ресурса, используемый в **свойстве assignments.assignTo.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4c336a926e151104af9e0945ee967d9c453ad1359c9d7e944bb07d05c924140d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3e0180a9bd15e9a0a2f16839df170f919b5e484
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036741"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>тип ресурса educationAssignmentRecipient
 

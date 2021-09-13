@@ -2,14 +2,14 @@
 title: 'Справочник по разрешениям Microsoft Graph '
 description: Microsoft Graph предоставляет детализированные разрешения, управляющие доступом приложений к ресурсам, таким как пользователи, группы и почта. Вы как разработчик указываете, какие разрешения для Microsoft Graph должно запрашивать ваше приложение.
 author: jackson-woods
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7c8e37f1ce6d802e303566e72e600471bd796118
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 790bfb908c54a5eec2e2274495f761baaea5fec9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089321"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,
 }
 ```
 
-## <a name="retriving-permission-ids"></a>Получение ИД разрешений
+## <a name="retrieving-permission-ids"></a>Получение ИД разрешений
 
 Если вам нужно настроить разрешения с помощью Azure CLI, PowerShell или инфраструктуры в качестве платформы кода, может потребоваться идентификатор разрешения, которое вы хотите использовать вместо имени. Чтобы получить идентификатор, можно использовать Azure CLI, запустив `az ad sp list`. Однако при этом создается очень длинный список, и найти нужное разрешение может быть непросто. Если вы уже знаете имя нужного разрешения, можно выполнить следующую команду с помощью Azure CLI:
 
@@ -1311,7 +1311,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 | _Notes.ReadWrite.All_ |    Чтение и запись всех записных книжек OneNote | Позволяет приложению считывать и редактировать все записные книжки OneNote в организации, а также предоставлять к ним доступ в случаях, когда вход пользователя не предусмотрен.| Да |
 
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Заметки
 Разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
 С помощью разрешения _Notes.Create_ приложение может просматривать иерархию записных книжек OneNote вошедшего пользователя и создавать содержимое OneNote (записные книжки, группы разделов, разделы, страницы и т. д.).
@@ -1321,7 +1321,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Делегированные
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).

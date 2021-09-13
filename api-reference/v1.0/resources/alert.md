@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса alert
 description: Представляет потенциальные проблемы безопасности в клиенте пользователя, выявленные решениями по обеспечению безопасности корпорации Майкрософт или партнеров. Используйте оповещения, чтобы объединить и оптимизировать управления проблемами безопасности во всех интегрированных решениях. Дополнительные сведения см. в примерах запросов в песочнице Graph.
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2726eeac1a1b355a27ba45f998a463c3fc8ecbc4855c5caee9b58c8528f825f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ac7198b4f45e9e79e12da878d28c3d245cefdf7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089895"
 ---
 # <a name="alert-resource-type"></a>Тип ресурса alert
 

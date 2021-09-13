@@ -2,15 +2,15 @@
 title: Удаление androidForWorkMobileAppConfiguration
 description: Удаляет androidForWorkMobileAppConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a4765828850d46b6cdcb949c3dc40a3c3238557
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ef5945d6b1e634d8fea0f42e9649d714913b848
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58757813"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066116"
 ---
 # <a name="delete-androidforworkmobileappconfiguration"></a>Удаление androidForWorkMobileAppConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58757813"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

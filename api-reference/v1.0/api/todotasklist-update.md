@@ -2,15 +2,15 @@
 title: Обновление todoTaskList
 description: Обновление свойств объекта todoTaskList.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c575a938bb2a2689860cf3c58e46ae9d43d24c6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 52c39a44b0720fc3410eca15eae84a1403e524f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104623"
 ---
 # <a name="update-todotasklist"></a>Обновление todoTaskList
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "49873523"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,19 +44,19 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [todoTaskList](../resources/todotasklist.md) в JSON.
+В теле запроса поставляем представление JSON объекта [todoTaskList.](../resources/todotasklist.md)
 
 В следующей таблице показаны свойства, необходимые при создании [todoTaskList.](../resources/todotasklist.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле, указывающее обновленный заголовок списка задач.|
+|displayName|Строка|Поле, указывающее обновленное название списка задач.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [todoTaskList](../resources/todotasklist.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект todoTaskList](../resources/todotasklist.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

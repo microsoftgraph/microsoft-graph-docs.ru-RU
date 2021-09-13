@@ -1,23 +1,23 @@
 ---
 title: " secureScoreControlStateUpdate type"
 description: Этот ресурс содержит историю состояния управления, обновляемого пользователем (состояния управления включают Default, Ignored, ThirdParty, Reviewed).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 9e369cb863981d9998e20c17047899c8d2c02689219bdd0fef2dd56c660076d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17d35370907ac82d47b28e67b7fb4ba6c0068bb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063617"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate type
 Содержит историю состояния управления, обновляемого пользователем (состояния управления включают Default, Ignored, ThirdParty, Reviewed).
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|assignedTo | строка | Назначение управления пользователю, который будет принимать действие |
+|assignedTo | string | Назначение управления пользователю, который будет принимать действие |
 |comment | string | Предоставляет необязательный комментарий о контроле |
 |состояние | string | Состояние управления можно изменить с помощью команды PATCH (Ex: ignored, thirdParty и т.д.) |
 |updatedBy | string |ID пользователя, обновившего состояние клиента |

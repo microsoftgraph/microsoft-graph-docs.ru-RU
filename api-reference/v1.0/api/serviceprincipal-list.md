@@ -2,15 +2,15 @@
 title: Перечисление servicePrincipals
 description: Получение списка объектов servicePrincipal.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 494fc4b078169b4342e4617b5f6fcadc940f92d4d11fb072b5e5058a99cd0544
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8449b40779e7ef4b7b64b8e82b9a957ddd20dab4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57140659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019575"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -26,7 +26,7 @@ ms.locfileid: "57140659"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

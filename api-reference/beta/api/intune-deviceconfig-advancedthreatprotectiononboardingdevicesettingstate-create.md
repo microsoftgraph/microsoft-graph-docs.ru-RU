@@ -2,15 +2,15 @@
 title: Создание advancedThreatProtectionOnboardingDeviceSettingState
 description: Создайте новый расширенный объектThreatProtectionOnboardingDeviceSettingState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b4e78ded98ae44959fbbaccffc805484c4daa03
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b40656cc7b799c2579cddd099e6a78c82e1b81bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066046"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>Создание advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -53,7 +53,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта|
+|id|String|Ключ объекта|
 |platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|Тип платформы устройства. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` . `unknown`|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра в отчете|

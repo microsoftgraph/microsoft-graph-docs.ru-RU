@@ -2,15 +2,15 @@
 title: 'событие: вперед'
 description: 'Это действие позволяет организатору или участнику собрания '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02a01fb75b17941dd4bcb8e3703eec0e0dcece61
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 3cb56c0edbf845fb5a91ff92840c82800d31bcbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448307"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016626"
 ---
 # <a name="event-forward"></a>событие: вперед
 
@@ -18,7 +18,7 @@ ms.locfileid: "50448307"
 
 Это действие позволяет организатору или [](../resources/event.md) участнику собрания перенаадть запрос собрания новому получателю. 
 
-Если событие собрания передается из почтового ящика Microsoft 365 участника другому получателю, это действие также отправляет сообщение для уведомления организатора пересылания и добавляет получателя в копию организатора собрания. Это удобство не доступно при переададки из Outlook.com учетной записи.
+Если событие собрания передается из почтового ящика Microsoft 365 участника другому получателю, это действие также отправляет сообщение для уведомления организатора пересылания и добавляет получателя в копию организатора события собрания. Это удобство не доступно при переададки из учетной записи Outlook.com.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

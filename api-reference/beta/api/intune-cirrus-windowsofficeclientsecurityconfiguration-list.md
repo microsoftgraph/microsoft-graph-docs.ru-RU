@@ -1,16 +1,16 @@
 ---
 title: Список windowsOfficeClientSecurityConfigurations
 description: Список свойств и связей объектов WindowsOfficeClientSecurityConfiguration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81fc7887faf30d68410493b5a7a7c04c9b599483
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad5cf17150a259e8e9e182e55ae9dc7eb5c1d97a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066053"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>Список windowsOfficeClientSecurityConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787249"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -1,22 +1,22 @@
 ---
 title: Создание namedLocation
 description: Создайте новое имяLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c9128670e02a20f72060e8ff52d74034e6fc962b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a1f64d68a05516dab32b20dc2bf25bc3562971ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147817"
 ---
 # <a name="create-namedlocation"></a>Создание namedLocation
 
 Пространство имен: microsoft.graph
 
-Создайте новый [объект с именемLocation.](../resources/namedlocation.md)
+Создайте новый [объект с именемLocation.](../resources/namedlocation.md) Именуемые расположения могут быть [объектами ipNamedLocation](../resources/ipnamedlocation.md) или [countryNamedLocation.](../resources/countrynamedlocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,21 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажи представление JSON объекта [ipNamedLocation](../resources/ipnamedlocation.md) или [countryNamedLocation.](../resources/countrynamedlocation.md)
+В теле запроса укажи представление JSON объекта [ipNamedLocation](../resources/ipnamedlocation.md) или [countryNamedLocation.](../resources/countrynamedlocation.md) Необходимо указать **@odata.type** производных типов, то есть для `#microsoft.graph.ipNamedLocation` объекта [ipNamedLocation](../resources/ipnamedlocation.md) или объекта `#microsoft.graph.countryNamedLocation` [countryNamedLocation.](../resources/countrynamedlocation.md)
+
+В следующей таблице перечислены свойства, необходимые для создания [объекта ipNamedLocation.](../resources/ipnamedlocation.md)
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|displayName|String|Понятное человеку имя расположения. Обязательно.|
+|ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596. Обязательно. Также **@odata.type** ipRange.|
+
+В следующей таблице перечислены свойства, необходимые для создания [объекта countryNamedLocation.](../resources/countrynamedlocation.md)
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|countriesAndRegions|Коллекция String|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
+|displayName|String|Понятное человеку имя расположения. Обязательный.|
 
 ## <a name="response"></a>Отклик
 
@@ -107,7 +121,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -188,7 +202,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

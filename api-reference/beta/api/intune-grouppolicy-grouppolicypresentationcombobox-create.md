@@ -2,15 +2,15 @@
 title: Создание groupPolicyPresentationComboBox
 description: Создайте новый объект groupPolicyPresentationComboBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f0bd09c6671e13f4613f89c62ef17fb767e5526
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9a2092486a220106124575c92f991408607fe92e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058875"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>Создание groupPolicyPresentationComboBox
 
@@ -57,8 +57,8 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|Строка|Локализованная строка по умолчанию, отображаемая в поле комбо. По умолчанию это значение пусто.|
-|предложения|Коллекция String|Локализованные строки, перечисленные в выпадаемом списке комбо-окна. По умолчанию это значение пусто.|
-|обязательно|Boolean|Указывает, должно ли значение быть задано для параметра. Значение по умолчанию  false.|
+|предложения|Коллекция строк|Локализованные строки, перечисленные в выпадаемом списке комбо-окна. По умолчанию это значение пусто.|
+|обязательно|Логический|Указывает, должно ли значение быть задано для параметра. Значение по умолчанию  false.|
 |maxLength|Int64|Неподписаный целый ряд, который указывает максимальное количество текстовых символов для параметра. Значение по умолчанию — 1023.|
 
 

@@ -2,15 +2,15 @@
 title: Update groupPolicyObjectFile
 description: Обновление свойств объекта groupPolicyObjectFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c41fc2051bfeaab03443469fb9447aff0c54bb29
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 80ba968da1aa0951da95f96acdb9d0fab11e26da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801271"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020625"
 ---
 # <a name="update-grouppolicyobjectfile"></a>Update groupPolicyObjectFile
 
@@ -27,9 +27,9 @@ ms.locfileid: "58801271"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
-|ouDistinguishedName|Строка|Отличительное имя OU.|
+|ouDistinguishedName|String|Отличительное имя OU.|
 |createdDateTime|DateTimeOffset|Дата и время, в которые была впервые загружена GroupPolicy.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyObjectFile.|
 |content|String|Контент объекта групповой политики.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

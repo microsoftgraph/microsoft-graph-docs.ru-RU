@@ -2,15 +2,15 @@
 title: Update roleScopeTag
 description: Обновление свойств объекта roleScopeTag.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88ad2c1b120d0a09c28e5be3648391a1dcbc4379
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 681c80c4c94aa7e8a47ed67a56368473a3e6a68a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064947"
 ---
 # <a name="update-rolescopetag"></a>Update roleScopeTag
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
 |displayName|String|Отображение или дружеское имя тега Область ролей.|
 |description|Строка|Описание тега Область ролей.|
 |isBuiltIn|Boolean|Описание тега Область ролей. Это свойство доступно только для чтения.|

@@ -2,15 +2,15 @@
 title: Обзор подключения к данным Microsoft Graph
 description: Подключение к данным Microsoft Graph предоставляет данные Microsoft 365 в Microsoft Azure, что обеспечивает доступ к наилучшим средствам разработки и размещения для работы с этими данными.
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 52f272f5e1de21eb1277610aebdf4510b8ce40f77a042bdf8a3e15085966834b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b2a982dd3bd8c68a5437e3c0bb6596b80c26653c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196511"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139207"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Обзор подключения к данным Microsoft Graph
 

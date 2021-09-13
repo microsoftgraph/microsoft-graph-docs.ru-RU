@@ -1,16 +1,16 @@
 ---
 title: Состояния, переходы и ограничения для назначений и представлений в Microsoft Graph
 description: В этой статье описываются изменения в состояниях назначения и отправки во время процесса и какие API образования в Microsoft Graph вовлечены.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 98a283b02ddacdf05d4ffd20e8dd6cf436d256d3
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 83589986cd0c490f4947744896665244a8de3633
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58668065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117671"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Состояния, переходы и ограничения для назначений и представлений в Microsoft Graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "58668065"
 | Published | Состояние фоновой обработки при распределении назначения каждому назначенного учащемуся. | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Scheduled | Состояние, когда учитель заплановал публикацию задания в будущем. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | Назначенное | После завершения публикации назначение перемещается в назначенное состояние и доступно для учащихся. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Pending | Состояние фоновой обработки при копировании нового назначения из существующего. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| Рассмотрение | Состояние фоновой обработки при копировании нового назначения из существующего. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
 
 На следующей схеме показаны переходы состояния, которые могут происходить для назначений.
 
@@ -36,7 +36,7 @@ ms.locfileid: "58668065"
 Вызывающий должен использовать операцию назначения GET t o проверить текущее состояние назначения и убедиться, что процесс публикации удался.
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>Назначения состояния переходов на основе разрешенных действий
-| Текущее состояние назначения | Действие | Новое состояние |
+| Текущее состояние назначения | Action | Новое состояние |
 |:--|:--|:--|
 | Draft | Учитель задает дату. | Scheduled |
 | Draft | Публикация | Published |
@@ -48,8 +48,8 @@ ms.locfileid: "58668065"
 | Scheduled | Отмена расписания | Draft |
 | Scheduled | Перенос | Scheduled |
 | Назначенное | Отбрасывается | |
-| Pending | Завершено копирование | Draft |
-| Pending | Отбрасывается | |   
+| Рассмотрение | Завершено копирование | Draft |
+| Рассмотрение | Отбрасывается | |   
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -83,7 +83,7 @@ ms.locfileid: "58668065"
 ![Схема переходов состояния отправки](images/states-transitions/diagram-submissions.PNG)
 
 ### <a name="submissions-states-transitions-based-on-allowed-actions"></a>Переходы состояния представлений на основе разрешенных действий
-| Текущее состояние отправки | Действие | Новое состояние |
+| Текущее состояние отправки | Action | Новое состояние |
 |:--|:--|:--|
 | Выполняется | Включаем | Submitted |
 | Выполняется | Возврат | Возвращено |

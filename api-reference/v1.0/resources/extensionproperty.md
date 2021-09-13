@@ -1,16 +1,16 @@
 ---
 title: тип ресурса extensionProperty
 description: Представляет расширение каталога
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9960c8840dfc7284f91d88d4818b57202cdbf2a90a3c4c16445869666d5121c7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23312e64c3812f5235a52380ef8acec65d206699
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123512"
 ---
 # <a name="extensionproperty-resource-type"></a>тип ресурса extensionProperty
 
@@ -39,7 +39,7 @@ ms.locfileid: "54141709"
 |:-------------|:------------|:------------|
 |appDisplayName|String| Отображение имени объекта приложения, на котором определено это свойство расширения. Только для чтения. |
 |dataType|String| Указывает тип данных значения, который может удерживать свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` - максимум 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` - 32-битное значение.</li><li>`LargeInteger` - 64-битное значение.</li><li>`String` - максимум 256 символов</li></ul>|
-|isSyncedFromOnPremises|Логический| Указывает, было ли это свойство расширения sycned из каталога onpremises с помощью Azure AD Подключение. Только для чтения. |
+|isSyncedFromOnPremises|Boolean| Указывает, было ли это свойство расширения sycned из каталога onpremises с помощью Azure AD Подключение. Только для чтения. |
 |name|String| Имя свойства расширения. Значение null не допускается. |
 |targetObjects|Коллекция String| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 

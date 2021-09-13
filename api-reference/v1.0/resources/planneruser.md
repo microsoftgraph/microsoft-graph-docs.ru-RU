@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса plannerUser
 description: Ресурс **plannerUser предоставляет** пользователю доступ к ресурсам Planner. Он не содержит никаких полезных свойств.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: a430efc0ca86043a566fce58481edcb2e212f17961b00647aa32781dbcb3dc5b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5a2220ced0459118a6be00ee03a2b9282b6635cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129805"
 ---
 # <a name="planneruser-resource-type"></a>Тип ресурса plannerUser
 
@@ -31,7 +31,7 @@ ms.locfileid: "54154898"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор planenrUser|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |планы|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает [планировщикTasks,](plannertask.md) назначенного пользователю.|

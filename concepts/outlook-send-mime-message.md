@@ -2,14 +2,14 @@
 title: Отправка сообщений электронной почты с содержимым MIME
 description: Почтовые клиенты могут отправлять сообщения через Exchange в формате MIME.
 author: isvargasmsft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 2cd092bcea50b800838a64dd0f8b89eb01dbe4d5d33b9ceb26e2fee910a050fc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d32aee40b5336c2a84fcc83d42692bede89c6bc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071744"
 ---
 # <a name="send-messages-with-mime-content"></a>Отправка сообщений с содержимым MIME
 

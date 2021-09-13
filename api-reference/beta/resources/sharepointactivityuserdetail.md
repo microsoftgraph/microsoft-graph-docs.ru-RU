@@ -1,16 +1,16 @@
 ---
 title: тип ресурса sharePointActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 7976ccd15156f1b4f271729d1b7058dc81b60974ce5e9f57a26ee30ce7ce7880
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9b52be3048ce3625ebf98f7167c99f93c4fb4cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068433"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>тип ресурса sharePointActivityUserDetail
 
@@ -22,7 +22,7 @@ ms.locfileid: "54252797"
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Логический           |
+| isDeleted                 | Boolean           |
 | deletedDate               | Дата              |
 | lastActivityDate          | Дата              |
 | viewedOrEditedFileCount   | Int64             |
@@ -30,7 +30,7 @@ ms.locfileid: "54252797"
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
 | visitedPageCount          | Int64             |
-| assignedProducts          | Коллекция String |
+| assignedProducts          | Коллекция строк |
 | reportPeriod              | String            |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,15 +2,15 @@
 title: Тип ресурса windowsInformationProtectionDataRecoveryCertificate
 description: Сертификат восстановления данных Windows Information Protection
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8291d2e3e30d048f94a8dde1e3a27ed91f3054a2fd2f0979cc3249df74c8b4a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 99ef42128bd984a77b5a0e72ba1f86485b221e14
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062560"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Тип ресурса windowsInformationProtectionDataRecoveryCertificate
 
@@ -24,11 +24,11 @@ ms.locfileid: "54149788"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |subjectName|String|Имя субъекта для сертификата восстановления данных|
-|description|String|Описание сертификата восстановления данных|
+|description|Строка|Описание сертификата восстановления данных|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата восстановления данных|
 |certificate|Двоичный|Сертификат восстановления данных|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

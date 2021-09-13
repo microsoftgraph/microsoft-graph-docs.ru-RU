@@ -2,15 +2,15 @@
 title: тип ресурса deviceComplianceScriptRuleError
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8cb3deb625b3fc98a22622ae19f86acbca974455
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 019d4f1543b3dff8231b32feba1bb57ed8a5b174
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064345"
 ---
 # <a name="devicecompliancescriptruleerror-resource-type"></a>тип ресурса deviceComplianceScriptRuleError
 
@@ -33,7 +33,7 @@ ms.locfileid: "58789335"
 |message|String|Сообщение об ошибке. Унаследованный от [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)|
 |settingName|String|Настройка имени правила с ошибкой.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

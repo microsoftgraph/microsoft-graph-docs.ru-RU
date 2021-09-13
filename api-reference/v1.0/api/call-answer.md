@@ -2,15 +2,15 @@
 title: 'вызов: ответ'
 description: Ответ на входящий вызов.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0cf83ea366e8d2c03c8f3d28f4262bfc9616d65
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: bee067a5856b91eb2a387b14c7a9c3f973b943b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026695"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -27,7 +27,7 @@ ms.locfileid: "53430272"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Приложение     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
+| Для приложений     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
 
 > **Примечание:** Для вызова, использующего средства массовой информации с использованием приложений, также требуется разрешение Calls.AccessMedia.All. Для расшифровки входящих уведомлений о вызове необходимо иметь по крайней мере одно из следующих `source` разрешений: Calls.AccessMedia.All, Calls.Initiate. Все, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. Это `source` информация вызываемой в уведомлении о входящих вызовах. Без по крайней мере одного из этих разрешений будет `source` оставаться зашифрованным.
 
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/answer
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Позволяет ботам предоставлять определенный URI вызова для параллельного вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .    |
-|acceptedModalities|Коллекция объектов string                         |Список модальных способов для приемки. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Требуется для ответа на вызов. |
+|acceptedModalities|Коллекция String                         |Список модальных способов для приемки. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Требуется для ответа на вызов. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. (Обязательно)                                                                                                            |
 | participantCapacity | Целое | Число участников, которые приложение может обрабатывать для вызова, для Teams [сценарий](/MicrosoftTeams/teams-recording-policy) записи на основе политики.                                                     |
 

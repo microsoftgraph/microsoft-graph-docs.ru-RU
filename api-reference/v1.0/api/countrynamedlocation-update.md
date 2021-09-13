@@ -1,16 +1,16 @@
 ---
 title: Обновление countryNamedlocation
 description: Обновление свойств объекта countryNamedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 16c8fdbc1acd156dc2b4886f2edc68cc676fa1bf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 1ab1a5f770864c1eb3e1003cb153c7bb01af682d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063519"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление countryNamedLocation
 
@@ -47,11 +47,13 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
+Необходимо указать **@odata.type** как `#microsoft.graph.countryNamedLocation` .
+
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |countriesAndRegions|Коллекция String|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
-|displayName|String|Понятное человеку имя расположения.|
-|includeUnknownCountriesAndRegions|Boolean|Значение в том случае, если IP-адреса, которые не относятся к стране или региону, должны быть включены `true` в именоваемом расположении.|
+|displayName|Строка|Понятное человеку имя расположения.|
+|includeUnknownCountriesAndRegions|Логический|Значение в том случае, если IP-адреса, которые не относятся к стране или региону, должны быть включены `true` в именоваемом расположении.|
 
 ## <a name="response"></a>Отклик
 

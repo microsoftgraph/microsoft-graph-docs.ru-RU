@@ -2,15 +2,15 @@
 title: тип ресурса vpnServer
 description: Определение VPN Server.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d81928758fc87b37954c2be38ee2c60e64a0d840
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e27966875bbf81ecfc8d2392acece779a2fcd329
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023509"
 ---
 # <a name="vpnserver-resource-type"></a>тип ресурса vpnServer
 
@@ -25,7 +25,7 @@ ms.locfileid: "58783955"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|Описание.|
+|description|String|Описание.|
 |address|String|Адрес (IP-адрес, FQDN или URL-адрес)|
 |isDefaultServer|Логический|Сервер по умолчанию.|
 

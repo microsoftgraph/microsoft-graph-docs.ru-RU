@@ -2,15 +2,15 @@
 title: тип runState enum
 description: Указывает тип выполнения сценария управления устройствами.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e89cce46a1738664f83c64b2ec96ad6cc3f20a6b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4f25057c0fcd19b3a9ad121471876f7b6f1e5d15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259471"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020177"
 ---
 # <a name="runstate-enum-type"></a>тип runState enum
 
@@ -24,9 +24,9 @@ ms.locfileid: "58259471"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестный результат.|
-|success|1 |Скрипт успешно работает.|
+|success|1|Скрипт успешно работает.|
 |сбой|2|Сценарий не удалось выполнить.|
-|scriptError|3 |Скрипт обнаружения попадает в ошибку.|
+|scriptError|3|Скрипт обнаружения попадает в ошибку.|
 |ожидание|4 |Скрипт находится в ожидании выполнения.|
 |notApplicable|5 |Скрипт для этого устройства не применяется.|
 

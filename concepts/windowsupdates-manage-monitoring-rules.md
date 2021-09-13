@@ -2,15 +2,15 @@
 title: Управление правилами мониторинга развертывания с помощью службы Windows обновления для бизнеса
 description: Для развертывания, инициированного службой развертывания, можно использовать правила мониторинга, настраивая оповещения и автоматизированные действия на основе сигналов развертывания.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 60a76a1292322233e23920f9be47030a883f9717468ce06e1043f5751dffbc89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e4f0538a9e7a5d47b070514685a11860a86ac35
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117531"
 ---
 # <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>Управление правилами мониторинга развертывания обновления функций с Windows службы развертывания для бизнеса
 

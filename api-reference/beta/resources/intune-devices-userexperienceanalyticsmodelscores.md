@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsModelScores
 description: Модель аналитики пользовательских интерфейсов объединяет различные оценки аналитики конечных точек.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e07dec294843f11135d3cfe34a55f81d02b18cff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a29726d69cca6330de93af4793862a76e6fc9ce2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064065"
 ---
 # <a name="userexperienceanalyticsmodelscores-resource-type"></a>тип ресурса userExperienceAnalyticsModelScores
 
@@ -34,7 +34,7 @@ ms.locfileid: "58783680"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор модели аналитики пользовательского интерфейса засмеяет объект.|
+|id|String|Уникальный идентификатор модели аналитики пользовательского интерфейса засмеяет объект.|
 |model|String|Уникальный идентификатор оценки моделей аналитики пользовательских интерфейсов: модель устройства.|
 |manufacturer|String|Уникальный идентификатор оценки моделей аналитики пользовательских интерфейсов: производитель устройств.|
 |modelDeviceCount|Int64|Количество устройств модели аналитики пользовательских интерфейсов. Допустимые значения -9.2237203685478E+18 до 9.22337203685478E+18|
@@ -43,7 +43,7 @@ ms.locfileid: "58783680"
 |appReliabilityScore|Двойное с плавающей точкой|Оценка надежности приложения для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние состояния модели аналитики пользовательских интерфейсов. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

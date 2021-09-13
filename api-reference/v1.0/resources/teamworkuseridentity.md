@@ -2,15 +2,15 @@
 title: тип ресурса teamworkUserIdentity
 description: Представляет пользователя в Microsoft Teams.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 107ff351d17cf999fa0d2dce085587f5b2ea16edd6bf5315ded551fe78554629
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d6989f7b3c5689fefe8e9516e25fd6ff3777fe16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146386"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128160"
 ---
 # <a name="teamworkuseridentity-resource-type"></a>тип ресурса teamworkUserIdentity
 
@@ -24,11 +24,11 @@ ms.locfileid: "54146386"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Унаследованный от [удостоверения](../resources/identity.md). Отображаемое имя пользователя. Необязательно.|
+|displayName|Строка|Унаследованный от [удостоверения](../resources/identity.md). Отображаемое имя пользователя. Необязательное.|
 |id|String|Унаследованный от [удостоверения](../resources/identity.md). ID пользователя. |
 |userIdentityType|teamworkUserIdentityType| Тип пользователя. Возможные значения: `aadUser` `onPremiseAadUser` , , , , , `anonymousGuest` , `federatedUser` и `personalMicrosoftAccountUser` `skypeUser` `phoneUser` `unknownFutureValue` .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

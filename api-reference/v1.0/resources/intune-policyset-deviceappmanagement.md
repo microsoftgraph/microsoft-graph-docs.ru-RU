@@ -2,15 +2,15 @@
 title: Тип ресурса deviceAppManagement
 description: Сущность Singleton, которая выступает в качестве контейнера для всех функций управления устройствами и приложениями.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b51aef0f56483bf3dcb575385e06b91fbab09efa1e47285adbe5b2a155a41a26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2795683c82f0f7a17aa66237977084834352c30f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062490"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
@@ -31,7 +31,7 @@ ms.locfileid: "54205244"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

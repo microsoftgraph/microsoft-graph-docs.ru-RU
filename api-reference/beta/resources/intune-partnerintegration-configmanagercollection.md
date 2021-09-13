@@ -2,15 +2,15 @@
 title: тип ресурса configManagerCollection
 description: ConfigManager определяет коллекцию устройств или пользователей.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 961f43556622fd92cb990777155c8ab3debcb7df
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d7c4300dc1cedbc316e6e8cfa5c0efebd1e383f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033464"
 ---
 # <a name="configmanagercollection-resource-type"></a>тип ресурса configManagerCollection
 
@@ -35,11 +35,11 @@ ConfigManager определяет коллекцию устройств или 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ для коллекции ConfigManager.|
-|displayName|Строка|The DisplayName.|
-|collectionIdentifier|Строка|Идентификатор коллекции в SCCM.|
-|hierarchyName|Строка|Имя иерархии.|
-|hierarchyIdentifier|Строка|Идентификатор иерархии.|
+|id|String|Ключ для коллекции ConfigManager.|
+|displayName|String|The DisplayName.|
+|collectionIdentifier|String|Идентификатор коллекции в SCCM.|
+|hierarchyName|String|Имя иерархии.|
+|hierarchyIdentifier|String|Идентификатор иерархии.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения.|
 

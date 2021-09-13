@@ -2,15 +2,15 @@
 title: отключение типа ресурсаAndDeleteUserApplyAction
 description: Отключите и удалите любого гостевого пользователя B2B, которому отказано в просмотре доступа.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6acc3aa33c4f35f2094adc2ab294f40e23ecef55e3a475a076b2511201be1b59
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37085f849dc3bc84dfda1926ba9d140e91d3d894
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089741"
 ---
 # <a name="disableanddeleteuserapplyaction-resource-type"></a>отключение типа ресурсаAndDeleteUserApplyAction
 

@@ -2,15 +2,15 @@
 title: Get androidManagedStoreWebApp
 description: Чтение свойств и связей объекта AndroidManagedStoreWebApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7444fcc5e74736943717a5c673e2ee4e335174f7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6eff6a3cac72bcf62638674a7765de7cc0b608ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062280"
 ---
 # <a name="get-androidmanagedstorewebapp"></a>Get androidManagedStoreWebApp
 

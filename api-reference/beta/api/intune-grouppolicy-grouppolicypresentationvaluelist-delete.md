@@ -2,15 +2,15 @@
 title: Удаление groupPolicyPresentationValueList
 description: Удаляет группуPolicyPresentationValueList.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e947a6302310162deb481b79f9042dea6479d35
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4cdd01e7d4b7782eaafe9b335c6da064261bae3b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058757"
 ---
 # <a name="delete-grouppolicypresentationvaluelist"></a>Удаление groupPolicyPresentationValueList
 

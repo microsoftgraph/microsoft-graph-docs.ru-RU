@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActiveUserDetail'
 description: Получение сведений об активных пользователях Microsoft 365.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 756da2271f364d2b6f23d9c0a4e8486de2d66455bfe224f5fda304ebe54b1ce0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4553207f0c31b35feb8653a25d6ec1afa2e656a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130288"
 ---
 # <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot: getOffice365ActiveUserDetail
 

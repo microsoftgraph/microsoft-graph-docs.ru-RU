@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение файла или папки
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Получение метаданных ресурса DriveItem в объекте Drive по пути в файловой системе или идентификатору.
 doc_type: apiPageType
-ms.openlocfilehash: 7fb47cd473114d5ecd376c092584b7166d6801eb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: ec020e311de0c5df80b361ceb1fc3d4de36ca6ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050602"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 

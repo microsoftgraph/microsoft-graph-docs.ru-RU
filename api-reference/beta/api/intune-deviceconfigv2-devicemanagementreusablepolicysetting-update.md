@@ -2,15 +2,15 @@
 title: Обновление deviceManagementReusablePolicySetting
 description: Обновление свойств объекта deviceManagementReusablePolicySetting.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 644de5b14db4119ad4215f21f1c40fefe3b6cf91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 68a2a397eb5e0984ca6dde87321550c6e74f663f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034668"
 ---
 # <a name="update-devicemanagementreusablepolicysetting"></a>Обновление deviceManagementReusablePolicySetting
 
@@ -27,9 +27,9 @@ ms.locfileid: "58792360"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|система, генерируемая многоярусным и настраиваемым id.|
-|displayName|Строка|имя отображения для повторного параметров, предоставленное пользователем.|
-|description|Строка|повторное описание параметра, предоставленное пользователем.|
-|settingDefinitionId|Строка|параметр определения, связанный с этим многопользоваемым параметром.|
+|id|String|система, генерируемая многоярусным и настраиваемым id.|
+|displayName|String|имя отображения для повторного параметров, предоставленное пользователем.|
+|description|String|повторное описание параметра, предоставленное пользователем.|
+|settingDefinitionId|String|параметр определения, связанный с этим многопользоваемым параметром.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|экземпляр конфигурации повторного параметров|
 |createdDateTime|DateTimeOffset|дата и время создания параметров повторного параметров. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|дата и время последнего изменения параметра повторного параметров. Это свойство доступно только для чтения.|
@@ -65,7 +65,7 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код ответа и обновленный `200 OK` [объект deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

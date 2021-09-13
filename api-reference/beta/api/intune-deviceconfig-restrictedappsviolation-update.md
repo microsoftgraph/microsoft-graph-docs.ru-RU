@@ -2,15 +2,15 @@
 title: Обновление restrictedAppsViolation
 description: Обновление свойств объекта restrictedAppsViolation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffb547d7b5fd64916212b2f2332887cedb1b5665
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a225315b3c30685af715932bbb591a0f5f650fd5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065717"
 ---
 # <a name="update-restrictedappsviolation"></a>Обновление restrictedAppsViolation
 
@@ -58,8 +58,8 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |userName|String|Имя пользователя|
 |managedDeviceId|String|Уникальный идентификатор управляемого устройства должен быть Guid|
 |deviceName|String|Имя устройства|
-|deviceConfigurationId|String|Уникальный идентификатор конфигурации устройства должен быть Guid|
-|DeviceConfigurationName|String|Имя профиля конфигурации устройства|
+|deviceConfigurationId|Строка|Уникальный идентификатор конфигурации устройства должен быть Guid|
+|DeviceConfigurationName|Строка|Имя профиля конфигурации устройства|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `androidAOSP`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[коллекция managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|

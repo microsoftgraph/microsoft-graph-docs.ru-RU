@@ -1,16 +1,16 @@
 ---
 title: тип ресурса securityVendorInformation
 description: " subProvider=AppLocker)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: a0b0d5ece58a1db1ce929b4bc72de7e8f9c1a44fdd8ccab15aee0d2c47143dcc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed666cb4948d658dc877567bbbf31a0e6d551778
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142511"
 ---
 # <a name="securityvendorinformation-resource-type"></a>тип ресурса securityVendorInformation
 

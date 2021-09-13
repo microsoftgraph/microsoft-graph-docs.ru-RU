@@ -1,16 +1,16 @@
 ---
 title: Список доступныхProviderTypes
 description: Извлечение всех поддерживаемых поставщиков удостоверений в каталоге.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ac4f877b3b1391254bb096fd38f94533c7444309
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: ccab05cea622dc6fe987ae0617a007e2d6837a66
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58668021"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105323"
 ---
 # <a name="list-availableprovidertypes"></a>Список доступныхProviderTypes
 Пространство имен: microsoft.graph

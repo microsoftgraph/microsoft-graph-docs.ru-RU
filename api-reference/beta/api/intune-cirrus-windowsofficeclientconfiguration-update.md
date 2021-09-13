@@ -1,16 +1,16 @@
 ---
 title: Обновление windowsOfficeClientConfiguration
 description: Исправление определенной полезной нагрузки политики, не влияемой на безопасность.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3d3a4e7a0b6c892222cf7004dc2eed3b38a7c9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a21572fc1eaf10b1e2baf22e895fba57e6a143f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021311"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Обновление windowsOfficeClientConfiguration
 
@@ -28,8 +28,8 @@ ms.locfileid: "58794980"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,18 +53,18 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|String|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userPreferencePayload|Stream|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |policyPayload|Stream|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|description|Строка|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|displayName|Строка|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|String|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|String|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |priority|Int32|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |checkinStatuses|[коллекция officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)|Еще не задокументирована наследуемая [из officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

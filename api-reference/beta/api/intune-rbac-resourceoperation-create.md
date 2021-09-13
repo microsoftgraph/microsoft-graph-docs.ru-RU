@@ -2,15 +2,15 @@
 title: Создание объекта resourceOperation
 description: Создание объекта resourceOperation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58d9938270c4ad1b175d67c579c443f56865441b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 564f134699e9168758fa885951410ef1fab8aadb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065003"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
@@ -29,7 +29,7 @@ ms.locfileid: "58802826"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,12 +53,12 @@ POST /deviceManagement/resourceOperations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resource|Строка|Категория ресурсов, к которой относится эта операция. Это свойство доступно только для чтения.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Логический|Определяет, проверяется ли разрешение для областей, определенных для назначения ролей. Это свойство доступно только для чтения.|
+|enabledForScopeValidation|Boolean|Определяет, проверяется ли разрешение для областей, определенных для назначения ролей. Это свойство доступно только для чтения.|
 
 
 

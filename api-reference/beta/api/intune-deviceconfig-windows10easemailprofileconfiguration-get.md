@@ -2,15 +2,15 @@
 title: Get windows10EasEmailProfileConfiguration
 description: Чтение свойств и связей объекта windows10EasEmailProfileConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c518161eac995c03cab2f4eedc3548c29d29bed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: df3347105430708bcb3c779db60905fd260b857e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020905"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Get windows10EasEmailProfileConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: Тип ресурса targetedManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e7c43d0804baca365cfe85dad093486888b812c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b4382cbe71fbed7b49175b660ad19563aaadece0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58777480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063869"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Тип ресурса targetedManagedAppProtection
 
@@ -65,15 +65,15 @@ ms.locfileid: "58777480"
 |printBlocked|Boolean|Указывает, разрешена ли печать из управляемых приложений. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |fingerprintBlocked|Boolean|Указывает, можно ли использовать сканер отпечатков пальцев вместо ПИН-кода, если для параметра PinRequired установлено значение True. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |disableAppPinIfDevicePinIsSet|Boolean|Указывает, обязательно ли использовать ПИН-код приложения, если установлен ПИН-код устройства. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|maximumRequiredOsVersion|Строка|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|maximumWarningOsVersion|Строка|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|maximumWipeOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|maximumRequiredOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|maximumWarningOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|maximumWipeOsVersion|Строка|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredOsVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWipeOsVersion|Строка|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|Строка|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|String|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, когда устройство либо коренится, либо jailbroken, если устройствоComplianceRequired настроено на верность. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, основываясь на максимальном количестве попыток повторного повторного действия пин-кода. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Длительность|Времяпрепровия в минутах для пин-кода приложения, а не биометрического пароля, наследуемого из [управляемогоAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -91,7 +91,7 @@ ms.locfileid: "58777480"
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Предполагаемые уровни управления приложениями для этой политики. Возможные значения: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |appGroupType|[targetedManagedAppGroupType](../resources/intune-mam-targetedmanagedappgrouptype.md)|Выбор общедоступных приложений: группового или индивидуального. Возможные значения: `selectedPublicApps`, `allCoreMicrosoftApps`, `allMicrosoftApps`, `allApps`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Список групп включения и исключения, к которым применяется политика.|

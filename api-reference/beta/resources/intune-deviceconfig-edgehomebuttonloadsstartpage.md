@@ -2,15 +2,15 @@
 title: тип ресурса edgeHomeButtonLoadsStartPage
 description: Показать кнопку "Домой"; Нажатие кнопки "Домой" загружает страницу "Начните" - это также значение по умолчанию.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c791203755ba5b49871ef32db157ea797bc6187f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2036a4970e214ca88647946c2652ef98e32ea411
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064317"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>тип ресурса edgeHomeButtonLoadsStartPage
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801846"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,15 +2,15 @@
 title: Get advancedThreatProtectionOnboardingStateSummary
 description: Чтение свойств и связей объекта advancedThreatProtectionOnboardingStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc22401b972ea1db946ceaf9ba81bfbbc86f03bc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2309512633c690dedbf0c1713446c040539379d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066011"
 ---
 # <a name="get-advancedthreatprotectiononboardingstatesummary"></a>Get advancedThreatProtectionOnboardingStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "58782856"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

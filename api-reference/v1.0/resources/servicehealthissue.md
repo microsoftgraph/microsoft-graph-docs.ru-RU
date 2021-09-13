@@ -2,15 +2,15 @@
 title: тип ресурса serviceHealthIssue
 description: Представляет проблему со здоровьем службы в службе.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ca4b27993d88224555b9417af54f65cc5a70643d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8b794284a4dafe16061faa5e84af9e72755d1f6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019113"
 ---
 # <a name="servicehealthissue-resource-type"></a>тип ресурса serviceHealthIssue
 
@@ -18,7 +18,7 @@ ms.locfileid: "58255768"
 
 Представляет проблему со здоровьем службы в службе.
 
-Проблема со здоровьем службы может быть инцидентом службы или консультацией по обслуживанию. Например:
+Проблема со здоровьем службы может быть инцидентом службы или консультацией по обслуживанию. Например.
 
 * Инцидент службы: "Exchange службы почтовых ящиков не существует".
 * Рекомендации по обслуживанию: "Пользователи могут испытывать задержки в приеме сообщений электронной почты".
@@ -38,7 +38,7 @@ ms.locfileid: "58255768"
 |details|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о проблеме со здоровьем службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|Время окончания проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |функция|Строка|Имя функции проблемы службы.|
-|featureGroup|Строка|Имя группы функций проблемы службы.|
+|featureGroup|String|Имя группы функций проблемы службы.|
 |id|String|Id проблемы службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |impactDescription|Строка|Описание влияния проблемы службы.|
 |isResolved|Логический|Указывает, устранена ли проблема.|

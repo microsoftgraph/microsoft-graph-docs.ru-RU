@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementTroubleshootingErrorDetails
 description: Объект, содержащий подробные сведения об ошибке и ее исправлении.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c67de7db6a74c327e765e13a6440c7ec6bf3a1ce
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 4ae128466c0817dedb8e0ae435246a958967bba7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58248160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063659"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>тип ресурса deviceManagementTroubleshootingErrorDetails
 
@@ -29,7 +29,7 @@ ms.locfileid: "58248160"
 |исправление|Строка|Подробное описание устранения этой проблемы.|
 |resources|[коллекция deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Ссылки на полезную документацию об этом сбое.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

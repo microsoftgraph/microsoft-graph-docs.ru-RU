@@ -2,15 +2,15 @@
 title: тип enum оператора
 description: Оператор правил.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d0a4cd55d78796e6fa096b266bb43d1be9a0c85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4102344026ef51e1bedb0f68acc95575e80b09e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064242"
 ---
 # <a name="operator-enum-type"></a>тип enum оператора
 
@@ -36,7 +36,7 @@ ms.locfileid: "58796252"
 |notBetween|8 |Оператор NotBetween.|
 |greaterEquals|9 |Оператор GreaterEquals.|
 |lessEquals|10 |Оператор LessEquals.|
-|dayTimeBetween|11 |Оператор DayTimeBetween.|
+|dayTimeBetween|11|Оператор DayTimeBetween.|
 |beginsWith|12 |BeginsWith operator.|
 |notBeginsWith|13|Оператор NotBeginsWith.|
 |endsWith|14 |Оператор EndsWith.|

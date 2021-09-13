@@ -2,15 +2,15 @@
 title: Тип ресурса windowsInformationProtectionDataRecoveryCertificate
 description: Сертификат восстановления данных Windows Information Protection
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c8bb59eb35440137fd00b9aaf75dd02c2f9943e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f3134eeab7c4d8f31313800bcf549e49148441c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790635"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063834"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Тип ресурса windowsInformationProtectionDataRecoveryCertificate
 
@@ -30,7 +30,7 @@ ms.locfileid: "58790635"
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата восстановления данных|
 |certificate|Двоичный|Сертификат восстановления данных|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

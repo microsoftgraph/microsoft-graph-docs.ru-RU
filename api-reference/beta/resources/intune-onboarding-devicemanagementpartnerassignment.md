@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementPartnerAssignment
 description: Ориентация группы пользователей для партнера по управлению устройствами
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c17cc18163c502ef2c45aa99cb86da7c332115b7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 37563732edc3a2840a293408cba391caebac7845
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063785"
 ---
 # <a name="devicemanagementpartnerassignment-resource-type"></a>тип ресурса deviceManagementPartnerAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "58801783"
 |:---|:---|:---|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группы пользователей, нацеленные на регистрацию устройств через партнера.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

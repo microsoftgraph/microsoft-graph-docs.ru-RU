@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementAbstractComplexSettingInstance
 description: Экземпляр параметра, представляющий сложное значение для абстрактного параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64e869f4cbb369a5446d255f4659fb4a3a620130
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c3e58707ff5b34e46bb1999a83fee527cd44786
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017417"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>тип ресурса deviceManagementAbstractComplexSettingInstance
 
@@ -38,8 +38,8 @@ ms.locfileid: "58797523"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID экземпляра параметра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|definitionId|String|ID определения параметра для этого экземпляра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|String|Представление JSON значения, унаследованной от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|definitionId|Строка|ID определения параметра для этого экземпляра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|valueJson|Строка|Представление JSON значения, унаследованной от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |implementationId|Строка|ID определения для выбранной реализации этого сложного параметра|
 
 ## <a name="relationships"></a>Связи

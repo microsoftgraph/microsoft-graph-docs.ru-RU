@@ -2,15 +2,15 @@
 title: Тип ресурса roleScopeTag
 description: Тег области ролей
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d121f48aec77684a8f770f7c5a65e23456459b91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d504565cbc5f37a70fc813386024b1c32c4654e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790117"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063687"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса roleScopeTag
 
@@ -26,10 +26,10 @@ ms.locfileid: "58790117"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[List roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[Коллекция roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Список свойств и связей объектов [roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
-|[Get roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Чтение свойств и связей объекта [roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
-|[Создание roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Создайте новый [объект roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
+|[Get roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md);|Чтение свойств и связей объекта [roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
+|[Создание roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md);|Создайте новый [объект roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
 |[Удаление roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|Нет|Удаляет [рольScopeTag](../resources/intune-rbac-rolescopetag.md).|
-|[Update roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Обновление свойств объекта [roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
+|[Update roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md);|Обновление свойств объекта [roleScopeTag.](../resources/intune-rbac-rolescopetag.md)|
 |[Действие assign](../api/intune-rbac-rolescopetag-assign.md)|[коллекция roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Пока не задокументировано.|
 |[действие getRoleScopeTagsById](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[Коллекция roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Пока не задокументировано.|
 |[функция hasCustomRoleScopeTag](../api/intune-rbac-rolescopetag-hascustomrolescopetag.md)|Boolean|Н/Д|
@@ -37,12 +37,12 @@ ms.locfileid: "58790117"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
-|displayName|Строка|Отображение или дружеское имя тега Область ролей.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
+|displayName|String|Отображение или дружеское имя тега Область ролей.|
 |description|Строка|Описание тега Область ролей.|
 |isBuiltIn|Boolean|Описание тега Область ролей. Это свойство доступно только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|[коллекция roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Список назначений для этого тега области ролей.|

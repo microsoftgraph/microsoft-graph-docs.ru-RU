@@ -2,15 +2,15 @@
 title: Обновление symantecCodeSigningCertificate
 description: Обновление свойств объекта symantecCodeSigningCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31cecc26dcb6e90fa4e9b5958dfada5e7b31ad8f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 550f1769803869b55f39af8424e6b150e79405b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802938"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028515"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
@@ -27,9 +27,9 @@ ms.locfileid: "58802938"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,20 +53,20 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |содержимое|В двоичном формате|Сертификат Windows Symantec Code-Signing в формате необработанных данных.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|Состояние Cert Provisioned или not Provisioned. Возможные значения: `notProvisioned`, `provisioned`.|
 |password|Строка|Пароль, необходимый для файла .pfx.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение Subject для сертификата.|
-|issuerName|Строка|Имя эмитента для сертификата.|
-|эмитент|Строка|Значение Issuer для сертификата.|
+|issuerName|String|Имя эмитента для сертификата.|
+|эмитент|String|Значение Issuer для сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
 |uploadDateTime|DateTimeOffset|Тип cert CodeSigning как Symantec Cert.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

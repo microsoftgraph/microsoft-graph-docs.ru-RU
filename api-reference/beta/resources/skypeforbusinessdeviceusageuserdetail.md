@@ -1,16 +1,16 @@
 ---
 title: тип ресурса skypeForBusinessDeviceUsageUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: d3a37dd171cbd6d3df357bcd978fecad2b3b4c04f31e2238668ab6842c9370cf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e243a885f5687042f54f7dd77afe1642f398c99c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063568"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>тип ресурса skypeForBusinessDeviceUsageUserDetail
 
@@ -23,11 +23,11 @@ ms.locfileid: "54241305"
 | reportRefreshDate | Дата    |
 | userPrincipalName | String  |
 | lastActivityDate  | Дата    |
-| usedWindows       | Логический |
+| usedWindows       | Boolean |
 | usedWindowsPhone  | Логический |
-| usedAndroidPhone  | Логический |
+| usedAndroidPhone  | Boolean |
 | usediPhone        | Логический |
-| usediPad          | Логический |
+| usediPad          | Boolean |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Представление JSON

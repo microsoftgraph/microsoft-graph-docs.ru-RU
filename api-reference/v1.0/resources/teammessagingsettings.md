@@ -2,15 +2,15 @@
 title: тип ресурса teamMessagingSettings
 description: Параметры для настройки обмена сообщениями и упоминаний в команде.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9818e161e21f78a83023ead66d7b790eadd01bb2737942a383665338d0ec73c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08af21e988862a4d6b459953e6d1a1fd5554da36
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049489"
 ---
 # <a name="teammessagingsettings-resource-type"></a>тип ресурса teamMessagingSettings
 
@@ -24,12 +24,12 @@ ms.locfileid: "54129962"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowUserEditMessages|Логический|Если установлено, что это так, пользователи могут изменять свои сообщения.|
-|allowUserDeleteMessages|Логическое|Если установлено, что это так, пользователи могут удалять свои сообщения.|
+|allowUserDeleteMessages|Boolean|Если установлено, что это так, пользователи могут удалять свои сообщения.|
 |allowOwnerDeleteMessages|Логический|Если установлено, что это правда, владельцы могут удалить любое сообщение.|
-|allowTeamMentions|Логическое|Если установлено, @team разрешены упоминания.|
-|allowChannelMentions|Логическое|Если установлено, @channel разрешены упоминания.|
+|allowTeamMentions|Boolean|Если установлено, @team разрешены упоминания.|
+|allowChannelMentions|Логический|Если установлено, @channel разрешены упоминания.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

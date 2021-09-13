@@ -2,15 +2,15 @@
 title: 'identityUserFlowAttributeAssignment: getOrder'
 description: Получите порядок сбора удостоверенийUserFlowAttributeAssignments в потоке пользователей.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 93308846ecf1549efd70ebe8fc4b2915626d7b81
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 4b81421b82985c28ff4292e965f0667bec7da343
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066284"
 ---
 # <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment: getOrder
 
@@ -50,7 +50,7 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения данной функции возвращается код ответа и `200 OK` [назначениеOrder](../resources/assignmentorder.md) в тексте ответа.
 

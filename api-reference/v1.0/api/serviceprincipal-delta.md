@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: delta'
 description: Создайте заново созданные, обновленные или удаленные принципы службы, не выполняя полное чтение всей коллекции ресурсов. Подробные сведения см. в материале Использование запроса Delta.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: dcbc05093737862c025b337d102696da718ccf99
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8ce62e31a609226a8e2a5e46b9c301590bd7ca8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110118"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: delta
 

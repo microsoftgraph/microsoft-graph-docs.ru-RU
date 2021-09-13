@@ -2,15 +2,15 @@
 title: тип ресурса windowsAppIdentifier
 description: Идентификатор для Windows приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6eb5275d6b2c690f75b8ea5e72bb0bd9edab59a8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dd25ae19b4e0f9c633c449ab4eb489582ded02fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795510"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063862"
 ---
 # <a name="windowsappidentifier-resource-type"></a>тип ресурса windowsAppIdentifier
 
@@ -30,7 +30,7 @@ ms.locfileid: "58795510"
 |:---|:---|:---|
 |windowsAppId|String|Идентификатор приложения, указанный в магазине приложений.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

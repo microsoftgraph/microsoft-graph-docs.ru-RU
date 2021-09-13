@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Предоставление доступа к файлу посредством ссылки
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Используя действие createLink, вы можете поделиться ресурсом DriveItem с помощью ссылки для совместного доступа.
 doc_type: apiPageType
-ms.openlocfilehash: 51470bd3f0ebc0044b0dbe06d718002a368d66eb
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 9e4a7ae41739c985ebf539ad4b913eb2a971c6fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239033"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105462"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки для доступа к ресурсу DriveItem
 
@@ -53,8 +53,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   Имя       |  Тип  |                                 Описание                                  |
 | :------------| :----- | :--------------------------------------------------------------------------- |
 | **type**     | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
-| **password** | string | Пароль ссылки для общего доступа, за которую установил создатель. Необязательный и только OneDrive персональный.
-| **expirationDateTime** | string | Строка в формате yyyy-MM-ddTHH:mm:ssZ dateTime указывает время окончания срока действия разрешения. |
+| **password** | string | Пароль ссылки общего доступа, за устанавливаемой создателем. Необязательный и OneDrive только личный.
+| **expirationDateTime** | string | Строка с форматом yyyy-MM-ddTHH:mm:ssZ dateTime указывает срок действия разрешения. |
 | **scope** | string | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
 
 

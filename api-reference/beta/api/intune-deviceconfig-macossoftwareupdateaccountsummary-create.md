@@ -2,15 +2,15 @@
 title: Создание macOSSoftwareUpdateAccountSummary
 description: Создайте новый объект macOSSoftwareUpdateAccountSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d797f7bf6e7dd706bf2f1605bfea769279ed8900
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9c5d0bdde48403f373e4670ba870c6daaba73783
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815836"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065731"
 ---
 # <a name="create-macossoftwareupdateaccountsummary"></a>Создание macOSSoftwareUpdateAccountSummary
 
@@ -54,7 +54,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя отчета|
+|displayName|Строка|Имя отчета|
 |deviceId|String|ID устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceName|String|Имя устройства.|

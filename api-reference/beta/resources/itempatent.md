@@ -1,16 +1,16 @@
 ---
 title: тип ресурса itemPatent
 description: тип ресурса itemPatent
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 424d3e047af36307be8d2589e2ab1dddcadf87785e4f58fa020fb9eae085a1b5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6e53816f9e239de0f1c928763d1e329cc8cb63f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063624"
 ---
 # <a name="itempatent-resource-type"></a>тип ресурса itemPatent
  
@@ -39,7 +39,7 @@ ms.locfileid: "54248329"
 |displayName|String|Название патента или подачи. |
 |id|Строка|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|isPending        |Логический     |Указывает, что патент находится в стадии ожидания.        |
+|isPending        |Boolean     |Указывает, что патент находится в стадии ожидания.        |
 |issuedDate       |Дата        |Дата предоставления патента.   |
 |issuingAuthority |String      |Орган, выдав патент.     |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которые в последний раз изменили объект. Унаследовано от [itemFacet](../resources/itemfacet.md).|
@@ -49,7 +49,7 @@ ms.locfileid: "54248329"
 |webUrl           |String      |URL-адрес, ссылающийся на патент или подачу. |
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

@@ -2,15 +2,15 @@
 title: Действие beginOnboarding
 description: Запрос на запуск бортового.  Должна быть соединая с соответствующими сведениями учетной записи TeamViewer
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6887c0e7f8c80cc9e89531d988badffebab433d7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e19594d1809c40bcd0e9efd352f5185d79f7e19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064870"
 ---
 # <a name="beginonboarding-action"></a>Действие beginOnboarding
 
@@ -29,7 +29,7 @@ ms.locfileid: "58794155"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

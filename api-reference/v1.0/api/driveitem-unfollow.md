@@ -1,24 +1,24 @@
 ---
 author: learafa
-description: Ото всех элементов, на которые следует пользователь.
-title: Unfollow drive item
-localization_priority: Normal
+description: Unfollow an item that the user is following.
+title: Элемент диска unfollow
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5e73fdee9d1b6c6bc9329ec5cd6597a3f2d504c5
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: b09bf65b223cf7a0fb4066160433722737ee78d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026668"
 ---
-# <a name="unfollow-drive-item"></a>Unfollow drive item
+# <a name="unfollow-drive-item"></a>Элемент диска unfollow
 
 Пространство имен: microsoft.graph
 
 Unfollow a [driveItem](../resources/driveitem.md).
 
->**Примечание.** Чтобы следовать за элементом, см. [статью "Следовать элементу".](driveitem-follow.md)
+>**Примечание:** Чтобы следовать за элементом, см. [в статье Follow Item](driveitem-follow.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,12 +47,12 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении вызова API возвращается отклик `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении вызова API возвращается отклик `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-В этом примере отозначяется элемент, идентифицированный `{item-id}` по .
+В этом примере unfollows элемент, идентифицированный `{item-id}` .
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса skypeForBusinessActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: a37cee0adbfaf64be649589a6493edc8eebf086b7f45b73bc51dc1cb9ae132d8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48067fa9b6a4b64262cc5f7c374d5513451de74b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241326"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068426"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>тип ресурса skypeForBusinessActivityUserDetail
 
@@ -50,10 +50,10 @@ ms.locfileid: "54241326"
 | участиеConferenceDialInOut3rdPartyCount | Int64             |
 | reportRefreshDate                        | Дата              |
 | userPrincipalName                        | String            |
-| isDeleted                                | Логический           |
+| isDeleted                                | Boolean           |
 | deletedDate                              | Дата              |
 | lastActivityDate                         | Дата              |
-| assignedProducts                         | Коллекция String |
+| assignedProducts                         | Коллекция строк |
 | reportPeriod                             | String            |
 
 ## <a name="json-representation"></a>Представление JSON

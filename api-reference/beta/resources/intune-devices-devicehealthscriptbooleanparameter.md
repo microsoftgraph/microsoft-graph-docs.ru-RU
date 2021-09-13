@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptBooleanParameter
 description: Свойства параметра скрипта Booolean.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3754aaf009ecc611b7db0d58b2e7731795978376
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82a6d8e4c54c72deb170c4d7dfc0c4943792b69f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017382"
 ---
 # <a name="devicehealthscriptbooleanparameter-resource-type"></a>тип ресурса deviceHealthScriptBooleanParameter
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784459"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя парама, унаследованной от [устройстваHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|Строка|Описание парама, унаследованной от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|String|Описание парама, унаследованной от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Boolean|Требуется ли перенаследование парама с [устройстваHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |applyDefaultValueWhenNotAssigned|Логический|Применение defaultValue при не назначении унаследованных от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |defaultValue|Логический|Значение параметра boolean по умолчанию|

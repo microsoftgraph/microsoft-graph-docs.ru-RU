@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSettingDefinition
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ccb4e2a81e9992964d62a35d4873347207a84f1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1aabfa2616922dba54891b423e9ca3002b3cac82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030426"
 ---
 # <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>тип ресурса deviceManagementConfigurationSettingDefinition
 
@@ -39,7 +39,7 @@ ms.locfileid: "58784816"
 |keywords|Коллекция String|Маркеры для поиска параметров на|
 |infoUrls|Коллекция String|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
 |возникновение|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, требуется ли параметр или нет.|
-|baseUri|Строка|Базовый путь CSP|
+|baseUri|String|Базовый путь CSP|
 |offsetUri|String|Смещение пути CSP из базы|
 |rootDefinitionId|String|Определение корневого параметра, если это параметр ребенка.|
 |categoryId|String|Указывает группу области, в которой параметр настроен в указанном поставщике служб конфигурации (CSP)|
@@ -47,8 +47,8 @@ ms.locfileid: "58784816"
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Настройка представления типа управления в UX. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Настройка области видимости для UX. Возможные значения: `none`, `settingsCatalog`, `template`.|
 |referredSettingInformationList|[коллекция deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Список переданных сведений о параметрах.|
-|id|Строка|Идентификатор элемента|
-|description|Строка|Описание элемента|
+|id|String|Идентификатор элемента|
+|description|String|Описание элемента|
 |helpText|String|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|String|Отображение имени элемента|

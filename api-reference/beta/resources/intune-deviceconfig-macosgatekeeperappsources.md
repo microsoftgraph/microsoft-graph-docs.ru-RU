@@ -2,15 +2,15 @@
 title: тип enum macOSGatekeeperAppSources
 description: Параметры источника приложения для macOS Gatekeeper.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cdac450a214f0c7ab3faec38bed049460b293ca7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b9e91263c37c60a8127f7c54fcba174aec202404
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064282"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>тип enum macOSGatekeeperAppSources
 

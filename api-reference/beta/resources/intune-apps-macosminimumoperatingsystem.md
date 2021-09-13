@@ -2,15 +2,15 @@
 title: тип ресурса macOSMinimumOperatingSystem
 description: Минимальная операционная система, необходимая для приложения MacOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 718af8c04e604cb136537b6f0e1763c9d3a4ae53
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46d6e02674af9683682e26d1a0af1839e3e5ff1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064513"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>тип ресурса macOSMinimumOperatingSystem
 
@@ -27,17 +27,17 @@ ms.locfileid: "58786399"
 |:---|:---|:---|
 |v10_7|Логический|Mac OS 10.7 или более поздней.|
 |v10_8|Логический|Mac OS 10.8 или более поздней.|
-|v10_9|Логический|Mac OS 10.9 или более поздней.|
+|v10_9|Boolean|Mac OS 10.9 или более поздней.|
 |v10_10|Логический|Mac OS 10.10 или более поздней.|
 |v10_11|Логический|Mac OS 10.11 или более поздней.|
 |v10_12|Логический|Mac OS 10.12 или более поздней.|
 |v10_13|Логический|Mac OS 10.13 или более поздней.|
-|v10_14|Boolean|Mac OS 10.14 или более поздней.|
-|v10_15|Логический|Mac OS 10.15 или более поздней.|
+|v10_14|Логический|Mac OS 10.14 или более поздней.|
+|v10_15|Boolean|Mac OS 10.15 или более поздней.|
 |v11_0|Boolean|Mac OS 11.0 или более поздней.|
 |v12_0|Логический|Mac OS 12.0 или более поздней.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
