@@ -2,15 +2,15 @@
 title: Обновление объекта chartAxis
 description: Обновление свойств объекта chartaxis.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0b6d30befd31d36ddaad25270126ef98f9d8402f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 14634107570a10d9f91e4c3f627cc45966d4a069
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048836"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105526"
 ---
 # <a name="update-chartaxis"></a>Обновление объекта chartAxis
 
@@ -97,7 +97,7 @@ Content-length: 64
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

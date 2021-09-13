@@ -1,16 +1,16 @@
 ---
 title: 'swapShiftsChangeRequest: снижение'
 description: Отклонение запроса на смену замены.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86ffd631b4fe85b383421ee2a3df7447420ee05f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d269c44c0776253357265015dd25c40d80f4e07b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037056"
 ---
 # <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest: снижение
 

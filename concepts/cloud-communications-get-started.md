@@ -2,20 +2,20 @@
 title: Начало работы с облачными коммуникациями
 description: Узнайте, как использовать боты для удовлетворения потребностей клиентов и облегчения совместной работы.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: a977c2a81d40679eb3029bdfaf7560dd744fc9439e7a650e63d470198883ab0d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fbee887a3a45130b47af0632f0c232a646848022
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136168"
 ---
 # <a name="get-started-with-cloud-communications"></a>Начало работы с облачными коммуникациями
 
 API облачных коммуникаций в Microsoft Graph новое измерение взаимодействия приложений и служб с пользователями с помощью различных функций, связанных с коммуникацией, таких как вызовы и собрания в Интернете. В этой статье описывается, как можно использовать боты для удовлетворения потребностей клиентов и облегчения совместной работы.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Перед началом работы полезно ознакомиться со следующими словами:
 

@@ -2,15 +2,15 @@
 title: тип ресурса commsNotification
 description: Базовый тип уведомлений о связи, который публикуется на серверах связи для уведомления об изменениях.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ff7d46a6d081889897940a93d5d111ffa2956a21fc61411060cad08ed2f7d5ab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 790704c73e07c473112eb5df99db7261d73966f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062777"
 ---
 # <a name="commsnotification-resource-type"></a>тип ресурса commsNotification
 
@@ -21,12 +21,12 @@ ms.locfileid: "54252020"
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    | Описание                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
-| resourceUrl       | String  | URI измененного ресурса.                      |
+| changeType     | Строка  | Возможные значения: `created`, `updated`, `deleted`.      |
+| resourceUrl       | Строка  | URI измененного ресурса.                      |
 
 > **Примечание:** `resourceData` доступны в качестве дополнительных данных. Это объект или коллекция сущностей в зависимости от количества изменений, упакованных в уведомлении.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -2,15 +2,15 @@
 title: selfServiceSignUpAuthenticationFlowConfiguration resource type
 description: Представляет конфигурации, связанные с самостоятельной регистрацией.
 author: linkhp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 96800f7b3ef2509cf52a302409b03cfc2d3fd62dee864da99ecf6ecf8e3bde7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 735803c579f79e9f27f81c53fd9e3fd5ce94e84a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067019"
 ---
 # <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>selfServiceSignUpAuthenticationFlowConfiguration resource type
 

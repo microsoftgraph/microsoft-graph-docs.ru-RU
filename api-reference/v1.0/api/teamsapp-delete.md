@@ -1,16 +1,16 @@
 ---
 title: Удаление teamsApp
 description: 'Удаление Teams приложения из каталога приложений организации (каталог приложений клиента). '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9952dabb38b1f9849b5df3b3fff3fafdf029c971
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cc1f678f6816ba6fb7ea3e91d244bf00d8a5edbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109863"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -56,7 +56,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

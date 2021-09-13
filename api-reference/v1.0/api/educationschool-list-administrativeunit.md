@@ -2,22 +2,22 @@
 title: Список administrativeUnit an educationSchool
 description: Получите список административных объектов, связанных с объектом educationSchool.
 author: mmast
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a8ca5a51c6fb71c3cab0d6f0a7be239eb2101999
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 67f97017cc52e5cf66bc425929e7d057df7ef75c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022798"
 ---
 # <a name="list-administrativeunit-an-educationschool"></a>Список administrativeUnit an educationSchool
 
 Пространство имен: microsoft.graph
 
 Получите список **административных объектов,** связанных с [объектом educationSchool.](../resources/educationschool.md)
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -25,7 +25,7 @@ ms.locfileid: "52474866"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов locationConstraintItem
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c0eef13938295608988906a437540c88d802af5ecda41abc77b166ac44727a11
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f9f4e550c1378cd40acf99bd93c2a24f847a9ca0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134677"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 

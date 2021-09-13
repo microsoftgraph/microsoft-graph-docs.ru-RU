@@ -1,14 +1,14 @@
 ---
 title: Поставщик Electron
 description: Поставщик MSAL для Электронный использует msal-node для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
-ms.openlocfilehash: 13a81a098fb69223e8ca5e85fcbce83dd4e83c9272fb781281d8b8b0379495b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 183afb0393915c8411b802a4e87614f5a2ecde5c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127901"
 ---
 # <a name="electron-provider"></a>Поставщик Electron
 
@@ -62,7 +62,7 @@ ElectronAuthenticator.initialize(config);
 | scopes       | Разделенные запятой строки для областей, на которые пользователь должен дать согласие при входе. Рекомендуется.                                                                                                                                                                                     |
 | authority    | Строка Authority — по умолчанию является общим органом. Для однотенантного приложения используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательный. |                                                                                                                                                                                          |
 | mainWindow  | Экземпляр основного BrowserWindow, требуемого проверки подлинности.|
-| cachePlugin | Плагин кэша, который вы хотите использовать для сохраняемого хранения маркеров. См. [расширения проверки подлинности Майкрософт для узла.](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions) Необязательно. | 
+| cachePlugin | Плагин кэша, который вы хотите использовать для сохраняемого хранения маркеров. См. [расширения проверки подлинности Майкрософт для узла.](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions) Необязательное. | 
 
 >**Примечание:** В настоящее время поставщик не поддерживает инкрементную поддержку. В качестве наилучшей практики обязательно соглашайтесь на все области, которые требуются компонентам.
     

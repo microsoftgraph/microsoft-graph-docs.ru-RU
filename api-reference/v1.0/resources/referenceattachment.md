@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса referenceAttachment
 description: Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 author: abheek-das
 doc_type: resourcePageType
-ms.openlocfilehash: 94390a4620b5c083647eea7ed46f25ab8b4ad9b57dd960c95c642f5e0d2c4237
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b82f7e166aa1ed681fb0a62a74c12df052f93be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163693"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044288"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -24,8 +24,8 @@ ms.locfileid: "54163693"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
+|[получение](../api/attachment-get.md); | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
+|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -37,7 +37,7 @@ ms.locfileid: "54163693"
 |name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
 |size|Int32|Объем метаданных, которые хранятся в сообщении с вложением (в байтах). Это значение не отображает фактический размер файла.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

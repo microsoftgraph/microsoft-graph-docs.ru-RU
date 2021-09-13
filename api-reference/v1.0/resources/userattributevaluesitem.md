@@ -2,15 +2,15 @@
 title: тип ресурса userAttributeValuesItem
 description: Представляет значения атрибута потока пользователей в потоке пользователей.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 88e19bfa02876e08df4c3040ff6bcfefae41840278719b83ccc7b57be651f5a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 690b9f53762359ab559fb98534525cad15e5e282
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083966"
 ---
 # <a name="userattributevaluesitem-resource-type"></a>тип ресурса userAttributeValuesItem
 
@@ -26,7 +26,7 @@ ms.locfileid: "54205215"
 |name|String|Отображает имя свойства, отображаемого пользователю в потоке пользователей.|
 |value|String|Значение, заданной при выборе этого элемента.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

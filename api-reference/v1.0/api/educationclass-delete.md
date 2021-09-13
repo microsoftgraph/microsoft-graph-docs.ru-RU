@@ -2,15 +2,15 @@
 title: Удаление educationClass
 description: Удаление класса. Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4f3d509364168227766465ead899340b00f24f83
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 4081f19efcfd10bc135ec88c4902e6065a2e48cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105344"
 ---
 # <a name="delete-educationclass"></a>Удаление educationClass
 
@@ -28,7 +28,7 @@ ms.locfileid: "52232027"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

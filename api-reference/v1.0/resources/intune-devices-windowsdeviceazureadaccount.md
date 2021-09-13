@@ -2,15 +2,15 @@
 title: Тип ресурса windowsDeviceAzureADAccount
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 975a789f5dfff1a59515ac771d41bacd6a78183f7d2fb8939149455deeb495b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb27c1f1dcb0a30fd48fb838131625ef811b36d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032365"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Тип ресурса windowsDeviceAzureADAccount
 

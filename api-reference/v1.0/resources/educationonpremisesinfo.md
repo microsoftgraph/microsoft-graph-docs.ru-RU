@@ -2,15 +2,15 @@
 title: тип ресурса educationOnPremisesInfo
 description: Дополнительные сведения, используемые для связываия локальной учетной записи пользователя Active Directory с объектом пользователя Azure AD.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c461c63309588fc01fef94fb53a3b9c6e0f2722858f1baaa93a663804e344b7c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ace4f32edf7a708debea828bfc510aec630a7100
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078891"
 ---
 # <a name="educationonpremisesinfo-resource-type"></a>тип ресурса educationOnPremisesInfo
 
@@ -22,9 +22,9 @@ ms.locfileid: "54182534"
 
 | Свойство    | Тип   | Описание                                                |
 | :---------- | :----- | :--------------------------------------------------------- |
-| immutableId | String | Уникальный идентификатор объекта пользователя в Active Directory. |
+| immutableId | Строка | Уникальный идентификатор объекта пользователя в Active Directory. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

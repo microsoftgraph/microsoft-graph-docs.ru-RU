@@ -1,16 +1,16 @@
 ---
 title: тип ресурса teleconferenceDeviceMediaQuality
 description: Данные о качестве устройства видеоконференции.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 96e10a50dfa93f4a226585092c57d9ab8dbe5cb3b5e8a2593198ca32402852c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 45ca9d4bdc34077ea19bdcbac866495a198ea5ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146372"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128132"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>тип ресурса teleconferenceDeviceMediaQuality
 
@@ -41,7 +41,7 @@ ms.locfileid: "54146372"
 |mediaDuration|Длительность|Общая продолжительность модальности. Если мультимедиа включено и отключено несколько раз, mediaDuration будет суммированием всех продолжительности.|
 |networkLinkSpeedInBytes|Int64|Скорость сетевых ссылок в bytes|
 |outboundPackets|Int64|Общее число исходящие пакеты.|
-|remoteIPAddress|String|Удаленный IP-адрес сеанса мультимедиа.|
+|remoteIPAddress|Строка|Удаленный IP-адрес сеанса мультимедиа.|
 |remotePort|Int32|Удаленный порт мультимедиа.|
 
 ### <a name="derived-types"></a>Производные типы

@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppRule
 description: Базовый сложный тип для хранения данных правил обнаружения или требования для приложения LOB Win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 554fc1eabbe8f91221a90a12afc99a22885ca9aa8c3a09c5db96cdff37b5f3a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c001b6baf5be316fd38c74c532692ec9f3997d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134866"
 ---
 # <a name="win32lobapprule-resource-type"></a>тип ресурса win32LobAppRule
 
@@ -25,7 +25,7 @@ ms.locfileid: "54231736"
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Возможные значения: `detection`, `requirement`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

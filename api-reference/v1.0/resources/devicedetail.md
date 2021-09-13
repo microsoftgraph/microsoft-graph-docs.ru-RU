@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceDetail
 description: Указывает сведения об устройстве, связанные с устройством, используемым для регистрации. Это включает сведения о браузере устройства и операционной системе, а также об управляемом устройстве Azure AD.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 56522ef5ea6a3404298c776ebdbeebe97c42b2818edfd953af66b050bf793dbd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 91710dc5079bc879b8b23a8a3f5b621f4ecc1968
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089825"
 ---
 # <a name="devicedetail-resource-type"></a>Тип ресурса deviceDetail
 
@@ -22,9 +22,9 @@ ms.locfileid: "54126664"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Обозреватель|String|Указывает сведения браузера, используемые для регистрации.|
+|Обозреватель|Строка|Указывает сведения браузера, используемые для регистрации.|
 |deviceId|String|Ссылается на UniqueID устройства, используемого для регистрации.|
-|displayName|String|Ссылается на имя устройства, используемого для регистрации.|
+|displayName|Строка|Ссылается на имя устройства, используемого для регистрации.|
 |isCompliant|Boolean|Указывает, соответствует ли устройство.|
 |isManaged|Boolean|Указывает, управляется ли устройство.|
 |operatingSystem|String|Указывает имя операционной системы и версию, используемую для регистрации.|

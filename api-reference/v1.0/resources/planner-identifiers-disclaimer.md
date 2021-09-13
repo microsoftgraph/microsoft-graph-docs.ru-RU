@@ -1,16 +1,16 @@
 ---
 title: Идентификаторы в планировщике
 description: 'Идентификаторы объектов в Planner — это строковые значения, созданные службой. Значения 28 символов длиной и чувствительны к делу. При его пропуске служба будет делать простую проверку идентификатора в формате, если проверка формата не удалась, звонители получат ответ на ошибку Bad Request (400) с указанием этой проблемы. Получение этой ошибки указывает на ошибку в вызываемом приложении, например:'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 97381d57e8f23b6f032cdf0ebfc02a5cdf32ca2219a1d7c8127e472666250c58
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4433fc63e884f9c98174a07d7d043f69fce4d8c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202163"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044427"
 ---
 # <a name="identifiers-in-planner"></a>Идентификаторы в планировщике
 

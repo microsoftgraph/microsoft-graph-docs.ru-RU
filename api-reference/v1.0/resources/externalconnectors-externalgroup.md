@@ -2,15 +2,15 @@
 title: тип ресурсов externalGroup
 description: Представляет группу, не Azure Active Directory.
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 2f944032cbe58972ecab1075ca01053817f9de63
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: ad3718fec3a255348fc808ac7a87df96bbe8f4ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123477"
 ---
 # <a name="externalgroup-resource-type"></a>тип ресурсов externalGroup
 
@@ -36,16 +36,16 @@ ms.locfileid: "58697551"
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
 | id          | String | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. |
-| displayName | String | Дружеское имя внешней группы. Необязательный параметр.                                                                       |
-| description | String | Описание внешней группы. Необязательный параметр.        
+| displayName | String | Дружеское имя внешней группы. Необязательное.                                                                       |
+| description | Строка | Описание внешней группы. Необязательное.        
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип                                                                  | Описание                                               |
 |:-------------|:----------------------------------------------------------------------|:----------------------------------------------------------|
 | members      | [коллекция microsoft.graph.externalConnectors.identity](../resources/externalconnectors-identity.md) | Член, добавленный в **externalGroup.** Вы можете добавить Azure Active Directory, Azure Active Directory групп или **externalGroup** в качестве участников. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

@@ -2,15 +2,15 @@
 title: Архивация команды
 description: 'Архивация указанной команды. '
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 19274699297334a205ae1bf397ce3c4acb4a806b
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 95c98fe613f5004383008b88ad2b7f497bc52e21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036888"
 ---
 # <a name="archive-team"></a>Архивация команды
 

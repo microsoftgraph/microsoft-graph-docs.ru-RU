@@ -1,16 +1,16 @@
 ---
 title: тип ресурса teleconferenceDeviceQuality
 description: Представляет данные о качестве сеанса сеанса видеоконференции устройства.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 655ebbbc65f62ec3ace0640ed012b2d89bc0e6adb8242218ae223f57ab36d34f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6e7b29330634b099974300c660b45923b31b9b66
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128090"
 ---
 # <a name="teleconferencedevicequality-resource-type"></a>тип ресурса teleconferenceDeviceQuality
 
@@ -23,11 +23,11 @@ ms.locfileid: "54218396"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |callChainId|Guid|Уникальный идентификатор для всех звонков участника конференции или уникальный идентификатор для двух вызовов участников в вызове P2P. Необходимо скопировать из `Microsoft.Graph.Call.CallChainId`.|
-|cloudServiceDeploymentEnvironment|String|Гео-регион, в котором развернута служба, например `ProdNoam` .|
-|cloudServiceDeploymentId|String|Уникальный идентификатор развертывания, присвоенный Azure.|
-|cloudServiceInstanceName|String|Имя экземпляра развернутой облачной службы Azure, например `FrontEnd_IN_3` .|
+|cloudServiceDeploymentEnvironment|Строка|Гео-регион, в котором развернута служба, например `ProdNoam` .|
+|cloudServiceDeploymentId|Строка|Уникальный идентификатор развертывания, присвоенный Azure.|
+|cloudServiceInstanceName|Строка|Имя экземпляра развернутой облачной службы Azure, например `FrontEnd_IN_3` .|
 |cloudServiceName|String|Имя развернутой облачной службы Azure, например `contoso.cloudapp.net` .|
-|deviceDescription|String|Любое дополнительное описание, например `VTC Bldg 30/21` .|
+|deviceDescription|Строка|Любое дополнительное описание, например `VTC Bldg 30/21` .|
 |deviceName|String|Имя агента мультимедиа пользователя, например `Cisco SX80` .|
 |mediaLegId|Guid|Уникальный идентификатор для определенной области мультимедиа участника конференции.  Один участник может иметь несколько идентификаторов ног мультимедиа, если происходит перенацеление. Партнер CVI назначает это значение.|
 |mediaQualityList|[коллекция teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)|Список качеств мультимедиа в сеансе мультимедиа (вызов), таких как качество звука, качество видео и/или качество обмена экранами.|

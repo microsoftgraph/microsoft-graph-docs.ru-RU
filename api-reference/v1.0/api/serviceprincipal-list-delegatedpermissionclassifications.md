@@ -1,16 +1,16 @@
 ---
 title: Список делегированной Коллекции servicePrincipal
 description: Извлечение списка классификаций, данных делегированию разрешений, выставленных директором службы API.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: fdf42339adea9441ff0378fe26cce2063062eb82
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b03ae745a4ae27f4f565f6478bcd68a698b3761e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054450"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072689"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Список делегированной Коллекции servicePrincipal
 
@@ -26,7 +26,7 @@ ms.locfileid: "52054450"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Для приложений | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/delegatedPermissionC
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

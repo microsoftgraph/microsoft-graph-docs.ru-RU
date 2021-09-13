@@ -2,15 +2,15 @@
 title: Удаление linkedResource
 description: Удаляет объект linkedResource.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0dd863891d9071a45a3984609b6f71a02cec5e78
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 81225230fd78eac56d60ec4b96e778c17a0bdea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019799"
 ---
 # <a name="delete-linkedresource"></a>Удаление linkedResource
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "49873166"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос

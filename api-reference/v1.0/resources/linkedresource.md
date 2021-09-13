@@ -2,15 +2,15 @@
 title: тип ресурса linkedResource
 description: Представляет источник todoTask
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8164e0436cdedee66c59fbc83b7f4fa7d594a4623c2a62bcab6d19cca4c52d28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfc5e05403c93f07f48c010b8d7233543021f52c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036153"
 ---
 # <a name="linkedresource-resource-type"></a>тип ресурса linkedResource
 
@@ -38,7 +38,7 @@ ms.locfileid: "54237630"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicationName|String|Поле, указывающее имя приложения источника, отправляющее **linkedResource.**|
-|displayName|String|Поле, указывающее название **linkedResource**.|
+|displayName|Строка|Поле, указывающее название **linkedResource**.|
 |externalId|String|Id объекта, связанного с этой задачей в стороной или партнерской системе.|
 |id|String|Созданный сервером ID для **linkedResource**. Наследуется от [сущности](../resources/entity.md).|
 |webUrl|String|Глубокая ссылка на **linkedResource**.|

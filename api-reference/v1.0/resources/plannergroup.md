@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов plannerGroup
 description: Ресурс **plannerGroup** предоставляет доступ к ресурсам Planner для группы. Он не содержит никаких полезных свойств.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: be82fb6988c88f40bc975af28240e9a99f6f9d5c13ec7069af93c3f34b92e04c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1140d22b4b2f1bb5f863c19a741d08171c5f00f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019260"
 ---
 # <a name="plannergroup-resource-type"></a>Тип ресурсов plannerGroup
 

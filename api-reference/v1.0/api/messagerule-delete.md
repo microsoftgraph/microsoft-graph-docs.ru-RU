@@ -2,15 +2,15 @@
 title: Удаление messageRule
 description: Удаление указанного объекта messageRule.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d7351a2c8942cd69d1b6369c95193d5ba4359cc4
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 219550b1231333f1f464ea6f2492a94d0f6a77ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073018"
 ---
 # <a name="delete-messagerule"></a>Удаление messageRule
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса socialIdentityProvider
 description: Представляет поставщиков удостоверений социальных сетей в клиенте Azure Active Directory и клиенте Azure AD B2C.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: namkedia
-ms.openlocfilehash: cfc36459c1809311b3f40bf965d8c04f94ba9564
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 6f5e01a2be28f4ba0d6021232bd0f0a1e8cdefd6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667481"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136385"
 ---
 # <a name="socialidentityprovider-resource-type"></a>Тип ресурса socialIdentityProvider
 Пространство имен: microsoft.graph

@@ -2,15 +2,15 @@
 title: Тип ресурса shift
 description: Представляет блок запланированных работ в расписании.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: abec7f019750dbfe30335e1c8d6df3ecbb95c2d8e99a2c3720381307560ef22a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b00e93f4622b91e7abe92a68007e870b5ab432e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032225"
 ---
 # <a name="shift-resource-type"></a>Тип ресурса shift
 
@@ -35,7 +35,7 @@ ms.locfileid: "54169286"
 | userId            |`string`      |ID пользователя, назначенного на **смену.** Обязательный элемент. |
 | schedulingGroupId         |`string`      |ID группы планирования **является** частью смены. Обязательный элемент. |
 | sharedShift   |[shiftItem](shiftitem.md)  |Общая версия этого **изменения,** которая просматривается как сотрудниками, так и руководителями. Обязательный элемент. |
-| draftShift        |[shiftItem](shiftitem.md)        |Черновик версии этого **изменения,** который просматривается руководителями. Обязательный элемент. |
+| draftShift        |[shiftItem](shiftitem.md)        |Черновик версии этого **изменения,** который просматривается руководителями. Обязательный. |
 | createdDateTime       |`DateTimeOffset`        |Время создания этой смены.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | lastModifiedDateTime      |`DateTimeOffset`        |Время последнего обновления  этого переноса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | lastModifiedBy        | [identitySet](identityset.md)        |Удостоверение, которое в последний раз обновило этот **сдвиг.**|

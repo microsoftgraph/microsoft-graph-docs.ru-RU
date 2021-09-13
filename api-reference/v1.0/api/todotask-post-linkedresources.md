@@ -1,23 +1,23 @@
 ---
 title: Создание linkedResource
-description: Создание объекта linkedResource.
+description: Создание нового объекта linkedResource.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c99568099c99622373b91fff4a4b247e80f9288
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: a1e293f51579a0e72e069c57279479d6a73bff7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099281"
 ---
 # <a name="create-linkedresource"></a>Создание linkedResource
 Пространство имен: microsoft.graph
 
-Создайте [объект linkedResource,](../resources/linkedresource.md) чтобы [](../resources/todotask.md) связать указанную задачу с элементом в партнерской службе. Например, можно связать задачу с элементом электронной почты в Outlook, который создал задачу, и создать объект **linkedResource** для отслеживания ее связи.
+Создайте [объект linkedResource,](../resources/linkedresource.md) чтобы [](../resources/todotask.md) связать указанную задачу с элементом в партнерской заявке. Например, вы можете связать задачу с элементом электронной почты в Outlook, который подстегнул задачу, и можно создать объект **linkedResource** для отслеживания его связи.
 
-Вы также можете создать объект **linkedResource** при [создании задачи.](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)
+Вы также можете создать **объект linkedResource** при [создании задачи.](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +25,7 @@ ms.locfileid: "49874405"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,23 +46,23 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [linkedResource](../resources/linkedresource.md) в JSON.
+В теле запроса поставляем представление JSON объекта [linkedResource.](../resources/linkedresource.md)
 
 В следующей таблице показаны свойства, необходимые при создании [linkedResource.](../resources/linkedresource.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Созданный сервером ИД для связанного объекта Inherited from [entity](../resources/entity.md)|
-|webUrl|String|Глубокая связь со связанным объектом |
-|applicationName|String|Поле, указывающее имя приложения источника, который отправляет связанную сущность |
-|displayName|String|Поле, указывающее заголовок связанной сущности. |
-|externalId|String|ИД объекта, связанного с этой задачей в стороншей или партнерской системе |
+|id|Строка|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
+|webUrl|String|Deeplink to the linked entity |
+|applicationName|String|Поле, указывающее имя приложения источника, отправляемого связанной сущности |
+|displayName|String|Поле, указывающее заголовок связанного объекта. |
+|externalId|String|Id объекта, связанного с этой задачей в системе сторонних и партнеров |
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [linkedResource](../resources/linkedresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект linkedResource](../resources/linkedresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

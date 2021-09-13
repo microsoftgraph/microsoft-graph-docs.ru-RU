@@ -2,15 +2,15 @@
 title: тип ресурса todoTask
 description: Ресурс todoTask отслеживает рабочий элемент.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 043ba3e419db0ea3854a0f462b32553d288e25a11e1c27ea6dc9a7f7ad933095
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e620161e48f87a4e46afcfcfe6a0dce6bb069b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134320"
 ---
 # <a name="todotask-resource-type"></a>тип ресурса todoTask
 
@@ -50,12 +50,12 @@ ms.locfileid: "54196476"
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
 |status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|Краткое описание задачи.|
+|title|Строка|Краткое описание задачи.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|extensions|Коллекция объектов [extension](extension.md)| Коллекция открытых расширений, определенных для задачи. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для задачи. Допускается значение null.|
 |linkedResources|[коллекция linkedResource](../resources/linkedresource.md)|Коллекция ресурсов, связанных с задачей.|
 
 

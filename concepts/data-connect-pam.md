@@ -2,14 +2,14 @@
 title: Интеграция подключения к данным Microsoft Graph с Privileged Access Management
 description: Подключение к данным Microsoft Graph использует Privileged Access Management, чтобы позволить администраторам Microsoft 365 утверждать запросы на перемещение данных.
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: ecbe72e5444b5d1d9eab17ecdaea591b35aad5056b15fb51702fcce118b6c435
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4cb136349684504520696c09ea7e5deb21479168
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108760"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Интеграция подключения к данным Microsoft Graph с Privileged Access Management
 

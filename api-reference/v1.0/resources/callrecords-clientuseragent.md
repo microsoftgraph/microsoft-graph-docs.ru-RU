@@ -1,16 +1,16 @@
 ---
 title: тип ресурса clientUserAgent
 description: Тип clientUserAgent
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1150cf60b3b042358ff1a854944b14722e2a9717daaed064d9d63392e475aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba453f07d375fd95202446d66647d762ee4e5896
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104273"
 ---
 # <a name="clientuseragent-resource-type"></a>тип ресурса clientUserAgent
 
@@ -23,7 +23,7 @@ ms.locfileid: "54212215"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого этой конечной точкой.|
-|headerValue|String|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
+|headerValue|Строка|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
 |платформа|microsoft.graph.callRecords.clientPlatform|Определяет платформу, используемую этой конечной точкой. Возможные значения: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
 |productFamily|microsoft.graph.callRecords.productFamily|Определяет семейство программного обеспечения приложения, используемого этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 

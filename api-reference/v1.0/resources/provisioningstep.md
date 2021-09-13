@@ -1,16 +1,16 @@
 ---
 title: тип ресурса provisioningStep
 description: 'Описывает действия, предпринятые для выполнения действия. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 9841a70c0f3a00e3d4c163b9f814ae50c2a8221e6a33a1468d29832d5798c495
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea8b16437277c363a8e691c893d046301c3eead4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078715"
 ---
 # <a name="provisioningstep-resource-type"></a>тип ресурса provisioningStep
 
@@ -22,8 +22,8 @@ ms.locfileid: "54231518"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Сводка о том, что произошло во время шага.|
-|подробности|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло во время шага.|
+|description|Строка|Сводка о том, что произошло во время шага.|
+|details|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло во время шага.|
 |name|String|Имя шага.|
 |provisioningStepType|provisioningStepType| Тип шага. Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|provisioningResult| Состояние шага. Возможные значения: `success` `warning` , , ,  `failure` `skipped` `unknownFutureValue` .|

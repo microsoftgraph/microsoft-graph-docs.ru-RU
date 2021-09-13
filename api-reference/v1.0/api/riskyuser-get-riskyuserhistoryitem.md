@@ -2,15 +2,15 @@
 title: Получить историю
 description: Ознакомьтесь с свойствами и отношениями объекта riskyUserHistoryItem.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a549ff8eb6890b700e3e29f6a159d078135c0739ddd7bac8e056c92cf0cc48df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 89a0e8d6df84f7729fb89b1420223dbaf589ff60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053345"
 ---
 # <a name="get-history"></a>Получить историю
 Пространство имен: microsoft.graph
@@ -25,9 +25,9 @@ ms.locfileid: "54247076"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
+|Для приложений | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

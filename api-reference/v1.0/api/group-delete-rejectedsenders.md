@@ -2,15 +2,15 @@
 title: Удаление объекта rejectedSender
 description: Удалите пользователя или группу из списка отклоненных отправителей.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1297f53bce201c17e7ccea5d1b01a7a84066a388
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 9c38de52a9e23cb27f9c07ee6f58535de497031b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681076"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105316"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 

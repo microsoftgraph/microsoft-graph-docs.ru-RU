@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
 description: Создайте онлайн-собрание с пользовательским внешним ИД. Если внешний ID уже существует, этот API возвращает **объект onlineMeeting** с этим внешним ИД.
-author: jsandoval-msft
-localization_priority: Normal
+author: mkhribech
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: def026c90d5cd311d3c6f1ddb4a7b7276c13aea9
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 131a31793c5c212a250b8d88aea32e3576711bb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072927"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -59,10 +59,10 @@ POST /users/{userId}/onlineMeetings/createOrGet
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| endDateTime      | DateTime                                 | Время окончания собрания в UTC. |
+| endDateTime      | Даты и время                                 | Время окончания собрания в UTC. |
 | externalId       | String                                   | Внешний ID. Пользовательский ID. (Обязательно) |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | Участники, связанные с онлайн-собранием.  Это включает организатора и участников. |
-| startDateTime    | DateTime                                 | Время начала собрания в UTC. |
+| startDateTime    | Даты и время                                 | Время начала собрания в UTC. |
 | subject          | String                                   | Тема собрания в Интернете. |
 
 > **Примечания.**

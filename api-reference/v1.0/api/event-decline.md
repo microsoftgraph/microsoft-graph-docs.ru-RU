@@ -2,15 +2,15 @@
 title: 'event: decline'
 description: Отклонение приглашения на указанное событие в календаре пользователя.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ac8f69d790b19e7569b60fc5d16559aa0c36eb76
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: da32c7daa345bdbda4f6d664445a74491b0ffb2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448328"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100192"
 ---
 # <a name="event-decline"></a>event: decline
 

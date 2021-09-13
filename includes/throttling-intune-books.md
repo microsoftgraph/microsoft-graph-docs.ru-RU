@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: a0ca3891e7c4441acb82e1718cf9490bb46d60e25a20d140eb5c3a34550aa2c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 079a27544f6ae91e201ae67bc1300141b81a38f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035821"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,9 @@ ms.locfileid: "54196752"
 | POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment, managedEBook, managedEBookAssignment, managedEBookCategory, userInstallStateSummary.
+Указанные выше ограничения действуют для следующих ресурсов: 
+
+ 
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [deviceInstallState](/graph/api/resources/deviceinstallstate); <li> [eBookInstallSummary](/graph/api/resources/ebookinstallsummary); <li> [iosVppEBook](/graph/api/resources/iosvppebook); <li> [iosVppEBookAssignment](/graph/api/resources/iosvppebookassignment) <li> [managedEBook](/graph/api/resources/managedebook); <li> [managedEBookAssignment](/graph/api/resources/managedebookassignment); <li> [managedEBookCategory](/graph/api/resources/managedebookcategory); <li> [userInstallStateSummary](/graph/api/resources/userinstallstatesummary). </ul> |

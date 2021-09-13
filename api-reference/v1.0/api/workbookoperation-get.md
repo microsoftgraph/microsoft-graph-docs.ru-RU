@@ -1,16 +1,16 @@
 ---
 title: Get workbookOperation
 description: Извлечение состояния объекта workbookOperation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5947f24447a96d4f28275322b25b507c95256978
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 594e312a660e4bd73e884f6a6d64c86594889f45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104518"
 ---
 # <a name="get-workbookoperation"></a>Get workbookOperation
 
@@ -22,7 +22,7 @@ ms.locfileid: "50626140"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Files.ReadWrite. |
+| Делегированные (рабочая или учебная учетная запись)     | Files.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 

@@ -2,15 +2,15 @@
 title: Удаление educationUser
 description: Удаление пользователя.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c031ecbf2552a5da5fc77354f2d2ad539329caa9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1bba8bb52f5052d68144c9b7f963dbc2d02b5204
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074365"
 ---
 # <a name="delete-educationuser"></a>Удаление educationUser
 
@@ -38,7 +38,7 @@ DELETE /education/users/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 

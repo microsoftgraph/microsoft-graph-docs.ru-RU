@@ -1,16 +1,16 @@
 ---
 title: тип ресурса samlSingleSignOnSettings
 description: Представляет параметры единого входного знака SAML.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9714a3294374c886a29f33d554a7701951a5ca132cbe1dbf5c3ebe802cc714e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c0bbe655f1e9ac79b31b3eaa90ad57d72d08f642
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117706"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>тип ресурса samlSingleSignOnSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "54222702"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|relayState|String| Относительный URI, на который поставщик услуг перенаправляет после завершения единого потока входов. |
+|relayState|Строка| Относительный URI, на который поставщик услуг перенаправляет после завершения единого потока входов. |
 
 
 ## <a name="json-representation"></a>Представление JSON

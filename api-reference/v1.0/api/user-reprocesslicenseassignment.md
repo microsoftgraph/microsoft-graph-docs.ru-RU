@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: reprocessLicenseAssignment'
 description: Перепроцес всех групповых назначений лицензий для пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7cebc304feabb29b95f63f2929f7f8f79e544866
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0899c87704add306ec2910dc8c86aefc87d85896
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109670"
 ---
 # <a name="user-reprocesslicenseassignment"></a>пользователь: reprocessLicenseAssignment
 

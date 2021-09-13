@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса plannerAssignment
 description: Ресурс **plannerAssignment** представляет назначение задачи пользователю. Этот тип используется в планировщиках открытого типаAssignments.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 23677678d6f31be3ec24630947c6adc41a2e3bf8cbd35c606365d2adfd50b16d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea71ff05e4c649712e9e37566dc8cc71e3529c76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126377"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044365"
 ---
 # <a name="plannerassignment-resource-type"></a>Тип ресурса plannerAssignment
 
@@ -26,7 +26,7 @@ ms.locfileid: "54126377"
 |assignedDateTime|DateTimeOffset|Время, в которое была назначена задача. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |orderHint|String|Подсказка, используемая для заказа назначаемой задачи. Формат определяется как описанный [здесь](planner-order-hint-format.md).|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

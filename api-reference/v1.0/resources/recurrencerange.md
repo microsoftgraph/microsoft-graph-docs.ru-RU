@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса recurrenceRange
 description: 'Описывает диапазон дат, согласно которому повторяется событие. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3f3ca18320243eea6e6b1d31b32eb999cf457c99287bb5f3abc5bb2c3d78796a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db4f92ba06c7ba2d3bc6faed402b91161be5e300
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078625"
 ---
 # <a name="recurrencerange-resource-type"></a>Тип ресурса recurrenceRange
 
@@ -28,7 +28,7 @@ ms.locfileid: "54126370"
 |numberOfOccurrences|Int32|Количество повторений события. Обязательное свойство, которое должно быть положительным, если для **type** задано значение `numbered`.|
 |recurrenceTimeZone|String |Часовой пояс для свойств **startDate** и **endDate**. Необязательное. Если это свойство не задано, используется часовой пояс события.|
 |startDate|Date|Дата, с которой начинает применяться расписание повторения. В зависимости от того, каково расписание повторения события, первый экземпляр собрания может приходиться на эту или более позднюю дату. Должно быть задано то же значение, что и для свойства **start** повторяющегося [события](event.md). Обязательное.|
-|type|recurrenceRangeType|Диапазон повторения. Допустимые значения: `endDate`, `noEnd`, `numbered`. Обязательный элемент.|
+|type|recurrenceRangeType|Диапазон повторения. Допустимые значения: `endDate`, `noEnd`, `numbered`. Обязательный.|
 
 С помощью свойства **type** можно указывать различные типы для **recurrenceRange**. Обратите внимание на обязательные свойства для каждого типа, описанные в приведенной ниже таблице.
 

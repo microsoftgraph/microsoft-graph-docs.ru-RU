@@ -2,15 +2,15 @@
 author: daspek
 description: Ресурс contentType представляет тип контента в SharePoint.
 title: тип ресурса contentType
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0db41f1a3a3c8a413afcf12c7176109a1b08c9fe
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 3acff5d1fe0661cee9d94ff96d8ffc7d470d624b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049629"
 ---
 # <a name="contenttype-resource-type"></a>тип ресурса contentType
 
@@ -29,13 +29,13 @@ ms.locfileid: "58695100"
 |[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Ознакомьтесь с свойствами и отношениями объекта [contentType.](../resources/contenttype.md)|
 |[Обновление contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Обновление свойств объекта [contentType.](../resources/contenttype.md)|
 |[Удаление contentType](../api/contenttype-delete.md)|Нет|Удаляет объект [contentType.](../resources/contenttype.md)|
-|[isPublished](../api/contenttype-ispublished.md)|Логический| Проверка [публикации contentType.](../resources/contenttype.md)|
+|[isPublished](../api/contenttype-ispublished.md)|Boolean| Проверка [публикации contentType.](../resources/contenttype.md)|
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Публикация [контентаType](../resources/contenttype.md).|
 |[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
 |[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Добавьте копию [contentType](../resources/contenttype.md) с [сайта в](../resources/site.md) [список](../resources/list.md).|
 |[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Связывает [контентType](../resources/contenttype.md) со списком сайтов-концентраторов.|
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Скопируйте файл в расположение контента по умолчанию в [contentType.](../resources/contenttype.md)|
-|[Список столбцов](../api/contenttype-list-columns.md)|[коллекция columnDefinition](../resources/columnDefinition.md)|Получите коллекцию столбцов, представленных в [качестве ресурсов columnDefinition,](../resources/columnDefinition.md) в **contentType.**|
+|[Перечисление столбцов](../api/contenttype-list-columns.md)|[коллекция columnDefinition](../resources/columnDefinition.md)|Получите коллекцию столбцов, представленных в [качестве ресурсов columnDefinition,](../resources/columnDefinition.md) в **contentType.**|
 |[Создание столбца](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Добавление столбца к **типу контента** на сайте или в списке.|
 
 
@@ -51,13 +51,13 @@ ms.locfileid: "58695100"
 | **name**          | string               | Имя типа контента.|
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.|
 | **parentId**      | string               | Уникальный идентификатор типа контента.|
-| **readOnly**      | Логический              | Если , тип контента не может быть изменен, если это `true` значение не `false` установлено.|
-| **sealed**        | Логический              | Если тип контента не может быть изменен пользователями или с помощью `true` отжимаемой операции. Только администраторы семейств веб-сайтов могут блокировать или разблокировать типы контента.|
+| **readOnly**      | Boolean              | Если , тип контента не может быть изменен, если это `true` значение не `false` установлено.|
+| **sealed**        | Boolean              | Если тип контента не может быть изменен пользователями или с помощью `true` отжимаемой операции. Только администраторы семейств веб-сайтов могут блокировать или разблокировать типы контента.|
 | **isBuiltIn**            | Логический| Указывает, является ли тип контента встроенным типом контента. |
 | **documentSet**       | [documentSet][]      | [Метаданные набора](/sharepoint/governance/document-set-planning#about-document-sets) документов.|
 | **documentTemplate**  | [documentSetContent][] | Метаданные шаблона документов. Чтобы убедиться, что документы имеют согласованное содержимое на сайте и его подмышках, можно связать шаблон Word, Excel или PowerPoint с типом контента сайта.|
 | **associatedHubsUrls**       | Коллекция (строка) | Список канонических URL-адресов для сайтов-концентраторов, с которыми связан этот тип контента. Это будет содержать все сайты-концентраторы, на которых этот тип контента находится в очереди для принудительного или уже принудительного. Применение типа контента означает, что тип контента будет применяться к спискам на принудительном сайте.|
-| **propagateChanges**   | Логический              | Если какие-либо изменения, внесенные в тип контента, будут нажаты на унаследованные типы контента и списки, которые `true` реализуют тип контента.|
+| **propagateChanges**   | Boolean              | Если какие-либо изменения, внесенные в тип контента, будут нажаты на унаследованные типы контента и списки, которые `true` реализуют тип контента.|
 
 
 

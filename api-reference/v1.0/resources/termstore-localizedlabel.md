@@ -2,15 +2,15 @@
 title: тип локализованных ресурсовLabel
 description: Представляет метку для термина в магазине терминов.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: da9e3fb1a3cff98823771c1c99db052b92ba7e38
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: e0944e2db89b844aa6cbd0c6d2dd49ca2fe4afe3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533726"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084057"
 ---
 # <a name="localizedlabel-resource-type"></a>тип локализованных ресурсовLabel
 
@@ -24,10 +24,10 @@ ms.locfileid: "58533726"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isDefault|Boolean|Указывает, является ли метка меткой по умолчанию.|
-|LanguageTag|String|Тег языка для метки.|
+|LanguageTag|Строка|Тег языка для метки.|
 |name|String|Имя метки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

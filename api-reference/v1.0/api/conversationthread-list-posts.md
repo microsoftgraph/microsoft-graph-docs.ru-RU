@@ -1,16 +1,16 @@
 ---
 title: Список публикаций
 description: 'Получение публикаций из указанной цепочки. Можно указать родительский разговор и поток, или, '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 16c06ac9d890791e99aadefff51828a2ff7cf409
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 326737f5fe27e62aa7a455c70f892ace291ccec5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050637"
 ---
 # <a name="list-posts"></a>Список публикаций
 
@@ -25,7 +25,7 @@ ms.locfileid: "58514380"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -1,16 +1,16 @@
 ---
 title: 'раздел: copyToSectionGroup'
 description: Копирует раздел в определенную группу разделов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7a916903a995badede8dba872e11614664151373
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4ebe1702e3e5241b7ea8ff4b9de16c5733f3d0c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079185"
 ---
 # <a name="section-copytosectiongroup"></a>раздел: copyToSectionGroup
 
@@ -47,7 +47,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 |:---------------|:--------|:----------|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
 |id|String|Обязательный. ID группы разделов назначения. |
-|переименоватьAs|String|Имя копии. По умолчанию имя существующего элемента. |
+|переименоватьAs|Строка|Имя копии. По умолчанию имя существующего элемента. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||

@@ -3,14 +3,14 @@ title: Тип ресурса teamwork
 description: Контейнер для функций Microsoft Teams, доступных организации.
 author: akumar39
 doc_type: resourcePageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: d37e7614299582c155116b09046ce27dfb1ba7fe8e84fa0a2ff27e1ee9e1cc2d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 33b85d8b9b8c6b4984c500c22ade8bf33d18af82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052834"
 ---
 # <a name="teamwork-resource-type"></a>Тип ресурса teamwork
 

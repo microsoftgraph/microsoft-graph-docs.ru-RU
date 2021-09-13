@@ -1,16 +1,16 @@
 ---
 title: Список планов
 description: Получение списка объектов **plannerPlan**, принадлежащих объекту group.
-localization_priority: Priority
+ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bc9b5552101beb024dc1cc4119e8dd6c701e4321
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e01349041c328ac7f9bb5a42b61e474c9218c351
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099324"
 ---
 # <a name="list-plans"></a>Список планов
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

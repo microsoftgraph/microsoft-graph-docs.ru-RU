@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Location
 description: Представляет сведения о месте проведения события.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bf5e8c85f2cb368f409c864cbd07325068d0fa4f75aedebede6eae0c5c1eb8ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 678550a8683bf965dbc231055b60bd8a5b95c3df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134719"
 ---
 # <a name="location-resource-type"></a>Тип ресурса Location
 
@@ -32,7 +32,7 @@ ms.locfileid: "54246663"
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
-| displayName  | String | Имя, связанное с расположением.                       |
+| displayName  | Строка | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный электронный адрес для расположения.              |
 | locationUri | String | Необязательный URI, представляющий местоположение. |
 | locationType | locationType | Тип расположения. Возможные значения: `default` `conferenceRoom` , , , , , , `homeAddress` , `businessAddress` `geoCoordinates` `streetAddress` `hotel` `restaurant` `localBusiness` `postalAddress` . Только для чтения.|

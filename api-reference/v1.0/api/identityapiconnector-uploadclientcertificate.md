@@ -1,22 +1,22 @@
 ---
 title: 'identityApiConnector: uploadClientCertificate'
-description: Загрузите ключ формата PKCS 12 (PFX) в конфигурацию проверки подлинности соединителями API.
-localization_priority: Normal
+description: Upload PKCS 12 format key (PFX) для конфигурации проверки подлинности соединителями API.
+ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 84cf8a767a4cf944a143342c1b3a0678252a4e8b
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 8b05cb71390e97f9268d933080472a86fed359e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073893"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
 Пространство имен: microsoft.graph
 
-Загрузите ключ формата PKCS 12 (.pfx) в конфигурацию проверки подлинности соединителя API. Вход — это закодированное значение базового 64 содержимого сертификата PKCS 12. Этот метод возвращает [apiConnector](../resources/identityApiConnector.md).
+Upload PKCS 12 format key (.pfx) для конфигурации проверки подлинности соединителя API. Вход — это закодированное значение базового 64 содержимого сертификата PKCS 12. Этот метод возвращает [apiConnector](../resources/identityApiConnector.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "51921185"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 

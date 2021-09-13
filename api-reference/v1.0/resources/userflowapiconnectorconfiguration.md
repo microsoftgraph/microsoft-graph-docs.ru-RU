@@ -2,15 +2,15 @@
 title: тип ресурса userFlowApiConnectorConfiguration
 description: Представляет соединители API, которые включены для потока пользователей.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 474011cceb4c05e2c1b8f61aa4ea0e05e03df26857a0c10ea3a7197d453d24c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f58a1d64d863ab09fdd5713a0f41b5143cb5630
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083945"
 ---
 # <a name="userflowapiconnectorconfiguration-resource-type"></a>тип ресурса userFlowApiConnectorConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "54230419"
 
 Определяет API, которые называются в определенных точках пользовательского потока.  Каждое отношение этого объекта соответствует определенному шагу в потоке пользователей, который можно настроить для вызова соединиттеля API.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь            | Тип                                            | Описание                                                                                                                                             |
 | :---------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |

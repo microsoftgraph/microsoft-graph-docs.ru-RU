@@ -1,22 +1,22 @@
 ---
-title: Удаление Тимеоффрекуест
-description: Удаление объекта Тимеоффрекуест.
-localization_priority: Normal
+title: Удаление timeOffRequest
+description: Удаление объекта timeOffRequest.
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6f5af597174d6146c50d88a3038af1af0158c931
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 579ce20dc2ed5bde016ef1d90507de8c0bc0c42c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044069"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049895"
 ---
-# <a name="delete-timeoffrequest"></a>Удаление Тимеоффрекуест
+# <a name="delete-timeoffrequest"></a>Удаление timeOffRequest
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [тимеоффрекуест](../resources/timeoffrequest.md) .
+Удаление [объекта timeOffRequest.](../resources/timeoffrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "48044069"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

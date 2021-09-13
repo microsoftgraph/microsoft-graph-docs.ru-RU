@@ -2,15 +2,15 @@
 title: Тип ресурса Chart
 description: Представляет объект диаграммы в книге.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 160fcb95fd8ffe4b4d0c2d4e9233afe3492ef32d27b910ee40bb7519b20e591a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a49330d6225dffe34e1594e2c04c18783cc8aae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032442"
 ---
 # <a name="chart-resource-type"></a>Тип ресурса Chart
 
@@ -28,7 +28,7 @@ ms.locfileid: "54121419"
 |[Список рядов](../api/chart-list-series.md) |[Коллекция книгChartSeries](chartseries.md)| Получение коллекции объектов ChartSeries.|
 |[Обновление](../api/chart-update.md) | [WorkbookChart](chart.md)   |Обновление объекта Chart. |
 |[Image](../api/chart-image.md)|Строка изображения с кодировкой base64|Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.|
-|[Удаление](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
+|[удаление](../api/chart-delete.md);|Нет|Удаляет объект диаграммы.|
 |[Setdata](../api/chart-setdata.md)|Нет|Сбрасывает исходные данные для диаграммы.|
 |[Setposition](../api/chart-setposition.md)|Нет|Располагает диаграмму относительно ячеек на листе.|
 |[Список](../api/chart-list.md) | Коллекция [WorkbookChart](chart.md) |Получение коллекции объектов диаграмм. |
@@ -39,7 +39,7 @@ ms.locfileid: "54121419"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |height|double|Обозначает высоту объекта диаграммы (в пунктах).|
-|id|строка|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
+|id|string|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
 |left|double|Расстояние в пунктах от левого края диаграммы до начала листа.|
 |name|string|Обозначает имя объекта диаграммы.|
 |top|double|Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).|

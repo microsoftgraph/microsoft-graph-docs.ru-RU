@@ -1,13 +1,13 @@
 ---
 title: 'Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии '
 description: В этой статье описаны политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии API Microsoft Graph.
-localization_priority: Priority
-ms.openlocfilehash: 98003561d71aaf356eb78bc8cd7ad9f9bc2a22eecdce7ce070ac48a6fc266f33
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: e0ccf55cc9c6ec2890704dc5a10d9de862c19e89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133984"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии
 
@@ -45,7 +45,7 @@ Microsoft Graph придерживается политики [Microsoft Lifecyc
 - изменения порядка свойств;
 - изменения длины или формата непрозрачных строк, таких как идентификаторы ресурсов.
 
->**Примечание.** Корпорация Майкрософт будет обновлять список обратно совместимых изменений. Если вы создаете собственные прокси-серверы клиента (например, клиенты WCF), ваши клиентские приложения должны быть готовы принимать свойства и производные типы, ранее не определенные в службе API Microsoft Graph. API Microsoft Graph соответствует принципам, описанным в разделе [Управление версиями](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) [Правил в отношении REST API Microsoft](https://github.com/microsoft/api-guidelines/).
+>**Примечание.** Корпорация Майкрософт будет обновлять список обратно совместимых изменений. Если вы создаете собственные прокси-серверы клиента (например, клиенты WCF), ваши клиентские приложения должны быть готовы принимать свойства и производные типы, ранее не определенные в службе API Microsoft Graph. API Microsoft Graph соответствует принципам, описанным в разделе [Управление версиями](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) [Правил в отношении REST API Microsoft](https://github.com/microsoft/api-guidelines/).
 
 ## <a name="versions"></a>Версии
 

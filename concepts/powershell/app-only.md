@@ -1,14 +1,14 @@
 ---
 title: Использование проверки подлинности только для приложений с помощью SDK microsoft Graph PowerShell
 description: Узнайте, как использовать проверку подлинности только для приложений, чтобы включить сценарии, не взаимодействуя с microsoft Graph PowerShell SDK.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 0c87d415f23123b5628bcda8655e3c5b02323a86
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 10413d1af07d2ba195522b062f068cf663492296
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083924"
 ---
 # <a name="use-app-only-authentication-with-the-microsoft-graph-powershell-sdk"></a>Использование проверки подлинности только для приложений с помощью SDK microsoft Graph PowerShell
 

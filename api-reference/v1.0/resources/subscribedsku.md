@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса subscribedSku
 description: Содержит сведения о SKU службы, на которую компания подписана.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f42df21b5c7e414f03c172b41a0f25ba3dcd59359ec699af9c7e0a06869059fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd497dd40e691fe8751517b7c9b540844e29e615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134459"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
@@ -32,18 +32,18 @@ ms.locfileid: "54163651"
 |appliesTo|String| Например, User или Company. |
 |capabilityStatus|String|  Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. The capabilityStatus is `Enabled` if the **prepaidUnits** property has at least 1 unit that is **enabled,** and `LockedOut` if the customer cancelled their subscription. |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
-|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, not nullable. |
+|id|Строка| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
 |servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не является недействительным |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
 |skuPartNumber|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. Чтобы получить список коммерческих подписок, приобретенных организацией, см. в [журнале List subscribedSkus.](../api/subscribedsku-list.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!--{
   "blockType": "resource",
@@ -79,6 +79,11 @@ ms.locfileid: "54163651"
 }
 
 ```
+
+## <a name="see-also"></a>См. также
+
++ [Названия продуктов и идентификаторы планов служб для лицензирования](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

@@ -2,15 +2,15 @@
 title: тип ресурса groupSetting
 description: Параметры группы контролируют поведение, например заблокированные списки слов для имен отображения групп или разрешено ли гостевых пользователей быть владельцами групп.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 3f43baa14884fcb8843d99731e20e96f329aed2cfad2a1ba513b8e2039d8f776
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56d97a0789c33c429dcce7d5db7009f439806768
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084547"
 ---
 # <a name="groupsetting-resource-type"></a>тип ресурса groupSetting
 
@@ -34,7 +34,7 @@ ms.locfileid: "54212083"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|displayName|String| Отображение имени этой группы параметров, которое происходит из связанного шаблона. |
+|displayName|Строка| Отображение имени этой группы параметров, которое происходит из связанного шаблона. |
 |id|String| Уникальный идентификатор для этих параметров. Только для чтения. |
 |templateId|String| Уникальный идентификатор для шаблона, используемого для создания этой группы параметров. Только для чтения. |
 |values|[settingValue](settingvalue.md) collection| Коллекция пар значений имен. Необходимо содержать и задать все параметры, определенные в шаблоне. |

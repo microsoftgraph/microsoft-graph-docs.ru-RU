@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: неархивный'
 description: Unarchive a list of service update messages for the signed in user.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4db94ded456c47e19f55950fae6028fa81358d09
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 0df8b121540d52ec9b0de60e95a205feba603a87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079219"
 ---
 # <a name="serviceupdatemessage-unarchive"></a>serviceUpdateMessage: неархивный
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ Unarchive a list of [serviceUpdateMessages](../resources/serviceupdatemessage.md
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 

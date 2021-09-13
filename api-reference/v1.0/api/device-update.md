@@ -2,15 +2,15 @@
 title: Обновление устройства
 description: Обновление свойств зарегистрированного устройства.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 21d9ee1c13cb565a9bd9a2c52e6ea061c6a0df36
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 25a5dce5242219384c42c5b363a5e7b6688d8e3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053677"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -25,9 +25,9 @@ ms.locfileid: "58531329"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,7 @@ PATCH /devices/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -94,7 +94,7 @@ Content-length: 31
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response"

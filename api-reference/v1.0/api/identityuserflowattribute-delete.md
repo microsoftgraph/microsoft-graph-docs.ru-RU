@@ -1,16 +1,16 @@
 ---
 title: Удаление identityUserFlowAttribute
 description: Удаление identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 31943128cbc51b8ead929cebbcb7397accf7d251
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 3e6e44265086aadd29a2fe34c057d98eceabd732
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045717"
 ---
 # <a name="delete-identityuserflowattribute"></a>Удаление identityUserFlowAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "51921584"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибута потока внешних удостоверений
+* Администратор атрибута пользователя внешней Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 

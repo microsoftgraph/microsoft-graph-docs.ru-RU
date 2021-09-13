@@ -2,15 +2,15 @@
 title: Принудительное удаление домена
 description: Удаляет домен с помощью асинхронной длительной операции.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 50e5a418a40d9c5bedee1a007b491d15a06f3931
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 16423e6a04a8baeb20a3a6b800cd2c5eced762aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056691"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
 
@@ -40,7 +40,7 @@ ms.locfileid: "52787816"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Domain.ReadWrite.All |
 
@@ -61,7 +61,7 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -69,7 +69,7 @@ POST /domains/{id}/forceDelete
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Параметр отключения учетных записей пользователей, которые переименованы. Если учетная запись пользователя отключена, пользователю не будет разрешено войти. Если **установлено,** что обновленная версия в рамках этой операции `users` будет отключена.  Значение по умолчанию: **true**. |
 
-## <a name="response-body"></a>Текст отклика
+## <a name="response-body"></a>Текст ответа
 
 В случае успешной работы этот метод возвращает `HTTP/1.1 204 OK` код состояния.
 

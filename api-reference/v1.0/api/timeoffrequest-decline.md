@@ -1,16 +1,16 @@
 ---
 title: 'timeOffRequest: снижение'
 description: Отклонение объекта timeoffrequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7f9e5f6151e30dbbfcfc74db51a9a8e2afacab1c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 435dc78e16160f749b01639493b58dbc435831d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049923"
 ---
 # <a name="timeoffrequest-decline"></a>timeOffRequest: снижение
 
@@ -26,7 +26,7 @@ ms.locfileid: "52787424"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.ReadWrite.All |
+|Для приложения | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application-json. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

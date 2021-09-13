@@ -3,20 +3,20 @@ title: Настройка прокси-сервера приложений с Gr
 description: Настройка прокси-приложения с Graph API Майкрософт для обеспечения удаленного доступа и единой входной записи в локальном приложении.
 author: davidmu1
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 0394220290652a8be7931b384b16dc53631048210b7d982545636bc62bd86060
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96a1f390b41f585d530b04a831a2d9a79a12aa88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149620"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142427"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Настройка прокси-приложения с помощью API Graph Microsoft
 
 В этой статье вы узнаете, как настроить прокси Azure Active Directory приложения (Azure AD). Прокси-сервер приложения обеспечивает безопасный удаленный доступ и один вход в локальное веб-приложение. После настройки прокси-сервера приложений для приложения пользователи могут получать доступ к своим внутренним приложениям с помощью внешнего URL-адреса, портала "Мои приложения" или других внутренних порталов приложений.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 - В этом руководстве предполагается, что вы [](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) уже установили соединители и выполнили необходимые условия для прокси-сервера приложений, чтобы соединители могли взаимодействовать с службами Azure AD.
 - В этом руководстве предполагается, что вы используете песочницу Microsoft Graph, но вы можете использовать Postman или создать собственное клиентское приложение, чтобы вызывать Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, используйте учетную запись с ролью глобального администратора и соответствующими разрешениями. Чтобы настроить разрешения в песочнице Microsoft Graph, выполните следующие действия.

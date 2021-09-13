@@ -1,16 +1,16 @@
 ---
 title: 'todoTaskList: delta'
 description: Получите набор ресурсов todoTaskList, которые были добавлены, удалены или удалены в Microsoft To Do.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 907f4d41bcfdee7f4d536829f1e21e661f8649c216544504dc6476fccdf8e314
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 25f4b1369f8c58d627399ecbdf0d13810fd0842a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54172024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090147"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList: delta
 
@@ -44,7 +44,7 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущей функции дельты, должен вызывать ту же коллекцию `deltaLink` **todoTaskList,** что указывает на завершение этого раунда отслеживания изменений.  Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | строка | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же `nextLink` **собрании todoTaskList** необходимо отслеживать дальнейшие изменения.  |
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же `nextLink` **собрании todoTaskList** необходимо отслеживать дальнейшие изменения.  |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 

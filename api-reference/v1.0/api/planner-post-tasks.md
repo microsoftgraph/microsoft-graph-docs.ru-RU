@@ -1,16 +1,16 @@
 ---
 title: Создание объекта plannerTask
 description: Используйте этот API, чтобы создать объект **plannerTask**.
-localization_priority: Priority
+ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9d38c5e4c245e33343a3ea6488699d4da3f43ce7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 74622ac8ecd4220a2497f22494c2cb89055b4f7d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104889"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
 
@@ -82,8 +82,8 @@ Content-length: 285
 ---
 
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON.
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+##### <a name="response"></a>Отклик
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

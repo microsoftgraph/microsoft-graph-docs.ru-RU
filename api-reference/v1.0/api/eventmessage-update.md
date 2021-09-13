@@ -2,15 +2,15 @@
 title: Обновление объекта eventMessage
 description: Обновление свойств объекта eventMessage.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b523e12da00d4b0883d9e337edd288ded13bde2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 094d2a91892e335230acb0225fdba81d423af2d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140740"
 ---
 # <a name="update-eventmessage"></a>Обновление объекта eventMessage
 
@@ -91,7 +91,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

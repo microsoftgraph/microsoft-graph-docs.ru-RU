@@ -2,14 +2,14 @@
 title: Предложение нового времени собрания в Outlook
 description: В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 6beba6c1c2c19515ade8123069feed83951fa903febdcb39acabff60f678dab1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb75a950f627dde2cf54f373e17435b501a082df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157951"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103954"
 ---
 # <a name="propose-new-meeting-times-in-outlook"></a>Предложение нового времени собрания в Outlook
 

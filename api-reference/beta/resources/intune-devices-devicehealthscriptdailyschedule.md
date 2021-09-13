@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptDailySchedule
 description: Ежедневное расписание скриптов для скриптов для устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e84b59510a50510abfd07e5eafd09b652c4aeb0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b73d9020e3d95e658b67e090b311ecc97fe3bc1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58771003"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017368"
 ---
 # <a name="devicehealthscriptdailyschedule-resource-type"></a>тип ресурса deviceHealthScriptDailySchedule
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса baseItemVersion
 description: Ресурс **baseItemVersion** представляет предыдущую версию элемента или записи.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f5a9f52ad13b2c0d12b2040f306ad23d74d5b18fa87c7fd15d1142df969147fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3679353e4e5c5aafb2b6594662cbe528ee714ca9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015625"
 ---
 # <a name="baseitemversion-resource-type"></a>Тип ресурса baseItemVersion
 
@@ -42,10 +42,10 @@ ms.locfileid: "54218830"
 
 |      Имя свойства       |                         Тип                         |                               Описание                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
-| **публикация**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
 
 
 <!-- {

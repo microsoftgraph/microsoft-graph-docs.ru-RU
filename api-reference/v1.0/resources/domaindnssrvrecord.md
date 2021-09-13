@@ -2,15 +2,15 @@
 title: тип ресурса domainDnsSrvRecord
 description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2322a2425170a930dfaca30224601c01388063dd8d50203c950d1f3b9d5131ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 851dcf80838b8d39a71e9dcb36db6ef324b63d63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229299"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123757"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>тип ресурса domainDnsSrvRecord
 
@@ -25,19 +25,19 @@ ms.locfileid: "54229299"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения.|
-|isOptional|Логическое| Если это неверно, запись SRV должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
-|label|String| Значение, используемого при настройке *свойства* имени записи SRV в хосте DNS. |
-|nameTarget|String| Значение, используемого при настройке *целевого* свойства записи SRV в хосте DNS. |
+|isOptional|Логический| Если это неверно, запись SRV должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
+|подпись|Строка| Значение, используемого при настройке *свойства* имени записи SRV в хосте DNS. |
+|nameTarget|Строка| Значение, используемого при настройке *целевого* свойства записи SRV в хосте DNS. |
 |порт|Int32| Значение, используемого при  настройке свойства порта записи SRV в хосте DNS. |
 |priority|Int32| Значение, используемое при настройке *приоритетного* свойства записи SRV в хосте DNS. |
-|протокол|String| Значение, используемого при настройке свойства *протокола* записи SRV в DNS-хозяйне. |
+|протокол|Строка| Значение, используемого при настройке свойства *протокола* записи SRV в DNS-хозяйне. |
 |recordType|String|  Тип записи DNS. Значение всегда *Srv*. Key |
 |service|String| Значение, используемого при  настройке свойства службы записи SRV в DNS-хозяйне. |
 |supportedService|String| Microsoft Online Service или функция, зависимая от этой записи SRV.</br></br>Может быть одним из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |ttl|Int32| Значение, используемого при настройке свойства "время на *жизнь"* записи SRV в DNS-хозяйне. Не является недействительным |
 |weight|Int32| Значение, используемого при  настройке свойства веса записи SRV в хосте DNS. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

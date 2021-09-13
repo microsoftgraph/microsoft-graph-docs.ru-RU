@@ -2,15 +2,15 @@
 title: Тип ресурса удостоверений
 description: Представляет идентификатор, используемый для набора разрешений на внешний контент, добавленный в Microsoft Graph.
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 94733a3e9d6595341a515ff525cdf90050f41b4a
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: fd1b5ce0cb828e4c409062a8fcb05f51c82a943f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123386"
 ---
 # <a name="identity-resource-type"></a>Тип ресурса удостоверений
 
@@ -31,7 +31,7 @@ ms.locfileid: "58697515"
 | id             | String                  | Уникальный идентификатор удостоверения. Это будет свойство objectId в случае Azure Active Directory пользователей или групп Azure AD, а также свойство **id** **externalGroup** в случае внешних групп.                                    |
 | type           | microsoft.graph.externalConnectors.identityType | Тип удостоверения. Возможные значения: `user` или `group` для удостоверений Azure AD и для групп во внешней `externalgroup` системе. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

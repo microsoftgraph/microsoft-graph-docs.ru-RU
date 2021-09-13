@@ -2,14 +2,14 @@
 title: Просмотр вопросов регистрации, разрешений и миграции согласия
 description: Описывает миграцию регистрации, разрешений и согласия Azure Active Directory (Azure AD) в API Microsoft Graph.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 9b30358ecaf019add4a935cac9d31fa492eafe2859ae855329388e12460d5aaa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e6b4746d5928bd56057e4aacf91eafea5cad5e90
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117657"
 ---
 # <a name="review-app-registration-permissions-and-consent"></a>Просмотр регистрации, разрешений и согласия приложений
 
@@ -21,7 +21,7 @@ ms.locfileid: "54149550"
 
     Чтобы **перейти** в Microsoft Graph, не нужно перерегистрировать свое приложение. Просто обновите код, протестировать и развернуть обновление.  
 
-- **Разрешения.** Необходимо изменить настроенные разрешения на эквивалентные разрешения microsoft Graph. Делегированная лицензия, выданная для Azure AD Graph будет неявно считаться предоставленной для Microsoft Graph. Разрешения приложения (роли приложений) должны быть снова предоставлены.
+- **Разрешения.** Необходимо изменить настроенные разрешения на эквивалентные разрешения microsoft Graph. Делегированная разрешений, которые были предоставлены для Azure Active Directory (Azure AD) Graph будут неявно считаться предоставленными для Microsoft Graph. Разрешения приложения (роли приложений) должны быть снова предоставлены.
 
     Если обновление также не позволяет использовать функции или возможности, недоступные для Azure AD Graph, вам, скорее всего, потребуется запрашивать разрешения для этих новых функций. В этом случае можно переключить приложение на использование MSAL и конечной точки v2 и динамически запрашивать дополнительное/дополнительное согласие. Дополнительные сведения о переходе на MSAL можно найти в обзоре изменений библиотеки [проверки подлинности приложений.](./migrate-azure-ad-graph-authentication-library.md)
 

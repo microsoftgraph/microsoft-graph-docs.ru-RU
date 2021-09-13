@@ -2,14 +2,14 @@
 title: Уменьшение количества пропущенных уведомлений о подписках и изменениях
 description: У приложений, подписывающихся на уведомления об изменениях, могут быть удалены их подписки, что приводит к пропуску некоторых уведомлений об изменениях. В приложениях должна быть реализована логика определения потерь и восстановления после них, а также возобновления непрерывного потока уведомлений об изменениях.
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 29b769e9f3a5020f272152e86436f419206029b9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 519178ee7609d615c32c628721b3154853273422
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264635"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108753"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>Уменьшение количества пропущенных уведомлений о подписках и изменениях
 

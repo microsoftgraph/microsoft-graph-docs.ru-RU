@@ -2,15 +2,15 @@
 title: cancelMediaProcessingOperation type
 description: Этот тип ресурса используется для описания формата ответа операции обработки мультимедиа отмены.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6896a7a4d08aea0c4d394bfbaef8a54bd4c789b310f0079dbbf08daac99606d6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b7cecdfbbb6ced93149740de89a18081a04cffa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078940"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>Тип ресурса CancelMediaProcessingOperation
 
@@ -22,13 +22,13 @@ ms.locfileid: "54235690"
 
 | Свойство      | Тип                        | Описание                                                                     |
 | :------------ | :-------------------------- | :------------------------------------------------------------------------------ |
-| все           | Логическое                     | Указывает, следует ли останавливать все операции или ток.                            |
+| все           | Логический                     | Указывает, следует ли останавливать все операции или ток.                            |
 | clientContext | String                      | Клиентский контекст.                                                             |
-| id            | String                      | ID операции сервера. Только для чтения.                                             |
+| id            | Строка                      | ID операции сервера. Только для чтения.                                             |
 | resultInfo    | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                             |
 | status        | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

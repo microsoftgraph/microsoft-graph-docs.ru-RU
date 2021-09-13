@@ -2,15 +2,15 @@
 title: 'ChartCollection: ItemAt'
 description: Возвращает диаграмму на основании сведений о ее позиции в коллекции.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a0c91ad7fd24ab75e44936c442dce6d3beff9a34
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a3eacdc28f471728bef3efd454e68ebc900f0c69
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023005"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -37,7 +37,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/itemAt
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -85,7 +85,7 @@ Content-length: 20
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

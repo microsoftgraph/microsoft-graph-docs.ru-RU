@@ -3,14 +3,14 @@ author: vishriv
 title: Тип группового ресурса
 doc_type: resourcePageType
 description: Представляет группу, используемую в магазине терминов.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: a73cd750ffbfe8487b67acbf49c05432b3e46ec3
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 121f195e8054645be47d7a98c5287c52d754b4e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58515085"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129756"
 ---
 # <a name="group-resource-type"></a>Тип группового ресурса
 
@@ -35,13 +35,13 @@ ms.locfileid: "58515085"
 | Свойство             | Тип               | Описание                        |
 |:---------------------|:-------------------|:------------------------------------
 | createdDateTime      | DateTimeOffset     | Дата и время создания группы. Только для чтения. |
-| description          | строка             | Описание с подробными сведениями об использовании термина. |
-| id                   | строка             | Уникальный идентификатор группы. Только для чтения. |
+| description          | string             | Описание с подробными сведениями об использовании термина. |
+| id                   | string             | Уникальный идентификатор группы. Только для чтения. |
 | displayName          | string             | Имя группы. |
 | scope                | string              | Возвращает тип группы. Возможные значения : "глобальный", "системный" и "siteCollection". |
-| parentSiteId         | Строка             | Id родительского сайта этой группы. |
+| parentSiteId         | string             | Id родительского сайта этой группы. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь       | Тип                        | Описание              |
 |:-------------------|:----------------------------|:--------------------------
 | наборы           | [коллекция microsoft.graph.termStore.set][] | Все наборы в группе в магазине [терминов]. |

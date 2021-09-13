@@ -2,15 +2,15 @@
 title: Get connectionOperation
 description: Ознакомьтесь с свойствами и отношениями объекта connectionOperation.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a43a6302c6c32611ab06e84382ce8a497f09e343
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 188f6fa3efdb58dd997a8cfe7aed11957939b3be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140712"
 ---
 # <a name="get-connectionoperation"></a>Get connectionOperation
 
@@ -25,7 +25,7 @@ ms.locfileid: "53580160"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy |
+|Для приложений| ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /connections/{connectionsId}/operations/{connectionOperationId}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

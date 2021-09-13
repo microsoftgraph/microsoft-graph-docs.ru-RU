@@ -2,15 +2,15 @@
 title: тип ресурса fido2AuthenticationMethodConfiguration
 description: Представляет политику методов проверки подлинности FIDO2
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e1ae1981de295e691c2cee5e0cda320446bebe1a021efb6c1898cd3ab91158d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3be6525cc09b2932541efa722e1cc140d42739a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062700"
 ---
 # <a name="fido2authenticationmethodconfiguration-resource-type"></a>тип ресурса fido2AuthenticationMethodConfiguration
 
@@ -22,26 +22,26 @@ ms.locfileid: "54175289"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Получение](../api/fido2authenticationmethodconfiguration-get.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.|
+|[получение](../api/fido2authenticationmethodconfiguration-get.md);|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.|
 |[Обновление](../api/fido2authenticationmethodconfiguration-update.md)|[fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md)|Обновление свойств объекта fido2AuthenticationMethodConfiguration.|
-|[Удаление](../api/fido2authenticationmethodconfiguration-delete.md)|Нет|Возвращает объект fido2AuthenticationMethodConfiguration к конфигурации по умолчанию.|
+|[удаление](../api/fido2authenticationmethodconfiguration-delete.md);|Нет|Возвращает объект fido2AuthenticationMethodConfiguration к конфигурации по умолчанию.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики метода проверки подлинности.|
-|isAttestationEnforced|Логическое|Определяет, необходимо ли применять проверку для регистрации ключей безопасности FIDO2.|
-|isSelfServiceRegistrationAllowed|Логическое|Определяет, могут ли пользователи зарегистрировать новые ключи безопасности FIDO2.|
+|id|Строка|Идентификатор политики метода проверки подлинности.|
+|isAttestationEnforced|Логический|Определяет, необходимо ли применять проверку для регистрации ключей безопасности FIDO2.|
+|isSelfServiceRegistrationAllowed|Boolean|Определяет, могут ли пользователи зарегистрировать новые ключи безопасности FIDO2.|
 |keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Контролирует, применяются ли ключевые ограничения для ключей безопасности FIDO2, разрешая или отменяя определенные типы ключей в зависимости от Authenticator Attestation GUID (AAGUID), идентификатора, который указывает тип (например, make и model) аутентиста.|
 |state|authenticationMethodState|Возможные значения: `enabled`, `disabled`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |includeTargets|[коллекция authenticationMethodTarget](../resources/authenticationmethodtarget.md)|Коллекция пользователей или групп, которые могут использовать метод проверки подлинности.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

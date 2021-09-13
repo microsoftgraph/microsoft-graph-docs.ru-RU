@@ -1,15 +1,15 @@
 ---
 title: Создание маркеров подтверждения владения для смены ключей
 description: В рамках подтверждения запроса для методов addKey и removeKey требуется маркер подтверждения владения. В этом документе приведены инструкции по созданию маркера подтверждения владения.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 author: davidmu1
-ms.openlocfilehash: d4b98f0820941879f3994b0a18ccbc1c2d8c7dac
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 1df754757ce5707f0c06c709fc3adc423ad36da0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142420"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Создание маркеров подтверждения владения для смены ключей
 

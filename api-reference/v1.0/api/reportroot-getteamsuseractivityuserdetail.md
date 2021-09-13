@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: Получение сведений о действиях отдельных пользователей Microsoft Teams.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f7f55c67e6e9b13c21fcd58b65806c2b0379ac7465da35de197be9f5e2778049
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 49894e6a6f489e9372cfe470ae8fe5a575309ddc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050028"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 

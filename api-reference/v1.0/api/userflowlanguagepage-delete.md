@@ -2,15 +2,15 @@
 title: Удаление userFlowLanguagePage
 description: Удаляет значения в объекте userFlowLanguagePage.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f9c1ba04d2c3cfdf60e4309d0a274388639b83a7
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 15575fcb1e8333b7b1267f0168bec3af1f54afd7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109530"
 ---
 # <a name="delete-userflowlanguagepage"></a>Удаление userFlowLanguagePage
 
@@ -26,7 +26,7 @@ ms.locfileid: "52666626"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 

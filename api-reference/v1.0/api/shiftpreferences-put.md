@@ -2,15 +2,15 @@
 title: Обновление shiftPreferences
 description: Обновление личных предпочтений пользователя.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fc88bccb2360d2b0de5e7336a507f760485a4b42
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6cc3ea75195658948b746588180d2f3029e1fdf5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130225"
 ---
 # <a name="update-shiftpreferences"></a>Обновление shiftPreferences
 

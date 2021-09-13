@@ -2,15 +2,15 @@
 title: Обновление объекта ChartSeries
 description: Обновление свойств объекта chartseries.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5a9b56fd4cdb8e88bf3e614a0ba81f6a16cf2a15
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 82a72f01ddd3bf89d5486a9d1970e7559c21b15b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090763"
 ---
 # <a name="update-chartseries"></a>Обновление объекта ChartSeries
 
@@ -85,7 +85,7 @@ Content-length: 26
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

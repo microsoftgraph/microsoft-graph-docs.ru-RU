@@ -1,14 +1,14 @@
 ---
 title: Компонент входа в Microsoft Graph Toolkit
 description: Компонент входа — это кнопка и всплывающий элемент управления, предназначенные для упрощения проверки подлинности платформы удостоверений Майкрософт.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 5b4c3b01053d9011d553a57fadecf560eddf80b3d143744d40b1dab167f1f040
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3398092c85fea23ad408a208a895c9af287371df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103930"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Компонент входа в Microsoft Graph Toolkit
 

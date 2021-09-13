@@ -1,16 +1,16 @@
 ---
 title: тип ресурса assignedLabel
 description: Представляет метку конфиденциальности, назначенную Microsoft 365 группе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 197ea28fa330c9a91e158cd915d8fb4bb72bca3940dd1d867776424d0cbb116a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 18a121bfcfdbd43edd4830464bc950574ff1ddeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123869"
 ---
 # <a name="assignedlabel-resource-type"></a>тип ресурса assignedLabel
 
@@ -21,8 +21,8 @@ ms.locfileid: "54135374"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|labelId|String|Уникальный идентификатор метки.|
-|displayName|String|Имя отображения метки. Только для чтения.|
+|labelId|Строка|Уникальный идентификатор метки.|
+|displayName|Строка|Имя отображения метки. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

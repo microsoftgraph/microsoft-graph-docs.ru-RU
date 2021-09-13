@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса permissionGrantConditionSet
 description: Указывает правило соответствия условиям, при которых событие включается или исключается из политики предоставления разрешений.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 774d0f8dce0a5e1128f8e2399fb8399f5ee84b1fa28aeee9fd2a0574ae5a4100
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a0e6692e74f1d4b116de1f9b724e8be21a8af7d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117895"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>Тип ресурса permissionGrantConditionSet
 

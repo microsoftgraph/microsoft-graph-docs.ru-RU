@@ -2,15 +2,15 @@
 title: Тип ресурса ChartTitleFormat
 description: Инкапсулирует свойства формата для заголовка диаграммы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dc49c38ac674f6adf789785932f81fbf2094941fe660d2ada4efc1bfb42bcca1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a24e993bce8688cedd059895ad0dcae8c4d79f55
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230839"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118766"
 ---
 # <a name="charttitleformat-resource-type"></a>Тип ресурса ChartTitleFormat
 
@@ -25,7 +25,7 @@ ms.locfileid: "54230839"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса administrativeUnit
 description: Административное подразделение предоставляет концептуальный контейнер для объектов каталогов пользователей и групп.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9a9ad564db84a19a2402f34edddc85858dd37c7c00e04eea7fad79acb6d4c466
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aba4c7fb5ff8e9a6fb54e0e027d9267b15f37884
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036783"
 ---
 # <a name="administrativeunit-resource-type"></a>тип ресурса administrativeUnit
 
@@ -29,10 +29,10 @@ ms.locfileid: "54212237"
 | Метод   | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
 |[Создание](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Создание нового административного подразделения.|
-|[Список](../api/administrativeunit-list.md) | [коллекция administrativeUnit](administrativeunit.md) |Список свойств всех административных объектов.|
-|[Получение](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Чтение свойств и связей определенного объекта administrativeUnit.|
+|[Перечисление](../api/administrativeunit-list.md) | [коллекция administrativeUnit](administrativeunit.md) |Список свойств всех административных объектов.|
+|[получение](../api/administrativeunit-get.md); | [administrativeUnit](administrativeunit.md) |Чтение свойств и связей определенного объекта administrativeUnit.|
 |[Обновление](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Обновление объекта administrativeUnit. |
-|[Удаление](../api/administrativeunit-delete.md) | Нет |Удаление объекта administrativeUnit. |
+|[удаление](../api/administrativeunit-delete.md); | Нет |Удаление объекта administrativeUnit. |
 |[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление участника (пользователя или группы).|
 |[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получите список участников (пользователей и групп).|
 |[Получение члена](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Получите определенного участника.|
@@ -45,15 +45,15 @@ ms.locfileid: "54212237"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|строка|Необязательное описание административного подразделения.|
+|description|string|Необязательное описание административного подразделения.|
 |displayName|string|Отображение имени административного подразделения.|
-|id|строка|Уникальный идентификатор для административного подразделения. Только для чтения.|
+|id|string|Уникальный идентификатор для административного подразделения. Только для чтения.|
 |visibility|string|Контролирует, скрыта ли административная единица и ее члены. Можно установить `HiddenMembership` или `Public` . Если не установлено, по умолчанию поведение `Public` . При наборе только члены административного подразделения могут перечислять других членов `HiddenMembership` административного подразделения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для этого административного подразделения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для этого административного подразделения. Допускается значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, которые являются членами этого администраторского подразделения. МЕТОДЫ HTTP: GET (участники списка), POST (добавление участников), DELETE (удаление участников).|
 |scopedRoleMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Scoped-role members of this Administrative Unit.  МЕТОДЫ HTTP: GET (список scopedRoleMemberships), POST (добавление scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 

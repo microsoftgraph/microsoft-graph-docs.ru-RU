@@ -2,20 +2,20 @@
 title: Удаление MicrosoftAuthenticatorAuthenticationMethodConfiguration
 description: Удаляет объект MicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bd7febf099ecdc87169e264218b4d748e82b6d1a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 778615970151b0bd41e76be3581d4a51df0fe832
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110263"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>Удаление MicrosoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-Удалите изменения, внесенные в политику проверки подлинности [Microsoft Authenticator,](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) возвращая политику к ее конфигурации по умолчанию.
+Удалите изменения, [внесенные в Microsoft Authenticator](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) метода проверки подлинности, возвращая политику в конфигурацию по умолчанию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

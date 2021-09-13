@@ -1,22 +1,22 @@
 ---
 title: Список объектов SubscribedSku
 description: Получение списка коммерческих подписок, приобретенных организацией.
-localization_priority: Priority
+ms.localizationpriority: high
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3a3ce01c2d507d949888ab30f1931b8e721a4fe3
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 16d9d6e0454ae7752d3afd244874e7a425759b79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015730"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 
 Пространство имен: microsoft.graph
 
-Получение списка коммерческих подписок, приобретенных организацией.
+Получение списка коммерческих подписок, приобретенных организацией. Сведения о сопоставлении имен лицензий, отображающихся на портале Azure или в Центре администрирования Microsoft 365, с их свойствами **skuId** и **skuPartNumber** Microsoft Graph см. в статье [Названия продуктов и идентификаторы планов служб для лицензирования](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,8 +33,10 @@ ms.locfileid: "52787121"
 ```http
 GET /subscribedSkus
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика. Например, не поддерживается параметр $filter.
+
+Этот метод поддерживает только [параметр запросов OData](/graph//query-parameters) `$select` для настройки отклика. Он не поддерживает `$filter`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -42,14 +44,14 @@ GET /subscribedSkus
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [subscribedSku](../resources/subscribedsku.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,8 +80,8 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -138,6 +140,10 @@ Content-type: application/json
     ]
 }
 ```
+
+## <a name="see-also"></a>См. также
+
++ [Названия продуктов и идентификаторы планов служб для лицензирования](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,14 +1,14 @@
 ---
 title: Выберите поставщика проверки подлинности Graph Майкрософт
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 35717b83c5df9a56351200e4f762c85459854929
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 328c696d2fff74ea790a2cf51530116049c35988
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078541"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 

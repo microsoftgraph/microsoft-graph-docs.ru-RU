@@ -1,16 +1,16 @@
 ---
 title: тип ресурса complianceInformation
 description: Этот ресурс содержит данные о соответствии требованиям, связанные с безопасным управлением счетами.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 427660aa0f7227a4536a01cedcc7df818e8a499348c7be3f5be764f0764cad24
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 05ba1b7900f50474e2eaaac64326f02eeadfd913
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109264"
 ---
 #  <a name="complianceinformation-resource-type"></a>тип ресурса complianceInformation
 
@@ -22,7 +22,7 @@ ms.locfileid: "54180875"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|certificationName|String| Имя сертификации соответствия требованиям (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
+|certificationName|Строка| Имя сертификации соответствия требованиям (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
 |certificationControls|[коллекция certificationControl](certificationcontrol.md)|Коллекция элементов управления сертификацией, связанных с сертификацией|
 
 ## <a name="json-representation"></a>Представление JSON

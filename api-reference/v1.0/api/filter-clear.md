@@ -1,16 +1,16 @@
 ---
 title: 'Filter: clear'
 description: Сброс фильтра для определенного столбца.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: dbc241b6f93fb36f644d4d6d5e579242ee55b591
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 29a6d9cc30c8e5f34d9b2188e6850283b94d5566
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045986"
 ---
 # <a name="filter-clear"></a>Filter: clear
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса plannerAssignments
 description: 'Ресурс **plannerAssignments** представляет назначения ресурса plannerTask. Этот тип — открытый тип. Каждое имя свойства в этом типе '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 53926692daa00e20a9db5626bbee2dae6ddee80b1a97d847250cfc2d5a78f807
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c6c90a607622dc47f7fd3a3d77b7b42b2c39b6e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044344"
 ---
 # <a name="plannerassignments-resource-type"></a>Тип ресурса plannerAssignments
 
@@ -22,7 +22,7 @@ ms.locfileid: "54216667"
 ## <a name="properties"></a>Свойства
 Свойства открытого типа могут быть определены клиентом. Однако в этом случае клиент должен предоставить задамые им имена пользователей в качестве имен свойств. Свойство должно быть задавано **объекту plannerAssignment** для создания или изменения назначений, а также для удаления их.
 
-Пример:
+Пример.
 
 <!-- {
   "blockType": "resource",
