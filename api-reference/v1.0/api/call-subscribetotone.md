@@ -2,15 +2,15 @@
 title: 'вызов: subscribeToTone'
 description: Подписка на DTMF (двухтонная многочастотная сигнализация). Это позволяет вам быть уведомленным, когда пользователь нажимает клавиши на "Dialpad".
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bca2ba67be2f62f87c84390a5a1bc3a2799e9498
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a7b4cec6eac6d927c3120d13239480de5979fd1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016829"
 ---
 # <a name="call-subscribetotone"></a>вызов: subscribeToTone
 
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Уникальная строка контекста клиента. Может иметь не более 256 символов. |
+| clientContext  | Строка  | Уникальная строка контекста клиента. Может иметь не более 256 символов. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.

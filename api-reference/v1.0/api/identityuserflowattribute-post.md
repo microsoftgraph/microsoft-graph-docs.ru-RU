@@ -1,16 +1,16 @@
 ---
 title: Создание identityUserFlowAttribute
 description: Создание нового объекта identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: ac068b6956c48f67245f6c93dca764cb575e3ba3
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: c02baf42a497ff10324c4ad26f0eb268c2fd0af2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045695"
 ---
 # <a name="create-identityuserflowattribute"></a>Создание identityUserFlowAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920857"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибута потока внешних удостоверений
+* Администратор атрибута пользователя внешней Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 

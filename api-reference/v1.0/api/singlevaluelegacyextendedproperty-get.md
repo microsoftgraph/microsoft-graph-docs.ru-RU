@@ -1,16 +1,16 @@
 ---
 title: Получение объекта singleValueLegacyExtendedProperty
-description: Можно получить один экземпляр ресурса, расширенный с определенным расширенным свойством, или коллекцию экземпляров ресурсов
-localization_priority: Normal
+description: Один экземпляр ресурса можно расширить с помощью определенного расширенного свойства или коллекции экземпляров ресурсов.
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 058d52ed48aece0c6076dceed0e2d48d71332850
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fee49a863f56effc9c635dc6c868455eed88a6b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085100"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Получение объекта singleValueLegacyExtendedProperty
 
@@ -44,7 +44,7 @@ ms.locfileid: "50134857"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, из которых вы получаете расширенное свойство, и типа запрашиваемого разрешения (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным требованием для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, с который вы получаете расширенное свойство, и от запрашиваемого типа разрешений (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -242,7 +242,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 #### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a>Получение экземпляра ресурса с соответствующим расширенным свойством
 Тело отклика содержит объект, который представляет запрашиваемый экземпляр ресурса, дополненный соответствующим объектом [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md).

@@ -1,22 +1,22 @@
 ---
 title: Обновление teamsApp
-description: 'Обновление приложения, ранее опубликованного в каталоге приложений Teams. '
+description: 'Обновление приложения, ранее опубликованного в каталоге Teams приложения. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8610c51922989d96f455073ea824c258d6d454ba
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f10ae41876d4001c0de0592984019e3271ecb964
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084911"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
 Пространство имен: microsoft.graph
 
-Обновление [приложения,](../resources/teamsapp.md) ранее опубликованного в каталоге приложений Microsoft Teams. Чтобы обновить приложение, необходимо задать свойство **distributionMethod** для `organization` приложения.
+Обновление [приложения,](../resources/teamsapp.md) ранее опубликованного в каталоге Microsoft Teams приложения. Чтобы обновить приложение, необходимо задать свойство **distributionMethod** для `organization` приложения.
 
 Этот API специально обновляет приложение, опубликованное в каталоге приложений организации (каталоге приложений клиента).
 
@@ -44,7 +44,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |Свойство|Тип|Описание|
 |----|----|----|
-|requiresReview| Boolean | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
+|requiresReview| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -55,7 +55,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса включите полезной нагрузкой манифест Teams zip. Дополнительные сведения см. [в материале Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
+В теле запроса включите полезное Teams почтовый манифест. Дополнительные сведения см. [в материале Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
 
 >**Примечание:** Используйте ID, возвращенный из вызова опубликованных приложений [Списка,](./appcatalogs-list-teamsapps.md) для ссылки на приложение, которое необходимо обновить. Не используйте ID из манифеста пакета почтовых приложений.
 
@@ -65,7 +65,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Пример 1. Обновление приложения, ранее опубликованного в каталоге приложений Microsoft Teams
+### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Пример 1. Обновление приложения, ранее опубликованного в каталоге Microsoft Teams приложения
 
 #### <a name="request"></a>Запрос
 
@@ -79,7 +79,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-Дополнительные сведения о почтовом файле приложения Teams см. в [материале Create app package.](/microsoftteams/platform/concepts/apps/apps-package)
+Дополнительные сведения о файле Teams приложения см. в [материале Create app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="response"></a>Отклик

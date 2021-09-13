@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов планировщика
 description: Ресурс **планировщика** — это точка входа для объектной модели Planner. Он возвращает ресурс **планировщика singleton.**  Он не содержит никаких полезных свойств.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 430235e1a69a50b6c7cc3031cfd4bc3efd605f1c57333da2e427eb6c3f34905e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cdb0234edce0e28456ab830b259f09d1f874b1c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044386"
 ---
 # <a name="planner-resource-type"></a>Тип ресурсов планировщика
 
@@ -23,18 +23,18 @@ ms.locfileid: "54218445"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание объекта plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md);| Создайте новый **планировщикBucket,** разместив в коллекции ведер.|
+|[Создание объекта plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| Создайте новый **планировщикBucket,** разместив в коллекции ведер.|
 |[Создание объекта plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Создайте новый **планировщикPlan,** разместив в коллекции планов.|
 |[Создание объекта plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md);| Создайте новый **планировщикTask,** разместив в коллекции задач.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных ведер|
 |планы|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных планов|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных задач|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

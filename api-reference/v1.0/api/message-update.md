@@ -2,15 +2,15 @@
 title: Обновление сообщения
 description: Обновление свойств объекта сообщения.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae4b90f14410321a052f7fa9cfa852e46582b0bd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c125f105ac97b297fd49c2ef422fea077f0ff0d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073011"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
@@ -58,7 +58,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для календаря. Только для чтения. Допускает значение NULL.|
 |replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Это свойство можно обновить, только если параметр isDraft имеет значение true.|
-|sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Можно изменять при отправке сообщения из [общего почтового ящика](/exchange/collaboration/shared-mailboxes/shared-mailboxes) или отправке сообщения в качестве [представителя](https://support.office.com/ru-RU/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактически используемому почтовому ящику.|
+|sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Можно изменять при отправке сообщения из [общего почтового ящика](/exchange/collaboration/shared-mailboxes/shared-mailboxes) или отправке сообщения в качестве [представителя](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактически используемому почтовому ящику.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для календаря. Только для чтения. Допускается значение NULL.|
 |subject|String|Тема сообщения. Это свойство можно обновить, только если параметр isDraft имеет значение true.|
 |toRecipients|Коллекция объектов Recipient|Получатели сообщения, указанные в поле "Кому".|
@@ -106,7 +106,7 @@ Content-length: 248
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

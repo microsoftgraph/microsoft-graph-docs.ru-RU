@@ -2,15 +2,15 @@
 title: 'Chart: delete'
 description: Удаляет объект диаграммы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e58f88ccdf0bfec124af23aa3f32875f4780ba52
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f60d2f8c500e0668b33dc5da99689793eca66a32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056818"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -36,7 +36,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса

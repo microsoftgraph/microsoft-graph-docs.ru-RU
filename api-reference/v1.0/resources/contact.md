@@ -2,15 +2,15 @@
 title: Тип ресурса contact
 description: Контакт — элемент в Outlook, в котором вы можете упорядочить и хранить сведения о людях и организациях, с которыми поддерживаете связь. Контакты содержатся в папках контактов.
 author: kevinbellinger
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2b07870ca74ed077030b0159c8892d98a3f398ea12bfd325f382b7c8134dc429
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c527b9c25a038e7440c4136b339bcc52b43b8958
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235697"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049662"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -181,7 +181,7 @@ ms.locfileid: "54235697"
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users)

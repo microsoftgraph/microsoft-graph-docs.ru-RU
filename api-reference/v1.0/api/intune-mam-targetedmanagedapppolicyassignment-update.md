@@ -2,15 +2,15 @@
 title: Обновление объекта targetedManagedAppPolicyAssignment
 description: Обновление свойств объекта targetedManagedAppPolicyAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4a89e13b56d49628b134eea35188f25ac1945ded54252f4603ea21e9ec959b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3a2749b6e1b5e6dd367e07e984064c2da5730ee4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007973"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Обновление объекта targetedManagedAppPolicyAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "54243842"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id|
+|id|Строка|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор для развертывания в группе или приложении|
 
 

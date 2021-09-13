@@ -2,15 +2,15 @@
 title: Обновление чата
 description: Обновление свойств объекта чата.
 author: bhartono
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68d60a15767d35bce2d93950f0734e77891f47a2
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 6bfab4b442fa171231004a8a88e92848751ba68c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022963"
 ---
 # <a name="update-chat"></a>Обновление чата
 Пространство имен: microsoft.graph

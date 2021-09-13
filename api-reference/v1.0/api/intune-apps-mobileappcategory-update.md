@@ -2,15 +2,15 @@
 title: Обновление объекта mobileAppCategory
 description: Обновление свойств объекта mobileAppCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d96d21fd020b2797cf4c2aedb787cc8201a42c26654ffb624a748821f5d126d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae18840e6e5ec8ccefadcf4fc024cf99094e6e7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079997"
 ---
 # <a name="update-mobileappcategory"></a>Обновление объекта mobileAppCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "54197480"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -42,7 +42,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя категории приложений.|
+|displayName|Строка|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта mobileAppCategory.|
 
 

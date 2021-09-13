@@ -1,16 +1,16 @@
 ---
 title: тип ресурса keyCredential
 description: Содержит ключевые учетные данные, связанные с приложением или директором службы. Свойство **keyCredentials** сущностями приложения и servicePrincipal — это коллекция **keyCredential**.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 7ec7c42f49e0bed71abf1911b73dbb40d3cdd67a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5da7db493e17261004a4913211825d1d62b8196a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078744"
 ---
 # <a name="keycredential-resource-type"></a>тип ресурса keyCredential
 
@@ -22,7 +22,7 @@ ms.locfileid: "58255775"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа |
-| displayName | Строка | Удобное имя для ключа. Необязательный. |
+| displayName | Строка | Удобное имя для ключа. Необязательное. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |key|Двоичный| Необработанные данные сертификата в массиве byte, преобразованных в строку Base64; например, `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
 |keyId|Guid|Уникальный идентификатор (GUID) для ключа.|

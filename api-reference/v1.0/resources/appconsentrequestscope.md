@@ -2,15 +2,15 @@
 title: тип ресурса appConsentRequestScope
 description: Сведения о динамических области разрешений, для которых запрашивается доступ.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d0ad4b765d37192986bfafa3330b916cd49c2545e9888f14f2bd8e242df6018d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ddbacf142d47bf3f4cf1e84c8d69357619788ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062833"
 ---
 # <a name="appconsentrequestscope-resource-type"></a>тип ресурса appConsentRequestScope
 
@@ -22,9 +22,9 @@ ms.locfileid: "54141842"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя области.|
+|displayName|Строка|Имя области.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса shiftAvailability
 description: Доступность пользователя, который должен быть запланирован для работы, и его шаблон повторения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d1c75c5496df6e8d858be74b8001c57fe16de0b3d44a98d4229e1ad09ab77f8c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e04cbdd14349b4ffc3f01ce22c10948e5fbaff0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032183"
 ---
 # <a name="shiftavailability-resource-type"></a>тип ресурса shiftAvailability
 

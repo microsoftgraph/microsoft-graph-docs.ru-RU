@@ -2,15 +2,15 @@
 title: Перечисление объектов roleDefinition
 description: Список свойств и связей объектов roleDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2ddbb5c3c8cd00f92459920c2f9a3514cacb952748eec9327694f551c67130e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8bcfecd150395b8523add30a9874a9543cabc3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037574"
 ---
 # <a name="list-roledefinitions"></a>Перечисление объектов roleDefinition
 
@@ -27,7 +27,7 @@ ms.locfileid: "54208995"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

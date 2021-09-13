@@ -1,16 +1,16 @@
 ---
 title: Получение объекта Icon
 description: Получение свойств и связей объекта значка.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8bf2db054f56570c2291f6fb03c162f2572b46f7ae2810be9071bb6978719f64
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 43dc05813e7531c9871236f3afd429bd2e7415a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045821"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
 

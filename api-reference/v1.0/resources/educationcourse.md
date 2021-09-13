@@ -2,15 +2,15 @@
 title: тип ресурса educationCourse
 description: Представляет сведения о курсе для класса.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e54870ad3633f0b0170a54fad32ce8aa0baa2843466dd0f0e051caeacca54ffa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1b0345e6be308a175fbb14ab618fcf66564f45f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036713"
 ---
 # <a name="educationcourse-resource-type"></a>тип ресурса educationCourse
 
@@ -23,7 +23,7 @@ ms.locfileid: "54135255"
 | Свойство     | Тип   | Описание                               |
 | :----------- | :----- | :---------------------------------------- |
 | courseNumber | String | Уникальный идентификатор для курса.         |
-| description  | String | Описание курса.                |
+| description  | Строка | Описание курса.                |
 | displayName  | String | Имя курса.                       |
 | externalId   | String | ID курса из системы синхронизации. |
 | subject      | String | Тема курса.                    |

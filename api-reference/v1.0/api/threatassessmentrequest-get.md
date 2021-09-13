@@ -1,16 +1,16 @@
 ---
 title: Получение объекта threatAssessmentRequest
 description: Извлечение свойств и связей указанного объекта threatassessmentrequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: b21b7d69d241c5d986713b9e905822faf879147a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6db1ce538d676c72f4373793d2e89a0333c7360c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079087"
 ---
 # <a name="get-threatassessmentrequest"></a>Получение объекта threatAssessmentRequest
 
@@ -31,7 +31,7 @@ ms.locfileid: "52053806"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | ThreatAssessment.Read.All                  |
+| Для приложений                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -176,7 +176,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -249,7 +249,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -321,7 +321,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -392,7 +392,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса scheduleInformation
 description: Представляет доступность пользователя, списка рассылки или ресурса за определенный период времени.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 67b7396cfebc19baa3771c2ec8d153950928288506cfc699851b891e15409a0f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e59fdfa4b874562aaf268b9fc7fea712ad056e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035978"
 ---
 # <a name="scheduleinformation-resource-type"></a>тип ресурса scheduleInformation
 
@@ -21,9 +21,9 @@ ms.locfileid: "54231483"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityView |String |Представляет собой объединенную точку зрения на доступность всех элементов `scheduleItems` в . Представление состоит из интервалов времени. Доступность в течение каждого интервала времени указывается с: `0` = бесплатно, = предварительный, = занят, = вне `1` `2` `3` офиса, `4` = работа в другом месте.|
+|availabilityView |Строка |Представляет собой объединенную точку зрения на доступность всех элементов `scheduleItems` в . Представление состоит из интервалов времени. Доступность в течение каждого интервала времени указывается с: `0` = бесплатно, = предварительный, = занят, = вне `1` `2` `3` офиса, `4` = работа в другом месте.|
 |error |[freeBusyError](freebusyerror.md) |Сведения об ошибках при попытке получить доступность пользователя, списка рассылки или ресурса. |
-|scheduleId |String |SMTP-адрес пользователя, списка рассылки или ресурса, определяющий экземпляр **scheduleInformation.** |
+|scheduleId |Строка |SMTP-адрес пользователя, списка рассылки или ресурса, определяющий экземпляр **scheduleInformation.** |
 |scheduleItems |[коллекция scheduleItem](scheduleitem.md) |Содержит элементы, описывая доступность пользователя или ресурса. |
 |workingHours |[workingHours](workinghours.md) |Дни недели и часы работы пользователя в определенном часовом поясе. Они устанавливаются в составе почтовых [ящиков пользователяSettings](mailboxsettings.md).|
 

@@ -2,15 +2,15 @@
 title: Обновление диапазона
 description: Обновление свойств объекта диапазона.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d0b5890b48efaeb18ebb0ac45a253a6d1b9eb97c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 66eb2642151456720a4446e3fc2dd5ce6f02e34a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032568"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -39,7 +39,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +86,7 @@ Content-length: 169
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Добавление educationClass к educationSchool
 description: Добавление класса в учебное заведение.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 25eaa53f0ec7314bb39546834fbaede54e7b4267
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 88525d04225d486d8cb22ac0a490e3f0d7a85641
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783657"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090623"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Добавление educationClass к educationSchool
 
@@ -38,7 +38,7 @@ POST /education/schools/{id}/classes/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставьте описание объекта [educationClass](../resources/educationclass.md) в формате JSON.
 
 

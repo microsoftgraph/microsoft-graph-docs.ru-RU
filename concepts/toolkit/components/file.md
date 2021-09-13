@@ -1,14 +1,14 @@
 ---
 title: Компонент файла в microsoft Graph набор средств
 description: Компонент файла используется для отображения файла, показывая значок и имя
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
-ms.openlocfilehash: a5e3569822d01c06d881070b56653f5bd2e2a89f2905c787699caa926c9b98b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b3aaac8e0216cad39b0dd566de763d26eacfb4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035334"
 ---
 # <a name="file-component-in-the-microsoft-graph-toolkit"></a>Компонент файла в microsoft Graph набор средств
 
@@ -109,7 +109,7 @@ mgt-file {
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Области разрешений | API |
+| Настройка | Области разрешений | API |
 | ------------- | ----------------- | --- |
 | Разработчик предоставляет `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}` |
 | Разработчик предоставляет `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}` |

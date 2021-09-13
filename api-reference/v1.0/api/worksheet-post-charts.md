@@ -2,15 +2,15 @@
 title: Создание объекта Chart
 description: С помощью этого API можно создать объект Chart.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: af852d0f1794906af3f95c55f4e0d7e054753f94
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3af11889feb795fce990c7969c7cd71c6d2ed5db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053219"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -86,7 +86,7 @@ Content-length: 52
 
 В теле запроса поставляем JSON-представление объекта [WorkbookChart.](../resources/chart.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

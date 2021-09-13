@@ -2,15 +2,15 @@
 title: Получить adminConsentRequestPolicy
 description: Ознакомьтесь с свойствами и отношениями объекта adminConsentRequestPolicy.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cfbd3cd98c17c9e261711932a0169c977b1d59ba
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: a6eea39edac172a890b5d60b524e40df14f9a802
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080484"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>Получить adminConsentRequestPolicy
 

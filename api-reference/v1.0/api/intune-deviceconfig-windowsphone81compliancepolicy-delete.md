@@ -2,15 +2,15 @@
 title: Удаление объекта windowsPhone81CompliancePolicy
 description: Удаляет объект windowsPhone81CompliancePolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddcbdc59e0d02162b6a468bff137e5948c30eb82e11a215cab5ba0fbe2e2a2d5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d3a2e726803ae788f331627b9b4afd4c6b5c35c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54247181"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068048"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>Удаление объекта windowsPhone81CompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "54247181"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

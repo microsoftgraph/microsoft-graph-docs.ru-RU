@@ -1,16 +1,16 @@
 ---
 title: Создание openShift
 description: Создание экземпляра объекта openShift.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f548b2ed0b0f99844f362260bf52d673d0930e77fbc6e06d34d83104cc2194fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d6ee60a73beceb52b78c7ff46be25fee7a5084a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067852"
 ---
 # <a name="create-openshift"></a>Создание openShift
 
@@ -26,7 +26,7 @@ ms.locfileid: "54175548"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Schedule.ReadWrite.All |
+| Для приложений                            | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
@@ -105,7 +105,7 @@ Content-length: 244
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: неопубликованный'
 description: Отопубликуй тип контента с сайта концентратора типа контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: f93c86721fb3f1fd030188b5a0b20e3946fdb86c
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1faada167489b2d57770584843d9b8afbfd48934
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038114"
 ---
 # <a name="contenttype-unpublish"></a>contentType: неопубликованный
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ Unpublish a [contentType][] from a content type hub site.
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Sites.FullControl.All    |
-|Приложение | Sites.FullControl.All |
+|Для приложений | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,6 +54,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_unpublish"
@@ -62,6 +64,24 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ```http
 POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-unpublish-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-unpublish-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-unpublish-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-unpublish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

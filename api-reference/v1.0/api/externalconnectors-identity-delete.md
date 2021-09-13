@@ -2,15 +2,15 @@
 title: Удаление удостоверения участника
 description: Удалите члена из externalGroup, удалив соответствующий ресурс удостоверений.
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a518b782b5b705759659cd20480f91217b4abea8
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 0f56893f6234d00c09a82abc115f014b357ba973
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046144"
 ---
 # <a name="delete-identity"></a>Удаление удостоверений
 Пространство имен: microsoft.graph.externalConnectors
@@ -56,6 +56,8 @@ DELETE /connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
 ### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identity"
@@ -65,6 +67,24 @@ DELETE /connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
 ``` http
 DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea3d537902000/members/14m1b9c38qe647f6a
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-identity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Отклик

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: Получите количество пользователей, включенных, и пользователей, активировав подписку Office на настольных компьютерах или общих компьютерах.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6608fac79a7c37f27af35a375c3fe67bb77c4673d4452d1cf9944bbbb1e85a3d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a597745271d81b736632513834c1a5861b899d7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026149"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
@@ -46,7 +46,7 @@ GET /reports/getOffice365ActivationsUserCounts
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                |
-| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
+| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательное. |
 
 ## <a name="response"></a>Отклик
 

@@ -2,15 +2,15 @@
 title: Удаление приложения
 description: Удаление объекта приложения.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bb1d2b596f9bf64a8ad055834747a3cefb3f00c9
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f49084a7eda292c8ef40e6852cfccaf49cff86cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023075"
 ---
 # <a name="delete-application"></a>Удаление приложения
 
@@ -25,7 +25,7 @@ ms.locfileid: "58260847"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

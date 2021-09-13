@@ -1,16 +1,16 @@
 ---
 title: Создание oAuth2PermissionGrant
 description: Создайте объект oAuth2PermissionGrant, представляющий делегированную выдачу разрешений.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: e893f69fba9e8494854cb89b030f75fe5b30dc8f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4e7260407b361eabe17c55af1684d6fc0e269b8b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062924"
 ---
 # <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>Создание делегированного разрешения (oAuth2PermissionGrant)
 
@@ -29,7 +29,7 @@ ms.locfileid: "50448202"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Для приложения | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

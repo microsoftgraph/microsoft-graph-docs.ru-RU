@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса provisionedPlan
 description: Свойство **provisionedPlans** объектов user и organization представляет собой коллекцию объектов **provisionedPlan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 88526891871f2396142457eefc84c54811505c5fa4735a46875f28e500368504
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9317ba550b8ae838a2db5f5fc936948a46066399
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019176"
 ---
 # <a name="provisionedplan-resource-type"></a>Тип ресурса provisionedPlan
 

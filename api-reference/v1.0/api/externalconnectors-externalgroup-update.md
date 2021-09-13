@@ -2,15 +2,15 @@
 title: Обновление externalGroup
 description: Обновление свойств объекта externalGroup.
 author: sacampbe-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 52a818e5679d212a0afe1318c9125d1d8f88ffcd
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: f0a6f079adc463392475d743413210d980a4c6b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022376"
 ---
 # <a name="update-externalgroup"></a>Обновление externalGroup
 Пространство имен: microsoft.graph.externalConnectors
@@ -51,8 +51,8 @@ PATCH /connections/{connectionsId}/groups/{externalGroupId}
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| displayName | Строка | Дружеское имя внешней группы. Необязательный параметр.                                                                      |
-| description | Строка | Описание внешней группы. Необязательный параметр.                                                                         |
+| displayName | Строка | Дружеское имя внешней группы. Необязательно.                                                                      |
+| description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 
 
@@ -63,6 +63,8 @@ PATCH /connections/{connectionsId}/groups/{externalGroupId}
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalgroup"
@@ -77,6 +79,24 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-externalgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -2,15 +2,15 @@
 title: Тип ресурса ChartSeriesFormat
 description: Инкапсулирует свойства формата для ряда диаграммы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ac4acd20c47ea54a7f4eef86b0317de79e7a689d41de6414eac7535082a7bb6e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7b4f59ac8e154ac3b3be9115ea6d6e4ea126b7c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078933"
 ---
 # <a name="chartseriesformat-resource-type"></a>Тип ресурса ChartSeriesFormat
 
@@ -25,14 +25,14 @@ ms.locfileid: "54147002"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.|
 |line|[WorkbookChartLineFormat](chartlineformat.md)|Представляет форматирование линий. Только для чтения.|
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

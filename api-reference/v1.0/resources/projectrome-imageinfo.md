@@ -1,16 +1,16 @@
 ---
 title: тип ресурса imageInfo
 description: Сложный тип для представления свойства **атрибуции** в visualInfo части объекта действия.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 1f8f4a69304412296030eb50a907bdf9ca6f6c000b16e295688c836585fbb775
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf76bd7e81f913f9641568bbd20c62a1c3ed16a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019197"
 ---
 # <a name="imageinfo-resource-type"></a>тип ресурса imageInfo
 
@@ -22,9 +22,9 @@ ms.locfileid: "54229005"
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|iconUrl | String | Необязательный; URI, который указывает на значок, который представляет приложение, используемую для создания действия|
-|alternateText | String | Необязательный; alt-text accessible content for the image|
-|addImageQuery | Логическое | Необязательный; параметр, используемый для того, чтобы указать, что сервер может динамически отрисовки изображения в ответ на параметризацию. Например— изображение с высоким контрастом|
+|iconUrl | Строка | Необязательный; URI, который указывает на значок, который представляет приложение, используемую для создания действия|
+|alternateText | Строка | Необязательный; alt-text accessible content for the image|
+|addImageQuery | Логический | Необязательный; параметр, используемый для того, чтобы указать, что сервер может динамически отрисовки изображения в ответ на параметризацию. Например— изображение с высоким контрастом|
 
 ## <a name="json-representation"></a>Представление JSON
 

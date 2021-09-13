@@ -1,16 +1,16 @@
 ---
 title: Создание однозначного расширенного свойства
 description: 'Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3e2a47d9570f946e66e2722d476a4fbbd302705878bce91f6713b150991e1670
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba741a172d8c93616626c4848cb6f8e2793155b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085086"
 ---
 # <a name="create-single-value-extended-property"></a>Создание однозначного расширенного свойства
 
@@ -38,7 +38,7 @@ ms.locfileid: "54235781"
 ## <a name="permissions"></a>Разрешения
 В зависимости от ресурса, в который вы создаете расширенное свойство, и типа разрешений (делегирован или приложения), запрашиваемого вами, разрешение, указанное в следующей таблице, является минимальным, требуемого для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
@@ -129,7 +129,7 @@ PATCH /groups/{id}/events/{id}
 |Свойство|Тип|Описание|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Массив из одного или нескольких расширенных свойств с одним значением. |
-|id|String|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|id|Строка|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
 |значение|string|Для каждого свойства из коллекции **singleValueExtendedProperties** следует указать значение. Обязательный параметр.|
 
 При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **singleValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.
@@ -142,7 +142,7 @@ PATCH /groups/{id}/events/{id}
 В результате успешной операции создания в существующем экземпляре ресурса возвращается код `200 OK`.
 
 
-#### <a name="response-body"></a>Текст отклика
+#### <a name="response-body"></a>Текст ответа
 
 При создании расширенного свойства отклик будет включать только новый или существующий экземпляр (он будет без нового расширенного свойства). Чтобы отобразить только что созданное расширенное свойство, [примените к экземпляру, содержащему это расширенное свойство, параметр $expand](../api/singlevaluelegacyextendedproperty-get.md).
 

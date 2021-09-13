@@ -2,15 +2,15 @@
 title: Delete mobileAppCategory
 description: Удаляет объект mobileAppCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fee4846ad0819fcaae758c70e7b6f0893d6f3ed89af4902cf0fe05a23e104a21
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e5788b21b9ebf3d5387bf420fb60237be2de713a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54219201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073634"
 ---
 # <a name="delete-mobileappcategory"></a>Delete mobileAppCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "54219201"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -42,7 +42,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCatego
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

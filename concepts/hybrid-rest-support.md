@@ -1,13 +1,13 @@
 ---
 title: Использование интерфейсов REST API для доступа к гибридным развертываниям Exchange (предварительная версия)
 description: Служба Microsoft Graph предоставляет доступ к почтовым ящикам пользователей в облаке в Exchange Online в составе Microsoft 365.
-localization_priority: Priority
-ms.openlocfilehash: 87e907e5c3f13a48c2c7905d9c93c0d6c36371f2d303ff28afcb0064f6d003b9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: 6234d90e23d3db903f63127f94a30c160db1a612
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055754"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Использование интерфейсов REST API для доступа к гибридным развертываниям Exchange (предварительная версия)
 

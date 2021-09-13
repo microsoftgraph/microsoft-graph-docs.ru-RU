@@ -2,15 +2,15 @@
 title: Обновление контакта
 description: Обновление свойств объекта contact.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 51231bdca731fb1636a3b52cdc1a27b36a21c28b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7efb9013b43958ceee585975b8296a4ec607c016
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053679"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -135,7 +135,7 @@ Content-length: 1977
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

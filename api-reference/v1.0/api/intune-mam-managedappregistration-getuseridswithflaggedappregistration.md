@@ -2,15 +2,15 @@
 title: Функция getUserIdsWithFlaggedAppRegistration
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5294a39ce7ccacf80759bac5ced7b421568a3b90a23af8c057f2bfabdf7558e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8920fe70c36f9757aa2d52ee380acb2f289ed27a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073186"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>Функция getUserIdsWithFlaggedAppRegistration
 
@@ -27,7 +27,7 @@ ms.locfileid: "54233954"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

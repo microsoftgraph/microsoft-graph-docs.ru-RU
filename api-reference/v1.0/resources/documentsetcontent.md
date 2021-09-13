@@ -2,15 +2,15 @@
 author: swapnil1993
 title: тип ресурса documentSetContent
 description: Ресурс documentSetContent содержит метаданные о файле, присутствуют в расположении контента по умолчанию.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5926e80c6c507591942009ae00ea199fdccfdca0
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 741047ab90badd16e4f7dea61c92ca8d952ee978
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072542"
 ---
 # <a name="documentsetcontent-resource-type"></a>тип ресурса documentSetContent
 
@@ -23,9 +23,9 @@ ms.locfileid: "58696834"
 |:---------------|:--------|:--------------------------------------------------|
 | contentType    | microsoft.graph.contentTypeInfo | Сведения о типе контента файла. |
 | fileName      | string  | Имя файла в папке ресурсов, который должен быть добавлен в качестве контента по умолчанию или шаблона в наборе документов.|
-| folderName         | string  | Имя папки, в которой будет размещен файл при создания нового набора документов в библиотеке.|
+| folderName         | строка  | Имя папки, в которой будет размещен файл при создания нового набора документов в библиотеке.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Вот представление JSON ресурса **documentSetContent.**
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.documentSetContent" } -->

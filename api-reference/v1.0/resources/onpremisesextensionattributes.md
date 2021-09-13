@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса onPremisesExtensionAttributes
 description: Свойство **onPremisesExtensionAttributes** объекта пользователя содержит 15 пользовательских свойств атрибута расширения. Для **пользователя onPremisesSyncEnabled** этот набор свойств освоен в локальном Active Directory и синхронизирован с Azure AD и является только для чтения. Для облачного пользователя (где **onPremisesSyncEnabled** является ложным), эти свойства можно Exchange Online. Атрибуты читают только в Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8bc170e1878c1382cdf999211aae8ee0fbf05231c92c297ec87ca11ce64f505e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5b1ef010abec3ab0e3e4c5279654603faed4e220
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072010"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 
@@ -23,23 +23,23 @@ ms.locfileid: "54189410"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensionAttribute1|String| Первый настраиваемый атрибут расширения. |
+|extensionAttribute1|Строка| Первый настраиваемый атрибут расширения. |
 |extensionAttribute2|String| Второй настраиваемый атрибут расширения. |
 |extensionAttribute3|String| Третий настраиваемый атрибут расширения. |
 |extensionAttribute4|String| Четвертый настраиваемый атрибут расширения. |
-|extensionAttribute5|String| Пятый настраиваемый атрибут расширения. |
+|extensionAttribute5|Строка| Пятый настраиваемый атрибут расширения. |
 |extensionAttribute6|String| Шестой настраиваемый атрибут расширения. |
-|extensionAttribute7|String| Седьмой настраиваемый атрибут расширения. |
-|extensionAttribute8|String| Восьмой настраиваемый атрибут расширения. |
-|extensionAttribute9|String| Девятый настраиваемый атрибут расширения. |
-|extensionAttribute10|String| Десятый настраиваемый атрибут расширения. |
+|extensionAttribute7|Строка| Седьмой настраиваемый атрибут расширения. |
+|extensionAttribute8|Строка| Восьмой настраиваемый атрибут расширения. |
+|extensionAttribute9|Строка| Девятый настраиваемый атрибут расширения. |
+|extensionAttribute10|Строка| Десятый настраиваемый атрибут расширения. |
 |extensionAttribute11|String| Одиннадцатый настраиваемый атрибут расширения. |
-|extensionAttribute12|String| Двенадцатый настраиваемый атрибут расширения. |
-|extensionAttribute13|String| Тринадцатый настраиваемый атрибут расширения. |
+|extensionAttribute12|Строка| Двенадцатый настраиваемый атрибут расширения. |
+|extensionAttribute13|Строка| Тринадцатый настраиваемый атрибут расширения. |
 |extensionAttribute14|String| Четырнадцатый настраиваемый атрибут расширения. |
 |extensionAttribute15|String| Пятнадцатый настраиваемый атрибут расширения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

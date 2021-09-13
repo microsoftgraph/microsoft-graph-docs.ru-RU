@@ -2,15 +2,15 @@
 title: Перечисление учебных заведений
 description: Получение списка учебных заведений, в которых доступен этот курс.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 477f6fa46d765020d43540e5ed5ddbbb950beae8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c71b1b5ef4efc05c20d14de59f6e2d1fcabc1ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090637"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

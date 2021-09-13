@@ -2,15 +2,15 @@
 title: тип ресурса teamsAppDefinition
 description: Представляет сведения об одной версии teamsApp.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9ca384f507fec1bf813fea20ffb3b0034a5e43de0d92604c81cad84b514f37b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 923cba82d9def93b619545cf4184180ef220f247
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218403"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021430"
 ---
 # <a name="teamsappdefinition-resource-type"></a>тип ресурса teamsAppDefinition
 
@@ -22,13 +22,13 @@ ms.locfileid: "54218403"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный ID (не Teams ID приложения). |
-| teamsAppId          | Строка   | ID из манифеста Teams приложения. |
-| publishingState| Строка|Опубликованный статус определенной версии приложения Teams. Возможные значения:</br>`submitted`— конкретная версия Teams была представлена и находится на рассмотрении. </br>`published`— Запрос на публикацию конкретной версии приложения Teams утвержден администратором и приложение опубликовано. </br> `rejected`— Запрос на публикацию конкретной версии приложения Teams был отклонен администратором. |
+| id                  | string   | Уникальный ID (не Teams ID приложения). |
+| teamsAppId          | string   | ID из манифеста Teams приложения. |
+| publishingState| string|Опубликованный статус определенной версии приложения Teams. Возможные значения:</br>`submitted`— конкретная версия Teams была представлена и находится на рассмотрении. </br>`published`— Запрос на публикацию конкретной версии приложения Teams утвержден администратором и приложение опубликовано. </br> `rejected`— Запрос на публикацию конкретной версии приложения Teams был отклонен администратором. |
 | displayName         | string   | Имя приложения, предоставленного разработчиком приложения. |
-| version             | Строка   | Номер версии приложения. |
-| shortDescription    | Строка   | Краткое описание приложения. |
-| description         | строка   | Подробное описание приложения. |
+| version             | string   | Номер версии приложения. |
+| shortDescription    | string   | Краткое описание приложения. |
+| description         | string   | Подробное описание приложения. |
 
 ## <a name="relationships"></a>Связи
 

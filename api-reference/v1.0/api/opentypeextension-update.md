@@ -1,16 +1,16 @@
 ---
 title: Обновление открытого расширения
 description: 'Обновим открытое расширение (объект openTypeExtension) свойствами в теле запроса:'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: e32fc9a5a37453bfe77a2fa4a8539d69ebedef6f
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 8dfdb00a759f89ed4650d9cd3fcad55a05f1403e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50470723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079276"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 

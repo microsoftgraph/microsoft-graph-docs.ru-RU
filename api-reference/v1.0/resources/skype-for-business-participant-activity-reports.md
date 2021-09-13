@@ -1,16 +1,16 @@
 ---
 title: Отчеты об участии в конференциях Skype для бизнеса
 description: Эти отчеты позволяют получить подробные сведения об участии сотрудников организации в конференциях Skype для бизнеса. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 0aae31ba04927b779f471921bf36dce358a3e2cff397b62e6733e05d34721d5c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1dc12c3c2a83808c4168fa19a413f249ef6ba2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59014344"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Отчеты об участии в конференциях Skype для бизнеса
 

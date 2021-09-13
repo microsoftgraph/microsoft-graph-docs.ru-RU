@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса reminder
 description: Напоминание о событии в календаре пользователей.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8a60e6eb0ebdd91540fafc5c579ec6992428bd13fc2edae8668f5878205c54aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ae24d37e05d104faf83da1c5056237686b88dcf6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067033"
 ---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 
@@ -21,7 +21,7 @@ ms.locfileid: "54184503"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|changeKey|String|Указывает версию напоминания. При каждом изменении напоминания также меняется значение **changeKey**. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
+|changeKey|Строка|Указывает версию напоминания. При каждом изменении напоминания также меняется значение **changeKey**. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
 |eventId|String|Уникальный идентификатор события. Только для чтения.|
 |eventLocation|[Location](location.md)|Место проведения события.|

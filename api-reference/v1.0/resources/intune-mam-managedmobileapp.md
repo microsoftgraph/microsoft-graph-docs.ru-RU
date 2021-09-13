@@ -2,15 +2,15 @@
 title: Тип ресурса managedMobileApp
 description: Идентификатор для развертывания приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1039d898df325e8b9a8de9d5e00f0938873cf033cf7caf93e169a76798f41726
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c27f028881c3911e5c113bd93cdcc4af4751e3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192336"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032330"
 ---
 # <a name="managedmobileapp-resource-type"></a>Тип ресурса managedMobileApp
 

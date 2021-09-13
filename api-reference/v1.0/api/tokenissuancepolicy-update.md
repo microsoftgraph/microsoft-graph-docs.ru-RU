@@ -1,16 +1,16 @@
 ---
 title: Обновление tokenIssuancePolicy
 description: Обновление свойств объекта tokenIssuancePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3e9784557a973f38dc7a172ae0a0fec57c763292
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1553f719813e4879b0130a431f8f52721afea0da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094529"
 ---
 # <a name="update-tokenissuancepolicy"></a>Обновление tokenIssuancePolicy
 
@@ -52,9 +52,9 @@ PATCH /policies/tokenIssuancePolicies/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
-|description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательный.|
-|isOrganizationDefault|Логический|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
+|description|Строка| Описание этой политики.|
+|displayName|String| Отображение имени для этой политики. Обязательное.|
+|isOrganizationDefault|Boolean|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

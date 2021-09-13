@@ -2,15 +2,15 @@
 title: Удаление домена
 description: Удаление домена из клиента.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0ecaf2cd5c1f8f0ed0281be585a85008e6870a8f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ae06ee03831ba2903f50f758968c997a70f2479f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056695"
 ---
 # <a name="delete-domain"></a>Удаление домена
 
@@ -29,7 +29,7 @@ ms.locfileid: "52050509"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Domain.ReadWrite.All |
 

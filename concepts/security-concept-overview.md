@@ -2,15 +2,15 @@
 title: Обзор API безопасности Microsoft Graph
 description: С помощью API безопасности Microsoft Graph можно подключаться к продуктам Майкрософт по обеспечению безопасности, службам и партнерам, чтобы упростить операции обеспечения безопасности и улучшить защиту от угроз, их обнаружение и возможности реагирования. API безопасности Microsoft Graph является промежуточной службой (или посредником), предоставляющей единый программный интерфейс для подключения нескольких поставщиков безопасности Microsoft Graph (также называемых поставщиками безопасности или поставщиками). Запросы к API безопасности Microsoft Graph включаются в федерацию для всех соответствующих поставщиков безопасности. Результаты объединяются и возвращаются запрашивающему приложению в общей схеме, как показано на рисунке ниже. Подробные сведения см. в статье "Поток данных API безопасности Microsoft Graph".
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 459f82f08ac8024ff1773809cd860e3b13acd051c822bb181b2ddd1718dff377
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb11b07c2770fc3724ed374b42f94bf1b4ade520
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093948"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор API безопасности Microsoft Graph
 

@@ -1,16 +1,16 @@
 ---
 title: Получение параметров почтового ящика пользователя
 description: 'Получение объекта mailboxSettings пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2f697a332eb4912f0f4f442f57ccf79b86d03ca
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db605ea1abc7d288068ade7c844ed45ce85ef63c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090000"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 

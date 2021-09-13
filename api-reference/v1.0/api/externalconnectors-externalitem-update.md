@@ -2,15 +2,15 @@
 title: Обновление externalItem
 description: Обновление свойств объекта externalItem.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b93fa76181e907987add5196bd8dc56481aef6e3
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 4a7ee4b656bf3552dcfa3c45fbd76bb541250fad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029593"
 ---
 # <a name="update-externalitem"></a>Обновление externalItem
 Пространство имен: microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "53580761"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
+|Для приложений| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

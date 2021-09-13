@@ -2,15 +2,15 @@
 title: тип enum sharedPCAllowedAccountType
 description: Тип учетных записей, которые разрешены для совместной работы с компьютером.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f8b897feb6a287b59d5bd957e43a00a6df0de605b84cf205a43aa760abc781ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26616386431512d4aaadfd0cf3d15a6a27943a58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067145"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>тип enum sharedPCAllowedAccountType
 

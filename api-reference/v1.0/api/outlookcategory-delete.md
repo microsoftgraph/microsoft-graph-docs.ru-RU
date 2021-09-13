@@ -2,15 +2,15 @@
 title: Удаление категории Outlook
 description: Удаление указанного объекта outlookCategory.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bf557fcefa48857a93557be8a87c3394d936f149
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: da3a84b70b0af55beb85a6f74a012ed876b13326
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037364"
 ---
 # <a name="delete-outlook-category"></a>Удаление категории Outlook
 

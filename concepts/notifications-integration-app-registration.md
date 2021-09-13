@@ -1,15 +1,15 @@
 ---
 title: Управление регистрацией приложения и разрешениями API для уведомлений Microsoft Graph
 description: Чтобы получать уведомления, отправляемые через Microsoft Graph, необходимо сначала зарегистрировать свое приложение на портале Microsoft Azure.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: e070c6a86fb3726a0d4e593f6a7d7551498b9b9be6a0ef3f9e5e9c413d737b1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a6bc396a670eb3d96c63a75f6a894be5893c43ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049468"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>Управление регистрацией приложения и разрешениями API для уведомлений Microsoft Graph
 

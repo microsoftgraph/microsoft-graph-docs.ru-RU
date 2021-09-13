@@ -1,16 +1,16 @@
 ---
 title: тип ресурса threatAssessmentResult
 description: Представляет элемент результатов оценки угроз.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 82b67910881ceb6029e7c64a54dcd956bef17e74aaae44b23b5f816b8cf01ced
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3458a4b363bda0ebec1e245e939121aa0647347b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163630"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055796"
 ---
 # <a name="threatassessmentresult-resource-type"></a>тип ресурса threatAssessmentResult
 

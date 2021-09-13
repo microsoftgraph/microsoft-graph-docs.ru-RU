@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Ресурс numberColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой числа.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2a6015421b5f93b466129330462feede124b2d74182b81ac1c00d41fe02d7d87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 58f8db33b374bc8e3e6665f307109c0deec76597
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015457"
 ---
 # <a name="numbercolumn-resource-type"></a>Тип ресурса numberColumn
 

@@ -2,20 +2,20 @@
 title: Get fido2AuthenticationMethodConfiguration
 description: Ознакомьтесь с свойствами и отношениями объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7d67b65577546b187f616462e3faeefa7aedb7b4
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: ce0ed9643119e34b474e04d86b3ad8ef65227ecd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469019"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045996"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Get fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей объекта [fido2AuthenticationMethodConfiguration,](../resources/fido2authenticationmethodconfiguration.md) который представляет [](../resources/authenticationmethodspolicies-overview.md) политику метода проверки подлинности ключей безопасности FIDO2 для клиента Azure Active Directory (Azure AD).
+Извлечение свойств и связей объекта [fido2AuthenticationMethodConfiguration,](../resources/fido2authenticationmethodconfiguration.md) который представляет [](../resources/authenticationmethodspolicies-overview.md) политику метода проверки подлинности ключей безопасности FIDO2 для клиента Azure Active Directory Azure AD.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

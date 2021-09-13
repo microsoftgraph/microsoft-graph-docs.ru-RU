@@ -1,16 +1,16 @@
 ---
 title: Получение объекта plannerBucket
 description: Получение свойств и связей объекта **plannerBucket**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: fc71fadbb123d5d51b7848a2168e695b878ec61f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7bae66066b563116782d746b41f6901fb1912fbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050397"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037266"
 ---
 # <a name="get-plannerbucket"></a>Получение объекта plannerBucket
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

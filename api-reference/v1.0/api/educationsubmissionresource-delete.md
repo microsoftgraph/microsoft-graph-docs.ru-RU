@@ -2,15 +2,15 @@
 title: Удаление educationSubmissionResource
 description: Удаляет ресурс из отправки. Это может быть сделано только студентом. Если ресурс был скопирован из назначения, после удаления текущей копии будет создана новая копия ресурса.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d461d4b6f9dd7eb62f385a5de5ffc98ab098b0c2
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 7faaa95ca09622319d4fa8de3dd1358bbbe35fa7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074383"
 ---
 # <a name="delete-educationsubmissionresource"></a>Удаление educationSubmissionResource
 

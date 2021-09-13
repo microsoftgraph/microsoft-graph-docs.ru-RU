@@ -1,16 +1,16 @@
 ---
 title: List tokenIssuancePolicy
 description: Получите список объектов tokenIssuancePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 693579c25c7e96ccbdfceecee44791ba23ffeefa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7ec4cffd4a871bede7ef4e4bf9c671cc78ff43e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067688"
 ---
 # <a name="list-tokenissuancepolicy"></a>List tokenIssuancePolicy
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

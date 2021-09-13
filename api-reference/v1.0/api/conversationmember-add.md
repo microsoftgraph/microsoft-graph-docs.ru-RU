@@ -3,14 +3,14 @@ title: Добавление conversationMember
 description: Добавление conversationMember в канал.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: ad99b8906a5ad71b7fa77b1d19bf32e5b01757a0
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: d25735dcde145b83823be07502a2176a300148e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060616"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050756"
 ---
 # <a name="add-conversationmember"></a>Добавление conversationMember
 
@@ -26,7 +26,7 @@ ms.locfileid: "53060616"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChannelMember.ReadWrite.All |
+|Для приложения| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -47,7 +47,7 @@ POST /teams/{id}/channels/{id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роли этого пользователя.|
-|пользователь;|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
+|пользователь|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
 
 ## <a name="response"></a>Отклик
 

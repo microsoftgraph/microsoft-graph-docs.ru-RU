@@ -2,15 +2,15 @@
 title: тип ресурса riskUserActivity
 description: обнаружение riskUserActivity
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b76c89ad73caf3f4985c81041178f05fc3d88bebbba0327ca503f7bf0e8f374d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8ba82b669b146a5f8cbc6851270b075843738f23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035992"
 ---
 # <a name="riskuseractivity-resource-type"></a>тип ресурса riskUserActivity
 

@@ -2,15 +2,15 @@
 title: Тип ресурса ChartPoint
 description: Представляет точку из ряда в диаграмме.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 870f29df417e401e2c69500f2677b9c5da95c88bb5dd57ede33aa26e125e0869
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e49df91420d27ea36aa3bda4c410299d61273550
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062805"
 ---
 # <a name="chartpoint-resource-type"></a>Тип ресурса ChartPoint
 
@@ -31,14 +31,14 @@ ms.locfileid: "54202541"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |значение|Json|Возвращает значение точки диаграммы. Только для чтения.|
-|id|строка|уникальный идентификатор|
+|id|string|уникальный идентификатор|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[КнигаChartPointFormat](chartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

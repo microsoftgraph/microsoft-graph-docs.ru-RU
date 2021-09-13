@@ -2,15 +2,15 @@
 title: тип ресурса accessReviewApplyAction
 description: Представляет действия, которые необходимо принять для рассмотренных пользователей после завершения экземпляра проверки доступа.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b3ebf02cc2d5ea2c9f3ee5e64e960d2301817b9955e119a0564ce89b0ec3f9fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c887c1b2bbef46f963e2260f4bfe99215cddc2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021766"
 ---
 # <a name="accessreviewapplyaction-resource-type"></a>тип ресурса accessReviewApplyAction
 

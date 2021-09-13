@@ -2,15 +2,15 @@
 title: Удаление windowsHelloForBusinessAuthenticationMethod
 description: Удаляет объект windowsHelloForBusinessAuthenticationMethod.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: de3e491a5eef3f09b89134fdc45dbb9805b82627
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 7649b5d97ee807d862ab62585b4d1eca3fcb924a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51467948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062854"
 ---
 # <a name="delete-windowshelloforbusinessauthenticationmethod"></a>Удаление windowsHelloForBusinessAuthenticationMethod
 Пространство имен: microsoft.graph

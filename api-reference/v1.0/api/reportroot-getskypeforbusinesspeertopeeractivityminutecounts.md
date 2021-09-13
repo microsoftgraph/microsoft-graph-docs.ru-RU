@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts'
 description: Отслеживайте динамику использования по продолжительности (в минутах) и типу проведенных в организации одноранговых сеансов (аудио и видео).
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7ce77bdc647ccf7448d143e42147a7943e9287199ccc913eb910651e9c2ef6a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 62f181c0d87ee79eefb15bc64bb2615e2487e0df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135430"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050105"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityminutecounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
@@ -47,14 +47,14 @@ GET /reports/getSkypeForBusinessPeerToPeerActivityMinuteCounts(period='{period_v
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                |
-| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
+| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательное. |
 
 ## <a name="response"></a>Отклик
 

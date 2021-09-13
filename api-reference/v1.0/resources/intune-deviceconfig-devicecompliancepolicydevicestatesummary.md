@@ -2,15 +2,15 @@
 title: Тип ресурса deviceCompliancePolicyDeviceStateSummary
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3dc62b35aac9f514ab0c7bc3425cdf248ecd81144aeac79241acae05d2369742
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 57680c6ab5a1ead59e48e54303ee80d885ff4eea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072360"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicyDeviceStateSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "54229166"
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Количество устройств, для которых действует льготный период.|
 |configManagerCount|Int32|Количество устройств, для которых System Center Configuration Manager управляет соответствием требованиям.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -40,7 +40,7 @@ ms.locfileid: "54229166"
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

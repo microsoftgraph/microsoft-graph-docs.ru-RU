@@ -1,16 +1,16 @@
 ---
 title: Удаление типа ресурса claimsMappingPolicy
 description: Удалите claimsMappingPolicy из службыPrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f39d2b80d893ce9a3f6241bafe17e5c76c83b798
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c16073f8949428a10d136970db3debb27af6a33
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053254"
 ---
 # <a name="remove-claimsmappingpolicy"></a>Удаление типа ресурса claimsMappingPolicy
 
@@ -88,8 +88,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/claimsMappingPoli
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

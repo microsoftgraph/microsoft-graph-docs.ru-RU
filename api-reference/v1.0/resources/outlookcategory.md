@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookCategory
 description: Представляет категорию, по которой пользователь может группировать такие элементы Outlook, как сообщения и события. Пользователь определяет категории в мастер-списке и может применять одну или несколько указанных пользователем категорий.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 30bed7723cc25b668029bae494a24cbc6c4278fc4caeb6d55f039e65c68e63f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 907f2e96f3f37ff62a6189970c5149241035c9b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094151"
 ---
 # <a name="outlookcategory-resource-type"></a>Тип ресурса outlookCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "54182380"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Уникальное имя, обозначающее категорию в почтовом ящике пользователя. После создания категории изменить имя невозможно. Только для чтения.|
+|displayName|Строка|Уникальное имя, обозначающее категорию в почтовом ящике пользователя. После создания категории изменить имя невозможно. Только для чтения.|
 |color|categoryColor|Предустановленная константа, которая характеризует категорию и сопоставлена с одним из 25 предопределенных цветов. См. примечание ниже. |
 
 > **Примечание**. Допустимые значения свойства **color** — предустановленные константы, например `None`, `preset0` и `preset1`. Каждая предустановленная константа сопоставлена с цветом. Фактический цвет зависит от клиента Outlook, в котором отображаются категории. В приведенной ниже таблице показаны цвета, сопоставленные с каждой предустановленной константой для классического клиента Outlook. 
@@ -88,7 +88,7 @@ ms.locfileid: "54182380"
 |[Получение категории](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Получение свойств и отношений указанного объекта **outlookCategory**.|
 |[Создание](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Создание объекта **outlookCategory** в основном списке категорий пользователя.|
 |[Обновление](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Обновление перезаписываемого свойства **color** указанного объекта **outlookCategory**. |
-|[Удаление](../api/outlookcategory-delete.md) | Нет |Удаление указанного объекта **outlookCategory**. |
+|[удаление](../api/outlookcategory-delete.md); | Нет |Удаление указанного объекта **outlookCategory**. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

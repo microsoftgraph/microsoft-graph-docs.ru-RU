@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Представляет столбец на сайте, списке или типе контента.
 ms.date: 09/11/2017
 title: тип ресурса columnDefinition
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 05357e3282dfe578ed6756ddff493df9e62c8248
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 4d5dc9bc55778b32990be19688861a590a658523
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062798"
 ---
 # <a name="columndefinition-resource-type"></a>тип ресурса columnDefinition
 
@@ -49,13 +49,13 @@ ms.locfileid: "58695107"
 | **columnGroup**         | строка  | Для столбцов сайтов это имя группы, к которой принадлежит данный столбец. Помогает упорядочивать связанные столбцы.|
 | **description**         | string  | Описание столбца, которое видит пользователь.|
 | **displayName**         | string  | Имя столбца, которое видит пользователь.|
-| **enforceUniqueValues** | Логический | Если для этого столбца нет двух элементов `true` списка, то для этого столбца может быть одинаковое значение.|
+| **enforceUniqueValues** | Boolean | Если для этого столбца нет двух элементов `true` списка, то для этого столбца может быть одинаковое значение.|
 | **hidden**              | Boolean | Указывает, отображается ли столбец в пользовательском интерфейсе.|
 | **id**                  | string  | Уникальный идентификатор столбца.|
-| **indexed**             | Логический | Указывает, можно ли использовать значения столбца для сортировки и поиска.|
+| **indexed**             | Boolean | Указывает, можно ли использовать значения столбца для сортировки и поиска.|
 | **name**                | string  | Используемое в API имя столбца из свойства [fields][] объекта [listItem][]. Имя, которое видит пользователь, указывается в свойстве **displayName**.|
-| **readOnly**            | Логический    | Указывает, можно ли менять значения в столбце.|
-| **required**            | Логический | Указывает, является ли значение столбца необязательным.|
+| **readOnly**            | Boolean    | Указывает, можно ли менять значения в столбце.|
+| **required**            | Boolean | Указывает, является ли значение столбца необязательным.|
 | **boolean**       | [booleanColumn][]       | В этом столбце хранятся логические значения.|
 | **calculated**    | [calculatedColumn][]    | Данные в этом столбце вычисляются относительно других столбцов.|
 | **choice**        | [choiceColumn][]        | В этом столбце хранятся данные из списка вариантов.|
@@ -69,7 +69,7 @@ ms.locfileid: "58695107"
 | **text**          | [textColumn][]          | В этом столбце хранятся текстовые значения.|
 | **isDeletable**       | Логический | Указывает, можно ли удалить этот столбец.|
 | **propagateChanges**     | Логический | Если "true", изменения в этом столбце будут распространяться в списки, реализующих столбец. |
-| **isReorderable**         | Логический | Указывает, можно ли переуказать значения в столбце. Только для чтения.|
+| **isReorderable**         | Boolean | Указывает, можно ли переуказать значения в столбце. Только для чтения.|
 | **isSealed**              | Логический | Указывает, можно ли изменить столбец.|
 | **проверка**   |  [columnValidation][]    | В этом столбце хранится формула проверки и сообщение для столбца.| 
 | **hyperlinkOrPicture**  | [hyperlinkOrPictureColumn][] | В этом столбце хранится гиперссылка или значения изображения. |
@@ -90,7 +90,7 @@ ms.locfileid: "58695107"
 При использовании этих типов не заполняются никакие аспекты типа столбца, а сам столбец обладает только основными свойствами.
 Сайты и столбцы списков ответ не будет содержать **isDeletable,** **propagateChanges**, **isReorderable**, **isSealed**, проверка  **,**  **hyperlinkOrPicture** **,** термин , **sourceContentType** **,** эскиз , **тип**, **contentApprovalStatus** и **sourceColumn** свойства.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Вот представление JSON ресурса columnDefinition.
 

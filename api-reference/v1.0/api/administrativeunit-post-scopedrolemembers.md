@@ -1,16 +1,16 @@
 ---
 title: Добавление scopedRoleMember
 description: Добавьте новое scopedRoleMembership. ПРИМЕЧАНИЕ. Только *роли* администратора учетной записи пользователя и *администратора Helpdesk* в настоящее время поддерживаются для членства в scoped-role.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a7cc3042e6b1bf7432232dd4b2b57f405e279ee2
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 6ca2b93eef5b0451fd1d90899fe9f7ef471eae7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038596"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление scopedRoleMember
 
@@ -26,7 +26,7 @@ ms.locfileid: "53208227"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Для приложения | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
