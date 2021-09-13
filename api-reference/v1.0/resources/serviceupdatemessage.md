@@ -2,15 +2,15 @@
 title: тип ресурса serviceUpdateMessage
 description: Представляет объявления об изменениях в службе.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f25b9ad01dc6dfd3d3405f4c16ac658fe438f092
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7e8dc6e63025400c64114dc282389fc2f7453daf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58261082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108823"
 ---
 # <a name="serviceupdatemessage-resource-type"></a>тип ресурса serviceUpdateMessage
 
@@ -26,12 +26,12 @@ ms.locfileid: "58261082"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Get serviceUpdateMessage](../api/serviceupdatemessage-get.md)|[serviceUpdateMessage](../resources/serviceupdatemessage.md)|Извлечение свойств и связей объекта [serviceUpdateMessage.](../resources/serviceupdatemessage.md) |
-|[markRead](../api/serviceupdatemessage-markread.md)|Логический|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s в качестве чтения для подписанного пользователя. |
-|[markUnread](../api/serviceupdatemessage-markunread.md)|Логический|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s как непрочитанные для подписанного пользователя. |
+|[markRead](../api/serviceupdatemessage-markread.md)|Boolean|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s в качестве чтения для подписанного пользователя. |
+|[markUnread](../api/serviceupdatemessage-markunread.md)|Boolean|Пометить список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s как непрочитанные для подписанного пользователя. |
 |[архив](../api/serviceupdatemessage-archive.md)|Логический|Архивировать список [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
 |[unarchive](../api/serviceupdatemessage-unarchive.md)|Логический|Unarchive a list of [serviceUpdateMessage](../resources/serviceupdatemessage.md)s for the signed in user.|
 |[избранное](../api/serviceupdatemessage-favorite.md)|Логический|Измените состояние списка [serviceUpdateMessage](../resources/serviceupdatemessage.md)s на избранное для подписанного пользователя.|
-|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Логический|Удалите любимый статус [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
+|[unfavorite](../api/serviceupdatemessage-unfavorite.md)|Boolean|Удалите любимый статус [serviceUpdateMessage](../resources/serviceupdatemessage.md)s для подписанного пользователя.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -42,7 +42,7 @@ ms.locfileid: "58261082"
 |details|[Коллекция(keyValuePair)](../resources/keyvaluepair.md)|Дополнительные сведения о сообщении службы. Это свойство не поддерживает фильтры. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|Конечное время сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |id|String|Id сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
-|isMajorChange|Логический|Указывает, описывает ли сообщение крупное обновление для службы.|
+|isMajorChange|Boolean|Указывает, описывает ли сообщение крупное обновление для службы.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |службы|Коллекция (строка)|Затронутые службы сообщением службы.|
 |severity|serviceUpdateSeverity|Серьезность сообщения службы. Возможные значения: `normal`, `high`, `critical`, `unknownFutureValue`.|
@@ -51,7 +51,7 @@ ms.locfileid: "58261082"
 |title|String|Название сообщения службы. Наследуется [от serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |viewPoint|[serviceUpdateMessageViewpoint](../resources/serviceupdatemessageviewpoint.md)|Представляет данные точек представления пользователей сообщения службы. Эти данные включают состояние сообщения, например, имеет ли пользователь архив, чтение или помеченное сообщение как любимое. Это свойство является null при доступе с разрешениями приложений.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

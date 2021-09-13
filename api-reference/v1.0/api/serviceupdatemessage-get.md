@@ -2,15 +2,15 @@
 title: Get serviceUpdateMessage
 description: Извлечение свойств и связей объекта serviceUpdateMessage.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 679b8271e2b5ffc8ed50965c77b016a76df8c418
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7f0c2eb2a95eeb12e09a448e80367019cf5d09cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019477"
 ---
 # <a name="get-serviceupdatemessage"></a>Get serviceUpdateMessage
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "58258004"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|ServiceMessage.Read.All|
+|Для приложений|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -1,16 +1,16 @@
 ---
 title: List threatAssessmentRequests
 description: Извлечение списка объектов threatassessmentrequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fb5e804682741c79d8ea3daeca5e6512575c16de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 14870e7907069aae1ca15ecf5533dbf296824ab6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039572"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140684"
 ---
 # <a name="list-threatassessmentrequests"></a>List threatAssessmentRequests
 
@@ -58,7 +58,7 @@ GET /informationProtection/threatAssessmentRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

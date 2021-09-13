@@ -1,16 +1,16 @@
 ---
 title: Список объектов calendarGroup
 description: Получение групп календарей пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 908406b612b97bc554815ad79928a00af7a59af9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dde0ab65359822d7a7a9b41d7a3b3a0aa9aae598
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021836"
 ---
 # <a name="list-calendargroups"></a>Список объектов calendarGroup
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

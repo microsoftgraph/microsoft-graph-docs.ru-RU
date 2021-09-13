@@ -2,15 +2,15 @@
 title: тип ресурса vpnTrafficRule
 description: Определение правила трафика VPN.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d62c0d2357b3d46cce5654d460853ad063a351ad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b5a9986231c0f4d974a02ed8eaaaf44a032ac341
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027066"
 ---
 # <a name="vpntrafficrule-resource-type"></a>тип ресурса vpnTrafficRule
 
@@ -34,9 +34,9 @@ ms.locfileid: "58800055"
 |appId|String|Идентификатор приложения, если это правило трафика запускается приложением.|
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Тип приложения, если это правило трафика запускается приложением. Возможные значения: `none`, `desktop`, `universal`.|
 |routingPolicyType|[VPNTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|При запуске приложения указывает, следует ли включить раздельный туннель по этому маршруту. Возможные значения: `none`, `splitTunnel`, `forceTunnel`.|
-|утверждения|Строка|Утверждения, связанные с этим правилом трафика.|
+|утверждения|String|Утверждения, связанные с этим правилом трафика.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

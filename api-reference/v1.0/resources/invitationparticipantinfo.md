@@ -2,15 +2,15 @@
 title: тип ресурса invitationParticipantInfo
 description: '**InvitationParticipant** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.'
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5b8432cf28dd078add91b517f75bc33a71fc4e8134ecff8155c97cc0acc887c8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f048fae8d5d63aac8a64dc0e8d3193de5cc5aef5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202247"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084428"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>тип ресурса invitationParticipantInfo
 
@@ -25,7 +25,7 @@ ms.locfileid: "54202247"
 | удостоверение                           | [identitySet](identityset.md) | [IdentitySet,](identityset.md) связанный с этим приглашением.                   |
 | replacesCallId                     | String                        | Необязательный параметр. Вызов, частью которого в настоящее время является тождественность целевого пользователя. Этот вызов будет отброшен после того, как будет добавлен участник. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса siteUsageStorage
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: e00e260bfcab2992ecf892ec66b0d39884a31d477c84b0b6c46d3e004b274485
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8c6013da34233a9cb58baa067abe1c3ea4901b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033198"
 ---
 # <a name="siteusagestorage-resource-type"></a>тип ресурса siteUsageStorage
 
@@ -21,7 +21,7 @@ ms.locfileid: "54167781"
 | Свойство           | Тип   |
 | :----------------- | :----- |
 | reportRefreshDate  | Дата   |
-| siteType           | Строка |
+| siteType           | String |
 | storageUsedInBytes | Int64  |
 | reportDate         | Дата   |
 | reportPeriod       | String |

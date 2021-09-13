@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: markUnread'
 description: Пометить список сообщений об обновлении службы как непрочитанные для подписанного пользователя.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6785c92eab7d8cbe68a8ac45f20ea1396b82cd00
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 971382ac0cab7614d87b408da3a85788f193f029
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119011"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage: markUnread
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "58266772"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 

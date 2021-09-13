@@ -2,15 +2,15 @@
 title: Обновление managedDeviceCertificateState
 description: Обновление свойств объекта managedDeviceCertificateState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f1f62b3b3fabc5a9e179175d8bc2386e10f54bf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 95bb2e33c6de89294b97951106b713fb7ba70c46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018609"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Обновление managedDeviceCertificateState
 
@@ -27,9 +27,9 @@ ms.locfileid: "58801713"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -74,7 +74,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |devicePlatform|[devicePlatformType](../resources/intune-deviceconfig-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|Использование ключей. Возможные значения: `keyEncipherment`, `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Единицы периода действия. Возможные значения: `days`, `months`, `years`.|
@@ -83,26 +83,26 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имен субъекта. Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Тема альтернативного формата имен. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзови статус. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|Строка|Имя отображения профиля сертификата|
+|certificateProfileDisplayName|String|Имя отображения профиля сертификата|
 |deviceDisplayName|String|Имя отображения устройства|
 |userDisplayName|String|Отображаемое имя пользователя|
 |certificateExpirationDateTime|DateTimeOffset|Дата истечения срока действия сертификата|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Изменение состояния последнего сертификата|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Изменение состояния последнего сертификата|
-|certificateIssuer|Строка|Издатель|
-|certificateThumbprint|Строка|Thumbprint|
-|certificateSerialNumber|Строка|Серийный номер|
+|certificateIssuer|String|Издатель|
+|certificateThumbprint|String|Thumbprint|
+|certificateSerialNumber|String|Серийный номер|
 |certificateKeyLength|Int32|Длина ключа|
-|certificateEnhancedKeyUsage|Строка|Расширенное использование ключа|
+|certificateEnhancedKeyUsage|String|Расширенное использование ключа|
 |certificateValidityPeriod|Int32|Срок действия|
-|certificateSubjectNameFormatString|Строка|Строка формата subject name для пользовательских форматов имен субъекта|
-|certificateSubjectAlternativeNameFormatString|Строка|Строка альтернативного формата имен для настраиваемого формата|
+|certificateSubjectNameFormatString|String|Строка формата subject name для пользовательских форматов имен субъекта|
+|certificateSubjectAlternativeNameFormatString|String|Строка альтернативного формата имен для настраиваемого формата|
 |certificateIssuanceDateTime|DateTimeOffset|Дата выпуска|
 |certificateErrorCode|Int32|Код ошибки|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

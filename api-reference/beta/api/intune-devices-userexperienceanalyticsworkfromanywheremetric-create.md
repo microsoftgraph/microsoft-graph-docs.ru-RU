@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsWorkFromAnywhereMetric
 description: Создание нового объекта userExperienceAnalyticsWorkFromAnywhereMetric.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0412454262f0da42735848f7b61da1da8a866a84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 27ca78efb9fa4e5f650679aad096e72bb3cab83b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034521"
 ---
 # <a name="create-userexperienceanalyticsworkfromanywheremetric"></a>Создание userExperienceAnalyticsWorkFromAnywhereMetric
 

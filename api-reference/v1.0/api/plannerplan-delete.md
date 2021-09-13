@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта plannerPlan
 description: Удаление объекта **plannerPlan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 3cd65d08a7a4482ae62fbd6cb18288faaa9476ce
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d02d5f03409afb5c6b1f8089ff847a5bf96b39bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099318"
 ---
 # <a name="delete-plannerplan"></a>Удаление объекта plannerPlan
 
@@ -79,7 +79,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

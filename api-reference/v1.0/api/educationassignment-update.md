@@ -1,16 +1,16 @@
 ---
 title: Обновление системы образования
 description: Обновление объекта educationAssigment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dcfd47deabe9f711bbbbca59c7c7c4b23651f3d3
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: f754a8e4e79bd0043199924acbaf28eec8261716
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020044"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -49,17 +49,17 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addedStudentAction|String| Описывает, следует ли распределять назначение среди учащихся, добавленных после даты публикации назначения.|
+|addedStudentAction|Строка| Описывает, следует ли распределять назначение среди учащихся, добавленных после даты публикации назначения.|
 |allowLateSubmissions|Логический| Могут ли студенты отправлять отправку после срока.|
 |allowStudentsToAddResourcesToSubmission|Логический| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
 |assignDateTime|DateTimeOffset| Указывает дату публикации назначения для учащихся. |
 |assignTo|educationAssignmentRecipient| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
-|displayName|String| Имя назначения. |
+|displayName|Строка| Имя назначения. |
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
 |классификация|educationAssignmentGradeType| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
-|notificationChannelUrl|String| Канал для связи уведомлений, связанных с назначением. Чтобы изменить URL-адрес, `assignTo` установите значение [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). URL-адрес канала не может измениться после публикации назначения.|
+|notificationChannelUrl|Строка| Канал для связи уведомлений, связанных с назначением. Чтобы изменить URL-адрес, `assignTo` установите значение [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). URL-адрес канала не может измениться после публикации назначения.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
@@ -110,7 +110,7 @@ Content-length: 279
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

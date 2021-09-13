@@ -2,15 +2,15 @@
 title: Get accessReviewInstanceDecisionItem
 description: Ознакомьтесь с свойствами и отношениями объекта accessReviewInstanceDecisionItem.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2f72596f4f89fe71f6d7cee310e721dd230357ee
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c4ea0888e09c14fe8feffa3697fef2945728c6b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008554"
 ---
 # <a name="get-accessreviewinstancedecisionitem"></a>Get accessReviewInstanceDecisionItem
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "53209733"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

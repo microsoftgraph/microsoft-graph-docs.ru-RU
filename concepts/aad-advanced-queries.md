@@ -2,14 +2,14 @@
 title: Расширенные возможности запросов для объектов каталога Azure AD
 description: Объекты каталога Azure AD поддерживают расширенные возможности запросов для эффективного доступа к данным.
 author: Licantrop0
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2393e21fd73d5aa9d599e234708b98ba3b9a9a4d
-ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
+ms.openlocfilehash: 98147475615b34ad45d9f4f14fb67c69e1f8b96a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58409074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142453"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Расширенные возможности запросов для объектов каталога Azure AD
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationFileResource
 description: Подкласс educationResource, который представляет объект файла, связанный с назначением или отправкой.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c91b33734ea421c34e3627c76b7dd410ab8d251f262c509b15865d5c8db60814
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0e101e1d21bd8e5aa205875a9f444678aeee218
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146918"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036643"
 ---
 # <a name="educationfileresource-resource-type"></a>тип ресурса educationFileResource
 
@@ -23,7 +23,7 @@ ms.locfileid: "54146918"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|String|Расположение на диске файлового ресурса.|
+|fileUrl|Строка|Расположение на диске файлового ресурса.|
 
 ## <a name="json-representation"></a>Представление JSON
 

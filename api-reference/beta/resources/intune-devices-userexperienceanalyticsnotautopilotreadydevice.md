@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsNotAutopilotReadyDevice
 description: Устройство аналитики пользовательского интерфейса не готово для автопилота Windows.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e85b13e540547111e2aea513f7fe595f7ece7404
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d09e1c897833839aa2f8581b9ec8ea23e6ad561a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804276"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020373"
 ---
 # <a name="userexperienceanalyticsnotautopilotreadydevice-resource-type"></a>тип ресурса userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -34,18 +34,18 @@ ms.locfileid: "58804276"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства intune.|
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
 |model|String|Модель устройства intune.|
 |managedBy|Строка|Устройство intune управляется.|
-|autoPilotRegistered|Логический|Автопилотрегистер устройства intune.|
+|autoPilotRegistered|Boolean|Автопилотрегистер устройства intune.|
 |autoPilotProfileAssigned|Логический|Автопилот Устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Устройство intune azureAdRegistered.|
 |azureAdJoinType|Строка|Azure Ad ad для устройства intune присоединяется кType.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

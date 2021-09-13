@@ -3,14 +3,14 @@ title: Удаление участника из канала
 description: Удалите участника из канала.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: ae46702936fb82ac00c0744927c1d5b0b2ccc6dd
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 3c3fe36044ace90dd3505cfe5644c3ca52f811c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060029"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026674"
 ---
 # <a name="remove-member-from-channel"></a>Удаление участника из канала
 
@@ -27,7 +27,7 @@ ms.locfileid: "53060029"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChannelMember.ReadWrite.All |
+|Для приложений| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->

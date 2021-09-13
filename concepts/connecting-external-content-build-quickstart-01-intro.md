@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: c804bdd39ebc2c460aa261355703b50ba530b197
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289671"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 <!--- # Introduction --->
 
@@ -11,7 +20,7 @@
 
 ![Схема, показывающая Windows, приобретаемое маркером и использующее его для доступа к API соединителов Microsoft Graph.](images/connectors-images/build1.png)
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 * Установите [Visual Studio 2019](https://visualstudio.microsoft.com/) с [SDK .NET Core 3.1](https://www.microsoft.com/net/download/core) на компьютере разработки.
 * Убедитесь, что у вас есть [личная учетная запись Майкрософт](https://signup.live.com/)или учетная запись для работы или школы.

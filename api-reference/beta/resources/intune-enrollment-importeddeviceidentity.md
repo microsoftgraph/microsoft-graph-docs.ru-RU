@@ -2,15 +2,15 @@
 title: тип ресурсов importedDeviceIdentity
 description: Ресурс importedDeviceIdentity представляет уникальный идентификатор оборудования устройства, предварительно заданного для предварительной регистрации.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1dbcb41d30bec09335316503fbc8f93f6264c34
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c18a744e9a0a3aa7597c4d3d017e39b975be7693
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033492"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>тип ресурсов importedDeviceIdentity
 
@@ -42,11 +42,11 @@ ms.locfileid: "58803492"
 |lastModifiedDateTime|DateTimeOffset|Последнее изменение dateTime описания|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
 |lastContactedDateTime|DateTimeOffset|Время последней контактной даты устройства|
-|description|Строка|Описание устройства|
+|description|String|Описание устройства|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |платформа|[платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

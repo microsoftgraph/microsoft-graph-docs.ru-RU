@@ -2,15 +2,15 @@
 title: тип enum keyStorageProviderOption
 description: Параметры импорта служба хранилища поставщика (KSP).
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e6dc213f3cef76380a5bf40d91b6220e1408783f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f8f47384333189f80d6443a17027e62b1a1e465
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030006"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>тип enum keyStorageProviderOption
 

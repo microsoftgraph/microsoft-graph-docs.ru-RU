@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов stsPolicy
 description: Представляет абстрактный базовый тип для типов политик, которые контролируют платформа удостоверений Майкрософт поведение.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8c36121274a3e1d1b6f574a7256b869fe94c7ea5d0fd9db8067ddd78a7d0bdb6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 04ab6b06bbe099759802a57b6bbfdc337a233ef6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122966"
 ---
 # <a name="stspolicy-resource-type"></a>тип ресурсов stsPolicy
 
@@ -30,11 +30,11 @@ ms.locfileid: "54184482"
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения. Унаследованный от [policyBase](policyBase.md).|
 |description|String| Описание этой политики. Унаследованный от [policyBase](policyBase.md).|
-|displayName|String| Отображение имени для этой политики. Унаследованный от [policyBase](policyBase.md).|
-|определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками политики. Синтаксис определения отличается для каждого типа политики. Обязательный элемент.|
+|displayName|Строка| Отображение имени для этой политики. Унаследованный от [policyBase](policyBase.md).|
+|определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками политики. Синтаксис определения отличается для каждого типа политики. Обязательное.|
 |isOrganizationDefault|Логический|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 

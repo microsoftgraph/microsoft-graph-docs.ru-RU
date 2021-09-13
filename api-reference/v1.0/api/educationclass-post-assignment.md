@@ -1,16 +1,16 @@
 ---
 title: Создание educationAssignment
 description: Создайте новое назначение.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8b76ca2dfa375c72355cb5c68a5bde381509a7ad
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: cb5bdd507d35bc004faa977dd2605637a60a4321
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147467"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -40,7 +40,7 @@ POST /education/classes/{id}/assignments
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 ## <a name="response"></a>Отклик
@@ -99,7 +99,7 @@ Content-length: 279
 В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

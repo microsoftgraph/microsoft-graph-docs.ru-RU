@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса policyBase
 description: Представляет абстрактный базовый тип для типов политик, от которые можно наследовать.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2918543536f62627f7c2a742009c3d67012353b4
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 6795065e7edbf9d31936007e842c24882d138185
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098484"
 ---
 # <a name="policybase-resource-type"></a>Тип ресурса policyBase
 
@@ -27,8 +27,8 @@ ms.locfileid: "58531224"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения. Наследуется от [directoryObject](directoryobject.md).|
-|description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. |
+|description|String| Описание этой политики. Обязательный.|
+|displayName|Строка| Отображение имени для этой политики. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 

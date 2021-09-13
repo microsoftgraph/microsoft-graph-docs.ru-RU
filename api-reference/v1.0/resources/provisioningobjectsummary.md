@@ -1,16 +1,16 @@
 ---
 title: тип ресурса provisioningObjectSummary
 description: Представляет действие, выполняемые службой подготовка Azure AD и связанными с ней свойствами.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: b5ac64592150aa396195f08a742ff0b30687f7fd60a22b9399aa7513100e6d1a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed38d1d2b3e29826c70d1e97b61227c5330e961d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143799"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>тип ресурса provisioningObjectSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "54124215"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |provisioningAction|provisioningAction|Указывает имя действия или имя операции. Возможные значения: `create` `update` , , , , , `delete` `stageddelete` и `disable` `other` `unknownFutureValue` . Список действий, зарегистрированных в журнале, обратитесь к списку действий Azure AD.|
-|activityDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|activityDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |changeId|String|Уникальный ID этого изменения в этом цикле.|
 |cycleId|String|Уникальный ID для итерации задания.|
 |durationInMilliseconds|Int32|Указывает, сколько времени потребовалось для завершения этого действия по подготовкам. Измеряется в миллисекунд.|

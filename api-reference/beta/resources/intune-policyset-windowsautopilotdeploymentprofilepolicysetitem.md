@@ -2,15 +2,15 @@
 title: тип ресурса windowsAutopilotDeploymentProfilePolicySetItem
 description: Класс, содержащий свойства, используемые для профиля развертывания автопилота Windows PolicySetItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d91c0dab6a32832644de1073fab7297c5bc257b5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 28d6e5ad23e81278af0e169b5be5f689ea53c0a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020317"
 ---
 # <a name="windowsautopilotdeploymentprofilepolicysetitem-resource-type"></a>тип ресурса windowsAutopilotDeploymentProfilePolicySetItem
 

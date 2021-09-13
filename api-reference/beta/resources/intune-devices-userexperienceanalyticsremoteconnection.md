@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsRemoteConnection
 description: Пользовательский интерфейс аналитики объекта удаленного подключения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e9717b2865ff0e0a4126cc7f010925e8ff43360
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 62d6d012e94a0423b3951d1345704d4447b81e1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020352"
 ---
 # <a name="userexperienceanalyticsremoteconnection-resource-type"></a>тип ресурса userExperienceAnalyticsRemoteConnection
 

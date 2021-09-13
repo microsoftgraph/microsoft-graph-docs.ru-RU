@@ -2,15 +2,15 @@
 title: тип ресурса binaryManagementConditionExpression
 description: Выражение состояния управления, которое оценивается с помощью двоичной операции.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12186c8b08ec0a086e695338f4b1fe00421e3831
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5119ca3f9acd6fab2f5269b542038e81b7594be0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788172"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030314"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>тип ресурса binaryManagementConditionExpression
 
@@ -32,7 +32,7 @@ ms.locfileid: "58788172"
 |firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Первый операнд двоичной операции.|
 |secondOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Второй операнд двоичной операции.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

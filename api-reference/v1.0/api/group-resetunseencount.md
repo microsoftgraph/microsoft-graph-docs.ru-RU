@@ -2,15 +2,15 @@
 title: 'group: resetUnseenCount'
 description: Сброс свойства unseenCount всех записей, которые пользователь не просматривал со своего предыдущего посещения. Поддерживается только для групп Microsoft 365.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 66eaaac94065669600ea3d70202ced4b3d0972ce
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 20808ced5f064fb77983776619347c6d60fa2feb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680537"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074278"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 

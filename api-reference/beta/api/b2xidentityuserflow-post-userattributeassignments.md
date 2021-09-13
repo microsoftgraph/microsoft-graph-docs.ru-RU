@@ -2,15 +2,15 @@
 title: Создание userAttributeAssignments
 description: Создайте новый объект identityUserFlowAttributeAssignment в b2xIdentityUserFlow.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 821545418a4dabd8599e2bea6cedbb1a72354df4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: fc7bee846afe433d0cb7639dba0ec7d77291c0a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028592"
 ---
 # <a name="create-userattributeassignments"></a>Создание userAttributeAssignments
 
@@ -26,7 +26,7 @@ ms.locfileid: "50944474"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ POST /identity/b2xUserFlows/{id}/userAttributeAssignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображение имени identityUserFlowAttribute в потоке пользователей.|
+|displayName|String|Отображение имени identityUserFlowAttribute в потоке пользователей.|
 |isOptional|Boolean|Определяет, является ли identityUserFlowAttribute необязательным. `true` означает, что пользователю не нужно предоставлять значение. `false` означает, что пользователь не может завершить регистрацию без предоставления значения.|
 |requiresVerification|Boolean|Определяет, требуется ли проверка identityUserFlowAttribute. Это используется только для проверки номера телефона или адреса электронной почты пользователя.|
 |userAttributeValues|[коллекция userAttributeValuesItem](../resources/userattributevaluesitem.md)|Параметры ввода атрибута потока пользователя. Применимо только в том случае, если userInputType `radioSingleSelect` является `dropdownSingleSelect` , или `checkboxMultiSelect` .|

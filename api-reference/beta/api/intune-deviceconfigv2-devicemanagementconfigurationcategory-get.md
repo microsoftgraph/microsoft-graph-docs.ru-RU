@@ -2,15 +2,15 @@
 title: Get deviceManagementConfigurationCategory
 description: Чтение свойств и связей объекта deviceManagementConfigurationCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e687868191eba69cdb220e7159a92787c0e04c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1d0c81f129028caad90c88f25ee4edaced513c77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034731"
 ---
 # <a name="get-devicemanagementconfigurationcategory"></a>Get deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786826"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

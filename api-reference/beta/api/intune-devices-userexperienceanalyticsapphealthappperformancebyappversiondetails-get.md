@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: Чтение свойств и связей объекта userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b7c3b8be5777d8e2f342d98ea51a2683a3db8d4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cddc389e2216b0ec5d998b1014482d61fde25404
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027745"
 ---
 # <a name="get-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -29,7 +29,7 @@ ms.locfileid: "58780399"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

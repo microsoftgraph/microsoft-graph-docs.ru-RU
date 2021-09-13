@@ -2,15 +2,15 @@
 author: daspek
 title: Тип ресурса renameAction
 description: Объект renameAction предоставляет сведения о действии, переименовании элемента.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c1abe3f322f039339514aee0374c0e2e0bd4e3f62aa48534abe37856609cd975
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d513ae68a2f438483930dd51c40fa06bed626d5b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202135"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084162"
 ---
 # <a name="renameaction-resource-type"></a>Тип ресурса renameAction
 
@@ -27,7 +27,7 @@ ms.locfileid: "54202135"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | oldName       | string | Предыдущее имя элемента.
-| newName       | Строка | Новое имя элемента.
+| newName       | string | Новое имя элемента.
 
 ## <a name="json-representation"></a>Представление JSON
 

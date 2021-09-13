@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: revokeSignInSessions'
 description: Недействительными признаны все маркеры обновления пользователя, выданные приложениям (а также cookie-файлы сеансов в браузере пользователя), сбросив свойство **signInSessionsValidFromDateTime** в текущее время даты.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ed8cbcf1e0b04bc93af06b699f37fe0f693280f5
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: a3c179f2b6645b69267e1158d0f4bd2d0cf8df78
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109664"
 ---
 # <a name="user-revokesigninsessions"></a>пользователь: revokeSignInSessions
 
@@ -31,7 +31,7 @@ ms.locfileid: "50721385"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | User.ReadWrite.All, Directory.ReadWrite.All,|
+|Для приложений                            | User.ReadWrite.All, Directory.ReadWrite.All,|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 >[!NOTE]
 >У этого API есть [известная проблема](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). Он возвращает другой код ответа HTTP.

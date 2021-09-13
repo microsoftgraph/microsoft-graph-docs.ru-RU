@@ -1,16 +1,16 @@
 ---
 title: тип ресурса plannerTaskDetails
 description: Дополнительные сведения о задаче представляет ресурс **plannerTaskDetails.** Каждый объект задачи имеет объект подробностей.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 852deda3e48c78b2e70968cb7e8b7ec9a11956bbf2fcab66ecc127ea653abce9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54d15bdd49d7f8bc61dcc057cf77dd710ca0d8df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052869"
 ---
 # <a name="plannertaskdetails-resource-type"></a>тип ресурса plannerTaskDetails
 
@@ -30,12 +30,12 @@ ms.locfileid: "54189396"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
-|description|String|Описание задачи.|
-|id|String| Только для чтения. ID сведений о задачах. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|description|Строка|Описание задачи.|
+|id|String| Только для чтения. ID сведений о задачах. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. При `automatic` задав показанный предварительный просмотр, приложение будет просматривать задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

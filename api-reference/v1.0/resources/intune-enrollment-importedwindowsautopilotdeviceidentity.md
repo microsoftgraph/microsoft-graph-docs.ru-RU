@@ -2,15 +2,15 @@
 title: Тип ресурса importedWindowsAutopilotDeviceIdentity
 description: Импортированные устройства с Windows AutoPilot
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 774beb2d096ea2d84846ab47a7ff6885639e40d4e634ba6ab0b96cb85b75268c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6f9fa651547c8b91b371cec7bfe28171edd4fea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029019"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentity
 
@@ -33,10 +33,10 @@ ms.locfileid: "54235541"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|groupTag|String|Тег группы устройства Windows автопилота.|
+|groupTag|Строка|Тег группы устройства Windows автопилота.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|importId|String|Импорт Id устройства Windows автопилота.|
+|importId|Строка|Импорт Id устройства Windows автопилота.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
 |assignedUserPrincipalName|String|UPN пользователя, на которое будет назначено устройство|

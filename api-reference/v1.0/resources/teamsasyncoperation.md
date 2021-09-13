@@ -2,15 +2,15 @@
 title: тип ресурса teamsAsyncOperation
 description: 'Операция Microsoft Teams async выходит за пределы срока службы одного запроса API. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 643a7f57253af36e52484166492fd1e373f4ff5415ce24f1ccf84b69a3ec4fd1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a061ba8951013c12e825141f5a205c3e6d664733
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071898"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>тип ресурса teamsAsyncOperation
 
@@ -34,10 +34,10 @@ ms.locfileid: "54196539"
 |lastActionDateTime|DateTimeOffset |Время последнего обновления операции async.|
 |attemptsCount|Int32|Количество попыток операции, прежде чем она была отмечена успешной или неудачной.|
 |targetResourceId|guid |ID объекта, созданного или измененного в результате этой операции async, как правило, [группы](../resources/team.md).|
-|targetResourceLocation|Строка|Расположение объекта, созданного или измененного в результате этой операции async. Этот URL-адрес должен рассматриваться как непрозрачная величина, а не разрезать его пути компонентов.|
+|targetResourceLocation|string|Расположение объекта, созданного или измененного в результате этой операции async. Этот URL-адрес должен рассматриваться как непрозрачная величина, а не разрезать его пути компонентов.|
 |error|[operationError](operationerror.md)|Любая ошибка, которая вызывает сбой операции async.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

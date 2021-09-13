@@ -2,15 +2,15 @@
 author: learafa
 title: Отслеживание сайта
 description: Следуйте сайту или сайтам пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1f643671f9d9ccb744974f278007ce26186b2c97
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 16120ffedd1600c6f2021b433891722b80fd84be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085077"
 ---
 # <a name="follow-site"></a>Отслеживание сайта 
 

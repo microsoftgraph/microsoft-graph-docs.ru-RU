@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthOSVersionPerformance
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthOSVersionPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff038ec450e9f335915c52ad19a41c78a03e43c3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 015c1863dfd50044460702adb512020b278ad9ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034570"
 ---
 # <a name="update-userexperienceanalyticsapphealthosversionperformance"></a>Обновление userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797987"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -59,7 +59,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance/{us
 |activeDeviceCount|Int32|Количество активных устройств для версии ОС. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для версии ОС в минутах. Допустимые значения 2147483648 2147483647|
 |osVersionAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения в версии ОС. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|osVersionAppHealthStatus|String|Общее состояние состояния здоровья приложения в версии ОС.|
+|osVersionAppHealthStatus|Строка|Общее состояние состояния здоровья приложения в версии ОС.|
 
 
 

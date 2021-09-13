@@ -2,15 +2,15 @@
 title: 'участник: отключить'
 description: Отключить определенный участник вызова.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a74b2ed36831960ba27b48742f91f99333c69efb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d7c7c053a46350f60355ffccc996f05ebe6f2ea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072826"
 ---
 # <a name="participant-mute"></a>участник: отключить
 

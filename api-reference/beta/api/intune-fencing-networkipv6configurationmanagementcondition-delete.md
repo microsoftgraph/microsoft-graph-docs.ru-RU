@@ -2,15 +2,15 @@
 title: Удаление networkIPv6ConfigurationManagementCondition
 description: Удаляет networkIPv6ConfigurationManagementCondition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e491e8fb95aee80023dfaa13ba12551e2c4b7fc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ebb5ad8d8f7059dcaccd2483c9e9bd261484a22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034500"
 ---
 # <a name="delete-networkipv6configurationmanagementcondition"></a>Удаление networkIPv6ConfigurationManagementCondition
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: тип ресурса mobileAppInstallTimeSettings
 description: Содержит свойства, используемые для определения того, когда предлагать приложение устройствам и когда устанавливать приложение на устройствах.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de3077e2ee6e79207b4ed8a267d8c3ca02bd6454
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1c2a324c30e1372cc6ba79c3330249121fe0d367
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023257"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>тип ресурса mobileAppInstallTimeSettings
 
@@ -25,7 +25,7 @@ ms.locfileid: "58792549"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|useLocalTime|Логический|Следует ли использовать местное время устройства или время UTC при определении доступных и крайних сроков.|
+|useLocalTime|Boolean|Следует ли использовать местное время устройства или время UTC при определении доступных и крайних сроков.|
 |startDateTime|DateTimeOffset|Время, в которое приложение должно быть доступно для установки.|
 |deadlineDateTime|DateTimeOffset|Время установки приложения.|
 

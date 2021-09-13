@@ -2,15 +2,15 @@
 title: тип enum windowsDeviceType
 description: Содержит свойства для Windows типа устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 60f24b5e5dd32f137a278344283d30d2aec3494c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d6e1b4cbf02445a7a0d232d4104e2f2a3af3ed7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023656"
 ---
 # <a name="windowsdevicetype-enum-type"></a>тип enum windowsDeviceType
 
@@ -29,7 +29,7 @@ ms.locfileid: "58820536"
 |настольный компьютер|1|Поддерживается ли тип Windows рабочего стола.|
 |мобильный|2|Поддерживается ли тип Windows мобильных устройств.|
 |голографический|4 |Поддерживается ли тип Windows или нет.|
-|команда|8 |Поддерживается ли тип Windows team.|
+|team|8 |Поддерживается ли тип Windows team.|
 
 
 

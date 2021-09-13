@@ -1,16 +1,16 @@
 ---
 title: тип ресурса emailAppUsageUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: dce83b17f029bec2bf8977d0e863dcdb5c7fc4e1a9c5dea731b654d5ce6ab9f3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d41597475133275761d3728fd99c513eb468777f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027136"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>тип ресурса emailAppUsageUserDetail
 
@@ -22,8 +22,8 @@ ms.locfileid: "54210073"
 | :---------------- | :---------------- |
 | reportRefreshDate | Дата              |
 | userPrincipalName | String            |
-| displayName       | Строка            |
-| isDeleted         | Логический           |
+| displayName       | String            |
+| isDeleted         | Boolean           |
 | deletedDate       | Дата              |
 | lastActivityDate  | Дата              |
 | mailForMac        | Коллекция String |
@@ -35,7 +35,7 @@ ms.locfileid: "54210073"
 | pop3App           | Коллекция String |
 | imap4App          | Коллекция String |
 | smtpApp           | Коллекция String |
-| reportPeriod      | Строка            |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

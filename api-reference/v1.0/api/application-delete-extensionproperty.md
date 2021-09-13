@@ -1,16 +1,16 @@
 ---
 title: Удаление extensionProperty
 description: Удаление extensionProperty.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 38e5358a39214c060a56513ff31120c3ea12ead8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5206c13b87786185c8459e8cf9979d588ede7c76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100500"
 ---
 # <a name="delete-extensionproperty"></a>Удаление extensionProperty
 

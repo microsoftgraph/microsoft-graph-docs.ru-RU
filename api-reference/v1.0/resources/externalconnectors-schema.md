@@ -2,21 +2,21 @@
 title: Тип ресурса схемы
 description: Схема подключения определяет, как содержимое, добавленное в подключение, будет использоваться в различных Graph microsoft.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5ca338e6e2d2da30e555223c3257da7d7f2f497d1a2a15a9436ed5b8568575bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dcfea02e76c97a8bd946a3c1aa5294b843b0b739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036587"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
 
 Пространство имен: microsoft.graph.externalConnectors
 
-Схема [подключения](externalconnectors-externalconnection.md) определяет, как внешний контент будет использоваться в различных Graph Microsoft. Схема — это плоский список всех свойств, которые вы планируете добавить в связь, а также их атрибуты, метки и псевдонимы. Перед добавлением элементов в связь вы должны зарегистрировать схему.
+Схема [подключения](externalconnectors-externalconnection.md) определяет, как внешний контент будет использоваться в различных Graph Microsoft. Схема — это плоский список всех свойств, которые вы планируете добавить в соединение, а также их атрибуты, метки и псевдонимы. Перед добавлением элементов в соединение вы должны зарегистрировать схему.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
@@ -27,7 +27,7 @@ ms.locfileid: "54189795"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|baseType|String|Необходимо указать значение `microsoft.graph.externalConnector.externalItem`. Обязательный элемент.|
+|baseType|Строка|Необходимо указать значение `microsoft.graph.externalConnector.externalItem`. Обязательный.|
 |properties|[коллекция](../resources/externalconnectors-property.md) свойств|Свойства, определенные для элементов в подключении. Минимальное число свойств — одно, максимальное — 128.|
 
 ## <a name="relationships"></a>Связи

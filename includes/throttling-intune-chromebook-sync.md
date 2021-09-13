@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 53198bddaad29597d83769010c0ea19f72bac4592a2f0c99e6505223195cb2c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bb9ccbdc86d6d36c96a98cac996be0626ce142ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035827"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196745"
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:  
-chromeOSOnboardingSettings.
+
+| <!-- fake header-->                                                                            |
+|------------------------------------------------------------------------------------------------|
+| <ul> <li> [chromeOSOnboardingSettings](/graph/api/resources/chromeosonboardingsettings)  </ul> |

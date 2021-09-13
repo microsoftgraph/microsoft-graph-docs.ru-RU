@@ -2,15 +2,15 @@
 title: тип ресурса vpnConfiguration
 description: Базовый профиль конфигурации VPN.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d91e181dedb66f68f6791312da21f72792f68c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6a198a5617cffa173c45ade33f99f3a91ce52cc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033667"
 ---
 # <a name="vpnconfiguration-resource-type"></a>тип ресурса vpnConfiguration
 
@@ -46,12 +46,12 @@ ms.locfileid: "58808855"
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
-|connectionName|Строка|Имя подключения, отображаемая пользователю.|
+|connectionName|String|Имя подключения, отображаемая пользователю.|
 |role|Строка|Роль при наборе типа подключения к Pulse Secure.|
-|realm|String|Realm, когда тип подключения за установлен в Pulse Secure.|
+|realm|Строка|Realm, когда тип подключения за установлен в Pulse Secure.|
 |серверы|[коллекция vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получить доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[коллекция deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|

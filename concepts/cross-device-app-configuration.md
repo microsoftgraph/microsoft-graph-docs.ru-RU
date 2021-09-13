@@ -1,14 +1,14 @@
 ---
 title: 'Создание приложений для нескольких устройств на платформе Project Rome '
 description: 'С помощью Project Rome вы можете создавать решения, которые одинаково легко использовать на различных устройствах и платформах, избавляя пользователей от лишних сложностей и повышая взаимодействие с приложением. Чтобы приложения могли обмениваться данными между устройствами и платформами с помощью API Project Rome, необходимо настроить приложение для нескольких устройств, включающее сведения о приложениях для определенных платформ. '
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
-ms.openlocfilehash: bb3b6bb5ce9cf420c647fff8e91d306e83de65193a958375cb7704af2f15b207
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d1d58ec2da980efeab46423fd945a5afd2994fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139228"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Создание приложений для нескольких устройств на платформе Project Rome 
 

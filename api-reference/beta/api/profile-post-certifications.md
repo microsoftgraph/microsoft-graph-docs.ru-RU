@@ -1,21 +1,21 @@
 ---
 title: Создание сертификатов
 description: Создание нового объекта сертификации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c0ee67610b7b7d600ec9e61d085d77c0f56e71eb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f1ee679da44d0bd5ca74e4ffbed497a25bbc8c6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027451"
 ---
-# <a name="create-personcertification"></a>Создание Персонцертификатион
+# <a name="create-personcertification"></a>Создание personCertification
 Пространство имен: microsoft.graph
 
-Создание нового объекта [персонцертификатион](../resources/personcertification.md) в [профиле](../resources/profile.md)пользователя.
+Создайте новый [объект personCertification](../resources/personcertification.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "48967272"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,29 +44,29 @@ POST /users/{id | userPrincipalName}/profile/certifications
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [персонцертификатион](../resources/personcertification.md) в формате JSON.
+В теле запроса поставляют представление JSON объекта [personCertification.](../resources/personcertification.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [персонцертификатион](../resources/personcertification.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить при создании нового объекта [personCertification](../resources/personcertification.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|цертификатионид  |String      |Справочный идентификатор для сертификации. |
-|description      |String      |Описание сертификата.                   |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |String      |Справочный идентификатор для сертификации. |
+|description      |String      |Описание сертификации.                   |
 |displayName      |String      |Название сертификата.                         |
-|endDate          |Date        |Дата истечения срока действия сертификата.            |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|иссуеддате       |Дата        |Дата выдачи сертификата.         |
-|иссуингаусорити |String      |Центр сертификации, который предоставил сертификат.          |
-|иссуингкомпани   |String      |Центр сертификации, который предоставил сертификат.          |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|startDate        |Date        |Дата, когда сертификация стала действительна.       |
+|endDate          |Date        |Дата истечения срока сертификации.            |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|issuedDate       |Дата        |Дата выдачи сертификата.         |
+|issuingAuthority |String      |Орган, который предоставил сертификацию.          |
+|issuingCompany   |String      |Орган, который предоставил сертификацию.          |
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|startDate        |Date        |Дата, когда сертификация стала допустимой.       |
 |thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
-|webUrl           |String      |URL-адрес, ссылающийся на сертификат.                  |
+|webUrl           |String      |URL-адрес, ссылающийся на сертификацию.                  |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [персонцертификатион](../resources/personcertification.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект personCertification](../resources/personcertification.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

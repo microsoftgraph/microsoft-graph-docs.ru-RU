@@ -2,15 +2,15 @@
 title: Обновление windowsQualityUpdateProfile
 description: Обновление свойств объекта windowsQualityUpdateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17b6bb04dacdac63809ac3d66ead29531c7eae0b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 658cca940369d6d0dbdd3c9e40ce372634af3485
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024245"
 ---
 # <a name="update-windowsqualityupdateprofile"></a>Обновление windowsQualityUpdateProfile
 
@@ -55,13 +55,13 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 |:---|:---|:---|
 |id|String|ID политики Intune.|
 |displayName|String|Имя отображения для профиля.|
-|description|String|Описание профиля, указанного пользователем.|
+|description|Строка|Описание профиля, указанного пользователем.|
 |expeditedUpdateSettings|[expeditedWindowsQualityUpdateSettings](../resources/intune-softwareupdate-expeditedwindowsqualityupdatesettings.md)|Параметры ускоренного обновления.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления качества.|
 |releaseDateDisplayName|String|Содружественная дата выпуска для отображения для выпуска обновления качества|
-|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
 
 
 

@@ -2,15 +2,15 @@
 title: Список событий
 description: Получение списка событий в календаре. Этот список содержит собрания с одним экземпляром и образцы рядов.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 33bdadb28129183972f8fb6f7ee051708a3f2e55
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: df1a469ee464eb3299f21e3c4fda5a8a1e5fdd03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054604"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125430"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

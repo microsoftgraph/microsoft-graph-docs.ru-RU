@@ -2,15 +2,15 @@
 title: тип enum endpointSecurityConfigurationProfileType
 description: Тип профиля политики безопасности конечной точки.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c2086885e02aeed8df1e0c8bc9f5cadafb56c26
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6dd1a90da59e62eb8fa52de28ee4c534e50aabb4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023390"
 ---
 # <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>тип enum endpointSecurityConfigurationProfileType
 
@@ -36,7 +36,7 @@ ms.locfileid: "58787822"
 |deviceControl|8 |Управление устройствами.|
 |appAndBrowserIsolation|9 |Изоляция приложения и браузера.|
 |exploitProtection|10 |Защита от эксплойтов.|
-|webProtection|11 |Веб-защита.|
+|webProtection|11|Веб-защита.|
 |applicationControl|12 |Управление приложениями.|
 |attackSurfaceReductionRules|13|Правила уменьшения поверхности атаки.|
 |accountProtection|14 |Защита учетной записи.|

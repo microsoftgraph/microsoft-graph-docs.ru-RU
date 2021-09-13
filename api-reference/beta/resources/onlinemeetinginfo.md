@@ -1,16 +1,16 @@
 ---
 title: тип ресурса onlineMeetingInfo
 description: Сведения, необходимые участнику, чтобы присоединиться к собранию по сети.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a12c194f37f119211ccbe45c337cf8256d6110155382951c49b563b8d71b450d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 325840e11b93658abe3294edf339175bebe03daf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023229"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>тип ресурса onlineMeetingInfo
 
@@ -22,10 +22,10 @@ ms.locfileid: "54226128"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|conferenceId|Строка| ID конференции.|
-|joinUrl|Строка| Внешняя ссылка, которая запускает собрание в Интернете. Это URL-адрес, который клиенты запускают в браузер и перенаправляют пользователя, чтобы присоединиться к собранию.|
+|conferenceId|String| ID конференции.|
+|joinUrl|String| Внешняя ссылка, которая запускает собрание в Интернете. Это URL-адрес, который клиенты запускают в браузер и перенаправляют пользователя, чтобы присоединиться к собранию.|
 |phones|Коллекция [phone](phone.md)| Все телефонные номера, связанные с этой конференцией.|
-|quickDial|Строка| Предварительно отформатированный quickdial для этого вызова.|
+|quickDial|String| Предварительно отформатированный quickdial для этого вызова.|
 |tollFreeNumbers|Коллекция String| Бесплатные номера, которые можно использовать, чтобы присоединиться к конференции.|
 |tollNumber|String| Платный номер, который можно использовать для большого количества участников конференции.|
 

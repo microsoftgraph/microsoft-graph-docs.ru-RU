@@ -2,15 +2,15 @@
 title: действие hasPayloadLinks
 description: Пока не задокументировано.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f9aacb8a48cc2491f77bed90b88c8f7abb51305
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 17c5b25e9f8783050f4a49a0cb0995142a3e5766
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034045"
 ---
 # <a name="haspayloadlinks-action"></a>действие hasPayloadLinks
 

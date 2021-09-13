@@ -2,15 +2,15 @@
 title: тип ресурса archivedPrintJob
 description: Запись задания печати "окончательное состояние" (завершено, прервано или не выполнено) для отчетов. Это не активная работа печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 45d1988e95661f586b4093b5ff033197b623b891ae5e78e59a57352c406f4085
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9f6818801a12eb635a86350432108d3d0e3b6332
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109523"
 ---
 # <a name="archivedprintjob-resource-type"></a>тип ресурса archivedPrintJob
 
@@ -22,12 +22,12 @@ ms.locfileid: "54163910"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String|GUID архивного задания печати. Только для чтения.|
-|printerId|String|ID принтера, для работы в очереди. Только для чтения.|
+|printerId|Строка|ID принтера, для работы в очереди. Только для чтения.|
 |processingState|printJobProcessingState|Окончательное состояние обработки задания печати. Только для чтения.|
 |createdDateTime|DateTimeOffset|DateTimeOffset, когда было создано задание. Только для чтения.|
 |acquiredDateTime|DateTimeOffset|DateTimeOffset, когда задание было приобретено принтером, если таково. Только для чтения.|
 |completionDateTime|DateTimeOffset|DateTimeOffset, когда задание было завершено, отменено или прервано. Только для чтения.|
-|acquiredByPrinter|Логическое|True, если задание было приобретено принтером; false в противном случае. Только для чтения.|
+|acquiredByPrinter|Логический|True, если задание было приобретено принтером; false в противном случае. Только для чтения.|
 |copiesPrinted|Int32|Количество напечатанных копий. Только для чтения.|
 |createdBy|[userIdentity](useridentity.md)|Пользователь, создавший задание печати. Только для чтения.|
 

@@ -1,16 +1,16 @@
 ---
 title: Создание книгиCommentReply
 description: Создание новой книгиCommentReply.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cfa09de241b74bb9bd1a3289791564a9edac5128
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e1476a49e03e68b9246412d1004be4aa1a688534
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027372"
 ---
 # <a name="create-workbookcommentreply"></a>Создание книгиCommentReply
 
@@ -93,7 +93,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

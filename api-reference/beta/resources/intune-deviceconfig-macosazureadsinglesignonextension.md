@@ -2,15 +2,15 @@
 title: тип ресурса macOSAzureAdSingleSignOnExtension
 description: Представляет профиль одноместного Sign-On Azure AD для устройств macOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23c69e9edf5f980f9dcc8cfdacc07f5b39ba0500
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b7e4748b87a475b4f0ee7614054580926b502aeb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027101"
 ---
 # <a name="macosazureadsinglesignonextension-resource-type"></a>тип ресурса macOSAzureAdSingleSignOnExtension
 
@@ -28,7 +28,7 @@ ms.locfileid: "58782506"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enableSharedDeviceMode|Логический|Включает или отключает общий режим устройства.|
+|enableSharedDeviceMode|Boolean|Включает или отключает общий режим устройства.|
 |bundleIdAccessControlList|Коллекция String|Необязательный список дополнительных ИД пакетов, разрешенных для использования расширения AAD для одного входного знака.|
 |конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 

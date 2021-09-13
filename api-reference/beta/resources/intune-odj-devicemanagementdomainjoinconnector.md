@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementDomainJoinConnector
 description: Соединителя подключения к домену является соединитетелем, который отвечает за выделение (и удаление) blobs учетной записи компьютера
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f99f8dc17e292ca01a614cf1201cab8d0f918cd4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5d638537c50c10a9e8a520cd9dc50316e7e3e3f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017277"
 ---
 # <a name="devicemanagementdomainjoinconnector-resource-type"></a>тип ресурса deviceManagementDomainJoinConnector
 
@@ -34,7 +34,7 @@ ms.locfileid: "58783864"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для представления соединитетеля.|
+|id|String|Уникальный идентификатор для представления соединитетеля.|
 |displayName|Строка|Имя отображения соединитетеля.|
 |lastConnectionDateTime|DateTimeOffset|Последний раз соединитель связывался с Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединитетеля. Возможные значения: `active`, `error`, `inactive`.|

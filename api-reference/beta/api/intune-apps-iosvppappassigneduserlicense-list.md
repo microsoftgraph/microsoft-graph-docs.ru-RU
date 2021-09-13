@@ -2,15 +2,15 @@
 title: Список iosVppAppAssignedUserLicenses
 description: Список свойств и связей объектов iosVppAppAssignedUserLicense.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ec45981192d9f6404c18fd0c1f7b0dff7d2227e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5e15fa106ecc2b4c06878a1c27f890c227319a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018945"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>Список iosVppAppAssignedUserLicenses
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

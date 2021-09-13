@@ -1,16 +1,16 @@
 ---
 title: тип ресурса chatMessageMention
 description: 'Представляет упоминание в объекте chatMessage. Упоминание может быть для пользователя, команды, бота или канала. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ed22514c0da50b3dfc6ec62c79c26858d4c0051ed0fcc16a485d937573cf6a6d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b458393d73c7547dda1638e86c2fa4782e3b4d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109425"
 ---
 # <a name="chatmessagemention-resource-type"></a>тип ресурса chatMessageMention
 
@@ -39,7 +39,7 @@ ms.locfileid: "54238162"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|Int32|Индекс сущности, упоминаемой в указанном **chatMessage.** Соответствует значению {index} в соответствующем `<at id="{index}">` теге в теле сообщения.|
-|mentionText|Строка|Строка, используемая для представления упоминания. Например, имя отображения пользователя, имя команды.|
+|mentionText|string|Строка, используемая для представления упоминания. Например, имя отображения пользователя, имя команды.|
 |упомянутый|[chatMessageMentionedIdentitySet](chatmessagementionedidentityset.md)|Объект (пользователь, приложение, команда или канал), который @mentioned.|
 
 

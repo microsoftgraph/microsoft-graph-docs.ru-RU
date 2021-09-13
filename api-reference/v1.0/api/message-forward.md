@@ -2,15 +2,15 @@
 title: 'message: forward'
 description: Переад. сообщение в формате JSON или MIME.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e0004bae41d7b700ae3a337bce27b214ba209cb
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: c96d1211a6666d177d6da8c8ad3c166541f81881
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870404"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062931"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный |
+| Authorization  | string  | Bearer {token}. Обязательна |
 | Content-Type | string  | Характер данных в теле объекта.  Обязательный. <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса

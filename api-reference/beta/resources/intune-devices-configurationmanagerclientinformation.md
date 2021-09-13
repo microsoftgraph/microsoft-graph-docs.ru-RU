@@ -2,15 +2,15 @@
 title: тип ресурса configurationManagerClientInformation
 description: Сведения о клиентах Configuration Manager, синхронизированные из SCCM
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fde63ebef1ce0e8e5ef48252e9014704c768ed8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3af9373c8359ed28465cb580057d06850dcb3504
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026940"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>тип ресурса configurationManagerClientInformation
 
@@ -26,7 +26,7 @@ ms.locfileid: "58818079"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |clientIdentifier|String|Id клиента диспетчера конфигурации из SCCM|
-|isBlocked|Логический|Клиент диспетчера конфигурации, заблокированный в SCCM|
+|isBlocked|Boolean|Клиент диспетчера конфигурации, заблокированный в SCCM|
 
 ## <a name="relationships"></a>Связи
 Нет

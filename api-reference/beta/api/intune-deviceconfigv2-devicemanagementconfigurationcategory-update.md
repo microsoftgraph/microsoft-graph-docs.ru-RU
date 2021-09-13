@@ -2,15 +2,15 @@
 title: Обновление deviceManagementConfigurationCategory
 description: Обновление свойств объекта deviceManagementConfigurationCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c17bde322bbd70f517ac07b88909b18a482deda
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: da90535f601bff90ca2b75e7787f189560473ff7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034682"
 ---
 # <a name="update-devicemanagementconfigurationcategory"></a>Обновление deviceManagementConfigurationCategory
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ PATCH /deviceManagement/configurationCategories/{deviceManagementConfigurationCa
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор элемента|
-|description|Строка|Описание элемента|
-|helpText|Строка|Справка текста элемента|
+|id|String|Идентификатор элемента|
+|description|String|Описание элемента|
+|helpText|String|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|String|Отображение имени элемента|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`.|
 |parentCategoryId|String|Родительский id категории.|
-|rootCategoryId|Строка|Корневой id категории.|
+|rootCategoryId|String|Корневой id категории.|
 |childCategoryIds|Коллекция String|Список детских ids этой категории.|
 
 

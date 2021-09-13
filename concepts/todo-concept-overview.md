@@ -2,14 +2,14 @@
 title: Обзор API To Do
 description: Приложение To Do предоставляет простой способ управления задачами и планирования дня
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 0d93ba100fb48d2c6e833582a7f8238a5e51800e6b92d56ed4707e2aad2d8499
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b4fd77adf93b2570ffbb3570a881aaa5e0c551e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062308"
 ---
 # <a name="to-do-api-overview"></a>Обзор API To Do
 Приложение Microsoft To Do предоставляет пользователям простой способ управления задачами и планирования дня. Задачи упорядочиваются в списках задач, доступных в клиентах To Do, Outlook и Teams с любого устройства.

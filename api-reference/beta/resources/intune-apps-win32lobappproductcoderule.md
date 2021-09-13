@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppProductCodeRule
 description: Сложный тип для хранения данных правил кода продукта и версии для приложения LOB Win32. Это правило не поддерживается в качестве правила требования.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f8e128451d8b44f3ca29877dae5300893f7fe82
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2579f4adfffea5213d948f172281fa9c9c21049c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027108"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>тип ресурса win32LobAppProductCodeRule
 

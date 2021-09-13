@@ -2,15 +2,15 @@
 title: Конфигурация устройства в Microsoft Intune
 description: Использование рабочей нагрузки Microsoft Intune конфигурации устройств для управления настройками и функциями на всех управляемых устройствах.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: b33fc75d8856b2bee9d91c3441471ff71b377e34d7ec9ae1b883949a0c7c365e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d97fc069f7862d242cee325dd875d826ef747113
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126517"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118476"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -144,7 +144,7 @@ ms.locfileid: "54126517"
 - [Тип рейтинга телевизионных передач для Соединенного Королевства](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [Тип рейтинга фильмов для Соединенных Штатов Америки](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [Тип рейтинга телевизионных передач для Соединенных Штатов Америки](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
-- [Отчет](intune-deviceconfig-report.md)
+- [Report](intune-deviceconfig-report.md)
 - [Корневая папка отчета](intune-deviceconfig-reportroot.md)
 - [Требуемый тип пароля](intune-deviceconfig-requiredpasswordtype.md)
 - [Тип фильтра для безопасного поиска](intune-deviceconfig-safesearchfiltertype.md)

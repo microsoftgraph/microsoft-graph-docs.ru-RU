@@ -2,15 +2,15 @@
 title: тип ресурса userActivationCounts
 description: Ниже указано представление ресурса в формате JSON.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9e1783822daf9ead4ba130161976c2f65f4c74a2f8b0f8a828981b14e64bcdf9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 466ccc3f942bec2fbb09e094e7805c4fcf160e54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033170"
 ---
 # <a name="useractivationcounts-resource-type"></a>тип ресурса userActivationCounts
 
@@ -27,7 +27,7 @@ ms.locfileid: "54212831"
 | windows10Mobile   | Int64  | Активация рассчитывается на Windows 10 мобильном телефоне. |
 | ios               | Int64  | Активация рассчитывается на iOS.             |
 | Android           | Int64  | Активация рассчитывается на устройстве Android.  |
-| activatedOnSharedComputer   | Логический | True, если пользователь использовал продукт на общем компьютере раньше. |
+| activatedOnSharedComputer   | Boolean | True, если пользователь использовал продукт на общем компьютере раньше. |
 
 ## <a name="json-representation"></a>Представление JSON
 

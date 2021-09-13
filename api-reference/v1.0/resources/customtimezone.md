@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса customTimeZone
 description: Представляет часовой пояс c нестандартным переходом на летнее время и обратно.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e059e316b3e641fd32bbf305cc619929adb09d2a6618181197775c8ca8bcc276
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9c5b24e02adafbf3e6cd10e960e4fc8b333edab6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121273"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062763"
 ---
 # <a name="customtimezone-resource-type"></a>Тип ресурса customTimeZone
 
@@ -28,7 +28,7 @@ ms.locfileid: "54121273"
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
